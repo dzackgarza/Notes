@@ -38,8 +38,9 @@
 \newcommand{\zlnz}[0]{\mathbb{Z}/\ell^n\mathbb{Z}}
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
-\newcommand{\ks}[0]{\operatorname{ks}}
+\newcommand{\Cx}[0]{\operatorname{Cx}}
 \newcommand{\Ch}[0]{\operatorname{Ch}}
+\newcommand{\ks}[0]{\operatorname{ks}}
 \newcommand{\Arg}[0]{\operatorname{Arg}}
 \newcommand{\PGL}[0]{\operatorname{PGL}}
 \newcommand{\GL}[0]{\operatorname{GL}}
@@ -69,6 +70,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -84,6 +86,7 @@
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
+\newcommand{\grMod}[0]{{\operatorname{grMod}}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -103,7 +106,9 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Top}[0]{{\operatorname{Top}}}
+\newcommand{\Mfd}[0]{{\operatorname{Mfd}}}
 \newcommand{\Ab}[0]{{\operatorname{Ab}}}
+\newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
 \newcommand{\Sch}[0]{{\operatorname{Sch}}}
@@ -301,6 +306,7 @@
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
 \newcommand{\rmod}[0]{{R\dash\operatorname{mod}}}
+\newcommand{\mmod}[0]{{\dash\operatorname{mod}}}
 \newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
 \newcommand{\modr}[0]{{\operatorname{mod}}}
 \newcommand{\kmod}[0]{{k\dash\operatorname{mod}}}
@@ -647,7 +653,9 @@ Then $V_k \intersect S_\eps \cong S^7$ is a homeomorphism, and taking $k=1,2,\cd
 Note that $V_k$ is the cone over $V_k \intersect S_\eps$.
 
 \begin{tikzpicture}
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_13-54.pdf_tex} };
+\node (node_one) at (0,0) { 
+\fontsize{25pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_13-54.pdf_tex} };
 \end{tikzpicture}
 
 > ? Admits a smooth structure, and $\bar{V}_k \subseteq \CP^5$ admits no smooth structure.
@@ -659,7 +667,7 @@ Is every triangulable manifold PL, i.e. homeomorphic to a simplicial complex?
 
 :::{.answer}
 No!
-Given a simplicial complex, there is a notion of the **combinatorial link** of a vertex.
+Given a simplicial complex, there is a notion of the **combinatorial link** $L_V$ of a vertex $V$:
 
 \begin{tikzpicture}
 \node (node_one) at (0,0) {
@@ -815,7 +823,9 @@ An **almost complex structure** is a $J\in \Endo(TX)$ such that $J^2 = -\id$.
 Let $e\in T_p X$ and $e\neq 0$, then if $X$ is a surface then $\ts{e, Je}$ is a basis of $T_p X$.
 
 \begin{tikzpicture}
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_14-33.pdf_tex} };
+\node (node_one) at (0,0) { 
+\fontsize{25pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_14-33.pdf_tex} };
 \end{tikzpicture}
 
 This is a basis because if $Je$ and $e$ are parallel, then ???
@@ -844,6 +854,7 @@ This is because after choosing $e$, there are two orthogonal vectors, but only o
 
 \begin{tikzpicture}
 \node (node_one) at (0,0) {
+\fontsize{25pt}{1em} 
   \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures/}{2021-01-15_14-39.pdf_tex}
   };
 \end{tikzpicture}
@@ -871,5 +882,196 @@ Since it's simply connected, the Riemann Mapping Theorem shows that it's biholom
 
 
 
+
+
+
+# Lecture 3 (Wednesday, January 20)
+
+Today: some background material on sheaves, bundles, connections.
+
+## Sheaves
+
+:::{.definition title="Presheaves and Sheaves"}
+Recall that if $X$ is a topological space, a **presheaf** of abelian groups \( \mathcal{F}  \) is an assignment $U\to \mathcal{F}(U)$ of an abelian group to every open set $U \subseteq X$ together with a restriction map \( \rho_{UV}: \mathcal{F}(U) \to \mathcal{F}(V)   \) for any inclusion \( V \subseteq U \) of open sets.
+This data has to satisfying certain conditions:
+
+a. \( \mathcal{F}(\emptyset) = 0  \), the trivial abelian group.
+
+b. \( \rho_{UU}: \mathcal{F}(U) \to \mathcal{F}(U) = \id_{\mathcal{F}(U) }   \) 
+
+c. Compatibility if restriction is taken in steps: $U \subseteq V \subseteq W \implies \rho_{VW} \circ \rho_{UV} = \rho_{UW}$.
+
+We say \( \mathcal{F}  \) is a **sheaf** if additionally:
+
+d. Given $s_i \in \mathcal{F}(U_i)$ such that \( \rho_{U_i \intersect U_j} (s_i) = \rho_{U_i \intersect U_j} (s_j) \) implies that there exists a unique \( s\in \mathcal{F}(\Union_i U_i)  \) such that \( \rho_{U_i}(s) = s_i \).
+
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{45pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-20_13-59.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+:::{.example title="?"}
+Let $X$ be a topological manifold, then \( \mathcal{F}\da C^0(\wait, \RR)  \) the set of continuous functionals form a sheaf.
+We have a diagram
+
+\begin{tikzcd}
+	U && {C^0(U; \RR)} \\
+	\\
+	V && {C^0(V; \RR)}
+	\arrow[hook, from=3-1, to=1-1]
+	\arrow["{\text{restrict cts. functions}}", dashed, hook, from=1-3, to=3-3]
+	\arrow["{\mathcal{F}}", from=1-1, to=1-3]
+	\arrow["{\mathcal{F}}"', from=3-1, to=3-3]
+\end{tikzcd}
+
+> [Link to diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJVIl0sWzAsMiwiViJdLFsyLDAsIkNeMChVOyBcXFJSKSJdLFsyLDIsIkNeMChWOyBcXFJSKSJdLFsxLDAsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMywiXFx0ZXh0e3Jlc3RyaWN0IGN0cy4gZnVuY3Rpb25zfSIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn0sImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDIsIlxcbWF0aGNhbHtGfSJdLFsxLDMsIlxcbWF0aGNhbHtGfSIsMl1d)
+
+Property (d) holds because given sections $s_i \in C^0(U_i; \RR)$ agreeing on overlaps, so $\ro{s_i}{U_i \intersect U_j} = \ro{s_j}{U_i \intersect U_j}$, there exists a unique $s\in C^0(\Union_i U_i; \RR)$ such that $\ro{s}{U_i} = s_i$ for all $i$ -- continuous functions glue.
+:::
+
+:::{.remark}
+Recall that we discussed various structures on manifolds: PL, continuous, smooth, complex-analytic, etc.
+We can characterize these by their sheaves of functions, which we'll denote \( \OO \).
+For example, $\OO \da C^0(\wait; \RR)$ for topological manifolds, and $\OO \da C^ \infty (\wait; \RR)$ is the sheaf for smooth manifolds.
+Note that this also works for PL functions, since pullbacks of PL functions are again PL.
+For complex manifolds, we set $\OO$ to be the sheaf of holomorphic functions.
+:::
+
+:::{.example title="Locally Constant Sheaves"}
+Let $A\in \Ab$ be an abelian group, then $\underline{A}$ is the sheaf defined by setting $\ul{A}(U)$ to be the locally constant functions $U\to A$.
+E.g. let $X \in \Mfd_{\Top}$ be a topological manifold, then $\ul{\RR}(U) = \RR$ if $U$ is connected since locally constant $\implies$ globally constant in this case.
+:::
+
+:::{.warnings}
+Note that the presheaf of constant functions doesn't satisfy (d)!
+Take $\RR$ and a function with two different values on disjoint intervals:
+
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{41pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-20_14-11.pdf_tex} };
+\end{tikzpicture}
+
+Note that $\ro{s_1}{U_1 \intersect U_2} = \ro{s_2}{U_1 \intersect U_2}$ since the intersection is empty, but there is no constant function that restricts to the two different values.
+
+:::
+
+## Bundles
+
+:::{.remark}
+Let $\pi: \mathcal{E}\to X$ be a **vector bundle**, so we have local trivializations $\pi ^{-1} (U) \mapsvia{h_u} Y^d \cross U$ where we take either $Y=\RR, \CC$, such that $h_v \circ h_u ^{-1}$ preserves the fibers of \( \pi \) and acts linearly on each fiber of $Y\cross (U \intersect V)$. 
+Define
+\[
+t_{UV}: U \intersect V \to \GL_d(Y)
+\]
+where we require that $t_{UV}$ is continuous, smooth, complex-analytic, etc depending on the context.
+
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{47pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-20_14-17.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+:::{.example title="Bundles over $S^1$"}
+There are two $\RR^1$ bundles over $S^1$:
+
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{32pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-20_14-20.pdf_tex} };
+\end{tikzpicture}
+
+Note that the Mobius bundle is not trivial, but can be locally trivialized.
+:::
+
+:::{.remark}
+We abuse notation: \( \mathcal{E}  \) is also a sheaf, and we write \( \mathcal{E}(U)  \) to be the set of sections $s: U\to \mathcal{E}$ where $s$ is continuous, smooth, holomorphic, etc where $\pi \circ s = \id_U$. 
+I.e. a bundle is a sheaf in the sense that its sections *form* a sheaf.
+:::
+
+:::{.example title="?"}
+The trivial line bundle gives the sheaf \( \OO \) : maps $U \mapsvia{s} U\cross Y$ for $Y=\RR, \CC$ such that $\pi \circ s = \id$ are the same as maps $U\to Y$.
+:::
+
+:::{.definition title="$\OO\dash$modules"}
+An **$\OO\dash$module** is a sheaf \( \mathcal{F}  \) such that \( \mathcal{F}(U)  \) has an action of \( \mathcal{O}(U)  \) compatible with restriction.
+:::
+
+:::{.example title="?"}
+If \( \mathcal{E}  \) is a vector bundle, then \( \mathcal{E}(U)  \) has a natural action of \( \OO(U) \) given by $f\actson s \da fs$, i.e. just multiplying functions.
+:::
+
+:::{.example title="Non-example"}
+The locally constant sheaf \( \ul{\RR} \) is not an \( \OO\dash \)module: there isn't natural action since the sections of $\OO$ are generally non-constant functions, and multiplying a constant function by a non-constant function doesn't generally give back a constant function.
+:::
+
+We'd like a notion of maps between sheaves:
+
+:::{.definition title="Morphisms of Sheaves"}
+A **morphism** of sheaves \( \mathcal{F} \to \mathcal{G} \) is a group morphism \(\varphi(U): \mathcal{F}(U) \to \mathcal{G}(U)   \) for all opens \( U \subseteq X \) such that the diagram involving restrictions commutes:
+
+\begin{tikzcd}
+\mathcal{F}(U) 
+\ar[r, "\phi(U)"] 
+\ar[d, "\rho_{UV}"]
+&
+\mathcal{G}(U) 
+\ar[d, "\rho_{UV}"]
+\\
+\mathcal{F}(V) 
+\ar[r, "\phi(V)"] 
+&
+\mathcal{F}(V) 
+\end{tikzcd}
+:::
+
+:::{.example title="An $\OO\dash$module that is not a vector bundle."}
+Let $X = \RR$ and define the **skyscraper sheaf** at $p \in \RR$ as
+\[
+\RR_p(U) \da 
+\begin{cases}
+\RR & p\in U 
+\\
+0 & p\not\in U.
+\end{cases}
+.\]
+
+The $\OO(U)\dash$module structure is given by 
+\[
+\OO(U) \cross \OO(U) &\to \RR_p(U) \\
+(f, s) &\mapsto f(p) s
+.\]
+This is not a vector bundle since $\RR_p(U)$ is not an infinite dimensional vector space, whereas the space of sections of a vector bundle is generally infinite dimensional (?).
+Alternatively, there are arbitrarily small punctured open neighborhoods of $p$ for which the sheaf makes trivial assignments.
+:::
+
+:::{.example title="of morphisms"}
+Let $X = \RR \in \Mfd_\Sm$ viewed as a smooth manifold, then multiplication by $x$ induces a morphism of structure sheaves:
+\[
+(x \cdot): \OO &\to \OO \\
+s & \mapsto x\cdot s
+\]
+for any $x\in \OO(U)$, noting that $x\cdot s\in \OO(U)$ again.
+
+
+:::{.exercise title="?"}
+Check that $\ker \varphi$ is naturally a sheaf and $\ker(\varphi)(U) = \ker (\varphi(U)): \mathcal{F}(U) \to \mathcal{G}(U)$
+:::
+
+Here the kernel is trivial, i.e. on any open $U$ we have $(x\cdot):\OO(U) \injects \OO(U)$ is injective.
+Taking the cokernel $\coker(x\cdot)$ as a presheaf, this assigns to $U$ the quotient presheaf $\OO(U) / x\OO(U)$, which turns out to be equal to $\RR_0$.
+So $\OO \to \RR_0$ by restricting to the value at $0$, and there is an exact sequence
+\[
+0 \to \OO \mapsvia{(x\cdot)} \OO \to \RR_0 \to 0
+.\]
+
+This is one reason sheaves are better than vector bundles: the category is closed under taking quotients, whereas quotients of vector bundles may not be vector bundles.
+
+:::
 
 
