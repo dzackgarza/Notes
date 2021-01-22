@@ -70,6 +70,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -105,6 +106,7 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Top}[0]{{\operatorname{Top}}}
+\newcommand{\Mfd}[0]{{\operatorname{Mfd}}}
 \newcommand{\Ab}[0]{{\operatorname{Ab}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
@@ -927,6 +929,229 @@ Can use the integrality criterion (slightly challenging), can also use Galois th
 
 
 
+
+
+
+
+
+
+
+
+
+# Lecture 3 (Thursday, January 21)
+
+Today: roughly corresponds to chapter 3 in the book.
+Goal: do all of the big theorems in the setting of quadratic number fields, then redo everything for general number fields.
+
+## Quadratic Number Fields
+
+Simplest case: $\QQ$, a degree 1 number field, so the next simplest case is degree 2.
+
+:::{.definition title="Quadratic Number Fields"}
+A field $K$ is a **quadratic number field** if and only if $K$ is a number field and $[K: \QQ] = 2$.
+:::
+
+:::{.remark}
+Some notation: if $d\in \RR\units$, then $\sqrt d$ means the *positive* square root of $d$ if $d \geq 0$, and if $d<0$ this denotes $i\sqrt{\abs{d}}$.
+:::
+
+:::{.proposition title="?"}
+If $K$ is a quadratic number field, then $K = \QQ(\sqrt{d})$ for some squarefree 
+[^note_squarefree]
+$d\in \ZZ$.
+Moreover, this $d$ is uniquely determined by $K$, so all quadratic number fields are parameterized by the set of squarefree integers.
+
+[^note_squarefree]: 
+*Squarefree* means not divisible by $n^2$ for any $n > 1\in \ZZ$, or equivalently not divisible by the square of any primes.
+
+:::
+
+:::{.proof title="?"}
+**Existence**: 
+Since $[K: \QQ] = 2$, we have $K\supsetneq \QQ$ so pick \( \alpha\in K\sm \QQ \) then $K = \QQ(\alpha)$.
+Note that we could also furnish this \( \alpha \) from the primitive element theorem, although this is overkill here.
+So \( \alpha \) is a root of some degree 2 $p\in \QQ[x]$, and by scaling coefficients we can replace this by $p\in \ZZ[x]$.
+So write $p(x) = Ax^2 + Bx + C$, in which case we can always write \( \alpha = {-B \pm \sqrt{B^2 - 4AC} \over 2A} \) where $A\neq 0$ since this would imply that \( \alpha\in\QQ \).
+Writing \( \Delta\da B^2 - 4AC \), we have $K = \QQ(\alpha) = \QQ(\sqrt{\Delta})$.
+This is close to what we want -- it's $\QQ$ adjoin some integer -- but we'd like it to be squarefree.
+
+Now let $f\in \ZZ^{\geq 0}$ be chosen such that $f^2 \divides \Delta$ and $f$ is as large as possible, i.e. the largest square factor of \( \Delta \).
+Writing \( \Delta = f^2 - d \) where $d$ is whatever remains.
+Then $d$ must be squarefree, otherwise if $d$ had a square factor bigger than 1, say $d = r^2 d'$, in which case $f^2 r^2 > f^2$ would be a larger factor of \( \Delta \).
+So $d$ is squarefree, and \( \Delta = f \sqrt d \) and thus \( \QQ(\Delta) = \QQ(\sqrt{d}) \).
+
+**Uniqueness**: 
+Well use some extra machinery.
+
+
+:::{.definition title="Norm and Trace"}
+Let $K$ be a number field with $K_{/\QQ}$ Galois.
+For each \( \alpha\in K \) define
+\[
+N(\alpha) &\da \prod_{\sigma\in \Gal(K_{/\QQ})} \sigma(\alpha) && \text{the norm} \\
+\Tr(\alpha) &\da \sum_{\sigma\in \Gal(K_{/\QQ})} \sigma(\alpha) && \text{the trace}
+.\]
+:::
+
+
+:::{.remark}
+Why use these kind of sum at all?
+Applying any element in the Galois group just permutes the elements.
+Note that $N( \alpha), \Tr( \alpha)$ are $G(K_{/\QQ})\dash$invariant, and thus rational numbers in $\QQ$.
+The norm is multiplicative, and the trace is additive and in fact $\QQ\dash$linear: $\Tr(a \alpha + b \beta) = a \Tr( \alpha) + b \Tr( \beta)$ for all \( \alpha, \beta\in K \) and all \( a,b \in \QQ \).
+:::
+
+What do the norm and trace look like for a quadratic field?
+We can write $K = \ts{a + b \sqrt d \st a,b \in \QQ}$ and there is a unique (non-identity) element \( g\in \Gal(K_{/\QQ}) \) with \( \sigma(a + b \sqrt d = a - b \sqrt{d} \).
+We'll refer to this automorphism as **conjugation**.
+We can compute
+\[
+N(a + b \sqrt{d} ) &= a^2 - db^2 \\
+\Tr(a + b \sqrt{d} ) &= 2a
+.\]
+
+Returning to the proof, suppose otherwise that $K = \QQ(\sqrt{d_1} ) = \QQ ( \sqrt{d_2} )$ with $d_1\neq d_2$ squarefree integers.
+Note that they must have the same sign, otherwise one of these extensions would not be a subfield of $\RR$.
+We know \( \sqrt{d_1} \in \QQ( \sqrt{d_2} ) \) and thus \( \sqrt{d_1} = a + b \sqrt{d_2} \) for some $a, b\in \QQ$.
+Taking the trace of both sides, the LHS is zero and the RHS is $2a$ and we get $a=0$ and \( \sqrt{d_1} = b \sqrt{d_2} \).
+Write $b = u/v$ with $u,v\in \QQ$.
+Squaring both sides yields $v^2 d_1 = u^2 d_2$.
+Let $p$ be a prime dividing $d_1$; then since $d_1$ is squarefree there is only one copy of $p$ occurring in its factorization.
+Moreover there are an even number of copies of $p$ coming from $v^2$, thus forcing $d_2$ to have an odd power of $p$.
+This forces $p\divides d_2$, and since this holds for every prime factor $p$ of $d_1$, we get $d_1 \divides d_2$ since $d_1$ is squarefree.
+The same argument shows that $d_2 \divides d_1$, so they're the same up to sign: but the signs must match and we get $d_1 = d_2$.
+
+:::
+
+Note that this results holds for every squarefree number not equal to 1.
+
+
+:::{.question}
+If $K = \QQ( \sqrt{d} )$, what is the ring of integers $\ZZ_K$?
+Some more machinery will help here.
+:::
+
+:::{.definition title="The Field Polynomial of an Element"}
+Assume $K_{/\QQ}$ is a Galois number field and for \( \alpha\in K \) define 
+\[
+\varphi_{\alpha}(x) \da \prod_{ \sigma\in \Gal(K_{/\QQ})} \qty{ x - \sigma(\alpha)}
+.\]
+
+:::
+
+:::{.remark}
+For the same reasons mentioned for the norm/trace, we get \( \varphi_{\alpha} \in \QQ[x] \), and moreover \( \varphi_{ \alpha } (\alpha) = 0 \).
+:::
+
+When is \( \alpha\in \ZZ_K \)? 
+We have the following criterion:
+
+
+:::{.proposition title="?"}
+\[
+\alpha\in \ZZ_K \iff \varphi_{ \alpha } (x) \in \ZZ[x]
+.\]
+
+:::
+
+
+:::{.proof title="?"}
+$\impliedby$:
+This is easy, since if \( \varphi_\alpha \) is a monic polynomial with integer coefficients, meaning that \( \alpha \) is an algebraic integer and thus in $\ZZ_K$.
+
+$\implies$:
+If \( \alpha \in \ZZ_K \) then it's the root of some monic polynomial in $\ZZ[x]$, and the same is true for \( \sigma(\alpha) \) and thus each \( \sigma(\alpha) \in \bar\ZZ \).
+So \( \varphi_{ \alpha}(x) \in \bar \ZZ[x] \).
+We said \( \varphi_{ \alpha} \) has coefficients in $\QQ$ too, and thus in $\bar \ZZ \intersect \QQ = \ZZ$.
+So the problem is reduced to finding out when \( \varphi_{\alpha}(x) \) has integer coefficients.
+
+If $\deg(K_{/\QQ}) = n$, then 
+\[
+\varphi_{ \alpha}( \alpha) = \prod x- \sigma(\alpha) = x^n - \Tr(\alpha)x^{n-1} + \cdots + (-1)^n N( \alpha)
+.\]
+If $n=2$, these are the only terms, and so if $K$ is a quadratic number field then \( \alpha\in K \) is in $\ZZ_K$ if and only if $\Tr( \alpha), N(\alpha) \in \ZZ$.
+:::
+
+
+
+
+:::{.example title="?"}
+Let $K = \QQ( \sqrt{5} )$, then is it true that $\ZZ_K = \ZZ[\sqrt{5} ]$?
+Since $1, \sqrt{5} \in \ZZ_K$, we have $\supseteq$ since $1, \sqrt{5}$ are algebraic.
+The answer is **no**: take \( \alpha\da {1 + \sqrt{5} \over 2} \), then \( N( \alpha) -4/4 = -1 \) and \( \Tr( \alpha) = 1 \).
+These are integers, so \( \alpha\in \ZZ_K \), and in fact \( \alpha \) is a root of $x^2 - x - 1 \in \ZZ[x]$.
+:::
+
+
+:::{.theorem title="?"}
+Let $K = \QQ( \sqrt{d} )$ be a quadratic number field.
+Then if $d = 2,3 \mod 4$, then $\ZZ_K = \ts { a + b \sqrt{d} \st a, b\in \ZZ}$.
+If $d=1 \mod 4$, then $\ZZ_K = \ts{ {1 + b \sqrt{d} \over 2} \st a,b\in \ZZ,\, a\equiv b \mod 2}$.
+:::
+
+
+:::{.remark}
+For $d=1$, if $a, b$ are even then we just recover the $d=2,3$ case, so we're picking up extra elements from when $a,b$ both odd.
+:::
+
+
+:::{.proof title="?"}
+Let \( \alpha\in K \) and write \( \alpha = A + B \sqrt{d} \) with $A, B\in \QQ$.
+
+
+:::{.exercise title="?"}
+Check that \( N( \alpha), \Tr( \alpha) \in \ZZ \) for both cases.
+:::
+
+Assuming now that $N( \alpha), \Tr( \alpha) \in \ZZ$, then $A^2 - dB^2 \in \ZZ$.
+Multiply this by 2 to get $(2A)^2 - d(2B)^2 \in 4\ZZ$.
+Recalling that \( \Tr( \alpha) = 2 A \), we have $(2A)^2 \in \ZZ$ and thus $d(2B)^2 \in \ZZ$ as well.
+The claim now is that $2B \in \ZZ$: we know $2B\in \QQ$.
+If $2B\not\in \ZZ$, then the denominator has some prime factor.
+This prime factor appears twice in $(2B)^2$, and $d(2B)^2 \in \ZZ$ then means that two copies of $p$ appear in $d$ in order to cancel -- however, we assumed $d$ was squarefree.
+We now know that $A, B \in {1\over 2}\ZZ$, so write $A = (1/2)a'$ and $B = (1/2)b'$.
+Writing \( \alpha= (1/2)a' + (1/2)b' \sqrt{d} \), we find that $N( \alpha) = ((a')^2 - d(b')^2) / 4 \in \ZZ$.
+So the numerator is a multiple of 4, which yields $(a')^2 \equiv d(b')^2 \mod 4$.
+We proceed by cases.
+
+**Case 1:**
+$d = 2,3 \mod 4$.
+If $b'$ is odd then $(b')^2 = 1\mod 4$, which holds for any odd number.
+But then $(a')^2 = d(b')^2 = d \mod 4$, which is a problem -- squares modulo 4 can only be $0$ or $1$.
+This is a contradiction, so $b'$ must be even.
+Then $(b')^2 \mod 4 = 0$, which forces $a' \equiv 0 \mod 4$ and $a'$ must be even.
+But if $a', b'$ are both even, $(1/2)a', (1/2)b'\in \ZZ$ and we obtain \( \alpha\in \ZZ + \sqrt{d} \ZZ \) .
+
+
+**Case 2:**
+If $d\equiv 1 \mod 4$, then $(a')^2 \equiv (b')^2 \mod 4$.
+We can conclude that $a', b'$ are either both odd or both even, otherwise we'd get $0\equiv 1 \mod 4$, and thus we can write $a' \equiv b' \mod 2$.
+But this was exactly the condition appearing in the theorem.
+:::
+
+
+:::{.remark}
+Let $K$ be a quadratic number field.
+Then we can reformulate the previous results as:
+
+\[
+\ZZ_K = 
+\begin{cases}
+\ZZ[ \sqrt{d} ] &  d \equiv 2,3 \mod 4
+\\
+\ZZ\left[{1 + \sqrt{d} \over 2}\right] & d \equiv 1 \mod 4.
+\end{cases}
+\]
+
+We've also shown that $\ZZ_K$ is a free \(\ZZ\dash\)module of rank 2, with basis either \( \ts{ 1, \sqrt{d} } \) or \( \ts{ 1, {1 + \sqrt{d} \over 2 } } \).
+:::
+
+
+:::{.remark}
+What is true for general number fields?
+Important theorem: $\ZZ_K$ is always a free \(\ZZ\dash\)module, i.e. there always exists an *integral basis*.
+Surprisingly, the it's not always true that $\ZZ_K = \ZZ[\ell]$ for $\ell$ a single element.
+:::
 
 
 
