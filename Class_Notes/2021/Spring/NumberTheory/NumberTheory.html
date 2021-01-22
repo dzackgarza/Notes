@@ -78,7 +78,7 @@
           <address class="author_afil">
   <h2 class="author">D. Zack Garza</h2>
     University of Georgia<br>        <a class="author_email" href="mailto:#">dzackgarza@gmail.com</a>
-        <p class="small">Last updated: 2021-01-19</p>
+        <p class="small">Last updated: 2021-01-21</p>
     
   </address>
       </div>
@@ -93,7 +93,11 @@
 <li><a href="#motivation"><span class="toc-section-number">1.1</span> Motivation</a></li>
 </ul></li>
 <li><a href="#lecture-2-tuesday-january-19"><span class="toc-section-number">2</span> Lecture 2 (Tuesday, January 19)</a></li>
-<li><a href="#bibliography"><span class="toc-section-number">3</span> Bibliography</a></li>
+<li><a href="#lecture-3-thursday-january-21"><span class="toc-section-number">3</span> Lecture 3 (Thursday, January 21)</a>
+<ul>
+<li><a href="#quadratic-number-fields"><span class="toc-section-number">3.1</span> Quadratic Number Fields</a></li>
+</ul></li>
+<li><a href="#bibliography"><span class="toc-section-number">4</span> Bibliography</a></li>
 </ul>
 </nav>
 
@@ -414,7 +418,115 @@ x - a_{1,} &amp;  &amp; &amp;
 <div class="exercise proofenv" title="Prove the proposition.">
 <p>Prove this! Can use the integrality criterion (slightly challenging), can also use Galois theory.</p>
 </div>
-<h1 data-number="3" id="bibliography"><span class="header-section-number">3</span> Bibliography</h1>
+<h1 data-number="3" id="lecture-3-thursday-january-21"><span class="header-section-number">3</span> Lecture 3 (Thursday, January 21)</h1>
+<p>Today: roughly corresponds to chapter 3 in the book. Goal: do all of the big theorems in the setting of quadratic number fields, then redo everything for general number fields.</p>
+<h2 data-number="3.1" id="quadratic-number-fields"><span class="header-section-number">3.1</span> Quadratic Number Fields</h2>
+<p>Simplest case: <span class="math inline">\({\mathbb{Q}}\)</span>, a degree 1 number field, so the next simplest case is degree 2.</p>
+<div class="definition proofenv" title="Quadratic Number Fields">
+<p>A field <span class="math inline">\(K\)</span> is a <strong>quadratic number field</strong> if and only if <span class="math inline">\(K\)</span> is a number field and <span class="math inline">\([K: {\mathbb{Q}}] = 2\)</span>.</p>
+</div>
+<div class="remark proofenv">
+<p>Some notation: if <span class="math inline">\(d\in {\mathbb{R}}^{\times}\)</span>, then <span class="math inline">\(\sqrt d\)</span> means the <em>positive</em> square root of <span class="math inline">\(d\)</span> if <span class="math inline">\(d \geq 0\)</span>, and if <span class="math inline">\(d&lt;0\)</span> this denotes <span class="math inline">\(i\sqrt{{\left\lvert {d} \right\rvert}}\)</span>.</p>
+</div>
+<div class="proposition proofenv" title="?">
+<p>If <span class="math inline">\(K\)</span> is a quadratic number field, then <span class="math inline">\(K = {\mathbb{Q}}(\sqrt{d})\)</span> for some squarefree<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <span class="math inline">\(d\in {\mathbb{Z}}\)</span>. Moreover, this <span class="math inline">\(d\)</span> is uniquely determined by <span class="math inline">\(K\)</span>, so all quadratic number fields are parameterized by the set of squarefree integers.</p>
+</div>
+<div class="proof proofenv" title="?">
+<p><strong>Existence</strong>: Since <span class="math inline">\([K: {\mathbb{Q}}] = 2\)</span>, we have <span class="math inline">\(K\supsetneq {\mathbb{Q}}\)</span> so pick <span class="math inline">\(\alpha\in K\setminus{\mathbb{Q}}\)</span> then <span class="math inline">\(K = {\mathbb{Q}}(\alpha)\)</span>. Note that we could also furnish this <span class="math inline">\(\alpha\)</span> from the primitive element theorem, although this is overkill here. So <span class="math inline">\(\alpha\)</span> is a root of some degree 2 <span class="math inline">\(p\in {\mathbb{Q}}[x]\)</span>, and by scaling coefficients we can replace this by <span class="math inline">\(p\in {\mathbb{Z}}[x]\)</span>. So write <span class="math inline">\(p(x) = Ax^2 + Bx + C\)</span>, in which case we can always write <span class="math inline">\(\alpha = {-B \pm \sqrt{B^2 - 4AC} \over 2A}\)</span> where <span class="math inline">\(A\neq 0\)</span> since this would imply that <span class="math inline">\(\alpha\in{\mathbb{Q}}\)</span>. Writing <span class="math inline">\(\Delta\mathrel{\vcenter{:}}= B^2 - 4AC\)</span>, we have <span class="math inline">\(K = {\mathbb{Q}}(\alpha) = {\mathbb{Q}}(\sqrt{\Delta})\)</span>. This is close to what we want – it’s <span class="math inline">\({\mathbb{Q}}\)</span> adjoin some integer – but we’d like it to be squarefree.</p>
+<p>Now let <span class="math inline">\(f\in {\mathbb{Z}}^{\geq 0}\)</span> be chosen such that <span class="math inline">\(f^2 \divides \Delta\)</span> and <span class="math inline">\(f\)</span> is as large as possible, i.e. the largest square factor of <span class="math inline">\(\Delta\)</span>. Writing <span class="math inline">\(\Delta = f^2 - d\)</span> where <span class="math inline">\(d\)</span> is whatever remains. Then <span class="math inline">\(d\)</span> must be squarefree, otherwise if <span class="math inline">\(d\)</span> had a square factor bigger than 1, say <span class="math inline">\(d = r^2 d&#39;\)</span>, in which case <span class="math inline">\(f^2 r^2 &gt; f^2\)</span> would be a larger factor of <span class="math inline">\(\Delta\)</span>. So <span class="math inline">\(d\)</span> is squarefree, and <span class="math inline">\(\Delta = f \sqrt d\)</span> and thus <span class="math inline">\({\mathbb{Q}}(\Delta) = {\mathbb{Q}}(\sqrt{d})\)</span>.</p>
+<p><strong>Uniqueness</strong>: Well use some extra machinery.</p>
+<div class="definition proofenv" title="Norm and Trace">
+<p>Let <span class="math inline">\(K\)</span> be a number field with <span class="math inline">\(K_{/{\mathbb{Q}}}\)</span> Galois. For each <span class="math inline">\(\alpha\in K\)</span> define 
+<span class="math display">
+\begin{align*}
+N(\alpha) &amp;\mathrel{\vcenter{:}}=\prod_{\sigma\in \operatorname{Gal}(K_{/{\mathbb{Q}}})} \sigma(\alpha) &amp;&amp; \text{the norm} \\
+\operatorname{Tr}(\alpha) &amp;\mathrel{\vcenter{:}}=\sum_{\sigma\in \operatorname{Gal}(K_{/{\mathbb{Q}}})} \sigma(\alpha) &amp;&amp; \text{the trace}
+.\end{align*}
+<span></p>
+</div>
+<div class="remark proofenv">
+<p>Why use these kind of sum at all? Applying any element in the Galois group just permutes the elements. Note that <span class="math inline">\(N( \alpha), \operatorname{Tr}( \alpha)\)</span> are <span class="math inline">\(G(K_{/{\mathbb{Q}}}){\hbox{-}}\)</span>invariant, and thus rational numbers in <span class="math inline">\({\mathbb{Q}}\)</span>. The norm is multiplicative, and the trace is additive and in fact <span class="math inline">\({\mathbb{Q}}{\hbox{-}}\)</span>linear: <span class="math inline">\(\operatorname{Tr}(a \alpha + b \beta) = a \operatorname{Tr}( \alpha) + b \operatorname{Tr}( \beta)\)</span> for all <span class="math inline">\(\alpha, \beta\in K\)</span> and all <span class="math inline">\(a,b \in {\mathbb{Q}}\)</span>.</p>
+</div>
+<p>What do the norm and trace look like for a quadratic field? We can write <span class="math inline">\(K = \left\{{a + b \sqrt d {~\mathrel{\Big|}~}a,b \in {\mathbb{Q}}}\right\}\)</span> and there is a unique (non-identity) element <span class="math inline">\(g\in \operatorname{Gal}(K_{/{\mathbb{Q}}})\)</span> with <span class="math inline">\(\sigma(a + b \sqrt d = a - b \sqrt{d}\)</span>. We’ll refer to this automorphism as <strong>conjugation</strong>. We can compute 
+<span class="math display">
+\begin{align*}
+N(a + b \sqrt{d} ) &amp;= a^2 - db^2 \\
+\operatorname{Tr}(a + b \sqrt{d} ) &amp;= 2a
+.\end{align*}
+<span></p>
+<p>Returning to the proof, suppose otherwise that <span class="math inline">\(K = {\mathbb{Q}}(\sqrt{d_1} ) = {\mathbb{Q}}( \sqrt{d_2} )\)</span> with <span class="math inline">\(d_1\neq d_2\)</span> squarefree integers. Note that they must have the same sign, otherwise one of these extensions would not be a subfield of <span class="math inline">\({\mathbb{R}}\)</span>. We know <span class="math inline">\(\sqrt{d_1} \in {\mathbb{Q}}( \sqrt{d_2} )\)</span> and thus <span class="math inline">\(\sqrt{d_1} = a + b \sqrt{d_2}\)</span> for some <span class="math inline">\(a, b\in {\mathbb{Q}}\)</span>. Taking the trace of both sides, the LHS is zero and the RHS is <span class="math inline">\(2a\)</span> and we get <span class="math inline">\(a=0\)</span> and <span class="math inline">\(\sqrt{d_1} = b \sqrt{d_2}\)</span>. Write <span class="math inline">\(b = u/v\)</span> with <span class="math inline">\(u,v\in {\mathbb{Q}}\)</span>. Squaring both sides yields <span class="math inline">\(v^2 d_1 = u^2 d_2\)</span>. Let <span class="math inline">\(p\)</span> be a prime dividing <span class="math inline">\(d_1\)</span>; then since <span class="math inline">\(d_1\)</span> is squarefree there is only one copy of <span class="math inline">\(p\)</span> occurring in its factorization. Moreover there are an even number of copies of <span class="math inline">\(p\)</span> coming from <span class="math inline">\(v^2\)</span>, thus forcing <span class="math inline">\(d_2\)</span> to have an odd power of <span class="math inline">\(p\)</span>. This forces <span class="math inline">\(p\divides d_2\)</span>, and since this holds for every prime factor <span class="math inline">\(p\)</span> of <span class="math inline">\(d_1\)</span>, we get <span class="math inline">\(d_1 \divides d_2\)</span> since <span class="math inline">\(d_1\)</span> is squarefree. The same argument shows that <span class="math inline">\(d_2 \divides d_1\)</span>, so they’re the same up to sign: but the signs must match and we get <span class="math inline">\(d_1 = d_2\)</span>.</p>
+</div>
+<p>Note that this results holds for every squarefree number not equal to 1.</p>
+<div class="question proofenv">
+<p>If <span class="math inline">\(K = {\mathbb{Q}}( \sqrt{d} )\)</span>, what is the ring of integers <span class="math inline">\({\mathbb{Z}}_K\)</span>? Some more machinery will help here.</p>
+</div>
+<div class="definition proofenv" title="The Field Polynomial of an Element">
+<p>Assume <span class="math inline">\(K_{/{\mathbb{Q}}}\)</span> is a Galois number field and for <span class="math inline">\(\alpha\in K\)</span> define 
+<span class="math display">
+\begin{align*}
+\varphi_{\alpha}(x) \mathrel{\vcenter{:}}=\prod_{ \sigma\in \operatorname{Gal}(K_{/{\mathbb{Q}}})} \qty{ x - \sigma(\alpha)}
+.\end{align*}
+<span></p>
+</div>
+<div class="remark proofenv">
+<p>For the same reasons mentioned for the norm/trace, we get <span class="math inline">\(\varphi_{\alpha} \in {\mathbb{Q}}[x]\)</span>, and moreover <span class="math inline">\(\varphi_{ \alpha } (\alpha) = 0\)</span>.</p>
+</div>
+<p>When is <span class="math inline">\(\alpha\in {\mathbb{Z}}_K\)</span>? We have the following criterion:</p>
+<div class="proposition proofenv" title="?">
+<p>
+<span class="math display">
+\begin{align*}
+\alpha\in {\mathbb{Z}}_K \iff \varphi_{ \alpha } (x) \in {\mathbb{Z}}[x]
+.\end{align*}
+<span></p>
+</div>
+<div class="proof proofenv" title="?">
+<p><span class="math inline">\(\impliedby\)</span>: This is easy, since if <span class="math inline">\(\varphi_\alpha\)</span> is a monic polynomial with integer coefficients, meaning that <span class="math inline">\(\alpha\)</span> is an algebraic integer and thus in <span class="math inline">\({\mathbb{Z}}_K\)</span>.</p>
+<p><span class="math inline">\(\implies\)</span>: If <span class="math inline">\(\alpha \in {\mathbb{Z}}_K\)</span> then it’s the root of some monic polynomial in <span class="math inline">\({\mathbb{Z}}[x]\)</span>, and the same is true for <span class="math inline">\(\sigma(\alpha)\)</span> and thus each <span class="math inline">\(\sigma(\alpha) \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)</span>. So <span class="math inline">\(\varphi_{ \alpha}(x) \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu[x]\)</span>. We said <span class="math inline">\(\varphi_{ \alpha}\)</span> has coefficients in <span class="math inline">\({\mathbb{Q}}\)</span> too, and thus in <span class="math inline">\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap{\mathbb{Q}}= {\mathbb{Z}}\)</span>. So the problem is reduced to finding out when <span class="math inline">\(\varphi_{\alpha}(x)\)</span> has integer coefficients.</p>
+<p>If <span class="math inline">\(\deg(K_{/{\mathbb{Q}}}) = n\)</span>, then 
+<span class="math display">
+\begin{align*}
+\varphi_{ \alpha}( \alpha) = \prod x- \sigma(\alpha) = x^n - \operatorname{Tr}(\alpha)x^{n-1} + \cdots + (-1)^n N( \alpha)
+.\end{align*}
+<span> If <span class="math inline">\(n=2\)</span>, these are the only terms, and so if <span class="math inline">\(K\)</span> is a quadratic number field then <span class="math inline">\(\alpha\in K\)</span> is in <span class="math inline">\({\mathbb{Z}}_K\)</span> if and only if <span class="math inline">\(\operatorname{Tr}( \alpha), N(\alpha) \in {\mathbb{Z}}\)</span>.</p>
+</div>
+<div class="example proofenv" title="?">
+<p>Let <span class="math inline">\(K = {\mathbb{Q}}( \sqrt{5} )\)</span>, then is it true that <span class="math inline">\({\mathbb{Z}}_K = {\mathbb{Z}}[\sqrt{5} ]\)</span>? Since <span class="math inline">\(1, \sqrt{5} \in {\mathbb{Z}}_K\)</span>, we have <span class="math inline">\(\supseteq\)</span> since <span class="math inline">\(1, \sqrt{5}\)</span> are algebraic. The answer is <strong>no</strong>: take <span class="math inline">\(\alpha\mathrel{\vcenter{:}}={1 + \sqrt{5} \over 2}\)</span>, then <span class="math inline">\(N( \alpha) -4/4 = -1\)</span> and <span class="math inline">\(\operatorname{Tr}( \alpha) = 1\)</span>. These are integers, so <span class="math inline">\(\alpha\in {\mathbb{Z}}_K\)</span>, and in fact <span class="math inline">\(\alpha\)</span> is a root of <span class="math inline">\(x^2 - x - 1 \in {\mathbb{Z}}[x]\)</span>.</p>
+</div>
+<div class="theorem proofenv" title="?">
+<p>Let <span class="math inline">\(K = {\mathbb{Q}}( \sqrt{d} )\)</span> be a quadratic number field. Then if <span class="math inline">\(d = 2,3 \pmod 4\)</span>, then <span class="math inline">\({\mathbb{Z}}_K = \left\{{ a + b \sqrt{d} {~\mathrel{\Big|}~}a, b\in {\mathbb{Z}}}\right\}\)</span>. If <span class="math inline">\(d=1 \pmod 4\)</span>, then <span class="math inline">\({\mathbb{Z}}_K = \left\{{ {1 + b \sqrt{d} \over 2} {~\mathrel{\Big|}~}a,b\in {\mathbb{Z}},\, a\equiv b \pmod 2}\right\}\)</span>.</p>
+</div>
+<div class="remark proofenv">
+<p>For <span class="math inline">\(d=1\)</span>, if <span class="math inline">\(a, b\)</span> are even then we just recover the <span class="math inline">\(d=2,3\)</span> case, so we’re picking up extra elements from when <span class="math inline">\(a,b\)</span> both odd.</p>
+</div>
+<div class="proof proofenv" title="?">
+<p>Let <span class="math inline">\(\alpha\in K\)</span> and write <span class="math inline">\(\alpha = A + B \sqrt{d}\)</span> with <span class="math inline">\(A, B\in {\mathbb{Q}}\)</span>.</p>
+<div class="exercise proofenv" title="?">
+<p>Check that <span class="math inline">\(N( \alpha), \operatorname{Tr}( \alpha) \in {\mathbb{Z}}\)</span> for both cases.</p>
+</div>
+<p>Assuming now that <span class="math inline">\(N( \alpha), \operatorname{Tr}( \alpha) \in {\mathbb{Z}}\)</span>, then <span class="math inline">\(A^2 - dB^2 \in {\mathbb{Z}}\)</span>. Multiply this by 2 to get <span class="math inline">\((2A)^2 - d(2B)^2 \in 4{\mathbb{Z}}\)</span>. Recalling that <span class="math inline">\(\operatorname{Tr}( \alpha) = 2 A\)</span>, we have <span class="math inline">\((2A)^2 \in {\mathbb{Z}}\)</span> and thus <span class="math inline">\(d(2B)^2 \in {\mathbb{Z}}\)</span> as well. The claim now is that <span class="math inline">\(2B \in {\mathbb{Z}}\)</span>: we know <span class="math inline">\(2B\in {\mathbb{Q}}\)</span>. If <span class="math inline">\(2B\not\in {\mathbb{Z}}\)</span>, then the denominator has some prime factor. This prime factor appears twice in <span class="math inline">\((2B)^2\)</span>, and <span class="math inline">\(d(2B)^2 \in {\mathbb{Z}}\)</span> then means that two copies of <span class="math inline">\(p\)</span> appear in <span class="math inline">\(d\)</span> in order to cancel – however, we assumed <span class="math inline">\(d\)</span> was squarefree. We now know that <span class="math inline">\(A, B \in {1\over 2}{\mathbb{Z}}\)</span>, so write <span class="math inline">\(A = (1/2)a&#39;\)</span> and <span class="math inline">\(B = (1/2)b&#39;\)</span>. Writing <span class="math inline">\(\alpha= (1/2)a&#39; + (1/2)b&#39; \sqrt{d}\)</span>, we find that <span class="math inline">\(N( \alpha) = ((a&#39;)^2 - d(b&#39;)^2) / 4 \in {\mathbb{Z}}\)</span>. So the numerator is a multiple of 4, which yields <span class="math inline">\((a&#39;)^2 \equiv d(b&#39;)^2 \pmod 4\)</span>. We proceed by cases.</p>
+<p><strong>Case 1:</strong> <span class="math inline">\(d = 2,3 \pmod 4\)</span>. If <span class="math inline">\(b&#39;\)</span> is odd then <span class="math inline">\((b&#39;)^2 = 1\pmod 4\)</span>, which holds for any odd number. But then <span class="math inline">\((a&#39;)^2 = d(b&#39;)^2 = d \pmod 4\)</span>, which is a problem – squares modulo 4 can only be <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>. This is a contradiction, so <span class="math inline">\(b&#39;\)</span> must be even. Then <span class="math inline">\((b&#39;)^2 \pmod 4 = 0\)</span>, which forces <span class="math inline">\(a&#39; \equiv 0 \pmod 4\)</span> and <span class="math inline">\(a&#39;\)</span> must be even. But if <span class="math inline">\(a&#39;, b&#39;\)</span> are both even, <span class="math inline">\((1/2)a&#39;, (1/2)b&#39;\in {\mathbb{Z}}\)</span> and we obtain <span class="math inline">\(\alpha\in {\mathbb{Z}}+ \sqrt{d} {\mathbb{Z}}\)</span> .</p>
+<p><strong>Case 2:</strong> If <span class="math inline">\(d\equiv 1 \pmod 4\)</span>, then <span class="math inline">\((a&#39;)^2 \equiv (b&#39;)^2 \pmod 4\)</span>. We can conclude that <span class="math inline">\(a&#39;, b&#39;\)</span> are either both odd or both even, otherwise we’d get <span class="math inline">\(0\equiv 1 \pmod 4\)</span>, and thus we can write <span class="math inline">\(a&#39; \equiv b&#39; \pmod 2\)</span>. But this was exactly the condition appearing in the theorem.</p>
+</div>
+<div class="remark proofenv">
+<p>Let <span class="math inline">\(K\)</span> be a quadratic number field. Then we can reformulate the previous results as:</p>
+<p>
+<span class="math display">
+\begin{align*}
+{\mathbb{Z}}_K = 
+\begin{cases}
+{\mathbb{Z}}[ \sqrt{d} ] &amp;  d \equiv 2,3 \pmod 4
+\\
+{\mathbb{Z}}\left[{1 + \sqrt{d} \over 2}\right] &amp; d \equiv 1 \pmod 4.
+\end{cases}
+\end{align*}
+<span></p>
+<p>We’ve also shown that <span class="math inline">\({\mathbb{Z}}_K\)</span> is a free <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>module of rank 2, with basis either <span class="math inline">\(\left\{{ 1, \sqrt{d} }\right\}\)</span> or <span class="math inline">\(\left\{{ 1, {1 + \sqrt{d} \over 2 } }\right\}\)</span>.</p>
+</div>
+<div class="remark proofenv">
+<p>What is true for general number fields? Important theorem: <span class="math inline">\({\mathbb{Z}}_K\)</span> is always a free <span class="math inline">\({\mathbb{Z}}{\hbox{-}}\)</span>module, i.e. there always exists an <em>integral basis</em>. Surprisingly, the it’s not always true that <span class="math inline">\({\mathbb{Z}}_K = {\mathbb{Z}}[\ell]\)</span> for <span class="math inline">\(\ell\)</span> a single element.</p>
+</div>
+<h1 data-number="4" id="bibliography"><span class="header-section-number">4</span> Bibliography</h1>
 <div id="refs" class="proofenv" role="doc-bibliography">
 
 </div>
@@ -422,6 +534,7 @@ x - a_{1,} &amp;  &amp; &amp;
 <hr />
 <ol>
 <li id="fn1" role="doc-endnote"><p>An injective ring morphism.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p><em>Squarefree</em> means not divisible by <span class="math inline">\(n^2\)</span> for any <span class="math inline">\(n &gt; 1\in {\mathbb{Z}}\)</span>, or equivalently not divisible by the square of any primes.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--bookdown:body:end-->
