@@ -1,0 +1,39 @@
+<svg class="write-page" width="772px" height="1250px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g class="write-content write-v3" width="772" height="1250" xruling="0" yruling="40" marginLeft="100" papercolor="#FFFFFF" rulecolor="#9F0000FF">
+    <g class="ruleline write-std-ruling write-scale-down" fill="none" stroke="#0000FF" stroke-opacity="0.624" stroke-width="1" shape-rendering="crispEdges" vector-effect="non-scaling-stroke">
+      <rect class="pagerect" fill="#FFFFFF" stroke="none" x="0" y="0" width="772" height="1250" />
+      <path class="yrule_1" d="M0 40 l772 0" />
+      <path d="M0 80 l772 0" />
+      <path d="M0 120 l772 0" />
+      <path d="M0 160 l772 0" />
+      <path d="M0 200 l772 0" />
+      <path d="M0 240 l772 0" />
+      <path d="M0 280 l772 0" />
+      <path d="M0 320 l772 0" />
+      <path d="M0 360 l772 0" />
+      <path d="M0 400 l772 0" />
+      <path d="M0 440 l772 0" />
+      <path d="M0 480 l772 0" />
+      <path d="M0 520 l772 0" />
+      <path d="M0 560 l772 0" />
+      <path d="M0 600 l772 0" />
+      <path d="M0 640 l772 0" />
+      <path d="M0 680 l772 0" />
+      <path d="M0 720 l772 0" />
+      <path d="M0 760 l772 0" />
+      <path d="M0 800 l772 0" />
+      <path d="M0 840 l772 0" />
+      <path d="M0 880 l772 0" />
+      <path d="M0 920 l772 0" />
+      <path d="M0 960 l772 0" />
+      <path d="M0 1000 l772 0" />
+      <path d="M0 1040 l772 0" />
+      <path d="M0 1080 l772 0" />
+      <path d="M0 1120 l772 0" />
+      <path d="M0 1160 l772 0" />
+      <path d="M0 1200 l772 0" />
+      <path d="M0 1240 l772 0" />
+      <path class="leftmargin" stroke="#FF0000" d="M100 0 l0 1250" />
+    </g>
+  </g>
+</svg>
