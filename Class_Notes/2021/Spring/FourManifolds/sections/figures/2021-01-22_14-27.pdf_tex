@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1650.77287259bp}%
+    \setlength{\unitlength}{1318.32597236bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,12 +50,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.39544682)%
+  \begin{picture}(1,0.36542666)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-01-22_14-27.pdf}}%
-    \put(0.92730676,0.33620616){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\CC$\end{tabular}}}}%
-    \put(0.345761,0.38163941){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$M$\end{tabular}}}}%
+    \put(0.6793501,0.28845729){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\CC$\end{tabular}}}}%
+    \put(0.14687204,0.26778685){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$M$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-01-22_14-27.pdf}}%
   \end{picture}%
 \endgroup%
