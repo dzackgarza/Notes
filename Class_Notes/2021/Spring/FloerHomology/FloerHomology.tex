@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-19 }
+{\tiny \textit{Last updated:} 2021-01-23 }
 \end{flushleft}
 
 
@@ -1103,62 +1103,174 @@ to compute, exact sequences, bordered Floer homology.
 
 Next time: we'll talk about ``integer surgeries''.
 
-\hypertarget{lecture-3-thursday-january-19}{%
-\section{Lecture 3 (Thursday, January
-19)}\label{lecture-3-thursday-january-19}}
+\hypertarget{lecture-3-morse-theory-thursday-january-19}{%
+\section{Lecture 3: Morse Theory (Thursday, January
+19)}\label{lecture-3-morse-theory-thursday-january-19}}
 
-\begin{definition}[$p/q$ Surgery]
+\hypertarget{intro-to-morse-theory}{%
+\subsection{Intro to Morse Theory}\label{intro-to-morse-theory}}
 
-?
-
-\end{definition}
-
-\begin{figure}
-\centering
-\includegraphics{figures/image_2021-01-19-00-41-55.png}
-\caption{image\_2021-01-19-00-41-55}
-\end{figure}
-
-\hypertarget{morse-theory}{%
-\subsection{Morse Theory}\label{morse-theory}}
+Let \(M^n\) be a smooth closed manifold, then the goal is to study the
+topology of \(M\) by studying smooth functions
+\(f \in C^ \infty (M, {\mathbb{R}})\). We'll need \(f\) to be
+\emph{generic} in a sense we'll discuss later.
 
 \begin{definition}[Critical Point]
 
-?
+A point \(p\in M\) is called a \textbf{critical point} if and only if
+\((df)_p = 0\).
 
 \end{definition}
 
 \begin{definition}[Hessian / Second Derivative]
 
-?
+Fixing a critical point \(p\) for \(f\), the \textbf{second derivative}
+or \textbf{Hessian} of \(f\) at \(p\) is a bilinear form on \(T_pM\)
+which is defined in the following way: for \(v, w\in T_p M\), extend
+\(w\) to a vector field \(\tilde w\) in a neighborhood of \(p\) and set
+\begin{align*}
+d^2 f_p(v, w) = v\cdot (\tilde w \cdot f)(p) \coloneqq v \cdot (df)(\tilde w)(p)
+.\end{align*}
+where we take the derivative of \(f\) with respect to \(\tilde w\), then
+take the derivative with respect to \(v\), then evaluate at the point to
+get a number.
 
 \end{definition}
 
+\begin{remark}
+
+This is only well-defined at critical points (check!). Note that we need
+\(\tilde w\) so that \(\tilde w \cdot f\) is again a function (and not a
+number) which can be differentiated again. You can also take
+e.g.~\(\tilde v \cdot (\tilde w \cdot f)\), differentiating with respect
+to the vector field instead of just the vector \(v\), but we're plugging
+in \(p\) in either case.
+
+\end{remark}
+
+\begin{claim}
+
+The second derivative is
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Well-defined, and
+\item
+  Symmetric
+\end{enumerate}
+
+\end{claim}
+
+\begin{remark}
+
+If you fix a coordinate chart in a neighborhood of \(p\), then the
+bilinear form is represented by a matrix given by
+\begin{align*}
+(d^2 f)_p = H_p =  \qty{ {\frac{\partial ^2}{\partial x_j {\partial}x_i}\,}(p)}_{ij}
+.\end{align*}
+
+\end{remark}
+
+\begin{proof}[of 2]
+
+We can compute
+\begin{align*}
+(d^2 f)_p(v, w) - (d^2 f)_p(w, v) 
+&= v\cdot (\tilde w \cdot f)(p) - w \cdot (\tilde v \cdot f)(p) \\
+&\coloneqq df_p \qty{ [\tilde v, \tilde w]} \\
+& = 0 && \text{since $p$ is a critical point and $df_p = 0$}
+.\end{align*}
+
+\end{proof}
+
+\begin{proof}[of 1]
+
+This is now easier to prove: we are picking an extension of \(w\) to a
+vector field, so we need to show that the definition doesn't depend on
+that choice.
+\begin{align*}
+(d^2 f)(_p(v, w) 
+&= v\cdot (\tilde w \cdot f)(p) && \text{which doesn't depend on }\tilde v\\
+&= (d^2 f)_p(w, v) \\
+&= w\cdot (\tilde v \cdot f)(p) && \text{which doesn't depend on } \tilde w
+,\end{align*}
+and thus this is independent of both \(\tilde v\) and \(\tilde w\).
+
+\end{proof}
+
+\begin{exercise}[?]
+
+Show that the second derivative in local coordinates is given by the
+matrix \(H_p\) above.
+
+\end{exercise}
+
+\begin{remark}
+
+In local coordinates, we can write
+\(v = \sum_{i=1}^n a_i {\frac{\partial }{\partial x_i}\,}\) and
+\(w = \sum_{i=1}^n b_i {\frac{\partial }{\partial x_i}\,}\), and thus
+\begin{align*}
+(d^2 f)_p(v, w) = \mathbf{b}^t H_p \mathbf{a} = \sum_{1 \leq i,j \leq n} a_i b_j {\frac{\partial ^2 f}{\partial x_i {\partial}x_j}\,}(p)
+.\end{align*}
+
+\end{remark}
+
 \begin{definition}[Nondegenerate Critical Points]
 
-?
+A critical point \(p\in M\) is called \textbf{nondegenerate} if the
+bilinear form \((d^2 f)_p\) is nondegenerate at \(p\), i.e.~for all
+\(v\in T_p M\) there exists a
+\(w\in T_pM\setminus\left\{{\mathbf{0}}\right\}\) such that
+\((d^2 f)_p(v, w) \neq 0\). This occurs if and only if \(H_p\) is
+invertible.
 
 \end{definition}
 
 \begin{definition}[Index of a critical point]
 
-?
+Given a nondegenerate critical point \(p\in M\), define the
+\textbf{index} \(\mathop{\mathrm{Ind}}(p)\) of \(f\) at \(p\) in the
+following way: since \(H_p\) is symmetric and nondegenerate, its
+eigenvalues are real and nonzero, so define the index as the number of
+\emph{negative} eigenvalues of \(H_p\).
 
 \end{definition}
 
 \begin{definition}[Morse Function]
 
-?
+A function \(f\in C^ \infty (M, {\mathbb{R}})\) is called a
+\textbf{Morse function} if and only if all of its critical points are
+nondegenerate.
 
 \end{definition}
 
+\begin{remark}
+
+We'll see that almost every smooth function is Morse, and these are
+preferable since they have a simple and predictable structure near
+critical points and don't do anything interesting elsewhere.
+
+\end{remark}
+
 \begin{theorem}[Morse Lemma]
 
-?
+Let \(p\in M\) be a nondegenerate critical point of \(f\) with
+\(\mathop{\mathrm{Ind}}(p) = \lambda\). Then there exists charts
+\(\varphi:(U, p) \to ({\mathbb{R}}^n, 0)\) such that writing \(f\) in
+local coordinates yields
+\begin{align*}
+(f \circ \varphi ^{-1} )(x) = f(p) - \sum_{i=1}^{\lambda} x_i^2 + \sum_{j= \lambda + 1}^n x_j^2
+.\end{align*}
 
 \end{theorem}
 
+\begin{remark}[Observation 1]
+
+We have
 \begin{align*}
+H_p = 
 \begin{bmatrix}
 -2&&&&&&\\
 &\ddots&&&&&\\
@@ -1168,42 +1280,162 @@ Next time: we'll talk about ``integer surgeries''.
 &&&&&2&\\
 &&&&&&2
 \end{bmatrix}
+= -2 I_{\lambda} \oplus 2 I_{n- \lambda}
 .\end{align*}
 
+\end{remark}
+
+\begin{remark}[Observation 2]
+
+If \(\lambda=n\)??
+
+\end{remark}
+
+\begin{remark}[Observation 3]
+
+??
+
+\end{remark}
+
 \begin{example}[Sphere]
+
+Consider \(S^2\) with a height function:
 
 \begin{figure}
 \centering
 \includegraphics{figures/image_2021-01-19-00-49-32.png}
-\caption{image\_2021-01-19-00-49-32}
+\caption{Sphere with a height function}
 \end{figure}
+
+Then we have a local minimum at the South pole \(p\) and a local max at
+the North pole \(q\), where \(\mathop{\mathrm{Ind}}(p) = 0\) and
+\(\mathop{\mathrm{Ind}}(q) = 2\). Note that the critical points
+essentially occur where the tangent space is horizontal
 
 \end{example}
 
 \begin{example}[Torus]
 
+Consider \({\mathbb{T}}^2\) with the height function:
+
 \begin{figure}
 \centering
 \includegraphics{figures/image_2021-01-19-00-49-53.png}
-\caption{image\_2021-01-19-00-49-53}
+\caption{Torus with a height function}
+\end{figure}
+
+This has a similar max/min as the sphere, but also has two critical
+points in the middle that resemble saddles:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-04-50.png}
+\caption{Saddle points}
 \end{figure}
 
 \end{example}
 
-\begin{lemma}[?]
+\begin{remark}
 
-If \(f ^{-1} ([a, b])\) has no critical point, then
-\(f ^{-1} (a) \cong f ^{-1} (b)\) and \(M_a \cong M_b\).
-
-\end{lemma}
-
-\begin{proof}[?]
+Define \(M_a \coloneqq f ^{-1} ((- \infty , a])\); we then want to
+consider how \(M_a\) changes as \(a\) changes:
 
 \begin{figure}
 \centering
-\includegraphics{figures/image_2021-01-19-00-51-14.png}
-\caption{image\_2021-01-19-00-51-14}
+\includegraphics{figures/image_2021-01-21-12-06-29.png}
+\caption{\(M_a\) on the sphere}
 \end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-06-49.png}
+\caption{\(M_a\) on the torus}
+\end{figure}
+
+\end{remark}
+
+\begin{lemma}[?]
+
+If \(f ^{-1} ([a, b])\) contains no critical points, then
+\begin{align*}
+f ^{-1} (a) &\cong f ^{-1} (b) \\
+M_a &\cong M_b
+.\end{align*}
+
+\end{lemma}
+
+\begin{definition}[Gradients]
+
+Choose a metric \(g\) on \(M\), then the \textbf{gradient vector} of
+\(f\) is given by
+\begin{align*}
+g(\nabla f, v) = df(v)
+.\end{align*}
+
+\end{definition}
+
+\begin{remark}
+
+We have
+\begin{align*}
+df( \nabla f) = g(\nabla f, \nabla f) = {\left\lVert {\nabla f} \right\rVert}^2
+.\end{align*}
+
+\end{remark}
+
+\begin{proof}[?]
+
+We have the following situation:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-11-16.png}
+\caption{image\_2021-01-21-12-11-16}
+\end{figure}
+
+The gradient vector is always tangent to the level sets, so we can
+consider the curve \(\gamma\) which satisfies
+\(\dot\gamma(t) = -\nabla f( \gamma(t))\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-12-42.png}
+\caption{image\_2021-01-21-12-12-42}
+\end{figure}
+
+For technical reasons, we want to end up with cohomology instead of
+homology and will take \(-\nabla f\) instead of \(\nabla f\) everywhere:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-13-35.png}
+\caption{image\_2021-01-21-12-13-35}
+\end{figure}
+
+So \(\gamma\) will be a trajectory of \(- \nabla f\), and
+\(f ^{-1} [a, b] \cong f ^{-1} (a) \times[0, 1]\). A problem is that
+following these trajectories may involve arriving at \(f ^{-1} (a)\) at
+different times:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-15-10.png}
+\caption{image\_2021-01-21-12-15-10}
+\end{figure}
+
+We can fix this by normalizing:
+\begin{align*}
+V \coloneqq- \nabla f / {\left\lVert { \nabla f} \right\rVert}^2 \implies (df)(v) = {\left\langle { \nabla f},~{ - \nabla f / {\left\lVert {\nabla f} \right\rVert}^2} \right\rangle} = -1
+.\end{align*}
+
+For every \(p \in f ^{-1} (b)\), if \(\gamma(t)\) is the trajectory
+starting from \(p\), i.e.~\(\gamma(0) = p\), then
+\(\gamma(b-a) \in f ^{-1} (a)\). So define
+\begin{align*}
+\Phi: f ^{-1} (b) \times[0, b-a] &\to f ^{-1} ([a, b]) \\
+(p, t) &\mapsto \gamma_p (t)
+,\end{align*}
+which will be a diffeomorphism.
 
 \end{proof}
 
@@ -1212,11 +1444,23 @@ If \(f ^{-1} ([a, b])\) has no critical point, then
 Suppose \(f ^{-1} ([a, b])\) contains exactly one critical point \(p\)
 with \(\mathop{\mathrm{Ind}}(p) = \lambda\) and \(f(p) = c\). Then
 \begin{align*}
-M_b = M_a \cup\qty{ D^ \lambda \times D^{n - \lambda} }
+M_b = M_a \cup_{{{\partial}}} \qty{ D^ \lambda \times D^{n - \lambda} }
 \end{align*}
 where \(n \coloneqq\dim M\).
 
 \end{theorem}
+
+\begin{example}[?]
+
+For \(\lambda= 1, n - \lambda= 2\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-21-12-32-38.png}
+\caption{image\_2021-01-21-12-32-38}
+\end{figure}
+
+\end{example}
 
 \begin{example}[?]
 
