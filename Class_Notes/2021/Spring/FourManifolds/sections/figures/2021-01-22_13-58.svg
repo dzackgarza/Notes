@@ -253,9 +253,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="823.95722"
-     inkscape:cy="398.01203"
+     inkscape:zoom="1.4"
+     inkscape:cx="801.95831"
+     inkscape:cy="197.56694"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -267,9 +267,9 @@
      guidetolerance="10000"
      inkscape:snap-perpendicular="true"
      inkscape:snap-tangential="true"
-     inkscape:window-width="1920"
+     inkscape:window-width="1080"
      inkscape:window-height="1080"
-     inkscape:window-x="1079"
+     inkscape:window-x="1499"
      inkscape:window-y="1094"
      inkscape:window-maximized="0">
     <sodipodi:guide
@@ -362,18 +362,18 @@
     <path
        id="path855"
        style="fill:none;stroke:#000000;stroke-width:0.260929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="M 63.989583,31.66667 C 7.5558962,1.3396552e-6 44.967286,-32.570069 -146.35417,42.250004"
+       d="M 63.989583,31.66667 C 1.8125,15.791672 -3.4791667,10.500006 -146.35417,42.250004"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
-       x="-21.021402"
-       y="15.707949"
+       x="-20.167311"
+       y="15.94536"
        id="text859"><tspan
          sodipodi:role="line"
          id="tspan857"
-         x="-21.021402"
-         y="15.707949"
+         x="-20.167311"
+         y="15.94536"
          style="stroke-width:0.264583">$f$</tspan></text>
     <path
        style="fill:#8aa678;fill-rule:evenodd;stroke:#8aa678;stroke-width:0.891565;stroke-linejoin:round;stroke-dasharray:0.891565, 0.891565;stroke-opacity:0.981966"
