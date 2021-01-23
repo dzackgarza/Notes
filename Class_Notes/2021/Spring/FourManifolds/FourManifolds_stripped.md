@@ -554,6 +554,121 @@ Here the kernel is trivial, i.e. on any open \( U \) we have \( (x\cdot):{\math
 This is one reason sheaves are better than vector bundles: the category is closed under taking quotients, whereas quotients of vector bundles may not be vector bundles.
 :::
 
+# Lecture 4 (Friday, January 22)
+
+## The Exponential Exact Sequence
+
+Let \( X = {\mathbb{C}} \) and consider \( {\mathcal{O}} \) the sheaf of holomorphic functions and \( {\mathcal{O}}^{\times} \) the sheaf of *nonvanishing* holomorphic functions. The former is a vector bundle and the latter is a sheaf of abelian groups. There is a map \( \exp: {\mathcal{O}}\to {\mathcal{O}}^{\times} \), the **exponential map**, which is the data \( \exp(U): {\mathcal{O}}(U) \to {\mathcal{O}}^{\times}(U) \) on every open \( U \) given by \( f\mapsto e^f \). There is a kernel sheaf \( 2\pi i \underline{{\mathbb{Z}}} \), and we get an exact sequence
+\[
+0 \to 2\pi i \underline{{\mathbb{Z}}} \to {\mathcal{O}}\xrightarrow{\exp} {\mathcal{O}}^{\times}\to \operatorname{coker}(\exp) \to 0
+.\]
+
+::: {.question}
+What is the cokernel sheaf here?
+:::
+
+Let \( U \) be a contractible open set, then we can identify \( {\mathcal{O}}^{\times}(U) / \exp({\mathcal{O}}^{\times}(U)) = 1 \).
+
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{44pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-22_13-58.pdf_tex} 
+};
+\end{tikzpicture}
+```
+Any \( f\in {\mathcal{O}}^{\times}(U) \) has a logarithm, say by taking a branch cut, since \( \pi_1(U) =0 \implies \log f \) has an analytic continuation. Consider the annulus \( U \) and the function \( z\in {\mathcal{O}}^{\times}(U) \), then \( z\not\in \exp({\mathcal{O}}(U)) \) -- if \( z=e^f \) then \( f=\log(z) \), but \( \log(z) \) has monodromy on \( U \):
+
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{44pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-22_14-02.pdf_tex} 
+};
+\end{tikzpicture}
+```
+Thus on any sufficiently small open set, \( \operatorname{coker}(\exp) = 1 \). This is only a presheaf: there exists an open cover of the annulus for which \( { \left.{{z}} \right|_{{U_i}} } \), and so the naive cokernel doesn't define a sheaf. This is because we have a locally trivial section which glues to \( z \), which is nontrivial.
+
+::: {.exercise title="?"}
+Redefine the cokernel so that it is a sheaf. Hint: look at sheafification, which has the defining property \( {\operatorname{Hom}}_{{\operatorname{Presh}}}(\mathcal{G}, \mathcal{F}^{\operatorname{Presh}}) ={\operatorname{Hom}}_{{\operatorname{Sh}}}( \mathcal{G}, \mathcal{F}^{{\operatorname{Sh}}}) \) for any sheaf \( \mathcal{G} \).
+:::
+
+::: {.definition title="Global Sections Sheaf"}
+The **global sections** sheaf of \( \mathcal{F} \) on \( X \) is given by \( H^0( X; \mathcal{F}) = \mathcal{F}(X) \).
+:::
+
+::: {.example title="?"}
+```{=tex}
+\envlist
+```
+-   \( C^ \infty (X) = H^0(X, C^ \infty ) \) are the smooth functions on \( X \)
+-   \( VF(X) = H^0(X; T) \) are the smooth vector fields on \( X \) for \( T \) the tangent bundle
+-   If \( X \) is a complex manifold then \( {\mathcal{O}}(X) = H^0(X; {\mathcal{O}}) \) are the globally holomorphic functions on \( X \).
+-   \( H^0(X; {\mathbb{Z}}) = \underline{{\mathbb{Z}}}(X) \) are ??
+:::
+
+::: {.remark}
+Given vector bundles \( V, W \), we have constructions \( V \oplus W, V \otimes W, V^\vee, {\operatorname{Hom}}(V, W) = V^\vee\otimes W, \operatorname{Sym}^n V, \Lambda^p V \), and so on. Some of these work directly for sheaves:
+
+-   \( \mathcal{F} \oplus \mathcal{G}(U) \coloneqq\mathcal{F}(U) \oplus \mathcal{G}(U) \)
+-   For tensors, duals, and homs \( \mathscr{H}\kern-2pt\operatorname{om}(V, W) \) we only get presheaves, so we need to sheafify.
+:::
+
+::: {.warnings}
+\( {\operatorname{Hom}}(V, W) \) will denote the *global* homomorphisms \( \mathscr{H}\kern-2pt\operatorname{om}(V, W)(X) \), which is a sheaf.
+:::
+
+::: {.example title="?"}
+Let \( X^n \in {\operatorname{Mfd}}_{{\operatorname{sm}}} \) and let \( \Omega^p \) be the sheaf of smooth \( p{\hbox{-}} \)forms, i.e \( \Lambda^p T^\vee \), i.e. \( \Omega^p(U) \) are the smooth \( p \) forms on \( U \), which are locally of the form \( \sum f_{i_1, \cdots, i_p} (x_1, \cdots, x_n) dx_{i_1} \wedge dx_{i_2} \wedge \cdots dx_{i_p} \) where the \( f_{i_1, \cdots, i_p} \) are smooth functions.
+
+::: {.example title="Sub-example"}
+Take \( X= S^1 \), writing this as \( {\mathbb{R}}/{\mathbb{Z}} \), we have \( \Omega^1(X) \ni dx \). There are two coordinate charts which differ by a translation on their overlaps, and \( dx(x + c) =dx \) for \( c \) a constant:
+
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{44pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-22_14-22.pdf_tex} 
+};
+\end{tikzpicture}
+```
+:::
+
+::: {.exercise title="?"}
+Check that on a torus, \( dx_i \) is a well-defined 1-form.
+:::
+:::
+
+::: {.remark}
+Note that there is a map \( d: \Omega^p \to \Omega^{p+1} \) where \( \omega\mapsto d \omega \).
+:::
+
+::: {.warnings}
+\( d \) is **not** a map of \( {\mathcal{O}}{\hbox{-}} \)modules: \( d(f\cdot \omega) = f\cdot \omega + {\color{red} df \wedge \omega} \), where the latter is a correction term. In particular, it is not a map of vector bundles, but is a map of sheaves of abelian groups since \( d ( \omega_1 + \omega_2) = d( \omega_1 ) + d ( \omega_2) \), making \( d \) a sheaf morphism.
+:::
+
+Let \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \), we'll use the fact that \( TX \) is complex-linear and thus a \( {\mathbb{C}}{\hbox{-}} \)vector bundle.
+
+```{=tex}
+\begin{tikzpicture}
+\node (node_one) at (0,0) { 
+\fontsize{44pt}{1em} 
+\import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-22_14-27.pdf_tex} 
+};
+\end{tikzpicture}
+```
+::: {.remark title="Subtlety 1"}
+Note that \( \Omega^p \) for complex manifolds is \( \Lambda^p T^\vee \), and so if we want to view \( X \in {\operatorname{Mfd}}_{\mathbb{R}} \) we'll write \( X_{{\mathbb{R}}} \). \( TX_{\mathbb{R}} \) is then a real vector bundle of rank \( 2n \).
+:::
+
+::: {.remark title="Subtlety 2"}
+\( \Omega^p \) will denote *holomorphic* \( p{\hbox{-}} \)forms, i.e. local expressions \( \sum f_I(z_1, \cdots, z_n) \Lambda dz_I \). For example, \( e^zdz\in \Omega^1({\mathbb{C}}) \) but \( z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz \) is not, where \( dz = dx + idy \). We'll use a different notation when we allow the \( f_I \) to just be smooth: \( A^{p, 0} \), the sheaf of \( (p, 0){\hbox{-}} \)forms. Then \( z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz\in A^{1, 0} \).
+:::
+
+::: {.remark}
+Note that \( T^\vee X_{\mathbb{R}}\otimes _{\mathbb{C}}= A^{1, 0} \oplus A^{0, 1} \) since there is a unique decomposition \( \omega = fdz + gd\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \) where \( f,g \) are smooth. Then \( \Omega^d X_{\mathbb{R}}\otimes_{\mathbb{R}}{\mathbb{C}}= \bigoplus _{p+q=d} A^{p, q} \). Note that \( \Omega_{\setminus}^p \neq A^{p, q} \) and these are really quite different: the former are more like holomorphic bundles, and the latter smooth. Moreover \( \dim \Omega^p(X) < \infty \), whereas \( \Omega_{\setminus}^1 \) is infinite-dimensional.
+:::
+
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
 [^2]: Locally admits a chart to \( {\mathbb{C}}^n/ \Gamma \) for \( \Gamma \) a finite group.
