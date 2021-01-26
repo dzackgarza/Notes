@@ -840,7 +840,6 @@ These constructions make $\Ch$ into an **abelian category**: roughly an additive
 :::{.remark}
 Consider a double complex:
 
-% https://q.uiver.app/?q=WzAsMTEsWzIsMiwiQ197cC0xLCBxKzF9Il0sWzQsMiwiQ197cCwgcSsxfSJdLFs2LDIsIkNfe3AtMSwgcSsxfSJdLFsyLDQsIkNfe3AtMSwgcX0iXSxbNCw0LCJDX3twLCBxfSJdLFs2LDQsIkNfe3ArMSwgcX0iXSxbMiw2LCJDX3twLTEsIHErMX0iXSxbNCw2LCJDX3twLTEsIHErMX0iXSxbNiw2LCJDX3twLTEsIHErMX0iXSxbNCwwLCJDX3twLCBcXGNkb3R9Il0sWzAsNCwiQ197XFxjZG90LCBxfSJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52IiwyXSxbMSw0XV0=
 \begin{tikzcd}
 	&&&& {C_{p, \cdot}} \\
 	\\
@@ -853,6 +852,7 @@ Consider a double complex:
 	\arrow["{d_{p, q}^v}"', from=5-5, to=7-5]
 	\arrow[from=3-5, to=5-5]
 \end{tikzcd}
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzIsMiwiQ197cC0xLCBxKzF9Il0sWzQsMiwiQ197cCwgcSsxfSJdLFs2LDIsIkNfe3AtMSwgcSsxfSJdLFsyLDQsIkNfe3AtMSwgcX0iXSxbNCw0LCJDX3twLCBxfSJdLFs2LDQsIkNfe3ArMSwgcX0iXSxbMiw2LCJDX3twLTEsIHErMX0iXSxbNCw2LCJDX3twLTEsIHErMX0iXSxbNiw2LCJDX3twLTEsIHErMX0iXSxbNCwwLCJDX3twLCBcXGNkb3R9Il0sWzAsNCwiQ197XFxjZG90LCBxfSJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52IiwyXSxbMSw0XV0=)
 
 All of the individual rows and columns are chain complexes, where $(d^h)^2 = 0$ and $(d^v)^2 = 0$, and the square anticommute: $d^v d^h + d^h d^v - 0$, so $d^v d^h = -d^h d^v$.
 This is almost a chain complex of chain complexes, i.e. an element of $\Ch(\Ch \rmod))$.
@@ -902,8 +902,8 @@ Recall that products and coproducts of \(R\dash\)modules coincide when the index
 :::{.definition title="?"}
 Given a double complex $C_{\wait, \wait}$, there are two ordinary chain complexes associated to it referred to as **total complexes**:
 \[
-\Tot^\prod (C)_n \da \prod_{p+q = n} C_{p, q}
-\Tot^\oplus (C)_n \da \bigoplus_{p+q = n} C_{p, q}
+(\Tot^{\prod_{}} C)_n \da \prod_{p+q = n} C_{p, q}
+(\Tot^{\oplus_{}} C)_n \da \bigoplus_{p+q = n} C_{p, q}
 .\]
 Writing $\Tot(C)$ usually refers to the former.
 The differentials are given by 
@@ -1230,7 +1230,6 @@ C_n / d C_{n+1}
 
 Using the fact that $B_n \subseteq Z_n$, we can use the 1st and 2nd isomorphism theorems to produce
 
-% https://q.uiver.app/?q=WzAsMTQsWzEsMiwiQV9uL2QgQV97bisxfSJdLFsyLDIsIkIgLyBkIEJfe24rMX0iXSxbMywyLCJDL2QgQ197bisxfSJdLFswLDQsIjAiXSxbMSw0LCJaX3tuLTF9KEEpIl0sWzIsNCwiWl97bi0xfShCKSJdLFszLDQsIlpfe24tMX0oQykiXSxbNSwyLCIwIl0sWzEsNiwiXFxjb2tlciBkX24gPSBaX3tuLTF9KEEpL2QgQV9uID0gSF97bi0xfShBKSJdLFsyLDYsIkhfe24tMX0oQikiXSxbMyw2LCJIX3tuLTF9KEMpIl0sWzEsMCwiSF9uKEEpIl0sWzIsMCwiSF9uKEIpIl0sWzMsMCwiSF9uKEMpIl0sWzIsN10sWzAsMSwiZiJdLFsxLDIsImciXSxbMCw0LCJkX24iLDJdLFsxLDUsImRfbiIsMl0sWzIsNiwiZF9uIiwyXSxbNCw4XSxbOCw5LCJmXyoiLDJdLFs5LDEwLCJnXyoiLDJdLFs1LDldLFs2LDEwXSxbMTEsMTIsImZfKiIsMV0sWzEyLDEzLCJnXyoiLDFdLFsxMSwwXSxbMTIsMV0sWzEzLDJdLFszLDRdLFs0LDVdLFs1LDZdLFsxMyw4LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=
 \begin{tikzcd}
 	& {H_n(A)} & {H_n(B)} & {H_n(C)} \\
 	\\
@@ -1260,6 +1259,8 @@ Using the fact that $B_n \subseteq Z_n$, we can use the 1st and 2nd isomorphism 
 	\arrow[from=5-3, to=5-4]
 	\arrow[dotted, from=1-4, to=7-2]
 \end{tikzcd}
+
+> [Link to diagram](https://q.uiver.app/?q=WzAsMTQsWzEsMiwiQV9uL2QgQV97bisxfSJdLFsyLDIsIkIgLyBkIEJfe24rMX0iXSxbMywyLCJDL2QgQ197bisxfSJdLFswLDQsIjAiXSxbMSw0LCJaX3tuLTF9KEEpIl0sWzIsNCwiWl97bi0xfShCKSJdLFszLDQsIlpfe24tMX0oQykiXSxbNSwyLCIwIl0sWzEsNiwiXFxjb2tlciBkX24gPSBaX3tuLTF9KEEpL2QgQV9uID0gSF97bi0xfShBKSJdLFsyLDYsIkhfe24tMX0oQikiXSxbMyw2LCJIX3tuLTF9KEMpIl0sWzEsMCwiSF9uKEEpIl0sWzIsMCwiSF9uKEIpIl0sWzMsMCwiSF9uKEMpIl0sWzIsN10sWzAsMSwiZiJdLFsxLDIsImciXSxbMCw0LCJkX24iLDJdLFsxLDUsImRfbiIsMl0sWzIsNiwiZF9uIiwyXSxbNCw4XSxbOCw5LCJmXyoiLDJdLFs5LDEwLCJnXyoiLDJdLFs1LDldLFs2LDEwXSxbMTEsMTIsImZfKiIsMV0sWzEyLDEzLCJnXyoiLDFdLFsxMSwwXSxbMTIsMV0sWzEzLDJdLFszLDRdLFs0LDVdLFs1LDZdLFsxMyw4LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=)
 
 This yields an exact sequence relating $H_n$ to $H_{n-1}$, and these can all be spliced together.
 
