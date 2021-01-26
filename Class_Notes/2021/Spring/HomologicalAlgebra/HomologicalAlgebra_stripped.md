@@ -587,7 +587,7 @@ The proof that this sequence exists is a consequence of the *snake lemma*.
 
 ::: {.lemma title="?"}
 ```{=tex}
-\begin{tikzcd}
+\begin{tikzcd}[column sep=tiny]
     0 && {{\color{red}\ker(f)}} && {{\color{red}\ker(\alpha)}} && {{\color{red}\ker(\beta)}} && {{\color{red}\ker(\gamma)}} \\
     \\
     && 0 && A && B && C && 0 \\
@@ -596,14 +596,14 @@ The proof that this sequence exists is a consequence of the *snake lemma*.
     \\
     &&&& {{\color{red}\operatorname{coker}(\alpha)}} && {{\color{red}\operatorname{coker}(\beta)}} && {{\color{red}\operatorname{coker}(\gamma)}} && {{\color{red}\operatorname{coker}(g')}} && 0
     \arrow[from=5-3, to=5-5]
-    \arrow["{f'}", from=5-5, to=5-7]
-    \arrow["{g'}", from=5-7, to=5-9]
+    \arrow["{f'}"', from=5-5, to=5-7]
+    \arrow["{g'}'", from=5-7, to=5-9]
     \arrow["f", from=3-5, to=3-7]
     \arrow["g", from=3-7, to=3-9]
     \arrow[from=3-3, to=3-5]
-    \arrow["\beta"{description}, from=3-7, to=5-7]
-    \arrow["\gamma"{description}, from=3-9, to=5-9]
-    \arrow["\alpha"{description}, from=3-5, to=5-5]
+    \arrow["\beta"', from=3-7, to=5-7]
+    \arrow["\gamma"', from=3-9, to=5-9]
+    \arrow["\alpha"', from=3-5, to=5-5]
     \arrow[from=7-5, to=7-7]
     \arrow[from=7-7, to=7-9]
     \arrow[from=7-9, to=7-11]
@@ -612,11 +612,13 @@ The proof that this sequence exists is a consequence of the *snake lemma*.
     \arrow[from=1-3, to=1-5]
     \arrow[from=1-5, to=1-7]
     \arrow[from=1-7, to=1-9]
-    \arrow[from=1-9, to=7-5]
+    \arrow[from=1-9, to=7-5, in=180, out=360, "\exists \delta", color=red, dotted]
     \arrow[from=5-9, to=5-11]
     \arrow[from=3-9, to=3-11]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMjEsWzQsMiwiQSJdLFs2LDIsIkIiXSxbOCwyLCJDIl0sWzQsNCwiQSciXSxbNiw0LCJCJyJdLFs4LDQsIkMnIl0sWzIsNCwiMCJdLFsyLDIsIjAiXSxbNCwwLCJ7XFxjb2xvcntyZWR9XFxrZXIoXFxhbHBoYSl9Il0sWzIsMCwie1xcY29sb3J7cmVkfVxca2VyKGYpfSJdLFs2LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGJldGEpfSJdLFs4LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGdhbW1hKX0iXSxbNCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGFscGhhKX0iXSxbNiw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGJldGEpfSJdLFs4LDYsIntcXGNvbG9ye3JlZH1cXGNva2VyKFxcZ2FtbWEpfSJdLFsxMCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihnJyl9Il0sWzAsMCwiMCJdLFsxMiw2LCIwIl0sWzcsM10sWzEwLDIsIjAiXSxbMTAsNCwiMCJdLFs2LDNdLFszLDQsImYnIl0sWzQsNSwiZyciXSxbMCwxLCJmIl0sWzEsMiwiZyJdLFs3LDBdLFsxLDQsIlxcYmV0YSIsMV0sWzIsNSwiXFxnYW1tYSIsMV0sWzAsMywiXFxhbHBoYSIsMV0sWzEyLDEzXSxbMTMsMTRdLFsxNCwxNV0sWzE1LDE3XSxbMTYsOV0sWzksOF0sWzgsMTBdLFsxMCwxMV0sWzExLDEyXSxbNSwyMF0sWzIsMTldXQ==)
+
 Existence:
 
 -   Start with \( c\in C \), not \( c=0\in C' \)
