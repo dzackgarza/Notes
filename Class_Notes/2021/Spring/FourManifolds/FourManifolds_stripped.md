@@ -669,6 +669,96 @@ Note that \( \Omega^p \) for complex manifolds is \( \Lambda^p T^\vee \), and so
 Note that \( T^\vee X_{\mathbb{R}}\otimes _{\mathbb{C}}= A^{1, 0} \oplus A^{0, 1} \) since there is a unique decomposition \( \omega = fdz + gd\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \) where \( f,g \) are smooth. Then \( \Omega^d X_{\mathbb{R}}\otimes_{\mathbb{R}}{\mathbb{C}}= \bigoplus _{p+q=d} A^{p, q} \). Note that \( \Omega_{\setminus}^p \neq A^{p, q} \) and these are really quite different: the former are more like holomorphic bundles, and the latter smooth. Moreover \( \dim \Omega^p(X) < \infty \), whereas \( \Omega_{\setminus}^1 \) is infinite-dimensional.
 :::
 
+# Principal \( G{\hbox{-}} \)Bundles and Connections (Monday, January 25) {#principal-ghbox-bundles-and-connections-monday-january-25}
+
+::: {.definition title="Principal Bundles"}
+Let \( G \) be a (possibly disconnected) Lie group. Then a **principal \( G{\hbox{-}} \)bundle** \( \pi:P\to X \) is a space admitting local trivializations \( h_u: \pi ^{-1} (U) \to G \times U \) such that the transition functions are given by left multiplication by a continuous function \( t_{UV}: U \cap V \to G \).
+:::
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_13-55.pdf_tex} };
+\end{tikzpicture}
+```
+Consider \( TX \) for \( X\in {\operatorname{Mfd}}_{\operatorname{Sm}_k} \), and let \( g \) be a metric on the tangent bundle given by \( g_p: T_pX^{\otimes 2} \to {\mathbb{R}} \), a symmetric bilinear form with \( g_p(u, v) \geq 0 \) with equality if and only if \( v=0 \).
+
+::: {.definition title="The Frame Bundle"}
+Define \( {\operatorname{Frame}}_p(X) \coloneqq\left\{{\text{bases of } T_p X}\right\} \), and \( {\operatorname{Frame}}X \coloneqq\bigcup_{p\in X} {\operatorname{Frame}}_p X \).
+:::
+
+::: {.remark}
+More generally, \( {\operatorname{Frame}}\mathcal{E} \) can be defined for any vector bundle \( \mathcal{E} \), so \( {\operatorname{Frame}}X \coloneqq{\operatorname{Frame}}TX \). Note that \( {\operatorname{Frame}}X \) is a principal \( \operatorname{GL}_n({\mathbb{R}}){\hbox{-}} \)bundle where \( n\coloneqq\operatorname{rank}(\mathcal{E}) \). This follows from the fact that the transition functions are fiberwise in \( \operatorname{GL}_n({\mathbb{R}}) \), so the transition functions are given by left-multiplication by matrices.
+:::
+
+::: {.remark title="Important"}
+A principal \( G{\hbox{-}} \)bundle admits a \( G{\hbox{-}} \)action where \( G \) acts by *right* multiplication:
+\[
+P \times G \to P \\
+( (g, x), h) \mapsto (gh, x)
+.\]
+This is necessary for compatibility on overlaps. **Key point**: the actions of left and right multiplication commute.
+:::
+
+::: {.definition title="Orthogonal Frame Bundle"}
+The **orthogonal frame bundle** of a vector bundle \( \mathcal{E} \) equipped with a metric \( g \) is defined as \( {\operatorname{OFrame}}_p \mathcal{E}\coloneqq\left\{{\text{orthonormal bases of } \mathcal{E}_p}\right\} \), also written \( O_r({\mathbb{R}}) \) where \( r \coloneqq\operatorname{rank}( \mathcal{E}) \).
+:::
+
+::: {.remark}
+The fibers \( P_x \to \left\{{x}\right\} \) of a principal \( G{\hbox{-}} \)bundle are naturally **torsors** over \( G \), i.e. a set with a free transitive \( G{\hbox{-}} \)action.
+:::
+
+::: {.definition title="?"}
+Let \( \mathcal{E}\to X \) be a complex vector bundle. Then a **hermitian metric** is a hermitian form on every fiber, i.e. \( h_p: \mathcal{E}_p \times\overline{\mathcal{E}_p } \to {\mathbb{C}} \) where \( h_p(v, \mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu ) \geq 0 \) with equality if and only if \( v=0 \). Here we define \( \overline{\mathcal{E}_p} \) as the fiber of the complex vector bundle \( \overline{\mathcal{E}} \) whose transition functions are given by the complex conjugates of those from \( \mathcal{E} \).
+:::
+
+::: {.remark}
+Note that \( \mathcal{E}, \overline{\mathcal{E}} \) are genuinely different as complex bundles. There is a *conjugate-linear* map given by conjugation, i.e. \( L(cv) = \mkern 1.5mu\overline{\mkern-1.5muc\mkern-1.5mu}\mkern 1.5mu L(v) \), where the canonical example is
+\[
+{\mathbb{C}}^n &\to {\mathbb{C}}^n \\
+(z_1, \cdots, z_n) &\mapsto (\mkern 1.5mu\overline{\mkern-1.5muz_1\mkern-1.5mu}\mkern 1.5mu, \cdots, \mkern 1.5mu\overline{\mkern-1.5muz_n\mkern-1.5mu}\mkern 1.5mu)
+.\]
+:::
+
+::: {.definition title="Unitary Frame Bundle"}
+We define the **unitary frame bundle** \( {\operatorname{UFrame}}(\mathcal{E}) \coloneqq\bigcup_p {\operatorname{UFrame}}(\mathcal{E})_p \), where at each point this is given by the set of orthogonal frames of \( \mathcal{E}_p \) given by \( (e_1, \cdots, e_n) \) where \( h(e_i , \mkern 1.5mu\overline{\mkern-1.5mue_j\mkern-1.5mu}\mkern 1.5mu ) = \delta_{ij} \).
+:::
+
+::: {.remark}
+This is a principal \( G{\hbox{-}} \)bundle for \( G = U_r({\mathbb{C}}) \), the invertible matrices \( A_{/{\mathbb{C}}} \) satisfy \( A \overline{A}^t = \operatorname{id} \).
+:::
+
+::: {.example title="of more principal bundles"}
+For \( G={\mathbb{Z}}/2{\mathbb{Z}} \) and \( X= S^1 \), the Mobius band is a principal \( G{\hbox{-}} \)bundle:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_14-25.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.example title="more principal bundles"}
+For \( G={\mathbb{Z}}/2{\mathbb{Z}} \), for any (possibly non-oriented) manifold \( X \) there is an *orientation principal bundle* \( P \) which is locally a set of orientations on \( U \), i.e. \( P\coloneqq\left\{{(x, O) {~\mathrel{\Big|}~}x\in X,\, O \text{ is an orientation of }T_p X}\right\} \). Note that \( P \) is an oriented manifold, \( P\to X \) is a local isomorphism, and has a canonical orientation.? This can also be written as \( P = {\operatorname{Frame}}X / \operatorname{GL}_n^+({\mathbb{R}}) \), since an orientation can be specified by a choice of \( n \) linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
+:::
+
+::: {.definition title="Associated Bundles"}
+Let \( P\to X \) be a principal \( G{\hbox{-}} \)bundle and let \( G\to \operatorname{GL}(V) \) be a continuous representation. The **associated bundle** is defined as \( P\times_G V = \left\{{(p, v)}\right\} / (p, v) \sim (pg, g ^{-1} v) \) since there is a right action on the first component and a left action on the second.
+:::
+
+::: {.example title="?"}
+Note that \( {\operatorname{Frame}}(\mathcal{E}) \) is a \( \operatorname{GL}_r({\mathbb{R}}){\hbox{-}} \)bundle and the map \( \operatorname{GL}_r({\mathbb{R}}) \xrightarrow{\operatorname{id}} \operatorname{GL}({\mathbb{R}}^r) \) is a representation. At every fiber, we have \( G \times_G V = (p, v)/\sim \) where there is a unique representative of this equivalence class given by \( (e, pv) \). So \( P\times_G V_p \to \left\{{p}\right\} \cong V_x \).
+
+::: {.exercise title="?"}
+Show that \( {\operatorname{Frame}}( \mathcal{E}) \times_{\operatorname{GL}_r({\mathbb{R}})} {\mathbb{R}}^r \cong \mathcal{E} \). This follows from the fact that the transition functions of \( P \times_G V \) are given by left multiplication of \( t_{UV}: U \cap V \to G \), and so by the equivalence relation, \( \operatorname{im}t_{UV} \in \operatorname{GL}(V) \).
+:::
+:::
+
+::: {.remark}
+Suppose that \( M^3 \) is an oriented Riemannian 3-manifold. Them \( TM\to {\operatorname{Frame}}(M) \) which is a principal \( {\operatorname{SO}}(3){\hbox{-}} \)bundle. The universal cover is the double cover \( {\operatorname{SU}}(2) \to {\operatorname{SO}}(3) \), so can the transition functions be lifted? This shows up for spin structures, and we can get a \( {\mathbb{C}}^2 \) bundle out of this.
+:::
+
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
 [^2]: Locally admits a chart to \( {\mathbb{C}}^n/ \Gamma \) for \( \Gamma \) a finite group.

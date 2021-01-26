@@ -278,6 +278,9 @@
 \newcommand{\grad}[0]{\operatorname{grad}}
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
+\newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
+\newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\Hom}[0]{{\operatorname{Hom}}}
 \newcommand{\shom}{\mathscr{H}\operatorname{\kern -3pt {\calligra\large om}}}
@@ -1214,6 +1217,129 @@ Then \( \Omega^d X_\RR \otimes_\RR \CC = \bigoplus _{p+q=d} A^{p, q} \).
 Note that \( \Omega_{\sm}^p \neq A^{p, q} \) and these are really quite different: the former are more like holomorphic bundles, and the latter smooth.
 Moreover \( \dim \Omega^p(X) < \infty \), whereas \( \Omega_{\sm}^1 \) is infinite-dimensional.
 :::
+
+
+
+
+
+
+
+
+
+
+# Principal $G\dash$Bundles and Connections (Monday, January 25)
+
+:::{.definition title="Principal Bundles"}
+Let $G$ be a (possibly disconnected) Lie group.
+Then a **principal $G\dash$bundle** $\pi:P\to X$ is a space admitting local trivializations $h_u: \pi ^{-1} (U) \to G \cross U$ such that the transition functions are given by left multiplication by a continuous function $t_{UV}: U \intersect V \to G$.
+
+:::
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_13-55.pdf_tex} };
+\end{tikzpicture}
+
+Consider $TX$ for $X\in \Mfd_\Sm$, and let $g$ be a metric on the tangent bundle given by $g_p: T_pX^{\tensor 2} \to \RR$, a symmetric bilinear form with $g_p(u, v) \geq 0$ with equality if and only if $v=0$.
+
+
+:::{.definition title="The Frame Bundle"}
+Define $\Frame_p(X) \da \ts{\text{bases of } T_p X}$, and $\Frame X \da \Union_{p\in X} \Frame_p X$.
+:::
+
+:::{.remark}
+More generally, $\Frame \mathcal{E}$ can be defined for any vector bundle \( \mathcal{E} \), so $\Frame X \da \Frame TX$.
+Note that $\Frame X$ is a principal $\GL_n(\RR)\dash$bundle where $n\da \rank(\mathcal{E})$.
+This follows from the fact that the transition functions are fiberwise in $\GL_n(\RR)$, so the transition functions are given by left-multiplication by matrices.
+:::
+
+:::{.remark title="Important"}
+A principal $G\dash$bundle admits a $G\dash$action where $G$ acts by *right* multiplication:
+\[
+P \cross G \to P \\
+( (g, x), h) \mapsto (gh, x)
+.\]
+This is necessary for compatibility on overlaps.
+**Key point**: the actions of left and right multiplication commute.
+:::
+
+:::{.definition title="Orthogonal Frame Bundle"}
+The **orthogonal frame bundle** of a vector bundle \( \mathcal{E}  \) equipped with a metric $g$ is defined as $\OFrame_p \mathcal{E}\da \ts{\text{orthonormal bases of } \mathcal{E}_p}$, also written $O_r(\RR)$ where $r \da \rank( \mathcal{E})$. 
+:::
+
+:::{.remark}
+The fibers $P_x \to \ts {x}$ of a principal $G\dash$bundle are naturally **torsors** over $G$, i.e. a set with a free transitive $G\dash$action.
+:::
+
+:::{.definition title="?"}
+Let \( \mathcal{E}\to X  \) be a complex vector bundle.
+Then a **hermitian metric** is a hermitian form on every fiber, i.e. $h_p: \mathcal{E}_p \cross \overline{\mathcal{E}_p } \to \CC$ where $h_p(v, \bar{v} ) \geq 0$ with equality if and only if $v=0$.
+Here we define \( \overline{\mathcal{E}_p}  \) as the fiber of the complex vector bundle \( \overline{\mathcal{E}}  \) whose transition functions are given by the complex conjugates of those from \( \mathcal{E}  \).
+:::
+
+:::{.remark}
+Note that \( \mathcal{E}, \overline{\mathcal{E}}   \) are genuinely different as complex bundles.
+There is a *conjugate-linear* map given by conjugation, i.e. $L(cv) = \bar{c} L(v)$, where the canonical example is 
+\[
+\CC^n &\to \CC^n \\
+(z_1, \cdots, z_n) &\mapsto (\bar {z_1}, \cdots, \bar {z_n})
+.\]
+
+:::
+
+:::{.definition title="Unitary Frame Bundle"}
+We define the **unitary frame bundle** $\UFrame(\mathcal{E}) \da \Union_p \UFrame(\mathcal{E})_p$, where at each point this is given by the set of orthogonal frames of \( \mathcal{E}_p  \) given by $(e_1, \cdots, e_n)$ where $h(e_i , \bar {e_j} ) = \delta_{ij}$.
+:::
+
+:::{.remark}
+This is a principal $G\dash$bundle for $G = U_r(\CC)$, the invertible matrices $A_{/\CC}$ satisfy $A \overline{A}^t = \id$.
+:::
+
+:::{.example title="of more principal bundles"}
+For $G=\ZZ/2\ZZ$ and $X= S^1$, the Mobius band is a principal $G\dash$bundle:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_14-25.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+:::{.example title="more principal bundles"}
+For $G=\ZZ/2\ZZ$, for any (possibly non-oriented) manifold $X$ there is an *orientation principal bundle* $P$ which is locally a set of orientations on $U$, i.e. $P\da \ts{(x, O) \st x\in X,\, O \text{ is an orientation of }T_p X}$.
+Note that $P$ is an oriented manifold, $P\to X$ is a local isomorphism, and has a canonical orientation.?
+This can also be written as $P = \Frame X / \GL_n^+(\RR)$, since an orientation can be specified by a choice of $n$ linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
+:::
+
+:::{.definition title="Associated Bundles"}
+Let $P\to X$ be a principal $G\dash$bundle and let $G\to \GL(V)$ be a continuous representation.
+The **associated bundle** is defined as $P\cross_G V = \ts{(p, v)} / (p, v) \sim (pg, g ^{-1} v)$ since there is a right action on the first component and a left action on the second.
+:::
+
+:::{.example title="?"}
+Note that $\Frame(\mathcal{E})$ is a $\GL_r(\RR)\dash$bundle and the map $\GL_r(\RR) \mapsvia{\id} \GL(\RR^r)$ is a representation.
+At every fiber, we have $G \cross_G V = (p, v)/\sim$ where there is a unique representative of this equivalence class given by $(e, pv)$.
+So $P\cross_G V_p \to \ts{p} \cong V_x$.
+
+
+:::{.exercise title="?"}
+Show that $\Frame( \mathcal{E}) \cross_{\GL_r(\RR)} \RR^r \cong \mathcal{E}$.
+This follows from the fact that the transition functions of $P \cross_G V$ are given by left multiplication of $t_{UV}: U \intersect V \to G$, and so by the equivalence relation, $\im t_{UV} \in \GL(V)$.
+
+:::
+
+:::
+
+:::{.remark}
+Suppose that $M^3$ is an oriented Riemannian 3-manifold.
+Them $TM\to \Frame (M)$ which is a principal $\SO(3)\dash$bundle.
+The universal cover is the double cover $\SU(2) \to \SO(3)$, so can the transition functions be lifted?
+This shows up for spin structures, and we can get a $\CC^2$ bundle out of this.
+:::
+
+
+
+
 
 
 
