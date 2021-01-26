@@ -70,6 +70,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -105,6 +106,7 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Top}[0]{{\operatorname{Top}}}
+\newcommand{\Mfd}[0]{{\operatorname{Mfd}}}
 \newcommand{\Ab}[0]{{\operatorname{Ab}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
@@ -276,8 +278,13 @@
 \newcommand{\grad}[0]{\operatorname{grad}}
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
+\newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
+\newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
+\newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\Hom}[0]{{\operatorname{Hom}}}
 \newcommand{\shom}{\mathscr{H}\operatorname{\kern -3pt {\calligra\large om}}}
+\newcommand{\HHom}{\mathscr{H}\kern-2pt\operatorname{om}}
 \newcommand{\Map}[0]{{\operatorname{Map}}}
 \newcommand{\multinomial}[1]{\left(\!\!{#1}\!\!\right)}
 \newcommand{\nil}[0]{{\operatorname{nil}}}
@@ -820,4 +827,598 @@ Here $\ker f \leq B$ is a subcomplex, and $\coker f$ is a quotient complex of $C
 The chain map $i: \ker f\to B$ is a categorical kernel of $f$ in $\Ch$, and $\pi$ is similarly a cokernel. 
 See appendix A 1.6.
 These constructions make $\Ch$ into an **abelian category**: roughly an additive category where every morphism has a kernel and a cokernel.
+
+
+# 1.2 (Wednesday, January 20)
+
+## Taking Chain Complexes of Chain Complexes
+
+> See phone pic for missed first 10m
+
+### Double Complexes
+
+:::{.remark}
+Consider a double complex:
+
+% https://q.uiver.app/?q=WzAsMTEsWzIsMiwiQ197cC0xLCBxKzF9Il0sWzQsMiwiQ197cCwgcSsxfSJdLFs2LDIsIkNfe3AtMSwgcSsxfSJdLFsyLDQsIkNfe3AtMSwgcX0iXSxbNCw0LCJDX3twLCBxfSJdLFs2LDQsIkNfe3ArMSwgcX0iXSxbMiw2LCJDX3twLTEsIHErMX0iXSxbNCw2LCJDX3twLTEsIHErMX0iXSxbNiw2LCJDX3twLTEsIHErMX0iXSxbNCwwLCJDX3twLCBcXGNkb3R9Il0sWzAsNCwiQ197XFxjZG90LCBxfSJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52IiwyXSxbMSw0XV0=
+\begin{tikzcd}
+	&&&& {C_{p, \cdot}} \\
+	\\
+	&& {C_{p-1, q+1}} && {C_{p, q+1}} && {C_{p-1, q+1}} \\
+	\\
+	{C_{\cdot, q}} && {C_{p-1, q}} && {C_{p, q}} && {C_{p+1, q}} \\
+	\\
+	&& {C_{p-1, q+1}} && {C_{p-1, q+1}} && {C_{p-1, q+1}}
+	\arrow["{d_{p, q}^h}", from=5-5, to=5-3]
+	\arrow["{d_{p, q}^v}"', from=5-5, to=7-5]
+	\arrow[from=3-5, to=5-5]
+\end{tikzcd}
+
+All of the individual rows and columns are chain complexes, where $(d^h)^2 = 0$ and $(d^v)^2 = 0$, and the square anticommute: $d^v d^h + d^h d^v - 0$, so $d^v d^h = -d^h d^v$.
+This is almost a chain complex of chain complexes, i.e. an element of $\Ch(\Ch \rmod))$.
+It's useful here to consider lines parallel to the line $y=x$.
+
+:::
+
+:::{.definition title="Bounded Complexes"}
+A double complex $C_{\wait, \wait}$ is **bounded** if and only if there are only finitely many nonzero terms along each constant diagonal $p+q = n$.
+:::
+
+:::{.example title="?"}
+A *first quadrant* double complex $\ts{C_{p, q}}_{p, q\geq 0}$ is bounded: note that this can still have infinitely many terms, but each diagonal is finite because each will hit a coordinate axis.
+:::
+
+:::{.remark title="The sign trick"}
+The squares anticommute, since the $d^v$ are not chain maps between the horizontal chain complexes.
+This can be fixed by changing every one out of four signs, defining
+\[
+f_{*, q}: C_{*, q} \to C_{*, q-1} \\
+f_{p, q} \da (-1)^p d^v_{p, q}: C_{p,q} \to C_{p, q-1}
+.\]
+
+This yields a new double complex where the signs of each column alternate:
+
+% https://q.uiver.app/?q=WzAsNixbMCwwLCJDX3swLCBxfSJdLFsyLDAsIkNfezEsIHF9Il0sWzQsMCwiQ197MiwgcX0iXSxbMCwyLCJDX3swLCBxLTF9Il0sWzIsMiwiQ197MSwgcS0xfSJdLFs0LDIsIkNfezIsIHEtMX0iXSxbMCwzLCJkXnYiXSxbMSw0LCItZF52Il0sWzIsNSwiZF52Il0sWzIsMSwiZF5oIiwxXSxbMSwwLCJkXmgiLDFdLFs1LDQsImReaCIsMV0sWzQsMywiZF5oIiwxXV0=
+\begin{tikzcd}
+	{C_{0, q}} && {C_{1, q}} && {C_{2, q}} \\
+	\\
+	{C_{0, q-1}} && {C_{1, q-1}} && {C_{2, q-1}}
+	\arrow["{d^v}", from=1-1, to=3-1]
+	\arrow["{-d^v}", from=1-3, to=3-3]
+	\arrow["{d^v}", from=1-5, to=3-5]
+	\arrow["{d^h}"{description}, from=1-5, to=1-3]
+	\arrow["{d^h}"{description}, from=1-3, to=1-1]
+	\arrow["{d^h}"{description}, from=3-5, to=3-3]
+	\arrow["{d^h}"{description}, from=3-3, to=3-1]
+\end{tikzcd}
+
+Now the squares commute and $f_{\wait, q}$ are chain maps, so this object is an element of $\Ch(\Ch \rmod)$.
+:::
+
+### Total Complexes
+
+Recall that products and coproducts of \(R\dash\)modules coincide when the indexing set is finite.
+
+:::{.definition title="?"}
+Given a double complex $C_{\wait, \wait}$, there are two ordinary chain complexes associated to it referred to as **total complexes**:
+\[
+\Tot^\prod (C)_n \da \prod_{p+q = n} C_{p, q}
+\Tot^\oplus (C)_n \da \bigoplus_{p+q = n} C_{p, q}
+.\]
+Writing $\Tot(C)$ usually refers to the former.
+The differentials are given by 
+\[
+d_{p, q} = d^h + d^v: C_{p, q} \to C_{p-1, q} \oplus C_{p, q-1}
+,\]
+where $C_{p, q} \subseteq \Tot^\oplus (C)_n$ and $C_{p-1, q} \oplus C_{p, q-1} \subseteq \Tot^\oplus(C)_{n-1}$.
+Then you extend this to a differential on the entire diagonal by defining $d = \bigoplus d_{p, q}$.
+:::
+
+:::{.exercise title="?"}
+Check that $d^2 = 0$, using $d^v d^h + d^h d^v = 0$.
+:::
+
+:::{.remark}
+Some notes:
+
+- $\Tot^\oplus(C) = \Tot^\prod(C)$ when $C$ is bounded.
+
+- The total complexes need not exist if $C$ is unbounded: one needs infinite direct products and infinite coproducts to exist in \( \mathcal{C}  \).
+  A category admitting these is called **complete** or **cocomplete**.[^dont_exist_ab_cat]
+
+[^dont_exist_ab_cat]: 
+Recall that abelian categories are additive and only require *finite* products/coproducts.
+A counterexample: categories of *finite* abelian groups, where e.g. you can't take infinite sums and stay within the category.
+  
+:::
+
+### More Operations
+
+:::{.definition title="Truncation below"}
+Fix $n\in \ZZ$, and define the **$n$th truncation** $\tau_{\geq n}(C)$ by
+\[
+\tau_{\geq n}(C) = 
+\begin{cases}
+0 & i < n  
+\\
+Z_n & i= n
+\\
+C_i & i > n .
+\end{cases}
+.\]
+
+Pictorially:
+
+\begin{tikzcd}
+	\cdots & 0 & {Z_n} & {C_{n+1}} & {C_{n+2}} & \cdots
+	\arrow[from=1-2, to=1-1]
+	\arrow["{d_n}"', from=1-3, to=1-2]
+	\arrow["{d_{n+1}}"', from=1-4, to=1-3]
+	\arrow["{d_{n+2}}"', from=1-5, to=1-4]
+	\arrow[from=1-6, to=1-5]
+\end{tikzcd}
+
+> [Link to diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJcXGNkb3RzIl0sWzEsMCwiMCJdLFsyLDAsIlpfbiJdLFszLDAsIkNfe24rMX0iXSxbNCwwLCJDX3tuKzJ9Il0sWzUsMCwiXFxjZG90cyJdLFsxLDBdLFsyLDEsImRfbiIsMl0sWzMsMiwiZF97bisxfSIsMl0sWzQsMywiZF97bisyfSIsMl0sWzUsNF1d)
+
+This is sometimes call the **good truncation of $C$ below $n$**.
+:::
+
+:::{.remark}
+Note that 
+\[
+H_i(\tau_{\geq n} C) = 
+\begin{cases}
+0 & i < n  
+\\
+H_i(C) & i\geq n.
+\end{cases}
+.\]
+:::
+
+:::{.definition title="Truncation above"}
+We define the quotient complex
+\[
+\tau_{<n} C \da C / \tau_{\geq n} C
+.\]
+which is $C_i$ below $n$, $C_n/Z_n$ at $n$.
+Thus is has homology 
+\[
+\begin{cases}
+H_i(C) & i< n.
+\\
+0 & i \geq n
+\end{cases}
+.\]
+:::
+
+:::{.definition title="Translation"}
+If $C$ is a chain complex and $p\in \ZZ$, define a new complex $C[p]$ by 
+\[
+C[p]_n \da C_{n+p}
+.\]
+
+\begin{tikzcd}
+	{\text{Degrees}} & {-p} && 0 && p \\
+	\\
+	C & {C_{-p}} & \cdots & {C_0} & \cdots & {C_{p}} \\
+	{C[p]} & {C_0} & \cdots & {C_p} & \cdots & {C_{2p}}
+	\arrow[dashed, from=3-4, to=4-2]
+	\arrow[dashed, from=3-6, to=4-4]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzAsMiwiQyJdLFswLDMsIkNbcF0iXSxbMywyLCJDXzAiXSxbMywwLCIwIl0sWzAsMCwiXFx0ZXh0e0RlZ3JlZXN9Il0sWzEsMCwiLXAiXSxbMSwyLCJDX3stcH0iXSxbMywzLCJDX3AiXSxbMSwzLCJDXzAiXSxbMiwyLCJcXGNkb3RzIl0sWzIsMywiXFxjZG90cyJdLFs0LDMsIlxcY2RvdHMiXSxbNCwyLCJcXGNkb3RzIl0sWzUsMiwiQ197cH0iXSxbNSwzLCJDX3sycH0iXSxbNSwwLCJwIl0sWzIsOCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEzLDcsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+Similarly, if $C$ is a *cochain* complex, we set $C[p]^n \da C^{n-p}$:
+
+\begin{tikzcd}
+	{\text{Degrees}} & {-p} && 0 && p \\
+	\\
+	C & {C^{-p}} & \cdots & {C^0} & \cdots & {C^p} \\
+	{C[p]} & {C^0} & \cdots & {C^{-p}} & \cdots & {C^0}
+	\arrow[from=3-2, to=3-3]
+	\arrow[from=3-3, to=3-4]
+	\arrow[from=3-4, to=3-5]
+	\arrow[from=3-5, to=3-6]
+	\arrow[from=4-2, to=4-3]
+	\arrow[from=4-3, to=4-4]
+	\arrow[from=4-4, to=4-5]
+	\arrow[from=4-5, to=4-6]
+	\arrow[dashed, from=3-2, to=4-4]
+	\arrow[dashed, from=3-4, to=4-6]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzAsMiwiQyJdLFswLDMsIkNbcF0iXSxbMywyLCJDXjAiXSxbMywwLCIwIl0sWzAsMCwiXFx0ZXh0e0RlZ3JlZXN9Il0sWzEsMCwiLXAiXSxbMSwyLCJDXnstcH0iXSxbMywzLCJDXnstcH0iXSxbMSwzLCJDXjAiXSxbMiwyLCJcXGNkb3RzIl0sWzIsMywiXFxjZG90cyJdLFs0LDMsIlxcY2RvdHMiXSxbNCwyLCJcXGNkb3RzIl0sWzUsMiwiQ15wIl0sWzUsMywiQ14wIl0sWzUsMCwicCJdLFs2LDldLFs5LDJdLFsyLDEyXSxbMTIsMTNdLFs4LDEwXSxbMTAsN10sWzcsMTFdLFsxMSwxNF0sWzYsNywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIsMTQsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+> Mnemonic: Shift $p$ positions in the same direction as the arrows.
+
+In both cases, the differentials are given by the shifted differential $d[p] \da (-1)^p d$.
+Note that these are not alternating: $p$ is the fixed translation, so this is a constant that changes the signs of all differentials.
+Thus $H_n(C[p]) = H_{n+p}(C)$ and $H^n(C[p]) = H^{n-p}$.
+:::
+
+:::{.exercise}
+Check that if $C^n \da C_{-n}$, then $C[p]^n = C[p]_{-n}$.
+:::
+
+:::{.remark}
+We can make translation into a functor $[p]: \Ch \to \Ch$:
+given $f: C\to D$, define $f[p]: C[p] \to D[p]$ by $f[p]_n \da f_{n+p}$, and a similar definition for cochain complexes changing $p$ to $-p$.
+:::
+
+
+
+
+
+
+
+
+
+# Lecture 4 (Friday, January 22)
+
+## Long Exact Sequences
+
+
+Some terminology: in an abelian category \( \mathcal{A}  \) an example of an **exact complex**  in \( \Ch(\mathcal{A})  \) is
+\[
+\cdots \to 0 \to A \mapsvia{f} B \mapsvia{g} C \to 0 \to \cdots
+.\]
+
+where *exactness* means $\ker = \im$ at each position, i.e. $\ker f = 0, \im f = \ker g, \im g = C$.
+We say $f$ is monic and $g$ epic.
+
+As a special case, if $0\to A\to 0$ is exact then $A$ must be zero, since the image of the incoming map must be 0.
+This also happens when every other term is zero.
+If $0\to A \mapsvia{f} B \to 0$, then $A \cong B$ since $f$ is both injective and surjective (say for \(R\dash\)modules).
+
+
+:::{.theorem title="Long Exact Sequences"}
+Suppose $0\to A\to B \to C \to 0$ is a SES in \( \Ch(\mathcal{A}) \) (note: this is a sequence of *complexes*), then there are natural maps 
+\[
+\bd: H_n(C) \to H_{n-1}(A)
+\]
+called **connecting morphisms** which decrease degree such that the following sequence is exact:
+
+% https://q.uiver.app/?q=WzAsNyxbMCwyLCJIX24oQSkiXSxbMSwyLCJIX24oQikiXSxbMiwyLCJIX24oQykiXSxbMiwwLCJIX3tuKzF9KEMpIl0sWzAsNCwiSF97bi0xfShBKSJdLFsxLDQsIlxcY2RvdHMiXSxbMSwwLCJcXGNkb3RzIl0sWzAsMSwiZl8qID0gSF9uKGYpIl0sWzEsMiwiZ18qID0gSF9uKGcpIl0sWzMsMCwiXFxkZWwiXSxbMiw0LCJcXGRlbCJdLFs0LDVdLFs2LDNdXQ==
+\begin{tikzcd}
+	& \cdots & {H_{n+1}(C)} \\
+	\\
+	{H_n(A)} & {H_n(B)} & {H_n(C)} \\
+	\\
+	{H_{n-1}(A)} & \cdots
+	\arrow["{f_* = H_n(f)}", from=3-1, to=3-2]
+	\arrow["{g_* = H_n(g)}", from=3-2, to=3-3]
+	\arrow["\delta", from=1-3, to=3-1]
+	\arrow["\delta", from=3-3, to=5-1]
+	\arrow[from=5-1, to=5-2]
+	\arrow[from=1-2, to=1-3]
+\end{tikzcd}
+
+This is referred to as the **long exact sequence in homology**.
+Similarly, replacing chain complexes by cochain complexes yields a similar connecting morphism that increases degree.
+
+> Note on notation: some books use $\bd$ for homology and $\delta$ for cohomology.
+
+:::
+
+The proof that this sequence exists is a consequence of the *snake lemma*.
+
+
+:::{.lemma title="?"}
+
+% https://q.uiver.app/?q=WzAsMjEsWzQsMiwiQSJdLFs2LDIsIkIiXSxbOCwyLCJDIl0sWzQsNCwiQSciXSxbNiw0LCJCJyJdLFs4LDQsIkMnIl0sWzIsNCwiMCJdLFsyLDIsIjAiXSxbNCwwLCJ7XFxjb2xvcntyZWR9XFxrZXIoXFxhbHBoYSl9Il0sWzIsMCwie1xcY29sb3J7cmVkfVxca2VyKGYpfSJdLFs2LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGJldGEpfSJdLFs4LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGdhbW1hKX0iXSxbNCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGFscGhhKX0iXSxbNiw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGJldGEpfSJdLFs4LDYsIntcXGNvbG9ye3JlZH1cXGNva2VyKFxcZ2FtbWEpfSJdLFsxMCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihnJyl9Il0sWzAsMCwiMCJdLFsxMiw2LCIwIl0sWzcsM10sWzEwLDIsIjAiXSxbMTAsNCwiMCJdLFs2LDNdLFszLDQsImYnIl0sWzQsNSwiZyciXSxbMCwxLCJmIl0sWzEsMiwiZyJdLFs3LDBdLFsxLDQsIlxcYmV0YSIsMV0sWzIsNSwiXFxnYW1tYSIsMV0sWzAsMywiXFxhbHBoYSIsMV0sWzEyLDEzXSxbMTMsMTRdLFsxNCwxNV0sWzE1LDE3XSxbMTYsOV0sWzksOF0sWzgsMTBdLFsxMCwxMV0sWzExLDEyXSxbNSwyMF0sWzIsMTldXQ==
+\begin{tikzcd}
+	0 && {{\color{red}\ker(f)}} && {{\color{red}\ker(\alpha)}} && {{\color{red}\ker(\beta)}} && {{\color{red}\ker(\gamma)}} \\
+	\\
+	&& 0 && A && B && C && 0 \\
+	&&&&&&& {} \\
+	&& 0 && {A'} && {B'} && {C'} && 0 \\
+	\\
+	&&&& {{\color{red}\coker(\alpha)}} && {{\color{red}\coker(\beta)}} && {{\color{red}\coker(\gamma)}} && {{\color{red}\coker(g')}} && 0
+	\arrow[from=5-3, to=5-5]
+	\arrow["{f'}", from=5-5, to=5-7]
+	\arrow["{g'}", from=5-7, to=5-9]
+	\arrow["f", from=3-5, to=3-7]
+	\arrow["g", from=3-7, to=3-9]
+	\arrow[from=3-3, to=3-5]
+	\arrow["\beta"{description}, from=3-7, to=5-7]
+	\arrow["\gamma"{description}, from=3-9, to=5-9]
+	\arrow["\alpha"{description}, from=3-5, to=5-5]
+	\arrow[from=7-5, to=7-7]
+	\arrow[from=7-7, to=7-9]
+	\arrow[from=7-9, to=7-11]
+	\arrow[from=7-11, to=7-13]
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-5, to=1-7]
+	\arrow[from=1-7, to=1-9]
+	\arrow[from=1-9, to=7-5]
+	\arrow[from=5-9, to=5-11]
+	\arrow[from=3-9, to=3-11]
+\end{tikzcd}
+
+Existence:
+
+- Start with $c\in C$, not $c=0\in C'$
+- **Choose** $b\in B$ by surjectivity
+  - We'll show it's independent of this choice.
+- Then $b'\in B'$ goes to $0\in C'$
+- By exactness, produce a unique $a'\in A$ by injectivity
+- Take the image $[a]\in \coker \alpha$
+- Define $\bd(c) \da [a']$.
+
+Uniqueness:
+
+- We chose $b$, suppose we chose a different $\tilde b$.
+- Then $\tilde b - b \mapsto c-c = 0$, so the difference is in $\ker g = \im f$.
+- Produce an $\tilde a\in A$ such that $\tilde a\mapsto \tilde b - b$
+- Then \( \bar a \da \alpha(\tilde a) \), so apply $f'$.
+- Define $\beta(\tilde b) = \tilde b ' \in B$.
+- Commutativity of the LHS square forces $\tilde a'\mapsto \tilde b' - b'$.
+- Then $\bar a + a' \mapsto \tilde b' -b' + b' = \tilde b'$.
+- So $\tilde a' + a'$ is the desired pullback of $\tilde b'$
+- Then take $[\tilde a'] \in \coker \alpha$; are $a', \tilde a'$ in the same equivalence class?
+- Use that fact that $\tilde a = a' + \bar a$, where $\bar a \in \im \alpha$, so $[\tilde a] = [a' + \bar a] = [a'] \in \coker \alpha \da A'/\im \alpha$.
+
+
+\todo[inline]{A few changes in the middle, redo!}
+
+Exactness:
+
+- Let's show $g: \ker \beta\to \ker \alpha$.
+  
+  - Let \( b \in \ker \beta \), then consider \( \gamma(g(\beta)) = g'(\beta(b)) = g'(0) = 0 \) and so \( g(b) \in \ker \gamma \).
+  
+- Now we'll show $\im(\ro{g}{\ker \beta}) \subseteq \ker \delta$
+  - Let \( b \in \ker \beta, c = g(b) \), then how is \( \delta(c) \) defined?
+  - Use this $b$, then apply \( \beta \) to get \( b' = \beta(b) = 0 \) since \( b \in \ker \beta \).
+  - So the unique thing mapping to it $a'$ is zero, and thus $[a'] = 0 = \delta(c)$.
+
+- \( \ker \delta \subseteq \im( \ro{g}{ \ker \beta} ) \) 
+
+  - Let \( c\in \ker \delta \), then \( \delta(c) = 0 = [a'] \in \coker \alpha \) which implies that \( a' \in \im \alpha \).
+  - Write \( a' = \alpha(a) \), then \( \beta(b) = b' = f'(a') = f'( \alpha(a)) \) by going one way around the LHS square, and is equal to \( \beta(f(a)) \) going the other way.
+  - So \( \tilde b \da b - f(a) \in \ker \beta \), since \( \beta(b) = \beta(f(a)) \) implies their difference is zero.
+  - Then $g(\tilde b) = g(b) - g(f(a)) = g(b) = c$, which puts $c\in g(\ker \beta)$ as desired.
+
+
+:::
+
+
+:::{.exercise title="?"}
+Show exactness at the remaining places -- the most interesting place is at $\coker \alpha$.
+Also check that all of these maps make sense.
+:::
+
+
+:::{.remark}
+We assumed that \( \mathcal{A}= \rmod  \) here, so we could chase elements, but this happens to also be true in any abelian category \( \mathcal{A}  \) but by a different proof.
+The idea is to embed \( \mathcal{A} \to \rmod  \) for some ring $R$, do the construction there, and pull the results back -- but this doesn't quite work!
+\( \mathcal{A}  \) can be too big.
+Instead, do this for the smallest subcategory \( \mathcal{A}_0  \) containing all of the modules and maps involved in the snake lemma.
+Then \( \mathcal{A}_0 \) is small enough to embed into $\rmod$ by the **Freyd-Mitchell Embedding Theorem**.
+:::
+
+
+
+# Lecture 5 (Monday, January 25)
+
+## LES Associated to a SES
+
+:::{.theorem title="?"}
+For every SES of chain complexes, there is a long exact sequence in homology.
+:::
+
+:::{.proof title="?"}
+Suppose we have a SES of chain complexes
+\[
+0 \to A \mapsvia{f} B \mapsvia{g} C \to 0
+,\]
+which means that for every $n$ there is a SES of \(R\dash\)modules.
+Recall the diagram for the snake lemma, involving kernels across the top and cokernels across the bottom.
+Applying the snake lemma, by hypothesis $\coker g = 0$ and $\ker f = 0$.
+There is a SES 
+
+\[
+A_n / d A_{n+1} 
+\to 
+B_n / d B_{n+1} 
+\to 
+C_n / d C_{n+1} 
+\to 
+0
+\]
+
+Using the fact that $B_n \subseteq Z_n$, we can use the 1st and 2nd isomorphism theorems to produce
+
+% https://q.uiver.app/?q=WzAsMTQsWzEsMiwiQV9uL2QgQV97bisxfSJdLFsyLDIsIkIgLyBkIEJfe24rMX0iXSxbMywyLCJDL2QgQ197bisxfSJdLFswLDQsIjAiXSxbMSw0LCJaX3tuLTF9KEEpIl0sWzIsNCwiWl97bi0xfShCKSJdLFszLDQsIlpfe24tMX0oQykiXSxbNSwyLCIwIl0sWzEsNiwiXFxjb2tlciBkX24gPSBaX3tuLTF9KEEpL2QgQV9uID0gSF97bi0xfShBKSJdLFsyLDYsIkhfe24tMX0oQikiXSxbMyw2LCJIX3tuLTF9KEMpIl0sWzEsMCwiSF9uKEEpIl0sWzIsMCwiSF9uKEIpIl0sWzMsMCwiSF9uKEMpIl0sWzIsN10sWzAsMSwiZiJdLFsxLDIsImciXSxbMCw0LCJkX24iLDJdLFsxLDUsImRfbiIsMl0sWzIsNiwiZF9uIiwyXSxbNCw4XSxbOCw5LCJmXyoiLDJdLFs5LDEwLCJnXyoiLDJdLFs1LDldLFs2LDEwXSxbMTEsMTIsImZfKiIsMV0sWzEyLDEzLCJnXyoiLDFdLFsxMSwwXSxbMTIsMV0sWzEzLDJdLFszLDRdLFs0LDVdLFs1LDZdLFsxMyw4LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=
+\begin{tikzcd}
+	& {H_n(A)} & {H_n(B)} & {H_n(C)} \\
+	\\
+	& {A_n/d A_{n+1}} & {B / d B_{n+1}} & {C/d C_{n+1}} && 0 \\
+	\\
+	0 & {Z_{n-1}(A)} & {Z_{n-1}(B)} & {Z_{n-1}(C)} \\
+	\\
+	& {\coker d_n = Z_{n-1}(A)/d A_n = H_{n-1}(A)} & {H_{n-1}(B)} & {H_{n-1}(C)}
+	\arrow[from=3-4, to=3-6]
+	\arrow["f", from=3-2, to=3-3]
+	\arrow["g", from=3-3, to=3-4]
+	\arrow["{d_n}"', from=3-2, to=5-2]
+	\arrow["{d_n}"', from=3-3, to=5-3]
+	\arrow["{d_n}"', from=3-4, to=5-4]
+	\arrow[from=5-2, to=7-2]
+	\arrow["{f_*}"', from=7-2, to=7-3]
+	\arrow["{g_*}"', from=7-3, to=7-4]
+	\arrow[from=5-3, to=7-3]
+	\arrow[from=5-4, to=7-4]
+	\arrow["{f_*}"{description}, from=1-2, to=1-3]
+	\arrow["{g_*}"{description}, from=1-3, to=1-4]
+	\arrow[from=1-2, to=3-2]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=1-4, to=3-4]
+	\arrow[from=5-1, to=5-2]
+	\arrow[from=5-2, to=5-3]
+	\arrow[from=5-3, to=5-4]
+	\arrow[dotted, from=1-4, to=7-2]
+\end{tikzcd}
+
+This yields an exact sequence relating $H_n$ to $H_{n-1}$, and these can all be spliced together.
+
+- $\ker(A_n / d A_{n-1} \to Z_{n-1}(A) = Z_n(A) / d A_{n+1} \da H_n(A)$ using the 2nd isomorphism theorem
+
+
+:::
+
+:::{.remark}
+Note that $d$ is *natural*, which means the following:
+there is a category \( \mathcal{S}  \) whose objects are SESs of chain complexes and whose maps are chain maps:
+
+% https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIkEiXSxbMiwwLCJCIl0sWzMsMCwiQyJdLFs0LDAsIjAiXSxbMCwyLCIwIl0sWzEsMiwiQSciXSxbMiwyLCJCJyJdLFszLDIsIkMnIl0sWzQsMiwiMCJdLFsxLDZdLFsyLDddLFszLDhdLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs1LDZdLFs2LDddLFs3LDhdLFs4LDldXQ==
+\begin{tikzcd}
+	0 & A & B & C & 0 \\
+	\\
+	0 & {A'} & {B'} & {C'} & 0
+	\arrow[from=1-2, to=3-2]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=1-4, to=3-4]
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=3-2, to=3-3]
+	\arrow[from=3-3, to=3-4]
+	\arrow[from=3-4, to=3-5]
+\end{tikzcd}
+
+There is another full subcategory \( \mathcal{L}  \) of $\Ch$ whose objects are LESs of objects in the original abelian category, i.e. exact chain complexes.
+The claim is that the LES construction in the theorem defines a functor \( \mathcal{S}\to \mathcal{L} \).
+We've seen how this maps objects, so what is the map on morphisms?
+Given a morphism as in the above diagram, there is an induced morphism:
+
+% https://q.uiver.app/?q=WzAsMTIsWzAsMCwiXFxjZG90cyJdLFsxLDAsIkhfbiAoQSkiXSxbMiwwLCJIX24oQikiXSxbMywwLCJIX24oQykiXSxbNCwwLCJIX3tuLTF9KEEpIl0sWzAsMiwiXFxjZG90cyJdLFsxLDIsIkhfbihBJykiXSxbMiwyLCJIX24oQicpIl0sWzMsMiwiSF9uKEMnKSJdLFs0LDIsIkhfe24tMX0oQSkiXSxbNSwwLCJcXGNkb3RzIl0sWzUsMiwiXFxjZG90cyJdLFszLDQsIlxcYmQiXSxbMCwxXSxbMSwyXSxbMiwzXSxbNSw2XSxbNiw3XSxbNyw4XSxbOCw5LCJcXGJkIl0sWzEsNiwiSF9uKHVfQSkiLDFdLFsyLDcsIkhfbih1X0IpIiwxXSxbMyw4LCJIX24odV9DKSIsMV0sWzQsOSwiSF97bi0xfSh1X0EpIiwxXSxbOSwxMV0sWzQsMTBdXQ==
+\begin{tikzcd}
+	\cdots & {H_n (A)} & {H_n(B)} & {H_n(C)} & {H_{n-1}(A)} & \cdots \\
+	\\
+	\cdots & {H_n(A')} & {H_n(B')} & {H_n(C')} & {H_{n-1}(A)} & \cdots
+	\arrow["\bd", from=1-4, to=1-5]
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=3-2, to=3-3]
+	\arrow[from=3-3, to=3-4]
+	\arrow["\bd", from=3-4, to=3-5]
+	\arrow["{H_n(u_A)}"{description}, from=1-2, to=3-2]
+	\arrow["{H_n(u_B)}"{description}, from=1-3, to=3-3]
+	\arrow["{H_n(u_C)}"{description}, from=1-4, to=3-4]
+	\arrow["{H_{n-1}(u_A)}"{description}, from=1-5, to=3-5]
+	\arrow[from=3-5, to=3-6]
+	\arrow[from=1-5, to=1-6]
+\end{tikzcd}
+
+The first two squares commute, and *naturality* means that the third square commutes as well.
+:::
+
+:::{.exercise title="?"}
+Check the details!
+:::
+
+:::{.remark}
+It is sometimes useful to explicitly know how to compute snake lemma boundary elements.
+See the book for a recipe for computing $\bd(\xi)$:
+
+- Lift $\xi$ to a cycle $c\in Z_n(C) \subseteq C_n$.
+- Pull $c$ back to a preimage $b\in B_n$ by surjectivity.
+- Apply the differential to get $d(b)\in Z_{n-1}(B)$, using that images are contained in kernels.
+- Since this is in kernel of the outgoing map, it's in the kernel of the incoming map and thus there exists an $a\in Z_{n-1}(A)$ such that $f(a) = db$
+- So set \( \delta(\xi) \da [a] \in H_{n-1}(A) \).
+
+:::
+
+:::{.remark}
+Why is naturality useful?
+Suppose $H_n(B) = 0$, you get isomorphisms, and this allows inductive arguments up the LES.
+The LES in homology is sometimes abbreviated as an **exact triangle**:
+
+% https://q.uiver.app/?q=WzAsMyxbMSwwLCJIXyooQSkiXSxbMiwyLCJIXyooQikiXSxbMCwyLCJIXyooQykiXSxbMCwxLCJmIl0sWzEsMiwiZyJdLFsyLDAsIlxcYmQiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dXQ==
+\begin{tikzcd}
+	& {H_*(A)} \\
+	\\
+	{H_*(C)} && {H_*(B)}
+	\arrow["f", from=1-2, to=3-3]
+	\arrow["g", from=3-3, to=3-1]
+	\arrow["\bd", squiggly, from=3-1, to=1-2]
+\end{tikzcd}
+
+Here $\bd:H_*(C) \to H_*(A)[1]$ shifts degrees.
+Note that this motivates the idea of **triangulated categories**, which is important in modern research.
+See Weibel Ch.10, and exercise 1.4.5 for how to construct these as quotients of $\Ch$.
+:::
+
+## 1.4: Chain Homotopies
+
+Assume for now that we're in the situation of \(R\dash\)modules where $R$ is a field, i.e. vector spaces.
+The main fact/advantage here that is not generally true for \(R\dash\)modules: every subspace has a complement.
+Since $B_n \subseteq Z_n \subseteq C_n$, we can write $C_n = Z_n \oplus B_n'$ for every $n$, and $Z_n = B_n \oplus H_n$.
+This notation is suggestive, since $H_n \cong Z_n/B_n$ as a quotient of vector spaces.
+Substituting, we get $C_n = B_n \oplus H_n \oplus B_n'$.
+Consider the projection $C_n \to B_n$ by projecting onto the first factor.
+Identifying $B_n \da \im(C_{n+1} \to C_n) \cong C_{n+1}/Z_{n+1}$ by the 1st isomorphism theorem in the reverse direction.
+But this image is equal to $B_{n+1}'$, and we can embed this in $C_{n+1}$, so define $s_n: C_n \to C_{n+1}$ as the composition
+\[
+s_n \da ( C_n \mapsvia{\proj} B_n = \im (C_{n+1} \to C_n) \mapsvia{d_{n+1}\inv} C_{n+1}/Z_{n+1} \mapsvia{\cong} B_{n+1}' \injects C_{n+1}
+.\]
+
+
+
+:::{.claim title="1"}
+$d_{n+1} s_n d_{n+1} = d_{n+1}$ are equal as maps.
+:::
+
+
+:::{.proof title="?"}
+\envlist
+
+- Check on the first factor $B_{n+1}' \subseteq C_{n+1}$ directly to get $s_n d_{n+1}(x) = d_{n+1}(x)$ for $x\in B_{n+1}'$, and then applying $d_{n+1}$ to both sides is the desired equality.
+- On the second factor $Z_{n+1}$, both sides give zero since this is exactly the kernel.
+:::
+
+
+:::{.claim title="2"}
+$d_{n+1} s_n + s_{n-1}d_n = \id_{C_n}$  if and only if  $H_n = 0$, i.e. the complex $C$ is exact at $C_n$.
+This map is the sum of taking the two triangle paths in this diagram:
+
+% https://q.uiver.app/?q=WzAsNCxbMiwwLCJDX24iXSxbNCwwLCJDX3tuLTF9Il0sWzIsMiwiQ19uIl0sWzAsMiwiQ197bisxfSJdLFsxLDIsInNfe24tMX0iXSxbMCwyLCJcXGlkIiwyXSxbMCwxLCJkX24iXSxbMywyLCJkX3tuKzF9Il0sWzAsMywic19uIl1d
+\begin{tikzcd}
+	&& {C_n} && {C_{n-1}} \\
+	\\
+	{C_{n+1}} && {C_n}
+	\arrow["{s_{n-1}}", from=1-5, to=3-3]
+	\arrow["\id"', from=1-3, to=3-3]
+	\arrow["{d_n}", from=1-3, to=1-5]
+	\arrow["{d_{n+1}}", from=3-1, to=3-3]
+	\arrow["{s_n}", from=1-3, to=3-1]
+\end{tikzcd}
+:::
+
+
+
+:::{.proof title="?"}
+We again check this on both factors:
+
+- Using the first claim, $s_n = 0$ on $B_n'$ and thus $s_{n-1} d_n = \id_{B_n'}$.
+
+- On $H_n$, $s_n = 0$ and $d_n = 0$, and so the LHS is $0 = \id_{H_n}$ *if and only if* $H_n = 0$.
+
+- On $B_n$, and tracing through the definition of $s_n$ yields $d_{n+1} s_n(x) = x$ and this yields $\id_{B_n}$.
+
+:::
+
+Next time: summary of decompositions, start general section on chain homotopies.
+
+
+
+
+
+
 
