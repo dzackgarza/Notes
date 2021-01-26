@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-23 }
+{\tiny \textit{Last updated:} 2021-01-26 }
 \end{flushleft}
 
 
@@ -1559,6 +1559,380 @@ The set of Morse functions on \(M\) is open and dense in
 \(C^ \infty (M; {\mathbb{R}})\).
 
 \end{theorem}
+
+\hypertarget{tuesday-january-26}{%
+\section{Tuesday, January 26}\label{tuesday-january-26}}
+
+\hypertarget{attaching-handles}{%
+\subsection{Attaching Handles}\label{attaching-handles}}
+
+Goal: we want to use Morse functions (smooth, nondegenerate critical
+points) to study the topology of \(M\). Recall that the torus had 4
+critical points,
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-14-32.png}
+\caption{image\_2021-01-26-11-14-32}
+\end{figure}
+
+We defined the index as the number of negative eigenvalues of the
+Hessian matrix. Here the highest index will be the dimension of the
+manifold, and by the Morse lemma the two intermediate critical points
+will be index 1.
+
+\begin{remark}
+
+We want to use the Morse function to decompose the manifold, so we
+consider \(M_a \coloneqq f ^{-1} ((- \infty , a ])\). If
+\(f ^{-1} [a, b]\) does not contain a critical point, then
+\(M_a \cong M_b\) and \(f ^{-1} (a) \cong f ^{-1} (b)\). So taking
+\(M_{1/2}\) and \(M_{3/4}\) here both yield discs:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-17-46.png}
+\caption{image\_2021-01-26-11-17-46}
+\end{figure}
+
+Passing through critical points does change the manifold, though:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-19-01.png}
+\caption{image\_2021-01-26-11-19-01}
+\end{figure}
+
+\end{remark}
+
+\begin{theorem}[?]
+
+Suppose \(f ^{-1} [a, b]\) contains exactly \emph{one} critical point of
+index \(\lambda\) then
+\begin{align*}
+M_b \cong M_a \cup_{\varphi} (D_ \lambda \times D_{n - \lambda})
+,\end{align*}
+where
+\(\varphi: ({{\partial}}D_ \lambda \times D_{ n - \lambda}) \hookrightarrow{{\partial}}M_a\).
+
+\end{theorem}
+
+\begin{example}[?]
+
+For the case \(\lambda= 1, n = 3\), we have the following situation:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-24-46.png}
+\caption{image\_2021-01-26-11-24-46}
+\end{figure}
+
+\end{example}
+
+\begin{example}[?]
+
+Taking \(\lambda=1, n=2\), we attach \(D^1 \times D^1\) and get the
+following situation:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-27-16.png}
+\caption{image\_2021-01-26-11-27-16}
+\end{figure}
+
+Adding on another piece, the new boundary is given by the highlighted
+region:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-32-27.png}
+\caption{image\_2021-01-26-11-32-27}
+\end{figure}
+
+And continuing to attach the last pieces yields the following:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-33-31.png}
+\caption{image\_2021-01-26-11-33-31}
+\end{figure}
+
+\end{example}
+
+\begin{remark}
+
+There is a deformation retract \(M_b \to M_a \cup C_ \lambda\), where
+\(C_ \lambda\) is a \(\lambda{\hbox{-}}\)cell given by
+\(D_ \lambda \times\left\{{0}\right\}\). For example:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-36-35.png}
+\caption{image\_2021-01-26-11-36-35}
+\end{figure}
+
+\end{remark}
+
+\hypertarget{stable-and-unstable-manifolds}{%
+\subsection{Stable and Unstable
+Manifolds}\label{stable-and-unstable-manifolds}}
+
+\begin{definition}[Unstable Manifold]
+
+Given \(- \nabla f\) for a fixed metric, the \textbf{unstable manifold}
+for a critical point \(p\) is defined as
+\begin{align*}
+W_f^u(p) \coloneqq\left\{{p}\right\} \cup\left\{{ \gamma(t) {~\mathrel{\Big|}~}\dot \gamma(t) = - \nabla f( \gamma(t) ),\, \gamma(t) \overset{t\to -\infty}\to p }\right\}
+.\end{align*}
+Here \(\gamma(t)\) is the trajectory of \(-\nabla(f)\).
+
+\end{definition}
+
+\begin{example}[?]
+
+The unstable manifold is highlighted in blue here:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-42-01.png}
+\caption{image\_2021-01-26-11-42-01}
+\end{figure}
+
+The gradient trajectories for other points are given by the yellow lines
+in the following:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-44-13.png}
+\caption{image\_2021-01-26-11-44-13}
+\end{figure}
+
+\end{example}
+
+\begin{lemma}[?]
+
+If \(\mathop{\mathrm{Ind}}(p) = \lambda\), then the unstable manifold
+\(W_f^u\) at \(p\) is isomorphic to \({\mathbb{R}}^ \lambda\).
+
+\end{lemma}
+
+\begin{example}[?]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-46-46.png}
+\caption{image\_2021-01-26-11-46-46}
+\end{figure}
+
+Here the unstable manifold for \(p_2\) will be 2-dimensional, with one
+flow line ending at \(p_1\) and the rest ending at \(p_0\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-11-47-24.png}
+\caption{image\_2021-01-26-11-47-24}
+\end{figure}
+
+\end{example}
+
+\begin{definition}[Stable Manifold]
+
+The \textbf{stable manifold} for a critical point \(p\) is defined as
+\begin{align*}
+W_f^s(p) \coloneqq\left\{{p}\right\} \cup\left\{{ \gamma(t) {~\mathrel{\Big|}~}\dot \gamma(t) = - \nabla f( \gamma(t) ),\, \gamma(t) \overset{t\to {\color{red} +} \infty}\to p }\right\}
+.\end{align*}
+
+\end{definition}
+
+\begin{example}[?]
+
+The stable manifold for \(p_0\) above is every trajectory ending at
+\(p_0\). \(W^s(p) = S^2 \setminus W^s(p_1) \cup W_s(p_3)\)? See video?
+
+\todo[inline]{Which point $p$ is this for?}
+
+\end{example}
+
+\hypertarget{morse-functions}{%
+\subsection{Morse Functions}\label{morse-functions}}
+
+\begin{theorem}[Existence of Morse Functions]
+
+The set of Morse functions is open and dense in
+\(C^ \infty (M; {\mathbb{R}})\) in a certain topology.\footnote{See
+  Akram's notes for details.}
+
+\end{theorem}
+
+\begin{remark}
+
+We'll use this to define a chain complex \(C_*(f, g)\) where \(g\) is a
+chosen metric, define a differential, and use this to define a homology
+theory. For notation, we'll write \(\operatorname{crit}(f)\) as the set
+of critical points of \(f\), and given
+\(p, q\in \operatorname{crit}(f)\) with \(\gamma\) a trajectory running
+from \(p\) to \(q\), we have
+\begin{align*}
+W^u(p) \cap W^s(q) = \left\{{ \gamma(t) {~\mathrel{\Big|}~}
+\gamma(t) \overset{t\to -\infty }\to p,\,
+\gamma(t) \overset{t\to +\infty }\to q
+}\right\}
+.\end{align*}
+
+\end{remark}
+
+\begin{definition}[Transverse Intersections]
+
+Two submanifolds \(X, Y \subseteq M\) \textbf{intersect transversely} if
+and only if
+\begin{align*}
+T_pX + T_p Y \coloneqq\left\{{v+w{~\mathrel{\Big|}~}v\in T_p X, w\in T_p Y}\right\} = T_p M && \forall p\in X \cap Y
+.\end{align*}
+In this case, we write \(X \pitchfork Y\).
+
+\end{definition}
+
+\begin{example}[?]
+
+An example of a transverse intersection:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-12-02-29.png}
+\caption{image\_2021-01-26-12-02-29}
+\end{figure}
+
+\end{example}
+
+\begin{example}[?]
+
+An example of an intersection that is \emph{not} transverse:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-12-03-13.png}
+\caption{image\_2021-01-26-12-03-13}
+\end{figure}
+
+\end{example}
+
+\begin{definition}[Morse-Smale]
+
+A pair \((f, g)\) with \(f\) a Morse function and \(g\) a metric is
+\textbf{Morse-Smale} if and only if
+
+\begin{itemize}
+\tightlist
+\item
+  \(f\) is a Morse function,
+\item
+  \(W^u(p)\) is \emph{transverse} to \(W^s(q)\) for all
+  \(p, q\in \operatorname{crit}(f)\).
+\end{itemize}
+
+\end{definition}
+
+\begin{theorem}[?]
+
+For a generic metric \(g\), the pair \((f, g)\) is Morse-Smale.
+
+\end{theorem}
+
+\begin{remark}
+
+This means that metrics can be perturbed to become Morse-Smale.
+
+\end{remark}
+
+\begin{example}[?]
+
+The following is not Morse-Smale:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-26-12-06-06.png}
+\caption{image\_2021-01-26-12-06-06}
+\end{figure}
+
+Note that if \(X^a \pitchfork Y^b\), then \(X \cap Y \subseteq M^n\) is
+a smooth submanifold of dimension \(a+b-n\). In general, we have
+\(M^s(p) \cong {\mathbb{R}}^{n - \lambda}\) where
+\(\lambda = \mathop{\mathrm{Ind}}(p)\).
+
+\begin{observation}
+
+If \((f, g)\) is Morse-Smale, then \(M^u(p) \pitchfork M^s(q)\). In this
+case,
+\begin{align*}
+\dim(M^u(p) \cap M^s(q)) = \mathop{\mathrm{Ind}}(p) + n - \mathop{\mathrm{Ind}}(q) - n = \mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q)
+.\end{align*}
+Thus if \(\mathop{\mathrm{Ind}}(p) = \mathop{\mathrm{Ind}}(q)\) then
+\(\dim M^s(p) \cap M^s(q) = 0\).
+
+\end{observation}
+
+\begin{remark}
+
+There is an \({\mathbb{R}}{\hbox{-}}\)action of \(M^s(p) \cap M^s(q)\):
+\begin{align*}
+\qty{ M^s(p) \times M^u(q) } \times{\mathbb{R}}&\to M^s(p) \cap M^u(q) \\
+( \gamma(t), c) &\mapsto \gamma(t+c)
+.\end{align*}
+If \(p\neq q\), this action is free and we can thus quotient by it to
+obtain
+\begin{align*}
+\mathcal{M}(p, q) \coloneqq\qty{ M^s(p) \cap M^u(q)} / {\mathbb{R}}
+.\end{align*}
+This identifies all points on the same trajectory, yielding one point
+for every trajectory, and so this is called the \textbf{moduli space of
+trajectories from \(p\) to \(q\)}.
+
+\end{remark}
+
+If \(\mathop{\mathrm{Ind}}(p) = \mathop{\mathrm{Ind}}(q)\), we have
+\(\dim M^u(p) \cap M^s (q) = 0\), making \(\dim \mathcal{M}(p, q) = -1\)
+and thus \(\mathcal{M}(p, q) = \emptyset\) and no gradient trajectories
+connect \(p\) to \(q\). Referring back to the example, since
+\(\mathop{\mathrm{Ind}}(p_3) = \mathop{\mathrm{Ind}}(p_2)\), if
+\((f, g)\) were Morse-Smale then there would be no trajectory
+\(p_3 \to p_2\), whereas in this case there is at least one.
+
+\end{example}
+
+\begin{remark}
+
+If \(\mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q) = 1\), then
+\(\dim \mathcal{M}(p, q) = \mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q) - 1 = 0\),
+making \(\mathcal{M}(p, q)\) a compact 0-dimensional manifold, which is
+thus finitely many points, meaning there are only finitely many
+trajectories connecting \(p\to q\) and it becomes possible to define a
+Morse complex.
+
+\end{remark}
+
+\begin{definition}[Morse Complex]
+
+Fix \((f, g)\) a Morse-Smale pair, then define
+\begin{align*}
+C_i(f, g) \coloneqq{\mathbb{Z}}/2{\mathbb{Z}}\left[\left\{{p {~\mathrel{\Big|}~}\mathop{\mathrm{Ind}}p = i}\right\}\right] = \bigoplus_{\mathop{\mathrm{Ind}}(p) = i} {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{p}\right\rangle
+,\end{align*}
+with a differential
+\begin{align*}
+{{\partial}}: C_i(f, g) &\to C_{i-1}(f, g) \\
+p, \mathop{\mathrm{Ind}}(p) = i & \mapsto \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) q 
+,\end{align*}
+where we take the count mod 2.
+
+\end{definition}
+
+\begin{theorem}[?]
+
+\({{\partial}}^2 = 0\), and thus \(( C(f, g), {{\partial}})\) is a chain
+complex.
+
+\end{theorem}
+
+Next time we will work on proving this.
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
