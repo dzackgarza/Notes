@@ -426,7 +426,7 @@ Check that \( d^2 = 0 \), using \( d^v d^h + d^h d^v = 0 \).
 ::: {.remark}
 Some notes:
 
--   \( \mathrm{\operatorname{Tot}}^\oplus(C) = \mathrm{\operatorname{Tot}}^\prod(C) \) when \( C \) is bounded.
+-   \( \mathrm{\operatorname{Tot}}^{\oplus}(C) = \mathrm{\operatorname{Tot}}^{\prod}(C) \) when \( C \) is bounded.
 
 -   The total complexes need not exist if \( C \) is unbounded: one needs infinite direct products and infinite coproducts to exist in \( \mathcal{C} \). A category admitting these is called **complete** or **cocomplete**.[^2]
 :::
