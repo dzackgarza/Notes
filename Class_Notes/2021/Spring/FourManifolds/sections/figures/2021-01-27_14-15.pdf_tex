@@ -54,5 +54,7 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-01-27_14-15.pdf}}%
+    \put(0.54209487,0.1436561){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$A = \theta$\end{tabular}}}}%
+    \put(0.5872012,0.59471938){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$A = \pi/2$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
