@@ -1074,11 +1074,10 @@ If $0\to A \mapsvia{f} B \to 0$, then $A \cong B$ since $f$ is both injective an
 :::{.theorem title="Long Exact Sequences"}
 Suppose $0\to A\to B \to C \to 0$ is a SES in \( \Ch(\mathcal{A}) \) (note: this is a sequence of *complexes*), then there are natural maps 
 \[
-\bd: H_n(C) \to H_{n-1}(A)
+\delta: H_n(C) \to H_{n-1}(A)
 \]
 called **connecting morphisms** which decrease degree such that the following sequence is exact:
 
-% https://q.uiver.app/?q=WzAsNyxbMCwyLCJIX24oQSkiXSxbMSwyLCJIX24oQikiXSxbMiwyLCJIX24oQykiXSxbMiwwLCJIX3tuKzF9KEMpIl0sWzAsNCwiSF97bi0xfShBKSJdLFsxLDQsIlxcY2RvdHMiXSxbMSwwLCJcXGNkb3RzIl0sWzAsMSwiZl8qID0gSF9uKGYpIl0sWzEsMiwiZ18qID0gSF9uKGcpIl0sWzMsMCwiXFxkZWwiXSxbMiw0LCJcXGRlbCJdLFs0LDVdLFs2LDNdXQ==
 \begin{tikzcd}
 	& \cdots & {H_{n+1}(C)} \\
 	\\
@@ -1087,11 +1086,13 @@ called **connecting morphisms** which decrease degree such that the following se
 	{H_{n-1}(A)} & \cdots
 	\arrow["{f_* = H_n(f)}", from=3-1, to=3-2]
 	\arrow["{g_* = H_n(g)}", from=3-2, to=3-3]
-	\arrow["\delta", from=1-3, to=3-1]
-	\arrow["\delta", from=3-3, to=5-1]
+	\arrow["\delta", from=1-3, to=3-1, in=180, out=360]
+	\arrow["\delta", from=3-3, to=5-1, in=180, out=360]
 	\arrow[from=5-1, to=5-2]
 	\arrow[from=1-2, to=1-3]
 \end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwyLCJIX24oQSkiXSxbMSwyLCJIX24oQikiXSxbMiwyLCJIX24oQykiXSxbMiwwLCJIX3tuKzF9KEMpIl0sWzAsNCwiSF97bi0xfShBKSJdLFsxLDQsIlxcY2RvdHMiXSxbMSwwLCJcXGNkb3RzIl0sWzAsMSwiZl8qID0gSF9uKGYpIl0sWzEsMiwiZ18qID0gSF9uKGcpIl0sWzMsMCwiXFxkZWwiXSxbMiw0LCJcXGRlbCJdLFs0LDVdLFs2LDNdXQ==)
 
 This is referred to as the **long exact sequence in homology**.
 Similarly, replacing chain complexes by cochain complexes yields a similar connecting morphism that increases degree.
@@ -1103,7 +1104,9 @@ Similarly, replacing chain complexes by cochain complexes yields a similar conne
 The proof that this sequence exists is a consequence of the *snake lemma*.
 
 
-:::{.lemma title="?"}
+:::{.lemma title="The Snake Lemma"}
+
+The sequence highlighted in red in the following diagram is exact:
 
 \begin{tikzcd}[column sep=tiny]
 	0 && {{\color{red}\ker(f)}} && {{\color{red}\ker(\alpha)}} && {{\color{red}\ker(\beta)}} && {{\color{red}\ker(\gamma)}} \\
@@ -1115,7 +1118,7 @@ The proof that this sequence exists is a consequence of the *snake lemma*.
 	&&&& {{\color{red}\coker(\alpha)}} && {{\color{red}\coker(\beta)}} && {{\color{red}\coker(\gamma)}} && {{\color{red}\coker(g')}} && 0
 	\arrow[from=5-3, to=5-5]
 	\arrow["{f'}"', from=5-5, to=5-7]
-	\arrow["{g'}'", from=5-7, to=5-9]
+	\arrow["{g'}"', from=5-7, to=5-9]
 	\arrow["f", from=3-5, to=3-7]
 	\arrow["g", from=3-7, to=3-9]
 	\arrow[from=3-3, to=3-5]
@@ -1145,12 +1148,12 @@ The proof that this sequence exists is a consequence of the *snake lemma*.
 
 Existence:
 
-- Start with $c\in C$, not $c=0\in C'$
+- Start with $c\in \ker(\gamma) \leq C$, so $\gamma(c) = 0 \in C'$
 - **Choose** $b\in B$ by surjectivity
   - We'll show it's independent of this choice.
-- Then $b'\in B'$ goes to $0\in C'$
-- By exactness, produce a unique $a'\in A$ by injectivity
-- Take the image $[a]\in \coker \alpha$
+- Then $b'\in B'$ goes to $0\in C'$, so $b' \in \ker (B' \to C')$
+- By exactness, $b' \in \ker (B' \to C') = \im(A'\to B')$, and now produce a unique $a'\in A'$ by injectivity
+- Take the image $[a']\in \coker \alpha$
 - Define $\bd(c) \da [a']$.
 
 Uniqueness:
@@ -1171,7 +1174,7 @@ Uniqueness:
 
 Exactness:
 
-- Let's show $g: \ker \beta\to \ker \alpha$.
+- Let's show $g: \ker \beta\to \ker \gamma$.
   
   - Let \( b \in \ker \beta \), then consider \( \gamma(g(\beta)) = g'(\beta(b)) = g'(0) = 0 \) and so \( g(b) \in \ker \gamma \).
   
@@ -1264,7 +1267,7 @@ Using the fact that $B_n \subseteq Z_n$, we can use the 1st and 2nd isomorphism 
 	\arrow[from=5-1, to=5-2]
 	\arrow[from=5-2, to=5-3]
 	\arrow[from=5-3, to=5-4]
-	\arrow[dotted, from=1-4, to=7-2]
+	\arrow[dotted, from=1-4, to=7-2, in=180, out=360, "{\exists \delta}"]
 \end{tikzcd}
 
 > [Link to diagram](https://q.uiver.app/?q=WzAsMTQsWzEsMiwiQV9uL2QgQV97bisxfSJdLFsyLDIsIkIgLyBkIEJfe24rMX0iXSxbMywyLCJDL2QgQ197bisxfSJdLFswLDQsIjAiXSxbMSw0LCJaX3tuLTF9KEEpIl0sWzIsNCwiWl97bi0xfShCKSJdLFszLDQsIlpfe24tMX0oQykiXSxbNSwyLCIwIl0sWzEsNiwiXFxjb2tlciBkX24gPSBaX3tuLTF9KEEpL2QgQV9uID0gSF97bi0xfShBKSJdLFsyLDYsIkhfe24tMX0oQikiXSxbMyw2LCJIX3tuLTF9KEMpIl0sWzEsMCwiSF9uKEEpIl0sWzIsMCwiSF9uKEIpIl0sWzMsMCwiSF9uKEMpIl0sWzIsN10sWzAsMSwiZiJdLFsxLDIsImciXSxbMCw0LCJkX24iLDJdLFsxLDUsImRfbiIsMl0sWzIsNiwiZF9uIiwyXSxbNCw4XSxbOCw5LCJmXyoiLDJdLFs5LDEwLCJnXyoiLDJdLFs1LDldLFs2LDEwXSxbMTEsMTIsImZfKiIsMV0sWzEyLDEzLCJnXyoiLDFdLFsxMSwwXSxbMTIsMV0sWzEzLDJdLFszLDRdLFs0LDVdLFs1LDZdLFsxMyw4LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=)

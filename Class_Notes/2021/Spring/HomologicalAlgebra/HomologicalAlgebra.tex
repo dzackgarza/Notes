@@ -992,7 +992,7 @@ Suppose \(0\to A\to B \to C \to 0\) is a SES in
 \(\operatorname{Ch}(\mathcal{A})\) (note: this is a sequence of
 \emph{complexes}), then there are natural maps
 \begin{align*}
-{{\partial}}: H_n(C) \to H_{n-1}(A)
+\delta: H_n(C) \to H_{n-1}(A)
 \end{align*}
 called \textbf{connecting morphisms} which decrease degree such that the
 following sequence is exact:
@@ -1006,12 +1006,17 @@ following sequence is exact:
     {H_{n-1}(A)} & \cdots
     \arrow["{f_* = H_n(f)}", from=3-1, to=3-2]
     \arrow["{g_* = H_n(g)}", from=3-2, to=3-3]
-    \arrow["\delta", from=1-3, to=3-1]
-    \arrow["\delta", from=3-3, to=5-1]
+    \arrow["\delta", from=1-3, to=3-1, in=180, out=360]
+    \arrow["\delta", from=3-3, to=5-1, in=180, out=360]
     \arrow[from=5-1, to=5-2]
     \arrow[from=1-2, to=1-3]
 \end{tikzcd}
 \end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNyxbMCwyLCJIX24oQSkiXSxbMSwyLCJIX24oQikiXSxbMiwyLCJIX24oQykiXSxbMiwwLCJIX3tuKzF9KEMpIl0sWzAsNCwiSF97bi0xfShBKSJdLFsxLDQsIlxcY2RvdHMiXSxbMSwwLCJcXGNkb3RzIl0sWzAsMSwiZl8qID0gSF9uKGYpIl0sWzEsMiwiZ18qID0gSF9uKGcpIl0sWzMsMCwiXFxkZWwiXSxbMiw0LCJcXGRlbCJdLFs0LDVdLFs2LDNdXQ==}{Link
+to Diagram}
+\end{quote}
 
 This is referred to as the \textbf{long exact sequence in homology}.
 Similarly, replacing chain complexes by cochain complexes yields a
@@ -1027,7 +1032,9 @@ Note on notation: some books use \({{\partial}}\) for homology and
 The proof that this sequence exists is a consequence of the \emph{snake
 lemma}.
 
-\begin{lemma}[?]
+\begin{lemma}[The Snake Lemma]
+
+The sequence highlighted in red in the following diagram is exact:
 
 \begin{center}
 \begin{tikzcd}[column sep=tiny]
@@ -1040,7 +1047,7 @@ lemma}.
     &&&& {{\color{red}\operatorname{coker}(\alpha)}} && {{\color{red}\operatorname{coker}(\beta)}} && {{\color{red}\operatorname{coker}(\gamma)}} && {{\color{red}\operatorname{coker}(g')}} && 0
     \arrow[from=5-3, to=5-5]
     \arrow["{f'}"', from=5-5, to=5-7]
-    \arrow["{g'}'", from=5-7, to=5-9]
+    \arrow["{g'}"', from=5-7, to=5-9]
     \arrow["f", from=3-5, to=3-7]
     \arrow["g", from=3-7, to=3-9]
     \arrow[from=3-3, to=3-5]
@@ -1077,7 +1084,7 @@ Existence:
 \begin{itemize}
 \tightlist
 \item
-  Start with \(c\in C\), not \(c=0\in C'\)
+  Start with \(c\in \ker(\gamma) \leq C\), so \(\gamma(c) = 0 \in C'\)
 \item
   \textbf{Choose} \(b\in B\) by surjectivity
 
@@ -1087,11 +1094,13 @@ Existence:
     We'll show it's independent of this choice.
   \end{itemize}
 \item
-  Then \(b'\in B'\) goes to \(0\in C'\)
+  Then \(b'\in B'\) goes to \(0\in C'\), so \(b' \in \ker (B' \to C')\)
 \item
-  By exactness, produce a unique \(a'\in A\) by injectivity
+  By exactness,
+  \(b' \in \ker (B' \to C') = \operatorname{im}(A'\to B')\), and now
+  produce a unique \(a'\in A'\) by injectivity
 \item
-  Take the image \([a]\in \operatorname{coker}\alpha\)
+  Take the image \([a']\in \operatorname{coker}\alpha\)
 \item
   Define \({{\partial}}(c) \coloneqq[a']\).
 \end{itemize}
@@ -1140,7 +1149,7 @@ Exactness:
 
 \begin{itemize}
 \item
-  Let's show \(g: \ker \beta\to \ker \alpha\).
+  Let's show \(g: \ker \beta\to \ker \gamma\).
 
   \begin{itemize}
   \tightlist
@@ -1279,7 +1288,7 @@ isomorphism theorems to produce
     \arrow[from=5-1, to=5-2]
     \arrow[from=5-2, to=5-3]
     \arrow[from=5-3, to=5-4]
-    \arrow[dotted, from=1-4, to=7-2]
+    \arrow[dotted, from=1-4, to=7-2, in=180, out=360, "{\exists \delta}"]
 \end{tikzcd}
 \end{center}
 
