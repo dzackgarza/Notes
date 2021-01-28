@@ -2421,5 +2421,6 @@
     <path id="b-1YvIQxH2WF" class="bookmark" transform="translate(30,5190)" fill="#008000" __timestamp="0x1774708c270" d="M0 0 l16 0 0 30 -8 -5 -8 5 0 -30" />
     <path id="b-5uwr7Kf1B4" class="bookmark" transform="translate(0,5250)" fill="#008000" __timestamp="0x1774708d1de" d="M0 0 l16 0 0 30 -8 -5 -8 5 0 -30" />
     <path id="b-o8qCswYTZq" class="bookmark" transform="translate(30,5760)" fill="#008000" __timestamp="0x1774708e0d2" d="M0 0 l16 0 0 30 -8 -5 -8 5 0 -30" />
+    <path class="write-flat-pen" fill="#000000" stroke-width="4" __comx="633.753" __comy="2921.317" __timestamp="0x177471c433c" d="M631.753 2920.651 l0 4 4 0 0 -4" />
   </g>
 </svg>
