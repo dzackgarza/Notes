@@ -1002,6 +1002,146 @@ where we take the count mod 2.
 
 Next time we will work on proving this.
 
+# Morse Homology and Lagrangian Floer Homology (Thursday, January 28)
+
+## Morse Homology
+
+Last time: defined the Morse complex. Assumed \( (f, g) \) was a Morse-Smale pair, where \( f \) is a Morse function and \( g \) is a Riemannian metric, and this guarantees that if \( p, q\in \operatorname{crit}(f) \) with \( \mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q) = 1 \), then (among other things) there are finitely many gradient trajectories \( p\leadsto q \). We denoted this \( \mathcal{M}(p, q) \). The chain complex was defined by \( C_i(f, g) \coloneqq\bigoplus_{\mathop{\mathrm{Ind}}(p) = i} {\mathbb{Z}}_2 \left\langle{ p }\right\rangle \) with differential \( {{\partial}}_i: C_i \to C_{i-1} \) was defined by sending an index \( i \) critical point \( p \) to \( \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) q \pmod 2 \).
+
+::: {.theorem title="The Morse Complex is a Chain Complex"}
+\( {{\partial}}_{i} \circ {{\partial}}_{i+1} = 0 \).
+:::
+
+::: {.proof title="?"}
+Idea of the proof: we can directly compute
+\[
+{{\partial}}({{\partial}}p) 
+&= {{\partial}}\qty{ \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) q } \\
+&= \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) {{\partial}}q \\
+&= \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) \qty{ \sum_{\mathop{\mathrm{Ind}}(r) = i-2 \# \mathcal{M}(q, r) r  }}   \\
+&= \sum_{\mathop{\mathrm{Ind}}(r) = i-2} \qty{\sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) \# \mathcal{M}(q, r) }  r \\
+&= \sum_{\mathop{\mathrm{Ind}}(r) = i-2} c_{p,q,r} r \\
+&= 0 && \text{(claim)}
+.\]
+
+This happens if and only if \( c_{p, q, r} = 0 \pmod 2 \) for all \( r \) with \( \mathop{\mathrm{Ind}}(r) = i-2 \). This is multiplication of the number of trajectories:
+
+![image_2021-01-28-11-23-19](figures/image_2021-01-28-11-23-19.png)
+
+In other words, this is the total number of trajectories \( p\leadsto r \) that pass through \( q \). These trajectories "break" at \( q \), and so we refer to these as **broken trajectories**.
+:::
+
+::: {.definition title="Broken Trajectories"}
+Suppose \( \mathop{\mathrm{Ind}}(r) = \mathop{\mathrm{Ind}}(p) - 2 \), then a **broken trajectory** from \( p \) to \( r \) is a trajectory from \( p \) to \( q \) followed by a trajectory \( q \) to \( r \) where \( \mathop{\mathrm{Ind}}(q) = \mathop{\mathrm{Ind}}(p)-1 = \mathop{\mathrm{Ind}}(r) + 1 \).
+
+![image_2021-01-28-11-26-25](figures/image_2021-01-28-11-26-25.png)
+:::
+
+::: {.question}
+Why is the number of broken trajectories even?
+:::
+
+::: {.answer}
+We can check that \( \dim \mathcal{M}(p, r) = \dim \qty{ W^u(p) \pitchfork W^s(r)}/{\mathbb{R}}= (\mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(r)) - 1 = 2-1 = 1 \). We can compactify \( \mathcal{M}(p, r) \) by adding in all of the broken trajectories to define
+\[ 
+\overline{\mathcal{M}(p, r)} \cup\qty{ \bigcup_{\mathop{\mathrm{Ind}}(q) = i-1} \mathcal{M}(p, q) \times\mathcal{M}(q, r) } 
+.\]
+This is useful here because we can appeal to the classification of smooth compact 1-dimensional manifolds, which are unions of copies of \( S^1 \) and \( D_1 = I \). In particular, the number of boundary points
+\[
+{{\partial}}\overline{\mathcal{M}(p, r)} = \bigcup_{\mathop{\mathrm{Ind}}(q) = i-1} \mathcal{M}(p, q) \times\mathcal{M}(q, r)
+\]
+is even:
+
+![image_2021-01-28-11-32-34](figures/image_2021-01-28-11-32-34.png)
+:::
+
+::: {.example title="Morse Homology of the Torus"}
+Suppose you have two critical points of the same index. The Morse-Smale condition implies that there's no trajectory between them. A counterexample would be \( p_3 \leadsto p_2 \) on the torus with the height function:
+
+![image_2021-01-28-11-45-16](figures/image_2021-01-28-11-45-16.png)
+
+However, if you perturb this slightly, the trajectories can be made to miss \( p_2 \) and end at \( p_1 \) instead. All of the trajectories are disjoint, so we end up with a situation like the following after perturbing the metric:
+
+![image_2021-01-28-11-48-06](figures/image_2021-01-28-11-48-06.png)
+
+We can cut along a curve on the bottom to better analyze these trajectories:
+
+![image_2021-01-28-11-48-57](figures/image_2021-01-28-11-48-57.png) ![image_2021-01-28-11-50-27](figures/image_2021-01-28-11-50-27.png)
+
+Now cut this cylinder along the trajectories \( p_1\leadsto p_3 \leadsto p_1 \), i.e. the green trajectories here:
+
+![image_2021-01-28-11-51-31](figures/image_2021-01-28-11-51-31.png)
+
+![image_2021-01-28-11-53-32](figures/image_2021-01-28-11-53-32.png)
+
+Here we can see that as the trajectories approach the corners, they limit to broken trjacetories:
+
+![image_2021-01-28-11-54-44](figures/image_2021-01-28-11-54-44.png)
+
+We can compute
+
+-   \( C_0 = {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{ p_1 }\right\rangle \)
+-   \( C_1 = {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{ p_2, 3 }\right\rangle \)
+-   \( C_2 = {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{ p_4 }\right\rangle \)
+
+Since there are exactly two trajectories \( p_4 \) to \( p_2 \) or \( p_3 \), we get \( {{\partial}}_2 = 0 \). Similarly \( {{\partial}}_1 = 0 \), and we get \( HM_i(T) = [{\mathbb{Z}}/2{\mathbb{Z}}, {\mathbb{Z}}/2{\mathbb{Z}}^2, {\mathbb{Z}}/2{\mathbb{Z}}, 0, \cdots] \), which is the same as its singular homology.
+:::
+
+::: {.theorem title="?"}
+\[
+HM_i(f, g) \cong H_i^{{\operatorname{Sing}}}(M; {\mathbb{Z}}/2{\mathbb{Z}})
+.\]
+In particular, it doesn't depend on the choice of Morse-Smale pair \( (f, g) \). See proof in references, e.g. Audin.
+:::
+
+::: {.proof title="?"}
+By definition, \( \# \operatorname{crit}_i(f) = \operatorname{rank}C_i(f, g) = \operatorname{rank}HM_i(f, g) \), and in any chain complex the rank of the chain groups are always at least the rank of the homology.
+:::
+
+## Lagrangian Floer Homology
+
+Suppose \( L_0^n, L_1^n \subset M^{2n} \) are compact with \( L_0 \pitchfork L_1 \), so the intersection is finitely many points.
+
+![image_2021-01-28-12-16-27](figures/image_2021-01-28-12-16-27.png)
+
+We can do Morse theory on the space of paths between them:
+\[
+\mathcal{P}(L_0, L_1) \coloneqq\left\{{ \gamma: I\to M {~\mathrel{\Big|}~}\gamma(0) \in L_0, \gamma(1) \in L_1}\right\}
+.\]
+
+We'll find analogs of Morse functions on \( P(L_0, L_1) \) such that the critical points are constant paths, i.e. \( L_0 \cap L_1 \). The Morse inequalities then gives bounds on the number of intersection points between \( L_0 \) and \( L_1 \).
+
+::: {.definition title="Symplectic Manifolds"}
+A **symplectic manifold** is a pair \( (M^{2n}, \omega) \) with \( \omega \) a 2-form which is
+
+-   Closed, i.e. \( d \omega = 0 \), and
+-   Nondegenerate, i.e. \( \Lambda^n \omega \neq 0 \).
+:::
+
+::: {.definition title="Lagrangian Submanifolds"}
+A half-dimensional submanifold \( L^n \subset M^{2n} \) is called **Lagrangian** if \( { \left.{{ \omega}} \right|_{{L^n}} } = 0 \).
+:::
+
+::: {.example title="?"}
+The pair \( ({\mathbb{R}}^{2n}, \sum_{i=1}^n dx_i \wedge dy_i \) is a symplectic manifold (and also a symplectic vector space). Note that this 2-form is also a bilinear form of the following shape:
+
+\[
+\begin{bmatrix}
+0 & \operatorname{id}_n 
+\\
+-\operatorname{id}_n & 0
+\end{bmatrix}
+.\]
+
+This has a Lagrangian submanifold \( {\mathbb{R}}^n \coloneqq\left\{{y_1 = \cdots = y_n = 0}\right\} \).
+:::
+
+> Note: See Darboux theorem.
+
+::: {.remark}
+The general setup for next time: we'll have \( (M^{2n}, \omega) \) a symplectic manifold, a pair \( L_0, L_1 \subset M \) such that \( L_0 \pitchfork L_1 \), and we want to do Morse Homology on \( \mathcal{P}(L_0, L_1) \).
+:::
+
 [^1]: See Sarkour-Wang
 
 [^2]: This is the strongest variant.
