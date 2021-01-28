@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-26 }
+{\tiny \textit{Last updated:} 2021-01-28 }
 \end{flushleft}
 
 
@@ -1141,6 +1141,412 @@ it's not always true that \({\mathbb{Z}}_K = {\mathbb{Z}}[\ell]\) for
 \(\ell\) a single element.
 
 \end{remark}
+
+\hypertarget{lecture-4-wednesday-january-27}{%
+\section{Lecture 4 (Wednesday, January
+27)}\label{lecture-4-wednesday-january-27}}
+
+Today: the failure of unique factorization. Roughly corresponds to
+chapter 4: ``Paradise Lost''!
+
+Setup: \(K\) is a quadratic field, a degree 2 extension of
+\({\mathbb{Q}}\), which can be written as \(K = {\mathbb{Q}}(\sqrt{d})\)
+with \(d\) squarefree. Last time, we completely described
+\({\mathbb{Z}}_K\) (the algebraic integers in \(K\)):
+\begin{align*}
+{\mathbb{Z}}_K = 
+\begin{cases}
+{\mathbb{Z}}[ \sqrt{d} ] &  d \equiv 2,3 \pmod 4
+\\
+{\mathbb{Z}}\left[{1 + \sqrt{d} \over 2}\right] & d \equiv 1 \pmod 4.
+\end{cases}
+\end{align*}
+We saw that the second admitted a different description as
+\(\left\{{ {a + b \sqrt{d} \over 2}}\right\}\) where \(a,b\) are either
+both even or both odd. Note that we can do interesting arithmetic in
+\({\mathbb{Z}}_K\), but it's not necessarily well-behaved:
+\({\mathbb{Z}}_K\) is not always a UFD. Letting \(d=-5\), we have
+\({\mathbb{Z}}_K = {\mathbb{Z}}[ \sqrt{-5} ]\) where \(6\) factors in
+two ways: \(6 = (1 + \sqrt{5} )(1 - \sqrt{-5} ) = (2)(3) = 6\).
+
+Note that this isn't quite enough to show failure of unique
+factorization, e.g.~we can factor \(16 = (4)(4) = (2)(8)\). Here you
+should check that all 4 factors are irreducible, and that the factors on
+the right aren't unit multiples of the ones on the left. For example,
+\(21 = (-7)(-3) = (7)(3)\), but the factors only differ by the unit
+\(-1\in {\mathbb{Z}}^{\times}\). The key to checking all of those: the
+\textbf{norm map}:
+\begin{align*}
+N(a + b \sqrt{-5} ) = (a + b \sqrt{-5} ) (a - \sqrt{-5} ) = a^2 + 5b^2
+.\end{align*}
+where the second factor was the \emph{conjugate}, i.e.~the image of the
+element under the nontrivial element of the Galois group of
+\(K_{/{\mathbb{Q}}}\). If \(a + b \sqrt{-5} \in {\mathbb{Z}}_K\), then
+\(N(a + b \sqrt{-5} \in {\mathbb{Z}}_{\geq 0}\) and is equal to zero if
+and only if \(a + b \sqrt{-5} = 0\). Moreover, this is a unit if and
+only if its norm is 1, \footnote{\(\impliedby\): If the norm is 1, the
+  conjugate is the inverse. For the reverse direction, the argument was
+  more complicated, and reduced to showing norms of units are \(\pm 1\),
+  and positivity forces it to be \(1\).} i.e.~\(a^2 + 5b^2 = 1\), which
+forces \(b=0\) and \(a=\pm 1\). So
+\(U({\mathbb{Z}}[ \sqrt{-5} ] ) = \left\{{\pm 1}\right\}\).
+
+We'll show one of the factors is irreducible, \(1 + \sqrt{-5}\). Recall
+that \(x\in R\) a domain is \emph{irreducible} if and only if whenever
+\(x = ab\), one of \(a,b\) is a unit. It itself is not a unit, since
+\(N(1 + \sqrt{-5 }) = 6 \neq 1\). So suppose
+\(1 + \sqrt{-5} = \alpha \beta\). Then
+\begin{align*}
+6 = N(\alpha \beta ) = N( \alpha) N( \beta)
+,\end{align*}
+and so up to reordering, we have \(N \alpha = 2, N \beta= 3\). Writing
+\(\alpha= a + b \sqrt{-5}\) and taking norms yields \(2 = a^2 + 5b^2\),
+which has no solutions: considering the equation \(\pmod 5\) yields
+\(2\equiv a^2\), but \(2\) is not a square in
+\({\mathbb{Z}}/5{\mathbb{Z}}\). \(\contradiction\)
+
+Note that the only other way of factoring \(6\) is \(6=(1)(6)\), and
+taking norms shows that one factor is a unit. So if we assume
+\(\alpha, \beta\) aren't units, both \(N \alpha, N \beta > 1\), which
+leads to the previous situation. By similar arguments, all 4 factors are
+irreducible.
+
+To see that the LHS factors aren't unit multiples of the RHS factors, we
+can use the fact that the units are \(\pm 1\), and multiplying the LHS
+by \(\pm 1\) can't yield \(2\) or \(3\). So this is a genuine
+counterexample to unique factorization.
+
+\hypertarget{factorization-theory}{%
+\subsection{Factorization Theory}\label{factorization-theory}}
+
+What went wrong in the previous example? We'll use a big of terminology
+from an area of algebra called \emph{factorization theory}. Many
+concepts related to divisibility can be discussed in this language!
+
+\begin{definition}[Monoid]
+
+A \textbf{monoid} is a nonempty set with a commutative associative
+binary operation \(\cdot\) with an identity \(1\). We say a monoid is
+\textbf{cancellative} if and only if whenever
+\(\alpha \beta= \beta \alpha\) or \(\beta \alpha = \gamma \alpha\) then
+\(\beta = \gamma\).
+
+\end{definition}
+
+\begin{definition}[Terminology for Cancellative Monoids]
+
+A bunch of definitions: let \(M\) be a cancellative monoid.
+
+\begin{itemize}
+\tightlist
+\item
+  \(\alpha\divides \beta\) if and only if \(\beta= \alpha \gamma\) for
+  some \(\gamma\).
+\item
+  \(\epsilon\) is a \textbf{unit} if \(\epsilon\divides 1\).
+\item
+  \(\alpha , \beta\) are \textbf{associates} if
+  \(\alpha = \epsilon \beta\) for some unit \(\epsilon\)
+\item
+  \(\pi\in M\) is \textbf{irreducible} if and only if \(\pi\) is a unit
+  and whenever \(\pi= \alpha \beta\) then either \(\alpha\) or \(\beta\)
+  is a unit.
+\item
+  \(\pi \in M\) is \textbf{prime} whenever \(\pi\divides \alpha \beta\)
+  then \(\pi\divides \alpha\) or \(\pi\divides \beta\).
+\item
+  \(\delta \in M\) is a greatest common divisor of \(\alpha, \beta\) if
+  and only if \(\delta\) is a common divisor that is divisible by every
+  other common divisor.
+\item
+  \(M\) is a \textbf{unique factorization monoid} if and only if every
+  nonunit element in \(M\) factors uniquely as a product of irreducibles
+  (uniqueness up to order and associates).
+\end{itemize}
+
+\end{definition}
+
+\begin{remark}
+
+Given \(R\) an integral domain, then \(R\setminus\left\{{0}\right\}\)
+with multiplication is a cancellative monoid. Moreover,
+\(R\setminus\left\{{0}\right\}\) is a unique factorization monoid if and
+only if \(R\) is a UFD.
+
+\end{remark}
+
+\begin{question}
+
+How do you show something is a UFD?
+
+\end{question}
+
+How does this proof go for \({\mathbb{Z}}\)?
+
+\begin{itemize}
+\tightlist
+\item
+  Use existence of a division algorithm
+\item
+  Prove Euclid's lemma: every irreducible is prime
+\item
+  Use factorization into irreducibles and proceed by induction (writing
+  out two factorizations and cancelling things out in a combinatorial
+  way)
+\end{itemize}
+
+So we'd like
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  To know that irreducibles are prime, and
+\item
+  Everything to factor into irreducibles.
+\end{enumerate}
+
+\begin{definition}[Atomic]
+
+For \(M\) a cancellative monoid, \(M\) is \textbf{atomic} if every
+nonunit element of \(M\) is a product of irreducibles.
+
+\end{definition}
+
+\begin{proposition}[?]
+
+Let \(M\) be a cancellative monoid, then \(M\) is a UFM if and only if
+\(M\) is atomic and every irreducible is prime in \(M\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Omitted -- no new ideas when compared to proof of unique factorization
+in \({\mathbb{Z}}\).
+
+\end{proof}
+
+Note that in \({\mathbb{Z}}\), working in \({\mathbb{Z}}_{\geq 0}\) is
+useful because the only positive unit is \(1\), and so any elements
+differing by a unit are in fact equal. Can we emulate this for
+cancellative monoids? The answer is yes, by modding out by the
+equivalence relation of being equivalent up to a unit.
+
+\begin{definition}[Reduced Monoid]
+
+Define \(M_{\operatorname{red}}\coloneqq M/\sim\) where
+\(a\sim b \iff a-b\in M^{\times}\). The operation on \(M\) descends to
+well-defined operation on \(M_{\operatorname{red}}\), and irreducibles
+and primes are the same in \(M\) and \(M_{\operatorname{red}}\).
+
+\end{definition}
+
+\begin{example}[?]
+
+This is supposed to look like \({\mathbb{Z}}_{\geq 0}\), where
+\(-7\in M \mapsto 7 \in M_{\operatorname{red}}\).
+
+\end{example}
+
+\begin{proposition}[?]
+
+\(M\) is a UFM if and only if \(M_{\operatorname{red}}\) is a UFM if and
+only if every element of \(M_{\operatorname{red}}\) factors uniquely as
+a product of irreducibles, up to order.
+
+\end{proposition}
+
+What did this buy us? We didn't have to worry about associates in the
+above statement, and the only unit is 1.
+
+\begin{question}
+
+Why isn't \({\mathbb{Z}}[ \sqrt{-5} ]\) is UFD?
+
+\end{question}
+
+\begin{answer}
+
+It doesn't have enough elements to make unique factorization work!
+
+\end{answer}
+
+\begin{example}[?]
+
+In \({\mathbb{Z}}^+\), write \(210 = 21\cdot 10 = 14 \cdot 15\). These
+two factorizations differ but admit a common refinement to
+\((7\cdot 3)(2\cdot 5) = (7\cdot 2)(3\cdot 5)\), where it becomes clear
+that these factorizations are equal up to ordering. This is
+\textbf{Euler's Four Number Theorem}, which turns out to be equivalent
+to unique factorization.
+
+\end{example}
+
+\begin{theorem}[?]
+
+Let \(M\) be a cancellative atomic reduced monoid. Then \(M\) is a UFM
+if and only if whenever \(\alpha, \beta, \gamma, \delta \in M\) such
+that \(\alpha \beta = \gamma \delta\), there are
+\(\rho, \sigma, \tau, \nu\) with
+\begin{align*}
+\alpha &= \rho \sigma \\
+\beta &= \tau \nu \\
+\gamma &= \rho \tau \\
+\delta &= \sigma \nu
+.\end{align*}
+
+Note that plugging these in on the LHS and RHS respectively yield the
+same factors, just reordered.
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Omitted, exercise in chasing definitions. The interesting part is that
+you can go backward!
+
+\end{proof}
+
+Let
+\(M_{\operatorname{red}} \coloneqq\qty{{\mathbb{Z}}[ \sqrt{5} ] \setminus\left\{{0}\right\}}_{\operatorname{red}}\),
+motivated by the fact that \({\mathbb{Z}}[ \sqrt{-5} ]\) is not a UFD if
+\({\mathbb{Z}}[ \sqrt{-5} ] \setminus\left\{{0}\right\}\) is not a UFM,
+or equivalently its reduction is not a UFM. Then \(M\) is a not a UFM.
+Noting that \(M\) is reduced under an equivalence relation, write
+\(\left\langle{ \alpha}\right\rangle\) for the class of \(\alpha\) in
+\(M\) for any \(\alpha\in {\mathbb{Z}}[ \sqrt{-5} ]\).
+
+Our original counterexample for unique factorization now reads
+\begin{align*}
+\left\langle{ 1 + \sqrt{-5} }\right\rangle \left\langle{ 1 - \sqrt{5} }\right\rangle = \left\langle{2}\right\rangle \left\langle{3}\right\rangle
+.\end{align*}
+This is still a counterexample since these pairs admit no common
+refinement.
+
+Why are there ``not enough elements'' in \({\mathbb{Z}}[ \sqrt{-5} ]\)?
+Recall that for integral domains (as rings), two elements differ by a
+unit precisely when they generate the same ideal. So we can think of
+elements of \(M_{\operatorname{red}}\) as nonzero principal ideals of
+\(M\), which we'll write as
+\(\operatorname{Prin}( {\mathbb{Z}}[ \sqrt{-5} ])\). To make this set of
+ideals into a monoid, one define
+\(\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle= \left\langle{ \alpha \beta }\right\rangle\),
+where it's easy to check that this is well-defined. So the failure of
+unique factorization is a failure of factorization in this set of
+ideals. We can embed this in a larger collection of ideals by just
+deleting the word ``principal'', which will restore unique
+factorization.
+
+\begin{definition}[Multiplication of Ideals]
+
+Let \(R\) be a commutative ring (always with 1). If
+\(I, J {~\trianglelefteq~}R\) are ideals, we define
+\begin{align*}
+IJ \coloneqq\left\langle{ \left\{{ \alpha_i \beta_i {~\mathrel{\Big|}~}\alpha_i \in I, \beta_i \in J }\right\}}\right\rangle = \left\{{ \sum \alpha_i \beta_i {~\mathrel{\Big|}~}\alpha_i \in I, \beta_i \in J}\right\}
+.\end{align*}
+
+If \(R\) is a domain, define the monoid \(\operatorname{Id}(R)\) the
+collection of nonzero ideals of \(R\) with the above multiplication.
+
+\end{definition}
+
+\begin{remark}
+
+Note that the naive definition
+\(IJ \coloneqq\left\{{ij{~\mathrel{\Big|}~}i\in I, j\in J}\right\}\) is
+not necessarily an ideal, since it may not be closed under addition.
+Taking the smallest ideal containing all products fixes this.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Let \(R\) be a commutative ring. Then
+
+\begin{itemize}
+\tightlist
+\item
+  \(\cdot\) for ideals is commutative
+\item
+  \(\cdot\) for ideals is associative
+\item
+  The identity is \(\left\langle{ 1 }\right\rangle= R\).
+\item
+  Multiplication distributes over addition of ideals,
+  i.e.~\(I(J+K) = IJ + IK\).
+\item
+  \(IJ \subseteq I \cap J\).
+\item
+  If \(I = \left\langle{ \alpha_1, \cdots, \alpha_j }\right\rangle\) and
+  \(J = \left\langle{ \beta_1, \cdots, \beta_k }\right\rangle\) then
+  \(IJ = \left\langle{ \alpha_1 \beta_1, \cdots, \alpha_j \beta_k }\right\rangle\)
+  is generated by all of the \(jk\) pairwise products.
+\item
+  If \(R\) is a domain and \(I, J\) are nonzero then \(IJ\) is nonzero.
+\end{itemize}
+
+As a consequence, \(\operatorname{Id}(R)\) is a monoid when \(R\) is a
+domain.
+
+\end{proposition}
+
+So instead of working in
+\(\operatorname{Prin}( {\mathbb{Z}}[\sqrt{-5} ])\), we'll work in
+\(\operatorname{Id}({\mathbb{Z}}[\sqrt{-5} ])\).
+
+\begin{claim}
+
+We can refine our bad factorizations.
+
+\end{claim}
+
+Define
+
+\begin{itemize}
+\tightlist
+\item
+  \(I\coloneqq\left\langle{ 1 + \sqrt{-5} , 2 }\right\rangle\)
+\item
+  \(I'\coloneqq\left\langle{ 1 - \sqrt{-5} , 2 }\right\rangle\)
+\item
+  \(J\coloneqq\left\langle{ 1 + \sqrt{-5} , 3 }\right\rangle\)
+\item
+  \(J'\coloneqq\left\langle{ 1 - \sqrt{-5} , 3 }\right\rangle\)
+\end{itemize}
+
+Then
+
+\begin{itemize}
+\tightlist
+\item
+  \(IJ = \left\langle{ 1 + \sqrt{-5} }\right\rangle\)\\
+\item
+  \(I'J' = \left\langle{ 1 - \sqrt{-5} }\right\rangle\)\\
+\item
+  \(JJ' = \left\langle{ 3 }\right\rangle\)
+\item
+  \(II' = \left\langle{ 2 }\right\rangle\)
+\end{itemize}
+
+We can then write
+\begin{align*}
+\left\langle{ 1 + \sqrt{-5} }\right\rangle \left\langle{ 1 - \sqrt{-5} }\right\rangle = \left\langle{ 2 }\right\rangle \left\langle{ 3 }\right\rangle \implies (IJ)(I'J') = (II')(JJ')    
+,\end{align*}
+where the same terms are occurring in a different order.
+
+For an example of how to work these out, let's compute \(IJ\). We get
+\begin{align*}
+IJ 
+&= \left\langle{ (1 + \sqrt{-5} )^2, 3(1 + \sqrt{-5} ), 2(1 + \sqrt{-5} ), 6 }\right\rangle  \\
+&= \left\langle{ 1 + \sqrt{-5} }\right\rangle \left\langle{ 1 + \sqrt{-5} , 3, 2, 1 - \sqrt{-5} }\right\rangle \\  
+&= \left\langle{ 1 + \sqrt{-5} }\right\rangle \left\langle{ 1 }\right\rangle  \\
+&= \left\langle{ 1 + \sqrt{-5} }\right\rangle
+,\end{align*}
+using the fact that \(3-2=1\) is in the ideal on the second line.
+
+We'll see later that this process allows you to recover unique
+factorization in \({\mathbb{Z}}_K\) for any number field \(K\).
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
