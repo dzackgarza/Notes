@@ -1496,7 +1496,8 @@ Consider $S^1$ and the constant sheaf $\ul{\ZZ}$:
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-27_14-40.pdf_tex} };
 \end{tikzpicture}
 
-Here we have \[
+ere we have 
+\[
 C^0(S^1, \ul{\ZZ}) = \ul{\ZZ}(U_1) \oplus \ul{\ZZ}(U_2) = \ul{\ZZ} \oplus \ul{\ZZ}
 ,\]
 and 

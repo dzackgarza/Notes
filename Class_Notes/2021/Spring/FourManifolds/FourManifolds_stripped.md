@@ -891,7 +891,7 @@ Consider \( S^1 \) and the constant sheaf \( \underline{{\mathbb{Z}}} \):
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-27_14-40.pdf_tex} };
 \end{tikzpicture}
 ```
-Here we have
+ere we have
 \[
 C^0(S^1, \underline{{\mathbb{Z}}}) = \underline{{\mathbb{Z}}}(U_1) \oplus \underline{{\mathbb{Z}}}(U_2) = \underline{{\mathbb{Z}}} \oplus \underline{{\mathbb{Z}}}
 ,\]
