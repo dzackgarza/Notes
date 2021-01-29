@@ -535,7 +535,7 @@ This is not a vector bundle since \( {\mathbb{R}}_p(U) \) is not an infinite dim
 :::
 
 ::: {.example title="of morphisms"}
-Let \( X = {\mathbb{R}}\in {\operatorname{Mfd}}_{\operatorname{Sm}_k} \) viewed as a smooth manifold, then multiplication by \( x \) induces a morphism of structure sheaves:
+Let \( X = {\mathbb{R}}\in {\operatorname{Mfd}}_{\operatorname{Sm}} \) viewed as a smooth manifold, then multiplication by \( x \) induces a morphism of structure sheaves:
 \[
 (x \cdot): {\mathcal{O}}&\to {\mathcal{O}}\\
 s & \mapsto x\cdot s
@@ -673,15 +673,22 @@ Note that \( T^\vee X_{\mathbb{R}}\otimes _{\mathbb{C}}= A^{1, 0} \oplus A^{0, 1
 
 ::: {.definition title="Principal Bundles"}
 Let \( G \) be a (possibly disconnected) Lie group. Then a **principal \( G{\hbox{-}} \)bundle** \( \pi:P\to X \) is a space admitting local trivializations \( h_u: \pi ^{-1} (U) \to G \times U \) such that the transition functions are given by left multiplication by a continuous function \( t_{UV}: U \cap V \to G \).
-:::
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_13-55.pdf_tex} };
 \end{tikzpicture}
 ```
-Consider \( TX \) for \( X\in {\operatorname{Mfd}}_{\operatorname{Sm}_k} \), and let \( g \) be a metric on the tangent bundle given by \( g_p: T_pX^{\otimes 2} \to {\mathbb{R}} \), a symmetric bilinear form with \( g_p(u, v) \geq 0 \) with equality if and only if \( v=0 \).
+:::
+
+::: {.remark}
+Setup: we'll consider \( TX \) for \( X\in {\operatorname{Mfd}}_\setminus \), and let \( g \) be a metric on the tangent bundle given by
+\[
+g_p: T_pX^{\otimes 2} \to {\mathbb{R}}
+,\]
+a symmetric bilinear form with \( g_p(u, v) \geq 0 \) with equality if and only if \( v=0 \).
+:::
 
 ::: {.definition title="The Frame Bundle"}
 Define \( {\operatorname{Frame}}_p(X) \coloneqq\left\{{\text{bases of } T_p X}\right\} \), and \( {\operatorname{Frame}}X \coloneqq\bigcup_{p\in X} {\operatorname{Frame}}_p X \).
@@ -709,7 +716,11 @@ The fibers \( P_x \to \left\{{x}\right\} \) of a principal \( G{\hbox{-}} \)bund
 :::
 
 ::: {.definition title="?"}
-Let \( \mathcal{E}\to X \) be a complex vector bundle. Then a **hermitian metric** is a hermitian form on every fiber, i.e. \( h_p: \mathcal{E}_p \times\overline{\mathcal{E}_p } \to {\mathbb{C}} \) where \( h_p(v, \mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu ) \geq 0 \) with equality if and only if \( v=0 \). Here we define \( \overline{\mathcal{E}_p} \) as the fiber of the complex vector bundle \( \overline{\mathcal{E}} \) whose transition functions are given by the complex conjugates of those from \( \mathcal{E} \).
+Let \( \mathcal{E}\to X \) be a complex vector bundle. Then a **hermitian metric** is a hermitian form on every fiber, i.e. 
+\[
+h_p: \mathcal{E}_p \times\overline{\mathcal{E}_p } \to {\mathbb{C}}
+.\]
+where \( h_p(v, \mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu ) \geq 0 \) with equality if and only if \( v=0 \). Here we define \( \overline{\mathcal{E}_p} \) as the fiber of the complex vector bundle \( \overline{\mathcal{E}} \) whose transition functions are given by the complex conjugates of those from \( \mathcal{E} \).
 :::
 
 ::: {.remark}
@@ -729,22 +740,30 @@ This is a principal \( G{\hbox{-}} \)bundle for \( G = U_r({\mathbb{C}}) \), the
 :::
 
 ::: {.example title="of more principal bundles"}
-For \( G={\mathbb{Z}}/2{\mathbb{Z}} \) and \( X= S^1 \), the Mobius band is a principal \( G{\hbox{-}} \)bundle:
+For \( G={\mathbb{Z}}/2{\mathbb{Z}} \) and \( X= S^1 \), the Möbius band is a principal \( G{\hbox{-}} \)bundle:
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_14-25.pdf_tex} };
 \end{tikzpicture}
 ```
 :::
 
 ::: {.example title="more principal bundles"}
-For \( G={\mathbb{Z}}/2{\mathbb{Z}} \), for any (possibly non-oriented) manifold \( X \) there is an *orientation principal bundle* \( P \) which is locally a set of orientations on \( U \), i.e. \( P\coloneqq\left\{{(x, O) {~\mathrel{\Big|}~}x\in X,\, O \text{ is an orientation of }T_p X}\right\} \). Note that \( P \) is an oriented manifold, \( P\to X \) is a local isomorphism, and has a canonical orientation.? This can also be written as \( P = {\operatorname{Frame}}X / \operatorname{GL}_n^+({\mathbb{R}}) \), since an orientation can be specified by a choice of \( n \) linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
+For \( G={\mathbb{Z}}/2{\mathbb{Z}} \), for any (possibly non-oriented) manifold \( X \) there is an **orientation principal bundle** \( P \) which is locally a set of orientations on \( U \), i.e. 
+\[
+P\coloneqq\left\{{(x, O) {~\mathrel{\Big|}~}x\in X,\, O \text{ is an orientation of }T_p X}\right\}
+.\]
+Note that \( P \) is an oriented manifold, \( P\to X \) is a local isomorphism, and has a canonical orientation. (?) This can also be written as \( P = {\operatorname{Frame}}X / \operatorname{GL}_n^+({\mathbb{R}}) \), since an orientation can be specified by a choice of \( n \) linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
 :::
 
 ::: {.definition title="Associated Bundles"}
-Let \( P\to X \) be a principal \( G{\hbox{-}} \)bundle and let \( G\to \operatorname{GL}(V) \) be a continuous representation. The **associated bundle** is defined as \( P\times_G V = \left\{{(p, v)}\right\} / (p, v) \sim (pg, g ^{-1} v) \) since there is a right action on the first component and a left action on the second.
+Let \( P\to X \) be a principal \( G{\hbox{-}} \)bundle and let \( G\to \operatorname{GL}(V) \) be a continuous representation. The **associated bundle** is defined as
+\[
+P\times_G V = \left\{{(p, v){~\mathrel{\Big|}~}p\in P,\, v\in V}\right\} / \sim && \text{where } (p, v) \sim (pg, g ^{-1} v)
+,\]
+which is well-defined since there is a right action on the first component and a left action on the second.
 :::
 
 ::: {.example title="?"}

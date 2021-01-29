@@ -141,7 +141,7 @@
 \newcommand{\ext}{\operatorname{Ext} }
 \newcommand{\Ext}{\operatorname{Ext}}
 \newcommand{\sets}[0]{{\operatorname{Set}}}
-\newcommand{\Sm}[0]{{\operatorname{Sm}_k}}
+\newcommand{\Sm}[0]{{\operatorname{Sm}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
 \newcommand{\annd}[0]{{\operatorname{ and }}}
 \newcommand{\bung}[0]{\operatorname{Bun}_G}
@@ -1235,15 +1235,22 @@ Moreover \( \dim \Omega^p(X) < \infty \), whereas \( \Omega_{\sm}^1 \) is infini
 Let $G$ be a (possibly disconnected) Lie group.
 Then a **principal $G\dash$bundle** $\pi:P\to X$ is a space admitting local trivializations $h_u: \pi ^{-1} (U) \to G \cross U$ such that the transition functions are given by left multiplication by a continuous function $t_{UV}: U \intersect V \to G$.
 
-:::
-
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_13-55.pdf_tex} };
 \end{tikzpicture}
 
-Consider $TX$ for $X\in \Mfd_\Sm$, and let $g$ be a metric on the tangent bundle given by $g_p: T_pX^{\tensor 2} \to \RR$, a symmetric bilinear form with $g_p(u, v) \geq 0$ with equality if and only if $v=0$.
+:::
 
+:::{.remark}
+Setup: 
+we'll consider $TX$ for $X\in \Mfd_\sm$, and let $g$ be a metric on the tangent bundle given by 
+\[
+g_p: T_pX^{\tensor 2} \to \RR
+,\] 
+a symmetric bilinear form with $g_p(u, v) \geq 0$ with equality if and only if $v=0$.
+
+:::
 
 :::{.definition title="The Frame Bundle"}
 Define $\Frame_p(X) \da \ts{\text{bases of } T_p X}$, and $\Frame X \da \Union_{p\in X} \Frame_p X$.
@@ -1275,7 +1282,11 @@ The fibers $P_x \to \ts {x}$ of a principal $G\dash$bundle are naturally **torso
 
 :::{.definition title="?"}
 Let \( \mathcal{E}\to X  \) be a complex vector bundle.
-Then a **hermitian metric** is a hermitian form on every fiber, i.e. $h_p: \mathcal{E}_p \cross \overline{\mathcal{E}_p } \to \CC$ where $h_p(v, \bar{v} ) \geq 0$ with equality if and only if $v=0$.
+Then a **hermitian metric** is a hermitian form on every fiber, i.e. 
+\[
+h_p: \mathcal{E}_p \cross \overline{\mathcal{E}_p } \to \CC
+.\]
+where $h_p(v, \bar{v} ) \geq 0$ with equality if and only if $v=0$.
 Here we define \( \overline{\mathcal{E}_p}  \) as the fiber of the complex vector bundle \( \overline{\mathcal{E}}  \) whose transition functions are given by the complex conjugates of those from \( \mathcal{E}  \).
 :::
 
@@ -1298,24 +1309,31 @@ This is a principal $G\dash$bundle for $G = U_r(\CC)$, the invertible matrices $
 :::
 
 :::{.example title="of more principal bundles"}
-For $G=\ZZ/2\ZZ$ and $X= S^1$, the Mobius band is a principal $G\dash$bundle:
+For $G=\ZZ/2\ZZ$ and $X= S^1$, the Möbius band is a principal $G\dash$bundle:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_14-25.pdf_tex} };
 \end{tikzpicture}
 
 :::
 
 :::{.example title="more principal bundles"}
-For $G=\ZZ/2\ZZ$, for any (possibly non-oriented) manifold $X$ there is an *orientation principal bundle* $P$ which is locally a set of orientations on $U$, i.e. $P\da \ts{(x, O) \st x\in X,\, O \text{ is an orientation of }T_p X}$.
-Note that $P$ is an oriented manifold, $P\to X$ is a local isomorphism, and has a canonical orientation.?
+For $G=\ZZ/2\ZZ$, for any (possibly non-oriented) manifold $X$ there is an **orientation principal bundle** $P$ which is locally a set of orientations on $U$, i.e. 
+\[
+P\da \ts{(x, O) \st x\in X,\, O \text{ is an orientation of }T_p X}
+.\]
+Note that $P$ is an oriented manifold, $P\to X$ is a local isomorphism, and has a canonical orientation. (?)
 This can also be written as $P = \Frame X / \GL_n^+(\RR)$, since an orientation can be specified by a choice of $n$ linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
 :::
 
 :::{.definition title="Associated Bundles"}
 Let $P\to X$ be a principal $G\dash$bundle and let $G\to \GL(V)$ be a continuous representation.
-The **associated bundle** is defined as $P\cross_G V = \ts{(p, v)} / (p, v) \sim (pg, g ^{-1} v)$ since there is a right action on the first component and a left action on the second.
+The **associated bundle** is defined as 
+\[
+P\cross_G V = \ts{(p, v)\st p\in P,\, v\in V} / \sim && \text{where } (p, v) \sim (pg, g ^{-1} v)
+,\]
+which is well-defined since there is a right action on the first component and a left action on the second.
 :::
 
 :::{.example title="?"}

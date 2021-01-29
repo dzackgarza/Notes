@@ -1011,7 +1011,7 @@ which the sheaf makes trivial assignments.
 
 \begin{example}[of morphisms]
 
-Let \(X = {\mathbb{R}}\in {\operatorname{Mfd}}_{\operatorname{Sm}_k}\)
+Let \(X = {\mathbb{R}}\in {\operatorname{Mfd}}_{\operatorname{Sm}}\)
 viewed as a smooth manifold, then multiplication by \(x\) induces a
 morphism of structure sheaves:
 \begin{align*}
@@ -1299,22 +1299,30 @@ admitting local trivializations \(h_u: \pi ^{-1} (U) \to G \times U\)
 such that the transition functions are given by left multiplication by a
 continuous function \(t_{UV}: U \cap V \to G\).
 
-\end{definition}
-
 \begin{figure}
 \centering
 \resizebox{\columnwidth}{!}{%
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_13-55.pdf_tex} };
 \end{tikzpicture}
 }
 \end{figure}
 
-Consider \(TX\) for \(X\in {\operatorname{Mfd}}_{\operatorname{Sm}_k}\),
-and let \(g\) be a metric on the tangent bundle given by
-\(g_p: T_pX^{\otimes 2} \to {\mathbb{R}}\), a symmetric bilinear form
-with \(g_p(u, v) \geq 0\) with equality if and only if \(v=0\).
+\end{definition}
+
+\begin{remark}
+
+Setup: we'll consider \(TX\) for
+\(X\in {\operatorname{Mfd}}_\setminus\), and let \(g\) be a metric on
+the tangent bundle given by
+\begin{align*}
+g_p: T_pX^{\otimes 2} \to {\mathbb{R}}
+,\end{align*}
+a symmetric bilinear form with \(g_p(u, v) \geq 0\) with equality if and
+only if \(v=0\).
+
+\end{remark}
 
 \begin{definition}[The Frame Bundle]
 
@@ -1373,8 +1381,10 @@ set with a free transitive \(G{\hbox{-}}\)action.
 \begin{definition}[?]
 
 Let \(\mathcal{E}\to X\) be a complex vector bundle. Then a
-\textbf{hermitian metric} is a hermitian form on every fiber,
-i.e.~\(h_p: \mathcal{E}_p \times\overline{\mathcal{E}_p } \to {\mathbb{C}}\)
+\textbf{hermitian metric} is a hermitian form on every fiber, i.e.~
+\begin{align*}
+h_p: \mathcal{E}_p \times\overline{\mathcal{E}_p } \to {\mathbb{C}}
+.\end{align*}
 where
 \(h_p(v, \mkern 1.5mu\overline{\mkern-1.5muv\mkern-1.5mu}\mkern 1.5mu ) \geq 0\)
 with equality if and only if \(v=0\). Here we define
@@ -1418,14 +1428,14 @@ the invertible matrices \(A_{/{\mathbb{C}}}\) satisfy
 
 \begin{example}[of more principal bundles]
 
-For \(G={\mathbb{Z}}/2{\mathbb{Z}}\) and \(X= S^1\), the Mobius band is
+For \(G={\mathbb{Z}}/2{\mathbb{Z}}\) and \(X= S^1\), the Möbius band is
 a principal \(G{\hbox{-}}\)bundle:
 
 \begin{figure}
 \centering
 \resizebox{\columnwidth}{!}{%
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-25_14-25.pdf_tex} };
 \end{tikzpicture}
 }
@@ -1436,12 +1446,14 @@ a principal \(G{\hbox{-}}\)bundle:
 \begin{example}[more principal bundles]
 
 For \(G={\mathbb{Z}}/2{\mathbb{Z}}\), for any (possibly non-oriented)
-manifold \(X\) there is an \emph{orientation principal bundle} \(P\)
-which is locally a set of orientations on \(U\),
-i.e.~\(P\coloneqq\left\{{(x, O) {~\mathrel{\Big|}~}x\in X,\, O \text{ is an orientation of }T_p X}\right\}\).
+manifold \(X\) there is an \textbf{orientation principal bundle} \(P\)
+which is locally a set of orientations on \(U\), i.e.~
+\begin{align*}
+P\coloneqq\left\{{(x, O) {~\mathrel{\Big|}~}x\in X,\, O \text{ is an orientation of }T_p X}\right\}
+.\end{align*}
 Note that \(P\) is an oriented manifold, \(P\to X\) is a local
-isomorphism, and has a canonical orientation.? This can also be written
-as
+isomorphism, and has a canonical orientation. (?) This can also be
+written as
 \(P = {\operatorname{Frame}}X / \operatorname{GL}_n^+({\mathbb{R}})\),
 since an orientation can be specified by a choice of \(n\) linearly
 independent vectors where we identify any two sets that differ by a
@@ -1454,9 +1466,11 @@ matrix of positive determinant.
 Let \(P\to X\) be a principal \(G{\hbox{-}}\)bundle and let
 \(G\to \operatorname{GL}(V)\) be a continuous representation. The
 \textbf{associated bundle} is defined as
-\(P\times_G V = \left\{{(p, v)}\right\} / (p, v) \sim (pg, g ^{-1} v)\)
-since there is a right action on the first component and a left action
-on the second.
+\begin{align*}
+P\times_G V = \left\{{(p, v){~\mathrel{\Big|}~}p\in P,\, v\in V}\right\} / \sim && \text{where } (p, v) \sim (pg, g ^{-1} v)
+,\end{align*}
+which is well-defined since there is a right action on the first
+component and a left action on the second.
 
 \end{definition}
 
