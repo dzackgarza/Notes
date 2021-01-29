@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-26 }
+{\tiny \textit{Last updated:} 2021-01-28 }
 \end{flushleft}
 
 
@@ -1493,6 +1493,224 @@ can the transition functions be lifted? This shows up for spin
 structures, and we can get a \({\mathbb{C}}^2\) bundle out of this.
 
 \end{remark}
+
+\hypertarget{wednesday-january-27}{%
+\section{Wednesday, January 27}\label{wednesday-january-27}}
+
+\hypertarget{bundles-and-connections}{%
+\subsection{Bundles and Connections}\label{bundles-and-connections}}
+
+\begin{definition}[Connections]
+
+Let \(\mathcal{E}\to X\) be a vector bundle, then a \textbf{connection}
+on \(\mathcal{E}\) is a map of sheaves of abelian groups
+\begin{align*}
+\nabla: \mathcal{E}\to \mathcal{E}\otimes\Omega^1_X  
+\end{align*}
+satisfying the \emph{Leibniz rule}:
+\begin{align*} 
+\nabla (fs) = f \nabla s + s\otimes ds 
+\end{align*}
+for all opens \(U\) with \(f\in {\mathcal{O}}(U)\) and
+\(s\in \mathcal{E}(U)\). Note that this works in the category of complex
+manifolds, in which case \(\nabla\) is referred to as a
+\textbf{holomorphic connection}.
+
+\end{definition}
+
+\begin{remark}
+
+A connection \(\nabla\) induces a map
+\begin{align*}
+\tilde{\nabla}: \mathcal{E}\otimes\Omega^p &\to \mathcal{E}\otimes\Omega^{p+1} \\
+s \otimes \omega &\mapsto \nabla s \wedge w + s\otimes d \omega
+.\end{align*}
+where \(\wedge: \Omega^p \otimes\Omega^1 \to \Omega^{p+1}\). The
+standard example is
+\begin{align*}
+d: {\mathcal{O}}&\to \Omega^1 \\
+f &\mapsto df
+.\end{align*}
+where the induced map is the usual de Rham differential.
+
+\end{remark}
+
+\begin{exercise}[?]
+
+Prove that the \emph{curvature} of \(\nabla\), i.e.~the map
+\begin{align*}
+F_{\nabla} \coloneqq\nabla \circ \nabla: \mathcal{E}\to \mathcal{E}\otimes\Omega^2  
+\end{align*}
+is \({\mathcal{O}}{\hbox{-}}\)linear, so
+\(F_{\nabla}(fs) = f\nabla \circ \nabla(s)\). Use the fact that
+\(\nabla s \in \mathcal{E}\otimes\Omega^1\) and \(\omega \in \Omega^p\)
+and so
+\(\nabla s \otimes \omega \in \mathcal{E} \Omega^1 \otimes \Omega^p\)
+and thus reassociating the tensor product yields
+\(\nabla s \wedge \omega \in \mathcal{E}\otimes\Omega^{p+1}\).
+
+\end{exercise}
+
+\begin{remark}
+
+Why is this called a connection?
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{25pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-27_14-05.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+This gives us a way to transport \(v\in \mathcal{E}_p\) over a path
+\(\gamma\) in the base, and \(\nabla\) provides a differential equation
+(a flow equation) to solve that lifts this path. Solving this is
+referred to as \textbf{parallel transport}. This works by pairing
+\(\gamma'(t) \in T_{ \gamma(t) } X\) with \(\Omega^1\), yielding
+\(\nabla s = ( \gamma'(t)) = s( \gamma(t))\) which are sections of
+\(\gamma\).
+
+Note that taking a different path yields an endpoint in the same fiber
+but potentially at a different point, and \(F_\nabla = 0\) if and only
+if the parallel transport from \(p\) to \(q\) depends only on the
+homotopy class of \(\gamma\).
+
+\begin{quote}
+Note: this works for any bundle, so can become confusing in Riemannian
+geometry when all of the bundles taken are tangent bundles!
+\end{quote}
+
+\end{remark}
+
+\begin{example}[A classic example]
+
+The Levi-Cevita connection \(\nabla^{LC}\) on \(TX\), which depends on a
+metric \(g\). Taking \(X=S^2\) and \(g\) is the round metric, there is
+nonzero curvature:
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-27_14-15.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+In general, every such transport will be rotation by some vector, and
+the angle is given by the area of the enclosed region.
+
+\end{example}
+
+\begin{definition}[Flat Connection and Flat Sections]
+
+A connection is \textbf{flat} if \(F_\nabla = 0\). A section
+\(s \in \mathcal{E}(U)\) is \textbf{flat} if it is given by
+\begin{align*}
+L(U) \coloneqq\left\{{ s\in \mathcal{E}(U) {~\mathrel{\Big|}~}\nabla s = 0}\right\}
+.\end{align*}
+
+\end{definition}
+
+\begin{exercise}[?]
+
+Show that if \(\nabla\) is flat then \(L\) is a \emph{local system}: a
+sheaf that assigns to any sufficiently small open set a vector space of
+fixed dimension. An example is the constant sheaf
+\(\underline{{\mathbb{C}}^d}\). Furthermore
+\({\operatorname{rank}}(L) = {\operatorname{rank}}(\mathcal{E})\).
+
+\end{exercise}
+
+\begin{remark}
+
+Given a local system, we can construct a vector bundle whose transition
+functions are the same as those of the local system, e.g.~for vector
+bundles this is a fixed matrix, and in general these will be constant
+transition functions. Equivalently, we can take
+\(L\otimes_{\mathbb{R}}{\mathcal{O}}\), and \(L\otimes 1\) form flat
+sections of a connection.
+
+\end{remark}
+
+\hypertarget{sheaf-cohomology}{%
+\subsection{Sheaf Cohomology}\label{sheaf-cohomology}}
+
+\begin{definition}[?]
+
+Let \(\mathcal{F}\) be a sheaf of abelian groups on a topological space
+\(X\), and let
+\(\mathfrak{U} \coloneqq\left\{{U_i}\right\} \rightrightarrows X\) be an
+open cover of \(X\). Let
+\(U_{i_1, \cdots, i_p} \coloneqq U_{i_1} \cap U_{i_2} \cap\cdots \cap U_{i_p}\).
+Then the \textbf{Čech Complex} is defined as
+\begin{align*}
+C_{\mathfrak{U}}^p(X, \mathcal{F}) \coloneqq\prod_{i_1 < \cdots < i_p} \mathcal{F}(U_{i_1, \cdots, i_p})   
+\end{align*}
+with a differential
+\begin{align*}
+{{\partial}}^p: C_{\mathfrak{U}}^p(X, \mathcal{F}) &\to C_{\mathfrak{U}}^{p+1}(X \mathcal{F}) \\
+\sigma &\mapsto ({{\partial}}\sigma)_{i_0, \cdots, i_p} \coloneqq\prod_j (-1)^j { \left.{{\sigma_{i_0, \cdots, \widehat{i_j}, \cdots, i_p}}} \right|_{{U_{i_0, \cdots, i_p}}} }
+\end{align*}
+where we've defined this just on one given term in the product, i.e.~a
+\(p{\hbox{-}}\)fold intersection.
+
+\end{definition}
+
+\begin{exercise}[?]
+
+Check that \({{\partial}}^2 = 0\).
+
+\end{exercise}
+
+\begin{remark}
+
+The Čech cohomology \(H^p_{\mathfrak{U}}(X, \mathcal{F})\) with respect
+to the cover \(\mathfrak{U}\) is defined as
+\(\ker {{\partial}}^p/\operatorname{im}{{\partial}}^{p-1}\). It is a
+difficult theorem, but we write \(H^p(X, \mathcal{F})\) for the Čech
+cohomology for any sufficiently refined open cover when \(X\) is assumed
+paracompact.
+
+\end{remark}
+
+\begin{example}[?]
+
+Consider \(S^1\) and the constant sheaf \(\underline{{\mathbb{Z}}}\):
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{42pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-27_14-40.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Here we have
+\begin{align*}
+C^0(S^1, \underline{{\mathbb{Z}}}) = \underline{{\mathbb{Z}}}(U_1) \oplus \underline{{\mathbb{Z}}}(U_2) = \underline{{\mathbb{Z}}} \oplus \underline{{\mathbb{Z}}}
+,\end{align*}
+and
+\begin{align*}
+C^1(S^1, {\mathbb{Z}}) = \bigoplus_{\substack{ \text{double} \\ \text{intersections}} } \underline{{\mathbb{Z}}}(U_{ij})  \underline{{\mathbb{Z}}}(U_{12}) = \underline{{\mathbb{Z}}}(U_1 \cap U_{2}) = \underline{{\mathbb{Z}}} \oplus \underline{{\mathbb{Z}}}
+.\end{align*}
+We then get
+\begin{align*}
+C^0(S^1, \underline{{\mathbb{Z}}}) &\xrightarrow{{{\partial}}} C^1(S^1, \underline{{\mathbb{Z}}}) \\
+{\mathbb{Z}}\oplus {\mathbb{Z}}&\to {\mathbb{Z}}\oplus {\mathbb{Z}}\\
+(a, b) &\mapsto (a-b, a-b)
+,\end{align*}
+
+Which yields
+\(H^*(S^1, \underline{{\mathbb{Z}}}) = [{\mathbb{Z}}, {\mathbb{Z}}, 0, \cdots]\).
+
+\end{example}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
