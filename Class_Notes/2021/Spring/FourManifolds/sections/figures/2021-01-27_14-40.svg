@@ -23,9 +23,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="109.95977"
-     inkscape:cy="242.61854"
+     inkscape:zoom="2.8"
+     inkscape:cx="339.62945"
+     inkscape:cy="159.54097"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -39,8 +39,8 @@
      inkscape:snap-tangential="true"
      inkscape:window-width="1900"
      inkscape:window-height="1029"
-     inkscape:window-x="3010"
-     inkscape:window-y="41"
+     inkscape:window-x="3009"
+     inkscape:window-y="40"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="0.96377296,148.05112"
@@ -74,7 +74,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -113,14 +113,14 @@
        style="opacity:0.803101;fill:#2b5d0a;fill-opacity:0.452136;fill-rule:evenodd;stroke:#2b5d0a;stroke-width:0.883;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="path839"
        sodipodi:type="arc"
-       sodipodi:cx="84.093002"
-       sodipodi:cy="76.905006"
+       sodipodi:cx="84.435989"
+       sodipodi:cy="77.313347"
        sodipodi:rx="39.948502"
        sodipodi:ry="39.948017"
        sodipodi:start="5.0507036"
        sodipodi:end="5.0448809"
        sodipodi:arc-type="arc"
-       d="M 97.351819,39.221428 A 39.948502,39.948017 0 0 1 121.7963,90.108793 39.948502,39.948017 0 0 1 70.943953,114.62703 39.948502,39.948017 0 0 1 46.351424,63.811042 39.948502,39.948017 0 0 1 97.132173,39.144866"
+       d="M 97.694806,39.629768 A 39.948502,39.948017 0 0 1 122.13929,90.517134 39.948502,39.948017 0 0 1 71.28694,115.03537 39.948502,39.948017 0 0 1 46.694411,64.219382 39.948502,39.948017 0 0 1 97.47516,39.553206"
        sodipodi:open="true" />
     <path
        id="path841"
@@ -136,33 +136,33 @@
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
        x="151.38347"
-       y="82.739967"
+       y="76.954895"
        id="text847"><tspan
          sodipodi:role="line"
          id="tspan845"
          x="151.38347"
-         y="82.739967"
+         y="76.954895"
          style="stroke-width:0.264583">$U_2$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
        x="-1.8422695"
-       y="80.43174"
+       y="76.954895"
        id="text851"><tspan
          sodipodi:role="line"
          x="-1.8422695"
-         y="80.43174"
+         y="76.954895"
          style="stroke-width:0.264583"
          id="tspan853">$U_2$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
-       x="67.145073"
-       y="79.171364"
+       x="78.15773"
+       y="76.954895"
        id="text851-3"><tspan
          sodipodi:role="line"
-         x="67.145073"
-         y="79.171364"
+         x="78.15773"
+         y="76.954895"
          style="stroke-width:0.264583"
          id="tspan853-6">$S^1$</tspan></text>
   </g>
