@@ -722,6 +722,282 @@ using the fact that \( 3-2=1 \) is in the ideal on the second line.
 
 We'll see later that this process allows you to recover unique factorization in \( {\mathbb{Z}}_K \) for any number field \( K \).
 
+# Ch. 5: Euclidean Quadratic Fields (Thursday, January 28)
+
+::: {.remark}
+In a first algebra course, one process that if \( R \) is a Euclidean domain, then the arithmetic of \( R \) is very interesting:
+
+-   \( R \) is a PID, and as a consequence
+-   \( R \) is a UFD
+:::
+
+::: {.definition title="Euclidean Domain"}
+A domain \( R \) is **Euclidean** if and only if there is a function \( \varphi R\setminus\left\{{0}\right\}\to {\mathbb{Z}}^{\geq 0} \) such that for all \( a,b\in R \) with \( b\neq 0 \) there are \( q, r\in R \) with \( a = bq + r \) with \( r=0 \) or \( \varphi(r) < \varphi(b) \). \( \varphi \) is referred to as a **Euclidean function**.
+:::
+
+::: {.example title="Examples of Euclidean functions"}
+```{=tex}
+\envlist
+```
+-   For \( R={\mathbb{Z}} \), one can take \( \varphi({\,\cdot\,}) \coloneqq{\left\lvert {{\,\cdot\,}} \right\rvert} \).
+-   \( R = F[t] \) for \( F \) a field with \( \varphi({\,\cdot\,}) = \deg({\,\cdot\,}) \).
+:::
+
+::: {.remark}
+Given a number field \( K \), does \( {\mathbb{Z}}_K \) have nice factorization, i.e. is it a UFD? Not always, as we saw last time. If it were Euclidean, then yes!
+:::
+
+::: {.question}
+Which quadratic fields \( K \) have \( Z_K \) Euclidean?
+:::
+
+::: {.definition title="Euclidean and Norm-Euclidean Number Fields"}
+If \( K \) is a quadratic field, then
+
+-   \( K \) is **Euclidean** if and only if \( {\mathbb{Z}}_K \) is a Euclidean domain,
+
+-   \( K \) is **norm-Euclidean** if and only if \( {\mathbb{Z}}_K \) is Euclidean with respect to \( \varphi({\,\cdot\,}) \coloneqq{\left\lvert {N({\,\cdot\,})} \right\rvert} \).
+:::
+
+::: {.proposition title="Characterization of norm-Euclidean quadratic fields"}
+Let \( K \) be a quadratic field. Then \( K \) is norm-Euclidean if and only if for all \( \beta\in K \) there is a \( \gamma\in {\mathbb{Z}}_K \) such that \( {\left\lvert { N(\beta- \gamma) } \right\rvert} < 1 \). In other words, \( K \) is norm-Euclidean if and only if every element can be approximated by an element in \( {\mathbb{Z}}_K \).
+:::
+
+::: {.proof title="?"}
+\( \impliedby \): Let \( a,b \in {\mathbb{Z}}_k \) with \( b\neq 0 \). Define \( \beta\coloneqq a/b \in K \), then by assumption choose \( \gamma \) such that \( {\left\lvert {N({a\over b} - \gamma} \right\rvert}< 1 \). Multiplying both sides by \( N(b) \) and using the fact that \( N({\,\cdot\,}), {\left\lvert {{\,\cdot\,}} \right\rvert} \) are multiplicative, we have
+\[
+{\left\lvert {N(a - b \gamma)} \right\rvert} < {\left\lvert {N(b)} \right\rvert} 
+.\]
+Then \( a = bq + r \coloneqq b \gamma + (a - b \gamma) \).
+:::
+
+## Norm-Euclidean Imaginary Quadratic Fields
+
+::: {.remark}
+Suppose \( K = {\mathbb{Q}}( \sqrt{d} ) \) with \( d<0 \) squarefree, so we can write
+\[
+K = \left\{{ a + b \sqrt{d} {~\mathrel{\Big|}~}a,b, \in {\mathbb{Q}}}\right\}
+K = \left\{{ a + b i\sqrt{{\left\lvert {d} \right\rvert}} {~\mathrel{\Big|}~}a,b, \in {\mathbb{Q}}}\right\} \subseteq {\mathbb{C}}
+.\]
+Geometrically, this is a dense subset of \( {\mathbb{C}} \), so it's not easy to draw. But we can draw \( {\mathbb{Z}}_K \) -- what does it look like? We know that \( d=2,3 \pmod 4 \) then \( {\mathbb{Z}}_K = \left\{{a + b \sqrt{d} {~\mathrel{\Big|}~}a,b,\in {\mathbb{Z}}}\right\} \):
+
+```{=tex}
+\begin{tikzpicture}
+    \draw [thick, gray,-latex] (-5, 0) -- (7, 0);% Draw x axis
+    \draw [thick, gray,-latex] (0, -5) -- (0, 5);% Draw y axis
+
+    \clip (-5,-5) rectangle (10cm,10cm); % Clips the picture...
+    %\pgftransformcm{1}{0.6}{0.7}{1}{\pgfpoint{0cm}{0cm}}
+          % This is actually the transformation matrix entries that
+          % gives the slanted unit vectors. 
+    \draw[style=help lines,dashed] (-14,-14) grid[step=2cm] (6,5);
+          % Draws a grid in the new coordinates.
+          %\filldraw[fill=gray, fill opacity=0.3, draw=black] (0,0) rectangle (2,2);
+              % Puts the shaded rectangle
+    \foreach \x in {--3,-2,-1,0,1,2}{% Two indices running over each
+      \foreach \y in {-2,-1, ..., 2}{% node on the grid we have drawn 
+        \node[draw,circle,inner sep=2pt,fill] at (2*\x,2*\y) {};
+            % Places a dot at those points
+      }
+    }
+        \node[draw,red, circle,inner sep=2pt,fill] at (0, 0) {};
+
+    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (6.5,2.0) -- (6.5,0.1) node [black,midway,xshift=25pt] {\footnotesize $\sqrt{{\left\lvert {d} \right\rvert}}$};
+    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (6.5,-0.1) -- (6.5,-2) node [black,midway,xshift=25pt] {\footnotesize $\sqrt{{\left\lvert {d} \right\rvert}}$};
+
+\end{tikzpicture}
+```
+When \( d \equiv 1 \pmod 4 \), we have \( {\mathbb{Z}}_k = \left\{{ {1\over 2}(a + b \sqrt{d} ) {~\mathrel{\Big|}~}a,b,\in {\mathbb{Z}},\, a\equiv b \pmod 2}\right\} \). On the real axis, if \( b=0 \) then \( a \) is an even integer and \( \left\{{(1/2)a}\right\} \) is all integers. To get the remaining elements, we don't just shift up and down: setting \( b=1 \) yields elements that look like \( (1/2)a + \sqrt{d} \) where \( a \) is odd, so we get the following:
+
+```{=tex}
+\begin{tikzpicture}
+    \draw [thick, gray,-latex] (-5, 0) -- (7, 0);% Draw x axis
+    \draw [thick, gray,-latex] (0, -5) -- (0, 5);% Draw y axis
+
+    \clip (-5,-5) rectangle (10cm,10cm); % Clips the picture...
+    %\pgftransformcm{1}{0.6}{0.7}{1}{\pgfpoint{0cm}{0cm}}
+          % This is actually the transformation matrix entries that
+          % gives the slanted unit vectors. 
+    \draw[style=help lines,dashed] (-14,-14) grid[step=2cm] (6,5);
+          % Draws a grid in the new coordinates.
+          %\filldraw[fill=gray, fill opacity=0.3, draw=black] (0,0) rectangle (2,2);
+              % Puts the shaded rectangle
+    \foreach \x in {--3,-2,-1,0,1,2}{% Two indices running over each
+      \foreach \y in {-2,-1, ..., 2}{% node on the grid we have drawn 
+        \node[draw,circle,inner sep=2pt,fill] at (2*\x,2*\y) {};
+            % Places a dot at those points
+      }
+    }
+\foreach \x in {--2,-3,-1,0,1,2,-2}{% Two indices running over each
+      \foreach \y in {-2,-1, ..., 2}{% node on the grid we have drawn 
+        \node[draw, circle,inner sep=2pt,fill] at (2*\x+1,2*\y+1) {};
+            % Places a dot at those points
+      }
+    }
+        \node[draw,red, circle,inner sep=2pt,fill] at (0, 0) {};
+
+    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (6.5,1.0) -- (6.5,0.1) node [black,midway,xshift=25pt] {\footnotesize ${1\over 2} \sqrt{{\left\lvert {d} \right\rvert}}$};
+    \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (6.5,-0.1) -- (6.5,-1) node [black,midway,xshift=25pt] {\footnotesize ${1\over 2} \sqrt{{\left\lvert {d} \right\rvert}}$};
+\draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (6.5,1.95) -- (6.5,1.05) node [black,midway,xshift=25pt] {\footnotesize ${1\over 2} \sqrt{{\left\lvert {d} \right\rvert}}$};
+
+\end{tikzpicture}
+```
+Now we can think of the criterion for an imaginary quadratic field to be norm-Euclidean: what does it mean to be within norm 1 of an element of \( {\mathbb{Z}}_K \)? If \( z\in K \), we can write \( N(z) = z \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu = {\left\lvert {z} \right\rvert}^2 \), and thus reformulate our criterion: \( K \) is norm-Euclidean if and only if for all \( \beta\in K \) there exists a \( \gamma\in {\mathbb{Z}}_K \) such that \( {\left\lvert {\beta- \gamma} \right\rvert}<1 \). Note this this is the familiar geometric distance in \( {\mathbb{C}} \).
+:::
+
+::: {.example title="?"}
+\( {\mathbb{Q}}(i) \) is norm-Euclidean: the ring of integers is \( {\mathbb{Z}}(i) \), which is the integer lattice in \( {\mathbb{C}} \). Note one can cover \( {\mathbb{C}} \) by open circles of radius 1:
+
+```{=tex}
+\begin{tikzpicture}
+    \draw [thick, gray,-latex] (-5, 0) -- (7, 0);% Draw x axis
+    \draw [thick, gray,-latex] (0, -5) -- (0, 5);% Draw y axis
+
+    \clip (-5,-5) rectangle (10cm,10cm); % Clips the picture...
+    %\pgftransformcm{1}{0.6}{0.7}{1}{\pgfpoint{0cm}{0cm}}
+          % This is actually the transformation matrix entries that
+          % gives the slanted unit vectors. 
+    \draw[style=help lines,dashed] (-14,-14) grid[step=2cm] (6,5);
+          % Draws a grid in the new coordinates.
+          %\filldraw[fill=gray, fill opacity=0.3, draw=black] (0,0) rectangle (2,2);
+              % Puts the shaded rectangle
+    \foreach \x in {--3,-2,-1,0,1,2}{% Two indices running over each
+      \foreach \y in {-2,-1, ..., 2}{% node on the grid we have drawn 
+        \node[draw,circle,inner sep=2pt,fill] at (2*\x,2*\y) {};
+            % Places a dot at those points
+      }
+    }
+        \node[draw,red, circle,inner sep=2pt,fill] at (0, 0) {};
+
+\filldraw[dotted, fill=blue!50, draw=blue, very thick, fill opacity=0.2] (2,0) circle (2cm);
+\filldraw[dotted, fill=blue!50, draw=blue, very thick, fill opacity=0.2] (0,0) circle (2cm);
+\filldraw[dotted, fill=blue!50, draw=blue, very thick, fill opacity=0.2] (-2,0) circle (2cm);
+\node at (5, 1) {$\cdots$};
+\end{tikzpicture}
+```
+Continuing this way, every point with rational coordinates can be covered by some open disc of radius 1:
+
+```{=tex}
+\begin{tikzpicture}
+    \draw [thick, gray,-latex] (-5, 0) -- (7, 0);% Draw x axis
+    \draw [thick, gray,-latex] (0, -5) -- (0, 5);% Draw y axis
+
+    \clip (-5,-5) rectangle (10cm,10cm); % Clips the picture...
+    %\pgftransformcm{1}{0.6}{0.7}{1}{\pgfpoint{0cm}{0cm}}
+          % This is actually the transformation matrix entries that
+          % gives the slanted unit vectors. 
+    \draw[style=help lines,dashed] (-14,-14) grid[step=2cm] (6,5);
+          % Draws a grid in the new coordinates.
+          %\filldraw[fill=gray, fill opacity=0.3, draw=black] (0,0) rectangle (2,2);
+              % Puts the shaded rectangle
+    \foreach \x in {--3,-2,-1,0,1,2}{% Two indices running over each
+      \foreach \y in {-2,-1, ..., 2}{% node on the grid we have drawn 
+        \node[draw,circle,inner sep=2pt,fill] at (2*\x,2*\y) {};
+\filldraw[dotted, fill=blue!50, draw=blue, very thick, fill opacity=0.2] (2*\x,2*\y) circle (2cm);
+
+            % Places a dot at those points
+      }
+    }
+        \node[draw,red, circle,inner sep=2pt,fill] at (0, 0) {};
+
+
+\node at (5, 1) {$\cdots$};
+\end{tikzpicture}
+```
+:::
+
+::: {.remark}
+Note that this doesn't work for arbitrary \( d \), since the distance between the horizontal lines grows with \( d \). It's not hard to work out the exact list where everything *is* covered:
+:::
+
+::: {.theorem title="?"}
+\( K \) is norm-Euclidean if and only if \( d\in \left\{{-1,-2,-3,-7,-11}\right\} \).
+:::
+
+::: {.corollary title="?"}
+For these \( d \), \( {\mathbb{Z}}_K \) is a PID and thus a UFD.
+:::
+
+::: {.remark}
+So we've classified all norm-Euclidean imaginary quadratic fields. What about removing the word "norm"? We restricted to \( {\left\lvert {N({\,\cdot\,})} \right\rvert} \) because there was a particularly nice geometric interpretation, whereas being Euclidean involves a mysterious \( \varphi \). Remarkably, it can be done, and it's the same list!
+:::
+
+::: {.theorem title="Motzkin"}
+For \( K \) an imaginary quadratic field, \( K \) is Euclidean if and only if \( d\in \left\{{-1,-2,-3,-7,-11}\right\} \).
+:::
+
+::: {.remark}
+If \( {\mathbb{Z}}_K \) were never a PID in these cases, we could immediately conclude it wasn't Euclidean either. But there are values of \( d \) not on this list for which \( {\mathbb{Z}}_K \) is a PID, e.g. \( d=-19 \). Since \( -19 \equiv 1 \pmod 4 \), one can write \( {\mathbb{Z}}_K = {\mathbb{Z}}\left[ {1 + \sqrt{-19} \over 2}\right] \), and by Motzkin's theorem this is a PID which is not a Euclidean domain.
+:::
+
+We'll prove this theorem! First we need a few lemmas.
+
+::: {.lemma title="?"}
+Let \( K \) be an imaginary quadratic field, then \( U({\mathbb{Z}}_K) = \left\{{\pm 1 }\right\} \) except if \( d=-1, -3 \).
+:::
+
+::: {.proof title="of lemma (Important!)"}
+We know that the units \( u \) satisfy \( {\left\lvert {N(u)} \right\rvert} = 1 \), and for imaginary quadratic fields norms are non-negative, so we know \( N(u) = 1 \). What are the solutions this equation? Suppose \( d=2,3 \pmod 4 \), then we can write \( \alpha = a + b \sqrt{d} \) with \( a,b\in {\mathbb{Z}} \) and \( 1 = N \alpha = a^2 - db^2 = a^2 + {\left\lvert {d} \right\rvert}b^2 \). If \( {\left\lvert {d} \right\rvert}= 1 \) then this will have four solutions: \( (a, b) = (\pm 1, 0), (0, \pm 1) \). Otherwise if \( {\left\lvert {d} \right\rvert}> 1 \) then \( b=0 \) and \( a^2=1 \implies a = \pm 1 \) and thus \( \alpha = \pm 1 \). So in this case, the only units are \( \pm 1 \), unless \( {\left\lvert {d} \right\rvert} = 1 \). But the only negative squarefree integer of absolute value 1 is \( -1 \).
+
+Suppose \( d \equiv 1 \pmod 4 \). In this case, we need
+\[
+1 = {a^2 + {\left\lvert {d} \right\rvert} b^2 \over 4} \implies a^2 + {\left\lvert {d} \right\rvert}b^2 = 4  
+.\]
+Note that \( d<0 \) is \( 1\pmod 4 \), so it's possible that \( d=-3 \) -- but this was one of the exceptions in the theorem, so assume otherwise. Thus \( {\left\lvert {d} \right\rvert}\geq 7 \), which forces \( b=0 \implies a^2 = 4 \implies a = \pm 2 \). Then \( \alpha= \pm 1 \).
+:::
+
+::: {.remark}
+For the excluded cases, the units can be explicitly computed. When \( d=-1 \), \( U({\mathbb{Z}}[i]) =\left\{{\pm 1, \pm i}\right\} \), yielding 4 units. When \( d=-3 \),
+\[
+U\qty{{\mathbb{Z}}\left[ {1 + \sqrt{-3} \over 2 } \right]} = \left\{{\pm 1, {\pm 1 \pm \sqrt{-3} \over 2}}\right\}
+,\]
+yielding 6 units. Note that in the first case, these are exactly the 4th roots of unity, and in the second case these are the sixth roots. This is a general phenomenon that will appear again!
+:::
+
+::: {.lemma title="?"}
+Let \( K \) be any quadratic field and \( \alpha\in {\mathbb{Z}}_K \). Then \( \# {\mathbb{Z}}_k / \left\langle{ \alpha }\right\rangle = {\left\lvert {N( \alpha )} \right\rvert} \).
+:::
+
+## Proof of Motzkin's Theorem
+
+::: {.proof title="of Motzkin's Theorem"}
+We want to show that being Euclidean implies \( d=-1,-2,-3,-7,-11 \). Suppose \( {\mathbb{Z}}_K \) is Euclidean with respect to \( \varphi \). Choose \( \beta\in {\mathbb{Z}}_K \) nonzero and not a unit with \( \varphi(\beta) \) minimal among all such \( \beta \).
+
+::: {.claim}
+\[
+\# {\mathbb{Z}}_K / \left\langle{ \beta }\right\rangle \leq 3 
+.\]
+:::
+
+::: {.proof title="of claim"}
+For any \( \alpha\in {\mathbb{Z}}_K \) and consider it in the quotient. Since \( {\mathbb{Z}}_K \) is Euclidean, we can write \( \alpha = \beta + \gamma+ \rho \) where either \( \rho=0 \) or \( \varphi(\rho ) < \varphi (\beta ) \). How can the second possibility occur? \( \beta \) was chosen to have a minimal \( \varphi \) value, so the only smaller elements are units. So \( \rho = 0 \) or \( \rho \) is a unit. Reducing \( \pmod\beta \), we obtain \( \alpha= \rho \pmod\beta \), and hence \( \# {\mathbb{Z}}_K / \left\langle{ \beta }\right\rangle \leq 1 + \# U({\mathbb{Z}}_K) \) where the 1 comes from the zero element and everything else in the quotient has a representative that is a unit. This is bounded above by \( 3 \) when \( d\neq -1, -3 \), which is one of the exclusions in the theorem.
+:::
+
+Now we have \( N( \beta) \leq 3 \) and this can be solved -- if \( d \) is large, these solutions are widely distributed. If \( d = 2, 3 \pmod 4 \) then \( \beta= a + b \sqrt{d} \) with \( a, b \in ZZ \) and \( a^2 + {\left\lvert {d} \right\rvert}b^2 \leq 3 \). We can assume \( {\left\lvert {d} \right\rvert}> 3 \), since \( d=-1, -2 \) are excluded. Then \( b=0 \) is forced, and \( a = 0, \pm 1 \). But why can't \( \beta=0, \pm 1 \)? It was chosen to be minimal among *nonzero nonunits*. \( \contradiction \)
+
+If \( d \equiv 1 \pmod 4 \), then \( \beta= {a + b \sqrt{d} \over 2} \) where \( a,b\in {\mathbb{Z}},\, a\equiv b \pmod 2 \). Then
+\[
+{a^2 + {\left\lvert {d} \right\rvert}b^2 \over 4} \leq 3 \implies a^2 + {\left\lvert {d} \right\rvert}b^2 \leq 12  
+.\]
+Now considering that \( -d\equiv 1 \pmod 4 \implies -d \in \left\{{ -3, -7, -11, \cdots}\right\} \), the first three of which are on our list of exclusions. So we can assume \( {\left\lvert {d} \right\rvert}\geq 15 \), which forces \( b=0 \), \( a \) must be even, and \( a^2 \leq 12 \). So \( a=0, \pm 2 \implies \beta= 0, \pm 1 \). \( \contradiction \)
+:::
+
+::: {.remark}
+What's the story for real quadratic fields? We understand norm-Euclidean ones, although the proofs aren't nearly as simple. Things worked out nicely here because we had circles in the plane; in the real case these end up being complicated hyperbolas. One can prove that if \( d > 73 \) then \( K \coloneqq{\mathbb{Q}}(\sqrt d) \) is not norm-Euclidean. What are the Euclidean real quadratic fields? The situation is much different, and there are two open conjectures.
+:::
+
+::: {.conjecture}
+For real quadratic fields \( K \), \( {\mathbb{Z}}_K \) is a PID for infinitely many \( d> 0 \). We don't even know about to prove there are just infinitely many *number* fields satisfying this condition! We believe this is true since it happens a positive proportion of the time experimentally.
+:::
+
+::: {.conjecture}
+If \( {\mathbb{Z}}_K \) is a PID, then \( {\mathbb{Z}}_K \) is Euclidean with respect to some norm function. This is a consequence of a certain generalization of the RH. This is not true for imaginary quadratic fields. Why is it different here? The unit group plays a large role, and is infinite here. The real conjecture is that for \( K \) any number field, if \( {\mathbb{Z}}_K \) is a PID with infinitely many units then \( {\mathbb{Z}}_K \) is Euclidean.
+:::
+
+::: {.remark}
+There has been some progress, a result along the lines of there being at most two exceptions, but we don't know if those exceptions exist.
+:::
+
 [^1]: An injective ring morphism.
 
 [^2]: *Squarefree* means not divisible by \( n^2 \) for any \( n > 1\in {\mathbb{Z}} \), or equivalently not divisible by the square of any primes.
