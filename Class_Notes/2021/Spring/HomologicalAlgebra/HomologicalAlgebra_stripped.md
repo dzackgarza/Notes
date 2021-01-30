@@ -41,7 +41,7 @@ A **complex** is given by
 \[
 \cdots \xrightarrow{d_{i-1}} M_{i-1} \xrightarrow{d_i} M_i \xrightarrow{d_{i+1}}M_{i+1} \to  \cdots
 .\]
-where \( M_i \in {R{\hbox{-}}\operatorname{mod}} \) and \( d_i \circ d_{i-1} = 0 \), which happens if and only if \( \operatorname{im}d_{i-1} \subseteq \ker d_i \). If \( \operatorname{im}d_{i-1} = \ker d_i \), this complex is **exact**.
+where \( M_i \in {R{\hbox{-}}\mathrm{mod}} \) and \( d_i \circ d_{i-1} = 0 \), which happens if and only if \( \operatorname{im}d_{i-1} \subseteq \ker d_i \). If \( \operatorname{im}d_{i-1} = \ker d_i \), this complex is **exact**.
 :::
 
 ::: {.example title="?"}
@@ -94,7 +94,7 @@ See the appendix for diagrams defining zero objects and the zero map, which we'l
 :::
 
 ::: {.remark}
-In the examples, we had \( \ker d_i \subseteq M_i \), but this need not be true since the objects in the category may not be sets. Such an example is the category of complexes of \( R{\hbox{-}} \)modules: \( \operatorname{Cx}({R{\hbox{-}}\operatorname{mod}}) \). In this setting, kernels will be subcomplexes but not subsets.
+In the examples, we had \( \ker d_i \subseteq M_i \), but this need not be true since the objects in the category may not be sets. Such an example is the category of complexes of \( R{\hbox{-}} \)modules: \( \operatorname{Cx}({R{\hbox{-}}\mathrm{mod}}) \). In this setting, kernels will be subcomplexes but not subsets.
 :::
 
 ::: {.definition title="Functors"}
@@ -108,7 +108,7 @@ Recall that **functors** are "functions" between categories \( F: \mathcal{C}\to
 :::
 
 ::: {.example title="Hom"}
-\( {\operatorname{Hom}}_R(N, {\,\cdot\,}): {R{\hbox{-}}\operatorname{mod}}\to {\operatorname{Ab}} \), noting that the hom set may not have an \( R{\hbox{-}} \)module structure.
+\( {\operatorname{Hom}}_R(N, {\,\cdot\,}): {R{\hbox{-}}\mathrm{mod}}\to {\operatorname{Ab}} \), noting that the hom set may not have an \( R{\hbox{-}} \)module structure.
 :::
 
 ::: {.remark}
@@ -120,7 +120,7 @@ Taking cohomology yields the \( i \)th derived functors of \( F \), for example 
 ### Complexes of \( R{\hbox{-}} \)modules {#complexes-of-rhbox-modules}
 
 ::: {.definition title="Exactness"}
-Let \( R \) be a ring with 1 and define \( {R{\hbox{-}}\operatorname{mod}} \) to be the category of *right* \( R{\hbox{-}} \)modules. \( A \xrightarrow{f} B \xrightarrow{g} C \) is **exact** if and only if \( \ker g = \operatorname{im}f \), and in particular \( g\circ f = 0 \).
+Let \( R \) be a ring with 1 and define \( {R{\hbox{-}}\mathrm{mod}} \) to be the category of *right* \( R{\hbox{-}} \)modules. \( A \xrightarrow{f} B \xrightarrow{g} C \) is **exact** if and only if \( \ker g = \operatorname{im}f \), and in particular \( g\circ f = 0 \).
 :::
 
 ::: {.definition title="Chain Complex"}
@@ -168,7 +168,7 @@ A map \( u: C_{\,\cdot\,}\to D_{\,\cdot\,} \) of chain complexes is a sequence o
 :::
 
 ::: {.remark}
-We can thus define a category \( \mathrm{Ch}({R{\hbox{-}}\operatorname{mod}}) \) where
+We can thus define a category \( \mathrm{Ch}({R{\hbox{-}}\mathrm{mod}}) \) where
 
 -   The objects are chain complexes,
 -   The morphisms are chain maps.
@@ -184,7 +184,7 @@ and thus induces a well-defined map \( u_{n, *}: H_n(C_{\,\cdot\,}) \to H_n(D_{\
 :::
 
 ::: {.remark}
-Each \( H_n \) thus becomes a functor \( \mathrm{Ch}({R{\hbox{-}}\operatorname{mod}}) \to {R{\hbox{-}}\operatorname{mod}} \) where \( H_n(u) \coloneqq u_{*. n} \).
+Each \( H_n \) thus becomes a functor \( \mathrm{Ch}({R{\hbox{-}}\mathrm{mod}}) \to {R{\hbox{-}}\mathrm{mod}} \) where \( H_n(u) \coloneqq u_{*. n} \).
 :::
 
 # Friday, January 15
@@ -214,7 +214,7 @@ Recall that a chain complex is \( C_{\,\cdot\,} \) where \( d^2 = 0 \), and a ma
     \arrow[from=1-1, to=1-2]
 \end{tikzcd}
 ```
-> [Link to diagram](https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d) Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\operatorname{mod}}) \to {R{\hbox{-}}\operatorname{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
+> [Link to diagram](https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d) Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\mathrm{mod}}) \to {R{\hbox{-}}\mathrm{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
 :::
 
 ## Cohomology
@@ -264,7 +264,7 @@ See the book for classical applications:
 ## Operations on Chain Complexes
 
 ::: {.remark}
-Write \( \operatorname{Ch} \) for \( \operatorname{Ch}({R{\hbox{-}}\operatorname{mod}}) \), then if \( f,g: C\to D \) are chain maps then \( f+g:C\to D \) can be defined as \( (f+g)(x) = f(x) + g(x) \), since \( D \) has an addition coming from its \( R{\hbox{-}} \)module structure. Thus the hom sets \( {\operatorname{Hom}}_{\operatorname{Ch}}(C, D) \) becomes an abelian group. There is a distinguished **zero object**[^1] \( 0 \), defined as the chain complex with all zero objects and all zero maps. Note that we also have a zero map given by the composition \( (C \to 0) \circ (0\to D) \).
+Write \( \operatorname{Ch} \) for \( \operatorname{Ch}({R{\hbox{-}}\mathrm{mod}}) \), then if \( f,g: C\to D \) are chain maps then \( f+g:C\to D \) can be defined as \( (f+g)(x) = f(x) + g(x) \), since \( D \) has an addition coming from its \( R{\hbox{-}} \)module structure. Thus the hom sets \( {\operatorname{Hom}}_{\operatorname{Ch}}(C, D) \) becomes an abelian group. There is a distinguished **zero object**[^1] \( 0 \), defined as the chain complex with all zero objects and all zero maps. Note that we also have a zero map given by the composition \( (C \to 0) \circ (0\to D) \).
 :::
 
 ::: {.definition title="Products and Coproducts"}
@@ -287,7 +287,7 @@ These structures make \( \operatorname{Ch} \) into an **additive category**. See
 ::: {.definition title="?"}
 We say \( B \) is a **subcomplex** of \( C \) if and only if
 
--   \( B_n \leq C_n \in {R{\hbox{-}}\operatorname{mod}} \) for all \( n \),
+-   \( B_n \leq C_n \in {R{\hbox{-}}\mathrm{mod}} \) for all \( n \),
 -   The differentials of \( B_n \) are the restrictions of the differentials of \( C_n \).
 :::
 
@@ -365,7 +365,7 @@ Consider a double complex:
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzIsMiwiQ197cC0xLCBxKzF9Il0sWzQsMiwiQ197cCwgcSsxfSJdLFs2LDIsIkNfe3AtMSwgcSsxfSJdLFsyLDQsIkNfe3AtMSwgcX0iXSxbNCw0LCJDX3twLCBxfSJdLFs2LDQsIkNfe3ArMSwgcX0iXSxbMiw2LCJDX3twLTEsIHErMX0iXSxbNCw2LCJDX3twLTEsIHErMX0iXSxbNiw2LCJDX3twLTEsIHErMX0iXSxbNCwwLCJDX3twLCBcXGNkb3R9Il0sWzAsNCwiQ197XFxjZG90LCBxfSJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52IiwyXSxbMSw0XV0=)
 
-All of the individual rows and columns are chain complexes, where \( (d^h)^2 = 0 \) and \( (d^v)^2 = 0 \), and the square anticommute: \( d^v d^h + d^h d^v - 0 \), so \( d^v d^h = -d^h d^v \). This is almost a chain complex of chain complexes, i.e. an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\operatorname{mod}})) \). It's useful here to consider lines parallel to the line \( y=x \).
+All of the individual rows and columns are chain complexes, where \( (d^h)^2 = 0 \) and \( (d^v)^2 = 0 \), and the square anticommute: \( d^v d^h + d^h d^v - 0 \), so \( d^v d^h = -d^h d^v \). This is almost a chain complex of chain complexes, i.e. an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathrm{mod}})) \). It's useful here to consider lines parallel to the line \( y=x \).
 :::
 
 ::: {.definition title="Bounded Complexes"}
@@ -399,7 +399,7 @@ This yields a new double complex where the signs of each column alternate:
     \arrow["{d^h}"{description}, from=3-3, to=3-1]
 \end{tikzcd}
 ```
-Now the squares commute and \( f_{{\,\cdot\,}, q} \) are chain maps, so this object is an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\operatorname{mod}}) \).
+Now the squares commute and \( f_{{\,\cdot\,}, q} \) are chain maps, so this object is an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathrm{mod}}) \).
 :::
 
 ### Total Complexes
@@ -680,7 +680,7 @@ Show exactness at the remaining places -- the most interesting place is at \( \o
 :::
 
 ::: {.remark}
-We assumed that \( \mathcal{A}= {R{\hbox{-}}\operatorname{mod}} \) here, so we could chase elements, but this happens to also be true in any abelian category \( \mathcal{A} \) but by a different proof. The idea is to embed \( \mathcal{A} \to {R{\hbox{-}}\operatorname{mod}} \) for some ring \( R \), do the construction there, and pull the results back -- but this doesn't quite work! \( \mathcal{A} \) can be too big. Instead, do this for the smallest subcategory \( \mathcal{A}_0 \) containing all of the modules and maps involved in the snake lemma. Then \( \mathcal{A}_0 \) is small enough to embed into \( {R{\hbox{-}}\operatorname{mod}} \) by the **Freyd-Mitchell Embedding Theorem**.
+We assumed that \( \mathcal{A}= {R{\hbox{-}}\mathrm{mod}} \) here, so we could chase elements, but this happens to also be true in any abelian category \( \mathcal{A} \) but by a different proof. The idea is to embed \( \mathcal{A} \to {R{\hbox{-}}\mathrm{mod}} \) for some ring \( R \), do the construction there, and pull the results back -- but this doesn't quite work! \( \mathcal{A} \) can be too big. Instead, do this for the smallest subcategory \( \mathcal{A}_0 \) containing all of the modules and maps involved in the snake lemma. Then \( \mathcal{A}_0 \) is small enough to embed into \( {R{\hbox{-}}\mathrm{mod}} \) by the **Freyd-Mitchell Embedding Theorem**.
 :::
 
 # Lecture 5 (Monday, January 25)
@@ -827,10 +827,12 @@ Here \( {{\partial}}:H_*(C) \to H_*(A)[1] \) shifts degrees. Note that this moti
 
 ## 1.4: Chain Homotopies
 
+::: {.remark}
 Assume for now that we're in the situation of \( R{\hbox{-}} \)modules where \( R \) is a field, i.e. vector spaces. The main fact/advantage here that is not generally true for \( R{\hbox{-}} \)modules: every subspace has a complement. Since \( B_n \subseteq Z_n \subseteq C_n \), we can write \( C_n = Z_n \oplus B_n' \) for every \( n \), and \( Z_n = B_n \oplus H_n \). This notation is suggestive, since \( H_n \cong Z_n/B_n \) as a quotient of vector spaces. Substituting, we get \( C_n = B_n \oplus H_n \oplus B_n' \). Consider the projection \( C_n \to B_n \) by projecting onto the first factor. Identifying \( B_n \coloneqq\operatorname{im}(C_{n+1} \to C_n) \cong C_{n+1}/Z_{n+1} \) by the 1st isomorphism theorem in the reverse direction. But this image is equal to \( B_{n+1}' \), and we can embed this in \( C_{n+1} \), so define \( s_n: C_n \to C_{n+1} \) as the composition
 \[
 s_n \coloneqq( C_n \xrightarrow{\mathop{\mathrm{Proj}}} B_n = \operatorname{im}(C_{n+1} \to C_n) \xrightarrow{d_{n+1}^{-1}} C_{n+1}/Z_{n+1} \xrightarrow{\cong} B_{n+1}' \hookrightarrow C_{n+1}
 .\]
+:::
 
 ::: {.claim title="1"}
 \( d_{n+1} s_n d_{n+1} = d_{n+1} \) are equal as maps.
@@ -872,6 +874,480 @@ We again check this on both factors:
 :::
 
 Next time: summary of decompositions, start general section on chain homotopies.
+
+# Wednesday, January 27
+
+See phone pic for missed first 10m.
+
+## 1.4: Chain Homotopies
+
+::: {.definition title="Split Exact"}
+?
+:::
+
+::: {.remark}
+Note that when \( C \) is split exact, we have
+
+```{=tex}
+\begin{tikzcd}
+    && {C_n} && {C_{n-1}} \\
+    \\
+    {C_{n+1}} && {C_n}
+    \arrow["d", from=3-1, to=3-3]
+    \arrow["d", from=1-3, to=1-5]
+    \arrow["{s_n}"{description}, from=1-3, to=3-1]
+    \arrow["{s_{n-1}}"{description}, from=1-5, to=3-3]
+    \arrow["\operatorname{id}"{description}, from=1-3, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMiwwLCJDX24iXSxbNCwwLCJDX3tuLTF9Il0sWzIsMiwiQ19uIl0sWzAsMiwiQ197bisxfSJdLFszLDIsImQiXSxbMCwxLCJkIl0sWzAsMywic19uIiwxXSxbMSwyLCJzX3tuLTF9IiwxXSxbMCwyLCJcXGlkIiwxXV0=)
+:::
+
+::: {.example title="Not all complexes split"}
+Take
+\[
+C = \qty{ 0 \to {\mathbb{Z}}/2{\mathbb{Z}}\xrightarrow{d} {\mathbb{Z}}/4{\mathbb{Z}}\to {\mathbb{Z}}/2{\mathbb{Z}}\to 0 }
+.\]
+Then \( \operatorname{im}d = \left\{{0, 2}\right\} = \ker d \), but this does not split since \( {\mathbb{Z}}/2{\mathbb{Z}}^2 \not\cong {\mathbb{Z}}/4{\mathbb{Z}} \): one has an element of order 4 in the underlying additive group. Equivalently, there is no complement to the image. What might be familiar from algebra is \( ds = \operatorname{id} \), but the more general notion is \( dsd = d \).
+:::
+
+::: {.example title="?"}
+The following complex is not split exact for the same reason:
+\[
+\cdots \xrightarrow{\cdot 2} {\mathbb{Z}}/4{\mathbb{Z}}\xrightarrow{\cdot 2} {\mathbb{Z}}/4{\mathbb{Z}}\to \cdots
+.\]
+:::
+
+::: {.question}
+Given \( f,g: C\to D \), when do we get equality \( f_* = g_*: H_*(C) \to H_*(D) \)?
+:::
+
+::: {.definition title="Homotopy Terminology for Chains"}
+A chain map \( f:C\to D \) is **nullhomotopic** if and only if there exist maps \( s_n: C_n\to D_{n+1} \) such that \( f = ds + sd \):
+
+```{=tex}
+\begin{tikzcd}
+    && {C_n} && {C_{n-1}} \\
+    \\
+    {D_{n+1}} && {D_n}
+    \arrow["d", from=3-1, to=3-3]
+    \arrow["d", from=1-3, to=1-5]
+    \arrow["{s_n}"{description}, from=1-3, to=3-1]
+    \arrow["{s_{n-1}}"{description}, from=1-5, to=3-3]
+    \arrow["\operatorname{id}"{description}, from=1-3, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMiwwLCJDX24iXSxbNCwwLCJDX3tuLTF9Il0sWzIsMiwiRF9uIl0sWzAsMiwiRF97bisxfSJdLFszLDIsImQiXSxbMCwxLCJkIl0sWzAsMywic19uIiwxXSxbMSwyLCJzX3tuLTF9IiwxXSxbMCwyLCJcXGlkIiwxXV0=)
+
+The map \( s \) is called a **chain contraction**. Two maps are **chain homotopic** (or initially: \( f \) is chain homotopic to \( g \), since we don't yet know if this relation is symmetric) if and only if \( f-g \) is nullhomotopic, i.e. \( f-g = ds + sd \). The map \( s \) is called a **chain homotopy** from \( f \) to \( g \). A map \( f \) is a **chain homotopy equivalence** if both \( fg \) and \( gf \) are chain homotopic to the identities on \( C \) and \( D \) respectively.
+:::
+
+::: {.lemma title="?"}
+If map \( f:C\to D \) is nullhomotopic then \( f_*: H_*(C) \to H_*(D) \) is the zero map. Thus if \( f,g \) are chain homotopic, then they induce equal maps.
+:::
+
+::: {.proof title="?"}
+An element in the quotient \( H_n(C) \) is represented by an \( n{\hbox{-}} \)cycle \( x\in Z_n(C) \). By a previous exercise, \( f(x) \) is a well-defined element of \( H_n(D) \), and using that \( d(x) = 0 \) we have
+\[
+f(x) = (ds + sd)(x) = d(s(x))
+,\]
+and so \( f[x] = [f(x)] = [0] \).
+
+```{=tex}
+\begin{tikzcd}
+    && x && {d(x) = 0} \\
+    && {C_n} && {C_{n-1}} \\
+    \\
+    {D_{n+1}} && {D_n} \\
+    && {d(s(x))}
+    \arrow["d", from=4-1, to=4-3]
+    \arrow["d", from=2-3, to=2-5]
+    \arrow["{s_n}"{description}, from=2-3, to=4-1]
+    \arrow["{s_{n-1}}"{description}, from=2-5, to=4-3]
+    \arrow["\operatorname{id}"{description}, from=2-3, to=4-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwxLCJDX24iXSxbNCwxLCJDX3tuLTF9Il0sWzIsMywiRF9uIl0sWzAsMywiRF97bisxfSJdLFsyLDAsIngiXSxbNCwwLCJkKHgpID0gMCJdLFsyLDQsImQocyh4KSkiXSxbMywyLCJkIl0sWzAsMSwiZCJdLFswLDMsInNfbiIsMV0sWzEsMiwic197bi0xfSIsMV0sWzAsMiwiXFxpZCIsMV1d)
+
+Now applying the first part to \( f-g \) to get the second part.
+:::
+
+> See Weibel for topological motivations.
+
+## 1.5 Mapping Cones
+
+::: {.remark}
+Note that we'll skip *mapping cylinders*, since they don't come up until the section on triangulated categories. The goal is to see how any two maps between homologies can be fit into a LES. This helps reduce questions about *quasi-isomorphisms* to questions about split exact complexes.
+:::
+
+::: {.definition title="Mapping Cones"}
+Suppose we have a chain map \( f:B\to C \), then there is a chain complex \( \operatorname{cone}(f) \), the **mapping cone of \( f \)**, defined by
+\[
+\operatorname{cone}(f)_n = B_{n-1} \oplus C_n
+.\]
+
+The maps are given by the following:
+
+```{=tex}
+\begin{tikzcd}
+    {B_{n-1}} && {B_{n-2}} \\
+    \oplus && \oplus \\
+    {C_n} && {C_{n-1}}
+    \arrow["{-d^B}", from=1-1, to=1-3]
+    \arrow["{-f}"', from=1-1, to=3-3]
+    \arrow["{d^C}", from=3-1, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJCX3tuLTF9Il0sWzAsMSwiXFxvcGx1cyJdLFswLDIsIkNfbiJdLFsyLDAsIkJfe24tMn0iXSxbMiwyLCJDX3tuLTF9Il0sWzIsMSwiXFxvcGx1cyJdLFswLDMsIi1kXkIiXSxbMCw0LCItZiIsMl0sWzIsNCwiZF5DIl1d)
+
+We can write this down: \( d(b, c) = (-d(b), -f(b) + d(c)) \), or as a matrix
+\[
+\begin{bmatrix}
+-d^b &  0
+\\
+-f & d^C
+\end{bmatrix}
+.\]
+:::
+
+::: {.exercise title="?"}
+Check that the differential on \( \operatorname{cone}(f) \) squares to zero.
+:::
+
+::: {.exercise title="Weibel 1.5.1"}
+When \( f = \operatorname{id}:C\to C \), we write \( \operatorname{cone}(C) \) instead of \( \operatorname{cone}(\operatorname{id}) \). Show that \( \operatorname{cone}(C) \) is split exact, with splitting map \( s(b, c) = (-c, 0) \) for \( b\in C_{n-1}, c\in C_n \).
+:::
+
+::: {.proposition title="?"}
+Suppose \( f:B\to C \) is a chain map, then the induced maps \( f_*: H(B) \to H(C) \) fit into a LES. There is a SES of chain complexes:
+
+```{=tex}
+\begin{tikzcd}
+    0 && C && {\operatorname{cone}(f)} && {B[-1]} && 0 \\
+    && c && {(0, c)} \\
+    &&&& {(b, c)} && {-b}
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=2-3, to=2-5]
+    \arrow[from=3-5, to=3-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwwLCIwIl0sWzIsMCwiQyJdLFs0LDAsIlxcY29uZShmKSJdLFs2LDAsIkJbLTFdIl0sWzgsMCwiMCJdLFsyLDEsImMiXSxbNCwxLCIoMCwgYykiXSxbNCwyLCIoYiwgYykiXSxbNiwyLCItYiJdLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs1LDZdLFs3LDhdXQ==)
+
+::: {.exercise title="?"}
+Check that these are chain maps, i.e. they commute with the respective differentials \( d \).
+:::
+
+The corresponding LES is given by the following:
+
+```{=tex}
+\begin{tikzcd}
+    && \cdots && {H_{n+1}\operatorname{cone}(f)} && {H_{n+1}(B[-1]) = H_n(B)} \\
+    \\
+    {} & {} & {H_n(C)} && {H_n \operatorname{cone}(f)} && {H_{n}(B[-1]) = H_{n-1}(B)} \\
+    \\
+    && \cdots
+    \arrow[from=1-3, to=1-5]
+    \arrow["{\delta_*}", from=1-5, to=1-7]
+    \arrow["{{\partial}}", from=1-7, to=3-3, in=180, out=360]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=5-3, in=180, out=360]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbNCwwLCJIX3tuKzF9XFxjb25lKGYpIl0sWzAsMl0sWzYsMCwiSF97bisxfShCWy0xXSkgPSBIX24oQikiXSxbMSwyXSxbMiwyLCJIX24oQykiXSxbNCwyLCJIX24gXFxjb25lKGYpIl0sWzYsMiwiSF97bn0oQlstMV0pID0gSF97bi0xfShCKSJdLFsyLDAsIlxcY2RvdHMiXSxbMiw0LCJcXGNkb3RzIl0sWzcsMF0sWzAsMiwiXFxkZWx0YV8qIl0sWzIsNCwiXFxiZCJdLFs0LDVdLFs1LDZdLFs2LDhdXQ==)
+
+::: {.lemma title="?"}
+The map \( {{\partial}}= f_* \)
+:::
+
+::: {.proof title="?"}
+Letting \( b\in B_n \) is an \( n{\hbox{-}} \)cycle.
+
+1.  Lift \( b \) to anything via \( \delta \), say \( (-b, 0) \).
+2.  Apply the differential \( d \) to get \( (db, fb) = (0, fb) \) since \( b \) was a cycle.
+3.  Pull back to \( C_n \) by the map \( C\to \operatorname{cone}(f) \) to get \( fb \).
+4.  Then the connecting morphism is given by \( {{\partial}}[b] = [fb] \). But by definition of \( f_* \), we have \( [fb] = f_* [b] \).
+:::
+:::
+
+# Friday, January 29
+
+## Mapping Cones
+
+::: {.remark}
+Given \( f:B\to C \) we defined \( \operatorname{cone}(f)_n \coloneqq B_{n-1} \oplus C_n \), which fits into a SES
+\[
+0 \to C \to \operatorname{cone}(f) \xrightarrow{\delta} B[-1] \to 0
+\]
+and thus yields a LES in cohomology.
+
+```{=tex}
+\begin{tikzcd}
+    \cdots && {H_{n+1}(\operatorname{cone}(f))} && {H_n(B)} \\
+    \\
+    {H_n(C)} && {H_n(\operatorname{cone}(f))} && {H_{n-1}(B)} \\
+    \\
+    \cdots
+    \arrow["\delta = f_*", from=1-5, to=3-1, in=180, out=360]
+    \arrow["\delta", from=3-5, to=5-1, in=180, out=360]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwwLCJIX3tuKzF9KFxcY29uZShmKSkiXSxbNCwwLCJIX24oQikiXSxbMCwyLCJIX24oQykiXSxbMiwyLCJIX24oXFxjb25lKGYpKSJdLFs0LDIsIkhfe24tMX0oQikiXSxbMCwwLCJcXGNkb3RzIl0sWzAsNCwiXFxjZG90cyJdLFsxLDIsIlxcZGVsdGEiXSxbMiwzXSxbMyw0XSxbMCwxXSxbNSwwXV0=)
+:::
+
+::: {.corollary title="?"}
+\( f:B\to C \) is a quasi-isomorphism if and only if \( \operatorname{cone}(f) \) is exact.
+:::
+
+::: {.proof title="?"}
+In the LES, all of the maps \( f_* \) are isomorphisms, which forces \( H_n(\operatorname{cone}(f)) = 0 \) for all \( n \).
+:::
+
+::: {.remark}
+So we can convert statements about quasi-isomorphisms of complexes into exactness of a single complex.
+:::
+
+> We'll skip the rest, e.g. mapping cylinders which aren't used until the section on triangulated categories. We'll skip the section on \( \delta{\hbox{-}} \)functors, which is a slightly abstract language.
+
+## Ch. 2: Derived Functors
+
+::: {.remark}
+Setup: fix \( M\in {R{\hbox{-}}\mathrm{mod}} \), where \( R \) is a ring with unit. Note that by an upcoming exercise, \( {\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is a *left-exact* functor, but not in general right-exact: given a SES \( 0\to A\to B\to C\to 0 \in \operatorname{Ch}({\mathrm{mod}{\hbox{-}}R}) \), there is an exact sequence:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)}
+    \arrow["{f_* = f\circ({\,\cdot\,})}", from=1-3, to=1-5]
+    \arrow["{g_* = g\circ({\,\cdot\,})}", from=1-5, to=1-7]
+    \arrow[from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMiwwLCJcXEhvbV9SKE0sIEEpIl0sWzQsMCwiXFxIb21fUihNLCBBKSJdLFs2LDAsIlxcSG9tX1IoTSwgQSkiXSxbMCwwLCIwIl0sWzAsMSwiZl8qID0gZlxcY2lyYyhcXHdhaXQpIl0sWzEsMiwiZ18qID0gZ1xcY2lyYyhcXHdhaXQpIl0sWzMsMF1d)
+
+However, this is not generally surjective: not every \( M\to C \) is given by composition with a morphism \( M\to B \) (*lifting*). To create a LES here, one could use the cokernel construction, but we'd like to do this functorially by defining a sequence functors \( F^n \) that extend this on on the right to form a LES:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} \\
+    \\
+    && {F^1(A)} && {F^1(B)} && {F^1(C)} \\
+    \\
+    && {F^2(A)} && \cdots
+    \arrow["{f_* = f\circ({\,\cdot\,})}", from=1-3, to=1-5]
+    \arrow["{g_* = g\circ({\,\cdot\,})}", from=1-5, to=1-7]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-7, to=3-3, out=360, in=180]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=5-3, in=180, out=360]
+    \arrow[from=5-3, to=5-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCJcXEhvbV9SKE0sIEEpIl0sWzQsMCwiXFxIb21fUihNLCBBKSJdLFs2LDAsIlxcSG9tX1IoTSwgQSkiXSxbMCwwLCIwIl0sWzIsMiwiRl4xKEEpIl0sWzQsMiwiRl4xKEIpIl0sWzYsMiwiRl4xKEMpIl0sWzIsNCwiRl4yKEEpIl0sWzQsNCwiXFxjZG90cyJdLFswLDEsImZfKiA9IGZcXGNpcmMoXFx3YWl0KSJdLFsxLDIsImdfKiA9IGdcXGNpcmMoXFx3YWl0KSJdLFszLDBdLFsyLDRdLFs0LDVdLFs1LDZdLFs2LDddLFs3LDhdXQ==)
+
+It turns out such functors exist and are denoted \( F^n({\,\cdot\,}) \coloneqq\operatorname{Ext}_R^n(M, {\,\cdot\,}) \):
+
+```{=tex}
+\begin{tikzcd}
+    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} \\
+    \\
+    && {\operatorname{Ext}_R^1(A)} && {\operatorname{Ext}_R^1(B)} && {\operatorname{Ext}_R^1(C)} \\
+    \\
+    && {\operatorname{Ext}_R^2(A)} && \cdots
+    \arrow["{f_* = f\circ({\,\cdot\,})}", from=1-3, to=1-5]
+    \arrow["{g_* = g\circ({\,\cdot\,})}", from=1-5, to=1-7]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-7, to=3-3, in=180, out=360]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=5-3, in=180, out=360]
+    \arrow[from=5-3, to=5-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCJcXEhvbV9SKE0sIEEpIl0sWzQsMCwiXFxIb21fUihNLCBBKSJdLFs2LDAsIlxcSG9tX1IoTSwgQSkiXSxbMCwwLCIwIl0sWzIsMiwiXFxFeHRfUl4xKEEpIl0sWzQsMiwiXFxFeHRfUl4xKEIpIl0sWzYsMiwiXFxFeHRfUl4xKEMpIl0sWzIsNCwiXFxFeHRfUl4yKEEpIl0sWzQsNCwiXFxjZG90cyJdLFswLDEsImZfKiA9IGZcXGNpcmMoXFx3YWl0KSJdLFsxLDIsImdfKiA9IGdcXGNpcmMoXFx3YWl0KSJdLFszLDBdLFsyLDRdLFs0LDVdLFs1LDZdLFs2LDddLFs3LDhdXQ==)
+
+By convention, we set \( \operatorname{Ext}_R^0({\,\cdot\,}) \coloneqq{\operatorname{Hom}}_R(M, {\,\cdot\,}) \). This is an example of a general construction: **right-derived functors** of \( {\operatorname{Hom}}_R(M, {\,\cdot\,}) \). More generally, if \( \mathcal{A} \) is an abelian category (with a certain additional property) and \( F: \mathcal{A} \to \mathcal{B} \) is a left-exact functor (where \( \mathcal{B} \) is another abelian category) then we can define right-derived functors \( R^n F: \mathcal{A} \to \mathcal{B} \). These send SESs in \( \mathcal{A} \) to LESs in \( \mathcal{B} \):
+
+```{=tex}
+\begin{tikzcd}
+    0 && A && B && C && 0 \\
+    \\
+    0 && FA && FB && FC \\
+    \\
+    && {R^1FA} && {R^1 FB} && {R^1 FC} \\
+    \\
+    && \cdots
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=5-3, in=180, out=360]
+    \arrow[from=5-3, to=5-5]
+    \arrow[from=5-5, to=5-7]
+    \arrow[from=5-7, to=7-3, in=180, out=360]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTMsWzAsMCwiMCJdLFsyLDAsIkEiXSxbNCwwLCJCIl0sWzYsMCwiQyJdLFs4LDAsIjAiXSxbMCwyLCIwIl0sWzIsMiwiRkEiXSxbNCwyLCJGQiJdLFs2LDIsIkZDIl0sWzIsNCwiUl4xRkEiXSxbNCw0LCJSXjEgRkIiXSxbNiw0LCJSXjEgRkMiXSxbMiw2LCJcXGNkb3RzIl0sWzAsMV0sWzEsMl0sWzIsM10sWzMsNF0sWzUsNl0sWzYsN10sWzcsOF0sWzgsOV0sWzksMTBdLFsxMCwxMV0sWzExLDEyXV0=)
+
+Similarly, if \( F \) is *right-exact* instead, there are left-derived functors \( L^n F \) which form a LES ending with 0 at the right:
+
+```{=tex}
+\begin{tikzcd}
+    0 && A && B && C && 0 \\
+    &&&&&& \cdots \\
+    && LFA && LFB && LFC \\
+    \\
+    && FA && FB && FC && 0
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=5-3, to=3-7, in=360, out=180]
+    \arrow[from=5-3, to=5-5]
+    \arrow[from=5-5, to=5-7]
+    \arrow[from=5-7, to=5-9]
+    \arrow[from=3-3, to=2-7, in=360, out=180]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTMsWzAsMCwiMCJdLFsyLDAsIkEiXSxbNCwwLCJCIl0sWzYsMCwiQyJdLFs4LDAsIjAiXSxbMiwyLCJMRkEiXSxbNCwyLCJMRkIiXSxbNiwyLCJMRkMiXSxbMiw0LCJGQSJdLFs0LDQsIkZCIl0sWzYsNCwiRkMiXSxbOCw0LCIwIl0sWzYsMSwiXFxjZG90cyJdLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs1LDZdLFs2LDddLFs3LDhdLFs4LDldLFs5LDEwXSxbMTAsMTFdLFs1LDEyXV0=)
+:::
+
+## 2.2: Projective Resolutions
+
+::: {.definition title="Projective Modules"}
+Let \( \mathcal{A} = {R{\hbox{-}}\mathrm{mod}} \), then \( P \in {R{\hbox{-}}\mathrm{mod}} \) satisfies the following universal property:
+
+```{=tex}
+\begin{tikzcd}
+    && P \\
+    \\
+    B && C && 0
+    \arrow["g", from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow["{\exists \beta}"', dashed, from=1-3, to=3-1]
+    \arrow["\gamma", from=1-3, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwyLCJCIl0sWzIsMiwiQyJdLFs0LDIsIjAiXSxbMiwwLCJQIl0sWzAsMSwiZyJdLFsxLDJdLFszLDAsIlxcZXhpc3RzIFxcYmV0YSIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDEsIlxcZ2FtbWEiXV0=)
+:::
+
+::: {.remark}
+Free modules are projective. Let \( F = R^X \) be the free module on the set \( X \). Then consider \( \gamma(x)\in C \), by surjectivity these can be pulled back to some elements in \( B \):
+
+```{=tex}
+\begin{tikzcd}
+    && X \\
+    \\
+    && F \\
+    \\
+    B && C && 0 \\
+    {\exists b\in g^{-1}(\gamma(x)) \coloneqq\beta(x)} && {\gamma(x)}
+    \arrow["g", from=5-1, to=5-3]
+    \arrow[from=5-3, to=5-5]
+    \arrow["{\exists \beta}"', dashed, from=3-3, to=5-1]
+    \arrow["\gamma", from=3-3, to=5-3]
+    \arrow["{\iota_X}", hook, from=1-3, to=3-3]
+    \arrow["{\exists \tilde \beta}"', dotted, from=1-3, to=5-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCw0LCJCIl0sWzIsNCwiQyJdLFs0LDQsIjAiXSxbMiwyLCJGIl0sWzIsNSwiXFxnYW1tYSh4KSJdLFswLDUsIlxcZXhpc3RzIGJcXGluIGdeey0xfShcXGdhbW1hKHgpKSBcXGRhIFxcYmV0YSh4KSJdLFsyLDAsIlgiXSxbMCwxLCJnIl0sWzEsMl0sWzMsMCwiXFxleGlzdHMgXFxiZXRhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzMsMSwiXFxnYW1tYSJdLFs2LDMsIlxcaW90YV9YIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNiwwLCJcXGV4aXN0cyBcXHRpbGRlIFxcYmV0YSIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dXQ==)
+
+This follows from the universal property of free modules:
+
+```{=tex}
+\begin{tikzcd}
+    &&&& {\exists F(X)} \\
+    \\
+    \\
+    X &&&& M & {\in {R{\hbox{-}}\mathrm{mod}}}
+    \arrow["{f\in {\operatorname{Hom}}_{\operatorname{Set}}(X, M)}", from=4-1, to=4-5]
+    \arrow["{\exists g\in {\operatorname{Hom}}_{\operatorname{Set}}(X, F(X))}", from=4-1, to=1-5]
+    \arrow["{\exists ! f' \in {\operatorname{Hom}}_R(F(X), X)}", dashed, from=1-5, to=4-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwzLCJYIl0sWzQsMywiTSJdLFs0LDAsIlxcZXhpc3RzIEYoWCkiXSxbNSwzLCJcXGluIFxccm1vZCJdLFswLDEsImZcXGluIFxcSG9tX1xcU2V0KFgsIE0pIl0sWzAsMiwiXFxleGlzdHMgZ1xcaW4gXFxIb21fXFxTZXQoWCwgRihYKSkiXSxbMiwxLCJcXGV4aXN0cyAhIGYnIFxcaW4gXFxIb21fUihGKFgpLCBYKSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+:::
+
+::: {.proposition title="?"}
+An \( R{\hbox{-}} \)module is projective if and only if it is a direct summand of a free module.
+:::
+
+::: {.exercise title="?"}
+Prove the \( \impliedby \) direction!
+:::
+
+::: {.proof title="?"}
+\( \implies \): Assume \( P \) is projective, and let \( F(P) \) be the free \( R{\hbox{-}} \)module on the underlying set of \( P \). We can start with this diagram:
+
+```{=tex}
+\begin{tikzcd}
+    &&&& {F(P)} \\
+    \\
+    \\
+    P &&&& P
+    \arrow["{\operatorname{id}_P}", from=4-1, to=4-5]
+    \arrow[from=4-1, to=1-5]
+    \arrow[dashed, from=1-5, to=4-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwzLCJQIl0sWzQsMywiUCJdLFs0LDAsIkYoUCkiXSxbMCwxLCJcXGlkX1AiXSxbMCwyXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+And rearranging, we get
+
+```{=tex}
+\begin{tikzcd}
+    &&&&&& P \\
+    \\
+    0 && {\ker \pi} && {F(P)} && P && 0
+    \arrow["\pi", two heads, from=3-5, to=3-7]
+    \arrow[from=3-7, to=3-9]
+    \arrow["\operatorname{id}", from=1-7, to=3-7]
+    \arrow["{\exists \iota}"{description}, from=1-7, to=3-5]
+    \arrow[from=3-1, to=3-3]
+    \arrow[hook, from=3-3, to=3-5]
+    \arrow["\iota", curve={height=-18pt}, dashed, from=3-7, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbNCwyLCJGKFApIl0sWzYsMiwiUCJdLFs4LDIsIjAiXSxbNiwwLCJQIl0sWzIsMiwiXFxrZXIgXFxwaSJdLFswLDIsIjAiXSxbMCwxLCJcXHBpIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzEsMl0sWzMsMSwiXFxpZCJdLFszLDAsIlxcZXhpc3RzIFxcaW90YSIsMV0sWzUsNF0sWzQsMCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwwLCJcXGlvdGEiLDAseyJjdXJ2ZSI6LTMsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+Since \( \pi \circ \iota \), the SES splits and this \( F(P) \cong P \oplus \ker \pi \), making \( P \) a direct summand of a free module.
+:::
+
+::: {.example title="?"}
+Not every projective module is free. Let \( R = R_1 \times R_2 \) a direct product of unital rings. Then \( P \coloneqq R_1 \times\left\{{0}\right\} \) and \( P' \coloneqq\left\{{0}\right\} \times R_2 \) are \( R{\hbox{-}} \)modules that are submodules of \( R \). They're projective since \( R \) is free over itself as an \( R{\hbox{-}} \)module, and their direct sum is \( R \). However they can not be free, since e.g. \( P \) has a nonzero annihilator: taking \( (0, 1)\in R \), we have \( (0, 1) \cdot P = \left\{{(0, 0)}\right\} = 0_R \). No free module has a nonzero annihilator, since ix \( 0\neq r\in R \) then \( rR \neq 0 \) since \( r 1_R\in r R \), which implies that \( r \qty{ \bigoplus R } \neq 0 \).
+:::
+
+::: {.example title="?"}
+Taking \( R = {\mathbb{Z}}/6{\mathbb{Z}}= {\mathbb{Z}}/2{\mathbb{Z}}\oplus {\mathbb{Z}}/3{\mathbb{Z}} \) admits projective \( R{\hbox{-}} \)modules which are not free.
+:::
+
+::: {.example title="?"}
+Let \( F \) be a field, define the ring \( R \coloneqq\operatorname{Mat}(n \times n, F) \) with \( n\geq 2 \), and set \( V = F^n \) thought of as column vectors. This is left \( R{\hbox{-}} \)module, and decomposes as \( R = \bigoplus _{i=1}^n V \) corresponding to the columns of \( R \), using that \( AB = [Ab_1, \cdots, Ab_n] \). Then \( V \) is a projective \( R{\hbox{-}} \)module as a direct summand of a free module, but it is not free. We have vector spaces, so we can consider dimensions: \( \dim_F R = n^2 \) and \( \dim_F V = n \), so \( V \) can't be a free \( R{\hbox{-}} \)module since this would force \( \dim_F V = kn^2 \) for some \( k \).
+:::
+
+::: {.example title="?"}
+How many projective modules are there in a given category? Let \( \mathcal{C}\coloneqq{\operatorname{Ab}}^{\operatorname{fin}} \) be the category of *finite* abelian groups, where we take the full subcategory of the category of all abelian groups. This is an abelian category, although it is not closed under *infinite* direct sums or products, which has no projective objects.
+
+::: {.proof title="?"}
+Over a PID, every submodule of a free module is free, and so we have free \( \iff \) projective in this case. So equivalently, we can show there are no free \( {\mathbb{Z}}{\hbox{-}} \)modules, which is true because \( {\mathbb{Z}} \) is infinite, and any such module would have to contain a copy of \( {\mathbb{Z}} \).
+:::
+:::
+
+::: {.remark}
+The definition of projective objects extends to any abelian category, not just \( R{\hbox{-}} \)modules.
+:::
 
 [^1]: See appendix A 1.6 for initial and terminal objects. Note that \( \emptyset \) is an initial but non-terminal object in \( {\operatorname{Set}} \), whereas zero objects are both.
 
