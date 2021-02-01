@@ -909,6 +909,252 @@ C^0(S^1, \underline{{\mathbb{Z}}}) &\xrightarrow{{{\partial}}} C^1(S^1, \underli
 Which yields \( H^*(S^1, \underline{{\mathbb{Z}}}) = [{\mathbb{Z}}, {\mathbb{Z}}, 0, \cdots] \).
 :::
 
+# Sheaf Cohomology (Friday, January 29)
+
+Last time: we defined the Čech complex \( C_{\mathfrak{U} }^p(X, \mathcal{F} ) \coloneqq\prod_{i_1, \cdots, i_p} \mathcal{F} (U_{i_1} \cap\cdots \cap U_{i_p}) \) for \( \mathfrak{U}\coloneqq\left\{{U_i}\right\} \) is an open cover of \( X \) and \( F \) is a sheaf of abelian groups.
+
+::: {.fact}
+If \( \mathfrak{U} \) is a sufficiently fine cover then \( H^p_{\mathfrak{U}}(X, \mathcal{F}) \) is independent of \( \mathfrak{U} \), and we call this \( H^p(X; \mathcal{F}) \).
+:::
+
+::: {.remark}
+Recall that we computed \( H^p(S^1, \underline{{\mathbb{Z}}} = [{\mathbb{Z}}, {\mathbb{Z}}, 0, \cdots] \).
+:::
+
+::: {.theorem title="?"}
+Let \( X \) be a paracompact and locally contractible topological space. Then \( H^p(X, \underline{{\mathbb{Z}}}) \cong H^p_{{\operatorname{Sing}}}(X, \underline{{\mathbb{Z}}}) \). This will also hold more generally with \( \underline{{\mathbb{Z}}} \) replaced by \( \underline{A} \) for any \( A\in {\operatorname{Ab}} \).
+:::
+
+::: {.definition title="Acyclic Sheaves"}
+We say \( \mathcal{F} \) is *acyclic* on \( X \) if \( H^{> 0 }(X; \mathcal{F}) = 0 \).
+:::
+
+::: {.remark}
+How to visualize when \( H^1(X; \mathcal{F}) = 0 \):
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-01-29_14-01.pdf_tex} };
+\end{tikzpicture}
+```
+On the intersections, we have \( \operatorname{im}{{\partial}}^0 = \left\{{ (s_{i} - s_{j})_{ij} {~\mathrel{\Big|}~}s_i \in \mathcal{F}(U_i)}\right\} \), which are *cocycles*. We have \( C^1(X; \mathcal{F}) \) are collections of sections of \( \mathcal{F} \) on every double overlap. We can check that \( \ker {{\partial}}^1 = \left\{{ (s_{ij}) {~\mathrel{\Big|}~}s_{ij} - s_{ik} + s_{jk} = 0}\right\} \), which is the cocycle condition. From the exercise from last class, \( {{\partial}}^2 = 0 \).
+:::
+
+::: {.theorem title="(Important!)"}
+Let \( X \) be a paracompact Hausdorff space and let
+\[
+0 \to \mathcal{F}_1 \xrightarrow{\varphi} \mathcal{F}_2 \to \mathcal{F}_3 \to 0   
+\]
+be a SES of sheaves of abelian groups, i.e. \( \mathcal{F}_3 = \operatorname{coker}(\varphi) \) and \( \varphi \) is injective. Then there is a LES in cohomology:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {H^0(X; \mathcal{F}_1)} && {H^0(X; \mathcal{F}_2)} && {H^0(X; \mathcal{F}_3)} \\
+    \\
+    && {H^1(X; \mathcal{F}_1)} && {H^1(X; \mathcal{F}_2)} && {H^1(X; \mathcal{F}_3)} \\
+    \\
+    && \cdots
+    \arrow[from=1-7, to=3-3]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=5-3]
+\end{tikzcd}
+```
+:::
+
+::: {.example title="?"}
+For \( X \) a manifold, we can define a map and its cokernel sheaf:
+
+\[
+0 \to \underline{{\mathbb{Z}}} \xrightarrow{\cdot 2} \underline{{\mathbb{Z}}} \to \underline{{\mathbb{Z}}/2{\mathbb{Z}}} \to 0
+.\]
+Using that cohomology of constant sheaves reduces to singular cohomology, we obtain a LES in homology:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {H^0(X; {\mathbb{Z}})} && {H^0(X; {\mathbb{Z}})} && {H^0(X; {\mathbb{Z}}/2{\mathbb{Z}})} \\
+    \\
+    && {H^1(X; {\mathbb{Z}})} && {H^1(X; {\mathbb{Z}})} && {H^1(X; {\mathbb{Z}}/2{\mathbb{Z}})} \\
+    \\
+    && \cdots
+    \arrow[from=1-7, to=3-3]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=5-3]
+\end{tikzcd}
+```
+:::
+
+::: {.corollary title="of theorem"}
+Suppose \( 0 \to \mathcal{F}\to I_0 \xrightarrow{d_0} I_1 \xrightarrow{d_1} I_2 \xrightarrow{d_2} \cdots \) is an exact sequence of sheaves, so on any sufficiently small set kernels equal images., and suppose \( I_n \) is acyclic for all \( n\geq 0 \). This is referred to as an **acyclic resolution**. Then the homology can be computed at \( H^p(X; \mathcal{F}) = \ker (I_p(X) \to I_{p+1}(X)) / \operatorname{im}(I_{p-1}(X) \to I_p(X) ) \).
+
+> Note that locally having kernels equal images is different than satisfying this globally!
+:::
+
+::: {.proof title="of corollary"}
+This is a formal consequence of the existence of the LES. We can split the LES into a collection of SESs of sheaves:
+
+\[
+0 \to \mathcal{F}\to I_0 \xrightarrow{d_0} \operatorname{im}(d_0) \to 0 && \operatorname{im}(d_0) = \ker(d_1) \\ 
+0 \to \ker(d_1) \hookrightarrow I_1 \to I_1/\ker (d_1) = \operatorname{im}(d_1) && \operatorname{im}(d_1) = \ker(d_2) \\ 
+.\]
+Note that these are all exact sheaves, and thus only true on small sets. So take the associated LESs. For the SES involving \( I_0 \), we obtain:
+
+```{=tex}
+\begin{tikzcd}
+    {} \\
+    \\
+    {} &&&& \cdots \\
+    \\
+    {H^{p-1}(\mathcal{F})} && {H^{p-1}(\mathcal{I_0}) = 0} && {H^{p-1}(\mathcal{\operatorname{im}(d_0)})} \\
+    \\
+    {H^p(\mathcal{F})} && {\cdots = 0}
+    \arrow[from=5-1, to=5-3]
+    \arrow[from=5-3, to=5-5]
+    \arrow["\cong", from=5-5, to=7-1]
+    \arrow[from=7-1, to=7-3]
+    \arrow[from=3-5, to=5-1]
+\end{tikzcd}
+```
+The middle entries vanish since \( I_* \) was assumed acyclic, and so we obtain \( H^p(\mathcal{F}) \cong H^{p-1}(\operatorname{im}d_0) \cong H^{p-1}(\ker d_1) \). Now taking the LES associated to \( I_1 \), we get \( H^{p-1}(\ker d_1) \cong H^{p-2}(\operatorname{im}d_1) \). Continuing this inductively, these are all isomorphic to \( H^p(\mathcal{F}) \cong H^0(\ker d_p)/ d_{p-1}(H^0(I_{p-1})) \) after the \( p \)th step.
+:::
+
+::: {.corollary title="of the previous corollary"}
+Suppose \( \mathfrak{U}\rightrightarrows X \), then if \( \mathcal{F} \) is acyclic on each \( U_{i_1, \cdots, i_p} \), then \( \mathfrak{U} \) is sufficiently fine to compute Čech cohomology, and \( H^p_{\mathfrak{U}}(X; \mathcal{F}) \cong H^p(X; \mathcal{F}) \).
+:::
+
+::: {.proof title="?"}
+See notes.
+:::
+
+::: {.corollary title="of corollary"}
+Let \( X \in {\operatorname{Mfd}}_\setminus \), then \( H^p(X, \underline{{\mathbb{R}}}) = H^p_{\mathrm{dR}}(X;\ RR) \).
+:::
+
+::: {.proof title="?"}
+Idea: construct an acyclic resolution of the sheaf \( \underline{{\mathbb{R}}} \) on \( M \). The following exact sequence works:
+
+\[
+0 \to \underline{{\mathbb{R}}} \to {\mathcal{O}}\xrightarrow{d} \Omega^1 \xrightarrow{d} \Omega^2 \to \cdots
+.\]
+So we start with locally constant functions, then smooth functions, then smooth 1-forms, and so on. This is an exact sequence of sheaves, but importantly, not exact on the total space. To check this, it suffices to show that \( \ker d^p = \operatorname{im}d^{p-1} \) on any contractible coordinate chart. In other words, we want to show that if \( d \omega=0 \) for \( \omega\in \Omega^p({\mathbb{R}}^n) \) then \( \omega= d \alpha \) for some \( \alpha\in \Omega^{p-1}({\mathbb{R}}^n) \). This is true by integration! Using the previous corollary, \( H^p(X; \underline{{\mathbb{R}}}) = \ker(\Omega^p(X) \xrightarrow{d} \Omega^{p+1}(X) ) / \operatorname{im}(\Omega^{p-1}(X) \xrightarrow{d} \Omega^p(X)) \).
+:::
+
+> Check Hartshorne to see how injective resolutions line up with derived functors!
+
+# Monday, February 01
+
+::: {.remark}
+Last time \( \underline{{\mathbb{R}}} \) on a manifold \( M \) has a resolution by vector bundles:
+\[
+0 \to \underline{{\mathbb{R}}} \hookrightarrow\Omega^1 \xrightarrow{d} \Omega^2 \xrightarrow{d} \cdots
+.\]
+This is an exact sequence of sheaves of any smooth manifold, since locally \( d \omega = 0 \implies \omega = d \alpha \) (by the *Poincaré \( d {\hbox{-}} \)lemma*). We also want to know that \( \Omega^k \) is an acyclic sheaf on a smooth manifold.
+:::
+
+::: {.exercise title="?"}
+Let \( X\in Top \) and \( \mathcal{F}\in {\operatorname{Sh}}({\operatorname{Ab}})_{/X} \). We say \( \mathcal{F} \) is **flasque** if and only if for all \( U \supseteq V \) the map \( \mathcal{F}(U) \xrightarrow{\rho_{UV}} \mathcal{F}(V) \) is surjective. Show that \( \mathcal{F} \) is acyclic, i.e. \( H^i(X; \mathcal{F}) = 0 \). This can also be generalized with a POU.
+:::
+
+::: {.example title="?"}
+The function \( 1/x\in {\mathcal{O}}({\mathbb{R}}\setminus\left\{{0}\right\}) \), but doesn't extend to a continuous map on \( {\mathbb{R}} \). So the restriction map is not surjective.
+:::
+
+::: {.remark}
+Any vector bundle on a smooth manifold is acyclic. Using the fact that \( \Omega^k \) is acyclic and the above resolution of \( \underline{{\mathbb{R}}} \), we can write \( H^k(X; {\mathbb{R}}) = \ker(d_k) / \operatorname{im}d_{k-1} \coloneqq H^k_{dR}(X; {\mathbb{R}}) \).
+:::
+
+::: {.remark}
+Now letting \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \), recalling that \( \Omega^p \) was the sheaf of holomorphic \( p {\hbox{-}} \)forms. Locally these are of the form \( \sum_{{\left\lvert {I} \right\rvert} = p} f_I(\mathbf{z}) dz^I \) where \( f_I(\mathbf{z}) \) is holomorphic. There is a resolution
+\[
+0 \xrightarrow{} \Omega^p \xrightarrow{} A^{p, 0}
+,\]
+where in \( A^{p, 0} \) we allowed also \( f_I \) are *smooth*. These are the same as bundles, but we view sections differently. The first allows only holomorphic sections, whereas the latter allows smooth sections. What can you apply to a smooth \( (p, 0) \) form to check if it's holomorphic?
+:::
+
+::: {.example title="?"}
+For \( p=0 \), we have
+\[
+0 \to {\mathcal{O}}\to A^{0, 0}
+.\]
+where we have the sheaf of holomorphic functions mapping to the sheaf of smooth functions. We essentially want a version of checking the Cauchy-Riemann equations.
+:::
+
+::: {.definition title="?"}
+Let \( \omega\in A^{p, q}(X) \) where
+\[
+d \omega = \sum {\frac{\partial f_I}{\partial z_j}\,} dz^j \wedge dz^I \wedge d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu^J + \sum_j {\frac{\partial f_I}{\partial \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu_j}\,} d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu^j \wedge dz^I d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu^J\coloneqq{\partial}+ \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu 
+\]
+with \( {\left\lvert {I} \right\rvert} = p, {\left\lvert {J} \right\rvert} = q \).
+:::
+
+::: {.example title="?"}
+The function \( f(z) = z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \in A^{0, 0}({\mathbb{C}}) \) is smooth, and \( df = \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz + z d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \). This can be checked by writing \( z^j = x^j + iy^j \) and \( \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu^j = x^j - iy_j \), and \( {\frac{\partial }{\partial \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu}\,} g = 0 \) if and only if \( g \) is holomorphic. Here we get \( {\partial}\omega \in A^{p+1, q}(X) \) and \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu \in A^{p, q+1}(X) \), and we can write \( d(z \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) = {\partial}(z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) + \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \).
+:::
+
+::: {.definition title="Cauchy-Riemann Equations"}
+Recall the Cauchy-Riemann equations: \( \omega \) is a holomorphic \( (p, 0) {\hbox{-}} \)form on \( {\mathbb{C}}^n \) if and only if \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\omega = 0 \).
+:::
+
+::: {.remark}
+Thus to extend the previous resolution, we should take
+\[
+0 \to \Omega^p \hookrightarrow A^{p, 0} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} A^{p, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} A^{p, 2} \to \cdots
+.\]
+The fact that this is exact is called the *Poincaré \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu{\hbox{-}} \)lemma*.
+:::
+
+::: {.remark}
+There are no bump functions in the holomorphic world, and since \( \Omega^p \) is a holomorphic bundle, it may not be acyclic. However, the \( A^{p, q} \) *are* acyclic (since they are smooth vector bundles and thus admit POUs), and we obtain
+\[
+H^q(X; \Omega^p) = \ker( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_q) / \operatorname{im}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_{q-1})
+.\]
+Note the similarity to \( H_{\mathrm{dR}} \), using \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu \) instead of \( d \). This is called **Dolbeault cohomology**, and yields invariants of complex manifolds: the **Hodge numbers** \( h^{p, q}(X) \coloneqq\dim_{\mathbb{C}}H^q(X; \Omega^p) \). These are analogies:
+
+  Smooth                           Complex
+  -------------------------------- ------------------------------
+  \( \underline{{\mathbb{R}}} \)   \( \Omega^p \)
+  \( \Omega^k \)                   \( A^{p, q} \)
+  Betti numbers \( \beta_k \)      Hodge numbers \( h^{p, q} \)
+
+Note the slight overloading of terminology here!
+:::
+
+::: {.theorem title="Properties of Singular Cohomology"}
+Let \( X\in {\operatorname{Top}} \), then \( H_{{\operatorname{Sing}}}^i(X; {\mathbb{Z}}) \) satisfies the following properties:
+
+-   Functoriality: given \( f\in {\operatorname{Hom}}_{\operatorname{Top}}(X, Y) \), there is a pullback \( f^*: H^i(Y; {\mathbb{Z}}) \to H^i(X; {\mathbb{Z}}) \).
+
+-   The cap product: a pairing
+    \[
+    H^i(X; {\mathbb{Z}}) \otimes_{\mathbb{Z}}H_j(X; {\mathbb{Z}}) &\to H_{j-i}(X; {\mathbb{Z}}) \\
+    \varphi\otimes\sigma &\mapsto \varphi\qty{{ \left.{{\sigma}} \right|_{{\Delta_{0, \cdots, j}}} }} { \left.{{ \sigma}} \right|_{{\Delta_{i, \cdots, j}}} }
+    .\]
+    This makes \( H_* \) a module over \( H^* \).
+
+-   There is a ring structure induced by the cup product:
+    \[
+    H^i(X; {\mathbb{R}}) \times H^j(X; {\mathbb{R}})\to H^{i+j}(X; {\mathbb{R}}) && \alpha\cup \beta &= (-1)^{ij} \beta \cup \alpha
+    .\]
+
+-   Poincaré Duality: If \( X \) is an oriented manifold, there exists a fundamental class \( [X] \in H_{n}(X; {\mathbb{Z}}) \cong {\mathbb{Z}} \) and \( ({\,\cdot\,})\cap X: H^i \to H_{n-i} \) is an isomorphism.
+:::
+
+::: {.remark}
+Let \( M \subset X \) be a submanifold where \( X \) is a smooth oriented \( n{\hbox{-}} \)manifold. Then \( M \hookrightarrow X \) induces a pushforward \( H_n(M; {\mathbb{Z}}) \xrightarrow{\iota_*} H_n(X; {\mathbb{Z}}) \) where \( \sigma \mapsto \iota \circ \sigma \). Using Poincaré duality, we'll identify \( H_{\dim M}(X; {\mathbb{Z}}) \to H^{\operatorname{codim}M}(X; {\mathbb{Z}}) \) and identify \( [M] = PD( \iota_*( [M])) \). In this case, if \( M\pitchfork N \) then \( [M] \cap [N] = [M \cap N] \), i.e. the cap product is given by intersecting submanifolds.
+:::
+
+::: {.warnings}
+This can't always be done! There are counterexamples where homology classes can't be represented by submanifolds.
+:::
+
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
 [^2]: Locally admits a chart to \( {\mathbb{C}}^n/ \Gamma \) for \( \Gamma \) a finite group.
