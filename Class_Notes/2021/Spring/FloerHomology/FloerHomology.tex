@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-01-28 }
+{\tiny \textit{Last updated:} 2021-02-02 }
 \end{flushleft}
 
 
@@ -2204,6 +2204,200 @@ symplectic manifold, a pair \(L_0, L_1 \subset M\) such that
 \(\mathcal{P}(L_0, L_1)\).
 
 \end{remark}
+
+\hypertarget{tuesday-february-02}{%
+\section{Tuesday, February 02}\label{tuesday-february-02}}
+
+\begin{remark}[Setup]
+
+We're working with a symplectic manifold, i.e.~a pair
+\((M^{2n}, \omega)\) where \(\omega \in \Omega^2\) is closed,
+i.e.~\(d \omega = 0\), and nondegenerate,
+i.e.~\(\bigvee^n \omega \neq 0\). We were also consider
+\(L^n_0, L^n_1 \subset M\) Lagrangian submanifolds,
+i.e.~\({ \left.{{ \omega }} \right|_{{L_i}} } = 0\). The goal is to do
+something like Morse homology on \(\mathcal{P}(L_0, L_1)\) where the
+critical points corresponds to intersection points \(L_0 \cap L_1\),
+where we'll assume \(L_0 \pitchfork L_1\).
+
+\end{remark}
+
+\begin{question}
+
+What is the analog of a Morse function?
+
+\end{question}
+
+\begin{remark}
+
+The functional \(f\) is defined on the \emph{universal cover}
+\(\overline{\mathcal{P}}(L_0, L_1) \to {\mathbb{R}}\). We can get around
+knowing much about \(f\) because we only ever need derivatives \(df\)
+and a metric \(g\) on the path space to talk about the gradient
+\(\nabla_g f\). We'll define a 1-form
+\(\alpha: T \mathcal{P}(L_0, L_1) \to {\mathbb{R}}\), where we can
+define this tangent space as \(T_{\gamma} \mathcal{P}(L_0, L_1)\) where
+\(\gamma(s): I \to M\). Set \(u(s, t)\) to be a path from \(\gamma\) to
+\(\gamma'\) where \(u(s, 0) = \gamma\) and \(u(s, 1) = \gamma'\) and
+\({\frac{\partial u}{\partial t}\,}\Big|_{t=0}\), which is a tangent
+vector to \(\gamma\) and thus
+\({\frac{\partial u}{\partial t}\,}(s, 0) \in T_{\gamma(s)}M\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-02-02-11-29-54.png}
+\caption{image\_2021-02-02-11-29-54}
+\end{figure}
+
+Upshot: tangent vectors in \(T_{\gamma} \mathcal{P}(L_0, L_1)\) are
+given by \(\xi(s) \in T_{\gamma(s)}M\) for every \(s \in I\), i.e.~a way
+to push the path off of itself to obtain a new path.
+
+We can thus define
+\begin{align*}
+\alpha: T\mathcal{P}(L_0, L_1) &\to {\mathbb{R}}\\
+( \gamma, \xi \in T_{\gamma} \mathcal{P}) &\mapsto \alpha_{\gamma}{\xi} \coloneqq\int_0^1 \omega( \dot{\gamma}(s), \xi(s)) ds
+.\end{align*}
+Does this have the property we want? I.e. is it zero when \(\gamma\) is
+the constant path?
+
+\end{remark}
+
+\begin{lemma}[?]
+
+\begin{align*}
+\alpha _{\gamma} \equiv 0 \iff \gamma(s) \text{ is constant} \iff \dot{ \gamma(s)} = 0 \text{ for all } \gamma \iff \gamma(s) \in L_0 \cap L_1
+.\end{align*}
+
+\end{lemma}
+
+\begin{proof}[?]
+
+\begin{align*}
+\alpha _{\gamma} \equiv 0 \iff \int_0^1 \omega( \dot{\gamma}(s), \xi(s)) ds = 0 \text{ for all } \xi\not\equiv 0
+.\end{align*}
+
+\begin{claim}
+
+If \(\dot{\gamma}(s) \neq 0\) for some \(s\) then this is also true in
+an open neighborhood by smoothness, so one can find a \(\xi\) such that
+
+\begin{itemize}
+\tightlist
+\item
+  \(\omega( \dot{\gamma(s)}, \xi(s) ) \geq 0\), and
+\item
+  There is some open subinterval \((a, b) \subseteq [0, 1]\) on which
+  \(\xi\) is nonzero, and thus the integral is strictly positive.
+\end{itemize}
+
+\end{claim}
+
+We'll need a few tools:
+
+\begin{definition}[Almost Complex Structure]
+
+An \textbf{almost complex structure} is a bundle automorphism
+\(J: TM\to TM\) such that \(J \circ J = - \one_{TM}\). It is said to be
+\textbf{compatible} with \(\omega\) if and only if
+
+\begin{itemize}
+\tightlist
+\item
+  Positivity: For every \(v\neq 0\), \(\omega(v, Jv) > 0\).
+\item
+  ``Symplectic Isometry'': For all \(v, w \in TM\),
+  \(\omega(Jv, Jw) = \omega(v, w)\).
+\end{itemize}
+
+In this case, there is a Riemannian metric defined by
+\(g(v, w) = \omega(v, Jw)\). Conversely, given an almost complex
+structure \(J\) and a metric \(J\), there is a symplectic form defined
+by \(\omega(v, w) = \omega(Jv, Jw) \coloneqq g(Jv, w)\).
+
+\todo[inline]{This may not be a closed form? Need to check later!}
+
+\end{definition}
+
+\begin{exercise}[?]
+
+Check that \(\omega\) is a symplectic form compatible with \(J\) and
+\(g\) is the corresponding metric.
+
+\end{exercise}
+
+\begin{exercise}[?]
+
+Given a symplectic form \(\omega\) and a Riemannian metric \(g\) there
+exists a canonical almost complex structure \(J\) compatible with
+\(\omega\) such that the previous process sends \((\omega, J)\) to
+\(g\).
+
+\end{exercise}
+
+\begin{corollary}[?]
+
+Any symplectic manifold \((M, \omega)\) has a compatible almost complex
+structures \(J\).
+
+\end{corollary}
+
+\begin{theorem}[?]
+
+The space of all almost complex structures on \(M\) compatible with
+\(\omega\) is contractible.
+
+\end{theorem}
+
+Here we can use that \(\xi(s) = J \dot{ \gamma}(s)\) which implies
+\(\omega( \dot{\gamma}(s), J \dot{\gamma(s)}) = \omega( \dot{ \gamma(s)}, \xi(s) ) > 0\),
+which happens if and only if \(\dot{ \gamma}(s) \neq 0\).
+
+So pick an almost complex structure compatible with \(\omega\) and
+produce a metric \(g\). We'll define a metric on
+\(\mathcal{P}(L_0, L_1)\) by the following: for
+\(\xi, \eta \in T_{\gamma} \mathcal{P}\), recalling that
+\(\xi = \xi(s), \eta = \eta(s) \in T_{\gamma(s)}M\), set
+\begin{align*}
+g_{\gamma}^\mathcal{P}( \xi, \eta) \coloneqq\int_0^1 g( \xi(s), \eta(s) ) ds = \int_0^1 \omega(\xi, J \eta) ds
+.\end{align*}
+
+\begin{exercise}[?]
+
+Check that \(g^\mathcal{P}\) is a metric on \(\mathcal{P}(L_0, L_1)\).
+
+\end{exercise}
+
+We'll now define a \textbf{gradient vector field}:
+\begin{align*}
+g_{\gamma}^\mathcal{P}( -\nabla, {\,\cdot\,}) = \alpha({\,\cdot\,})
+.\end{align*}
+So here \(\alpha\) will play the role of \(-df\). We can write
+\begin{align*}
+\int_0^1 \omega( - \nabla, J \xi) ds = \int_0^1 \omega( \cdot{\gamma}, \xi) ds
+.\end{align*}
+Using compatibility, the LHS is equal to
+\begin{align*}
+\cdots = \int_0^1 \omega(-J \nabla, J^2 \xi) ds 
+= \int_0^1 \omega(J \nabla, \xi) ds
+.\end{align*}
+So the RHS is equal to this for every \(\xi\), which means that
+\(J \nabla= \dot{\gamma}\). Multiplying both sides by \(J\) yields
+\(\nabla= -J \dot{\gamma}\) What are the trajectories of
+\(J \cdot{ \gamma}(s)\in T_{\gamma} \mathcal{P}\)? We can compute
+\begin{align*}
+{\frac{\partial u}{\partial t}\,} (s, t) = J {\frac{\partial u}{\partial s}\,}(s, t)
+.\end{align*}
+Here \(t\) is the parameter that moves between paths, and \(s\) moves
+along a given path:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-02-02-12-34-41.png}
+\caption{image\_2021-02-02-12-34-41}
+\end{figure}
+
+\end{proof}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
