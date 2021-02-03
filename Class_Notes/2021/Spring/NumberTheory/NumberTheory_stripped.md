@@ -998,8 +998,173 @@ If \( {\mathbb{Z}}_K \) is a PID, then \( {\mathbb{Z}}_K \) is Euclidean with re
 There has been some progress, a result along the lines of there being at most two exceptions, but we don't know if those exceptions exist.
 :::
 
+# Ch. 6: Ideal Theory and Quadratic Fields (Tuesday, February 02)
+
+Recall that if \( R \) is a domain, we defined \( \operatorname{Id}(R) \) as the set of nonzero ideals of \( R \), which is a monoid. We want to get to the following theorem:
+
+::: {.theorem title="Fundamental Theorem of Ideal Theory (for Quadratic Fields)"}
+Let \( K \) be a quadratic field, then \( \operatorname{Id}({\mathbb{Z}}_K) \) is a UFM.
+:::
+
+::: {.remark}
+This means that everything factors into irreducibles, and when you have unique factorization, irreducible is the same as prime. Note that "prime" here means in this monoidal sense -- does this match up with the existing notion of a prime ideal? I.e. that \( \mathfrak{p} \) is prime if and only if \( R/ \mathfrak{p} \) is a domain, or \( ab\in \mathfrak{p}\implies a,b \in \mathfrak{p} \)?
+:::
+
+::: {.proposition title="?"}
+"Prime" in the usual ring-theoretic sense is equivalent to "prime" in the monoidal sense for \( \operatorname{Id}({\mathbb{Z}}_K) \).
+:::
+
+::: {.remark}
+Recall though that \( \operatorname{Id}({\mathbb{Z}}_K) \) is a reduced monoid, so the only unit is the identity, so uniqueness is just up to ordering and doesn't involve additional units. We can restart the unique factorization theorem:
+:::
+
+::: {.proposition title="?"}
+Every nonzero ideal of \( {\mathbb{Z}}_K \) factors uniquely as a product of prime ideals in \( {\mathbb{Z}}_K \).
+:::
+
+Can we explicitly understand what ideals of \( {\mathbb{Z}}_K \) look like for quadratic fields?
+
+::: {.definition title="Standard Bases of Ideals"}
+Let \( K = {\mathbb{Q}}(\sqrt{d}) \), so \( {\mathbb{Z}}_K = {\mathbb{Z}}[\sqrt d] \) if \( d=2,3 \pmod 4 \) or \( {\mathbb{Z}}\left[ {1 + \sqrt{d} \over 2} \right] \) if \( d=1 \pmod 4 \). Define \( \tau = \sqrt{d} \) or \( (1 + \sqrt{d}) /2 \) accordingly and write \( {\mathbb{Z}}_k = {\mathbb{Z}}[\tau] \).
+:::
+
+::: {.remark}
+Note that \( \left\{{ 1, \tau }\right\} \) is a \( {\mathbb{Z}}{\hbox{-}} \)basis of \( {\mathbb{Z}}_K \). An ideal of \( {\mathbb{Z}}_K \) is a submodule as a \( {\mathbb{Z}}{\hbox{-}} \)module, which is free, so any ideal is free of rank at most 2. Can we write down such a basis?
+:::
+
+::: {.lemma title="?"}
+Let \( I \) be a nonzero ideal of \( {\mathbb{Z}}_K \), then \( I \) contains a nonzero integer and an element of the form \( a + b \tau \) where \( b\neq 0 \).
+:::
+
+::: {.proof title="of lemma"}
+How to produce a nonzero rational integer: let \( \alpha\in I \) be nonzero and take the norm. Then \( N \alpha \) is a nonzero integer, and since \( \mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu\in {\mathbb{Z}}_K \) we have \( N \alpha = \alpha \mkern 1.5mu\overline{\mkern-1.5mu \alpha\mkern-1.5mu}\mkern 1.5mu \in I \). Now since \( \tau\in {\mathbb{Z}}_K \) and \( I \) absorbs multiplication we can set \( b \coloneqq N \alpha(\tau) \in I \).
+:::
+
+We wanted a nice description of bases for ideals -- here it is!
+
+::: {.proposition title="Constructing a standard basis for an ideal"}
+Let \( I {~\trianglelefteq~}{\mathbb{Z}}_K \) be a nonzero ideal. Choose \( n\in {\mathbb{Z}}^+ \) such that \( I \cap{\mathbb{Z}}= n{\mathbb{Z}} \).[^4] Choosing \( B \in {\mathbb{Z}}^+ \) such that \( \left\{{ b\in {\mathbb{Z}}{~\mathrel{\Big|}~}a + b \tau\in I \text{ for some } a \in {\mathbb{Z}}}\right\} = B{\mathbb{Z}} \).[^5] Since \( B \) is in the LHS, pick \( A\in {\mathbb{Z}} \) with \( A + B\tau \in I \). Then \( \left\{{n, A+B\tau}\right\} \) is a \( {\mathbb{Z}}{\hbox{-}} \)basis for \( I \). Any such basis is referred to as a **standard basis** for \( I \)
+:::
+
+::: {.remark}
+Note that this is only determined up to \( A \pmod n \).
+:::
+
+::: {.proof title="?"}
+Take any element in \( I \), which can be represented as \( a + b \tau \), we want to show that this can be expressed in terms of the proposed basis. Note that \( B\divides b \) by its definition, since \( B \) generated the ideal of \( \tau \) coefficients. So write \( b = Bs \), then
+\[
+( a + b \tau) - (A + b \tau)s \in {\mathbb{Z}}\cap I = \left\langle{ n }\right\rangle 
+.\]
+So write this difference as \( nr \) for some \( r\in {\mathbb{Z}} \), then rearranging yields
+\[
+a + b \tau = nr + (A + B \tau)s
+,\]
+which is a \( {\mathbb{Z}}{\hbox{-}} \)linear combination of the standard basis elements. Uniqueness is easy and follows from the fact that every element in \( {\mathbb{Z}}_K \) has a unique representation in terms of \( 1, \tau \).
+:::
+
+## Ideal Norms
+
+In the previous section, we used the fact that for \( a\in {\mathbb{Z}}_k \), the number of elements in \( {\mathbb{Z}}_K / \left\langle{ n }\right\rangle \) is \( {\left\lvert { N a } \right\rvert} \). That will be a consequence of the theory we develop here.
+
+::: {.definition title="?"}
+If \( I{~\trianglelefteq~}{\mathbb{Z}}_K \) is a nonzero ideal, define the **norm of \( I \)** as \( N(I) = {\left\lvert {{\mathbb{Z}}_K / I} \right\rvert} \).
+:::
+
+::: {.remark}
+It's not completely obvious, but this quotient is always finite. We can use the fact that \( I\leq {\mathbb{Z}}_K \) is a \( {\mathbb{Z}}{\hbox{-}} \)submodule of rank exactly 2. It's then a general fact from algebra that \( A/B \) is finite when \( \operatorname{rank}(A) = \operatorname{rank}(B) \), and there are ways of figuring out the number of elements (see normal forms).
+:::
+
+::: {.proposition title="?"}
+Suppose that \( I{~\trianglelefteq~}{\mathbb{Z}}_K \) is a nonzero ideal and let \( n, A+B \tau \) be a standard basis for \( I \). Then \( N(I) = nB \in {\mathbb{Z}}^+ \).
+:::
+
+::: {.proof title="?"}
+Check that \( \left\{{ a + b \tau {~\mathrel{\Big|}~}0\leq a \leq n,\, 0 \leq b \leq B}\right\} \) is a complete and irredundant set of representatives for \( {\mathbb{Z}}_K/I \).
+:::
+
+::: {.remark}
+So given a standard basis, it's easy to compute norms! What does this have to do with the previous notion of norms for elements?
+:::
+
+::: {.theorem title="?"}
+Let \( I {~\trianglelefteq~}{\mathbb{Z}}_K \) be nonzero and define \( \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\{{ \mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu{~\mathrel{\Big|}~}\alpha \in I }\right\} {~\trianglelefteq~}{\mathbb{Z}}_K \). Then \( I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\langle{ N(I) }\right\rangle \).
+:::
+
+::: {.lemma title="?"}
+Let \( n, A + B \tau \) be a standard basis for \( I \). Then \( B\divides n \) and \( B\divides A \).
+:::
+
+::: {.proof title="of lemma"}
+Recall that \( B \) was a generator for \( \tau \) components of elements of \( I \), so we just need to find an element of \( I \) with \( \tau \) component \( n \), and \( n \tau \in I \) works.
+
+Now compute \( (A + B \tau) \tau\in I \). This is equal to
+\[
+A \tau + B \tau^2
+.\]
+Note that this could in principle be done in cases: if \( \tau = \sqrt{d} \), \( Bd \) would be an integer and \( A \) would be the \( \tau \) coordinate. Then since \( B \) divides every \( \tau \) coefficient, we'd be done. But let's try this in a more unified way: we know \( \tau \) is a root of a monic degree 2 polynomial, namely \( (x - \tau) (x - \mkern 1.5mu\overline{\mkern-1.5mu\tau\mkern-1.5mu}\mkern 1.5mu) = x^2 - \operatorname{Tr}( \tau)x + N( \tau) \), and thus we can write
+\[
+\tau^2 = \operatorname{Tr}( \tau) \tau - N( \tau)
+.\]
+Substituting yields
+\[
+(A + B \tau) \tau
+&= A \tau + B \tau^2 \\
+&= A \tau + B ( \operatorname{Tr}( \tau) \tau - N( \tau) ) \\
+&= - B N( \tau) + (A + B \operatorname{Tr}( \tau ) ) \tau
+.\]
+The coefficient of \( \tau \) must be a multiple of \( B \), which forces \( B\divides A \).
+:::
+
+::: {.proof title="of theorem"}
+Let \( n, A + B \tau \) be a standard basis for \( I \). Then \( I = \left\langle{ n, A+ B \tau }\right\rangle \), which is a generating set as a \( {\mathbb{Z}}_K{\hbox{-}} \)module since they generate \( I \) over \( {\mathbb{Z}} \) and subset containment both ways can be readily checked. We can then write \( \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\langle{ n, A+B \mkern 1.5mu\overline{\mkern-1.5mu\tau \mkern-1.5mu}\mkern 1.5mu}\right\rangle \), since conjugating ordinary integers doesn't change them. Using the lemma, we can write
+\[
+I &= \left\langle{ Bn', BA' + B \tau }\right\rangle\\
+\mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu &= \left\langle{ Bn', BA' + B \mkern 1.5mu\overline{\mkern-1.5mu\tau\mkern-1.5mu}\mkern 1.5mu }\right\rangle
+.\]
+
+We can factor out a \( B \) to get
+\[
+I &= \left\langle{ B }\right\rangle \left\langle{ n', A' + \tau}\right\rangle \\  
+\mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu &= \left\langle{ B }\right\rangle \left\langle{ n', A' + \mkern 1.5mu\overline{\mkern-1.5mu\tau\mkern-1.5mu}\mkern 1.5mu }\right\rangle 
+.\]
+
+Now multiplying the two yields
+\[
+I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\langle{ B^2 }\right\rangle \left\langle{ (n')^2, n'(A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu ), n'(A' + \tau), N(A' + \tau) }\right\rangle  
+.\]
+It's tempting to factor out \( n' \), but it isn't obviously in the last factor. But it is! Note that \( N(A' + \tau) \in \left\langle{ A' + \tau, n' }\right\rangle \) and thus \( B N(A' + gt) \in \left\langle{ B }\right\rangle \left\langle{ A' + \tau, n' }\right\rangle = I \). But the first expression is an ordinary integer, i.e. in \( I \cap{\mathbb{Z}}= \left\langle{ n }\right\rangle \) and thus a multiple of \( n \). So \( Bn' = n \divides BN(A' + \tau) \), and thus \( n' \divides N(A' + \tau) \). So we can rewrite
+\[
+I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu 
+&= \left\langle{ B^2 }\right\rangle \left\langle{ n' }\right\rangle \left\langle{ n', A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu , A' + \tau, { N(A' + \tau) \over n'} }\right\rangle   \\
+&= \left\langle{ B^2 n' }\right\rangle 
+\left\langle{ n', A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu , A' + \tau, { N(A' + \tau) \over  n'} }\right\rangle   
+.\]
+
+We can now note that \( B^2 n' = B^2(n/B) = nB = N(I) \). We've thus shown that
+\[
+I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu 
+= \left\langle{ N(I) }\right\rangle 
+\left\langle{ n', A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu , A' + \tau, { N(A' + \tau) \over  n'} }\right\rangle   
+.\]
+We'd really like the second term to just be \( \left\langle{ 1 }\right\rangle \). Note that this factor contains some integers: \( n', N(A' + \tau)/n' \), and \( (A' + \mkern 1.5mu\overline{\mkern-1.5mu\tau\mkern-1.5mu}\mkern 1.5mu) + (A' + \tau) = \operatorname{Tr}(A' + \tau) \). So let
+\[
+J \coloneqq\left\langle{ n, N(A' + \tau)/n', \operatorname{Tr}(A' + \tau) }\right\rangle {~\trianglelefteq~}{\mathbb{Z}}
+,\]
+then it's enough to show \( J = \left\langle{ 1 }\right\rangle {~\trianglelefteq~}{\mathbb{Z}} \). Why? If so, \( 1 \) is a \( {\mathbb{Z}}{\hbox{-}} \)linear combination of these elements, but every \( {\mathbb{Z}}{\hbox{-}} \)linear combination is also a \( {\mathbb{Z}}_K{\hbox{-}} \)linear combination. Every such combination will be in the original ideal appearing in \( I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu \), which we want to show is the unit ideal. We can write \( J = d{\mathbb{Z}} \) where \( d\in {\mathbb{Z}}^+ \) and suppose toward a contradiction that \( d>1 \). Consider \( \alpha \coloneqq(A' + \tau) / d \in K \). Taking the trace is \( {\mathbb{Q}}{\hbox{-}} \)linear, so \( \operatorname{Tr}( \alpha) = (1/d) \operatorname{Tr}(A' + \tau) \in {\mathbb{Z}} \). This follows because the trace \( \operatorname{Tr}(A' + \tau) \) is in \( J \), thus a multiple of \( d \). We can also compute \( N \alpha = N(A' + \tau) / d^2 \) using that \( d\mkern 1.5mu\overline{\mkern-1.5mud\mkern-1.5mu}\mkern 1.5mu = d^2 \) since \( d \) is rational.
+
+The claim is that \( N \alpha \) is also an integer: since \( N(A' + \tau)/n', \operatorname{Tr}(A' + \tau) \) are in \( J \), \( d \) divides both. So we know that \( d^2 \divides (n') (N(A' + \tau) / n') = N(A' + \tau) \), which forces \( N \alpha\in {\mathbb{Z}} \). So we know \( N \alpha, \operatorname{Tr}\alpha \in {\mathbb{Z}} \), which forces \( \alpha\in {\mathbb{Z}}_K \) since \( \alpha \) is a root of \( x^2 - \operatorname{Tr}(\alpha) + N \alpha \). But \( \alpha \) can't be in \( {\mathbb{Z}}_K \), since these consist only of \( {\mathbb{Z}}{\hbox{-}} \)linear combinations of \( 1, \tau \) -- however here the coefficient of \( \tau \) is \( 1/d \not \in {\mathbb{Z}} \), and thus \( \alpha = A'/d + (1/d) \tau \not\in {\mathbb{Z}}_K \).
+:::
+
+::: {.remark}
+This is a long proof! It's nice in that it's direct, but less nice in that it required some clever steps. When we do the case for general number fields, we'll be able to use a more conceptual approach that avoids some of these computations. Many other facts fall out of these theorem -- in fact, there are nice results as long as \( I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu \) is a principal ideal.
+:::
+
 [^1]: An injective ring morphism.
 
 [^2]: *Squarefree* means not divisible by \( n^2 \) for any \( n > 1\in {\mathbb{Z}} \), or equivalently not divisible by the square of any primes.
 
 [^3]: \( \impliedby \): If the norm is 1, the conjugate is the inverse. For the reverse direction, the argument was more complicated, and reduced to showing norms of units are \( \pm 1 \), and positivity forces it to be \( 1 \).
+
+[^4]: Why does this \( n \) exist? Every ideal in \( {\mathbb{Z}} \) is of the form \( n{\mathbb{Z}} \), and it's easy to check \( I \cap{\mathbb{Z}} \) is an ideal in \( {\mathbb{Z}} \) since its an ideal of \( {\mathbb{Z}}_K \) intersected with \( {\mathbb{Z}} \). How do we know it's not the zero ideal? This is exactly given by the last lemma.
+
+[^5]: The LHS is the set of coefficients of \( \tau \), which is an ideal of \( {\mathbb{Z}} \), and we can take it to be positive since the LHS is not the zero ideal by the lemma.
