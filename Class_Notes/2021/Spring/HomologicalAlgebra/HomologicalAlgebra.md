@@ -442,6 +442,7 @@
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\capprod{\frown}
+\newcommand\cupprod{\smile}
 \newcommand\Path{\mathcal{P}}
 \newcommand\gradient{\nabla}
 
@@ -752,7 +753,6 @@ See the book for classical applications:
 
 ## Operations on Chain Complexes
 
-
 :::{.remark}
 Write $\Ch$ for $\Ch(\rmod)$, then if $f,g: C\to D$ are chain maps then $f+g:C\to D$ can be defined as $(f+g)(x) = f(x) + g(x)$, since $D$ has an addition coming from its \(R\dash\)module structure.
 Thus the hom sets $\Hom_{\Ch}(C, D)$ becomes an abelian group.
@@ -788,7 +788,7 @@ See appendix for definition: the homs are abelian groups where composition distr
 Note that here we have arbitrary products.
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Subcomplexes"}
 We say $B$ is a **subcomplex** of $C$ if and only if 
 
 - $B_n \leq C_n \in \rmod$ for all $n$,
@@ -801,8 +801,7 @@ This can be alternatively stated as saying the inclusion $i: B\to C$ given by $i
 Recall that some squares need to commute, and this forces the condition on restrictions.
 :::
 
-
-:::{.definition title="Quotient Complex"}
+:::{.definition title="Quotient Complexes"}
 When $B \leq C$, we can form the quotient complex $C/B$ where 
 \[
 C_n/B_n \mapsvia{\bar{d_n}} C _{n-1} / B _{n-1}
@@ -810,6 +809,7 @@ C_n/B_n \mapsvia{\bar{d_n}} C _{n-1} / B _{n-1}
 Moreover there is a natural projection $\pi: C\to C/B$ which is a chain map.
 :::
 
+:::{.remark}
 Suppose $f:B\to C$ is a chain map, then there exist induced maps on the levelwise kernels and cokernels, so we can form the **kernel** and **cokernel** complex:
 
 \begin{tikzcd}
@@ -846,6 +846,9 @@ Here $\ker f \leq B$ is a subcomplex, and $\coker f$ is a quotient complex of $C
 The chain map $i: \ker f\to B$ is a categorical kernel of $f$ in $\Ch$, and $\pi$ is similarly a cokernel. 
 See appendix A 1.6.
 These constructions make $\Ch$ into an **abelian category**: roughly an additive category where every morphism has a kernel and a cokernel.
+
+:::
+
 
 
 # 1.2 (Wednesday, January 20)
@@ -918,7 +921,7 @@ Now the squares commute and $f_{\wait, q}$ are chain maps, so this object is an 
 
 Recall that products and coproducts of \(R\dash\)modules coincide when the indexing set is finite.
 
-:::{.definition title="?"}
+:::{.definition title="Total Complexes"}
 Given a double complex $C_{\wait, \wait}$, there are two ordinary chain complexes associated to it referred to as **total complexes**:
 \[
 (\Tot^{\prod_{}} C)_n \da \prod_{p+q = n} C_{p, q}
@@ -1076,7 +1079,7 @@ given $f: C\to D$, define $f[p]: C[p] \to D[p]$ by $f[p]_n \da f_{n+p}$, and a s
 
 ## Long Exact Sequences
 
-
+:::{.remark}
 Some terminology: in an abelian category \( \mathcal{A}  \) an example of an **exact complex**  in \( \Ch(\mathcal{A})  \) is
 \[
 \cdots \to 0 \to A \mapsvia{f} B \mapsvia{g} C \to 0 \to \cdots
@@ -1089,6 +1092,7 @@ As a special case, if $0\to A\to 0$ is exact then $A$ must be zero, since the im
 This also happens when every other term is zero.
 If $0\to A \mapsvia{f} B \to 0$, then $A \cong B$ since $f$ is both injective and surjective (say for \(R\dash\)modules).
 
+:::
 
 :::{.theorem title="Long Exact Sequences"}
 Suppose $0\to A\to B \to C \to 0$ is a SES in \( \Ch(\mathcal{A}) \) (note: this is a sequence of *complexes*), then there are natural maps 
@@ -1122,9 +1126,7 @@ Similarly, replacing chain complexes by cochain complexes yields a similar conne
 
 The proof that this sequence exists is a consequence of the *snake lemma*.
 
-
 :::{.lemma title="The Snake Lemma"}
-
 The sequence highlighted in red in the following diagram is exact:
 
 \begin{tikzcd}[column sep=tiny]
@@ -1165,7 +1167,11 @@ The sequence highlighted in red in the following diagram is exact:
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMjEsWzQsMiwiQSJdLFs2LDIsIkIiXSxbOCwyLCJDIl0sWzQsNCwiQSciXSxbNiw0LCJCJyJdLFs4LDQsIkMnIl0sWzIsNCwiMCJdLFsyLDIsIjAiXSxbNCwwLCJ7XFxjb2xvcntyZWR9XFxrZXIoXFxhbHBoYSl9Il0sWzIsMCwie1xcY29sb3J7cmVkfVxca2VyKGYpfSJdLFs2LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGJldGEpfSJdLFs4LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGdhbW1hKX0iXSxbNCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGFscGhhKX0iXSxbNiw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGJldGEpfSJdLFs4LDYsIntcXGNvbG9ye3JlZH1cXGNva2VyKFxcZ2FtbWEpfSJdLFsxMCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihnJyl9Il0sWzAsMCwiMCJdLFsxMiw2LCIwIl0sWzcsM10sWzEwLDIsIjAiXSxbMTAsNCwiMCJdLFs2LDNdLFszLDQsImYnIl0sWzQsNSwiZyciXSxbMCwxLCJmIl0sWzEsMiwiZyJdLFs3LDBdLFsxLDQsIlxcYmV0YSIsMV0sWzIsNSwiXFxnYW1tYSIsMV0sWzAsMywiXFxhbHBoYSIsMV0sWzEyLDEzXSxbMTMsMTRdLFsxNCwxNV0sWzE1LDE3XSxbMTYsOV0sWzksOF0sWzgsMTBdLFsxMCwxMV0sWzExLDEyXSxbNSwyMF0sWzIsMTldXQ==)
 
-Existence:
+
+:::
+
+:::{.proof title="of the Snake Lemma: Existence"}
+\envlist
 
 - Start with $c\in \ker(\gamma) \leq C$, so $\gamma(c) = 0 \in C'$
 - **Choose** $b\in B$ by surjectivity
@@ -1175,7 +1181,10 @@ Existence:
 - Take the image $[a']\in \coker \alpha$
 - Define $\bd(c) \da [a']$.
 
-Uniqueness:
+:::
+
+:::{.proof title="of the Snake Lemma: Uniqueness"}
+\envlist
 
 - We chose $b$, suppose we chose a different $\tilde b$.
 - Then $\tilde b - b \mapsto c-c = 0$, so the difference is in $\ker g = \im f$.
@@ -1189,9 +1198,12 @@ Uniqueness:
 - Use that fact that $\tilde a = a' + \bar a$, where $\bar a \in \im \alpha$, so $[\tilde a] = [a' + \bar a] = [a'] \in \coker \alpha \da A'/\im \alpha$.
 
 
+:::
+
 \todo[inline]{A few changes in the middle, redo!}
 
-Exactness:
+:::{.proof title="of the Snake Lemma: Exactness"}
+\envlist
 
 - Let's show $g: \ker \beta\to \ker \gamma$.
   
@@ -1212,12 +1224,10 @@ Exactness:
 
 :::
 
-
 :::{.exercise title="?"}
 Show exactness at the remaining places -- the most interesting place is at $\coker \alpha$.
 Also check that all of these maps make sense.
 :::
-
 
 :::{.remark}
 We assumed that \( \mathcal{A}= \rmod  \) here, so we could chase elements, but this happens to also be true in any abelian category \( \mathcal{A}  \) but by a different proof.
@@ -1226,7 +1236,6 @@ The idea is to embed \( \mathcal{A} \to \rmod  \) for some ring $R$, do the cons
 Instead, do this for the smallest subcategory \( \mathcal{A}_0  \) containing all of the modules and maps involved in the snake lemma.
 Then \( \mathcal{A}_0 \) is small enough to embed into $\rmod$ by the **Freyd-Mitchell Embedding Theorem**.
 :::
-
 
 
 # Lecture 5 (Monday, January 25)
@@ -1458,7 +1467,8 @@ See phone pic for missed first 10m.
 ## 1.4: Chain Homotopies
 
 :::{.definition title="Split Exact"}
-?
+A complex is called **split** if there are maps $s_n: C_n \to C_{n+1}$ such that $d =dsd$.
+In this case, the maps $s_n$ are referred to as the **splitting maps**, and if $C$ is additionally acyclic, we say $C$ is **split exact**. 
 :::
 
 :::{.remark}
@@ -1705,7 +1715,7 @@ So we can convert statements about quasi-isomorphisms of complexes into exactnes
 :::
 
 > We'll skip the rest, e.g. mapping cylinders which aren't used until the section on triangulated categories.
-> We'll skip the section on \( \delta\dash \)functors, which is a slightly abstract language.
+> We'll also skip the section on \( \delta\dash \)functors, which is a slightly abstract language.
 
 ## Ch. 2: Derived Functors
 
@@ -2194,7 +2204,6 @@ All rings have 1 in this course!
 
 ## Horseshoe Lemma
 
-
 :::{.proposition title="Horseshoe Lemma"}
 Suppose we have a diagram like the following, where the columns are exact and the rows are projective resolutions:
 
@@ -2408,7 +2417,6 @@ Follows by construction.
 
 ## Injective Resolutions
 
-
 :::{.definition title="Injective Objects"}
 Let \( \mathcal{A}  \) be an abelian category, then \( I\in \mathcal{A}  \) is **injective** if and only if it satisfies the following universal property:
 $A$ is projective if and only if for every monic $\alpha :A\to I$, any map $f:A\to B$ lifts to a map $B\to I$:
@@ -2428,7 +2436,6 @@ $A$ is projective if and only if for every monic $\alpha :A\to I$, any map $f:A\
 We say \( \mathcal{A}  \) **has enough injectives** if and only if for all $A$, there exists $A\injects I$ where $I$ is injective.
 :::
 
-
 :::{.slogan}
 Maps on subobjects extend.
 :::
@@ -2437,19 +2444,16 @@ Maps on subobjects extend.
 If $\ts{I_ \alpha}$ is a family of injectives and $I \da \prod_{\alpha} I_ \alpha \in A$, then $I$ is again injective.
 :::
 
-
 :::{.proof title="?"}
 Use the universal property of direct products.
 :::
 
 ## Baer's Criterion
 
-
 :::{.proposition title="Baer's Criterion"}
 An object $E \in \rmod$ is injective if and only if for every right ideal $J \normal R$, every map $J\to E$ extends to a map $R\to E$.
 Note that $J$ is a right $R\dash$submodule.
 :::
-
 
 :::{.proof title="?"}
 $\implies$: 
@@ -2537,5 +2541,15 @@ Note that \( \alpha'' \) now extends \( \alpha' \), but \( A' \subsetneq A'' \) 
 But then $A''$ strictly contains $A'$, contradicting its maximality from Zorn's lemma.
 :::
 
+:::{.remark}
 Big question: what *are* injective modules really? 
 These are pretty nonintuitive objects.
+:::
+
+
+# Appendix: Extra Definitions
+
+:::{.definition title="Acyclic"}
+A chain complex $C$ is **acyclic** if and only if $H_*(C) = 0$.
+:::
+

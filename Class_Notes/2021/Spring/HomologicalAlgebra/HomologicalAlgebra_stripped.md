@@ -284,7 +284,7 @@ Note that if the index set is finite, these notions coincide. By convention, fin
 These structures make \( \operatorname{Ch} \) into an **additive category**. See appendix for definition: the homs are abelian groups where composition distributes over addition, existence of a zero object, and existence of finite products. Note that here we have arbitrary products.
 :::
 
-::: {.definition title="?"}
+::: {.definition title="Subcomplexes"}
 We say \( B \) is a **subcomplex** of \( C \) if and only if
 
 -   \( B_n \leq C_n \in {R{\hbox{-}}\mathrm{mod}} \) for all \( n \),
@@ -295,7 +295,7 @@ We say \( B \) is a **subcomplex** of \( C \) if and only if
 This can be alternatively stated as saying the inclusion \( i: B\to C \) given by \( i_n: B_n \to C_n \) is a morphism of chain complexes. Recall that some squares need to commute, and this forces the condition on restrictions.
 :::
 
-::: {.definition title="Quotient Complex"}
+::: {.definition title="Quotient Complexes"}
 When \( B \leq C \), we can form the quotient complex \( C/B \) where
 \[
 C_n/B_n \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mud_n\mkern-1.5mu}\mkern 1.5mu} C _{n-1} / B _{n-1}
@@ -303,6 +303,7 @@ C_n/B_n \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mud_n\mkern-1.5mu}\mkern 1.
 Moreover there is a natural projection \( \pi: C\to C/B \) which is a chain map.
 :::
 
+::: {.remark}
 Suppose \( f:B\to C \) is a chain map, then there exist induced maps on the levelwise kernels and cokernels, so we can form the **kernel** and **cokernel** complex:
 
 ```{=tex}
@@ -337,6 +338,7 @@ Suppose \( f:B\to C \) is a chain map, then there exist induced maps on the leve
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMTgsWzIsNCwiQ19uIl0sWzQsNCwiQ197bi0xfSJdLFsyLDIsIkJfbiJdLFs0LDIsIkJfe24tMX0iXSxbMiwwLCJcXGtlciBmX24iXSxbNCwwLCJcXGtlciBmX3tuLTF9Il0sWzIsNiwiXFxjb2sgZl9uIl0sWzQsNiwiXFxjb2sgZl97bi0xfSJdLFszLDVdLFs0LDVdLFs2LDAsIlxcY2RvdHMiXSxbNiwyLCJcXGNkb3RzIl0sWzYsNCwiXFxjZG90cyJdLFs2LDYsIlxcY2RvdHMiXSxbMCw2LCJcXGNkb3RzIl0sWzAsNCwiXFxjZG90cyJdLFswLDIsIlxcY2RvdHMiXSxbMCwwLCJcXGNkb3RzIl0sWzAsMSwiZF9uIl0sWzIsMywiZF9uIl0sWzQsNSwiXFxleGlzdHMgZF9uIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsNywiXFxleGlzdHMgZF9uIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsMiwiaV97bn0iLDFdLFsyLDAsImZfbiIsMV0sWzAsNiwiXFxwaV9uIiwxXSxbMywxLCJmX3tuLTF9IiwxXSxbMSw3LCJcXHBpX3tuLTF9IiwxXSxbNSwzLCJpX3tuLTF9IiwxXSxbMTcsNF0sWzE2LDJdLFsxNSwwXSxbMTQsNl0sWzcsMTNdLFsxLDEyXSxbMywxMV0sWzUsMTBdXQ==)
 
 Here \( \ker f \leq B \) is a subcomplex, and \( \operatorname{coker}f \) is a quotient complex of \( C \). The chain map \( i: \ker f\to B \) is a categorical kernel of \( f \) in \( \operatorname{Ch} \), and \( \pi \) is similarly a cokernel. See appendix A 1.6. These constructions make \( \operatorname{Ch} \) into an **abelian category**: roughly an additive category where every morphism has a kernel and a cokernel.
+:::
 
 # 1.2 (Wednesday, January 20)
 
@@ -406,7 +408,7 @@ Now the squares commute and \( f_{{\,\cdot\,}, q} \) are chain maps, so this obj
 
 Recall that products and coproducts of \( R{\hbox{-}} \)modules coincide when the indexing set is finite.
 
-::: {.definition title="?"}
+::: {.definition title="Total Complexes"}
 Given a double complex \( C_{{\,\cdot\,}, {\,\cdot\,}} \), there are two ordinary chain complexes associated to it referred to as **total complexes**:
 \[
 (\mathrm{\operatorname{Tot}}^{\prod_{}} C)_n \coloneqq\prod_{p+q = n} C_{p, q}
@@ -547,6 +549,7 @@ We can make translation into a functor \( [p]: \operatorname{Ch}\to \operatornam
 
 ## Long Exact Sequences
 
+::: {.remark}
 Some terminology: in an abelian category \( \mathcal{A} \) an example of an **exact complex** in \( \operatorname{Ch}(\mathcal{A}) \) is
 \[
 \cdots \to 0 \to A \xrightarrow{f} B \xrightarrow{g} C \to 0 \to \cdots
@@ -555,6 +558,7 @@ Some terminology: in an abelian category \( \mathcal{A} \) an example of an **ex
 where *exactness* means \( \ker = \operatorname{im} \) at each position, i.e. \( \ker f = 0, \operatorname{im}f = \ker g, \operatorname{im}g = C \). We say \( f \) is monic and \( g \) epic.
 
 As a special case, if \( 0\to A\to 0 \) is exact then \( A \) must be zero, since the image of the incoming map must be 0. This also happens when every other term is zero. If \( 0\to A \xrightarrow{f} B \to 0 \), then \( A \cong B \) since \( f \) is both injective and surjective (say for \( R{\hbox{-}} \)modules).
+:::
 
 ::: {.theorem title="Long Exact Sequences"}
 Suppose \( 0\to A\to B \to C \to 0 \) is a SES in \( \operatorname{Ch}(\mathcal{A}) \) (note: this is a sequence of *complexes*), then there are natural maps
@@ -628,9 +632,12 @@ The sequence highlighted in red in the following diagram is exact:
 \end{tikzcd}
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMjEsWzQsMiwiQSJdLFs2LDIsIkIiXSxbOCwyLCJDIl0sWzQsNCwiQSciXSxbNiw0LCJCJyJdLFs4LDQsIkMnIl0sWzIsNCwiMCJdLFsyLDIsIjAiXSxbNCwwLCJ7XFxjb2xvcntyZWR9XFxrZXIoXFxhbHBoYSl9Il0sWzIsMCwie1xcY29sb3J7cmVkfVxca2VyKGYpfSJdLFs2LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGJldGEpfSJdLFs4LDAsIntcXGNvbG9ye3JlZH1cXGtlcihcXGdhbW1hKX0iXSxbNCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGFscGhhKX0iXSxbNiw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihcXGJldGEpfSJdLFs4LDYsIntcXGNvbG9ye3JlZH1cXGNva2VyKFxcZ2FtbWEpfSJdLFsxMCw2LCJ7XFxjb2xvcntyZWR9XFxjb2tlcihnJyl9Il0sWzAsMCwiMCJdLFsxMiw2LCIwIl0sWzcsM10sWzEwLDIsIjAiXSxbMTAsNCwiMCJdLFs2LDNdLFszLDQsImYnIl0sWzQsNSwiZyciXSxbMCwxLCJmIl0sWzEsMiwiZyJdLFs3LDBdLFsxLDQsIlxcYmV0YSIsMV0sWzIsNSwiXFxnYW1tYSIsMV0sWzAsMywiXFxhbHBoYSIsMV0sWzEyLDEzXSxbMTMsMTRdLFsxNCwxNV0sWzE1LDE3XSxbMTYsOV0sWzksOF0sWzgsMTBdLFsxMCwxMV0sWzExLDEyXSxbNSwyMF0sWzIsMTldXQ==)
+:::
 
-Existence:
-
+::: {.proof title="of the Snake Lemma: Existence"}
+```{=tex}
+\envlist
+```
 -   Start with \( c\in \ker(\gamma) \leq C \), so \( \gamma(c) = 0 \in C' \)
 -   **Choose** \( b\in B \) by surjectivity
     -   We'll show it's independent of this choice.
@@ -638,9 +645,12 @@ Existence:
 -   By exactness, \( b' \in \ker (B' \to C') = \operatorname{im}(A'\to B') \), and now produce a unique \( a'\in A' \) by injectivity
 -   Take the image \( [a']\in \operatorname{coker}\alpha \)
 -   Define \( {{\partial}}(c) \coloneqq[a'] \).
+:::
 
-Uniqueness:
-
+::: {.proof title="of the Snake Lemma: Uniqueness"}
+```{=tex}
+\envlist
+```
 -   We chose \( b \), suppose we chose a different \( \tilde b \).
 -   Then \( \tilde b - b \mapsto c-c = 0 \), so the difference is in \( \ker g = \operatorname{im}f \).
 -   Produce an \( \tilde a\in A \) such that \( \tilde a\mapsto \tilde b - b \)
@@ -651,12 +661,15 @@ Uniqueness:
 -   So \( \tilde a' + a' \) is the desired pullback of \( \tilde b' \)
 -   Then take \( [\tilde a'] \in \operatorname{coker}\alpha \); are \( a', \tilde a' \) in the same equivalence class?
 -   Use that fact that \( \tilde a = a' + \mkern 1.5mu\overline{\mkern-1.5mua\mkern-1.5mu}\mkern 1.5mu \), where \( \mkern 1.5mu\overline{\mkern-1.5mua\mkern-1.5mu}\mkern 1.5mu \in \operatorname{im}\alpha \), so \( [\tilde a] = [a' + \mkern 1.5mu\overline{\mkern-1.5mua\mkern-1.5mu}\mkern 1.5mu] = [a'] \in \operatorname{coker}\alpha \coloneqq A'/\operatorname{im}\alpha \).
+:::
 
 ```{=tex}
 \todo[inline]{A few changes in the middle, redo!}
 ```
-Exactness:
-
+::: {.proof title="of the Snake Lemma: Exactness"}
+```{=tex}
+\envlist
+```
 -   Let's show \( g: \ker \beta\to \ker \gamma \).
 
     -   Let \( b \in \ker \beta \), then consider \( \gamma(g(\beta)) = g'(\beta(b)) = g'(0) = 0 \) and so \( g(b) \in \ker \gamma \).
@@ -882,7 +895,7 @@ See phone pic for missed first 10m.
 ## 1.4: Chain Homotopies
 
 ::: {.definition title="Split Exact"}
-?
+A complex is called **split** if there are maps \( s_n: C_n \to C_{n+1} \) such that \( d =dsd \). In this case, the maps \( s_n \) are referred to as the **splitting maps**, and if \( C \) is additionally acyclic, we say \( C \) is **split exact**.
 :::
 
 ::: {.remark}
@@ -1114,7 +1127,7 @@ In the LES, all of the maps \( f_* \) are isomorphisms, which forces \( H_n(\ope
 So we can convert statements about quasi-isomorphisms of complexes into exactness of a single complex.
 :::
 
-> We'll skip the rest, e.g. mapping cylinders which aren't used until the section on triangulated categories. We'll skip the section on \( \delta{\hbox{-}} \)functors, which is a slightly abstract language.
+> We'll skip the rest, e.g. mapping cylinders which aren't used until the section on triangulated categories. We'll also skip the section on \( \delta{\hbox{-}} \)functors, which is a slightly abstract language.
 
 ## Ch. 2: Derived Functors
 
@@ -1900,7 +1913,15 @@ Is this well-defined? Consider overlapping terms, it's enough to consider elemen
 Note that \( \alpha'' \) now extends \( \alpha' \), but \( A' \subsetneq A'' \) since \( b\in A''\setminus A' \). But then \( A'' \) strictly contains \( A' \), contradicting its maximality from Zorn's lemma.
 :::
 
+::: {.remark}
 Big question: what *are* injective modules really? These are pretty nonintuitive objects.
+:::
+
+# Appendix: Extra Definitions
+
+::: {.definition title="Acyclic"}
+A chain complex \( C \) is **acyclic** if and only if \( H_*(C) = 0 \).
+:::
 
 [^1]: See appendix A 1.6 for initial and terminal objects. Note that \( \emptyset \) is an initial but non-terminal object in \( {\operatorname{Set}} \), whereas zero objects are both.
 

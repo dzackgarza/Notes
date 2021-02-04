@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-02-03 }
+{\tiny \textit{Last updated:} 2021-02-04 }
 \end{flushleft}
 
 
@@ -586,7 +586,7 @@ products.
 
 \end{remark}
 
-\begin{definition}[?]
+\begin{definition}[Subcomplexes]
 
 We say \(B\) is a \textbf{subcomplex} of \(C\) if and only if
 
@@ -610,7 +610,7 @@ restrictions.
 
 \end{remark}
 
-\begin{definition}[Quotient Complex]
+\begin{definition}[Quotient Complexes]
 
 When \(B \leq C\), we can form the quotient complex \(C/B\) where
 \begin{align*}
@@ -620,6 +620,8 @@ Moreover there is a natural projection \(\pi: C\to C/B\) which is a
 chain map.
 
 \end{definition}
+
+\begin{remark}
 
 Suppose \(f:B\to C\) is a chain map, then there exist induced maps on
 the levelwise kernels and cokernels, so we can form the \textbf{kernel}
@@ -666,6 +668,8 @@ categorical kernel of \(f\) in \(\operatorname{Ch}\), and \(\pi\) is
 similarly a cokernel. See appendix A 1.6. These constructions make
 \(\operatorname{Ch}\) into an \textbf{abelian category}: roughly an
 additive category where every morphism has a kernel and a cokernel.
+
+\end{remark}
 
 \hypertarget{wednesday-january-20}{%
 \section{1.2 (Wednesday, January 20)}\label{wednesday-january-20}}
@@ -771,7 +775,7 @@ this object is an element of
 Recall that products and coproducts of \(R{\hbox{-}}\)modules coincide
 when the indexing set is finite.
 
-\begin{definition}[?]
+\begin{definition}[Total Complexes]
 
 Given a double complex \(C_{{\,\cdot\,}, {\,\cdot\,}}\), there are two
 ordinary chain complexes associated to it referred to as \textbf{total
@@ -977,6 +981,8 @@ similar definition for cochain complexes changing \(p\) to \(-p\).
 \hypertarget{long-exact-sequences}{%
 \subsection{Long Exact Sequences}\label{long-exact-sequences}}
 
+\begin{remark}
+
 Some terminology: in an abelian category \(\mathcal{A}\) an example of
 an \textbf{exact complex} in \(\operatorname{Ch}(\mathcal{A})\) is
 \begin{align*}
@@ -993,6 +999,8 @@ since the image of the incoming map must be 0. This also happens when
 every other term is zero. If \(0\to A \xrightarrow{f} B \to 0\), then
 \(A \cong B\) since \(f\) is both injective and surjective (say for
 \(R{\hbox{-}}\)modules).
+
+\end{remark}
 
 \begin{theorem}[Long Exact Sequences]
 
@@ -1087,7 +1095,11 @@ The sequence highlighted in red in the following diagram is exact:
 to Diagram}
 \end{quote}
 
-Existence:
+\end{lemma}
+
+\begin{proof}[of the Snake Lemma: Existence]
+
+\envlist
 
 \begin{itemize}
 \tightlist
@@ -1113,7 +1125,11 @@ Existence:
   Define \({{\partial}}(c) \coloneqq[a']\).
 \end{itemize}
 
-Uniqueness:
+\end{proof}
+
+\begin{proof}[of the Snake Lemma: Uniqueness]
+
+\envlist
 
 \begin{itemize}
 \tightlist
@@ -1151,9 +1167,13 @@ Uniqueness:
   \([\tilde a] = [a' + \mkern 1.5mu\overline{\mkern-1.5mua\mkern-1.5mu}\mkern 1.5mu] = [a'] \in \operatorname{coker}\alpha \coloneqq A'/\operatorname{im}\alpha\).
 \end{itemize}
 
+\end{proof}
+
 \todo[inline]{A few changes in the middle, redo!}
 
-Exactness:
+\begin{proof}[of the Snake Lemma: Exactness]
+
+\envlist
 
 \begin{itemize}
 \item
@@ -1204,7 +1224,7 @@ Exactness:
   \end{itemize}
 \end{itemize}
 
-\end{lemma}
+\end{proof}
 
 \begin{exercise}[?]
 
@@ -1531,7 +1551,10 @@ See phone pic for missed first 10m.
 
 \begin{definition}[Split Exact]
 
-?
+A complex is called \textbf{split} if there are maps
+\(s_n: C_n \to C_{n+1}\) such that \(d =dsd\). In this case, the maps
+\(s_n\) are referred to as the \textbf{splitting maps}, and if \(C\) is
+additionally acyclic, we say \(C\) is \textbf{split exact}.
 
 \end{definition}
 
@@ -1887,7 +1910,7 @@ exactness of a single complex.
 
 \begin{quote}
 We'll skip the rest, e.g.~mapping cylinders which aren't used until the
-section on triangulated categories. We'll skip the section on
+section on triangulated categories. We'll also skip the section on
 \(\delta{\hbox{-}}\)functors, which is a slightly abstract language.
 \end{quote}
 
@@ -3025,8 +3048,21 @@ lemma.
 
 \end{proof}
 
+\begin{remark}
+
 Big question: what \emph{are} injective modules really? These are pretty
 nonintuitive objects.
+
+\end{remark}
+
+\hypertarget{appendix-extra-definitions}{%
+\section{Appendix: Extra Definitions}\label{appendix-extra-definitions}}
+
+\begin{definition}[Acyclic]
+
+A chain complex \(C\) is \textbf{acyclic} if and only if \(H_*(C) = 0\).
+
+\end{definition}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
