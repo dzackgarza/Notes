@@ -683,7 +683,7 @@ Let \( G \) be a (possibly disconnected) Lie group. Then a **principal \( G{\hbo
 :::
 
 ::: {.remark}
-Setup: we'll consider \( TX \) for \( X\in {\operatorname{Mfd}}_\setminus \), and let \( g \) be a metric on the tangent bundle given by
+Setup: we'll consider \( TX \) for \( X\in {\operatorname{Mfd}}_{\operatorname{Sm}} \), and let \( g \) be a metric on the tangent bundle given by
 \[
 g_p: T_pX^{\otimes 2} \to {\mathbb{R}}
 ,\]
@@ -1153,6 +1153,198 @@ Let \( M \subset X \) be a submanifold where \( X \) is a smooth oriented \( n{\
 
 ::: {.warnings}
 This can't always be done! There are counterexamples where homology classes can't be represented by submanifolds.
+:::
+
+# Wednesday, February 03
+
+Consider an oriented surface, and take two oriented submanifolds
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{39pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-03_13-54.pdf_tex} };
+\end{tikzpicture}
+```
+We can then take the fundamental classes of the submanifolds, say \( [\alpha], [\beta] \in H^1(X; {\mathbb{Z}}) \xrightarrow{PD} H^1(X, {\mathbb{Z}}) \). Here \( T_p \alpha \oplus T_p \beta = T_p X \), since the intersections are transverse. Since \( \alpha, \beta \) are oriented, let \( \left\{{ e }\right\} \) be a basis of \( T_p \alpha \) (up to \( {\mathbb{R}}^+ \)) and similarly \( \left\{{ f }\right\} \) a basis of \( T_p \beta \). We can then ask if \( \left\{{ e, f }\right\} \) constitutes an *oriented* basis of \( T_pX \). If so, we write \( \alpha \cdot_p \beta \coloneqq+1 \) and otherwise \( \alpha \cdot_p \beta = - 1 \). We thus have
+\[
+[ \alpha] \smile[ \beta] \in H^2(X; {\mathbb{Z}}) \xrightarrow{PD} H_0(X; {\mathbb{Z}}) = {\mathbb{Z}}
+\]
+since \( X \) is connected. We can thus define the **intersection form** \( \alpha\cdot \beta\coloneqq[ \alpha] \smile[ \beta] \). In general if \( A, B \) are oriented transverse submanifolds of \( M \) which are themselves oriented, we'll have \( [A] \smile[B] = [A \cap B] \). We need to be careful: how do we orient the intersection? This is given by comparing the orientations on \( A \) and \( B \) as before.
+
+::: {.example title="?"}
+If \( \dim M = \dim A + \dim B \), then any \( p\in A \cap B \) is oriented by comparing \( \left\{{ \mathrm{or}_A, \mathrm{or}_B}\right\} \) to \( \mathrm{or}_M \).
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-03_14-03.pdf_tex} };
+\end{tikzpicture}
+```
+Here it suffices to check that \( \left\{{ e, f_1, f_2 }\right\} \) is an oriented basis of \( T_p M \).
+:::
+
+::: {.example title="?"}
+In this case, \( [\alpha] \smile[\beta] = 0 \) and so \( \alpha\cdot \beta = 0 \):
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-03_14-06.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.remark}
+Note that cohomology with \( {\mathbb{Z}} \) coefficients can be defined for any topological space, and Poincaré duality still holds.
+:::
+
+::: {.remark}
+We'll be considering \( M = M^4 \), smooth 4-manifolds. How to visualize: take a 3-manifold and cross it with time!
+
+```{=html}
+<!--\begin{tikzpicture}-->
+```
+```{=html}
+<!--\fontsize{42pt}{1em} -->
+```
+```{=html}
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-03_14-08.pdf_tex} };-->
+```
+```{=html}
+<!--\end{tikzpicture}-->
+```
+![Picking one basis element in the time direction](figures/time_manifold_glitch_workaround.png)
+
+Here \( ? \) is oriented in the "forward time" direction, and this is a surface at time \( t=0 \). Where \( A\cdot B = +1 \), since \( \left\{{ e_1, e_2, f_1, f_2 }\right\} = \left\{{ e_x, e_y, e_z, e_t }\right\} \) is a oriented basis for \( {\mathbb{R}}^4 \). For \( ?^2 \), switching the order of \( \alpha, \beta \) no longer yields an oriented basis, but in this case it is \( ? \) and \( A\cdot B = B \cdot A \). This is because
+\[
+A \coloneqq
+\begin{bmatrix}
+0 &  1
+\\
+1 & 0 
+\end{bmatrix}
+\implies \det(A)
+=-1 &&
+\det 
+\begin{bmatrix}
+A &  
+\\
+ & A 
+\end{bmatrix}
+ = 1
+.\]
+:::
+
+::: {.remark}
+Let \( M^{2n} \) be an oriented manifold, then the cup product yields a bilinear map \( H^n(M; {\mathbb{Z}}) \otimes H^n(M; {\mathbb{Z}}) \to {\mathbb{Z}} \) which is symmetric when \( n \) is odd and antisymmetric (or symplectic) when \( n \) is even. This is a **perfect** (or **unimodular**) pairing (potentially after modding out by torsion) which realizes an isomorphism:
+\[
+\qty{ H^n(M; {\mathbb{Z}})/{\operatorname{tors}}}^\vee&\xrightarrow{\sim} H^n(M; {\mathbb{Z}})/{\operatorname{tors}}\\
+\alpha \smile{\,\cdot\,}&\mapsfrom \alpha
+,\]
+where the LHS are linear functionals on cohomology.
+:::
+
+::: {.remark}
+Recall the universal coefficients theorem:
+\[
+H^i(X; {\mathbb{Z}})/{\operatorname{tors}}\cong \qty{ H_i(X; {\mathbb{Z}})/{\operatorname{tors}}}^\vee
+.\]
+The general theorem shows that \( H^i(X; {\mathbb{Z}})_{\operatorname{tors}}= H_{i-1}(X; {\mathbb{Z}})_{\operatorname{tors}} \).
+:::
+
+::: {.remark}
+Note that if \( M \) is an oriented 4-manifold, then
+
+```{=tex}
+\begin{tikzcd}
+    && {\operatorname{tors}}& {\text{torsionfree}} &&&&& {\operatorname{tors}}& {\text{torsionfree}} \\
+    {H^0} && 0 & {\mathbb{Z}}&&& {H_0} && 0 & {\mathbb{Z}}\\
+    {H^1} && 0 & \textcolor{rgb,255:red,214;green,92;blue,92}{{\mathbb{Z}}^{\beta_1}} &&& {H_1} && A & \textcolor{rgb,255:red,214;green,92;blue,214}{{\mathbb{Z}}^{\beta_1}} \\
+    {H^2} && A & \textcolor{rgb,255:red,92;green,92;blue,214}{{\mathbb{Z}}^{\beta_2}} & {} & {{}} & {H_2} && A & \textcolor{rgb,255:red,92;green,92;blue,214}{{\mathbb{Z}}^{\beta_2}} \\
+    {H^3} && A & \textcolor{rgb,255:red,214;green,92;blue,214}{{\mathbb{Z}}^{\beta_1}} &&& {H_3} && 0 & \textcolor{rgb,255:red,214;green,92;blue,92}{{\mathbb{Z}}^{\beta_1}} \\
+    {H^4} && 0 & {\mathbb{Z}}&&& {H_4} && 0 & {\mathbb{Z}}
+    \arrow["PD", from=4-5, to=4-6]
+\end{tikzcd}
+```
+In particular, if \( M \) is simply connected, then \( H_1(M) = {\operatorname{Ab}}(\pi_1(M)) = 0 \), which forces \( A = 0 \) and \( \beta_1 = 0 \).
+:::
+
+::: {.definition title="Lattice"}
+A **lattice** is a finite-dimensional free \( {\mathbb{Z}}{\hbox{-}} \)module \( L \) together with a symmetric bilinear form
+\[
+\cdot: L^{\otimes 2} &\to {\mathbb{Z}}\\
+\ell \otimes m &\mapsto \ell \cdot m
+.\]
+The lattice \( (L, \cdot) \) is **unimodular** if and only if the following map is an isomorphism:
+\[
+L &\to L^\vee\\
+\ell &\mapsto \ell \cdot ({\,\cdot\,})
+.\]
+:::
+
+::: {.remark}
+How to determine if a lattice is unimodular: take a basis \( \left\{{ e_1, \cdots, e_n }\right\} \) of \( L \) and form the *Gram matrix* \( M_{ij} \coloneqq( e_i \cdot e_j) \in \operatorname{Mat}(n\times n, {\mathbb{Z}})^{\operatorname{Sym}} \). Then \( (L, \cdot) \) is unimodular if and only if \( \det(M) = \pm 1 \) if and only if \( M ^{-1} \) is integral. In this case, the rows of \( M ^{-1} \) will form a basis of the dual basis.
+:::
+
+::: {.definition title="?"}
+The **index** of a lattice is \( {\left\lvert { \det M} \right\rvert} \).
+:::
+
+::: {.exercise title="?"}
+Prove that \( {\left\lvert {\det M} \right\rvert} = {\left\lvert { L^\vee/ L } \right\rvert} \).
+:::
+
+::: {.remark}
+In general, for \( M^{4k} \), the \( H^{2k}/{\operatorname{tors}} \) is unimodular. For \( M^{4k+2} \), the \( H^{2k+1}/{\operatorname{tors}} \) is a unimodular *symplectic* lattice, which is obtained by replacing the word "symmetric" with "antisymmetric" everywhere above.
+:::
+
+::: {.example title="?"}
+For the torus, since the dimension is \( 2 \pmod 4 \), you get the skew-symmetric matrix
+\[
+\begin{bmatrix}
+0  & 1
+\\
+-1 & 0
+\end{bmatrix}
+.\]
+
+```{=tex}
+\todo[inline]{Check!}
+```
+:::
+
+::: {.definition title="?"}
+A lattice is **nondegenerate** if \( \det M \neq 0 \).
+:::
+
+::: {.definition title="?"}
+The tensor product \( L \otimes_{\mathbb{Z}}{\mathbb{R}} \) is a vector space with an \( {\mathbb{R}}{\hbox{-}} \)valued symmetric bilinear form. This allows extending the lattice from \( {\mathbb{Z}}^n \) to \( {\mathbb{R}}^n \).
+:::
+
+::: {.remark}
+If \( (L, \cdot) \) is nondegenerate, then Gram-Schmidt will yield an orthonormal basis \( \left\{{ v_i }\right\} \). The number of positive norm vectors is an invariant, so we obtain \( {\mathbb{R}}^{p, q} \) where \( p \) is the number of \( +1 \)s in the Gram matrix and \( q \) is the number of \( -1 \)s. The **signature** of \( (L, {\,\cdot\,}) \) is \( (p, q) \), or by abuse of notation \( p-q \). This is an invariant of the 4-manifold, as is the lattice itself \( H^2(X; {\mathbb{Z}})/{\operatorname{tors}} \) equipped with the intersection form.
+:::
+
+::: {.remark}
+There is a perfect pairing called the **linking pairing**:
+
+\[
+H^i(X; {\mathbb{Q}}/{\mathbb{Z}}) \otimes H^{n-i-1}(X; {\mathbb{Q}}/{\mathbb{Z}}) \to {\mathbb{Q}}/{\mathbb{Z}}
+.\]
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-03_14-43.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.remark}
+\( A \cdot B \coloneqq\sum_{p\in A \cap B} \operatorname{sgn}_p(A, B) \), where \( A \pitchfork B \) and this turns out to be equal to the cup product. This works for topological manifolds -- but there are no tangent spaces there, so taking oriented bases doesn't work so well! You can also view
+\[
+[A] \smile[\omega] = \int_A \omega
+.\]
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.

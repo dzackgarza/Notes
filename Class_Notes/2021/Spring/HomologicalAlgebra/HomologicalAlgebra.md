@@ -1,3 +1,6 @@
+\newcommand{\dx}{\,dx}
+\newcommand{\dt}{\,dt}
+\newcommand{\dy}{\,dy}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
 }
@@ -10,6 +13,7 @@
 \renewcommand{\AA}[0]{{\mathbb{A}}}
 \newcommand{\Af}[0]{{\mathbb{A}}}
 \newcommand{\CC}[0]{{\mathbb{C}}}
+\newcommand{\BB}[0]{{\mathbb{B}}}
 \newcommand{\CP}[0]{{\mathbb{CP}}}
 \newcommand{\DD}[0]{{\mathbb{D}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
@@ -165,6 +169,7 @@
 \newcommand{\actson}[0]{\curvearrowright}
 \newcommand{\bd}[0]{{\del}}
 \newcommand{\bigast}[0]{{\mathop{\Large \ast}}}
+\newcommand{\convolve}[0]{\ast}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
@@ -339,6 +344,7 @@
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
 \newcommand{\Wedge}[0]{\Lambda}
+\newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
 \newcommand{\connectsum}[0]{\mathop{\Large \#}}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
@@ -364,6 +370,7 @@
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
 \renewcommand{\hat}[1]{\widehat{#1}}
+\newcommand{\fourier}[1]{\widehat{#1}}
 \renewcommand{\mid}[0]{\mathrel{\Big|}}
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
@@ -410,6 +417,7 @@
 \DeclareMathOperator{\Der}{Der}
 \newcommand{\Suchthat}[0]{\middle\vert}
 \newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
+\newcommand{\delbar}[0]{\bar{\del}}
 
 
 \newcommand{\contains}[0]{\supseteq}
@@ -431,6 +439,11 @@
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
+\newcommand\ol[1]{\overline{#1}}
+\newcommand\univcover[1]{\overline{#1}}
+\newcommand\capprod{\frown}
+\newcommand\Path{\mathcal{P}}
+\newcommand\gradient{\nabla}
 
 \newcommand\Hc[0]{{\check{H}}}
 \newcommand\Cc[0]{{\check{C}}}
@@ -446,6 +459,7 @@
     (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
+
 
 # Wednesday, January 13
 
@@ -1941,3 +1955,587 @@ So equivalently, we can show there are no free $\ZZ\dash$modules, which is true 
 :::{.remark}
 The definition of projective objects extends to any abelian category, not just \(R\dash\)modules.
 :::
+
+# Monday, February 01
+
+Recall the universal of projective modules.
+
+\begin{tikzcd}
+	&& P \\
+	\\
+	B && C && 0
+	\arrow["g", from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow["{\exists \beta}"', dashed, from=1-3, to=3-1]
+	\arrow["\gamma", from=1-3, to=3-3]
+\end{tikzcd}
+
+:::{.definition title="Enough Projective"}
+If \( \mathcal{A}  \) is an abelian category, then \( \mathcal{A}  \) has **enough projectives** if and only if for all \( a\in \mathcal{A}  \) there exists a projective object \( P \in \mathcal{A}  \) and a surjective morphism \( P \surjects A \).
+:::
+
+:::{.example title="?"}
+\( \modr \) has enough projectives: for all \( A \in \modr \), one can take \( F(A) \surjects A \).
+:::
+
+:::{.example title="?"}
+The category of finite abelian groups does *not* have enough projectives.
+
+\todo[inline]{Why?}
+
+:::
+
+:::{.lemma title="?"}
+$P$ is projective if and only if $\Hom_{\mathcal{A}}(P, \wait)$ is an exact functor.
+:::
+
+:::{.exercise title="?"}
+Prove this!
+:::
+
+:::{.definition title="(Key)"}
+Let $M\in \modr$, then a **projective resolution** of $M$ is an exact complex
+\[
+\cdots
+    \mapsvia{d_2} 
+P_1 \mapsvia{d_1}  
+P_1 \overset{\eps}{\surjects} 
+M \to 
+0
+.\]
+
+We write $P_\wait \overset{\epsilon}{\surjects} M$.
+:::
+
+:::{.lemma title="(Key)"}
+Every object $M\in \modr$ has a projective resolution.
+This is true in any abelian category with enough projectives.
+:::
+
+:::{.proof title="?"}
+\envlist
+
+- Since there are enough projectives, choose $P_0 \mapsvia{\epsilon_0} M \to 0$.
+- To extend this, set $M_0 \da \ker \epsilon_0$, then find a projective cover $P_1 \mapsvia{\epsilon_1}  M_0$
+- Use that $d_1 \da \iota_0 \circ \epsilon_1$ and $\im d_1 = M_0 = \ker \epsilon_0$
+- Then $d_2 \da \iota_1 \circ \epsilon_2$ with $\im d_2 = M_1$, and $\ker d_1 = \ker \epsilon_1 = M_1$.
+- Continuing in this fashion makes the complex exact at every stage.
+
+\begin{tikzcd}
+	&& 0 && 0 \\
+	&&& {M_1} \\
+	\cdots && {P_2} && {P_1} && {P_0} & M & 0 \\
+	& {M_2} &&&& {M_0} \\
+	0 &&&& 0 && 0
+	\arrow["{\varepsilon_0}", two heads, from=3-7, to=3-8]
+	\arrow["{\iota_0}", from=4-6, to=3-7]
+	\arrow["{\exists d_1}", dashed, from=3-5, to=3-7]
+	\arrow["{\varepsilon_0}"{description}, two heads, from=3-5, to=4-6]
+	\arrow[hook, from=5-5, to=4-6]
+	\arrow[from=4-6, to=5-7]
+	\arrow[hook, from=2-4, to=3-5]
+	\arrow[two heads, from=3-3, to=2-4]
+	\arrow["{\exists d_2}", dashed, from=3-3, to=3-5]
+	\arrow[hook, from=1-3, to=2-4]
+	\arrow[hook, from=5-1, to=4-2]
+	\arrow[hook, from=4-2, to=3-3]
+	\arrow[two heads, from=2-4, to=1-5]
+	\arrow[dashed, from=3-1, to=3-3]
+\end{tikzcd}
+
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTQsWzQsNCwiMCJdLFs1LDMsIk1fMCJdLFs2LDIsIlBfMCJdLFs3LDIsIk0iXSxbOCwyLCIwIl0sWzQsMiwiUF8xIl0sWzYsNCwiMCJdLFszLDEsIk1fMSJdLFsyLDIsIlBfMiJdLFsyLDAsIjAiXSxbMSwzLCJNXzIiXSxbMCw0LCIwIl0sWzQsMCwiMCJdLFswLDIsIlxcY2RvdHMiXSxbMiwzLCJcXHZhcmVwc2lsb25fMCIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxLDIsIlxcaW90YV8wIl0sWzUsMiwiXFxleGlzdHMgZF8xIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzUsMSwiXFx2YXJlcHNpbG9uXzAiLDEseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDZdLFs3LDUsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzgsNywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV0sWzgsNSwiXFxleGlzdHMgZF8yIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzksNywiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMTEsMTAsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzEwLDgsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzcsMTIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxMyw4LCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+
+:::
+
+## Comparison Theorem
+
+:::{.theorem title="Comparison Theorem"}
+Suppose $P_\wait \mapsvia{\epsilon} M$ is a projective resolution of an object in \( \mathcal{A}  \) and \( (M \mapsvia{f} N \in \Mor( \mathcal{A})  \) and $Q_\wait \mapsvia{\eta} N$ a resolution of $N$.
+Then there exists a chain map $P \mapsvia{f}  Q$ lifting $f$ which is unique up to chain homotopy:
+
+\begin{tikzcd}
+	\cdots & {P_2} & {P_1} & {P_0} & M & 0 \\
+	\\
+	\cdots & {Q_2} & {Q_1} & {Q_0} & N & 0
+	\arrow["f_{-1} \da f", from=1-5, to=3-5]
+	\arrow["{\exists f_0}", dashed, from=1-4, to=3-4]
+	\arrow["{\exists f_1}", dashed, from=1-3, to=3-3]
+	\arrow["{\exists f_2}", dashed, from=1-2, to=3-2]
+	\arrow[from=1-1, to=1-2]
+	\arrow["{d_2^P}", from=1-2, to=1-3]
+	\arrow["{\varepsilon = d_0^P}", from=1-4, to=1-5]
+	\arrow[from=1-5, to=1-6]
+	\arrow[from=3-1, to=3-2]
+	\arrow["{d_2^Q}"', from=3-2, to=3-3]
+	\arrow["{d_1^Q}"', from=3-3, to=3-4]
+	\arrow["{\eta = d_0^Q}"', from=3-4, to=3-5]
+	\arrow[from=3-5, to=3-6]
+	\arrow["{d_1^P}", from=1-3, to=1-4]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzAsMCwiXFxjZG90cyJdLFsxLDAsIlBfMiJdLFsyLDAsIlBfMSJdLFszLDAsIlBfMCJdLFs0LDAsIk0iXSxbNSwwLCIwIl0sWzAsMiwiXFxjZG90cyJdLFsxLDIsIlFfMiJdLFsyLDIsIlFfMSJdLFszLDIsIlFfMCJdLFs0LDIsIk4iXSxbNSwyLCIwIl0sWzQsMTAsImYiXSxbMyw5LCJcXGV4aXN0cyBmXzAiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiw4LCJcXGV4aXN0cyBmXzEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMSw3LCJcXGV4aXN0cyBmXzIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMCwxXSxbMSwyLCJkXzJeUCJdLFszLDQsIlxcdmFyZXBzaWxvbiA9IGRfMF5QIl0sWzQsNV0sWzYsN10sWzcsOCwiZF8yXlEiLDJdLFs4LDksImRfMV5RIiwyXSxbOSwxMCwiXFxldGEgPSBkXzBeUSIsMl0sWzEwLDExXSxbMiwzLCJkXzFeUCJdXQ==)
+
+
+:::
+
+:::{.remark}
+The proof will only use that $P \mapsvia{\epsilon} M$ is a chain complex of projective objects, i.e. $d^2 = 0$, and that \( \epsilon \circ d_1^p = 0 \).
+To make the notation more consistent, we'll write $Z_{-1}(P) \da M$ and $Z_{-1}(Q) \da N$.
+Toward an induction, suppose that the $f_i$ have been constructed for $i\leq n$, so $f_{i-1} \circ d = d \circ f_i$.
+:::
+
+:::{.proof title="Existence"}
+A fact about chain maps is that they induce maps on the kernels of the outgoing maps, so there is a map $f_n': Z_n(P) \to Z_n(Q)$.
+We get a diagram where the top row is not necessarily exact:
+
+\begin{tikzcd}
+	{P_{n+1}} & {} & {Z_n(P)} \\
+	\\
+	{Q_{n+1}} && {Z_n(Q)} && 0
+	\arrow["d", from=1-1, to=1-3]
+	\arrow["d", from=3-1, to=3-3]
+	\arrow["d", from=3-3, to=3-5]
+	\arrow["{f_{n'}}", from=1-3, to=3-3]
+	\arrow["{\exists f_{n+1}}"{description}, dashed, from=1-1, to=3-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMSwwXSxbMiwwLCJaX24oUCkiXSxbMCwwLCJQX3tuKzF9Il0sWzAsMiwiUV97bisxfSJdLFsyLDIsIlpfbihRKSJdLFs0LDIsIjAiXSxbMiwxLCJkIl0sWzMsNCwiZCJdLFs0LDUsImQiXSxbMSw0LCJmX3tuJ30iXSxbMiwzLCJcXGV4aXN0cyBmX3tuKzF9JyIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+Using the definition of projective, since $P_{n+1}$ is projective, the map $f_{n+1}: P_{n+1} \to Q_{n+1}$ exists where $d \circ f_{n+1} = f_n' \circ d = f_n \circ d$, since $f_n = f_n'$ on $\im d \subseteq Z_n(P)$.
+This yields commutativity of the above square.
+
+:::
+
+:::{.proof title="Uniqueness"}
+Suppose $g: P\to Q$ is another lift of $f'$, the consider $h\da f-g$.
+This is a chain map $P\to Q$ lifting of $f' - f' = 0$.
+We'll construct a chain contraction $\ts{ s_n:; P_n \to Q_{n+1} }$ by induction on $n$:
+
+We have the following diagram:
+
+\begin{tikzcd}
+	&& {P_0} && M \\
+	\\
+	{Q_1} && {Q_0} && N
+	\arrow["{f-f'=0}", from=1-5, to=3-5]
+	\arrow["\varepsilon", from=1-3, to=1-5]
+	\arrow["{h_0 \da f_0 - f_0'}"', from=1-3, to=3-3]
+	\arrow["\eta"', from=3-3, to=3-5]
+	\arrow["d"', from=3-1, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbNCwwLCJNIl0sWzIsMCwiUF8wIl0sWzIsMiwiUV8wIl0sWzQsMiwiTiJdLFswLDIsIlFfMSJdLFswLDMsImYtZic9MCJdLFsxLDAsIlxcdmFyZXBzaWxvbiJdLFsxLDIsImhfMCBcXGRhIGZfMCAtIGZfMCciLDJdLFsyLDMsIlxcZXRhIiwyXSxbNCwyLCJkIiwyXV0=)
+
+Setting $P_{-1}\da 0$ and $s_{-1}: P_{-1} \to Q_0$ to be the zero map, we have $\eta \circ h_0 = \eps (f' - f') = 0$.
+Using projectivity of $P_0$, there exists an $s_0$ as shown below which satisfies $h_0 = d \circ s_0 = ds_0 + s_{-1} d$ where $s_{-1} d= 0$:
+
+\begin{tikzcd}
+	&& {P_0} && {P_{-1} = 0} \\
+	\\
+	{Q_1} && {d(Q_1)} && 0
+	\arrow["{d_0 = 0}", from=1-3, to=1-5]
+	\arrow["{s_{-1} = 0}", from=1-5, to=3-3]
+	\arrow["{h_0}"', from=1-3, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow[two heads, from=3-1, to=3-3]
+	\arrow["{\exists s_1}"', dashed, from=1-3, to=3-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMiwwLCJQXzAiXSxbNCwwLCJQX3stMX0gPSAwIl0sWzIsMiwiZChRXzEpIl0sWzQsMiwiMCJdLFswLDIsIlFfMSJdLFswLDEsImRfMCA9IDAiXSxbMSwyLCJzX3stMX0gPSAwIl0sWzAsMiwia18wIiwyXSxbMiwzXSxbNCwyLCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMCw0LCJcXGV4aXN0cyBzXzEiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+Proceeding inductively, assume we have maps $s_i: P_i \to Q_{i+1}$ such that $h_{n-1} = d s_{n-1} + s_{n-2} d$, or equivalently $ds_{n-1} = h_{n-1} - s_{n-2} d$.
+We want to construct $s_n$ in the following diagram:
+
+\begin{tikzcd}
+	&& {P_n} && {P_{n-1}} && {P_{n-2}} \\
+	\\
+	{Q_{n+1}} && {Q_n} && {Q_{n-1}}
+	\arrow["d", from=1-3, to=1-5]
+	\arrow["d", from=1-5, to=1-7]
+	\arrow["{h_{n-1}}", from=1-5, to=3-5]
+	\arrow["{s_{n-2}}"{description}, from=1-7, to=3-5]
+	\arrow["{s_{n-1}}"{description}, from=1-5, to=3-3]
+	\arrow["d"{description}, from=3-3, to=3-5]
+	\arrow["d"{description}, from=3-1, to=3-3]
+	\arrow["{h_{n}}"{description}, from=1-3, to=3-3]
+	\arrow["{\exists s_n}"{description}, dashed, from=1-3, to=3-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMiwwLCJQX24iXSxbNCwwLCJQX3tuLTF9Il0sWzYsMCwiUF97bi0yfSJdLFsyLDIsIlFfbiJdLFs0LDIsIlFfe24tMX0iXSxbMCwyLCJRX3tuKzF9Il0sWzAsMSwiZCJdLFsxLDIsImQiXSxbMSw0LCJoX3tuLTF9Il0sWzIsNCwic197bi0yfSIsMV0sWzEsMywic197bi0xfSIsMV0sWzMsNCwiZCIsMV0sWzUsMywiZCIsMV0sWzAsMywiaF97bn0iLDFdLFswLDUsIlxcZXhpc3RzIHNfbiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+So consider $h_n - s_{n-1} d: P_n \to Q_n$, which we want to equal $d(s_n)$.
+We want exactness, so we need better control of the image!
+We have $d(h_n - s_{n-1} d) = d h_n - (h_{n-1} - s_{n-2} d)d$.
+But this is equal to $d h_n - h_{n-1}d = 0$ since $h$ is a chain map.
+Thus we get $h_n - s_{n-1}d: P_n \to Z_n(Q)$, and thus using projectivity one last time, we obtain the following:
+
+\begin{tikzcd}
+	&& {P_n} \\
+	\\
+	{Q_{n+1}} && {Z_n(Q)} && 0
+	\arrow["{\exists s_n}", dashed, from=1-3, to=3-1]
+	\arrow["d", from=3-1, to=3-3]
+	\arrow["{h_n - s_{n-1}d}", from=1-3, to=3-3]
+	\arrow["d", from=3-3, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwyLCJRX3tuKzF9Il0sWzIsMiwiWl9uKFEpIl0sWzIsMCwiUF9uIl0sWzQsMiwiMCJdLFsyLDAsIlxcZXhpc3RzIHNfbiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDEsImQiXSxbMiwxLCJoX24gLSBzX3tuLTF9ZCJdLFsxLDMsImQiXV0=)
+
+Since $P_n$ is projective, there exists an $s_n: P_n \to Q_{n+1}$ such that $ds_n = h_n - s_{n-1} d$.
+:::
+
+# Wednesday, February 03
+
+:::{.remark}
+All rings have 1 in this course!
+:::
+
+## Horseshoe Lemma
+
+
+:::{.proposition title="Horseshoe Lemma"}
+Suppose we have a diagram like the following, where the columns are exact and the rows are projective resolutions:
+
+
+\begin{tikzcd}
+	&&&&&&&& 0 \\
+	\\
+	\cdots && {P_2'} && {P_1'} && {P_0'} && {A'} && 0 \\
+	\\
+	&&&&&&&& A \\
+	\\
+	\cdots && {P_2''} && {P_1''} && {P_0''} && {A''} && 0 \\
+	&&&&&&&& {} \\
+	&&&&&&&& 0
+	\arrow["{\iota_A}", from=3-9, to=5-9]
+	\arrow["{\eps'}", from=3-7, to=3-9]
+	\arrow["{\eps''}", from=7-7, to=7-9]
+	\arrow[from=7-9, to=9-9]
+	\arrow["{\pi_A}", from=5-9, to=7-9]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=7-1, to=7-3]
+	\arrow[from=7-3, to=7-5]
+	\arrow[from=7-5, to=7-7]
+	\arrow[from=3-9, to=3-11]
+	\arrow[from=7-9, to=7-11]
+	\arrow[from=1-9, to=3-9]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzgsMiwiQSciXSxbOCw0LCJBIl0sWzgsNiwiQScnIl0sWzgsOCwiMCJdLFsxMCwyLCIwIl0sWzYsMiwiUF8wJyJdLFs0LDIsIlBfMSciXSxbMiwyLCJQXzInIl0sWzAsMiwiXFxjZG90cyJdLFs2LDYsIlBfMCcnIl0sWzQsNiwiUF8xJyciXSxbMiw2LCJQXzInJyJdLFsxMCw2LCIwIl0sWzAsNiwiXFxjZG90cyJdLFs4LDddLFs4LDAsIjAiXSxbMCwxLCJcXGlvdGFfQSJdLFs1LDAsIlxcZXBzJyJdLFs5LDIsIlxcZXBzJyciXSxbMiwzXSxbMSwyLCJcXHBpX0EiXSxbNiw1XSxbNyw2XSxbOCw3XSxbMTMsMTFdLFsxMSwxMF0sWzEwLDldLFswLDRdLFsyLDEyXSxbMTUsMF1d)
+
+Note that if the vertical sequence were split, one could sum together to two resolutions to get a resolution of the middle.
+This still works: there is a projective resolution of $P$ of $A$ given by 
+\[
+P_n \da P_n' \oplus P_n''
+\]
+which lifts the vertical column in the above diagram to an exact sequence of complexes
+\[
+0 \to P' \mapsvia{\iota} P \mapsvia{\pi}  P'' \to 0
+,\]
+where $\iota_n: P_n' \injects P_n$ is the natural inclusion and $\pi_i: P_n \surjects P_n''$ the natural projection.
+
+:::
+
+### Proof of the Horseshoe Lemma
+
+We can construct this inductively:
+
+\begin{tikzcd}
+	&& 0 && 0 \\
+	\\
+	{\ker(\eps')} && {P_0'} && {A'} && 0 \\
+	\\
+	{\ker(\eps)} && \textcolor{rgb,255:red,92;green,92;blue,214}{P_0} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && {\coker(\eps)} \\
+	\\
+	{\ker(\eps'')} && {P_0''} && {A''} && 0 \\
+	\\
+	&& 0 && 0
+	\arrow["{\varepsilon''}", from=7-3, to=7-5]
+	\arrow["{\eta''}"', dashed, from=7-3, to=5-5]
+	\arrow["\iota"', from=3-3, to=5-3]
+	\arrow["\pi"', from=5-3, to=7-3]
+	\arrow["{\iota_A}", from=3-5, to=5-5]
+	\arrow["{\pi_A}", from=5-5, to=7-5]
+	\arrow["{\varepsilon'}", from=3-3, to=3-5]
+	\arrow["{\eta'}", from=3-3, to=5-5]
+	\arrow[from=1-5, to=3-5]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=7-5, to=7-7]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=5-1, to=5-3]
+	\arrow[from=7-1, to=7-3]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=7-3, to=9-3]
+	\arrow[from=7-5, to=9-5]
+	\arrow["\eta", color={rgb,255:red,92;green,92;blue,214}, from=5-3, to=5-5]
+	\arrow[from=5-5, to=5-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzIsMCwiMCJdLFs0LDAsIjAiXSxbMiwyLCJQXzAnIl0sWzQsMiwiQSciXSxbMiw0LCJQXzAiLFsyNDAsNjAsNjAsMV1dLFs0LDQsIkEiLFsyNDAsNjAsNjAsMV1dLFsyLDYsIlBfMCcnIl0sWzQsNiwiQScnIl0sWzYsNiwiMCJdLFs2LDIsIjAiXSxbMCwyLCJcXGtlcihcXGVwcycpIl0sWzAsNCwiXFxrZXIoXFxlcHMpIl0sWzAsNiwiXFxrZXIoXFxlcHMnJykiXSxbMiw4LCIwIl0sWzQsOCwiMCJdLFs2LDQsIlxcY29rZXIoXFxlcHMpIl0sWzYsNywiXFx2YXJlcHNpbG9uJyciXSxbNiw1LCJcXGV0YScnIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIsNCwiXFxpb3RhIiwyXSxbNCw2LCJcXHBpIiwyXSxbMyw1LCJcXGlvdGFfQSJdLFs1LDcsIlxccGlfQSJdLFsyLDMsIlxcdmFyZXBzaWxvbiciXSxbMiw1LCJcXGV0YSciXSxbMSwzXSxbMCwyXSxbNyw4XSxbMyw5XSxbMTEsNF0sWzEyLDZdLFsxMCwyXSxbNiwxM10sWzcsMTRdLFs0LDUsIlxcZXRhIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXX0sWzI0MCw2MCw2MCwxXV0sWzUsMTVdXQ==)
+
+- $P_0''$ projective and $\pi_A$ surjective implies $\eps''$ lifts to $\eta'': P_0'' \to A$
+- Composing yields $\eta' \da \iota_A \circ \eta': P_0' \to A$
+- Get $\eps \da \eta' \oplus \eta'':P_0 \da P_0' \oplus P_0'' \to A$.
+
+Flipping the diagram, we can apply the snake lemma to the two columns:
+
+
+\begin{tikzcd}
+	\textcolor{rgb,255:red,214;green,92;blue,92}{0} && 0 && 0 \\
+	\\
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\ker(\eps')} && {P_0'} && {A'} && \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	\\
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\ker(\eps)} && \textcolor{rgb,255:red,92;green,92;blue,214}{P_0} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && \textcolor{rgb,255:red,214;green,92;blue,92}{\coker(\eps)} \\
+	\\
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\ker(\eps'')} && {P_0''} && {A''} && \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	\\
+	&& 0 && 0
+	\arrow["{\varepsilon''}", from=7-3, to=7-5]
+	\arrow["{\eta''}"', dashed, from=7-3, to=5-5]
+	\arrow["\iota"', from=3-3, to=5-3]
+	\arrow["\pi"', from=5-3, to=7-3]
+	\arrow["{\iota_A}", from=3-5, to=5-5]
+	\arrow["{\pi_A}", from=5-5, to=7-5]
+	\arrow["{\varepsilon'}", from=3-3, to=3-5]
+	\arrow["{\eta'}", from=3-3, to=5-5]
+	\arrow[from=1-5, to=3-5]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=7-5, to=7-7]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=5-1, to=5-3]
+	\arrow[from=7-1, to=7-3]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=7-3, to=9-3]
+	\arrow[from=7-5, to=9-5]
+	\arrow["\eta", color={rgb,255:red,92;green,92;blue,214}, from=5-3, to=5-5]
+	\arrow[from=5-5, to=5-7]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-1, to=3-1]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=3-1, to=5-1]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=5-1, to=7-1]
+	\arrow["\bd", color={rgb,255:red,214;green,92;blue,92}, squiggly, from=7-1, to=3-7, out=65, in=90]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=3-7, to=5-7]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=5-7, to=7-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTcsWzIsMCwiMCJdLFs0LDAsIjAiXSxbMiwyLCJQXzAnIl0sWzQsMiwiQSciXSxbMiw0LCJQXzAiLFsyNDAsNjAsNjAsMV1dLFs0LDQsIkEiLFsyNDAsNjAsNjAsMV1dLFsyLDYsIlBfMCcnIl0sWzQsNiwiQScnIl0sWzYsNiwiMCIsWzAsNjAsNjAsMV1dLFs2LDIsIjAiLFswLDYwLDYwLDFdXSxbMCwyLCJcXGtlcihcXGVwcycpIixbMCw2MCw2MCwxXV0sWzAsNCwiXFxrZXIoXFxlcHMpIixbMCw2MCw2MCwxXV0sWzAsNiwiXFxrZXIoXFxlcHMnJykiLFswLDYwLDYwLDFdXSxbMiw4LCIwIl0sWzQsOCwiMCJdLFs2LDQsIlxcY29rZXIoXFxlcHMpIixbMCw2MCw2MCwxXV0sWzAsMCwiMCIsWzAsNjAsNjAsMV1dLFs2LDcsIlxcdmFyZXBzaWxvbicnIl0sWzYsNSwiXFxldGEnJyIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIlxcaW90YSIsMl0sWzQsNiwiXFxwaSIsMl0sWzMsNSwiXFxpb3RhX0EiXSxbNSw3LCJcXHBpX0EiXSxbMiwzLCJcXHZhcmVwc2lsb24nIl0sWzIsNSwiXFxldGEnIl0sWzEsM10sWzAsMl0sWzcsOF0sWzMsOV0sWzExLDRdLFsxMiw2XSxbMTAsMl0sWzYsMTNdLFs3LDE0XSxbNCw1LCJcXGV0YSIsMCx7ImNvbG91ciI6WzI0MCw2MCw2MF19LFsyNDAsNjAsNjAsMV1dLFs1LDE1XSxbMTYsMTAsIiIsMCx7ImNvbG91ciI6WzAsNjAsNjBdfV0sWzEwLDExLCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dLFsxMSwxMiwiIiwwLHsiY29sb3VyIjpbMCw2MCw2MF19XSxbMTIsOSwiXFxiZCIsMCx7ImNvbG91ciI6WzAsNjAsNjBdLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX0sWzAsNjAsNjAsMV1dLFs5LDE1LCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dLFsxNSw4LCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dXQ==)
+
+We can now conclude that
+
+- $\coker \eps = 0$
+- $\bd = 0$ since it lands on the zero moduli
+
+So append a zero onto the far left column:
+
+\begin{tikzcd}
+	\textcolor{rgb,255:red,214;green,92;blue,92}{0} && 0 && 0 \\
+	\\
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\ker(\eps')} && {P_0'} && {A'} && \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	\\
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\ker(\eps)} && \textcolor{rgb,255:red,92;green,92;blue,214}{P_0} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && \textcolor{rgb,255:red,214;green,92;blue,92}{\coker(\eps)} \\
+	\\
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\ker(\eps'')} && {P_0''} && {A''} && \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	\\
+	0 && 0 && 0
+	\arrow["{\varepsilon''}", from=7-3, to=7-5]
+	\arrow["{\eta''}"', dashed, from=7-3, to=5-5]
+	\arrow["\iota"', from=3-3, to=5-3]
+	\arrow["\pi"', from=5-3, to=7-3]
+	\arrow["{\iota_A}", from=3-5, to=5-5]
+	\arrow["{\pi_A}", from=5-5, to=7-5]
+	\arrow["{\varepsilon'}", from=3-3, to=3-5]
+	\arrow["{\eta'}", from=3-3, to=5-5]
+	\arrow[from=1-5, to=3-5]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=7-5, to=7-7]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=5-1, to=5-3]
+	\arrow[from=7-1, to=7-3]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=7-3, to=9-3]
+	\arrow[from=7-5, to=9-5]
+	\arrow["\eta", color={rgb,255:red,92;green,92;blue,214}, from=5-3, to=5-5]
+	\arrow[from=5-5, to=5-7]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-1, to=3-1]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=3-1, to=5-1]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=5-1, to=7-1]
+	\arrow[from=7-1, to=9-1]
+	\arrow["\bd", color={rgb,255:red,214;green,92;blue,92}, squiggly, from=7-1, to=3-7, out=65, in=90]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=3-7, to=5-7]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=5-7, to=7-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTgsWzIsMCwiMCJdLFs0LDAsIjAiXSxbMiwyLCJQXzAnIl0sWzQsMiwiQSciXSxbMiw0LCJQXzAiLFsyNDAsNjAsNjAsMV1dLFs0LDQsIkEiLFsyNDAsNjAsNjAsMV1dLFsyLDYsIlBfMCcnIl0sWzQsNiwiQScnIl0sWzYsNiwiMCIsWzAsNjAsNjAsMV1dLFs2LDIsIjAiLFswLDYwLDYwLDFdXSxbMCwyLCJcXGtlcihcXGVwcycpIixbMCw2MCw2MCwxXV0sWzAsNCwiXFxrZXIoXFxlcHMpIixbMCw2MCw2MCwxXV0sWzAsNiwiXFxrZXIoXFxlcHMnJykiLFswLDYwLDYwLDFdXSxbMiw4LCIwIl0sWzQsOCwiMCJdLFs2LDQsIlxcY29rZXIoXFxlcHMpIixbMCw2MCw2MCwxXV0sWzAsMCwiMCIsWzAsNjAsNjAsMV1dLFswLDgsIjAiXSxbNiw3LCJcXHZhcmVwc2lsb24nJyJdLFs2LDUsIlxcZXRhJyciLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiw0LCJcXGlvdGEiLDJdLFs0LDYsIlxccGkiLDJdLFszLDUsIlxcaW90YV9BIl0sWzUsNywiXFxwaV9BIl0sWzIsMywiXFx2YXJlcHNpbG9uJyJdLFsyLDUsIlxcZXRhJyJdLFsxLDNdLFswLDJdLFs3LDhdLFszLDldLFsxMSw0XSxbMTIsNl0sWzEwLDJdLFs2LDEzXSxbNywxNF0sWzQsNSwiXFxldGEiLDAseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbNSwxNV0sWzE2LDEwLCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dLFsxMCwxMSwiIiwwLHsiY29sb3VyIjpbMCw2MCw2MF19XSxbMTEsMTIsIiIsMCx7ImNvbG91ciI6WzAsNjAsNjBdfV0sWzEyLDE3XSxbMTIsOSwiXFxiZCIsMCx7ImNvbG91ciI6WzAsNjAsNjBdLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX0sWzAsNjAsNjAsMV1dLFs5LDE1LCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dLFsxNSw4LCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dXQ==)
+
+
+Thus the LHS column is a SES, and we have the first step of a resolution.
+Proceeding inductively, at the next step we have
+
+
+\begin{tikzcd}
+	&&&& 0 \\
+	\\
+	\cdots && {P_1'} && {\ker(\eps')} && 0 \\
+	\\
+	&&&& {\ker(\eps)} \\
+	\\
+	\cdots && {P_1''} & {} & {\ker(\eps'')} && 0 \\
+	\\
+	&&&& 0
+	\arrow[from=1-5, to=3-5]
+	\arrow[from=3-5, to=5-5]
+	\arrow[from=5-5, to=7-5]
+	\arrow[from=7-5, to=9-5]
+	\arrow["{d_1'}", from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=7-5, to=7-7]
+	\arrow[from=7-1, to=7-3]
+	\arrow[from=3-1, to=3-3]
+	\arrow["{d_1''}", from=7-3, to=7-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzQsMCwiMCJdLFs0LDIsIlxca2VyKFxcZXBzJykiXSxbNCw0LCJcXGtlcihcXGVwcykiXSxbNCw2LCJcXGtlcihcXGVwcycnKSJdLFs0LDgsIjAiXSxbNiw2LCIwIl0sWzYsMiwiMCJdLFsyLDIsIlBfMSciXSxbMiw2LCJQXzEnJyJdLFszLDZdLFswLDYsIlxcY2RvdHMiXSxbMCwyLCJcXGNkb3RzIl0sWzAsMV0sWzEsMl0sWzIsM10sWzMsNF0sWzcsMSwiZF8xJyJdLFsxLDZdLFszLDVdLFsxMCw4XSxbMTEsN10sWzgsMywiZF8xJyciXV0=)
+
+However, this is precisely the situation that appeared before, so the same procedure works.
+
+:::{.exercise title="?"}
+Check that the middle complex is exact!
+Follows by construction.
+:::
+
+## Injective Resolutions
+
+
+:::{.definition title="Injective Objects"}
+Let \( \mathcal{A}  \) be an abelian category, then \( I\in \mathcal{A}  \) is **injective** if and only if it satisfies the following universal property:
+$A$ is projective if and only if for every monic $\alpha :A\to I$, any map $f:A\to B$ lifts to a map $B\to I$:
+
+\begin{tikzcd}
+	0 && A && B \\
+	\\
+	&& I
+	\arrow[from=1-1, to=1-3]
+	\arrow["\alpha", from=1-3, to=3-3]
+	\arrow["{\exists \beta}"', dashed, from=3-3, to=1-5]
+	\arrow["f", from=1-3, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCIwIl0sWzIsMCwiQSJdLFs0LDAsIkIiXSxbMiwyLCJJIl0sWzAsMV0sWzEsMywiXFxhbHBoYSJdLFszLDIsIlxcZXhpc3RzIFxcYmV0YSIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxLDIsImYiXV0=)
+
+We say \( \mathcal{A}  \) **has enough injectives** if and only if for all $A$, there exists $A\injects I$ where $I$ is injective.
+:::
+
+
+:::{.slogan}
+Maps on subobjects extend.
+:::
+
+:::{.proposition title="Products of Injectives are Injective"}
+If $\ts{I_ \alpha}$ is a family of injectives and $I \da \prod_{\alpha} I_ \alpha \in A$, then $I$ is again injective.
+:::
+
+
+:::{.proof title="?"}
+Use the universal property of direct products.
+:::
+
+## Baer's Criterion
+
+
+:::{.proposition title="Baer's Criterion"}
+An object $E \in \rmod$ is injective if and only if for every right ideal $J \normal R$, every map $J\to E$ extends to a map $R\to E$.
+Note that $J$ is a right $R\dash$submodule.
+:::
+
+
+:::{.proof title="?"}
+$\implies$: 
+This is essentially by definition.
+Instead of taking arbitrary submodules, we're just taking $R$ itself and *its* submodules:
+
+\begin{tikzcd}
+	0 && J && R \\
+	\\
+	&& E
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-3, to=3-3]
+	\arrow[dashed, from=1-5, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCIwIl0sWzIsMCwiSiJdLFs0LDAsIlIiXSxbMiwyLCJFIl0sWzAsMV0sWzEsMl0sWzEsM10sWzIsMywiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+
+$\impliedby$:
+Suppose we have the following:
+
+\begin{tikzcd}
+	0 && A && B \\
+	\\
+	&& E
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow["\alpha", from=1-3, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCIwIl0sWzIsMCwiQSJdLFs0LDAsIkIiXSxbMiwyLCJFIl0sWzAsMV0sWzEsMl0sWzEsMywiXFxhbHBoYSJdXQ==)
+
+
+Let \( \mathcal{E}\da \ts{ \alpha': A' \to E \st A \leq A' \leq B }  \), i.e. all of the intermediate extensions:
+
+\begin{tikzcd}
+	0 && A && \textcolor{rgb,255:red,214;green,92;blue,92}{A'} && B \\
+	\\
+	&& E
+	\arrow[from=1-1, to=1-3]
+	\arrow["\alpha", from=1-3, to=3-3]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-3, to=1-5]
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-5, to=1-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIwIl0sWzIsMCwiQSJdLFsyLDIsIkUiXSxbNCwwLCJBJyIsWzAsNjAsNjAsMV1dLFs2LDAsIkIiXSxbMCwxXSxbMSwyLCJcXGFscGhhIl0sWzEsMywiIiwwLHsiY29sb3VyIjpbMCw2MCw2MF19XSxbMyw0LCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dXQ==)
+
+Add a partial order to \( \mathcal{E}  \) where \( \alpha ' \leq \alpha'' \) if and only if \( \alpha'' \) extends \( \alpha' \).
+Applying Zorn's lemma (and abusing notation slightly), we can produce a maximal \( \alpha': A' \to E \).
+The claim is that $A' = B$.
+Supposing not, then $A'$ is a proper submodule, so choose a $b\in B \sm A'$.
+Then define the set \( J \da \ts{ r\in R \st br \in A' } \), this is a right ideal of $R$ since $A'$ was a right \(R\dash\)module.
+Now applying the assumption of Baer's condition on $E$, we can produce a map $f:R\to E$:C
+
+\begin{tikzcd}
+	0 && J && R \\
+	\\
+	&& {A'} \\
+	\\
+	&& E
+	\arrow[from=1-1, to=1-3]
+	\arrow["b\cdot\wait"', from=1-3, to=3-3]
+	\arrow["{\alpha'}"', from=3-3, to=5-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow["{\exists f}", dashed, from=1-5, to=5-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIwIl0sWzIsMCwiSiJdLFsyLDIsIkEnIl0sWzIsNCwiRSJdLFs0LDAsIlIiXSxbMCwxXSxbMSwyLCJiXFxjZG90XFx3YWl0IiwyXSxbMiwzLCJcXGFscGhhJyIsMl0sWzEsNF0sWzQsMywiXFxleGlzdHMgZiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+Now let $A'' \da A' + bR \leq B$, and provisionally define 
+\[
+\alpha'': A'' &\to E \\
+a + br & \mapsto \alpha'(a) + f(r)
+.\]
+
+
+:::{.remark}
+Is this well-defined?
+Consider overlapping terms, it's enough to consider elements of the form $br\in A'$. 
+In this case, $r\in J$ by definition, and so \( \alpha'(br) = f(r) \) by commutativity in the previous diagram, which shows that the two maps agree on anything in the intersection.
+:::
+
+Note that \( \alpha'' \) now extends \( \alpha' \), but \( A' \subsetneq A'' \) since $b\in A''\sm A'$.
+But then $A''$ strictly contains $A'$, contradicting its maximality from Zorn's lemma.
+:::
+
+Big question: what *are* injective modules really? 
+These are pretty nonintuitive objects.
