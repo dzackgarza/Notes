@@ -78,7 +78,7 @@
           <address class="author_afil">
   <h2 class="author">D. Zack Garza</h2>
     University of Georgia<br>        <a class="author_email" href="mailto:#">dzackgarza@gmail.com</a>
-        <p class="small">Last updated: 2021-02-02</p>
+        <p class="small">Last updated: 2021-02-04</p>
     
   </address>
       </div>
@@ -110,7 +110,15 @@
 <ul>
 <li><a href="#ideal-norms"><span class="toc-section-number">6.1</span> Ideal Norms</a></li>
 </ul></li>
-<li><a href="#bibliography"><span class="toc-section-number">7</span> Bibliography</a></li>
+<li><a href="#chapter-6-fundamental-theory-of-ideal-theory-thursday-february-04"><span class="toc-section-number">7</span> Chapter 6: Fundamental Theory of Ideal Theory (Thursday, February 04)</a>
+<ul>
+<li><a href="#unique-factorization-for-ideals"><span class="toc-section-number">7.1</span> Unique Factorization for Ideals</a>
+<ul>
+<li><a href="#proving-unique-factorization"><span class="toc-section-number">7.1.1</span> Proving Unique Factorization</a></li>
+</ul></li>
+<li><a href="#chapter-7-preview"><span class="toc-section-number">7.2</span> Chapter 7 Preview</a></li>
+</ul></li>
+<li><a href="#bibliography"><span class="toc-section-number">8</span> Bibliography</a></li>
 </ul>
 </nav>
 
@@ -993,7 +1001,184 @@ J \mathrel{\vcenter{:}}=\left\langle{ n, N(A&#39; + \tau)/n&#39;, \operatorname{
 <div class="remark proofenv">
 <p>This is a long proof! It’s nice in that it’s direct, but less nice in that it required some clever steps. When we do the case for general number fields, we’ll be able to use a more conceptual approach that avoids some of these computations. Many other facts fall out of these theorem – in fact, there are nice results as long as <span class="math inline">\(I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu\)</span> is a principal ideal.</p>
 </div>
-<h1 data-number="7" id="bibliography"><span class="header-section-number">7</span> Bibliography</h1>
+<h1 data-number="7" id="chapter-6-fundamental-theory-of-ideal-theory-thursday-february-04"><span class="header-section-number">7</span> Chapter 6: Fundamental Theory of Ideal Theory (Thursday, February 04)</h1>
+<div class="remark proofenv">
+<p>Goal: establish unique factorization of ideals for quadratic fields. Let <span class="math inline">\(K = {\mathbb{Q}}(\sqrt d)\)</span> be a quadratic field and we let 
+<span class="math display">
+\begin{align*}
+\tau = 
+\begin{cases}
+\sqrt d &amp; d \equiv 2,3 \pmod 4  
+\\
+{1 + \sqrt{d} \over 2} &amp; d \equiv 1 \pmod 4.
+\end{cases}
+\end{align*}
+<span> In this case we saw that <span class="math inline">\({\mathbb{Z}}_K = {\mathbb{Z}}+ {\mathbb{Z}}\tau = {\mathbb{Z}}[\tau]\)</span>. We defined the norm of a nonzero ideal <span class="math inline">\(I{~\trianglelefteq~}{\mathbb{Z}}_K\)</span> by <span class="math inline">\(N(I) = {\left\lvert {{\mathbb{Z}}_K/I} \right\rvert}\)</span>. The main theorem was that <span class="math inline">\(I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\langle{ N(I)}\right\rangle\)</span>, so the two definitions of norms are closely related. Some corollaries of this theorem:</p>
+</div>
+<div class="corollary proofenv" title="?">
+<p>Let <span class="math inline">\(I, J {~\trianglelefteq~}{\mathbb{Z}}_K\)</span> be nonzero, then <span class="math inline">\(N(IJ) = N(I) N(J)\)</span>.</p>
+</div>
+<div class="proof proofenv" title="of corollary">
+<p>Note that <span class="math inline">\(IJ \mkern 1.5mu\overline{\mkern-1.5muIJ\mkern-1.5mu}\mkern 1.5mu = \left\langle{ N(IJ) }\right\rangle\)</span> on one hand, and on the other hand we can write this as <span class="math inline">\(IJ \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu \mkern 1.5mu\overline{\mkern-1.5muJ\mkern-1.5mu}\mkern 1.5mu = I\mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu J \mkern 1.5mu\overline{\mkern-1.5muJ\mkern-1.5mu}\mkern 1.5mu = \left\langle{ N(I) }\right\rangle \left\langle{ N(J) }\right\rangle = \left\langle{ N(I) N(J) }\right\rangle\)</span>. So we know that <span class="math inline">\(\left\langle{ N(IJ) }\right\rangle = \left\langle{ N(I) N(J) }\right\rangle\)</span> in <span class="math inline">\({\mathbb{Z}}_K\)</span>, how can we conclude that the generators are the same? In a domain, they are the same up to a unit, so 
+<span class="math display">
+\begin{align*}
+{ N(IJ) \over N(I) N(J) } \in U({\mathbb{Z}}_K)
+,\end{align*}
+<span> and thus this quotient is in <span class="math inline">\({\mathbb{Z}}_K \cap{\mathbb{Q}}= {\mathbb{Z}}\)</span>. The same argument shows that its reciprocal is also in <span class="math inline">\({\mathbb{Z}}\)</span>, so the ratio must be a unit in <span class="math inline">\({\mathbb{Z}}\)</span> and we have <span class="math inline">\(N(IJ) = \pm N(I) N(J)\)</span>. But the norm counts something, so both sides must be positive.</p>
+</div>
+<div class="remark proofenv">
+<p>Note that if we knew <span class="math inline">\(I, J\)</span> were comaximal, we could appeal to the Chinese Remainder Theorem, but we don’t need any assumptions on the ideals for this proof.</p>
+</div>
+<div class="corollary proofenv" title="?">
+<p>Let <span class="math inline">\(\alpha\in {\mathbb{Z}}_K \setminus\left\{{0}\right\}\)</span>, then 
+<span class="math display">
+\begin{align*}
+N( \left\langle{ \alpha }\right\rangle ) = {\left\lvert {N(\alpha)} \right\rvert}  = {\left\lvert {\alpha\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu} \right\rvert} 
+.\end{align*}
+<span></p>
+</div>
+<div class="proof proofenv" title="of corollary">
+<p>We have 
+<span class="math display">
+\begin{align*}
+\left\langle{ N( \left\langle{ \alpha }\right\rangle  )}\right\rangle 
+\left\langle{ \alpha }\right\rangle \left\langle{ \mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu}\right\rangle 
+&amp;=
+\left\langle{ \alpha }\right\rangle \left\langle{ \mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu}\right\rangle \\
+&amp;=
+\left\langle{ \alpha\mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu}\right\rangle\\
+&amp;= \left\langle{ N \alpha }\right\rangle 
+.\end{align*}
+<span> By the same argument as the previous corollary, this can only be true if the generators are the same up to sign, so <span class="math inline">\(N( \left\langle{ \alpha }\right\rangle = \pm N \alpha\)</span>.</p>
+</div>
+<h2 data-number="7.1" id="unique-factorization-for-ideals"><span class="header-section-number">7.1</span> Unique Factorization for Ideals</h2>
+<div class="lemma proofenv" title="Principal Multiple Lemma">
+<p>Let <span class="math inline">\(I {~\trianglelefteq~}{\mathbb{Z}}_K\setminus\left\{{0}\right\}\)</span>, then there is another ideal <span class="math inline">\(\tilde I {~\trianglelefteq~}{\mathbb{Z}}_K\setminus\left\{{0}\right\}\)</span> such that <span class="math inline">\(I \tilde I\)</span> is principal.</p>
+</div>
+<div class="proof proofenv" title="of Principal Multiple Lemma">
+<p>Take <span class="math inline">\(\tilde I \mathrel{\vcenter{:}}=\mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu\)</span>, since we proved that this is principal and generated by the norm.</p>
+</div>
+<div class="remark proofenv">
+<p>Why write this down when it’s weaker than the previous theorem? In the next proofs, we’ll only really use that <span class="math inline">\(I\)</span> times something is principal.</p>
+</div>
+<div class="lemma proofenv" title="Cancellation in the Monoid of Ideals">
+<p>Suppose that <span class="math inline">\(IJ = IJ&#39;\)</span> is an equation of nonzero ideals in <span class="math inline">\({\mathbb{Z}}_K\)</span> with <span class="math inline">\(I\)</span> principal. Then <span class="math inline">\(J = J&#39;\)</span>, so principal ideals can be cancelled from both sides.</p>
+</div>
+<div class="definition proofenv" title="Dilation of Ideals">
+<p>If <span class="math inline">\(I {~\trianglelefteq~}{\mathbb{Z}}_K\)</span>, for any <span class="math inline">\(\alpha\in K\)</span> define 
+<span class="math display">
+\begin{align*}
+\alpha I \mathrel{\vcenter{:}}=\left\{{ \alpha \beta {~\mathrel{\Big|}~}\beta \in I }\right\} 
+,\end{align*}
+<span> i.e. scale or dilate the ideal <span class="math inline">\(I\)</span> by the factor <span class="math inline">\(\alpha\)</span>. We’ll refer to this as the <strong>dilation of <span class="math inline">\(I\)</span> by <span class="math inline">\(\alpha\)</span></strong>.</p>
+</div>
+<div class="remark proofenv">
+<p>Is this still an ideal in <span class="math inline">\({\mathbb{Z}}_K\)</span>? It still contains zero, is still closed under addition, and still absorbs multiplication by elements in <span class="math inline">\(O_K\)</span> – however, it may not be a subset of <span class="math inline">\({\mathbb{Z}}_K\)</span>, since we can dilate by any element in <span class="math inline">\(K\)</span>. For example, for <span class="math inline">\(I \mathrel{\vcenter{:}}= 2{\mathbb{Z}}\)</span> take <span class="math inline">\(\alpha\mathrel{\vcenter{:}}= 1/5\)</span>. These are referred to as <strong>fractional ideal</strong>, i.e. a <span class="math inline">\({\mathbb{Z}}_K{\hbox{-}}\)</span>submodule of <span class="math inline">\(K\)</span>. It is an ideal in <span class="math inline">\({\mathbb{Z}}_K\)</span> when it is contained in <span class="math inline">\({\mathbb{Z}}_K\)</span>.</p>
+</div>
+<div class="proof proofenv" title="of cancellation in the monoid of ideals">
+<p>Write <span class="math inline">\(I = \left\langle{ \alpha }\right\rangle\)</span>. Then <span class="math inline">\(\left\langle{ \alpha }\right\rangle J = \left\langle{ \alpha }\right\rangle J&#39;\)</span>, however the RHS is equal to the dilated ideal <span class="math inline">\(\alpha J&#39;\)</span> and the LHS is <span class="math inline">\(\alpha J\)</span>. So dilate both sides by <span class="math inline">\(1/ \alpha\)</span> to get <span class="math inline">\(J = J&#39;\)</span>.</p>
+</div>
+<div class="remark proofenv">
+<p>This was the easy case, when <span class="math inline">\(I\)</span> was principal. What if <span class="math inline">\(I\)</span> is not principal?</p>
+</div>
+<div class="proposition proofenv" title="$\Id(\ZZ_K)$ is Cancellative">
+<p>If <span class="math inline">\(IJ = IJ&#39;\)</span> then <span class="math inline">\(J = J&#39;\)</span>, with no assumptions on <span class="math inline">\(I\)</span>.</p>
+</div>
+<div class="proof proofenv" title="?">
+<p>Choose <span class="math inline">\(\tilde I\)</span> using the previous lemma and multiply it to both sides to obtain 
+<span class="math display">
+\begin{align*}
+(I \tilde I) J = (I \tilde I) J&#39;
+.\end{align*}
+<span> Then since <span class="math inline">\(I\tilde I\)</span> is principal, it can be cancelled using the previous lemma.</p>
+</div>
+<h3 data-number="7.1.1" id="proving-unique-factorization"><span class="header-section-number">7.1.1</span> Proving Unique Factorization</h3>
+<div class="theorem proofenv" title="To divide is to contain">
+<p>Let <span class="math inline">\(I, J\)</span> be nonzero ideals of <span class="math inline">\({\mathbb{Z}}_K\)</span>, then 
+<span class="math display">
+\begin{align*}
+I \divides J \iff I \supseteq J
+.\end{align*}
+<span></p>
+</div>
+<div class="proof proofenv" title="of theorem">
+<p><span class="math inline">\(\implies\)</span>: This is true in any ring! If <span class="math inline">\(I\divides J\)</span>, then <span class="math inline">\(J = IM\)</span> where <span class="math inline">\(M {~\trianglelefteq~}{\mathbb{Z}}_K\)</span>, and by definition <span class="math inline">\(IM \subseteq I\)</span> and so <span class="math inline">\(J \subseteq I\)</span>.</p>
+<p><span class="math inline">\(\impliedby\)</span>: Suppose <span class="math inline">\(I \supseteq J\)</span>, we then want to find <span class="math inline">\(B {~\trianglelefteq~}{\mathbb{Z}}_K\)</span> with <span class="math inline">\(J = IB\)</span>. We’ll proceed by pretending we had such a <span class="math inline">\(B\)</span> and seeing what it must be! If <span class="math inline">\(B\)</span> satisfies this equation, pick <span class="math inline">\(\tilde I\)</span> where <span class="math inline">\(I\tilde I = \left\langle{ \alpha}\right\rangle\)</span>, then 
+<span class="math display">
+\begin{align*}
+\tilde I J = \tilde I I B = \left\langle{ \alpha }\right\rangle B = \alpha B 
+.\end{align*}
+<span> From here we can solve for <span class="math inline">\(B\)</span> by dilating by <span class="math inline">\(1/ \alpha\)</span>, so <span class="math inline">\(B = \alpha ^{-1} (\tilde I J)\)</span>. If we make this definition, does it work?</p>
+<p>First, do we have <span class="math inline">\(B \subseteq {\mathbb{Z}}_K\)</span>? This amounts to check that <span class="math inline">\(\tilde I H \subseteq \left\langle{ \alpha }\right\rangle\)</span>. This is true, using the assumption <span class="math inline">\(J \subseteq I\)</span>, since <span class="math inline">\(\tilde I J \subseteq \tilde I I = \left\langle{ \alpha }\right\rangle\)</span>. So <span class="math inline">\(B\)</span> is not a fractional ideal, and is an honest ideal of <span class="math inline">\({\mathbb{Z}}_K\)</span>. We can also check that 
+<span class="math display">
+\begin{align*}
+IB 
+&amp;= I( \alpha ^{-1} \tilde I J) \\
+&amp; = \alpha^{-1}(I \tilde I J) \\
+&amp;= \alpha^{-1}( \left\langle{ \alpha }\right\rangle J ) \\
+&amp;= \alpha ^{-1} ( \alpha J) \\
+&amp;= J
+,\end{align*}
+<span> using that dilation commutes with ideal multiplication.</p>
+</div>
+<div class="remark proofenv">
+<p>We now want to prove that <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span> is a UFM. If it’s cancellative, we just need to check factorization into irreducibles and that irreducibles are prime, i.e. the analog of Euclid’s lemma.</p>
+</div>
+<div class="remark proofenv">
+<p>We’ll use the fact that <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span> is a <em>reduced</em> monoid, i.e. the only unit is the identity <span class="math inline">\(\left\langle{ 1 }\right\rangle\)</span>, the entire ring. This follows from the fact that the product of ideals is contained in both factors, so each factor would contain 1 and thus be the entire ring. We’ll proceed in two steps:</p>
+</div>
+<div class="proposition proofenv" title="Unique Factorization">
+<ol type="1">
+<li><p>We’ll show every element of <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span> factors into irreducibles in <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span>, and</p></li>
+<li><p>(Euclid’s Lemma) Irreducibles in <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span> are prime.</p></li>
+</ol>
+</div>
+<div class="remark proofenv">
+<p>We’ll use the fact that it’s reduced to avoid having to say “non-unit element” in (1), since we have only one unit and we’ll think of it as the empty product. How do you prove (1)? The same way you prove it for the integers: suppose you have a smallest counterexample. That can’t be prime, since a product of 1 prime is an allowable factorization, so this factors into a product of two smaller things which necessarily can <em>not</em> be counterexamples by minimality. So the smaller factors break up into primes – but then so does their product, the original counterexample, contradiction. The tricky part here is choosing what “smaller” should mean.</p>
+</div>
+<div class="proof proofenv" title="of 1">
+<p>If not, choose <span class="math inline">\(I\)</span> of smallest norm where <span class="math inline">\(I\)</span> has no such factorization. Then <span class="math inline">\(I \neq \left\langle{ 1 }\right\rangle\)</span> since by convention this does factor as the product of zero irreducibles, and <span class="math inline">\(I\)</span> is not irreducible since irreducibles count as their own factorization. So we can factor <span class="math inline">\(I = AB\)</span> with <span class="math inline">\(A, B \neq \left\langle{ 1 }\right\rangle\)</span>. Taking norms yields 
+<span class="math display">
+\begin{align*}
+N(I) = N(AB) = N(A) N(B)
+.\end{align*}
+<span> We’d like the norms of <span class="math inline">\(A, B\)</span> to be smaller, since then we could apply the inductive hypothesis. The only obstruction to this would be if <span class="math inline">\(N(A) = 1\)</span> and <span class="math inline">\(N(B) = N(I)\)</span>. But having norm 1 means that <span class="math inline">\(A = \left\langle{ 1 }\right\rangle\)</span>, since this means the quotient has one element, forcing it to be the zero ring. So everything in the ring is zero mod the ideal, i.e. in the ideal. So <span class="math inline">\(1 &lt; N(A), N(B) &lt; N(I)\)</span>. Since <span class="math inline">\(I\)</span> was the smallest counterexample, both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> can be factored into irreducibles, but then concatenating the two factorizations yields a factorization for <span class="math inline">\(AB\)</span>. <span class="math inline">\(\contradiction\)</span></p>
+</div>
+<div class="proof proofenv" title="of 2: Euclid&#39;s Lemma">
+<p>Suppose <span class="math inline">\(P\)</span> is irreducible in <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span> and suppose <span class="math inline">\(P \divides IJ\)</span>, we want to show <span class="math inline">\(P\)</span> divides one of these two. Suppose <span class="math inline">\(P\nmid I\)</span>, then <span class="math inline">\(P\)</span> does not contain <span class="math inline">\(I\)</span> and <span class="math inline">\(P+I \supsetneq P\)</span>. This means that <span class="math inline">\(P+I\)</span> is a <em>proper divisor</em> of <span class="math inline">\(P\)</span>, i.e. it divides <span class="math inline">\(P\)</span> but is not equal to <span class="math inline">\(P\)</span>. But <span class="math inline">\(P\)</span> was irreducible, so <span class="math inline">\(P+I\)</span> is a unit, which forces <span class="math inline">\(P + I = \left\langle{ 1 }\right\rangle\)</span>. Multiplying by <span class="math inline">\(J\)</span> yields <span class="math inline">\(PJ + IJ = J\)</span>. We said that <span class="math inline">\(P \divides IJ\)</span> by assumption, so <span class="math inline">\(IJ = PA\)</span> for some nonzero ideal <span class="math inline">\(A\)</span>. So 
+<span class="math display">
+\begin{align*}
+J 
+&amp;= PJ + IJ \\
+&amp;= PJ + PA \\ 
+&amp;= P(J + A)
+,\end{align*}
+<span> which shows that <span class="math inline">\(P\divides J\)</span>.</p>
+</div>
+<div class="remark proofenv">
+<p>Now running the exact same proof as for <span class="math inline">\({\mathbb{Z}}\)</span> yields unique factorization.</p>
+</div>
+<div class="exercise proofenv" title="?">
+<p>Let <span class="math inline">\(P\)</span> be a nonzero ideal of <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span>, then <span class="math inline">\(P\)</span> is monoidally prime in <span class="math inline">\(\operatorname{Id}({\mathbb{Z}}_K)\)</span> if and only if <span class="math inline">\(P\)</span> is prime in the usual sense of prime ideals.</p>
+<p><em>Hint: use “to divide is to contain.”</em></p>
+</div>
+<h2 data-number="7.2" id="chapter-7-preview"><span class="header-section-number">7.2</span> Chapter 7 Preview</h2>
+<div class="remark proofenv">
+<p>This chapter is about understanding prime ideals in quadratic number rings, i.e. <span class="math inline">\({\mathbb{Z}}_K\)</span> for quadratic fields. What are the building blocks of the nonzero prime ideals?</p>
+</div>
+<div class="definition proofenv" title="Prime ideal above a prime number">
+<p>Let <span class="math inline">\(P\)</span> be a nonzero prime ideal, then <span class="math inline">\(P\)</span> <strong>lies above</strong> the rational prime <span class="math inline">\(p\)</span> if and only if <span class="math inline">\(P \supseteq \left\langle{ p }\right\rangle\)</span>. Equivalently, <span class="math inline">\(p\in P\)</span>, or <span class="math inline">\(P\divides \left\langle{ p }\right\rangle\)</span>.</p>
+</div>
+<div class="theorem proofenv" title="?">
+<p>Every nonzero prime ideal of <span class="math inline">\({\mathbb{Z}}_K\)</span> lies above a unique rational prime <span class="math inline">\(p\)</span>.</p>
+</div>
+<div class="proof proofenv" title="?">
+<p>Consider <span class="math inline">\(P \cap{\mathbb{Z}}{~\trianglelefteq~}{\mathbb{Z}}\)</span>. Tracing through the definitions, if <span class="math inline">\(P\)</span> is a prime ideal in <span class="math inline">\({\mathbb{Z}}_K\)</span>, then this intersection is also prime in <span class="math inline">\({\mathbb{Z}}\)</span>. Moreover <span class="math inline">\(P \cap Z \neq \left\{{ 0 }\right\}\)</span>, since we can take any nonzero element <span class="math inline">\(\alpha \in P\)</span>, then <span class="math inline">\(0\neq \alpha\mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu\in {\mathbb{Z}}\)</span> and since <span class="math inline">\(P\)</span> absorbs multiplication, this is still in <span class="math inline">\(P\)</span>. The nonzero prime ideals of <span class="math inline">\({\mathbb{Z}}\)</span> are of the form <span class="math inline">\(n{\mathbb{Z}}\)</span> with <span class="math inline">\(n\)</span> prime, so <span class="math inline">\(P \cap{\mathbb{Z}}= p{\mathbb{Z}}\)</span> for some prime <span class="math inline">\(p\)</span>. But then <span class="math inline">\(p\in P\)</span> and <span class="math inline">\(P\)</span> lies above <span class="math inline">\(p\)</span>. Why is this unique? If <span class="math inline">\(P\)</span> lies above <span class="math inline">\(q\)</span>, we would have <span class="math inline">\(q\in P \cap{\mathbb{Z}}= p {\mathbb{Z}}\)</span> and thus <span class="math inline">\(p\divides q\)</span>. But since these are both primes, <span class="math inline">\(p=q\)</span>.</p>
+</div>
+<div class="remark proofenv">
+<p>If we want to figure out all of the prime ideals <span class="math inline">\(P\)</span> of <span class="math inline">\({\mathbb{Z}}_K\)</span>, we should see how <span class="math inline">\(\left\langle{ p }\right\rangle\)</span> factors, since each <span class="math inline">\(P\)</span> shows up as a factor of some <span class="math inline">\(\left\langle{ p }\right\rangle\)</span>. Thus the major question will be: given <span class="math inline">\(p\)</span>, how does <span class="math inline">\(\left\langle{ p }\right\rangle\)</span> factor into prime ideals in <span class="math inline">\({\mathbb{Z}}_K\)</span>?</p>
+</div>
+<h1 data-number="8" id="bibliography"><span class="header-section-number">8</span> Bibliography</h1>
 <div id="refs" class="proofenv" role="doc-bibliography">
 
 </div>
