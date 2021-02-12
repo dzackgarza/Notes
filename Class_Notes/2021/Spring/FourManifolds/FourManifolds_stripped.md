@@ -8,6 +8,7 @@
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
 ```
+
 # Tuesday, January 12
 
 ## Background
@@ -1345,6 +1346,268 @@ H^i(X; {\mathbb{Q}}/{\mathbb{Z}}) \otimes H^{n-i-1}(X; {\mathbb{Q}}/{\mathbb{Z}}
 \[
 [A] \smile[\omega] = \int_A \omega
 .\]
+:::
+
+# Friday, February 05
+
+::: {.remark}
+Recall that a lattice is **unimodular** if the map \( L\to L^\vee\coloneqq{\operatorname{Hom}}(L, {\mathbb{Z}}) \) is an isomorphism, where \( \ell \mapsto \ell \cdot ({\,\cdot\,}) \). To check this, it suffices to check if the Gram matrix \( M \) of a basis \( \left\{{e_i}\right\} \) satisfies \( {\left\lvert { \det M } \right\rvert} = 1 \).
+:::
+
+::: {.example title="Determinant 1 Integer Matrices"}
+The matrices \( [1] \) and \( [-1] \) correspond to the lattice \( {\mathbb{Z}}e \) where either \( e^2 \coloneqq e\cdot e = 1 \) or \( e^2 = -1 \). If \( M_1, M_2 \) both have absolute determinant \( 1 \), then so does
+\[
+\begin{bmatrix}
+M_1 & 0 
+\\
+0 & M_2
+\end{bmatrix}
+.\]
+
+So if \( L_1, L_2 \) are unimodular, then taking an orthogonal sum \( L_1 \oplus L_2 \) also yields a unimodular lattice. So this yields diagonal matrices with \( p \) copies of \( +1 \) and \( q \) copies of \( -1 \). This is referred to as \( rm{1}_{p, q} \), and is an *odd* unimodular lattice of signature \( (p, q) \) (after passing to \( {\mathbb{R}} \)). Here *odd* means that there exists a \( v\in L \) such that \( v^2 \) is odd.
+:::
+
+::: {.example title="Even unimodular lattices"}
+An even lattice must have no vectors of odd norm, so all of the diagonal elements are in \( 2{\mathbb{Z}} \). This is because \( (\sum n_i e_i)^2 = \sum_i n_i^2 e_i^2 + \sum_{i<j} 2 n_i, n_j e_i \cdot e_j \). Note that the matrix must be symmetric, and one example that works is
+\[
+\begin{bmatrix}
+0 & 1 
+\\
+1 & 0
+\end{bmatrix}
+.\]
+We'll refer to this lattice as \( H \), sometimes referred to as the *hyperbolic cell* or *hyperbolic plane*.
+:::
+
+::: {.example title="A harder even unimodular lattice"}
+This is built from the \( E_8 \) Dynkin diagram:
+
+```{=tex}
+\begin{tikzcd}
+    &&&& {\bullet_{e_8}} \\
+    {\bullet_{e_7}} & {\bullet_{e_6}} & {\bullet_{e_5}} & {\bullet_{e_4}} & {\bullet_{e_3}} & {\bullet_{e_2}} & {\bullet_{e_1}}
+    \arrow[no head, from=2-1, to=2-2]
+    \arrow[no head, from=2-2, to=2-3]
+    \arrow[no head, from=2-3, to=2-4]
+    \arrow[no head, from=2-4, to=2-5]
+    \arrow[no head, from=2-5, to=1-5]
+    \arrow[no head, from=2-5, to=2-6]
+    \arrow[no head, from=2-6, to=2-7]
+\end{tikzcd}
+```
+The rule here is
+\[
+e_i \cdot e_j = 
+\begin{cases}
+-2  & i =  j
+\\
+1 & e_i \to e_j \\
+0 & \text{if not connected}.
+\end{cases}
+\]
+So for example, \( e_2 \cdot e_6 = 0, e_1 \cdot e_3 = 1, e_2^2 = -2 \). You can check that \( \det(e_i \cdot e_j) = 1 \), and this is referred to as the \( E_8 \) lattice. This is of signature \( (0, 8) \), and it's negative definite if and only if \( v^2 < 0 \) for all \( v\neq 0 \). One can also negate the intersection form to define \( -E_8 \). Note that any simply-laced Dynkin diagram yields some lattice. For example, \( E_{10} \) is unimodular of signature \( (1, 9) \), and it turns out that \( E_{10} \cong E_8 \oplus H \).
+:::
+
+::: {.definition title="?"}
+Take
+\[ 
+%
+  \textup{\uppercase{\romannumeral 2}}%
+_{a, a+8b} \coloneqq\bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b E_8 
+,\]
+which is an even unimodular lattice since the diagonal entries are all \( -2 \), and using the fact that the signature is additive, is of signature \( (a, a+8b) \). Similarly,
+\[ 
+%
+  \textup{\uppercase{\romannumeral 2}}%
+_{a+8b, a} \coloneqq\bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b (-E_8) 
+,\]
+which is again even and unimodular.
+:::
+
+::: {.remark}
+Thus
+
+-   \( %
+      \textup{\uppercase{\romannumeral 1}}%
+    _{p, q} \) is odd, unimodular, of signature \( (p, q) \).
+-   \( %
+      \textup{\uppercase{\romannumeral 2}}%
+    _{p, q} \) is even, unimodular, of signature \( (p, q) \) only for \( p \equiv q \pmod 8 \).
+:::
+
+::: {.theorem title="Serre"}
+Every unimodular lattice which is not positive or negative definite is isomorphic to either \( %
+  \textup{\uppercase{\romannumeral 1}}%
+_{p, q} \) or \( %
+  \textup{\uppercase{\romannumeral 2}}%
+_{p, q} \) with \( 8\divides p-q \).
+:::
+
+::: {.remark}
+So there are obstructions to the existence of even unimodular lattices. Other than that, the number of (say) positive definite even unimodular lattices is
+
+  Dimension   Number of Lattices
+  ----------- ---------------------------------------------------
+  8           1: \( E_8 \)
+  16          2: \( E_8^{\oplus 2}, D_{16}^+ \)
+  24          24: The Neimeir lattices (e.g. the Leech lattice)
+  32          \>\( 8\times 10^{16} \)!!!!
+
+Note that the signature of a definite lattice must be divisible by 8.
+:::
+
+::: {.remark}
+There is an isometry: \( f: E_8 \to E_8 \) where \( f\in O(E_8) \), the linear maps preserving the intersection form (i.e. the Weyl group \( W(E_8) \), given by \( v\mapsto v + (v, e_i) e_i \). The Leech lattice also shows up in the sphere packing problems for dimensions \( 2,4,8,24 \). See Hale's theorem / Kepler conjecture for dimension 3! This uses an identification of \( L \) as a subset of \( {\mathbb{R}}^n \), namely \( L \otimes_{\mathbb{Z}}{\mathbb{R}}\cong {\mathbb{R}}^{24} \) for example, and the map \( L \hookrightarrow({\mathbb{R}}^{24}, \cdot) \) is an isometric embedding into \( {\mathbb{R}}^n \) with the standard form. Connection to classification of Lie groups: root lattices.
+:::
+
+::: {.remark}
+If \( M^4 \) is a compact oriented 4-manifold and if the intersection form on \( H^2(M; {\mathbb{Z}}) \) is indefinite, then the only invariants we can extract from that associated lattice are
+
+-   Whether it's even or odd, and
+-   Its signature
+
+If the lattice is even, then the signature satisfies \( 8\divides p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
+:::
+
+## Characteristic Classes
+
+::: {.definition title="?"}
+Let \( G \) be a topological group, then a **classifying space** \( EG \) is a contractible topological space admitting a free continuous \( G{\hbox{-}} \)action with a "nice" quotient.
+:::
+
+::: {.remark}
+Thus there is a map \( EG \to BG \coloneqq EG/G \) which has the structure of a principal \( G{\hbox{-}} \)bundle.
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{40pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-05_14-37.pdf_tex} };
+\end{tikzpicture}
+```
+Here we use a point \( p \) depending on \( U \) in an orbit to identify orbits \( g\cdot p \) with \( g \), and we want to take transverse slices to get local trivializations of \( U\in BG \). It suffices to know where \( \pi ^{-1} (U) \cong U \times G \), and it suffices to consider \( U \times\left\{{e}\right\} \). Moreover, \( EG\to BG \) is a universal principal \( G{\hbox{-}} \)bundle in the sense that if \( P\to X \) is a universal \( G{\hbox{-}} \)bundle, there is an \( f:X\to BG \).
+
+```{=tex}
+\begin{tikzcd}
+    P && EG \\
+    \\
+    X && BG
+    \arrow[from=1-1, to=3-1]
+    \arrow["f", from=3-1, to=3-3]
+    \arrow[from=1-3, to=3-3]
+    \arrow[dashed, from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwyLCJYIl0sWzIsMCwiRUciXSxbMiwyLCJCRyJdLFswLDAsIlAiXSxbMywwXSxbMCwyLCJmIl0sWzEsMl0sWzMsMSwiIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+Here bundles will be classified by homotopy classes of \( f \), so \( \left\{{\text{Principal $G{\hbox{-}}$bundles} / X}\right\} \rightleftharpoons[X, BG] \). This only works for paracompact Hausdorff spaces! The line \( {\mathbb{R}} \) with the doubled origin is a counterexample, consider complex line bundles.
+:::
+
+```{=tex}
+\todo[inline]{Revisit this last section, had to clarify a few things for myself!}
+```
+# Monday, February 08
+
+Last time: \( BG \) and \( EG \). See Milnor and Stasheff.
+
+::: {.example title="?"}
+Let \( G \coloneqq\operatorname{GL}_n({\mathbb{R}}) = {\mathbb{R}}^{\times} \), then we can take
+\[
+EG = {\mathbb{R}}^{\infty } \coloneqq\left\{{ (a_1, a_2, \cdots ) {~\mathrel{\Big|}~}a_i \in {\mathbb{R}}, a_{i\gg 0} = 0, a_i \text{ not all zero } }\right\}
+.\]
+Then \( {\mathbb{R}}^{\times} \) acts on \( EG \) by scaling, and we can take the quotient \( {\mathbb{R}}^{\infty } \setminus\left\{{0}\right\}/ {\mathbb{R}}^{\times} \), where \( \mathbf{a} \sim \lambda \mathbf{a} \) for all \( \lambda \in {\mathbb{R}}^{\times} \). This yields \( {\mathbb{RP}}^{\infty } \) as the quotient. You can check that \( E_G \) is contractible: it suffices to show that \( S^{\infty } \coloneqq\left\{{ \sum {\left\lvert {a_i} \right\rvert} = 1 }\right\} \) is contractible. This works by decreasing the last nonzero coordinate and increasing the first coordinate correspondingly. Moreover, local lifts exist, so we can identify \( {\mathbb{RP}}^{\infty } \cong B{\mathbb{R}}^{\times}= BG \). Similarly \( BC^{\times}\cong {\mathbb{CP}}^{\infty } \) with \( E{\mathbb{C}}^{\times}\coloneqq C^{\infty } \setminus\left\{{0}\right\} \).
+:::
+
+::: {.example title="?"}
+Consider \( G = \operatorname{GL}_n({\mathbb{R}}) \). It turns out that \( BG = {\operatorname{Gr}}(d, {\mathbb{R}}^{\infty }) \), which is the set of linear subspaces of \( RR^{\infty } \) of dimension \( d \). This is spanned by \( d \) vectors \( \left\{{e_ i}\right\} \) in some large enough \( {\mathbb{R}}^N \subseteq {\mathbb{R}}^{\infty } \), since we can take \( N \) to be the largest nonvanishing coordinate and include all of the vectors into \( {\mathbb{R}}^{\infty } \) by setting \( a_{> N} = 0 \). For any \( L \in {\operatorname{Gr}}_d({\mathbb{R}}^{\infty }) \), since \( {\mathbb{R}}^d \) has a standard basis, there is a natural \( \operatorname{GL}_d \) torsor: the set of ordered bases of linear subspaces. So define \( EG \coloneqq\left\{{ \text{bases of linear subspaces } L \in {\operatorname{Gr}}_d({\mathbb{R}}^{\infty }) }\right\} \), then any \( A\in \operatorname{GL}_d({\mathbb{R}}) \) acts on \( EG \) by sending \( (L, \left\{{e_i}\right\}) \mapsto (L, \left\{{ Le_i}\right\} ) \). We can identify \( EG \) as \( d{\hbox{-}} \)tuples of linearly independent elements of \( {\mathbb{R}}^{\infty } \), and there is a map
+\[
+EG &\to BG \\
+\left\{{e_i}\right\} &\mapsto {\operatorname{span}}_{\mathbb{R}}\left\{{e_i}\right\}
+.\]
+Thus there is a universal vector bundle over \( BGL_d \):
+
+```{=tex}
+\begin{tikzcd}
+\mathcal{E}_L \coloneqq L 
+  \ar[r] 
+& 
+\mathcal{E} 
+  \ar[d] 
+\\
+& 
+BGL_d
+\end{tikzcd}
+```
+So \( \mathcal{E} \subseteq BGL_d \times{\mathbb{R}}^{\infty } \), where we can define \( \mathcal{E} \coloneqq\left\{{(L, p) {~\mathrel{\Big|}~}p\in L}\right\} \). In this case, \( EG = {\operatorname{Frame}}( \mathcal{E}) \) is the frame bundle of this universal bundle. The same setup applies for \( G \coloneqq\operatorname{GL}_d({\mathbb{C}}) \), except we take \( {\operatorname{Gr}}_d({\mathbb{C}}^{\infty }) \).
+:::
+
+::: {.example title="?"}
+Consider \( G = O_d \), the set of orthogonal transformations of \( {\mathbb{R}}^d \) with the standard bilinear form, and \( U_d \) the set of unitary such transformations. To be explicit:
+\[
+U_d \coloneqq\left\{{ A \in \operatorname{Mat}(d \times d, {\mathbb{C}}) {~\mathrel{\Big|}~}{\left\langle {Av},~{Av} \right\rangle} = {\left\langle {v},~{v} \right\rangle} }\right\}
+,\]
+where \( {\left\langle { {\left[ {v_1, \cdots, v_n} \right]}, {\left[ {v_1, \cdots, v_n } \right]} },~{=} \right\rangle} \sum {\left\lvert {v_i} \right\rvert}^2 \). Alternatively, \( A^t A = I \) for \( O_d \) and \( {\overline{{A}}}^t A = I \) for \( U_d \). In this case, \( BO_d = {\operatorname{Gr}}_d( {\mathbb{R}}^{\infty } ) \) and \( BU_d = {\operatorname{Gr}}_d( {\mathbb{C}}^{ \infty }) \), but we'll make the fibers smaller: set the fiber over \( L \) to be \( (EO_d)_L \coloneqq\left\{{ \text{orthogonal frames of } L }\right\} \) and similarly \( (EU_d)_L \) the unitary frames of \( L \). That there are related comes from the fact that \( \operatorname{GL}_d \) retracts onto \( O_d \) using the Gram-Schmidt procedure.
+:::
+
+::: {.remark}
+Recall that there is a bijective correspondence
+\[
+\left\{{\substack{
+  \text{Principal $G{\hbox{-}}$ bundles}
+  \\ \text{on } X
+}}\right\}
+&\rightleftharpoons
+  [X, BG]
+\]
+and there is also a correspondence
+\[
+\left\{{\substack{
+  \text{Principal $\operatorname{GL}_d{\hbox{-}}$bundles }\\
+  \text{on } X
+}}\right\}
+&\rightleftharpoons
+\left\{{\substack{
+  \text{Principal ${\mathcal{O}}_d{\hbox{-}}$bundles } \\
+  \text{on } X
+}}\right\}
+\]
+Using the associated bundle construction, on the LHS we obtain vector bundles \( \mathcal{E}\to X \) of rank \( d \), and on the RHS we have bundles with a metric. In local trivializations \( U \times{\mathbb{R}}^d \to {\mathbb{R}}^d \), the metric is the standard one on \( {\mathbb{R}}^d \). This is referred to as a **reduction of structure group**, i.e. a principal \( \operatorname{GL}_d \) bundle admits possibly different trivializations for which the transition functions lie in the subgroup \( O_d \).
+:::
+
+::: {.example title="?"}
+Given any trivial principal \( G{\hbox{-}} \)bundle, it has a reduction of structure group to the trivial group. But the fact that the bundle is trivial may not be obvious.
+
+```{=html}
+<!--\begin{tikzpicture}-->
+```
+```{=html}
+<!--\fontsize{41pt}{1em} -->
+```
+```{=html}
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{forbidden_donut.pdf_tex} };-->
+```
+```{=html}
+<!--\end{tikzpicture}-->
+```
+![](figures/forbidden_donut.png)
+:::
+
+::: {.remark}
+We want to compute \( H^*(BU_d; {\mathbb{Z}}) \). Why is this important? Given any complex vector bundle \( \mathcal{E}\to X \) there is an associated principal \( U_d \) bundle by choosing a metric, so we get a homotopy class \( [X, BU_d] \). Given any \( f\in [X, BU_d] \) and any \( \alpha\in H^k(BU_d; {\mathbb{Z}}) \), we can take the pullback \( f^* \alpha \in H^k(X; {\mathbb{Z}}) \), which are **Chern classes**.
+:::
+
+::: {.exercise title="?"}
+Show that \( H^*(BU_d; {\mathbb{Z}}) \) stabilizes as \( d\to \infty \) to an infinitely generated polynomial ring \( {\mathbb{Z}}[c_1, c_2, \cdots] \) with each \( c_i \) in cohomological degree \( 2i \), so \( c_i \in H^{2i}(BU_d, {\mathbb{Z}}) \).
+:::
+
+::: {.definition title="?"}
+There is a map \( BU_{d-1} \to BU_d \), which we can identify as \( {\operatorname{Gr}}_{d-1}(C^{\infty }) \to {\operatorname{Gr}}_d({\mathbb{C}}^{\infty }) \). This is defined by sending a basis \( \left\{{v_1, \cdots, v_{d-1}}\right\} \mapsto {\operatorname{span}}\left\{{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }\right\} \) where \( s: {\mathbb{C}}^{\infty } \to {\mathbb{C}}^{\infty} \) is the map that shifts every coordinate to the right by one.
+
+```{=tex}
+\todo[inline]{
+  Question: does ${\operatorname{Gr}}_d({\mathbb{C}}^{\infty}$ deformation retract onto the image of this map?
+}
+```
+This will yield a fiber sequence \( S^{2d-1} \to BU_{d-1} \to BU_d \), and using connectedness of the sphere and the LES in homotopy this will identify \( H^*(BU_d) = H^*(BU_{d-1})[c_d] \) where \( c_d \in H^{2d}(BU_d) \). The **Chern class** of a vector bundle \( \mathcal{E} \) , denoted \( c_k( \mathcal{E} ) \), will be defined as the pullback \( f^* c_k \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.

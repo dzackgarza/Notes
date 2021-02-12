@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07, custom), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file '2021-02-05_14-37.pdf' (pdf, eps, ps)
+%% Accompanies image file 'forbidden_donut.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1065.34742485bp}%
+    \setlength{\unitlength}{805.57484028bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,17 +50,9 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.36408121)%
+  \begin{picture}(1,0.51861328)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.02582235,0.15268597){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$EG$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-02-05_14-37.pdf}}%
-    \put(0.32150051,0.30756502){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$p$\end{tabular}}}}%
-    \put(-0.00233748,0.32164494){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G\dash$orbits\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-02-05_14-37.pdf}}%
-    \put(0.83185149,0.08365738){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$BG$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{2021-02-05_14-37.pdf}}%
-    \put(0.60338187,0.32401525){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G\cdot p \sim G$\\$g\cdot p \mapstofrom g$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{2021-02-05_14-37.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{forbidden_donut.pdf}}%
   \end{picture}%
 \endgroup%
