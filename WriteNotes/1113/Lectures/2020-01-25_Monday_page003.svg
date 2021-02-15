@@ -2186,5 +2186,6 @@
     <path class="write-stroke-pen" fill="none" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" __comx="70.537" __comy="2891.96" __timestamp="0x1774f63119e" d="M69.296 2935.066 l2.482 -85.612" />
     <path class="write-stroke-pen" fill="none" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" __comx="246.149" __comy="2848.395" __timestamp="0x1774f631942" d="M70.573 2848.587 l351.152 0.651" />
     <path class="write-stroke-pen" fill="none" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" __comx="421.761" __comy="2863.057" __timestamp="0x1774f631db1" d="M422.062 2848.78 l-0.602 87.467" />
+    <path class="write-flat-pen" fill="#000000" stroke-width="4" __comx="618.101" __comy="5606.571" __timestamp="0x177a7a257db" d="M616.101 5605.904 l0 4 4 0 0 -4" />
   </g>
 </svg>
