@@ -1506,7 +1506,7 @@ Then \( {\mathbb{R}}^{\times} \) acts on \( EG \) by scaling, and we can take th
 :::
 
 ::: {.example title="?"}
-Consider \( G = \operatorname{GL}_n({\mathbb{R}}) \). It turns out that \( BG = {\operatorname{Gr}}(d, {\mathbb{R}}^{\infty }) \), which is the set of linear subspaces of \( RR^{\infty } \) of dimension \( d \). This is spanned by \( d \) vectors \( \left\{{e_ i}\right\} \) in some large enough \( {\mathbb{R}}^N \subseteq {\mathbb{R}}^{\infty } \), since we can take \( N \) to be the largest nonvanishing coordinate and include all of the vectors into \( {\mathbb{R}}^{\infty } \) by setting \( a_{> N} = 0 \). For any \( L \in {\operatorname{Gr}}_d({\mathbb{R}}^{\infty }) \), since \( {\mathbb{R}}^d \) has a standard basis, there is a natural \( \operatorname{GL}_d \) torsor: the set of ordered bases of linear subspaces. So define \( EG \coloneqq\left\{{ \text{bases of linear subspaces } L \in {\operatorname{Gr}}_d({\mathbb{R}}^{\infty }) }\right\} \), then any \( A\in \operatorname{GL}_d({\mathbb{R}}) \) acts on \( EG \) by sending \( (L, \left\{{e_i}\right\}) \mapsto (L, \left\{{ Le_i}\right\} ) \). We can identify \( EG \) as \( d{\hbox{-}} \)tuples of linearly independent elements of \( {\mathbb{R}}^{\infty } \), and there is a map
+Consider \( G = \operatorname{GL}_n({\mathbb{R}}) \). It turns out that \( BG = {\operatorname{Gr}}(d, {\mathbb{R}}^{\infty }) \), which is the set of linear subspaces of \( {\mathbb{R}}^{\infty } \) of dimension \( d \). This is spanned by \( d \) vectors \( \left\{{e_ i}\right\} \) in some large enough \( {\mathbb{R}}^N \subseteq {\mathbb{R}}^{\infty } \), since we can take \( N \) to be the largest nonvanishing coordinate and include all of the vectors into \( {\mathbb{R}}^{\infty } \) by setting \( a_{> N} = 0 \). For any \( L \in {\operatorname{Gr}}_d({\mathbb{R}}^{\infty }) \), since \( {\mathbb{R}}^d \) has a standard basis, there is a natural \( \operatorname{GL}_d \) torsor: the set of ordered bases of linear subspaces. So define \( EG \coloneqq\left\{{ \text{bases of linear subspaces } L \in {\operatorname{Gr}}_d({\mathbb{R}}^{\infty }) }\right\} \), then any \( A\in \operatorname{GL}_d({\mathbb{R}}) \) acts on \( EG \) by sending \( (L, \left\{{e_i}\right\}) \mapsto (L, \left\{{ Le_i}\right\} ) \). We can identify \( EG \) as \( d{\hbox{-}} \)tuples of linearly independent elements of \( {\mathbb{R}}^{\infty } \), and there is a map
 \[
 EG &\to BG \\
 \left\{{e_i}\right\} &\mapsto {\operatorname{span}}_{\mathbb{R}}\left\{{e_i}\right\}
@@ -1592,7 +1592,7 @@ There is a map \( BU_{d-1} \to BU_d \), which we can identify as \( {\operatorna
 
 ```{=tex}
 \todo[inline]{
-  Question: does ${\operatorname{Gr}}_d({\mathbb{C}}^{\infty}$ deformation retract onto the image of this map?
+  Question: does ${\operatorname{Gr}}_d({\mathbb{C}}^{\infty})$ deformation retract onto the image of this map?
 }
 ```
 This will yield a fiber sequence \( S^{2d-1} \to BU_{d-1} \to BU_d \), and using connectedness of the sphere and the LES in homotopy this will identify \( H^*(BU_d) = H^*(BU_{d-1})[c_d] \) where \( c_d \in H^{2d}(BU_d) \). The **Chern class** of a vector bundle \( \mathcal{E} \) , denoted \( c_k( \mathcal{E} ) \), will be defined as the pullback \( f^* c_k \).
