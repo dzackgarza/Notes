@@ -1411,15 +1411,11 @@ So for example, \( e_2 \cdot e_6 = 0, e_1 \cdot e_3 = 1, e_2^2 = -2 \). You can 
 ::: {.definition title="?"}
 Take
 \[ 
-%
-  \textup{\uppercase{\romannumeral 2}}%
-_{a, a+8b} \coloneqq\bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b E_8 
+\mathbf{II}_{a, a+8b} \coloneqq\bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b E_8 
 ,\]
 which is an even unimodular lattice since the diagonal entries are all \( -2 \), and using the fact that the signature is additive, is of signature \( (a, a+8b) \). Similarly,
 \[ 
-%
-  \textup{\uppercase{\romannumeral 2}}%
-_{a+8b, a} \coloneqq\bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b (-E_8) 
+\mathbf{II}_{a+8b, a} \coloneqq\bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b (-E_8) 
 ,\]
 which is again even and unimodular.
 :::
@@ -1427,20 +1423,12 @@ which is again even and unimodular.
 ::: {.remark}
 Thus
 
--   \( %
-      \textup{\uppercase{\romannumeral 1}}%
-    _{p, q} \) is odd, unimodular, of signature \( (p, q) \).
--   \( %
-      \textup{\uppercase{\romannumeral 2}}%
-    _{p, q} \) is even, unimodular, of signature \( (p, q) \) only for \( p \equiv q \pmod 8 \).
+-   \( \mathbf{I}_{p, q} \) is odd, unimodular, of signature \( (p, q) \).
+-   \( \mathbf{II}_{p, q} \) is even, unimodular, of signature \( (p, q) \) only for \( p \equiv q \pmod 8 \).
 :::
 
 ::: {.theorem title="Serre"}
-Every unimodular lattice which is not positive or negative definite is isomorphic to either \( %
-  \textup{\uppercase{\romannumeral 1}}%
-_{p, q} \) or \( %
-  \textup{\uppercase{\romannumeral 2}}%
-_{p, q} \) with \( 8\divides p-q \).
+Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\divides p-q \).
 :::
 
 ::: {.remark}
@@ -1608,6 +1596,110 @@ There is a map \( BU_{d-1} \to BU_d \), which we can identify as \( {\operatorna
 }
 ```
 This will yield a fiber sequence \( S^{2d-1} \to BU_{d-1} \to BU_d \), and using connectedness of the sphere and the LES in homotopy this will identify \( H^*(BU_d) = H^*(BU_{d-1})[c_d] \) where \( c_d \in H^{2d}(BU_d) \). The **Chern class** of a vector bundle \( \mathcal{E} \) , denoted \( c_k( \mathcal{E} ) \), will be defined as the pullback \( f^* c_k \).
+:::
+
+# Friday, February 12
+
+::: {.remark}
+Last time: the splitting principle. Suppose we have \( \bundle{E} = L_1 \oplus \cdots \oplus L_r \) and let \( x_i \coloneqq c_i(L_i) \). Then \( c_k(\bundle{E}) \) is the degree \( 2k \) part of \( \prod_{i=1}^r (1 + x_i \) where each \( x_i \) is in degree \( 2 \). This is equal to \( e_k(x_1, \cdots, x_r) \) where \( e_k \) is the \( k \)th elementary symmetric polynomial.
+:::
+
+::: {.example title="?"}
+For example,
+
+-   \( e_1 = x_1 + \cdots x_r \).
+
+-   \( e_2 = x_1 x_2 + x_1 x_3 + \cdots = \sum_{i < j} x_i x_j \)
+
+-   \( e_3 = \sum_{i<j<k} x_i x_j x_k \), etc.
+:::
+
+::: {.remark}
+The theorem is that any symmetric polynomial is a polynomial in the \( e_i \). For example, \( p_2 = \sum x_i^2 \) can be written as \( e_1^2 - 2e_2 \). Similarly, \( p_3 = \sum x_i^3 = e_1^3 - 3e_1 e_2 -3e_3 \) Note that the coefficients of these polynomials are important for representations of \( S_n \), see *Schur polynomials*.
+:::
+
+::: {.remark}
+Due to the splitting principle, we can pretend that \( x_i = c_i(L_i) \) exists even when \( \bundle{E} \) doesn't split. If \( \bundle{E} \to X \), the individual symbols \( x_i \) don't exist, but we can write \( x_1^3 + \cdots + x_r^3 = e_1^3 - 3e_1 e_2 - 3e_3 \coloneqq c_1(\bundle{E})^3 + 3c_1(\bundle{E}) c_2(\bundle{E}) + \cdots \), which is a well-defined element of \( H^6(X; {\mathbb{Z}}) \). So this polynomial defines a characteristic class of \( \bundle{E} \), and this can be done for any symmetric polynomial. We can change basis in the space of symmetric polynomials to now define different characteristic classes.
+:::
+
+::: {.definition title="Chern Character"}
+The **Chern character** is defined as
+\[
+\operatorname{ch}(\bundle{E}) 
+&\coloneqq\sum_{i=1}^r e^{x_i}\in H^*(X; {\mathbb{Q}}) \\
+&\coloneqq\sum_{i=1}^r \sum_{k=0}^{\infty } {x_i^k \over k!} \\
+&= \sum_{k=0}^{\infty } {p_k(x_1, \cdots, x_r) \over k!} \\
+&= \operatorname{rank}(\bundle{E}) + c_1(\bundle{E}) + { c_1(\bundle{E}) - c_2(\bundle{E}) \over 2!} + { c_1(\bundle{E})^3 - 3c_1(\bundle{E}) c_2(\bundle{E}) - 3 c_3(\bundle{E}) \over 3!} \in H^0 + H^2 + H^4 + H^6 \\
+&=\operatorname{ch}_0(\bundle{E}) + \operatorname{ch}_1(\bundle{E}) + \operatorname{ch}_2( \bundle{E} ) + \cdots && \operatorname{ch}_i(\bundle{E}) \in H^{2i}(X; {\mathbb{Q}}) \\
+.\]
+:::
+
+::: {.definition title="Todd Class"}
+The **total Todd class**
+\[
+\td(\bundle{E})
+\coloneqq
+\prod_{i=1}^r { x_i \over 1 - e^{-x_i} }
+.\]
+
+Note that
+\[
+{x_i \over 1 - e^{-x_i} } = 1 + {x_i \over 2} + {x_i^2 \over 12} + {x_i^4 \over 720} + \cdots = 1 + {x_i \over 2} + \sum_{i=1}^{\infty } { (-1)^{i-1} B_i \over (2i)! } x^{2i}
+.\]
+where L'Hopital shows that the derivative at \( x_i = 0 \) exists, so it's analytic at zero and the expansion makes sense, and the \( B_i \) are Bernoulli numbers.
+:::
+
+::: {.remark title="Very important and useful!!"}
+\( \operatorname{ch}(\bundle{E} \oplus \bundle{F}) = \operatorname{ch}(\bundle{E}) + \operatorname{ch}(\bundle{F}) \) and \( \operatorname{ch}( \bundle{E} \otimes\bundle{F} ) = \sum_{i,j} e^{x_i + y_j} = \operatorname{ch}( \bundle{E} ) \operatorname{ch}(\bundle{F} ) \) using the fact that \( c_1(L_1 \otimes L_2) = c_1(L_1) c_1(L_2) \). So \( \operatorname{ch} \) is a "ring morphism" in the sense that it preserves multiplication \( \otimes \) and addition \( \oplus \), making the Chern character even better than the total Chern class.
+:::
+
+::: {.definition title="Todd Class"}
+Let \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \), then define the **Todd class** of \( X \) as \( \td_{\mathbb{C}}(X) \coloneqq\td(TX) \) where \( TX \) is viewed as a complex vector bundle. If \( X\in {\operatorname{Mfd}}_{\mathbb{R}} \), define \( \td_{\mathbb{R}}= \td(TX \otimes_{\mathbb{R}}{\mathbb{C}}) \).
+:::
+
+## Section 5: Riemann-Roch and Generalizations
+
+::: {.remark}
+Let \( X\in {\operatorname{Top}} \) and let \( \operatorname{\mathcal{(}}F) \) be a sheaf of vector spaces. Suppose \( h^i(X; \operatorname{\mathcal{F}}) \coloneqq\dim H^i(X; \operatorname{\mathcal{F}}) < \infty \) for all \( i \) and is equal to 0 for \( i \gg 0 \).
+:::
+
+::: {.definition title="Euler Characteristic of a Sheaf"}
+The **Euler characteristic** of \( \operatorname{\mathcal{(}}F) \) is defined as
+\[
+\chi(X; \operatorname{\mathcal{F}}) \coloneqq\chi(\operatorname{\mathcal{F}}) \coloneqq\sum_{i=0}^{\infty } (-1)^i h_i(X; \operatorname{\mathcal{F}} )
+.\]
+:::
+
+::: {.warnings}
+This is not always well-defined!
+:::
+
+::: {.example title="?"}
+Let \( X\in {\operatorname{Mfd}}_{\compact} \) and take \( \operatorname{\mathcal{(}}F) \coloneqq\constantsheaf{{\mathbb{R}}} \), we then have
+\[
+\chi(X; \constantsheaf{{\mathbb{R}}}) = h^0(X; {\mathbb{R}}) - h^1(X; {\mathbb{R}}) + \cdots = b_0 - b_1 + b_2 - \cdots \coloneqq\chi_{{\operatorname{Top}}}(X)
+.\]
+:::
+
+::: {.example title="?"}
+Let \( X = {\mathbb{C}} \) and take \( \operatorname{\mathcal{F}} \coloneqq{\mathcal{O}}\coloneqq{\mathcal{O}}^{\holomorphic} \) the sheaf of holomorphic functions. We then have \( h^{> 0}(X; {\mathcal{O}}) = 0 \), but \( H^0(X; {\mathcal{O}}) \) is the space of all holomorphic functions on \( {\mathbb{C}} \), making \( \dim_{\mathbb{C}}h^0(X; {\mathcal{O}}) \) infinite.
+:::
+
+::: {.example title="?"}
+Take \( X = {\mathbb{P}}^1 \) with \( {\mathcal{O}} \) as above, \( h^0({\mathbb{P}}^1; {\mathcal{O}}) = 1 \) since \( {\mathbb{P}}^1 \) is compact and the maximum modulus principle applies, so the only global holomorphic functions are constant. We can write \( {\mathbb{P}}^1 = {\mathbb{C}}_1 \cup{\mathbb{C}}_2 \) as a cover and \( h^i({\mathbb{C}}, {\mathcal{O}}) = 0 \), so this is an acyclic cover and we can use it to compute \( h^1({\mathbb{P}}^1; {\mathcal{O}}) \) using Čech cohomology. We have
+
+-   \( C^0({\mathbb{P}}^1; {\mathcal{O}}) = {\mathcal{O}}({\mathbb{C}}_1) \oplus {\mathcal{O}}({\mathbb{C}}_2) \)
+
+-   \( C^1({\mathbb{P}}^1; {\mathcal{O}}) = {\mathcal{O}}({\mathbb{C}}_1 \cap{\mathbb{C}}_2) = {\mathcal{O}}({\mathbb{C}}^{\times}) \).
+
+-   The boundary map is given by
+    \[
+    {\partial}_0: C^0 &\to C^1 \\
+    ( f(z), g(z) ) &\mapsto g(1/z) - f(z)
+    \]
+    and there are no triple intersections.
+
+Is every holomorphic function on \( {\mathbb{C}}^{\times} \) of the form \( g(1/z) - f(z) \) with \( f,g \) holomorphic on \( {\mathbb{C}} \). The answer is yes, by Laurent expansion, and thus \( h^1 = 0 \). We can thus compute \( \chi({\mathbb{P}}^1; {\mathcal{O}}) = 1-0 = 1 \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.

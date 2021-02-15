@@ -2164,12 +2164,12 @@ For example, $E_{10}$ is unimodular of signature $(1, 9)$, and it turns out that
 :::{.definition title="?"}
 Take 
 \[ 
-\RM{2}_{a, a+8b} \da \bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b E_8 
+\mathbf{II}_{a, a+8b} \da \bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b E_8 
 ,\]
 which is an even unimodular lattice since the diagonal entries are all $-2$, and using the fact that the signature is additive, is of signature $(a, a+8b)$.
 Similarly, 
 \[ 
-\RM{2}_{a+8b, a} \da \bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b (-E_8) 
+\mathbf{II}_{a+8b, a} \da \bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b (-E_8) 
 ,\]
 which is again even and unimodular.
 :::
@@ -2177,13 +2177,13 @@ which is again even and unimodular.
 :::{.remark}
 Thus 
 
-- $\RM{1}_{p, q}$ is odd, unimodular, of signature $(p, q)$.
-- $\RM{2}_{p, q}$ is even, unimodular, of signature $(p, q)$ only for $p \equiv q \mod 8$.
+- $\mathbf{I}_{p, q}$ is odd, unimodular, of signature $(p, q)$.
+- $\mathbf{II}_{p, q}$ is even, unimodular, of signature $(p, q)$ only for $p \equiv q \mod 8$.
 
 :::
 
 :::{.theorem title="Serre"}
-Every unimodular lattice which is not positive or negative definite is isomorphic to either $\RM{1}_{p, q}$ or $\RM{2}_{p, q}$ with $8\divides p-q$.
+Every unimodular lattice which is not positive or negative definite is isomorphic to either $\mathbf{I}_{p, q}$ or $\mathbf{II}_{p, q}$ with $8\divides p-q$.
 :::
 
 :::{.remark}
@@ -2388,6 +2388,140 @@ This is defined by sending a basis $\ts{v_1, \cdots, v_{d-1}} \mapsto \spanof\ts
 This will yield a fiber sequence $S^{2d-1} \to BU_{d-1} \to BU_d$, and using connectedness of the sphere and the LES in homotopy this will identify $H^*(BU_d) = H^*(BU_{d-1})[c_d]$ where $c_d \in H^{2d}(BU_d)$.
 The **Chern class** of a vector bundle \( \mathcal{E}  \) , denoted \( c_k( \mathcal{E} )  \), will be defined as the pullback $f^* c_k$.
 :::
+
+
+
+
+
+
+
+
+# Friday, February 12
+
+:::{.remark}
+Last time: the splitting principle.
+Suppose we have \( \bundle{E} = L_1 \oplus \cdots \oplus L_r \) and let $x_i \da c_i(L_i)$.
+Then $c_k(\bundle{E})$ is the degree $2k$ part of \( \prod_{i=1}^r (1 + x_i \) where each $x_i$ is in degree $2$.
+This is equal to $e_k(x_1, \cdots, x_r)$ where $e_k$ is the $k$th elementary symmetric polynomial.
+:::
+
+:::{.example title="?"}
+For example,
+
+- $e_1 = x_1 + \cdots x_r$.
+
+- $e_2 = x_1 x_2 + x_1 x_3 + \cdots = \sum_{i < j} x_i x_j$
+
+- $e_3 = \sum_{i<j<k} x_i x_j x_k$, etc.
+
+
+:::
+
+:::{.remark}
+The theorem is that any symmetric polynomial is a polynomial in the $e_i$.
+For example, $p_2 = \sum x_i^2$ can be written as $e_1^2 - 2e_2$.
+Similarly, $p_3 = \sum x_i^3 = e_1^3 - 3e_1 e_2 -3e_3$
+Note that the coefficients of these polynomials are important for representations of $S_n$, see *Schur polynomials*.
+:::
+
+:::{.remark}
+Due to the splitting principle, we can pretend that $x_i = c_i(L_i)$ exists even when \( \bundle{E} \) doesn't split.
+If \( \bundle{E} \to X \), the individual symbols $x_i$ don't exist, but we can write $x_1^3 + \cdots + x_r^3 = e_1^3 - 3e_1 e_2 - 3e_3 \da c_1(\bundle{E})^3 + 3c_1(\bundle{E}) c_2(\bundle{E}) + \cdots$, which is a well-defined element of $H^6(X; \ZZ)$.
+So this polynomial defines a characteristic class of \( \bundle{E} \), and this can be done for any symmetric polynomial.
+We can change basis in the space of symmetric polynomials to now define different characteristic classes.
+:::
+
+:::{.definition title="Chern Character"}
+The **Chern character** is defined as 
+\[
+\ch(\bundle{E}) 
+&\da \sum_{i=1}^r e^{x_i}\in H^*(X; \QQ) \\
+&\da \sum_{i=1}^r \sum_{k=0}^{\infty } {x_i^k \over k!} \\
+&= \sum_{k=0}^{\infty } {p_k(x_1, \cdots, x_r) \over k!} \\
+&= \rank(\bundle{E}) + c_1(\bundle{E}) + { c_1(\bundle{E}) - c_2(\bundle{E}) \over 2!} + { c_1(\bundle{E})^3 - 3c_1(\bundle{E}) c_2(\bundle{E}) - 3 c_3(\bundle{E}) \over 3!} \in H^0 + H^2 + H^4 + H^6 \\
+&=\ch_0(\bundle{E}) + \ch_1(\bundle{E}) + \ch_2( \bundle{E} ) + \cdots && \ch_i(\bundle{E}) \in H^{2i}(X; \QQ) \\
+.\]
+:::
+
+:::{.definition title="Todd Class"}
+The **total Todd class** 
+\[
+\td(\bundle{E})
+\da
+\prod_{i=1}^r { x_i \over 1 - e^{-x_i} }
+.\]
+
+Note that
+\[
+{x_i \over 1 - e^{-x_i} } = 1 + {x_i \over 2} + {x_i^2 \over 12} + {x_i^4 \over 720} + \cdots = 1 + {x_i \over 2} + \sum_{i=1}^{\infty } { (-1)^{i-1} B_i \over (2i)! } x^{2i}
+.\]
+where L'Hopital shows that the derivative at $x_i = 0$ exists, so it's analytic at zero and the expansion makes sense, and the $B_i$ are Bernoulli numbers.
+:::
+
+:::{.remark title="Very important and useful!!"}
+\( \ch(\bundle{E} \oplus \bundle{F}) = \ch(\bundle{E}) + \ch(\bundle{F}) \) and \( \ch( \bundle{E} \tensor \bundle{F} ) = \sum_{i,j} e^{x_i + y_j} = \ch( \bundle{E} ) \ch(\bundle{F} ) \)
+using the fact that \( c_1(L_1 \tensor L_2) = c_1(L_1) c_1(L_2) \).
+So $\ch$ is a "ring morphism" in the sense that it preserves multiplication $\tensor$ and addition $\oplus$, making the Chern character even better than the total Chern class.
+:::
+
+:::{.definition title="Todd Class"}
+Let $X \in \Mfd_\CC$, then define the **Todd class** of $X$ as $\td_\CC(X) \da \td(TX)$ where $TX$ is viewed as a complex vector bundle.
+If $X\in \Mfd_\RR$, define $\td_\RR = \td(TX \tensor_\RR \CC)$.
+:::
+
+## Section 5: Riemann-Roch and Generalizations
+
+:::{.remark}
+Let $X\in \Top$ and let \( \sheaf(F) \) be a sheaf of vector spaces.
+Suppose $h^i(X; \sheaf{F}) \da \dim H^i(X; \sheaf{F}) < \infty$ for all $i$ and is equal to 0 for $i \gg 0$.
+:::
+
+:::{.definition title="Euler Characteristic of a Sheaf"}
+The **Euler characteristic** of \( \sheaf(F) \) is defined as 
+\[
+\chi(X; \sheaf{F}) \da \chi(\sheaf{F}) \da \sum_{i=0}^{\infty } (-1)^i h_i(X; \sheaf{F} )
+.\]
+:::
+
+:::{.warnings}
+This is not always well-defined!
+:::
+
+:::{.example title="?"}
+Let $X\in \Mfd_{\compact}$ and take \( \sheaf(F) \da \constantsheaf{\RR} \), we then have 
+\[
+\chi(X; \constantsheaf{\RR}) = h^0(X; \RR) - h^1(X; \RR) + \cdots = b_0 - b_1 + b_2 - \cdots \da \chi_{\Top}(X)
+.\]
+
+:::
+
+:::{.example title="?"}
+Let $X = \CC$ and take $\sheaf{F} \da \OO \da \OO^{\holomorphic}$ the sheaf of holomorphic functions.
+We then have $h^{> 0}(X; \OO) = 0$, but $H^0(X; \OO)$ is the space of all holomorphic functions on $\CC$, making $\dim_\CC h^0(X; \OO)$ infinite.
+:::
+
+:::{.example title="?"}
+Take $X = \PP^1$ with $\OO$ as above, $h^0(\PP^1; \OO) = 1$ since $\PP^1$ is compact and the maximum modulus principle applies, so the only global holomorphic functions are constant.
+We can write $\PP^1 = \CC_1 \union \CC_2$ as a cover and $h^i(\CC, \OO) = 0$, so this is an acyclic cover and we can use it to compute $h^1(\PP^1; \OO)$ using Čech cohomology.
+We have 
+
+- $C^0(\PP^1; \OO) = \OO(\CC_1) \oplus \OO(\CC_2)$
+
+- $C^1(\PP^1; \OO) = \OO(\CC_1 \intersect\CC_2) = \OO(\CC\units)$.
+
+- The boundary map is given by
+\[
+\del_0: C^0 &\to C^1 \\
+( f(z), g(z) ) &\mapsto g(1/z) - f(z)
+\]
+  and there are no triple intersections.
+
+Is every holomorphic function on $\CC\units$ of the form $g(1/z) - f(z)$ with $f,g$ holomorphic on $\CC$.
+The answer is yes, by Laurent expansion, and thus $h^1 = 0$.
+We can thus compute $\chi(\PP^1; \OO) = 1-0 = 1$.
+
+:::
+
 
 
 
