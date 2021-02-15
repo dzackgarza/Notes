@@ -1601,7 +1601,7 @@ This will yield a fiber sequence \( S^{2d-1} \to BU_{d-1} \to BU_d \), and using
 # Friday, February 12
 
 ::: {.remark}
-Last time: the splitting principle. Suppose we have \( \bundle{E} = L_1 \oplus \cdots \oplus L_r \) and let \( x_i \coloneqq c_i(L_i) \). Then \( c_k(\bundle{E}) \) is the degree \( 2k \) part of \( \prod_{i=1}^r (1 + x_i \) where each \( x_i \) is in degree \( 2 \). This is equal to \( e_k(x_1, \cdots, x_r) \) where \( e_k \) is the \( k \)th elementary symmetric polynomial.
+Last time: the splitting principle. Suppose we have \( \mathcal{E} = L_1 \oplus \cdots \oplus L_r \) and let \( x_i \coloneqq c_i(L_i) \). Then \( c_k(\mathcal{E}) \) is the degree \( 2k \) part of \( \prod_{i=1}^r (1 + x_i ) \) where each \( x_i \) is in degree \( 2 \). This is equal to \( e_k(x_1, \cdots, x_r) \) where \( e_k \) is the \( k \)th elementary symmetric polynomial.
 :::
 
 ::: {.example title="?"}
@@ -1619,25 +1619,31 @@ The theorem is that any symmetric polynomial is a polynomial in the \( e_i \). F
 :::
 
 ::: {.remark}
-Due to the splitting principle, we can pretend that \( x_i = c_i(L_i) \) exists even when \( \bundle{E} \) doesn't split. If \( \bundle{E} \to X \), the individual symbols \( x_i \) don't exist, but we can write \( x_1^3 + \cdots + x_r^3 = e_1^3 - 3e_1 e_2 - 3e_3 \coloneqq c_1(\bundle{E})^3 + 3c_1(\bundle{E}) c_2(\bundle{E}) + \cdots \), which is a well-defined element of \( H^6(X; {\mathbb{Z}}) \). So this polynomial defines a characteristic class of \( \bundle{E} \), and this can be done for any symmetric polynomial. We can change basis in the space of symmetric polynomials to now define different characteristic classes.
+Due to the splitting principle, we can pretend that \( x_i = c_i(L_i) \) exists even when \( \mathcal{E} \) doesn't split. If \( \mathcal{E} \to X \), the individual symbols \( x_i \) don't exist, but we can write '
+\[
+x_1^3 + \cdots + x_r^3 = e_1^3 - 3e_1 e_2 - 3e_3 \coloneqq c_1(\mathcal{E})^3 + 3c_1(\mathcal{E}) c_2(\mathcal{E}) + \cdots
+,\]
+which is a well-defined element of \( H^6(X; {\mathbb{Z}}) \). So this polynomial defines a characteristic class of \( \mathcal{E} \), and this can be done for any symmetric polynomial. We can change basis in the space of symmetric polynomials to now define different characteristic classes.
 :::
 
 ::: {.definition title="Chern Character"}
 The **Chern character** is defined as
 \[
-\operatorname{ch}(\bundle{E}) 
+\operatorname{ch}(\mathcal{E}) 
 &\coloneqq\sum_{i=1}^r e^{x_i}\in H^*(X; {\mathbb{Q}}) \\
 &\coloneqq\sum_{i=1}^r \sum_{k=0}^{\infty } {x_i^k \over k!} \\
 &= \sum_{k=0}^{\infty } {p_k(x_1, \cdots, x_r) \over k!} \\
-&= \operatorname{rank}(\bundle{E}) + c_1(\bundle{E}) + { c_1(\bundle{E}) - c_2(\bundle{E}) \over 2!} + { c_1(\bundle{E})^3 - 3c_1(\bundle{E}) c_2(\bundle{E}) - 3 c_3(\bundle{E}) \over 3!} \in H^0 + H^2 + H^4 + H^6 \\
-&=\operatorname{ch}_0(\bundle{E}) + \operatorname{ch}_1(\bundle{E}) + \operatorname{ch}_2( \bundle{E} ) + \cdots && \operatorname{ch}_i(\bundle{E}) \in H^{2i}(X; {\mathbb{Q}}) \\
+&= \operatorname{rank}(\mathcal{E}) + c_1(\mathcal{E}) + { c_1(\mathcal{E}) - c_2(\mathcal{E}) \over 2!} + { c_1(\mathcal{E})^3 - 3c_1(\mathcal{E}) c_2(\mathcal{E}) - 3 c_3(\mathcal{E}) \over 3!} + \cdots \\
+& \qquad \in H^0 + H^2 + H^4 + H^6 \\
+&=\operatorname{ch}_0(\mathcal{E}) + \operatorname{ch}_1(\mathcal{E}) + \operatorname{ch}_2( \mathcal{E} ) + \cdots, \\
+&   \quad \operatorname{ch}_i(\mathcal{E}) \in H^{2i}(X; {\mathbb{Q}}) 
 .\]
 :::
 
 ::: {.definition title="Todd Class"}
 The **total Todd class**
 \[
-\td(\bundle{E})
+\mathrm{td}(\mathcal{E})
 \coloneqq
 \prod_{i=1}^r { x_i \over 1 - e^{-x_i} }
 .\]
@@ -1650,21 +1656,21 @@ where L'Hopital shows that the derivative at \( x_i = 0 \) exists, so it's analy
 :::
 
 ::: {.remark title="Very important and useful!!"}
-\( \operatorname{ch}(\bundle{E} \oplus \bundle{F}) = \operatorname{ch}(\bundle{E}) + \operatorname{ch}(\bundle{F}) \) and \( \operatorname{ch}( \bundle{E} \otimes\bundle{F} ) = \sum_{i,j} e^{x_i + y_j} = \operatorname{ch}( \bundle{E} ) \operatorname{ch}(\bundle{F} ) \) using the fact that \( c_1(L_1 \otimes L_2) = c_1(L_1) c_1(L_2) \). So \( \operatorname{ch} \) is a "ring morphism" in the sense that it preserves multiplication \( \otimes \) and addition \( \oplus \), making the Chern character even better than the total Chern class.
+\( \operatorname{ch}(\mathcal{E} \oplus \mathcal{F}) = \operatorname{ch}(\mathcal{E}) + \operatorname{ch}(\mathcal{F}) \) and \( \operatorname{ch}( \mathcal{E} \otimes\mathcal{F} ) = \sum_{i,j} e^{x_i + y_j} = \operatorname{ch}( \mathcal{E} ) \operatorname{ch}(\mathcal{F} ) \) using the fact that \( c_1(L_1 \otimes L_2) = c_1(L_1) c_1(L_2) \). So \( \operatorname{ch} \) is a "ring morphism" in the sense that it preserves multiplication \( \otimes \) and addition \( \oplus \), making the Chern character even better than the total Chern class.
 :::
 
 ::: {.definition title="Todd Class"}
-Let \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \), then define the **Todd class** of \( X \) as \( \td_{\mathbb{C}}(X) \coloneqq\td(TX) \) where \( TX \) is viewed as a complex vector bundle. If \( X\in {\operatorname{Mfd}}_{\mathbb{R}} \), define \( \td_{\mathbb{R}}= \td(TX \otimes_{\mathbb{R}}{\mathbb{C}}) \).
+Let \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \), then define the **Todd class** of \( X \) as \( \mathrm{td}_{\mathbb{C}}(X) \coloneqq\mathrm{td}(TX) \) where \( TX \) is viewed as a complex vector bundle. If \( X\in {\operatorname{Mfd}}_{\mathbb{R}} \), define \( \mathrm{td}_{\mathbb{R}}= \mathrm{td}(TX \otimes_{\mathbb{R}}{\mathbb{C}}) \).
 :::
 
 ## Section 5: Riemann-Roch and Generalizations
 
 ::: {.remark}
-Let \( X\in {\operatorname{Top}} \) and let \( \operatorname{\mathcal{(}}F) \) be a sheaf of vector spaces. Suppose \( h^i(X; \operatorname{\mathcal{F}}) \coloneqq\dim H^i(X; \operatorname{\mathcal{F}}) < \infty \) for all \( i \) and is equal to 0 for \( i \gg 0 \).
+Let \( X\in {\operatorname{Top}} \) and let \( \operatorname{\mathcal{F}} \) be a sheaf of vector spaces. Suppose \( h^i(X; \operatorname{\mathcal{F}}) \coloneqq\dim H^i(X; \operatorname{\mathcal{F}}) < \infty \) for all \( i \) and is equal to 0 for \( i \gg 0 \).
 :::
 
 ::: {.definition title="Euler Characteristic of a Sheaf"}
-The **Euler characteristic** of \( \operatorname{\mathcal{(}}F) \) is defined as
+The **Euler characteristic** of \( \operatorname{\mathcal{F}} \) is defined as
 \[
 \chi(X; \operatorname{\mathcal{F}}) \coloneqq\chi(\operatorname{\mathcal{F}}) \coloneqq\sum_{i=0}^{\infty } (-1)^i h_i(X; \operatorname{\mathcal{F}} )
 .\]
@@ -1675,14 +1681,14 @@ This is not always well-defined!
 :::
 
 ::: {.example title="?"}
-Let \( X\in {\operatorname{Mfd}}_{\compact} \) and take \( \operatorname{\mathcal{(}}F) \coloneqq\constantsheaf{{\mathbb{R}}} \), we then have
+Let \( X\in {\operatorname{Mfd}}_{\text{cpt}} \) and take \( \operatorname{\mathcal{F}} \coloneqq\underline{{\mathbb{R}}} \), we then have
 \[
-\chi(X; \constantsheaf{{\mathbb{R}}}) = h^0(X; {\mathbb{R}}) - h^1(X; {\mathbb{R}}) + \cdots = b_0 - b_1 + b_2 - \cdots \coloneqq\chi_{{\operatorname{Top}}}(X)
+\chi(X; \underline{{\mathbb{R}}}) = h^0(X; {\mathbb{R}}) - h^1(X; {\mathbb{R}}) + \cdots = b_0 - b_1 + b_2 - \cdots \coloneqq\chi_{{\operatorname{Top}}}(X)
 .\]
 :::
 
 ::: {.example title="?"}
-Let \( X = {\mathbb{C}} \) and take \( \operatorname{\mathcal{F}} \coloneqq{\mathcal{O}}\coloneqq{\mathcal{O}}^{\holomorphic} \) the sheaf of holomorphic functions. We then have \( h^{> 0}(X; {\mathcal{O}}) = 0 \), but \( H^0(X; {\mathcal{O}}) \) is the space of all holomorphic functions on \( {\mathbb{C}} \), making \( \dim_{\mathbb{C}}h^0(X; {\mathcal{O}}) \) infinite.
+Let \( X = {\mathbb{C}} \) and take \( \operatorname{\mathcal{F}} \coloneqq{\mathcal{O}}\coloneqq{\mathcal{O}}^{\text{holo}} \) the sheaf of holomorphic functions. We then have \( h^{> 0}(X; {\mathcal{O}}) = 0 \), but \( H^0(X; {\mathcal{O}}) \) is the space of all holomorphic functions on \( {\mathbb{C}} \), making \( \dim_{\mathbb{C}}h^0(X; {\mathcal{O}}) \) infinite.
 :::
 
 ::: {.example title="?"}

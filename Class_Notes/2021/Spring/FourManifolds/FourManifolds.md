@@ -176,6 +176,8 @@
 \newcommand{\cok}[0]{\operatorname{coker}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
+\newcommand{\bundle}[1]{\mathcal{#1}}
+\newcommand{\td}[0]{\mathrm{td}}
 \newcommand{\correspond}[1]{\theset{\substack{#1}}}
 \newcommand{\cross}[0]{\times}
 \newcommand{\by}[0]{\times}
@@ -439,6 +441,9 @@
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
+\newcommand\constantsheaf[1]{\underline{#1}}
+\newcommand\holomorphic[0]{\text{holo}}
+\newcommand\compact[0]{\text{cpt}}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\capprod{\frown}
@@ -2401,7 +2406,7 @@ The **Chern class** of a vector bundle \( \mathcal{E}  \) , denoted \( c_k( \mat
 :::{.remark}
 Last time: the splitting principle.
 Suppose we have \( \bundle{E} = L_1 \oplus \cdots \oplus L_r \) and let $x_i \da c_i(L_i)$.
-Then $c_k(\bundle{E})$ is the degree $2k$ part of \( \prod_{i=1}^r (1 + x_i \) where each $x_i$ is in degree $2$.
+Then $c_k(\bundle{E})$ is the degree $2k$ part of \( \prod_{i=1}^r (1 + x_i ) \) where each $x_i$ is in degree $2$.
 This is equal to $e_k(x_1, \cdots, x_r)$ where $e_k$ is the $k$th elementary symmetric polynomial.
 :::
 
@@ -2426,7 +2431,11 @@ Note that the coefficients of these polynomials are important for representation
 
 :::{.remark}
 Due to the splitting principle, we can pretend that $x_i = c_i(L_i)$ exists even when \( \bundle{E} \) doesn't split.
-If \( \bundle{E} \to X \), the individual symbols $x_i$ don't exist, but we can write $x_1^3 + \cdots + x_r^3 = e_1^3 - 3e_1 e_2 - 3e_3 \da c_1(\bundle{E})^3 + 3c_1(\bundle{E}) c_2(\bundle{E}) + \cdots$, which is a well-defined element of $H^6(X; \ZZ)$.
+If \( \bundle{E} \to X \), the individual symbols $x_i$ don't exist, but we can write '
+\[
+x_1^3 + \cdots + x_r^3 = e_1^3 - 3e_1 e_2 - 3e_3 \da c_1(\bundle{E})^3 + 3c_1(\bundle{E}) c_2(\bundle{E}) + \cdots
+,\] 
+which is a well-defined element of $H^6(X; \ZZ)$.
 So this polynomial defines a characteristic class of \( \bundle{E} \), and this can be done for any symmetric polynomial.
 We can change basis in the space of symmetric polynomials to now define different characteristic classes.
 :::
@@ -2438,8 +2447,10 @@ The **Chern character** is defined as
 &\da \sum_{i=1}^r e^{x_i}\in H^*(X; \QQ) \\
 &\da \sum_{i=1}^r \sum_{k=0}^{\infty } {x_i^k \over k!} \\
 &= \sum_{k=0}^{\infty } {p_k(x_1, \cdots, x_r) \over k!} \\
-&= \rank(\bundle{E}) + c_1(\bundle{E}) + { c_1(\bundle{E}) - c_2(\bundle{E}) \over 2!} + { c_1(\bundle{E})^3 - 3c_1(\bundle{E}) c_2(\bundle{E}) - 3 c_3(\bundle{E}) \over 3!} \in H^0 + H^2 + H^4 + H^6 \\
-&=\ch_0(\bundle{E}) + \ch_1(\bundle{E}) + \ch_2( \bundle{E} ) + \cdots && \ch_i(\bundle{E}) \in H^{2i}(X; \QQ) \\
+&= \rank(\bundle{E}) + c_1(\bundle{E}) + { c_1(\bundle{E}) - c_2(\bundle{E}) \over 2!} + { c_1(\bundle{E})^3 - 3c_1(\bundle{E}) c_2(\bundle{E}) - 3 c_3(\bundle{E}) \over 3!} + \cdots \\
+& \qquad \in H^0 + H^2 + H^4 + H^6 \\
+&=\ch_0(\bundle{E}) + \ch_1(\bundle{E}) + \ch_2( \bundle{E} ) + \cdots, \\
+&   \quad \ch_i(\bundle{E}) \in H^{2i}(X; \QQ) 
 .\]
 :::
 
@@ -2472,12 +2483,12 @@ If $X\in \Mfd_\RR$, define $\td_\RR = \td(TX \tensor_\RR \CC)$.
 ## Section 5: Riemann-Roch and Generalizations
 
 :::{.remark}
-Let $X\in \Top$ and let \( \sheaf(F) \) be a sheaf of vector spaces.
+Let $X\in \Top$ and let \( \sheaf{F} \) be a sheaf of vector spaces.
 Suppose $h^i(X; \sheaf{F}) \da \dim H^i(X; \sheaf{F}) < \infty$ for all $i$ and is equal to 0 for $i \gg 0$.
 :::
 
 :::{.definition title="Euler Characteristic of a Sheaf"}
-The **Euler characteristic** of \( \sheaf(F) \) is defined as 
+The **Euler characteristic** of \( \sheaf{F} \) is defined as 
 \[
 \chi(X; \sheaf{F}) \da \chi(\sheaf{F}) \da \sum_{i=0}^{\infty } (-1)^i h_i(X; \sheaf{F} )
 .\]
@@ -2488,7 +2499,7 @@ This is not always well-defined!
 :::
 
 :::{.example title="?"}
-Let $X\in \Mfd_{\compact}$ and take \( \sheaf(F) \da \constantsheaf{\RR} \), we then have 
+Let $X\in \Mfd_{\compact}$ and take \( \sheaf{F} \da \constantsheaf{\RR} \), we then have 
 \[
 \chi(X; \constantsheaf{\RR}) = h^0(X; \RR) - h^1(X; \RR) + \cdots = b_0 - b_1 + b_2 - \cdots \da \chi_{\Top}(X)
 .\]
@@ -2521,7 +2532,6 @@ The answer is yes, by Laurent expansion, and thus $h^1 = 0$.
 We can thus compute $\chi(\PP^1; \OO) = 1-0 = 1$.
 
 :::
-
 
 
 
