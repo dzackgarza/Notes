@@ -8,6 +8,7 @@
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
 ```
+
 # Thursday, January 14
 
 See website for notes on books, intro to class.
@@ -1358,6 +1359,248 @@ Consider \( P \cap{\mathbb{Z}}{~\trianglelefteq~}{\mathbb{Z}} \). Tracing throug
 
 ::: {.remark}
 If we want to figure out all of the prime ideals \( P \) of \( {\mathbb{Z}}_K \), we should see how \( \left\langle{ p }\right\rangle \) factors, since each \( P \) shows up as a factor of some \( \left\langle{ p }\right\rangle \). Thus the major question will be: given \( p \), how does \( \left\langle{ p }\right\rangle \) factor into prime ideals in \( {\mathbb{Z}}_K \)?
+:::
+
+# Ch. 7: Prime Ideals of \( {\mathbb{Z}}_K \) (Tuesday, February 09) {#ch.-7-prime-ideals-of-mathbbz_k-tuesday-february-09}
+
+Let \( K \) be a quadratic number field. Recall that if \( P {~\trianglelefteq~}{\mathbb{Z}}_K \) is a prime then \( P \) **lies above** \( p\in {\mathbb{Z}} \) if \( P \supseteq \left\langle{ p }\right\rangle \). Equivalently,
+
+-   \( P \) contains \( p \), or
+-   \( P \divides \left\langle{ p }\right\rangle \)
+
+Last time we saw that every \( P \) lies above a unique \( p \). The following diagram illustrates the situation:
+
+```{=tex}
+\begin{tikzcd}
+    K && {{\mathbb{Z}}_K} && P \\
+    \\
+    {\mathbb{Q}}&& {\mathbb{Z}}&& p
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-3]
+    \arrow[no head, from=1-5, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJLIl0sWzAsMiwiXFxRUSJdLFsyLDAsIlxcWlpfSyJdLFsyLDIsIlxcWloiXSxbNCwwLCJQIl0sWzQsMiwicCJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzQsNSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+If we want to determine all of the primes \( P \), we should consider factoring all of the ideals \( \left\langle{ p }\right\rangle \) into prime ideals of \( {\mathbb{Z}}_K \). We have unique factorization for prime ideals, so we can write \( \left\langle{ p }\right\rangle = P_1 \cdots P_g \). Taking norms yields
+\[
+N( \left\langle{ p }\right\rangle ) = \prod N(P_i) 
+,\]
+where we can identify the LHS as \( p^2 \), since the norm for principal ideals is the square of the generating element. Alternatively, we can check the size of \( {\mathbb{Z}}_K/ \left\langle{ p }\right\rangle \): \( {\mathbb{Z}}_K \) is a free \( {\mathbb{Z}}{\hbox{-}} \)module on 2 generators, and we take both coordinates \( \pmod p \) to get \( ({\mathbb{Z}}/p{\mathbb{Z}})^2 \). Since none of the terms on the RHS are the unit ideal, none have norm 1, and so either
+
+a.  \( g=1 \) and \( P_1 = \left\langle{ g }\right\rangle \) and \( \left\langle{ p }\right\rangle \) is prime. In this case we say \( p \) **is inert**.
+
+b.  If \( g=2 \) and \( P_1 \neq P_2 \), then we say \( p \)\$ **is split**.
+
+c.  If \( g=2 \) and \( P_1 = P_2 \)\< then we say \( p \) **is ramified**.
+
+Let \( K = {\mathbb{Q}}( \sqrt{d} ) \) and \( \tau \) as usual. We can compute its minimal polynomial:
+\[
+\min_\tau(x) = 
+\begin{cases}
+x^2 - d & d \equiv 2,3 \pmod 4  
+\\
+x^2 - x + \qty{1-d \over 4} & d \equiv 1 \pmod 4.
+\end{cases}
+\]
+
+::: {.theorem title="Dedekind-Kummer, Prime Factorization Mirroring Theorem"}
+Let \( p\in {\mathbb{Z}} \) be prime. Then the factorization of \( \left\langle{ p }\right\rangle \) into prime ideals in \( {\mathbb{Z}}_K \) mirrors the factorization of \( \min_\tau(x) \) into irreducibles mod \( p \), i.e. in \( {\mathbb{F}}_p[x] \). If \( \min_\tau(x) \) is irreducibles, then \( p \) is inert. Otherwise,
+\[
+\min_\tau(x) \equiv (x-a)(x-b) \pmod p
+\]
+for some \( a, b\in {\mathbb{Z}} \), since this is a monic quadratic. In this case \( \left\langle{ p }\right\rangle= P_1 P_2 \) where
+
+-   \( P_1 \coloneqq\left\langle{ p, \tau - a }\right\rangle \),
+-   \( P_2 \coloneqq\left\langle{ p, \tau - b}\right\rangle \),
+
+and both ideals have norm \( p \). Finally, \( P_1 = P_2 \iff a\equiv b \pmod p \).
+:::
+
+::: {.example title="?"}
+Let \( K = {\mathbb{Q}}( \sqrt{5} ) \), then \( \tau= \sqrt{-5} \) and \( \min_\tau(x) = x^2 + 5 \). We can check how this factors modulo small primes
+\[
+x^2 + 5 = (x+1)^2 \in {\mathbb{F}}_2[x]
+,\]
+and we're in the ramified case. In this case,
+\[
+\left\langle{ 2 }\right\rangle = \left\langle{ 2, \sqrt{ -5} -1 }\right\rangle^2  
+.\]
+We also have
+\[
+x^2 + 5 \equiv (x-1)(x+1) \in {\mathbb{F}}_3[x]
+,\]
+which is the split case, so
+\[
+\left\langle{ 3 }\right\rangle= \left\langle{ 3, \sqrt{-5} -1 }\right\rangle \left\langle{ 3, \sqrt{-5} + 1 }\right\rangle   
+.\]
+Taken mod 5, we have
+\[
+x^2 + 5 \equiv x^2 \in {\mathbb{F}}_5[x]
+,\]
+so
+\[
+\left\langle{ 5 }\right\rangle = \left\langle{ 5, \sqrt{-5} }\right\rangle^2 = \left\langle{ \sqrt{-5} }\right\rangle ^2 
+.\]
+Similarly,
+\[
+x^2 + 5 \text{is irreducible } \in {\mathbb{F}}_{11}[x]
+,\]
+so \( \left\langle{ 11 }\right\rangle \) is inert.
+:::
+
+::: {.lemma title="?"}
+There is a surjective morphism
+\[
+{\mathbb{Z}}[x] &\to {\mathbb{Z}}_K = {\mathbb{Z}}[ \tau ] \\
+f( \alpha) &\mapsto f( \tau)
+,\]
+so by the first isomorphism theorem,
+\[
+{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x) }\right\rangle \cong {\mathbb{Z}}_K 
+.\]
+:::
+
+::: {.proof title="of Dedekind-Kummer mirroring"}
+Note that \( {\mathbb{Z}}_K / \left\langle{ p }\right\rangle = {\mathbb{Z}}[ \tau] / \left\langle{ p }\right\rangle \), and using the lemma, this is isomorphic to \( {\mathbb{Z}}[x] / \left\langle{ \min_{ \tau} (x), p }\right\rangle \cong {\mathbb{F}}_p[x] / \left\langle{ \min_\tau(x) \pmod p }\right\rangle \). In this case, if \( \min_\tau \) is irreducible mod \( p \), then the quotient is a field. Why? The numerator is a polynomial ring over a field and the denominator is generated by an irreducible, and a PID mod an irreducible is always a field. Thus \( \left\langle{ p }\right\rangle \) must be a maximal ideal by considering the first expression above, and maximals are prime here, so \( p \) is inert.
+
+Now suppose it's not irreducible, so
+\[
+\min_\tau(x) = (x-a)(x-b) \pmod p
+.\]
+Define \( P_1, P_2 \) as in the theorem. Why are these of norm \( p \)? Consider
+\[
+{\mathbb{Z}}_K/P^1 
+&\cong { {\mathbb{Z}}[x] / \left\langle{ \min_\tau(x) }\right\rangle \over \left\langle{ p, x-a }\right\rangle \\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle \text{since } x-a \divides \min_\tau(x)\\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}
+,\]
+this \( P_1 \) is maximal and thus prime, and moreover \( N(P_1) = p \) since there are \( p \) elements in \( {\mathbb{Z}}/p{\mathbb{Z}} \). The same argument works for \( P_2 \). Now multiplying them yields
+\[
+P_1 P_2 
+&= \left\langle{ p, p(\tau - a), p (\tau - b), (\tau -a)(\tau -b) }\right\rangle
+.\]
+Note that \( \min_\tau(x) \equiv (x-a)(x-b) \pmod p \) implies \( \min_\tau(x) = (x-a)(x-b) + pG(x) \) for some \( G\in {\mathbb{Z}}[x] \). Plugging in \( \tau \), the LHS is zero, while on the RHS yields \( \cdots + pG(\tau) \). This last term is \( pr \) for some \( r\in R \), which is zero mod \( p \in {\mathbb{Z}}[\tau] = {\mathbb{Z}}_K \) So \( p \) now divides every term in the generating set above, and since to contain is to divide, we have \( P_1 P_2 \subseteq \left\langle{ p }\right\rangle \) and \( \left\langle{ p }\right\rangle \divides P_1 P_2 \). Write \( P_1 P_2 = \left\langle{ p }\right\rangle I \) for some ideal \( I \), taking norms yields
+\[
+N(P_1) N(P_2) = N( \left\langle{ p }\right\rangle) N(I) 
+.\]
+The LHS is \( p^2 \) as shown above, and the RHS is \( p^2 N(I) \) which forces \( N(I) = 1 \iff I = \left\langle{ 1 }\right\rangle = {\mathbb{Z}}_K \) (the entire ring)
+
+We now want to show \( P_1 = P_2 \iff a\equiv b \pmod p \). The reverse direction is clear, since generators in \( P_1, P_2 \) can be adjusted by \( p \) without changing the ideal. Conversely, suppose \( P_1 = P_2 \). Then \( P_1 \) contains \( \tau - a, \tau - b \), and thus their difference \( a-b = (\tau -b ) - (\tau - a) \in P_1 \). Moreover \( p\in P_1 \), and so \( P_1 \) contains the \( {\mathbb{Z}} \) ideals generated by \( p \) and \( a-b \) and thus \( \gcd(p, a-b) \). If \( a \not\equiv b\pmod p \), this greatest common divisor must be 1, forcing \( 1\in P_1 \). This is a contradiction since \( P_1 \) is prime and thus can't be the unit ideal, so \( a \equiv b \pmod p \).
+:::
+
+::: {.question}
+Can we be more explicit about how \( \min_\tau \) factors?
+:::
+
+::: {.proposition title="?"}
+Let \( p \) be an odd prime, then
+
+-   \( p \) is inert \( \iff d \) is not a square \( \pmod p \),
+-   \( p \) splits \( \iff d \) is a nonzero square \( \pmod p \),
+-   \( p \) ramifies \( \iff d \equiv 0 \pmod p \).
+:::
+
+::: {.proposition title="?"}
+```{=tex}
+\envlist
+```
+-   \( d \equiv 5 \pmod 8 \implies \) 2 is inert.
+-   \( d \equiv 1 \pmod 8 \implies \) 2 is split.
+-   \( d \equiv 2, 3 \pmod 4 \implies \) 2 is ramified.
+:::
+
+::: {.remark}
+The proof follows from looking at how \( \min_\tau(x) \) factors \( \pmod 2 \), and there aren't many possibilities.
+:::
+
+## Ch. 8: Units in \( {\mathbb{Z}}_K \) {#ch.-8-units-in-mathbbz_k}
+
+For the imaginary quadratic case, we can write down the unit group explicitly.
+
+::: {.proposition title="?"}
+If \( d<0 \) (i.e. the imaginary quadratic case) then \( \abs{ U({\mathbb{Z}}_J) \leq 6 \).
+:::
+
+::: {.remark}
+"Usually" \( U({\mathbb{Z}}_K) = \left\{{ \pm 1 }\right\} \). Here "usually" means there are only two exceptions
+
+-   For \( {\mathbb{Q}}( \sqrt{-1} ) \) then the units are \( \left\{{ \pm 1, \pm i }\right\} \).
+
+-   For \( d=-3 \), there were 6 units.
+
+In every other case, there are only two.
+:::
+
+::: {.proposition title="?"}
+Suppose \( d>0 \), then there is a unit \( \epsilon_0 > 1 \in {\mathbb{Z}}_K \) such that \( U({\mathbb{Z}}_K) = \left\{{ \pm \epsilon_0 ^k {~\mathrel{\Big|}~}k\in {\mathbb{Z}}}\right\} \). Moreover \( \epsilon_0 \) is unique, and we'll refer to this as the **fundamental unit**.
+:::
+
+::: {.corollary title="?"}
+When \( d>0 \), \( U({\mathbb{Z}}_K) \) is infinite and in fact isomorphic to \( {\mathbb{Z}}/2{\mathbb{Z}}\oplus {\mathbb{Z}} \).
+:::
+
+::: {.remark}
+Here the \( {\mathbb{Z}}/2{\mathbb{Z}} \) corresponds to the \( \pm \) and the \( {\mathbb{Z}} \) to the exponent.
+:::
+
+::: {.example title="?"}
+```{=tex}
+\envlist
+```
+-   For \( d=2 \), we have \( \varepsilon_0 = 1 + \sqrt{2} \). This is a unit because it has inverse \( \sqrt{2} -1 \).
+
+-   For \( d=43 \), it turns out that \( \varepsilon_0 + 531 \sqrt{43} \).
+:::
+
+::: {.lemma title="?"}
+Let \( \epsilon\in {\mathbb{Z}}_K \), then \( \epsilon \in U({\mathbb{Z}}_K) \iff N( \epsilon) = \pm 1 \).
+:::
+
+::: {.remark}
+Note that norms were positive in the imaginary quadratic case, but can be negative for real quadratics.
+:::
+
+::: {.proof title="?"}
+\( \impliedby \): This means \( \epsilon \mkern 1.5mu\overline{\mkern-1.5mu \epsilon \mkern-1.5mu}\mkern 1.5mu = \pm 1 \), so one of \( \pm \mkern 1.5mu\overline{\mkern-1.5mu\epsilon\mkern-1.5mu}\mkern 1.5mu \) is the inverse.
+
+\( \implies \): Write \( \epsilon \epsilon ^{-1} = 1 \) and take norms of both sides.
+:::
+
+::: {.remark}
+Our strategy: show that the group of positive units \( \U({\mathbb{Z}}_K)^+ \) is infinite cyclic. If we get a generator \( \varepsilon_0 > 1 \), replace it with its reciprocal, and note that we don't want \( \varepsilon_) = 1 \) since this wouldn't yield an infinite group. If we can generate all of the positive units, all of the negative units are negatives of positive units. How we'll do this: we'll look at the map \( \log: {\mathbb{G}}_m({\mathbb{R}}^+) \xrightarrow{} {\mathbb{G}}_a({\mathbb{R}}) \) and consider the image \( \log( U( {\mathbb{Z}}_K)^+ \), which will be an infinite cyclic subgroup of \( {\mathbb{G}}_a({\mathbb{R}}) \).
+:::
+
+::: {.proposition title="?"}
+The subgroup \( \log( U ({\mathbb{Z}}_K)^+ ) \) is discrete, i.e. it has finite intersection with \( [-X, X] \subseteq {\mathbb{R}} \) for every \( X>0 \).
+:::
+
+::: {.proof title="?"}
+It's enough to show finite intersection with \( [0, X] \) for all \( X>0 \). Why? Any subgroup \( H\leq {\mathbb{G}}_a({\mathbb{R}}) \) is symmetric about 0, i.e. \( a\in H \iff -a\in H \), and so having finite intersection with the positive interval implies finite intersection with both. So let \( \epsilon \in U(\Z_Z_K)^+ \) with \( \log( \epsilon) \in [0, X] \), we'll show there are only finitely many choices for \( \epsilon \), since every \( \log(\varepsilon) \) correspond to a point in the intersection.
+
+::: {.claim}
+Write \( \epsilon = u + v \sqrt{d} \) with \( u,v \in {\mathbb{Z}} \) or \( {1\over 2}{\mathbb{Z}} \), then \( u, v \geq 0 \).
+:::
+
+If we have this, we're done since \( \log( u + v \sqrt{d} \leq X \). Exponentiating yields \( u + v\sqrt {d} \leq e^X \), and so we must have \( u, v \leq e^X \). But there are only finitely many possibilities, since these are integers or half-integers.
+
+::: {.proof title="of claim"}
+We have \( \epsilon \geq 1 \) since \( u, v \geq 0 \). There are now two cases:
+
+1.  \( N( \epsilon) = 1 \). In this case, \( \epsilon \mkern 1.5mu\overline{\mkern-1.5mu\epsilon \mkern-1.5mu}\mkern 1.5mu= 1 \) and so \( \epsilon ^{-1} \epsilon \). We can write \( u = (1/2)( \epsilon + \mkern 1.5mu\overline{\mkern-1.5mu\epsilon\mkern-1.5mu}\mkern 1.5mu) = (1/2)(\epsilon + \epsilon ^{-1} ) > 0 \). Similarly, \( v = (\epsilon - \mkern 1.5mu\overline{\mkern-1.5mu\epsilon\mkern-1.5mu}\mkern 1.5mu)/2 \sqrt{d} = (\epsilon - \epsilon ^{-1} ) / 2 \sqrt{d} \geq 0 \).
+
+2.  \( N(\epsilon) = -1 \). This case proceed similarly.
+:::
+:::
+
+::: {.question}
+What do the discrete subgroups of \( {\mathbb{G}}_a({\mathbb{R}}) \) look like?
+:::
+
+::: {.answer}
+Some examples are \( \left\{{0}\right\}, {\mathbb{Z}}, \lambda {\mathbb{Z}} \) for \( \lambda \in {\mathbb{R}} \), etc. It turns out that these are the only ones. Knowing that these must be the image of the log map, if we're in the \( \alpha{\mathbb{Z}} \) case we're fine because this is infinite cyclic, but the case \( \left\{{ 0 }\right\} \) is an issue: this would mean that the only positive unit is \( e^0 = 1 \), and the only units are \( \pm 1 \). So we just need to show that there are units other than \( \pm 1 \).
 :::
 
 [^1]: An injective ring morphism.

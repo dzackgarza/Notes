@@ -176,6 +176,8 @@
 \newcommand{\cok}[0]{\operatorname{coker}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
+\newcommand{\bundle}[1]{\mathcal{#1}}
+\newcommand{\td}[0]{\mathrm{td}}
 \newcommand{\correspond}[1]{\theset{\substack{#1}}}
 \newcommand{\cross}[0]{\times}
 \newcommand{\by}[0]{\times}
@@ -439,6 +441,9 @@
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
+\newcommand\constantsheaf[1]{\underline{#1}}
+\newcommand\holomorphic[0]{\text{holo}}
+\newcommand\compact[0]{\text{cpt}}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\capprod{\frown}
@@ -461,6 +466,9 @@
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
 
+\newcommand{\RM}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
 
 # Thursday, January 14
 
@@ -2370,4 +2378,340 @@ But since these are both primes, $p=q$.
 If we want to figure out all of the prime ideals $P$ of $\ZZ_K$, we should see how \( \gens{ p }  \) factors, since each $P$ shows up as a factor of some \( \gens{ p }  \).
 Thus the major question will be: given $p$, how does \( \gens{ p }  \) factor into prime ideals in $\ZZ_K$?
 :::
+
+
+# Ch. 7: Prime Ideals of $\ZZ_K$ (Tuesday, February 09)
+
+Let $K$ be a quadratic number field.
+Recall that if $P \normal \ZZ_K$ is a prime then $P$ **lies above** $p\in \ZZ$ if $P \supseteq \gens{ p }$. 
+Equivalently,
+
+- $P$ contains $p$, or
+- $P \divides \gens{ p }$ 
+
+Last time we saw that every $P$ lies above a unique $p$.
+The following diagram illustrates the situation:
+
+
+\begin{tikzcd}
+	K && {\ZZ_K} && P \\
+	\\
+	\QQ && \ZZ && p
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-3]
+	\arrow[no head, from=1-5, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJLIl0sWzAsMiwiXFxRUSJdLFsyLDAsIlxcWlpfSyJdLFsyLDIsIlxcWloiXSxbNCwwLCJQIl0sWzQsMiwicCJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzQsNSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+If we want to determine all of the primes $P$, we should consider factoring all of the ideals \( \gens{ p }  \) into prime ideals of $\ZZ_K$.
+We have unique factorization for prime ideals, so we can write \( \gens{ p } = P_1 \cdots P_g  \).
+Taking norms yields
+\[
+N( \gens{ p } ) = \prod N(P_i) 
+,\]
+where we can identify the LHS as $p^2$, since the norm for principal ideals is the square of the generating element.
+Alternatively, we can check the size of $\ZZ_K/ \gens{ p }$: $\ZZ_K$ is a free \(\ZZ \dash\)module on 2 generators, and we take both coordinates $\mod p$ to get $(\ZZ/p\ZZ)^2$.
+Since none of the terms on the RHS are the unit ideal, none have norm 1, and so either
+
+a. $g=1$ and $P_1 = \gens{ g }$ and \( \gens{ p }  \) is prime.
+  In this case we say $p$ **is inert**.
+
+b. If $g=2$ and $P_1 \neq P_2$, then we say $p$$ **is split**.
+
+c. If $g=2$ and $P_1 = P_2$< then we say $p$ **is ramified**.
+
+Let $K = \QQ( \sqrt{d} )$ and $\tau$ as usual.
+We can compute its minimal polynomial:
+\[
+\min_\tau(x) = 
+\begin{cases}
+x^2 - d & d \equiv 2,3 \mod 4  
+\\
+x^2 - x + \qty{1-d \over 4} & d \equiv 1 \mod 4.
+\end{cases}
+\]
+
+:::{.theorem title="Dedekind-Kummer, Prime Factorization Mirroring Theorem"}
+Let $p\in \ZZ$ be prime.
+Then the factorization of \( \gens{ p }  \) into prime ideals in $\ZZ_K$ mirrors the factorization of $\min_\tau(x)$ into irreducibles mod $p$, i.e. in $\FF_p[x]$.
+If $\min_\tau(x)$ is irreducibles, then $p$ is inert.
+Otherwise,
+\[
+\min_\tau(x) \equiv (x-a)(x-b) \mod p
+\]
+for some $a, b\in \ZZ$, since this is a monic quadratic.
+In this case \( \gens{ p }= P_1 P_2  \) where
+
+- $P_1 \da \gens{ p, \tau - a }$,
+- $P_2 \da \gens{ p, \tau - b}$,
+
+and both ideals have norm $p$.
+Finally, $P_1 = P_2 \iff a\equiv b \mod p$.
+
+:::
+
+
+:::{.example title="?"}
+Let $K = \QQ( \sqrt{5} )$, then \( \tau= \sqrt{-5} \)  and $\min_\tau(x) = x^2 + 5$.
+We can check how this factors modulo small primes
+\[
+x^2 + 5 = (x+1)^2 \in \FF_2[x]
+,\]
+and we're in the ramified case.
+In this case,
+\[
+\gens{ 2 } = \gens{ 2, \sqrt{ -5} -1 }^2  
+.\]
+We also have
+\[
+x^2 + 5 \equiv (x-1)(x+1) \in \FF_3[x]
+,\]
+which is the split case, so 
+\[
+\gens{ 3 }= \gens{ 3, \sqrt{-5} -1 } \gens{ 3, \sqrt{-5} + 1 }   
+.\]
+Taken mod 5, we have
+\[
+x^2 + 5 \equiv x^2 \in \FF_5[x]
+,\]
+so
+\[
+\gens{ 5 } = \gens{ 5, \sqrt{-5} }^2 = \gens{ \sqrt{-5} } ^2 
+.\]
+Similarly,
+\[
+x^2 + 5 \text{is irreducible } \in \FF_{11}[x]
+,\]
+so \( \gens{ 11 }  \) is inert.
+:::
+
+
+:::{.lemma title="?"}
+There is a surjective morphism
+\[
+\ZZ[x] &\to \ZZ_K = \ZZ[ \tau ] \\
+f( \alpha) &\mapsto f( \tau)
+,\]
+so by the first isomorphism theorem,
+\[
+\ZZ[x] / \gens{ \min_\tau(x) } \cong \ZZ_K 
+.\]
+:::
+
+
+:::{.proof title="of Dedekind-Kummer mirroring"}
+Note that $\ZZ_K / \gens{ p } = \ZZ[ \tau] / \gens{ p }$, and using the lemma, this is isomorphic to $\ZZ[x] / \gens{ \min_{ \tau} (x), p } \cong \FF_p[x] / \gens{ \min_\tau(x) \mod p }$.
+In this case, if $\min_\tau$ is irreducible mod $p$, then the quotient is a field.
+Why?
+The numerator is a polynomial ring over a field and the denominator is generated by an irreducible, and a PID mod an irreducible is always a field.
+Thus \( \gens{ p }  \) must be a maximal ideal by considering the first expression above, and maximals are prime here, so $p$ is inert.
+
+Now suppose it's not irreducible, so 
+\[
+\min_\tau(x) = (x-a)(x-b) \mod p
+.\]
+Define $P_1, P_2$ as in the theorem.
+Why are these of norm $p$?
+Consider 
+\[
+\ZZ_K/P^1 
+&\cong { \ZZ[x] / \gens{ \min_\tau(x) } \over \gens{ p, x-a } \\
+&\cong \ZZ/p\ZZ[x] / \gens{ \min_\tau(x), x-a} \\
+&\cong \ZZ/p\ZZ[x] / \gens{ \min_\tau(x), x-a} \\
+&\cong \ZZ/p\ZZ[x] / \gens{ x-a} \text{since } x-a \divides \min_\tau(x)\\
+&\cong \ZZ/p\ZZ
+,\]
+this $P_1$ is maximal and thus prime, and moreover $N(P_1) = p$ since there are $p$ elements in $\ZZ/p\ZZ$.
+The same argument works for $P_2$.
+Now multiplying them yields 
+\[
+P_1 P_2 
+&= \gens{ p, p(\tau - a), p (\tau - b), (\tau -a)(\tau -b) }
+.\]
+Note that $\min_\tau(x) \equiv (x-a)(x-b) \mod p$ implies $\min_\tau(x) = (x-a)(x-b) + pG(x)$ for some $G\in \ZZ[x]$.
+Plugging in \( \tau \), the LHS is zero, while on the RHS yields $\cdots + pG(\tau)$.
+This last term is $pr$ for some $r\in R$, which is zero mod $p \in \ZZ[\tau] = \ZZ_K$
+So $p$ now divides every term in the generating set above, and since to contain is to divide, we have $P_1 P_2 \subseteq \gens{ p }$ and \( \gens{ p } \divides P_1 P_2 \).
+Write $P_1 P_2 = \gens{ p }I$ for some ideal $I$, taking norms yields
+\[
+N(P_1) N(P_2) = N( \gens{ p }) N(I) 
+.\]
+The LHS is $p^2$ as shown above, and the RHS is $p^2 N(I)$ which forces $N(I) = 1 \iff I = \gens{ 1 } = \ZZ_K$ (the entire ring)
+
+We now want to show $P_1 = P_2 \iff a\equiv b \mod p$.
+The reverse direction is clear, since generators in $P_1, P_2$ can be adjusted by $p$ without changing the ideal.
+Conversely, suppose $P_1 = P_2$.
+Then $P_1$ contains $\tau - a, \tau - b$, and thus their difference $a-b = (\tau -b ) - (\tau - a) \in P_1$.
+Moreover $p\in P_1$, and so $P_1$ contains the $\ZZ$ ideals generated by $p$ and $a-b$ and thus $\gcd(p, a-b)$.
+If $a \not\equiv b\mod p$, this greatest common divisor must be 1, forcing $1\in P_1$.
+This is a contradiction since $P_1$ is prime and thus can't be the unit ideal, so $a \equiv b \mod p$.
+
+:::
+
+:::{.question}
+Can we be more explicit about how $\min_\tau$ factors?
+:::
+
+:::{.proposition title="?"}
+Let $p$ be an odd prime, then 
+
+- $p$ is inert $\iff d$ is not a square $\mod p$,
+- $p$ splits $\iff d$ is a nonzero square $\mod p$,
+- $p$ ramifies $\iff d \equiv 0 \mod p$.
+
+:::
+
+:::{.proposition title="?"}
+\envlist
+
+- $d \equiv 5 \mod 8 \implies$ 2 is inert.
+- $d \equiv 1 \mod 8 \implies$ 2 is split.
+- $d \equiv 2, 3 \mod 4 \implies$ 2 is ramified.
+
+:::
+
+:::{.remark}
+The proof follows from looking at how $\min_\tau(x)$ factors $\mod 2$, and there aren't many possibilities.
+:::
+
+
+## Ch. 8: Units in $\ZZ_K$
+
+For the imaginary quadratic case, we can write down the unit group explicitly.
+
+
+:::{.proposition title="?"}
+If $d<0$ (i.e. the imaginary quadratic case) then \( \abs{ U(\ZZ_J) \leq 6 \).
+:::
+
+:::{.remark}
+"Usually" \( U(\ZZ_K) = \ts{ \pm 1 } \).
+Here "usually" means there are only two exceptions
+
+- For $\QQ( \sqrt{-1} )$ then the units are \( \ts{ \pm 1, \pm i } \).
+
+- For $d=-3$, there were 6 units.
+
+In every other case, there are only two.
+:::
+
+:::{.proposition title="?"}
+Suppose $d>0$, then there is a unit \( \epsilon_0 > 1 \in \ZZ_K \) such that \( U(\ZZ_K) = \ts{ \pm \epsilon_0 ^k \st k\in \ZZ } \).
+Moreover \( \epsilon_0 \) is unique, and we'll refer to this as the **fundamental unit**.
+:::
+
+:::{.corollary title="?"}
+When $d>0$, $U(\ZZ_K)$ is infinite and in fact isomorphic to $\ZZ/2\ZZ \oplus \ZZ$.
+:::
+
+:::{.remark}
+Here the $\ZZ/2\ZZ$ corresponds to the $\pm$ and the $\ZZ$ to the exponent.
+:::
+
+
+:::{.example title="?"}
+\envlist
+
+- For $d=2$, we have \( \eps_0 = 1 + \sqrt{2} \).
+  This is a unit because it has inverse \( \sqrt{2} -1 \).
+
+- For $d=43$, it turns out that \( \eps_0 + 531 \sqrt{43} \).
+:::
+
+
+:::{.lemma title="?"}
+Let \( \epsilon\in \ZZ_K \), then \( \epsilon \in U(\ZZ_K) \iff N( \epsilon) = \pm 1 \).
+:::
+
+
+:::{.remark}
+Note that norms were positive in the imaginary quadratic case, but can be negative for real quadratics.
+:::
+
+
+:::{.proof title="?"}
+$\impliedby$:
+This means \( \epsilon \bar{ \epsilon } = \pm 1 \), so one of \( \pm \bar\epsilon \) is the inverse.
+
+$\implies$:
+Write \( \epsilon \epsilon ^{-1} = 1 \) and take norms of both sides.
+:::
+
+
+:::{.remark}
+Our strategy: show that the group of positive units \( \U(\ZZ_K)^+ \) is infinite cyclic.
+If we get a generator \( \eps_0 > 1 \), replace it with its reciprocal, and note that we don't want \( \eps_) = 1 \) since this wouldn't yield an infinite group.
+If we can generate all of the positive units, all of the negative units are negatives of positive units.
+How we'll do this: we'll look at the map $\log: \GG_m(\RR^+) \mapsvia{} \GG_a(\RR)$ and consider the image $\log( U( \ZZ_K)^+$, which will be an infinite cyclic subgroup of $\GG_a(\RR)$.
+:::
+
+
+:::{.proposition title="?"}
+The subgroup \( \log( U (\ZZ_K)^+ ) \) is discrete, i.e. it has finite intersection with \( [-X, X] \subseteq \RR \) for every $X>0$.
+:::
+
+
+:::{.proof title="?"}
+It's enough to show finite intersection with $[0, X]$ for all $X>0$.
+Why? 
+Any subgroup $H\leq \GG_a(\RR)$ is symmetric about 0, i.e. $a\in H \iff -a\in H$, and so having finite intersection with the positive interval implies finite intersection with both.
+So let \( \epsilon \in U(\Z_Z_K)^+ \) with \( \log( \epsilon) \in [0, X] \), we'll show there are only finitely many choices for \( \epsilon \), since every \( \log(\eps ) \) correspond to a point in the intersection.
+
+
+:::{.claim}
+Write \( \epsilon = u + v \sqrt{d} \) with $u,v \in \ZZ$ or ${1\over 2}\ZZ$, then
+$u, v \geq 0$.
+:::
+
+If we have this, we're done since \( \log( u + v \sqrt{d} \leq X \).
+Exponentiating yields $u + v\sqrt {d} \leq e^X$, and so we must have $u, v \leq e^X$.
+But there are only finitely many possibilities, since these are integers or half-integers.
+
+
+:::{.proof title="of claim"}
+We have \( \epsilon \geq 1 \) since $u, v \geq 0$.
+There are now two cases:
+
+1. $N( \epsilon) = 1$.
+  In this case, \( \epsilon \bar \epsilon = 1 \) and so \( \epsilon ^{-1} \epsilon \).
+  We can write $u = (1/2)( \epsilon + \bar \epsilon) = (1/2)(\epsilon + \epsilon ^{-1} ) > 0$.
+  Similarly, \( v = (\epsilon - \bar \epsilon)/2 \sqrt{d} = (\epsilon - \epsilon ^{-1} ) / 2 \sqrt{d} \geq 0\).
+
+2. \( N(\epsilon) = -1 \).
+  This case proceed similarly.
+
+:::
+
+:::
+
+
+:::{.question}
+What do the discrete subgroups of \( \GG_a(\RR) \) look like?
+:::
+
+
+:::{.answer}
+Some examples are \( \ts{0}, \ZZ, \lambda \ZZ \) for \( \lambda \in \RR \), etc.
+It turns out that these are the only ones.
+Knowing that these must be the image of the log map, if we're in the \( \alpha\ZZ \) case we're fine because this is infinite cyclic, but the case \( \ts{ 0 } \) is an issue: this would mean that the only positive unit is $e^0 = 1$, and the only units are $\pm 1$.
+So we just need to show that there are units other than \( \pm 1 \).
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
