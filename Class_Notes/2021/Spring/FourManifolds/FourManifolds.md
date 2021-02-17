@@ -1,6 +1,7 @@
 \newcommand{\dx}{\,dx}
 \newcommand{\dt}{\,dt}
 \newcommand{\dy}{\,dy}
+\newcommand{\ds}{\,ds}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
 }
@@ -2255,10 +2256,17 @@ Moreover, $EG\to BG$ is a universal principal $G\dash$bundle in the sense that i
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwyLCJYIl0sWzIsMCwiRUciXSxbMiwyLCJCRyJdLFswLDAsIlAiXSxbMywwXSxbMCwyLCJmIl0sWzEsMl0sWzMsMSwiIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
 
 
-Here bundles will be classified by homotopy classes of $f$, so $\ts{\text{Principal $G\dash$bundles} / X} \mapstofrom [X, BG]$.
+Here bundles will be classified by homotopy classes of $f$, so 
+\[
+\ts{\text{Principal $G\dash$bundles} {}_{/ X} } \mapstofrom [X, BG]
+.\]
+:::
+
+:::{.warnings}
 This only works for paracompact Hausdorff spaces!
 The line $\RR$ with the doubled origin is a counterexample, consider complex line bundles.
 :::
+
 
 \todo[inline]{Revisit this last section, had to clarify a few things for myself!}
 
@@ -2279,7 +2287,7 @@ This yields $\RP^{\infty }$ as the quotient.
 You can check that $E_G$ is contractible: it suffices to show that $S^{\infty } \da \ts{ \sum \abs{a_i} = 1 }$ is contractible.
 This works by decreasing the last nonzero coordinate and increasing the first coordinate correspondingly.
 Moreover, local lifts exist, so we can identify $\RP^{\infty } \cong B\RR\units = BG$.
-Similarly $BC\units \cong \CP^{\infty }$ with $E\CC\units \da C^{\infty } \smz$.
+Similarly $BC\units \cong \CP^{\infty }$ with $E\CC\units \da \CC^{\infty } \smz$.
 :::
 
 
@@ -2288,7 +2296,11 @@ Consider $G = \GL_n(\RR)$.
 It turns out that $BG = \Gr(d, \RR^{\infty })$, which is the set of linear subspaces of $\RR^{\infty }$ of dimension $d$.
 This is spanned by $d$ vectors $\ts{e_ i}$ in some large enough $\RR^N \subseteq \RR^{\infty }$, since we can take $N$ to be the largest nonvanishing coordinate and include all of the vectors into $\RR^{\infty }$ by setting $a_{> N} = 0$.
 For any $L \in \Gr_d(\RR^{\infty })$, since $\RR^d$ has a standard basis, there is a natural $\GL_d$ torsor: the set of ordered bases of linear subspaces.
-So define $EG \da \ts{ \text{bases of linear subspaces } L \in \Gr_d(\RR^{\infty }) }$, then any $A\in \GL_d(\RR)$ acts on $EG$ by sending $(L, \ts{e_i}) \mapsto (L, \ts{ Le_i} )$.
+So define 
+\[
+EG \da \ts{ \text{bases of linear subspaces } L \in \Gr_d(\RR^{\infty }) }
+,\] 
+then any $A\in \GL_d(\RR)$ acts on $EG$ by sending $(L, \ts{e_i}) \mapsto (L, \ts{ Le_i} )$.
 We can identify $EG$ as $d\dash$tuples of linearly independent elements of $\RR^{\infty }$, and there is a map 
 \[
 EG &\to BG \\
@@ -2320,9 +2332,16 @@ To be explicit:
 \[
 U_d \da \ts{ A \in \Mat(d \cross d, \CC) \st \inner{Av}{Av} = \inner{v}{v} }
 ,\]
-where $\inner{ \thevector{v_1, \cdots, v_n}, \thevector{v_1, \cdots, v_n } } = \sum \abs{v_i}^2$.
-Alternatively, $A^t A = I$ for $O_d$ and $\conjugate{A}^t A = I$ for $U_d$.
-In this case, $BO_d = \Gr_d( \RR^{\infty } )$ and $BU_d = \Gr_d( \CC^{ \infty })$, but we'll make the fibers smaller: set the fiber over $L$ to be $(EO_d)_L \da \ts{ \text{orthogonal frames of } L }$ and similarly $(EU_d)_L$ the unitary frames of $L$.
+where 
+\[
+\inner{ \thevector{v_1, \cdots, v_n}}{\thevector{v_1, \cdots, v_n } } = \sum \abs{v_i}^2
+.\]
+Alternatively, $A^t A = I$ for $O_d$ and $\conjugate{A^t} A = I$ for $U_d$.
+In this case, $BO_d = \Gr_d( \RR^{\infty } )$ and $BU_d = \Gr_d( \CC^{ \infty })$, but we'll make the fibers smaller: set the fiber over $L$ to be 
+\[
+(EO_d)_L \da \ts{ \text{orthogonal frames of } L }
+\]
+and similarly $(EU_d)_L$ the unitary frames of $L$.
 That there are related comes from the fact that $\GL_d$ retracts onto $O_d$ using the Gram-Schmidt procedure.
 :::
 
@@ -2393,6 +2412,225 @@ This is defined by sending a basis $\ts{v_1, \cdots, v_{d-1}} \mapsto \spanof\ts
 This will yield a fiber sequence $S^{2d-1} \to BU_{d-1} \to BU_d$, and using connectedness of the sphere and the LES in homotopy this will identify $H^*(BU_d) = H^*(BU_{d-1})[c_d]$ where $c_d \in H^{2d}(BU_d)$.
 The **Chern class** of a vector bundle \( \mathcal{E}  \) , denoted \( c_k( \mathcal{E} )  \), will be defined as the pullback $f^* c_k$.
 :::
+
+
+
+
+
+
+# Wednesday, February 10
+
+
+:::{.theorem title="?"}
+As $n\to \infty$, we have \[
+H^*(BO_n, \ZZ/2\ZZ) = \ZZ/2\ZZ[w_1, w_2, \cdots]
+&& w_i \in H^i
+\]
+:::
+
+:::{.definition title="?"}
+Given any principal $O_n\dash$bundle $P\to X$, there is an induced map $X \mapsvia{f} BO_n$, so we can pull back the above generators to define the **Stiefel-Whitney classes** $f^* w_i$.
+:::
+
+
+:::{.remark}
+If $P \da \OFrame TX$, then $f^* w_1$ measures whether $X$ has an orientation, i.e. $f^* w_1 = 0 \iff X$ can be oriented.
+We also have $f^* w_i(P) = w_i( \bundle{E} )$ where $P = \OFrame( \bundle{E} )$.
+In general, we'll just write $w_i$ for Stiefel-Whitney classes and $c_i$ for Chern classes.
+:::
+
+
+:::{.definition title="Pontryagin Classes"}
+The **Pontryagin classes** of a real vector bundle \( \bundle{E} \) are defined as 
+\[
+p_i( \bundle{E} ) = (-1)^i c_{2i}( \bundle{E} \tensor_\RR \CC)
+.\]
+Note that the complexified bundle above is a complex vector bundle with the same transition functions as \( \bundle{E} \), but has a reduction of structure group from $\GL_n(\CC)$ to $\GL_n(\RR)$.
+
+:::
+
+
+
+:::{.observation}
+$\RP^{\infty }$ and $\CP^{\infty }$ are examples of $K(\pi, n)$ spaces, which are the unique-up-to-homotopy spaces defined by
+\[
+\pi_k K (\pi, n) = 
+\begin{cases}
+\pi &  k=n
+\\
+0 & \text{else}.
+\end{cases}
+\]
+
+:::
+
+
+:::{.theorem title="Brown Representability"}
+\[
+H^n(X; \pi) \cong [X, K( \pi, n) ]
+.\]
+:::
+
+
+:::{.example title="?"}
+\[
+[X, \RP^{\infty } ] &\cong H^1(X; \ZZ/2\ZZ) \\
+[X, \CP^{\infty } ] &\cong H^2(X; \ZZ)
+.\]
+:::
+
+
+:::{.proposition title="?"}
+There is a correspondence
+\[
+\correspond{
+  \text{Complex line bundles}
+}
+\mapstofrom
+[X, \CP^{\infty }] = [X, BC\units]
+\mapstofrom
+H^2(X; \ZZ)
+\]
+Importantly, note that for $X \in \Mfd_\CC$, $H^2(X; \ZZ)$ measures *smooth* complex line bundles and not holomorphic bundles.
+:::
+
+
+:::{.proof title="?"}
+We'll take an alternate direct proof.
+Consider the exponential exact sequence on $X$:
+\[
+0 \to \constantsheaf{Z} \to \OO \mapsvia{\exp} \OO\units
+.\]
+Note that $\constantsheaf{\ZZ}$ consists of locally constant $\ZZ\dash$valued functions, $\OO$ consists of smooth functions, and $\OO\units$ are ???.
+
+\todo[inline]{Can't read screenshot! :(}
+
+This yields a LES in homology:
+
+
+\begin{tikzcd}
+	{H^0(X; \constantsheaf{\ZZ})} && {H^0(X; \OO)} && {H^0(X; \OO\units)} \\
+	\\
+	{H^1(X; \constantsheaf{\ZZ})} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^1(X; \OO)} && {H^1(X; \OO\units)} \\
+	\\
+	{H^2(X; \constantsheaf{\ZZ})} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^2(X; \OO)} && {H^2(X; \OO\units)}
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-5, to=3-1, out=0, in=180]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=5-1, out=0, in=180]
+	\arrow[from=5-1, to=5-3]
+	\arrow[from=5-3, to=5-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwwLCJIXjAoWDsgXFxjb25zdGFudHtcXFpafSkiXSxbMCwyLCJIXjEoWDsgXFxjb25zdGFudHtcXFpafSkiXSxbMCw0LCJIXjIoWDsgXFxjb25zdGFudHtcXFpafSkiXSxbMiwwLCJIXjAoWDsgXFxPTykiXSxbMiwyLCJIXjEoWDsgXFxPTykiLFswLDYwLDYwLDFdXSxbMiw0LCJIXjIoWDsgXFxPTykiLFswLDYwLDYwLDFdXSxbNCwwLCJIXjAoWDsgXFxPT1xcdW5pdHMpIl0sWzQsMiwiSF4xKFg7IFxcT09cXHVuaXRzKSJdLFs0LDQsIkheMihYOyBcXE9PXFx1bml0cykiXSxbMCwzXSxbMyw2XSxbNiwxXSxbMSw0XSxbNCw3XSxbNywyXSxbMiw1XSxbNSw4XV0=)
+
+Since $\OO$ admits a partition of unity, $H^{>0}(X; \OO) = 0$ and all of the red terms vanish.
+For complex line bundles $L$, $H^1(X, \OO\units) \cong H^2(X; \ZZ)$.
+Taking a local trivialization $\ro{L}{U} \cong U \cross \CC$, we obtain transition functions 
+\[
+t_{UV} \in C^{\infty }(U \intersect V, \GL_1(\CC) )
+\]
+where we can identify $\GL_1(\CC) \cong \CC\units$.
+We then have 
+\[
+(t_{U_{ij}}) \in \prod_{i < j} \OO\units(U_i \intersect U_j) = C^1(X; \OO\units)
+.\]
+Moreover,
+\[
+\qty{ 
+t_{U_{ij}}
+t_{U_{ik}} \inv
+t_{U_{jk}}
+}_{i,j,k} 
+= \bd ( t_{U_{ij} } ) _{i, j} = 0
+,\]
+since transitions functions satisfy the cocycle condition.
+So in fact $(t_{U_{ij}}) \in Z^1(X; \OO\units) = \ker \bd^1$, and we can take its equivalence class \( [ ( t_{U_{ij} } ) ] \in H^1(X; \OO\units) = \ker \bd^1 / \im \bd^0 \).
+Changing trivializations by some $s_i \in \prod_i \OO\units(U_i)$ yields a composition which is a different trivialization of the same bundle:
+
+% https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHJve0x9e1VfaX0iXSxbMiwwLCJVX2kgXFxjcm9zcyBcXENDIl0sWzUsMCwiVV9pIFxcY3Jvc3MgXFxDQyJdLFswLDEsImhfaSJdLFsxLDIsIlxcY2RvdCBzX2kiXSxbMCwyLCIiLDIseyJjdXJ2ZSI6NX1dXQ==
+\begin{tikzcd}
+	{\ro{L}{U_i}} && {U_i \cross \CC} &&& {U_i \cross \CC}
+	\arrow["{h_i}", from=1-1, to=1-3]
+	\arrow["{\cdot s_i}", from=1-3, to=1-6]
+	\arrow[curve={height=30pt}, from=1-1, to=1-6]
+\end{tikzcd}
+
+So the $(t_{ U_{ij}}$ change *exactly* by an $\bd^0( s_i)$.
+Thus the following map is well-defined:
+\[
+L \mapsto [ (t_{U_{ij}} ) ] \in H^1(X; \OO\units)
+.\]
+
+There is another construction of the map
+\[
+\ts{L} *\to H^2(X; \ZZ) \\
+L &\mapsto c_1(L)
+.\]
+Take a smooth section of $L$ and $s\in H^0(X; L)$ that intersects an $\OO\dash$section of $L$ transversely.
+Then 
+\[
+V(s) \da \ts{ x\in X \st s(x) = 0 }
+\]
+is a submanifold of real codimension 2 in $X$, and $c_1(L) = [ V(s) ] \in H^2(X; \ZZ)$.
+:::
+
+
+:::{.theorem title="Splitting Principle for Complex Vector Bundles"}
+\envlist
+
+1. Suppose that $\bundle{E} = \bigoplus_{i=1}^r L_i$ and let $c(\bundle{E}) \da \sum c_i(\bundle{E}$.
+  Then 
+  \[
+  c(\bundle{E}) = \prod_{i=1}^r \qty{ 1 + c_i (L_i) }
+  .\]
+
+2. Given any vector bundle \( \bundle{E} \to X \), there exists some $Y$ and a map $Y\to X$ such that $f^*: H^k(X; \ZZ) \injects H^k(Y; \ZZ)$ is injective and $f^* \bundle{E} = \bigoplus_{i=1}^r L_i$.
+
+:::
+
+
+:::{.slogan}
+To verify any identities on characteristic classes, it suffices to prove them in the case where \( \bundle{E} \) splits into a direct sum of line bundles.
+:::
+
+
+:::{.example title="?"}
+\[
+c( \bundle{E} \oplus \bundle{F}) = c( \bundle{E} ) c( \bundle{F} )
+.\]
+To prove this, apply the splitting principle.
+Choose $Y, Y'$ splitting $\bundle{E}, \bundle{E}'$ respectively, this produces a space $Z$ and a map $f:Z\to X$ where both split.
+We can write
+\[
+f^* \bundle{E} &= \bigoplus L_i 
+&& c(f^* \bundle{E} ) = \prod \qty{ 1 + c_1(L_i) } \\
+f^* \bundle{F} &= \bigoplus M_j 
+&& c(f^* \bundle{E} ) = \prod \qty{ 1 + c_1(M_j) } \\
+.\]
+
+We thus have
+\[
+c( f^* \bundle{E} \oplus f^* \bundle{F} ) 
+&= \prod \qty{1 + c_1(L_i) } \qty{1 + c_1(M_j)} \\
+&= c(f^* \bundle{E} ) c(f^* \bundle{F} )
+,\]
+and $f^* (c( \bundle{E} \oplus \bundle{F} ) = f^* (c (\bundle{E}) c( \bundle{F}))$.
+Since $f^*$ is injective, this yields the desired identity.
+:::
+
+
+:::{.example title="?"}
+We can compute $c(\Sym^2 \bundle{E})$, and really any tensorial combination involving \( \bundle{E} \), and it will always yield some formula in the $c_i( \bundle{E} )$.
+:::
+
+
+
+
+
+
 
 
 
@@ -2538,4 +2776,171 @@ We can thus compute $\chi(\PP^1; \OO) = 1-0 = 1$.
 
 
 
+
+
+# Monday, February 15
+
+:::{.remark}
+Last time: we saw that \( \chi(\PP^1, \OO) = 1 \), and we'd like to generalize to holomorphic line bundles on a Riemann surface.
+This will be the main ingredient for Riemann-Roch.
+:::
+
+:::{.theorem title="?"}
+Let $X \in \Mfd_\CC$ be compact and let \( \bundle{F} \) be a holomorphic vector bundle on \( X \) (or more generally a finitely-generated \( \OO\dash \)module, i.e. a coherent sheaf).
+Then $\chi$ is well-defined and in fact \( h^{> \dim_\CC X}(X; \bundle{F} ) = 0\).
+:::
+
+:::{.remark}
+The locally constant sheaf \( \constantsheaf{\CC} \) is not an \( \OO\dash \)module, i.e. \( \constantsheaf{\CC}(U) \not\in \mods{\OO(U)} \).
+In fact, $h^{2i}(X, \constantsheaf{\CC}) = \CC$ for all $i$.
+:::
+
+:::{.proof title="?"}
+We'll can resolve $\bundle{F}$ as a sheaf by first mapping to its smooth sections and continuing in the following way:
+\[
+0 \to \bundle{F} \to C^{\infty } \bundle{F} \mapsvia{\delbar} F \tensor A^{0, 1} \to \cdots
+,\]
+where $\delbar f = \sum_i \dd{f}{\conjugate{z}_i} \, d\conjugate{z}_i$.
+Suppose we have a holomorphic trivialization of \( \ro {\bundle{F} }{U} \cong \OO_{U}^{\oplus r} \) and we have sections $(s_1, \cdots, s_r) \in C^{\infty } \bundle{F}(U)$, which are smooth functions on $U$.
+In local coordinates we have $\delbar s \da (\delbar s_1, \cdots, \delbar s_r)$, is this well-defined globally?
+Given a different trivialization over $V \subseteq X$, the $s_i$ are related by transition functions, so the new sections are $t_{UV}(s_1, \cdots, s_r)$ where $t_{UV}: U \intersect V \to \GL_r(\CC)$.
+Since $t_{UV}$ are holomorphic, we have $\delbar( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \delbar(s_1, \cdots, s_r)$.
+This makes $\delbar: C^{\infty } \bundle{F} \to F\tensor A^{0, 1}$ a well-defined (but not $\OO\dash$linear) map.
+We can thus continue this resolution using the Leibniz rule:
+
+\[
+0 \to \bundle{F} \to C^{\infty } \bundle{F} \mapsvia{\delbar} F \tensor A^{0, 1} \mapsvia{\delbar} \cdots F \tensor A^{0, 2} \mapsvia{\delbar} \cdots
+,\]
+which is an exact sequence of sheaves since $(A^{0, \wait}, \delbar)$ is exact.
+
+\todo[inline]{Why? Split into line bundles?}
+
+We can identify $C^{\infty }\sheaf{F} = \sheaf{F} \tensor A^{0, 0}$, and $\sheaf{F} \tensor A^{0, q}$ is a smooth vector bundle on $X$.
+Using partitions of unity, we have that $\sheaf{F} \tensor A^{0, q}$ is acyclic, so its higher cohomology vanishes, and 
+\[
+H^i(X; \sheaf{F} ) \cong 
+\frac
+{ \ker ( \delbar: \sheaf{F}\tensor A^{0, i} \to \sheaf{F} \tensor A^{0, i+1} }
+{ \im ( \delbar: \sheaf{F}\tensor A^{0, i-1} \to \sheaf{F} \tensor A^{0, i} }
+.\]
+However, we know that $A^{0, p} = 0$ for all $p> n \da \dim_\CC X$, since any wedge of $p>n$ forms necessarily vanishes since there are only $n$ complex coordinates.
+:::
+
+:::{.warnings}
+This only applies to holomorphic vector bundles or $\OO\dash$modules!
+:::
+
+## Riemann-Roch
+
+:::{.theorem title="Riemann-Roch"}
+Let $C$ be a compact connected Riemann surface, i.e. $X\in \Mfd_\CC$ with $\dim_\CC(X) = 1$, and let $\bundle{L}\to C$ be a holomorphic line bundle.
+Then
+\[
+\chi(C, \bundle{L}) = \deg(L) + (1-g) && \text{where } \int_C c_1(\bundle{L})
+\]
+and $g$ is the genus of $C$.
+:::
+
+:::{.proof title="?"}
+We'll introduce the notion of a "point bundle", which are particularly nice line bundles, denoted $\OO(p)$ for $p\in \CC$.
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-16.pdf_tex} };
+\end{tikzpicture}
+
+Taking $\DD$ to be a disc of radius $1/2$ and $V$ to be its complement, we have $t_{uv}(z) = z\inv \in \OO^*(U \intersect V)$.
+We can take a holomorphic section $s_p \in H^0( C, \OO(p) )$, where $\ro{s_p}{U} = z$ and $\ro{s_p}{V} = 1$.
+Then $t_{uv}( \ro{s_p}{U} ) = \ro{s_p}{V}$ on the overlaps.
+We have a function which precisely vanishes to first order at $p$.
+Recall that $c_1( \OO(p) )$ is represented by $[ V(s) ] = [p]$, and moreover $\int_C c_1 ( \OO(p) ) = 1$.
+We now want to generalize this to a **divisor**: a formal $\ZZ\dash$linear combination of points.
+
+
+:::{.example title="?"}
+Take $p, q,r\in C$, then a divisor can be defined as something like $D \da 2[p] - [q] + 3[r]$.
+:::
+
+Define $\OO(D) \da \bigotimes_{i} \OO(p_i)^{\tensor n_i}$ for any $D = \sum n_i [p_i]$.
+Here tensoring by negatives means taking duals, i.e. $\OO( -[p] ) \da \OO^{\tensor_{-1}} \da \OO(p)\dual$, the line bundle with inverted transition functions.
+$\OO(D)$ has a meromorphic section given by $s_D \da \prod s_{p_i}^{n_i} \in \Mero(C, \OO(D) )$ where we take the sections coming from point bundles.
+We can compute $\int_C c_1 ( \OO(D) ) = \sum n_i \da \deg(D)$.
+
+
+:::{.example title="?"}
+$\deg( 2[p] -[q] + 3[r]) = 4$.
+:::
+
+Assume our line bundle $L$ is $\OO(D)$, we'll prove Riemann-Roch in this case by induction on $\sum \abs{n_i}$.
+The base case is $\OO$, which corresponds to taking an empty divisor.
+Then either
+
+- Take $D = D_0 + [p]$ with $\deg(D_0) < \sum \abs{n_i}$ (for which we need some positive coefficient), or
+- Take $D_0 = D + [p]$.
+
+
+:::{.claim}
+There is an exact sequence
+\[
+0 \to \OO(D_0) &\to \OO(D) \to \CC_p \to 0
+s\in \OO(D_0)(U) &\mapsto s \cdot s_p \in \OO( D_0 + [p] ) (U)
+,\]
+where the last term is the skyscraper sheaf at $p$.
+:::
+
+
+:::{.proof title="?"}
+The given map is $\OO\dash$linear and injective, since $s_p\neq 0$ and $s s_p=0$ forces $s=0$.
+Recall that we looked at \( \OO \mapsvia{\cdot z} \OO \) on $\CC$, and this section only vanishes at $p$ (and to first order).
+The same situation is happening here.
+:::
+
+Thus there is a LES
+
+% https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiSF4wKCBcXE9PKERfMCkgKSJdLFs0LDAsIkheMCggXFxPTyhEKSApIl0sWzYsMCwiSF4wKCBcXE9PKFxcQ0NfcCkgKSJdLFsyLDIsIkheMSggXFxPTyhEXzApICkiXSxbNCwyLCJIXjEoIFxcT08oRCkgKSJdLFs2LDIsIkheMSggXFxPTyhcXENDX3ApICkgPSAwIl0sWzgsMiwiMCJdLFszLDRdLFs2LDddLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdXQ==
+\begin{tikzcd}
+	0 && {H^0( \OO(D_0) )} && {H^0( \OO(D) )} && {H^0( \OO(\CC_p) )} \\
+	\\
+	&& {H^1( \OO(D_0) )} && {H^1( \OO(D) )} && {H^1( \OO(\CC_p) ) = 0} && 0
+	\arrow[from=1-7, to=3-3]
+	\arrow[from=3-7, to=3-9]
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-5, to=1-7]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-7]
+\end{tikzcd}
+
+
+We also have $h^1(\CC_p) = 0$ by taking a sufficiently fine open cover where $p$ is only in one open set.
+So just check Čech cocycles yields $C_U^1(C, \CC_p) \da \prod_{i<j} \CC_p(U_i \intersect U_j) = 0$ since $p$ is in no intersection.
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-38.pdf_tex} };
+\end{tikzpicture}
+
+We obtain $\chi( \OO(D) = \chi( \OO(D_0) ) + 1$, using that it is additive in SESs 
+\[
+0 \to 
+\sheaf{E}_1 \to
+\sheaf{E}_2 \to
+\sheaf{E}_3 \to
+0
+\implies && 
+\chi(\sheaf{E}_2) = \chi( \sheaf{E_1}) + \chi( \sheaf{E}_3 )
+\]
+and thus
+\[
+\int_C c_1 (\OO(D) ) = \sum n_i = \deg(D) = \deg D_0 + 1
+.\]
+The last step is to show that $\chi(C, \OO) = 1-g$, so just define $g$ so that this is true!
+:::
+
+:::{.remark}
+Why is every $L \cong \OO(D)$ for some $D$?
+Easy to see if $L$ has meromorphic sections: if $s$ is a meromorphic section of $L$, then $D = \div(s) = \sum_p \ord_p(s) [p]$ works.
+Then $\OO \cong L\tensor \OO(-D)$ has a meromorphic section $s s_{-D}$, a global nonvanishing section with $\div(s s_{-D} ) = \emptyset$.
+Proving that every holomorphic line bundle has a meromorphic section is hard!
+:::
 
