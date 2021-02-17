@@ -444,6 +444,7 @@
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
+\newcommand\Mero[0]{\operatorname{Mero}}
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
@@ -2786,8 +2787,13 @@ This will be the main ingredient for Riemann-Roch.
 :::
 
 :::{.theorem title="?"}
-Let $X \in \Mfd_\CC$ be compact and let \( \bundle{F} \) be a holomorphic vector bundle on \( X \) (or more generally a finitely-generated \( \OO\dash \)module, i.e. a coherent sheaf).
-Then $\chi$ is well-defined and in fact \( h^{> \dim_\CC X}(X; \bundle{F} ) = 0\).
+Let $X \in \Mfd_\CC$ be compact and let \( \bundle{F} \) be a holomorphic vector bundle on \( X \) 
+[^coh_sheaf_general]
+Then $\chi$ is well-defined and \[ h^{> \dim_\CC X}(X; \bundle{F} ) = 0.\]
+
+[^coh_sheaf_general]: 
+Or more generally a finitely-generated \( \OO\dash \)module, i.e. a coherent sheaf.
+
 :::
 
 :::{.remark}
@@ -2802,9 +2808,16 @@ We'll can resolve $\bundle{F}$ as a sheaf by first mapping to its smooth section
 ,\]
 where $\delbar f = \sum_i \dd{f}{\conjugate{z}_i} \, d\conjugate{z}_i$.
 Suppose we have a holomorphic trivialization of \( \ro {\bundle{F} }{U} \cong \OO_{U}^{\oplus r} \) and we have sections $(s_1, \cdots, s_r) \in C^{\infty } \bundle{F}(U)$, which are smooth functions on $U$.
-In local coordinates we have $\delbar s \da (\delbar s_1, \cdots, \delbar s_r)$, is this well-defined globally?
+In local coordinates we have 
+\[
+\delbar s \da (\delbar s_1, \cdots, \delbar s_r)
+,\] 
+but is this well-defined globally?
 Given a different trivialization over $V \subseteq X$, the $s_i$ are related by transition functions, so the new sections are $t_{UV}(s_1, \cdots, s_r)$ where $t_{UV}: U \intersect V \to \GL_r(\CC)$.
-Since $t_{UV}$ are holomorphic, we have $\delbar( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \delbar(s_1, \cdots, s_r)$.
+Since $t_{UV}$ are holomorphic, we have 
+\[
+\delbar( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \delbar(s_1, \cdots, s_r)
+.\]
 This makes $\delbar: C^{\infty } \bundle{F} \to F\tensor A^{0, 1}$ a well-defined (but not $\OO\dash$linear) map.
 We can thus continue this resolution using the Leibniz rule:
 
@@ -2845,7 +2858,7 @@ and $g$ is the genus of $C$.
 We'll introduce the notion of a "point bundle", which are particularly nice line bundles, denoted $\OO(p)$ for $p\in \CC$.
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-16.pdf_tex} };
 \end{tikzpicture}
 
@@ -2863,14 +2876,22 @@ Take $p, q,r\in C$, then a divisor can be defined as something like $D \da 2[p] 
 
 Define $\OO(D) \da \bigotimes_{i} \OO(p_i)^{\tensor n_i}$ for any $D = \sum n_i [p_i]$.
 Here tensoring by negatives means taking duals, i.e. $\OO( -[p] ) \da \OO^{\tensor_{-1}} \da \OO(p)\dual$, the line bundle with inverted transition functions.
-$\OO(D)$ has a meromorphic section given by $s_D \da \prod s_{p_i}^{n_i} \in \Mero(C, \OO(D) )$ where we take the sections coming from point bundles.
-We can compute $\int_C c_1 ( \OO(D) ) = \sum n_i \da \deg(D)$.
-
+$\OO(D)$ has a meromorphic section given by 
+\[
+s_D \da \prod s_{p_i}^{n_i} \in \Mero(C, \OO(D) )
+\]
+where we take the sections coming from point bundles.
+We can compute \[
+\int_C c_1 ( \OO(D) ) = \sum n_i \da \deg(D)
+.\].
 
 :::{.example title="?"}
-$\deg( 2[p] -[q] + 3[r]) = 4$.
+\[
+\deg( 2[p] -[q] + 3[r]) = 4
+.\]
 :::
 
+:::{.remark}
 Assume our line bundle $L$ is $\OO(D)$, we'll prove Riemann-Roch in this case by induction on $\sum \abs{n_i}$.
 The base case is $\OO$, which corresponds to taking an empty divisor.
 Then either
@@ -2879,15 +2900,17 @@ Then either
 - Take $D_0 = D + [p]$.
 
 
+:::
+
 :::{.claim}
 There is an exact sequence
 \[
-0 \to \OO(D_0) &\to \OO(D) \to \CC_p \to 0
+0 \to \OO(D_0) &\to \OO(D) \to \CC_p \to 0\\
 s\in \OO(D_0)(U) &\mapsto s \cdot s_p \in \OO( D_0 + [p] ) (U)
 ,\]
 where the last term is the skyscraper sheaf at $p$.
-:::
 
+:::
 
 :::{.proof title="?"}
 The given map is $\OO\dash$linear and injective, since $s_p\neq 0$ and $s s_p=0$ forces $s=0$.
@@ -2897,12 +2920,11 @@ The same situation is happening here.
 
 Thus there is a LES
 
-% https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiSF4wKCBcXE9PKERfMCkgKSJdLFs0LDAsIkheMCggXFxPTyhEKSApIl0sWzYsMCwiSF4wKCBcXE9PKFxcQ0NfcCkgKSJdLFsyLDIsIkheMSggXFxPTyhEXzApICkiXSxbNCwyLCJIXjEoIFxcT08oRCkgKSJdLFs2LDIsIkheMSggXFxPTyhcXENDX3ApICkgPSAwIl0sWzgsMiwiMCJdLFszLDRdLFs2LDddLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdXQ==
 \begin{tikzcd}
 	0 && {H^0( \OO(D_0) )} && {H^0( \OO(D) )} && {H^0( \OO(\CC_p) )} \\
 	\\
 	&& {H^1( \OO(D_0) )} && {H^1( \OO(D) )} && {H^1( \OO(\CC_p) ) = 0} && 0
-	\arrow[from=1-7, to=3-3]
+	\arrow[from=1-7, to=3-3, out=0, in=180]
 	\arrow[from=3-7, to=3-9]
 	\arrow[from=1-1, to=1-3]
 	\arrow[from=1-3, to=1-5]
@@ -2911,12 +2933,14 @@ Thus there is a LES
 	\arrow[from=3-5, to=3-7]
 \end{tikzcd}
 
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiSF4wKCBcXE9PKERfMCkgKSJdLFs0LDAsIkheMCggXFxPTyhEKSApIl0sWzYsMCwiSF4wKCBcXE9PKFxcQ0NfcCkgKSJdLFsyLDIsIkheMSggXFxPTyhEXzApICkiXSxbNCwyLCJIXjEoIFxcT08oRCkgKSJdLFs2LDIsIkheMSggXFxPTyhcXENDX3ApICkgPSAwIl0sWzgsMiwiMCJdLFszLDRdLFs2LDddLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdXQ==)
+
 
 We also have $h^1(\CC_p) = 0$ by taking a sufficiently fine open cover where $p$ is only in one open set.
 So just check Čech cocycles yields $C_U^1(C, \CC_p) \da \prod_{i<j} \CC_p(U_i \intersect U_j) = 0$ since $p$ is in no intersection.
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-38.pdf_tex} };
 \end{tikzpicture}
 
@@ -2939,7 +2963,10 @@ The last step is to show that $\chi(C, \OO) = 1-g$, so just define $g$ so that t
 
 :::{.remark}
 Why is every $L \cong \OO(D)$ for some $D$?
-Easy to see if $L$ has meromorphic sections: if $s$ is a meromorphic section of $L$, then $D = \div(s) = \sum_p \ord_p(s) [p]$ works.
+Easy to see if $L$ has meromorphic sections: if $s$ is a meromorphic section of $L$, then the following works:
+\[
+D = \div(s) = \sum_p \ord_p(s) [p]
+.\]
 Then $\OO \cong L\tensor \OO(-D)$ has a meromorphic section $s s_{-D}$, a global nonvanishing section with $\div(s s_{-D} ) = \emptyset$.
 Proving that every holomorphic line bundle has a meromorphic section is hard!
 :::

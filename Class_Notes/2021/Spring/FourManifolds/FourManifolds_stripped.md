@@ -1915,7 +1915,8 @@ Last time: we saw that \( \chi({\mathbb{P}}^1, {\mathcal{O}}) = 1 \), and we'd l
 :::
 
 ::: {.theorem title="?"}
-Let \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \) be compact and let \( \mathcal{F} \) be a holomorphic vector bundle on \( X \) (or more generally a finitely-generated \( {\mathcal{O}}{\hbox{-}} \)module, i.e. a coherent sheaf). Then \( \chi \) is well-defined and in fact \( h^{> \dim_{\mathbb{C}}X}(X; \mathcal{F} ) = 0 \).
+Let \( X \in {\operatorname{Mfd}}_{\mathbb{C}} \) be compact and let \( \mathcal{F} \) be a holomorphic vector bundle on \( X \) [^3] Then \( \chi \) is well-defined and
+\[ h^{> \dim_{\mathbb{C}}X}(X; \mathcal{F} ) = 0.\]
 :::
 
 ::: {.remark}
@@ -1927,7 +1928,15 @@ We'll can resolve \( \mathcal{F} \) as a sheaf by first mapping to its smooth se
 \[
 0 \to \mathcal{F} \to C^{\infty } \mathcal{F} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} F \otimes A^{0, 1} \to \cdots
 ,\]
-where \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5muf = \sum_i {\frac{\partial f}{\partial {\overline{{z}}}_i}\,} \, d{\overline{{z}}}_i \). Suppose we have a holomorphic trivialization of \( { \left.{{\mathcal{F} }} \right|_{{U}} } \cong {\mathcal{O}}_{U}^{\oplus r} \) and we have sections \( (s_1, \cdots, s_r) \in C^{\infty } \mathcal{F}(U) \), which are smooth functions on \( U \). In local coordinates we have \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus \coloneqq(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_1, \cdots, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_r) \), is this well-defined globally? Given a different trivialization over \( V \subseteq X \), the \( s_i \) are related by transition functions, so the new sections are \( t_{UV}(s_1, \cdots, s_r) \) where \( t_{UV}: U \cap V \to \operatorname{GL}_r({\mathbb{C}}) \). Since \( t_{UV} \) are holomorphic, we have \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(s_1, \cdots, s_r) \). This makes \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu: C^{\infty } \mathcal{F} \to F\otimes A^{0, 1} \) a well-defined (but not \( {\mathcal{O}}{\hbox{-}} \)linear) map. We can thus continue this resolution using the Leibniz rule:
+where \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5muf = \sum_i {\frac{\partial f}{\partial {\overline{{z}}}_i}\,} \, d{\overline{{z}}}_i \). Suppose we have a holomorphic trivialization of \( { \left.{{\mathcal{F} }} \right|_{{U}} } \cong {\mathcal{O}}_{U}^{\oplus r} \) and we have sections \( (s_1, \cdots, s_r) \in C^{\infty } \mathcal{F}(U) \), which are smooth functions on \( U \). In local coordinates we have
+\[
+\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus \coloneqq(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_1, \cdots, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_r)
+,\]
+but is this well-defined globally? Given a different trivialization over \( V \subseteq X \), the \( s_i \) are related by transition functions, so the new sections are \( t_{UV}(s_1, \cdots, s_r) \) where \( t_{UV}: U \cap V \to \operatorname{GL}_r({\mathbb{C}}) \). Since \( t_{UV} \) are holomorphic, we have
+\[
+\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(s_1, \cdots, s_r)
+.\]
+This makes \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu: C^{\infty } \mathcal{F} \to F\otimes A^{0, 1} \) a well-defined (but not \( {\mathcal{O}}{\hbox{-}} \)linear) map. We can thus continue this resolution using the Leibniz rule:
 
 \[
 0 \to \mathcal{F} \to C^{\infty } \mathcal{F} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} F \otimes A^{0, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} \cdots F \otimes A^{0, 2} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} \cdots
@@ -1966,7 +1975,7 @@ We'll introduce the notion of a "point bundle", which are particularly nice line
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-16.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -1976,21 +1985,33 @@ Taking \( {\mathbb{D}} \) to be a disc of radius \( 1/2 \) and \( V \) to be its
 Take \( p, q,r\in C \), then a divisor can be defined as something like \( D \coloneqq 2[p] - [q] + 3[r] \).
 :::
 
-Define \( {\mathcal{O}}(D) \coloneqq\bigotimes_{i} {\mathcal{O}}(p_i)^{\otimes n_i} \) for any \( D = \sum n_i [p_i] \). Here tensoring by negatives means taking duals, i.e. \( {\mathcal{O}}( -[p] ) \coloneqq{\mathcal{O}}^{\otimes_{-1}} \coloneqq{\mathcal{O}}(p)^\vee \), the line bundle with inverted transition functions. \( {\mathcal{O}}(D) \) has a meromorphic section given by \( s_D \coloneqq\prod s_{p_i}^{n_i} \in \Mero(C, {\mathcal{O}}(D) ) \) where we take the sections coming from point bundles. We can compute \( \int_C c_1 ( {\mathcal{O}}(D) ) = \sum n_i \coloneqq\deg(D) \).
+Define \( {\mathcal{O}}(D) \coloneqq\bigotimes_{i} {\mathcal{O}}(p_i)^{\otimes n_i} \) for any \( D = \sum n_i [p_i] \). Here tensoring by negatives means taking duals, i.e. \( {\mathcal{O}}( -[p] ) \coloneqq{\mathcal{O}}^{\otimes_{-1}} \coloneqq{\mathcal{O}}(p)^\vee \), the line bundle with inverted transition functions. \( {\mathcal{O}}(D) \) has a meromorphic section given by
+\[
+s_D \coloneqq\prod s_{p_i}^{n_i} \in \operatorname{Mero}(C, {\mathcal{O}}(D) )
+\]
+where we take the sections coming from point bundles. We can compute
+\[
+\int_C c_1 ( {\mathcal{O}}(D) ) = \sum n_i \coloneqq\deg(D)
+.\]
+.
 
 ::: {.example title="?"}
-\( \deg( 2[p] -[q] + 3[r]) = 4 \).
+\[
+\deg( 2[p] -[q] + 3[r]) = 4
+.\]
 :::
 
+::: {.remark}
 Assume our line bundle \( L \) is \( {\mathcal{O}}(D) \), we'll prove Riemann-Roch in this case by induction on \( \sum {\left\lvert {n_i} \right\rvert} \). The base case is \( {\mathcal{O}} \), which corresponds to taking an empty divisor. Then either
 
 -   Take \( D = D_0 + [p] \) with \( \deg(D_0) < \sum {\left\lvert {n_i} \right\rvert} \) (for which we need some positive coefficient), or
 -   Take \( D_0 = D + [p] \).
+:::
 
 ::: {.claim}
 There is an exact sequence
 \[
-0 \to {\mathcal{O}}(D_0) &\to {\mathcal{O}}(D) \to {\mathbb{C}}_p \to 0
+0 \to {\mathcal{O}}(D_0) &\to {\mathcal{O}}(D) \to {\mathbb{C}}_p \to 0\\
 s\in {\mathcal{O}}(D_0)(U) &\mapsto s \cdot s_p \in {\mathcal{O}}( D_0 + [p] ) (U)
 ,\]
 where the last term is the skyscraper sheaf at \( p \).
@@ -2007,7 +2028,7 @@ Thus there is a LES
     0 && {H^0( {\mathcal{O}}(D_0) )} && {H^0( {\mathcal{O}}(D) )} && {H^0( {\mathcal{O}}({\mathbb{C}}_p) )} \\
     \\
     && {H^1( {\mathcal{O}}(D_0) )} && {H^1( {\mathcal{O}}(D) )} && {H^1( {\mathcal{O}}({\mathbb{C}}_p) ) = 0} && 0
-    \arrow[from=1-7, to=3-3]
+    \arrow[from=1-7, to=3-3, out=0, in=180]
     \arrow[from=3-7, to=3-9]
     \arrow[from=1-1, to=1-3]
     \arrow[from=1-3, to=1-5]
@@ -2016,11 +2037,13 @@ Thus there is a LES
     \arrow[from=3-5, to=3-7]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiSF4wKCBcXE9PKERfMCkgKSJdLFs0LDAsIkheMCggXFxPTyhEKSApIl0sWzYsMCwiSF4wKCBcXE9PKFxcQ0NfcCkgKSJdLFsyLDIsIkheMSggXFxPTyhEXzApICkiXSxbNCwyLCJIXjEoIFxcT08oRCkgKSJdLFs2LDIsIkheMSggXFxPTyhcXENDX3ApICkgPSAwIl0sWzgsMiwiMCJdLFszLDRdLFs2LDddLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdXQ==)
+
 We also have \( h^1({\mathbb{C}}_p) = 0 \) by taking a sufficiently fine open cover where \( p \) is only in one open set. So just check Čech cocycles yields \( C_U^1(C, {\mathbb{C}}_p) \coloneqq\prod_{i<j} {\mathbb{C}}_p(U_i \cap U_j) = 0 \) since \( p \) is in no intersection.
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-38.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -2042,9 +2065,15 @@ The last step is to show that \( \chi(C, {\mathcal{O}}) = 1-g \), so just define
 :::
 
 ::: {.remark}
-Why is every \( L \cong {\mathcal{O}}(D) \) for some \( D \)? Easy to see if \( L \) has meromorphic sections: if \( s \) is a meromorphic section of \( L \), then \( D = \operatorname{Div}(s) = \sum_p {\operatorname{Ord}}_p(s) [p] \) works. Then \( {\mathcal{O}}\cong L\otimes{\mathcal{O}}(-D) \) has a meromorphic section \( s s_{-D} \), a global nonvanishing section with \( \operatorname{Div}(s s_{-D} ) = \emptyset \). Proving that every holomorphic line bundle has a meromorphic section is hard!
+Why is every \( L \cong {\mathcal{O}}(D) \) for some \( D \)? Easy to see if \( L \) has meromorphic sections: if \( s \) is a meromorphic section of \( L \), then the following works:
+\[
+D = \operatorname{Div}(s) = \sum_p {\operatorname{Ord}}_p(s) [p]
+.\]
+Then \( {\mathcal{O}}\cong L\otimes{\mathcal{O}}(-D) \) has a meromorphic section \( s s_{-D} \), a global nonvanishing section with \( \operatorname{Div}(s s_{-D} ) = \emptyset \). Proving that every holomorphic line bundle has a meromorphic section is hard!
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
 [^2]: Locally admits a chart to \( {\mathbb{C}}^n/ \Gamma \) for \( \Gamma \) a finite group.
+
+[^3]: Or more generally a finitely-generated \( {\mathcal{O}}{\hbox{-}} \)module, i.e. a coherent sheaf.

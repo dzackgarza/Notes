@@ -3400,10 +3400,10 @@ surface. This will be the main ingredient for Riemann-Roch.
 \begin{theorem}[?]
 
 Let \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\) be compact and let
-\(\mathcal{F}\) be a holomorphic vector bundle on \(X\) (or more
-generally a finitely-generated \({\mathcal{O}}{\hbox{-}}\)module, i.e.~a
-coherent sheaf). Then \(\chi\) is well-defined and in fact
-\(h^{> \dim_{\mathbb{C}}X}(X; \mathcal{F} ) = 0\).
+\(\mathcal{F}\) be a holomorphic vector bundle on \(X\) \footnote{Or
+  more generally a finitely-generated \({\mathcal{O}}{\hbox{-}}\)module,
+  i.e.~a coherent sheaf.} Then \(\chi\) is well-defined and
+\begin{align*} h^{> \dim_{\mathbb{C}}X}(X; \mathcal{F} ) = 0.\end{align*}
 
 \end{theorem}
 
@@ -3431,13 +3431,17 @@ Suppose we have a holomorphic trivialization of
 and we have sections
 \((s_1, \cdots, s_r) \in C^{\infty } \mathcal{F}(U)\), which are smooth
 functions on \(U\). In local coordinates we have
-\(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus \coloneqq(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_1, \cdots, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_r)\),
-is this well-defined globally? Given a different trivialization over
+\begin{align*}
+\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus \coloneqq(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_1, \cdots, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus_r)
+,\end{align*}
+but is this well-defined globally? Given a different trivialization over
 \(V \subseteq X\), the \(s_i\) are related by transition functions, so
 the new sections are \(t_{UV}(s_1, \cdots, s_r)\) where
 \(t_{UV}: U \cap V \to \operatorname{GL}_r({\mathbb{C}})\). Since
 \(t_{UV}\) are holomorphic, we have
-\(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(s_1, \cdots, s_r)\).
+\begin{align*}
+\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu( t_{UV} (s_1, \cdots, s_r)) = t_{UV} \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(s_1, \cdots, s_r)
+.\end{align*}
 This makes
 \(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu: C^{\infty } \mathcal{F} \to F\otimes A^{0, 1}\)
 a well-defined (but not \({\mathcal{O}}{\hbox{-}}\)linear) map. We can
@@ -3503,7 +3507,7 @@ nice line bundles, denoted \({\mathcal{O}}(p)\) for
 \centering
 \resizebox{\columnwidth}{!}{%
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-16.pdf_tex} };
 \end{tikzpicture}
 }
@@ -3537,15 +3541,24 @@ duals,
 i.e.~\({\mathcal{O}}( -[p] ) \coloneqq{\mathcal{O}}^{\otimes_{-1}} \coloneqq{\mathcal{O}}(p)^\vee\),
 the line bundle with inverted transition functions. \({\mathcal{O}}(D)\)
 has a meromorphic section given by
-\(s_D \coloneqq\prod s_{p_i}^{n_i} \in \Mero(C, {\mathcal{O}}(D) )\)
+\begin{align*}
+s_D \coloneqq\prod s_{p_i}^{n_i} \in \operatorname{Mero}(C, {\mathcal{O}}(D) )
+\end{align*}
 where we take the sections coming from point bundles. We can compute
-\(\int_C c_1 ( {\mathcal{O}}(D) ) = \sum n_i \coloneqq\deg(D)\).
+\begin{align*}
+\int_C c_1 ( {\mathcal{O}}(D) ) = \sum n_i \coloneqq\deg(D)
+.\end{align*}
+.
 
 \begin{example}[?]
 
-\(\deg( 2[p] -[q] + 3[r]) = 4\).
+\begin{align*}
+\deg( 2[p] -[q] + 3[r]) = 4
+.\end{align*}
 
 \end{example}
+
+\begin{remark}
 
 Assume our line bundle \(L\) is \({\mathcal{O}}(D)\), we'll prove
 Riemann-Roch in this case by induction on
@@ -3563,11 +3576,13 @@ either
   Take \(D_0 = D + [p]\).
 \end{itemize}
 
+\end{remark}
+
 \begin{claim}
 
 There is an exact sequence
 \begin{align*}
-0 \to {\mathcal{O}}(D_0) &\to {\mathcal{O}}(D) \to {\mathbb{C}}_p \to 0
+0 \to {\mathcal{O}}(D_0) &\to {\mathcal{O}}(D) \to {\mathbb{C}}_p \to 0\\
 s\in {\mathcal{O}}(D_0)(U) &\mapsto s \cdot s_p \in {\mathcal{O}}( D_0 + [p] ) (U)
 ,\end{align*}
 where the last term is the skyscraper sheaf at \(p\).
@@ -3591,7 +3606,7 @@ Thus there is a LES
     0 && {H^0( {\mathcal{O}}(D_0) )} && {H^0( {\mathcal{O}}(D) )} && {H^0( {\mathcal{O}}({\mathbb{C}}_p) )} \\
     \\
     && {H^1( {\mathcal{O}}(D_0) )} && {H^1( {\mathcal{O}}(D) )} && {H^1( {\mathcal{O}}({\mathbb{C}}_p) ) = 0} && 0
-    \arrow[from=1-7, to=3-3]
+    \arrow[from=1-7, to=3-3, out=0, in=180]
     \arrow[from=3-7, to=3-9]
     \arrow[from=1-1, to=1-3]
     \arrow[from=1-3, to=1-5]
@@ -3600,6 +3615,11 @@ Thus there is a LES
     \arrow[from=3-5, to=3-7]
 \end{tikzcd}
 \end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiSF4wKCBcXE9PKERfMCkgKSJdLFs0LDAsIkheMCggXFxPTyhEKSApIl0sWzYsMCwiSF4wKCBcXE9PKFxcQ0NfcCkgKSJdLFsyLDIsIkheMSggXFxPTyhEXzApICkiXSxbNCwyLCJIXjEoIFxcT08oRCkgKSJdLFs2LDIsIkheMSggXFxPTyhcXENDX3ApICkgPSAwIl0sWzgsMiwiMCJdLFszLDRdLFs2LDddLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdXQ==}{Link
+to Diagram}
+\end{quote}
 
 We also have \(h^1({\mathbb{C}}_p) = 0\) by taking a sufficiently fine
 open cover where \(p\) is only in one open set. So just check Čech
@@ -3611,7 +3631,7 @@ since \(p\) is in no intersection.
 \centering
 \resizebox{\columnwidth}{!}{%
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{40pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-38.pdf_tex} };
 \end{tikzpicture}
 }
@@ -3641,10 +3661,12 @@ define \(g\) so that this is true!
 
 Why is every \(L \cong {\mathcal{O}}(D)\) for some \(D\)? Easy to see if
 \(L\) has meromorphic sections: if \(s\) is a meromorphic section of
-\(L\), then
-\(D = \operatorname{Div}(s) = \sum_p {\operatorname{Ord}}_p(s) [p]\)
-works. Then \({\mathcal{O}}\cong L\otimes{\mathcal{O}}(-D)\) has a
-meromorphic section \(s s_{-D}\), a global nonvanishing section with
+\(L\), then the following works:
+\begin{align*}
+D = \operatorname{Div}(s) = \sum_p {\operatorname{Ord}}_p(s) [p]
+.\end{align*}
+Then \({\mathcal{O}}\cong L\otimes{\mathcal{O}}(-D)\) has a meromorphic
+section \(s s_{-D}\), a global nonvanishing section with
 \(\operatorname{Div}(s s_{-D} ) = \emptyset\). Proving that every
 holomorphic line bundle has a meromorphic section is hard!
 
