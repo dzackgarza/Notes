@@ -8,6 +8,7 @@
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
 ```
+
 # Wednesday, January 13
 
 Reference:
@@ -214,7 +215,9 @@ Recall that a chain complex is \( C_{\,\cdot\,} \) where \( d^2 = 0 \), and a ma
     \arrow[from=1-1, to=1-2]
 \end{tikzcd}
 ```
-> [Link to diagram](https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d) Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\mathrm{mod}}) \to {R{\hbox{-}}\mathrm{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
+> [Link to diagram](https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d)
+
+Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\mathrm{mod}}) \to {R{\hbox{-}}\mathrm{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
 :::
 
 ## Cohomology
@@ -353,19 +356,43 @@ Consider a double complex:
 
 ```{=tex}
 \begin{tikzcd}
-    &&&& {C_{p, \cdot}} \\
+    &&&&&& {C_{p, \cdot}:} \\
+    &&&& \vdots && \vdots && \vdots \\
     \\
-    && {C_{p-1, q+1}} && {C_{p, q+1}} && {C_{p-1, q+1}} \\
+    && \cdots && {C_{p-1, q+1}} && {C_{p, q+1}} && {C_{p+1, q+1}} && \cdots \\
     \\
-    {C_{\cdot, q}} && {C_{p-1, q}} && {C_{p, q}} && {C_{p+1, q}} \\
+    {C_{\cdot, q}:} && \cdots && {C_{p-1, q}} && {C_{p, q}} && {C_{p+1, q}} && \cdots \\
     \\
-    && {C_{p-1, q+1}} && {C_{p-1, q+1}} && {C_{p-1, q+1}}
-    \arrow["{d_{p, q}^h}", from=5-5, to=5-3]
-    \arrow["{d_{p, q}^v}"', from=5-5, to=7-5]
-    \arrow[from=3-5, to=5-5]
+    && \cdots && {C_{p-1, q+1}} && {C_{p, q+1}} && {C_{p+1, q+1}} && \cdots \\
+    \\
+    &&&& \vdots && \vdots && \vdots
+    \arrow["{d_{p, q}^h}", from=6-7, to=6-5]
+    \arrow["{d_{p, q}^v}", from=6-7, to=8-7]
+    \arrow["{d_{p, q+1}^v}", from=4-7, to=6-7]
+    \arrow["{d_{p+1, q+1}^v}", from=4-9, to=6-9]
+    \arrow["{d_{p+1, q}^v}", from=6-9, to=8-9]
+    \arrow["{d_{p-1, q}^v}", from=6-5, to=8-5]
+    \arrow["{d_{p-1, q+1}^v}", from=4-5, to=6-5]
+    \arrow[from=8-5, to=10-5]
+    \arrow[from=8-7, to=10-7]
+    \arrow[from=8-9, to=10-9]
+    \arrow["{d_{p+1, q+1}^h}", from=8-9, to=8-7]
+    \arrow["{d_{p+1, q}^h}", from=6-9, to=6-7]
+    \arrow["{d_{p, q+1}^h}", from=8-7, to=8-5]
+    \arrow["{d_{p+1, q+1}^h}"{description}, from=4-9, to=4-7]
+    \arrow["{d_{p, q+1}^h}"{description}, from=4-7, to=4-5]
+    \arrow[from=2-5, to=4-5]
+    \arrow[from=2-7, to=4-7]
+    \arrow[from=2-9, to=4-9]
+    \arrow[from=4-5, to=4-3]
+    \arrow[from=6-5, to=6-3]
+    \arrow[from=8-5, to=8-3]
+    \arrow[from=8-11, to=8-9]
+    \arrow[from=6-11, to=6-9]
+    \arrow[from=4-11, to=4-9]
 \end{tikzcd}
 ```
-> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzIsMiwiQ197cC0xLCBxKzF9Il0sWzQsMiwiQ197cCwgcSsxfSJdLFs2LDIsIkNfe3AtMSwgcSsxfSJdLFsyLDQsIkNfe3AtMSwgcX0iXSxbNCw0LCJDX3twLCBxfSJdLFs2LDQsIkNfe3ArMSwgcX0iXSxbMiw2LCJDX3twLTEsIHErMX0iXSxbNCw2LCJDX3twLTEsIHErMX0iXSxbNiw2LCJDX3twLTEsIHErMX0iXSxbNCwwLCJDX3twLCBcXGNkb3R9Il0sWzAsNCwiQ197XFxjZG90LCBxfSJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52IiwyXSxbMSw0XV0=)
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMjMsWzQsMywiQ197cC0xLCBxKzF9Il0sWzYsMywiQ197cCwgcSsxfSJdLFs4LDMsIkNfe3ArMSwgcSsxfSJdLFs0LDUsIkNfe3AtMSwgcX0iXSxbNiw1LCJDX3twLCBxfSJdLFs4LDUsIkNfe3ArMSwgcX0iXSxbNCw3LCJDX3twLTEsIHErMX0iXSxbNiw3LCJDX3twLCBxKzF9Il0sWzgsNywiQ197cCsxLCBxKzF9Il0sWzYsMSwiXFx2ZG90cyJdLFsyLDUsIlxcY2RvdHMiXSxbNCw5LCJcXHZkb3RzIl0sWzYsOSwiXFx2ZG90cyJdLFs4LDksIlxcdmRvdHMiXSxbMCw1LCJDX3tcXGNkb3QsIHF9OiJdLFsyLDcsIlxcY2RvdHMiXSxbMTAsNywiXFxjZG90cyJdLFsxMCw1LCJcXGNkb3RzIl0sWzEwLDMsIlxcY2RvdHMiXSxbMiwzLCJcXGNkb3RzIl0sWzYsMCwiQ197cCwgXFxjZG90fToiXSxbNCwxLCJcXHZkb3RzIl0sWzgsMSwiXFx2ZG90cyJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52Il0sWzEsNCwiZF97cCwgcSsxfV52Il0sWzIsNSwiZF97cCsxLCBxKzF9XnYiXSxbNSw4LCJkX3twKzEsIHF9XnYiXSxbMyw2LCJkX3twLTEsIHF9XnYiXSxbMCwzLCJkX3twLTEsIHErMX1ediJdLFs2LDExXSxbNywxMl0sWzgsMTNdLFs4LDcsImRfe3ArMSwgcSsxfV5oIl0sWzUsNCwiZF97cCsxLCBxfV5oIl0sWzcsNiwiZF97cCwgcSsxfV5oIl0sWzIsMSwiZF97cCsxLCBxKzF9XmgiLDFdLFsxLDAsImRfe3AsIHErMX1eaCIsMV0sWzIxLDBdLFs5LDFdLFsyMiwyXSxbMCwxOV0sWzMsMTBdLFs2LDE1XSxbMTYsOF0sWzE3LDVdLFsxOCwyXV0=)
 
 All of the individual rows and columns are chain complexes, where \( (d^h)^2 = 0 \) and \( (d^v)^2 = 0 \), and the square anticommute: \( d^v d^h + d^h d^v - 0 \), so \( d^v d^h = -d^h d^v \). This is almost a chain complex of chain complexes, i.e. an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathrm{mod}})) \). It's useful here to consider lines parallel to the line \( y=x \).
 :::
@@ -418,7 +445,7 @@ Writing \( \mathrm{\operatorname{Tot}}(C) \) usually refers to the former. The d
 \[
 d_{p, q} = d^h + d^v: C_{p, q} \to C_{p-1, q} \oplus C_{p, q-1}
 ,\]
-where \( C_{p, q} \subseteq \mathrm{\operatorname{Tot}}^\oplus (C)_n \) and \( C_{p-1, q} \oplus C_{p, q-1} \subseteq \mathrm{\operatorname{Tot}}^\oplus(C)_{n-1} \). Then you extend this to a differential on the entire diagonal by defining \( d = \bigoplus d_{p, q} \).
+where \( C_{p, q} \subseteq \mathrm{\operatorname{Tot}}^\oplus (C)_n \) and \( C_{p-1, q} \oplus C_{p, q-1} \subseteq \mathrm{\operatorname{Tot}}^\oplus(C)_{n-1} \). Then you extend this to a differential on the entire diagonal by defining \( d = \bigoplus_{p, q} d_{p, q} \).
 :::
 
 ::: {.exercise title="?"}
@@ -731,7 +758,7 @@ Using the fact that \( B_n \subseteq Z_n \), we can use the 1st and 2nd isomorph
     \\
     0 & {Z_{n-1}(A)} & {Z_{n-1}(B)} & {Z_{n-1}(C)} \\
     \\
-    & {\operatorname{coker}d_n = Z_{n-1}(A)/d A_n = H_{n-1}(A)} & {H_{n-1}(B)} & {H_{n-1}(C)}
+    & {\substack{\operatorname{coker}d_n \\ = Z_{n-1}(A)/d A_n \\ = H_{n-1}(A)} } & {H_{n-1}(B)} & {H_{n-1}(C)}
     \arrow[from=3-4, to=3-6]
     \arrow["f", from=3-2, to=3-3]
     \arrow["g", from=3-3, to=3-4]
@@ -1016,7 +1043,7 @@ The maps are given by the following:
 We can write this down: \( d(b, c) = (-d(b), -f(b) + d(c)) \), or as a matrix
 \[
 \begin{bmatrix}
--d^b &  0
+-d^B &  0
 \\
 -f & d^C
 \end{bmatrix}
@@ -1072,6 +1099,9 @@ The corresponding LES is given by the following:
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbNCwwLCJIX3tuKzF9XFxjb25lKGYpIl0sWzAsMl0sWzYsMCwiSF97bisxfShCWy0xXSkgPSBIX24oQikiXSxbMSwyXSxbMiwyLCJIX24oQykiXSxbNCwyLCJIX24gXFxjb25lKGYpIl0sWzYsMiwiSF97bn0oQlstMV0pID0gSF97bi0xfShCKSJdLFsyLDAsIlxcY2RvdHMiXSxbMiw0LCJcXGNkb3RzIl0sWzcsMF0sWzAsMiwiXFxkZWx0YV8qIl0sWzIsNCwiXFxiZCJdLFs0LDVdLFs1LDZdLFs2LDhdXQ==)
 
+```{=tex}
+\todo[inline]{Overflowing :(}
+```
 ::: {.lemma title="?"}
 The map \( {{\partial}}= f_* \)
 :::
@@ -1917,11 +1947,999 @@ Note that \( \alpha'' \) now extends \( \alpha' \), but \( A' \subsetneq A'' \) 
 Big question: what *are* injective modules really? These are pretty nonintuitive objects.
 :::
 
+# Friday, February 05
+
+> See missing first 10m Recall the definition of injectives.
+
+::: {.remark}
+Over a PID, divisible is equivalent (?) to injective as a module.
+:::
+
+::: {.example title="?"}
+\( {\mathbb{Q}} \) is divisible, and thus an injective \( {\mathbb{Z}}{\hbox{-}} \)module. Similarly \( {\mathbb{Q}}/{\mathbb{Z}}\rightleftharpoons[0, 1) \cap{\mathbb{Q}} \).
+:::
+
+::: {.example title="?"}
+Let \( p\in {\mathbb{Z}} \) be prime, then \( {\mathbb{Z}}[{1\over p}] \subseteq {\mathbb{Q}} \) has elements of the form \( \sum {a_i \over p^{n_i} \), and is not divisible. On the other hand, \( {\mathbb{Z}}_{p^ \infty }\coloneqq{\mathbb{Z}}[{1\over p}]/{\mathbb{Z}}\rightleftharpoons{\mathbb{Z}}[{1\over p}] \cap[0, 1) \) is divisible since \( p^n \qty{ a\over p^n } = a \in {\mathbb{Z}} \), which equals zero in \( {\mathbb{Z}}_{p^{\infty }} \). To solve \( xr = a/p^n \) with \( r,a \in {\mathbb{Z}} \) and \( r\neq 0 \), first assume \( \gcd(r, p) = 1 \) by just dividing through by any common powers of \( p \). This amounts to solving \( 1 = sr tp^n \) where \( s, t\in {\mathbb{Z}} \):
+\[
+{a\over p^n} = sr \qty{a \over p^n} + tp^n\qty{a \over p^n} \\
+= \qty{ sa \over p^n} r \\
+\coloneqq xr \in {\mathbb{Z}}_{p^{\infty }}
+.\]
+:::
+
+::: {.fact}
+Every injective abelian group is isomorphic to a direct sum of copies of \( {\mathbb{Q}} \) and \( {\mathbb{Z}}_{p^{\infty }} \) for various primes \( p \).
+:::
+
+::: {.example title="?"}
+\( {\mathbb{Q}}/{\mathbb{Z}}\cong \bigoplus _{p\text{ prime}} {\mathbb{Z}}_{p^{\infty }} \). To prove this, do induction on the number of prime factors in the denominator.
+:::
+
+::: {.exercise title="2.3.2"}
+\( {\operatorname{Ab}}= {{{\mathbb{Z}}}{\hbox{-}}\operatorname{mod}} \) has enough injectives.
+:::
+
+::: {.remark}
+As a consequence, \( {\mathrm{mod}{\hbox{-}}R} \) has enough injectives for *any* ring \( R \).
+:::
+
+## Transferring Injectives Between Categories
+
+Next we'll use our background in projectives to deduce analogous facts for injectives.
+
+::: {.definition title="Opposite Category"}
+Let \( \mathcal{A} \) be any category, then there is an opposite/dual category \( \mathcal{A}^^{\operatorname{op}} \) defined in the following way:
+
+-   \( {\operatorname{Ob}}(\mathcal{A}^^{\operatorname{op}}) = {\operatorname{Ob}}(\mathcal{A}) \)
+-   \( A\to B\in \operatorname{Mor}(\mathcal{A}) \implies B\to A \in \operatorname{Mor}(\mathcal{A}^^{\operatorname{op}} \), so
+    \[
+    {\operatorname{Hom}}_{\mathcal{A}}(A, B) \cong {\operatorname{Hom}}_{ \mathcal{A}^^{\operatorname{op}}}(B, A) 
+    f &\rightleftharpoons f^^{\operatorname{op}}
+    .\]
+-   We require that if \( A \xrightarrow{f} B \xrightarrow{g} C \) in \( \mathcal{A} \), then \( f^^{\operatorname{op}}\circ g^^{\operatorname{op}}= (g\circ f)^^{\operatorname{op}} \) where \( C \xrightarrow{g^^{\operatorname{op}}} B \xrightarrow{f^^{\operatorname{op}}} A \).
+-   \( \one_{A}^^{\operatorname{op}}= \one_{A} \) in \( \mathcal{A}^^{\operatorname{op}} \).
+:::
+
+::: {.warnings}
+Thinking of these as functions won't quite work! For \( f:A\to B \), there may not be any map \( B\to A \) -- you'd need it to be onto to even define such a thing, and if it's not injective there are many choices. Note that initials and terminals are swapped, and since \( 0 \) is both. Counterintuitively, \( A \to 0 \to B \) is \( 0 \), which maps to \( B \to 0 \to A = 0^^{\operatorname{op}} \).
+:::
+
+::: {.remark}
+Note that \( ({\,\cdot\,})^^{\operatorname{op}} \) switches
+
+-   Monics and epis,
+-   Initial and terminal objects,
+-   Kernels and cokernels.
+
+Moreover, \( \mathcal{A} \) is abelian if and only if \( \mathcal{A}^^{\operatorname{op}} \) is abelian.
+:::
+
+::: {.definition title="Contravariant Functors"}
+A **contravariant functor** \( F: \mathcal{C}\to \mathcal{D} \) is a *covariant* functor \( \mathcal{C}^^{\operatorname{op}}\to \mathcal{D} \).
+
+```{=tex}
+\begin{tikzcd}
+    {C_1} && {C_2} && {C_2} && {C_1} && {FC_2} && {FC_1} \\
+    && {\mathcal{C}} && {\mathcal{C}^^{\operatorname{op}}} && {\mathcal{C}^^{\operatorname{op}}} && {\mathcal{D}}
+    \arrow["f", from=1-1, to=1-3]
+    \arrow["{f^^{\operatorname{op}}}", from=1-5, to=1-7]
+    \arrow["{F(f)}", from=1-9, to=1-11]
+    \arrow[squiggly, from=2-3, to=2-5]
+    \arrow[squiggly, from=2-7, to=2-9]
+\end{tikzcd}
+```
+In particular, \( F(\one) = \one \) and \( F(gf) = F(f) F(g) \)
+:::
+
+::: {.example title="?"}
+\( {\operatorname{Hom}}_R({\,\cdot\,}, A): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is a contravariant functor in the first slot.
+:::
+
+::: {.definition title="Left-Exact Functors"}
+A contravariant functor \( F: \mathcal{A} \to \mathcal{B} \) between abelian categories is **left exact** if and only if the corresponding covariant functor \( F: \mathcal{A}^^{\operatorname{op}}\to \mathcal{B} \): That is, SESs in \( \mathcal{A} \) get mapped to long left-exact sequences in \( \mathcal{B} \) :
+
+```{=tex}
+\begin{tikzcd}
+    0 && A && B && C && 0 \\
+    \\
+    0 && FC && FB && FA && \cdots
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=3-9]
+    \arrow["{F({\,\cdot\,})}"{description}, squiggly, from=1-5, to=3-5]
+\end{tikzcd}
+```
+:::
+
+::: {.lemma title="?"}
+If \( \mathcal{A} \) is abelian and \( A \in \mathcal{A} \), then the following are equivalent:
+
+-   \( A \) is injective in \( \mathcal{A} \).
+-   \( A \) is projective in \( \mathcal{A}^^{\operatorname{op}} \).
+-   The contravariant functor \( {\operatorname{Hom}}_{\mathcal{A}}({\,\cdot\,}, A) \) is exact.
+:::
+
+::: {.lemma title="?"}
+If an abelian category \( \mathcal{A} \) has enough injectives, then every \( M\in \mathcal{A} \) has an injective resolution:
+\[
+0 \to M \to I^0 \to I^1 \to \cdots 
+.\]
+which is an exact cochain complex with each \( I^n \) injective. There is a version of the comparison lemma that is proved in roughly the same way as for projective resolutions.
+:::
+
+Next up: how to transport injective resolutions in \( {{{\mathbb{Z}}}{\hbox{-}}\operatorname{mod}} \) to \( {R{\hbox{-}}\mathrm{mod}} \).
+
+::: {.observation}
+If \( A\in {\operatorname{Ab}} \) and \( N \in {R{\hbox{-}}\mathrm{mod}} \) then \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(N, A) \in {\mathrm{mod}{\hbox{-}}R} \) in the following way: taking \( f: N\to A \) and \( r\in R \), define a right action \( (f\cdot r)(n) \coloneqq f(rn) \).
+:::
+
+::: {.exercise title="?"}
+Check that this is a morphism of abelian groups, that this yields a module structure, along with other details. For noncommutative rings, it's crucial that the \( r \) is on the right in the action and on the left in the definition.
+:::
+
+::: {.lemma title="?"}
+If \( M \in {\mathrm{mod}{\hbox{-}}R} \), then the following natural map \( \tau \) is an isomorphism of abelian groups for each \( A\in {\operatorname{Ab}} \):
+\[
+\tau: {\operatorname{Hom}}_{{\operatorname{Ab}}}(?(M), A) \to {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, A)) \\
+f &\mapsto \tau(f)(m)(r) \coloneqq f(mr)
+,\]
+where \( m\in M \) and \( r\in R \). Note that \( R \) is a left \( R{\hbox{-}} \)module, so the hom in the RHS is a right \( R{\hbox{-}} \)module and the hom makes sense.
+
+::: {.exercise title="?"}
+Check the details here, particularly that the module structures all make sense.
+:::
+
+There is a map \( \mu \) going the other way: \( \mu(g)(m) = g(m)(1_R) \) for \( m\in M \).
+:::
+
+::: {.remark}
+A quick look at why these maps are inverses:
+\[
+\mu( \tau(f)) 
+&= (\tau f)(m)(1_R) \\
+&= f(m\cdot 1) \\
+&= f(m)
+.\]
+
+Conversely,
+\[
+\tau(\mu(g))(m)(r)
+&= (\mu g)( mr) \\
+&= g(mr)(1) \\
+&= g(m\cdot r) && \text{since $g$ is a ${\mathrm{mod}{\hbox{-}}R}$ morphism} \\
+&= g(m)(r\cdot 1) && \text{by observation earlier} \\ 
+&= g(m)(r)
+.\]
+:::
+
+::: {.remark}
+The \( ? \) functor in the lemma will be the forgetful functor applied to \( M \), yielding an adjoint pair.
+:::
+
+# Monday, February 08
+
+## Transporting Injectives
+
+::: {.remark}
+Last time: we had a lemma that for any \( M\in {\mathrm{mod}{\hbox{-}}R} \) and \( A\in {\operatorname{Ab}} \) there is an isomorphism
+\[
+{\operatorname{Hom}}_{{\operatorname{Ab}}}( F(M), A) \cong {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{\operatorname{Ab}}(R, A) )
+,\]
+where \( F: {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is the forgetful functor.
+:::
+
+::: {.definition title="Adjoin"}
+A pair of functors \( L: \mathcal{A} \to \mathcal{B} \) and \( R: \mathcal{B} \to \mathcal{A} \) are **adjoint** is there are natural bijections
+\[
+\tau_{AB}: {\operatorname{Hom}}_B(L(A), B) \xrightarrow{\sim} {\operatorname{Hom}}_A(A, R(B) ) && \forall A\in A, B\in B
+,\]
+where *natural* means that for all \( A \xrightarrow{f} A' \) and \( B \xrightarrow{g} B' \) there is a diagram
+
+```{=tex}
+\begin{tikzcd}
+    {{\operatorname{Hom}}_B(LA', B)} && {{\operatorname{Hom}}_B(LA, B)} && {{\operatorname{Hom}}_B(LA, B')} \\
+    \\
+    {{\operatorname{Hom}}_A(A', RB)} && {{\operatorname{Hom}}_A(A, RB)} && {{\operatorname{Hom}}_A(A, RB')}
+    \arrow["\tau", from=1-3, to=3-3]
+    \arrow["\tau", from=1-1, to=3-1]
+    \arrow["{(Lf)^*}"{description}, from=1-1, to=1-3]
+    \arrow["{f^*}"{description}, from=3-1, to=3-3]
+    \arrow["{g_*}"{description}, from=1-3, to=1-5]
+    \arrow["{(Rg)_*}"{description}, from=3-3, to=3-5]
+    \arrow["\tau"{description}, from=1-5, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJcXEhvbV9CKExBJywgQikiXSxbMCwyLCJcXEhvbV9BKEEnLCBSQikiXSxbMiwwLCJcXEhvbV9CKExBLCBCKSJdLFsyLDIsIlxcSG9tX0EoQSwgUkIpIl0sWzQsMCwiXFxIb21fQihMQSwgQicpIl0sWzQsMiwiXFxIb21fQShBLCBSQicpIl0sWzIsMywiXFx0YXUiXSxbMCwxLCJcXHRhdSJdLFswLDIsIihMZileKiIsMV0sWzEsMywiZl4qIiwxXSxbMiw0LCJnXyoiLDFdLFszLDUsIihSZylfKiIsMV0sWzQsNSwiXFx0YXUiLDFdXQ==)
+
+In this case we say \( L \) is **left adjoint** to \( R \) and \( R \) is **right adjoint** to \( L \).
+:::
+
+::: {.remark}
+The lemma thus says that \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, {\,\cdot\,}): {\operatorname{Ab}}\to {\mathrm{mod}{\hbox{-}}R} \) (using that \( R\in {R{\hbox{-}}\mathrm{mod}} \) is a left \( R{\hbox{-}} \)module) is right adjoint to the forgetful functor \( {\mathrm{mod}{\hbox{-}}R}\to\ Ab \).
+:::
+
+::: {.remark}
+Recall that \( F \) is **additive** if \( {\operatorname{Hom}}_{\mathcal{B}}(B', B) \to {\operatorname{Hom}}_{\mathcal{A}}(FB', FB) \) is a morphism of abelian groups for all \( B, B' \in \mathcal{B} \).
+:::
+
+::: {.proposition title="?"}
+If \( R: \mathcal{B} \to \mathcal{A} \) is an additive functor and right adjoint to an exact functor \( L: \mathcal{A} \to \mathcal{B} \), then \( I\in \mathcal{B} \) injective implies \( R(I)\in \mathcal{A} \) is injective. Dually, if \( \mathcal{L}:A\to B \) is additive and left adjoint to an exact functor \( R: \mathcal{B} \to \mathcal{A} \), then \( P\in \mathcal{A} \) projective implies \( L(P) \in \mathcal{B} \) is projective.
+:::
+
+::: {.corollary title="?"}
+If \( I\in {\operatorname{Ab}} \) is injective, then \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, I) \in {\mathrm{mod}{\hbox{-}}R} \) is injective.
+:::
+
+::: {.proof title="?"}
+This follows from the previous lemma: \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, {\,\cdot\,}) \) is right adjoint to the forgetful functor \( {R{\hbox{-}}\mathrm{mod}}\to{\operatorname{Ab}} \) which is certainly exact. This follows from the fact that kernels and images don't change, since these are given in terms of set maps and equalities of sets.
+:::
+
+::: {.exercise title="2.3.5, 2.3.2"}
+Show that \( {\mathrm{mod}{\hbox{-}}R} \) has enough injectives, using that \( {\operatorname{Ab}} \) has enough injectives.
+:::
+
+::: {.proof title="of proposition"}
+It suffices to show that the contravariant functor \( {\operatorname{Hom}}_{\mathcal{A}}({\,\cdot\,}, RI) \) is exact. We know it's left exact, so we'll show surjectivity. Suppose we have a SES \( 0 \to A \xrightarrow{f} A' \) which is exact in \( \mathcal{A} \). Then \( 0 \to LA \xrightarrow{Lf} LA' \) is exact, and we can apply hom to obtain the exact sequence
+\[
+{\operatorname{Hom}}_{\mathcal{B} }(LA', I) \xrightarrow{(LF)^*} {\operatorname{Hom}}_{\mathcal{B}}(LA, I) \to 0  
+.\]
+Applying \( \tau \) yields
+
+```{=tex}
+\begin{tikzcd}
+    {{\operatorname{Hom}}_{\mathcal{B}}(LA', I)} && {{\operatorname{Hom}}_{\mathcal{B}}(LA, I)} && 0 \\
+    \\
+    {{\operatorname{Hom}}_{\mathcal{A}}(A', RI)} && {{\operatorname{Hom}}_{\mathcal{A}}(A, RI)} && 0
+    \arrow["{(Lf)^*}", from=1-1, to=1-3]
+    \arrow["{f^*}", from=3-1, to=3-3]
+    \arrow["{\tau \sim}"{description}, from=1-1, to=3-1]
+    \arrow["{\tau \sim}"{description}, from=1-3, to=3-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[dashed, from=3-3, to=3-5]
+    \arrow[dashed, from=1-5, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJcXEhvbV97XFxtYXRoY2Fse0J9fShMQScsIEkpIl0sWzIsMCwiXFxIb21fe1xcbWF0aGNhbHtCfX0oTEEsIEkpIl0sWzQsMCwiMCJdLFswLDIsIlxcSG9tX3tcXG1hdGhjYWx7QX19KEEnLCBSSSkiXSxbMiwyLCJcXEhvbV97XFxtYXRoY2Fse0F9fShBLCBSSSkiXSxbNCwyLCIwIl0sWzAsMSwiKExmKV4qIl0sWzMsNCwiZl4qIl0sWzAsMywiXFx0YXUgXFxzaW0iLDFdLFsxLDQsIlxcdGF1IFxcc2ltIiwxXSxbMSwyXSxbNCw1LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiw1LCIiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+-   The top sequence is exact since \( I \) is injective in \( \mathcal{B} \)
+-   Therefore the bottom map is onto (diagram chase)
+:::
+
+## 2.4: Left Derived Functors
+
+::: {.remark}
+Goal: define left derived functors of a right exact functor \( F \), with applications the bifunctor \( {\,\cdot\,}\otimes_R {\,\cdot\,} \), which is right exact and covariant in each variable. We're ultimately interested in Hom functors and Ext, but this is slightly more technical since it's covariant in one slot and contravariant in the other, so focusing on this functor makes the theory slightly easier to develop. This can be fixed by switching \( \mathcal{C} \) with \( \mathcal{C}^^{\operatorname{op}} \) once in a while. Everything for left derived functors will have a dual for right derived functors.
+:::
+
+::: {.remark}
+Let \( \mathcal{A}, \mathcal{B} \) be abelian categories where \( \mathcal{A} \) has enough projectives and \( F: \mathcal{A} \to \mathcal{B} \) is a right exact functor (which implicitly assumes \( F \) is additive). We want to define \( L_i F: \mathcal{A} \to \mathcal{B} \) for \( i\geq 0 \).
+:::
+
+::: {.definition title="Left Derived Functors"}
+For \( A \in \mathcal{A} \), fix once and for all a projective resolution \( P \xrightarrow{\varepsilon} A \), where \( P_{<0} = 0 \). Then define \( FP = (\cdots \to F(P_1) \xrightarrow{Fd_1 } F(P_0) \to 0 \), noting that \( A \) no longer appears in this complex. We can write \( H_0(FP) = FP_0 / (Fd_1)(FP_1) \), and define
+\[
+(L_i F)(A) \coloneqq H_i(F P)
+.\]
+:::
+
+::: {.remark}
+Note that \( P_2 \xrightarrow{d_2} P_1 \xrightarrow{d_1} P_0 \xrightarrow{\varepsilon} A\to 0 \) is exact, and since \( F \) is right exact, it can be shown that the following is a SES: \( FP_1 \xrightarrow{Fd_1} FP_0 \xrightarrow{F \varepsilon} FA \to 0 \). We can use this to compute the original homology, despite it not having any homology itself! From this, we can extra \( L_0(A) \coloneqq FP_0 / (Fd_1)(FP_1) = FP_0 / \ker F(\varepsilon) \) using exactness at \( FP_0 \), and by the 1st isomorphism theorem this is isomorphic to the image \( FA \) using surjectivity. So \( L_0 F \cong F \).
+:::
+
+::: {.theorem title="?"}
+\( L_i F: \mathcal{A} \to \mathcal{B} \) are additive functors.
+:::
+
+::: {.proof title="?"}
+First, \( \one_P: P\to P \) lifts \( \one_A: A\to A \) since it yields a commuting ladder, and \( F(\one) = \one \), so \( (L_i f)(\one) = \one \). Then in the following diagram, the outer rectangle commutes since the inner squares do:
+
+```{=tex}
+\begin{tikzcd}
+    P && A \\
+    \\
+    {P'} && {A'} \\
+    \\
+    {P''} && {A''}
+    \arrow["f", from=1-3, to=3-3]
+    \arrow["g", from=3-3, to=5-3]
+    \arrow["{\tilde f}", from=1-1, to=3-1]
+    \arrow["{\tilde g}", from=3-1, to=5-1]
+    \arrow[from=5-1, to=5-3]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMiwwLCJBIl0sWzIsMiwiQSciXSxbMiw0LCJBJyciXSxbMCwwLCJQIl0sWzAsMiwiUCciXSxbMCw0LCJQJyciXSxbMCwxLCJmIl0sWzEsMiwiZyJdLFszLDQsIlxcdGlsZGUgZiJdLFs0LDUsIlxcdGlsZGUgZyJdLFs1LDJdLFs0LDFdLFszLDBdXQ==)
+
+So \( \tilde g \circ \tilde f \) lifts \( g \circ f \) and therefore \( g_* f_* = (gf)_* \). Thus \( L_i F \) is a functor. That they are additive comes from checking the following diagram:
+
+```{=tex}
+\begin{tikzcd}
+    P && A \\
+    \\
+    Q && B
+    \arrow["{\tilde f}", shift left=1, from=1-1, to=3-1]
+    \arrow["{\tilde g}"', shift right=2, from=1-1, to=3-1]
+    \arrow["f", shift left=2, from=1-3, to=3-3]
+    \arrow["g"', shift right=1, from=1-3, to=3-3]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=3-1, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJQIl0sWzIsMCwiQSJdLFswLDIsIlEiXSxbMiwyLCJCIl0sWzAsMiwiXFx0aWxkZSBmIiwwLHsib2Zmc2V0IjotMX1dLFswLDIsIlxcdGlsZGUgZyIsMix7Im9mZnNldCI6Mn1dLFsxLDMsImYiLDAseyJvZmZzZXQiOi0yfV0sWzEsMywiZyIsMix7Im9mZnNldCI6MX1dLFswLDFdLFsyLDNdXQ==)
+
+Then \( \tilde f + \tilde g \) lifts \( f+g \), and \( H_i \) is an additive functor: \( (F \tilde f + F \tilde g)_* = (F\tilde f)_* + (F\tilde g)_* \). Thus \( L_i F \) is additive.
+:::
+
+# Wednesday, February 10
+
+::: {.remark}
+Setup: Let \( \mathcal{A}, \mathcal{B} \) and \( F: {\mathcal{A}}\to {\mathcal{B}} \) where \( {\mathcal{A}} \) has enough projectives. Let \( P \xrightarrow{\varepsilon} A\in {\mathcal{A}} \) be a projective resolution, we want to define the left derived functors \( L_i F(A) \coloneqq H_i(FP) \).
+:::
+
+::: {.lemma title="?"}
+\( L_i F(A) \) is well-defined up to natural isomorphism, i.e. if \( Q\to A \) is a projective resolution, then there are canonical isomorphism \( H_i (FP) \xrightarrow{\sim} H_i(FQ) \). In particular, changing projective resolutions yields a new functor \( \widehat{L}_iF \) which are naturally isomorphic to \( F \).
+:::
+
+::: {.proof title="?"}
+We can set up the following situation
+
+```{=tex}
+\begin{tikzcd}
+    P && A && 0 \\
+    \\
+    Q && A && 0
+    \arrow["{\one_A}", from=1-3, to=3-3]
+    \arrow["{\exists f}", from=1-1, to=3-1]
+    \arrow["{\varepsilon_P}"{description}, from=1-1, to=1-3]
+    \arrow["{\varepsilon_Q}"{description}, from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=1-3, to=1-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJQIl0sWzIsMCwiQSJdLFs0LDAsIjAiXSxbMiwyLCJBIl0sWzAsMiwiUSJdLFs0LDIsIjAiXSxbMSwzLCJcXG9uZV9BIl0sWzAsNCwiXFxleGlzdHMgZiJdLFswLDEsIlxcZXBzX1AiLDFdLFs0LDMsIlxcZXBzX1EiLDFdLFszLDVdLFsxLDJdXQ==)
+
+Here \( f \) exists by the comparison theorem, and thus there are induced maps \( f_*: H_*(FP) \to H_*(FQ) \) by abuse of notation -- really, this is more like \( (f_*)_i = H_u (Ff) \). We're using that both \( F \) and \( H_i \) are both additive functors. Note that the lift \( f \) of \( \one_A \) is not unique, but any other lift is chain homotopic to \( f \), i.e. \( f-f' = ds + sd \) where \( s: P \to Q[1] \). So they induce the same maps on homology, i.e. \( f_*' = f_* \). Thus the isomorphism is canonical in the sense that it doesn't depend on the choice of lift.
+
+Similarly there exists a \( g:Q\to P \) lifting \( \one_A \), and so \( gf \) and \( \one_P \) are both chain maps lifting \( \one_A \), since it's the composition of two maps lifting \( \one_A \). So they induce the same map on homology by the same reasoning above. We can write \( g_* f_* = (gf)_* = (\one_{FP))_* = \one_{H_*(FP)} \), and similarly \( f_* g_* = \one_{H_*(FQ)} \), making \( f_* \) an isomorphism.
+:::
+
+::: {.corollary title="?"}
+If \( A \) is projective, then \( L^{>0} FA = 0 \).
+:::
+
+::: {.proof title="?"}
+Use the projective resolution \( \cdots \to 0 \to A \xrightarrow{\one_A} A \to 0 \to \cdots \). In this case \( H_{>0}(FP) = 0 \).
+:::
+
+::: {.remark}
+This is an interesting result, since it doesn't depend on the functor! Short aside on \( F{\hbox{-}} \)acyclic objects -- we don't need something as strong as a *projective* resolution.
+:::
+
+::: {.definition title="$F\\dash$acyclic objects"}
+An object \( Q\in {\mathcal{A}} \) is **\( F{\hbox{-}} \)acyclic** if \( L_{>0}FQ = 0 \).
+:::
+
+::: {.remark}
+Note that projective implies \( F{\hbox{-}} \)acyclic for every \( F \), but not conversely. For example, flat \( R{\hbox{-}} \)modules are acyclic for \( {\,\cdot\,}\otimes_R {\,\cdot\,} \). In general, flat does not imply projective, although projective implies flat.
+:::
+
+::: {.definition title="$F\\dash$acyclic resolutions"}
+An **\( F{\hbox{-}} \)acyclic resolution** of \( A \) is a left resolution \( Q\to A \) for which every \( Q_i \) is \( F{\hbox{-}} \)acyclic.
+:::
+
+::: {.remark}
+One can compute \( L_iF(A) \cong H_i(FQ) \) for any \( F{\hbox{-}} \)acyclic resolution. For the \( L_i F \) to be functors, we need to define them on maps!
+:::
+
+::: {.lemma title="?"}
+If \( f: A\to A' \), there is a natural associated morphism \( L_i F(f): L_iF(A) \to L_iF(A') \).
+:::
+
+::: {.proof title="?"}
+Again use the comparison theorem:
+
+```{=tex}
+\begin{tikzcd}
+    P && A && 0 \\
+    \\
+    {P'} && {A'} && 0
+    \arrow["f", from=1-3, to=3-3]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=3-3, to=3-5]
+    \arrow["{\exists \tilde f}"', from=1-1, to=3-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJQIl0sWzIsMCwiQSJdLFsyLDIsIkEnIl0sWzAsMiwiUCciXSxbNCwwLCIwIl0sWzQsMiwiMCJdLFsxLDIsImYiXSxbMywyXSxbMCwxXSxbMSw0XSxbMiw1XSxbMCwzLCJcXGV4aXN0cyBcXHRpbGRlIGYiLDJdXQ==)
+
+Then there is an induced map \( \tilde f_*: H_*(FP) \to H_*(FP') \), noting that one first needs to apply \( F \) to the above diagram. As before, this is independent of the lift using the same argument as before, using the additivity of \( F \) and \( H_* \) and the chain homotopy is pushed through \( F \) appropriately. So set \( (L_i F)(f) \coloneqq(\tilde f_*)_i \).
+:::
+
+We can now pick up the theorem from the end of last time:
+
+::: {.theorem title="?"}
+\( L_iF: \mathcal{A}\to \mathcal{B} \) are additive functors.
+:::
+
+::: {.proof title="?"}
+Done last time!
+:::
+
+::: {.theorem title="?"}
+Using the same assumptions as before, given a SES
+\[
+0 \to A' \to A \to A'' \to 0
+\]
+there are natural connecting maps \( \delta \) yielding a LES
+
+```{=tex}
+\begin{tikzcd}
+    &&&& \cdots \\
+    \\
+    {L_iF(A')} && {L_iF(A)} && {L_iF(A'')} \\
+    \\
+    {L_{i-1}F(A')} && \cdots && \cdots \\
+    \\
+    {FA'} && FA && {FA''} && 0
+    \arrow["{\delta_i}"', from=3-5, to=5-1]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow["{\delta_{i+1}}"', from=1-5, to=3-1]
+    \arrow[dashed, from=5-1, to=5-3]
+    \arrow[from=7-1, to=7-3]
+    \arrow[from=7-3, to=7-5]
+    \arrow[from=7-5, to=7-7]
+    \arrow[dashed, from=5-3, to=5-5]
+    \arrow["{\delta_1}"', from=5-5, to=7-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzAsMiwiTF9pRihBJykiXSxbMiwyLCJMX2lGKEEpIl0sWzQsMiwiTF9pRihBJycpIl0sWzAsNCwiTF97aS0xfUYoQScpIl0sWzQsMCwiXFxjZG90cyJdLFsyLDQsIlxcY2RvdHMiXSxbMCw2LCJGQSciXSxbMiw2LCJGQSJdLFs0LDYsIkZBJyciXSxbNiw2LCIwIl0sWzQsNCwiXFxjZG90cyJdLFsyLDMsIlxcZGVsdGFfaSIsMl0sWzAsMV0sWzEsMl0sWzQsMCwiXFxkZWx0YV97aSsxfSIsMl0sWzMsNSwiIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsN10sWzcsOF0sWzgsOV0sWzUsMTAsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMCw2LCJcXGRlbHRhXzEiLDJdXQ==)
+:::
+
+::: {.proof title="?"}
+Using the Horseshoe lemma, we can obtain the following map:
+
+```{=tex}
+\begin{tikzcd}
+    &&& 0 \\
+    \\
+    {P'} &&& {A'} \\
+    \\
+    P &&& A && 0 \\
+    \\
+    {P''} &&& {A''} \\
+    \\
+    &&& 0
+    \arrow["\exists", dashed, from=5-1, to=5-4]
+    \arrow[from=7-1, to=7-4]
+    \arrow[from=7-4, to=9-4]
+    \arrow[from=5-4, to=7-4]
+    \arrow[from=5-4, to=5-6]
+    \arrow[from=3-4, to=5-4]
+    \arrow[from=3-1, to=3-4]
+    \arrow[from=3-1, to=5-1]
+    \arrow[from=5-1, to=7-1]
+    \arrow[from=1-4, to=3-4]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwyLCJQJyJdLFswLDQsIlAiXSxbMCw2LCJQJyciXSxbMyw2LCJBJyciXSxbMyw0LCJBIl0sWzMsMiwiQSciXSxbMywwLCIwIl0sWzMsOCwiMCJdLFs1LDQsIjAiXSxbMSw0LCJcXGV4aXN0cyIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDNdLFszLDddLFs0LDNdLFs0LDhdLFs1LDRdLFswLDVdLFswLDFdLFsxLDJdLFs2LDVdXQ==)
+
+So we get a SES of complexes over \( \mathcal{A} \), \( 0 \to P' \to P \to P'' \to 0 \). One can use that \( P = P' \oplus P'' \), or alternatively that each \( P_n'' \) is a projective \( R{\hbox{-}} \)module, to see that there are splittings
+
+```{=tex}
+\begin{tikzcd}
+    0 && {P'} && P && {P''} && 0
+    \arrow[from=1-1, to=1-3]
+    \arrow["f", from=1-3, to=1-5]
+    \arrow["g", from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow["{g'}"{description}, curve={height=18pt}, dashed, from=1-7, to=1-5]
+    \arrow["{f'}"{description}, curve={height=18pt}, dashed, from=1-5, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIwIl0sWzIsMCwiUCciXSxbNCwwLCJQIl0sWzYsMCwiUCcnIl0sWzgsMCwiMCJdLFswLDFdLFsxLDIsImYiXSxbMiwzLCJnIl0sWzMsNF0sWzMsMiwiZyciLDEseyJjdXJ2ZSI6Mywic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIsMSwiZiciLDEseyJjdXJ2ZSI6Mywic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+Note that this can be phrased in terms of \( g'g = \one, f'f = \one \), or \( g'g + f'f = \one \). Since \( F \) is additive, it preserves all of these relations, particularly the ones that define being split exact. So additive functors preserve split exact sequences. Thus \( 0 \to FP' \to FP \to FP'' \to 0 \) is still split exact, even though \( F \) is only right exact. Now take homology and use the LES in homology to get the desired LES above, and \( \delta \) is the connecting morphism that comes from the snake lemma.
+
+Proving naturality: we start with the following setup.
+
+```{=tex}
+\begin{tikzcd}
+    0 && {A'} && A && {A''} && 0 \\
+    \\
+    0 && {B'} && B && {B''} && 0
+    \arrow["{g'}", from=1-3, to=3-3]
+    \arrow["g", from=1-5, to=3-5]
+    \arrow["{g''}", from=1-7, to=3-7]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=3-9]
+\end{tikzcd}
+```
+Naturality of \( \delta \) will be showing that the following square commutes:
+
+```{=tex}
+\begin{tikzcd}
+L_{i+1}F(A'') 
+\ar[r, "\delta"]
+&
+L_iF(A') \\
+L_{i+1}F(B'') 
+\ar[r, "\delta"]
+& 
+L_iF(B') \\
+
+\end{tikzcd}
+```
+We now apply the horseshoe lemma several times:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {P'} && \textcolor{rgb,255:red,214;green,92;blue,92}{P} && {P''} && 0 \\
+    \\
+    \\
+    & 0 && {A'} && A && {A''} && 0 \\
+    \\
+    & 0 && {B'} && B && {B''} && 0 \\
+    \\
+    \\
+    0 && {Q'} && \textcolor{rgb,255:red,214;green,92;blue,92}{Q} && {Q''} && 0
+    \arrow["{g'}", from=4-4, to=6-4]
+    \arrow["g", from=4-6, to=6-6]
+    \arrow["{g''}", from=4-8, to=6-8]
+    \arrow[from=4-2, to=4-4]
+    \arrow[from=4-4, to=4-6]
+    \arrow[from=4-6, to=4-8]
+    \arrow[from=4-8, to=4-10]
+    \arrow[from=6-2, to=6-4]
+    \arrow[from=6-4, to=6-6]
+    \arrow[from=6-6, to=6-8]
+    \arrow[from=6-8, to=6-10]
+    \arrow[from=1-7, to=4-8]
+    \arrow[from=1-3, to=4-4]
+    \arrow[color={rgb,255:red,214;green,92;blue,92}, dashed, from=1-5, to=4-6]
+    \arrow[from=9-3, to=6-4]
+    \arrow[from=9-7, to=6-8]
+    \arrow[color={rgb,255:red,214;green,92;blue,92}, dashed, from=9-5, to=6-6]
+    \arrow[from=9-3, to=9-5]
+    \arrow[from=9-5, to=9-7]
+    \arrow["{\exists G'}"{description}, curve={height=-6pt}, dotted, from=1-3, to=9-3]
+    \arrow["{\exists G''}"{description}, curve={height=-12pt}, dotted, from=1-7, to=9-7]
+    \arrow["{\exists G}"{description}, curve={height=6pt}, dashed, from=1-5, to=9-5]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+\end{tikzcd}
+```
+It turns out (details omitted see Weibel p. 46) that \( G \) can be chosen such that we get a commutative diagram of chain complexes with exact rows:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {P'} && P && {P''} && 0 \\
+    \\
+    0 && {Q'} && Q && {Q''} && 0
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=3-9]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow["{G'}"{description}, from=1-3, to=3-3]
+    \arrow["G"{description}, from=1-5, to=3-5]
+    \arrow["{G''}"{description}, from=1-7, to=3-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsyLDAsIlAnIl0sWzQsMCwiUCJdLFs2LDAsIlAnJyJdLFsyLDIsIlEnIl0sWzQsMiwiUSJdLFs2LDIsIlEnJyJdLFswLDIsIjAiXSxbOCwwLCIwIl0sWzgsMiwiMCJdLFs3LDRdLFs0LDVdLFs1LDZdLFs2LDldLFswLDFdLFsxLDJdLFsyLDNdLFszLDhdLFsxLDQsIkcnIiwxXSxbMiw1LCJHIiwxXSxbMyw2LCJHJyciLDFdXQ==)
+
+We proved naturality of the connecting maps \( {{\partial}} \) in the corresponding LES in homology in general (see prop. 1.3.4). This translates to naturality of the maps \( \delta_i: L_{i} (A'') \to L_{i-1}(A') \).
+:::
+
+::: {.remark}
+See exercise 2.4.3 for "dimension shifting". This is a useful tool for inductive arguments.
+:::
+
+# Friday, February 12
+
+::: {.remark}
+Last time: right-exact functors have left-derived functors where a SES induces a LES. The functors are *natural* with respect to the connecting morphisms in the sense that certain squares commute. Weibel refers to \( \left\{{ L_i F }\right\}_{i\geq 0} \) as a **homological \( \delta{\hbox{-}} \)functor**, i.e. anything that takes SESs to LESs which are natural with respect to connecting morphism.
+:::
+
+## Aside: Natural Transformations
+
+::: {.definition title="Natural Transformation"}
+Given functors \( F, G, \mathcal{C} \to \mathcal{D} \), a **natural transformation** \( \eta: F \implies G \) is the following data:
+
+-   For all \( C\in \mathcal{C} \) there is a map \( F(C) \xrightarrow{\eta_C} G(C) \in \operatorname{Mor}(\mathcal{D}) \), sometimes referred to as \( \eta(C) \).
+
+-   If \( C \xrightarrow{f} C' \in \operatorname{Mor}(\mathcal{C}) \), there is a diagram
+
+```{=tex}
+\begin{tikzcd}
+    FC && {FC'} \\
+    \\
+    GC && {GC'}
+    \arrow["Gf", from=3-1, to=3-3]
+    \arrow["Ff", from=1-1, to=1-3]
+    \arrow["{\eta_C}"{description}, from=1-1, to=3-1]
+    \arrow["{\eta_{C'}}"{description}, from=1-3, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJGQyJdLFsyLDAsIkZDJyJdLFswLDIsIkdDIl0sWzIsMiwiR0MnIl0sWzIsMywiR2YiXSxbMCwxLCJGZiJdLFswLDIsIlxcZXRhX0MiLDFdLFsxLDMsIlxcZXRhX3tDJ30iLDFdXQ==)
+
+-   \( \eta \) is a **natural isomorphism** if all of the \( \eta_C \) are isomorphisms, and we write \( F \cong C \).
+:::
+
+::: {.definition title="Equivalence of Categories"}
+A functor \( F: \mathcal{C} \to \mathcal{D} \) is an **equivalence of categories** if and only if there exists a \( G: \mathcal{D} \to \mathcal{C} \) such that \( GF \cong \one_{\mathcal{C}} \) and \( FG \cong \one_{\mathcal{D}} \).
+:::
+
+::: {.example title="?"}
+A category \( \mathcal{C} \) is **small** if \( {\operatorname{Ob}}(\mathcal{C}) \) is a set, then take \( \mathcal{C} \coloneqq\Cat \) whose objects are categories and morphisms are functors. Note that in all categories, all collections of morphisms should be sets, and the small condition guarantees it. In this case, natural transformations \( \eta: F\to G \) is an additional structure yielding morphisms of morphisms. These are called **2-morphisms**, and in this entire structure is a **2-category**, and our previous notion is referred to as a **1-category**.
+:::
+
+::: {.theorem title="?"}
+Assume \( \mathcal{A}, \mathcal{B} \) are abelian and \( F:\mathcal{A} \to \mathcal{B} \) is a right-exact additive functor where \( \mathcal{A} \) has enough projectives. Then the family \( \left\{{ L_i F }\right\} _{i\geq 0} \) is a *universal \( \delta{\hbox{-}} \)functor* where \( L_0 F \cong F \) is a natural isomorphism.
+:::
+
+::: {.remark}
+Here *universal* means that if \( \left\{{ T_i }\right\} _{i\geq 0} \) is also a \( \delta{\hbox{-}} \)functor with a natural *transformation* (not necessarily an isomorphism) \( \varphi_0: T_0 \to F \), then there exist unique morphism of \( \delta{\hbox{-}} \)functors \( \left\{{ \varphi_i: T_i \to L_i F }\right\} _{i\geq 0} \), i.e. a family of natural transformations that commute with the respective \( \delta \) maps coming from both the \( T_i \) and the \( L_i F \), which extend \( \varphi_0 \). This will be important later on when we try to show Ext and Tor are functors in either slot.
+:::
+
+::: {.proof title="?"}
+Assume \( \left\{{ T_i }\right\} _{i\geq 0} \) and \( \varphi_0 \) are given, and assume inductively that \( n>0 \) and we've defined \( \varphi_i: T_i \to F \) for \( 0\leq i< n \) which commute with the \( \delta \) maps. Step 1: given \( A\in \mathcal{A} \), fix a reference exact sequence: pick a projective mapping onto \( A \) and its kernel to obtain
+\[
+0 \to K \to P \to A \to 0
+.\]
+Applying the functors \( T_i \) and \( L_i F \) yields
+
+```{=tex}
+\begin{tikzcd}
+    && \textcolor{rgb,255:red,214;green,92;blue,214}{x} && k && 0 \\
+    && {T_nA} && {T_{n-1}K} && {T_{n-1}P} \\
+    \\
+    \\
+    \textcolor{rgb,255:red,214;green,92;blue,214}{L_n FP = 0} && {L_nFA} && {L_{n-1}FK} && {L_{n-1}FP} \\
+    && \textcolor{rgb,255:red,214;green,92;blue,214}{\exists ! y \coloneqq\phi_{n-1}(x)} && \ell && 0
+    \arrow["{\phi_{n-1}(K)}", from=2-5, to=5-5]
+    \arrow["{\phi_{n-1}(P)}", from=2-7, to=5-7]
+    \arrow["{\exists \phi_{n-1}(A)}", dashed, from=2-3, to=5-3]
+    \arrow["\delta"{description}, from=2-3, to=2-5]
+    \arrow[from=2-5, to=2-7]
+    \arrow[from=5-1, to=5-3]
+    \arrow["\delta"', hook, from=5-3, to=5-5]
+    \arrow[from=5-5, to=5-7]
+    \arrow[dotted, from=1-3, to=1-5]
+    \arrow[dotted, from=1-5, to=1-7]
+    \arrow[curve={height=18pt}, dotted, from=1-5, to=6-5]
+    \arrow[curve={height=18pt}, dotted, from=1-7, to=6-7]
+    \arrow[color={rgb,255:red,214;green,92;blue,214}, dotted, from=6-3, to=6-5]
+    \arrow[dotted, from=6-5, to=6-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTMsWzIsMSwiVF9uQSJdLFs0LDEsIlRfe24tMX1LIl0sWzYsMSwiVF97bi0xfVAiXSxbMiw0LCJMX25GQSJdLFs0LDQsIkxfe24tMX1GSyJdLFs2LDQsIkxfe24tMX1GUCJdLFswLDQsIkxfbiBGUCA9IDAiLFszMDAsNjAsNjAsMV1dLFsyLDAsIngiLFszMDAsNjAsNjAsMV1dLFs0LDAsImsiXSxbNCw1LCJcXGVsbCJdLFs2LDAsIjAiXSxbNiw1LCIwIl0sWzIsNSwiXFxleGlzdHMgISB5IFxcZGEgXFxwaGlfe24tMX0oeCkiLFszMDAsNjAsNjAsMV1dLFsxLDQsIlxccGhpX3tuLTF9KEspIl0sWzIsNSwiXFxwaGlfe24tMX0oUCkiXSxbMCwzLCJcXGV4aXN0cyBcXHBoaV97bi0xfShBKSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDEsIlxcZGVsdGEiLDFdLFsxLDJdLFs2LDNdLFszLDQsIlxcZGVsdGEiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFs0LDVdLFs3LDgsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFs4LDEwLCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbOCw5LCIiLDAseyJjdXJ2ZSI6Mywic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzEwLDExLCIiLDAseyJjdXJ2ZSI6Mywic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzEyLDksIiIsMix7ImNvbG91ciI6WzMwMCw2MCw2MF0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFs5LDExLCIiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=)
+
+So define \( \varphi_{n}(A)(x) \coloneqq y \), which makes the LHS square commute by construction. Note that \( L_n FP \) vanishes (as do all its higher derived functors) since \( P \) is projective.
+
+::: {.warnings}
+The map \( \varphi_n(A) \) could depend on the choice of \( P \)!
+:::
+
+We now want to show that \( \varphi_n \) is a natural transformation. Supposing \( f:A' \to A \), we need to show \( \varphi_n \) commutes with \( f \).
+
+```{=tex}
+\begin{tikzcd}
+    0 & {K'} & {P'} & A & 0 \\
+    \\
+    0 & K & P & A & 0
+    \arrow["f", from=1-4, to=3-4]
+    \arrow["{\exists g}", dashed, from=1-3, to=3-3]
+    \arrow[from=3-1, to=3-2]
+    \arrow[from=3-2, to=3-3]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=1-1, to=1-2]
+    \arrow[from=1-2, to=1-3]
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow["{\exists h}", dashed, from=1-2, to=3-2]
+\end{tikzcd}
+```
+Since \( P' \) is projective, we can lift \( f \) to \( P'\to P \), and then define \( h \) to be the restriction of \( g \) to \( K' \to K \).
+
+```{=tex}
+\begin{tikzcd}
+    {T_n A'} &&&& {T_nA} \\
+    & {T_{n-1}K'} && {T_{n-1}K} \\
+    \\
+    & {L_{n-1}FK'} && {L_{n-1}FK} \\
+    {L_n FA'} &&&& {L_nF(A)}
+    \arrow["{T_nf}", from=1-1, to=1-5]
+    \arrow["{L_nFf}", from=5-1, to=5-5]
+    \arrow["{\phi_n(A)}", from=1-5, to=5-5]
+    \arrow["{\phi_n(A')}", from=1-1, to=5-1]
+    \arrow["{T_{n-1}h}", from=2-2, to=2-4]
+    \arrow["{\delta'}"{description}, from=1-1, to=2-2]
+    \arrow["\delta"{description}, from=1-5, to=2-4]
+    \arrow["{L_{n-1}Fh}", from=4-2, to=4-4]
+    \arrow["{\phi_{n-1}}", from=2-2, to=4-2]
+    \arrow["{\phi_{n-1}}", from=2-4, to=4-4]
+    \arrow["{\delta'}"{description}, from=5-1, to=4-2]
+    \arrow["\delta"{description}, from=5-5, to=4-4]
+\end{tikzcd}
+```
+Note that all of the quadrilaterals here commute. The middle top and bottom come from naturality of \( T_*, L_*F \) with respect to \( \delta \), the RHS/LHS due to the construction of the \( \varphi_n \), and \( \phi_{n-1} \) is natural by the inductive hypothesis. Now in order to traverse \( T_nA' \to T_n A \to L_n F (A) \), we can pass the path through one commuting square at a time to make it equal to \( T_nA' \to L_n FA' \to L_n FA \), so the outer square commutes. We have
+\[
+\delta \varphi_n(A) T_n F = \delta L_n Ff \varphi_n(A')
+,\]
+and since \( \delta \) is monic (using the previous vanishing due to projectivity), so we can cancel on the left and this yields the definition of naturality.
+
+::: {.corollary title="?"}
+The definition of \( \varphi_n(A) \) does not depend on the choice of \( P \). Taking \( A' = A \) in the previous argument with \( f = \one \), suppose \( P'\neq P \). Then \( T_n f = \one = L_n Ff \) and setting \( \varphi_n'(A) \) to be the map coming from \( P' \), we get \( \varphi_n'(A) = \varphi_n(A) \) using the following diagram:
+
+```{=tex}
+\begin{tikzcd}
+    0 & {K'} & {P'} & A & 0 \\
+    \\
+    0 & K & P & A & 0
+    \arrow["\one", from=1-4, to=3-4]
+    \arrow["{\exists g}", dashed, from=1-3, to=3-3]
+    \arrow[from=3-1, to=3-2]
+    \arrow[from=3-2, to=3-3]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=1-1, to=1-2]
+    \arrow[from=1-2, to=1-3]
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow["{\exists h}", dashed, from=1-2, to=3-2]
+\end{tikzcd}
+```
+:::
+
+So the \( \varphi_n(A) \) are uniquely defined. We now want to show that \( \varphi_n \) commutes with the \( \delta_n \) coming from an *arbitrary* SES instead of a fixed reference SES.
+
+```{=tex}
+\begin{tikzcd}
+    {T_n A} &&&&&&& {T_{n-1}C} \\
+    &&& {T_* \text{ a } \delta \text{ functor}} \\
+    {T_nA} &&&& {T_{n-1}K} \\
+    &&& {\text{reference}} &&& {\phi_{n-1} \text{natural}} \\
+    \\
+    {L_nFA} &&&& {L_{n-1}FA} \\
+    &&& {L_*F \text{ a } \delta \text{ functor}} \\
+    {L_n FA} &&&&&&& {L_{n-1}FC}
+    \arrow["{\phi_n}", from=3-1, to=6-1]
+    \arrow["{\delta_{(2)}}", from=3-1, to=3-5]
+    \arrow["{\delta_{(1)}}", from=6-1, to=6-5]
+    \arrow["{\phi_{n-1}}"', from=3-5, to=6-5]
+    \arrow["{=}", from=1-1, to=3-1]
+    \arrow["{=}", from=8-1, to=6-1]
+    \arrow["{\delta_{(1)}}"', from=8-1, to=8-8]
+    \arrow["{\delta_{(2)}}"', from=1-1, to=1-8]
+    \arrow["{\phi_{n-1}}"{description}, from=1-8, to=8-8]
+    \arrow["{T_{n-1}h}"{description}, from=3-5, to=1-8]
+    \arrow["{L_{n-1}Fh}"{description}, from=6-5, to=8-8]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzAsMiwiVF9uQSJdLFs0LDIsIlRfe24tMX1LIl0sWzAsNSwiTF9uRkEiXSxbNCw1LCJMX3tuLTF9RkEiXSxbMCwwLCJUX24gQSJdLFs3LDAsIlRfe24tMX1DIl0sWzcsNywiTF97bi0xfUZDIl0sWzAsNywiTF9uIEZBIl0sWzYsMywiXFxwaGlfe24tMX0gXFx0ZXh0e25hdHVyYWx9Il0sWzMsMSwiVF8qIFxcdGV4dHsgYSB9IFxcZGVsdGEgXFx0ZXh0eyBmdW5jdG9yfSJdLFszLDMsIlxcdGV4dHtyZWZlcmVuY2V9Il0sWzMsNiwiTF8qRiBcXHRleHR7IGEgfSBcXGRlbHRhIFxcdGV4dHsgZnVuY3Rvcn0iXSxbMCwyLCJcXHBoaV9uIl0sWzAsMSwiXFxkZWx0YV97KDIpfSJdLFsyLDMsIlxcZGVsdGFfeygxKX0iXSxbMSwzLCJcXHBoaV97bi0xfSIsMl0sWzQsMCwiPSJdLFs3LDIsIj0iXSxbNyw2LCJcXGRlbHRhX3soMSl9IiwyXSxbNCw1LCJcXGRlbHRhX3soMil9IiwyXSxbNSw2LCJcXHBoaV97bi0xfSIsMV0sWzEsNSwiVF97bi0xfWgiLDFdLFszLDYsIkxfe24tMX1GaCIsMV1d)
+
+This diagram commutes for the reasons indicated, and commutativity of the outside square implies that \( \varphi_n \) commutes with the \( \delta \) coming from any SES.
+
+> See section 2.4 in Weibel.
+:::
+
+# Monday, February 15
+
+## 2.5: Right-Derived Functors
+
+::: {.remark}
+Today: right-derived functors of a left-exact functor. Luckily we can use some opposite category tricks which save us some work of re deriving everything.
+:::
+
+::: {.definition title="Right Derived Functors"}
+Let \( F: \mathcal{A} \to \mathcal{B} \) be left-exact where \( \mathcal{A} \) has enough injectives. Given \( A \in \mathcal{A} \), fix an injective resolution \( 0 \to A \xrightarrow{\varepsilon} I \) and define
+\[
+R^i \mathcal{F} \coloneqq H^i( FA ) && i \geq 0 
+.\]
+:::
+
+::: {.remark}
+Then
+\[
+0 \to FA \xrightarrow{F\varepsilon} FI^0 \xrightarrow{Fd^)} FI^1
+\]
+is exact, and
+\[
+R^0 FA = \ker FD^0 / \left\langle{ 0 }\right\rangle = \operatorname{im}F\varepsilon\cong FA
+,\]
+and so there is naturally an isomorphism \( R^0 F \cong F \). Observe that \( F \) yields a right-exact functor \( F^^{\operatorname{op}}: \mathcal{A}^^{\operatorname{op}}\to \mathcal{B}^^{\operatorname{op}} \), where we note that \( F^^{\operatorname{op}}(f^^{\operatorname{op}}) = F(f)^^{\operatorname{op}} \). Note that taking the opposite category sends injectives to projectives and so \( \mathcal{A}^^{\operatorname{op}} \) has enough projectives. This means that \( L_i F^^{\operatorname{op}} \) are defined using the projective resolution \( I \), so we have
+\[
+R^i F(A) = (L_i F^^{\operatorname{op}})^^{\operatorname{op}}
+.\]
+Thus all results about left-derived functors translate to right-derived functors:
+
+-   \( R_i F \) is independent of the choice of injective resolution, up to a natural isomorphism.
+-   If \( A \) is injective, then \( R^{i>0} F(A) = 0 \).
+-   The collection \( \left\{{ R^i F }\right\} _{i\geq 0 } \) forms a universal cohomological \( \delta{\hbox{-}} \)functor for \( F \).
+-   An object \( Q \in \mathcal{A} \) is **\( F{\hbox{-}} \)acyclic** if \( R^{>0}F(Q) = 0 \).
+-   \( R^iF \) can be computed using \( F{\hbox{-}} \)acyclic objects instead of injective resolutions.
+:::
+
+::: {.definition title="?"}
+Fix a right \( R{\hbox{-}} \)module \( M \in {\mathrm{mod}{\hbox{-}}R} \), then \( F \coloneqq{\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\,\cdot\,}): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is a left-exact functor. Its right-derived functors are **ext functors** and denoted \( \operatorname{Ext}_{{\mathrm{mod}{\hbox{-}}R}}^i(M, {\,\cdot\,}) \).
+:::
+
+::: {.example title="?"}
+\( \operatorname{Ext}_{{\mathrm{mod}{\hbox{-}}R}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\,\cdot\,}) ] (A) \).
+:::
+
+::: {.remark}
+Exercises 2.5.1, 2.5.2 are important extensions of our existing characterizations of injectives and projectives in \( {\mathrm{mod}{\hbox{-}}R} \). These upgrade the characterization involving \( {\operatorname{Hom}} \) to one involving \( \operatorname{Ext} \). Note the typo in 2.5.1.3, it should say the following:
+
+"\( B \) is \( {\operatorname{Hom}}_{R}(A, {\,\cdot\,}) \) is acyclic for all \( A \)."
+:::
+
+::: {.remark}
+Fix \( B\in {\mathrm{mod}{\hbox{-}}R} \) and consider \( G\coloneqq{\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}({\,\cdot\,}, B): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \). Then \( G \) is still left-exact, but is now *contravariant*. We can regard it as a covariant functor left-exact functor \( G: {\mathrm{mod}{\hbox{-}}R}^^{\operatorname{op}}\to {\operatorname{Ab}} \). So we define \( R^i G(A) \) by an injective resolution of \( A \) in \( \mathcal{A}^^{\operatorname{op}} \), and this is the same as a projective resolution of \( A \) in \( \mathcal{A} \). So apply \( G \) and take cohomology. It turns out that \( R^i {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{R{\hbox{-}}\mathrm{mod}}}(A, B) \), so we can use the same notation \( \operatorname{Ext}^i_R({\,\cdot\,}, B) \) for both cases.
+:::
+
+## 2.6: Adjoint Functors and Left/Right Exactness
+
+::: {.slogan}
+\( {\,\cdot\,} \) adjoints are \( {\,\cdot\,}^^{\operatorname{op}} \) exact, since \( {\,\cdot\,} \) adjoints have \( {\,\cdot\,}{\hbox{-}} \)derived functors.
+:::
+
+::: {.theorem title="?"}
+Let
+\[
+L: A &\to B \\
+R: B &\to A 
+.\]
+be an adjoint pair of functors. Then there exists a natural isomorphism
+\[
+\tau_{AB}: {\operatorname{Hom}}_{\mathcal{B}}(LA, B) \xrightarrow{\sim} {\operatorname{Hom}}_{\mathcal{A}}(A, RB) && \forall A\in \mathcal{A}, B\in \mathcal{B}
+,\]
+and \( L \) is right exact, \( B \) is left exact.
+:::
+
+::: {.proposition title="1.6: Yoneda"}
+A sequence
+\[
+A \xrightarrow{\alpha} B \xrightarrow{\beta} C
+\]
+is exact in \( \mathcal{A} \) if and only if for all \( M \in {\operatorname{Ob}}( \mathcal{A} ) \), the sequence
+\[
+{\operatorname{Hom}}_{\mathcal{A})(M, A)
+\xrightarrow{\alpha^* \coloneqq\alpha\circ {\,\cdot\,}} 
+{\operatorname{Hom}}_{\mathcal{A})(M, B)
+\xrightarrow{\beta^* \coloneqq\beta \circ {\,\cdot\,}} 
+{\operatorname{Hom}}_{\mathcal{A})(M, C)
+\]
+is exact.
+:::
+
+::: {.proof title="?"}
+```{=tex}
+\envlist
+```
+1.  Take \( M=A \), then \( 0 = \beta^* \alpha^*(\one_A) = \beta \alpha \one = \beta \alpha \). Thus \( \operatorname{im}\alpha \subseteq \ker \beta \).
+
+2.  Take \( M = \ker \beta \) and consider the inclusion \( \iota: \ker M \hookrightarrow B \), then \( \beta^*(\iota) = \beta \iota = 0 \) and thus \( \iota \in \ker \beta^* = \operatorname{im}\alpha^* \). So there exists \( \sigma\in {\operatorname{Hom}}( \ker \beta, A) \) such that \( \iota = \alpha^* (\sigma) \coloneqq\alpha \sigma \), and thus \( \ker \beta = \operatorname{im}\ioa \subset \operatorname{im}\alpha \).
+
+Thus \( \ker \beta= \operatorname{im}\alpha \), yielding exactness of the bottom sequence.
+:::
+
+::: {.proof title="of theorem"}
+We'll first prove that \( R \) is left-exact. Take a SES in \( B \), say
+\[
+0 \to B' \to B \to B'' \to 0
+.\]
+Apply the left-exact covariant functor \( {\operatorname{Hom}}_{\mathcal{B})(LA, {\,\cdot\,}) \) followed by \( \tau \):
+
+```{=tex}
+\begin{tikzcd}
+    0 && {{\operatorname{Hom}}_{\mathcal{B})(LA, B')} && {{\operatorname{Hom}}_{\mathcal{B})(LA, B)} && {{\operatorname{Hom}}_{\mathcal{B})(LA, B'')} \\
+    \\
+    0 && {{\operatorname{Hom}}_{\mathcal{B})(A, RB')} && {{\operatorname{Hom}}_{\mathcal{B})(A, RB)} && {{\operatorname{Hom}}_{\mathcal{B})(A, RB'')}
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow["{\tau_{AB}}"{description}, squiggly, from=1-3, to=3-3]
+    \arrow["{\tau_{AB}}"{description}, squiggly, from=1-5, to=3-5]
+    \arrow["{\tau_{AB}}"{description}, squiggly, from=1-7, to=3-7]
+    \arrow[dashed, from=3-1, to=3-3]
+\end{tikzcd}
+```
+The bottom sequence is exact by naturality of \( \tau \). Now applying the Yoneda lemma, we obtain an exact sequence
+\[
+0 \to 
+{\operatorname{Hom}}_{\mathcal{A}}(A, RB')
+\to
+{\operatorname{Hom}}_{\mathcal{A}}(A, RB)
+\to
+{\operatorname{Hom}}_{\mathcal{A}}(A, RB'')
+.\]
+
+So \( R \) is left exact. Now \( L^^{\operatorname{op}}: \mathcal{A} \to \mathcal{B} \) is right adjoint to \( R^^{\operatorname{op}} \), so \( L^^{\operatorname{op}} \) is left exact and thus \( L \) is right exact.
+:::
+
+## Tensor Product Functors and Tor
+
+::: {.remark}
+Let \( R, S \in \Ring \), \( B\in \bimod{R}{S} \), \( C\in {{S}{\hbox{-}}\operatorname{mod}} \). Then \( {\operatorname{Hom}}_{S}(B, C)\in {\mathrm{mod}{\hbox{-}}R} \) in a natural way: given \( f:B\to C \), define \( (f\cdot r)(b) = f(rb) \).
+:::
+
+::: {.exercise title="?"}
+Check that this is a well-defined morphism of right \( S{\hbox{-}} \)modules.
+:::
+
+::: {.remark}
+We saw this structure earlier with \( S={\mathbb{Z}} \), see p.41.
+:::
+
+::: {.proposition title="?"}
+Fix \( R,S \) and \( {}_R B_S \) as above. Then for every \( A \in {\mathrm{mod}{\hbox{-}}R} \) and \( C\in {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S \) there is a natural isomorphism
+\[
+\tau: {\operatorname{Hom}}_S( A\otimes_R B, C ) &\xrightarrow{\sim} {\operatorname{Hom}}_R(A, {\operatorname{Hom}}_S(B, C) ) \\
+f &\mapsto g(a)(b) = f(a\otimes b) \\
+f(a\otimes b) = g(a)(b) &\mapsfrom g
+.\]
+
+Note that the tensor product is a right \( S{\hbox{-}} \)module, and the hom on the right is a right \( R{\hbox{-}} \)module, so these expressions make sense. Here \( B \) is fixed, so \( A \) and \( C \) are variables and this is a statement about bifunctors
+\[
+{\,\cdot\,}\otimes_R B: {\mathrm{mod}{\hbox{-}}R}\to {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S 
+,\]
+which is left adjoint to
+\[
+{\operatorname{Hom}}_S(B, {\,\cdot\,}): {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S \to {\mathrm{mod}{\hbox{-}}R}
+.\]
+So the former is a left adjoint and the latter is a right adjoint, so by the theorem, \( {\,\cdot\,}\otimes_R B \) is right exact.
+:::
+
+```{=tex}
+\todo[inline]{Fix right module notation}
+```
+::: {.remark}
+If \( B \) is only a left \( R{\hbox{-}} \)module, we can always take \( S = {\mathbb{Z}} \), which makes this into a functor
+\[
+{\,\cdot\,}\otimes_R B: {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}}
+.\]
+Since this is a right exact functor from a category with enough injectives, we can define left-derived functors.
+:::
+
+::: {.definition title="?"}
+Let \( B\in \bimod{R}{S} \) and let \( T({\,\cdot\,}) \coloneqq{\,\cdot\,}\otimes_R B: {\mathrm{mod}{\hbox{-}}R}\to {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S \). Then define \( \operatorname{Tor}_n^R(A, B) \coloneqq L_n T(A) \).
+:::
+
+::: {.remark}
+Note that these are easier to work with, since they're covariant in both variables.
+:::
+
 # Appendix: Extra Definitions
 
 ::: {.definition title="Acyclic"}
 A chain complex \( C \) is **acyclic** if and only if \( H_*(C) = 0 \).
 :::
+
+# Extra References
+
+-   <https://www.math.wisc.edu/~csimpson6/notes/2020_spring_homological_algebra/notes.pdf>
 
 [^1]: See appendix A 1.6 for initial and terminal objects. Note that \( \emptyset \) is an initial but non-terminal object in \( {\operatorname{Set}} \), whereas zero objects are both.
 
