@@ -83,15 +83,18 @@
 \newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
+\newcommand{\ssets}[0]{\operatorname{sSets}}
+\newcommand{\Ring}[0]{\mathbf{Ring}}
+\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\grMod}[0]{{\operatorname{grMod}}}
+\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -110,14 +113,8 @@
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
-\newcommand{\Top}[0]{{\operatorname{Top}}}
-\newcommand{\Mfd}[0]{{\operatorname{Mfd}}}
-\newcommand{\Ab}[0]{{\operatorname{Ab}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
-\newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
-\newcommand{\Sch}[0]{{\operatorname{Sch}}}
-\newcommand{\sch}[0]{{\operatorname{Sch}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\alg}[0]{\mathrm{Alg}}
@@ -323,11 +320,19 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\rmod}[0]{{R\dash\mathrm{mod}}}
-\newcommand{\modr}[0]{{\mathrm{mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
-\newcommand{\kmod}[0]{{k\dash\operatorname{mod}}}
+\newcommand{\Top}[0]{{\mathbf{Top}}}
+\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathbf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathbf{Sch}}}
+\newcommand{\sch}[0]{{\mathbf{Sch}}}
+\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
+\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
+\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
+\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
+\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
+\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
+\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
 \newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
@@ -2600,14 +2605,15 @@ Similarly $\QQ/\ZZ \mapstofrom [0, 1) \intersect \QQ$.
 :::
 
 :::{.example title="?"}
-Let $p\in \ZZ$ be prime, then $\ZZ[{1\over p}] \subseteq \QQ$ has elements of the form \( \sum {a_i \over p^{n_i} \), and is not divisible.
+Let $p\in \ZZ$ be prime, then $\ZZ[{1\over p}] \subseteq \QQ$ has elements of the form \( \sum {a_i \over p^{n_i} } \), and is not divisible.
 On the other hand, $\ZZ_{p^ \infty }\da \ZZ[{1\over p}]/\ZZ \mapstofrom \ZZ[{1\over p}] \intersect [0, 1)$ is divisible since $p^n \qty{ a\over p^n } = a \in \ZZ$, which equals zero in $\ZZ_{p^{\infty }}$.
 To solve $xr = a/p^n$ with $r,a \in \ZZ$ and $r\neq 0$, first assume $\gcd(r, p) = 1$ by just dividing through by any common powers of $p$.
 This amounts to solving $1 = sr tp^n$ where $s, t\in \ZZ$:
 \[
-{a\over p^n} = sr \qty{a \over p^n} + tp^n\qty{a \over p^n} \\
-= \qty{ sa \over p^n} r \\
-\da xr \in \ZZ_{p^{\infty }}
+{a\over p^n} 
+&= sr \qty{a \over p^n} + tp^n\qty{a \over p^n} \\
+&= \qty{ sa \over p^n} r \\
+&\da xr \in \ZZ_{p^{\infty }}
 .\]
 
 :::
@@ -2635,16 +2641,16 @@ As a consequence, $\modr$ has enough injectives for *any* ring $R$.
 Next we'll use our background in projectives to deduce analogous facts for injectives.
 
 :::{.definition title="Opposite Category"}
-Let \( \mathcal{A}  \) be any category, then there is an opposite/dual category \( \mathcal{A}^\op  \) defined in the following way:
+Let \( \mathcal{A}  \) be any category, then there is an opposite/dual category \( \mathcal{A}\op  \) defined in the following way:
 
-- $\Ob(\mathcal{A}^\op) = \Ob(\mathcal{A})$
-- $A\to B\in \Mor(\mathcal{A}) \implies B\to A \in \Mor(\mathcal{A}^\op$, so 
+- $\Ob(\mathcal{A}\op) = \Ob(\mathcal{A})$
+- $A\to B\in \Mor(\mathcal{A}) \implies B\to A \in \Mor(\mathcal{A}\op$, so 
 \[
-\Hom_{\mathcal{A}}(A, B) \cong \Hom_{ \mathcal{A}^\op}(B, A) 
-f &\mapstofrom f^\op
+\Hom_{\mathcal{A}}(A, B) \cong \Hom_{ \mathcal{A}\op}(B, A) 
+f &\mapstofrom f\op
 .\]
-- We require that if $A \mapsvia{f} B \mapsvia{g} C$ in \( \mathcal{A}  \), then $f^\op \circ g^\op = (g\circ f)^\op$ where $C \mapsvia{g^\op} B \mapsvia{f^\op} A$.
-- $\one_{A}^\op = \one_{A}$ in \( \mathcal{A}^\op  \).
+- We require that if $A \mapsvia{f} B \mapsvia{g} C$ in \( \mathcal{A}  \), then $f\op \circ g\op = (g\circ f)\op$ where $C \mapsvia{g\op} B \mapsvia{f\op} A$.
+- $\one_{A}\op = \one_{A}$ in \( \mathcal{A}\op  \).
 
 :::
 
@@ -2652,35 +2658,37 @@ f &\mapstofrom f^\op
 Thinking of these as functions won't quite work!
 For $f:A\to B$, there may not be any map $B\to A$ -- you'd need it to be onto to even define such a thing, and if it's not injective there are many choices.
 Note that initials and terminals are swapped, and since $0$ is both.
-Counterintuitively, $A \to 0 \to B$ is $0$, which maps to $B \to 0 \to A = 0^\op$.
+Counterintuitively, $A \to 0 \to B$ is $0$, which maps to $B \to 0 \to A = 0\op$.
 :::
 
 :::{.remark}
-Note that $(\wait)^\op$ switches
+Note that $(\wait)\op$ switches
 
 - Monics and epis,
 - Initial and terminal objects,
 - Kernels and cokernels.
 
-Moreover, \( \mathcal{A} \) is abelian if and only if \( \mathcal{A}^\op  \) is abelian. 
+Moreover, \( \mathcal{A} \) is abelian if and only if \( \mathcal{A}\op  \) is abelian. 
 :::
 
 
 :::{.definition title="Contravariant Functors"}
-A **contravariant functor** $F: \mathcal{C}\to \mathcal{D}$ is a *covariant* functor \( \mathcal{C}^\op \to \mathcal{D}   \).
+A **contravariant functor** $F: \mathcal{C}\to \mathcal{D}$ is a *covariant* functor \( \mathcal{C}\op \to \mathcal{D}   \).
 
-% https://q.uiver.app/?q=WzAsMTAsWzIsMCwiQ18yIl0sWzAsMCwiQ18xIl0sWzQsMCwiQ18yIl0sWzYsMCwiQ18xIl0sWzgsMCwiRkNfMiJdLFsxMCwwLCJGQ18xIl0sWzIsMSwiXFxtYXRoY2Fse0N9Il0sWzQsMSwiXFxtYXRoY2Fse0N9Xlxcb3AiXSxbNiwxLCJcXG1hdGhjYWx7Q31eXFxvcCJdLFs4LDEsIlxcbWF0aGNhbHtEfSJdLFsxLDAsImYiXSxbMiwzLCJmXlxcb3AiXSxbNCw1LCJGKGYpIl0sWzYsNywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XSxbOCw5LCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dXQ==
 \begin{tikzcd}
 	{C_1} && {C_2} && {C_2} && {C_1} && {FC_2} && {FC_1} \\
-	&& {\mathcal{C}} && {\mathcal{C}^\op} && {\mathcal{C}^\op} && {\mathcal{D}}
+	&& {\mathcal{C}} && {\mathcal{C}\op} && {\mathcal{C}\op} && {\mathcal{D}}
 	\arrow["f", from=1-1, to=1-3]
-	\arrow["{f^\op}", from=1-5, to=1-7]
+	\arrow["{f\op}", from=1-5, to=1-7]
 	\arrow["{F(f)}", from=1-9, to=1-11]
 	\arrow[squiggly, from=2-3, to=2-5]
 	\arrow[squiggly, from=2-7, to=2-9]
 \end{tikzcd}
 
 In particular, $F(\one) = \one$ and $F(gf) = F(f) F(g)$
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzIsMCwiQ18yIl0sWzAsMCwiQ18xIl0sWzQsMCwiQ18yIl0sWzYsMCwiQ18xIl0sWzgsMCwiRkNfMiJdLFsxMCwwLCJGQ18xIl0sWzIsMSwiXFxtYXRoY2Fse0N9Il0sWzQsMSwiXFxtYXRoY2Fse0N9Xlxcb3AiXSxbNiwxLCJcXG1hdGhjYWx7Q31eXFxvcCJdLFs4LDEsIlxcbWF0aGNhbHtEfSJdLFsxLDAsImYiXSxbMiwzLCJmXlxcb3AiXSxbNCw1LCJGKGYpIl0sWzYsNywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XSxbOCw5LCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dXQ==)
+
 :::
 
 
@@ -2689,7 +2697,7 @@ $\Hom_R(\wait, A): \modr \to \Ab$ is a contravariant functor in the first slot.
 :::
 
 :::{.definition title="Left-Exact Functors"}
-A contravariant functor $F: \mathcal{A} \to \mathcal{B}$ between abelian categories is **left exact** if and only if the corresponding covariant functor $F: \mathcal{A}^\op \to \mathcal{B}$:
+A contravariant functor $F: \mathcal{A} \to \mathcal{B}$ between abelian categories is **left exact** if and only if the corresponding covariant functor $F: \mathcal{A}\op \to \mathcal{B}$:
 That is, SESs in \( \mathcal{A}  \) get mapped to long left-exact sequences in \( \mathcal{B}  \) :
 
 % https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsyLDAsIkEiXSxbNCwwLCJCIl0sWzYsMCwiQyJdLFs4LDAsIjAiXSxbMCwyLCIwIl0sWzIsMiwiRkMiXSxbNCwyLCJGQiJdLFs2LDIsIkZBIl0sWzgsMiwiXFxjZG90cyJdLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs1LDZdLFs2LDddLFs3LDhdLFs4LDldLFsyLDcsIkYoXFx3YWl0KSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6InNxdWlnZ2x5In19fV1d
@@ -2714,7 +2722,7 @@ That is, SESs in \( \mathcal{A}  \) get mapped to long left-exact sequences in \
 If \( \mathcal{A}  \) is abelian and $A \in \mathcal{A}$, then the following are equivalent: 
 
 - $A$ is injective in \( \mathcal{A}  \).
-- $A$ is projective in \( \mathcal{A}^\op  \).
+- $A$ is projective in \( \mathcal{A}\op  \).
 - The contravariant functor $\Hom_{\mathcal{A}}(\wait, A)$ is exact. 
 :::
 
@@ -2743,7 +2751,7 @@ For noncommutative rings, it's crucial that the $r$ is on the right in the actio
 :::{.lemma title="?"}
 If $M \in \modr$, then the following natural map \( \tau \) is an isomorphism of abelian groups for each $A\in \Ab$:
 \[
-\tau: \Hom_{\Ab}(?(M), A) \to \Hom_{\modr}(M, \Hom_{\Ab}(R, A)) \\
+\tau: \Hom_{\Ab}(?(M), A) &\to \Hom_{\modr}(M, \Hom_{\Ab}(R, A)) \\
 f &\mapsto \tau(f)(m)(r) \da f(mr)
 ,\]
 where $m\in M$ and $r\in R$.
@@ -2771,7 +2779,7 @@ Conversely,
 \tau(\mu(g))(m)(r)
 &= (\mu g)( mr) \\
 &= g(mr)(1) \\
-&= g(m\cdot r) && \text{since $g$ is a $\modr$ morphism} \\
+&= g(m\cdot r) && \text{since } g \in \Mor_{\rmod} \\
 &= g(m)(r\cdot 1) && \text{by observation earlier} \\ 
 &= g(m)(r)
 .\]
@@ -2901,7 +2909,7 @@ Applying $\tau$ yields
 :::{.remark}
 Goal: define left derived functors of a right exact functor $F$, with applications the bifunctor $\wait \tensor_R \wait$, which is right exact and covariant in each variable.
 We're ultimately interested in Hom functors and Ext, but this is slightly more technical since it's covariant in one slot and contravariant in the other, so focusing on this functor makes the theory slightly easier to develop.
-This can be fixed by switching \( \mathcal{C}  \) with \( \mathcal{C}^\op  \) once in a while.
+This can be fixed by switching \( \mathcal{C}  \) with \( \mathcal{C}\op  \) once in a while.
 Everything for left derived functors will have a dual for right derived functors.
 :::
 
@@ -2991,7 +2999,6 @@ Thus $L_i F$ is additive.
 
 # Wednesday, February 10
 
-
 :::{.remark}
 Setup:
 Let \( \mathcal{A}, \mathcal{B}   \) and \( F: \mca \to \mcb \) where \( \mca \) has enough projectives.
@@ -3029,7 +3036,11 @@ Thus the isomorphism is canonical in the sense that it doesn't depend on the cho
 
 Similarly there exists a $g:Q\to P$ lifting $\one_A$, and so $gf$ and $\one_P$ are both chain maps lifting $\one_A$, since it's the composition of two maps lifting $\one_A$.
 So they induce the same map on homology by the same reasoning above.
-We can write $g_* f_* = (gf)_* = (\one_{FP))_* = \one_{H_*(FP)}$, and similarly $f_* g_* = \one_{H_*(FQ)}$, making $f_*$ an isomorphism.
+We can write 
+\[
+g_* f_* = (gf)_* = (\one_{FP})_* = \one_{H_*(FP)}
+,\]
+and similarly $f_* g_* = \one_{H_*(FQ)}$, making $f_*$ an isomorphism.
 :::
 
 :::{.corollary title="?"}
@@ -3116,16 +3127,16 @@ there are natural connecting maps \( \delta \) yielding a LES
 	{L_{i-1}F(A')} && \cdots && \cdots \\
 	\\
 	{FA'} && FA && {FA''} && 0
-	\arrow["{\delta_i}"', from=3-5, to=5-1]
+	\arrow["{\delta_i}"', from=3-5, to=5-1, out=0, in=180]
 	\arrow[from=3-1, to=3-3]
 	\arrow[from=3-3, to=3-5]
-	\arrow["{\delta_{i+1}}"', from=1-5, to=3-1]
+	\arrow["{\delta_{i+1}}"', from=1-5, to=3-1, out=0, in=180]
 	\arrow[dashed, from=5-1, to=5-3]
 	\arrow[from=7-1, to=7-3]
 	\arrow[from=7-3, to=7-5]
 	\arrow[from=7-5, to=7-7]
 	\arrow[dashed, from=5-3, to=5-5]
-	\arrow["{\delta_1}"', from=5-5, to=7-1]
+	\arrow["{\delta_1}"', from=5-5, to=7-1, out=0, in=180]
 \end{tikzcd}
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzAsMiwiTF9pRihBJykiXSxbMiwyLCJMX2lGKEEpIl0sWzQsMiwiTF9pRihBJycpIl0sWzAsNCwiTF97aS0xfUYoQScpIl0sWzQsMCwiXFxjZG90cyJdLFsyLDQsIlxcY2RvdHMiXSxbMCw2LCJGQSciXSxbMiw2LCJGQSJdLFs0LDYsIkZBJyciXSxbNiw2LCIwIl0sWzQsNCwiXFxjZG90cyJdLFsyLDMsIlxcZGVsdGFfaSIsMl0sWzAsMV0sWzEsMl0sWzQsMCwiXFxkZWx0YV97aSsxfSIsMl0sWzMsNSwiIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsN10sWzcsOF0sWzgsOV0sWzUsMTAsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMCw2LCJcXGRlbHRhXzEiLDJdXQ==)
@@ -3205,14 +3216,16 @@ Naturality of $\delta$ will be showing that the following square commutes:
 
 \begin{tikzcd}
 L_{i+1}F(A'') 
-\ar[r, "\delta"]
+  \ar[r, "\delta"]
+  \ar[d]
 &
-L_iF(A') \\
+L_iF(A') 
+  \ar[d]
+\\
 L_{i+1}F(B'') 
-\ar[r, "\delta"]
+  \ar[r, "\delta"]
 & 
-L_iF(B') \\
-
+L_iF(B') 
 \end{tikzcd}
 
 We now apply the horseshoe lemma several times:
@@ -3283,7 +3296,6 @@ This translates to naturality of the maps $\delta_i: L_{i} (A'') \to L_{i-1}(A')
 See exercise 2.4.3 for "dimension shifting".
 This is a useful tool for inductive arguments.
 :::
-
 
 
 # Friday, February 12
@@ -3384,7 +3396,6 @@ The map \( \varphi_n(A) \) could depend on the choice of $P$!
 We now want to show that \( \varphi_n \) is a natural transformation.
 Supposing $f:A' \to A$, we need to show \( \varphi_n \) commutes with $f$.
 
-% https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIksnIl0sWzIsMCwiUCciXSxbMywwLCJBIl0sWzMsMiwiQSJdLFsyLDIsIlAiXSxbMSwyLCJLIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbNCwwLCIwIl0sWzMsNCwiZiJdLFsyLDUsIlxcZXhpc3RzIGciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNyw2XSxbNiw1XSxbNSw0XSxbNCw4XSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw5XSxbMSw2LCJcXGV4aXN0cyBoIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d
 \begin{tikzcd}
 	0 & {K'} & {P'} & A & 0 \\
 	\\
@@ -3402,9 +3413,11 @@ Supposing $f:A' \to A$, we need to show \( \varphi_n \) commutes with $f$.
 	\arrow["{\exists h}", dashed, from=1-2, to=3-2]
 \end{tikzcd}
 
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIksnIl0sWzIsMCwiUCciXSxbMywwLCJBIl0sWzMsMiwiQSJdLFsyLDIsIlAiXSxbMSwyLCJLIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbNCwwLCIwIl0sWzMsNCwiZiJdLFsyLDUsIlxcZXhpc3RzIGciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNyw2XSxbNiw1XSxbNSw0XSxbNCw4XSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw5XSxbMSw2LCJcXGV4aXN0cyBoIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+
 Since $P'$ is projective, we can lift $f$ to $P'\to P$, and then define $h$ to be the restriction of $g$ to $K' \to K$.
 
-% https://q.uiver.app/?q=WzAsOCxbMCwwLCJUX24gQSciXSxbNCwwLCJUX25BIl0sWzAsNCwiTF9uIEZBJyJdLFs0LDQsIkxfbkYoQSkiXSxbMSwxLCJUX3tuLTF9SyciXSxbMywxLCJUX3tuLTF9SyJdLFsxLDMsIkxfe24tMX1GSyciXSxbMywzLCJMX3tuLTF9RksiXSxbMCwxLCJUX25mIl0sWzIsMywiTF9uRmYiXSxbMSwzLCJcXHBoaV9uKEEpIl0sWzAsMiwiXFxwaGlfbihBJykiXSxbNCw1LCJUX3tuLTF9aCJdLFswLDQsIlxcZGVsdGEnIiwxXSxbMSw1LCJcXGRlbHRhIiwxXSxbNiw3LCJMX3tuLTF9RmgiXSxbNCw2LCJcXHBoaV97bi0xfSJdLFs1LDcsIlxccGhpX3tuLTF9Il0sWzIsNiwiXFxkZWx0YSciLDFdLFszLDcsIlxcZGVsdGEiLDFdXQ==
 \begin{tikzcd}
 	{T_n A'} &&&& {T_nA} \\
 	& {T_{n-1}K'} && {T_{n-1}K} \\
@@ -3425,6 +3438,9 @@ Since $P'$ is projective, we can lift $f$ to $P'\to P$, and then define $h$ to b
 	\arrow["\delta"{description}, from=5-5, to=4-4]
 \end{tikzcd}
 
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCJUX24gQSciXSxbNCwwLCJUX25BIl0sWzAsNCwiTF9uIEZBJyJdLFs0LDQsIkxfbkYoQSkiXSxbMSwxLCJUX3tuLTF9SyciXSxbMywxLCJUX3tuLTF9SyJdLFsxLDMsIkxfe24tMX1GSyciXSxbMywzLCJMX3tuLTF9RksiXSxbMCwxLCJUX25mIl0sWzIsMywiTF9uRmYiXSxbMSwzLCJcXHBoaV9uKEEpIl0sWzAsMiwiXFxwaGlfbihBJykiXSxbNCw1LCJUX3tuLTF9aCJdLFswLDQsIlxcZGVsdGEnIiwxXSxbMSw1LCJcXGRlbHRhIiwxXSxbNiw3LCJMX3tuLTF9RmgiXSxbNCw2LCJcXHBoaV97bi0xfSJdLFs1LDcsIlxccGhpX3tuLTF9Il0sWzIsNiwiXFxkZWx0YSciLDFdLFszLDcsIlxcZGVsdGEiLDFdXQ==)
+
+
 Note that all of the quadrilaterals here commute.
 The middle top and bottom come from naturality of $T_*, L_*F$ with respect to $\delta$, the RHS/LHS due to the construction of the \( \varphi_n \), and $\phi_{n-1}$ is natural by the inductive hypothesis.
 Now in order to traverse $T_nA' \to T_n A \to L_n F (A)$, we can pass the path through one commuting square at a time to make it equal to $T_nA' \to L_n FA' \to L_n FA$, so the outer square commutes.
@@ -3439,7 +3455,6 @@ The definition of \( \varphi_n(A) \) does not depend on the choice of $P$.
 Taking $A' = A$ in the previous argument with $f = \one$, suppose $P'\neq P$.
 Then $T_n f = \one = L_n Ff$ and setting \( \varphi_n'(A)\) to be the map coming from $P'$, we get \( \varphi_n'(A) = \varphi_n(A) \) using the following diagram:
 
-% https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIksnIl0sWzIsMCwiUCciXSxbMywwLCJBIl0sWzMsMiwiQSJdLFsyLDIsIlAiXSxbMSwyLCJLIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbNCwwLCIwIl0sWzMsNCwiXFxvbmUiXSxbMiw1LCJcXGV4aXN0cyBnIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzcsNl0sWzYsNV0sWzUsNF0sWzQsOF0sWzAsMV0sWzEsMl0sWzIsM10sWzMsOV0sWzEsNiwiXFxleGlzdHMgaCIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==
 \begin{tikzcd}
 	0 & {K'} & {P'} & A & 0 \\
 	\\
@@ -3456,6 +3471,9 @@ Then $T_n f = \one = L_n Ff$ and setting \( \varphi_n'(A)\) to be the map coming
 	\arrow[from=1-4, to=1-5]
 	\arrow["{\exists h}", dashed, from=1-2, to=3-2]
 \end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIksnIl0sWzIsMCwiUCciXSxbMywwLCJBIl0sWzMsMiwiQSJdLFsyLDIsIlAiXSxbMSwyLCJLIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbNCwwLCIwIl0sWzMsNCwiXFxvbmUiXSxbMiw1LCJcXGV4aXN0cyBnIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzcsNl0sWzYsNV0sWzUsNF0sWzQsOF0sWzAsMV0sWzEsMl0sWzIsM10sWzMsOV0sWzEsNiwiXFxleGlzdHMgaCIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
 :::
 
 So the \( \varphi_n(A) \) are uniquely defined.
@@ -3497,9 +3515,7 @@ This diagram commutes for the reasons indicated, and commutativity of the outsid
 
 
 
-
 # Monday, February 15
-
 
 ## 2.5: Right-Derived Functors
 
@@ -3519,19 +3535,19 @@ R^i \cat{F} \da H^i( FA ) && i \geq 0
 :::{.remark}
 Then 
 \[
-0 \to FA \mapsvia{F\eps} FI^0 \mapsvia{Fd^)} FI^1
+0 \to FA \mapsvia{F\eps} FI^0 \mapsvia{Fd^0} FI^1
 \]
 is exact,
 and 
 \[
-R^0 FA = \ker FD^0 / \gens{ 0 } = \im F\eps \cong FA
+R^0 FA = \ker F(d^0) / \gens{ 0 } = \im F\eps \cong FA
 ,\]
 and so there is naturally an isomorphism $R^0 F \cong F$.
-Observe that \( F \) yields a right-exact functor $F^\op: \cat{A}^\op \to \cat{B}^\op$, where we note that $F^\op (f^\op) = F(f)^\op$.
-Note that taking the opposite category sends injectives to projectives and so \( \cat{A}^\op \) has enough projectives.
-This means that $L_i F^\op$ are defined using the projective resolution $I$, so we have
+Observe that \( F \) yields a right-exact functor $F\op: \cat{A}\op \to \cat{B}\op$, where we note that $F\op (f\op) = F(f)\op$.
+Note that taking the opposite category sends injectives to projectives and so \( \cat{A}\op \) has enough projectives.
+This means that $L_i F\op$ are defined using the projective resolution $I$, so we have
 \[
-R^i F(A) = (L_i F^\op)^\op
+R^i F(A) = (L_i F\op)\op
 .\]
 Thus all results about left-derived functors translate to right-derived functors:
 
@@ -3540,7 +3556,6 @@ Thus all results about left-derived functors translate to right-derived functors
 - The collection \( \ts{ R^i F } _{i\geq 0 } \) forms a universal cohomological \( \delta\dash \)functor for \( F \).
 - An object \( Q \in \cat{A} \) is **$F\dash$acyclic** if $R^{>0}F(Q) = 0$.
 - $R^iF$ can be computed using $F\dash$acyclic objects instead of injective resolutions.
-
 :::
 
 :::{.definition title="?"}
@@ -3563,8 +3578,8 @@ Note the typo in 2.5.1.3, it should say the following:
 :::{.remark}
 Fix $B\in \modr$ and consider $G\da \Hom_{\modr}(\wait, B): \modr \to \Ab$.
 Then $G$ is still left-exact, but is now *contravariant*.
-We can regard it as a covariant functor left-exact functor $G: \modr ^\op \to \Ab$.
-So we define $R^i G(A)$ by an injective resolution of $A$ in \( \cat{A}^\op \), and this is the same as a projective resolution of $A$ in \( \cat{A} \).
+We can regard it as a covariant functor left-exact functor $G: \modr \op \to \Ab$.
+So we define $R^i G(A)$ by an injective resolution of $A$ in \( \cat{A}\op \), and this is the same as a projective resolution of $A$ in \( \cat{A} \).
 So apply \( G \) and take cohomology.
 It turns out that \( R^i \Hom_{\modr}(\wait, B) \cong R^i \Hom_{\modr}(A, \wait)(B) \da \Ext^i_{\rmod}(A, B) \), so we can use the same notation $\Ext^i_R(\wait, B)$ for both cases.
 :::
@@ -3572,19 +3587,19 @@ It turns out that \( R^i \Hom_{\modr}(\wait, B) \cong R^i \Hom_{\modr}(A, \wait)
 ## 2.6: Adjoint Functors and Left/Right Exactness
 
 :::{.slogan}
-$\wait$ adjoints are $\wait^\op$ exact, since $\wait$ adjoints have $\wait\dash$derived functors.
+$\wait$ adjoints are $\wait\op$ exact, since $\wait$ adjoints have $\wait\dash$derived functors.
 :::
 
 :::{.theorem title="?"}
 Let 
 \[
-L: A &\to B \\
-R: B &\to A 
+L: \cat{A} &\to \cat{B} \\
+R: \cat{B} &\to \cat{A} 
 .\]
 be an adjoint pair of functors.
 Then there exists a natural isomorphism
 \[
-\tau_{AB}: \Hom_{\cat{B}}(LA, B) \mapsvia{\sim} \Hom_{\cat{A}}(A, RB) && \forall A\in \cat{A}, B\in \cat{B}
+\tau_{AB}: \Hom_{\cat{B}}(LA, B) \mapsvia{\sim} \Hom_{\cat{A}}(A, RB) \quad  \forall A\in \cat{A}, B\in \cat{B}
 ,\]
 and $L$ is right exact, $B$ is left exact.
 :::
@@ -3596,11 +3611,11 @@ A \mapsvia{\alpha} B \mapsvia{\beta} C
 \]
 is exact in \( \cat{A} \) if and only if for all \( M \in \Ob( \cat{A} ) \), the sequence
 \[
-\Hom_{\cat{A})(M, A)
+\Hom_{\cat{A}} (M, A)
 \mapsvia{\alpha^* \da \alpha\circ \wait} 
-\Hom_{\cat{A})(M, B)
+\Hom_{\cat{A}} (M, B)
 \mapsvia{\beta^* \da \beta \circ \wait} 
-\Hom_{\cat{A})(M, C)
+\Hom_{\cat{A}} (M, C)
 \]
 is exact.
 :::
@@ -3612,12 +3627,10 @@ is exact.
   Thus $\im \alpha \subseteq \ker \beta$.
 
 2. Take $M = \ker \beta$ and consider the inclusion \( \iota: \ker M \injects B \), then \( \beta^*(\iota) = \beta \iota = 0 \) and thus \( \iota \in \ker \beta^* = \im \alpha^* \).
-  So there exists \( \sigma\in \Hom( \ker \beta, A) \) such that \( \iota = \alpha^* (\sigma) \da \alpha \sigma \), and thus \( \ker \beta = \im \ioa \subset \im \alpha \).
+  So there exists \( \sigma\in \Hom( \ker \beta, A) \) such that \( \iota = \alpha^* (\sigma) \da \alpha \sigma \), and thus \( \ker \beta = \im \iota \subset \im \alpha \).
 
 Thus $\ker \beta= \im \alpha$, yielding exactness of the bottom sequence.
-
 :::
-
 
 :::{.proof title="of theorem"}
 We'll first prove that $R$ is left-exact.
@@ -3625,13 +3638,12 @@ Take a SES in $B$, say
 \[
 0 \to B' \to B \to B'' \to 0
 .\]
-Apply the left-exact covariant functor $\Hom_{\cat{B})(LA, \wait)$ followed by $\tau$:
+Apply the left-exact covariant functor $\Hom_{\cat{B}}(LA, \wait)$ followed by $\tau$:
 
-% https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiXFxIb21fe1xcY2F0e0J9KShMQSwgQicpIl0sWzQsMCwiXFxIb21fe1xcY2F0e0J9KShMQSwgQikiXSxbNiwwLCJcXEhvbV97XFxjYXR7Qn0pKExBLCBCJycpIl0sWzIsMiwiXFxIb21fe1xcY2F0e0J9KShBLCBSQicpIl0sWzQsMiwiXFxIb21fe1xcY2F0e0J9KShBLCBSQikiXSxbNiwyLCJcXEhvbV97XFxjYXR7Qn0pKEEsIFJCJycpIl0sWzAsMiwiMCJdLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdLFsxLDQsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFsyLDUsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFszLDYsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFs3LDQsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==
 \begin{tikzcd}
-	0 && {\Hom_{\cat{B})(LA, B')} && {\Hom_{\cat{B})(LA, B)} && {\Hom_{\cat{B})(LA, B'')} \\
+	0 && { \Hom_{\cat{B}} (LA, B') } && { \Hom_{\cat{B}} (LA, B) } && { \Hom_{\cat{B}} (LA, B'')} \\
 	\\
-	0 && {\Hom_{\cat{B})(A, RB')} && {\Hom_{\cat{B})(A, RB)} && {\Hom_{\cat{B})(A, RB'')}
+	0 && {\Hom_{\cat{B}} (A, RB')} && {\Hom_{\cat{B} }(A, RB)} && {\Hom_{\cat{B}} (A, RB'')}
 	\arrow[from=1-1, to=1-3]
 	\arrow[from=1-3, to=1-5]
 	\arrow[from=1-5, to=1-7]
@@ -3642,6 +3654,8 @@ Apply the left-exact covariant functor $\Hom_{\cat{B})(LA, \wait)$ followed by $
 	\arrow["{\tau_{AB}}"{description}, squiggly, from=1-7, to=3-7]
 	\arrow[dashed, from=3-1, to=3-3]
 \end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiXFxIb21fe1xcY2F0e0J9KShMQSwgQicpIl0sWzQsMCwiXFxIb21fe1xcY2F0e0J9KShMQSwgQikiXSxbNiwwLCJcXEhvbV97XFxjYXR7Qn0pKExBLCBCJycpIl0sWzIsMiwiXFxIb21fe1xcY2F0e0J9KShBLCBSQicpIl0sWzQsMiwiXFxIb21fe1xcY2F0e0J9KShBLCBSQikiXSxbNiwyLCJcXEhvbV97XFxjYXR7Qn0pKEEsIFJCJycpIl0sWzAsMiwiMCJdLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdLFsxLDQsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFsyLDUsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFszLDYsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFs3LDQsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
 
 The bottom sequence is exact by naturality of $\tau$.
 Now applying the Yoneda lemma, we obtain an exact sequence
@@ -3655,17 +3669,15 @@ Now applying the Yoneda lemma, we obtain an exact sequence
 .\]
 
 So $R$ is left exact.
-Now $L^\op: \cat{A} \to \cat{B}$ is right adjoint to $R^\op$, so $L^\op$ is left exact and thus $L$ is right exact.
+Now $L\op: \cat{A} \to \cat{B}$ is right adjoint to $R\op$, so $L\op$ is left exact and thus $L$ is right exact.
 :::
 
 ## Tensor Product Functors and Tor
-
 
 :::{.remark}
 Let $R, S \in \Ring$, $B\in \bimod{R}{S}$, $C\in \mods{S}$.
 Then $\Hom_{S}(B, C)\in \modr$ in a natural way: given $f:B\to C$, define $(f\cdot r)(b) = f(rb)$.
 :::
-
 
 :::{.exercise title="?"}
 Check that this is a well-defined morphism of right \(S\dash\)modules.
@@ -3687,16 +3699,14 @@ f(a\tensor b) = g(a)(b) &\mapsfrom g
 Note that the tensor product is a right $S\dash$module, and the hom on the right is a right \(R\dash\)module, so these expressions make sense.
 Here $B$ is fixed, so $A$ and $C$ are variables and this is a statement about bifunctors
 \[
-\wait \tensor_R B: \modr \to \mods\dash S 
+\wait \tensor_R B: \modr \to \modsright{S} 
 ,\]
 which is left adjoint to 
 \[
-\Hom_S(B, \wait): \mods\dash S \to \modr
+\Hom_S(B, \wait): \modsright{S} \to \modr
 .\]
 So the former is a left adjoint and the latter is a right adjoint, so by the theorem, $\wait \tensor_R B$ is right exact.
 :::
-
-\todo[inline]{Fix right module notation}
 
 :::{.remark}
 If $B$ is only a left \(R\dash\)module, we can always take $S = \ZZ$, which makes this into a functor
@@ -3707,14 +3717,16 @@ Since this is a right exact functor from a category with enough injectives, we c
 :::
 
 :::{.definition title="?"}
-Let $B\in \bimod{R}{S}$ and let $T(\wait) \da \wait\tensor_R B: \modr \to \mods\dash S$.
+Let $B\in \bimod{R}{S}$ and let 
+\[
+T(\wait) \da \wait\tensor_R B: \modr \to \modsright{S}
+.\]
 Then define $\Tor_n^R(A, B) \da L_n T(A)$.
 :::
 
 :::{.remark}
 Note that these are easier to work with, since they're covariant in both variables.
 :::
-
 
 
 

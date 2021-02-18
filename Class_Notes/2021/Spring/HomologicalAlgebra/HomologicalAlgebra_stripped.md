@@ -42,7 +42,7 @@ A **complex** is given by
 \[
 \cdots \xrightarrow{d_{i-1}} M_{i-1} \xrightarrow{d_i} M_i \xrightarrow{d_{i+1}}M_{i+1} \to  \cdots
 .\]
-where \( M_i \in {R{\hbox{-}}\mathrm{mod}} \) and \( d_i \circ d_{i-1} = 0 \), which happens if and only if \( \operatorname{im}d_{i-1} \subseteq \ker d_i \). If \( \operatorname{im}d_{i-1} = \ker d_i \), this complex is **exact**.
+where \( M_i \in {R{\hbox{-}}\mathbf{Mod}} \) and \( d_i \circ d_{i-1} = 0 \), which happens if and only if \( \operatorname{im}d_{i-1} \subseteq \ker d_i \). If \( \operatorname{im}d_{i-1} = \ker d_i \), this complex is **exact**.
 :::
 
 ::: {.example title="?"}
@@ -95,7 +95,7 @@ See the appendix for diagrams defining zero objects and the zero map, which we'l
 :::
 
 ::: {.remark}
-In the examples, we had \( \ker d_i \subseteq M_i \), but this need not be true since the objects in the category may not be sets. Such an example is the category of complexes of \( R{\hbox{-}} \)modules: \( \operatorname{Cx}({R{\hbox{-}}\mathrm{mod}}) \). In this setting, kernels will be subcomplexes but not subsets.
+In the examples, we had \( \ker d_i \subseteq M_i \), but this need not be true since the objects in the category may not be sets. Such an example is the category of complexes of \( R{\hbox{-}} \)modules: \( \operatorname{Cx}({R{\hbox{-}}\mathbf{Mod}}) \). In this setting, kernels will be subcomplexes but not subsets.
 :::
 
 ::: {.definition title="Functors"}
@@ -109,7 +109,7 @@ Recall that **functors** are "functions" between categories \( F: \mathcal{C}\to
 :::
 
 ::: {.example title="Hom"}
-\( {\operatorname{Hom}}_R(N, {\,\cdot\,}): {R{\hbox{-}}\mathrm{mod}}\to {\operatorname{Ab}} \), noting that the hom set may not have an \( R{\hbox{-}} \)module structure.
+\( {\operatorname{Hom}}_R(N, {\,\cdot\,}): {R{\hbox{-}}\mathbf{Mod}}\to {\mathbf{Ab}} \), noting that the hom set may not have an \( R{\hbox{-}} \)module structure.
 :::
 
 ::: {.remark}
@@ -121,7 +121,7 @@ Taking cohomology yields the \( i \)th derived functors of \( F \), for example 
 ### Complexes of \( R{\hbox{-}} \)modules {#complexes-of-rhbox-modules}
 
 ::: {.definition title="Exactness"}
-Let \( R \) be a ring with 1 and define \( {R{\hbox{-}}\mathrm{mod}} \) to be the category of *right* \( R{\hbox{-}} \)modules. \( A \xrightarrow{f} B \xrightarrow{g} C \) is **exact** if and only if \( \ker g = \operatorname{im}f \), and in particular \( g\circ f = 0 \).
+Let \( R \) be a ring with 1 and define \( {R{\hbox{-}}\mathbf{Mod}} \) to be the category of *right* \( R{\hbox{-}} \)modules. \( A \xrightarrow{f} B \xrightarrow{g} C \) is **exact** if and only if \( \ker g = \operatorname{im}f \), and in particular \( g\circ f = 0 \).
 :::
 
 ::: {.definition title="Chain Complex"}
@@ -169,7 +169,7 @@ A map \( u: C_{\,\cdot\,}\to D_{\,\cdot\,} \) of chain complexes is a sequence o
 :::
 
 ::: {.remark}
-We can thus define a category \( \mathrm{Ch}({R{\hbox{-}}\mathrm{mod}}) \) where
+We can thus define a category \( \mathrm{Ch}({R{\hbox{-}}\mathbf{Mod}}) \) where
 
 -   The objects are chain complexes,
 -   The morphisms are chain maps.
@@ -185,7 +185,7 @@ and thus induces a well-defined map \( u_{n, *}: H_n(C_{\,\cdot\,}) \to H_n(D_{\
 :::
 
 ::: {.remark}
-Each \( H_n \) thus becomes a functor \( \mathrm{Ch}({R{\hbox{-}}\mathrm{mod}}) \to {R{\hbox{-}}\mathrm{mod}} \) where \( H_n(u) \coloneqq u_{*. n} \).
+Each \( H_n \) thus becomes a functor \( \mathrm{Ch}({R{\hbox{-}}\mathbf{Mod}}) \to {R{\hbox{-}}\mathbf{Mod}} \) where \( H_n(u) \coloneqq u_{*. n} \).
 :::
 
 # Friday, January 15
@@ -217,7 +217,7 @@ Recall that a chain complex is \( C_{\,\cdot\,} \) where \( d^2 = 0 \), and a ma
 ```
 > [Link to diagram](https://q.uiver.app/?q=WzAsMTEsWzEsMCwiQ197bi0xfSJdLFsyLDAsIkNfe259Il0sWzMsMCwiQ197bisxfSJdLFsyLDIsIkRfbiJdLFszLDIsIkRfe24rMX0iXSxbMSwyLCJEX3tuLTF9Il0sWzQsMCwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFswLDIsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbMiwxXSxbMCw1LCJ1Il0sWzEsMywidV9uIl0sWzIsNCwidSJdLFswLDFdLFsxLDIsImRfbiJdLFs1LDNdLFszLDQsImRfbiIsMl0sWzIsNl0sWzQsN10sWzgsNV0sWzksMF1d)
 
-Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\mathrm{mod}}) \to {R{\hbox{-}}\mathrm{mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
+Recall that \( u_n: Z_n(C) \to Z_n(D) \) and \( u_n: B_n(C) \to B_n(D) \) preserves these submodules, so there are induced maps \( u_{{\,\cdot\,}, n}: H_n(D) \to H_n(D) \) where \( H_n(C) \coloneqq Z_n(C) / B_nn-1(C) \). Moreover, taking \( H_n({\,\cdot\,}) \) is a functor from \( \operatorname{Ch}({R{\hbox{-}}\mathbf{Mod}}) \to {R{\hbox{-}}\mathbf{Mod}} \) for any fixed \( n \) and on objects \( C\mapsto H_n(C) \) and chain maps \( u_{n} \to H_n(u) \coloneqq u_{*, n} \). Note the lower indices denote maps going down in degree.
 :::
 
 ## Cohomology
@@ -267,7 +267,7 @@ See the book for classical applications:
 ## Operations on Chain Complexes
 
 ::: {.remark}
-Write \( \operatorname{Ch} \) for \( \operatorname{Ch}({R{\hbox{-}}\mathrm{mod}}) \), then if \( f,g: C\to D \) are chain maps then \( f+g:C\to D \) can be defined as \( (f+g)(x) = f(x) + g(x) \), since \( D \) has an addition coming from its \( R{\hbox{-}} \)module structure. Thus the hom sets \( {\operatorname{Hom}}_{\operatorname{Ch}}(C, D) \) becomes an abelian group. There is a distinguished **zero object**[^1] \( 0 \), defined as the chain complex with all zero objects and all zero maps. Note that we also have a zero map given by the composition \( (C \to 0) \circ (0\to D) \).
+Write \( \operatorname{Ch} \) for \( \operatorname{Ch}({R{\hbox{-}}\mathbf{Mod}}) \), then if \( f,g: C\to D \) are chain maps then \( f+g:C\to D \) can be defined as \( (f+g)(x) = f(x) + g(x) \), since \( D \) has an addition coming from its \( R{\hbox{-}} \)module structure. Thus the hom sets \( {\operatorname{Hom}}_{\operatorname{Ch}}(C, D) \) becomes an abelian group. There is a distinguished **zero object**[^1] \( 0 \), defined as the chain complex with all zero objects and all zero maps. Note that we also have a zero map given by the composition \( (C \to 0) \circ (0\to D) \).
 :::
 
 ::: {.definition title="Products and Coproducts"}
@@ -290,7 +290,7 @@ These structures make \( \operatorname{Ch} \) into an **additive category**. See
 ::: {.definition title="Subcomplexes"}
 We say \( B \) is a **subcomplex** of \( C \) if and only if
 
--   \( B_n \leq C_n \in {R{\hbox{-}}\mathrm{mod}} \) for all \( n \),
+-   \( B_n \leq C_n \in {R{\hbox{-}}\mathbf{Mod}} \) for all \( n \),
 -   The differentials of \( B_n \) are the restrictions of the differentials of \( C_n \).
 :::
 
@@ -394,7 +394,7 @@ Consider a double complex:
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMjMsWzQsMywiQ197cC0xLCBxKzF9Il0sWzYsMywiQ197cCwgcSsxfSJdLFs4LDMsIkNfe3ArMSwgcSsxfSJdLFs0LDUsIkNfe3AtMSwgcX0iXSxbNiw1LCJDX3twLCBxfSJdLFs4LDUsIkNfe3ArMSwgcX0iXSxbNCw3LCJDX3twLTEsIHErMX0iXSxbNiw3LCJDX3twLCBxKzF9Il0sWzgsNywiQ197cCsxLCBxKzF9Il0sWzYsMSwiXFx2ZG90cyJdLFsyLDUsIlxcY2RvdHMiXSxbNCw5LCJcXHZkb3RzIl0sWzYsOSwiXFx2ZG90cyJdLFs4LDksIlxcdmRvdHMiXSxbMCw1LCJDX3tcXGNkb3QsIHF9OiJdLFsyLDcsIlxcY2RvdHMiXSxbMTAsNywiXFxjZG90cyJdLFsxMCw1LCJcXGNkb3RzIl0sWzEwLDMsIlxcY2RvdHMiXSxbMiwzLCJcXGNkb3RzIl0sWzYsMCwiQ197cCwgXFxjZG90fToiXSxbNCwxLCJcXHZkb3RzIl0sWzgsMSwiXFx2ZG90cyJdLFs0LDMsImRfe3AsIHF9XmgiXSxbNCw3LCJkX3twLCBxfV52Il0sWzEsNCwiZF97cCwgcSsxfV52Il0sWzIsNSwiZF97cCsxLCBxKzF9XnYiXSxbNSw4LCJkX3twKzEsIHF9XnYiXSxbMyw2LCJkX3twLTEsIHF9XnYiXSxbMCwzLCJkX3twLTEsIHErMX1ediJdLFs2LDExXSxbNywxMl0sWzgsMTNdLFs4LDcsImRfe3ArMSwgcSsxfV5oIl0sWzUsNCwiZF97cCsxLCBxfV5oIl0sWzcsNiwiZF97cCwgcSsxfV5oIl0sWzIsMSwiZF97cCsxLCBxKzF9XmgiLDFdLFsxLDAsImRfe3AsIHErMX1eaCIsMV0sWzIxLDBdLFs5LDFdLFsyMiwyXSxbMCwxOV0sWzMsMTBdLFs2LDE1XSxbMTYsOF0sWzE3LDVdLFsxOCwyXV0=)
 
-All of the individual rows and columns are chain complexes, where \( (d^h)^2 = 0 \) and \( (d^v)^2 = 0 \), and the square anticommute: \( d^v d^h + d^h d^v - 0 \), so \( d^v d^h = -d^h d^v \). This is almost a chain complex of chain complexes, i.e. an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathrm{mod}})) \). It's useful here to consider lines parallel to the line \( y=x \).
+All of the individual rows and columns are chain complexes, where \( (d^h)^2 = 0 \) and \( (d^v)^2 = 0 \), and the square anticommute: \( d^v d^h + d^h d^v - 0 \), so \( d^v d^h = -d^h d^v \). This is almost a chain complex of chain complexes, i.e. an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathbf{Mod}})) \). It's useful here to consider lines parallel to the line \( y=x \).
 :::
 
 ::: {.definition title="Bounded Complexes"}
@@ -428,7 +428,7 @@ This yields a new double complex where the signs of each column alternate:
     \arrow["{d^h}"{description}, from=3-3, to=3-1]
 \end{tikzcd}
 ```
-Now the squares commute and \( f_{{\,\cdot\,}, q} \) are chain maps, so this object is an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathrm{mod}}) \).
+Now the squares commute and \( f_{{\,\cdot\,}, q} \) are chain maps, so this object is an element of \( \operatorname{Ch}(\operatorname{Ch}{R{\hbox{-}}\mathbf{Mod}}) \).
 :::
 
 ### Total Complexes
@@ -720,7 +720,7 @@ Show exactness at the remaining places -- the most interesting place is at \( \o
 :::
 
 ::: {.remark}
-We assumed that \( \mathcal{A}= {R{\hbox{-}}\mathrm{mod}} \) here, so we could chase elements, but this happens to also be true in any abelian category \( \mathcal{A} \) but by a different proof. The idea is to embed \( \mathcal{A} \to {R{\hbox{-}}\mathrm{mod}} \) for some ring \( R \), do the construction there, and pull the results back -- but this doesn't quite work! \( \mathcal{A} \) can be too big. Instead, do this for the smallest subcategory \( \mathcal{A}_0 \) containing all of the modules and maps involved in the snake lemma. Then \( \mathcal{A}_0 \) is small enough to embed into \( {R{\hbox{-}}\mathrm{mod}} \) by the **Freyd-Mitchell Embedding Theorem**.
+We assumed that \( \mathcal{A}= {R{\hbox{-}}\mathbf{Mod}} \) here, so we could chase elements, but this happens to also be true in any abelian category \( \mathcal{A} \) but by a different proof. The idea is to embed \( \mathcal{A} \to {R{\hbox{-}}\mathbf{Mod}} \) for some ring \( R \), do the construction there, and pull the results back -- but this doesn't quite work! \( \mathcal{A} \) can be too big. Instead, do this for the smallest subcategory \( \mathcal{A}_0 \) containing all of the modules and maps involved in the snake lemma. Then \( \mathcal{A}_0 \) is small enough to embed into \( {R{\hbox{-}}\mathbf{Mod}} \) by the **Freyd-Mitchell Embedding Theorem**.
 :::
 
 # Lecture 5 (Monday, January 25)
@@ -1162,7 +1162,7 @@ So we can convert statements about quasi-isomorphisms of complexes into exactnes
 ## Ch. 2: Derived Functors
 
 ::: {.remark}
-Setup: fix \( M\in {R{\hbox{-}}\mathrm{mod}} \), where \( R \) is a ring with unit. Note that by an upcoming exercise, \( {\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is a *left-exact* functor, but not in general right-exact: given a SES \( 0\to A\to B\to C\to 0 \in \operatorname{Ch}({\mathrm{mod}{\hbox{-}}R}) \), there is an exact sequence:
+Setup: fix \( M\in {R{\hbox{-}}\mathbf{Mod}} \), where \( R \) is a ring with unit. Note that by an upcoming exercise, \( {\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \) is a *left-exact* functor, but not in general right-exact: given a SES \( 0\to A\to B\to C\to 0 \in \operatorname{Ch}({\mathbf{Mod}{\hbox{-}}R}) \), there is an exact sequence:
 
 ```{=tex}
 \begin{tikzcd}
@@ -1270,7 +1270,7 @@ Similarly, if \( F \) is *right-exact* instead, there are left-derived functors 
 ## 2.2: Projective Resolutions
 
 ::: {.definition title="Projective Modules"}
-Let \( \mathcal{A} = {R{\hbox{-}}\mathrm{mod}} \), then \( P \in {R{\hbox{-}}\mathrm{mod}} \) satisfies the following universal property:
+Let \( \mathcal{A} = {R{\hbox{-}}\mathbf{Mod}} \), then \( P \in {R{\hbox{-}}\mathbf{Mod}} \) satisfies the following universal property:
 
 ```{=tex}
 \begin{tikzcd}
@@ -1314,7 +1314,7 @@ This follows from the universal property of free modules:
     &&&& {\exists F(X)} \\
     \\
     \\
-    X &&&& M & {\in {R{\hbox{-}}\mathrm{mod}}}
+    X &&&& M & {\in {R{\hbox{-}}\mathbf{Mod}}}
     \arrow["{f\in {\operatorname{Hom}}_{\operatorname{Set}}(X, M)}", from=4-1, to=4-5]
     \arrow["{\exists g\in {\operatorname{Hom}}_{\operatorname{Set}}(X, F(X))}", from=4-1, to=1-5]
     \arrow["{\exists ! f' \in {\operatorname{Hom}}_R(F(X), X)}", dashed, from=1-5, to=4-5]
@@ -1381,7 +1381,7 @@ Let \( F \) be a field, define the ring \( R \coloneqq\operatorname{Mat}(n \time
 :::
 
 ::: {.example title="?"}
-How many projective modules are there in a given category? Let \( \mathcal{C}\coloneqq{\operatorname{Ab}}^{\operatorname{fin}} \) be the category of *finite* abelian groups, where we take the full subcategory of the category of all abelian groups. This is an abelian category, although it is not closed under *infinite* direct sums or products, which has no projective objects.
+How many projective modules are there in a given category? Let \( \mathcal{C}\coloneqq{\mathbf{Ab}}^{\operatorname{fin}} \) be the category of *finite* abelian groups, where we take the full subcategory of the category of all abelian groups. This is an abelian category, although it is not closed under *infinite* direct sums or products, which has no projective objects.
 
 ::: {.proof title="?"}
 Over a PID, every submodule of a free module is free, and so we have free \( \iff \) projective in this case. So equivalently, we can show there are no free \( {\mathbb{Z}}{\hbox{-}} \)modules, which is true because \( {\mathbb{Z}} \) is infinite, and any such module would have to contain a copy of \( {\mathbb{Z}} \).
@@ -1412,7 +1412,7 @@ If \( \mathcal{A} \) is an abelian category, then \( \mathcal{A} \) has **enough
 :::
 
 ::: {.example title="?"}
-\( {\mathrm{mod}{\hbox{-}}R} \) has enough projectives: for all \( A \in {\mathrm{mod}{\hbox{-}}R} \), one can take \( F(A) \twoheadrightarrow A \).
+\( {\mathbf{Mod}{\hbox{-}}R} \) has enough projectives: for all \( A \in {\mathbf{Mod}{\hbox{-}}R} \), one can take \( F(A) \twoheadrightarrow A \).
 :::
 
 ::: {.example title="?"}
@@ -1432,7 +1432,7 @@ Prove this!
 :::
 
 ::: {.definition title="(Key)"}
-Let \( M\in {\mathrm{mod}{\hbox{-}}R} \), then a **projective resolution** of \( M \) is an exact complex
+Let \( M\in {\mathbf{Mod}{\hbox{-}}R} \), then a **projective resolution** of \( M \) is an exact complex
 \[
 \cdots
     \xrightarrow{d_2} 
@@ -1446,7 +1446,7 @@ We write \( P_{\,\cdot\,}\overset{\epsilon}{\twoheadrightarrow} M \).
 :::
 
 ::: {.lemma title="(Key)"}
-Every object \( M\in {\mathrm{mod}{\hbox{-}}R} \) has a projective resolution. This is true in any abelian category with enough projectives.
+Every object \( M\in {\mathbf{Mod}{\hbox{-}}R} \) has a projective resolution. This is true in any abelian category with enough projectives.
 :::
 
 ::: {.proof title="?"}
@@ -1864,7 +1864,7 @@ Use the universal property of direct products.
 ## Baer's Criterion
 
 ::: {.proposition title="Baer's Criterion"}
-An object \( E \in {R{\hbox{-}}\mathrm{mod}} \) is injective if and only if for every right ideal \( J {~\trianglelefteq~}R \), every map \( J\to E \) extends to a map \( R\to E \). Note that \( J \) is a right \( R{\hbox{-}} \)submodule.
+An object \( E \in {R{\hbox{-}}\mathbf{Mod}} \) is injective if and only if for every right ideal \( J {~\trianglelefteq~}R \), every map \( J\to E \) extends to a map \( R\to E \). Note that \( J \) is a right \( R{\hbox{-}} \)submodule.
 :::
 
 ::: {.proof title="?"}
@@ -1960,11 +1960,12 @@ Over a PID, divisible is equivalent (?) to injective as a module.
 :::
 
 ::: {.example title="?"}
-Let \( p\in {\mathbb{Z}} \) be prime, then \( {\mathbb{Z}}[{1\over p}] \subseteq {\mathbb{Q}} \) has elements of the form \( \sum {a_i \over p^{n_i} \), and is not divisible. On the other hand, \( {\mathbb{Z}}_{p^ \infty }\coloneqq{\mathbb{Z}}[{1\over p}]/{\mathbb{Z}}\rightleftharpoons{\mathbb{Z}}[{1\over p}] \cap[0, 1) \) is divisible since \( p^n \qty{ a\over p^n } = a \in {\mathbb{Z}} \), which equals zero in \( {\mathbb{Z}}_{p^{\infty }} \). To solve \( xr = a/p^n \) with \( r,a \in {\mathbb{Z}} \) and \( r\neq 0 \), first assume \( \gcd(r, p) = 1 \) by just dividing through by any common powers of \( p \). This amounts to solving \( 1 = sr tp^n \) where \( s, t\in {\mathbb{Z}} \):
+Let \( p\in {\mathbb{Z}} \) be prime, then \( {\mathbb{Z}}[{1\over p}] \subseteq {\mathbb{Q}} \) has elements of the form \( \sum {a_i \over p^{n_i} } \), and is not divisible. On the other hand, \( {\mathbb{Z}}_{p^ \infty }\coloneqq{\mathbb{Z}}[{1\over p}]/{\mathbb{Z}}\rightleftharpoons{\mathbb{Z}}[{1\over p}] \cap[0, 1) \) is divisible since \( p^n \qty{ a\over p^n } = a \in {\mathbb{Z}} \), which equals zero in \( {\mathbb{Z}}_{p^{\infty }} \). To solve \( xr = a/p^n \) with \( r,a \in {\mathbb{Z}} \) and \( r\neq 0 \), first assume \( \gcd(r, p) = 1 \) by just dividing through by any common powers of \( p \). This amounts to solving \( 1 = sr tp^n \) where \( s, t\in {\mathbb{Z}} \):
 \[
-{a\over p^n} = sr \qty{a \over p^n} + tp^n\qty{a \over p^n} \\
-= \qty{ sa \over p^n} r \\
-\coloneqq xr \in {\mathbb{Z}}_{p^{\infty }}
+{a\over p^n} 
+&= sr \qty{a \over p^n} + tp^n\qty{a \over p^n} \\
+&= \qty{ sa \over p^n} r \\
+&\coloneqq xr \in {\mathbb{Z}}_{p^{\infty }}
 .\]
 :::
 
@@ -1977,11 +1978,11 @@ Every injective abelian group is isomorphic to a direct sum of copies of \( {\ma
 :::
 
 ::: {.exercise title="2.3.2"}
-\( {\operatorname{Ab}}= {{{\mathbb{Z}}}{\hbox{-}}\operatorname{mod}} \) has enough injectives.
+\( {\mathbf{Ab}}= {{{\mathbb{Z}}}{\hbox{-}}\mathbf{Mod}} \) has enough injectives.
 :::
 
 ::: {.remark}
-As a consequence, \( {\mathrm{mod}{\hbox{-}}R} \) has enough injectives for *any* ring \( R \).
+As a consequence, \( {\mathbf{Mod}{\hbox{-}}R} \) has enough injectives for *any* ring \( R \).
 :::
 
 ## Transferring Injectives Between Categories
@@ -1989,55 +1990,57 @@ As a consequence, \( {\mathrm{mod}{\hbox{-}}R} \) has enough injectives for *any
 Next we'll use our background in projectives to deduce analogous facts for injectives.
 
 ::: {.definition title="Opposite Category"}
-Let \( \mathcal{A} \) be any category, then there is an opposite/dual category \( \mathcal{A}^^{\operatorname{op}} \) defined in the following way:
+Let \( \mathcal{A} \) be any category, then there is an opposite/dual category \( \mathcal{A}^{\operatorname{op}} \) defined in the following way:
 
--   \( {\operatorname{Ob}}(\mathcal{A}^^{\operatorname{op}}) = {\operatorname{Ob}}(\mathcal{A}) \)
--   \( A\to B\in \operatorname{Mor}(\mathcal{A}) \implies B\to A \in \operatorname{Mor}(\mathcal{A}^^{\operatorname{op}} \), so
+-   \( {\operatorname{Ob}}(\mathcal{A}^{\operatorname{op}}) = {\operatorname{Ob}}(\mathcal{A}) \)
+-   \( A\to B\in \operatorname{Mor}(\mathcal{A}) \implies B\to A \in \operatorname{Mor}(\mathcal{A}^{\operatorname{op}} \), so
     \[
-    {\operatorname{Hom}}_{\mathcal{A}}(A, B) \cong {\operatorname{Hom}}_{ \mathcal{A}^^{\operatorname{op}}}(B, A) 
-    f &\rightleftharpoons f^^{\operatorname{op}}
+    {\operatorname{Hom}}_{\mathcal{A}}(A, B) \cong {\operatorname{Hom}}_{ \mathcal{A}^{\operatorname{op}}}(B, A) 
+    f &\rightleftharpoons f^{\operatorname{op}}
     .\]
--   We require that if \( A \xrightarrow{f} B \xrightarrow{g} C \) in \( \mathcal{A} \), then \( f^^{\operatorname{op}}\circ g^^{\operatorname{op}}= (g\circ f)^^{\operatorname{op}} \) where \( C \xrightarrow{g^^{\operatorname{op}}} B \xrightarrow{f^^{\operatorname{op}}} A \).
--   \( \one_{A}^^{\operatorname{op}}= \one_{A} \) in \( \mathcal{A}^^{\operatorname{op}} \).
+-   We require that if \( A \xrightarrow{f} B \xrightarrow{g} C \) in \( \mathcal{A} \), then \( f^{\operatorname{op}}\circ g^{\operatorname{op}}= (g\circ f)^{\operatorname{op}} \) where \( C \xrightarrow{g^{\operatorname{op}}} B \xrightarrow{f^{\operatorname{op}}} A \).
+-   \( \one_{A}^{\operatorname{op}}= \one_{A} \) in \( \mathcal{A}^{\operatorname{op}} \).
 :::
 
 ::: {.warnings}
-Thinking of these as functions won't quite work! For \( f:A\to B \), there may not be any map \( B\to A \) -- you'd need it to be onto to even define such a thing, and if it's not injective there are many choices. Note that initials and terminals are swapped, and since \( 0 \) is both. Counterintuitively, \( A \to 0 \to B \) is \( 0 \), which maps to \( B \to 0 \to A = 0^^{\operatorname{op}} \).
+Thinking of these as functions won't quite work! For \( f:A\to B \), there may not be any map \( B\to A \) -- you'd need it to be onto to even define such a thing, and if it's not injective there are many choices. Note that initials and terminals are swapped, and since \( 0 \) is both. Counterintuitively, \( A \to 0 \to B \) is \( 0 \), which maps to \( B \to 0 \to A = 0^{\operatorname{op}} \).
 :::
 
 ::: {.remark}
-Note that \( ({\,\cdot\,})^^{\operatorname{op}} \) switches
+Note that \( ({\,\cdot\,})^{\operatorname{op}} \) switches
 
 -   Monics and epis,
 -   Initial and terminal objects,
 -   Kernels and cokernels.
 
-Moreover, \( \mathcal{A} \) is abelian if and only if \( \mathcal{A}^^{\operatorname{op}} \) is abelian.
+Moreover, \( \mathcal{A} \) is abelian if and only if \( \mathcal{A}^{\operatorname{op}} \) is abelian.
 :::
 
 ::: {.definition title="Contravariant Functors"}
-A **contravariant functor** \( F: \mathcal{C}\to \mathcal{D} \) is a *covariant* functor \( \mathcal{C}^^{\operatorname{op}}\to \mathcal{D} \).
+A **contravariant functor** \( F: \mathcal{C}\to \mathcal{D} \) is a *covariant* functor \( \mathcal{C}^{\operatorname{op}}\to \mathcal{D} \).
 
 ```{=tex}
 \begin{tikzcd}
     {C_1} && {C_2} && {C_2} && {C_1} && {FC_2} && {FC_1} \\
-    && {\mathcal{C}} && {\mathcal{C}^^{\operatorname{op}}} && {\mathcal{C}^^{\operatorname{op}}} && {\mathcal{D}}
+    && {\mathcal{C}} && {\mathcal{C}^{\operatorname{op}}} && {\mathcal{C}^{\operatorname{op}}} && {\mathcal{D}}
     \arrow["f", from=1-1, to=1-3]
-    \arrow["{f^^{\operatorname{op}}}", from=1-5, to=1-7]
+    \arrow["{f^{\operatorname{op}}}", from=1-5, to=1-7]
     \arrow["{F(f)}", from=1-9, to=1-11]
     \arrow[squiggly, from=2-3, to=2-5]
     \arrow[squiggly, from=2-7, to=2-9]
 \end{tikzcd}
 ```
 In particular, \( F(\one) = \one \) and \( F(gf) = F(f) F(g) \)
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzIsMCwiQ18yIl0sWzAsMCwiQ18xIl0sWzQsMCwiQ18yIl0sWzYsMCwiQ18xIl0sWzgsMCwiRkNfMiJdLFsxMCwwLCJGQ18xIl0sWzIsMSwiXFxtYXRoY2Fse0N9Il0sWzQsMSwiXFxtYXRoY2Fse0N9Xlxcb3AiXSxbNiwxLCJcXG1hdGhjYWx7Q31eXFxvcCJdLFs4LDEsIlxcbWF0aGNhbHtEfSJdLFsxLDAsImYiXSxbMiwzLCJmXlxcb3AiXSxbNCw1LCJGKGYpIl0sWzYsNywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XSxbOCw5LCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dXQ==)
 :::
 
 ::: {.example title="?"}
-\( {\operatorname{Hom}}_R({\,\cdot\,}, A): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is a contravariant functor in the first slot.
+\( {\operatorname{Hom}}_R({\,\cdot\,}, A): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \) is a contravariant functor in the first slot.
 :::
 
 ::: {.definition title="Left-Exact Functors"}
-A contravariant functor \( F: \mathcal{A} \to \mathcal{B} \) between abelian categories is **left exact** if and only if the corresponding covariant functor \( F: \mathcal{A}^^{\operatorname{op}}\to \mathcal{B} \): That is, SESs in \( \mathcal{A} \) get mapped to long left-exact sequences in \( \mathcal{B} \) :
+A contravariant functor \( F: \mathcal{A} \to \mathcal{B} \) between abelian categories is **left exact** if and only if the corresponding covariant functor \( F: \mathcal{A}^{\operatorname{op}}\to \mathcal{B} \): That is, SESs in \( \mathcal{A} \) get mapped to long left-exact sequences in \( \mathcal{B} \) :
 
 ```{=tex}
 \begin{tikzcd}
@@ -2061,7 +2064,7 @@ A contravariant functor \( F: \mathcal{A} \to \mathcal{B} \) between abelian cat
 If \( \mathcal{A} \) is abelian and \( A \in \mathcal{A} \), then the following are equivalent:
 
 -   \( A \) is injective in \( \mathcal{A} \).
--   \( A \) is projective in \( \mathcal{A}^^{\operatorname{op}} \).
+-   \( A \) is projective in \( \mathcal{A}^{\operatorname{op}} \).
 -   The contravariant functor \( {\operatorname{Hom}}_{\mathcal{A}}({\,\cdot\,}, A) \) is exact.
 :::
 
@@ -2073,10 +2076,10 @@ If an abelian category \( \mathcal{A} \) has enough injectives, then every \( M\
 which is an exact cochain complex with each \( I^n \) injective. There is a version of the comparison lemma that is proved in roughly the same way as for projective resolutions.
 :::
 
-Next up: how to transport injective resolutions in \( {{{\mathbb{Z}}}{\hbox{-}}\operatorname{mod}} \) to \( {R{\hbox{-}}\mathrm{mod}} \).
+Next up: how to transport injective resolutions in \( {{{\mathbb{Z}}}{\hbox{-}}\mathbf{Mod}} \) to \( {R{\hbox{-}}\mathbf{Mod}} \).
 
 ::: {.observation}
-If \( A\in {\operatorname{Ab}} \) and \( N \in {R{\hbox{-}}\mathrm{mod}} \) then \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(N, A) \in {\mathrm{mod}{\hbox{-}}R} \) in the following way: taking \( f: N\to A \) and \( r\in R \), define a right action \( (f\cdot r)(n) \coloneqq f(rn) \).
+If \( A\in {\mathbf{Ab}} \) and \( N \in {R{\hbox{-}}\mathbf{Mod}} \) then \( {\operatorname{Hom}}_{{\mathbf{Ab}}}(N, A) \in {\mathbf{Mod}{\hbox{-}}R} \) in the following way: taking \( f: N\to A \) and \( r\in R \), define a right action \( (f\cdot r)(n) \coloneqq f(rn) \).
 :::
 
 ::: {.exercise title="?"}
@@ -2084,9 +2087,9 @@ Check that this is a morphism of abelian groups, that this yields a module struc
 :::
 
 ::: {.lemma title="?"}
-If \( M \in {\mathrm{mod}{\hbox{-}}R} \), then the following natural map \( \tau \) is an isomorphism of abelian groups for each \( A\in {\operatorname{Ab}} \):
+If \( M \in {\mathbf{Mod}{\hbox{-}}R} \), then the following natural map \( \tau \) is an isomorphism of abelian groups for each \( A\in {\mathbf{Ab}} \):
 \[
-\tau: {\operatorname{Hom}}_{{\operatorname{Ab}}}(?(M), A) \to {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, A)) \\
+\tau: {\operatorname{Hom}}_{{\mathbf{Ab}}}(?(M), A) &\to {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{{\mathbf{Ab}}}(R, A)) \\
 f &\mapsto \tau(f)(m)(r) \coloneqq f(mr)
 ,\]
 where \( m\in M \) and \( r\in R \). Note that \( R \) is a left \( R{\hbox{-}} \)module, so the hom in the RHS is a right \( R{\hbox{-}} \)module and the hom makes sense.
@@ -2112,7 +2115,7 @@ Conversely,
 \tau(\mu(g))(m)(r)
 &= (\mu g)( mr) \\
 &= g(mr)(1) \\
-&= g(m\cdot r) && \text{since $g$ is a ${\mathrm{mod}{\hbox{-}}R}$ morphism} \\
+&= g(m\cdot r) && \text{since } g \in \operatorname{Mor}_{{R{\hbox{-}}\mathbf{Mod}}} \\
 &= g(m)(r\cdot 1) && \text{by observation earlier} \\ 
 &= g(m)(r)
 .\]
@@ -2127,11 +2130,11 @@ The \( ? \) functor in the lemma will be the forgetful functor applied to \( M \
 ## Transporting Injectives
 
 ::: {.remark}
-Last time: we had a lemma that for any \( M\in {\mathrm{mod}{\hbox{-}}R} \) and \( A\in {\operatorname{Ab}} \) there is an isomorphism
+Last time: we had a lemma that for any \( M\in {\mathbf{Mod}{\hbox{-}}R} \) and \( A\in {\mathbf{Ab}} \) there is an isomorphism
 \[
-{\operatorname{Hom}}_{{\operatorname{Ab}}}( F(M), A) \cong {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{\operatorname{Ab}}(R, A) )
+{\operatorname{Hom}}_{{\mathbf{Ab}}}( F(M), A) \cong {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{\mathbf{Ab}}(R, A) )
 ,\]
-where \( F: {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is the forgetful functor.
+where \( F: {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \) is the forgetful functor.
 :::
 
 ::: {.definition title="Adjoin"}
@@ -2161,7 +2164,7 @@ In this case we say \( L \) is **left adjoint** to \( R \) and \( R \) is **righ
 :::
 
 ::: {.remark}
-The lemma thus says that \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, {\,\cdot\,}): {\operatorname{Ab}}\to {\mathrm{mod}{\hbox{-}}R} \) (using that \( R\in {R{\hbox{-}}\mathrm{mod}} \) is a left \( R{\hbox{-}} \)module) is right adjoint to the forgetful functor \( {\mathrm{mod}{\hbox{-}}R}\to\ Ab \).
+The lemma thus says that \( {\operatorname{Hom}}_{{\mathbf{Ab}}}(R, {\,\cdot\,}): {\mathbf{Ab}}\to {\mathbf{Mod}{\hbox{-}}R} \) (using that \( R\in {R{\hbox{-}}\mathbf{Mod}} \) is a left \( R{\hbox{-}} \)module) is right adjoint to the forgetful functor \( {\mathbf{Mod}{\hbox{-}}R}\to\ Ab \).
 :::
 
 ::: {.remark}
@@ -2173,15 +2176,15 @@ If \( R: \mathcal{B} \to \mathcal{A} \) is an additive functor and right adjoint
 :::
 
 ::: {.corollary title="?"}
-If \( I\in {\operatorname{Ab}} \) is injective, then \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, I) \in {\mathrm{mod}{\hbox{-}}R} \) is injective.
+If \( I\in {\mathbf{Ab}} \) is injective, then \( {\operatorname{Hom}}_{{\mathbf{Ab}}}(R, I) \in {\mathbf{Mod}{\hbox{-}}R} \) is injective.
 :::
 
 ::: {.proof title="?"}
-This follows from the previous lemma: \( {\operatorname{Hom}}_{{\operatorname{Ab}}}(R, {\,\cdot\,}) \) is right adjoint to the forgetful functor \( {R{\hbox{-}}\mathrm{mod}}\to{\operatorname{Ab}} \) which is certainly exact. This follows from the fact that kernels and images don't change, since these are given in terms of set maps and equalities of sets.
+This follows from the previous lemma: \( {\operatorname{Hom}}_{{\mathbf{Ab}}}(R, {\,\cdot\,}) \) is right adjoint to the forgetful functor \( {R{\hbox{-}}\mathbf{Mod}}\to{\mathbf{Ab}} \) which is certainly exact. This follows from the fact that kernels and images don't change, since these are given in terms of set maps and equalities of sets.
 :::
 
 ::: {.exercise title="2.3.5, 2.3.2"}
-Show that \( {\mathrm{mod}{\hbox{-}}R} \) has enough injectives, using that \( {\operatorname{Ab}} \) has enough injectives.
+Show that \( {\mathbf{Mod}{\hbox{-}}R} \) has enough injectives, using that \( {\mathbf{Ab}} \) has enough injectives.
 :::
 
 ::: {.proof title="of proposition"}
@@ -2214,7 +2217,7 @@ Applying \( \tau \) yields
 ## 2.4: Left Derived Functors
 
 ::: {.remark}
-Goal: define left derived functors of a right exact functor \( F \), with applications the bifunctor \( {\,\cdot\,}\otimes_R {\,\cdot\,} \), which is right exact and covariant in each variable. We're ultimately interested in Hom functors and Ext, but this is slightly more technical since it's covariant in one slot and contravariant in the other, so focusing on this functor makes the theory slightly easier to develop. This can be fixed by switching \( \mathcal{C} \) with \( \mathcal{C}^^{\operatorname{op}} \) once in a while. Everything for left derived functors will have a dual for right derived functors.
+Goal: define left derived functors of a right exact functor \( F \), with applications the bifunctor \( {\,\cdot\,}\otimes_R {\,\cdot\,} \), which is right exact and covariant in each variable. We're ultimately interested in Hom functors and Ext, but this is slightly more technical since it's covariant in one slot and contravariant in the other, so focusing on this functor makes the theory slightly easier to develop. This can be fixed by switching \( \mathcal{C} \) with \( \mathcal{C}^{\operatorname{op}} \) once in a while. Everything for left derived functors will have a dual for right derived functors.
 :::
 
 ::: {.remark}
@@ -2307,7 +2310,11 @@ We can set up the following situation
 
 Here \( f \) exists by the comparison theorem, and thus there are induced maps \( f_*: H_*(FP) \to H_*(FQ) \) by abuse of notation -- really, this is more like \( (f_*)_i = H_u (Ff) \). We're using that both \( F \) and \( H_i \) are both additive functors. Note that the lift \( f \) of \( \one_A \) is not unique, but any other lift is chain homotopic to \( f \), i.e. \( f-f' = ds + sd \) where \( s: P \to Q[1] \). So they induce the same maps on homology, i.e. \( f_*' = f_* \). Thus the isomorphism is canonical in the sense that it doesn't depend on the choice of lift.
 
-Similarly there exists a \( g:Q\to P \) lifting \( \one_A \), and so \( gf \) and \( \one_P \) are both chain maps lifting \( \one_A \), since it's the composition of two maps lifting \( \one_A \). So they induce the same map on homology by the same reasoning above. We can write \( g_* f_* = (gf)_* = (\one_{FP))_* = \one_{H_*(FP)} \), and similarly \( f_* g_* = \one_{H_*(FQ)} \), making \( f_* \) an isomorphism.
+Similarly there exists a \( g:Q\to P \) lifting \( \one_A \), and so \( gf \) and \( \one_P \) are both chain maps lifting \( \one_A \), since it's the composition of two maps lifting \( \one_A \). So they induce the same map on homology by the same reasoning above. We can write
+\[
+g_* f_* = (gf)_* = (\one_{FP})_* = \one_{H_*(FP)}
+,\]
+and similarly \( f_* g_* = \one_{H_*(FQ)} \), making \( f_* \) an isomorphism.
 :::
 
 ::: {.corollary title="?"}
@@ -2389,16 +2396,16 @@ there are natural connecting maps \( \delta \) yielding a LES
     {L_{i-1}F(A')} && \cdots && \cdots \\
     \\
     {FA'} && FA && {FA''} && 0
-    \arrow["{\delta_i}"', from=3-5, to=5-1]
+    \arrow["{\delta_i}"', from=3-5, to=5-1, out=0, in=180]
     \arrow[from=3-1, to=3-3]
     \arrow[from=3-3, to=3-5]
-    \arrow["{\delta_{i+1}}"', from=1-5, to=3-1]
+    \arrow["{\delta_{i+1}}"', from=1-5, to=3-1, out=0, in=180]
     \arrow[dashed, from=5-1, to=5-3]
     \arrow[from=7-1, to=7-3]
     \arrow[from=7-3, to=7-5]
     \arrow[from=7-5, to=7-7]
     \arrow[dashed, from=5-3, to=5-5]
-    \arrow["{\delta_1}"', from=5-5, to=7-1]
+    \arrow["{\delta_1}"', from=5-5, to=7-1, out=0, in=180]
 \end{tikzcd}
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzAsMiwiTF9pRihBJykiXSxbMiwyLCJMX2lGKEEpIl0sWzQsMiwiTF9pRihBJycpIl0sWzAsNCwiTF97aS0xfUYoQScpIl0sWzQsMCwiXFxjZG90cyJdLFsyLDQsIlxcY2RvdHMiXSxbMCw2LCJGQSciXSxbMiw2LCJGQSJdLFs0LDYsIkZBJyciXSxbNiw2LCIwIl0sWzQsNCwiXFxjZG90cyJdLFsyLDMsIlxcZGVsdGFfaSIsMl0sWzAsMV0sWzEsMl0sWzQsMCwiXFxkZWx0YV97aSsxfSIsMl0sWzMsNSwiIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsN10sWzcsOF0sWzgsOV0sWzUsMTAsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxMCw2LCJcXGRlbHRhXzEiLDJdXQ==)
@@ -2474,14 +2481,16 @@ Naturality of \( \delta \) will be showing that the following square commutes:
 ```{=tex}
 \begin{tikzcd}
 L_{i+1}F(A'') 
-\ar[r, "\delta"]
+  \ar[r, "\delta"]
+  \ar[d]
 &
-L_iF(A') \\
+L_iF(A') 
+  \ar[d]
+\\
 L_{i+1}F(B'') 
-\ar[r, "\delta"]
+  \ar[r, "\delta"]
 & 
-L_iF(B') \\
-
+L_iF(B') 
 \end{tikzcd}
 ```
 We now apply the horseshoe lemma several times:
@@ -2588,7 +2597,7 @@ A functor \( F: \mathcal{C} \to \mathcal{D} \) is an **equivalence of categories
 :::
 
 ::: {.example title="?"}
-A category \( \mathcal{C} \) is **small** if \( {\operatorname{Ob}}(\mathcal{C}) \) is a set, then take \( \mathcal{C} \coloneqq\Cat \) whose objects are categories and morphisms are functors. Note that in all categories, all collections of morphisms should be sets, and the small condition guarantees it. In this case, natural transformations \( \eta: F\to G \) is an additional structure yielding morphisms of morphisms. These are called **2-morphisms**, and in this entire structure is a **2-category**, and our previous notion is referred to as a **1-category**.
+A category \( \mathcal{C} \) is **small** if \( {\operatorname{Ob}}(\mathcal{C}) \) is a set, then take \( \mathcal{C} \coloneqq\mathbf{Cat} \) whose objects are categories and morphisms are functors. Note that in all categories, all collections of morphisms should be sets, and the small condition guarantees it. In this case, natural transformations \( \eta: F\to G \) is an additional structure yielding morphisms of morphisms. These are called **2-morphisms**, and in this entire structure is a **2-category**, and our previous notion is referred to as a **1-category**.
 :::
 
 ::: {.theorem title="?"}
@@ -2658,6 +2667,8 @@ We now want to show that \( \varphi_n \) is a natural transformation. Supposing 
     \arrow["{\exists h}", dashed, from=1-2, to=3-2]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIksnIl0sWzIsMCwiUCciXSxbMywwLCJBIl0sWzMsMiwiQSJdLFsyLDIsIlAiXSxbMSwyLCJLIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbNCwwLCIwIl0sWzMsNCwiZiJdLFsyLDUsIlxcZXhpc3RzIGciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNyw2XSxbNiw1XSxbNSw0XSxbNCw4XSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw5XSxbMSw2LCJcXGV4aXN0cyBoIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
 Since \( P' \) is projective, we can lift \( f \) to \( P'\to P \), and then define \( h \) to be the restriction of \( g \) to \( K' \to K \).
 
 ```{=tex}
@@ -2681,6 +2692,8 @@ Since \( P' \) is projective, we can lift \( f \) to \( P'\to P \), and then def
     \arrow["\delta"{description}, from=5-5, to=4-4]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCJUX24gQSciXSxbNCwwLCJUX25BIl0sWzAsNCwiTF9uIEZBJyJdLFs0LDQsIkxfbkYoQSkiXSxbMSwxLCJUX3tuLTF9SyciXSxbMywxLCJUX3tuLTF9SyJdLFsxLDMsIkxfe24tMX1GSyciXSxbMywzLCJMX3tuLTF9RksiXSxbMCwxLCJUX25mIl0sWzIsMywiTF9uRmYiXSxbMSwzLCJcXHBoaV9uKEEpIl0sWzAsMiwiXFxwaGlfbihBJykiXSxbNCw1LCJUX3tuLTF9aCJdLFswLDQsIlxcZGVsdGEnIiwxXSxbMSw1LCJcXGRlbHRhIiwxXSxbNiw3LCJMX3tuLTF9RmgiXSxbNCw2LCJcXHBoaV97bi0xfSJdLFs1LDcsIlxccGhpX3tuLTF9Il0sWzIsNiwiXFxkZWx0YSciLDFdLFszLDcsIlxcZGVsdGEiLDFdXQ==)
+
 Note that all of the quadrilaterals here commute. The middle top and bottom come from naturality of \( T_*, L_*F \) with respect to \( \delta \), the RHS/LHS due to the construction of the \( \varphi_n \), and \( \phi_{n-1} \) is natural by the inductive hypothesis. Now in order to traverse \( T_nA' \to T_n A \to L_n F (A) \), we can pass the path through one commuting square at a time to make it equal to \( T_nA' \to L_n FA' \to L_n FA \), so the outer square commutes. We have
 \[
 \delta \varphi_n(A) T_n F = \delta L_n Ff \varphi_n(A')
@@ -2708,6 +2721,7 @@ The definition of \( \varphi_n(A) \) does not depend on the choice of \( P \). T
     \arrow["{\exists h}", dashed, from=1-2, to=3-2]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIksnIl0sWzIsMCwiUCciXSxbMywwLCJBIl0sWzMsMiwiQSJdLFsyLDIsIlAiXSxbMSwyLCJLIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbNCwwLCIwIl0sWzMsNCwiXFxvbmUiXSxbMiw1LCJcXGV4aXN0cyBnIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzcsNl0sWzYsNV0sWzUsNF0sWzQsOF0sWzAsMV0sWzEsMl0sWzIsM10sWzMsOV0sWzEsNiwiXFxleGlzdHMgaCIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
 :::
 
 So the \( \varphi_n(A) \) are uniquely defined. We now want to show that \( \varphi_n \) commutes with the \( \delta_n \) coming from an *arbitrary* SES instead of a fixed reference SES.
@@ -2760,15 +2774,15 @@ R^i \mathcal{F} \coloneqq H^i( FA ) && i \geq 0
 ::: {.remark}
 Then
 \[
-0 \to FA \xrightarrow{F\varepsilon} FI^0 \xrightarrow{Fd^)} FI^1
+0 \to FA \xrightarrow{F\varepsilon} FI^0 \xrightarrow{Fd^0} FI^1
 \]
 is exact, and
 \[
-R^0 FA = \ker FD^0 / \left\langle{ 0 }\right\rangle = \operatorname{im}F\varepsilon\cong FA
+R^0 FA = \ker F(d^0) / \left\langle{ 0 }\right\rangle = \operatorname{im}F\varepsilon\cong FA
 ,\]
-and so there is naturally an isomorphism \( R^0 F \cong F \). Observe that \( F \) yields a right-exact functor \( F^^{\operatorname{op}}: \mathcal{A}^^{\operatorname{op}}\to \mathcal{B}^^{\operatorname{op}} \), where we note that \( F^^{\operatorname{op}}(f^^{\operatorname{op}}) = F(f)^^{\operatorname{op}} \). Note that taking the opposite category sends injectives to projectives and so \( \mathcal{A}^^{\operatorname{op}} \) has enough projectives. This means that \( L_i F^^{\operatorname{op}} \) are defined using the projective resolution \( I \), so we have
+and so there is naturally an isomorphism \( R^0 F \cong F \). Observe that \( F \) yields a right-exact functor \( F^{\operatorname{op}}: \mathcal{A}^{\operatorname{op}}\to \mathcal{B}^{\operatorname{op}} \), where we note that \( F^{\operatorname{op}}(f^{\operatorname{op}}) = F(f)^{\operatorname{op}} \). Note that taking the opposite category sends injectives to projectives and so \( \mathcal{A}^{\operatorname{op}} \) has enough projectives. This means that \( L_i F^{\operatorname{op}} \) are defined using the projective resolution \( I \), so we have
 \[
-R^i F(A) = (L_i F^^{\operatorname{op}})^^{\operatorname{op}}
+R^i F(A) = (L_i F^{\operatorname{op}})^{\operatorname{op}}
 .\]
 Thus all results about left-derived functors translate to right-derived functors:
 
@@ -2780,38 +2794,38 @@ Thus all results about left-derived functors translate to right-derived functors
 :::
 
 ::: {.definition title="?"}
-Fix a right \( R{\hbox{-}} \)module \( M \in {\mathrm{mod}{\hbox{-}}R} \), then \( F \coloneqq{\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\,\cdot\,}): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \) is a left-exact functor. Its right-derived functors are **ext functors** and denoted \( \operatorname{Ext}_{{\mathrm{mod}{\hbox{-}}R}}^i(M, {\,\cdot\,}) \).
+Fix a right \( R{\hbox{-}} \)module \( M \in {\mathbf{Mod}{\hbox{-}}R} \), then \( F \coloneqq{\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(M, {\,\cdot\,}): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \) is a left-exact functor. Its right-derived functors are **ext functors** and denoted \( \operatorname{Ext}_{{\mathbf{Mod}{\hbox{-}}R}}^i(M, {\,\cdot\,}) \).
 :::
 
 ::: {.example title="?"}
-\( \operatorname{Ext}_{{\mathrm{mod}{\hbox{-}}R}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(M, {\,\cdot\,}) ] (A) \).
+\( \operatorname{Ext}_{{\mathbf{Mod}{\hbox{-}}R}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(M, {\,\cdot\,}) ] (A) \).
 :::
 
 ::: {.remark}
-Exercises 2.5.1, 2.5.2 are important extensions of our existing characterizations of injectives and projectives in \( {\mathrm{mod}{\hbox{-}}R} \). These upgrade the characterization involving \( {\operatorname{Hom}} \) to one involving \( \operatorname{Ext} \). Note the typo in 2.5.1.3, it should say the following:
+Exercises 2.5.1, 2.5.2 are important extensions of our existing characterizations of injectives and projectives in \( {\mathbf{Mod}{\hbox{-}}R} \). These upgrade the characterization involving \( {\operatorname{Hom}} \) to one involving \( \operatorname{Ext} \). Note the typo in 2.5.1.3, it should say the following:
 
 "\( B \) is \( {\operatorname{Hom}}_{R}(A, {\,\cdot\,}) \) is acyclic for all \( A \)."
 :::
 
 ::: {.remark}
-Fix \( B\in {\mathrm{mod}{\hbox{-}}R} \) and consider \( G\coloneqq{\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}({\,\cdot\,}, B): {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}} \). Then \( G \) is still left-exact, but is now *contravariant*. We can regard it as a covariant functor left-exact functor \( G: {\mathrm{mod}{\hbox{-}}R}^^{\operatorname{op}}\to {\operatorname{Ab}} \). So we define \( R^i G(A) \) by an injective resolution of \( A \) in \( \mathcal{A}^^{\operatorname{op}} \), and this is the same as a projective resolution of \( A \) in \( \mathcal{A} \). So apply \( G \) and take cohomology. It turns out that \( R^i {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathrm{mod}{\hbox{-}}R}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{R{\hbox{-}}\mathrm{mod}}}(A, B) \), so we can use the same notation \( \operatorname{Ext}^i_R({\,\cdot\,}, B) \) for both cases.
+Fix \( B\in {\mathbf{Mod}{\hbox{-}}R} \) and consider \( G\coloneqq{\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \). Then \( G \) is still left-exact, but is now *contravariant*. We can regard it as a covariant functor left-exact functor \( G: {\mathbf{Mod}{\hbox{-}}R}^{\operatorname{op}}\to {\mathbf{Ab}} \). So we define \( R^i G(A) \) by an injective resolution of \( A \) in \( \mathcal{A}^{\operatorname{op}} \), and this is the same as a projective resolution of \( A \) in \( \mathcal{A} \). So apply \( G \) and take cohomology. It turns out that \( R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{R{\hbox{-}}\mathbf{Mod}}}(A, B) \), so we can use the same notation \( \operatorname{Ext}^i_R({\,\cdot\,}, B) \) for both cases.
 :::
 
 ## 2.6: Adjoint Functors and Left/Right Exactness
 
 ::: {.slogan}
-\( {\,\cdot\,} \) adjoints are \( {\,\cdot\,}^^{\operatorname{op}} \) exact, since \( {\,\cdot\,} \) adjoints have \( {\,\cdot\,}{\hbox{-}} \)derived functors.
+\( {\,\cdot\,} \) adjoints are \( {\,\cdot\,}^{\operatorname{op}} \) exact, since \( {\,\cdot\,} \) adjoints have \( {\,\cdot\,}{\hbox{-}} \)derived functors.
 :::
 
 ::: {.theorem title="?"}
 Let
 \[
-L: A &\to B \\
-R: B &\to A 
+L: \mathcal{A} &\to \mathcal{B} \\
+R: \mathcal{B} &\to \mathcal{A} 
 .\]
 be an adjoint pair of functors. Then there exists a natural isomorphism
 \[
-\tau_{AB}: {\operatorname{Hom}}_{\mathcal{B}}(LA, B) \xrightarrow{\sim} {\operatorname{Hom}}_{\mathcal{A}}(A, RB) && \forall A\in \mathcal{A}, B\in \mathcal{B}
+\tau_{AB}: {\operatorname{Hom}}_{\mathcal{B}}(LA, B) \xrightarrow{\sim} {\operatorname{Hom}}_{\mathcal{A}}(A, RB) \quad  \forall A\in \mathcal{A}, B\in \mathcal{B}
 ,\]
 and \( L \) is right exact, \( B \) is left exact.
 :::
@@ -2823,11 +2837,11 @@ A \xrightarrow{\alpha} B \xrightarrow{\beta} C
 \]
 is exact in \( \mathcal{A} \) if and only if for all \( M \in {\operatorname{Ob}}( \mathcal{A} ) \), the sequence
 \[
-{\operatorname{Hom}}_{\mathcal{A})(M, A)
+{\operatorname{Hom}}_{\mathcal{A}} (M, A)
 \xrightarrow{\alpha^* \coloneqq\alpha\circ {\,\cdot\,}} 
-{\operatorname{Hom}}_{\mathcal{A})(M, B)
+{\operatorname{Hom}}_{\mathcal{A}} (M, B)
 \xrightarrow{\beta^* \coloneqq\beta \circ {\,\cdot\,}} 
-{\operatorname{Hom}}_{\mathcal{A})(M, C)
+{\operatorname{Hom}}_{\mathcal{A}} (M, C)
 \]
 is exact.
 :::
@@ -2838,7 +2852,7 @@ is exact.
 ```
 1.  Take \( M=A \), then \( 0 = \beta^* \alpha^*(\one_A) = \beta \alpha \one = \beta \alpha \). Thus \( \operatorname{im}\alpha \subseteq \ker \beta \).
 
-2.  Take \( M = \ker \beta \) and consider the inclusion \( \iota: \ker M \hookrightarrow B \), then \( \beta^*(\iota) = \beta \iota = 0 \) and thus \( \iota \in \ker \beta^* = \operatorname{im}\alpha^* \). So there exists \( \sigma\in {\operatorname{Hom}}( \ker \beta, A) \) such that \( \iota = \alpha^* (\sigma) \coloneqq\alpha \sigma \), and thus \( \ker \beta = \operatorname{im}\ioa \subset \operatorname{im}\alpha \).
+2.  Take \( M = \ker \beta \) and consider the inclusion \( \iota: \ker M \hookrightarrow B \), then \( \beta^*(\iota) = \beta \iota = 0 \) and thus \( \iota \in \ker \beta^* = \operatorname{im}\alpha^* \). So there exists \( \sigma\in {\operatorname{Hom}}( \ker \beta, A) \) such that \( \iota = \alpha^* (\sigma) \coloneqq\alpha \sigma \), and thus \( \ker \beta = \operatorname{im}\iota \subset \operatorname{im}\alpha \).
 
 Thus \( \ker \beta= \operatorname{im}\alpha \), yielding exactness of the bottom sequence.
 :::
@@ -2848,13 +2862,13 @@ We'll first prove that \( R \) is left-exact. Take a SES in \( B \), say
 \[
 0 \to B' \to B \to B'' \to 0
 .\]
-Apply the left-exact covariant functor \( {\operatorname{Hom}}_{\mathcal{B})(LA, {\,\cdot\,}) \) followed by \( \tau \):
+Apply the left-exact covariant functor \( {\operatorname{Hom}}_{\mathcal{B}}(LA, {\,\cdot\,}) \) followed by \( \tau \):
 
 ```{=tex}
 \begin{tikzcd}
-    0 && {{\operatorname{Hom}}_{\mathcal{B})(LA, B')} && {{\operatorname{Hom}}_{\mathcal{B})(LA, B)} && {{\operatorname{Hom}}_{\mathcal{B})(LA, B'')} \\
+    0 && { {\operatorname{Hom}}_{\mathcal{B}} (LA, B') } && { {\operatorname{Hom}}_{\mathcal{B}} (LA, B) } && { {\operatorname{Hom}}_{\mathcal{B}} (LA, B'')} \\
     \\
-    0 && {{\operatorname{Hom}}_{\mathcal{B})(A, RB')} && {{\operatorname{Hom}}_{\mathcal{B})(A, RB)} && {{\operatorname{Hom}}_{\mathcal{B})(A, RB'')}
+    0 && {{\operatorname{Hom}}_{\mathcal{B}} (A, RB')} && {{\operatorname{Hom}}_{\mathcal{B} }(A, RB)} && {{\operatorname{Hom}}_{\mathcal{B}} (A, RB'')}
     \arrow[from=1-1, to=1-3]
     \arrow[from=1-3, to=1-5]
     \arrow[from=1-5, to=1-7]
@@ -2866,6 +2880,8 @@ Apply the left-exact covariant functor \( {\operatorname{Hom}}_{\mathcal{B})(LA,
     \arrow[dashed, from=3-1, to=3-3]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiXFxIb21fe1xcY2F0e0J9KShMQSwgQicpIl0sWzQsMCwiXFxIb21fe1xcY2F0e0J9KShMQSwgQikiXSxbNiwwLCJcXEhvbV97XFxjYXR7Qn0pKExBLCBCJycpIl0sWzIsMiwiXFxIb21fe1xcY2F0e0J9KShBLCBSQicpIl0sWzQsMiwiXFxIb21fe1xcY2F0e0J9KShBLCBSQikiXSxbNiwyLCJcXEhvbV97XFxjYXR7Qn0pKEEsIFJCJycpIl0sWzAsMiwiMCJdLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdLFsxLDQsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFsyLDUsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFszLDYsIlxcdGF1X3tBQn0iLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9fX1dLFs3LDQsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
 The bottom sequence is exact by naturality of \( \tau \). Now applying the Yoneda lemma, we obtain an exact sequence
 \[
 0 \to 
@@ -2876,13 +2892,13 @@ The bottom sequence is exact by naturality of \( \tau \). Now applying the Yoned
 {\operatorname{Hom}}_{\mathcal{A}}(A, RB'')
 .\]
 
-So \( R \) is left exact. Now \( L^^{\operatorname{op}}: \mathcal{A} \to \mathcal{B} \) is right adjoint to \( R^^{\operatorname{op}} \), so \( L^^{\operatorname{op}} \) is left exact and thus \( L \) is right exact.
+So \( R \) is left exact. Now \( L^{\operatorname{op}}: \mathcal{A} \to \mathcal{B} \) is right adjoint to \( R^{\operatorname{op}} \), so \( L^{\operatorname{op}} \) is left exact and thus \( L \) is right exact.
 :::
 
 ## Tensor Product Functors and Tor
 
 ::: {.remark}
-Let \( R, S \in \Ring \), \( B\in \bimod{R}{S} \), \( C\in {{S}{\hbox{-}}\operatorname{mod}} \). Then \( {\operatorname{Hom}}_{S}(B, C)\in {\mathrm{mod}{\hbox{-}}R} \) in a natural way: given \( f:B\to C \), define \( (f\cdot r)(b) = f(rb) \).
+Let \( R, S \in \mathbf{Ring} \), \( B\in ({R}, {S}){\hbox{-}}\mathbf{biMod} \), \( C\in {{S}{\hbox{-}}\mathbf{Mod}} \). Then \( {\operatorname{Hom}}_{S}(B, C)\in {\mathbf{Mod}{\hbox{-}}R} \) in a natural way: given \( f:B\to C \), define \( (f\cdot r)(b) = f(rb) \).
 :::
 
 ::: {.exercise title="?"}
@@ -2894,7 +2910,7 @@ We saw this structure earlier with \( S={\mathbb{Z}} \), see p.41.
 :::
 
 ::: {.proposition title="?"}
-Fix \( R,S \) and \( {}_R B_S \) as above. Then for every \( A \in {\mathrm{mod}{\hbox{-}}R} \) and \( C\in {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S \) there is a natural isomorphism
+Fix \( R,S \) and \( {}_R B_S \) as above. Then for every \( A \in {\mathbf{Mod}{\hbox{-}}R} \) and \( C\in {{{\hbox{-}}}{\hbox{-}}\mathbf{Mod}}S \) there is a natural isomorphism
 \[
 \tau: {\operatorname{Hom}}_S( A\otimes_R B, C ) &\xrightarrow{\sim} {\operatorname{Hom}}_R(A, {\operatorname{Hom}}_S(B, C) ) \\
 f &\mapsto g(a)(b) = f(a\otimes b) \\
@@ -2903,28 +2919,29 @@ f(a\otimes b) = g(a)(b) &\mapsfrom g
 
 Note that the tensor product is a right \( S{\hbox{-}} \)module, and the hom on the right is a right \( R{\hbox{-}} \)module, so these expressions make sense. Here \( B \) is fixed, so \( A \) and \( C \) are variables and this is a statement about bifunctors
 \[
-{\,\cdot\,}\otimes_R B: {\mathrm{mod}{\hbox{-}}R}\to {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S 
+{\,\cdot\,}\otimes_R B: {\mathbf{Mod}{\hbox{-}}R}\to \mathbf{Mod}{\hbox{-}}{S} 
 ,\]
 which is left adjoint to
 \[
-{\operatorname{Hom}}_S(B, {\,\cdot\,}): {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S \to {\mathrm{mod}{\hbox{-}}R}
+{\operatorname{Hom}}_S(B, {\,\cdot\,}): \mathbf{Mod}{\hbox{-}}{S} \to {\mathbf{Mod}{\hbox{-}}R}
 .\]
 So the former is a left adjoint and the latter is a right adjoint, so by the theorem, \( {\,\cdot\,}\otimes_R B \) is right exact.
 :::
 
-```{=tex}
-\todo[inline]{Fix right module notation}
-```
 ::: {.remark}
 If \( B \) is only a left \( R{\hbox{-}} \)module, we can always take \( S = {\mathbb{Z}} \), which makes this into a functor
 \[
-{\,\cdot\,}\otimes_R B: {\mathrm{mod}{\hbox{-}}R}\to {\operatorname{Ab}}
+{\,\cdot\,}\otimes_R B: {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}}
 .\]
 Since this is a right exact functor from a category with enough injectives, we can define left-derived functors.
 :::
 
 ::: {.definition title="?"}
-Let \( B\in \bimod{R}{S} \) and let \( T({\,\cdot\,}) \coloneqq{\,\cdot\,}\otimes_R B: {\mathrm{mod}{\hbox{-}}R}\to {{{\hbox{-}}}{\hbox{-}}\operatorname{mod}}S \). Then define \( \operatorname{Tor}_n^R(A, B) \coloneqq L_n T(A) \).
+Let \( B\in ({R}, {S}){\hbox{-}}\mathbf{biMod} \) and let
+\[
+T({\,\cdot\,}) \coloneqq{\,\cdot\,}\otimes_R B: {\mathbf{Mod}{\hbox{-}}R}\to \mathbf{Mod}{\hbox{-}}{S}
+.\]
+Then define \( \operatorname{Tor}_n^R(A, B) \coloneqq L_n T(A) \).
 :::
 
 ::: {.remark}
