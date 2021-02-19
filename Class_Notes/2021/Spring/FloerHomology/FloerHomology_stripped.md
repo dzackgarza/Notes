@@ -1942,14 +1942,14 @@ Then consider the quotient \( \Sigma / \tau \). To identify this quotient, since
 
 Note that this results in a copy of \( S^2 \). We can define a map
 \[
-\Sigma &\to \Sigma^{\prod_g} \\
+\Sigma &\to \Sigma^{\times g} \\
 x &\mapsto (x, \tau(x), z, \cdots, z)
 .\]
 This extends to a map to \( \operatorname{Sym}^g( \Sigma) \), since \( \tau(x) \mapsto (\tau(x), x, z, \cdots, z) \) and these will be equal in \( \operatorname{Sym}^g \). So we can factor this through the quotient from above:
 
 ```{=tex}
 \begin{tikzcd}
-    \Sigma &&& {\Sigma^{\prod_g}} \\
+    \Sigma &&& {\Sigma^{\times g}} \\
     \\
     {S^2} &&& {\operatorname{Sym}^g( \Sigma)}
     \arrow["f", from=1-1, to=1-4]

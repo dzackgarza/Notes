@@ -2831,7 +2831,7 @@ To identify this quotient, since the top half is identified with the bottom half
 Note that this results in a copy of $S^2$.
 We can define a map
 \[
-\Sigma &\to \Sigma^{\prod_g} \\
+\Sigma &\to \Sigma^{\times g} \\
 x &\mapsto (x, \tau(x), z, \cdots, z)
 .\]
 This extends to a map to $\Sym^g( \Sigma)$, since \( \tau(x) \mapsto (\tau(x), x, z, \cdots, z) \) and these will be equal in $\Sym^g$.
@@ -2839,7 +2839,7 @@ So we can factor this through the quotient from above:
 
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXFNpZ21hIl0sWzMsMCwiXFxTaWdtYV57XFxwcm9kX2d9fCJdLFswLDIsIlNeMiJdLFszLDIsIlxcU3ltXmcoIFxcU2lnbWEpIl0sWzAsMSwiZiJdLFswLDIsInEiLDJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDMsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==
 \begin{tikzcd}
-	\Sigma &&& {\Sigma^{\prod_g}} \\
+	\Sigma &&& {\Sigma^{\times g}} \\
 	\\
 	{S^2} &&& {\Sym^g( \Sigma)}
 	\arrow["f", from=1-1, to=1-4]
