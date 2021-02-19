@@ -1873,11 +1873,11 @@ For a proof of the first isomorphism, see Lemma 2.6 in [@OSZ04a]. Idea of proof 
 \iota: H_1 ( \Sigma) &\to H_1( \operatorname{Sym}^g( \Sigma) ) \\
 x &\mapsto \left\{{ x, z, \cdots, z }\right\} 
 ,\]
-for some fixed \( z \in \Sigma \), along with its inverse. Note that we're identifying an embedding \( \iota( \Sigma ) = \Sigma \times\prod_{i=1}^{g-1} \left\{{ z }\right\} \subseteq \operatorname{Sym}^g( \Sigma) \). Now define \( j \coloneqq\iota_* \) the induced map on homology.
+for some fixed \( z \in \Sigma \), along with its inverse. Note that we're identifying an embedding \( \iota( \Sigma ) = \Sigma \times\left\{{ z }\right\}^{\times g-1} \subseteq \operatorname{Sym}^g( \Sigma) \). Now define \( j \coloneqq\iota_* \) the induced map on homology.
 \[
 j: H_1( \operatorname{Sym}^g (\Sigma) ) \to H_1 ( \Sigma) \\
 .\]
-Picking a loop \( \gamma: S^1 \to \operatorname{Sym}^g( \Sigma ) \), note that \( \operatorname{diag}\subset \operatorname{Sym}^g( \Sigma) \) has codimension 2, and so we can perturb \( \gamma \) to be disjoint from \( \operatorname{diag} \). We can arrange so that \( \gamma \) is the union of \( g \) paths \( \gamma_1, \cdots, \gamma_g \) such that each \( \gamma_i \) connects \( x_i \in \gamma(0) \) to \( x_{ \sigma(i) } \in \gamma(0) \) where \( \gamma_0 = \left\{{ x_1, \cdots, x_g }\right\} \) and \( \sigma\in S_g \) is a permutation.
+Picking a loop \( \gamma: S^1 \to \operatorname{Sym}^g( \Sigma ) \), note that \( \Delta\subset \operatorname{Sym}^g( \Sigma) \) has codimension 2, and so we can perturb \( \gamma \) to be disjoint from \( \Delta \). We can arrange so that \( \gamma \) is the union of \( g \) paths \( \gamma_1, \cdots, \gamma_g \) such that each \( \gamma_i \) connects \( x_i \in \gamma(0) \) to \( x_{ \sigma(i) } \in \gamma(0) \) where \( \gamma_0 = \left\{{ x_1, \cdots, x_g }\right\} \) and \( \sigma\in S_g \) is a permutation.
 
 ::: {.example title="?"}
 For example, for \( g=3 \):
@@ -1906,7 +1906,7 @@ Let \( M \coloneqq\left\{{ (\mathbf{x}, y) {~\mathrel{\Big|}~}\mathbf{x} \in \op
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJTXjEiXSxbMCwyLCJTXjEiXSxbMiwwLCJNIl0sWzIsMiwiXFxTeW0lZyhcXFNpZ21hKSJdLFs0LDIsIlxcU2lnbWEiXSxbMCwyLCJcXGV4aXN0cyBcXHRpbGRlIFxcZ2FtbWEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiwzLCJcXHBpLCBcXCwgZzoxIl0sWzAsMSwiXFxleGlzdHMgZzoxIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEsMywiXFxnYW1tYSIsMl0sWzAsNCwiIiwwLHsiY3VydmUiOi0zLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMiw0LCJcXHBpXzIiLDAseyJjdXJ2ZSI6LTQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dXQ==)
 
-This can be restricted to \( M \setminus\pi ^{-1} (\operatorname{diag}) \xrightarrow{g:1} \operatorname{Sym}^g( \Sigma) \setminus\operatorname{diag} \). Here \( j([ \gamma ]) = [ \pi_2 \circ \gamma] \) and \( j \circ \iota_* = \one \).
+This can be restricted to \( M \setminus\pi ^{-1} (\Delta) \xrightarrow{g:1} \operatorname{Sym}^g( \Sigma) \setminus\Delta \). Here \( j([ \gamma ]) = [ \pi_2 \circ \gamma] \) and \( j \circ \iota_* = \one \).
 
 ::: {.example title="?"}
 We can use a Heegard diagram and Mayer Vietoris to compute the homology:

@@ -2752,12 +2752,12 @@ Idea of proof for the second isomorphism: we'll define a map
 x &\mapsto \ts{ x, z, \cdots, z } 
 ,\]
 for some fixed $z \in \Sigma$, along with its inverse.
-Note that we're identifying an embedding \( \iota( \Sigma ) = \Sigma \cross \prod_{i=1}^{g-1} \ts{ z } \subseteq \Sym^g( \Sigma) \).
+Note that we're identifying an embedding \( \iota( \Sigma ) = \Sigma \cross \ts{ z }^{\times g-1} \subseteq \Sym^g( \Sigma) \).
 Now define $j \da \iota_*$ the induced map on homology.
 \[
 j: H_1( \Sym^g (\Sigma) ) \to H_1 ( \Sigma) \\
 .\]
-Picking a loop \( \gamma: S^1 \to \Sym^g( \Sigma ) \), note that \( \diag \subset \Sym^g( \Sigma) \) has codimension 2, and so we can perturb \( \gamma \) to be disjoint from \( \diag \).
+Picking a loop \( \gamma: S^1 \to \Sym^g( \Sigma ) \), note that \( \diagonal \subset \Sym^g( \Sigma) \) has codimension 2, and so we can perturb \( \gamma \) to be disjoint from \( \diagonal \).
 We can arrange so that \( \gamma \) is the union of $g$ paths \( \gamma_1, \cdots, \gamma_g \) such that each \( \gamma_i \) connects \( x_i \in \gamma(0) \) to \( x_{ \sigma(i) } \in \gamma(0) \) where \( \gamma_0 = \ts{ x_1, \cdots, x_g } \) and \( \sigma\in S_g \) is a permutation.
 
 :::{.example title="?"}
@@ -2788,7 +2788,7 @@ Let $M \da \ts{ (\vector x, y) \st \vector x \in \Sym^g( \Sigma), y\in \vector x
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJTXjEiXSxbMCwyLCJTXjEiXSxbMiwwLCJNIl0sWzIsMiwiXFxTeW0lZyhcXFNpZ21hKSJdLFs0LDIsIlxcU2lnbWEiXSxbMCwyLCJcXGV4aXN0cyBcXHRpbGRlIFxcZ2FtbWEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiwzLCJcXHBpLCBcXCwgZzoxIl0sWzAsMSwiXFxleGlzdHMgZzoxIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEsMywiXFxnYW1tYSIsMl0sWzAsNCwiIiwwLHsiY3VydmUiOi0zLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMiw0LCJcXHBpXzIiLDAseyJjdXJ2ZSI6LTQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dXQ==)
 
-This can be restricted to \( M \sm \pi ^{-1} (\diag) \mapsvia{g:1} \Sym^g( \Sigma) \sm \diag \).
+This can be restricted to \( M \sm \pi ^{-1} (\diagonal ) \mapsvia{g:1} \Sym^g( \Sigma) \sm \diagonal\).
 Here \( j([ \gamma ]) = [ \pi_2 \circ \gamma] \) and \( j \circ \iota_* = \one \).
 
 :::{.example title="?"}
