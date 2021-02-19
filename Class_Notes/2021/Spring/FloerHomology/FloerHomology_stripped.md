@@ -1377,7 +1377,7 @@ Taken together, these will make the point-count well-defined.
 ::: {.remark}
 In order for this to be a chain complex, we'll need \( {{\partial}}^2 = 0 \). We'll look at when \( \mu(x, y) = 2 \), and we'll compactify \( \widehat{ \mathcal{M}}(x, y) \) in order to show this holds. Gromov's compactness will give us
 \[
-{{\partial}}\closure{ \mathcal{M}(x, y) } = \bigcup_{\mu(x,z) = \mu(z, y) = 1} \mathcal{M}(x, z) \times\mathcal{M}(z, y) 
+{{\partial}}\overline{ \mathcal{M}(x, y) } = \bigcup_{\mu(x,z) = \mu(z, y) = 1} \mathcal{M}(x, z) \times\mathcal{M}(z, y) 
 ,\]
 much like the *broken trajectories* from Morse homology. Here we'll need to add in broken \( J{\hbox{-}} \)holomorphic discs:
 
@@ -1530,7 +1530,7 @@ There are some moves to relate different Heegard splittings.
 ::: {.definition title="Stabilization"}
 Given a genus \( g \) Heegard splitting \( M = H_1 {\coprod}_{ \varphi} H_2 \), we can produce a genus \( g+1 \) splitting \( M = H_1' \cup_{ \varphi} H_2' \) where
 
-\( H_1' = H_1 \cup\closure{ \eta( \gamma) } \), where the new piece is a closed regular neighborhood of an unknotted arc \( \gamma \) in \( H_2 \). Here *unknotted* means that \( \gamma \) is a properly embedded arc in \( H_2 \cup\Sigma \) whose boundary is in \( \Sigma \) which bounds a contractible disc:
+\( H_1' = H_1 \cup\overline{ \eta( \gamma) } \), where the new piece is a closed regular neighborhood of an unknotted arc \( \gamma \) in \( H_2 \). Here *unknotted* means that \( \gamma \) is a properly embedded arc in \( H_2 \cup\Sigma \) whose boundary is in \( \Sigma \) which bounds a contractible disc:
 
 ![image_2021-02-16-21-00-33](figures/image_2021-02-16-21-00-33.png)
 
