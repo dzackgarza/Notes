@@ -1733,10 +1733,11 @@ Any two Heegard diagrams for \( M \) can be connected by a finite sequence of th
 ::: {.remark}
 Note that critical points can be used to compute the Euler characteristic, using the fact the \( \chi(C) = \chi(H_*(C)) \), i.e. it can be computed on dimensions of chains or ranks of homology, along with the fact that Morse homology is isomorphic to singular homology. So e.g. for a 3-manifold \( M^3 \), we can show
 \[
-\chi(M^3) = \sum_{i=0}^3 {\operatorname{rank}}H_i 
-= \sum_{i=0}^3 {\operatorname{rank}}CM_i \\
-= 1 - \# \operatorname{crit}_1(f) + \# \operatorname{crit}_2(f) - 1 \\
-=0
+\chi(M^3) 
+&= \sum_{i=0}^3 {\operatorname{rank}}H_i \\
+&= \sum_{i=0}^3 {\operatorname{rank}}CM_i \\
+&= 1 - \# \operatorname{crit}_1(f) + \# \operatorname{crit}_2(f) - 1 \\
+&= 0
 ,\]
 since the number of index 2 and index 3 critical points will be the same.
 :::
@@ -1750,24 +1751,27 @@ Let \( M^3 \) be a closed 3-manifold, then there is a Heegard splitting
 ,\]
 where \( M^3 = H_{ \alpha} \coprod_{ \Sigma} H_ \beta \) and \( g \) is the genus of \( HD \). We refer to \( \Sigma \) as a **Heegard surface**, and this set of data as a **Heegard diagram**.
 
-We'll define \( \operatorname{Sym}^g( \Sigma) \) by letting \( S_g \curvearrowright\Sigma^{\prod^g} \) where if \( \varphi\in S_g \) we set \( \varphi(x_1, \cdots, x_g) = x_{ \varphi(1)}, \cdots, x_{ \varphi(g) } \). Then set \( \Sigma^{\prod^g} \coloneqq\Sigma^{\prod g} / S_g \). Why does this yield a smooth manifold? Is this action free? The diagonal \( D \subseteq \Sigma^{\prod g} \) consists of the points with at least 2 equal coordinates, and it's easy to see that \( S_g\curvearrowright D \) can not be free. However, this still yields a smooth submanifold!
+We'll define \( \operatorname{Sym}^g( \Sigma) \) by letting \( S_g \curvearrowright\Sigma^{\times g} \) where if \( \varphi\in S_g \) we set \( \varphi(x_1, \cdots, x_g) = x_{ \varphi(1)}, \cdots, x_{ \varphi(g) } \). Then set \( \Sigma^{\times g} \coloneqq\Sigma^{\times g} / S_g \). Why does this yield a smooth manifold? Is this action free? The diagonal \( D \subseteq \Sigma^{\times g} \) consists of the points with at least 2 equal coordinates, and it's easy to see that \( S_g\curvearrowright D \) can not be free. However, this still yields a smooth submanifold!
 :::
 
 ::: {.lemma title="?"}
-\( \operatorname{Sym}^g(\Sigma) \) is smooth, and any complex structure \( j \) on \( \Sigma \) will induce a complex structure on the quotient, denoted \( \operatorname{Sym}^g(j) \), which is unique in the sense that the quotient map \( \Sigma^{\prod g} \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \) is holomorphic.
+\( \operatorname{Sym}^g(\Sigma) \) is smooth, and any complex structure \( j \) on \( \Sigma \) will induce a complex structure on the quotient, denoted \( \operatorname{Sym}^g(j) \), which is unique in the sense that the quotient map \( \Sigma^{\times g} \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \) is holomorphic.
 :::
 
 ::: {.proof title="?"}
 We'll check this locally, and then leave it as an exercise to check that it extends globally -- this is easy by just considering what happens under transition functions and checking that \( \pi \) is holomorphic. Locally we want to produce a map
 \[ 
 \operatorname{Sym}^g({\mathbb{C}}) &\xrightarrow{f} {\mathbb{C}}^g \\
-\left\{{ z_1, \cdots, z_g }\right\} &\mapsto \qty{ \prod_{i=1}^g (z-z_i) = z^g +a_1 z^{g-1} + \cdots + a_g &\mapsto [a_1, \cdots, a_g] }
+\left\{{ z_1, \cdots, z_g }\right\} &\mapsto \qty{ 
+  \prod_{i=1}^g (z-z_i) 
+  = z^g +a_1 z^{g-1} + \cdots + a_g \mapsto [a_1, \cdots, a_g] 
+}
 .\]
 This is a bijection, and by the fundamental theorem of algebra, there is an inverse. Equip \( \operatorname{Sym}^g({\mathbb{C}}) \) with a complex structure that makes \( f \) biholomorphic, then \( \operatorname{Sym}^g(j) \) is the complex structure locally equal to this one. This structure is obtained by just pulling back the standard complex structure \( i\times i \times\cdots i \) on \( {\mathbb{C}}^g \).
 :::
 
 ::: {.remark}
-\( \operatorname{Sym}^g( \Sigma) \) is a complex manifold of complex dimension \( g \) (or real dimension \( 2g \)). We want to find half-dimensional submanifolds to do Lagrangian-Floer homology. Using the Heegard splitting, write \( {\mathbb{T}}_ \alpha \coloneqq\prod+{i=1}^g \alpha_i \subset \Sigma^{\prod g} \), which is a \( g{\hbox{-}} \)dimensional torus such that \( {\mathbb{T}}_ \alpha \cap D = \emptyset \) since the \( \alpha_i \) are pairwise disjoint. Composing the inclusion above with \( \pi \), we can note that the action of \( S^g \) is free away from the diagonal \( D \), so this composition is an embedding \( {\mathbb{T}}_ \alpha \hookrightarrow\operatorname{Sym}^g( \Sigma) \). Similarly, \( {\mathbb{T}}_ \beta\coloneqq\prod_{i=1}^g \beta_i \hookrightarrow\operatorname{Sym}^g( \Sigma) \).
+\( \operatorname{Sym}^g( \Sigma) \) is a complex manifold of complex dimension \( g \) (or real dimension \( 2g \)). We want to find half-dimensional submanifolds to do Lagrangian-Floer homology. Using the Heegard splitting, write \( {\mathbb{T}}_ \alpha \coloneqq\prod_{i=1}^g \alpha_i \subset \Sigma^{\times g} \), which is a \( g{\hbox{-}} \)dimensional torus such that \( {\mathbb{T}}_ \alpha \cap D = \emptyset \) since the \( \alpha_i \) are pairwise disjoint. Composing the inclusion above with \( \pi \), we can note that the action of \( S^g \) is free away from the diagonal \( D \), so this composition is an embedding \( {\mathbb{T}}_ \alpha \hookrightarrow\operatorname{Sym}^g( \Sigma) \). Similarly, \( {\mathbb{T}}_ \beta\coloneqq\prod_{i=1}^g \beta_i \hookrightarrow\operatorname{Sym}^g( \Sigma) \).
 
 Note that we're only working with complex structures now, and haven't upgraded it to a symplectic structure yet. But we don't really need this to count holomorphic discs. Lagrangians \( L \) were defined as submanifolds where \( { \left.{{\omega}} \right|_{{L}} } = 0 \), how do we do this without a symplectic form?
 :::
@@ -1781,7 +1785,7 @@ Take a genus \( g \) surface \( \Sigma \):
 
 ![image_2021-02-16-11-49-52](figures/image_2021-02-16-11-49-52.png)
 
-Here any tangent vector has to get rotated out of the tangent space: if it were an eigenvector for \( J \), then the rank of \( J \) would be too low, contradicting its definition. Note that any 1-dimensional submanifold of \( (\Sigma, j ) \) is totally real, and so \( {\mathbb{T}}_ \alpha, {\mathbb{T}}_ \beta \) are also totally real submanifolds of \( \Sigma^{\prod g} \). If you restrict \( \pi \) to \( \Sigma^{\prod g}\setminus D \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \setminus\pi(D) \), this yields a biholomorphic map.
+Here any tangent vector has to get rotated out of the tangent space: if it were an eigenvector for \( J \), then the rank of \( J \) would be too low, contradicting its definition. Note that any 1-dimensional submanifold of \( (\Sigma, j ) \) is totally real, and so \( {\mathbb{T}}_ \alpha, {\mathbb{T}}_ \beta \) are also totally real submanifolds of \( \Sigma^{\times g} \). If you restrict \( \pi \) to \( \Sigma^{\times g}\setminus D \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \setminus\pi(D) \), this yields a biholomorphic map.
 :::
 
 ::: {.remark}

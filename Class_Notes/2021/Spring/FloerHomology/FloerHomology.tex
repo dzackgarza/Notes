@@ -3420,10 +3420,11 @@ can be computed on dimensions of chains or ranks of homology, along with
 the fact that Morse homology is isomorphic to singular homology. So
 e.g.~for a 3-manifold \(M^3\), we can show
 \begin{align*}
-\chi(M^3) = \sum_{i=0}^3 {\operatorname{rank}}H_i 
-= \sum_{i=0}^3 {\operatorname{rank}}CM_i \\
-= 1 - \# \operatorname{crit}_1(f) + \# \operatorname{crit}_2(f) - 1 \\
-=0
+\chi(M^3) 
+&= \sum_{i=0}^3 {\operatorname{rank}}H_i \\
+&= \sum_{i=0}^3 {\operatorname{rank}}CM_i \\
+&= 1 - \# \operatorname{crit}_1(f) + \# \operatorname{crit}_2(f) - 1 \\
+&= 0
 ,\end{align*}
 since the number of index 2 and index 3 critical points will be the
 same.
@@ -3444,12 +3445,12 @@ genus of \(HD\). We refer to \(\Sigma\) as a \textbf{Heegard surface},
 and this set of data as a \textbf{Heegard diagram}.
 
 We'll define \(\operatorname{Sym}^g( \Sigma)\) by letting
-\(S_g \curvearrowright\Sigma^{\prod^g}\) where if \(\varphi\in S_g\) we
+\(S_g \curvearrowright\Sigma^{\times g}\) where if \(\varphi\in S_g\) we
 set
 \(\varphi(x_1, \cdots, x_g) = x_{ \varphi(1)}, \cdots, x_{ \varphi(g) }\).
-Then set \(\Sigma^{\prod^g} \coloneqq\Sigma^{\prod g} / S_g\). Why does
-this yield a smooth manifold? Is this action free? The diagonal
-\(D \subseteq \Sigma^{\prod g}\) consists of the points with at least 2
+Then set \(\Sigma^{\times g} \coloneqq\Sigma^{\times g} / S_g\). Why
+does this yield a smooth manifold? Is this action free? The diagonal
+\(D \subseteq \Sigma^{\times g}\) consists of the points with at least 2
 equal coordinates, and it's easy to see that \(S_g\curvearrowright D\)
 can not be free. However, this still yields a smooth submanifold!
 
@@ -3461,7 +3462,7 @@ can not be free. However, this still yields a smooth submanifold!
 \(j\) on \(\Sigma\) will induce a complex structure on the quotient,
 denoted \(\operatorname{Sym}^g(j)\), which is unique in the sense that
 the quotient map
-\(\Sigma^{\prod g} \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma)\) is
+\(\Sigma^{\times g} \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma)\) is
 holomorphic.
 
 \end{lemma}
@@ -3474,7 +3475,10 @@ under transition functions and checking that \(\pi\) is holomorphic.
 Locally we want to produce a map
 \begin{align*} 
 \operatorname{Sym}^g({\mathbb{C}}) &\xrightarrow{f} {\mathbb{C}}^g \\
-\left\{{ z_1, \cdots, z_g }\right\} &\mapsto \qty{ \prod_{i=1}^g (z-z_i) = z^g +a_1 z^{g-1} + \cdots + a_g &\mapsto [a_1, \cdots, a_g] }
+\left\{{ z_1, \cdots, z_g }\right\} &\mapsto \qty{ 
+  \prod_{i=1}^g (z-z_i) 
+  = z^g +a_1 z^{g-1} + \cdots + a_g \mapsto [a_1, \cdots, a_g] 
+}
 .\end{align*}
 This is a bijection, and by the fundamental theorem of algebra, there is
 an inverse. Equip \(\operatorname{Sym}^g({\mathbb{C}})\) with a complex
@@ -3491,7 +3495,7 @@ complex structure \(i\times i \times\cdots i\) on \({\mathbb{C}}^g\).
 dimension \(g\) (or real dimension \(2g\)). We want to find
 half-dimensional submanifolds to do Lagrangian-Floer homology. Using the
 Heegard splitting, write
-\({\mathbb{T}}_ \alpha \coloneqq\prod+{i=1}^g \alpha_i \subset \Sigma^{\prod g}\),
+\({\mathbb{T}}_ \alpha \coloneqq\prod_{i=1}^g \alpha_i \subset \Sigma^{\times g}\),
 which is a \(g{\hbox{-}}\)dimensional torus such that
 \({\mathbb{T}}_ \alpha \cap D = \emptyset\) since the \(\alpha_i\) are
 pairwise disjoint. Composing the inclusion above with \(\pi\), we can
@@ -3533,8 +3537,8 @@ it were an eigenvector for \(J\), then the rank of \(J\) would be too
 low, contradicting its definition. Note that any 1-dimensional
 submanifold of \((\Sigma, j )\) is totally real, and so
 \({\mathbb{T}}_ \alpha, {\mathbb{T}}_ \beta\) are also totally real
-submanifolds of \(\Sigma^{\prod g}\). If you restrict \(\pi\) to
-\(\Sigma^{\prod g}\setminus D \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \setminus\pi(D)\),
+submanifolds of \(\Sigma^{\times g}\). If you restrict \(\pi\) to
+\(\Sigma^{\times g}\setminus D \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \setminus\pi(D)\),
 this yields a biholomorphic map.
 
 \end{example}
