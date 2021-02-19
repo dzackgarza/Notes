@@ -8,6 +8,7 @@
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
 ```
+
 # Lecture 1: Overview (Wednesday, January 13)
 
 ## Course Logistics
@@ -1142,7 +1143,7 @@ This has a Lagrangian submanifold \( {\mathbb{R}}^n \coloneqq\left\{{y_1 = \cdot
 The general setup for next time: we'll have \( (M^{2n}, \omega) \) a symplectic manifold, a pair \( L_0, L_1 \subset M \) such that \( L_0 \pitchfork L_1 \), and we want to do Morse Homology on \( \mathcal{P}(L_0, L_1) \).
 :::
 
-# Tuesday, February 02
+# Lecture 6 (Tuesday, February 02)
 
 ::: {.remark title="Setup"}
 We're working with a symplectic manifold, i.e. a pair \( (M^{2n}, \omega) \) where \( \omega \in \Omega^2 \) is closed, i.e. \( d \omega = 0 \), and nondegenerate, i.e. \( \bigvee^n \omega \neq 0 \). We were also consider \( L^n_0, L^n_1 \subset M \) Lagrangian submanifolds, i.e. \( { \left.{{ \omega }} \right|_{{L_i}} } = 0 \). The goal is to do something like Morse homology on \( \mathcal{P}(L_0, L_1) \) where the critical points corresponds to intersection points \( L_0 \cap L_1 \), where we'll assume \( L_0 \pitchfork L_1 \).
@@ -1247,6 +1248,761 @@ So the RHS is equal to this for every \( \xi \), which means that \( J \nabla= \
 Here \( t \) is the parameter that moves between paths, and \( s \) moves along a given path:
 
 ![image_2021-02-02-12-34-41](figures/image_2021-02-02-12-34-41.png)
+:::
+
+# Lecture 7 (Thursday February 04)
+
+## Lagrangian Floer Homology
+
+::: {.remark}
+Recall that we had a symplectic manifold \( (M^{2n}, \omega) \) with \( L_0, L_1 \subset M \) two Lagrangians. We wanted to do something like Morse theory on \( \mathcal{P}(L_0, L_1) \).
+
+![image_2021-02-16-22-21-44](figures/image_2021-02-16-22-21-44.png)
+
+What ingredients do we need?
+
+-   Something to replace \( -df \): \( \alpha \)
+
+-   Something to replace the vector field \( -\nabla \): we defined a metric \( g^\mathcal{P} \) using \( \alpha \)
+
+To define \( \alpha \) we needed to look at
+\[
+T_{ \gamma} \mathcal{P}= \left\{{ \xi: I\to TM {~\mathrel{\Big|}~}\xi(s) \in T_{\gamma(s)}M }\right\} 
+,\]
+which is like a collection of tangent vectors along \( \gamma \) giving a way to deform the path. Since \( \alpha\in \Omega^1(\mathcal{P}) \), for any \( \gamma \) it induces a map
+\[
+T_{ \gamma} M &\xrightarrow{\alpha} {\mathbb{R}}\\
+\xi &\mapsto \alpha_{ \gamma} (\xi) \coloneqq\int_0^1 \omega( \dot{ \gamma}, \xi)\,ds
+.\]
+:::
+
+::: {.observation}
+\( \alpha_{ \gamma} = 0 \iff \gamma \) is constant, which happens if and only if \( \gamma\in L_0 \cap L_1 \). This corresponds to critical points of the functional yielding intersection points of the Lagrangians.
+:::
+
+::: {.remark}
+We wanted to define the gradient, for which we needed a metric on \( \mathcal{P} \). We did this by lifting a metric from \( M \). Pick an almost complex structure \( J \) compatible with \( \omega \), then this yields a Riemannian metric defined by \( g(v, w) = \omega(v, Jw) \). Then we can define
+\[
+g^\mathcal{P}_{\gamma}(\xi, \eta) \coloneqq\int_0^1 g( \xi(s), \eta(s) )\,ds
+.\]
+We used this to compute the vector field \( -\operatorname{grad}_{\gamma} J \cdot{\gamma}(s) \). What are its trajectories? These are paths of paths \( u(s, t) \coloneqq u_t(s) \) such that \( {\frac{\partial }{\partial t}\,} u_t(s) = J {\frac{\partial }{\partial s}\,} u_t \). We thus get an equation
+\[
+{\frac{\partial u}{\partial t}\,}(s, t) = J {\frac{\partial u}{\partial s}\,}(s, t)
+.\]
+:::
+
+::: {.remark}
+For \( x, y \in L_0 \cap L_1 \) trajectories connecting \( x \) to \( y \), we'll write this as
+\[
+\mathcal{M}(x, y) \coloneqq\left\{{ 
+u(s, t) :[0,1] \times{\mathbb{R}}\to M 
+\substack{ 
+  u(0, t) \in L_0 \\ 
+  u(1, t) \in L_1 \\ 
+  u(s, t) \overset{t\to - \infty }\to x \\ 
+  u(s, t) \overset{t\to \infty }\to y \\
+  {\frac{\partial u}{\partial t}\,} = J {\frac{\partial u}{\partial s}\,}
+} 
+}\right\} 
+.\]
+
+We can modify this PDE to make things look familiar: multiply both sides with \( J \) to obtain
+\[
+J {\frac{\partial u}{\partial t}\,} = J^2 {\frac{\partial u}{\partial s}\,} \implies
+J {\frac{\partial u}{\partial t}\,} = - {\frac{\partial u}{\partial s}\,} \implies
+{\frac{\partial u}{\partial s}\,} + J {\frac{\partial u}{\partial t}\,} = 0
+,\]
+which is the Cauchy-Riemann equation.
+:::
+
+::: {.exercise title="?"}
+Check that this equation can be written as \( J\, du = \du \circ i \) where \( i \) is the standard complex structure on \( {\mathbb{C}}\supseteq [0, 1] \times{\mathbb{R}} \), so \( du \) commutes with \( i \) and \( J \).
+:::
+
+::: {.definition title="$J\\dash$holomorphic or Pseudoholomorphic Discs"}
+If \( J\, du = du \circ i \), then \( u \) is called a **\( J{\hbox{-}} \)holomorphic disc** or a **pseudoholomorphic disc**.
+:::
+
+::: {.remark}
+Schematically, the situation is the following:
+
+![image_2021-02-16-23-22-40](figures/image_2021-02-16-23-22-40.png)
+
+Using the Riemann mapping theorem, the strip on the left-hand side is biholomorphic to \( {\mathbb{D}}\subseteq {\mathbb{C}} \) with \( \pm i \) removed:
+
+![image_2021-02-16-23-23-43](figures/image_2021-02-16-23-23-43.png)
+
+Due to the limit conditions at infinity in the strip, we can extend \( u \) to a \( J{\hbox{-}} \)holomorphic map from the entire disc by sending \( i\mapsto y \) and \( -i\mapsto x \).
+:::
+
+::: {.remark}
+In Morse homology, we have an \( {\mathbb{R}} \) action on the moduli space of trajectories, and that also shows up here. Here \( {\mathbb{R}}\curvearrowright\mathcal{M}(x, y) \) by \( u(s, t) \xrightarrow{c} u_c(s, t) \coloneqq u(s, t+c) \), noting that translating the strip from above still yields a solution.
+:::
+
+::: {.definition title="?"}
+We define
+\[
+\widehat{\mathcal{M}}(x, y) \coloneqq\mathcal{M}(x, y) / {\mathbb{R}}
+.\]
+:::
+
+::: {.definition title="?"}
+We'll define
+\[
+CF(L_1, L_2) \coloneqq\bigoplus_{x\in L_0 \cap L_1} {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{ x }\right\rangle \\ \\
+{{\partial}}x \coloneqq\sum_{y\in L_0 \cap L_1} \# \widehat{\mathcal{M}}(x, y) y 
+.\]
+:::
+
+::: {.remark}
+When is the intersection count \( \# \widehat{\mathcal{M}}(x, y) \) well-defined? In Morse homology, we have two conditions:
+
+1.  \( (f, g) \) is Morse-Smale, to ensure that the moduli spaces are smooth manifolds (using Sard's theorem)
+
+2.  \( \mathop{\mathrm{Ind}}(x) - \mathop{\mathrm{Ind}}(y) = 1 \), ensuring \( \mathcal{M}(x, y) \) is 1-dimensional
+
+3.  Compactness of \( \widehat{\mathcal{M}}(x, y) \) when 1 and 2 hold.
+
+These were enough to guarantee that \( \widehat{ \mathcal{M}} (x, y) \) was a smooth compact 0-dimensional manifold, which allowed for point counts. In Lagrangian Floer homology, we have the following replacements:
+
+**For 2 (indices)**: Recall that the index in Morse homology was the dimension of the negative eigenspace of the Hessian, but we're in infinite dimensions here. So we won't have a well-defined index, but we'll have something that can replace the *difference* of indices: the **Maslov index** \( \mu(x, y) \), the expected dimension of \( \mathcal{M}(x, y) \). To actually have this be the dimension will require some conditions, so it's not always true. This will be the index of some elliptic operator defined using the Cauchy-Riemann equations.
+
+**For 1 (transversality)**: We'll need some version of transversality, which will imply that for a generic \( J \) that \( \mathcal{M}(x, y) \) is smooth.
+
+**For 3 (compactness)**: We'll use **Gromov compactness** and some extra topological assumptions, which will imply that \( \widehat{ \mathcal{M}}(x, y), \mathcal{M}(x, y) \) are both compact.
+
+Taken together, these will make the point-count well-defined.
+:::
+
+::: {.remark}
+In order for this to be a chain complex, we'll need \( {{\partial}}^2 = 0 \). We'll look at when \( \mu(x, y) = 2 \), and we'll compactify \( \widehat{ \mathcal{M}}(x, y) \) in order to show this holds. Gromov's compactness will give us
+\[
+{{\partial}}\closure{ \mathcal{M}(x, y) } = \bigcup_{\mu(x,z) = \mu(z, y) = 1} \mathcal{M}(x, z) \times\mathcal{M}(z, y) 
+,\]
+much like the *broken trajectories* from Morse homology. Here we'll need to add in broken \( J{\hbox{-}} \)holomorphic discs:
+
+![image_2021-02-16-23-45-04](figures/image_2021-02-16-23-45-04.png)
+
+Using the same argument as in Morse homology, we can obtain \( {{\partial}}^2 = 0 \).
+:::
+
+::: {.theorem title="Floer"}
+Suppose \( (M^{2n}, \omega) \) is a compact symplectic manifold with Lagrangians \( L_0, L_1 \) such that
+
+1.  \( L_0 \pitchfork L_1 \)
+
+2.  \( \pi_2(M) = \pi_2(M, L_0) = \pi_2(M, L_1) = 0 \), which are topological conditions on embedded spheres with boundaries mapped to the \( L_i \).
+
+Under these assumptions, \( {{\partial}}^2 = 0 \) and the homology
+\[
+HF(L_0, L_1) \coloneqq H_*( CF(L_0, L_1), {{\partial}}) \coloneqq\ker {{\partial}}/ \operatorname{im}{{\partial}}
+\]
+is an invariant of \( (M, L_0, L_1) \) up to **Hamiltonian isotopies** of \( L_0, L_1 \).
+:::
+
+::: {.definition title="Symplectomorphism"}
+A **symplectomorphism** is a diffeomorphism \( \psi: M_1 \to M_2 \) such \( \psi^* \omega_1 = \omega_2 \).
+:::
+
+::: {.definition title="Hamiltonian Vector Fields"}
+A **Hamiltonian vector field** is a vector field \( V \) such that
+\[
+\iota_V \omega\coloneqq\omega(V, {\,\cdot\,}) \in \Omega^1
+\]
+is exact, and thus equal to \( df \) for some functional \( f\in C^{\infty }(M, {\mathbb{R}}) \). Note that if one has a functional \( f \), one can find a symplectic form \( \omega \) such that this holds, so \( V \) is sometimes denoted \( V_f \) to show this dependence.
+:::
+
+::: {.example title="?"}
+\( {\mathbb{R}}^{2n} \) with the standard symplectic form \( \sum_{i=1}^n dx_i \wedge dy_i \), we have \( V_f = {\frac{\partial f}{\partial y_1}\,}, \cdots, {\frac{\partial f}{\partial y_n}\,}, - {\frac{\partial f}{\partial x_1}\,}, \cdots, -{\frac{\partial f}{\partial x_n}\,} \) for any \( f:{\mathbb{R}}^{2n} \to {\mathbb{R}} \). Note that we can have time-dependent vector fields (i.e. one parameter families) as well.
+:::
+
+::: {.definition title="Hamiltonian Isotopies"}
+A **Hamiltonian isotopy** is a family \( \psi_t \) of diffeomorphisms of \( M \) such that \( \psi_t \) is the flow of a 1-parameter family of Hamiltonian vector fields \( V_t \), so taking the derivative of \( V \) yields this function.
+:::
+
+::: {.exercise title="?"}
+Show that if \( \psi_t \) is a Hamiltonian isotopy, then \( \psi_t^* \omega = \omega \) and is thus a symplectomorphism as well.
+:::
+
+::: {.remark}
+Goal: use this as an invariant of closed 3-manifolds in the form of **Lagrangian Floer homology**, defined by Osvath-Szabo. Note that Floer's theorem requires topological assumptions which make the homology well-defined, but we don't have these available in the HF setup. In particular, the assumptions on \( \pi_2 \) won't hold.
+:::
+
+# Lecture 8 (Thursday, February 04)
+
+::: {.remark}
+Goal: we want to use **Lagrangian Floer homology** to defined invariants of *closed* 3-manifolds, where here closed means that \( {{\partial}}M^3 = \emptyset \). One example of Lagrangian Floer homology is **Heegard Floer homology**. We'll want some symplectic manifold with two Lagrangian submanifolds. Oszvath-Szabo used a 2-dimensional description of closed 3-manifolds called **Heegard diagrams**. We'll need Heegard splittings to define these, and handlebodies to define the splittings.
+:::
+
+::: {.definition title="Handlebody of genus $g$"}
+A **handlebody** of genus \( g \) will mean a compact 3-manifold obtained from \( {\mathbb{B}}^3 \) by attaching \( g \) solid 1-handles, i.e. \( {\mathbb{D}}^1 \times{\mathbb{D}}^2 \). These are glued in via two copies of \( {{\partial}}{\mathbb{D}}^1 \times{\mathbb{D}}^2 \):
+
+![image_2021-02-16-19-36-51](figures/image_2021-02-16-19-36-51.png)
+
+Alternatively, these can be defined as a regular neighborhood of \( \bigvee_{i=1}^g S^1 \subset {\mathbb{R}}^3 \). We'll write \( H_g \) for a genus \( g \) handlebody, and \( {{\partial}}H_g \) will be a genus \( g \) surface.
+:::
+
+::: {.definition title="Heegard Splitting"}
+A **Heegard splitting** of genus \( g \) is a decomposition \( M = H_1 {\coprod}_{\varphi} H_2 \) where \( \varphi: {{\partial}}H_1 \to {{\partial}}H_2 \) is a diffeomorphism.
+
+![image_2021-02-16-19-41-17](figures/image_2021-02-16-19-41-17.png)
+
+Explicitly, we have
+\[
+H_1 {\coprod}_{ \varphi} H_2 \coloneqq{ H_1 {\coprod}H_2 \over \left\langle{ x \sim \varphi(x) {~\mathrel{\Big|}~}\forall x \in {{\partial}}H_1 }\right\rangle }
+.\]
+:::
+
+::: {.example title="?"}
+We can write \( S^3 = B_3 {\coprod}_{\one} B^3 \), where both are just genus \( 0 \) handlebodies. Note that if you attach a solid 1-handle to \( B^3 \), this yields \( S^1 \times{\mathbb{D}}^2 \), i.e. a solid torus:
+
+![image_2021-02-16-19-42-43](figures/image_2021-02-16-19-42-43.png)
+
+Think of \( S^3 \) as the one-point compactification of \( {\mathbb{R}}^3 \), we can write (and visualize) a decomposition \( S^3 = (S^1 \times{\mathbb{D}}^2) {\coprod}_{\varphi} (S^1 \times{\mathbb{D}}^2) \). The first copy will be a neighborhood of a circle in the plane:
+
+![image_2021-02-16-19-44-16](figures/image_2021-02-16-19-44-16.png)
+
+Labeling this circle as \( H^1 \coloneqq\left\{{ x^2 + y^2 = 1, z = 0}\right\} \), the complement \( H_2 \coloneqq S^3 \setminus H_1 \) will be a regular neighborhood of the \( z{\hbox{-}} \)axis union \( \left\{{\infty }\right\} \):
+
+![image_2021-02-16-19-45-36](figures/image_2021-02-16-19-45-36.png)
+:::
+
+::: {.example title="?"}
+We can write a Heegard splitting of \( S^1 \times S^2 \). Note that \( S^2 = {\mathbb{D}}^2 {\coprod}_{\one} {\mathbb{D}}^2 \), so splitting the product over the union yields \( (S^1 \times{\mathbb{D}}^2) {\coprod}_{\one} (S^1 \times{\mathbb{D}}^2) \), where the new map is still the identity since it's just the identity on each factor. This yields two solid torii glued along their boundaries.
+:::
+
+::: {.theorem title="?"}
+Any closed 3-manifold \( M^3 \) admits a Heegard splitting.
+:::
+
+::: {.proof title="?"}
+A fact from Morse theory: there exists a Morse function \( f: M^3\to {\mathbb{R}} \) such that
+
+1.  \( f(p) = i \coloneqq\mathop{\mathrm{Ind}}(p) \) for every \( p\in \Crit(f) \) (i.e. \( f \) is **self-indexing**), and
+
+2.  \( f \) has exactly one index \( 0 \) (minimum) and one index \( 3 \) (maximum) critical point.
+
+We thus have the following situation:
+
+![image_2021-02-16-19-51-11](figures/image_2021-02-16-19-51-11.png)
+
+The remaining critical points must occur at 2 and 3:
+
+![image_2021-02-16-19-52-00](figures/image_2021-02-16-19-52-00.png)
+
+How can we break this into smaller manifolds? Any time we pass a critical point, we attach a one-handle. Note that we can define a new Morse function \( h \coloneqq 3-f \) Suppose we have \( g \) critical points of index 1 for \( f \) and \( g' \) critical points of index 1 for \( h \).
+
+-   We can check that \( f ^{-1} [0, 1/2] = {\mathbb{B}}^3 \) and \( f ^{-1} (1/2) = S^2 \).
+
+-   \( f ^{-1} [0, 3/2] \Lambda_g, \) a genus \( g \) handlebody, and thus \( f ^{-1} (3/2) = \Sigma_g \) will be a genus \( g \) surface.
+
+    ![image_2021-02-16-19-54-58](figures/image_2021-02-16-19-54-58.png)
+
+-   Repeating the above arguments for \( h \), we get \( f ^{-1} [0, 3/2] = g ^{-1} [3/2, 3] = \Lambda_{g'} \).
+
+::: {.exercise title="?"}
+Show that \( \operatorname{crit}(f) = \operatorname{crit}(h) \) and if \( p\in \operatorname{crit}(f) \) with \( \mathop{\mathrm{Ind}}_f(p) = i \) then \( \mathop{\mathrm{Ind}}_h(p) = 3-i \).
+:::
+
+Thus \( g' \) is the number of index 2 critical points for \( f \). This means that \( {{\partial}}h ^{-1} [0, 3/2] = h ^{-1} (3/2) = f ^{-1} (3/2) \) has genus \( g=g' \), and thus the \( \# \operatorname{crit}(f)_{\mathop{\mathrm{Ind}}=1} = \# \operatorname{crit}(h)_{\mathop{\mathrm{Ind}}=2} = g \). Even without this, we still have our two handlebodies: \( H_1 \coloneqq f ^{-1} [0, 3/2] \) and \( H_2 \coloneqq f ^{-1} [3/2, 3] \) glued over \( \Sigma_g \coloneqq f ^{-1} (3/2) \), which is a genus \( g \) splitting surface.
+:::
+
+::: {.definition title="Equivalence of Heegard Splittings"}
+We'll say that two Heegard splittings \( M = H_1 {\coprod}_{\varphi} H_2 \) and \( M = H_1' {\coprod}_{\varphi} H_2 ' \) are **isotopic** if and only if there exists an ambient isotopy \( \psi: M \times[0, 1] \to M \) such that \( { \left.{{\psi}} \right|_{{M \times\left\{{ 1}\right\} }} }(H_i) = H_i ' \) for each \( i \). Recall that *ambient isotopy* means
+
+-   \( { \left.{{\psi}} \right|_{{ M \times\left\{{ 0 }\right\} }} } = \one \),
+
+-   \( { \left.{{ \psi }} \right|_{{M \times\left\{{ t }\right\} }} } \) is a homeomorphism.
+:::
+
+::: {.question}
+Are *any* two Heegard splittings isotopic?
+:::
+
+::: {.answer}
+No! We can distinguish them by the genus of the splitting surface \( \Sigma \), and we just saw two splittings of \( S^3 \), one with genus 0 and one with genus 1.
+:::
+
+::: {.remark}
+There are some moves to relate different Heegard splittings.
+:::
+
+::: {.definition title="Stabilization"}
+Given a genus \( g \) Heegard splitting \( M = H_1 {\coprod}_{ \varphi} H_2 \), we can produce a genus \( g+1 \) splitting \( M = H_1' \cup_{ \varphi} H_2' \) where
+
+\( H_1' = H_1 \cup\closure{ \eta( \gamma) } \), where the new piece is a closed regular neighborhood of an unknotted arc \( \gamma \) in \( H_2 \). Here *unknotted* means that \( \gamma \) is a properly embedded arc in \( H_2 \cup\Sigma \) whose boundary is in \( \Sigma \) which bounds a contractible disc:
+
+![image_2021-02-16-21-00-33](figures/image_2021-02-16-21-00-33.png)
+
+Note that adding a regular neighborhood around \( \gamma \) has the effect of adding a 1-handle to \( H_1 \). We can then define \( H_2' \coloneqq H_2 \setminus\eta{\gamma} \). Why is this still a handlebody? We have this situation:
+
+![image_2021-02-16-21-04-24](figures/image_2021-02-16-21-04-24.png)
+
+We have the disc below the 1-handle, and if we thicken it to \( {\mathbb{D}}^2 \times I \), we have \( B \coloneqq\eta(\gamma) \cup({\mathbb{D}}^2 \times[0, 1] \cong {\mathbb{B}}^3 \):
+
+![image_2021-02-16-21-07-07](figures/image_2021-02-16-21-07-07.png)
+
+We then have \( H_2' \coloneqq(H_2 \setminus B) \cup({\mathbb{D}}^2 \cup[0, 1] ) \), and in fact there is something in the intersection of these two terms. The parts that are attached to \( H_2 \) are the front and back discs \( {\mathbb{D}}^2 \times\left\{{0, 1}\right\} \):
+
+![image_2021-02-16-21-07-50](figures/image_2021-02-16-21-07-50.png)
+
+So we can identify this as \( H_2' \coloneqq(H_2 \setminus B) {\coprod}_{{\mathbb{D}}^2 \times\left\{{ 0, 1 }\right\} } ({\mathbb{D}}^2 \cup[0, 1] ) \). Note that \( H_2 \setminus B \cong_{C^\infty} H_2 \) are diffeomorphic, and the right-hand side is a 1-handle. To see why this is, consider attaching the middle red part, and then pushing the center part away in order to see the handle:
+
+![image_2021-02-16-21-21-12](figures/image_2021-02-16-21-21-12.png)
+:::
+
+::: {.exercise title="?"}
+Show that the isotopy type of \( H_1' \cup H_2 ' \) is independent of the choice of \( \gamma \).
+:::
+
+::: {.theorem title="?"}
+Any two Heegard splittings can be made isotopic after sufficiently many stabilizations.
+:::
+
+## Heegard Diagrams
+
+2-dimensional pictures of closed 3-manifolds! We have two handlebodies glued along their boundary, so if we can write the handlebodies in terms of 2-dimensional pictures, we can combine them to get a picture of the entire splitting.
+
+::: {.definition title="Attaching Curves"}
+Let \( H \) be a genus \( g \) handlebody. A set of **attaching curves** for \( H \) is a set \( \left\{{ \gamma_1, \cdots, \gamma_g }\right\} \) of pairwise disjoint simple closed curves on \( \Sigma\coloneqq{{\partial}}H \) such that
+
+1.  \( \Sigma\setminus\cup\left\{{\gamma_1, \cdots, \gamma_g}\right\} \) is connected,
+
+2.  All the \( \gamma_i \) bound a disc in \( H \).
+:::
+
+::: {.example title="$S^1 \\cross \\DD^2$"}
+For the solid 2-torus, the attaching curves are copies of \( S^1 \) that bound discs
+
+![image_2021-02-16-21-27-56](figures/image_2021-02-16-21-27-56.png)
+:::
+
+::: {.example title="A genus 2 handlebody"}
+Consider \( {\mathbb{B}}^3 \) with two 1-handles attached, or a solid genus 2 surface:
+
+![image_2021-02-16-21-29-36](figures/image_2021-02-16-21-29-36.png)
+
+Note that curves running around each of the two handles also work:
+
+![image_2021-02-16-21-30-26](figures/image_2021-02-16-21-30-26.png)
+:::
+
+::: {.exercise title="?"}
+Show that \( \Sigma\setminus\cup\left\{{ \gamma_1, \cdots, \gamma_g }\right\} \) is connected \( \iff \) the classes \( [\gamma_1], \cdots, [\gamma_g] \) are linearly independent in \( H_1(\Sigma; {\mathbb{Z}}) \).
+:::
+
+::: {.proposition title="Handlebody from a Heegard Diagram"}
+Given a surface and a set of attaching curves, so the data of \( (\Sigma, \left\{{ \gamma_1, \cdots, \gamma_g }\right\} ) \) , we can build a handlebody \( H \). Note that we can go the other way: given a genus \( g \) handlebody \( H \), we can take \( \Sigma = {{\partial}}H \) and find \( g \) attaching circles.
+
+**The recipe:**
+
+1.  Thicken \( \Sigma \) to \( \Sigma \times[0, 1] \) to get a 3-manifold with 2 boundary components, \( \Sigma\times\left\{{ 1 }\right\} \) and \( \Sigma \times\left\{{ 2 }\right\} \).
+
+2.  Attach thickened discs \( \gamma_i \times\left\{{ 0 }\right\} \) for each \( i \), yielding some \( S^2 \) boundary components.
+
+3.  Fill the \( S^2 \) boundary component with a \( {\mathbb{B}}^3 \).
+
+This yields a genus \( g \) handlebody \( H \) such that \( {{\partial}}H = \Sigma_g \times\left\{{ 1 }\right\} \), where the curves \( \left\{{ \gamma_1 \times\left\{{ 1 }\right\} , \cdots, \gamma_g \times\left\{{ 1 }\right\} }\right\} \).
+:::
+
+::: {.example title="?"}
+Note that after attaching the disc on one end of this new cylinder, we have the following:
+
+![image_2021-02-16-21-37-08](figures/image_2021-02-16-21-37-08.png)
+
+What's left on the boundary is the following:
+
+![image_2021-02-16-21-37-43](figures/image_2021-02-16-21-37-43.png)
+
+This is a copy of \( S^2 \).
+:::
+
+::: {.exercise title="?"}
+Show that for any \( g \) we get a 3-manifold with boundary \( \Sigma \times\left\{{ 1 }\right\} {\coprod}S^2 \) after step (2) above.
+:::
+
+# Lecture 9 (Thursday, February 11)
+
+::: {.remark}
+Last time we saw that \( M_3 = H_1 {\coprod}_{\varphi} H_2 \) as two handlebodies glued along their boundary by a diffeomorphism \( \varphi: {{\partial}}H_1 \to {{\partial}}H_2 \). This is referred to as a **Heegard splitting** for \( M \). We can specify a genus \( g \) handlebody as \( ( \Sigma, \left\{{ \gamma_1, \cdots \gamma_g }\right\} \) where \( \Sigma\setminus\left\{{ \gamma_1, \cdots, \gamma_g }\right\} \) is connected and each \( \gamma_i \) bounds a disc in \( H \).
+
+![image_2021-02-11-11-15-56](figures/image_2021-02-11-11-15-56.png)
+
+Moreover, we can go backwards: given such data, we can build a handlebody \( H \) by
+
+1.  Thickening \( \Sigma \) to obtain \( \Sigma \times[0, 1] \) This yields \( {{\partial}}( \Sigma \times[0, 1] ) = (\Sigma\times\left\{{0}\right\} ) {\coprod}(\Sigma\times\left\{{1}\right\} ) \).
+
+2.  Attach thickened discs to \( \gamma_i \times\left\{{0}\right\} \). This makes the boundary \( (\Sigma \times\left\{{1}\right\} ) {\coprod}S_2 \)
+
+3.  Fill in the \( S^2 \) boundary with a \( B^3 \).
+
+![image_2021-02-11-11-22-43](figures/image_2021-02-11-11-22-43.png)
+:::
+
+::: {.definition title="Heegard Diagrams"}
+A **Heegard diagram** for \( M^3 \) compatible with a splitting \( M = H_1 {\coprod}_{ \varphi} H_2 \) is a triple \( (\Sigma, \alpha, \beta \) where \( \alpha \) and \( \beta \) are attaching circles for \( H_1 \) and \( H_2 \) respectively.
+:::
+
+::: {.example title="Heegard diagram for $S^3$"}
+The following two curves on a torus determine a Heegard splitting for \( S^3 \):
+
+![image_2021-02-11-11-28-43](figures/image_2021-02-11-11-28-43.png)
+:::
+
+::: {.example title="Heegard diagram for $S^1 \\cross S^2$"}
+Writing \( S^1 \times S^2 = D_2 {\coprod}_{\one_{{{\partial}}D^2}} D^2 \), or also \( (S^1 \times D^2) {\coprod}_{\one} (S^1 \times D^2) \).
+
+![image_2021-02-11-11-30-50](figures/image_2021-02-11-11-30-50.png)
+:::
+
+::: {.exercise title="?"}
+Show that the following diagram is a Heegard diagram for \( {\mathbb{RP}}^3 \):
+
+![image_2021-02-11-11-31-45](figures/image_2021-02-11-11-31-45.png)
+
+*Hint: use that \( {\mathbb{RP}}^3 \cong L(2, 1) \) and find a Heegard diagram for \( L(p, q) \).*
+:::
+
+::: {.example title="?"}
+Given a self-indexing Morse function \( f:M \to {\mathbb{R}} \) with exactly one index 0 and one index 3 critical point, pick a generic metric \( g \) so that \( (f, g) \) is a Morse-Smale pair (so the stable and unstable submanifolds intersect transversally). Taking \( - \nabla f \), we can obtain a Heegard diagram The stable submanifolds are codimension of their indices, so e.g. for each index critical point there is a 2-dimensional stable submanifold that intersects the next submanifold in a curve:
+
+![Stable submanifold](figures/image_2021-02-11-11-36-23.png)
+
+This occurs for (say) the \( g \) critical points of index \( 1 \) here, and since they are distinct critical points the stable submanifolds are disjoint. So we can obtain a set of attaching circles for the bottom handlebody \( f ^{-1} ([0, 3/2]) \):
+\[
+\left\{{ M^s(p) \cap f ^{-1} (3/2) {~\mathrel{\Big|}~}p \in \operatorname{crit}(f),\, \mathop{\mathrm{Ind}}(p) = 1 }\right\}
+.\]
+
+So setting these to be the \( \alpha \) curves, repeating with index 2 to get \( \beta \) curves, and setting \( \Sigma\coloneqq f ^{-1} (3, 2) \) we get a Heegard diagram for \( M \).
+:::
+
+::: {.remark}
+Note that given \( (\Sigma, \alpha, \beta \) we can construct \( M \) in the following way:
+
+-   \( (\Sigma, \alpha \) builds \( H_ \alpha \) with \( {{\partial}}H_{\alpha} = \Sigma \).
+-   \( (\Sigma, \beta \) builds \( H_ \beta \) with \( {{\partial}}H_{\beta} = \Sigma \).
+:::
+
+::: {.exercise title="?"}
+Show that Heegard splittings can be used to compute homology, and
+\[
+H_1(M; {\mathbb{Z}}) \cong H_1(\Sigma; {\mathbb{Z}}) / \left\langle{ [ \alpha_1] , \cdots, [ \alpha_g], [ \beta_1 ], \cdots, [\beta_g] }\right\rangle 
+.\]
+:::
+
+## Heegard Moves
+
+::: {.proposition title="?"}
+Given \( M = H_1 \cup H_2 = H_1' \cup H_2' \), we can *stabilize* to obtain \( M = \tilde H_1 \cup\tilde H_2 \). Is there a way to relate the two corresponding Heegard diagrams?
+
+1.  Isotopy. Exchange \( \alpha = \left\{{ \alpha_1, \cdots, \alpha_g }\right\} \) with an ambient isotopy of \( \Sigma \), and similarly \( \beta \), keeping curves of the same type disjoint during the isotopy (where e.g. it's fine if an \( \alpha \) curve intersects a \( \beta \) curve).
+
+![image_2021-02-11-11-49-46](figures/image_2021-02-11-11-49-46.png)
+
+2.  Handleslides (of \( \alpha \) or \( \beta \) curves).
+
+![image_2021-02-11-11-51-54](figures/image_2021-02-11-11-51-54.png)
+
+Equivalently, handle sliding \( \alpha_1 \) over \( \alpha_2 \) replaces \( \alpha_1 \) with \( \alpha_1' \) such that the triple \( \alpha_1, \alpha_1', \alpha_2 \) bound a pair of pants.
+
+![image_2021-02-11-11-53-22](figures/image_2021-02-11-11-53-22.png)
+
+3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{\Large \#}T^2, \alpha \cup\ts{ \alpha_{g+1 } , \beta \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
+
+![image_2021-02-11-12-10-06](figures/image_2021-02-11-12-10-06.png)
+
+3'. Destabilization. Reversing the stabilization operation.
+:::
+
+::: {.exercise title="?"}
+Show that any two sets of attaching curves for a handlebody \( H \) can be related by a finite sequence of (1) and (2).
+:::
+
+::: {.exercise title="?"}
+Show that stabilization yields a Heegard diagram for the same manifold.
+
+*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{\Large \#}S^3 \).*
+:::
+
+::: {.theorem title="?"}
+Any two Heegard diagrams for \( M \) can be connected by a finite sequence of the above moves.
+:::
+
+# Tuesday, February 16
+
+::: {.remark}
+Note that critical points can be used to compute the Euler characteristic, using the fact the \( \chi(C) = \chi(H_*(C)) \), i.e. it can be computed on dimensions of chains or ranks of homology, along with the fact that Morse homology is isomorphic to singular homology. So e.g. for a 3-manifold \( M^3 \), we can show
+\[
+\chi(M^3) = \sum_{i=0}^3 {\operatorname{rank}}H_i 
+= \sum_{i=0}^3 {\operatorname{rank}}CM_i \\
+= 1 - \# \operatorname{crit}_1(f) + \# \operatorname{crit}_2(f) - 1 \\
+=0
+,\]
+since the number of index 2 and index 3 critical points will be the same.
+:::
+
+## Symmetric Product Spaces
+
+::: {.remark}
+Let \( M^3 \) be a closed 3-manifold, then there is a Heegard splitting
+\[
+(\Sigma_g, \alpha = \left\{{ \alpha_1, \cdots, \alpha_g }\right\}, \beta = \left\{{ \beta_1, \cdots, \beta_g }\right\} =( \Sigma_g, H_ \alpha, H_ \beta) && {{\partial}}(H_ \alpha) = {{\partial}}( H_ \beta) = \Sigma
+,\]
+where \( M^3 = H_{ \alpha} \coprod_{ \Sigma} H_ \beta \) and \( g \) is the genus of \( HD \). We refer to \( \Sigma \) as a **Heegard surface**, and this set of data as a **Heegard diagram**.
+
+We'll define \( \operatorname{Sym}^g( \Sigma) \) by letting \( S_g \curvearrowright\Sigma^{\prod^g} \) where if \( \varphi\in S_g \) we set \( \varphi(x_1, \cdots, x_g) = x_{ \varphi(1)}, \cdots, x_{ \varphi(g) } \). Then set \( \Sigma^{\prod^g} \coloneqq\Sigma^{\prod g} / S_g \). Why does this yield a smooth manifold? Is this action free? The diagonal \( D \subseteq \Sigma^{\prod g} \) consists of the points with at least 2 equal coordinates, and it's easy to see that \( S_g\curvearrowright D \) can not be free. However, this still yields a smooth submanifold!
+:::
+
+::: {.lemma title="?"}
+\( \operatorname{Sym}^g(\Sigma) \) is smooth, and any complex structure \( j \) on \( \Sigma \) will induce a complex structure on the quotient, denoted \( \operatorname{Sym}^g(j) \), which is unique in the sense that the quotient map \( \Sigma^{\prod g} \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \) is holomorphic.
+:::
+
+::: {.proof title="?"}
+We'll check this locally, and then leave it as an exercise to check that it extends globally -- this is easy by just considering what happens under transition functions and checking that \( \pi \) is holomorphic. Locally we want to produce a map
+\[ 
+\operatorname{Sym}^g({\mathbb{C}}) &\xrightarrow{f} {\mathbb{C}}^g \\
+\left\{{ z_1, \cdots, z_g }\right\} &\mapsto \qty{ \prod_{i=1}^g (z-z_i) = z^g +a_1 z^{g-1} + \cdots + a_g &\mapsto [a_1, \cdots, a_g] }
+.\]
+This is a bijection, and by the fundamental theorem of algebra, there is an inverse. Equip \( \operatorname{Sym}^g({\mathbb{C}}) \) with a complex structure that makes \( f \) biholomorphic, then \( \operatorname{Sym}^g(j) \) is the complex structure locally equal to this one. This structure is obtained by just pulling back the standard complex structure \( i\times i \times\cdots i \) on \( {\mathbb{C}}^g \).
+:::
+
+::: {.remark}
+\( \operatorname{Sym}^g( \Sigma) \) is a complex manifold of complex dimension \( g \) (or real dimension \( 2g \)). We want to find half-dimensional submanifolds to do Lagrangian-Floer homology. Using the Heegard splitting, write \( {\mathbb{T}}_ \alpha \coloneqq\prod+{i=1}^g \alpha_i \subset \Sigma^{\prod g} \), which is a \( g{\hbox{-}} \)dimensional torus such that \( {\mathbb{T}}_ \alpha \cap D = \emptyset \) since the \( \alpha_i \) are pairwise disjoint. Composing the inclusion above with \( \pi \), we can note that the action of \( S^g \) is free away from the diagonal \( D \), so this composition is an embedding \( {\mathbb{T}}_ \alpha \embeds \operatorname{Sym}^g( \Sigma) \). Similarly, \( {\mathbb{T}}_ \beta\coloneqq\prod_{i=1}^g \beta_i \embeds \operatorname{Sym}^g( \Sigma) \).
+
+Note that we're only working with complex structures now, and haven't upgraded it to a symplectic structure yet. But we don't really need this to count holomorphic discs. Lagrangians \( L \) were defined as submanifolds where \( { \left.{{\omega}} \right|_{{L}} } = 0 \), how do we do this without a symplectic form?
+:::
+
+::: {.definition title="?"}
+Given a complex manifold \( (X, J) \), a submanifold \( L \subseteq X \) is **totally real** if none of its tangent spaces contains a complex line, i.e. \( T_p L \cap J(T_p L) = \left\{{ p, \mathbf{0} }\right\} \) for all \( p\in L \).
+:::
+
+::: {.example title="?"}
+Take a genus \( g \) surface \( \Sigma \):
+
+![image_2021-02-16-11-49-52](figures/image_2021-02-16-11-49-52.png)
+
+Here any tangent vector has to get rotated out of the tangent space: if it were an eigenvector for \( J \), then the rank of \( J \) would be too low, contradicting its definition. Note that any 1-dimensional submanifold of \( (\Sigma, j ) \) is totally real, and so \( {\mathbb{T}}_ \alpha, {\mathbb{T}}_ \beta \) are also totally real submanifolds of \( \Sigma^{\prod g} \). If you restrict \( \pi \) to \( \Sigma^{\prod g}\setminus D \xrightarrow{\pi} \operatorname{Sym}^g(\Sigma) \setminus\pi(D) \), this yields a biholomorphic map.
+:::
+
+::: {.remark}
+We'll write \( \Delta \coloneqq\pi(D) \subseteq \operatorname{Sym}^g( \Sigma) \). Note that if \( \alpha\pitchfork\beta \), then \( {\mathbb{T}}_ \alpha \pitchfork{\mathbb{T}}_ \beta \). Any intersection point \( x \in {\mathbb{T}}_{\alpha} \cap{\mathbb{T}}_{\beta} \) is of the form \( x = \left\{{ x_1, \cdots, x_g}\right\} \subseteq \Sigma \) such that each \( \alpha_i, \beta_j \) contain exactly one of the coordinates of \( x \).
+:::
+
+::: {.example title="?"}
+The following is a diagram for \( {\mathbb{RP}}^3 \):
+
+![Heegard diagram for \( {\mathbb{RP}}^3 \)](figures/image_2021-02-16-12-00-55.png)
+
+Here \( g=1 \) and so \( \operatorname{Sym}^1(T^2) = T^2 \). We also have \( {\mathbb{T}}_{ \alpha} = \alpha, {\mathbb{T}}_{ \beta} = \beta \), and their intersection is \( {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} = \alpha \cap\beta = \left\{{A, B}\right\} \)
+:::
+
+::: {.example title="Heegard diagram for the Poincaré homology sphere"}
+Here we have a Poincaré homology sphere \( P^3 \), i.e. a 3-manifold with the same homology as \( S^3 \), i.e. \( H_*(P^3) = [{\mathbb{Z}}, 0, 0, {\mathbb{Z}}] \) (??)
+
+![image_2021-02-16-12-01-57](figures/image_2021-02-16-12-01-57.png)
+
+::: {.exercise title="?"}
+Compute \( H_*(P^3) \) using this diagram, particularly \( H_1 \). Using Poincaré duality here is fine!
+:::
+
+The circles with the same color are the "feet" of a handle attachment, or equivalently removing the two circles and identifying their boundary with reversed orientation. The two different colors for circles indicate that this will be genus 2 The arcs between same-colored circles indicate loops that continue through the handle which aren't shown. Tracing through the lines on the diagram, there are two \( \alpha \) curves and two \( \beta \) curves. Since \( g=2 \), we can identify \( \operatorname{Sym}^2( \Sigma) \supseteq \alpha_1 \times\alpha_2 = {\mathbb{T}}_{\alpha}, \beta_1 \times\beta_2 = {\mathbb{T}}_{\beta} \). The two black circles indicate intersection points in \( {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \). However, there are more than just those two!
+
+::: {.exercise title="?"}
+Show that \( {\left\lvert { {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{\beta} } \right\rvert} = 18 \).
+:::
+
+Computing the intersections:
+
+```{=tex}
+\begin{tikzcd}
+    && {\beta_1} && {\beta_2} \\
+    {\alpha_1} && 3 && 2 \\
+    \\
+    {\alpha_2} && 3 && 4
+    \arrow["12"{description, pos=0.8}, dashed, tail reversed, from=2-3, to=4-5]
+    \arrow["6"{description, pos=0.7}, dashed, tail reversed, from=4-3, to=2-5]
+\end{tikzcd}
+```
+```{=tex}
+\todo[inline]{How to read this from the diagram?}
+```
+We're really working in \( \operatorname{Sym}^g(\Sigma) \), but for computations, we'll work directly with the Heegard diagram.
+:::
+
+::: {.remark}
+For Lagrangian Floer homology, we'll have a triple \( (\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{ \alpha}, {\mathbb{T}}_{\beta} ) \). We'll define
+\[
+CF( \Sigma, \alpha, \beta) \coloneqq\bigoplus_{x\in {\mathbb{T}}_{\alpha} \cap{\mathbb{T}}_{\beta} } {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{ x }\right\rangle \\ \\
+{{\partial}}(x) \coloneqq\sum_{y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{\beta}, \mu = 1} \# \widehat{\mathcal{M}} y
+.\]
+
+We'll first figure out how to count continuous discs up to homotopy classes, since holomorphic discs are much more restrictive. We'll see that \( \pi_2 \) plays a role, and define the topology of \( \operatorname{Sym}^g \).
+:::
+
+# Tuesday, February 16
+
+# Thursday, February 18
+
+::: {.remark}
+Today: topology of symmetric product spaces \( \operatorname{Sym}^g \). We had an assignment
+\[
+( \Sigma_g, \alpha, \beta) &\mapsto ( \operatorname{Sym}^g( \Sigma), {\mathbb{T}}_ \alpha, {\mathbb{T}}_ \beta)
+,\]
+where if \( \alpha, \beta \) are all transverse then so far \( {\mathbb{T}}_ \alpha, {\mathbb{T}}_ \beta \), since e.g. \( {\mathbb{T}}_ \alpha = \prod_{i=1}^g \alpha_i \). We wanted to define a chain complex
+\[
+CF( \sigma, \alpha, \beta) \coloneqq\bigoplus _{x\in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_{ \beta } } {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{ x }\right\rangle \\
+{{\partial}}x \coloneqq\sum_{ \substack{ y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta } \\  \mu(x, y)  = 1} } \# \mathcal{M}(x, y) y 
+,\]
+where \( \mu \) is the *Maslov index* and we want to count holomorphic discs. We'll first talk about continuous (topological) discs.
+:::
+
+::: {.lemma title="?"}
+\[
+\pi_1( \operatorname{Sym}^g( \Sigma ) ) \cong H_1 ( \operatorname{Sym}^g( \Sigma ) ) \cong H_1 (\Sigma)
+,\]
+so the fundamental group is abelian.
+:::
+
+::: {.remark}
+For a proof of the first isomorphism, see Lemma 2.6 in [@OSZ04a]. Idea of proof for the second isomorphism: we'll define a map
+\[
+\iota: H_1 ( \Sigma) &\to H_1( \operatorname{Sym}^g( \Sigma) ) \\
+x &\mapsto \left\{{ x, z, \cdots, z }\right\} 
+,\]
+for some fixed \( z \in \Sigma \), along with its inverse. Note that we're identifying an embedding \( \iota( \Sigma ) = \Sigma \times\prod_{i=1}^{g-1} \left\{{ z }\right\} \subseteq \operatorname{Sym}^g( \Sigma) \). Now define \( j \coloneqq\iota_* \) the induced map on homology.
+\[
+j: H_1( \operatorname{Sym}^g (\Sigma) ) \to H_1 ( \Sigma) \\
+.\]
+Picking a loop \( \gamma: S^1 \to \operatorname{Sym}^g( \Sigma ) \), note that \( \operatorname{diag}\subset \operatorname{Sym}^g( \Sigma) \) has codimension 2, and so we can perturb \( \gamma \) to be disjoint from \( \operatorname{diag} \). We can arrange so that \( \gamma \) is the union of \( g \) paths \( \gamma_1, \cdots, \gamma_g \) such that each \( \gamma_i \) connects \( x_i \in \gamma(0) \) to \( x_{ \sigma(i) } \in \gamma(0) \) where \( \gamma_0 = \left\{{ x_1, \cdots, x_g }\right\} \) and \( \sigma\in S_g \) is a permutation.
+
+::: {.example title="?"}
+For example, for \( g=3 \):
+
+![image_2021-02-18-11-30-51](figures/image_2021-02-18-11-30-51.png)
+
+Then \( \left\{{ \gamma_1(t), \gamma_2(t), \gamma_3(t) }\right\} \) is a loop from \( \gamma(0) \to \gamma(0) \in \operatorname{Sym}^3( \Sigma) \).
+:::
+
+This means that \( \bigcup_{i=1}^g \gamma_i \) is a 1-cycle in \( \Sigma \), and thus \( [ \cup g_i ] \in H_1( \Sigma) \). So we'll define this as \( j([ \gamma ]) = [ \cup\gamma_i ] \).
+
+Let \( M \coloneqq\left\{{ (\mathbf{x}, y) {~\mathrel{\Big|}~}\mathbf{x} \in \operatorname{Sym}^g( \Sigma), y\in \mathbf{x} }\right\} \), then we'll define a \( g:1 \) branched cover away from \( \pi ^{-1} \diagonal \) that yields a fiber bundle:
+
+```{=tex}
+\begin{tikzcd}
+    {S^1} && M \\
+    \\
+    {S^1} && {\operatorname{Sym}^g(\Sigma)} && \Sigma
+    \arrow["{\exists \tilde \gamma}", dashed, from=1-1, to=1-3]
+    \arrow["{\pi, \, g:1}", from=1-3, to=3-3]
+    \arrow["{\exists g:1}"', dashed, from=1-1, to=3-1]
+    \arrow["\gamma"', from=3-1, to=3-3]
+    \arrow[curve={height=-18pt}, dotted, from=1-1, to=3-5]
+    \arrow["{\pi_2}", curve={height=-24pt}, dotted, from=1-3, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJTXjEiXSxbMCwyLCJTXjEiXSxbMiwwLCJNIl0sWzIsMiwiXFxTeW0lZyhcXFNpZ21hKSJdLFs0LDIsIlxcU2lnbWEiXSxbMCwyLCJcXGV4aXN0cyBcXHRpbGRlIFxcZ2FtbWEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMiwzLCJcXHBpLCBcXCwgZzoxIl0sWzAsMSwiXFxleGlzdHMgZzoxIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzEsMywiXFxnYW1tYSIsMl0sWzAsNCwiIiwwLHsiY3VydmUiOi0zLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMiw0LCJcXHBpXzIiLDAseyJjdXJ2ZSI6LTQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dXQ==)
+
+This can be restricted to \( M \setminus\pi ^{-1} (\operatorname{diag}) \xrightarrow{g:1} \operatorname{Sym}^g( \Sigma) \setminus\operatorname{diag} \). Here \( j([ \gamma ]) = [ \pi_2 \circ \gamma] \) and \( j \circ \iota_* = \one \).
+
+::: {.example title="?"}
+We can use a Heegard diagram and Mayer Vietoris to compute the homology:
+\[
+H_1( M; {\mathbb{Z}}) = 
+{ 
+H_1(\Sigma; {\mathbb{Z}}) 
+\over 
+\left\langle{ [\alpha_1], \cdots, [ \alpha_g], [\beta_1], \cdots, [\beta_g] }\right\rangle
+}
+\cong 
+{ 
+H_1( \operatorname{Sym}^g( \Sigma ) ) \over \left\langle{ H_1( {\mathbb{T}}_ \alpha ), H_1 ({\mathbb{T}}_ \beta ) }\right\rangle
+}
+.\]
+:::
+:::
+
+::: {.proposition title="?"}
+\[
+\pi_2( \operatorname{Sym}^g( \Sigma ) ) \cong {\mathbb{Z}}
+.\]
+:::
+
+::: {.remark}
+The generator comes from hyperelliptic involution:
+
+![image_2021-02-18-11-58-40](figures/image_2021-02-18-11-58-40.png)
+
+Then consider the quotient \( \Sigma / \tau \). To identify this quotient, since the top half is identified with the bottom half, we can first forget about the bottom half, and then forget about half of the arcs along the axis of rotation:
+
+![image_2021-02-18-12-01-41](figures/image_2021-02-18-12-01-41.png)
+
+Note that this results in a copy of \( S^2 \). We can define a map
+\[
+\Sigma &\to \Sigma^{\prod_g} \\
+x &\mapsto (x, \tau(x), z, \cdots, z)
+.\]
+This extends to a map to \( \operatorname{Sym}^g( \Sigma) \), since \( \tau(x) \mapsto (\tau(x), x, z, \cdots, z) \) and these will be equal in \( \operatorname{Sym}^g \). So we can factor this through the quotient from above:
+
+```{=tex}
+\begin{tikzcd}
+    \Sigma &&& {\Sigma^{\prod_g}} \\
+    \\
+    {S^2} &&& {\operatorname{Sym}^g( \Sigma)}
+    \arrow["f", from=1-1, to=1-4]
+    \arrow["q"', from=1-1, to=3-1]
+    \arrow[dashed, from=1-4, to=3-4]
+    \arrow[dashed, from=3-1, to=3-4]
+\end{tikzcd}
+```
+:::
+
+::: {.definition title="Whitney Disc"}
+Given \( x, y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \), a **Whitney disc** from \( x \) to \( y \) is a map
+\[
+\varphi: {\mathbb{D}}^2 \to \operatorname{Sym}^g( \Sigma) 
+\]
+such that
+\[
+\phi(-i) &= x \\
+\phi(i) &= y \\
+\phi(e_1) &\subseteq {\mathbb{T}}_{ \alpha} \\
+\phi(e_2) &\subseteq {\mathbb{T}}_{ \beta }
+.\]
+
+![image_2021-02-18-12-22-03](figures/image_2021-02-18-12-22-03.png)
+
+We say \( \varphi_1 \sim \varphi_2 \) if and only if they are homotopic relative to \( {\mathbb{T}}_{ \alpha}, {\mathbb{T}}_{ \beta} \). We'll write \( \pi_2(x, y) \) for the homotopy class of Whitney discs from \( x \) to \( y \). There is a concatenation operation:
+\[
+\ast: \pi_2(x, y) \times\pi_2(y, z) \to \pi_2(x, z)
+.\]
+
+![image_2021-02-18-12-24-03](figures/image_2021-02-18-12-24-03.png)
+
+Note that this is precisely concatenation of paths in the path space \( \mathcal{P} \).
+:::
+
+::: {.exercise title="?"}
+If \( x=y=z \), then this yields an operation on \( (\pi_2(x, x), \ast) \) which defines a group.
+:::
+
+::: {.remark}
+We can find obstructions to holomorphic discs by just looking at the topology. For \( x, y\in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \), choose two paths connecting them:
+\[
+a: I &\to {\mathbb{T}}_{ \alpha}\\
+b: I &\to {\mathbb{T}}_{ \beta} 
+.\]
+
+![image_2021-02-18-12-27-15](figures/image_2021-02-18-12-27-15.png)
+
+We can consider the homology class \( [a-b] \) to investigate \( \pi_1 \). This is well-defined as a loop
+\[
+\varepsilon(x, y) \coloneqq[a-b] \in { H_1 ( \operatorname{Sym}^g ( \Sigma ) ) \over  \left\langle{ H_1( {\mathbb{T}}_{ \alpha } ) \oplus H_1 ( {\mathbb{T}}_{ \beta} ) }\right\rangle } \cong H_1(M)
+.\]
+This turns out to be independent of the choice of \( a, b \), and thus
+\[
+\varepsilon(x, y) \neq 0 \implies \pi_2(x, y) = \emptyset
+,\]
+and there are no continuous discs.
 :::
 
 [^1]: See Sarkour-Wang
