@@ -1707,7 +1707,7 @@ Equivalently, handle sliding \( \alpha_1 \) over \( \alpha_2 \) replaces \( \alp
 
 ![image_2021-02-11-11-53-22](figures/image_2021-02-11-11-53-22.png)
 
-3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{\Large \#}T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
+3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{\Huge \#}T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
 
 ![image_2021-02-11-12-10-06](figures/image_2021-02-11-12-10-06.png)
 
@@ -1721,7 +1721,7 @@ Show that any two sets of attaching curves for a handlebody \( H \) can be relat
 ::: {.exercise title="?"}
 Show that stabilization yields a Heegard diagram for the same manifold.
 
-*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{\Large \#}S^3 \).*
+*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{\Huge \#}S^3 \).*
 :::
 
 ::: {.theorem title="?"}
