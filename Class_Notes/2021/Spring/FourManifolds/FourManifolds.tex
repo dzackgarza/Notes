@@ -2908,22 +2908,29 @@ degree \(2i\), so \(c_i \in H^{2i}(BU_d, {\mathbb{Z}})\).
 \begin{definition}[?]
 
 There is a map \(BU_{d-1} \to BU_d\), which we can identify as
-\({\operatorname{Gr}}_{d-1}(C^{\infty }) \to {\operatorname{Gr}}_d({\mathbb{C}}^{\infty })\).
-This is defined by sending a basis
-\(\left\{{v_1, \cdots, v_{d-1}}\right\} \mapsto {\operatorname{span}}\left\{{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }\right\}\)
-where \(s: {\mathbb{C}}^{\infty } \to {\mathbb{C}}^{\infty}\) is the map
-that shifts every coordinate to the right by one.
+\begin{align*}
+{\operatorname{Gr}}_{d-1}(C^{\infty }) &\to {\operatorname{Gr}}_d({\mathbb{C}}^{\infty }) \\
+\left\{{v_1, \cdots, v_{d-1}}\right\} &\mapsto {\operatorname{span}}\left\{{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }\right\}
+.\end{align*}
+This is defined by sending a basis where
+\(s: {\mathbb{C}}^{\infty } \to {\mathbb{C}}^{\infty}\) is the map that
+shifts every coordinate to the right by one.
 
 \todo[inline]{
   Question: does ${\operatorname{Gr}}_d({\mathbb{C}}^{\infty})$ deformation retract onto the image of this map?
 }
 
-This will yield a fiber sequence \(S^{2d-1} \to BU_{d-1} \to BU_d\), and
-using connectedness of the sphere and the LES in homotopy this will
-identify \(H^*(BU_d) = H^*(BU_{d-1})[c_d]\) where
-\(c_d \in H^{2d}(BU_d)\). The \textbf{Chern class} of a vector bundle
-\(\mathcal{E}\) , denoted \(c_k( \mathcal{E} )\), will be defined as the
-pullback \(f^* c_k\).
+This will yield a fiber sequence
+\begin{align*}
+S^{2d-1} \to BU_{d-1} \to BU_d
+\end{align*}
+and using connectedness of the sphere and the LES in homotopy this will
+identify
+\begin{align*}
+H^*(BU_d) = H^*(BU_{d-1})[c_d] && \text{where } c_d \in H^{2d}(BU_d)
+.\end{align*}
+The \textbf{Chern class} of a vector bundle \(\mathcal{E}\) , denoted
+\(c_k( \mathcal{E} )\), will be defined as the pullback \(f^* c_k\).
 
 \end{definition}
 
@@ -2936,7 +2943,7 @@ As \(n\to \infty\), we have
 \begin{align*}
 H^*(BO_n, {\mathbb{Z}}/2{\mathbb{Z}}) = {\mathbb{Z}}/2{\mathbb{Z}}[w_1, w_2, \cdots]
 && w_i \in H^i
-\end{align*}
+.\end{align*}
 
 \end{theorem}
 
@@ -3103,6 +3110,11 @@ which is a different trivialization of the same bundle:
 \end{tikzcd}
 \end{center}
 
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHJve0x9e1VfaX0iXSxbMiwwLCJVX2kgXFxjcm9zcyBcXENDIl0sWzUsMCwiVV9pIFxcY3Jvc3MgXFxDQyJdLFswLDEsImhfaSJdLFsxLDIsIlxcY2RvdCBzX2kiXSxbMCwyLCIiLDIseyJjdXJ2ZSI6NX1dXQ==}{Link
+to Diagram}
+\end{quote}
+
 So the \((t_{ U_{ij}}\) change \emph{exactly} by an
 \({{\partial}}^0( s_i)\). Thus the following map is well-defined:
 \begin{align*}
@@ -3111,7 +3123,7 @@ L \mapsto [ (t_{U_{ij}} ) ] \in H^1(X; {\mathcal{O}}^{\times})
 
 There is another construction of the map
 \begin{align*}
-\left\{{L}\right\} *\to H^2(X; {\mathbb{Z}}) \\
+\left\{{L}\right\} &\to H^2(X; {\mathbb{Z}}) \\
 L &\mapsto c_1(L)
 .\end{align*}
 Take a smooth section of \(L\) and \(s\in H^0(X; L)\) that intersects an
@@ -3165,7 +3177,7 @@ and a map \(f:Z\to X\) where both split. We can write
 f^* \mathcal{E} &= \bigoplus L_i 
 && c(f^* \mathcal{E} ) = \prod \qty{ 1 + c_1(L_i) } \\
 f^* \mathcal{F} &= \bigoplus M_j 
-&& c(f^* \mathcal{E} ) = \prod \qty{ 1 + c_1(M_j) } \\
+&& c(f^* \mathcal{E} ) = \prod \qty{ 1 + c_1(M_j) }
 .\end{align*}
 
 We thus have

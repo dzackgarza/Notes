@@ -2415,14 +2415,25 @@ Show that $H^*(BU_d; \ZZ)$ stabilizes as $d\to \infty$ to an infinitely generate
 
 
 :::{.definition title="?"}
-There is a map $BU_{d-1} \to BU_d$, which we can identify as $\Gr_{d-1}(C^{\infty }) \to \Gr_d(\CC^{\infty })$.
-This is defined by sending a basis $\ts{v_1, \cdots, v_{d-1}} \mapsto \spanof\ts{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }$ where $s: \CC^{\infty } \to \CC^{\infty}$ is the map that shifts every coordinate to the right by one.
+There is a map $BU_{d-1} \to BU_d$, which we can identify as 
+\[
+\Gr_{d-1}(C^{\infty }) &\to \Gr_d(\CC^{\infty }) \\
+\ts{v_1, \cdots, v_{d-1}} &\mapsto \spanof\ts{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }
+.\]
+This is defined by sending a basis where $s: \CC^{\infty } \to \CC^{\infty}$ is the map that shifts every coordinate to the right by one.
 
 \todo[inline]{
   Question: does $\Gr_d(\CC^{\infty})$ deformation retract onto the image of this map?
 }
 
-This will yield a fiber sequence $S^{2d-1} \to BU_{d-1} \to BU_d$, and using connectedness of the sphere and the LES in homotopy this will identify $H^*(BU_d) = H^*(BU_{d-1})[c_d]$ where $c_d \in H^{2d}(BU_d)$.
+This will yield a fiber sequence 
+\[
+S^{2d-1} \to BU_{d-1} \to BU_d
+\] 
+and using connectedness of the sphere and the LES in homotopy this will identify 
+\[
+H^*(BU_d) = H^*(BU_{d-1})[c_d] && \text{where } c_d \in H^{2d}(BU_d)
+.\]
 The **Chern class** of a vector bundle \( \mathcal{E}  \) , denoted \( c_k( \mathcal{E} )  \), will be defined as the pullback $f^* c_k$.
 :::
 
@@ -2438,7 +2449,7 @@ The **Chern class** of a vector bundle \( \mathcal{E}  \) , denoted \( c_k( \mat
 As $n\to \infty$, we have \[
 H^*(BO_n, \ZZ/2\ZZ) = \ZZ/2\ZZ[w_1, w_2, \cdots]
 && w_i \in H^i
-\]
+.\]
 :::
 
 :::{.definition title="?"}
@@ -2563,13 +2574,15 @@ since transitions functions satisfy the cocycle condition.
 So in fact $(t_{U_{ij}}) \in Z^1(X; \OO\units) = \ker \bd^1$, and we can take its equivalence class \( [ ( t_{U_{ij} } ) ] \in H^1(X; \OO\units) = \ker \bd^1 / \im \bd^0 \).
 Changing trivializations by some $s_i \in \prod_i \OO\units(U_i)$ yields a composition which is a different trivialization of the same bundle:
 
-% https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHJve0x9e1VfaX0iXSxbMiwwLCJVX2kgXFxjcm9zcyBcXENDIl0sWzUsMCwiVV9pIFxcY3Jvc3MgXFxDQyJdLFswLDEsImhfaSJdLFsxLDIsIlxcY2RvdCBzX2kiXSxbMCwyLCIiLDIseyJjdXJ2ZSI6NX1dXQ==
 \begin{tikzcd}
 	{\ro{L}{U_i}} && {U_i \cross \CC} &&& {U_i \cross \CC}
 	\arrow["{h_i}", from=1-1, to=1-3]
 	\arrow["{\cdot s_i}", from=1-3, to=1-6]
 	\arrow[curve={height=30pt}, from=1-1, to=1-6]
 \end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHJve0x9e1VfaX0iXSxbMiwwLCJVX2kgXFxjcm9zcyBcXENDIl0sWzUsMCwiVV9pIFxcY3Jvc3MgXFxDQyJdLFswLDEsImhfaSJdLFsxLDIsIlxcY2RvdCBzX2kiXSxbMCwyLCIiLDIseyJjdXJ2ZSI6NX1dXQ==)
+
 
 So the $(t_{ U_{ij}}$ change *exactly* by an $\bd^0( s_i)$.
 Thus the following map is well-defined:
@@ -2579,7 +2592,7 @@ L \mapsto [ (t_{U_{ij}} ) ] \in H^1(X; \OO\units)
 
 There is another construction of the map
 \[
-\ts{L} *\to H^2(X; \ZZ) \\
+\ts{L} &\to H^2(X; \ZZ) \\
 L &\mapsto c_1(L)
 .\]
 Take a smooth section of $L$ and $s\in H^0(X; L)$ that intersects an $\OO\dash$section of $L$ transversely.
@@ -2621,7 +2634,7 @@ We can write
 f^* \bundle{E} &= \bigoplus L_i 
 && c(f^* \bundle{E} ) = \prod \qty{ 1 + c_1(L_i) } \\
 f^* \bundle{F} &= \bigoplus M_j 
-&& c(f^* \bundle{E} ) = \prod \qty{ 1 + c_1(M_j) } \\
+&& c(f^* \bundle{E} ) = \prod \qty{ 1 + c_1(M_j) }
 .\]
 
 We thus have

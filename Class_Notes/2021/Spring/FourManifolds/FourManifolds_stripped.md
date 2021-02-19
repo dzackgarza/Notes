@@ -1607,14 +1607,27 @@ Show that \( H^*(BU_d; {\mathbb{Z}}) \) stabilizes as \( d\to \infty \) to an in
 :::
 
 ::: {.definition title="?"}
-There is a map \( BU_{d-1} \to BU_d \), which we can identify as \( {\operatorname{Gr}}_{d-1}(C^{\infty }) \to {\operatorname{Gr}}_d({\mathbb{C}}^{\infty }) \). This is defined by sending a basis \( \left\{{v_1, \cdots, v_{d-1}}\right\} \mapsto {\operatorname{span}}\left\{{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }\right\} \) where \( s: {\mathbb{C}}^{\infty } \to {\mathbb{C}}^{\infty} \) is the map that shifts every coordinate to the right by one.
+There is a map \( BU_{d-1} \to BU_d \), which we can identify as
+\[
+{\operatorname{Gr}}_{d-1}(C^{\infty }) &\to {\operatorname{Gr}}_d({\mathbb{C}}^{\infty }) \\
+\left\{{v_1, \cdots, v_{d-1}}\right\} &\mapsto {\operatorname{span}}\left\{{ (1, 0, 0, \cdots), sv_1, \cdots, sv_{d-1} }\right\}
+.\]
+This is defined by sending a basis where \( s: {\mathbb{C}}^{\infty } \to {\mathbb{C}}^{\infty} \) is the map that shifts every coordinate to the right by one.
 
 ```{=tex}
 \todo[inline]{
   Question: does ${\operatorname{Gr}}_d({\mathbb{C}}^{\infty})$ deformation retract onto the image of this map?
 }
 ```
-This will yield a fiber sequence \( S^{2d-1} \to BU_{d-1} \to BU_d \), and using connectedness of the sphere and the LES in homotopy this will identify \( H^*(BU_d) = H^*(BU_{d-1})[c_d] \) where \( c_d \in H^{2d}(BU_d) \). The **Chern class** of a vector bundle \( \mathcal{E} \) , denoted \( c_k( \mathcal{E} ) \), will be defined as the pullback \( f^* c_k \).
+This will yield a fiber sequence
+\[
+S^{2d-1} \to BU_{d-1} \to BU_d
+\]
+and using connectedness of the sphere and the LES in homotopy this will identify
+\[
+H^*(BU_d) = H^*(BU_{d-1})[c_d] && \text{where } c_d \in H^{2d}(BU_d)
+.\]
+The **Chern class** of a vector bundle \( \mathcal{E} \) , denoted \( c_k( \mathcal{E} ) \), will be defined as the pullback \( f^* c_k \).
 :::
 
 # Wednesday, February 10
@@ -1624,7 +1637,7 @@ As \( n\to \infty \), we have
 \[
 H^*(BO_n, {\mathbb{Z}}/2{\mathbb{Z}}) = {\mathbb{Z}}/2{\mathbb{Z}}[w_1, w_2, \cdots]
 && w_i \in H^i
-\]
+.\]
 :::
 
 ::: {.definition title="?"}
@@ -1740,6 +1753,8 @@ since transitions functions satisfy the cocycle condition. So in fact \( (t_{U_{
     \arrow[curve={height=30pt}, from=1-1, to=1-6]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHJve0x9e1VfaX0iXSxbMiwwLCJVX2kgXFxjcm9zcyBcXENDIl0sWzUsMCwiVV9pIFxcY3Jvc3MgXFxDQyJdLFswLDEsImhfaSJdLFsxLDIsIlxcY2RvdCBzX2kiXSxbMCwyLCIiLDIseyJjdXJ2ZSI6NX1dXQ==)
+
 So the \( (t_{ U_{ij}} \) change *exactly* by an \( {{\partial}}^0( s_i) \). Thus the following map is well-defined:
 \[
 L \mapsto [ (t_{U_{ij}} ) ] \in H^1(X; {\mathcal{O}}^{\times})
@@ -1747,7 +1762,7 @@ L \mapsto [ (t_{U_{ij}} ) ] \in H^1(X; {\mathcal{O}}^{\times})
 
 There is another construction of the map
 \[
-\left\{{L}\right\} *\to H^2(X; {\mathbb{Z}}) \\
+\left\{{L}\right\} &\to H^2(X; {\mathbb{Z}}) \\
 L &\mapsto c_1(L)
 .\]
 Take a smooth section of \( L \) and \( s\in H^0(X; L) \) that intersects an \( {\mathcal{O}}{\hbox{-}} \)section of \( L \) transversely. Then
@@ -1782,7 +1797,7 @@ To prove this, apply the splitting principle. Choose \( Y, Y' \) splitting \( \m
 f^* \mathcal{E} &= \bigoplus L_i 
 && c(f^* \mathcal{E} ) = \prod \qty{ 1 + c_1(L_i) } \\
 f^* \mathcal{F} &= \bigoplus M_j 
-&& c(f^* \mathcal{E} ) = \prod \qty{ 1 + c_1(M_j) } \\
+&& c(f^* \mathcal{E} ) = \prod \qty{ 1 + c_1(M_j) }
 .\]
 
 We thus have
