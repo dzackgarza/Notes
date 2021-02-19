@@ -1767,7 +1767,7 @@ This is a bijection, and by the fundamental theorem of algebra, there is an inve
 :::
 
 ::: {.remark}
-\( \operatorname{Sym}^g( \Sigma) \) is a complex manifold of complex dimension \( g \) (or real dimension \( 2g \)). We want to find half-dimensional submanifolds to do Lagrangian-Floer homology. Using the Heegard splitting, write \( {\mathbb{T}}_ \alpha \coloneqq\prod+{i=1}^g \alpha_i \subset \Sigma^{\prod g} \), which is a \( g{\hbox{-}} \)dimensional torus such that \( {\mathbb{T}}_ \alpha \cap D = \emptyset \) since the \( \alpha_i \) are pairwise disjoint. Composing the inclusion above with \( \pi \), we can note that the action of \( S^g \) is free away from the diagonal \( D \), so this composition is an embedding \( {\mathbb{T}}_ \alpha \embeds \operatorname{Sym}^g( \Sigma) \). Similarly, \( {\mathbb{T}}_ \beta\coloneqq\prod_{i=1}^g \beta_i \embeds \operatorname{Sym}^g( \Sigma) \).
+\( \operatorname{Sym}^g( \Sigma) \) is a complex manifold of complex dimension \( g \) (or real dimension \( 2g \)). We want to find half-dimensional submanifolds to do Lagrangian-Floer homology. Using the Heegard splitting, write \( {\mathbb{T}}_ \alpha \coloneqq\prod+{i=1}^g \alpha_i \subset \Sigma^{\prod g} \), which is a \( g{\hbox{-}} \)dimensional torus such that \( {\mathbb{T}}_ \alpha \cap D = \emptyset \) since the \( \alpha_i \) are pairwise disjoint. Composing the inclusion above with \( \pi \), we can note that the action of \( S^g \) is free away from the diagonal \( D \), so this composition is an embedding \( {\mathbb{T}}_ \alpha \hookrightarrow\operatorname{Sym}^g( \Sigma) \). Similarly, \( {\mathbb{T}}_ \beta\coloneqq\prod_{i=1}^g \beta_i \hookrightarrow\operatorname{Sym}^g( \Sigma) \).
 
 Note that we're only working with complex structures now, and haven't upgraded it to a symplectic structure yet. But we don't really need this to count holomorphic discs. Lagrangians \( L \) were defined as submanifolds where \( { \left.{{\omega}} \right|_{{L}} } = 0 \), how do we do this without a symplectic form?
 :::
@@ -1885,7 +1885,7 @@ Then \( \left\{{ \gamma_1(t), \gamma_2(t), \gamma_3(t) }\right\} \) is a loop fr
 
 This means that \( \bigcup_{i=1}^g \gamma_i \) is a 1-cycle in \( \Sigma \), and thus \( [ \cup g_i ] \in H_1( \Sigma) \). So we'll define this as \( j([ \gamma ]) = [ \cup\gamma_i ] \).
 
-Let \( M \coloneqq\left\{{ (\mathbf{x}, y) {~\mathrel{\Big|}~}\mathbf{x} \in \operatorname{Sym}^g( \Sigma), y\in \mathbf{x} }\right\} \), then we'll define a \( g:1 \) branched cover away from \( \pi ^{-1} \diagonal \) that yields a fiber bundle:
+Let \( M \coloneqq\left\{{ (\mathbf{x}, y) {~\mathrel{\Big|}~}\mathbf{x} \in \operatorname{Sym}^g( \Sigma), y\in \mathbf{x} }\right\} \), then we'll define a \( g:1 \) branched cover away from \( \pi ^{-1} \Delta \) that yields a fiber bundle:
 
 ```{=tex}
 \begin{tikzcd}
