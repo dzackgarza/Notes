@@ -1707,7 +1707,7 @@ Equivalently, handle sliding \( \alpha_1 \) over \( \alpha_2 \) replaces \( \alp
 
 ![image_2021-02-11-11-53-22](figures/image_2021-02-11-11-53-22.png)
 
-3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{\Large \#}T^2, \alpha \cup\ts{ \alpha_{g+1 } , \beta \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
+3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{\Large \#}T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
 
 ![image_2021-02-11-12-10-06](figures/image_2021-02-11-12-10-06.png)
 
