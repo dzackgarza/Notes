@@ -3080,7 +3080,7 @@ Here we had
 
 - $t \in H^0(L\tensor A^{0, 1})$
 - $\conjugate{t} \in H^0(\conjugate L\tensor A^{1,0})$
-- $h\in H^0( L ^{-1} \conjugate{ L ^{-1} })$
+- $h\in H^0( L ^{-1} \tensor \conjugate{ L ^{-1} })$
 :::
 
 

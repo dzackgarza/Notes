@@ -2149,7 +2149,7 @@ We showed \( {\left\langle {\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1
 
 -   \( t \in H^0(L\otimes A^{0, 1}) \)
 -   \( {\overline{{t}}} \in H^0({\overline{{L}}}\otimes A^{1,0}) \)
--   \( h\in H^0( L ^{-1} {\overline{{ L ^{-1} }}}) \)
+-   \( h\in H^0( L ^{-1} \otimes{\overline{{ L ^{-1} }}}) \)
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
