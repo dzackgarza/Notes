@@ -281,6 +281,7 @@
 \newcommand{\dist}[0]{\operatorname{dist}}
 \newcommand{\Dist}[0]{\operatorname{Dist}}
 \newcommand{\crit}[0]{\operatorname{crit}}
+\newcommand{\Crit}[0]{\operatorname{Crit}}
 \newcommand{\diam}[0]{{\operatorname{diam}}}
 \newcommand{\gal}[0]{\operatorname{Gal}}
 \newcommand{\diff}[0]{\operatorname{Diff}}
@@ -2024,7 +2025,7 @@ which is the Cauchy-Riemann equation.
 :::
 
 :::{.exercise title="?"}
-Check that this equation can be written as $J\, du = \du \circ i$ where $i$ is the standard complex structure on $\CC \supseteq [0, 1] \cross \RR$, so $du$ commutes with $i$ and $J$.
+Check that this equation can be written as $J\, du = du \circ i$ where $i$ is the standard complex structure on $\CC \supseteq [0, 1] \cross \RR$, so $du$ commutes with $i$ and $J$.
 :::
 
 :::{.definition title="$J\dash$holomorphic or Pseudoholomorphic Discs"}

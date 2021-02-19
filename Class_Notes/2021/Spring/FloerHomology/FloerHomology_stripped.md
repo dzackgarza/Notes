@@ -1316,7 +1316,7 @@ which is the Cauchy-Riemann equation.
 :::
 
 ::: {.exercise title="?"}
-Check that this equation can be written as \( J\, du = \du \circ i \) where \( i \) is the standard complex structure on \( {\mathbb{C}}\supseteq [0, 1] \times{\mathbb{R}} \), so \( du \) commutes with \( i \) and \( J \).
+Check that this equation can be written as \( J\, du = du \circ i \) where \( i \) is the standard complex structure on \( {\mathbb{C}}\supseteq [0, 1] \times{\mathbb{R}} \), so \( du \) commutes with \( i \) and \( J \).
 :::
 
 ::: {.definition title="$J\\dash$holomorphic or Pseudoholomorphic Discs"}
@@ -1478,7 +1478,7 @@ Any closed 3-manifold \( M^3 \) admits a Heegard splitting.
 ::: {.proof title="?"}
 A fact from Morse theory: there exists a Morse function \( f: M^3\to {\mathbb{R}} \) such that
 
-1.  \( f(p) = i \coloneqq\mathop{\mathrm{Ind}}(p) \) for every \( p\in \Crit(f) \) (i.e. \( f \) is **self-indexing**), and
+1.  \( f(p) = i \coloneqq\mathop{\mathrm{Ind}}(p) \) for every \( p\in \operatorname{Crit}(f) \) (i.e. \( f \) is **self-indexing**), and
 
 2.  \( f \) has exactly one index \( 0 \) (minimum) and one index \( 3 \) (maximum) critical point.
 
