@@ -1428,7 +1428,7 @@ Thus
 :::
 
 ::: {.theorem title="Serre"}
-Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\divides p-q \).
+Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\mathrel{\Big|}p-q \).
 :::
 
 ::: {.remark}
@@ -1454,7 +1454,7 @@ If \( M^4 \) is a compact oriented 4-manifold and if the intersection form on \(
 -   Whether it's even or odd, and
 -   Its signature
 
-If the lattice is even, then the signature satisfies \( 8\divides p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
+If the lattice is even, then the signature satisfies \( 8\mathrel{\Big|}p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
 :::
 
 ## Characteristic Classes
@@ -1975,7 +1975,7 @@ We'll introduce the notion of a "point bundle", which are particularly nice line
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{40pt}{1em} 
+\fontsize{35pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-16.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -2025,25 +2025,29 @@ Thus there is a LES
 
 ```{=tex}
 \begin{tikzcd}
-    0 && {H^0( {\mathcal{O}}(D_0) )} && {H^0( {\mathcal{O}}(D) )} && {H^0( {\mathcal{O}}({\mathbb{C}}_p) )} \\
+    &&&& 0 \\
     \\
-    && {H^1( {\mathcal{O}}(D_0) )} && {H^1( {\mathcal{O}}(D) )} && {H^1( {\mathcal{O}}({\mathbb{C}}_p) ) = 0} && 0
-    \arrow[from=1-7, to=3-3, out=0, in=180]
-    \arrow[from=3-7, to=3-9]
-    \arrow[from=1-1, to=1-3]
-    \arrow[from=1-3, to=1-5]
-    \arrow[from=1-5, to=1-7]
+    {H^0( {\mathcal{O}}(D_0) )} && {H^0( {\mathcal{O}}(D) )} && {H^0( {\mathcal{O}}({\mathbb{C}}_p) )} \\
+    \\
+    {H^1( {\mathcal{O}}(D_0) )} && {H^1( {\mathcal{O}}(D) )} && {H^1( {\mathcal{O}}({\mathbb{C}}_p) ) = 0} \\
+    \\
+    0
+    \arrow[from=3-5, to=5-1, out=0, in=180]
+    \arrow[from=3-1, to=3-3]
     \arrow[from=3-3, to=3-5]
-    \arrow[from=3-5, to=3-7]
+    \arrow[from=5-1, to=5-3]
+    \arrow[from=5-3, to=5-5]
+    \arrow[from=1-5, to=3-1, out=0, in=180]
+    \arrow[from=5-5, to=7-1, out=0, in=180]
 \end{tikzcd}
 ```
-> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCIwIl0sWzIsMCwiSF4wKCBcXE9PKERfMCkgKSJdLFs0LDAsIkheMCggXFxPTyhEKSApIl0sWzYsMCwiSF4wKCBcXE9PKFxcQ0NfcCkgKSJdLFsyLDIsIkheMSggXFxPTyhEXzApICkiXSxbNCwyLCJIXjEoIFxcT08oRCkgKSJdLFs2LDIsIkheMSggXFxPTyhcXENDX3ApICkgPSAwIl0sWzgsMiwiMCJdLFszLDRdLFs2LDddLFswLDFdLFsxLDJdLFsyLDNdLFs0LDVdLFs1LDZdXQ==)
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwyLCJIXjAoIFxcT08oRF8wKSApIl0sWzIsMiwiSF4wKCBcXE9PKEQpICkiXSxbNCwyLCJIXjAoIFxcT08oXFxDQ19wKSApIl0sWzAsNCwiSF4xKCBcXE9PKERfMCkgKSJdLFsyLDQsIkheMSggXFxPTyhEKSApIl0sWzQsNCwiSF4xKCBcXE9PKFxcQ0NfcCkgKSA9IDAiXSxbNCwwLCIwIl0sWzAsNiwiMCJdLFsyLDNdLFswLDFdLFsxLDJdLFszLDRdLFs0LDVdLFs2LDBdLFs1LDddXQ==)
 
-We also have \( h^1({\mathbb{C}}_p) = 0 \) by taking a sufficiently fine open cover where \( p \) is only in one open set. So just check Čech cocycles yields \( C_U^1(C, {\mathbb{C}}_p) \coloneqq\prod_{i<j} {\mathbb{C}}_p(U_i \cap U_j) = 0 \) since \( p \) is in no intersection.
+We also have \( h^1({\mathbb{C}}_p) = 0 \) by taking a sufficiently fine open cover where \( p \) is only in one open set. So just checking Čech cocycles yields \( C_U^1(C, {\mathbb{C}}_p) \coloneqq\prod_{i<j} {\mathbb{C}}_p(U_i \cap U_j) = 0 \) since \( p \) is in no intersection.
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{40pt}{1em} 
+\fontsize{35pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-38.pdf_tex} };
 \end{tikzpicture}
 ```
