@@ -166,7 +166,7 @@
 \newcommand{\actsonl}[0]{\curvearrowleft}
 \newcommand{\actson}[0]{\curvearrowright}
 \newcommand{\bd}[0]{{\del}}
-\newcommand{\bigast}[0]{{\mathop{\Large \ast}}}
+\newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
@@ -239,6 +239,8 @@
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
 \newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
 \newcommand{\injects}[0]{\hookrightarrow}
+\newcommand{\diagonal}[0]{\Delta}
+\newcommand{\embeds}[0]{\hookrightarrow}
 \newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
@@ -279,6 +281,7 @@
 \newcommand{\dist}[0]{\operatorname{dist}}
 \newcommand{\Dist}[0]{\operatorname{Dist}}
 \newcommand{\crit}[0]{\operatorname{crit}}
+\newcommand{\Crit}[0]{\operatorname{Crit}}
 \newcommand{\diam}[0]{{\operatorname{diam}}}
 \newcommand{\gal}[0]{\operatorname{Gal}}
 \newcommand{\diff}[0]{\operatorname{Diff}}
@@ -351,10 +354,12 @@
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
-\newcommand{\Wedge}[0]{\Lambda}
+\newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\wedgeprod}[0]{\vee}
+\newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{\Large \#}}
+\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -453,6 +458,7 @@
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
+\newcommand\closure[1]{\overline{#1}}
 \newcommand\capprod{\frown}
 \newcommand\cupprod{\smile}
 \newcommand\Path{\mathcal{P}}

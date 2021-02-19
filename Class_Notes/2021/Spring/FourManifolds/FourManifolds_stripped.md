@@ -609,7 +609,7 @@ The **global sections** sheaf of \( \mathcal{F} \) on \( X \) is given by \( H^0
 :::
 
 ::: {.remark}
-Given vector bundles \( V, W \), we have constructions \( V \oplus W, V \otimes W, V^\vee, {\operatorname{Hom}}(V, W) = V^\vee\otimes W, \operatorname{Sym}^n V, \Lambda^p V \), and so on. Some of these work directly for sheaves:
+Given vector bundles \( V, W \), we have constructions \( V \oplus W, V \otimes W, V^\vee, {\operatorname{Hom}}(V, W) = V^\vee\otimes W, \operatorname{Sym}^n V, \bigwedge^p V \), and so on. Some of these work directly for sheaves:
 
 -   \( \mathcal{F} \oplus \mathcal{G}(U) \coloneqq\mathcal{F}(U) \oplus \mathcal{G}(U) \)
 -   For tensors, duals, and homs \( \mathscr{H}\kern-2pt\operatorname{om}(V, W) \) we only get presheaves, so we need to sheafify.
@@ -620,7 +620,7 @@ Given vector bundles \( V, W \), we have constructions \( V \oplus W, V \otimes 
 :::
 
 ::: {.example title="?"}
-Let \( X^n \in {\mathbf{Mfd}}_{{\operatorname{sm}}} \) and let \( \Omega^p \) be the sheaf of smooth \( p{\hbox{-}} \)forms, i.e \( \Lambda^p T^\vee \), i.e. \( \Omega^p(U) \) are the smooth \( p \) forms on \( U \), which are locally of the form \( \sum f_{i_1, \cdots, i_p} (x_1, \cdots, x_n) dx_{i_1} \wedge dx_{i_2} \wedge \cdots dx_{i_p} \) where the \( f_{i_1, \cdots, i_p} \) are smooth functions.
+Let \( X^n \in {\mathbf{Mfd}}_{{\operatorname{sm}}} \) and let \( \Omega^p \) be the sheaf of smooth \( p{\hbox{-}} \)forms, i.e \( \bigwedge^p T^\vee \), i.e. \( \Omega^p(U) \) are the smooth \( p \) forms on \( U \), which are locally of the form \( \sum f_{i_1, \cdots, i_p} (x_1, \cdots, x_n) dx_{i_1} \wedge dx_{i_2} \wedge \cdots dx_{i_p} \) where the \( f_{i_1, \cdots, i_p} \) are smooth functions.
 
 ::: {.example title="Sub-example"}
 Take \( X= S^1 \), writing this as \( {\mathbb{R}}/{\mathbb{Z}} \), we have \( \Omega^1(X) \ni dx \). There are two coordinate charts which differ by a translation on their overlaps, and \( dx(x + c) =dx \) for \( c \) a constant:
@@ -659,11 +659,11 @@ Let \( X \in {\mathbf{Mfd}}_{\mathbb{C}} \), we'll use the fact that \( TX \) is
 \end{tikzpicture}
 ```
 ::: {.remark title="Subtlety 1"}
-Note that \( \Omega^p \) for complex manifolds is \( \Lambda^p T^\vee \), and so if we want to view \( X \in {\mathbf{Mfd}}_{\mathbb{R}} \) we'll write \( X_{{\mathbb{R}}} \). \( TX_{\mathbb{R}} \) is then a real vector bundle of rank \( 2n \).
+Note that \( \Omega^p \) for complex manifolds is \( \bigwedge^p T^\vee \), and so if we want to view \( X \in {\mathbf{Mfd}}_{\mathbb{R}} \) we'll write \( X_{{\mathbb{R}}} \). \( TX_{\mathbb{R}} \) is then a real vector bundle of rank \( 2n \).
 :::
 
 ::: {.remark title="Subtlety 2"}
-\( \Omega^p \) will denote *holomorphic* \( p{\hbox{-}} \)forms, i.e. local expressions \( \sum f_I(z_1, \cdots, z_n) \Lambda dz_I \). For example, \( e^zdz\in \Omega^1({\mathbb{C}}) \) but \( z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz \) is not, where \( dz = dx + idy \). We'll use a different notation when we allow the \( f_I \) to just be smooth: \( A^{p, 0} \), the sheaf of \( (p, 0){\hbox{-}} \)forms. Then \( z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz\in A^{1, 0} \).
+\( \Omega^p \) will denote *holomorphic* \( p{\hbox{-}} \)forms, i.e. local expressions \( \sum f_I(z_1, \cdots, z_n) \bigwedge dz_I \). For example, \( e^zdz\in \Omega^1({\mathbb{C}}) \) but \( z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz \) is not, where \( dz = dx + idy \). We'll use a different notation when we allow the \( f_I \) to just be smooth: \( A^{p, 0} \), the sheaf of \( (p, 0){\hbox{-}} \)forms. Then \( z\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu dz\in A^{1, 0} \).
 :::
 
 ::: {.remark}
