@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-02-17 }
+{\tiny \textit{Last updated:} 2021-02-19 }
 \end{flushleft}
 
 
@@ -837,13 +837,13 @@ set \({\mathcal{O}}\) to be the sheaf of holomorphic functions.
 
 \begin{example}[Locally Constant Sheaves]
 
-Let \(A\in {\operatorname{Ab}}\) be an abelian group, then
-\(\underline{A}\) is the sheaf defined by setting \(\underline{A}(U)\)
-to be the locally constant functions \(U\to A\). E.g. let
-\(X \in {\operatorname{Mfd}}_{{\operatorname{Top}}}\) be a topological
-manifold, then \(\underline{{\mathbb{R}}}(U) = {\mathbb{R}}\) if \(U\)
-is connected since locally constant \(\implies\) globally constant in
-this case.
+Let \(A\in {\mathbf{Ab}}\) be an abelian group, then \(\underline{A}\)
+is the sheaf defined by setting \(\underline{A}(U)\) to be the locally
+constant functions \(U\to A\). E.g. let
+\(X \in {\mathbf{Mfd}}_{{\mathbf{Top}}}\) be a topological manifold,
+then \(\underline{{\mathbb{R}}}(U) = {\mathbb{R}}\) if \(U\) is
+connected since locally constant \(\implies\) globally constant in this
+case.
 
 \end{example}
 
@@ -1020,9 +1020,9 @@ which the sheaf makes trivial assignments.
 
 \begin{example}[of morphisms]
 
-Let \(X = {\mathbb{R}}\in {\operatorname{Mfd}}_{\operatorname{Sm}}\)
-viewed as a smooth manifold, then multiplication by \(x\) induces a
-morphism of structure sheaves:
+Let \(X = {\mathbb{R}}\in {\mathbf{Mfd}}_{\operatorname{Sm}}\) viewed as
+a smooth manifold, then multiplication by \(x\) induces a morphism of
+structure sheaves:
 \begin{align*}
 (x \cdot): {\mathcal{O}}&\to {\mathcal{O}}\\
 s & \mapsto x\cdot s
@@ -1188,7 +1188,7 @@ is a sheaf.
 
 \begin{example}[?]
 
-Let \(X^n \in {\operatorname{Mfd}}_{{\operatorname{sm}}}\) and let
+Let \(X^n \in {\mathbf{Mfd}}_{{\operatorname{sm}}}\) and let
 \(\Omega^p\) be the sheaf of smooth \(p{\hbox{-}}\)forms, i.e
 \(\Lambda^p T^\vee\), i.e.~\(\Omega^p(U)\) are the smooth \(p\) forms on
 \(U\), which are locally of the form
@@ -1242,7 +1242,7 @@ vector bundles, but is a map of sheaves of abelian groups since
 
 \end{warnings}
 
-Let \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\), we'll use the fact that
+Let \(X \in {\mathbf{Mfd}}_{\mathbb{C}}\), we'll use the fact that
 \(TX\) is complex-linear and thus a \({\mathbb{C}}{\hbox{-}}\)vector
 bundle.
 
@@ -1261,9 +1261,9 @@ bundle.
 \begin{remark}[Subtlety 1]
 
 Note that \(\Omega^p\) for complex manifolds is \(\Lambda^p T^\vee\),
-and so if we want to view \(X \in {\operatorname{Mfd}}_{\mathbb{R}}\)
-we'll write \(X_{{\mathbb{R}}}\). \(TX_{\mathbb{R}}\) is then a real
-vector bundle of rank \(2n\).
+and so if we want to view \(X \in {\mathbf{Mfd}}_{\mathbb{R}}\) we'll
+write \(X_{{\mathbb{R}}}\). \(TX_{\mathbb{R}}\) is then a real vector
+bundle of rank \(2n\).
 
 \end{remark}
 
@@ -1323,8 +1323,8 @@ continuous function \(t_{UV}: U \cap V \to G\).
 \begin{remark}
 
 Setup: we'll consider \(TX\) for
-\(X\in {\operatorname{Mfd}}_{\operatorname{Sm}}\), and let \(g\) be a
-metric on the tangent bundle given by
+\(X\in {\mathbf{Mfd}}_{\operatorname{Sm}}\), and let \(g\) be a metric
+on the tangent bundle given by
 \begin{align*}
 g_p: T_pX^{\otimes 2} \to {\mathbb{R}}
 ,\end{align*}
@@ -1765,7 +1765,7 @@ Let \(X\) be a paracompact and locally contractible topological space.
 Then
 \(H^p(X, \underline{{\mathbb{Z}}}) \cong H^p_{{\operatorname{Sing}}}(X, \underline{{\mathbb{Z}}})\).
 This will also hold more generally with \(\underline{{\mathbb{Z}}}\)
-replaced by \(\underline{A}\) for any \(A\in {\operatorname{Ab}}\).
+replaced by \(\underline{A}\) for any \(A\in {\mathbf{Ab}}\).
 
 \end{theorem}
 
@@ -1933,7 +1933,7 @@ See notes.
 
 \begin{corollary}[of corollary]
 
-Let \(X \in {\operatorname{Mfd}}_\setminus\), then
+Let \(X \in {\mathbf{Mfd}}_\setminus\), then
 \(H^p(X, \underline{{\mathbb{R}}}) = H^p_{\mathrm{dR}}(X;\ RR)\).
 
 \end{corollary}
@@ -1984,7 +1984,7 @@ locally \(d \omega = 0 \implies \omega = d \alpha\) (by the
 \begin{exercise}[?]
 
 Let \(X\in Top\) and
-\(\mathcal{F}\in {\operatorname{Sh}}({\operatorname{Ab}})_{/X}\). We say
+\(\mathcal{F}\in {\operatorname{Sh}}({\mathbf{Ab}})_{/X}\). We say
 \(\mathcal{F}\) is \textbf{flasque} if and only if for all
 \(U \supseteq V\) the map
 \(\mathcal{F}(U) \xrightarrow{\rho_{UV}} \mathcal{F}(V)\) is surjective.
@@ -2013,7 +2013,7 @@ Any vector bundle on a smooth manifold is acyclic. Using the fact that
 
 \begin{remark}
 
-Now letting \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\), recalling that
+Now letting \(X \in {\mathbf{Mfd}}_{\mathbb{C}}\), recalling that
 \(\Omega^p\) was the sheaf of holomorphic \(p {\hbox{-}}\)forms. Locally
 these are of the form
 \(\sum_{{\left\lvert {I} \right\rvert} = p} f_I(\mathbf{z}) dz^I\) where
@@ -2122,14 +2122,14 @@ Note the slight overloading of terminology here!
 
 \begin{theorem}[Properties of Singular Cohomology]
 
-Let \(X\in {\operatorname{Top}}\), then
+Let \(X\in {\mathbf{Top}}\), then
 \(H_{{\operatorname{Sing}}}^i(X; {\mathbb{Z}})\) satisfies the following
 properties:
 
 \begin{itemize}
 \item
   Functoriality: given
-  \(f\in {\operatorname{Hom}}_{\operatorname{Top}}(X, Y)\), there is a
+  \(f\in {\operatorname{Hom}}_{\mathbf{Top}}(X, Y)\), there is a
   pullback \(f^*: H^i(Y; {\mathbb{Z}}) \to H^i(X; {\mathbb{Z}})\).
 \item
   The cap product: a pairing
@@ -2336,8 +2336,8 @@ Note that if \(M\) is an oriented 4-manifold, then
 \end{center}
 
 In particular, if \(M\) is simply connected, then
-\(H_1(M) = {\operatorname{Ab}}(\pi_1(M)) = 0\), which forces \(A = 0\)
-and \(\beta_1 = 0\).
+\(H_1(M) = {\mathbf{Ab}}(\pi_1(M)) = 0\), which forces \(A = 0\) and
+\(\beta_1 = 0\).
 
 \end{remark}
 
@@ -3017,7 +3017,7 @@ There is a correspondence
 \rightleftharpoons
 H^2(X; {\mathbb{Z}})
 \end{align*}
-Importantly, note that for \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\),
+Importantly, note that for \(X \in {\mathbf{Mfd}}_{\mathbb{C}}\),
 \(H^2(X; {\mathbb{Z}})\) measures \emph{smooth} complex line bundles and
 not holomorphic bundles.
 
@@ -3294,11 +3294,11 @@ Chern character even better than the total Chern class.
 
 \begin{definition}[Todd Class]
 
-Let \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\), then define the
-\textbf{Todd class} of \(X\) as
+Let \(X \in {\mathbf{Mfd}}_{\mathbb{C}}\), then define the \textbf{Todd
+class} of \(X\) as
 \(\mathrm{td}_{\mathbb{C}}(X) \coloneqq\mathrm{td}(TX)\) where \(TX\) is
 viewed as a complex vector bundle. If
-\(X\in {\operatorname{Mfd}}_{\mathbb{R}}\), define
+\(X\in {\mathbf{Mfd}}_{\mathbb{R}}\), define
 \(\mathrm{td}_{\mathbb{R}}= \mathrm{td}(TX \otimes_{\mathbb{R}}{\mathbb{C}})\).
 
 \end{definition}
@@ -3309,8 +3309,8 @@ Generalizations}\label{section-5-riemann-roch-and-generalizations}}
 
 \begin{remark}
 
-Let \(X\in {\operatorname{Top}}\) and let \(\operatorname{\mathcal{F}}\)
-be a sheaf of vector spaces. Suppose
+Let \(X\in {\mathbf{Top}}\) and let \(\operatorname{\mathcal{F}}\) be a
+sheaf of vector spaces. Suppose
 \(h^i(X; \operatorname{\mathcal{F}}) \coloneqq\dim H^i(X; \operatorname{\mathcal{F}}) < \infty\)
 for all \(i\) and is equal to 0 for \(i \gg 0\).
 
@@ -3334,11 +3334,11 @@ This is not always well-defined!
 
 \begin{example}[?]
 
-Let \(X\in {\operatorname{Mfd}}_{\text{cpt}}\) and take
+Let \(X\in {\mathbf{Mfd}}_{\text{cpt}}\) and take
 \(\operatorname{\mathcal{F}} \coloneqq\underline{{\mathbb{R}}}\), we
 then have
 \begin{align*}
-\chi(X; \underline{{\mathbb{R}}}) = h^0(X; {\mathbb{R}}) - h^1(X; {\mathbb{R}}) + \cdots = b_0 - b_1 + b_2 - \cdots \coloneqq\chi_{{\operatorname{Top}}}(X)
+\chi(X; \underline{{\mathbb{R}}}) = h^0(X; {\mathbb{R}}) - h^1(X; {\mathbb{R}}) + \cdots = b_0 - b_1 + b_2 - \cdots \coloneqq\chi_{{\mathbf{Top}}}(X)
 .\end{align*}
 
 \end{example}
@@ -3399,7 +3399,7 @@ surface. This will be the main ingredient for Riemann-Roch.
 
 \begin{theorem}[?]
 
-Let \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\) be compact and let
+Let \(X \in {\mathbf{Mfd}}_{\mathbb{C}}\) be compact and let
 \(\mathcal{F}\) be a holomorphic vector bundle on \(X\) \footnote{Or
   more generally a finitely-generated \({\mathcal{O}}{\hbox{-}}\)module,
   i.e.~a coherent sheaf.} Then \(\chi\) is well-defined and
@@ -3411,7 +3411,7 @@ Let \(X \in {\operatorname{Mfd}}_{\mathbb{C}}\) be compact and let
 
 The locally constant sheaf \(\underline{{\mathbb{C}}}\) is not an
 \({\mathcal{O}}{\hbox{-}}\)module,
-i.e.~\(\underline{{\mathbb{C}}}(U) \not\in {{{\mathcal{O}}(U)}{\hbox{-}}\operatorname{mod}}\).
+i.e.~\(\underline{{\mathbb{C}}}(U) \not\in {{{\mathcal{O}}(U)}{\hbox{-}}\mathbf{Mod}}\).
 In fact, \(h^{2i}(X, \underline{{\mathbb{C}}}) = {\mathbb{C}}\) for all
 \(i\).
 
@@ -3487,7 +3487,7 @@ This only applies to holomorphic vector bundles or
 \begin{theorem}[Riemann-Roch]
 
 Let \(C\) be a compact connected Riemann surface,
-i.e.~\(X\in {\operatorname{Mfd}}_{\mathbb{C}}\) with
+i.e.~\(X\in {\mathbf{Mfd}}_{\mathbb{C}}\) with
 \(\dim_{\mathbb{C}}(X) = 1\), and let \(\mathcal{L}\to C\) be a
 holomorphic line bundle. Then
 \begin{align*}
@@ -3669,6 +3669,159 @@ Then \({\mathcal{O}}\cong L\otimes{\mathcal{O}}(-D)\) has a meromorphic
 section \(s s_{-D}\), a global nonvanishing section with
 \(\operatorname{Div}(s s_{-D} ) = \emptyset\). Proving that every
 holomorphic line bundle has a meromorphic section is hard!
+
+\end{remark}
+
+\hypertarget{friday-february-19}{%
+\section{Friday, February 19}\label{friday-february-19}}
+
+\hypertarget{applications-of-riemann-roch}{%
+\subsection{Applications of
+Riemann-Roch}\label{applications-of-riemann-roch}}
+
+\begin{definition}[Curves]
+
+A \textbf{curve} is a compact complex manifold of complex dimension 1.
+
+\end{definition}
+
+\begin{example}[?]
+
+Let \(C\) be a curve, then \(\Omega_C^1\) is the sheaf of holomorphic
+1-forms, and \(\Omega_C^{>1} = 0\). We also have the sheaves
+\(A^{1, 0}, A^{0, 1}, A^{1, 1},\) the sheaves of smooth
+\((p, q){\hbox{-}}\)forms. Here the only nonzero combinations are
+\((0, 0), (0, 1), (1, 0), (1, 1)\) by dimensional considerations. Let
+\(L\) be a holomorphic line bundle on \(C\), then
+\begin{align*} \chi(C, L) = h^0(L) - h^1(L) = \deg(L) + 1 - g .\end{align*}
+
+\end{example}
+
+\begin{remark}
+
+In general it can be hard to compute \(h^1(L)\), since this is sheaf
+cohomology (sections over double overlaps, cocycle conditions, etc). On
+the other hand, \(h^0\) is easy to understand, since
+\(h^0( \Omega^1_C)\) is the dimension of the global holomorphic sections
+\(H^0(C, L) = L(C)\). A key tool here is the following:
+
+\end{remark}
+
+\begin{proposition}[Serre Duality]
+
+\begin{align*}
+H^1(C, L) \cong H^0(C, L ^{-1} \otimes\Omega_C^1)^\vee
+,\end{align*}
+noting that these are both global sections of a line bundle.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Recall that we had a resolution of the sheaf \(L\) given by by smooth
+vector bundles:
+\begin{align*}
+0 \to L \hookrightarrow L\otimes A^{0, 0} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} L \otimes A^{0, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} 0
+.\end{align*}
+So we know that
+\(H^1(C, L) = H^0(L\otimes A^{0, 1}) / \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5muH^0(L\otimes A^{0, 0})\).
+Choose a Hermitian metric \(h\) on \(L\), i.e.~a map
+\(h: L\otimes{\overline{{L}}} \to {\mathcal{O}}\). On fibers, we have
+\(h_p: L_p \otimes\mkern 1.5mu\overline{\mkern-1.5mu L_p \mkern-1.5mu}\mkern 1.5mu \to {\mathbb{C}}\).
+We'll also choose a metric on \(C\), say \(g\). Since \(C\) is a Riemann
+surface, we have an associated volume form \(\nu\) on \(C\) (essentially
+the determinant), so we can define a pairing between sections of
+\(L\otimes A^{0, 0}\):
+\begin{align*}
+{\left\langle {s},~{t} \right\rangle} \coloneqq\int_C h(s, {\overline{{t}}} ) \,d\nu
+.\end{align*}
+Note that
+\({\left\langle {s},~{s} \right\rangle} = \int_C h(s, {\overline{{s}}} \,d\nu \geq 0\)
+since \(h(s, {\overline{{s}}})(p) = 0 \iff s_p = 0\), and moreover this
+integral is zero if and only if \(s=0\). So we have an inner product on
+\(H^0(L\otimes A^{0, 0})\). We can also define a pairing on sections of
+\(L\otimes A^{0, 1}\), say
+\begin{align*}
+{\left\langle { s \otimes \alpha},~{ t \otimes \beta} \right\rangle} = \int_C h(s, {\overline{{t}}}) \alpha\wedge {\overline{{\beta}}}
+.\end{align*}
+Note that \(h\) is a smooth function and
+\(\alpha\wedge {\overline{{\beta}}}\) is a \((1, 1){\hbox{-}}\)form.
+Moreover, this is positive and nondegenerate. We want to understand the
+cokernel of the linear map
+\begin{align*}
+H^0(L \otimes A^{0, 0}) \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} H^0( L \otimes A^{0, 1})
+.\end{align*}
+To compute
+\(\operatorname{coker}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)\),
+we can look at the kernel of the adjoint, and it suffices to find the
+orthogonal complement of
+\(\operatorname{im}( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)\),
+i.e.~
+\begin{align*}
+\operatorname{coker}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) = \left\{{ t\in H^0(L\otimes A^{0, 1}) {~\mathrel{\Big|}~}{\left\langle {\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus},~{t} \right\rangle} = 0 \, \forall s}\right\} 
+.\end{align*}
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-19_14-18.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+So we want to understand sections \(t\in H^0(L\otimes A^{0, 1})\) such
+that
+\begin{align*}
+\int_C (\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus){\overline{{t}}} = 0 && \forall s\in H^0(L\otimes A^{0, 0})
+,\end{align*}
+where \({{\partial}}C = \emptyset\). We'll basically want to do
+integration by parts on this. Note that \(h(s, t) = hst\) here where we
+view \(h\) as a certain section. Note that
+\({\overline{{t}}} \in H^0({\overline{{L}}} \otimes A^{1, 0})\), so we
+can replace \({\partial}\) with
+\(d = \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu+ {\partial}\)
+and apply Stokes' theorem:
+\begin{align*}
+\int_C s d(h {\overline{{t}}}) &= 0 && \forall s\in H^0(L\otimes A^{0, 0}) \\
+0 
+&= \int_C s\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(h {\overline{{t}}}) \\
+&= \int_C s {\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(h {\overline{{t}}}) \over d\nu}d\nu\\
+&= {\left\langle {s},~{{\overline{{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(h {\overline{{t}}}) \over d\nu }}}} \right\rangle}
+\end{align*}
+where \(h \in C^{\infty }(L ^{-1} \otimes{\overline{{L}}}^{-1})\) and
+\(h{\overline{{t}}} \in C^{\infty }(L^{-1}\otimes A^{1, 0})\). But the
+right-hand side is in \(H^0(L \otimes A^{0, 0} )\) and by nondegeneracy
+we can conclude
+\begin{align*}
+{\overline{{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(h {\overline{{t}}}) \over d\nu }}} = 0
+\iff \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(h{\overline{{t}}}) = 0
+.\end{align*}
+We thus have \(h{\overline{{t}}} \in H^0( L ^{-1}\otimes A^{1, 0}\)
+which is a holomorphic line bundle tensored with \(A^{0, 0}\). Thus
+\(\operatorname{coker}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \cong_h H^0( L ^{-1} \otimes\Omega^1)\).
+
+\end{proof}
+
+\begin{remark}
+
+We showed
+\({\left\langle {\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus},~{t} \right\rangle} = {\left\langle {s},~{Y (t)} \right\rangle}\)
+where \(Y\) is the adjoint given above. Then the kernel of \(Y\) wound
+up being where
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\)
+vanishes, i.e.~holomorphic sections of a separate bundle. Here we had
+
+\begin{itemize}
+\tightlist
+\item
+  \(t \in H^0(L\otimes A^{0, 1})\)
+\item
+  \({\overline{{t}}} \in H^0({\overline{{L}}}\otimes A^{1,0})\)
+\item
+  \(h\in H^0( L ^{-1} {\overline{{ L ^{-1} }}})\)
+\end{itemize}
 
 \end{remark}
 

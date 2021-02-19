@@ -83,15 +83,18 @@
 \newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
+\newcommand{\ssets}[0]{\operatorname{sSets}}
+\newcommand{\Ring}[0]{\mathbf{Ring}}
+\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\grMod}[0]{{\operatorname{grMod}}}
+\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -110,14 +113,8 @@
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
-\newcommand{\Top}[0]{{\operatorname{Top}}}
-\newcommand{\Mfd}[0]{{\operatorname{Mfd}}}
-\newcommand{\Ab}[0]{{\operatorname{Ab}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
-\newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
-\newcommand{\Sch}[0]{{\operatorname{Sch}}}
-\newcommand{\sch}[0]{{\operatorname{Sch}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\alg}[0]{\mathrm{Alg}}
@@ -323,11 +320,19 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\rmod}[0]{{R\dash\mathrm{mod}}}
-\newcommand{\modr}[0]{{\mathrm{mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
-\newcommand{\kmod}[0]{{k\dash\operatorname{mod}}}
+\newcommand{\Top}[0]{{\mathbf{Top}}}
+\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathbf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathbf{Sch}}}
+\newcommand{\sch}[0]{{\mathbf{Sch}}}
+\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
+\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
+\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
+\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
+\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
+\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
+\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
 \newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
@@ -437,7 +442,7 @@
         \textstyle\rightarrow}}
 }
 
-\newcommand{\colim}{\operatornamewithlimits{\underset{\longrightarrow}{colim}}}
+\newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
@@ -2970,4 +2975,116 @@ D = \div(s) = \sum_p \ord_p(s) [p]
 Then $\OO \cong L\tensor \OO(-D)$ has a meromorphic section $s s_{-D}$, a global nonvanishing section with $\div(s s_{-D} ) = \emptyset$.
 Proving that every holomorphic line bundle has a meromorphic section is hard!
 :::
+
+
+# Friday, February 19
+
+## Applications of Riemann-Roch
+
+
+:::{.definition title="Curves"}
+A **curve** is a compact complex manifold of complex dimension 1.
+:::
+
+
+:::{.example title="?"}
+Let $C$ be a curve, then \( \Omega_C^1 \) is the sheaf of holomorphic 1-forms, and \( \Omega_C^{>1} = 0 \).
+We also have the sheaves \( A^{1, 0}, A^{0, 1}, A^{1, 1}, \) the sheaves of smooth $(p, q)\dash$forms.
+Here the only nonzero combinations are $(0, 0), (0, 1), (1, 0), (1, 1)$ by dimensional considerations.
+Let $L$ be a holomorphic line bundle on $C$, then 
+\[ \chi(C, L) = h^0(L) - h^1(L) = \deg(L) + 1 - g .\]
+:::
+
+
+:::{.remark}
+In general it can be hard to compute $h^1(L)$, since this is sheaf cohomology (sections over double overlaps, cocycle conditions, etc).
+On the other hand, $h^0$ is easy to understand, since $h^0( \Omega^1_C)$ is the dimension of the global holomorphic sections $H^0(C, L) = L(C)$.
+A key tool here is the following: 
+:::
+
+
+:::{.proposition title="Serre Duality"}
+\[
+H^1(C, L) \cong H^0(C, L ^{-1} \tensor \Omega_C^1)\dual
+,\]
+noting that these are both global sections of a line bundle.
+:::
+
+
+:::{.proof title="?"}
+Recall that we had a resolution of the sheaf $L$ given by by smooth vector bundles:
+\[
+0 \to L \injects L\tensor A^{0, 0} \mapsvia{\delbar} L \tensor A^{0, 1} \mapsvia{\delbar} 0
+.\]
+So we know that $H^1(C, L) = H^0(L\tensor A^{0, 1}) / \delbar H^0(L\tensor A^{0, 0})$.
+Choose a Hermitian metric $h$ on $L$, i.e. a map $h: L\tensor \conjugate{L} \to \OO$.
+On fibers, we have $h_p: L_p \tensor \bar{ L_p } \to \CC$.
+We'll also choose a metric on $C$, say $g$.
+Since $C$ is a Riemann surface, we have an associated volume form $\nu$ on $C$ (essentially the determinant), so we can define a pairing between sections of $L\tensor A^{0, 0}$:
+\[
+\inner{s}{t} \da \int_C h(s, \conjugate{t} ) \,d\nu
+.\]
+Note that $\inner{s}{s} = \int_C h(s, \conjugate{s} \,d\nu \geq 0$ since $h(s, \conjugate{s})(p) = 0 \iff s_p = 0$, and moreover this integral is zero if and only if $s=0$.
+So we have an inner product on $H^0(L\tensor A^{0, 0})$.
+We can also define a pairing on sections of $L\tensor A^{0, 1}$, say
+\[
+\inner{ s \otimes \alpha}{ t \otimes \beta} = \int_C h(s, \conjugate{t}) \alpha\wedge \conjugate{\beta}
+.\]
+Note that $h$ is a smooth function and \( \alpha\wedge \conjugate{\beta} \) is a $(1, 1)\dash$form.
+Moreover, this is positive and nondegenerate.
+We want to understand the cokernel of the linear map
+\[
+H^0(L \otimes A^{0, 0}) \mapsvia{\delbar} H^0( L \otimes A^{0, 1})
+.\]
+To compute \( \coker(\delbar) \), we can look at the kernel of the adjoint, and it suffices to find the orthogonal complement of $\im( \delbar)$, i.e. 
+\[
+\coker(\delbar) = \ts{ t\in H^0(L\tensor A^{0, 1}) \st \inner{\delbar s}{t} = 0 \, \forall s} 
+.\]
+
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-19_14-18.pdf_tex} };
+\end{tikzpicture}
+
+So we want to understand sections $t\in H^0(L\tensor A^{0, 1})$ such that 
+\[
+\int_C (\delbar s)\conjugate{t} = 0 && \forall s\in H^0(L\tensor A^{0, 0})
+,\]
+where $\bd C = \emptyset$.
+We'll basically want to do integration by parts on this.
+Note that $h(s, t) = hst$ here where we view $h$ as a certain section.
+Note that \( \conjugate{t} \in H^0(\conjugate{L} \tensor A^{1, 0}) \), so we can replace \( \del \) with $d = \delbar + \del$ and apply Stokes' theorem:
+\[
+\int_C s d(h \conjugate{t}) &= 0 && \forall s\in H^0(L\tensor A^{0, 0}) \\
+0 
+&= \int_C s\delbar (h \conjugate{t}) \\
+&= \int_C s {\delbar (h \conjugate{t}) \over d\nu}d\nu\\
+&= \inner{s}{\conjugate{\delbar (h \conjugate{t}) \over d\nu }}
+\]
+where \( h \in C^{\infty }(L ^{-1} \tensor \conjugate{L}\inv ) \) and \( h\conjugate{t} \in C^{\infty }(L\inv \tensor A^{1, 0}) \).
+But the right-hand side is in $H^0(L \tensor A^{0, 0} )$ and by nondegeneracy we can conclude
+\[
+\conjugate{\delbar (h \conjugate{t}) \over d\nu } = 0
+\iff \delbar(h\conjugate{t}) = 0
+.\]
+We thus have \( h\conjugate{t} \in H^0( L \inv \tensor A^{1, 0} \) which is a holomorphic line bundle tensored with $A^{0, 0}$.
+Thus $\coker(\delbar) \cong_h H^0( L ^{-1} \tensor \Omega^1)$.
+
+:::
+
+
+:::{.remark}
+We showed \( \inner{\delbar s}{t} = \inner{s}{Y (t)} \) where $Y$ is the adjoint given above.
+Then the kernel of $Y$ wound up being where $\delbar$ vanishes, i.e. holomorphic sections of a separate bundle.
+Here we had
+
+- $t \in H^0(L\tensor A^{0, 1})$
+- $\conjugate{t} \in H^0(\conjugate L\tensor A^{1,0})$
+- $h\in H^0( L ^{-1} \conjugate{ L ^{-1} })$
+:::
+
+
+
+
+
 
