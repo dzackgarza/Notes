@@ -2668,7 +2668,7 @@ If we can generate all of the positive units, all of the negative units are nega
 How we'll do this: we'll look at the map 
 \[
 \log: \GG_m(\RR^+) \mapsvia{} \GG_a(\RR)
-.\]and consider the image $\log( U( \ZZ_K)^+$, which will be an infinite cyclic subgroup of $\GG_a(\RR)$.
+.\]and consider the image $\log( U( \ZZ_K)^+)$, which will be an infinite cyclic subgroup of $\GG_a(\RR)$.
 :::
 
 
@@ -3252,8 +3252,9 @@ For example, in $\ZZ[ \sqrt{-5} ]$ we have $6 = (2)(3) = (1 + \sqrt{-5} )(1 - \s
 
 :::{.proof title="$\implies$"}
 
+We'll first prove a lemma:
 
-:::{.lemma title="?"}
+:::{.lemma title="Class Number 2 implies 2 factors"}
 Suppose $h_K = 2$, and suppose \( \pi \in \ZZ_K \) is an irreducible that is not prime (which is possible in a non-UFD).
 Then factoring \( \gens{ \pi } = P_1 P_2  \) involves exactly two prime ideals $P_1, P_2$ in $\ZZ_K$.
 :::

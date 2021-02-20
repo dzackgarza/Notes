@@ -1580,7 +1580,7 @@ Our strategy: show that the group of positive units \( U({\mathbb{Z}}_K)^+ \) is
 \[
 \log: {\mathbb{G}}_m({\mathbb{R}}^+) \xrightarrow{} {\mathbb{G}}_a({\mathbb{R}})
 .\]
-and consider the image \( \log( U( {\mathbb{Z}}_K)^+ \), which will be an infinite cyclic subgroup of \( {\mathbb{G}}_a({\mathbb{R}}) \).
+and consider the image \( \log( U( {\mathbb{Z}}_K)^+) \), which will be an infinite cyclic subgroup of \( {\mathbb{G}}_a({\mathbb{R}}) \).
 :::
 
 ::: {.proposition title="?"}
@@ -1957,7 +1957,9 @@ For example, in \( {\mathbb{Z}}[ \sqrt{-5} ] \) we have \( 6 = (2)(3) = (1 + \sq
 :::
 
 ::: {.proof title="$\\implies$"}
-::: {.lemma title="?"}
+We'll first prove a lemma:
+
+::: {.lemma title="Class Number 2 implies 2 factors"}
 Suppose \( h_K = 2 \), and suppose \( \pi \in {\mathbb{Z}}_K \) is an irreducible that is not prime (which is possible in a non-UFD). Then factoring \( \left\langle{ \pi }\right\rangle = P_1 P_2 \) involves exactly two prime ideals \( P_1, P_2 \) in \( {\mathbb{Z}}_K \).
 :::
 
