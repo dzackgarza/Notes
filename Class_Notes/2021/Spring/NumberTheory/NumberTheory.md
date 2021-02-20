@@ -2425,7 +2425,8 @@ Taking norms yields
 N( \gens{ p } ) = \prod N(P_i) 
 ,\]
 where we can identify the LHS as $p^2$, since the norm for principal ideals is the square of the generating element.
-Alternatively, we can check the size of $\ZZ_K/ \gens{ p }$: $\ZZ_K$ is a free \(\ZZ \dash\)module on 2 generators, and we take both coordinates $\mod p$ to get $(\ZZ/p\ZZ)^2$.
+Alternatively, we can check the size of $\ZZ_K/ \gens{ p }$.
+Note that $\ZZ_K$ is a free \(\ZZ \dash\)module on 2 generators, and we take both coordinates $\mod p$ to get $(\ZZ/p\ZZ)^2$.
 Since none of the terms on the RHS are the unit ideal, none have norm 1, and so either
 
 a. $g=1$ and $P_1 = \gens{ g }$ and \( \gens{ p }  \) is prime.
@@ -2495,7 +2496,7 @@ so
 .\]
 Similarly,
 \[
-x^2 + 5 \text{is irreducible } \in \FF_{11}[x]
+x^2 + 5 \text{ is irreducible } \in \FF_{11}[x]
 ,\]
 so \( \gens{ 11 }  \) is inert.
 :::
@@ -2530,10 +2531,10 @@ Why are these of norm $p$?
 Consider 
 \[
 \ZZ_K/P^1 
-&\cong { \ZZ[x] / \gens{ \min_\tau(x) } \over \gens{ p, x-a } \\
+&\cong { \ZZ[x] / \gens{ \min_\tau(x) } \over \gens{ p, x-a } } \\
 &\cong \ZZ/p\ZZ[x] / \gens{ \min_\tau(x), x-a} \\
 &\cong \ZZ/p\ZZ[x] / \gens{ \min_\tau(x), x-a} \\
-&\cong \ZZ/p\ZZ[x] / \gens{ x-a} \text{since } x-a \divides \min_\tau(x)\\
+&\cong \ZZ/p\ZZ[x] / \gens{ x-a} && \text{since } x-a \divides \min_\tau(x)\\
 &\cong \ZZ/p\ZZ
 ,\]
 this $P_1$ is maximal and thus prime, and moreover $N(P_1) = p$ since there are $p$ elements in $\ZZ/p\ZZ$.
@@ -2543,7 +2544,13 @@ Now multiplying them yields
 P_1 P_2 
 &= \gens{ p, p(\tau - a), p (\tau - b), (\tau -a)(\tau -b) }
 .\]
-Note that $\min_\tau(x) \equiv (x-a)(x-b) \mod p$ implies $\min_\tau(x) = (x-a)(x-b) + pG(x)$ for some $G\in \ZZ[x]$.
+Note that 
+\[
+\min_\tau(x) &\equiv (x-a)(x-b) \mod p \\
+\implies
+\min_\tau(x) &= (x-a)(x-b) + pG(x)
+\]
+for some $G\in \ZZ[x]$.
 Plugging in \( \tau \), the LHS is zero, while on the RHS yields $\cdots + pG(\tau)$.
 This last term is $pr$ for some $r\in R$, which is zero mod $p \in \ZZ[\tau] = \ZZ_K$
 So $p$ now divides every term in the generating set above, and since to contain is to divide, we have $P_1 P_2 \subseteq \gens{ p }$ and \( \gens{ p } \divides P_1 P_2 \).
@@ -2596,7 +2603,7 @@ For the imaginary quadratic case, we can write down the unit group explicitly.
 
 
 :::{.proposition title="?"}
-If $d<0$ (i.e. the imaginary quadratic case) then \( \abs{ U(\ZZ_J) \leq 6 \).
+If $d<0$ (i.e. the imaginary quadratic case) then \( \abs{ U(\ZZ_J)}  \leq 6 \).
 :::
 
 :::{.remark}
@@ -2654,10 +2661,13 @@ Write \( \epsilon \epsilon ^{-1} = 1 \) and take norms of both sides.
 
 
 :::{.remark}
-Our strategy: show that the group of positive units \( \U(\ZZ_K)^+ \) is infinite cyclic.
+Our strategy: show that the group of positive units \( U(\ZZ_K)^+ \) is infinite cyclic.
 If we get a generator \( \eps_0 > 1 \), replace it with its reciprocal, and note that we don't want \( \eps_) = 1 \) since this wouldn't yield an infinite group.
 If we can generate all of the positive units, all of the negative units are negatives of positive units.
-How we'll do this: we'll look at the map $\log: \GG_m(\RR^+) \mapsvia{} \GG_a(\RR)$ and consider the image $\log( U( \ZZ_K)^+$, which will be an infinite cyclic subgroup of $\GG_a(\RR)$.
+How we'll do this: we'll look at the map 
+\[
+\log: \GG_m(\RR^+) \mapsvia{} \GG_a(\RR)
+.\]and consider the image $\log( U( \ZZ_K)^+$, which will be an infinite cyclic subgroup of $\GG_a(\RR)$.
 :::
 
 
@@ -2670,7 +2680,7 @@ The subgroup \( \log( U (\ZZ_K)^+ ) \) is discrete, i.e. it has finite intersect
 It's enough to show finite intersection with $[0, X]$ for all $X>0$.
 Why? 
 Any subgroup $H\leq \GG_a(\RR)$ is symmetric about 0, i.e. $a\in H \iff -a\in H$, and so having finite intersection with the positive interval implies finite intersection with both.
-So let \( \epsilon \in U(\Z_Z_K)^+ \) with \( \log( \epsilon) \in [0, X] \), we'll show there are only finitely many choices for \( \epsilon \), since every \( \log(\eps ) \) correspond to a point in the intersection.
+So let \( \epsilon \in U(\ZZ_K)^+ \) with \( \log( \epsilon) \in [0, X] \), we'll show there are only finitely many choices for \( \epsilon \), since every \( \log(\eps ) \) correspond to a point in the intersection.
 
 
 :::{.claim}
@@ -2696,6 +2706,8 @@ There are now two cases:
   This case proceed similarly.
 
 :::
+
+This completes the proof.
 
 :::
 

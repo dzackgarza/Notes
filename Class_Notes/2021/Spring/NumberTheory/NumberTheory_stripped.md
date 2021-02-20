@@ -1386,7 +1386,7 @@ If we want to determine all of the primes \( P \), we should consider factoring 
 \[
 N( \left\langle{ p }\right\rangle ) = \prod N(P_i) 
 ,\]
-where we can identify the LHS as \( p^2 \), since the norm for principal ideals is the square of the generating element. Alternatively, we can check the size of \( {\mathbb{Z}}_K/ \left\langle{ p }\right\rangle \): \( {\mathbb{Z}}_K \) is a free \( {\mathbb{Z}}{\hbox{-}} \)module on 2 generators, and we take both coordinates \( \pmod p \) to get \( ({\mathbb{Z}}/p{\mathbb{Z}})^2 \). Since none of the terms on the RHS are the unit ideal, none have norm 1, and so either
+where we can identify the LHS as \( p^2 \), since the norm for principal ideals is the square of the generating element. Alternatively, we can check the size of \( {\mathbb{Z}}_K/ \left\langle{ p }\right\rangle \). Note that \( {\mathbb{Z}}_K \) is a free \( {\mathbb{Z}}{\hbox{-}} \)module on 2 generators, and we take both coordinates \( \pmod p \) to get \( ({\mathbb{Z}}/p{\mathbb{Z}})^2 \). Since none of the terms on the RHS are the unit ideal, none have norm 1, and so either
 
 a.  \( g=1 \) and \( P_1 = \left\langle{ g }\right\rangle \) and \( \left\langle{ p }\right\rangle \) is prime. In this case we say \( p \) **is inert**.
 
@@ -1444,7 +1444,7 @@ so
 .\]
 Similarly,
 \[
-x^2 + 5 \text{is irreducible } \in {\mathbb{F}}_{11}[x]
+x^2 + 5 \text{ is irreducible } \in {\mathbb{F}}_{11}[x]
 ,\]
 so \( \left\langle{ 11 }\right\rangle \) is inert.
 :::
@@ -1471,10 +1471,10 @@ Now suppose it's not irreducible, so
 Define \( P_1, P_2 \) as in the theorem. Why are these of norm \( p \)? Consider
 \[
 {\mathbb{Z}}_K/P^1 
-&\cong { {\mathbb{Z}}[x] / \left\langle{ \min_\tau(x) }\right\rangle \over \left\langle{ p, x-a }\right\rangle \\
+&\cong { {\mathbb{Z}}[x] / \left\langle{ \min_\tau(x) }\right\rangle \over \left\langle{ p, x-a }\right\rangle } \\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
-&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle \text{since } x-a \mathrel{\Big|}\min_\tau(x)\\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle && \text{since } x-a \mathrel{\Big|}\min_\tau(x)\\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}
 ,\]
 this \( P_1 \) is maximal and thus prime, and moreover \( N(P_1) = p \) since there are \( p \) elements in \( {\mathbb{Z}}/p{\mathbb{Z}} \). The same argument works for \( P_2 \). Now multiplying them yields
@@ -1482,7 +1482,13 @@ this \( P_1 \) is maximal and thus prime, and moreover \( N(P_1) = p \) since th
 P_1 P_2 
 &= \left\langle{ p, p(\tau - a), p (\tau - b), (\tau -a)(\tau -b) }\right\rangle
 .\]
-Note that \( \min_\tau(x) \equiv (x-a)(x-b) \pmod p \) implies \( \min_\tau(x) = (x-a)(x-b) + pG(x) \) for some \( G\in {\mathbb{Z}}[x] \). Plugging in \( \tau \), the LHS is zero, while on the RHS yields \( \cdots + pG(\tau) \). This last term is \( pr \) for some \( r\in R \), which is zero mod \( p \in {\mathbb{Z}}[\tau] = {\mathbb{Z}}_K \) So \( p \) now divides every term in the generating set above, and since to contain is to divide, we have \( P_1 P_2 \subseteq \left\langle{ p }\right\rangle \) and \( \left\langle{ p }\right\rangle \mathrel{\Big|}P_1 P_2 \). Write \( P_1 P_2 = \left\langle{ p }\right\rangle I \) for some ideal \( I \), taking norms yields
+Note that
+\[
+\min_\tau(x) &\equiv (x-a)(x-b) \pmod p \\
+\implies
+\min_\tau(x) &= (x-a)(x-b) + pG(x)
+\]
+for some \( G\in {\mathbb{Z}}[x] \). Plugging in \( \tau \), the LHS is zero, while on the RHS yields \( \cdots + pG(\tau) \). This last term is \( pr \) for some \( r\in R \), which is zero mod \( p \in {\mathbb{Z}}[\tau] = {\mathbb{Z}}_K \) So \( p \) now divides every term in the generating set above, and since to contain is to divide, we have \( P_1 P_2 \subseteq \left\langle{ p }\right\rangle \) and \( \left\langle{ p }\right\rangle \mathrel{\Big|}P_1 P_2 \). Write \( P_1 P_2 = \left\langle{ p }\right\rangle I \) for some ideal \( I \), taking norms yields
 \[
 N(P_1) N(P_2) = N( \left\langle{ p }\right\rangle) N(I) 
 .\]
@@ -1521,7 +1527,7 @@ The proof follows from looking at how \( \min_\tau(x) \) factors \( \pmod 2 \), 
 For the imaginary quadratic case, we can write down the unit group explicitly.
 
 ::: {.proposition title="?"}
-If \( d<0 \) (i.e. the imaginary quadratic case) then \( \abs{ U({\mathbb{Z}}_J) \leq 6 \).
+If \( d<0 \) (i.e. the imaginary quadratic case) then \( {\left\lvert { U({\mathbb{Z}}_J)} \right\rvert} \leq 6 \).
 :::
 
 ::: {.remark}
@@ -1570,7 +1576,11 @@ Note that norms were positive in the imaginary quadratic case, but can be negati
 :::
 
 ::: {.remark}
-Our strategy: show that the group of positive units \( \U({\mathbb{Z}}_K)^+ \) is infinite cyclic. If we get a generator \( \varepsilon_0 > 1 \), replace it with its reciprocal, and note that we don't want \( \varepsilon_) = 1 \) since this wouldn't yield an infinite group. If we can generate all of the positive units, all of the negative units are negatives of positive units. How we'll do this: we'll look at the map \( \log: {\mathbb{G}}_m({\mathbb{R}}^+) \xrightarrow{} {\mathbb{G}}_a({\mathbb{R}}) \) and consider the image \( \log( U( {\mathbb{Z}}_K)^+ \), which will be an infinite cyclic subgroup of \( {\mathbb{G}}_a({\mathbb{R}}) \).
+Our strategy: show that the group of positive units \( U({\mathbb{Z}}_K)^+ \) is infinite cyclic. If we get a generator \( \varepsilon_0 > 1 \), replace it with its reciprocal, and note that we don't want \( \varepsilon_) = 1 \) since this wouldn't yield an infinite group. If we can generate all of the positive units, all of the negative units are negatives of positive units. How we'll do this: we'll look at the map
+\[
+\log: {\mathbb{G}}_m({\mathbb{R}}^+) \xrightarrow{} {\mathbb{G}}_a({\mathbb{R}})
+.\]
+and consider the image \( \log( U( {\mathbb{Z}}_K)^+ \), which will be an infinite cyclic subgroup of \( {\mathbb{G}}_a({\mathbb{R}}) \).
 :::
 
 ::: {.proposition title="?"}
@@ -1578,7 +1588,7 @@ The subgroup \( \log( U ({\mathbb{Z}}_K)^+ ) \) is discrete, i.e. it has finite
 :::
 
 ::: {.proof title="?"}
-It's enough to show finite intersection with \( [0, X] \) for all \( X>0 \). Why? Any subgroup \( H\leq {\mathbb{G}}_a({\mathbb{R}}) \) is symmetric about 0, i.e. \( a\in H \iff -a\in H \), and so having finite intersection with the positive interval implies finite intersection with both. So let \( \epsilon \in U(\Z_Z_K)^+ \) with \( \log( \epsilon) \in [0, X] \), we'll show there are only finitely many choices for \( \epsilon \), since every \( \log(\varepsilon) \) correspond to a point in the intersection.
+It's enough to show finite intersection with \( [0, X] \) for all \( X>0 \). Why? Any subgroup \( H\leq {\mathbb{G}}_a({\mathbb{R}}) \) is symmetric about 0, i.e. \( a\in H \iff -a\in H \), and so having finite intersection with the positive interval implies finite intersection with both. So let \( \epsilon \in U({\mathbb{Z}}_K)^+ \) with \( \log( \epsilon) \in [0, X] \), we'll show there are only finitely many choices for \( \epsilon \), since every \( \log(\varepsilon) \) correspond to a point in the intersection.
 
 ::: {.claim}
 Write \( \epsilon = u + v \sqrt{d} \) with \( u,v \in {\mathbb{Z}} \) or \( {1\over 2}{\mathbb{Z}} \), then \( u, v \geq 0 \).
@@ -1593,6 +1603,8 @@ We have \( \epsilon \geq 1 \) since \( u, v \geq 0 \). There are now two cases:
 
 2.  \( N(\epsilon) = -1 \). This case proceed similarly.
 :::
+
+This completes the proof.
 :::
 
 ::: {.question}
