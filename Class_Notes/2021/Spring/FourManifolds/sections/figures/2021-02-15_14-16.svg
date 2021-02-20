@@ -40,7 +40,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.2623079"
      inkscape:cx="443.16174"
-     inkscape:cy="556.28824"
+     inkscape:cy="587.97623"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -52,10 +52,10 @@
      guidetolerance="10000"
      inkscape:snap-perpendicular="true"
      inkscape:snap-tangential="true"
-     inkscape:window-width="1920"
+     inkscape:window-width="1080"
      inkscape:window-height="1080"
-     inkscape:window-x="2999"
-     inkscape:window-y="499"
+     inkscape:window-x="3419"
+     inkscape:window-y="484"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="0,148"
@@ -165,7 +165,7 @@
          id="tspan865"
          x="17.6875"
          y="182.47917"
-         style="stroke-width:0.264583">$\DD \da \ts{z\in \CC\st \abs{z} = 1}$</tspan></text>
+         style="stroke-width:0.264583">$\DD \da \ts{z\in \CC\st \abs{z} \leq 1}$</tspan></text>
     <g
        id="g950">
       <path

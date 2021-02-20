@@ -483,6 +483,7 @@
 }
 \newcommand{\divides}{\mid}
 \newcommand{\notdivides}{\nmid}
+\newcommand{\fractional}[1]{\theset{#1}}
 
 # Tuesday, January 12
 
@@ -2883,7 +2884,7 @@ and $g$ is the genus of $C$.
 We'll introduce the notion of a "point bundle", which are particularly nice line bundles, denoted $\OO(p)$ for $p\in \CC$.
 
 \begin{tikzpicture}
-\fontsize{35pt}{1em} 
+\fontsize{34pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-15_14-16.pdf_tex} };
 \end{tikzpicture}
 
