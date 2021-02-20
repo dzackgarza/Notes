@@ -2798,17 +2798,19 @@ Fix a right \( R{\hbox{-}} \)module \( M \in {\mathbf{Mod}{\hbox{-}}R} \), then 
 :::
 
 ::: {.example title="?"}
-\( \operatorname{Ext}_{{\mathbf{Mod}{\hbox{-}}R}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(M, {\,\cdot\,}) ] (A) \).
+\[ \operatorname{Ext}_{{\mathbf{Mod}{\hbox{-}}R}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(M, {\,\cdot\,}) ] (A) .\]
 :::
 
 ::: {.remark}
-Exercises 2.5.1, 2.5.2 are important extensions of our existing characterizations of injectives and projectives in \( {\mathbf{Mod}{\hbox{-}}R} \). These upgrade the characterization involving \( {\operatorname{Hom}} \) to one involving \( \operatorname{Ext} \). Note the typo in 2.5.1.3, it should say the following:
-
-"\( B \) is \( {\operatorname{Hom}}_{R}(A, {\,\cdot\,}) \) is acyclic for all \( A \)."
+Exercises 2.5.1, 2.5.2 are important extensions of our existing characterizations of injectives and projectives in \( {\mathbf{Mod}{\hbox{-}}R} \). These upgrade the characterization involving \( {\operatorname{Hom}} \) to one involving \( \operatorname{Ext} \). [^3]
 :::
 
 ::: {.remark}
-Fix \( B\in {\mathbf{Mod}{\hbox{-}}R} \) and consider \( G\coloneqq{\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \). Then \( G \) is still left-exact, but is now *contravariant*. We can regard it as a covariant functor left-exact functor \( G: {\mathbf{Mod}{\hbox{-}}R}^{\operatorname{op}}\to {\mathbf{Ab}} \). So we define \( R^i G(A) \) by an injective resolution of \( A \) in \( \mathcal{A}^{\operatorname{op}} \), and this is the same as a projective resolution of \( A \) in \( \mathcal{A} \). So apply \( G \) and take cohomology. It turns out that \( R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{R{\hbox{-}}\mathbf{Mod}}}(A, B) \), so we can use the same notation \( \operatorname{Ext}^i_R({\,\cdot\,}, B) \) for both cases.
+Fix \( B\in {\mathbf{Mod}{\hbox{-}}R} \) and consider \( G\coloneqq{\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \). Then \( G \) is still left-exact, but is now *contravariant*. We can regard it as a covariant functor left-exact functor \( G: {\mathbf{Mod}{\hbox{-}}R}^{\operatorname{op}}\to {\mathbf{Ab}} \). So we define \( R^i G(A) \) by an injective resolution of \( A \) in \( \mathcal{A}^{\operatorname{op}} \), and this is the same as a projective resolution of \( A \) in \( \mathcal{A} \). So apply \( G \) and take cohomology. It turns out that
+\[ 
+R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathbf{Mod}{\hbox{-}}R}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{R{\hbox{-}}\mathbf{Mod}}}(A, B) 
+,\]
+so we can use the same notation \( \operatorname{Ext}^i_R({\,\cdot\,}, B) \) for both cases.
 :::
 
 ## 2.6: Adjoint Functors and Left/Right Exactness
@@ -2820,14 +2822,16 @@ Fix \( B\in {\mathbf{Mod}{\hbox{-}}R} \) and consider \( G\coloneqq{\operatornam
 ::: {.theorem title="?"}
 Let
 \[
-L: \mathcal{A} &\to \mathcal{B} \\
-R: \mathcal{B} &\to \mathcal{A} 
-.\]
+\adjunction{L}{R}{ \mathcal{A} } { \mathcal{B} }
+\]
 be an adjoint pair of functors. Then there exists a natural isomorphism
 \[
 \tau_{AB}: {\operatorname{Hom}}_{\mathcal{B}}(LA, B) \xrightarrow{\sim} {\operatorname{Hom}}_{\mathcal{A}}(A, RB) \quad  \forall A\in \mathcal{A}, B\in \mathcal{B}
-,\]
-and \( L \) is right exact, \( B \) is left exact.
+.\]
+Moreover,
+
+-   \( L \) is right exact, and
+-   \( B \) is left exact.
 :::
 
 ::: {.proposition title="1.6: Yoneda"}
@@ -2898,7 +2902,13 @@ So \( R \) is left exact. Now \( L^{\operatorname{op}}: \mathcal{A} \to \mathcal
 ## Tensor Product Functors and Tor
 
 ::: {.remark}
-Let \( R, S \in \mathbf{Ring} \), \( B\in ({R}, {S}){\hbox{-}}\mathbf{biMod} \), \( C\in {{S}{\hbox{-}}\mathbf{Mod}} \). Then \( {\operatorname{Hom}}_{S}(B, C)\in {\mathbf{Mod}{\hbox{-}}R} \) in a natural way: given \( f:B\to C \), define \( (f\cdot r)(b) = f(rb) \).
+Let
+
+-   \( R, S \in \mathbf{Ring} \),
+-   \( B\in ({R}, {S}){\hbox{-}}\mathbf{biMod} \),
+-   \( C\in {{S}{\hbox{-}}\mathbf{Mod}} \).
+
+Then \( {\operatorname{Hom}}_{S}(B, C)\in {\mathbf{Mod}{\hbox{-}}R} \) in a natural way: given \( f:B\to C \), define \( (f\cdot r)(b) = f(rb) \).
 :::
 
 ::: {.exercise title="?"}
@@ -2948,6 +2958,220 @@ Then define \( \operatorname{Tor}_n^R(A, B) \coloneqq L_n T(A) \).
 Note that these are easier to work with, since they're covariant in both variables.
 :::
 
+# Friday, February 19
+
+::: {.remark}
+We looked at \( B\in ({R}, {S}){\hbox{-}}\mathbf{biMod} \) and showed \( {\,\cdot\,}\otimes_R B: {{R}{\hbox{-}}\mathbf{Mod}} \to {{S}{\hbox{-}}\mathbf{Mod}} \) is left adjoint to hom, and has left-derived functors \( \operatorname{Tor}_n^R({\,\cdot\,}, B) \coloneqq L_n({\,\cdot\,}\otimes_R B) \).
+\[
+\adjunction{{\,\cdot\,}\otimes_R B}{ {\operatorname{Hom}}_{{S}}(B, {\,\cdot\,}) }{{{R}{\hbox{-}}\mathbf{Mod}}}{{{S}{\hbox{-}}\mathbf{Mod}}}
+.\]
+
+Note that \( \operatorname{Tor}_0^R(A, B) \cong A\otimes_R B \).
+:::
+
+::: {.remark}
+\( A\otimes_R {\,\cdot\,} \) is also right exact, and it turns out that
+\[
+L_n(A\otimes_R {\,\cdot\,})(B) \cong L_n({\,\cdot\,}\otimes_R B)(A)
+.\]
+So unambiguously denote either of this left derived functors as \( \operatorname{Tor}_n(A, B) \).
+:::
+
+## Limits and Colimits
+
+::: {.definition title="Functor Category"}
+Given categories \( \mathcal{I}, \mathcal{A} \), define a **functor category** \( \mathcal{A}^{\mathcal{I}} \) by
+
+-   \( {\operatorname{Ob}}( \mathcal{A}^{\mathcal{I}} ) \): functors \( A: \mathcal{I} \to \mathcal{A} \).
+
+-   \( \operatorname{Mor}(\mathcal{A} ^{\mathcal{I} }) \): natural transformations \( \eta:A\to B \) between functors.
+
+\( \mathcal{I} \) is thought of as an index category, and we'll write \( A_i \coloneqq A(i) \in \mathcal{A} \) for \( i\in \mathcal{I} \). If \( \alpha:i \to j \) is a morphism in \( I \), then denote \( A(\alpha) \coloneqq\alpha_* \), which is the morphism defined by the following:
+
+```{=tex}
+\begin{tikzcd}
+    {A_i} &&& {A_j} \\
+    \\
+    {B_i} &&& {B_j}
+    \arrow["{\alpha_*}", from=1-1, to=1-4]
+    \arrow["{\alpha_*}", from=3-1, to=3-4]
+    \arrow["{\eta_i}"{description}, from=1-1, to=3-1]
+    \arrow["{\eta_j}"{description}, from=1-4, to=3-4]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJBX2kiXSxbMywwLCJBX2oiXSxbMCwyLCJCX2kiXSxbMywyLCJCX2oiXSxbMCwxLCJcXGFscGhhXyoiXSxbMiwzLCJcXGJldGFfKiJdLFswLDIsIlxcZXRhX2kiLDFdLFsxLDMsIlxcZXRhX2oiLDFdXQ==)
+
+Composition is defined by \( A \xrightarrow{\eta} B \xrightarrow{\zeta} C \) is given by \( (\zeta_\eta)_i = \zeta_i \circ \eta_i \). We need the collection of morphisms to be sets, so we'll require \( \mathcal{I} \) to be a *small category* (i.e. the class of objects forms a set).
+:::
+
+::: {.example title="Poset Category"}
+Take \( (I, \leq) \) a poset (which is reflexive, antisymmetric, transitive, but not every two elements are comparable), define a category by
+
+-   \( {\operatorname{Ob}}(\mathcal{I}) = I \)
+
+-   \( {\left\lvert { {\operatorname{Hom}}_{\mathcal{I}}(i, j) } \right\rvert} \leq 1 \), and \( i\to j \iff i\leq j \)
+
+Note that if \( i\not\leq j \), then \( {\operatorname{Hom}}_{\mathcal{I}}(i, j) = \emptyset \).
+:::
+
+::: {.remark}
+Both \( \mathcal{A}, \mathcal{A}^{\mathcal{I}} \) are small, so we can consider functors between them.
+:::
+
+::: {.definition title="Diagonal Functor"}
+The **diagonal functor** is defined as \( \Delta: \mathcal{A} \to \mathcal{A}^{\mathcal{I}} \) where for \( B \in \mathcal{A} \) the functor \( \Delta(B) \) is the constant functor, i.e. \( \Delta(B)_i = B \) for all \( i\in \mathcal{I} \). All morphism are sent to the identity, i.e. \( i \xrightarrow{\alpha} j \xrightarrow{\Delta(B)} B \xrightarrow{\one_B} B \).
+:::
+
+```{=tex}
+\todo[inline]{Work out how morphisms work here with respect to natural transformations.}
+```
+::: {.definition title="Colimit"}
+The **colimit** of a functor \( A: \mathcal{I} \to \mathcal{A} \) is an object \( C\in \mathcal{A} \) which we'll denote \( \mathop{\mathrm{colim}}\nolimits_{i\in \mathcal{I}} A_i \), along with a natural transformation \( \eta:A\to \Delta(C) \) which is universal among natural transformations of the form \( \theta: A\to \Delta(B) \) for \( B\in \mathcal{A} \). The unique map in the universal property is from \( C\to B \), and we have the following situation:
+
+```{=tex}
+\begin{tikzcd}
+    {\mathcal{I}} \\
+    i && {A_i} && C \\
+    \\
+    j && {A_j} && C \\
+    \\
+    && {A_i} \\
+    &&&& C && B \\
+    && {A_j}
+    \arrow["\alpha", from=2-1, to=4-1]
+    \arrow["{\alpha_*}", from=2-3, to=4-3]
+    \arrow["{\eta_i}"', from=2-3, to=2-5]
+    \arrow["{\eta_j}", from=4-3, to=4-5]
+    \arrow[equals, from=2-5, to=4-5]
+    \arrow["{\eta_i}"', from=6-3, to=7-5]
+    \arrow["{\eta_j}", from=8-3, to=7-5]
+    \arrow["{\alpha_*}", from=6-3, to=8-3]
+    \arrow["{\theta_i}", curve={height=-12pt}, from=6-3, to=7-7]
+    \arrow["{\theta_j}", curve={height=12pt}, from=8-3, to=7-7]
+    \arrow["{\exists ! \gamma}", dashed, from=7-5, to=7-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzAsMSwiaSJdLFswLDMsImoiXSxbMiwxLCJBX2kiXSxbMiwzLCJBX2oiXSxbMCwwLCJcXGNhdHtJfSJdLFs0LDEsIkMiXSxbNCwzLCJDIl0sWzIsNSwiQV9pIl0sWzIsNywiQV9qIl0sWzQsNiwiQyJdLFs2LDYsIkIiXSxbMCwxLCJcXGFscGhhIl0sWzIsMywiXFxhbHBoYV8qIl0sWzIsNSwiXFxldGFfaSIsMl0sWzMsNiwiXFxldGFfaiJdLFs1LDYsIj0iLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzcsOSwiXFxldGFfaSIsMl0sWzgsOSwiXFxldGFfaiJdLFs3LDgsIlxcYWxwaGFfKiJdLFs3LDEwLCJcXHRoZXRhX2kiLDAseyJjdXJ2ZSI6LTJ9XSxbOCwxMCwiXFx0aGV0YV9qIiwwLHsiY3VydmUiOjJ9XSxbOSwxMCwiXFxleGlzdHMgISBcXGdhbW1hIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+:::
+
+::: {.example title="?"}
+Let \( (I, \leq) \) be a poset and take \( \mathcal{I} \) its poset category. Then there are morphisms \( i\to j \iff i\leq j \), and we have a diagram
+
+```{=tex}
+\begin{tikzcd}
+    {A_i} \\
+    && C && D \\
+    {A_j} \\
+    {}
+    \arrow["{\eta_i}", from=1-1, to=2-3]
+    \arrow["{\eta_j}"', from=3-1, to=2-3]
+    \arrow["{\theta_j}", curve={height=12pt}, from=3-1, to=2-5]
+    \arrow["{\theta_i}"', curve={height=-12pt}, from=1-1, to=2-5]
+    \arrow["{\exists ! \gamma}"{description}, dashed, from=2-3, to=2-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJBX2kiXSxbMCwzXSxbMCwyLCJBX2oiXSxbMiwxLCJDIl0sWzQsMSwiRCJdLFswLDMsIlxcZXRhX2kiXSxbMiwzLCJcXGV0YV9qIiwyXSxbMiw0LCJcXHRoZXRhX2oiLDAseyJjdXJ2ZSI6Mn1dLFswLDQsIlxcdGhldGFfaSIsMix7ImN1cnZlIjotMn1dLFszLDQsIlxcZXhpc3RzICEgXFxnYW1tYSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+This is the **direct limit**. Note that for a poset of category of subsets, this ends up being the union.
+:::
+
+::: {.example title="?"}
+Let \( {\operatorname{Ob}}(\mathcal{I}) = \left\{{ 1, 2 }\right\} \), and take two maps, one of which we'll label by "0":
+
+```{=tex}
+\begin{tikzcd}
+    1 \\
+    \\
+    2
+    \arrow[shift right=5, from=1-1, to=3-1]
+    \arrow["0"{description}, shift left=5, from=1-1, to=3-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCIxIl0sWzAsMiwiMiJdLFswLDEsIiIsMCx7Im9mZnNldCI6NX1dLFswLDEsIjAiLDEseyJvZmZzZXQiOi01fV1d)
+
+Suppose now that \( \mathcal{A} \) is an abelian category, and suppose we're given a morphism \( A_1 \xrightarrow{f} A_2 \) in \( \mathcal{A} \). Define \( A\in \mathcal{A}^{\mathcal{I}} \), and define a functor
+
+```{=tex}
+\begin{tikzcd}
+    1 && {A_1} \\
+    &&&&&& B \\
+    2 && {A_2}
+    \arrow[shift right=2, from=1-1, to=3-1]
+    \arrow["0", shift left=2, from=1-1, to=3-1]
+    \arrow["0", shift left=2, from=1-3, to=3-3]
+    \arrow["f"', shift right=2, from=1-3, to=3-3]
+    \arrow["{\theta_1}", curve={height=-12pt}, from=1-3, to=2-7]
+    \arrow["{\theta_2}", curve={height=12pt}, from=3-3, to=2-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIxIl0sWzAsMiwiMiJdLFsyLDAsIkFfMSJdLFsyLDIsIkFfMiJdLFs2LDEsIkIiXSxbMCwxLCIiLDAseyJvZmZzZXQiOjJ9XSxbMCwxLCIwIiwwLHsib2Zmc2V0IjotMn1dLFsyLDMsIjAiLDAseyJvZmZzZXQiOi0yfV0sWzIsMywiZiIsMix7Im9mZnNldCI6Mn1dLFsyLDQsIlxcdGhldGFfMSIsMCx7ImN1cnZlIjotMn1dLFszLDQsIlxcdGhldGFfMiIsMCx7ImN1cnZlIjoyfV1d)
+
+By commutativity,
+
+-   \( \theta_2 \circ 0 = \theta_1 \implies \theta_1 = 0 \)
+
+-   \( \theta_2 \circ f = \theta_1 = 0 \).
+
+So suppose there was a colimit \( C \), then it'd fit into this diagram as follows:
+
+```{=tex}
+\begin{tikzcd}
+    1 && {A_1} \\
+    &&&& C && B \\
+    2 && {A_2}
+    \arrow[shift right=2, from=1-1, to=3-1]
+    \arrow["0", shift left=2, from=1-1, to=3-1]
+    \arrow["0", shift left=2, from=1-3, to=3-3]
+    \arrow["f"', shift right=2, from=1-3, to=3-3]
+    \arrow["{\theta_1}", curve={height=-12pt}, from=1-3, to=2-7]
+    \arrow["{\theta_2}", curve={height=12pt}, from=3-3, to=2-7]
+    \arrow["0", from=1-3, to=2-5]
+    \arrow["p", from=3-3, to=2-5]
+    \arrow[dashed, from=2-5, to=2-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCIxIl0sWzAsMiwiMiJdLFsyLDAsIkFfMSJdLFsyLDIsIkFfMiJdLFs2LDEsIkIiXSxbNCwxLCJDIl0sWzAsMSwiIiwwLHsib2Zmc2V0IjoyfV0sWzAsMSwiMCIsMCx7Im9mZnNldCI6LTJ9XSxbMiwzLCIwIiwwLHsib2Zmc2V0IjotMn1dLFsyLDMsImYiLDIseyJvZmZzZXQiOjJ9XSxbMiw0LCJcXHRoZXRhXzEiLDAseyJjdXJ2ZSI6LTJ9XSxbMyw0LCJcXHRoZXRhXzIiLDAseyJjdXJ2ZSI6Mn1dLFsyLDUsIjAiXSxbMyw1LCJwIl0sWzUsNCwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+Note that \( C \) is precisely the cokernel of \( f \)!
+:::
+
+::: {.remark}
+Think about this last diagram: what happens when you mod out by larger modules?
+:::
+
+::: {.exercise title="Colimits always exist"}
+Suppose \( I \) is a discrete category, i.e. \( {\operatorname{Hom}}(i, j) = \emptyset \) unless \( i=j \), in which case \( {\operatorname{Hom}}(i, i) = \left\{{ \one_i }\right\} \). Supposing that \( A: I \to \mathcal{A} \), show that \( \mathop{\mathrm{colim}}\nolimits_{i\in \mathcal{I}} = \coprod_{i} A_i \).
+:::
+
+::: {.definition title="?"}
+A category \( \mathcal{A} \) is **cocomplete** if every colimit \( \mathop{\mathrm{colim}}\nolimits_{i\in \mathcal{I}} A_i \) exists for every \( A\in \mathcal{A}^{\mathcal{I}} \) and all small categories \( \mathcal{I} \).
+:::
+
+::: {.exercise title="Taking colimits defines a functor for cocomplete categories"}
+Show that when \( \mathcal{A} \) is cocomplete, \( \mathop{\mathrm{colim}}\nolimits: \mathcal{A}^{\mathcal{I}} \to \mathcal{A} \) defines a functor.
+:::
+
+::: {.exercise title="Weibel 2.6.4"}
+Show that the functor \( \mathop{\mathrm{colim}}\nolimits \) is left-adjoint to the diagonal functor \( \Delta \), so there is an adjunction
+\[
+\adjunction{\mathop{\mathrm{colim}}\nolimits}{\Delta}{\mathcal{A}^{\mathcal{I}}  }{\mathcal{A} }
+.\]
+
+Thus when \( \mathcal{A} \) is abelian and \( \mathop{\mathrm{colim}}\nolimits \) exists, it is right-exact (since left-adjoints are always right-exact). Note that it's not exact in general.
+:::
+
+::: {.proposition title="Cocomplete iff all coproducts exist"}
+For any abelian category \( \mathcal{A} \), the following are equivalent:
+
+1.  \( \coprod A_i \) exists in \( \mathcal{A} \) for every set \( \left\{{ A_i }\right\} \) of objects in \( \mathcal{A} \) (*set-indexed coproducts*).
+
+2.  \( \mathcal{A} \) is cocomplete.
+:::
+
+::: {.remark}
+We'll prove this next time, note that \( 2\implies 1 \) since coproducts are special cases of limits.
+:::
+
 # Appendix: Extra Definitions
 
 ::: {.definition title="Acyclic"}
@@ -2961,3 +3185,5 @@ A chain complex \( C \) is **acyclic** if and only if \( H_*(C) = 0 \).
 [^1]: See appendix A 1.6 for initial and terminal objects. Note that \( \emptyset \) is an initial but non-terminal object in \( {\operatorname{Set}} \), whereas zero objects are both.
 
 [^2]: Recall that abelian categories are additive and only require *finite* products/coproducts. A counterexample: categories of *finite* abelian groups, where e.g. you can't take infinite sums and stay within the category.
+
+[^3]: Note the typo in 2.5.1.3, it should say the following: "\( B \) is \( {\operatorname{Hom}}_{R}(A, {\,\cdot\,}) \) is acyclic for all \( A \)."

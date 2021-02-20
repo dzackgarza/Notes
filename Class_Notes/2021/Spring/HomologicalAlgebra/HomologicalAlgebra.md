@@ -166,7 +166,7 @@
 \newcommand{\actsonl}[0]{\curvearrowleft}
 \newcommand{\actson}[0]{\curvearrowright}
 \newcommand{\bd}[0]{{\del}}
-\newcommand{\bigast}[0]{{\mathop{\Large \ast}}}
+\newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
@@ -239,6 +239,8 @@
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
 \newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
 \newcommand{\injects}[0]{\hookrightarrow}
+\newcommand{\diagonal}[0]{\Delta}
+\newcommand{\embeds}[0]{\hookrightarrow}
 \newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
@@ -279,6 +281,7 @@
 \newcommand{\dist}[0]{\operatorname{dist}}
 \newcommand{\Dist}[0]{\operatorname{Dist}}
 \newcommand{\crit}[0]{\operatorname{crit}}
+\newcommand{\Crit}[0]{\operatorname{Crit}}
 \newcommand{\diam}[0]{{\operatorname{diam}}}
 \newcommand{\gal}[0]{\operatorname{Gal}}
 \newcommand{\diff}[0]{\operatorname{Diff}}
@@ -302,7 +305,6 @@
 \newcommand{\normal}[0]{{~\trianglelefteq~}}
 \newcommand{\norm}[1]{{\left\lVert {#1} \right\rVert}}
 \newcommand{\pnorm}[2]{{\left\lVert {#1} \right\rVert}_{#2}}
-\newcommand{\notdivides}[0]{\nmid}
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
@@ -351,10 +353,12 @@
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
-\newcommand{\Wedge}[0]{\Lambda}
+\newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\wedgeprod}[0]{\vee}
+\newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{\Large \#}}
+\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -442,7 +446,7 @@
         \textstyle\rightarrow}}
 }
 
-\newcommand{\colim}{\operatornamewithlimits{\underset{\longrightarrow}{colim}}}
+\newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
@@ -453,6 +457,7 @@
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
+\newcommand\closure[1]{\overline{#1}}
 \newcommand\capprod{\frown}
 \newcommand\cupprod{\smile}
 \newcommand\Path{\mathcal{P}}
@@ -476,6 +481,8 @@
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
 
 # Wednesday, January 13
 
@@ -3564,15 +3571,18 @@ Its right-derived functors are **ext functors** and denoted $\Ext_{\modr}^i(M, \
 :::
 
 :::{.example title="?"}
-\( \Ext_{\modr}^i(M, A) = (R^i F)(A) = [ R^i \Hom_{\modr}(M, \wait) ] (A) \).
+\[ \Ext_{\modr}^i(M, A) = (R^i F)(A) = [ R^i \Hom_{\modr}(M, \wait) ] (A) .\]
 :::
 
 :::{.remark}
 Exercises 2.5.1, 2.5.2 are important extensions of our existing characterizations of injectives and projectives in $\modr$.
 These upgrade the characterization involving $\Hom$ to one involving $\Ext$.
-Note the typo in 2.5.1.3, it should say the following:
+[^note_typo]
 
+[^note_typo]: 
+Note the typo in 2.5.1.3, it should say the following:
 "$B$ is $\Hom_{R}(A, \wait)$ is acyclic for all $A$."
+
 :::
 
 :::{.remark}
@@ -3581,7 +3591,11 @@ Then $G$ is still left-exact, but is now *contravariant*.
 We can regard it as a covariant functor left-exact functor $G: \modr \op \to \Ab$.
 So we define $R^i G(A)$ by an injective resolution of $A$ in \( \cat{A}\op \), and this is the same as a projective resolution of $A$ in \( \cat{A} \).
 So apply \( G \) and take cohomology.
-It turns out that \( R^i \Hom_{\modr}(\wait, B) \cong R^i \Hom_{\modr}(A, \wait)(B) \da \Ext^i_{\rmod}(A, B) \), so we can use the same notation $\Ext^i_R(\wait, B)$ for both cases.
+It turns out that 
+\[ 
+R^i \Hom_{\modr}(\wait, B) \cong R^i \Hom_{\modr}(A, \wait)(B) \da \Ext^i_{\rmod}(A, B) 
+,\] 
+so we can use the same notation $\Ext^i_R(\wait, B)$ for both cases.
 :::
 
 ## 2.6: Adjoint Functors and Left/Right Exactness
@@ -3593,15 +3607,18 @@ $\wait$ adjoints are $\wait\op$ exact, since $\wait$ adjoints have $\wait\dash$d
 :::{.theorem title="?"}
 Let 
 \[
-L: \cat{A} &\to \cat{B} \\
-R: \cat{B} &\to \cat{A} 
-.\]
+\adjunction{L}{R}{ \cat{A} } { \cat{B} }
+\]
 be an adjoint pair of functors.
 Then there exists a natural isomorphism
 \[
 \tau_{AB}: \Hom_{\cat{B}}(LA, B) \mapsvia{\sim} \Hom_{\cat{A}}(A, RB) \quad  \forall A\in \cat{A}, B\in \cat{B}
-,\]
-and $L$ is right exact, $B$ is left exact.
+.\]
+Moreover, 
+
+- $L$ is right exact, and
+- $B$ is left exact.
+
 :::
 
 :::{.proposition title="1.6: Yoneda"}
@@ -3675,7 +3692,12 @@ Now $L\op: \cat{A} \to \cat{B}$ is right adjoint to $R\op$, so $L\op$ is left ex
 ## Tensor Product Functors and Tor
 
 :::{.remark}
-Let $R, S \in \Ring$, $B\in \bimod{R}{S}$, $C\in \mods{S}$.
+Let 
+
+- $R, S \in \Ring$, 
+- $B\in \bimod{R}{S}$, 
+- $C\in \mods{S}$.
+
 Then $\Hom_{S}(B, C)\in \modr$ in a natural way: given $f:B\to C$, define $(f\cdot r)(b) = f(rb)$.
 :::
 
@@ -3727,6 +3749,246 @@ Then define $\Tor_n^R(A, B) \da L_n T(A)$.
 :::{.remark}
 Note that these are easier to work with, since they're covariant in both variables.
 :::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Friday, February 19
+
+:::{.remark}
+We looked at $B\in \bimod{R}{S}$ and showed $\wait \tensor_R B: \mods{R} \to \mods{S}$ is left adjoint to hom, and has left-derived functors $\Tor_n^R(\wait, B) \da L_n(\wait \tensor_R B)$.
+\[
+\adjunction{\wait\tensor_R B}{ \Hom_{{S}}(B, \wait) }{\mods{R}}{\mods{S}}
+.\]
+
+Note that $\Tor_0^R(A, B) \cong A\tensor_R B$.
+:::
+
+:::{.remark}
+$A\tensor_R \wait$ is also right exact, and it turns out that 
+\[
+L_n(A\tensor_R \wait)(B) \cong L_n(\wait \tensor_R B)(A)
+.\]
+So unambiguously denote either of this left derived functors as $\Tor_n(A, B)$.
+:::
+
+## Limits and Colimits
+
+:::{.definition title="Functor Category"}
+Given categories $\cat{I}, \cat{A}$, define a **functor category** $\cat{A}^{\cat{I}}$ by
+
+- $\Ob( \cat{A}^{\cat{I}} )$: functors $A: \cat{I} \to \cat{A}$.
+
+- $\Mor(\cat{A} ^{\cat{I} })$: natural transformations $\eta:A\to B$ between functors.
+
+$\cat{I}$ is thought of as an index category, and we'll write $A_i \da A(i) \in \cat{A}$ for $i\in \cat{I}$.
+If \( \alpha:i \to j \) is a morphism in $I$, then denote \( A(\alpha) \da \alpha_* \), which is the morphism defined by the following:
+
+\begin{tikzcd}
+	{A_i} &&& {A_j} \\
+	\\
+	{B_i} &&& {B_j}
+	\arrow["{\alpha_*}", from=1-1, to=1-4]
+	\arrow["{\alpha_*}", from=3-1, to=3-4]
+	\arrow["{\eta_i}"{description}, from=1-1, to=3-1]
+	\arrow["{\eta_j}"{description}, from=1-4, to=3-4]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJBX2kiXSxbMywwLCJBX2oiXSxbMCwyLCJCX2kiXSxbMywyLCJCX2oiXSxbMCwxLCJcXGFscGhhXyoiXSxbMiwzLCJcXGJldGFfKiJdLFswLDIsIlxcZXRhX2kiLDFdLFsxLDMsIlxcZXRhX2oiLDFdXQ==)
+
+
+Composition is defined by $A \mapsvia{\eta} B \mapsvia{\zeta} C$ is given by \( (\zeta_\eta)_i = \zeta_i \circ \eta_i \).
+We need the collection of morphisms to be sets, so we'll require $\cat{I}$ to be a *small category* (i.e. the class of objects forms a set).
+:::
+
+:::{.example title="Poset Category"}
+Take $(I, \leq)$ a poset (which is reflexive, antisymmetric, transitive, but not every two elements are comparable), define a category by
+
+- $\Ob(\cat{I}) = I$
+
+- $\abs{ \Hom_{\cat{I}}(i, j) } \leq 1$, and $i\to j \iff i\leq j$
+
+Note that if $i\not\leq j$, then $\Hom_{\cat{I}}(i, j) = \emptyset$.
+:::
+
+:::{.remark}
+Both $\cat{A}, \cat{A}^{\cat{I}}$ are small, so we can consider functors between them.
+:::
+
+:::{.definition title="Diagonal Functor"}
+The **diagonal functor** is defined as $\Delta: \cat{A} \to \cat{A}^{\cat{I}}$ where for \( B \in \cat{A} \) the functor $\Delta(B)$ is the constant functor, i.e. $\Delta(B)_i = B$ for all $i\in \cat{I}$.
+All morphism are sent to the identity, i.e. $i \mapsvia{\alpha} j \mapsvia{\Delta(B)} B \mapsvia{\one_B} B$.
+:::
+
+\todo[inline]{Work out how morphisms work here with respect to natural transformations.}
+
+:::{.definition title="Colimit"}
+The **colimit** of a functor $A: \cat{I} \to \cat{A}$ is an object $C\in \cat{A}$ which we'll denote $\colim_{i\in \cat{I}} A_i$, along with a natural transformation $\eta:A\to \Delta(C)$ which is universal among natural transformations of the form $\theta: A\to \Delta(B)$ for $B\in \cat{A}$.
+The unique map in the universal property is from $C\to B$, and we have the following situation:
+
+\begin{tikzcd}
+	{\cat{I}} \\
+	i && {A_i} && C \\
+	\\
+	j && {A_j} && C \\
+	\\
+	&& {A_i} \\
+	&&&& C && B \\
+	&& {A_j}
+	\arrow["\alpha", from=2-1, to=4-1]
+	\arrow["{\alpha_*}", from=2-3, to=4-3]
+	\arrow["{\eta_i}"', from=2-3, to=2-5]
+	\arrow["{\eta_j}", from=4-3, to=4-5]
+	\arrow[equals, from=2-5, to=4-5]
+	\arrow["{\eta_i}"', from=6-3, to=7-5]
+	\arrow["{\eta_j}", from=8-3, to=7-5]
+	\arrow["{\alpha_*}", from=6-3, to=8-3]
+	\arrow["{\theta_i}", curve={height=-12pt}, from=6-3, to=7-7]
+	\arrow["{\theta_j}", curve={height=12pt}, from=8-3, to=7-7]
+	\arrow["{\exists ! \gamma}", dashed, from=7-5, to=7-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzAsMSwiaSJdLFswLDMsImoiXSxbMiwxLCJBX2kiXSxbMiwzLCJBX2oiXSxbMCwwLCJcXGNhdHtJfSJdLFs0LDEsIkMiXSxbNCwzLCJDIl0sWzIsNSwiQV9pIl0sWzIsNywiQV9qIl0sWzQsNiwiQyJdLFs2LDYsIkIiXSxbMCwxLCJcXGFscGhhIl0sWzIsMywiXFxhbHBoYV8qIl0sWzIsNSwiXFxldGFfaSIsMl0sWzMsNiwiXFxldGFfaiJdLFs1LDYsIj0iLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzcsOSwiXFxldGFfaSIsMl0sWzgsOSwiXFxldGFfaiJdLFs3LDgsIlxcYWxwaGFfKiJdLFs3LDEwLCJcXHRoZXRhX2kiLDAseyJjdXJ2ZSI6LTJ9XSxbOCwxMCwiXFx0aGV0YV9qIiwwLHsiY3VydmUiOjJ9XSxbOSwxMCwiXFxleGlzdHMgISBcXGdhbW1hIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+:::
+
+:::{.example title="?"}
+Let $(I, \leq)$ be a poset and take $\cat{I}$ its poset category.
+Then there are morphisms $i\to j \iff i\leq j$, and we have a diagram
+
+\begin{tikzcd}
+	{A_i} \\
+	&& C && D \\
+	{A_j} \\
+	{}
+	\arrow["{\eta_i}", from=1-1, to=2-3]
+	\arrow["{\eta_j}"', from=3-1, to=2-3]
+	\arrow["{\theta_j}", curve={height=12pt}, from=3-1, to=2-5]
+	\arrow["{\theta_i}"', curve={height=-12pt}, from=1-1, to=2-5]
+	\arrow["{\exists ! \gamma}"{description}, dashed, from=2-3, to=2-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJBX2kiXSxbMCwzXSxbMCwyLCJBX2oiXSxbMiwxLCJDIl0sWzQsMSwiRCJdLFswLDMsIlxcZXRhX2kiXSxbMiwzLCJcXGV0YV9qIiwyXSxbMiw0LCJcXHRoZXRhX2oiLDAseyJjdXJ2ZSI6Mn1dLFswLDQsIlxcdGhldGFfaSIsMix7ImN1cnZlIjotMn1dLFszLDQsIlxcZXhpc3RzICEgXFxnYW1tYSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+
+This is the **direct limit**.
+Note that for a poset of category of subsets, this ends up being the union.
+:::
+
+:::{.example title="?"}
+Let $\Ob(\cat{I}) = \ts{ 1, 2 }$, and take two maps, one of which we'll label by "0":
+
+\begin{tikzcd}
+	1 \\
+	\\
+	2
+	\arrow[shift right=5, from=1-1, to=3-1]
+	\arrow["0"{description}, shift left=5, from=1-1, to=3-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCIxIl0sWzAsMiwiMiJdLFswLDEsIiIsMCx7Im9mZnNldCI6NX1dLFswLDEsIjAiLDEseyJvZmZzZXQiOi01fV1d)
+
+
+Suppose now that \( \cat{A} \) is an abelian category, and suppose we're given a morphism \( A_1 \mapsvia{f} A_2 \) in \( \cat{A} \).
+Define \( A\in \cat{A}^{\cat{I}} \), and define a functor
+
+\begin{tikzcd}
+	1 && {A_1} \\
+	&&&&&& B \\
+	2 && {A_2}
+	\arrow[shift right=2, from=1-1, to=3-1]
+	\arrow["0", shift left=2, from=1-1, to=3-1]
+	\arrow["0", shift left=2, from=1-3, to=3-3]
+	\arrow["f"', shift right=2, from=1-3, to=3-3]
+	\arrow["{\theta_1}", curve={height=-12pt}, from=1-3, to=2-7]
+	\arrow["{\theta_2}", curve={height=12pt}, from=3-3, to=2-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIxIl0sWzAsMiwiMiJdLFsyLDAsIkFfMSJdLFsyLDIsIkFfMiJdLFs2LDEsIkIiXSxbMCwxLCIiLDAseyJvZmZzZXQiOjJ9XSxbMCwxLCIwIiwwLHsib2Zmc2V0IjotMn1dLFsyLDMsIjAiLDAseyJvZmZzZXQiOi0yfV0sWzIsMywiZiIsMix7Im9mZnNldCI6Mn1dLFsyLDQsIlxcdGhldGFfMSIsMCx7ImN1cnZlIjotMn1dLFszLDQsIlxcdGhldGFfMiIsMCx7ImN1cnZlIjoyfV1d)
+
+By commutativity,
+
+- $\theta_2 \circ 0 = \theta_1 \implies \theta_1 = 0$
+
+- $\theta_2 \circ f = \theta_1 = 0$.
+
+So suppose there was a colimit $C$, then it'd fit into this diagram as follows:
+
+\begin{tikzcd}
+	1 && {A_1} \\
+	&&&& C && B \\
+	2 && {A_2}
+	\arrow[shift right=2, from=1-1, to=3-1]
+	\arrow["0", shift left=2, from=1-1, to=3-1]
+	\arrow["0", shift left=2, from=1-3, to=3-3]
+	\arrow["f"', shift right=2, from=1-3, to=3-3]
+	\arrow["{\theta_1}", curve={height=-12pt}, from=1-3, to=2-7]
+	\arrow["{\theta_2}", curve={height=12pt}, from=3-3, to=2-7]
+	\arrow["0", from=1-3, to=2-5]
+	\arrow["p", from=3-3, to=2-5]
+	\arrow[dashed, from=2-5, to=2-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCIxIl0sWzAsMiwiMiJdLFsyLDAsIkFfMSJdLFsyLDIsIkFfMiJdLFs2LDEsIkIiXSxbNCwxLCJDIl0sWzAsMSwiIiwwLHsib2Zmc2V0IjoyfV0sWzAsMSwiMCIsMCx7Im9mZnNldCI6LTJ9XSxbMiwzLCIwIiwwLHsib2Zmc2V0IjotMn1dLFsyLDMsImYiLDIseyJvZmZzZXQiOjJ9XSxbMiw0LCJcXHRoZXRhXzEiLDAseyJjdXJ2ZSI6LTJ9XSxbMyw0LCJcXHRoZXRhXzIiLDAseyJjdXJ2ZSI6Mn1dLFsyLDUsIjAiXSxbMyw1LCJwIl0sWzUsNCwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+
+Note that $C$ is precisely the cokernel of $f$!
+:::
+
+:::{.remark}
+Think about this last diagram: what happens when you mod out by larger modules?
+:::
+
+:::{.exercise title="Colimits always exist"}
+Suppose $I$ is a discrete category, i.e. $\Hom(i, j) = \emptyset$ unless $i=j$, in which case $\Hom(i, i) = \ts{ \one_i }$.
+Supposing that \( A: I \to \cat{A}  \), show that \( \colim_{i\in \cat{I}} = \coprod_{i} A_i \).
+:::
+
+:::{.definition title="?"}
+A category \( \cat{A} \) is **cocomplete** if every colimit $\colim_{i\in \cat{I}} A_i$ exists for every \( A\in \cat{A}^{\cat{I}} \) and all small categories $\cat{I}$.
+:::
+
+:::{.exercise title="Taking colimits defines a functor for cocomplete categories"}
+Show that when \( \cat{A} \) is cocomplete, \( \colim: \cat{A}^{\cat{I}} \to \cat{A} \) defines a functor.
+:::
+
+:::{.exercise title="Weibel 2.6.4"}
+Show that the functor $\colim$ is left-adjoint to the diagonal functor \( \Delta \), so there is an adjunction
+\[
+\adjunction{\colim}{\diagonal}{\cat{A}^{\cat{I}}  }{\cat{A} }
+.\]
+
+Thus when \( \cat{A} \) is abelian and $\colim$ exists, it is right-exact (since left-adjoints are always right-exact).
+Note that it's not exact in general.
+:::
+
+:::{.proposition title="Cocomplete iff all coproducts exist"}
+For any abelian category \( \cat{A} \), the following are equivalent: 
+
+1. $\coprod A_i$ exists in \( \cat{A} \) for every set \( \ts{ A_i } \) of objects in \( \cat{A} \) (*set-indexed coproducts*).
+
+2. \( \cat{A} \) is cocomplete.
+
+:::
+
+:::{.remark}
+We'll prove this next time, note that $2\implies 1$ since coproducts are special cases of limits.
+:::
+
+
+
+
 
 
 
