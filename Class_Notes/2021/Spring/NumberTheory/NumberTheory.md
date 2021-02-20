@@ -1,6 +1,7 @@
 \newcommand{\dx}{\,dx}
 \newcommand{\dt}{\,dt}
 \newcommand{\dy}{\,dy}
+\newcommand{\ds}{\,ds}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
 }
@@ -82,15 +83,18 @@
 \newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
+\newcommand{\ssets}[0]{\operatorname{sSets}}
+\newcommand{\Ring}[0]{\mathbf{Ring}}
+\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\grMod}[0]{{\operatorname{grMod}}}
+\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -109,14 +113,8 @@
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
-\newcommand{\Top}[0]{{\operatorname{Top}}}
-\newcommand{\Mfd}[0]{{\operatorname{Mfd}}}
-\newcommand{\Ab}[0]{{\operatorname{Ab}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
-\newcommand{\hoTop}[0]{{\operatorname{hoTop}}}
-\newcommand{\Sch}[0]{{\operatorname{Sch}}}
-\newcommand{\sch}[0]{{\operatorname{Sch}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\alg}[0]{\mathrm{Alg}}
@@ -168,7 +166,7 @@
 \newcommand{\actsonl}[0]{\curvearrowleft}
 \newcommand{\actson}[0]{\curvearrowright}
 \newcommand{\bd}[0]{{\del}}
-\newcommand{\bigast}[0]{{\mathop{\Large \ast}}}
+\newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
@@ -241,6 +239,8 @@
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
 \newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
 \newcommand{\injects}[0]{\hookrightarrow}
+\newcommand{\diagonal}[0]{\Delta}
+\newcommand{\embeds}[0]{\hookrightarrow}
 \newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
@@ -281,6 +281,7 @@
 \newcommand{\dist}[0]{\operatorname{dist}}
 \newcommand{\Dist}[0]{\operatorname{Dist}}
 \newcommand{\crit}[0]{\operatorname{crit}}
+\newcommand{\Crit}[0]{\operatorname{Crit}}
 \newcommand{\diam}[0]{{\operatorname{diam}}}
 \newcommand{\gal}[0]{\operatorname{Gal}}
 \newcommand{\diff}[0]{\operatorname{Diff}}
@@ -304,7 +305,6 @@
 \newcommand{\normal}[0]{{~\trianglelefteq~}}
 \newcommand{\norm}[1]{{\left\lVert {#1} \right\rVert}}
 \newcommand{\pnorm}[2]{{\left\lVert {#1} \right\rVert}_{#2}}
-\newcommand{\notdivides}[0]{\nmid}
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
@@ -322,11 +322,19 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\rmod}[0]{{R\dash\mathrm{mod}}}
-\newcommand{\modr}[0]{{\mathrm{mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\operatorname{mod}}}
-\newcommand{\kmod}[0]{{k\dash\operatorname{mod}}}
+\newcommand{\Top}[0]{{\mathbf{Top}}}
+\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathbf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathbf{Sch}}}
+\newcommand{\sch}[0]{{\mathbf{Sch}}}
+\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
+\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
+\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
+\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
+\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
+\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
+\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
 \newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
@@ -345,10 +353,12 @@
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
-\newcommand{\Wedge}[0]{\Lambda}
+\newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\wedgeprod}[0]{\vee}
+\newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{\Large \#}}
+\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -436,16 +446,18 @@
         \textstyle\rightarrow}}
 }
 
-\newcommand{\colim}{\operatornamewithlimits{\underset{\longrightarrow}{colim}}}
+\newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
 \newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
+\newcommand\Mero[0]{\operatorname{Mero}}
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
+\newcommand\closure[1]{\overline{#1}}
 \newcommand\capprod{\frown}
 \newcommand\cupprod{\smile}
 \newcommand\Path{\mathcal{P}}
@@ -469,6 +481,8 @@
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
 
 # Thursday, January 14
 
@@ -2699,6 +2713,659 @@ So we just need to show that there are units other than \( \pm 1 \).
 :::
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Chapter 8: Units in $\ZZ_K$ (Monday, February 15)
+
+Last time:
+A discrete subgroup \( \Lambda \leq \RR \) is either $0$ or infinite cyclic, where *discrete* meant finite intersection with every interval $[-x, x]$.
+
+
+
+:::{.proof title="?"}
+Suppose \( \Lambda \neq 0 \), then we can choose a smallest positive element \( \alpha\in \Lambda \).
+Why does this exist? 
+There are only finitely many elements in $[0, \alpha]$, so there is a smallest, and we could replace \( \alpha \) with it.
+The claim is that \( \Lambda = \ZZ \alpha \).
+The reverse containment is clear because the RHS is necessarily a subgroup.
+Toward a contradiction, suppose there is some \( \beta\in \Lambda\sm \ZZ \alpha \) with \( n \alpha < \beta < (n+1) \alpha \) for some $n\in \ZZ$.
+This can't happen: subtracting $n$ from both sides yields 
+\[
+0 < \beta - n \alpha < \alpha
+,\]
+where the middle term is necessarily in \( \Lambda \), contradicting minimality of \( \alpha \).
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/NumberTheory/sections/figures}{2021-02-15_21-44.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+
+:::{.remark}
+Recall that to show the theorem we wanted, it was enough to show $\log U(\ZZ_K)^+$ is an infinite cyclic subgroup of $\GG_a(\RR)$.
+We proved that this was a discrete subgroup.
+If this were just the zero element, the only possible units would be $\pm 1$, so it suffices to find a unit \( \epsilon \in U(\ZZ_K) \) with \( \epsilon>0 \) and \( \epsilon\neq 1 \).
+
+
+:::
+
+## Aside on Diophantine approximation
+
+:::{.remark}
+Let \( \alpha\in \RR \) and let \( Q \in \ZZ^+ \).
+How well can we approximate \( \alpha \) with a fraction with denominator bounded by $Q$?
+:::
+
+:::{.theorem title="Dirichlet"}
+There is a $q \leq Q \in \ZZ^+$ with 
+\[ 
+\norm{q \alpha } \leq {1 \over Q+1} 
+,\] 
+where \( \norm{\wait} \) denotes the distance to the nearest integer.
+:::
+
+:::{.remark}
+The way to think about this inequality: if the LHS is close to an integer $p$, then \( \alpha \) is close to \( p/q \).
+
+:::
+
+:::{.proof title="?"}
+Chop the interval into $Q+1$ pieces, and think of the inequality as a condition on the fractional part of \( \alpha \), denoted \( \fractional{ qa } \da qa - \floor{ qa }\in [0, 1) \).
+Note that if \( \fractional{ qa } \in [0, 1/Q+1)\) or \( [Q/Q+1, Q) \) for some $q$, then we are done.
+If not, it must land in one of the $q-1$ middle intervals 
+\[
+[1/Q+1, 2/Q+1), 
+[2/Q+1, 3/Q+1), 
+\cdots,
+[Q-1/Q+1, Q/Q+1)
+\]
+for all all $q\leq Q$.
+But we have $Q$ choices for $q$ and only $Q-1$ intervals, so there are two values of $q$ with fractional part in the same interval.
+So choose these, say $q_1<q_2 \leq Q$, and consider $q \da q_2 - q_1$.
+Since \( \fractional{q_1 \alpha}, \fractional{q_2 \alpha} \) are in the same interval, we have \( \fractional{q \alpha \in [0, 1/Q+1) \), putting it close to an integer.
+:::
+
+:::{.corollary title="?"}
+There are infinitely many pairs of positive integers $(p, q)$ such that 
+\[
+\abs{p^2 - dq^2}\leq 1 + 2 \sqrt{d}  
+,\]
+where $d$ was the squarefree integer for which $K = \QQ( \sqrt{d} )$.
+:::
+
+:::{.remark}
+Note that the RHS does not depend on $p$ or $q$, and only depends on the field.
+Moreover, this proof is also true with the 1 removed..
+:::
+
+:::{.proof title="?"}
+Using Dirichlet's approximation theorem, choose \( Q \in \ZZ^+ \) and \( 1\leq q\leq Q \) 
+such that 
+\[
+\norm{ q \sqrt{d} } \leq {1 \over Q+1}
+,\]
+then there is a \( p \in \ZZ \) such that
+\[
+\abs{ p - q \sqrt{d} } \leq {1 \over Q+1}
+.\]
+We know $q$ is positive by Dirichlet's theorem, and $p$ is positive since $q\sqrt{d} \geq \sqrt{d} \geq 1$, and the distance from $p$ to $q$ is at most $1/2$.
+We can now check
+\[
+\abs{p^2 - dq^2} 
+&= \abs{p - q \sqrt{d}} \abs{p + q \sqrt{d}}    \\
+&= \abs{p - q \sqrt{d}} \abs{(p- q \sqrt{d} ) + 2q \sqrt{d} }    \\
+&\leq \abs{p - q \sqrt{d}} \abs{p- q \sqrt{d}} + \abs{2q \sqrt{d} }    \\
+&\leq {1\over Q+1} \qty{ {1\over Q+1} + 2Q \sqrt{d} }\\
+&= \qty{1\over Q+1}^2 + {2Q \over Q+1} \sqrt{d} \\
+&< 1 + 2\srqt{d}
+,\]
+where we've applied the triangle inequality and used the bound twice.
+How do we know that this results in infinitely many distinct pairs?
+Things could also go wrong if the same pairs resulted from all but finitely many choices of $Q$.
+However, the bound from Dirichlet's theorem prevents this: any pair $(p, q)$ can arise for ay most *finitely* many starting values for $Q$.
+Pick a $Q$, then produce $q$ satisfying the bound.
+Then $\norm{ q \sqrt{d} } \neq 0$ since \( \sqrt{d} \) is irrational, and thus the LHS is some positive irrational number.
+For a fixed $q$, choosing $Q'$ big enough can make the RHS smaller than the LHS, meaning that $q$ can not occur for that value of $Q'$ or anything larger.
+In other words, we're using
+\[
+\norm{ q \sqrt{d} } \leq {1\over Q+1} \converges{Q \to \infty } \to 0
+,\]
+and there can't be any infinite sequences of $Q_i$ yielding the same fixed $q$, since the RHS would go to zero while the LHS does not.
+:::
+
+:::{.remark}
+Choosing a pair $(p, q)$ as above, we'll have $p + q \sqrt{d} \in \ZZ_K$ and
+\[
+\abs{ N( p + q \sqrt{d} ) } 
+= \abs{ p^2 - d q^2 } \\
+< 1 + 2 \sqrt{d} 
+.\]
+So we have many elements in $\ZZ_K$ whose norm is bounded, which will force the existence of a nontrivial unit.
+:::
+
+:::{.lemma title="?"}
+For all real $x> 0$ there are finitely many nonzero ideals $I\normal \ZZ_K$ with $N(I) \da \abs{ \ZZ_K/I } \leq x$.
+:::
+
+:::{.proof title="of lemma"}
+Suppose $N(I) \da m \leq x$ with \( m \in \ZZ^+ \); it's enough to show that for each $m$ there are at most finitely many $I$, since there are only finitely many values of $m \leq x$.
+View $\ZZ_K / I$ as a group under addition, so by Lagrange every element has order dividing $m$.
+We can check $m = 1 + 1 + \cdots + 1$, which must be the identity in $\ZZ_K/I$.
+So $m\in I$, and since to contain is to divide, $I \divides \gens{ m }$. 
+But \( \gens{ m }  \) has only finitely many ideal divisors.
+Why? 
+This is because there is unique prime factorization, and just like $n = \prod p_i^{n_i}$ in the integers, $n$ has $\sum n_i < \infty$ possible divisors.
+:::
+
+:::{.proof title="There exists a nontrivial unit"}
+We now want to show that there exists a unit \( \epsilon>0 \) that is not equal to 1.
+Consider all ideals \( I_{p, q} \da \gens{ p + q \sqrt{d} }  \)  where \( (p, q) \) is a pair of positive integers such that \( \abs{p^2 - dq^2} < 1 + 2 \sqrt{d}  \).
+Taking norms amounts to taking absolute values of generators, so $N(I_{p, q} ) < 1 + 2 \sqrt{d}$ for all $p, q$.
+By the last lemma, this means there are only finitely many different ideals.
+On the other hand, there are infinitely many such pairs, so infinitely many pairs give rise to the same ideal.
+Pick two pairs $(p, q)$ and $(p', q')$ such that \( \gens{ p + q \sqrt{d} } = \gens{ p' + q' \sqrt{d} } \).
+If two ideals are equal, the generators differ by a unit, and so 
+\[
+(p + q \sqrt{d} ) = \eps (p' + q' \sqrt{d} ), && \eps \in U(\ZZ_K)
+.\]
+Everything in sight is positive, so solving for \( \eps \) yields \( \eps > 0 \).
+But \( \eps \neq 1 \), since the pairs would have to have been the same by comparing coefficients in the expression above.
+:::
+
+:::{.remark}
+This gives is the fundamental unit.
+How do we actually find it?
+See the book -- use continued fractions!
+It's not surprising they'd come up, since they provide a more constructive proof of Dirichlet's approximation theorem.
+:::
+
+:::{.example title="?"}
+Take $d=2$, what is \( \eps_0 \)?
+We have \( U(\ZZ_K) = \ts{ \pm \eps_0 ^k \st k\in \ZZ  } \), and so if we just look at positive units, the smallest power such that \( \eps_0^k > 1 \) will just be equal to \( \eps_0 \).
+So we're really looking for the smallest unit greater than 1.
+We proved that if \( \eps_0 = u + v \sqrt{d} \), then $u, v \geq 0$, and if \( \eps_0 > 1 \) is strict then $u, v > 0$ is strict as well.
+We also know that $u, v \geq 1$, using that $\ZZ_K = \ZZ[\sqrt{2} ]$.
+Luckily enough, $1 + \sqrt{2}$ is a unit, and so $\eps_0 = 1 + \sqrt{2}$.
+:::
+
+## Chapter 9: Class Groups
+
+Let $K$ be a quadratic field.
+
+
+:::{.definition title="?"}
+If $I, J$ are nonzero ideals of $\ZZ_K$, we say $I, J$ are **dilation equivalent**
+if there exists a \( \lambda\in K\units \) such that $I = \lambda J$.
+:::
+
+
+:::{.remark}
+It's easy to check that this is an equivalence relation, so we'll use $I \approx J$.
+:::
+
+
+:::{.definition title="?"}
+The **class group** of $\ZZ_K$ is defined as 
+\[
+\Cl(\ZZ_K) \da \Id(\ZZ_K)/\approx
+.\]
+
+:::
+
+
+:::{.remark}
+A priori this is just a set, but we can descent the monoid structure to define a group multiplication.
+We define $[I] [J] = [IJ]$, and it's easy to check that this is well-defined on equivalence classes.
+The identity is \( [ \gens{ 1 }]  \), and for inverses we can use the fact that \( [I \bar{I}] = [\gens{ N(I) }] = N(I) [ \gens{ 1 } ]  \).
+In fact, any $J$ for which $IJ$ is principal serves as an inverse for $I$.
+So the inverses come from the *Principal Multiple Lemma*, and a similar story will go through for general number fields.
+:::
+
+
+:::{.remark}
+This is an abelian group, wouldn't it be nice if it were finite?
+This is one of the big theorems of number theory: $\Cl(\ZZ_K)$ is finite.
+We can thus define the **class number** $h_k \da \abs{ \Cl(\ZZ_K) }$.
+:::
+
+
+:::{.lemma title="?"}
+There is a constant $C$ depending on $K$ such that for every $I \in \Id(\ZZ_K)$ there is a nonzero \( \alpha\in I \) such that 
+\[
+\abs{N \alpha}\leq C N(I) 
+.\]
+In fact, one can take 
+\[
+C \da 1 + \Tr(\tau) + \abs{N(\tau)} 
+.\]
+:::
+
+
+:::{.remark}
+The norm of $I$ is a natural thing to compare $N \alpha$ to, since $I \divides \gens{ \alpha }$ and thus $N(I) \divides N(\gens{ \alpha })$, so there's no hope of the LHS being smaller than $N(I)$.
+:::
+
+
+:::{.proof title="?"}
+Look at all elements \( a + b \tau \in \ZZ_K \) such that $0 \leq a,b, \sqrt{ N(I) }$.
+How many elements does this yield?
+Precisely $\qty{ \floor{ \sqrt{N(I)} } +1 }^2$.
+Note that this is strictly larger than $N(I)$, using \( \floor{x} > x-1 \) for any $x$.
+Then going to the quotient by $I$, there are exactly $N(I)$ elements, two elements reduce to the same element of $\ZZ_K/I$.
+So their difference is in $I$, so we get something of the form \( a' + b' \tau \) where \( a;, b; \in \ZZ \) (where they could now be negative), but are bounded by 
+\[
+- \sqrt{N(I)}
+\leq a', b' \leq 
+ \sqrt{N(I)} 
+.\]
+
+The claim is now that the given value of $C$ in the theorem works:
+\[
+\abs{N( \alpha)}
+&=
+\abs{N( a' + b' \tau)} \\
+&=
+\abs{(a' + b' \tau) (a' + b' \bar \tau)} \\
+&= \abs{(a')^2 + a'b' \Tr(\tau) + (b')^2 N \tau} \\
+&\leq 
+\abs{a'}^2 + \abs{a'} \abs{b'} \Tr(\tau) + \abs{b'}^2 N(\tau) \\
+&\leq C N(I)
+,\]
+where we've used \( a', b' \leq \sqrt{N(I)} \) and collected terms in the last step.
+:::
+
+
+:::{.proposition title="?"}
+Every ideal class contains an ideal of normal $\leq C$.
+:::
+
+
+:::{.corollary title="?"}
+$h_K < \infty$.
+:::
+
+:::{.remark}
+Why is this true?
+There are only finitely many ideals with this norm bound, and this says every ideal class belongs to this finite set.
+:::
+
+:::{.proof title="of proposition"}
+Since we're working with a group, it suffices to work with inverses, since these still run over all elements.
+It's enough to show that for every $I \in \Id(\ZZ_K)$, we can write $[I]\inv = [J]$ for some $J$ satisfying $N(J) \leq C$.
+Choose a nonzero \( \alpha\in I \) with \( \abs{N( \alpha )}\leq C N(I)  \).
+Since \( \alpha\in I \) we know that \( I \divides \gens{ \alpha }  \), so we can write \( \gens{ \alpha } = IJ  \) for some ideal $J$.
+We have \( [I] [J] = [IJ] = [ \gens{ \alpha } ] = [ \gens{ 1 } ] \), since all principal ideals are dilation-equivalent to \( \gens{ 1 }  \).
+This means that $[J] = [I] \inv$, and our hope is that it has small norm.
+Taking norms in \( \gens{ \alpha } = IJ  \) yields
+\[
+\abs{N \alpha} 
+&= N(I) N(J) \\
+\implies N(J) 
+&= { \abs{N \alpha} \over N(I) } \\
+\leq { C N(I) \over N(I)} = C
+.\]
+:::
+
+
+
+:::{.example title="?"}
+What we'll look at next: $\Cl( \ZZ [ \sqrt{-5} ])$.
+We know this does not have unique factorization, and the claim is that the class group is nontrivial.
+If it were, every ideal would be dilation-equivalent to \( \gens{ 1 }  \), making every ideal principal, and every PID is a UFD.
+Here we'll have $C=6$.
+One could try to write down all ideals of norm bounded by 6, but instead lets consider how they factor into primes.
+Every ideal of norm at most 6 factors into prime ideals, whose norm is also bounded by 6.
+So this factors into prime ideals lying above $2,3,5$, since any ideal lying above a prime $p$ has norm $p$ or $p^2$, and we need $p, p^2 < 6$ here.
+We've worked out all such primes before, coming from the *prime factor mirroring theorem*:
+
+- \( \gens{ 2 }= P_1^2,\, P_1 \da \gens{ 2, 1 + \sqrt{-5} } \) 
+- \( \gens{ 3 } = P_2 P_3, P_2 \da \gens{ 3, 1 - \sqrt{-5} }, P_3 \da \gens{ 1 + \sqrt{-5} }  \) 
+- \( \gens{ 5 }= P_4^2, P_4 \da \gens{ \sqrt{-5} }   \)  
+
+This allows us to conclude that $\Cl(\ZZ[ \sqrt{-5} ]) = \gens{ [P_1], [P_2], [P_3], [P_4] }$.In fact, since $P_4$ is principal we can leave it out.
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Thursday, February 18
+
+## Ch. 9 Continued
+
+:::{.remark}
+Last time: we defined an equivalence relation on nonzero ideals of $\ZZ_K$, namely \( I \approx J \iff I = \alpha J \) for some \( \alpha \in K\units \).
+We then defined the **class group**
+\[
+\Cl(\ZZ_K) \da \Id(\ZZ_K) / \approx
+.\]
+We saw that ideal multiplication descends to a well-defined group structure on ideal classes. 
+Since ideal multiplication is commutative, this is an abelian group, and moreover it is finite.
+:::
+
+:::{.example title="Computing the Class Group"}
+Let $K = \QQ(d)$ where \( d \da \sqrt{ -5 } \).
+We saw that every ideal class is represented by an element with bounded norm.
+Applying it to this specific value of $d$, every element is represented by $[I]$ where \( N(I) \leq 6 \).
+If we have such an ideal, it will factor into primes, and thus the class will factor into prime classes. 
+Thus the group is actually *generated* by prime ideals of norm at most 6.
+Any such ideal will lie above a prime $p \leq 6$, so $p=2,3,5$.
+We saw
+\[
+\gens{ 2 } = P_1^2 && P_1 \da \gens{ 2, 1 + \sqrt{-5} } \\
+\gens{ 3 } = P_2 P_3 && P_2 \da \gens{ 3, 1 + \sqrt{-5} },\, P_3 \da \gens{ 3, 1 - \sqrt{-5} }    \\
+\gens{ 5 } = P_4^2 && P_4 \da \gens{ \sqrt{-5} }.  
+.\]
+We conclude that \( \Cl(\ZZ_K) = \gens{ P_1, \cdots, P_4 }  \).
+What are the relations?
+Consider $P_4$, and note that $\gens{ \sqrt{-5} } \approx  \gens{ 1 }$ since \( P_4 = \sqrt{-5} \gens{ 1 }  \). 
+A similar argument works for any principal ideal, and we can throw out $P_4$.
+Consider $P_2$ and $P_3$.
+Since \( \gens{ 3 } \approx \gens{ 1 }   \), we have $P_2 = P_3 \inv$, so we can also throw out $P_2$, since we don't need to include the inverse of a generator.
+Recall that there is a factorization
+\[
+\gens{ 1 - \sqrt{-5} } 
+=
+\gens{ 2, 1 - \sqrt{-5} } 
+\gens{ 3, 1 - \sqrt{-5} }  
+= P_1 P_3
+\]
+and so these are inverses and we can get rid of $P_3$.
+So \( \Cl(\ZZ_K) = \gens{ [P_1] } \), which is a cyclic group.
+The generator has to have order 1 or 2, since $P_1^2 = \gens{ 1 }$. 
+The claim is that the order is 2: otherwise, it would be trivial, making the class group trivial, which would imply that $\ZZ_K$ is a PID.
+Why?
+This implies that every $I \in \Id(\ZZ_K)$ is dilation equivalent to the unit ideal, so $I = \alpha \gens{ 1 }$ for some \( \alpha\in K\units \). 
+But since $I$ is an ideal in $\ZZ_K$, this forces \( \alpha\in \ZZ_K \) and $I = \gens{ \alpha }$. 
+This is a contradiction, since every PID is a UFD, and \( \QQ( \sqrt{-5} ) \) has non-unique factorization.
+So we can write \( \Cl(\ZZ_K) \cong \GG_a(\ZZ/2\ZZ) \).
+:::
+
+:::{.remark}
+What is the class group useful for?
+We'll tie this into Diophantine equations.
+:::
+
+:::{.example title="?"}
+Solve the following equation in $\ZZ$:
+\[
+y^2 + 5 = x^3
+.\]
+Recall that we originally tried to do this by factoring the left-hand side and appealing to unique factorization in a number field to deduce that various factors were powers.
+However, we don't have unique factorization.
+Although we can write \( ( y + \sqrt{-5} ) (y - \sqrt{-5} ) = x^3 \), it's not clear that this is helpful.
+The fix will be to go to $\Id(\ZZ_K)$, which does have unique factorization, where we'll also be able to use facts about the class group.
+We can turn this into an equation in ideals:
+\[
+\gens{ y + \sqrt{-5} }  
+\gens{ y - \sqrt{-5} }  
+= 
+\gens{ x }^3 && \in \Id(\ZZ[\sqrt{-5} ]) 
+.\]
+The original strategy was to show the left-hand factors were coprime in order to deduce they were both cubes.
+We'll try to show these ideals are coprime in the monoid sense, then since their product is a cube they'll have to be cubes.
+This uses the fact that this is a reduced unique factorization monoid, so being a cube up to a unit is not something we have to worry about here.
+
+:::{.claim}
+There is no common prime ideal that divides both factors, using unique factorization.
+:::
+
+:::{.proof title="?"}
+Suppose toward a contradiction that $P$ is prime and divides both.
+Using that ideal norms are multiplicative, $N(P) \divides N( \gens{ y + \sqrt{-5} }) = y^2 + 5$. 
+We also know $P$ contains both factors, so it contains $(y + \sqrt{-5} ) - (y - \sqrt{-5} ) = 2 \sqrt{-5}$, so $N(P) \divides N( \gens{ 2 \sqrt{-5} } ) = 20$. 
+Thus $N(P) \divides \gcd(y^2 + 5, 20)$ in $\ZZ$.
+This is impossible!
+
+- $y$ is necessarily even for the original equation to be true.
+  If $y$ is odd, take the equation $\mod 8$: an odd squared is $1\mod 8$, so $y^2 +5 \equiv 6 \mod 8$, which is not a cube in $\ZZ/8$ since any cube is $0\mod 8$.
+
+- $5$ can not divide $y$.
+  If so, $5$ would divide the left-hand side and thus the right-hand side, which forces $5\divides x$ since $5$ is prime.
+  Then $5^3 \divides x^3$, meaning $5^3 \divides y^2 + 5$.
+  In this case, $5^2 \divides y^2 + 5$, and if $5\divides y$ then $5^2 \divides y^2$, so we'd need $5^2 \divides 5$.
+
+These together imply that $\gcd(y^2 + 5, 25) = 1$.
+This $N(P) \divides 1$, forcing $P = \gens{ 1 }$, a contradiction.
+
+:::
+
+Thus we can write
+\[
+\gens{ y + \sqrt{-5} }  &= I^3 \\
+\gens{ y - \sqrt{-5} }  &= J^3
+.\]
+
+In the previous argument, we wrote out $(a + b \sqrt{-5} )^3$, expanded, and compared coefficients.
+Here we have an equation in ideals, and we can't do something similar unless $I, J$ are principal.
+This is in fact the case: we'll restrict our attention to the class group.
+The left-hand side is the unit ideal, since it is principal.
+So we can write $[I]^3 = [J]^3 = e$, but we also know $\Cl(\ZZ_K) \cong \GG_a(\ZZ/2\ZZ)$, so this can only happen if $[I] = [J] = e$ and $I, J$ must be principal.
+So we can write \( I = \gens{ a + b \sqrt{-5}}  \) for some \( a, b \in \ZZ \).
+Thus 
+\[
+\gens{ y + \sqrt{-5} } = \gens{ (a + b \sqrt{-5} )^2 } \implies y + \sqrt{-5} = \pm 1 \qty { a + b \sqrt{-5} }^3  
+,\]
+using the fact that they differ by a unit but the only units in $\ZZ[ \sqrt{-5} ]$ are $\pm 1$.
+The original proof now goes through, comparing coefficients of \( \sqrt{-5} \).
+This will force $b = \pm 1$, then plug things back in to find $a$, then $y$, then $x$.
+The conclusion is that there are no solutions.
+:::
+
+:::{.remark}
+The critical takeaway: unique factorization failed, but the structure of the class group saved us! 
+We crucially used that it had no elements of order 3.
+See the book for a general theorem about equations $y^2 + d = x^3$.
+So ideal theory gives us a way to study Diophantine equations.
+:::
+
+## Ch. 10: The Class Group as a Measure of Non-unique Factorization
+
+:::{.remark}
+This statement shows up in talks: it's more of a vague sentiment than an actual theorem, but we'll discuss a way to make it precise.
+:::
+
+:::{.theorem title="?"}
+Recall that the class number is defined as $h_K \da \# \Cl(\ZZ_K)$.
+Then
+\[
+h_K = 1 \iff \ZZ_K \text{ is a UFD}
+.\]
+
+:::
+
+:::{.proof title="?"}
+$\implies$:
+Every ideal is equivalent to the unit ideal, so every ideal is principal and PID implies UFD.
+
+$\impliedby$:
+Note that this is subtle: this is the claim that $\ZZ_K$ is a UFD $\implies \ZZ_K$ is a PID, which isn't true for general rings (e.g. $\ZZ[x]$).
+Suppose $\ZZ_K$ is a UFD, then it's enough to show that every prime ideal is principal.
+Let $P$ be prime, then $P$ lies above some ordinary prime $p$, so $P \divides \gens{ p }$.
+We can factor \( \gens{ p }= \gens{ \prod_{i=1}^k \pi_i  } = \prod_{i=1}^k \gens{ \pi_i } \) for some $\pi_i$ irreducible.
+A prime ideal dividing a product, by unique factorization, must divide a factor, so $P \divides \gens{ \pi_i }$ for some $i$. 
+In a UFD, irreducibles are prime, so \( \gens{ \pi_i }  \) is a prime ideal, so we have a prime ideal dividing a prime ideal.
+By unique factorization, this forces $P = \gens{ \pi_i }$, make $P$ principal.
+:::
+
+:::{.remark}
+Can anything be said if $h_K = 2$, even though we know $\ZZ_K$ is not a UFD?
+:::
+
+:::{.theorem title="Carlitz"}
+$h_K = 2 \iff$ in $\ZZ_K$, any 2 factorizations of nonzero nonunit $\alpha$ into irreducibles have the same number of terms.
+:::
+
+:::{.remark}
+For example, in $\ZZ[ \sqrt{-5} ]$ we have $6 = (2)(3) = (1 + \sqrt{-5} )(1 - \sqrt{-5} )$, which have the same number of factors.
+:::
+
+:::{.proof title="$\implies$"}
+
+
+:::{.lemma title="?"}
+Suppose $h_K = 2$, and suppose \( \pi \in \ZZ_K \) is an irreducible that is not prime (which is possible in a non-UFD).
+Then factoring \( \gens{ \pi } = P_1 P_2  \) involves exactly two prime ideals $P_1, P_2$ in $\ZZ_K$.
+:::
+
+:::{.proof title="of lemma"}
+Write \( \gens{ \pi }= \prod_{i=1}^g P_i  \), we then want to show $g=2$.
+We have $g\geq 2$, since otherwise this would be a prime ideal, which would make $\pi$ a prime element.
+The claim is that none of the $P_i$ can be principal.
+Suppose toward a contradiction $P_1 = \gens{ \rho }$. 
+Note that multiplying ideals yields smaller sets, so the right-hand side is a subset of \( \gens{ \rho }  \), as is the left-hand side, and so \( \rho \divides \pi \).
+Since the $P_i$ were principal prime ideals, $\rho$ is prime and thus irreducible (since prime $\implies$ irreducible for any domain), so $\rho = u \pi$ for some unit.
+Thus they generate the same ideal, and \( P_1 = \gens{ \rho } = \gens{ \pi }   \).
+But then $\pi$ generates a prime ideal, make $\pi$ prime, a contradiction.
+
+So none of the $P_i$ are principal.
+Look at this equation in the class group.
+The left-hand side is the identity, and the right-hand side are all non-identity elements a group of order 2.
+So $[P_1][P_2] = e$, making $P_1 P_2 = \gens{ \omega }$ principal.
+Then \( \gens{ \pi }\subseteq \gens{ \omega }   \) and so \( \omega \divides \pi \).
+Moreover, \( \omega \) is not a unit since the product of two prime ideals is not the unit ideal.
+Since \( \pi \) is irreducible, this makes \( \omega= u \pi \) and thus \( \gens{ \omega } = \gens{ \pi }   \).
+If this were the case, we could cancel in the original equation:
+\[
+\gens{ \pi } &= (P_1 P_2)P_3 \cdots P_g = \gens{ \pi } P_3 \cdots P_g   \\
+\implies \gens{ 1 } = P_3 \cdots P_g 
+,\]
+but this is a product of prime ideals resulting in the unit ideal.
+This can only happen if there are no terms in this product, so $g=2$.
+:::
+
+Suppose $h_K = 2$.
+We already know $\ZZ_K$ is not a UFD by the previous theorem.
+The nontrivial part is showing factorization into nonzero nonunits of the same number of terms.
+Instead of working with factorization of elements, we'll work with factorization of their principal ideals into principal ideals generated by irreducibles, which will obviate the need to worry about units.
+We thus want to show that any principal ideal $P \neq \gens{ 0 }, \gens{ 1 }$ has all of its factorizations into principal ideals generated by irreducibles the same length.
+
+
+:::{.example title="?"}
+Much like the previous example, we have
+\[
+\gens{ 6 } = \gens{ 1 + \sqrt{-5} } \gens{ 1 - \sqrt{-5} } = \gens{ 2 } \gens{ 3 }     
+.\]
+:::
+
+Suppose that $P$ factors as 
+\[
+P = 
+\prod_{i=1}^k \gens{ \pi_i }
+=
+\prod_{j=1}^\ell \gens{ \rho_j }
+&&
+\pi_i, \rho_j \text{ irreducible}
+,\]
+we'd then like to show that $k=\ell$.
+
+
+:::{.observation}
+If $\pi_1$ is prime, we can use that \( \gens{ \pi_1 }\divides \prod \gens{ \rho_j }   \), and would thus have to divide (say) \( \gens{ \rho_1 }  \) up to relabeling.
+Since everything is irreducible, if $\pi_1 \divides \rho_1$ then \( \gens{ \pi_1 }= \gens{ \rho_1 }   \), meaning we can cancel.
+:::
+
+So after cancellation, we can suppose that all the $\pi_i, \rho_j$ and none are prime.
+Consider the number of prime ideals that show up after factoring all of the principal ideals on either side.
+By the lemma, any irreducible that's not prime factors into two primes, so we get $2k$ primes on the left-hand side (not necessarily distinct) and $2\ell$ on the right-hand side.
+But the factorization into primes *is* unique, so $2k=2\ell$ and $k=\ell$.
+:::
+
+:::{.remark}
+See the book for the other direction!
+:::
+
+:::{.theorem title="Landau"}
+Every ideal class contains infinitely many prime ideals.
+:::
+
+:::{.remark}
+This is an analytic theorem!
+The proof is similar to how Dirichlet proved the infinitude of primes in arithmetic progressions, which involves $L\dash$functions.
+:::
+
+:::{.remark}
+What about $h_K \geq 2$? 
+We'll introduce a way of measuring how bad unique factorization fails in a ring, the notion of *elasticity*.
+:::
+
+:::{.definition title="?"}
+Let \( \alpha\in \ZZ_K \) where \( \alpha\neq 0 \) and is not a unit.
+Define
+\[
+\rho(\alpha) { L( \alpha) \over S( \alpha) }
+,\]
+where $L( \alpha)$ is the number of terms in the longest[^well_def_max]
+factorization of \( \alpha \) and \( S( \alpha ) \) is the shortest number of terms.
+This measures how far away from unique the factorization of \( \alpha \) is.
+Now define the **elasticity** of $\ZZ_K$ as
+\[
+\rho(K) \da \sup_{\alpha} \rho( \alpha)
+.\]
+
+
+[^well_def_max]: 
+There is a way to factor that maximizes the number of irreducibles appearing, and there are not arbitrarily long factorizations.
+
+:::
+
+:::{.remark}
+Note that $h_K = 1, 2\iff \rho(K) = 1$, and $h_K > 2 \implies \rho(K) > 1$.
+:::
+
+:::{.theorem title="?"}
+For $h_K \geq 2$, 
+\[
+\rho(K) = {1\over 2} D( \Cl( \ZZ_K))
+,\]
+where $D(G)$ is the **Davenport constant** of the finite abelian group $G$: the smallest number $D$ such that every sequence of $D$ elements of $G$ contains a nonempty subsequence whose product is the identity.
+This is function from combinatorial group theory.
+:::
+
+:::{.exercise title="?"}
+$D(G) \leq \abs{G}$.
+:::
+
+:::{.fact}
+$D(G) \to \infty$ as $\abs{G} \to \infty$.
+:::
+
+:::{.corollary title="?"}
+If $h_K \to \infty$ for a sequence of number fields, then $\rho(K) \to \infty$.
+:::
+
+:::{.remark}
+This just follows from the above facts, since $h_K \to \infty$ means the size of the group $G \da \Cl( \ZZ_K)$ goes to infinity, which is a constant times $\rho(K)$.
+So as the class group gets larger, factorization gets worse.
+:::
 
 
 
