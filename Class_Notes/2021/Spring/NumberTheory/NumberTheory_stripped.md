@@ -1628,7 +1628,7 @@ where the middle term is necessarily in \( \Lambda \), contradicting minimality 
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{6pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/NumberTheory/sections/figures}{2021-02-15_21-44.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -1657,14 +1657,14 @@ The way to think about this inequality: if the LHS is close to an integer \( p \
 :::
 
 ::: {.proof title="?"}
-Chop the interval into \( Q+1 \) pieces, and think of the inequality as a condition on the fractional part of \( \alpha \), denoted \( \fractional{ qa } \coloneqq qa - {\left\lfloor  qa  \right\rfloor}\in [0, 1) \). Note that if \( \fractional{ qa } \in [0, 1/Q+1) \) or \( [Q/Q+1, Q) \) for some \( q \), then we are done. If not, it must land in one of the \( q-1 \) middle intervals
+Chop the interval into \( Q+1 \) pieces, and think of the inequality as a condition on the fractional part of \( \alpha \), denoted \( \left\{{ qa }\right\} \coloneqq qa - {\left\lfloor  qa  \right\rfloor}\in [0, 1) \). Note that if \( \left\{{ qa }\right\} \in [0, 1/Q+1) \) or \( [Q/Q+1, Q) \) for some \( q \), then we are done. If not, it must land in one of the \( q-1 \) middle intervals
 \[
 [1/Q+1, 2/Q+1), 
 [2/Q+1, 3/Q+1), 
 \cdots,
 [Q-1/Q+1, Q/Q+1)
 \]
-for all all \( q\leq Q \). But we have \( Q \) choices for \( q \) and only \( Q-1 \) intervals, so there are two values of \( q \) with fractional part in the same interval. So choose these, say \( q_1<q_2 \leq Q \), and consider \( q \coloneqq q_2 - q_1 \). Since \( \fractional{q_1 \alpha}, \fractional{q_2 \alpha} \) are in the same interval, we have \( \fractional{q \alpha \in [0, 1/Q+1) \), putting it close to an integer.
+for all all \( q\leq Q \). But we have \( Q \) choices for \( q \) and only \( Q-1 \) intervals, so there are two values of \( q \) with fractional part in the same interval. So choose these, say \( q_1<q_2 \leq Q \), and consider \( q \coloneqq q_2 - q_1 \). Since \( \left\{{q_1 \alpha}\right\}, \left\{{q_2 \alpha}\right\} \) are in the same interval, we have \( \left\{{q \alpha}\right\} \in [0, 1/Q+1) \), putting it close to an integer.
 :::
 
 ::: {.corollary title="?"}
@@ -1696,7 +1696,7 @@ We know \( q \) is positive by Dirichlet's theorem, and \( p \) is positive sinc
 &\leq {\left\lvert {p - q \sqrt{d}} \right\rvert} {\left\lvert {p- q \sqrt{d}} \right\rvert} + {\left\lvert {2q \sqrt{d} } \right\rvert}    \\
 &\leq {1\over Q+1} \qty{ {1\over Q+1} + 2Q \sqrt{d} }\\
 &= \qty{1\over Q+1}^2 + {2Q \over Q+1} \sqrt{d} \\
-&< 1 + 2\srqt{d}
+&< 1 + 2\sqrt{d}
 ,\]
 where we've applied the triangle inequality and used the bound twice. How do we know that this results in infinitely many distinct pairs? Things could also go wrong if the same pairs resulted from all but finitely many choices of \( Q \). However, the bound from Dirichlet's theorem prevents this: any pair \( (p, q) \) can arise for ay most *finitely* many starting values for \( Q \). Pick a \( Q \), then produce \( q \) satisfying the bound. Then \( {\left\lVert { q \sqrt{d} } \right\rVert} \neq 0 \) since \( \sqrt{d} \) is irrational, and thus the LHS is some positive irrational number. For a fixed \( q \), choosing \( Q' \) big enough can make the RHS smaller than the LHS, meaning that \( q \) can not occur for that value of \( Q' \) or anything larger. In other words, we're using
 \[
@@ -1724,7 +1724,11 @@ Suppose \( N(I) \coloneqq m \leq x \) with \( m \in {\mathbb{Z}}^+ \); it's enou
 :::
 
 ::: {.proof title="There exists a nontrivial unit"}
-We now want to show that there exists a unit \( \epsilon>0 \) that is not equal to 1. Consider all ideals \( I_{p, q} \coloneqq\left\langle{ p + q \sqrt{d} }\right\rangle \) where \( (p, q) \) is a pair of positive integers such that \( {\left\lvert {p^2 - dq^2} \right\rvert} < 1 + 2 \sqrt{d} \). Taking norms amounts to taking absolute values of generators, so \( N(I_{p, q} ) < 1 + 2 \sqrt{d} \) for all \( p, q \). By the last lemma, this means there are only finitely many different ideals. On the other hand, there are infinitely many such pairs, so infinitely many pairs give rise to the same ideal. Pick two pairs \( (p, q) \) and \( (p', q') \) such that \( \left\langle{ p + q \sqrt{d} }\right\rangle = \left\langle{ p' + q' \sqrt{d} }\right\rangle \). If two ideals are equal, the generators differ by a unit, and so
+We now want to show that there exists a unit \( \epsilon>0 \) that is not equal to 1. Consider all ideals \( I_{p, q} \coloneqq\left\langle{ p + q \sqrt{d} }\right\rangle \) where \( (p, q) \) is a pair of positive integers such that \( {\left\lvert {p^2 - dq^2} \right\rvert} < 1 + 2 \sqrt{d} \). Taking norms amounts to taking absolute values of generators, so
+\[
+N(I_{p, q} ) < 1 + 2 \sqrt{d}
+\]
+for all \( p, q \). By the last lemma, this means there are only finitely many different ideals. On the other hand, there are infinitely many such pairs, so infinitely many pairs give rise to the same ideal. Pick two pairs \( (p, q) \) and \( (p', q') \) such that \( \left\langle{ p + q \sqrt{d} }\right\rangle = \left\langle{ p' + q' \sqrt{d} }\right\rangle \). If two ideals are equal, the generators differ by a unit, and so
 \[
 (p + q \sqrt{d} ) = \varepsilon(p' + q' \sqrt{d} ), && \varepsilon\in U({\mathbb{Z}}_K)
 .\]
@@ -1823,7 +1827,8 @@ Since we're working with a group, it suffices to work with inverses, since these
 &= N(I) N(J) \\
 \implies N(J) 
 &= { {\left\lvert {N \alpha} \right\rvert} \over N(I) } \\
-\leq { C N(I) \over N(I)} = C
+&\leq { C N(I) \over N(I)} \\
+&= C
 .\]
 :::
 
@@ -1834,7 +1839,11 @@ What we'll look at next: \( \operatorname{Cl}( {\mathbb{Z}}[ \sqrt{-5} ]) \). We
 -   \( \left\langle{ 3 }\right\rangle = P_2 P_3, P_2 \coloneqq\left\langle{ 3, 1 - \sqrt{-5} }\right\rangle, P_3 \coloneqq\left\langle{ 1 + \sqrt{-5} }\right\rangle \)
 -   \( \left\langle{ 5 }\right\rangle= P_4^2, P_4 \coloneqq\left\langle{ \sqrt{-5} }\right\rangle \)
 
-This allows us to conclude that \( \operatorname{Cl}({\mathbb{Z}}[ \sqrt{-5} ]) = \left\langle{ [P_1], [P_2], [P_3], [P_4] }\right\rangle \).In fact, since \( P_4 \) is principal we can leave it out.
+This allows us to conclude that
+\[
+\operatorname{Cl}({\mathbb{Z}}[ \sqrt{-5} ]) = \left\langle{ [P_1], [P_2], [P_3], [P_4] }\right\rangle
+.\]
+In fact, since \( P_4 \) is principal we can leave it out.
 :::
 
 # Thursday, February 18

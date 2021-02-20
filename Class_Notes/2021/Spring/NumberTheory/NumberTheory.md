@@ -483,6 +483,7 @@
 }
 \newcommand{\divides}{\mid}
 \newcommand{\notdivides}{\nmid}
+\newcommand{\fractional}[1]{\theset{#1}}
 
 # Thursday, January 14
 
@@ -2763,7 +2764,7 @@ This can't happen: subtracting $n$ from both sides yields
 where the middle term is necessarily in \( \Lambda \), contradicting minimality of \( \alpha \).
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{6pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/NumberTheory/sections/figures}{2021-02-15_21-44.pdf_tex} };
 \end{tikzpicture}
 
@@ -2811,7 +2812,7 @@ If not, it must land in one of the $q-1$ middle intervals
 for all all $q\leq Q$.
 But we have $Q$ choices for $q$ and only $Q-1$ intervals, so there are two values of $q$ with fractional part in the same interval.
 So choose these, say $q_1<q_2 \leq Q$, and consider $q \da q_2 - q_1$.
-Since \( \fractional{q_1 \alpha}, \fractional{q_2 \alpha} \) are in the same interval, we have \( \fractional{q \alpha \in [0, 1/Q+1) \), putting it close to an integer.
+Since \( \fractional{q_1 \alpha}, \fractional{q_2 \alpha} \) are in the same interval, we have \( \fractional{q \alpha} \in [0, 1/Q+1) \), putting it close to an integer.
 :::
 
 :::{.corollary title="?"}
@@ -2846,7 +2847,7 @@ We can now check
 &\leq \abs{p - q \sqrt{d}} \abs{p- q \sqrt{d}} + \abs{2q \sqrt{d} }    \\
 &\leq {1\over Q+1} \qty{ {1\over Q+1} + 2Q \sqrt{d} }\\
 &= \qty{1\over Q+1}^2 + {2Q \over Q+1} \sqrt{d} \\
-&< 1 + 2\srqt{d}
+&< 1 + 2\sqrt{d}
 ,\]
 where we've applied the triangle inequality and used the bound twice.
 How do we know that this results in infinitely many distinct pairs?
@@ -2889,7 +2890,11 @@ This is because there is unique prime factorization, and just like $n = \prod p_
 :::{.proof title="There exists a nontrivial unit"}
 We now want to show that there exists a unit \( \epsilon>0 \) that is not equal to 1.
 Consider all ideals \( I_{p, q} \da \gens{ p + q \sqrt{d} }  \)  where \( (p, q) \) is a pair of positive integers such that \( \abs{p^2 - dq^2} < 1 + 2 \sqrt{d}  \).
-Taking norms amounts to taking absolute values of generators, so $N(I_{p, q} ) < 1 + 2 \sqrt{d}$ for all $p, q$.
+Taking norms amounts to taking absolute values of generators, so 
+\[
+N(I_{p, q} ) < 1 + 2 \sqrt{d}
+\]
+for all $p, q$.
 By the last lemma, this means there are only finitely many different ideals.
 On the other hand, there are infinitely many such pairs, so infinitely many pairs give rise to the same ideal.
 Pick two pairs $(p, q)$ and $(p', q')$ such that \( \gens{ p + q \sqrt{d} } = \gens{ p' + q' \sqrt{d} } \).
@@ -3031,7 +3036,8 @@ Taking norms in \( \gens{ \alpha } = IJ  \) yields
 &= N(I) N(J) \\
 \implies N(J) 
 &= { \abs{N \alpha} \over N(I) } \\
-\leq { C N(I) \over N(I)} = C
+&\leq { C N(I) \over N(I)} \\
+&= C
 .\]
 :::
 
@@ -3051,7 +3057,11 @@ We've worked out all such primes before, coming from the *prime factor mirroring
 - \( \gens{ 3 } = P_2 P_3, P_2 \da \gens{ 3, 1 - \sqrt{-5} }, P_3 \da \gens{ 1 + \sqrt{-5} }  \) 
 - \( \gens{ 5 }= P_4^2, P_4 \da \gens{ \sqrt{-5} }   \)  
 
-This allows us to conclude that $\Cl(\ZZ[ \sqrt{-5} ]) = \gens{ [P_1], [P_2], [P_3], [P_4] }$.In fact, since $P_4$ is principal we can leave it out.
+This allows us to conclude that 
+\[
+\Cl(\ZZ[ \sqrt{-5} ]) = \gens{ [P_1], [P_2], [P_3], [P_4] }
+.\]
+In fact, since $P_4$ is principal we can leave it out.
 
 :::
 
