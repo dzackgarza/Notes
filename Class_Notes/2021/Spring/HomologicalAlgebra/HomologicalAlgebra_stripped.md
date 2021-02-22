@@ -3172,6 +3172,231 @@ For any abelian category \( \mathcal{A} \), the following are equivalent:
 We'll prove this next time, note that \( 2\implies 1 \) since coproducts are special cases of limits.
 :::
 
+# Monday, February 22
+
+## Colimits and Adjoint
+
+::: {.proposition title="?"}
+Assume \( \mathcal{A} \) is abelian so we have cokernels for maps. TFAE:
+
+1.  \( \bigoplus A_i \) exists in \( \mathcal{A} \) for every set \( \left\{{A_i}\right\} \) of objects in \( \mathcal{A} \).
+
+2.  \( \mathcal{A} \) is cocomplete, i.e. \( \mathop{\mathrm{colim}}\nolimits_{i\in I}A_i \) exists for every functor \( \mathcal{I} \to \mathcal{A} \) with \( \mathcal{I} \) small.
+:::
+
+::: {.proof title="?"}
+Note that (1) is a special case of (2), so it suffices to show \( 1\implies 2 \). Given a functor \( A: \mathcal{I} \to \mathcal{A} \) and let \( f: \bigoplus _{\alpha i\to j} A_i \to \bigoplus_{i\in \mathcal{I}} A_i \) where \( i,j \in \mathcal{I} \).
+
+```{=tex}
+\begin{tikzcd}
+    i && j && {\mathcal{I}} \\
+    \\
+    {A_i} && {A_j} && {\mathcal{A}}
+    \arrow["\alpha", from=1-1, to=1-3]
+    \arrow["{\alpha_*}", from=3-1, to=3-3]
+    \arrow["A"{description}, squiggly, from=1-3, to=3-3]
+    \arrow["A"{description}, squiggly, from=1-1, to=3-1]
+    \arrow["A", squiggly, from=1-5, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJpIl0sWzIsMCwiaiJdLFswLDIsIkFfaSJdLFsyLDIsIkFfaiJdLFs0LDIsIlxcY2F0e0F9Il0sWzQsMCwiXFxjYXR7SX0iXSxbMCwxLCJcXGFscGhhIl0sWzIsMywiXFxhbHBoYV8qIl0sWzEsMywiQSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6InNxdWlnZ2x5In19fV0sWzAsMiwiQSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6InNxdWlnZ2x5In19fV0sWzUsNCwiQSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6InNxdWlnZ2x5In19fV1d)
+
+Then the map \( f( a_{i, \alpha}) = \alpha_*(a_i) - a_i \in A_j - A_i \), so this is \( \alpha_* - \one \). Let \( C\coloneqq\operatorname{coker}f \coloneqq\bigoplus_{i\in I} A_i / \operatorname{im}(f) \), and we'll denote elements in this quotient with a bar.
+
+::: {.claim}
+\( C = \mathop{\mathrm{colim}}\nolimits_{i\in I} A_i \) with
+\[
+\eta_i: A_i &\to C \\
+a_i &\mapsto \mkern 1.5mu\overline{\mkern-1.5mua_i\mkern-1.5mu}\mkern 1.5mu
+,\]
+where we first embed \( A_i \) into the direct sum and then take the quotient.
+:::
+
+::: {.exercise title="?"}
+Use the universal property of cokernels in \( \mathcal{A} \). Check that the following diagram commutes:
+
+```{=tex}
+\begin{tikzcd}
+    {A_i} \\
+    && C \\
+    {A_j}
+    \arrow["{\eta_i}", from=1-1, to=2-3]
+    \arrow["{\eta_j}"', from=3-1, to=2-3]
+    \arrow["{\alpha_*}"', from=1-1, to=3-1]
+\end{tikzcd}
+```
+This essentially follows from the fact that \( \mkern 1.5mu\overline{\mkern-1.5mu \alpha_*(a_i)\mkern-1.5mu}\mkern 1.5mu = \mkern 1.5mu\overline{\mkern-1.5mua_i\mkern-1.5mu}\mkern 1.5mu \).
+:::
+:::
+
+::: {.remark}
+\( {\mathbf{Mod}{\hbox{-}}R} \) satisfies (1), since direct sums of \( R{\hbox{-}} \)modules still have an \( R{\hbox{-}} \)module structure. Thus \( {\mathbf{Mod}{\hbox{-}}R} \) is cocomplete.
+:::
+
+::: {.definition title="Limits"}
+The **limit** of a functor \( A:\mathcal{I} \to \mathcal{A} \) is the colimit of the dual functor \( A^{\operatorname{op}}: I^{\operatorname{op}}\to \mathcal{A}^{\operatorname{op}} \).
+:::
+
+::: {.remark}
+Note that this amounts to reversing arrows in the conditions of a colimit. Many of the results for colimits go through with arrows reversed. Examples: kernels, direct products. If \( I \) is a poset, then limits are referred to as **inverse limits**, using \( \varprojlim_{i\in I} A_i \).
+:::
+
+::: {.definition title="Complete Categories"}
+\( \mathcal{A} \) is **complete** if and only if \( \lim_{i\in I} A_i \) exists whenever \( \mathcal{I} \) is small and \( A: \mathcal{I} \to \mathcal{A} \).
+:::
+
+::: {.theorem title="The Adjoint-Limit Theorem"}
+Let \( \adjunction{L}{R}{ \mathcal{A} }{ \mathcal{ B} } \) be an adjoint pair, where now \( \mathcal{A}, \mathcal{B} \) are now arbitrary categories (not necessarily abelian). Then
+
+-   The **left adjoint** \( L \) preserves **colimits** (direct sums, cokernels, etc). I.e. if \( A: \mathcal{I} \to \mathcal{A} \) has a colimit, then so does \( (L \circ A ): \mathcal{I}\to \mathcal{B} \), and \( L( \mathop{\mathrm{colim}}\nolimits A_i) = \mathop{\mathrm{colim}}\nolimits(LA_i) \).
+
+-   The **right adjoint** \( R \) preserves **limits** (direct products, kernels, etc).
+:::
+
+::: {.proof title="?"}
+Not given in the book! See MacLane's *Categories for the Working Mathematician*.
+:::
+
+::: {.remark}
+Recall left adjoints are right-exact and have left-derived functors.
+:::
+
+::: {.corollary title="?"}
+If \( \mathcal{A} \) is a cocomplete abelian category with enough projectives and \( \adjunction{F}{G}{ \mathcal{A} } { \mathcal{B} } \). Then for every set-indexed collection of objects \( \left\{{ A_i }\right\} \),
+\[
+(L_* F)\qty{ \bigoplus_{i \in I } A_i } = \bigoplus _{i\in I} L_* F(A_i) )
+,\]
+so left-derived functors commute with direct sums.
+:::
+
+::: {.proof title="?"}
+Let \( P_i \) be the projective resolution of \( A_i \), so \( P_i \to A_i \), then \( \bigoplus P_i \to \bigoplus A_i \) is a projective resolution, and by definition
+\[
+(L_* F) \qty{ \bigoplus A_i}
+&=
+H_*\qty{ F\qty{ \bigoplus P_i } } \\
+&=
+H_* \qty{ \bigoplus FP_i } \quad \text{by the theorem} \\
+&\cong 
+\bigoplus H_*( FP_i) \text{homology commutes with $\oplus \in \operatorname{Ch}(\mathcal{A})$} \\
+&=
+\bigoplus _i L_* F(A_i)
+.\]
+:::
+
+::: {.corollary title="?"}
+For \( A_i \in {R{\hbox{-}}\mathbf{Mod}}, B\in {\mathbf{Mod}{\hbox{-}}R} \),
+\[
+\operatorname{Tor}_*^R\qty{ \bigoplus_{i\in I} A_i, B } \cong \bigoplus_{i\in I} \operatorname{Tor}_*^R(A_i, B)
+.\]
+:::
+
+::: {.proof title=""}
+\[
+\operatorname{Tor}_*^R({\,\cdot\,}, B) = L_*F, && F \coloneqq({\,\cdot\,}\otimes_R B)
+,\]
+and \( F \) is a left-adjoint by the tensor-hom adjunction.
+:::
+
+::: {.remark}
+One can also show directly from the definition that
+\[
+\operatorname{Tor}_*^R(A, \bigoplus_{i\in I} B_i) \cong \bigoplus_{i\in I} \operatorname{Tor}_*^R(A, B_i)
+.\]
+This uses the fact that \( P \otimes_R (\bigoplus_{i\in I} B_i) \cong \bigoplus_{i\in I} (P \otimes B_i) \).
+:::
+
+::: {.remark}
+We'll skip the rest of this section, we (hopefully) won't need filtered colimits.
+:::
+
+## Balancing Tor and Ext
+
+Idea: their derived functors with either variable fixed will essentially be the same. We'll start by showing that the two left-derived functors of \( {\,\cdot\,}\otimes_R {\,\cdot\,} \) give the same results, and similarly for the two right-derived functors \( {\operatorname{Hom}}_R({\,\cdot\,}, {\,\cdot\,}) \). We'll use double complexes!
+
+### Tensor Product Complexes
+
+Suppose we have two chain complexes \( (P)_R \in \operatorname{Ch}( {\mathbf{Mod}{\hbox{-}}R}), {}_R(Q) \in \operatorname{Ch}({R{\hbox{-}}\mathbf{Mod}}) \). Then there is a double complex where \( i, j \) indexes rows and columns: \( P \otimes_R Q = \left\{{ P_i \otimes_R Q_j }\right\}_{i, j} \), the **tensor product double complex** of \( P \) and \( Q \). We use the sign trick from 1.2.5:
+
+-   \( d^h \coloneqq d^P \otimes\one \)
+
+-   \( d^v \coloneqq(-1)^i 1 \otimes d^Q \)
+
+Taking the direct sum totalization \( \operatorname{Tor}^{ \oplus }(P \otimes_R Q ) \) is the **total tensor product chain complex** of \( P \) and \( Q \). Note that this has a single differential! The big theorem from this section:
+
+::: {.theorem title="?"}
+\[
+L_n(A\otimes_R {\,\cdot\,})(B) \cong L_n({\,\cdot\,}\otimes_R B)(A) \coloneqq\operatorname{Tor}_n^R(A, B)
+.\]
+:::
+
+::: {.remark}
+Note that this makes the right-hand side notation unambiguous.
+:::
+
+::: {.proof title="?"}
+Choose projective resolutions \( P \xrightarrow{\varepsilon} A \in {\mathbf{Mod}{\hbox{-}}R} \) and \( Q \xrightarrow{\eta} B \in {R{\hbox{-}}\mathbf{Mod}} \). We'll form 3 tensor product double complexes.
+
+-   \( P\otimes Q \): A first quadrant double complex, since the projective resolutions have nonnegative indices.
+
+-   \( A\otimes Q \), embedding \( A \hookrightarrow\operatorname{Ch}( \mathcal{A} ) \) as a complex concentrated in degree 0 (so one column)
+
+-   \( P \otimes B \) (one row).
+
+There are several maps of double complexes among these induced by \( \epsilon, \eta \):
+
+```{=tex}
+\begin{tikzcd}
+    && {} \\
+    && {} & \vdots && \vdots && \vdots \\
+    & {A \otimes Q_2} && {P_0 \otimes Q_2} && {P_1\otimes Q_2} && {P_2 \otimes Q_2} && \cdots \\
+    & {A \otimes Q_1} && {P_0 \otimes Q_1} && {P_1\otimes Q_1} && {P_2 \otimes Q_1} && \cdots \\
+    & {A \otimes Q_0} && {P_0 \otimes Q_0} && {P_1\otimes Q_0} && {P_2 \otimes Q_0} && \cdots \\
+    {} && {} &&&&&& {} \\
+    &&& {P_0 \otimes B} && {P_1 \otimes B} && {P_2 \otimes B} \\
+    && {}
+    \arrow["{\epsilon \otimes 1}", from=3-4, to=3-2]
+    \arrow["{\epsilon \otimes 1}", from=4-4, to=4-2]
+    \arrow["{\epsilon \otimes 1}", from=5-4, to=5-2]
+    \arrow["{1 \otimes\eta}"{description}, from=5-4, to=7-4]
+    \arrow["{1 \otimes\eta}"{description}, from=5-6, to=7-6]
+    \arrow["{1 \otimes\eta}"{description}, from=5-8, to=7-8]
+    \arrow[from=2-4, to=3-4]
+    \arrow["{d^P \otimes 1}"', from=3-6, to=3-4]
+    \arrow[from=2-6, to=3-6]
+    \arrow[from=2-8, to=3-8]
+    \arrow["{d^P \otimes 1}"', from=3-8, to=3-6]
+    \arrow["{d^P \otimes 1}", from=4-8, to=4-6]
+    \arrow["{d^P \otimes 1}", from=5-8, to=5-6]
+    \arrow["{d^P \otimes 1}", from=5-6, to=5-4]
+    \arrow["{d^P \otimes 1}", from=4-6, to=4-4]
+    \arrow["{1\otimes d^Q}", from=3-4, to=4-4]
+    \arrow["{1\otimes d^Q}", from=4-4, to=5-4]
+    \arrow["{1\otimes d^Q}", from=3-6, to=4-6]
+    \arrow["{1\otimes d^Q}", from=4-6, to=5-6]
+    \arrow["{1\otimes d^Q}", from=3-8, to=4-8]
+    \arrow["{1\otimes d^Q}", from=4-8, to=5-8]
+    \arrow[draw={rgb,255:red,214;green,92;blue,92}, dotted, no head, from=6-1, to=6-9]
+    \arrow[draw={rgb,255:red,214;green,92;blue,92}, dotted, no head, from=1-3, to=8-3]
+    \arrow[from=5-10, to=5-8]
+    \arrow[from=4-10, to=4-8]
+    \arrow[from=3-10, to=3-8]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMjcsWzEsMiwiQSBcXHRlbnNvciBRXzIiXSxbMSwzLCJBIFxcdGVuc29yIFFfMSJdLFsxLDQsIkEgXFx0ZW5zb3IgUV8wIl0sWzIsNV0sWzMsMiwiUF8wIFxcdGVuc29yIFFfMiJdLFszLDMsIlBfMCBcXHRlbnNvciBRXzEiXSxbMyw0LCJQXzAgXFx0ZW5zb3IgUV8wIl0sWzUsMiwiUF8xXFx0ZW5zb3IgUV8yIl0sWzcsMiwiUF8yIFxcdGVuc29yIFFfMiJdLFs3LDMsIlBfMiBcXHRlbnNvciBRXzEiXSxbNyw0LCJQXzIgXFx0ZW5zb3IgUV8wIl0sWzgsNV0sWzMsNiwiUF8wIFxcdGVuc29yIEIiXSxbNSw2LCJQXzEgXFx0ZW5zb3IgQiJdLFs3LDYsIlBfMiBcXHRlbnNvciBCIl0sWzUsNCwiUF8xXFx0ZW5zb3IgUV8wIl0sWzUsMywiUF8xXFx0ZW5zb3IgUV8xIl0sWzMsMSwiXFx2ZG90cyJdLFs1LDEsIlxcdmRvdHMiXSxbNywxLCJcXHZkb3RzIl0sWzIsMV0sWzIsN10sWzAsNV0sWzIsMF0sWzksMiwiXFxjZG90cyJdLFs5LDMsIlxcY2RvdHMiXSxbOSw0LCJcXGNkb3RzIl0sWzQsMCwiXFxlcHNpbG9uIFxcdGVuc29yIDEiXSxbNSwxLCJcXGVwc2lsb24gXFx0ZW5zb3IgMSJdLFs2LDIsIlxcZXBzaWxvbiBcXHRlbnNvciAxIl0sWzYsMTIsIjEgXFx0ZW5zb3IgXFxldGEiLDFdLFsxNSwxMywiMSBcXHRlbnNvciBcXGV0YSIsMV0sWzEwLDE0LCIxIFxcdGVuc29yIFxcZXRhIiwxXSxbMTcsNF0sWzcsNCwiZF5QIFxcdGVuc29yIDEiLDJdLFsxOCw3XSxbMTksOF0sWzgsNywiZF5QIFxcdGVuc29yIDEiLDJdLFs5LDE2LCJkXlAgXFx0ZW5zb3IgMSJdLFsxMCwxNSwiZF5QIFxcdGVuc29yIDEiXSxbMTUsNiwiZF5QIFxcdGVuc29yIDEiXSxbMTYsNSwiZF5QIFxcdGVuc29yIDEiXSxbNCw1LCIxXFx0ZW5zb3IgZF5RIl0sWzUsNiwiMVxcdGVuc29yIGReUSJdLFs3LDE2LCIxXFx0ZW5zb3IgZF5RIl0sWzE2LDE1LCIxXFx0ZW5zb3IgZF5RIl0sWzgsOSwiMVxcdGVuc29yIGReUSJdLFs5LDEwLCIxXFx0ZW5zb3IgZF5RIl0sWzIyLDExLCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMjMsMjEsIiIsMCx7ImNvbG91ciI6WzAsNjAsNjBdLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyNiwxMF0sWzI1LDldLFsyNCw4XV0=)
+
+We'll show there are two maps:
+\[
+A \otimes Q = \mathrm{\operatorname{Tot}}(A\otimes Q) \xleftarrow{\varepsilon\otimes\one} \operatorname{Tor}(P\otimes Q) \xrightarrow{1\otimes\eta} \operatorname{Tor}(P\otimes B) = P\otimes B
+,\]
+using that totalizing a one-row or one-column complex is summing along diagonals where each has one term, yielding actual equality of the first and last terms respectively above. Moreover, we'll show these are **quasi-isomorphisms**, and so
+\[
+L_*(A\otimes{\,\cdot\,}) \xleftarrow{\varepsilon\otimes\one} H_*( \operatorname{Tor}(P\otimes Q) ) \xrightarrow{\one \otimes\eta} L_*( {\,\cdot\,}\otimes B)(A)
+.\]
+
+We'll continue with the proof of this next time.
+:::
+
 # Appendix: Extra Definitions
 
 ::: {.definition title="Acyclic"}
