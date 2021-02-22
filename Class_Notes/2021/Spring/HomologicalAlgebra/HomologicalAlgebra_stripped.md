@@ -3291,7 +3291,7 @@ For \( A_i \in {R{\hbox{-}}\mathbf{Mod}}, B\in {\mathbf{Mod}{\hbox{-}}R} \),
 .\]
 :::
 
-::: {.proof title=""}
+::: {.proof title="of corollary"}
 \[
 \operatorname{Tor}_*^R({\,\cdot\,}, B) = L_*F, && F \coloneqq({\,\cdot\,}\otimes_R B)
 ,\]

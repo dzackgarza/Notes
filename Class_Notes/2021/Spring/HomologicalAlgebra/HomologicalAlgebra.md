@@ -4143,7 +4143,7 @@ For $A_i \in \rmod, B\in \modr$,
 .\]
 :::
 
-:::{.proof title=""}
+:::{.proof title="of corollary"}
 \[
 \Tor_*^R(\wait, B) = L_*F, && F \da (\wait \tensor_R B)
 ,\]
