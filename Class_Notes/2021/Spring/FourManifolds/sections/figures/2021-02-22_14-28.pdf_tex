@@ -50,12 +50,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.78169082)%
+  \begin{picture}(1,0.77766245)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-02-22_14-28.pdf}}%
-    \put(0.44446099,0.69004939){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
-    \put(0.54068451,0.47469197){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Embedded neighborhood\end{tabular}}}}%
+    \put(0.44446099,0.68602102){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
+    \put(0.54068451,0.4706636){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Embedded neighborhood\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-02-22_14-28.pdf}}%
   \end{picture}%
 \endgroup%
