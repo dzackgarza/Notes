@@ -2171,6 +2171,139 @@ We showed \( {\left\langle {\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1
 -   \( h\in H^0( L ^{-1} \otimes{\overline{{ L ^{-1} }}}) \)
 :::
 
+# Monday, February 22
+
+::: {.remark}
+Last time: Serre duality, and we'll review Riemann-Roch. Recall that this depended on the statement that every holomorphic line bundle \( L\to C \) for \( C \) a complex curve is of the form \( L = {\mathcal{O}}(D) \) for some divisor \( D \). Then \( \chi(C, L) = h^0(L) - h^1(L) = \deg L + 1 - g \), where \( \deg L = \int_C c_1(L) \). Serre duality said that the space of sections \( H^1(C; L) \) is naturally isomorphic to \( H^0(C, L ^{-1} \otimes\Omega_C^1)^\vee \). Notation: given \( X \in {\mathbf{Mfd}}_{\mathbb{C}}^n \) of complex dimension \( n \), the **canonical bundle** is written \( K_X \coloneqq\Omega_X^n \) and is the sheaf of holomorphic \( n{\hbox{-}} \)forms. Serre duality will generalize: if \( \mathcal{E}\to X \) is a holomorphic vector bundle, then \( H^i(X; \mathcal{E}) \cong H^{n-i}(X; \mathcal{E}^\vee\otimes K_X)^\vee \). Note that only \( H^0, H^1 \) are the only nontrivial degrees for a curve. For 4-manifolds, we'll have an \( H^2 \) as well.
+:::
+
+## Applications of Riemann-Roch
+
+::: {.proposition title="?"}
+There is a unique complex \( X\in {\mathbf{Mfd}}_{\mathbb{C}} \) diffeomorphic to \( S^2 \).
+:::
+
+::: {.proof title="of proposition"}
+Note existence is clear, since we can take \( {\mathbb{CP}}^1 \coloneqq({\mathbb{C}}^2 \setminus\left\{{0}\right\}) / \mathbf{x} \sim \lambda\mathbf{x} \) for \( \lambda\in {\mathbb{C}}^{\times} \), which is identified as the set of complex lines through \( 0 \) in \( {\mathbb{C}}^2 \). This decomposes as \( {\mathbb{C}}\cup{\mathbb{C}}= \left\{{ [1, *] }\right\} \cup\left\{{ [*, 1] }\right\} \). We now want to show that any two such complex manifolds are biholomorphic. Let \( X \in {\mathbf{Mfd}}_{\mathbb{C}}^1 \) with \( X\cong_{C^{\infty }} S^2 \), and consider for \( p\in X \) the point bundle \( {\mathcal{O}}(p) \to X \). The defining property was that there exists a section \( s_p \in H^0(X; {\mathcal{O}}(p) ) \) which vanishes at first order at \( p \):
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-03.pdf_tex} };
+\end{tikzpicture}
+```
+We have
+\[
+\chi(X; {\mathcal{O}}(p)) 
+= \deg {\mathcal{O}}(p) + 1 - g(x) = 1 + 1 - 0 = 2
+.\]
+
+::: {.exercise title="?"}
+Check that \( \deg {\mathcal{O}}(p) = 1 \).
+:::
+
+On the other hand we have
+\[
+\chi(X; {\mathcal{O}}(p)) 
+=
+h^0({\mathcal{O}}(p)) - h^1( {\mathcal{O}}(p) )
+.\]
+
+We have \( h^1( {\mathcal{O}}(p) ) = H60( K \otimes{\mathcal{O}}(-p) \), and \( K_X = \Omega_X^1 = T^\vee X \), so the question is: what is the degree of \( TX \) for \( X\cong S^2 \)? We need to compute \( \int_X c_1(TX) \). How many zeros does a vector field on the sphere have? You can take the gradient vector field for a height function to get \( 2 \), noting that the two zeros come in with a positive orientation
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-10.pdf_tex} };
+\end{tikzpicture}
+```
+In coordinates on \( {\mathbb{CP}}^1 \), the coordinate is given by \( z \) and \( z {\frac{\partial }{\partial z}\,} \mapsto -2 {\frac{\partial }{\partial w}\,} \) for the coordinate \( w = 1/z \). We get \( \int_X c_1(TX) = 2 \) and thus \( \deg K_X = -2 \) by dualizing.
+
+::: {.fact}
+\( \deg K_X = 2g-2 \). Use the existence of a smooth vector field on \( X \).
+:::
+
+::: {.lemma title="?"}
+If \( \deg L < 0 \) on \( C \)\< the \( h^0(C, L) = 0 \).
+:::
+
+::: {.proof title="?"}
+If \( s\in H^0(C, L) \) is nonzero, then since \( s \) is a holomorphic section,
+\[
+0 \leq \sum_{p\in C} {\operatorname{Ord}}_P (s) = \deg L
+.\]
+:::
+
+By this lemma, \( h^1({\mathcal{O}}(p)) = 0 \). We have \( H^0(X; {\mathcal{O}}(p)) = {\mathbb{C}}s_p \oplus {\mathbb{C}}s \) for our specific section \( s_p \) and some other section \( s \neq \lambda s_p \). Note that \( s/s_p \) is a meromorphic section of \( {\mathcal{O}}(p) \times{\mathcal{O}}(-p) = {\mathcal{O}} \), so we have a map
+\[
+\varphi: {s \over s_p} : X\to {\mathbb{P}}^1
+.\]
+Note that \( P\mapsto \infty \in {\mathbb{P}}^1 \) under this \( \varphi \), and it's only the ratio that is well-defined. We have \( \varphi ^{-1} (u) = \left\{{ s/s_p = u }\right\} = \left\{{ s - us_p =0 }\right\} \) which is a single point. So \( \varphi \) is a degree 1 map, and \( X \) is biholomorphic to \( {\mathbb{P}}^1 \) via \( \varphi \).
+:::
+
+::: {.remark}
+So there is only one genus 0 Riemann surface. What about genus 1?
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-23.pdf_tex} };
+\end{tikzpicture}
+```
+By Riemann-Roch we know
+\[
+\chi(C; {\mathcal{O}}) = \deg {\mathcal{O}}+ l - 1 = 0 = h^0({\mathcal{O}}) - h^1({\mathcal{O}})
+.\]
+We know \( h^0({\mathcal{O}}) = 1 \) by the maximum modulus principle and \( h^1(C; {\mathcal{O}}) = 1 \). By Serre duality, \( h^0(C, K) = 1 \), and since \( \deg K = 2g-2 = 0 \). So let \( s\in H^0(C, K) \) by a nonzero section, which we know exists. We then get \( {\operatorname{Ord}}_p s = 0 \) for all \( p \), so \( s \) vanishes nowhere. But then we get an isomorphism of sheaves, since \( s \) everywhere nonvanishing implies trivial cokernel:
+\[
+{\mathcal{O}}\xrightarrow{\cdot s} K
+.\]
+So \( K_C = {\mathcal{O}}_C \) if \( g(C) = 1 \), and such a Riemann surface is an **elliptic curve**.
+:::
+
+::: {.example title="?"}
+Let \( C \coloneqq{\mathbb{C}}/ \Lambda \) for \( \Lambda \) some lattice.
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-28.pdf_tex} };
+\end{tikzpicture}
+```
+All transition functions are of the form \( z \mapsto z + \lambda \) for some \( \lambda\in \Lambda \). What is a nonvanishing section of \( K_C \), i.e. a holomorphic one form \( \omega \coloneqq f(z) dz \) on \( {\mathbb{C}} \) that descends to \( {\mathbb{C}}/\Lambda \). We would need \( f(z)dz = f(z + \lambda)d(z+ \lambda) \) for all \( \lambda \). Something like \( f=1 \) works, so \( \omega= dz \) descends. In fact, \( f \) must be constant, since \( H^0( {\mathbb{C}}/ \Lambda, {\mathcal{O}}) = {\mathbb{C}}\dz \) by the maximum modulus principle. Now let \( p, q\in C \) and apply Riemann-Roch to the line bundle \( {\mathcal{O}}(p+q) \) yields
+\[
+\chi( {\mathcal{O}}(p+q) ) =
+h^0( {\mathcal{O}}(p+q) )-
+h^1( {\mathcal{O}}(-p-q) ) =
+=
+h^0( {\mathcal{O}}(p+q) )-0
+=
+\deg {\mathcal{O}}(p+q)+1-1 \\
+=2
+.\]
+Thus there is a section \( s_{p+q} \in H^0( {\mathcal{O}}(p+q)) \ni s \) that vanishes at \( p+q \), and similarly a map
+\[
+{s\over s_{p+q}}: C \xrightarrow{\varphi} {\mathbb{P}}^1
+.\]
+We can check \( \varphi ^{-1} ( \infty ) = p+q \) and \( \deg \varphi = 2 \). Thus genus 1 surfaces have a generically 2-to-1 map to \( {\mathbb{P}}^1 \).
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-42.pdf_tex} };
+\end{tikzpicture}
+```
+Note that homothetic lattices define an isomorphism between the elliptic curves, and lattices mod homothety are in correspondence of elliptic curves. By acting \( \operatorname{PGL}_2(C) \curvearrowright{\mathbb{P}}^1 \) since \( \operatorname{GL}_2 \) acts on lines since scaling an element fixes a line. This is dimension 3. So elliptic curves are also in correspondence with \( \left\{{ 4 \text{ points on } {\mathbb{P}}^1}\right\} / \operatorname{PGL}_2({\mathbb{C}}) \) since this is now dimension 1. Note that by applying homothety, the two basis vectors for a lattice can be rescaled so one is length 1 and the other is a complex number \( \tau \), and we can identify this space with \( {\mathbb{H}}/ {\operatorname{SL}}_2({\mathbb{Z}}) \).
+:::
+
+::: {.exercise title="?"}
+Show that any \( g(C) = 2 \) curve has a degree 2 map to \( {\mathbb{P}}^1 \).
+:::
+
+::: {.remark}
+Similarly \( g(C) = 3 \) are usually a curve of degree \( 4 \) in \( {\mathbb{CP}}^2 \). Severi proof in the 50s: false! issues with building moduli space for \( g\geq 23 \). Need to use orbifold structure to take into account automorphisms.
+:::
+
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
 [^2]: Locally admits a chart to \( {\mathbb{C}}^n/ \Gamma \) for \( \Gamma \) a finite group.
