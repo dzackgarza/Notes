@@ -2056,6 +2056,283 @@ If \( h_K \to \infty \) for a sequence of number fields, then \( \rho(K) \to \in
 This just follows from the above facts, since \( h_K \to \infty \) means the size of the group \( G \coloneqq\operatorname{Cl}( {\mathbb{Z}}_K) \) goes to infinity, which is a constant times \( \rho(K) \). So as the class group gets larger, factorization gets worse.
 :::
 
+# Chapters 11 and 12 (Tuesday, February 23)
+
+## Chapter 11: Prime Producing Polynomials and Unique Factorization
+
+::: {.remark}
+18th century observation by Euler about the following polynomial:
+\[
+f(x) \coloneqq x^2 -x + 41 
+.\]
+Goldbach proved that it's impossible for any polynomial \( g\in {\mathbb{Z}}[x] \) to have *every* output prime. Euler noted that this \( f \) produces quite a few: for \( x=1, \cdots, 40 \), the output \( f(x) \) is prime, but \( f(41) = 41^2 - 41 + 41 = 41^2 \) is not. Let's define a variant: for \( q \) a positive integer, set
+\[
+f_q(x) \coloneqq x^2 - x + q
+.\]
+Note that \( f_q(q) = q^2 \), so eventually the output is composite. We'll say \( f_q \) is **optimal** if \( f_q(x) \) is prime for all integers \( 0 < x < q \). As an example, \( q=41 \) was optimal.
+:::
+
+::: {.theorem title="Rabonowitch"}
+Let \( q \geq 2 \in {\mathbb{Z}}^{> 0} \) and let \( d = \Delta(f_q) = 1-4q \) be the discriminant of \( f_q \). Assume that \( d \) is squarefree, then \( f_q \) is optimal if and only if \( \mathbb{Z}\left[ { {1 + \sqrt{d}\over 2 }} \right] \) is a UFD. [^7]
+:::
+
+::: {.example title="?"}
+For \( q=41, d = -163 \) and thus \( \mathbb{Z}\left[ { {1 + \sqrt{-163} \over 2}} \right] \) is a UFD.
+:::
+
+::: {.remark}
+The forward direction is harder here.
+:::
+
+::: {.proof title="$\\impliedby$"}
+Assume \( \mathbb{Z}\left[ { \tau } \right] \) is a UFD, where \( \tau\coloneqq{1 + \sqrt{d} \over 2 } \). Toward a contradiction, suppose \( f_q(x) \) is composite for some \( 0<x<q \). We can write
+\[
+f_q(x) = x^2 - x + q = (x - \tau)( x - {\overline{{ \tau}}} ) = \min_{ \tau}(x)_{/{\mathbb{Q}}}
+.\]
+By considering how this function increases, we can conclude \( 1<q<f_q(x) < f_q(q) = q^2 \). Let \( p \) be the least prime factor of \( f_q(x) \), which is necessarily bounded by \( \sqrt{ f_q(x) } \), so \( p<q \). Since \( p\mathrel{\Big|}f_q(x) \), we have \( x\in {\mathbb{Z}} \) as a root of \( f\pmod p \). So \( \min_\tau \) has a root modulo \( p \). Recall that studying how \( \left\langle{ p }\right\rangle \) factors into ideals of \( {\mathbb{Z}}_K \) involved studying how \( \min_\tau \) factors mod \( p \). Since we've shown it has a root mod \( p \), it breaks into two linear factors. So \( \left\langle{ p }\right\rangle = P_1 P_2 \) as prime ideals of norm \( p \). By assumption, \( \mathbb{Z}\left[ {[} \right]\tau] \) is a UFD and the ring of integers of a number field, and by an earlier theorem, is thus also a PID (noting that this is not generally the case). So \( P_1, P_2 \) are principal, and we can write
+\[
+P_1 = \left\langle{ a + b \tau }\right\rangle\implies p = N(p_1) = N( a + b \tau) = a^2 + ab + qb^2
+.\]
+Completing the square yields
+\[
+\cdots = (a + b/2)^2 + (q-1/4)b^2
+.\]
+Note that \( b\neq 0 \), since this would yield \( p = a^2 \) in the first equation and \( a, p \in {\mathbb{Z}} \) with \( p \) prime. So both terms in the second equation are non-negative, and the second is positive because \( b>1 \), so \( p \geq q- 1/4 \). Since \( p, q\in {\mathbb{Z}} \) we can strengthen this to \( p \geq q \). But \( p \) was the *least* prime factor of \( f_q(x) < q^2 \) which was composite, so this is a contradiction. \( \contradiction \)
+
+> Big idea: uses that \( \min_\tau(x) = f_q(x) \) and remembering that how \( \min_\tau(x) \pmod p \) factors is exactly how \( \left\langle{ p }\right\rangle \) factors into prime ideals.
+:::
+
+::: {.proof title="$\\implies$"}
+We'll prove something stronger. Assume \( f_q(x) \) is prime whenever
+\[
+1 \leq x \leq {1\over 2} \sqrt{ {\left\lvert {d} \right\rvert} \over 3 } + {1 \over 2}
+,\]
+then we'll prove that \( {\mathbb{Z}}_K \) is a PID and hence a UFD. Note that this is stronger because the range is smaller than \( 0<x<q \).
+
+::: {.claim}
+\( p \) is inert for all \( p \leq \sqrt{ {\left\lvert {d} \right\rvert}\over 3 } \) (so the prime ideal \( \left\langle{ p }\right\rangle \) remains prime).
+:::
+
+::: {.proof title="?"}
+If not, \( \min_\tau \) has a root \( \pmod p \). Recalling that \( \min_\tau(x) = f_q(x) = x^2 - x + q \), if this has one root then it has two which sum to \( -b = -(-1) = 1 \), where one of them satisfies
+\[
+1 \leq x \leq {1\over 2} \sqrt{ {\left\lvert {d} \right\rvert} \over 3 } + {1\over 2}
+.\]
+Why? If the other root \( x = r \) with \( 1<r<p \) doesn't satisfy this, then the first root is \( p+1-r \) and will satisfy this. Then \( p\mathrel{\Big|}f_q(x) \), but this is a problem! This forces
+\[
+p = f_q(x) = x^2 - x + q \geq q > \sqrt{{\left\lvert {d} \right\rvert} \over 3 } \geq p
+.\]
+This contradicts \( f_q(x) \) being prime. \( \contradiction \)
+:::
+
+So assuming \( f_q(x) \) is prime for \( 1 \leq x \leq {1 \over 2 } \sqrt{{\left\lvert {d} \right\rvert}\over 3 } + {1 \over 2} \), we showed that every "small" prime up to \( \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \) is inert. Suppose \( P \) is a prime ideal above \( p \), then since \( p \) is inert, \( P = \left\langle{ p }\right\rangle \) is generated by a prime. But we'll just use a slightly weaker conclusion: \( P \) is principal.
+
+::: {.theorem title="When the class group is generated by small primes"}
+Let \( d \) be a negative squarefree integer with \( d \equiv 1 \pmod 4 \) (such as the \( d \) we are looking at). Then \( \operatorname{Cl}({\mathbb{Z}}_K) \) is generated as a group by \( [P] \) where \( P \) runs over all prime ideals above primes \( p \leq \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \).
+:::
+
+Given this theorem, we are done: in our situation, all such \( [P] \) are trivial in the class group since they are principal, which makes \( \operatorname{Cl}({\mathbb{Z}}_K) = 1 \) and every ideal is principal.
+:::
+
+::: {.remark}
+It just remains to prove the above theorem. We'll use the following:
+:::
+
+::: {.proposition title="Almost Euclidean Domains"}
+Take the same assumptions on \( d \) as above. Then for each \( \theta \in K = {\mathbb{Q}}( \sqrt{d} ) \), there is a positive integer \( t \leq \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \) and a \( \xi \in {\mathbb{Z}}_K \) with norm \( N(t\theta - \xi) < 1 \).
+:::
+
+::: {.remark}
+This is slightly technical. In words: for any element in your quadratic field, you can approximate it by an *integer* of your field, possibly after a small \( t \) dilation. Note that we saw a similar condition for the Euclidean algorithm, namely that \( t=1 \) always sufficed.
+:::
+
+::: {.proof title="of proposition"}
+Write \( \theta = a + b \tau \) where we don't necessarily know \( \theta \in {\mathbb{Z}}_K \) (although this would make the statement trivial), but \( a, b \in {\mathbb{Q}} \). We want to find an appropriate \( t \) where \( \xi \coloneqq A+ B \tau \) for \( A, B \in {\mathbb{Z}} \). Multiplying the inequality out using the definition of the norm results in
+\[
+\qty{ (ta - A) + \qty{tb - B \over 2} }^2
++ {\left\lvert {d} \right\rvert} \qty{ tb - B \over 2 }^2<1
+.\]
+We'll start by making the second term small by making \( tb \) close to an integer (where \( b \) is fixed) and choosing \( B \) to be that closest integer. We can choose \( t \leq \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \) with \( {\left\lVert {tb} \right\rVert} < 1 / \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \), where the norm is the distance to the nearest integer. Why can we do this? This is Dirichlet's approximation theorem, where we could choose \( t\leq N \) such that this norm was bounded by \( 1/(N+1) \), and we can take \( N \coloneqq{\left\lfloor  \sqrt{{\left\lvert {d} \right\rvert}\over 3 }  \right\rfloor} \). How do we choose \( A, B \)? Choose \( B \) such that \( {\left\lVert {tb} \right\rVert} \) satisfies the above inequality to obtain
+\[
+B\in {\mathbb{Z}},\quad {\left\lvert {tb - B} \right\rvert}< 1 / \sqrt{{\left\lvert {d} \right\rvert}/3 }  
+.\]
+Then considering the second term in the original equation, we get
+\[
+{\left\lvert {d} \right\rvert} \qty{ tb -B \over 2 }^2 < {\left\lvert {d} \right\rvert}\qty{1\over 4}\qty{1 \over {\left\lvert {d} \right\rvert}/3} = {3\over 4} 
+,\]
+so it suffices now to choose \( A \) such that the first term is bounded by \( 1/4 \). Why can we do this? We have control over \( A \), so we can simply choose it freely to shift the inner quantity into the interval \( [-1/2, 1/2] \), i.e. 
+\[
+{\left\lvert { ta - A + \qty{tb- B \over 2} } \right\rvert} \leq {1\over 2}
+,\]
+and then squaring yields the desired bound.
+:::
+
+::: {.proof title="of theorem"}
+We have \( d \equiv 1 \pmod 4 \) and we want to show that the class group is generated by small primes \( p\leq D\coloneqq\sqrt{ {\left\lvert {d} \right\rvert} / 3 } \). Let \( I \) be a nonzero ideal of \( {\mathbb{Z}}_K \), we'll find a nonzero ideal \( J \) such that \( [I] = [J] \) and \( J \) is a product of primes above \( p \) (which have the appropriate upper bound). In this case, \( [J] \) and thus \( [I] \) will factor as the product of those primes, and is thus in the subgroup generated by small primes. Fix \( \beta\in I \) nonzero of minimal norm.
+
+::: {.claim}
+For any \( \alpha \in I \) there is a \( t\leq D \) with \( \left\langle{ t \alpha }\right\rangle \in \left\langle{ \beta }\right\rangle \).
+:::
+
+::: {.remark}
+How to think about this: when the field is Euclidean with respect to the norm, it is a PID. How do you find generators? By taking a nonzero element \( \beta \) of minimal norm in the ideal. Then any element of \( I \) would be in \( \beta \). Here we have an almost-Euclidean property, where elements of \( I \) can be hit with a small dilation to land in this principal ideal.
+:::
+
+::: {.proof title="of claim"}
+So apply the last element to the element \( \alpha/ \beta \) to pick \( t\leq D \) and \( \xi \in {\mathbb{Z}}_K \) with \( N( t \qty{\alpha\over \beta} < 1 \). Multiplying through by \( N( \beta) \) yields
+\[
+N ( t \alpha - \beta\xi ) < N( \beta )
+.\]
+Note that the inner term on the left-hand side is in \( I \), since \( \alpha, \beta\in I \). This is an element of \( I \) of norm less than the norm \( \beta \), but by minimality this can only happen if \( t \alpha - \beta\xi =0 \) and thus \( t \alpha = \beta\xi \in \left\langle{ \beta }\right\rangle \).
+:::
+
+Now let \( T \coloneqq{\left\lfloor D \right\rfloor} ! \), where we take the factorial. Then for any \( \alpha\in I \) we have \( T \alpha \in \left\langle{ \beta }\right\rangle \). Why? We already know *some* factor of \( T \) is a multiple of \( \beta \), and multiplying by other factors doesn't take it out of the ideal. Since this was true for every \( \alpha\in I \) we have \( TI \subseteq \left\langle{ \beta }\right\rangle = \beta{\mathbb{Z}}_K \). Define \( J \coloneqq\qty{T/ \beta} I \), where noting that \( T\in {\mathbb{Z}}^{> 0} \), this is just a dilation of \( I \). Then \( J \subseteq {\mathbb{Z}}_K \), since
+\[
+TI \subseteq \beta{\mathbb{Z}}_K \overset{\cdot \beta^{-1}}{\implies } \beta^{-1}T I \subseteq \beta^{-1}\beta {\mathbb{Z}}_K = {\mathbb{Z}}_K
+.\]
+Moreover, \( J {~\trianglelefteq~}{\mathbb{Z}}_K \) is an ideal, since it's a dilation of an ideal, \( [J] = [I] \) since they're related by dilation, and \( J \) contains \( \qty{T / \beta } \beta = T \). Since to contain is to divide, we have \( J \mathrel{\Big|}\left\langle{ T }\right\rangle \). Recall that \( T \) was a product of integers, so however \( \left\langle{ T }\right\rangle \) factors into prime ideals, every such prime ideal will lie above an actual prime no bigger than \( D \). You can factor \( \left\langle{ T }\right\rangle \) by first factoring \( T \) into prime integers, then break them up into prime ideals, all of which would have norm bounded by \( D \).
+:::
+
+::: {.remark}
+This proves Rabinowitz's theorem.
+:::
+
+::: {.remark}
+This says that being an optimal prime is entirely equivalent to a certain ring being a UFD. Are there other optimal examples than \( q=41 \)? It turns out that there are *no* optimal \( f_q \) for \( q>41 \), which is not easy to prove. This didn't happen until the 20th century, by folks interested in the UFD side of this statement:
+:::
+
+::: {.theorem title="Baker-Heegner-Stark"}
+\( {\mathbb{Z}}_K \) is not a UFD if \( K \coloneqq{\mathbb{Q}}( \sqrt{d} ) \) with \( d \) squarefree with \( d<-163 \).
+:::
+
+::: {.remark}
+So remarkably, there are *not* infinitely many examples for which the ring of integers is a UFD. Thus the class number only takes on the value 1 for finitely many fields. What about for 2? This also only happens finitely often. In fact, for *any* fixed \( h \), there are only finitely many imaginary quadratic fields with class number \( h \). This follows from the fact that \( \operatorname{Cl}({\mathbb{Q}}( \sqrt{d} )) \approx d^{1/2} \), which increases as \( d \) does. It's still hard to determine for a given \( h \) which values of \( d \) appear, partially because the last statement is *ineffective* in the sense that there aren't constants to put into the asymptotic statement.
+:::
+
+::: {.remark}
+What about real quadratic fields? The situation is expected to be very different: the conjecture is that \( {\mathbb{Q}}(\sqrt{d}) \) is a UFD most of the time. An expert on this will be joining us here at UGA starting Fall 2021!
+:::
+
+## Chapter 12: Lattice Points
+
+::: {.remark}
+Everything we've done up until now has been for quadratic fields. After this chapter, we'll start anew and rebuild everything for general number fields.
+:::
+
+::: {.definition title="Lattice Point"}
+A **lattice point** in \( {\mathbb{R}}^n \) is a point in \( {\mathbb{Z}}^n \).
+:::
+
+::: {.question}
+Given a region \( R \subseteq {\mathbb{R}}^n \), how many lattice points does it contain? I.e., how large is the sum
+\[
+\sum_{\mathbf{v} \in {\mathbb{Z}}^n} \chi_R(\mathbf{v})
+.\]
+:::
+
+::: {.remark}
+A first guess might be that this is approximately \( \operatorname{vol}(R) \). To see why, one can try just choosing to count any squares for which the lower-left point is contained in \( R \) and adding up the areas:
+
+```{=tex}
+\pgfmathsetseed{12}
+```
+```{=tex}
+\begin{tikzpicture}
+\draw[step=1.0,black,thin] (0.5,0.5) grid (9,7);
+
+ \draw [shade,
+        top color=blue,
+        bottom color=white,
+        fill opacity=.1,
+        decoration={random steps,segment length=2cm,amplitude=.75cm},
+        decorate,
+        rounded corners=.3cm]
+     (2, 3) -- (4,6)   -- (6,6) -- (7.6,1.5) -- (4, 1) -- (2, 3);
+
+\node[fill=black, circle, inner sep=0.1cm] at (4,2) {};
+\node[fill=black, circle, inner sep=0.1cm] at (5,2) {};
+\node[fill=black, circle, inner sep=0.1cm] at (6,2) {};
+\node[fill=black, circle, inner sep=0.1cm] at (7,2) {};
+
+\node[fill=black, circle, inner sep=0.1cm] at (3,3) {};
+\node[fill=black, circle, inner sep=0.1cm] at (4,3) {};
+\node[fill=black, circle, inner sep=0.1cm] at (5,3) {};
+\node[fill=black, circle, inner sep=0.1cm] at (6,3) {};
+\node[fill=black, circle, inner sep=0.1cm] at (7,3) {};
+
+
+\node[fill=black, circle, inner sep=0.1cm] at (3,4) {};
+\node[fill=black, circle, inner sep=0.1cm] at (4,4) {};
+\node[fill=black, circle, inner sep=0.1cm] at (5,4) {};
+\node[fill=black, circle, inner sep=0.1cm] at (6,4) {};
+\node[fill=black, circle, inner sep=0.1cm] at (7,4) {};
+
+
+\node[fill=black, circle, inner sep=0.1cm] at (4,5) {};
+\node[fill=black, circle, inner sep=0.1cm] at (5,5) {};
+\node[fill=black, circle, inner sep=0.1cm] at (6,5) {};
+
+\draw[draw=black, fill=green, fill opacity=0.1] (4, 2) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (5, 2) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (6, 2) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (7, 2) rectangle ++(1,1);
+
+\draw[draw=black, fill=green, fill opacity=0.1] (3, 3) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (4, 3) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (5, 3) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (6, 3) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (7, 3) rectangle ++(1,1);
+
+\draw[draw=black, fill=green, fill opacity=0.1] (3, 4) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (4, 4) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (5, 4) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (6, 4) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (7, 4) rectangle ++(1,1);
+
+
+\draw[draw=black, fill=green, fill opacity=0.1] (4, 5) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (5, 5) rectangle ++(1,1);
+\draw[draw=black, fill=green, fill opacity=0.1] (6, 5) rectangle ++(1,1);
+
+\node at (2.25, 2.25) {$R$};
+
+\node at (8.15, 5.45) {$\approx\mathrm{vol}(R)$};
+
+\node at (2.25, 6.25) {${\mathbb{Z}}^n \subseteq {\mathbb{R}}^n$};
+
+\end{tikzpicture}
+```
+This isn't exactly right, but would become closer as \( R \) grew larger, and the correction term comes from edge effects. For \( R \subseteq {\mathbb{R}}^n \) and \( t\in {\mathbb{R}} \), define the dilation
+\[
+tR \coloneqq\left\{{ t\mathbf{x} {~\mathrel{\Big|}~}\mathbf{x} \in R }\right\} 
+.\]
+:::
+
+::: {.theorem title="?"}
+Let \( R \) be a region in \( {\mathbb{R}}^n \) which is *Riemann measurable*.[^8] Then the number of lattice points satisfies
+\[
+{1\over t^n} \sum_{\mathbf{v} \in {\mathbb{Z}}^n} \chi_{tR} (\mathbf{v})
+\overset{t\to \infty }\to \operatorname{vol}(R)
+.\]
+:::
+
+::: {.proof title="?"}
+Notice that the left-hand side can be written as
+\[
+{1\over t^n} \sum_{\mathbf{v} \in {\mathbb{Z}}^n} \chi_{tR} (\mathbf{v})
+=
+{1\over t^n} = \sum_{\mathbf{w} \in t^{-1}{\mathbb{Z}}^n} \chi_R(\mathbf{w})
+.\]
+This has the effect of making the squares partitioning \( {\mathbb{R}}^n \) finer, the right-hand side is literally the Riemann sum for
+\[
+\int \chi_R(\mathbf{w}) \,d \mathbf{w} \coloneqq\operatorname{vol}(R)
+.\]
+:::
+
+::: {.remark}
+Note that there is a small technicality since \( t \) can take on non-integer values, but the limiting behavior is the same. Next time: we've seen that the number of lattice points is sometimes well-approximated by volume, but it's possible to have regions of unbounded volume with no lattice points, e.g. by taking a large ball and deleting all lattice points. It would be nice to have a theorem which guarantee when a region will have lattice points, and Minkowski's theorem will be one such theorem we'll look at next time.
+:::
+
 [^1]: An injective ring morphism.
 
 [^2]: *Squarefree* means not divisible by \( n^2 \) for any \( n > 1\in {\mathbb{Z}} \), or equivalently not divisible by the square of any primes.
@@ -2067,3 +2344,7 @@ This just follows from the above facts, since \( h_K \to \infty \) means the siz
 [^5]: The LHS is the set of coefficients of \( \tau \), which is an ideal of \( {\mathbb{Z}} \), and we can take it to be positive since the LHS is not the zero ideal by the lemma.
 
 [^6]: There is a way to factor that maximizes the number of irreducibles appearing, and there are not arbitrarily long factorizations.
+
+[^7]: Note that this is equal to \( {\mathbb{Z}}_K \) when \( K\coloneqq{\mathbb{Q}}( \sqrt{d} ) \).
+
+[^8]: This means that \( \chi_R \) should be Riemann integrable, i.e. the bounded region is contained in a rectangle, and integrals over such rectangles converges to what we'll call the volume.
