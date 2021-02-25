@@ -60,14 +60,12 @@ g(x) = xg(1) = x[0]_n = [0]_n
 where we've used the fact that $\ZZ/n$ is commutative.
 :::
 
-
 :::{.proposition title="Common Hom Groups"}
 - $\Hom_\ZZ(\ZZ/m, \ZZ) = 0$.
 - $\Hom_\ZZ(\ZZ/m, \ZZ/n) = \ZZ/d$.
 - $\Hom_\ZZ(\QQ, \QQ) = \QQ$.
 
 :::
-
 
 :::{.proposition title="Common Ext Groups"}
 
@@ -77,6 +75,12 @@ where we've used the fact that $\ZZ/n$ is commutative.
 
 - 
 
+:::
+
+
+:::{.slogan}
+In $\Ab$, direct colimits commute with finite limits.
+Inverse limits do not generally commute with finite colimits.
 :::
 
 
