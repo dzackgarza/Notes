@@ -60,3 +60,14 @@ g(x) = xg(1) = x[0]_n = [0]_n
 where we've used the fact that $\ZZ/n$ is commutative.
 :::
 
+
+:::{.proposition title="Common Ext Groups"}
+
+- $\Ext_\ZZ(\ZZ/m, G) \cong G/mG$
+  - Use $1 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{} \ZZ/m \to 1$ and apply $\Hom_\ZZ(\wait, \ZZ)$.
+
+- 
+
+:::
+
+
