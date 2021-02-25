@@ -1,6 +1,11 @@
 # Useful Facts
 
 
+:::{.fact}
+A morphism $A \mapsvia{f} B$ in \(R\dash\)module is injective if and only if $f(a) = 0_B \implies a = 0_A$.
+:::
+
+
 :::{.proposition title="Recipe for computing $\Ext_R^i$"}
 Write $F(\wait) \da \Hom_R(A, \wait)$.
 This is left-exact and thus has right-derived functors $\Ext^i_R(A, B) \da R^iF(B)$.
