@@ -1,7 +1,7 @@
 # Useful Facts
 
 
-:::{.proposition title="How to compute Ext"}
+:::{.proposition title="Recipe for computing $\Ext_R^i$"}
 Write $F(\wait) \da \Hom_R(A, \wait)$.
 This is left-exact and thus has right-derived functors $\Ext^i_R(A, B) \da R^iF(B)$.
 To compute this:
@@ -37,8 +37,26 @@ Note that $R^0 F(B) \cong F(B)$ canonically:
 .\]
 
 - By exactness, there is an isomorphism $\ker \bd^0 \cong F(B)$.
+:::
 
+:::{.proposition title="Computing $\Hom_\ZZ(\ZZ, \ZZ/n)$"}
+$\phi: \Hom_{\ZZ}(\ZZ, \ZZ/n) \mapsvia{\sim} \ZZ/n$, where $\phi(g) \da g(1)$.
 
+- That this is an isomorphism follows from 
+- Surjectivity: for each $\ell \in \ZZ/n$ define a map 
+\[
+\psi_y: \ZZ &\to \ZZ/n \\
+1 &\mapsto [\ell]_n
+.\]
 
+- Injectivity: if $g(1) = [0]_n$, then 
+\[
+g(x) = xg(1) = x[0]_n = [0]_n
+.\]
+- \(\ZZ\dash\)module morphism: 
+\[
+\phi(gf) \da \phi(g\circ f) \da (g\circ f)(1) = g(f(1)) = f(1)g(1) = \phi(g)\phi(f)
+,\]
+where we've used the fact that $\ZZ/n$ is commutative.
 :::
 
