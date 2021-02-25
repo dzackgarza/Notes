@@ -61,10 +61,19 @@ where we've used the fact that $\ZZ/n$ is commutative.
 :::
 
 
+:::{.proposition title="Common Hom Groups"}
+- $\Hom_\ZZ(\ZZ/m, \ZZ) = 0$.
+- $\Hom_\ZZ(\ZZ/m, \ZZ/n) = \ZZ/d$.
+- $\Hom_\ZZ(\QQ, \QQ) = \QQ$.
+
+:::
+
+
 :::{.proposition title="Common Ext Groups"}
 
 - $\Ext_\ZZ(\ZZ/m, G) \cong G/mG$
   - Use $1 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{} \ZZ/m \to 1$ and apply $\Hom_\ZZ(\wait, \ZZ)$.
+- $\Ext_\ZZ(\ZZ/m, \ZZ/n) = \ZZ/d$.
 
 - 
 
