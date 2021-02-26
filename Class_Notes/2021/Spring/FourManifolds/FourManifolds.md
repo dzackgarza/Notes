@@ -3278,10 +3278,12 @@ Thus there is a section $s_{p+q} \in H^0( \OO(p+q)) \ni s$ that vanishes at $p+q
 We can check \( \varphi ^{-1} ( \infty ) = p+q \) and $\deg \varphi = 2$.
 Thus genus 1 surfaces have a generically 2-to-1 map to $\PP^1$.
 
-\begin{tikzpicture}
-\fontsize{43pt}{1em} 
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-42.pdf_tex} };
-\end{tikzpicture}
+<!--\begin{tikzpicture}-->
+<!--\fontsize{43pt}{1em} -->
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-42.pdf_tex} };-->
+<!--\end{tikzpicture}-->
+
+![image_2021-02-25-20-41-53](figures/image_2021-02-25-20-41-53.png)
 
 Note that homothetic lattices define an isomorphism between the elliptic curves, and lattices mod homothety are in correspondence of elliptic curves.
 By acting $\PGL_2(C) \actson \PP^1$ since $\GL_2$ acts on lines since scaling an element fixes a line.
@@ -3440,10 +3442,12 @@ so we just need to understand $\int_S c_2(T)$.
 But for $n=\rank \bundle{E}$, $c_n( \bundle{E} )$ (the top Chern class) is the fundamental class of a zero locus of a section of $\bundle{E}$.
 Note that $S \in \Mfd_\RR^4$ is oriented, so $\int_S c_2(T)$ is the signed number of zeros of a smooth vector field.
 
-\begin{tikzpicture}
-\fontsize{44pt}{1em} 
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-24_14-33.pdf_tex} };
-\end{tikzpicture}
+<!--\begin{tikzpicture}-->
+<!--\fontsize{44pt}{1em} -->
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-24_14-33.pdf_tex} };-->
+<!--\end{tikzpicture}-->
+
+![image_2021-02-25-20-42-49](figures/image_2021-02-25-20-42-49.png)
 
 Looking at the tangent bundle of the surface, the local sign of an intersection will be the number of incoming directions $\mod 2$, i.e. the index of the critical point.
 Then the signed number of zeros here yields $1-6+1 = -4 = \chi_{\Top}(C)$.

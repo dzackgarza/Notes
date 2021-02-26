@@ -2301,12 +2301,20 @@ Thus there is a section \( s_{p+q} \in H^0( {\mathcal{O}}(p+q)) \ni s \) that va
 .\]
 We can check \( \varphi ^{-1} ( \infty ) = p+q \) and \( \deg \varphi = 2 \). Thus genus 1 surfaces have a generically 2-to-1 map to \( {\mathbb{P}}^1 \).
 
-```{=tex}
-\begin{tikzpicture}
-\fontsize{43pt}{1em} 
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-42.pdf_tex} };
-\end{tikzpicture}
+```{=html}
+<!--\begin{tikzpicture}-->
 ```
+```{=html}
+<!--\fontsize{43pt}{1em} -->
+```
+```{=html}
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-42.pdf_tex} };-->
+```
+```{=html}
+<!--\end{tikzpicture}-->
+```
+![image_2021-02-25-20-41-53](figures/image_2021-02-25-20-41-53.png)
+
 Note that homothetic lattices define an isomorphism between the elliptic curves, and lattices mod homothety are in correspondence of elliptic curves. By acting \( \operatorname{PGL}_2(C) \curvearrowright{\mathbb{P}}^1 \) since \( \operatorname{GL}_2 \) acts on lines since scaling an element fixes a line. This is dimension 3. So elliptic curves are also in correspondence with \( \left\{{ 4 \text{ points on } {\mathbb{P}}^1}\right\} / \operatorname{PGL}_2({\mathbb{C}}) \) since this is now dimension 1. Note that by applying homothety, the two basis vectors for a lattice can be rescaled so one is length 1 and the other is a complex number \( \tau \), and we can identify this space with \( {\mathbb{H}}/ {\operatorname{SL}}_2({\mathbb{Z}}) \).
 :::
 
@@ -2429,12 +2437,20 @@ This requires knowing \( \chi({\mathcal{O}}_S) \). Applying HRR yields
 ,\]
 so we just need to understand \( \int_S c_2(T) \). But for \( n=\operatorname{rank}\mathcal{E} \), \( c_n( \mathcal{E} ) \) (the top Chern class) is the fundamental class of a zero locus of a section of \( \mathcal{E} \). Note that \( S \in {\mathbf{Mfd}}_{\mathbb{R}}^4 \) is oriented, so \( \int_S c_2(T) \) is the signed number of zeros of a smooth vector field.
 
-```{=tex}
-\begin{tikzpicture}
-\fontsize{44pt}{1em} 
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-24_14-33.pdf_tex} };
-\end{tikzpicture}
+```{=html}
+<!--\begin{tikzpicture}-->
 ```
+```{=html}
+<!--\fontsize{44pt}{1em} -->
+```
+```{=html}
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-24_14-33.pdf_tex} };-->
+```
+```{=html}
+<!--\end{tikzpicture}-->
+```
+![image_2021-02-25-20-42-49](figures/image_2021-02-25-20-42-49.png)
+
 Looking at the tangent bundle of the surface, the local sign of an intersection will be the number of incoming directions \( \pmod 2 \), i.e. the index of the critical point. Then the signed number of zeros here yields \( 1-6+1 = -4 = \chi_{{\mathbf{Top}}}(C) \). More generally, we have
 \[
 \chi_{{\mathbf{Top}}}(M^n) = \int_C c_{n}(TM)
