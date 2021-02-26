@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1929.98987588bp}%
+    \setlength{\unitlength}{1848.26309056bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,17 +50,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.6395936)%
+  \begin{picture}(1,0.65572937)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-02-24_14-33.pdf}}%
-    \put(0.33290835,0.00228455){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
-    \put(0.8614085,0.02560074){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
-    \put(0.95467324,0.05668899){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\RR$\end{tabular}}}}%
+    \put(0.32223242,0.01384072){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0.89008522,0.0101953){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.55680921,0.00238557){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\RR$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-02-24_14-33.pdf}}%
-    \put(0.21632743,0.11109341){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C$\end{tabular}}}}%
-    \put(0.35622453,0.42974794){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gradient{f}$ has 8 zeros\end{tabular}}}}%
+    \put(0.11594492,0.17740716){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C$\end{tabular}}}}%
+    \put(0.37197613,0.43660472){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gradient{f}$ has 8 zeros\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{2021-02-24_14-33.pdf}}%
-    \put(-0.00129028,0.44529206){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$TC$\end{tabular}}}}%
+    \put(-0.00134733,0.45283617){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$TC$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{2021-02-24_14-33.pdf}}%
   \end{picture}%
 \endgroup%
