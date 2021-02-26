@@ -2,6 +2,7 @@
 \newcommand{\dt}{\,dt}
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
+\newcommand{\dz}{\,dz}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
 }
@@ -487,6 +488,7 @@
 \newcommand{\notdivides}{\nmid}
 \newcommand{\fractional}[1]{\theset{#1}}
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
+\newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 
 # Tuesday, January 12
 
@@ -3044,7 +3046,10 @@ Recall that we had a resolution of the sheaf $L$ given by by smooth vector bundl
 \[
 0 \to L \injects L\tensor A^{0, 0} \mapsvia{\delbar} L \tensor A^{0, 1} \mapsvia{\delbar} 0
 .\]
-So we know that $H^1(C, L) = H^0(L\tensor A^{0, 1}) / \delbar H^0(L\tensor A^{0, 0})$.
+So we know that 
+\[
+H^1(C, L) = H^0(L\tensor A^{0, 1}) / \delbar H^0(L\tensor A^{0, 0})
+.\]
 Choose a Hermitian metric $h$ on $L$, i.e. a map $h: L\tensor \conjugate{L} \to \OO$.
 On fibers, we have $h_p: L_p \tensor \bar{ L_p } \to \CC$.
 We'll also choose a metric on $C$, say $g$.
@@ -3052,7 +3057,13 @@ Since $C$ is a Riemann surface, we have an associated volume form $\nu$ on $C$ (
 \[
 \inner{s}{t} \da \int_C h(s, \conjugate{t} ) \,d\nu
 .\]
-Note that $\inner{s}{s} = \int_C h(s, \conjugate{s} \,d\nu \geq 0$ since $h(s, \conjugate{s})(p) = 0 \iff s_p = 0$, and moreover this integral is zero if and only if $s=0$.
+Note that 
+\[
+\inner{s}{s} = \int_C h(s, \conjugate{s}) \,d\nu \geq 0
+&& \text{since }
+h(s, \conjugate{s})(p) = 0 \iff s_p = 0
+,\]
+and moreover this integral is zero if and only if $s=0$.
 So we have an inner product on $H^0(L\tensor A^{0, 0})$.
 We can also define a pairing on sections of $L\tensor A^{0, 1}$, say
 \[
@@ -3122,9 +3133,12 @@ Here we had
 :::{.remark}
 Last time: Serre duality, and we'll review Riemann-Roch.
 Recall that this depended on the statement that every holomorphic line bundle $L\to C$ for $C$ a complex curve is of the form $L = \OO(D)$ for some divisor $D$.
-Then $\chi(C, L) = h^0(L) - h^1(L) = \deg L + 1 - g$, where $\deg L = \int_C c_1(L)$.
+Then 
+\[
+\chi(C, L) = h^0(L) - h^1(L) = \deg L + 1 - g, && \deg L = \int_C c_1(L)
+,\]
 Serre duality said that the space of sections $H^1(C; L)$ is naturally isomorphic to $H^0(C, L ^{-1} \tensor \Omega_C^1)\dual$.
-Notation: given $X \in \Mfd_\CC^n$ of complex dimension $n$, the **canonical bundle** is written $K_X \da \Omega_X^n$ and is the sheaf of holomorphic $n\dash$forms.
+Notation: given $X \in \Mfd_\CC^n$ of complex,  dimension $n$, the **canonical bundle** is written $K_X \da \Omega_X^n$ and is the sheaf of holomorphic $n\dash$forms.
 Serre duality will generalize: if \( \bundle{E}\to X \) is a holomorphic vector bundle, then $H^i(X; \bundle{E}) \cong H^{n-i}(X; \bundle{E}\dual \tensor K_X)\dual$.
 Note that only $H^0, H^1$ are the only nontrivial degrees for a curve.
 For 4-manifolds, we'll have an $H^2$ as well.
@@ -3144,7 +3158,7 @@ Let $X \in \Mfd_\CC^1$ with $X\cong_{C^{\infty }} S^2$, and consider for $p\in X
 The defining property was that there exists a section $s_p \in H^0(X; \OO(p) )$ which vanishes at first order at $p$:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-03.pdf_tex} };
 \end{tikzpicture}
 
@@ -3173,19 +3187,17 @@ How many zeros does a vector field on the sphere have?
 You can take the gradient vector field for a height function to get $2$, noting that the two zeros come in with a positive orientation
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-10.pdf_tex} };
 \end{tikzpicture}
 
 In coordinates on $\CP^1$, the coordinate is given by $z$ and $z \dd{}{z} \mapsto -2 \dd{}{w}$ for the coordinate $w = 1/z$.
 We get $\int_X c_1(TX) = 2$ and thus $\deg K_X = -2$ by dualizing.
 
-
 :::{.fact}
 $\deg K_X = 2g-2$.
 Use the existence of a smooth vector field on $X$.
 :::
-
 
 :::{.lemma title="?"}
 If $\deg L < 0$ on $C$< the $h^0(C, L) = 0$.
@@ -3216,7 +3228,7 @@ So there is only one genus 0 Riemann surface.
 What about genus 1?
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-23.pdf_tex} };
 \end{tikzpicture}
 
@@ -3239,7 +3251,7 @@ So $K_C = \OO_C$ if $g(C) = 1$, and such a Riemann surface is an **elliptic curv
 Let $C \da \CC/ \Lambda$ for \( \Lambda \) some lattice.
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{34pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-28.pdf_tex} };
 \end{tikzpicture}
 
@@ -3250,14 +3262,14 @@ Something like $f=1$ works, so \( \omega= dz \) descends.
 In fact, $f$ must be constant, since $H^0( \CC/ \Lambda, \OO) = \CC\dz$ by the maximum modulus principle.
 Now let $p, q\in C$ and apply Riemann-Roch to the line bundle $\OO(p+q)$ yields
 \[
-\chi( \OO(p+q) ) =
+\chi( \OO(p+q) ) &=
 h^0( \OO(p+q) )-
-h^1( \OO(-p-q) ) =
-=
-h^0( \OO(p+q) )-0
-=
+h^1( \OO(-p-q) ) \\
+&=
+h^0( \OO(p+q) )-0\\
+&=
 \deg \OO(p+q)+1-1 \\
-=2
+&=2
 .\]
 Thus there is a section $s_{p+q} \in H^0( \OO(p+q)) \ni s$ that vanishes at $p+q$, and similarly a map
 \[
@@ -3267,7 +3279,7 @@ We can check \( \varphi ^{-1} ( \infty ) = p+q \) and $\deg \varphi = 2$.
 Thus genus 1 surfaces have a generically 2-to-1 map to $\PP^1$.
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-22_14-42.pdf_tex} };
 \end{tikzpicture}
 
@@ -3288,4 +3300,161 @@ Severi proof in the 50s: false! issues with building moduli space for $g\geq 23$
 Need to use orbifold structure to take into account automorphisms.
 :::
 
+
+
+# Wednesday, February 24
+
+Last time:
+\[
+\chi(C, L) 
+&= h^0(C, L) - h^1(C, L) \\
+&= h^0(C, L) - h^0(C, L ^{-1} \tensor K_C) \\
+&= \deg L + 1 -g
+,\]
+which is determined by purely topological information.
+We can generalize this to arbitrary ranks of the bundle and arbitrary dimensions of manifold:
+
+
+:::{.theorem title="Hirzebruch-Riemann-Roch (HRR) Formula"}
+Let $X$ be a compact complex manifold and let \( \bundle{E} \to X \) be a holomorphic vector bundle.
+Then
+\[
+\chi( \bundle{E} ) = \int_C \ch( \bundle{E} ) \td(X)
+.\]
+The constituents here: 
+
+- The **Chern character**, summed over $R$ the *Chern roots*, which is in mixed cohomological degree.
+\[
+\ch( \bundle{E} ) \da \sum_{x_i \in R} e^{x_i} = \ch_0( \bundle{E} ) + \ch_1( \bundle{E} ) + \cdots + \ch_i( \bundle{E} ) \in H^{2i}(X; \QQ)
+.\]
+
+- The **Todd class**, defined as
+\[
+\td( F) \da \prod_{x_i \in R} {x_i \over 1 - e^{-x_i} }
+\]
+  where $\td(X) \da \td(TX)$ is viewed as a complex vector bundle, which is again in mixed cohomological degree.
+
+
+
+:::
+
+
+:::{.remark}
+Note that integrating over cohomology classes in mixed degree is just equal to the integral over the top degree terms.
+Applying this to $X = C$ a curve and \( \bundle{E} \da \OO \), we obtain
+\[
+\chi(C, \OO) 
+= \int_C \ch( \OO) \td(C)
+.\]
+
+We have 
+
+- $\ch(\OO) = e^{c_1(\OO)} = e^0 = 1$
+
+- $\td(C) \da \td(TC) = c_1(TC) / (1- e^{ - c_1(TC) } )$, whose Taylor coefficients are the Bernoulli numbers.
+  We can expand $x/(1 -e^{-x}) = 1 + (x/2) + (x^2/12) - x^4(720) + \cdots$, and since terms above degree 2 vanish, we have
+  \[
+  \cdots 
+  &= \int_C 1 + \qty{ 1 + {c_1(TC) \over 2} } \\
+  &= \int_C \qty{c_1(TC) \over 2 }\\
+  &= {1\over 2} \chi_\Top(C) && \text{Chern-Gauss-Bonnet} \\
+  &= {2-2g \over 2} \\
+  &= 1-g
+  .\]
+
+We thus obtain
+\[
+\chi(C, L) 
+&= \int_C \ch(L) \td(C) \\
+&= \int_C (1 + c_1(L) ) \qty {1 + {c_1(L) \over 2} }\\
+&= \int_C c_1(L) + {c_1(TC) \over 2} \\
+&= \deg L + 1-g
+.\]
+
+:::
+
+
+:::{.remark}
+Note that this is a better definition of genus than the previous one, which was just the correction term in Riemann-Roch.
+Here we can define it as $g \da h^1/2$.
+:::
+
+
+:::{.exercise title="?"}
+Try to state and prove a Riemann-Roch formula for vector bundles on curves.
+:::
+
+:::{.proposition title="?"}
+Let $S$ be a compact complex surface, i.e. $S\in \Mfd_\CC^2$.
+An example might be $C\cross D$ for $C,D$ two complex curves, or $\CP^2$.
+Let $L\to S$ be a holomorphic vector bundle.
+Then
+\[
+\chi(L) = \chi(\OO_S) + {1\over 2} \qty{ L^2 - L \cdot K}
+.\]
+Note that $L^2 \da \int_S c_1(L) c_1(L)$ is just shorthand for taking the intersection of $L$ with itself.
+Recall that $K \da \Omega_S^2$ is the space of holomorphic top forms.
+:::
+
+:::{.proof title="?"}
+Let $x_1, x_2$ be the Chern roots of $TS$.
+By HRR, we have 
+\[
+\chi(L) 
+&= \int_S \ch(L) \td(S) \\
+&= \int_S \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2!} } \qty{ {x_1 \over 1 - e^{-x_1} } {x_2 \over 1-e^{-x_2}} }\\
+&= \int_S \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2!} } \qty{1 + {x_1 \over 2} + {x_1^2 \over 12} }\qty{ 1 + {x_2 \over 2} + {x_2^2\over 12}} \\
+&= \int_S \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2!} } \qty{1 + {x_1 + x_2 \over 2} + {x_1^2 + x_2^2 + 3x_1 x_2 \over 12} } \\
+&= \int_S \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2!} } \qty{1 + {c_1(x_1, x_2) \over 2} + {c_1(x_1, x_2)^2 + c_2(x_1, x_2) \over 12 } } \\
+&= \int_S \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2!} } \qty{1 + { c_1(T) \over 2} + {c_1(T)^2 + c_2(T) \over 2 } } \\
+&= \int_S {c_1(L)^2 \over 2} + {c_1(L) c_1(T) \over 2} + {c_1(T)^2 \over 2} + {c_2(T) \over 12} \quad \text{Take deg 4} \\
+&= \int_S \qty{ c_1(L)^2 + c_1(L) c_1(T) \over 2} + \chi(\OO_S) \quad \text{HRR on last two terms}
+.\]
+where we've applied HRR to $\OO_S$.
+It remains to show that $c_1(T) = -c_1(K)$.
+We have
+\[
+K = \Omega_S^2 = \Wedgepower^2 T\dual 
+.\]
+Note that $\Wedgepower^{\text{top}} \bundle{E} \da \det( \bundle{E} )$ for any bundle $\bundle{E}$ since this is a 1-dimensional bundle.
+We have $c_1(T) = -c_1(T\dual)$ since the Chern roots of $T\dual$ are $-x_1, -x_2$.
+So it suffices to show $c_1(T\dual) = c_1(K)$, but there is a general result that $c_1(\bundle{E}) = c_1( \det \bundle{E} )$.
+This uses the splitting principle $\bundle{E} = \bigoplus_{i=1}^r L_i$ with $x_i = c_1(L_i)$.
+We have $c_1(\bundle{E}) = \sum x_i$ and $\det\bundle{E} = \bigotimes_{i=1}^r L_i$, so $\sum x_i = c_1(L_1\tensor \cdots \tensor L_r)$.
+:::
+
+:::{.remark}
+We want to use the following formula:
+\[
+\chi(S, L) = \chi(\OO_S) = {1\over 2}(L^2 - L\cdot K)
+.\]
+This requires knowing $\chi(\OO_S)$.
+Applying HRR yields
+\[
+\chi(\OO_S) 
+&= \int_S {c_1(T)^2 + c_2(T) \over 12}\\
+&= \int_S { (-c_1(K))^2 + c_2(T) \over 12}\\
+&= {K^2 + \displaystyle\int_S c_2(T) \over 12}
+,\]
+so we just need to understand $\int_S c_2(T)$.
+But for $n=\rank \bundle{E}$, $c_n( \bundle{E} )$ (the top Chern class) is the fundamental class of a zero locus of a section of $\bundle{E}$.
+Note that $S \in \Mfd_\RR^4$ is oriented, so $\int_S c_2(T)$ is the signed number of zeros of a smooth vector field.
+
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-24_14-33.pdf_tex} };
+\end{tikzpicture}
+
+Looking at the tangent bundle of the surface, the local sign of an intersection will be the number of incoming directions $\mod 2$, i.e. the index of the critical point.
+Then the signed number of zeros here yields $1-6+1 = -4 = \chi_{\Top}(C)$.
+More generally, we have
+\[
+\chi_{\Top}(M^n) = \int_C c_{n}(TM)
+,\]
+the **Chern-Gauss-Bonnet** formula.
+We can thus write
+\[
+\chi(\OO_S) = {K^2 + \chi_\Top(S) \over 12 }
+.\]
+:::
 
