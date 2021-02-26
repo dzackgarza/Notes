@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{736.44780928bp}%
+    \setlength{\unitlength}{737.11550861bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,9 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.5565817)%
+  \begin{picture}(1,0.52797043)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-02-26_14-12.pdf}}%
+    \put(0.34272495,0.42398243){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$t_{UV}  = z$\\\end{tabular}}}}%
+    \put(0.34381797,0.49704869){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}On annulus:\end{tabular}}}}%
+    \put(0.32363911,0.14241855){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V$\end{tabular}}}}%
+    \put(0.055154,0.43603357){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D = \pt$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
