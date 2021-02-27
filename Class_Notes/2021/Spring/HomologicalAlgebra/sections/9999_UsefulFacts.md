@@ -1,6 +1,18 @@
 # Useful Facts
 
 
+:::{.remark}
+Notational conventions:
+
+- Finite direct products: \( \bigoplus \)
+- Cohomological indexing: $C^i, \bd^i$
+- Homological indexing: $C_i, \bd_i$
+- Right-derived functors $R^iF$ 
+- Left-derived functors $L_i F$.
+:::
+
+
+
 :::{.proposition title="Basic properties of Hom"}
 \envlist
 
