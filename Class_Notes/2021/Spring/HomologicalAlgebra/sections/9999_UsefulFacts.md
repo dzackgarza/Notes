@@ -11,7 +11,7 @@
 
 - $\Hom_R(\wait, B)$ is:
   - Contravariant
-  - Right-exact
+  - Left-exact
 
 :::
 
