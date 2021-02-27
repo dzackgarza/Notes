@@ -17,6 +17,14 @@
 
 :::
 
+
+:::{.proposition title="Basic Properties of Ext"}
+\envlist
+
+- $\Ext^{>1}(A, B) = 0$ for any $A$ projective or $B$ injective.
+:::
+
+
 :::{.fact}
 A maps $A \mapsvia{f} B$ in $\rmod$ is injective if and only if $f(a) = 0_B \implies a = 0_A$.
 Monomorphisms are injective maps in $\rmod$.
