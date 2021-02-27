@@ -1,10 +1,23 @@
 # Useful Facts
 
 
+:::{.proposition title="Basic properties of Hom"}
+
+- $\Hom_R(A, \wait)$ is:
+  - Covariant
+  - Left-exact
+
+
+- $\Hom_R(\wait, B)$ is:
+  - Contravariant
+  - Right-exact
+
+:::
+
+
 :::{.fact}
 A morphism $A \mapsvia{f} B$ in \(R\dash\)module is injective if and only if $f(a) = 0_B \implies a = 0_A$.
 :::
-
 
 :::{.proposition title="Recipe for computing $\Ext_R^i$"}
 Write $F(\wait) \da \Hom_R(A, \wait)$.
@@ -82,10 +95,18 @@ where we've used the fact that $\ZZ/n$ is commutative.
 
 :::
 
-
 :::{.slogan}
 In $\Ab$, direct colimits commute with finite limits.
 Inverse limits do not generally commute with finite colimits.
+:::
+
+
+:::{.proposition title="Characterizations of Splittings"}
+TFAE in \( \rmod \):
+
+- A SES $0\to A\to B \to C\to 0$ is split.
+- ?
+
 :::
 
 
