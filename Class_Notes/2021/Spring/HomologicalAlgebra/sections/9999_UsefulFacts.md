@@ -6,6 +6,7 @@
 - $\Hom_R(A, \wait)$ is:
   - Covariant
   - Left-exact
+  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(A, \wait)(B)$ computed using *injective* resolutions.
 
 
 - $\Hom_R(\wait, B)$ is:
