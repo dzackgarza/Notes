@@ -2,6 +2,7 @@
 
 
 :::{.proposition title="Basic properties of Hom"}
+\envlist
 
 - $\Hom_R(A, \wait)$ is:
   - Covariant
@@ -16,9 +17,9 @@
 
 :::
 
-
 :::{.fact}
-A morphism $A \mapsvia{f} B$ in \(R\dash\)module is injective if and only if $f(a) = 0_B \implies a = 0_A$.
+A maps $A \mapsvia{f} B$ in $\rmod$ is injective if and only if $f(a) = 0_B \implies a = 0_A$.
+Monomorphisms are injective maps in $\rmod$.
 :::
 
 :::{.proposition title="Recipe for computing $\Ext_R^i$"}
