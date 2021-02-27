@@ -12,6 +12,7 @@
 - $\Hom_R(\wait, B)$ is:
   - Contravariant
   - Left-exact
+  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(\wait, B)(A)$ computed using *injective* resolutions.
 
 :::
 
