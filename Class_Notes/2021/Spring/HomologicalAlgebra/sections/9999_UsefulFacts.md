@@ -17,10 +17,10 @@ Notational conventions:
   - Extend to the left: $\cdots L_1F(C) \to F(A) \to F(B) \to F(C) \to 0$
 
 - Colimits:
-  - Examples: coproducts, direct limits, cokernels
+  - Examples: coproducts, direct limits, cokernels, initial objects, pushouts
   - Commute with left adjoints, i.e. $L(\colim F_i) = \colim LF_i$.
 - Examples of limits:
-  - Products, inverse limits, kernels
+  - Products, inverse limits, kernels, terminal objects, pullbacks
   - Commute with right adjoints. i.e. $R(\colim F_i) = \colim RF_i$.
 :::
 
