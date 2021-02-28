@@ -15,6 +15,9 @@ Notational conventions:
   - Come from right-exact functors
   - Require *projective* resolutions
   - Extend to the left: $\cdots L_1F(C) \to F(A) \to F(B) \to F(C) \to 0$
+
+- Colimit = direct limit
+- Limit = inverse limit
 :::
 
 
@@ -132,6 +135,8 @@ where we've used the fact that $\ZZ/n$ is commutative.
 
 - Left adjoints are right-exact with left-derived functors.
   Right adjoints are left-exact with right-derived functors.
+
+- Left adjoints commute with colimits: $L( \colim F) = \colim (L\circ F)$
 :::
 
 
