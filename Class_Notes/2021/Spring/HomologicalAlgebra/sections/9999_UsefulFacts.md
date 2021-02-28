@@ -8,9 +8,13 @@ Notational conventions:
 - Cohomological indexing: $C^i, \bd^i$
 - Homological indexing: $C_i, \bd_i$
 - Right-derived functors $R^iF$.
+  - Come from left-exact functors
   - Require *injective* resolutions
+  - Extend to the right: $0 \to F(A) \to F(B) \to F(C) \to L_1 F(A) \cdots$
 - Left-derived functors $L_i F$.
-  - Require *projective* resolution
+  - Come from right-exact functors
+  - Require *projective* resolutions
+  - Extend to the left: $\cdots L_1F(C) \to F(A) \to F(B) \to F(C) \to 0$
 :::
 
 
