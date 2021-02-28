@@ -125,8 +125,13 @@ where we've used the fact that $\ZZ/n$ is commutative.
 :::
 
 :::{.slogan}
-In $\Ab$, direct colimits commute with finite limits.
-Inverse limits do not generally commute with finite colimits.
+\envlist
+
+- In $\Ab$, direct colimits commute with finite limits.
+  Inverse limits do not generally commute with finite colimits.
+
+- Left adjoints are right-exact with left-derived functors.
+  Right adjoints are left-exact with right-derived functors.
 :::
 
 
