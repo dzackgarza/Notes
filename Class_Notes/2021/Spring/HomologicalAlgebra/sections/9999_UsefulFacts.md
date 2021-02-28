@@ -7,8 +7,10 @@ Notational conventions:
 - Finite direct products: \( \bigoplus \)
 - Cohomological indexing: $C^i, \bd^i$
 - Homological indexing: $C_i, \bd_i$
-- Right-derived functors $R^iF$, which require *injective* resolutions
-- Left-derived functors $L_i F$, which require *projective* resolution
+- Right-derived functors $R^iF$.
+  - Require *injective* resolutions
+- Left-derived functors $L_i F$.
+  - Require *projective* resolution
 :::
 
 
