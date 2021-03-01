@@ -26,6 +26,32 @@ Notational conventions:
 
 
 
+:::{.proposition title="Kernels as pullbacks and cokernels as pushouts"}
+A kernel $\ker f$ can be characterized as a cartesian square:
+
+\begin{tikzcd}
+	K \\
+	& {\ker f} && A \\
+	\\
+	& 0 && B
+	\arrow["f", from=2-4, to=4-4]
+	\arrow["{\iota_f}", from=2-2, to=2-4]
+	\arrow["0"', from=2-2, to=4-2]
+	\arrow["0"', from=4-2, to=4-4]
+	\arrow["0"', curve={height=12pt}, from=1-1, to=4-2]
+	\arrow["g"', curve={height=-12pt}, from=1-1, to=2-4]
+	\arrow["{\exists ! u}"', dashed, from=1-1, to=2-2]
+	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=4-4]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMSwxLCJcXGtlciBmIl0sWzMsMSwiQSJdLFsxLDMsIjAiXSxbMywzLCJCIl0sWzAsMCwiSyJdLFsxLDMsImYiXSxbMCwxLCJcXGlvdGFfZiJdLFswLDIsIjAiLDJdLFsyLDMsIjAiLDJdLFs0LDIsIjAiLDIseyJjdXJ2ZSI6Mn1dLFs0LDEsImciLDIseyJjdXJ2ZSI6LTJ9XSxbNCwwLCJcXGV4aXN0cyAhIHUiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMCwzLCIiLDIseyJzdHlsZSI6eyJuYW1lIjoiY29ybmVyIn19XV0=)
+
+:::
+
+
+
+
+
 :::{.proposition title="Basic properties of Hom"}
 \envlist
 
