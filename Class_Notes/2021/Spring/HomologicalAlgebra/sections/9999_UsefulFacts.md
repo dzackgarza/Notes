@@ -27,7 +27,7 @@ Notational conventions:
 
 
 :::{.proposition title="Kernels as pullbacks and cokernels as pushouts"}
-A kernel $\ker f$ can be characterized as a cartesian square:
+The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square:
 
 \begin{tikzcd}
 	K \\
@@ -46,8 +46,26 @@ A kernel $\ker f$ can be characterized as a cartesian square:
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMSwxLCJcXGtlciBmIl0sWzMsMSwiQSJdLFsxLDMsIjAiXSxbMywzLCJCIl0sWzAsMCwiSyJdLFsxLDMsImYiXSxbMCwxLCJcXGlvdGFfZiJdLFswLDIsIjAiLDJdLFsyLDMsIjAiLDJdLFs0LDIsIjAiLDIseyJjdXJ2ZSI6Mn1dLFs0LDEsImciLDIseyJjdXJ2ZSI6LTJ9XSxbNCwwLCJcXGV4aXN0cyAhIHUiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMCwzLCIiLDIseyJzdHlsZSI6eyJuYW1lIjoiY29ybmVyIn19XV0=)
 
-:::
+Similarly, a cokernel $\coker f$ can be characterized as a cocartesian square:
 
+\begin{tikzcd}
+	K \\
+	& {\coker f} && A \\
+	\\
+	& 0 && B
+	\arrow["f"', from=4-4, to=2-4]
+	\arrow["{\iota_f}"', from=2-4, to=2-2]
+	\arrow["0", from=4-2, to=2-2]
+	\arrow["0", from=4-4, to=4-2]
+	\arrow["0", curve={height=-12pt}, from=4-2, to=1-1]
+	\arrow["g", curve={height=12pt}, from=2-4, to=1-1]
+	\arrow["{\exists ! u}", dashed, from=2-2, to=1-1]
+	\arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=4-4, to=2-2]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMSwxLCJcXGNva2VyIGYiXSxbMywxLCJBIl0sWzEsMywiMCJdLFszLDMsIkIiXSxbMCwwLCJLIl0sWzMsMSwiZiIsMl0sWzEsMCwiXFxpb3RhX2YiLDJdLFsyLDAsIjAiXSxbMywyLCIwIl0sWzIsNCwiMCIsMCx7ImN1cnZlIjotMn1dLFsxLDQsImciLDAseyJjdXJ2ZSI6Mn1dLFswLDQsIlxcZXhpc3RzICEgdSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDAsIiIsMCx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dXQ==)
+
+:::
 
 
 
