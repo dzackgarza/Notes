@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="169.76099mm"
+   height="134.89093mm"
+   viewBox="0 0 169.76099 134.89093"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="2021-03-01_14-12.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="326.91783"
+     inkscape:cy="223.22977"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     showborder="true"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     objecttolerance="10000"
+     guidetolerance="10000"
+     inkscape:snap-perpendicular="true"
+     inkscape:snap-tangential="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       position="-11.756562,184.85503"
+       orientation="0,793.70079"
+       id="guide10" />
+    <sodipodi:guide
+       position="198.24344,184.85503"
+       orientation="559.37008,0"
+       id="guide12" />
+    <sodipodi:guide
+       position="198.24344,36.855034"
+       orientation="0,-793.70079"
+       id="guide14" />
+    <sodipodi:guide
+       position="-11.756562,36.855034"
+       orientation="-559.37008,0"
+       id="guide16" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid20"
+       dotted="true"
+       units="px"
+       originx="93.243439"
+       originy="37.14497" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <cc:license
+           rdf:resource="" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.756562,-36.855034)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 179.08333,137.5 c 0,0 0,0 -148.166665,0 C 105,36.958336 105,36.958336 105,36.958336"
+       id="path835" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 105,36.958336 C 179.08333,137.5 179.08333,137.5 179.08333,137.5"
+       id="path837" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 30.916665,137.5 C 157.91666,79.291668 157.91666,79.291668 157.91666,79.291668 v 0 c 0,0 52.91667,42.333332 0,0 C 105,36.958336 105,36.958336 105,36.958336"
+       id="path839" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 179.08333,137.5 c 0,-42.333332 0,-42.333332 0,-42.333332"
+       id="path841" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="10.878065"
+       y="55.373058"
+       id="text845"><tspan
+         sodipodi:role="line"
+         id="tspan843"
+         x="10.878065"
+         y="55.373058"
+         style="stroke-width:0.264583">$x_0 = 0$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="94.416664"
+       y="169.25"
+       id="text849"><tspan
+         sodipodi:role="line"
+         id="tspan847"
+         x="94.416664"
+         y="169.25"
+         style="stroke-width:0.264583">$x_1 = 0</tspan></text>
+  </g>
+</svg>
