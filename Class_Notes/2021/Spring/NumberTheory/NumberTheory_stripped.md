@@ -2333,6 +2333,249 @@ This has the effect of making the squares partitioning \( {\mathbb{R}}^n \) fine
 Note that there is a small technicality since \( t \) can take on non-integer values, but the limiting behavior is the same. Next time: we've seen that the number of lattice points is sometimes well-approximated by volume, but it's possible to have regions of unbounded volume with no lattice points, e.g. by taking a large ball and deleting all lattice points. It would be nice to have a theorem which guarantee when a region will have lattice points, and Minkowski's theorem will be one such theorem we'll look at next time.
 :::
 
+# Ch. 12: Lattice Points (Monday, March 01)
+
+## Minkowski (Version 1)
+
+::: {.remark}
+Basic heuristic from last time: counting the lattice points in a region \( R \) should be approximately \( \operatorname{vol}(R) \). We turned this into a theorem for certain regions:
+:::
+
+::: {.theorem title="?"}
+Let \( R \subseteq {\mathbb{R}}^n \) be a bounded region with a well-defined with respect to the Riemann integral. Letting \( L_{R} \) be the number of lattice points in \( R \), we have
+\[
+{1\over t^n} L_{tR} \overset{t\to \infty}\to \operatorname{vol}(R)
+.\]
+:::
+
+::: {.remark}
+Most of today: Minkowski's theorem, which will guarantee a lattice point under some conditions.
+:::
+
+::: {.theorem title="Minkowski (Version 1)"}
+Let \( R \subseteq {\mathbb{R}}^n \) be a bounded region that is
+
+1.  Convex, so any line segment connecting two points in \( R \) is entirely contained within \( R \), and
+
+2.  Symmetric about \( \mathbf{0} \), so \( \mathbf{x}\in R\implies -\mathbf{x}\in R \).
+
+If \( \operatorname{vol}(R) > 2^n \), then \( R \) contains a nonzero lattice point.
+:::
+
+::: {.remark}
+Any circle/ball or ellipse will be an example. Note that \( 2^n \) is sharp, i.e. this theorem does not hold for a smaller constant: take the square \( (-1, 1) \times(-1, 1) \subseteq {\mathbb{R}}^2 \), which has volume 4 but only contains the origin as a lattice point.
+:::
+
+::: {.proof title="?"}
+Note that any such region already contains \( \mathbf{0} \), since containing \( \mathbf{x} \) and \( -\mathbf{x} \) plus convexity implies containing the line between them, which passes through \( \mathbf{0} \). By assumption \( \operatorname{vol}(R) > 2^n \), and hence \( (1/t^n)L_{tR} > 2^n \) for \( t \) large enough. So set \( t=m \) for some \( m>> 1\in {\mathbb{Z}}^{\geq 0} \), this yields \( L_{mR} > (2m)^n \). Consider \( {\mathbb{Z}}^n \) and taking all coordinates \( \pmod 2m \). This yields \( (2m)^n \) equivalence classes of points, so by the pigeonhole principle there exist \( \mathbf{v}_1 \neq \mathbf{v}_2 \in mR \) such that \( (\mathbf{v}_1 - \mathbf{v}_2)/2m \in {\mathbb{Z}}^n \), and the claim is that this is the lattice point we want. Note that this is nonzero, why is it in the region \( R \)? By definition, \( (1/m)\mathbf{v}_1 \in R \) and \( (-1/m)\mathbf{v}_2 \in R \) using the symmetric assumption. The midpoint between these is precisely the previous point, and this is in \( R \) by convexity.
+:::
+
+## Minkowski (Version 2)
+
+::: {.definition title="Lattice"}
+A **lattice** in \( {\mathbb{R}}^n \) is the \( {\mathbb{Z}}{\hbox{-}} \)span of a collection of \( {\mathbb{R}}{\hbox{-}} \)linearly independent vectors in \( {\mathbb{R}}^n \).
+:::
+
+::: {.example title="$n=2$"}
+```{=tex}
+\envlist
+```
+-   \( \Lambda \coloneqq{\mathbb{Z}}{\left[ {1, 0} \right]}^t + {\mathbb{Z}}\left\{{0, 1}\right\}^t \). This tiles the plane by squares.
+-   \( \Lambda \coloneqq{\mathbb{Z}}{\left[ {1, 1} \right]}^t + {\mathbb{Z}}\left\{{1, 3}\right\}^t \). Note that this now tiles the plane by parallelograms:
+
+```{=tex}
+\begin{tikzpicture}
+  \draw[thin,gray!40] (-1,-1) grid (4,4);
+  \draw[<->] (-1,0)--(4,0) node[right]{$x$};
+  \draw[<->] (0,-1)--(0,4) node[above]{$y$};
+  \draw[line width=1pt,blue,-stealth](0,0)--(1,1) node[anchor=south west]{$\boldsymbol{u}$};
+  \draw[line width=1pt,purple,-stealth](1,1)--(2,4) node[anchor=south west]{};
+  \draw[line width=1pt,purple,-stealth](0,0)--(1,3) node[anchor=north east]{$\boldsymbol{v}$};
+\draw[line width=1pt,blue,-stealth](1,3)--(2,4) node[anchor=south west]{};
+
+\draw [draw=black, fill=purple, opacity=0.4]
+       (0,0) -- (1,1) -- (2,4) -- (1,3) -- cycle;
+\end{tikzpicture}
+```
+-   \( \Lambda \coloneqq{\mathbb{Z}}{\left[ {1, 0} \right]}^t \), which recovers \( {\mathbb{Z}}\subseteq {\mathbb{R}} \). This is not a full lattice, since it lies in a proper subspace of \( {\mathbb{R}}^2 \).
+
+Note that this will always result in a free abelian group on \( n \) generators. Why not define a lattice this way? Here's a non-example:
+
+-   \( \Lambda \coloneqq{\mathbb{Z}}{\left[ {\sqrt{2} , 0} \right]}^t + {\mathbb{Z}}\left\{{1, 0}\right\}^t \), which are not linearly independent over \( {\mathbb{R}} \). This yields a dense set of points on the real axis in \( {\mathbb{R}}^2 \), and is still a free abelian group of rank 2. We'll see later that no lattice can be dense, and in fact they must always be discrete.
+:::
+
+::: {.remark}
+It may not be obvious that a lattice has a uniquely determined number of generating elements. This turns out to be true: if \( \Lambda = \sum_{i=1}^d {\mathbb{Z}}\mathbf{v}_i \) with \( \left\{{ \mathbf{v}_i }\right\}_{i=1}^d \) linearly independent over \( {\mathbb{R}} \), then \( \Lambda\otimes_{\mathbb{Z}}{\mathbb{R}}\cong \sum_{i=1}^d {\mathbb{R}}\mathbf{v}_i \cong {\mathbb{R}}^d \), which is now an \( {\mathbb{R}}{\hbox{-}} \)vector vector space of real dimension \( d \). Noting that \( \dim_{\mathbb{R}}(\Lambda\otimes_{\mathbb{Z}}{\mathbb{R}}) \) doesn't depend on the choice of basis, any different choice of generating set for \( \Lambda \) must have the same number of generators.
+:::
+
+::: {.definition title="Full Lattices"}
+If \( d=n \), we'll call \( \Lambda \) a **full lattice**.
+:::
+
+::: {.definition title="Fundamental Parallelepiped"}
+Note that if \( \Lambda \) is full, then \( \Lambda= \sum_{i=1}^n {\mathbb{Z}}\mathbf{v}_i \) with the \( \mathbf{v}_i \) linearly independent over \( {\mathbb{R}} \). We define the **fundamental parallelepiped** as the set
+\[
+\left\{{ \sum_{i=1}^n c_n \mathbf{v}_n {~\mathrel{\Big|}~}0 \leq c_i \leq 1}\right\} 
+.\]
+Note that this depends on the choice of generating set.
+:::
+
+::: {.example title="?"}
+For \( \mathbf{v}_1 = {\left[ {1, 1} \right]}^t \) and \( \mathbf{v}_2 = {\left[ {1, 3} \right]} \), we get the parallelogram shown in the earlier figure. Note that \( \Lambda \) is also generated by \( \mathbf{v}_1 = \left\{{1, 1}\right\}, \mathbf{w}_2 = {\left[ {0, 2} \right]} \), but this generates a different parallelepiped:
+
+```{=tex}
+\begin{tikzpicture}
+  \draw[thin,gray!40] (-1,-1) grid (4,4);
+  \draw[<->] (-1,0)--(4,0) node[right]{$x$};
+  \draw[<->] (0,-1)--(0,4) node[above]{$y$};
+  \draw[line width=1pt,blue,-stealth](0,0)--(1,1) node[anchor=south west]{$\mathbf{v}_1$};
+  \draw[line width=1pt,purple,-stealth](1,1)--(2,4) node[anchor=south west]{};
+  \draw[line width=1pt,purple,-stealth](0,0)--(1,3) node[anchor=south east]{$\mathbf{v}_2$};
+\draw[line width=1pt,blue,-stealth](1,3)--(2,4) node[anchor=south west]{};
+
+\draw[line width=1pt,green,-stealth](0,0)--(0,2) node[anchor=south east]{$\mathbf{w}_2$};
+
+\draw [draw=black, fill=purple, opacity=0.4]
+       (0,0) -- (1,1) -- (2,4) -- (1,3) -- cycle;
+
+\draw [draw=black, fill=green, opacity=0.2]
+       (0,0) -- (1,1) -- (1,3) -- (0,2) -- cycle;
+\end{tikzpicture}
+```
+:::
+
+::: {.proposition title="?"}
+In general, one gets a parallelotope whose volume is an invariant of the lattice itself.
+:::
+
+::: {.proof title="of proposition"}
+How do we compute this? Let \( M_v = {\left[ { \mathbf{v}_1^t, \cdots, \mathbf{v}_n^t} \right]} \) be the linear transformation obtained by placing all of the generating vectors into the columns of a matrix, and consider scaling the unit cube \( C = [0, 1]^n \). Then letting \( P \) be the fundamental parallelepiped, we have \( P = M_v C \) and so
+\[
+\operatorname{vol}(P) = \operatorname{vol}(M_v C) = {\left\lvert { \det(M_v) } \right\rvert} \operatorname{vol}(C) = \det(M_v)
+,\]
+using that the volume of the standard cube is 1. So it suffices to check that if \( \mathbf{v}_i \) and \( \mathbf{w}_j \) generate the same lattice \( \Lambda \), then \( \det M_v = \det M_w \). Why is this true? If they generate the same lattice, every \( \mathbf{v}_i \) is a \( {\mathbb{Z}}{\hbox{-}} \)linear combination of the \( \mathbf{w}_j \), and similarly every \( \mathbf{w}_j \) can be written as a linear combination of the \( \mathbf{v}_i \). So we get
+\[
+M_v = M_w A
+\qquad 
+M_w = M_v A'
+\]
+for some matrices \( A, A' \). We can thus write
+\[
+M_v = M_vA' A
+.\]
+. Since the \( \mathbf{v}_i \) are linearly independent, \( M_v \) is invertible, so right-multiplying yields \( AA' = I \) and taking determinants yields
+\[
+1 = \det(A')\det(A)
+.\]
+Noting that \( A, A' \in \operatorname{Mat}(n\times n, {\mathbb{Z}}) \), their determinants must be integers, which forces \( \det(A) = \det(A') = \pm 1 \). Taking determinants in the original equation yields
+\[
+\det(M_v) = \det(A) \det(M_w) = \pm \det(M_w)
+,\]
+and taking absolute values yields the result.
+:::
+
+::: {.definition title="Covolume of a Lattice"}
+We'll call the common value \( {\left\lvert {\det M_v} \right\rvert} \) for any choice of generating set \( \left\{{ \mathbf{v}_i }\right\} \) the **covolume** of \( \Lambda \):
+\[
+\operatorname{covol}( \Lambda) \coloneqq{\left\lvert { \det M_v } \right\rvert}
+.\]
+:::
+
+::: {.theorem title="Minkowski (Version 2)"}
+Let \( \Lambda \) be a full lattice in \( {\mathbb{R}}^n \), and let \( R \subseteq {\mathbb{R}}^n \) be a region that is convex and symmetric about zero. Assume that
+\[
+\operatorname{vol}(R) > 2^n \operatorname{covol}( \Lambda)
+.\]
+Then \( R \) contains a nonzero \( \mathbf{v} \in \Lambda \).
+:::
+
+::: {.remark}
+Taking \( \Lambda\coloneqq{\mathbb{Z}}^n \) recovers the first version. Idea of proof: any full lattice is the image of the standard lattice under some linear transformation.
+:::
+
+::: {.proof title="?"}
+Let \( \mathbf{v}_1, \cdots, \mathbf{v}_n \) be \( n \) generators for \( \Lambda \), then define a linear transformation
+\[
+T: {\mathbb{R}}^n &\to {\mathbb{R}}^n \\
+\mathbf{v}_i &\mapsto \mathbf{e}_i
+,\]
+which takes each generator to the corresponding standard basis vector. The \( T \Lambda = {\mathbb{Z}}^n \) is the standard lattice, and
+\[
+\operatorname{vol}(T(R)) = {\left\lvert { \det(T) } \right\rvert} \operatorname{vol}(R) = {\operatorname{vol}(R) \over \operatorname{covol}( \Lambda) } > 2^n
+,\]
+noting that \( T^{-1}= {\left[ {\mathbf{v}_1^t, \cdots, \mathbf{v}_n^t} \right]} \). Now applying the original Minkowski theorem we get a nonzero point
+\[
+\mathbf{x}\in {\mathbb{Z}}^n \cap T(R)
+\implies T^{-1}\mathbf{x} \in \Lambda \cap R
+.\]
+:::
+
+### Application: The 4 Square Theorem
+
+::: {.theorem title="4 Square Theorem (Lagrange)"}
+Every positive integer is a sum of 4 squares of integers.
+:::
+
+::: {.lemma title="?"}
+Let \( m \in {\mathbb{Z}}^{>0} \) be squarefree, then there are \( A, B \in {\mathbb{Z}} \) such that
+\[
+A^2 + B^2 + 1 \equiv 0 \pmod m
+,\]
+i.e. \( -1 \) is always the sum of two squares in the ring \( {\mathbb{Z}}/m \).
+:::
+
+::: {.proof title="?"}
+We're trying to solve an equation \( \pmod m \), and by the CRT it suffices to solve it for every prime power dividing \( m \), and since \( m \) is squarefree, all prime powers occur with exponent 1. So it suffices to consider \( m=p \) a prime. We can further assume \( p \) is odd, since if \( p=2 \) we can take \( A=1, B=2 \). Consider the following two subsets of \( {\mathbb{Z}}/p \):
+\[
+S_1 &\coloneqq\left\{{ A^2 \pmod p }\right\} \\
+S_2 &\coloneqq\left\{{ -1-B^2 \pmod p }\right\} 
+.\]
+Note that \( \# S_1 = {p+1 \over 2} \), since the number of nonzero squares is half the number of elements, so \( {p-1\over 2} \), and we add in zero. Similarly \( \# S_2 = \# S_1 \) since it can be obtained from \( S_1 \) by sending \( x\mapsto -1-x \). Note that \( {p+1\over 2} > {p\over 2} \), but \( {\left\lvert {{\mathbb{Z}}/p} \right\rvert} = p \), so these two sets can't be disjoint. So there is some \( A^1 = -1-B^2 \pmod p \).
+:::
+
+::: {.proof title="of the 4 Square Theorem"}
+Suppose \( m \) is squarefree. Choose \( A, B \) as in the lemma, so \( A^2 + B^2 \equiv -1 \pmod m \), and define \( \gamma \coloneqq A+ Bi \in {\mathbb{Z}}[i] \). Let
+\[ \Lambda \coloneqq\left\{{ (\alpha, \beta) \in {\mathbb{Z}}[i] {~\mathrel{\Big|}~}\alpha\equiv \beta \gamma \pmod m }\right\} .\]
+Taking one such ordered pair in \( \Lambda \), we can apply complex conjugation to obtain
+\[
+\alpha\equiv \beta \gamma\pmod m \implies {\overline{{ \alpha}}} {\overline{{ \beta}}} {\overline{{ \gamma}}} \pmod{\overline{{m}}} = m
+,\]
+where we can immediately note that \( {\overline{{m}}} = m \) since \( m\in {\mathbb{Z}} \). Multiplying these two congruences yields
+\[
+\alpha{\overline{{\alpha}}} 
+= N( \alpha) 
+\equiv N( \beta) N( \gamma) \pmod m
+\equiv - N( \beta) \pmod m
+,\]
+and so we have \( N( \alpha) + N( \beta) \equiv 0 \pmod m \). But these are Gaussian integers, so writing \( \alpha = a + bi, \beta = c + di \) we obtain
+\[
+a^2 + b^2 + c^2 + d^2 = \equiv 0 \pmod m
+.\]
+Being congruent to \( 0\pmod m \) in \( {\mathbb{Z}}[i] \) means that both the real and imaginary parts are divisible by \( m \), but since the left-hand side above is an ordinary integer, it has no imaginary part. So \( m \mathrel{\Big|}a^2 + b^2 + c^2 + d^2 \) for every element of \( \Lambda \). Noting that \( \Lambda \subseteq {\mathbb{Z}}[i] \) we can identify \( \Lambda \subseteq {\mathbb{Z}}^4 \subseteq {\mathbb{R}}^4 \) by pairing \( ( \alpha, \beta) \rightleftharpoons(a,b,c,d) \).
+
+::: {.claim}
+\( \Lambda\subseteq {\mathbb{R}}^4 \) is a full lattice, and after writing a set of generators and computing the determinant, one finds that \( \operatorname{covol}( \Lambda) = m^2 \).
+:::
+
+> See the book for a proof of this claim!
+
+Now let
+\[
+R \coloneqq\left\{{ {\left[ {x,y,z,w} \right]} \in {\mathbb{R}}^4 {~\mathrel{\Big|}~}x^2 + y^2 + z^2 + w ^2 < 2m  }\right\}
+,\]
+which is a convex and centrally symmetric region. A multivariable Calculus exercise shows \( \operatorname{vol}(R) = 2\pi^2 m^2 \), and \( 2\pi^2 > 2^4 \operatorname{covol}( \Lambda) \). Applying Minkowski version 2, there exists a nonzero point \( \mathbf{x} \in R \cap\Lambda \), and thus its coordinates satisfy
+\[
+0 < x^2 + y^2 + z^2 + w^2 < 2m
+.\]
+The middle term is then an integer that is a multiple of \( m \), forcing it to be equal to \( m \).
+:::
+
+::: {.remark}
+We made the assumption that \( m \) was squarefree, but we can write any \( m\in {\mathbb{Z}}^{>0} \) as \( m = k^2 m' \) where \( m' \) is squarefree. Then writing \( m' = x^2 + y^2 + z^2 + w^2 \), we have
+\[ m = (kx)^2 + (ky)^2 + (kz)^2 + (kw)^2 \]
+. There are other applications of Minkowski's theorem that tell you when certain types of numbers are represented by special quadratic forms (such as the above sum of squares). See Pete Clark's papers!
+:::
+
 [^1]: An injective ring morphism.
 
 [^2]: *Squarefree* means not divisible by \( n^2 \) for any \( n > 1\in {\mathbb{Z}} \), or equivalently not divisible by the square of any primes.
