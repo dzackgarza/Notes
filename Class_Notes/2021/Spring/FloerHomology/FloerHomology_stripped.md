@@ -1116,7 +1116,7 @@ We'll find analogs of Morse functions on \( P(L_0, L_1) \) such that the critica
 A **symplectic manifold** is a pair \( (M^{2n}, \omega) \) with \( \omega \) a 2-form which is
 
 -   Closed, i.e. \( d \omega = 0 \), and
--   Nondegenerate, i.e. \( \Lambda^n \omega \neq 0 \).
+-   Nondegenerate, i.e. \( \bigwedge^n \omega \neq 0 \).
 :::
 
 ::: {.definition title="Lagrangian Submanifolds"}
@@ -2007,6 +2007,482 @@ This turns out to be independent of the choice of \( a, b \), and thus
 \varepsilon(x, y) \neq 0 \implies \pi_2(x, y) = \emptyset
 ,\]
 and there are no continuous discs.
+:::
+
+# Tuesday, February 23
+
+## Whitney Discs
+
+::: {.remark}
+For \( x,y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \), recall that we had the following situation:
+
+![Whiteney Disc](figures/image_2021-02-23-11-14-22.png)
+
+Then \( \pi_2(x, y) \) was defined to be the homotopy classes of discs connecting \( x \) to \( y \). The obstruction to the existence of such discs was denoted \( \varepsilon(x, y) \in H_1(M) \) for \( M\in {\mathbf{Mfd}}^3 \). We're checking if there exist two paths connecting \( x \) to \( y \),
+\[
+a: I &\to {\mathbb{T}}_{ \alpha} \\
+b: I &\to {\mathbb{T}}_{ \beta}
+\]
+such that \( a-b \) is nullhomotopic. In this case, \( \pi_2(x, y) \neq \emptyset \).
+
+![image_2021-02-23-11-17-30](figures/image_2021-02-23-11-17-30.png)
+
+We had a theorem that \( \pi_1(\operatorname{Sym}^g \Sigma) \cong H_1( \operatorname{Sym}^g \Sigma) \), so we can replace nullhomotopic with nullhomologous above. We can also use the fact that \( H_1( \operatorname{Sym}^g \Sigma) \cong H_1 \Sigma \). Note that \( [a-b] \) isn't well-defined, since we can append any loop to \( a \) for example, but the following is well-defined:
+\[
+\varepsilon(x, y) 
+\coloneqq[a-b] \in { H_1 \operatorname{Sym}^g \Sigma \over H_1 {\mathbb{T}}_{ \alpha} \oplus H_1 {\mathbb{T}}_{ \beta} }
+\cong {H_1 \Sigma \over \left\langle{ [ \alpha_1], \cdots, [ \beta_1 ], \cdots }\right\rangle} 
+\cong H_1 M 
+.\]
+
+How can we compute \( \varepsilon \) using the Heegard diagrams? Recall that a path in \( \operatorname{Sym}^g \Sigma \) was a union of \( g \) paths in \( \Sigma \). So choose arcs \( a_1 \cup\cdots \cup a_g \) on \( \Sigma \) such that \( a_i \subseteq \alpha_i \) is sub-arc and \( {{\partial}}( a_1 \cup\cdots \cup a_g ) = y_1 + \cdots + y_g - x_1 - \cdots - x_g \), and similarly choose \( b_1 \cup\cdots \cup b_g \). Note that if \( \varepsilon(x, y) \neq 0 \) then \( \pi_2(x, y) = \emptyset \).
+:::
+
+::: {.example title="$L(2, 3)$"}
+The following is a Heegard diagram for \( L(2, 3) \) of minimal genus, where we take \( \alpha \) to be the horizontal line and \( \beta \) will be a line of slope \( 2/3 \):
+
+![image_2021-02-23-11-28-10](figures/image_2021-02-23-11-28-10.png)
+
+Then \( {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} = \left\{{ A, B }\right\} \). Now draw arcs connecting \( A \) and \( B \), e.g. the ones in orange and green here:
+
+![image_2021-02-23-11-29-54](figures/image_2021-02-23-11-29-54.png)
+
+Note that we have two generators of homology for the torus, say \( x,y \), and we can write
+
+![image_2021-02-23-11-30-37](figures/image_2021-02-23-11-30-37.png)
+
+Then the union of the two arcs is exactly \( x+y \), so we can write
+\[
+H_1( L(2, 3)) 
+= { {\mathbb{Z}}\left\langle{ x, y }\right\rangle \over \left\langle{ y, 2x + 3y }\right\rangle}  
+.\]
+Moreover, \( \varepsilon(A, B) = x + y \neq 0 \) in this quotient, so there is not Whitney disc connecting \( A \) to \( B \) and \( \pi_2(A, B) = \emptyset \).
+:::
+
+::: {.remark}
+We'll define \( x\sim y \iff \varepsilon(x, y) = 0 \), and this turns out to be an equivalence relation which partitions the set of paths.
+
+-   \( \varepsilon(x, y) = 0 \implies \varepsilon(y, x) = 0 \), which follows from \( \varepsilon(x, y) = [a-b] = [b-a] = \varepsilon(y, x) \)
+
+-   \( \varepsilon(x, x) = 0 \) by picking \( a,b \) constant.
+:::
+
+::: {.exercise title="?"}
+Show that \( \varepsilon(x, y) + \varepsilon(y, z) = \varepsilon(x, z) \).
+:::
+
+::: {.corollary title="?"}
+If \( x\sim y \) and \( y\sim z \), so \( \varepsilon(x, y) = \varepsilon(y, z) = 0 \), we have \( \varepsilon(x, z) = 0 \implies x \sim z \).
+:::
+
+::: {.exercise title="?"}
+Find the equivalence classes under \( \sim \) for the Poincaré homology sphere using the genus 2 Heegard diagram.
+:::
+
+::: {.remark}
+For \( \varphi\in \pi_2(x, y) \), the **shadow** is the 2-chain \( D( \varphi ) \) on \( \Sigma \) defined in the following way: remove the \( \alpha, \beta \) arcs to obtain
+\[
+\Sigma \setminus(\alpha\cup\sigma) = \displaystyle\coprod_{i=1}^m D_i
+,\]
+
+where \( {}^{o} \) denotes that the set is open. Then \( D( \varphi) = \sum_{i=1}^m a_i D_i \).
+:::
+
+::: {.definition title="?"}
+Given \( z\in \Sigma\setminus(\alpha\cup\beta) \), define a hyperplane
+\[
+L_z = \left\{{ \mathbf{w} \in \operatorname{Sym}^g( \Sigma) {~\mathrel{\Big|}~}z\in \mathbf{w} }\right\} 
+.\]
+Note that this will be codimension 2. Then for a disc \( \varphi\in \pi_2(x, y) \), define
+\[
+n_z( \varphi ) = \# \qty{ \operatorname{im}( \varphi) \cap L_z }
+.\]
+which is an algebraic (signed) count of how many entries in a tuple contain the point \( z \). We can then define \( a_i \coloneqq n_{z_i}( \varphi) \) and define
+\[
+D( \varphi) = \sum_{i=1}^m a_i D_i, && z_i \in {}^{o} D_i
+.\]
+:::
+
+::: {.remark}
+The following comes from "Introduction to Heegard Floer Homology" (Osvath-Szabo), which we've been following relatively closely so far.
+:::
+
+::: {.exercise title="?"}
+Let \( D \) be a domain of a disc connecting \( \left\{{ x_1, x_2 }\right\} \) to \( \left\{{ y_1, y_2 }\right\} \) in the following way:
+
+![image_2021-02-23-11-54-09](figures/image_2021-02-23-11-54-09.png)
+
+Attach 1-handles in the following way to obtain \( \beta \) curves:
+
+![image_2021-02-23-11-55-13](figures/image_2021-02-23-11-55-13.png)
+
+Use these handles to add curves running through the handles:
+
+![image_2021-02-23-11-56-26](figures/image_2021-02-23-11-56-26.png)
+
+::: {.exercise title="?"}
+What is a Heegard diagram for?
+:::
+
+Pick a point in the center of the rectangle and connect it to the 4 vertices, noting that it includes in \( \Sigma \) :
+
+![image_2021-02-23-11-58-15](figures/image_2021-02-23-11-58-15.png)
+
+Applying a rotation by \( \pi \) and taking the quotient, we get a 2-fold branched cover of \( S^1 \):
+
+![image_2021-02-23-11-59-29](figures/image_2021-02-23-11-59-29.png)
+
+Here \( x_1, x_2 \mapsto -i \) and \( y_1, y_2 \mapsto +i \). We can now get a map \( \varphi \) to \( \operatorname{Sym}^2( \Sigma) \):
+
+![image_2021-02-23-12-01-02](figures/image_2021-02-23-12-01-02.png)
+
+In the image we get 2 points with multiplicity on \( \Sigma \), and thus an element of \( \operatorname{Sym}^2 \Sigma \). We know \( \varphi(-i) = \left\{{ x_1, x_2 }\right\} \) and \( \varphi(+i) = \left\{{ y_1, y_2 }\right\} \).
+:::
+
+::: {.example title="?"}
+Show that \( D' \) is the domain of a disc from \( \left\{{ x_1, x_2 }\right\} \to \left\{{ y_1, y_2 }\right\} \):
+
+![image_2021-02-23-12-18-15](figures/image_2021-02-23-12-18-15.png)
+
+We want to make a similar 2-fold cover like in the previous example, so we'll take the two rectangles bounding the arcs, then taking the rotation by \( \pi \) yields the cover:
+
+![image_2021-02-23-12-20-27](figures/image_2021-02-23-12-20-27.png)
+
+As before, we get a map to \( \operatorname{Sym}^2 \Sigma \):
+
+![image_2021-02-23-12-22-36](figures/image_2021-02-23-12-22-36.png)
+
+As a result, we again get \( \varphi(-i) = \left\{{ x_1, x_2 }\right\} \) and \( \varphi(+i) = \left\{{ y_1, y_2 }\right\} \).
+:::
+
+::: {.exercise title="?"}
+. Suppose \( x = \left\{{ x_1, \cdots, x_g }\right\} \) and \( y = \left\{{ y_1, \cdots, y_g }\right\} \) such that \( x_i \in \alpha_i \cap\beta_i \) and \( y_i \in \alpha_i \cap\beta_{ \sigma^{-1}(i)} \) for some permutation \( \sigma\in S_g \). Then for any \( \varphi\in \pi_2(x, y) \), show that
+\[
+  {{\partial}}\qty{{{\partial}}D( \varphi) \cap\alpha_i } = y_i - x_i
+  ,\]
+where the inner term is a 1-chain in \( \alpha_i \), and
+\[
+  {{\partial}}\qty{ {{\partial}}D( \varphi) \cap\beta_i } = x_i - y_{ \sigma(i) }
+  .\]
+:::
+
+::: {.remark}
+This will characterize the coefficients \( a_i \) for which discs exist. Next time we'll talk about holomorphic discs.
+:::
+
+# Thursday, February 25
+
+## Whitney Discs
+
+Recall that we discussed the domains of discs: for \( \varphi\in \varphi_2(x, y) \) we defined the 2-chain \( D( \varphi) = \sum_{i=1}^n a_i D_i \) where we've written
+\[ 
+\Phi \setminus\alpha\cup\beta = {\coprod}_{i=1}^m \overset{\circ}{D_i} 
+\]
+and \( a_i \) is the number of points in \( \operatorname{im}( \varphi) \cap L_{z_i} \) for \( z_i \in D_i \).
+
+::: {.exercise title="?"}
+For \( \varphi\in \pi_2(x, y) \), \( {{\partial}}D( \varphi) \) is a 1-chain in \( \alpha \cup\beta \). Then
+\[ 
+{ \left.{{ {{\partial}}D( \varphi )}} \right|_{{ \alpha}} } = \sum_{i=1}^g y_i - \sum_{i=1}^g x_i 
+{ \left.{{ {{\partial}}D( \varphi )}} \right|_{{ \beta}} } = \sum_{i=1}^g x_i - \sum_{i=1}^g y_i 
+\]
+where \( x_i, y_i \in \alpha_i \).
+:::
+
+::: {.corollary title="?"}
+For \( \varphi\in \pi_2(x, y) \), consider an intersection point \( w \) which labels 4 nearby regions with coefficients \( a,b,c,d \):
+
+![image_2021-02-25-11-28-01](figures/image_2021-02-25-11-28-01.png)
+
+Consider several cases:
+
+1.  \( w\not\in x \) and \( w\not\in y \): Then \( {{\partial}}\qty{ {{\partial}}{ \left.{{D( \varphi)}} \right|_{{ \alpha}} } } \not\ni w \). We can expand this out as
+    \[
+      D( \varphi) = a D_1 + bD_2 + c D_3 + dD_4 \\
+      {{\partial}}^2 D( \varphi) = {{\partial}}\qty{ a {{\partial}}D_1 } + {\cdots} 
+      .\]
+    Now restrict this to \( \alpha_i \) to yield
+    \[
+      {{\partial}}^2 D( \varphi) = ae_1 + be_2 -ce_2 -de_1
+      .\]
+    Checking coefficients of \( w \) contributes \( -aw + bw - cw -d(-w) \), and these should sum to zero. This yields \( a+c = b+d \), and similarly if \( w\int x \cap y \), this also yields \( a+c = b+d \).
+
+2.  \( w\in x \) and \( w\not \in y \) implies that \( a+c = b +d +1 \).
+
+3.  \( w\not\in x \) and \( w\in y \) implies \( a+c+1 = b+d \).
+:::
+
+::: {.remark}
+So if you want to check to see if some 2-chain could be the domain of a Whitney disc, this local condition can be checked, i.e. this is an obstruction to existence. It turns out that this is an if and only if condition.
+:::
+
+::: {.definition title="?"}
+A 2-chain \( A \coloneqq\sum_{i=1}^m a_i D_i \) **connects** \( x \) to \( y \) if and only if the following local linear conditions are satisfied:
+\[
+{{\partial}}^2 { \left.{{A}} \right|_{{ \alpha}} } &= y-x \\
+{{\partial}}^2 { \left.{{A}} \right|_{{ \beta}} } &= x-y \\
+.\]
+:::
+
+::: {.proposition title="?"}
+Suppose \( g>1 \). If a 2-chain \( A \) connects \( x \) to \( y \) then there exists a Whitney disc \( \varphi\in \pi_2(x, y) \) such that \( D( \varphi) = A \). If \( g>2 \), \( \varphi \) is uniquely determined by \( A \).
+:::
+
+::: {.remark}
+See proof in Osvath-Szabo paper.
+:::
+
+::: {.example title="?"}
+Think of the screen as a plane, and circled letters are handles attached out of the page according to their orientations. Consider the following diagram along with the indicated intersection points:
+
+![image_2021-02-25-11-45-11](figures/image_2021-02-25-11-45-11.png)
+
+Set the coefficients of the unlabeled regions to zero, and let \( x \coloneqq\left\{{ x_1, x_2}\right\} \) and \( y \coloneqq\left\{{ y_1, y_2 }\right\} \). We can check that if the following yellow region has coefficient 1, it can be the domain of a Whitney disc:
+
+![image_2021-02-25-11-47-15](figures/image_2021-02-25-11-47-15.png)
+
+This follows from checking the local conditions (there is a mnemonic involving the diagonal sums for the various cases).
+:::
+
+::: {.example title="?"}
+Consider a new diagram, changed by an isotopy (here: a "finger move"):
+
+![image_2021-02-25-11-52-12](figures/image_2021-02-25-11-52-12.png)
+
+Is there a Whitney disc connecting \( x \coloneqq\left\{{ x_1, x_2 }\right\} \xrightarrow{\varphi} y \coloneqq\left\{{ y_1, y_2 }\right\} \)? Checking the diagonals, all of the local conditions hold, so yes.
+:::
+
+::: {.exercise title="?"}
+Find the 3-manifold that these two diagrams represent.
+:::
+
+## Holomorphic Discs
+
+Ultimately these are what we want to define the differential in the chain complex.
+
+![image_2021-02-25-12-08-55](figures/image_2021-02-25-12-08-55.png)
+
+We'll set up a correspondence:
+\[
+\left\{{\substack{
+  (\text{Riemann surfaces } F, {\color{red} {{\partial}}_{ \alpha}}F, {\color{blue}{{\partial}}_{\beta}}F)
+  \xrightarrow{\pi_{\Sigma}} ( \Sigma, {\color{red} \alpha}, {\color{blue} \beta }) \\
+  {\big\Downarrow} \hspace{4em} {\scriptsize \text{$g{\hbox{-}}$fold branched cover $\pi_D$} } \\
+  (D, e_1, e_2) \\
+  {{\partial}}F = ({{\partial}}_{ \alpha} F) {\coprod}_{ {{\partial}}} ({{\partial}}_{ \beta} F) \\
+  \pi_D( {{\partial}}_{ \alpha} ) = e_1 \hspace {2em}
+  \pi_D( {{\partial}}_{ \beta} ) = e_2
+}}\right\}
+&\rightleftharpoons
+\left\{{\substack{
+\text{holomorphic }
+u: (D^2, e_1, e_2) \to (\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{ \alpha}, {\mathbb{T}}_{ \beta})
+  \text{}
+}}\right\}
+\]
+
+To do this, we define \( u(z) = \pi_{\Sigma}( \pi_D ^{-1}(z) ) \in \operatorname{Sym}^g(\Sigma) \). Check that if \( \pi_D, \pi_\Sigma \) are holomorphic, then \( u \) is holomorphic.
+
+```{=tex}
+\begin{tikzcd}
+    &&& {} \\
+    F && {\Sigma \times \operatorname{Sym}^{g-1}(\Sigma)} && \Sigma \\
+    \\
+    {D^2} && {\operatorname{Sym}^g(\Sigma)}
+    \arrow["{g{\hbox{-}}\text{fold branched cover}}", from=2-3, to=4-3]
+    \arrow["u"', from=4-1, to=4-3]
+    \arrow["{\pi_D: g{\hbox{-}}\text{fold branched cover}}"', color={rgb,255:red,214;green,92;blue,92}, from=2-1, to=4-1]
+    \arrow[color={rgb,255:red,214;green,92;blue,92}, from=2-1, to=2-3]
+    \arrow["{\pi_1}"', from=2-3, to=2-5]
+    \arrow["{\pi_\Sigma}"', curve={height=-24pt}, dashed, from=2-1, to=2-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwzLCJEXjIiXSxbMiwzLCJcXFN5bV5nKFxcU2lnbWEpIl0sWzIsMSwiXFxTaWdtYSBcXHRpbWVzIFxcU3ltXntnLTF9KFxcU2lnbWEpIl0sWzAsMSwiRiJdLFs0LDEsIlxcU2lnbWEiXSxbMywwXSxbMiwxLCJnXFxkYXNoXFx0ZXh0e2ZvbGQgYnJhbmNoZWQgY292ZXJ9Il0sWzAsMSwidSIsMl0sWzMsMCwiXFxwaV9EOiBnXFxkYXNoXFx0ZXh0e2ZvbGQgYnJhbmNoZWQgY292ZXJ9IiwyLHsiY29sb3VyIjpbMCw2MCw2MF19LFswLDYwLDYwLDFdXSxbMywyLCIiLDAseyJjb2xvdXIiOlswLDYwLDYwXX1dLFsyLDQsIlxccGlfMSIsMl0sWzMsNCwiXFxwaV9cXFNpZ21hIiwyLHsiY3VydmUiOi00LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+Then if \( u \) is holomorphic, it can be shown that \( \pi_D, \pi_{\Sigma} \) are also holomorphic. Given \( \varphi\in \pi_2(x, y) \), define \( \mathcal{M}( \varphi) \) to be the moduli space of holomorphic discs connecting \( x \) to \( y \) in the same homotopy class as \( \varphi \) (i.e. such discs *represent* \( \phi \)). After perturbing the complex structure \( \operatorname{Sym}^g(j) \) to make it generic, \( \mathcal{M}( \varphi) \) will be smooth. We'll have a notion of dimension, the *Maslov index* \( \mu( \varphi) \), which is the expected dimension of \( \mathcal{M}( \varphi) \). There will be an \( {\mathbb{R}}{\hbox{-}} \)action on \( \mathcal{M}( \varphi) \), where we remember the biholomorphism between the disc and the vertical strip:
+
+![image_2021-02-25-12-19-15](figures/image_2021-02-25-12-19-15.png)
+
+We'll define \( \widehat{ \mathcal{M}}( \varphi) \coloneqq\mathcal{M}( \varphi) / {\mathbb{R}} \). The chain complex will be defined as
+\[
+\operatorname{HF}( \Sigma, \alpha, \beta) &\coloneqq\bigoplus_{x \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} } {\mathbb{Z}}/2 \left\langle{ x }\right\rangle 
+\\
+{{\partial}}x &\coloneqq\sum_{y\in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} } \sum _{ \varphi\in \pi_2(x, y) ?} \# \widehat{ \mathcal{M}}(\varphi)  
+.\]
+
+We'll need
+
+-   Check that \( {{\partial}} \) is well-defined and \( {{\partial}}^2=0 \),
+
+-   Check independence of choices, e.g. the Heegard the diagram, the complex structure, the perturbations of \( \operatorname{Sym}^g(j) \), etc.
+
+::: {.question}
+This takes a lot of work! Is the homology of this complex interesting? Is this stronger than singular homology?
+:::
+
+::: {.answer}
+Let \( M \in \operatorname{ZHS}^3 \), so the homology doesn't distinguish \( M \) from a sphere and \( H_*(M; {\mathbb{Z}}) \cong H_*(S^3; {\mathbb{Z}}) \). It turns out that \( H_*( \operatorname{HF}(M^3)) \cong H_*(\operatorname{HF}(S^3)) \), so the answer is no!
+:::
+
+::: {.remark}
+Osvath-Szabo picked a basepoint \( z\in \Sigma\setminus\qty{ \alpha\cup\beta} \) and work with *pointed* Heegard diagrams \( (\Sigma, \alpha, \beta, z) \). Perturb the differential to obtain
+\[
+\tilde {{\partial}}x \coloneqq\sum_{y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} } 
+\sum_{ \substack{ 
+\varphi \in \pi_2(x, y), \\
+\mu( \varphi) = 0, \\
+n_z( \varphi) = 0
+}} 
+\# \widehat{\mathcal{M}}(\varphi) y 
+.\]
+where \( n_z \) denotes the coefficient of \( \phi \) at the basepoint \( z \), i.e. the number of intersection points \( \# (\operatorname{im}\varphi \cap L_z) \).
+
+Defining \( \widehat{\operatorname{HF}} \) as the same chain complex with the new differential now gets interesting! We'll define \( \widehat{\operatorname{HF}} \) as the homology of this new complex.
+:::
+
+# The Heegard-Floer Chain Complex & Maslov Index (Tuesday, March 02)
+
+## Pointed Heegard Diagrams
+
+::: {.remark}
+Last time: to strengthen the homology theory, take a **pointed** Heegard diagram \( (\Sigma, \alpha, \beta, z \in \Sigma\setminus\alpha\cup\beta \) and define a new chain complex
+\[
+\widehat{\operatorname{HF}}( \Sigma, \alpha, \beta, z) 
+&= \bigoplus_{ x\in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta} {\mathbb{Z}}/2 \left\langle{ x }\right\rangle \\
+{{\partial}}x &= \sum_{y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta} 
+\sum_{ \substack{ 
+  \varphi\in \pi_2(x, y), \\
+  \mu( \varphi) = 1, \\
+  n_z(\varphi) = 0
+}} \# \widehat{ \mathcal{M}}(\varphi) y 
+.\]
+Note that \( n_z( \varphi) = 0 \) means that the coefficient attached to the region containing \( z \) is zero. Recall that we had diagram moves, how do they translate to the pointed setting?
+
+-   Allow *pointed isotopies*, which are isotopies disjoint from \( z \).
+-   Allow *pointed handleslides*, where now the bounded pair-of-pants is disjoint from \( z \):
+
+![image_2021-03-02-11-18-40](figures/image_2021-03-02-11-18-40.png)
+
+-   Allow isotopies of the base point.
+:::
+
+::: {.lemma title="?"}
+Any two pointed Heegard diagrams for a 3-manifold \( M^3 \) can be connected by a sequence of the following moves:
+
+-   Stabilization or destabilization,
+-   Pointed isotopy,
+-   Pointed handleslides,
+-   Isotopes of the basepoint away from \( \alpha, \beta \).
+:::
+
+::: {.exercise title="?"}
+Prove this lemma.
+:::
+
+::: {.example title="$S^3$"}
+Here is the simplest Heegard diagram from \( S^3 \):
+
+![image_2021-03-02-11-22-54](figures/image_2021-03-02-11-22-54.png)
+
+Here there is just one one intersection point, so \( \widehat{\operatorname{HF}} = {\mathbb{Z}}/2\left\langle{ x }\right\rangle \) is 1-dimensional, and \( {{\partial}}x = 0 \). So \( \widehat{\operatorname{HF}} = {\mathbb{Z}}/2 \).
+:::
+
+::: {.example title="$\\RP^3$"}
+We can write \( {\mathbb{RP}}^3 = L(2 ,1) \) and produce the following Heegard diagram:
+
+![image_2021-03-02-11-38-42](figures/image_2021-03-02-11-38-42.png)
+
+Is there a disc between \( x \) and \( y \)? We can check the obstruction \( \varepsilon(x, y) \) by labeling the generators in homology and tracing the following green path:
+
+![image_2021-03-02-11-40-13](figures/image_2021-03-02-11-40-13.png)
+
+We obtain
+\[
+\varepsilon(x, y) = [B] \in { H_1(T^2) \over \left\langle{ [\alpha] = [A], [\beta] = [A + 2B] }\right\rangle }
+.\]
+In this quotient, \( [B] \neq 0 \), and this quotient is \( {\mathbb{Z}}/2 = \left\langle{ [B] }\right\rangle \) so that \( 2B = 0 \). So there are no disks in \( \pi_2(x, y) \), making \( {{\partial}}x = {{\partial}}y = 0 \). So \( \widehat{HF}({\mathbb{RP}}^3) = {\mathbb{Z}}/2 \oplus {\mathbb{Z}}/2 \).
+:::
+
+::: {.exercise title="?"}
+Compute \( \widehat{\operatorname{HF}}(L(p, 1)) \). Use that \( \varepsilon(x, y) + \varepsilon(y, z) = \varepsilon(x, z) \).
+:::
+
+## Maslov Index
+
+::: {.remark}
+Recall that we had a natural concatenation operation on Whitney discs:
+\[
+\ast: \pi_2(x, y) \times\pi_2(y, z) \to \pi_2(x, z)
+,\]
+using the identification of these discs with paths in the path space and using concatenation of paths there. Note that the domains of concatenations are given by \( D( \varphi_1 \ast \varphi_2) = D( \varphi_1) + D( \varphi_2) \), since this amounts to adding algebraic intersection numbers.
+
+There is an inverse
+\[
+\pi_2(x, y) &\to \pi_2(y, x)\\
+\varphi &\mapsto \varphi^{-1}(s, t) \coloneqq\phi(s, -t)
+,\]
+which reverses the parameterization on \( (s, t) \in I \times{\mathbb{R}} \) and runs the path backward. Here \( D( \varphi^{-1}) = -D( \varphi) \).
+
+There is also a *sphere addition*
+\[
+\pi_2( \operatorname{Sym}^g( \Sigma), x) \times\pi_2(x, y) &\to \pi_2(x, y) \\
+(\Omega, \varphi) &\mapsto \Omega \ast \varphi
+.\]
+
+![Maps entire boundary to a point, yielding a sphere.](figures/image_2021-03-02-12-04-06.png)
+
+Note that for \( g\geq 2 \), the \( \pi_2 \) on the left-hand side is isomorphic to \( {\mathbb{Z}} \), which came from quotienting by the hyperelliptic involution several lectures ago. Writing the positive generator as \( S \), we have \( \Omega = kS \) for some \( k\in {\mathbb{Z}} \).
+
+::: {.exercise title="?"}
+Show that
+\[
+D(S) = \sum_{i=1}^m D_i = [ \Sigma]
+.\]
+:::
+:::
+
+::: {.proposition title="?"}
+There exists a function \( \mu: \pi_2(x, y) \to {\mathbb{Z}} \) called the **Maslov index** satisfying:
+
+1.  Additivity: \( \mu( \varphi_1 \ast \varphi_2) = \mu( \varphi_1) + \mu (\varphi_2) \).
+
+2.  Invertibility: \( \mu( \varphi^{-1}) = - \mu( \varphi) \).
+
+3.  Sphere addition: \( \mu( kS \ast \varphi) = \mu( \varphi) + 2k \) where \( k\in {\mathbb{Z}} \) and \( S\in \pi_2( \operatorname{Sym}^g( \Sigma ) ) \).
+
+4.  If \( \varphi\in \pi_2(x, x) \) is constant, then \( \mu( \varphi) = 0 \).
+
+Note that \( 2\implies 4 \).
+:::
+
+::: {.remark}
+The Maslov index is the "expected" dimension of
+\[
+\mathcal{M}( \varphi) = \left\{{ 
+u: I \to {\mathbb{R}}\to \operatorname{Sym}^g( \Sigma)
+{~\mathrel{\Big|}~}
+[u] = \varphi 
+\,du\circ i = J \circ \,du
+}\right\} 
+\]
+where \( i \) is the standard complex structure on the strip and \( J \) will be a perturbation of the complex structure over the Heegard surface. This will yield an operator
+\[
+\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J: B &\to \mathcal{L} \\
+u & \mapsto du \circ i - J \circ du 
+\]
+for some appropriate infinite dimensional spaces. The elements of \( \mathcal{M}( \varphi ) \) will be in the kernel of this operator. We want 0 to be a **regular value** (surjective derivative) for \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J \), since in finite dimensions the inverse image would be a smooth manifold. In the infinite dimensional setting, we'll have by the inverse function theorem that \( \mathcal{M} (\phi) = \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^{-1}_J(0) \) will be a smooth manifold. We'll want the following derivative to be surjective:
+\[
+D_u \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J: T_u B \to T_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J u} \mathcal{L} 
+\]
+for all \( u \in \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^{-1}_J(0) \), which is referred to as **transversality** of the operator, and can be made to hold by perturbing the complex structure. Since the dimension of a manifold is the dimension of the tangent spaces, we'll have \( \mathcal{M}( \varphi) \) smooth of dimension equal to \( \dim \ker D_u \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J \) for any \( u \in \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J^{-1}(0) \). This will be an order 2 elliptic operator (or more generally a Fredholm operator), for which we have a notion of index:
+\[
+\mathop{\mathrm{Ind}}( D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J) = \dim( \ker D\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J) - \dim (\operatorname{coker}D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
+.\]
+If surjectivity holds, the cokernel will be zero, so it will suffice to compute the dimension of the kernel to get the dimension of the moduli space. The index of this operator will be the Maslov index.
+:::
+
+::: {.remark}
+Take a look at *Gromov compactness* again!
 :::
 
 [^1]: See Sarkour-Wang
