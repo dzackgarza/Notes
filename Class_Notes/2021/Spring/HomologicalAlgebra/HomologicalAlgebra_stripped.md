@@ -1162,11 +1162,15 @@ So we can convert statements about quasi-isomorphisms of complexes into exactnes
 ## Ch. 2: Derived Functors
 
 ::: {.remark}
-Setup: fix \( M\in {R{\hbox{-}}\mathbf{Mod}} \), where \( R \) is a ring with unit. Note that by an upcoming exercise, \( {\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \) is a *left-exact* functor, but not in general right-exact: given a SES \( 0\to A\to B\to C\to 0 \in \operatorname{Ch}({\mathbf{Mod}{\hbox{-}}R}) \), there is an exact sequence:
+Setup: fix \( M\in {R{\hbox{-}}\mathbf{Mod}} \), where \( R \) is a ring with unit. Note that by an upcoming exercise, \( {\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathbf{Mod}{\hbox{-}}R}\to {\mathbf{Ab}} \) is a *left-exact* functor, but not in general right-exact: given a SES
+\[
+0\to A \xrightarrow{f}  B \xrightarrow{g}  C\to 0 && \in \operatorname{Ch}({\mathbf{Mod}{\hbox{-}}R})
+,\]
+there is an exact sequence:
 
 ```{=tex}
 \begin{tikzcd}
-    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)}
+    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, B)} && {{\operatorname{Hom}}_R(M, C)}
     \arrow["{f_* = f\circ({\,\cdot\,})}", from=1-3, to=1-5]
     \arrow["{g_* = g\circ({\,\cdot\,})}", from=1-5, to=1-7]
     \arrow[from=1-1, to=1-3]
@@ -1178,7 +1182,7 @@ However, this is not generally surjective: not every \( M\to C \) is given by co
 
 ```{=tex}
 \begin{tikzcd}
-    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} \\
+    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, B)} && {{\operatorname{Hom}}_R(M, C)} \\
     \\
     && {F^1(A)} && {F^1(B)} && {F^1(C)} \\
     \\
@@ -1199,7 +1203,7 @@ It turns out such functors exist and are denoted \( F^n({\,\cdot\,}) \coloneqq\o
 
 ```{=tex}
 \begin{tikzcd}
-    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, A)} \\
+    0 && {{\operatorname{Hom}}_R(M, A)} && {{\operatorname{Hom}}_R(M, B)} && {{\operatorname{Hom}}_R(M, C)} \\
     \\
     && {\operatorname{Ext}_R^1(A)} && {\operatorname{Ext}_R^1(B)} && {\operatorname{Ext}_R^1(C)} \\
     \\
@@ -3528,6 +3532,720 @@ d^v( b_{-j, j+1}) + d^h( b_{-j+1, j}) = c_{-j, j}
 which will make \( c \) a boundary.
 :::
 
+# Friday, February 26
+
+Today: trying to prove acyclic assembly lemma
+
+::: {.proof title="Of acyclic assembly lemma"}
+We reduced to proving one case, where \( C \) is a double complex upper half-plane with exact columns \( \implies \mathrm{\operatorname{Tot}}^{\prod}(C) \) is acyclic. It's enough to check in degree 0 by shifting. Fix a 0-cycle \( \mathbf{c} = (\cdots, c_{-j, j}, \cdots, c_{-2, 2}, c_{-1, 1}, c_{0, 0}) \). Find \( b \in \prod_{j\leq 0}C_{-j, j+1} \)\$ such that \( d(b) = c \), so \( c_{-j, j} = d^v(b_{-j, j+1}) + d^h(b_{-j+1, j}) \).
+
+```{=tex}
+\begin{tikzcd}
+    \textcolor{rgb,255:red,214;green,92;blue,92}{b_{-j, j+1}} \\
+    {c_{-j, j}} & {b_{-j+1, j}} \\
+    0 && {c_{-j+1, j-1}} & {b_{-j+2, j-1}} \\
+    &&&& \ddots \\
+    &&&&& {c_{-2, 2}} & {b_{-1, 2}} \\
+    &&&&&& {c_{-1, 1}} & {b_{0, 1}} \\
+    &&&&&&& {c_{0, 0}} & \textcolor{rgb,255:red,92;green,214;blue,92}{b_{1,0} = 0} \\
+    \bullet &&&&&&&&&& \bullet \\
+    &&&&&&& 0
+    \arrow[dashed, equals, from=8-1, to=8-11]
+    \arrow[from=7-8, to=9-8]
+    \arrow["{d^v}", from=2-1, to=3-1]
+    \arrow["{d^h}"', from=3-3, to=3-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzAsMCwiYl97LWosIGorMX0iLFswLDYwLDYwLDFdXSxbMCwxLCJjX3staiwgan0iXSxbMSwxLCJiX3staisxLCBqfSJdLFsyLDIsImNfey1qKzEsIGotMX0iXSxbMywyLCJiX3staisyLCBqLTF9Il0sWzQsMywiXFxkZG90cyJdLFs1LDQsImNfey0yLCAyfSJdLFs2LDQsImJfey0xLCAyfSJdLFs2LDUsImNfey0xLCAxfSJdLFs3LDUsImJfezAsIDF9Il0sWzcsNiwiY197MCwgMH0iXSxbOCw2LCJiX3sxLDB9ID0gMCIsWzEyMCw2MCw2MCwxXV0sWzAsNywiXFxidWxsZXQiXSxbMTAsNywiXFxidWxsZXQiXSxbNyw4LCIwIl0sWzAsMiwiMCJdLFsxMiwxMywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTAsMTRdLFsxLDE1LCJkXnYiXSxbMywxNSwiZF5oIiwyXV0=)
+
+Construct by induction on \( j \): set \( b_{1, 0} = 0 \) and need \( c_{0, 0} = d^v(b_{0, 1}) \). Since \( d^vc_{0, 0} =0 \) and the columns are exact, we can lift this to some \( b_{0, 1} \) such that \( d^v b_{0, 1} = c_{0, 0} \). Inductively, we want \( d^v(b_{-j, j+1}) = c_{j, -j} - d^h(b_{-j+1, j}) \). Then
+\[
+d^v( c_{j, -j} - d^h b_{-j+1, j} ) 
+&= d^v c_{j, -j} + d^h d^v b_{-j+1, j} \\
+&= d^v c_{j, -j} + d^h\qty{ c_{-j+1, j-1} - d^h b_{-j+2, j-1} } \\
+&= d^v c_{j. -j} + d^h c_{-j+1, j-1} \\
+&= 0 \text{ since } d^{\prod} = 0
+.\]
+By exactness of column \( j \), we can lift to \( b_{-j, j+1} \), making \( c \) a boundary.
+:::
+
+::: {.remark}
+This proves that \( {\,\cdot\,}\otimes_R{\,\cdot\,} \) is balanced, i.e. taking the derived functors in either variable with the same pair \( (A, B) \) results in the same thing. To prove a similar result for hom and ext, we want to consider \( {\operatorname{Hom}}_R(A, {\,\cdot\,}) \) which requires injective resolutions, and \( {\operatorname{Hom}}_R({\,\cdot\,}, B) \) is contravariant and left-exact, so we take an injective resolution in \( \mathcal{C}^{\operatorname{op}} \), i.e. a projective resolution in \( \mathcal{C} \). So take a projective resolution \( P\to A \) and an injective resolution \( B\to I \) and make a first quadrant double complex \( C_{i, j} \coloneqq{\operatorname{Hom}}(P_i, I^j) \) for \( i, j\geq 0 \). Define the differentials using the following sign convention:
+
+```{=tex}
+\begin{tikzcd}
+    \textcolor{rgb,255:red,92;green,92;blue,214}{(-1)^{i+j+1} d_I f(p)} & {{\operatorname{Hom}}(P_i, I^{j+1})} \\
+    & {{\operatorname{Hom}}(P_i, I^{j})} && {{\operatorname{Hom}}(P_{i+1}, I^{j})} \\
+    \textcolor{rgb,255:red,92;green,92;blue,214}{f(p)} &&& \textcolor{rgb,255:red,92;green,92;blue,214}{f(d^P p)}
+    \arrow["{d^v}", from=2-2, to=1-2]
+    \arrow["{d^h}"', from=2-2, to=2-4]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, maps to, from=3-1, to=3-4]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, maps to, from=3-1, to=1-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMSwwLCJcXEhvbShQX2ksIElee2orMX0pIl0sWzEsMSwiXFxIb20oUF9pLCBJXntqfSkiXSxbMywxLCJcXEhvbShQX3tpKzF9LCBJXntqfSkiXSxbMywyLCJmKGReUCBwKSIsWzI0MCw2MCw2MCwxXV0sWzAsMiwiZihwKSIsWzI0MCw2MCw2MCwxXV0sWzAsMCwiKC0xKV57aStqKzF9IGRfSSBmKHApIixbMjQwLDYwLDYwLDFdXSxbMSwwLCJkXnYiXSxbMSwyLCJkXmgiLDJdLFs0LDMsIiIsMix7ImNvbG91ciI6WzI0MCw2MCw2MF0sInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbNCw1LCIiLDAseyJjb2xvdXIiOlsyNDAsNjAsNjBdLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV1d)
+
+Now applying a dual argument as the one for tor yields a "dual acyclic assembly lemma".
+:::
+
+::: {.remark}
+We'll skip the first 3 sections of chapter 3. It's worth looking at 3.2 on tor and flatness. There's a slightly circular statement that projective implies flat in the book, since we used this to show that certain rows were exact, so refer to a good algebra book for alternative proofs.
+:::
+
+## \( \operatorname{Ext}^1 \) and Extensions {#operatornameext1-and-extensions}
+
+::: {.definition title="Module Extensions"}
+Let \( A, B\in {\mathbf{Mod}{\hbox{-}}R} \), then an **extension of \( A \) by \( B \)** is a SES
+\[
+\xi: 0 \to B\to X\to A\to 0
+.\]
+
+![image_2021-02-26-09-41-27](figures/image_2021-02-26-09-41-27.png)
+
+We say two extensions \( \xi, \xi' \) are equivalent and write \( \xi \sim \xi' \) iff
+
+```{=tex}
+\begin{tikzcd}
+    0 & B & X & A & 0 \\
+    \\
+    0 & B & {X'} & A & 0
+    \arrow["\exists", dashed, from=1-3, to=3-3]
+    \arrow[equals, from=1-4, to=3-4]
+    \arrow[equals, from=1-2, to=3-2]
+    \arrow[from=1-1, to=1-2]
+    \arrow[from=1-2, to=1-3]
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow[from=3-1, to=3-2]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-2, to=3-3]
+    \arrow[from=3-4, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsxLDAsIkIiXSxbMiwwLCJYIl0sWzMsMCwiQSJdLFs0LDAsIjAiXSxbMCwyLCIwIl0sWzIsMiwiWCciXSxbMSwyLCJCIl0sWzMsMiwiQSJdLFs0LDIsIjAiXSxbMiw2LCJcXGV4aXN0cyIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDgsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSw3LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMV0sWzEsMl0sWzIsM10sWzMsNF0sWzUsN10sWzYsOF0sWzcsNl0sWzgsOV1d)
+
+An extension is **split** if and only if it is equivalent to
+\[
+0 \to B \overset{\iota}\hookrightarrow A \oplus B \to A 
+  \xrightarrow[]{\pi}\mathrel{\mkern-14mu}\rightarrow
+ A \to 0
+.\]
+:::
+
+::: {.warnings}
+Note that a SES as above is related to \( \operatorname{Ext}(A, B) \), which reverses the order!
+:::
+
+::: {.lemma title="?"}
+If \( \operatorname{Ext}^1(A, B) = 0 \) then every extension of \( A \) by \( B \) is split.
+:::
+
+::: {.warnings}
+There are lots of corrections needed to this proof in Weibel!
+:::
+
+::: {.proof title="of lemma"}
+Given an extension \( \xi \), look at the LES associated to \( {\operatorname{Hom}}^*({\,\cdot\,}, B) \):
+
+```{=tex}
+\begin{tikzcd}
+    && \cdots && {\operatorname{Ext}^1(A, B)} \\
+    \\
+    {{\operatorname{Hom}}(B, B)} && {{\operatorname{Hom}}(X, B)} && {{\operatorname{Hom}}(A, B)} \\
+    \textcolor{rgb,255:red,92;green,214;blue,92}{\one_B} && \textcolor{rgb,255:red,92;green,214;blue,92}{\sigma}
+    \arrow[from=3-5, to=3-3]
+    \arrow[from=3-3, to=3-1]
+    \arrow[from=3-1, to=1-5, out=180, in=0]
+    \arrow[from=1-5, to=1-3]
+    \arrow[color={rgb,255:red,92;green,214;blue,92}, maps to, from=4-3, to=4-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwwLCJcXGNkb3RzIl0sWzQsMCwiXFxFeHReMShBLCBCKSJdLFswLDIsIlxcSG9tKEIsIEIpIl0sWzIsMiwiXFxIb20oWCwgQikiXSxbNCwyLCJcXEhvbShBLCBCKSJdLFsyLDMsIlxcc2lnbWEiLFsxMjAsNjAsNjAsMV1dLFswLDMsIlxcb25lX0IiLFsxMjAsNjAsNjAsMV1dLFs0LDNdLFszLDJdLFsyLDFdLFsxLDBdLFs1LDYsIiIsMCx7ImNvbG91ciI6WzEyMCw2MCw2MF0sInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XV0=)
+
+However, this gives a splitting:
+
+```{=tex}
+\begin{tikzcd}
+    & \textcolor{rgb,255:red,92;green,214;blue,92}{B} \\
+    \\
+    0 & B & X & A & 0 \\
+    \\
+    0 & B & {X'} & A & 0
+    \arrow["\exists", dashed, from=3-3, to=5-3]
+    \arrow[equals, from=3-4, to=5-4]
+    \arrow[equals, from=3-2, to=5-2]
+    \arrow[from=3-1, to=3-2]
+    \arrow[from=3-2, to=3-3]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=5-1, to=5-2]
+    \arrow[from=5-3, to=5-4]
+    \arrow[from=5-2, to=5-3]
+    \arrow[from=5-4, to=5-5]
+    \arrow["{\one_B}", color={rgb,255:red,92;green,214;blue,92}, from=3-2, to=1-2]
+    \arrow["{\exists \sigma}", color={rgb,255:red,92;green,214;blue,92}, dashed, from=3-3, to=1-2]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzAsMiwiMCJdLFsxLDIsIkIiXSxbMiwyLCJYIl0sWzMsMiwiQSJdLFs0LDIsIjAiXSxbMCw0LCIwIl0sWzIsNCwiWCciXSxbMSw0LCJCIl0sWzMsNCwiQSJdLFs0LDQsIjAiXSxbMSwwLCJCIixbMTIwLDYwLDYwLDFdXSxbMiw2LCJcXGV4aXN0cyIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDgsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSw3LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMV0sWzEsMl0sWzIsM10sWzMsNF0sWzUsN10sWzYsOF0sWzcsNl0sWzgsOV0sWzEsMTAsIlxcb25lX0IiLDAseyJjb2xvdXIiOlsxMjAsNjAsNjBdfSxbMTIwLDYwLDYwLDFdXSxbMiwxMCwiXFxleGlzdHMgXFxzaWdtYSIsMCx7ImNvbG91ciI6WzEyMCw2MCw2MF0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX0sWzEyMCw2MCw2MCwxXV1d)
+
+Todo: label \( (X, B) \to (B, B) \) as \( f_* \).
+
+This is one of the many equivalent criteria for a SES of modules to be split.
+:::
+
+::: {.remark}
+More generally, given \( \xi \), let \( \Theta(\xi) \coloneqq{{\partial}}(\one_B) \in \operatorname{Ext}^1(A, B) \). Thus TFAE:
+
+-   \( \xi \) is split
+-   \( \one-B \) lifts to some \( \sigma\in {\operatorname{Hom}}(X, B) \)
+-   \( \one_B \in \operatorname{im}f_* = \ker {{\partial}} \)
+-   \( \Theta(\xi) = 0 \), even if \( \operatorname{Ext}^1(A, B) \neq 0 \).
+
+Then \( \Theta(\xi) \) is an *obstruction* to \( \xi \) being split.
+:::
+
+::: {.remark}
+If \( \xi'\sim \xi \) then \( {{\partial}}'(\one_B) = {{\partial}}(\one_B)\in \operatorname{Ext}^1(A, B) \) by naturality of the connecting morphisms. So equivalent extensions have the same obstruction, i.e. \( \Theta \) only depends only on the equivalence class \( [\xi] \) of the SES.
+:::
+
+::: {.theorem title="?"}
+Given \( A, B\in {\mathbf{Mod}{\hbox{-}}R} \) (or an abelian category with enough projectives and injectives), there is a correspondence
+\[
+\left\{{\substack{
+  0 \to B \to X\to A \to 0
+}}\right\}_{/\sim}
+\mathrel{\operatorname*{\rightleftharpoons}_{\Psi}^{\Theta}}
+\operatorname{Ext}^1(A, B)
+\]
+Note that this is a bijection of sets, but we'll upgrade it to a bijection of abelian groups.
+:::
+
+# Monday, March 01
+
+Last time: we looked at group extensions. Given \( \xi: 0\to B\to X \to A\to 0 \), we had a canonical element in \( \operatorname{Ext}^1(A, B) \), namely \( \Theta(\xi) = \delta(\one_B) \). This only depends on the equivalence class of \( \xi \).
+
+::: {.theorem title="?"}
+Given \( A, B\in {\mathbf{Mod}{\hbox{-}}R} \), there is a bijection
+\[
+\left\{{\substack{
+  \text{Extensions of $A$ by $B$}
+}}\right\}
+\mathrel{\operatorname*{\rightleftharpoons}_{\Phi}^{\Theta}}
+\operatorname{Ext}_R^1(A, B)
+\]
+:::
+
+::: {.proof title="?"}
+```{=tex}
+\envlist
+```
+::: {.claim}
+\( \Theta \) is surjective.
+:::
+
+Fix a SES
+\[
+0 \to M \xrightarrow{j} P \xrightarrow{\pi} A \to 0 
+\]
+with \( P \) projective, and take the LES resulting from applying \( {\operatorname{Hom}}({\,\cdot\,}, B) \):
+
+```{=tex}
+\begin{tikzcd}
+    0 \\
+    {{\operatorname{Hom}}(A, B)} & {{\operatorname{Hom}}(P, B)} & {{\operatorname{Hom}}(M, B)} \\
+    \\
+    {\operatorname{Ext}^1(A, B)} & {\operatorname{Ext}^1(P, B) = 0} \\
+    x
+    \arrow[from=2-1, to=2-2]
+    \arrow[from=2-2, to=2-3]
+    \arrow["{{\partial}}", from=2-3, to=4-1, out=0, in=180]
+    \arrow[from=4-1, to=4-2]
+    \arrow[from=1-1, to=2-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwxLCJcXEhvbShBLCBCKSJdLFsxLDEsIlxcSG9tKFAsIEIpIl0sWzIsMSwiXFxIb20oTSwgQikiXSxbMCwzLCJcXEV4dF4xKEEsIEIpIl0sWzEsMywiXFxFeHReMShQLCBCKSA9IDAiXSxbMCw0LCJ4Il0sWzAsMCwiMCJdLFswLDFdLFsxLDJdLFsyLDMsIlxcYmQiXSxbMyw0XSxbNiwwXV0=)
+
+Letting \( x \in \operatorname{Ext}^1(A, B) \) and choose \( \beta\in {\operatorname{Hom}}(M, B) \) with \( {{\partial}}\beta = x \) using that \( P \) is projective and thus \( \operatorname{Ext}^1(P, B) \) vanishes. Now let \( X \) be the **pushout** of \( j: M\to P \) and \( \beta: M\to B \). Note that we can apply the universal property of cokernels to get a map of the following form:
+
+```{=tex}
+\begin{tikzcd}
+    M && {P\oplus B} && {X = \operatorname{coker}g} && 0 \\
+    \\
+    && A
+    \arrow["{g = (j, -\beta)}", from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow["{\pi \oplus 0}", from=1-3, to=3-3]
+    \arrow[from=1-5, to=1-7]
+    \arrow["{\therefore 0}"', dotted, from=1-1, to=3-3]
+    \arrow["{\exists ! \mu}", dashed, from=1-5, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJNIl0sWzIsMCwiUFxcb3BsdXMgQiJdLFs0LDAsIlggPSBcXGNva2VyIGciXSxbMiwyLCJBIl0sWzYsMCwiMCJdLFswLDEsImcgPSAoaiwgLVxcYmV0YSkiXSxbMSwyXSxbMSwzLCJcXHBpIFxcb3BsdXMgMCJdLFsyLDRdLFswLDMsIlxcdGhlcmVmb3JlIDAiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMiwzLCJcXGV4aXN0cyAhIFxcbXUiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+Taking the pushout yields a diagram:
+
+```{=tex}
+\begin{tikzcd}
+    0 && M && P && A && 0 \\
+    \\
+    0 && B && X && A && 0
+    \arrow[from=1-1, to=1-3]
+    \arrow["j"', from=1-3, to=1-5]
+    \arrow["\pi"', from=1-5, to=1-7]
+    \arrow[from=3-1, to=3-3]
+    \arrow["\iota"', from=3-3, to=3-5]
+    \arrow["\mu"', from=3-5, to=3-7]
+    \arrow[from=1-1, to=3-1]
+    \arrow["\beta"', from=1-3, to=3-3]
+    \arrow["\sigma"{description}, from=1-5, to=3-5]
+    \arrow[equals, from=1-7, to=3-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=3-7, to=3-9]
+    \arrow[from=1-9, to=3-9]
+    \arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=3-5, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFswLDIsIjAiXSxbMiwwLCJNIl0sWzIsMiwiQiJdLFs0LDIsIlgiXSxbNCwwLCJQIl0sWzYsMCwiQSJdLFs2LDIsIkEiXSxbOCwwLCIwIl0sWzgsMiwiMCJdLFswLDJdLFsyLDUsImoiLDJdLFs1LDYsIlxccGkiLDJdLFsxLDNdLFszLDQsIlxcaW90YSIsMl0sWzQsNywiXFxtdSIsMl0sWzAsMV0sWzIsMywiXFxiZXRhIiwyXSxbNSw0LCJcXHNpZ21hIiwxXSxbNiw3LCIiLDEseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsOF0sWzcsOV0sWzgsOV0sWzQsMiwiIiwyLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV1d)
+
+::: {.exercise title="?"}
+Check that this diagram commutes and that the new row is exact.
+:::
+
+Taking the LES for \( {\operatorname{Hom}}({\,\cdot\,}, B) \) yields
+
+```{=tex}
+\begin{tikzcd}
+    &&&& \textcolor{rgb,255:red,92;green,92;blue,214}{\beta} && \textcolor{rgb,255:red,92;green,92;blue,214}{x} \\
+    \cdots && {{\operatorname{Hom}}(P, B)} && {{\operatorname{Hom}}(P, B)} && {\operatorname{Ext}^1(A, B)} \\
+    \\
+    \cdots && {{\operatorname{Hom}}(X, B)} && {{\operatorname{Hom}}(B, B)} && {\operatorname{Ext}^1(A, B)} \\
+    &&&& \textcolor{rgb,255:red,92;green,92;blue,214}{\one_B} && \textcolor{rgb,255:red,92;green,92;blue,214}{\Theta(\xi)}
+    \arrow[from=2-1, to=2-3]
+    \arrow[from=2-3, to=2-5]
+    \arrow[from=4-1, to=4-3]
+    \arrow[from=4-3, to=4-5]
+    \arrow[from=2-5, to=2-7]
+    \arrow[from=4-5, to=4-7]
+    \arrow[no head, from=2-7, to=4-7]
+    \arrow["{\beta_*}"{description}, from=4-5, to=2-5]
+    \arrow["{\sigma_*}"', from=4-3, to=2-3]
+    \arrow["{{\partial}}", color={rgb,255:red,92;green,92;blue,214}, maps to, from=5-5, to=5-7]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=-30pt}, maps to, from=1-5, to=5-5]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, maps to, from=1-5, to=1-7]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=-30pt}, dashed, maps to, from=1-7, to=5-7]
+\end{tikzcd}
+```
+> \( (*) \) [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzIsMSwiXFxIb20oUCwgQikiXSxbNCwxLCJcXEhvbShQLCBCKSJdLFswLDEsIlxcY2RvdHMiXSxbNiwxLCJcXEV4dF4xKEEsIEIpIl0sWzIsMywiXFxIb20oWCwgQikiXSxbNCwzLCJcXEhvbShCLCBCKSJdLFs2LDMsIlxcRXh0XjEoQSwgQikiXSxbMCwzLCJcXGNkb3RzIl0sWzQsMCwiXFxiZXRhIixbMjQwLDYwLDYwLDFdXSxbNiwwLCJ4IixbMjQwLDYwLDYwLDFdXSxbNCw0LCJcXG9uZV9CIixbMjQwLDYwLDYwLDFdXSxbNiw0LCJcXFRoZXRhKFxceGkpIixbMjQwLDYwLDYwLDFdXSxbMiwwXSxbMCwxXSxbNyw0XSxbNCw1XSxbMSwzXSxbNSw2XSxbMyw2LCIiLDEseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzUsMSwiXFxiZXRhXyoiLDFdLFs0LDAsIlxcc2lnbWFfKiIsMl0sWzEwLDExLCJcXGJkIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX0sWzI0MCw2MCw2MCwxXV0sWzgsMTAsIiIsMSx7ImN1cnZlIjotNSwiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFs4LDksIiIsMSx7ImNvbG91ciI6WzI0MCw2MCw2MF0sInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbOSwxMSwiIiwxLHsiY3VydmUiOi01LCJjb2xvdXIiOlsyNDAsNjAsNjBdLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn0sImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+So we
+
+-   Started with \( x \)
+-   Took a reference SES
+-   Produce the cokernel
+-   Took a pushout and found \( \beta \).
+-   Showed that \( \beta\mapsto x \).
+
+```{=tex}
+\todo[inline]{Review video: 9:28 AM!}
+```
+This shows surjectivity, but depended on choice of \( \beta \).
+
+::: {.claim}
+\( \Theta \) is injective.
+:::
+
+Note that the previous construction there is a way to associate to \( x\in \operatorname{Ext}^1(A, B) \) an extension of \( A \) by \( B \). To see that this gives a well-defined map \( \Psi \), so \( \Psi(x) = [ \xi ] \) as well, suppose \( \beta'\in {\operatorname{Hom}}(M, B) \) is another lift of \( x \). Note that although \( \operatorname{Ext}^1(P, B) =0 \), the fact that \( \ker {{\partial}}= {\operatorname{Hom}}(M, B) \neq 0 \), there are many such choices of lifts. Using exactness of diagram \( (*) \), there exists an \( f\in {\operatorname{Hom}}(P, B) \) such that \( \beta' = \beta + fj \), recalling that \( j: M\to P \). Now taking the pushout \( X' \) of \( j \) and \( \beta' \), the maps \( i: B\to X \) and \( \sigma + if: P\to X \) induce an isomorphism \( X' \xrightarrow{\sim} X \) and thus an equivalence \( \xi \xrightarrow{\sim} \xi' \).
+
+::: {.exercise title="?"}
+Check this isomorphism.
+:::
+
+Moreover, given any extension \( \xi \), we can fit it into a diagram of the following form:
+
+```{=tex}
+\begin{tikzcd}
+    && 0 & M & P & A & 0 \\
+    \\
+    {\xi:} && 0 & B & X & A & 0
+    \arrow[equals, from=1-6, to=3-6]
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow[from=1-5, to=1-6]
+    \arrow[from=1-6, to=1-7]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=3-5, to=3-6]
+    \arrow[from=3-6, to=3-7]
+    \arrow["{\exists \beta}"{description}, dashed, from=1-4, to=3-4]
+    \arrow["{\exists \sigma}"{description}, dashed, from=1-5, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzIsMCwiMCJdLFszLDAsIk0iXSxbNCwwLCJQIl0sWzUsMCwiQSJdLFs2LDAsIjAiXSxbMiwyLCIwIl0sWzYsMiwiMCJdLFszLDIsIkIiXSxbNCwyLCJYIl0sWzUsMiwiQSJdLFswLDIsIlxceGk6Il0sWzMsOSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs1LDddLFs3LDhdLFs4LDldLFs5LDZdLFsxLDcsIlxcZXhpc3RzIFxcYmV0YSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDgsIlxcZXhpc3RzIFxcc2lnbWEiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+First we use projectivity of \( P \) to get \( \sigma: P\to X \). Then restricting \( \sigma \) to the kernels of \( \pi, \mu \) respectively makes \( \beta: M\to B \), so this diagram commutes
+
+::: {.exercise title="?"}
+Check that \( X \) is the pushout of \( j \) and \( \beta \).
+:::
+
+It follows that \( \Psi (\Theta(\xi)) = \xi \) and thus \( \Theta \) is injective, making it a bijection.
+:::
+
+::: {.remark}
+Note the importance of the reversed directions after taking the Hom!
+:::
+
+::: {.remark}
+How can we upgrade this to a group homomorphism? One way is to pull back the group structure from the right-hand side to the left-hand side, but it turns out that Baer worked out an intrinsic group structure around 1934. We can construct the "smallest" extension such that \( A \) is a quotient and \( B \) is a submodule.
+:::
+
+::: {.definition title="Baer Sum (1934)"}
+Suppose we have two extensions of \( A \) by \( B \):
+\[
+\xi: & 0\to B \xrightarrow{i} X \xrightarrow{\pi} A \to 0 \\
+\xi': & 0\to B \xrightarrow{i'} X' \xrightarrow{\pi'} A \to 0 \\
+.\]
+Let \( X'' \) be the **pullback** of \( \pi, \pi' \), defined by
+\[
+X'' \coloneqq\left\{{ (x, x') \in X \times X' {~\mathrel{\Big|}~}\pi(x) = \pi'(x') \in A }\right\} 
+,\]
+which identifies the two copies of \( A \). This fits into a cartesian square
+
+```{=tex}
+\begin{tikzcd}
+    {X''} && {X'} \\
+    \\
+    X && A
+    \arrow["{\pi_1}"', from=1-1, to=3-1]
+    \arrow["{\pi_2}", from=1-1, to=1-3]
+    \arrow["{\pi'}"', from=1-3, to=3-3]
+    \arrow["\pi", from=3-1, to=3-3]
+    \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJYJyciXSxbMiwwLCJYJyJdLFsyLDIsIkEiXSxbMCwyLCJYIl0sWzAsMywiXFxwaV8xIiwyXSxbMCwxLCJcXHBpXzIiXSxbMSwyLCJcXHBpJyIsMl0sWzMsMiwiXFxwaSJdLFswLDIsIiIsMSx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dXQ==)
+
+Note that \( X'' \) contains 3 copies of \( B \):
+
+-   \( B \times 0 \), or really \( i(B) \times\left\{{ 0 }\right\} \subset X'' \) (using exactness).
+-   \( 0\times B \), i.e. \( \left\{{ 0 }\right\} \times i'(B) \subseteq X'' \) (using exactness).
+-   \( \tilde\Delta= \left\{{ (-b, b) {~\mathrel{\Big|}~}b\in B }\right\} \), the **skew diagonal**. One can check that \( \pi i (-b) = 0 = \pi' i' (b) \).
+
+Note that we're identifying \( B \) with \( i(B), i'(B) \). Set \( Y \coloneqq X'' / \tilde\Delta \), then \( (b, 0) + (-b, b) = (0, b) \) where \( (-b, b) \in \tilde \Delta \), so \( B \times 0 \) and \( 0 \times B \) have the same image in \( Y \), since
+\[
+(B \times 0) \cap\tilde\Delta= \left\{{ (0, 0) }\right\} = (0 \times B) \cap\tilde\Delta
+.\]
+In fact this image in \( Y \) is isomorphic to \( B \), by construction of what we're quotienting out by. Denoting this subgroup of \( Y \) by \( B \), we get a SES
+\[
+\phi: 0\to B \to Y \to Y/B \to 0
+.\]
+What is \( Y/B \)? We can write this as
+\[
+Y/B = { X'' / \tilde \Delta\over (0 \times B ) / \tilde\Delta}
+\cong {X'' \over (0 \times B) + \tilde\Delta}
+\cong {X'' / 0 \times B \over (\tilde\Delta+ (0 \times B) ) / (0 \times B)}
+.\]
+But the numerator is isomorphic to \( X \) by \( \pi_1 \), and the denominator is isomorphic to \( B \) by \( \pi_1 \). So \( \phi \) is an extension of \( A \) by \( B \) called the **Baer sum** of \( \xi, \xi' \).
+:::
+
+::: {.corollary title="?"}
+The equivalence classes of extensions of \( A \) by \( B \) is an abelian group under Baer sums, where zero is the class of split extensions. Moreover, the map \( \Theta \) from the previous theorem is an isomorphism of abelian groups.
+:::
+
+::: {.remark}
+Next time we'll check this by showing \( \Theta(\phi) = \Theta(\xi) + \Theta(\xi') \).
+:::
+
+# Wednesday, March 03
+
+## Baer Sum and Higher Exts
+
+Last time: Baer sum.
+
+::: {.remark}
+```{=tex}
+\begin{tikzcd}
+    {\xi':} && 0 && B && {X'} && A && 0 \\
+    \\
+    {\text{Ref}:} && 0 && M && P && A && 0
+    \arrow[from=1-3, to=1-5]
+    \arrow["{\iota'}", from=1-5, to=1-7]
+    \arrow["{\sigma'}"', from=3-7, to=1-7]
+    \arrow["\pi", from=3-7, to=3-9]
+    \arrow["{\pi'}", from=1-7, to=1-9]
+    \arrow[from=1-9, to=1-11]
+    \arrow[from=3-9, to=3-11]
+    \arrow["{\beta'}", from=3-5, to=1-5]
+    \arrow["j", from=3-5, to=3-7]
+    \arrow[from=3-3, to=3-5]
+    \arrow[equals, from=3-9, to=1-9]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzQsMCwiQiJdLFs2LDAsIlgnIl0sWzgsMCwiQSJdLFsyLDAsIjAiXSxbNCwyLCJNIl0sWzYsMiwiUCJdLFs4LDIsIkEiXSxbMTAsMCwiMCJdLFsxMCwyLCIwIl0sWzIsMiwiMCJdLFswLDAsIlxceGknOiJdLFswLDIsIlxcdGV4dHtSZWZ9OiJdLFszLDBdLFswLDEsIlxcaW90YSciXSxbNSwxLCJcXHNpZ21hJyIsMl0sWzUsNiwiXFxwaSJdLFsxLDIsIlxccGknIl0sWzIsN10sWzYsOF0sWzQsMCwiXFxiZXRhJyJdLFs0LDUsImoiXSxbOSw0XSxbNiwyLCIiLDEseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+```{=tex}
+\begin{tikzcd}
+    &&&& \textcolor{rgb,255:red,92;green,92;blue,214}{\one_B} && \textcolor{rgb,255:red,92;green,92;blue,214}{\Theta(\xi')} \\
+    \cdots && {{\operatorname{Hom}}(X', B)} && {{\operatorname{Hom}}(B, B)} && {\operatorname{Ext}^1_R(A, B)} \\
+    \\
+    \cdots && {{\operatorname{Hom}}(P, B)} && {{\operatorname{Hom}}(M, B)} && {\operatorname{Ext}^1_R(A, B)} \\
+    &&&& \textcolor{rgb,255:red,92;green,92;blue,214}{\beta'} && \textcolor{rgb,255:red,92;green,92;blue,214}{{{\partial}}(\beta') = \Theta(\xi')}
+    \arrow["{\sigma'_*}", from=2-3, to=4-3]
+    \arrow["{\beta'_*}", from=2-5, to=4-5]
+    \arrow[from=4-1, to=4-3]
+    \arrow[from=2-1, to=2-3]
+    \arrow[from=2-3, to=2-5]
+    \arrow[from=2-5, to=2-7]
+    \arrow[from=4-3, to=4-5]
+    \arrow[from=4-5, to=4-7]
+    \arrow[equals, from=2-7, to=4-7]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, maps to, from=5-5, to=5-7]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, maps to, from=1-5, to=1-7]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=-30pt}, maps to, from=1-5, to=5-5]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=-30pt}, maps to, from=1-7, to=5-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzIsMSwiXFxIb20oWCcsIEIpIl0sWzQsMSwiXFxIb20oQiwgQikiXSxbNiwxLCJcXEV4dF4xX1IoQSwgQikiXSxbNiwzLCJcXEV4dF4xX1IoQSwgQikiXSxbNCwzLCJcXEhvbShNLCBCKSJdLFsyLDMsIlxcSG9tKFAsIEIpIl0sWzAsMywiXFxjZG90cyJdLFswLDEsIlxcY2RvdHMiXSxbNCwwLCJcXG9uZV9CIixbMjQwLDYwLDYwLDFdXSxbNiwwLCJcXFRoZXRhKFxceGknKSIsWzI0MCw2MCw2MCwxXV0sWzQsNCwiXFxiZXRhJyIsWzI0MCw2MCw2MCwxXV0sWzYsNCwiXFxiZChcXGJldGEnKSA9IFxcVGhldGEoXFx4aScpIixbMjQwLDYwLDYwLDFdXSxbMCw1LCJcXHNpZ21hJ18qIl0sWzEsNCwiXFxiZXRhJ18qIl0sWzYsNV0sWzcsMF0sWzAsMV0sWzEsMl0sWzUsNF0sWzQsM10sWzIsMywiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMCwxMSwiIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFs4LDksIiIsMCx7ImNvbG91ciI6WzI0MCw2MCw2MF0sInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Im1hcHMgdG8ifX19XSxbOCwxMCwiIiwxLHsiY3VydmUiOi01LCJjb2xvdXIiOlsyNDAsNjAsNjBdLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV0sWzksMTEsIiIsMSx7ImN1cnZlIjotNSwiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dXQ==)
+
+We want to define \( \xi' \oplus \xi'' \), An important takeaway is that \( \Theta \) can alternatively be defined as a map induced by the original boundary map coming from the SES, i.e. \( {{\partial}}(\beta') = \Theta(\xi') \). This fits into the diagram as follows:
+
+```{=tex}
+\begin{tikzcd}
+    {\xi':} && 0 && B && {X'} && A && 0 \\
+    \\
+    {\text{Ref}:} && 0 && M && P && A && 0 \\
+    \\
+    {\xi'':} && 0 && B && {X''} && A && 0
+    \arrow[from=1-3, to=1-5]
+    \arrow["{\iota'}", from=1-5, to=1-7]
+    \arrow["{\sigma'}", from=3-7, to=1-7]
+    \arrow["\pi", from=3-7, to=3-9]
+    \arrow["{\pi'}", from=1-7, to=1-9]
+    \arrow[from=1-9, to=1-11]
+    \arrow[from=3-9, to=3-11]
+    \arrow["{\beta'}", from=3-5, to=1-5]
+    \arrow["j", from=3-5, to=3-7]
+    \arrow[from=3-3, to=3-5]
+    \arrow[equals, from=3-9, to=1-9]
+    \arrow[from=5-3, to=5-5]
+    \arrow["{\iota''}", from=5-5, to=5-7]
+    \arrow["{\pi''}", from=5-7, to=5-9]
+    \arrow[from=5-9, to=5-11]
+    \arrow["{\beta''}"', from=3-5, to=5-5]
+    \arrow["{\sigma''}"', from=3-7, to=5-7]
+    \arrow[equals, from=3-9, to=5-9]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTgsWzQsMCwiQiJdLFs2LDAsIlgnIl0sWzgsMCwiQSJdLFsyLDAsIjAiXSxbNCwyLCJNIl0sWzYsMiwiUCJdLFs4LDIsIkEiXSxbMTAsMCwiMCJdLFsxMCwyLCIwIl0sWzIsMiwiMCJdLFswLDAsIlxceGknOiJdLFswLDIsIlxcdGV4dHtSZWZ9OiJdLFsyLDQsIjAiXSxbNCw0LCJCIl0sWzYsNCwiWCcnIl0sWzgsNCwiQSJdLFsxMCw0LCIwIl0sWzAsNCwiXFx4aScnOiJdLFszLDBdLFswLDEsIlxcaW90YSciXSxbNSwxLCJcXHNpZ21hJyJdLFs1LDYsIlxccGkiXSxbMSwyLCJcXHBpJyJdLFsyLDddLFs2LDhdLFs0LDAsIlxcYmV0YSciXSxbNCw1LCJqIl0sWzksNF0sWzYsMiwiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxMiwxM10sWzEzLDE0LCJcXGlvdGEnJyJdLFsxNCwxNSwiXFxwaScnIl0sWzE1LDE2XSxbNCwxMywiXFxiZXRhJyciLDJdLFs1LDE0LCJcXHNpZ21hJyciLDJdLFs2LDE1LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+We define
+\[
+\tilde X \coloneqq\left\{{ (x', x'') \in X' \times X'' {~\mathrel{\Big|}~}\pi'(x') = \pi''(x'') }\right\} \twoheadrightarrow Y
+,\]
+and note that we had a skew diagonal \( \tilde\Delta\subseteq \tilde X \). This yields a YES
+\[
+\phi: 0 \to B \to Y \to Y/B \cong A \to 0
+.\]
+:::
+
+::: {.corollary title="?"}
+The set of equivalence classes of extensions of \( A \) by \( B \) is an abelian group under the Baer sum, where
+\[
+[\xi] \oplus [\xi'] \coloneqq[\varphi]
+,\]
+where the identity element \( 0 \) is the class of split extensions. The map \( \Theta \) is an isomorphism of abelian groups.
+:::
+
+::: {.remark}
+One should check that this is well-defined since we're using equivalence classes. There is a fast way to do both at once, i.e. showing \( \Theta \) is well-defined and also a group morphism.
+:::
+
+::: {.proof title="?"}
+We'll show that
+\[
+\Theta(\varphi) = \Theta(\xi) + \Theta(\xi'') \in \operatorname{Ext}^1_R(A, B)
+,\]
+which will make it a group isomorphism since \( \Theta \) was already a set bijection. Considering commutativity in the 3-row diagram, we can get a well-defined map
+\[
+\sigma\coloneqq\sigma' \oplus \sigma'': P \to \tilde{X}
+.\]
+So let \( \mkern 1.5mu\overline{\mkern-1.5mu \sigma\mkern-1.5mu}\mkern 1.5mu: P\to Y \) be the induced map. The restriction of \( \mkern 1.5mu\overline{\mkern-1.5mu \sigma\mkern-1.5mu}\mkern 1.5mu \) to \( M \) is induced by the map
+\[
+\beta' + \beta'': M\to (B \times 0) + (0 \times B) \subseteq \tilde X
+.\]
+These both map to \( B \) in \( Y \) under the SES \( 0\to B\to Y\to Y/B\to 0 \). This gives a commutative diagram
+
+```{=tex}
+\begin{tikzcd}
+    0 && M && P && A && 0 \\
+    \\
+    0 && B && Y && A && 0
+    \arrow[equals, from=1-7, to=3-7]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+    \arrow[from=3-7, to=3-9]
+    \arrow[from=1-7, to=1-9]
+    \arrow["{\beta'+\beta''}"', from=1-3, to=3-3]
+    \arrow["{\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu}"', from=1-5, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsyLDAsIk0iXSxbNCwwLCJQIl0sWzYsMCwiQSJdLFswLDIsIjAiXSxbMiwyLCJCIl0sWzQsMiwiWSJdLFs2LDIsIkEiXSxbOCwyLCIwIl0sWzgsMCwiMCJdLFszLDcsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMCwxXSxbMSwyXSxbMiwzXSxbNCw1XSxbNSw2XSxbNiw3XSxbNyw4XSxbMyw5XSxbMSw1LCJcXGJldGEnK1xcYmV0YScnIiwyXSxbMiw2LCJcXGJhcntcXHNpZ21hfSIsMl1d)
+
+We then have \( \Theta(\varphi) = {{\partial}}( \beta' + \beta'') = {{\partial}}(\beta') + {{\partial}}(\beta'') \) using that \( {{\partial}}\in \operatorname{Mor}({R{\hbox{-}}\mathbf{Mod}}) \). But this is equal to \( \Theta(\xi') + \Theta(\xi'') \), which is what we wanted to show.
+:::
+
+::: {.remark}
+What about the 0 element for split SESs? Recall that additive functors preserve split exact sequences, since these are just in terms of sums of maps composing to the identity. Then applying the hom functor to the original SES produces another SES, which in particular has no Ext correction term.
+:::
+
+::: {.remark}
+Similarly, \( \operatorname{Ext}^n(A, B) \) is identified with equivalence classes of longer sequences with \( n+2 \) terms, and an equivalence is a sequence of maps that result in commuting squares:
+
+```{=tex}
+\begin{tikzcd}
+    {\xi:} && 0 & B & {X_n} & \cdots & {X_1} & A & 0 \\
+    \\
+    {\xi':} && 0 & B & {X_n'} & \cdots & {X_1'} & A & 0
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow[from=1-5, to=1-6]
+    \arrow[from=1-6, to=1-7]
+    \arrow[from=1-7, to=1-8]
+    \arrow[from=1-8, to=1-9]
+    \arrow[equals, from=1-4, to=3-4]
+    \arrow[equals, from=1-8, to=3-8]
+    \arrow[dashed, from=1-5, to=3-5]
+    \arrow[dashed, from=1-7, to=3-7]
+    \arrow[dashed, from=1-6, to=3-6]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=3-5, to=3-6]
+    \arrow[from=3-6, to=3-7]
+    \arrow[from=3-7, to=3-8]
+    \arrow[from=3-8, to=3-9]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzIsMCwiMCJdLFszLDAsIkIiXSxbNCwwLCJYX24iXSxbNSwwLCJcXGNkb3RzIl0sWzYsMCwiWF8xIl0sWzcsMCwiQSJdLFs4LDAsIjAiXSxbMCwwLCJcXHhpOiJdLFswLDIsIlxceGknOiJdLFsyLDIsIjAiXSxbMywyLCJCIl0sWzQsMiwiWF9uJyJdLFs1LDIsIlxcY2RvdHMiXSxbNiwyLCJYXzEnIl0sWzcsMiwiQSJdLFs4LDIsIjAiXSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw0XSxbNCw1XSxbNSw2XSxbMSwxMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDE0LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMTEsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs0LDEzLCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMywxMiwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzksMTBdLFsxMCwxMV0sWzExLDEyXSxbMTIsMTNdLFsxMywxNF0sWzE0LDE1XV0=)
+
+Note that if \( \mathbf{P} \to A\to 0 \) is a projective resolution, then the comparison theorem yields maps and a commutative diagram
+
+```{=tex}
+\begin{tikzcd}
+    {\phi:} && 0 & M & {P_{n-1}} & \cdots & {P_0} & A & 0 \\
+    \\
+    {\xi':} && 0 & B & {X_n'} & \cdots & {X_1'} & A & 0
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow[from=1-5, to=1-6]
+    \arrow[from=1-6, to=1-7]
+    \arrow[from=1-7, to=1-8]
+    \arrow[from=1-8, to=1-9]
+    \arrow["{\exists \beta}", dashed, from=1-4, to=3-4]
+    \arrow["{\one_A}", equals, from=1-8, to=3-8]
+    \arrow["\exists", dashed, from=1-5, to=3-5]
+    \arrow["\exists", dashed, from=1-7, to=3-7]
+    \arrow[dashed, from=1-6, to=3-6]
+    \arrow[from=3-3, to=3-4]
+    \arrow[from=3-4, to=3-5]
+    \arrow[from=3-5, to=3-6]
+    \arrow[from=3-6, to=3-7]
+    \arrow[from=3-7, to=3-8]
+    \arrow[from=3-8, to=3-9]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzIsMCwiMCJdLFszLDAsIk0iXSxbNCwwLCJQX3tuLTF9Il0sWzUsMCwiXFxjZG90cyJdLFs2LDAsIlBfMCJdLFs3LDAsIkEiXSxbOCwwLCIwIl0sWzAsMCwiXFxwaGk6Il0sWzAsMiwiXFx4aSc6Il0sWzIsMiwiMCJdLFszLDIsIkIiXSxbNCwyLCJYX24nIl0sWzUsMiwiXFxjZG90cyJdLFs2LDIsIlhfMSciXSxbNywyLCJBIl0sWzgsMiwiMCJdLFswLDFdLFsxLDJdLFsyLDNdLFszLDRdLFs0LDVdLFs1LDZdLFsxLDEwLCJcXGV4aXN0cyBcXGJldGEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNSwxNCwiXFxvbmVfQSIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwxMSwiXFxleGlzdHMiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNCwxMywiXFxleGlzdHMiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMywxMiwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzksMTBdLFsxMCwxMV0sWzExLDEyXSxbMTIsMTNdLFsxMywxNF0sWzE0LDE1XV0=)
+
+Then the dimension shifting theorem (Exc. 2.4.3) and its proof yields an exact sequence
+\[
+{\operatorname{Hom}}(P_{n-1}, B) \to {\operatorname{Hom}}(M, B) \xrightarrow{{{\partial}}} \operatorname{Ext}^n(A, B) \to 0
+,\]
+and the asserted bijection is then given by \( \Theta(\xi) \coloneqq{{\partial}}(\beta) \).
+:::
+
+## 3.6: Kunneth and Universal Coefficient Theorems
+
+::: {.observation}
+If \( R \) is a field \( F \) then \( \operatorname{Tor}_n^F(A, B) = 0 \) for all \( n>0 \), i.e. every module over a field is a complex space, hence free, hence projective, hence flat, and so \( A\otimes_F {\,\cdot\,} \) is exact.
+:::
+
+::: {.question}
+If \( \mathbf{P} \in \operatorname{Ch}({\mathbf{Mod}{\hbox{-}}R}) \) is a complex of of right \( R{\hbox{-}} \)modules and \( M \in {R{\hbox{-}}\mathbf{Mod}} \) is a left \( R{\hbox{-}} \)module, how is the homology of \( \mathbf{P} \) and that of \( \mathbf{P} \otimes_R M \) related?
+:::
+
+::: {.lemma title="?"}
+Given a 5-term exact sequence
+\[
+A_1 \xrightarrow{\alpha} A_2 \xrightarrow{f} B \xrightarrow{g} C_1 \xrightarrow{\gamma} C_2
+,\]
+there is a corresponding SES
+
+```{=tex}
+\begin{tikzcd}
+    0 & A & B & C & 0 \\
+    & {\substack{ A_2/\ker f = A_2/\operatorname{im}\alpha \\ = \operatorname{coker}\alpha} } && {\operatorname{im}g = \ker f}
+    \arrow[from=1-1, to=1-2]
+    \arrow["{\mkern 1.5mu\overline{\mkern-1.5muf\mkern-1.5mu}\mkern 1.5mu}", from=1-2, to=1-3]
+    \arrow["g", from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwwLCIwIl0sWzEsMCwiQSJdLFsyLDAsIkIiXSxbMywwLCJDIl0sWzQsMCwiMCJdLFszLDEsIlxcaW0gZyA9IFxca2VyIGYiXSxbMSwxLCJBXzIvXFxrZXIgZiA9IEFfMi9cXGltXFxhbHBoYSA9IFxcY29rZXIgXFxhbHBoYSJdLFswLDFdLFsxLDIsIlxcYmFyIGYiXSxbMiwzLCJnIl0sWzMsNF1d)
+
+In particular, we can always take \( A = \operatorname{coker}\alpha \) and \( C = \ker \gamma \) in any abelian category.
+:::
+
+::: {.theorem title="The Kunneth Formula"}
+Let \( \mathbf{P}\in \operatorname{Ch}({\mathbf{Mod}{\hbox{-}}R}) \) be a chain complex of flat right \( R{\hbox{-}} \)modules such that each boundary module \( dP_n \) is again flat. Then for every \( M\in {R{\hbox{-}}\mathbf{Mod}} \) and all \( N \), there is an exact sequence
+
+```{=tex}
+\begin{tikzcd}
+    0 && {H_n(\mathbf{P})\otimes_R M} && {H_n(\mathbf{P} \otimes_R M)} && {\operatorname{Tor}^1_R(H_{n-1}(\mathbf{P}), M)} && 0
+    \arrow[from=1-7, to=1-9]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIwIl0sWzIsMCwiSF9uKFxcdmVjdG9yIFApXFx0ZW5zb3JfUiBNIl0sWzQsMCwiSF9uKFxcdmVjdG9yIFAgXFx0ZW5zb3JfUiBNKSJdLFs2LDAsIlxcVG9yXjFfUihIX3tuLTF9KFxcdmVjdG9yIFApLCBNKSJdLFs4LDAsIjAiXSxbMyw0XSxbMiwzXSxbMSwyXSxbMCwxXV0=)
+:::
+
+::: {.remark}
+Note that the correction term vanishes if \( R \) is a field.
+:::
+
+::: {.proof title="?"}
+Let \( Z_n \coloneqq Z_n(\mathbf{P}) \), there there is a SES
+\[
+0 \to Z_n \to P_n \xrightarrow{d} dP_n \to 0
+.\]
+Since \( P_n, dP_n \) are flat by assumption, by Exc. 3.2.2, \( Z_n \) is also flat. Taking the LES from applying \( {\,\cdot\,}\otimes_R M \), noting that \( M \) is arbitrary yields
+
+```{=tex}
+\begin{tikzcd}
+    &&&& 0 \\
+    {Z_n\otimes_R M} && {P_n\otimes_R M} && {dP_n\otimes_R M} \\
+    \\
+    && \cdots && {\operatorname{Tor}_1(dP_n, M)}
+    \arrow[from=4-5, to=2-1, out=0, in=180]
+    \arrow[from=2-1, to=2-3]
+    \arrow[from=2-3, to=2-5]
+    \arrow[from=4-3, to=4-5]
+    \arrow[from=2-5, to=1-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbNCwxLCJkUF9uXFx0ZW5zb3JfUiBNIl0sWzIsMSwiUF9uXFx0ZW5zb3JfUiBNIl0sWzAsMSwiWl9uXFx0ZW5zb3JfUiBNIl0sWzQsMywiXFxUb3JfMShkUF9uLCBNKSJdLFsyLDMsIlxcY2RvdHMiXSxbNCwwLCIwIl0sWzMsMl0sWzIsMV0sWzEsMF0sWzQsM10sWzAsNV1d)
+
+Here \( \operatorname{Tor}_1(dP_n, M)=0 \) since \( dP_n \) is flat, noting that one could also apply \( \operatorname{Tor}(dP_n, {\,\cdot\,}) \) to get a similar LES. So this lifts to a SES of complexes
+\[
+0 \to \mathbf{Z}\otimes M \to \mathbf{P}\otimes M \to \mathbf{dP}\otimes M \to 0
+,\]
+where we can consider \( d\otimes\one \) in the middle. We'll pick this up next time!
+:::
+
 # Appendix: Extra Definitions
 
 ::: {.definition title="Acyclic"}
@@ -3537,6 +4255,178 @@ A chain complex \( C \) is **acyclic** if and only if \( H_*(C) = 0 \).
 # Extra References
 
 -   <https://www.math.wisc.edu/~csimpson6/notes/2020_spring_homological_algebra/notes.pdf>
+
+# Useful Facts
+
+::: {.remark}
+Notational conventions:
+
+-   Finite direct products: \( \bigoplus \)
+-   Cohomological indexing: \( C^i, {{\partial}}^i \)
+-   Homological indexing: \( C_i, {{\partial}}_i \)
+-   Right-derived functors \( R^iF \).
+    -   Come from left-exact functors
+    -   Require *injective* resolutions
+    -   Extend to the right: \( 0 \to F(A) \to F(B) \to F(C) \to L_1 F(A) \cdots \)
+-   Left-derived functors \( L_i F \).
+    -   Come from right-exact functors
+    -   Require *projective* resolutions
+    -   Extend to the left: \( \cdots L_1F(C) \to F(A) \to F(B) \to F(C) \to 0 \)
+-   Colimits:
+    -   Examples: coproducts, direct limits, cokernels, initial objects, pushouts
+    -   Commute with left adjoints, i.e. \( L(\mathop{\mathrm{colim}}\nolimits F_i) = \mathop{\mathrm{colim}}\nolimits LF_i \).
+-   Examples of limits:
+    -   Products, inverse limits, kernels, terminal objects, pullbacks
+    -   Commute with right adjoints. i.e. \( R(\mathop{\mathrm{colim}}\nolimits F_i) = \mathop{\mathrm{colim}}\nolimits RF_i \).
+:::
+
+::: {.proposition title="Kernels as pullbacks and cokernels as pushouts"}
+The kernel \( \ker f \) of a morphism \( f \) can be characterized as a cartesian square, and the cokernel \( \operatorname{coker}f \) as a cocartesian square:
+
+```{=tex}
+\begin{tikzcd}
+    K \\
+    & {\ker f} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && 0 \\
+    \\
+    & 0 && \textcolor{rgb,255:red,92;green,92;blue,214}{B} && {\operatorname{coker}f} \\
+    &&&&&& C
+    \arrow[dotted, from=2-6, to=4-6]
+    \arrow[from=2-4, to=2-6]
+    \arrow["f"', color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=4-4]
+    \arrow["0"', dotted, from=4-4, to=4-6]
+    \arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=4-6, to=2-4]
+    \arrow["{\exists !}"', dashed, from=4-6, to=5-7]
+    \arrow[curve={height=12pt}, from=4-4, to=5-7]
+    \arrow[curve={height=-12pt}, from=2-6, to=5-7]
+    \arrow[dotted, from=2-2, to=2-4]
+    \arrow[from=4-2, to=4-4]
+    \arrow[dotted, from=2-2, to=4-2]
+    \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=4-4]
+    \arrow[curve={height=-12pt}, from=1-1, to=2-4]
+    \arrow[curve={height=12pt}, from=1-1, to=4-2]
+    \arrow["{\exists !}"', dashed, from=1-1, to=2-2]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMywxLCJBIixbMjQwLDYwLDYwLDFdXSxbNSwxLCIwIl0sWzMsMywiQiIsWzI0MCw2MCw2MCwxXV0sWzUsMywiXFxjb2tlciBmIl0sWzYsNCwiQyJdLFsxLDEsIlxca2VyIGYiXSxbMSwzLCIwIl0sWzAsMCwiSyJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFswLDFdLFswLDIsImYiLDIseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMiwzLCIwIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzMsMCwiIiwwLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzMsNCwiXFxleGlzdHMgISIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIiIsMCx7ImN1cnZlIjoyfV0sWzEsNCwiIiwwLHsiY3VydmUiOi0yfV0sWzUsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzYsMl0sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzUsMiwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzcsMCwiIiwxLHsiY3VydmUiOi0yfV0sWzcsNiwiIiwxLHsiY3VydmUiOjJ9XSxbNyw1LCJcXGV4aXN0cyAhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+:::
+
+::: {.proposition title="Basic properties of Hom"}
+```{=tex}
+\envlist
+```
+-   \( {\operatorname{Hom}}_R(A, {\,\cdot\,}) \) is:
+    -   Covariant
+    -   Left-exact
+    -   Has right-derived functors \( \operatorname{Ext}^i_R(A, B) \coloneqq R^i {\operatorname{Hom}}_R(A, {\,\cdot\,})(B) \) computed using *injective* resolutions.
+-   \( {\operatorname{Hom}}_R({\,\cdot\,}, B) \) is:
+    -   Contravariant
+    -   Right-exact
+    -   Has left-derived functors \( \operatorname{Ext}^i_R(A, B) \coloneqq L_i {\operatorname{Hom}}_R({\,\cdot\,}, B)(A) \) computed using *projective* resolutions.
+:::
+
+::: {.proposition title="Basic Properties of Ext"}
+```{=tex}
+\envlist
+```
+-   \( \operatorname{Ext}^{>1}(A, B) = 0 \) for any \( A \) projective or \( B \) injective.
+:::
+
+::: {.fact}
+A maps \( A \xrightarrow{f} B \) in \( {R{\hbox{-}}\mathbf{Mod}} \) is injective if and only if \( f(a) = 0_B \implies a = 0_A \). Monomorphisms are injective maps in \( {R{\hbox{-}}\mathbf{Mod}} \).
+:::
+
+::: {.proposition title="Recipe for computing $\\Ext_R^i$"}
+Write \( F({\,\cdot\,}) \coloneqq{\operatorname{Hom}}_R(A, {\,\cdot\,}) \). This is left-exact and thus has right-derived functors \( \operatorname{Ext}^i_R(A, B) \coloneqq R^iF(B) \). To compute this:
+
+-   Take an *injective* resolution:
+    \[
+    1 \to B \xrightarrow{\varepsilon} I^0 \xrightarrow{d^0} I^1 \xrightarrow{d^1} \cdots
+    .\]
+
+-   Remove the augmentation \( \varepsilon \) and just keep the complex
+    \[
+    I^{\,\cdot\,}\coloneqq\qty{ 1 \xrightarrow{d^{-1}} I^0 \xrightarrow{d^0} I^1 \xrightarrow{d^1} \cdots }
+    .\]
+
+-   Apply \( F({\,\cdot\,}) \) to get a new (and usually **not exact**) complex
+    \[
+    F(I)^{\,\cdot\,}\coloneqq\qty{ 1 \xrightarrow{{{\partial}}^{-1}} F(I^0) \xrightarrow{{{\partial}}^0} F(I^1) \xrightarrow{{{\partial}}^1} \cdots }
+    ,\]
+    where \( {{\partial}}^i \coloneqq F(d^i) \).
+
+-   Take homology, i.e. kernels mod images:
+    \[
+    R^iF(B) \coloneqq{ \ker d^i \over \operatorname{im}d^{i-1}}
+    .\]
+
+Note that \( R^0 F(B) \cong F(B) \) canonically:
+
+-   This is defined as \( \ker {{\partial}}^0 / \operatorname{im}{{\partial}}^{-1} = \ker {{\partial}}^0 / 1 = \ker {{\partial}}^0 \).
+
+-   Use the fact that \( F({\,\cdot\,}) \) is left exact and apply it to the *augmented* complex to obtain
+    \[
+    1 \to F(B) \xrightarrow{F(\varepsilon)} F(I^0) \xrightarrow{{{\partial}}^0} F(I^1) \xrightarrow{{{\partial}}^1} \cdots 
+    .\]
+
+-   By exactness, there is an isomorphism \( \ker {{\partial}}^0 \cong F(B) \).
+:::
+
+::: {.proposition title="Computing $\\Hom_\\ZZ(\\ZZ, \\ZZ/n)$"}
+\( \phi: {\operatorname{Hom}}_{{\mathbb{Z}}}({\mathbb{Z}}, {\mathbb{Z}}/n) \xrightarrow{\sim} {\mathbb{Z}}/n \), where \( \phi(g) \coloneqq g(1) \).
+
+-   That this is an isomorphism follows from
+
+-   Surjectivity: for each \( \ell \in {\mathbb{Z}}/n \) define a map
+    \[
+    \psi_y: {\mathbb{Z}}&\to {\mathbb{Z}}/n \\
+    1 &\mapsto [\ell]_n
+    .\]
+
+-   Injectivity: if \( g(1) = [0]_n \), then
+    \[
+    g(x) = xg(1) = x[0]_n = [0]_n
+    .\]
+
+-   \( {\mathbb{Z}}{\hbox{-}} \)module morphism:
+    \[
+    \phi(gf) \coloneqq\phi(g\circ f) \coloneqq(g\circ f)(1) = g(f(1)) = f(1)g(1) = \phi(g)\phi(f)
+    ,\]
+    where we've used the fact that \( {\mathbb{Z}}/n \) is commutative.
+:::
+
+::: {.proposition title="Common Hom Groups"}
+-   \( {\operatorname{Hom}}_{\mathbb{Z}}({\mathbb{Z}}/m, {\mathbb{Z}}) = 0 \).
+-   \( {\operatorname{Hom}}_{\mathbb{Z}}({\mathbb{Z}}/m, {\mathbb{Z}}/n) = {\mathbb{Z}}/d \).
+-   \( {\operatorname{Hom}}_{\mathbb{Z}}({\mathbb{Q}}, {\mathbb{Q}}) = {\mathbb{Q}} \).
+:::
+
+::: {.proposition title="Common Ext Groups"}
+-   \( \operatorname{Ext}_{\mathbb{Z}}({\mathbb{Z}}/m, G) \cong G/mG \)
+
+    -   Use \( 1 \to {\mathbb{Z}}\xrightarrow{\times m} {\mathbb{Z}}\xrightarrow{} {\mathbb{Z}}/m \to 1 \) and apply \( {\operatorname{Hom}}_{\mathbb{Z}}({\,\cdot\,}, {\mathbb{Z}}) \).
+
+-   \( \operatorname{Ext}_{\mathbb{Z}}({\mathbb{Z}}/m, {\mathbb{Z}}/n) = {\mathbb{Z}}/d \).
+
+-   
+:::
+
+::: {.slogan}
+```{=tex}
+\envlist
+```
+-   In \( {\mathbf{Ab}} \), direct colimits commute with finite limits. Inverse limits do not generally commute with finite colimits.
+
+-   Left adjoints are right-exact with left-derived functors. Right adjoints are left-exact with right-derived functors.
+
+-   Left adjoints commute with colimits: \( L( \mathop{\mathrm{colim}}\nolimits F) = \mathop{\mathrm{colim}}\nolimits(L\circ F) \)
+:::
+
+::: {.proposition title="Characterizations of Splittings"}
+TFAE in \( {R{\hbox{-}}\mathbf{Mod}} \):
+
+-   A SES \( 0\to A\to B \to C\to 0 \) is split.
+-   ?
+:::
 
 [^1]: See appendix A 1.6 for initial and terminal objects. Note that \( \emptyset \) is an initial but non-terminal object in \( {\operatorname{Set}} \), whereas zero objects are both.
 
