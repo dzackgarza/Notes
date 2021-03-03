@@ -3,6 +3,8 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\du}{\,du}
+\newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
 }
@@ -23,8 +25,6 @@
 \newcommand{\fqr}[0]{{\mathbb{F}_{q^r}}}
 \newcommand{\GF}[0]{{\mathbb{GF}}}
 \newcommand{\GG}[0]{{\mathbb{G}}}
-\newcommand{\HH}[0]{{\mathbb{H}}}
-\newcommand{\HP}[0]{{\mathbb{HP}}}
 \newcommand{\KK}[0]{{\mathbb{K}}}
 \newcommand{\kk}[0]{{\mathbb{k}}}
 \newcommand{\bbm}[0]{{\mathbb{M}}}
@@ -44,10 +44,18 @@
 \newcommand{\zlnz}[0]{\mathbb{Z}/\ell^n\mathbb{Z}}
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
+\newcommand{\ZpZ}[0]{\mathbb{Z}/p}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
+\newcommand{\covol}[0]{\operatorname{covol}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
 \newcommand{\Ch}[0]{\operatorname{Ch}}
+\newcommand{\HF}[0]{\operatorname{HF}}
+\newcommand{\CF}[0]{\operatorname{HF}}
+\newcommand{\ZHS}[0]{\operatorname{ZHS}}
+\newcommand{\QHS}[0]{\operatorname{QHS}}
+\newcommand{\ZHB}[0]{\operatorname{ZHB}}
+\newcommand{\QHB}[0]{\operatorname{QHB}}
 \newcommand{\ks}[0]{\operatorname{ks}}
 \newcommand{\Arg}[0]{\operatorname{Arg}}
 \newcommand{\PGL}[0]{\operatorname{PGL}}
@@ -82,6 +90,15 @@
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
+\newcommand{\afp}[0]{A_{/\FF_p}}
+\newcommand{\Fp}[0]{{\FF_p}}
+\newcommand{\HP}[0]{{\operatorname{HP}}}
+\newcommand{\TP}[0]{{\operatorname{TP}}}
+\newcommand{\HC}[0]{{\operatorname{HC}}}
+\newcommand{\HH}[0]{{\operatorname{HH}}}
+\newcommand{\THH}[0]{{\operatorname{THH}}}
+\newcommand{\GW}[0]{{\operatorname{GW}}}
+\newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
@@ -176,6 +193,7 @@
 \newcommand{\cone}[0]{\operatorname{cone}}
 \newcommand{\cok}[0]{\operatorname{coker}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
+\newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
 \newcommand{\bundle}[1]{\mathcal{#1}}
 \newcommand{\td}[0]{\mathrm{td}}
@@ -244,7 +262,7 @@
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
-\newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
+\newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
   \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
@@ -295,6 +313,7 @@
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
 \newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\Taut}[0]{{\operatorname{Taut}}}
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
@@ -390,6 +409,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
+\newcommand{\complex}[1]{\mathbf{#1}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -489,6 +509,9 @@
 \newcommand{\fractional}[1]{\theset{#1}}
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
+\newcommand{\Bl}[0]{\operatorname{Bl}}
+\def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
+
 
 # Tuesday, January 12
 
@@ -3461,4 +3484,451 @@ We can thus write
 \chi(\OO_S) = {K^2 + \chi_\Top(S) \over 12 }
 .\]
 :::
+
+
+# Friday, February 26
+
+
+:::{.remark}
+Last time: Riemann-Roch for surfaces, today we'll discuss some examples.
+Recall that if $S \in \Mfd_\CC^2$ is closed and compact (noting that $S\in \Mfd_\RR^4$) and $L\to S$ is a holomorphic line bundle then
+\[
+\chi(S, L) = \chi(\OO_S) + {1\over 2}(L^2 - L \cdot K)
+\]
+where $K = c_1(K_S)$ for $K_S \da \Omega_S^2$ the canonical bundle and $L = c_1(L)$.
+We also saw
+\[
+\chi(\OO_S) = {1\over 12}(K^2 + \chi_{\Top}(S))
+,\]
+where $\chi_\Top$ is the Euler characteristic and is given by 
+\[
+\chi_\Top(S) = 2 h^0(S; \CC) - 2 h^1(S, \CC) + h^2(S; \CC)
+.\]
+:::
+
+
+:::{.example title="?"}
+Let $S = \CP^2$, which can be given in local coordinates by 
+\[ 
+\ts{ [x_0: x_1: x_2 ] \st (x_0, x_1, x_2) \in \CC^3\smz } 
+\] 
+where we only take equivalence classes of ratios \( [x,y,z] = [\lambda x, \lambda y, \lambda z] \) for any \( \lambda\in \CC\units \).
+This decomposes as 
+\[
+\CP^2 \union \CC \union \ts{ \pt } = \ts{ [1: x_1: x_2] } \union \ts{ [0 : x_1: x_2] } \union \ts{ [0:0:1] }
+,\]
+i.e. we take $x_0 \neq 0$, then $x_0 = 0, x_1\neq 0$, then $x_0 = x_1 = 0$.
+Note that 
+\[
+h^i(\CP^n; \ZZ) = 
+\begin{cases}
+\ZZ &  0 \leq i \leq 2n \text{ even} 
+\\
+0 & \text{else}.
+\end{cases}
+\]
+
+We can use this to conclude that $\chi_\Top(\CP^n) = n+1$ and $\chi_\Top(\CP^2) = 3$.
+Over $\CP^n$ we have a **tautological line bundle** $\OO(-1)$ given by sending each point to the corresponding line in $\CC^{n+1}$, i.e. $\OO(-1) \to \CP^n$ given by 
+\[
+\lambda (x_0, \cdots, x_n) \mapsto [x_0: \cdots: x_n]
+.\]
+Note that the total space is $\Bl_0(\CC^{n+1})$ is the **blowup** at zero, which separates the tangents at 0.
+:::
+
+:::{.remark}
+Let $X$ be an algebraic variety, i.e. spaces cut out by polynomial equations, for example \( \ts{ xy = 0 } \subseteq \CC^2 \) which has a singularity at the origin.
+A **divisor** is a $\ZZ\dash$linear subvariety of codimension 1.
+Note that for a curve $X$, this gives back the definition in terms of points.
+For $D$ a divisor on $X$, we associated a bundle $\OO_X(D)$ which had a meromorphic section with a zero/pole locus whose divisor was precisely $D$.
+
+Recall the construction: we chose a point, then a trivializing neighborhood where the transition functions where $V$.
+
+\begin{tikzpicture}
+\fontsize{41pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-26_14-12.pdf_tex} };
+\end{tikzpicture}
+
+
+For a higher dimensional algebraic variety or complex manifold, for $D$ a complex submanifold, pick a chart around a point that the nearby portion of $D$ to a coordinate axis in $\CC^n$, which e.g. can be given by \( \ts{ z_1 = 0 } \).
+
+\begin{tikzpicture}
+\fontsize{42pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-02-26_15-58.pdf_tex} };
+\end{tikzpicture}
+
+As before there's a distinguished section $s_D \in H^0(X; \OO_X(D) )$ vanishing along $D$.
+Note that a line bundle is a free rank 1 $\OO\dash$module, and analogously here the functions vanishing along $D$ are $\OO\dash$modules generated by (here) $z_1$.
+:::
+
+:::{.definition title="Hyperplane"}
+A **hyperplane** in $\CP^n$ is any set of the form
+\[
+H = \ts{ [x_0: \cdots : x_1 ] \st \sum a_i x_i = 0 } \cong \CP^{n-1}
+.\]
+:::
+
+:::{.example title="?"}
+Take $\CP^{n-1} \subseteq \CP^n$, e.g. \( \ts{ x_0 = 0 } \).
+This is an example of a **divisor** on $\CP^n$, i.e. a complex codimension 1 "submanifold".
+We can take the line bundle constructed above to get $\OO_{\CP^n}(\CP^{n-1})$ which vanishes along $\CP^{n-1}$.
+More generally, for any hyperplane $H$ we can take $\OO_{\CP^n}(H)$, and these are all isomorphic, so we'll denote them all by $\OO_{\CP^n}(1)$.
+The implicit claim is that is the inverse line bundle of the tautological bundle, so $\OO(1) \tensor \OO(-1)$ is the trivial bundle since the transition functions are given by reciprocals and multiplying them yields 1.
+We can classify complex line bundles on $\CP^n$ using the SES
+\[
+0 \to \constantsheaf{\ZZ} \to \OO \mapsvia{\exp} \OO\units \to 1
+.\]
+
+We know that $H^1(X; \OO\units)$ were precisely holomorphic line bundles, since they were functions agreeing on double overlaps with a cocycle condition.
+We have a LES coming from sheaf cohomology:
+
+\begin{tikzcd}
+	&&&& \cdots \\
+	\\
+	{H^1(X; \OO)} && {H^1(X; \OO)} && {H^1(X; \OO\units)} \\
+	\\
+	{H^2(X; \OO)} && \cdots
+	\arrow["{c_1}", from=3-5, to=5-1, out=0, in=180]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=5-1, to=5-3]
+	\arrow[from=1-5, to=3-1, out=0, in=180]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMiwyLCJIXjEoWDsgXFxPTykiXSxbNCwyLCJIXjEoWDsgXFxPT1xcdW5pdHMpIl0sWzAsNCwiSF4yKFg7IFxcT08pIl0sWzAsMiwiSF4xKFg7IFxcT08pIl0sWzQsMCwiXFxjZG90cyJdLFsyLDQsIlxcY2RvdHMiXSxbMSwyLCJjXzEiXSxbMywwXSxbMCwxXSxbMiw1XSxbNCwzXV0=)
+
+Applying this to $X\da \CP^n$, we have $H^1(\OO) = H^2(\OO) = 0$.
+This can be computed directly using that $\CP^n = \union_{n\geq 1} \CC^n$ by taking charts $x_i\neq 0$, and this yields an acyclic cover.
+Thus $c_1$ is an isomorphism above, and $\Pic(\CP^n) \cong \ZZ$, where $\Pic$ denotes isomorphism classes of line bundles.
+We can identify $\Pic(\CP^n) = \ts{ \OO_{\CP^n}(k) \st k\in \ZZ }$.
+:::
+
+
+
+
+
+
+
+
+
+
+
+# Monday, March 01
+
+:::{.remark}
+Last time: we defined $\Pic(\CP^n)$ as the set of line bundles on $\CP^n$.
+:::
+
+:::{.definition title="Picard Group of a Manifold"}
+Given any $X\in \Mfd_\CC$, define $\Pic(X)$ as the set of isomorphism classes of holomorphic line bundles on $X$.
+This is an abelian group given by $L \tensor L'$ and inversion $L\to L\inv$.
+:::
+
+:::{.remark}
+We saw that $\Pic(X) \cong H^1(X; \OO\units)$ as groups, noting that $H^1$ has a natural group structure here.
+We defined a **tautological bundle** on $\CP^n$ and saw it was isomorphic to $\OO(-1)$, and moreover $\OO(H) \cong \OO(1)$ for $H$ a hyperplane.
+The fiber was given by 
+\[
+\mathrm{Taut} &\to \CP^n \\
+\ts{ \lambda (x_0, \cdots, x_n) \st \lambda\in \CC } &\mapsto [x_0: \cdots : x_n]
+,\]
+i.e. the entire line corresponding to the given projective point.
+We also have $\OO(H)(U)$ is the sect of rational homogeneous functions $\phi$ on $U$ of degree 1 such that $\Div \phi + H \geq 0$ where $H \da \ts{x_0 = 0}$.
+We want $\phi/x_0$ to be a well-defined function, so $\phi$ should scale like $x_0$ in the sense that 
+\[
+\phi( \lambda x_0, \cdots, \lambda x_n) = \lambda\phi( x_0, \cdots, x_n)
+.\]
+Note that there is a natural map
+\[
+\Taut \tensor \OO(H) \mapsvia{} \OO
+,\]
+given by taking the line over a point and evaluating the homogeneous function on that line.
+Thus $\Taut$ is the inverse of $\OO(H)$.
+:::
+
+:::{.remark}
+We want to understand what Noether's formula says for $\CP^2$, which requires understanding the canonical bundle $K_{\CP^n}$.
+We'll do this by writing down a meromorphic section \( \omega \) (since it's a meromorphic volume form) which will yield $K_{\CP^n} = \OO(\Div \omega)$.
+So take
+\[
+\omega \da x_1\inv dx_1 \wedge \cdots \wedge x_n\inv dx_n 
+,\]
+noting that we leave out the first coordinate $x_0$ and divide by coordinates to make this scale-invariant.
+Here we work in a $\CC^n$ chart of points of the form $[1: x_1 : \cdots : x_n]$.
+Where does $\omega$ have poles?
+Along $x_i = 0$ for any $1\leq i \leq n$, and similarly in any other coordinate chart.
+We also have a 1st order pole along $x_0 = 0$.
+We then get 
+\[
+K_{\CP^n} = \OO(\Div \omega) = \OO( -H_0 -H_1 - \cdots - H_n) = \OO(-n-1)
+,\]
+where $H_i = \ts{x_i =  0}$.
+
+Note that $\CP^n$ is like a simplex:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-01_14-12.pdf_tex} };
+\end{tikzpicture}
+
+Applying this to $\CP^2$, we obtain
+\[
+K_{\CP^2} = \OO(-3)
+.\]
+What is the intersection form?
+We know $H^2(\CP^2; \ZZ) \cong \ZZ$ and the intersection form is unimodular.
+So write $\ZZ \da \ZZ \alpha$ for \( \alpha \) some generator.
+Then \( \alpha \cdot \alpha = \pm 1 \) since \( \det G = \pm 1 \) for the Gram matrix for this to be unimodular.
+Note that \( (- \alpha) \cdot (- \alpha) = \pm 1 \) with the same sign.
+
+
+:::{.claim}
+$\OO(1) = \OO(H)$ generates $\Pic(\CP^2) = H^2(\CP^2; \ZZ)$.
+:::
+
+This is because $c_1 \OO(H) \cdot c_1 \OO(H) = H\cdot H = \ts{ x_0 = 0 } \transverse \ts{ x_1 = 0 } = \ts{ [0:0:1] }$ here we note that the two hyperplanes can be oriented transversely and intersected.
+This is an oriented intersection.
+
+Recall Noether's formula, which was HRR applied to $\OO$ and the Chern-Gauss-Bonet theorem:
+\[
+\chi(\OO) 
+&= {1\over 12}(K^2 + \chi_\Top)\\
+&= h^0(\OO) - h^1(\OO) + h^2(\OO)\\
+&= 1 -1 + 1\\
+&= 1
+.\]
+The right-hand side can be written as 
+\[
+{1\over 12} \qty{ (-3H) \cdot (-3H) + 3} = {1\over 12}(9+3) = 1
+.\]
+:::
+
+:::{.proposition title="?"}
+$S^4$ has no complex structure.
+:::
+
+:::{.proof title="?"}
+We know that $\chi_\Top(S^4) = 2$.
+If $S^4$ had a complex structure, then $c_1(K_{S^4}) \in H^2(S^4; \ZZ) = 0$.
+Thus would make $K_{S^4}^2 = 0$, and so 
+\[
+\chi( \OO_{S^4} ) = {1\over 12}( 0 + 2) = {1\over 6} \not\in \ZZ
+,\]
+which is a contradiction. $\contradiction$
+:::
+
+:::{.example title="?"}
+Consider $\bar{\CP}^2$, a 4-manifold diffeomorphic to $\CP^2$ with the opposite orientation.
+What is the intersection form?
+Taking $H\cdot H = -1$ since the orientations aren't compatible, and more generally the Gram matrix is negated when the orientation is reversed.
+:::
+
+:::{.proposition title="?"}
+$\bar{\CP}^2$ is not diffeomorphic to a complex surface by an orientation-preserving diffeomorphism (or any homeomorphism).
+:::
+
+:::{.proof title="?"}
+We have $\chi_\Top = 3$, and $K_{\bar{\CP}^2} = -c_1(T \bar{\CP}^2) = \pm 3H$.
+Then
+\[
+\chi(\OO) = {1\over 12}\qty{ K_{\bar{\CP}^2}^2 + \chi_\Top} = {1\over 12}(-9+3) \not\in \ZZ
+.\]
+:::
+
+
+:::{.remark}
+Consider $\OO_{\CP^n}(d)$, what are its global sections $H^0(\CP^n, \OO_{\CP^n}(d))$.
+Locally we have $\OO_{\CP^n}(d)(U)$ given by holomorphic functions in $(x_0, \cdots, x_n) \in \pi\inv(U)$ where $\pi: \CC^{n+1} \to \CP^n$ and the functions satisfy $f(\lambda \vector x) = \lambda^d f(\vector x)$.
+The global sections will be the homogeneous degree $d$ polynomials in the coordinates of $\vector x$.
+:::
+
+:::{.remark}
+Why does a holomorphic function $f: \CC^{n+1} \to \CC$ such that $f(\lambda \vector x) = \lambda^d f(\vector x)$ necessarily a polynomial?
+Use the result that any such function with at most polynomial growth is itself a polynomial.
+If $\ro{f}{S^{2d+1}}$ is bounded by $C$, we have $\norm{f}_{L^2} \leq C \abs{x}^{2d}$.
+Since $(\bd_{x_1} \cdots \bd_{x_k})^d f$ is globally bounded $k\geq 2d$, applying Liouville's theorem makes it constant, and so a finite number of derivatives kill $f$ and this forces it to be polynomial.
+:::
+
+
+:::{.remark}
+So how many homogeneous degree $d$ functions are there?
+Here
+\(
+h^0(\CP^n, \OO(d)) =
+\)
+will be the number of linearly independent degree $d$ polynomials in the variables $x_0, \cdots, x_n$, which is $\multichoose{n+1}{d} = {n + d\choose n}$, using the fact that monomials span this space.
+:::
+
+:::{.exercise title="?"}
+Using that $h^0(\CP^2; \OO(k))= h^2(\CP^2; \OO(-3-k) )$ by Serre duality and Riemann-Roch, compute $h^i(\CP^2; \OO(k))$ for all $i, k$.
+:::
+
+:::{.fact}
+$h^i(\CP^n; \OO(k)) = 0$ unless $i=0, n$.
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Wednesday, March 03
+
+Find first 5m.
+
+
+:::{.remark}
+When we considered $\bar{\CP}^2$, we implicitly assumed $T\bar{\CP}^2$ was a complex rank 2 vector bundle with some purported complex structure.
+:::
+
+:::{.claim}
+\[
+c_1( T\bar{\CP}^2) = \pm 3H
+,\]
+although it's not clear that $c_1(K) \in H^2( \bar{\CP}^2; \ZZ) \cong (\ZZ, [-1] )$.
+:::
+
+:::{.remark}
+We had \( \chi(\OO) = {1\over 12} \qty{ K^2 + \chi_\Top} = {1\over 12}(3-n^2) \), and since $3-n^2 \in 12\ZZ$, we have $n^2 \in 3 + 12\ZZ \subset 3 + 4\ZZ$ and this forces $n^2 \equiv 3 \mod 4$.
+:::
+
+:::{.definition title="Differential Complex"}
+Let 
+\[
+0 \to \bundle{E}^0 \mapsvia{d_0} \bundle{E}^1 \mapsvia{d_1} \cdots \to \bundle{E}^n \to 0
+\]
+be a complex (so $d^2 = 0$) of smooth vector bundles on a smooth manifold $X\im \Mfd_\RR^{C^\infty}$.
+Suppose that the $d_i$ are **differential operators**, i.e. in local trivializing charts over $U$ we have 
+
+\[
+\bundle{E}^i \cong \OO^{\oplus r_i} \OO^{\oplus r_{i+1}} \cong \bundle{E}^{i+1}
+\]
+where in every matrix coordinate, $d_i$ is of the form $\sum_{\abs I < N} g_I \bd_I$ where $\bd_I \da \bd_{i_1} \cdots \bd_{i_N}$ is a partial derived and the $g_I$ are smooth functions.
+:::
+
+:::{.example title="?"}
+For $X\in \Mfd_\RR^{C^ \infty }$, we can take 
+\[
+0 \to \OO \mapsvia{d} \Omega^1 \mapsvia{d} \Omega^2 \mapsvia{d} \cdots
+.\]
+In local coordinates, 
+
+- \( \Omega^1 \) is spanned over $\OO$ by $dx_1, \cdots, dx_n$ where $n = \dim_\RR(X)$
+- \( \Omega^2 \) is spanned over $\OO$ by $dx_i \wedge dx_j$ for $1\leq i, j \leq n$.
+
+Then the component of $d$ sending $dx_i \to dx_i \wedge dx_j$ is of the form
+\[
+fdx_i &\mapsto -\dd{f}{x_j} dx_i \wedge dx_j
+.\]
+:::
+
+:::{.example title="?"}
+For $X\in \Mfd_\CC$ and \( \bundle{E} \to X \) a holomorphic vector bundle, take
+\[
+\bundle{E} \tensor A^{0,0} \mapsvia{\delbar} \bundle{E} \tensor A^{0, 1} \mapsvia{\delbar} \bundle{E} \tensor A^{0, 2} \to \cdots
+.\]
+This is because for $s_i$ local holomorphic sections and $\omega$ a smooth form we have
+\[
+\delbar \qty{ (s_1, \cdots, s_r) \tensor \omega } = \qty{s_1, \cdots, s_r} \tensor \delbar \omega
+.\]
+
+
+:::
+
+:::{.definition title="Order of an operator"}
+The maximal $N$ that appears in $\sum_{ \abs I \leq N} g_I \bd_I$ is the **order**.
+:::
+
+:::{.definition title="Symbol Complex"}
+The **symbol complex** is a sequence of vector bundles on $T\dual X$.
+Noting that we have $\pi: T\dual X\to X$, and using pullbacks we can obtain bundles over the cotangent bundle:
+\[
+0 \to \pi^* \bundle{E}_0 \mapsvia{\sigma(d_0)} \pi^* \bundle{E}_1 \mapsvia{\sigma(d_1)} \cdots \to \pi^* \bundle{E}_n \to 0
+.\]
+The **symbol** of the differential operator $d_i$ is $\sigma(d_i)$.
+It is defined by replacing $\del_i$ in $\sum_{\abs I {\color{red} =} N } g_I \del_I$ with $y_i$ where
+\[
+y_i: T\dual U \to \RR
+\]
+is the coordinate function on the second factor of $T\dual U = U \cross \RR^n$ associated to the local coordinate $i$.
+Using that $TU = (T\dual)\dual U$, we can view $\del_i$ as functions on the cotangent bundle, $\sigma(d_i)$ is given in local trivializations by multiplication by a smooth function $\sum_{\abs I = N} g_I y^I$.
+:::
+
+
+:::{.example title="?"}
+Consider $\OO \mapsvia{d} \Omega^1$.
+In local coordinates, this is given by $d = \qty{\del_1, \cdots, \del_n}$, i.e. coordinate-wise differentiation, since we can write a local trivialization \( \Omega^1 = \OO dz_1 \oplus \cdots \oplus \OO dz_n \).
+Then the symbol of $d$ is given by
+\[
+\sigma(d): \pi^* \OO &\to \pi^* \Omega^1 \\
+1 &\mapsto (y_1, \cdots, y_n) 
+,\]
+thought of as vector bundles over $T\dual X$, and this is projection onto to cotangent factor.
+Locally, the image of 1 is given by $y_1 dx_1 + \cdots y_n dx_n$, which is a point in $T_p\dual X$ for all $(p, \alpha) \in T\dual X$ which is an assignment to every point $(p, \alpha) \in T_p\dual X$ a point in $(\pi^* \Omega^1)_{p, \alpha} \cong T_p\dual X$.
+There is a tautological section $(p, \alpha) \to \alpha\in T_p\dual X\in (\pi^* \Omega^1)_{p, \alpha}$, or really $(p, \alpha) \mapsto ( (p, \alpha), \alpha)$.
+:::
+
+
+:::{.remark}
+See similarly to the canonical symplectic structure of the cotangent bundle.
+:::
+
+
+
+:::{.remark}
+More generally, for $d: \Omega^p \to \Omega^{p+1}$, \( \sigma(d) \) acts on the frame \( dx_{i_1} \wedge \cdots dx_{i_p} \) in the following way:
+\[
+\sigma(d)(dx_{i_1} \wedge \cdots \wedge dx_{i_p}) = \sum_y y_y dx_j \wedge dx_{i_1} \wedge \cdots dx_{i_p}
+\]
+where
+\[
+d: fdx_{i_1} \wedge \cdots \wedge dx_{i_p} \mapsto \sum_j \dd{f}{x_j} dx_j \wedge \qty{dx_{i_1} \wedge \cdots \wedge dx_{i_p}}
+.\]
+The symbol complex is 
+\[
+\pi^* \OO \mapsvia{\sigma(d)} \pi^* \Omega^1 \mapsvia{\sigma(d)} \pi^* \Omega^2 \to \cdots \to \pi^* \Omega^n \to 0
+\]
+for $n$ the dimension. 
+In this case, $\sigma(d)$ has the same formula everywhere, since it's $C^ \infty \dash$linear:
+\[
+\sigma(d) = \sum_j y_j dx_j \wedge \qty{\cdots}
+.\]
+
+
+:::
+
+
+:::{.definition title="Elliptic Complex"}
+A differential complex $(\complex{\bundle{E}}, d)$ is **elliptic** if the symbol complex $(\pi^* \complex{\bundle{E}}, \sigma(d))$ is an exact sequence of sheaves (importantly) on $T\dual X \sm \ts{s_z}$ for $s_z$ the zero section.
+:::
+
+
+:::{.claim}
+$(\complex{\Omega}, d)$ is elliptic.
+To check exactness of a sequence of vector bundles, it suffices to check exactness on every fiber.
+Fix $(p, \alpha) \in T\dual X \sm \ts{ s_z }$, then
+\[
+0 \to \CC \mapsvia{\wedge \alpha}  T\dual_p X \mapsvia{\wedge \alpha}  \Wedge^2 T_p\dual X \mapsvia{\wedge \alpha}  \Wedge^3 T_p\dual X \to \cdots
+.\]
+Moreover, if \( \alpha\wedge \beta = 0 \) implies that \( \beta = \alpha\wedge \gamma \) for some \( \gamma \), which implies that this sequence is exact.
+
+
+:::
+
+
+
+
+
+
+
+
 
