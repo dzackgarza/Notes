@@ -148,14 +148,26 @@ Omitted here, but uses same ideas as the previous proofs.
 Hint: take $Q$ to have $M$ in degree 0.
 :::
 
-
 ## Applications to Topology
 
 
-:::{.remark}
+:::{.definition title="Simplicial Homology"}
 See some applications in section 1 of Weibel, e.g. simplicial and singular homology.
 The setup: $X\in \Top, R\in \Ring$ unital, and for $k\geq 0$ let $S_k = S_k(X)$ be the free \(R\dash\)module on $\Hom_\Top( \Delta_k, X)$ where \( \Delta_k\) is the standard simplex
 By ordering the vertices, this induces an ordering on the faces by taking lexicographic ordering.
+Then the restriction of a map $\Delta_k \to X$ to the $i$th face of \( \Delta_k \) gives a map \( \Delta_{k-1} \to X \), which induces an \(R\dash\)module morphism $\bd_i: S_k \to S_{k-1}$
+By summing these we can define \( d \da \sum_{i=0}^k (-1)^i \bd_i: S_k\to S_{k-1} \) and it turns out that $d^2 = 0$.
+So we can define a complex
+\[
+\cdots \to S_2 \mapsvia{d} \to S_1\to S_0 \to 0 \in \Ch(\rmod)
+.\]
+Taking it homology yields the **simplicial homology** of the complex $H_n(X; R) \da H_n(\complex{S}(X) )$.
+:::
+
+:::{.remark}
+Taking $R=\ZZ$ makes $S_k(X)$ a free abelian group.
+If $M$ is any abelian group, we can define $H_n(X; M) \da H_n( \complex{S}(X) \tensor_\ZZ M)$, the homology with **coefficients** in $M$.
+If no coefficients are specified, we write $H_n(X) \da H_n(X; \ZZ)$.
 :::
 
 
