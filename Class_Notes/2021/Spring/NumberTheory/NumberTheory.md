@@ -3,6 +3,8 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\du}{\,du}
+\newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
 }
@@ -48,6 +50,12 @@
 \newcommand{\covol}[0]{\operatorname{covol}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
 \newcommand{\Ch}[0]{\operatorname{Ch}}
+\newcommand{\HF}[0]{\operatorname{HF}}
+\newcommand{\CF}[0]{\operatorname{HF}}
+\newcommand{\ZHS}[0]{\operatorname{ZHS}}
+\newcommand{\QHS}[0]{\operatorname{QHS}}
+\newcommand{\ZHB}[0]{\operatorname{ZHB}}
+\newcommand{\QHB}[0]{\operatorname{QHB}}
 \newcommand{\ks}[0]{\operatorname{ks}}
 \newcommand{\Arg}[0]{\operatorname{Arg}}
 \newcommand{\PGL}[0]{\operatorname{PGL}}
@@ -162,6 +170,7 @@
 \newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
+\newcommand{\discriminant}[0]{{\Delta}}
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
@@ -254,7 +263,7 @@
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
-\newcommand{\injectsvia}[1]{\xhookrightarrow{#1}}
+\newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
   \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
@@ -305,6 +314,7 @@
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
 \newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\Taut}[0]{{\operatorname{Taut}}}
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
@@ -400,6 +410,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
+\newcommand{\complex}[1]{\mathbf{#1}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -497,9 +508,13 @@
 \newcommand{\divides}{\mid}
 \newcommand{\notdivides}{\nmid}
 \newcommand{\fractional}[1]{\theset{#1}}
+\newcommand{\fractionalpart}[1]{\theset{#1}}
+\newcommand{\integerpart}[1]{\left[ {#1}\right] }
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
+\def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
+\newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
 # Thursday, January 14
 
@@ -4099,4 +4114,327 @@ Then writing $m' = x^2 + y^2 + z^2 + w^2$, we have
 There are other applications of Minkowski's theorem that tell you when certain types of numbers are represented by special quadratic forms (such as the above sum of squares).
 See Pete Clark's papers!
 :::
+
+
+# Ch. 13: Starting Over (Thursday, March 04)
+
+Idea: we've phrased everything so far for quadratic fields, now we want to do everything for general number fields.
+The basic objects and tools: norm and trace.
+If $K/\QQ$ is a number field that's Galois, we define \( N \alpha \da \prod_{ \sigma \in G} \sigma( \alpha) \) and \( \Tr \alpha \da \sum_{ \sigma\in G } \sigma( \alpha) \).
+We'll have to modify this for a general number field since there's not an immediate candidate for the Galois group.
+
+Setup: let $K$ be a number field with \( [K: \QQ] = n \), then recall that there exist $n$ different embeddings \( \sigma: K \embeds \CC \).
+
+:::{.definition title="Field Polynomial"}
+If \( \alpha\in K \) then define its **field polynomial**
+\[
+\varphi_{ \alpha}(x) \da \prod_{\sigma: K\embeds \CC} (x - \sigma( \alpha) )
+.\]
+:::
+
+:::{.proposition title="?"}
+This is a monic polynomial with $\CC\dash$coefficients, and in fact \( \varphi_{ \alpha} \in \QQ[x] \) and \( \varphi_{ \alpha}(x) = \min_{ \alpha} (x)^n\) (the minimal polynomial over $\QQ$) for some power $n$, and the correct choice turns out to be \( n \da [K: F[ \alpha] ] \).
+:::
+
+:::{.remark}
+Note that the first claim follows from the second since \( \min_{ \alpha}(x) \in \QQ[x] \).
+:::
+
+:::{.lemma title="?"}
+Let $K$ be a number field with $[K: \QQ] = n$ and $F\leq K$ a subfield with $[F: \QQ] = r$.
+Note that $r\divides n$.
+Then every embedding \( \tau: F\embeds \CC \) extends in $n/r$ ways to an embedding \( \sigma: K \injects \CC \).
+:::
+
+:::{.proof title="of lemma, sketch"}
+Standard field theory exercise: by the primitive element theorem, write $K = F( \theta)$ where \( \deg( \theta) = [K: F] = n/r \) over $F$.
+Since we're extending an embedding, it suffices to define what it does to \( \theta \).
+If $m(x) = \min_{ \theta}(x)$ over $F$, then \( \sigma( \theta) \) must be a root of \( (\tau m)(x) \), where the latter polynomial is taking \( m \) and applying \( \tau \) to each of the coefficients.
+Note that this preserves the degree, so \( \deg \tau m = n/r \), and there are \( n/r \) choices for \( \sigma( \theta) \).
+Now the proof follows from checking that every single root is a possibility.
+:::
+
+:::{.proof title="of proposition"}
+By definition, \( \varphi_{ \alpha}(x) \) is a product over embeddings \( \sigma:K \embeds \CC \), and each such \( \sigma \) restricts to an embedding $F[ \alpha] \injects \CC$, so applying the lemma to \( F[ \alpha] \leq K \) yields 
+\[
+\varphi_{ \alpha}(x) 
+&= \prod_{ \sigma: K\embeds \CC} (x - \sigma( \alpha) ) \\
+&= \prod_{ \tau F[ \alpha] \embeds \CC} \prod_{ \sigma, \ro{ \sigma}{ F[ \alpha ] } = \tau } (x - \sigma( \alpha) ) \\
+&= \prod_{ \tau: F[ \alpha ] \embeds \CC } (x - \tau( \alpha ) )^{n(\tau)} \\
+&= \qty{ \prod_{ \tau: F[ \alpha] \embeds \CC} (x - \tau( \alpha ) ) }^{[K: F(\alpha)]} \\
+&= \min_ \alpha(x) ^{[ K : F( \alpha ) ] }
+.\]
+where 
+- We've first just reorganized the product by grouping, 
+- Then we've used that all of the terms in the inner product must have the same value for \( \sigma( \alpha) \) since \( \alpha\in F[ \alpha] \) and this makes \( \sigma( \alpha) = \tau( \alpha) \),
+- We note that the exponent should be the number of terms in the inner product, i.e. the number of \( \sigma \) extending \( \tau \), i.e. \( n(\tau) = [K: F[ \alpha] ] \) since \( r = [F[ \alpha] : \QQ] \) and \( n = [K: \QQ ] \),
+- The last equality follows from remarks in chapter 1.
+:::
+
+:::{.remark}
+The field polynomial gives us a way to determine whether an element of a number field is in its ring of integers:
+:::
+
+:::{.proposition title="?"}
+\[
+\alpha\in \ZZ_K \iff \varphi_{ \alpha}(x) \in \ZZ[x]
+.\]
+:::
+
+:::{.proof title="?"}
+$\impliedby$:
+This direction is easy, since having integer coefficients, being monic, and having \( \alpha \) as a root since \( x - \sigma( \alpha) = x - \alpha \) for some \( \sigma \).
+But this puts \( \alpha \in \ZZ_K \) by definition.
+
+$\implies$:
+We proved that if \( \alpha\in \ZZ_K \) then \( \min_ \alpha(x) \in \ZZ[x] \), and \( \varphi_{ \alpha} \)  is just a power of \( \min_ \alpha(x)\).
+:::
+
+:::{.definition title="Norm and Trace"}
+Write 
+\[
+\varphi_{ \alpha} (x) = x^n + \sum_{i=1}^n a_i x^i \in \QQ[x]
+,\]
+we then define the **norm** and **trace**[^norm_and_trace]
+
+[^norm_and_trace]: 
+External note: these come from the trace and determinant of the map \( y \mapsto y\cdot x \) on $L/K$, viewed as a $K\dash$linear map on $L$.
+
+
+respectively as
+\[
+N( \alpha) &\da (-1)^n a_0 \in \QQ\\
+\Tr( \alpha) &\da -a_{n-1} \in \QQ
+.\]
+Note that if \( \alpha \in \ZZ_K \) then these are both in fact in $\ZZ$.
+:::
+
+
+
+:::{.remark}
+Note that $-(1)^n a_0 = \prod r_i$ is the product of the roots of \( \varphi_{ \alpha} (x)\) and \( -a_{n-1} = \sum r_i \), so equivalently we can think of these as 
+\[
+N( \alpha ) &= \prod_{ \sigma: K \embeds \CC } \sigma( \alpha) \\
+\Tr( \alpha ) &= \sum_{\sigma: K \embeds \CC} \sigma( \alpha) 
+.\]
+It's also the case that $N(\wait)$ is multiplicative and $\Tr(\wait)$ is $\QQ \dash$linear.
+:::
+
+## Discriminants
+
+Let $K$ be a number field and $[K : \QQ] = n$.
+Pick an arbitrary ordering of embeddings $\sigma_1, \cdots, \sigma_n: K \embeds \CC$.
+
+
+:::{.definition title="Tuple Discriminant"}
+For any $n\dash$tuple $(w_1, \cdots, w_n) \in K^n$ define the **tuple discriminant** as 
+\[
+\Delta(w_1, \cdots, w_n) \da \det( D_{w_1, \cdots, w_n} )^2 
+\]
+where
+\[
+D_{w_1, \cdots, w_n}
+=
+\begin{bmatrix}
+\sigma_1(w_1) & \cdots  & \sigma_1(w_n) \\
+\sigma_2(w_1) & \cdots  & \sigma_2(w_n) \\
+\vdots & \cdots & \vdots \\
+\sigma_n(w_1) & \cdots  & \sigma_n(w_n) 
+\end{bmatrix}
+.\]
+
+
+:::
+
+:::{.remark}
+Why square this? 
+Permuting two columns changes the sign of the determinant, which is just swapping the order of the embeddings.
+So squaring keeps this invariant under relabeling the $\sigma_i$.
+It turns out that this is a rational number, since we can write
+\[
+\Delta(w_1, \cdots, w_n) 
+= \det(D) \det(D) 
+\det(D^t D)
+,\]
+where $(D^t D)_{ij}  = \Tr(w_i w_j) \implies D^t D \in \Mat(n\times n, \QQ)$.
+So taking the determinant yields a rational number, so $\Delta(w_1, \cdots, w_n) \in \QQ$. 
+Moreover if you start with the $w_i \in \ZZ_K$, then $D^t D \in \Mat(n\times n, \ZZ)$ and thus $\Delta(w_1, \cdots, w_n) \in \ZZ$.
+
+Why is this called the discriminant?
+:::
+
+:::{.theorem title="?"}
+Let $w_1, \cdots, w_n\in K$, then 
+\[
+\ts{ w_1, \cdots, w_n } \text{ form a $\QQ\dash$basis for $K$}
+\iff
+\Delta(w_1, \cdots, w_n) \neq 0
+.\]
+So this *discriminates* between bases and non-bases.
+:::
+
+:::{.proof title="of theorem"}
+$\impliedby$:
+Suppose $\Delta(w_1, \cdots, w_n) \neq 0$.
+Note that the $n$ elements $w_1, \cdots, w_n$ are $n$ elements in an $n\dash$dimensional $\QQ\dash$vector space, so the only way they could fail to be a basis would be if there were a linear dependence.
+But then considering the matrix $D$ above, a $\QQ\dash$linear dependence between the $w_i$, this translates to a corresponding dependence between the columns of $D$, which would yield the contradiction $\det(D)^2 = 0$.
+
+$\implies$:
+This is the harder part.
+Toward a contradiction suppose $w_1, \cdots, w_n$ are a $\QQ\dash$basis for $K$ but $\Delta(w_1, \cdots, w_n) = \det(D^t D) = 0$.
+Then the columns of $D^t D$ are linearly dependent, so there are $c_i \in \QQ$ not all zero such that 
+\[
+\sum_{j=1}^n c_j \Tr( w_i w_j) = 0 && \forall i=1, \cdots, n
+.\]
+Introduce an element \( \beta \da \sum_{j=1}^n c_j w_j \in K\units \), which is not zero since not all of the $c_j$ are zero and the \( w_i \) are a basis.
+Using linearity of the trace, we can write 
+\[
+\Tr(w_i \beta) = 0 && \forall i=1, \cdots, n
+.\]
+Again using linearity, we actually have \( \Tr( \alpha \beta) = 0 \) for all \( \alpha\in K \) since every \( \alpha \) is in the \( \QQ\dash \)span of the $w_i$, which are a basis.
+It's then perfectly fine to take \( \alpha \da \beta\inv \), which forces \( \Tr(1) = 0 \).
+But we can compute directly that \( \Tr(1) = n > 0 \) since every embedding \( \sigma \) must send 1 to 1.
+:::
+
+
+## Integral Bases 
+
+:::{.theorem title="Integral Basis Theorem"}
+For $K$ any number field of degree $n$, $\ZZ_K \in \mods{\ZZ}$ is free of rank $n$.
+:::
+
+:::{.observation}
+Suppose $\vector (w_1, \cdots, w_n), (\theta_1, \cdots, \theta_n) \in K$ where \( \tv{w_1, \cdots, w_n} = \tv{ \theta_1, \cdots, \theta_n } M \) for some matrix $M\in \Mat(n\times n, \QQ)$.
+Then 
+\[
+\Delta(\elts{w}{n}) = \Delta(\elts{\theta}{n}) \det(M)^2
+.\]
+
+:::
+
+:::{.proof title="of observation"}
+Applying the embeddings $\sigma_i$ yields an equality $D_{ \elts w n }= D_{\elts \theta n } M$.
+Now taking determinants and squaring yields the result.
+:::
+
+:::{.proof title="of integral basis theorem"}
+Choose \( \elts w n \in \ZZ_K \) such that
+
+1. \( \discriminant(\elts w n ) \neq 0 \) 
+2. \( \abs{ \discriminant(\elts w n ) } \) is minimal among those satisfying (1).
+
+Does this make sense?
+The claim is that if (1) is possible, then (1) and (2) is also possible.
+This is because $\discriminant(\elts w n ) \in \ZZ$, taking absolute values makes it positive, and then we can minimize among the positive integers occurring using the well-ordering principle.
+But we can choose tuples satisfying (1): we can always choose a $\QQ\dash$basis, and to get them down to $\ZZ_K$ instead of $K$, they can just be scaled by a rational integer without changing that they form a basis.
+
+
+:::{.claim}
+Any tuple \( \elts w n \) satisfying (1) and (2) will be a \( \ZZ\dash \)basis for $\ZZ_K$.
+:::
+
+How could this fail?
+No elements could have multiple representations as a $\ZZ\dash$basis, since they don't admit any in the $\QQ\dash$basis.
+So it suffices to show \( \spanof_\ZZ \ts{ \elts w n } = \ZZ_K \).
+If not, choose \( \alpha\in \ZZ_K \) not in their $\ZZ\dash$span -- it must still be in the $\QQ\dash$span, so we can write \( \alpha= \sum c_i w_i \) where the $c_i\in \QQ$.
+We can assume that $c_1\not \in \ZZ$ by renumbering.
+Now write 
+\[
+\beta \da \alpha - \integerpart{c_1} w_1 \in \ZZ_K
+,\]
+where \( \integerpart[c_1] \) denotes taking the integer part.
+We can write \( \beta = \fractionalpart{c_1}w_1 + c_2 w_2 + \cdots + c_n w_n \).
+Observe that the tuple 
+\[
+\tv{ \beta, w_2, \cdots, w_n} 
+= \tv{ w_1 , w_2, \cdots, w_n} 
+M,
+&& 
+M \da 
+\begin{bmatrix}
+\fractionalpart{c_1} & 0  & \cdots & \vdots \\
+c_2 &  1 & \ddots & \vdots \\
+c_n &  0 & 0 & 1
+\end{bmatrix}
+.\]
+noting that the first column describes how to write \( \beta \) as a linear combination of the \( w_i \).
+Taking discriminants yields
+\[
+\discriminant(\beta, w_2, \cdots, w_n) 
+= \discriminant( \elts w n )\det(M)^2
+= \discriminant( \elts w n )\fractionalpart{c_1}^2
+,\]
+where we've computed the determinant using the fact that it is lower triangular.
+Since $c_1\not\in\ZZ$, we have \( \fractionalpart{c_1} \) nonzero, real, between 0 and 1.
+Since the discriminant was nonzero, the right-hand side is nonzero and thus neither is the left-hand side.
+We would then have
+\[
+0 < 
+\abs{ \discriminant( \beta, w_2, \cdots, w_n) }
+<
+\abs{ \discriminant( \elts w n ) }
+,\]
+which contradicts the minimality of the $w_i$.
+$\contradiction$
+:::
+
+:::{.remark}
+Note that this is non-constructive, finding a basis is another question!
+:::
+
+## Discriminant of Number Fields
+
+
+:::{.definition title="Discriminant of a Number Field"}
+Let $K$ be a number field, then the **discriminant** of $K$ is defined as 
+\[
+\discriminant_K \da \discriminant(\elts w n) 
+,\]
+where \( \ts{ w_i } \) is any $\ZZ\dash$basis for $\ZZ_K$.
+:::
+
+
+:::{.remark}
+Is this actually an invariant of $K$, since we made a choice of basis?
+Given two $\ZZ\dash$bases for $\ZZ_K$, say \( \elts w n, \elts \theta n \), then
+\[
+\tv{ \elts w n} = \tv{ \elts \theta n } M && M \in \Gl(n, \ZZ)
+.\]
+Hence 
+\[
+\discriminant(\elts w n) 
+= \discriminant( \elts \theta n ) \det(M)^2
+= \discriminant( \elts \theta n )
+.\]
+using that invertible matrices have unit determinants, which in $\ZZ$ are just \( \pm 1 \).
+:::
+
+
+:::{.remark}
+Why do we care?
+The discriminant measures the complexity of the number field and carries arithmetic information:
+
+- Hermite's theorem: for every $X>0$, there are only finitely many number fields such that $\abs{ \discriminant_K } \leq X$.
+  Interesting question: how many are there as a function of $X$?
+  This is studied today by fixing a degree $n$, and we have good answers for $n=2,3,4,5$, but it's still open to get an asymptotic formula for $n>5$.
+  Note that our new faculty hire this year is an expert on these kinds of questions!
+
+- A theorem of Dedekind: taking a prime $p\in \ZZ$, we have
+\[
+p \text{ ramifies in } \ZZ_K \iff p \divides \discriminant_K
+,\]
+where **ramification** occurs if when \( \gens{ p }\normal \ZZ_K  \) factors into prime ideals with a repeated prime factor.
+In particular, \( \discriminant(\wait) < \infty \), and so only finitely many such primes can occur.
+:::
+
+
+
+
+
+
+
+
+
+
+
 

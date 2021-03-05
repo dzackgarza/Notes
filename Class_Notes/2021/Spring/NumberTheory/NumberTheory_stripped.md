@@ -2576,6 +2576,248 @@ We made the assumption that \( m \) was squarefree, but we can write any \( m\in
 . There are other applications of Minkowski's theorem that tell you when certain types of numbers are represented by special quadratic forms (such as the above sum of squares). See Pete Clark's papers!
 :::
 
+# Ch. 13: Starting Over (Thursday, March 04)
+
+Idea: we've phrased everything so far for quadratic fields, now we want to do everything for general number fields. The basic objects and tools: norm and trace. If \( K/{\mathbb{Q}} \) is a number field that's Galois, we define \( N \alpha \coloneqq\prod_{ \sigma \in G} \sigma( \alpha) \) and \( \operatorname{Tr}\alpha \coloneqq\sum_{ \sigma\in G } \sigma( \alpha) \). We'll have to modify this for a general number field since there's not an immediate candidate for the Galois group.
+
+Setup: let \( K \) be a number field with \( [K: {\mathbb{Q}}] = n \), then recall that there exist \( n \) different embeddings \( \sigma: K \hookrightarrow{\mathbb{C}} \).
+
+::: {.definition title="Field Polynomial"}
+If \( \alpha\in K \) then define its **field polynomial**
+\[
+\varphi_{ \alpha}(x) \coloneqq\prod_{\sigma: K\hookrightarrow{\mathbb{C}}} (x - \sigma( \alpha) )
+.\]
+:::
+
+::: {.proposition title="?"}
+This is a monic polynomial with \( {\mathbb{C}}{\hbox{-}} \)coefficients, and in fact \( \varphi_{ \alpha} \in {\mathbb{Q}}[x] \) and \( \varphi_{ \alpha}(x) = \min_{ \alpha} (x)^n \) (the minimal polynomial over \( {\mathbb{Q}} \)) for some power \( n \), and the correct choice turns out to be \( n \coloneqq[K: F[ \alpha] ] \).
+:::
+
+::: {.remark}
+Note that the first claim follows from the second since \( \min_{ \alpha}(x) \in {\mathbb{Q}}[x] \).
+:::
+
+::: {.lemma title="?"}
+Let \( K \) be a number field with \( [K: {\mathbb{Q}}] = n \) and \( F\leq K \) a subfield with \( [F: {\mathbb{Q}}] = r \). Note that \( r\mathrel{\Big|}n \). Then every embedding \( \tau: F\hookrightarrow{\mathbb{C}} \) extends in \( n/r \) ways to an embedding \( \sigma: K \hookrightarrow{\mathbb{C}} \).
+:::
+
+::: {.proof title="of lemma, sketch"}
+Standard field theory exercise: by the primitive element theorem, write \( K = F( \theta) \) where \( \deg( \theta) = [K: F] = n/r \) over \( F \). Since we're extending an embedding, it suffices to define what it does to \( \theta \). If \( m(x) = \min_{ \theta}(x) \) over \( F \), then \( \sigma( \theta) \) must be a root of \( (\tau m)(x) \), where the latter polynomial is taking \( m \) and applying \( \tau \) to each of the coefficients. Note that this preserves the degree, so \( \deg \tau m = n/r \), and there are \( n/r \) choices for \( \sigma( \theta) \). Now the proof follows from checking that every single root is a possibility.
+:::
+
+::: {.proof title="of proposition"}
+By definition, \( \varphi_{ \alpha}(x) \) is a product over embeddings \( \sigma:K \hookrightarrow{\mathbb{C}} \), and each such \( \sigma \) restricts to an embedding \( F[ \alpha] \hookrightarrow{\mathbb{C}} \), so applying the lemma to \( F[ \alpha] \leq K \) yields
+\[
+\varphi_{ \alpha}(x) 
+&= \prod_{ \sigma: K\hookrightarrow{\mathbb{C}}} (x - \sigma( \alpha) ) \\
+&= \prod_{ \tau F[ \alpha] \hookrightarrow{\mathbb{C}}} \prod_{ \sigma, { \left.{{ \sigma}} \right|_{{ F[ \alpha ] }} } = \tau } (x - \sigma( \alpha) ) \\
+&= \prod_{ \tau: F[ \alpha ] \hookrightarrow{\mathbb{C}}} (x - \tau( \alpha ) )^{n(\tau)} \\
+&= \qty{ \prod_{ \tau: F[ \alpha] \hookrightarrow{\mathbb{C}}} (x - \tau( \alpha ) ) }^{[K: F(\alpha)]} \\
+&= \min_ \alpha(x) ^{[ K : F( \alpha ) ] }
+.\]
+where - We've first just reorganized the product by grouping, - Then we've used that all of the terms in the inner product must have the same value for \( \sigma( \alpha) \) since \( \alpha\in F[ \alpha] \) and this makes \( \sigma( \alpha) = \tau( \alpha) \), - We note that the exponent should be the number of terms in the inner product, i.e. the number of \( \sigma \) extending \( \tau \), i.e. \( n(\tau) = [K: F[ \alpha] ] \) since \( r = [F[ \alpha] : {\mathbb{Q}}] \) and \( n = [K: {\mathbb{Q}}] \), - The last equality follows from remarks in chapter 1.
+:::
+
+::: {.remark}
+The field polynomial gives us a way to determine whether an element of a number field is in its ring of integers:
+:::
+
+::: {.proposition title="?"}
+\[
+\alpha\in {\mathbb{Z}}_K \iff \varphi_{ \alpha}(x) \in {\mathbb{Z}}[x]
+.\]
+:::
+
+::: {.proof title="?"}
+\( \impliedby \): This direction is easy, since having integer coefficients, being monic, and having \( \alpha \) as a root since \( x - \sigma( \alpha) = x - \alpha \) for some \( \sigma \). But this puts \( \alpha \in {\mathbb{Z}}_K \) by definition.
+
+\( \implies \): We proved that if \( \alpha\in {\mathbb{Z}}_K \) then \( \min_ \alpha(x) \in {\mathbb{Z}}[x] \), and \( \varphi_{ \alpha} \) is just a power of \( \min_ \alpha(x) \).
+:::
+
+::: {.definition title="Norm and Trace"}
+Write
+\[
+\varphi_{ \alpha} (x) = x^n + \sum_{i=1}^n a_i x^i \in {\mathbb{Q}}[x]
+,\]
+we then define the **norm** and **trace**[^9]
+
+respectively as
+\[
+N( \alpha) &\coloneqq(-1)^n a_0 \in {\mathbb{Q}}\\
+\operatorname{Tr}( \alpha) &\coloneqq-a_{n-1} \in {\mathbb{Q}}
+.\]
+Note that if \( \alpha \in {\mathbb{Z}}_K \) then these are both in fact in \( {\mathbb{Z}} \).
+:::
+
+::: {.remark}
+Note that \( -(1)^n a_0 = \prod r_i \) is the product of the roots of \( \varphi_{ \alpha} (x) \) and \( -a_{n-1} = \sum r_i \), so equivalently we can think of these as
+\[
+N( \alpha ) &= \prod_{ \sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) \\
+\operatorname{Tr}( \alpha ) &= \sum_{\sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) 
+.\]
+It's also the case that \( N({\,\cdot\,}) \) is multiplicative and \( \operatorname{Tr}({\,\cdot\,}) \) is \( {\mathbb{Q}}{\hbox{-}} \)linear.
+:::
+
+## Discriminants
+
+Let \( K \) be a number field and \( [K : {\mathbb{Q}}] = n \). Pick an arbitrary ordering of embeddings \( \sigma_1, \cdots, \sigma_n: K \hookrightarrow{\mathbb{C}} \).
+
+::: {.definition title="Tuple Discriminant"}
+For any \( n{\hbox{-}} \)tuple \( (w_1, \cdots, w_n) \in K^n \) define the **tuple discriminant** as
+\[
+\Delta(w_1, \cdots, w_n) \coloneqq\det( D_{w_1, \cdots, w_n} )^2 
+\]
+where
+\[
+D_{w_1, \cdots, w_n}
+=
+\begin{bmatrix}
+\sigma_1(w_1) & \cdots  & \sigma_1(w_n) \\
+\sigma_2(w_1) & \cdots  & \sigma_2(w_n) \\
+\vdots & \cdots & \vdots \\
+\sigma_n(w_1) & \cdots  & \sigma_n(w_n) 
+\end{bmatrix}
+.\]
+:::
+
+::: {.remark}
+Why square this? Permuting two columns changes the sign of the determinant, which is just swapping the order of the embeddings. So squaring keeps this invariant under relabeling the \( \sigma_i \). It turns out that this is a rational number, since we can write
+\[
+\Delta(w_1, \cdots, w_n) 
+= \det(D) \det(D) 
+\det(D^t D)
+,\]
+where \( (D^t D)_{ij} = \operatorname{Tr}(w_i w_j) \implies D^t D \in \operatorname{Mat}(n\times n, {\mathbb{Q}}) \). So taking the determinant yields a rational number, so \( \Delta(w_1, \cdots, w_n) \in {\mathbb{Q}} \). Moreover if you start with the \( w_i \in {\mathbb{Z}}_K \), then \( D^t D \in \operatorname{Mat}(n\times n, {\mathbb{Z}}) \) and thus \( \Delta(w_1, \cdots, w_n) \in {\mathbb{Z}} \).
+
+Why is this called the discriminant?
+:::
+
+::: {.theorem title="?"}
+Let \( w_1, \cdots, w_n\in K \), then
+\[
+\left\{{ w_1, \cdots, w_n }\right\} \text{ form a ${\mathbb{Q}}{\hbox{-}}$basis for $K$}
+\iff
+\Delta(w_1, \cdots, w_n) \neq 0
+.\]
+So this *discriminates* between bases and non-bases.
+:::
+
+::: {.proof title="of theorem"}
+\( \impliedby \): Suppose \( \Delta(w_1, \cdots, w_n) \neq 0 \). Note that the \( n \) elements \( w_1, \cdots, w_n \) are \( n \) elements in an \( n{\hbox{-}} \)dimensional \( {\mathbb{Q}}{\hbox{-}} \)vector space, so the only way they could fail to be a basis would be if there were a linear dependence. But then considering the matrix \( D \) above, a \( {\mathbb{Q}}{\hbox{-}} \)linear dependence between the \( w_i \), this translates to a corresponding dependence between the columns of \( D \), which would yield the contradiction \( \det(D)^2 = 0 \).
+
+\( \implies \): This is the harder part. Toward a contradiction suppose \( w_1, \cdots, w_n \) are a \( {\mathbb{Q}}{\hbox{-}} \)basis for \( K \) but \( \Delta(w_1, \cdots, w_n) = \det(D^t D) = 0 \). Then the columns of \( D^t D \) are linearly dependent, so there are \( c_i \in {\mathbb{Q}} \) not all zero such that
+\[
+\sum_{j=1}^n c_j \operatorname{Tr}( w_i w_j) = 0 && \forall i=1, \cdots, n
+.\]
+Introduce an element \( \beta \coloneqq\sum_{j=1}^n c_j w_j \in K^{\times} \), which is not zero since not all of the \( c_j \) are zero and the \( w_i \) are a basis. Using linearity of the trace, we can write
+\[
+\operatorname{Tr}(w_i \beta) = 0 && \forall i=1, \cdots, n
+.\]
+Again using linearity, we actually have \( \operatorname{Tr}( \alpha \beta) = 0 \) for all \( \alpha\in K \) since every \( \alpha \) is in the \( {\mathbb{Q}}{\hbox{-}} \)span of the \( w_i \), which are a basis. It's then perfectly fine to take \( \alpha \coloneqq\beta^{-1} \), which forces \( \operatorname{Tr}(1) = 0 \). But we can compute directly that \( \operatorname{Tr}(1) = n > 0 \) since every embedding \( \sigma \) must send 1 to 1.
+:::
+
+## Integral Bases
+
+::: {.theorem title="Integral Basis Theorem"}
+For \( K \) any number field of degree \( n \), \( {\mathbb{Z}}_K \in {{{\mathbb{Z}}}{\hbox{-}}\mathbf{Mod}} \) is free of rank \( n \).
+:::
+
+::: {.observation}
+Suppose \( \mathbf{(}w_1, \cdots, w_n), (\theta_1, \cdots, \theta_n) \in K \) where \( {\left[ {w_1, \cdots, w_n} \right]} = {\left[ { \theta_1, \cdots, \theta_n } \right]} M \) for some matrix \( M\in \operatorname{Mat}(n\times n, {\mathbb{Q}}) \). Then
+\[
+\Delta({ {w}_1, {w}_2, \cdots, {w}_{n}}) = \Delta({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{n}}) \det(M)^2
+.\]
+:::
+
+::: {.proof title="of observation"}
+Applying the embeddings \( \sigma_i \) yields an equality \( D_{ { {w}_1, {w}_2, \cdots, {w}_{n}} }= D_{{ {\theta }_1, {\theta }_2, \cdots, {\theta }_{n}} } M \). Now taking determinants and squaring yields the result.
+:::
+
+::: {.proof title="of integral basis theorem"}
+Choose \( { {w}_1, {w}_2, \cdots, {w}_{n}} \in {\mathbb{Z}}_K \) such that
+
+1.  \( {\Delta}({ {w}_1, {w}_2, \cdots, {w}_{n}} ) \neq 0 \)
+2.  \( {\left\lvert { {\Delta}({ {w}_1, {w}_2, \cdots, {w}_{n}} ) } \right\rvert} \) is minimal among those satisfying (1).
+
+Does this make sense? The claim is that if (1) is possible, then (1) and (2) is also possible. This is because \( {\Delta}({ {w}_1, {w}_2, \cdots, {w}_{n}} ) \in {\mathbb{Z}} \), taking absolute values makes it positive, and then we can minimize among the positive integers occurring using the well-ordering principle. But we can choose tuples satisfying (1): we can always choose a \( {\mathbb{Q}}{\hbox{-}} \)basis, and to get them down to \( {\mathbb{Z}}_K \) instead of \( K \), they can just be scaled by a rational integer without changing that they form a basis.
+
+::: {.claim}
+Any tuple \( { {w}_1, {w}_2, \cdots, {w}_{n}} \) satisfying (1) and (2) will be a \( {\mathbb{Z}}{\hbox{-}} \)basis for \( {\mathbb{Z}}_K \).
+:::
+
+How could this fail? No elements could have multiple representations as a \( {\mathbb{Z}}{\hbox{-}} \)basis, since they don't admit any in the \( {\mathbb{Q}}{\hbox{-}} \)basis. So it suffices to show \( {\operatorname{span}}_{\mathbb{Z}}\left\{{ { {w}_1, {w}_2, \cdots, {w}_{n}} }\right\} = {\mathbb{Z}}_K \). If not, choose \( \alpha\in {\mathbb{Z}}_K \) not in their \( {\mathbb{Z}}{\hbox{-}} \)span -- it must still be in the \( {\mathbb{Q}}{\hbox{-}} \)span, so we can write \( \alpha= \sum c_i w_i \) where the \( c_i\in {\mathbb{Q}} \). We can assume that \( c_1\not \in {\mathbb{Z}} \) by renumbering. Now write
+\[
+\beta \coloneqq\alpha - \left[ {c_1}\right]  w_1 \in {\mathbb{Z}}_K
+,\]
+where \( \left[ {[}\right] c_1] \) denotes taking the integer part. We can write \( \beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n \). Observe that the tuple
+\[
+{\left[ { \beta, w_2, \cdots, w_n} \right]} 
+= {\left[ { w_1 , w_2, \cdots, w_n} \right]} 
+M,
+&& 
+M \coloneqq
+\begin{bmatrix}
+\left\{{c_1}\right\} & 0  & \cdots & \vdots \\
+c_2 &  1 & \ddots & \vdots \\
+c_n &  0 & 0 & 1
+\end{bmatrix}
+.\]
+noting that the first column describes how to write \( \beta \) as a linear combination of the \( w_i \). Taking discriminants yields
+\[
+{\Delta}(\beta, w_2, \cdots, w_n) 
+= {\Delta}( { {w}_1, {w}_2, \cdots, {w}_{n}} )\det(M)^2
+= {\Delta}( { {w}_1, {w}_2, \cdots, {w}_{n}} )\left\{{c_1}\right\}^2
+,\]
+where we've computed the determinant using the fact that it is lower triangular. Since \( c_1\not\in{\mathbb{Z}} \), we have \( \left\{{c_1}\right\} \) nonzero, real, between 0 and 1. Since the discriminant was nonzero, the right-hand side is nonzero and thus neither is the left-hand side. We would then have
+\[
+0 < 
+{\left\lvert { {\Delta}( \beta, w_2, \cdots, w_n) } \right\rvert}
+<
+{\left\lvert { {\Delta}( { {w}_1, {w}_2, \cdots, {w}_{n}} ) } \right\rvert}
+,\]
+which contradicts the minimality of the \( w_i \). \( \contradiction \)
+:::
+
+::: {.remark}
+Note that this is non-constructive, finding a basis is another question!
+:::
+
+## Discriminant of Number Fields
+
+::: {.definition title="Discriminant of a Number Field"}
+Let \( K \) be a number field, then the **discriminant** of \( K \) is defined as
+\[
+{\Delta}_K \coloneqq{\Delta}({ {w}_1, {w}_2, \cdots, {w}_{n}}) 
+,\]
+where \( \left\{{ w_i }\right\} \) is any \( {\mathbb{Z}}{\hbox{-}} \)basis for \( {\mathbb{Z}}_K \).
+:::
+
+::: {.remark}
+Is this actually an invariant of \( K \), since we made a choice of basis? Given two \( {\mathbb{Z}}{\hbox{-}} \)bases for \( {\mathbb{Z}}_K \), say \( { {w}_1, {w}_2, \cdots, {w}_{n}}, { {\theta }_1, {\theta }_2, \cdots, {\theta }_{n}} \), then
+\[
+{\left[ { { {w}_1, {w}_2, \cdots, {w}_{n}}} \right]} = {\left[ { { {\theta }_1, {\theta }_2, \cdots, {\theta }_{n}} } \right]} M && M \in \operatorname{GL}(n, {\mathbb{Z}})
+.\]
+Hence
+\[
+{\Delta}({ {w}_1, {w}_2, \cdots, {w}_{n}}) 
+= {\Delta}( { {\theta }_1, {\theta }_2, \cdots, {\theta }_{n}} ) \det(M)^2
+= {\Delta}( { {\theta }_1, {\theta }_2, \cdots, {\theta }_{n}} )
+.\]
+using that invertible matrices have unit determinants, which in \( {\mathbb{Z}} \) are just \( \pm 1 \).
+:::
+
+::: {.remark}
+Why do we care? The discriminant measures the complexity of the number field and carries arithmetic information:
+
+-   Hermite's theorem: for every \( X>0 \), there are only finitely many number fields such that \( {\left\lvert { {\Delta}_K } \right\rvert} \leq X \). Interesting question: how many are there as a function of \( X \)? This is studied today by fixing a degree \( n \), and we have good answers for \( n=2,3,4,5 \), but it's still open to get an asymptotic formula for \( n>5 \). Note that our new faculty hire this year is an expert on these kinds of questions!
+
+-   A theorem of Dedekind: taking a prime \( p\in {\mathbb{Z}} \), we have
+    \[
+    p \text{ ramifies in } {\mathbb{Z}}_K \iff p \mathrel{\Big|}{\Delta}_K
+    ,\]
+    where **ramification** occurs if when \( \left\langle{ p }\right\rangle{~\trianglelefteq~}{\mathbb{Z}}_K \) factors into prime ideals with a repeated prime factor. In particular, \( {\Delta}({\,\cdot\,}) < \infty \), and so only finitely many such primes can occur.
+:::
+
 [^1]: An injective ring morphism.
 
 [^2]: *Squarefree* means not divisible by \( n^2 \) for any \( n > 1\in {\mathbb{Z}} \), or equivalently not divisible by the square of any primes.
@@ -2591,3 +2833,5 @@ We made the assumption that \( m \) was squarefree, but we can write any \( m\in
 [^7]: Note that this is equal to \( {\mathbb{Z}}_K \) when \( K\coloneqq{\mathbb{Q}}( \sqrt{d} ) \).
 
 [^8]: This means that \( \chi_R \) should be Riemann integrable, i.e. the bounded region is contained in a rectangle, and integrals over such rectangles converges to what we'll call the volume.
+
+[^9]: External note: these come from the trace and determinant of the map \( y \mapsto y\cdot x \) on \( L/K \), viewed as a \( K{\hbox{-}} \)linear map on \( L \).
