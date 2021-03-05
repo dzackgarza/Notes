@@ -21,13 +21,12 @@ one can obtain an exact sequence
 Some missed stuff here.
 
 
-:::{.remark}
+:::{.proof title="of Kunneth Formula (continued)"}
 Note that 
 \[
 0\to \complex{Z} \tensor M \to \complex{P}\tensor M \to d\complex{P}\tensor M\to 0
 ,\]
 where the differentials for the end terms are zero, and the homology will recover the original complex.
-:::
 
 
 
@@ -64,6 +63,39 @@ From this, we get a flat resolution of $H_{n-1}(P)$:
 	\arrow[from=2-1, to=2-2]
 \end{tikzcd}
 
+So we can use this to compute $\Tor(H_{n-1}(P), M)$ by taking homology:
+
+% https://q.uiver.app/?q=WzAsOSxbMCwxLCIwIl0sWzEsMSwiMCJdLFsyLDEsImRQX24gXFx0ZW5zb3IgTSJdLFszLDEsIlpfe24tMX1cXHRlbnNvciBNIl0sWzQsMSwiMCJdLFszLDAsIjAiLFswLDYwLDYwLDFdXSxbMiwwLCIxIixbMCw2MCw2MCwxXV0sWzEsMCwiMiIsWzAsNjAsNjAsMV1dLFswLDAsIlxcZGVnIixbMCw2MCw2MCwxXV0sWzAsMV0sWzEsMl0sWzIsMywiaVxcdGVuc29yIFxcMSJdLFszLDRdXQ==
+\begin{tikzcd}
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\deg} & \textcolor{rgb,255:red,214;green,92;blue,92}{2} & \textcolor{rgb,255:red,214;green,92;blue,92}{1} & \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	0 & 0 & {dP_n \tensor M} & {Z_{n-1}\tensor M} & 0
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow["{i\tensor \1}", from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+\end{tikzcd}
+
+Thus
+\[
+\ker(i\tensor \one_M) = \Tor_1( H_{n-1}(P), M) \cong \ker (dP_m \mapsvia{\bd} Z_{n-1} \tensor M)
+.\]
+
+
+:::
+
+
+:::{.theorem title="Universal Coefficient Theorem"}
+Let $\complex{P}$ be a chain complex of free abelian groups.
+For every abelian groups $M$ and every $n$, the Kunneth sequence splits non-canonically as 
+\[
+H_n(\complex{P} \tensor M) \cong \qty{ H_n( \complex{P} )\tensor M } \oplus \Tor_1^{\ZZ}(H_{n-1}(P), M)
+.\]
+:::
+
+
+:::{.remark}
+In optimal situations the tor term vanishes, e.g. if $M$ (or either term) is torsionfree.
+:::
 
 
 
