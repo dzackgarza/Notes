@@ -152,3 +152,10 @@ Hint: take $Q$ to have $M$ in degree 0.
 ## Applications to Topology
 
 
+:::{.remark}
+See some applications in section 1 of Weibel, e.g. simplicial and singular homology.
+The setup: $X\in \Top, R\in \Ring$ unital, and let $S_k = S_k(X)$ be the free \(R\dash\)module on $\Hom_\Top( \Delta^k, X)$.
+:::
+
+
+
