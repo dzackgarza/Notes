@@ -15,7 +15,12 @@ one can obtain an exact sequence
 
 
 :::{.observation}
-???
+For a SES
+\[
+0 \to Y \mapsvia{i} Z \mapsvia{\pi} {Z|over Y} \to 0
+\]
+there is an induced exact sequence
+
 :::
 
 Some missed stuff here.
@@ -94,7 +99,25 @@ H_n(\complex{P} \tensor M) \cong \qty{ H_n( \complex{P} )\tensor M } \oplus \Tor
 
 
 :::{.remark}
-In optimal situations the tor term vanishes, e.g. if $M$ (or either term) is torsionfree.
+In optimal situations the tor term vanishes, e.g. if either term is torsionfree (so no elements of finite order).
+:::
+
+
+
+:::{.fact}
+Every subgroup of a free abelian group is free (hence projective, hence flat).
+:::
+
+
+:::{.proof title="?"}
+Since $dP_n \leq dP_{n-1}$, we can conclude $dP_n$ is free.
+Thus the following SES splits:
+\[
+0\to Z_n \to P_n \mapsvia{d} dP_n \to 0
+.\]
+So any lift of the identity map on $dP_n$ gives an isomorphic copy of the last term in the middle term, yielding $P_n \cong Z_n \oplus dP_n$. 
+Now tensoring with $M$ and using that it distributes over direct sums yields
+
 :::
 
 
