@@ -25,7 +25,6 @@ there is an induced exact sequence
 
 Some missed stuff here.
 
-
 :::{.proof title="of Kunneth Formula (continued)"}
 Note that 
 \[
@@ -85,9 +84,7 @@ Thus
 \ker(i\tensor \one_M) = \Tor_1( H_{n-1}(P), M) \cong \ker (dP_m \mapsvia{\bd} Z_{n-1} \tensor M)
 .\]
 
-
 :::
-
 
 :::{.theorem title="Universal Coefficient Theorem"}
 Let $\complex{P}$ be a chain complex of free abelian groups.
@@ -97,17 +94,13 @@ H_n(\complex{P} \tensor M) \cong \qty{ H_n( \complex{P} )\tensor M } \oplus \Tor
 .\]
 :::
 
-
 :::{.remark}
 In optimal situations the tor term vanishes, e.g. if either term is torsionfree (so no elements of finite order).
 :::
 
-
-
 :::{.fact}
 Every subgroup of a free abelian group is free (hence projective, hence flat).
 :::
-
 
 :::{.proof title="?"}
 Since $dP_n \leq dP_{n-1}$, we can conclude $dP_n$ is free.
@@ -129,11 +122,9 @@ for some $C'$.
 Now applying the Kunneth formula we find that $C' = \Tor^\ZZ_1( H_{n-1}(P), M)$, yielding the claimed direct sum.
 :::
 
-
 :::{.remark}
 The following is a generalization for both.
 :::
-
 
 :::{.theorem title="Kunneth formula for complexes"}
 Let $P, Q \in \Ch(\rmod)$ be complexes, then $P\tensor Q \da \Tot^{\oplus}(P\tensor Q)_n \da \bigoplus_{p+q = n} P_p \tensor Q_q$ with differential[^sign_trick]
@@ -147,12 +138,17 @@ If $P_n, dP_n$ are flat for all $n$, then there exists a SES
 \to 0
 .\]
 
-
 [^sign_trick]: 
 Recall that the squares would commute if we took the usual differentials, so we use a sign trick to get $d^2=0$.
 
 :::
 
+:::{.proof title="?"}
+Omitted here, but uses same ideas as the previous proofs.
+Hint: take $Q$ to have $M$ in degree 0.
+:::
 
+
+## Applications to Topology
 
 
