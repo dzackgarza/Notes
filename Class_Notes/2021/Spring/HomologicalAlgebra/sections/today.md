@@ -154,7 +154,8 @@ Hint: take $Q$ to have $M$ in degree 0.
 
 :::{.remark}
 See some applications in section 1 of Weibel, e.g. simplicial and singular homology.
-The setup: $X\in \Top, R\in \Ring$ unital, and let $S_k = S_k(X)$ be the free \(R\dash\)module on $\Hom_\Top( \Delta^k, X)$.
+The setup: $X\in \Top, R\in \Ring$ unital, and for $k\geq 0$ let $S_k = S_k(X)$ be the free \(R\dash\)module on $\Hom_\Top( \Delta_k, X)$ where \( \Delta_k\) is the standard simplex
+By ordering the vertices, this induces an ordering on the faces by taking lexicographic ordering.
 :::
 
 
