@@ -2485,6 +2485,154 @@ If surjectivity holds, the cokernel will be zero, so it will suffice to compute 
 Take a look at *Gromov compactness* again!
 :::
 
+# Maslov Index Formula (Thursday, March 04)
+
+Recall that for \( x,y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta \), there is a map
+\[
+\mu: \pi_2(x, y) &\to {\mathbb{Z}}\\
+&\mu &= \mathop{\mathrm{Ind}}(D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
+.\]
+
+This index is the expected dimension of \( M(\varphi) \). The following theorem can be found in the paper "A cylindrical reformulation of Heegard Floer homology":
+
+::: {.theorem title="Lipschitz"}
+Let \( x = \left\{{ x_1, \cdots, x_g }\right\} \) and \( y = \left\{{ y_1, \cdots, y_g }\right\} \) and \( \varphi\in \pi_2(x, y) \). Then
+\[
+\mu( \varphi) = e( D( \varphi) ) + n_x( D( \varphi ) ) + n_y( D( \varphi ) )
+.\]
+where \( e({\,\cdot\,}) \) is the **Euler measure** and \( n_x(\cdots), n_y(\cdots) \) is referred to as the **point measure**. Note that these only depend on the domain of \( \varphi \).
+:::
+
+::: {.definition title="Euler Measure"}
+Let \( D( \varphi) = \sum_{i=1}^m n_{z_i} ( \varphi) D_i \), then
+\[
+e (D (\varphi)) \coloneqq\sum_{i=1}^m n_{z_i}( \varphi) e(D_i) && e(D_i) \coloneqq\chi(D_i) + {1\over 4} C_1 - {1\over 4}C_2
+.\]
+Here we use the fact that all regions are polygons whose corners occur in one of two types:
+
+![image_2021-03-04-11-20-25](figures/image_2021-03-04-11-20-25.png)
+
+So we define \( C_1 \) to be the number of corners of the first type and \( C_2 \) the number of the second type. The point measure is defined as
+\[
+n_x (D( \varphi ) ) \coloneqq\sum_{i=1}^g n_{x_i}( D( \varphi ) ) = {n_1 + n_2 + n_3 + n_4 \over 4}
+,\]
+
+where the \( n_i \) are the surrounding regions' coefficients:
+
+![image_2021-03-04-11-24-27](figures/image_2021-03-04-11-24-27.png)
+:::
+
+::: {.example title="?"}
+Let \( x = \left\{{ x_1, x_2 }\right\}, y = \left\{{ y_1, y_2 }\right\} \) and compute \( \mu( \varphi) \) where \( D( \varphi) \) is one of the following domains:
+
+1.  The first type:
+
+![image_2021-03-04-11-26-34](figures/image_2021-03-04-11-26-34.png)
+
+![image_2021-03-04-11-30-34](figures/image_2021-03-04-11-30-34.png)
+
+-   Here \( D( \varphi) = 0 \) and \( e(D) = 1 + {1\over 4}(0) - {1\over 4} (0) = 0 \).
+-   \( n_x(D (\varphi ) ) = n_{x_1}( D ) + n_{x_2}(D)F = {1\over 4} + {1\over 4} = {1\over 2} \).
+-   \( n_y(D ( \varphi ) ) = n_{y_1}(D) + n_{y_2}(D) + {1\over 4} + {1\over 4} = {1\over 2} \).
+-   So \( \mu( \varphi) = 1 \).
+
+2.  A second type:
+
+![image_2021-03-04-11-32-08](figures/image_2021-03-04-11-32-08.png)
+
+-   Here we have an annulus and \( D( \varphi) = D \) implies that \( e(D (\varphi)) = e(D) = \chi(D) + \cdots = 0 + {1\over 4}(0) - {1\over 4}( 4) = -1 \).
+-   \( n_{x} (D( \varphi ) ) = n_{x_1}( D) + n_{x_2}(D) = {1\over 4} + {1\over 4} = {1\over 2} \)
+-   \( \mu( \varphi) = -1 + {1\over 2} + {1\over 2} = 0 \).
+
+3.  A third type:
+
+![image_2021-03-04-11-36-09](figures/image_2021-03-04-11-36-09.png)
+
+-   Here \( x_2 = y_2 \) and are disjoint from \( D_1, D_2, D_3 \):
+-   \( D( \varphi) = D_1 + D_2 + D_3 \).
+-   \( e(D ( \varphi ) ) = \sum e(D_i) = \qty{1 - {1\over 4}(4) } + \qty{1 - {1\over 4}(2) } + \qty{1 - {1\over 4}(2)} = 0 + {1\over 2} + {1\over 2} = 1 \).
+    -   We could have alternatively noted that \( D( \varphi) \) is a disc with \( \chi =1 \) and used the formula to get \( 1 +{1\over 4}(1) - {1\over 4}(1) \).
+-   \( n_x(D( \varphi ) ) = n_{x_1}(D( \varphi ) ) + n_{x_2}(D( \varphi ) ) = {1\over 4} + 0 = {1\over 4} \).
+-   \( n_y(D (\varphi)) = n_{y_1}(D( \varphi ) ) + n_{y_2}(D( \varphi ) ) = {3\over 4} + 0 = {3\over 4} \).
+-   Thus \( \mu( \varphi) = 2 \).
+:::
+
+::: {.example title="?"}
+Another example calculation:
+
+![image_2021-03-04-11-47-57](figures/image_2021-03-04-11-47-57.png)
+
+::: {.question}
+Does this domain have a holomorphic representative?
+:::
+:::
+
+## Positivity Principle
+
+::: {.proposition title="Positivity Principle"}
+For \( \varphi\in \pi_2(x, y) \), if \( \mathcal{M}( \varphi) \neq \emptyset \) then \( D( \varphi) \geq 0 \), i.e. \( D( \varphi ) = \sum n_i D_i \) where \( n_i \geq 0 \). This happens if and only if \( n_w( \varphi) \geq 0 \) for all \( w \in \Sigma \setminus\alpha\cup\beta \).
+:::
+
+::: {.proof title="Idea"}
+If \( u \in M( \varphi) \) then \( u:D \to \operatorname{Sym}^g( \Sigma ) \) is holomorphic and \( \operatorname{im}(u) \) is a complex submanifold. If \( w \in \Sigma \setminus\alpha\cup\beta \) then \( \mathcal{L}_w \) is holomorphic.
+:::
+
+::: {.example title="?"}
+Show that transverse complex submanifolds intersect non-negatively, i.e. 
+\[
+n_w( \varphi) \coloneqq\# \qty{ \operatorname{im}(u) \cap\mathcal{L}_w } \geq 0 
+.\]
+:::
+
+::: {.example title="?"}
+Consider \( S^1 \times S^2 \) with the following Heegard diagram:
+
+![image_2021-03-04-12-18-25](figures/image_2021-03-04-12-18-25.png)
+
+We have \( \widehat{\operatorname{HF}} (\Sigma, \alpha, \beta, z) = {\mathbb{Z}}/2 \left\langle{ x,y }\right\rangle \). Then for \( \varphi\in \pi_2(x, y) \) with \( \mu( \varphi) = 1 \) and \( n_z( \varphi) = 0 \), we can write \( D( \varphi) = a D_1 + b D_2 \). Now checking the diagonals:
+
+![image_2021-03-04-12-20-40](figures/image_2021-03-04-12-20-40.png)
+
+Since the sum of multiplicities NW \( \to \) SE should be 1 more than the sum NE \( \to \) SW, we have \( a+b=1 \) and by the positivity principle, \( D( \varphi) \geq 0 \) implies \( a, b \geq 0 \). We then obtain
+\[
+\begin{cases}
+a = 0, b = 1 &  \implies D( \varphi) = D_2 \ni \phi_2
+\\
+a = 1, b = 0 & \implies D( \varphi) = D_1 \ni \phi_1
+\end{cases}
+.\]
+:::
+
+::: {.example title="?"}
+For example, if \( \mu( \varphi_1) = \mu( \varphi_2) = 1 \), we're looking for holomorphic maps
+
+![image_2021-03-04-12-23-52](figures/image_2021-03-04-12-23-52.png)
+
+For any \( p \) on the \( \alpha \) circle from \( y \) to \( x \), there exists a unique holomorphic map with \( \mu(1) = p \) by the Riemann mapping theorem. After taking the quotient \( \widehat{\mathcal{M}} ( \varphi_1) = \mathcal{M}(\varphi_1) / {\mathbb{R}} \), we obtain \( \# \widehat{\mathcal{M}} ( \varphi_1 ) = 1 = \# \mathcal{M}( \varphi_2 ) \). Then note that
+\[
+{{\partial}}x = \qty{ \# \widehat{\mathcal{M}} ( \varphi_1) + \# \widehat{ \mathcal{M} } ( \varphi_2) } y = 0
+,\]
+since we are taking coefficients mod 2. Then \( \varphi\in \mu(x, y) \) implies that \( a+b=-1 \), so there is no non-negative disk and \( {{\partial}}y = 0 \).
+
+::: {.exercise title="?"}
+Show that there is no non-negative disc in \( \pi_2(x, x) \) and \( \pi_2(y, y) \) by looking at local coefficients.
+:::
+
+So \( {{\partial}}=0 \) which implies that \( \widehat{\operatorname{HF}}( \Sigma, \alpha, \beta, z) = ({\mathbb{Z}}/2)^{\oplus 2} \).
+:::
+
+::: {.question}
+What if we used an isotopic diagram?
+
+![image_2021-03-04-12-30-18](figures/image_2021-03-04-12-30-18.png)
+
+The only difference between this and the first is an isotopy of \( \beta \), and we'll see that there's an invariance and a condition called *admissibility* to help decide which to use.
+:::
+
+::: {.exercise title="?"}
+Do another isotopy to create 4 intersection points and show that the ranks of homology are unchanged.
+:::
+
 [^1]: See Sarkour-Wang
 
 [^2]: This is the strongest variant.

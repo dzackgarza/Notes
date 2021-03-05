@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-03-02 }
+{\tiny \textit{Last updated:} 2021-03-04 }
 \end{flushleft}
 
 
@@ -4768,6 +4768,314 @@ space. The index of this operator will be the Maslov index.
 Take a look at \emph{Gromov compactness} again!
 
 \end{remark}
+
+\hypertarget{maslov-index-formula-thursday-march-04}{%
+\section{Maslov Index Formula (Thursday, March
+04)}\label{maslov-index-formula-thursday-march-04}}
+
+Recall that for
+\(x,y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta\), there is a map
+\begin{align*}
+\mu: \pi_2(x, y) &\to {\mathbb{Z}}\\
+&\mu &= \mathop{\mathrm{Ind}}(D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
+.\end{align*}
+
+This index is the expected dimension of \(M(\varphi)\). The following
+theorem can be found in the paper ``A cylindrical reformulation of
+Heegard Floer homology'':
+
+\begin{theorem}[Lipschitz]
+
+Let \(x = \left\{{ x_1, \cdots, x_g }\right\}\) and
+\(y = \left\{{ y_1, \cdots, y_g }\right\}\) and
+\(\varphi\in \pi_2(x, y)\). Then
+\begin{align*}
+\mu( \varphi) = e( D( \varphi) ) + n_x( D( \varphi ) ) + n_y( D( \varphi ) )
+.\end{align*}
+where \(e({\,\cdot\,})\) is the \textbf{Euler measure} and
+\(n_x(\cdots), n_y(\cdots)\) is referred to as the \textbf{point
+measure}. Note that these only depend on the domain of \(\varphi\).
+
+\end{theorem}
+
+\begin{definition}[Euler Measure]
+
+Let \(D( \varphi) = \sum_{i=1}^m n_{z_i} ( \varphi) D_i\), then
+\begin{align*}
+e (D (\varphi)) \coloneqq\sum_{i=1}^m n_{z_i}( \varphi) e(D_i) && e(D_i) \coloneqq\chi(D_i) + {1\over 4} C_1 - {1\over 4}C_2
+.\end{align*}
+Here we use the fact that all regions are polygons whose corners occur
+in one of two types:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-20-25.png}
+\caption{image\_2021-03-04-11-20-25}
+\end{figure}
+
+So we define \(C_1\) to be the number of corners of the first type and
+\(C_2\) the number of the second type. The point measure is defined as
+\begin{align*}
+n_x (D( \varphi ) ) \coloneqq\sum_{i=1}^g n_{x_i}( D( \varphi ) ) = {n_1 + n_2 + n_3 + n_4 \over 4}
+,\end{align*}
+
+where the \(n_i\) are the surrounding regions' coefficients:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-24-27.png}
+\caption{image\_2021-03-04-11-24-27}
+\end{figure}
+
+\end{definition}
+
+\begin{example}[?]
+
+Let \(x = \left\{{ x_1, x_2 }\right\}, y = \left\{{ y_1, y_2 }\right\}\)
+and compute \(\mu( \varphi)\) where \(D( \varphi)\) is one of the
+following domains:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The first type:
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-26-34.png}
+\caption{image\_2021-03-04-11-26-34}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-30-34.png}
+\caption{image\_2021-03-04-11-30-34}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  Here \(D( \varphi) = 0\) and
+  \(e(D) = 1 + {1\over 4}(0) - {1\over 4} (0) = 0\).
+\item
+  \(n_x(D (\varphi ) ) = n_{x_1}( D ) + n_{x_2}(D)F = {1\over 4} + {1\over 4} = {1\over 2}\).
+\item
+  \(n_y(D ( \varphi ) ) = n_{y_1}(D) + n_{y_2}(D) + {1\over 4} + {1\over 4} = {1\over 2}\).
+\item
+  So \(\mu( \varphi) = 1\).
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  A second type:
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-32-08.png}
+\caption{image\_2021-03-04-11-32-08}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  Here we have an annulus and \(D( \varphi) = D\) implies that
+  \(e(D (\varphi)) = e(D) = \chi(D) + \cdots = 0 + {1\over 4}(0) - {1\over 4}( 4) = -1\).
+\item
+  \(n_{x} (D( \varphi ) ) = n_{x_1}( D) + n_{x_2}(D) = {1\over 4} + {1\over 4} = {1\over 2}\)
+\item
+  \(\mu( \varphi) = -1 + {1\over 2} + {1\over 2} = 0\).
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  A third type:
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-36-09.png}
+\caption{image\_2021-03-04-11-36-09}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  Here \(x_2 = y_2\) and are disjoint from \(D_1, D_2, D_3\):
+\item
+  \(D( \varphi) = D_1 + D_2 + D_3\).
+\item
+  \(e(D ( \varphi ) ) = \sum e(D_i) = \qty{1 - {1\over 4}(4) } + \qty{1 - {1\over 4}(2) } + \qty{1 - {1\over 4}(2)} = 0 + {1\over 2} + {1\over 2} = 1\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    We could have alternatively noted that \(D( \varphi)\) is a disc
+    with \(\chi =1\) and used the formula to get
+    \(1 +{1\over 4}(1) - {1\over 4}(1)\).
+  \end{itemize}
+\item
+  \(n_x(D( \varphi ) ) = n_{x_1}(D( \varphi ) ) + n_{x_2}(D( \varphi ) ) = {1\over 4} + 0 = {1\over 4}\).
+\item
+  \(n_y(D (\varphi)) = n_{y_1}(D( \varphi ) ) + n_{y_2}(D( \varphi ) ) = {3\over 4} + 0 = {3\over 4}\).
+\item
+  Thus \(\mu( \varphi) = 2\).
+\end{itemize}
+
+\end{example}
+
+\begin{example}[?]
+
+Another example calculation:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-11-47-57.png}
+\caption{image\_2021-03-04-11-47-57}
+\end{figure}
+
+\begin{question}
+
+Does this domain have a holomorphic representative?
+
+\end{question}
+
+\end{example}
+
+\hypertarget{positivity-principle}{%
+\subsection{Positivity Principle}\label{positivity-principle}}
+
+\begin{proposition}[Positivity Principle]
+
+For \(\varphi\in \pi_2(x, y)\), if
+\(\mathcal{M}( \varphi) \neq \emptyset\) then \(D( \varphi) \geq 0\),
+i.e.~\(D( \varphi ) = \sum n_i D_i\) where \(n_i \geq 0\). This happens
+if and only if \(n_w( \varphi) \geq 0\) for all
+\(w \in \Sigma \setminus\alpha\cup\beta\).
+
+\end{proposition}
+
+\begin{proof}[Idea]
+
+If \(u \in M( \varphi)\) then \(u:D \to \operatorname{Sym}^g( \Sigma )\)
+is holomorphic and \(\operatorname{im}(u)\) is a complex submanifold. If
+\(w \in \Sigma \setminus\alpha\cup\beta\) then \(\mathcal{L}_w\) is
+holomorphic.
+
+\end{proof}
+
+\begin{example}[?]
+
+Show that transverse complex submanifolds intersect non-negatively,
+i.e.~
+\begin{align*}
+n_w( \varphi) \coloneqq\# \qty{ \operatorname{im}(u) \cap\mathcal{L}_w } \geq 0 
+.\end{align*}
+
+\end{example}
+
+\begin{example}[?]
+
+Consider \(S^1 \times S^2\) with the following Heegard diagram:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-12-18-25.png}
+\caption{image\_2021-03-04-12-18-25}
+\end{figure}
+
+We have
+\(\widehat{\operatorname{HF}} (\Sigma, \alpha, \beta, z) = {\mathbb{Z}}/2 \left\langle{ x,y }\right\rangle\).
+Then for \(\varphi\in \pi_2(x, y)\) with \(\mu( \varphi) = 1\) and
+\(n_z( \varphi) = 0\), we can write \(D( \varphi) = a D_1 + b D_2\). Now
+checking the diagonals:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-12-20-40.png}
+\caption{image\_2021-03-04-12-20-40}
+\end{figure}
+
+Since the sum of multiplicities NW \(\to\) SE should be 1 more than the
+sum NE \(\to\) SW, we have \(a+b=1\) and by the positivity principle,
+\(D( \varphi) \geq 0\) implies \(a, b \geq 0\). We then obtain
+\begin{align*}
+\begin{cases}
+a = 0, b = 1 &  \implies D( \varphi) = D_2 \ni \phi_2
+\\
+a = 1, b = 0 & \implies D( \varphi) = D_1 \ni \phi_1
+\end{cases}
+.\end{align*}
+
+\end{example}
+
+\begin{example}[?]
+
+For example, if \(\mu( \varphi_1) = \mu( \varphi_2) = 1\), we're looking
+for holomorphic maps
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-12-23-52.png}
+\caption{image\_2021-03-04-12-23-52}
+\end{figure}
+
+For any \(p\) on the \(\alpha\) circle from \(y\) to \(x\), there exists
+a unique holomorphic map with \(\mu(1) = p\) by the Riemann mapping
+theorem. After taking the quotient
+\(\widehat{\mathcal{M}} ( \varphi_1) = \mathcal{M}(\varphi_1) / {\mathbb{R}}\),
+we obtain
+\(\# \widehat{\mathcal{M}} ( \varphi_1 ) = 1 = \# \mathcal{M}( \varphi_2 )\).
+Then note that
+\begin{align*}
+{{\partial}}x = \qty{ \# \widehat{\mathcal{M}} ( \varphi_1) + \# \widehat{ \mathcal{M} } ( \varphi_2) } y = 0
+,\end{align*}
+since we are taking coefficients mod 2. Then \(\varphi\in \mu(x, y)\)
+implies that \(a+b=-1\), so there is no non-negative disk and
+\({{\partial}}y = 0\).
+
+\begin{exercise}[?]
+
+Show that there is no non-negative disc in \(\pi_2(x, x)\) and
+\(\pi_2(y, y)\) by looking at local coefficients.
+
+\end{exercise}
+
+So \({{\partial}}=0\) which implies that
+\(\widehat{\operatorname{HF}}( \Sigma, \alpha, \beta, z) = ({\mathbb{Z}}/2)^{\oplus 2}\).
+
+\end{example}
+
+\begin{question}
+
+What if we used an isotopic diagram?
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-04-12-30-18.png}
+\caption{image\_2021-03-04-12-30-18}
+\end{figure}
+
+The only difference between this and the first is an isotopy of
+\(\beta\), and we'll see that there's an invariance and a condition
+called \emph{admissibility} to help decide which to use.
+
+\end{question}
+
+\begin{exercise}[?]
+
+Do another isotopy to create 4 intersection points and show that the
+ranks of homology are unchanged.
+
+\end{exercise}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
