@@ -117,8 +117,28 @@ Thus the following SES splits:
 .\]
 So any lift of the identity map on $dP_n$ gives an isomorphic copy of the last term in the middle term, yielding $P_n \cong Z_n \oplus dP_n$. 
 Now tensoring with $M$ and using that it distributes over direct sums yields
-
+\[
+P_n \tensor M \cong (Z_n \tensor M) \oplus (dP_n \tensor M)
+.\]
+The left-hand side contains a copy of $\ker(d_n \tensor \one: P_n \tensor M \to P_{n-1} \tensor M)$, which itself contains a copy of $Z_n\tensor M$.
+So by a linear algebra exercise, we have $\ker(d_n \tensor \one) \cong (Z_n \tensor M) \oplus A$ for some unknown $A$, and since $dP_{n+1} \tensor M = \im(d_{n+1}\tensor \one)$ is contained in the first term, we can use the partial exactness of tensoring to preserve quotients and obtain 
+\[
+H_n(P\tensor M) = \qty{ H_n(P) \tensor M) \oplus C'
+\]
+for some $C'$.
+Now applying the Kunneth formula we find that $C' = \Tor^\ZZ_1( H_{n-1}(P), M)$, yielding the claimed direct sum.
 :::
+
+
+:::{.remark}
+The following is a generalization for both.
+:::
+
+
+:::{.theorem title="Kunneth formula for complexes"}
+Let $P, Q \in \Ch(\rmod)$ be complexes, then $\Tot^{\oplus}(P\tensor Q)_n \da \bigoplus_{p+q = n} P_p \tensor Q_q$ with differential 
+:::
+
 
 
 
