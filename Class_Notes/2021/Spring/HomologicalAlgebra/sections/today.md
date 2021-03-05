@@ -136,7 +136,17 @@ The following is a generalization for both.
 
 
 :::{.theorem title="Kunneth formula for complexes"}
-Let $P, Q \in \Ch(\rmod)$ be complexes, then $\Tot^{\oplus}(P\tensor Q)_n \da \bigoplus_{p+q = n} P_p \tensor Q_q$ with differential 
+Let $P, Q \in \Ch(\rmod)$ be complexes, then $P\tensor Q \da \Tot^{\oplus}(P\tensor Q)_n \da \bigoplus_{p+q = n} P_p \tensor Q_q$ with differential[^sign_trick]
+$d(a\tensor b) = (da)\tensor b + (-1)^pa \tensor (db)$.
+If $P_n, dP_n$ are flat for all $n$, then there exists a SES
+\[
+0 \to \bigoplus_{p+q=n} H_p(P)\tensor H_q(Q) \to H_n(P\tensor Q) \to \bigoplus_{p+q=n-1} \Tor^R_1(H_p(P), H_q(Q) )
+.\]
+
+
+[^sign_trick]: 
+Recall that the squares would commute if we took the usual differentials, so we use a sign trick to get $d^2=0$.
+
 :::
 
 
