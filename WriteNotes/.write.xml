@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<map>
+  <int name="askConvertDocs" value="0" />
+  <int name="autoHideScroller" value="1" />
+  <int name="drawCursor" value="1" />
+  <int name="glRender" value="0" />
+  <int name="inputSimplify" value="6" />
+  <int name="inputSmoothing" value="5" />
+  <int name="keepScreenOn" value="1" />
+  <int name="mouseMode" value="1" />
+  <int name="panFromEdge" value="0" />
+  <int name="penButtonMode" value="13" />
+  <int name="penType" value="11" />
+  <int name="reopenLastDoc" value="1" />
+  <int name="sRGB" value="0" />
+  <int name="showAdvPrefs" value="1" />
+  <int name="singleTouchMode" value="1" />
+  <int name="thumbFirstPage" value="1" />
+  <int name="volButtonMode" value="5" />
+  <float name="pageHeight" value="1250" />
+  <float name="pageWidth" value="772" />
+  <float name="pressureScale" value="0.899999976" />
+  <string name="clippingDoc" value="/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/.saved/clippings.html" />
+  <string name="currFolder" value="/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/" />
+  <string name="docFileExt" value="html" />
+  <string name="newDocTitleFmt" value="%b %e %Hh%M" />
+  <string name="recentDocs" value="/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Dec 22 20h51.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Dec 18 01h53.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Dec 13 23:40.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Dec 15 21h50.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Dec 15 21h44.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/test2.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Test.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/Dec 15 17:51.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/1608072676118 (2).html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/1607920801407.html:::/storage/emulated/0/Android/data/com.styluslabs.writeqt/files/Android/1608072676118.html" />
+  <string name="savedColors" value="#FF000000,#FFFF0000,#FF008000,#FF0000FF" />
+  <string name="savedWidths" value="1.400,2.400,4.000,8.000" />
+  <string name="toolBars2" value="docTitle,stretch,tools,separator,undoRedoBtn,separator,seltools,separator,actionShow_Bookmarks,actionShow_Clippings,actionSplitView,separator,actionOverflow_Menu" />
+  <string name="toolModes" value="14 20 25 22" />
+  <pen color="4278190080" width="1.6000000238418579" pressure="2" flags="0" />
+  <pen color="4278190335" width="1.6000000238418579" pressure="2" flags="0" />
+  <pen color="4278222592" width="1.6000000238418579" pressure="2" flags="0" />
+  <pen color="4294901760" width="1.6000000238418579" pressure="2" flags="0" />
+  <pen color="4278190080" width="2.4000000953674316" pressure="2" flags="0" />
+  <pen color="4278190335" width="2.4000000953674316" pressure="2" flags="0" />
+  <pen color="2130771967" width="34" pressure="0" flags="1" />
+  <pen color="2147450879" width="34" pressure="0" flags="1" />
+</map>
