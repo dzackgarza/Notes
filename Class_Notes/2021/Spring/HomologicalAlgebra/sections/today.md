@@ -150,7 +150,6 @@ Hint: take $Q$ to have $M$ in degree 0.
 
 ## Applications to Topology
 
-
 :::{.definition title="Simplicial Homology"}
 See some applications in section 1 of Weibel, e.g. simplicial and singular homology.
 The setup: $X\in \Top, R\in \Ring$ unital, and for $k\geq 0$ let $S_k = S_k(X)$ be the free \(R\dash\)module on $\Hom_\Top( \Delta_k, X)$ where \( \Delta_k\) is the standard simplex
@@ -168,6 +167,17 @@ Taking it homology yields the **simplicial homology** of the complex $H_n(X; R) 
 Taking $R=\ZZ$ makes $S_k(X)$ a free abelian group.
 If $M$ is any abelian group, we can define $H_n(X; M) \da H_n( \complex{S}(X) \tensor_\ZZ M)$, the homology with **coefficients** in $M$.
 If no coefficients are specified, we write $H_n(X) \da H_n(X; \ZZ)$.
+There is then a universal coefficient theorem in topology:
+\[
+H_n(X; M) 
+\cong 
+\qty{ H_n(X) \tensor_\ZZ M) \oplus \Tor_1^\ZZ( H_{n-1}(X), M)
+.\]
+:::
+
+:::{.remark}
+Next week: group cohomology, spectral sequences next week.
+This will give us some objects to apply spectral sequences.
 :::
 
 
