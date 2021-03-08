@@ -498,17 +498,6 @@
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
 
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    :qa
-    :qa
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
-
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
@@ -3728,7 +3717,10 @@ Thus would make $K_{S^4}^2 = 0$, and so
 \[
 \chi( \OO_{S^4} ) = {1\over 12}( 0 + 2) = {1\over 6} \not\in \ZZ
 ,\]
-which is a contradiction. $\contradiction$
+
+which is a contradiction. 
+$\contradiction$
+
 :::
 
 :::{.example title="?"}
@@ -3749,7 +3741,6 @@ Then
 .\]
 :::
 
-
 :::{.remark}
 Consider $\OO_{\CP^n}(d)$, what are its global sections $H^0(\CP^n, \OO_{\CP^n}(d))$.
 Locally we have $\OO_{\CP^n}(d)(U)$ given by holomorphic functions in $(x_0, \cdots, x_n) \in \pi\inv(U)$ where $\pi: \CC^{n+1} \to \CP^n$ and the functions satisfy $f(\lambda \vector x) = \lambda^d f(\vector x)$.
@@ -3762,7 +3753,6 @@ Use the result that any such function with at most polynomial growth is itself a
 If $\ro{f}{S^{2d+1}}$ is bounded by $C$, we have $\norm{f}_{L^2} \leq C \abs{x}^{2d}$.
 Since $(\bd_{x_1} \cdots \bd_{x_k})^d f$ is globally bounded $k\geq 2d$, applying Liouville's theorem makes it constant, and so a finite number of derivatives kill $f$ and this forces it to be polynomial.
 :::
-
 
 :::{.remark}
 So how many homogeneous degree $d$ functions are there?
@@ -3780,7 +3770,6 @@ Using that $h^0(\CP^2; \OO(k))= h^2(\CP^2; \OO(-3-k) )$ by Serre duality and Rie
 :::{.fact}
 $h^i(\CP^n; \OO(k)) = 0$ unless $i=0, n$.
 :::
-
 
 
 

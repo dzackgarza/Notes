@@ -1,16 +1,3 @@
-```{=tex}
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    :qa
-    :qa
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
-```
-
 # Tuesday, January 12
 
 ## Background
@@ -2643,6 +2630,7 @@ We know that \( \chi_{\mathsf{Top}}(S^4) = 2 \). If \( S^4 \) had a complex stru
 \[
 \chi( {\mathcal{O}}_{S^4} ) = {1\over 12}( 0 + 2) = {1\over 6} \not\in {\mathbb{Z}}
 ,\]
+
 which is a contradiction. \( \contradiction \)
 :::
 
