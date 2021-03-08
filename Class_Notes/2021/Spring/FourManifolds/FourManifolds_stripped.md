@@ -2888,7 +2888,7 @@ Letting \( d=\dim X = 2n \), we have
 ::: {.example title="?"}
 We have prove HRR using this theorem: we have
 \[
-\chi(X, \mathcal{E} ) = \chi( \mathcal{E} \otimes A^{0, {\,\cdot\,}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \equalsbecause{ASIT} \int_X { \operatorname{ch}(\mathcal{E} \otimes A^{0, {\,\cdot\,}} ) \over {\operatorname{eul}}(X) } \mathrm{td}(TX \otimes_R {\mathbb{C}})
+\chi(X, \mathcal{E} ) = \chi( \mathcal{E} \otimes A^{0, {\,\cdot\,}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \overset{\text{ASIT}}{=} \int_X { \operatorname{ch}(\mathcal{E} \otimes A^{0, {\,\cdot\,}} ) \over {\operatorname{eul}}(X) } \mathrm{td}(TX \otimes_R {\mathbb{C}})
 .\]
 We have \( \operatorname{ch}( \mathcal{E} \otimes A^{0, {\,\cdot\,}} ) = \operatorname{ch}(\mathcal{E}) \operatorname{ch}( A^{0, {\,\cdot\,}} ) \) where \( \operatorname{ch}(A^{0, 1}) = \sum_I (-1)^i \operatorname{ch}(\bigwedge^i A^{0, 1} ) \). The Chern roots of
 

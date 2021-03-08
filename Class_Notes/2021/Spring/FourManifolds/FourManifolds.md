@@ -515,6 +515,7 @@
 \newcommand{\Tot}[0]{\operatorname{Tot}}
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
+\newcommand{\equalsbecause}[1]{\overset{#1}{=}}
 
 # Tuesday, January 12
 
@@ -4062,7 +4063,7 @@ Letting $d=\dim X = 2n$, we have
 :::{.example title="?"}
 We have prove HRR using this theorem: we have
 \[
-\chi(X, \bundle{E} ) = \chi( \bundle{E} \tensor A^{0, \wait}, \delbar ) \equalsbecause{ASIT} \int_X { \ch(\bundle{E} \tensor A^{0, \wait} ) \over \eul(X) } \td(TX \tensor_R \CC)
+\chi(X, \bundle{E} ) = \chi( \bundle{E} \tensor A^{0, \wait}, \delbar ) \equalsbecause{\text{ASIT}} \int_X { \ch(\bundle{E} \tensor A^{0, \wait} ) \over \eul(X) } \td(TX \tensor_R \CC)
 .\]
 We have $\ch( \bundle{E} \tensor A^{0, \wait} ) = \ch(\bundle{E}) \ch( A^{0, \wait} )$ where \( \ch(A^{0, 1}) = \sum_I (-1)^i \ch(\Wedge^i A^{0, 1} )  \).
 The Chern roots of 
