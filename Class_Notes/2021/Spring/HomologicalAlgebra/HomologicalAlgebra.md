@@ -49,7 +49,6 @@
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
-\newcommand{\Ch}[0]{\operatorname{Ch}}
 \newcommand{\HF}[0]{\operatorname{HF}}
 \newcommand{\CF}[0]{\operatorname{HF}}
 \newcommand{\ZHS}[0]{\operatorname{ZHS}}
@@ -65,7 +64,6 @@
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
-\newcommand{\Perv}[0]{\operatorname{Perv}}
 \newcommand{\Gal}[0]{\operatorname{Gal}}
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
@@ -86,7 +84,6 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
-\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -100,21 +97,12 @@
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
-\newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
-\newcommand{\Ring}[0]{\mathbf{Ring}}
-\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
+\newcommand{\dR}[0]{\mathrm{dR}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
-\newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\operatorname{gr}}}
-\newcommand{\grMod}[0]{{\operatorname{grMod}}}
-\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -125,7 +113,6 @@
 \newcommand{\Inn}[0]{{\operatorname{Inn}}}
 \newcommand{\Out}[0]{{\operatorname{Out}}}
 \newcommand{\mltext}[1]{\left\{\begin{array}{c}#1\end{array}\right\}}
-\newcommand{\Fun}[0]{{\operatorname{Fun}}}
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
@@ -134,27 +121,57 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
-\newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
-\newcommand{\alg}[0]{\mathrm{Alg}}
-\newcommand{\scalg}[0]{\mathrm{sCAlg}}
-\newcommand{\calg}[0]{\mathrm{CAlg}}
-\newcommand{\dR}[0]{\mathrm{dR}}
-\newcommand{\poly}[0]{\operatorname{poly}}
-\newcommand{\Vect}[0]{{\operatorname{Vect}}}
-\newcommand{\Sh}[0]{{\operatorname{Sh}}}
-\newcommand{\presh}[0]{{\operatorname{Presh}}}
-\newcommand{\Presh}[0]{{\operatorname{Presh}}}
+\newcommand{\Cat}[0]{\mathsf{Cat}}
+\newcommand{\Fun}[0]{{\mathsf{Fun}}}
+\newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\poly}[0]{\mathsf{poly}}
+\newcommand{\Vect}[0]{{\mathsf{Vect}}}
+\newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Ch}[0]{\mathsf{Ch}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Set}[0]{{\mathsf{Set}}}
+\newcommand{\Sets}[0]{{\mathsf{Set}}}
+\newcommand{\sets}[0]{{\mathsf{Set}}}
+\newcommand{\Grp}[0]{{\mathsf{Grp}}}
+\newcommand{\Groups}[0]{{\mathsf{Groups}}}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathsf{biMod}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathsf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash R}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\mods}[1]{{{#1}\dash\mathsf{Mod}}}
+\newcommand{\modsright}[1]{\mathsf{Mod}\dash{#1}}
+\newcommand{\modsleft}[1]{{#1}\dash\mathsf{Mod}}
+\newcommand{\kmod}[0]{{k\dash\mathsf{Mod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+
+\newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\eul}[0]{{\operatorname{eul}}}
+\newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
-\newcommand{\Set}[0]{{\operatorname{Set}}}
-\newcommand{\Sets}[0]{{\operatorname{Set}}}
-\newcommand{\Grp}[0]{{\operatorname{Grp}}}
-\newcommand{\Groups}[0]{{\operatorname{Groups}}}
 \newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
 \newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
@@ -162,7 +179,6 @@
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
 \newcommand{\Ext}{\operatorname{Ext}}
-\newcommand{\sets}[0]{{\operatorname{Set}}}
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
 \newcommand{\fin}[0]{{\operatorname{fin}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
@@ -170,6 +186,7 @@
 \newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
+\newcommand{\discriminant}[0]{{\Delta}}
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
@@ -258,7 +275,7 @@
 \newcommand{\ms}[0]{\xrightarrow{\sim}}
 \newcommand{\from}[0]{\leftarrow}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
-\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
+\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#2}^{#1}}}
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
@@ -313,6 +330,7 @@
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
 \newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\Taut}[0]{{\operatorname{Taut}}}
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
@@ -343,20 +361,6 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\Top}[0]{{\mathbf{Top}}}
-\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
-\newcommand{\Ab}[0]{{\mathbf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathbf{Sch}}}
-\newcommand{\sch}[0]{{\mathbf{Sch}}}
-\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
-\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
-\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
-\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
-\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
-\newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
 \newcommand{\semidirect}[0]{\rtimes}
@@ -408,7 +412,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{\mathbf{#1}}
+\newcommand{\complex}[1]{{#1}^{\wait}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -477,6 +481,9 @@
 \newcommand\holomorphic[0]{\text{holo}}
 \newcommand\Mero[0]{\operatorname{Mero}}
 \newcommand\compact[0]{\text{cpt}}
+\newcommand\even[0]{\text{even}}
+\newcommand\odd[0]{\text{odd}}
+\newcommand\hodgestar[0]{\star}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
@@ -491,24 +498,24 @@
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
 
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
-
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
 \newcommand{\divides}{\mid}
 \newcommand{\notdivides}{\nmid}
 \newcommand{\fractional}[1]{\theset{#1}}
+\newcommand{\fractionalpart}[1]{\theset{#1}}
+\newcommand{\integerpart}[1]{\left[ {#1}\right] }
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
+\def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
+\newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
+
+\newcommand{\Tot}[0]{\operatorname{Tot}}
+\newcommand{\Totsum}[0]{\Tot^{\oplus}}
+\newcommand{\Totprod}[0]{\Tot^{\Pi}}
+\newcommand{\equalsbecause}[1]{\overset{#1}{=}}
 
 # Wednesday, January 13
 
@@ -2275,6 +2282,10 @@ Thus we get $h_n - s_{n-1}d: P_n \to Z_n(Q)$, and thus using projectivity one la
 
 Since $P_n$ is projective, there exists an $s_n: P_n \to Q_{n+1}$ such that $ds_n = h_n - s_{n-1} d$.
 :::
+
+# Tuesday, February 02
+# Tuesday, February 02
+# Tuesday, February 02
 
 # Wednesday, February 03
 
@@ -5223,6 +5234,374 @@ So this lifts to a SES of complexes
 where we can consider $d\tensor \one$ in the middle.
 We'll pick this up next time!
 :::
+
+
+
+
+
+
+
+
+
+# Friday, March 05
+
+> See first 10m
+
+:::{.observation}
+For a SES 
+\[
+A_1 \mapsvia{\alpha} A_2 \mapsvia{f} B \mapsvia{g} C_1 \mapsvia{\gamma} C_2
+,\]
+one can obtain an exact sequence
+\[
+0\to \coker \alpha \mapsvia{\bar f} B \mapsvia{g} \ker \gamma \to 0
+.\]
+
+:::
+
+
+:::{.observation}
+For a SES
+\[
+0 \to Y \mapsvia{i} Z \mapsvia{\pi} {Z\over Y} \to 0
+\]
+there is an induced exact sequence
+
+:::
+
+Some missed stuff here.
+
+:::{.proof title="of Kunneth Formula (continued)"}
+Note that 
+\[
+0\to \complex{Z} \tensor M \to \complex{P}\tensor M \to d\complex{P}\tensor M\to 0
+,\]
+where the differentials for the end terms are zero, and the homology will recover the original complex.
+
+\begin{tikzcd}
+	&&&& {} && {H_{n+1}(dP \tensor M)= dP \tensor M} \\
+	\\
+	{} && {H_{n}(Z \tensor M) = Z\tensor M} && {H_{n}(P \tensor M)} && {H_{n}(dP \tensor M) = dP \tensor M} \\
+	\\
+	&& {H_{n-1}(Z \tensor M) = Z_{n-1}\tensor M}
+	\arrow[from=1-7, to=3-3, in=180, out=0]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=3-7, to=5-3, in=180, out=0]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwyXSxbMiwyLCJIX3tufShaIFxcdGVuc29yIE0pID0gWlxcdGVuc29yIE0iXSxbNCwyLCJIX3tufShQIFxcdGVuc29yIE0pIl0sWzQsMF0sWzYsMCwiSF97bisxfShkUCBcXHRlbnNvciBNKT0gZFAgXFx0ZW5zb3IgTSJdLFs2LDIsIkhfe259KGRQIFxcdGVuc29yIE0pID0gZFAgXFx0ZW5zb3IgTSJdLFsyLDQsIkhfe24tMX0oWiBcXHRlbnNvciBNKSA9IFpfe24tMX1cXHRlbnNvciBNIl0sWzQsMV0sWzEsMl0sWzIsNV0sWzUsNl1d)
+
+
+By using the explicit formula for $\bd$, it turns out that \( \bd = (dP_{i+1} \injectsvia{i} Z) \tensor \one M \).
+By observation one, we get a SES
+\[
+0 \to {Z_n\tensor M \over dP_{n+1} \tensor M } \to H_n(P\tensor M) \to \ker i( \tensor \one_M) \to 0
+.\]
+
+By observation 1, the first term equals $H_n(\complex{P})\tensor M$.
+From this, we get a flat resolution of $H_{n-1}(P)$:
+
+\begin{tikzcd}
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\deg:} & \textcolor{rgb,255:red,214;green,92;blue,92}{2} & \textcolor{rgb,255:red,214;green,92;blue,92}{1} & \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	0 & 0 & {dP_n} & {Z_{n-1}} & {H_{n-1}(P)} & 0
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMSwiMCJdLFsxLDEsIjAiXSxbMSwwLCIyIixbMCw2MCw2MCwxXV0sWzIsMCwiMSIsWzAsNjAsNjAsMV1dLFszLDAsIjAiLFswLDYwLDYwLDFdXSxbMiwxLCJkUF9uIl0sWzMsMSwiWl97bi0xfSJdLFs0LDEsIkhfe24tMX0oUCkiXSxbNSwxLCIwIl0sWzAsMCwiXFxkZWc6IixbMCw2MCw2MCwxXV0sWzEsNV0sWzUsNl0sWzYsN10sWzcsOF0sWzAsMV1d)
+
+
+So we can use this to compute $\Tor(H_{n-1}(P), M)$ by taking homology:
+
+\begin{tikzcd}
+	\textcolor{rgb,255:red,214;green,92;blue,92}{\deg} & \textcolor{rgb,255:red,214;green,92;blue,92}{2} & \textcolor{rgb,255:red,214;green,92;blue,92}{1} & \textcolor{rgb,255:red,214;green,92;blue,92}{0} \\
+	0 & 0 & {dP_n \tensor M} & {Z_{n-1}\tensor M} & 0
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow["{i\tensor \one}", from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwxLCIwIl0sWzEsMSwiMCJdLFsyLDEsImRQX24gXFx0ZW5zb3IgTSJdLFszLDEsIlpfe24tMX1cXHRlbnNvciBNIl0sWzQsMSwiMCJdLFszLDAsIjAiLFswLDYwLDYwLDFdXSxbMiwwLCIxIixbMCw2MCw2MCwxXV0sWzEsMCwiMiIsWzAsNjAsNjAsMV1dLFswLDAsIlxcZGVnIixbMCw2MCw2MCwxXV0sWzAsMV0sWzEsMl0sWzIsMywiaVxcdGVuc29yIFxcMSJdLFszLDRdXQ==)
+
+
+Thus
+\[
+\ker(i\tensor \one_M) = \Tor_1( H_{n-1}(P), M) \cong \ker (dP_m \mapsvia{\bd} Z_{n-1} \tensor M)
+.\]
+
+:::
+
+:::{.theorem title="Universal Coefficient Theorem"}
+Let $\complex{P}$ be a chain complex of free abelian groups.
+For every abelian groups $M$ and every $n$, the Kunneth sequence splits non-canonically as 
+\[
+H_n(\complex{P} \tensor M) \cong \qty{ H_n( \complex{P} )\tensor M } \oplus \Tor_1^{\ZZ}(H_{n-1}(P), M)
+.\]
+:::
+
+:::{.remark}
+In optimal situations the tor term vanishes, e.g. if either term is torsionfree (so no elements of finite order).
+:::
+
+:::{.fact}
+Every subgroup of a free abelian group is free (hence projective, hence flat).
+:::
+
+:::{.proof title="?"}
+Since $dP_n \leq dP_{n-1}$, we can conclude $dP_n$ is free.
+Thus the following SES splits:
+\[
+0\to Z_n \to P_n \mapsvia{d} dP_n \to 0
+.\]
+So any lift of the identity map on $dP_n$ gives an isomorphic copy of the last term in the middle term, yielding $P_n \cong Z_n \oplus dP_n$. 
+Now tensoring with $M$ and using that it distributes over direct sums yields
+\[
+P_n \tensor M \cong (Z_n \tensor M) \oplus (dP_n \tensor M)
+.\]
+The left-hand side contains a copy of $\ker(d_n \tensor \one: P_n \tensor M \to P_{n-1} \tensor M)$, which itself contains a copy of $Z_n\tensor M$.
+So by a linear algebra exercise, we have $\ker(d_n \tensor \one) \cong (Z_n \tensor M) \oplus A$ for some unknown $A$, and since $dP_{n+1} \tensor M = \im(d_{n+1}\tensor \one)$ is contained in the first term, we can use the partial exactness of tensoring to preserve quotients and obtain 
+\[
+H_n(P\tensor M) = \qty{ H_n(P) \tensor M}  \oplus C'
+\]
+for some $C'$.
+Now applying the Kunneth formula we find that $C' = \Tor^\ZZ_1( H_{n-1}(P), M)$, yielding the claimed direct sum.
+:::
+
+:::{.remark}
+The following is a generalization for both.
+:::
+
+:::{.theorem title="Kunneth formula for complexes"}
+Let $P, Q \in \Ch(\rmod)$ be complexes, then 
+\[
+P\tensor Q \da \Tot^{\oplus}(P\tensor Q)_n \da \bigoplus_{p+q = n} P_p \tensor Q_q
+\]
+with differential[^sign_trick]
+\[
+d(a\tensor b) = (da)\tensor b + (-1)^pa \tensor (db)
+.\]
+If $P_n, dP_n$ are flat for all $n$, then there exists a SES
+\[
+0 
+\to \bigoplus_{p+q=n} H_p(P)\tensor H_q(Q) 
+\to H_n(P\tensor Q) 
+\to \bigoplus_{p+q=n-1} \Tor^R_1(H_p(P), H_q(Q) ) 
+\to 0
+.\]
+
+[^sign_trick]: 
+Recall that the squares would commute if we took the usual differentials, so we use a sign trick to get $d^2=0$.
+
+:::
+
+:::{.proof title="?"}
+Omitted here, but uses same ideas as the previous proofs.
+Hint: take $Q$ to have $M$ in degree 0.
+:::
+
+## Applications to Topology
+
+:::{.definition title="Simplicial Homology"}
+See some applications in section 1 of Weibel, e.g. simplicial and singular homology.
+The setup: $X\in \Top, R\in \Ring$ unital, and for $k\geq 0$ let $S_k = S_k(X)$ be the free \(R\dash\)module on $\Hom_\Top( \Delta_k, X)$ where \( \Delta_k\) is the standard simplex
+By ordering the vertices, this induces an ordering on the faces by taking lexicographic ordering.
+Then the restriction of a map $\Delta_k \to X$ to the $i$th face of \( \Delta_k \) gives a map \( \Delta_{k-1} \to X \), which induces an \(R\dash\)module morphism $\bd_i: S_k \to S_{k-1}$
+By summing these we can define \( d \da \sum_{i=0}^k (-1)^i \bd_i: S_k\to S_{k-1} \) and it turns out that $d^2 = 0$.
+So we can define a complex
+\[
+\cdots \to S_2 \mapsvia{d} \to S_1\to S_0 \to 0 \in \Ch(\rmod)
+.\]
+Taking it homology yields the **simplicial homology** of the complex $H_n(X; R) \da H_n(\complex{S}(X) )$.
+:::
+
+:::{.remark}
+Taking $R=\ZZ$ makes $S_k(X)$ a free abelian group.
+If $M$ is any abelian group, we can define $H_n(X; M) \da H_n( \complex{S}(X) \tensor_\ZZ M)$, the homology with **coefficients** in $M$.
+If no coefficients are specified, we write $H_n(X) \da H_n(X; \ZZ)$.
+There is then a universal coefficient theorem in topology:
+\[
+H_n(X; M) 
+\cong 
+\qty{ H_n(X) \tensor_\ZZ M} \oplus \Tor_1^\ZZ( H_{n-1}(X), M)
+.\]
+:::
+
+:::{.remark}
+Next week: group cohomology, spectral sequences next week.
+This will give us some objects to apply spectral sequences.
+:::
+
+
+
+# Monday, March 08
+
+## 3.6: Universal Coefficients Theorem
+
+:::{.remark}
+Let $X \in \Top$ and $S_k(X)$ be the free $\ZZ\dash$module on $\Hom_\Top( \Delta_k, X)$, which assemble into a chain complex $S(X)$.
+For $M\in \Ab$, we defined $H^n(X; M) \da H^n( \Hom(S(X), M))$ and write $H^n(X) \da H^n(X; \ZZ)$.
+The universal coefficient theorem states
+\[
+H^n(X; M) \cong \Hom_\ZZ(H_n(X), M) \oplus \Ext^1_\ZZ( H_{n-1}(X), M)
+.\]
+:::
+
+:::{.warnings}
+Note that this is homology on the RHS, not cohomology!
+:::
+
+:::{.theorem title="Universal Coefficients Theorem for Cohomology"}
+Let $\complex{P}$ be a chain complex of projective \(R\dash\)modules.
+Assume $dP_n$ is also projective for all $n$.
+For $M\in \rmod$, there is a split SES
+\[
+0 \to \Ext_R^1(H_{n-1}(P), M) \to H^n( \Hom_R( \complex{P}, M)) \to \Hom_R (H_n(P), M) \to 0
+.\]
+:::
+
+\todo[inline]{Ask about naturality!}
+
+:::{.proof title="Sketch"}
+As in the last lecture with free abelian groups, since the $dP_n$ are projective we can split $P_n \cong Z_n \oplus dP_n$ since $Z_n = \ker d$.
+Applying homs, since it's an additive functor this yields a new split exact sequence
+\[
+0 \to \Hom(dP_n, M) \to \Hom(P_n, M) \to \Hom(Z_n, M) \to 0
+.\]
+Now running the proof for the original Kunneth formula and replacing tensor products to homs, these assemble into a split exact sequence of complexes and this yields the desired SES.
+Using the strategy of the proof of the UCF for free abelian groups to see that the sequence splits (although non-canonically).
+:::
+
+:::{.remark}
+Note that flat is weaker than projective for tensor products, but in an asymmetric situation, there's nothing weaker than projective for the hom functors to be exact (since this is an iff).
+:::
+
+## Ch. 6: Group Homology and Cohomology
+
+### Definitions and Properties
+
+:::{.definition title="Modules of Groups"}
+Let $G\in \Grp$ be any group, finite or infinite, and let $A\in \modsleft{G}$ be a left \(G\dash\)module, i.e. an abelian group on which $G$ acts by additive maps on the left, written $g.a$ or $ga$ for $g\in G, a\in A$.
+Here *additive* means that $g.(a_1 + a_2) = g.a_1 + g.a_2$.
+Note that this implies $g.0 = 0, -g.a = -(g.a), g_1 (g_2 . a) = (g_1 g_2).a, 1_G.a = a$.
+Writing $\Endo_R(A) \da \Hom_R(A, A)$, we have a group morphism
+\[
+G &\to \Endo_\ZZ(A) \\
+g &\mapsto g.(\wait)
+.\]
+:::
+
+:::{.definition title="Equivariant Maps"}
+If $B \in \modsleft{G}$ is another left \(G\dash\)module, then 
+\[
+\Hom_G(A, B) = \ts{ f\in \Hom_\ZZ(A, B) \st f(g.a) = g(f(a)) \quad \forall a\in A, \forall g\in G } 
+,\]
+which are **$G\dash$equivariant maps**.
+:::
+
+:::{.definition title="Integral Group Ring"}
+We define
+\[
+\ZZ G\da \ts{ \sum_{i=1}^N m_i g_i \st m_i\in \ZZ, g_i\in G, n\in \NN } 
+.\]
+We can equip this with a ring structure using \( (mg)(m' g') = mm' gg' \) and extending $\ZZ\dash$linearly.
+:::
+
+:::{.remark}
+There is an equality of categories $\mods{G} = \modsleft{\ZZ G}$.
+This is also the same as the functor category $\Ab^\cat{G}$ (a category of the form \( \cat{A}^{\cat{I}} \)) where \( \cat{G} \) is the category with one object whose morphisms are the elements of $G$.
+In other words, \( \Ob(\cat{G}) \da \ts{ 1 } \)  and \( \Hom_{\cat{G}}(1, 1) = G \).
+Note that every morphism is invertible since $G$ is a group.
+
+![image_2021-03-08-09-36-58](figures/image_2021-03-08-09-36-58.png)
+
+The right-hand side yields a \(G\dash\)module since $F(g)(a) = g.a$.
+:::
+
+:::{.definition title="Trivial modules"}
+An object $A\in \modsleft{G}$ is a **trivial** module if and only if $g.a = a$ for all $g\in G$.
+:::
+
+:::{.remark}
+Any $G\in \Ab$ can be viewed as a trivial \(G\dash\)module in this way.
+This yields a functor $\operatorname{Triv}:\Ab \to \modsleft{G}$.
+There is a distinguished trivial \(G\dash\)module, namely $A \da \ZZ$ with the trivial $G\dash$action.
+There are two natural functors $\modsleft{G}\to \Ab$:
+
+- $A^G \da \ts{ a\in A \st g.a = a \forall g\in G }$, the **invariant subgroup** of $A$.
+- $A_G \da A / \gens{ ga-a \st g\in G, a\in A }$, where we take the \(G\dash\)module generated by the relation in the denominator, which are the **coinvariants** of $A$.
+:::
+
+:::{.exercise title="6.1.1"}
+\envlist
+
+1. $A^G$ is the maximal trivial submodule of $A$, so the functor $(\wait)^G$ is right-adjoint to $\operatorname{Triv}$.
+  These should both be easy checks!
+  So this is left-exact and has right-derived functors (similar to ext).
+
+2. $A_G$ is the largest $G\dash$trivial quotient of $A$, and $(\wait)_G$ is left-adjoint to $\operatorname{Triv}$.
+  Thus it is right-exact and has left-derived functors (similar to tor).
+  
+:::
+
+:::{.lemma title="?"}
+Let $A\in \modsleft{G}$ and $\ZZ$ be the trivial $G\dash$module.
+Then
+
+1. $A_G \cong \ZZ \tensor_{\ZZ G} A$, and 
+2. $A^G \cong \Hom_G(\ZZ, A)$ (**important!!**)
+
+:::
+
+:::{.warnings}
+Number 2 above is important to remember!
+:::
+
+:::{.proof title="of 1"}
+Viewing $\ZZ = _{\ZZ} \ZZ_{\ZZ G} \in \bimod{\ZZ}{\ZZ G}$ with the trivial structure, recall[^recall_bimod_struct]
+that we have a functor
+\[
+\Hom_(\ZZ, \wait): \modsleft{\ZZ} &\to \modsleft{\ZZ G}\\
+\]
+where $\Hom_\ZZ(\ZZ, A)$ has an action $(g.f)(x) \da f(x. g)$ for $x\in \ZZ g\in G$.
+Since $x.g = x$ for all $x, g$, we have \( g.f = f \) and thus \( \Hom_\ZZ(\ZZ, A) \) is a trivial \(G\dash\)module, and there is an isomorphism in $\Ab$:
+\[
+\Hom_\ZZ(\ZZ, A) &\underset{\Ab}{\mapsvia{\sim}} A \\
+f &\mapsto f(a)
+.\]
+Thus $\Hom_\ZZ(\ZZ, \wait) \cong \operatorname{Triv}(\wait)$.
+By prop 2.6.3, the functor $\ZZ\tensor_{\ZZ G} (\wait)$ is left-adjoint to $\Hom_\ZZ( _{\ZZ} \ZZ_{\ZZ G}, \wait)$.
+Now applying exercise 6.1.1 part 2, $(\wait)_G \cong \operatorname{Triv}(\wait)$.
+Since left-derived functors are universal \( \delta\dash \)functors, we have a natural isomorphism $(\wait)_G \cong \ZZ\tensor_{\ZZ G} (\wait)$ since they're both left-adjoint to the same functor.
+
+[^recall_bimod_struct]: 
+See Weibel p. 41.
+
+:::
+
+:::{.proof title="of 2 "}
+Taking $f(1)$, we have $A^G \cong \Hom_\ZZ(\ZZ, A^G)$.
+Using the adjoint property from exercise 6.1.1 part 1, this is isomorphic to $\Hom_G( \operatorname{Triv}(\ZZ), A)$.
+Thus $(\wait)^G \cong \Hom_G(\ZZ, \wait)$.
+:::
+
+:::{.remark}
+The exts here will classify extensions in the category of left $\ZZ\dash$modules.
+Note the switched order on the hom functor however!
+:::
+
+
+
+
+
+
+
+
+
 
 
 
