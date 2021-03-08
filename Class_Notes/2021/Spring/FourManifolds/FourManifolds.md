@@ -86,7 +86,6 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
-\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -100,21 +99,12 @@
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
-\newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
-\newcommand{\Ring}[0]{\mathbf{Ring}}
-\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
+\newcommand{\dR}[0]{\mathrm{dR}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
-\newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\operatorname{gr}}}
-\newcommand{\grMod}[0]{{\operatorname{grMod}}}
-\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -125,7 +115,6 @@
 \newcommand{\Inn}[0]{{\operatorname{Inn}}}
 \newcommand{\Out}[0]{{\operatorname{Out}}}
 \newcommand{\mltext}[1]{\left\{\begin{array}{c}#1\end{array}\right\}}
-\newcommand{\Fun}[0]{{\operatorname{Fun}}}
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
@@ -134,27 +123,55 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
-\newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
-\newcommand{\alg}[0]{\mathrm{Alg}}
-\newcommand{\scalg}[0]{\mathrm{sCAlg}}
-\newcommand{\calg}[0]{\mathrm{CAlg}}
-\newcommand{\dR}[0]{\mathrm{dR}}
-\newcommand{\poly}[0]{\operatorname{poly}}
-\newcommand{\Vect}[0]{{\operatorname{Vect}}}
-\newcommand{\Sh}[0]{{\operatorname{Sh}}}
-\newcommand{\presh}[0]{{\operatorname{Presh}}}
-\newcommand{\Presh}[0]{{\operatorname{Presh}}}
+\newcommand{\Cat}[0]{\mathsf{Cat}}
+\newcommand{\Fun}[0]{{\mathsf{Fun}}}
+\newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\poly}[0]{\mathsf{poly}}
+\newcommand{\Vect}[0]{{\mathsf{Vect}}}
+\newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Set}[0]{{\mathsf{Set}}}
+\newcommand{\Sets}[0]{{\mathsf{Set}}}
+\newcommand{\sets}[0]{{\mathsf{Set}}}
+\newcommand{\Grp}[0]{{\mathsf{Grp}}}
+\newcommand{\Groups}[0]{{\mathsf{Groups}}}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathsf{biMod}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathsf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash R}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\mods}[1]{{{#1}\dash\mathsf{Mod}}}
+\newcommand{\modsright}[1]{\mathsf{Mod}\dash{#1}}
+\newcommand{\modsleft}[1]{{#1}\dash\mathsf{Mod}}
+\newcommand{\kmod}[0]{{k\dash\mathsf{Mod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+
+\newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\eul}[0]{{\operatorname{eul}}}
+\newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
-\newcommand{\Set}[0]{{\operatorname{Set}}}
-\newcommand{\Sets}[0]{{\operatorname{Set}}}
-\newcommand{\Grp}[0]{{\operatorname{Grp}}}
-\newcommand{\Groups}[0]{{\operatorname{Groups}}}
 \newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
 \newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
@@ -162,7 +179,6 @@
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
 \newcommand{\Ext}{\operatorname{Ext}}
-\newcommand{\sets}[0]{{\operatorname{Set}}}
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
 \newcommand{\fin}[0]{{\operatorname{fin}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
@@ -170,6 +186,7 @@
 \newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
+\newcommand{\discriminant}[0]{{\Delta}}
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
@@ -258,7 +275,7 @@
 \newcommand{\ms}[0]{\xrightarrow{\sim}}
 \newcommand{\from}[0]{\leftarrow}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
-\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
+\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#2}^{#1}}}
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
@@ -344,20 +361,6 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\Top}[0]{{\mathbf{Top}}}
-\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
-\newcommand{\Ab}[0]{{\mathbf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathbf{Sch}}}
-\newcommand{\sch}[0]{{\mathbf{Sch}}}
-\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
-\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
-\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
-\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
-\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
-\newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
 \newcommand{\semidirect}[0]{\rtimes}
@@ -409,7 +412,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{\mathbf{#1}}
+\newcommand{\complex}[1]{{#1}^{\wait}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -478,6 +481,9 @@
 \newcommand\holomorphic[0]{\text{holo}}
 \newcommand\Mero[0]{\operatorname{Mero}}
 \newcommand\compact[0]{\text{cpt}}
+\newcommand\even[0]{\text{even}}
+\newcommand\odd[0]{\text{odd}}
+\newcommand\hodgestar[0]{\star}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
@@ -497,6 +503,8 @@
 \tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
 \draw (0,0) -- ({4*cos(45)},{4*sin(45)})
     (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
+    :qa
+    :qa
     (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
     (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
 }
@@ -507,11 +515,17 @@
 \newcommand{\divides}{\mid}
 \newcommand{\notdivides}{\nmid}
 \newcommand{\fractional}[1]{\theset{#1}}
+\newcommand{\fractionalpart}[1]{\theset{#1}}
+\newcommand{\integerpart}[1]{\left[ {#1}\right] }
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
+\newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
+\newcommand{\Tot}[0]{\operatorname{Tot}}
+\newcommand{\Totsum}[0]{\Tot^{\oplus}}
+\newcommand{\Totprod}[0]{\Tot^{\Pi}}
 
 # Tuesday, January 12
 
@@ -3930,5 +3944,354 @@ Moreover, if \( \alpha\wedge \beta = 0 \) implies that \( \beta = \alpha\wedge \
 
 
 
+
+
+
+# Friday, March 05
+
+
+
+
+:::{.remark}
+Recall that we set up a differential complex, whose objects were vector bundles and differentials were differential operators (i.e. linear combinations of partial derivatives) in local trivializations.
+We pulled back to tangent bundles (?) and defined the *symbol* of an operator, and saw that when taking the symbol complex of the deRham complex. the sequence of maps was given by wedging against a tautological one-form.
+This was an *elliptic complex* because the maps became wedging with a covector.
+:::
+
+
+:::{.example title="of an elliptic complex"}
+Let $X\in \Mfd_\CC$ and $\bundle{E}\to X \in \VectBundle_\CC$ be holomorphic.
+There is a resolution
+\[
+0 \to \bundle{E} \mapsvia{i} \bundle{E} \tensor A^{0, 0} \mapsvia{\delbar} \bundle{E} \tensor A^{0, 1} \mapsvia{\delbar} \cdots
+.\]
+What is the symbol complex?
+Consider the projection $\pi: T\dual X\to X$, and use pullbacks to get a sequence
+\[
+0 \to \pi^* \bundle{E} \tensor A^{0, 0} \mapsvia{\sigma( \delbar )} \pi^* \bundle{E} \tensor A^{0, 1} \mapsvia{\sigma( \delbar )} \cdots
+.\]
+Here the symbol \( \sigma(\delbar) \) replace $\dd{}{t \conj{z}_i}$ with the corresponding function on $T\dual X$, say $\conj{y}_i$.
+Then \( \sigma( \delbar) = \sum_i \conj{y}_i \, d\conj{z}_i \wedge (\wait) = \conj{ \alpha } \wedge (\wait) \).
+As before, at a point $(p, \alpha)$ where \( \alpha\neq 0 \) in \( T\dual X \), we get
+\[
+0 \to \bundle{E}_p \mapsvia{\conj{ \alpha} \wedge (\wait)} \bundle{E}_p \tensor \Wedge^{0, 1}_p X \mapsvia{\conj{ \alpha } \wedge (\wait)} \bundle{E}_p \tensor \Wedge^{0, 2} X \to \cdots
+,\]
+which is an exact sequence of vector spaces.
+So \( ( \bundle{E} \tensor A^{0, p}, \delbar ) \) is an elliptic complex.
+:::
+
+
+:::{.slogan}
+The symbol being exact is approximately the top-order part being nowhere-vanishing.
+:::
+
+:::{.remark}
+The next theorem computes the cohomology of an elliptic complex using Chern and Todd classes.
+
+:::
+
+:::{.theorem title="Atiyah-Singer Index Theorem"}
+If \( ( \complex{\bundle{E}}, d) \) is an elliptic complex of smooth vector bundles on a compact oriented $X\in \Mfd^n_\RR$, then 
+\[
+\chi(\complex{ \bundle{E} }, d) = \sum (-1)^i \dim \qty{\ker d^i \over \im d^{i-1} } = 
+(-1)^{\dim(X) \choose 2}
+\int_X {\ch \over \eul}( \complex{\bundle{E}} ) \td(TX \tensor_\RR \CC)
+.\]
+
+
+:::
+
+
+:::{.remark}
+Here we define \( \ch( \complex{\bundle{E}} \da \sum_i (-1)^i \ch( \bundle{E}^i ) \).
+What does it mean to divide by the Euler class?
+Let \( \ts{ x_i, -x_i } \)  be the Chern roots of the complexified tangent bundle \( TX\tensor \CC \), then \( \eul(X) \da \prod x_i \) is the product where we pick one of each of the Chern roots from each of the pairs.
+The preferred sign to choose is the one for which \( \int_X \prod x_i = \chi_\Top(X) \).
+Dividing just means to take the Chern character, then if it's divisible by $\prod x_i$, we do so.
+We have 
+\[
+\td(TX\tensor \CC) = \prod_i 
+\qty{x_i \over 1 - e^{-x_i}} 
+\qty{-x_i \over 1 - e^{-x_i}} 
+.\]
+
+Thus
+\[
+{\td(TX\tensor \CC) \over \eul(X) } = 
+\prod_i {1\over x_i}
+\qty{x_i \over 1 - e^{-x_i}} 
+\qty{-x_i \over 1 - e^{-x_i}} 
+,\]
+but note that this doesn't necessarily make sense.
+However, all all computations we'll see, there will be enough cancellation to make this well-defined.
+:::
+
+
+:::{.exercise title="Chern character of the de Rham complex"}
+$\ch( \complex{\Omega}X \tensor \CC) = \prod_i (1-e^{x_i}) (1 - e^{-x_i})$ for $X\in \Mfd_\RR^{2n}$ even dimensional.
+:::
+
+
+:::{.example title="?"}
+Supposing $X\in \Mfd_\RR^2$ is a genus $g$ surface, we have
+\[
+\OO \to \Omega^1\tensor \CC \to \Omega^2 \tensor \CC
+,\]
+and \( \ch(\complex{ \Omega }) = \ch( \OO) - \ch( \Omega^1 \tensor \CC) + \ch(\Omega^2\tensor \CC)  \).
+The Chern roots of $TX \tensor \CC$ are \( \ts{ x_i, -x_i } \), which come in pairs.
+So
+\[
+\ch( \complex{\Omega} ) 
+= 1 - e^{x_i} - e^{x_i} + e^{-x_i + x_i}
+= (1 - e^{-x_i})( 1 - e^{x_i} )
+.\]
+From the theorem, we're supposed to have 
+\[
+\chi( \complex{\Omega}, d) 
+&= 
+(-1)^{n(n-1) \over 2}
+\int_X
+{\prod_i (1 - e^{-x_i})( 1 - e^{x_i} ) \over \prod_{i=1}^n x_i }
+\prod_i 
+\qty{x_i \over 1 - e^{-x_i}} 
+\qty{-x_i \over 1 - e^{-x_i}} \\
+&= 
+(-1)^{n(n-1) \over 2}
+\int_X
+\prod_{i=1}^n (-x_i)\\
+& = \int_X 
+\prod_i x_i \\
+&=
+\chi_\Top(X) && \text{C-G-B}
+.\]
+Letting $d=\dim X = 2n$, we have 
+\[
+(-1)^n (-1)^{d(d-1) \over 2} = (-1)^n (-1)^{n(2n-1)} = (-1)^2n = 1 .
+\]
+:::
+
+:::{.example title="?"}
+We have prove HRR using this theorem: we have
+\[
+\chi(X, \bundle{E} ) = \chi( \bundle{E} \tensor A^{0, \wait}, \delbar ) \equalsbecause{ASIT} \int_X { \ch(\bundle{E} \tensor A^{0, \wait} ) \over \eul(X) } \td(TX \tensor_R \CC)
+.\]
+We have $\ch( \bundle{E} \tensor A^{0, \wait} ) = \ch(\bundle{E}) \ch( A^{0, \wait} )$ where \( \ch(A^{0, 1}) = \sum_I (-1)^i \ch(\Wedge^i A^{0, 1} )  \).
+The Chern roots of 
+
+- $TX$ are \( \ts{ x_i } \)  
+- $A^{1, 0} = T\dual X$ are \( \ts{ -x_i } \)  
+- $A^{0, 1}$ are \( \ts{ -x_i } \)  
+
+So we obtain 
+\[
+\chi( \bundle{E} ) 
+&= (-1)^n \int_X {\prod ( 1- e^{x_i}) \over \prod x_i}
+\prod_i 
+\qty{x_i \over 1 - e^{-x_i}} 
+\qty{-x_i \over 1 - e^{-x_i}} \\
+&= \int_X \ch( \bundle{E} ) \prod_i {x_i \over 1-e^{-x_i} } \\
+&= \int_X \ch( \bundle{E} ) \td(TX)
+,\]
+which is HRR.
+:::
+
+
+
+
+
+
+
+
+
+# Monday, March 08
+
+:::{.remark}
+Recall that given a differential complex \( (\complex{ \bundle{E} }, d) \) we had a symbol complex \( ( \pi^* \complex{\bundle{E}}, \sigma(d) ) \) where $\pi: T\dual X\to X$ and 
+\[ \sigma\qty{  \sum_{\abs{I} \leq N} f_I \bd_I } \da \sum_{\abs{I} = N} f_I y^I 
+,\] 
+where we take the top-order differentials, $\dd{}{x_j} \mapsto y_j$ and 
+\[
+T\dual X &\to \RR \\
+\alpha &\mapsto \alpha\qty{\dd{}{x_j} }
+.\]
+We say that \( ( \complex{\bundle{E} }, d ) \) is **elliptic** if the symbol complex is exact on $T\dual X \smz$ where we delete the zero section.
+The Atiyah-Singer index theorem stated
+\[
+\chi( \complex{\bundle{E}}, d) = \int_X { \ch( \complex{ \bundle{E} }) \over \eul(X) } \td( TX\tensor_\RR \CC)
+.\]
+What's the connection to elliptic operators?
+Given a 2-term complex 
+\[
+0 \to \bundle{E}^0 \mapsvia{D} \bundle{E}^1 \to 0
+,\]
+then $D$ is an **elliptic operator** if this is an elliptic complex.
+This means the symbol complex is an isomorphism, i.e. 
+\[
+0 \to \pi^* \bundle{E}^0 \mapsvia{\sigma(D)} \pi^* \bundle{E}^1 \to 0
+\]
+where $\sigma(D)$ is an isomorphism away from the zero section.
+:::
+
+:::{.remark}
+Every elliptic complex can be converted into a 2-term complex using a hermitian metric.
+Given 
+\[
+\bundle{E}^0 \mapsvia{d^0} \bundle{E}^1 \mapsvia{d^1} \bundle{E}^2 \to \cdots
+,\]
+we map this to 
+\[
+0 \to \bundle{E}^{\text{even}} \da \bigoplus_{i \text{ even} } \bundle{E}^i 
+\mapscorrespond{D^\text{even}}{D^{\text{odd} }} 
+\bundle{E}^{\text{odd}} \da \bigoplus_{i \text{ odd}} \to 0
+\]
+where 
+\[
+D \da ((d^{2i-1})^{\dagger} , d^{2i} ) : \bundle E^{2i} \to \bundle{E}^{2i-1} \oplus \bundle{E}^{2i+2} \\
+\]
+and $(d^{2i-1})^{\dagger}$ is defined by the following property: for \( \alpha\in \bundle{E}^{2i-1} \) and \( \beta \in \bundle{E}^{2i}(X) \), 
+\[
+\inner{ d^{2i-1} \alpha}{\beta}_h = \inner{ \alpha } { ( (d^{2i-1})^{\dagger} \beta}_h
+.\]
+Here this pairing depends on a hermitian metric $h$, which is a hermitian form on each fiber:
+\[
+h_i: \bundle{E}^i \tensor \conj{ \bundle{E}^i} \to \CC
+.\]
+Using this, we can fix a volume form $dV$ on $X$ and define
+\[
+\inner{u}{v}_h \da \int_X h_i(u, \conj{v}) \, dV && u, v\in \bundle{E}^i(X)
+.\]
+This yields the desired two-term complex, and $( \complex{\bundle{E}}, d)$ is elliptic if and only if $D^e \circ D^o: \bundle{E}^o \selfmap$ and $D^o \circ D^e: \bundle{E}^e \selfmap$ are elliptic operators.
+:::
+
+:::{.example title="?"}
+Taking the de Rham complex
+\[
+0 \to \OO \mapsvia{d} \Omega^1 \mapsvia{d} \Omega^2 \to \cdots
+,\]
+one can define 
+\[
+\Omega^{\even} \mapscorrespond{d + d^\dagger}{ d + d^{\dagger}} \Omega^{\odd}
+.\]
+Then using adjoint properties, we have
+\[
+\inner{\alpha}{ d^\dagger d^\dagger \beta} = 
+\inner{ d \alpha}{ d^\dagger \beta} =
+\inner{ d^2 \alpha}{ \beta } = 
+0
+,\]
+using that $d^2 = 0$, and since this is true for all \( \alpha, \beta \) we have \( (d^\dagger)^2 \beta = 0 \)  for all \( \beta \).
+Noting that $d d^\dagger + d^\dagger d: \Omega^i(X) \selfmap$, and this operator is **the Laplacian**.
+Moreover \( \ker (d d^\dagger + d^\dagger d ) \) is the space of **harmonic $i\dash$forms**.
+:::
+
+:::{.remark}
+Note that this space of harmonic forms depended on the Hermitian metrics on $\bundle{E}^i$ and the volume form $dV$.
+In the case $\bundle{E}^i \da \Omega^i$, there is a natural metric determined by any Riemannian metric on $X$.
+Recall that this is given by a metric
+\[
+g: TX \tensor TX \to \RR
+.\]
+This determines an isomorphism
+\[
+T_p X &\mapsvia{\sim} T_p\dual X\\
+v &\mapsto g(v, \wait)
+,\]
+which we can invert to get a metric on the cotangent bundle $T\dual X$.
+This induces a metric on $i\dash$forms using the identification \( \Omega^i \da \Wedge^i T\dual X \) and induces a volume form
+\[
+dV \da \sqrt{ \det g}: \Wedge^{\text{top}} TX \to \RR
+.\]
+
+In this case, $d d^\dagger + d^\dagger d$ on \( \Omega^i(X) \) is called the **metric Laplacian**.
+:::
+
+:::{.remark}
+Let $(X, g)$ be a Riemannian manifold.
+We thus have a symmetric bilinear form on \( \Omega^p(X) \) given by pairing sections:
+\[
+\inner{ \alpha}{ \beta} \da \int_X g( \alpha, \beta)
+.\]
+Note that we have orthonormal frames on \( \Omega^p(X) \) of the form \( e_{i_1} \wedge \cdots \wedge e_{i_p} \) where the \( \ts{ e_i } \)  are orthonormal frames on $T\dual X$.
+:::
+
+:::{.definition title="Hodge Star Operator"}
+Let $n\da \dim(X)$.
+The **Hodge star** operator is a map 
+\[
+\hodgestar: \Omega^p \to \Omega^{n-p}
+.\]
+defined by the property
+\[
+\alpha\wedge \hodgestar \beta= g( \alpha, \beta) dV
+.\]
+Concretely, we have 
+\[
+\hodgestar \qty{ \sum f_I dx_{i_1} \wedge \cdots \wedge dx_{i_p} } 
+&= \hodgestar \qty{ \sum f_I e_{i_1} \wedge \cdots \wedge e_{i_p} } \\
+&= (-1)^\ell \sum_{j_k \in \ts{ 1, \cdots, n } \sm I} f_I e_{j_1} \wedge \cdots \wedge e_{j_{n-p}}
+\]
+for some sign $\ell$.
+:::
+
+:::{.example title="?"}
+Let $X\da \RR^4$ and $g$ the standard metric, i.e. $d = dx_1^2 + \cdots + dx_4^2$.
+Take an orthonormal basis of $T\dual \RR^4$, say \( \ts{ e_1, e_2, e_3, e_4 } \) where $e_i \da dx_i$.
+Then the induced volume form is $dV \da e_1 \wedge e_2 \wedge e_3 \wedge e_4$.
+We can then compute
+\(
+\hodgestar(e_1 \wedge e_2)
+\)
+which is defined by the property
+\[
+\alpha\wedge \hodgestar( e_1 \wedge e_2) = g( \alpha, e_1 \wedge e_2) dV
+.\]
+On the right-hand side, $g( \alpha, e_1 \wedge e_2) = c_{12}(\alpha) e_1 \wedge e_2 \wedge e_3 \wedge e_4$ where $c_{12}$ is the coefficient of $e_1 \wedge e_2$.
+To extract that coefficient, we can take \( \alpha( e_3 \wedge e_4 \), writing \( \alpha = \sum c_{ij} e_i \wedge e_j \).
+Similarly,  \( \hodgestar)e_1 \wedge e_3) = -e_2 \wedge e_4 \).
+This follows from writing 
+\[
+\alpha \wedge \hodgestar(e_1 \wedge e_3) =
+c_{13}(\alpha) {\color{blue} e_1} \wedge e_2 \wedge {\color{blue} e_3 } \wedge e_4 =
+(-1) c_{13}(\alpha) e_1 \wedge {\color{blue} e_3 \wedge e_2} \wedge e_4
+.\]
+
+From this, $\hodgestar: \Omega^p \to \Omega^{n-p}$ is defined fiber-wise as
+\[
+\inner{ \alpha}{ \beta} = \int_X \alpha\wedge \hodgestar \beta
+.\]
+
+
+:::
+
+:::{.exercise title="?"}
+Show that \( \hodgestar^2 = (-1)^{p(n-p)} \).
+:::
+
+:::{.proposition title="Formula for the adjoint of the Hodge star"}
+Let $d^\dagger \da (-1)^{n(p-1) +1} \hodgestar d \hodgestar$.
+Then 
+\[
+\inner{\alpha}{ d \beta} = \inner{d^\dagger \alpha}{ \beta} && \alpha\in \Omega^p(X), \beta\in \Omega^{p-1}(X)
+.\]
+:::
+
+:::{.proof title="?"}
+A slick application of Stokes' theorem!
+Using that \( \hodgestar \) is an isometry, we have
+\[
+\inner{ \alpha}{ d \beta} 
+&= \int_X \alpha\wedge \hodgestar d \beta \\
+&= \int_X \hodgestar \alpha \wedge d \beta 
+(-1)^{p(n-p)} 
+&& \text{applying $\hodgestar$ to both} \\
+&= -\int_X d( \hodgestar \alpha) \wedge \beta (-1)^{p(n-p)}
+&& \text{Stokes/IBP} \\
+&= (-1)^{p(n-p)+1} \int_X \hodgestar d \hodgestar \alpha \wedge \hodgestar \beta 
+&& \text{isometry}\\
+&= (-1)^{p(n-p)+1} \inner{\hodgestar d \hodgestar \alpha}{ \beta}
+,\]
+which shows that the term in the left-hand side of the inner product above is the adjoint of $d^\dagger$.
+
+:::
 
 
