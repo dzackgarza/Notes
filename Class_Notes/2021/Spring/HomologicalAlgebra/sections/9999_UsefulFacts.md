@@ -26,35 +26,6 @@ Notational conventions:
 
 
 
-:::{.proposition title="Kernels as pullbacks and cokernels as pushouts"}
-The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square, and the cokernel $\coker f$ as a cocartesian square:
-
-\begin{tikzcd}
-	K \\
-	& {\ker f} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && 0 \\
-	\\
-	& 0 && \textcolor{rgb,255:red,92;green,92;blue,214}{B} && {\coker f} \\
-	&&&&&& C
-	\arrow[dotted, from=2-6, to=4-6]
-	\arrow[from=2-4, to=2-6]
-	\arrow["f"', color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=4-4]
-	\arrow["0"', dotted, from=4-4, to=4-6]
-	\arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=4-6, to=2-4]
-	\arrow["{\exists !}"', dashed, from=4-6, to=5-7]
-	\arrow[curve={height=12pt}, from=4-4, to=5-7]
-	\arrow[curve={height=-12pt}, from=2-6, to=5-7]
-	\arrow[dotted, from=2-2, to=2-4]
-	\arrow[from=4-2, to=4-4]
-	\arrow[dotted, from=2-2, to=4-2]
-	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=4-4]
-	\arrow[curve={height=-12pt}, from=1-1, to=2-4]
-	\arrow[curve={height=12pt}, from=1-1, to=4-2]
-	\arrow["{\exists !}"', dashed, from=1-1, to=2-2]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMywxLCJBIixbMjQwLDYwLDYwLDFdXSxbNSwxLCIwIl0sWzMsMywiQiIsWzI0MCw2MCw2MCwxXV0sWzUsMywiXFxjb2tlciBmIl0sWzYsNCwiQyJdLFsxLDEsIlxca2VyIGYiXSxbMSwzLCIwIl0sWzAsMCwiSyJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFswLDFdLFswLDIsImYiLDIseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMiwzLCIwIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzMsMCwiIiwwLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzMsNCwiXFxleGlzdHMgISIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIiIsMCx7ImN1cnZlIjoyfV0sWzEsNCwiIiwwLHsiY3VydmUiOi0yfV0sWzUsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzYsMl0sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzUsMiwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzcsMCwiIiwxLHsiY3VydmUiOi0yfV0sWzcsNiwiIiwxLHsiY3VydmUiOjJ9XSxbNyw1LCJcXGV4aXN0cyAhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
-
-:::
 
 
 
@@ -184,4 +155,42 @@ TFAE in \( \rmod \):
 
 :::
 
+## Universal Properties
+
+
+:::{.proposition title="Universal Property of the Quotient for Groups"}
+If $f: G\to K$ and $H\normal G$ (so that $G/H$ is defined), then the map $f$ descends to the quotient if and only if $H \subseteq \ker(f)$.
+
+:::
+
+
+:::{.proposition title="Kernels as pullbacks and cokernels as pushouts"}
+The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square, and the cokernel $\coker f$ as a cocartesian square:
+
+\begin{tikzcd}
+	K \\
+	& {\ker f} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && 0 \\
+	\\
+	& 0 && \textcolor{rgb,255:red,92;green,92;blue,214}{B} && {\coker f} \\
+	&&&&&& C
+	\arrow[dotted, from=2-6, to=4-6]
+	\arrow[from=2-4, to=2-6]
+	\arrow["f"', color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=4-4]
+	\arrow["0"', dotted, from=4-4, to=4-6]
+	\arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=4-6, to=2-4]
+	\arrow["{\exists !}"', dashed, from=4-6, to=5-7]
+	\arrow[curve={height=12pt}, from=4-4, to=5-7]
+	\arrow[curve={height=-12pt}, from=2-6, to=5-7]
+	\arrow[dotted, from=2-2, to=2-4]
+	\arrow[from=4-2, to=4-4]
+	\arrow[dotted, from=2-2, to=4-2]
+	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=4-4]
+	\arrow[curve={height=-12pt}, from=1-1, to=2-4]
+	\arrow[curve={height=12pt}, from=1-1, to=4-2]
+	\arrow["{\exists !}"', dashed, from=1-1, to=2-2]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMywxLCJBIixbMjQwLDYwLDYwLDFdXSxbNSwxLCIwIl0sWzMsMywiQiIsWzI0MCw2MCw2MCwxXV0sWzUsMywiXFxjb2tlciBmIl0sWzYsNCwiQyJdLFsxLDEsIlxca2VyIGYiXSxbMSwzLCIwIl0sWzAsMCwiSyJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFswLDFdLFswLDIsImYiLDIseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMiwzLCIwIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzMsMCwiIiwwLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzMsNCwiXFxleGlzdHMgISIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIiIsMCx7ImN1cnZlIjoyfV0sWzEsNCwiIiwwLHsiY3VydmUiOi0yfV0sWzUsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzYsMl0sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzUsMiwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzcsMCwiIiwxLHsiY3VydmUiOi0yfV0sWzcsNiwiIiwxLHsiY3VydmUiOjJ9XSxbNyw1LCJcXGV4aXN0cyAhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+:::
 
