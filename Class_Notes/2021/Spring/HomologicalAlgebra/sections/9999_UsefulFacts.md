@@ -1,6 +1,14 @@
 # Useful Facts
 
 
+:::{.proposition title="Algebra Facts"}
+\envlist
+
+- Free $\implies$ projective $\implies$ flat $\implies$ torsionfree (for finitely-generated \(R\dash\)modules)
+  - Over $R$ a PID: free $\iff$ torsionfree
+:::
+
+
 :::{.remark}
 Notational conventions:
 
@@ -180,7 +188,7 @@ TFAE in \( \rmod \):
 :::{.proposition title="Basic Properties of Tor"}
 \envlist 
 
-- $\Tor_1^R(A, B) = 0$ for either $A$ or $B$ flat.
+- $\Tor_n^R(A, B) = 0$ for either $A$ or $B$ flat.
 :::
 
 
