@@ -177,6 +177,32 @@ TFAE in \( \rmod \):
 :::
 
 
+:::{.fact}
+The most useful SES for proofs here:
+\[
+0 \to \ZZ \mapsvia{n} \ZZ \mapsvia{\pi} \ZZ/n \to 0
+.\]
+
+:::
+
+
+:::{.proposition title="Common Tensor Products"}
+\envlist
+
+- $\ZZ/n \tensor_\ZZ G \cong G/nG$
+- $\QQ\tensor_\ZZ \ZZ/n \cong 0$.
+
+
+:::
+
+
+:::{.proposition title="Common Tor Groups"}
+
+- $\Tor^\ZZ_1(\ZZ/n, G) \cong \ts{ h\in H \st nh = e }$
+
+:::
+
+
 ## Universal Properties
 
 :::{.proposition title="Universal Property of the Quotient for Groups"}
