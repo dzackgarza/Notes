@@ -142,7 +142,6 @@ where we've used the fact that $\ZZ/n$ is commutative.
 - Left adjoints commute with colimits: $L( \colim F) = \colim (L\circ F)$
 :::
 
-
 :::{.proposition title="Characterizations of Splittings"}
 TFAE in \( \rmod \):
 
@@ -189,11 +188,10 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 
 ## Adjunctions
 
-
 :::{.proposition title="Tensor-Hom Adjunction"}
-There is an adjunction
+For a fixed $M\in \bimod{R}{S}$, there is an adjunction
 \[
-\adjunction{\modsright{R}}{\modsright{S}}{F}{G}
+\adjunction{ \wait \tensor_R M }{\Hom_S(M, \wait)}{ \modsright{R} } { \modsleft{S} }
 .\]
 
 :::
