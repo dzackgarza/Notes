@@ -27,8 +27,6 @@ Notational conventions:
 
 
 
-
-
 :::{.proposition title="Basic properties of Hom"}
 \envlist
 
@@ -45,13 +43,11 @@ Notational conventions:
 
 :::
 
-
 :::{.proposition title="Basic Properties of Ext"}
 \envlist
 
 - $\Ext^{>1}(A, B) = 0$ for any $A$ projective or $B$ injective.
 :::
-
 
 :::{.fact}
 A maps $A \mapsvia{f} B$ in $\rmod$ is injective if and only if $f(a) = 0_B \implies a = 0_A$.
@@ -157,12 +153,9 @@ TFAE in \( \rmod \):
 
 ## Universal Properties
 
-
 :::{.proposition title="Universal Property of the Quotient for Groups"}
 If $f: G\to K$ and $H\normal G$ (so that $G/H$ is defined), then the map $f$ descends to the quotient if and only if $H \subseteq \ker(f)$.
-
 :::
-
 
 :::{.proposition title="Kernels as pullbacks and cokernels as pushouts"}
 The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square, and the cokernel $\coker f$ as a cocartesian square:
@@ -191,6 +184,17 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 \end{tikzcd}
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMywxLCJBIixbMjQwLDYwLDYwLDFdXSxbNSwxLCIwIl0sWzMsMywiQiIsWzI0MCw2MCw2MCwxXV0sWzUsMywiXFxjb2tlciBmIl0sWzYsNCwiQyJdLFsxLDEsIlxca2VyIGYiXSxbMSwzLCIwIl0sWzAsMCwiSyJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFswLDFdLFswLDIsImYiLDIseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMiwzLCIwIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzMsMCwiIiwwLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzMsNCwiXFxleGlzdHMgISIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIiIsMCx7ImN1cnZlIjoyfV0sWzEsNCwiIiwwLHsiY3VydmUiOi0yfV0sWzUsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzYsMl0sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzUsMiwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzcsMCwiIiwxLHsiY3VydmUiOi0yfV0sWzcsNiwiIiwxLHsiY3VydmUiOjJ9XSxbNyw1LCJcXGV4aXN0cyAhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+:::
+
+## Adjunctions
+
+
+:::{.proposition title="Tensor-Hom Adjunction"}
+There is an adjunction
+\[
+\adjunction{\modsright{R}}{\modsright{S}}{F}{G}
+.\]
 
 :::
 
