@@ -49,7 +49,6 @@
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
-\newcommand{\Ch}[0]{\operatorname{Ch}}
 \newcommand{\HF}[0]{\operatorname{HF}}
 \newcommand{\CF}[0]{\operatorname{HF}}
 \newcommand{\ZHS}[0]{\operatorname{ZHS}}
@@ -65,7 +64,6 @@
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
-\newcommand{\Perv}[0]{\operatorname{Perv}}
 \newcommand{\Gal}[0]{\operatorname{Gal}}
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
@@ -134,6 +132,8 @@
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Ch}[0]{\mathsf{Ch}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
@@ -148,7 +148,7 @@
 \newcommand{\ssets}[0]{\mathsf{sSets}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\grMod}[0]{{\mathsf{grMod}}}
-\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathsf{biMod}}
+\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
 \newcommand{\Top}[0]{{\mathsf{Top}}}
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
@@ -156,14 +156,13 @@
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
-\newcommand{\modr}[0]{{\mathsf{Mod}\dash R}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\mathsf{Mod}}}
-\newcommand{\modsright}[1]{\mathsf{Mod}\dash{#1}}
-\newcommand{\modsleft}[1]{{#1}\dash\mathsf{Mod}}
-\newcommand{\kmod}[0]{{k\dash\mathsf{Mod}}}
+\newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
+\newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
+\newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
+\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
 \newcommand{\Mod}[0]{{\mathsf{Mod}}}
-
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
@@ -497,6 +496,7 @@
 \newcommand\cupp[0]{\smile}
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
+\newcommand\ev[0]{\operatorname{ev}}
 
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
@@ -516,6 +516,8 @@
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
 \newcommand{\equalsbecause}[1]{\overset{#1}{=}}
+\newcommand{\ideal}[1]{\mathcal{#1}}
+\newcommand{\forget}[0]{\mathrm{Forget}}
 
 # Tuesday, January 12
 
@@ -4283,5 +4285,227 @@ Using that \( \hodgestar \) is an isometry, we have
 which shows that the term in the left-hand side of the inner product above is the adjoint of $d^\dagger$.
 
 :::
+
+
+
+# Wednesday, March 10
+
+
+:::{.warnings}
+Missing some stuff from the first few minutes here!
+:::
+
+
+:::{.remark}
+Can we always get a Hermitian metric?
+Let $X \in \Mfd_{C^{\infty }(\RR)}$ and \( \bundle{E} \to X \in \VectBundle_{\CC} \) a smooth complex vector bundle.
+Then any section $h\in \bundle{E}\dual \tensor \conj{\bundle{E}}\dual(X)$, we have
+\[
+h: \bundle{E} \tensor \conj{\bundle{E}} \to \OO \\
+h( e\tensor f) 
+.\]
+for \( e, f \in \bundle{E}_p \) is a Hermitian form for all $p$.
+In local trivializations, $\ro{\bundle{E}}{U} \cong \OO_U^{\oplus r}$, and one can take the standard Hermitian form here.
+Then for $(f_1, \cdots, f_r) \in \OO^{\oplus r}(U)$, we have \( \sum f_i \bar f_i\in \OO(U) \).
+This can be extended to all of $X$ using a partition of unity subordinate to the coordinate charts.
+
+The thing to check here is that on $\CC^r$, for any collection $h_1, \cdots, h_n$, any positive linear combination \( \sum a_i h_i \) is again a Hermitian metric for any \( a_i \in \RR^+ \).
+One can regard these as skew-symmetric matrices, which are closed under addition, and the positive-definite property ensures it's still a metric since $h(v, v) = \sum a_i h_i(v, v) > 0$ for $v\neq 0$.
+:::
+
+
+:::{.remark}
+Recall that we start with a Riemannian manifold $(X, g)$ where $g: TX^{\otimes 2} \to \OO$ is a metric on the tangent bundle.
+Locally choose $f_1,\cdots, f_n$ an orthogonal frame of $TX$, then setting $e_i \da f_i\dual$ yields an orthogonal frame of $T\dual X$ and thus an orthogonal frame $e_{i_1} \wedge \cdots e_{i_p}$ of $\Wedge^p T\dual X \da \Omega^p X$.
+So we get a metric on the smooth $p\dash$forms \( \Omega^p X \).
+We defined the Hodge star operator
+\[
+\hodgestar: \Omega^p &\to \Omega^{n-p} \\
+e_{i_1} \wedge \cdots e_{i_p} &\mapsto \pm e_{j_1} \wedge \cdots \wedge e_{j_{n-p}}
+.\]
+where \( \ts{ i_1, \cdots, i_p, j_1, \cdots, j_{n-p} } = \ts{ e_1, \cdots, e_n } \).
+We saw that 
+\[
+e_{i_1} \wedge \cdots \wedge e_{i_p} \hodgestar \qty{ e_1 \wedge \cdots e_{i_p}} &= e_1 \wedge \cdots \wedge e_n \\
+\hodgestar \qty{ \sum_{\abs I = p } f_I e_I} &= \sum_{ \abs I = p} e_{I^c} (-1)^{\sign(I)}
+.\]
+
+Moreover, 
+\[
+\inner{ \alpha}{ \beta} = \int_X g( \alpha, \beta) dV = \int_X \alpha\wedge \qty{\hodgestar \beta}
+,\]
+and we showed that 
+\[
+\inner{ \alpha}{ d \beta} = \pm \inner{ d^\dagger \alpha}{ \beta}
+&& 
+d^\dagger \da \hodgestar d \hodgestar, \beta\in \Omega^{p-1}(X), \alpha\in \Omega^p(X)
+,\]
+yielding an adjoint operator
+\[
+d^\dagger: \Omega^p(X) \to \Omega^{p-1}(X)
+.\]
+:::
+
+
+:::{.definition title="Laplacian"}
+The **Laplacian** is the differential operator
+\[
+\Delta \da dd^\dagger + d^\dagger d: \Omega^p(X) \to \Omega^p(X)
+.\]
+:::
+
+
+:::{.definition title="Harmonic Forms"}
+A $p\dash$form \( \omega \) is **harmonic** if and only if \( \Delta \omega = 0 \).
+We define \( \mathcal{H}^p(X)  \) as the space of harmonic $p\dash$forms.
+:::
+
+
+:::{.remark}
+This operator is $\RR\dash$linear, so \( \mathcal{H}^p(X) \in \Vect_\RR  \).
+Note that this whole construction can be made to work over $\CC$ by adding conjugates in appropriate places.
+:::
+
+
+:::{.proposition title="?"}
+A smooth $p\dash$form \( \omega \) is harmonic if and only if \( d \omega = d^\dagger \omega = 0 \).
+:::
+
+
+:::{.proof title="?"}
+$\impliedby$:
+This direct is easy, since $\Delta \omega \da (dd^\dagger + d^\dagger d) \omega = d(0) + d^\dagger 0 = 0$.
+
+$\implies$:
+A nice trick! 
+Using the adjunction $d, d^\dagger$ we have
+\[
+\inner{ \Delta \omega}{ \omega}
+&=
+\inner{ d d^\dagger \omega}{ \omega} +
+\inner{d^\dagger \omega}{ \omega}
+\\
+&=
+\inner{ d^\dagger \omega}{ d^\dagger \omega} +
+\inner{d \omega}{ d \omega}
+.\]
+We now use that since $g$ is positive definite, it is a non-negative smooth function, and 
+\[
+\inner{ \alpha}{ \alpha} \da \int_X g( \alpha, \alpha) \, dV \geq 0 \text{ with equality } \iff \alpha \equiv 0 \text{ on } X
+.\]
+So we can conclude that $d^\dagger \omega = d \omega = 0$.
+
+:::
+
+
+:::{.warnings}
+Note that we've used that the inner product is symmetric over $\RR$.
+Over $\CC$, there are bars introduced from conjugation when swapping the variables.
+:::
+
+
+
+:::{.proposition title="?"}
+The following three subspaces of \( \Omega^p(X) \) are mutually orthogonal:
+\[
+d \Omega^{p-1}(X), \mathcal{H}^p(X), d^\dagger \Omega^{p+1}(X) 
+.\]
+:::
+
+
+:::{.proof title="?"}
+We can write
+\[
+\inner{ d \alpha}{ d^\dagger } = 
+\inner{ d^2 \alpha}{ \beta} =
+\inner{0}{ \beta}
+,\]
+showing that the 1st and 3rd spaces are orthogonal.
+If \( \alpha\in \mathcal{H}^p(X)  \) then by the above proposition, \( d \alpha = d^\dagger \alpha = 0 \), and so
+\[
+\inner{ \alpha }{ d \beta} = \inner{d^\dagger \alpha}{ \beta} = 0 \\
+\inner{ \alpha }{ d^\dagger \beta} = \inner{d \alpha}{ \beta} = 0
+.\]
+Thus the 2nd space is orthogonal to the 1st and 3rd.
+:::
+
+
+:::{.observation}
+Suppose something false ($\danger$): that \( \Omega^p(X) \) is a *complete* vector space with respect to the inner product.
+Remember that it is **not**!
+But if it were, there would be a decomposition
+\[
+\Omega^p(X) = d \Omega^{p-1}(X) \oplus \mathcal{H}^p(X) \oplus d^\dagger \Omega^{p+1}(X) 
+.\]
+Let \( \alpha\in \qty{ d \Omega^{p-1}(X) \oplus  d^\dagger \Omega^{p+1}(X)}^\perp  \) where we take the orthogonal complement with respect to the inner product.
+Then 
+\[
+\inner{ \alpha } { d \beta } &= 0 \forall \beta \\
+\inner{ \alpha } { d^\dagger \gamma } &= 0 \forall \gamma\\ \\
+\implies \inner{ d^\dagger \alpha}{ \beta} = 0 \forall \beta \\
+\implies d^\dagger \alpha \equiv 0 && \text{setting} \beta\da d^\dagger \alpha
+.\]
+Similarly, \( d \alpha = 0 \) and so \( \alpha\in \mathcal{H}^p(X)  \).
+
+The conclusion (which is true *without* the false assumption) is that 
+\[
+\qty{ d \Omega^{p-1}(X) \oplus d^\dagger \Omega^{p+1}(X)}^\perp = \mathcal{H}^p 
+.\]
+However, this doesn't yield the full direct sum decomposition: if $W \subseteq V$, then it's not necessarily true that \( V \cong W \oplus W^\perp \), which only holds if 
+
+- $V$ is complete,
+
+- $W$ is closed.
+
+:::
+
+
+:::{.fact}
+For smooth $p\dash$forms, this decomposition **does** hold despite the false assumption:
+\[
+\Omega^p(X) = d \Omega^{p-1}(X) \oplus \mathcal{H}^p(X) \oplus d^\dagger \Omega^{p+1}(X) 
+.\]
+
+:::
+
+:::{.corollary title="?"}
+Thus \( \mathcal{H}^p(X)  \) represents $H^p(X; \RR)$.
+:::
+
+:::{.remark}
+We have 
+\[
+H^p(X; \RR) 
+&= {\ker d \over \im d} \\
+&= { d \Omega^{p-1}(X) \oplus \mathcal{H}^p(X) \over d \Omega^{p-1}(X) } \\
+&= \mathcal{H}^p(X) 
+.\]
+Note that there is a map
+\[
+\mathcal{H}^p(X) \to H^p(X; \RR) 
+\]
+since \( \alpha\in \mathcal{H}^p(X)  \) satisfies \( d \alpha = 0 \) in addition to \( d^\dagger \alpha = 0 \).
+:::
+
+
+:::{.remark}
+Note that one can complete these spaces using Sobolev spaces, but there are issues. 
+Take $S^1$, then 
+\[
+L_2(S^1) \da \ts{ \sum a_n e^{2\pi i n z} \st \sum \abs a_i < \infty  }
+,\] 
+but for $f\in L_2(S^1)$ we have \( df = \sum 2\pi i n a_n e^{2\pi i n z} \) which may not converge.
+:::
+
+
+
+
+
+
+
+
+
+
+
 
 

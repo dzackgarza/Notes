@@ -1924,7 +1924,7 @@ Let \( X \in {\mathsf{Mfd}}_{\mathbb{C}} \) be compact and let \( \mathcal{F} \)
 :::
 
 ::: {.remark}
-The locally constant sheaf \( \underline{{\mathbb{C}}} \) is not an \( {\mathcal{O}}{\hbox{-}} \)module, i.e. \( \underline{{\mathbb{C}}}(U) \not\in {{{\mathcal{O}}(U)}{\hbox{-}}\mathsf{Mod}} \). In fact, \( h^{2i}(X, \underline{{\mathbb{C}}}) = {\mathbb{C}} \) for all \( i \).
+The locally constant sheaf \( \underline{{\mathbb{C}}} \) is not an \( {\mathcal{O}}{\hbox{-}} \)module, i.e. \( \underline{{\mathbb{C}}}(U) \not\in {\mathsf{{\mathcal{O}}(U)}{\hbox{-}}\mathsf{Mod}} \). In fact, \( h^{2i}(X, \underline{{\mathbb{C}}}) = {\mathbb{C}} \) for all \( i \).
 :::
 
 ::: {.proof title="?"}
@@ -3072,6 +3072,176 @@ A slick application of Stokes' theorem! Using that \( \star \) is an isometry, w
 &= (-1)^{p(n-p)+1} {\left\langle {\star d \star\alpha},~{ \beta} \right\rangle}
 ,\]
 which shows that the term in the left-hand side of the inner product above is the adjoint of \( d^\dagger \).
+:::
+
+# Wednesday, March 10
+
+::: {.warnings}
+Missing some stuff from the first few minutes here!
+:::
+
+::: {.remark}
+Can we always get a Hermitian metric? Let \( X \in {\mathsf{Mfd}}_{C^{\infty }({\mathbb{R}})} \) and \( \mathcal{E} \to X \in {\mathsf{VectBundle}}_{{\mathbb{C}}} \) a smooth complex vector bundle. Then any section \( h\in \mathcal{E}^\vee\otimes{\overline{{\mathcal{E}}}}^\vee(X) \), we have
+\[
+h: \mathcal{E} \otimes{\overline{{\mathcal{E}}}} \to {\mathcal{O}}\\
+h( e\otimes f) 
+.\]
+for \( e, f \in \mathcal{E}_p \) is a Hermitian form for all \( p \). In local trivializations, \( { \left.{{\mathcal{E}}} \right|_{{U}} } \cong {\mathcal{O}}_U^{\oplus r} \), and one can take the standard Hermitian form here. Then for \( (f_1, \cdots, f_r) \in {\mathcal{O}}^{\oplus r}(U) \), we have \( \sum f_i \mkern 1.5mu\overline{\mkern-1.5muf\mkern-1.5mu}\mkern 1.5mu_i\in {\mathcal{O}}(U) \). This can be extended to all of \( X \) using a partition of unity subordinate to the coordinate charts.
+
+The thing to check here is that on \( {\mathbb{C}}^r \), for any collection \( h_1, \cdots, h_n \), any positive linear combination \( \sum a_i h_i \) is again a Hermitian metric for any \( a_i \in {\mathbb{R}}^+ \). One can regard these as skew-symmetric matrices, which are closed under addition, and the positive-definite property ensures it's still a metric since \( h(v, v) = \sum a_i h_i(v, v) > 0 \) for \( v\neq 0 \).
+:::
+
+::: {.remark}
+Recall that we start with a Riemannian manifold \( (X, g) \) where \( g: TX^{\otimes 2} \to {\mathcal{O}} \) is a metric on the tangent bundle. Locally choose \( f_1,\cdots, f_n \) an orthogonal frame of \( TX \), then setting \( e_i \coloneqq f_i^\vee \) yields an orthogonal frame of \( T^\vee X \) and thus an orthogonal frame \( e_{i_1} \wedge \cdots e_{i_p} \) of \( \bigwedge^p T^\vee X \coloneqq\Omega^p X \). So we get a metric on the smooth \( p{\hbox{-}} \)forms \( \Omega^p X \). We defined the Hodge star operator
+\[
+\star: \Omega^p &\to \Omega^{n-p} \\
+e_{i_1} \wedge \cdots e_{i_p} &\mapsto \pm e_{j_1} \wedge \cdots \wedge e_{j_{n-p}}
+.\]
+where \( \left\{{ i_1, \cdots, i_p, j_1, \cdots, j_{n-p} }\right\} = \left\{{ e_1, \cdots, e_n }\right\} \). We saw that
+\[
+e_{i_1} \wedge \cdots \wedge e_{i_p} \star\qty{ e_1 \wedge \cdots e_{i_p}} &= e_1 \wedge \cdots \wedge e_n \\
+\star\qty{ \sum_{{\left\lvert {I} \right\rvert} = p } f_I e_I} &= \sum_{ {\left\lvert {I} \right\rvert} = p} e_{I^c} (-1)^{\operatorname{sign}(I)}
+.\]
+
+Moreover,
+\[
+{\left\langle { \alpha},~{ \beta} \right\rangle} = \int_X g( \alpha, \beta) dV = \int_X \alpha\wedge \qty{\star\beta}
+,\]
+and we showed that
+\[
+{\left\langle { \alpha},~{ d \beta} \right\rangle} = \pm {\left\langle { d^\dagger \alpha},~{ \beta} \right\rangle}
+&& 
+d^\dagger \coloneqq\star d \star, \beta\in \Omega^{p-1}(X), \alpha\in \Omega^p(X)
+,\]
+yielding an adjoint operator
+\[
+d^\dagger: \Omega^p(X) \to \Omega^{p-1}(X)
+.\]
+:::
+
+::: {.definition title="Laplacian"}
+The **Laplacian** is the differential operator
+\[
+\Delta \coloneqq dd^\dagger + d^\dagger d: \Omega^p(X) \to \Omega^p(X)
+.\]
+:::
+
+::: {.definition title="Harmonic Forms"}
+A \( p{\hbox{-}} \)form \( \omega \) is **harmonic** if and only if \( \Delta \omega = 0 \). We define \( \mathcal{H}^p(X) \) as the space of harmonic \( p{\hbox{-}} \)forms.
+:::
+
+::: {.remark}
+This operator is \( {\mathbb{R}}{\hbox{-}} \)linear, so \( \mathcal{H}^p(X) \in {\mathsf{Vect}}_{\mathbb{R}} \). Note that this whole construction can be made to work over \( {\mathbb{C}} \) by adding conjugates in appropriate places.
+:::
+
+::: {.proposition title="?"}
+A smooth \( p{\hbox{-}} \)form \( \omega \) is harmonic if and only if \( d \omega = d^\dagger \omega = 0 \).
+:::
+
+::: {.proof title="?"}
+\( \impliedby \): This direct is easy, since \( \Delta \omega \coloneqq(dd^\dagger + d^\dagger d) \omega = d(0) + d^\dagger 0 = 0 \).
+
+\( \implies \): A nice trick! Using the adjunction \( d, d^\dagger \) we have
+\[
+{\left\langle { \Delta \omega},~{ \omega} \right\rangle}
+&=
+{\left\langle { d d^\dagger \omega},~{ \omega} \right\rangle} +
+{\left\langle {d^\dagger \omega},~{ \omega} \right\rangle}
+\\
+&=
+{\left\langle { d^\dagger \omega},~{ d^\dagger \omega} \right\rangle} +
+{\left\langle {d \omega},~{ d \omega} \right\rangle}
+.\]
+We now use that since \( g \) is positive definite, it is a non-negative smooth function, and
+\[
+{\left\langle { \alpha},~{ \alpha} \right\rangle} \coloneqq\int_X g( \alpha, \alpha) \, dV \geq 0 \text{ with equality } \iff \alpha \equiv 0 \text{ on } X
+.\]
+So we can conclude that \( d^\dagger \omega = d \omega = 0 \).
+:::
+
+::: {.warnings}
+Note that we've used that the inner product is symmetric over \( {\mathbb{R}} \). Over \( {\mathbb{C}} \), there are bars introduced from conjugation when swapping the variables.
+:::
+
+::: {.proposition title="?"}
+The following three subspaces of \( \Omega^p(X) \) are mutually orthogonal:
+\[
+d \Omega^{p-1}(X), \mathcal{H}^p(X), d^\dagger \Omega^{p+1}(X) 
+.\]
+:::
+
+::: {.proof title="?"}
+We can write
+\[
+{\left\langle { d \alpha},~{ d^\dagger } \right\rangle} = 
+{\left\langle { d^2 \alpha},~{ \beta} \right\rangle} =
+{\left\langle {0},~{ \beta} \right\rangle}
+,\]
+showing that the 1st and 3rd spaces are orthogonal. If \( \alpha\in \mathcal{H}^p(X) \) then by the above proposition, \( d \alpha = d^\dagger \alpha = 0 \), and so
+\[
+{\left\langle { \alpha },~{ d \beta} \right\rangle} = {\left\langle {d^\dagger \alpha},~{ \beta} \right\rangle} = 0 \\
+{\left\langle { \alpha },~{ d^\dagger \beta} \right\rangle} = {\left\langle {d \alpha},~{ \beta} \right\rangle} = 0
+.\]
+Thus the 2nd space is orthogonal to the 1st and 3rd.
+:::
+
+::: {.observation}
+Suppose something false (\( \danger \)): that \( \Omega^p(X) \) is a *complete* vector space with respect to the inner product. Remember that it is **not**! But if it were, there would be a decomposition
+\[
+\Omega^p(X) = d \Omega^{p-1}(X) \oplus \mathcal{H}^p(X) \oplus d^\dagger \Omega^{p+1}(X) 
+.\]
+Let \( \alpha\in \qty{ d \Omega^{p-1}(X) \oplus d^\dagger \Omega^{p+1}(X)}^\perp \) where we take the orthogonal complement with respect to the inner product. Then
+\[
+{\left\langle { \alpha },~{ d \beta } \right\rangle} &= 0 \forall \beta \\
+{\left\langle { \alpha },~{ d^\dagger \gamma } \right\rangle} &= 0 \forall \gamma\\ \\
+\implies {\left\langle { d^\dagger \alpha},~{ \beta} \right\rangle} = 0 \forall \beta \\
+\implies d^\dagger \alpha \equiv 0 && \text{setting} \beta\coloneqq d^\dagger \alpha
+.\]
+Similarly, \( d \alpha = 0 \) and so \( \alpha\in \mathcal{H}^p(X) \).
+
+The conclusion (which is true *without* the false assumption) is that
+\[
+\qty{ d \Omega^{p-1}(X) \oplus d^\dagger \Omega^{p+1}(X)}^\perp = \mathcal{H}^p 
+.\]
+However, this doesn't yield the full direct sum decomposition: if \( W \subseteq V \), then it's not necessarily true that \( V \cong W \oplus W^\perp \), which only holds if
+
+-   \( V \) is complete,
+
+-   \( W \) is closed.
+:::
+
+::: {.fact}
+For smooth \( p{\hbox{-}} \)forms, this decomposition **does** hold despite the false assumption:
+\[
+\Omega^p(X) = d \Omega^{p-1}(X) \oplus \mathcal{H}^p(X) \oplus d^\dagger \Omega^{p+1}(X) 
+.\]
+:::
+
+::: {.corollary title="?"}
+Thus \( \mathcal{H}^p(X) \) represents \( H^p(X; {\mathbb{R}}) \).
+:::
+
+::: {.remark}
+We have
+\[
+H^p(X; {\mathbb{R}}) 
+&= {\ker d \over \operatorname{im}d} \\
+&= { d \Omega^{p-1}(X) \oplus \mathcal{H}^p(X) \over d \Omega^{p-1}(X) } \\
+&= \mathcal{H}^p(X) 
+.\]
+Note that there is a map
+\[
+\mathcal{H}^p(X) \to H^p(X; {\mathbb{R}}) 
+\]
+since \( \alpha\in \mathcal{H}^p(X) \) satisfies \( d \alpha = 0 \) in addition to \( d^\dagger \alpha = 0 \).
+:::
+
+::: {.remark}
+Note that one can complete these spaces using Sobolev spaces, but there are issues. Take \( S^1 \), then
+\[
+L_2(S^1) \coloneqq\left\{{ \sum a_n e^{2\pi i n z} {~\mathrel{\Big|}~}\sum {\left\lvert {a} \right\rvert}_i < \infty  }\right\}
+,\]
+but for \( f\in L_2(S^1) \) we have \( df = \sum 2\pi i n a_n e^{2\pi i n z} \) which may not converge.
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
