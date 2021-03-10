@@ -156,6 +156,29 @@ TFAE in \( \rmod \):
 
 ## Tensor and Tor
 
+
+:::{.proposition title="Basic Properties of the Tensor Product"}
+\envlist
+
+- $A\tensor_R \wait$ is:
+  - Covariant
+  - Left-exact
+  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(A, \wait)(B)$ computed using *injective* resolutions.
+
+
+- $\wait\tensor_R B$ is:
+  - Contravariant
+  - Right-exact
+  - Has left-derived functors $\Ext^i_R(A, B) \da L_i \Hom_R(\wait, B)(A)$ computed using *projective* resolutions.
+
+- For $N \in \bimod{R}{S'}$ and $M\in \bimod{R}{S}$, $\Hom_R(M, N) \in \bimod{S}{S'}$.
+  - Mnemonic: the slots of $\Hom_R$ use up a left $R\dash$action.
+    In the first slot, the right $S\dash$action on $M$ becomes a left $S\dash$action on Hom.
+    In the second slot, the right $S'\dash$action on $N$ becomes a right $S'\dash$action on Hom.
+
+:::
+
+
 ## Universal Properties
 
 :::{.proposition title="Universal Property of the Quotient for Groups"}
