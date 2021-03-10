@@ -192,7 +192,13 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 For a fixed $M\in \bimod{R}{S}$, there is an adjunction
 \[
 \adjunction{ \wait \tensor_R M }{\Hom_S(M, \wait)}{ \modsright{R} } { \modsright{S} }
+,\]
+so for $Y \in \bimod{A}{R}$ and $Z \in \bimod{B}{S}$, there is a (natural) isomorphism in \( \bimod{B}{A} \):
+\[
+\Hom_S(X \tensor_R M, Z) \mapsvia{\sim} \Hom_R( X, \Hom_S(M, Z) )
 .\]
+
+
 
 :::
 
