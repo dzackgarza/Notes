@@ -177,6 +177,13 @@ TFAE in \( \rmod \):
 :::
 
 
+:::{.proposition title="Basic Properties of Tor"}
+\envlist 
+
+- $\Tor_1^R(A, B) = 0$ for either $A$ or $B$ flat.
+:::
+
+
 :::{.fact}
 The most useful SES for proofs here:
 \[
@@ -185,20 +192,21 @@ The most useful SES for proofs here:
 
 :::
 
-
 :::{.proposition title="Common Tensor Products"}
 \envlist
 
 - $\ZZ/n \tensor_\ZZ G \cong G/nG$
+- $\ZZ/n \tensor_\ZZ \ZZ/m \cong \ZZ/d$.
 - $\QQ\tensor_\ZZ \ZZ/n \cong 0$.
 
 
 :::
 
-
 :::{.proposition title="Common Tor Groups"}
 
 - $\Tor^\ZZ_1(\ZZ/n, G) \cong \ts{ h\in H \st nh = e }$
+- $\Tor^\ZZ_1(\ZZ/n, \QQ) \cong 0$.
+- $\Tor^\ZZ_1(\ZZ/n, \ZZ/m) \cong \ZZ/d$.
 
 :::
 
