@@ -24,8 +24,7 @@ Notational conventions:
   - Commute with right adjoints. i.e. $R(\colim F_i) = \colim RF_i$.
 :::
 
-
-
+## Hom and Ext
 
 :::{.proposition title="Basic properties of Hom"}
 \envlist
@@ -154,6 +153,8 @@ TFAE in \( \rmod \):
 - ?
 
 :::
+
+## Tensor and Tor
 
 ## Universal Properties
 
