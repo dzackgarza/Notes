@@ -2088,10 +2088,10 @@ Check that this is a morphism of abelian groups, that this yields a module struc
 ::: {.lemma title="?"}
 If \( M \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}} \), then the following natural map \( \tau \) is an isomorphism of abelian groups for each \( A\in {\mathsf{Ab}} \):
 \[
-\tau: {\operatorname{Hom}}_{{\mathsf{Ab}}}(\forget(M), A) &\to {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(M, {\operatorname{Hom}}_{{\mathsf{Ab}}}(R, A)) \\
+\tau: {\operatorname{Hom}}_{{\mathsf{Ab}}}(\mathrm{Forget}(M), A) &\to {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(M, {\operatorname{Hom}}_{{\mathsf{Ab}}}(R, A)) \\
 f &\mapsto \tau(f)(m)(r) \coloneqq f(mr)
 ,\]
-where \( m\in M \) and \( r\in R \) and \( \forget: \mathsf{Mod}{\hbox{-}}\mathsf{R}\to \mathsf{Mod}{\hbox{-}}\mathsf{{\mathbb{Z}}} \) is a forgetful functor. Note that \( R \) is a left \( R{\hbox{-}} \)module, so the hom in the RHS is a right \( R{\hbox{-}} \)module and the hom makes sense.
+where \( m\in M \) and \( r\in R \) and \( \mathrm{Forget}: \mathsf{Mod}{\hbox{-}}\mathsf{R}\to \mathsf{Mod}{\hbox{-}}\mathsf{{\mathbb{Z}}} \) is a forgetful functor. Note that \( R \) is a left \( R{\hbox{-}} \)module, so the hom in the RHS is a right \( R{\hbox{-}} \)module and the hom makes sense.
 
 ::: {.exercise title="?"}
 Check the details here, particularly that the module structures all make sense.
