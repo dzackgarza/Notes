@@ -197,8 +197,16 @@ so for $Y \in \bimod{A}{R}$ and $Z \in \bimod{B}{S}$, there is a (natural) isomo
 \[
 \Hom_S(X \tensor_R M, Z) \mapsvia{\sim} \Hom_R( X, \Hom_S(M, Z) )
 .\]
+:::
 
 
+:::{.proposition title="Forgetful Adjunctions"}
+Let \( F: \mods{R} \to \mods{\ZZ} \) be the forgetful functor, then there are adjunctions
+\[
+\adjunction{F}{ \Hom_\ZZ(R, \wait)} {\mods{R} } {\mods{\ZZ} } \\ \\
+\adjunction{R\tensor_\ZZ \wait }{F}{ \mods{R} }{ \mods{\ZZ} }
+.\]
 
 :::
+
 
