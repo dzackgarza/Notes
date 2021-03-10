@@ -41,6 +41,9 @@ Notational conventions:
   - Right-exact
   - Has left-derived functors $\Ext^i_R(A, B) \da L_i \Hom_R(\wait, B)(A)$ computed using *projective* resolutions.
 
+- For $N \in \bimod{N}{?}$ and $M\in \bimod{R}{S}$, $\Hom_R(M, N) \in \modsleft{S}$.
+  - Mnemonic: the first slot of $\Hom_R$ uses up a left $R\dash$action.
+
 :::
 
 :::{.proposition title="Basic Properties of Ext"}
@@ -204,7 +207,7 @@ so for $Y \in \bimod{A}{R}$ and $Z \in \bimod{B}{S}$, there is a (natural) isomo
 Let \( F: \mods{R} \to \mods{\ZZ} \) be the forgetful functor, then there are adjunctions
 \[
 \adjunction{F}{ \Hom_\ZZ(R, \wait)} {\mods{R} } {\mods{\ZZ} } \\ \\
-\adjunction{R\tensor_\ZZ \wait }{F}{ \mods{R} }{ \mods{\ZZ} }
+\adjunction{R\tensor_\ZZ \wait }{F}{ \mods{\ZZ} }{ \mods{R} }
 .\]
 
 :::
