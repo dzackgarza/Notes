@@ -191,7 +191,7 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 :::{.proposition title="Tensor-Hom Adjunction"}
 For a fixed $M\in \bimod{R}{S}$, there is an adjunction
 \[
-\adjunction{ \wait \tensor_R M }{\Hom_S(M, \wait)}{ \modsright{R} } { \modsleft{S} }
+\adjunction{ \wait \tensor_R M }{\Hom_S(M, \wait)}{ \modsright{R} } { \modsright{S} }
 .\]
 
 :::
