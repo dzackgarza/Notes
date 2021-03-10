@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-03-08 }
+{\tiny \textit{Last updated:} 2021-03-10 }
 \end{flushleft}
 
 
@@ -789,16 +789,16 @@ Given a double complex \(C_{{\,\cdot\,}, {\,\cdot\,}}\), there are two
 ordinary chain complexes associated to it referred to as \textbf{total
 complexes}:
 \begin{align*}
-(\operatorname{Tot}^{\prod_{}} C)_n \coloneqq\prod_{p+q = n} C_{p, q}
-(\operatorname{Tot}^{\oplus_{}} C)_n \coloneqq\bigoplus_{p+q = n} C_{p, q}
+(\operatorname{Tot}^{\Pi}C)_n &\coloneqq\prod_{p+q = n} C_{p, q}\\
+(\operatorname{Tot}^{\oplus}C)_n &\coloneqq\bigoplus_{p+q = n} C_{p, q}
 .\end{align*}
 Writing \(\operatorname{Tot}(C)\) usually refers to the former. The
 differentials are given by
 \begin{align*}
 d_{p, q} = d^h + d^v: C_{p, q} \to C_{p-1, q} \oplus C_{p, q-1}
 ,\end{align*}
-where \(C_{p, q} \subseteq \operatorname{Tot}^\oplus (C)_n\) and
-\(C_{p-1, q} \oplus C_{p, q-1} \subseteq \operatorname{Tot}^\oplus(C)_{n-1}\).
+where \(C_{p, q} \subseteq \operatorname{Tot}^{\oplus}(C)_n\) and
+\(C_{p-1, q} \oplus C_{p, q-1} \subseteq \operatorname{Tot}^{\oplus}(C)_{n-1}\).
 Then you extend this to a differential on the entire diagonal by
 defining \(d = \bigoplus_{p, q} d_{p, q}\).
 
@@ -816,8 +816,8 @@ Some notes:
 
 \begin{itemize}
 \item
-  \(\operatorname{Tot}^{\oplus}(C) = \operatorname{Tot}^{\prod}(C)\)
-  when \(C\) is bounded.
+  \(\operatorname{Tot}^{\oplus}(C) = \operatorname{Tot}^{\Pi}(C)\) when
+  \(C\) is bounded.
 \item
   The total complexes need not exist if \(C\) is unbounded: one needs
   infinite direct products and infinite coproducts to exist in
@@ -1929,11 +1929,11 @@ section on triangulated categories. We'll also skip the section on
 
 Setup: fix \(M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\), where \(R\) is a
 ring with unit. Note that by an upcoming exercise,
-\({\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathsf{Mod}{\hbox{-}}R}\to {\mathsf{Ab}}\)
+\({\operatorname{Hom}}_{R}(M, {\,\cdot\,}): {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to {\mathsf{Ab}}\)
 is a \emph{left-exact} functor, but not in general right-exact: given a
 SES
 \begin{align*}
-0\to A \xrightarrow{f}  B \xrightarrow{g}  C\to 0 && \in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}R})
+0\to A \xrightarrow{f}  B \xrightarrow{g}  C\to 0 && \in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}})
 ,\end{align*}
 there is an exact sequence:
 
@@ -2313,8 +2313,8 @@ morphism \(P \twoheadrightarrow A\).
 
 \begin{example}[?]
 
-\({\mathsf{Mod}{\hbox{-}}R}\) has enough projectives: for all
-\(A \in {\mathsf{Mod}{\hbox{-}}R}\), one can take
+\({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) has enough projectives: for all
+\(A \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\), one can take
 \(F(A) \twoheadrightarrow A\).
 
 \end{example}
@@ -2344,8 +2344,8 @@ Prove this!
 
 \begin{definition}[(Key)]
 
-Let \(M\in {\mathsf{Mod}{\hbox{-}}R}\), then a \textbf{projective
-resolution} of \(M\) is an exact complex
+Let \(M\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\), then a
+\textbf{projective resolution} of \(M\) is an exact complex
 \begin{align*}
 \cdots
     \xrightarrow{d_2} 
@@ -2361,8 +2361,8 @@ We write \(P_{\,\cdot\,}\overset{\epsilon}{\twoheadrightarrow} M\).
 
 \begin{lemma}[(Key)]
 
-Every object \(M\in {\mathsf{Mod}{\hbox{-}}R}\) has a projective
-resolution. This is true in any abelian category with enough
+Every object \(M\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) has a
+projective resolution. This is true in any abelian category with enough
 projectives.
 
 \end{lemma}
@@ -3135,15 +3135,15 @@ denominator.
 
 \begin{exercise}[2.3.2]
 
-\({\mathsf{Ab}}= {{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}\) has enough
-injectives.
+\({\mathsf{Ab}}= {\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}\) has
+enough injectives.
 
 \end{exercise}
 
 \begin{remark}
 
-As a consequence, \({\mathsf{Mod}{\hbox{-}}R}\) has enough injectives
-for \emph{any} ring \(R\).
+As a consequence, \({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) has enough
+injectives for \emph{any} ring \(R\).
 
 \end{remark}
 
@@ -3165,10 +3165,10 @@ way:
 \item
   \({\operatorname{Ob}}(\mathcal{A}^{\operatorname{op}}) = {\operatorname{Ob}}(\mathcal{A})\)
 \item
-  \(A\to B\in \operatorname{Mor}(\mathcal{A}) \implies B\to A \in \operatorname{Mor}(\mathcal{A}^{\operatorname{op}}\),
+  \(A\to B\in \operatorname{Mor}(\mathcal{A}) \implies B\to A \in \operatorname{Mor}(\mathcal{A}^{\operatorname{op}})\),
   so
   \begin{align*}
-  {\operatorname{Hom}}_{\mathcal{A}}(A, B) \cong {\operatorname{Hom}}_{ \mathcal{A}^{\operatorname{op}}}(B, A) 
+  {\operatorname{Hom}}_{\mathcal{A}}(A, B) &\rightleftharpoons{\operatorname{Hom}}_{ \mathcal{A}^{\operatorname{op}}}(B, A) \\
   f &\rightleftharpoons f^{\operatorname{op}}
   .\end{align*}
 \item
@@ -3243,7 +3243,7 @@ to Diagram}
 
 \begin{example}[?]
 
-\({\operatorname{Hom}}_R({\,\cdot\,}, A): {\mathsf{Mod}{\hbox{-}}R}\to {\mathsf{Ab}}\)
+\({\operatorname{Hom}}_R({\,\cdot\,}, A): {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to {\mathsf{Ab}}\)
 is a contravariant functor in the first slot.
 
 \end{example}
@@ -3308,14 +3308,14 @@ as for projective resolutions.
 \end{lemma}
 
 Next up: how to transport injective resolutions in
-\({{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}\) to
+\({\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}\) to
 \({\mathsf{R}{\hbox{-}}\mathsf{Mod}}\).
 
 \begin{observation}
 
 If \(A\in {\mathsf{Ab}}\) and
 \(N \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\) then
-\({\operatorname{Hom}}_{{\mathsf{Ab}}}(N, A) \in {\mathsf{Mod}{\hbox{-}}R}\)
+\({\operatorname{Hom}}_{{\mathsf{Ab}}}(N, A) \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\)
 in the following way: taking \(f: N\to A\) and \(r\in R\), define a
 right action \((f\cdot r)(n) \coloneqq f(rn)\).
 
@@ -3332,16 +3332,18 @@ left in the definition.
 
 \begin{lemma}[?]
 
-If \(M \in {\mathsf{Mod}{\hbox{-}}R}\), then the following natural map
-\(\tau\) is an isomorphism of abelian groups for each
+If \(M \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\), then the following
+natural map \(\tau\) is an isomorphism of abelian groups for each
 \(A\in {\mathsf{Ab}}\):
 \begin{align*}
-\tau: {\operatorname{Hom}}_{{\mathsf{Ab}}}(?(M), A) &\to {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{{\mathsf{Ab}}}(R, A)) \\
+\tau: {\operatorname{Hom}}_{{\mathsf{Ab}}}(\forget(M), A) &\to {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(M, {\operatorname{Hom}}_{{\mathsf{Ab}}}(R, A)) \\
 f &\mapsto \tau(f)(m)(r) \coloneqq f(mr)
 ,\end{align*}
-where \(m\in M\) and \(r\in R\). Note that \(R\) is a left
-\(R{\hbox{-}}\)module, so the hom in the RHS is a right
-\(R{\hbox{-}}\)module and the hom makes sense.
+where \(m\in M\) and \(r\in R\) and
+\(\forget: \mathsf{Mod}{\hbox{-}}\mathsf{R}\to \mathsf{Mod}{\hbox{-}}\mathsf{{\mathbb{Z}}}\)
+is a forgetful functor. Note that \(R\) is a left \(R{\hbox{-}}\)module,
+so the hom in the RHS is a right \(R{\hbox{-}}\)module and the hom makes
+sense.
 
 \begin{exercise}[?]
 
@@ -3393,17 +3395,17 @@ The \(?\) functor in the lemma will be the forgetful functor applied to
 \begin{remark}
 
 Last time: we had a lemma that for any
-\(M\in {\mathsf{Mod}{\hbox{-}}R}\) and \(A\in {\mathsf{Ab}}\) there is
-an isomorphism
+\(M\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) and \(A\in {\mathsf{Ab}}\)
+there is an isomorphism
 \begin{align*}
-{\operatorname{Hom}}_{{\mathsf{Ab}}}( F(M), A) \cong {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}(M, {\operatorname{Hom}}_{\mathsf{Ab}}(R, A) )
+{\operatorname{Hom}}_{{\mathsf{Ab}}}( F(M), A) \cong {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(M, {\operatorname{Hom}}_{\mathsf{Ab}}(R, A) )
 ,\end{align*}
-where \(F: {\mathsf{Mod}{\hbox{-}}R}\to {\mathsf{Ab}}\) is the forgetful
-functor.
+where \(F: {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to {\mathsf{Ab}}\) is the
+forgetful functor.
 
 \end{remark}
 
-\begin{definition}[Adjoin]
+\begin{definition}[Adjoints]
 
 A pair of functors \(L: \mathcal{A} \to \mathcal{B}\) and
 \(R: \mathcal{B} \to \mathcal{A}\) are \textbf{adjoint} is there are
@@ -3435,17 +3437,18 @@ to Diagram}
 \end{quote}
 
 In this case we say \(L\) is \textbf{left adjoint} to \(R\) and \(R\) is
-\textbf{right adjoint} to \(L\).
+\textbf{right adjoint} to \(L\) and write
+\(\adjunction{L}{R}{\mathcal{A}}{\mathcal{B}}\).
 
 \end{definition}
 
 \begin{remark}
 
 The lemma thus says that
-\({\operatorname{Hom}}_{{\mathsf{Ab}}}(R, {\,\cdot\,}): {\mathsf{Ab}}\to {\mathsf{Mod}{\hbox{-}}R}\)
+\({\operatorname{Hom}}_{{\mathsf{Ab}}}(R, {\,\cdot\,}): {\mathsf{Ab}}\to {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\)
 (using that \(R\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\) is a left
 \(R{\hbox{-}}\)module) is right adjoint to the forgetful functor
-\({\mathsf{Mod}{\hbox{-}}R}\to\ Ab\).
+\({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to\ Ab\).
 
 \end{remark}
 
@@ -3472,7 +3475,7 @@ projective.
 \begin{corollary}[?]
 
 If \(I\in {\mathsf{Ab}}\) is injective, then
-\({\operatorname{Hom}}_{{\mathsf{Ab}}}(R, I) \in {\mathsf{Mod}{\hbox{-}}R}\)
+\({\operatorname{Hom}}_{{\mathsf{Ab}}}(R, I) \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\)
 is injective.
 
 \end{corollary}
@@ -3491,8 +3494,8 @@ of sets.
 
 \begin{exercise}[2.3.5, 2.3.2]
 
-Show that \({\mathsf{Mod}{\hbox{-}}R}\) has enough injectives, using
-that \({\mathsf{Ab}}\) has enough injectives.
+Show that \({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) has enough injectives,
+using that \({\mathsf{Ab}}\) has enough injectives.
 
 \end{exercise}
 
@@ -4440,18 +4443,18 @@ functors:
 
 \begin{definition}[?]
 
-Fix a right \(R{\hbox{-}}\)module \(M \in {\mathsf{Mod}{\hbox{-}}R}\),
-then
-\(F \coloneqq{\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}(M, {\,\cdot\,}): {\mathsf{Mod}{\hbox{-}}R}\to {\mathsf{Ab}}\)
+Fix a right \(R{\hbox{-}}\)module
+\(M \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\), then
+\(F \coloneqq{\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(M, {\,\cdot\,}): {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to {\mathsf{Ab}}\)
 is a left-exact functor. Its right-derived functors are \textbf{ext
 functors} and denoted
-\(\operatorname{Ext}_{{\mathsf{Mod}{\hbox{-}}R}}^i(M, {\,\cdot\,})\).
+\(\operatorname{Ext}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}^i(M, {\,\cdot\,})\).
 
 \end{definition}
 
 \begin{example}[?]
 
-\begin{align*} \operatorname{Ext}_{{\mathsf{Mod}{\hbox{-}}R}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}(M, {\,\cdot\,}) ] (A) .\end{align*}
+\begin{align*} \operatorname{Ext}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}^i(M, A) = (R^i F)(A) = [ R^i {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(M, {\,\cdot\,}) ] (A) .\end{align*}
 
 \end{example}
 
@@ -4459,8 +4462,8 @@ functors} and denoted
 
 Exercises 2.5.1, 2.5.2 are important extensions of our existing
 characterizations of injectives and projectives in
-\({\mathsf{Mod}{\hbox{-}}R}\). These upgrade the characterization
-involving \({\operatorname{Hom}}\) to one involving
+\({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\). These upgrade the
+characterization involving \({\operatorname{Hom}}\) to one involving
 \(\operatorname{Ext}\). \footnote{Note the typo in 2.5.1.3, it should
   say the following: ``\(B\) is
   \({\operatorname{Hom}}_{R}(A, {\,\cdot\,})\) is acyclic for all
@@ -4470,17 +4473,17 @@ involving \({\operatorname{Hom}}\) to one involving
 
 \begin{remark}
 
-Fix \(B\in {\mathsf{Mod}{\hbox{-}}R}\) and consider
-\(G\coloneqq{\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B): {\mathsf{Mod}{\hbox{-}}R}\to {\mathsf{Ab}}\).
+Fix \(B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) and consider
+\(G\coloneqq{\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}({\,\cdot\,}, B): {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to {\mathsf{Ab}}\).
 Then \(G\) is still left-exact, but is now \emph{contravariant}. We can
 regard it as a covariant functor left-exact functor
-\(G: {\mathsf{Mod}{\hbox{-}}R}^{\operatorname{op}}\to {\mathsf{Ab}}\).
+\(G: {\mathsf{Mod}{\hbox{-}}\mathsf{R}}^{\operatorname{op}}\to {\mathsf{Ab}}\).
 So we define \(R^i G(A)\) by an injective resolution of \(A\) in
 \(\mathcal{A}^{\operatorname{op}}\), and this is the same as a
 projective resolution of \(A\) in \(\mathcal{A}\). So apply \(G\) and
 take cohomology. It turns out that
 \begin{align*} 
-R^i {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}R}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{\mathsf{R}{\hbox{-}}\mathsf{Mod}}}(A, B) 
+R^i {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}({\,\cdot\,}, B) \cong R^i {\operatorname{Hom}}_{{\mathsf{Mod}{\hbox{-}}\mathsf{R}}}(A, {\,\cdot\,})(B) \coloneqq\operatorname{Ext}^i_{{\mathsf{R}{\hbox{-}}\mathsf{Mod}}}(A, B) 
 ,\end{align*}
 so we can use the same notation
 \(\operatorname{Ext}^i_R({\,\cdot\,}, B)\) for both cases.
@@ -4628,13 +4631,14 @@ Let
 \item
   \(R, S \in \mathsf{Ring}\),
 \item
-  \(B\in ({R}, {S}){\hbox{-}}\mathsf{biMod}\),
+  \(B\in (\mathsf{R}, \mathsf{S}){\hbox{-}}\mathsf{biMod}\),
 \item
-  \(C\in {{S}{\hbox{-}}\mathsf{Mod}}\).
+  \(C\in {\mathsf{S}{\hbox{-}}\mathsf{Mod}}\).
 \end{itemize}
 
-Then \({\operatorname{Hom}}_{S}(B, C)\in {\mathsf{Mod}{\hbox{-}}R}\) in
-a natural way: given \(f:B\to C\), define \((f\cdot r)(b) = f(rb)\).
+Then
+\({\operatorname{Hom}}_{S}(B, C)\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\)
+in a natural way: given \(f:B\to C\), define \((f\cdot r)(b) = f(rb)\).
 
 \end{remark}
 
@@ -4654,8 +4658,8 @@ We saw this structure earlier with \(S={\mathbb{Z}}\), see p.41.
 \begin{proposition}[?]
 
 Fix \(R,S\) and \({}_R B_S\) as above. Then for every
-\(A \in {\mathsf{Mod}{\hbox{-}}R}\) and
-\(C\in {{{\hbox{-}}}{\hbox{-}}\mathsf{Mod}}S\) there is a natural
+\(A \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) and
+\(C\in {\mathsf{{\hbox{-}}}{\hbox{-}}\mathsf{Mod}}S\) there is a natural
 isomorphism
 \begin{align*}
 \tau: {\operatorname{Hom}}_S( A\otimes_R B, C ) &\xrightarrow{\sim} {\operatorname{Hom}}_R(A, {\operatorname{Hom}}_S(B, C) ) \\
@@ -4668,11 +4672,11 @@ hom on the right is a right \(R{\hbox{-}}\)module, so these expressions
 make sense. Here \(B\) is fixed, so \(A\) and \(C\) are variables and
 this is a statement about bifunctors
 \begin{align*}
-{\,\cdot\,}\otimes_R B: {\mathsf{Mod}{\hbox{-}}R}\to \mathsf{Mod}{\hbox{-}}{S} 
+{\,\cdot\,}\otimes_R B: {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to \mathsf{Mod}{\hbox{-}}\mathsf{S} 
 ,\end{align*}
 which is left adjoint to
 \begin{align*}
-{\operatorname{Hom}}_S(B, {\,\cdot\,}): \mathsf{Mod}{\hbox{-}}{S} \to {\mathsf{Mod}{\hbox{-}}R}
+{\operatorname{Hom}}_S(B, {\,\cdot\,}): \mathsf{Mod}{\hbox{-}}\mathsf{S} \to {\mathsf{Mod}{\hbox{-}}\mathsf{R}}
 .\end{align*}
 So the former is a left adjoint and the latter is a right adjoint, so by
 the theorem, \({\,\cdot\,}\otimes_R B\) is right exact.
@@ -4684,7 +4688,7 @@ the theorem, \({\,\cdot\,}\otimes_R B\) is right exact.
 If \(B\) is only a left \(R{\hbox{-}}\)module, we can always take
 \(S = {\mathbb{Z}}\), which makes this into a functor
 \begin{align*}
-{\,\cdot\,}\otimes_R B: {\mathsf{Mod}{\hbox{-}}R}\to {\mathsf{Ab}}
+{\,\cdot\,}\otimes_R B: {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to {\mathsf{Ab}}
 .\end{align*}
 Since this is a right exact functor from a category with enough
 injectives, we can define left-derived functors.
@@ -4693,9 +4697,9 @@ injectives, we can define left-derived functors.
 
 \begin{definition}[?]
 
-Let \(B\in ({R}, {S}){\hbox{-}}\mathsf{biMod}\) and let
+Let \(B\in (\mathsf{R}, \mathsf{S}){\hbox{-}}\mathsf{biMod}\) and let
 \begin{align*}
-T({\,\cdot\,}) \coloneqq{\,\cdot\,}\otimes_R B: {\mathsf{Mod}{\hbox{-}}R}\to \mathsf{Mod}{\hbox{-}}{S}
+T({\,\cdot\,}) \coloneqq{\,\cdot\,}\otimes_R B: {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\to \mathsf{Mod}{\hbox{-}}\mathsf{S}
 .\end{align*}
 Then define \(\operatorname{Tor}_n^R(A, B) \coloneqq L_n T(A)\).
 
@@ -4713,12 +4717,13 @@ variables.
 
 \begin{remark}
 
-We looked at \(B\in ({R}, {S}){\hbox{-}}\mathsf{biMod}\) and showed
-\({\,\cdot\,}\otimes_R B: {{R}{\hbox{-}}\mathsf{Mod}} \to {{S}{\hbox{-}}\mathsf{Mod}}\)
+We looked at \(B\in (\mathsf{R}, \mathsf{S}){\hbox{-}}\mathsf{biMod}\)
+and showed
+\({\,\cdot\,}\otimes_R B: {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{S}{\hbox{-}}\mathsf{Mod}}\)
 is left adjoint to hom, and has left-derived functors
 \(\operatorname{Tor}_n^R({\,\cdot\,}, B) \coloneqq L_n({\,\cdot\,}\otimes_R B)\).
 \begin{align*}
-\adjunction{{\,\cdot\,}\otimes_R B}{ {\operatorname{Hom}}_{{S}}(B, {\,\cdot\,}) }{{{R}{\hbox{-}}\mathsf{Mod}}}{{{S}{\hbox{-}}\mathsf{Mod}}}
+\adjunction{{\,\cdot\,}\otimes_R B}{ {\operatorname{Hom}}_{{S}}(B, {\,\cdot\,}) }{\mathsf{R}{\hbox{-}}\mathsf{Mod}}{\mathsf{S}{\hbox{-}}\mathsf{Mod}}
 .\end{align*}
 
 Note that \(\operatorname{Tor}_0^R(A, B) \cong A\otimes_R B\).
@@ -5139,9 +5144,9 @@ This essentially follows from the fact that
 
 \begin{remark}
 
-\({\mathsf{Mod}{\hbox{-}}R}\) satisfies (1), since direct sums of
-\(R{\hbox{-}}\)modules still have an \(R{\hbox{-}}\)module structure.
-Thus \({\mathsf{Mod}{\hbox{-}}R}\) is cocomplete.
+\({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) satisfies (1), since direct sums
+of \(R{\hbox{-}}\)modules still have an \(R{\hbox{-}}\)module structure.
+Thus \({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) is cocomplete.
 
 \end{remark}
 
@@ -5239,7 +5244,7 @@ H_* \qty{ \bigoplus FP_i } \quad \text{by the theorem} \\
 \begin{corollary}[?]
 
 For
-\(A_i \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}, B\in {\mathsf{Mod}{\hbox{-}}R}\),
+\(A_i \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\),
 \begin{align*}
 \operatorname{Tor}_*^R\qty{ \bigoplus_{i\in I} A_i, B } \cong \bigoplus_{i\in I} \operatorname{Tor}_*^R(A_i, B)
 .\end{align*}
@@ -5288,7 +5293,7 @@ complexes!
 Complexes}\label{tensor-product-complexes}}
 
 Suppose we have two chain complexes
-\((P)_R \in \mathsf{Ch}( {\mathsf{Mod}{\hbox{-}}R}), {}_R(Q) \in \mathsf{Ch}({\mathsf{R}{\hbox{-}}\mathsf{Mod}})\).
+\((P)_R \in \mathsf{Ch}( {\mathsf{Mod}{\hbox{-}}\mathsf{R}}), {}_R(Q) \in \mathsf{Ch}({\mathsf{R}{\hbox{-}}\mathsf{Mod}})\).
 Then there is a double complex where \(i, j\) indexes rows and columns:
 \(P \otimes_R Q = \left\{{ P_i \otimes_R Q_j }\right\}_{i, j}\), the
 \textbf{tensor product double complex} of \(P\) and \(Q\). We use the
@@ -5323,9 +5328,9 @@ Note that this makes the right-hand side notation unambiguous.
 \begin{proof}[?]
 
 Choose projective resolutions
-\(P \xrightarrow{\varepsilon} A \in {\mathsf{Mod}{\hbox{-}}R}\) and
-\(Q \xrightarrow{\eta} B \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\). We'll
-form 3 tensor product double complexes.
+\(P \xrightarrow{\varepsilon} A \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\)
+and \(Q \xrightarrow{\eta} B \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\).
+We'll form 3 tensor product double complexes.
 
 \begin{itemize}
 \item
@@ -5538,7 +5543,8 @@ exact columns.
 
 \begin{proposition}[Acyclic Assembly Lemma]
 
-Let \(C\) be a double complex in \({\mathsf{Mod}{\hbox{-}}R}\), then
+Let \(C\) be a double complex in \({\mathsf{Mod}{\hbox{-}}\mathsf{R}}\),
+then
 
 \begin{itemize}
 \item
@@ -5736,8 +5742,8 @@ Extensions}{\textbackslash operatorname\{Ext\}\^{}1 and Extensions}}\label{opera
 
 \begin{definition}[Module Extensions]
 
-Let \(A, B\in {\mathsf{Mod}{\hbox{-}}R}\), then an \textbf{extension of
-\(A\) by \(B\)} is a SES
+Let \(A, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\), then an
+\textbf{extension of \(A\) by \(B\)} is a SES
 \begin{align*}
 \xi: 0 \to B\to X\to A\to 0
 .\end{align*}
@@ -5899,8 +5905,9 @@ equivalence class \([\xi]\) of the SES.
 
 \begin{theorem}[?]
 
-Given \(A, B\in {\mathsf{Mod}{\hbox{-}}R}\) (or an abelian category with
-enough projectives and injectives), there is a correspondence
+Given \(A, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\) (or an abelian
+category with enough projectives and injectives), there is a
+correspondence
 \begin{align*}
 \left\{{\substack{
   0 \to B \to X\to A \to 0
@@ -5923,7 +5930,8 @@ This only depends on the equivalence class of \(\xi\).
 
 \begin{theorem}[?]
 
-Given \(A, B\in {\mathsf{Mod}{\hbox{-}}R}\), there is a bijection
+Given \(A, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}}\), there is a
+bijection
 \begin{align*}
 \left\{{\substack{
   \text{Extensions of $A$ by $B$}
@@ -6553,8 +6561,9 @@ exact.
 
 \begin{question}
 
-If \({P}^{{\,\cdot\,}} \in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}R})\) is a
-complex of of right \(R{\hbox{-}}\)modules and
+If
+\({P}^{{\,\cdot\,}} \in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}})\)
+is a complex of of right \(R{\hbox{-}}\)modules and
 \(M \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\) is a left
 \(R{\hbox{-}}\)module, how is the homology of \({P}^{{\,\cdot\,}}\) and
 that of \({P}^{{\,\cdot\,}} \otimes_R M\) related?
@@ -6592,8 +6601,9 @@ In particular, we can always take \(A = \operatorname{coker}\alpha\) and
 
 \begin{theorem}[The Kunneth Formula]
 
-Let \({P}^{{\,\cdot\,}}\in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}R})\) be a
-chain complex of flat right \(R{\hbox{-}}\)modules such that each
+Let
+\({P}^{{\,\cdot\,}}\in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}})\)
+be a chain complex of flat right \(R{\hbox{-}}\)modules such that each
 boundary module \(dP_n\) is again flat. Then for every
 \(M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\) and all \(N\), there is an
 exact sequence
@@ -6995,10 +7005,11 @@ Properties}\label{definitions-and-properties}}
 \begin{definition}[Modules of Groups]
 
 Let \(G\in {\mathsf{Grp}}\) be any group, finite or infinite, and let
-\(A\in {G}{\hbox{-}}\mathsf{Mod}\) be a left \(G{\hbox{-}}\)module,
-i.e.~an abelian group on which \(G\) acts by additive maps on the left,
-written \(g.a\) or \(ga\) for \(g\in G, a\in A\). Here \emph{additive}
-means that \(g.(a_1 + a_2) = g.a_1 + g.a_2\). Note that this implies
+\(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\) be a left
+\(G{\hbox{-}}\)module, i.e.~an abelian group on which \(G\) acts by
+additive maps on the left, written \(g.a\) or \(ga\) for
+\(g\in G, a\in A\). Here \emph{additive} means that
+\(g.(a_1 + a_2) = g.a_1 + g.a_2\). Note that this implies
 \(g.0 = 0, -g.a = -(g.a), g_1 (g_2 . a) = (g_1 g_2).a, 1_G.a = a\).
 Writing
 \(\mathop{\mathrm{End}}_R(A) \coloneqq{\operatorname{Hom}}_R(A, A)\), we
@@ -7012,7 +7023,7 @@ g &\mapsto g.({\,\cdot\,})
 
 \begin{definition}[Equivariant Maps]
 
-If \(B \in {G}{\hbox{-}}\mathsf{Mod}\) is another left
+If \(B \in \mathsf{G}{\hbox{-}}\mathsf{Mod}\) is another left
 \(G{\hbox{-}}\)module, then
 \begin{align*}
 {\operatorname{Hom}}_G(A, B) = \left\{{ f\in {\operatorname{Hom}}_{\mathbb{Z}}(A, B) {~\mathrel{\Big|}~}f(g.a) = g(f(a)) \quad \forall a\in A, \forall g\in G }\right\} 
@@ -7035,7 +7046,7 @@ and extending \({\mathbb{Z}}{\hbox{-}}\)linearly.
 \begin{remark}
 
 There is an equality of categories
-\({{G}{\hbox{-}}\mathsf{Mod}} = {{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}\).
+\({\mathsf{G}{\hbox{-}}\mathsf{Mod}} = \mathsf{{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}\).
 This is also the same as the functor category
 \({\mathsf{Ab}}^\mathcal{G}\) (a category of the form
 \(\mathcal{A}^{\mathcal{I}}\)) where \(\mathcal{G}\) is the category
@@ -7058,8 +7069,8 @@ The right-hand side yields a \(G{\hbox{-}}\)module since
 
 \begin{definition}[Trivial modules]
 
-An object \(A\in {G}{\hbox{-}}\mathsf{Mod}\) is a \textbf{trivial}
-module if and only if \(g.a = a\) for all \(g\in G\).
+An object \(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\) is a
+\textbf{trivial} module if and only if \(g.a = a\) for all \(g\in G\).
 
 \end{definition}
 
@@ -7067,11 +7078,11 @@ module if and only if \(g.a = a\) for all \(g\in G\).
 
 Any \(G\in {\mathsf{Ab}}\) can be viewed as a trivial
 \(G{\hbox{-}}\)module in this way. This yields a functor
-\(\operatorname{Triv}:{\mathsf{Ab}}\to {G}{\hbox{-}}\mathsf{Mod}\).
+\(\operatorname{Triv}:{\mathsf{Ab}}\to \mathsf{G}{\hbox{-}}\mathsf{Mod}\).
 There is a distinguished trivial \(G{\hbox{-}}\)module, namely
 \(A \coloneqq{\mathbb{Z}}\) with the trivial \(G{\hbox{-}}\)action.
 There are two natural functors
-\({G}{\hbox{-}}\mathsf{Mod}\to {\mathsf{Ab}}\):
+\(\mathsf{G}{\hbox{-}}\mathsf{Mod}\to {\mathsf{Ab}}\):
 
 \begin{itemize}
 \tightlist
@@ -7107,8 +7118,8 @@ There are two natural functors
 
 \begin{lemma}[?]
 
-Let \(A\in {G}{\hbox{-}}\mathsf{Mod}\) and \({\mathbb{Z}}\) be the
-trivial \(G{\hbox{-}}\)module. Then
+Let \(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\) and \({\mathbb{Z}}\) be
+the trivial \(G{\hbox{-}}\)module. Then
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -7131,11 +7142,11 @@ Number 2 above is important to remember!
 \begin{proof}[of 1]
 
 Viewing
-\({\mathbb{Z}}= _{{\mathbb{Z}}} {\mathbb{Z}}_{{\mathbb{Z}}G} \in ({{\mathbb{Z}}}, {{\mathbb{Z}}G}){\hbox{-}}\mathsf{biMod}\)
+\({\mathbb{Z}}= _{{\mathbb{Z}}} {\mathbb{Z}}_{{\mathbb{Z}}G} \in (\mathsf{{\mathbb{Z}}}, \mathsf{{\mathbb{Z}}G}){\hbox{-}}\mathsf{biMod}\)
 with the trivial structure, recall\footnote{See Weibel p.~41.} that we
 have a functor
 \begin{align*}
-{\operatorname{Hom}}_({\mathbb{Z}}, {\,\cdot\,}): {{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod} &\to {{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}\\
+{\operatorname{Hom}}_({\mathbb{Z}}, {\,\cdot\,}): \mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod} &\to \mathsf{{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}\\
 \end{align*}
 where \({\operatorname{Hom}}_{\mathbb{Z}}({\mathbb{Z}}, A)\) has an
 action \((g.f)(x) \coloneqq f(x. g)\) for \(x\in {\mathbb{Z}}g\in G\).
@@ -7179,6 +7190,301 @@ functor however!
 
 \end{remark}
 
+\hypertarget{ch.-6-group-homology-and-cohomology-wednesday-march-10}{%
+\section{Ch. 6: Group Homology and Cohomology (Wednesday, March
+10)}\label{ch.-6-group-homology-and-cohomology-wednesday-march-10}}
+
+:::\{.lemma\} Last time: started setting up group homology. For \(G\) a
+group and \(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\), we think of
+\({\mathbb{Z}}\) as a trivial \(G{\hbox{-}}\)module and
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(A_G \cong {\mathbb{Z}}\otimes_{{\mathbb{Z}}G} A\), the
+  \(G{\hbox{-}}\)coinvariants.
+\item
+  \(A^G \cong {\operatorname{Hom}}_{{\mathbb{Z}}G}( {\mathbb{Z}}, A)\).
+  the \(G{\hbox{-}}\)invariants, this is the largest
+  \(G{\hbox{-}}\)trivial submodule of \(A\)
+\end{enumerate}
+
+:::
+
+\begin{definition}[?]
+
+For \(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\),
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(H_*(G; A) \coloneqq L_*({\,\cdot\,}))G (A)\) are the
+  \textbf{homology groups of \(G\) with coefficients in \(A\)}. It is
+  isomorphic to
+  \(\operatorname{Tor}_*^{{\mathbb{Z}}G}({\mathbb{Z}}, A)\) by (1) in
+  the lemma above. In particular, \(H_0(G; A) \cong A_G\).
+\item
+  \(H^*(G; A) \coloneqq R^*({\,\cdot\,})^G(A)\) is the
+  \textbf{cohomology of \(G\) with coefficients in \(A\)}. It is
+  isomorphic to
+  \(\operatorname{Ext}^*_{{\mathbb{Z}}G}({\mathbb{Z}}, A)\) by (2) in
+  the lemma. In particular, \(H^0(G; A) \cong A^G\).
+\end{enumerate}
+
+\end{definition}
+
+\todo[inline]{Ask about contructing resolutions: take any "augmentation" map and iterate kernels? Different resolution lengths?}
+
+\begin{example}[?]
+
+For \(G = \left\{{ 1 }\right\}\), for any
+\(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\) we have \(A^G = A = A_G\).
+Forgetful functors are usually exact, and in this case
+\(({\,\cdot\,})^G, ({\,\cdot\,})_G: \mathsf{G}{\hbox{-}}\mathsf{Mod} \to {\mathsf{Ab}}\)
+is really a forgetful functor and thus exact. Here
+\(H_n(G; A) = 0 = H^n(G; A)\) for \(n>0\).
+
+\end{example}
+
+\begin{example}[?]
+
+Let \(G\) be infinite cyclic, which we'll write multiplicatively to
+prevent the notation from conflicting with the addition on
+\({\mathbb{Z}}G\), so
+\(G\coloneqq T = \left\langle{ t }\right\rangle= \left\{{ t^n {~\mathrel{\Big|}~}n\in {\mathbb{Z}}}\right\}\).
+Then \({\mathbb{Z}}G = {\mathbb{Z}}[t, t ^{-1} ]\) are integral Laurent
+polynomials, since we're taking integer linear combinations of various
+\(t^n\). Computing
+\(H_*(T, A) \cong \operatorname{Tor}_*^{{\mathbb{Z}}T}({\mathbb{Z}}, A)\)
+and
+\(H^*(T; A) \cong \operatorname{Ext}^*_{{\mathbb{Z}}T}({\mathbb{Z}}, A)\)
+using a projective resolution of \({\mathbb{Z}}\) as a
+\({\mathbb{Z}}T{\hbox{-}}\)module, since the first slot Ext requires an
+injective resolution in the opposite category. It suffices to take a
+free resolution:
+\begin{align*}
+\cdots \to P_2 \to P_1 \to P_0 \to {\mathbb{Z}}\to 0 \coloneqq
+\cdots \to 0\to
+{\mathbb{Z}}T \xrightarrow{\times (t-1)} 
+{\mathbb{Z}}T \xrightarrow{\operatorname{ev}_1} {\mathbb{Z}}\to 0
+.\end{align*}
+Note that the resolution ends here because the multiplication
+\(\times(t-1)\) is injective on polynomials rings. Thus
+\(H_{>\geq 2}(T; A) = H^{\geq 2}(T; A) = 0\). The zeroth terms are
+invariants/coinvariants. For \(\operatorname{Tor}\), we apply
+\({\,\cdot\,}\otimes_{{\mathbb{Z}}T} A\) to this resolution to obtain
+\begin{align*}
+0\to FP_1 \to FP_0 \to 0 
+&\coloneqq
+0 \to {\mathbb{Z}}T \otimes_{{\mathbb{Z}}T} A \xrightarrow{(t-1) \otimes\one} {\mathbb{Z}}T \otimes_{{\mathbb{Z}}T} A \to 0\\
+&=
+0 \to A \xrightarrow{(t-1) \otimes\one} A \to 0
+.\end{align*}
+
+One can check that
+
+\begin{itemize}
+\tightlist
+\item
+  \(\ker (t-1) \otimes\one = A^T = H_1(T; A)\) is equal to the
+  invariants and
+\item
+  \(\operatorname{coker}(t-1) \otimes\one = A_T = H_0(T; A)\) is equal
+  to the coinvariants.
+\end{itemize}
+
+The second fact had to be true, but the first is surprising!
+
+For \(\operatorname{Ext}^*\), we apply the contravariant
+\({\operatorname{Hom}}_{{\mathbb{Z}}T}({\,\cdot\,}, A)\) to obtain
+\begin{align*}
+0
+\to {\operatorname{Hom}}_{{\mathbb{Z}}T}({\mathbb{Z}}T, A)
+\xrightarrow{{\,\cdot\,}\circ (t-1)} 
+{\operatorname{Hom}}_{{\mathbb{Z}}T}({\mathbb{Z}}T, A)
+\to 0
+.\end{align*}
+
+One checks
+
+\begin{itemize}
+\tightlist
+\item
+  \(\operatorname{coker}( {\,\cdot\,}\circ (t-1)) = A_T = H^1(T; A)\)
+  (surprising!) and
+\item
+  \(\ker( {\,\cdot\,}\circ (t-1)) = A^T = H^0(T; A)\)
+\end{itemize}
+
+\end{example}
+
+\begin{remark}
+
+See exercise 6.1.2 for \(kG{\hbox{-}}\)modules for
+\(k\in \mathsf{Ring}\) arbitrary.
+
+\end{remark}
+
+\begin{question}
+
+What can we say about \(H_0\) and \(H^0\) for more general groups?
+
+\end{question}
+
+\hypertarget{h_0-for-groups}{%
+\subsection{\texorpdfstring{\(H_0\) for
+Groups}{H\_0 for Groups}}\label{h_0-for-groups}}
+
+\begin{definition}[Augmentation Maps]
+
+Define the \textbf{augmentation map}
+\begin{align*}
+\varepsilon: {\mathbb{Z}}G\to {\mathbb{Z}}\\
+\sum n_i g_i &\mapsto \sum n_i
+,\end{align*}
+which is a ring morphism. Define
+\(\mathcal{I} \coloneqq\ker \varepsilon\) to be the \textbf{augmentation
+ideal}.
+
+\end{definition}
+
+\begin{observation}
+
+There is a basis of \({\mathbb{Z}}G\) as a
+\({\mathbb{Z}}{\hbox{-}}\)module given by
+\begin{align*}
+\mathcal{B}\coloneqq B_1 \cup B_2 \coloneqq\left\{{ 1 }\right\} \cup\left\{{ g-1 {~\mathrel{\Big|}~}1\neq g\in G }\right\} 
+.\end{align*}
+Note that \(\varepsilon(g-1) = 0\), so \(\mathcal{I}\) is a free
+\({\mathbb{Z}}{\hbox{-}}\)module with basis \(B_2\). Here the kernel
+should be expected to have codimension 1! We also have
+\({\mathbb{Z}}G/ \mathcal{I} \cong {\mathbb{Z}}\) as rings, where the
+left-hand side is a \(G{\hbox{-}}\)module. Letting
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\,\cdot\,}\mkern-1.5mu}\mkern 1.5mu\)
+denote coset/equivalence class representatives, we have
+\begin{align*}
+g \mkern 1.5mu\overline{\mkern-1.5mu1\mkern-1.5mu}\mkern 1.5mu = \mkern 1.5mu\overline{\mkern-1.5mug1\mkern-1.5mu}\mkern 1.5mu = \mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu = \mkern 1.5mu\overline{\mkern-1.5mu1\mkern-1.5mu}\mkern 1.5mu
+,\end{align*}
+and so the action \(G \curvearrowright{\mathbb{Z}}G/ \mathcal{I}\) is
+trivial.
+
+\begin{fact}
+
+For \(R\) a ring and \(\mathcal{I} {~\trianglelefteq~}R\) a (left?
+right?) ideal and \(M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}}\),
+\begin{align*}
+R/I \otimes_R M \cong M/IM
+.\end{align*}
+
+\end{fact}
+
+So for any \(A\in \mathsf{G}{\hbox{-}}\mathsf{Mod}\) we have
+\begin{align*}
+H_0(G; A) 
+&= A_G \\
+&\cong {\mathbb{Z}}\otimes_{{\mathbb{Z}}G} A \\
+&= \operatorname{Tor}_0^{{\mathbb{Z}}G}({\mathbb{Z}}; A) \\
+&= {\mathbb{Z}}G/\mathcal{I} \otimes_{{\mathbb{Z}}G} A \\
+&\cong A/ \mathcal{I} A
+.\end{align*}
+
+\end{observation}
+
+\begin{example}[?]
+
+\envlist
+
+\begin{itemize}
+\item
+  \(H_0(G; {\mathbb{Z}}) \cong {\mathbb{Z}}/ \mathcal{I} {\mathbb{Z}}\cong {\mathbb{Z}}\),
+  where \(\mathcal{I} {\mathbb{Z}}= 0\) since \({\mathbb{Z}}\) is the
+  trivial \(G{\hbox{-}}\)module and \((g-1)a = ga-1a=a-a=0\).
+\item
+  \(H_0(G; {\mathbb{Z}}G) \cong {\mathbb{Z}}G/ \mathcal{I} \cong {\mathbb{Z}}\).
+\item
+  \(H_0(G; \mathcal{I} ) \cong \mathcal{I} / \mathcal{I}^2\).
+\end{itemize}
+
+\end{example}
+
+\begin{example}[?]
+
+Noting that \(A = {\mathbb{Z}}G\) is projective in
+\(\mathsf{{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}\), so
+\(H_n(G; {\mathbb{Z}}G) = 0\) for \(n>0\), using that this was a version
+of \(\operatorname{Tor}\) and projective implies flat.
+
+\end{example}
+
+\hypertarget{h0-for-groups}{%
+\subsection{\texorpdfstring{\(H^0\) for
+Groups}{H\^{}0 for Groups}}\label{h0-for-groups}}
+
+\begin{definition}[Norm Element]
+
+Let \(G\) be a finite group, then the \textbf{norm element} is defined
+by
+\begin{align*}
+N = \sum_{g\in G} g\in {\mathbb{Z}}G
+.\end{align*}
+
+\end{definition}
+
+\begin{remark}
+
+For \(h\in G\),
+\begin{align*}
+hN = \sum_g hg = \sum_{g'\in G} g' = N
+,\end{align*}
+and so \(N \in ({\mathbb{Z}}G)^g\). Similarly \(Nh = N\) and so
+\(Z({\mathbb{Z}}G)\) is in the center.
+
+\begin{quote}
+Note the two different \(Z\)s here!
+\end{quote}
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Let \(G\) be finite, then
+\begin{align*}
+H^0(G; {\mathbb{Z}}G) = ({\mathbb{Z}}G)^G = {\mathbb{Z}}N
+,\end{align*}
+which is a two-sided ideal of \({\mathbb{Z}}G\) that is isomorphic to
+\({\mathbb{Z}}\).
+
+\end{lemma}
+
+\begin{proof}[?]
+
+The inclusion \({\mathbb{Z}}N \subseteq ({\mathbb{Z}}G)^G\) is clear
+from the previous remark, so it remains to show the other inclusion.
+Suppose
+\begin{align*}
+a\in \sum_{g\in G} n_g g \in ({\mathbb{Z}}G)^G
+.\end{align*}
+Then for all \(h\in G\), we have
+\begin{align*}
+a = ha = \sum n_g h_g
+.\end{align*}
+Now note that the \(g\) are a free \({\mathbb{Z}}{\hbox{-}}\)basis for
+\({\mathbb{Z}}G\), so we can equate coefficients of \(h\) to find that
+\(n_h = n_1\). Since \(h\) was arbitrary, we have
+\(a = n_1 N \in {\mathbb{Z}}N\).
+
+\end{proof}
+
+\begin{remark}
+
+Exercise 6.1.3 shows that \(H^0(G; {\mathbb{Z}}G) = 0\) when \(G\) is
+infinite, in which case
+\(\mathcal{I} = \left\{{ a \in {\mathbb{Z}}G {~\mathrel{\Big|}~}N a = 0 }\right\}\)
+is the annihilator of the norm element. Next class we'll start on
+spectral sequences.
+
+\end{remark}
+
 \hypertarget{appendix-extra-definitions}{%
 \section{Appendix: Extra Definitions}\label{appendix-extra-definitions}}
 
@@ -7199,6 +7505,25 @@ A chain complex \(C\) is \textbf{acyclic} if and only if \(H_*(C) = 0\).
 
 \hypertarget{useful-facts}{%
 \section{Useful Facts}\label{useful-facts}}
+
+\begin{proposition}[Algebra Facts]
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  Free \(\implies\) projective \(\implies\) flat \(\implies\)
+  torsionfree (for finitely-generated \(R{\hbox{-}}\)modules)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Over \(R\) a PID: free \(\iff\) torsionfree
+  \end{itemize}
+\end{itemize}
+
+\end{proposition}
 
 \begin{remark}
 
@@ -7265,43 +7590,8 @@ Notational conventions:
 
 \end{remark}
 
-\begin{proposition}[Kernels as pullbacks and cokernels as pushouts]
-
-The kernel \(\ker f\) of a morphism \(f\) can be characterized as a
-cartesian square, and the cokernel \(\operatorname{coker}f\) as a
-cocartesian square:
-
-\begin{center}
-\begin{tikzcd}
-    K \\
-    & {\ker f} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && 0 \\
-    \\
-    & 0 && \textcolor{rgb,255:red,92;green,92;blue,214}{B} && {\operatorname{coker}f} \\
-    &&&&&& C
-    \arrow[dotted, from=2-6, to=4-6]
-    \arrow[from=2-4, to=2-6]
-    \arrow["f"', color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=4-4]
-    \arrow["0"', dotted, from=4-4, to=4-6]
-    \arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=4-6, to=2-4]
-    \arrow["{\exists !}"', dashed, from=4-6, to=5-7]
-    \arrow[curve={height=12pt}, from=4-4, to=5-7]
-    \arrow[curve={height=-12pt}, from=2-6, to=5-7]
-    \arrow[dotted, from=2-2, to=2-4]
-    \arrow[from=4-2, to=4-4]
-    \arrow[dotted, from=2-2, to=4-2]
-    \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=4-4]
-    \arrow[curve={height=-12pt}, from=1-1, to=2-4]
-    \arrow[curve={height=12pt}, from=1-1, to=4-2]
-    \arrow["{\exists !}"', dashed, from=1-1, to=2-2]
-\end{tikzcd}
-\end{center}
-
-\begin{quote}
-\href{https://q.uiver.app/?q=WzAsOCxbMywxLCJBIixbMjQwLDYwLDYwLDFdXSxbNSwxLCIwIl0sWzMsMywiQiIsWzI0MCw2MCw2MCwxXV0sWzUsMywiXFxjb2tlciBmIl0sWzYsNCwiQyJdLFsxLDEsIlxca2VyIGYiXSxbMSwzLCIwIl0sWzAsMCwiSyJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFswLDFdLFswLDIsImYiLDIseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMiwzLCIwIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzMsMCwiIiwwLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzMsNCwiXFxleGlzdHMgISIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIiIsMCx7ImN1cnZlIjoyfV0sWzEsNCwiIiwwLHsiY3VydmUiOi0yfV0sWzUsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzYsMl0sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzUsMiwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzcsMCwiIiwxLHsiY3VydmUiOi0yfV0sWzcsNiwiIiwxLHsiY3VydmUiOjJ9XSxbNyw1LCJcXGV4aXN0cyAhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d}{Link
-to Diagram}
-\end{quote}
-
-\end{proposition}
+\hypertarget{hom-and-ext}{%
+\subsection{Hom and Ext}\label{hom-and-ext}}
 
 \begin{proposition}[Basic properties of Hom]
 
@@ -7336,6 +7626,20 @@ to Diagram}
     Has left-derived functors
     \(\operatorname{Ext}^i_R(A, B) \coloneqq L_i {\operatorname{Hom}}_R({\,\cdot\,}, B)(A)\)
     computed using \emph{projective} resolutions.
+  \end{itemize}
+\item
+  For \(N \in (\mathsf{R}, \mathsf{S'}){\hbox{-}}\mathsf{biMod}\) and
+  \(M\in (\mathsf{R}, \mathsf{S}){\hbox{-}}\mathsf{biMod}\),
+  \({\operatorname{Hom}}_R(M, N) \in (\mathsf{S}, \mathsf{S'}){\hbox{-}}\mathsf{biMod}\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Mnemonic: the slots of \({\operatorname{Hom}}_R\) use up a left
+    \(R{\hbox{-}}\)action. In the first slot, the right
+    \(S{\hbox{-}}\)action on \(M\) becomes a left \(S{\hbox{-}}\)action
+    on Hom. In the second slot, the right \(S'{\hbox{-}}\)action on
+    \(N\) becomes a right \(S'{\hbox{-}}\)action on Hom.
   \end{itemize}
 \end{itemize}
 
@@ -7507,6 +7811,184 @@ TFAE in \({\mathsf{R}{\hbox{-}}\mathsf{Mod}}\):
 \item
   ?
 \end{itemize}
+
+\end{proposition}
+
+\hypertarget{tensor-and-tor}{%
+\subsection{Tensor and Tor}\label{tensor-and-tor}}
+
+\begin{proposition}[Basic Properties of the Tensor Product]
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\otimes_R {\,\cdot\,}\) is:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Covariant
+  \item
+    Right-exact
+  \item
+    Left-exact
+  \item
+    Has left-derived functors
+    \(\operatorname{Ext}^i_R(A, B) \coloneqq L_i {\operatorname{Hom}}_R({\,\cdot\,}, B)(A)\)
+    computed using \emph{projective} resolutions.
+  \end{itemize}
+\item
+  \({\,\cdot\,}\otimes_R B\) is:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Covariant
+  \item
+    Right-exact
+  \item
+    Has left-derived functors
+    \(\operatorname{Ext}^i_R(A, B) \coloneqq L_i {\operatorname{Hom}}_R({\,\cdot\,}, B)(A)\)
+    computed using \emph{projective} resolutions.
+  \end{itemize}
+\item
+  Tensor commutes with colimits:
+  \((\mathop{\mathrm{colim}}\nolimits A_i)\otimes_R M = \mathop{\mathrm{colim}}\nolimits(A_i \otimes_R M)\).
+\end{itemize}
+
+\end{proposition}
+
+\begin{proposition}[Basic Properties of Tor]
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  \(\operatorname{Tor}_n^R(A, B) = 0\) for either \(A\) or \(B\) flat.
+\end{itemize}
+
+\end{proposition}
+
+\begin{fact}
+
+The most useful SES for proofs here:
+\begin{align*}
+0 \to {\mathbb{Z}}\xrightarrow{n} {\mathbb{Z}}\xrightarrow{\pi} {\mathbb{Z}}/n \to 0
+.\end{align*}
+
+\end{fact}
+
+\begin{proposition}[Common Tensor Products]
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  \({\mathbb{Z}}/n \otimes_{\mathbb{Z}}G \cong G/nG\)
+\item
+  \({\mathbb{Z}}/n \otimes_{\mathbb{Z}}{\mathbb{Z}}/m \cong {\mathbb{Z}}/d\).
+\item
+  \({\mathbb{Q}}\otimes_{\mathbb{Z}}{\mathbb{Z}}/n \cong 0\).
+\end{itemize}
+
+\end{proposition}
+
+\begin{proposition}[Common Tor Groups]
+
+\begin{itemize}
+\tightlist
+\item
+  \(\operatorname{Tor}^{\mathbb{Z}}_1({\mathbb{Z}}/n, G) \cong \left\{{ h\in H {~\mathrel{\Big|}~}nh = e }\right\}\)
+\item
+  \(\operatorname{Tor}^{\mathbb{Z}}_1({\mathbb{Z}}/n, {\mathbb{Q}}) \cong 0\).
+\item
+  \(\operatorname{Tor}^{\mathbb{Z}}_1({\mathbb{Z}}/n, {\mathbb{Z}}/m) \cong {\mathbb{Z}}/d\).
+\end{itemize}
+
+\end{proposition}
+
+\hypertarget{universal-properties}{%
+\subsection{Universal Properties}\label{universal-properties}}
+
+\begin{proposition}[Universal Property of the Quotient for Groups]
+
+If \(f: G\to K\) and \(H{~\trianglelefteq~}G\) (so that \(G/H\) is
+defined), then the map \(f\) descends to the quotient if and only if
+\(H \subseteq \ker(f)\).
+
+\end{proposition}
+
+\begin{proposition}[Kernels as pullbacks and cokernels as pushouts]
+
+The kernel \(\ker f\) of a morphism \(f\) can be characterized as a
+cartesian square, and the cokernel \(\operatorname{coker}f\) as a
+cocartesian square:
+
+\begin{center}
+\begin{tikzcd}
+    K \\
+    & {\ker f} && \textcolor{rgb,255:red,92;green,92;blue,214}{A} && 0 \\
+    \\
+    & 0 && \textcolor{rgb,255:red,92;green,92;blue,214}{B} && {\operatorname{coker}f} \\
+    &&&&&& C
+    \arrow[dotted, from=2-6, to=4-6]
+    \arrow[from=2-4, to=2-6]
+    \arrow["f"', color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=4-4]
+    \arrow["0"', dotted, from=4-4, to=4-6]
+    \arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=4-6, to=2-4]
+    \arrow["{\exists !}"', dashed, from=4-6, to=5-7]
+    \arrow[curve={height=12pt}, from=4-4, to=5-7]
+    \arrow[curve={height=-12pt}, from=2-6, to=5-7]
+    \arrow[dotted, from=2-2, to=2-4]
+    \arrow[from=4-2, to=4-4]
+    \arrow[dotted, from=2-2, to=4-2]
+    \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=4-4]
+    \arrow[curve={height=-12pt}, from=1-1, to=2-4]
+    \arrow[curve={height=12pt}, from=1-1, to=4-2]
+    \arrow["{\exists !}"', dashed, from=1-1, to=2-2]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsOCxbMywxLCJBIixbMjQwLDYwLDYwLDFdXSxbNSwxLCIwIl0sWzMsMywiQiIsWzI0MCw2MCw2MCwxXV0sWzUsMywiXFxjb2tlciBmIl0sWzYsNCwiQyJdLFsxLDEsIlxca2VyIGYiXSxbMSwzLCIwIl0sWzAsMCwiSyJdLFsxLDMsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFswLDFdLFswLDIsImYiLDIseyJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMiwzLCIwIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzMsMCwiIiwwLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzMsNCwiXFxleGlzdHMgISIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsyLDQsIiIsMCx7ImN1cnZlIjoyfV0sWzEsNCwiIiwwLHsiY3VydmUiOi0yfV0sWzUsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzYsMl0sWzUsNiwiIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzUsMiwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV0sWzcsMCwiIiwxLHsiY3VydmUiOi0yfV0sWzcsNiwiIiwxLHsiY3VydmUiOjJ9XSxbNyw1LCJcXGV4aXN0cyAhIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+\end{proposition}
+
+\hypertarget{adjunctions}{%
+\subsection{Adjunctions}\label{adjunctions}}
+
+\begin{proposition}[Tensor-Hom Adjunction]
+
+For a fixed \(M\in (\mathsf{R}, \mathsf{S}){\hbox{-}}\mathsf{biMod}\),
+there is an adjunction
+\begin{align*}
+\adjunction{ {\,\cdot\,}\otimes_R M }{{\operatorname{Hom}}_S(M, {\,\cdot\,})}{ \mathsf{Mod}{\hbox{-}}\mathsf{R} } { \mathsf{Mod}{\hbox{-}}\mathsf{S} }
+,\end{align*}
+so for \(Y \in (\mathsf{A}, \mathsf{R}){\hbox{-}}\mathsf{biMod}\) and
+\(Z \in (\mathsf{B}, \mathsf{S}){\hbox{-}}\mathsf{biMod}\), there is a
+(natural) isomorphism in
+\((\mathsf{B}, \mathsf{A}){\hbox{-}}\mathsf{biMod}\):
+\begin{align*}
+{\operatorname{Hom}}_S(X \otimes_R M, Z) \xrightarrow{\sim} {\operatorname{Hom}}_R( X, {\operatorname{Hom}}_S(M, Z) )
+.\end{align*}
+
+\end{proposition}
+
+\begin{proposition}[Forgetful Adjunctions]
+
+Let
+\(F: {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}\)
+be the forgetful functor, then there are adjunctions
+\begin{align*}
+\adjunction{F}{ {\operatorname{Hom}}_{\mathbb{Z}}(R, {\,\cdot\,})} {{\mathsf{R}{\hbox{-}}\mathsf{Mod}} } {{\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}} } \\ \\
+\adjunction{R\otimes_{\mathbb{Z}}{\,\cdot\,}}{F}{ {\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}} }{ {\mathsf{R}{\hbox{-}}\mathsf{Mod}} }
+.\end{align*}
 
 \end{proposition}
 
