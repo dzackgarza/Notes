@@ -3719,7 +3719,9 @@ Note that this is a bijection of sets, but we'll upgrade it to a bijection of ab
 
 # Monday, March 01
 
+::: {.remark}
 Last time: we looked at group extensions. Given \( \xi: 0\to B\to X \to A\to 0 \), we had a canonical element in \( \operatorname{Ext}^1(A, B) \), namely \( \Theta(\xi) = \delta(\one_B) \). This only depends on the equivalence class of \( \xi \).
+:::
 
 ::: {.theorem title="?"}
 Given \( A, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}} \), there is a bijection
@@ -4538,12 +4540,12 @@ The exts here will classify extensions in the category of left \( {\mathbb{Z}}{\
 
 # Ch. 6: Group Homology and Cohomology (Wednesday, March 10)
 
-:::{.lemma} Last time: started setting up group homology. For \( G \) a group and \( A\in \mathsf{G}{\hbox{-}}\mathsf{Mod} \), we think of \( {\mathbb{Z}} \) as a trivial \( G{\hbox{-}} \)module and
+::: {.lemma title="?"}
+Last time: started setting up group homology. For \( G \) a group and \( A\in \mathsf{G}{\hbox{-}}\mathsf{Mod} \), we think of \( {\mathbb{Z}} \) as a trivial \( G{\hbox{-}} \)module and
 
 1.  \( A_G \cong {\mathbb{Z}}\otimes_{{\mathbb{Z}}G} A \), the \( G{\hbox{-}} \)coinvariants.
 
 2.  \( A^G \cong {\operatorname{Hom}}_{{\mathbb{Z}}G}( {\mathbb{Z}}, A) \). the \( G{\hbox{-}} \)invariants, this is the largest \( G{\hbox{-}} \)trivial submodule of \( A \)
-
 :::
 
 ::: {.definition title="?"}

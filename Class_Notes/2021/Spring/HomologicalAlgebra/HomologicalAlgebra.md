@@ -4548,7 +4548,6 @@ There's a slightly circular statement that projective implies flat in the book, 
 
 ## $\Ext^1$ and Extensions
 
-
 :::{.definition title="Module Extensions"}
 Let \( A, B\in \modr \), then an **extension of $A$ by $B$** is a SES 
 \[
@@ -4675,10 +4674,11 @@ Note that this is a bijection of sets, but we'll upgrade it to a bijection of ab
 
 # Monday, March 01
 
+:::{.remark}
 Last time: we looked at group extensions.
 Given $\xi: 0\to B\to X \to A\to 0$, we had a canonical element in $\Ext^1(A, B)$, namely $\Theta(\xi) = \delta(\one_B)$.
 This only depends on the equivalence class of $\xi$.
-
+:::
 
 :::{.theorem title="?"}
 Given $A, B\in \modr$, there is a bijection
@@ -4690,7 +4690,6 @@ Given $A, B\in \modr$, there is a bijection
 \Ext_R^1(A, B)
 \]
 :::
-
 
 :::{.proof title="?"}
 \envlist
@@ -4853,18 +4852,15 @@ Check that $X$ is the pushout of $j$ and $\beta$.
 It follows that $\Psi (\Theta(\xi)) = \xi$ and thus $\Theta$ is injective, making it a bijection.
 :::
 
-
 :::{.remark}
 Note the importance of the reversed directions after taking the Hom!
 :::
-
 
 :::{.remark}
 How can we upgrade this to a group homomorphism?
 One way is to pull back the group structure from the right-hand side to the left-hand side, but it turns out that Baer worked out an intrinsic group structure around 1934.
 We can construct the "smallest" extension such that $A$ is a quotient and $B$ is a submodule.
 :::
-
 
 :::{.definition title="Baer Sum (1934)"}
 Suppose we have two extensions of $A$ by $B$:
@@ -4928,8 +4924,6 @@ Moreover, the map $\Theta$ from the previous theorem is an isomorphism of abelia
 :::{.remark}
 Next time we'll check this by showing $\Theta(\phi) = \Theta(\xi) + \Theta(\xi')$.
 :::
-
-
 
 
 # Wednesday, March 03
@@ -5154,7 +5148,6 @@ and the asserted bijection is then given by $\Theta(\xi) \da \bd(\beta)$.
 
 ## 3.6: Kunneth and Universal Coefficient Theorems
 
-
 :::{.observation}
 If $R$ is a field $F$ then $\Tor_n^F(A, B) = 0$ for all $n>0$, i.e. every module over a field is a complex space, hence free, hence projective, hence flat, and so $A\tensor_F \wait$ is exact.
 :::
@@ -5162,7 +5155,6 @@ If $R$ is a field $F$ then $\Tor_n^F(A, B) = 0$ for all $n>0$, i.e. every module
 :::{.question}
 If $\complex P \in \Ch(\modr)$ is a complex of of right \(R\dash\)modules and $M \in \rmod$ is a left \(R\dash\)module, how is the homology of $\complex P$ and that of $\complex P \tensor_R M$ related?
 :::
-
 
 :::{.lemma title="?"}
 Given a 5-term exact sequence
@@ -5184,7 +5176,6 @@ there is a corresponding SES
 
 In particular, we can always take $A = \coker \alpha$ and $C = \ker \gamma$ in any abelian category.
 :::
-
 
 :::{.theorem title="The Kunneth Formula"}
 Let $\complex P\in \Ch(\modr)$ be a chain complex of flat right \(R\dash\)modules such that each boundary module $dP_n$ is again flat.
@@ -5260,7 +5251,6 @@ one can obtain an exact sequence
 .\]
 
 :::
-
 
 :::{.observation}
 For a SES
@@ -5439,7 +5429,6 @@ This will give us some objects to apply spectral sequences.
 :::
 
 
-
 # Monday, March 08
 
 ## 3.6: Universal Coefficients Theorem
@@ -5598,24 +5587,9 @@ Note the switched order on the hom functor however!
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Ch. 6: Group Homology and Cohomology (Wednesday, March 10)
- 
- :::{.lemma}
+
+:::{.lemma title="?"}
 Last time: started setting up group homology.
 For $G$ a group and $A\in \modsleft{G}$, we think of $\ZZ$ as a trivial \(G\dash\)module and
 
@@ -5624,9 +5598,8 @@ For $G$ a group and $A\in \modsleft{G}$, we think of $\ZZ$ as a trivial \(G\dash
 2. $A^G \cong \Hom_{\ZZ G}( \ZZ, A)$.
   the $G\dash$invariants, this is the largest $G\dash$trivial submodule of $A$
 
-
- :::
-
+:::
+ 
 :::{.definition title="?"}
 For $A\in \modsleft{G}$,
 
@@ -5646,7 +5619,6 @@ For $G = \ts{ 1 }$, for any $A\in \modsleft{G}$ we have $A^G = A = A_G$.
 Forgetful functors are usually exact, and in this case $(\wait)^G, (\wait)_G: \modsleft{G} \to \Ab$ is really a forgetful functor and thus exact.
 Here $H_n(G; A) = 0 = H^n(G; A)$ for $n>0$.
 :::
-
 
 :::{.example title="?"}
 Let $G$ be infinite cyclic, which we'll write multiplicatively to prevent the notation from conflicting with the addition on $\ZZ G$, so $G\da T = \gens{ t }= \ts{ t^n \st n\in \ZZ }$. 
@@ -5712,7 +5684,6 @@ Define the **augmentation map**
 which is a ring morphism.
 Define $\ideal{I} \da \ker \eps$ to be the **augmentation ideal**.
 :::
-
 
 :::{.observation}
 There is a basis of $\ZZ G$ as a \(\ZZ\dash\)module given by 
@@ -5809,10 +5780,6 @@ Since $h$ was arbitrary, we have $a = n_1 N \in \ZZ N$.
 Exercise 6.1.3 shows that $H^0(G; \ZZ G) = 0$ when $G$ is infinite, in which case $\ideal{I} = \ts{ a \in \ZZ G \st N a = 0 }$ is the annihilator of the norm element.
 Next class we'll start on spectral sequences.
 :::
-
-
-
-
 
 
 
