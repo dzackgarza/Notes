@@ -49,7 +49,6 @@
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
-\newcommand{\Ch}[0]{\operatorname{Ch}}
 \newcommand{\HF}[0]{\operatorname{HF}}
 \newcommand{\CF}[0]{\operatorname{HF}}
 \newcommand{\ZHS}[0]{\operatorname{ZHS}}
@@ -65,7 +64,6 @@
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
-\newcommand{\Perv}[0]{\operatorname{Perv}}
 \newcommand{\Gal}[0]{\operatorname{Gal}}
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
@@ -86,7 +84,6 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
-\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -100,21 +97,12 @@
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
-\newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
-\newcommand{\Ring}[0]{\mathbf{Ring}}
-\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
+\newcommand{\dR}[0]{\mathrm{dR}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
-\newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\operatorname{gr}}}
-\newcommand{\grMod}[0]{{\operatorname{grMod}}}
-\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -125,7 +113,6 @@
 \newcommand{\Inn}[0]{{\operatorname{Inn}}}
 \newcommand{\Out}[0]{{\operatorname{Out}}}
 \newcommand{\mltext}[1]{\left\{\begin{array}{c}#1\end{array}\right\}}
-\newcommand{\Fun}[0]{{\operatorname{Fun}}}
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
@@ -134,27 +121,56 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
-\newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
-\newcommand{\alg}[0]{\mathrm{Alg}}
-\newcommand{\scalg}[0]{\mathrm{sCAlg}}
-\newcommand{\calg}[0]{\mathrm{CAlg}}
-\newcommand{\dR}[0]{\mathrm{dR}}
-\newcommand{\poly}[0]{\operatorname{poly}}
-\newcommand{\Vect}[0]{{\operatorname{Vect}}}
-\newcommand{\Sh}[0]{{\operatorname{Sh}}}
-\newcommand{\presh}[0]{{\operatorname{Presh}}}
-\newcommand{\Presh}[0]{{\operatorname{Presh}}}
+\newcommand{\Cat}[0]{\mathsf{Cat}}
+\newcommand{\Fun}[0]{{\mathsf{Fun}}}
+\newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\poly}[0]{\mathsf{poly}}
+\newcommand{\Vect}[0]{{\mathsf{Vect}}}
+\newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Ch}[0]{\mathsf{Ch}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Set}[0]{{\mathsf{Set}}}
+\newcommand{\Sets}[0]{{\mathsf{Set}}}
+\newcommand{\sets}[0]{{\mathsf{Set}}}
+\newcommand{\Grp}[0]{{\mathsf{Grp}}}
+\newcommand{\Groups}[0]{{\mathsf{Groups}}}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathsf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
+\newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
+\newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
+\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+\newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\eul}[0]{{\operatorname{eul}}}
+\newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
-\newcommand{\Set}[0]{{\operatorname{Set}}}
-\newcommand{\Sets}[0]{{\operatorname{Set}}}
-\newcommand{\Grp}[0]{{\operatorname{Grp}}}
-\newcommand{\Groups}[0]{{\operatorname{Groups}}}
 \newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
 \newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
@@ -162,7 +178,6 @@
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
 \newcommand{\Ext}{\operatorname{Ext}}
-\newcommand{\sets}[0]{{\operatorname{Set}}}
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
 \newcommand{\fin}[0]{{\operatorname{fin}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
@@ -170,6 +185,7 @@
 \newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
+\newcommand{\discriminant}[0]{{\Delta}}
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
@@ -188,6 +204,8 @@
 \newcommand{\bd}[0]{{\del}}
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
+\newcommand{\freeprod}[0]{\ast}
+\newcommand{\spinc}[0]{\mathrm{spin}^{\mathrm{c} }}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
@@ -258,7 +276,7 @@
 \newcommand{\ms}[0]{\xrightarrow{\sim}}
 \newcommand{\from}[0]{\leftarrow}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
-\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
+\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#2}^{#1}}}
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
@@ -344,20 +362,6 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\Top}[0]{{\mathbf{Top}}}
-\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
-\newcommand{\Ab}[0]{{\mathbf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathbf{Sch}}}
-\newcommand{\sch}[0]{{\mathbf{Sch}}}
-\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
-\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
-\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
-\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
-\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
-\newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
 \newcommand{\semidirect}[0]{\rtimes}
@@ -409,7 +413,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{\mathbf{#1}}
+\newcommand{\complex}[1]{{#1}^{\wait}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -478,6 +482,9 @@
 \newcommand\holomorphic[0]{\text{holo}}
 \newcommand\Mero[0]{\operatorname{Mero}}
 \newcommand\compact[0]{\text{cpt}}
+\newcommand\even[0]{\text{even}}
+\newcommand\odd[0]{\text{odd}}
+\newcommand\hodgestar[0]{\star}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
@@ -491,15 +498,7 @@
 \newcommand\cupp[0]{\smile}
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
-
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
+\newcommand\ev[0]{\operatorname{ev}}
 
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
@@ -507,11 +506,20 @@
 \newcommand{\divides}{\mid}
 \newcommand{\notdivides}{\nmid}
 \newcommand{\fractional}[1]{\theset{#1}}
+\newcommand{\fractionalpart}[1]{\theset{#1}}
+\newcommand{\integerpart}[1]{\left[ {#1}\right] }
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
+\newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
+\newcommand{\Tot}[0]{\operatorname{Tot}}
+\newcommand{\Totsum}[0]{\Tot^{\oplus}}
+\newcommand{\Totprod}[0]{\Tot^{\Pi}}
+\newcommand{\equalsbecause}[1]{\overset{#1}{=}}
+\newcommand{\ideal}[1]{\mathcal{#1}}
+\newcommand{\forget}[0]{\mathrm{Forget}}
 
 # Lecture 1: Overview (Wednesday, January 13)
 
@@ -3711,4 +3719,276 @@ Do another isotopy to create 4 intersection points and show that the ranks of ho
 
 
 
+
+
+# Tuesday, March 09
+
+
+:::{.remark}
+Recall that we were working with a diagram for $S^1 \cross S^2$:
+
+![image_2021-03-09-11-14-10](figures/image_2021-03-09-11-14-10.png)
+
+Here we have \( \bd x = 2y = 0 \) since we're working mod 2, and \( \bd y = 0 \), so we have
+\[
+\hat{\HF}(H_1) = {\ker \bd \over \im \bd} = { \gens{ x, y }\over 1} = (\ZZ/2)^{\oplus 2} 
+.\]
+
+However, with a different diagram, we get a different result:
+
+
+![image_2021-03-09-11-15-46](figures/image_2021-03-09-11-15-46.png)
+
+Here $\hat{\HF}(H_2) = 0$.
+To prevent this, we'll have some class of *admissible* diagrams.
+
+:::
+
+:::{.definition title="Periodic Domains"}
+A 2-chain \( P = \sum_{i=1}^m a_i D_i \) is called a **periodic domain** if and only if 
+
+1. The local multiplicity of $P$ at $z$ is zero, i.e. $n_z(P) = 0$, and
+2. $\bd P$ is a linear combination of \( \alpha, \beta \).
+:::
+
+:::{.remark}
+Note that for (2), the boundary could involve 1-chains, so this condition avoids corners on \( \bd P \).
+The local picture is the following:
+
+![image_2021-03-09-11-19-12](figures/image_2021-03-09-11-19-12.png)
+
+:::
+
+:::{.example title="?"}
+In this picture, $P = nD_1$ will be a periodic domain for any $n$;
+
+![image_2021-03-09-11-20-54](figures/image_2021-03-09-11-20-54.png)
+
+:::
+
+:::{.example title="?"}
+Labeling the first picture, we have
+
+![image_2021-03-09-11-21-32](figures/image_2021-03-09-11-21-32.png)
+
+We should have $n_1 + n_2 = 0$, so any $P = n(D_1 - D_2)$ will be a periodic domain.
+Checking the boundary yields \( \bd P = n \alpha \pm n \beta \).
+In fact there is single "generator" for the periodic domains here:
+
+![image_2021-03-09-11-23-43](figures/image_2021-03-09-11-23-43.png)
+
+:::
+
+:::{.definition title="Weakly Admissible Diagrams"}
+A Heegaard diagram $H = ( \Sigma, \alpha, \beta, z)$ is called **weakly admissible** if any periodic domain $P$ has both positive and negative coefficients.
+:::
+
+:::{.example title="?"}
+$H_1$ from above is weakly admissible, but $H_2$ is not.
+:::
+
+:::{.remark}
+For any Whitney disc \( \varphi\in \pi_2(x, x) \) with $n_z( \varphi) = 0$, $D( \varphi)$ is a periodic domain.
+For any periodic domain $P$, we can associate a homology class $H(P) \in H_2(M)$.
+Writing
+\[
+\bd P = \sum_{i=1}^g a_i \alpha_i + \sum_{i=1}^g b_i \beta_i
+\mapsvia{H} 
+H(P) \da [ P + \sum_{i=1}^g a_i A_i + \sum_{i=1}^g b_i B_i]
+.\]
+using that each \( \alpha_i \) is the boundary of some disc $A_i$ in one handlebody, and \( \beta_i = \bd B_i \) similarly.
+Noting that $P$ is a boundary, this amounts to adding a number of discs to get a closed nontrivial cycle.
+
+:::
+
+:::{.exercise title="?"}
+Show that if $H(P) =0$ the $P=0$, and that $H$ is a bijection.
+:::
+
+:::{.remark}
+Let $P = \sum_{i=1}^m n_i D_i$ be a 2-chain that satisfies condition 2, so \( \bd P = \sum_{i=1}^m a_i \alpha_i + \sum_{i=1}^m b_i \beta_i \).
+Then we can obtain a periodic domain:
+\[
+P_0 
+\da P - n_z(P) \qty{ \sum_{i=1}^m D_i }
+\da P - n_z(P) [ \Sigma ]
+.\]
+
+:::
+
+:::{.exercise title="?"}
+Show that if $g>2$, then 
+\[
+\pi_2(x, x) &\mapsvia{\sim}  \ZZ \oplus H_2(M)\\
+P = P_0 + n_z(P)[ \Sigma ] &\mapsto (n_z(P), H(P_0))
+.\]
+
+Alternatively, given \( \varphi\in n_z( \varphi) S \) where $S$ is the positive generator of $\pi_2( \Sym^g( \Sigma ) ) \freeprod \varphi_0$ (i.e. the hyperelliptic involution) where \( D(\phi_0)\) is a periodic domain.
+
+> Use that for $g\geq 2$ there is a bijection between Whitney discs and domains, and domains of Whitney discs are domains satisfying condition (2) above.
+
+:::
+
+:::{.exercise title="?"}
+Show that for a closed 3-manifold $M\in \QHS^3$, $H_2(M; \ZZ) = 0$.
+:::
+
+:::{.corollary title="?"}
+If $H_2(M) =0$ (e.g. if $M \in \QHS^3$) then any Heegard diagram is weakly admissible.
+:::
+
+:::{.remark}
+This is because $H_2(M) = 0$ means there are no periodic domains.
+:::
+
+:::{.lemma title="?"}
+If $H$ is weakly admissible, then for any \( x, y \in \TT_{ \alpha} \intersect \TT_{ \beta} \) there are *finitely* many Whitney discs \( \varphi\in \pi_2(x, y) \) with \( D( \varphi) \geq 0 \).
+:::
+
+:::{.theorem title="?"}
+Any Heegard diagram can be made admissible using finitely many isotopies.
+:::
+
+:::{.example title="?"}
+For $g=1$, we have \( \Sym^1( \Sigma) = \Sigma \).
+We'll use this in what follows.
+:::
+
+:::{.lemma title="?"}
+For any \( x, y\in \alpha \intersect \beta \), the 0-dimensional moduli space of holomorphic disks connecting $x$ to $y$ correspond to orientation-preserving immersions of the following form which satisfy:
+
+![image_2021-03-09-12-06-12](figures/image_2021-03-09-12-06-12.png)
+
+1. \( u(e_1) \subseteq \beta, u(e_2) \subseteq \alpha, u(-i) = x, u(i) = y \).
+2. There are $\pi/2$ radian corners at $x, y$, but these are smooth immersions at other boundary points.
+
+:::
+
+:::{.exercise title="?"}
+Prove this lemma using the Riemann mapping theorem.
+:::
+
+
+:::{.example title="?"}
+Consider the following example:
+
+![image_2021-03-09-12-09-05](figures/image_2021-03-09-12-09-05.png)
+
+
+List all of the bigons in this picture that will contribute to the differential.
+:::
+
+
+
+
+
+# Thursday, March 11
+
+:::{.remark}
+Recall the example from last time: we are trying to show that changing a diagram by isotopy doesn't change the homology.
+
+![image_2021-03-11-11-16-15](figures/image_2021-03-11-11-16-15.png)
+
+Here we have $g=1$ and so \( \Sym^1(T^2) = T^2 \), and \( \alpha \intersect \beta = \ts{ a,b,c,d,e } \).
+So \( \hat{\CF}( \Sigma, \alpha, \beta, z) = \ZZ/2 \gens{ a,b,c,d,e }  \).
+
+First mark the component that contains the base point $z$ and give it a coefficient of zero:
+
+![image_2021-03-11-11-18-34](figures/image_2021-03-11-11-18-34.png)
+
+We can make this part bigger, and find that there are only two bigons involving $a$.
+
+![image_2021-03-11-11-23-41](figures/image_2021-03-11-11-23-41.png)
+
+This is because starting at a point and following the orientation should yield red first and then blue, matching up with the orientation on the disc.
+
+![image_2021-03-11-11-35-44](figures/image_2021-03-11-11-35-44.png)
+
+So $\bd a = {\color{yellow} b} + {\color{purple} d}$, since we require 90 degree corners.
+Similarly, 
+
+- \( \bd e = b + d \) 
+- \( \bd b = c \) 
+- \( \bd d = c \) 
+- \( \bd c = 0 \) 
+
+We can simplify this information with a graph with arrows pointing toward boundaries:
+
+![image_2021-03-11-11-29-41](figures/image_2021-03-11-11-29-41.png)
+
+Then any linear combination with the same image will have zero boundary, so we have
+\[
+\ker \bd &= \gens{ a + e, b + d, c } \\
+\im \bd &= \gens{ b+d, c } 
+,\]
+and thus $\hat{\HF}(\Sigma, \alpha, \beta, z) = \ZZ/2$.
+:::
+
+:::{.example title="?"}
+
+![image_2021-03-11-11-37-28](figures/image_2021-03-11-11-37-28.png)
+
+Drawing this on a surface yields the following:
+
+![image_2021-03-11-12-01-09](figures/image_2021-03-11-12-01-09.png)
+
+One useful trick here is labeling the points along one curve with letters and the other with numbers.
+Another is making a table like the following:
+
+![image_2021-03-11-12-05-41](figures/image_2021-03-11-12-05-41.png)
+
+From this it's easy to read off the 4 possible generators \( \ts{ ae, ce, bf, bd } \).
+The regions the contain $z$ can be seen in the latter picture:
+
+![image_2021-03-11-12-07-48](figures/image_2021-03-11-12-07-48.png)
+
+Translating this to the original picture yields these regions:
+
+![image_2021-03-11-12-09-26](figures/image_2021-03-11-12-09-26.png)
+
+Note that the half-bigons in the diagram actually pair to a bigon on the surface, so consider this simplified drawing of the surface:
+
+![image_2021-03-11-12-11-38](figures/image_2021-03-11-12-11-38.png)
+
+- For the bigon from $a \to c$, we can get $ae\to ce$ using the embedding
+\[
+\DD \mapsvia{u} \Sigma\injects \Sym^2( \Sigma)
+.\]
+
+- For the bigon $d\to f$, we get $bd\to bf$.
+
+Setting $D_1 = D( \varphi)$ for \( \varphi\in \pi_2( ae, bf ) \), we have $\mu( \varphi) = 1$ since we showed that rectangular regions have Maslov index 1.
+Are there any holomorphic representatives?
+The claim is that \( \# \hat{\mathcal{M}}( \varphi) \).
+Checking boundaries yields the following:
+
+![image_2021-03-11-12-19-43](figures/image_2021-03-11-12-19-43.png)
+
+Then
+\[
+\ker \bd &= \gens{ ce, bf } \\ 
+\im \bd &= \gens{ ce + bf } \\ 
+&\implies \hat{HF}(\Sigma, \alpha, \beta, z) \cong \ZZ
+.\]
+This is good, since some valid moves will make this into a standard diagram for $S^3$ (?).
+:::
+
+:::{.remark}
+Recall that given a rectangle, there is a 2-to-1 branched cover:
+
+![image_2021-03-11-12-25-02](figures/image_2021-03-11-12-25-02.png)
+
+Such branched coverings bijectively correspond to biholomorphic involutions
+\[
+a &\mapstofrom e \\
+b &\mapstofrom f
+.\]
+
+This is because there is a unique involution exchanging them by the Schwarz lemma, since any pole of the involution must lie along the line connecting points it exchanges, and exchanging each pair of corners in the rectangle forces to pole to be precisely the point in the center of the rectangle.
+So these correspond got biholomorphic involutions of $\DD$ using complex analysis.
+:::
+
+:::{.remark}
+Next week: more about the Maslov index and $\spinc$ structures, then invariance under diagram moves.
+:::
 

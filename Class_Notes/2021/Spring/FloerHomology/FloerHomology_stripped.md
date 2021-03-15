@@ -1,14 +1,3 @@
-```{=tex}
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
-```
-
 # Lecture 1: Overview (Wednesday, January 13)
 
 ## Course Logistics
@@ -85,11 +74,11 @@ We'll assume everything is smooth and oriented.
 ::: {.proposition title="Osvath-Szabo (2000)"}
 To closed 3-manifolds \( M \) we can assign a graded abelian group \( \widehat{HF}(M) \), which can be computed combinatorially [^1] . There are several variants:
 
--   \( HF^- \in {\operatorname{grMod}}({\mathbb{Z}}_2[u]) \), [^2]
+-   \( HF^- \in {\mathsf{grMod}}({\mathbb{Z}}_2[u]) \), [^2]
 
--   \( HF^+ \in {\operatorname{Mod}}({\mathbb{Z}}_2[u, u ^{-1} ] / u {\mathbb{Z}}_2[u]) \).
+-   \( HF^+ \in {\mathsf{Mod}}({\mathbb{Z}}_2[u, u ^{-1} ] / u {\mathbb{Z}}_2[u]) \).
 
--   \( HF^\infty \in {\operatorname{grMod}}({\mathbb{Z}}_2[u, u ^{-1} ]) \),
+-   \( HF^\infty \in {\mathsf{grMod}}({\mathbb{Z}}_2[u, u ^{-1} ]) \),
 
 \( HF^+ \) and \( HF^\infty \) can be computed using \( HF^- \). In general, we'll write \( HF^{\,\cdot\,} \) to denote constructions that work with any of the above variants.
 :::
@@ -2018,7 +2007,7 @@ For \( x,y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \), recall that 
 
 ![Whiteney Disc](figures/image_2021-02-23-11-14-22.png)
 
-Then \( \pi_2(x, y) \) was defined to be the homotopy classes of discs connecting \( x \) to \( y \). The obstruction to the existence of such discs was denoted \( \varepsilon(x, y) \in H_1(M) \) for \( M\in {\mathbf{Mfd}}^3 \). We're checking if there exist two paths connecting \( x \) to \( y \),
+Then \( \pi_2(x, y) \) was defined to be the homotopy classes of discs connecting \( x \) to \( y \). The obstruction to the existence of such discs was denoted \( \varepsilon(x, y) \in H_1(M) \) for \( M\in {\mathsf{Mfd}}^3 \). We're checking if there exist two paths connecting \( x \) to \( y \),
 \[
 a: I &\to {\mathbb{T}}_{ \alpha} \\
 b: I &\to {\mathbb{T}}_{ \beta}
@@ -2631,6 +2620,243 @@ The only difference between this and the first is an isotopy of \( \beta \), and
 
 ::: {.exercise title="?"}
 Do another isotopy to create 4 intersection points and show that the ranks of homology are unchanged.
+:::
+
+# Tuesday, March 09
+
+::: {.remark}
+Recall that we were working with a diagram for \( S^1 \times S^2 \):
+
+![image_2021-03-09-11-14-10](figures/image_2021-03-09-11-14-10.png)
+
+Here we have \( {{\partial}}x = 2y = 0 \) since we're working mod 2, and \( {{\partial}}y = 0 \), so we have
+\[
+\widehat{\operatorname{HF}}(H_1) = {\ker {{\partial}}\over \operatorname{im}{{\partial}}} = { \left\langle{ x, y }\right\rangle\over 1} = ({\mathbb{Z}}/2)^{\oplus 2} 
+.\]
+
+However, with a different diagram, we get a different result:
+
+![image_2021-03-09-11-15-46](figures/image_2021-03-09-11-15-46.png)
+
+Here \( \widehat{\operatorname{HF}}(H_2) = 0 \). To prevent this, we'll have some class of *admissible* diagrams.
+:::
+
+::: {.definition title="Periodic Domains"}
+A 2-chain \( P = \sum_{i=1}^m a_i D_i \) is called a **periodic domain** if and only if
+
+1.  The local multiplicity of \( P \) at \( z \) is zero, i.e. \( n_z(P) = 0 \), and
+2.  \( {{\partial}}P \) is a linear combination of \( \alpha, \beta \).
+:::
+
+::: {.remark}
+Note that for (2), the boundary could involve 1-chains, so this condition avoids corners on \( {{\partial}}P \). The local picture is the following:
+
+![image_2021-03-09-11-19-12](figures/image_2021-03-09-11-19-12.png)
+:::
+
+::: {.example title="?"}
+In this picture, \( P = nD_1 \) will be a periodic domain for any \( n \);
+
+![image_2021-03-09-11-20-54](figures/image_2021-03-09-11-20-54.png)
+:::
+
+::: {.example title="?"}
+Labeling the first picture, we have
+
+![image_2021-03-09-11-21-32](figures/image_2021-03-09-11-21-32.png)
+
+We should have \( n_1 + n_2 = 0 \), so any \( P = n(D_1 - D_2) \) will be a periodic domain. Checking the boundary yields \( {{\partial}}P = n \alpha \pm n \beta \). In fact there is single "generator" for the periodic domains here:
+
+![image_2021-03-09-11-23-43](figures/image_2021-03-09-11-23-43.png)
+:::
+
+::: {.definition title="Weakly Admissible Diagrams"}
+A Heegaard diagram \( H = ( \Sigma, \alpha, \beta, z) \) is called **weakly admissible** if any periodic domain \( P \) has both positive and negative coefficients.
+:::
+
+::: {.example title="?"}
+\( H_1 \) from above is weakly admissible, but \( H_2 \) is not.
+:::
+
+::: {.remark}
+For any Whitney disc \( \varphi\in \pi_2(x, x) \) with \( n_z( \varphi) = 0 \), \( D( \varphi) \) is a periodic domain. For any periodic domain \( P \), we can associate a homology class \( H(P) \in H_2(M) \). Writing
+\[
+{{\partial}}P = \sum_{i=1}^g a_i \alpha_i + \sum_{i=1}^g b_i \beta_i
+\xrightarrow{H} 
+H(P) \coloneqq[ P + \sum_{i=1}^g a_i A_i + \sum_{i=1}^g b_i B_i]
+.\]
+using that each \( \alpha_i \) is the boundary of some disc \( A_i \) in one handlebody, and \( \beta_i = {{\partial}}B_i \) similarly. Noting that \( P \) is a boundary, this amounts to adding a number of discs to get a closed nontrivial cycle.
+:::
+
+::: {.exercise title="?"}
+Show that if \( H(P) =0 \) the \( P=0 \), and that \( H \) is a bijection.
+:::
+
+::: {.remark}
+Let \( P = \sum_{i=1}^m n_i D_i \) be a 2-chain that satisfies condition 2, so \( {{\partial}}P = \sum_{i=1}^m a_i \alpha_i + \sum_{i=1}^m b_i \beta_i \). Then we can obtain a periodic domain:
+\[
+P_0 
+\coloneqq P - n_z(P) \qty{ \sum_{i=1}^m D_i }
+\coloneqq P - n_z(P) [ \Sigma ]
+.\]
+:::
+
+::: {.exercise title="?"}
+Show that if \( g>2 \), then
+\[
+\pi_2(x, x) &\xrightarrow{\sim}  {\mathbb{Z}}\oplus H_2(M)\\
+P = P_0 + n_z(P)[ \Sigma ] &\mapsto (n_z(P), H(P_0))
+.\]
+
+Alternatively, given \( \varphi\in n_z( \varphi) S \) where \( S \) is the positive generator of \( \pi_2( \operatorname{Sym}^g( \Sigma ) ) \ast\varphi_0 \) (i.e. the hyperelliptic involution) where \( D(\phi_0) \) is a periodic domain.
+
+> Use that for \( g\geq 2 \) there is a bijection between Whitney discs and domains, and domains of Whitney discs are domains satisfying condition (2) above.
+:::
+
+::: {.exercise title="?"}
+Show that for a closed 3-manifold \( M\in \operatorname{QHS}^3 \), \( H_2(M; {\mathbb{Z}}) = 0 \).
+:::
+
+::: {.corollary title="?"}
+If \( H_2(M) =0 \) (e.g. if \( M \in \operatorname{QHS}^3 \)) then any Heegard diagram is weakly admissible.
+:::
+
+::: {.remark}
+This is because \( H_2(M) = 0 \) means there are no periodic domains.
+:::
+
+::: {.lemma title="?"}
+If \( H \) is weakly admissible, then for any \( x, y \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \) there are *finitely* many Whitney discs \( \varphi\in \pi_2(x, y) \) with \( D( \varphi) \geq 0 \).
+:::
+
+::: {.theorem title="?"}
+Any Heegard diagram can be made admissible using finitely many isotopies.
+:::
+
+::: {.example title="?"}
+For \( g=1 \), we have \( \operatorname{Sym}^1( \Sigma) = \Sigma \). We'll use this in what follows.
+:::
+
+::: {.lemma title="?"}
+For any \( x, y\in \alpha \cap\beta \), the 0-dimensional moduli space of holomorphic disks connecting \( x \) to \( y \) correspond to orientation-preserving immersions of the following form which satisfy:
+
+![image_2021-03-09-12-06-12](figures/image_2021-03-09-12-06-12.png)
+
+1.  \( u(e_1) \subseteq \beta, u(e_2) \subseteq \alpha, u(-i) = x, u(i) = y \).
+2.  There are \( \pi/2 \) radian corners at \( x, y \), but these are smooth immersions at other boundary points.
+:::
+
+::: {.exercise title="?"}
+Prove this lemma using the Riemann mapping theorem.
+:::
+
+::: {.example title="?"}
+Consider the following example:
+
+![image_2021-03-09-12-09-05](figures/image_2021-03-09-12-09-05.png)
+
+List all of the bigons in this picture that will contribute to the differential.
+:::
+
+# Thursday, March 11
+
+::: {.remark}
+Recall the example from last time: we are trying to show that changing a diagram by isotopy doesn't change the homology.
+
+![image_2021-03-11-11-16-15](figures/image_2021-03-11-11-16-15.png)
+
+Here we have \( g=1 \) and so \( \operatorname{Sym}^1(T^2) = T^2 \), and \( \alpha \cap\beta = \left\{{ a,b,c,d,e }\right\} \). So \( \widehat{\operatorname{HF}}( \Sigma, \alpha, \beta, z) = {\mathbb{Z}}/2 \left\langle{ a,b,c,d,e }\right\rangle \).
+
+First mark the component that contains the base point \( z \) and give it a coefficient of zero:
+
+![image_2021-03-11-11-18-34](figures/image_2021-03-11-11-18-34.png)
+
+We can make this part bigger, and find that there are only two bigons involving \( a \).
+
+![image_2021-03-11-11-23-41](figures/image_2021-03-11-11-23-41.png)
+
+This is because starting at a point and following the orientation should yield red first and then blue, matching up with the orientation on the disc.
+
+![image_2021-03-11-11-35-44](figures/image_2021-03-11-11-35-44.png)
+
+So \( {{\partial}}a = {\color{yellow} b} + {\color{purple} d} \), since we require 90 degree corners. Similarly,
+
+-   \( {{\partial}}e = b + d \)
+-   \( {{\partial}}b = c \)
+-   \( {{\partial}}d = c \)
+-   \( {{\partial}}c = 0 \)
+
+We can simplify this information with a graph with arrows pointing toward boundaries:
+
+![image_2021-03-11-11-29-41](figures/image_2021-03-11-11-29-41.png)
+
+Then any linear combination with the same image will have zero boundary, so we have
+\[
+\ker {{\partial}}&= \left\langle{ a + e, b + d, c }\right\rangle \\
+\operatorname{im}{{\partial}}&= \left\langle{ b+d, c }\right\rangle 
+,\]
+and thus \( \widehat{\operatorname{HF}}(\Sigma, \alpha, \beta, z) = {\mathbb{Z}}/2 \).
+:::
+
+::: {.example title="?"}
+![image_2021-03-11-11-37-28](figures/image_2021-03-11-11-37-28.png)
+
+Drawing this on a surface yields the following:
+
+![image_2021-03-11-12-01-09](figures/image_2021-03-11-12-01-09.png)
+
+One useful trick here is labeling the points along one curve with letters and the other with numbers. Another is making a table like the following:
+
+![image_2021-03-11-12-05-41](figures/image_2021-03-11-12-05-41.png)
+
+From this it's easy to read off the 4 possible generators \( \left\{{ ae, ce, bf, bd }\right\} \). The regions the contain \( z \) can be seen in the latter picture:
+
+![image_2021-03-11-12-07-48](figures/image_2021-03-11-12-07-48.png)
+
+Translating this to the original picture yields these regions:
+
+![image_2021-03-11-12-09-26](figures/image_2021-03-11-12-09-26.png)
+
+Note that the half-bigons in the diagram actually pair to a bigon on the surface, so consider this simplified drawing of the surface:
+
+![image_2021-03-11-12-11-38](figures/image_2021-03-11-12-11-38.png)
+
+-   For the bigon from \( a \to c \), we can get \( ae\to ce \) using the embedding
+    \[
+    {\mathbb{D}}\xrightarrow{u} \Sigma\hookrightarrow\operatorname{Sym}^2( \Sigma)
+    .\]
+
+-   For the bigon \( d\to f \), we get \( bd\to bf \).
+
+Setting \( D_1 = D( \varphi) \) for \( \varphi\in \pi_2( ae, bf ) \), we have \( \mu( \varphi) = 1 \) since we showed that rectangular regions have Maslov index 1. Are there any holomorphic representatives? The claim is that \( \# \widehat{\mathcal{M}}( \varphi) \). Checking boundaries yields the following:
+
+![image_2021-03-11-12-19-43](figures/image_2021-03-11-12-19-43.png)
+
+Then
+\[
+\ker {{\partial}}&= \left\langle{ ce, bf }\right\rangle \\ 
+\operatorname{im}{{\partial}}&= \left\langle{ ce + bf }\right\rangle \\ 
+&\implies \widehat{HF}(\Sigma, \alpha, \beta, z) \cong {\mathbb{Z}}
+.\]
+This is good, since some valid moves will make this into a standard diagram for \( S^3 \) (?).
+:::
+
+::: {.remark}
+Recall that given a rectangle, there is a 2-to-1 branched cover:
+
+![image_2021-03-11-12-25-02](figures/image_2021-03-11-12-25-02.png)
+
+Such branched coverings bijectively correspond to biholomorphic involutions
+\[
+a &\rightleftharpoons e \\
+b &\rightleftharpoons f
+.\]
+
+This is because there is a unique involution exchanging them by the Schwarz lemma, since any pole of the involution must lie along the line connecting points it exchanges, and exchanging each pair of corners in the rectangle forces to pole to be precisely the point in the center of the rectangle. So these correspond got biholomorphic involutions of \( {\mathbb{D}} \) using complex analysis.
+:::
+
+::: {.remark}
+Next week: more about the Maslov index and \( \mathrm{spin}^{\mathrm{c} } \) structures, then invariance under diagram moves.
 :::
 
 [^1]: See Sarkour-Wang
