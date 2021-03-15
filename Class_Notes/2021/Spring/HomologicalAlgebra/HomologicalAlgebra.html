@@ -1,0 +1,44 @@
+Error on 1
+
+{ ["2"] = signal,["3"] = 13,} 
+\documentclass{standalone}
+\input{/home/zack/.pandoc/custom/preamble_common}
+\begin{document}
+\nopagecolor
+\begin{tikzcd}
+    && {} \\
+    && {} & \vdots && \vdots && \vdots \\
+    & {A \otimes Q_2} && {P_0 \otimes Q_2} && {P_1\otimes Q_2} && {P_2 \otimes Q_2} && \cdots \\
+    & {A \otimes Q_1} && {P_0 \otimes Q_1} && {P_1\otimes Q_1} && {P_2 \otimes Q_1} && \cdots \\
+    & {A \otimes Q_0} && {P_0 \otimes Q_0} && {P_1\otimes Q_0} && {P_2 \otimes Q_0} && \cdots \\
+    {} && {} &&&&&& {} \\
+    &&& {P_0 \otimes B} && {P_1 \otimes B} && {P_2 \otimes B} \\
+    && {}
+    \arrow["{\epsilon \otimes 1}", from=3-4, to=3-2]
+    \arrow["{\epsilon \otimes 1}", from=4-4, to=4-2]
+    \arrow["{\epsilon \otimes 1}", from=5-4, to=5-2]
+    \arrow["{1 \otimes\eta}"{description}, from=5-4, to=7-4]
+    \arrow["{1 \otimes\eta}"{description}, from=5-6, to=7-6]
+    \arrow["{1 \otimes\eta}"{description}, from=5-8, to=7-8]
+    \arrow[from=2-4, to=3-4]
+    \arrow["{d^P \otimes 1}"', from=3-6, to=3-4]
+    \arrow[from=2-6, to=3-6]
+    \arrow[from=2-8, to=3-8]
+    \arrow["{d^P \otimes 1}"', from=3-8, to=3-6]
+    \arrow["{d^P \otimes 1}", from=4-8, to=4-6]
+    \arrow["{d^P \otimes 1}", from=5-8, to=5-6]
+    \arrow["{d^P \otimes 1}", from=5-6, to=5-4]
+    \arrow["{d^P \otimes 1}", from=4-6, to=4-4]
+    \arrow["{1\otimes d^Q}", from=3-4, to=4-4]
+    \arrow["{1\otimes d^Q}", from=4-4, to=5-4]
+    \arrow["{1\otimes d^Q}", from=3-6, to=4-6]
+    \arrow["{1\otimes d^Q}", from=4-6, to=5-6]
+    \arrow["{1\otimes d^Q}", from=3-8, to=4-8]
+    \arrow["{1\otimes d^Q}", from=4-8, to=5-8]
+    \arrow[draw={rgb,255:red,214;green,92;blue,92}, dotted, no head, from=6-1, to=6-9]
+    \arrow[draw={rgb,255:red,214;green,92;blue,92}, dotted, no head, from=1-3, to=8-3]
+    \arrow[from=5-10, to=5-8]
+    \arrow[from=4-10, to=4-8]
+    \arrow[from=3-10, to=3-8]
+\end{tikzcd}
+\end{document}
