@@ -3196,7 +3196,7 @@ Consider several cases:
   \bd^2 D( \varphi) = ae_1 + be_2 -ce_2 -de_1
   .\]
   Checking coefficients of $w$ contributes $-aw + bw - cw -d(-w)$, and these should sum to zero.
-  This yields $a+c = b+d$, and similarly if $w\int x \intersect y$, this also yields $a+c = b+d$.
+  This yields $a+c = b+d$, and similarly if $w\intersect x \intersect y$, this also yields $a+c = b+d$.
 
 
 2. $w\in x$ and $w\not \in y$ implies that $a+c = b +d +1$.
