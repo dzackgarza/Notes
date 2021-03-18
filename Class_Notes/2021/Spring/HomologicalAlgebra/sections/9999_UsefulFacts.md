@@ -8,7 +8,6 @@
   - Over $R$ a PID: free $\iff$ torsionfree
 :::
 
-
 :::{.remark}
 Notational conventions:
 
@@ -257,6 +256,12 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 
 ## Adjunctions
 
+
+:::{.definition title="Adjoints"}
+
+:::
+
+
 :::{.proposition title="Tensor-Hom Adjunction"}
 For a fixed $M\in \bimod{R}{S}$, there is an adjunction
 \[
@@ -267,7 +272,6 @@ so for $Y \in \bimod{A}{R}$ and $Z \in \bimod{B}{S}$, there is a (natural) isomo
 \Hom_S(X \tensor_R M, Z) \mapsvia{\sim} \Hom_R( X, \Hom_S(M, Z) )
 .\]
 :::
-
 
 :::{.proposition title="Forgetful Adjunctions"}
 Let \( F: \mods{R} \to \mods{\ZZ} \) be the forgetful functor, then there are adjunctions
