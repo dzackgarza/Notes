@@ -39,12 +39,14 @@ Notational conventions:
 - $\Hom_R(A, \wait)$ is:
   - Covariant
   - Left-exact
-  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(A, \wait)(B)$ computed using *injective* resolutions.
+  - Is a functor that sends $f:X\to Y$ to $f_*: \Hom(A, X) \to \Hom(A, Y)$ given by $f_*(h) = f\circ h$.
+  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(A, \wait)(B)$ computed using *injective* resolutions. 
 
 
 - $\Hom_R(\wait, B)$ is:
   - Contravariant
   - Right-exact
+  - Is a functor that sends $f:X\to Y$ to $f^*: \Hom(Y, B) \to \Hom(X, B)$ given by $f^*(h) = h\circ f$.
   - Has left-derived functors $\Ext^i_R(A, B) \da L_i \Hom_R(\wait, B)(A)$ computed using *projective* resolutions.
 
 - For $N \in \bimod{R}{S'}$ and $M\in \bimod{R}{S}$, $\Hom_R(M, N) \in \bimod{S}{S'}$.
@@ -258,7 +260,7 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 
 
 :::{.definition title="Adjoints"}
-
+\todo[inline]{todo}
 :::
 
 
