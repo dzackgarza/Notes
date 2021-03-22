@@ -205,11 +205,12 @@
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
-\newcommand{\spinc}[0]{\mathrm{spin}^{\mathrm{c} }}
+\newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
 \newcommand{\cok}[0]{\operatorname{coker}}
+\newcommand{\PD}[0]{\mathrm{PD}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
@@ -256,6 +257,7 @@
 \newcommand{\mfp}[0]{{\mathfrak{p}}}
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
+\newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieb}[0]{{\mathfrak{b}}}
 \newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
@@ -384,7 +386,7 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
+\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -480,6 +482,7 @@
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
+\newcommand\std[0]{\text{std}}
 \newcommand\Mero[0]{\operatorname{Mero}}
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\even[0]{\text{even}}
@@ -511,6 +514,7 @@
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
+\newcommand{\Triv}[0]{\operatorname{Triv}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
@@ -4292,11 +4296,9 @@ which shows that the term in the left-hand side of the inner product above is th
 
 # Wednesday, March 10
 
-
 :::{.warnings}
 Missing some stuff from the first few minutes here!
 :::
-
 
 :::{.remark}
 Can we always get a Hermitian metric?
@@ -4314,7 +4316,6 @@ This can be extended to all of $X$ using a partition of unity subordinate to the
 The thing to check here is that on $\CC^r$, for any collection $h_1, \cdots, h_n$, any positive linear combination \( \sum a_i h_i \) is again a Hermitian metric for any \( a_i \in \RR^+ \).
 One can regard these as skew-symmetric matrices, which are closed under addition, and the positive-definite property ensures it's still a metric since $h(v, v) = \sum a_i h_i(v, v) > 0$ for $v\neq 0$.
 :::
-
 
 :::{.remark}
 Recall that we start with a Riemannian manifold $(X, g)$ where $g: TX^{\otimes 2} \to \OO$ is a metric on the tangent bundle.
@@ -4348,7 +4349,6 @@ d^\dagger: \Omega^p(X) \to \Omega^{p-1}(X)
 .\]
 :::
 
-
 :::{.definition title="Laplacian"}
 The **Laplacian** is the differential operator
 \[
@@ -4356,23 +4356,19 @@ The **Laplacian** is the differential operator
 .\]
 :::
 
-
 :::{.definition title="Harmonic Forms"}
 A $p\dash$form \( \omega \) is **harmonic** if and only if \( \Delta \omega = 0 \).
 We define \( \mathcal{H}^p(X)  \) as the space of harmonic $p\dash$forms.
 :::
-
 
 :::{.remark}
 This operator is $\RR\dash$linear, so \( \mathcal{H}^p(X) \in \Vect_\RR  \).
 Note that this whole construction can be made to work over $\CC$ by adding conjugates in appropriate places.
 :::
 
-
 :::{.proposition title="?"}
 A smooth $p\dash$form \( \omega \) is harmonic if and only if \( d \omega = d^\dagger \omega = 0 \).
 :::
-
 
 :::{.proof title="?"}
 $\impliedby$:
@@ -4399,13 +4395,10 @@ So we can conclude that $d^\dagger \omega = d \omega = 0$.
 
 :::
 
-
 :::{.warnings}
 Note that we've used that the inner product is symmetric over $\RR$.
 Over $\CC$, there are bars introduced from conjugation when swapping the variables.
 :::
-
-
 
 :::{.proposition title="?"}
 The following three subspaces of \( \Omega^p(X) \) are mutually orthogonal:
@@ -4413,7 +4406,6 @@ The following three subspaces of \( \Omega^p(X) \) are mutually orthogonal:
 d \Omega^{p-1}(X), \mathcal{H}^p(X), d^\dagger \Omega^{p+1}(X) 
 .\]
 :::
-
 
 :::{.proof title="?"}
 We can write
@@ -4430,7 +4422,6 @@ If \( \alpha\in \mathcal{H}^p(X)  \) then by the above proposition, \( d \alpha 
 .\]
 Thus the 2nd space is orthogonal to the 1st and 3rd.
 :::
-
 
 :::{.observation}
 Suppose something false ($\danger$): that \( \Omega^p(X) \) is a *complete* vector space with respect to the inner product.
@@ -4461,7 +4452,6 @@ However, this doesn't yield the full direct sum decomposition: if $W \subseteq V
 
 :::
 
-
 :::{.fact}
 For smooth $p\dash$forms, this decomposition **does** hold despite the false assumption:
 \[
@@ -4489,7 +4479,6 @@ Note that there is a map
 since \( \alpha\in \mathcal{H}^p(X)  \) satisfies \( d \alpha = 0 \) in addition to \( d^\dagger \alpha = 0 \).
 :::
 
-
 :::{.remark}
 Note that one can complete these spaces using Sobolev spaces, but there are issues. 
 Take $S^1$, then 
@@ -4509,5 +4498,528 @@ but for $f\in L_2(S^1)$ we have \( df = \sum 2\pi i n a_n e^{2\pi i n z} \) whic
 
 
 
+
+
+
+# Review (Monday, March 15)
+
+:::{.remark}
+Recall that a *sheaf of rings* \( \sheaf{F} \) on $X\in \Top$ is an assignment of a ring $\sheaf{F}(U)$ to each open set $U\subseteq X$ and restriction maps $\sheaf{F}(U) \mapsvia{\rho_{UV}} \sheaf{F}(V)$ for \( V \subseteq U \) that is a presheaf, so
+
+1. This diagram commutes:
+
+\begin{tikzcd}
+	U && V && W
+	\arrow["{\rho_{UV}}", from=1-1, to=1-3]
+	\arrow["{\rho_{VW}}", from=1-3, to=1-5]
+	\arrow["{\rho_{UW}}"', curve={height=30pt}, from=1-1, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJVIl0sWzIsMCwiViJdLFs0LDAsIlciXSxbMCwxLCJcXHJob197VVZ9Il0sWzEsMiwiXFxyaG9fe1ZXfSJdLFswLDIsIlxccmhvX3tVV30iLDIseyJjdXJ2ZSI6NX1dXQ==)
+
+2. $\pho_{UU} = \one_{\sheaf{F}(U)}$ and \( \sheaf{F}(\emptyset) = 0 \).
+
+That additionally satisfies unique gluing on double overlaps.
+:::
+
+:::{.example title="?"}
+Any reasonable class of functions whose behavior is only locally restricted.
+Examples are being smooth or continuous, but e.g. being constant is a global condition.
+Other examples include
+$X\in \Mfd^n({C^\infty(\wait, \RR))$, denoting $\OO$ the sheaf of smooth functions.
+This also carries a sheaf of *abelian groups* \( \Omega^p \).
+In the special case where $U$ is a coordinate chart, we have functions \( \varphi_U: U\to \RR^n \).
+Writing \( S \da \varphi_U(U) \), we can define \( \Omega^p(U) \cong \Omega^p(S) \da \ts{ \sum f_I(\vector x) dx_I \st f_I \in C^\infty(\RR^n, \RR)} \).
+:::
+
+:::{.remark}
+More generally, for an arbitrary open $U$, cover it by coordinate charts \( \ts{ U_i } \covers U \).
+Then we want \( \omega_i \in \Omega^p(U_i) \) which are compatible on double overlaps, so such a collection defines a section \( \ts{ \omega_i \st i\in I } \in \Gamma( \Omega^p(U) ) \).
+The compatibility is given by taking coordinate charts \( \varphi_i: U_i \to \RR^n \)  with \( \omega_i \in \Omega^p(U_i) \), we consider
+\[
+t_{ij}: \varphi_i \circ \varphi_2 ^{-1} : \varphi_j(U_i \intersect U_j) \to \varphi_i( U_i \intersect U_j)
+,\]
+and we require that the pullback satisfies $t_{ij}^*(\omega_1) = \omega_2$
+This pullback can be thought of as a coordinate change for the forms.
+Writing \( x_I \) as coordinates on $U_i$ and \( y_J \) on $U_j$, we can write 
+\[
+x_1 &= h_1(y_J) \\
+x_2 &= h_2(y_J) \\
+\vdots& \\
+x_n &= h_n(y_J) \\
+\]
+which expresses $t_{ij}$ in coordinates.
+This allows us to give meaning to the formal symbols $dx_I$:
+\[
+dx_1 &\da \sum_{i=1}^n \dd{h_1}{y_i} dy_i \\
+dx_2 &\da \sum_{i=1}^n \dd{h_2}{y_i} dy_i \\
+\vdots& \\
+dx_k &\da \sum_{i=1}^n \dd{h_k}{y_i} dy_i \\
+,\]
+and under these substitutions in the original expression we obtain \( \omega_1 = \sum_{\abs I = p} f_I(\vector x) dx_I \mapsto \omega_2 \).
+
+:::
+
+:::{.remark}
+For \( X \in \Mfd(\Hol(\wait, \CC)) \) such that \( \varphi_V \circ \varphi_U ^{-1} : \varphi_U( U \intersect V) \to \varphi_V(U \intersect V)\) is holomorphic, so $\delbar z_i = 0$.
+Then \( \Omega^p(U) = \ts{ \sum_{\abs I = p} f_I( \vector z) dz_I }  \), and the *key difference* is that the $f_I$ be holomorphic.
+This matters since POUs exist in the smooth setting but not the complex setting.
+Note that $\OO, \Omega^p$ denote smooth/holomorphic functions and smooth/holomorphic $p\dash$forms in the smooth/complex settings.
+So we need a new notation for *smooth holomorphic* $p\dash$forms in the complex setting.
+We defined $A^{p, 0}$ to be the smooth $p\dash$forms, and $A^{p, q}$ the smooth $(p, q)\dash$forms.
+In local coordinates, these look like
+\[
+A^{p, q}(U) = \ts{ \sum_{\abs I = p, \abs J = q} f_{I, J} (\vector z) dz_I \wedge d\bar{z}_J } 
+.\]
+:::
+
+:::{.example title="?"}
+\envlist
+
+- \( \Re(z) \dz \in A^{1, 0)(\CC)\) is a smooth $(1, 0)\dash$form.
+- \( z\dw - w\dz \in \Omega^1(\CC^2) \) is a holomorphic 1-form.
+- On $\CC^3$, \( z_1 dz_2 \wedge d\bar{z}_3 - \Re(z_3) dz_1 d\bar{z}_1 \in A^{1, 1}(\CC^3) \).
+:::
+
+:::{.remark}
+Why are these $A^{p, q}$ useful?
+They give a resolution of \( \Omega^p \) on a complex manifold.
+There are maps of sheaves
+\[
+0 \to \Omega^p \mapsvia{i} A^{p, 0}
+,\]
+where being a map of sheaves means there are maps \( \Omega^p(U) \to A^{p, 0}(U) \) for all opens $U$ which are compatible with restriction:
+
+\begin{tikzcd}
+	{\Omega^p(U)} && {A^{p, 0}(U)} \\
+	\\
+	{\Omega^p(V)} && {A^{p, 0}(U)}
+	\arrow["{i_U}", from=1-1, to=1-3]
+	\arrow["{i_V}", from=3-1, to=3-3]
+	\arrow["{\rho_{UV}^*}"{description}, no head, from=1-1, to=3-1]
+	\arrow["{\rho_{UV}^*}", no head, from=1-3, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXE9tZWdhXnAoVSkiXSxbMCwyLCJcXE9tZWdhXnAoVikiXSxbMiwwLCJBXntwLCAwfShVKSJdLFsyLDIsIkFee3AsIDB9KFUpIl0sWzAsMiwiaV9VIl0sWzEsMywiaV9WIl0sWzAsMSwiXFxyaG9fe1VWfV4qIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDMsIlxccmhvX3tVVn1eKiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+It's clear that this works for $i$, since any holomorphic function simply *is* smooth.
+We could continue this resolution:
+
+
+\[
+0 \to \Omega^p \mapsvia{i} A^{p, 0} \mapsvia{\delbar} A^{p, 1}
+\]
+where
+\[
+\delbar \qty{ \sum_{I, J} f_{I, J} dz_I \wedge d\bar{z}_J } 
+\da 
+\sum_{I, J, K} \dd{f_{I, J}}{z_k} d \bar{z}_k \wedge dz_I \wedge d\bar{z}_J
+.\]
+We then defined Dolbeaut cohomology, $H^q(X, \Omega^p) = \ker \delbar_{p, q} / \im \delbar_{p, q-1}$.
+
+
+:::
+
+
+# Wednesday, March 17
+
+## Inverting Bundles
+
+:::{.remark}
+Continuing review: let \( \bundle{E} \to X \in \Bun(\RR^n) \).
+A **metric** on \( \bundle{E} \) is a smoothly varying positive definite inner product on the fibers.
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-17_13-55.pdf_tex} };
+\end{tikzpicture}
+
+For $v, w\in \bundle{E}_p$, we want a pairing \( g_p(v, w): \bundle{E}_p^{\tensor 2} \to \RR \).
+To think about this globally, this should be a map
+\[
+g: \bundle{E}^{\tensor 2} \to \OO
+.\]
+where \( g_p: \bundle{E}_p^{\tensor 2} \to \RR \).
+Note that this map is \( \OO\dash \)linear, which follows from the fact that it's $\RR\dash$linear on each fiber, or equivalently it is a map of vector bundles.
+We should also have that $g(s\tensor s) \in \OO(X)$ is a smooth function, and we require $g(s\tensor s) \geq 0$.
+We also require $g(s\tensor s)(p) = 0 \iff s_o = 0$ and $g(s\tensor t) = g(t\tensor s)$.
+This makes $g\in (\bundle{E}^{\tensor 2})\dual \tensor \OO = (\bundle{E}\dual)^{\tensor 2}(X)$.
+The symmetric condition means that $g\in \Sym^2 \bundle{E}\dual(X)$.
+:::
+
+:::{.remark}
+For Hermitian forms, we take
+\[
+h: (\CC^n)^{\tensor 2}\to \CC
+\]
+where $h$ is conjugate linear, so $h(cv, c'w) = \bar{c}c' h(v, w)$.
+Note that we can write $h(v, w) = \conjugate{v}^t H w$ where $H$ is Hermitian, so $\conjugate{H}^t = H$.
+This implies that $h(v,v) \in \RR^{\geq 0}$ and $h(v,v) = 0 \iff v=0$ with $h(v, w) = \conjugate{h(v, w)}$
+The great thing about metrics: we can identify zero sections by self-pairing, multiplying by a volume form, and integrating.
+For \( \bundle{E}\to X \in \Bun(\CC) \), there is another bundle \( \conjugate{\bundle{E}} \to X \in \Bun(\CC) \).
+Supposing that 
+\( \ro{ \bundle{E}}{U} \mapsvia{\varphi_U} \OO_U^{\oplus n} \) 
+in a local trivialization, conjugating all of the transition functions gives the transition functions
+\( \ro{ \conjugate{ \bundle{E}} }{U} \mapsvia{\mathrm{conj} \circ \varphi_U} \OO_U^{\oplus n} \).
+This yields a map
+\[
+h: \conjugate{ \bundle{E} } \tensor_\CC \bundle{E} \to \OO \in ( \conjugate{\bundle{E}} \tensor \bundle{E} )\dual
+.\]
+In local trivializations we have \( \ro{ \bundle{E} }{U} = \OO_U^{\oplus n} = \CC^n \cross U \), and $h$ is described by $h_U \in (\conj{ \OO}^{\oplus n} \tensor \OO^{\oplus n})(U)$.
+:::
+
+:::{.remark}
+When \( \rank \bundle{E} = 1 \) we abuse notation! 
+For \( h\in (\conj{\bundle{E}}\dual \tensor \bundle{E}\dual)(X) \), this is locally a $1\times 1$ Hermitian matrix, thus of the form \( [a] \) for \( a\in \RR^{\geq 0} \).
+So we write $h(s, t) = hs\conj{t} \da h\tensor s \tensor \conj{t} \in (\conj{\bundle{E}}\dual \tensor \bundle{E}\dual) \tensor \bundle{E} \tensor \conj{\bundle{E}} = \OO$ if \( \bundle{E} \) is a line bundle.
+Why is \( V\tensor V\dual = \OO \) in this case? 
+There is a pairing \( v\tensor \lambda \mapsto \lambda(v) \), or more generally a trace pairing.
+:::
+
+## Serre Duality Revisited
+
+:::{.remark}
+Let $X$ be a Riemann surface, so $X\in \Mfd^1(\CC)$.
+Let \( L\to X \in \Bun^1(\Holo)\), then we have a resolution
+\[
+0 \to L \injects L\tensor A^{0, 0} \mapsvia{\delbar} L \tensor A^{0, 1} \to 0
+,\]
+where the first map is inclusion of smooth holomorphic sections into smooth sections.
+What is this cut out by?
+We had $s\mapsto \delbar s$ and thus $f \mapsto \dd{f}{\zbar} \dzbar$.
+Note that $H_1(L) = \coker \delbar$.
+:::
+
+:::{.remark}
+Serre duality said that 
+\[
+h^1(L) = \dim H^1(L) = h^0( L\dual \tensor K) && K = \Omega^1
+,\]
+where $\Omega^1$ is the sheaf of holomorphic 1-forms.
+Choose a metric to identify $H^1(L)$ and $H^0(L\dual \tensor K)$.
+Choose a hermitian metric on $L$ and take $s, t\in H^0(L\tensor A^{0, 0}) = C^\infty(L; \CC)$, then we get $h(s, t) \in C^{\infty }(X; \CC)$ a smooth complex function.
+We abuse notation by writing this as $h(s, t) = hs\conj{t}$, viewing $h\in C^{\infty }(L\dual \tensor \conj{L}\dual)$ locally.
+Note that we can't integrate a function on a manifold without a form, so choosing a volume for $dV$ we can define a pairing on sections
+\[
+\inner{s}{t} \da \int_X hs\conj{t} dV
+.\]
+
+Now for two sections \( \alpha, \beta\in H^0(L\tensor A^{0, 1}) \) we can write
+\[
+\int_X h \alpha \conj{ \beta} = \int_X \omega
+,\]
+where \( \omega \) is a smooth $(1, 1)\dash$form since $h\in \conj{L}\dual \tensor L\dual$, \( \alpha\in L\tensor A^{0, 1} \), and $\conj{ \beta} \in \bar{L} \tensor A^{1, 0}$.
+We now have metric on both the source and target spaces here:
+\[
+H^0( L\tensor A^{0, 0}) \mapsvia{\delbar} H^0(L\tensor A^{0, 1})
+,\]
+where on the left-hand side we take \( (s, t) \mapsto \int_X hs\conj{t}dV \) and on the right-hand side we have \( (\alpha, \beta) \mapsto \int_X h \alpha\conj{\beta} \).
+:::
+
+:::{.remark}
+Given a map of metric vector spaces \( V \mapsvia{\varphi} W \), the *adjoint* \( \varphi^\dagger \) satisfies
+\[
+\inner{ \varphi(v) }{w} = \inner{v}{ \varphi^\dagger(w)}
+.\]
+and $\coker( \varphi) = \ker( \varphi^\dagger)$.
+So $H^1(L) = \coker \delbar = \ker \delbar^\dagger$, and after integrating by parts we have
+\[
+\inner{ \alpha}{ \delbar s} 
+&\da \int_X \alpha\conj{ \delbar s } h \\
+&= \int_X \alpha\del(\conj{s}) h \\
+&= -\int_X \conj{s} \del( \alpha h) && \text{IBP} \\
+&= -\int_X \conj{s} {\del(\alpha h) \over dV} dV \\
+&= \inner{ - { \del( \alpha h ) \over dV}}{s}
+.\]
+So we could define
+\[
+\delbar^\dagger \alpha = \conj{- {\delbar(\conj{\alpha} h )} \over dV }
+.\]
+Note that \( \alpha\mapsto \conj{ \alpha} h \), so \( \alpha\in \ker \delbar^\dagger \iff \conj{ \alpha}h\in \ker \delbar\) 
+Then $\ker (\delbar^\dagger) = H^0(L\dual \tensor K)$.
+:::
+
+
+
+# Friday, March 19
+
+:::{.remark}
+Recall Serre duality: let $C\in \Mfd_\CC^{\cpt,\oriented}$ and $L\to C \in \Bun(\Holo)$.
+Then
+\[
+h^1(L) = h^0(L\dual \tensor K_C)
+.\]
+We also have Riemann-Roch, a very important tool:
+\[
+h^0(L) - h^1(L) = \deg L + 1 - g(C)
+,\]
+where $\deg L = \int_C c_1(L)$, which is also equal to \( \deg [ \ts{ s = 0 }]  = \deg(\div s) \).
+Note that $c_1$ is the most important Chern class to know, thanks to the splitting principle.
+How was it defined?
+There are several definitions:
+
+1. $L$ defines an element of $H^1(C, \OO\units) = \ts{ t_{UV}: U \intersect V \to \CC\units \st t_{UV} t_{UW}\inv t_{VW} = 1 } / \bd \ts{ h_u: U\to \CC\units } = \ker \bd^1 / \im \bd^0$ in Čech cohomology.
+  By definition \( \bd \ts{ h_U \st U\in \mathcal{U} } = \ts{ h_u h_v\inv } U, V \in \mathcal{U} \), where $\bd^2 = 1$ since \( (h_U h_V)\inv \qty{h_U h_W \inv }\inv (h_V h_W \inv) = 1 \) on \( U \intersect V \intersect W \).
+  By assigning $L$ to its transition functions, we get a map $L\to H^1$.
+  We have the exponential exact sequence:
+  \[
+  0 \to \constantsheaf{\ZZ} \to \OO \mapsvia{\exp} \OO\units \to 1
+  ,\]
+  which induces a map
+  \[
+  H^1(C, \OO\units) &\to H^2(C, \ZZ) \\
+  L &\mapsto c_1(L)
+  .\]
+
+2. $L$ defines an element $\Fr L \in \Bun^\prin(\CC\units)$ (which only works for line bundles), which is defined by \( \Fr L = L \sm s_0 \)  where $s_0$ is the zero section of $L$.
+  By topology, we get a classifying map $C \mapsvia{\phi_L}  B\CC\units = \CP^\infty = (\CC^{\infty} \smz) / \CC\units$.
+  There is a universal $c_1\in H^2(\CP^{\infty}; \ZZ)$, so we take the pullback to define $c_1(L) \da \phi_L^*(c_1)$.
+  We can use that there is a cell decomposition \( \CP^{\infty } = \CC^0 \union \CC^1 \union \CC^2 \union \cdots \), and so there is a unique generator in its $H^2$.
+
+3. Consider a smooth section $s\in C^{\infty }(L)$, then we can define $c_1(L) \da [ \ts{ s = 0 } ]$ by taking the fundamental class, assuming that $s$ is transverse to the zero section $s_z$ of $L$.
+  Here we view the zero set as an oriented submanifold.
+  See picture: in this case $[\ts{ s = 0 } ] = [p] - [q] + [r]$.
+
+  \todo[inline]{Add picture.}
+:::
+
+:::{.remark}
+Applying Serre duality to the left-hand side in Riemann-Roch yields the dimension of the space of holomorphic sections of some *other* bundle, $L\dual \tensor K$.
+:::
+
+:::{.example title="The structure sheaf"}
+Applying Riemann-Roch to $L \da \OO$, we get
+\[
+\chi(\OO) = h^0(\OO) - h^1(\OO) = 0 + 1 - g
+,\]
+
+which is equal to $h^0(\OO) - h^0(K)$. 
+But the only holomorphic functions on $\CC$ are constant, so $h^0(\OO) = 1$.
+In particular, $h^0(K) = g$, so any Riemann surface of genus $g$ has a $g\dash$dimensional space of holomorphic 1-forms.
+:::
+
+:::{.example title="The Canonical Bundle"}
+Applying Riemann-Roch to $L\da K$, we get
+\[
+\chi(K) = h^0(K) - h^0(K\dual \tensor K) = \deg(K) + 1 - g
+.\]
+Since $K\dual \tensor K = \OO$, we obtain $g-1 = \deg(K) + 1 - g$, so $\deg(K) = 2g-2$.
+
+We also proved this using that $K$ was the dual of holomorphic vector fields, i.e. $\int_C c_1(K) = -\int_C c_1(T)$, which by Gauss-Bonnet equals $-\chi_\Top(C) = -(2-2g) = 2g-2$.
+:::
+
+:::{.example title="Genus 2 Riemann Surfaces"}
+Taking $C$ of genus 2, we have $h^0(K_C) = g= 2$, so $\deg K_C = 2(2) - 2 = 2$.
+Thus there exist linearly independent sections $s, t \in H^0(K_C)$, i.e. two linearly independent holomorphic 1-forms.
+We can take the ratio $s/t$, which defines a map
+\[
+{s\over t}: C\to \PP^1
+.\]
+Locally we have $s = f(z) \dz$ for $z$ a local holomorphic coordinate on $C$ and $f\in \Holo(C, \CC)$, and similarly $t = g(z) \dz$.
+So $s/t = f(z) / g(z)$ is meromorphic in this chart.
+Choosing a new coordinate chart $w$, this yields a transition function $z(w)$ -- not of $L$, but from the atlas on $C$.
+We can write $s =f(z(w)) \, d(z(w)) = f(z(w)) z'(w) \, dw$ by the chain rule.
+Thus 
+\[
+{s\over t}(z) = {f(z(w)) z'(w) \dw \over g(z(w)) z'(w) \dw} = {s \over t}(w)
+.\]
+So although $s/t$ was only defined in a coordinate chart, it winds up being independent of coordinates.
+This works in general for any holomorphic line bundle: for $s, t\in H^0(L)$, there is a map \( {s\over t}: C\to \PP^1 \) since writing $s_V = \varphi_{UV} s_U, t_V = \varphi_{UV} t_U$ where \( \varphi_{UV} \) is the transition function for $L$.
+
+:::{.fact}
+Important fact: we can take these ratios to get maps to $\PP^1$.
+:::
+
+:::{.slogan}
+The canonical bundle is the line bundle whose transition functions are the Jacobians of the change of variables for the atlas.
+:::
+
+:::{.question}
+What is the degree of this map generically?
+I.e. given \( [x_0: x_1] \in \PP^1 \) fixed, what is the size of the inverse image \( \qty{s\over t}\inv \qty{ [x_0: x_1] } \)?
+:::
+
+:::{.answer}
+Writing $s/t = x_1/x_0$, we have $x_0 s - x_1 t=0$.
+This is in $H^0(K_C)$, and we computed \( \deg K_C = 2 \), meaning there are two zeros of this function.
+Thus is $g(C) = 2$, there is a generically 2-to-1 map \( C \to \PP^1 \), a degree 2 meromorphic function.
+Note that this section could have a double zero.
+:::
+
+:::
+
+
+:::{.example title="?"}
+Consider the curve $y^2 = (z-1)(z-2)\cdots (z-5)$, where we think of $z, y\in \PP^1$.
+This has roots $z=1,\cdots, 5$, and is equal to $\infty$ if $z=\infty$.
+These are the only points of $\PP^1$ with just one square root, all other points have two square roots.
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-19_14-37.pdf_tex} };
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-19_14-40.pdf_tex} };
+\end{tikzpicture}
+
+
+:::
+
+
+
+
+# Monday, March 22
+
+:::{.remark}
+Last time: we reviewed Riemann-Roch, Serre duality, sheaves of $p\dash$forms.
+Recall a theorem from a few weeks ago:
+:::
+
+:::{.theorem title="The Hodge Theorem"}
+If $(X,g)$ is a compact oriented Riemannian manifold, then there is a decomposition of the smooth $p\dash$forms on $X$:
+\[
+\Omega^p(X) = d \Omega^{p-1}(X) \oplus \mch^p(X) + d^\dagger \Omega^{p+1}(X)
+.\]
+:::
+
+:::{.remark}
+Note that \( \mathcal{H}  \)  was the space of harmonic $p\dash$forms, and \( d^\dagger: \da (-1)^? \hodgestar d\hodgestar \) where
+\[
+\hodgestar: \Omega^{p}(X) &\to \Omega^{n-p}(X) \\
+e_{i_1} \wedge \cdots \wedge e_{i_p} \mapsto \pm e_{j_1} \wedge \cdots e_{j_{n-p}}
+\]
+where \( \ts{ e_i}  \) is an orthonormal basis of basis of \( T\dual X \).
+Note that this formula is replacing the $e_i$ that do appear with the $e_i$ that don't appear, up to a sign.
+
+The harmonic forms were defined as \( \mch^p(X) = \ker (dd^\dagger + d^\dagger d ) = \ker (d) \intersect \ker(d^\dagger) \).
+We proved that assuming this decomposition, there is an isomorphism
+\[
+\mch^p(X) \cong H^p_{\dR}(X; \RR)
+.\]
+:::
+
+:::{.example title="The circle $S^1$"}
+There's a standard flat metric $g_\std$ on $S^1$ where $g_\std = \dx^2$ with $x$ the coordinate on $\RR$ which is the universal cover of $S^1$.
+We can write \( \Omega^1(S^1) = \ts{ f(x)\dx \st f \in C^{\infty }(S^1, \RR) } \), since every 1-form \( \omega \) looks like this.
+Then \( d \omega = 0 \) since this is a 2-form on $S^1$.
+On the other hand, what is $d^\dagger$?
+$\hodgestar \omega$ is a 0-form, so a function.
+The volume form is given by $\sqrt{ \det g_\std} = \sqrt{ [\dx ^2 ] }$, and you can wedge $1\wedge dx = dx$, so $\hodgestar \omega = f(x)$.
+Then $d \hodgestar \omega = f'(x) \dx$ and \( d^\dagger x \omega = f'(x) \).
+If this is zero, $f'(x) = 0$ and $f$ is a constant function.
+So in this metric, \( \mch^1(S^1) = \RR \gens{ \dx }  \cong H^1(S^1; \RR) \).
+:::
+
+:::{.remark title="Important"}
+The harmonic forms \( \mch^p(X) \) depend on the metric $g$, despite mapping isomorphically to de Rham cohomology.
+:::
+
+:::{.remark}
+This was just in the case of a real smooth Riemannian manifold.
+What extra structure to we have for \( X \in \Mfd(\Hol(\wait, \CC) ) \)?
+:::
+
+:::{.definition title="Kahler Forms (Important!)"}
+Let \( X\in \Mfd( \Hol(\wait, \CC) ) \) be a complex manifold.
+A **Kahler form** \( \omega\in \Omega^2(X_\RR) \) is a closed real (possibly needed: $J\dash$invariant) 2-form on the underlying real manifold of $X$ for which \( \omega(v, Jw) \da g(v, w) \) is a metric on $TX_\RR$ where $J$ is an almost complex structure.
+The associated **hermitian metric** is $h\da g + i \omega$, which defines a hermitian form on $TX \in \Vect_\CC$.
+:::
+
+:::{.example title="?"}
+Take $X \da \CC^n$ and $J(v) \da i\cdot v$.
+Note that $X_\RR = \RR^{2n}$, so write its coordinates as $x_k, y_k$ for $k = 1, \cdots, n$ where $z_k = x_k + iy_k$ are the complex coordinates.
+Consider $g = g_\std$ on $\RR^{2n}$ -- does this come from a closed 2-form \( g_\std = \sum (\dx_k)^2 + (dy_k)^2 \)? 
+Using \( \omega(v, Jw) = g(v, w) \), we have \( \omega(v, J^2 w) = g(v, Jw) \).
+The left-hand side is equal to \( - \omega(v, w) \) and the right-hand side is \( \omega(v, w) = -g(v, Jw) \).
+What 2-form does this give?
+We have 
+\[
+\omega\qty{ \dd{}{x_k}, \dd{}{x_\ell} } 
+&= -g \qty{ \dd{}{x_k}, \dd{}{y_\ell} } = 0 \\
+\omega\qty{ \dd{}{y_k}, \dd{}{x_\ell} } 
+&= -g \qty{ \dd{}{y_k}, \dd{}{y_\ell} } = 0 \\
+\omega\qty{ \dd{}{x_k}, \dd{}{y_\ell} } 
+&= -g \qty{ \dd{}{x_k}, \dd{}{y_\ell} } = 0 && \forall k\neq \ell \\
+\omega\qty{ \dd{}{x_k}, \dd{}{y_k} } 
+&= -g \qty{ \dd{}{x_k}, \dd{}{y_k} } \\
+&= (-1)^2 g \qty{ \dd{}{x_k} , \dd{}{x_k} } \\
+&= 1 \\
+\omega\qty{ \dd{}{y_k}, \dd{}{x_k} } 
+&= -1
+.\]
+So we can write this in block form using blocks
+\[
+M = 
+\begin{bmatrix}
+0 & 1 
+\\
+-1 & 0
+\end{bmatrix} &&
+\omega =
+
+\begin{bmatrix}
+M &  & 
+\\
+ & M & 
+\\
+ &  & M
+\end{bmatrix}
+,\]
+which is a closed ($d\omega = 0$) antisymmetric 2-form, i.e. a symplectic form, and 
+\[
+\omega_\std = dx_1 \wedge dy_1 + dx_2 \wedge dy_2 + \cdots + dx_n \wedge dy_n
+,\]
+:::
+
+:::{.remark}
+So the Kahler geometry is determined by the data \( (\CC^n, g_\std, J, \omega_\std ) \), i.e. a metric, an almost complex structure, and a symplectic form.
+Note that the relation \( \omega(x, y) = g(x, Jy) \) can be used to determine the 3rd piece of data from any 2.
+This is the fiberwise/local model, i.e. every tangent space at a point looks like this.
+:::
+
+:::{.warnings}
+But note that a form being closed is not a tensorial property! 
+So this local data (looking at a single fiber) is not quite enough to determine the global geometry.
+:::
+
+:::{.remark}
+Given $g$ and $J$, \( \omega \) is automatically a 2-form.
+That it's antisymmetric follows from 
+\[
+-\omega(w, v)
+&= -g(w, Jv) \\
+&= -g(Jv, w) \\
+&= -g(J^2 v, Jw)\\
+&= g(v, Jw)\\
+&= \omega(v, w)
+.\]
+
+Conversely, we can always define \( g(v, w) \da - \omega(v, Jw) \), but a priori this may not be a metric.
+This will be symmetric, but potentially not positive-definite.
+:::
+
+:::{.definition title="?"}
+An almost complex structure $J$ is **\( \omega\dash \)tame** if $g(v, w) = - \omega(v, Jw)$ is positive definite.
+:::
+
+:::{.remark}
+Next time: we'll see that if $X$ is Kahler, then 
+\[ 
+\mch^k(X) = \bigoplus_{p+q=k} \mch^{p, q}(X), 
+\] 
+so this is compatible with the Hodge decomposition.
+This is what people usually call the Hodge decomposition theorem, and gives some invariants of complex manifolds.
+By a miracle, this decomposition only depends on $g$ and the complex structure.
+:::
+
+
+:::{.remark}
+Note that there is a notion of *hyperkähler* manifolds, which have 3 complex structures $I, J, K$ such that $I^2=J^2=K^2 = IJK = -\one$, yielding 3 "parallel" 2-forms \( \omega_I, \omega_J, \omega_K \) such that the covariant derivative vanishes, i.e. \( \covariant_g \ts{ \omega_I, \omega_J, \omega_K } = 0 \).
+With respect to the complex structure $I$, \( \omega_J + \omega_K \) is a holomorphic 2-form.
+There is a sphere's worth of almost complex structures, and there is an action \( \SO(4, b_2 - 4) \acts H^*(X) \).
+There's no known example where the hyperkähler metric has been explicitly written down.
+:::
 
 
