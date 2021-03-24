@@ -3,7 +3,13 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\barz}{\bar{z} }
+\newcommand{\dzbar}{\,d\bar{z} }
+\newcommand{\zbar}{\bar{z} }
 \newcommand{\du}{\,du}
+\newcommand{\dw}{\,dw}
+\newcommand{\dV}{\,dV}
+\newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
@@ -92,8 +98,9 @@
 \newcommand{\HP}[0]{{\operatorname{HP}}}
 \newcommand{\TP}[0]{{\operatorname{TP}}}
 \newcommand{\HC}[0]{{\operatorname{HC}}}
-\newcommand{\HH}[0]{{\operatorname{HH}}}
-\newcommand{\THH}[0]{{\operatorname{THH}}}
+\newcommand{\HH}[0]{{\mathbb{H}}}
+\newcommand{\HoH}[0]{{\operatorname{HH}}}
+\newcommand{\THoH}[0]{{\operatorname{THH}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
@@ -194,7 +201,11 @@
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
 \newcommand{\height}[0]{\operatorname{ht}}
-\newcommand{\cpt}[0]{\operatorname{compact}}
+\newcommand{\cpt}[0]{{ \text{compact} } }
+\newcommand{\oriented}[0]{{ \text{oriented} } }
+\newcommand\compact[0]{\text{cpt}}
+\newcommand\Kahler[0]{\text{Kähler}}
+\newcommand\hyp[0]{\text{hyp}}
 \newcommand{\abs}[1]{{\left\lvert {#1} \right\rvert}}
 \newcommand{\stack}[1]{\mathclap{\substack{ #1 }}} 
 \newcommand{\qtext}[1]{{\quad \operatorname{#1} \quad}}
@@ -205,11 +216,12 @@
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
-\newcommand{\spinc}[0]{\mathrm{spin}^{\mathrm{c} }}
+\newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
 \newcommand{\cok}[0]{\operatorname{coker}}
+\newcommand{\PD}[0]{\mathrm{PD}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
@@ -256,6 +268,7 @@
 \newcommand{\mfp}[0]{{\mathfrak{p}}}
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
+\newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieb}[0]{{\mathfrak{b}}}
 \newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
@@ -331,6 +344,8 @@
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
 \newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\Fr}[0]{{\operatorname{Fr}}}
+\newcommand{\prin}[0]{{\operatorname{Prin}}}
 \newcommand{\Taut}[0]{{\operatorname{Taut}}}
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
@@ -384,7 +399,7 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
+\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -444,6 +459,8 @@
 \DeclareMathOperator{\res}{Res}
 \DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\Hol}{Hol}
+\DeclareMathOperator{\Bun}{Bun}
+\DeclareMathOperator{\BiHol}{BiHol}
 \DeclareMathOperator{\Br}{Br}
 \DeclareMathOperator{\coh}{coh}
 \DeclareMathOperator{\colspace}{colspace}
@@ -480,11 +497,13 @@
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
+\newcommand\std[0]{\text{std}}
 \newcommand\Mero[0]{\operatorname{Mero}}
-\newcommand\compact[0]{\text{cpt}}
 \newcommand\even[0]{\text{even}}
 \newcommand\odd[0]{\text{odd}}
 \newcommand\hodgestar[0]{\star}
+\newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
+\newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
@@ -511,6 +530,7 @@
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
+\newcommand{\Triv}[0]{\operatorname{Triv}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
@@ -518,6 +538,7 @@
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
 \newcommand{\equalsbecause}[1]{\overset{#1}{=}}
+\newcommand{\congbecause}[1]{\overset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
 
@@ -4049,7 +4070,7 @@ We'll prove this next time, note that $2\implies 1$ since coproducts are special
 
 # Monday, February 22
 
-## Colimits and Adjoint
+## Colimits and Adjoints
 
 :::{.proposition title="?"}
 Assume \( \cat{A} \) is abelian so we have cokernels for maps.
@@ -6007,6 +6028,754 @@ Now do induction on $r$.
 :::
 
 
+# Wednesday, March 17
+
+## 5.2: Spectral Sequences
+
+:::{.remark}
+Recall that we had 
+
+- \( \ts{ E_{p, q}^r  \st r\geq a, p,q\in \ZZ} \) for some $a$.
+- \( d_{p, q}^r: E_{p, q}^r \to E_{p-r, q+r-1} \) with $d^2=0$.
+- \( E_{p, q}^{r+1} \cong \ker d_{p, q}^r / \im d_{p+r,q-r+1}^r \).
+
+:::
+
+:::{.example title="First quadrant spectral sequences"}
+A **first quadrant** (homology) spectral sequence is one with $E_{p, q}^r = 0$ for $p, q<0$.
+Note that for a fixed $p, q$, there is an $r \gg 0$ such that the differential entering and leaving $E_{p, q}^r$ will be zero.
+The domain will be in quadrant 2 and the codomain in quadrant 4.
+In this case $E_{p, q}^r \cong E_{p, q}^{r+1}$ and we call this "stable" module $E_{p, q}^{\infty }$.
+Note that $r=r(p, q)$ can generally depend on $p, q$.
+:::
+
+:::{.definition title="Bounded"}
+We say a spectral sequence is **bounded** if there are only finitely many nonzero terms of total degree $n$.
+If so, there exists some uniform $r_0$ such that for $r\geq r_0$, we have $E^{r}_{p, q} \cong E_{p, q}^{r+1} \cong E_{p, q}^{\infty }$.
+
+\todo[inline]{See video for image.}
+
+:::
+
+:::{.remark}
+For the rest of this course, we'll restrict our attention to bounded spectral sequences.
+:::
+
+:::{.definition title="Convergence of a homology spectral sequences"}
+A bounded spectral sequences $E$ **converges** to $H_*$ if we are given
+
+1. A family of objects \( \ts{ H_n }_{n\in \ZZ} \) 
+
+2. For each $n$, a finite (here increasing) filtration
+\[
+0 = F_s H_n \subseteq \cdots \subseteq F_{p-1} H_n \subseteq F_p H_n \subseteq \cdots \subseteq F_t H_n = H_n
+\]
+where each $F_i H_n$ is a subobject of $H_n$
+
+3. Isomorphisms 
+\[
+E_{p, q}^{\infty } \cong { F_p H_{p +q} \over F_{p-1} H_{p+q}}
+,\] 
+or equivalently 
+\[
+E_{p, n-p}^{\infty } \cong { F_p H_n \over F_{p-1} H_n}
+,\] 
+which are the $t-s$ **successive quotients** (or **sections**) of the filtration, which depend on $n$.
+  We refer to $t-s$ as the **length** of the filtration
+
+In this case we write
+\[
+E_{p, q}^a \abuts H_{p+q}
+,\]
+thinking of $a\to \infty$.
+:::
+
+:::{.remark}
+We saw a case where the length of the filtration was 2, when we had $2$ columns.
+Recall that this only yields information up to extensions, since this only computes quotients.
+:::
+
+:::{.remark}
+We can form a similar definition for a cohomology spectral sequence.
+The conditions change slightly:
+
+(2') We have a *decreasing* filtration
+\[
+H^n = F^s H^n \supseteq \cdots \supseteq F^p H^n \supseteq F^{p+1} H^n \supseteq \cdots \supseteq F^t H^n = 0
+.\]
+In this case we have 
+\[
+E_{\infty }^{p, q} \cong {F^p H^{p+q} \over F^{p+1} H^{p+q} }
+.\]
+Then each $H_n$ will have a filtration of length $n+1$ by explicitly counting terms on the diagonal, so we obtain
+\[
+0 = F_{-1} H_n \subset F_0 H_n \subseteq \cdots \subseteq F_{n-1} H_n \subseteq F_n H_n = H_n
+.\]
+
+Then 
+\[
+E_{0, n} &\cong F_0 H_n \injects H_n\\
+E_{p, n-p} &\cong {F_p H_n \over F_{p-1} H_n} \\
+H_n \surjects E_{n, 0} &\cong {H_n \over F_{n-1} H_n} 
+.\]
+
+\todo[inline]{See video for remarks!}
+
+:::
+
+:::{.definition title="Edge maps"}
+Assume that $a\geq 1$.
+Provided $a\geq 1$, note that $E_{0, n}^r$ is a quotient of $E_{0, n}^a$ for all $r$, since the outgoing (?) differentials are all zero.
+Similarly, $E_{n, 0}^r$ is a subobject of $E_{n, 0}^a$ for all $r$.
+We thus have maps
+\[
+E_{0, n}^a \surjects E_{0, n}^{\infty } \injects H_n \\
+H_n \surjects E_{n, 0}^{\infty } \injects E_{n, 0}^a
+.\]
+These compositions are referred to as the **edge maps**.
+
+![Edges of a spectral sequence](figures/EdgeMaps.png)
+
+:::
+
+:::{.remark}
+For a first quadrant *cohomological* spectral sequence, the edge maps are 
+\[
+E_{a}^{n, 0} \surjects E_{\infty }^{n, 0} \injects H^n \\
+H^n \surjects E_{\infty }^{0, n} \injects E_{a}^{0, n}
+.\]
+:::
+
+:::{.definition title="Collapsing of a spectral sequence"}
+A spectral sequence $E$ **collapses** at $E^r$ if there is exactly one nonzero row (or column) in $E_{*, *}^r$.
+:::
+
+:::{.remark}
+This implies that $E_{p, q}^r = E_{p, q}^{\infty }$ at this point.
+In this case, we can read off the single nonzero section:
+
+![image_2021-03-17-09-55-34](figures/image_2021-03-17-09-55-34.png)
+
+Here we'll have 
+\[
+E^{\infty }_{p, q} \cong {F_p H_n \over F_{p-1} H_n} \cong {H_n \over 0}\cong H_n
+.\]
+:::
+
+:::{.remark}
+A more common definition of a spectral sequence **collapsing at $r$** is that for all $p, q$, the differentials $d_{p, q}^r = 0$.
+Note that this implies stabilization at $r$, but doesn't allow for such a simple statement about the diagonals since they may intersect multiple nonzero objects.
+:::
+
+:::{.remark}
+Some things we're skipping from the book, around the last part of 5.2:
+
+- Definitions pertaining to unbounded spectral sequences.
+- Weak convergence.
+- Filtrations that are infinite in on or both filtrations.
+- Filtrations that don't limit to a union equal to $H_n$ or intersection to 0.
+- Abutment, which is convergence when the filtration is not finite.
+
+We'll skip 5.3 on the Leray spectral sequence and jump to 5.4, constructing a spectral sequence.
+:::
+
+
+
+
+
+
+
+# Friday, March 19
+
+## Spectral Sequence of a Filtration
+
+:::{.definition title="?"}
+A **filtration** of a chain complex $C$ is an ordered family of subcomplexes
+\[
+F\da & \cdots \subseteq F_{p-1}C \subseteq F_p C \subseteq \cdots \subseteq C && p\in \ZZ
+\]
+such that there are commutative diagrams
+
+\begin{tikzcd}
+	{F_pC_n} && {C_n} \\
+	\\
+	{F_pC_{n-1}} && {C_{n-1}}
+	\arrow["d", from=1-1, to=3-1]
+	\arrow["d", from=1-3, to=3-3]
+	\arrow[hook, from=1-1, to=1-3]
+	\arrow[hook, from=3-1, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJGX3BDX24iXSxbMiwwLCJDX24iXSxbMCwyLCJGX3BDX3tuLTF9Il0sWzIsMiwiQ197bi0xfSJdLFswLDIsImQiXSxbMSwzLCJkIl0sWzAsMSwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==)
+
+A filtration is **exhaustive** if $\Union_{p\in \ZZ} F_p C_n = C_n$ for all $n$.
+:::
+
+:::{.remark}
+The construction of the spectral sequence will show that $C$ and $\Union_p F_p C$ give rise to the same spectral sequence. 
+So we will assume that all filtrations are exhaustive.
+:::
+
+:::{.theorem title="Construction of a Spectral Sequence"}
+A filtration $F$ of $C\in \Ch(\rmod)$ determines a spectral sequence starting with
+\[
+E_{p, q}^0 { F_p C_{p+q} \over F_{p-1} C_{p+q} } && E_{p ,q}^1 = H_{p+q}(E^0_{p, *})
+.\]
+
+Since $d$ preserves numerators and denominators, we get well-defined differentials $\bar{d}$ on the quotients:
+
+\begin{tikzcd}
+	&&&&& \textcolor{rgb,255:red,92;green,92;blue,214}{E_{p-1, q+1}^0} \\
+	&& {F_{p-1}C_{p+q+1}} & {} & {F_{p}C_{p+q+1}} && \textcolor{rgb,255:red,92;green,92;blue,214}{E_{p, q+1}^0} \\
+	&&&&&&& \ddots \\
+	\textcolor{rgb,255:red,92;green,92;blue,214}{F_{p-2}C_{p+q}} && \textcolor{rgb,255:red,92;green,92;blue,214}{F_{p-1}C_{p+q}} && {F_{p}C_{p+q}} && {E_{p, q}^0} \\
+	\\
+	&& {F_{p-1}C_{p+q-1}} && {F_{p}C_{p+q-1}} && {E_{p, q-1}^0}
+	\arrow[from=2-3, to=2-5]
+	\arrow[from=2-5, to=2-7]
+	\arrow[from=4-3, to=4-5]
+	\arrow[from=4-5, to=4-7]
+	\arrow[from=6-3, to=6-5]
+	\arrow[from=6-5, to=6-7]
+	\arrow["{\bar{d}}"', from=2-7, to=4-7]
+	\arrow["{\bar{d}}"', from=4-7, to=6-7]
+	\arrow["d"', from=2-5, to=4-5]
+	\arrow["d"', from=4-5, to=6-5]
+	\arrow["d"', from=2-3, to=4-3]
+	\arrow["d"', from=4-3, to=6-3]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=4-1, to=4-3]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=1-6, to=2-7]
+	\arrow[from=2-7, to=3-8]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTMsWzIsMSwiRl97cC0xfUNfe3ArcSsxfSJdLFszLDFdLFsyLDMsIkZfe3AtMX1DX3twK3F9IixbMjQwLDYwLDYwLDFdXSxbMiw1LCJGX3twLTF9Q197cCtxLTF9Il0sWzQsMSwiRl97cH1DX3twK3ErMX0iXSxbNCwzLCJGX3twfUNfe3ArcX0iXSxbNCw1LCJGX3twfUNfe3ArcS0xfSJdLFs2LDEsIkVfe3AsIHErMX1eMCIsWzI0MCw2MCw2MCwxXV0sWzYsMywiRV97cCwgcX1eMCJdLFs2LDUsIkVfe3AsIHEtMX1eMCJdLFswLDMsIkZfe3AtMn1DX3twK3F9IixbMjQwLDYwLDYwLDFdXSxbNSwwLCJFX3twLTEsIHErMX1eMCIsWzI0MCw2MCw2MCwxXV0sWzcsMiwiXFxkZG90cyJdLFswLDRdLFs0LDddLFsyLDVdLFs1LDhdLFszLDZdLFs2LDldLFs3LDgsIlxcYmFye2R9IiwyXSxbOCw5LCJcXGJhcntkfSIsMl0sWzQsNSwiZCIsMl0sWzUsNiwiZCIsMl0sWzAsMiwiZCIsMl0sWzIsMywiZCIsMl0sWzEwLDIsIiIsMix7ImNvbG91ciI6WzI0MCw2MCw2MF19XSxbMTEsNywiIiwyLHsiY29sb3VyIjpbMjQwLDYwLDYwXX1dLFs3LDEyXV0=)
+
+Taking vertical homology of the $E^0$ terms on the right yields $E_{p, q}^1$.
+Note that the blue terms contribute to the same diagonal $p+q=n$.
+:::
+
+:::{.definition title="Bounded Filtrations"}
+A filtration $F$ on a chain complex $C$ is **bounded** if for each $n$ there are $s<t\in \ZZ$ such that $F_s C_n = 0$ and $F_t C_n = C_n$.
+:::
+
+:::{.remark}
+Note that this implies that each diagonal of total degree $n$ has only finitely many nonzero terms, so the spectral sequence will again be bounded.
+We'll next show that this spectral sequence converges to $H_*(C)$.
+:::
+
+:::{.definition title="Canonically Bounded Filtrations"}
+A filtration $F$ is **canonically bounded** if and only if $F_{-1}C_n = 0$ and $F_n C_n = C_n$ for all $n$.
+In this case, 
+\[
+E_{p, q}^0 \da
+{F_p C_{p+q} \over F_{p-1} C_{p+q}} = 
+\begin{cases}
+0 & p < 0  
+\\
+0 & q < 0 \quad (p>n, p-1\geq n).
+\end{cases}
+\]
+
+So $E$ becomes a first quadrant spectral sequence.
+:::
+
+:::{.remark}
+Note that all elements on all pages are subquotients of $E^0$ elements, so they can only get smaller, and terms that become 0 on some page stay 0 for all remaining pages.
+:::
+
+## Construction of the Spectral Sequence of a Filtration
+
+:::{.remark}
+For ease of notation, we'll suppress the subscript $q$ since it can always be recovered as $q = n-p$.
+Define the canonical quotients
+\[
+\eta_p: F_p C \to F_p C / F_{p-1}C = E_p^0
+.\]
+
+Define
+\[
+A^r_p \da \ts{ c\in F_p C \st d(c) \in F_{p-r}(C) } 
+,\]
+which are elements of $F_p C$ which are cycles modulo $F_{p-r} C$, the **approximate cycles**.
+Note that any actual cycle is in all $A^r$.
+This differential takes things $r$ columns to the left, so we'll want to define a differential that associates the following terms
+
+\begin{tikzcd}
+	&&& {F_{p-1}C_{n+1}} & {} & {F_{p}C_{n+1}} \\
+	\\
+	&&& \textcolor{rgb,255:red,153;green,92;blue,214}{F_{p-1}C_{n}} && {F_{p}C_{n}} & c \\
+	\\
+	\textcolor{rgb,255:red,153;green,92;blue,214}{F_{p-r}C} & \cdots && {F_{p-1}C_{n-1}} && {F_{p}C_{n-1}} & dc
+	\arrow[hook, from=1-4, to=1-6]
+	\arrow[hook, from=3-4, to=3-6]
+	\arrow[hook, from=5-4, to=5-6]
+	\arrow["d"', from=1-6, to=3-6]
+	\arrow["d"', from=3-6, to=5-6]
+	\arrow["d"', from=1-4, to=3-4]
+	\arrow["d"', from=3-4, to=5-4]
+	\arrow[hook, from=5-1, to=5-2]
+	\arrow[maps to, from=3-7, to=5-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTEsWzMsMCwiRl97cC0xfUNfe24rMX0iXSxbNCwwXSxbMywyLCJGX3twLTF9Q197bn0iLFsyNzAsNjAsNjAsMV1dLFszLDQsIkZfe3AtMX1DX3tuLTF9Il0sWzUsMCwiRl97cH1DX3tuKzF9Il0sWzUsMiwiRl97cH1DX3tufSJdLFs1LDQsIkZfe3B9Q197bi0xfSJdLFswLDQsIkZfe3Atcn1DIixbMjcwLDYwLDYwLDFdXSxbMSw0LCJcXGNkb3RzIl0sWzYsMiwiYyJdLFs2LDQsImRjIl0sWzAsNCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiw1LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDYsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzQsNSwiZCIsMl0sWzUsNiwiZCIsMl0sWzAsMiwiZCIsMl0sWzIsMywiZCIsMl0sWzcsOCwiIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbOSwxMCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dXQ==)
+
+Similarly, define
+\[
+Z_p^r &\da \eta_p(A_p^r \subseteq E_p^0 \\
+B_p^r &\da \eta_p(d A_{p+r-1}^{r-1}) \subseteq \eta_p(F_p C) \subseteq E_p^0 
+.\]
+:::
+
+:::{.observation}
+Some key observations:
+
+1. $F_p C = A_p^0 = A_p^{-1} = A_p^{-2} = \cdots$
+
+2. $A_p^{r+1} \subseteq A_p^r$
+
+3. $A_p^r \intersect F_{p-1} C = A_{p-1}^{r-1}$.
+
+:::
+
+:::{.exercise title="?"}
+Work through these facts using the diagram above.
+:::
+
+:::{.remark}
+Some consequences:
+
+$(1) \implies Z_p^0 = E_p^0$ (taking $r=0$ in the quotient map $\eta_p$).
+
+$(2) \implies Z_p^{r+q} \subseteq Z_p^r$, since these are images of subgroups 
+
+$(3) \implies A_{p+r-1}^{r-1} \subseteq A_{p+r}^r$, replacing $p\mapsto p+r$ in the intersection formula.
+  Then applying $d$ yields $B_p^r \subseteq D_p^{r+1}$.
+
+$(1) \implies B_p^0 = \eta_p(d A_{p-1}^{-1}) \subseteq \eta_p(F_{p-1} C) = 0$, since this occurs in the denominator for $\eta_p$ and $d$ preserves filtration degree.
+
+So the $Z_p$ get smaller and the $B_p$ get bigger.
+What happens in the middle?
+:::
+
+:::{.proposition title="?"}
+$B_p^r \subseteq Z_p^s$ for all $r, s\geq 0$.
+:::
+
+:::{.proof title="?"}
+A sequence of implications:
+\[
+B_p^r \ni x = \eta_p(dc) \text{ for some }c 
+&\implies d(dc) = 0 \in F_{p-s}C \, \forall s \\
+&\implies dc \in A_p^s \\
+&\implies \eta_p(dc) \in Z_p^s
+.\]
+:::
+
+:::{.remark}
+Set $B_p^{\infty } \da \union_{r\geq 1} B_p^r \subseteq Z_p^{\infty } \da \Intersect_{s\geq 1} Z_p^s$, which follows from a set theory exercise.
+:::
+
+:::{.remark}
+Combining and summarizing these results: for every $p\geq 0$, we have a tower of groups:
+
+\begin{tikzcd}
+	{0 = B_p^0} & {B_p^1} & \cdots & {B_p^r} & \cdots & {B_p^\infty} & {Z_p^{\infty}} & \cdots & {Z_p^{r}} & \cdots & {Z_p^{1}} & {Z_p^{0} = E_p^0}
+	\arrow[hook, from=1-1, to=1-2]
+	\arrow[hook, from=1-2, to=1-3]
+	\arrow[hook, from=1-3, to=1-4]
+	\arrow[hook, from=1-4, to=1-5]
+	\arrow[hook, from=1-5, to=1-6]
+	\arrow[hook, from=1-6, to=1-7]
+	\arrow[hook, from=1-7, to=1-8]
+	\arrow[hook, from=1-8, to=1-9]
+	\arrow[hook, from=1-9, to=1-10]
+	\arrow[hook, from=1-10, to=1-11]
+	\arrow[hook, from=1-11, to=1-12]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzAsMCwiMCA9IEJfcF4wIl0sWzEsMCwiQl9wXjEiXSxbMywwLCJCX3BeciJdLFs1LDAsIkJfcF5cXGluZnR5Il0sWzIsMCwiXFxjZG90cyJdLFs0LDAsIlxcY2RvdHMiXSxbNiwwLCJaX3Bee1xcaW5mdHl9Il0sWzgsMCwiWl9wXntyfSJdLFsxMCwwLCJaX3BeezF9Il0sWzExLDAsIlpfcF57MH0gPSBFX3BeMCJdLFs3LDAsIlxcY2RvdHMiXSxbOSwwLCJcXGNkb3RzIl0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSw0LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFs0LDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsNSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNSwzLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDYsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzYsMTAsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzEwLDcsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzcsMTEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzExLDgsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzgsOSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=)
+
+:::
+
+:::{.remark}
+Note that using standard isomorphism theorems, we have
+\[
+Z_p^r \cong {A_p^r \over A_p^r \intersect F_{p-1}C C} \equalsbecause{(3)} {A_p^r \over A_{p-1}^{r-1}}
+.\]
+So set
+\[
+E_p^r \da Z_p^r/B_p^r \cong {A_p^r + F_{p-1} C \over d A_{p+r-1}^{r-1} + F_{p-1}C } \cong {A_p^r \over d A_{p+r-q}^{r-1} + A_{p-1}^{r-1}}
+,\]
+making $E_p^r$ a quotient of $A_p^r$.
+Using a similar calculation, one can show
+\[
+{Z_p^{r+1} \over B_p^r} 
+\cong 
+{ A_p^{r+1} + A_{p-1}^{r-1} \over dA_{p+r-1}^{r-1} + A_{p-1}^{r-1} }
+.\]
+:::
+
+:::{.remark}
+There will be an induced differential on this quotient, which will follow from checking that the different preserves the numerator and denominator.
+:::
+
+
+
+
+
+
+# Monday, March 22
+
+## 5.4: Spectral Sequence of a Filtration
+
+:::{.remark}
+We have an increasing filtration $F_p C \subseteq F_{p+1}C$, where we defined
+\[
+E_{p, q}^0 = { F_p C_{p+q} \over F_{p-1} C_{p+1} } &&
+E_{p,q}^1 = H_{p+q} E_{p, *}^0
+.\]
+
+1. We have a map
+  \[
+  \eta_p: F_p C \surjects {F_p C \over F_{p-1}C } = E_p^0
+  ,\]
+  where we've dropped the $q$ from notation.
+
+2. 
+  \[
+  A_{p, q}^r = \ts{ c \in C_p C \st dc \in F_{p-1} C } 
+  ,\]
+  the eventual cycles.
+  We defined $Z_p^r = \eta_p A_p^r$ and $B_p^r = \eta_p dA_{p+r-1}^{r-1}$, and wrote $A_p^r \intersect F_{p-1}C = A_{p-1}^{r-1}$.
+
+3. We had the chain of inclusions
+\[
+0 = B_p^r \subseteq \cdots \subseteq B_p^{\infty} \subset Z_p^{\infty } \subset \cdots \subseteq Z_p^1 = E_p^)
+.\]
+
+4. We also have $E_p^r = Z_p^r/B_p^r = A_p^r / dA_{p+r-1}^{r-1} + A_{p-1}^{r-1}$ 
+
+5. $Z_{p}^{r+1}/B_pr \cong {A_p^{r+1} +A_{p-1}^{r-1} \over dA_{p+r-1} ^{r-1} + A_{p-1}^{r-1}}$.
+
+6. $dA_p^r \intersect F_{p-r-1} C = dA_P^{r+1}$.
+
+\todo[inline]{See video for missed spoken details!}
+
+Obviously we have 
+\[
+d: A_p^r &\to A_{p-r}^{r} \\
+d: A_{p-1}^r &\to dA_{p-1}^{r-1} 
+,\]
+so $d$ induces a well-defined map $d_p^r: E_p^r \mapsvia{} E_{p-r}^r$, which of course squares to zero, which goes $r$ columns to the left and decreases the total degree $n$ by 1 since the original $d$ did on $C_n$.
+This is what we need to set up a spectral sequence, since we now have pages and differentials, and it just remains to show that $E^{r+1} \cong H_*(E^r, d^r)$.
+:::
+
+:::{.lemma title="?"}
+$d$ determines isomorphisms $Z_{p}^r/Z_p^{r+1} \mapsvia{\sim} B_{p-r}^{r+1} / B_{p-r}^r$.
+:::
+
+:::{.proof title="?"}
+Unwind definitions!
+Note that we have $B_{p-r}^{r+1} = \eta_{p-r} dA_p^r$, using that the lower index on $B$ and upper index on $A$ should sum to the lower index on $A$.
+This is equal to $dA_p^r / dA_p^r \intersect F_{p-r-1} C$, where the latter term is $\ker\eta_{p-r}$ and $B_{p-r}^r = \eta_{p-r} dA_{p-1}^{r-1}$.
+This yields
+\[
+{B^{r+1}_{p-r} \over B_{p-r}^r}  
+\cong 
+{ dA_{p}^r \over dA_{p-1}^{r-1} + (dA_p^r \intersect F_{p-r-1} C) }
+.\]
+Similarly, 
+\[
+{Z_p^r \over Z_p^{r+1}} \da { \eta_p A_p^r \over \eta_p A_p^{r+1} } \cong {A_p^r \over A_p^{r+1} + (A_p^r \intersect F_{p-1} C )}
+\congbecause{(3)} {A_p^r \over A_p^{r+1} + A_{p-1}^{r-1} }
+.\]
+Now applying the map induced by $d: A_p^r \to F_{p-r}C$ to this quotient, we have $\ker \ro{d}{A_p^r} \subseteq A_p^{r+1}$.
+These go down $r$ steps, but everything in the kernel goes down as far as you'd like!
+So $d$ kills one of the denominator terms, and thus induces an injective map on the quotient.
+Thus \({Z_p^r \over Z_p^{r+1}} \mapsvia{\sim} {dA_p^r \over dA_p^{r+1} + dA_{p-1}^{r-1} } \), which is exactly the previous expression with the order switched, so this is isomorphic to $B_{p-r}^{r+1} / B_{p-r}^r$.
+:::
+
+
+:::{.proposition title="?"}
+\[
+{ \ker d_p^r \over \im d_{p+r}^r } \cong E_p^{r+1} \da {Z_p^{r+1} \over B_p^{r+1} }
+.\]
+:::
+
+:::{.proof title="?"}
+Recall that $d_p^r: E_p^r \to E_{p-r}^r$ and by (4), $E_p^r \cong {A_p^r \over dA_{p+r-1}^{r-1} + A_{p-1}^{r-1}}$.
+Substituting $p \mapsfrom p-r$, we have
+\[
+\ker d_p^r = 
+{
+\ts{ z\in A_p^r \st dz \in dA_{p-1}^{r-1} + A_{p-r-1}^{r-1} } 
+\over
+dA_{p+r-1}^{r-1} + A_{p-1}^{r-1}
+}
+=
+{
+A_{p-1}^{r-1} + A_{p}^{r+1}
+\over 
+dA_{p+r-1}^{r-1} + A_{p-1}^{r-1}
+}
+\congbecause{(5)}
+{Z_p^{r+1} \over B_p^r} && \text{which is } (6)
+.\]
+Here we've used that $x\in F_p C\implies dx \in F_{p-r-1} C \implies dx\in A^{?}_{p-r-1}$.
+What is the image of $d_p^r$ in general?
+Note that later we can replace $p\mapsfrom p+r$.
+By the 1st isomorphism theorem, we have
+\[
+d_p^r: E_p^r = Z_p^r / B_p^r \mapsvia{\sim} {Z_p^r / B_p^r \over Z_p^{r+1} / B_p^r} \mapsvia{\sim} {Z_p^r \over Z_p^{r+1}} \mapsvia{d} 
+{B_{p-r}^{r+1} \over B_{p-r}^r} \injects {Z_{p-r}^r \over B_{p-r}^r} = E_{p-r}^r
+,\]
+where we've applied the lemma from last time, and we've used the fact that in the last map, all of the $B$ are contained in all of the $Z$, so we can choose any superscript we want.
+These are all isomorphisms up until the last part, so 
+\[
+\im d_p^r \cong B_{p-r}^{r+1} / B_{p-r}^{r+1}
+.\].
+Replacing $p\mapsfrom p+r$, we get a 7th fact
+
+
+:::{.fact title="7"}
+\[
+\im d_{p+r}^r \cong B_{p}^{r+1} / B_{p}^{r+1}
+.\]
+:::
+
+Now combining (6) and (7), we have 
+\[
+{\ker d_p^r \over \im d_{p+r}^{r} } \mapsvia{\sim} {Z_p^{r+1} / B_p^r \over B_{p}^{r+1} / B_p^r } \cong {Z_p^{r+1} \over B_p^{r+1}} = E_p^{r+1}
+.\]
+
+:::
+
+## 5.5: Convergence of the Spectral Sequence of a Filtration
+
+:::{.remark}
+We'll restrict our attention to bounded complexes.
+:::
+
+:::{.remark}
+A filtration $F$ on a chain complex $C$ induces a filtration on the homology $H_*C$,
+where $H_p H_n C = \im ( H_n F_p C \to H_n C)$:
+
+\begin{tikzcd}
+	{F_p C_{n+1}} && {C_{n+1}} \\
+	\\
+	{F_p C_{n}} && {C_{n}} \\
+	\\
+	{F_p C_{n-1}} && {C_{n-1}}
+	\arrow[hook, from=1-1, to=1-3]
+	\arrow[hook, from=3-1, to=3-3]
+	\arrow[hook, from=5-1, to=5-3]
+	\arrow["d"{description}, from=1-1, to=3-1]
+	\arrow["d"{description}, from=3-1, to=5-1]
+	\arrow["d"{description}, from=1-3, to=3-3]
+	\arrow["d"{description}, from=3-3, to=5-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJGX3AgQ197bisxfSJdLFsyLDAsIkNfe24rMX0iXSxbMiwyLCJDX3tufSJdLFsyLDQsIkNfe24tMX0iXSxbMCwyLCJGX3AgQ197bn0iXSxbMCw0LCJGX3AgQ197bi0xfSJdLFswLDEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzQsMiwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNSwzLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDQsImQiLDFdLFs0LDUsImQiLDFdLFsxLDIsImQiLDFdLFsyLDMsImQiLDFdXQ==)
+
+\todo[inline]{See video for missed details.}
+
+These inclusions induce a map from the homology of the subcomplex to the homology of the total complex.
+:::
+
+:::{.remark}
+If the filtration on $C$ is bounded, say $0 = F_s C_n \subseteq \cdots \subseteq F_t C_n = C_n$ for some $s<t$, then so is the induced filtration on $H_n C$.
+Also note that $F_t H_n = H_n$ and $F_s H_n = 0$.
+:::
+
+:::{.theorem title="Classical Convergence Theorem"}
+Assume $F$ is a bounded filtration on $C$, then the spectral sequence is bounded and converges to $H_*C$, so
+\[
+E^1_{p, q} = H_{p+q}\qty{ F_p C \over F_{p-1} C } \abuts H_{p+q}C
+.\]
+:::
+
+:::{.remark}
+Need to check next time that the $E^{\infty }_{p, q}$ terms give the proper quotients.
+:::
+
+
+
+# Wednesday, March 24
+
+:::{.remark}
+Last time: we're trying to prove the classical convergence theorem in the bounded case.
+We have 
+\[
+E_{pq}^1 = H_{p+q}( F_p C/ F_{p-1} C ) \abuts H_{p+q}C
+.\]
+We'd like this converge, i.e. the $E^\infty$ page will be the sections of $H_{p+q}C$.
+Writing $C_n'\da F_p C_n$ for the filtered pieces, we have
+
+\begin{tikzcd}
+	{C_n'} && {C_n} \\
+	{Z_n'} && {Z_n} \\
+	{B_n'} && {B_n}
+	\arrow[hook, from=3-1, to=3-3]
+	\arrow[hook, from=2-1, to=2-3]
+	\arrow[hook, from=1-1, to=1-3]
+	\arrow[hook, from=1-3, to=2-3]
+	\arrow[hook, from=2-3, to=3-3]
+	\arrow[hook, from=1-1, to=2-1]
+	\arrow[hook, from=2-1, to=3-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJDX24nIl0sWzIsMCwiQ19uIl0sWzAsMSwiWl9uJyJdLFsyLDEsIlpfbiJdLFswLDIsIkJfbiciXSxbMiwyLCJCX24iXSxbNCw1LCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDMsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMSwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDUsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMiwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiw0LCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==)
+
+Then the induced filtration on homology is 
+\[
+H_n' \da {Z_n' \over B_n'} &\injects H_n \da {Z_n\over B_n} \\
+z' + B_n' &\mapsto z' + B_n
+.\]
+:::
+
+:::{.proof title="of classical convergence theorem"}
+As discussed, we have a natural bounded filtration on each $H_n C$.
+Fixing $p, n$
+and writing $q = n-p$, we have
+\[
+A_p^r = \ts{ c \in F_p C_n \st d(c) \in F_{p-r} C_{n-1} } 
+.\]
+This stabilizes for large $r$, namely whenever $F_{p-r} C_{n-1} = 0$ (which happens since the complex is bounded).
+Call the stabilized object $A_p^{\infty } \da \ts{ c\in F_p C_n \st d(c) = 0 }$, which is $\ker d$ in the $p$th filtered piece.
+Some facts:
+
+0. $Z_p^r = \eta_p(A_p^r)$ where
+\[
+\eta_p: F_p C_n \to {F_p C_n \over F_{p-1} C_n }
+\]
+where $Z_p^{\infty } = \eta_p(A_p^{\infty })$.
+
+1. $A_p^{\infty } \da \ker (F_p C_n \mapsvia{d} F_p C_{n-1} )$, which is the "numerator" of $F_p H_n C$.
+
+2. $d(C_{n+1}) \intersect F_p C_n = \Union_{r\in \ZZ} d(A_{p+r}^r )$:
+  \begin{tikzcd}
+    &&&& {A_{p+r}} \\
+    &&&& {F_{p+r}C_{n+1}} & {C_{n+1}} \\
+    {F_p C_n}
+    \arrow["d"', from=1-5, to=3-1]
+    \arrow[hook, from=1-5, to=2-5]
+    \arrow[hook, from=2-5, to=2-6]
+  \end{tikzcd}
+
+  > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbNCwwLCJBX3twK3J9Il0sWzQsMSwiRl97cCtyfUNfe24rMX0iXSxbNSwxLCJDX3tuKzF9Il0sWzAsMiwiRl9wIENfbiJdLFswLDMsImQiLDJdLFswLDEsIiIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzEsMiwiIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=)
+
+3. Recall that we defined $B_p^r \da \eta_p( d A_{p+r-1}^{r-1} )$.
+  We can write \( B_p^{\infty } = \eta_p (\union_r dA_{p+r}^r ) \), where the left-hand side and the inner term on the right-hand side are equal to $\Union_{r\geq 1} B_p^r$.
+
+4. $A_{p-1}^{\infty } = A_p^{\infty } \intersect F_{p-1} C_n = \ker (A_{p}^{\infty } \mapsvia{\eta_p} E_p^0 )$.
+
+Now to assemble this, note that
+\[
+{F_p H_n C \over F_{p-1} H_n C} 
+&\cong 
+{A_{p}^{\infty } \over A_{p-1}^{\infty } + \Union_r dA_{p+r}^r } 
+&& \text{ by 1 and 2} \\
+&\cong
+{ \eta_p (A_p^{\infty } ) \over \eta_p\qty{\Union_{r\geq 0} dA_{p+r}^r } } 
+&& \text{by 4} \\
+&= {Z_p^{\infty } \over B_p^{\infty } } 
+&& \text{by 0, 3} \\
+&= E_p^{\infty }
+.\]
+where we've used that $A_{p-1}^{\infty } + \Union_{r>0} dA_{p+r}^r \subseteq \ker \eta_p = F_{p-1} C$.
+:::
+
+## Applications: Two Spectral Sequences of a Double Complex
+
+:::{.remark}
+Consider two different filtrations of the total complex $\Tot(C)$ (either sum or product) of a double complex $C_{*, *}$.
+We know there is an spectral sequence associated to each and play them off of each other to get extra information about cohomology.
+:::
+
+:::{.definition title="Filtration I: by columns (of a double complex)"}
+Let ${}^IF_n \Tot(C)$ be the total subcomplex obtain by applying truncation functors:
+\[
+\qty{{}^I \tau_{\leq n} C}_{p, q} \da 
+\begin{cases}
+C_{p, q} & p \leq n 
+\\
+0 & p > n.
+\end{cases}
+.\]
+
+\begin{tikzcd}
+	\ddots & \vdots & \vdots & {} & \vdots & \vdots \\
+	\cdots & \bullet & \bullet && 0 & 0 & \cdots \\
+	\cdots & \bullet & \bullet && 0 & 0 & \cdots \\
+	\cdots & \bullet & \bullet && 0 & 0 & \cdots \\
+	\bullet & \vdots & \vdots & {} & \vdots & \vdots & \bullet \\
+	&& n & \bullet & {n+1}
+	\arrow[no head, from=5-1, to=5-7]
+	\arrow[no head, from=1-4, to=6-4]
+	\arrow[from=2-3, to=2-2]
+	\arrow[from=2-3, to=3-3]
+	\arrow[from=3-3, to=3-2]
+	\arrow[from=3-3, to=4-3]
+	\arrow[from=4-3, to=4-2]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, dotted, no head, from=1-1, to=5-5]
+\end{tikzcd}
+
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMzQsWzIsMSwiXFxidWxsZXQiXSxbMiwyLCJcXGJ1bGxldCJdLFsxLDIsIlxcYnVsbGV0Il0sWzEsMSwiXFxidWxsZXQiXSxbMSwzLCJcXGJ1bGxldCJdLFsyLDMsIlxcYnVsbGV0Il0sWzQsMSwiMCJdLFs1LDEsIjAiXSxbNCwyLCIwIl0sWzUsMiwiMCJdLFs0LDMsIjAiXSxbNSwzLCIwIl0sWzYsMywiXFxjZG90cyJdLFs2LDIsIlxcY2RvdHMiXSxbNiwxLCJcXGNkb3RzIl0sWzAsMSwiXFxjZG90cyJdLFswLDIsIlxcY2RvdHMiXSxbMCwzLCJcXGNkb3RzIl0sWzMsMF0sWzMsNF0sWzIsNCwiXFx2ZG90cyJdLFsyLDUsIm4iXSxbNCw1LCJuKzEiXSxbNCw0LCJcXHZkb3RzIl0sWzUsNCwiXFx2ZG90cyJdLFsxLDQsIlxcdmRvdHMiXSxbMSwwLCJcXHZkb3RzIl0sWzIsMCwiXFx2ZG90cyJdLFs0LDAsIlxcdmRvdHMiXSxbNSwwLCJcXHZkb3RzIl0sWzAsNCwiXFxidWxsZXQiXSxbNiw0LCJcXGJ1bGxldCJdLFszLDUsIlxcYnVsbGV0Il0sWzAsMCwiXFxkZG90cyJdLFszMCwzMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxOCwzMiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDNdLFswLDFdLFsxLDJdLFsxLDVdLFs1LDRdLFszMywyMywiIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+We still have $d = d^v + d^h: {}^IF_n \to {}^I F_n$.
+By the construction theorem, there is a spectral sequence $\theset{ {}^I E_{p,q}^r}$ starting with ${}^I E_{p, q}^0 = C_{p, q}$ and 
+\[
+{}^I E_{p, q}^0 = 
+{ F_p \Tot(C)_{p+q} \over F_{p-1} \Tot(C)_{p+q}}
+.\]
+
+\begin{tikzcd}
+	& \bullet &&&& 0 \\
+	&& \bullet &&& 0 \\
+	&&& {\bullet F_{p-1} } && 0 \\
+	q &&&& \textcolor{rgb,255:red,92;green,92;blue,214}{\bullet (F_p) = C_{p, q}} & 0 \\
+	&&&&& 0 \\
+	&&& {} & {p-1} & p
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, dashed, no head, from=1-2, to=5-6]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTMsWzUsMCwiMCJdLFs1LDEsIjAiXSxbNSwyLCIwIl0sWzUsMywiMCJdLFs1LDQsIjAiXSxbNCwzLCJcXGJ1bGxldCAoRl9wKSA9IENfe3AsIHF9IixbMjQwLDYwLDYwLDFdXSxbMywyLCJcXGJ1bGxldCBGX3twLTF9ICJdLFsyLDEsIlxcYnVsbGV0Il0sWzMsNV0sWzQsNSwicC0xIl0sWzUsNSwicCJdLFsxLDAsIlxcYnVsbGV0Il0sWzAsMywicSJdLFsxMSw0LCIiLDAseyJjb2xvdXIiOlsyNDAsNjAsNjBdLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+Recall that $d_p^r: E_p^r \to E_{p-r}^{r}$ (going $r$ columns to the left, where we've suppressed $q$) is the map induced from $d: \Tot(C)_n \to \Tot(C)_{n-1}$.
+So for $r=0$, we have $d_{p, q}^0: E_{p, q}^0 \to E_{p, q-1}^0$.
+But the left-hand side is $C_{p, q}$ and the right-hand side is $C_{p, q-1}$, so it's perhaps not surprising that this coincides with the original $d^v$ from $C_{*, *}$.
+
+Thus ${}^IE_{pq}^1= H_q^v(C_{p, *})$ by taking homology in the vertical direction.
+For the differential, we want $d_{pq}^1: E_{pq}^1\to E_{p-1, q}^1$, and these will just be the maps induced on the vertical homology by $d^h$.
+So we write ${}^I E_{p, q}^2 = H_p^h H_q^v (C_{**})$.
+
+If $C$ is a first quadrant complex, the filtration is canonically bounded since $F_{-1} \Tot(C) = 0$ and $F_n \Tot(C)_n = \Tot(C)_n$.
+So we get the spectral sequence that we started constructing in section 5.1, and we now know it converges to $H_* \Tot(C)$ by the classical convergence theorem.
+So 
+\[
+{}^I E_{p, q}^2 = H_p^h H_q^v(C) \abuts H_{p+q} \Tot(C)
+.\]
+
+:::
+
+:::{.remark}
+We can say something about the unbounded case.
+Suppose $C$ is 4th quadrant, then $F_{-1} \Tot(C) = 0$, so the first filtration ${}^I F$ is bounded below.
+The diagonals are infinite, so we take $\Tot(C) \da \Totsum(C)$.
+Every element of $(\Tot(C))_n$ lives in \( \bigoplus _{p=0}^N C_{p, n-p} \) for some finite $N$ and the filtration is exhaustive, i.e. $\Totsum C = \Union_{p\geq 0} F_p \Totsum C$.
+A version of the classical convergence theorem will yield
+\[
+{}^I E_{pq}^r \abuts H_{p+q} \Totsum C
+.\]
+However, this will not hold for $\Totprod$.
+:::
+
+:::{.remark}
+Next time: a second filtration and its spectral sequence, and how to play them off of each other.
+:::
+
+
 # Appendix: Extra Definitions
 
 :::{.definition title="Acyclic"}
@@ -6027,7 +6796,6 @@ A chain complex $C$ is **acyclic** if and only if $H_*(C) = 0$.
 - Free $\implies$ projective $\implies$ flat $\implies$ torsionfree (for finitely-generated \(R\dash\)modules)
   - Over $R$ a PID: free $\iff$ torsionfree
 :::
-
 
 :::{.remark}
 Notational conventions:
@@ -6060,12 +6828,14 @@ Notational conventions:
 - $\Hom_R(A, \wait)$ is:
   - Covariant
   - Left-exact
-  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(A, \wait)(B)$ computed using *injective* resolutions.
+  - Is a functor that sends $f:X\to Y$ to $f_*: \Hom(A, X) \to \Hom(A, Y)$ given by $f_*(h) = f\circ h$.
+  - Has right-derived functors $\Ext^i_R(A, B) \da R^i \Hom_R(A, \wait)(B)$ computed using *injective* resolutions. 
 
 
 - $\Hom_R(\wait, B)$ is:
   - Contravariant
   - Right-exact
+  - Is a functor that sends $f:X\to Y$ to $f^*: \Hom(Y, B) \to \Hom(X, B)$ given by $f^*(h) = h\circ f$.
   - Has left-derived functors $\Ext^i_R(A, B) \da L_i \Hom_R(\wait, B)(A)$ computed using *projective* resolutions.
 
 - For $N \in \bimod{R}{S'}$ and $M\in \bimod{R}{S}$, $\Hom_R(M, N) \in \bimod{S}{S'}$.
@@ -6277,6 +7047,12 @@ The kernel $\ker f$ of a morphism $f$ can be characterized as a cartesian square
 
 ## Adjunctions
 
+
+:::{.definition title="Adjoints"}
+\todo[inline]{todo}
+:::
+
+
 :::{.proposition title="Tensor-Hom Adjunction"}
 For a fixed $M\in \bimod{R}{S}$, there is an adjunction
 \[
@@ -6287,7 +7063,6 @@ so for $Y \in \bimod{A}{R}$ and $Z \in \bimod{B}{S}$, there is a (natural) isomo
 \Hom_S(X \tensor_R M, Z) \mapsvia{\sim} \Hom_R( X, \Hom_S(M, Z) )
 .\]
 :::
-
 
 :::{.proposition title="Forgetful Adjunctions"}
 Let \( F: \mods{R} \to \mods{\ZZ} \) be the forgetful functor, then there are adjunctions
