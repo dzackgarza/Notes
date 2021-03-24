@@ -4063,7 +4063,7 @@ with
 since this is now dimension 1. Note that by applying homothety, the two
 basis vectors for a lattice can be rescaled so one is length 1 and the
 other is a complex number \(\tau\), and we can identify this space with
-\({\operatorname{HH}}/ {\operatorname{SL}}_2({\mathbb{Z}})\).
+\({\mathbb{H}}/ {\operatorname{SL}}_2({\mathbb{Z}})\).
 
 \end{example}
 
@@ -6475,7 +6475,7 @@ theorem:
 Let \(C \in {\mathsf{Mfd}}^1({\mathbb{C}})_{ \text{compact} }\) of genus
 \(g\geq 2\). Then the universal cover admits a biholomorphism
 \begin{align*}
-\tilde C \cong \H \coloneqq\left\{{ z\in {\mathbb{C}}{~\mathrel{\Big|}~}\Im(z) > 0 }\right\}
+\tilde C \cong {\mathbb{H}}\coloneqq\left\{{ z\in {\mathbb{C}}{~\mathrel{\Big|}~}\Im(z) > 0 }\right\}
 .\end{align*}
 
 \end{theorem}
@@ -6488,11 +6488,12 @@ This essentially follows from the Riemann mapping principle.
 
 \begin{corollary}[?]
 
-Any curve \(C\) of genus \(g\geq 2\) is of the form \(C = \H/ \Gamma\)
-where \(\Gamma \leq \mathop{\mathrm{BiHol}}(\H)\) is a subgroup that
+Any curve \(C\) of genus \(g\geq 2\) is of the form
+\(C = {\mathbb{H}}/ \Gamma\) where
+\(\Gamma \leq \mathop{\mathrm{BiHol}}({\mathbb{H}})\) is a subgroup that
 acts freely. By covering space theory, \(\Gamma = \pi_1(C)\), and it's
 known that
-\(\mathop{\mathrm{BiHol}}(\H) \cong {\operatorname{PSL}}_2({\mathbb{R}})\)
+\(\mathop{\mathrm{BiHol}}({\mathbb{H}}) \cong {\operatorname{PSL}}_2({\mathbb{R}})\)
 by the map
 \begin{align*}
 \begin{bmatrix}
@@ -6509,8 +6510,9 @@ z
 
 \begin{proposition}[?]
 
-The upper half plane \(\H\) admits a \textbf{hyperbolic metric} which is
-invariant under \({\operatorname{PSL}}_2({\mathbb{R}})\) given by
+The upper half plane \({\mathbb{H}}\) admits a \textbf{hyperbolic
+metric} which is invariant under
+\({\operatorname{PSL}}_2({\mathbb{R}})\) given by
 \begin{align*}
 g_{\text{hyp}} = {dx^2 + dy^2 \over y^2 } = {\,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \over \Im(z)^2 }
 .\end{align*}
@@ -6535,9 +6537,10 @@ d\qty{ az + b \over cz + d}
 
 \begin{remark}
 
-It's miraculous! The biholomorphisms of \(\H\) preserve a metric. So
-\(C\) has a canonical metric, \(g_\text{hyp}\), which descends along the
-quotient map \(\H \to \H/\Gamma \cong {\mathbb{C}}\).
+It's miraculous! The biholomorphisms of \({\mathbb{H}}\) preserve a
+metric. So \(C\) has a canonical metric, \(g_\text{hyp}\), which
+descends along the quotient map
+\({\mathbb{H}}\to {\mathbb{H}}/\Gamma \cong {\mathbb{C}}\).
 
 \end{remark}
 
@@ -6553,7 +6556,7 @@ By lifting we can write
 \begin{align*} 
 \Omega^1(C_{\mathbb{R}}) \otimes_{\mathbb{R}}{\mathbb{C}}= A^{1, 0}(C) \oplus A^{0, 1}(C) 
 = 
-\left\{{ f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,dz+ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu {~\mathrel{\Big|}~}z\in \H, \, f,g\in C^{\infty }({\mathbb{C}}, {\mathbb{R}}) }\right\}  
+\left\{{ f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,dz+ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu {~\mathrel{\Big|}~}z\in {\mathbb{H}}, \, f,g\in C^{\infty }({\mathbb{C}}, {\mathbb{R}}) }\right\}  
 \end{align*}
 But \(\,dz\) is \emph{not} invariant under the map
 \(z\mapsto {az+b \over cz+d}\), since

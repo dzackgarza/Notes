@@ -98,9 +98,9 @@
 \newcommand{\HP}[0]{{\operatorname{HP}}}
 \newcommand{\TP}[0]{{\operatorname{TP}}}
 \newcommand{\HC}[0]{{\operatorname{HC}}}
-\newcommand{\HHCC}[0]{{\mathbb{H}}}
-\newcommand{\HH}[0]{{\operatorname{HH}}}
-\newcommand{\THH}[0]{{\operatorname{THH}}}
+\newcommand{\HH}[0]{{\mathbb{H}}}
+\newcommand{\HoH}[0]{{\operatorname{HH}}}
+\newcommand{\THoH}[0]{{\operatorname{THH}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
@@ -5150,7 +5150,7 @@ Recall the following theorem:
 Let $C \in \Mfd^1(\CC)_\cpt$ of genus $g\geq 2$.
 Then the universal cover admits a biholomorphism 
 \[
-\tilde C \cong \H \da \ts{ z\in \CC \st \Im(z) > 0 }
+\tilde C \cong \HH \da \ts{ z\in \CC \st \Im(z) > 0 }
 .\]
 :::
 
@@ -5159,8 +5159,8 @@ This essentially follows from the Riemann mapping principle.
 :::
 
 :::{.corollary title="?"}
-Any curve $C$ of genus $g\geq 2$ is of the form $C = \H/ \Gamma$ where \( \Gamma \leq \BiHol(\H) \) is a subgroup that acts freely.
-By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \BiHol(\H) \cong \PSL_2(\RR) \) by the map
+Any curve $C$ of genus $g\geq 2$ is of the form $C = \HH/ \Gamma$ where \( \Gamma \leq \BiHol(\HH) \) is a subgroup that acts freely.
+By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \BiHol(\HH) \cong \PSL_2(\RR) \) by the map
 \[
 \begin{bmatrix}
 a & b 
@@ -5174,7 +5174,7 @@ z
 :::
 
 :::{.proposition title="?"}
-The upper half plane $\H$ admits a **hyperbolic metric** which is invariant under \( \PSL_2(\RR) \) given by 
+The upper half plane $\HH$ admits a **hyperbolic metric** which is invariant under \( \PSL_2(\RR) \) given by 
 \[
 g_{\hyp} = {dx^2 + dy^2 \over y^2 } = {\dz \dzbar \over \Im(z)^2 }
 .\]
@@ -5196,8 +5196,8 @@ d\qty{ az + b \over cz + d}
 
 :::{.remark}
 It's miraculous! 
-The biholomorphisms of $\H$ preserve a metric.
-So $C$ has a canonical metric, $g_\hyp$, which descends along the quotient map $\H \to \H/\Gamma \cong \CC$.
+The biholomorphisms of $\HH$ preserve a metric.
+So $C$ has a canonical metric, $g_\hyp$, which descends along the quotient map $\HH \to \HH/\Gamma \cong \CC$.
 :::
 
 :::{.question}
@@ -5209,7 +5209,7 @@ By lifting we can write
 \[ 
 \Omega^1(C_\RR) \tensor_\RR \CC = A^{1, 0}(C) \oplus A^{0, 1}(C) 
 = 
-\ts{ f(z, \bar z)\dz + g(z, \bar z) \dzbar \st z\in \H, \, f,g\in C^{\infty }(\CC, \RR) }  
+\ts{ f(z, \bar z)\dz + g(z, \bar z) \dzbar \st z\in \HH, \, f,g\in C^{\infty }(\CC, \RR) }  
 \]
 But $\dz$ is *not* invariant under the map $z\mapsto {az+b \over cz+d}$, since \( \dz \mapsto {\dz \over (cz+d)^2 } \).
 In order to descend $f(z)$ to $C$, we need 
@@ -5239,15 +5239,3 @@ There is a decomposition
 and the first space will be the space of holomorphic 1-forms $H^0(K_C)$, and the second term will be $\bar{H^0(K_C)}$.
 This shows the power of the Hodge decomposition theorem!
 :::
-
-
-
-
-
-
-
-
-
-
-
-

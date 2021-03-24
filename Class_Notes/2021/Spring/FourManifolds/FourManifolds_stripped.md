@@ -2304,7 +2304,7 @@ We can check \( \varphi ^{-1} ( \infty ) = p+q \) and \( \deg \varphi = 2 \). Th
 ```
 ![image_2021-02-25-20-41-53](figures/image_2021-02-25-20-41-53.png)
 
-Note that homothetic lattices define an isomorphism between the elliptic curves, and lattices mod homothety are in correspondence of elliptic curves. By acting \( \operatorname{PGL}_2(C) \curvearrowright{\mathbb{P}}^1 \) since \( \operatorname{GL}_2 \) acts on lines since scaling an element fixes a line. This is dimension 3. So elliptic curves are also in correspondence with \( \left\{{ 4 \text{ points on } {\mathbb{P}}^1}\right\} / \operatorname{PGL}_2({\mathbb{C}}) \) since this is now dimension 1. Note that by applying homothety, the two basis vectors for a lattice can be rescaled so one is length 1 and the other is a complex number \( \tau \), and we can identify this space with \( {\operatorname{HH}}/ {\operatorname{SL}}_2({\mathbb{Z}}) \).
+Note that homothetic lattices define an isomorphism between the elliptic curves, and lattices mod homothety are in correspondence of elliptic curves. By acting \( \operatorname{PGL}_2(C) \curvearrowright{\mathbb{P}}^1 \) since \( \operatorname{GL}_2 \) acts on lines since scaling an element fixes a line. This is dimension 3. So elliptic curves are also in correspondence with \( \left\{{ 4 \text{ points on } {\mathbb{P}}^1}\right\} / \operatorname{PGL}_2({\mathbb{C}}) \) since this is now dimension 1. Note that by applying homothety, the two basis vectors for a lattice can be rescaled so one is length 1 and the other is a complex number \( \tau \), and we can identify this space with \( {\mathbb{H}}/ {\operatorname{SL}}_2({\mathbb{Z}}) \).
 :::
 
 ::: {.exercise title="?"}
@@ -3745,7 +3745,7 @@ There is a generalization to higher genus curves. Recall the following theorem:
 ::: {.theorem title="Uniformization"}
 Let \( C \in {\mathsf{Mfd}}^1({\mathbb{C}})_{ \text{compact} }  \) of genus \( g\geq 2 \). Then the universal cover admits a biholomorphism
 \[
-\tilde C \cong \H \coloneqq\left\{{ z\in {\mathbb{C}}{~\mathrel{\Big|}~}\Im(z) > 0 }\right\}
+\tilde C \cong {\mathbb{H}}\coloneqq\left\{{ z\in {\mathbb{C}}{~\mathrel{\Big|}~}\Im(z) > 0 }\right\}
 .\]
 :::
 
@@ -3754,7 +3754,7 @@ This essentially follows from the Riemann mapping principle.
 :::
 
 ::: {.corollary title="?"}
-Any curve \( C \) of genus \( g\geq 2 \) is of the form \( C = \H/ \Gamma \) where \( \Gamma \leq \mathop{\mathrm{BiHol}}(\H) \) is a subgroup that acts freely. By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \mathop{\mathrm{BiHol}}(\H) \cong {\operatorname{PSL}}_2({\mathbb{R}}) \) by the map
+Any curve \( C \) of genus \( g\geq 2 \) is of the form \( C = {\mathbb{H}}/ \Gamma \) where \( \Gamma \leq \mathop{\mathrm{BiHol}}({\mathbb{H}}) \) is a subgroup that acts freely. By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \mathop{\mathrm{BiHol}}({\mathbb{H}}) \cong {\operatorname{PSL}}_2({\mathbb{R}}) \) by the map
 \[
 \begin{bmatrix}
 a & b 
@@ -3768,7 +3768,7 @@ z
 :::
 
 ::: {.proposition title="?"}
-The upper half plane \( \H \) admits a **hyperbolic metric** which is invariant under \( {\operatorname{PSL}}_2({\mathbb{R}}) \) given by
+The upper half plane \( {\mathbb{H}} \) admits a **hyperbolic metric** which is invariant under \( {\operatorname{PSL}}_2({\mathbb{R}}) \) given by
 \[
 g_{\text{hyp}} = {dx^2 + dy^2 \over y^2 } = {\,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \over \Im(z)^2 }
 .\]
@@ -3789,7 +3789,7 @@ d\qty{ az + b \over cz + d}
 :::
 
 ::: {.remark}
-It's miraculous! The biholomorphisms of \( \H \) preserve a metric. So \( C \) has a canonical metric, \( g_\text{hyp} \), which descends along the quotient map \( \H \to \H/\Gamma \cong {\mathbb{C}} \).
+It's miraculous! The biholomorphisms of \( {\mathbb{H}} \) preserve a metric. So \( C \) has a canonical metric, \( g_\text{hyp} \), which descends along the quotient map \( {\mathbb{H}}\to {\mathbb{H}}/\Gamma \cong {\mathbb{C}} \).
 :::
 
 ::: {.question}
@@ -3801,7 +3801,7 @@ By lifting we can write
 \[ 
 \Omega^1(C_{\mathbb{R}}) \otimes_{\mathbb{R}}{\mathbb{C}}= A^{1, 0}(C) \oplus A^{0, 1}(C) 
 = 
-\left\{{ f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,dz+ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu {~\mathrel{\Big|}~}z\in \H, \, f,g\in C^{\infty }({\mathbb{C}}, {\mathbb{R}}) }\right\}  
+\left\{{ f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,dz+ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu {~\mathrel{\Big|}~}z\in {\mathbb{H}}, \, f,g\in C^{\infty }({\mathbb{C}}, {\mathbb{R}}) }\right\}  
 \]
 But \( \,dz \) is *not* invariant under the map \( z\mapsto {az+b \over cz+d} \), since \( \,dz\mapsto {\,dz\over (cz+d)^2 } \). In order to descend \( f(z) \) to \( C \), we need
 \[
