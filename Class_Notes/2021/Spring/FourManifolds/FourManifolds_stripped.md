@@ -3261,17 +3261,19 @@ Recall that a *sheaf of rings* \( \operatorname{\mathcal{F}} \) on \( X\in {\mat
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJVIl0sWzIsMCwiViJdLFs0LDAsIlciXSxbMCwxLCJcXHJob197VVZ9Il0sWzEsMiwiXFxyaG9fe1ZXfSJdLFswLDIsIlxccmhvX3tVV30iLDIseyJjdXJ2ZSI6NX1dXQ==)
 
-2.  \( \pho_{UU} = \one_{\operatorname{\mathcal{F}}(U)} \) and \( \operatorname{\mathcal{F}}(\emptyset) = 0 \).
+2.  \( \phi_{UU} = \one_{\operatorname{\mathcal{F}}(U)} \) and \( \operatorname{\mathcal{F}}(\emptyset) = 0 \).
 
 That additionally satisfies unique gluing on double overlaps.
 :::
 
 ::: {.example title="?"}
-Any reasonable class of functions whose behavior is only locally restricted. Examples are being smooth or continuous, but e.g. being constant is a global condition. Other examples include \( X\in {\mathsf{Mfd}}^n({C^\infty({\,\cdot\,}, {\mathbb{R}})) \), denoting \( {\mathcal{O}} \) the sheaf of smooth functions. This also carries a sheaf of *abelian groups* \( \Omega^p \). In the special case where \( U \) is a coordinate chart, we have functions \( \varphi_U: U\to {\mathbb{R}}^n \). Writing \( S \coloneqq\varphi_U(U) \), we can define \( \Omega^p(U) \cong \Omega^p(S) \coloneqq\left\{{ \sum f_I(\mathbf{x}) dx_I {~\mathrel{\Big|}~}f_I \in C^\infty({\mathbb{R}}^n, {\mathbb{R}})}\right\} \).
+Any reasonable class of functions whose behavior is only locally restricted. Examples are being smooth or continuous, but e.g. being constant is a global condition. Other examples include \( X\in {\mathsf{Mfd}}^n(C^\infty({\,\cdot\,}, {\mathbb{R}})) \), denoting \( {\mathcal{O}} \) the sheaf of smooth functions. This also carries a sheaf of *abelian groups* \( \Omega^p \). In the special case where \( U \) is a coordinate chart, we have functions \( \varphi_U: U\to {\mathbb{R}}^n \). Writing \( S \coloneqq\varphi_U(U) \), we can define
+\[ 
+\Omega^p(U) \cong \Omega^p(S) \coloneqq\left\{{ \sum f_I(\mathbf{x}) dx_I {~\mathrel{\Big|}~}f_I \in C^\infty({\mathbb{R}}^n, {\mathbb{R}})}\right\}
+.\]
 :::
 
-::: {.remark}
-More generally, for an arbitrary open \( U \), cover it by coordinate charts \( \left\{{ U_i }\right\} \rightrightarrows U \). Then we want \( \omega_i \in \Omega^p(U_i) \) which are compatible on double overlaps, so such a collection defines a section \( \left\{{ \omega_i {~\mathrel{\Big|}~}i\in I }\right\} \in \Gamma( \Omega^p(U) ) \). The compatibility is given by taking coordinate charts \( \varphi_i: U_i \to {\mathbb{R}}^n \) with \( \omega_i \in \Omega^p(U_i) \), we consider
+:::{.remark} More generally, for an arbitrary open \( U \), cover it by coordinate charts \( \left\{{ U_i }\right\} \rightrightarrows U \). Then we want \( \omega_i \in \Omega^p(U_i) \) which are compatible on double overlaps, so such a collection defines a section \( \left\{{ \omega_i {~\mathrel{\Big|}~}i\in I }\right\} \in \Gamma( \Omega^p(U) ) \). The compatibility is given by taking coordinate charts \( \varphi_i: U_i \to {\mathbb{R}}^n \) with \( \omega_i \in \Omega^p(U_i) \), we consider
 \[
 t_{ij}: \varphi_i \circ \varphi_2 ^{-1} : \varphi_j(U_i \cap U_j) \to \varphi_i( U_i \cap U_j)
 ,\]
@@ -3289,8 +3291,10 @@ dx_2 &\coloneqq\sum_{i=1}^n {\frac{\partial h_2}{\partial y_i}\,} dy_i \\
 \vdots& \\
 dx_k &\coloneqq\sum_{i=1}^n {\frac{\partial h_k}{\partial y_i}\,} dy_i \\
 ,\]
-and under these substitutions in the original expression we obtain \( \omega_1 = \sum_{{\left\lvert {I} \right\rvert} = p} f_I(\mathbf{x}) dx_I \mapsto \omega_2 \).
-:::
+and under these substitutions in the original expression we obtain
+\[ 
+\omega_1 = \sum_{{\left\lvert {I} \right\rvert} = p} f_I(\mathbf{x}) dx_I \mapsto \omega_2
+.\]
 
 ::: {.remark}
 For \( X \in {\mathsf{Mfd}}(\mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}})) \) such that \( \varphi_V \circ \varphi_U ^{-1} : \varphi_U( U \cap V) \to \varphi_V(U \cap V) \) is holomorphic, so \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5muz_i = 0 \). Then \( \Omega^p(U) = \left\{{ \sum_{{\left\lvert {I} \right\rvert} = p} f_I( \mathbf{z}) dz_I }\right\} \), and the *key difference* is that the \( f_I \) be holomorphic. This matters since POUs exist in the smooth setting but not the complex setting. Note that \( {\mathcal{O}}, \Omega^p \) denote smooth/holomorphic functions and smooth/holomorphic \( p{\hbox{-}} \)forms in the smooth/complex settings. So we need a new notation for *smooth holomorphic* \( p{\hbox{-}} \)forms in the complex setting. We defined \( A^{p, 0} \) to be the smooth \( p{\hbox{-}} \)forms, and \( A^{p, q} \) the smooth \( (p, q){\hbox{-}} \)forms. In local coordinates, these look like
@@ -3303,8 +3307,8 @@ A^{p, q}(U) = \left\{{ \sum_{{\left\lvert {I} \right\rvert} = p, {\left\lvert {J
 ```{=tex}
 \envlist
 ```
--   \( \Re(z) \,dz\in A^{1, 0)({\mathbb{C}}) \) is a smooth \( (1, 0){\hbox{-}} \)form.
--   \( z\dw - w\,dz\in \Omega^1({\mathbb{C}}^2) \) is a holomorphic 1-form.
+-   \( \Re(z) \,dz\in A^{1, 0}({\mathbb{C}}) \) is a smooth \( (1, 0){\hbox{-}} \)form.
+-   \( z\,dw- w\,dz\in \Omega^1({\mathbb{C}}^2) \) is a holomorphic 1-form.
 -   On \( {\mathbb{C}}^3 \), \( z_1 dz_2 \wedge d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu_3 - \Re(z_3) dz_1 d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu_1 \in A^{1, 1}({\mathbb{C}}^3) \).
 :::
 
@@ -3347,11 +3351,11 @@ We then defined Dolbeaut cohomology, \( H^q(X, \Omega^p) = \ker \mkern 1.5mu\ove
 ## Inverting Bundles
 
 ::: {.remark}
-Continuing review: let \( \mathcal{E} \to X \in \Bun({\mathbb{R}}^n) \). A **metric** on \( \mathcal{E} \) is a smoothly varying positive definite inner product on the fibers.
+Continuing review: let \( \mathcal{E} \to X \in \mathop{\mathrm{Bun}}({\mathbb{R}}^n) \). A **metric** on \( \mathcal{E} \) is a smoothly varying positive definite inner product on the fibers.
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{42pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-17_13-55.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -3367,7 +3371,7 @@ For Hermitian forms, we take
 \[
 h: ({\mathbb{C}}^n)^{\otimes 2}\to {\mathbb{C}}
 \]
-where \( h \) is conjugate linear, so \( h(cv, c'w) = \mkern 1.5mu\overline{\mkern-1.5muc\mkern-1.5mu}\mkern 1.5muc' h(v, w) \). Note that we can write \( h(v, w) = {\overline{{v}}}^t H w \) where \( H \) is Hermitian, so \( {\overline{{H}}}^t = H \). This implies that \( h(v,v) \in {\mathbb{R}}^{\geq 0} \) and \( h(v,v) = 0 \iff v=0 \) with \( h(v, w) = {\overline{{h(v, w)}}} \) The great thing about metrics: we can identify zero sections by self-pairing, multiplying by a volume form, and integrating. For \( \mathcal{E}\to X \in \Bun({\mathbb{C}}) \), there is another bundle \( {\overline{{\mathcal{E}}}} \to X \in \Bun({\mathbb{C}}) \). Supposing that \( { \left.{{ \mathcal{E}}} \right|_{{U}} } \xrightarrow{\varphi_U} {\mathcal{O}}_U^{\oplus n} \) in a local trivialization, conjugating all of the transition functions gives the transition functions \( { \left.{{ {\overline{{ \mathcal{E}}}} }} \right|_{{U}} } \xrightarrow{\mathrm{conj} \circ \varphi_U} {\mathcal{O}}_U^{\oplus n} \). This yields a map
+where \( h \) is conjugate linear, so \( h(cv, c'w) = \mkern 1.5mu\overline{\mkern-1.5muc\mkern-1.5mu}\mkern 1.5muc' h(v, w) \). Note that we can write \( h(v, w) = {\overline{{v}}}^t H w \) where \( H \) is Hermitian, so \( {\overline{{H}}}^t = H \). This implies that \( h(v,v) \in {\mathbb{R}}^{\geq 0} \) and \( h(v,v) = 0 \iff v=0 \) with \( h(v, w) = {\overline{{h(v, w)}}} \) The great thing about metrics: we can identify zero sections by self-pairing, multiplying by a volume form, and integrating. For \( \mathcal{E}\to X \in \mathop{\mathrm{Bun}}({\mathbb{C}}) \), there is another bundle \( {\overline{{\mathcal{E}}}} \to X \in \mathop{\mathrm{Bun}}({\mathbb{C}}) \). Supposing that \( { \left.{{ \mathcal{E}}} \right|_{{U}} } \xrightarrow{\varphi_U} {\mathcal{O}}_U^{\oplus n} \) in a local trivialization, conjugating all of the transition functions gives the transition functions \( { \left.{{ {\overline{{ \mathcal{E}}}} }} \right|_{{U}} } \xrightarrow{\mathrm{conj} \circ \varphi_U} {\mathcal{O}}_U^{\oplus n} \). This yields a map
 \[
 h: {\overline{{ \mathcal{E} }}} \otimes_{\mathbb{C}}\mathcal{E} \to {\mathcal{O}}\in ( {\overline{{\mathcal{E}}}} \otimes\mathcal{E} )^\vee
 .\]
@@ -3375,17 +3379,21 @@ In local trivializations we have \( { \left.{{ \mathcal{E} }} \right|_{{U}} } = 
 :::
 
 ::: {.remark}
-When \( \operatorname{rank}\mathcal{E} = 1 \) we abuse notation! For \( h\in ({\overline{{\mathcal{E}}}}^\vee\otimes\mathcal{E}^\vee)(X) \), this is locally a \( 1\times 1 \) Hermitian matrix, thus of the form \( [a] \) for \( a\in {\mathbb{R}}^{\geq 0} \). So we write \( h(s, t) = hs{\overline{{t}}} \coloneqq h\otimes s \otimes{\overline{{t}}} \in ({\overline{{\mathcal{E}}}}^\vee\otimes\mathcal{E}^\vee) \otimes\mathcal{E} \otimes{\overline{{\mathcal{E}}}} = {\mathcal{O}} \) if \( \mathcal{E} \) is a line bundle. Why is \( V\otimes V^\vee= {\mathcal{O}} \) in this case? There is a pairing \( v\otimes\lambda \mapsto \lambda(v) \), or more generally a trace pairing.
+When \( \operatorname{rank}\mathcal{E} = 1 \) we abuse notation! For \( h\in ({\overline{{\mathcal{E}}}}^\vee\otimes\mathcal{E}^\vee)(X) \), this is locally a \( 1\times 1 \) Hermitian matrix, thus of the form \( [a] \) for \( a\in {\mathbb{R}}^{\geq 0} \). So we write
+\[
+h(s, t) = hs{\overline{{t}}} \coloneqq h\otimes s \otimes{\overline{{t}}} \in ({\overline{{\mathcal{E}}}}^\vee\otimes\mathcal{E}^\vee) \otimes\mathcal{E} \otimes{\overline{{\mathcal{E}}}} = {\mathcal{O}}
+\]
+if \( \mathcal{E} \) is a line bundle. Why is \( V\otimes V^\vee= {\mathcal{O}} \) in this case? There is a pairing \( v\otimes\lambda \mapsto \lambda(v) \), or more generally a trace pairing.
 :::
 
 ## Serre Duality Revisited
 
 ::: {.remark}
-Let \( X \) be a Riemann surface, so \( X\in {\mathsf{Mfd}}^1({\mathbb{C}}) \). Let \( L\to X \in \Bun^1(\Holo) \), then we have a resolution
+Let \( X \) be a Riemann surface, so \( X\in {\mathsf{Mfd}}^1({\mathbb{C}}) \). Let \( L\to X \in \mathop{\mathrm{Bun}}^1(\mathop{\mathrm{Hol}}) \), then we have a resolution
 \[
 0 \to L \hookrightarrow L\otimes A^{0, 0} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} L \otimes A^{0, 1} \to 0
 ,\]
-where the first map is inclusion of smooth holomorphic sections into smooth sections. What is this cut out by? We had \( s\mapsto \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus \) and thus \( f \mapsto {\frac{\partial f}{\partial \zbar}\,} \dzbar \). Note that \( H_1(L) = \operatorname{coker}\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu \).
+where the first map is inclusion of smooth holomorphic sections into smooth sections. What is this cut out by? We had \( s\mapsto \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mus \) and thus \( f \mapsto {\frac{\partial f}{\partial \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu }\,} \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu  \). Note that \( H_1(L) = \operatorname{coker}\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu \).
 :::
 
 ::: {.remark}
@@ -3433,7 +3441,7 @@ Note that \( \alpha\mapsto {\overline{{ \alpha}}} h \), so \( \alpha\in \ker \mk
 # Friday, March 19
 
 ::: {.remark}
-Recall Serre duality: let \( C\in {\mathsf{Mfd}}_{\mathbb{C}}^{\operatorname{compact},\oriented} \) and \( L\to C \in \Bun(\Holo) \). Then
+Recall Serre duality: let \( C\in {\mathsf{Mfd}}_{\mathbb{C}}^{{ \text{compact} } ,{ \text{oriented} } } \) and \( L\to C \in \mathop{\mathrm{Bun}}(\mathop{\mathrm{Hol}}) \). Then
 \[
 h^1(L) = h^0(L^\vee\otimes K_C)
 .\]
@@ -3443,7 +3451,17 @@ h^0(L) - h^1(L) = \deg L + 1 - g(C)
 ,\]
 where \( \deg L = \int_C c_1(L) \), which is also equal to \( \deg [ \left\{{ s = 0 }\right\}] = \deg(\operatorname{Div}s) \). Note that \( c_1 \) is the most important Chern class to know, thanks to the splitting principle. How was it defined? There are several definitions:
 
-1.  \( L \) defines an element of \( H^1(C, {\mathcal{O}}^{\times}) = \left\{{ t_{UV}: U \cap V \to {\mathbb{C}}^{\times}{~\mathrel{\Big|}~}t_{UV} t_{UW}^{-1}t_{VW} = 1 }\right\} / {{\partial}}\left\{{ h_u: U\to {\mathbb{C}}^{\times}}\right\} = \ker {{\partial}}^1 / \operatorname{im}{{\partial}}^0 \) in Čech cohomology. By definition \( {{\partial}}\left\{{ h_U {~\mathrel{\Big|}~}U\in \mathcal{U} }\right\} = \left\{{ h_u h_v^{-1}}\right\} U, V \in \mathcal{U} \), where \( {{\partial}}^2 = 1 \) since \( (h_U h_V)^{-1}\qty{h_U h_W ^{-1}}^{-1}(h_V h_W ^{-1}) = 1 \) on \( U \cap V \cap W \). By assigning \( L \) to its transition functions, we get a map \( L\to H^1 \). We have the exponential exact sequence:
+1.  \( L \) defines an element of
+    \[
+    H^1(C, {\mathcal{O}}^{\times}) 
+    &= \left\{{ t_{UV}: U \cap V \to {\mathbb{C}}^{\times}{~\mathrel{\Big|}~}t_{UV} t_{UW}^{-1}t_{VW} = 1 }\right\} / {{\partial}}\left\{{ h_u: U\to {\mathbb{C}}^{\times}}\right\} \\
+    &= \ker {{\partial}}^1 / \operatorname{im}{{\partial}}^0
+    \]
+    in Čech cohomology. By definition \( {{\partial}}\left\{{ h_U {~\mathrel{\Big|}~}U\in \mathcal{U} }\right\} = \left\{{ h_u h_v^{-1}{~\mathrel{\Big|}~}U, V \in \mathcal{U} }\right\} \), where \( {{\partial}}^2 = 1 \) since
+    \[ 
+      (h_U h_V)^{-1}\qty{h_U h_W ^{-1}}^{-1}(h_V h_W ^{-1}) = 1 && \text{on } U \cap V \cap W 
+      .\]
+    By assigning \( L \) to its transition functions, we get a map \( L\to H^1 \). We have the exponential exact sequence:
     \[
       0 \to \underline{{\mathbb{Z}}} \to {\mathcal{O}}\xrightarrow{\exp} {\mathcal{O}}^{\times}\to 1
       ,\]
@@ -3453,7 +3471,11 @@ where \( \deg L = \int_C c_1(L) \), which is also equal to \( \deg [ \left\{{ s 
       L &\mapsto c_1(L)
       .\]
 
-2.  \( L \) defines an element \( \Fr L \in \Bun^\prin({\mathbb{C}}^{\times}) \) (which only works for line bundles), which is defined by \( \Fr L = L \setminus s_0 \) where \( s_0 \) is the zero section of \( L \). By topology, we get a classifying map \( C \xrightarrow{\phi_L} B{\mathbb{C}}^{\times}= {\mathbb{CP}}^\infty = ({\mathbb{C}}^{\infty} \setminus\left\{{0}\right\}) / {\mathbb{C}}^{\times} \). There is a universal \( c_1\in H^2({\mathbb{CP}}^{\infty}; {\mathbb{Z}}) \), so we take the pullback to define \( c_1(L) \coloneqq\phi_L^*(c_1) \). We can use that there is a cell decomposition \( {\mathbb{CP}}^{\infty } = {\mathbb{C}}^0 \cup{\mathbb{C}}^1 \cup{\mathbb{C}}^2 \cup\cdots \), and so there is a unique generator in its \( H^2 \).
+2.  \( L \) defines an element \( {\operatorname{Fr}}L \in \mathop{\mathrm{Bun}}^{\operatorname{Prin}}({\mathbb{C}}^{\times}) \) (which only works for line bundles), which is defined by \( {\operatorname{Fr}}L = L \setminus s_0 \) where \( s_0 \) is the zero section of \( L \). By topology, we get a classifying map
+    \[
+    C \xrightarrow{\phi_L}  B{\mathbb{C}}^{\times}= {\mathbb{CP}}^\infty = ({\mathbb{C}}^{\infty} \setminus\left\{{0}\right\}) / {\mathbb{C}}^{\times}
+      .\]
+    There is a universal \( c_1\in H^2({\mathbb{CP}}^{\infty}; {\mathbb{Z}}) \), so we take the pullback to define \( c_1(L) \coloneqq\phi_L^*(c_1) \). We can use that there is a cell decomposition \( {\mathbb{CP}}^{\infty } = {\mathbb{C}}^0 \cup{\mathbb{C}}^1 \cup{\mathbb{C}}^2 \cup\cdots \), and so there is a unique generator in its \( H^2 \).
 
 3.  Consider a smooth section \( s\in C^{\infty }(L) \), then we can define \( c_1(L) \coloneqq[ \left\{{ s = 0 }\right\} ] \) by taking the fundamental class, assuming that \( s \) is transverse to the zero section \( s_z \) of \( L \). Here we view the zero set as an oriented submanifold. See picture: in this case \( [\left\{{ s = 0 }\right\} ] = [p] - [q] + [r] \).
 
@@ -3488,9 +3510,9 @@ Taking \( C \) of genus 2, we have \( h^0(K_C) = g= 2 \), so \( \deg K_C = 2(2) 
 \[
 {s\over t}: C\to {\mathbb{P}}^1
 .\]
-Locally we have \( s = f(z) \,dz \) for \( z \) a local holomorphic coordinate on \( C \) and \( f\in \Holo(C, {\mathbb{C}}) \), and similarly \( t = g(z) \,dz \). So \( s/t = f(z) / g(z) \) is meromorphic in this chart. Choosing a new coordinate chart \( w \), this yields a transition function \( z(w) \) -- not of \( L \), but from the atlas on \( C \). We can write \( s =f(z(w)) \, d(z(w)) = f(z(w)) z'(w) \, dw \) by the chain rule. Thus
+Locally we have \( s = f(z) \,dz \) for \( z \) a local holomorphic coordinate on \( C \) and \( f\in \mathop{\mathrm{Hol}}(C, {\mathbb{C}}) \), and similarly \( t = g(z) \,dz \). So \( s/t = f(z) / g(z) \) is meromorphic in this chart. Choosing a new coordinate chart \( w \), this yields a transition function \( z(w) \) -- not of \( L \), but from the atlas on \( C \). We can write \( s =f(z(w)) \, d(z(w)) = f(z(w)) z'(w) \, dw \) by the chain rule. Thus
 \[
-{s\over t}(z) = {f(z(w)) z'(w) \dw \over g(z(w)) z'(w) \dw} = {s \over t}(w)
+{s\over t}(z) = {f(z(w)) z'(w) \,dw\over g(z(w)) z'(w) \,dw} = {s \over t}(w)
 .\]
 So although \( s/t \) was only defined in a coordinate chart, it winds up being independent of coordinates. This works in general for any holomorphic line bundle: for \( s, t\in H^0(L) \), there is a map \( {s\over t}: C\to {\mathbb{P}}^1 \) since writing \( s_V = \varphi_{UV} s_U, t_V = \varphi_{UV} t_U \) where \( \varphi_{UV} \) is the transition function for \( L \).
 
@@ -3516,7 +3538,7 @@ Consider the curve \( y^2 = (z-1)(z-2)\cdots (z-5) \), where we think of \( z, y
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{42pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-19_14-37.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -3545,18 +3567,22 @@ If \( (X,g) \) is a compact oriented Riemannian manifold, then there is a decomp
 Note that \( \mathcal{H} \) was the space of harmonic \( p{\hbox{-}} \)forms, and \( d^\dagger: \coloneqq(-1)^? \star d\star \) where
 \[
 \star: \Omega^{p}(X) &\to \Omega^{n-p}(X) \\
-e_{i_1} \wedge \cdots \wedge e_{i_p} \mapsto \pm e_{j_1} \wedge \cdots e_{j_{n-p}}
+e_{i_1} \wedge \cdots \wedge e_{i_p} 
+&\mapsto 
+\pm e_{j_1} \wedge \cdots e_{j_{n-p}}
 \]
-where \( \left\{{ e_i}\right\} \) is an orthonormal basis of basis of \( T^\vee X \). Note that this formula is replacing the \( e_i \) that do appear with the \( e_i \) that don't appear, up to a sign.
-
-The harmonic forms were defined as \( {\mathcal{H}}^p(X) = \ker (dd^\dagger + d^\dagger d ) = \ker (d) \cap\ker(d^\dagger) \). We proved that assuming this decomposition, there is an isomorphism
+where \( \left\{{ e_i}\right\} \) is an orthonormal basis of basis of \( T^\vee X \). Note that this formula is replacing the \( e_i \) that do appear with the \( e_i \) that don't appear, up to a sign. The harmonic forms were defined as \( {\mathcal{H}}^p(X) = \ker (dd^\dagger + d^\dagger d ) = \ker (d) \cap\ker(d^\dagger) \). We proved that assuming this decomposition, there is an isomorphism
 \[
 {\mathcal{H}}^p(X) \cong H^p_{\mathrm{dR}}(X; {\mathbb{R}})
 .\]
 :::
 
 ::: {.example title="The circle $S^1$"}
-There's a standard flat metric \( g_\text{std} \) on \( S^1 \) where \( g_\text{std}= \,dx^2 \) with \( x \) the coordinate on \( {\mathbb{R}} \) which is the universal cover of \( S^1 \). We can write \( \Omega^1(S^1) = \left\{{ f(x)\,dx{~\mathrel{\Big|}~}f \in C^{\infty }(S^1, {\mathbb{R}}) }\right\} \), since every 1-form \( \omega \) looks like this. Then \( d \omega = 0 \) since this is a 2-form on \( S^1 \). On the other hand, what is \( d^\dagger \)? \( \star\omega \) is a 0-form, so a function. The volume form is given by \( \sqrt{ \det g_\text{std}} = \sqrt{ [\,dx^2 ] } \), and you can wedge \( 1\wedge dx = dx \), so \( \star\omega = f(x) \). Then \( d \star\omega = f'(x) \,dx \) and \( d^\dagger x \omega = f'(x) \). If this is zero, \( f'(x) = 0 \) and \( f \) is a constant function. So in this metric, \( {\mathcal{H}}^1(S^1) = {\mathbb{R}}\left\langle{ \,dx}\right\rangle \cong H^1(S^1; {\mathbb{R}}) \).
+There's a standard flat metric \( g_\text{std} \) on \( S^1 \) where \( g_\text{std}= \,dx^2 \) with \( x \) the coordinate on \( {\mathbb{R}} \) which is the universal cover of \( S^1 \). We can write
+\[ 
+\Omega^1(S^1) = \left\{{ f(x)\,dx{~\mathrel{\Big|}~}f \in C^{\infty }(S^1, {\mathbb{R}}) }\right\} 
+,\]
+since every 1-form \( \omega \) looks like this. Then \( d \omega = 0 \) since this is a 2-form on \( S^1 \). On the other hand, what is \( d^\dagger \)? We know that \( \star\omega \) is a 0-form, so a function. The volume form is given by \( \sqrt{ \det g_\text{std}} = \sqrt{ [\,dx^2 ] } \), and you can wedge \( 1\wedge dx = dx \), so \( \star\omega = f(x) \). Then \( d \star\omega = f'(x) \,dx \) and \( d^\dagger x \omega = f'(x) \). If this is zero, \( f'(x) = 0 \) and \( f \) is a constant function. So in this metric, \( {\mathcal{H}}^1(S^1) = {\mathbb{R}}\left\langle{ \,dx}\right\rangle \cong H^1(S^1; {\mathbb{R}}) \).
 :::
 
 ::: {.remark title="Important"}
@@ -3567,8 +3593,8 @@ The harmonic forms \( {\mathcal{H}}^p(X) \) depend on the metric \( g \), despit
 This was just in the case of a real smooth Riemannian manifold. What extra structure to we have for \( X \in {\mathsf{Mfd}}(\mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}}) ) \)?
 :::
 
-::: {.definition title="Kahler Forms (Important!)"}
-Let \( X\in {\mathsf{Mfd}}( \mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}}) ) \) be a complex manifold. A **Kahler form** \( \omega\in \Omega^2(X_{\mathbb{R}}) \) is a closed real (possibly needed: \( J{\hbox{-}} \)invariant) 2-form on the underlying real manifold of \( X \) for which \( \omega(v, Jw) \coloneqq g(v, w) \) is a metric on \( TX_{\mathbb{R}} \) where \( J \) is an almost complex structure. The associated **hermitian metric** is \( h\coloneqq g + i \omega \), which defines a hermitian form on \( TX \in {\mathsf{Vect}}_{\mathbb{C}} \).
+::: {.definition title="Kähler Forms (Important!)"}
+Let \( X\in {\mathsf{Mfd}}( \mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}}) ) \) be a complex manifold. A **Kähler form** \( \omega\in \Omega^2(X_{\mathbb{R}}) \) is a closed real (possibly needed: \( J{\hbox{-}} \)invariant) 2-form on the underlying real manifold of \( X \) for which \( \omega(v, Jw) \coloneqq g(v, w) \) is a metric on \( TX_{\mathbb{R}} \) where \( J \) is an almost complex structure. The associated **hermitian metric** is \( h\coloneqq g + i \omega \), which defines a hermitian form on \( TX \in {\mathsf{Vect}}_{\mathbb{C}} \).
 :::
 
 ::: {.example title="?"}
@@ -3587,17 +3613,15 @@ Take \( X \coloneqq{\mathbb{C}}^n \) and \( J(v) \coloneqq i\cdot v \). Note tha
 \omega\qty{ {\frac{\partial }{\partial y_k}\,}, {\frac{\partial }{\partial x_k}\,} } 
 &= -1
 .\]
-So we can write this in block form using blocks \[ M =
-```{=tex}
+So we can write this in block form using blocks
+\[
+M = 
 \begin{bmatrix}
 0 & 1 
 \\
 -1 & 0
-\end{bmatrix}
-```
-&& `\omega `{=tex}=
-
-```{=tex}
+\end{bmatrix} &&
+\omega =
 \begin{bmatrix}
 M &  & 
 \\
@@ -3605,15 +3629,15 @@ M &  &
 \\
  &  & M
 \end{bmatrix}
-```
-,\] which is a closed (\( d\omega = 0 \)) antisymmetric 2-form, i.e. a symplectic form, and
+,\]
+which is a closed (\( d\omega = 0 \)) antisymmetric 2-form, i.e. a symplectic form, and
 \[
 \omega_\text{std}= dx_1 \wedge dy_1 + dx_2 \wedge dy_2 + \cdots + dx_n \wedge dy_n
 ,\]
 :::
 
 ::: {.remark}
-So the Kahler geometry is determined by the data \( ({\mathbb{C}}^n, g_\text{std}, J, \omega_\text{std}) \), i.e. a metric, an almost complex structure, and a symplectic form. Note that the relation \( \omega(x, y) = g(x, Jy) \) can be used to determine the 3rd piece of data from any 2. This is the fiberwise/local model, i.e. every tangent space at a point looks like this.
+So the Kähler geometry is determined by the data \( ({\mathbb{C}}^n, g_\text{std}, J, \omega_\text{std}) \), i.e. a metric, an almost complex structure, and a symplectic form. Note that the relation \( \omega(x, y) = g(x, Jy) \) can be used to determine the 3rd piece of data from any 2. This is the fiberwise/local model, i.e. every tangent space at a point looks like this.
 :::
 
 ::: {.warnings}
@@ -3639,7 +3663,7 @@ An almost complex structure \( J \) is **\( \omega{\hbox{-}} \)tame** if \( g(v,
 :::
 
 ::: {.remark}
-Next time: we'll see that if \( X \) is Kahler, then
+Next time: we'll see that if \( X \) is Kähler, then
 \[ 
 {\mathcal{H}}^k(X) = \bigoplus_{p+q=k} {\mathcal{H}}^{p, q}(X), 
 \]
@@ -3647,7 +3671,163 @@ so this is compatible with the Hodge decomposition. This is what people usually 
 :::
 
 ::: {.remark}
-Note that there is a notion of *hyperkähler* manifolds, which have 3 complex structures \( I, J, K \) such that \( I^2=J^2=K^2 = IJK = -\one \), yielding 3 "parallel" 2-forms \( \omega_I, \omega_J, \omega_K \) such that the covariant derivative vanishes, i.e. \( \covariant_g \left\{{ \omega_I, \omega_J, \omega_K }\right\} = 0 \). With respect to the complex structure \( I \), \( \omega_J + \omega_K \) is a holomorphic 2-form. There is a sphere's worth of almost complex structures, and there is an action \( {\operatorname{SO}}(4, b_2 - 4) \acts H^*(X) \). There's no known example where the hyperkähler metric has been explicitly written down.
+Note that there is a notion of *hyperkähler* manifolds, which have 3 complex structures \( I, J, K \) such that \( I^2=J^2=K^2 = IJK = -\one \), yielding 3 "parallel" 2-forms \( \omega_I, \omega_J, \omega_K \) such that the covariant derivative vanishes, i.e. \( \nabla_g \left\{{ \omega_I, \omega_J, \omega_K }\right\} = 0 \). With respect to the complex structure \( I \), \( \omega_J + \omega_K \) is a holomorphic 2-form. There is a sphere's worth of almost complex structures, and there is an action \( {\operatorname{SO}}(4, b_2 - 4) \curvearrowright H^*(X) \). There's no known example where the hyperkähler metric has been explicitly written down.
+:::
+
+# Wednesday, March 24
+
+::: {.remark}
+Last time: we defined a **Kähler manifold**: \( X\in {\mathsf{Mfd}}({\mathbb{C}})_{ \text{compact} }  \) and \( \omega \in \Omega^2(X_{\mathbb{R}}) \) a closed real 2-form such that \( g(x, y) \coloneqq\omega(x, Jy) \) is a metric. By the Hodge theorem, we have a space \( {\mathcal{H}}^k(X) \) of harmonic \( k{\hbox{-}} \)forms for \( (X, g) \) which represents \( H^k_{\mathrm{dR}}(X; {\mathbb{R}}) \). We can consider the \( {\mathbb{C}}{\hbox{-}} \)valued harmonic forms \( {\mathcal{H}}^k_{\mathbb{C}}\coloneqq{\mathcal{H}}^k(X) \otimes_{\mathbb{R}}{\mathbb{C}} \), which represents \( H^k_\mathrm{dR}(X; {\mathbb{C}}) \)
+:::
+
+::: {.question}
+How does this interact with the decomposition of the smooth \( k{\hbox{-}} \)forms
+\[
+\Omega^k(X_{\mathbb{R}})\otimes_{\mathbb{R}}{\mathbb{C}}= \bigoplus_{p+q=k}^K A^{p, q}(X)
+,\]
+where \( {\mathcal{H}}^k_{\mathbb{C}}(X) \) is contained in this. Note that this is a small finite dimensional space in an infinite dimensional space! The following miracle occurs:
+:::
+
+::: {.theorem title="?"}
+If \( X \in {\mathsf{Mfd}}(\text{Kähler}) \),
+\[
+{\mathcal{H}}^k_{\mathbb{C}}= \bigoplus_{p+q = k} {\mathcal{H}}^{p, q}(X)
+,\]
+where
+\[
+{\mathcal{H}}^{p, q}(X) \coloneqq
+\qty{ {\mathcal{H}}^K(X) \otimes_{\mathbb{R}}{\mathbb{C}}} \cap A^{p, q}(X) \subseteq \Omega^k(X_{\mathbb{R}})
+.\]
+:::
+
+::: {.example title="?"}
+Let \( X = {\mathbb{C}}/ \Lambda \) be an elliptic curve where \( \Lambda \) is a lattice. The standard metric \( dx^2 + dy^2 \) on \( {\mathbb{C}} \) descends to a metric on \( X \) since translation is an isometry on the metric space \( ({\mathbb{C}}, dx^2 + dy^2) \). Let \( z=x+iy \) be a complex coordinate on \( {\mathbb{C}} \) so \( dz = dx + idy \) and \( d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu = dx - idy \), then \( dx^2 + dy^2 = dz d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \in \operatorname{Sym}^2(\mathrm{T}{\mathbb{C}}) \). The symplectic form is given by
+\[ 
+\omega(v, w) = \pm g(v, Jw) = i \,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu (v, w) 
+\]
+since \( J \) is given by \( i \) on \( {\mathbb{C}} \). Then \( \omega(v, w) = i \,dz(v) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu (w) \), i.e. \( \omega = i\,dz\wedge \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu  \). So
+\[ 
+\mkern 1.5mu\overline{\mkern-1.5mu \omega\mkern-1.5mu}\mkern 1.5mu = \mkern 1.5mu\overline{\mkern-1.5mui\mkern-1.5mu}\mkern 1.5mu \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \wedge \,dz= -i \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \wedge \,dz= i\,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu = \omega
+, \]
+and this determines the Kähler geometry on \( X \). What are the harmonic 1-forms on \( X \), \( {\mathcal{H}}^1(X) \otimes_{\mathbb{R}}{\mathbb{C}} \)? Note that \( \omega= \,dV \) is the volume form. The smooth 1-forms are given by
+\[ 
+\Omega^1(X_{\mathbb{R}}) \otimes_{\mathbb{R}}{\mathbb{C}}= A^{1, 0}(X) \oplus A^{0, 1}(X) = \left\{{ f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu )\,dz}\right\} \oplus \left\{{ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu }\right\}
+,\]
+where \( f,g \) are smooth and \( \Lambda{\hbox{-}} \)periodic on \( {\mathbb{C}} \) to make them well-defined. We can find the Hodge star:
+\[
+\star: ? &\to ? \\
+\,dz& \mapsto i\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \\
+\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu &\mapsto -i\,dz
+.\]
+Writing \( \alpha\coloneqq f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,dz+ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu  \), this is harmonic if \( d \alpha = 0 \) and \( \star{d} \mkern-5mu \star\alpha = 0 \). The first implies \( \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu} f - \partial_{z} g = 0 \). What does the second imply? We can compute
+\[
+\star\alpha 
+&= if(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu ) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu - ig(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,dz\\
+\implies \partial_z f + \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu} g 
+&= 0
+,\]
+and so \( \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu} f = \partial_z g \) and \( \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu}^2 f = \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu} \partial_z g = - \partial_z^2 f \), so
+\[
+\qty{ \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu}^2 + \partial_z^2 }f &= 0 \\
+\qty{ \partial_{\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu}^2 + \partial_z^2 }g &= 0 
+.\]
+
+Note that this recovers the usual notion of harmonic functions on \( {\mathbb{C}} \), i.e. being in the kernel of the Laplacian. The only biperiodic functions that satisfy these equations are constants, since there is a maximum modulus principle for harmonic functions. Thus
+\[
+{\mathcal{H}}^1(X) \otimes_{\mathbb{R}}{\mathbb{C}}= \left\{{ c_1 \,dz+ c_2 \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu }\right\} = {\mathbb{C}}\,dz\oplus {\mathbb{C}}\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu = H^{1, 0}(X) \oplus H^{0, 1}(X) 
+.\]
+:::
+
+::: {.remark}
+There is a generalization to higher genus curves. Recall the following theorem:
+:::
+
+::: {.theorem title="Uniformization"}
+Let \( C \in {\mathsf{Mfd}}^1({\mathbb{C}})_{ \text{compact} }  \) of genus \( g\geq 2 \). Then the universal cover admits a biholomorphism
+\[
+\tilde C \cong \H \coloneqq\left\{{ z\in {\mathbb{C}}{~\mathrel{\Big|}~}\Im(z) > 0 }\right\}
+.\]
+:::
+
+::: {.remark}
+This essentially follows from the Riemann mapping principle.
+:::
+
+::: {.corollary title="?"}
+Any curve \( C \) of genus \( g\geq 2 \) is of the form \( C = \H/ \Gamma \) where \( \Gamma \leq \mathop{\mathrm{BiHol}}(\H) \) is a subgroup that acts freely. By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \mathop{\mathrm{BiHol}}(\H) \cong {\operatorname{PSL}}_2({\mathbb{R}}) \) by the map
+\[
+\begin{bmatrix}
+a & b 
+\\
+c & d
+\end{bmatrix}
+z
+\mapsto 
+{az + b \over cz + d}
+.\]
+:::
+
+::: {.proposition title="?"}
+The upper half plane \( \H \) admits a **hyperbolic metric** which is invariant under \( {\operatorname{PSL}}_2({\mathbb{R}}) \) given by
+\[
+g_{\text{hyp}} = {dx^2 + dy^2 \over y^2 } = {\,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \over \Im(z)^2 }
+.\]
+:::
+
+::: {.proof title="?"}
+This follows from a computation:
+\[
+d\qty{ az + b \over cz + d} 
+&= {a\,dz\over cz + d} - {c (az+b)\,dz\over (dz+d)^2 } \\
+&= {a (cz+d) - c(az+b) \,dz\over (cz+d)^2} \\
+&= { (ad-bc)\,dz\over  (cz + d)^2 } \\
+&= {\,dz\over  (cz + d)^2 } \\
+&= { d\qty{ az+b \over cz+d} d \qty{\mkern 1.5mu\overline{\mkern-1.5mu az + b \over cz + d\mkern-1.5mu}\mkern 1.5mu} \over \Im\qty{az+b \over cz+d}^2 } \\
+&= { \,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \over (cz+d)^2(c \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu + d)^2 \Im\qty{az+b \over cz+d} } \\
+&= { \,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \over \Im(z)^2 } 
+.\]
+:::
+
+::: {.remark}
+It's miraculous! The biholomorphisms of \( \H \) preserve a metric. So \( C \) has a canonical metric, \( g_\text{hyp} \), which descends along the quotient map \( \H \to \H/\Gamma \cong {\mathbb{C}} \).
+:::
+
+::: {.question}
+What are the harmonic 1-forms on \( (C, g_\text{hyp}) \)?
+:::
+
+::: {.remark}
+By lifting we can write
+\[ 
+\Omega^1(C_{\mathbb{R}}) \otimes_{\mathbb{R}}{\mathbb{C}}= A^{1, 0}(C) \oplus A^{0, 1}(C) 
+= 
+\left\{{ f(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu)\,dz+ g(z, \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu) \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu {~\mathrel{\Big|}~}z\in \H, \, f,g\in C^{\infty }({\mathbb{C}}, {\mathbb{R}}) }\right\}  
+\]
+But \( \,dz \) is *not* invariant under the map \( z\mapsto {az+b \over cz+d} \), since \( \,dz\mapsto {\,dz\over (cz+d)^2 } \). In order to descend \( f(z) \) to \( C \), we need
+\[
+f\qty{az +b \over cz + d} = (cz+d)^2 f(z)
+&&
+\text{ for all } 
+\begin{bmatrix}
+a & b 
+\\
+c & d
+\end{bmatrix}
+\in \Gamma
+\]
+This says that \( f \) is a **modular form of weight 2**.
+:::
+
+::: {.exercise title="?"}
+Check that this implies that \( f \) must be holomorphic and \( g \) must be antiholomorphic.
+:::
+
+::: {.fact}
+There is a decomposition
+\[
+{\mathcal{H}}^1(C_{\mathbb{R}}) \otimes_{\mathbb{R}}{\mathbb{C}}= {\mathcal{H}}^{1, 0}(C) \oplus {\mathcal{H}}^{0, 1}(C)
+,\]
+and the first space will be the space of holomorphic 1-forms \( H^0(K_C) \), and the second term will be \( \mkern 1.5mu\overline{\mkern-1.5muH^0(K_C)\mkern-1.5mu}\mkern 1.5mu \). This shows the power of the Hodge decomposition theorem!
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
