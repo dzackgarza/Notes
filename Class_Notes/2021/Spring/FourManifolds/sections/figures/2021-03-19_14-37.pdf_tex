@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{876.27115919bp}%
+    \setlength{\unitlength}{648.91521945bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,14 +50,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.35173065)%
+  \begin{picture}(1,0.44575074)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-03-19_14-37.pdf}}%
-    \put(0.85598534,0.0517732){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\PP^1$\end{tabular}}}}%
+    \put(0.53305459,0.00679467){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\PP^1$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-03-19_14-37.pdf}}%
-    \put(0.68333377,0.04306131){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\\infty$\end{tabular}}}}%
+    \put(0.84182859,0.09412194){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{2021-03-19_14-37.pdf}}%
-    \put(0.43659463,0.17159911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z$\end{tabular}}}}%
+    \put(0.49698326,0.20386238){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
