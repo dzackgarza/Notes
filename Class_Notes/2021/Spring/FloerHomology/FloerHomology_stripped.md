@@ -1696,7 +1696,7 @@ Equivalently, handle sliding \( \alpha_1 \) over \( \alpha_2 \) replaces \( \alp
 
 ![image_2021-02-11-11-53-22](figures/image_2021-02-11-11-53-22.png)
 
-3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{ \Large\text{#} }T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
+3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
 
 ![image_2021-02-11-12-10-06](figures/image_2021-02-11-12-10-06.png)
 
@@ -1710,7 +1710,7 @@ Show that any two sets of attaching curves for a handlebody \( H \) can be relat
 ::: {.exercise title="?"}
 Show that stabilization yields a Heegard diagram for the same manifold.
 
-*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{ \Large\text{#} }S^3 \).*
+*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}S^3 \).*
 :::
 
 ::: {.theorem title="?"}
@@ -3134,14 +3134,14 @@ Remarks on these:
 
 ![image_2021-03-18-11-51-38](figures/image_2021-03-18-11-51-38.png)
 
-For an appropriate choice of \( J \) on \( \Sigma \mathop{ \Large\text{#} }T^2 \), the map \( f \) above will induce a chain homotopy equivalence
+For an appropriate choice of \( J \) on \( \Sigma \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}T^2 \), the map \( f \) above will induce a chain homotopy equivalence
 \[
 \tilde f: 
 \widehat{\operatorname{HF}}
 (\Sigma, \alpha, \beta, z)
 \xrightarrow{\sim} 
 \widehat{\operatorname{HF}}
-(\Sigma \mathop{ \Large\text{#} }T^2, \alpha', \beta', z)
+(\Sigma \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}T^2, \alpha', \beta', z)
 .\]
 
 4.  What's the picture?
@@ -3171,7 +3171,7 @@ What does the middle one represent?
 
 ![Heegard diagram](figures/image_2021-03-18-12-02-39.png)
 
-Here this is a diagram for \( (S^1 \times S^2)^{\mathop{ \Large\text{#} }2} \).
+Here this is a diagram for \( (S^1 \times S^2)^{\mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}2} \).
 
 Note that we draw \( \gamma_i \) such that it intersects \( \beta_i \) in two transverse intersection points to make sure the diagram is admissible.
 :::
@@ -3305,7 +3305,7 @@ d(M, s) = \max \left\{{ {\operatorname{gr}}( \alpha) {~\mathrel{\Big|}~}\alpha\i
 ::: {.definition title="Rational Homology Cobordism Group"}
 The **rational homology cobordism group** is denoted
 \[
-\qty{\Theta_{\mathbb{Q}}^3 \coloneqq\left\{{ M \in \operatorname{QHS}^3 }\right\} /\sim, \mathop{ \Large\text{#} }}
+\qty{\Theta_{\mathbb{Q}}^3 \coloneqq\left\{{ M \in \operatorname{QHS}^3 }\right\} /\sim, \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}}
 \]
 where \( M_1\sim M_2 \) if and only if they are *rationally homology cobordant*, i.e. 
 
