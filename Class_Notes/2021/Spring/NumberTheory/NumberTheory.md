@@ -3,7 +3,13 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\barz}{\bar{z} }
+\newcommand{\dzbar}{\,d\bar{z} }
+\newcommand{\zbar}{\bar{z} }
 \newcommand{\du}{\,du}
+\newcommand{\dw}{\,dw}
+\newcommand{\dV}{\,dV}
+\newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
@@ -49,7 +55,6 @@
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
-\newcommand{\Ch}[0]{\operatorname{Ch}}
 \newcommand{\HF}[0]{\operatorname{HF}}
 \newcommand{\CF}[0]{\operatorname{HF}}
 \newcommand{\ZHS}[0]{\operatorname{ZHS}}
@@ -65,7 +70,6 @@
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
-\newcommand{\Perv}[0]{\operatorname{Perv}}
 \newcommand{\Gal}[0]{\operatorname{Gal}}
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
@@ -86,7 +90,6 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
-\newcommand{\Tot}[0]{\mathrm{\operatorname{Tot}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -95,26 +98,18 @@
 \newcommand{\HP}[0]{{\operatorname{HP}}}
 \newcommand{\TP}[0]{{\operatorname{TP}}}
 \newcommand{\HC}[0]{{\operatorname{HC}}}
-\newcommand{\HH}[0]{{\operatorname{HH}}}
-\newcommand{\THH}[0]{{\operatorname{THH}}}
+\newcommand{\HH}[0]{{\mathbb{H}}}
+\newcommand{\HoH}[0]{{\operatorname{HH}}}
+\newcommand{\THoH}[0]{{\operatorname{THH}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
-\newcommand{\qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathrm{QCoh}}}
-\newcommand{\ssets}[0]{\operatorname{sSets}}
-\newcommand{\Ring}[0]{\mathbf{Ring}}
-\newcommand{\Cat}[0]{\mathbf{Cat}}
 \newcommand{\codim}[0]{\operatorname{codim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
+\newcommand{\dR}[0]{\mathrm{dR}}
 \newcommand{\txor}[0]{{\operatorname{ or }}}
 \newcommand{\txt}[1]{{\operatorname{ {#1} }}}
-\newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\operatorname{gr}}}
-\newcommand{\grMod}[0]{{\operatorname{grMod}}}
-\newcommand{\bimod}[2]{({#1}, {#2})\dash\mathbf{biMod}}
 \newcommand{\dcoset}[3]{
     {\textstyle #1}
     \mkern-4mu\scalebox{1.5}{$\diagdown$}\mkern-5mu^{\textstyle #2}
@@ -125,7 +120,6 @@
 \newcommand{\Inn}[0]{{\operatorname{Inn}}}
 \newcommand{\Out}[0]{{\operatorname{Out}}}
 \newcommand{\mltext}[1]{\left\{\begin{array}{c}#1\end{array}\right\}}
-\newcommand{\Fun}[0]{{\operatorname{Fun}}}
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
@@ -134,27 +128,56 @@
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
-\newcommand{\mcTop}[0]{\mathcal{T}\operatorname{op}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
-\newcommand{\alg}[0]{\mathrm{Alg}}
-\newcommand{\scalg}[0]{\mathrm{sCAlg}}
-\newcommand{\calg}[0]{\mathrm{CAlg}}
-\newcommand{\dR}[0]{\mathrm{dR}}
-\newcommand{\poly}[0]{\operatorname{poly}}
-\newcommand{\Vect}[0]{{\operatorname{Vect}}}
-\newcommand{\Sh}[0]{{\operatorname{Sh}}}
-\newcommand{\presh}[0]{{\operatorname{Presh}}}
-\newcommand{\Presh}[0]{{\operatorname{Presh}}}
+\newcommand{\Cat}[0]{\mathsf{Cat}}
+\newcommand{\Fun}[0]{{\mathsf{Fun}}}
+\newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\poly}[0]{\mathsf{poly}}
+\newcommand{\Vect}[0]{{\mathsf{Vect}}}
+\newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Ch}[0]{\mathsf{Ch}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Set}[0]{{\mathsf{Set}}}
+\newcommand{\Sets}[0]{{\mathsf{Set}}}
+\newcommand{\sets}[0]{{\mathsf{Set}}}
+\newcommand{\Grp}[0]{{\mathsf{Grp}}}
+\newcommand{\Groups}[0]{{\mathsf{Groups}}}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\Ab}[0]{{\mathsf{Ab}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
+\newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
+\newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
+\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+\newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\eul}[0]{{\operatorname{eul}}}
+\newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
-\newcommand{\Set}[0]{{\operatorname{Set}}}
-\newcommand{\Sets}[0]{{\operatorname{Set}}}
-\newcommand{\Grp}[0]{{\operatorname{Grp}}}
-\newcommand{\Groups}[0]{{\operatorname{Groups}}}
 \newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
 \newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
@@ -162,7 +185,6 @@
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
 \newcommand{\Ext}{\operatorname{Ext}}
-\newcommand{\sets}[0]{{\operatorname{Set}}}
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
 \newcommand{\fin}[0]{{\operatorname{fin}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
@@ -179,7 +201,11 @@
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
 \newcommand{\height}[0]{\operatorname{ht}}
-\newcommand{\cpt}[0]{\operatorname{compact}}
+\newcommand{\cpt}[0]{{ \text{compact} } }
+\newcommand{\oriented}[0]{{ \text{oriented} } }
+\newcommand\compact[0]{\text{cpt}}
+\newcommand\Kahler[0]{\text{Kähler}}
+\newcommand\hyp[0]{\text{hyp}}
 \newcommand{\abs}[1]{{\left\lvert {#1} \right\rvert}}
 \newcommand{\stack}[1]{\mathclap{\substack{ #1 }}} 
 \newcommand{\qtext}[1]{{\quad \operatorname{#1} \quad}}
@@ -189,10 +215,13 @@
 \newcommand{\bd}[0]{{\del}}
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
+\newcommand{\freeprod}[0]{\ast}
+\newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
 \newcommand{\cok}[0]{\operatorname{coker}}
+\newcommand{\PD}[0]{\mathrm{PD}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
@@ -239,6 +268,7 @@
 \newcommand{\mfp}[0]{{\mathfrak{p}}}
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
+\newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieb}[0]{{\mathfrak{b}}}
 \newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
@@ -259,7 +289,7 @@
 \newcommand{\ms}[0]{\xrightarrow{\sim}}
 \newcommand{\from}[0]{\leftarrow}
 \newcommand{\mapstofrom}[0]{\rightleftharpoons}
-\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#1}^{#2}}}
+\newcommand{\mapscorrespond}[2]{\mathrel{\operatorname*{\rightleftharpoons}_{#2}^{#1}}}
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
@@ -314,6 +344,8 @@
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
 \newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\Fr}[0]{{\operatorname{Fr}}}
+\newcommand{\prin}[0]{{\operatorname{Prin}}}
 \newcommand{\Taut}[0]{{\operatorname{Taut}}}
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
@@ -345,20 +377,6 @@
 \newcommand{\rk}[0]{{\operatorname{rank}}}
 \newcommand{\evalfrom}[0]{\Big|}
 \renewcommand{\mod}{\pmod}
-\newcommand{\Top}[0]{{\mathbf{Top}}}
-\newcommand{\Mfd}[0]{{\mathbf{Mfd}}}
-\newcommand{\Ab}[0]{{\mathbf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathbf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathbf{Sch}}}
-\newcommand{\sch}[0]{{\mathbf{Sch}}}
-\newcommand{\rmod}[0]{{R\dash\mathbf{Mod}}}
-\newcommand{\modr}[0]{{\mathbf{Mod}\dash R}}
-\newcommand{\mmod}[0]{{\dash\operatorname{Mod}}}
-\newcommand{\mods}[1]{{{#1}\dash\mathbf{Mod}}}
-\newcommand{\modsright}[1]{\mathbf{Mod}\dash{#1}}
-\newcommand{\modsleft}[1]{{#1}\dash\mathbf{<od}}
-\newcommand{\kmod}[0]{{k\dash\mathbf{Mod}}}
-\newcommand{\Mod}[0]{{\operatorname{Mod}}}
 \newcommand{\rotate}[2]{{\style{display: inline-block; transform: rotate(#1deg)}{#2}}}
 \newcommand{\selfmap}[0]{{\circlearrowleft}}
 \newcommand{\semidirect}[0]{\rtimes}
@@ -381,7 +399,7 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
+\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -410,7 +428,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{\mathbf{#1}}
+\newcommand{\complex}[1]{{#1}^{\wait}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -441,6 +459,8 @@
 \DeclareMathOperator{\res}{Res}
 \DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\Hol}{Hol}
+\DeclareMathOperator{\Bun}{Bun}
+\DeclareMathOperator{\BiHol}{BiHol}
 \DeclareMathOperator{\Br}{Br}
 \DeclareMathOperator{\coh}{coh}
 \DeclareMathOperator{\colspace}{colspace}
@@ -477,8 +497,13 @@
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
+\newcommand\std[0]{\text{std}}
 \newcommand\Mero[0]{\operatorname{Mero}}
-\newcommand\compact[0]{\text{cpt}}
+\newcommand\even[0]{\text{even}}
+\newcommand\odd[0]{\text{odd}}
+\newcommand\hodgestar[0]{\star}
+\newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
+\newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
@@ -492,15 +517,7 @@
 \newcommand\cupp[0]{\smile}
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
-
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
+\newcommand\ev[0]{\operatorname{ev}}
 
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
@@ -513,8 +530,17 @@
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
+\newcommand{\Triv}[0]{\operatorname{Triv}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
+
+\newcommand{\Tot}[0]{\operatorname{Tot}}
+\newcommand{\Totsum}[0]{\Tot^{\oplus}}
+\newcommand{\Totprod}[0]{\Tot^{\Pi}}
+\newcommand{\equalsbecause}[1]{\overset{#1}{=}}
+\newcommand{\congbecause}[1]{\overset{#1}{\cong}}
+\newcommand{\ideal}[1]{\mathcal{#1}}
+\newcommand{\forget}[0]{\mathrm{Forget}}
 
 # Thursday, January 14
 
@@ -4426,6 +4452,662 @@ p \text{ ramifies in } \ZZ_K \iff p \divides \discriminant_K
 where **ramification** occurs if when \( \gens{ p }\normal \ZZ_K  \) factors into prime ideals with a repeated prime factor.
 In particular, \( \discriminant(\wait) < \infty \), and so only finitely many such primes can occur.
 :::
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Saturday, March 13
+
+## Discriminants
+
+:::{.example title="?"}
+Suppose \( K = \QQ( \sqrt{d} ) \) where $d$ is squarefree.
+What is its discriminant?
+We need a $\ZZ\dash$basis of $\ZZ_K$, for $d=2,3 \mod 4$ we can take \( (1, \sqrt{d} ) \).
+Then we construct a matrix whose columns are the different embeddings of each entry.
+The embeddings here are the identity and complex conjugation, so we get
+\[
+\Delta_K = \Delta(1, \sqrt{ d} )
+= 
+\det 
+\qty{
+\begin{bmatrix}
+1 & \sqrt{d} 
+\\
+ 1 & -\sqrt{d} 
+\end{bmatrix}
+}^2
+= (-2 \sqrt{d} )^2 = 4d
+.\]
+If $d = 1 \mod 4$, then we can take a basis $(1, {1 + \sqrt{d} \over 2})$,
+and
+\[
+\Delta_K
+=
+\qty{
+\begin{bmatrix}
+1 & {1 + \sqrt{d} \over 2}
+\\
+1 & {1 - \sqrt{d} \over 2}
+\end{bmatrix}
+}^2
+= (- \sqrt{d} )^2 = d
+.\]
+So we have
+\[
+\Delta_K = 
+
+\begin{cases}
+d & d = 1 \mod 4 
+\\
+4d & d = 2,3 \mod 4 .
+\end{cases}
+.\]
+
+:::
+
+:::{.remark}
+Note that $\Delta_\QQ = 1$ if you trace through the computation.
+:::
+
+## Norms of Ideals
+
+
+:::{.definition title="?"}
+Let $I \normal \ZZ_K$ be a nonzero ideal, then define \( N(I) \da \# \ZZ_K/I \).
+:::
+
+
+:::{.remark}
+Note that this was finite in the quadratic field case since nonzero ideals had a "standard basis".
+For general number fields, the ideals can be more complicated, so we'll need another way to show finiteness.
+:::
+
+
+:::{.lemma title="?"}
+Let \( \alpha\in \ZZ_K \), then \( \alpha\divides N( \alpha) \) in \( \ZZ_K \).
+:::
+
+
+:::{.proof title="of lemma"}
+Write down the obvious thing and see that it works!
+\[
+N \alpha 
+\da \prod_{ \sigma: K \embeds \CC} \sigma( \alpha) \\
+= \alpha \prod_{ \substack{ \sigma: K \embeds \CC \\ \sigma\neq \one_K } } \sigma( \alpha) \\
+&\da \alpha C 
+,\]
+where we've used that one embedding is the identity and factored it out.
+So it only remains to show that the *cofactor* $C$ (the product term) is actually in $\ZZ_K$.
+It is \( \bar{ZZ} \), since \( \alpha \) was an algebraic integer, i.e. a root of some monic polynomial with integer coefficients.
+But then under every embedding, \( \sigma( \alpha) \) is a root of the same monic polynomial, so each \( \sigma( \alpha) \in \bar{\ZZ} \), as is their product since it's a ring.
+On the other hand, we can write \( C = N \alpha/ \alpha \).
+Since \( N \alpha \) is a nonzero rational integer and \( \alpha\in K \), and since $K$ is a field, this quotient is in $K$.
+But then \( C \in \bar{\ZZ} \intersect K = \ZZ_K \). 
+:::
+
+
+
+:::{.proposition title="?"}
+For $I\normal \ZZ_K$ nonzero,
+\[
+N(I) < \infty 
+.\]
+:::
+
+
+:::{.proof title="?"}
+We start with principal ideals.
+Let $m\in \ZZ^+$, then \( \ZZ_K \gens{ m } \da \ZZ_K /m \ZZ_K \cong_{\zmod} \ZZ^n / m\ZZ^n \cong (\ZZ/m\ZZ)^n  \) where we've forgotten the ring structure and are just considering it as a \(\ZZ\dash\)module .
+But this has size $m^n < \infty$.
+
+Now let \( \alpha\in I \) be nonzero and let \( m \da \pm N \alpha \), choosing whichever sign makes $m>0$.
+Since \( \alpha\divides N \alpha \), so \( N \alpha = \ell \alpha \) is a multiple of \( \alpha \).
+But \( \alpha\in I \) and $I$ is an ideal, so \( N \alpha\in I \implies m \in I\).
+Then (check!) the following map is surjective:
+\[
+\ZZ_K/ \gens{ m } &\surjects \ZZ_K/I \\
+[ \alpha]_m &\mapsto [ \alpha]_I
+,\]
+where we've used \( m\in I \) for this to be well-defined.
+So $\# \ZZ_K /I \leq \ZZ_K / \gens{ m } = m^n < \infty$. 
+:::
+
+
+:::{.theorem title="The norm is multiplicative"}
+For every pair $I, J\normal \ZZ_K$ nonzero, 
+\[
+N( IJ) + N(I) N(J)
+.\]
+:::
+
+
+:::{.proof title="?"}
+Deferred!
+:::
+
+
+:::{.theorem title="Formula for norm of principal ideals"}
+For all \( \alpha\in \ZZ_K \) nonzero, 
+\[
+N( \gens{ \alpha }) = \abs{ N ( \alpha ) | 
+,\]
+i.e. the norm of a principal ideal is the absolute value of the norm of the element-wise ideal.
+:::
+
+This will follow from the following proposition:
+
+:::{.proposition title="Index = Determinant"}
+Let $M \in \zmod$ be free of rank $n$ and let \( H \leq M \).
+Then $H$ is free of rank at most $n$, so suppose $\rank_\ZZ H = n$.
+Suppose that \( \omega_1, \cdots, \omega_n \) is a $\ZZ\dash$basis for $M$ and \( \theta_1, \cdots, \theta_n \) a $\ZZ\dash$basis for $H$.
+We can thus write \( \tv{ \theta_1, \cdots, \theta_n} = \tv{ \omega_1, \cdots, \omega_n } A \) for some $A \in \Mat(n\times n, \ZZ)$.
+Then \( [M: H] = \#M/H = \abs{ \det A } \).
+:::
+
+
+:::{.proof title="Sketch"}
+Idea: convert this problem about an arbitrary \( M \in \zmod \) to a problem about $\ZZ^n$.
+We know \( M \cong \ZZ^n \), and if we send the \( \omega_i \) to the standard basis vectors, this identifies $H \cong A \ZZ^n$.
+So \( M/H \cong \ZZ^n/A\ZZ^n \), and it's easy to see that \( \det A \neq 0 \): if not, there would be a linear dependence among the \( \theta_j \).
+Using *Smith normal form*, we can choose $S, T \in \GL_n(\ZZ)$ with 
+\[
+SAT = \diag(a_1, \cdots, a_n) && a_i \in \ZZ
+.\]
+Since $\det A \neq 0$, we have \( \det S, \det T \neq 0 \), and so all of the \( a_i \) are nonzero.
+We can write \( \ZZ^n/A\ZZ^n \cong \ZZ^n/SAT\ZZ^n \cong \bigoplus_{i=1}^n \ZZ/a_i \ZZ \), which has size \( \prod \abs{a_i} = \abs{ \prod a_i } = \abs{ \det (SAT) } = \abs{ \det(A) } \) since $S, T$ are invertible and thus have determinant $\pm 1$.
+:::
+
+
+:::{.proof title="of formula for norm of principal ideals"}
+Let \( \omega_1, \cdots, \omega_n \) be a \( \ZZ\dash \)basis for $\ZZ_K$, then \( \alpha \omega_1, \cdots \alpha \omega_n \) is a $\ZZ\dash$basis for \( \alpha\ZZ_K = \gens{ \alpha }  \).
+Now to compute $\# \ZZ_K/ \gens{ \alpha }$, we use the "index equals determinant" result: write
+\[
+\tv{ \alpha \omega_1, \cdots, \alpha \omega_n} = \tv{ \omega_1, \omega_n} A \implies \# \ZZ_K / \gens{ a } = \abs{ \det(A) } 
+,\]
+we now just need to show that this is equal to \( \abs{ N \alpha } \).
+We'll proceed by taking discriminants of tuples, applied to the first equation above.
+This yields \[
+\discriminant( \alpha \omega_1, \cdots, \alpha \omega_n) 
+&= 
+\discriminant( \omega_1, \cdots, \omega_n) 
+\det(A)^2 \\
+\implies \det(A)^2 
+&= 
+{
+\discriminant( \alpha \omega_1, \cdots, \alpha \omega_n) 
+\over
+\discriminant( \omega_1, \cdots, \omega_n) 
+} \\
+&=
+{
+\det(D_{\alpha \omega_1, \cdots, \alpha \omega_n })^2
+\over
+\det( D_{\omega_1, \cdots, \omega_n} )^2
+}
+=
+\qty{
+\det(D_{\alpha \omega_1, \cdots, \alpha \omega_n })
+\over
+\det( D_{\omega_1, \cdots, \omega_n} )
+}^2
+.\]
+Recall that these matrices were formed by taking the $j$th tuple element for the $j$th column and letting the column entries be the images under all embeddings.
+Just looking at the first rows in each, we'll have
+\[
+\tv{ \sigma_1( \alpha \omega_1), \cdots, \sigma_1( \alpha \omega_n) } && 
+\tv{ \sigma_1( \omega_1), \cdots, \sigma_1( \omega_n) } 
+.\]
+In general, the $i$th row of the first matrix will be \( \sigma_i( \alpha) \) times the $i$th row of the second matrix.
+But then this ratio of determinants will be \( \qty{ \prod_{i=1}^n \sigma_i( \alpha )}^2 \da (N \alpha)^2\).
+So $\det(A)^2 = (N \alpha)^2$, and taking square roots yields the result.
+:::
+
+## Chapter 14: Integral Bases
+
+:::{.question}
+Given $K$ a number field, can you find an explicit $\ZZ\dash$basis for $\ZZ_K$?
+:::
+
+:::{.remark}
+This depends on how one is given $K$, and in general this is hard!
+This is a question in algorithmic number theory.
+We'll focus on a specific sub-problem.
+:::
+
+:::{.question}
+Let $K$ be a number field with \( [K : \QQ] = n \) and suppose \( \theta_1, \cdots, \theta_n \) in $\ZZ_K$ are a $\QQ\dash$basis for $K$.
+Is there a simple condition for when they form a $\ZZ\dash$basis for $\ZZ_K$?
+:::
+
+:::{.remark}
+We know there is *some* $\ZZ\dash$basis for $\ZZ_K$, so let \( \elts{ \omega}{n} \) be one.
+Then express the \( \theta \) in terms of the \( \omega \):
+\[
+\tv{ \elts{ \theta}{n} } &= \tv{ \elts{ \omega}{n} } A
+\\
+\implies 
+\discriminant(\elts{ \theta}{n} ) 
+&= 
+\discriminant(\elts{ \omega}{n} ) \det(A)^2
+.\]
+We can view \( \abs{ \det(A) } \) as the index of the subgroup generated by the \( \theta_\)  in the group generated by the \( \omega_i \), so
+\[
+\abs{ \det(A) } = [ \ZZ_K : H], && H\da \spanof_\ZZ\ts{ \theta_i }
+.\]
+Thus 
+\[
+\discriminant(\elts{ \theta}{n} ) 
+&= 
+\discriminant(\elts{ \omega}{n} )
+[ \ZZ_K: H]^2
+.\]
+We can thus form a simple condition for when $H = \ZZ_K$:
+:::
+
+:::{.corollary title="A sufficient condition"}
+If \( \discriminant( \elts{ \theta}{n} \) is squarefree, then $\elts{\theta}{n}$ are a \( \ZZ\dash \)basis of $\ZZ_K$.
+:::
+
+:::{.remark}
+Why?
+If the left-hand side is squarefree, then use that $[\ZZ_K: H]^2$ divides the left-hand side to conclude it must be 1.
+Note that this is *not* necessary! 
+We saw that for $d = 2,3 \mod 4$ that $\discriminant_K = 4d$, which is not squarefree.
+:::
+
+
+:::{.example title="?"}
+Let $K = \QQ( \theta)$ where \( \theta \) is a root of 
+\[
+f(x) = x^5 - 3x^2 + 1
+,\]
+which is irreducible over $\QQ$.
+This yields a degree 5 number field.
+We can look for an $n\dash$tuple of elements in $\ZZ_K$ which is a $\QQ\dash$basis for $\ZZ_K$with a squarefree discriminant.
+A candidate would be \( \ts{ \theta^j \st 0\leq j \leq 4 } \), which are all in $\ZZ_K$ since $\theta\in \ZZ_K$ which is closed under multiplication.
+
+:::{.claim}
+\[
+\discriminant( 1, \theta, \theta^2, \theta^3, \theta^4) \text{ is squarefree}
+.\]
+:::
+
+We have
+\[
+\discriminant( 1, \theta, \theta^2, \theta^3, \theta^4)
+&\da\det( \tv{ \sigma_i ( \theta^{j-1} ) } )^2 \\
+&= \det( \tv{ \sigma_i ( \theta )^{j-1} } )^2 && \text{ since the $\sigma_i$ are embeddings } \\
+&= \prod_{1\leq i < j \leq 5} ( \sigma_j( \theta) - \sigma_i( \theta ) )^2 &&\text{since this is a Vandermonde matrix}\\
+&= \discriminant(f)
+,\]
+where this is the *polynomial* discriminant.
+This can be computed in a computer algebra system, and 
+in this case it equals $-23119 = (-61)(379)$ which is squarefree.
+So this yields a $\ZZ\dash$basis for $\ZZ_K$, i.e. $\ZZ_K = \ZZ[ \theta]$.
+Note that \( \discriminant_K = -23119 \) as well, since it's the discriminant of *any* integral basis.
+:::
+
+
+:::{.example title="?"}
+Let $K = \QQ( \alpha)$ where \( \alpha \) is a root of 
+\[
+f(x) = x^3 + x^2 - 3x + 8
+.\]
+We can try \( 1, \alpha, \alpha^2 \), and check
+\[
+\discriminant(1, \alpha, \alpha^2) = \discriminant(f) = (-4)(503)
+,\]
+so we can't conclude this is a $\ZZ\dash$basis.
+Going back to the proof, we *can* conclude that \( [\ZZ_K: H] ^2 \divides \discriminant(1, \alpha, \alpha^2) \) where \( H \da \ZZ + \ZZ \alpha + \ZZ \alpha^2 = \ZZ[ \alpha ] \).
+This allows us to conclude that \( [\ZZ_K: H] = 1, 2 \), so this could still be an index 2 subgroup.
+If this happens, $\# \ZZ_K/H = 2$ and every element is annihilated by 2, so \( 2\ZZ_K \subseteq H = \ZZ[ \alpha ] \).
+This would mean
+\[
+\ZZ_K \subseteq {1\over 2} \ZZ[ \alpha ] 
+= 
+\ts{ {c_0 + c_1 \alpha + c_2 \alpha^2 \over 2} \st c_i \in \ZZ } 
+.\]
+So are there elements of $\ZZ_K$ of this form that are *not* in \( \ZZ[ \alpha ] \)?
+If there's nothing of this form in \( \ZZ_K \sm \ZZ[ \alpha ]\) then we can conclude \( \ZZ_K = \ZZ[ \alpha ] \).
+If there *is* something of this form in \( \ZZ_K \sm \ZZ [ \alpha ] \), then $\ZZ_K \supseteq \ZZ [\alpha]$.
+One can check that \( {\alpha+ \alpha^2 \over 2} \in \ZZ_K \sm H \).
+So the original candidate basis was wrong, but we can take \( 1, \alpha, {\alpha + \alpha^2 \over 2} \) instead, which is an integral basis.
+:::
+
+
+:::{.remark}
+Why is this last part true?
+These are 3 elements of $\ZZ_K$ that are still $\QQ\dash$linearly independent and contains the $\ZZ\dash$span of the previous 3 elements defining $H$.
+But the index of $H$ was 2, so this forces it to be everything.
+So $\ZZ_K \neq \ZZ[ \alpha]$, and in fact Dedekind showed that \( \ZZ_K \neq \ZZ[ \beta] \) for *any* choice of \( \beta\in \ZZ_K \).
+So cubic number fields exhibit new behavior when compared to quadratic number fields!
+:::
+
+Next time: integral bases for cyclotomic fields.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Saturday, March 13
+
+## Ch. 14 Continued: Cyclotomic Fields 
+
+:::{.definition title="Cyclotomic Fields"}
+A **cyclotomic field** is a number field $\QQ( \zeta_m)$ where \( \zeta_m \da e^{2\pi i / m} \), a primitive $m$th root of 1.
+:::
+
+:::{.remark}
+The Kronecker-Webber theorem: any *abelian extension* $K/\QQ$ (so $\Gal(K/\QQ) \in \Ab$) is contained in a cyclotomic extension, and every cyclotomic field is an abelian extension.
+Given such a number field $K = \QQ( \zeta_m)$, what is $\ZZ_K$?
+:::
+
+:::{.theorem title="The ring of integers of a cyclotomic field is given by adjoining a primitive root of unity"}
+For $K = \QQ( \zeta_m)$,
+\[
+\ZZ_K = \ZZ[ \zeta_m ]
+.\]
+:::
+
+:::{.remark}
+The degree of any such $K/\QQ$ is $\phi(m)$, and here $\phi(p) = p-1$.
+Also recall Eisenstein's criterion: if $p$ divides all of the coefficients of a polynomial $f(x) \da \sum a_i x^i$ but $p^2\notdivides a_0$, then $f$ is irreducible over $\QQ$.
+:::
+
+:::{.lemma title="?"}
+The minimal polynomial of $\zeta_p$ over $\QQ$ is 
+\[
+\Phi_p(x) \da x^{p-1} + x^{p-2} + \cdots + x + 1
+,\]
+and so $[\QQ (\zeta_p) : \QQ] = p-1$.
+:::
+
+:::{.proof title="sketch"}
+Note that $\zeta_p$ is a root of $\Phi_p$, since
+\[
+\Phi_p(x) = {x^p-1 \over x - 1}
+,\]
+and $\zeta_p$ is a root of the numerator of the right-hand side and not of the denominator.
+This is irreducible by Eisenstein's criterion at $p$, using $x\mapsto x+1$.
+:::
+
+:::{.proposition title="?"}
+Let \( \alpha\in \bar{\ZZ} \) be an algebraic integer such that
+\[
+\min_ \alpha (x) = x^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0 && \in \ZZ[x]
+\]
+is Eisenstein at the prime $p$.
+Let $K \da \QQ( \alpha)$, a number field of degree $n$.
+Then 
+\[
+p\notdivides [\ZZ_K : \ZZ[ \alpha] ]
+.\]
+:::
+
+:::{.proof title="?"}
+We first observe that \( \alpha^n \) is a multiple of $p$ in $\ZZ_K$.
+To see this, plug \( \alpha \) into the minimal polynomial to get $0 = \alpha^n + \cdots$ and solve for \( \alpha^n \) to obtain
+\[
+\alpha^n = -(a_{n-1} \alpha^{n-1} + \cdots + a_1 \alpha + a_0) \equiv 0 \mod p \text{ in } \ZZ_K 
+,\]
+and this is a multiple of $p$ by the assumption on Eisenstein's criterion.
+We want to show $p$ doesn't divide $\# \ZZ_K/ \ZZ[ \alpha]$ as \(\ZZ\dash\)modules, identify the index as the size of this quotient.
+It suffices to show that $\ZZ_K/\ZZ[ \alpha]$ has no elements of order $p$, by applying Cauchy's theorem.
+If \( \beta\in \ZZ_K \) represents an element of order $p$ in the quotient, then \( p \beta\in \ZZ[ \alpha] \) and so \( p \beta = b_0 + b \alpha + \cdots + b_{n-1} \alpha^{n-1} \) for some $b_i \in \ZZ$.
+The order of \( \beta \) to be exactly $p$, so not all of the \( b_i \) are multiples of $p$: otherwise one could divide through by $p$ and conclude \( \beta\in \ZZ[ \alpha] \), making it zero in the quotient (and in particular, not of order $p$ as assumed).
+Suppose toward a contradiction that $i$ is the smallest index such that $p$ does not divide $b_i$.
+Then take this last equation mod $p$:
+\[
+p \beta \equiv 0 \equiv b_i \alpha^{i} + \cdots + b_{n-1} \alpha^{n-1} \mod p
+.\]
+Now multiply by \( \alpha^{n-1-i} \) to obtain
+\[
+0 \equiv b_i \alpha^{n-1} + \cdots \equiv b_i \alpha^{n-1} \mod p
+,\]
+where $p$ divides all of the other terms since they all contain a factor of \( \alpha^n \equiv 0 \mod p\).
+So \( b_i \alpha^{n-1} /p \in \ZZ_K \), and by a previous theorem, this forces \( N( b_i \alpha^{n-1} / p ) \in |ZZ \).
+But we can write 
+\[
+N \qty{ b_i \alpha^{n-1} \over p }
+&=
+N \qty{ b_i \over p} N( \alpha^{n-1} ) \\
+&= \qty{b_i \over p}^{n} N( \alpha)^{n-1} \\
+&= \qty{b_i \over p}^{n} \pm a_0 \\
+&= \pm {b_i^n a_0^{n-1} \over p^n } \not\in \ZZ
+.\]
+where we've used that all embeddings fix rational numbers.
+But this is not an integer, since by Eisenstein $p^2$ does not divide $a_0$.
+So $a_0^{n-1}$ contributes exactly $n-1$ copies of $p$, leaving a $p$ in the denominator, and $p\notdivides b_i$ since we choose $i$ precisely to arrange for this.
+$\contradiction$
+
+:::
+
+:::{.remark}
+Recall some facts about the discriminant: let $F$ be a field and $f(x) \in F[x]$ monic.
+Then factor $f(x) = \prod_{i=1}^n (x - \alpha_i)$ over some splitting field.
+We then define 
+\[
+\discriminant(f) \da \prod_{i<j} ( \alpha_j - \alpha_i)^2
+.\]
+We won't discuss the theory, but we'll use a few facts.
+:::
+
+:::{.fact}
+For each fixed $n$ and all polynomials $f$ of degree $n$, $\discriminant(f)$ is given by a universal polynomial in the coefficients of $f$ with integer coefficients.
+For example, for $n=2$ and $f(x) = x^2 + bx + c$, we have \( \discriminant(f) = b^2 - 4c \in \ZZ[b,c] \).
+If $n=3$ and $f(x) = x^3 + bx^2 + cx + d$, we have
+\[
+\discriminant(f) = 18bcd - 4b^3d + b^2c^2 - 4c^3 - 27d^2\in \ZZ[b,c,d]
+.\]
+So the discriminant is some polynomial expression in the coefficients, which (more importantly) have *integer* coefficients.
+
+Some consequences:
+
+- \( \discriminant(f) \in F \), despite the fact that the roots are generally not in $F$ and are instead in some splitting field.
+- If $F =\QQ$ and $f\in \QQ[x]$ *and* in fact $f\in \ZZ[x]$, then \( \discriminant(f) \in \ZZ \).
+- If $F = \QQ$ and $f\in \ZZ[x]$ with $q$ some prime,
+\[
+\discriminant( f) \mod q = \discriminant(f \mod q)
+,\]
+  where we first take the discriminant to land in $\ZZ$ and then reduce to $\FF_q$, or we reduce $f\in \ZZ[x]$ to $f\mod q \in \FF_q[x]$ and take the discriminant using some algebraic close of $\FF_q$.
+
+:::
+
+
+:::{.proof title="That $\ZZ_K = \ZZ[ \zeta_p]$ for $K = \QQ(\zeta_p)$"}
+To save space, we'll write $\zeta \da \zeta_p$.
+We want to show \( \1, \zeta, \cdots, \zeta^{p-2} \) forms an integral basis, from last time we have
+\[
+\discriminant( 1, \zeta, \cdots, \zeta^{p-2}) = 
+\discriminant_K 
+[\ZZ_K : \ZZ[ \zeta ] ]^2 
+\implies
+[\ZZ_K : \ZZ[ \zeta ] ]^2 
+\divides
+\discriminant( 1, \zeta, \cdots, \zeta^{p-2}) 
+.\]
+
+:::{.claim}
+The right-hand side is a power of $p$ (up to a sign), and hence so is the left-hand side.
+:::
+
+We'll proceed by showing that the only prime that could divide the right-hand side is $p$.
+Suppose $q$ divides the right-hand side, i.e. $q \divides \discriminant(x^{p-1} + \cdots + x + 1)$.
+So this is zero mod $q$, and thus $\discriminant( x^{p-1} + \cdots + x + 1 \mod q) \equiv 0$.
+The discriminant was a product of roots, so it can only be zero if two roots coincide, so there is a multiple root of $x^{p-1} + \cdots + x + 1 \mod q$ and thus also of $x^p - 1$.
+So $x^p-1$ and its derivative $px^{p-1}$ have a root in common, and (check!) this can only happen if $q=p$.
+
+So $[\ZZ_K : \ZZ[\zeta] ] = p^\ell$ for some $\ell$.
+Using that fact that $\ZZ[ \zeta] \cong \ZZ[ \zeta - 1]$, we have \( [ \ZZ_K : \ZZ[ \zeta] ] = [ \ZZ_K: \ZZ[\zeta - 1] ] \).
+But by the previous lemma, we know that the minimal polynomial of $\zeta_p - 1$ is $\Phi(x+1)$, which is $p\dash$Eisenstein.
+So by that lemma, $p\notdivides [\ZZ_K: \ZZ[ \zeta - 1]]$, which forces $\ell = 0$ and $\ZZ_K = \ZZ[ \zeta_p ]$.
+:::
+
+
+:::{.proof title="Sketch of the same proof for $K = \QQ(\zeta_m)$"}
+
+\envlist
+
+1. Do roughly the same proof for prime powers $m = p^\ell$
+
+2. Show that if $a, b\in \ZZ^{\geq 0}$ are coprime then $\discriminant_a \da \discriminant_{\QQ( \zeta_a)}, \discriminant_b \da \discriminant_{\QQ(\zeta_b)}$ are coprime.
+  
+  These are defined in terms of integral bases, and we're trying to prove that something *is* an integral basis, so how do you show this if you don't know your basis is integral to begin with?
+  Without knowing the exact values of the discriminants, you can show $\discriminant_a \divides a^?$ divides some power of $a$, and the same for $b$, and so $a, b$ coprime will make $a^?, b^?$ coprime as well.
+  This can be shown by computing the discriminant of a *candidate* integral bases rather than an actual one.
+
+3. Use a key lemma: if $K_1, K_2$ are number fields with coprime discriminants, then considering the composite field, we have $\ZZ_{K_1 K_2} = \ZZ_{K_1} \ZZ_{K_2}$, a composite ring.
+
+
+4. If $a, b$ are coprime, check that $\QQ(\zeta_a) \QQ(\zeta_b) = \QQ(\zeta_{ab})$ and $\ZZ[ \zeta_a] \ZZ[ \zeta_b] = \ZZ [ \zeta_{ab} ]$.
+
+5. Factor $m = \prod_{i} p_i^{\ell_i}$ and apply steps (3) and (4) inductively.
+
+:::
+
+:::{.remark}
+The hard part is the lemma in (3).
+Also, questions about discriminants tend to come up during oral exams that include algebraic number theory.
+:::
+
+## Ch. 15: Ideal theory in general number rings
+
+
+:::{.remark}
+Here "number rings" means $\ZZ_K$ for $K$ a general number field.
+Let $K$ be a number field with $[K: \QQ] = n$.
+We'd want 
+
+1. $\Id(\ZZ_K)$ to be a UFM as a monoid,
+2. $\Cl(\ZZ_K)$ is a finite group,
+
+Recall that we proved (1) and used it to deduce (2) for quadratic fields, whereas for the general case we'll prove (2) and deduce (1).
+The approach we'll take here is somewhat idiosyncratic -- the standard treatment involves the theory of Dedekind domains, which uses a lot of commutative algebra.
+This approach is more classic (circa 19th century, very concrete), and we'll skip over less important details (e.g. those that are unlikely to show up on oral exams).
+:::
+
+
+:::{.definition title="Class Group"}
+\[
+\Cl(\ZZ_K) \da \Id(\ZZ_K)/ \sim
+,\]
+where $\sim$ denotes dilation equivalence.
+:::
+
+
+:::{.remark}
+Our strategy:
+
+- Prove $\Cl(\ZZ_K)$ is finite.
+- Prove $\Cl(\ZZ_K)$ is actually a group, i.e. there are inverses, so that for every ideal there is another ideal such that their product is principal (the "Principal Multiple Lemma").
+- The remaining proofs from the quadratic field case go through almost word-for-word.
+
+:::
+
+
+:::{.proposition title="?"}
+There is a constant $T = T(K)$ that only depends on $K$ such that for every \( \theta\in K \), there is a positive integer $t \leq T$ and a $\xi \in \ZZ_K$ such that
+\[
+\abs{N(t \theta - \xi ) } < 1
+.\]
+:::
+
+:::{.remark}
+I.e. anything in the field can be multiplied by a bounded integer to make it close to something in the ring of integers.
+This proposition came up for imaginary quadratic fields in the Rabinowitz criterion, crucial for proving that the class group was generated by prime ideals which lie above small primes.
+:::
+
+
+:::{.proof title="?"}
+Omitted! See book, this proof wouldn't show up on an oral exam.
+This uses Dirichlet's approximation criterion again, although in a different way.
+:::
+
+
+:::{.theorem title="The class group is finite"}
+\[
+\# \Cl(\ZZ_K) < \infty 
+.\]
+:::
+
+
+:::{.proof title="?"}
+Very similar to how it goes for quadratic fields.
+As before, let $I \in \Id(\ZZ_K)$ be nonzero and $\beta \in I$ nonzero with $\abs{N \beta}$ minimal.
+
+
+:::{.claim}
+Let $T$ be as in the proposition, then $T! I \subseteq \gens{ \beta }$. 
+:::
+
+This follows from exactly the same argument as before.
+
+Now define \( J \da {T! \over \beta} I \subseteq \ZZ_K \), which is a dilation of $I$ and thus $J \normal \ZZ_K$ as well.
+By definition, $I\sim J$, i.e. $[I] = [J] \in \Id(\ZZ_K)$, and it's now enough to show that there are only finitely many possibilities for $J$, since then every class is equal to the class of one of finitely many such $J$.
+Since \( \beta\in I \), we can deduce that \( T! \in J \) and thus \( \gens{ T! } \subseteq J  \).
+We'd like to say "to contain is to divide" (as in the case of unique factorization) and conclude $J\divides T!$, which only has finitely many divisors.
+However, we haven't proved this yet!
+We can use an algebra fact instead:
+\[
+\correspond{
+  \text{Ideals of $\ZZ_K$ }
+  \\
+  \text{containing } \gens{ T! } 
+}
+&\mapstofrom
+\correspond{
+  \text{Ideals of } \ZZ_K / \gens{ T! } 
+}
+,\]
+so it's enough to show that the right-hand side is finite.
+This is "obvious", since $\# \ZZ_K / \gens{ T! } = (T!)^n$.
+This comes from the fact that $\ZZ_K \cong_{\Ab} \ZZ^n$, so as a \(\ZZ\dash\)module this is isomorphic to $\ZZ^n / T! \ZZ^n \cong (\ZZ/T! \ZZ)^n$, so this is a finite ring and can thus only have finitely many ideals.[^only_finite]
+
+[^only_finite]: 
+In fact, we've already proved that $\ZZ_K / I$ for any nonzero ideal $I$ is finite.
+
+:::
+
+
+:::{.remark}
+We now want to establish the cancellation law in $\Id(\ZZ_K)$, then the principal multiple lemma, and then everything else will follow as in the quadratic case.
+:::
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,7 +3,13 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\barz}{\bar{z} }
+\newcommand{\dzbar}{\,d\bar{z} }
+\newcommand{\zbar}{\bar{z} }
 \newcommand{\du}{\,du}
+\newcommand{\dw}{\,dw}
+\newcommand{\dV}{\,dV}
+\newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
@@ -92,8 +98,9 @@
 \newcommand{\HP}[0]{{\operatorname{HP}}}
 \newcommand{\TP}[0]{{\operatorname{TP}}}
 \newcommand{\HC}[0]{{\operatorname{HC}}}
-\newcommand{\HH}[0]{{\operatorname{HH}}}
-\newcommand{\THH}[0]{{\operatorname{THH}}}
+\newcommand{\HH}[0]{{\mathbb{H}}}
+\newcommand{\HoH}[0]{{\operatorname{HH}}}
+\newcommand{\THoH}[0]{{\operatorname{THH}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
@@ -194,7 +201,11 @@
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
 \newcommand{\height}[0]{\operatorname{ht}}
-\newcommand{\cpt}[0]{\operatorname{compact}}
+\newcommand{\cpt}[0]{{ \text{compact} } }
+\newcommand{\oriented}[0]{{ \text{oriented} } }
+\newcommand\compact[0]{\text{cpt}}
+\newcommand\Kahler[0]{\text{Kähler}}
+\newcommand\hyp[0]{\text{hyp}}
 \newcommand{\abs}[1]{{\left\lvert {#1} \right\rvert}}
 \newcommand{\stack}[1]{\mathclap{\substack{ #1 }}} 
 \newcommand{\qtext}[1]{{\quad \operatorname{#1} \quad}}
@@ -205,11 +216,12 @@
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
-\newcommand{\spinc}[0]{\mathrm{spin}^{\mathrm{c} }}
+\newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
 \newcommand{\cok}[0]{\operatorname{coker}}
+\newcommand{\PD}[0]{\mathrm{PD}}
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
@@ -256,6 +268,7 @@
 \newcommand{\mfp}[0]{{\mathfrak{p}}}
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
+\newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieb}[0]{{\mathfrak{b}}}
 \newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
@@ -331,6 +344,8 @@
 \newcommand{\hilb}[0]{\operatorname{Hilb}}
 \newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
 \newcommand{\Frame}[0]{{\operatorname{Frame}}}
+\newcommand{\Fr}[0]{{\operatorname{Fr}}}
+\newcommand{\prin}[0]{{\operatorname{Prin}}}
 \newcommand{\Taut}[0]{{\operatorname{Taut}}}
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
@@ -384,7 +399,7 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \text{\Large \#} }}
+\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -444,6 +459,8 @@
 \DeclareMathOperator{\res}{Res}
 \DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\Hol}{Hol}
+\DeclareMathOperator{\Bun}{Bun}
+\DeclareMathOperator{\BiHol}{BiHol}
 \DeclareMathOperator{\Br}{Br}
 \DeclareMathOperator{\coh}{coh}
 \DeclareMathOperator{\colspace}{colspace}
@@ -480,11 +497,13 @@
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
+\newcommand\std[0]{\text{std}}
 \newcommand\Mero[0]{\operatorname{Mero}}
-\newcommand\compact[0]{\text{cpt}}
 \newcommand\even[0]{\text{even}}
 \newcommand\odd[0]{\text{odd}}
 \newcommand\hodgestar[0]{\star}
+\newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
+\newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
@@ -511,6 +530,7 @@
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
+\newcommand{\Triv}[0]{\operatorname{Triv}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
@@ -518,6 +538,7 @@
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
 \newcommand{\equalsbecause}[1]{\overset{#1}{=}}
+\newcommand{\congbecause}[1]{\overset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
 
@@ -3989,6 +4010,396 @@ So these correspond got biholomorphic involutions of $\DD$ using complex analysi
 :::
 
 :::{.remark}
-Next week: more about the Maslov index and $\spinc$ structures, then invariance under diagram moves.
+Next week: more about the Maslov index and $\Spinc$ structures, then invariance under diagram moves.
+:::
+
+
+# Maslov Grading and $\Spinc$ Structures (Tuesday, March 16)
+
+:::{.remark}
+Let $M\in \Mfd^3(\RR)$ be a closed oriented 3-manifold and \( \mathcal{H} = (\Sigma, \alpha, \beta, z)  \) a Heegaard diagram for $M$.
+Letting $b_i$ be the Betti numbers, note that $b_1 = 0 \iff M \in \QHS^3$ is a rational homology 3-sphere, i.e. $H_i(M; \QQ) \cong H_i(S^3; \QQ)$ for all $i$.
+This also implies that $H_2(M; \ZZ) = 0$.
+Under this condition, we can define a **relative $\ZZ\dash$grading** 
+(i.e. we have a difference of grading between any two elements) on $\hat{CF}$ in the following way: for $x, y$ two generators, we set 
+\[
+\gr(x) - \gr(y) \da \mu( \varphi) -2n_z( \varphi) && \text{for some } \varphi\in \pi_2(x,y)
+.\]
+
+Recall that $\mu(\wait)$ denotes the Maslov index, $n_z( \wait)$ is the local multiplicity of a Whitney disc at $z$, and  $x, y$ denote tuples of points.
+:::
+
+:::{.remark}
+This involves a choice of disc, so why is it well-defined?
+We'll also see why we need $M\in \QHS^3$.
+:::
+
+:::{.proof title="of well-definedness"}
+Let \( \varphi, \varphi' \in \pi_2(x, y) \).
+We have 
+\[
+\varphi \ast (-\varphi') \in \pi_2(x, x) = \ZZ \oplus H_2(M) = \ZZ \oplus 0
+,\]
+so this is some multiple $kS$ where $S$ is the positive generator of \( \pi_2\Sym^g \Sigma \).
+So 
+\[
+\mu( \varphi \ast (- \varphi') ) = \mu( \varphi) - \mu( \varphi') = k \mu(S) = 2k
+.\]
+Similarly,
+\[
+n_z( \varphi \ast (- \varphi')) = n_z( \varphi) - n_z( \varphi') = k n_z(S) = k
+,\]
+where we've used \( \mu(S) = 2, n_z(S) = 1 \).
+Then
+\[
+\mu( \varphi) - \mu ( \varphi') 
+&= 2( n_z( \varphi) - n_z( \varphi') ) \\
+\implies
+\mu( \varphi) - 2n_z( \varphi) 
+&= \mu( \varphi') - 2 n_z( \varphi')
+.\]
+:::
+
+:::{.remark}
+Note that the relative grading is only defined if $\pi_2(x, y) \neq \emptyset \iff \eps(x, y) = 0 \in H_1(M; \ZZ)$.
+This generated an equivalence relation of elements in $\TT_{ \alpha} \intersect \TT_{ \beta}$ by $x\sim y \iff \eps(x, y) = 0$, so we have a decomposition
+\[
+\hat{CF}( \mathcal{H} ) = \bigoplus _{?} \hat{CF}( \mathcal{H}, ?)  
+.\]
+which is preserved by $\bd$, so $\hat{HF}(\mathcal{H})$ will split similarly as 
+\[
+\hat{HF}( \mathcal{H} ) = \bigoplus _{?} \hat{CF}( \mathcal{H}, ?)  
+.\]
+
+It turns out that the right thing to replace the "?" with will be \( \Spinc \) structures.
+:::
+
+## $\Spinc$ Structures
+
+We'll discuss Turaev's (?) reformulation of $\Spinc$ structure for $\Mfd^3$.
+Note that $\chi(M) = 0$, so there exists nowhere vanishing vector fields on $M$ by Poincaré-Hopf.
+
+
+:::{.definition title="?"}
+Let $v_1, v_2$ be nowhere vanishing vector fields on $M$.
+We say 
+\[
+v_1 \sim v_2
+\iff \ro{v_1}{M\sm B} \homotopic \ro{v_2}{M\sm B}
+,\]
+i.e. their restrictions to $M\sm B$ are homotopic, and here $B$ is a 3-ball in $M$.
+Equivalently, $v_1\sim v_2 \iff v_1, v_2$ are homotopic in the complement of finitely many 3-balls in $M$.
+:::
+
+
+:::{.definition title="$\Spinc$ Structures"}
+\[
+\Spinc(M) \da \ts{ \text{Nowhere vanishing vector fields on } M }_{/\sim}
+.\]
+:::
+
+
+:::{.definition title="?"}
+Let \( \mathcal{H} = ( \Sigma, \alpha, \beta, z)  \) be a Heegard diagram for $M$, then define a map
+\[
+S_z: \TT_{ \alpha} \intersect \TT_{\beta} \to \Spinc(M)
+.\]
+
+**Step 1**:
+Choose a self-indexing Morse function $f$ with $\# \Crit^0(f) = \# \Crit^3(f) = 1$ such that its corresponding Heegaard diagram is \( \mathcal{H}  \):
+
+![image_2021-03-16-11-47-19](figures/image_2021-03-16-11-47-19.png)
+
+Note that we have a surface in \( f ^{-1} (3/2) \) and there are exactly $q$ critical points along each of \( f ^{-1} (1), f ^{-1} (2) \).
+For each \( x = \ts{ \elts{x}{g} } \intersect \TT_{ \alpha} \intersect\TT_{\beta} \), we have \( x_i \in \alpha_i \intersect \beta_{\sigma(i)} \) for some permutation \( \sigma\in S_g \) 
+Then \( \alpha\mapsto p_i \) and \( \beta_{\sigma(i)} \mapsto q_{\sigma(i)} \):
+
+![image_2021-03-16-11-49-42](figures/image_2021-03-16-11-49-42.png)
+
+Trajectories of $-\gradient f$ that pass through $\elts{x}{g}$ are $g$ pairwise disjoint arcs connecting \( \elts{q}{g} \) to \( \elts{p}{g} \), so there is a one-to-one correspondence between these intersection points.
+
+Now taking tubular neighborhoods of the $g+1$ disjoint arcs yields $g+1$ pairwise disjoint 3-balls in $M$, so write this as $B\da B_1 \coprod \cdots \coprod B_{g+1}$.
+
+![image_2021-03-16-11-53-04](figures/image_2021-03-16-11-53-04.png)
+
+Note that 
+
+- \( -\gradient f \) does not vanish in $M \sm B$.
+
+- $- \gradient f$ can be extended to a nowhere vanishing vector field on $M$
+
+
+:::{.exercise title="?"}
+Show this!
+
+*Hint: the trajectories of \( -\gradient f \) in each ball connect critical points of different parities, and so each \( \ro{-\gradient f }{\bd B_i } \) has index zero.*
+:::
+
+Define \( S_z(x) \in \Spinc(M) \) to be the equivalence class represented by this vector field.
+This is well-defined since outside of the finitely many balls, this vector field is just equal to \( -\gradient f \).
+:::
+
+:::{.exercise title="?"}
+Show that this does not depend on which Morse function is chosen.
+:::
+
+
+:::{.proposition title="?"}
+There is a one-to-one correspondence
+\[
+\Spinc(M) \mapstofrom H^2(M; \ZZ)
+.\]
+Picking a trivialization $\tau: TM \to M \cross \RR^3$ and a Riemannian metric on $M$, then
+\[
+\correspond{
+  \text{Nowhere vanishing vector fields} \\
+  \text{on } M
+}
+&\mapstofrom
+\correspond{
+  \text{functions } f: M\to S^2
+} \\
+v:M\to \RR^3\smz &\mapsto 
+x \mapsvia{f_v} \hat{\vector v_x}
+\]
+:::
+
+
+:::{.definition title="?"}
+Let \( \alpha\in H^2(S^2; \ZZ) \) be the positive generator, then define
+\[
+\delta^{ \tau} (v) \da f_v^*( \alpha) \in H^2(M; \ZZ)
+.\]
+Note that if $v_1 \sim v_2$,  we have $\delta^{ \tau}(v_1) = \delta^{ \tau}(v_2)$ since they are homotopic on the complement of a ball:
+\[
+M\sm B \injectsvia{i} M \mapsvia{f_v} S^2
+.\]
+Conclude that 
+\[
+(f_{v_1} \circ i)^* ( \alpha) = (f_{v_2} \circ i)^* (\alpha)
+,\]
+$i^*$ is an isomorphism, so $f_{v_1}^*( \alpha) = f_{v_2}^* ( \alpha)$, yielding the identification.
+
+:::
+
+:::{.exercise title="?"}
+\envlist
+
+1. Show that \( \delta^{ \tau} \) is a bijection.
+
+2. \( \delta(v_1, v_2) \da \delta^{ \tau}(v_1) - \delta^{ \tau}(v_2) \in H^2(M; \ZZ) \) is well-defined and independent of the choice of \( \tau \), and satisfies
+\[
+\delta(v_1, v_2) + \delta(v_2, v_3) = \delta(v_1, v_3)
+.\]
+
+Thus we also have a relative map
+\[
+\Spinc(M) &\mapstofrom H^2(M; \ZZ)\\
+s_1, s_2 \da [v_1] - [v_2] &\mapsto s_1 -s_2 \da \delta(v_1, v_2)
+.\]
+:::
+
+
+
+
+# Thursday, March 18
+
+## $\Spinc$ Structures and Invariance
+
+:::{.remark}
+Recall that given a Heegard diagram \( ( \Sigma, \alpha, \beta, z ) \) gives an equivalence relation
+\[
+x \sim y \iff \eps(x, y) = 0 \in H_1(M) \equalsbecause{\PD} H^2(M)
+.\]
+This yields a decomposition of $\hat{\CF}$ into a direct sum over equivalence classes of subcomplexes defined by $\Spinc$ structures.
+Note that the differential will preserve each direct summand.
+We defined $\Spinc(M)$ as the set of nowhere vanishing vector fields on $M$ modulo being homotopic outside finitely many 3-balls in $M$.
+We had a map 
+\[
+\TT_{ \alpha} \intersect \TT_{\beta} \mapsvia{s_z} \Spinc(M)
+,\]
+recalling that the left-hand side are the generators of $\hat{\CF}$.
+We took a self-indexing Morse function on $M$, took the inverse image of $3/2$ to get the Heegard surface, and each intersection point $x_i$ gave a flow line from an index 2 critical point to an index 1 critical point passing through $x_i$:
+
+![Trajectories of negative gradient flow](figures/image_2021-03-18-11-19-00.png)
+
+We proceeded by cancelling adjacent flow lines (at the level of vector fields), and then modifying $\gamma_z$ (the flow line passing through the basepoint $z$ connecting the index 0 to the index 3) to get a nowhere vanishing vector field.
+We then took a trivialization $\tau: TM \to M \cross\RR^3$ defined a map
+\[
+\Spinc(M) &\mapsvia{\gamma^ \tau} H^2(M) \\
+s = [v] &\mapsto f_v^*( \alpha)
+.\]
+where \( \alpha \) is the volume form of $S^2$ and 
+\[
+f_v: M &\to S^2 \\
+x &\mapsto \hat{v_x} \da { v_x \over \norm{v_x} }
+.\]
+Note that \( \delta^\tau \) a priori depends on \( \tau \), but 
+\[
+\delta(s_1, s_2) = \delta^{ \tau}(s_1) - \delta^{ \tau}(s_2) \in H^2(M)
+,\]
+and the difference is independent of \( \tau \).
+:::
+
+:::{.lemma title="?"}
+For $x, y\in \TT_{ \alpha} \intersect \TT_{ \beta}$, defining $s_1 - s_2 = \delta(s_1, s_2) \in H^2(M)$, we have
+\[
+s_z(y) - s_z(x) = \PD[\eps(x, y) ]
+.\]
+
+As corollaries,
+
+1. If $x\sim y$ then $s_z(y) = s_z(x)$, and
+2. If $x\not\sim y$ then the above equation holds.
+
+:::
+
+:::{.exercise title="?"}
+Prove this!
+
+*Hint, take the Poincaré dual of the link below to get the formula:*
+\[
+s_z(y) - s_z(x) = \PD[ \gamma_y \union (- \gamma_x)]
+.\]
+*This implies that the two vector fields are equal everywhere outside of a tubular neighborhood of the link.
+Then show that \( [ \gamma_x \union (-\gamma_x) = [ \eps(x, y) ] \).*
+:::
+
+:::{.remark}
+We thus have
+\[
+\hat{\CF}( \Sigma, \alpha, \beta, z)
+= \bigoplus _{\mfs \in \Spinc(M)} 
+\hat{\CF}( \Sigma, \alpha, \beta, z, \mfs)
+.\]
+:::
+
+:::{.remark}
+We have several properties of $\Spinc$ structures.
+There is a map
+\[
+J: \Spinc(M) &\to \Spinc(M) \\
+s = [v] &\mapsto \conj{s} \da [-v]
+.\]
+There is also a first Chern class
+\[
+c_1: \Spinc(M) &\to H^2(M) \\
+s &\mapsto s - \conj{s}
+,\]
+i.e. $c_1(s) = \delta(s, \conj{s})$.
+:::
+
+:::{.theorem title="Topological Invariance"}
+The association
+\[
+( \Sigma, \alpha, \beta, z), J \leadsto 
+\hat{\HF}
+( \Sigma, \alpha, \beta, z)
+\]
+does not depend on the choice of Heegard diagram or the almost complex structure $J$, so this yields a well-defined invariant of $M$ which we'll denote \( \hat{\HF}(M) \) for \( M\in \Mfd^3(\RR) \).
+:::
+
+:::{.remark}
+There are few things to discuss:
+
+1. The almost complex structure $J$:
+
+2. Isotopies
+
+3. Handle slides
+
+4. Stabilization
+
+Remarks on these:
+
+1. This involves a standard argument from Lagrangian Floer homology.
+2. There are two cases:
+    - If the isotopy doesn't create a new intersection, we have a 1-to-1 correspondence between generators for any two choices, and changing $J$ to $J'$ will give a correspondence between the differentials.
+    This just involves picking a diffeomorphism that maps \( \alpha \) circles to \( \alpha' \) circles, and so on.
+    So this reduces to showing 1.
+    - If is *does* create new intersection points, there are again standard arguments in Lagrangian Floer homology for this.
+3. This involves the following situation, which induces a map
+
+  ![image_2021-03-18-11-51-38](figures/image_2021-03-18-11-51-38.png)
+  
+  For an appropriate choice of $J$ on \( \Sigma \connectsum T^2 \), the map $f$ above will induce a chain homotopy equivalence
+\[
+\tilde f: 
+\hat{\CF}
+(\Sigma, \alpha, \beta, z)
+\mapsvia{\sim} 
+\hat{\CF}
+(\Sigma \connectsum T^2, \alpha', \beta', z)
+.\]
+
+4. What's the picture? 
+
+![image_2021-03-18-11-56-59](figures/image_2021-03-18-11-56-59.png)
+
+  This will yield a map
+  \[
+  (\Sigma, \alpha, {\color{blue} \beta}, z)
+  \leadsto
+  (\Sigma, \alpha, {\color{green} \gamma}, z)
+  .\]
+  For \( i = 1, \cdots, g-1 \), we'll have \( \gamma_i \) isotopic to \( \beta_i \), and for \( i=g \), \( \gamma_g \) is obtained by sliding \( \beta_g \) over \( \beta_{g-1} \).
+  We'll combine these into the same diagram with different colors to compare them, yielding a **Heegard triple**:
+  \[
+  (\Sigma, {\color{red} \alpha}, {\color{blue} \beta}, { \color{green} \gamma}, z)
+  .\]
+  We can think of this as three separate diagrams:
+  \[
+  (\Sigma, {\color{red} \alpha}, {\color{blue} \beta}, z)
+  &\leadsto M\\
+  (\Sigma, {\color{blue} \beta}, { \color{green} \gamma}, z)
+  &\leadsto ? \\
+  (\Sigma, {\color{red} \alpha}, { \color{green} \gamma}, z)
+  &\leadsto M
+  .\]
+  What does the middle one represent?
+
+  ![Heegard diagram](figures/image_2021-03-18-12-02-39.png)
+
+  Here this is a diagram for \( (S^1 \cross S^2)^{\connectsum 2} \).
+
+  Note that we draw \( \gamma_i \) such that it intersects \( \beta_i \) in two transverse intersection points to make sure the diagram is admissible.
+:::
+
+:::{.remark}
+Give a Heegard triple
+\( ( \Sigma, \alpha, \beta, \gamma, z \), pick three intersection points
+\[
+x &\in \TT_{ \alpha} \intersect \TT_{ \beta} \\
+y &\in \TT_{ \beta} \intersect \TT_{ \gamma} \\
+w &\in \TT_{ \gamma} \intersect \TT_{ \alpha} 
+.\]
+We can use **Whitney triangles** to connect $x,y,w$:
+
+![image_2021-03-18-12-23-07](figures/image_2021-03-18-12-23-07.png)
+
+We then define \( \pi_2(x,y,z) \) to be the homotopy class of Whitney triangles connecting $x,y,w$.
+We can similarly define \( \mcm( \psi )  \) to be the moduli space of $J\dash$holomorphic representatives of \( \psi\in \pi_2(x,y,w) \), along with a chain map
+\[
+f_{\alpha \beta \gamma}: 
+\hat{\CF}(\Sigma, \alpha, \beta, z)
+\tensor
+\hat{\CF}(\Sigma, \beta, \gamma z)
+&\to
+\hat{\CF}(\Sigma, \alpha, \gamma, z) \\
+x\tensor y 
+&\mapsto 
+\sum_{ w \in \TT_{ \alpha} \intersect\TT_{ \beta}} 
+\sum_{\substack{ \psi\in \pi_2(x,y,w) \\ \mu( \psi) = 0 \\ n_z( \psi) = 0 }}
+\# \mcm( \psi) \cdot w
+.\]
+:::
+
+:::{.theorem title="?"}
+\( f_{ \alpha \beta \gamma} \) is a chain map.
+:::
+
+:::{.remark}
+Next time: we'll show how to get a chain homotopy equivalence from the first tensor term above to the codomain.
+We'll also see surgery exact triangles.
 :::
 

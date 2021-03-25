@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-03-05 }
+{\tiny \textit{Last updated:} 2021-03-24 }
 \end{flushleft}
 
 
@@ -77,24 +77,6 @@ inaccuracies are almost certainly my own. } } \\
 \addsec{Table of Contents}
 \tableofcontents
 \newpage
-
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
-
-\def\contradiction
-{
-\tikz[baseline, x=0.2em, y=0.2em, line width=0.04em]
-\draw (0,0) -- ({4*cos(45)},{4*sin(45)})
-    (-1,1) -- ({-1 + 4*cos(45)},{1 + 4*sin(45)})
-    (-1,3) -- ({-1 + 4*cos(315)},{3 + 4*sin(315)})
-    (0,4) -- ({0 + 4*cos(315)},{4 + 4*sin(315)});
-}
 
 \hypertarget{thursday-january-14}{%
 \section{Thursday, January 14}\label{thursday-january-14}}
@@ -5360,8 +5342,8 @@ send 1 to 1.
 \begin{theorem}[Integral Basis Theorem]
 
 For \(K\) any number field of degree \(n\),
-\({\mathbb{Z}}_K \in {{{\mathbb{Z}}}{\hbox{-}}\mathbf{Mod}}\) is free of
-rank \(n\).
+\({\mathbb{Z}}_K \in {\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}\) is
+free of rank \(n\).
 
 \end{theorem}
 
@@ -5535,6 +5517,876 @@ field and carries arithmetic information:
   \({\Delta}({\,\cdot\,}) < \infty\), and so only finitely many such
   primes can occur.
 \end{itemize}
+
+\end{remark}
+
+\hypertarget{saturday-march-13}{%
+\section{Saturday, March 13}\label{saturday-march-13}}
+
+\hypertarget{discriminants-1}{%
+\subsection{Discriminants}\label{discriminants-1}}
+
+\begin{example}[?]
+
+Suppose \(K = {\mathbb{Q}}( \sqrt{d} )\) where \(d\) is squarefree. What
+is its discriminant? We need a \({\mathbb{Z}}{\hbox{-}}\)basis of
+\({\mathbb{Z}}_K\), for \(d=2,3 \pmod 4\) we can take
+\((1, \sqrt{d} )\). Then we construct a matrix whose columns are the
+different embeddings of each entry. The embeddings here are the identity
+and complex conjugation, so we get
+\begin{align*}
+\Delta_K = \Delta(1, \sqrt{ d} )
+= 
+\det 
+\qty{
+\begin{bmatrix}
+1 & \sqrt{d} 
+\\
+ 1 & -\sqrt{d} 
+\end{bmatrix}
+}^2
+= (-2 \sqrt{d} )^2 = 4d
+.\end{align*}
+If \(d = 1 \pmod 4\), then we can take a basis
+\((1, {1 + \sqrt{d} \over 2})\), and
+\begin{align*}
+\Delta_K
+=
+\qty{
+\begin{bmatrix}
+1 & {1 + \sqrt{d} \over 2}
+\\
+1 & {1 - \sqrt{d} \over 2}
+\end{bmatrix}
+}^2
+= (- \sqrt{d} )^2 = d
+.\end{align*}
+So we have {[} \Delta\_K =
+
+\begin{cases}
+d & d = 1 \pmod 4 
+\\
+4d & d = 2,3 \pmod 4 .
+\end{cases}
+
+.{]}
+
+\end{example}
+
+\begin{remark}
+
+Note that \(\Delta_{\mathbb{Q}}= 1\) if you trace through the
+computation.
+
+\end{remark}
+
+\hypertarget{norms-of-ideals}{%
+\subsection{Norms of Ideals}\label{norms-of-ideals}}
+
+\begin{definition}[?]
+
+Let \(I {~\trianglelefteq~}{\mathbb{Z}}_K\) be a nonzero ideal, then
+define \(N(I) \coloneqq\# {\mathbb{Z}}_K/I\).
+
+\end{definition}
+
+\begin{remark}
+
+Note that this was finite in the quadratic field case since nonzero
+ideals had a ``standard basis''. For general number fields, the ideals
+can be more complicated, so we'll need another way to show finiteness.
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Let \(\alpha\in {\mathbb{Z}}_K\), then
+\(\alpha\mathrel{\Big|}N( \alpha)\) in \({\mathbb{Z}}_K\).
+
+\end{lemma}
+
+\begin{proof}[of lemma]
+
+Write down the obvious thing and see that it works!
+\begin{align*}
+N \alpha 
+\coloneqq\prod_{ \sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) \\
+= \alpha \prod_{ \substack{ \sigma: K \hookrightarrow{\mathbb{C}}\\ \sigma\neq \one_K } } \sigma( \alpha) \\
+&\coloneqq\alpha C 
+,\end{align*}
+where we've used that one embedding is the identity and factored it out.
+So it only remains to show that the \emph{cofactor} \(C\) (the product
+term) is actually in \({\mathbb{Z}}_K\). It is
+\(\mkern 1.5mu\overline{\mkern-1.5muZZ\mkern-1.5mu}\mkern 1.5mu\), since
+\(\alpha\) was an algebraic integer, i.e.~a root of some monic
+polynomial with integer coefficients. But then under every embedding,
+\(\sigma( \alpha)\) is a root of the same monic polynomial, so each
+\(\sigma( \alpha) \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\),
+as is their product since it's a ring. On the other hand, we can write
+\(C = N \alpha/ \alpha\). Since \(N \alpha\) is a nonzero rational
+integer and \(\alpha\in K\), and since \(K\) is a field, this quotient
+is in \(K\). But then
+\(C \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu \cap K = {\mathbb{Z}}_K\).
+
+\end{proof}
+
+\begin{proposition}[?]
+
+For \(I{~\trianglelefteq~}{\mathbb{Z}}_K\) nonzero,
+\begin{align*}
+N(I) < \infty 
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+We start with principal ideals. Let \(m\in {\mathbb{Z}}^+\), then
+\({\mathbb{Z}}_K \left\langle{ m }\right\rangle \coloneqq{\mathbb{Z}}_K /m {\mathbb{Z}}_K \cong_{\zmod} {\mathbb{Z}}^n / m{\mathbb{Z}}^n \cong ({\mathbb{Z}}/m{\mathbb{Z}})^n\)
+where we've forgotten the ring structure and are just considering it as
+a \({\mathbb{Z}}{\hbox{-}}\)module . But this has size \(m^n < \infty\).
+
+Now let \(\alpha\in I\) be nonzero and let \(m \coloneqq\pm N \alpha\),
+choosing whichever sign makes \(m>0\). Since
+\(\alpha\mathrel{\Big|}N \alpha\), so \(N \alpha = \ell \alpha\) is a
+multiple of \(\alpha\). But \(\alpha\in I\) and \(I\) is an ideal, so
+\(N \alpha\in I \implies m \in I\). Then (check!) the following map is
+surjective:
+\begin{align*}
+{\mathbb{Z}}_K/ \left\langle{ m }\right\rangle &\twoheadrightarrow{\mathbb{Z}}_K/I \\
+[ \alpha]_m &\mapsto [ \alpha]_I
+,\end{align*}
+where we've used \(m\in I\) for this to be well-defined. So
+\(\# {\mathbb{Z}}_K /I \leq {\mathbb{Z}}_K / \left\langle{ m }\right\rangle = m^n < \infty\).
+
+\end{proof}
+
+\begin{theorem}[The norm is multiplicative]
+
+For every pair \(I, J{~\trianglelefteq~}{\mathbb{Z}}_K\) nonzero,
+\begin{align*}
+N( IJ) + N(I) N(J)
+.\end{align*}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Deferred!
+
+\end{proof}
+
+\begin{theorem}[Formula for norm of principal ideals]
+
+For all \(\alpha\in {\mathbb{Z}}_K\) nonzero,
+\begin{align*}
+N( \left\langle{ \alpha }\right\rangle) = \abs{ N ( \alpha ) | 
+,\end{align*}
+i.e.~the norm of a principal ideal is the absolute value of the norm of
+the element-wise ideal.
+
+\end{theorem}
+
+This will follow from the following proposition:
+
+\begin{proposition}[Index = Determinant]
+
+Let \(M \in \zmod\) be free of rank \(n\) and let \(H \leq M\). Then
+\(H\) is free of rank at most \(n\), so suppose
+\(\operatorname{rank}_{\mathbb{Z}}H = n\). Suppose that
+\(\omega_1, \cdots, \omega_n\) is a \({\mathbb{Z}}{\hbox{-}}\)basis for
+\(M\) and \(\theta_1, \cdots, \theta_n\) a
+\({\mathbb{Z}}{\hbox{-}}\)basis for \(H\). We can thus write
+\({\left[ { \theta_1, \cdots, \theta_n} \right]} = {\left[ { \omega_1, \cdots, \omega_n } \right]} A\)
+for some \(A \in \operatorname{Mat}(n\times n, {\mathbb{Z}})\). Then
+\([M: H] = \#M/H = {\left\lvert { \det A } \right\rvert}\).
+
+\end{proposition}
+
+\begin{proof}[Sketch]
+
+Idea: convert this problem about an arbitrary \(M \in \zmod\) to a
+problem about \({\mathbb{Z}}^n\). We know \(M \cong {\mathbb{Z}}^n\),
+and if we send the \(\omega_i\) to the standard basis vectors, this
+identifies \(H \cong A {\mathbb{Z}}^n\). So
+\(M/H \cong {\mathbb{Z}}^n/A{\mathbb{Z}}^n\), and it's easy to see that
+\(\det A \neq 0\): if not, there would be a linear dependence among the
+\(\theta_j\). Using \emph{Smith normal form}, we can choose
+\(S, T \in \operatorname{GL}_n({\mathbb{Z}})\) with
+\begin{align*}
+SAT = \operatorname{diag}(a_1, \cdots, a_n) && a_i \in {\mathbb{Z}}
+.\end{align*}
+Since \(\det A \neq 0\), we have \(\det S, \det T \neq 0\), and so all
+of the \(a_i\) are nonzero. We can write
+\({\mathbb{Z}}^n/A{\mathbb{Z}}^n \cong {\mathbb{Z}}^n/SAT{\mathbb{Z}}^n \cong \bigoplus_{i=1}^n {\mathbb{Z}}/a_i {\mathbb{Z}}\),
+which has size
+\(\prod {\left\lvert {a_i} \right\rvert} = {\left\lvert { \prod a_i } \right\rvert} = {\left\lvert { \det (SAT) } \right\rvert} = {\left\lvert { \det(A) } \right\rvert}\)
+since \(S, T\) are invertible and thus have determinant \(\pm 1\).
+
+\end{proof}
+
+\begin{proof}[of formula for norm of principal ideals]
+
+Let \(\omega_1, \cdots, \omega_n\) be a \({\mathbb{Z}}{\hbox{-}}\)basis
+for \({\mathbb{Z}}_K\), then \(\alpha \omega_1, \cdots \alpha \omega_n\)
+is a \({\mathbb{Z}}{\hbox{-}}\)basis for
+\(\alpha{\mathbb{Z}}_K = \left\langle{ \alpha }\right\rangle\). Now to
+compute \(\# {\mathbb{Z}}_K/ \left\langle{ \alpha }\right\rangle\), we
+use the ``index equals determinant'' result: write
+\begin{align*}
+{\left[ { \alpha \omega_1, \cdots, \alpha \omega_n} \right]} = {\left[ { \omega_1, \omega_n} \right]} A \implies \# {\mathbb{Z}}_K / \left\langle{ a }\right\rangle = {\left\lvert { \det(A) } \right\rvert} 
+,\end{align*}
+we now just need to show that this is equal to
+\({\left\lvert { N \alpha } \right\rvert}\). We'll proceed by taking
+discriminants of tuples, applied to the first equation above. This
+yields
+\begin{align*}
+{\Delta}( \alpha \omega_1, \cdots, \alpha \omega_n) 
+&= 
+{\Delta}( \omega_1, \cdots, \omega_n) 
+\det(A)^2 \\
+\implies \det(A)^2 
+&= 
+{
+{\Delta}( \alpha \omega_1, \cdots, \alpha \omega_n) 
+\over
+{\Delta}( \omega_1, \cdots, \omega_n) 
+} \\
+&=
+{
+\det(D_{\alpha \omega_1, \cdots, \alpha \omega_n })^2
+\over
+\det( D_{\omega_1, \cdots, \omega_n} )^2
+}
+=
+\qty{
+\det(D_{\alpha \omega_1, \cdots, \alpha \omega_n })
+\over
+\det( D_{\omega_1, \cdots, \omega_n} )
+}^2
+.\end{align*}
+Recall that these matrices were formed by taking the \(j\)th tuple
+element for the \(j\)th column and letting the column entries be the
+images under all embeddings. Just looking at the first rows in each,
+we'll have
+\begin{align*}
+{\left[ { \sigma_1( \alpha \omega_1), \cdots, \sigma_1( \alpha \omega_n) } \right]} && 
+{\left[ { \sigma_1( \omega_1), \cdots, \sigma_1( \omega_n) } \right]} 
+.\end{align*}
+In general, the \(i\)th row of the first matrix will be
+\(\sigma_i( \alpha)\) times the \(i\)th row of the second matrix. But
+then this ratio of determinants will be
+\(\qty{ \prod_{i=1}^n \sigma_i( \alpha )}^2 \coloneqq(N \alpha)^2\). So
+\(\det(A)^2 = (N \alpha)^2\), and taking square roots yields the result.
+
+\end{proof}
+
+\hypertarget{chapter-14-integral-bases}{%
+\subsection{Chapter 14: Integral
+Bases}\label{chapter-14-integral-bases}}
+
+\begin{question}
+
+Given \(K\) a number field, can you find an explicit
+\({\mathbb{Z}}{\hbox{-}}\)basis for \({\mathbb{Z}}_K\)?
+
+\end{question}
+
+\begin{remark}
+
+This depends on how one is given \(K\), and in general this is hard!
+This is a question in algorithmic number theory. We'll focus on a
+specific sub-problem.
+
+\end{remark}
+
+\begin{question}
+
+Let \(K\) be a number field with \([K : {\mathbb{Q}}] = n\) and suppose
+\(\theta_1, \cdots, \theta_n\) in \({\mathbb{Z}}_K\) are a
+\({\mathbb{Q}}{\hbox{-}}\)basis for \(K\). Is there a simple condition
+for when they form a \({\mathbb{Z}}{\hbox{-}}\)basis for
+\({\mathbb{Z}}_K\)?
+
+\end{question}
+
+\begin{remark}
+
+We know there is \emph{some} \({\mathbb{Z}}{\hbox{-}}\)basis for
+\({\mathbb{Z}}_K\), so let
+\({ { \omega}_1, { \omega}_2, \cdots, { \omega}_{n}}\) be one. Then
+express the \(\theta\) in terms of the \(\omega\):
+\begin{align*}
+{\left[ { { { \theta}_1, { \theta}_2, \cdots, { \theta}_{n}} } \right]} &= {\left[ { { { \omega}_1, { \omega}_2, \cdots, { \omega}_{n}} } \right]} A
+\\
+\implies 
+{\Delta}({ { \theta}_1, { \theta}_2, \cdots, { \theta}_{n}} ) 
+&= 
+{\Delta}({ { \omega}_1, { \omega}_2, \cdots, { \omega}_{n}} ) \det(A)^2
+.\end{align*}
+We can view \({\left\lvert { \det(A) } \right\rvert}\) as the index of
+the subgroup generated by the \(\theta_\) in the group generated by the
+\(\omega_i\), so
+\begin{align*}
+{\left\lvert { \det(A) } \right\rvert} = [ {\mathbb{Z}}_K : H], && H\coloneqq{\operatorname{span}}_{\mathbb{Z}}\left\{{ \theta_i }\right\}
+.\end{align*}
+Thus
+\begin{align*}
+{\Delta}({ { \theta}_1, { \theta}_2, \cdots, { \theta}_{n}} ) 
+&= 
+{\Delta}({ { \omega}_1, { \omega}_2, \cdots, { \omega}_{n}} )
+[ {\mathbb{Z}}_K: H]^2
+.\end{align*}
+We can thus form a simple condition for when \(H = {\mathbb{Z}}_K\):
+
+\end{remark}
+
+\begin{corollary}[A sufficient condition]
+
+If \({\Delta}( { { \theta}_1, { \theta}_2, \cdots, { \theta}_{n}}\) is
+squarefree, then \({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{n}}\) are
+a \({\mathbb{Z}}{\hbox{-}}\)basis of \({\mathbb{Z}}_K\).
+
+\end{corollary}
+
+\begin{remark}
+
+Why? If the left-hand side is squarefree, then use that
+\([{\mathbb{Z}}_K: H]^2\) divides the left-hand side to conclude it must
+be 1. Note that this is \emph{not} necessary! We saw that for
+\(d = 2,3 \pmod 4\) that \({\Delta}_K = 4d\), which is not squarefree.
+
+\end{remark}
+
+\begin{example}[?]
+
+Let \(K = {\mathbb{Q}}( \theta)\) where \(\theta\) is a root of
+\begin{align*}
+f(x) = x^5 - 3x^2 + 1
+,\end{align*}
+which is irreducible over \({\mathbb{Q}}\). This yields a degree 5
+number field. We can look for an \(n{\hbox{-}}\)tuple of elements in
+\({\mathbb{Z}}_K\) which is a \({\mathbb{Q}}{\hbox{-}}\)basis for
+\({\mathbb{Z}}_K\)with a squarefree discriminant. A candidate would be
+\(\left\{{ \theta^j {~\mathrel{\Big|}~}0\leq j \leq 4 }\right\}\), which
+are all in \({\mathbb{Z}}_K\) since \(\theta\in {\mathbb{Z}}_K\) which
+is closed under multiplication.
+
+\begin{claim}
+
+\begin{align*}
+{\Delta}( 1, \theta, \theta^2, \theta^3, \theta^4) \text{ is squarefree}
+.\end{align*}
+
+\end{claim}
+
+We have
+\begin{align*}
+{\Delta}( 1, \theta, \theta^2, \theta^3, \theta^4)
+&\coloneqq\det( {\left[ { \sigma_i ( \theta^{j-1} ) } \right]} )^2 \\
+&= \det( {\left[ { \sigma_i ( \theta )^{j-1} } \right]} )^2 && \text{ since the $\sigma_i$ are embeddings } \\
+&= \prod_{1\leq i < j \leq 5} ( \sigma_j( \theta) - \sigma_i( \theta ) )^2 &&\text{since this is a Vandermonde matrix}\\
+&= {\Delta}(f)
+,\end{align*}
+where this is the \emph{polynomial} discriminant. This can be computed
+in a computer algebra system, and in this case it equals
+\(-23119 = (-61)(379)\) which is squarefree. So this yields a
+\({\mathbb{Z}}{\hbox{-}}\)basis for \({\mathbb{Z}}_K\),
+i.e.~\({\mathbb{Z}}_K = {\mathbb{Z}}[ \theta]\). Note that
+\({\Delta}_K = -23119\) as well, since it's the discriminant of
+\emph{any} integral basis.
+
+\end{example}
+
+\begin{example}[?]
+
+Let \(K = {\mathbb{Q}}( \alpha)\) where \(\alpha\) is a root of
+\begin{align*}
+f(x) = x^3 + x^2 - 3x + 8
+.\end{align*}
+We can try \(1, \alpha, \alpha^2\), and check
+\begin{align*}
+{\Delta}(1, \alpha, \alpha^2) = {\Delta}(f) = (-4)(503)
+,\end{align*}
+so we can't conclude this is a \({\mathbb{Z}}{\hbox{-}}\)basis. Going
+back to the proof, we \emph{can} conclude that
+\([{\mathbb{Z}}_K: H] ^2 \mathrel{\Big|}{\Delta}(1, \alpha, \alpha^2)\)
+where
+\(H \coloneqq{\mathbb{Z}}+ {\mathbb{Z}}\alpha + {\mathbb{Z}}\alpha^2 = {\mathbb{Z}}[ \alpha ]\).
+This allows us to conclude that \([{\mathbb{Z}}_K: H] = 1, 2\), so this
+could still be an index 2 subgroup. If this happens,
+\(\# {\mathbb{Z}}_K/H = 2\) and every element is annihilated by 2, so
+\(2{\mathbb{Z}}_K \subseteq H = {\mathbb{Z}}[ \alpha ]\). This would
+mean
+\begin{align*}
+{\mathbb{Z}}_K \subseteq {1\over 2} {\mathbb{Z}}[ \alpha ] 
+= 
+\left\{{ {c_0 + c_1 \alpha + c_2 \alpha^2 \over 2} {~\mathrel{\Big|}~}c_i \in {\mathbb{Z}}}\right\} 
+.\end{align*}
+So are there elements of \({\mathbb{Z}}_K\) of this form that are
+\emph{not} in \({\mathbb{Z}}[ \alpha ]\)? If there's nothing of this
+form in \({\mathbb{Z}}_K \setminus{\mathbb{Z}}[ \alpha ]\) then we can
+conclude \({\mathbb{Z}}_K = {\mathbb{Z}}[ \alpha ]\). If there \emph{is}
+something of this form in
+\({\mathbb{Z}}_K \setminus{\mathbb{Z}}[ \alpha ]\), then
+\({\mathbb{Z}}_K \supseteq {\mathbb{Z}}[\alpha]\). One can check that
+\({\alpha+ \alpha^2 \over 2} \in {\mathbb{Z}}_K \setminus H\). So the
+original candidate basis was wrong, but we can take
+\(1, \alpha, {\alpha + \alpha^2 \over 2}\) instead, which is an integral
+basis.
+
+\end{example}
+
+\begin{remark}
+
+Why is this last part true? These are 3 elements of \({\mathbb{Z}}_K\)
+that are still \({\mathbb{Q}}{\hbox{-}}\)linearly independent and
+contains the \({\mathbb{Z}}{\hbox{-}}\)span of the previous 3 elements
+defining \(H\). But the index of \(H\) was 2, so this forces it to be
+everything. So \({\mathbb{Z}}_K \neq {\mathbb{Z}}[ \alpha]\), and in
+fact Dedekind showed that \({\mathbb{Z}}_K \neq {\mathbb{Z}}[ \beta]\)
+for \emph{any} choice of \(\beta\in {\mathbb{Z}}_K\). So cubic number
+fields exhibit new behavior when compared to quadratic number fields!
+
+\end{remark}
+
+Next time: integral bases for cyclotomic fields.
+
+\hypertarget{saturday-march-13-1}{%
+\section{Saturday, March 13}\label{saturday-march-13-1}}
+
+\hypertarget{ch.-14-continued-cyclotomic-fields}{%
+\subsection{Ch. 14 Continued: Cyclotomic
+Fields}\label{ch.-14-continued-cyclotomic-fields}}
+
+\begin{definition}[Cyclotomic Fields]
+
+A \textbf{cyclotomic field} is a number field \({\mathbb{Q}}( \zeta_m)\)
+where \(\zeta_m \coloneqq e^{2\pi i / m}\), a primitive \(m\)th root of
+1.
+
+\end{definition}
+
+\begin{remark}
+
+The Kronecker-Webber theorem: any \emph{abelian extension}
+\(K/{\mathbb{Q}}\) (so
+\(\operatorname{Gal}(K/{\mathbb{Q}}) \in {\mathsf{Ab}}\)) is contained
+in a cyclotomic extension, and every cyclotomic field is an abelian
+extension. Given such a number field \(K = {\mathbb{Q}}( \zeta_m)\),
+what is \({\mathbb{Z}}_K\)?
+
+\end{remark}
+
+\begin{theorem}[The ring of integers of a cyclotomic field is given by adjoining a primitive root of unity]
+
+For \(K = {\mathbb{Q}}( \zeta_m)\),
+\begin{align*}
+{\mathbb{Z}}_K = {\mathbb{Z}}[ \zeta_m ]
+.\end{align*}
+
+\end{theorem}
+
+\begin{remark}
+
+The degree of any such \(K/{\mathbb{Q}}\) is \(\phi(m)\), and here
+\(\phi(p) = p-1\). Also recall Eisenstein's criterion: if \(p\) divides
+all of the coefficients of a polynomial \(f(x) \coloneqq\sum a_i x^i\)
+but \(p^2\nmid a_0\), then \(f\) is irreducible over \({\mathbb{Q}}\).
+
+\end{remark}
+
+\begin{lemma}[?]
+
+The minimal polynomial of \(\zeta_p\) over \({\mathbb{Q}}\) is
+\begin{align*}
+\Phi_p(x) \coloneqq x^{p-1} + x^{p-2} + \cdots + x + 1
+,\end{align*}
+and so \([{\mathbb{Q}}(\zeta_p) : {\mathbb{Q}}] = p-1\).
+
+\end{lemma}
+
+\begin{proof}[sketch]
+
+Note that \(\zeta_p\) is a root of \(\Phi_p\), since
+\begin{align*}
+\Phi_p(x) = {x^p-1 \over x - 1}
+,\end{align*}
+and \(\zeta_p\) is a root of the numerator of the right-hand side and
+not of the denominator. This is irreducible by Eisenstein's criterion at
+\(p\), using \(x\mapsto x+1\).
+
+\end{proof}
+
+\begin{proposition}[?]
+
+Let
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+be an algebraic integer such that
+\begin{align*}
+\min_ \alpha (x) = x^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0 && \in {\mathbb{Z}}[x]
+\end{align*}
+is Eisenstein at the prime \(p\). Let
+\(K \coloneqq{\mathbb{Q}}( \alpha)\), a number field of degree \(n\).
+Then
+\begin{align*}
+p\nmid[{\mathbb{Z}}_K : {\mathbb{Z}}[ \alpha] ]
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+We first observe that \(\alpha^n\) is a multiple of \(p\) in
+\({\mathbb{Z}}_K\). To see this, plug \(\alpha\) into the minimal
+polynomial to get \(0 = \alpha^n + \cdots\) and solve for \(\alpha^n\)
+to obtain
+\begin{align*}
+\alpha^n = -(a_{n-1} \alpha^{n-1} + \cdots + a_1 \alpha + a_0) \equiv 0 \pmod p \text{ in } {\mathbb{Z}}_K 
+,\end{align*}
+and this is a multiple of \(p\) by the assumption on Eisenstein's
+criterion. We want to show \(p\) doesn't divide
+\(\# {\mathbb{Z}}_K/ {\mathbb{Z}}[ \alpha]\) as
+\({\mathbb{Z}}{\hbox{-}}\)modules, identify the index as the size of
+this quotient. It suffices to show that
+\({\mathbb{Z}}_K/{\mathbb{Z}}[ \alpha]\) has no elements of order \(p\),
+by applying Cauchy's theorem. If \(\beta\in {\mathbb{Z}}_K\) represents
+an element of order \(p\) in the quotient, then
+\(p \beta\in {\mathbb{Z}}[ \alpha]\) and so
+\(p \beta = b_0 + b \alpha + \cdots + b_{n-1} \alpha^{n-1}\) for some
+\(b_i \in {\mathbb{Z}}\). The order of \(\beta\) to be exactly \(p\), so
+not all of the \(b_i\) are multiples of \(p\): otherwise one could
+divide through by \(p\) and conclude \(\beta\in {\mathbb{Z}}[ \alpha]\),
+making it zero in the quotient (and in particular, not of order \(p\) as
+assumed). Suppose toward a contradiction that \(i\) is the smallest
+index such that \(p\) does not divide \(b_i\). Then take this last
+equation mod \(p\):
+\begin{align*}
+p \beta \equiv 0 \equiv b_i \alpha^{i} + \cdots + b_{n-1} \alpha^{n-1} \pmod p
+.\end{align*}
+Now multiply by \(\alpha^{n-1-i}\) to obtain
+\begin{align*}
+0 \equiv b_i \alpha^{n-1} + \cdots \equiv b_i \alpha^{n-1} \pmod p
+,\end{align*}
+where \(p\) divides all of the other terms since they all contain a
+factor of \(\alpha^n \equiv 0 \pmod p\). So
+\(b_i \alpha^{n-1} /p \in {\mathbb{Z}}_K\), and by a previous theorem,
+this forces \(N( b_i \alpha^{n-1} / p ) \in |ZZ\). But we can write
+\begin{align*}
+N \qty{ b_i \alpha^{n-1} \over p }
+&=
+N \qty{ b_i \over p} N( \alpha^{n-1} ) \\
+&= \qty{b_i \over p}^{n} N( \alpha)^{n-1} \\
+&= \qty{b_i \over p}^{n} \pm a_0 \\
+&= \pm {b_i^n a_0^{n-1} \over p^n } \not\in {\mathbb{Z}}
+.\end{align*}
+where we've used that all embeddings fix rational numbers. But this is
+not an integer, since by Eisenstein \(p^2\) does not divide \(a_0\). So
+\(a_0^{n-1}\) contributes exactly \(n-1\) copies of \(p\), leaving a
+\(p\) in the denominator, and \(p\nmid b_i\) since we choose \(i\)
+precisely to arrange for this. \(\contradiction\)
+
+\end{proof}
+
+\begin{remark}
+
+Recall some facts about the discriminant: let \(F\) be a field and
+\(f(x) \in F[x]\) monic. Then factor
+\(f(x) = \prod_{i=1}^n (x - \alpha_i)\) over some splitting field. We
+then define
+\begin{align*}
+{\Delta}(f) \coloneqq\prod_{i<j} ( \alpha_j - \alpha_i)^2
+.\end{align*}
+We won't discuss the theory, but we'll use a few facts.
+
+\end{remark}
+
+\begin{fact}
+
+For each fixed \(n\) and all polynomials \(f\) of degree \(n\),
+\({\Delta}(f)\) is given by a universal polynomial in the coefficients
+of \(f\) with integer coefficients. For example, for \(n=2\) and
+\(f(x) = x^2 + bx + c\), we have
+\({\Delta}(f) = b^2 - 4c \in {\mathbb{Z}}[b,c]\). If \(n=3\) and
+\(f(x) = x^3 + bx^2 + cx + d\), we have
+\begin{align*}
+{\Delta}(f) = 18bcd - 4b^3d + b^2c^2 - 4c^3 - 27d^2\in {\mathbb{Z}}[b,c,d]
+.\end{align*}
+So the discriminant is some polynomial expression in the coefficients,
+which (more importantly) have \emph{integer} coefficients.
+
+Some consequences:
+
+\begin{itemize}
+\tightlist
+\item
+  \({\Delta}(f) \in F\), despite the fact that the roots are generally
+  not in \(F\) and are instead in some splitting field.
+\item
+  If \(F ={\mathbb{Q}}\) and \(f\in {\mathbb{Q}}[x]\) \emph{and} in fact
+  \(f\in {\mathbb{Z}}[x]\), then \({\Delta}(f) \in {\mathbb{Z}}\).
+\item
+  If \(F = {\mathbb{Q}}\) and \(f\in {\mathbb{Z}}[x]\) with \(q\) some
+  prime,
+  \begin{align*}
+  {\Delta}( f) \pmod q = {\Delta}(f \pmod q)
+  ,\end{align*}
+  where we first take the discriminant to land in \({\mathbb{Z}}\) and
+  then reduce to \({\mathbb{F}}_q\), or we reduce
+  \(f\in {\mathbb{Z}}[x]\) to \(f\pmod q \in {\mathbb{F}}_q[x]\) and
+  take the discriminant using some algebraic close of
+  \({\mathbb{F}}_q\).
+\end{itemize}
+
+\end{fact}
+
+\begin{proof}[That $\ZZ_K = \ZZ[ \zeta_p]$ for $K = \QQ(\zeta_p)$]
+
+To save space, we'll write \(\zeta \coloneqq\zeta_p\). We want to show
+\(\1, \zeta, \cdots, \zeta^{p-2}\) forms an integral basis, from last
+time we have
+\begin{align*}
+{\Delta}( 1, \zeta, \cdots, \zeta^{p-2}) = 
+{\Delta}_K 
+[{\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta ] ]^2 
+\implies
+[{\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta ] ]^2 
+\mathrel{\Big|}
+{\Delta}( 1, \zeta, \cdots, \zeta^{p-2}) 
+.\end{align*}
+
+\begin{claim}
+
+The right-hand side is a power of \(p\) (up to a sign), and hence so is
+the left-hand side.
+
+\end{claim}
+
+We'll proceed by showing that the only prime that could divide the
+right-hand side is \(p\). Suppose \(q\) divides the right-hand side,
+i.e.~\(q \mathrel{\Big|}{\Delta}(x^{p-1} + \cdots + x + 1)\). So this is
+zero mod \(q\), and thus
+\({\Delta}( x^{p-1} + \cdots + x + 1 \pmod q) \equiv 0\). The
+discriminant was a product of roots, so it can only be zero if two roots
+coincide, so there is a multiple root of
+\(x^{p-1} + \cdots + x + 1 \pmod q\) and thus also of \(x^p - 1\). So
+\(x^p-1\) and its derivative \(px^{p-1}\) have a root in common, and
+(check!) this can only happen if \(q=p\).
+
+So \([{\mathbb{Z}}_K : {\mathbb{Z}}[\zeta] ] = p^\ell\) for some
+\(\ell\). Using that fact that
+\({\mathbb{Z}}[ \zeta] \cong {\mathbb{Z}}[ \zeta - 1]\), we have
+\([ {\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta] ] = [ {\mathbb{Z}}_K: {\mathbb{Z}}[\zeta - 1] ]\).
+But by the previous lemma, we know that the minimal polynomial of
+\(\zeta_p - 1\) is \(\Phi(x+1)\), which is \(p{\hbox{-}}\)Eisenstein. So
+by that lemma, \(p\nmid[{\mathbb{Z}}_K: {\mathbb{Z}}[ \zeta - 1]]\),
+which forces \(\ell = 0\) and
+\({\mathbb{Z}}_K = {\mathbb{Z}}[ \zeta_p ]\).
+
+\end{proof}
+
+\begin{proof}[Sketch of the same proof for $K = \QQ(\zeta_m)$]
+
+\envlist
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Do roughly the same proof for prime powers \(m = p^\ell\)
+\item
+  Show that if \(a, b\in {\mathbb{Z}}^{\geq 0}\) are coprime then
+  \({\Delta}_a \coloneqq{\Delta}_{{\mathbb{Q}}( \zeta_a)}, {\Delta}_b \coloneqq{\Delta}_{{\mathbb{Q}}(\zeta_b)}\)
+  are coprime.
+\end{enumerate}
+
+These are defined in terms of integral bases, and we're trying to prove
+that something \emph{is} an integral basis, so how do you show this if
+you don't know your basis is integral to begin with? Without knowing the
+exact values of the discriminants, you can show
+\({\Delta}_a \mathrel{\Big|}a^?\) divides some power of \(a\), and the
+same for \(b\), and so \(a, b\) coprime will make \(a^?, b^?\) coprime
+as well. This can be shown by computing the discriminant of a
+\emph{candidate} integral bases rather than an actual one.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Use a key lemma: if \(K_1, K_2\) are number fields with coprime
+  discriminants, then considering the composite field, we have
+  \({\mathbb{Z}}_{K_1 K_2} = {\mathbb{Z}}_{K_1} {\mathbb{Z}}_{K_2}\), a
+  composite ring.
+\item
+  If \(a, b\) are coprime, check that
+  \({\mathbb{Q}}(\zeta_a) {\mathbb{Q}}(\zeta_b) = {\mathbb{Q}}(\zeta_{ab})\)
+  and
+  \({\mathbb{Z}}[ \zeta_a] {\mathbb{Z}}[ \zeta_b] = {\mathbb{Z}}[ \zeta_{ab} ]\).
+\item
+  Factor \(m = \prod_{i} p_i^{\ell_i}\) and apply steps (3) and (4)
+  inductively.
+\end{enumerate}
+
+\end{proof}
+
+\begin{remark}
+
+The hard part is the lemma in (3). Also, questions about discriminants
+tend to come up during oral exams that include algebraic number theory.
+
+\end{remark}
+
+\hypertarget{ch.-15-ideal-theory-in-general-number-rings}{%
+\subsection{Ch. 15: Ideal theory in general number
+rings}\label{ch.-15-ideal-theory-in-general-number-rings}}
+
+\begin{remark}
+
+Here ``number rings'' means \({\mathbb{Z}}_K\) for \(K\) a general
+number field. Let \(K\) be a number field with
+\([K: {\mathbb{Q}}] = n\). We'd want
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\operatorname{Id}({\mathbb{Z}}_K)\) to be a UFM as a monoid,
+\item
+  \(\operatorname{Cl}({\mathbb{Z}}_K)\) is a finite group,
+\end{enumerate}
+
+Recall that we proved (1) and used it to deduce (2) for quadratic
+fields, whereas for the general case we'll prove (2) and deduce (1). The
+approach we'll take here is somewhat idiosyncratic -- the standard
+treatment involves the theory of Dedekind domains, which uses a lot of
+commutative algebra. This approach is more classic (circa 19th century,
+very concrete), and we'll skip over less important details (e.g.~those
+that are unlikely to show up on oral exams).
+
+\end{remark}
+
+\begin{definition}[Class Group]
+
+\begin{align*}
+\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/ \sim
+,\end{align*}
+where \(\sim\) denotes dilation equivalence.
+
+\end{definition}
+
+\begin{remark}
+
+Our strategy:
+
+\begin{itemize}
+\tightlist
+\item
+  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) is finite.
+\item
+  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) is actually a group,
+  i.e.~there are inverses, so that for every ideal there is another
+  ideal such that their product is principal (the ``Principal Multiple
+  Lemma'').
+\item
+  The remaining proofs from the quadratic field case go through almost
+  word-for-word.
+\end{itemize}
+
+\end{remark}
+
+\begin{proposition}[?]
+
+There is a constant \(T = T(K)\) that only depends on \(K\) such that
+for every \(\theta\in K\), there is a positive integer \(t \leq T\) and
+a \(\xi \in {\mathbb{Z}}_K\) such that
+\begin{align*}
+{\left\lvert {N(t \theta - \xi ) } \right\rvert} < 1
+.\end{align*}
+
+\end{proposition}
+
+\begin{remark}
+
+I.e. anything in the field can be multiplied by a bounded integer to
+make it close to something in the ring of integers. This proposition
+came up for imaginary quadratic fields in the Rabinowitz criterion,
+crucial for proving that the class group was generated by prime ideals
+which lie above small primes.
+
+\end{remark}
+
+\begin{proof}[?]
+
+Omitted! See book, this proof wouldn't show up on an oral exam. This
+uses Dirichlet's approximation criterion again, although in a different
+way.
+
+\end{proof}
+
+\begin{theorem}[The class group is finite]
+
+\begin{align*}
+\# \operatorname{Cl}({\mathbb{Z}}_K) < \infty 
+.\end{align*}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Very similar to how it goes for quadratic fields. As before, let
+\(I \in \operatorname{Id}({\mathbb{Z}}_K)\) be nonzero and
+\(\beta \in I\) nonzero with \({\left\lvert {N \beta} \right\rvert}\)
+minimal.
+
+\begin{claim}
+
+Let \(T\) be as in the proposition, then
+\(T! I \subseteq \left\langle{ \beta }\right\rangle\).
+
+\end{claim}
+
+This follows from exactly the same argument as before.
+
+Now define \(J \coloneqq{T! \over \beta} I \subseteq {\mathbb{Z}}_K\),
+which is a dilation of \(I\) and thus
+\(J {~\trianglelefteq~}{\mathbb{Z}}_K\) as well. By definition,
+\(I\sim J\), i.e.~\([I] = [J] \in \operatorname{Id}({\mathbb{Z}}_K)\),
+and it's now enough to show that there are only finitely many
+possibilities for \(J\), since then every class is equal to the class of
+one of finitely many such \(J\). Since \(\beta\in I\), we can deduce
+that \(T! \in J\) and thus
+\(\left\langle{ T! }\right\rangle \subseteq J\). We'd like to say ``to
+contain is to divide'' (as in the case of unique factorization) and
+conclude \(J\mathrel{\Big|}T!\), which only has finitely many divisors.
+However, we haven't proved this yet! We can use an algebra fact instead:
+\begin{align*}
+\left\{{\substack{
+  \text{Ideals of ${\mathbb{Z}}_K$ }
+  \\
+  \text{containing } \left\langle{ T! }\right\rangle 
+}}\right\}
+&\rightleftharpoons
+\left\{{\substack{
+  \text{Ideals of } {\mathbb{Z}}_K / \left\langle{ T! }\right\rangle 
+}}\right\}
+,\end{align*}
+so it's enough to show that the right-hand side is finite. This is
+``obvious'', since
+\(\# {\mathbb{Z}}_K / \left\langle{ T! }\right\rangle = (T!)^n\). This
+comes from the fact that
+\({\mathbb{Z}}_K \cong_{{\mathsf{Ab}}} {\mathbb{Z}}^n\), so as a
+\({\mathbb{Z}}{\hbox{-}}\)module this is isomorphic to
+\({\mathbb{Z}}^n / T! {\mathbb{Z}}^n \cong ({\mathbb{Z}}/T! {\mathbb{Z}})^n\),
+so this is a finite ring and can thus only have finitely many
+ideals.\footnote{In fact, we've already proved that
+  \({\mathbb{Z}}_K / I\) for any nonzero ideal \(I\) is finite.}
+
+\end{proof}
+
+\begin{remark}
+
+We now want to establish the cancellation law in
+\(\operatorname{Id}({\mathbb{Z}}_K)\), then the principal multiple
+lemma, and then everything else will follow as in the quadratic case.
 
 \end{remark}
 

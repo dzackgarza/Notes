@@ -1696,7 +1696,7 @@ Equivalently, handle sliding \( \alpha_1 \) over \( \alpha_2 \) replaces \( \alp
 
 ![image_2021-02-11-11-53-22](figures/image_2021-02-11-11-53-22.png)
 
-3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{ \text{\Large \#} }T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
+3.  Stabilization. This changes \( (\Sigma, \alpha, \beta) \mapsto (\Sigma \mathop{ \Large\text{\#} }T^2, \alpha \cup\left\{{ \alpha_{g+1 } , \beta}\right\} \cup\left\{{ \beta_{g+1} }\right\} \), where \( \alpha_{g+1}, \beta_{g+1} \subseteq T^2 \) and intersect in exactly on point.
 
 ![image_2021-02-11-12-10-06](figures/image_2021-02-11-12-10-06.png)
 
@@ -1710,7 +1710,7 @@ Show that any two sets of attaching curves for a handlebody \( H \) can be relat
 ::: {.exercise title="?"}
 Show that stabilization yields a Heegard diagram for the same manifold.
 
-*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{ \text{\Large \#} }S^3 \).*
+*Hint: the new summand is a Heegard diagram for \( S^3 \), and connect sums in the diagrams correspond to connect sums of the corresponding manifolds. Moreover, \( M \cong M\mathop{ \Large\text{\#} }S^3 \).*
 :::
 
 ::: {.theorem title="?"}
@@ -2856,7 +2856,357 @@ This is because there is a unique involution exchanging them by the Schwarz lemm
 :::
 
 ::: {.remark}
-Next week: more about the Maslov index and \( \mathrm{spin}^{\mathrm{c} } \) structures, then invariance under diagram moves.
+Next week: more about the Maslov index and \( \mathrm{Spin}^{\mathbb{C} } \) structures, then invariance under diagram moves.
+:::
+
+# Maslov Grading and \( \mathrm{Spin}^{\mathbb{C} } \) Structures (Tuesday, March 16) {#maslov-grading-and-mathrmspinmathbbc-structures-tuesday-march-16}
+
+::: {.remark}
+Let \( M\in {\mathsf{Mfd}}^3({\mathbb{R}}) \) be a closed oriented 3-manifold and \( \mathcal{H} = (\Sigma, \alpha, \beta, z) \) a Heegaard diagram for \( M \). Letting \( b_i \) be the Betti numbers, note that \( b_1 = 0 \iff M \in \operatorname{QHS}^3 \) is a rational homology 3-sphere, i.e. \( H_i(M; {\mathbb{Q}}) \cong H_i(S^3; {\mathbb{Q}}) \) for all \( i \). This also implies that \( H_2(M; {\mathbb{Z}}) = 0 \). Under this condition, we can define a **relative \( {\mathbb{Z}}{\hbox{-}} \)grading** (i.e. we have a difference of grading between any two elements) on \( \widehat{CF} \) in the following way: for \( x, y \) two generators, we set
+\[
+{\operatorname{gr}}(x) - {\operatorname{gr}}(y) \coloneqq\mu( \varphi) -2n_z( \varphi) && \text{for some } \varphi\in \pi_2(x,y)
+.\]
+
+Recall that \( \mu({\,\cdot\,}) \) denotes the Maslov index, \( n_z( {\,\cdot\,}) \) is the local multiplicity of a Whitney disc at \( z \), and \( x, y \) denote tuples of points.
+:::
+
+::: {.remark}
+This involves a choice of disc, so why is it well-defined? We'll also see why we need \( M\in \operatorname{QHS}^3 \).
+:::
+
+::: {.proof title="of well-definedness"}
+Let \( \varphi, \varphi' \in \pi_2(x, y) \). We have
+\[
+\varphi \ast (-\varphi') \in \pi_2(x, x) = {\mathbb{Z}}\oplus H_2(M) = {\mathbb{Z}}\oplus 0
+,\]
+so this is some multiple \( kS \) where \( S \) is the positive generator of \( \pi_2\operatorname{Sym}^g \Sigma \). So
+\[
+\mu( \varphi \ast (- \varphi') ) = \mu( \varphi) - \mu( \varphi') = k \mu(S) = 2k
+.\]
+Similarly,
+\[
+n_z( \varphi \ast (- \varphi')) = n_z( \varphi) - n_z( \varphi') = k n_z(S) = k
+,\]
+where we've used \( \mu(S) = 2, n_z(S) = 1 \). Then
+\[
+\mu( \varphi) - \mu ( \varphi') 
+&= 2( n_z( \varphi) - n_z( \varphi') ) \\
+\implies
+\mu( \varphi) - 2n_z( \varphi) 
+&= \mu( \varphi') - 2 n_z( \varphi')
+.\]
+:::
+
+::: {.remark}
+Note that the relative grading is only defined if \( \pi_2(x, y) \neq \emptyset \iff \varepsilon(x, y) = 0 \in H_1(M; {\mathbb{Z}}) \). This generated an equivalence relation of elements in \( {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \) by \( x\sim y \iff \varepsilon(x, y) = 0 \), so we have a decomposition
+\[
+\widehat{CF}( \mathcal{H} ) = \bigoplus _{?} \widehat{CF}( \mathcal{H}, ?)  
+.\]
+which is preserved by \( {{\partial}} \), so \( \widehat{HF}(\mathcal{H}) \) will split similarly as
+\[
+\widehat{HF}( \mathcal{H} ) = \bigoplus _{?} \widehat{CF}( \mathcal{H}, ?)  
+.\]
+
+It turns out that the right thing to replace the "?" with will be \( \mathrm{Spin}^{\mathbb{C} } \) structures.
+:::
+
+## \( \mathrm{Spin}^{\mathbb{C} } \) Structures {#mathrmspinmathbbc-structures}
+
+We'll discuss Turaev's (?) reformulation of \( \mathrm{Spin}^{\mathbb{C} } \) structure for \( {\mathsf{Mfd}}^3 \). Note that \( \chi(M) = 0 \), so there exists nowhere vanishing vector fields on \( M \) by Poincaré-Hopf.
+
+::: {.definition title="?"}
+Let \( v_1, v_2 \) be nowhere vanishing vector fields on \( M \). We say
+\[
+v_1 \sim v_2
+\iff { \left.{{v_1}} \right|_{{M\setminus B}} } \simeq{ \left.{{v_2}} \right|_{{M\setminus B}} }
+,\]
+i.e. their restrictions to \( M\setminus B \) are homotopic, and here \( B \) is a 3-ball in \( M \). Equivalently, \( v_1\sim v_2 \iff v_1, v_2 \) are homotopic in the complement of finitely many 3-balls in \( M \).
+:::
+
+::: {.definition title="$\\Spinc$ Structures"}
+\[
+\mathrm{Spin}^{\mathbb{C} }(M) \coloneqq\left\{{ \text{Nowhere vanishing vector fields on } M }\right\}_{/\sim}
+.\]
+:::
+
+::: {.definition title="?"}
+Let \( \mathcal{H} = ( \Sigma, \alpha, \beta, z) \) be a Heegard diagram for \( M \), then define a map
+\[
+S_z: {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{\beta} \to \mathrm{Spin}^{\mathbb{C} }(M)
+.\]
+
+**Step 1**: Choose a self-indexing Morse function \( f \) with \( \# \operatorname{Crit}^0(f) = \# \operatorname{Crit}^3(f) = 1 \) such that its corresponding Heegaard diagram is \( \mathcal{H} \):
+
+![image_2021-03-16-11-47-19](figures/image_2021-03-16-11-47-19.png)
+
+Note that we have a surface in \( f ^{-1} (3/2) \) and there are exactly \( q \) critical points along each of \( f ^{-1} (1), f ^{-1} (2) \). For each \( x = \left\{{ { {x}_1, {x}_2, \cdots, {x}_{g}} }\right\} \cap{\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{\beta} \), we have \( x_i \in \alpha_i \cap\beta_{\sigma(i)} \) for some permutation \( \sigma\in S_g \) Then \( \alpha\mapsto p_i \) and \( \beta_{\sigma(i)} \mapsto q_{\sigma(i)} \):
+
+![image_2021-03-16-11-49-42](figures/image_2021-03-16-11-49-42.png)
+
+Trajectories of \( -\nabla f \) that pass through \( { {x}_1, {x}_2, \cdots, {x}_{g}} \) are \( g \) pairwise disjoint arcs connecting \( { {q}_1, {q}_2, \cdots, {q}_{g}} \) to \( { {p}_1, {p}_2, \cdots, {p}_{g}} \), so there is a one-to-one correspondence between these intersection points.
+
+Now taking tubular neighborhoods of the \( g+1 \) disjoint arcs yields \( g+1 \) pairwise disjoint 3-balls in \( M \), so write this as \( B\coloneqq B_1 \coprod \cdots \coprod B_{g+1} \).
+
+![image_2021-03-16-11-53-04](figures/image_2021-03-16-11-53-04.png)
+
+Note that
+
+-   \( -\nabla f \) does not vanish in \( M \setminus B \).
+
+-   \( - \nabla f \) can be extended to a nowhere vanishing vector field on \( M \)
+
+::: {.exercise title="?"}
+Show this!
+
+*Hint: the trajectories of \( -\nabla f \) in each ball connect critical points of different parities, and so each \( { \left.{{-\nabla f }} \right|_{{{{\partial}}B_i }} } \) has index zero.*
+:::
+
+Define \( S_z(x) \in \mathrm{Spin}^{\mathbb{C} }(M) \) to be the equivalence class represented by this vector field. This is well-defined since outside of the finitely many balls, this vector field is just equal to \( -\nabla f \).
+:::
+
+::: {.exercise title="?"}
+Show that this does not depend on which Morse function is chosen.
+:::
+
+::: {.proposition title="?"}
+There is a one-to-one correspondence
+\[
+\mathrm{Spin}^{\mathbb{C} }(M) \rightleftharpoons H^2(M; {\mathbb{Z}})
+.\]
+Picking a trivialization \( \tau: TM \to M \times{\mathbb{R}}^3 \) and a Riemannian metric on \( M \), then
+\[
+\left\{{\substack{
+  \text{Nowhere vanishing vector fields} \\
+  \text{on } M
+}}\right\}
+&\rightleftharpoons
+\left\{{\substack{
+  \text{functions } f: M\to S^2
+}}\right\} \\
+v:M\to {\mathbb{R}}^3\setminus\left\{{0}\right\}&\mapsto 
+x \xrightarrow{f_v} \widehat{\mathbf{v}_x}
+\]
+:::
+
+::: {.definition title="?"}
+Let \( \alpha\in H^2(S^2; {\mathbb{Z}}) \) be the positive generator, then define
+\[
+\delta^{ \tau} (v) \coloneqq f_v^*( \alpha) \in H^2(M; {\mathbb{Z}})
+.\]
+Note that if \( v_1 \sim v_2 \), we have \( \delta^{ \tau}(v_1) = \delta^{ \tau}(v_2) \) since they are homotopic on the complement of a ball:
+\[
+M\setminus B \overset{i}\hookrightarrow M \xrightarrow{f_v} S^2
+.\]
+Conclude that
+\[
+(f_{v_1} \circ i)^* ( \alpha) = (f_{v_2} \circ i)^* (\alpha)
+,\]
+\( i^* \) is an isomorphism, so \( f_{v_1}^*( \alpha) = f_{v_2}^* ( \alpha) \), yielding the identification.
+:::
+
+::: {.exercise title="?"}
+```{=tex}
+\envlist
+```
+1.  Show that \( \delta^{ \tau} \) is a bijection.
+
+2.  \( \delta(v_1, v_2) \coloneqq\delta^{ \tau}(v_1) - \delta^{ \tau}(v_2) \in H^2(M; {\mathbb{Z}}) \) is well-defined and independent of the choice of \( \tau \), and satisfies
+    \[
+    \delta(v_1, v_2) + \delta(v_2, v_3) = \delta(v_1, v_3)
+    .\]
+
+Thus we also have a relative map
+\[
+\mathrm{Spin}^{\mathbb{C} }(M) &\rightleftharpoons H^2(M; {\mathbb{Z}})\\
+s_1, s_2 \coloneqq[v_1] - [v_2] &\mapsto s_1 -s_2 \coloneqq\delta(v_1, v_2)
+.\]
+:::
+
+# Thursday, March 18
+
+## \( \mathrm{Spin}^{\mathbb{C} } \) Structures and Invariance {#mathrmspinmathbbc-structures-and-invariance}
+
+::: {.remark}
+Recall that given a Heegard diagram \( ( \Sigma, \alpha, \beta, z ) \) gives an equivalence relation
+\[
+x \sim y \iff \varepsilon(x, y) = 0 \in H_1(M) \overset{\mathrm{PD}}{=} H^2(M)
+.\]
+This yields a decomposition of \( \widehat{\operatorname{HF}} \) into a direct sum over equivalence classes of subcomplexes defined by \( \mathrm{Spin}^{\mathbb{C} } \) structures. Note that the differential will preserve each direct summand. We defined \( \mathrm{Spin}^{\mathbb{C} }(M) \) as the set of nowhere vanishing vector fields on \( M \) modulo being homotopic outside finitely many 3-balls in \( M \). We had a map
+\[
+{\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{\beta} \xrightarrow{s_z} \mathrm{Spin}^{\mathbb{C} }(M)
+,\]
+recalling that the left-hand side are the generators of \( \widehat{\operatorname{HF}} \). We took a self-indexing Morse function on \( M \), took the inverse image of \( 3/2 \) to get the Heegard surface, and each intersection point \( x_i \) gave a flow line from an index 2 critical point to an index 1 critical point passing through \( x_i \):
+
+![Trajectories of negative gradient flow](figures/image_2021-03-18-11-19-00.png)
+
+We proceeded by cancelling adjacent flow lines (at the level of vector fields), and then modifying \( \gamma_z \) (the flow line passing through the basepoint \( z \) connecting the index 0 to the index 3) to get a nowhere vanishing vector field. We then took a trivialization \( \tau: TM \to M \times{\mathbb{R}}^3 \) defined a map
+\[
+\mathrm{Spin}^{\mathbb{C} }(M) &\xrightarrow{\gamma^ \tau} H^2(M) \\
+s = [v] &\mapsto f_v^*( \alpha)
+.\]
+where \( \alpha \) is the volume form of \( S^2 \) and
+\[
+f_v: M &\to S^2 \\
+x &\mapsto \widehat{v_x} \coloneqq{ v_x \over {\left\lVert {v_x} \right\rVert} }
+.\]
+Note that \( \delta^\tau \) a priori depends on \( \tau \), but
+\[
+\delta(s_1, s_2) = \delta^{ \tau}(s_1) - \delta^{ \tau}(s_2) \in H^2(M)
+,\]
+and the difference is independent of \( \tau \).
+:::
+
+::: {.lemma title="?"}
+For \( x, y\in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \), defining \( s_1 - s_2 = \delta(s_1, s_2) \in H^2(M) \), we have
+\[
+s_z(y) - s_z(x) = \mathrm{PD}[\varepsilon(x, y) ]
+.\]
+
+As corollaries,
+
+1.  If \( x\sim y \) then \( s_z(y) = s_z(x) \), and
+2.  If \( x\not\sim y \) then the above equation holds.
+:::
+
+::: {.exercise title="?"}
+Prove this!
+
+*Hint, take the Poincaré dual of the link below to get the formula:*
+\[
+s_z(y) - s_z(x) = \mathrm{PD}[ \gamma_y \cup(- \gamma_x)]
+.\]
+*This implies that the two vector fields are equal everywhere outside of a tubular neighborhood of the link. Then show that \( [ \gamma_x \cup(-\gamma_x) = [ \varepsilon(x, y) ] \).*
+:::
+
+::: {.remark}
+We thus have
+\[
+\widehat{\operatorname{HF}}( \Sigma, \alpha, \beta, z)
+= \bigoplus _{{\mathfrak{s}}\in \mathrm{Spin}^{\mathbb{C} }(M)} 
+\widehat{\operatorname{HF}}( \Sigma, \alpha, \beta, z, {\mathfrak{s}})
+.\]
+:::
+
+::: {.remark}
+We have several properties of \( \mathrm{Spin}^{\mathbb{C} } \) structures. There is a map
+\[
+J: \mathrm{Spin}^{\mathbb{C} }(M) &\to \mathrm{Spin}^{\mathbb{C} }(M) \\
+s = [v] &\mapsto {\overline{{s}}} \coloneqq[-v]
+.\]
+There is also a first Chern class
+\[
+c_1: \mathrm{Spin}^{\mathbb{C} }(M) &\to H^2(M) \\
+s &\mapsto s - {\overline{{s}}}
+,\]
+i.e. \( c_1(s) = \delta(s, {\overline{{s}}}) \).
+:::
+
+::: {.theorem title="Topological Invariance"}
+The association
+\[
+( \Sigma, \alpha, \beta, z), J \leadsto 
+\widehat{\operatorname{HF}}
+( \Sigma, \alpha, \beta, z)
+\]
+does not depend on the choice of Heegard diagram or the almost complex structure \( J \), so this yields a well-defined invariant of \( M \) which we'll denote \( \widehat{\operatorname{HF}}(M) \) for \( M\in {\mathsf{Mfd}}^3({\mathbb{R}}) \).
+:::
+
+::: {.remark}
+There are few things to discuss:
+
+1.  The almost complex structure \( J \):
+
+2.  Isotopies
+
+3.  Handle slides
+
+4.  Stabilization
+
+Remarks on these:
+
+1.  This involves a standard argument from Lagrangian Floer homology.
+2.  There are two cases:
+    -   If the isotopy doesn't create a new intersection, we have a 1-to-1 correspondence between generators for any two choices, and changing \( J \) to \( J' \) will give a correspondence between the differentials. This just involves picking a diffeomorphism that maps \( \alpha \) circles to \( \alpha' \) circles, and so on. So this reduces to showing 1.
+    -   If is *does* create new intersection points, there are again standard arguments in Lagrangian Floer homology for this.
+3.  This involves the following situation, which induces a map
+
+![image_2021-03-18-11-51-38](figures/image_2021-03-18-11-51-38.png)
+
+For an appropriate choice of \( J \) on \( \Sigma \mathop{ \Large\text{\#} }T^2 \), the map \( f \) above will induce a chain homotopy equivalence
+\[
+\tilde f: 
+\widehat{\operatorname{HF}}
+(\Sigma, \alpha, \beta, z)
+\xrightarrow{\sim} 
+\widehat{\operatorname{HF}}
+(\Sigma \mathop{ \Large\text{\#} }T^2, \alpha', \beta', z)
+.\]
+
+4.  What's the picture?
+
+![image_2021-03-18-11-56-59](figures/image_2021-03-18-11-56-59.png)
+
+This will yield a map
+\[
+  (\Sigma, \alpha, {\color{blue} \beta}, z)
+  \leadsto
+  (\Sigma, \alpha, {\color{green} \gamma}, z)
+  .\]
+For \( i = 1, \cdots, g-1 \), we'll have \( \gamma_i \) isotopic to \( \beta_i \), and for \( i=g \), \( \gamma_g \) is obtained by sliding \( \beta_g \) over \( \beta_{g-1} \). We'll combine these into the same diagram with different colors to compare them, yielding a **Heegard triple**:
+\[
+  (\Sigma, {\color{red} \alpha}, {\color{blue} \beta}, { \color{green} \gamma}, z)
+  .\]
+We can think of this as three separate diagrams:
+\[
+  (\Sigma, {\color{red} \alpha}, {\color{blue} \beta}, z)
+  &\leadsto M\\
+  (\Sigma, {\color{blue} \beta}, { \color{green} \gamma}, z)
+  &\leadsto ? \\
+  (\Sigma, {\color{red} \alpha}, { \color{green} \gamma}, z)
+  &\leadsto M
+  .\]
+What does the middle one represent?
+
+![Heegard diagram](figures/image_2021-03-18-12-02-39.png)
+
+Here this is a diagram for \( (S^1 \times S^2)^{\mathop{ \Large\text{\#} }2} \).
+
+Note that we draw \( \gamma_i \) such that it intersects \( \beta_i \) in two transverse intersection points to make sure the diagram is admissible.
+:::
+
+::: {.remark}
+Give a Heegard triple \( ( \Sigma, \alpha, \beta, \gamma, z \), pick three intersection points
+\[
+x &\in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta} \\
+y &\in {\mathbb{T}}_{ \beta} \cap{\mathbb{T}}_{ \gamma} \\
+w &\in {\mathbb{T}}_{ \gamma} \cap{\mathbb{T}}_{ \alpha} 
+.\]
+We can use **Whitney triangles** to connect \( x,y,w \):
+
+![image_2021-03-18-12-23-07](figures/image_2021-03-18-12-23-07.png)
+
+We then define \( \pi_2(x,y,z) \) to be the homotopy class of Whitney triangles connecting \( x,y,w \). We can similarly define \( {\mathcal{M}}( \psi ) \) to be the moduli space of \( J{\hbox{-}} \)holomorphic representatives of \( \psi\in \pi_2(x,y,w) \), along with a chain map
+\[
+f_{\alpha \beta \gamma}: 
+\widehat{\operatorname{HF}}(\Sigma, \alpha, \beta, z)
+\otimes
+\widehat{\operatorname{HF}}(\Sigma, \beta, \gamma z)
+&\to
+\widehat{\operatorname{HF}}(\Sigma, \alpha, \gamma, z) \\
+x\otimes y 
+&\mapsto 
+\sum_{ w \in {\mathbb{T}}_{ \alpha} \cap{\mathbb{T}}_{ \beta}} 
+\sum_{\substack{ \psi\in \pi_2(x,y,w) \\ \mu( \psi) = 0 \\ n_z( \psi) = 0 }}
+\# {\mathcal{M}}( \psi) \cdot w
+.\]
+:::
+
+::: {.theorem title="?"}
+\( f_{ \alpha \beta \gamma} \) is a chain map.
+:::
+
+::: {.remark}
+Next time: we'll show how to get a chain homotopy equivalence from the first tensor term above to the codomain. We'll also see surgery exact triangles.
 :::
 
 [^1]: See Sarkour-Wang
