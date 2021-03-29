@@ -57,5 +57,7 @@
     \put(0.58061472,0.14113917){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$t$\end{tabular}}}}%
     \put(0.8971892,0.15872666){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\CC$\end{tabular}}}}%
     \put(0.80925186,0.79187561){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$X_t$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-03-29_14-14.pdf}}%
+    \put(0.07057806,0.35218886){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$h^{0, 1}$ could jump\\\end{tabular}}}}%
   \end{picture}%
 \endgroup%

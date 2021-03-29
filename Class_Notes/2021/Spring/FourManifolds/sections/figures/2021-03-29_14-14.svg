@@ -25,7 +25,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
      inkscape:cx="254.38239"
-     inkscape:cy="-171.15046"
+     inkscape:cy="114.57959"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -39,8 +39,8 @@
      inkscape:snap-tangential="true"
      inkscape:window-width="1920"
      inkscape:window-height="1080"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="-1"
+     inkscape:window-y="-1"
      inkscape:window-maximized="0">
     <sodipodi:guide
        position="0,148"
@@ -145,5 +145,60 @@
          x="157.91667"
          y="-95.333328"
          style="stroke-width:0.264583">$X_t$</tspan></text>
+    <circle
+       style="fill:#bc2122;fill-rule:evenodd;stroke-width:0.499999;stroke-linejoin:round"
+       id="path850"
+       sodipodi:type="arc"
+       sodipodi:cx="17.6875"
+       sodipodi:cy="103.10417"
+       sodipodi:rx="2.6458333"
+       sodipodi:ry="2.6458333"
+       sodipodi:start="5.0507036"
+       sodipodi:end="5.0265308"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 18.565646,100.60832 a 2.6458333,2.6458333 0 0 1 1.62297,3.3589 2.6458333,2.6458333 0 0 1 -3.349033,1.64324 2.6458333,2.6458333 0 0 1 -1.663448,-3.33904 2.6458333,2.6458333 0 0 1 3.328929,-1.6836" />
+    <circle
+       style="fill:#bc2122;fill-rule:evenodd;stroke-width:0.499999;stroke-linejoin:round"
+       id="path850-3"
+       sodipodi:type="arc"
+       sodipodi:cx="61.849102"
+       sodipodi:cy="71.224686"
+       sodipodi:rx="2.6458333"
+       sodipodi:ry="2.6458333"
+       sodipodi:start="5.0507036"
+       sodipodi:end="5.0265308"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 62.727248,68.72883 a 2.6458333,2.6458333 0 0 1 1.62297,3.358903 2.6458333,2.6458333 0 0 1 -3.349033,1.643239 2.6458333,2.6458333 0 0 1 -1.663448,-3.339042 2.6458333,2.6458333 0 0 1 3.328929,-1.683596" />
+    <circle
+       style="fill:#bc2122;fill-rule:evenodd;stroke-width:0.499999;stroke-linejoin:round"
+       id="path850-6"
+       sodipodi:type="arc"
+       sodipodi:cx="67.080185"
+       sodipodi:cy="113.53752"
+       sodipodi:rx="2.6458333"
+       sodipodi:ry="2.6458333"
+       sodipodi:start="5.0507036"
+       sodipodi:end="5.0265308"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 67.958331,111.04167 a 2.6458333,2.6458333 0 0 1 1.62297,3.3589 2.6458333,2.6458333 0 0 1 -3.349033,1.64324 2.6458333,2.6458333 0 0 1 -1.663448,-3.33904 2.6458333,2.6458333 0 0 1 3.328928,-1.6836" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;word-spacing:0px;stroke-width:0.264583"
+       x="-64.333336"
+       y="36.958332"
+       id="text883"><tspan
+         sodipodi:role="line"
+         id="tspan881"
+         x="-64.333336"
+         y="36.958332"
+         style="stroke-width:0.264583">$h^{0, 1}$ could jump</tspan><tspan
+         sodipodi:role="line"
+         x="-64.333336"
+         y="50.187458"
+         style="stroke-width:0.264583"
+         id="tspan885" /></text>
   </g>
 </svg>
