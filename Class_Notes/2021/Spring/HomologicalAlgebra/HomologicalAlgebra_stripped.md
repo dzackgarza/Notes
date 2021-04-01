@@ -5725,16 +5725,16 @@ A_\otimes Q_p & q=0
 0 & q>0.
 \end{cases}
 \]
-The second pages comes from taking the vertical homology, so \[ {}\^{II}E\_{p, q}\^2 = H_p\^v H_q\^h(P_q `\otimes `{=tex}Q_p) =
-
-```{=tex}
+The second pages comes from taking the vertical homology, so
+\[
+{}^{II}E_{p, q}^2 = H_p^v H_q^h(P_q \otimes Q_p) =
 \begin{cases}
 H^v_p(A\otimes Q) & q=0 
 \\
 0 & q>0.
 \end{cases}
-```
-,\] which is \( L_p(A\otimes{\,\cdot\,})(B) \) in \( q=0 \). Since \( {}^{II}E_{p, q}^2 \Rightarrow H_{p+q}(\operatorname{Tot}(P\otimes Q)) = L_p({\,\cdot\,}\otimes B)(A) \), and we thus have
+,\]
+which is \( L_p(A\otimes{\,\cdot\,})(B) \) in \( q=0 \). Since \( {}^{II}E_{p, q}^2 \Rightarrow H_{p+q}(\operatorname{Tot}(P\otimes Q)) = L_p({\,\cdot\,}\otimes B)(A) \), and we thus have
 \[
 L_p(A\otimes{\,\cdot\,})(B) \cong L_p({\,\cdot\,}\otimes B)(A)
 .\]
