@@ -36,6 +36,7 @@
 \newcommand{\bbm}[0]{{\mathbb{M}}}
 \newcommand{\NN}[0]{{\mathbb{N}}}
 \newcommand{\OP}[0]{{\mathbb{OP}}}
+\newcommand{\LL}[0]{{\mathbb{L}}}
 \newcommand{\PP}[0]{{\mathbb{P}}}
 \newcommand{\QQ}[0]{{\mathbb{Q}}}
 \newcommand{\RP}[0]{{\mathbb{RP}}}
@@ -44,6 +45,8 @@
 \renewcommand{\SS}[0]{{\mathbb{S}}}
 \newcommand{\TT}[0]{{\mathbb{T}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
+\newcommand{\ZZG}[0]{{\mathbb{Z}G}}
+\newcommand{\kG}[0]{{kG}}
 \newcommand{\znz}[0]{\mathbb{Z}/n\mathbb{Z}}
 \newcommand{\zpz}[0]{\mathbb{Z}/p\mathbb{Z}}
 \newcommand{\zlz}[0]{\mathbb{Z}/\ell\mathbb{Z}}
@@ -74,7 +77,7 @@
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
 \newcommand{\Art}[0]{\operatorname{Art}}
-\newcommand{\red}[0]{\operatorname{red}}
+\newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
@@ -163,6 +166,7 @@
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
@@ -399,7 +403,8 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
+\newcommand\mypound{\scalebox{0.8}{\raisebox{0.4ex}{\#}}}
+\newcommand{\connectsum}[0]{\mathop{ \Large\mypound }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -428,7 +433,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{{#1}^{\wait}}
+\newcommand{\complex}[1]{{#1}^{\bullet}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -6775,6 +6780,677 @@ However, this will not hold for $\Totprod$.
 Next time: a second filtration and its spectral sequence, and how to play them off of each other.
 :::
 
+
+# Friday, March 26
+
+## 5.6: Two Spectral Sequences on Total Complexes
+
+:::{.remark}
+Recall that we had two filtrations on a total complex: the first was fixing a vertical line and replacing everything to the right with zeros, which was given by $^{I}E_{p, q}^0 = F_p(\Tot)/ F_{p-1}(\Tot) = C_{p, q}$.
+Taking homology with the vertical differentials yielded $^{I}E_{p, q}^1 = H_q^v(C_{p,*})$, and $^{I} E_{p, q}^2 = H_p^h H_q^v(C_{*, *})$.
+Applying the classical convergence theorem when this is 1st quadrant yields some spectral sequence with these as the pages which converges to $H_{p+q}(\Tot(C))$.
+:::
+
+:::{.definition title="The second filtration"}
+We'll define a filtration by rows:
+let $^{II}F_n \Tot(C)$ be the total complex of the double complex 
+\[
+({}^{II} \tau_{\leq n} C)_{p, q}
+&=
+\begin{cases}
+C_{p, q} & p, q\leq  
+\\
+0 & p, q > n.
+\end{cases}
+\]
+This is the complex gotten by replacing everything below the $n$th row with zeros.
+We define the 0th page
+\[
+{}^{II} E^{0}_{p, q}
+= 
+{
+{}^{II} F_p \Tot(C)_{p+q} 
+\over 
+{}^{II} F_{p-1} \Tot(C)_{p+q} 
+}
+ = C_{q, p}
+,\]
+which follows from the fact that we are modding out a full diagonal by a diagonal with one fewer elements:
+
+\begin{tikzcd}
+	& \ddots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+	& \cdots & 0 & 0 & 0 & 0 & \cdots \\
+	p &&&&&& {} & {} \\
+	& \cdots & \textcolor{rgb,255:red,214;green,92;blue,92}{\bullet} & \bullet & \bullet & \bullet & \cdots \\
+	& \cdots & \bullet & \textcolor{rgb,255:red,92;green,92;blue,214}{\bullet} & \bullet & \bullet & \cdots \\
+	& \cdots & \bullet & \bullet & \bullet & \bullet & \cdots \\
+	& \cdots & \bullet & \bullet & \bullet & \bullet & \ddots \\
+	& \ddots & \vdots & \vdots & \vdots & \ddots & \ddots \\
+	&& q
+	\arrow["{F_p}"', shift right=3, color={rgb,255:red,214;green,92;blue,92}, squiggly, no head, from=7-6, to=4-3]
+	\arrow["{F_{p-1}}", shift left=3, color={rgb,255:red,92;green,92;blue,214}, squiggly, no head, from=7-6, to=5-4]
+	\arrow[dashed, no head, from=3-1, to=3-8]
+\end{tikzcd}
+
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNDYsWzIsMywiXFxidWxsZXQiLFswLDYwLDYwLDFdXSxbMywzLCJcXGJ1bGxldCJdLFszLDQsIlxcYnVsbGV0IixbMjQwLDYwLDYwLDFdXSxbMiw0LCJcXGJ1bGxldCJdLFs0LDMsIlxcYnVsbGV0Il0sWzQsNCwiXFxidWxsZXQiXSxbNSw0LCJcXGJ1bGxldCJdLFs1LDMsIlxcYnVsbGV0Il0sWzUsNSwiXFxidWxsZXQiXSxbNCw1LCJcXGJ1bGxldCJdLFszLDUsIlxcYnVsbGV0Il0sWzIsNSwiXFxidWxsZXQiXSxbMiw2LCJcXGJ1bGxldCJdLFszLDYsIlxcYnVsbGV0Il0sWzUsNiwiXFxidWxsZXQiXSxbNCw2LCJcXGJ1bGxldCJdLFsyLDEsIjAiXSxbMywxLCIwIl0sWzQsMSwiMCJdLFs1LDEsIjAiXSxbNiwyXSxbMCwyLCJwIl0sWzUsNywiXFxkZG90cyJdLFs2LDcsIlxcZGRvdHMiXSxbNiw2LCJcXGRkb3RzIl0sWzQsNywiXFx2ZG90cyJdLFs2LDUsIlxcY2RvdHMiXSxbMiwwLCJcXHZkb3RzIl0sWzMsMCwiXFx2ZG90cyJdLFs0LDAsIlxcdmRvdHMiXSxbNSwwLCJcXHZkb3RzIl0sWzIsNywiXFx2ZG90cyJdLFszLDcsIlxcdmRvdHMiXSxbNiw0LCJcXGNkb3RzIl0sWzYsMywiXFxjZG90cyJdLFsxLDMsIlxcY2RvdHMiXSxbMSw0LCJcXGNkb3RzIl0sWzEsNSwiXFxjZG90cyJdLFsxLDYsIlxcY2RvdHMiXSxbMSw3LCJcXGRkb3RzIl0sWzEsMSwiXFxjZG90cyJdLFs2LDEsIlxcY2RvdHMiXSxbNiwwLCJcXGRkb3RzIl0sWzEsMCwiXFxkZG90cyJdLFs3LDJdLFsyLDgsInEiXSxbMTQsMCwiRl9wIiwyLHsib2Zmc2V0IjozLCJjb2xvdXIiOlswLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX0sWzAsNjAsNjAsMV1dLFsxNCwyLCJGX3twLTF9IiwwLHsib2Zmc2V0IjotMywiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX0sWzI0MCw2MCw2MCwxXV0sWzIxLDQ0LCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+:::
+
+:::{.warnings}
+Note the switched order!
+:::
+
+:::{.remark}
+Note that the differential is
+\[
+d^0: E^0_{p, q} &\to E^0_{p, q-1} \\
+= d^h: C_{q, p} &\to C_{q-1, p}
+.\]
+
+We similarly have ${}^II E_{p, q}^I = H_q^h(C_{*, p})$, again noting the switched indices, with differential
+\[
+d^1: E^1_{p, q} &\to E_{p-1, q}^1 \\
+=H^h(C_{q, p}) &\to H^h(C_{*, p-1})
+\]
+which comes from the original differential inducing a map on horizontal homology.
+Then ${}^{II} E^2_{p, q} = H_p^v H_q^h(C)$.
+:::
+
+:::{.remark}
+Note that transposing everything about the line $p=q$ interchanges filtrations $I$ and $II$, and thus the two spectral sequences ${}^{I}E_{p, q} \mapstofrom {}^{II} E_{q, p}$.
+Using that first quadrant sequences are canonically bounded, we can apply the classical convergence theorem to ${}^{II} E$ to obtain
+\[
+{}^{II}E_{p, q}^2 \abuts H_{p+q}( \Tot(C) )
+.\]
+Transposing sends $QIV$ to $QII$ and thus ${}^{II} E \abuts H_{p+q}\Totsum(C)$.
+Note that this does not guarantee anything about $\Totprod(C)$.
+:::
+
+:::{.remark}
+In particular, if we have a $QI$ double complex, both filtrations converge to the homology of the total complex.
+:::
+
+## Application: Balancing Tor
+
+:::{.remark}
+Our proof in 2.7 that $\Tor_*^R(A, B)$ could be computed either by a projective resolution $\complex{P}\surjects A$ or a projective resolution $\complex{Q}\surjects B$ was a disguised spectral sequence argument.
+So we'll go recover it using the actual spectral sequence.
+:::
+
+:::{.remark}
+We have a $QI$ double complex $C$ given by $C_{p, q} \da (P\tensor Q)_{p, q} = P_p\tensor Q_q$, and we now have two spectral sequences converging to $H_*(\Tot(P\tensor Q))$.
+Taking the first filtration, we can write 
+\[
+H_q^v(\Tot(C)) = H_q(P_p \tensor Q_q) = P_p \tensor H_q(Q)
+.\]
+Using that $P$ is an exact complex, and noting that we delete the augmentation when taking homology, we have
+\[
+H_1^v(\Tot(C)) 
+=
+\begin{cases}
+0 & q>0 
+\\
+P_p\tensor B & q=0.
+\end{cases}
+\]
+
+Thus
+\[
+E^2_{p, q} 
+=
+\begin{cases}
+H_p^h(P_* \tensor B) &  q=0 
+\\
+0 & 1>0,
+\end{cases}
+\]
+meaning that this collapses at $E^2$ and we have
+\[
+H_p (\Tot(P\tensor Q) ) \cong L_p(\wait \tensor B)(A) \da \Tor^R_p(A, B)
+.\]
+
+Now consider taking the second filtration, which yields 
+\[
+{}^{II} E_{p, q}^1 = H_q^h( P_q \tensor Q_p) = H_q(P_*) \tensor Q_p
+=
+\begin{cases}
+A_\tensor Q_p & q=0 
+\\
+0 & q>0.
+\end{cases}
+\]
+The second pages comes from taking the vertical homology, so 
+\[
+{}^{II}E_{p, q}^2 = H_p^v H_q^h(P_q \tensor Q_p) =
+
+\begin{cases}
+H^v_p(A\tensor Q) & q=0 
+\\
+0 & q>0.
+\end{cases}
+,\]
+which is $L_p(A\tensor \wait)(B)$ in $q=0$.
+Since ${}^{II}E_{p, q}^2 \abuts H_{p+q}(\Tot(P\tensor Q)) = L_p(\wait \tensor B)(A)$, and we thus have
+\[
+L_p(A\tensor \wait)(B) \cong L_p(\wait \tensor B)(A)
+.\]
+:::
+
+:::{.remark}
+See the this section of Weibel for other applications in the exercises: the Kunneth formula, the Universal Coefficient Theorem, and the Acyclic Assembly Lemma.
+:::
+
+## Hypercohomology
+
+
+:::{.remark}
+We'd like to compute derived functors acting on chain complexes instead of just objects.
+:::
+
+
+:::{.definition title="?"}
+Let $\cat{A}$ be an abelian category with enough projectives and let $\complex{A} \in \Ch(\cat{A})$.
+A (left) **Cartan-Eilenberg resolution** (a CE resolution) $P_{*, *}$ of $A_*$ is an upper half-plane complex (so $P_{p, q} = 0$ when $q<0$) and an augmentation chain map $P_{*, 0} \mapsvia{\eps} A_*$ such that 
+
+1. If $A_p=0$ then the entire column $P_{p, *}$ is zero.
+
+2. The induces maps on boundaries and in homology are projective resolutions in $\cat{A}$:
+\[
+B_p(P, d^h) &\mapsvia{B_p(\eps)} B_p(A) \\
+H_p(P, d^h) \mapsvia{H_p(\eps)} H_p(A)
+.\]
+
+:::
+
+
+:::{.remark}
+So we have the following situation
+
+\begin{tikzcd}
+	{q:} & \cdots && {P_{p+1, q}} && {P_{p, q}} && {P_{p-1, q}} && \cdots \\
+	&&& \vdots && \vdots && \vdots \\
+	& \cdots && {P_{p+1, 1}} && {P_{p, 1}} & {} & {P_{p-1, 1}} && \cdots \\
+	\\
+	& \cdots && {P_{p+1, 0}} && {P_{p, 0}} && {P_{p-1, 0}} && \cdots \\
+	{} &&&&&&&&&& {} \\
+	& \cdots && {A_{p-1}} && {A_{p}} && {A_{p-1}} && \cdots
+	\arrow[from=3-8, to=3-6]
+	\arrow[from=7-8, to=7-6]
+	\arrow[from=7-6, to=7-4]
+	\arrow[from=5-8, to=5-6]
+	\arrow[from=5-6, to=5-4]
+	\arrow[from=3-6, to=3-4]
+	\arrow[from=3-4, to=5-4]
+	\arrow[from=5-4, to=7-4]
+	\arrow[from=3-6, to=5-6]
+	\arrow[from=5-6, to=7-6]
+	\arrow[from=3-8, to=5-8]
+	\arrow[from=5-8, to=7-8]
+	\arrow[from=3-10, to=3-8]
+	\arrow[from=5-10, to=5-8]
+	\arrow[from=7-10, to=7-8]
+	\arrow[from=7-4, to=7-2]
+	\arrow[from=5-4, to=5-2]
+	\arrow[from=3-4, to=3-2]
+	\arrow[from=1-10, to=1-8]
+	\arrow[from=1-8, to=1-6]
+	\arrow[from=1-6, to=1-4]
+	\arrow[from=1-4, to=1-2]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, dotted, no head, from=6-1, to=6-11]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMjcsWzMsMiwiUF97cCsxLCAxfSJdLFs1LDIsIlBfe3AsIDF9Il0sWzYsMl0sWzMsNCwiUF97cCsxLCAwfSJdLFs1LDQsIlBfe3AsIDB9Il0sWzcsNCwiUF97cC0xLCAwfSJdLFszLDYsIkFfe3AtMX0iXSxbNSw2LCJBX3twfSJdLFs3LDYsIkFfe3AtMX0iXSxbNywyLCJQX3twLTEsIDF9Il0sWzEsMiwiXFxjZG90cyJdLFsxLDQsIlxcY2RvdHMiXSxbOSwyLCJcXGNkb3RzIl0sWzksNCwiXFxjZG90cyJdLFs5LDYsIlxcY2RvdHMiXSxbMSw2LCJcXGNkb3RzIl0sWzMsMSwiXFx2ZG90cyJdLFs1LDEsIlxcdmRvdHMiXSxbNywxLCJcXHZkb3RzIl0sWzMsMCwiUF97cCsxLCBxfSJdLFs1LDAsIlBfe3AsIHF9Il0sWzcsMCwiUF97cC0xLCBxfSJdLFs5LDAsIlxcY2RvdHMiXSxbMSwwLCJcXGNkb3RzIl0sWzAsMCwicToiXSxbMCw1XSxbMTAsNV0sWzksMV0sWzgsN10sWzcsNl0sWzUsNF0sWzQsM10sWzEsMF0sWzAsM10sWzMsNl0sWzEsNF0sWzQsN10sWzksNV0sWzUsOF0sWzEyLDldLFsxMyw1XSxbMTQsOF0sWzYsMTVdLFszLDExXSxbMCwxMF0sWzIyLDIxXSxbMjEsMjBdLFsyMCwxOV0sWzE5LDIzXSxbMjUsMjYsIiIsMSx7ImNvbG91ciI6WzI0MCw2MCw2MF0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+The situation in row $q$ will be:
+
+\begin{tikzcd}
+	\cdots && {P_{p+1, q}} && {P_{p, q}} && {P_{p-1, q}} && \cdots \\
+	\\
+	&&&& {Z_p(P, d^h)} \\
+	&&&&&& {H_p(P, d^h)_q} \\
+	&&&& {B_p(P, d^h)}
+	\arrow[from=1-9, to=1-7]
+	\arrow[from=1-7, to=1-5]
+	\arrow[from=1-5, to=1-3]
+	\arrow[from=1-3, to=1-1]
+	\arrow[hook, from=3-5, to=1-5]
+	\arrow[hook, from=5-5, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbNiwwLCJQX3twLTEsIHF9Il0sWzQsMCwiUF97cCwgcX0iXSxbMiwwLCJQX3twKzEsIHF9Il0sWzgsMCwiXFxjZG90cyJdLFswLDAsIlxcY2RvdHMiXSxbNCwyLCJaX3AoUCwgZF5oKSJdLFs0LDQsIkJfcChQLCBkXmgpIl0sWzYsMywiSF9wKFAsIGReaClfcSJdLFszLDBdLFswLDFdLFsxLDJdLFsyLDRdLFs1LDEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzYsNSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=)
+
+Here when we take the homology of the complex along the rows $p$, we'll obtain
+\[
+H_q(P, d^h) = {Z_p(P, d^h)_q \over B_p(P, d^h)_q}
+,\]
+and since the induces maps preserve cycles and boundaries, we get induced maps on homology.
+
+Exercise 5.7.1 shows that $P_{p, *} \mapsvia{\eps} A_p$ will be a projective resolution in $\cat{A}$ and so $Z_p(P, d^h)_* \to Z_p(A)$.
+
+:::
+
+
+:::{.lemma title="?"}
+Every $A_*$ has a CE resolution $P_{*, *} \mapsvia{\eps} A$.
+:::
+
+
+:::{.proof title="?"}
+Choose a levelwise resolution and use the horseshoe lemma:
+
+\begin{tikzcd}
+	0 && {B_p(A)} && {Z_p(A)} && {H_p(A)} && 0 \\
+	\\
+	0 && {P^B_{p, *}} && \textcolor{rgb,255:red,92;green,92;blue,214}{P^Z_{p, *}} && {P^H_{p, *}} && 0
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-5, to=1-7]
+	\arrow[from=1-7, to=1-9]
+	\arrow[from=3-3, to=1-3]
+	\arrow[from=3-7, to=1-7]
+	\arrow[from=3-1, to=3-3]
+	\arrow[draw={rgb,255:red,92;green,92;blue,214}, dashed, from=3-3, to=3-5]
+	\arrow[draw={rgb,255:red,92;green,92;blue,214}, dashed, from=3-5, to=3-7]
+	\arrow[from=3-7, to=3-9]
+	\arrow[draw={rgb,255:red,92;green,92;blue,214}, dashed, from=3-5, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsyLDAsIkJfcChBKSJdLFs0LDAsIlpfcChBKSJdLFs2LDAsIkhfcChBKSJdLFs4LDAsIjAiXSxbNiwyLCJQXkhfe3AsICp9Il0sWzQsMiwiUF5aX3twLCAqfSIsWzI0MCw2MCw2MCwxXV0sWzIsMiwiUF5CX3twLCAqfSJdLFswLDIsIjAiXSxbOCwyLCIwIl0sWzAsMV0sWzEsMl0sWzIsM10sWzMsNF0sWzcsMV0sWzUsM10sWzgsN10sWzcsNiwiIiwxLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsNSwiIiwxLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzUsOV0sWzYsMiwiIiwxLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+Recall that this involved a direct sum construction.
+Now do a similar thing for the following SES:
+
+\begin{tikzcd}
+	0 && {Z_p(A)} && {A_p} && {B_{p-1}(A)} && 0 \\
+	\\
+	0 && {P^Z_{p, *}} && \textcolor{rgb,255:red,92;green,92;blue,214}{P^A_{p, *}} && {P^B_{p-1, *}} && 0
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow["{d_p}", from=1-5, to=1-7]
+	\arrow[from=1-7, to=1-9]
+	\arrow[from=3-3, to=1-3]
+	\arrow[from=3-7, to=1-7]
+	\arrow[from=3-1, to=3-3]
+	\arrow[draw={rgb,255:red,92;green,92;blue,214}, dashed, from=3-3, to=3-5]
+	\arrow["{\tilde{d_p}}", draw={rgb,255:red,92;green,92;blue,214}, dashed, from=3-5, to=3-7]
+	\arrow[from=3-7, to=3-9]
+	\arrow[draw={rgb,255:red,92;green,92;blue,214}, dashed, from=3-5, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTAsWzAsMCwiMCJdLFsyLDAsIlpfcChBKSJdLFs0LDAsIkFfcCJdLFs2LDAsIkJfe3AtMX0oQSkiXSxbOCwwLCIwIl0sWzYsMiwiUF5CX3twLTEsICp9Il0sWzQsMiwiUF5BX3twLCAqfSIsWzI0MCw2MCw2MCwxXV0sWzIsMiwiUF5aX3twLCAqfSJdLFswLDIsIjAiXSxbOCwyLCIwIl0sWzAsMV0sWzEsMl0sWzIsMywiZF9wIl0sWzMsNF0sWzcsMV0sWzUsM10sWzgsN10sWzcsNiwiIiwxLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzYsNSwiXFx0aWxkZXtkX3B9IiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzUsOV0sWzYsMiwiIiwxLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+
+We use the fact that we have the two side resolutions from the previous step.
+So set $P_{p, q} \da P_{p, q}^A$ assembled into a double complex using the sign trick: $d^v \da (-1)^p d$ where we used the differential $d$ from $P_{p, *}^A$.
+We can now define
+\[
+d^h: P^A_{p+1, *} \mapsvia{\tilde d_{p+1} } P_{p, *}^B \injects P_{p, *}^Z \injects P_{p, *}^A
+.\]
+One then checks that $B_p(\eps)$ and $H_p(\eps)$ are indeed projective resolutions.
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Monday, March 29
+
+## Maps of Double Complexes
+
+:::{.remark}
+Last time: we talked about hypercohomology.
+We're doing this so we can set up a Grothendieck spectral sequence.
+:::
+
+:::{.definition title="Chain homotopies of double complexes"}
+Let $f, g:D\to E$ be two maps between double complexes.
+A **chain homotopy** from $f$ to $g$ consists of $s_{p, q}^h: D_{p, q} \to E_{p+1, q}$ and $s_{p, q}^v: D_{p, q} \to E_{p, q+1}$ for all $p, q$ satisfying the following conditions:
+
+1. All of the possible maps $D_{p, q} \to E_{p, q}$ summed should be equal to $g-f$, i.e. $g-f = (d^h s^h + s^h d^h) + (d^v s^v + s^v d^v)$:
+
+\begin{tikzcd}
+	&&&& {E_{p, q+1}} \\
+	\\
+	&&&& {E_{p, q}} && {E_{p+1, q}} \\
+	\\
+	{D_{p-1, q}} && {D_{p, q}} \\
+	\\
+	&& {D_{p, q-1}}
+	\arrow["{d^v}"{description}, draw={rgb,255:red,16;green,178;blue,32}, from=1-5, to=3-5]
+	\arrow["{d^v}"{description}, draw={rgb,255:red,16;green,178;blue,32}, from=5-3, to=7-3]
+	\arrow["{s_{p-1, q}^h}"{description, pos=0.2}, color={rgb,255:red,149;green,68;blue,55}, dashed, from=5-1, to=3-5]
+	\arrow["{s^v_{p, q-1}}"{description, pos=0.9}, color={rgb,255:red,16;green,178;blue,32}, dashed, from=7-3, to=3-5]
+	\arrow["{d^h}"{description}, draw={rgb,255:red,149;green,68;blue,55}, from=5-3, to=5-1]
+	\arrow["{d^h}"{description}, draw={rgb,255:red,149;green,68;blue,55}, from=3-7, to=3-5]
+	\arrow["{s_{p, q}^h}"{description, pos=0.2}, color={rgb,255:red,149;green,68;blue,55}, dashed, from=5-3, to=3-7]
+	\arrow["{s^v_{p, q}}"{description, pos=0.9}, color={rgb,255:red,16;green,178;blue,32}, dashed, from=5-3, to=1-5]
+	\arrow["{g-f}"{description}, curve={height=-30pt}, from=5-3, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCw0LCJEX3twLTEsIHF9Il0sWzIsNCwiRF97cCwgcX0iXSxbMiw2LCJEX3twLCBxLTF9Il0sWzQsMiwiRV97cCwgcX0iXSxbNiwyLCJFX3twKzEsIHF9Il0sWzQsMCwiRV97cCwgcSsxfSJdLFs1LDMsImRediIsMSx7ImNvbG91ciI6WzEyNiw4NCwzOF19XSxbMSwyLCJkXnYiLDEseyJjb2xvdXIiOlsxMjYsODQsMzhdfV0sWzAsMywic197cC0xLCBxfV5oIiwxLHsibGFiZWxfcG9zaXRpb24iOjIwLCJjb2xvdXIiOls4LDQ2LDQwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fSxbOCw0Niw0MCwxXV0sWzIsMywic152X3twLCBxLTF9IiwxLHsibGFiZWxfcG9zaXRpb24iOjkwLCJjb2xvdXIiOlsxMjYsODQsMzhdLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19LFsxMjYsODQsMzgsMV1dLFsxLDAsImReaCIsMSx7ImNvbG91ciI6WzgsNDYsNDBdfV0sWzQsMywiZF5oIiwxLHsiY29sb3VyIjpbOCw0Niw0MF19XSxbMSw0LCJzX3twLCBxfV5oIiwxLHsibGFiZWxfcG9zaXRpb24iOjIwLCJjb2xvdXIiOls4LDQ2LDQwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fSxbOCw0Niw0MCwxXV0sWzEsNSwic152X3twLCBxfSIsMSx7ImxhYmVsX3Bvc2l0aW9uIjo5MCwiY29sb3VyIjpbMTI2LDg0LDM4XSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fSxbMTI2LDg0LDM4LDFdXSxbMSwzLCJnLWYiLDEseyJjdXJ2ZSI6LTV9XV0=)
+
+
+2. The two rectangles below should be zero, i.e. $s^v d^h + d^h s^v = 0 = s^h d^v + d^v s^h$:
+
+\begin{tikzcd}
+	&& {E_{p-1, q+1}} && {E_{p, q+1}} \\
+	\\
+	&&&& {E_{p, q}} && {E_{p+1, q}} \\
+	\\
+	{D_{p-1, q}} && {D_{p, q}} &&&& {E_{p+1, q-1}} \\
+	\\
+	&& {D_{p, q-1}}
+	\arrow["{d^v}"{description}, from=1-5, to=3-5]
+	\arrow["{d^v}"{description}, color={rgb,255:red,38;green,151;blue,38}, from=5-3, to=7-3]
+	\arrow["{d^h}"{description}, color={rgb,255:red,171;green,43;blue,43}, from=5-3, to=5-1]
+	\arrow["{d^h}"{description}, from=3-7, to=3-5]
+	\arrow["{g-f}"{description}, from=5-3, to=3-5]
+	\arrow["{d^v}"{description}, color={rgb,255:red,38;green,151;blue,38}, from=3-7, to=5-7]
+	\arrow["{s^h_{p-1, q}}"{description}, color={rgb,255:red,38;green,151;blue,38}, from=7-3, to=5-7]
+	\arrow["{s^h_{p-1, q}}"{description}, color={rgb,255:red,38;green,151;blue,38}, from=5-3, to=3-7]
+	\arrow["{s^v_{p-1, q}}"{description}, color={rgb,255:red,171;green,43;blue,43}, from=5-1, to=1-3]
+	\arrow["{d^h}"{description}, color={rgb,255:red,171;green,43;blue,43}, from=1-5, to=1-3]
+	\arrow["{s^v_{p, q}}"{description}, color={rgb,255:red,171;green,43;blue,43}, from=5-3, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCw0LCJEX3twLTEsIHF9Il0sWzIsNCwiRF97cCwgcX0iXSxbMiw2LCJEX3twLCBxLTF9Il0sWzQsMiwiRV97cCwgcX0iXSxbNiwyLCJFX3twKzEsIHF9Il0sWzQsMCwiRV97cCwgcSsxfSJdLFs2LDQsIkVfe3ArMSwgcS0xfSJdLFsyLDAsIkVfe3AtMSwgcSsxfSJdLFs1LDMsImRediIsMV0sWzEsMiwiZF52IiwxLHsiY29sb3VyIjpbMTIwLDYwLDM3XX0sWzEyMCw2MCwzNywxXV0sWzEsMCwiZF5oIiwxLHsiY29sb3VyIjpbMCw2MCw0Ml19LFswLDYwLDQyLDFdXSxbNCwzLCJkXmgiLDFdLFsxLDMsImctZiIsMV0sWzQsNiwiZF52IiwxLHsiY29sb3VyIjpbMTIwLDYwLDM3XX0sWzEyMCw2MCwzNywxXV0sWzIsNiwic15oX3twLTEsIHF9IiwxLHsiY29sb3VyIjpbMTIwLDYwLDM3XX0sWzEyMCw2MCwzNywxXV0sWzEsNCwic15oX3twLTEsIHF9IiwxLHsiY29sb3VyIjpbMTIwLDYwLDM3XX0sWzEyMCw2MCwzNywxXV0sWzAsNywic152X3twLTEsIHF9IiwxLHsiY29sb3VyIjpbMCw2MCw0Ml19LFswLDYwLDQyLDFdXSxbNSw3LCJkXmgiLDEseyJjb2xvdXIiOlswLDYwLDQyXX0sWzAsNjAsNDIsMV1dLFsxLDUsInNedl97cCwgcX0iLDEseyJjb2xvdXIiOlswLDYwLDQyXX0sWzAsNjAsNDIsMV1dXQ==)
+
+
+:::
+
+:::{.remark}
+The definition is set up so that $s^h + s^v: \Tot(D)_n \to \Tot(E)_{n+1}$ is a chain homotopy $\Totsum(D) \to \Totsum(E)$.
+:::
+
+:::{.remark}
+Exercises 5.7.2 and 5.7.3 show:
+
+1. If $f:A\to B$ is a chain map and $P\to A, Q\to B$ are CE resolutions, then there is a map of double complexes $\tilde f: P\to Q$ lifting $f$.
+
+2. If $f, g: A\to B$ are chain homotopic, then $\tilde f, \tilde f$ are chain homotopic in the sense just defined.
+
+3. Any two CE resolutions $P, P'$ of $A$ are chain homotopy equivalent, as are $\Totsum(F(P))$ and $\Totsum(F(P'))$ for any additive functor $F$.
+:::
+
+:::{.remark}
+This last remark shouldn't be too hard to believe: chain homotopies are defined in terms of addition.
+:::
+
+
+## Hypercohomology
+
+:::{.definition title="Hyper Left-Derived Functors"}
+Let \( F : \cat{A} \to \cat{B} \) be a right-exact functor where $\cat{A}$ has enough projectives and $\cat{B}$ is cocomplete (closed under direct sums/coproducts).
+If $A \in \Ch(\cat{A})$ is a chain complex and $P\to A$ a CE resolution, define
+\[
+\LL_i F(A) \da H_i \Totsum F(P): \Ch(\cat{A}) \to \cat{B}
+.\]
+If $f:A\to B$ is a chain map in $\Ch(\cat{A})$ and $\tilde f: P\to Q$ where $P, Q$ are CE resolutions of $A, B$ resp., define $L_iF(f)$ to be the map
+\[
+H_i \Tot(F\tilde f) \to \LL_i F(B)
+.\]
+This yields a functor
+\[
+\LL_i F: \Ch(\cat{A}) \to \cat{B}
+,\]
+the **hyper left-derived functor** of $F$.
+:::
+
+:::{.remark}
+Recall that chain homotopy yields a notion of equivalence, and chain homotopic maps induce the same map on homology.
+The same is true for double complexes.
+There is a lemma that shows a SES of double complexes induces a LES in homology.
+:::
+
+:::{.proposition title="Convergence of spectral sequences and filtration comparison"}
+\envlist
+
+a. There is always a convergent spectral sequence
+\[
+{}^{II} E^2_{p, q} (L_p F)(H_q(A)) \abuts \LL_{p+q} F(A)
+.\]
+
+b. If $A$ is bounded below complex, so there exists a $p_0$ such that $A_p=0$ for $p< p_0$, then there is another spectral sequence
+\[
+{}^{I} E_{p, q}^2 = H_p L_q F(A) \abuts \LL_{p+q} F(A) 
+.\]
+:::
+
+:::{.proof title="of (a)"}
+These are the spectral sequences associated to the upper half-plane double complex $FP_{*, *}$.
+Recall that ${}^{II} E^2_{p, q} = H_p^v H_q^h (FP) \abuts H_{p+q} \Totsum FP \da \LL_{p+q} F(A)$.
+The filtration by rows is exhaustive since we are taking the direct sum, so any cycle or boundary is supported in some finite row.
+So what we want to show is that
+\[
+{}^{II}E_{p, q}^2 (L_p F)(H_q A) = H_p^v H_q^h (FP)
+.\]
+
+The main claim is the following:
+$H_q^h(FP) = F H_q^h(P)$.
+
+Fix a row $p$ of the double complex so we can drop $p$ and $h$ from the notation.
+We have the following situation:
+
+\begin{tikzcd}
+	\cdots && {P_{q-1}} && {P_{q}} && {P_{q+1}} && \cdots \\
+	\\
+	&&&& {Z_q} \\
+	\\
+	&&&& {B_q}
+	\arrow[hook, from=5-5, to=3-5]
+	\arrow[hook, from=3-5, to=1-5]
+	\arrow["d"', from=1-9, to=1-7]
+	\arrow["d"', from=1-7, to=1-5]
+	\arrow["d"', from=1-5, to=1-3]
+	\arrow["d"', from=1-3, to=1-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwwLCJQX3txLTF9Il0sWzQsMCwiUF97cX0iXSxbNiwwLCJQX3txKzF9Il0sWzQsMiwiWl9xIl0sWzQsNCwiQl9xIl0sWzgsMCwiXFxjZG90cyJdLFswLDAsIlxcY2RvdHMiXSxbNCwzLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzUsMiwiZCIsMl0sWzIsMSwiZCIsMl0sWzEsMCwiZCIsMl0sWzAsNiwiZCIsMl1d)
+
+We have a SES
+\[
+0 \to B_q \to Z_q \to H_q \to 0
+,\]
+which induces a LES
+
+\begin{tikzcd}
+	\cdots && {L_2FH_q} && {L_1FH_q} \\
+	\\
+	{FB_q} && {FZ_q} && {FH_q} && 0
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=1-5, to=3-1, out=0, in=180]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-1, to=1-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbNiwyLCIwIl0sWzQsMiwiRkhfcSJdLFsyLDIsIkZaX3EiXSxbMCwyLCJGQl9xIl0sWzQsMCwiTF8xRkhfcSJdLFsyLDAsIkxfMkZIX3EiXSxbMCwwLCJcXGNkb3RzIl0sWzMsMl0sWzIsMV0sWzEsMF0sWzQsM10sWzUsNF0sWzYsNV1d)
+
+We have $L_1 FH_q = 0$, since in the CE resolution we assume that $H_q(P, d^h)$ is projective.
+
+The second SES we have is 
+\[
+0 \to Z_q \to P_q \mapsvia{d} B_{q-1}
+\]
+inducing the LES
+
+\begin{tikzcd}
+	\cdots && {L_2FP_q} && {L_1FB_{q-1}} \\
+	\\
+	{FZ_q} && {FP_q} && {FB_{q-1}} && 0
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-7]
+	\arrow[from=1-5, to=3-1, in=180, out=0]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-1, to=1-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbNiwyLCIwIl0sWzQsMiwiRkJfe3EtMX0iXSxbMiwyLCJGUF9xIl0sWzAsMiwiRlpfcSJdLFs0LDAsIkxfMUZCX3txLTF9Il0sWzIsMCwiTF8yRlBfcSJdLFswLDAsIlxcY2RvdHMiXSxbMywyXSxbMiwxXSxbMSwwXSxbNCwzXSxbNSw0XSxbNiw1XV0=)
+
+Here $L_i F B_{q-1} = 0$ since $B_{p-q}(P, d^h)$ was projective.
+Putting these together, we have 
+\[
+H_{q}(FP) = 
+{ 
+\ker Fd : FP_q \to FP_{q-1}
+\over
+\im Fd : FP_{q+1} \to FP_{q}
+}
+\cong 
+{FZ_q \over FB_q} 
+\cong 
+FH_q(P_{*, *})
+.\]
+
+Now what is its vertical homology?
+The map $H_q(P_{*, *}) \to H_q(A)$ is a projective resolution, so apply $F$ to the source -- it's no longer exact, and you get $FH_q(P)$ from above, and taking homology yields the left-derived functors applied to the source.
+Thus
+\[
+H_p^v FH_q^h(P) = L_p F( H_q (A)) 
+,\]
+and the left-hand side is equal to $H_p^v H_q^h (FP)$.
+
+:::
+
+:::{.exercise title="Prove (b)"}
+Prove part (b) of the proposition.
+:::
+
+:::{.remark}
+There is a cohomology variant of this: everything dualizes to $R^i F(A)$ for a left exact functor $F: \cat{A}\to \cat{B}$ where $A\in \Ch(\cat{A})$, $\cat{A}$ has enough injectives, and $B$ is complete.
+Using a right CE resolution $I^{*, *}$ of injective objects in $A$ yields an upper half-plane complex with $A^{*} \to I^{*,0}$ such that the induces maps on cohomology are themselves injective resolutions of $B^p(A^{*})$ and $H^p(A^{*})$.
+In this case
+\[
+R^i F(A^{*}) = H^i \Totprod F(I^{*, *})
+.\]
+We can prove dual version of all of the results about left hyper-derived functors, although there are some slight convergence issues to worry about due to the direct product.
+:::
+
+# Wednesday, March 31
+
+:::{.remark}
+Last time we talked about hypercohomology and hyper derived functors, and we proved that two spectra sequences converging to $\LL_{p+q}F(A)$.
+:::
+
+## Grothendieck Spectral Sequences
+
+:::{.remark}
+We'll focus on the cohomological version, which gives a spectral sequence from a composition of functors.
+Let $\cat{A}, \cat{B}, \cat{C}$ be abelian categories with enough injectives, and let $G: \cat{A} \to \cat{B}$, $F: \cat{B} \to \cat{C}$ be left exact functors.
+By a previous result, $FG:\cat{A} \to \cat{C}$ is left exact, which follows from checking that it preserves 4-term exact sequences.
+Recall that $B \in \cat{B}$ is $F\dash$acyclic if $R^i F(B) = 0$ for all $i>0$.
+:::
+
+:::{.theorem title="Grothendieck Spectral Sequence"}
+Assume the above setup, and that $G$ sends injectives in $\cat{A}$ to $F\dash$acyclic objects in $\cat{B}$.
+Then there is a convergent QI spectral sequence for each $A \in \cat{A}$:
+\[
+E_2^{p, q} = (R^p F)(R^q G)(A) \abuts R^{p+q}(FG)(A)
+.\]
+The edge maps are the natural maps 
+\[
+(R^p F)(GA) &\to R^p(FG)(A) \\
+R^q (FG)(A) &\to F( R^qG(A))
+.\]
+The exact sequences of the low-degree terms are
+
+\[
+0 \to (R^jF)(GA) \to R^j(FG)(A) \to F(R^j G(A)) \to (R^j F)(GA) \to R^j(FG)(A)
+.\]
+:::
+
+:::{.proof title="?"}
+Choose an injective resolution $A\injects I$ in $\cat{A}$ and apply $G$ to form the cochain complex $G(I)\in \cat{B}$.
+Using a first quadrant CE resolution of $G(I)$, form the hyper right-derived functors $\RR^i F(G(I))$.
+We have the two spectral sequences that converge to this, since the complex is bounded below:
+\[
+{}^I E_1^{p, q} = H^p R^q F(GI) \abuts (\RR^{p+q} F)(GI)
+.\]
+By hypothesis $I^p$ is injective in $\cat{A}$, and thus $G(I^p)$ is $F\dash$acyclic in $\cat{B}$, so this spectral sequence collapses onto the horizontal axis at the 2nd page.
+So $(\RR^p F)(GI) = H^p(FG(I))$, which is by definition $R^p(FG)(A)$, and this holds for all $p>0$.
+This follows because only one term survives on each diagonal, and the associated graded is just to those terms, so it lifts to just being the actual homology.
+
+The second spectral sequence converges to the same thing, and so by reindexing the previous limiting term $p\mapsto p+q$, we can write
+\[
+{}^{II} E_2^{p, q} = (R^p F)(H^q(GI)) \abuts R^{p+q} (FG)(A)
+.\]
+But this is $(R^p F)(R^q G)(A)$ by definition.
+
+By example 5.2.6, the edge maps from the $p\dash$axis are 
+\[
+E_2^{p, 0} \to E_{\infty }^{p, 0} \injects H^p
+,\]
+
+and composing these yields $(R^p F)(GA) \to R^p(FG)(A)$.
+We also have $H^q \surjects E_{\infty }^{p, 0} \injects E_2^{0, q}$.
+:::
+
+:::{.remark}
+We're skipping the section on sheaf cohomology and 5.9, so we'll move into chapter 6.
+:::
+
+## 6.8: The Lyndon-Hochschild-Serre Spectral Sequence
+
+:::{.remark}
+Let $H\normal G$ and $A\in \modsleft{G}$, then $A_H, A^H \in \modsleft{G/H}$.
+The canonical projection $p: G\to G/H$ induces a forgetful functor $p^*: \modsleft{G/H} \to \mods{G}$ given by pullback.
+Note that $G/H\dash$modules are essentially \(G\dash\)modules where $H$ acts trivially, so this functor forgets the trivial $H$ action.
+Generally, this works a bit like the Frobenius map, which yields a representation that can be pulled back.
+
+:::
+
+:::{.lemma title="?"}
+The invariant functor $(\wait)_H$ has a left adjoint and the coinvariant functor $(\wait)^H$ has a right adjoint.
+:::
+
+:::{.proof title="?"}
+A $G/H\dash$module is a \(G\dash\)module with a trivial $H$ action, so both $A_H, A^H$ are \(G/H\dash\)modules.
+One needs to check that although $H$ preserves these submodules, so does $G$.
+The universal property of $A^H \injects A$ as the largest trivial submodule and $A\to A_H$ as the largest trivial quotient imply that there are natural isomorphisms: for $A\in \modsleft{G}$ and $B\in \modsleft{G/H}$, 
+\[
+\Hom_G(p^* B, A) &\mapsvia{\sim} \Hom_{G/H}(B, A^H) \\
+f &\mapsto f
+\]
+which is well-defined since $f(b) = f(hb) = hf(b) = f(b)$, putting $f(b) \in A^H$.
+We also have
+\[
+\Hom_G(A, p^\sharp B) &\mapsvia{\sim} \Hom_{G/H}(A_H, B) \\
+(\tilde f: A \mapsvia{\pi} A_H \mapsvia{f} B ) &\mapsfrom f
+,\]
+and these give the required adjunction.
+:::
+
+:::{.theorem title="Lyndon-Hochschild-Serre Spectral Sequence"}
+Let $H\normal G$ for $A\in \modsleft{G}$, then there are two QI spectral sequences:
+\[
+E_{p, q}^2 &= H_p (G/H, H_q(H, A)) \\
+E_2^{p, q} &= H^p(G/H, H^q(H, A))
+.\]
+:::
+
+:::{.remark}
+Note that we can identify the functors
+\[
+(\wait)^H, (\wait)_H : \modsleft{G} \to \modsleft{G/H}
+,\]
+whose derived functors are group homology/cohomology.
+The idea will be that $G\dash$invariants can be written as a composition of other functors, and we can apply the Grothendieck spectral sequence construction.
+:::
 
 # Appendix: Extra Definitions
 
