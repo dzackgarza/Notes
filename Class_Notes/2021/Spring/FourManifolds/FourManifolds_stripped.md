@@ -2777,11 +2777,11 @@ for \( n \) the dimension. In this case, \( \sigma(d) \) has the same formula ev
 :::
 
 ::: {.definition title="Elliptic Complex"}
-A differential complex \( ({\mathcal{E}}^{{\,\cdot\,}}, d) \) is **elliptic** if the symbol complex \( (\pi^* {\mathcal{E}}^{{\,\cdot\,}}, \sigma(d)) \) is an exact sequence of sheaves (importantly) on \( T^\vee X \setminus\left\{{s_z}\right\} \) for \( s_z \) the zero section.
+A differential complex \( ({\mathcal{E}}^{\bullet}, d) \) is **elliptic** if the symbol complex \( (\pi^* {\mathcal{E}}^{\bullet}, \sigma(d)) \) is an exact sequence of sheaves (importantly) on \( T^\vee X \setminus\left\{{s_z}\right\} \) for \( s_z \) the zero section.
 :::
 
 ::: {.claim}
-\( ({\Omega}^{{\,\cdot\,}}, d) \) is elliptic. To check exactness of a sequence of vector bundles, it suffices to check exactness on every fiber. Fix \( (p, \alpha) \in T^\vee X \setminus\left\{{ s_z }\right\} \), then
+\( ({\Omega}^{\bullet}, d) \) is elliptic. To check exactness of a sequence of vector bundles, it suffices to check exactness on every fiber. Fix \( (p, \alpha) \in T^\vee X \setminus\left\{{ s_z }\right\} \), then
 \[
 0 \to {\mathbb{C}}\xrightarrow{\wedge \alpha}  T^\vee_p X \xrightarrow{\wedge \alpha}  \bigwedge^2 T_p^\vee X \xrightarrow{\wedge \alpha}  \bigwedge^3 T_p^\vee X \to \cdots
 .\]
@@ -2819,16 +2819,16 @@ The next theorem computes the cohomology of an elliptic complex using Chern and 
 :::
 
 ::: {.theorem title="Atiyah-Singer Index Theorem"}
-If \( ( {\mathcal{E}}^{{\,\cdot\,}}, d) \) is an elliptic complex of smooth vector bundles on a compact oriented \( X\in {\mathsf{Mfd}}^n_{\mathbb{R}} \), then
+If \( ( {\mathcal{E}}^{\bullet}, d) \) is an elliptic complex of smooth vector bundles on a compact oriented \( X\in {\mathsf{Mfd}}^n_{\mathbb{R}} \), then
 \[
-\chi({ \mathcal{E} }^{{\,\cdot\,}}, d) = \sum (-1)^i \dim \qty{\ker d^i \over \operatorname{im}d^{i-1} } = 
+\chi({ \mathcal{E} }^{\bullet}, d) = \sum (-1)^i \dim \qty{\ker d^i \over \operatorname{im}d^{i-1} } = 
 (-1)^{\dim(X) \choose 2}
-\int_X {\operatorname{ch}\over {\operatorname{eul}}}( {\mathcal{E}}^{{\,\cdot\,}} ) \mathrm{td}(TX \otimes_{\mathbb{R}}{\mathbb{C}})
+\int_X {\operatorname{ch}\over {\operatorname{eul}}}( {\mathcal{E}}^{\bullet} ) \mathrm{td}(TX \otimes_{\mathbb{R}}{\mathbb{C}})
 .\]
 :::
 
 ::: {.remark}
-Here we define \( \operatorname{ch}( {\mathcal{E}}^{{\,\cdot\,}} \coloneqq\sum_i (-1)^i \operatorname{ch}( \mathcal{E}^i ) \). What does it mean to divide by the Euler class? Let \( \left\{{ x_i, -x_i }\right\} \) be the Chern roots of the complexified tangent bundle \( TX\otimes{\mathbb{C}} \), then \( {\operatorname{eul}}(X) \coloneqq\prod x_i \) is the product where we pick one of each of the Chern roots from each of the pairs. The preferred sign to choose is the one for which \( \int_X \prod x_i = \chi_{\mathsf{Top}}(X) \). Dividing just means to take the Chern character, then if it's divisible by \( \prod x_i \), we do so. We have
+Here we define \( \operatorname{ch}( {\mathcal{E}}^{\bullet} \coloneqq\sum_i (-1)^i \operatorname{ch}( \mathcal{E}^i ) \). What does it mean to divide by the Euler class? Let \( \left\{{ x_i, -x_i }\right\} \) be the Chern roots of the complexified tangent bundle \( TX\otimes{\mathbb{C}} \), then \( {\operatorname{eul}}(X) \coloneqq\prod x_i \) is the product where we pick one of each of the Chern roots from each of the pairs. The preferred sign to choose is the one for which \( \int_X \prod x_i = \chi_{\mathsf{Top}}(X) \). Dividing just means to take the Chern character, then if it's divisible by \( \prod x_i \), we do so. We have
 \[
 \mathrm{td}(TX\otimes{\mathbb{C}}) = \prod_i 
 \qty{x_i \over 1 - e^{-x_i}} 
@@ -2846,7 +2846,7 @@ but note that this doesn't necessarily make sense. However, all all computations
 :::
 
 ::: {.exercise title="Chern character of the de Rham complex"}
-\( \operatorname{ch}( {\Omega}^{{\,\cdot\,}}X \otimes{\mathbb{C}}) = \prod_i (1-e^{x_i}) (1 - e^{-x_i}) \) for \( X\in {\mathsf{Mfd}}_{\mathbb{R}}^{2n} \) even dimensional.
+\( \operatorname{ch}( {\Omega}^{\bullet}X \otimes{\mathbb{C}}) = \prod_i (1-e^{x_i}) (1 - e^{-x_i}) \) for \( X\in {\mathsf{Mfd}}_{\mathbb{R}}^{2n} \) even dimensional.
 :::
 
 ::: {.example title="?"}
@@ -2854,15 +2854,15 @@ Supposing \( X\in {\mathsf{Mfd}}_{\mathbb{R}}^2 \) is a genus \( g \) surface, w
 \[
 {\mathcal{O}}\to \Omega^1\otimes{\mathbb{C}}\to \Omega^2 \otimes{\mathbb{C}}
 ,\]
-and \( \operatorname{ch}({ \Omega }^{{\,\cdot\,}}) = \operatorname{ch}( {\mathcal{O}}) - \operatorname{ch}( \Omega^1 \otimes{\mathbb{C}}) + \operatorname{ch}(\Omega^2\otimes{\mathbb{C}}) \). The Chern roots of \( TX \otimes{\mathbb{C}} \) are \( \left\{{ x_i, -x_i }\right\} \), which come in pairs. So
+and \( \operatorname{ch}({ \Omega }^{\bullet}) = \operatorname{ch}( {\mathcal{O}}) - \operatorname{ch}( \Omega^1 \otimes{\mathbb{C}}) + \operatorname{ch}(\Omega^2\otimes{\mathbb{C}}) \). The Chern roots of \( TX \otimes{\mathbb{C}} \) are \( \left\{{ x_i, -x_i }\right\} \), which come in pairs. So
 \[
-\operatorname{ch}( {\Omega}^{{\,\cdot\,}} ) 
+\operatorname{ch}( {\Omega}^{\bullet} ) 
 = 1 - e^{x_i} - e^{x_i} + e^{-x_i + x_i}
 = (1 - e^{-x_i})( 1 - e^{x_i} )
 .\]
 From the theorem, we're supposed to have
 \[
-\chi( {\Omega}^{{\,\cdot\,}}, d) 
+\chi( {\Omega}^{\bullet}, d) 
 &= 
 (-1)^{n(n-1) \over 2}
 \int_X
@@ -2912,7 +2912,7 @@ which is HRR.
 # Monday, March 08
 
 ::: {.remark}
-Recall that given a differential complex \( ({ \mathcal{E} }^{{\,\cdot\,}}, d) \) we had a symbol complex \( ( \pi^* {\mathcal{E}}^{{\,\cdot\,}}, \sigma(d) ) \) where \( \pi: T^\vee X\to X \) and
+Recall that given a differential complex \( ({ \mathcal{E} }^{\bullet}, d) \) we had a symbol complex \( ( \pi^* {\mathcal{E}}^{\bullet}, \sigma(d) ) \) where \( \pi: T^\vee X\to X \) and
 \[ \sigma\qty{  \sum_{{\left\lvert {I} \right\rvert} \leq N} f_I {{\partial}}_I } \coloneqq\sum_{{\left\lvert {I} \right\rvert} = N} f_I y^I 
 ,\]
 where we take the top-order differentials, \( {\frac{\partial }{\partial x_j}\,} \mapsto y_j \) and
@@ -2920,9 +2920,9 @@ where we take the top-order differentials, \( {\frac{\partial }{\partial x_j}\,}
 T^\vee X &\to {\mathbb{R}}\\
 \alpha &\mapsto \alpha\qty{{\frac{\partial }{\partial x_j}\,} }
 .\]
-We say that \( ( {\mathcal{E} }^{{\,\cdot\,}}, d ) \) is **elliptic** if the symbol complex is exact on \( T^\vee X \setminus\left\{{0}\right\} \) where we delete the zero section. The Atiyah-Singer index theorem stated
+We say that \( ( {\mathcal{E} }^{\bullet}, d ) \) is **elliptic** if the symbol complex is exact on \( T^\vee X \setminus\left\{{0}\right\} \) where we delete the zero section. The Atiyah-Singer index theorem stated
 \[
-\chi( {\mathcal{E}}^{{\,\cdot\,}}, d) = \int_X { \operatorname{ch}( { \mathcal{E} }^{{\,\cdot\,}}) \over {\operatorname{eul}}(X) } \mathrm{td}( TX\otimes_{\mathbb{R}}{\mathbb{C}})
+\chi( {\mathcal{E}}^{\bullet}, d) = \int_X { \operatorname{ch}( { \mathcal{E} }^{\bullet}) \over {\operatorname{eul}}(X) } \mathrm{td}( TX\otimes_{\mathbb{R}}{\mathbb{C}})
 .\]
 What's the connection to elliptic operators? Given a 2-term complex
 \[
@@ -2962,7 +2962,7 @@ Using this, we can fix a volume form \( dV \) on \( X \) and define
 \[
 {\left\langle {u},~{v} \right\rangle}_h \coloneqq\int_X h_i(u, {\overline{{v}}}) \, dV && u, v\in \mathcal{E}^i(X)
 .\]
-This yields the desired two-term complex, and \( ( {\mathcal{E}}^{{\,\cdot\,}}, d) \) is elliptic if and only if \( D^e \circ D^o: \mathcal{E}^o {\circlearrowleft} \) and \( D^o \circ D^e: \mathcal{E}^e {\circlearrowleft} \) are elliptic operators.
+This yields the desired two-term complex, and \( ( {\mathcal{E}}^{\bullet}, d) \) is elliptic if and only if \( D^e \circ D^o: \mathcal{E}^o {\circlearrowleft} \) and \( D^o \circ D^e: \mathcal{E}^e {\circlearrowleft} \) are elliptic operators.
 :::
 
 ::: {.example title="?"}
@@ -3828,6 +3828,245 @@ There is a decomposition
 {\mathcal{H}}^1(C_{\mathbb{R}}) \otimes_{\mathbb{R}}{\mathbb{C}}= {\mathcal{H}}^{1, 0}(C) \oplus {\mathcal{H}}^{0, 1}(C)
 ,\]
 and the first space will be the space of holomorphic 1-forms \( H^0(K_C) \), and the second term will be \( \mkern 1.5mu\overline{\mkern-1.5muH^0(K_C)\mkern-1.5mu}\mkern 1.5mu \). This shows the power of the Hodge decomposition theorem!
+:::
+
+# Monday, March 29
+
+::: {.remark}
+Last time: the Hodge decomposition theorem. Let \( (X, g) \in {\mathsf{Mfd}}_{\mathbb{C}}^{ \text{compact} } ({ \text{Kähler} } ) \), then the space of harmonic \( k{\hbox{-}} \)forms \( \mathcal{H}^k(X) \otimes_{\mathbb{R}}{\mathbb{C}} \) decomposes as \( \bigoplus_{p+q = k} \mathcal{H}^{p, q}(X) \). There is also a symmetry \( \mkern 1.5mu\overline{\mkern-1.5mu\mathcal{H}^{p, q}(X) \mkern-1.5mu}\mkern 1.5mu = \mathcal{H}^{q, p}(X) \). We have an isomorphism to the de Rham cohomology \( \mathcal{H}^k(X) \otimes_{\mathbb{R}}{\mathbb{C}}\cong H^k_\mathrm{dR}(X; {\mathbb{C}}) \). We know the constituent pieces as well, as well as several relationships:
+\[ 
+\mathcal{H}^{p, q}(X) &= \ker (\Delta_d: A^{p, q}(X) {\circlearrowleft}) \\
+\Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} &= \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger + \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\\
+\Delta_d &= 2 \Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} 
+.\]
+There was a proposition that \( \ker(\Delta_d) = \ker(d) \cap\ker(d^\dagger) \), and the same proposition holds for \( \Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} \). In this case we have \( \ker(\Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu}) = \ker(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \cap\ker( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger) \) on \( A^{p, q}(X) \), and this is isomorphic to \( \ker(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) / \operatorname{im}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \). Recall that we resolved the sheaf \( \Omega^p \) of holomorphic \( p{\hbox{-}} \)forms by taking the Dolbeault resolution
+\[
+0 \to \Omega^p \to A^{p, 0} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} A^{p, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} A^{p, 2} \to \cdots
+.\]
+Thus we can identify \( \ker(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)/\operatorname{im}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \cong { \mathscr{H} }( X; \Omega^p) \) as sheaf cohomology. We defined \( h^{p, q}(X) \coloneqq\dim_{\mathbb{C}}H^{p, q}(X) \).
+:::
+
+::: {.corollary title="?"}
+\( h^{p,q }(X) \) is independent of the Kähler form, noting that the isomorphism to sheaf cohomology doesn't involve taking adjoints, and \( \dim_{\mathbb{C}}{ \mathscr{H} }^q(X; \Omega^p) \) doesn't depend on the complex structure.
+:::
+
+::: {.remark}
+A priori, one could vary the Kahler form and have some \( h^{p, q} \) jump or drop dimension. It also turns out that varying the complex structure will also not change these dimensions.
+:::
+
+::: {.remark}
+Whenever the Hodge-de Rham spectral sequence degenerates, one generally gets \( \sum_{p+q} h^{p,q } = h^k \). Note that there is a resolution:
+\[
+0 \to \underline{{\mathbb{C}}} \to {\mathcal{O}}\xrightarrow{d} \Omega^1 \xrightarrow{d} \Omega^2 \xrightarrow{d} \cdots
+,\]
+which is not acyclic and thus has homology. In general, the spectral sequence is
+\[
+E^1_{p,q} = { \mathscr{H} }^q(X; \Omega^p) \Rightarrow{ \mathscr{H} }^{p+q}(X; \underline{{\mathbb{C}}})
+.\]
+:::
+
+::: {.fact}
+A fact about the cohomology of vector bundles: given a family of Kähler manifolds \( X_t \), one can consider \( H^q(X_t; \mathcal{E}_t \) where \( \mathcal{E}_t \) is a family of holomorphic vector bundles. This can only jump upward in dimension, i.e. \( \dim_{\mathbb{C}}H^q(X_t; \mathcal{E}_t) \) is **lower semicontinuous**.
+:::
+
+::: {.example title="?"}
+Consider
+\[
+X_t \coloneqq\left\{{ x^3 + y^3 + z^3 + txyz = 0 }\right\} \subseteq {\mathbb{CP}}^2
+,\]
+where \( t \) varies in \( {\mathbb{C}} \). These all admit a line bundle \( \mathcal{L}_t \coloneqq{ \left.{{ {\mathcal{O}}(1) }} \right|_{{X_t}} } \), the anti-tautological line bundle on \( {\mathbb{P}}^2 \).
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-29_14-14.pdf_tex} };
+\end{tikzpicture}
+```
+The real points of this vanishing locus form an elliptic curve, and each \( X_t \) is a Riemann surface of genus 1. Note that \( h^{0, 1} \) can jump on closed sets, but \( H^1 \) is constant since Riemann-Roch involves genus and degree. What is \( \deg { \left.{{{\mathcal{O}}(1)}} \right|_{{X_t}} } \)? Take a section \( s \in H^0({\mathbb{P}}^2; {\mathcal{O}}(1)) \) which vanishes on a line in \( {\mathbb{P}}^2 \). How many points lie in a line intersected with \( X_t \)? Looking at fundamental classes, we have \( [X_t] = 3\ell \), and by Bezout \( 3\ell \cdot \ell = 3 \).
+
+The point is that \( H^q(X_t; \Omega^p) \) can only possibly increase at special values of \( t \). Assuming the \( X_t \) are all diffeomorphic, then \( h^k(X_t) \) is constant and \( h^{p, q}(X_t) \) can't jump. So the \( h^{p, q} \) are invariants of families.
+:::
+
+::: {.definition title="Hodge Diamond"}
+The **Hodge Diamond** of \( X \in {\mathsf{Mfd}}({ \text{Kähler} } ) \) (which won't depend on the choice of Kahler form) is given by
+
+```{=tex}
+\begin{tikzcd}
+    &&& {h^{n, n}} \\
+    && {h^{n-1, n}} && {h^{n, n-1}} \\
+    & \ddots &&&& \ddots \\
+    \ddots &&& \vdots &&& \ddots \\
+    & {h^{2, 0}} && {h^{1, 1}} && {h^{0, 2}} \\
+    && {h^{1, 0}} && {h^{0, 1}} \\
+    &&& {h^{0, 0}}
+    \arrow["\star"{pos=0}, dotted, tail reversed, from=6-3, to=2-5]
+    \arrow["{z\mapsto \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu}"', dotted, tail reversed, from=6-5, to=2-5]
+    \arrow["{z\mapsto \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu}", dotted, tail reversed, from=6-3, to=2-3]
+    \arrow["\star"{description, pos=0.1}, dotted, tail reversed, from=6-5, to=2-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTQsWzMsNiwiaF57MCwgMH0iXSxbMiw1LCJoXnsxLCAwfSJdLFs0LDUsImheezAsIDF9Il0sWzEsNCwiaF57MiwgMH0iXSxbMyw0LCJoXnsxLCAxfSJdLFs1LDQsImheezAsIDJ9Il0sWzAsMywiXFxkZG90cyJdLFszLDAsImhee24sIG59Il0sWzIsMSwiaF57bi0xLCBufSJdLFs0LDEsImhee24sIG4tMX0iXSxbNiwzLCJcXGRkb3RzIl0sWzEsMiwiXFxkZG90cyJdLFs1LDIsIlxcZGRvdHMiXSxbMywzLCJcXHZkb3RzIl0sWzEsOSwiXFxob2RnZXN0YXIiLDAseyJsYWJlbF9wb3NpdGlvbiI6MCwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiYXJyb3doZWFkIn0sImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFsyLDksInpcXG1hcHN0byBcXGJhcnt6fSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9LCJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMSw4LCJ6XFxtYXBzdG8gXFxiYXJ7en0iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJhcnJvd2hlYWQifSwiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzIsOCwiXFxob2RnZXN0YXIiLDEseyJsYWJlbF9wb3NpdGlvbiI6MTAsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9LCJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=)
+
+Note that there are symmetries, e.g. \( \star \) takes \( h^{1, 0} = h^{n-1, n} \) and \( \mkern 1.5mu\overline{\mkern-1.5muh^{p, q}\mkern-1.5mu}\mkern 1.5mu = h^{q, p} \).
+:::
+
+::: {.proposition title="?"}
+If \( X \) is **Calabi-Yau**, so \( K_X = {\mathcal{O}}_X \) (i.e the canonical bundle is trivial), then the Hodge diamond has an orientation preserving \( ({\mathbb{Z}}/2)^2 \) symmetry, i.e. there is a rotation by \( \pi/2 \).
+
+> Note: this isn't extra symmetry! Just a proof of the symmetry in this case.
+:::
+
+::: {.proof title="?"}
+Let \( \Omega^k_X \) be the sheaf of holomorphic \( k{\hbox{-}} \)forms, then there is a map
+
+\[
+\Omega_X^k \otimes\Omega_X^{n-k} &\to \Omega_X^n \coloneqq K_X \\
+\alpha \otimes\beta &\mapsto \alpha \wedge \beta
+.\]
+Fiberwise, this is a perfect pairing. If one takes \( \alpha \coloneqq e_{i_1} \wedge \cdots e_{i_k} \in \bigwedge^k T_x^\vee X \), there is a unique basis wedge \( \beta \coloneqq e_{j_1} \wedge \cdots \wedge e_{j_n - k} \) then \( \alpha\wedge \beta \) is a basis wedge \( e_1 \wedge \cdots \wedge e_n \). So \( \Omega_X^k \cong ( \Omega_X^{n-k} )^\vee \) if \( X \) is Calabi-Yau. By Serre duality,
+\[
+{ \mathscr{H} }^p(X; \Omega_X^q)^\vee\cong { \mathscr{H} }^{n-p}(X; (\Omega_X^q)^\vee\otimes K_X )
+.\]
+:::
+
+::: {.example title="?"}
+In dimension 3, take
+\[
+X \coloneqq\left\{{ x_0^5 + \cdots + x_4^5 = 0 }\right\} \subseteq {\mathbb{P}}^4 \in {\mathsf{Mfd}}^3({\mathbb{C}})
+.\]
+
+See Hodge diamond.
+:::
+
+::: {.remark}
+Note that \( K3 \)s are special CYs. An example is \( {\mathbb{C}}^2 / \Lambda \) for \( \Lambda \) a rank 4 lattice. This is diffeomorphic to \( (S^1)^4 \), for example \( E\times E \).
+:::
+
+# Wednesday, March 31
+
+::: {.remark}
+We have a perfect pairing
+\[
+\Omega^k \otimes\Omega^{n-k} \to K
+,\]
+and thus \( \Omega^{n-k} \cong K \otimes(\Omega^{k})^\vee \). So we have
+\[
+H^p( \Omega^k )^\vee\cong H^{n-p}( (\Omega^{k})^\vee\otimes K  ) = H^{n-p}( \Omega^{n-k}) 
+,\]
+and thus \( h^{p, k} = h^{n-p, n-k} \), which recovers what we knew about \( \star: \mathcal{H}^{p, q} \to \mathcal{H} ^{n-p, n-q} \).
+
+So we don't get anything new from the Serre duality argument.
+
+What is special when \( X\in { \text{CY} } \) is that
+\[
+\Omega^{n-k} \cong ( \Omega^k )^\vee= \bigwedge^k TX
+\]
+for \( TX \) the tangent bundle. Note that taking the cotangent bundle gives forms, and instead this gives a bundle of *polyvector fields*. For \( k=1 \), we get a holomorphic vector field, which one might think of as an infinitesimal biholomorphism.
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-31_13-58.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.example title="?"}
+\( {\mathbb{P}}^1 \) has a holomorphic vector field in coordinate charts \( {\mathbb{C}}\cong \left\{{ [z: 1] \in {\mathbb{P}}^1 }\right\} \) which we'll write as \( z{\frac{\partial }{\partial z}\,} \). The coordinate chart is \( {\mathbb{P}}^1 \setminus\infty \), so we obtain
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-31_14-00.pdf_tex} };
+\end{tikzpicture}
+```
+Does this vector field \( V \) extend over \( \infty \)? The local coordinate at \( \infty \) is \( w = 1/z \), so \( z=1/w \) and we can compute
+\[
+{1\over w} {\frac{\partial }{\partial 1\over w}\,} = {1\over w} {\partial \over {-1\over w^2} \partial w} = -w {\frac{\partial }{\partial w}\,}
+.\]
+We have \( {\operatorname{Ord}}_0V = 1 \) and \( {\operatorname{Ord}}_{\infty } V = 1 \), and so \( \deg T{\mathbb{P}}^1 = 2 \).
+:::
+
+::: {.example title="?"}
+For \( \bigwedge^2 T \), the local sections are of the form \( \sum f_I {\frac{\partial }{\partial x_I}\,} \wedge {\frac{\partial }{\partial x_J}\,} \) instead of e.g. \( {d\over d x_I} \). This yields a **Poisson structure** \( H^0(X, \bigwedge^2 T) \), which is a generalization of symplectic structure, which would be a section \( \omega \in H^0( X, \bigwedge^2 T^\vee) \) which is nondegenerate. This would yield an isomorphism \( \omega: T\xrightarrow{\sim} T^\vee \) which is alternating, in which case \( \omega^{-1}: T^\vee\xrightarrow{\sim} T \) which is also alternating, so \( \omega ^{-1}\in H^0(X, \bigwedge^2 T) \). However the Poisson structure need not be nondegenerate.
+:::
+
+::: {.remark}
+Polyvector fields show up in Hochschild homology!
+:::
+
+## Algebraic Surfaces
+
+::: {.definition title="Algebraic Surface"}
+An **algebraic surface** is a compact complex 2-fold (so of complex dimension and real dimension 4, admitting local charts to \( {\mathbb{C}}^2 \)) which admits a holomorphic embedding into \( {\mathbb{CP}}^N \) for some \( N \).
+:::
+
+::: {.remark}
+This implies that \( S \) is a **projective variety** cut out by homogeneous polynomials in \( N+1 \) variables in \( {\mathbb{CP}}^N \).
+:::
+
+::: {.example title="?"}
+A non-example would be \( {\mathbb{C}}^2 \setminus\left\{{ (0, 0) }\right\} / (x, y) \sim (2x, 2y) \), The *Hopf surface*. This is a complex manifold of complex dimension 2. It is compact, but has no projective embedding!
+:::
+
+::: {.example title="?"}
+Another non-example is \( {\mathbb{C}}^2 \setminus\left\{{0}\right\}/ (x, y) \sim (2x, 2 e^{i\theta} y) \), a *twisted Hopf surface*. This admits no nontrivial holomorphic line bundles.
+:::
+
+::: {.remark}
+What makes having a projective embedding special? If \( S \hookrightarrow{\mathbb{CP}}^N \), it admits a line bundle: \( {\mathcal{O}}_S(1) \coloneqq{ \left.{{ {\mathcal{O}}_{{\mathbb{CP}}^N}(1) }} \right|_{{S}} } \).
+:::
+
+::: {.proposition title="?"}
+\( {\mathbb{CP}}^N \) is a Kähler manifold, and admits a distinguished 2-form \( \omega \coloneqq\omega_{\text{FS}} \) the **Fubini-Study form** which induces the Fubini-Study metric \( g_{\text{FS}} \).
+:::
+
+::: {.remark}
+This can be written down as \( {i\over 2} {\partial}\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\log( \sum_{i=1}^N z_i \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu_i ) \), which is well-defined since scaling comes out as a constant. Being closed follows from \( {\partial}\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu= d\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu \) since \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^2 = 0 \), which implies \( d({\partial}\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\cdots) = d^2 \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu(\cdots) = 0 \). This defines a metric: this follows from checking in local coordinate charts, say \( z_0 = 1 \), and checking that \( g(x ,y) \coloneqq\omega(x, Jy) \) yields a metric. This involves taking a fussy derivative!
+:::
+
+::: {.remark}
+Thus given \( S\xhookrightarrow{\phi} {\mathbb{CP}}^N \), we can restrict or take the pullback of \( \omega_{{ \text{FS} }} \) to \( S \). Then \( \omega \coloneqq\phi^* \omega_{ \text{FS} } \) is still Kähler:
+
+1.  \( \omega \) is closed: this is true for any smooth map at the level of smooth manifolds because of the chain rule.
+
+2.  \( \omega \) defines a metric: this is true because \( S \) is a complex submanifold. Suppose \( v,w \in T_p S \), and we want to check if \( g(v, w) \coloneqq\omega(v, Jw) \). This equals \( \omega_{{ \text{FS} }}(v, JW) \), viewing \( T_p S \subseteq T_p {\mathbb{CP}}^N \), so this is equal to \( g_{ \text{FS} }(v, w) \).
+:::
+
+::: {.remark}
+Note that a submanifold of a *symplectic* manifold is not necessarily a symplectic submanifold, since there are Lagrangian submanifolds for which the symplectic form restricts to 0 and isn't nondegenerate. However, Kähler forms do restrict.
+:::
+
+::: {.remark}
+So we get a Hodge diamond:
+
+```{=tex}
+\begin{tikzcd}
+    && {h^{2, 2}} \\
+    & {h^{2, 1}} && {h^{1, 2}} \\
+    {h^{2, 0}} && {h^{1, 1}} && {h^{0, 2}} \\
+    & {h^{1, 0}} && {h^{0, 1}} \\
+    && {h^{0, 0}}
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiw0LCJoXnswLCAwfSJdLFsxLDMsImheezEsIDB9Il0sWzMsMywiaF57MCwgMX0iXSxbMCwyLCJoXnsyLCAwfSJdLFsyLDIsImheezAsIDB9Il0sWzQsMiwiaF57MCwgMn0iXSxbMSwxLCJoXnsyLCAxfSJdLFszLDEsImheezEsIDJ9Il0sWzIsMCwiaF57MiwgMn0iXV0=)
+
+Here \( h^{2, 0} = h^0( \Omega^2) = h^0(K) = g \) is called the *genus* in analogy with curves. Similarly, \( h^{1, 0} = h^0( \Omega^1) \) is the space of holomorphic 1-forms, sometimes referred to as the *irregularity*. There is some symmetry:
+
+```{=tex}
+\begin{tikzcd}
+    && 1 \\
+    & q && q \\
+    g && {h^{0, 0}} && g \\
+    & q && q \\
+    && 1
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiw0LCIxIl0sWzEsMywicSJdLFszLDMsInEiXSxbMCwyLCJnIl0sWzIsMiwiaF57MCwgMH0iXSxbNCwyLCJnIl0sWzEsMSwicSJdLFszLDEsInEiXSxbMiwwLCIxIl1d)
+:::
+
+::: {.exercise title="?"}
+Solve for \( h^{1, 1} \) in terms of \( q \) and \( g \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.

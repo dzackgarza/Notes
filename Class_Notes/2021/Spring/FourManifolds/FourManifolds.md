@@ -36,6 +36,7 @@
 \newcommand{\bbm}[0]{{\mathbb{M}}}
 \newcommand{\NN}[0]{{\mathbb{N}}}
 \newcommand{\OP}[0]{{\mathbb{OP}}}
+\newcommand{\LL}[0]{{\mathbb{L}}}
 \newcommand{\PP}[0]{{\mathbb{P}}}
 \newcommand{\QQ}[0]{{\mathbb{Q}}}
 \newcommand{\RP}[0]{{\mathbb{RP}}}
@@ -44,6 +45,8 @@
 \renewcommand{\SS}[0]{{\mathbb{S}}}
 \newcommand{\TT}[0]{{\mathbb{T}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
+\newcommand{\ZZG}[0]{{\mathbb{Z}G}}
+\newcommand{\kG}[0]{{kG}}
 \newcommand{\znz}[0]{\mathbb{Z}/n\mathbb{Z}}
 \newcommand{\zpz}[0]{\mathbb{Z}/p\mathbb{Z}}
 \newcommand{\zlz}[0]{\mathbb{Z}/\ell\mathbb{Z}}
@@ -74,7 +77,7 @@
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
 \newcommand{\Art}[0]{\operatorname{Art}}
-\newcommand{\red}[0]{\operatorname{red}}
+\newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
@@ -163,6 +166,7 @@
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
@@ -202,6 +206,7 @@
 \newcommand{\tor}[0]{\operatorname{Tor}}
 \newcommand{\height}[0]{\operatorname{ht}}
 \newcommand{\cpt}[0]{{ \text{compact} } }
+\newcommand{\Kah}[0]{{ \text{Kähler} } }
 \newcommand{\oriented}[0]{{ \text{oriented} } }
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\Kahler[0]{\text{Kähler}}
@@ -293,6 +298,7 @@
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
+\newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
@@ -352,6 +358,9 @@
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\Hom}[0]{{\operatorname{Hom}}}
 \newcommand{\shom}{\mathscr{H}\operatorname{\kern -3pt {\calligra\large om}}}
+\newcommand{\Hsh}{{ \mathscr{H} }}
+\newcommand{\CY}{{ \text{CY} }}
+\newcommand{\FS}{{ \text{FS} }}
 \newcommand{\HHom}{\mathscr{H}\kern-2pt\operatorname{om}}
 \newcommand{\Map}[0]{{\operatorname{Map}}}
 \newcommand{\multinomial}[1]{\left(\!\!{#1}\!\!\right)}
@@ -399,7 +408,8 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
+\newcommand\mypound{\scalebox{0.8}{\raisebox{0.4ex}{\#}}}
+\newcommand{\connectsum}[0]{\mathop{ \Large\mypound }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -428,7 +438,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{{#1}^{\wait}}
+\newcommand{\complex}[1]{{#1}^{\bullet}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -538,6 +548,7 @@
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
 \newcommand{\equalsbecause}[1]{\overset{#1}{=}}
+\newcommand{\congbecause}[1]{\overset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
 
@@ -5238,4 +5249,293 @@ There is a decomposition
 ,\]
 and the first space will be the space of holomorphic 1-forms $H^0(K_C)$, and the second term will be $\bar{H^0(K_C)}$.
 This shows the power of the Hodge decomposition theorem!
+:::
+
+# Monday, March 29
+
+:::{.remark}
+Last time: the Hodge decomposition theorem.
+Let $(X, g) \in \Mfd_\CC^\cpt(\Kah)$, then the space of harmonic $k\dash$forms \( \mathcal{H}^k(X)  \tensor_\RR \CC \) decomposes as \( \bigoplus_{p+q = k} \mathcal{H}^{p, q}(X)  \).
+There is also a symmetry \( \bar{\mathcal{H}^{p, q}(X) } = \mathcal{H}^{q, p}(X) \).
+We have an isomorphism to the de Rham cohomology \( \mathcal{H}^k(X) \tensor_\RR \CC \cong H^k_\dR (X; \CC)  \).
+We know the constituent pieces as well, as well as several relationships:
+\[ 
+\mathcal{H}^{p, q}(X) &= \ker (\Delta_d: A^{p, q}(X) \selfmap) \\
+\Delta_{\delbar} &= \delbar \delbar^\dagger + \delbar^\dagger \delbar \\
+\Delta_d &= 2 \Delta_{\delbar} 
+.\]
+There was a proposition that \( \ker(\Delta_d) = \ker(d) \intersect \ker(d^\dagger) \), and the same proposition holds for \( \Delta_{\delbar} \).
+In this case we have \( \ker(\Delta_{\delbar}) = \ker(\delbar) \intersect \ker( \delbar^\dagger) \) on $A^{p, q}(X)$, and this is isomorphic to \( \ker(\delbar) / \im(\delbar) \).
+Recall that we resolved the sheaf \( \Omega^p \) of holomorphic $p\dash$forms by taking the Dolbeault resolution
+\[
+0 \to \Omega^p \to A^{p, 0} \mapsvia{\delbar} A^{p, 1} \mapsvia{\delbar} A^{p, 2} \to \cdots
+.\]
+Thus we can identify \( \ker(\delbar)/\im(\delbar) \cong \Hsh( X; \Omega^p) \) as sheaf cohomology.
+We defined \( h^{p, q}(X) \da \dim_\CC H^{p, q}(X) \).
+:::
+
+:::{.corollary title="?"}
+$h^{p,q }(X)$ is independent of the Kähler form, noting that the isomorphism to sheaf cohomology doesn't involve taking adjoints, 
+and $\dim_\CC \Hsh^q(X; \Omega^p)$ doesn't depend on the complex structure.
+:::
+
+:::{.remark}
+A priori, one could vary the Kahler form and have some $h^{p, q}$ jump or drop dimension.
+It also turns out that varying the complex structure will also not change these dimensions.
+:::
+
+:::{.remark}
+Whenever the Hodge-de Rham spectral sequence degenerates, one generally gets $\sum_{p+q} h^{p,q } = h^k$.
+Note that there is a resolution:
+\[
+0 \to \constantsheaf{\CC} \to \OO \mapsvia{d} \Omega^1 \mapsvia{d} \Omega^2 \mapsvia{d} \cdots
+,\]
+which is not acyclic and thus has homology.
+In general, the spectral sequence is 
+\[
+E^1_{p,q} = \Hsh^q(X; \Omega^p) \abuts \Hsh^{p+q}(X; \constantsheaf{\CC})
+.\]
+:::
+
+:::{.fact}
+A fact about the cohomology of vector bundles: given a family of Kähler manifolds $X_t$, one can consider \( H^q(X_t; \bundle{E}_t \) where \( \bundle{E}_t \) is a family of holomorphic vector bundles. 
+This can only jump upward in dimension, i.e. $\dim_\CC H^q(X_t; \bundle{E}_t)$ is **lower semicontinuous**.
+:::
+
+:::{.example title="?"}
+Consider
+\[
+X_t \da \ts{ x^3 + y^3 + z^3 + txyz = 0 } \subseteq \CP^2
+,\]
+where $t$ varies in $\CC$.
+These all admit a line bundle \( \bundle{L}_t \da \ro{ \OO(1) } {X_t} \), the anti-tautological line bundle on $\PP^2$.
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-29_14-14.pdf_tex} };
+\end{tikzpicture}
+
+The real points of this vanishing locus form an elliptic curve, and each $X_t$ is a Riemann surface of genus 1.
+Note that $h^{0, 1}$ can jump on closed sets, but $H^1$ is constant since Riemann-Roch involves genus and degree.
+What is $\deg \ro {\OO(1)}{X_t}$?
+Take a section $s \in H^0(\PP^2; \OO(1))$ which vanishes on a line in $\PP^2$.
+How many points lie in a line intersected with $X_t$?
+Looking at fundamental classes, we have $[X_t] = 3\ell$, and by Bezout $3\ell \cdot \ell = 3$.
+
+The point is that $H^q(X_t; \Omega^p)$ can only possibly increase at special values of $t$.
+Assuming the $X_t$ are all diffeomorphic, then $h^k(X_t)$ is constant and $h^{p, q}(X_t)$ can't jump.
+So the $h^{p, q}$ are invariants of families.
+:::
+
+:::{.definition title="Hodge Diamond"}
+The **Hodge Diamond** of $X \in \Mfd(\Kah)$ (which won't depend on the choice of Kahler form) is given by
+
+\begin{tikzcd}
+	&&& {h^{n, n}} \\
+	&& {h^{n-1, n}} && {h^{n, n-1}} \\
+	& \ddots &&&& \ddots \\
+	\ddots &&& \vdots &&& \ddots \\
+	& {h^{2, 0}} && {h^{1, 1}} && {h^{0, 2}} \\
+	&& {h^{1, 0}} && {h^{0, 1}} \\
+	&&& {h^{0, 0}}
+	\arrow["\hodgestar"{pos=0}, dotted, tail reversed, from=6-3, to=2-5]
+	\arrow["{z\mapsto \bar{z}}"', dotted, tail reversed, from=6-5, to=2-5]
+	\arrow["{z\mapsto \bar{z}}", dotted, tail reversed, from=6-3, to=2-3]
+	\arrow["\hodgestar"{description, pos=0.1}, dotted, tail reversed, from=6-5, to=2-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTQsWzMsNiwiaF57MCwgMH0iXSxbMiw1LCJoXnsxLCAwfSJdLFs0LDUsImheezAsIDF9Il0sWzEsNCwiaF57MiwgMH0iXSxbMyw0LCJoXnsxLCAxfSJdLFs1LDQsImheezAsIDJ9Il0sWzAsMywiXFxkZG90cyJdLFszLDAsImhee24sIG59Il0sWzIsMSwiaF57bi0xLCBufSJdLFs0LDEsImhee24sIG4tMX0iXSxbNiwzLCJcXGRkb3RzIl0sWzEsMiwiXFxkZG90cyJdLFs1LDIsIlxcZGRvdHMiXSxbMywzLCJcXHZkb3RzIl0sWzEsOSwiXFxob2RnZXN0YXIiLDAseyJsYWJlbF9wb3NpdGlvbiI6MCwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiYXJyb3doZWFkIn0sImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dLFsyLDksInpcXG1hcHN0byBcXGJhcnt6fSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9LCJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XSxbMSw4LCJ6XFxtYXBzdG8gXFxiYXJ7en0iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJhcnJvd2hlYWQifSwiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV0sWzIsOCwiXFxob2RnZXN0YXIiLDEseyJsYWJlbF9wb3NpdGlvbiI6MTAsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9LCJib2R5Ijp7Im5hbWUiOiJkb3R0ZWQifX19XV0=)
+
+Note that there are symmetries, e.g. $\hodgestar$ takes $h^{1, 0} = h^{n-1, n}$ and $\bar{h^{p, q}} = h^{q, p}$.
+:::
+
+:::{.proposition title="?"}
+If $X$ is **Calabi-Yau**, so $K_X = \OO_X$ (i.e the canonical bundle is trivial), then the Hodge diamond has an orientation preserving $(\ZZ/2)^2$ symmetry, i.e. there is a rotation by $\pi/2$.
+
+> Note: this isn't extra symmetry! Just a proof of the symmetry in this case.
+
+:::
+
+:::{.proof title="?"}
+Let \( \Omega^k_X \) be the sheaf of holomorphic $k\dash$forms,
+then there is a map 
+
+\[
+\Omega_X^k \tensor \Omega_X^{n-k} &\to \Omega_X^n \da K_X \\
+\alpha \tensor \beta &\mapsto \alpha \wedge \beta
+.\]
+Fiberwise, this is a perfect pairing.
+If one takes $\alpha \da e_{i_1} \wedge \cdots e_{i_k} \in \Wedge^k T_x\dual X$, there is a unique basis wedge $\beta \da e_{j_1} \wedge \cdots \wedge e_{j_n - k}$ then \( \alpha\wedge \beta \) is a basis wedge \( e_1 \wedge \cdots \wedge e_n \).
+So \( \Omega_X^k \cong ( \Omega_X^{n-k} )\dual \) if $X$ is Calabi-Yau.
+By Serre duality, 
+\[
+\Hsh ^p(X; \Omega_X^q)\dual \cong \Hsh^{n-p}(X; (\Omega_X^q)\dual \tensor K_X )
+.\]
+:::
+
+:::{.example title="?"}
+In dimension 3, take 
+\[
+X \da \ts{ x_0^5 + \cdots + x_4^5 = 0 } \subseteq \PP^4 \in \Mfd^3(\CC)
+.\]
+
+See Hodge diamond.
+
+:::
+
+:::{.remark}
+Note that $K3$s are special CYs.
+An example is $\CC^2 / \Lambda$ for \( \Lambda \) a rank 4 lattice.
+This is diffeomorphic to $(S^1)^4$, for example $E\cross E$.
+:::
+
+
+
+
+# Wednesday, March 31
+
+:::{.remark}
+We have a perfect pairing 
+\[
+\Omega^k \tensor \Omega^{n-k} \to K
+,\]
+and thus \( \Omega^{n-k} \cong K \tensor (\Omega^{k})\dual \).
+So we have 
+\[
+H^p( \Omega^k )\dual \cong H^{n-p}( (\Omega^{k})\dual \tensor K  ) = H^{n-p}( \Omega^{n-k}) 
+,\] 
+and thus \( h^{p, k} = h^{n-p, n-k} \), which recovers what we knew about $\hodgestar: \mathcal{H}^{p, q} \to \mathcal{H} ^{n-p, n-q}$.
+
+So we don't get anything new from the Serre duality argument.
+
+What is special when $X\in \CY$ is that 
+\[
+\Omega^{n-k} \cong ( \Omega^k )\dual = \Wedge^k TX
+\]
+for $TX$ the tangent bundle.
+Note that taking the cotangent bundle gives forms, and instead this gives a bundle of *polyvector fields*.
+For $k=1$, we get a holomorphic vector field, which one might think of as an infinitesimal biholomorphism.
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-31_13-58.pdf_tex} };
+\end{tikzpicture}
+:::
+
+:::{.example title="?"}
+$\PP^1$ has a holomorphic vector field in coordinate charts $\CC \cong \ts{ [z: 1] \in \PP^1 }$ which we'll write as $z\dd{}{z}$.
+The coordinate chart is $\PP^1 \sm \infty$, so we obtain
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-31_14-00.pdf_tex} };
+\end{tikzpicture}
+
+Does this vector field $V$ extend over $\infty$?
+The local coordinate at $\infty$ is $w = 1/z$, so $z=1/w$ and we can compute
+\[
+{1\over w} \dd{}{1\over w} = {1\over w} {\partial \over {-1\over w^2} \partial w} = -w \dd{}{w}
+.\]
+We have $\ord_0V = 1$ and $\ord_{\infty } V = 1$, and so $\deg T\PP^1 = 2$.
+:::
+
+:::{.example title="?"}
+For $\Wedge^2 T$, the local sections are of the form $\sum f_I \dd{}{x_I} \wedge \dd{}{x_J}$ instead of e.g. ${d\over d x_I}$.
+This yields a **Poisson structure** $H^0(X, \Wedge^2 T)$, which is a generalization of symplectic structure, which would be a section $\omega \in H^0( X, \Wedge^2 T\dual)$ which is nondegenerate.
+This would yield an isomorphism $\omega: T\mapsvia{\sim} T\dual$ which is alternating, in which case $\omega\inv: T\dual \mapsvia{\sim} T$ which is also alternating, so $\omega \inv \in H^0(X, \Wedge^2 T)$.
+However the Poisson structure need not be nondegenerate.
+:::
+
+:::{.remark}
+Polyvector fields show up in Hochschild homology!
+:::
+
+
+
+## Algebraic Surfaces
+
+:::{.definition title="Algebraic Surface"}
+An **algebraic surface** is a compact complex 2-fold (so of complex dimension and real dimension 4, admitting local charts to $\CC^2$) which admits a holomorphic embedding into $\CP^N$ for some $N$. 
+:::
+
+:::{.remark}
+This implies that $S$ is a **projective variety** cut out by homogeneous polynomials in $N+1$ variables in $\CP^N$.
+:::
+
+:::{.example title="?"}
+A non-example would be $\CC^2 \sm \ts{ (0, 0) } / (x, y) \sim (2x, 2y)$, The *Hopf surface*.
+This is a complex manifold of complex dimension 2.
+It is compact, but has no projective embedding!
+:::
+
+:::{.example title="?"}
+Another non-example is $\CC^2 \smz / (x, y) \sim (2x, 2 e^{i\theta} y)$, a *twisted Hopf surface*.
+This admits no nontrivial holomorphic line bundles.
+:::
+
+:::{.remark}
+What makes having a projective embedding special?
+If $S \embeds \CP^N$, it admits a line bundle: $\OO_S(1) \da \ro{ \OO_{\CP^N}(1) }{S}$.
+:::
+
+:::{.proposition title="?"}
+$\CP^N$ is a Kähler manifold, and admits a distinguished 2-form $\omega \da \omega_{\text{FS}}$ the **Fubini-Study form** which induces the Fubini-Study metric $g_{\text{FS}}$.
+:::
+
+:::{.remark}
+This can be written down as ${i\over 2} \del \delbar \log( \sum_{i=1}^N z_i \bar{z}_i )$, which is well-defined since scaling comes out as a constant.
+Being closed follows from $\del \delbar = d\delbar$ since $\delbar^2 = 0$, which implies $d(\del\delbar \cdots) = d^2 \delbar(\cdots) = 0$.
+This defines a metric: this follows from checking in local coordinate charts, say $z_0 = 1$, and checking that $g(x ,y) \da \omega(x, Jy)$ yields a metric. 
+This involves taking a fussy derivative!
+:::
+
+:::{.remark}
+Thus given $S\embedsvia{\phi} \CP^N$, we can restrict or take the pullback of $\omega_{\FS}$ to $S$.
+Then $\omega \da \phi^* \omega_\FS$ is still Kähler:
+
+1. $\omega$ is closed: this is true for any smooth map at the level of smooth manifolds because of the chain rule.
+
+2. $\omega$ defines a metric: this is true because $S$ is a complex submanifold.
+Suppose $v,w \in T_p S$, and we want to check if $g(v, w) \da \omega(v, Jw)$.
+This equals $\omega_{\FS}(v, JW)$, viewing $T_p S \subseteq T_p \CP^N$, so this is equal to $g_\FS(v, w)$.
+
+:::
+
+:::{.remark}
+Note that a submanifold of a *symplectic* manifold is not necessarily a symplectic submanifold, since there are Lagrangian submanifolds for which the symplectic form restricts to 0 and isn't nondegenerate.
+However, Kähler forms do restrict.
+:::
+
+:::{.remark}
+So we get a Hodge diamond:
+
+\begin{tikzcd}
+	&& {h^{2, 2}} \\
+	& {h^{2, 1}} && {h^{1, 2}} \\
+	{h^{2, 0}} && {h^{1, 1}} && {h^{0, 2}} \\
+	& {h^{1, 0}} && {h^{0, 1}} \\
+	&& {h^{0, 0}}
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiw0LCJoXnswLCAwfSJdLFsxLDMsImheezEsIDB9Il0sWzMsMywiaF57MCwgMX0iXSxbMCwyLCJoXnsyLCAwfSJdLFsyLDIsImheezAsIDB9Il0sWzQsMiwiaF57MCwgMn0iXSxbMSwxLCJoXnsyLCAxfSJdLFszLDEsImheezEsIDJ9Il0sWzIsMCwiaF57MiwgMn0iXV0=)
+
+
+Here $h^{2, 0} = h^0( \Omega^2) = h^0(K) = g$ is called the *genus* in analogy with curves.
+Similarly, $h^{1, 0} = h^0( \Omega^1)$ is the space of holomorphic 1-forms, sometimes referred to as the *irregularity*.
+There is some symmetry:
+
+\begin{tikzcd}
+	&& 1 \\
+	& q && q \\
+	g && {h^{0, 0}} && g \\
+	& q && q \\
+	&& 1
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiw0LCIxIl0sWzEsMywicSJdLFszLDMsInEiXSxbMCwyLCJnIl0sWzIsMiwiaF57MCwgMH0iXSxbNCwyLCJnIl0sWzEsMSwicSJdLFszLDEsInEiXSxbMiwwLCIxIl1d)
+
+:::
+
+:::{.exercise title="?"}
+Solve for $h^{1, 1}$ in terms of $q$ and $g$.
 :::
