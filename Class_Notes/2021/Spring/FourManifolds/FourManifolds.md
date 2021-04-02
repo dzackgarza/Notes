@@ -5434,7 +5434,7 @@ The coordinate chart is $\PP^1 \sm \infty$, so we obtain
 Does this vector field $V$ extend over $\infty$?
 The local coordinate at $\infty$ is $w = 1/z$, so $z=1/w$ and we can compute
 \[
-{1\over w} \dd{}{1\over w} = {1\over w} {\partial \over {-1\over w^2} \partial w} = -w \dd{}{w}
+{1\over w} \dd{}{ {1\over w} } = {1\over w} {\partial \over {-1\over w^2} \partial w} = -w \dd{}{w}
 .\]
 We have $\ord_0V = 1$ and $\ord_{\infty } V = 1$, and so $\deg T\PP^1 = 2$.
 :::

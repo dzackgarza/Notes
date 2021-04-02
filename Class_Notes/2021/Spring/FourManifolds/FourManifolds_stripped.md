@@ -3982,7 +3982,7 @@ for \( TX \) the tangent bundle. Note that taking the cotangent bundle gives for
 ```
 Does this vector field \( V \) extend over \( \infty \)? The local coordinate at \( \infty \) is \( w = 1/z \), so \( z=1/w \) and we can compute
 \[
-{1\over w} {\frac{\partial }{\partial 1\over w}\,} = {1\over w} {\partial \over {-1\over w^2} \partial w} = -w {\frac{\partial }{\partial w}\,}
+{1\over w} {\frac{\partial }{\partial  {1\over w} }\,} = {1\over w} {\partial \over {-1\over w^2} \partial w} = -w {\frac{\partial }{\partial w}\,}
 .\]
 We have \( {\operatorname{Ord}}_0V = 1 \) and \( {\operatorname{Ord}}_{\infty } V = 1 \), and so \( \deg T{\mathbb{P}}^1 = 2 \).
 :::
