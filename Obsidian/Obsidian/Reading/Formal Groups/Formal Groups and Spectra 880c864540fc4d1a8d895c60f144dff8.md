@@ -19,7 +19,7 @@ Formal group law stuff
     ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png)
 
 - Motivation: if a formal group were for sale, why might you buy it?
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png)
+    - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png)
 
 - What is a formal group law?
 
