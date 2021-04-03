@@ -144,8 +144,8 @@ Formal group law stuff
 
 ---
 
-# Stable Homotopy
 
+# Stable Homotopy
 ## tmf
 
 - How is tmf related to modular forms?
