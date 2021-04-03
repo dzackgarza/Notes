@@ -6,14 +6,51 @@
       {
         "id": "8e9f9fc24a8cf9c3",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
             "file": "Barnes and Roitzheim.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "dfa6440ad53964f6"
+      },
+      {
+        "id": "996afd5a2f46344c",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "Barnes and Roitzheim.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1,
+              "close": false
+            }
+          }
+        },
+        "group": "dfa6440ad53964f6"
       }
     ],
     "direction": "vertical"
@@ -86,6 +123,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "Barnes and Roitzheim.md",
     "Untitled.md"
   ]
 }
