@@ -8,9 +8,10 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Pasted image 20210403003657.png"
+            "file": "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20210403003657.png",
+                "file": "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20210403003657.png"
+                "file": "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md"
               }
             }
           },
@@ -106,11 +107,11 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
     "Pasted image 20210403003657.png",
     "Pasted image 20210403003645.png",
     "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md",
     "Reading/Untitled.md",
-    "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
     "Barnes and Roitzheim.md",
     "Pasted image 20210402221513.png",
     "Untitled.md"
