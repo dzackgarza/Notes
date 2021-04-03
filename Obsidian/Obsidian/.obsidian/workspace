@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
-            "mode": "preview"
+            "file": "Reading/Test.md",
+            "mode": "source"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
+                "file": "Reading/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md"
+                "file": "Reading/Test.md"
               }
             }
           },
@@ -107,6 +107,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "Reading/Untitled.md",
     "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
     "Barnes and Roitzheim.md",
     "Pasted image 20210402221513.png",
