@@ -101,3 +101,7 @@ The following is fibrant replacement in the stable module structure on sequentia
 ![[Pasted image 20210403005019.png]]
 
 ![[Pasted image 20210403005035.png]]
+
+![[Pasted image 20210403005048.png]]
+
+![[Pasted image 20210403005059.png]]
