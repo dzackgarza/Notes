@@ -61,3 +61,23 @@
 ![[Pasted image 20210402222334.png]]
 
 ![[Pasted image 20210402222344.png]]
+
+![[Pasted image 20210402230225.png]]
+
+![[Pasted image 20210402230238.png]]
+
+The following is fibrant replacement in the stable module structure on sequential spectra:
+
+![[Pasted image 20210402230302.png]]
+
+![[Pasted image 20210402230342.png]]
+
+![[Pasted image 20210402230355.png]]
+
+![[Pasted image 20210402230406.png]]
+
+![[Pasted image 20210402230416.png]]
+
+![[Pasted image 20210402230430.png]]
+
+![[Pasted image 20210402230443.png]]
