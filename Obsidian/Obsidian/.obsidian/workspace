@@ -8,10 +8,9 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md",
-            "mode": "preview"
+            "file": "Pasted image 20210403003657.png"
           }
         }
       }
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md",
+                "file": "Pasted image 20210403003657.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +83,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md"
+                "file": "Pasted image 20210403003657.png"
               }
             }
           },
@@ -107,6 +106,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "Pasted image 20210403003657.png",
+    "Pasted image 20210403003645.png",
     "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md",
     "Reading/Untitled.md",
     "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
