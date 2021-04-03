@@ -114,6 +114,25 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "cddc9e8fb5f63099",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "f5723c16db5a18fa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
         ]
       }
