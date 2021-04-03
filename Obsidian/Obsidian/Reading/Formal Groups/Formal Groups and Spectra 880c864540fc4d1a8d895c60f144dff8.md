@@ -1,5 +1,3 @@
-# Formal Groups and Spectra
-
 Formal group law stuff
 
 [](https://math.mit.edu/juvitop/pastseminars/notes_2020_Spring/Levy.pdf)
