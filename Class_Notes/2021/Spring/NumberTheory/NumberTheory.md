@@ -36,6 +36,7 @@
 \newcommand{\bbm}[0]{{\mathbb{M}}}
 \newcommand{\NN}[0]{{\mathbb{N}}}
 \newcommand{\OP}[0]{{\mathbb{OP}}}
+\newcommand{\LL}[0]{{\mathbb{L}}}
 \newcommand{\PP}[0]{{\mathbb{P}}}
 \newcommand{\QQ}[0]{{\mathbb{Q}}}
 \newcommand{\RP}[0]{{\mathbb{RP}}}
@@ -44,6 +45,8 @@
 \renewcommand{\SS}[0]{{\mathbb{S}}}
 \newcommand{\TT}[0]{{\mathbb{T}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
+\newcommand{\ZZG}[0]{{\mathbb{Z}G}}
+\newcommand{\kG}[0]{{kG}}
 \newcommand{\znz}[0]{\mathbb{Z}/n\mathbb{Z}}
 \newcommand{\zpz}[0]{\mathbb{Z}/p\mathbb{Z}}
 \newcommand{\zlz}[0]{\mathbb{Z}/\ell\mathbb{Z}}
@@ -74,7 +77,7 @@
 \newcommand{\Hilb}[0]{\operatorname{Hilb}}
 \newcommand{\Quot}[0]{\operatorname{Quot}}
 \newcommand{\Art}[0]{\operatorname{Art}}
-\newcommand{\red}[0]{\operatorname{red}}
+\newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
@@ -163,6 +166,7 @@
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
@@ -202,6 +206,7 @@
 \newcommand{\tor}[0]{\operatorname{Tor}}
 \newcommand{\height}[0]{\operatorname{ht}}
 \newcommand{\cpt}[0]{{ \text{compact} } }
+\newcommand{\Kah}[0]{{ \text{Kähler} } }
 \newcommand{\oriented}[0]{{ \text{oriented} } }
 \newcommand\compact[0]{\text{cpt}}
 \newcommand\Kahler[0]{\text{Kähler}}
@@ -293,6 +298,7 @@
 \newcommand{\injects}[0]{\hookrightarrow}
 \newcommand{\diagonal}[0]{\Delta}
 \newcommand{\embeds}[0]{\hookrightarrow}
+\newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\surjectsvia}[2][]{
@@ -351,7 +357,10 @@
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\Hom}[0]{{\operatorname{Hom}}}
-\newcommand{\shom}{\mathscr{H}\operatorname{\kern -3pt {\calligra\large om}}}
+\newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
+\newcommand{\Hsh}{{ \mathcal{H} }}
+\newcommand{\CY}{{ \text{CY} }}
+\newcommand{\FS}{{ \text{FS} }}
 \newcommand{\HHom}{\mathscr{H}\kern-2pt\operatorname{om}}
 \newcommand{\Map}[0]{{\operatorname{Map}}}
 \newcommand{\multinomial}[1]{\left(\!\!{#1}\!\!\right)}
@@ -399,7 +408,8 @@
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
 \newcommand{\tensor}[0]{\otimes}
-\newcommand{\connectsum}[0]{\mathop{ \Large\text{\#} }}
+\newcommand\mypound{\scalebox{0.8}{\raisebox{0.4ex}{\#}}}
+\newcommand{\connectsum}[0]{\mathop{ \Large\mypound }}
 \newcommand{\theset}[1]{\left\{{#1}\right\}}
 \newcommand{\ts}[1]{\left\{{#1}\right\}}
 \newcommand{\infsum}[1]{\sum_{{#1=0}}^\infty}
@@ -428,7 +438,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{{#1}^{\wait}}
+\newcommand{\complex}[1]{{#1}^{\bullet}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -541,6 +551,7 @@
 \newcommand{\congbecause}[1]{\overset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
+\newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
 
 # Thursday, January 14
 
@@ -4144,12 +4155,15 @@ See Pete Clark's papers!
 
 # Ch. 13: Starting Over (Thursday, March 04)
 
+:::{.remark}
 Idea: we've phrased everything so far for quadratic fields, now we want to do everything for general number fields.
 The basic objects and tools: norm and trace.
 If $K/\QQ$ is a number field that's Galois, we define \( N \alpha \da \prod_{ \sigma \in G} \sigma( \alpha) \) and \( \Tr \alpha \da \sum_{ \sigma\in G } \sigma( \alpha) \).
 We'll have to modify this for a general number field since there's not an immediate candidate for the Galois group.
 
 Setup: let $K$ be a number field with \( [K: \QQ] = n \), then recall that there exist $n$ different embeddings \( \sigma: K \embeds \CC \).
+
+:::
 
 :::{.definition title="Field Polynomial"}
 If \( \alpha\in K \) then define its **field polynomial**
@@ -4235,8 +4249,6 @@ N( \alpha) &\da (-1)^n a_0 \in \QQ\\
 Note that if \( \alpha \in \ZZ_K \) then these are both in fact in $\ZZ$.
 :::
 
-
-
 :::{.remark}
 Note that $-(1)^n a_0 = \prod r_i$ is the product of the roots of \( \varphi_{ \alpha} (x)\) and \( -a_{n-1} = \sum r_i \), so equivalently we can think of these as 
 \[
@@ -4248,9 +4260,10 @@ It's also the case that $N(\wait)$ is multiplicative and $\Tr(\wait)$ is $\QQ \d
 
 ## Discriminants
 
+:::{.remark}
 Let $K$ be a number field and $[K : \QQ] = n$.
 Pick an arbitrary ordering of embeddings $\sigma_1, \cdots, \sigma_n: K \embeds \CC$.
-
+:::
 
 :::{.definition title="Tuple Discriminant"}
 For any $n\dash$tuple $(w_1, \cdots, w_n) \in K^n$ define the **tuple discriminant** as 
@@ -4268,7 +4281,6 @@ D_{w_1, \cdots, w_n}
 \sigma_n(w_1) & \cdots  & \sigma_n(w_n) 
 \end{bmatrix}
 .\]
-
 
 :::
 
@@ -4321,7 +4333,6 @@ Again using linearity, we actually have \( \Tr( \alpha \beta) = 0 \) for all \( 
 It's then perfectly fine to take \( \alpha \da \beta\inv \), which forces \( \Tr(1) = 0 \).
 But we can compute directly that \( \Tr(1) = n > 0 \) since every embedding \( \sigma \) must send 1 to 1.
 :::
-
 
 ## Integral Bases 
 
@@ -4410,7 +4421,6 @@ Note that this is non-constructive, finding a basis is another question!
 
 ## Discriminant of Number Fields
 
-
 :::{.definition title="Discriminant of a Number Field"}
 Let $K$ be a number field, then the **discriminant** of $K$ is defined as 
 \[
@@ -4418,7 +4428,6 @@ Let $K$ be a number field, then the **discriminant** of $K$ is defined as
 ,\]
 where \( \ts{ w_i } \) is any $\ZZ\dash$basis for $\ZZ_K$.
 :::
-
 
 :::{.remark}
 Is this actually an invariant of $K$, since we made a choice of basis?
@@ -4434,7 +4443,6 @@ Hence
 .\]
 using that invertible matrices have unit determinants, which in $\ZZ$ are just \( \pm 1 \).
 :::
-
 
 :::{.remark}
 Why do we care?
@@ -4452,17 +4460,6 @@ p \text{ ramifies in } \ZZ_K \iff p \divides \discriminant_K
 where **ramification** occurs if when \( \gens{ p }\normal \ZZ_K  \) factors into prime ideals with a repeated prime factor.
 In particular, \( \discriminant(\wait) < \infty \), and so only finitely many such primes can occur.
 :::
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Saturday, March 13
@@ -4491,7 +4488,7 @@ The embeddings here are the identity and complex conjugation, so we get
 If $d = 1 \mod 4$, then we can take a basis $(1, {1 + \sqrt{d} \over 2})$,
 and
 \[
-\Delta_K
+\Delta_{K}
 =
 \qty{
 \begin{bmatrix}
@@ -4505,13 +4502,12 @@ and
 So we have
 \[
 \Delta_K = 
-
 \begin{cases}
 d & d = 1 \mod 4 
 \\
 4d & d = 2,3 \mod 4 .
 \end{cases}
-.\]
+\]
 
 :::
 
@@ -4521,22 +4517,18 @@ Note that $\Delta_\QQ = 1$ if you trace through the computation.
 
 ## Norms of Ideals
 
-
 :::{.definition title="?"}
 Let $I \normal \ZZ_K$ be a nonzero ideal, then define \( N(I) \da \# \ZZ_K/I \).
 :::
-
 
 :::{.remark}
 Note that this was finite in the quadratic field case since nonzero ideals had a "standard basis".
 For general number fields, the ideals can be more complicated, so we'll need another way to show finiteness.
 :::
 
-
 :::{.lemma title="?"}
 Let \( \alpha\in \ZZ_K \), then \( \alpha\divides N( \alpha) \) in \( \ZZ_K \).
 :::
-
 
 :::{.proof title="of lemma"}
 Write down the obvious thing and see that it works!
@@ -4555,15 +4547,12 @@ Since \( N \alpha \) is a nonzero rational integer and \( \alpha\in K \), and si
 But then \( C \in \bar{\ZZ} \intersect K = \ZZ_K \). 
 :::
 
-
-
 :::{.proposition title="?"}
 For $I\normal \ZZ_K$ nonzero,
 \[
 N(I) < \infty 
 .\]
 :::
-
 
 :::{.proof title="?"}
 We start with principal ideals.
@@ -4582,7 +4571,6 @@ where we've used \( m\in I \) for this to be well-defined.
 So $\# \ZZ_K /I \leq \ZZ_K / \gens{ m } = m^n < \infty$. 
 :::
 
-
 :::{.theorem title="The norm is multiplicative"}
 For every pair $I, J\normal \ZZ_K$ nonzero, 
 \[
@@ -4590,16 +4578,14 @@ N( IJ) + N(I) N(J)
 .\]
 :::
 
-
 :::{.proof title="?"}
 Deferred!
 :::
 
-
 :::{.theorem title="Formula for norm of principal ideals"}
 For all \( \alpha\in \ZZ_K \) nonzero, 
 \[
-N( \gens{ \alpha }) = \abs{ N ( \alpha ) | 
+N( \gens{ \alpha }) = \abs{ N ( \alpha ) }
 ,\]
 i.e. the norm of a principal ideal is the absolute value of the norm of the element-wise ideal.
 :::
@@ -4614,7 +4600,6 @@ We can thus write \( \tv{ \theta_1, \cdots, \theta_n} = \tv{ \omega_1, \cdots, \
 Then \( [M: H] = \#M/H = \abs{ \det A } \).
 :::
 
-
 :::{.proof title="Sketch"}
 Idea: convert this problem about an arbitrary \( M \in \zmod \) to a problem about $\ZZ^n$.
 We know \( M \cong \ZZ^n \), and if we send the \( \omega_i \) to the standard basis vectors, this identifies $H \cong A \ZZ^n$.
@@ -4627,7 +4612,6 @@ Since $\det A \neq 0$, we have \( \det S, \det T \neq 0 \), and so all of the \(
 We can write \( \ZZ^n/A\ZZ^n \cong \ZZ^n/SAT\ZZ^n \cong \bigoplus_{i=1}^n \ZZ/a_i \ZZ \), which has size \( \prod \abs{a_i} = \abs{ \prod a_i } = \abs{ \det (SAT) } = \abs{ \det(A) } \) since $S, T$ are invertible and thus have determinant $\pm 1$.
 :::
 
-
 :::{.proof title="of formula for norm of principal ideals"}
 Let \( \omega_1, \cdots, \omega_n \) be a \( \ZZ\dash \)basis for $\ZZ_K$, then \( \alpha \omega_1, \cdots \alpha \omega_n \) is a $\ZZ\dash$basis for \( \alpha\ZZ_K = \gens{ \alpha }  \).
 Now to compute $\# \ZZ_K/ \gens{ \alpha }$, we use the "index equals determinant" result: write
@@ -4636,7 +4620,8 @@ Now to compute $\# \ZZ_K/ \gens{ \alpha }$, we use the "index equals determinant
 ,\]
 we now just need to show that this is equal to \( \abs{ N \alpha } \).
 We'll proceed by taking discriminants of tuples, applied to the first equation above.
-This yields \[
+This yields 
+\[
 \discriminant( \alpha \omega_1, \cdots, \alpha \omega_n) 
 &= 
 \discriminant( \omega_1, \cdots, \omega_n) 
@@ -4700,7 +4685,7 @@ Then express the \( \theta \) in terms of the \( \omega \):
 &= 
 \discriminant(\elts{ \omega}{n} ) \det(A)^2
 .\]
-We can view \( \abs{ \det(A) } \) as the index of the subgroup generated by the \( \theta_\)  in the group generated by the \( \omega_i \), so
+We can view \( \abs{ \det(A) } \) as the index of the subgroup generated by the \( \theta_i \)  in the group generated by the \( \omega_i \), so
 \[
 \abs{ \det(A) } = [ \ZZ_K : H], && H\da \spanof_\ZZ\ts{ \theta_i }
 .\]
@@ -4724,7 +4709,6 @@ If the left-hand side is squarefree, then use that $[\ZZ_K: H]^2$ divides the le
 Note that this is *not* necessary! 
 We saw that for $d = 2,3 \mod 4$ that $\discriminant_K = 4d$, which is not squarefree.
 :::
-
 
 :::{.example title="?"}
 Let $K = \QQ( \theta)$ where \( \theta \) is a root of 
@@ -4757,7 +4741,6 @@ So this yields a $\ZZ\dash$basis for $\ZZ_K$, i.e. $\ZZ_K = \ZZ[ \theta]$.
 Note that \( \discriminant_K = -23119 \) as well, since it's the discriminant of *any* integral basis.
 :::
 
-
 :::{.example title="?"}
 Let $K = \QQ( \alpha)$ where \( \alpha \) is a root of 
 \[
@@ -4784,7 +4767,6 @@ One can check that \( {\alpha+ \alpha^2 \over 2} \in \ZZ_K \sm H \).
 So the original candidate basis was wrong, but we can take \( 1, \alpha, {\alpha + \alpha^2 \over 2} \) instead, which is an integral basis.
 :::
 
-
 :::{.remark}
 Why is this last part true?
 These are 3 elements of $\ZZ_K$ that are still $\QQ\dash$linearly independent and contains the $\ZZ\dash$span of the previous 3 elements defining $H$.
@@ -4793,8 +4775,9 @@ So $\ZZ_K \neq \ZZ[ \alpha]$, and in fact Dedekind showed that \( \ZZ_K \neq \ZZ
 So cubic number fields exhibit new behavior when compared to quadratic number fields!
 :::
 
+:::{.remark}
 Next time: integral bases for cyclotomic fields.
-
+:::
 
 
 
@@ -4912,7 +4895,7 @@ Recall some facts about the discriminant: let $F$ be a field and $f(x) \in F[x]$
 Then factor $f(x) = \prod_{i=1}^n (x - \alpha_i)$ over some splitting field.
 We then define 
 \[
-\discriminant(f) \da \prod_{i<j} ( \alpha_j - \alpha_i)^2
+\discriminant(f) \da \prod_{i < j} ( \alpha_j - \alpha_i )^2
 .\]
 We won't discuss the theory, but we'll use a few facts.
 :::
@@ -4939,9 +4922,9 @@ Some consequences:
 :::
 
 
-:::{.proof title="That $\ZZ_K = \ZZ[ \zeta_p]$ for $K = \QQ(\zeta_p)$"}
+:::{.proof title="That $\ZZ_K = \ZZ\adjoin{\zeta_p}$ for $K = \QQ(\zeta_p)$."}
 To save space, we'll write $\zeta \da \zeta_p$.
-We want to show \( \1, \zeta, \cdots, \zeta^{p-2} \) forms an integral basis, from last time we have
+We want to show \( 1, \zeta, \cdots, \zeta^{p-2} \) forms an integral basis, from last time we have
 \[
 \discriminant( 1, \zeta, \cdots, \zeta^{p-2}) = 
 \discriminant_K 
@@ -5097,6 +5080,355 @@ In fact, we've already proved that $\ZZ_K / I$ for any nonzero ideal $I$ is fini
 :::{.remark}
 We now want to establish the cancellation law in $\Id(\ZZ_K)$, then the principal multiple lemma, and then everything else will follow as in the quadratic case.
 :::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Tuesday, March 30
+
+## Chapter 15 (continued)
+
+:::{.remark}
+We want to develop theorems of ideal theory for $\ZZ_K$ for $K$ a general number field, i.e. factorization into prime ideals and the finiteness of the class group.
+The strategy:
+
+- Prove $\Cl(\ZZ_K)$ is a finite monoid,
+- Prove $\Cl(\ZZ_K)$ has inverses and is thus a group, i.e. every nonzero ideal can be multiplied by another ideal to become principal (principal multiple lemma),
+- Run proofs/corollaries as before.
+
+Last time, we proved the first one.
+:::
+
+:::{.lemma title="?"}
+Let $I, J \in \Id(\ZZ_K)$, then if $IJ = J$ then $I = \gens{ 1 }$. 
+:::
+
+:::{.remark}
+Note that this is a special case of cancellation.
+To prove this, we'll use that $\ZZ_K$ is Noetherian, i.e. every ideal is finitely generated as a \(\ZZ_K\dash\)module.
+In fact, $\ZZ_K \cong \ZZ^n$, so any ideal is free of rank $\leq n$ as a \(\ZZ\dash\)module, hence finitely generated as a \(\ZZ\dash\)module, hence finitely-generated as a $\ZZ_K\dash$module since one can use the same generators.
+:::
+
+:::{.proof title="?"}
+Let $J = \gens{ \beta_1, \cdots, \beta_n }$, then since $IJ = J$, for every $j$ we can write \( \beta_j = \sum_{i=1}^m A_{ij} \beta_i  \).
+This means that there is some matrix $A\in \Mat(m\times m, I)$ with entries $A_{ij} \in I$ such that
+\[
+\tv{\beta_1, \cdots, \beta_m}
+=
+\tv{\beta_1, \cdots, \beta_m}A
+.\]
+Then $A-\one \vector{\beta} = 0$, making $A-\one$ singular since not all of the $\beta_i$ were zero since they were generators of a nonzero ideal.
+Now take the determinant mod $I$, which yields
+\[
+0 \equiv \det(A-\one) \equiv \det(-\one) \equiv \pm 1\mod I
+,\]
+but this can only occur if $1\in I$, making \( \gens{ 1 }= I  \).
+:::
+
+:::{.lemma title="?"}
+Let $I, J\normal \ZZ_K$, then if $IJ = \beta J$ with $\beta \in \ZZ_K \smz$, we have $I = \gens{ \beta }$. 
+:::
+
+:::{.remark}
+Note that the previous lemma is a special case of this where $\beta = 1$.
+One can then bootstrap the previous lemma to get this, see the book.
+:::
+
+:::{.lemma title="Principal Multiple Lemma"}
+For all $I\in \Id(\ZZ_K)$ there is a $J \in \Id(\ZZ_K)$ such that $IJ$ is principal.
+:::
+
+:::{.proof title="?"}
+Consider $[I], [I]^2, \cdots \in \Cl(\ZZ_K)$.
+By the pigeonhole principal, there is some $k, \ell$ such that $[I^k] = [I]^\ell$, so $I^k = \lambda I^\ell$ for some $\lambda \in K\units$.
+Note that any nonzero element of $K$ can be written as $k/n$ for $k\in K$ and $n\in \ZZ_K$.
+So we can scale $\lambda$ to put it in $\ZZ_K$, yielding $\lambda = \alpha/m$ where \( \alpha\in \ZZ_K \) and $m\in \ZZ\units$.
+We then have
+\[
+mI^k = \alpha I^\ell = (\alpha I^{\ell-k})I^k
+.\]
+We have enough to cancel the $I^k$, and so \( \gens{ m }= \alpha I^{\ell - k}  \).
+Dilating both sides by \( \alpha\inv \) yields 
+\( \gens{ m/\alpha } = I^{\ell-k}  \).
+But this is a power of $I$ that is principal, so we can take $J \da I^{\ell-k-1}$.
+:::
+
+:::{.remark}
+Note that the logical order in which these theorems are proved is slightly reversed.
+:::
+
+:::{.corollary title="?"}
+\envlist
+
+a. $\Cl(\ZZ_K)$ is a group, and thus a finite abelian group.
+
+b. $\Id(\ZZ_K)$ is cancellative.
+  Just show one can cancel principal ideals (by dilation), and then in general you cancel by multiplying both sides principal and cancelling that principal ideal.
+
+To show unique factorization, we before showed factorization into irreducibles first, then uniqueness as a consequence of Euclid's lemma.
+
+:::
+
+:::{.lemma title="?"}
+$\Id(\ZZ_K)$ is atomic, i.e. every element factors into irreducibles.
+:::
+
+:::{.proof title="?"}
+We'll proceed by induction on $N(I)$, using that $N(AB) \leq N(A)$ for any $A$ and so $I\divides J \implies N(I) < N(J)$.
+Before we used that $N(AB) = N(A) N(B)$, but we haven't proved that here yet.
+We also don't know that "to divide is to contain" here, but since $I\divides J$ and $I\neq J$, we do obtain $J \subsetneq I$.
+Hence there is a surjection
+\[
+\ZZ_K/J \to \ZZ_K/I
+.\]
+This has nontrivial kernel since $I\sm J \neq \emptyset$, so \( \abs{\ZZ_K/J}> \abs{\ZZ_K/I} \).
+:::
+
+:::{.lemma title="Analog of Euclid's Lemma"}
+Irreducibles in $\Id(\ZZ_K)$ are prime.
+:::
+
+:::{.proof title="?"}
+Same as before!
+Literally use the exact same words, we've set it up this way.
+:::
+
+:::{.theorem title="?"}
+$\Id(\ZZ_K)$ is a UFM, or equivalently every nonzero ideal factors uniquely as a product of prime ideals.
+:::
+
+## Modern Approach
+
+:::{.remark}
+What is the widest class of domains for which the previous theorem holds?
+:::
+
+:::{.definition title="?"}
+Let $R$ be a domain that is not a field (since ideals in fields are uninteresting).
+Then $R$ is a **Dedekind domain** if and only if 
+
+a. $R$ is Noetherian,
+
+b. $R$ is integrally closed,
+  so if $K = \ff(R)$, then if $\alpha\in K$ is a root of a monic polynomial in $R[x]$ we have \( \alpha\in R \).[^rational_root_comparison]
+
+[^rational_root_comparison]: 
+Compare to the classical rational root theorem.
+
+c. Every nonzero prime ideal is maximal.
+
+:::
+
+:::{.theorem title="Noether"}
+TFAE:
+
+1. $R$ is a Dedekind domain,
+
+2. Every nonzero ideal of $R$ factors into prime ideals (not necessarily uniquely).
+
+3. (2) along with uniqueness.
+:::
+
+:::{.proof title="?"}
+Omitted, this is an exercise in commutative algebra.
+:::
+
+:::{.proposition title="?"}
+For any number field $K$, $\ZZ_K$ is a Dedekind domain.
+:::
+
+:::{.proof title="?"}
+We can check the definitions directly:
+
+a. This is a consequence of the integral basis theorem.
+
+b. Suppose \( \alpha \in K \) and is a root of a monic polynomial in $\ZZ_K[x]$, we then want to show \( \alpha\in \ZZ_K \).
+  Then \( \alpha \) is a root of a monic polynomial in $\bar{\ZZ}[x]$, and by a previous proof, any monic polynomial with $\bar{\ZZ}$ coefficients is itself in $\bar{\ZZ}$.
+  Since \( \alpha \in K \) as well, we have \( \alpha\in \bar{\ZZ_K} \intersect K \da \ZZ_K \).
+
+c. Let $P \normal \ZZ_K$ be nonzero.
+  Then $\ZZ_K/P$ is a domain, but any finite integral domain is a field and we know this is finite since $N(P) < \infty$.
+:::
+
+## Norms Revisited
+
+:::{.remark}
+We left one theorem hanging when we discussed norms.
+We proved that norms of ideals are finite, and $N(P)$ for $P$ principal is equal to $N(a)$ for $a$ any generator.
+We haven't yet proved the following:
+:::
+
+:::{.theorem title="?"}
+\[
+N(IJ) = N(I) N(J) && \forall I, J \in \Id(\ZZ_K)
+.\]
+:::
+
+:::{.remark}
+If $I, J\in \Id(\ZZ_K)$, we have $\gcd(I, J) = I+J$, since this is the smallest ideal such that any $P\divides I, P\divides J$ must satisfy $P\divides \gcd(I, J)$.
+:::
+
+:::{.proof title="?"}
+It's enough to show $N(IP) = N(I) N(P)$ for $P$ prime, since every $J$ factors into primes and we can apply this result recursively.
+Now
+\[
+N(IP) 
+&= [\ZZ_K, IP] \\
+&= [\ZZ_K: I] [I : IP] \\
+&= N(I) [I: IP]
+,\]
+so it suffices to show $N(P) = [I: IP]$.
+
+
+:::{.claim}
+This is true because $\ZZ_K \cong I/IP$ are isomorphic as $\ZZ\dash$modules. 
+:::
+
+Choose \( \beta \in I\sm IP \), using that $I$ *properly* divides $IP$ when it is properly contained.
+Define a map 
+\[
+\psi: \ZZ_K/p &\to I/IP \\
+\alpha \mod p  &\mapsto \alpha \beta \mod IP
+.\]
+This is well-defined since for any two elements which differ by a multiple of $P$, multiplying by $\beta \in I$ lands in $IP$.
+
+
+:::{.exercise title="?"}
+Check that this is a well-defined group morphism.
+:::
+
+**Injectivity**:
+Suppose that \( \alpha\mod P \in \ker \psi \), so \( \alpha \beta\in IP \) and $IP \divides \gens{ \alpha } \gens{ \beta }$.
+Note that without the \( \alpha \) this would be false, so we're critically using that \( \beta \) is in $I$ but not $IP$: $IP\not\divides \gens{ \beta }$ since \( \beta \not\in IP \). 
+So $IP$ divides this product but not $\beta$ while $I$ *does* divide \( \beta \), this forces $P\divides m \gens{ \alpha }$.
+Then \( \alpha\in P \) and \( \alpha\mod P = 0 \), so $\ker \psi = 0$.
+
+**Surjectivity:**
+We might want to write \( \Im(\psi) = \gens{ \beta } / IP  \), but this doesn't quite make sense since $IP$ may not be a subgroup.
+This can be fixed, $\im \psi = ( \gens{ \beta } + IP) / IP$. 
+But this equals \( \gcd( \gens{ \beta }, IP ) / IP  \), and this numerator is $I$ since \( \beta\in I \) and \( \beta\not\in IP \).
+So we have 
+\[
+\im(\psi) 
+&= {\gens{ \beta } + IP \over  IP } \\
+&= { \gcd( \gens{ \beta }, IP ) \over IP } \\
+&= I/IP
+.\]
+
+:::
+
+:::{.remark}
+For quadratic fields, we could compute ideal norms by multiplying an ideal $I$ by its conjugate $\bar I$ to get a principal ideal generated by $N(I)$.
+Here we don't know what conjugates mean yet for a general number field -- one could try applying all of the embeddings into $\CC$ and taking a product, but this may not yield an ideal in the same ring again.
+In particular, if $K$ isn't Galois, the embedding can land outside of $K$ in $\CC$.
+:::
+
+:::{.definition title="Extending Ideals"}
+For $R \subseteq S$ and $I\normal R$, define $IS$ to be the smallest ideal of $S$ containing $I$ (i.e. take all intersections), or equivalently take all finite $S\dash$linear combinations of elements from $I$.
+:::
+
+:::{.exercise title="?"}
+Check that 
+
+- $(IJ)S = (IS)(JS)$,
+- $(\alpha R)S = \alpha S$.
+:::
+
+:::{.theorem title="?"}
+Let $I\in \Id(\ZZ_K)$ and let $L$ be the Galois closure of $K/\QQ$.
+For each \( \sigma: K\embeds \CC \), the image \( \sigma(I) \) is an ideal of $\ZZ_{\sigma(K)} \subseteq \ZZ_L$.
+Then 
+\[
+\prod_{\sigma: K\embeds \CC} \sigma(I) \ZZ_L = N(I) \ZZ_L
+.\]
+:::
+
+:::{.remark}
+This shows why the norm is multiplicative, and why \( N( \gens{ \alpha }) = |N( \alpha ) |  \).
+:::
+
+## Applications of Finiteness of Class Group
+
+:::{.question}
+Where do ideals come from?
+:::
+
+:::{.remark}
+They're meant to generalize multiples of an integer in $\ZZ$, but not all ideals in a general number field are principal.
+However, there is a way in which this is true for $\ZZ_K$ even when it's not a PID.
+:::
+
+:::{.theorem title="Dedekind's theorem on the actuality of ideals"}
+Let $K$ be a number field and $I\normal \Id(\ZZ_K)$.
+Then there is a \( \beta\in \bar{\ZZ} \) such that $I = \beta \bar{\ZZ} \intersect K$, or equivalently \( I = \beta \bar{\ZZ} \intersect \ZZ_K \).
+:::
+
+:::{.remark}
+Example of a non-principal ideal: in $\ZZ[\sqrt{-5}]$, the ideal \( I \da \gens{ 2, 1 + \sqrt{-5} }  \) is not principal, i.e. not all such elements are given by multiples of some element in $\ZZ[ \sqrt{-5} ]$.
+It turns out that instead this is all multiples (in $\bar{\ZZ})$ of $\sqrt{2}$.
+So anything that's a multiple of $\sqrt{2}$ *and* an algebraic integer that's in $\ZZ[\sqrt{-5}]$ will be in $I$ and vice-versa.
+So ideals are multiples of a single element, provided you allow that element to be outside of $\ZZ_K$ and in $\bar{\ZZ}$ instead.
+:::
+
+
+:::{.lemma title="?"}
+Let $K$ be a number field and $I\in \Id(\ZZ_K)$.
+Then there is a finite extension $L/K$ in which $I\ZZ_L$ is principal.
+So any ideal can be made principal after passing to some finite extension.
+:::
+
+
+:::{.proof title="?"}
+Let $m \da \# \Cl(\ZZ_K)$.
+Then $I^m = \alpha\ZZ_K$ is principal since $m$ is the order of this group.
+Let \( \beta\da \sqrt[m]{\alpha} \in \CC \) and let $L \da K( \beta)$.
+Here \( \beta \) is an algebraic integer since it's an $m$th root of an algebraic integer.
+The claim is that $I\ZZ_L$ is principal.
+We have 
+\[
+(I \ZZ_L)^m
+&= I^m \ZZ_L \\
+&= ( \alpha\ZZ_K) \ZZ_L \\
+&= \alpha\ZZ_L \\
+&= \beta^m \ZZ_L \\
+&= (\beta \ZZ_L)^m
+.\]
+But how can two ideals have the same $m$th power?
+By unique factorization, they must be the same, so $I\ZZ_L = \beta \ZZ_L$.
+
+> To be continued.
+
+:::
+
+
+
+
+
+
+
+
+
+
 
 
 

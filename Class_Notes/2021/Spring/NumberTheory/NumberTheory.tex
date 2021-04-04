@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-03-24 }
+{\tiny \textit{Last updated:} 2021-04-04 }
 \end{flushleft}
 
 
@@ -1328,25 +1328,25 @@ equivalence relation of being equivalent up to a unit.
 
 \begin{definition}[Reduced Monoid]
 
-Define \(M_{\operatorname{red}}\coloneqq M/\sim\) where
+Define \(M_{{ \text{red} }}\coloneqq M/\sim\) where
 \(a\sim b \iff a-b\in M^{\times}\). The operation on \(M\) descends to
-well-defined operation on \(M_{\operatorname{red}}\), and irreducibles
-and primes are the same in \(M\) and \(M_{\operatorname{red}}\).
+well-defined operation on \(M_{{ \text{red} }}\), and irreducibles and
+primes are the same in \(M\) and \(M_{{ \text{red} }}\).
 
 \end{definition}
 
 \begin{example}[?]
 
 This is supposed to look like \({\mathbb{Z}}_{\geq 0}\), where
-\(-7\in M \mapsto 7 \in M_{\operatorname{red}}\).
+\(-7\in M \mapsto 7 \in M_{{ \text{red} }}\).
 
 \end{example}
 
 \begin{proposition}[?]
 
-\(M\) is a UFM if and only if \(M_{\operatorname{red}}\) is a UFM if and
-only if every element of \(M_{\operatorname{red}}\) factors uniquely as
-a product of irreducibles, up to order.
+\(M\) is a UFM if and only if \(M_{{ \text{red} }}\) is a UFM if and
+only if every element of \(M_{{ \text{red} }}\) factors uniquely as a
+product of irreducibles, up to order.
 
 \end{proposition}
 
@@ -1402,7 +1402,7 @@ you can go backward!
 \end{proof}
 
 Let
-\(M_{\operatorname{red}} \coloneqq\qty{{\mathbb{Z}}[ \sqrt{5} ] \setminus\left\{{0}\right\}}_{\operatorname{red}}\),
+\(M_{{ \text{red} }} \coloneqq\qty{{\mathbb{Z}}[ \sqrt{5} ] \setminus\left\{{0}\right\}}_{{ \text{red} }}\),
 motivated by the fact that \({\mathbb{Z}}[ \sqrt{-5} ]\) is not a UFD if
 \({\mathbb{Z}}[ \sqrt{-5} ] \setminus\left\{{0}\right\}\) is not a UFM,
 or equivalently its reduction is not a UFM. Then \(M\) is a not a UFM.
@@ -1420,8 +1420,8 @@ refinement.
 Why are there ``not enough elements'' in \({\mathbb{Z}}[ \sqrt{-5} ]\)?
 Recall that for integral domains (as rings), two elements differ by a
 unit precisely when they generate the same ideal. So we can think of
-elements of \(M_{\operatorname{red}}\) as nonzero principal ideals of
-\(M\), which we'll write as
+elements of \(M_{{ \text{red} }}\) as nonzero principal ideals of \(M\),
+which we'll write as
 \(\operatorname{Prin}( {\mathbb{Z}}[ \sqrt{-5} ])\). To make this set of
 ideals into a monoid, one define
 \(\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle= \left\langle{ \alpha \beta }\right\rangle\),
@@ -5084,6 +5084,8 @@ certain types of numbers are represented by special quadratic forms
 \section{Ch. 13: Starting Over (Thursday, March
 04)}\label{ch.-13-starting-over-thursday-march-04}}
 
+\begin{remark}
+
 Idea: we've phrased everything so far for quadratic fields, now we want
 to do everything for general number fields. The basic objects and tools:
 norm and trace. If \(K/{\mathbb{Q}}\) is a number field that's Galois,
@@ -5096,6 +5098,8 @@ an immediate candidate for the Galois group.
 Setup: let \(K\) be a number field with \([K: {\mathbb{Q}}] = n\), then
 recall that there exist \(n\) different embeddings
 \(\sigma: K \hookrightarrow{\mathbb{C}}\).
+
+\end{remark}
 
 \begin{definition}[Field Polynomial]
 
@@ -5239,9 +5243,13 @@ It's also the case that \(N({\,\cdot\,})\) is multiplicative and
 \hypertarget{discriminants}{%
 \subsection{Discriminants}\label{discriminants}}
 
+\begin{remark}
+
 Let \(K\) be a number field and \([K : {\mathbb{Q}}] = n\). Pick an
 arbitrary ordering of embeddings
 \(\sigma_1, \cdots, \sigma_n: K \hookrightarrow{\mathbb{C}}\).
+
+\end{remark}
 
 \begin{definition}[Tuple Discriminant]
 
@@ -5550,7 +5558,7 @@ and complex conjugation, so we get
 If \(d = 1 \pmod 4\), then we can take a basis
 \((1, {1 + \sqrt{d} \over 2})\), and
 \begin{align*}
-\Delta_K
+\Delta_{K}
 =
 \qty{
 \begin{bmatrix}
@@ -5561,15 +5569,15 @@ If \(d = 1 \pmod 4\), then we can take a basis
 }^2
 = (- \sqrt{d} )^2 = d
 .\end{align*}
-So we have {[} \Delta\_K =
-
+So we have
+\begin{align*}
+\Delta_K = 
 \begin{cases}
 d & d = 1 \pmod 4 
 \\
 4d & d = 2,3 \pmod 4 .
 \end{cases}
-
-.{]}
+\end{align*}
 
 \end{example}
 
@@ -5642,7 +5650,7 @@ N(I) < \infty
 \begin{proof}[?]
 
 We start with principal ideals. Let \(m\in {\mathbb{Z}}^+\), then
-\({\mathbb{Z}}_K \left\langle{ m }\right\rangle \coloneqq{\mathbb{Z}}_K /m {\mathbb{Z}}_K \cong_{\zmod} {\mathbb{Z}}^n / m{\mathbb{Z}}^n \cong ({\mathbb{Z}}/m{\mathbb{Z}})^n\)
+\({\mathbb{Z}}_K \left\langle{ m }\right\rangle \coloneqq{\mathbb{Z}}_K /m {\mathbb{Z}}_K \cong_{{\mathbb{Z}{\hbox{-}}\mathsf{Mod}}} {\mathbb{Z}}^n / m{\mathbb{Z}}^n \cong ({\mathbb{Z}}/m{\mathbb{Z}})^n\)
 where we've forgotten the ring structure and are just considering it as
 a \({\mathbb{Z}}{\hbox{-}}\)module . But this has size \(m^n < \infty\).
 
@@ -5680,7 +5688,7 @@ Deferred!
 
 For all \(\alpha\in {\mathbb{Z}}_K\) nonzero,
 \begin{align*}
-N( \left\langle{ \alpha }\right\rangle) = \abs{ N ( \alpha ) | 
+N( \left\langle{ \alpha }\right\rangle) = {\left\lvert { N ( \alpha ) } \right\rvert}
 ,\end{align*}
 i.e.~the norm of a principal ideal is the absolute value of the norm of
 the element-wise ideal.
@@ -5691,9 +5699,9 @@ This will follow from the following proposition:
 
 \begin{proposition}[Index = Determinant]
 
-Let \(M \in \zmod\) be free of rank \(n\) and let \(H \leq M\). Then
-\(H\) is free of rank at most \(n\), so suppose
-\(\operatorname{rank}_{\mathbb{Z}}H = n\). Suppose that
+Let \(M \in {\mathbb{Z}{\hbox{-}}\mathsf{Mod}}\) be free of rank \(n\)
+and let \(H \leq M\). Then \(H\) is free of rank at most \(n\), so
+suppose \(\operatorname{rank}_{\mathbb{Z}}H = n\). Suppose that
 \(\omega_1, \cdots, \omega_n\) is a \({\mathbb{Z}}{\hbox{-}}\)basis for
 \(M\) and \(\theta_1, \cdots, \theta_n\) a
 \({\mathbb{Z}}{\hbox{-}}\)basis for \(H\). We can thus write
@@ -5705,10 +5713,11 @@ for some \(A \in \operatorname{Mat}(n\times n, {\mathbb{Z}})\). Then
 
 \begin{proof}[Sketch]
 
-Idea: convert this problem about an arbitrary \(M \in \zmod\) to a
-problem about \({\mathbb{Z}}^n\). We know \(M \cong {\mathbb{Z}}^n\),
-and if we send the \(\omega_i\) to the standard basis vectors, this
-identifies \(H \cong A {\mathbb{Z}}^n\). So
+Idea: convert this problem about an arbitrary
+\(M \in {\mathbb{Z}{\hbox{-}}\mathsf{Mod}}\) to a problem about
+\({\mathbb{Z}}^n\). We know \(M \cong {\mathbb{Z}}^n\), and if we send
+the \(\omega_i\) to the standard basis vectors, this identifies
+\(H \cong A {\mathbb{Z}}^n\). So
 \(M/H \cong {\mathbb{Z}}^n/A{\mathbb{Z}}^n\), and it's easy to see that
 \(\det A \neq 0\): if not, there would be a linear dependence among the
 \(\theta_j\). Using \emph{Smith normal form}, we can choose
@@ -5825,7 +5834,7 @@ express the \(\theta\) in terms of the \(\omega\):
 {\Delta}({ { \omega}_1, { \omega}_2, \cdots, { \omega}_{n}} ) \det(A)^2
 .\end{align*}
 We can view \({\left\lvert { \det(A) } \right\rvert}\) as the index of
-the subgroup generated by the \(\theta_\) in the group generated by the
+the subgroup generated by the \(\theta_i\) in the group generated by the
 \(\omega_i\), so
 \begin{align*}
 {\left\lvert { \det(A) } \right\rvert} = [ {\mathbb{Z}}_K : H], && H\coloneqq{\operatorname{span}}_{\mathbb{Z}}\left\{{ \theta_i }\right\}
@@ -5950,7 +5959,11 @@ fields exhibit new behavior when compared to quadratic number fields!
 
 \end{remark}
 
+\begin{remark}
+
 Next time: integral bases for cyclotomic fields.
+
+\end{remark}
 
 \hypertarget{saturday-march-13-1}{%
 \section{Saturday, March 13}\label{saturday-march-13-1}}
@@ -6095,7 +6108,7 @@ Recall some facts about the discriminant: let \(F\) be a field and
 \(f(x) = \prod_{i=1}^n (x - \alpha_i)\) over some splitting field. We
 then define
 \begin{align*}
-{\Delta}(f) \coloneqq\prod_{i<j} ( \alpha_j - \alpha_i)^2
+{\Delta}(f) \coloneqq\prod_{i < j} ( \alpha_j - \alpha_i )^2
 .\end{align*}
 We won't discuss the theory, but we'll use a few facts.
 
@@ -6140,10 +6153,10 @@ Some consequences:
 
 \end{fact}
 
-\begin{proof}[That $\ZZ_K = \ZZ[ \zeta_p]$ for $K = \QQ(\zeta_p)$]
+\begin{proof}[That $\ZZ_K = \ZZ\adjoin{\zeta_p}$ for $K = \QQ(\zeta_p)$.]
 
 To save space, we'll write \(\zeta \coloneqq\zeta_p\). We want to show
-\(\1, \zeta, \cdots, \zeta^{p-2}\) forms an integral basis, from last
+\(1, \zeta, \cdots, \zeta^{p-2}\) forms an integral basis, from last
 time we have
 \begin{align*}
 {\Delta}( 1, \zeta, \cdots, \zeta^{p-2}) = 
@@ -6389,6 +6402,524 @@ We now want to establish the cancellation law in
 lemma, and then everything else will follow as in the quadratic case.
 
 \end{remark}
+
+\hypertarget{tuesday-march-30}{%
+\section{Tuesday, March 30}\label{tuesday-march-30}}
+
+\hypertarget{chapter-15-continued}{%
+\subsection{Chapter 15 (continued)}\label{chapter-15-continued}}
+
+\begin{remark}
+
+We want to develop theorems of ideal theory for \({\mathbb{Z}}_K\) for
+\(K\) a general number field, i.e.~factorization into prime ideals and
+the finiteness of the class group. The strategy:
+
+\begin{itemize}
+\tightlist
+\item
+  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) is a finite monoid,
+\item
+  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) has inverses and is thus a
+  group, i.e.~every nonzero ideal can be multiplied by another ideal to
+  become principal (principal multiple lemma),
+\item
+  Run proofs/corollaries as before.
+\end{itemize}
+
+Last time, we proved the first one.
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Let \(I, J \in \operatorname{Id}({\mathbb{Z}}_K)\), then if \(IJ = J\)
+then \(I = \left\langle{ 1 }\right\rangle\).
+
+\end{lemma}
+
+\begin{remark}
+
+Note that this is a special case of cancellation. To prove this, we'll
+use that \({\mathbb{Z}}_K\) is Noetherian, i.e.~every ideal is finitely
+generated as a \({\mathbb{Z}}_K{\hbox{-}}\)module. In fact,
+\({\mathbb{Z}}_K \cong {\mathbb{Z}}^n\), so any ideal is free of rank
+\(\leq n\) as a \({\mathbb{Z}}{\hbox{-}}\)module, hence finitely
+generated as a \({\mathbb{Z}}{\hbox{-}}\)module, hence
+finitely-generated as a \({\mathbb{Z}}_K{\hbox{-}}\)module since one can
+use the same generators.
+
+\end{remark}
+
+\begin{proof}[?]
+
+Let \(J = \left\langle{ \beta_1, \cdots, \beta_n }\right\rangle\), then
+since \(IJ = J\), for every \(j\) we can write
+\(\beta_j = \sum_{i=1}^m A_{ij} \beta_i\). This means that there is some
+matrix \(A\in \operatorname{Mat}(m\times m, I)\) with entries
+\(A_{ij} \in I\) such that
+\begin{align*}
+{\left[ {\beta_1, \cdots, \beta_m} \right]}
+=
+{\left[ {\beta_1, \cdots, \beta_m} \right]}A
+.\end{align*}
+Then \(A-\one \mathbf{\beta} = 0\), making \(A-\one\) singular since not
+all of the \(\beta_i\) were zero since they were generators of a nonzero
+ideal. Now take the determinant mod \(I\), which yields
+\begin{align*}
+0 \equiv \det(A-\one) \equiv \det(-\one) \equiv \pm 1\pmod I
+,\end{align*}
+but this can only occur if \(1\in I\), making
+\(\left\langle{ 1 }\right\rangle= I\).
+
+\end{proof}
+
+\begin{lemma}[?]
+
+Let \(I, J{~\trianglelefteq~}{\mathbb{Z}}_K\), then if \(IJ = \beta J\)
+with \(\beta \in {\mathbb{Z}}_K \setminus\left\{{0}\right\}\), we have
+\(I = \left\langle{ \beta }\right\rangle\).
+
+\end{lemma}
+
+\begin{remark}
+
+Note that the previous lemma is a special case of this where
+\(\beta = 1\). One can then bootstrap the previous lemma to get this,
+see the book.
+
+\end{remark}
+
+\begin{lemma}[Principal Multiple Lemma]
+
+For all \(I\in \operatorname{Id}({\mathbb{Z}}_K)\) there is a
+\(J \in \operatorname{Id}({\mathbb{Z}}_K)\) such that \(IJ\) is
+principal.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Consider \([I], [I]^2, \cdots \in \operatorname{Cl}({\mathbb{Z}}_K)\).
+By the pigeonhole principal, there is some \(k, \ell\) such that
+\([I^k] = [I]^\ell\), so \(I^k = \lambda I^\ell\) for some
+\(\lambda \in K^{\times}\). Note that any nonzero element of \(K\) can
+be written as \(k/n\) for \(k\in K\) and \(n\in {\mathbb{Z}}_K\). So we
+can scale \(\lambda\) to put it in \({\mathbb{Z}}_K\), yielding
+\(\lambda = \alpha/m\) where \(\alpha\in {\mathbb{Z}}_K\) and
+\(m\in {\mathbb{Z}}^{\times}\). We then have
+\begin{align*}
+mI^k = \alpha I^\ell = (\alpha I^{\ell-k})I^k
+.\end{align*}
+We have enough to cancel the \(I^k\), and so
+\(\left\langle{ m }\right\rangle= \alpha I^{\ell - k}\). Dilating both
+sides by \(\alpha^{-1}\) yields
+\(\left\langle{ m/\alpha }\right\rangle = I^{\ell-k}\). But this is a
+power of \(I\) that is principal, so we can take
+\(J \coloneqq I^{\ell-k-1}\).
+
+\end{proof}
+
+\begin{remark}
+
+Note that the logical order in which these theorems are proved is
+slightly reversed.
+
+\end{remark}
+
+\begin{corollary}[?]
+
+\envlist
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(\operatorname{Cl}({\mathbb{Z}}_K)\) is a group, and thus a finite
+  abelian group.
+\item
+  \(\operatorname{Id}({\mathbb{Z}}_K)\) is cancellative. Just show one
+  can cancel principal ideals (by dilation), and then in general you
+  cancel by multiplying both sides principal and cancelling that
+  principal ideal.
+\end{enumerate}
+
+To show unique factorization, we before showed factorization into
+irreducibles first, then uniqueness as a consequence of Euclid's lemma.
+
+\end{corollary}
+
+\begin{lemma}[?]
+
+\(\operatorname{Id}({\mathbb{Z}}_K)\) is atomic, i.e.~every element
+factors into irreducibles.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+We'll proceed by induction on \(N(I)\), using that \(N(AB) \leq N(A)\)
+for any \(A\) and so \(I\mathrel{\Big|}J \implies N(I) < N(J)\). Before
+we used that \(N(AB) = N(A) N(B)\), but we haven't proved that here yet.
+We also don't know that ``to divide is to contain'' here, but since
+\(I\mathrel{\Big|}J\) and \(I\neq J\), we do obtain \(J \subsetneq I\).
+Hence there is a surjection
+\begin{align*}
+{\mathbb{Z}}_K/J \to {\mathbb{Z}}_K/I
+.\end{align*}
+This has nontrivial kernel since \(I\setminus J \neq \emptyset\), so
+\({\left\lvert {{\mathbb{Z}}_K/J} \right\rvert}> {\left\lvert {{\mathbb{Z}}_K/I} \right\rvert}\).
+
+\end{proof}
+
+\begin{lemma}[Analog of Euclid's Lemma]
+
+Irreducibles in \(\operatorname{Id}({\mathbb{Z}}_K)\) are prime.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Same as before! Literally use the exact same words, we've set it up this
+way.
+
+\end{proof}
+
+\begin{theorem}[?]
+
+\(\operatorname{Id}({\mathbb{Z}}_K)\) is a UFM, or equivalently every
+nonzero ideal factors uniquely as a product of prime ideals.
+
+\end{theorem}
+
+\hypertarget{modern-approach}{%
+\subsection{Modern Approach}\label{modern-approach}}
+
+\begin{remark}
+
+What is the widest class of domains for which the previous theorem
+holds?
+
+\end{remark}
+
+\begin{definition}[?]
+
+Let \(R\) be a domain that is not a field (since ideals in fields are
+uninteresting). Then \(R\) is a \textbf{Dedekind domain} if and only if
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(R\) is Noetherian,
+\item
+  \(R\) is integrally closed, so if \(K = \operatorname{ff}(R)\), then
+  if \(\alpha\in K\) is a root of a monic polynomial in \(R[x]\) we have
+  \(\alpha\in R\).\footnote{Compare to the classical rational root
+    theorem.}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Every nonzero prime ideal is maximal.
+\end{enumerate}
+
+\end{definition}
+
+\begin{theorem}[Noether]
+
+TFAE:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(R\) is a Dedekind domain,
+\item
+  Every nonzero ideal of \(R\) factors into prime ideals (not
+  necessarily uniquely).
+\item
+  \begin{enumerate}
+  \def\labelenumii{(\arabic{enumii})}
+  \setcounter{enumii}{1}
+  \tightlist
+  \item
+    along with uniqueness.
+  \end{enumerate}
+\end{enumerate}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Omitted, this is an exercise in commutative algebra.
+
+\end{proof}
+
+\begin{proposition}[?]
+
+For any number field \(K\), \({\mathbb{Z}}_K\) is a Dedekind domain.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+We can check the definitions directly:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  This is a consequence of the integral basis theorem.
+\item
+  Suppose \(\alpha \in K\) and is a root of a monic polynomial in
+  \({\mathbb{Z}}_K[x]\), we then want to show
+  \(\alpha\in {\mathbb{Z}}_K\). Then \(\alpha\) is a root of a monic
+  polynomial in
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu[x]\),
+  and by a previous proof, any monic polynomial with
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+  coefficients is itself in
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+  Since \(\alpha \in K\) as well, we have
+  \(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}_K\mkern-1.5mu}\mkern 1.5mu \cap K \coloneqq{\mathbb{Z}}_K\).
+\item
+  Let \(P {~\trianglelefteq~}{\mathbb{Z}}_K\) be nonzero. Then
+  \({\mathbb{Z}}_K/P\) is a domain, but any finite integral domain is a
+  field and we know this is finite since \(N(P) < \infty\).
+\end{enumerate}
+
+\end{proof}
+
+\hypertarget{norms-revisited}{%
+\subsection{Norms Revisited}\label{norms-revisited}}
+
+\begin{remark}
+
+We left one theorem hanging when we discussed norms. We proved that
+norms of ideals are finite, and \(N(P)\) for \(P\) principal is equal to
+\(N(a)\) for \(a\) any generator. We haven't yet proved the following:
+
+\end{remark}
+
+\begin{theorem}[?]
+
+\begin{align*}
+N(IJ) = N(I) N(J) && \forall I, J \in \operatorname{Id}({\mathbb{Z}}_K)
+.\end{align*}
+
+\end{theorem}
+
+\begin{remark}
+
+If \(I, J\in \operatorname{Id}({\mathbb{Z}}_K)\), we have
+\(\gcd(I, J) = I+J\), since this is the smallest ideal such that any
+\(P\mathrel{\Big|}I, P\mathrel{\Big|}J\) must satisfy
+\(P\mathrel{\Big|}\gcd(I, J)\).
+
+\end{remark}
+
+\begin{proof}[?]
+
+It's enough to show \(N(IP) = N(I) N(P)\) for \(P\) prime, since every
+\(J\) factors into primes and we can apply this result recursively. Now
+\begin{align*}
+N(IP) 
+&= [{\mathbb{Z}}_K, IP] \\
+&= [{\mathbb{Z}}_K: I] [I : IP] \\
+&= N(I) [I: IP]
+,\end{align*}
+so it suffices to show \(N(P) = [I: IP]\).
+
+\begin{claim}
+
+This is true because \({\mathbb{Z}}_K \cong I/IP\) are isomorphic as
+\({\mathbb{Z}}{\hbox{-}}\)modules.
+
+\end{claim}
+
+Choose \(\beta \in I\setminus IP\), using that \(I\) \emph{properly}
+divides \(IP\) when it is properly contained. Define a map
+\begin{align*}
+\psi: {\mathbb{Z}}_K/p &\to I/IP \\
+\alpha \pmod p  &\mapsto \alpha \beta \pmod IP
+.\end{align*}
+This is well-defined since for any two elements which differ by a
+multiple of \(P\), multiplying by \(\beta \in I\) lands in \(IP\).
+
+\begin{exercise}[?]
+
+Check that this is a well-defined group morphism.
+
+\end{exercise}
+
+\textbf{Injectivity}: Suppose that \(\alpha\pmod P \in \ker \psi\), so
+\(\alpha \beta\in IP\) and
+\(IP \mathrel{\Big|}\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle\).
+Note that without the \(\alpha\) this would be false, so we're
+critically using that \(\beta\) is in \(I\) but not \(IP\):
+\(IP\not\mathrel{\Big|}\left\langle{ \beta }\right\rangle\) since
+\(\beta \not\in IP\). So \(IP\) divides this product but not \(\beta\)
+while \(I\) \emph{does} divide \(\beta\), this forces
+\(P\mathrel{\Big|}m \left\langle{ \alpha }\right\rangle\). Then
+\(\alpha\in P\) and \(\alpha\pmod P = 0\), so \(\ker \psi = 0\).
+
+\textbf{Surjectivity:} We might want to write
+\(\Im(\psi) = \left\langle{ \beta }\right\rangle / IP\), but this
+doesn't quite make sense since \(IP\) may not be a subgroup. This can be
+fixed,
+\(\operatorname{im}\psi = ( \left\langle{ \beta }\right\rangle + IP) / IP\).
+But this equals \(\gcd( \left\langle{ \beta }\right\rangle, IP ) / IP\),
+and this numerator is \(I\) since \(\beta\in I\) and
+\(\beta\not\in IP\). So we have
+\begin{align*}
+\operatorname{im}(\psi) 
+&= {\left\langle{ \beta }\right\rangle + IP \over  IP } \\
+&= { \gcd( \left\langle{ \beta }\right\rangle, IP ) \over IP } \\
+&= I/IP
+.\end{align*}
+
+\end{proof}
+
+\begin{remark}
+
+For quadratic fields, we could compute ideal norms by multiplying an
+ideal \(I\) by its conjugate
+\(\mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu\) to get
+a principal ideal generated by \(N(I)\). Here we don't know what
+conjugates mean yet for a general number field -- one could try applying
+all of the embeddings into \({\mathbb{C}}\) and taking a product, but
+this may not yield an ideal in the same ring again. In particular, if
+\(K\) isn't Galois, the embedding can land outside of \(K\) in
+\({\mathbb{C}}\).
+
+\end{remark}
+
+\begin{definition}[Extending Ideals]
+
+For \(R \subseteq S\) and \(I{~\trianglelefteq~}R\), define \(IS\) to be
+the smallest ideal of \(S\) containing \(I\) (i.e.~take all
+intersections), or equivalently take all finite \(S{\hbox{-}}\)linear
+combinations of elements from \(I\).
+
+\end{definition}
+
+\begin{exercise}[?]
+
+Check that
+
+\begin{itemize}
+\tightlist
+\item
+  \((IJ)S = (IS)(JS)\),
+\item
+  \((\alpha R)S = \alpha S\).
+\end{itemize}
+
+\end{exercise}
+
+\begin{theorem}[?]
+
+Let \(I\in \operatorname{Id}({\mathbb{Z}}_K)\) and let \(L\) be the
+Galois closure of \(K/{\mathbb{Q}}\). For each
+\(\sigma: K\hookrightarrow{\mathbb{C}}\), the image \(\sigma(I)\) is an
+ideal of \({\mathbb{Z}}_{\sigma(K)} \subseteq {\mathbb{Z}}_L\). Then
+\begin{align*}
+\prod_{\sigma: K\hookrightarrow{\mathbb{C}}} \sigma(I) {\mathbb{Z}}_L = N(I) {\mathbb{Z}}_L
+.\end{align*}
+
+\end{theorem}
+
+\begin{remark}
+
+This shows why the norm is multiplicative, and why
+\(N( \left\langle{ \alpha }\right\rangle) = |N( \alpha ) |\).
+
+\end{remark}
+
+\hypertarget{applications-of-finiteness-of-class-group}{%
+\subsection{Applications of Finiteness of Class
+Group}\label{applications-of-finiteness-of-class-group}}
+
+\begin{question}
+
+Where do ideals come from?
+
+\end{question}
+
+\begin{remark}
+
+They're meant to generalize multiples of an integer in \({\mathbb{Z}}\),
+but not all ideals in a general number field are principal. However,
+there is a way in which this is true for \({\mathbb{Z}}_K\) even when
+it's not a PID.
+
+\end{remark}
+
+\begin{theorem}[Dedekind's theorem on the actuality of ideals]
+
+Let \(K\) be a number field and
+\(I{~\trianglelefteq~}\operatorname{Id}({\mathbb{Z}}_K)\). Then there is
+a
+\(\beta\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+such that
+\(I = \beta \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu \cap K\),
+or equivalently
+\(I = \beta \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu \cap{\mathbb{Z}}_K\).
+
+\end{theorem}
+
+\begin{remark}
+
+Example of a non-principal ideal: in \({\mathbb{Z}}[\sqrt{-5}]\), the
+ideal \(I \coloneqq\left\langle{ 2, 1 + \sqrt{-5} }\right\rangle\) is
+not principal, i.e.~not all such elements are given by multiples of some
+element in \({\mathbb{Z}}[ \sqrt{-5} ]\). It turns out that instead this
+is all multiples (in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu)\)
+of \(\sqrt{2}\). So anything that's a multiple of \(\sqrt{2}\)
+\emph{and} an algebraic integer that's in \({\mathbb{Z}}[\sqrt{-5}]\)
+will be in \(I\) and vice-versa. So ideals are multiples of a single
+element, provided you allow that element to be outside of
+\({\mathbb{Z}}_K\) and in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+instead.
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Let \(K\) be a number field and
+\(I\in \operatorname{Id}({\mathbb{Z}}_K)\). Then there is a finite
+extension \(L/K\) in which \(I{\mathbb{Z}}_L\) is principal. So any
+ideal can be made principal after passing to some finite extension.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Let \(m \coloneqq\# \operatorname{Cl}({\mathbb{Z}}_K)\). Then
+\(I^m = \alpha{\mathbb{Z}}_K\) is principal since \(m\) is the order of
+this group. Let \(\beta\coloneqq\sqrt[m]{\alpha} \in {\mathbb{C}}\) and
+let \(L \coloneqq K( \beta)\). Here \(\beta\) is an algebraic integer
+since it's an \(m\)th root of an algebraic integer. The claim is that
+\(I{\mathbb{Z}}_L\) is principal. We have
+\begin{align*}
+(I {\mathbb{Z}}_L)^m
+&= I^m {\mathbb{Z}}_L \\
+&= ( \alpha{\mathbb{Z}}_K) {\mathbb{Z}}_L \\
+&= \alpha{\mathbb{Z}}_L \\
+&= \beta^m {\mathbb{Z}}_L \\
+&= (\beta {\mathbb{Z}}_L)^m
+.\end{align*}
+But how can two ideals have the same \(m\)th power? By unique
+factorization, they must be the same, so
+\(I{\mathbb{Z}}_L = \beta {\mathbb{Z}}_L\).
+
+\begin{quote}
+To be continued.
+\end{quote}
+
+\end{proof}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
