@@ -6200,6 +6200,411 @@ Note that we can identify the functors
 whose derived functors are group homology/cohomology. The idea will be that \( G{\hbox{-}} \)invariants can be written as a composition of other functors, and we can apply the Grothendieck spectral sequence construction.
 :::
 
+# Friday, April 02
+
+## Review: The Lyndon-Hochschild-Serre Spectral Sequence
+
+::: {.remark}
+We're trying to prove the Lyndon-Hochschild-Serre spectral sequence for \( H{~\trianglelefteq~}G \).
+:::
+
+::: {.lemma title="?"}
+Let \( H{~\trianglelefteq~}G \) and \( A\in\mathsf{G}{\hbox{-}}\mathsf{Mod} \) with
+\[
+\rho: G\to { G \over H}
+.\]
+Then \( A_H, A^H \) are in \( \mathsf{{G \over H}}{\hbox{-}}\mathsf{Mod} \) and \( ({\,\cdot\,})^H \) (respectively \( ({\,\cdot\,})_H \)) are right (respectively left) adjoin to
+\[
+\phi^\#: \mathsf{G \over H}{\hbox{-}}\mathsf{Mod} \to \mathsf{G}{\hbox{-}}\mathsf{Mod}
+.\]
+:::
+
+::: {.theorem title="Lyndon-Hochschild-Serre Spectral Sequence"}
+Let \( H{~\trianglelefteq~}G \) and \( A\in {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \), then there exist two \( Q1 \) spectral sequences:
+\[
+E_{p, q}^2 &= H_p\qty{ {G \over H}, H_q(H;A)} \Rightarrow H_{p+q}(G; A) \\
+E^{p, q}_2 &= H^p\qty{ { G \over H}, H_q(H;A)} \Rightarrow H^{p+q}(G; A) 
+.\]
+:::
+
+::: {.proof title="?"}
+We want to write this as a composition of functors:
+
+```{=tex}
+\begin{tikzcd}
+    {{\mathsf{G}{\hbox{-}}\mathsf{Mod}}} && {{\mathsf{G/H}{\hbox{-}}\mathsf{Mod}}} && {} \\
+    \\
+    && {\mathsf{Ab}}
+    \arrow["{({\,\cdot\,})^H}", from=1-1, to=1-3]
+    \arrow["{({\,\cdot\,})^{G\over H}}", from=1-3, to=3-3]
+    \arrow["{({\,\cdot\,})^G}"', dashed, from=1-1, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXG1vZHN7R30iXSxbMiwwLCJcXG1vZHN7Ry9IfSJdLFsyLDIsIlxcQWIiXSxbNCwwXSxbMCwxLCIoXFx3YWl0KV5IIl0sWzEsMiwiKFxcd2FpdClee0dcXG92ZXIgSH0iXSxbMCwyLCIoXFx3YWl0KV5HIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
+
+We can write
+\[
+(A^H)^{G/H} 
+&= \left\{{ a\in A {~\mathrel{\Big|}~}ha = a \forall h\in H }\right\} \\
+&= \left\{{ a\in A^H {~\mathrel{\Big|}~}\mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu a =a \forall \mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu\in G/H}\right\} \\
+&= \left\{{ a\in A {~\mathrel{\Big|}~}\alpha= a \forall g\in G }\right\} \\
+&= A^G
+.\]
+
+By the lemma, \( ({\,\cdot\,})^H \) is right adjoint to \( \rho^{\#} \), which is exact. By prop 2.3.10, it sends injectives to injectives, and injectives are \( F{\hbox{-}} \)acyclic for \( F({\,\cdot\,}) = ({\,\cdot\,})^{G \over H} \). So this is a valid setup for the Grothendieck spectral sequence.
+:::
+
+## Application: Bootstrapping Homology of Cyclic Groups
+
+::: {.example title="?"}
+Let \( C_m \) be cyclic of order \( m \), and suppose we have the results from section 6.2:
+
+1.  If \( m \) is odd,
+    \[
+    H_q(C_m; {\mathbb{Z}}) = 
+    \begin{cases}
+    {\mathbb{Z}}& q=0 
+    \\
+    {\mathbb{Z}}/m & q \text{ odd} \\
+    0 & q\text{ even}.
+    \end{cases}
+    \]
+
+2.  If \( H\leq Z(G) \) and \( A \) is a trivial \( G{\hbox{-}} \)module, then \( G/H \curvearrowright H_*(H; A) \) trivially as well. [^8]
+
+3.  If \( A \) is a trivial \( C_2{\hbox{-}} \)module and let \( \times 2:A\to A \) be multiplication, then
+    \[
+    H_p(C_2; A)
+    =
+    \begin{cases}
+    A & p = 0 
+    \\
+    \operatorname{coker}(\times 2) = A/2A & p \text{ odd}
+    \\
+    \ker(\times s) = \left\{{ a\in A {~\mathrel{\Big|}~}2a = 0 }\right\} & p \text{ even}.
+    \end{cases}
+    \]
+    Note that the previous fact was a special case of multiplication by \( m \).
+
+Using the SES
+\[
+0 \to C_m \to C_{2m} \to C_2 \to 0
+,\]
+we can use the LHS spectral sequence to compute
+\[
+E_{p, q}^2 = H_p( C_2; H_q(C_m; {\mathbb{Z}})) \Rightarrow H_{p+q}(C_{2m}; {\mathbb{Z}})
+.\]
+Let \( A = H_q(C_m; {\mathbb{Z}}) \), then by fact (2) we'll get a trivial \( C_2{\hbox{-}} \)module, and we can then use fact (3).
+
+-   For \( q=0 \) we have
+    \[
+    E_{p, 0}^2 
+    &= H_p(C_2; {\mathbb{Z}}) \\
+    &=
+    \begin{cases}
+    {\mathbb{Z}}& p=0 
+    \\
+    {\mathbb{Z}}/2 & p \text{ odd}
+    \\
+    0 & p \text{ even}
+    \end{cases}
+    && \text{by (3)}
+    .\]
+
+-   For \( p=0 \) we have
+    \[
+    E_{0, q}^2
+    &= H_q(C_m; {\mathbb{Z}}) \\
+    &=
+    \begin{cases}
+    {\mathbb{Z}}& p=0 
+    \\
+    {\mathbb{Z}}/m & p \text{ odd}
+    \\
+    0 & p \text{ even}.
+    \end{cases}
+    \]
+
+-   For \( q>0 \) odd and \( p>0 \) odd, note that \( {\mathbb{Z}}/m \xrightarrow{\times 2} {\mathbb{Z}}/m \) is a bijection for odd \( m \), so
+    \[
+    E_{p, q}^2 = H_p(C_2; {\mathbb{Z}}/m) = 0 && \text{since } { {\mathbb{Z}}/m \over 2{\mathbb{Z}}/m} = 0
+    .\]
+
+-   For \( q>0 \) odd and \( p>0 \) even,
+    \[
+    E_{p, q}^2 = H_p(C_2; {\mathbb{Z}}/m) = 0 
+    .\]
+
+-   For \( q>0 \) even and \( p>0 \),
+    \[
+    H_q(C_m; {\mathbb{Z}}) = 0 \implies E_{p, q}^2 = 0
+    .\]
+
+Thus the \( E_2 \) page of the LHS spectral sequence looks like the following, where there is only one possible nontrivial differential which is forced to be zero:
+
+```{=tex}
+\begin{tikzcd}
+    q \\
+    & \bullet \\
+    && \vdots \\
+    5 && {{\mathbb{Z}}/m} & \bullet &&&&&& {E_2} \\
+    4 && \bullet & \bullet & \bullet \\
+    3 && {{\mathbb{Z}}/m} & \bullet & \bullet & \bullet \\
+    2 && \bullet & \bullet & \bullet & \bullet & \bullet \\
+    1 && {{\mathbb{Z}}/m} & \bullet & \bullet & \bullet & \bullet & \bullet \\
+    0 && {\mathbb{Z}}& {{\mathbb{Z}}/2} & \bullet & {{\mathbb{Z}}/2} & \bullet & {{\mathbb{Z}}/2} & \bullet & \cdots \\
+    \bullet &&&&&&&&&&& \bullet \\
+    & \bullet & 0 & 1 & 2 & 3 & 4 & 5 &&&& p
+    \arrow[dashed, no head, from=10-1, to=10-12]
+    \arrow["{d=0}"', color={rgb,255:red,92;green,92;blue,214}, from=9-5, to=8-3]
+    \arrow[dashed, no head, from=2-2, to=11-2]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNDgsWzEsMTAsIlxcYnVsbGV0Il0sWzAsOSwiXFxidWxsZXQiXSxbMTEsOSwiXFxidWxsZXQiXSxbMiwxMCwiMCJdLFszLDEwLCIxIl0sWzQsMTAsIjIiXSxbNSwxMCwiMyJdLFs2LDEwLCI0Il0sWzcsMTAsIjUiXSxbMTEsMTAsInAiXSxbMCw4LCIwIl0sWzAsNywiMSJdLFswLDYsIjIiXSxbMCw1LCIzIl0sWzAsNCwiNCJdLFswLDMsIjUiXSxbMCwwLCJxIl0sWzIsOCwiXFxaWiJdLFszLDgsIlxcWlovMiJdLFs0LDgsIlxcYnVsbGV0Il0sWzUsOCwiXFxaWi8yIl0sWzcsOCwiXFxaWi8yIl0sWzYsOCwiXFxidWxsZXQiXSxbMiw3LCJcXFpaL20iXSxbMiw1LCJcXFpaL20iXSxbMiwzLCJcXFpaL20iXSxbOSwzLCJFXzIiXSxbNCw3LCJcXGJ1bGxldCJdLFs1LDcsIlxcYnVsbGV0Il0sWzYsNywiXFxidWxsZXQiXSxbNyw3LCJcXGJ1bGxldCJdLFszLDcsIlxcYnVsbGV0Il0sWzMsNiwiXFxidWxsZXQiXSxbMiw2LCJcXGJ1bGxldCJdLFszLDUsIlxcYnVsbGV0Il0sWzIsNCwiXFxidWxsZXQiXSxbMyw0LCJcXGJ1bGxldCJdLFs0LDYsIlxcYnVsbGV0Il0sWzQsNSwiXFxidWxsZXQiXSxbNSw2LCJcXGJ1bGxldCJdLFs2LDYsIlxcYnVsbGV0Il0sWzUsNSwiXFxidWxsZXQiXSxbNCw0LCJcXGJ1bGxldCJdLFszLDMsIlxcYnVsbGV0Il0sWzgsOCwiXFxidWxsZXQiXSxbOSw4LCJcXGNkb3RzIl0sWzIsMiwiXFx2ZG90cyJdLFsxLDEsIlxcYnVsbGV0Il0sWzEsMiwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTksMjMsImQ9MCIsMix7ImNvbG91ciI6WzI0MCw2MCw2MF19LFsyNDAsNjAsNjAsMV1dLFs0NywwLCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+Note that each diagonal only has (at most) two nonzero terms along the axes, and so we'll get a 2-term filtration. Recall that in general we get \( \left\{{ F_i H_n }\right\}_{i=1}^n \) where \( F_{\leq -1} H_n =0 \) and \( F_{\geq n}H_n = H_n \). Here \( E_{0, n}^{\infty } \) comes from \( F_{-1}, F_0 \) and \( E_{n, 0}^{\infty } \) comes from \( F_{n-1}, F_n \). So we have
+\[
+H_0(C_{2m}; {\mathbb{Z}}) &= {\mathbb{Z}}\\
+H_n(C_{2m}; {\mathbb{Z}}) &= 0 \text{ for $n$ even}
+.\]
+For \( n \) odd, we get a SES
+\[
+0 \to {\mathbb{Z}}/m \to H_n(C_{2m}; {\mathbb{Z}}) \to {\mathbb{Z}}/2 \to 0
+.\]
+Letting \( B\in {\mathsf{Ab}} \) be the middle term, its order is \( 2m \), the product of the two outer elements. By Cauchy's theorem, since \( 2\mathrel{\Big|}\# B \), there is an element \( y\in B \) of order 2. So send the generator of \( {\mathbb{Z}}/2 \) to \( y \) to form the splitting. Thus
+\[
+B\cong {\mathbb{Z}}/m \oplus {\mathbb{Z}}/2 \cong {\mathbb{Z}}/m \times {\mathbb{Z}}/2 \cong {\mathbb{Z}}/2m
+,\]
+where we've now used the \( \gcd(2, m) = 1 \). So
+\[
+H_n(C_{2m}; {\mathbb{Z}}) 
+=
+\begin{cases}
+{\mathbb{Z}}&  n=0
+\\
+{\mathbb{Z}}/2m & n\text{ even} 
+\\
+0 & n \text{ odd}.
+\end{cases}
+\]
+:::
+
+::: {.question}
+Can you get the group homology of any cyclic group this way? Similar formulas likely hold, see section 6.2.
+:::
+
+## Restriction and Inflation
+
+::: {.remark}
+The exact sequence of low degree terms in the cohomological LHS spectral sequence are of the form
+
+```{=tex}
+\begin{tikzcd}
+    0 && {H^1(G/H; A^H)} && {H^1(G; A)} && {H^1(H; A)} \\
+    \\
+    && {H^2(G/H; A^H)} && {H^2(G; A)}
+    \arrow[from=1-1, to=1-3]
+    \arrow["{\text{inflation}}", from=1-3, to=1-5]
+    \arrow["{\text{restriction}}", from=1-5, to=1-7]
+    \arrow["{d_2}"', from=1-7, to=3-3, out=0, in=180]
+    \arrow["{\text{inflation}}", from=3-3, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCIwIl0sWzIsMCwiSF4xKEcvSDsgQV5IKSJdLFs0LDAsIkheMShHOyBBKSJdLFs2LDAsIkheMShIOyBBKSJdLFsyLDIsIkheMihHL0g7IEFeSCkiXSxbNCwyLCJIXjIoRzsgQSkiXSxbMCwxXSxbMSwyLCJcXHRleHR7aW5mbGF0aW9ufSJdLFsyLDMsIlxcdGV4dHtyZXN0cmljdGlvbn0iXSxbMyw0LCJkXzIiLDJdLFs0LDUsIlxcdGV4dHtpbmZsYXRpb259Il1d)
+
+Note that these maps have particular name, **inflation** and **restriction**.
+:::
+
+::: {.remark}
+We thought of homology as a functor of the module \( A \), but here we see it's varying. Can this be thought of as a functor of the group instead?
+
+Setup: let \( \rho: H\to G \) be a group morphism, then recall that any \( G{\hbox{-}} \)module becomes an \( H{\hbox{-}} \)module by composition with \( \rho \), which yields an exact functor
+\[
+\rho^{\#}: {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{H}{\hbox{-}}\mathsf{Mod}}
+.\]
+
+Letting \( A\in{\mathsf{G}{\hbox{-}}\mathsf{Mod}} \), set
+
+-   \( T_n(A) \coloneqq H_n(G; A) \)
+-   \( T^n(A) \coloneqq H^n(G; A) \)
+-   \( S_n(A) \coloneqq H_n(G; \rho^{\#} A) \)
+-   \( S^n(A) \coloneqq H^n(G; \rho^{\#} A) \)
+:::
+
+# Monday, April 05
+
+## Restriction and Inflation
+
+::: {.definition title="Restriction and Corestriction"}
+Let \( \rho: H\to G \) be a group morphism, this induces an exact functor \( \rho^\sharp: {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{H}{\hbox{-}}\mathsf{Mod}} \). We define
+
+-   \( T_n(A) \coloneqq H_n(G; A) \)
+
+-   \( T^n(A) \coloneqq H^n(G; A) \)
+
+-   \( S_n(A) \coloneqq H_n(\rho^\sharp G; A) \)
+
+-   \( S^n(A) \coloneqq H^n(\rho^\sharp G; A) \)
+
+These are all functors \( {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}} \). As in section 2.1, \( H_n \) defines a homological \( \delta{\hbox{-}} \)functor, and since \( \rho^\sharp \) is exact, \( T_n, S_n \) are homological \( \delta{\hbox{-}} \)functors as well. We have a map
+\[
+A^G &\hookrightarrow(\rho^\sharp A)^H \\
+T^0 A&\to S^0 A
+.\]
+and similarly
+\[
+(\rho^\sharp A)_H &\to A_G\\
+S_0 A &\to T_0 A
+.\]
+These maps on the 0th terms extend to morphisms of \( \delta{\hbox{-}} \)functors.
+
+There thus exist two maps
+\[
+\operatorname{res}_H^G H^*(G; A) \to H^*(G; \rho^\sharp A) && \text{restriction} \\
+\operatorname{cores}_H^G H_*(G; \rho^\sharp A) \to H_*(G; A) && \text{corestriction}
+.\]
+:::
+
+::: {.remark}
+A special case is when \( H\leq G \) is a subgroup and \( \rho: H\hookrightarrow G \) is the inclusion. Then we define a capital \( \operatorname{Res} \) as
+\[
+\rho^\sharp = \operatorname{Res}_H^G: {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{H}{\hbox{-}}\mathsf{Mod}}
+,\]
+which is a restriction of the action to a subgroup and thus a type of forgetful functor.
+:::
+
+::: {.remark}
+Note that \( {\mathbb{Z}G} \) is a free \( {\mathbb{Z}}H{\hbox{-}} \)module with basis being any set of coset representatives, thus any projective \( G{\hbox{-}} \)module restricts to a projective \( H{\hbox{-}} \)module, using the characterization of projective modules as direct summands of free modules.
+:::
+
+::: {.remark}
+Recall that
+\[
+H_*(G; A) &\cong \operatorname{Tor}_*^{{\mathbb{Z}G}}({\mathbb{Z}}, A) \\
+H_*(G; A) &\cong \operatorname{Ext}_{{\mathbb{Z}G}}^*({\mathbb{Z}}, A)
+.\]
+We can compute both using a \( {\mathbb{Z}G}{\hbox{-}} \)projective resolution \( P_* \to {\mathbb{Z}} \). This is also a \( {\mathbb{Z}}H{\hbox{-}} \)projective resolution, so we can use this to compute \( H^*(H; {\,\cdot\,}) \) and \( H_*(H; {\,\cdot\,}) \) as well.
+:::
+
+::: {.fact}
+```{=tex}
+\envlist
+```
+1.  There's a natural chain map induced by the forgetful functor:
+    \[
+    \beta: {\operatorname{Hom}}_G(P_*, A) \to {\operatorname{Hom}}_H(P^*, A)
+    .\]
+
+2.  There is an induced map
+    \[
+    H^*(\beta): \operatorname{Ext}_G^*({\mathbb{Z}}, A) \to \operatorname{Ext}_H^*({\mathbb{Z}}, A)
+    ,\]
+    which is equal to the map
+    \[
+    \operatorname{res}_H^G: H^*(G; A) \to H^*(H; A)
+    ,\]
+    giving a way to calculate \( \operatorname{res} \) from something just coming from restriction of functions.
+
+3.  There is a chain map
+    \[
+    \alpha: P_* \otimes_{{\mathbb{Z}H}} A &\to P_* \otimes{{\mathbb{Z}H}} P_* \otimes_{{\mathbb{Z}G}} A \\
+    p\otimes a &\mapsto p\otimes a
+    ,\]
+    which induces
+    \[
+    H( \alpha): \operatorname{Tor}_*^H({\mathbb{Z}}, A) \to \operatorname{Tor}_*^G({\mathbb{Z}}, A)
+    \]
+    which is equal to
+    \[
+    \operatorname{cores}_H^G: H_*(H; A) \to H_*(G; A)
+    .\]
+    So this can be computed from tensor products.
+:::
+
+::: {.definition title="Inflation and Coinflation"}
+Now consider quotient groups instead: assume \( H{~\trianglelefteq~}G \) and let \( \rho:G\to G/H \). By precomposing with \( \rho \), we get a map \( \rho^\sharp: {\mathsf{G\over H}{\hbox{-}}\mathsf{Mod}}\to{\mathsf{G}{\hbox{-}}\mathsf{Mod}} \). Given a \( G{\hbox{-}} \)module, taking \( H \) invariants yields a \( G/H{\hbox{-}} \)module, so \( H^*(G/H; A^H) \in {\mathsf{G\over H}{\hbox{-}}\mathsf{Mod}} \). We form the following composition:
+
+```{=tex}
+\begin{tikzcd}
+    {H^*\qty{{G\over H}; A^H}} && {H^*(G; A^H)} &&&& {H^*(G; A)}
+    \arrow["{H^*(G; {\,\cdot\,})(A^H \hookrightarrow A)}", from=1-3, to=1-7]
+    \arrow["\operatorname{res}", from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJIXipcXHF0eXt7R1xcb3ZlciBIfTsgQV5IfSJdLFsyLDAsIkheKihHOyBBXkgpIl0sWzYsMCwiSF4qKEc7IEEpIl0sWzEsMiwiSF4qKEc7IFxcd2FpdCkoQV5IIFxcaW5qZWN0cyBBKSJdLFswLDEsIlxccmVzIl1d)
+
+We'll refer to this as **inflation**. We similarly define **coinflation** as the following composition:
+
+```{=tex}
+\begin{tikzcd}
+    {H_*(G; A)} &&& {H(G; A_H)} && {H_*\qty{{G\over H}, A_H}}
+    \arrow["\operatorname{cores}", from=1-4, to=1-6]
+    \arrow["{H_*(G; {\,\cdot\,})(A \twoheadrightarrow A_H)}", from=1-1, to=1-4]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJIXyooRzsgQSkiXSxbMywwLCJIKEc7IEFfSCkiXSxbNSwwLCJIXypcXHF0eXt7R1xcb3ZlciBIfSwgQV9IfSJdLFsxLDIsIlxcY29yZXMiXSxbMCwxLCJIXyooRzsgXFx3YWl0KShBIFxcc3VyamVjdHMgQV9IKSJdXQ==)
+:::
+
+::: {.remark}
+When \( *=0 \), we can write
+\[
+\operatorname{inf}: (A^H)^{G\over H} \to (A^H)^G \to A^G
+,\]
+and note that this is exactly the functor composition we needed to get the LHS spectral sequence. Similarly there is a LHS for homology, and an isomorphism
+\[
+\operatorname{coinf}: A_G \to (A_H)_G \to (A_H)_{G\over H}
+.\]
+:::
+
+::: {.remark}
+When \( A \in {\mathsf{H}{\hbox{-}}\mathsf{Mod}}^{\operatorname{Triv}} \), \( A_H\hookrightarrow A \) is the identity, so \( A^H = A = A_H \). In this case \( \operatorname{inf}= \operatorname{res} \) and \( \operatorname{coinf}= \operatorname{cores} \).
+:::
+
+::: {.remark}
+Back to the LHS spectral sequence, the five-term exact sequence yields
+\[
+0 \to E_{2}^{1, 0} \to H^1(T) \to E_2^{0, 1} \xrightarrow{d_2} E_{2, 0} \to H^2(T)
+,\]
+which we can identify as
+\[
+0\to H^1\qty{{G\over H}; A^H}
+\xrightarrow{\operatorname{inf}} 
+H^1(G; A)
+\xrightarrow{\operatorname{res}} 
+H^1(H; A)^{G\over H}
+\xrightarrow{d_2} 
+H^2\qty{ {G\over H}; A^H }
+\xrightarrow{\operatorname{inf}} 
+H^2(G; A)
+.\]
+There is a similar story in homology with coinflation and corestriction.
+:::
+
+## Shapiro's Lemma, Induced/Coinduced Modules
+
+::: {.definition title="Induced and Coinduced Modules"}
+Let \( H\leq G \) and \( B\in {\mathsf{{\mathbb{Z}}H}{\hbox{-}}\mathsf{Mod}} \). Define the **induced \( G{\hbox{-}} \)module** (or tensor-induced \( G{\hbox{-}} \)module)
+\[
+\operatorname{Ind}_H^G(B) \coloneqq{\mathbb{Z}G}\otimes_{{\mathbb{Z}H}} B \in {\mathsf{{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}}
+.\]
+This is a \( {\mathbb{Z}G}{\hbox{-}} \)module with an action on the first tensor factor. Similarly define the **coinduced** or **hom-induced \( G{\hbox{-}} \)module**.
+\[
+\operatorname{coInd}_H^G(B) \coloneqq{\operatorname{Hom}}_{H}({\mathbb{Z}G}, B) \in {\mathsf{{\mathbb{Z}}G}{\hbox{-}}\mathsf{Mod}}
+.\]
+Here the action is \( (g.f)(g') \coloneqq f(gg') \).
+:::
+
+::: {.lemma title="Shapiro's Lemma (Frobenius Reciprocity)"}
+\[
+H_*(G; \operatorname{Ind}_H^G B) &\cong H_*(H; B) &&(1) \\
+H^*(G; \operatorname{coInd}^G B) &\cong H^*(H; B) &&(2)
+.\]
+:::
+
+::: {.remark}
+So this provides a way of computing homology on subgroups when the coefficients are in these induced/coinduced modules.
+:::
+
 # Appendix: Extra Definitions
 
 ::: {.definition title="Acyclic"}
@@ -6489,3 +6894,5 @@ Let \( F: {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{{\mathbb{Z}}}{\hbox{-}
 [^6]: Recall that the squares would commute if we took the usual differentials, so we use a sign trick to get \( d^2=0 \).
 
 [^7]: See Weibel p. 41.
+
+[^8]: Note that this can be phrased in terms of the image of the functor lying in trivial modules.

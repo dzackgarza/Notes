@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-03-25 }
+{\tiny \textit{Last updated:} 2021-04-05 }
 \end{flushleft}
 
 
@@ -1222,7 +1222,7 @@ invertible.
 \begin{definition}[Index of a critical point]
 
 Given a nondegenerate critical point \(p\in M\), define the
-\textbf{index} \(\mathop{\mathrm{Ind}}(p)\) of \(f\) at \(p\) in the
+\textbf{index} \(\operatorname{ind}(p)\) of \(f\) at \(p\) in the
 following way: since \(H_p\) is symmetric and nondegenerate, its
 eigenvalues are real and nonzero, so define the index as the number of
 \emph{negative} eigenvalues of \(H_p\).
@@ -1248,7 +1248,7 @@ critical points and don't do anything interesting elsewhere.
 \begin{theorem}[Morse Lemma]
 
 Let \(p\in M\) be a nondegenerate critical point of \(f\) with
-\(\mathop{\mathrm{Ind}}(p) = \lambda\). Then there exists charts
+\(\operatorname{ind}(p) = \lambda\). Then there exists charts
 \(\varphi:(U, p) \to ({\mathbb{R}}^n, 0)\) such that writing \(f\) in
 local coordinates yields
 \begin{align*}
@@ -1299,9 +1299,9 @@ Consider \(S^2\) with a height function:
 \end{figure}
 
 Then we have a local minimum at the South pole \(p\) and a local max at
-the North pole \(q\), where \(\mathop{\mathrm{Ind}}(p) = 0\) and
-\(\mathop{\mathrm{Ind}}(q) = 2\). Note that the critical points
-essentially occur where the tangent space is horizontal
+the North pole \(q\), where \(\operatorname{ind}(p) = 0\) and
+\(\operatorname{ind}(q) = 2\). Note that the critical points essentially
+occur where the tangent space is horizontal
 
 \end{example}
 
@@ -1433,7 +1433,7 @@ which will be a diffeomorphism.
 \begin{theorem}[?]
 
 Suppose \(f ^{-1} ([a, b])\) contains exactly one critical point \(p\)
-with \(\mathop{\mathrm{Ind}}(p) = \lambda\) and \(f(p) = c\). Then
+with \(\operatorname{ind}(p) = \lambda\) and \(f(p) = c\). Then
 \begin{align*}
 M_b = M_a \cup_{{{\partial}}} \qty{ D^ \lambda \times D^{n - \lambda} }
 \end{align*}
@@ -1475,7 +1475,7 @@ W_f^u(p) \coloneqq\left\{{p}\right\} \cup\left\{{
 
 \begin{lemma}[?]
 
-If \(\mathop{\mathrm{Ind}}(p) = \lambda\) then
+If \(\operatorname{ind}(p) = \lambda\) then
 \(W_f^u(p) \cong {\mathbb{R}}^ \lambda\).
 
 \end{lemma}
@@ -1512,7 +1512,7 @@ W_f^s(p) \coloneqq\left\{{p}\right\} \cup\left\{{
 
 \begin{lemma}[?]
 
-If \(\mathop{\mathrm{Ind}}(p) = \lambda\) then
+If \(\operatorname{ind}(p) = \lambda\) then
 \(W_f^s(p) \cong {\mathbb{R}}^{n- \lambda}\).
 
 \end{lemma}
@@ -1702,7 +1702,7 @@ in the following:
 
 \begin{lemma}[?]
 
-If \(\mathop{\mathrm{Ind}}(p) = \lambda\), then the unstable manifold
+If \(\operatorname{ind}(p) = \lambda\), then the unstable manifold
 \(W_f^u\) at \(p\) is isomorphic to \({\mathbb{R}}^ \lambda\).
 
 \end{lemma}
@@ -1848,16 +1848,16 @@ The following is not Morse-Smale:
 Note that if \(X^a \pitchfork Y^b\), then \(X \cap Y \subseteq M^n\) is
 a smooth submanifold of dimension \(a+b-n\). In general, we have
 \(M^s(p) \cong {\mathbb{R}}^{n - \lambda}\) where
-\(\lambda = \mathop{\mathrm{Ind}}(p)\).
+\(\lambda = \operatorname{ind}(p)\).
 
 \begin{observation}
 
 If \((f, g)\) is Morse-Smale, then \(M^u(p) \pitchfork M^s(q)\). In this
 case,
 \begin{align*}
-\dim(M^u(p) \cap M^s(q)) = \mathop{\mathrm{Ind}}(p) + n - \mathop{\mathrm{Ind}}(q) - n = \mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q)
+\dim(M^u(p) \cap M^s(q)) = \operatorname{ind}(p) + n - \operatorname{ind}(q) - n = \operatorname{ind}(p) - \operatorname{ind}(q)
 .\end{align*}
-Thus if \(\mathop{\mathrm{Ind}}(p) = \mathop{\mathrm{Ind}}(q)\) then
+Thus if \(\operatorname{ind}(p) = \operatorname{ind}(q)\) then
 \(\dim M^s(p) \cap M^s(q) = 0\).
 
 \end{observation}
@@ -1880,20 +1880,20 @@ trajectories from \(p\) to \(q\)}.
 
 \end{remark}
 
-If \(\mathop{\mathrm{Ind}}(p) = \mathop{\mathrm{Ind}}(q)\), we have
+If \(\operatorname{ind}(p) = \operatorname{ind}(q)\), we have
 \(\dim M^u(p) \cap M^s (q) = 0\), making \(\dim \mathcal{M}(p, q) = -1\)
 and thus \(\mathcal{M}(p, q) = \emptyset\) and no gradient trajectories
 connect \(p\) to \(q\). Referring back to the example, since
-\(\mathop{\mathrm{Ind}}(p_3) = \mathop{\mathrm{Ind}}(p_2)\), if
-\((f, g)\) were Morse-Smale then there would be no trajectory
-\(p_3 \to p_2\), whereas in this case there is at least one.
+\(\operatorname{ind}(p_3) = \operatorname{ind}(p_2)\), if \((f, g)\)
+were Morse-Smale then there would be no trajectory \(p_3 \to p_2\),
+whereas in this case there is at least one.
 
 \end{example}
 
 \begin{remark}
 
-If \(\mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q) = 1\), then
-\(\dim \mathcal{M}(p, q) = \mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q) - 1 = 0\),
+If \(\operatorname{ind}(p) - \operatorname{ind}(q) = 1\), then
+\(\dim \mathcal{M}(p, q) = \operatorname{ind}(p) - \operatorname{ind}(q) - 1 = 0\),
 making \(\mathcal{M}(p, q)\) a compact 0-dimensional manifold, which is
 thus finitely many points, meaning there are only finitely many
 trajectories connecting \(p\to q\) and it becomes possible to define a
@@ -1905,12 +1905,12 @@ Morse complex.
 
 Fix \((f, g)\) a Morse-Smale pair, then define
 \begin{align*}
-C_i(f, g) \coloneqq{\mathbb{Z}}/2{\mathbb{Z}}\left[\left\{{p {~\mathrel{\Big|}~}\mathop{\mathrm{Ind}}p = i}\right\}\right] = \bigoplus_{\mathop{\mathrm{Ind}}(p) = i} {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{p}\right\rangle
+C_i(f, g) \coloneqq{\mathbb{Z}}/2{\mathbb{Z}}\left[\left\{{p {~\mathrel{\Big|}~}\operatorname{ind}p = i}\right\}\right] = \bigoplus_{\operatorname{ind}(p) = i} {\mathbb{Z}}/2{\mathbb{Z}}\left\langle{p}\right\rangle
 ,\end{align*}
 with a differential
 \begin{align*}
 {{\partial}}: C_i(f, g) &\to C_{i-1}(f, g) \\
-p, \mathop{\mathrm{Ind}}(p) = i & \mapsto \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) q 
+p, \operatorname{ind}(p) = i & \mapsto \sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) q 
 ,\end{align*}
 where we take the count mod 2.
 
@@ -1936,14 +1936,13 @@ Last time: defined the Morse complex. Assumed \((f, g)\) was a
 Morse-Smale pair, where \(f\) is a Morse function and \(g\) is a
 Riemannian metric, and this guarantees that if
 \(p, q\in \operatorname{crit}(f)\) with
-\(\mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(q) = 1\), then (among
-other things) there are finitely many gradient trajectories
-\(p\leadsto q\). We denoted this \(\mathcal{M}(p, q)\). The chain
-complex was defined by
-\(C_i(f, g) \coloneqq\bigoplus_{\mathop{\mathrm{Ind}}(p) = i} {\mathbb{Z}}_2 \left\langle{ p }\right\rangle\)
+\(\operatorname{ind}(p) - \operatorname{ind}(q) = 1\), then (among other
+things) there are finitely many gradient trajectories \(p\leadsto q\).
+We denoted this \(\mathcal{M}(p, q)\). The chain complex was defined by
+\(C_i(f, g) \coloneqq\bigoplus_{\operatorname{ind}(p) = i} {\mathbb{Z}}_2 \left\langle{ p }\right\rangle\)
 with differential \({{\partial}}_i: C_i \to C_{i-1}\) was defined by
 sending an index \(i\) critical point \(p\) to
-\(\sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) q \pmod 2\).
+\(\sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) q \pmod 2\).
 
 \begin{theorem}[The Morse Complex is a Chain Complex]
 
@@ -1956,16 +1955,16 @@ sending an index \(i\) critical point \(p\) to
 Idea of the proof: we can directly compute
 \begin{align*}
 {{\partial}}({{\partial}}p) 
-&= {{\partial}}\qty{ \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) q } \\
-&= \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) {{\partial}}q \\
-&= \sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) \qty{ \sum_{\mathop{\mathrm{Ind}}(r) = i-2 \# \mathcal{M}(q, r) r  }}   \\
-&= \sum_{\mathop{\mathrm{Ind}}(r) = i-2} \qty{\sum_{\mathop{\mathrm{Ind}}(q) = i-1} \# \mathcal{M}(p, q) \# \mathcal{M}(q, r) }  r \\
-&= \sum_{\mathop{\mathrm{Ind}}(r) = i-2} c_{p,q,r} r \\
+&= {{\partial}}\qty{ \sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) q } \\
+&= \sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) {{\partial}}q \\
+&= \sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) \qty{ \sum_{\operatorname{ind}(r) = i-2 \# \mathcal{M}(q, r) r  }}   \\
+&= \sum_{\operatorname{ind}(r) = i-2} \qty{\sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) \# \mathcal{M}(q, r) }  r \\
+&= \sum_{\operatorname{ind}(r) = i-2} c_{p,q,r} r \\
 &= 0 && \text{(claim)}
 .\end{align*}
 
 This happens if and only if \(c_{p, q, r} = 0 \pmod 2\) for all \(r\)
-with \(\mathop{\mathrm{Ind}}(r) = i-2\). This is multiplication of the
+with \(\operatorname{ind}(r) = i-2\). This is multiplication of the
 number of trajectories:
 
 \begin{figure}
@@ -1982,10 +1981,10 @@ we refer to these as \textbf{broken trajectories}.
 
 \begin{definition}[Broken Trajectories]
 
-Suppose \(\mathop{\mathrm{Ind}}(r) = \mathop{\mathrm{Ind}}(p) - 2\),
-then a \textbf{broken trajectory} from \(p\) to \(r\) is a trajectory
-from \(p\) to \(q\) followed by a trajectory \(q\) to \(r\) where
-\(\mathop{\mathrm{Ind}}(q) = \mathop{\mathrm{Ind}}(p)-1 = \mathop{\mathrm{Ind}}(r) + 1\).
+Suppose \(\operatorname{ind}(r) = \operatorname{ind}(p) - 2\), then a
+\textbf{broken trajectory} from \(p\) to \(r\) is a trajectory from
+\(p\) to \(q\) followed by a trajectory \(q\) to \(r\) where
+\(\operatorname{ind}(q) = \operatorname{ind}(p)-1 = \operatorname{ind}(r) + 1\).
 
 \begin{figure}
 \centering
@@ -2004,17 +2003,17 @@ Why is the number of broken trajectories even?
 \begin{answer}
 
 We can check that
-\(\dim \mathcal{M}(p, r) = \dim \qty{ W^u(p) \pitchfork W^s(r)}/{\mathbb{R}}= (\mathop{\mathrm{Ind}}(p) - \mathop{\mathrm{Ind}}(r)) - 1 = 2-1 = 1\).
+\(\dim \mathcal{M}(p, r) = \dim \qty{ W^u(p) \pitchfork W^s(r)}/{\mathbb{R}}= (\operatorname{ind}(p) - \operatorname{ind}(r)) - 1 = 2-1 = 1\).
 We can compactify \(\mathcal{M}(p, r)\) by adding in all of the broken
 trajectories to define
 \begin{align*} 
-\overline{\mathcal{M}(p, r)} \cup\qty{ \bigcup_{\mathop{\mathrm{Ind}}(q) = i-1} \mathcal{M}(p, q) \times\mathcal{M}(q, r) } 
+\overline{\mathcal{M}(p, r)} \cup\qty{ \bigcup_{\operatorname{ind}(q) = i-1} \mathcal{M}(p, q) \times\mathcal{M}(q, r) } 
 .\end{align*}
 This is useful here because we can appeal to the classification of
 smooth compact 1-dimensional manifolds, which are unions of copies of
 \(S^1\) and \(D_1 = I\). In particular, the number of boundary points
 \begin{align*}
-{{\partial}}\overline{\mathcal{M}(p, r)} = \bigcup_{\mathop{\mathrm{Ind}}(q) = i-1} \mathcal{M}(p, q) \times\mathcal{M}(q, r)
+{{\partial}}\overline{\mathcal{M}(p, r)} = \bigcup_{\operatorname{ind}(q) = i-1} \mathcal{M}(p, q) \times\mathcal{M}(q, r)
 \end{align*}
 is even:
 
@@ -2576,7 +2575,7 @@ well-defined? In Morse homology, we have two conditions:
   \((f, g)\) is Morse-Smale, to ensure that the moduli spaces are smooth
   manifolds (using Sard's theorem)
 \item
-  \(\mathop{\mathrm{Ind}}(x) - \mathop{\mathrm{Ind}}(y) = 1\), ensuring
+  \(\operatorname{ind}(x) - \operatorname{ind}(y) = 1\), ensuring
   \(\mathcal{M}(x, y)\) is 1-dimensional
 \item
   Compactness of \(\widehat{\mathcal{M}}(x, y)\) when 1 and 2 hold.
@@ -2828,7 +2827,7 @@ A fact from Morse theory: there exists a Morse function
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \(f(p) = i \coloneqq\mathop{\mathrm{Ind}}(p)\) for every
+  \(f(p) = i \coloneqq\operatorname{ind}(p)\) for every
   \(p\in \operatorname{Crit}(f)\) (i.e.~\(f\) is
   \textbf{self-indexing}), and
 \item
@@ -2878,8 +2877,8 @@ of index 1 for \(f\) and \(g'\) critical points of index 1 for \(h\).
 \begin{exercise}[?]
 
 Show that \(\operatorname{crit}(f) = \operatorname{crit}(h)\) and if
-\(p\in \operatorname{crit}(f)\) with \(\mathop{\mathrm{Ind}}_f(p) = i\)
-then \(\mathop{\mathrm{Ind}}_h(p) = 3-i\).
+\(p\in \operatorname{crit}(f)\) with \(\operatorname{ind}_f(p) = i\)
+then \(\operatorname{ind}_h(p) = 3-i\).
 
 \end{exercise}
 
@@ -2887,7 +2886,7 @@ Thus \(g'\) is the number of index 2 critical points for \(f\). This
 means that
 \({{\partial}}h ^{-1} [0, 3/2] = h ^{-1} (3/2) = f ^{-1} (3/2)\) has
 genus \(g=g'\), and thus the
-\(\# \operatorname{crit}(f)_{\mathop{\mathrm{Ind}}=1} = \# \operatorname{crit}(h)_{\mathop{\mathrm{Ind}}=2} = g\).
+\(\# \operatorname{crit}(f)_{\operatorname{ind}=1} = \# \operatorname{crit}(h)_{\operatorname{ind}=2} = g\).
 Even without this, we still have our two handlebodies:
 \(H_1 \coloneqq f ^{-1} [0, 3/2]\) and
 \(H_2 \coloneqq f ^{-1} [3/2, 3]\) glued over
@@ -3261,7 +3260,7 @@ since they are distinct critical points the stable submanifolds are
 disjoint. So we can obtain a set of attaching circles for the bottom
 handlebody \(f ^{-1} ([0, 3/2])\):
 \begin{align*}
-\left\{{ M^s(p) \cap f ^{-1} (3/2) {~\mathrel{\Big|}~}p \in \operatorname{crit}(f),\, \mathop{\mathrm{Ind}}(p) = 1 }\right\}
+\left\{{ M^s(p) \cap f ^{-1} (3/2) {~\mathrel{\Big|}~}p \in \operatorname{crit}(f),\, \operatorname{ind}(p) = 1 }\right\}
 .\end{align*}
 
 So setting these to be the \(\alpha\) curves, repeating with index 2 to
@@ -4737,7 +4736,7 @@ for any
 This will be an order 2 elliptic operator (or more generally a Fredholm
 operator), for which we have a notion of index:
 \begin{align*}
-\mathop{\mathrm{Ind}}( D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J) = \dim( \ker D\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J) - \dim (\operatorname{coker}D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
+\operatorname{ind}( D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J) = \dim( \ker D\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J) - \dim (\operatorname{coker}D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
 .\end{align*}
 If surjectivity holds, the cokernel will be zero, so it will suffice to
 compute the dimension of the kernel to get the dimension of the moduli
@@ -4759,7 +4758,7 @@ Recall that for
 \(x,y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta\), there is a map
 \begin{align*}
 \mu: \pi_2(x, y) &\to {\mathbb{Z}}\\
-&\mu &= \mathop{\mathrm{Ind}}(D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
+&\mu &= \operatorname{ind}(D \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu_J)
 .\end{align*}
 
 This index is the expected dimension of \(M(\varphi)\). The following
@@ -6287,6 +6286,340 @@ d: \Theta_{\mathbb{Q}}^3 \to {\mathbb{Q}}
 .\end{align*}
 
 \end{remark}
+
+\hypertarget{tuesday-march-30}{%
+\section{Tuesday, March 30}\label{tuesday-march-30}}
+
+\hypertarget{lhbox-spaces}{%
+\subsection{\texorpdfstring{\(L{\hbox{-}}\)spaces}{L\{\textbackslash hbox\{-\}\}spaces}}\label{lhbox-spaces}}
+
+\todo[inline]{Missing lecture}
+
+\begin{remark}
+
+Today: \(L{\hbox{-}}\)spaces and the surgery exact triangle. We've been
+loosely following \autocite{OS-1}, references for upcoming topics
+include \autocite{OS-2} and Jen Hom's survey \autocite{H}.
+
+\end{remark}
+
+\begin{remark}
+
+Recall that we were discussing \(\operatorname{HF}^-(M, s)\) for
+\(M\in {\mathsf{Mfd}}^3({\mathbb{R}})\) and \(s\) a
+\(\mathrm{Spin}^{\mathbb{C} }\) structure, and if
+\(M\in \operatorname{QHS}\) this decomposes as
+\({\mathbb{Z}}/2[u] \oplus \qty{\bigoplus_i {{\mathbb{Z}}/2[u] \over \left\langle{u^{}n_i}\right\rangle }} \coloneqq{\mathbb{Z}}/2[u] \oplus \operatorname{HF}_{ \text{red} }(M, s)\).
+The Maslov grading of \(1\) in the first summand is the
+\textbf{\(d{\hbox{-}}\)invariant}, \(d(M, s)\). If one defines
+\(d(M) \coloneqq\sum_{s\in \mathrm{Spin}^{\mathbb{C} }(M)} d(M, s)\),
+then \(d: \Theta^3_{\mathbb{Q}}\to {\mathbb{Q}}\) is a group
+homomorphism. We want to talk about \(X\in {\mathsf{Mfd}}^3\) which have
+the ``simplest'' Floer theory, in the sense that the torsion summand
+above vanishes.
+
+\end{remark}
+
+\begin{definition}[?]
+
+A manifold \(M\in\operatorname{QHS}^3\) is an
+\textbf{\(L{\hbox{-}}\)space} if
+\(\operatorname{HF}_{ \text{red} }(M, s) = 0\), which happens if and
+only if \(\operatorname{HF}^-(M, s) = {\mathbb{Z}}/2[u]\).
+
+\end{definition}
+
+\begin{remark}
+
+Recall that there is an exact triangle
+
+\begin{center}
+\begin{tikzcd}
+    {\operatorname{HF}^-(M, s)} && {\operatorname{HF}^-(M, s)} \\
+    \\
+    & {\widehat{\operatorname{HF}}-(M, s)}
+    \arrow["{\cdot u}", tail reversed, from=1-1, to=1-3]
+    \arrow["p", from=1-3, to=3-2]
+    \arrow["0", from=3-2, to=1-1]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXEhGXi0oTSwgcykiXSxbMiwwLCJcXEhGXi0oTSwgcykiXSxbMSwyLCJcXGhhdFxcSEYtKE0sIHMpIl0sWzAsMSwiXFxjZG90IHUiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJhcnJvd2hlYWQifX19XSxbMSwyLCJwIl0sWzIsMCwiMCJdXQ==}{Link
+to Diagram}
+\end{quote}
+
+Since multiplication by \(u\) is injective, we obtain
+\begin{align*}
+\widehat{\operatorname{HF}} = \operatorname{im}p \cong {\operatorname{HF}^-(M, s) \over \ker p} \cong {{\mathbb{Z}}/2[u] \over u {\mathbb{Z}}/2[u] } \cong {\mathbb{Z}}/2
+.\end{align*}
+
+\end{remark}
+
+\begin{exercise}[?]
+
+So
+\(\operatorname{HF}^-(M, s) \cong {\mathbb{Z}}/2[u] \implies \widehat{\operatorname{HF}}(M, s) \cong {\mathbb{Z}}/2\).
+Show the converse is also true.
+
+\end{exercise}
+
+\begin{corollary}[?]
+
+\(M\) is an \(L{\hbox{-}}\)space if and only if
+\(\widehat{\operatorname{HF}}(M, s) \cong {\mathbb{Z}}/2\) for all
+\(s\in \mathrm{Spin}^{\mathbb{C} }(M)\). This happens if and only if
+\({\operatorname{rank}}_{{\mathbb{Z}}[u]} \widehat{\operatorname{HF}}(M, s) = 1\),
+if and only if
+\(\# \mathrm{Spin}^{\mathbb{C} }(M) = \# H^2(M) \overset{\mathrm{PD}}{=} \# H^1(M)\),
+which is finite for \(\operatorname{QHS}\).
+
+\end{corollary}
+
+\begin{corollary}[?]
+
+Any \(M\in \operatorname{QHS}^3\) is an \(L{\hbox{-}}\)space if and only
+if
+\({\operatorname{rank}}_{{\mathbb{Z}}[u]} \widehat{\operatorname{HF}}(M) = \# H^1(M)\).
+
+\end{corollary}
+
+\begin{remark}
+
+Note that we've proved the forward implication but not the reverse. This
+is sometimes used as a definition in talks!
+
+Sketch of the proof (\(\impliedby\)): A computation will show that
+\(\chi \widehat{\operatorname{HF}}(M, s) = \pm 1\) for all \(s\), since
+the grading can be shifted. This is proved in \autocite[ p.33]{OS-2},
+and is the main ingredient in this proof. This implies that
+\({\operatorname{rank}}\widehat{\operatorname{HF}}(M, s) \geq 1\), and
+so adding all summands yields
+\({\operatorname{rank}}\widehat{\operatorname{HF}}(M) \geq \# H_1(M)\).
+This implies that
+\(\widehat{\operatorname{HF}}(M, s) \cong {\mathbb{Z}}/2\) for all
+\(s\), making \(M\) an \(L{\hbox{-}}\)space.
+
+\end{remark}
+
+\begin{remark}
+
+Here note that \(C_*\) is \({\mathbb{Z}}/2{\hbox{-}}\)graded, as is
+\((\widehat{\operatorname{HF}}(M), {{\partial}})\), so we define
+\(\chi(C_*) = {\operatorname{rank}}C_0 - {\operatorname{rank}}C_1\).
+Since we have a relative \({\mathbb{Z}}{\hbox{-}}\)grading given by
+\(\mu\), we get a relative \({\mathbb{Z}}/2{\hbox{-}}\)grading given by
+\({\operatorname{gr}}_{{\mathbb{Z}}/2}(x, y) = {\operatorname{gr}}_{\mathbb{Z}}(x, y)\),
+which gives us \(\chi \widehat{\operatorname{HF}}(M)\) up to sign.
+
+\end{remark}
+
+\begin{example}[?]
+
+We have seen lens spaces, here's an example of \(L(2, 3)\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-30-11-46-39.png}
+\caption{image\_2021-03-30-11-46-39}
+\end{figure}
+
+Here
+\(\widehat{\operatorname{HF}}L(2, 3) \cong ({\mathbb{Z}}/2)^{\oplus 2}\)
+and
+\({\operatorname{rank}}\widehat{\operatorname{HF}}L(2, 3) = 2 = \# H_1(L(2, 3); {\mathbb{Z}}/2)\).
+
+\end{example}
+
+\begin{example}[?]
+
+In general, every \(L(p, q)\) is a lens space, hence the name! Note that
+\(H_1(L(p, q)) \cong {\mathbb{Z}}/p\) is not a \(\operatorname{ZHS}^3\).
+
+\end{example}
+
+\begin{example}[?]
+
+A Poincaré homology sphere \(\pm P^3\) (with either the standard
+orientation or its reverse) will be an \(L{\hbox{-}}\)space.
+
+\end{example}
+
+\begin{conjecture}
+
+Poincaré-type conjecture in Heegard Floer homology: the only irreducible
+\(\operatorname{ZHS}^3\) \(L{\hbox{-}}\)spaces are \(S^3\) and
+\(\pm P^3\). Still open!
+
+\end{conjecture}
+
+\begin{remark}
+
+So \(\widehat{\operatorname{HF}}\) can detect these two among all
+integral homology spheres using \(\widehat{\operatorname{HF}}\).
+
+\end{remark}
+
+\hypertarget{surgery}{%
+\subsection{Surgery}\label{surgery}}
+
+\begin{definition}[Dehn Surgery]
+
+Let \(K \subseteq M \in {\mathsf{Mfd}}^3\) be a knot, i.e.~the image of
+an embedding \(S^1 \hookrightarrow M\). Remove a tubular neighborhood of
+\(K\), and set \(X = M\setminus\nu(K)\). Fill in the torus boundary with
+a solid torus \(S^1 \times{\mathbb{D}}^2\) using a diffeomorphism
+\begin{align*}
+\phi: {{\partial}}(S^1 \times{\mathbb{D}}^2) \xrightarrow{\text{diffeo}} {{\partial}}X
+.\end{align*}
+
+Any surgery will be determined by the image of the red circle
+\(\gamma \coloneqq{\{\operatorname{pt}\}}\times{{\partial}}{\mathbb{D}}^2\)
+in the following:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-30-12-01-24.png}
+\caption{image\_2021-03-30-12-01-24}
+\end{figure}
+
+So \(\phi\) is determined by \(\phi( \gamma)\), and in fact only depends
+on its class in homology since \(\pi_1T^2 = H_1T^2\). If
+\(\phi ( \gamma) = \lambda\), we denote the resulting manifold as
+\(M_{\lambda}(K)\), the \textbf{Dehn surgery on \(K\)}.
+
+\end{definition}
+
+\begin{definition}[Meridian and Longitude]
+
+A \textbf{meridian} \(\mu\) of \(K\) will be a simple closed curve on
+\({{\partial}}X\) that bounds a disk in the tubular neighborhood
+\(\nu(K)\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-03-30-12-05-02.png}
+\caption{image\_2021-03-30-12-05-02}
+\end{figure}
+
+Here we orient \(\mu\) on the boundary of this disk.
+
+A \textbf{longitude} will be a nullhomotopic simple closed curve such
+that \(\#( \mu \cap\lambda) = -1\). For example:
+
+\includegraphics{figures/image_2021-03-30-12-07-30.png}?
+
+\end{definition}
+
+\begin{observation}
+
+\envlist
+
+\begin{itemize}
+\item
+  \(\lambda\) is not unique, i.e.~\(\lambda + n\mu\) will again be a
+  longitude for all \(n\in {\mathbb{Z}}\).
+\item
+  \(\mu, \lambda\) is a basis for \(H_1({{\partial}}X)\), so any simple
+  closed curve \(\gamma\) is a \({\mathbb{Z}}{\hbox{-}}\)linear
+  combination of them:
+  \begin{align*}
+  [ \gamma] = a [ \mu] + b [ \lambda], && a,b\in {\mathbb{Z}}
+  .\end{align*}
+\end{itemize}
+
+\end{observation}
+
+\begin{definition}[?]
+
+A knot \(K\) along with a choice of longitude \(\lambda\) is called a
+\textbf{framed knot}.
+
+\end{definition}
+
+\begin{remark}
+
+This allows us to specify Dehn surgeries by a rational number.
+
+\end{remark}
+
+\begin{definition}[?]
+
+Let \(K\) be a framed knot, then \(M_{p\over q}(K) = M_{\gamma}(K)\)
+where \([\gamma] = p [\mu] + q[ \lambda]\). We'll use the notation
+\(\gamma = p\mu + q\lambda\).
+
+\end{definition}
+
+\begin{definition}[?]
+
+If \(K\) is nullhomologous, for example when \(M = S^3\) since
+\(H^1S^3 = 0\), there is a canonical choice for \(\lambda\) by assuming
+that
+
+\begin{itemize}
+\tightlist
+\item
+  \(\lambda\) is nullhomologous in \(X = M \setminus\nu(K)\)
+\item
+  Equivalently, \(\operatorname{lk}(K, \lambda) = 0\).
+\end{itemize}
+
+This longitude is called the \textbf{Seifert framing}.
+
+\end{definition}
+
+\begin{exercise}[?]
+
+Show this equivalence, and find the Seifert framing for the trefoil in
+\(S^3\).
+
+\end{exercise}
+
+\begin{example}[?]
+
+\begin{itemize}
+\tightlist
+\item
+  \(S^3_{p/q}(U) = L(p, q)\) for \(U\) the unknot.
+\item
+  \(S^3_{\infty }(K) \coloneqq S^3_{1\over 0}(K) = S^3\).
+\item
+  \(S^3_{0} \coloneqq S^3_{0\over 1} = S^1 \times S^2\)
+\item
+  \(S^3_{+1}(T_{2, 3}) = P^3\) (torus knot).
+\end{itemize}
+
+\end{example}
+
+\begin{theorem}[Gordan-Leuke, '80s]
+
+IF \(K\neq U\) and \({p\over q} \neq \infty\), then
+\(S_{p\over q}^3(K) \neq S^3\).
+
+\end{theorem}
+
+\begin{remark}
+
+Can we get everything 3-manifold this way, as surgery on a knot? The
+answer is no, but yes if you allow \emph{links}!
+
+\end{remark}
+
+\begin{theorem}[Lickorish-Wallace]
+
+There is a bijection
+\begin{align*}
+\left\{{\substack{
+M\in {\mathsf{Mfd}}^3 {~\mathrel{\Big|}~}\text{closed, oriented, connected}
+}}\right\}
+&\rightleftharpoons
+\left\{{\substack{
+\text{Integer $\pm 1$ surgeries on links in $S^3$}
+}}\right\}
+\end{align*}
+
+\end{theorem}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]

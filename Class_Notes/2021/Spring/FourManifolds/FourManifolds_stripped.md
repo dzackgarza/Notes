@@ -3843,11 +3843,11 @@ There was a proposition that \( \ker(\Delta_d) = \ker(d) \cap\ker(d^\dagger) \),
 \[
 0 \to \Omega^p \to A^{p, 0} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} A^{p, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} A^{p, 2} \to \cdots
 .\]
-Thus we can identify \( \ker(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)/\operatorname{im}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \cong { \mathscr{H} }( X; \Omega^p) \) as sheaf cohomology. We defined \( h^{p, q}(X) \coloneqq\dim_{\mathbb{C}}H^{p, q}(X) \).
+Thus we can identify \( \ker(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)/\operatorname{im}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \cong { \mathcal{H} }( X; \Omega^p) \) as sheaf cohomology. We defined \( h^{p, q}(X) \coloneqq\dim_{\mathbb{C}}H^{p, q}(X) \).
 :::
 
 ::: {.corollary title="?"}
-\( h^{p,q }(X) \) is independent of the Kähler form, noting that the isomorphism to sheaf cohomology doesn't involve taking adjoints, and \( \dim_{\mathbb{C}}{ \mathscr{H} }^q(X; \Omega^p) \) doesn't depend on the complex structure.
+\( h^{p,q }(X) \) is independent of the Kähler form, noting that the isomorphism to sheaf cohomology doesn't involve taking adjoints, and \( \dim_{\mathbb{C}}{ \mathcal{H} }^q(X; \Omega^p) \) doesn't depend on the complex structure.
 :::
 
 ::: {.remark}
@@ -3861,7 +3861,7 @@ Whenever the Hodge-de Rham spectral sequence degenerates, one generally gets \( 
 ,\]
 which is not acyclic and thus has homology. In general, the spectral sequence is
 \[
-E^1_{p,q} = { \mathscr{H} }^q(X; \Omega^p) \Rightarrow{ \mathscr{H} }^{p+q}(X; \underline{{\mathbb{C}}})
+E^1_{p,q} = { \mathcal{H} }^q(X; \Omega^p) \Rightarrow{ \mathcal{H} }^{p+q}(X; \underline{{\mathbb{C}}})
 .\]
 :::
 
@@ -3925,7 +3925,7 @@ Let \( \Omega^k_X \) be the sheaf of holomorphic \( k{\hbox{-}} \)forms, then th
 .\]
 Fiberwise, this is a perfect pairing. If one takes \( \alpha \coloneqq e_{i_1} \wedge \cdots e_{i_k} \in \bigwedge^k T_x^\vee X \), there is a unique basis wedge \( \beta \coloneqq e_{j_1} \wedge \cdots \wedge e_{j_n - k} \) then \( \alpha\wedge \beta \) is a basis wedge \( e_1 \wedge \cdots \wedge e_n \). So \( \Omega_X^k \cong ( \Omega_X^{n-k} )^\vee \) if \( X \) is Calabi-Yau. By Serre duality,
 \[
-{ \mathscr{H} }^p(X; \Omega_X^q)^\vee\cong { \mathscr{H} }^{n-p}(X; (\Omega_X^q)^\vee\otimes K_X )
+{ \mathcal{H} }^p(X; \Omega_X^q)^\vee\cong { \mathcal{H} }^{n-p}(X; (\Omega_X^q)^\vee\otimes K_X )
 .\]
 :::
 
@@ -4069,8 +4069,276 @@ Here \( h^{2, 0} = h^0( \Omega^2) = h^0(K) = g \) is called the *genus* in analo
 Solve for \( h^{1, 1} \) in terms of \( q \) and \( g \).
 :::
 
+# Friday, April 02
+
+## When Line Bundles are \( {\mathcal{O}} \) of a Divisor {#when-line-bundles-are-mathcalo-of-a-divisor}
+
+::: {.remark}
+Last time: if we have such a Hodge diamond, can we solve for \( h^{1, 1} \)?
+
+```{=tex}
+\begin{tikzcd}
+    && 1 \\
+    & q && q \\
+    p && {h^{1, 1}} && p \\
+    & q && q \\
+    && 1
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwyLCJoXnsxLCAxfSJdLFswLDIsInAiXSxbNCwyLCJwIl0sWzEsMywicSJdLFszLDMsInEiXSxbMiw0LCIxIl0sWzEsMSwicSJdLFszLDEsInEiXSxbMiwwLCIxIl1d)
+
+Recall Noether's formula
+\[
+\chi(S, {\mathcal{O}}_S)
+&= \int \operatorname{ch}({\mathcal{O}}_S) \mathrm{td}(S) \\
+&= \int_S {x_1 \over 1-e^{-x_1} } {x_2 \over 1- e^{-x_2} } \\
+&= {K^2 + \chi_{\mathsf{Top}}(S) \over 12}
+,\]
+where \( c_1(TS) = - K \) and \( \chi_{\mathsf{Top}} \) is due to the Chern-Gauss-Bonet formula. We have
+\[
+\chi({\mathcal{O}}_S) = h^0({\mathcal{O}}_S) - h_1({\mathcal{O}}_S) + h^2({\mathcal{O}}_S) = 1-q+p
+.\]
+
+On the other hand,
+\[
+\chi_{\mathsf{Top}}(S) = 1 -2q + (2p + h^{1, 1}) -4q = 1-4q + 2^p + h^{1, 1}
+,\]
+so
+\[
+12(1-q+p) = K^2 + 2-4g + 2p + h^{1, 1} \implies h^{1, 1} = 110 - 8q + 10p-K^2
+.\]
+:::
+
+::: {.remark}
+Recall the extraordinarily important exact sequence
+\[
+0 \to {\mathcal{O}}(-p) \to {\mathcal{O}}\to {\mathcal{O}}_p \to 0
+,\]
+where the right-hand side is the sheaf of holomorphic functions vanishing at \( p \) and this is an inclusion into the sheaf of holomorphic functions, and the right-hand term is the skyscraper sheaf. There is a similar exact sequence for an embedded curve \( C\hookrightarrow S \) in a surface:
+\[
+0 \to {\mathcal{O}}_S(-C) \to {\mathcal{O}}_S \to {\mathcal{O}}_C \to 0
+,\]
+where the left term is the sheaf of holomorphic functions vanishing on \( C \). Note that this has no global sections! Any function vanishing along a compact subset (?) are constant (?). Locally on an open set \( U \), one can write \( C \cap U = V(f_u) \), since algebraically this ring is locally a PID. So this is a line bundle, where we can map into the trivial bundle by \( \phi \mapsto \phi/f_u \). Thus
+\[
+{\mathcal{O}}_S(U) / {\mathcal{O}}_S(-C)(U) \cong {\mathcal{O}}_C(C \cap U )
+.\]
+We then get surjectivity since every holomorphic function on \( C \) extends to a holomorphic function on \( S \).
+
+Now letting \( \mathcal{E} \in{\mathsf{Vect}}(\mathop{\mathrm{Hol}}) \), we can tensor this exact sequence to get
+\[
+0 \to \mathcal{E}(-C) \to \mathcal{E} \to { \left.{{\mathcal{E}}} \right|_{{C}} } \to 0
+,\]
+which is also exact since locally we have the splitting principle.
+:::
+
+::: {.proposition title="?"}
+Let \( X \) be a smooth projective [^4] complex manifold. Then every line bundle over \( X \) is of the form \( L = {\mathcal{O}}_X(D) \) for some divisor \( D = \sum n_i D_i \in {\mathbb{Z}}[\operatorname{SubMfds}(\operatorname{codim}_1)] \).
+:::
+
+## Proof
+
+::: {.proof title="?"}
+Let \( H \) be a **hyperplane section**, i.e. an intersection of \( X \) with a generic hyperplane in \( {\mathbb{CP}}^N \).
+
+::: {.lemma title="Serre Vanishing Theorem"}
+For any vector bundle \( \mathcal{E} \) and all \( i>0 \), for \( k\gg 0 \) we have
+\[
+h^i(X, \mathcal{E} \otimes{\mathcal{O}}(kH) ) = 0
+.\]
+:::
+
+::: {.remark}
+We'll not prove this! It requires some heavy analysis and the Kahler identities, see Huybrechts complex geometry Prop 5.27.
+:::
+
+We can write
+\[
+\chi(L\otimes{\mathcal{O}}(kH)) 
+&= \int_X \operatorname{ch}(L\otimes{\mathcal{O}}(kH)) \mathrm{td}(X) \\
+&= \int_X \operatorname{ch}(L) \operatorname{ch}(H)^k \mathrm{td}(X) \\
+&= \int_X \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2} + \cdots } 
+\cdot \qty{1+ kh + {(kh)^2 \over 2 } + \cdots + {(kh)^{\dim X} \over (\dim X)!} }
+\cdot \qty{1 + \mathrm{td}_1(X) + \mathrm{td}_2(X) + \cdots }
+.\]
+
+where \( h \) is the restriction of the generator of \( H^2({\mathbb{CP}}^N; {\mathbb{Z}}) \) to \( X \). Note that for \( k \) large, the dominating term grows like \( (kh)^{\dim X} \), so asymptotically we have
+\[
+\cdots \sim \int_X { k^{\dim X} h^{\dim X} \over (\dim X)! }
+.\]
+
+What is this \( \dim(X){\hbox{-}} \)fold intersection?
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-25.pdf_tex} };
+\end{tikzpicture}
+```
+We can slice \( X \) by multiple hyperplanes, each homologically perturbed, and so \( \int_X h^{\dim X} \) is the number of points where \( \dim X \) generic hyperplanes intersect \( X \), which is called the **degree** \( \deg X \). This roughly follows from \( \int_X \omega_{ \text{FS} }^{\dim X} > 0 \). Alternatively, suppose \( X \cap H = \emptyset \), then \( X \hookrightarrow H^c = {\mathbb{A}}^N \). Then each holomorphic coordinate restricts to a constant on \( X \) by the maximal principle.
+
+Back to what we were proving: we have
+\[
+\chi(L \otimes{\mathcal{O}}(kH) ) \sim ck^{\dim X}
+,\]
+for \( c \) some constant. By Serre Vanishing, \( h^i(L\otimes{\mathcal{O}}(kH)) = 0 \) for \( k\gg 0 \), and so we obtain
+\[
+h^0(L\otimes{\mathcal{O}}(kH)) \sim ck^{\dim X} \implies \exists k \text{ s.t. } h^0(L\otimes{\mathcal{O}}(kH)) > 0
+.\]
+We conclude that there is some nonzero section \( s\in { \mathcal{H} }^0(X; L\otimes{\mathcal{O}}(kH)) \) for which \( {\mathcal{O}}(\operatorname{Div}s) \cong L\otimes{\mathcal{O}}(kH) \). Thus \( L \cong {\mathcal{O}}(\operatorname{Div}s - kH) \), where \( \operatorname{Div}s- kH \) is some divisor.
+:::
+
+::: {.remark}
+With some more work, one can show \( L\cong {\mathcal{O}}(C-D) \) for \( C,D \) *smooth* divisors.
+:::
+
+## Aside
+
+::: {.remark}
+Felix Klein has a "proof" of the existence of a meromorphic function on a Riemann surface. The argument roughly goes as follows: take your Riemann surface and make it out of metal. Attach it to a battery:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-39.pdf_tex} };
+\end{tikzpicture}
+```
+This induces an electric potential function \( V: C\to {\mathbb{R}} \), where \( V \) is the real part of the meromorphic function. Here \( V \) is a harmonic function away from \( p \) and \( q \).
+:::
+
+# Monday, April 05
+
+::: {.remark}
+Last time: line bundles are of the form \( {\mathcal{O}}(D) \) for \( D \) a divisor, and the extremely important SES
+\[
+0 \to {\mathcal{O}}_S(-D) \to {\mathcal{O}}_S \to {\mathcal{O}}_D \to 0
+.\]
+We now want to discuss an alternative characterization of the intersection form on an algebraic surface. The next result comes from Beauville's "Complex Algebraic Surfaces":
+:::
+
+::: {.proposition title="?"}
+Let \( S \in {\mathsf{Mfd}}^2({\mathbb{C}})^{ \text{compact} }  \), then the intersection number between complex curves \( C, D \) can be computed in the following ways: \( C\cdot D = \deg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p\in C \cap D } \mathop{\mathrm{len}}_p(C \cap D ) \), where we'll define \( \mathop{\mathrm{len}}_p \) soon.
+:::
+
+::: {.remark}
+This will count intersection points after a small perturbation. Note that not every two curves will intersect transversely: consider \( {\mathbb{P}}_2 \) with a line \( C \) and a tangent conic \( D \):
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_13-57.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.proof title="?"}
+We have the first equality because
+\[
+C\cdot D = \int_S [C] \frown[D] = \int_C i^* [D]
+,\]
+where \( i: C\hookrightarrow S \) is the inclusion. This equality holds because if \( \alpha\in \Omega^2 \) is a 2-form,
+\[
+\int_S [C] \cdot \alpha = \int { \left.{{ \alpha}} \right|_{{C}} }
+.\]
+Using the pullback commutes with taking Chern classes, we can write the
+\[
+\int_C i^* [D] = \int_C i^* (c_1 ({\mathcal{O}}(D))) = \int_C c_1( i^* {\mathcal{O}}(D) ) = \int_C {\mathcal{O}}(D){ \left.{{}} \right|_{{C}} } = \deg {\mathcal{O}}(D) { \left.{{}} \right|_{{C}} }
+.\]
+Note that this formula was symmetric, so we could have done this the other way to obtain \( \deg {\mathcal{O}}_S(C){ \left.{{}} \right|_{{D}} } = \deg {\mathcal{O}}_S(D) { \left.{{}} \right|_{{C}} } \).
+
+For the second equality, consider the following 4-term exact sequence:
+\[
+0 \to {\mathcal{O}}_S(-C -D) 
+\underset{p_1}{ \overset{{\left[ { s_D, s_C} \right]}}\hookrightarrow } {\mathcal{O}}_S(-C) \oplus {\mathcal{O}}_S(-D) 
+\underset{p_2}{ \xrightarrow{{\left[ {s_D, -s_C} \right]}^t} } {\mathcal{O}}_S 
+\underset{p_3}{\to} {\mathcal{O}}_{C \cap D} 
+\to 0
+.\]
+For the first map, we have
+\[
+\left\{{ \text{Functions vanishing on } C+D}\right\} \hookrightarrow
+\left\{{ \text{Functions vanishing on } C}\right\}
+\oplus
+\left\{{ \text{Functions vanishing on } D}\right\}
+.\]
+
+Locally we can write \( C = V(f) \) and \( D = V(g) \) for some holomorphic functions \( f,g\in \mathop{\mathrm{Hol}}(U, {\mathbb{C}}) \). We have the following picture:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-06.pdf_tex} };
+\end{tikzpicture}
+```
+We have \( s_C \in H^0(S; {\mathcal{O}}_S(C)) \) and \( s_D \in H^0(S; {\mathcal{O}}_S(D)) \) as global sections where \( V(s_c) = C, V(s_D) = D \). In a local trivialization, we can assume \( { \left.{{s_C}} \right|_{{U}} } = f \) and \( { \left.{{s_D}} \right|_{{U}} } = g \). So the first map is \( (s_D, s_C) \). The next map is \( {\left[ {s_C, -s_D} \right]}^t \) as a column vector, i.e. given a section \( (\varphi_1, \varphi_2) \in H^0(U, {\mathcal{O}}_S(-C) \oplus {\mathcal{O}}_S(-D) ) \) we send it to \( \phi_1 \cdot s_D - \phi_2 \cdot s_C \). Why is this exact? Considering the composition, we have
+\[
+\phi \xrightarrow{p_1}
+(\phi s_D, \phi s_C)
+\xrightarrow{p_2}
+(\phi s_D) s_C - (\phi s_C) s_D = 0
+.\]
+
+So we get \( \operatorname{im}p_1 \subseteq \ker p_2 \). Why do we have the reverse containment for exactness? Looking locally, given a pair \( \phi_1, \phi_2 \in \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \) such that \( \phi_1 \varphi- \phi_2 g = 0 \) and locally \( (\phi_1, \phi_2) \in \ker p_2 \), we want to show that \( \phi_1 = g \phi, \phi_2 = f\phi \) for some \( f,g \in \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \). Equivalently, we want to show that
+\[
+\phi_1 f = \phi_2 g \implies g\mathrel{\Big|}\phi_1
+.\]
+If this is true, then we can set \( \phi \coloneqq{\phi_1 \over g} \), since this would yield \( g\phi = \phi_1 \) and \( f\phi = {f\phi_1 \over g} = \phi_2 \). Note that we can divide here because the ring \( \mathop{\mathrm{Hol}}(U;{\mathbb{C}}) \) is a domain (i.e. it has no zero divisors) on small sets.
+
+::: {.question}
+Is \( \mathop{\mathrm{Hol}}(U, {\mathbb{C}}) \) a PID in general?
+:::
+
+::: {.answer}
+No! Take \( U \subseteq {\mathbb{C}}^2 \) a ball around \( z=0 \), then \( \left\langle{x, y}\right\rangle \) is not principal.
+:::
+
+However, this will form a UFD, which is weaker but still enough here. This is not obvious, but can be proved using the Weierstrass preparation theorem. This should be believable since \( R \) a UFD implies \( R[x] \) is a UFD, and \( {\mathbb{C}}[x, y] \subsetneq \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \subsetneq {\mathbb{C}}[[x, y]] \), and the latter is a UFD. So we do get exactness at this position.
+
+For exactness at the next position \( {\mathcal{O}}_S(-C) \oplus {\mathcal{O}}_S(-D) \to {\mathcal{O}}_S \), locally we have \( (\varphi_1, \varphi_2 ) \mapsto \varphi_1 f- \varphi_2 g \) where \( V(f) = C \cap U \) and \( V(g) = D \cap U \). We can write \( \phi_1 f- \phi_2 g = \left\langle{f, g}\right\rangle \) locally, so the cokernel sheaf of \( p_2 \) is given by
+\[
+\operatorname{coker}p_2(U) \coloneqq{{\mathcal{O}}_S(U) \over \operatorname{im}p_2} = { {\mathcal{O}}_S(U) \over \left\langle{f, g}\right\rangle}
+.\]
+By definition, this is equal to \( {\mathcal{O}}_{V(f, g)} = {\mathcal{O}}_{C \cap D} \), and if \( C \cap D \cap U = \emptyset \) then \( {\mathcal{O}}_{C \cap D}(U) = 0 \). So let \( p \in {\mathcal{O}}_{C \cap D} \) and let \( U_p \ni p \) which contains no other points \( q\in C \cap D \), since the set of intersection points is isolated (and thus finite). Note that compactness here prevents accumulation of intersection points. In this case, \( {\mathcal{O}}_{C \cap D}(U_p) \) will be a finite-dimensional vector space \( {\mathbb{C}}^d \), and we'll define \( \mathop{\mathrm{len}}_p(C \cap D) \coloneqq d \).
+:::
+
+::: {.example title="?"}
+Let \( U={\mathbb{C}}^2 \) and take \( f=y \) so \( C\coloneqq V(f) \) is the x-axis, and set \( g = y-x^2 \) so \( D\coloneqq V(g) \) is a parabola. We're then considering
+\[ 
+{ \mathop{\mathrm{Hol}}({\mathbb{C}}^2) \over y \mathop{\mathrm{Hol}}({\mathbb{C}}^2) + (y-x^2) \mathop{\mathrm{Hol}}({\mathbb{C}}^2)} = {\mathop{\mathrm{Hol}}({\mathbb{C}}^2) \over \left\langle{ y, x^2 }\right\rangle  }
+.\]
+Elements in the ideal can be expanded as power series of the form \( a_{0,1}y + a_{2, 0}x^2 + a_{1, 1} xy + a_{2,2} y^2 \), where there is no \( a_{1, 0} \sim x^1 y_0 \) coefficient, nor any \( a_{0, 0} \sim x^0 y^0 \) coefficient. So this quotient is isomorphic to \( {\mathbb{C}}1 \oplus {\mathbb{C}}x \), which is 2-dimensional, so \( \mathop{\mathrm{len}}_{(0, 0)} V(y) \cap V(x) = 2 \). Geometrically we have the following, where this is picking up the multiplicity 2 intersection:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-35.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.remark}
+What's the payoff of this algebraic work? We can compute the Euler characteristic as
+\[
+\chi( {\mathcal{O}}_{C \cap D}) = h^0({\mathcal{O}}_{C \cap D}) = \sum_{p\in C \cap D} \mathop{\mathrm{len}}_p(C \cap D )
+.\]
+But by additivity of \( \chi \) over exact sequences, we also have
+\[
+\chi({\mathcal{O}}_{C \cap D}) 
+&= \chi({\mathcal{O}}_S) - \chi({\mathcal{O}}_S(-C)) - \chi({\mathcal{O}}_S(-D)) + \chi( {\mathcal{O}}_S( -C -D))\\
+&\overset{HRR}{=}
+\int_S \qty{ \operatorname{ch}({\mathcal{O}}_S) - \operatorname{ch}({\mathcal{O}}_S(-C)) - \operatorname{ch}( {\mathcal{O}}_S(-D)) + \operatorname{ch}( {\mathcal{O}}_S(-C-D)) } \mathrm{td}(S) \\
+&= c_1( {\mathcal{O}}_S(-C)) \cdot c_1({\mathcal{O}}_S(-D)) \\
+&= \qty{ -[C] } \cdot \qty{ -[D] } \\
+&= C\cdot D
+.\]
+:::
+
+::: {.remark}
+Next time: adjunction formula that allows computing genus for surfaces.
+:::
+
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
 
 [^2]: Locally admits a chart to \( {\mathbb{C}}^n/ \Gamma \) for \( \Gamma \) a finite group.
 
 [^3]: Or more generally a finitely-generated \( {\mathcal{O}}{\hbox{-}} \)module, i.e. a coherent sheaf.
+
+[^4]: So \( X \) admits an embedding into some \( {\mathbb{CP}}^N \).

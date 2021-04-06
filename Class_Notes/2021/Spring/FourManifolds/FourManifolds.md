@@ -46,6 +46,7 @@
 \newcommand{\TT}[0]{{\mathbb{T}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
 \newcommand{\ZZG}[0]{{\mathbb{Z}G}}
+\newcommand{\ZZH}[0]{{\mathbb{Z}H}}
 \newcommand{\kG}[0]{{kG}}
 \newcommand{\znz}[0]{\mathbb{Z}/n\mathbb{Z}}
 \newcommand{\zpz}[0]{\mathbb{Z}/p\mathbb{Z}}
@@ -357,8 +358,8 @@
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\Hom}[0]{{\operatorname{Hom}}}
-\newcommand{\shom}{\mathscr{H}\operatorname{\kern -3pt {\calligra\large om}}}
-\newcommand{\Hsh}{{ \mathscr{H} }}
+\newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
+\newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
 \newcommand{\FS}{{ \text{FS} }}
 \newcommand{\HHom}{\mathscr{H}\kern-2pt\operatorname{om}}
@@ -461,13 +462,8 @@
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
-\DeclareMathOperator{\Ind}{Ind}
-\DeclareMathOperator{\ind}{Ind}
-\DeclareMathOperator{\coind}{Coind}
 \DeclareMathOperator{\proj}{Proj}
 \DeclareMathOperator{\Proj}{Proj}
-\DeclareMathOperator{\res}{Res}
-\DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\Hol}{Hol}
 \DeclareMathOperator{\Bun}{Bun}
 \DeclareMathOperator{\BiHol}{BiHol}
@@ -481,6 +477,7 @@
 \DeclareMathOperator{\nullity}{nullspace}
 \DeclareMathOperator{\projection}{Proj}
 \DeclareMathOperator{\Der}{Der}
+\DeclareMathOperator{\len}{len}
 \newcommand{\Suchthat}[0]{\middle\vert}
 \newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\delbar}[0]{\bar{\del}}
@@ -551,6 +548,19 @@
 \newcommand{\congbecause}[1]{\overset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
+\newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
+
+
+\newcommand{\cores}[0]{\operatorname{cores}}
+\newcommand{\res}[0]{\operatorname{res}}
+\newcommand{\Res}[0]{\operatorname{Res}}
+\newcommand{\infl}[0]{\operatorname{inf}}
+\newcommand{\coinfl}[0]{\operatorname{coinf}}
+\newcommand{\ind}[0]{\operatorname{ind}}
+\newcommand{\Ind}[0]{\operatorname{Ind}}
+\newcommand{\coInd}[0]{\operatorname{coInd}}
+
+\newcommand{\submfds}{\operatorname{SubMfds}}
 
 # Tuesday, January 12
 
@@ -5539,3 +5549,333 @@ There is some symmetry:
 :::{.exercise title="?"}
 Solve for $h^{1, 1}$ in terms of $q$ and $g$.
 :::
+
+# Friday, April 02
+
+## When Line Bundles are $\OO$ of a Divisor
+
+:::{.remark}
+Last time: if we have such a Hodge diamond, can we solve for $h^{1, 1}$?
+
+\begin{tikzcd}
+	&& 1 \\
+	& q && q \\
+	p && {h^{1, 1}} && p \\
+	& q && q \\
+	&& 1
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwyLCJoXnsxLCAxfSJdLFswLDIsInAiXSxbNCwyLCJwIl0sWzEsMywicSJdLFszLDMsInEiXSxbMiw0LCIxIl0sWzEsMSwicSJdLFszLDEsInEiXSxbMiwwLCIxIl1d)
+
+Recall Noether's formula
+\[
+\chi(S, \OO_S)
+&= \int \ch(\OO_S) \td(S) \\
+&= \int_S {x_1 \over 1-e^{-x_1} } {x_2 \over 1- e^{-x_2} } \\
+&= {K^2 + \chi_\Top(S) \over 12}
+,\]
+where $c_1(TS) = - K$ and $\chi_\Top$ is due to the Chern-Gauss-Bonet formula.
+We have
+\[
+\chi(\OO_S) = h^0(\OO_S) - h_1(\OO_S) + h^2(\OO_S) = 1-q+p
+.\]
+
+On the other hand,
+\[
+\chi_\Top(S) = 1 -2q + (2p + h^{1, 1}) -4q = 1-4q + 2^p + h^{1, 1}
+,\]
+so 
+\[
+12(1-q+p) = K^2 + 2-4g + 2p + h^{1, 1} \implies h^{1, 1} = 110 - 8q + 10p-K^2
+.\]
+
+:::
+
+:::{.remark}
+Recall the extraordinarily important exact sequence
+\[
+0 \to \OO(-p) \to \OO \to \OO_p \to 0
+,\]
+where the right-hand side is the sheaf of holomorphic functions vanishing at $p$ and this is an inclusion into the sheaf of holomorphic functions, and the right-hand term is the skyscraper sheaf.
+There is a similar exact sequence for an embedded curve $C\embeds S$ in a surface:
+\[
+0 \to \OO_S(-C) \to \OO_S \to \OO_C \to 0
+,\]
+where the left term is the sheaf of holomorphic functions vanishing on $C$. 
+Note that this has no global sections!
+Any function vanishing along a compact subset (?) are constant (?).
+Locally on an open set $U$, one can write $C \intersect U = V(f_u)$, since algebraically this ring is locally a PID.
+So this is a line bundle, where we can map into the trivial bundle by $\phi \mapsto \phi/f_u$.
+Thus
+\[
+\OO_S(U) / \OO_S(-C)(U) \cong \OO_C(C \intersect U )
+.\]
+We then get surjectivity since every holomorphic function on $C$ extends to a holomorphic function on $S$.
+
+Now letting $\bundle{E} \in\Vect(\Hol)$, we can tensor this exact sequence to get
+\[
+0 \to \bundle{E}(-C) \to \bundle{E} \to \ro{\bundle{E}}{C} \to 0
+,\]
+which is also exact since locally we have the splitting principle.
+:::
+
+:::{.proposition title="?"}
+Let $X$ be a smooth projective
+[^projective_Def-Reminder]
+complex manifold.
+Then every line bundle over $X$ is of the form $L = \OO_X(D)$ for some divisor $D = \sum n_i D_i \in \ZZ[\submfds(\codim_1)]$.
+
+[^projective_Def-Reminder]: 
+So $X$ admits an embedding into some $\CP^N$.
+
+:::
+
+## Proof
+
+:::{.proof title="?"}
+Let $H$ be a **hyperplane section**, i.e. an intersection of $X$ with a generic hyperplane in $\CP^N$.
+
+:::{.lemma title="Serre Vanishing Theorem"}
+For any vector bundle $\bundle{E}$ and all $i>0$, for $k\gg 0$ we have
+\[
+h^i(X, \bundle{E} \tensor \OO(kH) ) = 0
+.\]
+:::
+
+
+:::{.remark}
+We'll not prove this!
+It requires some heavy analysis and the Kahler identities, see Huybrechts complex geometry Prop 5.27.
+:::
+
+We can write
+\[
+\chi(L\tensor \OO(kH)) 
+&= \int_X \ch(L\tensor \OO(kH)) \td(X) \\
+&= \int_X \ch(L) \ch(H)^k \td(X) \\
+&= \int_X \qty{ 1 + c_1(L) + {c_1(L)^2 \over 2} + \cdots } 
+\cdot \qty{1+ kh + {(kh)^2 \over 2 } + \cdots + {(kh)^{\dim X} \over (\dim X)!} }
+\cdot \qty{1 + \td_1(X) + \td_2(X) + \cdots }
+.\]
+
+where $h$ is the restriction of the generator of $H^2(\CP^N; \ZZ)$ to $X$.
+Note that for $k$ large, the dominating term grows like $(kh)^{\dim X}$, so asymptotically we have
+\[
+\cdots \sim \int_X { k^{\dim X} h^{\dim X} \over (\dim X)! }
+.\]
+
+What is this $\dim(X)\dash$fold intersection?
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-25.pdf_tex} };
+\end{tikzpicture}
+
+We can slice $X$ by multiple hyperplanes, each homologically perturbed, and so $\int_X h^{\dim X}$ is the number of points where $\dim X$ generic hyperplanes intersect $X$, which is called the **degree** $\deg X$.
+This roughly follows from $\int_X \omega_\FS^{\dim X} > 0$.
+Alternatively, suppose $X \intersect H = \emptyset$, then $X \embeds H^c = \AA^N$.
+Then each holomorphic coordinate restricts to a constant on $X$ by the maximal principle.
+
+Back to what we were proving: we have
+\[
+\chi(L \tensor \OO(kH) ) \sim ck^{\dim X}
+,\]
+for $c$ some constant.
+By Serre Vanishing, $h^i(L\tensor \OO(kH)) = 0$ for $k\gg 0$, and so we obtain
+\[
+h^0(L\tensor \OO(kH)) \sim ck^{\dim X} \implies \exists k \text{ s.t. } h^0(L\tensor \OO(kH)) > 0
+.\]
+We conclude that there is some nonzero section $s\in \Hsh^0(X; L\tensor \OO(kH))$ for which $\OO(\div s) \cong L\tensor \OO(kH)$.
+Thus $L \cong \OO(\div s - kH)$, where $\div s- kH$ is some divisor.
+
+
+:::
+
+:::{.remark}
+With some more work, one can show $L\cong \OO(C-D)$ for $C,D$ *smooth* divisors.
+:::
+
+
+## Aside
+
+:::{.remark}
+Felix Klein has a "proof" of the existence of a meromorphic function on a Riemann surface.
+The argument roughly goes as follows:
+take your Riemann surface and make it out of metal.
+Attach it to a battery:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-39.pdf_tex} };
+\end{tikzpicture}
+
+This induces an electric potential function $V: C\to \RR$, where $V$ is the real part of the meromorphic function.
+Here $V$ is a harmonic function away from $p$ and $q$.
+:::
+
+# Monday, April 05
+
+
+:::{.remark}
+Last time: line bundles are of the form $\OO(D)$ for $D$ a divisor, and the extremely important SES
+\[
+0 \to \OO_S(-D) \to \OO_S \to \OO_D \to 0
+.\]
+We now want to discuss an alternative characterization of the intersection form on an algebraic surface.
+The next result comes from Beauville's "Complex Algebraic Surfaces":
+:::
+
+:::{.proposition title="?"}
+Let $S \in \Mfd^2(\CC)^\cpt$, then the intersection number between complex curves $C, D$ can be computed in the following ways:
+$C\cdot D = \deg \OO_S(C) \ro{}{D} = \sum_{p\in C \intersect D } \len_p(C \intersect D )$, where we'll define $\len_p$ soon.
+:::
+
+:::{.remark}
+This will count intersection points after a small perturbation.
+Note that not every two curves will intersect transversely: consider $\PP_2$ with a line $C$ and a tangent conic $D$:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_13-57.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+:::{.proof title="?"}
+We have the first equality because
+\[
+C\cdot D = \int_S [C] \capprod [D] = \int_C i^* [D]
+,\]
+where $i: C\injects S$ is the inclusion.
+This equality holds because if \( \alpha\in \Omega^2 \) is a 2-form, 
+\[
+\int_S [C] \cdot \alpha = \int \ro{ \alpha}{C}
+.\]
+Using the pullback commutes with taking Chern classes, we can write the 
+\[
+\int_C i^* [D] = \int_C i^* (c_1 (\OO(D))) = \int_C c_1( i^* \OO(D) ) = \int_C \OO(D)\ro{}{C} = \deg \OO(D) \ro{}{C}
+.\]
+Note that this formula was symmetric, so we could have done this the other way to obtain $\deg \OO_S(C)\ro{}{D} = \deg \OO_S(D) \ro{}{C}$.
+
+For the second equality, consider the following 4-term exact sequence: 
+\[
+0 \to \OO_S(-C -D) 
+\underset{p_1}{ \injectsvia{\tv{ s_D, s_C}} } \OO_S(-C) \oplus \OO_S(-D) 
+\underset{p_2}{ \mapsvia{\tv{s_D, -s_C}^t} } \OO_S 
+\underset{p_3}{\to} \OO_{C \intersect D} 
+\to 0
+.\]
+For the first map, we have
+\[
+\ts{ \text{Functions vanishing on } C+D} \injects
+\ts{ \text{Functions vanishing on } C}
+\oplus
+\ts{ \text{Functions vanishing on } D}
+.\]
+
+Locally we can write $C = V(f)$ and $D = V(g)$ for some holomorphic functions $f,g\in \Hol(U, \CC)$.
+We have the following picture:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-06.pdf_tex} };
+\end{tikzpicture}
+
+We have $s_C \in H^0(S; \OO_S(C))$ and $s_D \in H^0(S; \OO_S(D))$ as global sections where $V(s_c) = C, V(s_D) = D$.
+In a local trivialization, we can assume $\ro{s_C}{U} = f$ and $\ro{s_D}{U} = g$.
+So the first map is $(s_D, s_C)$.
+The next map is $\tv{s_C, -s_D}^t$ as a column vector, i.e. given a section \( (\varphi_1, \varphi_2) \in H^0(U, \OO_S(-C) \oplus \OO_S(-D) ) \) we send it to $\phi_1 \cdot s_D - \phi_2 \cdot s_C$.
+Why is this exact?
+Considering the composition, we have
+\[
+\phi \mapsvia{p_1}
+(\phi s_D, \phi s_C)
+\mapsvia{p_2}
+(\phi s_D) s_C - (\phi s_C) s_D = 0
+.\]
+
+So we get $\im p_1 \subseteq \ker p_2$.
+Why do we have the reverse containment for exactness?
+Looking locally, given a pair $\phi_1, \phi_2 \in \Hol(U; \CC)$ such that $\phi_1 \varphi- \phi_2 g = 0$ and locally $(\phi_1, \phi_2) \in \ker p_2$, we want to show that $\phi_1 = g \phi, \phi_2 = f\phi$ for some $f,g \in \Hol(U; \CC)$.
+Equivalently, we want to show that 
+\[
+\phi_1 f = \phi_2 g \implies g\divides \phi_1
+.\]
+If this is true, then we can set $\phi \da {\phi_1 \over g}$, since this would yield $g\phi = \phi_1$ and $f\phi = {f\phi_1 \over g} = \phi_2$.
+Note that we can divide here because the ring $\Hol(U;\CC)$ is a domain (i.e. it has no zero divisors) on small sets.
+
+:::{.question}
+Is $\Hol(U, \CC)$ a PID in general?
+:::
+
+:::{.answer}
+No! Take $U \subseteq \CC^2$ a ball around $z=0$, then $\gens{x, y}$ is not principal.
+:::
+
+However, this will form a UFD, which is weaker but still enough here.
+This is not obvious, but can be proved using the Weierstrass preparation theorem.
+This should be believable since $R$ a UFD implies $R[x]$ is a UFD, and $\CC[x, y] \subsetneq \Hol(U; \CC) \subsetneq \CC[[x, y]]$, and the latter is a UFD.
+So we do get exactness at this position.
+
+For exactness at the next position $\OO_S(-C) \oplus \OO_S(-D) \to \OO_S$, locally we have \( (\varphi_1, \varphi_2 ) \mapsto \varphi_1 f- \varphi_2 g \) where $V(f) = C \intersect U$ and $V(g) = D \intersect U$.
+We can write $\phi_1 f- \phi_2 g = \gens{f, g}$ locally, so 
+the cokernel sheaf of $p_2$ is given by 
+\[
+\coker p_2(U) \da {\OO_S(U) \over \im p_2} = { \OO_S(U) \over \gens{f, g}}
+.\]
+By definition, this is equal to $\OO_{V(f, g)} = \OO_{C \intersect D}$, and if $C \intersect D \intersect U = \emptyset$ then $\OO_{C \intersect D}(U) = 0$.
+So let $p \in \OO_{C \intersect D}$ and let $U_p \ni p$ which contains no other points $q\in C \intersect D$, since the set of intersection points is isolated (and thus finite).
+Note that compactness here prevents accumulation of intersection points.
+In this case, $\OO_{C \intersect D}(U_p)$ will be a finite-dimensional vector space $\CC^d$, and we'll define $\len_p(C \intersect D) \da d$.
+:::
+
+:::{.example title="?"}
+Let $U=\CC^2$ and take $f=y$ so $C\da V(f)$ is the x-axis, and set $g = y-x^2$ so $D\da V(g)$ is a parabola.
+We're then considering 
+\[ 
+{ \Hol(\CC^2) \over y \Hol(\CC^2) + (y-x^2) \Hol(\CC^2)} = {\Hol(\CC^2) \over \gens{ y, x^2 }  }
+.\]
+Elements in the ideal can be expanded as power series of the form $a_{0,1}y + a_{2, 0}x^2 + a_{1, 1} xy + a_{2,2} y^2$, where there is no $a_{1, 0} \sim x^1 y_0$ coefficient, nor any $a_{0, 0} \sim x^0 y^0$ coefficient.
+So this quotient is isomorphic to $\CC 1 \oplus \CC x$, which is 2-dimensional, so $\len_{(0, 0)} V(y) \intersect V(x) = 2$.
+Geometrically we have the following, where this is picking up the multiplicity 2 intersection:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-35.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+
+:::{.remark}
+What's the payoff of this algebraic work?
+We can compute the Euler characteristic as 
+\[
+\chi( \OO_{C \intersect D}) = h^0(\OO_{C \intersect D}) = \sum_{p\in C \intersect D} \len_p(C \intersect D )
+.\]
+But by additivity of $\chi$ over exact sequences, we also have
+\[
+\chi(\OO_{C \intersect D}) 
+&= \chi(\OO_S) - \chi(\OO_S(-C)) - \chi(\OO_S(-D)) + \chi( \OO_S( -C -D))\\
+&\equalsbecause{HRR}
+\int_S \qty{ \ch(\OO_S) - \ch(\OO_S(-C)) - \ch( \OO_S(-D)) + \ch( \OO_S(-C-D)) } \td(S) \\
+&= c_1( \OO_S(-C)) \cdot c_1(\OO_S(-D)) \\
+&= \qty{ -[C] } \cdot \qty{ -[D] } \\
+&= C\cdot D
+.\]
+
+:::
+
+:::{.remark}
+Next time: adjunction formula that allows computing genus for surfaces.
+:::
+
+
+
+
+
+
+
+
+
+
+
