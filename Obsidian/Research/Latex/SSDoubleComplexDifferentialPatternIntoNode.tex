@@ -1,0 +1,28 @@
+\documentclass[convert]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+\usepackage{mathdots}
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)]
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\begin{document}
+
+\begin{tikzpicture}
+\draw [dashed] (-3.5,-5) -- (-3.5,5);
+\draw [dashed] (-8, -2) -- (8,-2);
+\node[scale=1.5] (a) at (0,0) {
+\begin{tikzcd}[scale=4,samples=200]
+\ddots  & \vdots & \vdots & \vdots & \vdots & \iddots \\ 
+\cdots& \cdot & \cdot & \cdot & \cdot & \cdots &  \\
+\cdots& \cdot & \encircle{$\bullet$} \arrow[u, "d_0^{\,0,1}",blue]  \arrow[r, "d_1^{\,0,1}",teal] \arrow[rrd, "{d_2^{\,0,1}}",red] \ar[dotted, rrrdd, "d_{>2}^{0,1}" near end, gray] & \cdot & \cdot& \cdots &  \\
+\cdots& \cdot & \cdot & \cdot & \cdot & \cdots &  \\
+\cdots& \cdot & \cdot & \cdot & \cdot & \cdots & \\
+\iddots& \vdots& \vdots& \vdots& \vdots& \ddots&
+\end{tikzcd}
+};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,288 @@
+
+% Otherwise some colors may look a bit different in ipe and TeX
+\PassOptionsToPackage{rgb}{xcolor}
+
+\documentclass{article}
+\usepackage[papersize={595bp,842bp},scale=1,margin=0pt]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,patterns}
+\usetikzlibrary{ipe} % ipe compatibility library
+
+\tikzstyle{ipe stylesheet} = [
+  ipe import,
+  even odd rule,
+  line join=round,
+  line cap=butt,
+  ipe pen normal/.style={line width=0.4},
+  ipe pen heavier/.style={line width=0.8},
+  ipe pen fat/.style={line width=1.2},
+  ipe pen ultrafat/.style={line width=2},
+  ipe pen normal,
+  ipe mark normal/.style={ipe mark scale=3},
+  ipe mark large/.style={ipe mark scale=5},
+  ipe mark small/.style={ipe mark scale=2},
+  ipe mark tiny/.style={ipe mark scale=1.1},
+  ipe mark normal,
+  /pgf/arrow keys/.cd,
+  ipe arrow normal/.style={scale=7},
+  ipe arrow large/.style={scale=10},
+  ipe arrow small/.style={scale=5},
+  ipe arrow tiny/.style={scale=3},
+  ipe arrow normal,
+  /tikz/.cd,
+  ipe arrows, % update arrows
+  <->/.tip = ipe normal,
+  ipe dash normal/.style={dash pattern=},
+  ipe dash dotted/.style={dash pattern=on 1bp off 3bp},
+  ipe dash dashed/.style={dash pattern=on 4bp off 4bp},
+  ipe dash dash dotted/.style={dash pattern=on 4bp off 2bp on 1bp off 2bp},
+  ipe dash dash dot dotted/.style={dash pattern=on 4bp off 2bp on 1bp off 2bp on 1bp off 2bp},
+  ipe dash normal,
+  ipe node/.append style={font=\normalsize},
+  ipe stretch normal/.style={ipe node stretch=1},
+  ipe stretch normal,
+  ipe opacity 10/.style={opacity=0.1},
+  ipe opacity 30/.style={opacity=0.3},
+  ipe opacity 50/.style={opacity=0.5},
+  ipe opacity 75/.style={opacity=0.75},
+  ipe opacity opaque/.style={opacity=1},
+  ipe opacity opaque,
+]
+
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{blue}{rgb}{0,0,1}
+\definecolor{green}{rgb}{0,1,0}
+\definecolor{yellow}{rgb}{1,1,0}
+\definecolor{orange}{rgb}{1,0.647,0}
+\definecolor{gold}{rgb}{1,0.843,0}
+\definecolor{purple}{rgb}{0.627,0.125,0.941}
+\definecolor{gray}{rgb}{0.745,0.745,0.745}
+\definecolor{brown}{rgb}{0.647,0.165,0.165}
+\definecolor{navy}{rgb}{0,0,0.502}
+\definecolor{pink}{rgb}{1,0.753,0.796}
+\definecolor{seagreen}{rgb}{0.18,0.545,0.341}
+\definecolor{turquoise}{rgb}{0.251,0.878,0.816}
+\definecolor{violet}{rgb}{0.933,0.51,0.933}
+\definecolor{darkblue}{rgb}{0,0,0.545}
+\definecolor{darkcyan}{rgb}{0,0.545,0.545}
+\definecolor{darkgray}{rgb}{0.663,0.663,0.663}
+\definecolor{darkgreen}{rgb}{0,0.392,0}
+\definecolor{darkmagenta}{rgb}{0.545,0,0.545}
+\definecolor{darkorange}{rgb}{1,0.549,0}
+\definecolor{darkred}{rgb}{0.545,0,0}
+\definecolor{lightblue}{rgb}{0.678,0.847,0.902}
+\definecolor{lightcyan}{rgb}{0.878,1,1}
+\definecolor{lightgray}{rgb}{0.827,0.827,0.827}
+\definecolor{lightgreen}{rgb}{0.565,0.933,0.565}
+\definecolor{lightyellow}{rgb}{1,1,0.878}
+\definecolor{black}{rgb}{0,0,0}
+\definecolor{white}{rgb}{1,1,1}
+
+\begin{document}
+\thispagestyle{empty}
+\noindent
+\begin{tikzpicture}[ipe stylesheet]
+  \useasboundingbox (0, 0) rectangle (595, 842);
+  \filldraw[shift={(-5.57, 854.768)}, xscale=1.179, yscale=1.4409, draw=black, ipe pen ultrafat, fill=black]
+    (0, 0) rectangle (516.6101, -598.283);
+  \filldraw[shift={(148.069, 489.229)}, yscale=1.0025, rgb color={draw=0.514 0.173 0.42}, ipe pen heavier, rgb color={fill=0.514 0.173 0.42}]
+    (0, 0)
+     .. controls (-72.5356, -65.228) and (-81.1774, -93.0145) .. (-82.1302, -120.9119)
+     .. controls (-83.083, -148.8093) and (-76.3469, -176.8177) .. (-45.1419, -207.7613)
+     .. controls (-13.9368, -238.705) and (41.737, -272.584) .. (93.347, -231.745)
+     .. controls (115.7857, -238.0277) and (139.1097, -239.159) .. (163.319, -235.139)
+     .. controls (177.678, -282.47) and (225.0085, -296.4295) .. (263.1211, -296.0084)
+     .. controls (301.2337, -295.5873) and (330.1283, -280.7857) .. (346.304, -262.9703)
+     .. controls (362.4797, -245.155) and (365.9363, -224.326) .. (347.7663, -201.0152)
+     .. controls (329.5963, -177.7043) and (289.7997, -151.9117) .. (249.1368, -124.8946)
+     .. controls (208.474, -97.8775) and (166.945, -69.636) .. (0, 0);
+  \filldraw[shift={(147.356, 492.593)}, xscale=0.9912, yscale=1.0163, rgb color={draw=1 0.306 0.62}, ipe pen ultrafat, rgb color={fill=1 0.306 0.62}]
+    (0, 0)
+     .. controls (-24.666, 29.884) and (-57.5934, 26.733) .. (-72.2633, 19.7083)
+     .. controls (-86.9332, 12.6837) and (-83.3456, 1.7853) .. (-80.3539, -6.3553)
+     .. controls (-77.3621, -14.496) and (-74.9663, -19.879) .. (-67.5723, -29.4955)
+     .. controls (-60.1783, -39.112) and (-47.7861, -52.962) .. (-36.2071, -52.8393)
+     .. controls (-24.628, -52.7167) and (-13.862, -38.6213) .. (-5.1978, -25.8517)
+     .. controls (3.4665, -13.082) and (10.029, -1.638) .. (0, 0);
+  \filldraw[shift={(444.21, 602.573)}, xscale=1.004, yscale=0.9976, rgb color={draw=1 0.306 0.62}, ipe pen ultrafat, rgb color={fill=1 0.306 0.62}]
+    (0, 0)
+     .. controls (47.644, 13.564) and (91.4265, 12.0815) .. (109.851, -10.746)
+     .. controls (128.2755, -33.5735) and (121.342, -77.746) .. (81.704, -104.492)
+     .. controls (124.075, -330.079) and (-100.38, -362.153) .. (-204.715, -327.8238)
+     .. controls (-309.05, -293.4947) and (-293.265, -192.7623) .. (-220.3182, -118.8974)
+     .. controls (-147.3715, -45.0325) and (-17.263, 1.965) .. (0, -0.157);
+  \filldraw[rgb color={draw=0.969 0.545 0.839}, ipe pen ultrafat, rgb color={fill=0.478 0.314 0.435}]
+    (458.046, 611.522)
+     .. controls (497.387, 619.19) and (508.6045, 613.9145) .. (516.3961, 610.3471)
+     .. controls (524.1877, 606.7797) and (528.5533, 604.9203) .. (532.2925, 601.828)
+     .. controls (536.0317, 598.7357) and (539.1443, 594.4103) .. (540.0538, 590.0243)
+     .. controls (540.9633, 585.6383) and (539.6697, 581.1917) .. (534.3377, 571.6712)
+     .. controls (529.0057, 562.1507) and (519.6353, 547.5563) .. (509.8965, 539.4687)
+     .. controls (500.1577, 531.381) and (490.0503, 529.8) .. (481.3592, 542.9173)
+     .. controls (472.668, 556.0347) and (465.393, 583.8503) .. (461.7563, 597.7457)
+     .. controls (458.1195, 611.641) and (458.121, 611.616) .. (458.177, 611.616);
+  \filldraw[rgb color={draw=0.969 0.545 0.839}, ipe pen ultrafat, rgb color={fill=0.478 0.314 0.435}]
+    (149.0881, 554.0569)
+     .. controls (144.3921, 565.5799) and (133.3636, 559.1994) .. (122.2302, 552.3068)
+     .. controls (111.0969, 545.4142) and (99.8586, 538.0096) .. (91.7975, 531.4451)
+     .. controls (83.7365, 524.8806) and (78.8525, 519.1562) .. (76.5944, 513.4846)
+     .. controls (74.3362, 507.8129) and (74.7038, 502.1939) .. (79.33, 497.8951)
+     .. controls (83.9563, 493.5962) and (92.8412, 490.6176) .. (106.12, 486.9709)
+     .. controls (119.3988, 483.3242) and (137.0714, 479.0096) .. (144.4938, 496.6927)
+     .. controls (151.9161, 514.3759) and (149.0881, 554.0569) .. (149.0881, 554.0569);
+  \filldraw[rgb color={draw=1 0.373 0.831}, ipe pen ultrafat, rgb color={fill=0.478 0.314 0.435}]
+    (321.5746, 480.4132) circle[radius=1, cm={188.706,-6.0392,6.1279,190.5318,(0,0)}];
+  \filldraw[rgb color={draw=0.267 0.188 0.502}, ipe pen ultrafat, rgb color={fill=0.267 0.188 0.502}]
+    (294.2037, 543.0188) circle[radius=1, cm={20.0992,-5.0925,11.9447,56.7098,(0,0)}];
+  \filldraw[rgb color={draw=0.831 0.502 0.749}, ipe pen ultrafat, rgb color={fill=0.831 0.502 0.749}]
+    (185.5114, 369.3135) ellipse[x radius=97.8196, y radius=106.0177];
+  \filldraw[rgb color={draw=0.267 0.188 0.502}, ipe pen ultrafat, rgb color={fill=0.267 0.188 0.502}]
+    (382.0257, 522.2907) circle[radius=1, cm={22.1267,-5.2631,17.828,56.0195,(0,0)}];
+  \filldraw[rgb color={draw=0.831 0.502 0.749}, ipe pen ultrafat, rgb color={fill=0.831 0.502 0.749}]
+    (403.7957, 276.1184) ellipse[x radius=86.9848, y radius=67.7823];
+  \filldraw[rgb color={draw=0.875 0.318 0.702}, ipe pen ultrafat, rgb color={fill=0.875 0.318 0.702}]
+    (430.1018, 463.9552) circle[radius=1, cm={33.4963,-5.894,3.0377,16.8146,(0,0)}];
+  \filldraw[rgb color={draw=0.875 0.318 0.702}, ipe pen ultrafat, rgb color={fill=0.875 0.318 0.702}]
+    (218.145, 514.7955) ellipse[x radius=27.7466, y radius=16.764, rotate=-5.3344];
+  \filldraw[white, ipe pen ultrafat]
+    (387.7243, 544.0392) circle[radius=1, cm={10.7318,-3.7069,5.333,17.3216,(0,0)}];
+  \filldraw[rgb color={draw=0.675 0.588 0.929}, ipe pen ultrafat, line join=round, line cap=round, rgb color={fill=0.675 0.588 0.929}]
+    (384.949, 519.609)
+     .. controls (382.0777, 514.8397) and (379.419, 512.1813) .. (376.973, 511.634)
+     .. controls (375.384, 511.278) and (373.593, 512.205) .. (372.375, 513.286)
+     .. controls (370.533, 514.922) and (371.391, 519.072) .. (369.07, 519.897)
+     .. controls (368.029, 520.266) and (366.786, 519.356) .. (366.052, 518.531)
+     .. controls (363.303, 515.452) and (362.512, 509.535) .. (361.669, 504.808)
+     .. controls (361.189, 502.117) and (360.25, 499.136) .. (361.31, 496.616)
+     .. controls (362.033, 494.897) and (364.432, 494.425) .. (365.477, 492.88)
+     .. controls (366.691, 491.085) and (366.552, 488.844) .. (367.911, 487.504)
+     .. controls (369.619, 486.281) and (370.357, 485.834) .. (372.648, 485.912)
+     .. controls (374.415, 486.242) and (376.046, 487.426) .. (376.609, 489.135)
+     .. controls (378.259, 493.309) and (375.463, 497.134) .. (378.41, 500.712)
+     .. controls (378.987, 502.487) and (379.962, 504.152) .. (380.9, 506.163)
+     .. controls (383.501, 508.494) and (387.501, 511.23) .. (388.53, 513.211)
+     .. controls (389.249, 515.327) and (389.016, 517.366) .. (387.715, 519.307)
+     .. controls (386.6277, 520.9123) and (385.7057, 521.013) .. (384.949, 519.609);
+  \filldraw[rgb color={draw=0.675 0.588 0.929}, ipe pen ultrafat, line join=round, line cap=round, rgb color={fill=0.675 0.588 0.929}]
+    (299.469, 530.329)
+     .. controls (297.5737, 527.8423) and (294.6163, 526.7987) .. (290.597, 527.198)
+     .. controls (285.518, 524.919) and (287.996, 540.084) .. (284.771, 541.908)
+     .. controls (280.971, 542.212) and (281.44, 538.764) .. (279.098, 536.465)
+     .. controls (274.202, 530.42) and (275.063, 520.625) .. (278.33, 513.344)
+     .. controls (282.437, 512.224) and (280.944, 506.81) .. (281.691, 506.063)
+     .. controls (285.053, 502.363) and (288.505, 500.742) .. (290.932, 505.409)
+     .. controls (294.759, 510.263) and (294.133, 511.312) .. (296.737, 514.918)
+     .. controls (297.559, 522.772) and (300.949, 522.662) .. (302.414, 523.08)
+     .. controls (306.807, 526.204) and (302.294, 533.9) .. (299.454, 530.344)
+    (301.107, 531.08)
+     .. controls (301.107, 531.08) and (301.107, 531.08) .. (301.107, 531.08);
+  \filldraw[white, ipe pen ultrafat]
+    (301.0734, 565.9386) circle[radius=1, cm={10.7318,-3.7069,5.333,17.3216,(0,0)}];
+  \filldraw[rgb color={draw=0.514 0.173 0.42}, ipe pen ultrafat, rgb color={fill=0.514 0.173 0.42}, ipe opacity 75]
+    (162.0377, 360.0703) ellipse[x radius=63.8621, y radius=86.6049];
+  \filldraw[rgb color={draw=0.667 1 1}, ipe pen ultrafat, fill=white]
+    (278.609, 279.249)
+     .. controls (278.609, 279.249) and (278.609, 279.249) .. (278.609, 279.249);
+  \filldraw[rgb color={draw=0.875 0.318 0.702}, ipe pen ultrafat, rgb color={fill=0.875 0.318 0.702}]
+    (322.3294, 465.6189) circle[radius=1, cm={25.0958,-4.5337,1.597,12.6434,(0,0)}];
+  \filldraw[rgb color={draw=0.949 0.706 0.882}, ipe pen ultrafat, rgb color={fill=0.949 0.706 0.882}]
+    (319.9516, 452.3156) circle[radius=1, cm={20.8574,2.5312,-3.889,17.5576,(0,0)}];
+  \filldraw[draw=black, ipe pen ultrafat, fill=black]
+    (318.3391, 451.0534) circle[radius=1, cm={-5.3476,0.9576,-0.2947,-1.939,(0,0)}];
+  \filldraw[shift={(333.599, 636.546)}, rotate=-7.773, draw=black, ipe pen ultrafat, rgb color={fill=0.706 0.165 0.855}]
+    (0, 0)
+     .. controls (-20.12, 24.5958) and (-60.4487, 47.0202) .. (-77.2113, 53.4402)
+     .. controls (-93.974, 59.8602) and (-87.1707, 50.2758) .. (-67.0507, 25.68)
+     .. controls (-46.9307, 1.0842) and (-13.494, -38.5232) .. (3.2687, -44.9432)
+     .. controls (20.0313, -51.3632) and (20.12, -24.5958) .. cycle;
+  \filldraw[shift={(398.378, 628.717)}, rotate=170.0743, yscale=-1, draw=black, ipe pen ultrafat, rgb color={fill=0.706 0.165 0.855}]
+    (0, 0)
+     .. controls (-20.12, 24.5958) and (-60.4487, 47.0202) .. (-77.2113, 53.4402)
+     .. controls (-93.974, 59.8602) and (-87.1707, 50.2758) .. (-67.0507, 25.68)
+     .. controls (-46.9307, 1.0842) and (-13.494, -38.5232) .. (3.2687, -44.9432)
+     .. controls (20.0313, -51.3632) and (20.12, -24.5958) .. cycle;
+  \filldraw[draw=black, ipe pen ultrafat, fill=black]
+    (91.6345, 698.938) rectangle (83.7623, 703.858);
+  \filldraw[shift={(120.612, 928.031)}, cm={1.1825,0.758,-0.5722,1.3359,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(299.734, 969.123)}, cm={1.3561,0.3658,-0.1424,1.4463,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(350.425, 120.698)}, cm={1.3171,0.488,-0.2738,1.4273,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(477.062, 151.475)}, xscale=1.3036, yscale=1.5445, rotate=39.1481, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(573.093, 246.514)}, cm={0.4657,1.3251,-1.2731,0.7009,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(-11.012, 859.969)}, xscale=1.3036, yscale=1.5445, rotate=39.1481, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(147.178, -69.668)}, cm={-1.3348,0.4372,-0.6735,-1.2878,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(-4.383, 8.849)}, cm={-1.1575,0.7956,-1.0091,-1.0458,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(-154.705, 99.622)}, cm={-0.9165,1.0643,-1.2423,-0.7542,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(461.08, 714.6)}, cm={-1.3348,0.4372,-0.6735,-1.2878,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(545.19, 643.34)}, cm={-0.8794,1.0952,-1.2674,-0.711,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(-143.488, 727.043)}, cm={0.6444,1.248,-1.1639,0.8702,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(-213.22, 251.884)}, cm={-0.7201,1.2059,-1.3533,-0.5296,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(572.032, 502.727)}, cm={-0.2272,-1.3861,-1.4533,-0.0041,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(550.106, 391.965)}, cm={-0.2337,-1.7647,-1.4949,-0.0053,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[shift={(-234.154, 498.239)}, cm={-0.2337,-1.7647,-1.4949,-0.0053,(0,0)}, rgb color={draw=0.149 0.694 0.988}, ipe pen ultrafat, rgb color={fill=0.149 0.694 0.988}]
+    (0, 0) rectangle (23.616, -179.091);
+  \filldraw[rgb color={draw=0.608 0.153 0.753}, ipe pen ultrafat, rgb color={fill=0.608 0.153 0.753}]
+    (145.7372, 639.8342)
+     .. controls (180.6272, 595.6172) and (199.1087, 608.3987) .. (208.0614, 622.965)
+     .. controls (217.0142, 637.5312) and (216.4382, 653.8822) .. (216.1502, 662.0577)
+     .. controls (215.8622, 670.2332) and (215.8622, 670.2332) .. (218.6259, 670.0029)
+     .. controls (221.3895, 669.7725) and (226.9169, 669.3119) .. (229.6805, 669.0815)
+     .. controls (232.4442, 668.8512) and (232.4442, 668.8512) .. (231.0624, 661.0212)
+     .. controls (229.6805, 653.1912) and (226.9169, 637.5312) .. (222.6564, 626.477)
+     .. controls (218.3959, 615.4229) and (212.6385, 608.9745) .. (206.7084, 604.1382)
+     .. controls (200.7782, 599.3019) and (194.6752, 596.0775) .. (186.0967, 595.9047)
+     .. controls (177.5182, 595.7319) and (166.4642, 598.6105) .. (157.8282, 604.4255)
+     .. controls (149.1922, 610.2405) and (142.9742, 618.9919) .. (140.153, 623.4252)
+     .. controls (137.3319, 627.8585) and (137.9075, 627.9739) .. (138.1954, 628.0315)
+     .. controls (138.4832, 628.0892) and (138.4832, 628.0892) .. (139.6922, 630.0467)
+     .. controls (140.9012, 632.0042) and (143.3192, 635.9192) .. (144.5282, 637.8767)
+     .. controls (145.7372, 639.8342) and (145.7372, 639.8342) .. (145.7372, 639.8342);
+  \filldraw[shift={(167.929, 542.006)}, xscale=0.8745, yscale=0.8505, rotate=113.3641, rgb color={draw=0.608 0.153 0.753}, ipe pen ultrafat, rgb color={fill=0.608 0.153 0.753}]
+    (0, 0)
+     .. controls (34.89, -44.217) and (53.3715, -31.4355) .. (62.3242, -16.8692)
+     .. controls (71.277, -2.303) and (70.701, 14.048) .. (70.413, 22.2235)
+     .. controls (70.125, 30.399) and (70.125, 30.399) .. (72.8887, 30.1687)
+     .. controls (75.6523, 29.9383) and (81.1797, 29.4777) .. (83.9433, 29.2473)
+     .. controls (86.707, 29.017) and (86.707, 29.017) .. (85.3252, 21.187)
+     .. controls (83.9433, 13.357) and (81.1797, -2.303) .. (76.9192, -13.3572)
+     .. controls (72.6587, -24.4113) and (66.9013, -30.8597) .. (60.9712, -35.696)
+     .. controls (55.041, -40.5323) and (48.938, -43.7567) .. (40.3595, -43.9295)
+     .. controls (31.781, -44.1023) and (20.727, -41.2237) .. (12.091, -35.4087)
+     .. controls (3.455, -29.5937) and (-2.763, -20.8423) .. (-5.5842, -16.409)
+     .. controls (-8.4053, -11.9757) and (-7.8297, -11.8603) .. (-7.5418, -11.8027)
+     .. controls (-7.254, -11.745) and (-7.254, -11.745) .. (-6.045, -9.7875)
+     .. controls (-4.836, -7.83) and (-2.418, -3.915) .. (-1.209, -1.9575)
+     .. controls (0, 0) and (0, 0) .. (0, 0);
+  \filldraw[shift={(237.256, 596.202)}, cm={-0.5004,-0.3284,0.3786,-0.5281,(0,0)}, rgb color={draw=0.608 0.153 0.753}, ipe pen ultrafat, rgb color={fill=0.608 0.153 0.753}]
+    (0, 0)
+     .. controls (34.89, -44.217) and (53.3715, -31.4355) .. (62.3242, -16.8692)
+     .. controls (71.277, -2.303) and (70.701, 14.048) .. (70.413, 22.2235)
+     .. controls (70.125, 30.399) and (70.125, 30.399) .. (72.8887, 30.1687)
+     .. controls (75.6523, 29.9383) and (81.1797, 29.4777) .. (83.9433, 29.2473)
+     .. controls (86.707, 29.017) and (86.707, 29.017) .. (85.3252, 21.187)
+     .. controls (83.9433, 13.357) and (81.1797, -2.303) .. (76.9192, -13.3572)
+     .. controls (72.6587, -24.4113) and (66.9013, -30.8597) .. (60.9712, -35.696)
+     .. controls (55.041, -40.5323) and (48.938, -43.7567) .. (40.3595, -43.9295)
+     .. controls (31.781, -44.1023) and (20.727, -41.2237) .. (12.091, -35.4087)
+     .. controls (3.455, -29.5937) and (-2.763, -20.8423) .. (-5.5842, -16.409)
+     .. controls (-8.4053, -11.9757) and (-7.8297, -11.8603) .. (-7.5418, -11.8027)
+     .. controls (-7.254, -11.745) and (-7.254, -11.745) .. (-6.045, -9.7875)
+     .. controls (-4.836, -7.83) and (-2.418, -3.915) .. (-1.209, -1.9575)
+     .. controls (0, 0) and (0, 0) .. (0, 0);
+\end{tikzpicture}
+\end{document}
+

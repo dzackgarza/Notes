@@ -1,0 +1,121 @@
+{
+  "main": {
+    "id": "48892374d3ef467e",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d79af57e2e35eae",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8babe446ca605bc1",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d4b3f5d279d9110",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9abb984b6bba57b7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "82f7209fdb743cf8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 610
+  },
+  "right": {
+    "id": "a1502ca3cb933e96",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c0cc6ad106c7480",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72872f9be5fb7f95",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cddc9e8fb5f63099",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md"
+              }
+            }
+          },
+          {
+            "id": "f5723c16db5a18fa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md",
+    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Untitled.md",
+    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Untitled 2.png",
+    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Untitled 39.png",
+    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Untitled 1.png",
+    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Untitled.png",
+    "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
+    "Pasted image 20210403003657.png",
+    "Pasted image 20210403003645.png",
+    "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md"
+  ]
+}

@@ -1,0 +1,6 @@
+- Add lens spaces to examples
+- Do some examples of natural transformations and the Yoneda lemma
+- Look at branched surfaces, foliations, orbifolds
+- Sutured manifolds
+- Dehn twists
+- Train tracks

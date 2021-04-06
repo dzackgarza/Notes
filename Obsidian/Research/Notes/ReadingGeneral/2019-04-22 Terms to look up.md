@@ -1,0 +1,14 @@
+- $p\dash$completions
+- The limit definitions of pullbacks/pushouts and products/coproducts
+- The action of $\pi_1 \actson \pi_n$
+- The unit of an adjunction
+- Monad, and its uses within Topology
+- A statement of the Yoneda lemma
+- Homotopy equivalence vs weakly homotopy equivalent vs quasi-isomorphisms
+- What are the subobjects and quotients of a category?
+- Kan extensions
+- Kan complex
+- Bousfield localization
+- Loop and Path spaces
+- Try to write a composition series as an exact sequence
+

@@ -1,0 +1,28 @@
+\documentclass[convert]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+\usepackage{mathdots}
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)]
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\begin{document}
+
+\begin{tikzpicture}
+\draw [dashed] (-3,-4) -- (-3,4);
+\draw [dashed] (-8, -2) -- (8,-2);
+\node[scale=1.5] (a) at (0,0) {
+\begin{tikzcd}[scale=4,samples=200]
+\ddots  & \vdots & \vdots & \vdots & \vdots & \iddots \\ 
+\cdots& E_0^{^{-1,2}} & E_0^{^{0,2}} & E_0^{^{1,2}} & E_0^{^{2,2}} & \cdots &  \\
+\cdots& E_0^{^{-1,1}} & \encircle{$E_0^{0,1}$} \arrow[rrd, "{d_2^{\,0,1}}"] \arrow[u, "d_0^{\,0,1}"] \arrow[r, "d_1^{\,0,1}"] & E_0^{^{1,1}} & E_0^{^{2,1}} & \cdots &  \\
+\cdots& E_0^{^{-1,0}} & E_0^{^{0,0}} & E_0^{^{1,0}} & E_0^{^{2,0}} & \cdots &  \\
+\cdots& E_0^{^{-1,-1}} & E_0^{^{0,-1}} & E_0^{^{1,-1}} & E_0^{^{2,-1}} & \cdots & \\
+\iddots& \vdots& \vdots& \vdots& \vdots& \ddots&
+\end{tikzcd}
+};
+\end{tikzpicture}
+
+\end{document}

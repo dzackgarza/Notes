@@ -1,0 +1,30 @@
+\documentclass[convert]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{dsfont}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{adjustbox}
+\usepackage{mathdots}
+\usepackage{xcolor}
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)]
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+\begin{document}
+
+\begin{tikzpicture}
+\draw [dashed] (-4,-5) -- (-4,5);
+\draw [dashed] (-8, -2.3) -- (8,-2.3);
+\node[scale=1.5] (a) at (0,0) {
+\begin{tikzcd}[scale=4,samples=200]
+\ddots  & \vdots                                  & \vdots                                 & \vdots                                & \vdots                                & \iddots \\
+\cdots  \ar[teal, r, "d_1^{-1,2}" near end]& E_1^{-1,2}  \ar[teal, r, "d_1^{-1,2}" near end]  & E_1^{0,2}  \ar[teal, r, "d_1^{0,2}" near end]  & E_1^{1,2}  \ar[teal, r, "d_1^{1,2}" near end]  & E_1^{2,2} 	\ar[teal, r, "d_1^{2,2}" near end] & \cdots     & \\
+\cdots  \ar[teal, r, "d_1^{-1,2}" near end]& E_1^{-1,1}  \ar[teal, r, "d_1^{-1,1}" near end]  & E_1^{0,1}  \ar[teal, r, "d_1^{0,1}" near end]  & E_1^{1,1}  \ar[teal, r, "d_1^{1,1}" near end]  & E_1^{2,1}	\ar[teal, r, "d_1^{2,1}" near end]  & \cdots     & \\
+\cdots  \ar[teal, r, "d_1^{-1,2}" near end]& E_1^{-1,0}  \ar[teal, r, "d_1^{-1,0}" near end]  & E_1^{0,0}  \ar[teal, r, "d_1^{0,0}" near end]  & E_1^{1,0}  \ar[teal, r, "d_1^{1,0}" near end]  & E_1^{2,0}	\ar[teal, r, "d_1^{2,0}" near end]  & \cdots     & \\
+\cdots  \ar[teal, r, "d_1^{-1,2}" near end]& E_1^{-1,-1} \ar[teal, r, "d_1^{-1,-1}" near end] & E_1^{0,-1} \ar[teal, r, "d_1^{0,-1}" near end] & E_1^{1,-1} \ar[teal, r, "d_1^{1,-1}" near end] & E_1^{2,-1}	\ar[teal, r, "d_1^{2,-1}" near end] & \cdots     & \\
+\iddots & \vdots     & \vdots     & \vdots     & \vdots	    & \ddots     &
+\end{tikzcd}
+};
+\end{tikzpicture}
+
+\end{document}

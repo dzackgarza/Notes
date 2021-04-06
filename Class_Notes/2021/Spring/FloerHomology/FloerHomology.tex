@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-05 }
+{\tiny \textit{Last updated:} 2021-04-06 }
 \end{flushleft}
 
 
@@ -6620,6 +6620,406 @@ M\in {\mathsf{Mfd}}^3 {~\mathrel{\Big|}~}\text{closed, oriented, connected}
 \end{align*}
 
 \end{theorem}
+
+\hypertarget{tuesday-april-06}{%
+\section{Tuesday, April 06}\label{tuesday-april-06}}
+
+\hypertarget{surgery-exact-triangle}{%
+\subsection{Surgery Exact Triangle}\label{surgery-exact-triangle}}
+
+\begin{definition}[Surgery on a Knot]
+
+Recall that for \(K \subseteq M^3\) a knot, surgery on \(K\) involves
+the following: take a tubular neighborhood of \(K\),
+\(\operatorname{nd}(K)\), and set
+\(X \coloneqq M \setminus\operatorname{nd}(K)\), whose boundary is a
+solid torus \(S^1 \times{\mathbb{D}}^2\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-06-11-18-17.png}
+\caption{image\_2021-04-06-11-18-17}
+\end{figure}
+
+Take a basis for its homology:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mu\) to be a meridian of \(K\), which bounds a disc in \(M^3\).
+\item
+  \(\lambda\) to be a meridian of \(K\) with
+  \(\#(\mu \cap\lambda) = -1\). Note that there are many choices, we can
+  wind many times:
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-06-11-19-05.png}
+\caption{image\_2021-04-06-11-19-05}
+\end{figure}
+
+We can then write any simple closed curve \(\gamma\) as
+\([\gamma] = p[\mu] + q[\lambda]\), where for shorthand we'll just write
+\(\gamma= p \mu + q \lambda\). We'll refer to the pair \((K, \lambda)\)
+as a \textbf{framed knot} and the corresponding surgery as
+\(M_{p\over q}(K)\), which is surgery on \(K\) such that the following
+curve is \(p\mu + q\lambda\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-06-11-22-32.png}
+\caption{image\_2021-04-06-11-22-32}
+\end{figure}
+
+We'll write \(M_{ \lambda}(L) = M_0(K)\) for the surgery that sends
+\(\lambda\) to this curve instead, since this corresponds to
+\(p=0, q=1\).
+
+\end{definition}
+
+\begin{definition}[Triad of 3-Manifolds]
+
+Suppose \(\gamma_0, \gamma_1, \gamma_{\infty }\) are oriented simple
+closed curves on \({{\partial}}X = M - \operatorname{nd}(K)\) such that
+\begin{align*}
+-1 = \#( \gamma_0 \cap\gamma_1) = \#( \gamma_1 \cap\gamma_{\infty }) = \#( \gamma_{\infty } \cap\gamma_0)
+,\end{align*}
+and we have a cyclic ordering
+
+\begin{center}
+\begin{tikzcd}
+    & {\gamma_0} \\
+    \\
+    {\gamma_\infty} && {\gamma_1}
+    \arrow["{-1}", curve={height=-12pt}, from=1-2, to=3-3]
+    \arrow["{-1}", curve={height=-18pt}, from=3-3, to=3-1]
+    \arrow["{-1}", curve={height=-12pt}, from=3-1, to=1-2]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMSwwLCJcXGdhbW1hXzAiXSxbMiwyLCJcXGdhbW1hXzEiXSxbMCwyLCJcXGdhbW1hX1xcaW5mdHkiXSxbMCwxLCItMSIsMCx7ImN1cnZlIjotMn1dLFsxLDIsIi0xIiwwLHsiY3VydmUiOi0zfV0sWzIsMCwiLTEiLDAseyJjdXJ2ZSI6LTJ9XV0=}{Link
+to Diagram}
+\end{quote}
+
+Then writing \(M_{i } \coloneqq M_{ \gamma_{i }}(K)\), the triple
+\((M_{\infty }, M_0, M_1)\) is a \textbf{tried of 3-manifold}.
+
+\end{definition}
+
+\begin{example}[?]
+
+Let
+\(\gamma_{\infty } = \mu, \gamma_0 = \lambda, \gamma_1 = a\mu - b\lambda\),
+and the punch line is that the third is determined by the other two.
+What are \(a\) and \(b\)? We have
+\begin{align*}
+\#(\gamma_0, \cap\gamma_1) = \#( \lambda, a\mu + b \lambda) = -a \#(\mu \cap\lambda) = (-1) a \implies a = -1 
+\\ \\
+\#( \gamma_1 \cap\gamma_{\infty }) = \#( a \mu + b\lambda, \mu) = b \#(\lambda \cap\mu) = b(1) = b \implies b = -1
+.\end{align*}
+We thus obtain the following picture, which has the curves arrange in a
+clockwise fashion:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-06-11-32-35.png}
+\caption{image\_2021-04-06-11-32-35}
+\end{figure}
+
+Here we get the triad \((M_{\infty }(K) = M, M_0(K), M_1(K)\).
+
+\end{example}
+
+\begin{exercise}[?]
+
+Show that \((M, M_{-1}(K), M_0(K))\) is also a triad.
+
+\end{exercise}
+
+\begin{example}[?]
+
+Let \(\lambda_{\infty } = p\mu + q\lambda\) and
+\(\lambda_0 = r\mu + s\lambda\), then
+\begin{align*}
+-1 
+&= \#( \gamma_{\infty } \cap\gamma_0) \\
+&= \#( p\mu + q \lambda, r \mu + s \lambda) \\
+&= ps \#( \mu \cap\lambda) + qr \# (\lambda \cap\mu) \\
+&= -ps + qr \\
+&\implies qr - ps = 1
+.\end{align*}
+
+Similarly,
+\begin{align*}
+-1 = \#( \gamma_0 \cap\gamma_1) &= sa -rb = -1 
+\#( \gamma_1 \cap\gamma_{\infty }) &= bp - aq = -1
+.\end{align*}
+
+\end{example}
+
+\begin{example}[?]
+
+Pick a framed knot \(K\) (or really just a fixed longitude), then pick
+\(\gamma_{\infty } = \mu, \gamma_0 = p\mu + \lambda\). Then
+\(\gamma_1 = (p+1) \mu + \lambda\), and we get the triad
+\(M_{\mu}(K) = M, M_{\gamma_0}(K) = M_p(K), M_{p+1}(K)\).
+
+\end{example}
+
+\begin{theorem}[?]
+
+Suppose \((M, M_0, M_1)\) is a triad, then there exist exact triangles:
+
+\begin{center}
+\begin{tikzcd}
+    {\widehat{\operatorname{HF}}(M_0)} && {\widehat{\operatorname{HF}}(M_1)} \\
+    \\
+    & {\widehat{\operatorname{HF}}(M_\infty)}
+    \arrow["{\widehat{F}_0}", from=1-1, to=1-3]
+    \arrow["{\widehat{F}_1}", from=1-3, to=3-2]
+    \arrow["{\widehat{F}_\infty}", from=3-2, to=1-1]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGhhdFxcSEYoTV8wKSJdLFsyLDAsIlxcaGF0XFxIRihNXzEpIl0sWzEsMiwiXFxoYXRcXEhGKE1fXFxpbmZ0eSkiXSxbMCwxLCJcXGhhdHtGfV8wIl0sWzEsMiwiXFxoYXR7Rn1fMSJdLFsyLDAsIlxcaGF0e0Z9X1xcaW5mdHkiXV0=}{Link
+to Diagram}
+\end{quote}
+
+\end{theorem}
+
+\begin{remark}
+
+Here exactness means that
+e.g.~\(\ker(\widehat{F}_1 = \operatorname{im}( \widehat{F}_0)\). There
+is a similar triangle for \(\operatorname{HF}^+\), as well as
+\(\operatorname{HF}^{\infty }\) and \(\operatorname{HF}^-\), although
+these are more complicated. However, \(\operatorname{HF}^-\) becomes
+easier to work with when one is looking at knot invariants instead.
+
+\end{remark}
+
+\begin{example}[?]
+
+Let \(K\) be the unknot in \(S^3\), and take as before
+\((S^3, S_0^3(K) = S^1 \times S^2, S_{+1}^3(K) = S^3\). We get the exact
+triangle
+
+\begin{center}
+\begin{tikzcd}
+    {\widehat{\operatorname{HF}}(S^3)= {\mathbb{Z}}/2 } && {\widehat{\operatorname{HF}}(S^1 \times S^2) = ({\mathbb{Z}}/2)^{\oplus 2}} \\
+    \\
+    & {\widehat{\operatorname{HF}}(S^3) = {\mathbb{Z}}/2}
+    \arrow["{\widehat{F}_0}", hook, from=1-1, to=1-3]
+    \arrow["{\widehat{F}_1}", two heads, from=1-3, to=3-2]
+    \arrow["{\widehat{F}_\infty = 0}", from=3-2, to=1-1]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGhhdFxcSEYoU14zKT0gXFxaWi8yICJdLFsyLDAsIlxcaGF0XFxIRihTXjEgXFxjcm9zcyBTXjIpID0gKFxcWlovMilee1xcb3BsdXMgMn0iXSxbMSwyLCJcXGhhdFxcSEYoU14zKSA9IFxcWlovMiJdLFswLDEsIlxcaGF0e0Z9XzAiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIlxcaGF0e0Z9XzEiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMiwwLCJcXGhhdHtGfV9cXGluZnR5ID0gMCJdXQ==}{Link
+to Diagram}
+\end{quote}
+
+\end{example}
+
+\begin{lemma}[?]
+
+Suppose the following is an exact triangle of vector spaces for some
+cyclic ordering:
+
+\begin{center}
+\begin{tikzcd}
+    {V_0} && {V_1} \\
+    \\
+    & {V_{\infty}}
+    \arrow["{f_1}", from=1-3, to=3-2]
+    \arrow["{f_\infty}", from=3-2, to=1-1]
+    \arrow["{f_0}", from=1-1, to=1-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJWXzAiXSxbMiwwLCJWXzEiXSxbMSwyLCJWX3tcXGluZnR5fSJdLFsxLDIsImZfMSJdLFsyLDAsImZfXFxpbmZ0eSJdLFswLDEsImZfMCJdXQ==}{Link
+to Diagram}
+\end{quote}
+
+Then
+\begin{align*}
+V_{\infty } = V_0 \oplus V_1 \iff {\operatorname{rank}}V_{\infty } = {\operatorname{rank}}(V_0) + {\operatorname{rank}}(V_1)
+,\end{align*}
+and if \(f_0 = 0\) then \(f_1\) is injective and \(f_{\infty }\) is
+surjective.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+\begin{align*}
+{\operatorname{rank}}V_{\infty } 
+&\cong {\operatorname{rank}}\ker f_{\infty } \bigoplus {\operatorname{rank}}\operatorname{im}f_{\infty } \\
+&= {\operatorname{rank}}\operatorname{im}f_1 \oplus \operatorname{im}f_{\infty } \\
+&\leq {\operatorname{rank}}V_1 + {\operatorname{rank}}V_0
+.\end{align*}
+Equality holds if and only if
+\({\operatorname{rank}}V_1 = {\operatorname{rank}}\operatorname{im}f_1\),
+which implies \(f_1\) is injective, and similarly
+\({\operatorname{rank}}V_0 = {\operatorname{rank}}\operatorname{im}f_{\infty } \implies f_{\infty }\)
+is surjective. These together would imply that \(f_0 = 0\).
+
+\end{proof}
+
+\begin{example}[?]
+
+For \(K\) the unknot in \(S^3\), take the triad
+\((S^3, S^3_p(K) = L(p, 1), L(p+1, 1)\). This yields the exact triangle
+
+\begin{center}
+\begin{tikzcd}
+    {\widehat{\operatorname{HF}}(S^3)={\mathbb{Z}}/2} && {\widehat{\operatorname{HF}}(L(p, 1))=({\mathbb{Z}}/2)^{\oplus p}} \\
+    \\
+    & {\widehat{\operatorname{HF}}(L(p+1, 1))=({\mathbb{Z}}/2)^{\oplus p+1}}
+    \arrow["{f_1}", hook', from=1-3, to=3-2]
+    \arrow["{f_\infty}", two heads, from=3-2, to=1-1]
+    \arrow["{f_0=0}", from=1-1, to=1-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGhhdHtcXEhGfShTXjMpPVxcWlovMiJdLFsyLDAsIlxcaGF0e1xcSEZ9KEwocCwgMSkpPShcXFpaLzIpXntcXG9wbHVzIHB9Il0sWzEsMiwiXFxoYXR7XFxIRn0oTChwKzEsIDEpKT0oXFxaWi8yKV57XFxvcGx1cyBwKzF9Il0sWzEsMiwiZl8xIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJib3R0b20ifX19XSxbMiwwLCJmX1xcaW5mdHkiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMCwxLCJmXzA9MCJdXQ==}{Link
+to Diagram}
+\end{quote}
+
+\end{example}
+
+\begin{remark}
+
+Note that this gives a way to produce \(L{\hbox{-}}\)spaces.
+
+\end{remark}
+
+\begin{definition}[$L\dash$spaces]
+
+Any \(M\in \operatorname{QHS}^3\) is called an
+\textbf{\(L{\hbox{-}}\)space} if
+\begin{align*}
+{\operatorname{rank}}\widehat{\operatorname{HF}}(M) = {\left\lvert { H_1(M; {\mathbb{Z}}) } \right\rvert}
+.\end{align*}
+
+\end{definition}
+
+\begin{example}[?]
+
+If \(p, q\) are coprime then
+\(\widehat{\operatorname{HF}}L(p, q) = ({\mathbb{Z}}/2)^{\oplus p}\)
+since there is one \(\mathrm{Spin}^{\mathbb{C} }\) class for each
+element of \(H^1\). So
+\({\operatorname{rank}}\widehat{\operatorname{HF}}= p\), and on the
+other hand,
+\({\left\lvert {H_1} \right\rvert} = {\left\lvert {{\mathbb{Z}}/p} \right\rvert} = p\).
+
+\end{example}
+
+\begin{exercise}[?]
+
+For any triad \((M_{\infty }, M_0, M_1)\) there exists a cyclic
+reordering such that
+\begin{align*}
+{\left\lvert { H_1(M_{\infty })} \right\rvert} =
+{\left\lvert { H_1(M_{0})} \right\rvert} =
+{\left\lvert { H_1(M_{1 })} \right\rvert}
+,\end{align*}
+where we define
+\begin{align*}
+{\left\lvert { H_1(M) } \right\rvert} =
+\begin{cases}
+\# H_1(M)  & \text{ if this is a finite group} 
+\\
+0 & \text{otherwise}.
+\end{cases}
+\end{align*}
+
+\end{exercise}
+
+\begin{example}[?]
+
+For the triad \((S^3, L(p, 1), L(p+1, 1))\) we have
+\begin{align*}
+p+1 {\left\lvert { H_1(L(p+1, 1) ) } \right\rvert} = {\left\lvert { H_1(S^3) } \right\rvert} + {\left\lvert { H_1( L(p, 1)) } \right\rvert} = 1 + p
+.\end{align*}
+
+\end{example}
+
+\begin{remark}
+
+This exercise is useful because it can be used to prove the following:
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Suppose \((M, M_0, M_1)\) is a triad with an ordering fixed such that
+\begin{align*}
+{\left\lvert { H_1 M } \right\rvert} = {\left\lvert { H_1 M_0} \right\rvert} + {\left\lvert { H_1 M_1 } \right\rvert}
+.\end{align*}
+If \(M_0, M_1\) are \(L{\hbox{-}}\)spaces, then \(M\) is also an
+\(L{\hbox{-}}\)space.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+We have the exact triangle
+
+\begin{center}
+\begin{tikzcd}
+    {{\left\lvert {H_1 M_0} \right\rvert} = {\operatorname{rank}}\widehat{\operatorname{HF}}(M_0)} && {{\left\lvert {H_1 M_1} \right\rvert} = {\operatorname{rank}}\widehat{\operatorname{HF}}(M_1)} \\
+    \\
+    & {\widehat{\operatorname{HF}}(M_)}
+    \arrow["{f_1}", from=1-3, to=3-2]
+    \arrow["{f_\infty}", from=3-2, to=1-1]
+    \arrow[from=1-1, to=1-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGFic3tIXzEgTV8wfSA9IFxccmtcXGhhdHtcXEhGfShNXzApIl0sWzIsMCwiXFxhYnN7SF8xIE1fMX0gPSBcXHJrXFxoYXR7XFxIRn0oTV8xKSJdLFsxLDIsIlxcaGF0e1xcSEZ9KE1fKSJdLFsxLDIsImZfMSJdLFsyLDAsImZfXFxpbmZ0eSJdLFswLDFdXQ==}{Link
+to Diagram}
+\end{quote}
+
+Thus
+\begin{align*}
+{\operatorname{rank}}\widehat{\operatorname{HF}}M 
+\leq {\operatorname{rank}}\widehat{\operatorname{HF}}M_0 + {\operatorname{rank}}\widehat{\operatorname{HF}}M_1 \\
+&\leq {\left\lvert { H_1 M_0} \right\rvert} + {\left\lvert { H_1 M_1 } \right\rvert} \\
+= {\left\lvert { H_1 M } \right\rvert}
+.\end{align*}
+
+In general,
+\({\left\lvert { H_1 M} \right\rvert} \leq {\operatorname{rank}}\widehat{\operatorname{HF}}M\),
+so we get an equality
+\({\operatorname{rank}}\widehat{\operatorname{HF}}M = {\left\lvert { H_1 M } \right\rvert}\).
+
+\end{proof}
+
+\begin{example}[?]
+
+Let \(K \subseteq S^3\) be a knot, and take the triad
+\((S^3, S_p^3(K), S_{p+1}^3(K)\). So if \(S_p^3(K)\) is an
+\(L{\hbox{-}}\)space, so is \(S_{p+1}^3(K)\). Inductively this shows
+that \(S^3_n(K)\) is an \(L{\hbox{-}}\)space for all \(n\geq p\).
+
+\end{example}
+
+\begin{example}[?]
+
+For \(K = T_{p, q}\), the surgery \(S^3_{pq-1}(T_{p, q})\) is a lens
+space. Thus \(S_n^3(T_{p, q})\) is an \(L{\hbox{-}}\)space for all
+\(n\geq pq-1\).
+
+\end{example}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]

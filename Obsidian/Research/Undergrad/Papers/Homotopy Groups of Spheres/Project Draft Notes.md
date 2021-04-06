@@ -1,0 +1,51 @@
+- CW Complexes
+- Define homotopy
+- Define homotopy invariance
+- Classification of abelian groups
+  - Free and torsion
+- Define $\pi_n(X)$
+  - Show functoriality
+  - Show homotopy invariant
+- Whitehead's Theorem (homotopy and homology versions)
+- $\pi_n$ for $n\geq 2$ is abelian
+- Compute $H_* S^n$
+- Compute $\pi_k S^1$
+- Cellular approximation theorem
+- Show $\pi_k S^n = 0$ for $k<n$
+- Show $\pi_n$ only depends on n-skeleton
+- Hurewicz theorem
+- Show $\pi_n S^n = Z$
+- Show $\pi_i S^n = 0$ for $i < n$
+- Define fibrations and fiber bundles
+- Define suspension and loop spaces
+- Show $\Sigma \to \Omega$ adjunction
+- Show how to use $\Sigma$ and $\Omega$ to move between $\pi_n$ using equalities
+- Freudenthal Suspension theorem
+- The homotopy LES of a fibration
+- Hopf Fibration
+  - Show $\pi_k S^2 = \pi_k S^3$
+  - Show $\pi_3 S^2 = Z$
+- Killing off homotopy groups
+- SS of a filtration
+- Serre SS
+  - Compute algebra structure of $CP^\infty$
+- Compute $\pi_4 S^2$
+- Compute first stable $\pi_k$
+- Freudenthal Suspension
+- Eilenberg-MacLane Spaces
+- $H^n (X; G) = [X, K(G, n)]$
+- Summary of "easy" results:
+  - $\pi_k S^1 = 0, i > 1$
+  - $\pi_n S^n = Z$
+  - $\pi_3 S^2 = Z$
+  - $\pi_k S^2 = \pi_k S^3$
+  - $\pi_i(S^n)$ is finite for $i > n$
+    - Except for $\pi_{4k-1}$
+  - See [here](https://web.stanford.edu/~amwright/HomotopyGroupsOfSoheres.pdf)
+- Harder results
+  - $\pi_{n+1} S^n = Z\delta_2 + Z_2 \delta_{n \geq 3}$
+  - $\pi_{n+2} S^n = Z_2$
+- Exact sequences
+- Splitting and extension problem
+- Degree of a map to $S^n$
+- Whitehead product and Lie Algebra structure of $\pi_*$
