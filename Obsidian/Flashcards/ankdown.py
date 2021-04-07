@@ -513,6 +513,7 @@ def main():
         os.chdir(initial_dir)
 
     os.system('notify-send "Ankdown" "New cards generated." --urgency=critical --expire-time=5000')
+    os.system('find /home/zack/Notes/Obsidian/Flashcards -iname "*.png" -exec cp {} /home/zack/.local/share/Anki2/User\ 1/collection.media/ \;')
 
 
 if __name__ == "__main__":

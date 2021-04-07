@@ -17,7 +17,7 @@ Definition: A natural transformation between $F, G: \mathcal{C}\to\mathcal{D}$
 %
 A natural transformation $\eta$ is a class of morphism $\eta = \theset{\eta_x: F(x) \to G(x)~\forall x\in  \mathcal{C}}$ such that the following square commutes:
 
-![](figures/image_2020-06-12-19-45-12.png)
+![](image_2020-06-12-19-45-12.png)
 
 %
 definition
