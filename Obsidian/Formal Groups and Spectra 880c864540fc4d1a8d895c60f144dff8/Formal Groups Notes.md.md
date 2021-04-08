@@ -12,28 +12,17 @@ Formal group law stuff
 
 # Basics
 
-- A
-	- 1
-	- 2
-	- 3
-- B
-	- 11
-	- 22
-	- 33
-- C
-	- asdqwe
-
 - Motivation: why should one care about formal groups?
 	- Idea: substitute for Lie algebras in positive characteristic
 	- Formal group and lie algebra carry the same info in char 0
 	- Functor: LieGroups (or AlgGrp) → LieAlgebras factors through FormalGroups ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png)
 - Motivation: if a formal group were for sale, why might you buy it?
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png)
+	- ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png)
 - What is a formal group law?
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%202.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%202.png)
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%203.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%203.png)
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%204.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%204.png)
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%205.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%205.png)
+	- ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%202.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%202.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%203.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%203.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%204.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%204.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%205.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%205.png)
 
 - Why is the group law called "formal"?
 
