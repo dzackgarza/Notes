@@ -6637,12 +6637,12 @@ For (2), use the tensor-hom adjunction. [^9]
 For \( H\leq G, A\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}, B\in {\mathsf{{\mathbb{Z}H}}{\hbox{-}}\mathsf{Mod}} \),
 \[
 \operatorname{Ext}_G^*(\operatorname{Ind}_h^G B, A) \cong \operatorname{Ext}_H^*(B, \operatorname{Res}_H^G A) && (1) \\
-\operatorname{Ext}_G^*(A, \Coind_H^G B) \cong \operatorname{Ext}_H^*(\operatorname{Res}_H^G A, B) && (1) 
+\operatorname{Ext}_G^*(A, \operatorname{coInd}_H^G B) \cong \operatorname{Ext}_H^*(\operatorname{Res}_H^G A, B) && (1) 
 .\]
 :::
 
 ::: {.remark}
-Taking \( A = {\mathbb{Z}}\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}^\operatorname{Triv} \), one gets result (2) in Shapiro's lemma. This shows that \( \operatorname{Ind} \) is left adjoint to \( \operatorname{Res} \) and \( \Coind \) is right adjoint to it, so these will have derived functors. A special case is when \( H = \left\{{ 1 }\right\} \) is the trivial group, in which case any \( H{\hbox{-}} \)module \( B \) is an abelian group such that \( B^H = B = B_H \). So \( ({\,\cdot\,})^H, ({\,\cdot\,})_H \) are exact, and thus their higher derived functors are zero, i.e. \( H_n(H, B) = 0 = H^n(H; B) \) for \( n>0 \). Moreover
+Taking \( A = {\mathbb{Z}}\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}^\operatorname{Triv} \), one gets result (2) in Shapiro's lemma. This shows that \( \operatorname{Ind} \) is left adjoint to \( \operatorname{Res} \) and \( \operatorname{coInd} \) is right adjoint to it, so these will have derived functors. A special case is when \( H = \left\{{ 1 }\right\} \) is the trivial group, in which case any \( H{\hbox{-}} \)module \( B \) is an abelian group such that \( B^H = B = B_H \). So \( ({\,\cdot\,})^H, ({\,\cdot\,})_H \) are exact, and thus their higher derived functors are zero, i.e. \( H_n(H, B) = 0 = H^n(H; B) \) for \( n>0 \). Moreover
 \[
 H_n(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}B) \cong H^n( G, \Hmo_{\mathbb{Z}}( {\mathbb{Z}}G, B))
 \cong
@@ -6657,7 +6657,7 @@ B & n = 0
 ::: {.lemma title="?"}
 If the index \( [G: H] \) (i.e. the number of left or right cosets) is finite, then
 \[
-\operatorname{Ind}_H^G B \cong \Coind_H^G B && \in {\mathsf{G}{\hbox{-}}\mathsf{Mod}} 
+\operatorname{Ind}_H^G B \cong \operatorname{coInd}_H^G B && \in {\mathsf{G}{\hbox{-}}\mathsf{Mod}} 
 .\]
 :::
 
@@ -6684,7 +6684,7 @@ y \otimes hb
 since \( h\in {\mathbb{Z}}H \). Now \( X^{-1}\coloneqq\left\{{ x^{-1}{~\mathrel{\Big|}~}x\in X }\right\} \) is a set of coset representatives for \( \quotleft{G}{H} \) and hence a left \( {\mathbb{Z}H}{\hbox{-}} \)basis for \( {\mathbb{Z}G} \). We can thus write
 
 \[
-\Coind_H^G B 
+\operatorname{coInd}_H^G B 
 &\cong {\operatorname{Hom}}_{{\mathbb{Z}}H}({\mathbb{Z}G}, B) \\
 &\cong {\operatorname{Hom}}_{{\mathbb{Z}H}}(\bigoplus_{x\in X} {\mathbb{Z}H}x^{-1}, B) \\
 &= \Prod_{x\in X} {\operatorname{Hom}}_{{\mathbb{Z}H}}({\mathbb{Z}H}x^{-1}, B) && \text{by exc. A.1.4}\\
@@ -6710,7 +6710,7 @@ g\cdot \pi_x(b) = \pi_y(hb)
 .\]
 Thus we have a \( G{\hbox{-}} \)module map
 \[
-\operatorname{Ind}_H^G B & \xrightarrow{\sim}  \Coind_H^G B \\
+\operatorname{Ind}_H^G B & \xrightarrow{\sim}  \operatorname{coInd}_H^G B \\
 \bigoplus_{x\in X} x\otimes B & \xrightarrow{\sim} \bigoplus_{x\in X} \pi_x B \\
 x\otimes B &\mapsto \pi_x(b)
 ,\]
@@ -6735,7 +6735,7 @@ We think of \( A \) as a module for the trivial subgroup, and so
 \[
 H^n(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}A) 
 &\cong H^n(G, \operatorname{Ind}_1^G A) \\
-&\cong H^n(G; \Coind_1^G A) && \text{by the lemma} \\
+&\cong H^n(G; \operatorname{coInd}_1^G A) && \text{by the lemma} \\
 &= H^n(1; A) && \text{by Shapiro's lemma} \\
 &= 0
 ,\]

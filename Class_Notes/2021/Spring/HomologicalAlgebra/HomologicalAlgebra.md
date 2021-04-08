@@ -560,7 +560,7 @@
 \newcommand{\coinfl}[0]{\operatorname{coinf}}
 \newcommand{\ind}[0]{\operatorname{ind}}
 \newcommand{\Ind}[0]{\operatorname{Ind}}
-\newcommand{\coInd}[0]{\operatorname{coInd}}
+\newcommand{\Coind}[0]{\operatorname{coInd}}
 
 \newcommand{\submfds}{\operatorname{SubMfds}}
 
@@ -7888,7 +7888,7 @@ Define the **induced \(G\dash\)module** (or tensor-induced \(G\dash\)module)
 This is a $\ZZG\dash$module with an action on the first tensor factor.
 Similarly define the **coinduced** or **hom-induced \(G\dash\)module**.
 \[
-\coInd_H^G(B) \da \Hom_{H}(\ZZG, B) \in \mods{\ZZ G}
+\Coind_H^G(B) \da \Hom_{H}(\ZZG, B) \in \mods{\ZZ G}
 .\]
 Here the action is $(g.f)(g') \da f(gg')$.
 :::
@@ -7896,7 +7896,7 @@ Here the action is $(g.f)(g') \da f(gg')$.
 :::{.lemma title="Shapiro's Lemma (Frobenius Reciprocity)"}
 \[
 H_*(G; \Ind_H^G B) &\cong H_*(H; B) &&(1) \\
-H^*(G; \coInd^G B) &\cong H^*(H; B) &&(2)
+H^*(G; \Coind^G B) &\cong H^*(H; B) &&(2)
 .\]
 :::
 
@@ -7915,7 +7915,7 @@ Shapiro's lemma (or Frobenius Reciprocity) allowed compute homology and cohomolo
 
 \[
 H_*(G; \Ind_H^G B) &\cong H_*(H; B) &&(1) \\
-H^*(G; \coInd^G B) &\cong H^*(H; B) &&(2)
+H^*(G; \Coind^G B) &\cong H^*(H; B) &&(2)
 .\]
 :::
 
