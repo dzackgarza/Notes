@@ -2,15 +2,15 @@
 
 Formal group law stuff
 
-[](https://math.mit.edu/juvitop/pastseminars/notes_2020_Spring/Levy.pdf)
+- [Notes](https://math.mit.edu/juvitop/pastseminars/notes_2020_Spring/Levy.pdf)
 
-[](http://people.math.harvard.edu/~lurie/papers/survey.pdf)
+- [Survey Paper](http://people.math.harvard.edu/~lurie/papers/survey.pdf)
 
 ---
 
-# Formal Groups
+## Formal Groups
 
-# Basics
+### Basics
 
 - Motivation: why should one care about formal groups?
 	- Idea: substitute for Lie algebras in positive characteristic
@@ -64,7 +64,7 @@ Formal group law stuff
   - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2025.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2025.png)
     ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2026.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2026.png)
 
-# Lazard Ring
+## Lazard Ring
 
 - What is the Lazard ring?
   - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2027.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2027.png)
@@ -86,9 +86,9 @@ Formal group law stuff
 
 ---
 
-# Stable Homotopy
+## Stable Homotopy
 
-# tmf
+### tmf
 
 - How is tmf related to modular forms?
   - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2035.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2035.png)
@@ -96,7 +96,7 @@ Formal group law stuff
    - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2036.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2036.png)
    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2037.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2037.png)
 
-# K-Theories
+### K-Theories
 
 - How is the algebraic K-theory of a commutative ring defined/constructed in terms of monoidal categories?
    - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2038.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2038.png)
