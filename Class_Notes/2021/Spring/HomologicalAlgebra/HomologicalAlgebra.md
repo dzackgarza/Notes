@@ -539,7 +539,7 @@
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
-\newcommand{\Triv}[0]{\operatorname{Triv}}
+\newcommand{\Triv}[0]{{ \operatorname{Triv}}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
@@ -563,6 +563,9 @@
 \newcommand{\Coind}[0]{\operatorname{coInd}}
 
 \newcommand{\submfds}{\operatorname{SubMfds}}
+
+\newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
+\newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
 
 # Wednesday, January 13
 
@@ -7952,7 +7955,7 @@ A special case is when $H = \ts{ 1 }$ is the trivial group, in which case any $H
 So $(\wait)^H, (\wait)_H$ are exact, and thus their higher derived functors are zero, i.e. $H_n(H, B) = 0 = H^n(H; B)$ for $n>0$.
 Moreover 
 \[
-H_n(G; \ZZG \tensor_\ZZ B) \cong H^n( G, \Hmo_\ZZ( \ZZ G, B))
+H_n(G; \ZZG \tensor_\ZZ B) \cong H^n( G, \Hom_\ZZ( \ZZ G, B))
 \cong
 \begin{cases}
 B & n = 0 
@@ -7994,20 +7997,20 @@ y \tensor hb
 since $h\in \ZZ H$.
 Now $X\inv \da \ts{ x\inv \st x\in X }$ is a set of coset representatives for $\quotleft{G}{H}$ and hence a left $\ZZH\dash$basis for $\ZZG$.
 We can thus write
-
 \[
 \Coind_H^G B 
 &\cong \Hom_{\ZZ H}(\ZZG, B) \\
-&\cong \Hom_{\ZZH}(\bigoplus_{x\in X} \ZZH x\inv, B) \\
-&= \Prod_{x\in X} \Hom_{\ZZH}(\ZZH x\inv, B) && \text{by exc. A.1.4}\\
-&= \Prod_{x\in X} \pi_x(A)
+&\cong \Hom_{\ZZH} \qty{ \bigoplus_{x\in X} \ZZH x\inv, B } \\
+&= \prod_{x\in X} \Hom_{\ZZH}(\ZZH x\inv, B) && \text{by exc. A.1.4}\\
+&= \prod_{x\in X} \pi_x(A)
 ,\]
 where each term is a copy of $A$.
 This follows because we can specify such a module hom by specifying the image of a basis.
 So here for $b\in B$, $\pi_x(B)$ for a fixed $x$ is the \(H\dash\)module morphism $\ZZG \to B$ where $x\inv \mapsto b$ and $z\inv \mapsto 0$ for $z\neq x$.
 
 How does $G$ act on these homs?
-Using wquation (??)
+Using equation (??)
+\todo[inline]{Sort out which equation this was!}
 we have
 \[
 y\inv g = hx\inv 
@@ -8030,10 +8033,10 @@ Thus we have a \(G\dash\)module map
 \bigoplus_{x\in X} x\tensor B & \mapsvia{\sim} \bigoplus_{x\in X} \pi_x B \\
 x\tensor B &\mapsto \pi_x(b)
 ,\]
-which is an isomorphism because 
+which is an isomorphism since
 \[
 g\cdot(x\tensor b) 
-= y\tensor hb \\
+= y\tensor hb 
 \mapsto \pi_y(hb) 
 = g\cdot \pi_x(b)
 .\]
@@ -8071,6 +8074,7 @@ Lie showed that this is isomorphic to the vector space of left $G\dash$invariant
 This turns out to again be a 1st order operator, despite looking like it might be 2nd order.
 This led to the study of abstract Lie algebras.
 :::
+
 
 
 # Appendix: Extra Definitions

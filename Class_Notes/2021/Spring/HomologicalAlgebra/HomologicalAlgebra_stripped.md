@@ -6562,7 +6562,7 @@ and note that this is exactly the functor composition we needed to get the LHS s
 :::
 
 ::: {.remark}
-When \( A \in {\mathsf{H}{\hbox{-}}\mathsf{Mod}}^{\operatorname{Triv}} \), \( A_H\hookrightarrow A \) is the identity, so \( A^H = A = A_H \). In this case \( \operatorname{inf}= \operatorname{res} \) and \( \operatorname{coinf}= \operatorname{cores} \).
+When \( A \in {\mathsf{H}{\hbox{-}}\mathsf{Mod}}^{{ \operatorname{Triv}}} \), \( A_H\hookrightarrow A \) is the identity, so \( A^H = A = A_H \). In this case \( \operatorname{inf}= \operatorname{res} \) and \( \operatorname{coinf}= \operatorname{cores} \).
 :::
 
 ::: {.remark}
@@ -6642,9 +6642,9 @@ For \( H\leq G, A\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}, B\in {\math
 :::
 
 ::: {.remark}
-Taking \( A = {\mathbb{Z}}\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}^\operatorname{Triv} \), one gets result (2) in Shapiro's lemma. This shows that \( \operatorname{Ind} \) is left adjoint to \( \operatorname{Res} \) and \( \operatorname{coInd} \) is right adjoint to it, so these will have derived functors. A special case is when \( H = \left\{{ 1 }\right\} \) is the trivial group, in which case any \( H{\hbox{-}} \)module \( B \) is an abelian group such that \( B^H = B = B_H \). So \( ({\,\cdot\,})^H, ({\,\cdot\,})_H \) are exact, and thus their higher derived functors are zero, i.e. \( H_n(H, B) = 0 = H^n(H; B) \) for \( n>0 \). Moreover
+Taking \( A = {\mathbb{Z}}\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}^{ \operatorname{Triv}} \), one gets result (2) in Shapiro's lemma. This shows that \( \operatorname{Ind} \) is left adjoint to \( \operatorname{Res} \) and \( \operatorname{coInd} \) is right adjoint to it, so these will have derived functors. A special case is when \( H = \left\{{ 1 }\right\} \) is the trivial group, in which case any \( H{\hbox{-}} \)module \( B \) is an abelian group such that \( B^H = B = B_H \). So \( ({\,\cdot\,})^H, ({\,\cdot\,})_H \) are exact, and thus their higher derived functors are zero, i.e. \( H_n(H, B) = 0 = H^n(H; B) \) for \( n>0 \). Moreover
 \[
-H_n(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}B) \cong H^n( G, \Hmo_{\mathbb{Z}}( {\mathbb{Z}}G, B))
+H_n(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}B) \cong H^n( G, {\operatorname{Hom}}_{\mathbb{Z}}( {\mathbb{Z}}G, B))
 \cong
 \begin{cases}
 B & n = 0 
@@ -6681,18 +6681,17 @@ yh \otimes b\\
 &=
 y \otimes hb
 .\]
-since \( h\in {\mathbb{Z}}H \). Now \( X^{-1}\coloneqq\left\{{ x^{-1}{~\mathrel{\Big|}~}x\in X }\right\} \) is a set of coset representatives for \( \quotleft{G}{H} \) and hence a left \( {\mathbb{Z}H}{\hbox{-}} \)basis for \( {\mathbb{Z}G} \). We can thus write
-
+since \( h\in {\mathbb{Z}}H \). Now \( X^{-1}\coloneqq\left\{{ x^{-1}{~\mathrel{\Big|}~}x\in X }\right\} \) is a set of coset representatives for \(  {}_{H}\mkern-.5mu\backslash\mkern-2mu^{G}  \) and hence a left \( {\mathbb{Z}H}{\hbox{-}} \)basis for \( {\mathbb{Z}G} \). We can thus write
 \[
 \operatorname{coInd}_H^G B 
 &\cong {\operatorname{Hom}}_{{\mathbb{Z}}H}({\mathbb{Z}G}, B) \\
-&\cong {\operatorname{Hom}}_{{\mathbb{Z}H}}(\bigoplus_{x\in X} {\mathbb{Z}H}x^{-1}, B) \\
-&= \Prod_{x\in X} {\operatorname{Hom}}_{{\mathbb{Z}H}}({\mathbb{Z}H}x^{-1}, B) && \text{by exc. A.1.4}\\
-&= \Prod_{x\in X} \pi_x(A)
+&\cong {\operatorname{Hom}}_{{\mathbb{Z}H}} \qty{ \bigoplus_{x\in X} {\mathbb{Z}H}x^{-1}, B } \\
+&= \prod_{x\in X} {\operatorname{Hom}}_{{\mathbb{Z}H}}({\mathbb{Z}H}x^{-1}, B) && \text{by exc. A.1.4}\\
+&= \prod_{x\in X} \pi_x(A)
 ,\]
 where each term is a copy of \( A \). This follows because we can specify such a module hom by specifying the image of a basis. So here for \( b\in B \), \( \pi_x(B) \) for a fixed \( x \) is the \( H{\hbox{-}} \)module morphism \( {\mathbb{Z}G}\to B \) where \( x^{-1}\mapsto b \) and \( z^{-1}\mapsto 0 \) for \( z\neq x \).
 
-How does \( G \) act on these homs? Using wquation (??) we have
+How does \( G \) act on these homs? Using equation (??) `\todo[inline]{Sort out which equation this was!}`{=tex} we have
 \[
 y^{-1}g = hx^{-1}
 ,\]
@@ -6714,10 +6713,10 @@ Thus we have a \( G{\hbox{-}} \)module map
 \bigoplus_{x\in X} x\otimes B & \xrightarrow{\sim} \bigoplus_{x\in X} \pi_x B \\
 x\otimes B &\mapsto \pi_x(b)
 ,\]
-which is an isomorphism because
+which is an isomorphism since
 \[
 g\cdot(x\otimes b) 
-= y\otimes hb \\
+= y\otimes hb 
 \mapsto \pi_y(hb) 
 = g\cdot \pi_x(b)
 .\]
