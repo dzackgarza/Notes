@@ -332,13 +332,11 @@ Suppose \( f:B\to C \) is a chain map, then there exist induced maps on the leve
 Here \( \ker f \leq B \) is a subcomplex, and \( \operatorname{coker}f \) is a quotient complex of \( C \). The chain map \( i: \ker f\to B \) is a categorical kernel of \( f \) in \( \mathsf{Ch} \), and \( \pi \) is similarly a cokernel. See appendix A 1.6. These constructions make \( \mathsf{Ch} \) into an **abelian category**: roughly an additive category where every morphism has a kernel and a cokernel.
 :::
 
-# 1.2 (Wednesday, January 20)
-
-## Taking Chain Complexes of Chain Complexes
+# 1.2: Chain Complex of Chain Complexes (Wednesday, January 20)
 
 > See phone pic for missed first 10m
 
-### Double Complexes
+## Double Complexes
 
 ::: {.remark}
 Consider a double complex:
@@ -420,9 +418,11 @@ This yields a new double complex where the signs of each column alternate:
 Now the squares commute and \( f_{{\,\cdot\,}, q} \) are chain maps, so this object is an element of \( \mathsf{Ch}(\mathsf{Ch}{\mathsf{R}{\hbox{-}}\mathsf{Mod}}) \).
 :::
 
-### Total Complexes
+## Total Complexes
 
+::: {.remark}
 Recall that products and coproducts of \( R{\hbox{-}} \)modules coincide when the indexing set is finite.
+:::
 
 ::: {.definition title="Total Complexes"}
 Given a double complex \( C_{{\,\cdot\,}, {\,\cdot\,}} \), there are two ordinary chain complexes associated to it referred to as **total complexes**:
@@ -449,7 +449,7 @@ Some notes:
 -   The total complexes need not exist if \( C \) is unbounded: one needs infinite direct products and infinite coproducts to exist in \( \mathcal{C} \). A category admitting these is called **complete** or **cocomplete**.[^2]
 :::
 
-### More Operations
+## More Operations
 
 ::: {.definition title="Truncation below"}
 Fix \( n\in {\mathbb{Z}} \), and define the **\( n \)th truncation** \( \tau_{\geq n}(C) \) by
@@ -716,7 +716,7 @@ We assumed that \( \mathcal{A}= {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \) here, so w
 
 ## LES Associated to a SES
 
-::: {.theorem title="?"}
+::: {.theorem title="Every SES of chain complexes induces a LES in homology"}
 For every SES of chain complexes, there is a long exact sequence in homology.
 :::
 
@@ -1049,7 +1049,7 @@ Check that the differential on \( \operatorname{cone}(f) \) squares to zero.
 When \( f = \operatorname{id}:C\to C \), we write \( \operatorname{cone}(C) \) instead of \( \operatorname{cone}(\operatorname{id}) \). Show that \( \operatorname{cone}(C) \) is split exact, with splitting map \( s(b, c) = (-c, 0) \) for \( b\in C_{n-1}, c\in C_n \).
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="LES in homology of a single chain map using the cone"}
 Suppose \( f:B\to C \) is a chain map, then the induced maps \( f_*: H(B) \to H(C) \) fit into a LES. There is a SES of chain complexes:
 
 ```{=tex}
@@ -1318,7 +1318,7 @@ This follows from the universal property of free modules:
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwzLCJYIl0sWzQsMywiTSJdLFs0LDAsIlxcZXhpc3RzIEYoWCkiXSxbNSwzLCJcXGluIFxccm1vZCJdLFswLDEsImZcXGluIFxcSG9tX1xcU2V0KFgsIE0pIl0sWzAsMiwiXFxleGlzdHMgZ1xcaW4gXFxIb21fXFxTZXQoWCwgRihYKSkiXSxbMiwxLCJcXGV4aXN0cyAhIGYnIFxcaW4gXFxIb21fUihGKFgpLCBYKSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Projective if and only if summand of free (for modules)"}
 An \( R{\hbox{-}} \)module is projective if and only if it is a direct summand of a free module.
 :::
 
@@ -1483,7 +1483,7 @@ Every object \( M\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}} \) has a projective reso
 ## Comparison Theorem
 
 ::: {.theorem title="Comparison Theorem"}
-Suppose \( P_{\,\cdot\,}\xrightarrow{\epsilon} M \) is a projective resolution of an object in \( \mathcal{A} \) and \( (M \xrightarrow{f} N \in \operatorname{Mor}( \mathcal{A}) \) and \( Q_{\,\cdot\,}\xrightarrow{\eta} N \) a resolution of \( N \). Then there exists a chain map \( P \xrightarrow{f} Q \) lifting \( f \) which is unique up to chain homotopy:
+Suppose \( P_{\,\cdot\,}\xrightarrow{\epsilon} M \) is a projective resolution of an object in \( \mathcal{A} \) and \( (M \xrightarrow{f} N) \in \operatorname{Mor}( \mathcal{A}) \) and \( Q_{\,\cdot\,}\xrightarrow{\eta} N \) a resolution of \( N \). Then there exists a chain map \( P \xrightarrow{f} Q \) lifting \( f \) which is unique up to chain homotopy:
 
 ```{=tex}
 \begin{tikzcd}
@@ -1609,10 +1609,9 @@ Since \( P_n \) is projective, there exists an \( s_n: P_n \to Q_{n+1} \) such t
 
 # Tuesday, February 02
 
-# Tuesday, February 02
-
-# Tuesday, February 02
-
+```{=tex}
+\todo[inline]{todo}
+```
 # Wednesday, February 03
 
 ::: {.remark}
@@ -2172,7 +2171,7 @@ The lemma thus says that \( {\operatorname{Hom}}_{{\mathsf{Ab}}}(R, {\,\cdot\,})
 Recall that \( F \) is **additive** if \( {\operatorname{Hom}}_{\mathcal{B}}(B', B) \to {\operatorname{Hom}}_{\mathcal{A}}(FB', FB) \) is a morphism of abelian groups for all \( B, B' \in \mathcal{B} \).
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Right adjoints to exact functors preserve injectives, left adjoints preserve projectives"}
 If \( R: \mathcal{B} \to \mathcal{A} \) is an additive functor and right adjoint to an exact functor \( L: \mathcal{A} \to \mathcal{B} \), then \( I\in \mathcal{B} \) injective implies \( R(I)\in \mathcal{A} \) is injective. Dually, if \( \mathcal{L}:A\to B \) is additive and left adjoint to an exact functor \( R: \mathcal{B} \to \mathcal{A} \), then \( P\in \mathcal{A} \) projective implies \( L(P) \in \mathcal{B} \) is projective.
 :::
 
@@ -2236,7 +2235,7 @@ For \( A \in \mathcal{A} \), fix once and for all a projective resolution \( P \
 Note that \( P_2 \xrightarrow{d_2} P_1 \xrightarrow{d_1} P_0 \xrightarrow{\varepsilon} A\to 0 \) is exact, and since \( F \) is right exact, it can be shown that the following is a SES: \( FP_1 \xrightarrow{Fd_1} FP_0 \xrightarrow{F \varepsilon} FA \to 0 \). We can use this to compute the original homology, despite it not having any homology itself! From this, we can extra \( L_0(A) \coloneqq FP_0 / (Fd_1)(FP_1) = FP_0 / \ker F(\varepsilon) \) using exactness at \( FP_0 \), and by the 1st isomorphism theorem this is isomorphic to the image \( FA \) using surjectivity. So \( L_0 F \cong F \).
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Left-derived functors are additive"}
 \( L_i F: \mathcal{A} \to \mathcal{B} \) are additive functors.
 :::
 
@@ -2371,9 +2370,11 @@ Again use the comparison theorem:
 Then there is an induced map \( \tilde f_*: H_*(FP) \to H_*(FP') \), noting that one first needs to apply \( F \) to the above diagram. As before, this is independent of the lift using the same argument as before, using the additivity of \( F \) and \( H_* \) and the chain homotopy is pushed through \( F \) appropriately. So set \( (L_i F)(f) \coloneqq(\tilde f_*)_i \).
 :::
 
+::: {.remark}
 We can now pick up the theorem from the end of last time:
+:::
 
-::: {.theorem title="?"}
+::: {.theorem title="Left-derived functors are additive"}
 \( L_iF: \mathcal{A}\to \mathcal{B} \) are additive functors.
 :::
 
@@ -2381,7 +2382,7 @@ We can now pick up the theorem from the end of last time:
 Done last time!
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Existence of connecting maps for left-derived functors"}
 Using the same assumptions as before, given a SES
 \[
 0 \to A' \to A \to A'' \to 0
@@ -2601,7 +2602,7 @@ A functor \( F: \mathcal{C} \to \mathcal{D} \) is an **equivalence of categories
 A category \( \mathcal{C} \) is **small** if \( {\operatorname{Ob}}(\mathcal{C}) \) is a set, then take \( \mathcal{C} \coloneqq\mathsf{Cat} \) whose objects are categories and morphisms are functors. Note that in all categories, all collections of morphisms should be sets, and the small condition guarantees it. In this case, natural transformations \( \eta: F\to G \) is an additional structure yielding morphisms of morphisms. These are called **2-morphisms**, and in this entire structure is a **2-category**, and our previous notion is referred to as a **1-category**.
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Left-derived functors of a right-exact functor form a universal $\\delta\\dash$functor"}
 Assume \( \mathcal{A}, \mathcal{B} \) are abelian and \( F:\mathcal{A} \to \mathcal{B} \) is a right-exact additive functor where \( \mathcal{A} \) has enough projectives. Then the family \( \left\{{ L_i F }\right\} _{i\geq 0} \) is a *universal \( \delta{\hbox{-}} \)functor* where \( L_0 F \cong F \) is a natural isomorphism.
 :::
 
@@ -2820,7 +2821,7 @@ so we can use the same notation \( \operatorname{Ext}^i_R({\,\cdot\,}, B) \) for
 \( {\,\cdot\,} \) adjoints are \( {\,\cdot\,}^{\operatorname{op}} \) exact, since \( {\,\cdot\,} \) adjoints have \( {\,\cdot\,}{\hbox{-}} \)derived functors.
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Exactness of adjoint functors"}
 Let
 \[
 \adjunction{L}{R}{ \mathcal{A} } { \mathcal{B} }
@@ -2920,7 +2921,7 @@ Check that this is a well-defined morphism of right \( S{\hbox{-}} \)modules.
 We saw this structure earlier with \( S={\mathbb{Z}} \), see p.41.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Tensor-Hom adjunction"}
 Fix \( R,S \) and \( {}_R B_S \) as above. Then for every \( A \in {\mathsf{Mod}{\hbox{-}}\mathsf{R}} \) and \( C\in {\mathsf{{\hbox{-}}}{\hbox{-}}\mathsf{Mod}}S \) there is a natural isomorphism
 \[
 \tau: {\operatorname{Hom}}_S( A\otimes_R B, C ) &\xrightarrow{\sim} {\operatorname{Hom}}_R(A, {\operatorname{Hom}}_S(B, C) ) \\
@@ -3177,7 +3178,7 @@ We'll prove this next time, note that \( 2\implies 1 \) since coproducts are spe
 
 ## Colimits and Adjoints
 
-::: {.proposition title="?"}
+::: {.proposition title="Characterizations of cocomplete categories"}
 Assume \( \mathcal{A} \) is abelian so we have cokernels for maps. TFAE:
 
 1.  \( \bigoplus A_i \) exists in \( \mathcal{A} \) for every set \( \left\{{A_i}\right\} \) of objects in \( \mathcal{A} \).
@@ -3313,10 +3314,13 @@ We'll skip the rest of this section, we (hopefully) won't need filtered colimits
 
 ## Balancing Tor and Ext
 
+::: {.remark}
 Idea: their derived functors with either variable fixed will essentially be the same. We'll start by showing that the two left-derived functors of \( {\,\cdot\,}\otimes_R {\,\cdot\,} \) give the same results, and similarly for the two right-derived functors \( {\operatorname{Hom}}_R({\,\cdot\,}, {\,\cdot\,}) \). We'll use double complexes!
+:::
 
 ### Tensor Product Complexes
 
+::: {.remark}
 Suppose we have two chain complexes \( (P)_R \in \mathsf{Ch}( {\mathsf{Mod}{\hbox{-}}\mathsf{R}}), {}_R(Q) \in \mathsf{Ch}({\mathsf{R}{\hbox{-}}\mathsf{Mod}}) \). Then there is a double complex where \( i, j \) indexes rows and columns: \( P \otimes_R Q = \left\{{ P_i \otimes_R Q_j }\right\}_{i, j} \), the **tensor product double complex** of \( P \) and \( Q \). We use the sign trick from 1.2.5:
 
 -   \( d^h \coloneqq d^P \otimes\one \)
@@ -3324,8 +3328,9 @@ Suppose we have two chain complexes \( (P)_R \in \mathsf{Ch}( {\mathsf{Mod}{\hbo
 -   \( d^v \coloneqq(-1)^i 1 \otimes d^Q \)
 
 Taking the direct sum totalization \( \operatorname{Tor}^{ \oplus }(P \otimes_R Q ) \) is the **total tensor product chain complex** of \( P \) and \( Q \). Note that this has a single differential! The big theorem from this section:
+:::
 
-::: {.theorem title="?"}
+::: {.theorem title="Tor is balanced"}
 \[
 L_n(A\otimes_R {\,\cdot\,})(B) \cong L_n({\,\cdot\,}\otimes_R B)(A) \coloneqq\operatorname{Tor}_n^R(A, B)
 .\]
@@ -3705,7 +3710,7 @@ Then \( \Theta(\xi) \) is an *obstruction* to \( \xi \) being split.
 If \( \xi'\sim \xi \) then \( {{\partial}}'(\one_B) = {{\partial}}(\one_B)\in \operatorname{Ext}^1(A, B) \) by naturality of the connecting morphisms. So equivalent extensions have the same obstruction, i.e. \( \Theta \) only depends only on the equivalence class \( [\xi] \) of the SES.
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Module extensions correspond to Ext groups"}
 Given \( A, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}} \) (or an abelian category with enough projectives and injectives), there is a correspondence
 \[
 \left\{{\substack{
@@ -3723,7 +3728,7 @@ Note that this is a bijection of sets, but we'll upgrade it to a bijection of ab
 Last time: we looked at group extensions. Given \( \xi: 0\to B\to X \to A\to 0 \), we had a canonical element in \( \operatorname{Ext}^1(A, B) \), namely \( \Theta(\xi) = \delta(\one_B) \). This only depends on the equivalence class of \( \xi \).
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Module extensions biject with Ext groups"}
 Given \( A, B\in {\mathsf{Mod}{\hbox{-}}\mathsf{R}} \), there is a bijection
 \[
 \left\{{\substack{
@@ -4130,7 +4135,7 @@ Similarly, \( \operatorname{Ext}^n(A, B) \) is identified with equivalence class
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsMTYsWzIsMCwiMCJdLFszLDAsIkIiXSxbNCwwLCJYX24iXSxbNSwwLCJcXGNkb3RzIl0sWzYsMCwiWF8xIl0sWzcsMCwiQSJdLFs4LDAsIjAiXSxbMCwwLCJcXHhpOiJdLFswLDIsIlxceGknOiJdLFsyLDIsIjAiXSxbMywyLCJCIl0sWzQsMiwiWF9uJyJdLFs1LDIsIlxcY2RvdHMiXSxbNiwyLCJYXzEnIl0sWzcsMiwiQSJdLFs4LDIsIjAiXSxbMCwxXSxbMSwyXSxbMiwzXSxbMyw0XSxbNCw1XSxbNSw2XSxbMSwxMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDE0LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMTEsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs0LDEzLCIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMywxMiwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzksMTBdLFsxMCwxMV0sWzExLDEyXSxbMTIsMTNdLFsxMywxNF0sWzE0LDE1XV0=)
 
-Note that if \( {P}^{\bullet} \to A\to 0 \) is a projective resolution, then the comparison theorem yields maps and a commutative diagram
+Note that if \( {P}_{*} \to A\to 0 \) is a projective resolution, then the comparison theorem yields maps and a commutative diagram
 
 ```{=tex}
 \begin{tikzcd}
@@ -4172,7 +4177,7 @@ If \( R \) is a field \( F \) then \( \operatorname{Tor}_n^F(A, B) = 0 \) for al
 :::
 
 ::: {.question}
-If \( {P}^{\bullet} \in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}}) \) is a complex of of right \( R{\hbox{-}} \)modules and \( M \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \) is a left \( R{\hbox{-}} \)module, how is the homology of \( {P}^{\bullet} \) and that of \( {P}^{\bullet} \otimes_R M \) related?
+If \( {P}_{*} \in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}}) \) is a complex of of right \( R{\hbox{-}} \)modules and \( M \in {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \) is a left \( R{\hbox{-}} \)module, how is the homology of \( {P}_{*} \) and that of \( {P}_{*} \otimes_R M \) related?
 :::
 
 ::: {.lemma title="?"}
@@ -4198,11 +4203,11 @@ In particular, we can always take \( A = \operatorname{coker}\alpha \) and \( C 
 :::
 
 ::: {.theorem title="The Kunneth Formula"}
-Let \( {P}^{\bullet}\in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}}) \) be a chain complex of flat right \( R{\hbox{-}} \)modules such that each boundary module \( dP_n \) is again flat. Then for every \( M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \) and all \( N \), there is an exact sequence
+Let \( {P}_{*}\in \mathsf{Ch}({\mathsf{Mod}{\hbox{-}}\mathsf{R}}) \) be a chain complex of flat right \( R{\hbox{-}} \)modules such that each boundary module \( dP_n \) is again flat. Then for every \( M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \) and all \( N \), there is an exact sequence
 
 ```{=tex}
 \begin{tikzcd}
-    0 && {H_n({P}^{\bullet})\otimes_R M} && {H_n({P}^{\bullet} \otimes_R M)} && {\operatorname{Tor}^1_R(H_{n-1}({P}^{\bullet}), M)} && 0
+    0 && {H_n({P}_{*})\otimes_R M} && {H_n({P}_{*} \otimes_R M)} && {\operatorname{Tor}^1_R(H_{n-1}({P}_{*}), M)} && 0
     \arrow[from=1-7, to=1-9]
     \arrow[from=1-5, to=1-7]
     \arrow[from=1-3, to=1-5]
@@ -4217,7 +4222,7 @@ Note that the correction term vanishes if \( R \) is a field.
 :::
 
 ::: {.proof title="?"}
-Let \( Z_n \coloneqq Z_n({P}^{\bullet}) \), there there is a SES
+Let \( Z_n \coloneqq Z_n({P}_{*}) \), there there is a SES
 \[
 0 \to Z_n \to P_n \xrightarrow{d} dP_n \to 0
 .\]
@@ -4240,7 +4245,7 @@ Since \( P_n, dP_n \) are flat by assumption, by Exc. 3.2.2, \( Z_n \) is also f
 
 Here \( \operatorname{Tor}_1(dP_n, M)=0 \) since \( dP_n \) is flat, noting that one could also apply \( \operatorname{Tor}(dP_n, {\,\cdot\,}) \) to get a similar LES. So this lifts to a SES of complexes
 \[
-0 \to {Z}^{\bullet}\otimes M \to {P}^{\bullet}\otimes M \to {dP}^{\bullet}\otimes M \to 0
+0 \to {Z}_{*}\otimes M \to {P}_{*}\otimes M \to {dP}_{*}\otimes M \to 0
 ,\]
 where we can consider \( d\otimes\one \) in the middle. We'll pick this up next time!
 :::
@@ -4273,7 +4278,7 @@ Some missed stuff here.
 ::: {.proof title="of Kunneth Formula (continued)"}
 Note that
 \[
-0\to {Z}^{\bullet} \otimes M \to {P}^{\bullet}\otimes M \to d{P}^{\bullet}\otimes M\to 0
+0\to {Z}_{*} \otimes M \to {P}_{*}\otimes M \to d{P}_{*}\otimes M\to 0
 ,\]
 where the differentials for the end terms are zero, and the homology will recover the original complex.
 
@@ -4297,7 +4302,7 @@ By using the explicit formula for \( {{\partial}} \), it turns out that \( {{\pa
 0 \to {Z_n\otimes M \over dP_{n+1} \otimes M } \to H_n(P\otimes M) \to \ker i( \otimes\one_M) \to 0
 .\]
 
-By observation 1, the first term equals \( H_n({P}^{\bullet})\otimes M \). From this, we get a flat resolution of \( H_{n-1}(P) \):
+By observation 1, the first term equals \( H_n({P}_{*})\otimes M \). From this, we get a flat resolution of \( H_{n-1}(P) \):
 
 ```{=tex}
 \begin{tikzcd}
@@ -4333,9 +4338,9 @@ Thus
 :::
 
 ::: {.theorem title="Universal Coefficient Theorem"}
-Let \( {P}^{\bullet} \) be a chain complex of free abelian groups. For every abelian groups \( M \) and every \( n \), the Kunneth sequence splits non-canonically as
+Let \( {P}_{*} \) be a chain complex of free abelian groups. For every abelian groups \( M \) and every \( n \), the Kunneth sequence splits non-canonically as
 \[
-H_n({P}^{\bullet} \otimes M) \cong \qty{ H_n( {P}^{\bullet} )\otimes M } \oplus \operatorname{Tor}_1^{{\mathbb{Z}}}(H_{n-1}(P), M)
+H_n({P}_{*} \otimes M) \cong \qty{ H_n( {P}_{*} )\otimes M } \oplus \operatorname{Tor}_1^{{\mathbb{Z}}}(H_{n-1}(P), M)
 .\]
 :::
 
@@ -4397,11 +4402,11 @@ See some applications in section 1 of Weibel, e.g. simplicial and singular homo
 \[
 \cdots \to S_2 \xrightarrow{d} \to S_1\to S_0 \to 0 \in \mathsf{Ch}({\mathsf{R}{\hbox{-}}\mathsf{Mod}})
 .\]
-Taking it homology yields the **simplicial homology** of the complex \( H_n(X; R) \coloneqq H_n({S}^{\bullet}(X) ) \).
+Taking it homology yields the **simplicial homology** of the complex \( H_n(X; R) \coloneqq H_n({S}_{*}(X) ) \).
 :::
 
 ::: {.remark}
-Taking \( R={\mathbb{Z}} \) makes \( S_k(X) \) a free abelian group. If \( M \) is any abelian group, we can define \( H_n(X; M) \coloneqq H_n( {S}^{\bullet}(X) \otimes_{\mathbb{Z}}M) \), the homology with **coefficients** in \( M \). If no coefficients are specified, we write \( H_n(X) \coloneqq H_n(X; {\mathbb{Z}}) \). There is then a universal coefficient theorem in topology:
+Taking \( R={\mathbb{Z}} \) makes \( S_k(X) \) a free abelian group. If \( M \) is any abelian group, we can define \( H_n(X; M) \coloneqq H_n( {S}_{*}(X) \otimes_{\mathbb{Z}}M) \), the homology with **coefficients** in \( M \). If no coefficients are specified, we write \( H_n(X) \coloneqq H_n(X; {\mathbb{Z}}) \). There is then a universal coefficient theorem in topology:
 \[
 H_n(X; M) 
 \cong 
@@ -4429,9 +4434,9 @@ Note that this is homology on the RHS, not cohomology!
 :::
 
 ::: {.theorem title="Universal Coefficients Theorem for Cohomology"}
-Let \( {P}^{\bullet} \) be a chain complex of projective \( R{\hbox{-}} \)modules. Assume \( dP_n \) is also projective for all \( n \). For \( M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \), there is a split SES
+Let \( {P}_{*} \) be a chain complex of projective \( R{\hbox{-}} \)modules. Assume \( dP_n \) is also projective for all \( n \). For \( M\in {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \), there is a split SES
 \[
-0 \to \operatorname{Ext}_R^1(H_{n-1}(P), M) \to H^n( {\operatorname{Hom}}_R( {P}^{\bullet}, M)) \to {\operatorname{Hom}}_R (H_n(P), M) \to 0
+0 \to \operatorname{Ext}_R^1(H_{n-1}(P), M) \to H^n( {\operatorname{Hom}}_R( {P}_{*}, M)) \to {\operatorname{Hom}}_R (H_n(P), M) \to 0
 .\]
 :::
 
@@ -4785,7 +4790,7 @@ So in general, \( H_*(T) \) is determined up to extensions.
 :::
 
 ::: {.exercise title="5.1.2"}
-We view \( E^2_{*, *} \) as a 2nd order approximation to \( H_*( {T}^{\bullet} ) \). We've used both differentials, so how do we continue? There are well-defined maps \( d_{p, q}^2: E_{p, q}^2 \to E^{2}_{p-2, q+1} \) such that \( d^2_{*,*} \circ d^2_{*, *} = 0 \) (noting that these are superscripts, not squaring).
+We view \( E^2_{*, *} \) as a 2nd order approximation to \( H_*( {T}_{*} ) \). We've used both differentials, so how do we continue? There are well-defined maps \( d_{p, q}^2: E_{p, q}^2 \to E^{2}_{p-2, q+1} \) such that \( d^2_{*,*} \circ d^2_{*, *} = 0 \) (noting that these are superscripts, not squaring).
 :::
 
 ::: {.remark}
@@ -5082,7 +5087,7 @@ A filtration is **exhaustive** if \( \bigcup_{p\in {\mathbb{Z}}} F_p C_n = C_n \
 The construction of the spectral sequence will show that \( C \) and \( \bigcup_p F_p C \) give rise to the same spectral sequence. So we will assume that all filtrations are exhaustive.
 :::
 
-::: {.theorem title="Construction of a Spectral Sequence"}
+::: {.theorem title="Construction of the spectral sequence of a filtration"}
 A filtration \( F \) of \( C\in \mathsf{Ch}({\mathsf{R}{\hbox{-}}\mathsf{Mod}}) \) determines a spectral sequence starting with
 \[
 E_{p, q}^0 { F_p C_{p+q} \over F_{p-1} C_{p+q} } && E_{p ,q}^1 = H_{p+q}(E^0_{p, *})
@@ -5216,7 +5221,7 @@ Some consequences:
 So the \( Z_p \) get smaller and the \( B_p \) get bigger. What happens in the middle?
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="All boundaries are contained in all cycles in a spectral sequence"}
 \( B_p^r \subseteq Z_p^s \) for all \( r, s\geq 0 \).
 :::
 
@@ -5341,7 +5346,7 @@ Similarly,
 Now applying the map induced by \( d: A_p^r \to F_{p-r}C \) to this quotient, we have \( \ker { \left.{{d}} \right|_{{A_p^r}} } \subseteq A_p^{r+1} \). These go down \( r \) steps, but everything in the kernel goes down as far as you'd like! So \( d \) kills one of the denominator terms, and thus induces an injective map on the quotient. Thus \( {Z_p^r \over Z_p^{r+1}} \xrightarrow{\sim} {dA_p^r \over dA_p^{r+1} + dA_{p-1}^{r-1} } \), which is exactly the previous expression with the order switched, so this is isomorphic to \( B_{p-r}^{r+1} / B_{p-r}^r \).
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="The $r+1$st page is the homology of the $r$th page"}
 \[
 { \ker d_p^r \over \operatorname{im}d_{p+r}^r } \cong E_p^{r+1} \coloneqq{Z_p^{r+1} \over B_p^{r+1} }
 .\]
@@ -5681,7 +5686,7 @@ In particular, if we have a \( QI \) double complex, both filtrations converge t
 ## Application: Balancing Tor
 
 ::: {.remark}
-Our proof in 2.7 that \( \operatorname{Tor}_*^R(A, B) \) could be computed either by a projective resolution \( {P}^{\bullet}\twoheadrightarrow A \) or a projective resolution \( {Q}^{\bullet}\twoheadrightarrow B \) was a disguised spectral sequence argument. So we'll go recover it using the actual spectral sequence.
+Our proof in 2.7 that \( \operatorname{Tor}_*^R(A, B) \) could be computed either by a projective resolution \( {P}_{*}\twoheadrightarrow A \) or a projective resolution \( {Q}_{*}\twoheadrightarrow B \) was a disguised spectral sequence argument. So we'll go recover it using the actual spectral sequence.
 :::
 
 ::: {.remark}
@@ -5750,15 +5755,15 @@ See the this section of Weibel for other applications in the exercises: the Kunn
 We'd like to compute derived functors acting on chain complexes instead of just objects.
 :::
 
-::: {.definition title="?"}
-Let \( \mathcal{A} \) be an abelian category with enough projectives and let \( {A}^{\bullet} \in \mathsf{Ch}(\mathcal{A}) \). A (left) **Cartan-Eilenberg resolution** (a CE resolution) \( P_{*, *} \) of \( A_* \) is an upper half-plane complex (so \( P_{p, q} = 0 \) when \( q<0 \)) and an augmentation chain map \( P_{*, 0} \xrightarrow{\varepsilon} A_* \) such that
+::: {.definition title="Cartan-Eilenberg Resolutions"}
+Let \( \mathcal{A} \) be an abelian category with enough projectives and let \( {A}_{*} \in \mathsf{Ch}(\mathcal{A}) \). A (left) **Cartan-Eilenberg resolution** (a CE resolution) \( P_{*, *} \) of \( A_* \) is an upper half-plane complex (so \( P_{p, q} = 0 \) when \( q<0 \)) of projective objects and an augmentation chain map \( P_{*, 0} \xrightarrow{\varepsilon} A_* \) such that
 
 1.  If \( A_p=0 \) then the entire column \( P_{p, *} \) is zero.
 
-2.  The induces maps on boundaries and in homology are projective resolutions in \( \mathcal{A} \):
+2.  The augmentation induces maps on boundaries and in homology which are projective resolutions in \( \mathcal{A} \):
     \[
     B_p(P, d^h) &\xrightarrow{B_p(\varepsilon)} B_p(A) \\
-    H_p(P, d^h) \xrightarrow{H_p(\varepsilon)} H_p(A)
+    H_p(P, d^h) &\xrightarrow{H_p(\varepsilon)} H_p(A)
     .\]
 :::
 
@@ -5956,7 +5961,7 @@ Exercises 5.7.2 and 5.7.3 show:
 
 1.  If \( f:A\to B \) is a chain map and \( P\to A, Q\to B \) are CE resolutions, then there is a map of double complexes \( \tilde f: P\to Q \) lifting \( f \).
 
-2.  If \( f, g: A\to B \) are chain homotopic, then \( \tilde f, \tilde f \) are chain homotopic in the sense just defined.
+2.  If \( f, g: A\to B \) are chain homotopic, then \( \tilde f, \tilde g \) are chain homotopic in the sense just defined.
 
 3.  Any two CE resolutions \( P, P' \) of \( A \) are chain homotopy equivalent, as are \( \operatorname{Tot}^{\oplus}(F(P)) \) and \( \operatorname{Tot}^{\oplus}(F(P')) \) for any additive functor \( F \).
 :::
@@ -6605,6 +6610,148 @@ H^*(G; \operatorname{coInd}^G B) &\cong H^*(H; B) &&(2)
 So this provides a way of computing homology on subgroups when the coefficients are in these induced/coinduced modules.
 :::
 
+# Wednesday, April 07
+
+## 6.3: Shapiro's Lemma, (co)Induced Modules (cont)
+
+::: {.remark}
+Recall that we had two ways of inducing an \( H{\hbox{-}} \)module up to a \( G{\hbox{-}} \)module for \( H\leq G \) a subgroup. In this case, we can take cohomology with coefficients in any \( B\in {\mathsf{{\mathbb{Z}}H}{\hbox{-}}\mathsf{Mod}} \). Shapiro's lemma (or Frobenius Reciprocity) allowed compute homology and cohomology when the coefficients are in induced or coinduced modules:
+
+\[
+H_*(G; \operatorname{Ind}_H^G B) &\cong H_*(H; B) &&(1) \\
+H^*(G; \operatorname{coInd}^G B) &\cong H^*(H; B) &&(2)
+.\]
+:::
+
+::: {.proof title="of Shapiro's lemma"}
+Let \( P_* \to {\mathbb{Z}} \) be a right \( {\mathbb{Z}G}{\hbox{-}} \)projective resolution of \( {\mathbb{Z}} \). Since \( {\mathbb{Z}G} \) is a free \( {\mathbb{Z}}H \) module, these are still projective over \( {\mathbb{Z}}H \). Then take
+\[
+P_* \otimes_{{\mathbb{Z}G}} ({\mathbb{Z}G}\otimes_{{\mathbb{Z}}H} B) \cong P_* \otimes_{{\mathbb{Z}}H} B
+.\]
+The homology of the left-hand side computes \( \operatorname{Tor}_*^{{\mathbb{Z}G}}({\mathbb{Z}}, \operatorname{Ind}_H^G B) \). On the other hand, we can consider \( P_* \) to be a projective resolution in \( {\mathbb{Z}}H \) and thus the homology of the right-hand side is \( \operatorname{Tor}_*^{{\mathbb{Z}}H}({\mathbb{Z}}, B) \), which is \( H_*(H; B) \).
+
+For (2), use the tensor-hom adjunction. [^9]
+:::
+
+::: {.theorem title="Adjoints of Restriction are Induction and Coinduction"}
+For \( H\leq G, A\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}, B\in {\mathsf{{\mathbb{Z}H}}{\hbox{-}}\mathsf{Mod}} \),
+\[
+\operatorname{Ext}_G^*(\operatorname{Ind}_h^G B, A) \cong \operatorname{Ext}_H^*(B, \operatorname{Res}_H^G A) && (1) \\
+\operatorname{Ext}_G^*(A, \Coind_H^G B) \cong \operatorname{Ext}_H^*(\operatorname{Res}_H^G A, B) && (1) 
+.\]
+:::
+
+::: {.remark}
+Taking \( A = {\mathbb{Z}}\in {\mathsf{{\mathbb{Z}G}}{\hbox{-}}\mathsf{Mod}}^\operatorname{Triv} \), one gets result (2) in Shapiro's lemma. This shows that \( \operatorname{Ind} \) is left adjoint to \( \operatorname{Res} \) and \( \Coind \) is right adjoint to it, so these will have derived functors. A special case is when \( H = \left\{{ 1 }\right\} \) is the trivial group, in which case any \( H{\hbox{-}} \)module \( B \) is an abelian group such that \( B^H = B = B_H \). So \( ({\,\cdot\,})^H, ({\,\cdot\,})_H \) are exact, and thus their higher derived functors are zero, i.e. \( H_n(H, B) = 0 = H^n(H; B) \) for \( n>0 \). Moreover
+\[
+H_n(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}B) \cong H^n( G, \Hmo_{\mathbb{Z}}( {\mathbb{Z}}G, B))
+\cong
+\begin{cases}
+B & n = 0 
+\\
+0 & n > 0.
+\end{cases}
+\]
+:::
+
+::: {.lemma title="?"}
+If the index \( [G: H] \) (i.e. the number of left or right cosets) is finite, then
+\[
+\operatorname{Ind}_H^G B \cong \Coind_H^G B && \in {\mathsf{G}{\hbox{-}}\mathsf{Mod}} 
+.\]
+:::
+
+::: {.proof title="?"}
+Let \( X \) be a set of left coset representatives for \( G/H \), where we'll take the convention that left cosets are of the form \( gH \). Then \( X \) is a free \( \mathsf{Mod}{\hbox{-}}\mathsf{{\mathbb{Z}H}}{\hbox{-}} \)basis of \( {\mathbb{Z}G} \), so
+\[
+\operatorname{Ind}_H^G B \cong {\mathbb{Z}G}\otimes_{{\mathbb{Z}H}} B \cong \bigoplus_{x\in X} x\otimes B &&\in {\mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}}
+.\]
+How does \( g\curvearrowright x\otimes b \) for \( g\in G \)? We have \( gx\in yH \) for some \( y\in X \), so for some \( h\in H \) we have
+\[
+gx = gh
+.\]
+
+We can then compute
+\[
+g(x\otimes b)
+&= 
+gx \otimes b\\
+&=
+yh \otimes b\\
+&=
+y \otimes hb
+.\]
+since \( h\in {\mathbb{Z}}H \). Now \( X^{-1}\coloneqq\left\{{ x^{-1}{~\mathrel{\Big|}~}x\in X }\right\} \) is a set of coset representatives for \( \quotleft{G}{H} \) and hence a left \( {\mathbb{Z}H}{\hbox{-}} \)basis for \( {\mathbb{Z}G} \). We can thus write
+
+\[
+\Coind_H^G B 
+&\cong {\operatorname{Hom}}_{{\mathbb{Z}}H}({\mathbb{Z}G}, B) \\
+&\cong {\operatorname{Hom}}_{{\mathbb{Z}H}}(\bigoplus_{x\in X} {\mathbb{Z}H}x^{-1}, B) \\
+&= \Prod_{x\in X} {\operatorname{Hom}}_{{\mathbb{Z}H}}({\mathbb{Z}H}x^{-1}, B) && \text{by exc. A.1.4}\\
+&= \Prod_{x\in X} \pi_x(A)
+,\]
+where each term is a copy of \( A \). This follows because we can specify such a module hom by specifying the image of a basis. So here for \( b\in B \), \( \pi_x(B) \) for a fixed \( x \) is the \( H{\hbox{-}} \)module morphism \( {\mathbb{Z}G}\to B \) where \( x^{-1}\mapsto b \) and \( z^{-1}\mapsto 0 \) for \( z\neq x \).
+
+How does \( G \) act on these homs? Using wquation (??) we have
+\[
+y^{-1}g = hx^{-1}
+,\]
+and thus
+\[
+( g\cdot \pi_x(b))(y^{-1}) 
+&= (\pi_x(b))( y^{-1}g) \\
+&= (\pi_x(b)) (hx^{-1}) \\
+&= h(\pi_x(b))(x^{-1}) \\
+&= hb
+,\]
+and \( y^{-1} \) is the only one that lights up for the \( G{\hbox{-}} \)action, i.e. \( (g\cdot \pi_x(b))(z^{-1}) =0 \) for \( y\neq z \), and thus
+\[
+g\cdot \pi_x(b) = \pi_y(hb)
+.\]
+Thus we have a \( G{\hbox{-}} \)module map
+\[
+\operatorname{Ind}_H^G B & \xrightarrow{\sim}  \Coind_H^G B \\
+\bigoplus_{x\in X} x\otimes B & \xrightarrow{\sim} \bigoplus_{x\in X} \pi_x B \\
+x\otimes B &\mapsto \pi_x(b)
+,\]
+which is an isomorphism because
+\[
+g\cdot(x\otimes b) 
+= y\otimes hb \\
+\mapsto \pi_y(hb) 
+= g\cdot \pi_x(b)
+.\]
+:::
+
+::: {.corollary title="?"}
+If \( G \) is a finite group, then for any \( A\in {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \),
+\[
+H^{>0}(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}A) = 0 
+.\]
+:::
+
+::: {.proof title="?"}
+We think of \( A \) as a module for the trivial subgroup, and so
+\[
+H^n(G; {\mathbb{Z}G}\otimes_{\mathbb{Z}}A) 
+&\cong H^n(G, \operatorname{Ind}_1^G A) \\
+&\cong H^n(G; \Coind_1^G A) && \text{by the lemma} \\
+&= H^n(1; A) && \text{by Shapiro's lemma} \\
+&= 0
+,\]
+for \( n>0 \), since these are the higher derived functors of taking fixed points, and everything is fixed by 1.
+:::
+
+## Lie Algebra (Co)homology
+
+::: {.remark}
+Motivation and historical background: if \( G \) is a Lie group, \( G\in {\mathsf{Grp}}\cap{\mathsf{Mfd}}(C^\infty) \), i.e. the group operations are smooth maps. Usually these are real manifolds, they were introduced in the late 1800s by Sophus Lie who studied differential equations on such objects. Taking the tangent space at the identity, we write \( {\mathfrak{g}}= T_e G \), which is a **Lie Algebra**. Lie showed that this is isomorphic to the vector space of left \( G{\hbox{-}} \)invariant vector fields (1st order differential operators) on \( G \), which enjoys a **bracket** operation:
+\[
+[X, Y](f) = X(Yf) - Y(Xf) && f\in C^{\infty }
+.\]
+This turns out to again be a 1st order operator, despite looking like it might be 2nd order. This led to the study of abstract Lie algebras.
+:::
+
 # Appendix: Extra Definitions
 
 ::: {.definition title="Acyclic"}
@@ -6896,3 +7043,5 @@ Let \( F: {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{{\mathbb{Z}}}{\hbox{-}
 [^7]: See Weibel p. 41.
 
 [^8]: Note that this can be phrased in terms of the image of the functor lying in trivial modules.
+
+[^9]: See proposition 2.6.3 in Weibel.
