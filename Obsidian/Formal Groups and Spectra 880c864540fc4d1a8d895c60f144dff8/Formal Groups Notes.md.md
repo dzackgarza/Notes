@@ -23,26 +23,19 @@ Formal group law stuff
 		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%203.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%203.png)
 		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%204.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%204.png)
 		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%205.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%205.png)
-
 - Why is the group law called "formal"?
-
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%206.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%206.png)
-
+    - ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%206.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%206.png)
 - How "should" one think of a formal group?
-
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%207.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%207.png)
-
+	- ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%207.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%207.png)
 - What is a formal exponential and formal logarithm?
+	- ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%208.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%208.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%209.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%209.png)
 
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%208.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%208.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2010.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2010.png)
 
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%209.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%209.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2011.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2011.png)
 
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2010.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2010.png)
-
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2011.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2011.png)
-
-    ![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2012.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2012.png)
+		![Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2012.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%2012.png)
 
 - What are examples of formal groups? What is a morphism? When are they isomorphic?
 
