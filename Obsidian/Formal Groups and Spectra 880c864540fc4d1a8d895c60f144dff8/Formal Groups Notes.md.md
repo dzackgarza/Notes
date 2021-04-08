@@ -12,6 +12,17 @@ Formal group law stuff
 
 # Basics
 
+- A
+	- 1
+	- 2
+	- 3
+- B
+	- 11
+	- 22
+	- 33
+- C
+	- asdqwe
+
 - Motivation: why should one care about formal groups?
     - Idea: substitute for Lie algebras in positive characteristic
         - Formal group and lie algebra carry the same info in char 0
