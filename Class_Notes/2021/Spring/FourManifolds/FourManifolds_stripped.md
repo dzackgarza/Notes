@@ -3944,6 +3944,8 @@ Note that \( K3 \)s are special CYs. An example is \( {\mathbb{C}}^2 / \Lambda \
 
 # Wednesday, March 31
 
+## Polyvector Fields
+
 ::: {.remark}
 We have a perfect pairing
 \[
@@ -4167,9 +4169,10 @@ where \( h \) is the restriction of the generator of \( H^2({\mathbb{CP}}^N; {\m
 .\]
 
 What is this \( \dim(X){\hbox{-}} \)fold intersection?
+
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-25.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -4197,7 +4200,7 @@ Felix Klein has a "proof" of the existence of a meromorphic function on a Rieman
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-39.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -4215,7 +4218,11 @@ We now want to discuss an alternative characterization of the intersection form 
 :::
 
 ::: {.proposition title="?"}
-Let \( S \in {\mathsf{Mfd}}^2({\mathbb{C}})^{ \text{compact} }  \), then the intersection number between complex curves \( C, D \) can be computed in the following ways: \( C\cdot D = \deg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p\in C \cap D } \mathop{\mathrm{len}}_p(C \cap D ) \), where we'll define \( \mathop{\mathrm{len}}_p \) soon.
+Let \( S \in {\mathsf{Mfd}}^2({\mathbb{C}})^{ \text{compact} }  \), then the intersection number between complex curves \( C, D \) can be computed in the following ways:
+\[
+C\cdot D = \deg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p\in C \cap D } \mathop{\mathrm{len}}_p(C \cap D )
+,\]
+where we'll define \( \mathop{\mathrm{len}}_p \) soon.
 :::
 
 ::: {.remark}
@@ -4223,7 +4230,7 @@ This will count intersection points after a small perturbation. Note that not ev
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{41pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_13-57.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -4264,11 +4271,15 @@ Locally we can write \( C = V(f) \) and \( D = V(g) \) for some holomorphic func
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-06.pdf_tex} };
 \end{tikzpicture}
 ```
-We have \( s_C \in H^0(S; {\mathcal{O}}_S(C)) \) and \( s_D \in H^0(S; {\mathcal{O}}_S(D)) \) as global sections where \( V(s_c) = C, V(s_D) = D \). In a local trivialization, we can assume \( { \left.{{s_C}} \right|_{{U}} } = f \) and \( { \left.{{s_D}} \right|_{{U}} } = g \). So the first map is \( (s_D, s_C) \). The next map is \( {\left[ {s_C, -s_D} \right]}^t \) as a column vector, i.e. given a section \( (\varphi_1, \varphi_2) \in H^0(U, {\mathcal{O}}_S(-C) \oplus {\mathcal{O}}_S(-D) ) \) we send it to \( \phi_1 \cdot s_D - \phi_2 \cdot s_C \). Why is this exact? Considering the composition, we have
+We have \( s_C \in H^0(S; {\mathcal{O}}_S(C)) \) and \( s_D \in H^0(S; {\mathcal{O}}_S(D)) \) as global sections where \( V(s_c) = C, V(s_D) = D \). In a local trivialization, we can assume \( { \left.{{s_C}} \right|_{{U}} } = f \) and \( { \left.{{s_D}} \right|_{{U}} } = g \). So the first map is \( (s_D, s_C) \). The next map is \( {\left[ {s_C, -s_D} \right]}^t \) as a column vector, i.e. given a section we map it in the following way:
+\[ 
+(\varphi_1, \varphi_2) \in H^0(U, {\mathcal{O}}_S(-C) \oplus {\mathcal{O}}_S(-D) ) \mapsto \phi_1 \cdot s_D - \phi_2 \cdot s_C
+.\]
+Why is this exact? Considering the composition, we have
 \[
 \phi \xrightarrow{p_1}
 (\phi s_D, \phi s_C)
@@ -4308,7 +4319,7 @@ Elements in the ideal can be expanded as power series of the form \( a_{0,1}y + 
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em}3
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-35.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -4362,7 +4373,7 @@ There is a residue map: let \( p\in C \) be a point and \( \gamma_p(r) \) be an 
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-01.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -4449,14 +4460,26 @@ See the Trott curve:
 \[
 144(x^4 + y^4) - 225(x^2 + y^2) + 350x^2 y^2 + 81 = 0
 ,\]
-whose plot looks like
+whose plot looks like the following:
 
-```{=tex}
-\begin{tikzpicture}
-\fontsize{45pt}{1em} 
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-31.pdf_tex} };
-\end{tikzpicture}
+``` {.sage}
+f(x,y) = 12^2*(x^4 + y^4) - 15^2*(x^2 + y^2) + 350*x^2*y^2 + 81
+implicit_plot(f, (x,-1,1), (y,-1,1))
 ```
+
+```{=html}
+<!--\begin{tikzpicture}-->
+```
+```{=html}
+<!--\fontsize{45pt}{1em} -->
+```
+```{=html}
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-31.pdf_tex} };-->
+```
+```{=html}
+<!--\end{tikzpicture}-->
+```
+![image_2021-04-09-16-40-49](figures/image_2021-04-09-16-40-49.png)
 :::
 
 ::: {.example title="?"}
@@ -4470,7 +4493,7 @@ This is because we can perturb these to be transverse:
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-39.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -4489,6 +4512,99 @@ So setting \( C = {\mathbb{P}}^1 \times{\mathbb{P}}^1 = V(f_{2, 3}) \), a functi
 2g(C) - 2 = (K_{{\mathbb{P}}^1 \times{\mathbb{P}}^1} + 2f_1 + 3f_2) \cdot (2f_1 + 3f_2) = f_2 \cdot (2f_1 + 3f_2) = 2
 ,\]
 since \( K_{{\mathbb{P}}^1} \circ = -2f_1 - 2f_2 \) and so \( g(C) = 2 \).
+:::
+
+# Friday, April 09
+
+::: {.remark}
+Recall that line bundles on \( {\mathbb{CP}}^n \) were in bijection with \( {\mathbb{Z}} \), where send \( d \) to a bundle \( {\mathcal{O}}(d) \coloneqq{\mathcal{O}}_{{\mathbb{CP}}^N}(d) \). We produced the tautological line bundle \( {\mathcal{O}}(-1) \) whose fiber over \( \mathbf{x} \subseteq {\mathbb{CP}}^n \) is the line in \( {\mathbb{C}}^n \) spanned by its coordinates. We have \( {\mathcal{O}}(-1)^\vee\coloneqq{\mathcal{O}}(1) \), and \( {\mathcal{O}}(n)\coloneqq{\mathcal{O}}(1)^{\otimes n} \). Alternatively, it was characterized in terms of homogeneous functions, where the fiber \( {\mathcal{O}}(n)_{\mathbf{x}} \) are the linear functions \( L \) on lines \( \left\{{\lambda \mathbf{x}}\right\} \to {\mathbb{C}} \) such that \( L(\lambda p) = \lambda^n L(p) \). Noting that these are linear functions, such \( L \) form a 1-dimensional \( {\mathbb{C}}{\hbox{-}} \)vector space.
+:::
+
+::: {.example title="?"}
+The classic example is \( x_0 \in {\mathcal{O}}(1)_{\mathbf{x}} \) since \( x_0( \lambda p) = \lambda x_0 (p) \). Similarly, \( x_0^2 + x_1 x_2 \in {\mathcal{O}}(2)_{\mathbf{x}} \) since
+\[
+x_0^2 + x_1 x_2 (\lambda p) = \lambda^2 (x_0^2 + x_1 x_2(p))
+.\]
+:::
+
+::: {.remark}
+Note that the global sections were given by \( \Gamma^0({\mathbb{P}}^n, {\mathcal{O}}(d)) = H^0({\mathbb{P}}^n; {\mathcal{O}}(d)) \) was the span of degree \( d \) monomials in \( x_0, \cdots, x_n \). For example \( x_0^2 + x_1 x_2 \) is a well-defined element of \( {\mathcal{O}}(2)_p \) which varies holomorphically with \( p \), yielding a section:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{43pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-09_14-11.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.example title="?"}
+For a K3 surface, consider \( S = \left\{{ \sum_{i=0}^4 x_i^4 = 0 }\right\} \subset {\mathbb{CP}}^3 \). By the adjunction formula,
+\[
+K_S = { \left.{{\qty{ K_{{\mathbb{CP}}^3} \otimes{\mathcal{O}}_{{\mathbb{CP}}^3}(S) }}} \right|_{{S}} }
+.\]
+Note that if \( s\in H^0(\mathcal{L}) \), we can recover \( {\mathcal{O}}(\operatorname{Div}S) = \mathcal{L} \). Moreover, \( K_{{\mathbb{CP}}^3} = {\mathcal{O}}(-4) \) and \( {\mathcal{O}}_{{\mathbb{CP}}^3}(S) = {\mathcal{O}}(4) \) since we can view the formula as a function on the tautological line, which yields a section. So we get \( K_S = {\mathcal{O}}(-4) \otimes{\mathcal{O}}(4) = {\mathcal{O}}(0) = {\mathcal{O}} \), i.e. these yield actual functions on \( {\mathbb{CP}}^n \) since they're products of functions that scale by \( \lambda^{-4} \) and functions that scale by \( \lambda^4 \). We're using the fact that \( {\mathcal{O}}_{\mathbf{p} = [x_0: \cdots : x_n]} \) are functions \( L \) such that \( L(\lambda p) = \lambda^0 L(p) = L(p) \), which yields a well-defined function on \( {\mathbb{CP}}^n \). So quartics in \( {\mathbb{P}}^3 \) have trivial canonical bundle, i.e. \( K_S = {\mathcal{O}}_S \) for \( S = V(x_0^4 + x_1^4 + x_2^4 + x_3^4) \).
+:::
+
+::: {.remark}
+We know that \( H^o(S, K_S) \) are the globally holomorphic 2-forms on \( S \), and here this is isomorphic to \( H^0(S, {\mathcal{O}}_S) = {\mathbb{C}}\Omega_S \) for some single holomorphic 2-form. Moreover \( \operatorname{Div}(\Omega_S) = 0 \) since \( {\mathcal{O}}( \operatorname{Div}( \Omega_S)) = K_S = {\mathcal{O}}_S \). So these are the analogs of elliptic curves in dimension 2, since for example \( E \coloneqq{\mathbb{C}}/ \Lambda \) has a nonvanishing section \( \,dz\in H^0(E, K_E) \), and we can write \( E = V(f) \) for \( f \) a cubic in \( {\mathbb{P}}^3 \), and we computed the genus of cubics. Moreover, every genus 1 curve is \( {\mathbb{C}} \) mod a lattice.
+:::
+
+::: {.remark}
+Recall an exercise from the notes: computing the Hodge diamond of a genus 5 curve. We'll compute the diamond for a K3 surface:
+
+```{=tex}
+\begin{tikzcd}
+    && {h^{2, 2}} \\
+    & {h^{3, 1}} && {h^{1, 3}} \\
+    {h^{2, 0}} && {h^{1, 1}} && {h^{0, 2}} \\
+    & {h^{1, 0}} && {h^{0, 1}} \\
+    && {h^{0, 0}}
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCJoXnsyLCAyfSJdLFsxLDEsImheezMsIDF9Il0sWzMsMSwiaF57MSwgM30iXSxbMCwyLCJoXnsyLCAwfSJdLFsyLDIsImheezEsIDF9Il0sWzQsMiwiaF57MCwgMn0iXSxbMSwzLCJoXnsxLCAwfSJdLFszLDMsImheezAsIDF9Il0sWzIsNCwiaF57MCwgMH0iXV0=)
+
+We know \( h^{2, 0} = H^0( S, \Omega_S^2) \), which yields 1s:
+
+```{=tex}
+\begin{tikzcd}
+    && 1 \\
+    & {h^{3, 1}} && {h^{1, 3}} \\
+    1 && {h^{1, 1}} && 1 \\
+    & {h^{1, 0}} && {h^{0, 1}} \\
+    && 1
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCIxIl0sWzEsMSwiaF57MywgMX0iXSxbMywxLCJoXnsxLCAzfSJdLFswLDIsIjEiXSxbMiwyLCJoXnsxLCAxfSJdLFs0LDIsIjEiXSxbMSwzLCJoXnsxLCAwfSJdLFszLDMsImheezAsIDF9Il0sWzIsNCwiMSJdXQ==)
+
+We'll use the following theorem:
+
+::: {.theorem title="Lefschetz Hyperplane Theorem"}
+Let \( X \subset {\mathbb{P}}^n \) with \( \dim X > 3 \). Then \( \pi_1(X) \cong \pi_1(X \cap H) \) for \( H \) a hypersurface intersection \( X \) at a smooth codimension 1 complex manifold.
+:::
+
+::: {.remark}
+Applying this to \( X = {\mathbb{P}}^3 \), we have \( V(x_0^4 + \cdots + x_3^4) = S \), we have \( \pi_1({\mathbb{P}}^3) = \pi_1(S) \). We can write \( {\mathbb{P}}^3 = {\mathbb{C}}\cup{\mathbb{C}}^2 \cup{\mathbb{C}}^4 \), which is a cell decomposition with cells only in degrees 0,2,4, and so in fact \( \pi_1({\mathbb{P}}^n) = 0 \).
+:::
+
+::: {.corollary title="?"}
+K3 surfaces are simply connected, and \( h^1(S; {\mathbb{C}}) = 0 \).
+:::
+
+Note that anything embedded in projective space as a complex submanifold is Kähler by restricting the Fubini-Study form. Using simple connectedness and Serre duality, we have
+
+```{=tex}
+\begin{tikzcd}
+    && 1 \\
+    & 0 && 0 \\
+    1 && {h^{1, 1}} && 1 \\
+    & 0 && 0 \\
+    && 1
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCIxIl0sWzEsMSwiMCJdLFszLDEsIjAiXSxbMCwyLCIxIl0sWzIsMiwiaF57MSwgMX0iXSxbNCwyLCIxIl0sWzEsMywiMCJdLFszLDMsIjAiXSxbMiw0LCIxIl1d)
+
+We know \( \chi({\mathcal{O}}_S) = (1/12)(K^2+\chi_{\mathsf{Top}}) \), and since \( K_S = {\mathcal{O}}_S \) is trivial, we have \( c_1({\mathcal{O}}_S) = 0 \). Noting that \( h^{p, q} = H^( \Omega^p) \), so we can sum the lower-right part of the diamond to get \( \chi({\mathcal{O}}_S) = 1 - 0 + 1 = 2 \), since we take \( p=0 \) to get \( \Omega^p = {\mathcal{O}} \). Computing \( \chi_{\mathsf{Top}} \), we get \( h_{1, 1} = 20 \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.

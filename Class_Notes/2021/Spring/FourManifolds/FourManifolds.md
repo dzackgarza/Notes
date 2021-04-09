@@ -5404,10 +5404,9 @@ An example is $\CC^2 / \Lambda$ for \( \Lambda \) a rank 4 lattice.
 This is diffeomorphic to $(S^1)^4$, for example $E\cross E$.
 :::
 
-
-
-
 # Wednesday, March 31
+
+## Polyvector Fields
 
 :::{.remark}
 We have a perfect pairing 
@@ -5464,8 +5463,6 @@ However the Poisson structure need not be nondegenerate.
 :::{.remark}
 Polyvector fields show up in Hochschild homology!
 :::
-
-
 
 ## Algebraic Surfaces
 
@@ -5670,8 +5667,9 @@ Note that for $k$ large, the dominating term grows like $(kh)^{\dim X}$, so asym
 .\]
 
 What is this $\dim(X)\dash$fold intersection?
+
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-25.pdf_tex} };
 \end{tikzpicture}
 
@@ -5699,7 +5697,6 @@ Thus $L \cong \OO(\div s - kH)$, where $\div s- kH$ is some divisor.
 With some more work, one can show $L\cong \OO(C-D)$ for $C,D$ *smooth* divisors.
 :::
 
-
 ## Aside
 
 :::{.remark}
@@ -5709,7 +5706,7 @@ take your Riemann surface and make it out of metal.
 Attach it to a battery:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-02_14-39.pdf_tex} };
 \end{tikzpicture}
 
@@ -5731,7 +5728,10 @@ The next result comes from Beauville's "Complex Algebraic Surfaces":
 
 :::{.proposition title="?"}
 Let $S \in \Mfd^2(\CC)^\cpt$, then the intersection number between complex curves $C, D$ can be computed in the following ways:
-$C\cdot D = \deg \OO_S(C) \ro{}{D} = \sum_{p\in C \intersect D } \len_p(C \intersect D )$, where we'll define $\len_p$ soon.
+\[
+C\cdot D = \deg \OO_S(C) \ro{}{D} = \sum_{p\in C \intersect D } \len_p(C \intersect D )
+,\] 
+where we'll define $\len_p$ soon.
 :::
 
 :::{.remark}
@@ -5739,7 +5739,7 @@ This will count intersection points after a small perturbation.
 Note that not every two curves will intersect transversely: consider $\PP_2$ with a line $C$ and a tangent conic $D$:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{41pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_13-57.pdf_tex} };
 \end{tikzpicture}
 
@@ -5781,14 +5781,17 @@ Locally we can write $C = V(f)$ and $D = V(g)$ for some holomorphic functions $f
 We have the following picture:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-06.pdf_tex} };
 \end{tikzpicture}
 
 We have $s_C \in H^0(S; \OO_S(C))$ and $s_D \in H^0(S; \OO_S(D))$ as global sections where $V(s_c) = C, V(s_D) = D$.
 In a local trivialization, we can assume $\ro{s_C}{U} = f$ and $\ro{s_D}{U} = g$.
 So the first map is $(s_D, s_C)$.
-The next map is $\tv{s_C, -s_D}^t$ as a column vector, i.e. given a section \( (\varphi_1, \varphi_2) \in H^0(U, \OO_S(-C) \oplus \OO_S(-D) ) \) we send it to $\phi_1 \cdot s_D - \phi_2 \cdot s_C$.
+The next map is $\tv{s_C, -s_D}^t$ as a column vector, i.e. given a section we map it in the following way:
+\[ 
+(\varphi_1, \varphi_2) \in H^0(U, \OO_S(-C) \oplus \OO_S(-D) ) \mapsto \phi_1 \cdot s_D - \phi_2 \cdot s_C
+.\]
 Why is this exact?
 Considering the composition, we have
 \[
@@ -5844,7 +5847,7 @@ So this quotient is isomorphic to $\CC 1 \oplus \CC x$, which is 2-dimensional, 
 Geometrically we have the following, where this is picking up the multiplicity 2 intersection:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{43pt}{1em}3
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-05_14-35.pdf_tex} };
 \end{tikzpicture}
 
@@ -5918,7 +5921,7 @@ This can have poles along \( \ts{ s_C = 0 } = C \) up to first order.
 There is a residue map: let $p\in C$ be a point and \( \gamma_p(r) \) be an oriented loop in $S\sm C$ around $p\in C$ of radius $r$ (a meridian):
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-01.pdf_tex} };
 \end{tikzpicture}
 
@@ -6023,22 +6026,25 @@ n_C \leq 1 + g(C)
 .\]
 :::
 
-
 :::{.remark}
 See the Trott curve:
 \[
 144(x^4 + y^4) - 225(x^2 + y^2) + 350x^2 y^2 + 81 = 0
 ,\]
-whose plot looks like
+whose plot looks like the following:
 
-\begin{tikzpicture}
-\fontsize{45pt}{1em} 
-\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-31.pdf_tex} };
-\end{tikzpicture}
+```sage
+f(x,y) = 12^2*(x^4 + y^4) - 15^2*(x^2 + y^2) + 350*x^2*y^2 + 81
+implicit_plot(f, (x,-1,1), (y,-1,1))
+```
 
+<!--\begin{tikzpicture}-->
+<!--\fontsize{45pt}{1em} -->
+<!--\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-31.pdf_tex} };-->
+<!--\end{tikzpicture}-->
 
+![image_2021-04-09-16-40-49](figures/image_2021-04-09-16-40-49.png)
 :::
-
 
 :::{.example title="?"}
 Consider $S \da \PP^1 \cross \PP^1$, which is homeomorphic to $S^2 \cross S^2$.
@@ -6054,7 +6060,7 @@ We can compute
 This is because we can perturb these to be transverse:
 
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-39.pdf_tex} };
 \end{tikzpicture}
 
@@ -6076,10 +6082,6 @@ We get
 ,\]
 since $K_{\PP^1} \circ = -2f_1 - 2f_2$
 and so $g(C) = 2$.
-
-
-
-
 :::
 
 
@@ -6107,3 +6109,115 @@ and so $g(C) = 2$.
 
 
 
+
+# Friday, April 09
+
+:::{.remark}
+Recall that line bundles on $\CP^n$ were in bijection with $\ZZ$, where send $d$ to a bundle $\OO(d) \da \OO_{\CP^N}(d)$.
+We produced the tautological line bundle $\OO(-1)$ whose fiber over $\vector x \subseteq \CP^n$ is the line in $\CC^n$ spanned by its coordinates. 
+We have $\OO(-1)\dual \da \OO(1)$, and $\OO(n)\da \OO(1)^{\otimes n}$.
+Alternatively, it was characterized in terms of homogeneous functions, where the fiber $\OO(n)_{\vector x}$ are the linear functions $L$ on lines $\ts{\lambda \vector x} \to \CC$ such that $L(\lambda p) = \lambda^n L(p)$.
+Noting that these are linear functions, such $L$ form a 1-dimensional $\CC\dash$vector space.
+:::
+
+:::{.example title="?"}
+The classic example is $x_0 \in \OO(1)_{\vector x}$ since $x_0( \lambda p) = \lambda x_0 (p)$.
+Similarly, $x_0^2 + x_1 x_2 \in \OO(2)_{\vector x}$ since 
+\[
+x_0^2 + x_1 x_2 (\lambda p) = \lambda^2 (x_0^2 + x_1 x_2(p))
+.\]
+:::
+
+:::{.remark}
+Note that the global sections were given by $\Gamma^0(\PP^n, \OO(d)) = H^0(\PP^n; \OO(d))$ was the span of degree $d$ monomials in $x_0, \cdots, x_n$.
+For example $x_0^2 + x_1 x_2$ is a well-defined element of $\OO(2)_p$ which varies holomorphically with $p$, yielding a section:
+
+\begin{tikzpicture}
+\fontsize{43pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-09_14-11.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+:::{.example title="?"}
+For a K3 surface, consider $S = \ts{ \sum_{i=0}^4 x_i^4 = 0 } \subset \CP^3$.
+By the adjunction formula, 
+\[
+K_S = \ro{\qty{ K_{\CP^3} \tensor \OO_{\CP^3}(S) }}{S}
+.\]
+Note that if $s\in H^0(\mathcal{L})$, we can recover $\OO(\div S) = \mathcal{L}$. 
+Moreover, $K_{\CP^3} = \OO(-4)$ and $\OO_{\CP^3}(S) = \OO(4)$ since we can view the formula as a function on the tautological line, which yields a section.
+So we get $K_S = \OO(-4) \tensor \OO(4) = \OO(0) = \OO$, i.e. these yield actual functions on $\CP^n$ since they're products of functions that scale by $\lambda^{-4}$ and functions that scale by $\lambda^4$.
+We're using the fact that $\OO_{\vector p = [x_0: \cdots : x_n]}$ are functions $L$ such that $L(\lambda p) = \lambda^0 L(p) = L(p)$, which yields a well-defined function on $\CP^n$.
+So quartics in $\PP^3$ have trivial canonical bundle, i.e. $K_S = \OO_S$ for $S = V(x_0^4 + x_1^4 + x_2^4 + x_3^4)$.
+:::
+
+:::{.remark}
+We know that $H^o(S, K_S)$ are the globally holomorphic 2-forms on $S$, and here this is isomorphic to $H^0(S, \OO_S) = \CC \Omega_S$ for some single holomorphic 2-form.
+Moreover $\div (\Omega_S) = 0$ since $\OO( \div ( \Omega_S)) = K_S = \OO_S$.
+So these are the analogs of elliptic curves in dimension 2, since for example $E \da \CC/ \Lambda$ has a nonvanishing section $\dz \in H^0(E, K_E)$, and we can write $E = V(f)$ for $f$ a cubic in $\PP^3$, and we computed the genus of cubics.
+Moreover, every genus 1 curve is $\CC$ mod a lattice.
+:::
+
+:::{.remark}
+Recall an exercise from the notes: computing the Hodge diamond of a genus 5 curve.
+We'll compute the diamond for a K3 surface:
+
+\begin{tikzcd}
+	&& {h^{2, 2}} \\
+	& {h^{3, 1}} && {h^{1, 3}} \\
+	{h^{2, 0}} && {h^{1, 1}} && {h^{0, 2}} \\
+	& {h^{1, 0}} && {h^{0, 1}} \\
+	&& {h^{0, 0}}
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCJoXnsyLCAyfSJdLFsxLDEsImheezMsIDF9Il0sWzMsMSwiaF57MSwgM30iXSxbMCwyLCJoXnsyLCAwfSJdLFsyLDIsImheezEsIDF9Il0sWzQsMiwiaF57MCwgMn0iXSxbMSwzLCJoXnsxLCAwfSJdLFszLDMsImheezAsIDF9Il0sWzIsNCwiaF57MCwgMH0iXV0=)
+
+
+We know $h^{2, 0} = H^0( S, \Omega_S^2)$, which yields 1s:
+
+\begin{tikzcd}
+	&& 1 \\
+	& {h^{3, 1}} && {h^{1, 3}} \\
+	1 && {h^{1, 1}} && 1 \\
+	& {h^{1, 0}} && {h^{0, 1}} \\
+	&& 1
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCIxIl0sWzEsMSwiaF57MywgMX0iXSxbMywxLCJoXnsxLCAzfSJdLFswLDIsIjEiXSxbMiwyLCJoXnsxLCAxfSJdLFs0LDIsIjEiXSxbMSwzLCJoXnsxLCAwfSJdLFszLDMsImheezAsIDF9Il0sWzIsNCwiMSJdXQ==)
+
+We'll use the following theorem:
+
+
+:::{.theorem title="Lefschetz Hyperplane Theorem"}
+Let $X \subset \PP^n$ with $\dim X > 3$.
+Then $\pi_1(X) \cong \pi_1(X \intersect H)$ for $H$ a hypersurface intersection $X$ at a smooth codimension 1 complex manifold.
+:::
+
+:::{.remark}
+Applying this to $X = \PP^3$, we have $V(x_0^4 + \cdots + x_3^4) = S$, we have $\pi_1(\PP^3) = \pi_1(S)$.
+We can write $\PP^3 = \CC \union \CC^2 \union \CC^4$, which is a cell decomposition with cells only in degrees 0,2,4, and so in fact $\pi_1(\PP^n) = 0$.
+:::
+
+
+:::{.corollary title="?"}
+K3 surfaces are simply connected, and $h^1(S; \CC) = 0$.
+:::
+
+Note that anything embedded in projective space as a complex submanifold is Kähler by restricting the Fubini-Study form.
+Using simple connectedness and Serre duality, we have
+
+\begin{tikzcd}
+	&& 1 \\
+	& 0 && 0 \\
+	1 && {h^{1, 1}} && 1 \\
+	& 0 && 0 \\
+	&& 1
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMiwwLCIxIl0sWzEsMSwiMCJdLFszLDEsIjAiXSxbMCwyLCIxIl0sWzIsMiwiaF57MSwgMX0iXSxbNCwyLCIxIl0sWzEsMywiMCJdLFszLDMsIjAiXSxbMiw0LCIxIl1d)
+
+We know $\chi(\OO_S) = (1/12)(K^2+\chi_\Top)$, and since $K_S = \OO_S$ is trivial, we have $c_1(\OO_S) = 0$.
+Noting that $h^{p, q} = H^( \Omega^p)$, so we can sum the lower-right part of the diamond to get $\chi(\OO_S) = 1 - 0 + 1 = 2$, since we take $p=0$ to get \( \Omega^p = \OO \).
+Computing $\chi_\Top$, we get $h_{1, 1} = 20$.
+:::
