@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1291.06612077bp}%
+    \setlength{\unitlength}{1221.24592202bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,14 +50,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.41880982)%
+  \begin{picture}(1,0.4433813)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-04-09_14-11.pdf}}%
-    \put(0.83694693,0.07026065){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\CP^n$\\\end{tabular}}}}%
-    \put(0.89503848,0.39557321){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\OO(2)$\end{tabular}}}}%
-    \put(0.61619919,0.1748254){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P$\end{tabular}}}}%
-    \put(0.48839785,0.32586338){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x_0^2 + x_1 x_2$\end{tabular}}}}%
+    \put(0.88530997,0.01424608){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\CP^n$\\\end{tabular}}}}%
+    \put(0.86299741,0.42471766){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\OO(2)$\end{tabular}}}}%
+    \put(0.6567288,0.31846319){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P$\end{tabular}}}}%
+    \put(0.47762299,0.35914981){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x_0^2 + x_1 x_2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-04-09_14-11.pdf}}%
   \end{picture}%
 \endgroup%
