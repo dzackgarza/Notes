@@ -2777,11 +2777,11 @@ for \( n \) the dimension. In this case, \( \sigma(d) \) has the same formula ev
 :::
 
 ::: {.definition title="Elliptic Complex"}
-A differential complex \( ({\mathcal{E}}^{\bullet}, d) \) is **elliptic** if the symbol complex \( (\pi^* {\mathcal{E}}^{\bullet}, \sigma(d)) \) is an exact sequence of sheaves (importantly) on \( T^\vee X \setminus\left\{{s_z}\right\} \) for \( s_z \) the zero section.
+A differential complex \( ({\mathcal{E}}_{*}, d) \) is **elliptic** if the symbol complex \( (\pi^* {\mathcal{E}}_{*}, \sigma(d)) \) is an exact sequence of sheaves (importantly) on \( T^\vee X \setminus\left\{{s_z}\right\} \) for \( s_z \) the zero section.
 :::
 
 ::: {.claim}
-\( ({\Omega}^{\bullet}, d) \) is elliptic. To check exactness of a sequence of vector bundles, it suffices to check exactness on every fiber. Fix \( (p, \alpha) \in T^\vee X \setminus\left\{{ s_z }\right\} \), then
+\( ({\Omega}_{*}, d) \) is elliptic. To check exactness of a sequence of vector bundles, it suffices to check exactness on every fiber. Fix \( (p, \alpha) \in T^\vee X \setminus\left\{{ s_z }\right\} \), then
 \[
 0 \to {\mathbb{C}}\xrightarrow{\wedge \alpha}  T^\vee_p X \xrightarrow{\wedge \alpha}  \bigwedge^2 T_p^\vee X \xrightarrow{\wedge \alpha}  \bigwedge^3 T_p^\vee X \to \cdots
 .\]
@@ -2819,16 +2819,16 @@ The next theorem computes the cohomology of an elliptic complex using Chern and 
 :::
 
 ::: {.theorem title="Atiyah-Singer Index Theorem"}
-If \( ( {\mathcal{E}}^{\bullet}, d) \) is an elliptic complex of smooth vector bundles on a compact oriented \( X\in {\mathsf{Mfd}}^n_{\mathbb{R}} \), then
+If \( ( {\mathcal{E}}_{*}, d) \) is an elliptic complex of smooth vector bundles on a compact oriented \( X\in {\mathsf{Mfd}}^n_{\mathbb{R}} \), then
 \[
-\chi({ \mathcal{E} }^{\bullet}, d) = \sum (-1)^i \dim \qty{\ker d^i \over \operatorname{im}d^{i-1} } = 
+\chi({ \mathcal{E} }_{*}, d) = \sum (-1)^i \dim \qty{\ker d^i \over \operatorname{im}d^{i-1} } = 
 (-1)^{\dim(X) \choose 2}
-\int_X {\operatorname{ch}\over {\operatorname{eul}}}( {\mathcal{E}}^{\bullet} ) \mathrm{td}(TX \otimes_{\mathbb{R}}{\mathbb{C}})
+\int_X {\operatorname{ch}\over {\operatorname{eul}}}( {\mathcal{E}}_{*} ) \mathrm{td}(TX \otimes_{\mathbb{R}}{\mathbb{C}})
 .\]
 :::
 
 ::: {.remark}
-Here we define \( \operatorname{ch}( {\mathcal{E}}^{\bullet} \coloneqq\sum_i (-1)^i \operatorname{ch}( \mathcal{E}^i ) \). What does it mean to divide by the Euler class? Let \( \left\{{ x_i, -x_i }\right\} \) be the Chern roots of the complexified tangent bundle \( TX\otimes{\mathbb{C}} \), then \( {\operatorname{eul}}(X) \coloneqq\prod x_i \) is the product where we pick one of each of the Chern roots from each of the pairs. The preferred sign to choose is the one for which \( \int_X \prod x_i = \chi_{\mathsf{Top}}(X) \). Dividing just means to take the Chern character, then if it's divisible by \( \prod x_i \), we do so. We have
+Here we define \( \operatorname{ch}( {\mathcal{E}}_{*} \coloneqq\sum_i (-1)^i \operatorname{ch}( \mathcal{E}^i ) \). What does it mean to divide by the Euler class? Let \( \left\{{ x_i, -x_i }\right\} \) be the Chern roots of the complexified tangent bundle \( TX\otimes{\mathbb{C}} \), then \( {\operatorname{eul}}(X) \coloneqq\prod x_i \) is the product where we pick one of each of the Chern roots from each of the pairs. The preferred sign to choose is the one for which \( \int_X \prod x_i = \chi_{\mathsf{Top}}(X) \). Dividing just means to take the Chern character, then if it's divisible by \( \prod x_i \), we do so. We have
 \[
 \mathrm{td}(TX\otimes{\mathbb{C}}) = \prod_i 
 \qty{x_i \over 1 - e^{-x_i}} 
@@ -2846,7 +2846,7 @@ but note that this doesn't necessarily make sense. However, all all computations
 :::
 
 ::: {.exercise title="Chern character of the de Rham complex"}
-\( \operatorname{ch}( {\Omega}^{\bullet}X \otimes{\mathbb{C}}) = \prod_i (1-e^{x_i}) (1 - e^{-x_i}) \) for \( X\in {\mathsf{Mfd}}_{\mathbb{R}}^{2n} \) even dimensional.
+\( \operatorname{ch}( {\Omega}_{*}X \otimes{\mathbb{C}}) = \prod_i (1-e^{x_i}) (1 - e^{-x_i}) \) for \( X\in {\mathsf{Mfd}}_{\mathbb{R}}^{2n} \) even dimensional.
 :::
 
 ::: {.example title="?"}
@@ -2854,15 +2854,15 @@ Supposing \( X\in {\mathsf{Mfd}}_{\mathbb{R}}^2 \) is a genus \( g \) surface, w
 \[
 {\mathcal{O}}\to \Omega^1\otimes{\mathbb{C}}\to \Omega^2 \otimes{\mathbb{C}}
 ,\]
-and \( \operatorname{ch}({ \Omega }^{\bullet}) = \operatorname{ch}( {\mathcal{O}}) - \operatorname{ch}( \Omega^1 \otimes{\mathbb{C}}) + \operatorname{ch}(\Omega^2\otimes{\mathbb{C}}) \). The Chern roots of \( TX \otimes{\mathbb{C}} \) are \( \left\{{ x_i, -x_i }\right\} \), which come in pairs. So
+and \( \operatorname{ch}({ \Omega }_{*}) = \operatorname{ch}( {\mathcal{O}}) - \operatorname{ch}( \Omega^1 \otimes{\mathbb{C}}) + \operatorname{ch}(\Omega^2\otimes{\mathbb{C}}) \). The Chern roots of \( TX \otimes{\mathbb{C}} \) are \( \left\{{ x_i, -x_i }\right\} \), which come in pairs. So
 \[
-\operatorname{ch}( {\Omega}^{\bullet} ) 
+\operatorname{ch}( {\Omega}_{*} ) 
 = 1 - e^{x_i} - e^{x_i} + e^{-x_i + x_i}
 = (1 - e^{-x_i})( 1 - e^{x_i} )
 .\]
 From the theorem, we're supposed to have
 \[
-\chi( {\Omega}^{\bullet}, d) 
+\chi( {\Omega}_{*}, d) 
 &= 
 (-1)^{n(n-1) \over 2}
 \int_X
@@ -2912,7 +2912,7 @@ which is HRR.
 # Monday, March 08
 
 ::: {.remark}
-Recall that given a differential complex \( ({ \mathcal{E} }^{\bullet}, d) \) we had a symbol complex \( ( \pi^* {\mathcal{E}}^{\bullet}, \sigma(d) ) \) where \( \pi: T^\vee X\to X \) and
+Recall that given a differential complex \( ({ \mathcal{E} }_{*}, d) \) we had a symbol complex \( ( \pi^* {\mathcal{E}}_{*}, \sigma(d) ) \) where \( \pi: T^\vee X\to X \) and
 \[ \sigma\qty{  \sum_{{\left\lvert {I} \right\rvert} \leq N} f_I {{\partial}}_I } \coloneqq\sum_{{\left\lvert {I} \right\rvert} = N} f_I y^I 
 ,\]
 where we take the top-order differentials, \( {\frac{\partial }{\partial x_j}\,} \mapsto y_j \) and
@@ -2920,9 +2920,9 @@ where we take the top-order differentials, \( {\frac{\partial }{\partial x_j}\,}
 T^\vee X &\to {\mathbb{R}}\\
 \alpha &\mapsto \alpha\qty{{\frac{\partial }{\partial x_j}\,} }
 .\]
-We say that \( ( {\mathcal{E} }^{\bullet}, d ) \) is **elliptic** if the symbol complex is exact on \( T^\vee X \setminus\left\{{0}\right\} \) where we delete the zero section. The Atiyah-Singer index theorem stated
+We say that \( ( {\mathcal{E} }_{*}, d ) \) is **elliptic** if the symbol complex is exact on \( T^\vee X \setminus\left\{{0}\right\} \) where we delete the zero section. The Atiyah-Singer index theorem stated
 \[
-\chi( {\mathcal{E}}^{\bullet}, d) = \int_X { \operatorname{ch}( { \mathcal{E} }^{\bullet}) \over {\operatorname{eul}}(X) } \mathrm{td}( TX\otimes_{\mathbb{R}}{\mathbb{C}})
+\chi( {\mathcal{E}}_{*}, d) = \int_X { \operatorname{ch}( { \mathcal{E} }_{*}) \over {\operatorname{eul}}(X) } \mathrm{td}( TX\otimes_{\mathbb{R}}{\mathbb{C}})
 .\]
 What's the connection to elliptic operators? Given a 2-term complex
 \[
@@ -2962,7 +2962,7 @@ Using this, we can fix a volume form \( dV \) on \( X \) and define
 \[
 {\left\langle {u},~{v} \right\rangle}_h \coloneqq\int_X h_i(u, {\overline{{v}}}) \, dV && u, v\in \mathcal{E}^i(X)
 .\]
-This yields the desired two-term complex, and \( ( {\mathcal{E}}^{\bullet}, d) \) is elliptic if and only if \( D^e \circ D^o: \mathcal{E}^o {\circlearrowleft} \) and \( D^o \circ D^e: \mathcal{E}^e {\circlearrowleft} \) are elliptic operators.
+This yields the desired two-term complex, and \( ( {\mathcal{E}}_{*}, d) \) is elliptic if and only if \( D^e \circ D^o: \mathcal{E}^o {\circlearrowleft} \) and \( D^o \circ D^e: \mathcal{E}^e {\circlearrowleft} \) are elliptic operators.
 :::
 
 ::: {.example title="?"}
@@ -4333,6 +4333,162 @@ But by additivity of \( \chi \) over exact sequences, we also have
 
 ::: {.remark}
 Next time: adjunction formula that allows computing genus for surfaces.
+:::
+
+# Wednesday, April 07
+
+::: {.remark}
+Last time: let \( C, D \subset S \) be distinct curves, then the intersection number is given by
+\[
+C\cdot D = \deeg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p \in C \cap D } \mathop{\mathrm{len}}_p( C \cap D)
+\]
+where \( \mathop{\mathrm{len}}_p(C \cap D) \coloneqq\dim_{\mathbb{C}}{\mathcal{O}}(U) / \left\langle{ f, g }\right\rangle \) where \( V(f) = C \cap U \) and \( V(g) = D \cap U \) with \( f, g \in {\mathcal{O}}(U) = \mathop{\mathrm{Hol}}(U) \). Here we're also assuming that \( C \cap D \cap U = \left\{{ p }\right\} \).
+:::
+
+## Adjunction Formula
+
+::: {.remark}
+We'll now discuss a way to compute the genus of a curve in a surface.
+:::
+
+::: {.proposition title="Adjunction Formula"}
+Let \( C \subset S \) be a smooth curve, then \( K_C = (K_S \otimes{\mathcal{O}}_S(C)) { \left.{{}} \right|_{{C}} } \), which is restriction of a line bundle. Note that \( K_C = \Omega^1_C \) is the sheaf of holomorphic 1-forms, but \( K_S = \Omega^2_S \) since we take the sheaf of top forms.
+:::
+
+::: {.proof title="?"}
+Let \( s\in \Omega^2_S \otimes{\mathcal{O}}(C)(U) \) be a section, then \( s_C \) is a section of \( {\mathcal{O}}_C \) vanishing along \( c \) and have \( s/s_C \) a meromorphic section of \( \Omega^2_S(U) \). Here dividing by \( s_C \) is like tensoring with \( {\mathcal{O}}(-C) \). This can have poles along \( \left\{{ s_C = 0 }\right\} = C \) up to first order.
+
+There is a residue map: let \( p\in C \) be a point and \( \gamma_p(r) \) be an oriented loop in \( S\setminus C \) around \( p\in C \) of radius \( r \) (a meridian):
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-01.pdf_tex} };
+\end{tikzpicture}
+```
+We can assemble a 1-form from the following contour integral:
+\[
+\operatorname{Res}_C {s\over s_C} \coloneqq\lim_{r\to 0} {1\over 2\pi i} \oint_{\gamma_p(r)} {s\over s_C} \in \Omega^1(U \cap C)
+.\]
+
+Locally \( C = V(x) \) in a coordinate chart of \( {\mathbb{C}}^2 \) where \( s_C = x \), so this is roughly of the form \( \oint_{{\left\lvert {x} \right\rvert} = r} {f(x, y) \over x} \,dx\wedge \,dy \), which is a one form in the variable \( y \). Note that if \( f \) were analytic, writing \( f = a_{0,0} + a_{0, 1} y + a_{0, 2} y^2 + \cdots + a_{1, 0}x + \cdots \), we would have
+\[
+\operatorname{Res}_C {s\over s_C} = (a_{0, 0} + a_{0, 1}y + a_{0, 2}y^2 + \cdots)\,dy= f(0, y)\,dy\text{locally}
+,\]
+which picks out all components not involving \( x \). This defines an \( {\mathcal{O}}{\hbox{-}} \)linear map
+\[
+\Omega^2_S \otimes{\mathcal{O}}_C &\to \Omega^1_C \\
+s & \mapsto \operatorname{Res}_C {s\over s_C}
+,\]
+since it doesn't involve any derivatives of \( f \). Note that this only depends on the restriction of \( s \) to \( C \). What is the kernel of \( \operatorname{Res}_C \)? We claim it is \( \Omega2_S \), which follows from the fact that the contour integral of any holomorphic form \( \omega \) will integrate to zero. We thus get a SES of sheaves
+\[
+0 \to \Omega^2_S \xrightarrow{\cdot s_C} \Omega_S^2 \otimes{\mathcal{O}}(C) \to \Omega^1(C) \to 0
+.\]
+where we send holomorphic forms to meromorphic forms with at most order 1 poles along \( C \) to holomorphic 1-forms on \( C \). The residue map is surjective since we can take
+\[
+\operatorname{Res}_{x=0} {g(y) \over x} \,dx\wedge \,dy= g(y) \,dy
+,\]
+so locally an arbitrary 1-form is a residue of some 2-form with simple poles along \( C \). We have a SES
+\[
+0 \to {\mathcal{O}}(-C) \xrightarrow{\cdot s_C} {\mathcal{O}}\to {\mathcal{O}}_C \to 0 
+,\]
+and tensoring with the line bundle \( \Omega^2 \otimes{\mathcal{O}}(C) \) we obtain
+\[
+0 \to \Omega_S^2 \to \Omega^2_S \otimes{\mathcal{O}}(C) \to \Omega^2_S \otimes{\mathcal{O}}(C) { \left.{{}} \right|_{{C}} } \to 0
+.\]
+Since cokernels are unique, we have \( \Omega^1_C \cong \Omega^2_S \otimes{\mathcal{O}}(C) { \left.{{}} \right|_{{C}} } \), which yields the adjunction formula.
+:::
+
+::: {.corollary title="The Genus Formula"}
+We have
+\[
+\deg \Omega_S^2 \otimes{\mathcal{O}}(C) { \left.{{}} \right|_{{C}} } = \deg \Omega_C^1 = 2g-2
+\]
+where \( g = g(C) \) is the genus of \( C \). On the other hand, the left-hand side is equal to
+\[
+(K_S + C) \cdot C = 2g(C) - 2
+.\]
+:::
+
+::: {.example title="?"}
+We showed \( K_{{\mathbb{P}}^n} = {\mathcal{O}}(-n-1) \) where \( {\mathcal{O}}(-1) \) was the tautological line bundle over \( {\mathbb{P}}^n \). So for example \( K_{{\mathbb{P}}^2} = {\mathcal{O}}(-3) = -3 L \) where \( L \in H^2({\mathbb{P}}^2, {\mathbb{Z}}) \) is a hyperplane (here a line) in \( {\mathbb{P}}^2 \).
+:::
+
+::: {.corollary title="?"}
+Let \( f \) be a degree \( d \) homogeneous polynomial in \( x,y,z \), then \( V(f) \subseteq {\mathbb{P}}^2 = \left\{{ [x:y:z] }\right\} \). If \( C\coloneqq V(f) \) is a smooth complex curve, then applying the genus formula yields
+\[
+2g(C) - 2 = (-3L + dL) \cdot dL
+.\]
+Using that \( L^2 = 1 \), this equals \( d(d-3) \) and thus
+\[
+g(C) = {d^2 - 3d + 2 \over 2} = {d-1 \choose 2}
+.\]
+:::
+
+::: {.example title="?"}
+If \( d=3 \) and say \( f(x,y,z) = x^3 + y^3 + z^3 \), then \( V(f) \subseteq {\mathbb{P}}^2 \) has genus \( {3-1 \choose 2} = 1 \). So this is diffeomorphic to a torus.
+:::
+
+::: {.example title="?"}
+If \( d=2 \) then \( g(C) = 0 \), so conics in \( {\mathbb{P}}^2 \) have genus zero, and we proved that every genus zero curve is isomorphic to \( {\mathbb{P}}^1 \). So conics in \( {\mathbb{P}}^2 \) are isomorphic to \( {\mathbb{P}}^1 \) (as are lines of course!).
+:::
+
+::: {.example title="?"}
+If \( d=4 \) then \( g(C) = 3 \)
+:::
+
+::: {.theorem title="Harnack Curve Theorem"}
+Noting that \( {\mathbb{RP}}^2 \subset {\mathbb{CP}}^2 = {\mathbb{P}}^2 \), the number \( n_C \) of connected components of a curve \( C \cap{\mathbb{RP}}^2 \) satisfies
+\[
+n_C \leq 1 + g(C)
+.\]
+:::
+
+::: {.remark}
+See the Trott curve:
+\[
+144(x^4 + y^4) - 225(x^2 + y^2) + 350x^2 y^2 + 81 = 0
+,\]
+whose plot looks like
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-31.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.example title="?"}
+Consider \( S \coloneqq{\mathbb{P}}^1 \times{\mathbb{P}}^1 \), which is homeomorphic to \( S^2 \times S^2 \). The homology is given by \( {\mathbb{Z}} \) in degrees 0 and 4, \( {\mathbb{Z}}^{\oplus 2} \) in degree 3, and 0 elsewhere. What is the intersection form on \( {\mathbb{Z}}^{\oplus 2} = H^2({\mathbb{P}}^1 \times{\mathbb{P}}^1; {\mathbb{Z}}) \)? The two generators are \( f_1 = [S^2 \times{\{\operatorname{pt}\}}], f_2 = [ {\{\operatorname{pt}\}}\times S^2] \). We can compute
+
+-   \( f_1 \cdot f_1 = 0 \)
+-   \( f_1 \cdot f_2 = 1 \)
+-   \( f_2 \cdot f_2 = 0 \)
+
+This is because we can perturb these to be transverse:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-07_14-39.pdf_tex} };
+\end{tikzpicture}
+```
+Since \( f_2 \cap f_2 ' = \emptyset \), we have \( f_2 \cdot f_2' = f_2 \cdot f_2 = 0 \), and similarly with 1. So the Gram matrix is
+\[
+G = 
+\begin{bmatrix}
+0 & 1 
+\\
+1 & 0
+\end{bmatrix}
+.\]
+
+So setting \( C = {\mathbb{P}}^1 \times{\mathbb{P}}^1 = V(f_{2, 3}) \), a function of bidegree \( (2, 3) \), writing the coordinates as \( [x: y], [z: w] \), we can write this as \( x^2 z^3 + y^2 z^2 w + xy w^3 = 0 \). We get
+\[
+2g(C) - 2 = (K_{{\mathbb{P}}^1 \times{\mathbb{P}}^1} + 2f_1 + 3f_2) \cdot (2f_1 + 3f_2) = f_2 \cdot (2f_1 + 3f_2) = 2
+,\]
+since \( K_{{\mathbb{P}}^1 \circ = -2f_1 - 2f_2 \) and so \( g(C) = 2 \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
