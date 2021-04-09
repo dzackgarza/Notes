@@ -4340,7 +4340,7 @@ Next time: adjunction formula that allows computing genus for surfaces.
 ::: {.remark}
 Last time: let \( C, D \subset S \) be distinct curves, then the intersection number is given by
 \[
-C\cdot D = \deeg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p \in C \cap D } \mathop{\mathrm{len}}_p( C \cap D)
+C\cdot D = \deg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p \in C \cap D } \mathop{\mathrm{len}}_p( C \cap D)
 \]
 where \( \mathop{\mathrm{len}}_p(C \cap D) \coloneqq\dim_{\mathbb{C}}{\mathcal{O}}(U) / \left\langle{ f, g }\right\rangle \) where \( V(f) = C \cap U \) and \( V(g) = D \cap U \) with \( f, g \in {\mathcal{O}}(U) = \mathop{\mathrm{Hol}}(U) \). Here we're also assuming that \( C \cap D \cap U = \left\{{ p }\right\} \).
 :::
@@ -4488,7 +4488,7 @@ So setting \( C = {\mathbb{P}}^1 \times{\mathbb{P}}^1 = V(f_{2, 3}) \), a functi
 \[
 2g(C) - 2 = (K_{{\mathbb{P}}^1 \times{\mathbb{P}}^1} + 2f_1 + 3f_2) \cdot (2f_1 + 3f_2) = f_2 \cdot (2f_1 + 3f_2) = 2
 ,\]
-since \( K_{{\mathbb{P}}^1 \circ = -2f_1 - 2f_2 \) and so \( g(C) = 2 \).
+since \( K_{{\mathbb{P}}^1} \circ = -2f_1 - 2f_2 \) and so \( g(C) = 2 \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.

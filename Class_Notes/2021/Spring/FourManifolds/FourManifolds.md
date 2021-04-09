@@ -5891,7 +5891,7 @@ Next time: adjunction formula that allows computing genus for surfaces.
 :::{.remark}
 Last time: let $C, D \subset S$ be distinct curves, then the intersection number is given by 
 \[
-C\cdot D = \deeg \OO_S(C) \ro{}{D} = \sum_{p \in C \intersect D } \len_p( C \intersect D)
+C\cdot D = \deg \OO_S(C) \ro{}{D} = \sum_{p \in C \intersect D } \len_p( C \intersect D)
 \]
 where \( \len_p(C \intersect D) \da \dim_\CC \OO(U) / \gens{ f, g }   \) where $V(f) = C \intersect U$ and $V(g) = D \intersect U$ with $f, g \in \OO(U) = \Hol(U)$.
 Here we're also assuming that \( C \intersect D \intersect U = \ts{ p } \).
@@ -6074,7 +6074,7 @@ We get
 \[
 2g(C) - 2 = (K_{\PP^1 \cross \PP^1} + 2f_1 + 3f_2) \cdot (2f_1 + 3f_2) = f_2 \cdot (2f_1 + 3f_2) = 2
 ,\]
-since $K_{\PP^1 \circ = -2f_1 - 2f_2$
+since $K_{\PP^1} \circ = -2f_1 - 2f_2$
 and so $g(C) = 2$.
 
 
