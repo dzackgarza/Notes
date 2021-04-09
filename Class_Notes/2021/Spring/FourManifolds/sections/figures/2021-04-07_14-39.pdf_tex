@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1077.51565006bp}%
+    \setlength{\unitlength}{943.9145151bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,16 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.71406602)%
+  \begin{picture}(1,0.69392198)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2021-04-07_14-39.pdf}}%
-    \put(0.41531629,0.57484934){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_2$\end{tabular}}}}%
-    \put(0.41531629,0.35233403){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_2'$\end{tabular}}}}%
-    \put(0.65197178,0.17114291){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_1$\end{tabular}}}}%
-    \put(0.41531629,0.1433011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_1'$\end{tabular}}}}%
+    \put(0.24096243,0.55552615){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_2$\end{tabular}}}}%
+    \put(0.24096243,0.39910893){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_2'$\end{tabular}}}}%
+    \put(0.68067312,0.08680292){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_1$\end{tabular}}}}%
+    \put(0.40913464,0.08680292){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f_1'$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2021-04-07_14-39.pdf}}%
-    \put(-0.00231108,0.47740294){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^2$\end{tabular}}}}%
-    \put(0.74941813,0.00409197){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^2$\end{tabular}}}}%
+    \put(-0.00263819,0.10372225){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^2$\end{tabular}}}}%
+    \put(0.16296483,0.00467115){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S^2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{2021-04-07_14-39.pdf}}%
   \end{picture}%
 \endgroup%
