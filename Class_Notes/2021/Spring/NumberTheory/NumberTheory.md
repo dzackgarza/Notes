@@ -46,6 +46,7 @@
 \newcommand{\TT}[0]{{\mathbb{T}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
 \newcommand{\ZZG}[0]{{\mathbb{Z}G}}
+\newcommand{\ZZH}[0]{{\mathbb{Z}H}}
 \newcommand{\kG}[0]{{kG}}
 \newcommand{\znz}[0]{\mathbb{Z}/n\mathbb{Z}}
 \newcommand{\zpz}[0]{\mathbb{Z}/p\mathbb{Z}}
@@ -65,6 +66,8 @@
 \newcommand{\ZHB}[0]{\operatorname{ZHB}}
 \newcommand{\QHB}[0]{\operatorname{QHB}}
 \newcommand{\ks}[0]{\operatorname{ks}}
+\newcommand{\lk}[0]{\operatorname{lk}}
+\newcommand{\nd}[0]{\operatorname{nd}}
 \newcommand{\Arg}[0]{\operatorname{Arg}}
 \newcommand{\PGL}[0]{\operatorname{PGL}}
 \newcommand{\GL}[0]{\operatorname{GL}}
@@ -438,7 +441,7 @@
 \renewcommand{\qed}[0]{\hfill\blacksquare}
 \renewcommand{\too}[0]{\longrightarrow}
 \renewcommand{\vector}[1]{\mathbf{#1}}
-\newcommand{\complex}[1]{{#1}^{\bullet}}
+\newcommand{\complex}[1]{{#1}_{*}}
 \newcommand*\dif{\mathop{}\!\operatorname{d}}
 \newcommand{\ddt}{\tfrac{\dif}{\dif t}}
 \newcommand{\ddx}{\tfrac{\dif}{\dif x}}
@@ -461,13 +464,8 @@
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
-\DeclareMathOperator{\Ind}{Ind}
-\DeclareMathOperator{\ind}{Ind}
-\DeclareMathOperator{\coind}{Coind}
 \DeclareMathOperator{\proj}{Proj}
 \DeclareMathOperator{\Proj}{Proj}
-\DeclareMathOperator{\res}{Res}
-\DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\Hol}{Hol}
 \DeclareMathOperator{\Bun}{Bun}
 \DeclareMathOperator{\BiHol}{BiHol}
@@ -481,6 +479,7 @@
 \DeclareMathOperator{\nullity}{nullspace}
 \DeclareMathOperator{\projection}{Proj}
 \DeclareMathOperator{\Der}{Der}
+\DeclareMathOperator{\len}{len}
 \newcommand{\Suchthat}[0]{\middle\vert}
 \newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\delbar}[0]{\bar{\del}}
@@ -540,7 +539,7 @@
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
 \newcommand{\Bl}[0]{\operatorname{Bl}}
-\newcommand{\Triv}[0]{\operatorname{Triv}}
+\newcommand{\Triv}[0]{{ \operatorname{Triv}}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
 
@@ -553,7 +552,36 @@
 \newcommand{\forget}[0]{\mathrm{Forget}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
 
-# Thursday, January 14
+
+\newcommand{\cores}[0]{\operatorname{cores}}
+\newcommand{\res}[0]{\operatorname{res}}
+\newcommand{\Res}[0]{\operatorname{Res}}
+\newcommand{\infl}[0]{\operatorname{inf}}
+\newcommand{\coinfl}[0]{\operatorname{coinf}}
+\newcommand{\ind}[0]{\operatorname{ind}}
+\newcommand{\Ind}[0]{\operatorname{Ind}}
+\newcommand{\Coind}[0]{\operatorname{coInd}}
+
+\newcommand{\submfds}{\operatorname{SubMfds}}
+
+\newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
+\newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
+
+# Notation
+
+\todo[inline]{Todo: definitions.}
+
+- $\bar{\QQ}$
+- $\bar{\ZZ}$
+- $K$ 
+- $U(K), K\units$
+- $[K: \QQ]$
+- $K[\alpha]$
+- $K(\alpha)$
+- $\ZZ_K \da \bar{\ZZ} \intersect K$, the algebraic integers in $K$.
+- $\ff(K)$
+
+# Diophantine Equations (Lec. 1, Thursday, January 14)
 
 See website for notes on books, intro to class.
 
@@ -561,24 +589,23 @@ See website for notes on books, intro to class.
 
 - Free copies of textbook: <https://www.dropbox.com/sh/rv5j222kn74bjhm/AABZ1qcR1rOnpaBsa5CL3P_Ea?dl=0&lst=>
 
-- Course website: ?
-
 Paul's description of the course:
 
-"This course is an introduction to arithmetic "beyond $\ZZ$", specifically arithmetic in the ring of “integers” in a finite extension of $\QQ$.  (Among many other things) we’ll prove three important theorems about these rings: 
-
- - Unique factorization into ideals. 
- - Finiteness of the group of ideal classes. 
- - Dirichlet’s theorem on the structure of the unit group."
+> This course is an introduction to arithmetic beyond $\ZZ$, specifically arithmetic in the ring of integers in a finite extension of $\QQ$. 
+> Among many other things, we’ll prove three important theorems about these rings: 
+>
+> - Unique factorization into ideals. 
+> - Finiteness of the group of ideal classes. 
+> - Dirichlet’s theorem on the structure of the unit group.
 
 ## Motivation
 
-Solving Diophantine equations, i.e. polynomial equations over $\ZZ$.
+:::{.remark}
+The main motivation: solving **Diophantine equations**, i.e. polynomial equations over $\ZZ$.
+:::
 
-
-:::{.example title="?"}
+:::{.example title="of a Diophantine equation"}
 Consider $y^2 = x^3 + x$.
-
 
 :::{.claim}
 $(x, y) = (0, 0)$ is the only solution.
@@ -592,7 +619,6 @@ But the gaps between squares are increasing: $1, 2, 4, 9, \cdots$.
 The only possibilities would be $x=0, y=1$, but in this case you can conclude $y=0$. 
 
 :::
-
 
 :::{.example title="Fermat"}
 Consider $y^2 = x^3-2$.
@@ -613,7 +639,9 @@ We want to try the same argument: showing the two factors are relatively prime.
 A little theory will help here:
 
 :::{.definition title="Norm Map"}
-For \( \alpha\in \ZZ[\sqrt{-2}] \) define $N \alpha = \alpha\bar \alpha$.
+\[
+N \alpha \da \alpha\bar \alpha && \text{for } \alpha\in \ZZ[ \sqrt{-2} ]
+.\]
 :::
 
 :::{.lemma title="?"}
@@ -638,20 +666,13 @@ Conversely if \( \alpha\in R\units \) write \( \alpha \beta = 1 \), then
 1 = N(1) = N(\alpha \beta) = N(\alpha ) N(\beta ) \in \ZZ_{\geq 0} 
 ,\] 
 which forces both to be 1.
-
-
 :::
-
 
 :::{.claim}
 The two factors \( y \pm \sqrt 2 \) are *coprime* in \( \ZZ[\sqrt{-2}] \), i.e. every common divisor is a unit.
 :::
 
-
 :::{.proof title="?"}
-
-
-
 Suppose \( \delta\divides y\pm \sqrt{-2} \), then \( y + \sqrt{-2} = \delta \beta \) for some \( \beta\in \ZZ[\sqrt{-2}] \).
 Take norms to obtain 
 \( y^2 + 2 = N \delta N \beta \), and in particular 
@@ -669,7 +690,6 @@ We can identify the units in this ring:
 \ZZ[\sqrt{-2} ]\units = \ts{ a + b \sqrt{-2} \st a^2 + 2b^2 = 1}
 \]
 which forces $a^2 \leq 1, b^2 \leq 1$ and thus this set is $\ts{\pm 1}$.
-
 So we have \( x^3 = ab \) which are relatively primes, so $a,b$ should also be cubes.
 We don't have to worry about units here, since $\pm 1$ are both cubes.
 So e.g. we can write 
@@ -693,8 +713,7 @@ y = \sqrt{-2} = (\pm 1 + \sqrt{-2} )^3 = \pm 5 + \sqrt{-2}
 
 :::
 
-
-:::{.example title="?"}
+:::{.example title="where unique factorization fails"}
 Consider $y^2 = x^3 - 26$.
 Rewrite this as \[
 x^3 = y^2 + 26 = (y + \sqrt{-26} )(y - \sqrt{-26} )
@@ -707,51 +726,68 @@ The issue is that we used unique factorization when showing that $ab$ is a squar
 In this ring, we can have $ab$ a cube with *neither* $a,b$ a cube, even up to a unit.
 :::
 
-
 :::{.question}
 When does a ring admit unique factorization?
 Do you even *need* it?
 :::
 
+:::{.remark}
 This will lead to a discussion of things like the **class number**, which measure the failure of unique factorization.
 In general, the above type of proof will work when the class number is 3!
+:::
 
-# Lecture 2 (Tuesday, January 19)
+# Number Fields (Lec. 2,Tuesday, January 19)
 
+## Embeddings
+
+:::{.remark}
 Today: Ch.2 of the book, "Cast of Characters".
 Note that all rings will be commutative and unital in this course.
 
 Last time: looked at factorization in $\ZZ[\sqrt 2], \ZZ[\sqrt{26}]$. 
 Where do rings like this come from?
 
+:::
+
 :::{.definition title="Number Field"}
-A **number field** is a subfield $K \subseteq \CC$ such that $[K: \QQ] < \infty$.
-:::
+A **number field** is a subfield $K \subseteq \CC$ 
+[^dontrequireKC]
+such that $[K: \QQ] < \infty$.
 
-:::{.remark}
+[^dontrequireKC]: 
 Some authors don't require $K \subseteq \CC$, but any finite extension of $\QQ$ will embed into $\CC$ so there's no harm in this extra requirement.
+
 :::
 
-:::{.example title="?"}
-$\QQ[\sqrt[3]{2}, \QQ[\sqrt 2, \sqrt[5]{7}]$ or $\QQ(\theta)$ where $\theta$ is a root of $x^5 - x - 1$ (which you can check is irreducible.
-Now that the round vs. square brackets here won't make a difference, since we're adjoining algebraic numbers.
+:::{.example title="of number fields"}
+Examples of number fields include 
+
+- $\QQ[\sqrt[3]{2}]$, 
+- $\QQ[\sqrt 2, \sqrt[5]{7}]$, or 
+- $\QQ(\theta)$ where $\theta$ is a root of $x^5 - x - 1$, which one can check is irreducible.
+
+Note that the round vs. square brackets here won't make a difference, since we're adjoining *algebraic* numbers.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Degree equals number of embeddings for finite extensions"}
 Let $K_{/\QQ}$ be a finite extension, say of degree $n\da [K: \QQ]$.
 Then there are $n$ distinct embeddings
 [^embedding_means]
 of $K$ into $\CC$
 
 [^embedding_means]: 
-An injective ring morphism.
+An **embedding** is an injective ring morphism.
 
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 We have $K_{/\QQ}$, which is necessarily separable since $\ch(\QQ) = 0$.
 By the primitive element theorem, we can write $K = \QQ(\theta)$ where \( \theta \) is a root of some degree $n$ irreducible polynomial $f(x) \in \QQ[x]$.
-Since $\CC$ is algebraically closed, $f$ splits completely over $\CC$ as \( f = \prod_{i=1}^n (x- \theta_i \) which each \( \theta_i \in CC \) distinct since $f$ was irreducible and we're in characteristic zero.
+Since $\CC$ is algebraically closed, $f$ splits completely over $\CC$ as 
+\[
+f = \prod_{i=1}^n (x- \theta_i) 
+\] 
+with each \( \theta_i \in \CC \) distinct since $f$ was irreducible and we're in characteristic zero.
 Then for each $i$ there is an embedding $K = \QQ[\theta]$ given by
 \[
 \iota_i: \QQ[\theta] &\injects \CC \\
@@ -760,7 +796,7 @@ g(\theta) &\mapsto g(\theta_i)
 There are some easy things to check:
 
 - This is well-defined: elements in $K$ are polynomials in \( \theta \) but they all differ by a multiple of the minimal polynomial of \( \theta \),
-- This is an inject homomorphism and thus an embedding, and
+- This is an injective homomorphism and thus an embedding, and
 - For distinct $i$ you get distinct embeddings: just look at the image $\iota_i(\theta)$, these are distinct numbers in $\CC$.
 
 :::
@@ -771,11 +807,11 @@ We'll say an embedding \( \sigma:K \to \CC \) is **real** if \( \sigma(K) \subse
 :::
 
 :::{.remark}
-If \( \sigma \) is a nonreal, then \( \bar \sigma \) is a nonreal embedding, so this embeddings come in pairs.
+If \( \sigma \) is a nonreal, then \( \bar \sigma \) is a nonreal embedding, so these embeddings come in pairs.
 As a consequence, the total number of embeddings is given by $n = r_1 + 2r_2$, where $r_1$ is the number of real embeddings and $r_2$ is the number of nonreal embeddings.
 :::
 
-:::{.example title="?"}
+:::{.example title="of computing the number of real and nonreal embeddings"}
 Let $K = \QQ(\sqrt[3]{2})$.
 Here $n=3$ since this is the root of a degree 3 irreducible polynomial.
 Using the proof we can find the embeddings: factor 
@@ -785,12 +821,14 @@ x^3 - 2 = (x - \sqrt[3]{2})(x - \omega \sqrt[3]{2}) (x - \omega^2 \sqrt[3]{2})
 where \( \omega = e^{2\pi i / 3} \) is a complex cube root of unity.
 We can form an embedding by sending $\sqrt[3]{2} \to \omega^j \sqrt[3]{2}$ for $j=0,1,2$.
 The case $j=0$ sends $K$ to a subset of $\RR$ and yields a real embedding, but the other two will be nonreal. 
-So $r_1 = 1, r_2 = 1$, and we have $3 = 1 + 2(1)$ and this is consistent.
+So $r_1 = 1, r_2 = 1$, and we have $3 = 1 + 2(1)$, which is consistent.
 :::
 
+## Algebraic Closures
+
 :::{.remark}
-We've only been talking about fields, since unique factorization is trivial since there are no primes.
-There are thus "too many" units, compared to the rings we were considering before, so we'll restrict to subrings.
+We've only been talking about fields, where unique factorization is trivial since there are no primes.
+There are thus "too many" units in fields when compared to the rings we were considering before, so we'll restrict to subrings of fields.
 The question is: where is the arithmetic?
 Given a number field $K$, we want a ring $\ZZ_K$ that fits this analogy:
 
@@ -812,11 +850,13 @@ We know that if we define $\bar \QQ \da \ts{\alpha\in \CC \st \alpha \text{ is a
 This is convenient because it's easy to see that algebraic numbers are closed under sums and products, just using the ways degrees behave in towers.
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="Every number field is a subfield of $\bar\QQ$"}
 $\bar \QQ \injects \CC$ is a subfield and every number field is a subfield of $\bar \QQ$.
 :::
 
+:::{.remark}
 These are still fields, so lets define some interesting subrings.
+:::
 
 :::{.definition title="$\bar \ZZ$ "}
 Define $\bar \ZZ \da \ts{ \alpha\in \CC \st \alpha\text{ is the root of a monic polynomial }f\in \ZZ[x]}$.
@@ -826,7 +866,9 @@ Define $\bar \ZZ \da \ts{ \alpha\in \CC \st \alpha\text{ is the root of a monic 
 $\bar \ZZ$ is a ring, and in fact a domain since it's a subring of $\CC$.
 :::
 
+:::{.remark}
 We'll use an intermediate criterion to prove this:
+:::
 
 :::{.proposition title="Integrality Criterion"}
 Let \( \alpha\in \CC \) and suppose there is a finitely generated $\ZZ\dash$submodule of $\CC$ with \( \alpha M \subseteq M \neq 0\).
@@ -866,7 +908,7 @@ a_{21} &  a_{22} &
 where $A \in \Mat(n\times m, \ZZ)$.
 We can rearrange this to say that 
 \[
-\qty{ \alpha \id - A} 
+\qty{ \alpha I - A} 
 \begin{bmatrix}
 \beta_1 
 \\
@@ -877,12 +919,12 @@ We can rearrange this to say that
 =
 \vector{0}
 .\]
-Not  all of the $\beta_i$ can be zero since $M\neq 0$, and thus \( \alpha \id - A \) is singular and thus has determinant zero, so $\det(x \id - A)\evalfrom_{x=a} = 0$.
+Not  all of the $\beta_i$ can be zero since $M\neq 0$, and thus \( \alpha I - A \) is singular and has determinant zero, so $\det(x I - A)\evalfrom_{x=\alpha} = 0$.
 We have 
 \[
 x\id - A = 
 \begin{bmatrix}
-x - a_{1,} &  & &
+x - a_{1,1} &  & &
 \\
 &  x - a_{2, 2} & & 
 \\
@@ -893,7 +935,7 @@ x - a_{1,} &  & &
 ,\]
 where the off-diagonal components are constants in $\ZZ$ coming from $A$.
 Taking the determinant yields a monic polynomial: the term of leading degree comes from multiplying the diagonal components, and expanding over the remaining minors only yields terms of smaller degree.
-So $\det (x\id - A) \in \ZZ[x]$ is monic.
+So $\det (x I - A) \in \ZZ[x]$ is monic.
 
 :::
 
@@ -901,7 +943,7 @@ So $\det (x\id - A) \in \ZZ[x]$ is monic.
 We want to show that \( \bar \ZZ \) is a ring, and it's enough to show that 
 
 - \( 1\in \bar \ZZ \), which is true since $x-1$ is monic.
-- It's closed under $+, \cdot$.
+- It's closed under addition $(+)$ and multiplication $(\cdot)$.
 
 Note that the first property generalizes to $\ZZ \subseteq \bar \ZZ$, since $x-n$ is monic for any $n\in \ZZ$.
 For the second, let \( \alpha, \beta \in \bar \ZZ \).
@@ -912,18 +954,25 @@ It only remains to check the following:
 $M$ is finitely-generated.
 :::
 
-
 :::{.proof title="?"}
 Let \( \alpha \) be a root of $f \in \ZZ[x]$ and \( \beta \) a root of $g$, both monic with $\deg f = n, \deg g = m$.
 We want to produce a finite generating set for \( M\da \ZZ[\alpha, \beta] \), and the claim is that the following works: \( \ts{ \alpha^i \beta^j} _{\substack{0\leq i < n \\ 0 \leq j < m} } \), i.e. every element of $M$ is some $\ZZ\dash$linear combination of these.
 
+\
+
 Note that this is clearly true if we were to include $n, m$ in the indices by collecting terms of any polynomial in \( \alpha, \beta \), so the restrictions are nontrivial.
 It's enough to show that for any $0 \leq I, J \in \ZZ$, the term \( \alpha^I \beta^J \) is a $\ZZ\dash$linear combination of the restricted elements above.
-Divide by $f$ and $g$ to obtain $x^I = f(x) q(x) + r(x)$ and $x^J = g(x) \tilde q(x) \tilde r(x)$ where $r(x) = 0$ or $\deg r < n$ and similarly for $\tilde r$, where (importantly) all of these polynomials are in $\ZZ[x]$.
+Divide by $f$ and $g$ to obtain 
+\[
+x^I &= f(x) q(x) + r(x)
+x^J &= g(x) \tilde q(x) \tilde r(x)
+\]
+where $r(x) = 0$ or $\deg r < n$ and similarly for $\tilde r$, where (importantly) all of these polynomials are in $\ZZ[x]$.
+
+\
 
 We're not over a field: $\ZZ[x]$ doesn't necessarily have a division algorithm, so why is this okay?
 The division algorithm only requires inverting the leading coefficient, so in general $R[x]$ admits the usual division algorithm whenever the leading coefficient is in $R\units$.
-
 Now plug \( \alpha \) into the first equation to obtain \( \alpha^I = r(\alpha) \) where $\deg r < n$, which rewrite \( \alpha^I \) as a sum of lower-degree terms.
 Similarly writing \( \beta^J = r(\beta) \), we can express 
 \[
@@ -932,7 +981,6 @@ Similarly writing \( \beta^J = r(\beta) \), we can express
 which is what we wanted.
 
 :::
-
 
 :::
 
@@ -947,6 +995,8 @@ We've just filled in another part of the previous picture:
 
 :::
 
+## Rings of Integers and Fraction Fields
+
 :::{.definition title="Ring of Integers"}
 Define $\ZZ_K = \bar \ZZ \intersect K$, the **ring of integers** of $K$.
 Note that this makes sense since the intersection of rings is again a ring.
@@ -957,23 +1007,28 @@ Why not just work in $\bar \ZZ$?
 It doesn't have the factorization properties we want, e.g. there are no irreducible elements.
 Consider $\sqrt 2$, we can factor is into two non-units (noting that $\sqrt 2$ is not a unit) as $\sqrt{\sqrt 2} \cdot \sqrt{\sqrt 2}$, and it's easy to check that if $a$ is not a unit then $\sqrt a$ is not a unit.
 So this would yield arbitrarily long factorizations, and is thus not Noetherian.
-:::
-
 The following is a reality check, and certainly a property we would want:
+:::
 
 :::{.proposition title="The ring of integers of $\QQ$ is $\ZZ$ "}
 $\ZZ_\QQ = \ZZ$.
 :::
 
 :::{.proof title="of proposition"}
-\( \subseteq \): easy, since \( \ZZ \subseteq \bar \ZZ \) and \( \ZZ \subseteq \QQ \), and is thus in their intersection \( \ZZ_\QQ \) .
+\( \subseteq \): 
+Easy, since \( \ZZ \subseteq \bar \ZZ \) and \( \ZZ \subseteq \QQ \), and is thus in their intersection \( \ZZ_\QQ \) .
 
-\( \supseteq \) : Let \( \alpha\in \ZZ_\QQ = \QQ \intersect\bar \ZZ \) , so \( \alpha \) is a root of \( x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in \ZZ[x] \).
-We know \( \alpha= a/b \) with \( a,b \in \ZZ \), and we can use the rational root test which tells us that \( a\divides a_0, b\divides 1 \), so \( b = \pm 1, \alpha = a/\pm 1 = \pm a \in \ZZ \) and thus \( \alpha \in \ZZ \).
+\
+
+\( \supseteq \) : 
+Let \( \alpha\in \ZZ_\QQ = \QQ \intersect\bar \ZZ \) , so \( \alpha \) is a root of \( x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in \ZZ[x] \).
+We know \( \alpha= a/b \) with \( a,b \in \ZZ \), and we can use the rational root test which tells us that \( a\divides a_0 \) and \( b\divides 1 \), so \( b = \pm 1 \) and \( \alpha = a/\pm 1 = \pm a \in \ZZ \) and thus \( \alpha \in \ZZ \).
 
 :::
 
+:::{.remark}
 We'll want to study $\ZZ_K$ for various number fields $K$, but we'll need more groundwork.
+:::
 
 :::{.proposition title="Easy criterion to check if an integer is algebraic"}
 Let \( \alpha \in \bar \QQ \), then \[ \alpha\in \bar \ZZ \iff \min_ \alpha \in \ZZ[x], \] where \( \min_ \alpha(x) \) is the unique monic irreducible polynomial in $\QQ[x]$ which vanishes at \( \alpha \).
@@ -981,12 +1036,15 @@ Let \( \alpha \in \bar \QQ \), then \[ \alpha\in \bar \ZZ \iff \min_ \alpha \in 
 
 :::{.proof title="?"}
 $\impliedby$: Trivial, if the minimal polynomial already has integer coefficients, just note that it's already monic and thus \( \alpha \in \bar \ZZ \) by definition.
+\
 
 $\implies$: Why should the minimal polynomial have *integer* coefficients?
 Choose a monic $f(x) \in \ZZ[x]$ with \( f(\alpha) = 0 \), using the fact that \( \alpha\in \bar \ZZ \) , and factor \( f(x) = \prod_{i=1}^n (x- \alpha_i) \in \CC[x] \).
 Note that each \( \alpha_i \in \bar \ZZ \) since they are all roots of $f$ (a monic polynomial in \( \ZZ[x] \)).
 Use the fact that \( \min_ \alpha(x) \) divides every polynomial which vanishes on \( \alpha \) over $\QQ$, and thus divides $f$ (noting that this still divides over $\CC$).
 Moreover, every root of \( \min_ \alpha(x) \) is a root of $f$, and so every such root is some \( \alpha_i \).
+
+\
 
 Now factor \( \min_ \alpha(x) \)  over \( \CC \) to obtain \( \min_ \alpha(x) = \prod_{i=1}^m (x - \beta_i) \) with all of the \( \beta_i \in \bar \ZZ \).
 What coefficients appear after multiplying things out?
@@ -1003,7 +1061,7 @@ $\sqrt{5}/ 3 \not\in \bar \ZZ$ since $\min_ \alpha(x) = x^2 - 5/9 \not\in \ZZ[x]
 \envlist
 
 a. $\bar \ZZ$ has $\bar \QQ$ as its fraction field, and
-b. For any number field $K$, $\ZZ_K$ has $K$ as its fraction field.
+b. For any number field $K$, the fraction field of $\ZZ_K$ is $K$.
 
 Moreover, both of these statements follow from:
 
@@ -1054,14 +1112,18 @@ Can use the integrality criterion (slightly challenging), can also use Galois th
 
 
 
-# Lecture 3 (Thursday, January 21)
+# Quadratic Fields (Lec. 3, Thursday, January 21)
 
+:::{.remark}
 Today: roughly corresponds to chapter 3 in the book.
 Goal: do all of the big theorems in the setting of quadratic number fields, then redo everything for general number fields.
+:::
 
 ## Quadratic Number Fields
 
+:::{.remark}
 Simplest case: $\QQ$, a degree 1 number field, so the next simplest case is degree 2.
+:::
 
 :::{.definition title="Quadratic Number Fields"}
 A field $K$ is a **quadratic number field** if and only if $K$ is a number field and $[K: \QQ] = 2$.
@@ -1071,7 +1133,7 @@ A field $K$ is a **quadratic number field** if and only if $K$ is a number field
 Some notation: if $d\in \RR\units$, then $\sqrt d$ means the *positive* square root of $d$ if $d \geq 0$, and if $d<0$ this denotes $i\sqrt{\abs{d}}$.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Quadratic fields are parameterized by squarefree integers"}
 If $K$ is a quadratic number field, then $K = \QQ(\sqrt{d})$ for some squarefree 
 [^note_squarefree]
 $d\in \ZZ$.
@@ -1082,7 +1144,7 @@ Moreover, this $d$ is uniquely determined by $K$, so all quadratic number fields
 
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition, existence"}
 **Existence**: 
 Since $[K: \QQ] = 2$, we have $K\supsetneq \QQ$ so pick \( \alpha\in K\sm \QQ \) then $K = \QQ(\alpha)$.
 Note that we could also furnish this \( \alpha \) from the primitive element theorem, although this is overkill here.
@@ -1090,6 +1152,8 @@ So \( \alpha \) is a root of some degree 2 $p\in \QQ[x]$, and by scaling coeffic
 So write $p(x) = Ax^2 + Bx + C$, in which case we can always write \( \alpha = {-B \pm \sqrt{B^2 - 4AC} \over 2A} \) where $A\neq 0$ since this would imply that \( \alpha\in\QQ \).
 Writing \( \Delta\da B^2 - 4AC \), we have $K = \QQ(\alpha) = \QQ(\sqrt{\Delta})$.
 This is close to what we want -- it's $\QQ$ adjoin some integer -- but we'd like it to be squarefree.
+
+\
 
 Now let $f\in \ZZ^{\geq 0}$ be chosen such that $f^2 \divides \Delta$ and $f$ is as large as possible, i.e. the largest square factor of \( \Delta \).
 Writing \( \Delta = f^2 - d \) where $d$ is whatever remains.
@@ -1099,6 +1163,9 @@ So $d$ is squarefree, and \( \Delta = f \sqrt d \) and thus \( \QQ(\Delta) = \QQ
 **Uniqueness**: 
 Well use some extra machinery.
 
+:::
+
+## Norm and Trace
 
 :::{.definition title="Norm and Trace"}
 Let $K$ be a number field with $K_{/\QQ}$ Galois.
@@ -1109,26 +1176,31 @@ N(\alpha) &\da \prod_{\sigma\in \Gal(K_{/\QQ})} \sigma(\alpha) && \text{the norm
 .\]
 :::
 
-
 :::{.remark}
 Why use these kind of sum at all?
 Applying any element in the Galois group just permutes the elements.
 Note that $N( \alpha), \Tr( \alpha)$ are $G(K_{/\QQ})\dash$invariant, and thus rational numbers in $\QQ$.
 The norm is multiplicative, and the trace is additive and in fact $\QQ\dash$linear: $\Tr(a \alpha + b \beta) = a \Tr( \alpha) + b \Tr( \beta)$ for all \( \alpha, \beta\in K \) and all \( a,b \in \QQ \).
 :::
-
+  
+:::{.remark}
 What do the norm and trace look like for a quadratic field?
-We can write $K = \ts{a + b \sqrt d \st a,b \in \QQ}$ and there is a unique (non-identity) element \( g\in \Gal(K_{/\QQ}) \) with \( \sigma(a + b \sqrt d = a - b \sqrt{d} \).
+We can write $K = \ts{a + b \sqrt d \st a,b \in \QQ}$ and there is a unique (non-identity) element \( g\in \Gal(K_{/\QQ}) \) with \( \sigma(a + b \sqrt d) = a - b \sqrt{d} \).
 We'll refer to this automorphism as **conjugation**.
 We can compute
 \[
 N(a + b \sqrt{d} ) &= a^2 - db^2 \\
 \Tr(a + b \sqrt{d} ) &= 2a
 .\]
+:::
 
+:::{.proof title="of proposition, uniqueness continued"}
 Returning to the proof, suppose otherwise that $K = \QQ(\sqrt{d_1} ) = \QQ ( \sqrt{d_2} )$ with $d_1\neq d_2$ squarefree integers.
 Note that they must have the same sign, otherwise one of these extensions would not be a subfield of $\RR$.
 We know \( \sqrt{d_1} \in \QQ( \sqrt{d_2} ) \) and thus \( \sqrt{d_1} = a + b \sqrt{d_2} \) for some $a, b\in \QQ$.
+
+\
+
 Taking the trace of both sides, the LHS is zero and the RHS is $2a$ and we get $a=0$ and \( \sqrt{d_1} = b \sqrt{d_2} \).
 Write $b = u/v$ with $u,v\in \QQ$.
 Squaring both sides yields $v^2 d_1 = u^2 d_2$.
@@ -1139,41 +1211,39 @@ The same argument shows that $d_2 \divides d_1$, so they're the same up to sign:
 
 :::
 
+:::{.remark}
 Note that this results holds for every squarefree number not equal to 1.
-
-
-:::{.question}
 If $K = \QQ( \sqrt{d} )$, what is the ring of integers $\ZZ_K$?
 Some more machinery will help here.
 :::
 
+## The Field Polynomial
+
 :::{.definition title="The Field Polynomial of an Element"}
-Assume $K_{/\QQ}$ is a Galois number field and for \( \alpha\in K \) define 
+Assume $K_{/\QQ}$ is a Galois number field and for \( \alpha\in K \) define the **field polynomial of $\alpha$** as
 \[
 \varphi_{\alpha}(x) \da \prod_{ \sigma\in \Gal(K_{/\QQ})} \qty{ x - \sigma(\alpha)}
 .\]
-
 :::
 
 :::{.remark}
 For the same reasons mentioned for the norm/trace, we get \( \varphi_{\alpha} \in \QQ[x] \), and moreover \( \varphi_{ \alpha } (\alpha) = 0 \).
-:::
-
 When is \( \alpha\in \ZZ_K \)? 
 We have the following criterion:
+:::
 
-
-:::{.proposition title="?"}
+:::{.proposition title="The field polynomial detects integrality"}
 \[
 \alpha\in \ZZ_K \iff \varphi_{ \alpha } (x) \in \ZZ[x]
 .\]
 
 :::
 
-
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 $\impliedby$:
 This is easy, since if \( \varphi_\alpha \) is a monic polynomial with integer coefficients, meaning that \( \alpha \) is an algebraic integer and thus in $\ZZ_K$.
+
+\
 
 $\implies$:
 If \( \alpha \in \ZZ_K \) then it's the root of some monic polynomial in $\ZZ[x]$, and the same is true for \( \sigma(\alpha) \) and thus each \( \sigma(\alpha) \in \bar\ZZ \).
@@ -1188,28 +1258,24 @@ If $\deg(K_{/\QQ}) = n$, then
 If $n=2$, these are the only terms, and so if $K$ is a quadratic number field then \( \alpha\in K \) is in $\ZZ_K$ if and only if $\Tr( \alpha), N(\alpha) \in \ZZ$.
 :::
 
-
-
-
-:::{.example title="?"}
+:::{.example title="of nonintuitive rings of integers"}
 Let $K = \QQ( \sqrt{5} )$, then is it true that $\ZZ_K = \ZZ[\sqrt{5} ]$?
 Since $1, \sqrt{5} \in \ZZ_K$, we have $\supseteq$ since $1, \sqrt{5}$ are algebraic.
 The answer is **no**: take \( \alpha\da {1 + \sqrt{5} \over 2} \), then \( N( \alpha) -4/4 = -1 \) and \( \Tr( \alpha) = 1 \).
 These are integers, so \( \alpha\in \ZZ_K \), and in fact \( \alpha \) is a root of $x^2 - x - 1 \in \ZZ[x]$.
 :::
 
+## Classification of $\ZZ_K$
 
-:::{.theorem title="?"}
+:::{.theorem title="Classification of $\ZZ_K$ for quadratic fields"}
 Let $K = \QQ( \sqrt{d} )$ be a quadratic number field.
 Then if $d = 2,3 \mod 4$, then $\ZZ_K = \ts { a + b \sqrt{d} \st a, b\in \ZZ}$.
 If $d=1 \mod 4$, then $\ZZ_K = \ts{ {1 + b \sqrt{d} \over 2} \st a,b\in \ZZ,\, a\equiv b \mod 2}$.
 :::
 
-
 :::{.remark}
 For $d=1$, if $a, b$ are even then we just recover the $d=2,3$ case, so we're picking up extra elements from when $a,b$ both odd.
 :::
-
 
 :::{.proof title="?"}
 Let \( \alpha\in K \) and write \( \alpha = A + B \sqrt{d} \) with $A, B\in \QQ$.
@@ -1226,9 +1292,16 @@ The claim now is that $2B \in \ZZ$: we know $2B\in \QQ$.
 If $2B\not\in \ZZ$, then the denominator has some prime factor.
 This prime factor appears twice in $(2B)^2$, and $d(2B)^2 \in \ZZ$ then means that two copies of $p$ appear in $d$ in order to cancel -- however, we assumed $d$ was squarefree.
 We now know that $A, B \in {1\over 2}\ZZ$, so write $A = (1/2)a'$ and $B = (1/2)b'$.
-Writing \( \alpha= (1/2)a' + (1/2)b' \sqrt{d} \), we find that $N( \alpha) = ((a')^2 - d(b')^2) / 4 \in \ZZ$.
+Thus
+\[ 
+\alpha= (1/2)a' + (1/2)b' \sqrt{d} 
+\implies
+N( \alpha) = ((a')^2 - d(b')^2) / 4 \in \ZZ
+.\]
 So the numerator is a multiple of 4, which yields $(a')^2 \equiv d(b')^2 \mod 4$.
 We proceed by cases.
+
+\
 
 **Case 1:**
 $d = 2,3 \mod 4$.
@@ -1238,13 +1311,13 @@ This is a contradiction, so $b'$ must be even.
 Then $(b')^2 \mod 4 = 0$, which forces $a' \equiv 0 \mod 4$ and $a'$ must be even.
 But if $a', b'$ are both even, $(1/2)a', (1/2)b'\in \ZZ$ and we obtain \( \alpha\in \ZZ + \sqrt{d} \ZZ \) .
 
+\
 
 **Case 2:**
 If $d\equiv 1 \mod 4$, then $(a')^2 \equiv (b')^2 \mod 4$.
 We can conclude that $a', b'$ are either both odd or both even, otherwise we'd get $0\equiv 1 \mod 4$, and thus we can write $a' \equiv b' \mod 2$.
 But this was exactly the condition appearing in the theorem.
 :::
-
 
 :::{.remark}
 Let $K$ be a quadratic number field.
@@ -1262,7 +1335,6 @@ Then we can reformulate the previous results as:
 We've also shown that $\ZZ_K$ is a free \(\ZZ\dash\)module of rank 2, with basis either \( \ts{ 1, \sqrt{d} } \) or \( \ts{ 1, {1 + \sqrt{d} \over 2 } } \).
 :::
 
-
 :::{.remark}
 What is true for general number fields?
 Important theorem: $\ZZ_K$ is always a free \(\ZZ\dash\)module, i.e. there always exists an *integral basis*.
@@ -1277,11 +1349,12 @@ Surprisingly, the it's not always true that $\ZZ_K = \ZZ[\ell]$ for $\ell$ a sin
 
 
 
-# Lecture 4 (Wednesday, January 27)
+# Failure of Unique Factorization (Lec. 4, Wednesday, January 27)
 
-Today: the failure of unique factorization.
-Roughly corresponds to chapter 4: "Paradise Lost"!
+## An Example
 
+:::{.remark}
+Today roughly corresponds to chapter 4: "Paradise Lost"!
 Setup: $K$ is a quadratic field, a degree 2 extension of $\QQ$, which can be written as $K = \QQ(\sqrt{d})$ with $d$ squarefree.
 Last time, we completely described $\ZZ_K$ (the algebraic integers in $K$):
 \[
@@ -1294,7 +1367,13 @@ Last time, we completely described $\ZZ_K$ (the algebraic integers in $K$):
 \]
 We saw that the second admitted a different description as $\ts{ {a + b \sqrt{d} \over 2}}$ where $a,b$ are either both even or both odd.
 Note that we can do interesting arithmetic in $\ZZ_K$, but it's not necessarily well-behaved: $\ZZ_K$ is not always a UFD.
-Letting $d=-5$, we have $\ZZ_K = \ZZ[ \sqrt{-5} ]$ where $6$ factors in two ways: $6 = (1 + \sqrt{5} )(1 - \sqrt{-5} ) = (2)(3) = 6$.
+:::
+
+:::{.example title="A counterexample to unique factorization"}
+Letting $d=-5$, we have $\ZZ_K = \ZZ[ \sqrt{-5} ]$ where $6$ factors in two ways: 
+\[
+6 = (1 + \sqrt{5} )(1 - \sqrt{-5} ) = (2)(3) = 6
+.\]
 
 Note that this isn't quite enough to show failure of unique factorization, e.g. we can factor $16 = (4)(4) = (2)(8)$.
 Here you should check that all 4 factors are irreducible, and that the factors on the right aren't unit multiples of the ones on the left.
@@ -1304,7 +1383,7 @@ The key to checking all of those: the **norm map**:
 N(a + b \sqrt{-5} ) = (a + b \sqrt{-5} ) (a - \sqrt{-5} ) = a^2 + 5b^2
 .\]
 where the second factor was the *conjugate*, i.e. the image of the element under the nontrivial element of the Galois group of $K_{/\QQ}$.
-If $a + b \sqrt{-5} \in \ZZ_K$, then $N(a + b \sqrt{-5} \in \ZZ_{\geq 0}$ and is equal to zero if and only if $a + b \sqrt{-5} = 0$.
+If $a + b \sqrt{-5} \in \ZZ_K$, then $N(a + b \sqrt{-5} \in \ZZ_{\geq 0})$ and is equal to zero if and only if $a + b \sqrt{-5} = 0$.
 Moreover, this is a unit if and only if its norm is 1,
 [^why_norm_argument]
 i.e. $a^2 + 5b^2 = 1$, which forces $b=0$ and $a=\pm 1$.
@@ -1317,7 +1396,7 @@ For the reverse direction, the argument was more complicated, and reduced to sho
 
 
 We'll show one of the factors is irreducible, $1 + \sqrt{-5}$.
-Recall that $x\in R$ a domain is *irreducible* if and only if whenever $x = ab$, one of $a,b$ is a unit.
+Recall that $x\in R$ a domain is **irreducible** if and only if whenever $x = ab$, one of $a,b$ is a unit.
 It itself is not a unit, since $N(1 + \sqrt{-5 }) = 6 \neq 1$.
 So suppose $1 + \sqrt{-5} = \alpha \beta$.
 Then
@@ -1335,17 +1414,21 @@ By similar arguments, all 4 factors are irreducible.
 To see that the LHS factors aren't unit multiples of the RHS factors, we can use the fact that the units are $\pm 1$, and multiplying the LHS by $\pm 1$ can't yield $2$ or $3$.
 So this is a genuine counterexample to unique factorization.
 
+:::
+
 ## Factorization Theory
 
+:::{.remark}
 What went wrong in the previous example?
 We'll use a big of terminology from an area of algebra called *factorization theory*.
 Many concepts related to divisibility can be discussed in this language!
+
+:::
 
 :::{.definition title="Monoid"}
 A **monoid** is a nonempty set with a commutative associative binary operation $\cdot$ with an identity $1$.
 We say a monoid is **cancellative** if and only if whenever \( \alpha \beta= \beta \alpha \) or \( \beta \alpha = \gamma \alpha \) then \( \beta = \gamma \).
 :::
-
 
 :::{.definition title="Terminology for Cancellative Monoids"}
 A bunch of definitions: let $M$ be a cancellative monoid.
@@ -1360,18 +1443,16 @@ A bunch of definitions: let $M$ be a cancellative monoid.
 
 :::
 
-
-
 :::{.remark}
 Given $R$ an integral domain, then $R\smz$ with multiplication is a cancellative monoid.
 Moreover, $R\smz$ is a unique factorization monoid if and only if $R$ is a UFD.
 :::
 
-
 :::{.question}
 How do you show something is a UFD?
 :::
 
+:::{.answer}
 How does this proof go for $\ZZ$?
 
 - Use existence of a division algorithm
@@ -1383,62 +1464,59 @@ So we'd like
 1. To know that irreducibles are prime, and
 2. Everything to factor into irreducibles.
 
-
+:::
 
 :::{.definition title="Atomic"}
 For $M$ a cancellative monoid, $M$ is **atomic** if every nonunit element of $M$ is a product of irreducibles.
 :::
 
-
-:::{.proposition title="?"}
+:::{.proposition title="Monoids have unique factorization iff atomic and irreducibles are prime"}
 Let $M$ be a cancellative monoid, then $M$ is a UFM if and only if $M$ is atomic and every irreducible is prime in $M$.
 :::
 
-
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 Omitted -- no new ideas when compared to proof of unique factorization in $\ZZ$.
 :::
 
+:::{.remark}
 Note that in $\ZZ$, working in $\ZZ_{\geq 0}$ is useful because the only positive unit is $1$, and so any elements differing by a unit are in fact equal.
 Can we emulate this for cancellative monoids?
 The answer is yes, by modding out by the equivalence relation of being equivalent up to a unit.
+
+:::
 
 :::{.definition title="Reduced Monoid"}
 Define $M_{\red}\da M/\sim$ where $a\sim b \iff a-b\in M\units$.
 The operation on $M$ descends to well-defined operation on $M_{\red}$, and irreducibles and primes are the same in $M$ and $M_{\red}$.
 :::
 
-
-:::{.example title="?"}
+:::{.example title="of a more familiar reduced monoid"}
 This is supposed to look like $\ZZ_{\geq 0}$, where $-7\in M \mapsto 7 \in M_{\red}$. 
 :::
 
-
-:::{.proposition title="?"}
+:::{.proposition title="A monoid has unique factorizations iff its reduced monoid does"}
 $M$ is a UFM if and only if $M_{\red}$ is a UFM if and only if every element of $M_{\red}$ factors uniquely as a product of irreducibles, up to order.
 :::
 
+:::{.remark}
 What did this buy us? We didn't have to worry about associates in the above statement, and the only unit is 1.
-
+:::
 
 :::{.question}
 Why isn't $\ZZ[ \sqrt{-5} ]$ is UFD?
 :::
 
-
 :::{.answer}
 It doesn't have enough elements to make unique factorization work!
 :::
 
-
-:::{.example title="?"}
+:::{.example title="of common refinements"}
 In $\ZZ^+$, write $210 = 21\cdot 10 = 14 \cdot 15$.
 These two factorizations differ but admit a common refinement to $(7\cdot 3)(2\cdot 5) = (7\cdot 2)(3\cdot 5)$, where it becomes clear that these factorizations are equal up to ordering.
 This is **Euler's Four Number Theorem**, which turns out to be equivalent to unique factorization.
 :::
 
-
-:::{.theorem title="?"}
+:::{.theorem title="Characterization of unique factorization monoids"}
 Let $M$ be a cancellative atomic reduced monoid.
 Then $M$ is a UFM if and only if whenever \( \alpha, \beta, \gamma, \delta \in M \) such that \( \alpha \beta = \gamma \delta \), there are \( \rho, \sigma, \tau, \nu \) with 
 \[
@@ -1452,12 +1530,12 @@ Note that plugging these in on the LHS and RHS respectively yield the same facto
 
 :::
 
-
-:::{.proof title="?"}
+:::{.proof title="of theorem"}
 Omitted, exercise in chasing definitions.
 The interesting part is that you can go backward!
 :::
 
+:::{.remark}
 Let $M_{\red} \da \qty{\ZZ[ \sqrt{5} ] \smz}_{\red}$, motivated by the fact that $\ZZ[ \sqrt{-5} ]$ is not a UFD if $\ZZ[ \sqrt{-5} ] \smz$ is not a UFM, or equivalently its reduction is not a UFM.
 Then $M$ is a not a UFM.
 Noting that $M$ is reduced under an equivalence relation, write $\gens{ \alpha}$ for the class of \( \alpha \) in $M$ for any \( \alpha\in \ZZ[ \sqrt{-5} ] \).
@@ -1475,6 +1553,7 @@ To make this set of ideals into a monoid, one define \( \gens{ \alpha } \gens{ \
 So the failure of unique factorization is a failure of factorization in this set of ideals.
 We can embed this in a larger collection of ideals by just deleting the word "principal", which will restore unique factorization.
 
+:::
 
 :::{.definition title="Multiplication of Ideals"}
 Let $R$ be a commutative ring (always with 1).
@@ -1486,35 +1565,29 @@ IJ \da \gens{ \ts{ \alpha_i \beta_i \st \alpha_i \in I, \beta_i \in J }} = \ts{ 
 If $R$ is a domain, define the monoid $\Id(R)$ the collection of nonzero ideals of $R$ with the above multiplication.
 :::
 
-
 :::{.remark}
 Note that the naive definition $IJ \da \ts{ij\st i\in I, j\in J}$ is not necessarily an ideal, since it may not be closed under addition.
 Taking the smallest ideal containing all products fixes this.
 :::
 
-
-:::{.proposition title="?"}
+:::{.proposition title="If $R$ is a domain, then $\Id(R)$ is a monoid"}
 Let $R$ be a commutative ring.
 Then
 
-- $\cdot$ for ideals is commutative
-- $\cdot$ for ideals is associative
-- The identity is \( \gens{ 1 }= R  \).
-- Multiplication distributes over addition of ideals, i.e. $I(J+K) = IJ + IK$.
-- $IJ \subseteq I \intersect J$.
-- If \( I = \gens{ \alpha_1, \cdots, \alpha_j }  \) and \( J = \gens{ \beta_1, \cdots, \beta_k }  \) then \( IJ = \gens{ \alpha_1 \beta_1, \cdots, \alpha_j \beta_k }  \) is generated by all of the $jk$ pairwise products.
-- If $R$ is a domain and $I, J$ are nonzero then $IJ$ is nonzero.
+- Multiplication $\cdot$ for ideals is commutative,
+- Multiplication $\cdot$ for ideals is associative,
+- The identity is \( \gens{ 1 }= R  \),
+- Multiplication distributes over addition of ideals, i.e. $I(J+K) = IJ + IK$,
+- $IJ \subseteq I \intersect J$,
+- If \( I = \gens{ \alpha_1, \cdots, \alpha_j }  \) and \( J = \gens{ \beta_1, \cdots, \beta_k }  \) then \( IJ = \gens{ \alpha_1 \beta_1, \cdots, \alpha_j \beta_k }  \) is generated by all of the $jk$ pairwise products,
+- If $R$ is a domain and $I, J$ are nonzero then $IJ$ is nonzero,
 
 As a consequence, $\Id(R)$ is a monoid when $R$ is a domain.
 :::
 
+:::{.remark}
 So instead of working in $\Prin( \ZZ [\sqrt{-5} ])$, we'll work in $\Id(\ZZ [\sqrt{-5} ])$.
-
-:::{.claim}
-We can refine our bad factorizations.
-:::
-
-
+The claim is that we can refine our bad factorizations.
 Define
 
 - \( I\da \gens{ 1 + \sqrt{-5} , 2 }  \) 
@@ -1547,21 +1620,10 @@ IJ
 ,\]
 using the fact that $3-2=1$ is in the ideal on the second line.
 
+\
+
 We'll see later that this process allows you to recover unique factorization in $\ZZ_K$ for any number field $K$.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+:::
 
 
 
