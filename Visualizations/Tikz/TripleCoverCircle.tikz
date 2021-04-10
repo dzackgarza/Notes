@@ -1,0 +1,15 @@
+﻿\begin{tikzpicture}[declare function={f(\x)=0.2*sin(\x)+\x/1000;},
+ rubout/.style={/utils/exec=\tikzset{rubout/.cd,#1},
+ decoration={show path construction,
+      curveto code={
+       \draw [white,line width=\pgfkeysvalueof{/tikz/rubout/line width}+2*\pgfkeysvalueof{/tikz/rubout/halo}] 
+        (\tikzinputsegmentfirst) .. controls
+        (\tikzinputsegmentsupporta) and (\tikzinputsegmentsupportb)  ..(\tikzinputsegmentlast); 
+       \draw [line width=\pgfkeysvalueof{/tikz/rubout/line width},shorten <=-0.1pt,shorten >=-0.1pt] (\tikzinputsegmentfirst) .. controls
+        (\tikzinputsegmentsupporta) and (\tikzinputsegmentsupportb) ..(\tikzinputsegmentlast);  
+      }}},rubout/.cd,line width/.initial=2pt,halo/.initial=0.5pt]
+ \draw[rubout={line width=2pt,halo=0.5pt},decorate] 
+   plot[variable=\x,domain=-50:970,samples=55,smooth] ({cos(\x)},{f(\x)}) to[out=0,in=195] cycle;
+ \draw[line width=2pt] (0,-2) arc(-90:270:1cm and 0.2cm);
+ \draw[thick,-stealth]  (0,-0.4) -- (0,-1.4) node[midway,right]{$p$};
+\end{tikzpicture}
