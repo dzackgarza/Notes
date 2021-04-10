@@ -1,0 +1,12 @@
+\begin{tikzpicture}[]
+\node[](0){G};
+\path[->](0)edge[loop above]node{$g_1$}();
+\foreach \looseness/\label [count=\n] in {10/$g_2$,15/$g_3$,20/$g_4$,27/$\cdots$}
+	\path [->] (0) edge [
+      loop above,
+      every loop/.append style={
+          looseness=\looseness,
+          in=60-0.8*\looseness,
+          out=120+0.8*\looseness
+    }] node {\label} ();
+\end{tikzpicture}
