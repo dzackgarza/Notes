@@ -54,8 +54,9 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{algebraic_groups.pdf}}%
-    \put(0.58365406,0.33394178){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$e$\end{tabular}}}}%
+    \put(0.15943164,0.58191645){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$e$\end{tabular}}}}%
     \put(0.71732987,0.21856072){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathfrak{g} =T(G)_e$\end{tabular}}}}%
     \put(0.85327445,0.62020676){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{algebraic_groups.pdf}}%
   \end{picture}%
 \endgroup%
