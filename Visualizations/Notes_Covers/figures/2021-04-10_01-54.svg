@@ -5,17 +5,136 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="148mm"
-   viewBox="0 0 210 148"
+   width="207.73105mm"
+   height="133.96194mm"
+   viewBox="0 0 207.73105 133.96194"
    version="1.1"
    id="svg8"
-   sodipodi:docname="inkscape_template.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   sodipodi:docname="2021-04-10_01-54.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   inkscape:export-filename="/home/zack/SparkleShare/github.com/Notes/Visualizations/Notes_Covers/figures/2021-04-10_01-54.png"
+   inkscape:export-xdpi="159.75999"
+   inkscape:export-ydpi="159.75999">
   <defs
-     id="defs2" />
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3407">
+      <stop
+         style="stop-color:#a51d1e;stop-opacity:1;"
+         offset="0"
+         id="stop3403" />
+      <stop
+         style="stop-color:#a51d1e;stop-opacity:0;"
+         offset="1"
+         id="stop3405" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1455">
+      <stop
+         style="stop-color:#3e8213;stop-opacity:1;"
+         offset="0"
+         id="stop1451" />
+      <stop
+         style="stop-color:#3e8213;stop-opacity:0;"
+         offset="1"
+         id="stop1453" />
+    </linearGradient>
+    <marker
+       style="overflow:visible"
+       id="marker1295"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1293" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1243"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1241" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1197"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1195" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path839" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path842" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1455"
+       id="linearGradient1457"
+       x1="179.08333"
+       y1="140.14584"
+       x2="139.39583"
+       y2="74"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3407"
+       id="linearGradient3409"
+       x1="128.8125"
+       y1="150.72917"
+       x2="41.5"
+       y2="36.958336"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +142,9 @@
      borderopacity="1"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="489.35776"
-     inkscape:cy="501.819"
+     inkscape:zoom="1.4"
+     inkscape:cx="398.12519"
+     inkscape:cy="277.33128"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -37,34 +156,30 @@
      guidetolerance="10000"
      inkscape:snap-perpendicular="true"
      inkscape:snap-tangential="true"
-     inkscape:window-width="943"
-     inkscape:window-height="1027"
-     inkscape:window-x="2045"
-     inkscape:window-y="1121"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0">
     <sodipodi:guide
-       position="0,148"
+       position="-1.8953442,135.47309"
        orientation="0,793.70079"
        id="guide10" />
     <sodipodi:guide
-       position="210,148"
+       position="208.10465,135.47309"
        orientation="559.37008,0"
        id="guide12" />
     <sodipodi:guide
-       position="210,0"
+       position="208.10465,-12.526905"
        orientation="0,-793.70079"
        id="guide14" />
-    <sodipodi:guide
-       position="0,0"
-       orientation="-559.37008,0"
-       id="guide16" />
     <inkscape:grid
        type="xygrid"
        id="grid20"
        dotted="true"
        units="px"
-       originx="105"
-       originy="74.000003" />
+       originx="103.10465"
+       originy="72.48885" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -74,7 +189,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -83,5 +198,34 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1" />
+     id="layer1"
+     transform="translate(-1.8953443,-1.5111498)">
+    <g
+       id="g3439"
+       transform="matrix(0.8466446,0,0,0.89342887,12.383025,2.3783834)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1243);marker-end:url(#marker1295)"
+         d="M -11.416666,121.625 H 232"
+         id="path835" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1197);marker-end:url(#Arrow1Lend)"
+         d="M 99.708331,1.2854924e-6 V 148"
+         id="path837" />
+      <path
+         style="fill:url(#linearGradient3409);fill-opacity:1;stroke:#a51d1e;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -2.15625,121.625 c 0,0 14.385899,-4.04759 27.615065,-17.27676 C 38.687981,91.119083 52.525265,23.037443 58.163001,38.79369 69.188552,69.607707 88.759144,93.008717 97.818704,98.870433 149.08906,132.04338 183.29876,118.05282 218.77083,121.625"
+         id="path1429"
+         sodipodi:nodetypes="csssc" />
+      <path
+         style="fill:url(#linearGradient1457);fill-opacity:1;stroke:#3e8213;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 218.77083,121.625 c 0,0 -29.85361,-2.73465 -37.04166,-21.16666 C 174.54112,82.026342 168.08907,59.566411 162.7619,61.695519 145.19178,68.717774 149.66117,102.17391 115.53836,106.49905 67.165862,112.63035 -2.15625,121.625 -2.15625,121.625"
+         id="path1429-3"
+         sodipodi:nodetypes="csssc" />
+    </g>
+    <path
+       id="path3561"
+       style="fill:none;stroke:#666ac2;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 19.010411,70.03125 C 91.501911,29.498358 165.47245,124.07012 206.86458,63.416666"
+       sodipodi:nodetypes="cc" />
+  </g>
 </svg>
