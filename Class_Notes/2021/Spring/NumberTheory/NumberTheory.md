@@ -3383,21 +3383,19 @@ In a UFD, irreducibles are prime, so \( \gens{ \pi_i }  \) is a prime ideal, so 
 By unique factorization, this forces $P = \gens{ \pi_i }$, make $P$ principal.
 :::
 
-:::{.remark}
+
+:::{.question}
 Can anything be said if $h_K = 2$, even though we know $\ZZ_K$ is not a UFD?
 :::
 
 :::{.theorem title="Carlitz"}
-$h_K = 2 \iff$ in $\ZZ_K$, any 2 factorizations of nonzero nonunit $\alpha$ into irreducibles have the same number of terms.
+$h_K = 2 \iff$ in $\ZZ_K$, any two factorizations of nonzero nonunit $\alpha$ into irreducibles have the same number of terms.
 :::
 
 :::{.remark}
 For example, in $\ZZ[ \sqrt{-5} ]$ we have $6 = (2)(3) = (1 + \sqrt{-5} )(1 - \sqrt{-5} )$, which have the same number of factors.
+To prove this theorem, we'll first need a lemma:
 :::
-
-:::{.proof title="$\implies$"}
-
-We'll first prove a lemma:
 
 :::{.lemma title="Class Number 2 implies 2 factors"}
 Suppose $h_K = 2$, and suppose \( \pi \in \ZZ_K \) is an irreducible that is not prime (which is possible in a non-UFD).
@@ -3430,6 +3428,7 @@ but this is a product of prime ideals resulting in the unit ideal.
 This can only happen if there are no terms in this product, so $g=2$.
 :::
 
+:::{.proof title="of theorem ($\implies$)"}
 Suppose $h_K = 2$.
 We already know $\ZZ_K$ is not a UFD by the previous theorem.
 The nontrivial part is showing factorization into nonzero nonunits of the same number of terms.

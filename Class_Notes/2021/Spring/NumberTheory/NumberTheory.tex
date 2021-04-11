@@ -4147,17 +4147,18 @@ prime ideal dividing a prime ideal. By unique factorization, this forces
 
 \end{proof}
 
-\begin{remark}
+\begin{question}
 
 Can anything be said if \(h_K = 2\), even though we know
 \({\mathbb{Z}}_K\) is not a UFD?
 
-\end{remark}
+\end{question}
 
 \begin{theorem}[Carlitz]
 
-\(h_K = 2 \iff\) in \({\mathbb{Z}}_K\), any 2 factorizations of nonzero
-nonunit \(\alpha\) into irreducibles have the same number of terms.
+\(h_K = 2 \iff\) in \({\mathbb{Z}}_K\), any two factorizations of
+nonzero nonunit \(\alpha\) into irreducibles have the same number of
+terms.
 
 \end{theorem}
 
@@ -4165,13 +4166,9 @@ nonunit \(\alpha\) into irreducibles have the same number of terms.
 
 For example, in \({\mathbb{Z}}[ \sqrt{-5} ]\) we have
 \(6 = (2)(3) = (1 + \sqrt{-5} )(1 - \sqrt{-5} )\), which have the same
-number of factors.
+number of factors. To prove this theorem, we'll first need a lemma:
 
 \end{remark}
-
-\begin{proof}[$\implies$]
-
-We'll first prove a lemma:
 
 \begin{lemma}[Class Number 2 implies 2 factors]
 
@@ -4217,6 +4214,8 @@ but this is a product of prime ideals resulting in the unit ideal. This
 can only happen if there are no terms in this product, so \(g=2\).
 
 \end{proof}
+
+\begin{proof}[of theorem ($\implies$)]
 
 Suppose \(h_K = 2\). We already know \({\mathbb{Z}}_K\) is not a UFD by
 the previous theorem. The nontrivial part is showing factorization into
