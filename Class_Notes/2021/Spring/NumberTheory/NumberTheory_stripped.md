@@ -1201,22 +1201,20 @@ Check that \( \left\{{ a + b \tau {~\mathrel{\Big|}~}0\leq a \leq n,\, 0 \leq b 
 So given a standard basis, it's easy to compute norms! What does this have to do with the previous notion of norms for elements?
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="The ideal that the norm generates"}
 Let \( I {~\trianglelefteq~}{\mathbb{Z}}_K \) be nonzero and define \( \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\{{ \mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu{~\mathrel{\Big|}~}\alpha \in I }\right\} {~\trianglelefteq~}{\mathbb{Z}}_K \). Then \( I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\langle{ N(I) }\right\rangle \).
 :::
 
-::: {.lemma title="?"}
-Let \( n, A + B \tau \) be a standard basis for \( I \). Then \( B\mathrel{\Big|}n \) and \( B\mathrel{\Big|}A \).
+::: {.lemma title="The $\\tau$ coefficient divides the remaining coefficient"}
+Let \( n \) be as above and let \( A + B \tau \) be a standard basis for \( I \). Then \( B\mathrel{\Big|}n \) and \( B\mathrel{\Big|}A \).
 :::
 
 ::: {.proof title="of lemma"}
-Recall that \( B \) was a generator for \( \tau \) components of elements of \( I \), so we just need to find an element of \( I \) with \( \tau \) component \( n \), and \( n \tau \in I \) works.
-
-Now compute \( (A + B \tau) \tau\in I \). This is equal to
+Recall that \( B \) was a generator for \( \tau \) components of elements of \( I \), so we just need to find an element of \( I \) with \( \tau \) component \( n \), and \( n \tau \in I \) works. Now compute \( (A + B \tau) \tau\in I \). This is equal to
 \[
 A \tau + B \tau^2
 .\]
-Note that this could in principle be done in cases: if \( \tau = \sqrt{d} \), \( Bd \) would be an integer and \( A \) would be the \( \tau \) coordinate. Then since \( B \) divides every \( \tau \) coefficient, we'd be done. But let's try this in a more unified way: we know \( \tau \) is a root of a monic degree 2 polynomial, namely \( (x - \tau) (x - \mkern 1.5mu\overline{\mkern-1.5mu\tau\mkern-1.5mu}\mkern 1.5mu) = x^2 - \operatorname{Tr}( \tau)x + N( \tau) \), and thus we can write
+Note that this could in principle be done in cases: if \( \tau = \sqrt{d} \), the quantity \( Bd \) would be an integer and \( A \) would be the \( \tau \) coordinate. Then since \( B \) divides every \( \tau \) coefficient, we'd be done. But let's try this in a more unified way: we know \( \tau \) is a root of a monic degree 2 polynomial, namely \( (x - \tau) (x - \mkern 1.5mu\overline{\mkern-1.5mu\tau\mkern-1.5mu}\mkern 1.5mu) = x^2 - \operatorname{Tr}( \tau)x + N( \tau) \), and thus we can write
 \[
 \tau^2 = \operatorname{Tr}( \tau) \tau - N( \tau)
 .\]
@@ -2788,7 +2786,7 @@ If \( \alpha\in K \) then define its **field polynomial**
 .\]
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="The field polynomial is monic, has rational coefficients, and is a power of the minimal polynomial"}
 This is a monic polynomial with \( {\mathbb{C}}{\hbox{-}} \)coefficients, and in fact \( \varphi_{ \alpha} \in {\mathbb{Q}}[x] \) and \( \varphi_{ \alpha}(x) = \min_{ \alpha} (x)^n \) (the minimal polynomial over \( {\mathbb{Q}} \)) for some power \( n \), and the correct choice turns out to be \( n \coloneqq[K: F[ \alpha] ] \).
 :::
 
@@ -2796,7 +2794,7 @@ This is a monic polynomial with \( {\mathbb{C}}{\hbox{-}} \)coefficients, and in
 Note that the first claim follows from the second since \( \min_{ \alpha}(x) \in {\mathbb{Q}}[x] \).
 :::
 
-::: {.lemma title="?"}
+::: {.lemma title="Number of embeddings of subfields"}
 Let \( K \) be a number field with \( [K: {\mathbb{Q}}] = n \) and \( F\leq K \) a subfield with \( [F: {\mathbb{Q}}] = r \). Note that \( r\mathrel{\Big|}n \). Then every embedding \( \tau: F\hookrightarrow{\mathbb{C}} \) extends in \( n/r \) ways to an embedding \( \sigma: K \hookrightarrow{\mathbb{C}} \).
 :::
 

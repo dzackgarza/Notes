@@ -2142,25 +2142,24 @@ So given a standard basis, it's easy to compute norms!
 What does this have to do with the previous notion of norms for elements?
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="The ideal that the norm generates"}
 Let $I \normal \ZZ_K$ be nonzero and define $\bar{I} = \ts{ \bar\alpha \st \alpha \in I } \normal \ZZ_K$.
 Then $I \bar I = \gens{ N(I) }$. 
 :::
 
-:::{.lemma title="?"}
-Let $n, A + B \tau$ be a standard basis for $I$. 
+:::{.lemma title="The $\tau$ coefficient divides the remaining coefficient"}
+Let $n$ be as above and let $A + B \tau$ be a standard basis for $I$. 
 Then $B\divides n$ and $B\divides A$.
 :::
 
 :::{.proof title="of lemma"}
 Recall that $B$ was a generator for \( \tau \) components of elements of $I$, so we just need to find an element of $I$ with \( \tau \) component $n$, and \( n \tau \in I \) works.
-
 Now compute $(A + B \tau) \tau\in I$.
 This is equal to
 \[
 A \tau + B \tau^2
 .\]
-Note that this could in principle be done in cases: if $\tau = \sqrt{d}$, $Bd$ would be an integer and $A$ would be the \( \tau \) coordinate. 
+Note that this could in principle be done in cases: if $\tau = \sqrt{d}$, the quantity $Bd$ would be an integer and $A$ would be the \( \tau \) coordinate. 
 Then since $B$ divides every \( \tau \) coefficient, we'd be done.
 But let's try this in a more unified way: we know \( \tau \) is a root of a monic degree 2 polynomial, namely \( (x - \tau) (x - \bar{\tau}) = x^2 - \Tr( \tau)x + N( \tau) \), and thus we can write 
 \[
@@ -4279,7 +4278,7 @@ If \( \alpha\in K \) then define its **field polynomial**
 .\]
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="The field polynomial is monic, has rational coefficients, and is a power of the minimal polynomial"}
 This is a monic polynomial with $\CC\dash$coefficients, and in fact \( \varphi_{ \alpha} \in \QQ[x] \) and \( \varphi_{ \alpha}(x) = \min_{ \alpha} (x)^n\) (the minimal polynomial over $\QQ$) for some power $n$, and the correct choice turns out to be \( n \da [K: F[ \alpha] ] \).
 :::
 
@@ -4287,7 +4286,7 @@ This is a monic polynomial with $\CC\dash$coefficients, and in fact \( \varphi_{
 Note that the first claim follows from the second since \( \min_{ \alpha}(x) \in \QQ[x] \).
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Number of embeddings of subfields"}
 Let $K$ be a number field with $[K: \QQ] = n$ and $F\leq K$ a subfield with $[F: \QQ] = r$.
 Note that $r\divides n$.
 Then every embedding \( \tau: F\embeds \CC \) extends in $n/r$ ways to an embedding \( \sigma: K \injects \CC \).
