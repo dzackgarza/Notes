@@ -4322,13 +4322,13 @@ where
 The field polynomial gives us a way to determine whether an element of a number field is in its ring of integers:
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Field polynomial has integer coefficients iff the element is an integer"}
 \[
 \alpha\in \ZZ_K \iff \varphi_{ \alpha}(x) \in \ZZ[x]
 .\]
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 $\impliedby$:
 This direction is easy, since having integer coefficients, being monic, and having \( \alpha \) as a root since \( x - \sigma( \alpha) = x - \alpha \) for some \( \sigma \).
 But this puts \( \alpha \in \ZZ_K \) by definition.
@@ -4406,7 +4406,7 @@ Moreover if you start with the $w_i \in \ZZ_K$, then $D^t D \in \Mat(n\times n, 
 Why is this called the discriminant?
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="The discriminant detects $\QQ\dash$bases"}
 Let $w_1, \cdots, w_n\in K$, then 
 \[
 \ts{ w_1, \cdots, w_n } \text{ form a $\QQ\dash$basis for $K$}
