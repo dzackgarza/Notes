@@ -2009,6 +2009,8 @@ In fact, since \( P_4 \) is principal we can leave it out.
 
 # Class Groups (Lec. 10, Thursday, February 18)
 
+## Computing Class Groups
+
 ::: {.remark}
 Last time: we defined an equivalence relation on nonzero ideals of \( {\mathbb{Z}}_K \), namely \( I \approx J \iff I = \alpha J \) for some \( \alpha \in K^{\times} \). We then defined the **class group**
 \[
@@ -2176,10 +2178,12 @@ This is an analytic theorem! The proof is similar to how Dirichlet proved the in
 What about \( h_K \geq 2 \)? We'll introduce a way of measuring how bad unique factorization fails in a ring, the notion of *elasticity*.
 :::
 
-::: {.definition title="?"}
+## Elasticity
+
+::: {.definition title="Elasticity of a Ring"}
 Let \( \alpha\in {\mathbb{Z}}_K \) where \( \alpha\neq 0 \) and is not a unit. Define
 \[
-\rho(\alpha) { L( \alpha) \over S( \alpha) }
+\rho(\alpha) \coloneqq{ L( \alpha) \over S( \alpha) }
 ,\]
 where \( L( \alpha) \) is the number of terms in the longest[^7] factorization of \( \alpha \) and \( S( \alpha ) \) is the shortest number of terms. This measures how far away from unique the factorization of \( \alpha \) is. Now define the **elasticity** of \( {\mathbb{Z}}_K \) as
 \[
@@ -2191,16 +2195,16 @@ where \( L( \alpha) \) is the number of terms in the longest[^7] factorization o
 Note that \( h_K = 1, 2\iff \rho(K) = 1 \), and \( h_K > 2 \implies \rho(K) > 1 \).
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Elasticity in terms of the Davenport constant"}
 For \( h_K \geq 2 \),
 \[
 \rho(K) = {1\over 2} D( \operatorname{Cl}( {\mathbb{Z}}_K))
 ,\]
-where \( D(G) \) is the **Davenport constant** of the finite abelian group \( G \): the smallest number \( D \) such that every sequence of \( D \) elements of \( G \) contains a nonempty subsequence whose product is the identity. This is function from combinatorial group theory.
+where \( D(G) \) is the **Davenport constant** of the finite abelian group \( G \): the smallest number \( D \) such that every sequence of \( D \) elements of \( G \) contains a nonempty subsequence whose product is the identity. This is a function from combinatorial group theory.
 :::
 
-::: {.exercise title="?"}
-\( D(G) \leq {\left\lvert {G} \right\rvert} \).
+::: {.exercise title="bounding the Davenport constant"}
+Show that \( D(G) \leq {\left\lvert {G} \right\rvert} \).
 :::
 
 ::: {.fact}
@@ -2215,7 +2219,11 @@ If \( h_K \to \infty \) for a sequence of number fields, then \( \rho(K) \to \in
 This just follows from the above facts, since \( h_K \to \infty \) means the size of the group \( G \coloneqq\operatorname{Cl}( {\mathbb{Z}}_K) \) goes to infinity, which is a constant times \( \rho(K) \). So as the class group gets larger, factorization gets worse.
 :::
 
-# Chapters 11 and 12 (Tuesday, February 23)
+# Prime Producing Polynomials and Unique Factorization (Lec. 11, Tuesday, February 23)
+
+::: {.remark}
+Today: chapters 11 and 12.
+:::
 
 ## Chapter 11: Prime Producing Polynomials and Unique Factorization
 
@@ -2231,19 +2239,17 @@ f_q(x) \coloneqq x^2 - x + q
 Note that \( f_q(q) = q^2 \), so eventually the output is composite. We'll say \( f_q \) is **optimal** if \( f_q(x) \) is prime for all integers \( 0 < x < q \). As an example, \( q=41 \) was optimal.
 :::
 
-::: {.theorem title="Rabonowitch"}
+::: {.theorem title="Rabinowitz"}
 Let \( q \geq 2 \in {\mathbb{Z}}^{> 0} \) and let \( d = \Delta(f_q) = 1-4q \) be the discriminant of \( f_q \). Assume that \( d \) is squarefree, then \( f_q \) is optimal if and only if \( \mathbb{Z}\left[ { {1 + \sqrt{d}\over 2 }} \right] \) is a UFD. [^8]
 :::
 
-::: {.example title="?"}
+::: {.example title="of a ring of integers that is a UFD"}
 For \( q=41, d = -163 \) and thus \( \mathbb{Z}\left[ { {1 + \sqrt{-163} \over 2}} \right] \) is a UFD.
 :::
 
-::: {.remark}
-The forward direction is harder here.
-:::
-
 ::: {.proof title="$\\impliedby$"}
+> Big idea: uses that \( \min_\tau(x) = f_q(x) \) and remembering that how \( \min_\tau(x) \pmod p \) factors is exactly how \( \left\langle{ p }\right\rangle \) factors into prime ideals.
+
 Assume \( \mathbb{Z}\left[ { \tau } \right] \) is a UFD, where \( \tau\coloneqq{1 + \sqrt{d} \over 2 } \). Toward a contradiction, suppose \( f_q(x) \) is composite for some \( 0<x<q \). We can write
 \[
 f_q(x) = x^2 - x + q = (x - \tau)( x - {\overline{{ \tau}}} ) = \min_{ \tau}(x)_{/{\mathbb{Q}}}
@@ -2257,8 +2263,10 @@ Completing the square yields
 \cdots = (a + b/2)^2 + (q-1/4)b^2
 .\]
 Note that \( b\neq 0 \), since this would yield \( p = a^2 \) in the first equation and \( a, p \in {\mathbb{Z}} \) with \( p \) prime. So both terms in the second equation are non-negative, and the second is positive because \( b>1 \), so \( p \geq q- 1/4 \). Since \( p, q\in {\mathbb{Z}} \) we can strengthen this to \( p \geq q \). But \( p \) was the *least* prime factor of \( f_q(x) < q^2 \) which was composite, so this is a contradiction. \( \contradiction \)
+:::
 
-> Big idea: uses that \( \min_\tau(x) = f_q(x) \) and remembering that how \( \min_\tau(x) \pmod p \) factors is exactly how \( \left\langle{ p }\right\rangle \) factors into prime ideals.
+::: {.remark}
+The forward direction is harder here.
 :::
 
 ::: {.proof title="$\\implies$"}
@@ -2353,11 +2361,12 @@ Moreover, \( J {~\trianglelefteq~}{\mathbb{Z}}_K \) is an ideal, since it's a di
 :::
 
 ::: {.remark}
-This proves Rabinowitz's theorem.
 :::
 
 ::: {.remark}
-This says that being an optimal prime is entirely equivalent to a certain ring being a UFD. Are there other optimal examples than \( q=41 \)? It turns out that there are *no* optimal \( f_q \) for \( q>41 \), which is not easy to prove. This didn't happen until the 20th century, by folks interested in the UFD side of this statement:
+This proves Rabinowitz's theorem.\
+
+This says that being an optimal prime is entirely equivalent to a certain ring being a UFD. Are there optimal examples other than \( q=41 \)? It turns out that there are *no* optimal \( f_q \) for \( q>41 \), which is not easy to prove. This didn't happen until the 20th century, by folks interested in the UFD side of this statement:
 :::
 
 ::: {.theorem title="Baker-Heegner-Stark"}
@@ -2369,13 +2378,17 @@ So remarkably, there are *not* infinitely many examples for which the ring of in
 :::
 
 ::: {.remark}
-What about real quadratic fields? The situation is expected to be very different: the conjecture is that \( {\mathbb{Q}}(\sqrt{d}) \) is a UFD most of the time. An expert on this will be joining us here at UGA starting Fall 2021!
+What about real quadratic fields? An expert on this will be joining us here at UGA starting Fall 2021. The situation is expected to be very different, and a conjecture is the following:
 :::
 
-## Chapter 12: Lattice Points
+::: {.conjecture}
+The real quadratic field \( {\mathbb{Q}}(\sqrt{d}) \) is a UFD most of the time.
+:::
+
+## Lattice Points
 
 ::: {.remark}
-Everything we've done up until now has been for quadratic fields. After this chapter, we'll start anew and rebuild everything for general number fields.
+This corresponds to chapter 12. Everything we've done up until now has been for quadratic fields. After this chapter, we'll start anew and rebuild everything for general number fields.
 :::
 
 ::: {.definition title="Lattice Point"}
@@ -2492,7 +2505,7 @@ This has the effect of making the squares partitioning \( {\mathbb{R}}^n \) fine
 Note that there is a small technicality since \( t \) can take on non-integer values, but the limiting behavior is the same. Next time: we've seen that the number of lattice points is sometimes well-approximated by volume, but it's possible to have regions of unbounded volume with no lattice points, e.g. by taking a large ball and deleting all lattice points. It would be nice to have a theorem which guarantee when a region will have lattice points, and Minkowski's theorem will be one such theorem we'll look at next time.
 :::
 
-# Ch. 12: Lattice Points (Monday, March 01)
+# Lattice Points (Lec. 12, Monday, March 01)
 
 ## Minkowski (Version 1)
 

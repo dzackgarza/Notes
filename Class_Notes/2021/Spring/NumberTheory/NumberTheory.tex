@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-10 }
+{\tiny \textit{Last updated:} 2021-04-11 }
 \end{flushleft}
 
 
@@ -3923,6 +3923,9 @@ In fact, since \(P_4\) is principal we can leave it out.
 \section{Class Groups (Lec. 10, Thursday, February
 18)}\label{class-groups-lec.-10-thursday-february-18}}
 
+\hypertarget{computing-class-groups}{%
+\subsection{Computing Class Groups}\label{computing-class-groups}}
+
 \begin{remark}
 
 Last time: we defined an equivalence relation on nonzero ideals of
@@ -4297,12 +4300,15 @@ unique factorization fails in a ring, the notion of \emph{elasticity}.
 
 \end{remark}
 
-\begin{definition}[?]
+\hypertarget{elasticity}{%
+\subsection{Elasticity}\label{elasticity}}
+
+\begin{definition}[Elasticity of a Ring]
 
 Let \(\alpha\in {\mathbb{Z}}_K\) where \(\alpha\neq 0\) and is not a
 unit. Define
 \begin{align*}
-\rho(\alpha) { L( \alpha) \over S( \alpha) }
+\rho(\alpha) \coloneqq{ L( \alpha) \over S( \alpha) }
 ,\end{align*}
 where \(L( \alpha)\) is the number of terms in the longest\footnote{There
   is a way to factor that maximizes the number of irreducibles
@@ -4324,7 +4330,7 @@ Note that \(h_K = 1, 2\iff \rho(K) = 1\), and
 
 \end{remark}
 
-\begin{theorem}[?]
+\begin{theorem}[Elasticity in terms of the Davenport constant]
 
 For \(h_K \geq 2\),
 \begin{align*}
@@ -4333,13 +4339,13 @@ For \(h_K \geq 2\),
 where \(D(G)\) is the \textbf{Davenport constant} of the finite abelian
 group \(G\): the smallest number \(D\) such that every sequence of \(D\)
 elements of \(G\) contains a nonempty subsequence whose product is the
-identity. This is function from combinatorial group theory.
+identity. This is a function from combinatorial group theory.
 
 \end{theorem}
 
-\begin{exercise}[?]
+\begin{exercise}[bounding the Davenport constant]
 
-\(D(G) \leq {\left\lvert {G} \right\rvert}\).
+Show that \(D(G) \leq {\left\lvert {G} \right\rvert}\).
 
 \end{exercise}
 
@@ -4365,9 +4371,16 @@ group gets larger, factorization gets worse.
 
 \end{remark}
 
-\hypertarget{chapters-11-and-12-tuesday-february-23}{%
-\section{Chapters 11 and 12 (Tuesday, February
-23)}\label{chapters-11-and-12-tuesday-february-23}}
+\hypertarget{prime-producing-polynomials-and-unique-factorization-lec.-11-tuesday-february-23}{%
+\section{Prime Producing Polynomials and Unique Factorization (Lec. 11,
+Tuesday, February
+23)}\label{prime-producing-polynomials-and-unique-factorization-lec.-11-tuesday-february-23}}
+
+\begin{remark}
+
+Today: chapters 11 and 12.
+
+\end{remark}
 
 \hypertarget{chapter-11-prime-producing-polynomials-and-unique-factorization}{%
 \subsection{Chapter 11: Prime Producing Polynomials and Unique
@@ -4393,7 +4406,7 @@ say \(f_q\) is \textbf{optimal} if \(f_q(x)\) is prime for all integers
 
 \end{remark}
 
-\begin{theorem}[Rabonowitch]
+\begin{theorem}[Rabinowitz]
 
 Let \(q \geq 2 \in {\mathbb{Z}}^{> 0}\) and let
 \(d = \Delta(f_q) = 1-4q\) be the discriminant of \(f_q\). Assume that
@@ -4404,20 +4417,20 @@ Let \(q \geq 2 \in {\mathbb{Z}}^{> 0}\) and let
 
 \end{theorem}
 
-\begin{example}[?]
+\begin{example}[of a ring of integers that is a UFD]
 
 For \(q=41, d = -163\) and thus
 \(\mathbb{Z}\left[ { {1 + \sqrt{-163} \over 2}} \right]\) is a UFD.
 
 \end{example}
 
-\begin{remark}
-
-The forward direction is harder here.
-
-\end{remark}
-
 \begin{proof}[$\impliedby$]
+
+\begin{quote}
+Big idea: uses that \(\min_\tau(x) = f_q(x)\) and remembering that how
+\(\min_\tau(x) \pmod p\) factors is exactly how
+\(\left\langle{ p }\right\rangle\) factors into prime ideals.
+\end{quote}
 
 Assume \(\mathbb{Z}\left[ { \tau } \right]\) is a UFD, where
 \(\tau\coloneqq{1 + \sqrt{d} \over 2 }\). Toward a contradiction,
@@ -4454,13 +4467,13 @@ can strengthen this to \(p \geq q\). But \(p\) was the \emph{least}
 prime factor of \(f_q(x) < q^2\) which was composite, so this is a
 contradiction. \(\contradiction\)
 
-\begin{quote}
-Big idea: uses that \(\min_\tau(x) = f_q(x)\) and remembering that how
-\(\min_\tau(x) \pmod p\) factors is exactly how
-\(\left\langle{ p }\right\rangle\) factors into prime ideals.
-\end{quote}
-
 \end{proof}
+
+\begin{remark}
+
+The forward direction is harder here.
+
+\end{remark}
 
 \begin{proof}[$\implies$]
 
@@ -4665,14 +4678,14 @@ norm bounded by \(D\).
 
 \begin{remark}
 
-This proves Rabinowitz's theorem.
-
 \end{remark}
 
 \begin{remark}
 
+This proves Rabinowitz's theorem.\\
+
 This says that being an optimal prime is entirely equivalent to a
-certain ring being a UFD. Are there other optimal examples than
+certain ring being a UFD. Are there optimal examples other than
 \(q=41\)? It turns out that there are \emph{no} optimal \(f_q\) for
 \(q>41\), which is not easy to prove. This didn't happen until the 20th
 century, by folks interested in the UFD side of this statement:
@@ -4705,22 +4718,27 @@ the asymptotic statement.
 
 \begin{remark}
 
-What about real quadratic fields? The situation is expected to be very
-different: the conjecture is that \({\mathbb{Q}}(\sqrt{d})\) is a UFD
-most of the time. An expert on this will be joining us here at UGA
-starting Fall 2021!
+What about real quadratic fields? An expert on this will be joining us
+here at UGA starting Fall 2021. The situation is expected to be very
+different, and a conjecture is the following:
 
 \end{remark}
 
-\hypertarget{chapter-12-lattice-points}{%
-\subsection{Chapter 12: Lattice
-Points}\label{chapter-12-lattice-points}}
+\begin{conjecture}
+
+The real quadratic field \({\mathbb{Q}}(\sqrt{d})\) is a UFD most of the
+time.
+
+\end{conjecture}
+
+\hypertarget{lattice-points}{%
+\subsection{Lattice Points}\label{lattice-points}}
 
 \begin{remark}
 
-Everything we've done up until now has been for quadratic fields. After
-this chapter, we'll start anew and rebuild everything for general number
-fields.
+This corresponds to chapter 12. Everything we've done up until now has
+been for quadratic fields. After this chapter, we'll start anew and
+rebuild everything for general number fields.
 
 \end{remark}
 
@@ -4874,9 +4892,9 @@ theorem will be one such theorem we'll look at next time.
 
 \end{remark}
 
-\hypertarget{ch.-12-lattice-points-monday-march-01}{%
-\section{Ch. 12: Lattice Points (Monday, March
-01)}\label{ch.-12-lattice-points-monday-march-01}}
+\hypertarget{lattice-points-lec.-12-monday-march-01}{%
+\section{Lattice Points (Lec. 12, Monday, March
+01)}\label{lattice-points-lec.-12-monday-march-01}}
 
 \hypertarget{minkowski-version-1}{%
 \subsection{Minkowski (Version 1)}\label{minkowski-version-1}}
