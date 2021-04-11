@@ -1083,7 +1083,7 @@ The same argument works for $b$.
 Prove the proposition!
 :::
 
-:::{.proposition title="The ring $\bar{\ZZ}$ contains all roots of monic polynomials in $\ZZ[x]$"}
+:::{.proposition title="The ring $\bar{\ZZ}$ contains all roots polynomials in $\ZZ[x]$ "}
 Suppose \( \alpha\in \bar \CC \) and \( \alpha \) is a root of a monic polynomial in \( \bar{\ZZ} [x] \).
 Then \( \alpha\in \bar \ZZ \).
 :::

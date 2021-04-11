@@ -419,7 +419,7 @@ Thus the subring is "big" in the sense that if you allow taking quotients, you r
 Prove the proposition!
 :::
 
-::: {.proposition title="The ring $\\bar{\\ZZ}$ contains all roots of monic polynomials in $\\ZZ[x]$"}
+::: {.proposition title="The ring $\\bar{\\ZZ}$ contains all roots polynomials in $\\ZZ[x]$ "}
 Suppose \( \alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{C}}\mkern-1.5mu}\mkern 1.5mu \) and \( \alpha \) is a root of a monic polynomial in \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu [x] \). Then \( \alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu \).
 :::
 
