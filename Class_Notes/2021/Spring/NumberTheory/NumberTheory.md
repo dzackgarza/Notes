@@ -1690,7 +1690,7 @@ Then $K$ is norm-Euclidean if and only if for all \( \beta\in K \) there is a \(
 In other words, $K$ is norm-Euclidean if and only if  every element can be approximated by an element in $\ZZ_K$.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 $\impliedby$:
 Let \( a,b \in \ZZ_k \) with \( b\neq 0 \).
 Define \( \beta\da a/b \in K \), then by assumption choose \( \gamma \) such that \( \abs{N \qty{ {a\over b} - \gamma} }< 1  \).
@@ -1847,11 +1847,11 @@ It's not hard to work out the exact list where everything *is* covered:
 
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="When quadratic fields are norm-Euclidean"}
 $K$ is norm-Euclidean if and only if $d\in \ts{-1,-2,-3,-7,-11}$.
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="When rings of integers are PIDs/UFDs"}
 For these $d$, $\ZZ_K$ is a PID and thus a UFD.
 :::
 
@@ -1879,7 +1879,7 @@ We'll prove this theorem!
 First we need a few lemmas.
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Most imaginary quadratic fields have only two units"}
 Let $K$ be an imaginary quadratic field, then $U(\ZZ_K) = \ts{\pm 1 }$ except if $d=-1, -3$.
 :::
 
@@ -1917,7 +1917,7 @@ Note that in the first case, these are exactly the 4th roots of unity, and in th
 This is a general phenomenon that will appear again!
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Norm of generator of principal ideal equals size of quotient"}
 Let $K$ be any quadratic field and \( \alpha\in \ZZ_K \).
 Then \( \# \ZZ_k / \gens{ \alpha } = \abs{N( \alpha )}   \).
 :::
@@ -3922,7 +3922,7 @@ tR \da \ts{ t\vector x \st \vector x \in R }
 
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="The number of lattice points in a region is asymptotically the volume"}
 Let $R$ be a region in $\RR^n$ which is *Riemann measurable*.[^riemann_measurable]
 Then the number of lattice points satisfies
 \[
@@ -3936,7 +3936,7 @@ This means that $\chi_R$ should be Riemann integrable, i.e. the bounded region i
 
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of theorem"}
 Notice that the left-hand side can be written as
 \[
 {1\over t^n} \sum_{\vector v \in \ZZ^n} \chi_{tR} (\vector v)

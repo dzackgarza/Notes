@@ -858,7 +858,7 @@ If \( K \) is a quadratic field, then
 Let \( K \) be a quadratic field. Then \( K \) is norm-Euclidean if and only if for all \( \beta\in K \) there is a \( \gamma\in {\mathbb{Z}}_K \) such that \( {\left\lvert { N(\beta- \gamma) } \right\rvert} < 1 \). In other words, \( K \) is norm-Euclidean if and only if every element can be approximated by an element in \( {\mathbb{Z}}_K \).
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of proposition"}
 \( \impliedby \): Let \( a,b \in {\mathbb{Z}}_k \) with \( b\neq 0 \). Define \( \beta\coloneqq a/b \in K \), then by assumption choose \( \gamma \) such that \( {\left\lvert {N \qty{ {a\over b} - \gamma} } \right\rvert}< 1 \). Multiplying both sides by \( N(b) \) and using the fact that \( N({\,\cdot\,}), {\left\lvert {{\,\cdot\,}} \right\rvert} \) are multiplicative, we have
 \[
 {\left\lvert {N(a - b \gamma)} \right\rvert} < {\left\lvert {N(b)} \right\rvert} 
@@ -1005,11 +1005,11 @@ Continuing this way, every point with rational coordinates can be covered by som
 Note that this doesn't work for arbitrary \( d \), since the distance between the horizontal lines grows with \( d \). It's not hard to work out the exact list where everything *is* covered:
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="When quadratic fields are norm-Euclidean"}
 \( K \) is norm-Euclidean if and only if \( d\in \left\{{-1,-2,-3,-7,-11}\right\} \).
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="When rings of integers are PIDs/UFDs"}
 For these \( d \), \( {\mathbb{Z}}_K \) is a PID and thus a UFD.
 :::
 
@@ -1029,7 +1029,7 @@ If \( {\mathbb{Z}}_K \) were never a PID in these cases, we could immediately co
 We'll prove this theorem! First we need a few lemmas.
 :::
 
-::: {.lemma title="?"}
+::: {.lemma title="Most imaginary quadratic fields have only two units"}
 Let \( K \) be an imaginary quadratic field, then \( U({\mathbb{Z}}_K) = \left\{{\pm 1 }\right\} \) except if \( d=-1, -3 \).
 :::
 
@@ -1055,7 +1055,7 @@ U\qty{{\mathbb{Z}}\left[ {1 + \sqrt{-3} \over 2 } \right]} = \left\{{\pm 1, {\pm
 yielding 6 units. Note that in the first case, these are exactly the 4th roots of unity, and in the second case these are the sixth roots. This is a general phenomenon that will appear again!
 :::
 
-::: {.lemma title="?"}
+::: {.lemma title="Norm of generator of principal ideal equals size of quotient"}
 Let \( K \) be any quadratic field and \( \alpha\in {\mathbb{Z}}_K \). Then \( \# {\mathbb{Z}}_k / \left\langle{ \alpha }\right\rangle = {\left\lvert {N( \alpha )} \right\rvert} \).
 :::
 
@@ -2491,7 +2491,7 @@ tR \coloneqq\left\{{ t\mathbf{x} {~\mathrel{\Big|}~}\mathbf{x} \in R }\right\}
 .\]
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="The number of lattice points in a region is asymptotically the volume"}
 Let \( R \) be a region in \( {\mathbb{R}}^n \) which is *Riemann measurable*.[^10] Then the number of lattice points satisfies
 \[
 {1\over t^n} \sum_{\mathbf{v} \in {\mathbb{Z}}^n} \chi_{tR} (\mathbf{v})
@@ -2499,7 +2499,7 @@ Let \( R \) be a region in \( {\mathbb{R}}^n \) which is *Riemann measurable*.[^
 .\]
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of theorem"}
 Notice that the left-hand side can be written as
 \[
 {1\over t^n} \sum_{\mathbf{v} \in {\mathbb{Z}}^n} \chi_{tR} (\mathbf{v})
