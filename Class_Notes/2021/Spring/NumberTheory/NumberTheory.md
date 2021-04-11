@@ -580,8 +580,11 @@
 - $K(\alpha)$
 - $\ZZ_K \da \bar{\ZZ} \intersect K$, the algebraic integers in $K$.
 - $\ff(K)$
+- $\Ab, \modsleft{\ZZ}$: the category of abelian groups.
 
 # Diophantine Equations (Lec. 1, Thursday, January 14)
+
+## Intro/Logistics
 
 See website for notes on books, intro to class.
 
@@ -712,6 +715,8 @@ y = \sqrt{-2} = (\pm 1 + \sqrt{-2} )^3 = \pm 5 + \sqrt{-2}
 - If $b = -1$, then \( 1 = -(3a^2 - 1) \) which forces $1=3a^2 \in \ZZ$, so there are no solutions.
 
 :::
+
+## Failure of Unique Factorization
 
 :::{.example title="where unique factorization fails"}
 Consider $y^2 = x^3 - 26$.
@@ -1355,7 +1360,7 @@ Surprisingly, the it's not always true that $\ZZ_K = \ZZ[\ell]$ for $\ell$ a sin
 
 # Failure of Unique Factorization (Lec. 4, Wednesday, January 27)
 
-## An Example
+## Revisiting a Counterexample to Unique Factorization
 
 :::{.remark}
 Today roughly corresponds to chapter 4: "Paradise Lost"!
@@ -1638,7 +1643,6 @@ We'll see later that this process allows you to recover unique factorization in 
 # Euclidean Quadratic Fields (Lec. 5, Thursday, January 28)
 
 ## Setup
-
 
 :::{.remark}
 Today: roughly corresponds to Chapter 5.
@@ -2005,7 +2009,6 @@ There has been some progress, a result along the lines of there being at most tw
 
 # Ideal Theory and Quadratic Fields (Lec. 6, Tuesday, February 02)
 
-
 ## Prime Factorization in $\Id(\ZZ_K)$
 
 :::{.remark}
@@ -2249,6 +2252,8 @@ Many other facts fall out of these theorem -- in fact, there are nice results as
 
 
 # Fundamental Theorem of Ideal Theory (Lec. 7, Thursday, February 04)
+
+## Norms: Multiplicativity and Computations
 
 :::{.remark}
 Today: roughly chapter 6.
@@ -2535,6 +2540,8 @@ Thus the major question will be: given $p$, how does \( \gens{ p }  \) factor in
 
 # Prime Ideals of $\ZZ_K$ (Lec. 8, Tuesday, February 09)
 
+## Dedekind-Kummer Mirroring
+
 :::{.remark}
 Today: chapter 7.
 Let $K$ be a quadratic number field.
@@ -2722,7 +2729,7 @@ This is a contradiction since $P_1$ is prime and thus can't be the unit ideal, s
 Can we be more explicit about how $\min_\tau$ factors?
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Characterization of inert/split/ramified primes"}
 Let $p$ be an odd prime, then 
 
 - $p$ is inert $\iff d$ is not a square $\mod p$,
@@ -2731,7 +2738,7 @@ Let $p$ be an odd prime, then
 
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Inert/Split/Ramified primes for quadratic fields"}
 \envlist
 
 - $d \equiv 5 \mod 8 \implies$ 2 is inert.
@@ -2814,11 +2821,11 @@ How we'll do this: we'll look at the map
 .\]and consider the image $\log( U( \ZZ_K)^+)$, which will be an infinite cyclic subgroup of $\GG_a(\RR)$.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="The log subgroup is discrete"}
 The subgroup \( \log( U (\ZZ_K)^+ ) \) is discrete, i.e. it has finite intersection with \( [-X, X] \subseteq \RR \) for every $X>0$.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 It's enough to show finite intersection with $[0, X]$ for all $X>0$.
 Why? 
 Any subgroup $H\leq \GG_a(\RR)$ is symmetric about 0, i.e. $a\in H \iff -a\in H$, and so having finite intersection with the positive interval implies finite intersection with both.
@@ -2886,6 +2893,8 @@ So we just need to show that there are units other than \( \pm 1 \).
 
 # Units in $\ZZ_K$ (Lec. 9, Monday, February 15)
 
+## Review
+
 :::{.remark}
 Today: chapter 8.
 We'll continue with the statements from last time:
@@ -2921,7 +2930,7 @@ We proved that this was a discrete subgroup.
 If this were just the zero element, the only possible units would be $\pm 1$, so it suffices to find a unit \( \epsilon \in U(\ZZ_K) \) with \( \epsilon>0 \) and \( \epsilon\neq 1 \).
 :::
 
-## Aside on Diophantine approximation
+## An Aside: Diophantine approximation
 
 :::{.remark}
 Let \( \alpha\in \RR \) and let \( Q \in \ZZ^+ \).
@@ -3064,7 +3073,7 @@ We also know that $u, v \geq 1$, using that $\ZZ_K = \ZZ[\sqrt{2} ]$.
 Luckily enough, $1 + \sqrt{2}$ is a unit, and so $\eps_0 = 1 + \sqrt{2}$.
 :::
 
-## Class Groups
+## Class Groups and the Class Number
 
 :::{.remark}
 This is now chapter 9.
@@ -3101,7 +3110,6 @@ This is an abelian group, wouldn't it be nice if it were finite?
 This is one of the big theorems of number theory: $\Cl(\ZZ_K)$ is finite.
 We can thus define the following:
 :::
-
 
 :::{.definition title="Class Number"}
 The **class number** of $K$ is defined as:
@@ -3354,6 +3362,7 @@ See the book for a general theorem about equations $y^2 + d = x^3$.
 Ideal theory gives us a way to study Diophantine equations.
 :::
 
+
 ## The Class Group as a Measure of Non-unique Factorization
 
 :::{.remark}
@@ -3482,6 +3491,7 @@ The proof is similar to how Dirichlet proved the infinitude of primes in arithme
 What about $h_K \geq 2$? 
 We'll introduce a way of measuring how bad unique factorization fails in a ring, the notion of *elasticity*.
 :::
+
 
 ## Elasticity
 
@@ -3675,6 +3685,8 @@ Given this theorem, we are done:
 in our situation, all such $[P]$ are trivial in the class group since they are principal, which makes $\Cl(\ZZ_K) = 1$ and every ideal is principal.
 :::
 
+## Proof of Rabinowitz's Theorem
+
 :::{.remark}
 It just remains to prove the above theorem.
 We'll use the following:
@@ -3683,7 +3695,6 @@ We'll use the following:
 :::{.proposition title="Almost Euclidean Domains"}
 Take the same assumptions on $d$ as above.
 Then for each $\theta \in K = \QQ( \sqrt{d} )$, there is a positive integer $t \leq \sqrt{\abs{d}\over 3 }$ and a $\xi \in \ZZ_K$ with norm \( N(t\theta - \xi) < 1 \).
-
 :::
 
 :::{.remark}
@@ -3795,7 +3806,12 @@ What about for 2?
 This also only happens finitely often.
 In fact, for *any* fixed $h$, there are only finitely many imaginary quadratic fields with class number $h$.
 This follows from the fact that $\Cl(\QQ( \sqrt{d} )) \approx d^{1/2}$, which increases as $d$ does.
-It's still hard to determine for a given $h$ which values of $d$ appear, partially because the last statement is *ineffective* in the sense that there aren't constants to put into the asymptotic statement.
+It's still hard to determine for a given $h$ which values of $d$ appear, partially because the last statement is *ineffective*[^updated_effective] in the sense that there aren't constants to put into the asymptotic statement.
+
+[^updated_effective]: 
+Note that this may not be true as of 2020!
+See Griffin, M., & Ono, K. (2020). Elliptic curves and lower bounds for class numbers. Journal of Number Theory, 214, 1-12.
+
 :::
 
 :::{.remark}
@@ -3949,7 +3965,7 @@ Basic heuristic from last time: counting the lattice points in a region $R$ shou
 We turned this into a theorem for certain regions:
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Lattice points with volume after scaling"}
 Let $R \subseteq \RR^n$ be a bounded region with a well-defined with respect to the Riemann integral.
 Letting $L_{R}$ be the number of lattice points in $R$, we have
 \[
@@ -3961,7 +3977,7 @@ Letting $L_{R}$ be the number of lattice points in $R$, we have
 Most of today: Minkowski's theorem, which will guarantee a lattice point under some conditions.
 :::
 
-:::{.theorem title="Minkowski (Version 1)"}
+:::{.theorem title="Minkowski, Version 1"}
 Let $R \subseteq \RR^n$ be a bounded region that is
 
 1. Convex, so any line segment connecting two points in $R$ is entirely contained within $R$, and 
@@ -3976,12 +3992,15 @@ Any circle/ball or ellipse will be an example.
 Note that $2^n$ is sharp, i.e. this theorem does not hold for a smaller constant: take the square $(-1, 1) \cross (-1, 1) \subseteq \RR^2$, which has volume 4 but only contains the origin as a lattice point.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of Minkowski Version 1"}
 Note that any such region already contains $\vector 0$, since containing $\vector x$ and $-\vector x$ plus convexity implies containing the line between them, which passes through $\vector 0$.
 By assumption $\vol(R) > 2^n$, and hence $(1/t^n)L_{tR} > 2^n$ for $t$ large enough.
 So set $t=m$ for some $m>> 1\in \ZZ^{\geq 0}$, this yields $L_{mR} > (2m)^n$.
 Consider $\ZZ^n$ and taking all coordinates $\mod 2m$.
 This yields $(2m)^n$ equivalence classes of points, so by the pigeonhole principle there exist $\vector v_1 \neq \vector v_2 \in mR$ such that $(\vector v_1 - \vector v_2)/2m \in \ZZ^n$, and the claim is that this is the lattice point we want.
+
+\
+
 Note that this is nonzero, why is it in the region $R$?
 By definition, $(1/m)\vector v_1 \in R$ and $(-1/m)\vector v_2 \in R$ using the symmetric assumption.
 The midpoint between these is precisely the previous point, and this is in $R$ by convexity.
@@ -4029,7 +4048,11 @@ Here's a non-example:
 
 :::{.remark}
 It may not be obvious that a lattice has a uniquely determined number of generating elements.
-This turns out to be true: if \( \Lambda = \sum_{i=1}^d  \ZZ \vector v_i \) with \( \ts{ \vector{v}_i }_{i=1}^d \) linearly independent over $\RR$, then \( \Lambda\tensor_\ZZ \RR \cong \sum_{i=1}^d \RR \vector v_i \cong \RR^d \), which is now an $\RR\dash$vector vector space of real dimension $d$.
+This turns out to be true: if \( \Lambda = \sum_{i=1}^d  \ZZ \vector v_i \) with \( \ts{ \vector{v}_i }_{i=1}^d \) linearly independent over $\RR$, then 
+\[
+\Lambda\tensor_\ZZ \RR \cong \sum_{i=1}^d \RR \vector v_i \cong \RR^d 
+,\] 
+which is now an $\RR\dash$vector vector space of real dimension $d$.
 Noting that $\dim_\RR(\Lambda\tensor_\ZZ \RR)$ doesn't depend on the choice of basis, any different choice of generating set for \( \Lambda \) must have the same number of generators.
 :::
 
@@ -4046,7 +4069,7 @@ We define the **fundamental parallelepiped** as the set
 Note that this depends on the choice of generating set.
 :::
 
-:::{.example title="?"}
+:::{.example title="of a fundamental parallelepiped"}
 For $\vector v_1 = \tv{1, 1}^t$ and $\vector v_2 = \tv{1, 3}$, we get the parallelogram shown in the earlier figure.
 Note that \( \Lambda \) is also generated by \( \vector v_1 = \ts{1, 1}, \vector w_2 = \tv{0, 2} \), but this generates a different parallelepiped:
 
@@ -4070,7 +4093,7 @@ Note that \( \Lambda \) is also generated by \( \vector v_1 = \ts{1, 1}, \vector
 
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="The volume of the fundamental parallelotope is a lattice invariant"}
 In general, one gets a parallelotope whose volume is an invariant of the lattice itself.
 :::
 
@@ -4129,7 +4152,7 @@ Taking \( \Lambda\da \ZZ^n \) recovers the first version.
 Idea of proof: any full lattice is the image of the standard lattice under some linear transformation.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of Minkowski Version 2"}
 Let $\vector v_1, \cdots, \vector v_n$ be $n$ generators for \( \Lambda \), then define a linear transformation
 \[
 T: \RR^n &\to \RR^n \\
@@ -4154,7 +4177,7 @@ Now applying the original Minkowski theorem we get a nonzero point
 Every positive integer is a sum of 4 squares of integers.
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Finding sums of squares in $\ZZ/m$"}
 Let $m \in \ZZ^{>0}$  be squarefree, then there are $A, B \in \ZZ$ such that
 \[
 A^2 + B^2 + 1 \equiv 0 \mod m
@@ -4162,7 +4185,7 @@ A^2 + B^2 + 1 \equiv 0 \mod m
 i.e. $-1$ is always the sum of two squares in the ring $\ZZ/m$.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of lemma"}
 We're trying to solve an equation $\mod m$, and by the CRT it suffices to solve it for every prime power dividing $m$, and since $m$ is squarefree, all prime powers occur with exponent 1.
 So it suffices to consider $m=p$ a prime.
 We can further assume $p$ is odd, since if $p=2$ we can take $A=1, B=2$.
@@ -4227,14 +4250,19 @@ The middle term is then an integer that is a multiple of $m$, forcing it to be e
 :::{.remark}
 We made the assumption that $m$ was squarefree, but we can write any $m\in \ZZ^{>0}$ as $m = k^2 m'$ where $m'$ is squarefree.
 Then writing $m' = x^2 + y^2 + z^2 + w^2$, we have 
-\[ m = (kx)^2 + (ky)^2 + (kz)^2 + (kw)^2 \].
+\[ 
+m = (kx)^2 + (ky)^2 + (kz)^2 + (kw)^2 
+.\]
 There are other applications of Minkowski's theorem that tell you when certain types of numbers are represented by special quadratic forms (such as the above sum of squares).
 See Pete Clark's papers!
 :::
 
-# Ch. 13: Starting Over (Thursday, March 04)
+# Starting Over with General Number Fields (Lec. 13, Thursday, March 04)
+
+## Recasting Old Definitions
 
 :::{.remark}
+This corresponds to chapter 13, "Starting Over".
 Idea: we've phrased everything so far for quadratic fields, now we want to do everything for general number fields.
 The basic objects and tools: norm and trace.
 If $K/\QQ$ is a number field that's Galois, we define \( N \alpha \da \prod_{ \sigma \in G} \sigma( \alpha) \) and \( \Tr \alpha \da \sum_{ \sigma\in G } \sigma( \alpha) \).
@@ -4278,12 +4306,13 @@ By definition, \( \varphi_{ \alpha}(x) \) is a product over embeddings \( \sigma
 \[
 \varphi_{ \alpha}(x) 
 &= \prod_{ \sigma: K\embeds \CC} (x - \sigma( \alpha) ) \\
-&= \prod_{ \tau F[ \alpha] \embeds \CC} \prod_{ \sigma, \ro{ \sigma}{ F[ \alpha ] } = \tau } (x - \sigma( \alpha) ) \\
+&= \prod_{ \tau: F[ \alpha] \embeds \CC} \,\,\, \prod_{ \sigma \text{ s.t. } \ro{ \sigma}{ F[ \alpha ] } = \tau } (x - \sigma( \alpha) ) \\
 &= \prod_{ \tau: F[ \alpha ] \embeds \CC } (x - \tau( \alpha ) )^{n(\tau)} \\
 &= \qty{ \prod_{ \tau: F[ \alpha] \embeds \CC} (x - \tau( \alpha ) ) }^{[K: F(\alpha)]} \\
 &= \min_ \alpha(x) ^{[ K : F( \alpha ) ] }
 .\]
 where 
+
 - We've first just reorganized the product by grouping, 
 - Then we've used that all of the terms in the inner product must have the same value for \( \sigma( \alpha) \) since \( \alpha\in F[ \alpha] \) and this makes \( \sigma( \alpha) = \tau( \alpha) \),
 - We note that the exponent should be the number of terms in the inner product, i.e. the number of \( \sigma \) extending \( \tau \), i.e. \( n(\tau) = [K: F[ \alpha] ] \) since \( r = [F[ \alpha] : \QQ] \) and \( n = [K: \QQ ] \),
@@ -4314,18 +4343,16 @@ Write
 \[
 \varphi_{ \alpha} (x) = x^n + \sum_{i=1}^n a_i x^i \in \QQ[x]
 ,\]
-we then define the **norm** and **trace**[^norm_and_trace]
-
-[^norm_and_trace]: 
-External note: these come from the trace and determinant of the map \( y \mapsto y\cdot x \) on $L/K$, viewed as a $K\dash$linear map on $L$.
-
-
-respectively as
+we then define the **norm** and **trace**[^norm_and_trace] respectively as
 \[
 N( \alpha) &\da (-1)^n a_0 \in \QQ\\
 \Tr( \alpha) &\da -a_{n-1} \in \QQ
 .\]
 Note that if \( \alpha \in \ZZ_K \) then these are both in fact in $\ZZ$.
+
+[^norm_and_trace]: 
+These come from the trace and determinant of the map \( y \mapsto y\cdot x \) on $L/K$, viewed as a $K\dash$linear map on $L$.
+
 :::
 
 :::{.remark}
@@ -4387,6 +4414,9 @@ Let $w_1, \cdots, w_n\in K$, then
 \iff
 \Delta(w_1, \cdots, w_n) \neq 0
 .\]
+:::
+
+:::{.remark}
 So this *discriminates* between bases and non-bases.
 :::
 
@@ -4395,6 +4425,8 @@ $\impliedby$:
 Suppose $\Delta(w_1, \cdots, w_n) \neq 0$.
 Note that the $n$ elements $w_1, \cdots, w_n$ are $n$ elements in an $n\dash$dimensional $\QQ\dash$vector space, so the only way they could fail to be a basis would be if there were a linear dependence.
 But then considering the matrix $D$ above, a $\QQ\dash$linear dependence between the $w_i$, this translates to a corresponding dependence between the columns of $D$, which would yield the contradiction $\det(D)^2 = 0$.
+
+\
 
 $\implies$:
 This is the harder part.
@@ -4458,7 +4490,7 @@ Now write
 \[
 \beta \da \alpha - \integerpart{c_1} w_1 \in \ZZ_K
 ,\]
-where \( \integerpart[c_1] \) denotes taking the integer part.
+where \( \integerpart{\wait} \) denotes taking the integer part.
 We can write \( \beta = \fractionalpart{c_1}w_1 + c_2 w_2 + \cdots + c_n w_n \).
 Observe that the tuple 
 \[
@@ -4527,12 +4559,18 @@ using that invertible matrices have unit determinants, which in $\ZZ$ are just \
 Why do we care?
 The discriminant measures the complexity of the number field and carries arithmetic information:
 
-- Hermite's theorem: for every $X>0$, there are only finitely many number fields such that $\abs{ \discriminant_K } \leq X$.
-  Interesting question: how many are there as a function of $X$?
-  This is studied today by fixing a degree $n$, and we have good answers for $n=2,3,4,5$, but it's still open to get an asymptotic formula for $n>5$.
-  Note that our new faculty hire this year is an expert on these kinds of questions!
+:::{.theorem title="Hermite"}
+For every $X>0$, there are only finitely many number fields such that $\abs{ \discriminant_K } \leq X$.
+:::
 
-- A theorem of Dedekind: taking a prime $p\in \ZZ$, we have
+:::{.remark}
+Interesting question: how many are there as a function of $X$?
+This is studied today by fixing a degree $n$, and we have good answers for $n=2,3,4,5$, but it's still open to get an asymptotic formula for $n>5$.
+Note that our new faculty hire this year is an expert on these kinds of questions!
+:::
+
+:::{.theorem title="Dedekind"}
+Taking a prime $p\in \ZZ$, we have
 \[
 p \text{ ramifies in } \ZZ_K \iff p \divides \discriminant_K
 ,\]
@@ -4540,12 +4578,11 @@ where **ramification** occurs if when \( \gens{ p }\normal \ZZ_K  \) factors int
 In particular, \( \discriminant(\wait) < \infty \), and so only finitely many such primes can occur.
 :::
 
+:::
 
-# Saturday, March 13
+# Discriminants and Norms (Lec. 14, Saturday, March 13)
 
-## Discriminants
-
-:::{.example title="?"}
+:::{.example title="of a discriminant"}
 Suppose \( K = \QQ( \sqrt{d} ) \) where $d$ is squarefree.
 What is its discriminant?
 We need a $\ZZ\dash$basis of $\ZZ_K$, for $d=2,3 \mod 4$ we can take \( (1, \sqrt{d} ) \).
@@ -4596,7 +4633,7 @@ Note that $\Delta_\QQ = 1$ if you trace through the computation.
 
 ## Norms of Ideals
 
-:::{.definition title="?"}
+:::{.definition title="Norm of an ideal"}
 Let $I \normal \ZZ_K$ be a nonzero ideal, then define \( N(I) \da \# \ZZ_K/I \).
 :::
 
@@ -4605,7 +4642,7 @@ Note that this was finite in the quadratic field case since nonzero ideals had a
 For general number fields, the ideals can be more complicated, so we'll need another way to show finiteness.
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Elements divide their norms"}
 Let \( \alpha\in \ZZ_K \), then \( \alpha\divides N( \alpha) \) in \( \ZZ_K \).
 :::
 
@@ -4613,8 +4650,8 @@ Let \( \alpha\in \ZZ_K \), then \( \alpha\divides N( \alpha) \) in \( \ZZ_K \).
 Write down the obvious thing and see that it works!
 \[
 N \alpha 
-\da \prod_{ \sigma: K \embeds \CC} \sigma( \alpha) \\
-= \alpha \prod_{ \substack{ \sigma: K \embeds \CC \\ \sigma\neq \one_K } } \sigma( \alpha) \\
+&\da \prod_{ \sigma: K \embeds \CC} \sigma( \alpha) \\
+&= \alpha \prod_{ \substack{ \sigma: K \embeds \CC \\ \sigma\neq \one_K } } \sigma( \alpha) \\
 &\da \alpha C 
 ,\]
 where we've used that one embedding is the identity and factored it out.
@@ -4626,14 +4663,14 @@ Since \( N \alpha \) is a nonzero rational integer and \( \alpha\in K \), and si
 But then \( C \in \bar{\ZZ} \intersect K = \ZZ_K \). 
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Nonzero ideals have finite norms in rings of integers"}
 For $I\normal \ZZ_K$ nonzero,
 \[
 N(I) < \infty 
 .\]
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 We start with principal ideals.
 Let $m\in \ZZ^+$, then \( \ZZ_K \gens{ m } \da \ZZ_K /m \ZZ_K \cong_{\zmod} \ZZ^n / m\ZZ^n \cong (\ZZ/m\ZZ)^n  \) where we've forgotten the ring structure and are just considering it as a \(\ZZ\dash\)module .
 But this has size $m^n < \infty$.
@@ -4657,7 +4694,7 @@ N( IJ) + N(I) N(J)
 .\]
 :::
 
-:::{.proof title="?"}
+:::{.proof title="that the norm is multiplicative"}
 Deferred!
 :::
 
@@ -4669,7 +4706,9 @@ N( \gens{ \alpha }) = \abs{ N ( \alpha ) }
 i.e. the norm of a principal ideal is the absolute value of the norm of the element-wise ideal.
 :::
 
+:::{.remark}
 This will follow from the following proposition:
+:::
 
 :::{.proposition title="Index = Determinant"}
 Let $M \in \zmod$ be free of rank $n$ and let \( H \leq M \).
@@ -4789,7 +4828,7 @@ Note that this is *not* necessary!
 We saw that for $d = 2,3 \mod 4$ that $\discriminant_K = 4d$, which is not squarefree.
 :::
 
-:::{.example title="?"}
+:::{.example title="of finding bases"}
 Let $K = \QQ( \theta)$ where \( \theta \) is a root of 
 \[
 f(x) = x^5 - 3x^2 + 1
@@ -4820,7 +4859,7 @@ So this yields a $\ZZ\dash$basis for $\ZZ_K$, i.e. $\ZZ_K = \ZZ[ \theta]$.
 Note that \( \discriminant_K = -23119 \) as well, since it's the discriminant of *any* integral basis.
 :::
 
-:::{.example title="?"}
+:::{.example title="of finding bases"}
 Let $K = \QQ( \alpha)$ where \( \alpha \) is a root of 
 \[
 f(x) = x^3 + x^2 - 3x + 8
@@ -4876,9 +4915,11 @@ Next time: integral bases for cyclotomic fields.
 
 
 
-# Saturday, March 13
+# Cyclotomic Fields (Lec. 15, Saturday, March 13)
 
-## Ch. 14 Continued: Cyclotomic Fields 
+:::{.remark}
+This is chapter 14 continued.
+:::
 
 :::{.definition title="Cyclotomic Fields"}
 A **cyclotomic field** is a number field $\QQ( \zeta_m)$ where \( \zeta_m \da e^{2\pi i / m} \), a primitive $m$th root of 1.
@@ -4901,7 +4942,7 @@ The degree of any such $K/\QQ$ is $\phi(m)$, and here $\phi(p) = p-1$.
 Also recall Eisenstein's criterion: if $p$ divides all of the coefficients of a polynomial $f(x) \da \sum a_i x^i$ but $p^2\notdivides a_0$, then $f$ is irreducible over $\QQ$.
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="The minimal polynomials of roots of unity"}
 The minimal polynomial of $\zeta_p$ over $\QQ$ is 
 \[
 \Phi_p(x) \da x^{p-1} + x^{p-2} + \cdots + x + 1
@@ -4909,7 +4950,7 @@ The minimal polynomial of $\zeta_p$ over $\QQ$ is
 and so $[\QQ (\zeta_p) : \QQ] = p-1$.
 :::
 
-:::{.proof title="sketch"}
+:::{.proof title="of lemma, a sketch"}
 Note that $\zeta_p$ is a root of $\Phi_p$, since
 \[
 \Phi_p(x) = {x^p-1 \over x - 1}
@@ -4918,7 +4959,7 @@ and $\zeta_p$ is a root of the numerator of the right-hand side and not of the d
 This is irreducible by Eisenstein's criterion at $p$, using $x\mapsto x+1$.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Eisenstein primes don't divide the extension degree"}
 Let \( \alpha\in \bar{\ZZ} \) be an algebraic integer such that
 \[
 \min_ \alpha (x) = x^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0 && \in \ZZ[x]
@@ -4931,7 +4972,7 @@ p\notdivides [\ZZ_K : \ZZ[ \alpha] ]
 .\]
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 We first observe that \( \alpha^n \) is a multiple of $p$ in $\ZZ_K$.
 To see this, plug \( \alpha \) into the minimal polynomial to get $0 = \alpha^n + \cdots$ and solve for \( \alpha^n \) to obtain
 \[
@@ -5000,7 +5041,6 @@ Some consequences:
 
 :::
 
-
 :::{.proof title="That $\ZZ_K = \ZZ\adjoin{\zeta_p}$ for $K = \QQ(\zeta_p)$."}
 To save space, we'll write $\zeta \da \zeta_p$.
 We want to show \( 1, \zeta, \cdots, \zeta^{p-2} \) forms an integral basis, from last time we have
@@ -5024,12 +5064,13 @@ So this is zero mod $q$, and thus $\discriminant( x^{p-1} + \cdots + x + 1 \mod 
 The discriminant was a product of roots, so it can only be zero if two roots coincide, so there is a multiple root of $x^{p-1} + \cdots + x + 1 \mod q$ and thus also of $x^p - 1$.
 So $x^p-1$ and its derivative $px^{p-1}$ have a root in common, and (check!) this can only happen if $q=p$.
 
+\
+
 So $[\ZZ_K : \ZZ[\zeta] ] = p^\ell$ for some $\ell$.
 Using that fact that $\ZZ[ \zeta] \cong \ZZ[ \zeta - 1]$, we have \( [ \ZZ_K : \ZZ[ \zeta] ] = [ \ZZ_K: \ZZ[\zeta - 1] ] \).
 But by the previous lemma, we know that the minimal polynomial of $\zeta_p - 1$ is $\Phi(x+1)$, which is $p\dash$Eisenstein.
 So by that lemma, $p\notdivides [\ZZ_K: \ZZ[ \zeta - 1]]$, which forces $\ell = 0$ and $\ZZ_K = \ZZ[ \zeta_p ]$.
 :::
-
 
 :::{.proof title="Sketch of the same proof for $K = \QQ(\zeta_m)$"}
 
@@ -5057,8 +5098,7 @@ The hard part is the lemma in (3).
 Also, questions about discriminants tend to come up during oral exams that include algebraic number theory.
 :::
 
-## Ch. 15: Ideal theory in general number rings
-
+## Ideal Theory in General Number Rings (Ch. 15)
 
 :::{.remark}
 Here "number rings" means $\ZZ_K$ for $K$ a general number field.
@@ -5073,14 +5113,12 @@ The approach we'll take here is somewhat idiosyncratic -- the standard treatment
 This approach is more classic (circa 19th century, very concrete), and we'll skip over less important details (e.g. those that are unlikely to show up on oral exams).
 :::
 
-
-:::{.definition title="Class Group"}
+:::{.definition title="Class Group of a Number Ring"}
 \[
 \Cl(\ZZ_K) \da \Id(\ZZ_K)/ \sim
 ,\]
 where $\sim$ denotes dilation equivalence.
 :::
-
 
 :::{.remark}
 Our strategy:
@@ -5091,8 +5129,7 @@ Our strategy:
 
 :::
 
-
-:::{.proposition title="?"}
+:::{.proposition title="Dilations of elements are always close to integers"}
 There is a constant $T = T(K)$ that only depends on $K$ such that for every \( \theta\in K \), there is a positive integer $t \leq T$ and a $\xi \in \ZZ_K$ such that
 \[
 \abs{N(t \theta - \xi ) } < 1
@@ -5104,12 +5141,10 @@ I.e. anything in the field can be multiplied by a bounded integer to make it clo
 This proposition came up for imaginary quadratic fields in the Rabinowitz criterion, crucial for proving that the class group was generated by prime ideals which lie above small primes.
 :::
 
-
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 Omitted! See book, this proof wouldn't show up on an oral exam.
 This uses Dirichlet's approximation criterion again, although in a different way.
 :::
-
 
 :::{.theorem title="The class group is finite"}
 \[
@@ -5117,17 +5152,19 @@ This uses Dirichlet's approximation criterion again, although in a different way
 .\]
 :::
 
-
-:::{.proof title="?"}
+:::{.proof title="that the class group is finite"}
 Very similar to how it goes for quadratic fields.
 As before, let $I \in \Id(\ZZ_K)$ be nonzero and $\beta \in I$ nonzero with $\abs{N \beta}$ minimal.
 
+\
 
 :::{.claim}
 Let $T$ be as in the proposition, then $T! I \subseteq \gens{ \beta }$. 
 :::
 
 This follows from exactly the same argument as before.
+
+\
 
 Now define \( J \da {T! \over \beta} I \subseteq \ZZ_K \), which is a dilation of $I$ and thus $J \normal \ZZ_K$ as well.
 By definition, $I\sim J$, i.e. $[I] = [J] \in \Id(\ZZ_K)$, and it's now enough to show that there are only finitely many possibilities for $J$, since then every class is equal to the class of one of finitely many such $J$.
@@ -5154,7 +5191,6 @@ This comes from the fact that $\ZZ_K \cong_{\Ab} \ZZ^n$, so as a \(\ZZ\dash\)mod
 In fact, we've already proved that $\ZZ_K / I$ for any nonzero ideal $I$ is finite.
 
 :::
-
 
 :::{.remark}
 We now want to establish the cancellation law in $\Id(\ZZ_K)$, then the principal multiple lemma, and then everything else will follow as in the quadratic case.
@@ -5183,9 +5219,9 @@ We now want to establish the cancellation law in $\Id(\ZZ_K)$, then the principa
 
 
 
-# Tuesday, March 30
+# Ideal Theory in Number Fields Continued (Lec. 16, Tuesday, March 30)
 
-## Chapter 15 (continued)
+## Setting up the Theory
 
 :::{.remark}
 We want to develop theorems of ideal theory for $\ZZ_K$ for $K$ a general number field, i.e. factorization into prime ideals and the finiteness of the class group.
@@ -5198,7 +5234,7 @@ The strategy:
 Last time, we proved the first one.
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="When ideals are left identities under multiplication"}
 Let $I, J \in \Id(\ZZ_K)$, then if $IJ = J$ then $I = \gens{ 1 }$. 
 :::
 
@@ -5208,7 +5244,7 @@ To prove this, we'll use that $\ZZ_K$ is Noetherian, i.e. every ideal is finitel
 In fact, $\ZZ_K \cong \ZZ^n$, so any ideal is free of rank $\leq n$ as a \(\ZZ\dash\)module, hence finitely generated as a \(\ZZ\dash\)module, hence finitely-generated as a $\ZZ_K\dash$module since one can use the same generators.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of lemma"}
 Let $J = \gens{ \beta_1, \cdots, \beta_n }$, then since $IJ = J$, for every $j$ we can write \( \beta_j = \sum_{i=1}^m A_{ij} \beta_i  \).
 This means that there is some matrix $A\in \Mat(m\times m, I)$ with entries $A_{ij} \in I$ such that
 \[
@@ -5224,7 +5260,7 @@ Now take the determinant mod $I$, which yields
 but this can only occur if $1\in I$, making \( \gens{ 1 }= I  \).
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="Right-cancellation when principal ideals are involved"}
 Let $I, J\normal \ZZ_K$, then if $IJ = \beta J$ with $\beta \in \ZZ_K \smz$, we have $I = \gens{ \beta }$. 
 :::
 
@@ -5237,7 +5273,7 @@ One can then bootstrap the previous lemma to get this, see the book.
 For all $I\in \Id(\ZZ_K)$ there is a $J \in \Id(\ZZ_K)$ such that $IJ$ is principal.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of principal multiple lemma"}
 Consider $[I], [I]^2, \cdots \in \Cl(\ZZ_K)$.
 By the pigeonhole principal, there is some $k, \ell$ such that $[I^k] = [I]^\ell$, so $I^k = \lambda I^\ell$ for some $\lambda \in K\units$.
 Note that any nonzero element of $K$ can be written as $k/n$ for $k\in K$ and $n\in \ZZ_K$.
@@ -5256,7 +5292,7 @@ But this is a power of $I$ that is principal, so we can take $J \da I^{\ell-k-1}
 Note that the logical order in which these theorems are proved is slightly reversed.
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="Class groups are finite and $\Id$ is a cancellative monoid"}
 \envlist
 
 a. $\Cl(\ZZ_K)$ is a group, and thus a finite abelian group.
@@ -5268,11 +5304,11 @@ To show unique factorization, we before showed factorization into irreducibles f
 
 :::
 
-:::{.lemma title="?"}
+:::{.lemma title="The monoid $\Id$ is atomic"}
 $\Id(\ZZ_K)$ is atomic, i.e. every element factors into irreducibles.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of lemma"}
 We'll proceed by induction on $N(I)$, using that $N(AB) \leq N(A)$ for any $A$ and so $I\divides J \implies N(I) < N(J)$.
 Before we used that $N(AB) = N(A) N(B)$, but we haven't proved that here yet.
 We also don't know that "to divide is to contain" here, but since $I\divides J$ and $I\neq J$, we do obtain $J \subsetneq I$.
@@ -5287,22 +5323,22 @@ This has nontrivial kernel since $I\sm J \neq \emptyset$, so \( \abs{\ZZ_K/J}> \
 Irreducibles in $\Id(\ZZ_K)$ are prime.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of lemma"}
 Same as before!
 Literally use the exact same words, we've set it up this way.
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="The monoid $\Id$ is a unique factorization monoid"}
 $\Id(\ZZ_K)$ is a UFM, or equivalently every nonzero ideal factors uniquely as a product of prime ideals.
 :::
 
 ## Modern Approach
 
-:::{.remark}
+:::{.question}
 What is the widest class of domains for which the previous theorem holds?
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Dedekind Domains"}
 Let $R$ be a domain that is not a field (since ideals in fields are uninteresting).
 Then $R$ is a **Dedekind domain** if and only if 
 
@@ -5328,15 +5364,15 @@ TFAE:
 3. (2) along with uniqueness.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of Noether's theorem"}
 Omitted, this is an exercise in commutative algebra.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Rings of integers are Dedekind domains"}
 For any number field $K$, $\ZZ_K$ is a Dedekind domain.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 We can check the definitions directly:
 
 a. This is a consequence of the integral basis theorem.
@@ -5357,7 +5393,7 @@ We proved that norms of ideals are finite, and $N(P)$ for $P$ principal is equal
 We haven't yet proved the following:
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="The norm is multiplicative"}
 \[
 N(IJ) = N(I) N(J) && \forall I, J \in \Id(\ZZ_K)
 .\]
@@ -5367,7 +5403,7 @@ N(IJ) = N(I) N(J) && \forall I, J \in \Id(\ZZ_K)
 If $I, J\in \Id(\ZZ_K)$, we have $\gcd(I, J) = I+J$, since this is the smallest ideal such that any $P\divides I, P\divides J$ must satisfy $P\divides \gcd(I, J)$.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="that the norm is multiplicative"}
 It's enough to show $N(IP) = N(I) N(P)$ for $P$ prime, since every $J$ factors into primes and we can apply this result recursively.
 Now
 \[
@@ -5377,7 +5413,6 @@ N(IP)
 &= N(I) [I: IP]
 ,\]
 so it suffices to show $N(P) = [I: IP]$.
-
 
 :::{.claim}
 This is true because $\ZZ_K \cong I/IP$ are isomorphic as $\ZZ\dash$modules. 
@@ -5391,16 +5426,19 @@ Define a map
 .\]
 This is well-defined since for any two elements which differ by a multiple of $P$, multiplying by $\beta \in I$ lands in $IP$.
 
-
 :::{.exercise title="?"}
 Check that this is a well-defined group morphism.
 :::
+
+\
 
 **Injectivity**:
 Suppose that \( \alpha\mod P \in \ker \psi \), so \( \alpha \beta\in IP \) and $IP \divides \gens{ \alpha } \gens{ \beta }$.
 Note that without the \( \alpha \) this would be false, so we're critically using that \( \beta \) is in $I$ but not $IP$: $IP\not\divides \gens{ \beta }$ since \( \beta \not\in IP \). 
 So $IP$ divides this product but not $\beta$ while $I$ *does* divide \( \beta \), this forces $P\divides m \gens{ \alpha }$.
 Then \( \alpha\in P \) and \( \alpha\mod P = 0 \), so $\ker \psi = 0$.
+
+\
 
 **Surjectivity:**
 We might want to write \( \Im(\psi) = \gens{ \beta } / IP  \), but this doesn't quite make sense since $IP$ may not be a subgroup.
@@ -5426,14 +5464,14 @@ In particular, if $K$ isn't Galois, the embedding can land outside of $K$ in $\C
 For $R \subseteq S$ and $I\normal R$, define $IS$ to be the smallest ideal of $S$ containing $I$ (i.e. take all intersections), or equivalently take all finite $S\dash$linear combinations of elements from $I$.
 :::
 
-:::{.exercise title="?"}
+:::{.exercise title="Arithmetic of ideals"}
 Check that 
 
 - $(IJ)S = (IS)(JS)$,
 - $(\alpha R)S = \alpha S$.
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Norm is generated by product of conjugates"}
 Let $I\in \Id(\ZZ_K)$ and let $L$ be the Galois closure of $K/\QQ$.
 For each \( \sigma: K\embeds \CC \), the image \( \sigma(I) \) is an ideal of $\ZZ_{\sigma(K)} \subseteq \ZZ_L$.
 Then 
@@ -5469,15 +5507,13 @@ So anything that's a multiple of $\sqrt{2}$ *and* an algebraic integer that's in
 So ideals are multiples of a single element, provided you allow that element to be outside of $\ZZ_K$ and in $\bar{\ZZ}$ instead.
 :::
 
-
-:::{.lemma title="?"}
+:::{.lemma title="Ideals become principal after extending"}
 Let $K$ be a number field and $I\in \Id(\ZZ_K)$.
 Then there is a finite extension $L/K$ in which $I\ZZ_L$ is principal.
 So any ideal can be made principal after passing to some finite extension.
 :::
 
-
-:::{.proof title="?"}
+:::{.proof title="of lemma"}
 Let $m \da \# \Cl(\ZZ_K)$.
 Then $I^m = \alpha\ZZ_K$ is principal since $m$ is the order of this group.
 Let \( \beta\da \sqrt[m]{\alpha} \in \CC \) and let $L \da K( \beta)$.
@@ -5498,36 +5534,5 @@ By unique factorization, they must be the same, so $I\ZZ_L = \beta \ZZ_L$.
 > To be continued.
 
 :::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

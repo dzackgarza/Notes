@@ -104,11 +104,17 @@ inaccuracies are almost certainly my own. } } \\
   the algebraic integers in \(K\).
 \item
   \(\operatorname{ff}(K)\)
+\item
+  \({\mathsf{Ab}}, \mathsf{{\mathbb{Z}}}{\hbox{-}}\mathsf{Mod}\): the
+  category of abelian groups.
 \end{itemize}
 
 \hypertarget{diophantine-equations-lec.-1-thursday-january-14}{%
 \section{Diophantine Equations (Lec. 1, Thursday, January
 14)}\label{diophantine-equations-lec.-1-thursday-january-14}}
+
+\hypertarget{intrologistics}{%
+\subsection{Intro/Logistics}\label{intrologistics}}
 
 See website for notes on books, intro to class.
 
@@ -300,6 +306,10 @@ i.e.~\(b\in \left\{{\pm 1}\right\}\). By cases:
 \end{itemize}
 
 \end{example}
+
+\hypertarget{failure-of-unique-factorization}{%
+\subsection{Failure of Unique
+Factorization}\label{failure-of-unique-factorization}}
 
 \begin{example}[where unique factorization fails]
 
@@ -1253,8 +1263,9 @@ it's not always true that \({\mathbb{Z}}_K = {\mathbb{Z}}[\ell]\) for
 \section{Failure of Unique Factorization (Lec. 4, Wednesday, January
 27)}\label{failure-of-unique-factorization-lec.-4-wednesday-january-27}}
 
-\hypertarget{an-example}{%
-\subsection{An Example}\label{an-example}}
+\hypertarget{revisiting-a-counterexample-to-unique-factorization}{%
+\subsection{Revisiting a Counterexample to Unique
+Factorization}\label{revisiting-a-counterexample-to-unique-factorization}}
 
 \begin{remark}
 
@@ -2554,6 +2565,10 @@ principal ideal.
 \section{Fundamental Theorem of Ideal Theory (Lec. 7, Thursday, February
 04)}\label{fundamental-theorem-of-ideal-theory-lec.-7-thursday-february-04}}
 
+\hypertarget{norms-multiplicativity-and-computations}{%
+\subsection{Norms: Multiplicativity and
+Computations}\label{norms-multiplicativity-and-computations}}
+
 \begin{remark}
 
 Today: roughly chapter 6. Goal: establish unique factorization of ideals
@@ -2973,6 +2988,9 @@ prime ideals in \({\mathbb{Z}}_K\)?
 Tuesday, February
 09)}{Prime Ideals of \{\textbackslash mathbb\{Z\}\}\_K (Lec. 8, Tuesday, February 09)}}\label{prime-ideals-of-mathbbz_k-lec.-8-tuesday-february-09}}
 
+\hypertarget{dedekind-kummer-mirroring}{%
+\subsection{Dedekind-Kummer Mirroring}\label{dedekind-kummer-mirroring}}
+
 \begin{remark}
 
 Today: chapter 7. Let \(K\) be a quadratic number field. Recall that if
@@ -3211,7 +3229,7 @@ Can we be more explicit about how \(\min_\tau\) factors?
 
 \end{question}
 
-\begin{proposition}[?]
+\begin{proposition}[Characterization of inert/split/ramified primes]
 
 Let \(p\) be an odd prime, then
 
@@ -3227,7 +3245,7 @@ Let \(p\) be an odd prime, then
 
 \end{proposition}
 
-\begin{proposition}[?]
+\begin{proposition}[Inert/Split/Ramified primes for quadratic fields]
 
 \envlist
 
@@ -3367,7 +3385,7 @@ infinite cyclic subgroup of \({\mathbb{G}}_a({\mathbb{R}})\).
 
 \end{remark}
 
-\begin{proposition}[?]
+\begin{proposition}[The log subgroup is discrete]
 
 The subgroup \(\log( U ({\mathbb{Z}}_K)^+ )\) is discrete, i.e.~it has
 finite intersection with \([-X, X] \subseteq {\mathbb{R}}\) for every
@@ -3375,7 +3393,7 @@ finite intersection with \([-X, X] \subseteq {\mathbb{R}}\) for every
 
 \end{proposition}
 
-\begin{proof}[?]
+\begin{proof}[of proposition]
 
 It's enough to show finite intersection with \([0, X]\) for all \(X>0\).
 Why? Any subgroup \(H\leq {\mathbb{G}}_a({\mathbb{R}})\) is symmetric
@@ -3450,6 +3468,9 @@ mean that the only positive unit is \(e^0 = 1\), and the only units are
 February
 15)}{Units in \{\textbackslash mathbb\{Z\}\}\_K (Lec. 9, Monday, February 15)}}\label{units-in-mathbbz_k-lec.-9-monday-february-15}}
 
+\hypertarget{review}{%
+\subsection{Review}\label{review}}
+
 \begin{remark}
 
 Today: chapter 8. We'll continue with the statements from last time:
@@ -3505,9 +3526,9 @@ would be \(\pm 1\), so it suffices to find a unit
 
 \end{remark}
 
-\hypertarget{aside-on-diophantine-approximation}{%
-\subsection{Aside on Diophantine
-approximation}\label{aside-on-diophantine-approximation}}
+\hypertarget{an-aside-diophantine-approximation}{%
+\subsection{An Aside: Diophantine
+approximation}\label{an-aside-diophantine-approximation}}
 
 \begin{remark}
 
@@ -3711,8 +3732,9 @@ also know that \(u, v \geq 1\), using that
 
 \end{example}
 
-\hypertarget{class-groups}{%
-\subsection{Class Groups}\label{class-groups}}
+\hypertarget{class-groups-and-the-class-number}{%
+\subsection{Class Groups and the Class
+Number}\label{class-groups-and-the-class-number}}
 
 \begin{remark}
 
@@ -4534,6 +4556,10 @@ trivial in the class group since they are principal, which makes
 
 \end{proof}
 
+\hypertarget{proof-of-rabinowitzs-theorem}{%
+\subsection{Proof of Rabinowitz's
+Theorem}\label{proof-of-rabinowitzs-theorem}}
+
 \begin{remark}
 
 It just remains to prove the above theorem. We'll use the following:
@@ -4711,8 +4737,10 @@ This follows from the fact that
 \(\operatorname{Cl}({\mathbb{Q}}( \sqrt{d} )) \approx d^{1/2}\), which
 increases as \(d\) does. It's still hard to determine for a given \(h\)
 which values of \(d\) appear, partially because the last statement is
-\emph{ineffective} in the sense that there aren't constants to put into
-the asymptotic statement.
+\emph{ineffective}\footnote{Note that this may not be true as of 2020!
+  See Griffin, M., \& Ono, K. (2020). Elliptic curves and lower bounds
+  for class numbers. Journal of Number Theory, 214, 1-12.} in the sense
+that there aren't constants to put into the asymptotic statement.
 
 \end{remark}
 
@@ -4907,7 +4935,7 @@ into a theorem for certain regions:
 
 \end{remark}
 
-\begin{theorem}[?]
+\begin{theorem}[Lattice points with volume after scaling]
 
 Let \(R \subseteq {\mathbb{R}}^n\) be a bounded region with a
 well-defined with respect to the Riemann integral. Letting \(L_{R}\) be
@@ -4925,7 +4953,7 @@ under some conditions.
 
 \end{remark}
 
-\begin{theorem}[Minkowski (Version 1)]
+\begin{theorem}[Minkowski, Version 1]
 
 Let \(R \subseteq {\mathbb{R}}^n\) be a bounded region that is
 
@@ -4953,7 +4981,7 @@ volume 4 but only contains the origin as a lattice point.
 
 \end{remark}
 
-\begin{proof}[?]
+\begin{proof}[of Minkowski Version 1]
 
 Note that any such region already contains \(\mathbf{0}\), since
 containing \(\mathbf{x}\) and \(-\mathbf{x}\) plus convexity implies
@@ -4966,8 +4994,11 @@ This yields \((2m)^n\) equivalence classes of points, so by the
 pigeonhole principle there exist
 \(\mathbf{v}_1 \neq \mathbf{v}_2 \in mR\) such that
 \((\mathbf{v}_1 - \mathbf{v}_2)/2m \in {\mathbb{Z}}^n\), and the claim
-is that this is the lattice point we want. Note that this is nonzero,
-why is it in the region \(R\)? By definition,
+is that this is the lattice point we want.
+
+\hfill\break
+
+Note that this is nonzero, why is it in the region \(R\)? By definition,
 \((1/m)\mathbf{v}_1 \in R\) and \((-1/m)\mathbf{v}_2 \in R\) using the
 symmetric assumption. The midpoint between these is precisely the
 previous point, and this is in \(R\) by convexity.
@@ -5048,7 +5079,9 @@ generating elements. This turns out to be true: if
 \(\Lambda = \sum_{i=1}^d {\mathbb{Z}}\mathbf{v}_i\) with
 \(\left\{{ \mathbf{v}_i }\right\}_{i=1}^d\) linearly independent over
 \({\mathbb{R}}\), then
-\(\Lambda\otimes_{\mathbb{Z}}{\mathbb{R}}\cong \sum_{i=1}^d {\mathbb{R}}\mathbf{v}_i \cong {\mathbb{R}}^d\),
+\begin{align*}
+\Lambda\otimes_{\mathbb{Z}}{\mathbb{R}}\cong \sum_{i=1}^d {\mathbb{R}}\mathbf{v}_i \cong {\mathbb{R}}^d 
+,\end{align*}
 which is now an \({\mathbb{R}}{\hbox{-}}\)vector vector space of real
 dimension \(d\). Noting that
 \(\dim_{\mathbb{R}}(\Lambda\otimes_{\mathbb{Z}}{\mathbb{R}})\) doesn't
@@ -5076,7 +5109,7 @@ Note that this depends on the choice of generating set.
 
 \end{definition}
 
-\begin{example}[?]
+\begin{example}[of a fundamental parallelepiped]
 
 For \(\mathbf{v}_1 = {\left[ {1, 1} \right]}^t\) and
 \(\mathbf{v}_2 = {\left[ {1, 3} \right]}\), we get the parallelogram
@@ -5109,7 +5142,7 @@ but this generates a different parallelepiped:
 
 \end{example}
 
-\begin{proposition}[?]
+\begin{proposition}[The volume of the fundamental parallelotope is a lattice invariant]
 
 In general, one gets a parallelotope whose volume is an invariant of the
 lattice itself.
@@ -5191,7 +5224,7 @@ under some linear transformation.
 
 \end{remark}
 
-\begin{proof}[?]
+\begin{proof}[of Minkowski Version 2]
 
 Let \(\mathbf{v}_1, \cdots, \mathbf{v}_n\) be \(n\) generators for
 \(\Lambda\), then define a linear transformation
@@ -5224,7 +5257,7 @@ Every positive integer is a sum of 4 squares of integers.
 
 \end{theorem}
 
-\begin{lemma}[?]
+\begin{lemma}[Finding sums of squares in $\ZZ/m$]
 
 Let \(m \in {\mathbb{Z}}^{>0}\) be squarefree, then there are
 \(A, B \in {\mathbb{Z}}\) such that
@@ -5236,7 +5269,7 @@ i.e.~\(-1\) is always the sum of two squares in the ring
 
 \end{lemma}
 
-\begin{proof}[?]
+\begin{proof}[of lemma]
 
 We're trying to solve an equation \(\pmod m\), and by the CRT it
 suffices to solve it for every prime power dividing \(m\), and since
@@ -5325,24 +5358,30 @@ it to be equal to \(m\).
 We made the assumption that \(m\) was squarefree, but we can write any
 \(m\in {\mathbb{Z}}^{>0}\) as \(m = k^2 m'\) where \(m'\) is squarefree.
 Then writing \(m' = x^2 + y^2 + z^2 + w^2\), we have
-\begin{align*} m = (kx)^2 + (ky)^2 + (kz)^2 + (kw)^2 \end{align*}
-. There are other applications of Minkowski's theorem that tell you when
+\begin{align*} 
+m = (kx)^2 + (ky)^2 + (kz)^2 + (kw)^2 
+.\end{align*}
+There are other applications of Minkowski's theorem that tell you when
 certain types of numbers are represented by special quadratic forms
 (such as the above sum of squares). See Pete Clark's papers!
 
 \end{remark}
 
-\hypertarget{ch.-13-starting-over-thursday-march-04}{%
-\section{Ch. 13: Starting Over (Thursday, March
-04)}\label{ch.-13-starting-over-thursday-march-04}}
+\hypertarget{starting-over-with-general-number-fields-lec.-13-thursday-march-04}{%
+\section{Starting Over with General Number Fields (Lec. 13, Thursday,
+March
+04)}\label{starting-over-with-general-number-fields-lec.-13-thursday-march-04}}
+
+\hypertarget{recasting-old-definitions}{%
+\subsection{Recasting Old Definitions}\label{recasting-old-definitions}}
 
 \begin{remark}
 
-Idea: we've phrased everything so far for quadratic fields, now we want
-to do everything for general number fields. The basic objects and tools:
-norm and trace. If \(K/{\mathbb{Q}}\) is a number field that's Galois,
-we define \(N \alpha \coloneqq\prod_{ \sigma \in G} \sigma( \alpha)\)
-and
+This corresponds to chapter 13, ``Starting Over''. Idea: we've phrased
+everything so far for quadratic fields, now we want to do everything for
+general number fields. The basic objects and tools: norm and trace. If
+\(K/{\mathbb{Q}}\) is a number field that's Galois, we define
+\(N \alpha \coloneqq\prod_{ \sigma \in G} \sigma( \alpha)\) and
 \(\operatorname{Tr}\alpha \coloneqq\sum_{ \sigma\in G } \sigma( \alpha)\).
 We'll have to modify this for a general number field since there's not
 an immediate candidate for the Galois group.
@@ -5413,19 +5452,29 @@ applying the lemma to \(F[ \alpha] \leq K\) yields
 \begin{align*}
 \varphi_{ \alpha}(x) 
 &= \prod_{ \sigma: K\hookrightarrow{\mathbb{C}}} (x - \sigma( \alpha) ) \\
-&= \prod_{ \tau F[ \alpha] \hookrightarrow{\mathbb{C}}} \prod_{ \sigma, { \left.{{ \sigma}} \right|_{{ F[ \alpha ] }} } = \tau } (x - \sigma( \alpha) ) \\
+&= \prod_{ \tau: F[ \alpha] \hookrightarrow{\mathbb{C}}} \,\,\, \prod_{ \sigma \text{ s.t. } { \left.{{ \sigma}} \right|_{{ F[ \alpha ] }} } = \tau } (x - \sigma( \alpha) ) \\
 &= \prod_{ \tau: F[ \alpha ] \hookrightarrow{\mathbb{C}}} (x - \tau( \alpha ) )^{n(\tau)} \\
 &= \qty{ \prod_{ \tau: F[ \alpha] \hookrightarrow{\mathbb{C}}} (x - \tau( \alpha ) ) }^{[K: F(\alpha)]} \\
 &= \min_ \alpha(x) ^{[ K : F( \alpha ) ] }
 .\end{align*}
-where - We've first just reorganized the product by grouping, - Then
-we've used that all of the terms in the inner product must have the same
-value for \(\sigma( \alpha)\) since \(\alpha\in F[ \alpha]\) and this
-makes \(\sigma( \alpha) = \tau( \alpha)\), - We note that the exponent
-should be the number of terms in the inner product, i.e.~the number of
-\(\sigma\) extending \(\tau\), i.e.~\(n(\tau) = [K: F[ \alpha] ]\) since
-\(r = [F[ \alpha] : {\mathbb{Q}}]\) and \(n = [K: {\mathbb{Q}}]\), - The
-last equality follows from remarks in chapter 1.
+where
+
+\begin{itemize}
+\tightlist
+\item
+  We've first just reorganized the product by grouping,
+\item
+  Then we've used that all of the terms in the inner product must have
+  the same value for \(\sigma( \alpha)\) since \(\alpha\in F[ \alpha]\)
+  and this makes \(\sigma( \alpha) = \tau( \alpha)\),
+\item
+  We note that the exponent should be the number of terms in the inner
+  product, i.e.~the number of \(\sigma\) extending \(\tau\),
+  i.e.~\(n(\tau) = [K: F[ \alpha] ]\) since
+  \(r = [F[ \alpha] : {\mathbb{Q}}]\) and \(n = [K: {\mathbb{Q}}]\),
+\item
+  The last equality follows from remarks in chapter 1.
+\end{itemize}
 
 \end{proof}
 
@@ -5463,12 +5512,10 @@ Write
 \begin{align*}
 \varphi_{ \alpha} (x) = x^n + \sum_{i=1}^n a_i x^i \in {\mathbb{Q}}[x]
 ,\end{align*}
-we then define the \textbf{norm} and \textbf{trace}\footnote{External
-  note: these come from the trace and determinant of the map
-  \(y \mapsto y\cdot x\) on \(L/K\), viewed as a \(K{\hbox{-}}\)linear
-  map on \(L\).}
-
-respectively as
+we then define the \textbf{norm} and \textbf{trace}\footnote{These come
+  from the trace and determinant of the map \(y \mapsto y\cdot x\) on
+  \(L/K\), viewed as a \(K{\hbox{-}}\)linear map on \(L\).} respectively
+as
 \begin{align*}
 N( \alpha) &\coloneqq(-1)^n a_0 \in {\mathbb{Q}}\\
 \operatorname{Tr}( \alpha) &\coloneqq-a_{n-1} \in {\mathbb{Q}}
@@ -5555,9 +5602,14 @@ Let \(w_1, \cdots, w_n\in K\), then
 \iff
 \Delta(w_1, \cdots, w_n) \neq 0
 .\end{align*}
-So this \emph{discriminates} between bases and non-bases.
 
 \end{theorem}
+
+\begin{remark}
+
+So this \emph{discriminates} between bases and non-bases.
+
+\end{remark}
 
 \begin{proof}[of theorem]
 
@@ -5569,6 +5621,8 @@ linear dependence. But then considering the matrix \(D\) above, a
 \({\mathbb{Q}}{\hbox{-}}\)linear dependence between the \(w_i\), this
 translates to a corresponding dependence between the columns of \(D\),
 which would yield the contradiction \(\det(D)^2 = 0\).
+
+\hfill\break
 
 \(\implies\): This is the harder part. Toward a contradiction suppose
 \(w_1, \cdots, w_n\) are a \({\mathbb{Q}}{\hbox{-}}\)basis for \(K\) but
@@ -5672,8 +5726,9 @@ where the \(c_i\in {\mathbb{Q}}\). We can assume that
 \begin{align*}
 \beta \coloneqq\alpha - \left[ {c_1}\right]  w_1 \in {\mathbb{Z}}_K
 ,\end{align*}
-where \(\left[ {[}\right] c_1]\) denotes taking the integer part. We can
-write \(\beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n\).
+where \(\left[ {{\,\cdot\,}}\right]\) denotes taking the integer part.
+We can write
+\(\beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n\).
 Observe that the tuple
 \begin{align*}
 {\left[ { \beta, w_2, \cdots, w_n} \right]} 
@@ -5756,37 +5811,44 @@ using that invertible matrices have unit determinants, which in
 Why do we care? The discriminant measures the complexity of the number
 field and carries arithmetic information:
 
-\begin{itemize}
-\item
-  Hermite's theorem: for every \(X>0\), there are only finitely many
-  number fields such that
-  \({\left\lvert { {\Delta}_K } \right\rvert} \leq X\). Interesting
-  question: how many are there as a function of \(X\)? This is studied
-  today by fixing a degree \(n\), and we have good answers for
-  \(n=2,3,4,5\), but it's still open to get an asymptotic formula for
-  \(n>5\). Note that our new faculty hire this year is an expert on
-  these kinds of questions!
-\item
-  A theorem of Dedekind: taking a prime \(p\in {\mathbb{Z}}\), we have
-  \begin{align*}
-  p \text{ ramifies in } {\mathbb{Z}}_K \iff p \mathrel{\Big|}{\Delta}_K
-  ,\end{align*}
-  where \textbf{ramification} occurs if when
-  \(\left\langle{ p }\right\rangle{~\trianglelefteq~}{\mathbb{Z}}_K\)
-  factors into prime ideals with a repeated prime factor. In particular,
-  \({\Delta}({\,\cdot\,}) < \infty\), and so only finitely many such
-  primes can occur.
-\end{itemize}
+\begin{theorem}[Hermite]
+
+For every \(X>0\), there are only finitely many number fields such that
+\({\left\lvert { {\Delta}_K } \right\rvert} \leq X\).
+
+\end{theorem}
+
+\begin{remark}
+
+Interesting question: how many are there as a function of \(X\)? This is
+studied today by fixing a degree \(n\), and we have good answers for
+\(n=2,3,4,5\), but it's still open to get an asymptotic formula for
+\(n>5\). Note that our new faculty hire this year is an expert on these
+kinds of questions!
 
 \end{remark}
 
-\hypertarget{saturday-march-13}{%
-\section{Saturday, March 13}\label{saturday-march-13}}
+\begin{theorem}[Dedekind]
 
-\hypertarget{discriminants-1}{%
-\subsection{Discriminants}\label{discriminants-1}}
+Taking a prime \(p\in {\mathbb{Z}}\), we have
+\begin{align*}
+p \text{ ramifies in } {\mathbb{Z}}_K \iff p \mathrel{\Big|}{\Delta}_K
+,\end{align*}
+where \textbf{ramification} occurs if when
+\(\left\langle{ p }\right\rangle{~\trianglelefteq~}{\mathbb{Z}}_K\)
+factors into prime ideals with a repeated prime factor. In particular,
+\({\Delta}({\,\cdot\,}) < \infty\), and so only finitely many such
+primes can occur.
 
-\begin{example}[?]
+\end{theorem}
+
+\end{remark}
+
+\hypertarget{discriminants-and-norms-lec.-14-saturday-march-13}{%
+\section{Discriminants and Norms (Lec. 14, Saturday, March
+13)}\label{discriminants-and-norms-lec.-14-saturday-march-13}}
+
+\begin{example}[of a discriminant]
 
 Suppose \(K = {\mathbb{Q}}( \sqrt{d} )\) where \(d\) is squarefree. What
 is its discriminant? We need a \({\mathbb{Z}}{\hbox{-}}\)basis of
@@ -5843,7 +5905,7 @@ computation.
 \hypertarget{norms-of-ideals}{%
 \subsection{Norms of Ideals}\label{norms-of-ideals}}
 
-\begin{definition}[?]
+\begin{definition}[Norm of an ideal]
 
 Let \(I {~\trianglelefteq~}{\mathbb{Z}}_K\) be a nonzero ideal, then
 define \(N(I) \coloneqq\# {\mathbb{Z}}_K/I\).
@@ -5858,7 +5920,7 @@ can be more complicated, so we'll need another way to show finiteness.
 
 \end{remark}
 
-\begin{lemma}[?]
+\begin{lemma}[Elements divide their norms]
 
 Let \(\alpha\in {\mathbb{Z}}_K\), then
 \(\alpha\mathrel{\Big|}N( \alpha)\) in \({\mathbb{Z}}_K\).
@@ -5870,8 +5932,8 @@ Let \(\alpha\in {\mathbb{Z}}_K\), then
 Write down the obvious thing and see that it works!
 \begin{align*}
 N \alpha 
-\coloneqq\prod_{ \sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) \\
-= \alpha \prod_{ \substack{ \sigma: K \hookrightarrow{\mathbb{C}}\\ \sigma\neq \one_K } } \sigma( \alpha) \\
+&\coloneqq\prod_{ \sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) \\
+&= \alpha \prod_{ \substack{ \sigma: K \hookrightarrow{\mathbb{C}}\\ \sigma\neq \one_K } } \sigma( \alpha) \\
 &\coloneqq\alpha C 
 ,\end{align*}
 where we've used that one embedding is the identity and factored it out.
@@ -5890,7 +5952,7 @@ is in \(K\). But then
 
 \end{proof}
 
-\begin{proposition}[?]
+\begin{proposition}[Nonzero ideals have finite norms in rings of integers]
 
 For \(I{~\trianglelefteq~}{\mathbb{Z}}_K\) nonzero,
 \begin{align*}
@@ -5899,7 +5961,7 @@ N(I) < \infty
 
 \end{proposition}
 
-\begin{proof}[?]
+\begin{proof}[of proposition]
 
 We start with principal ideals. Let \(m\in {\mathbb{Z}}^+\), then
 \({\mathbb{Z}}_K \left\langle{ m }\right\rangle \coloneqq{\mathbb{Z}}_K /m {\mathbb{Z}}_K \cong_{{\mathbb{Z}{\hbox{-}}\mathsf{Mod}}} {\mathbb{Z}}^n / m{\mathbb{Z}}^n \cong ({\mathbb{Z}}/m{\mathbb{Z}})^n\)
@@ -5930,7 +5992,7 @@ N( IJ) + N(I) N(J)
 
 \end{theorem}
 
-\begin{proof}[?]
+\begin{proof}[that the norm is multiplicative]
 
 Deferred!
 
@@ -5947,7 +6009,11 @@ the element-wise ideal.
 
 \end{theorem}
 
+\begin{remark}
+
 This will follow from the following proposition:
+
+\end{remark}
 
 \begin{proposition}[Index = Determinant]
 
@@ -6119,7 +6185,7 @@ be 1. Note that this is \emph{not} necessary! We saw that for
 
 \end{remark}
 
-\begin{example}[?]
+\begin{example}[of finding bases]
 
 Let \(K = {\mathbb{Q}}( \theta)\) where \(\theta\) is a root of
 \begin{align*}
@@ -6159,7 +6225,7 @@ i.e.~\({\mathbb{Z}}_K = {\mathbb{Z}}[ \theta]\). Note that
 
 \end{example}
 
-\begin{example}[?]
+\begin{example}[of finding bases]
 
 Let \(K = {\mathbb{Q}}( \alpha)\) where \(\alpha\) is a root of
 \begin{align*}
@@ -6217,12 +6283,15 @@ Next time: integral bases for cyclotomic fields.
 
 \end{remark}
 
-\hypertarget{saturday-march-13-1}{%
-\section{Saturday, March 13}\label{saturday-march-13-1}}
+\hypertarget{cyclotomic-fields-lec.-15-saturday-march-13}{%
+\section{Cyclotomic Fields (Lec. 15, Saturday, March
+13)}\label{cyclotomic-fields-lec.-15-saturday-march-13}}
 
-\hypertarget{ch.-14-continued-cyclotomic-fields}{%
-\subsection{Ch. 14 Continued: Cyclotomic
-Fields}\label{ch.-14-continued-cyclotomic-fields}}
+\begin{remark}
+
+This is chapter 14 continued.
+
+\end{remark}
 
 \begin{definition}[Cyclotomic Fields]
 
@@ -6261,7 +6330,7 @@ but \(p^2\nmid a_0\), then \(f\) is irreducible over \({\mathbb{Q}}\).
 
 \end{remark}
 
-\begin{lemma}[?]
+\begin{lemma}[The minimal polynomials of roots of unity]
 
 The minimal polynomial of \(\zeta_p\) over \({\mathbb{Q}}\) is
 \begin{align*}
@@ -6271,7 +6340,7 @@ and so \([{\mathbb{Q}}(\zeta_p) : {\mathbb{Q}}] = p-1\).
 
 \end{lemma}
 
-\begin{proof}[sketch]
+\begin{proof}[of lemma, a sketch]
 
 Note that \(\zeta_p\) is a root of \(\Phi_p\), since
 \begin{align*}
@@ -6283,7 +6352,7 @@ not of the denominator. This is irreducible by Eisenstein's criterion at
 
 \end{proof}
 
-\begin{proposition}[?]
+\begin{proposition}[Eisenstein primes don't divide the extension degree]
 
 Let
 \(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
@@ -6300,7 +6369,7 @@ p\nmid[{\mathbb{Z}}_K : {\mathbb{Z}}[ \alpha] ]
 
 \end{proposition}
 
-\begin{proof}[?]
+\begin{proof}[of proposition]
 
 We first observe that \(\alpha^n\) is a multiple of \(p\) in
 \({\mathbb{Z}}_K\). To see this, plug \(\alpha\) into the minimal
@@ -6438,6 +6507,8 @@ coincide, so there is a multiple root of
 \(x^p-1\) and its derivative \(px^{p-1}\) have a root in common, and
 (check!) this can only happen if \(q=p\).
 
+\hfill\break
+
 So \([{\mathbb{Z}}_K : {\mathbb{Z}}[\zeta] ] = p^\ell\) for some
 \(\ell\). Using that fact that
 \({\mathbb{Z}}[ \zeta] \cong {\mathbb{Z}}[ \zeta - 1]\), we have
@@ -6500,9 +6571,9 @@ tend to come up during oral exams that include algebraic number theory.
 
 \end{remark}
 
-\hypertarget{ch.-15-ideal-theory-in-general-number-rings}{%
-\subsection{Ch. 15: Ideal theory in general number
-rings}\label{ch.-15-ideal-theory-in-general-number-rings}}
+\hypertarget{ideal-theory-in-general-number-rings-ch.-15}{%
+\subsection{Ideal Theory in General Number Rings (Ch.
+15)}\label{ideal-theory-in-general-number-rings-ch.-15}}
 
 \begin{remark}
 
@@ -6529,7 +6600,7 @@ that are unlikely to show up on oral exams).
 
 \end{remark}
 
-\begin{definition}[Class Group]
+\begin{definition}[Class Group of a Number Ring]
 
 \begin{align*}
 \operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/ \sim
@@ -6558,7 +6629,7 @@ Our strategy:
 
 \end{remark}
 
-\begin{proposition}[?]
+\begin{proposition}[Dilations of elements are always close to integers]
 
 There is a constant \(T = T(K)\) that only depends on \(K\) such that
 for every \(\theta\in K\), there is a positive integer \(t \leq T\) and
@@ -6579,7 +6650,7 @@ which lie above small primes.
 
 \end{remark}
 
-\begin{proof}[?]
+\begin{proof}[of proposition]
 
 Omitted! See book, this proof wouldn't show up on an oral exam. This
 uses Dirichlet's approximation criterion again, although in a different
@@ -6595,12 +6666,14 @@ way.
 
 \end{theorem}
 
-\begin{proof}[?]
+\begin{proof}[that the class group is finite]
 
 Very similar to how it goes for quadratic fields. As before, let
 \(I \in \operatorname{Id}({\mathbb{Z}}_K)\) be nonzero and
 \(\beta \in I\) nonzero with \({\left\lvert {N \beta} \right\rvert}\)
 minimal.
+
+\hfill\break
 
 \begin{claim}
 
@@ -6610,6 +6683,8 @@ Let \(T\) be as in the proposition, then
 \end{claim}
 
 This follows from exactly the same argument as before.
+
+\hfill\break
 
 Now define \(J \coloneqq{T! \over \beta} I \subseteq {\mathbb{Z}}_K\),
 which is a dilation of \(I\) and thus
@@ -6655,11 +6730,13 @@ lemma, and then everything else will follow as in the quadratic case.
 
 \end{remark}
 
-\hypertarget{tuesday-march-30}{%
-\section{Tuesday, March 30}\label{tuesday-march-30}}
+\hypertarget{ideal-theory-in-number-fields-continued-lec.-16-tuesday-march-30}{%
+\section{Ideal Theory in Number Fields Continued (Lec. 16, Tuesday,
+March
+30)}\label{ideal-theory-in-number-fields-continued-lec.-16-tuesday-march-30}}
 
-\hypertarget{chapter-15-continued}{%
-\subsection{Chapter 15 (continued)}\label{chapter-15-continued}}
+\hypertarget{setting-up-the-theory}{%
+\subsection{Setting up the Theory}\label{setting-up-the-theory}}
 
 \begin{remark}
 
@@ -6683,7 +6760,7 @@ Last time, we proved the first one.
 
 \end{remark}
 
-\begin{lemma}[?]
+\begin{lemma}[When ideals are left identities under multiplication]
 
 Let \(I, J \in \operatorname{Id}({\mathbb{Z}}_K)\), then if \(IJ = J\)
 then \(I = \left\langle{ 1 }\right\rangle\).
@@ -6703,7 +6780,7 @@ use the same generators.
 
 \end{remark}
 
-\begin{proof}[?]
+\begin{proof}[of lemma]
 
 Let \(J = \left\langle{ \beta_1, \cdots, \beta_n }\right\rangle\), then
 since \(IJ = J\), for every \(j\) we can write
@@ -6726,7 +6803,7 @@ but this can only occur if \(1\in I\), making
 
 \end{proof}
 
-\begin{lemma}[?]
+\begin{lemma}[Right-cancellation when principal ideals are involved]
 
 Let \(I, J{~\trianglelefteq~}{\mathbb{Z}}_K\), then if \(IJ = \beta J\)
 with \(\beta \in {\mathbb{Z}}_K \setminus\left\{{0}\right\}\), we have
@@ -6750,7 +6827,7 @@ principal.
 
 \end{lemma}
 
-\begin{proof}[?]
+\begin{proof}[of principal multiple lemma]
 
 Consider \([I], [I]^2, \cdots \in \operatorname{Cl}({\mathbb{Z}}_K)\).
 By the pigeonhole principal, there is some \(k, \ell\) such that
@@ -6779,7 +6856,7 @@ slightly reversed.
 
 \end{remark}
 
-\begin{corollary}[?]
+\begin{corollary}[Class groups are finite and $\Id$ is a cancellative monoid]
 
 \envlist
 
@@ -6800,14 +6877,14 @@ irreducibles first, then uniqueness as a consequence of Euclid's lemma.
 
 \end{corollary}
 
-\begin{lemma}[?]
+\begin{lemma}[The monoid $\Id$ is atomic]
 
 \(\operatorname{Id}({\mathbb{Z}}_K)\) is atomic, i.e.~every element
 factors into irreducibles.
 
 \end{lemma}
 
-\begin{proof}[?]
+\begin{proof}[of lemma]
 
 We'll proceed by induction on \(N(I)\), using that \(N(AB) \leq N(A)\)
 for any \(A\) and so \(I\mathrel{\Big|}J \implies N(I) < N(J)\). Before
@@ -6829,14 +6906,14 @@ Irreducibles in \(\operatorname{Id}({\mathbb{Z}}_K)\) are prime.
 
 \end{lemma}
 
-\begin{proof}[?]
+\begin{proof}[of lemma]
 
 Same as before! Literally use the exact same words, we've set it up this
 way.
 
 \end{proof}
 
-\begin{theorem}[?]
+\begin{theorem}[The monoid $\Id$ is a unique factorization monoid]
 
 \(\operatorname{Id}({\mathbb{Z}}_K)\) is a UFM, or equivalently every
 nonzero ideal factors uniquely as a product of prime ideals.
@@ -6846,14 +6923,14 @@ nonzero ideal factors uniquely as a product of prime ideals.
 \hypertarget{modern-approach}{%
 \subsection{Modern Approach}\label{modern-approach}}
 
-\begin{remark}
+\begin{question}
 
 What is the widest class of domains for which the previous theorem
 holds?
 
-\end{remark}
+\end{question}
 
-\begin{definition}[?]
+\begin{definition}[Dedekind Domains]
 
 Let \(R\) be a domain that is not a field (since ideals in fields are
 uninteresting). Then \(R\) is a \textbf{Dedekind domain} if and only if
@@ -6902,19 +6979,19 @@ TFAE:
 
 \end{theorem}
 
-\begin{proof}[?]
+\begin{proof}[of Noether's theorem]
 
 Omitted, this is an exercise in commutative algebra.
 
 \end{proof}
 
-\begin{proposition}[?]
+\begin{proposition}[Rings of integers are Dedekind domains]
 
 For any number field \(K\), \({\mathbb{Z}}_K\) is a Dedekind domain.
 
 \end{proposition}
 
-\begin{proof}[?]
+\begin{proof}[of proposition]
 
 We can check the definitions directly:
 
@@ -6953,7 +7030,7 @@ norms of ideals are finite, and \(N(P)\) for \(P\) principal is equal to
 
 \end{remark}
 
-\begin{theorem}[?]
+\begin{theorem}[The norm is multiplicative]
 
 \begin{align*}
 N(IJ) = N(I) N(J) && \forall I, J \in \operatorname{Id}({\mathbb{Z}}_K)
@@ -6970,7 +7047,7 @@ If \(I, J\in \operatorname{Id}({\mathbb{Z}}_K)\), we have
 
 \end{remark}
 
-\begin{proof}[?]
+\begin{proof}[that the norm is multiplicative]
 
 It's enough to show \(N(IP) = N(I) N(P)\) for \(P\) prime, since every
 \(J\) factors into primes and we can apply this result recursively. Now
@@ -7004,6 +7081,8 @@ Check that this is a well-defined group morphism.
 
 \end{exercise}
 
+\hfill\break
+
 \textbf{Injectivity}: Suppose that \(\alpha\pmod P \in \ker \psi\), so
 \(\alpha \beta\in IP\) and
 \(IP \mathrel{\Big|}\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle\).
@@ -7014,6 +7093,8 @@ critically using that \(\beta\) is in \(I\) but not \(IP\):
 while \(I\) \emph{does} divide \(\beta\), this forces
 \(P\mathrel{\Big|}m \left\langle{ \alpha }\right\rangle\). Then
 \(\alpha\in P\) and \(\alpha\pmod P = 0\), so \(\ker \psi = 0\).
+
+\hfill\break
 
 \textbf{Surjectivity:} We might want to write
 \(\Im(\psi) = \left\langle{ \beta }\right\rangle / IP\), but this
@@ -7055,7 +7136,7 @@ combinations of elements from \(I\).
 
 \end{definition}
 
-\begin{exercise}[?]
+\begin{exercise}[Arithmetic of ideals]
 
 Check that
 
@@ -7069,7 +7150,7 @@ Check that
 
 \end{exercise}
 
-\begin{theorem}[?]
+\begin{theorem}[Norm is generated by product of conjugates]
 
 Let \(I\in \operatorname{Id}({\mathbb{Z}}_K)\) and let \(L\) be the
 Galois closure of \(K/{\mathbb{Q}}\). For each
@@ -7138,7 +7219,7 @@ instead.
 
 \end{remark}
 
-\begin{lemma}[?]
+\begin{lemma}[Ideals become principal after extending]
 
 Let \(K\) be a number field and
 \(I\in \operatorname{Id}({\mathbb{Z}}_K)\). Then there is a finite
@@ -7147,7 +7228,7 @@ ideal can be made principal after passing to some finite extension.
 
 \end{lemma}
 
-\begin{proof}[?]
+\begin{proof}[of lemma]
 
 Let \(m \coloneqq\# \operatorname{Cl}({\mathbb{Z}}_K)\). Then
 \(I^m = \alpha{\mathbb{Z}}_K\) is principal since \(m\) is the order of
