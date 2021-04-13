@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-09 }
+{\tiny \textit{Last updated:} 2021-04-12 }
 \end{flushleft}
 
 
@@ -7932,6 +7932,269 @@ so we can sum the lower-right part of the diamond to get
 \(\chi({\mathcal{O}}_S) = 1 - 0 + 1 = 2\), since we take \(p=0\) to get
 \(\Omega^p = {\mathcal{O}}\). Computing \(\chi_{\mathsf{Top}}\), we get
 \(h_{1, 1} = 20\).
+
+\end{remark}
+
+\hypertarget{monday-april-12}{%
+\section{Monday, April 12}\label{monday-april-12}}
+
+\begin{remark}
+
+Last time: the Lefschetz hyperplane theorem. Intersecting a projective
+variety of dimension \(d\geq 3\) with a hypersurface \(S\), the map
+\(\pi_1({\mathbb{P}}^3) \to \pi_1(S)\) is an isomorphism. We saw that K3
+surfaces were thus simply connected, and \(h^1(S; {\mathbb{C}}) = 0\),
+so we could compute the Hodge diamond.
+
+\end{remark}
+
+\begin{example}[?]
+
+What is the Hodge diamond for a cubic surface
+\(S \subseteq {\mathbb{P}}^3\), such as \(\sum x_i^3 = 0\)? We first
+need to compute the canonical bundle \(K\), for which we have a useful
+tool: the adjunction formula. This say
+\(K_S = \qty{K_{{\mathbb{P}}^3} \otimes{\mathbb{P}}_{{\mathbb{P}}^3}(S) } { \left.{{}} \right|_{{S}} } = \qty{ {\mathcal{O}}(-4) \otimes{\mathcal{O}}(3) }{ \left.{{}} \right|_{{S}} } = { \left.{{ {\mathcal{O}}(-1)}} \right|_{{S}} }\).
+
+\begin{proposition}[?]
+
+Let \(\mathcal{L} \to X\) be a holomorphic line bundle. If
+\(h^0( \mathcal{L} ^{-1}) > 0\), then either
+\(\mathcal{L} = {\mathcal{O}}\) or \(h^0(\mathcal{L}) = 0\).
+
+\end{proposition}
+
+\begin{slogan}
+
+If a line bundle has a section, its inverse does not.
+
+\end{slogan}
+
+\begin{proof}[?]
+
+Suppose that both \(\mathcal{L}, \mathcal{L}^{-1}\) have a section, so
+\(h^0(\mathcal{L}), h^0( \mathcal{L} ) > 0\). Let \(s, t\) be sections
+of each, then
+\(st\in H^0( \mathcal{L} \otimes\mathcal{L}^{-1}) = H^0({\mathcal{O}}) = {\mathbb{C}}\).
+So taking zero loci yields
+\(\operatorname{Div}(s) + \operatorname{Div}(t) = 0\) Writing these as
+\(\operatorname{Div}(s) \coloneqq\sum n_D D, \operatorname{Div}(t) \coloneqq\sum n_C C\),
+we have \(n_D, n_C \geq 0\), which implies that
+\(\operatorname{Div}(s) = \operatorname{Div}(t) = 0\). So \(s, t\) are
+nowhere vanishing, making
+\({\mathcal{O}}\xrightarrow{\cdot s} \mathcal{L}\) is an isomorphism.
+
+\end{proof}
+
+\begin{corollary}[?]
+
+For \(S\) a cubic surface, \(H^0(S; K_S) = 0\).
+
+\end{corollary}
+
+\begin{proof}[?]
+
+This follows because \(K_S = {\mathcal{O}}_S(-1)\), so
+\(K_S^{-1}= {\mathcal{O}}_S(1)\) which has a nontrivial section: namely
+\({\mathcal{O}}_{{\mathbb{CP}}^1}(1)\) which has sections vanishing
+along hyperplanes.
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-12_14-06.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Letting \(H\) be a hyperplane containing \(S\), there exists an
+\(f\in H^0({\mathbb{P}}^3; {\mathcal{O}}_{{\mathbb{CP}}^3}(1))\). Since
+\(\operatorname{Div}(f) = H\), the restriction
+\({ \left.{{f}} \right|_{{S}} }\) is a section of
+\({\mathcal{O}}_S(-1) = K_S^{-1}\) which is not identically zero and
+vanishes along \(H \cap S\).
+
+\end{proof}
+
+We now know \(h^0(S; K_S) = 0\), and this equals
+\(h^0(S, \Omega^2) = h^{2, 0}(S)\), so we have the following Hodge
+diamond:
+
+\begin{center}
+\begin{tikzcd}
+    && 1 \\
+    & 0 && 0 \\
+    0 && {h^{1, 1}} && 0 \\
+    & 0 && 0 \\
+    && 1
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsOSxbMiwwLCIxIl0sWzEsMSwiMCJdLFszLDEsIjAiXSxbMCwyLCIwIl0sWzIsMiwiaF57MSwgMX0iXSxbNCwyLCIwIl0sWzEsMywiMCJdLFszLDMsIjAiXSxbMiw0LCIxIl1d}{Link
+to Diagram}
+\end{quote}
+
+We have \(h^{0, 1} + h^{1, 0} = h^1 = 0\) since \(S\) is simply
+connected. We can now apply Noether's formula as before:
+\(\chi({\mathcal{O}}_S) = {1\over 12} (K_S^2 + \chi_{\mathsf{Top}}(S))\).
+We have \(K_S = {\mathcal{O}}_S(-1)\), so
+\(K_S^2 = c_1( {\mathcal{O}}(-1))^2\), and
+\(\chi({\mathcal{O}}_S) = 1-0+1 = 1\). We now want to compute
+\(\int_S \qty{- c_1({\mathcal{O}}_S(1)) }^2\). We know
+\(c_1(\mathcal{L}) = [ \operatorname{Div}s]\) where
+\(s\in H^0( \mathcal{L} )\) is a section of a line bundle. This equals
+\([H \cap S]\). On the other hand,
+\(\int_S c_1 \qty{ {\mathcal{O}}_S(1)}^2\) is the self-intersection
+number of \(H \cap S\).
+
+\hfill\break
+
+Take \(H_1 \coloneqq\left\{{ x_0 = 0 }\right\}\) and
+\(H_2 \coloneqq\left\{{ x_1 = 0 }\right\}\). Points in this intersection
+are of the form \([0:0:1:\zeta_6^a]\) where \(a=1,3,5\) since this is in
+the triple intersection \(H_1 \cap H_2 \cap S\). So there are exactly 3
+points here, and in fact \(\deg S =3\). This is the same as integrating
+\(\int_{{\mathbb{P}}^3} c_1(S) c_1( {\mathcal{O}}(1)) c_1( {\mathcal{O}}(2))\),
+which contains 3 elements in \(H^2\) and lands in \(H^6\), so this
+yields a number.
+
+\hfill\break
+
+We thus have
+\(K_S = {\mathcal{O}}_S(-1) \coloneqq{\mathcal{O}}_{{\mathbb{CP}}^3}(-1) { \left.{{}} \right|_{{S}} }\).
+Thus \(\chi_{\mathsf{Top}}(S) = 9\) and \(h^{1, 1} = 7\).
+
+\end{example}
+
+\begin{example}[Hypersurfaces]
+
+Note that a degree 5 surface (a quintic) such as \(x_0^5 + x_3^5 = 0\)
+would be harder, since \(h^{2, 0} \neq 0\). We would get
+\(K_S = {\mathcal{O}}(-4) \otimes{\mathcal{O}}(5) { \left.{{}} \right|_{{S}} } = {\mathcal{O}}_S(1)\),
+and there are nontrivial sections so
+\(h^0(K_S) = {\operatorname{span}}{x_0, x_1, x_2, x_3}\). This follows
+because there is a map given by restriction which turns out to be an
+isomorphism
+\begin{align*}
+0 \to H^0({\mathbb{P}}^3; {\mathcal{O}}(1)) & \xrightarrow{\operatorname{res}_S} H^0(S; {\mathcal{O}}(1)) \to 0 \\
+f &\mapsto { \left.{{f}} \right|_{{S}} }
+.\end{align*}
+
+Injectivity isn't difficult, surjectivity is harder. We have a SES
+\begin{align*}
+0 \to {\mathcal{O}}_{{\mathbb{CP}}^3}(-S) \to {\mathcal{O}}_{{\mathbb{CP}}^3} \to {\mathcal{O}}_S \to 0
+.\end{align*}
+Tensor all of these with \({\mathcal{O}}(1)\) to obtain
+\begin{align*}
+0 \to {\mathcal{O}}_{\mathbb{CP}}^3(-4) \to {\mathcal{O}}_{{\mathbb{CP}}^3}(1) \to {\mathcal{O}}_S(1) \to 0
+.\end{align*}
+Taking the associated LES yields
+
+\begin{center}
+\begin{tikzcd}
+    {H^1({\mathcal{O}}_{{\mathbb{CP}}^3}(-4)) =_? 0} \\
+    \\
+    {H^0({\mathcal{O}}_{{\mathbb{CP}}^3}(-4)) = 0} && \textcolor{rgb,255:red,92;green,92;blue,214}{H^0({\mathcal{O}}_{{\mathbb{CP}}^3}(-1)) = {\mathbb{C}}\left\langle{x_0, x_1, x_2, x_3}\right\rangle} && \textcolor{rgb,255:red,92;green,92;blue,214}{H^0({\mathcal{O}}_{S}(1))} \\
+    0
+    \arrow[from=4-1, to=3-1]
+    \arrow[from=3-1, to=3-3]
+    \arrow[color={rgb,255:red,92;green,92;blue,214}, from=3-3, to=3-5]
+    \arrow[from=3-5, to=1-1, out=0, in=180]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNSxbMCwyLCJIXjAoXFxPT197XFxDUF4zfSgtNCkpID0gMCJdLFsyLDIsIkheMChcXE9PX3tcXENQXjN9KC0xKSkgPSBcXENDIFxcZ2Vuc3t4XzAsIHhfMSwgeF8yLCB4XzN9IixbMjQwLDYwLDYwLDFdXSxbNCwyLCJIXjAoXFxPT197U30oMSkpIixbMjQwLDYwLDYwLDFdXSxbMCwwLCJIXjEoXFxPT197XFxDUF4zfSgtNCkpID1fPyAwIl0sWzAsMywiMCJdLFs0LDBdLFswLDFdLFsxLDIsIiIsMCx7ImNvbG91ciI6WzI0MCw2MCw2MF19XSxbMiwzXV0=}{Link
+to Diagram}
+\end{quote}
+
+This gives us a way to relate things back to the cohomology of
+\({\mathbb{CP}}^3\). Showing that the indicated term is zero involves
+computing Čech cohomology.
+
+It turns out that \(h^0(K_S) = 4\) here, and it turns out that the Hodge
+diamond is the following:
+
+\begin{center}
+\begin{tikzcd}
+    && 1 \\
+    & 0 && 0 \\
+    4 && {h^{1, 1} = 45} && 4 \\
+    & 0 && 0 \\
+    && 1
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsOSxbMiwwLCIxIl0sWzEsMSwiMCJdLFszLDEsIjAiXSxbMCwyLCI0Il0sWzQsMiwiNCJdLFsxLDMsIjAiXSxbMywzLCIwIl0sWzIsNCwiMSJdLFsyLDIsImheezEsIDF9ID0gNDUiXV0=}{Link
+to Diagram}
+\end{quote}
+
+Here \(K_S^2 = c_1({\mathcal{O}}_S(1))^2 = 5\) and
+\(\chi_{\mathsf{Top}}= 55\).
+
+\end{example}
+
+\begin{example}[Products]
+
+Consider now a product of curves \(C \times D\) of genera \(g, h\)
+respectively. Computing the Hodge diamond is easy here due to the
+Kunneth formula:
+\begin{align*}
+H^k(S; {\mathbb{C}}) = \bigoplus_{i+j = k} H^i(C; {\mathbb{C}}) \otimes H^j(D; {\mathbb{C}})
+.\end{align*}
+
+What is the actual map? Take cohomology classes \([\alpha], [\beta]\),
+closed \(i\) and \(j\) forms respectively. The surface has two maps:
+
+\begin{center}
+\begin{tikzcd}
+    S && C \\
+    \\
+    D
+    \arrow["{\pi_C}", from=1-1, to=1-3]
+    \arrow["{\pi_D}"', from=1-1, to=3-1]
+\end{tikzcd}
+\end{center}
+
+Here we send
+\([\alpha] \otimes[ \beta] \mapsto [ \pi_C^* \alpha\wedge \pi_D^* \beta]\)
+where we take pullbacks. Note that \(\pi_D, \pi_C\) are holomorphic
+maps, and pullbacks of \((p, q)\) forms are still \((p, q)\) forms. Thus
+the Kunneth formula gives a decomposition
+\begin{align*}
+H^{p, q}(S; {\mathbb{C}}) 
+= \sum_{\substack{ i_1 + j_1 = p \\ i_2 + j_2 = q }} H^{i_1, j_1}(C) \oplus H^{i_2, j_2}(D)
+.\end{align*}
+So we can ``tensor'' the Hodge diamonds:
+
+\begin{center}
+\begin{tikzcd}
+    & 1 &&&& 1 \\
+    g && g && h && h \\
+    & 1 &&&& 1 \\
+    \\
+    &&& 1 \\
+    && {g+h} && {g+h} \\
+    & gh && {2 + 2gh} && gh \\
+    && {g+h} && {g+h} \\
+    &&& 1
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMTcsWzEsMCwiMSJdLFswLDEsImciXSxbMiwxLCJnIl0sWzEsMiwiMSJdLFs1LDAsIjEiXSxbNCwxLCJoIl0sWzYsMSwiaCJdLFs1LDIsIjEiXSxbMyw0LCIxIl0sWzIsNSwiZytoIl0sWzQsNSwiZytoIl0sWzIsNywiZytoIl0sWzQsNywiZytoIl0sWzEsNiwiZ2giXSxbNSw2LCJnaCJdLFszLDgsIjEiXSxbMyw2LCIyICsgMmdoIl1d}{Link
+to Diagram}
+\end{quote}
+
+\end{example}
+
+\begin{remark}
+
+Check out complete intersections.
 
 \end{remark}
 
