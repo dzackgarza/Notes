@@ -72,7 +72,6 @@
 \newcommand{\PGL}[0]{\operatorname{PGL}}
 \newcommand{\GL}[0]{\operatorname{GL}}
 \newcommand{\Gl}[0]{\operatorname{GL}}
-\newcommand{\gl}[0]{\operatorname{GL}}
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
@@ -139,47 +138,56 @@
 \newcommand{\Cat}[0]{\mathsf{Cat}}
 \newcommand{\Fun}[0]{{\mathsf{Fun}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
-\newcommand{\alg}[0]{\mathsf{Alg}}
-\newcommand{\scalg}[0]{\mathsf{sCAlg}}
-\newcommand{\calg}[0]{\mathsf{CAlg}}
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
-\newcommand{\Perv}[0]{\mathsf{Perv}}
-\newcommand{\presh}[0]{{\mathsf{Presh}}}
-\newcommand{\Presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
 \newcommand{\sets}[0]{{\mathsf{Set}}}
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
 \newcommand{\Groups}[0]{{\mathsf{Groups}}}
-\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
-\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\ssets}[0]{\mathsf{sSets}}
-\newcommand{\Ring}[0]{\mathsf{Ring}}
-\newcommand{\grMod}[0]{{\mathsf{grMod}}}
-\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
-\newcommand{\Top}[0]{{\mathsf{Top}}}
-\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathsf{Sch}}}
-\newcommand{\sch}[0]{{\mathsf{Sch}}}
-\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\CRing}[0]{\mathsf{CRing}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
-\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
-\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
 \newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
-\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
-\newcommand{\Mod}[0]{{\mathsf{Mod}}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\eul}[0]{{\operatorname{eul}}}
 \newcommand{\gr}[0]{{\operatorname{gr}}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
+\newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
+\newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
+\newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Assoc}[0]{\mathsf{Assoc}}
+\newcommand{\Comm}[0]{\mathsf{Comm}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+
+\newcommand{\Forget}[0]{{\operatorname{Forget}}}
+\newcommand{\eul}[0]{{\operatorname{eul}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
@@ -277,12 +285,17 @@
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
-\newcommand{\lieb}[0]{{\mathfrak{b}}}
-\newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
-\newcommand{\lieh}[0]{{\mathfrak{h}}}
-\newcommand{\lien}[0]{{\mathfrak{n}}}
+\newcommand{\liet}[0]{{\mathfrak{t}}}
+\newcommand{\lieo}[0]{{\mathfrak{o}}}
+\newcommand{\lied}[0]{{\mathfrak{d}}}
+\newcommand{\liegl}[0]{{\mathfrak{gl}}}
+\newcommand{\gl}[0]{{\mathfrak{gl}}}
 \newcommand{\liesl}[0]{{\mathfrak{sl}}}
+\newcommand{\Ug}[0]{{\mathcal{U}(\mathfrak{g}) }}
+\newcommand{\lieb}[0]{{\mathfrak{b}}}
+\newcommand{\lien}[0]{{\mathfrak{n}}}
+\newcommand{\lieh}[0]{{\mathfrak{h}}}
 \newcommand{\lieso}[0]{{\mathfrak{so}}}
 \newcommand{\liesp}[0]{{\mathfrak{sp}}}
 \newcommand{\lieu}[0]{{\mathfrak{u}}}
@@ -359,7 +372,6 @@
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
-\newcommand{\Hom}[0]{{\operatorname{Hom}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -378,8 +390,6 @@
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
 \newcommand{\rad}[0]{{\operatorname{rad}}}
-\newcommand{\ralg}[0]{\operatorname{R-alg}}
-\newcommand{\kalg}[0]{k\dash\operatorname{alg}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -428,7 +438,7 @@
 \newcommand{\covers}[0]{\rightrightarrows}
 \newcommand{\units}[0]{^{\times}}
 \newcommand{\nonzero}[0]{^{\bullet}}
-\newcommand{\wait}[0]{{\,\cdot\,}}
+\newcommand{\wait}[0]{{-}}
 \newcommand{\wt}[0]{{\operatorname{wt}}}
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \renewcommand{\div}[0]{\operatorname{Div}}
@@ -464,6 +474,7 @@
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
+\DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\proj}{Proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
@@ -8074,6 +8085,362 @@ Lie showed that this is isomorphic to the vector space of left $G\dash$invariant
 This turns out to again be a 1st order operator, despite looking like it might be 2nd order.
 This led to the study of abstract Lie algebras.
 :::
+
+
+
+# Section 7.1: Lie Algebras (Friday, April 09)
+
+## Definitions
+
+:::{.definition title="$k\dash$algebras"}
+Let $k \in \CRing$, e.g. a field. An **algebra** over $k$ is a $k\dash$module with a bilinear product $A^{\tensor 2} \to A$.
+:::
+
+:::{.remark}
+The product need not be associative, and $A$ need not have 1, so $A=0$ is an algebra.
+:::
+
+:::{.definition title="Lie Algebra Definitions"}
+A **Lie algebra** $\lieg$ is a $k\dash$algebra whose product (denoted $[\wait, \wait]$) is called the **Lie bracket**, which satisfies
+
+1. $[xx] = 0$ for all $x\in\lieg$, and skew-symmetry: $[xy] = -[yx]$ for all $x,y\in \lieg$.
+2. The Jacobi identity:
+
+\[
+[x [yz]] + [y[zx]] + [z[xy]] = 0 \iff [x[yz]] = [[xy]z] = [y[xz]]
+,\]
+so the product behaves like a derivation.
+
+- There is an **adjoint** map $\ad_x \da [\wait, x]: \lieg\selfmap$.
+- A **(2-sided) ideal** $\lieh \normal \lieg$ is a $k\dash$submodule absorbing under the bracket, so $[xh] \in \lieh \forall x\in \lieg, h\in \lieh$
+  In particular, $\lieh \leq \lieg$ is a subalgebra.
+- A **morphism** $\rho: \lieg \to \lieg'$ of Lie algebras is a $k\dash$module map which preserves the bracket, so $[\rho(x) \rho(y)] = \rho([xy])$, so we get a category $\liealg_{/k}$.
+- If $\lieh \normal \lieg$, there is a **quotient** Lie algebra $\lieg/\lieh$ consisting of additive coset $x+ \lieh$, and a SES
+\[
+0\to \lieh \to \lieg \to \lieg/\lieh \to 0
+.\]
+- A Lie algebra $\lieg$ is **abelian** if $[xy] = 0$ for all $x,y\in \lieg$.
+  Any $k\dash$module can be made into an abelian Lie algebra by setting $[xy] \da 0$.
+- The **derived subalgebra** of $\lieg$ is $[\lieg \lieg] \normal \lieg$, the $k\dash$submodule of $\lieg$ generated by all brackets $[xy]$.
+  The largest abelian quotient of $\lieg$ is given by $\lieg / [\lieg \lieg]$.
+:::
+
+## Examples
+
+:::{.example title="?"}
+Let $A$ be any associative $k\dash$algebra, not necessarily with 1, and let $\lieg \da \Lie(A)$ be the same $k\dash$module with a bracket defined as $[xy] \da xy-yx$.
+One can check that this satisfies the Jacobi identity.
+So there is a functor
+\[
+\Lie: \kalg(\mathsf{Assoc}) \to \liealg_{/k} 
+.\]
+In particular, for $A \in \kalg(\Assoc)$ (e.g. $A=k$), the ring $\Mat(m\times m; A) \in \kalg(\Assoc)$ and can be mapped into Lie Algebras.
+We write 
+\[
+\gl_m(A) \da \Lie(\Mat(m\times m; A)) \cong \Lie(\Endo_k(A^m))
+,\]
+and often omit notation to write $\gl_m \da \gl_m(k)$ where $[xy] \da xy-yx$ as the **general linear Lie algebra** over $A$.
+:::
+
+:::{.example title="Important special cases"}
+Let $A \in \kalg(\Assoc, \Comm)$ be an associative commutative $k\dash$algebra, then 
+
+- $\liesl_m(A)$ is the **special linear Lie algebra**, which consists of all trace zero matrices in $\gl_m(A)$.
+
+- $\lieo_m(A)$ is the **orthogonal algebra** of all skew-symmetric matrices, i.e. $x^t = -x$.
+
+- $\liet_m(A)$ is the **upper triangular matrices**, so $x_{ij} = 0$ if $i>j$.
+
+- $\lien_m(A)$ are the **strictly upper triangular matrices**.
+
+- $\lied(A)$ are the **diagonal matrices**, so $x_{ij} = 0$ if $i\neq j$.[^torus_h]
+
+[^torus_h]: 
+Note that this is referred to as $\lieh$ or sometimes $\liet$, since it's the torus.
+
+:::
+
+:::{.definition title="Derivation Algebras"}
+Let $A \in \kalg$, not necessarily associative.
+A **derivation** $D$ of $A$ (or from $A$ to $A$) is a \(k\dash\)module endomorphism of $A$ satisfying the **Leibniz rule**:
+\[
+D(ab) = (Da)b + a(Db) && \forall a, b\in A
+.\]
+We write $\Der(A) \leq \Endo_k(A)$ as the $k\dash$submodule of all derivations.
+One can check that $[D_1, D_2]$ is again a derivation for derivations $D_i$, so $\Der(A) \in \liealg$ called the **derivation algebra** of $A$.
+:::
+
+:::{.definition title="Nilpotent Algebras"}
+Let $\lieg \in \liealg$, and define a decreasing sequence of ideals
+\[
+\lieg^0 &\da \lieg, \quad \lieg^1 \da [\lieg \lieg], \quad \cdots \lieg^n \da [\lieg^{n-1} \lieg] 
+.\]
+This yields the **lower central series**
+\[
+\lieg^0 \supseteq \lieg^1 \supseteq \cdots \supseteq \lieg^n \supseteq \cdots
+,\]
+and $\lieg$ is said to be **nilpotent** if $\lieg^n = 0$ for some $n$.
+:::
+
+:::{.example title="?"}
+For $\lieg \da \lien_m(A)$ the strictly upper triangular matrices, we have $x\in \lieg^n \iff x_{ij}=0$ unless $j \geq i + (n+1)$.
+So we get $n+1$ diagonals of all zeros:
+
+\[
+\begin{bmatrix}
+0               & 0 & \cdot & \cdot    & \cdot \\
+\vdots          & 0 & 0 &\cdot & \cdot \\
+\vdots               & \ddots & 0 & 0 & \cdot \\
+\vdots               &  \vdots& \ddots  & 0 & 0 \\
+0               & \cdots &  \cdots & \ddots & 0
+\end{bmatrix}
+\]
+
+
+:::
+
+:::{.definition title="Solvable Algebras"}
+Define
+\[
+\lieg^{(0)} \da \lieg, \quad
+\lieg^{(1)} \da [\lieg^{(0)} \lieg^{(0)}], \quad
+\lieg^{(n+1)} \da [\lieg^{(n)} \lieg^{(n)}]
+,\]
+which yields a decreasing sequence of ideals, the **derived series**,
+\[
+\lieg^{(0)}
+\supseteq 
+\lieg^{(0)}
+\supseteq
+\cdots
+\supseteq 
+\lieg^{(0)}
+\supseteq 
+\cdots
+,\]
+$\lieg$ is **solvable** if $\lieg^{(n)} = 0$ for some $n$.
+:::
+
+:::{.remark}
+Note that nilpotent implies solvable, since one can show by induction that $\lieg^{(n)} \subseteq \lieg^n$.
+:::
+
+:::{.example title="?"}
+For $\lieg = \liet_m(A)$ for $A$ commutative, the diagonal of the product is the product along the diagonals, so 
+
+- $\lieg^{(1)}$ are matrices with zeros on the diagonal,
+- $\lieg^{(2)}$ are matrices with zeros on 2 diagonals,
+- $\lieg^{(3)}$ are matrices with zeros on 4 diagonals,
+
+and so on, so $\lieg$ is solvable.
+On the other hand, taking brackets with one diagonal of zeros doesn't introduce new zero diagonals, and $\lieg^2 = \lieg^1$.
+So $\lieg$ is not nilpotent, provided $m\geq 2$
+:::
+
+:::{.remark}
+Next time: $\lieg\dash$modules.
+:::
+
+
+
+
+# Monday, April 12
+
+## Lie Algebra Homology
+
+:::{.remark}
+Last time: Lie algebras.
+Fix a cocommutative ring $k$, usually a field, then a Lie algebra $\lieg$ over $k$ is a $k\dash$module with a bilinear product called the bracket such that
+
+- $[xx] = 0$, so $[xy] = -[yx]$
+- The Jacobi identity holds.
+:::
+
+:::{.definition title="Modules over Lie algebras"}
+A left $\lieg\dash$module $M$ is a $k\dash$module with a $k\dash$bilinear product 
+\[
+\cdot: \lieg \tensor_k M &\to M \\
+x\tensor m &\mapsto x\cdot m
+\]
+which is compatible with the bracket in the following sense:
+\[
+[xy]m = x(ym) - y(xm) \quad  \forall x,y\in \lieg, m\in M \label{eq:assoc_formula_lie_algebra}
+,\]
+i.e. there is a Lie algebra morphism $\lieg \to \gl(M) \da \Lie( \Endo_k(M))$, the Lie algebra of the endomorphism algebra.
+
+:::
+
+:::{.example title="Algebra Commutators"}
+For $A \in \kalg(\Assoc)$ and $\lieg \in \Lie(A)$, then any $M\in \modsleft{A}$ (so the action is associative) can be made into an $M' \in \modsleft{\lieg}$ by the formula \cref{eq:assoc_formula_lie_algebra}.
+:::
+
+:::{.example title="Adjoint Representations"}
+Any Lie algebra $\lieg$ is a module over itself by the **adjoint representation**, where $\ad_x(\wait) \da [x, \wait]$.
+:::
+
+:::{.example title="Trivial Modules"}
+Any $M\in\modsleft{k}$ becomes a trivial $\lieg\dash$module by defining $xm = 0$ for all $x\in \lieg, m\in M$.
+Note that this is acting by zero instead of the identity: this is motivated from Lie algebras obtained from Lie groups by taking tangent spaces at the identity.
+A trivial group action on the elements would be the identity, but then taking its derivative acting on tangent vectors to curves would be zero.
+
+\
+
+There is a *unique* trivial $\lieg\dash$module, namely $k$ with this trivial action.
+:::
+
+:::{.definition title="Morphisms of Lie algebra modules"}
+A morphism $M \mapsvia{f} N$ of $\lieg\dash$modules is a morphism of $k\dash$modules commuting with the module action, so $f(xm) = x(fm)$ for $x\in \lieg, m\in M$.
+This yields $\Hom_\lieg(M, N) \leq \Hom_k(M, N)$ as a $k\dash$submodule.
+:::
+
+:::{.remark}
+This yields a category $\modsleft{\lieg} \leq \modsleft{k}$ which is a subcategory of $k\dash$modules, and this is in fact an abelian category.
+So we have notions of (co)kernels, injectives and projectives, etc.
+There is also a category $\modsright{\lieg}$, but these can be sent to left $\lieg\dash$modules by defining $x\cdot m \da -mx$ which makes $\lieg$ anticommutative.
+Thus there is an equivalence of categories
+\[
+\modsleft{\lieg} \mapsvia{\sim} \modsright{\lieg}
+,\]
+and so we usually just refer to left modules.
+:::
+
+:::{.remark}
+We'll want to take homology and cohomology.
+There are some relevant functors:
+
+- The trivial module functor:
+\[
+\Triv: \modsleft{k} \to \modsleft{\lieg}
+,\]
+which sends $M$ to itself, adding the structure of a trivial $\lieg\dash$action.
+- $\lieg\dash$invariants:
+\[
+(\wait)^\lieg: \liegmod &\to \kmod \\
+M &\mapsto M^g \da \ts{ x\in M \st xm = 0 \forall \,\, x\in \lieg}
+.\]
+
+    - This yields the largest $\lieg\dash$trivial submodule, and similarly $(\wait)^\lieg$ is right-adjoint to $\Triv$.
+  \[
+  \adjunction{\Triv}{(\wait)^\lieg}{\kmod}{\liegmod}
+  .\]
+    - There is an isomorphism 
+  \[
+  \ev_1: \Hom_\lieg(k, M)
+  &\mapsvia{\sim} 
+  M^\lieg \\
+  f &\mapsto f(1_k)
+  .\]
+  where $k$ is the trivial $\lieg\dash$module.
+
+- $\lieg\dash$coinvariants:
+\[
+(\wait)_\lieg: \liegmod &\to \kmod \\
+M &\mapsto M/\lieg M
+.\]
+
+  - This is the largest $\lieg\dash$trivial *quotient* of $M$, so this is left-adjoint to $\Triv$:
+  \[
+  \adjunction{(\wait)^\lieg}{\Triv}{\liegmod}{\kmod}
+  .\]
+
+> We might expect this is related to some tensor product, but it may not be clear what ring one should tensor over.
+
+:::
+
+:::{.remark}
+Assume that $\liegmod$ has enough projectives, which we'll see is true in a later section by identifying this with a category $\rmod$ of modules over a ring.
+:::
+
+:::{.definition title="Cohomology of Lie algebras"}
+Define the **(co)homology of $\lieg$ with coefficients in $M$** as
+\[
+H_n(\lieg; M) &\da \LL(\wait)_\lieg (M) \\
+H^n(\lieg; M) &\da \RR(\wait)^\lieg(M)
+.\]
+:::
+
+:::{.example title="?"}
+If $\lieg = \ts{ 0 }$, then $M^\lieg = M = M_\lieg$ and these functors are exact (and are essentially the identity) and thus their higher derived functors are zero.
+So $H^n(0; M) = 0 = H_n(0; M)$.
+:::
+
+## The Universal Enveloping Algebra
+
+:::{.remark}
+A better name might be the universal *associative* algebra.
+This plays an analogous role to the group algebra $\ZZG$ of a group.
+We'll assign an associative algebra $\Ug$ to $\lieg$, and there will be an equivalence of categories
+\[
+\modsleft{\lieg} \mapsvia{\sim} \modsleft{\Ug}
+,\]
+where we'll know that the latter has enough projectives and injectives, allowing us to compute homology and cohomology with injective and projective resolutions.
+:::
+
+:::{.definition title="Tensor Algebra"}
+For $k \in \CRing$ and $M\in \kmod$, and **tensor algebra** is defined as
+\[
+T(M) \da \bigoplus_{i\geq 0}  M^{\tensor_k n} \da k \tensor \bigoplus _{n\geq 1} M^{\tensor_k n}
+.\]
+
+:::
+
+:::{.remark}
+Note that $T(M) \in \kmod$ by extending the $k\dash$action over sums and tensor products in the obvious way, and in fact $T(M) \in \gr(\kalg)$ where tensors in different degrees are juxtaposed.
+Explicitly, for $m\in M^{\tensor n}$ and $m' \in M^{\tensor n'}$, we write $m\tensor m' \in M^{\tensor (n+n')}$, which is what it means to be a *graded* algebra.
+:::
+
+:::{.remark}
+There is an inclusion map 
+\[
+M = M^{\tensor 1} \injectsvia{\iota} T(M)_1 \injects T(M)
+.\]
+where $T(M)_j \da \bigoplus_{n\geq j} M^{\tensor n}$, and in fact $T(M)$ is generated as a $k\dash$algebra by $\iota(M)$.
+For example, for $m, m' \in M$, we have $\iota(m) \tensor \iota(m') \in T(M)_2$.
+This yields a functor
+\[
+T: \modsleft{k} \to \kalg(\Assoc, \mathsf{Unital})
+,\]
+as well as a forgetful functor
+\[
+\Forget: \kalg \to \kmod
+.\]
+The pair $(T, i)$ is a **universal** associative algebra in the following sense: if $M\in \kmod$ and $A\in \kalg(\Assoc)$, then there is a $k\dash$module morphism $M\to \Forget(A)$ making the following diagram commute:
+
+\begin{tikzcd}
+	\textcolor{rgb,255:red,214;green,92;blue,92}{M} && \textcolor{rgb,255:red,92;green,92;blue,214}{T(M)} \\
+	\\
+	&& \textcolor{rgb,255:red,92;green,92;blue,214}{A}
+	\arrow["f", color={rgb,255:red,214;green,92;blue,92}, from=1-1, to=3-3]
+	\arrow["{\exists ! \tilde f \in \kalg}", color={rgb,255:red,92;green,92;blue,214}, dashed, from=1-3, to=3-3]
+	\arrow["\iota", from=1-1, to=1-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJNIixbMCw2MCw2MCwxXV0sWzIsMiwiQSIsWzI0MCw2MCw2MCwxXV0sWzIsMCwiVChNKSIsWzI0MCw2MCw2MCwxXV0sWzAsMSwiZiIsMCx7ImNvbG91ciI6WzAsNjAsNjBdfSxbMCw2MCw2MCwxXV0sWzIsMSwiXFxleGlzdHMgISBcXHRpbGRlIGYgXFxpbiBcXGthbGciLDAseyJjb2xvdXIiOlsyNDAsNjAsNjBdLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19LFsyNDAsNjAsNjAsMV1dLFswLDIsIlxcaW90YSJdXQ==)
+
+
+
+Note that the red portion of the diagram happens in $\kmod$, while the blue portion is in $\kalg$, so this allows lifting module morphisms to algebra morphisms.
+Commuting here means that 
+\[
+f(m_1) f(m_2) = \tilde f(m_1 m_2) \da f( \iota(m_1) \tensor \iota(m_2))
+.\]
+There is thus a natural isomorphism
+\[
+\Hom_{\kmod}(M, \Forget(A)) \mapsvia{\sim} \Hom_{\kalg}( T(M), A)
+.\]
+
+:::
+
+
+
+
+
+
+
+
+
+
+
 
 
 
