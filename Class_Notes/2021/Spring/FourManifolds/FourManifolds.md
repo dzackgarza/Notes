@@ -72,7 +72,6 @@
 \newcommand{\PGL}[0]{\operatorname{PGL}}
 \newcommand{\GL}[0]{\operatorname{GL}}
 \newcommand{\Gl}[0]{\operatorname{GL}}
-\newcommand{\gl}[0]{\operatorname{GL}}
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
@@ -139,47 +138,58 @@
 \newcommand{\Cat}[0]{\mathsf{Cat}}
 \newcommand{\Fun}[0]{{\mathsf{Fun}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
-\newcommand{\alg}[0]{\mathsf{Alg}}
-\newcommand{\scalg}[0]{\mathsf{sCAlg}}
-\newcommand{\calg}[0]{\mathsf{CAlg}}
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
-\newcommand{\Perv}[0]{\mathsf{Perv}}
-\newcommand{\presh}[0]{{\mathsf{Presh}}}
-\newcommand{\Presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
 \newcommand{\sets}[0]{{\mathsf{Set}}}
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
 \newcommand{\Groups}[0]{{\mathsf{Groups}}}
-\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
-\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\ssets}[0]{\mathsf{sSets}}
-\newcommand{\Ring}[0]{\mathsf{Ring}}
-\newcommand{\grMod}[0]{{\mathsf{grMod}}}
-\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
-\newcommand{\Top}[0]{{\mathsf{Top}}}
-\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathsf{Sch}}}
-\newcommand{\sch}[0]{{\mathsf{Sch}}}
-\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\CRing}[0]{\mathsf{CRing}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
-\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
-\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
 \newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
-\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
-\newcommand{\Mod}[0]{{\mathsf{Mod}}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\gr}[0]{{\mathsf{gr}}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
+\newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
+\newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
+\newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Assoc}[0]{\mathsf{Assoc}}
+\newcommand{\Unital}[0]{\mathsf{Unital}}
+\newcommand{\Riem}[0]{\mathsf{Riem}}
+\newcommand{\Comm}[0]{\mathsf{Comm}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+
+\newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
-\newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
@@ -277,12 +287,18 @@
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
-\newcommand{\lieb}[0]{{\mathfrak{b}}}
-\newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
-\newcommand{\lieh}[0]{{\mathfrak{h}}}
-\newcommand{\lien}[0]{{\mathfrak{n}}}
+\newcommand{\liet}[0]{{\mathfrak{t}}}
+\newcommand{\lieo}[0]{{\mathfrak{o}}}
+\newcommand{\lied}[0]{{\mathfrak{d}}}
+\newcommand{\liegl}[0]{{\mathfrak{gl}}}
+\newcommand{\gl}[0]{{\mathfrak{gl}}}
 \newcommand{\liesl}[0]{{\mathfrak{sl}}}
+\newcommand{\Ug}[0]{{\mathcal{U}(\mathfrak{g}) }}
+\newcommand{\Uh}[0]{{\mathcal{U}(\mathfrak{h}) }}
+\newcommand{\lieb}[0]{{\mathfrak{b}}}
+\newcommand{\lien}[0]{{\mathfrak{n}}}
+\newcommand{\lieh}[0]{{\mathfrak{h}}}
 \newcommand{\lieso}[0]{{\mathfrak{so}}}
 \newcommand{\liesp}[0]{{\mathfrak{sp}}}
 \newcommand{\lieu}[0]{{\mathfrak{u}}}
@@ -359,7 +375,6 @@
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
-\newcommand{\Hom}[0]{{\operatorname{Hom}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -378,8 +393,6 @@
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
 \newcommand{\rad}[0]{{\operatorname{rad}}}
-\newcommand{\ralg}[0]{\operatorname{R-alg}}
-\newcommand{\kalg}[0]{k\dash\operatorname{alg}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -428,7 +441,7 @@
 \newcommand{\covers}[0]{\rightrightarrows}
 \newcommand{\units}[0]{^{\times}}
 \newcommand{\nonzero}[0]{^{\bullet}}
-\newcommand{\wait}[0]{{\,\cdot\,}}
+\newcommand{\wait}[0]{{-}}
 \newcommand{\wt}[0]{{\operatorname{wt}}}
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \renewcommand{\div}[0]{\operatorname{Div}}
@@ -464,6 +477,7 @@
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
+\DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\proj}{Proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
@@ -5266,6 +5280,36 @@ and the first space will be the space of holomorphic 1-forms $H^0(K_C)$, and the
 This shows the power of the Hodge decomposition theorem!
 :::
 
+# Friday, March 26th
+
+
+:::{.remark}
+Recall the Hodge decomposition theorem.
+Let $(M, g) \in \Mfd_\RR^n(\Riem, \cpt)$, then choosing an orthonormal basis \( \ts{ v_j } \) for $T_p M$ yields a corresponding orthonormal basis in $T_p\dual M \da \Hom_\RR(T_p M, \RR)$ given by taking \( \ts{ e_i \st e_i(v_j) = \delta_{ij} } \).
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-15_23-21.pdf_tex} };
+\end{tikzpicture}
+
+
+There is a map
+\[
+\hodgestar: \Wedge^k T_p\dual M &\to \Wedge^{n-k} T_p\dual M \\
+\Wedge_{j=1}^k e_{i_j} &\mapsto \pm \Wedge_{\ell = 1}^{n-k} e_{j_\ell}
+\]
+where the $e_{j}$ are defined such that $\Wedge_{j=1}^k e_{i_j} \wedge \Wedge_{\ell = 1}^{n-k} e_{j_\ell} \da \dV$, where $\dV$ is the volume form on $M$ at $p$.
+Thus we have a map
+\[
+\hodgestar: \Omega^k &\to \Omega^{n-k} \\ 
+1 &\mapsto \dV
+.\]
+ We defined $d^\dagger \da \stardstar$, and said a form \( \omega \) was *harmonic* iff $\Delta \omega=0$, where \( \Delta \da dd^\dagger + d^\dagger d \).
+ The space of such forms was denoted \( \mathcal{H}^k(M) \subseteq \Omega^k(M)  \).
+
+:::
+
+
 # Monday, March 29
 
 :::{.remark}
@@ -6113,6 +6157,18 @@ and so $g(C) = 2$.
 # Friday, April 09
 
 :::{.remark}
+
+Recall the adjunction formula: for $D \subset X \in \Mfd_\CC$ a codimension 1 complex submanifold, we have
+\[
+K_D = (K_x + \OO_x(0)) \ro{}{D}
+.\]
+We'll apply this to curves $C$ in a surface $S$.
+Recall the genus formula, which was given by $2g(C) - 2= (C+ K_S)\cdot C$.
+For example, a degree 4 equation in $\PP^2$ carves out a genus $g(C) = 3$ complex curve.
+
+:::
+
+:::{.remark}
 Recall that line bundles on $\CP^n$ were in bijection with $\ZZ$, where send $d$ to a bundle $\OO(d) \da \OO_{\CP^N}(d)$.
 We produced the tautological line bundle $\OO(-1)$ whose fiber over $\vector x \subseteq \CP^n$ is the line in $\CC^n$ spanned by its coordinates. 
 We have $\OO(-1)\dual \da \OO(1)$, and $\OO(n)\da \OO(1)^{\otimes n}$.
@@ -6120,7 +6176,7 @@ Alternatively, it was characterized in terms of homogeneous functions, where the
 Noting that these are linear functions, such $L$ form a 1-dimensional $\CC\dash$vector space.
 :::
 
-:::{.example title="?"}
+:::{.example title="K3 Surfaces"}
 The classic example is $x_0 \in \OO(1)_{\vector x}$ since $x_0( \lambda p) = \lambda x_0 (p)$.
 Similarly, $x_0^2 + x_1 x_2 \in \OO(2)_{\vector x}$ since 
 \[
@@ -6153,7 +6209,7 @@ So quartics in $\PP^3$ have trivial canonical bundle, i.e. $K_S = \OO_S$ for $S 
 :::
 
 :::{.remark}
-We know that $H^o(S, K_S)$ are the globally holomorphic 2-forms on $S$, and here this is isomorphic to $H^0(S, \OO_S) = \CC \Omega_S$ for some single holomorphic 2-form.
+We know that $H^0(S, K_S)$ are the globally holomorphic 2-forms on $S$, and here this is isomorphic to $H^0(S, \OO_S) = \CC \Omega_S$ for some single holomorphic 2-form.
 Moreover $\div (\Omega_S) = 0$ since $\OO( \div ( \Omega_S)) = K_S = \OO_S$.
 So these are the analogs of elliptic curves in dimension 2, since for example $E \da \CC/ \Lambda$ has a nonvanishing section $\dz \in H^0(E, K_E)$, and we can write $E = V(f)$ for $f$ a cubic in $\PP^3$, and we computed the genus of cubics.
 Moreover, every genus 1 curve is $\CC$ mod a lattice.
@@ -6265,7 +6321,7 @@ For $S$ a cubic surface, $H^0(S; K_S) = 0$.
 This follows because $K_S = \OO_S(-1)$, so $K_S\inv = \OO_S(1)$ which has a nontrivial section: namely $\OO_{\CP^1}(1)$ which has sections vanishing along hyperplanes.
 
 \begin{tikzpicture}
-\fontsize{44pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-12_14-06.pdf_tex} };
 \end{tikzpicture}
 
@@ -6409,4 +6465,362 @@ So we can "tensor" the Hodge diamonds:
 :::{.remark}
 Check out complete intersections.
 :::
+
+
+# Blowups and Blowdowns (Wednesday, April 14)
+
+
+:::{.definition title="?"}
+Let $S \in \Mfd_\CC^2$ be a complex surface and $p\in S$ a point, and let $(x, y)$ be local holomorphic coordinates on a neighborhood of $U$ containing $p$.
+Without loss of generality, $p = (0, 0)$ in these coordinates.
+Set $U^* \da U \smts{p}$, and consider the holomorphic map 
+\[
+\phi: U^* &\to U \cross \CP^2 \\
+(x, y) & \mapsto ( (x, y), [x: y] )
+.\]
+We'll define the **blowup at $p$** to be $\Bl_p(U) \cl(\phi(U^*))$ to be the closure of the image of $U^*$.
+:::
+
+
+:::{.observation}
+There is a map $\Bl_p(U) \to U$ given by projection onto the first coordinate which is the identity on $U^*$.
+
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_13-56.pdf_tex} };
+\end{tikzpicture}
+
+Here $q$ maps to the pair $(q, s)$ where $s$ is the slope of a line through $q$, and this will be continuous.
+
+\todo[inline]{? Missed part}
+
+We claim that $\pi_U\inv(0, 0) \subset \Bl_p(U) = \ts{ p } \cross \CP^1$, and for a fixed $9x_0, y_0) \in U^*$, considering $\phi(x_0 t, y_0 t)$ as $t\to 0$, we can write
+\[
+( (x_0 t, y_0 t), [x_0: y_0] ) \in U \cross \CP^1 \\
+\converges{t\to 0} ( (0, 0) [x_0: y_0] ) \subset \cl(\phi(U^*))
+.\]
+So approaching $(0, 0)$ along any slope $s$ just yields the point $(0, s)$ in the blowup.
+:::
+
+
+:::{.remark}
+We can thus write
+\[
+\Bl_pS S \smts{p} \disjoint_{U^*} \Bl_p U
+.\]
+
+Writing $\pi: \Bl_pS\to S$, we have $\pi\inv(p) \cong \CP^1$ and $\pi\inv(q)$ is a point for all $q\neq p$.
+Then all limits approaching $p$ in $S$ turn into distinct limit points in $\Bl_p(S)$
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_14-06.pdf_tex} };
+\end{tikzpicture}
+:::
+
+:::{.slogan}
+The blowup separates all tangent directions at $p$.
+:::
+
+
+:::{.example title="?"}
+Consider
+\[
+\ts{ y^2 = x^3 - x^2 } \subseteq \CC^2
+.\]
+
+This yields a nodal curve with a double-point:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_14-11.pdf_tex} };
+\end{tikzpicture}
+
+Here we'll consider $\Bl_{(0, 0)} \CC^2$.
+
+
+:::{.definition title="Strict Transform"}
+Letting $C \subset S$ be a curve, define the **strict transform**
+\[
+\hat C \da \cl( \pi\inv(C \smts{p} ) )
+.\]
+:::
+
+Note that approaching by different sequences yields different limiting slopes
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_14-15.pdf_tex} };
+\end{tikzpicture}
+
+The curve in the blowup is called the **exceptional divisor**.
+:::
+
+:::{.example title="?"}
+Consider all lines in $\CP^2$ through $[0:0:1]$, which we can model in the following way:
+
+![image_2021-04-14-14-18-15](figures/image_2021-04-14-14-18-15.png)
+
+These are in bijection with $\CP^1$ since there is always a unique line through $[0:0:1]$ and $[s:t:0]$, where the latter is a copy of $\CP^1$ as $s,t$ are allowed to vary.
+So consider $\Bl_{p}\CP^2$ for $p=[0:0:1]$, and consider the strict transforms of the lines $L$ to obtain $\hat L \subset \Bl_p \CP^2$.
+Any two are disjoint since they pass through different slopes of the exceptional divisor.
+Thus the red lines in the blowup go through distinct slopes, yielding a fibration of $\CP^1$s:
+
+![image_2021-04-14-14-24-31](figures/image_2021-04-14-14-24-31.png)
+
+
+So consider the map
+\[
+\sigma: \Bl_p \CP^2 &\to \CP^2 \\
+p \in \hat{L} &\mapsto [0:s:t]
+.\]
+
+which projects points to the boundary copy of $\CP^1$:
+
+![](figures/image_2021-04-14-14-25-44.png)
+
+We can't necessarily project from the blue point itself, but if we add in the data of a tangent vector at that point, the map becomes well-defined.
+Thus the blowup makes projecting from a point in $\CP^2$ to a line in $\CP^2$ a well-defined map on $\Bl \CP^2$.
+:::
+
+:::{.remark}
+This is referred to as $\FF_1$, the **first Hirzebruch surface**.
+:::
+
+
+:::{.proposition title="?"}
+For $S\in \Mfd_\RR(C^\infty)$ a smooth manifold, we can identify
+\[
+\Bl_p S = S \connectsum \bar{\CP^2}
+.\]
+
+:::
+
+
+:::{.proof title="?"}
+It suffices to work in coordinate charts and prove this for $p=0$.
+
+
+:::{.claim}
+\[
+\Bl_0 \CC^2 = \Tot( \OO_{\CP^1}(-1) )
+.\]
+:::
+Recall that this was the tautological line bundle that whose fibers at a point $p\in \CP^1$ was the line in $\CC^2$ spanned by $p$.
+We can write this as \( \ts{ [x:y] \st (x, y) \in L_{[x:y]} } \):
+
+![image_2021-04-14-14-32-58](figures/image_2021-04-14-14-32-58.png)
+
+We have $\OO(-1) \mapsvia{\sim} \bar{\OO(1)}$, where this map is a diffeomorphism that can be constructed using a Hermitian metric.
+However we can identify $\OO(1)$ with the set of lines in $\CP^2$ through $[0:0:1]$, leaving out the point $[0:0:1]$ itself.
+This follows by checking that there exists a section that vanishes at only one point.
+In fact $\Tot \OO(1)$ is diffeomorphic to the complement of a ball in $\CP^2$, which ends up precisely being taking a connect-sum.
+So we obtain $\Bl_{0} \CC^2 \cong \CC^2 \connectsum \bar{\CP^2}$.
+:::
+
+
+:::{.proof title="Alternative"}
+Cut out a ball $B^4 \subseteq \CC^2$, so $\bd B^4 = S^3 = \ts{ \abs x^2 + \abs y^2 = \eps }$.
+Then $\Bl_0 \CC^2$ is the result of collapsing $S^3$ along an $S^1\dash$foliation $(e^{i\theta} x, e^{i\theta}y)$.
+This has an $S^2$ quotient, yielding the Hopf fibration
+\[
+S^1 \injects S^3 \to S^2
+.\]
+
+
+:::
+
+
+:::{.exercise title="?"}
+Show that the blowup over $\RR$ is gluing in a mobius strip.
+:::
+
+
+See the Tate curve!
+
+
+
+
+
+
+
+
+
+# Friday, April 16
+
+:::{.remark}
+Last time: we defined the blowup $\Bl_0\CC^2$ as the closure of 
+\[ 
+\Bl_0 \CC^2 \da \cl
+\ts{ (x, y), [x:y] \st (x, y) \neq 0 } \subseteq \CC^2 \cross \CP^2 
+.\]
+This had the effect of adding in all limits of slopes as points approach $(0, 0) \in \CC^2$.
+We defined this using local holomorphic coordinate charts to $\CC^2$.
+Why is this a complex manifold?
+We can cover it with charts: given a point $(x, \mu)$ where $\mu = {y \over x}\in \PP^1$ is a slope, we can form a first chart by sending
+\[
+(x, \mu) \mapsto \ts{ (x, x\mu), [1: \mu] }
+.\]
+This yields the first chart, as long as the slope is not infinite, so this applies to all finite slopes.
+The second chart will work for all nonzero slopes, where we take 
+\[
+(v, y)\in \CC^2 \mapsto \ts{ (yv, y), [v: 1] }
+.\]
+Note that restricting to $(x, y) = (0, 0)$, these give the standard $\CC\dash$charts on $\CP^2$.
+How do these two charts glue?
+When $\mu, \nu \neq 0$, we have well-defined transition functions $\mu = \nu ^{-1}$ and $x=y\nu$.
+:::
+
+:::{.remark}
+Recall that for a complex curve $C \in \Mfd_\CC^2$, we have the blowup morphism $\pi: \Bl_pS\to S$ and we defined the **strict transform** 
+$\hat{C} \da \cl \pi\inv(C\sm\ts{\pt})$.
+
+\begin{tikzpicture}
+\fontsize{42pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-02.pdf_tex} };
+\end{tikzpicture}
+
+Here $E=\CP^1$ is the exceptional curve of the blowup, and intersects the curve twice.
+This has the effect of changing $D$ into an embedded curve.
+
+> Note that here $\pi^* D = \hat{D} + 2E$, where we'll define this next.
+
+:::
+
+:::{.definition title="Pullback of a Curve"}
+The **pullback** of $C$, denoted $\pi^* C$, is constructed by writing $C = V(f)$ locally.
+We then set $\pi^* C \da V( \pi^* f)$.
+:::
+
+:::{.example title="?"}
+Take $C \da \ts{ y=x } \subset \CC^2$ and consider $\Bl_0 \CC^2$.
+Then 
+\[
+\hat{C}  \da \cl \ts{ \qty{ (x, x), [x:x]} \st x\neq 0  } = \cl \ts{ \qty{ (x, x), [1:1] } \st x\neq 0 } \subset \Bl_0 \CC^2
+.\]
+By projecting onto the first component, $\pi:\hat{C} \mapsvia{\sim} C$ is an isomorphism.
+We can compute the pullback: we first have $\pi^* C = \pi^* V(y-x) = V( \pi^*(y-x))$, so consider $\pi^*(y-x)$ in the coordinate chart $(x, \mu)$.
+In this chart, $y=x\mu$, and so $\pi^*(y-x) = x\mu - x = x(\mu - 1)$, and so
+\[
+V(\pi^*(y-x)) = V(x) + V(\mu -1) \implies \pi^* C = E + \hat{C} \text{ as a divisor}
+.\]
+
+:::
+
+:::{.example title="A nodal curve"}
+Take the nodal curve $C = \ts{ y^2 - x^3 + x^2 }$:
+
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-15.pdf_tex} };
+\end{tikzpicture}
+
+The pullback is then given by
+\[
+\pi^* C 
+&= V( \pi^* (y^2 - x^3 + x^2) ) \\
+&= V(\mu^2x^2 -x^3 + x^2) \\
+&= V(x^2) + V(\mu^2 - x + 1) \\
+&= 2V(x) + V(\mu^2 -x + 1)
+.\]
+
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-17.pdf_tex} };
+\end{tikzpicture}
+
+In the second coordinate chart, we have
+\[
+\pi^* C = V(y^2 - y^4 \nu^3 +y^2 \nu^2) = 2V(y) + V(1-y\nu^3 + \nu^2
+.\]
+
+\begin{tikzpicture}
+\fontsize{43pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-21.pdf_tex} };
+\end{tikzpicture}
+
+Gluing along $\mu, \nu \neq 0$ we get the following picture for $\pi^* C$:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-22.pdf_tex} };
+\end{tikzpicture}
+
+Writing $C = \ts{ x=0 }$, note that $\hat{C}$ doesn't intersect the first coordinate chart.
+In the $\mu, x$ coordinate chart, for example, we can't get an infinite slop:
+
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-25.pdf_tex} };
+\end{tikzpicture}
+
+:::
+
+## Change in Canonical Bundle Formula
+
+
+
+:::{.question}
+Given \( \Omega^2_S = K_S \to S \) the canonical line bundle, can we relate $K_{\Bl_p S}$ to $K_S$?
+:::
+
+
+:::{.proposition title="?"}
+\[
+K_{\Bl_p S} = \pi^* K_S \tensor \OO_S(E)
+.\]
+:::
+
+
+:::{.proof title="?"}
+We'll abbreviate $\hat{S} \da \Bl_p(S)$.
+Let $\omega$ be a local section of $K_S$ near $p$, and in coordinate charts $(x, y)$, write $\omega = dx \wedge dy$.
+In the first coordinate chart on the blowup, we can write
+\[
+\pi^* \omega = dx \wedge d(x\mu) = dx \wedge (\mu dx + x d\mu) = x\,dx\wedge d\mu
+.\]
+Note that $V(x) = E$, and that pulling back the canonical bundle yields something vanishing to order 1 (?).
+So $\pi^* K_S$ is isomorphic to the subsheaf of $K_{\hat S}$ whose sections vanish along $E$, which is isomorphic to $K_{\hat{S}} \tensor \OO(-E)$, since the latter are the functions which vanish along $E$.
+Tensoring both sides with $\OO(E)$ yields 
+\[
+K_{\hat{S}} = \pi^* K_S \tensor \OO_{\hat S}(E)
+\]
+as a line bundle, or in divisor notation $K_{\hat S} = \pi^* K_S + E$ where we take the divisor representing the line bundle instead.
+:::
+
+
+:::{.remark}
+Using $\pi: \hat{S}\to S$, we get pullback maps
+\[
+\pi^*: H^2(S; \ZZ) &\to H^2(\hat{S}; \ZZ) \\
+\pi^*: \Div(S) &\to \Div(\hat{S})
+.\]
+These are compatible in the sense that 
+\[
+[\pi^* C] = \pi^* [C]
+.\].
+This can be seen by expressing $\OO_S(C) \cong \OO_S(A-b)$ for $A, B$ hyperplane section.
+We can assume $A, B$ avoid $p$ in their projective embeddings, making $[C] = [A] - [B]$ since $c_1(\OO_S(c)) = [C]$ is the fundamental class of $C$.
+So it suffices to prove the formula for curves *not* passing through $p$, but this is obvious!
+It follows from the fact that $\pi: \hat{S} \sm E \mapsvia{\sim} S\sm\ts{p}$ is an isomorphism.
+:::
+
+
+:::{.remark}
+In fact, 
+\[
+H^2(\hat S; \ZZ) \cong \pi^* H^2(S, \ZZ) \oplus \ZZ[E]
+.\], which follows from Mayer-Vietoris.
+So this adds one to the rank.
+:::
+
+
+
+
+
+
+
+
 

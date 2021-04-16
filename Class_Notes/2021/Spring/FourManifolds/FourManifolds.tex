@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-12 }
+{\tiny \textit{Last updated:} 2021-04-16 }
 \end{flushleft}
 
 
@@ -496,7 +496,7 @@ Conversely, every \textbf{unimodular} bilinear form appears as
 \(H^2(X; {\mathbb{Z}})\) for some \(X\), i.e.~the pairing induces a map
 \begin{align*}
 H^2(X; {\mathbb{Z}}) &\to H^2(X; {\mathbb{Z}})^\vee\\
-\alpha \mapsto {\left\langle { \alpha },~{ {\,\cdot\,}} \right\rangle}
+\alpha \mapsto {\left\langle { \alpha },~{ {-}} \right\rangle}
 .\end{align*}
 which is an isomorphism. This is essentially a classification of
 simply-connected 4-manifolds.
@@ -774,8 +774,8 @@ We say \(\mathcal{F}\) is a \textbf{sheaf} if additionally:
 \begin{example}[?]
 
 Let \(X\) be a topological manifold, then
-\(\mathcal{F}\coloneqq C^0({\,\cdot\,}, {\mathbb{R}})\) the set of
-continuous functionals form a sheaf. We have a diagram
+\(\mathcal{F}\coloneqq C^0({-}, {\mathbb{R}})\) the set of continuous
+functionals form a sheaf. We have a diagram
 
 \begin{center}
 \begin{tikzcd}
@@ -808,12 +808,12 @@ continuous functions glue.
 Recall that we discussed various structures on manifolds: PL,
 continuous, smooth, complex-analytic, etc. We can characterize these by
 their sheaves of functions, which we'll denote \({\mathcal{O}}\). For
-example, \({\mathcal{O}}\coloneqq C^0({\,\cdot\,}; {\mathbb{R}})\) for
+example, \({\mathcal{O}}\coloneqq C^0({-}; {\mathbb{R}})\) for
 topological manifolds, and
-\({\mathcal{O}}\coloneqq C^ \infty ({\,\cdot\,}; {\mathbb{R}})\) is the
-sheaf for smooth manifolds. Note that this also works for PL functions,
-since pullbacks of PL functions are again PL. For complex manifolds, we
-set \({\mathcal{O}}\) to be the sheaf of holomorphic functions.
+\({\mathcal{O}}\coloneqq C^ \infty ({-}; {\mathbb{R}})\) is the sheaf
+for smooth manifolds. Note that this also works for PL functions, since
+pullbacks of PL functions are again PL. For complex manifolds, we set
+\({\mathcal{O}}\) to be the sheaf of holomorphic functions.
 
 \end{remark}
 
@@ -1108,7 +1108,7 @@ glues to \(z\), which is nontrivial.
 
 Redefine the cokernel so that it is a sheaf. Hint: look at
 sheafification, which has the defining property
-\({\operatorname{Hom}}_{{\mathsf{Presh}}}(\mathcal{G}, \mathcal{F}^{\mathsf{Presh}}) ={\operatorname{Hom}}_{{\mathsf{Sh}}}( \mathcal{G}, \mathcal{F}^{{\mathsf{Sh}}})\)
+\(\mathop{\mathrm{Hom}}_{{\mathsf{Presh}}}(\mathcal{G}, \mathcal{F}^{\mathsf{Presh}}) =\mathop{\mathrm{Hom}}_{{\mathsf{Sh}}}( \mathcal{G}, \mathcal{F}^{{\mathsf{Sh}}})\)
 for any sheaf \(\mathcal{G}\).
 
 \end{exercise}
@@ -1145,7 +1145,7 @@ by \(H^0( X; \mathcal{F}) = \mathcal{F}(X)\).
 \begin{remark}
 
 Given vector bundles \(V, W\), we have constructions
-\(V \oplus W, V \otimes W, V^\vee, {\operatorname{Hom}}(V, W) = V^\vee\otimes W, \operatorname{Sym}^n V, \bigwedge^p V\),
+\(V \oplus W, V \otimes W, V^\vee, \mathop{\mathrm{Hom}}(V, W) = V^\vee\otimes W, \operatorname{Sym}^n V, \bigwedge^p V\),
 and so on. Some of these work directly for sheaves:
 
 \begin{itemize}
@@ -1162,7 +1162,7 @@ and so on. Some of these work directly for sheaves:
 
 \begin{warnings}
 
-\({\operatorname{Hom}}(V, W)\) will denote the \emph{global}
+\(\mathop{\mathrm{Hom}}(V, W)\) will denote the \emph{global}
 homomorphisms \(\mathscr{H}\kern-2pt\operatorname{om}(V, W)(X)\), which
 is a sheaf.
 
@@ -2111,7 +2111,7 @@ properties:
 \begin{itemize}
 \item
   Functoriality: given
-  \(f\in {\operatorname{Hom}}_{\mathsf{Top}}(X, Y)\), there is a
+  \(f\in \mathop{\mathrm{Hom}}_{\mathsf{Top}}(X, Y)\), there is a
   pullback \(f^*: H^i(Y; {\mathbb{Z}}) \to H^i(X; {\mathbb{Z}})\).
 \item
   The cap product: a pairing
@@ -2129,7 +2129,7 @@ properties:
   Poincaré Duality: If \(X\) is an oriented manifold, there exists a
   fundamental class
   \([X] \in H_{n}(X; {\mathbb{Z}}) \cong {\mathbb{Z}}\) and
-  \(({\,\cdot\,})\cap X: H^i \to H_{n-i}\) is an isomorphism.
+  \(({-})\cap X: H^i \to H_{n-i}\) is an isomorphism.
 \end{itemize}
 
 \end{theorem}
@@ -2284,7 +2284,7 @@ pairing (potentially after modding out by torsion) which realizes an
 isomorphism:
 \begin{align*}
 \qty{ H^n(M; {\mathbb{Z}})/{\operatorname{tors}}}^\vee&\xrightarrow{\sim} H^n(M; {\mathbb{Z}})/{\operatorname{tors}}\\
-\alpha \smile{\,\cdot\,}&\mapsfrom \alpha
+\alpha \smile{-}&\mapsfrom \alpha
 ,\end{align*}
 where the LHS are linear functionals on cohomology.
 
@@ -2336,7 +2336,7 @@ The lattice \((L, \cdot)\) is \textbf{unimodular} if and only if the
 following map is an isomorphism:
 \begin{align*}
 L &\to L^\vee\\
-\ell &\mapsto \ell \cdot ({\,\cdot\,})
+\ell &\mapsto \ell \cdot ({-})
 .\end{align*}
 
 \end{definition}
@@ -2413,11 +2413,10 @@ If \((L, \cdot)\) is nondegenerate, then Gram-Schmidt will yield an
 orthonormal basis \(\left\{{ v_i }\right\}\). The number of positive
 norm vectors is an invariant, so we obtain \({\mathbb{R}}^{p, q}\) where
 \(p\) is the number of \(+1\)s in the Gram matrix and \(q\) is the
-number of \(-1\)s. The \textbf{signature} of \((L, {\,\cdot\,})\) is
-\((p, q)\), or by abuse of notation \(p-q\). This is an invariant of the
-4-manifold, as is the lattice itself
-\(H^2(X; {\mathbb{Z}})/{\operatorname{tors}}\) equipped with the
-intersection form.
+number of \(-1\)s. The \textbf{signature} of \((L, {-})\) is \((p, q)\),
+or by abuse of notation \(p-q\). This is an invariant of the 4-manifold,
+as is the lattice itself \(H^2(X; {\mathbb{Z}})/{\operatorname{tors}}\)
+equipped with the intersection form.
 
 \end{remark}
 
@@ -2460,9 +2459,9 @@ can also view
 \begin{remark}
 
 Recall that a lattice is \textbf{unimodular} if the map
-\(L\to L^\vee\coloneqq{\operatorname{Hom}}(L, {\mathbb{Z}})\) is an
-isomorphism, where \(\ell \mapsto \ell \cdot ({\,\cdot\,})\). To check
-this, it suffices to check if the Gram matrix \(M\) of a basis
+\(L\to L^\vee\coloneqq\mathop{\mathrm{Hom}}(L, {\mathbb{Z}})\) is an
+isomorphism, where \(\ell \mapsto \ell \cdot ({-})\). To check this, it
+suffices to check if the Gram matrix \(M\) of a basis
 \(\left\{{e_i}\right\}\) satisfies
 \({\left\lvert { \det M } \right\rvert} = 1\).
 
@@ -3445,7 +3444,7 @@ thus continue this resolution using the Leibniz rule:
 0 \to \mathcal{F} \to C^{\infty } \mathcal{F} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} F \otimes A^{0, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} \cdots F \otimes A^{0, 2} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} \cdots
 ,\end{align*}
 which is an exact sequence of sheaves since
-\((A^{0, {\,\cdot\,}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)\)
+\((A^{0, {-}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)\)
 is exact.
 
 \todo[inline]{Why? Split into line bundles?}
@@ -4917,11 +4916,11 @@ Here the symbol
 \(\sigma(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)\)
 replace \({\frac{\partial }{\partial t {\overline{{z}}}_i}\,}\) with the
 corresponding function on \(T^\vee X\), say \({\overline{{y}}}_i\). Then
-\(\sigma( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) = \sum_i {\overline{{y}}}_i \, d{\overline{{z}}}_i \wedge ({\,\cdot\,}) = {\overline{{ \alpha }}} \wedge ({\,\cdot\,})\).
+\(\sigma( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) = \sum_i {\overline{{y}}}_i \, d{\overline{{z}}}_i \wedge ({-}) = {\overline{{ \alpha }}} \wedge ({-})\).
 As before, at a point \((p, \alpha)\) where \(\alpha\neq 0\) in
 \(T^\vee X\), we get
 \begin{align*}
-0 \to \mathcal{E}_p \xrightarrow{{\overline{{ \alpha}}} \wedge ({\,\cdot\,})} \mathcal{E}_p \otimes\bigwedge^{0, 1}_p X \xrightarrow{{\overline{{ \alpha }}} \wedge ({\,\cdot\,})} \mathcal{E}_p \otimes\bigwedge^{0, 2} X \to \cdots
+0 \to \mathcal{E}_p \xrightarrow{{\overline{{ \alpha}}} \wedge ({-})} \mathcal{E}_p \otimes\bigwedge^{0, 1}_p X \xrightarrow{{\overline{{ \alpha }}} \wedge ({-})} \mathcal{E}_p \otimes\bigwedge^{0, 2} X \to \cdots
 ,\end{align*}
 which is an exact sequence of vector spaces. So
 \(( \mathcal{E} \otimes A^{0, p}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)\)
@@ -5041,10 +5040,10 @@ Letting \(d=\dim X = 2n\), we have
 
 We have prove HRR using this theorem: we have
 \begin{align*}
-\chi(X, \mathcal{E} ) = \chi( \mathcal{E} \otimes A^{0, {\,\cdot\,}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \overset{\text{ASIT}}{=} \int_X { \operatorname{ch}(\mathcal{E} \otimes A^{0, {\,\cdot\,}} ) \over {\operatorname{eul}}(X) } \mathrm{td}(TX \otimes_R {\mathbb{C}})
+\chi(X, \mathcal{E} ) = \chi( \mathcal{E} \otimes A^{0, {-}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \overset{\text{ASIT}}{=} \int_X { \operatorname{ch}(\mathcal{E} \otimes A^{0, {-}} ) \over {\operatorname{eul}}(X) } \mathrm{td}(TX \otimes_R {\mathbb{C}})
 .\end{align*}
 We have
-\(\operatorname{ch}( \mathcal{E} \otimes A^{0, {\,\cdot\,}} ) = \operatorname{ch}(\mathcal{E}) \operatorname{ch}( A^{0, {\,\cdot\,}} )\)
+\(\operatorname{ch}( \mathcal{E} \otimes A^{0, {-}} ) = \operatorname{ch}(\mathcal{E}) \operatorname{ch}( A^{0, {-}} )\)
 where
 \(\operatorname{ch}(A^{0, 1}) = \sum_I (-1)^i \operatorname{ch}(\bigwedge^i A^{0, 1} )\).
 The Chern roots of
@@ -5186,7 +5185,7 @@ g: TX \otimes TX \to {\mathbb{R}}
 This determines an isomorphism
 \begin{align*}
 T_p X &\xrightarrow{\sim} T_p^\vee X\\
-v &\mapsto g(v, {\,\cdot\,})
+v &\mapsto g(v, {-})
 ,\end{align*}
 which we can invert to get a metric on the cotangent bundle
 \(T^\vee X\). This induces a metric on \(i{\hbox{-}}\)forms using the
@@ -5611,7 +5610,7 @@ That additionally satisfies unique gluing on double overlaps.
 Any reasonable class of functions whose behavior is only locally
 restricted. Examples are being smooth or continuous, but e.g.~being
 constant is a global condition. Other examples include
-\(X\in {\mathsf{Mfd}}^n(C^\infty({\,\cdot\,}, {\mathbb{R}}))\), denoting
+\(X\in {\mathsf{Mfd}}^n(C^\infty({-}, {\mathbb{R}}))\), denoting
 \({\mathcal{O}}\) the sheaf of smooth functions. This also carries a
 sheaf of \emph{abelian groups} \(\Omega^p\). In the special case where
 \(U\) is a coordinate chart, we have functions
@@ -5659,8 +5658,7 @@ and under these substitutions in the original expression we obtain
 
 \begin{remark}
 
-For
-\(X \in {\mathsf{Mfd}}(\mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}}))\)
+For \(X \in {\mathsf{Mfd}}(\mathop{\mathrm{Hol}}({-}, {\mathbb{C}}))\)
 such that
 \(\varphi_V \circ \varphi_U ^{-1} : \varphi_U( U \cap V) \to \varphi_V(U \cap V)\)
 is holomorphic, so
@@ -6203,14 +6201,13 @@ despite mapping isomorphically to de Rham cohomology.
 
 This was just in the case of a real smooth Riemannian manifold. What
 extra structure to we have for
-\(X \in {\mathsf{Mfd}}(\mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}}) )\)?
+\(X \in {\mathsf{Mfd}}(\mathop{\mathrm{Hol}}({-}, {\mathbb{C}}) )\)?
 
 \end{remark}
 
 \begin{definition}[Kähler Forms (Important!)]
 
-Let
-\(X\in {\mathsf{Mfd}}( \mathop{\mathrm{Hol}}({\,\cdot\,}, {\mathbb{C}}) )\)
+Let \(X\in {\mathsf{Mfd}}( \mathop{\mathrm{Hol}}({-}, {\mathbb{C}}) )\)
 be a complex manifold. A \textbf{Kähler form}
 \(\omega\in \Omega^2(X_{\mathbb{R}})\) is a closed real (possibly
 needed: \(J{\hbox{-}}\)invariant) 2-form on the underlying real manifold
@@ -6592,6 +6589,48 @@ and the first space will be the space of holomorphic 1-forms
 This shows the power of the Hodge decomposition theorem!
 
 \end{fact}
+
+\hypertarget{friday-march-26th}{%
+\section{Friday, March 26th}\label{friday-march-26th}}
+
+\begin{remark}
+
+Recall the Hodge decomposition theorem. Let
+\((M, g) \in {\mathsf{Mfd}}_{\mathbb{R}}^n(\mathsf{Riem}, { \text{compact} } )\),
+then choosing an orthonormal basis \(\left\{{ v_j }\right\}\) for
+\(T_p M\) yields a corresponding orthonormal basis in
+\(T_p^\vee M \coloneqq\mathop{\mathrm{Hom}}_{\mathbb{R}}(T_p M, {\mathbb{R}})\)
+given by taking
+\(\left\{{ e_i {~\mathrel{\Big|}~}e_i(v_j) = \delta_{ij} }\right\}\).
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-15_23-21.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+There is a map
+\begin{align*}
+\star: \bigwedge^k T_p^\vee M &\to \bigwedge^{n-k} T_p^\vee M \\
+\bigwedge_{j=1}^k e_{i_j} &\mapsto \pm \bigwedge_{\ell = 1}^{n-k} e_{j_\ell}
+\end{align*}
+where the \(e_{j}\) are defined such that
+\(\bigwedge_{j=1}^k e_{i_j} \wedge \bigwedge_{\ell = 1}^{n-k} e_{j_\ell} \coloneqq\,dV\),
+where \(\,dV\) is the volume form on \(M\) at \(p\). Thus we have a map
+\begin{align*}
+\star: \Omega^k &\to \Omega^{n-k} \\ 
+1 &\mapsto \,dV
+.\end{align*}
+We defined \(d^\dagger \coloneqq\star{d} \mkern-5mu \star\), and said a
+form \(\omega\) was \emph{harmonic} iff \(\Delta \omega=0\), where
+\(\Delta \coloneqq dd^\dagger + d^\dagger d\). The space of such forms
+was denoted \(\mathcal{H}^k(M) \subseteq \Omega^k(M)\).
+
+\end{remark}
 
 \hypertarget{monday-march-29}{%
 \section{Monday, March 29}\label{monday-march-29}}
@@ -7750,6 +7789,21 @@ since \(K_{{\mathbb{P}}^1} \circ = -2f_1 - 2f_2\) and so \(g(C) = 2\).
 
 \begin{remark}
 
+Recall the adjunction formula: for
+\(D \subset X \in {\mathsf{Mfd}}_{\mathbb{C}}\) a codimension 1 complex
+submanifold, we have
+\begin{align*}
+K_D = (K_x + {\mathcal{O}}_x(0)) { \left.{{}} \right|_{{D}} }
+.\end{align*}
+We'll apply this to curves \(C\) in a surface \(S\). Recall the genus
+formula, which was given by \(2g(C) - 2= (C+ K_S)\cdot C\). For example,
+a degree 4 equation in \({\mathbb{P}}^2\) carves out a genus
+\(g(C) = 3\) complex curve.
+
+\end{remark}
+
+\begin{remark}
+
 Recall that line bundles on \({\mathbb{CP}}^n\) were in bijection with
 \({\mathbb{Z}}\), where send \(d\) to a bundle
 \({\mathcal{O}}(d) \coloneqq{\mathcal{O}}_{{\mathbb{CP}}^N}(d)\). We
@@ -7768,7 +7822,7 @@ functions, such \(L\) form a 1-dimensional
 
 \end{remark}
 
-\begin{example}[?]
+\begin{example}[K3 Surfaces]
 
 The classic example is \(x_0 \in {\mathcal{O}}(1)_{\mathbf{x}}\) since
 \(x_0( \lambda p) = \lambda x_0 (p)\). Similarly,
@@ -7829,7 +7883,7 @@ i.e.~\(K_S = {\mathcal{O}}_S\) for
 
 \begin{remark}
 
-We know that \(H^o(S, K_S)\) are the globally holomorphic 2-forms on
+We know that \(H^0(S, K_S)\) are the globally holomorphic 2-forms on
 \(S\), and here this is isomorphic to
 \(H^0(S, {\mathcal{O}}_S) = {\mathbb{C}}\Omega_S\) for some single
 holomorphic 2-form. Moreover \(\operatorname{Div}(\Omega_S) = 0\) since
@@ -8003,7 +8057,7 @@ along hyperplanes.
 \centering
 \resizebox{\columnwidth}{!}{%
 \begin{tikzpicture}
-\fontsize{44pt}{1em} 
+\fontsize{43pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-12_14-06.pdf_tex} };
 \end{tikzpicture}
 }
@@ -8195,6 +8249,501 @@ to Diagram}
 \begin{remark}
 
 Check out complete intersections.
+
+\end{remark}
+
+\hypertarget{blowups-and-blowdowns-wednesday-april-14}{%
+\section{Blowups and Blowdowns (Wednesday, April
+14)}\label{blowups-and-blowdowns-wednesday-april-14}}
+
+\begin{definition}[?]
+
+Let \(S \in {\mathsf{Mfd}}_{\mathbb{C}}^2\) be a complex surface and
+\(p\in S\) a point, and let \((x, y)\) be local holomorphic coordinates
+on a neighborhood of \(U\) containing \(p\). Without loss of generality,
+\(p = (0, 0)\) in these coordinates. Set
+\(U^* \coloneqq U \setminus\left\{{p}\right\}\), and consider the
+holomorphic map
+\begin{align*}
+\phi: U^* &\to U \times{\mathbb{CP}}^2 \\
+(x, y) & \mapsto ( (x, y), [x: y] )
+.\end{align*}
+We'll define the \textbf{blowup at \(p\)} to be
+\(\operatorname{Bl}_p(U) \operatorname{cl}(\phi(U^*))\) to be the
+closure of the image of \(U^*\).
+
+\end{definition}
+
+\begin{observation}
+
+There is a map \(\operatorname{Bl}_p(U) \to U\) given by projection onto
+the first coordinate which is the identity on \(U^*\).
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_13-56.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Here \(q\) maps to the pair \((q, s)\) where \(s\) is the slope of a
+line through \(q\), and this will be continuous.
+
+\todo[inline]{? Missed part}
+
+We claim that
+\(\pi_U^{-1}(0, 0) \subset \operatorname{Bl}_p(U) = \left\{{ p }\right\} \times{\mathbb{CP}}^1\),
+and for a fixed \(9x_0, y_0) \in U^*\), considering
+\(\phi(x_0 t, y_0 t)\) as \(t\to 0\), we can write
+\begin{align*}
+( (x_0 t, y_0 t), [x_0: y_0] ) \in U \times{\mathbb{CP}}^1 \\
+\overset{t\to 0} ( (0, 0) [x_0: y_0] ) \subset \operatorname{cl}(\phi(U^*))
+.\end{align*}
+So approaching \((0, 0)\) along any slope \(s\) just yields the point
+\((0, s)\) in the blowup.
+
+\end{observation}
+
+\begin{remark}
+
+We can thus write
+\begin{align*}
+\operatorname{Bl}_pS S \setminus\left\{{p}\right\} {\coprod}_{U^*} \operatorname{Bl}_p U
+.\end{align*}
+
+Writing \(\pi: \operatorname{Bl}_pS\to S\), we have
+\(\pi^{-1}(p) \cong {\mathbb{CP}}^1\) and \(\pi^{-1}(q)\) is a point for
+all \(q\neq p\). Then all limits approaching \(p\) in \(S\) turn into
+distinct limit points in \(\operatorname{Bl}_p(S)\)
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_14-06.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+\end{remark}
+
+\begin{slogan}
+
+The blowup separates all tangent directions at \(p\).
+
+\end{slogan}
+
+\begin{example}[?]
+
+Consider
+\begin{align*}
+\left\{{ y^2 = x^3 - x^2 }\right\} \subseteq {\mathbb{C}}^2
+.\end{align*}
+
+This yields a nodal curve with a double-point:
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_14-11.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Here we'll consider \(\operatorname{Bl}_{(0, 0)} {\mathbb{C}}^2\).
+
+\begin{definition}[Strict Transform]
+
+Letting \(C \subset S\) be a curve, define the \textbf{strict transform}
+\begin{align*}
+\widehat{C} \coloneqq\operatorname{cl}( \pi^{-1}(C \setminus\left\{{p}\right\} ) )
+.\end{align*}
+
+\end{definition}
+
+Note that approaching by different sequences yields different limiting
+slopes
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-14_14-15.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+The curve in the blowup is called the \textbf{exceptional divisor}.
+
+\end{example}
+
+\begin{example}[?]
+
+Consider all lines in \({\mathbb{CP}}^2\) through \([0:0:1]\), which we
+can model in the following way:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-14-14-18-15.png}
+\caption{image\_2021-04-14-14-18-15}
+\end{figure}
+
+These are in bijection with \({\mathbb{CP}}^1\) since there is always a
+unique line through \([0:0:1]\) and \([s:t:0]\), where the latter is a
+copy of \({\mathbb{CP}}^1\) as \(s,t\) are allowed to vary. So consider
+\(\operatorname{Bl}_{p}{\mathbb{CP}}^2\) for \(p=[0:0:1]\), and consider
+the strict transforms of the lines \(L\) to obtain
+\(\widehat{L} \subset \operatorname{Bl}_p {\mathbb{CP}}^2\). Any two are
+disjoint since they pass through different slopes of the exceptional
+divisor. Thus the red lines in the blowup go through distinct slopes,
+yielding a fibration of \({\mathbb{CP}}^1\)s:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-14-14-24-31.png}
+\caption{image\_2021-04-14-14-24-31}
+\end{figure}
+
+So consider the map
+\begin{align*}
+\sigma: \operatorname{Bl}_p {\mathbb{CP}}^2 &\to {\mathbb{CP}}^2 \\
+p \in \widehat{L} &\mapsto [0:s:t]
+.\end{align*}
+
+which projects points to the boundary copy of \({\mathbb{CP}}^1\):
+
+\includegraphics{figures/image_2021-04-14-14-25-44.png}
+
+We can't necessarily project from the blue point itself, but if we add
+in the data of a tangent vector at that point, the map becomes
+well-defined. Thus the blowup makes projecting from a point in
+\({\mathbb{CP}}^2\) to a line in \({\mathbb{CP}}^2\) a well-defined map
+on \(\operatorname{Bl}{\mathbb{CP}}^2\).
+
+\end{example}
+
+\begin{remark}
+
+This is referred to as \({\mathbb{F}}_1\), the \textbf{first Hirzebruch
+surface}.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+For \(S\in {\mathsf{Mfd}}_{\mathbb{R}}(C^\infty)\) a smooth manifold, we
+can identify
+\begin{align*}
+\operatorname{Bl}_p S = S \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+It suffices to work in coordinate charts and prove this for \(p=0\).
+
+\begin{claim}
+
+\begin{align*}
+\operatorname{Bl}_0 {\mathbb{C}}^2 = \operatorname{Tot}( {\mathcal{O}}_{{\mathbb{CP}}^1}(-1) )
+.\end{align*}
+
+\end{claim}
+
+Recall that this was the tautological line bundle that whose fibers at a
+point \(p\in {\mathbb{CP}}^1\) was the line in \({\mathbb{C}}^2\)
+spanned by \(p\). We can write this as
+\(\left\{{ [x:y] {~\mathrel{\Big|}~}(x, y) \in L_{[x:y]} }\right\}\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-14-14-32-58.png}
+\caption{image\_2021-04-14-14-32-58}
+\end{figure}
+
+We have
+\({\mathcal{O}}(-1) \xrightarrow{\sim} \mkern 1.5mu\overline{\mkern-1.5mu{\mathcal{O}}(1)\mkern-1.5mu}\mkern 1.5mu\),
+where this map is a diffeomorphism that can be constructed using a
+Hermitian metric. However we can identify \({\mathcal{O}}(1)\) with the
+set of lines in \({\mathbb{CP}}^2\) through \([0:0:1]\), leaving out the
+point \([0:0:1]\) itself. This follows by checking that there exists a
+section that vanishes at only one point. In fact
+\(\operatorname{Tot}{\mathcal{O}}(1)\) is diffeomorphic to the
+complement of a ball in \({\mathbb{CP}}^2\), which ends up precisely
+being taking a connect-sum. So we obtain
+\(\operatorname{Bl}_{0} {\mathbb{C}}^2 \cong {\mathbb{C}}^2 \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\).
+
+\end{proof}
+
+\begin{proof}[Alternative]
+
+Cut out a ball \(B^4 \subseteq {\mathbb{C}}^2\), so
+\({{\partial}}B^4 = S^3 = \left\{{ {\left\lvert {x} \right\rvert}^2 + {\left\lvert {y} \right\rvert}^2 = \varepsilon}\right\}\).
+Then \(\operatorname{Bl}_0 {\mathbb{C}}^2\) is the result of collapsing
+\(S^3\) along an \(S^1{\hbox{-}}\)foliation
+\((e^{i\theta} x, e^{i\theta}y)\). This has an \(S^2\) quotient,
+yielding the Hopf fibration
+\begin{align*}
+S^1 \hookrightarrow S^3 \to S^2
+.\end{align*}
+
+\end{proof}
+
+\begin{exercise}[?]
+
+Show that the blowup over \({\mathbb{R}}\) is gluing in a mobius strip.
+
+\end{exercise}
+
+See the Tate curve!
+
+\hypertarget{friday-april-16}{%
+\section{Friday, April 16}\label{friday-april-16}}
+
+\begin{remark}
+
+Last time: we defined the blowup \(\operatorname{Bl}_0{\mathbb{C}}^2\)
+as the closure of
+\begin{align*} 
+\operatorname{Bl}_0 {\mathbb{C}}^2 \coloneqq\operatorname{cl}
+\left\{{ (x, y), [x:y] {~\mathrel{\Big|}~}(x, y) \neq 0 }\right\} \subseteq {\mathbb{C}}^2 \times{\mathbb{CP}}^2 
+.\end{align*}
+This had the effect of adding in all limits of slopes as points approach
+\((0, 0) \in {\mathbb{C}}^2\). We defined this using local holomorphic
+coordinate charts to \({\mathbb{C}}^2\). Why is this a complex manifold?
+We can cover it with charts: given a point \((x, \mu)\) where
+\(\mu = {y \over x}\in {\mathbb{P}}^1\) is a slope, we can form a first
+chart by sending
+\begin{align*}
+(x, \mu) \mapsto \left\{{ (x, x\mu), [1: \mu] }\right\}
+.\end{align*}
+This yields the first chart, as long as the slope is not infinite, so
+this applies to all finite slopes. The second chart will work for all
+nonzero slopes, where we take
+\begin{align*}
+(v, y)\in {\mathbb{C}}^2 \mapsto \left\{{ (yv, y), [v: 1] }\right\}
+.\end{align*}
+Note that restricting to \((x, y) = (0, 0)\), these give the standard
+\({\mathbb{C}}{\hbox{-}}\)charts on \({\mathbb{CP}}^2\). How do these
+two charts glue? When \(\mu, \nu \neq 0\), we have well-defined
+transition functions \(\mu = \nu ^{-1}\) and \(x=y\nu\).
+
+\end{remark}
+
+\begin{remark}
+
+Recall that for a complex curve \(C \in {\mathsf{Mfd}}_{\mathbb{C}}^2\),
+we have the blowup morphism \(\pi: \operatorname{Bl}_pS\to S\) and we
+defined the \textbf{strict transform}
+\(\widehat{C} \coloneqq\operatorname{cl}\pi^{-1}(C\setminus\left\{{{\{\operatorname{pt}\}}}\right\})\).
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{42pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-02.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Here \(E={\mathbb{CP}}^1\) is the exceptional curve of the blowup, and
+intersects the curve twice. This has the effect of changing \(D\) into
+an embedded curve.
+
+\begin{quote}
+Note that here \(\pi^* D = \widehat{D} + 2E\), where we'll define this
+next.
+\end{quote}
+
+\end{remark}
+
+\begin{definition}[Pullback of a Curve]
+
+The \textbf{pullback} of \(C\), denoted \(\pi^* C\), is constructed by
+writing \(C = V(f)\) locally. We then set
+\(\pi^* C \coloneqq V( \pi^* f)\).
+
+\end{definition}
+
+\begin{example}[?]
+
+Take \(C \coloneqq\left\{{ y=x }\right\} \subset {\mathbb{C}}^2\) and
+consider \(\operatorname{Bl}_0 {\mathbb{C}}^2\). Then
+\begin{align*}
+\widehat{C}  \coloneqq\operatorname{cl}\left\{{ \qty{ (x, x), [x:x]} {~\mathrel{\Big|}~}x\neq 0  }\right\} = \operatorname{cl}\left\{{ \qty{ (x, x), [1:1] } {~\mathrel{\Big|}~}x\neq 0 }\right\} \subset \operatorname{Bl}_0 {\mathbb{C}}^2
+.\end{align*}
+By projecting onto the first component,
+\(\pi:\widehat{C} \xrightarrow{\sim} C\) is an isomorphism. We can
+compute the pullback: we first have
+\(\pi^* C = \pi^* V(y-x) = V( \pi^*(y-x))\), so consider \(\pi^*(y-x)\)
+in the coordinate chart \((x, \mu)\). In this chart, \(y=x\mu\), and so
+\(\pi^*(y-x) = x\mu - x = x(\mu - 1)\), and so
+\begin{align*}
+V(\pi^*(y-x)) = V(x) + V(\mu -1) \implies \pi^* C = E + \widehat{C} \text{ as a divisor}
+.\end{align*}
+
+\end{example}
+
+\begin{example}[A nodal curve]
+
+Take the nodal curve \(C = \left\{{ y^2 - x^3 + x^2 }\right\}\):
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-15.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+The pullback is then given by
+\begin{align*}
+\pi^* C 
+&= V( \pi^* (y^2 - x^3 + x^2) ) \\
+&= V(\mu^2x^2 -x^3 + x^2) \\
+&= V(x^2) + V(\mu^2 - x + 1) \\
+&= 2V(x) + V(\mu^2 -x + 1)
+.\end{align*}
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{44pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-17.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+In the second coordinate chart, we have
+\begin{align*}
+\pi^* C = V(y^2 - y^4 \nu^3 +y^2 \nu^2) = 2V(y) + V(1-y\nu^3 + \nu^2
+.\end{align*}
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{43pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-21.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Gluing along \(\mu, \nu \neq 0\) we get the following picture for
+\(\pi^* C\):
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-22.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+Writing \(C = \left\{{ x=0 }\right\}\), note that \(\widehat{C}\)
+doesn't intersect the first coordinate chart. In the \(\mu, x\)
+coordinate chart, for example, we can't get an infinite slop:
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-16_14-25.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+\end{example}
+
+\hypertarget{change-in-canonical-bundle-formula}{%
+\subsection{Change in Canonical Bundle
+Formula}\label{change-in-canonical-bundle-formula}}
+
+\begin{question}
+
+Given \(\Omega^2_S = K_S \to S\) the canonical line bundle, can we
+relate \(K_{\operatorname{Bl}_p S}\) to \(K_S\)?
+
+\end{question}
+
+\begin{proposition}[?]
+
+\begin{align*}
+K_{\operatorname{Bl}_p S} = \pi^* K_S \otimes{\mathcal{O}}_S(E)
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+We'll abbreviate \(\widehat{S} \coloneqq\operatorname{Bl}_p(S)\). Let
+\(\omega\) be a local section of \(K_S\) near \(p\), and in coordinate
+charts \((x, y)\), write \(\omega = dx \wedge dy\). In the first
+coordinate chart on the blowup, we can write
+\begin{align*}
+\pi^* \omega = dx \wedge d(x\mu) = dx \wedge (\mu dx + x d\mu) = x\,dx\wedge d\mu
+.\end{align*}
+Note that \(V(x) = E\), and that pulling back the canonical bundle
+yields something vanishing to order 1 (?). So \(\pi^* K_S\) is
+isomorphic to the subsheaf of \(K_{\widehat{S}}\) whose sections vanish
+along \(E\), which is isomorphic to
+\(K_{\widehat{S}} \otimes{\mathcal{O}}(-E)\), since the latter are the
+functions which vanish along \(E\). Tensoring both sides with
+\({\mathcal{O}}(E)\) yields
+\begin{align*}
+K_{\widehat{S}} = \pi^* K_S \otimes{\mathcal{O}}_{\widehat{S}}(E)
+\end{align*}
+as a line bundle, or in divisor notation
+\(K_{\widehat{S}} = \pi^* K_S + E\) where we take the divisor
+representing the line bundle instead.
+
+\end{proof}
+
+\begin{remark}
+
+Using \(\pi: \widehat{S}\to S\), we get pullback maps
+\begin{align*}
+\pi^*: H^2(S; {\mathbb{Z}}) &\to H^2(\widehat{S}; {\mathbb{Z}}) \\
+\pi^*: \operatorname{Div}(S) &\to \operatorname{Div}(\widehat{S})
+.\end{align*}
+These are compatible in the sense that
+\begin{align*}
+[\pi^* C] = \pi^* [C]
+.\end{align*}
+. This can be seen by expressing
+\({\mathcal{O}}_S(C) \cong {\mathcal{O}}_S(A-b)\) for \(A, B\)
+hyperplane section. We can assume \(A, B\) avoid \(p\) in their
+projective embeddings, making \([C] = [A] - [B]\) since
+\(c_1({\mathcal{O}}_S(c)) = [C]\) is the fundamental class of \(C\). So
+it suffices to prove the formula for curves \emph{not} passing through
+\(p\), but this is obvious! It follows from the fact that
+\(\pi: \widehat{S} \setminus E \xrightarrow{\sim} S\setminus\left\{{p}\right\}\)
+is an isomorphism.
+
+\end{remark}
+
+\begin{remark}
+
+In fact,
+\begin{align*}
+H^2(\widehat{S}; {\mathbb{Z}}) \cong \pi^* H^2(S, {\mathbb{Z}}) \oplus {\mathbb{Z}}[E]
+.\end{align*}
+, which follows from Mayer-Vietoris. So this adds one to the rank.
 
 \end{remark}
 
