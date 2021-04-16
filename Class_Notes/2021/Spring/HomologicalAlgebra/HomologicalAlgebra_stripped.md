@@ -7015,7 +7015,7 @@ T(M) \coloneqq\bigoplus_{i\geq 0}  M^{\otimes_k n} \coloneqq k \otimes\bigoplus 
 :::
 
 ::: {.remark}
-Note that \( T(M) \in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) by extending the \( k{\hbox{-}} \)action over sums and tensor products in the obvious way, and in fact \( T(M) \in {\operatorname{gr}}({\mathsf{Alg}_{/k} }) \) where tensors in different degrees are juxtaposed. Explicitly, for \( m\in M^{\otimes n} \) and \( m' \in M^{\otimes n'} \), we write \( m\otimes m' \in M^{\otimes(n+n')} \), which is what it means to be a *graded* algebra.
+Note that \( T(M) \in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) by extending the \( k{\hbox{-}} \)action over sums and tensor products in the obvious way, and in fact \( T(M) \in {\mathsf{gr}}({\mathsf{Alg}_{/k} }) \) where tensors in different degrees are juxtaposed. Explicitly, for \( m\in M^{\otimes n} \) and \( m' \in M^{\otimes n'} \), we write \( m\otimes m' \in M^{\otimes(n+n')} \), which is what it means to be a *graded* algebra.
 :::
 
 ::: {.remark}
@@ -7053,6 +7053,131 @@ There is thus a natural isomorphism
 \[
 \mathop{\mathrm{Hom}}_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}}(M, {\operatorname{Forget}}(A)) \xrightarrow{\sim} \mathop{\mathrm{Hom}}_{{\mathsf{Alg}_{/k} }}( T(M), A)
 .\]
+:::
+
+# Universal Enveloping Algebras (Wednesday, April 14)
+
+::: {.remark}
+Continuing section 7.3 on universal enveloping algebras.: Letting \( k \in \mathsf{CRing}, {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k}, M\in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \), we defined the tensor algebra \( T(M) \coloneqq k \oplus \bigoplus_{i\geq 1} M^{\otimes n}\in {\mathsf{gr}}{\mathsf{Alg}_{/k} }(\mathsf{Assoc}, \mathsf{Unital}) \) and noted that it was universal for maps from \( M \) to \( k{\hbox{-}} \)algebras.
+:::
+
+::: {.definition title="Universal Enveloping Algebra"}
+Let \( {\mathfrak{g}}\in{\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k} \), then define the **universal enveloping algebra** of \( {\mathfrak{g}} \) as
+\[
+{\mathcal{U}(\mathfrak{g}) }\coloneqq{T({\mathfrak{g}}) \over \left\langle{ xy -yx - [xy] {~\mathrel{\Big|}~}x,y\in {\mathfrak{g}}}\right\rangle } 
+.\]
+:::
+
+::: {.remark}
+There is an injection \( k\hookrightarrow{\mathcal{U}(\mathfrak{g}) } \), so \( {\mathcal{U}(\mathfrak{g}) } \) is unital. The relations guarantee that there is a Lie algebra morphism \( \iota: {\mathfrak{g}}\to {\mathcal{U}(\mathfrak{g}) } \). Note that we do not know if this is injective yet! Thus there is a functor
+\[
+\mathcal{U}: {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k} \to {\mathsf{Alg}_{/k} }
+,\]
+and it turns out that this is adjoint to the \( \operatorname{Lie} \) functor.
+:::
+
+::: {.fact}
+There is an adjunction
+\[
+\adjunction{ \mathcal{U}}{\operatorname{Lie}}{{\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}}{{\mathsf{Alg}_{/k} }} 
+.\]
+Thus for every \( f:{\mathfrak{g}}\to \operatorname{Lie}(A) \) for \( A \in {\mathsf{Alg}_{/k} }(\mathsf{Assoc}) \), we have a commuting diagram
+
+```{=tex}
+\begin{tikzcd}
+    \textcolor{rgb,255:red,214;green,92;blue,92}{{\mathfrak{g}}} && \textcolor{rgb,255:red,92;green,92;blue,214}{{\mathcal{U}(\mathfrak{g}) }} \\
+    \\
+    && \textcolor{rgb,255:red,92;green,92;blue,214}{A}
+    \arrow["{\exists f \in {\mathsf{Alg}_{/k} }}", color={rgb,255:red,92;green,92;blue,214}, dashed, from=1-3, to=3-3]
+    \arrow["{f\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}}"', color={rgb,255:red,214;green,92;blue,92}, from=1-1, to=3-3]
+    \arrow["\iota", from=1-1, to=1-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGxpZWciLFswLDYwLDYwLDFdXSxbMiwyLCJBIixbMjQwLDYwLDYwLDFdXSxbMiwwLCJcXFVnIixbMjQwLDYwLDYwLDFdXSxbMiwxLCJcXGV4aXN0cyBmIFxcaW4gXFxrYWxnIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fSxbMjQwLDYwLDYwLDFdXSxbMCwxLCJmXFxpbiBcXGxpZWFsZyIsMix7ImNvbG91ciI6WzAsNjAsNjBdfSxbMCw2MCw2MCwxXV0sWzAsMiwiXFxpb3RhIl1d)
+
+Thus there is a natural isomorphism
+\[
+\mathop{\mathrm{Hom}}_{{\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}}({\mathfrak{g}}, \operatorname{Lie}(A)) \xrightarrow{\sim} \mathop{\mathrm{Hom}}_{{\mathsf{Alg}_{/k} }}({\mathcal{U}(\mathfrak{g}) }, A)
+.\]
+:::
+
+::: {.theorem title="?"}
+There is an equivalence of categories
+\[
+{\mathfrak{g}{\hbox{-}}\mathsf{Mod}}\xrightarrow{\sim} \mathsf{{\mathcal{U}(\mathfrak{g}) }}{\hbox{-}}\mathsf{Mod}
+,\]
+where we use the fact that \( {\mathcal{U}(\mathfrak{g}) } \) has an underlying ring structure.
+
+\
+
+Concretely, if \( M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \) and \( \prod x_i \in {\mathcal{U}(\mathfrak{g}) } \), then setting \( (x_1 \cdots x_n)m = x_1(\cdots x_n m) \) (and similarly for every \( i \)) for \( m\in M \) makes \( m \) into a \( {\mathcal{U}(\mathfrak{g}) }{\hbox{-}} \)module. Conversely, if \( M\in \mathsf{{\mathcal{U}(\mathfrak{g}) }}{\hbox{-}}\mathsf{Mod} \), we can set \( xm \coloneqq\iota(x) m \) for \( x\in {\mathfrak{g}} \) to make \( M \) into a \( {\mathfrak{g}}{\hbox{-}} \)module.
+:::
+
+::: {.proof title="?"}
+Let \( M\in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) and set \( E \coloneqq\mathop{\mathrm{End}}_k(M) \in {\mathsf{Alg}_{/k} } \). Note that a \( {\mathfrak{g}}{\hbox{-}} \)module is a \( k{\hbox{-}} \)module \( M \) with a morphism of Lie algebras \( {\mathfrak{g}}\to \operatorname{Lie}(E) \). Using the adjunction, we can map such a morphism to \( \tilde f: {\mathcal{U}(\mathfrak{g}) }\to E \), and by definition a \( {\mathcal{U}(\mathfrak{g}) }{\hbox{-}} \)module is a \( k{\hbox{-}} \)module \( M \) with a \( k{\hbox{-}} \)algebra morphism \( {\mathcal{U}(\mathfrak{g}) }\to \mathop{\mathrm{End}}_k(M) = E \).
+:::
+
+::: {.corollary title="?"}
+The category \( {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \) has enough projectives and injectives.
+:::
+
+::: {.remark}
+We'll now set up an analog of the augmentation for group algebras, \( \varepsilon: {\mathbb{Z}G}\to {\mathbb{Z}} \).
+:::
+
+::: {.definition title="Augmentation Ideal for Lie Algebras"}
+There is a unique surjective morphism \( \varepsilon\in {\mathsf{Alg}_{/k} }({\mathcal{U}(\mathfrak{g}) }, k) \) where \( \varepsilon\circ \iota({\mathfrak{g}}) =0 \). The kernel \( I \coloneqq\ker\varepsilon \) is defined as the **augmentation ideal**, and is a two-sided ideal of \( {\mathcal{U}(\mathfrak{g}) } \) generated by \( \iota({\mathfrak{g}}) \) and write \( {\mathfrak{g}}\,{\mathcal{U}(\mathfrak{g}) }= {\mathcal{U}(\mathfrak{g}) }{\mathfrak{g}} \), i.e. those elements which contain at least one tensor factor.
+:::
+
+::: {.remark}
+We can identify the coinvariants:
+\[
+k \cong {\mathcal{U}(\mathfrak{g}) }/{\mathfrak{g}}= {\mathcal{U}(\mathfrak{g}) }/{\mathfrak{g}}\, {\mathcal{U}(\mathfrak{g}) }= {\mathcal{U}(\mathfrak{g}) }_{{\mathfrak{g}}}
+.\]
+:::
+
+::: {.corollary title="?"}
+```{=tex}
+\envlist
+```
+1.  \( H_*({\mathfrak{g}}; M) \cong \operatorname{Tor}_*^{{\mathcal{U}(\mathfrak{g}) }}(k, M) \),
+2.  \( H^*({\mathfrak{g}}; M) \cong \operatorname{Ext}^*_{{\mathcal{U}(\mathfrak{g}) }}(k, M) \),
+:::
+
+::: {.proof title="?"}
+To show that two derived functors are isomorphic, it's enough to show that their underlying functors (the degree 0 parts) are isomorphic. Starting with (2), we observed that \( M^g \cong \mathop{\mathrm{Hom}}_{{\mathfrak{g}}}(k, M) \cong \mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}(k, M) \).
+
+ 
+
+For (1), we can write
+\[
+k \otimes_{{\mathcal{U}(\mathfrak{g}) }} M \cong \qty{{\mathcal{U}(\mathfrak{g}) }\over \mathcal{I}  } \otimes_{{\mathcal{U}(\mathfrak{g}) }} M \cong M/ \mathcal{I}  M \cong M/ {\mathfrak{g}}M = M_{\mathfrak{g}}
+,\]
+so \( k\otimes_{{\mathcal{U}(\mathfrak{g}) }}({-}) = ({-})_{{\mathfrak{g}}} \).
+:::
+
+::: {.remark}
+So Lie algebra (co)homology is just a special case of the usual Tor and Ext we've already looked at. We'll next find a basis for \( {\mathcal{U}(\mathfrak{g}) } \):
+:::
+
+::: {.theorem title="Poincaré-Birkhoff-Witt (PBW) Theorem"}
+Let \( {\mathfrak{g}} \) be free in \( {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) and fix a \( k{\hbox{-}} \)basis, so \( {\mathfrak{g}}\in {\mathsf{Vect}}_{/k} \). Note that this makes \( \iota: {\mathfrak{g}}\hookrightarrow{\mathcal{U}(\mathfrak{g}) } \) an injection. Let \( \left\{{ x_{ \alpha} }\right\}_{ \alpha\in A} \) be a fixed totally ordered \( k{\hbox{-}} \)basis for \( {\mathfrak{g}} \). If \( I = (\alpha_1, \cdots, \alpha_p) \in A^p \), we'll write monomials as \( x_I \coloneqq x_{ \alpha_1} \cdots x_{ \alpha_p} \in {\mathcal{U}(\mathfrak{g}) } \), where we'll suppress writing \( \iota(x_{\alpha_j}) \). We'll say \( I \) is (weakly) increasing if \( \alpha_1 \leq \cdots \leq \alpha_p \in A \). Noting that the empty sequence \( \emptyset \in A^0 \) is increasing, set \( x_\emptyset \coloneqq 1 \in {\mathcal{U}(\mathfrak{g}) } \), and if \( I = ( \alpha ) \in A^1 \) is a single index, then we'll write \( x_{ \alpha} \in {\mathfrak{g}} \) and \( x_{( \alpha) } \in {\mathcal{U}(\mathfrak{g}) } \).
+
+\
+
+Then if \( {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k} \) is a free \( k{\hbox{-}} \)module, a \( k{\hbox{-}} \)basis for \( {\mathcal{U}(\mathfrak{g}) } \) is given by the monomials \( x_I \) as \( I \) ranges over finite increasing sequences from \( A \).
+:::
+
+::: {.proof title="?"}
+Omitted.
+:::
+
+::: {.remark}
+To at least see why these are a spanning set, suppose \( \beta > \alpha \). We can commute elements:
+\[
+x_{ \beta} x_{ \alpha} = x_{ \alpha} x_{ \beta} + [x_{ \beta} x_{ \alpha}]
+.\]
+However, note that the commutator here has lower degree (here, the other factors are degree 2 and the commutator is degree 1). This decreases the number of misorders as well, so induction roughly works. The fact that these are linearly independent is harder and uses some actual representation theory.
 :::
 
 # Appendix: Extra Definitions
