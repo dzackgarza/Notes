@@ -3837,7 +3837,7 @@ Recall the Hodge decomposition theorem. Let \( (M, g) \in {\mathsf{Mfd}}_{\mathb
 
 ```{=tex}
 \begin{tikzpicture}
-\fontsize{45pt}{1em} 
+\fontsize{44pt}{1em} 
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-15_23-21.pdf_tex} };
 \end{tikzpicture}
 ```
@@ -3852,6 +3852,189 @@ where the \( e_{j} \) are defined such that \( \bigwedge_{j=1}^k e_{i_j} \wedge 
 1 &\mapsto \,dV
 .\]
 We defined \( d^\dagger \coloneqq\star{d} \mkern-5mu \star \), and said a form \( \omega \) was *harmonic* iff \( \Delta \omega=0 \), where \( \Delta \coloneqq dd^\dagger + d^\dagger d \). The space of such forms was denoted \( \mathcal{H}^k(M) \subseteq \Omega^k(M) \).
+:::
+
+::: {.theorem title="Hodge Theorem"}
+\[
+\mathcal{H}^k(M) \cong H^k_{\mathrm{dR}}(M; {\mathbb{R}}) 
+.\]
+:::
+
+::: {.question}
+What kinds of extra structure can we put on a complex manifold?
+:::
+
+::: {.definition title="Kähler Form"}
+A **Kähler form** is a closed 2-form \( \omega\in \Omega^2_{\mathbb{R}} \) such that the following equation defines a metric on \( T_p M \):
+\[
+g(u, v) \coloneqq\omega(u, iv)
+.\]
+I.e., this is a closed symplectic form that defines a metric.
+:::
+
+::: {.example title="?"}
+Consider \( M = {\mathbb{C}}^n \) with holomorphic coordinates \( { {z}_1, {z}_2, \cdots, {z}_{n}} \), where \( z_{j} \coloneqq x_j + iy_j \). Then take
+\[
+\omega \coloneqq\sum_{j=1}^n \,dx_j \wedge \,dy_j
+.\]
+
+Note that multiplication by \( i \) induces a map
+\[
+\cdot i: T_p {\mathbb{C}}^n &{\circlearrowleft}\\
+{\frac{\partial }{\partial x_j}\,} &\mapsto {\frac{\partial }{\partial y_j}\,} \\
+{\frac{\partial }{\partial y_j}\,} &\mapsto - {\frac{\partial }{\partial x_j}\,} \\
+.\]
+Moreover, \( \omega(u, iv) \) recovers the standard metric on \( {\mathbb{C}}^n \) given by
+\[
+g_{\text{std}} = \sum (\,dx_j)^2 + (\,dy_j)^2 \in \operatorname{Sym}^2 T^\vee{\mathbb{C}}^n
+,\]
+which is incidentally positive-definite, where \( (\,dx)^2(u, v) \coloneqq({\frac{\partial }{\partial x_j}\,})u \cdot *({\frac{\partial }{\partial y_j}\,}) v \). Is this closed? We need to check to see if \( d\omega = 0 \), but this is true: applying \( d \) to all of the coefficients yields the constant 1.
+:::
+
+::: {.remark}
+So for \( M\in {\mathsf{Mfd}}({\mathbb{C}}) \) a complex manifold, we have a decomposition
+\[
+\Omega^k(M) &= \bigoplus_{p+q=k} A^{p, q}(M) \\ \\ 
+A^{p, q} &\coloneqq\left\{{ 
+  \sum_{\substack{ {\left\lvert {I} \right\rvert} = p \\ {\left\lvert {J} \right\rvert} = q}} 
+  \qty{\,dz_{i_1} \wedge \cdots \,dz_{i_p} } 
+  \wedge 
+  \qty{ \,dz_{j_1} \wedge \cdots \,dz_{j_q} } 
+}\right\}
+.\]
+
+For \( M \) a Kahler manifold, we have
+\[
+\mathcal{H}^k(M) = \bigoplus _{p+q = k} \mathcal{H}^{p, q}(M) 
+\\  \\
+\mathcal{H}^{p, q}(M) = \mathcal{H}^k(M) \cap A^{p, q}(M)   
+.\]
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-17_19-13.pdf_tex} };
+\end{tikzpicture}
+```
+:::
+
+::: {.remark}
+Why is this true? We have a map
+\[
+d: A^{p, q}(M) \to A^{p+1, q}(M) \oplus A^{p, q+1}(M)
+,\]
+where for example if \( f(z) \coloneqq z \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \in A^{0, 0}({\mathbb{C}}) \), we have \( df = \mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \,dz+ z\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu  \) where the first is a \( (1, 0) \) form and the latter is a \( (0, 1) \) form. Write \( d = {\partial}+ \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu \) where \( {\partial}\coloneqq\sum \,dz_j \) and \( \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu= \sum \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu _j \), as well as
+\[
+d^\dagger: A^{p, q}(M) \to A^{p-1, q}(M) \oplus A^{p, q-1}(M)
+.\]
+Now \( \star \) of a \( (p, q) \) form is an \( (n-p, n-q) \) form, and so
+\[
+\star\qty{ \,dz_{i_1} \wedge \cdots \wedge \,dz_{i_r} \wedge \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu _{j_1} \wedge \cdots \wedge \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu _q } \coloneqq\star(\,dz_I \wedge \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu _J) = \pm \,dz_{I^c} \wedge \,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu _{J^c}
+,\]
+and we have \( d^\dagger = {\partial}^\dagger + \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger \). We can thus move around the bigraded group in several ways:
+
+```{=tex}
+\begin{tikzcd}
+    {A^{2, 0}} && {A^{2, 1}} && {A^{2, 2}} \\
+    \\
+    {A^{1, 0}} && {A^{1, 1}} && {A^{1, 2}} \\
+    \\
+    {A^{0, 0}} && {A^{0, 1}} && {A^{0, 2}}
+    \arrow["{\partial}", dashed, from=5-1, to=3-1]
+    \arrow["{\partial}", dashed, from=3-1, to=1-1]
+    \arrow["{\partial}", dashed, from=3-3, to=1-3]
+    \arrow["{\partial}", dashed, from=5-5, to=3-5]
+    \arrow["{\partial}", dashed, from=3-5, to=1-5]
+    \arrow["\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu", dashed, from=1-1, to=1-3]
+    \arrow["\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu", dashed, from=1-3, to=1-5]
+    \arrow["\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu", dashed, from=3-1, to=3-3]
+    \arrow["\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu", dashed, from=3-3, to=3-5]
+    \arrow["\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu", dashed, from=5-1, to=5-3]
+    \arrow["\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu", dashed, from=5-3, to=5-5]
+    \arrow["{\partial}", dashed, from=5-3, to=3-3]
+    \arrow["{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger}", color={rgb,255:red,214;green,92;blue,92}, curve={height=-18pt}, from=5-3, to=5-1]
+    \arrow["{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger}", color={rgb,255:red,214;green,92;blue,92}, curve={height=-18pt}, from=5-5, to=5-3]
+    \arrow["{{\partial}^\dagger}"', color={rgb,255:red,92;green,92;blue,214}, curve={height=24pt}, from=1-1, to=3-1]
+    \arrow["{{\partial}^\dagger}"', color={rgb,255:red,92;green,92;blue,214}, curve={height=24pt}, from=3-1, to=5-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCw0LCJBXnswLCAwfSJdLFswLDIsIkFeezEsIDB9Il0sWzAsMCwiQV57MiwgMH0iXSxbMiwwLCJBXnsyLCAxfSJdLFs0LDAsIkFeezIsIDJ9Il0sWzIsMiwiQV57MSwgMX0iXSxbNCwyLCJBXnsxLCAyfSJdLFsyLDQsIkFeezAsIDF9Il0sWzQsNCwiQV57MCwgMn0iXSxbMCwxLCJcXGRlbCIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxLDIsIlxcZGVsIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzUsMywiXFxkZWwiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbOCw2LCJcXGRlbCIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs2LDQsIlxcZGVsIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIsMywiXFxkZWxiYXIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMyw0LCJcXGRlbGJhciIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxLDUsIlxcZGVsYmFyIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzUsNiwiXFxkZWxiYXIiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMCw3LCJcXGRlbGJhciIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs3LDgsIlxcZGVsYmFyIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzcsNSwiXFxkZWwiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbNywwLCJcXGRlbGJhcl5cXGRhZ2dlciIsMCx7ImN1cnZlIjotMywiY29sb3VyIjpbMCw2MCw2MF19LFswLDYwLDYwLDFdXSxbOCw3LCJcXGRlbGJhcl5cXGRhZ2dlciIsMCx7ImN1cnZlIjotMywiY29sb3VyIjpbMCw2MCw2MF19LFswLDYwLDYwLDFdXSxbMiwxLCJcXGRlbF5cXGRhZ2dlciIsMix7ImN1cnZlIjo0LCJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXSxbMSwwLCJcXGRlbF5cXGRhZ2dlciIsMix7ImN1cnZlIjo0LCJjb2xvdXIiOlsyNDAsNjAsNjBdfSxbMjQwLDYwLDYwLDFdXV0=)
+:::
+
+::: {.theorem title="Kähler Identities"}
+Let
+\[
+\Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} &\coloneqq\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger + \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\\
+\Delta_{\partial}&\coloneqq{\partial}{\partial}^\dagger + {\partial}^\dagger {\partial}\\
+\Delta_d &\coloneqq dd^\dagger + d^\dagger d
+.\]
+Then
+\[
+{1\over 2} \Delta_d = \Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} = \Delta_{\partial}
+.\]
+:::
+
+::: {.remark}
+See Griffiths-Harris for details. Note that this is a local statement, i.e. it can be checked in coordinate charts.
+:::
+
+::: {.remark}
+The upshot:
+\[
+\mathcal{H}^k(M) = \ker \Delta_d = \ker \Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} 
+,\]
+and moreover
+\[
+\Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu}: A^{p, q}(M) {\circlearrowleft}
+\]
+which implies that on \( \Omega^k(M) \),
+\[
+\ker \Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} \circ \bigoplus _{p+q=k} \ker \qty{ A^{p, q}(M) \xrightarrow{\Delta_{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu}} A^{p, q}(M) }
+&= \bigoplus _{p+q = k} \ker \Delta_d
+,\]
+which yields the Hodge decomposition theorem
+\[
+\mathcal{H}^k(M) = \bigoplus _{p+q=k} \mathcal{H}^{p, q}(M)  
+.\]
+:::
+
+::: {.remark}
+This is a strong restriction on what manifolds can admit a Kähler structure. Moreover, since \( \Delta_d \) is a real operator, we obtain \( \mkern 1.5mu\overline{\mkern-1.5mu \mathcal{H}^{p, q}(M) \mkern-1.5mu}\mkern 1.5mu \cong \mathcal{H}^{p, q}(M) \).
+:::
+
+::: {.remark}
+Some consequences:
+
+For \( M \) a Kahler manifold, the odd Betti numbers \( \beta_{2i+1}(M) \coloneqq\dim H_{\mathrm{dR}}^{2i+1}(M; {\mathbb{C}}) \) are even. This is because
+\[
+\bigoplus _{p+q=k} \mathcal{H}^{p, q} \cong \mathcal{H}^{2i+1}(M) \cong H_{\mathrm{dR}}^{2i+1}(M) 
+.\]
+If we define \( h^{p, q}(M) \coloneqq\dim_{\mathbb{C}}\mathcal{H}^{p, q}(M) \), we clearly have
+\[
+\beta_{2i+1} = \sum_{p+q = 2i+1} h^{p, q}(M)
+.\]
+Now using that \( \mkern 1.5mu\overline{\mkern-1.5mu\mathcal{H} \mkern-1.5mu}\mkern 1.5mu \cong \mathcal{H} \), we can rewrite this as
+\[
+\beta_{2i+1} 
+&= \sum_{p+q = 2i+1} h^{p, q}(M) \\
+&= 2 \sum_{\substack{ p+q = 2i+1 \\ p < q} } h^{p, q}(M)
+.\]
+:::
+
+::: {.remark}
+Is this just some fact about arbitrary complex manifolds, with no extra structure? The answer is no, and the counterexample is the *Hopf surface*
+\[
+X \coloneqq\qty{ {\mathbb{C}}^2 \setminus\left\{{\mathbf{0}}\right\}} / (x,y)\sim (2x, 2y)
+,\]
+which we can roughly identify as \( {\mathbb{R}}^4 \) "modulo doubling". We can take a fundamental domain \( 1\leq {\left\lvert {r} \right\rvert} \leq 3 \), this yields an annulus-like sphere with the inner shell glued to the outer:
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-17_19-49.pdf_tex} };
+\end{tikzpicture}
+```
+This is homeomorphic to \( S^1 \times S^3 \), but \( \beta_1(M) = 1 \), so this won't yield a Kähler structure.
 :::
 
 # Monday, March 29
