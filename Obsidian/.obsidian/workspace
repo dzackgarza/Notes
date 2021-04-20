@@ -6,14 +6,26 @@
       {
         "id": "8d79af57e2e35eae",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md.md",
+            "file": "Quals/Algebra/Review 1.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "1c57e0529be710d8"
+      },
+      {
+        "id": "8a81ceb43bd64be5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Quals/Algebra/Review 1.md",
+            "mode": "source"
+          }
+        },
+        "group": "1c57e0529be710d8"
       }
     ],
     "direction": "vertical"
@@ -53,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 610
+    "width": 347
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -69,10 +81,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md.md",
+                "file": "Quals/Algebra/Review 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -84,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md.md"
+                "file": "Quals/Algebra/Review 1.md"
               }
             }
           },
@@ -106,16 +120,17 @@
     "width": 300,
     "collapsed": true
   },
+  "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "Quals/Algebra/Review 1.md",
+    "Quals/Algebra/image/SmartSelect_20210419-233920_Xodo_Docs.jpg",
     "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md.md",
+    "Quals/Algebra/SmartSelect_20210420-000457_Xodo_Docs-jpg.md",
+    "Quals/Algebra/AlgebraExport/SmartSelect_20210420-000457_Xodo_Docs-jpg.md",
+    "Unsorted/Untitled.md",
     "Quick_Notes/2021-01-05.md",
     "Quick_Notes/2021-01-21.md",
     "Quick_Notes/2021-04-04.md",
-    "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
-    "Pasted image 20210403005019.png",
-    "Pasted image 20210403005035.png",
-    "Pasted image 20210403005048.png",
-    "Pasted image 20210403005059.png",
-    "Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8/Formal Groups Notes.md"
+    "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md"
   ]
 }
