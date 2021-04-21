@@ -139,8 +139,6 @@ where we've used the fact that $\ZZ/n$ is commutative.
   - Use $1 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{} \ZZ/m \to 1$ and apply $\Hom_\ZZ(\wait, \ZZ)$.
 - $\Ext_\ZZ(\ZZ/m, \ZZ/n) = \ZZ/d$.
 
-- 
-
 :::
 
 :::{.slogan}
