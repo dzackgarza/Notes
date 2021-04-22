@@ -3629,7 +3629,7 @@ We say two extensions \( \xi, \xi' \) are equivalent and write \( \xi \sim \xi' 
 An extension is **split** if and only if it is equivalent to
 \[
 0 \to B \overset{\iota}\hookrightarrow A \oplus B \to A 
-  \xrightarrow[]{\pi}\mathrel{\mkern-14mu}\rightarrow
+  \xrightarrow[]{\pi} { \mathrel{\mkern-16mu}\rightarrow }\,
  A \to 0
 .\]
 :::
@@ -6376,7 +6376,7 @@ For \( n \) odd, we get a SES
 \[
 0 \to {\mathbb{Z}}/m \to H_n(C_{2m}; {\mathbb{Z}}) \to {\mathbb{Z}}/2 \to 0
 .\]
-Letting \( B\in {\mathsf{Ab}} \) be the middle term, its order is \( 2m \), the product of the two outer elements. By Cauchy's theorem, since \( 2\mathrel{\Big|}\# B \), there is an element \( y\in B \) of order 2. So send the generator of \( {\mathbb{Z}}/2 \) to \( y \) to form the splitting. Thus
+Letting \( B\in {\mathsf{Ab}} \) be the middle term, its order is \( 2m \), the product of the two outer elements. By Cauchy's theorem, since \( 2\bigm|\# B \), there is an element \( y\in B \) of order 2. So send the generator of \( {\mathbb{Z}}/2 \) to \( y \) to form the splitting. Thus
 \[
 B\cong {\mathbb{Z}}/m \oplus {\mathbb{Z}}/2 \cong {\mathbb{Z}}/m \times {\mathbb{Z}}/2 \cong {\mathbb{Z}}/2m
 ,\]
@@ -7015,7 +7015,7 @@ T(M) \coloneqq\bigoplus_{i\geq 0}  M^{\otimes_k n} \coloneqq k \otimes\bigoplus 
 :::
 
 ::: {.remark}
-Note that \( T(M) \in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) by extending the \( k{\hbox{-}} \)action over sums and tensor products in the obvious way, and in fact \( T(M) \in {\mathsf{gr}}({\mathsf{Alg}_{/k} }) \) where tensors in different degrees are juxtaposed. Explicitly, for \( m\in M^{\otimes n} \) and \( m' \in M^{\otimes n'} \), we write \( m\otimes m' \in M^{\otimes(n+n')} \), which is what it means to be a *graded* algebra.
+Note that \( T(M) \in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) by extending the \( k{\hbox{-}} \)action over sums and tensor products in the obvious way, and in fact \( T(M) \in {\mathsf{gr}\,}({\mathsf{Alg}_{/k} }) \) where tensors in different degrees are juxtaposed. Explicitly, for \( m\in M^{\otimes n} \) and \( m' \in M^{\otimes n'} \), we write \( m\otimes m' \in M^{\otimes(n+n')} \), which is what it means to be a *graded* algebra.
 :::
 
 ::: {.remark}
@@ -7058,7 +7058,7 @@ There is thus a natural isomorphism
 # Universal Enveloping Algebras (Wednesday, April 14)
 
 ::: {.remark}
-Continuing section 7.3 on universal enveloping algebras.: Letting \( k \in \mathsf{CRing}, {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k}, M\in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \), we defined the tensor algebra \( T(M) \coloneqq k \oplus \bigoplus_{i\geq 1} M^{\otimes n}\in {\mathsf{gr}}{\mathsf{Alg}_{/k} }(\mathsf{Assoc}, \mathsf{Unital}) \) and noted that it was universal for maps from \( M \) to \( k{\hbox{-}} \)algebras.
+Continuing section 7.3 on universal enveloping algebras.: Letting \( k \in \mathsf{CRing}, {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k}, M\in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \), we defined the tensor algebra \( T(M) \coloneqq k \oplus \bigoplus_{i\geq 1} M^{\otimes n}\in {\mathsf{gr}\,}{\mathsf{Alg}_{/k} }(\mathsf{Assoc}, \mathsf{Unital}) \) and noted that it was universal for maps from \( M \) to \( k{\hbox{-}} \)algebras.
 :::
 
 ::: {.definition title="Universal Enveloping Algebra"}
@@ -7178,6 +7178,519 @@ To at least see why these are a spanning set, suppose \( \beta > \alpha \). We c
 x_{ \beta} x_{ \alpha} = x_{ \alpha} x_{ \beta} + [x_{ \beta} x_{ \alpha}]
 .\]
 However, note that the commutator here has lower degree (here, the other factors are degree 2 and the commutator is degree 1). This decreases the number of misorders as well, so induction roughly works. The fact that these are linearly independent is harder and uses some actual representation theory.
+:::
+
+# Friday, April 16
+
+## The Enveloping Algebra (Continued)
+
+::: {.remark}
+Last time: the PBW theorem. Let \( {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}} \) and free as a \( k{\hbox{-}} \)module with \( k{\hbox{-}} \)basis \( \left\{{ x_ \alpha }\right\}_{\alpha\in A} \). Then \( {\mathcal{U}(\mathfrak{g}) } \) has a \( k{\hbox{-}} \)basis \( \left\{{ x_I }\right\} \) where \( I = ( \alpha_1, \cdots, \alpha_p) \) is a finite increasing sequence from \( A \)
+:::
+
+::: {.example title="?"}
+If \( k \) is a field and \( \dim_k {\mathfrak{g}} \) is finite with basis \( \left\{{ x_1, \cdots, x_n }\right\} \). Take \( I = (1,\cdots, 1, 2\cdots, 2, n\cdots, n) \) where each \( i \) occurs \( a_i \) times. Then a basis for \( {\mathcal{U}(\mathfrak{g}) } \) is \( \left\{{ x_1^{a_1} x_2^{a_2} \cdots x_n^{a_n} {~\mathrel{\Big|}~}a_i \geq 0 }\right\} \).
+:::
+
+::: {.corollary title="?"}
+The map \( \iota: {\mathfrak{g}}\to {\mathcal{U}(\mathfrak{g}) } \) is injective, so we can identify \( \iota({\mathfrak{g}}) \) with \( {\mathfrak{g}} \).
+:::
+
+::: {.proof title="?"}
+The elements \( x_{(\alpha)} \coloneqq\iota(x_{ \alpha} ) \in {\mathcal{U}(\mathfrak{g}) } \) are \( k{\hbox{-}} \)linearly independent.
+:::
+
+::: {.corollary title="?"}
+If \( {\mathfrak{h}}\leq {\mathfrak{g}} \) is a subalgebra and \( k \) is a field, then \( {\mathcal{U}(\mathfrak{g}) } \) is free as a \( \mathcal{U}({\mathfrak{h}}){\hbox{-}} \)module.
+:::
+
+::: {.proof title="?"}
+Choose an ordered basis for \( {\mathfrak{h}} \) first and then extend this to an ordered basis for \( {\mathfrak{g}} \) -- that one can do this is a fact from linear algebra. Then the \( x_I \) where \( I = ( \alpha_1, \cdots, \alpha_p ) \) is increasing and no \( x_{\alpha_i} \in {\mathfrak{h}} \) will be a basis for \( {\mathcal{U}(\mathfrak{g}) } \) over \( {\mathcal{U}(\mathfrak{h}) } \).
+:::
+
+::: {.example title="?"}
+If \( \dim_k {\mathfrak{g}}< \infty \) and \( \left\{{ x_1, \cdots, x_k }\right\} \) is a basis for \( {\mathfrak{h}} \) and \( \left\{{ x_1,\cdots, x_k, x_{k+1} \cdots, x_n }\right\} \) is a basis for \( {\mathfrak{g}} \), then the PBW basis is given by \( \left\{{ x_1^{a_1} \cdots x_k^{a_k} x_{k+1}^{a_{k+1}} \cdots x_n^{a_n} {~\mathrel{\Big|}~}a_i \geq 0 }\right\} \). Then \( \left\{{ x_{k+1]^{a_{k+1}} \cdots x_n ^{a_n} }}\right\} \) form a free left \( {\mathcal{U}(\mathfrak{h}) }{\hbox{-}} \)module basis for \( {\mathcal{U}(\mathfrak{g}) } \).
+:::
+
+::: {.exercise title="?"}
+Some suggested exercises:
+
+-   7.3.4
+-   7.3.6
+-   7.3.7 for working with \( {\mathcal{U}(\mathfrak{h}) } \) as a Hopf algebra.
+-   7.3.9 for representations of Lie algebras in characteristic \( p \).
+:::
+
+## \( H^1 \) for Lie Algebras (Weibel 7.4) {#h1-for-lie-algebras-weibel-7.4}
+
+::: {.remark}
+Recall that we have an augmentation ideal \( \mathcal{I} {~\trianglelefteq~}{\mathcal{U}(\mathfrak{h}) } \) and a SES
+\[
+0 \to\mathcal{I}\to{\mathcal{U}(\mathfrak{g}) }\to k\to 0
+.\]
+Applying the functor \( \mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}({-}, M) \) for a fixed \( M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \) yields a LES:
+
+```{=tex}
+\begin{tikzcd}
+    0 && {\mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}(k, M)} && {\mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}({\mathcal{U}(\mathfrak{g}) }, M)} && {\mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}(\mathcal{I}, M)} \\
+    \\
+    && {\operatorname{Ext}^1_{{\mathcal{U}(\mathfrak{g}) }}(k, M) = H^1({\mathfrak{g}}; M)} && \textcolor{rgb,255:red,214;green,92;blue,92}{\operatorname{Ext}^1_{{\mathcal{U}(\mathfrak{g}) }}({\mathcal{U}(\mathfrak{g}) }, M)=0} && \cdots
+    \arrow["\delta", from=1-7, to=3-3]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=1-5, to=1-7]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=3-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwwLCIwIl0sWzIsMCwiXFxIb21fe1xcVWd9KGssIE0pIl0sWzQsMCwiXFxIb21fe1xcVWd9KFxcVWcsIE0pIl0sWzYsMCwiXFxIb21fe1xcVWd9KFxcbWF0aGNhbHtJfSwgTSkiXSxbMiwyLCJcXEV4dF4xX3tcXFVnfShrLCBNKSA9IEheMShcXGxpZWc7IE0pIl0sWzQsMiwiXFxFeHReMV97XFxVZ30oXFxVZywgTSk9MCIsWzAsNjAsNjAsMV1dLFs2LDIsIlxcY2RvdHMiXSxbMyw0LCJcXGRlbHRhIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsNV0sWzUsNl1d)
+
+Here the red term vanishes since \( {\mathcal{U}(\mathfrak{g}) } \) is free and this projective as a \( {\mathfrak{g}}{\hbox{-}} \)module. Note that for \( n\geq 2 \), we have the following situation:
+
+```{=tex}
+\begin{tikzcd}
+    \cdots && \textcolor{rgb,255:red,214;green,92;blue,92}{\operatorname{Ext}^{n-1}_{{\mathcal{U}(\mathfrak{g}) }}({\mathcal{U}(\mathfrak{g}) }, M)=0} && {\operatorname{Ext}_{{\mathcal{U}(\mathfrak{g}) }}^{n-1}(\mathcal{I}, M)} \\
+    \\
+    {\operatorname{Ext}^1_{{\mathcal{U}(\mathfrak{g}) }}(k, M) = H^1({\mathfrak{g}}; M)} && \textcolor{rgb,255:red,214;green,92;blue,92}{\operatorname{Ext}^{n}_{{\mathcal{U}(\mathfrak{g}) }}({\mathcal{U}(\mathfrak{g}) }, M)=0} && \cdots
+    \arrow["{\delta \quad \cong}", color={rgb,255:red,92;green,92;blue,214}, from=1-5, to=3-1]
+    \arrow[from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJcXGNkb3RzIl0sWzIsMCwiXFxFeHRee24tMX1fe1xcVWd9KFxcVWcsIE0pPTAiLFswLDYwLDYwLDFdXSxbNCwwLCJcXEV4dF97XFxVZ31ee24tMX0oXFxtYXRoY2Fse0l9LCBNKSJdLFswLDIsIlxcRXh0XjFfe1xcVWd9KGssIE0pID0gSF4xKFxcbGllZzsgTSkiXSxbMiwyLCJcXEV4dF57bn1fe1xcVWd9KFxcVWcsIE0pPTAiLFswLDYwLDYwLDFdXSxbNCwyLCJcXGNkb3RzIl0sWzIsMywiXFxkZWx0YSBcXHF1YWQgXFxjb25nIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXX0sWzI0MCw2MCw2MCwxXV0sWzAsMV0sWzEsMl0sWzMsNF0sWzQsNV1d)
+
+Thus we get a degree shifting isomorphism
+\[
+H^n({\mathfrak{g}}; M) \cong \operatorname{Ext}_{{\mathcal{U}(\mathfrak{g}) }}^{n-1}(\mathcal{I}, M)
+.\]
+:::
+
+::: {.remark}
+We thus have
+\[
+H^1({\mathfrak{g}}; M) \cong { \mathop{\mathrm{Hom}}_{\mathcal{U}(\mathfrak{g}) }(\mathcal{I}, M) / \operatorname{im}\qty{ \mathop{\mathrm{Hom}}_{\mathcal{U}(\mathfrak{g}) }({\mathcal{U}(\mathfrak{g}) }, M) \cong M \to \mathop{\mathrm{Hom}}(\mathcal{I}, M)  } }
+.\]
+Next goal: to more concretely express all of the terms here as \( M{\hbox{-}} \)valued derivations on \( {\mathfrak{g}} \).
+:::
+
+::: {.definition title="Derivations of an algebra"}
+Let \( M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \), then a **derivation from \( {\mathfrak{g}} \) into \( M \)** is a \( k{\hbox{-}} \)linear map \( D:{\mathfrak{g}}\to M \) satisfying the Leibniz rule:
+\[
+D([xy]) = x\cdot (Dy) - y\cdot (Dx) && x,y\in {\mathfrak{g}}
+.\]
+:::
+
+::: {.remark}
+The set of all such maps \( \mathop{\mathrm{Der}}({\mathfrak{g}}, M) \leq_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}} \mathop{\mathrm{Hom}}_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}}({\mathfrak{g}}, M) \) is a \( k{\hbox{-}} \)submodule. A special case is taking \( M \coloneqq{\mathfrak{g}} \), regarded as a \( {\mathfrak{g}}{\hbox{-}} \)module using the adjoint representation. In fact, for any \( k{\hbox{-}} \)algebra (not necessarily associative), we get
+\[
+D(ab) = (Da)\cdot b + a\cdot(Db)
+.\]
+When \( A \coloneqq{\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}} \) with the adjoint action, we obtain
+\[
+D([xy]) 
+&= [x, Dy] + [Dx, y] \\
+&= [x, Dy] - [y, Dx] \\
+&= x\cdot Dy - y\cdot (Dx)
+,\]
+recovering the previous definition.
+:::
+
+::: {.definition title="Inner Derivations"}
+For \( M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \), fix an \( m\in M \). We then define
+\[
+D_m: {\mathfrak{g}}&\to M \\
+x &\mapsto x\cdot m
+.\]
+Any derivation of this form is said to be an **inner derivation**, and this yields a \( k{\hbox{-}} \)submodule
+\[
+{\operatorname{Inn}}({\mathfrak{g}}, M) \leq_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}} \mathop{\mathrm{Der}}({\mathfrak{g}}, M)
+.\]
+:::
+
+::: {.remark}
+Note that this is indeed a derivation:
+\[
+D_m([xy]) ] [xy]\cdot m = x\cdot(y\cdot m) - y\cdot(x\cdot m) = x\cdot (D_m y) - y\cdot (D_m x)
+.\]
+It also turns out that any inner derivation is of this form, bracketing against a fixed element.
+:::
+
+::: {.proposition title="?"}
+\[
+\mathop{\mathrm{Hom}}_{\mathfrak{g}{\hbox{-}}\mathsf{Mod}}(\mathcal{I}, M) \cong \mathop{\mathrm{Der}}({\mathfrak{g}}, M)
+.\]
+:::
+
+::: {.proof title="?"}
+::: {.claim}
+There exists such a map.
+:::
+
+Say \( \varphi\in \mathop{\mathrm{Hom}}_{\mathfrak{g}}(\mathcal{I}, M) \) and set
+\[
+D_{\varphi}:{\mathfrak{g}}&\to M \\
+x &\mapsto \phi(x)
+.\]
+Then \( D_{ \varphi} \) is a derivation, so we have
+\[
+D_{ \varphi}([xy]) 
+&\coloneqq\phi([xy]) \\
+&= \phi(xy-yx) \\
+&= x \varphi(y) - y \varphi(x) && \text{since $\phi$ is ${\mathfrak{g}}{\hbox{-}}$linear} \\
+&= x D_{\varphi}(y) - y D_{\varphi}(x)
+.\]
+
+::: {.claim}
+This map is a natural isomorphism, in the sense that it doesn't depend on any choices:
+\[
+\mathop{\mathrm{Hom}}_{\mathfrak{g}}(\mathcal{I}, M) &\to \mathop{\mathrm{Der}}({\mathfrak{g}}, M) \\
+\varphi&\mapsto D_{ \varphi}
+.\]
+:::
+
+::: {.proof title="of surjectivity"}
+Recall that we can write \( \mathcal{I} = {\mathcal{U}(\mathfrak{g}) }\,{\mathfrak{g}} \), so the following product map is a surjection:
+\[
+\theta: {\mathcal{U}(\mathfrak{g}) }\otimes_k {\mathfrak{g}}&\twoheadrightarrow{\mathcal{U}(\mathfrak{g}) }\,{\mathfrak{g}}= \mathcal{I} \\
+x\otimes y &\mapsto xy
+.\]
+One checks that the kernel is given by
+\[
+\ker(\theta) = \left\{{ u \otimes[xy] - \qty{ux\otimes y - uy\otimes x} {~\mathrel{\Big|}~}x,y\in {\mathfrak{g}}, u\in {\mathcal{U}(\mathfrak{g}) }}\right\} 
+.\]
+Now given \( D \in \mathop{\mathrm{Der}}({\mathfrak{g}}, M) \), consider the map
+\[
+f: {\mathcal{U}(\mathfrak{g}) }\otimes_k {\mathfrak{g}}&\to M \\
+f(u\otimes x) &= u\cdot Dx
+.\]
+
+One can compute the following, using that \( D \) is a derivation:
+\[
+f\qty{ u\otimes[xy] - ux\otimes y - uy\otimes x }
+&= u D([xy]) - (ux)\cdot D(y) + (uy) \cdot D(x) \\
+&= u (x\cdot Dy - y\cdot Dx) - u\cdot(x\cdot Dy) + u\cdot(y\cdot Dx) \\
+&= 0
+.\]
+So \( f \) induces a well-defined morphism of \( {\mathfrak{g}}{\hbox{-}} \)modules, and descends to a map
+\[
+\phi: {\mathcal{U}(\mathfrak{g}) }\,{\mathfrak{g}}= \mathcal{I} &\to M
+,\]
+which is clearly also a morphism of \( {\mathfrak{g}}{\hbox{-}} \)modules. So \( \varphi\in \mathop{\mathrm{Hom}}_{\mathfrak{g}}(\mathcal{I}, M) \) and \( D_{\varphi}(x) = \varphi(x) = \varphi(1\cdot x) = f(1\cdot x) = 1\cdot Dx = Dx \), and so \( D = D_{ \varphi} \).
+:::
+
+```{=tex}
+\todo[inline]{Might as well find-and-replace "map" with "morphism"!}
+```
+::: {.proof title="of injectivity"}
+Suppose over \( D \) that we have \( D_{\psi} \) for some \( \psi \in \mathop{\mathrm{Hom}}_{\mathfrak{g}}(\mathcal{I}, M) \). We then have
+\[
+\phi(ux) = uD(x) = u \Psi(x) = \Psi(ux) && \forall u\in {\mathcal{U}(\mathfrak{g}) }, x\in {\mathfrak{g}}
+.\]
+Since \( \mathcal{I} = {\mathcal{U}(\mathfrak{g}) }\, {\mathfrak{g}} \) and \( \phi = \Psi \), yielding a 1-to-1 map.
+:::
+:::
+
+# Lie Algebra Cohomology (Monday, April 19)
+
+## Identification of \( H^1 \) as Derivations {#identification-of-h1-as-derivations}
+
+::: {.remark}
+Let \( {\mathfrak{g}}\in{\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k} \) and \( M\in{\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \), we were showing
+\[
+H^1({\mathfrak{g}}; M) \cong { \mathop{\mathrm{Hom}}_{{\mathfrak{g}{\hbox{-}}\mathsf{Mod}}}( \mathcal{I}, M) \over \operatorname{im}\qty{ \mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}({\mathcal{U}(\mathfrak{g}) }, M)  \to \mathop{\mathrm{Hom}}_{{\mathfrak{g}}}( \mathcal{I}, M)  } }
+,\]
+where the source in the denominator is isomorphic to \( M \), given by the map \( \operatorname{ev}_1 \). We found a map
+\[
+\mathop{\mathrm{Hom}}_{\mathfrak{g}}(\mathcal{I}, M) \xrightarrow{\sim} \mathop{\mathrm{Der}}({\mathfrak{g}}, M) \\
+\phi \mapsto (D_\phi: x\mapsto \phi(x))
+.\]
+We also defined inner derivations as those given by maps \( D_m(x) \coloneqq mx \) for some \( m\in M \).
+:::
+
+::: {.theorem title="?"}
+\[
+H^1({\mathfrak{g}}; M) \cong {\mathop{\mathrm{Der}}({\mathfrak{g}}, M) \over {\operatorname{Inn}}({\mathfrak{g}}, M) }
+.\]
+:::
+
+::: {.proof title="?"}
+In the formula, we already know that the numerator is isomorphic to \( \mathop{\mathrm{Der}}({\mathfrak{g}}, M) \), so it remains to look at the denominator. The map appearing there is restriction to \( \mathcal{I} \), i.e. \( \phi \mapsto { \left.{{\phi}} \right|_{{\mathcal{I}}} } \). The associated derivation is given by
+\[
+D_\phi(x) = \phi(x) = \phi(x\cdot 1) = x \phi(1) = xm \coloneqq D_m(x) 
+,\]
+and so \( D_\phi = D_m \). Conversely, given an \( m \), we get a derivation \( D_m \), and thus the image is precisely all inner derivations.
+:::
+
+## LHS Spectral Sequences
+
+::: {.remark}
+If \( {\mathfrak{h}}{~\trianglelefteq~}{\mathfrak{g}} \), there is a SES in \( {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}} \):
+\[
+0 \to {\mathfrak{h}}\to {\mathfrak{g}}\to {\mathfrak{g}}/{\mathfrak{h}}\to 0
+.\]
+:::
+
+::: {.theorem title="LHS Spectral Sequence"}
+Let \( {\mathfrak{h}}{~\trianglelefteq~}{\mathfrak{g}} \) and \( M\in{\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \), then there are first quadrant spectral sequences
+\[
+E_{p, q}^2 &= H_p( {\mathfrak{g}}/{\mathfrak{h}}; H_q({\mathfrak{h}}; M ) ) \Rightarrow H_{p+q}({\mathfrak{g}}; M) \\
+E_{p, q}^2 &= H^p( {\mathfrak{g}}/{\mathfrak{h}}; H_q({\mathfrak{h}}; M)) \Rightarrow H^{p+q}({\mathfrak{g}}; M)
+.\]
+:::
+
+::: {.remark}
+This comes from a similar application of the Grothendieck spectral sequence. The exact sequences in low-degree terms are given as usual[^11] and similar inflation and restriction maps appear here. This is useful because it allows computing homology of "smaller" algebras, which one might have control over by induction.
+:::
+
+### 7.7: Chevalley-Eilenberg (Koszul) Complex
+
+::: {.remark}
+A computationally efficient way of compute Lie algebra cohomology using a projective resolution of the trivial \( {\mathfrak{g}}{\hbox{-}} \)module \( k\in{\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \), recalling that this involves acting by zero. [^12]
+
+We're going to define a chain complex
+\[
+V_*({\mathfrak{g}}) 
+  \xrightarrow[]{\varepsilon} { \mathrel{\mkern-16mu}\rightarrow }\,
+ k
+,\]
+which will turn out to be supported in finitely many degrees when \( \dim_k {\mathfrak{g}}< \infty \).
+:::
+
+::: {.remark}
+We'll assume \( {\mathfrak{g}}\in { {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k} }(\mathsf{Free}) \), which happens e.g. if \( k\in \mathsf{Field} \). Recall that the exterior algebra was a graded algebra defined as the quotient of the tensor algebra:
+\[
+\bigwedge^* {\mathfrak{g}}\coloneqq{
+T({\mathfrak{g}}) \over 
+\left\langle{x^{\otimes 2} {~\mathrel{\Big|}~}x\in {\mathfrak{g}}
+  }\right\rangle} = \bigoplus _{p\geq 0} \bigwedge^p {\mathfrak{g}}
+.\]
+We write \( x_1\wedge x_2\wedge\cdots \wedge x_p \) for the image of \( {\mathfrak{g}}\hookrightarrow\bigwedge^* {\mathfrak{g}} \) Note that this is a 2-sided homogeneous ideal, and since \( x\wedge x = 0 \) we have \( x\wedge y = -y\wedge x \).
+:::
+
+::: {.remark}
+If \( \left\{{ x_\alpha }\right\} \) is an ordered basis for \( {\mathfrak{g}} \), then there is an ordered basis for \( \bigwedge^p {\mathfrak{g}} \):
+\[
+\left\{{ { {x_{\alpha}}_1, {x_{\alpha}}_2, \cdots, {x_{\alpha}}_{p}}  {~\mathrel{\Big|}~}\alpha_1 < \cdots < \alpha_p }\right\}
+,\]
+where we note that the indices are strictly increasing like the sequences \( I \) we had previously. One can always arrange this by commuting things to organize the sequence properly. We also have \( \bigwedge^0 {\mathfrak{g}}\cong k \) with a basis of \( 1_k \), and \( \bigwedge^1 {\mathfrak{g}}\cong {\mathfrak{g}} \). In particular, if \( \dim {\mathfrak{g}}= n < \infty \), then \( \bigwedge^p {\mathfrak{g}}= 0 \) for all \( p>n \), and in this case \( \bigwedge^n {\mathfrak{g}}\cong k \).
+:::
+
+::: {.definition title="The Chevalley-Eilenberg (or Koszul) Complex"}
+Define
+\[
+V_p({\mathfrak{g}}) \coloneqq{\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^p{\mathfrak{g}}
+,\]
+where the maps are given below.
+:::
+
+::: {.fact}
+\( V_p({\mathfrak{g}}) \) is free in \( \mathsf{{\mathcal{U}(\mathfrak{g}) }}{\hbox{-}}\mathsf{Mod} \), since we've constructed a free basis, and so in particular it is projective. The maps in the complex are given by the following:
+
+```{=tex}
+\begin{tikzcd}
+    &&&&&& {\mathcal{I} = \ker \varepsilon= {\mathcal{U}(\mathfrak{g}) }\,{\mathfrak{g}}} \\
+    \\
+    &&&&&&&& {\mathcal{U}(\mathfrak{g}) }\\
+    \\
+    {V_p({\mathfrak{g}})} && {V_{p-1}({\mathfrak{g}})} && \cdots && {V_1({\mathfrak{g}})} && {V_0({\mathfrak{g}})} && k \\
+    \\
+    {{\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^p {\mathfrak{g}}} && {{\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^{p-1} {\mathfrak{g}}} &&&& {{\mathcal{U}(\mathfrak{g}) }\otimes_k {\mathfrak{g}}} && {\mathcal{U}(\mathfrak{g}) }&&&& 0 \\
+    {u \otimes\bigwedge_j x_{i_j}} && {\theta_1 + \theta_2} &&&& {u\otimes x} && ux
+    \arrow["\cong", no head, from=3-9, to=5-9]
+    \arrow["{\exists \varepsilon}", dashed, from=5-9, to=5-11]
+    \arrow["\varepsilon", from=3-9, to=5-11]
+    \arrow[hook, from=1-7, to=3-9]
+    \arrow["{d_p}", from=5-1, to=5-3]
+    \arrow[from=5-3, to=5-5]
+    \arrow[from=5-5, to=5-7]
+    \arrow["{d_1}", from=5-7, to=5-9]
+    \arrow[maps to, from=8-7, to=8-9]
+    \arrow[no head, from=7-7, to=5-7]
+    \arrow[no head, from=7-9, to=5-9]
+    \arrow[maps to, from=8-1, to=8-3]
+    \arrow["{d_p}", from=7-1, to=7-3]
+    \arrow[no head, from=7-3, to=5-3]
+    \arrow[no head, from=7-1, to=5-1]
+    \arrow["{d_1}", from=7-7, to=7-9]
+    \arrow[from=5-11, to=7-13]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTcsWzEwLDQsImsiXSxbOCw0LCJWXzAoXFxsaWVnKSJdLFs2LDQsIlZfMShcXGxpZWcpIl0sWzQsNCwiXFxjZG90cyJdLFsyLDQsIlZfe3AtMX0oXFxsaWVnKSJdLFswLDQsIlZfcChcXGxpZWcpIl0sWzgsMiwiXFxVZyJdLFs2LDAsIlxcbWF0aGNhbHtJfSA9IFxca2VyIFxcZXBzID0gXFxVZ1xcLFxcbGllZyJdLFs2LDYsIlxcVWcgXFx0ZW5zb3JfayBcXGxpZWciXSxbNiw3LCJ1XFx0ZW5zb3IgeCJdLFs4LDcsInV4Il0sWzgsNiwiXFxVZyJdLFswLDYsIlxcVWcgXFx0ZW5zb3JfayBcXEV4dGFsZ15wIFxcbGllZyJdLFsyLDYsIlxcVWcgXFx0ZW5zb3JfayBcXEV4dGFsZ157cC0xfSBcXGxpZWciXSxbMCw3LCJ1IFxcdGVuc29yIFxcV2VkZ2VfaiB4X3tpX2p9Il0sWzIsNywiXFx0aGV0YV8xICsgXFx0aGV0YV8yIl0sWzEyLDYsIjAiXSxbNiwxLCJcXGNvbmciLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMCwiXFxleGlzdCBcXGVwcyIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs2LDAsIlxcZXBzIl0sWzcsNiwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNSw0LCJkX3AiXSxbNCwzXSxbMywyXSxbMiwxLCJkXzEiXSxbOSwxMCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFs4LDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTEsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxNCwxNSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFsxMiwxMywiZF9wIl0sWzEzLDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTIsNSwiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDExLCJkXzEiXSxbMCwxNl1d)
+
+Here we define
+\[
+\theta_1 &\coloneqq\sum_{i=1}^p ux_i \otimes x_1 \wedge x_2 \wedge \cdots \wedge \widehat{x_i} \wedge \cdots \wedge x_p \\
+\theta_2 &\coloneqq
+\sum_{i < j}^p (-1)^{i+j} 
+u\otimes[x_i x_j] \otimes x_1 \wedge x_2 \wedge \cdots \wedge \widehat{x_i} \wedge \cdots \wedge \widehat{x_j} \wedge \cdots \wedge x_p
+,\]
+where the hat denotes omitting a term. Note that \( \operatorname{im}d_1 = {\mathcal{U}(\mathfrak{g}) }\,{\mathfrak{g}}= \mathcal{I} = \ker \varepsilon \), so we get exactness at the first position, and exercise 7.7.1 shows that \( d^2 = 0 \).
+:::
+
+::: {.example title="?"}
+For \( p=2 \), we have
+\[
+d(u\otimes x \otimes y) = \qty{ux\otimes y - uy\otimes x} + \qty{- u \otimes[xy] }
+.\]
+:::
+
+::: {.remark}
+We want this to be a projective resolution, so not just that \( \ker \subset \operatorname{im} \), but rather we want exactness everywhere so \( \ker = \operatorname{im} \). We'll proceed by showing its homology vanishes.
+:::
+
+::: {.theorem title="Koszul Resolution"}
+The Koszul complex \( V_*({\mathfrak{g}}) 
+  \xrightarrow[]{\varepsilon} { \mathrel{\mkern-16mu}\rightarrow }\,
+ k\, \) is a projective resolution in \( {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \).
+:::
+
+::: {.proof title="of theorem"}
+Choose an ordered basis \( \left\{{ e_{ \alpha}}\right\}_{\alpha\in \Omega} \), where \( \Omega \) some totally ordered index set, for \( {\mathfrak{g}} \) over \( k \). By the PBW theorem, \( V_n \coloneqq V_n({\mathfrak{g}}) \) has a free \( k{\hbox{-}} \)basis given by
+\[
+\label{basis_elts_pbw_koszul}
+e_I \otimes\qty{e_{\alpha_1} \otimes\cdots e_{\alpha_n}}
+.\]
+for \( I = [ \beta_1, \cdots, \beta_m ] \) some weakly increasing sequence from \( \Omega \). This gives a filtration, so we're heading toward using the spectral sequence of a filtered complex. The filtered pieces are given by \( F_p V_n \) defined as the \( k{\hbox{-}} \)module generated by elements of the form given in `\cref{basis_elts_pbw_koszul}`{=tex} where \( m+n \leq p \). Looking at the formula for \( d \), we will get a differential
+\[
+d_n F_p V_n \to F_p V_{n-1}
+.\]
+:::
+
+# Exactness of the Chevalley-Eilenberg Resolution (Wednesday, April 21)
+
+::: {.remark}
+Recall that \( {\mathfrak{g}} \) was free over \( k \) with an ordered basis \( \left\{{ e_{\alpha} {~\mathrel{\Big|}~}\alpha\in \Omega }\right\} \). We defined
+\[
+V_n({\mathfrak{g}}) \coloneqq{\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^n {\mathfrak{g}}
+\]
+with a differential \( d = \theta_1 + \theta_2 \). We claimed that \( V_n({\mathfrak{g}}) 
+  \xrightarrow[]{\varepsilon} { \mathrel{\mkern-16mu}\rightarrow }\,
+ k \) is a projective resolution, and we were showing that \( V_* \) was an exact complex.
+:::
+
+::: {.proof title="of theorem, continued"}
+We define a filtration
+\[
+F_p V_n \coloneqq k \left\langle{ e_I \otimes e_{ \alpha_1} \wedge \cdots \wedge e_{\alpha_n} {~\mathrel{\Big|}~}I = [{ {\beta}_1, {\beta}_2, \cdots, {\beta}_{m}}], \alpha_1 \leq \cdots \leq \alpha_n,\, m+n\leq p }\right\rangle 
+.\]
+Note that \( d: F_p V_n \to F_p V_{n-1} \), and in fact \( \theta_2 \) maps into \( F_{p-1} V_{n-1} \). We'll focus on \( \theta_1 \) for simplicity. It lands in the same complex since we can rearrange elements in the sum defining the differential to express everything in terms of the given basis, where every expression will be of length one less. The commutation relation was
+\[
+e_{ \beta} e_{\alpha} = e_{\alpha} e_{\beta} + [e_{\beta} e_{ \alpha} ]
+,\]
+where the left-hand side is degree 2, and the right-hand side is a degree 2 term plus a degree 1 term. Moreover \( d \) preserves the filtration: when rearranging, the degree \( u \) term in \( \theta_1 \) will decrease to \( m-1 \), the expression following it may increase to \( n+1 \), and \( (m-1) + (n+1) = m+n \). So \( F_p V_* \) is a subcomplex of \( V_* \), and we have
+\[
+0 = F_{-1} V_* \subseteq F_0 V_* \subseteq \cdots \subseteq F_p V_* \subseteq V_* = \bigcup_{p\geq 0} F_p V_*
+,\]
+which is not a finite filtration, but is bounded below and exhaustive. So by the canonical convergence theorem (Weibel 5.5.1), there is a convergent spectral sequence
+\[
+E_{p, q}^0 \coloneqq{F_p V_{p+q} \over F_{p-1} V_{p+q} } \Rightarrow H_{p+q}(V_*({\mathfrak{g}}))
+.\]
+We have \( E_{p, q}^0 = 0 \) unless
+
+-   \( p\geq 0 \), since the exterior algebra is only graded in positive degrees.
+
+-   \( p+q = n \geq 0 \)
+
+-   \( q\leq 0 \), which requires some explanation. We have \( m+n\leq p \), and so if \( p+q=n \leq p-m \) for \( m\geq 0 \), \( q\leq -m \leq 0 \).
+
+So this is a 4th quadrant spectral sequence that is supported above the line \( y=-x \). Recall that \( E_{p, q}^1 = H_q^v(E_{p, *}^0) \).
+
+```{=tex}
+\begin{tikzcd}
+    \bullet && \bullet \\
+    \\
+    \bullet &&& \bullet & \bullet & \bullet & \bullet & \bullet & \bullet & \bullet & \bullet \\
+    &&&& \bullet & \bullet & \bullet & \bullet & \bullet & \bullet \\
+    &&&&& \bullet & \bullet & \bullet & \bullet & \bullet \\
+    &&&&&& \bullet & \bullet & \bullet & \bullet \\
+    &&&&&&& \bullet & \bullet & \bullet \\
+    &&&&&&&& \bullet \\
+    && \bullet
+    \arrow[from=3-1, to=3-11]
+    \arrow[from=1-3, to=9-3]
+    \arrow[from=1-1, to=8-9]
+    \arrow[from=3-5, to=4-5]
+    \arrow[from=3-6, to=4-6]
+    \arrow[from=4-6, to=5-6]
+    \arrow["{d^0}", from=3-7, to=4-7]
+    \arrow[from=4-7, to=5-7]
+    \arrow[from=5-7, to=6-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMTAsMiwiXFxidWxsZXQiXSxbMiwwLCJcXGJ1bGxldCJdLFsyLDgsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbOCw3LCJcXGJ1bGxldCJdLFs0LDMsIlxcYnVsbGV0Il0sWzUsMywiXFxidWxsZXQiXSxbNiwzLCJcXGJ1bGxldCJdLFs3LDMsIlxcYnVsbGV0Il0sWzgsMywiXFxidWxsZXQiXSxbOSwzLCJcXGJ1bGxldCJdLFs5LDQsIlxcYnVsbGV0Il0sWzgsNCwiXFxidWxsZXQiXSxbNyw0LCJcXGJ1bGxldCJdLFs2LDQsIlxcYnVsbGV0Il0sWzcsNSwiXFxidWxsZXQiXSxbNSw0LCJcXGJ1bGxldCJdLFs2LDUsIlxcYnVsbGV0Il0sWzcsNiwiXFxidWxsZXQiXSxbOCw1LCJcXGJ1bGxldCJdLFs4LDYsIlxcYnVsbGV0Il0sWzksNiwiXFxidWxsZXQiXSxbOSw1LCJcXGJ1bGxldCJdLFs1LDIsIlxcYnVsbGV0Il0sWzQsMiwiXFxidWxsZXQiXSxbNiwyLCJcXGJ1bGxldCJdLFszLDIsIlxcYnVsbGV0Il0sWzcsMiwiXFxidWxsZXQiXSxbOCwyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzAsMV0sWzIsM10sWzQsNV0sWzI1LDZdLFsyNCw3XSxbNywxN10sWzI2LDgsImReMCJdLFs4LDE1XSxbMTUsMThdXQ==)
+
+Note that
+\[
+E_{\infty}^0 \coloneqq F_0 V_0 / F_{-1} V_0 = k\otimes_k k \cong k
+,\]
+since we take expressions with length zero in each factor defining \( F_p V_n \). Moreover this position is already stable provided the \( E_{p, 0}^{1} = 0 \) for all \( p \), the first and third quadrants are all zeros, and thus all differentials will be trivial from \( E^1 \) onward.
+
+::: {.claim}
+For \( p>0 \), \( E_{p, *}^0 \) is exact, and thus the spectral sequence collapses at \( E^1 \).
+:::
+
+Note that turning the page yields
+\[
+E_{p, q}^1 = 
+\begin{cases}
+k &  (p, q) = (0, 0)
+\\
+0 & \text{else}.
+\end{cases}
+\]
+Thus \( H_n(V_*({\mathfrak{g}})) = k \) in \( n=0 \) and zero elsewhere, which proves the result.
+
+::: {.proof title="Sketch"}
+For \( q\gg 0 \), define \( A_q \coloneqq k \left\langle{ e_I {~\mathrel{\Big|}~}I = [{ {\beta}_1, {\beta}_2, \cdots, {\beta}_{q}}] \text{ increasing} }\right\rangle \subseteq {\mathcal{U}(\mathfrak{g}) } \). So \( A_q \) is the \( q \)th graded piece of the standard increasing filtration by degree,
+\[
+k = U_0 \subset U_1 \subset \cdots \subseteq {\mathcal{U}(\mathfrak{g}) }
+.\]
+Note that this is a section standard filtration of \( {\mathcal{U}(\mathfrak{g}) } \) by degree with respect to the PBW basis[^13]. We have \( A_q \cong F_q V_0 / F_{q-1} V_0 \) and
+\[
+E_{p, q}^0 = {F_p V_{p+q} \over F_{p-1} V_{p+q} }
+\cong
+A_{-q} \otimes_k \bigwedge^{p+q}{\mathfrak{g}}
+.\]
+The negative sign is introduced since this is nonzero precisely when \( -p\leq q \leq 0 \) so \( q \) is negative and \( -q \) is positive. Now using the definition of \( d: V_n \to V_{n-1} \), \( d^0 \) is vertical and
+\[
+d^0: E_{p, q}^0 &\to E_{p, q-1}^0 
+\quad\quad n = p+q \\ \\
+\cong d^0: A_{-1} \otimes_k \bigwedge^n{\mathfrak{g}}&\to A_{-q+1}\otimes_k \bigwedge^{n-1} {\mathfrak{g}}
+\quad\quad n = p+q 
+.\]
+
+Recalling how \( d^0 \) was defined, note that we're modding out by lower order terms and thus brackets get killed when we commute elements to order them.
+
+\
+
+By Weibel 7.3.6, \( A \coloneqq\bigoplus_{q\geq 0} A_q \) is in fact a graded algebra, and \( A \cong {\mathsf{gr}\,}{\mathcal{U}(\mathfrak{g}) } \), the associated graded of \( {\mathcal{U}(\mathfrak{g}) } \). This turns out to be a polynomial ring on the indeterminates \( \mathbf{x} = \left\{{ e_{ \alpha } }\right\}_{\alpha\in \Omega} \), i.e. \( A\cong k[\mathbf{x}] \). In Weibel section 4.5, Weibel studies the *Koszul* complex and the map \( A \otimes_k \bigwedge^* {\mathfrak{g}}\to A \). By comparing the formula for \( d \) between these two complexes, one observes that the Koszul complex differentials are equal to the \( d^0 \) here. So we have an equality of complexes
+\[
+A \otimes_k \bigwedge^* {\mathfrak{g}}= \bigoplus _{p\geq 0} E_{p, *}^0
+.\]
+Weibel section 4.5 shows that when \( A\in \mathsf{CRing} \) with no zero divisors, e.g. a polynomial ring, then
+\[
+H_n \qty{ A \otimes_k \bigwedge^* {\mathfrak{g}}} =
+\begin{cases}
+k & n=0 
+\\
+0 & \text{else}.
+\end{cases}
+\]
+On the other hand, we have
+\[
+H_n \qty{ A \otimes_k \bigwedge^* {\mathfrak{g}}} 
+&=
+\bigoplus H_{n-p}^v( E_{p, *}^0 ) \hspace{4em} p+q=n \implies q=n-p \\
+&= \bigoplus _{p\geq 0} E_{p, n-p}^1
+.\]
+But we've already shown that \( E_{0, 0}^1 = k \), so all of the other \( E^1 \) terms must be zero.
+:::
+:::
+
+::: {.remark}
+See section 4.5 on Koszul complex. We'll do 7.8 next time.
 :::
 
 # Appendix: Extra Definitions
@@ -7320,12 +7833,8 @@ Note that \( R^0 F(B) \cong F(B) \) canonically:
 
 ::: {.proposition title="Common Ext Groups"}
 -   \( \operatorname{Ext}_{\mathbb{Z}}({\mathbb{Z}}/m, G) \cong G/mG \)
-
     -   Use \( 1 \to {\mathbb{Z}}\xrightarrow{\times m} {\mathbb{Z}}\xrightarrow{} {\mathbb{Z}}/m \to 1 \) and apply \( \mathop{\mathrm{Hom}}_{\mathbb{Z}}({-}, {\mathbb{Z}}) \).
-
 -   \( \operatorname{Ext}_{\mathbb{Z}}({\mathbb{Z}}/m, {\mathbb{Z}}/n) = {\mathbb{Z}}/d \).
-
--   
 :::
 
 ::: {.slogan}
@@ -7475,3 +7984,9 @@ Let \( F: {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{{\mathbb{Z}}}{\hbox{-}
 [^9]: See proposition 2.6.3 in Weibel.
 
 [^10]: Note that this is referred to as \( {\mathfrak{h}} \) or sometimes \( {\mathfrak{t}} \), since it's the torus.
+
+[^11]: See Weibel p.233.
+
+[^12]: See VIGRE project at UGA: programmed this resolution in GAP to compute Lie algebra cohomology!
+
+[^13]: See exercise 7.3.6.

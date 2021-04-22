@@ -55,6 +55,11 @@
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
+\newcommand{\FFp}[0]{\mathbb{F}_p}
+\newcommand{\chp}[0]{\operatorname{ch. p}}
+\newcommand{\fp}[0]{\operatorname{fp}}
+\newcommand{\HT}[0]{\operatorname{HT}}
+\newcommand{\qc}[0]{\operatorname{qc}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
@@ -90,6 +95,9 @@
 \newcommand{\ann}[0]{\operatorname{Ann}}
 \newcommand{\Ann}[0]{\operatorname{Ann}}
 \newcommand{\arcsec}[0]{\operatorname{arcsec}}
+\newcommand{\arccsc}[0]{\operatorname{arccsc}}
+\newcommand{\arccot}[0]{\operatorname{arccot}}
+\newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
 \newcommand{\Sp}[0]{{\operatorname{Sp}}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
@@ -110,6 +118,8 @@
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
+\newcommand{\reldim}[0]{\operatorname{reldim}}
+\newcommand{\cohdim}[0]{\operatorname{cohdim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\dR}[0]{\mathrm{dR}}
@@ -141,6 +151,8 @@
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
@@ -150,6 +162,8 @@
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\CRing}[0]{\mathsf{CRing}}
+\newcommand{\Field}[0]{\mathsf{Field}}
+\newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
 \newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
@@ -157,7 +171,7 @@
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
 \newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\mathsf{gr}}}
+\newcommand{\gr}[0]{{\mathsf{gr}\,}}
 \newcommand{\grMod}[0]{{\mathsf{grMod}}}
 \newcommand{\Mod}[0]{{\mathsf{Mod}}}
 \newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
@@ -165,20 +179,26 @@
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
 \newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
 \newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
+\newcommand{\calg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
 \newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
+\newcommand{\liealgk}[0]{{ \liealg_{/k} }}
 \newcommand{\alg}[0]{\mathsf{Alg}}
 \newcommand{\scalg}[0]{\mathsf{sCAlg}}
 \newcommand{\calg}[0]{\mathsf{CAlg}}
 \newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
 \newcommand{\ssets}[0]{\mathsf{sSets}}
 \newcommand{\Assoc}[0]{\mathsf{Assoc}}
+\newcommand{\Free}[0]{\mathsf{Free}}
 \newcommand{\Unital}[0]{\mathsf{Unital}}
+\newcommand{\Riem}[0]{\mathsf{Riem}}
 \newcommand{\Comm}[0]{\mathsf{Comm}}
 \newcommand{\Top}[0]{{\mathsf{Top}}}
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\Schf}[0]{{\mathsf{Schf}}}
+\newcommand{\Rep}[0]{{\mathsf{Rep}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
@@ -249,6 +269,7 @@
 \newcommand{\by}[0]{\times}
 \newcommand{\dash}[0]{{\hbox{-}}}
 \newcommand{\dd}[2]{{\frac{\partial #1}{\partial #2}\,}}
+\newcommand{\ddd}[2]{{\frac{d #1}{d #2}\,}}
 \newcommand{\definedas}[0]{\coloneqq}
 \newcommand{\da}[0]{\coloneqq}
 \newcommand{\del}[0]{{\partial}}
@@ -294,6 +315,7 @@
 \newcommand{\gl}[0]{{\mathfrak{gl}}}
 \newcommand{\liesl}[0]{{\mathfrak{sl}}}
 \newcommand{\Ug}[0]{{\mathcal{U}(\mathfrak{g}) }}
+\newcommand{\Uh}[0]{{\mathcal{U}(\mathfrak{h}) }}
 \newcommand{\lieb}[0]{{\mathfrak{b}}}
 \newcommand{\lien}[0]{{\mathfrak{n}}}
 \newcommand{\lieh}[0]{{\mathfrak{h}}}
@@ -318,8 +340,13 @@
 \newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
+\newcommand{\prism}[0]{\Delta}
+\newcommand{\Prism}[0]{\mathsf{Prism}}
+\newcommand{\Spf}[0]{\mathsf{Spf}}
+\newcommand{\WCart}[0]{\mathsf{WCart}}
+\newcommand{\padic}[0]{p\dash\text{adic}}
 \newcommand{\surjectsvia}[2][]{
-  \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
+  \xrightarrow[#1]{#2} { \mathrel{\mkern-16mu}\rightarrow }\,
 }
 \newcommand{\adjoint}[0]{\leftrightarrows}
 \newcommand{\kx}[1]{k[x_1, \cdots, x_{#1}]}
@@ -388,6 +415,7 @@
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
+\newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
 \newcommand{\rad}[0]{{\operatorname{rad}}}
@@ -418,6 +446,7 @@
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
 \newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
@@ -447,6 +476,7 @@
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
 \renewcommand{\hat}[1]{\widehat{#1}}
+\newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
 \renewcommand{\mid}[0]{\mathrel{\Big|}}
 \renewcommand{\qed}[0]{\hfill\blacksquare}
@@ -543,8 +573,13 @@
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
-\newcommand{\divides}{\mid}
-\newcommand{\notdivides}{\nmid}
+\newcommand{\divides}{\bigm|}
+\newcommand{\notdivides}{%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+}
 \newcommand{\fractional}[1]{\theset{#1}}
 \newcommand{\fractionalpart}[1]{\theset{#1}}
 \newcommand{\integerpart}[1]{\left[ {#1}\right] }
@@ -563,6 +598,7 @@
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
+\newcommand{\xpn}[0]{ { x^{p^n} } }
 
 
 \newcommand{\cores}[0]{\operatorname{cores}}
@@ -8591,6 +8627,613 @@ The fact that these are linearly independent is harder and uses some actual repr
 
 
 
+# Friday, April 16
+
+## The Enveloping Algebra (Continued)
+
+:::{.remark}
+Last time: the PBW theorem. 
+Let $\lieg \in \liealg$ and free as a $k\dash$module with $k\dash$basis \( \ts{ x_ \alpha }_{\alpha\in A} \). 
+Then $\Ug$ has a $k\dash$basis \( \ts{ x_I } \) where \( I = ( \alpha_1, \cdots, \alpha_p) \) is a finite increasing sequence from $A$
+:::
+
+:::{.example title="?"}
+If $k$ is a field and $\dim_k \lieg$ is finite with basis \( \ts{ x_1, \cdots, x_n } \).
+Take $I = (1,\cdots, 1, 2\cdots, 2, n\cdots, n)$ where each $i$ occurs $a_i$ times.
+Then a basis for $\Ug$ is \( \ts{ x_1^{a_1} x_2^{a_2} \cdots x_n^{a_n} \st a_i \geq 0 }  \).
+:::
+
+:::{.corollary title="?"}
+The map $\iota: \lieg \to \Ug$ is injective, so we can identify $\iota(\lieg)$ with $\lieg$.
+:::
+
+:::{.proof title="?"}
+The elements \( x_{(\alpha)} \da \iota(x_{ \alpha} ) \in \Ug \) are $k\dash$linearly independent.
+:::
+
+:::{.corollary title="?"}
+If $\lieh \leq \lieg$ is a subalgebra and $k$ is a field, then $\Ug$ is free as a \( \mathcal{U}(\lieh)\dash\)module.
+:::
+
+:::{.proof title="?"}
+Choose an ordered basis for $\lieh$ first and then extend this to an ordered basis for $\lieg$ -- that one can do this is a fact from linear algebra.
+Then the $x_I$ where \( I = ( \alpha_1, \cdots, \alpha_p ) \) is increasing and no $x_{\alpha_i} \in \lieh$ will be a basis for $\Ug$ over $\Uh$.
+:::
+
+:::{.example title="?"}
+If $\dim_k \lieg < \infty$ and \( \ts{ x_1, \cdots, x_k } \) is a basis for $\lieh$ and  \( \ts{ x_1,\cdots, x_k, x_{k+1} \cdots, x_n } \) is a basis for $\lieg$, then the PBW basis is given by \( \ts{ x_1^{a_1} \cdots x_k^{a_k} x_{k+1}^{a_{k+1}} \cdots x_n^{a_n} \st a_i \geq 0 } \).
+Then \( \ts{ x_{k+1]^{a_{k+1}} \cdots x_n ^{a_n} }} \) form a free left $\Uh\dash$module basis for $\Ug$.
+:::
+
+:::{.exercise title="?"}
+Some suggested exercises:
+
+- 7.3.4
+- 7.3.6
+- 7.3.7 for working with $\Uh$ as a Hopf algebra.
+- 7.3.9 for representations of Lie algebras in characteristic $p$.
+
+:::
+
+## $H^1$ for Lie Algebras (Weibel 7.4)
+
+:::{.remark}
+Recall that we have an augmentation ideal $\mathcal{I} \normal \Uh$ and a SES
+\[
+0 \to\mathcal{I}\to\Ug\to k\to 0
+.\]
+Applying the functor $\Hom_{\Ug}(\wait, M)$ for a fixed $M\in \liegmod$ yields a LES:
+
+\begin{tikzcd}
+	0 && {\Hom_{\Ug}(k, M)} && {\Hom_{\Ug}(\Ug, M)} && {\Hom_{\Ug}(\mathcal{I}, M)} \\
+	\\
+	&& {\Ext^1_{\Ug}(k, M) = H^1(\lieg; M)} && \textcolor{rgb,255:red,214;green,92;blue,92}{\Ext^1_{\Ug}(\Ug, M)=0} && \cdots
+	\arrow["\delta", from=1-7, to=3-3]
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-5, to=1-7]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=3-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwwLCIwIl0sWzIsMCwiXFxIb21fe1xcVWd9KGssIE0pIl0sWzQsMCwiXFxIb21fe1xcVWd9KFxcVWcsIE0pIl0sWzYsMCwiXFxIb21fe1xcVWd9KFxcbWF0aGNhbHtJfSwgTSkiXSxbMiwyLCJcXEV4dF4xX3tcXFVnfShrLCBNKSA9IEheMShcXGxpZWc7IE0pIl0sWzQsMiwiXFxFeHReMV97XFxVZ30oXFxVZywgTSk9MCIsWzAsNjAsNjAsMV1dLFs2LDIsIlxcY2RvdHMiXSxbMyw0LCJcXGRlbHRhIl0sWzAsMV0sWzEsMl0sWzIsM10sWzQsNV0sWzUsNl1d)
+
+Here the red term vanishes since $\Ug$ is free and this projective as a $\lieg\dash$module.
+Note that for $n\geq 2$, we have the following situation:
+
+\begin{tikzcd}
+	\cdots && \textcolor{rgb,255:red,214;green,92;blue,92}{\Ext^{n-1}_{\Ug}(\Ug, M)=0} && {\Ext_{\Ug}^{n-1}(\mathcal{I}, M)} \\
+	\\
+	{\Ext^1_{\Ug}(k, M) = H^1(\lieg; M)} && \textcolor{rgb,255:red,214;green,92;blue,92}{\Ext^{n}_{\Ug}(\Ug, M)=0} && \cdots
+	\arrow["{\delta \quad \cong}", color={rgb,255:red,92;green,92;blue,214}, from=1-5, to=3-1]
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJcXGNkb3RzIl0sWzIsMCwiXFxFeHRee24tMX1fe1xcVWd9KFxcVWcsIE0pPTAiLFswLDYwLDYwLDFdXSxbNCwwLCJcXEV4dF97XFxVZ31ee24tMX0oXFxtYXRoY2Fse0l9LCBNKSJdLFswLDIsIlxcRXh0XjFfe1xcVWd9KGssIE0pID0gSF4xKFxcbGllZzsgTSkiXSxbMiwyLCJcXEV4dF57bn1fe1xcVWd9KFxcVWcsIE0pPTAiLFswLDYwLDYwLDFdXSxbNCwyLCJcXGNkb3RzIl0sWzIsMywiXFxkZWx0YSBcXHF1YWQgXFxjb25nIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXX0sWzI0MCw2MCw2MCwxXV0sWzAsMV0sWzEsMl0sWzMsNF0sWzQsNV1d)
+
+Thus we get a degree shifting isomorphism 
+\[
+H^n(\lieg; M) \cong \Ext_{\Ug}^{n-1}(\mathcal{I}, M)
+.\]
+:::
+
+:::{.remark}
+We thus have
+\[
+H^1(\lieg; M) \cong { \Hom_\Ug(\mathcal{I}, M) / \im \qty{ \Hom_\Ug(\Ug, M) \cong M \to \Hom(\mathcal{I}, M)  } }
+.\]
+Next goal: to more concretely express all of the terms here as $M\dash$valued derivations on $\lieg$.
+:::
+
+:::{.definition title="Derivations of an algebra"}
+Let $M\in \liegmod$, then a **derivation from $\lieg$ into $M$** is a $k\dash$linear map $D:\lieg\to M$ satisfying the Leibniz rule:
+\[
+D([xy]) = x\cdot (Dy) - y\cdot (Dx) && x,y\in \lieg
+.\]
+:::
+
+:::{.remark}
+The set of all such maps $\Der(\lieg, M) \leq_{\kmod} \Hom_{\kmod}(\lieg, M)$ is a $k\dash$submodule.
+A special case is taking $M \da \lieg$, regarded as a $\lieg\dash$module using the adjoint representation.
+In fact, for any $k\dash$algebra (not necessarily associative), we get 
+\[
+D(ab) = (Da)\cdot b + a\cdot(Db)
+.\]
+When $A \da \lieg \in \liealg$ with the adjoint action, we obtain
+\[
+D([xy]) 
+&= [x, Dy] + [Dx, y] \\
+&= [x, Dy] - [y, Dx] \\
+&= x\cdot Dy - y\cdot (Dx)
+,\]
+recovering the previous definition.
+:::
+
+:::{.definition title="Inner Derivations"}
+For $M\in \liegmod$, fix an $m\in M$.
+We then define
+\[
+D_m: \lieg &\to M \\
+x &\mapsto x\cdot m
+.\]
+Any derivation of this form is said to be an **inner derivation**, and this yields a $k\dash$submodule
+\[
+\Inn(\lieg, M) \leq_{\kmod} \Der(\lieg, M)
+.\]
+:::
+
+:::{.remark}
+Note that this is indeed a derivation:
+\[
+D_m([xy]) ] [xy]\cdot m = x\cdot(y\cdot m) - y\cdot(x\cdot m) = x\cdot (D_m y) - y\cdot (D_m x)
+.\]
+It also turns out that any inner derivation is of this form, bracketing against a fixed element.
+:::
+
+
+:::{.proposition title="?"}
+\[
+\Hom_\liegmod(\mathcal{I}, M) \cong \Der(\lieg, M)
+.\]
+:::
+
+
+:::{.proof title="?"}
+
+
+:::{.claim}
+There exists such a map.
+:::
+
+
+Say \( \varphi\in \Hom_\lieg(\mathcal{I}, M) \) and set
+\[
+D_{\varphi}:\lieg &\to M \\
+x &\mapsto \phi(x)
+.\]
+Then $D_{ \varphi}$ is a derivation, so we have
+\[
+D_{ \varphi}([xy]) 
+&\da \phi([xy]) \\
+&= \phi(xy-yx) \\
+&= x \varphi(y) - y \varphi(x) && \text{since $\phi$ is $\lieg\dash$linear} \\
+&= x D_{\varphi}(y) - y D_{\varphi}(x)
+.\]
+
+
+:::{.claim}
+This map is a natural isomorphism, in the sense that it doesn't depend on any choices:
+\[
+\Hom_\lieg(\mathcal{I}, M) &\to \Der(\lieg, M) \\
+\varphi&\mapsto D_{ \varphi}
+.\]
+:::
+
+
+:::{.proof title="of surjectivity"}
+Recall that we can write \( \mathcal{I} = \Ug\,\lieg \), so the following product map is a surjection:
+\[
+\theta: \Ug \tensor_k \lieg &\surjects \Ug\,\lieg = \mathcal{I} \\
+x\tensor y &\mapsto xy
+.\]
+One checks that the kernel is given by
+\[
+\ker(\theta) = \ts{ u \tensor [xy] - \qty{ux\tensor y - uy\tensor x} \st x,y\in \lieg, u\in \Ug } 
+.\]
+Now given $D \in \Der(\lieg, M)$, consider the map
+\[
+f: \Ug \tensor_k \lieg &\to M \\
+f(u\tensor x) &= u\cdot Dx
+.\]
+
+One can compute the following, using that $D$ is a derivation:
+\[
+f\qty{ u\tensor [xy] - ux\tensor y - uy\tensor x }
+&= u D([xy]) - (ux)\cdot D(y) + (uy) \cdot D(x) \\
+&= u (x\cdot Dy - y\cdot Dx) - u\cdot(x\cdot Dy) + u\cdot(y\cdot Dx) \\
+&= 0
+.\]
+So $f$ induces a well-defined morphism of $\lieg\dash$modules, and descends to a map
+\[
+\phi: \Ug\,\lieg = \mathcal{I} &\to M
+,\]
+which is clearly also a morphism of $\lieg\dash$modules.
+So \( \varphi\in \Hom_\lieg(\mathcal{I}, M) \) and \( D_{\varphi}(x) = \varphi(x) = \varphi(1\cdot x) = f(1\cdot x) = 1\cdot Dx = Dx \), and so $D = D_{ \varphi}$.
+:::
+
+\todo[inline]{Might as well find-and-replace "map" with "morphism"!}
+
+:::{.proof title="of injectivity"}
+Suppose over $D$ that we have $D_{\psi}$ for some $\psi \in \Hom_\lieg(\mathcal{I}, M)$.
+We then have
+\[
+\phi(ux) = uD(x) = u \Psi(x) = \Psi(ux) && \forall u\in \Ug, x\in \lieg
+.\]
+Since \( \mathcal{I} = \Ug\, \lieg \) and \( \phi = \Psi \), yielding a 1-to-1 map.
+:::
+
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Lie Algebra Cohomology (Monday, April 19)
+
+## Identification of $H^1$ as Derivations
+
+:::{.remark}
+Let $\lieg\in\liealg_{/k}$ and $M\in\liegmod$, we were showing
+\[
+H^1(\lieg; M) \cong { \Hom_{\liegmod}( \mathcal{I}, M) \over \im \qty{ \Hom_{\Ug}(\Ug, M)  \to \Hom_{\lieg}( \mathcal{I}, M)  } }
+,\]
+where the source in the denominator is isomorphic to $M$, given by the map $\ev_1$.
+We found a map
+\[
+\Hom_\lieg(\mathcal{I}, M) \mapsvia{\sim} \Der(\lieg, M) \\
+\phi \mapsto (D_\phi: x\mapsto \phi(x))
+.\]
+We also defined inner derivations as those given by maps $D_m(x) \da mx$ for some $m\in M$.
+:::
+
+:::{.theorem title="?"}
+\[
+H^1(\lieg; M) \cong {\Der(\lieg, M) \over \Inn(\lieg, M) }
+.\]
+:::
+
+:::{.proof title="?"}
+In the formula, we already know that the numerator is isomorphic to $\Der(\lieg, M)$, so it remains to look at the denominator.
+The map appearing there is restriction to $\mathcal{I}$, i.e. $\phi \mapsto \ro{\phi}{\mathcal{I}}$.
+The associated derivation is given by
+\[
+D_\phi(x) = \phi(x) = \phi(x\cdot 1) = x \phi(1) = xm \da D_m(x) 
+,\]
+and so $D_\phi = D_m$.
+Conversely, given an $m$, we get a derivation $D_m$, and thus the image is precisely all inner derivations.
+:::
+
+## LHS Spectral Sequences
+
+:::{.remark}
+If $\lieh\normal \lieg$, there is a SES in $\liealg$:
+\[
+0 \to \lieh\to \lieg \to \lieg/\lieh \to 0
+.\]
+:::
+
+:::{.theorem title="LHS Spectral Sequence"}
+Let $\lieh\normal \lieg$ and $M\in\liegmod$, then there are first quadrant spectral sequences
+\[
+E_{p, q}^2 &= H_p( \lieg/\lieh; H_q(\lieh; M ) ) \abuts H_{p+q}(\lieg; M) \\
+E_{p, q}^2 &= H^p( \lieg/\lieh; H_q(\lieh; M)) \abuts H^{p+q}(\lieg; M)
+.\]
+:::
+
+:::{.remark}
+This comes from a similar application of the Grothendieck spectral sequence.
+The exact sequences in low-degree terms are given as usual[^ref_as_usual]
+and similar inflation and restriction maps appear here.
+This is useful because it allows computing homology of "smaller" algebras, which one might have control over by induction.
+
+[^ref_as_usual]: 
+See Weibel p.233.
+
+:::
+
+### 7.7: Chevalley-Eilenberg (Koszul) Complex
+
+:::{.remark}
+A computationally efficient way of compute Lie algebra cohomology using a projective resolution of the trivial $\lieg\dash$module $k\in\liegmod$, recalling that this involves acting by zero.
+[^prog_gap_uga]
+
+
+We're going to define a chain complex
+\[
+V_*(\lieg) \surjectsvia{\eps} k
+,\]
+which will turn out to be supported in finitely many degrees when $\dim_k \lieg < \infty$.
+
+[^prog_gap_uga]: 
+See VIGRE project at UGA: programmed this resolution in GAP to compute Lie algebra cohomology!
+
+:::
+
+:::{.remark}
+We'll assume $\lieg \in \liealgk(\Free)$, which happens e.g. if $k\in \Field$.
+Recall that the exterior algebra was a graded algebra defined as the quotient of the tensor algebra:
+\[
+\Extalg^* \lieg \da {
+T(\lieg) \over 
+\gens
+  {x^{\tensor 2} \st x\in \lieg 
+  }} = \bigoplus _{p\geq 0} \Extalg^p \lieg
+.\]
+We write $x_1\wedge x_2\wedge\cdots \wedge x_p$ for the image of $\lieg \injects \Extalg^* \lieg$
+Note that this is a 2-sided homogeneous ideal, and since $x\wedge x = 0$ we have $x\wedge y = -y\wedge x$.
+:::
+
+:::{.remark}
+If \( \ts{ x_\alpha } \) is an ordered basis for $\lieg$, then there is an ordered basis for $\Extalg^p \lieg$:
+\[
+\ts{ \elts{x_{\alpha}} {p}  \st \alpha_1 < \cdots < \alpha_p }
+,\]
+where we note that the indices are strictly increasing like the sequences $I$ we had previously.
+One can always arrange this by commuting things to organize the sequence properly.
+We also have \( \Extalg^0 \lieg \cong k \) with a basis of $1_k$, and \( \Extalg^1 \lieg \cong \lieg \).
+In particular, if $\dim \lieg = n < \infty$, then \( \Extalg^p \lieg = 0 \) for all $p>n$, and in this case \( \Extalg^n \lieg \cong k \).
+:::
+
+:::{.definition title="The Chevalley-Eilenberg (or Koszul) Complex"}
+Define
+\[
+V_p(\lieg) \da \Ug \tensor_k \Extalg^p\lieg
+,\]
+where the maps are given below.
+:::
+
+:::{.fact}
+$V_p(\lieg)$ is free in $\modsleft{\Ug}$, since we've constructed a free basis, and so in particular it is projective.
+The maps in the complex are given by the following:
+
+\begin{tikzcd}
+	&&&&&& {\mathcal{I} = \ker \eps = \Ug\,\lieg} \\
+	\\
+	&&&&&&&& \Ug \\
+	\\
+	{V_p(\lieg)} && {V_{p-1}(\lieg)} && \cdots && {V_1(\lieg)} && {V_0(\lieg)} && k \\
+	\\
+	{\Ug \tensor_k \Extalg^p \lieg} && {\Ug \tensor_k \Extalg^{p-1} \lieg} &&&& {\Ug \tensor_k \lieg} && \Ug &&&& 0 \\
+	{u \tensor \Wedge_j x_{i_j}} && {\theta_1 + \theta_2} &&&& {u\tensor x} && ux
+	\arrow["\cong", no head, from=3-9, to=5-9]
+	\arrow["{\exists \eps}", dashed, from=5-9, to=5-11]
+	\arrow["\eps", from=3-9, to=5-11]
+	\arrow[hook, from=1-7, to=3-9]
+	\arrow["{d_p}", from=5-1, to=5-3]
+	\arrow[from=5-3, to=5-5]
+	\arrow[from=5-5, to=5-7]
+	\arrow["{d_1}", from=5-7, to=5-9]
+	\arrow[maps to, from=8-7, to=8-9]
+	\arrow[no head, from=7-7, to=5-7]
+	\arrow[no head, from=7-9, to=5-9]
+	\arrow[maps to, from=8-1, to=8-3]
+	\arrow["{d_p}", from=7-1, to=7-3]
+	\arrow[no head, from=7-3, to=5-3]
+	\arrow[no head, from=7-1, to=5-1]
+	\arrow["{d_1}", from=7-7, to=7-9]
+	\arrow[from=5-11, to=7-13]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTcsWzEwLDQsImsiXSxbOCw0LCJWXzAoXFxsaWVnKSJdLFs2LDQsIlZfMShcXGxpZWcpIl0sWzQsNCwiXFxjZG90cyJdLFsyLDQsIlZfe3AtMX0oXFxsaWVnKSJdLFswLDQsIlZfcChcXGxpZWcpIl0sWzgsMiwiXFxVZyJdLFs2LDAsIlxcbWF0aGNhbHtJfSA9IFxca2VyIFxcZXBzID0gXFxVZ1xcLFxcbGllZyJdLFs2LDYsIlxcVWcgXFx0ZW5zb3JfayBcXGxpZWciXSxbNiw3LCJ1XFx0ZW5zb3IgeCJdLFs4LDcsInV4Il0sWzgsNiwiXFxVZyJdLFswLDYsIlxcVWcgXFx0ZW5zb3JfayBcXEV4dGFsZ15wIFxcbGllZyJdLFsyLDYsIlxcVWcgXFx0ZW5zb3JfayBcXEV4dGFsZ157cC0xfSBcXGxpZWciXSxbMCw3LCJ1IFxcdGVuc29yIFxcV2VkZ2VfaiB4X3tpX2p9Il0sWzIsNywiXFx0aGV0YV8xICsgXFx0aGV0YV8yIl0sWzEyLDYsIjAiXSxbNiwxLCJcXGNvbmciLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMCwiXFxleGlzdCBcXGVwcyIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs2LDAsIlxcZXBzIl0sWzcsNiwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNSw0LCJkX3AiXSxbNCwzXSxbMywyXSxbMiwxLCJkXzEiXSxbOSwxMCwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFs4LDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTEsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxNCwxNSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dLFsxMiwxMywiZF9wIl0sWzEzLDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMTIsNSwiIiwxLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs4LDExLCJkXzEiXSxbMCwxNl1d)
+
+
+Here we define
+\[
+\theta_1 &\da \sum_{i=1}^p ux_i \tensor x_1 \wedge x_2 \wedge \cdots \wedge \hat{x_i} \wedge \cdots \wedge x_p \\
+\theta_2 &\da 
+\sum_{i < j}^p (-1)^{i+j} 
+u\tensor [x_i x_j] \tensor x_1 \wedge x_2 \wedge \cdots \wedge \hat{x_i} \wedge \cdots \wedge \hat{x_j} \wedge \cdots \wedge x_p
+,\]
+where the hat denotes omitting a term.
+Note that $\im d_1 = \Ug\,\lieg = \mathcal{I} = \ker \eps$, so we get exactness at the first position, and exercise 7.7.1 shows that $d^2 = 0$.
+
+:::
+
+:::{.example title="?"}
+For $p=2$, we have
+\[
+d(u\tensor x \tensor y) = \qty{ux\tensor y - uy\tensor x} + \qty{- u \tensor [xy] }
+.\]
+:::
+
+:::{.remark}
+We want this to be a projective resolution, so not just that $\ker \subset \im$, but rather we want exactness everywhere so $\ker = \im$.
+We'll proceed by showing its homology vanishes.
+:::
+
+:::{.theorem title="Koszul Resolution"}
+The Koszul complex $V_*(\lieg) \surjectsvia{\eps} k\,$ 
+is a projective resolution in $\liegmod$.
+:::
+
+:::{.proof title="of theorem"}
+Choose an ordered basis \( \ts{ e_{ \alpha}}_{\alpha\in \Omega} \), where \( \Omega \) some totally ordered index set, for $\lieg$ over $k$.
+By the PBW theorem, $V_n \da V_n(\lieg)$ has a free $k\dash$basis given by 
+\[
+\label{basis_elts_pbw_koszul}
+e_I \tensor \qty{e_{\alpha_1} \tensor \cdots e_{\alpha_n}}
+.\]
+for $I = [ \beta_1, \cdots, \beta_m ]$ some weakly increasing sequence from \( \Omega \).
+This gives a filtration, so we're heading toward using the spectral sequence of a filtered complex.
+The filtered pieces are given by $F_p V_n$ defined as the $k\dash$module generated by elements of the form given in \cref{basis_elts_pbw_koszul} where $m+n \leq p$.
+Looking at the formula for $d$, we will get a differential
+\[
+d_n F_p V_n \to F_p V_{n-1}
+.\]
+
+:::
+
+
+
+
+
+
+
+
+
+# Exactness of the Chevalley-Eilenberg Resolution (Wednesday, April 21)
+
+:::{.remark}
+Recall that $\lieg$ was free over $k$ with an ordered basis \( \ts{ e_{\alpha} \st \alpha\in \Omega } \).
+We defined 
+\[
+V_n(\lieg) \da \Ug \tensor_k \Extalg^n \lieg
+\]
+with a differential \( d = \theta_1 + \theta_2 \).
+We claimed that $V_n(\lieg) \surjectsvia{\eps} k$ is a projective resolution, and we were showing that $V_*$ was an exact complex.
+:::
+
+:::{.proof title="of theorem, continued"}
+We define a filtration
+\[
+F_p V_n \da k \gens{ e_I \tensor e_{ \alpha_1} \wedge \cdots \wedge e_{\alpha_n} \st I = [\elts{\beta}{m}], \alpha_1 \leq \cdots \leq \alpha_n,\, m+n\leq p } 
+.\]
+Note that $d: F_p V_n \to F_p V_{n-1}$, and in fact $\theta_2$ maps into $F_{p-1} V_{n-1}$.
+We'll focus on $\theta_1$ for simplicity.
+It lands in the same complex since we can rearrange elements in the sum defining the differential to express everything in terms of the given basis, where every expression will be of length one less. 
+The commutation relation was 
+\[
+e_{ \beta} e_{\alpha} = e_{\alpha} e_{\beta} + [e_{\beta} e_{ \alpha} ]
+,\]
+where the left-hand side is degree 2, and the right-hand side is a degree 2 term plus a degree 1 term.
+Moreover $d$ preserves the filtration: when rearranging, the degree $u$ term in $\theta_1$ will decrease to $m-1$, the expression following it may increase to $n+1$, and $(m-1) + (n+1) = m+n$.
+So $F_p V_*$ is a subcomplex of $V_*$, and we have
+\[
+0 = F_{-1} V_* \subseteq F_0 V_* \subseteq \cdots \subseteq F_p V_* \subseteq V_* = \Union_{p\geq 0} F_p V_*
+,\]
+which is not a finite filtration, but is bounded below and exhaustive.
+So by the canonical convergence theorem (Weibel 5.5.1), there is a convergent spectral sequence
+\[
+E_{p, q}^0 \da {F_p V_{p+q} \over F_{p-1} V_{p+q} } \abuts H_{p+q}(V_*(\lieg))
+.\]
+We have $E_{p, q}^0 = 0$ unless
+
+- $p\geq 0$, since the exterior algebra is only graded in positive degrees.
+
+- $p+q = n \geq 0$
+
+- $q\leq 0$, which requires some explanation.
+  We have $m+n\leq p$, and so if $p+q=n \leq p-m$ for $m\geq 0$, $q\leq -m \leq 0$.
+
+So this is a 4th quadrant spectral sequence that is supported above the line $y=-x$.
+Recall that $E_{p, q}^1 = H_q^v(E_{p, *}^0)$.
+
+\begin{tikzcd}
+	\bullet && \bullet \\
+	\\
+	\bullet &&& \bullet & \bullet & \bullet & \bullet & \bullet & \bullet & \bullet & \bullet \\
+	&&&& \bullet & \bullet & \bullet & \bullet & \bullet & \bullet \\
+	&&&&& \bullet & \bullet & \bullet & \bullet & \bullet \\
+	&&&&&& \bullet & \bullet & \bullet & \bullet \\
+	&&&&&&& \bullet & \bullet & \bullet \\
+	&&&&&&&& \bullet \\
+	&& \bullet
+	\arrow[from=3-1, to=3-11]
+	\arrow[from=1-3, to=9-3]
+	\arrow[from=1-1, to=8-9]
+	\arrow[from=3-5, to=4-5]
+	\arrow[from=3-6, to=4-6]
+	\arrow[from=4-6, to=5-6]
+	\arrow["{d^0}", from=3-7, to=4-7]
+	\arrow[from=4-7, to=5-7]
+	\arrow[from=5-7, to=6-7]
+\end{tikzcd}
+
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMzEsWzAsMiwiXFxidWxsZXQiXSxbMTAsMiwiXFxidWxsZXQiXSxbMiwwLCJcXGJ1bGxldCJdLFsyLDgsIlxcYnVsbGV0Il0sWzAsMCwiXFxidWxsZXQiXSxbOCw3LCJcXGJ1bGxldCJdLFs0LDMsIlxcYnVsbGV0Il0sWzUsMywiXFxidWxsZXQiXSxbNiwzLCJcXGJ1bGxldCJdLFs3LDMsIlxcYnVsbGV0Il0sWzgsMywiXFxidWxsZXQiXSxbOSwzLCJcXGJ1bGxldCJdLFs5LDQsIlxcYnVsbGV0Il0sWzgsNCwiXFxidWxsZXQiXSxbNyw0LCJcXGJ1bGxldCJdLFs2LDQsIlxcYnVsbGV0Il0sWzcsNSwiXFxidWxsZXQiXSxbNSw0LCJcXGJ1bGxldCJdLFs2LDUsIlxcYnVsbGV0Il0sWzcsNiwiXFxidWxsZXQiXSxbOCw1LCJcXGJ1bGxldCJdLFs4LDYsIlxcYnVsbGV0Il0sWzksNiwiXFxidWxsZXQiXSxbOSw1LCJcXGJ1bGxldCJdLFs1LDIsIlxcYnVsbGV0Il0sWzQsMiwiXFxidWxsZXQiXSxbNiwyLCJcXGJ1bGxldCJdLFszLDIsIlxcYnVsbGV0Il0sWzcsMiwiXFxidWxsZXQiXSxbOCwyLCJcXGJ1bGxldCJdLFs5LDIsIlxcYnVsbGV0Il0sWzAsMV0sWzIsM10sWzQsNV0sWzI1LDZdLFsyNCw3XSxbNywxN10sWzI2LDgsImReMCJdLFs4LDE1XSxbMTUsMThdXQ==)
+
+Note that
+\[
+E_{\infty}^0 \da F_0 V_0 / F_{-1} V_0 = k\tensor_k k \cong k
+,\]
+since we take expressions with length zero in each factor defining $F_p V_n$.
+Moreover this position is already stable provided the $E_{p, 0}^{1} = 0$ for all $p$, the first and third quadrants are all zeros, and thus all differentials will be trivial from $E^1$ onward.
+
+:::{.claim}
+For $p>0$, $E_{p, *}^0$ is exact, and thus the spectral sequence collapses at $E^1$.
+:::
+
+Note that turning the page yields
+\[
+E_{p, q}^1 = 
+\begin{cases}
+k &  (p, q) = (0, 0)
+\\
+0 & \text{else}.
+\end{cases}
+\]
+Thus $H_n(V_*(\lieg)) = k$ in $n=0$ and zero elsewhere, which proves the result.
+
+:::{.proof title="Sketch"}
+For $q\gg 0$, define $A_q \da k \gens{ e_I \st I = [\elts{\beta}{q}] \text{ increasing} } \subseteq \Ug$.
+So $A_q$ is the $q$th graded piece of the standard increasing filtration by degree,
+\[
+k = U_0 \subset U_1 \subset \cdots \subseteq \Ug
+.\]
+Note that this is a section standard filtration of $\Ug$ by degree with respect to the PBW basis[^exc_736].
+We have $A_q \cong F_q V_0 / F_{q-1} V_0$ and
+\[
+E_{p, q}^0 = {F_p V_{p+q} \over F_{p-1} V_{p+q} }
+\cong
+A_{-q} \tensor_k \Extalg^{p+q}\lieg
+.\]
+The negative sign is introduced since this is nonzero precisely when $-p\leq q \leq 0$ so $q$ is negative and $-q$ is positive.
+Now using the definition of $d: V_n \to V_{n-1}$, $d^0$ is vertical and 
+\[
+d^0: E_{p, q}^0 &\to E_{p, q-1}^0 
+\quad\quad n = p+q \\ \\
+\cong d^0: A_{-1} \tensor_k \Extalg^n\lieg  &\to A_{-q+1}\tensor_k \Extalg^{n-1} \lieg 
+\quad\quad n = p+q 
+.\]
+
+Recalling how $d^0$ was defined, note that we're modding out by lower order terms and thus brackets get killed when we commute elements to order them.
+
+\
+
+By Weibel 7.3.6, $A \da \bigoplus_{q\geq 0} A_q$ is in fact a graded algebra, and $A \cong \gr \Ug$, the associated graded of $\Ug$.
+This turns out to be a polynomial ring on the indeterminates 
+$\vector{x} = \ts{ e_{ \alpha } }_{\alpha\in \Omega}$, i.e. $A\cong k[\vector x]$.
+In Weibel section 4.5, Weibel studies the *Koszul* complex and the map $A \tensor_k \Extalg^* \lieg \to A$.
+By comparing the formula for $d$ between these two complexes, one observes that the Koszul complex differentials are equal to the $d^0$ here.
+So we have an equality of complexes
+\[
+A \tensor_k \Extalg^* \lieg = \bigoplus _{p\geq 0} E_{p, *}^0
+.\]
+Weibel section 4.5 shows that when $A\in \CRing$ with no zero divisors, e.g. a polynomial ring, then
+\[
+H_n \qty{ A \tensor_k \Extalg^* \lieg } =
+\begin{cases}
+k & n=0 
+\\
+0 & \text{else}.
+\end{cases}
+\]
+On the other hand, we have
+\[
+H_n \qty{ A \tensor_k \Extalg^* \lieg } 
+&=
+\bigoplus H_{n-p}^v( E_{p, *}^0 ) \hspace{4em} p+q=n \implies q=n-p \\
+&= \bigoplus _{p\geq 0} E_{p, n-p}^1
+.\]
+But we've already shown that $E_{0, 0}^1 = k$, so all of the other $E^1$ terms must be zero.
+
+[^exc_736]: 
+See exercise 7.3.6.
+
+:::
+
+:::
+
+:::{.remark}
+See section 4.5 on Koszul complex.
+We'll do 7.8 next time.
+:::
+
+
+
 # Appendix: Extra Definitions
 
 :::{.definition title="Acyclic"}
@@ -8742,8 +9385,6 @@ where we've used the fact that $\ZZ/n$ is commutative.
 - $\Ext_\ZZ(\ZZ/m, G) \cong G/mG$
   - Use $1 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{} \ZZ/m \to 1$ and apply $\Hom_\ZZ(\wait, \ZZ)$.
 - $\Ext_\ZZ(\ZZ/m, \ZZ/n) = \ZZ/d$.
-
-- 
 
 :::
 
