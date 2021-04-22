@@ -58,6 +58,7 @@
 \newcommand{\FFp}[0]{\mathbb{F}_p}
 \newcommand{\chp}[0]{\operatorname{ch. p}}
 \newcommand{\fp}[0]{\operatorname{fp}}
+\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand{\HT}[0]{\operatorname{HT}}
 \newcommand{\qc}[0]{\operatorname{qc}}
 \newcommand{\SF}[0]{\operatorname{SF}}
@@ -179,13 +180,13 @@
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
 \newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
 \newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
-\newcommand{\calg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
 \newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
 \newcommand{\liealgk}[0]{{ \liealg_{/k} }}
 \newcommand{\alg}[0]{\mathsf{Alg}}
 \newcommand{\scalg}[0]{\mathsf{sCAlg}}
 \newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\CCalg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
 \newcommand{\ssets}[0]{\mathsf{sSets}}
 \newcommand{\Assoc}[0]{\mathsf{Assoc}}
@@ -544,7 +545,6 @@
 \newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
-\newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
