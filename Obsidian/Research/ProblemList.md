@@ -23,15 +23,18 @@ title: "Open conjectures"
 - Ravenel conjectures
 - Telescope conjecture
 - $L-$space conjectures
+- Arnold conjecture 
+- Kervaire Invariant One Problem (dimension 128?)
+- Monodromy-Weight conjecture
+- Standard conjectures
+- Jantzen conjectures
+
+# ?
+- Weinstein conjecture
+- The virtual Haken conjecture
 - Vandiver's conjecture
 	- What are the actual statements? What is their importance within AG?
 - Sarnak's conjecture
 - Novikov conjecture
 - Artin conjecture
 - Thom conjecture
-- Kervaire Invariant One Problem (dimension 128?)
-- Arnold conjecture 
-- Weinstein conjecture
-- The virtual Haken conjecture
-- Monodromy-Weight conjecture
-- Standard conjectures
