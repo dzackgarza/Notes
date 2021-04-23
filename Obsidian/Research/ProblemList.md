@@ -16,6 +16,7 @@ title: "Open conjectures"
 
 # A
 - The chromatic **redshift** conjecture
+	- Need to know why to care about iterated $K\dash$theory first!
 - The chromatic splitting conjecture
 - Milnor conjecture
 - Novikov conjecture
