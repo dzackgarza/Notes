@@ -4,12 +4,18 @@ title: "Open conjectures"
 
 > Tier interpretation: higher-tier implies more difficult, or larger/more sweeping or generalizing, based on what I know about it.
 
+U+2610 ☐ BALLOT BOX  
+U+2612 ☒ BALLOT BOX WITH X
+
+- [] Todo: descriptions.
+
 # S
 - Hodge conjecture
 - Milnor's conjecture
 - Weil conjectures
 - Tate conjecture
 - Homotopy groups of spheres
+- Beilinson-Bloch?
 
 # A
 - The chromatic **redshift** conjecture
