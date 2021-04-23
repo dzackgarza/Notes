@@ -249,7 +249,9 @@ Note that \( \sin(\theta), \cos(\theta) \) work for any \( \theta \) at all. How
 
 ## Special Angles
 
-For reference: the unit circle. ![image_2021-04-18-21-06-45](figures/image_2021-04-18-21-06-45.png)
+For reference: the unit circle.
+
+![image_2021-04-18-21-06-45](figures/image_2021-04-18-21-06-45.png)
 
 ::: {.remark}
 Idea: we want to partition the circle simultaneously
@@ -449,10 +451,62 @@ f(t) = 2\sin\qty{4t + {\pi \over 6} }
 ::: {.remark}
 Note that we can graph other trigonometric functions: they get pretty wild though.
 
--   Tangent: ![image_2021-04-18-21-01-06](figures/image_2021-04-18-21-01-06.png) ![](figures/image_2021-04-18-21-01-38.png)
+![Tangent](figures/image_2021-04-18-21-01-06.png)
+
+![](figures/image_2021-04-18-21-01-38.png)
+:::
+
+## Simplifying Identities
+
+::: {.remark}
+The goal: reduce a complicated mess of trigonometric functions to something as simple as possible. We'll use a **boxing-up method**.
+:::
+
+::: {.remark}
+On verifying identities: if you want to show \( f(\theta) = g(\theta) \), start at one and arrive at the other:
+\[
+f(\theta) &= \text{simplify } f \\
+&= \cdots \\
+&= \cdots \\
+&= \cdots \\
+&= g(\theta) \\
+.\]
+:::
+
+::: {.warnings}
+If you end up with something like \( 1=1 \) or \( 0=0 \), this is hinting at a problem with your logic.
+:::
+
+::: {.exercise title="?"}
+Simplify the following:
+\[
+F(\theta) \coloneqq\qty{ \sin(\theta) \cos(\theta) \over \cot(\theta)} \cos(\theta)\csc(\theta)
+.\]
+:::
+
+::: {.solution}
+\[
+F = s \qty{s \over c}
+.\]
+:::
+
+::: {.remark}
+As an alternative, you can use the **transitivity of equality**: show that \( f(\theta) = h(\theta) \) for some totally different function \( h \), and then show \( g(\theta) = h(\theta) \) as well.
+
+![image_2021-04-18-21-58-52](figures/image_2021-04-18-21-58-52.png)
+:::
+
+::: {.exercise title="Reducing both sides to a common expression"}
+Show the following identity:
+\[
+{\sin(-\theta) + \csc(\theta)} = \cot(\theta) \cos(\theta)
+\]
+by showing both sides are separately equal to \( h(\theta) \coloneqq\csc(\theta) - \sin(\theta) \).
 :::
 
 ## Inverse Functions
+
+### Motivation
 
 ::: {.remark}
 Motivation: we want a way to solve equations where the unknown \( \theta \) is stuck in the argument of a trigonometric function. For example, for \( \sin: {\mathbb{R}}_A \to {\mathbb{R}}_B \), this would be some function \( f: {\mathbb{R}}_B \to {\mathbb{R}}_A \) such that
@@ -461,12 +515,75 @@ f(\sin(\theta)) &= \operatorname{id}(\theta) = \theta \\
 \sin(f(y)) &= \operatorname{id}(y) = y
 .\]
 
-![image_2021-04-18-22-24-55](figures/image_2021-04-18-22-24-55.png)
+![Input-Output perspective: important!](figures/image_2021-04-18-22-24-55.png)
 
 Note that we only ever have to define \( f \) on \( \mathop{\mathrm{range}}(\sin) \), since we're only ever sending outputs of \( f \) in as the inputs of \( \sin \). So we need \( \mathop{\mathrm{range}}(\sin) \subset \operatorname{dom}(f) \), noting that \( \mathop{\mathrm{range}}(\sin) = [-1, 1] \): ![image_2021-04-18-22-26-56](figures/image_2021-04-18-22-26-56.png)
 
 Similarly, we need \( \mathop{\mathrm{range}}(f) \subset \operatorname{dom}(\sin) \).
 :::
+
+### Using Triangles
+
+::: {.remark}
+Optimistically imagine that we had some such inverse function. Then we could evaluate some expressions without even knowing anything else about it. The trick:
+\[
+\theta &= \arccos(p/q) \\
+\implies \cos(\theta) &= \cos(\arccos(p/q)) \\
+\implies \cos(\theta) &= p/q
+.\]
+Now embed this in a triangle. We can't solve for \( \theta \), but we can solve for other trigonometric functions.
+:::
+
+::: {.exercise title="Using functional inverse property"}
+\[
+\cos\qty{ \arccos\qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5} \\
+\arccos\qty{ \cos \qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5} \\
+.\]
+:::
+
+::: {.exercise title="Using a triangle"}
+\[
+\tan\qty{ \arcsin\qty{ p \over q } } = {p \over \sqrt{q^2 - p^2} }
+.\]
+
+![image_2021-04-22-22-14-13](figures/image_2021-04-22-22-14-13.png)
+:::
+
+::: {.exercise title="Can't extract angles"}
+Compute \( \arcsin(3/5) \).
+
+::: {.warnings}
+This is equal to \( \sin^{-1}(3/5) \), which is *not* equal to \( {1\over \sin(3/5)} \)! One way to remember this is that we have another name for reciprocals, here \( \csc(3/5) \).
+:::
+:::
+
+::: {.solution}
+\[
+\theta &= \arcsin(3/5) \\
+\implies \sin(\theta) &= (3/5) && \text{roughly by injectivity} \\
+\implies &= \cdots ?
+.\]
+We are out of luck, since this isn't a special angle. So we can't find a numerical value of \( \theta \). We can find other trig functions of \( \theta \) though:
+
+![image_2021-04-18-22-30-09](figures/image_2021-04-18-22-30-09.png)
+
+So for example, \( \cos(\arcsin(3/5)) = 4/5 \).
+:::
+
+::: {.remark}
+Most inverse trigonometric functions can *not* be exactly solved! We'll have to approximate by calculator if we want the actual angle. If we just want *other* trigonometric functions though, we can always embed in a triangle.
+:::
+
+::: {.example title="Using triangles"}
+Show the following:
+
+-   \( \cos(\arcsin(24/26)) = 10/26 \)
+    -   Write \( \theta = \arcsin(24/26) \), note \( \theta \) is in \( [-\pi/2, \pi/2] = \mathop{\mathrm{range}}(\arcsin) \).
+-   \( \tan(\arccos(-10/26)) = 10/26 \)
+    -   Write \( \theta = \arccos(-10/26) \), note \( \theta \) is in \( [0, \pi] = \mathop{\mathrm{range}}(\arccos) \)
+:::
+
+### Defining Inverses
 
 ::: {.remark}
 The setup: try swapping \( y \) and \( \theta \) in the graph of \( y=\sin(\theta) \):
@@ -533,7 +650,18 @@ Restrict domains in the following ways:
   -------------------------------------------------------------------------------------------------------------------------------------------------
 :::
 
-::: {.example title="?"}
+::: {.slogan}
+There is an easy way to remember this:
+
+-   Cosines are \( x{\hbox{-}} \)values, pick the upper (or lower) half of the circle to make them unique.
+-   Sines are \( y{\hbox{-}} \)values, pick the right (or left) half of the circle to make them unique.
+
+![image_2021-04-22-22-00-04](figures/image_2021-04-22-22-00-04.png)
+:::
+
+::: {.example title="Using special angles"}
+![Unit Circle](figures/image_2021-04-18-21-06-45.png)
+
 We have some exact values.
 
 Sines should be in QI or QIV:
@@ -569,88 +697,6 @@ However, we have to be careful with domains for trigonometric functions:
 -   \( \arctan(\tan(x)) = x \iff x\in [0] \) (restricted domain of \( \tan \))
 -   \( \tan(\arctan(x)) = x \iff x\in {\mathbb{R}} \)
     -   Domain of \( \arctan \), then range is \( [-\pi/2, \pi/2] \), which is in the domain of \( \tan \).
-:::
-
-::: {.remark}
-Most inverse trigonometric functions can *not* be exactly solved! We'll have to approximate by calculator if we want the actual angle. If we just want *other* trigonometric functions though, we can always embed in a triangle.
-:::
-
-::: {.example title="?"}
-Show the following:
-
--   \( \cos(\arcsin(24/26)) = 10/26 \)
-    -   Write \( \theta = \arcsin(24/26) \), note \( \theta \) is in \( [-\pi/2, \pi/2] = \mathop{\mathrm{range}}(\arcsin) \).
--   \( \tan(\arccos(-10/26)) = 10/26 \)
-    -   Write \( \theta = \arccos(-10/26) \), note \( \theta \) is in \( [0, \pi] = \mathop{\mathrm{range}}(\arccos) \)
-:::
-
-::: {.exercise title="?"}
-Compute \( \arcsin(3/5) \).
-:::
-
-::: {.warnings}
-This is equal to \( \sin^{-1}(3/5) \), which is *not* equal to \( {1\over \sin(3/5)} \)! One way to remember this is that we have another name for reciprocals, here \( \csc(3/5) \).
-:::
-
-::: {.solution}
-\[
-\theta &= \arcsin(3/5) \\
-\implies \sin(\theta) = (3/5) && \text{roughly by injectivity} \\
-\implies &\cdots ?
-.\]
-We are out of luck, since this isn't a special angle. So we can't find a numerical value of \( \theta \). We can find other trig functions of \( \theta \) though:
-
-![image_2021-04-18-22-30-09](figures/image_2021-04-18-22-30-09.png)
-
-So for example, \( \cos(\arcsin(3/5)) = 4/5 \).
-:::
-
-## Simplifying Identities
-
-::: {.remark}
-The goal: reduce a complicated mess of trigonometric functions to something as simple as possible. We'll use a **boxing-up method**.
-:::
-
-::: {.exercise title="?"}
-Simplify the following:
-\[
-F(\theta) \coloneqq\qty{ \sin(\theta) \cos(\theta) \over \cot(\theta)} \cos(\theta)\csc(\theta)
-.\]
-:::
-
-::: {.solution}
-\[
-F = s \qty{s \over c}
-.\]
-:::
-
-::: {.remark}
-On verifying identities: if you want to show \( f(\theta) = g(\theta) \), start at one and arrive at the other:
-\[
-f(\theta) &= \text{simplify } f \\
-&= \cdots \\
-&= \cdots \\
-&= \cdots \\
-&= g(\theta) \\
-.\]
-:::
-
-::: {.warnings}
-If you end up with something like \( 1=1 \) or \( 0=0 \), this is hinting at a problem with your logic.
-:::
-
-::: {.remark}
-As an alternative, you can use the **transitivity of equality**: show that \( f(\theta) = h(\theta) \) for some totally different function \( h \), and then show \( g(\theta) = h(\theta) \) as well.
-
-![image_2021-04-18-21-58-52](figures/image_2021-04-18-21-58-52.png)
-:::
-
-::: {.example title="?"}
-Show the following identity:
-\[
-{\sin(-\theta) + \csc(\theta)} = \cot(\theta) \cos(\theta)
-\]
-by showing both sides are separately equal to \( h(\theta) \coloneqq\csc(\theta) - \sin(\theta) \).
 :::
 
 ## Double/Half-Angle Identities

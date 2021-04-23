@@ -468,7 +468,12 @@ be problematic. Similar story for the other functions.
 \subsection{Special Angles}\label{special-angles}}
 
 For reference: the unit circle.
+
+\begin{figure}
+\centering
 \includegraphics{figures/image_2021-04-18-21-06-45.png}
+\caption{image\_2021-04-18-21-06-45}
+\end{figure}
 
 \begin{remark}
 
@@ -804,17 +809,94 @@ f(t) = 2\sin\qty{4t + {\pi \over 6} }
 Note that we can graph other trigonometric functions: they get pretty
 wild though.
 
-\begin{itemize}
-\tightlist
-\item
-  Tangent: \includegraphics{figures/image_2021-04-18-21-01-06.png}
-  \includegraphics{figures/image_2021-04-18-21-01-38.png}
-\end{itemize}
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-18-21-01-06.png}
+\caption{Tangent}
+\end{figure}
+
+\includegraphics{figures/image_2021-04-18-21-01-38.png}
 
 \end{remark}
 
+\hypertarget{simplifying-identities}{%
+\subsection{Simplifying Identities}\label{simplifying-identities}}
+
+\begin{remark}
+
+The goal: reduce a complicated mess of trigonometric functions to
+something as simple as possible. We'll use a \textbf{boxing-up method}.
+
+\end{remark}
+
+\begin{remark}
+
+On verifying identities: if you want to show \(f(\theta) = g(\theta)\),
+start at one and arrive at the other:
+\begin{align*}
+f(\theta) &= \text{simplify } f \\
+&= \cdots \\
+&= \cdots \\
+&= \cdots \\
+&= g(\theta) \\
+.\end{align*}
+
+\end{remark}
+
+\begin{warnings}
+
+If you end up with something like \(1=1\) or \(0=0\), this is hinting at
+a problem with your logic.
+
+\end{warnings}
+
+\begin{exercise}[?]
+
+Simplify the following:
+\begin{align*}
+F(\theta) \coloneqq\qty{ \sin(\theta) \cos(\theta) \over \cot(\theta)} \cos(\theta)\csc(\theta)
+.\end{align*}
+
+\end{exercise}
+
+\begin{solution}
+
+\begin{align*}
+F = s \qty{s \over c}
+.\end{align*}
+
+\end{solution}
+
+\begin{remark}
+
+As an alternative, you can use the \textbf{transitivity of equality}:
+show that \(f(\theta) = h(\theta)\) for some totally different function
+\(h\), and then show \(g(\theta) = h(\theta)\) as well.
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-18-21-58-52.png}
+\caption{image\_2021-04-18-21-58-52}
+\end{figure}
+
+\end{remark}
+
+\begin{exercise}[Reducing both sides to a common expression]
+
+Show the following identity:
+\begin{align*}
+{\sin(-\theta) + \csc(\theta)} = \cot(\theta) \cos(\theta)
+\end{align*}
+by showing both sides are separately equal to
+\(h(\theta) \coloneqq\csc(\theta) - \sin(\theta)\).
+
+\end{exercise}
+
 \hypertarget{inverse-functions}{%
 \subsection{Inverse Functions}\label{inverse-functions}}
+
+\hypertarget{motivation}{%
+\subsubsection{Motivation}\label{motivation}}
 
 \begin{remark}
 
@@ -830,7 +912,7 @@ f(\sin(\theta)) &= \operatorname{id}(\theta) = \theta \\
 \begin{figure}
 \centering
 \includegraphics{figures/image_2021-04-18-22-24-55.png}
-\caption{image\_2021-04-18-22-24-55}
+\caption{Input-Output perspective: important!}
 \end{figure}
 
 Note that we only ever have to define \(f\) on
@@ -844,6 +926,122 @@ Similarly, we need
 \(\mathop{\mathrm{range}}(f) \subset \operatorname{dom}(\sin)\).
 
 \end{remark}
+
+\hypertarget{using-triangles}{%
+\subsubsection{Using Triangles}\label{using-triangles}}
+
+\begin{remark}
+
+Optimistically imagine that we had some such inverse function. Then we
+could evaluate some expressions without even knowing anything else about
+it. The trick:
+\begin{align*}
+\theta &= \arccos(p/q) \\
+\implies \cos(\theta) &= \cos(\arccos(p/q)) \\
+\implies \cos(\theta) &= p/q
+.\end{align*}
+Now embed this in a triangle. We can't solve for \(\theta\), but we can
+solve for other trigonometric functions.
+
+\end{remark}
+
+\begin{exercise}[Using functional inverse property]
+
+\begin{align*}
+\cos\qty{ \arccos\qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5} \\
+\arccos\qty{ \cos \qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5} \\
+.\end{align*}
+
+\end{exercise}
+
+\begin{exercise}[Using a triangle]
+
+\begin{align*}
+\tan\qty{ \arcsin\qty{ p \over q } } = {p \over \sqrt{q^2 - p^2} }
+.\end{align*}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-22-22-14-13.png}
+\caption{image\_2021-04-22-22-14-13}
+\end{figure}
+
+\end{exercise}
+
+\begin{exercise}[Can't extract angles]
+
+Compute \(\arcsin(3/5)\).
+
+\begin{warnings}
+
+This is equal to \(\sin^{-1}(3/5)\), which is \emph{not} equal to
+\({1\over \sin(3/5)}\)! One way to remember this is that we have another
+name for reciprocals, here \(\csc(3/5)\).
+
+\end{warnings}
+
+\end{exercise}
+
+\begin{solution}
+
+\begin{align*}
+\theta &= \arcsin(3/5) \\
+\implies \sin(\theta) &= (3/5) && \text{roughly by injectivity} \\
+\implies &= \cdots ?
+.\end{align*}
+We are out of luck, since this isn't a special angle. So we can't find a
+numerical value of \(\theta\). We can find other trig functions of
+\(\theta\) though:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-18-22-30-09.png}
+\caption{image\_2021-04-18-22-30-09}
+\end{figure}
+
+So for example, \(\cos(\arcsin(3/5)) = 4/5\).
+
+\end{solution}
+
+\begin{remark}
+
+Most inverse trigonometric functions can \emph{not} be exactly solved!
+We'll have to approximate by calculator if we want the actual angle. If
+we just want \emph{other} trigonometric functions though, we can always
+embed in a triangle.
+
+\end{remark}
+
+\begin{example}[Using triangles]
+
+Show the following:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\cos(\arcsin(24/26)) = 10/26\)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Write \(\theta = \arcsin(24/26)\), note \(\theta\) is in
+    \([-\pi/2, \pi/2] = \mathop{\mathrm{range}}(\arcsin)\).
+  \end{itemize}
+\item
+  \(\tan(\arccos(-10/26)) = 10/26\)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Write \(\theta = \arccos(-10/26)\), note \(\theta\) is in
+    \([0, \pi] = \mathop{\mathrm{range}}(\arccos)\)
+  \end{itemize}
+\end{itemize}
+
+\end{example}
+
+\hypertarget{defining-inverses}{%
+\subsubsection{Defining Inverses}\label{defining-inverses}}
 
 \begin{remark}
 
@@ -960,7 +1158,35 @@ Function & Domain & Range \\
 
 \end{proposition}
 
-\begin{example}[?]
+\begin{slogan}
+
+There is an easy way to remember this:
+
+\begin{itemize}
+\tightlist
+\item
+  Cosines are \(x{\hbox{-}}\)values, pick the upper (or lower) half of
+  the circle to make them unique.
+\item
+  Sines are \(y{\hbox{-}}\)values, pick the right (or left) half of the
+  circle to make them unique.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-22-22-00-04.png}
+\caption{image\_2021-04-22-22-00-04}
+\end{figure}
+
+\end{slogan}
+
+\begin{example}[Using special angles]
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-18-21-06-45.png}
+\caption{Unit Circle}
+\end{figure}
 
 We have some exact values.
 
@@ -1036,151 +1262,6 @@ However, we have to be careful with domains for trigonometric functions:
 \end{itemize}
 
 \end{warnings}
-
-\begin{remark}
-
-Most inverse trigonometric functions can \emph{not} be exactly solved!
-We'll have to approximate by calculator if we want the actual angle. If
-we just want \emph{other} trigonometric functions though, we can always
-embed in a triangle.
-
-\end{remark}
-
-\begin{example}[?]
-
-Show the following:
-
-\begin{itemize}
-\tightlist
-\item
-  \(\cos(\arcsin(24/26)) = 10/26\)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Write \(\theta = \arcsin(24/26)\), note \(\theta\) is in
-    \([-\pi/2, \pi/2] = \mathop{\mathrm{range}}(\arcsin)\).
-  \end{itemize}
-\item
-  \(\tan(\arccos(-10/26)) = 10/26\)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Write \(\theta = \arccos(-10/26)\), note \(\theta\) is in
-    \([0, \pi] = \mathop{\mathrm{range}}(\arccos)\)
-  \end{itemize}
-\end{itemize}
-
-\end{example}
-
-\begin{exercise}[?]
-
-Compute \(\arcsin(3/5)\).
-
-\end{exercise}
-
-\begin{warnings}
-
-This is equal to \(\sin^{-1}(3/5)\), which is \emph{not} equal to
-\({1\over \sin(3/5)}\)! One way to remember this is that we have another
-name for reciprocals, here \(\csc(3/5)\).
-
-\end{warnings}
-
-\begin{solution}
-
-\begin{align*}
-\theta &= \arcsin(3/5) \\
-\implies \sin(\theta) = (3/5) && \text{roughly by injectivity} \\
-\implies &\cdots ?
-.\end{align*}
-We are out of luck, since this isn't a special angle. So we can't find a
-numerical value of \(\theta\). We can find other trig functions of
-\(\theta\) though:
-
-\begin{figure}
-\centering
-\includegraphics{figures/image_2021-04-18-22-30-09.png}
-\caption{image\_2021-04-18-22-30-09}
-\end{figure}
-
-So for example, \(\cos(\arcsin(3/5)) = 4/5\).
-
-\end{solution}
-
-\hypertarget{simplifying-identities}{%
-\subsection{Simplifying Identities}\label{simplifying-identities}}
-
-\begin{remark}
-
-The goal: reduce a complicated mess of trigonometric functions to
-something as simple as possible. We'll use a \textbf{boxing-up method}.
-
-\end{remark}
-
-\begin{exercise}[?]
-
-Simplify the following:
-\begin{align*}
-F(\theta) \coloneqq\qty{ \sin(\theta) \cos(\theta) \over \cot(\theta)} \cos(\theta)\csc(\theta)
-.\end{align*}
-
-\end{exercise}
-
-\begin{solution}
-
-\begin{align*}
-F = s \qty{s \over c}
-.\end{align*}
-
-\end{solution}
-
-\begin{remark}
-
-On verifying identities: if you want to show \(f(\theta) = g(\theta)\),
-start at one and arrive at the other:
-\begin{align*}
-f(\theta) &= \text{simplify } f \\
-&= \cdots \\
-&= \cdots \\
-&= \cdots \\
-&= g(\theta) \\
-.\end{align*}
-
-\end{remark}
-
-\begin{warnings}
-
-If you end up with something like \(1=1\) or \(0=0\), this is hinting at
-a problem with your logic.
-
-\end{warnings}
-
-\begin{remark}
-
-As an alternative, you can use the \textbf{transitivity of equality}:
-show that \(f(\theta) = h(\theta)\) for some totally different function
-\(h\), and then show \(g(\theta) = h(\theta)\) as well.
-
-\begin{figure}
-\centering
-\includegraphics{figures/image_2021-04-18-21-58-52.png}
-\caption{image\_2021-04-18-21-58-52}
-\end{figure}
-
-\end{remark}
-
-\begin{example}[?]
-
-Show the following identity:
-\begin{align*}
-{\sin(-\theta) + \csc(\theta)} = \cot(\theta) \cos(\theta)
-\end{align*}
-by showing both sides are separately equal to
-\(h(\theta) \coloneqq\csc(\theta) - \sin(\theta)\).
-
-\end{example}
 
 \hypertarget{doublehalf-angle-identities}{%
 \subsection{Double/Half-Angle
