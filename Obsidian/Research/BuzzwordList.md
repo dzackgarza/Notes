@@ -64,6 +64,7 @@
 - Serre twists
 - Hypercohomology
 - Exceptional divisor
+- Resolution of singularities
 
 # Priority 3
 - TQFTs

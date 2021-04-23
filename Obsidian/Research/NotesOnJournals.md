@@ -71,4 +71,4 @@ Another cluster, more specialized:
     - Proc AMS,
     - Bull LMS
 
-3 Manifold Topology: geometrization conjecture has been proven, and the virtual Haken conjecture
+

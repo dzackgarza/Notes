@@ -55,6 +55,12 @@
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
+\newcommand{\FFp}[0]{\mathbb{F}_p}
+\newcommand{\chp}[0]{\operatorname{ch. p}}
+\newcommand{\fp}[0]{\operatorname{fp}}
+\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
+\newcommand{\HT}[0]{{\operatorname{HT}}}
+\newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
@@ -90,6 +96,9 @@
 \newcommand{\ann}[0]{\operatorname{Ann}}
 \newcommand{\Ann}[0]{\operatorname{Ann}}
 \newcommand{\arcsec}[0]{\operatorname{arcsec}}
+\newcommand{\arccsc}[0]{\operatorname{arccsc}}
+\newcommand{\arccot}[0]{\operatorname{arccot}}
+\newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
 \newcommand{\Sp}[0]{{\operatorname{Sp}}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
@@ -110,6 +119,8 @@
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
+\newcommand{\reldim}[0]{\operatorname{reldim}}
+\newcommand{\cohdim}[0]{\operatorname{cohdim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\dR}[0]{\mathrm{dR}}
@@ -141,6 +152,8 @@
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
@@ -150,6 +163,8 @@
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\CRing}[0]{\mathsf{CRing}}
+\newcommand{\Field}[0]{\mathsf{Field}}
+\newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
 \newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
@@ -157,7 +172,7 @@
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
 \newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\mathsf{gr}}}
+\newcommand{\gr}[0]{{\mathsf{gr}\,}}
 \newcommand{\grMod}[0]{{\mathsf{grMod}}}
 \newcommand{\Mod}[0]{{\mathsf{Mod}}}
 \newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
@@ -167,12 +182,15 @@
 \newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
 \newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
 \newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
+\newcommand{\liealgk}[0]{{ \liealg_{/k} }}
 \newcommand{\alg}[0]{\mathsf{Alg}}
 \newcommand{\scalg}[0]{\mathsf{sCAlg}}
 \newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\CCalg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
 \newcommand{\ssets}[0]{\mathsf{sSets}}
 \newcommand{\Assoc}[0]{\mathsf{Assoc}}
+\newcommand{\Free}[0]{\mathsf{Free}}
 \newcommand{\Unital}[0]{\mathsf{Unital}}
 \newcommand{\Riem}[0]{\mathsf{Riem}}
 \newcommand{\Comm}[0]{\mathsf{Comm}}
@@ -180,6 +198,8 @@
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\Schf}[0]{{\mathsf{Schf}}}
+\newcommand{\Rep}[0]{{\mathsf{Rep}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
@@ -213,7 +233,8 @@
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
-\newcommand{\pt}[0]{{\{\operatorname{pt}\}}}
+\newcommand{\pt}[0]{{\operatorname{pt}}}
+\newcommand{\tspt}[0]{{\{\operatorname{pt}\}}}
 \newcommand{\sep}[0]{^\operatorname{sep}}
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
@@ -235,6 +256,7 @@
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
 \newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
+\newcommand{\slope}[0]{{\mathrm{slope}}}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
@@ -289,6 +311,7 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
 \newcommand{\lied}[0]{{\mathfrak{d}}}
@@ -321,8 +344,12 @@
 \newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
+\newcommand{\Prism}[0]{\mathsf{Prism}}
+\newcommand{\Spf}[0]{\mathsf{Spf}}
+\newcommand{\WCart}[0]{\mathsf{WCart}}
+\newcommand{\padic}[0]{p\dash\text{adic}}
 \newcommand{\surjectsvia}[2][]{
-  \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
+  \xrightarrow[#1]{#2} { \mathrel{\mkern-16mu}\rightarrow }\,
 }
 \newcommand{\adjoint}[0]{\leftrightarrows}
 \newcommand{\kx}[1]{k[x_1, \cdots, x_{#1}]}
@@ -391,6 +418,7 @@
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
+\newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
 \newcommand{\rad}[0]{{\operatorname{rad}}}
@@ -421,6 +449,7 @@
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
 \newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
@@ -450,6 +479,7 @@
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
 \renewcommand{\hat}[1]{\widehat{#1}}
+\newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
 \renewcommand{\mid}[0]{\mathrel{\Big|}}
 \renewcommand{\qed}[0]{\hfill\blacksquare}
@@ -517,7 +547,6 @@
 \newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
-\newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
@@ -546,8 +575,13 @@
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
-\newcommand{\divides}{\mid}
-\newcommand{\notdivides}{\nmid}
+\newcommand{\divides}{\bigm|}
+\newcommand{\notdivides}{%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+}
 \newcommand{\fractional}[1]{\theset{#1}}
 \newcommand{\fractionalpart}[1]{\theset{#1}}
 \newcommand{\integerpart}[1]{\left[ {#1}\right] }
@@ -566,6 +600,7 @@
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
+\newcommand{\xpn}[0]{ { x^{p^n} } }
 
 
 \newcommand{\cores}[0]{\operatorname{cores}}
@@ -581,6 +616,9 @@
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
+\newcommand\B{{ \mathsf{B}}}
+\newcommand\D{{ \mathsf{D}}}
+\newcommand\R{{ \mathsf{R}}}
 
 # Tuesday, January 12
 
@@ -7044,4 +7082,576 @@ So this adds one to the rank.
 
 
 
+
+
+# Monday, April 19
+
+:::{.remark}
+Recall that we have the following:
+\[
+H^2(\hat{S}; \ZZ) = \pi^* H^2(S; \ZZ) \oplus \ZZ[E]
+,\]
+where $E$ is the exceptional curve, which follows from Mayer-Vietoris.
+We can write $\hat{S} = S \# \bar{\CP^2}$, and by excision $H^2(S\sm \BB^4) = H^2(S)$.
+So we get a LES
+
+\begin{tikzcd}
+	{H^3(S, S\sm B)} \\
+	\\
+	{H^2(S\sm \BB^4)} && {H^2(S)} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^2(S, S\sm B)=0} \\
+	\\
+	&& {H^1(S)} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^1(S, S\sm B)=0}
+	\arrow[from=5-3, to=5-5]
+	\arrow[from=5-5, to=3-1]
+	\arrow["\sim", from=3-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=3-5, to=1-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMiw0LCJIXjEoUykiXSxbNCw0LCJIXjEoUywgU1xcc20gQik9MCIsWzAsNjAsNjAsMV1dLFswLDIsIkheMihTXFxzbSBcXEJCXjQpIl0sWzIsMiwiSF4yKFMpIl0sWzQsMiwiSF4yKFMsIFNcXHNtIEIpPTAiLFswLDYwLDYwLDFdXSxbMCwwLCJIXjMoUywgU1xcc20gQikiXSxbMCwxXSxbMSwyXSxbMiwzLCJcXHNpbSJdLFszLDRdLFs0LDVdXQ==)
+
+We have $H^i(S, S\sm \BB^4) = H^i(T, T\sm \BB^4) = H^i( \BB^4, \bd)$, and by Poincaré-Lefschetz duality, this is isomorphic to $H_{4-i}(\BB^4)$.
+This is equal to 0 if $i\neq 0$ or $4$.
+Writing $\hat{S} = (S\sm \BB^4) \disjoint_{S^3} (\bar{\CP^2}\sm \BB^4)$ and applying Mayer-Vietoris yields
+
+\begin{tikzcd}
+	{H^2(\hat{S})} && {H^2(S\sm \BB^4) \oplus H^2(\bar{\CP^2} \sm \BB^4)} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^2(S^3) =0} \\
+	\\
+	&& \cdots && \textcolor{rgb,255:red,214;green,92;blue,92}{H^1(S^3) =0 }
+	\arrow[from=3-5, to=1-1]
+	\arrow["\sim", from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=3-3, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbNCwyLCJIXjEoU14zKSA9MCAiLFswLDYwLDYwLDFdXSxbMCwwLCJIXjIoXFxoYXR7U30pIl0sWzIsMCwiSF4yKFNcXHNtIFxcQkJeNCkgXFxvcGx1cyBIXjIoXFxiYXJ7XFxDUF4yfSBcXHNtIFxcQkJeNCkiXSxbNCwwLCJIXjIoU14zKSA9MCIsWzAsNjAsNjAsMV1dLFsyLDIsIlxcY2RvdHMiXSxbMCwxXSxbMSwyLCJcXHNpbSJdLFsyLDNdLFs0LDBdXQ==)
+
+Combining this with the isomorphisms from earlier, we can write the direct sum as $H^2(S) \oplus H^2( \bar{\CP^2})$ where the latter is equal to $\ZZ \ell = [E]$ for $\ell$ a line class.
+:::
+
+:::{.question}
+What is the intersection form on $H^2(\hat{S}; \ZZ)$?
+:::
+
+:::{.remark}
+Using the proposition, along with the fact that 
+
+1. its an orthogonal decomposition, 
+2. $\pi^*$ is an isometry, and 
+3. $[E]^2 = -1$, 
+
+we know that the Gram matrix for $H^2(\hat{S})$ is the same as that for $H^1(S) \oplus [-1]$, i.e. it is of the form
+\[
+\begin{bmatrix}
+A & 0 
+\\
+0 & -1
+\end{bmatrix}
+.\]
+
+:::
+
+:::{.proof title="of 2"}
+Consider $[\Sigma_1], [\Sigma_2]\in H^2(S; \ZZ)$ where the \( \Sigma_i \) are real surfaces, and suppose \( \Sigma_1 \transverse \Sigma_2 \) and $p\not\in \Sigma_1, \Sigma_2$.
+We then have 
+\[
+[ \pi\inv( \Sigma_i ) ] = \pi^* [ \Sigma_i ] 
+.\]
+
+\begin{tikzpicture}
+\fontsize{35pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-19_14-07.pdf_tex} };
+\end{tikzpicture}
+
+The intersection number is preserved because $\pi$ is generically injective.
+:::
+
+:::{.proof title="of 1"}
+It also follows that if $p\not\in \Sigma$, $\pi^*[\Sigma] = [\pi\inv \Sigma]$ where the latter is disjoint from $E$.
+So $\pi^*[\Sigma] \cdot E = 0$.
+:::
+
+:::{.proof title="of 3"}
+Since $[E] \sim [\text{line}] \in \bar{\CP^2}\sm \BB^4$, and $E^2 = [E] \cdot [E] = -1$ since the orientations disagree in $\bar{\CP^2}$.
+:::
+
+:::{.proposition title="?"}
+Let $C \subset S$ be a curve on a surface and suppose $C$ is locally cut out by\[
+f(x, y) = a_{m, 0} x^m + a_{n-1, 1} x^{m-1} y + \cdots + a_{0, m} y^m + O(x^{m+1}, y^{m+1})
+,\]
+near $p\in S$, so the lowest order terms in the Taylor expansion are degree $m$.
+Then \[
+\pi^* C = \hat{C} + mE
+.\]
+:::
+
+:::{.proof title="?"}
+On the blowup, take local coordinates $(x, \mu)$ where $y = x\mu$ and write
+\[
+V(\pi^* f) 
+&= V( x^m \qty{a_{m, 0} + a_{m-1, 1} \mu + \cdots + a_{0, m} \mu^m + O(x^{m+1}, \mu^{m+1} )  } ) \\
+&= m V(x) + V( a_{m, 0} + \cdots ) \\
+&= E + \hat{C}
+.\]
+:::
+
+:::{.example title="?"}
+Take 
+\[
+C = \ts{ y^2 = x^3-x^2 } \subseteq \CC^2
+,\] 
+where $\Bl_0 \CC^2 \to C$.
+Then $\pi^* C = \hat{C} + 2E$, so 
+\[
+C = V(x^2 + y^2 + O(\deg(3))
+.\].
+:::
+
+:::{.corollary title="?"}
+$\hat{C}^2 = C^2 - m^2$.
+:::
+
+:::{.proof title="?"}
+Write $\pi^* C = \hat{C} + mE$, then $\hat{C} = \pi^* C - mE$ implies that $\hat{C}^2 = (\pi^* C - mE)^2$.
+This equals\[
+(\pi^* C)^2 - 2m \pi^* C\cdot E + m^2 E^2
+&= C^2 - 0 - m^2 \\
+&= C^2 - m^2
+,\]
+where we've used (2), (1), and (3) respectively to identity these terms.
+:::
+
+:::{.example title="?"}
+Let 
+\[
+C\da \ts{ zy^2 = x^3 - x^2 z } \subset \CP^2
+,\]
+then $C^2 = (3\ell)^2 = 9$.
+The multiplicity of $C$ at the point $[0:0:1]$ is 2.
+Taking the coordinate chart \( \ts{ z=1 } \cong \CC^2 \), we recover the curve $y^2 = x^3 - x^2$ which has multiplicity 2 at $(0, 0)$.
+We can conclude $\hat{C} = \Bl_{[0:0:1]} \CP^2$ has self-intersection number $\hat{C}^2 = 9-2^2 = 5$.
+:::
+
+:::{.theorem title="Castelnuovo Contractibility Criterion"}
+Let $S$ be a complex surface and let $E \subset S$ be a holomorphically embedded $\CP^2$ such that $E^2 = -1$
+Then there exists a smooth surface $\bar{S}$ and $p\in \bar{S}$ such that $S = \Bl_p \bar{S}$ with $E$ as the exceptional curve.
+:::
+
+:::{.definition title="Blowdown"}
+This $\bar{S}$ is called the **blowdown** of $S$ along $E$.
+:::
+
+:::{.remark}
+Note that this is the exact situation when we blow things up.
+This is a converse: if we have something that looks like a blowup, we can find something that blows up to it.
+:::
+
+:::{.exercise title="?"}
+Show that the category $\Mfd_\CC$ is not closed under blowdowns, i.e. there is no blowdown of a holomorphically embedded $\CP^1$, say $E$, with $E^2 = 1$.
+
+> Hint: think about $\CP^2$.
+
+:::
+
+:::{.remark}
+This is interesting because there does exist a blowdown in the smooth category $\Mfd(C^\infty(\RR))$.
+This is because $S \to S\# \bar{\CP^2}$ and $S\to S\# \CP^2$ are indistinguishable here.
+One can just reverse orientations.
+:::
+
+:::{.example title="?"}
+A complex surface with a holomorphically embedded $\CP^1$ of self intersection $-1$.
+Let $p, q\in \CP^2$ be distinct points, and let $\Bl_{p, q} \CP^2 \da \Bl_p \Bl_q \CP^2$.
+Note that these two operations commute since these are distinct points and blowing up is a purely local operation.
+Let $\ell \subset \CP^2$ be the unique line through $p$ and $q$.
+Viewing $p, q$ as lines in $\CC^3$, they span a unique plane, which is a line in projective space, so this makes sense and we can write $\ell \approx \spanof \ts{ p, q }$.
+Since $\ell$ is defined by a linear equation in local coordinates near $p, q$, we have $\mult_p \ell = \mult_q \ell = 1$.
+We hve
+\[
+\hat{\ell} = \pi^* \ell - E_p - E_q \\
+\hat{\ell}^2 = \ell^2 - 1^2 - 1^2 = 1-1-1 = - 1
+.\]
+Under $\pi: \Bl_{p, q} \CP^2 \to \CP^2$, we have $\hat{\ell} \mapsvia{\sim} \ell$.
+
+\begin{tikzpicture}
+\fontsize{35pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-19_14-40.pdf_tex} };
+\end{tikzpicture}
+
+Here since all of the lower order terms have degree 1, there is a well-defined tangent line.
+Since $\ell \cong \CP^2$, we have $\hat\ell \cong \CP^2$.
+Letting $\sigma$ be the blowdown of $\hat\ell$, we have
+
+\begin{tikzcd}
+	& {\Bl_{p, q}\CP^2} \\
+	\\
+	{\CP^1 \cross \CP^2} && {\CP^2}
+	\arrow["\sigma"', from=1-2, to=3-1]
+	\arrow["\pi", from=1-2, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMSwwLCJcXEJsX3twLCBxfVxcQ1BeMiJdLFsyLDIsIlxcQ1BeMiJdLFswLDIsIlxcQ1BeMSBcXGNyb3NzIFxcQ1BeMSJdLFswLDIsIlxcc2lnbWEiLDJdLFswLDEsIlxccGkiXV0=)
+
+:::
+
+:::{.remark}
+There's a way to do this with Kirby Calculus.
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Wednesday, April 21
+
+:::{.remark}
+Why can't one blow down a curve $E\cong \CP^1$ with $E^2 = 1$ in a complex surface?
+Disproof: consider $S\da \CP^2$ and $E$ a line, where $E^2 = 1$.
+If there were a blowdown in the complex analytic category
+\[
+S &\to \bar{S} \\
+E &\mapsto \pt
+.\]
+But $\bar{S} \cong_\Top S^4$, since $S^4 \# \CP^2 \cong \CP^2$, and this would yield a complex structure on $S^4$ -- a contradiction.
+This also follows because $\bar{S} \in \ZHS^4$, and Noether's formula implies that every $\ZHS^4$ has no complex structure.
+:::
+
+:::{.remark}
+Recall that we were considering the following:
+
+\begin{tikzcd}
+	& {\Bl_{p, q}\CP^2} \\
+	\\
+	{\CP^1 \cross \CP^2} && {\CP^2}
+	\arrow["\sigma"', from=1-2, to=3-1]
+	\arrow["\pi", from=1-2, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMSwwLCJcXEJsX3twLCBxfVxcQ1BeMiJdLFsyLDIsIlxcQ1BeMiJdLFswLDIsIlxcQ1BeMSBcXGNyb3NzIFxcQ1BeMSJdLFswLDIsIlxcc2lnbWEiLDJdLFswLDEsIlxccGkiXV0=)
+
+Let $\bar{\ell} \subset \Bl_{p, q}(\CP^2)$ the strict transform of a line through $p, q$ with $\hat{\ell}^2 = -1$.
+Goal: we want to construct the map $\sigma$ sending $\hat{\ell}$ to a single point.
+Let $r\in \Bl_{p, q}\CP^2$, then there are three possibilities:
+
+1. $r\in \CP^2 \sm \ts{ p, q }$
+2. $r\in E_p$
+3. $r\in E_q$
+
+If a point $r \neq p, q$, we can take lines $\ell_{pr}. \ell_{qr}$.
+We can take slopes of these lines to get points in $\CP^1$, and in fact it's the exceptional divisor (since these are sets of slopes through a point).
+
+So we can map
+\[
+r \mapsto 
+\begin{cases}
+( \slope_p \ell_{pr}, \slope_q \ell_{qr} ) \in \CP^2 \cross \CP^2
+& \text{Case 1}
+\\
+(r, \slope_q \ell_{qp} ) 
+& \text{Case 2}
+\\
+(\slope_p \ell_{pq}, r)
+&\text{Case 3}
+.
+\end{cases}
+\]
+This is clearly continuous, is this injective?
+The outputs will be the same for any point on the line between $p$ and $q$:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-21_14-16.pdf_tex} };
+\end{tikzpicture}
+
+So this realizes the blowdown map, since $\Phi \hat{\ell}_{pq} ) = \pt$ and restricting it to  the complement of the line is injective.
+
+:::
+
+## Spin and Spinc Groups
+
+:::{.remark}
+Goal: show that $3[\ell]$ can't be realized by a sphere, we'll need Rohklin's theorem for this.
+Let $(V, \inner{\wait}{\wait})$ be an inner product space, and assume the inner product is positive-definite.
+Recall that the tensor algebra is defined as $T(V) \da \bigoplus _{n\geq 0} V^{\tensor n}$.
+:::
+
+:::{.definition title="Clifford Algebra"}
+Define the **Clifford Algebra** of $V$ as
+\[
+\Cl(V) \da T(V) / \gens{ v\tensor v + \norm{v}^2 1 } 
+.\]
+:::
+
+:::{.example title="The reals"}
+Take $\RR$ with the standard inner product, so $\inner{x}{y} \da xy$.
+Then $T(\RR) = \bigoplus _{n\geq 0} \RR$.
+Letting \( \ts{ e } \) be a basis of $\RR$, we have $T(\RR) = \RR \oplus \RR e \oplus \RR (e^2) \oplus \cdots \cong \RR[x]$ by sending $e^n\mapsto x^n$.
+Since $\norm{e} = 1$, and we mod out by $e^2 + \norm{e}^2 1$ where $e^2 = -1$ and thus
+\[
+\Cl(\RR, \inner{\wait}{\wait}_\std ) \cong \RR[x] / \gens{ x^2 = -1 }\cong \CC 
+.\]
+The denominator is referred to as the **Clifford relation**.
+:::
+
+:::{.example title="More reals"}
+Take $\RR^2$ with the standard inner product and an orthonormal basis  \( \ts{ e_1, e_2 } \).
+Then
+\[
+T(\RR) = \RR \oplus \RR \gens{ e_1, e_2 } \oplus \RR \gens{ e_1^2, e_1e_2, e_2 e_1, e_2^2 } \oplus \cdots  
+.\]
+Note that there are $2^k$ terms in the $k$th graded piece.
+It suffices to mod out only by the relations on the orthonormal basis.
+This is of the form $(v+w)^2 = - \norm{v+w}^2 = -\norm{v}^2 - 2\inner{v}{w} - \norm{w}^2$. 
+On the other hand, this equals $v^2 + vw + wv + w^2$.
+So we obtain
+\[
+vw + wv = 2\inner{v}{w}
+,\]
+and setting $v=w$ and dividing by 2 yields the original Clifford relation.
+
+For $\RR^2$, we can explicitly check
+
+1. $e_1^2 = -1$,
+2. $e_2^2 = -1$,
+3. $e_1e_2 + e_2 e_1 = -2e_1 e_2 = 0$,
+4. $e_1 e_2 = -e_2 e_1$.
+
+Here (1), (2), and (4) generate all of the relations, so
+\[
+\Cl(\RR^2) - \RR \gens{ e_1, e_2 } / \gens{ e_1^2 = -1, e_2^2 =-1, e_1e_2 = -e_2 e_1 } \cong HH
+.\]
+We can form this map by 
+\[
+1 &\mapsto 1 \\
+e_1 &\mapsto i \\
+e_2 &\mapsto j \\
+e_1 e_2 &\mapsto k
+,\]
+and then checking that the appropriate relations hold.
+These hold since $i^2 = j^2 = -1$ and $ij=-ji = k$.
+These suffice, but you can check the rest: for example, does $jk=i$ hold?
+We can write this as
+\[
+e_2(e_1e_2) = -e_2 (e_2 e_1) = -e_2^2 e_1 = -(-1)e_1 = e_1
+.\]
+:::
+
+:::{.exercise title="?"}
+Check that $\dim_\RR \Cl(V) = 2^{\dim V} < \infty$.
+:::
+
+
+
+
+
+
+
+# Friday, April 23
+
+:::{.definition title="?"}
+Given $(V, \cdot)$ an inner product space, we defined
+\[
+\Cl(V) \da { \bigoplus _{n\geq 0} V^{\tensor n} \over \gens{ v\tensor w + w\tensor v = 2v\cdot w } }
+.\]
+:::
+
+:::{.example title="?"}
+We saw that \
+\[
+\Cl(\RR, \cdot) 
+&\cong \RR[e] / e^2 
+=-1 \cong \CC\\
+\Cl(\RR^2, \cdot) 
+&= \RR \gens{ e_1, e_2 } / \gens{ e_1^2 = e_2^2 = -1, e_1e_2 = -e_2 e_1 -} \cong \HH
+\]
+where $e_1\mapsto i, e_2\mapsto j, e_3 = e_1 e_2 \mapsto k$.
+Can we describe $\Cl(\RR^n, \cdot)$ in general?
+Choose an orthonormal basis \( \ts{ e_i } \), then 
+\[
+\Cl(\RR^n, \cdot) = { \RR \gens{ e_1, \cdots, e_n } \over \gens{ e_i^2 = -1, e_i e_j = -e_j e_i \st i\neq j } }
+.\]
+We saw that replacing $2$ with $\epsilon$ in the defining relation recovers $\Extalg$.
+
+:::
+
+:::{.definition title="Degree Filtration"}
+Define the **degree filtration** on $\Cl(V, \cdot)$ as the filtration induced by the degree filtration on $T(V) \da \bigoplus _{n\geq 0} V^{\tensor n}$.
+:::
+
+:::{.example title="?"}
+Consider $\Cl(\RR^2, \cdot)$. 
+Then
+
+- Degree 0: $\RR$.
+- Degree 1: $\RR \oplus \RR e_1 \oplus \RR e_2$
+- Degree 2: $\RR \oplus \RR e_1 \oplus \RR e_2 \oplus \RR e_1 e_2$
+:::
+
+:::{.definition title="Grading and Filtration"}
+Recall that there's a distinction between gradings and filtration:
+
+- Gradings: $R^i R^j \subset R^{i+j}$ and $R = \bigoplus_i R^i$.
+- Filtrations: $F^1 \subset F^2 \subset \cdots$ with $F^i F^j \subseteq F^{i+j}$
+
+An algebra equipped with a grading is a **graded algebra**, and similarly an algebra equipped with a filtration is a **filtered algebra**.
+:::
+
+:::{.remark}&
+Note that 
+
+- $k[x_1, \cdots, x_n]$ is graded (by monomials of uniform degree) and filtered (by polynomials of a bounded degree)
+- $T(V)$ is graded and filtered, since multiplying a pure $p$ tensor with a pure $q$ tensor yields a pure $p+q$ tensor
+- $\Cl(V)$ is a quotient of $T(V)$, but one can't simply define $\Cl(V, \cdot)^i = \im T(V)^i$ since the relations have mixed degree: for example $e_1^2 = -1$
+  So $\Cl(V)$ isn't graded, but is still filtered: take the filtration $F$ on $T(V)$ defined by $F^i \da \bigoplus _{j\leq  i} V^{\tensor j}$ and descend it through the quotient map.
+  The relations can only decrease degree, so this is well defined.
+:::
+
+:::{.definition title="Filtration on the Clifford Algebra"}
+Define a filtration $F^\wait$ on $\Cl(V)$ by the following:
+\[
+F^i \Cl(V) \da \spanof \ts{ \elts{e_j}{i} } 
+.\]
+:::
+
+:::{.definition title="The associated graded"}
+The **associated graded** ring $\gr_{F^\wait} R$ is the graded ring defined by 
+\[
+(\gr_{F^\wait})^i \da F^i R / F^{i-1} R
+.\]
+This induces a decomposition
+\[
+\gr_{F^\wait} \cong \bigoplus _{i\geq 0} F^i R/ F^{i-1} R = \bigoplus _{i\geq 0} (\gr_{F^\wait})^i
+,\]
+which has a multiplicative structure
+\[
+F^i/F_{i-1} \cdot F^j/F_{j-1} \to F^{i+j} / F^{i+j-1}
+.\]
+:::
+
+:::{.remark}
+Note that if $R \in \gr\Ring$, then $\gr(R) = R$, so taking the associated graded recovers the ring itself.
+What's happening: taking the smallest homogeneous ideal.
+:::
+
+:::{.fact}
+If one has relations of mixed degree, the associated graded also has the top degree part of each relation.
+:::
+
+:::{.remark}
+In our case, the Clifford relation relates degree $k$ pieces to degree $k-2$ pieces, so we obtain
+\[
+\gr_{F^\wait} \Cl(V) \cong T(V) / \gens{ v\tensor w + w\tensor v = 0 } \da \Extalg^* V
+.\]
+There is an isomorphism of $k\dash$vector spaces
+\[
+\Cl(V) & \mapsvia{\sim} \gr \Cl(V) \\
+x\in F^i &\mapsto \bar{x} \in F^i / F^{i-1}
+.\]
+This is because $F^0 \subseteq \cdots \subseteq \cdots$ with $\union_i F^i = \Cl(V)$.
+We can conclude $\dim_\RR \Cl(V) = \dim_\RR \Extalg^* V = 2^{\dim_k V}$ and use this to construct a basis for $\Cl(V)$.
+The relevant map is 
+\[
+\elts{e_j}{i} &\mapsto e_{j_1} \wedge \cdots \wedge e_{j_i}
+.\]
+
+:::
+
+:::{.corollary title="of the fact"}
+The following set forms an $\RR\dash$basis for $\Cl(\RR^n, \cdot)$:
+\[
+\ts{ \elts{e_j}{i} \st j_1 < j_2 < \cdots < j_i,\, i\leq n } 
+.\]
+:::
+
+:::{.example title="?"}
+Consider
+\[
+\Cl(\RR^3, \cdot) \cong \spanof_\RR \ts{ 1, e_1, e_2, e_3, e_1e_2, e_1 e_3, e_1 e_2 e_3 } 
+.\]
+Then
+\[
+e_1 e_2 \cdot e_1 e_3 
+&= -e_1 e_1 e_3 e_3 
+  && e_2 e_1 = -e_1 e_2 \\
+&= e_2 e_3 
+  && e_1^2 = - 1
+.\]
+:::
+
+:::{.exercise title="?"}
+Show that $\Cl(\RR^3) \cong \HH \oplus \HH$.
+:::
+
+:::{.definition title="?"}
+$\Cl(V)$ has a $\ZZ/2$ ("super") grading, so
+\[
+\Cl(V) \circ \Cl_0(V) \oplus \Cl_1(V) && \Cl_i(V) \cdot \Cl_j(V) \subset \Cl_{i+j\mod 2}(V)
+.\]
+The **even** subalgebra is given by 
+\[
+\Cl_0(V) = \spanof_k \ts{ \elts{e_i}{2k} \st 2k\leq n } 
+,\]
+where we take an even number of basis elements, which makes sense because the Clifford relation $vw + 2v = -2v\cdot w$ preserves degree mod 2.
+This is still an algebra.
+The **odd** sub-vector space (not an algebra) is given by
+\[
+\Cl_1(V) = \spanof_k \ts{ \elts{e_i}{2k+1} \st 2k+1\leq n } 
+.\]
+
+:::
+
+:::{.example title="?"}
+\[
+\Cl(\RR^3) = \spanof_\RR \ts{ 1, e_1 e_2, e_1 e_3, e_2 e_3 } 
+,\]
+and we saw $e_1 e_2 = e_1 e_3 = e_2 e_3$.
+This product has degree 4, and when we applied the relation $e_1^2=1$ we dropped the degree by 2.
+For the odd part, $e_3 \in Cl_1(\RR^3)$ and $e_1 e_2 \in \Cl_0(\RR^3)$, and we have
+\[
+e_3 \cdot (e_1 e_2) = -e_1 e_3 e_2 = e_1 e_2 e_3 \in \Cl_1(\RR^3)
+.\]
+:::
+
+:::{.proposition title="?"}
+\[
+\Cl(V) \cong \Cl_0(V \oplus \RR)
+.\]
+:::
+
+:::{.proof title="?"}
+Let $e\in \RR$ be a unit vector.
+Given $x\in \Cl(V)$, decompose $x = x_0 + x_1 \in \Cl_0(V) \oplus \Cl_1(V)$.
+Define an isomorphism
+\[
+\phi: \Cl(V) &\to \Cl_0(V \oplus \RR) \\
+x &\mapsto x_0 + x_1 e
+,\]
+which is well-defined since $x_0$ was odd degree, and both $x_1, e$ were odd degree and thus $x_1 e$ is even.
+One checks that this preserves multiplication:
+\[
+x\cdot y = (x_0 + x_1) \cdot (y_0 + y_1) = (x_0 y_0 + x_1 y_1) + (x_0 y_1 + x_1 y_0) \in \Cl_0(V) \oplus \Cl_1(V)
+,\]
+and so
+\[
+\phi(x) \cdot \phi(y) 
+&= (x_0 +x_1 e)(y_0 + y_1 e) \\
+&= x_0 y_0 + x_0 y_1 e + x_1 e y_0 + x_1 e y_1 e_1
+.\]
+The question is if this equals
+\[
+\phi(xy) \da (x_0 y_0 + x_1 y_1) + (x_0 y_1 + x_1 y_0)e
+.\]
+But for example, $x_1 e y_0 = (-1)^{|y_0|} x_1 y_0 e$, and $y_0$ is even.
+Similarly, $x_1 e y_1 e = -x_1 y_1 e^2 = x_1 y_1$.
+:::
 

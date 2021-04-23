@@ -1417,7 +1417,7 @@ Thus
 :::
 
 ::: {.theorem title="Serre"}
-Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\mathrel{\Big|}p-q \).
+Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\bigm|p-q \).
 :::
 
 ::: {.remark}
@@ -1443,7 +1443,7 @@ If \( M^4 \) is a compact oriented 4-manifold and if the intersection form on \(
 -   Whether it's even or odd, and
 -   Its signature
 
-If the lattice is even, then the signature satisfies \( 8\mathrel{\Big|}p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
+If the lattice is even, then the signature satisfies \( 8\bigm|p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
 :::
 
 ## Characteristic Classes
@@ -2474,7 +2474,7 @@ Let \( S = {\mathbb{CP}}^2 \), which can be given in local coordinates by
 \]
 where we only take equivalence classes of ratios \( [x,y,z] = [\lambda x, \lambda y, \lambda z] \) for any \( \lambda\in {\mathbb{C}}^{\times} \). This decomposes as
 \[
-{\mathbb{CP}}^2 \cup{\mathbb{C}}\cup\left\{{ {\{\operatorname{pt}\}}}\right\} = \left\{{ [1: x_1: x_2] }\right\} \cup\left\{{ [0 : x_1: x_2] }\right\} \cup\left\{{ [0:0:1] }\right\}
+{\mathbb{CP}}^2 \cup{\mathbb{C}}\cup\left\{{ {\operatorname{pt}}}\right\} = \left\{{ [1: x_1: x_2] }\right\} \cup\left\{{ [0 : x_1: x_2] }\right\} \cup\left\{{ [0:0:1] }\right\}
 ,\]
 i.e. we take \( x_0 \neq 0 \), then \( x_0 = 0, x_1\neq 0 \), then \( x_0 = x_1 = 0 \). Note that
 \[
@@ -3273,7 +3273,8 @@ Any reasonable class of functions whose behavior is only locally restricted. Exa
 .\]
 :::
 
-:::{.remark} More generally, for an arbitrary open \( U \), cover it by coordinate charts \( \left\{{ U_i }\right\} \rightrightarrows U \). Then we want \( \omega_i \in \Omega^p(U_i) \) which are compatible on double overlaps, so such a collection defines a section \( \left\{{ \omega_i {~\mathrel{\Big|}~}i\in I }\right\} \in \Gamma( \Omega^p(U) ) \). The compatibility is given by taking coordinate charts \( \varphi_i: U_i \to {\mathbb{R}}^n \) with \( \omega_i \in \Omega^p(U_i) \), we consider
+::: {.remark}
+More generally, for an arbitrary open \( U \), cover it by coordinate charts \( \left\{{ U_i }\right\} \rightrightarrows U \). Then we want \( \omega_i \in \Omega^p(U_i) \) which are compatible on double overlaps, so such a collection defines a section \( \left\{{ \omega_i {~\mathrel{\Big|}~}i\in I }\right\} \in \Gamma( \Omega^p(U) ) \). The compatibility is given by taking coordinate charts \( \varphi_i: U_i \to {\mathbb{R}}^n \) with \( \omega_i \in \Omega^p(U_i) \), we consider
 \[
 t_{ij}: \varphi_i \circ \varphi_2 ^{-1} : \varphi_j(U_i \cap U_j) \to \varphi_i( U_i \cap U_j)
 ,\]
@@ -4496,7 +4497,7 @@ Why is this exact? Considering the composition, we have
 
 So we get \( \operatorname{im}p_1 \subseteq \ker p_2 \). Why do we have the reverse containment for exactness? Looking locally, given a pair \( \phi_1, \phi_2 \in \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \) such that \( \phi_1 \varphi- \phi_2 g = 0 \) and locally \( (\phi_1, \phi_2) \in \ker p_2 \), we want to show that \( \phi_1 = g \phi, \phi_2 = f\phi \) for some \( f,g \in \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \). Equivalently, we want to show that
 \[
-\phi_1 f = \phi_2 g \implies g\mathrel{\Big|}\phi_1
+\phi_1 f = \phi_2 g \implies g\bigm|\phi_1
 .\]
 If this is true, then we can set \( \phi \coloneqq{\phi_1 \over g} \), since this would yield \( g\phi = \phi_1 \) and \( f\phi = {f\phi_1 \over g} = \phi_2 \). Note that we can divide here because the ring \( \mathop{\mathrm{Hol}}(U;{\mathbb{C}}) \) is a domain (i.e. it has no zero divisors) on small sets.
 
@@ -4690,7 +4691,7 @@ implicit_plot(f, (x,-1,1), (y,-1,1))
 :::
 
 ::: {.example title="?"}
-Consider \( S \coloneqq{\mathbb{P}}^1 \times{\mathbb{P}}^1 \), which is homeomorphic to \( S^2 \times S^2 \). The homology is given by \( {\mathbb{Z}} \) in degrees 0 and 4, \( {\mathbb{Z}}^{\oplus 2} \) in degree 3, and 0 elsewhere. What is the intersection form on \( {\mathbb{Z}}^{\oplus 2} = H^2({\mathbb{P}}^1 \times{\mathbb{P}}^1; {\mathbb{Z}}) \)? The two generators are \( f_1 = [S^2 \times{\{\operatorname{pt}\}}], f_2 = [ {\{\operatorname{pt}\}}\times S^2] \). We can compute
+Consider \( S \coloneqq{\mathbb{P}}^1 \times{\mathbb{P}}^1 \), which is homeomorphic to \( S^2 \times S^2 \). The homology is given by \( {\mathbb{Z}} \) in degrees 0 and 4, \( {\mathbb{Z}}^{\oplus 2} \) in degree 3, and 0 elsewhere. What is the intersection form on \( {\mathbb{Z}}^{\oplus 2} = H^2({\mathbb{P}}^1 \times{\mathbb{P}}^1; {\mathbb{Z}}) \)? The two generators are \( f_1 = [S^2 \times{\operatorname{pt}}], f_2 = [ {\operatorname{pt}}\times S^2] \). We can compute
 
 -   \( f_1 \cdot f_1 = 0 \)
 -   \( f_1 \cdot f_2 = 1 \)
@@ -5145,7 +5146,7 @@ Note that restricting to \( (x, y) = (0, 0) \), these give the standard \( {\mat
 :::
 
 ::: {.remark}
-Recall that for a complex curve \( C \in {\mathsf{Mfd}}_{\mathbb{C}}^2 \), we have the blowup morphism \( \pi: \operatorname{Bl}_pS\to S \) and we defined the **strict transform** \( \widehat{C} \coloneqq\operatorname{cl}\pi^{-1}(C\setminus\left\{{{\{\operatorname{pt}\}}}\right\}) \).
+Recall that for a complex curve \( C \in {\mathsf{Mfd}}_{\mathbb{C}}^2 \), we have the blowup morphism \( \pi: \operatorname{Bl}_pS\to S \) and we defined the **strict transform** \( \widehat{C} \coloneqq\operatorname{cl}\pi^{-1}(C\setminus\left\{{{\operatorname{pt}}}\right\}) \).
 
 ```{=tex}
 \begin{tikzpicture}
@@ -5269,6 +5270,500 @@ In fact,
 H^2(\widehat{S}; {\mathbb{Z}}) \cong \pi^* H^2(S, {\mathbb{Z}}) \oplus {\mathbb{Z}}[E]
 .\]
 , which follows from Mayer-Vietoris. So this adds one to the rank.
+:::
+
+# Monday, April 19
+
+::: {.remark}
+Recall that we have the following:
+\[
+H^2(\widehat{S}; {\mathbb{Z}}) = \pi^* H^2(S; {\mathbb{Z}}) \oplus {\mathbb{Z}}[E]
+,\]
+where \( E \) is the exceptional curve, which follows from Mayer-Vietoris. We can write \( \widehat{S} = S \# \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu \), and by excision \( H^2(S\setminus{\mathbb{B}}^4) = H^2(S) \). So we get a LES
+
+```{=tex}
+\begin{tikzcd}
+    {H^3(S, S\setminus B)} \\
+    \\
+    {H^2(S\setminus{\mathbb{B}}^4)} && {H^2(S)} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^2(S, S\setminus B)=0} \\
+    \\
+    && {H^1(S)} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^1(S, S\setminus B)=0}
+    \arrow[from=5-3, to=5-5]
+    \arrow[from=5-5, to=3-1]
+    \arrow["\sim", from=3-1, to=3-3]
+    \arrow[from=3-3, to=3-5]
+    \arrow[from=3-5, to=1-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMiw0LCJIXjEoUykiXSxbNCw0LCJIXjEoUywgU1xcc20gQik9MCIsWzAsNjAsNjAsMV1dLFswLDIsIkheMihTXFxzbSBcXEJCXjQpIl0sWzIsMiwiSF4yKFMpIl0sWzQsMiwiSF4yKFMsIFNcXHNtIEIpPTAiLFswLDYwLDYwLDFdXSxbMCwwLCJIXjMoUywgU1xcc20gQikiXSxbMCwxXSxbMSwyXSxbMiwzLCJcXHNpbSJdLFszLDRdLFs0LDVdXQ==)
+
+We have \( H^i(S, S\setminus{\mathbb{B}}^4) = H^i(T, T\setminus{\mathbb{B}}^4) = H^i( {\mathbb{B}}^4, {{\partial}}) \), and by Poincaré-Lefschetz duality, this is isomorphic to \( H_{4-i}({\mathbb{B}}^4) \). This is equal to 0 if \( i\neq 0 \) or \( 4 \). Writing \( \widehat{S} = (S\setminus{\mathbb{B}}^4) {\coprod}_{S^3} (\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\setminus{\mathbb{B}}^4) \) and applying Mayer-Vietoris yields
+
+```{=tex}
+\begin{tikzcd}
+    {H^2(\widehat{S})} && {H^2(S\setminus{\mathbb{B}}^4) \oplus H^2(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu \setminus{\mathbb{B}}^4)} && \textcolor{rgb,255:red,214;green,92;blue,92}{H^2(S^3) =0} \\
+    \\
+    && \cdots && \textcolor{rgb,255:red,214;green,92;blue,92}{H^1(S^3) =0 }
+    \arrow[from=3-5, to=1-1]
+    \arrow["\sim", from=1-1, to=1-3]
+    \arrow[from=1-3, to=1-5]
+    \arrow[from=3-3, to=3-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbNCwyLCJIXjEoU14zKSA9MCAiLFswLDYwLDYwLDFdXSxbMCwwLCJIXjIoXFxoYXR7U30pIl0sWzIsMCwiSF4yKFNcXHNtIFxcQkJeNCkgXFxvcGx1cyBIXjIoXFxiYXJ7XFxDUF4yfSBcXHNtIFxcQkJeNCkiXSxbNCwwLCJIXjIoU14zKSA9MCIsWzAsNjAsNjAsMV1dLFsyLDIsIlxcY2RvdHMiXSxbMCwxXSxbMSwyLCJcXHNpbSJdLFsyLDNdLFs0LDBdXQ==)
+
+Combining this with the isomorphisms from earlier, we can write the direct sum as \( H^2(S) \oplus H^2( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu) \) where the latter is equal to \( {\mathbb{Z}}\ell = [E] \) for \( \ell \) a line class.
+:::
+
+::: {.question}
+What is the intersection form on \( H^2(\widehat{S}; {\mathbb{Z}}) \)?
+:::
+
+::: {.remark}
+Using the proposition, along with the fact that
+
+1.  its an orthogonal decomposition,
+2.  \( \pi^* \) is an isometry, and
+3.  \( [E]^2 = -1 \),
+
+we know that the Gram matrix for \( H^2(\widehat{S}) \) is the same as that for \( H^1(S) \oplus [-1] \), i.e. it is of the form
+\[
+\begin{bmatrix}
+A & 0 
+\\
+0 & -1
+\end{bmatrix}
+.\]
+:::
+
+::: {.proof title="of 2"}
+Consider \( [\Sigma_1], [\Sigma_2]\in H^2(S; {\mathbb{Z}}) \) where the \( \Sigma_i \) are real surfaces, and suppose \( \Sigma_1 \pitchfork\Sigma_2 \) and \( p\not\in \Sigma_1, \Sigma_2 \). We then have
+\[
+[ \pi^{-1}( \Sigma_i ) ] = \pi^* [ \Sigma_i ] 
+.\]
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{35pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-19_14-07.pdf_tex} };
+\end{tikzpicture}
+```
+The intersection number is preserved because \( \pi \) is generically injective.
+:::
+
+::: {.proof title="of 1"}
+It also follows that if \( p\not\in \Sigma \), \( \pi^*[\Sigma] = [\pi^{-1}\Sigma] \) where the latter is disjoint from \( E \). So \( \pi^*[\Sigma] \cdot E = 0 \).
+:::
+
+::: {.proof title="of 3"}
+Since \( [E] \sim [\text{line}] \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\setminus{\mathbb{B}}^4 \), and \( E^2 = [E] \cdot [E] = -1 \) since the orientations disagree in \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu \).
+:::
+
+::: {.proposition title="?"}
+Let \( C \subset S \) be a curve on a surface and suppose \( C \) is locally cut out by
+\[
+f(x, y) = a_{m, 0} x^m + a_{n-1, 1} x^{m-1} y + \cdots + a_{0, m} y^m + O(x^{m+1}, y^{m+1})
+,\]
+near \( p\in S \), so the lowest order terms in the Taylor expansion are degree \( m \). Then
+\[
+\pi^* C = \widehat{C} + mE
+.\]
+:::
+
+::: {.proof title="?"}
+On the blowup, take local coordinates \( (x, \mu) \) where \( y = x\mu \) and write
+\[
+V(\pi^* f) 
+&= V( x^m \qty{a_{m, 0} + a_{m-1, 1} \mu + \cdots + a_{0, m} \mu^m + O(x^{m+1}, \mu^{m+1} )  } ) \\
+&= m V(x) + V( a_{m, 0} + \cdots ) \\
+&= E + \widehat{C}
+.\]
+:::
+
+::: {.example title="?"}
+Take
+\[
+C = \left\{{ y^2 = x^3-x^2 }\right\} \subseteq {\mathbb{C}}^2
+,\]
+where \( \operatorname{Bl}_0 {\mathbb{C}}^2 \to C \). Then \( \pi^* C = \widehat{C} + 2E \), so
+\[
+C = V(x^2 + y^2 + O(\deg(3))
+.\]
+.
+:::
+
+::: {.corollary title="?"}
+\( \widehat{C}^2 = C^2 - m^2 \).
+:::
+
+::: {.proof title="?"}
+Write \( \pi^* C = \widehat{C} + mE \), then \( \widehat{C} = \pi^* C - mE \) implies that \( \widehat{C}^2 = (\pi^* C - mE)^2 \). This equals
+\[
+(\pi^* C)^2 - 2m \pi^* C\cdot E + m^2 E^2
+&= C^2 - 0 - m^2 \\
+&= C^2 - m^2
+,\]
+where we've used (2), (1), and (3) respectively to identity these terms.
+:::
+
+::: {.example title="?"}
+Let
+\[
+C\coloneqq\left\{{ zy^2 = x^3 - x^2 z }\right\} \subset {\mathbb{CP}}^2
+,\]
+then \( C^2 = (3\ell)^2 = 9 \). The multiplicity of \( C \) at the point \( [0:0:1] \) is 2. Taking the coordinate chart \( \left\{{ z=1 }\right\} \cong {\mathbb{C}}^2 \), we recover the curve \( y^2 = x^3 - x^2 \) which has multiplicity 2 at \( (0, 0) \). We can conclude \( \widehat{C} = \operatorname{Bl}_{[0:0:1]} {\mathbb{CP}}^2 \) has self-intersection number \( \widehat{C}^2 = 9-2^2 = 5 \).
+:::
+
+::: {.theorem title="Castelnuovo Contractibility Criterion"}
+Let \( S \) be a complex surface and let \( E \subset S \) be a holomorphically embedded \( {\mathbb{CP}}^2 \) such that \( E^2 = -1 \) Then there exists a smooth surface \( \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \) and \( p\in \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \) such that \( S = \operatorname{Bl}_p \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \) with \( E \) as the exceptional curve.
+:::
+
+::: {.definition title="Blowdown"}
+This \( \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \) is called the **blowdown** of \( S \) along \( E \).
+:::
+
+::: {.remark}
+Note that this is the exact situation when we blow things up. This is a converse: if we have something that looks like a blowup, we can find something that blows up to it.
+:::
+
+::: {.exercise title="?"}
+Show that the category \( {\mathsf{Mfd}}_{\mathbb{C}} \) is not closed under blowdowns, i.e. there is no blowdown of a holomorphically embedded \( {\mathbb{CP}}^1 \), say \( E \), with \( E^2 = 1 \).
+
+> Hint: think about \( {\mathbb{CP}}^2 \).
+:::
+
+::: {.remark}
+This is interesting because there does exist a blowdown in the smooth category \( {\mathsf{Mfd}}(C^\infty({\mathbb{R}})) \). This is because \( S \to S\# \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu \) and \( S\to S\# {\mathbb{CP}}^2 \) are indistinguishable here. One can just reverse orientations.
+:::
+
+::: {.example title="?"}
+A complex surface with a holomorphically embedded \( {\mathbb{CP}}^1 \) of self intersection \( -1 \). Let \( p, q\in {\mathbb{CP}}^2 \) be distinct points, and let \( \operatorname{Bl}_{p, q} {\mathbb{CP}}^2 \coloneqq\operatorname{Bl}_p \operatorname{Bl}_q {\mathbb{CP}}^2 \). Note that these two operations commute since these are distinct points and blowing up is a purely local operation. Let \( \ell \subset {\mathbb{CP}}^2 \) be the unique line through \( p \) and \( q \). Viewing \( p, q \) as lines in \( {\mathbb{C}}^3 \), they span a unique plane, which is a line in projective space, so this makes sense and we can write \( \ell \approx {\operatorname{span}}\left\{{ p, q }\right\} \). Since \( \ell \) is defined by a linear equation in local coordinates near \( p, q \), we have \( {\operatorname{mult}}_p \ell = {\operatorname{mult}}_q \ell = 1 \). We hve
+\[
+\widehat{\ell} = \pi^* \ell - E_p - E_q \\
+\widehat{\ell}^2 = \ell^2 - 1^2 - 1^2 = 1-1-1 = - 1
+.\]
+Under \( \pi: \operatorname{Bl}_{p, q} {\mathbb{CP}}^2 \to {\mathbb{CP}}^2 \), we have \( \widehat{\ell} \xrightarrow{\sim} \ell \).
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{35pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-19_14-40.pdf_tex} };
+\end{tikzpicture}
+```
+Here since all of the lower order terms have degree 1, there is a well-defined tangent line. Since \( \ell \cong {\mathbb{CP}}^2 \), we have \( \widehat{\ell }\cong {\mathbb{CP}}^2 \). Letting \( \sigma \) be the blowdown of \( \widehat{\ell} \), we have
+
+```{=tex}
+\begin{tikzcd}
+    & {\operatorname{Bl}_{p, q}{\mathbb{CP}}^2} \\
+    \\
+    {{\mathbb{CP}}^1 \times{\mathbb{CP}}^2} && {{\mathbb{CP}}^2}
+    \arrow["\sigma"', from=1-2, to=3-1]
+    \arrow["\pi", from=1-2, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMSwwLCJcXEJsX3twLCBxfVxcQ1BeMiJdLFsyLDIsIlxcQ1BeMiJdLFswLDIsIlxcQ1BeMSBcXGNyb3NzIFxcQ1BeMSJdLFswLDIsIlxcc2lnbWEiLDJdLFswLDEsIlxccGkiXV0=)
+:::
+
+::: {.remark}
+There's a way to do this with Kirby Calculus.
+:::
+
+# Wednesday, April 21
+
+::: {.remark}
+Why can't one blow down a curve \( E\cong {\mathbb{CP}}^1 \) with \( E^2 = 1 \) in a complex surface? Disproof: consider \( S\coloneqq{\mathbb{CP}}^2 \) and \( E \) a line, where \( E^2 = 1 \). If there were a blowdown in the complex analytic category
+\[
+S &\to \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \\
+E &\mapsto {\operatorname{pt}}
+.\]
+But \( \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \cong_{\mathsf{Top}}S^4 \), since \( S^4 \# {\mathbb{CP}}^2 \cong {\mathbb{CP}}^2 \), and this would yield a complex structure on \( S^4 \) -- a contradiction. This also follows because \( \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \in \operatorname{ZHS}^4 \), and Noether's formula implies that every \( \operatorname{ZHS}^4 \) has no complex structure.
+:::
+
+::: {.remark}
+Recall that we were considering the following:
+
+```{=tex}
+\begin{tikzcd}
+    & {\operatorname{Bl}_{p, q}{\mathbb{CP}}^2} \\
+    \\
+    {{\mathbb{CP}}^1 \times{\mathbb{CP}}^2} && {{\mathbb{CP}}^2}
+    \arrow["\sigma"', from=1-2, to=3-1]
+    \arrow["\pi", from=1-2, to=3-3]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMSwwLCJcXEJsX3twLCBxfVxcQ1BeMiJdLFsyLDIsIlxcQ1BeMiJdLFswLDIsIlxcQ1BeMSBcXGNyb3NzIFxcQ1BeMSJdLFswLDIsIlxcc2lnbWEiLDJdLFswLDEsIlxccGkiXV0=)
+
+Let \( \mkern 1.5mu\overline{\mkern-1.5mu\ell\mkern-1.5mu}\mkern 1.5mu \subset \operatorname{Bl}_{p, q}({\mathbb{CP}}^2) \) the strict transform of a line through \( p, q \) with \( \widehat{\ell}^2 = -1 \). Goal: we want to construct the map \( \sigma \) sending \( \widehat{\ell} \) to a single point. Let \( r\in \operatorname{Bl}_{p, q}{\mathbb{CP}}^2 \), then there are three possibilities:
+
+1.  \( r\in {\mathbb{CP}}^2 \setminus\left\{{ p, q }\right\} \)
+2.  \( r\in E_p \)
+3.  \( r\in E_q \)
+
+If a point \( r \neq p, q \), we can take lines \( \ell_{pr}. \ell_{qr} \). We can take slopes of these lines to get points in \( {\mathbb{CP}}^1 \), and in fact it's the exceptional divisor (since these are sets of slopes through a point).
+
+So we can map
+\[
+r \mapsto 
+\begin{cases}
+( {\mathrm{slope}}_p \ell_{pr}, {\mathrm{slope}}_q \ell_{qr} ) \in {\mathbb{CP}}^2 \times{\mathbb{CP}}^2
+& \text{Case 1}
+\\
+(r, {\mathrm{slope}}_q \ell_{qp} ) 
+& \text{Case 2}
+\\
+({\mathrm{slope}}_p \ell_{pq}, r)
+&\text{Case 3}
+.
+\end{cases}
+\]
+This is clearly continuous, is this injective? The outputs will be the same for any point on the line between \( p \) and \( q \):
+
+```{=tex}
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-04-21_14-16.pdf_tex} };
+\end{tikzpicture}
+```
+So this realizes the blowdown map, since \( \Phi \widehat{\ell}_{pq} ) = {\operatorname{pt}} \) and restricting it to the complement of the line is injective.
+:::
+
+## Spin and Spinc Groups
+
+::: {.remark}
+Goal: show that \( 3[\ell] \) can't be realized by a sphere, we'll need Rohklin's theorem for this. Let \( (V, {\left\langle {{-}},~{{-}} \right\rangle}) \) be an inner product space, and assume the inner product is positive-definite. Recall that the tensor algebra is defined as \( T(V) \coloneqq\bigoplus _{n\geq 0} V^{\otimes n} \).
+:::
+
+::: {.definition title="Clifford Algebra"}
+Define the **Clifford Algebra** of \( V \) as
+\[
+\operatorname{Cl}(V) \coloneqq T(V) / \left\langle{ v\otimes v + {\left\lVert {v} \right\rVert}^2 1 }\right\rangle 
+.\]
+:::
+
+::: {.example title="The reals"}
+Take \( {\mathbb{R}} \) with the standard inner product, so \( {\left\langle {x},~{y} \right\rangle} \coloneqq xy \). Then \( T({\mathbb{R}}) = \bigoplus _{n\geq 0} {\mathbb{R}} \). Letting \( \left\{{ e }\right\} \) be a basis of \( {\mathbb{R}} \), we have \( T({\mathbb{R}}) = {\mathbb{R}}\oplus {\mathbb{R}}e \oplus {\mathbb{R}}(e^2) \oplus \cdots \cong {\mathbb{R}}[x] \) by sending \( e^n\mapsto x^n \). Since \( {\left\lVert {e} \right\rVert} = 1 \), and we mod out by \( e^2 + {\left\lVert {e} \right\rVert}^2 1 \) where \( e^2 = -1 \) and thus
+\[
+\operatorname{Cl}({\mathbb{R}}, {\left\langle {{-}},~{{-}} \right\rangle}_\text{std}) \cong {\mathbb{R}}[x] / \left\langle{ x^2 = -1 }\right\rangle\cong {\mathbb{C}}
+.\]
+The denominator is referred to as the **Clifford relation**.
+:::
+
+::: {.example title="More reals"}
+Take \( {\mathbb{R}}^2 \) with the standard inner product and an orthonormal basis \( \left\{{ e_1, e_2 }\right\} \). Then
+\[
+T({\mathbb{R}}) = {\mathbb{R}}\oplus {\mathbb{R}}\left\langle{ e_1, e_2 }\right\rangle \oplus {\mathbb{R}}\left\langle{ e_1^2, e_1e_2, e_2 e_1, e_2^2 }\right\rangle \oplus \cdots  
+.\]
+Note that there are \( 2^k \) terms in the \( k \)th graded piece. It suffices to mod out only by the relations on the orthonormal basis. This is of the form \( (v+w)^2 = - {\left\lVert {v+w} \right\rVert}^2 = -{\left\lVert {v} \right\rVert}^2 - 2{\left\langle {v},~{w} \right\rangle} - {\left\lVert {w} \right\rVert}^2 \). On the other hand, this equals \( v^2 + vw + wv + w^2 \). So we obtain
+\[
+vw + wv = 2{\left\langle {v},~{w} \right\rangle}
+,\]
+and setting \( v=w \) and dividing by 2 yields the original Clifford relation.
+
+For \( {\mathbb{R}}^2 \), we can explicitly check
+
+1.  \( e_1^2 = -1 \),
+2.  \( e_2^2 = -1 \),
+3.  \( e_1e_2 + e_2 e_1 = -2e_1 e_2 = 0 \),
+4.  \( e_1 e_2 = -e_2 e_1 \).
+
+Here (1), (2), and (4) generate all of the relations, so
+\[
+\operatorname{Cl}({\mathbb{R}}^2) - {\mathbb{R}}\left\langle{ e_1, e_2 }\right\rangle / \left\langle{ e_1^2 = -1, e_2^2 =-1, e_1e_2 = -e_2 e_1 }\right\rangle \cong HH
+.\]
+We can form this map by
+\[
+1 &\mapsto 1 \\
+e_1 &\mapsto i \\
+e_2 &\mapsto j \\
+e_1 e_2 &\mapsto k
+,\]
+and then checking that the appropriate relations hold. These hold since \( i^2 = j^2 = -1 \) and \( ij=-ji = k \). These suffice, but you can check the rest: for example, does \( jk=i \) hold? We can write this as
+\[
+e_2(e_1e_2) = -e_2 (e_2 e_1) = -e_2^2 e_1 = -(-1)e_1 = e_1
+.\]
+:::
+
+::: {.exercise title="?"}
+Check that \( \dim_{\mathbb{R}}\operatorname{Cl}(V) = 2^{\dim V} < \infty \).
+:::
+
+# Friday, April 23
+
+::: {.definition title="?"}
+Given \( (V, \cdot) \) an inner product space, we defined
+\[
+\operatorname{Cl}(V) \coloneqq{ \bigoplus _{n\geq 0} V^{\otimes n} \over \left\langle{ v\otimes w + w\otimes v = 2v\cdot w }\right\rangle }
+.\]
+:::
+
+::: {.example title="?"}
+We saw that\
+\[
+\operatorname{Cl}({\mathbb{R}}, \cdot) 
+&\cong {\mathbb{R}}[e] / e^2 
+=-1 \cong {\mathbb{C}}\\
+\operatorname{Cl}({\mathbb{R}}^2, \cdot) 
+&= {\mathbb{R}}\left\langle{ e_1, e_2 }\right\rangle / \left\langle{ e_1^2 = e_2^2 = -1, e_1e_2 = -e_2 e_1 -}\right\rangle \cong {\mathbb{H}}
+\]
+where \( e_1\mapsto i, e_2\mapsto j, e_3 = e_1 e_2 \mapsto k \). Can we describe \( \operatorname{Cl}({\mathbb{R}}^n, \cdot) \) in general? Choose an orthonormal basis \( \left\{{ e_i }\right\} \), then
+\[
+\operatorname{Cl}({\mathbb{R}}^n, \cdot) = { {\mathbb{R}}\left\langle{ e_1, \cdots, e_n }\right\rangle \over \left\langle{ e_i^2 = -1, e_i e_j = -e_j e_i {~\mathrel{\Big|}~}i\neq j }\right\rangle }
+.\]
+We saw that replacing \( 2 \) with \( \epsilon \) in the defining relation recovers \( \bigwedge \).
+:::
+
+::: {.definition title="Degree Filtration"}
+Define the **degree filtration** on \( \operatorname{Cl}(V, \cdot) \) as the filtration induced by the degree filtration on \( T(V) \coloneqq\bigoplus _{n\geq 0} V^{\otimes n} \).
+:::
+
+::: {.example title="?"}
+Consider \( \operatorname{Cl}({\mathbb{R}}^2, \cdot) \). Then
+
+-   Degree 0: \( {\mathbb{R}} \).
+-   Degree 1: \( {\mathbb{R}}\oplus {\mathbb{R}}e_1 \oplus {\mathbb{R}}e_2 \)
+-   Degree 2: \( {\mathbb{R}}\oplus {\mathbb{R}}e_1 \oplus {\mathbb{R}}e_2 \oplus {\mathbb{R}}e_1 e_2 \)
+:::
+
+::: {.definition title="Grading and Filtration"}
+Recall that there's a distinction between gradings and filtration:
+
+-   Gradings: \( R^i R^j \subset R^{i+j} \) and \( R = \bigoplus_i R^i \).
+-   Filtrations: \( F^1 \subset F^2 \subset \cdots \) with \( F^i F^j \subseteq F^{i+j} \)
+
+An algebra equipped with a grading is a **graded algebra**, and similarly an algebra equipped with a filtration is a **filtered algebra**.
+:::
+
+:::{.remark}& Note that
+
+-   \( k[x_1, \cdots, x_n] \) is graded (by monomials of uniform degree) and filtered (by polynomials of a bounded degree)
+-   \( T(V) \) is graded and filtered, since multiplying a pure \( p \) tensor with a pure \( q \) tensor yields a pure \( p+q \) tensor
+-   \( \operatorname{Cl}(V) \) is a quotient of \( T(V) \), but one can't simply define \( \operatorname{Cl}(V, \cdot)^i = \operatorname{im}T(V)^i \) since the relations have mixed degree: for example \( e_1^2 = -1 \) So \( \operatorname{Cl}(V) \) isn't graded, but is still filtered: take the filtration \( F \) on \( T(V) \) defined by \( F^i \coloneqq\bigoplus _{j\leq i} V^{\otimes j} \) and descend it through the quotient map. The relations can only decrease degree, so this is well defined.
+:::
+
+::: {.definition title="Filtration on the Clifford Algebra"}
+Define a filtration \( F^{-} \) on \( \operatorname{Cl}(V) \) by the following:
+\[
+F^i \operatorname{Cl}(V) \coloneqq{\operatorname{span}}\left\{{ { {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} }\right\} 
+.\]
+:::
+
+::: {.definition title="The associated graded"}
+The **associated graded** ring \( {\mathsf{gr}\,}_{F^{-}} R \) is the graded ring defined by
+\[
+({\mathsf{gr}\,}_{F^{-}})^i \coloneqq F^i R / F^{i-1} R
+.\]
+This induces a decomposition
+\[
+{\mathsf{gr}\,}_{F^{-}} \cong \bigoplus _{i\geq 0} F^i R/ F^{i-1} R = \bigoplus _{i\geq 0} ({\mathsf{gr}\,}_{F^{-}})^i
+,\]
+which has a multiplicative structure
+\[
+F^i/F_{i-1} \cdot F^j/F_{j-1} \to F^{i+j} / F^{i+j-1}
+.\]
+:::
+
+::: {.remark}
+Note that if \( R \in {\mathsf{gr}\,}\mathsf{Ring} \), then \( {\mathsf{gr}\,}(R) = R \), so taking the associated graded recovers the ring itself. What's happening: taking the smallest homogeneous ideal.
+:::
+
+::: {.fact}
+If one has relations of mixed degree, the associated graded also has the top degree part of each relation.
+:::
+
+::: {.remark}
+In our case, the Clifford relation relates degree \( k \) pieces to degree \( k-2 \) pieces, so we obtain
+\[
+{\mathsf{gr}\,}_{F^{-}} \operatorname{Cl}(V) \cong T(V) / \left\langle{ v\otimes w + w\otimes v = 0 }\right\rangle \coloneqq\bigwedge^* V
+.\]
+There is an isomorphism of \( k{\hbox{-}} \)vector spaces
+\[
+\operatorname{Cl}(V) & \xrightarrow{\sim} {\mathsf{gr}\,}\operatorname{Cl}(V) \\
+x\in F^i &\mapsto \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu \in F^i / F^{i-1}
+.\]
+This is because \( F^0 \subseteq \cdots \subseteq \cdots \) with \( \cup_i F^i = \operatorname{Cl}(V) \). We can conclude \( \dim_{\mathbb{R}}\operatorname{Cl}(V) = \dim_{\mathbb{R}}\bigwedge^* V = 2^{\dim_k V} \) and use this to construct a basis for \( \operatorname{Cl}(V) \). The relevant map is
+\[
+{ {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} &\mapsto e_{j_1} \wedge \cdots \wedge e_{j_i}
+.\]
+:::
+
+::: {.corollary title="of the fact"}
+The following set forms an \( {\mathbb{R}}{\hbox{-}} \)basis for \( \operatorname{Cl}({\mathbb{R}}^n, \cdot) \):
+\[
+\left\{{ { {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} {~\mathrel{\Big|}~}j_1 < j_2 < \cdots < j_i,\, i\leq n }\right\} 
+.\]
+:::
+
+::: {.example title="?"}
+Consider
+\[
+\operatorname{Cl}({\mathbb{R}}^3, \cdot) \cong {\operatorname{span}}_{\mathbb{R}}\left\{{ 1, e_1, e_2, e_3, e_1e_2, e_1 e_3, e_1 e_2 e_3 }\right\} 
+.\]
+Then
+\[
+e_1 e_2 \cdot e_1 e_3 
+&= -e_1 e_1 e_3 e_3 
+  && e_2 e_1 = -e_1 e_2 \\
+&= e_2 e_3 
+  && e_1^2 = - 1
+.\]
+:::
+
+::: {.exercise title="?"}
+Show that \( \operatorname{Cl}({\mathbb{R}}^3) \cong {\mathbb{H}}\oplus {\mathbb{H}} \).
+:::
+
+::: {.definition title="?"}
+\( \operatorname{Cl}(V) \) has a \( {\mathbb{Z}}/2 \) ("super") grading, so
+\[
+\operatorname{Cl}(V) \circ \operatorname{Cl}_0(V) \oplus \operatorname{Cl}_1(V) && \operatorname{Cl}_i(V) \cdot \operatorname{Cl}_j(V) \subset \operatorname{Cl}_{i+j\pmod 2}(V)
+.\]
+The **even** subalgebra is given by
+\[
+\operatorname{Cl}_0(V) = {\operatorname{span}}_k \left\{{ { {e_i}_1, {e_i}_2, \cdots, {e_i}_{2k}} {~\mathrel{\Big|}~}2k\leq n }\right\} 
+,\]
+where we take an even number of basis elements, which makes sense because the Clifford relation \( vw + 2v = -2v\cdot w \) preserves degree mod 2. This is still an algebra. The **odd** sub-vector space (not an algebra) is given by
+\[
+\operatorname{Cl}_1(V) = {\operatorname{span}}_k \left\{{ { {e_i}_1, {e_i}_2, \cdots, {e_i}_{2k+1}} {~\mathrel{\Big|}~}2k+1\leq n }\right\} 
+.\]
+:::
+
+::: {.example title="?"}
+\[
+\operatorname{Cl}({\mathbb{R}}^3) = {\operatorname{span}}_{\mathbb{R}}\left\{{ 1, e_1 e_2, e_1 e_3, e_2 e_3 }\right\} 
+,\]
+and we saw \( e_1 e_2 = e_1 e_3 = e_2 e_3 \). This product has degree 4, and when we applied the relation \( e_1^2=1 \) we dropped the degree by 2. For the odd part, \( e_3 \in Cl_1({\mathbb{R}}^3) \) and \( e_1 e_2 \in \operatorname{Cl}_0({\mathbb{R}}^3) \), and we have
+\[
+e_3 \cdot (e_1 e_2) = -e_1 e_3 e_2 = e_1 e_2 e_3 \in \operatorname{Cl}_1({\mathbb{R}}^3)
+.\]
+:::
+
+::: {.proposition title="?"}
+\[
+\operatorname{Cl}(V) \cong \operatorname{Cl}_0(V \oplus {\mathbb{R}})
+.\]
+:::
+
+::: {.proof title="?"}
+Let \( e\in {\mathbb{R}} \) be a unit vector. Given \( x\in \operatorname{Cl}(V) \), decompose \( x = x_0 + x_1 \in \operatorname{Cl}_0(V) \oplus \operatorname{Cl}_1(V) \). Define an isomorphism
+\[
+\phi: \operatorname{Cl}(V) &\to \operatorname{Cl}_0(V \oplus {\mathbb{R}}) \\
+x &\mapsto x_0 + x_1 e
+,\]
+which is well-defined since \( x_0 \) was odd degree, and both \( x_1, e \) were odd degree and thus \( x_1 e \) is even. One checks that this preserves multiplication:
+\[
+x\cdot y = (x_0 + x_1) \cdot (y_0 + y_1) = (x_0 y_0 + x_1 y_1) + (x_0 y_1 + x_1 y_0) \in \operatorname{Cl}_0(V) \oplus \operatorname{Cl}_1(V)
+,\]
+and so
+\[
+\phi(x) \cdot \phi(y) 
+&= (x_0 +x_1 e)(y_0 + y_1 e) \\
+&= x_0 y_0 + x_0 y_1 e + x_1 e y_0 + x_1 e y_1 e_1
+.\]
+The question is if this equals
+\[
+\phi(xy) \coloneqq(x_0 y_0 + x_1 y_1) + (x_0 y_1 + x_1 y_0)e
+.\]
+But for example, \( x_1 e y_0 = (-1)^{|y_0|} x_1 y_0 e \), and \( y_0 \) is even. Similarly, \( x_1 e y_1 e = -x_1 y_1 e^2 = x_1 y_1 \).
 :::
 
 [^1]: Note that this doesn't start at \( C^0 \), so topological manifolds are genuinely different! There exist topological manifolds with no smooth structure.
