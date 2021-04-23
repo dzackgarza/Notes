@@ -55,6 +55,12 @@
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
+\newcommand{\FFp}[0]{\mathbb{F}_p}
+\newcommand{\chp}[0]{\operatorname{ch. p}}
+\newcommand{\fp}[0]{\operatorname{fp}}
+\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
+\newcommand{\HT}[0]{{\operatorname{HT}}}
+\newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
@@ -113,6 +119,8 @@
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
+\newcommand{\reldim}[0]{\operatorname{reldim}}
+\newcommand{\cohdim}[0]{\operatorname{cohdim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\dR}[0]{\mathrm{dR}}
@@ -144,6 +152,8 @@
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
@@ -153,6 +163,8 @@
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\CRing}[0]{\mathsf{CRing}}
+\newcommand{\Field}[0]{\mathsf{Field}}
+\newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
 \newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
@@ -160,7 +172,7 @@
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
 \newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
-\newcommand{\gr}[0]{{\mathsf{gr}}}
+\newcommand{\gr}[0]{{\mathsf{gr}\,}}
 \newcommand{\grMod}[0]{{\mathsf{grMod}}}
 \newcommand{\Mod}[0]{{\mathsf{Mod}}}
 \newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
@@ -170,12 +182,15 @@
 \newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
 \newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
 \newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
+\newcommand{\liealgk}[0]{{ \liealg_{/k} }}
 \newcommand{\alg}[0]{\mathsf{Alg}}
 \newcommand{\scalg}[0]{\mathsf{sCAlg}}
 \newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\CCalg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
 \newcommand{\ssets}[0]{\mathsf{sSets}}
 \newcommand{\Assoc}[0]{\mathsf{Assoc}}
+\newcommand{\Free}[0]{\mathsf{Free}}
 \newcommand{\Unital}[0]{\mathsf{Unital}}
 \newcommand{\Riem}[0]{\mathsf{Riem}}
 \newcommand{\Comm}[0]{\mathsf{Comm}}
@@ -183,6 +198,8 @@
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\Schf}[0]{{\mathsf{Schf}}}
+\newcommand{\Rep}[0]{{\mathsf{Rep}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
 \newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
 \newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
@@ -216,7 +233,8 @@
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
-\newcommand{\pt}[0]{{\{\operatorname{pt}\}}}
+\newcommand{\pt}[0]{{\operatorname{pt}}}
+\newcommand{\tspt}[0]{{\{\operatorname{pt}\}}}
 \newcommand{\sep}[0]{^\operatorname{sep}}
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
@@ -292,6 +310,7 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
 \newcommand{\lied}[0]{{\mathfrak{d}}}
@@ -324,8 +343,13 @@
 \newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
+\newcommand{\prism}[0]{\Delta}
+\newcommand{\Prism}[0]{\mathsf{Prism}}
+\newcommand{\Spf}[0]{\mathsf{Spf}}
+\newcommand{\WCart}[0]{\mathsf{WCart}}
+\newcommand{\padic}[0]{p\dash\text{adic}}
 \newcommand{\surjectsvia}[2][]{
-  \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
+  \xrightarrow[#1]{#2} { \mathrel{\mkern-16mu}\rightarrow }\,
 }
 \newcommand{\adjoint}[0]{\leftrightarrows}
 \newcommand{\kx}[1]{k[x_1, \cdots, x_{#1}]}
@@ -394,6 +418,7 @@
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
+\newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
 \newcommand{\rad}[0]{{\operatorname{rad}}}
@@ -424,6 +449,7 @@
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
 \newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
@@ -521,7 +547,6 @@
 \newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
-\newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
@@ -591,6 +616,9 @@
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
+\newcommand\B{{ \mathsf{B}}}
+\newcommand\D{{ \mathsf{D}}}
+\newcommand\R{{ \mathsf{R}}}
 
 # Preface 
 
@@ -1153,6 +1181,7 @@ Restricting, we get
 
 :::{.remark}
 A similar analysis works for $\sin(\theta)$:
+
 ![image_2021-04-18-22-34-21](figures/image_2021-04-18-22-34-21.png)
 
 Restricting, we get

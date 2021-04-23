@@ -488,7 +488,9 @@ Restricting, we get
 :::
 
 ::: {.remark}
-A similar analysis works for \( \sin(\theta) \): ![image_2021-04-18-22-34-21](figures/image_2021-04-18-22-34-21.png)
+A similar analysis works for \( \sin(\theta) \):
+
+![image_2021-04-18-22-34-21](figures/image_2021-04-18-22-34-21.png)
 
 Restricting, we get
 

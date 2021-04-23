@@ -1,0 +1,4 @@
+﻿\begin{tikzpicture}[scale = 1]
+\draw[line width=0.5mm, -] (-1, 0) -- (1, 0) -- (0, 1) -- (-1, 0);
+\draw[line width=0.5mm, -] (-0.55, 0) -- (0.12, 0.85);
+\end{tikzpicture}
