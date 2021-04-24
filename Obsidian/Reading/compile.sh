@@ -12,5 +12,6 @@ do
   echo "Making directory: html/$fixed_item_dir"
   #mkdir "${DIR}/html/$item"
   RES_DIR="$(dirname $item)"
-  pandoc "$item" -f markdown --self-contained --metadata pagetitle="title" --to=html --resource-path="$RES_DIR" -o "html/${fixed_item_dir}.html" && echo "Built: $fixed_item_dir";
+  TITLE="$(basename $item)"
+  pandoc "$item" -f markdown --self-contained --metadata pagetitle="$TITLE" --to=html --resource-path="$RES_DIR" -o "html/${fixed_item_dir}.html" && echo "Built: $fixed_item_dir";
 done
