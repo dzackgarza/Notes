@@ -1,11 +1,12 @@
 
 - What is the definition of the $n$th stable homotopy group of a space?
-	- ![[Pasted image 20210402221513.png]]
+
+![attachments/Pasted image 20210402221513.png]
+
+
 
 - What is the $Q$ functor?
 	- ![[Pasted image 20210402221534.png]]
-
----
 
 - ![[Pasted image 20210402221548.png]]
 
