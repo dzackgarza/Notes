@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
+            "file": "Quals/Algebra/Review1.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
+                "file": "Quals/Algebra/Review1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
+                "file": "Quals/Algebra/Review1.md"
               }
             }
           },
@@ -109,6 +109,8 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "Quals/Algebra/Review 1.md",
+    "Unsorted/Review.md",
     "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
     "Reading/Formal_Groups_and_Spectra/Formal_Groups.md.md",
     "Reading/Krantz1/2021-04-22_Krantz.md",
@@ -116,8 +118,6 @@
     "Reading/Barnes_and_Roitzheim/Barnes and Roitzheim.md",
     "zettelkasten/5421aff3.md",
     "zettelkasten/7d78b43d.md",
-    "zettelkasten/index.md",
-    "Reading/Formal Groups and Spectra/Formal Groups Notes.md.md",
-    "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md"
+    "zettelkasten/index.md"
   ]
 }

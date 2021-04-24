@@ -1,6 +1,5 @@
 # Reading Notes
 
-![Barnes_and_Roitzheim](Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md)
 ![](attachments/Pasted%20image%2020210402221513.png)
 ![](attachments/Pasted%20image%2020210402221534.png)
 ![](attachments/Pasted%20image%2020210402221548.png)
