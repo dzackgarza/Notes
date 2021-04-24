@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/5421aff3.md",
-            "mode": "preview"
+            "file": "Reading/Krantz1/2021-04-22_Krantz.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/5421aff3.md",
+                "file": "Reading/Krantz1/2021-04-22_Krantz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/5421aff3.md"
+                "file": "Reading/Krantz1/2021-04-22_Krantz.md"
               }
             }
           },
@@ -109,6 +109,8 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "Reading/Krantz1/2021-04-22 Krantz.md",
+    "Reading/Barnes_and_Roitzheim/Barnes and Roitzheim.md",
     "zettelkasten/5421aff3.md",
     "zettelkasten/7d78b43d.md",
     "zettelkasten/index.md",
@@ -116,8 +118,6 @@
     "Reading/Formal Groups/Formal Groups and Spectra 880c864540fc4d1a8d895c60f144dff8.md",
     "Reading/Barnes and Roitzheim/Barnes and Roitzheim.md",
     "Reading/Barnes and Roitzheim/attachments/Pasted image 20210402221513.png",
-    "Reading/Krantz1/2021-04-22 Krantz.md",
-    "Reading/Barnes and Roitzheim/attachments/Pasted image 20210402221534.png",
-    "Reading/Krantz1/SmartSelect_20210422-235448_Moon+_Reader_Pro-jpg.md"
+    "Reading/Barnes and Roitzheim/attachments/Pasted image 20210402221534.png"
   ]
 }
