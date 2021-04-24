@@ -1,4 +1,4 @@
-2# Reading Notes
+# Reading Notes
 
 ![](Reading/Barnes_and_Roitzheim/attachments/Pasted%20image%2020210402221513.png)
 

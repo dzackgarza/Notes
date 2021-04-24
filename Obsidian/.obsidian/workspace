@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reading/Krantz1/2021-04-22_Krantz.md",
+            "file": "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 366
+    "width": 674
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reading/Krantz1/2021-04-22_Krantz.md",
+                "file": "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/Krantz1/2021-04-22_Krantz.md"
+                "file": "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
               }
             }
           },
@@ -109,9 +109,9 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
     "Reading/Krantz1/2021-04-22_Krantz.md",
     "Reading/Formal_Groups_and_Spectra/Formal_Groups.md.md",
-    "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
     "Reading/Krantz1/2021-04-22 Krantz.md",
     "Reading/Barnes_and_Roitzheim/Barnes and Roitzheim.md",
     "zettelkasten/5421aff3.md",
