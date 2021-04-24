@@ -16,7 +16,7 @@ Formal group law stuff
 	- Idea: substitute for Lie algebras in positive characteristic
 	- Formal group and lie algebra carry the same info in char 0
 	- Functor: LieGroups (or AlgGrp) → LieAlgebras factors through FormalGroups 
-  ![Reading/Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png)
+  ![Reading/Formal%20Groups%20and%20Spectraattachments/Untitled.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled.png)
 - Motivation: if a formal group were for sale, why might you buy it?
 	- ![Reading/Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png](Formal%20Groups%20and%20Spectra%20880c864540fc4d1a8d895c60f144dff8/Untitled%201.png)
 - What is a formal group law?
