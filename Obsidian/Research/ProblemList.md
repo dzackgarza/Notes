@@ -13,6 +13,7 @@ title: "Open conjectures"
 - Tate conjecture
 - Homotopy groups of spheres
 - Beilinson-Bloch?
+- Birch and Swinnerton-Dyer conjecture
 
 # A
 - The chromatic **redshift** conjecture
