@@ -11,7 +11,6 @@ Formal group law stuff
 ## Formal Groups
 
 ### Basics
-
 - Motivation: why should one care about formal groups?
 	- Idea: substitute for Lie algebras in positive characteristic
 	- Formal group and lie algebra carry the same info in char 0
