@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Quals/Algebra/Review1.md",
+            "file": "zettelkasten/7d78b43d.md",
             "mode": "source"
           }
         }
@@ -24,6 +24,7 @@
       {
         "id": "1d4b3f5d279d9110",
         "type": "tabs",
+        "dimension": 59.30824008138352,
         "children": [
           {
             "id": "9abb984b6bba57b7",
@@ -49,6 +50,65 @@
             }
           }
         ]
+      },
+      {
+        "id": "cfc78aa342d78dbe",
+        "type": "tabs",
+        "dimension": 20.345879959308242,
+        "children": [
+          {
+            "id": "d1933ba615cdd62b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "zettelkasten/7d78b43d.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7801f9abeb7ace59",
+        "type": "tabs",
+        "dimension": 20.345879959308242,
+        "children": [
+          {
+            "id": "ddedd1d5d99275ee",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "zettelkasten/7d78b43d.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -68,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quals/Algebra/Review1.md",
+                "file": "zettelkasten/7d78b43d.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quals/Algebra/Review1.md"
+                "file": "zettelkasten/7d78b43d.md"
               }
             }
           },
@@ -109,6 +169,8 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "zettelkasten/7d78b43d.md",
+    "Quick_Notes/2021-04-25.md",
     "Quals/Algebra/Review1.md",
     "Quals/Algebra/Review 1.md",
     "Unsorted/Review.md",
@@ -116,8 +178,6 @@
     "Reading/Formal_Groups_and_Spectra/Formal_Groups.md.md",
     "Reading/Krantz1/2021-04-22_Krantz.md",
     "Reading/Krantz1/2021-04-22 Krantz.md",
-    "Reading/Barnes_and_Roitzheim/Barnes and Roitzheim.md",
-    "zettelkasten/5421aff3.md",
-    "zettelkasten/7d78b43d.md"
+    "Reading/Barnes_and_Roitzheim/Barnes and Roitzheim.md"
   ]
 }
