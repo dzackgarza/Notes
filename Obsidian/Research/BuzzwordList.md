@@ -279,5 +279,9 @@
 - $\OO(D), \omega(D)$ for $D$ a divisor
 - Canonical sheaf
 - Cohen-Macauly
-
+- Sutured manifolds
+- Dehn twists
+- Train tracks
+- Foliations
+- Orbifolds
 

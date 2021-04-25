@@ -11,4 +11,3 @@
 - Bousfield localization
 - Loop and Path spaces
 - Try to write a composition series as an exact sequence
-

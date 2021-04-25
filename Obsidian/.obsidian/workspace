@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
+            "file": "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md",
             "mode": "source"
           }
         }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md"
+                "file": "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
+                "file": "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
+                "file": "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md"
+                "file": "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md"
               }
             }
           },
@@ -177,15 +177,15 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
-    "Research/Notes/ReadingTextbook/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
-    "Research/Notes/GimbalLock.md",
-    "Research/Notes/ReadingTextbook/02-10-19 Griffiths and Morgan, Rational Homotopy.md",
-    "Research/Notes/ProjectOutline.md",
-    "Research/Notes/Combined Meetings Notes.md",
-    "Research/Notes/GriffithsAndMorgan.md",
-    "Research/Notes/2020-11-28.md",
-    "Research/Notes/2020-09-09.md",
-    "Research/Notes/2020-03-13.md",
-    "Research/Notes/2020-01-12.md"
+    "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md",
+    "Research/Notes/ReadingGeneral/2019-04-22 Reading about grad school and research.md",
+    "Research/Notes/ReadingGeneral/2019-04-22 Terms to look up.md",
+    "Research/Notes/ReadingGeneral/2019-06-13 Conference Notes and Thoughts.md",
+    "Research/Notes/ReadingGeneral/2020-01-12 p-Divisble Groups.md",
+    "Research/Notes/ReadingGeneral/2018-02-22 Reading Notes.md",
+    "Research/Notes/ReadingGeneral/2018-01-13 Reading Notes.md",
+    "Research/Notes/ReadingGeneral/2020-05-16 StableHomotopy.md",
+    "Research/Notes/ReadingGeneral/2020-01-12.md",
+    "Research/Notes/ReadingGeneral/2020-03-13.md"
   ]
 }
