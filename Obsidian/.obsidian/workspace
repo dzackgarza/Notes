@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/7d78b43d.md",
+            "file": "zettelkasten/d6e0e10c.md",
             "mode": "source"
           }
         }
@@ -62,7 +62,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/7d78b43d.md"
+                "file": "zettelkasten/d6e0e10c.md"
               }
             }
           }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/7d78b43d.md",
+                "file": "zettelkasten/d6e0e10c.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/7d78b43d.md",
+                "file": "zettelkasten/d6e0e10c.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/7d78b43d.md"
+                "file": "zettelkasten/d6e0e10c.md"
               }
             }
           },
@@ -169,15 +169,15 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "zettelkasten/d6e0e10c.md",
     "zettelkasten/7d78b43d.md",
+    "Research/Written Notes/Representing K(G,n) geometrically.md",
     "Quick_Notes/2021-04-25.md",
     "Quals/Algebra/Review1.md",
     "Quals/Algebra/Review 1.md",
     "Unsorted/Review.md",
     "Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
     "Reading/Formal_Groups_and_Spectra/Formal_Groups.md.md",
-    "Reading/Krantz1/2021-04-22_Krantz.md",
-    "Reading/Krantz1/2021-04-22 Krantz.md",
-    "Reading/Barnes_and_Roitzheim/Barnes and Roitzheim.md"
+    "Reading/Krantz1/2021-04-22_Krantz.md"
   ]
 }
