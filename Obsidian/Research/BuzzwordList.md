@@ -26,6 +26,7 @@
 - Generic and special fibers
 - Faltings Theorem
 - Hyperelliptic
+- Elliptic fibrations
 
 # Priority 1
 - Kahler Differentials
@@ -245,18 +246,38 @@
 - Monoidal categories
 - Enriched categories
 - $H\dash$spaces
-- Artin reciprocity.
+- Artin reciprocity
+- Artin-Schreier
 - Hecke character
-
-
-- Galois group of $\FF_{q^n}/ \FF_q$
-- Completion away from $p$
-- Proper submersions of manifolds, fibers are diffeomorphic Urysohn's Theorem
 - Etale cohomology
 - Zariski cohomology
-- Reference: SGA1
-- Steenbrink spectral sequence (Peters-Steenbrink for exposition)
-- Rapoport-Zink spectral sequence
-- Bounding ranks of curves over function field, see elliptic fibrations
-- Burnside ring in AG: free abelian group on finitely generated field extensions over a base field
+
+# Unsorted
+
+- Separated moduli problem
+- Log canonical models/singularities
+- Proj construction
+- Generic fiber
+- Central fiber
+- Picard rank
+- Polarized
+- Ample or Cartier divisors
+- Nodal singularities
+- Closed embedding
+- Proper Deligne-Mumford stack
+- Projective coarse moduli space
+- Wall-crossing morphisms
+- Flat families
+- Hirzebruch surface
+- Segre (embedding?)
+- Twisted cubic
+- Hilbert scheme
+- Reduced scheme
+- Reflexive sheaf
+- Tangent space to a functor
+- Cotangent complex
+- $\OO(D), \omega(D)$ for $D$ a divisor
+- Canonical sheaf
+- Cohen-Macauly
+
 
