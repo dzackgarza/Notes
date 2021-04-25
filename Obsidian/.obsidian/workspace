@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "8a81ceb43bd64be5",
+        "id": "5de46fdc288eb3b2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Research/Notes/Homotopy/PostnikovTowers.md",
+            "file": "Research/Written Notes/Fiber Bundles 4-22-18.md",
             "mode": "source"
           }
         }
@@ -40,11 +40,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#homology",
+                "query": "tag:#homotopy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Notes/Homotopy/PostnikovTowers.md"
+                "file": "Research/Written Notes/Fiber Bundles 4-22-18.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Research/Notes/Homotopy/PostnikovTowers.md",
+                "file": "Research/Written Notes/Fiber Bundles 4-22-18.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Research/Notes/Homotopy/PostnikovTowers.md",
+                "file": "Research/Written Notes/Fiber Bundles 4-22-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Notes/Homotopy/PostnikovTowers.md"
+                "file": "Research/Written Notes/Fiber Bundles 4-22-18.md"
               }
             }
           },
@@ -175,17 +175,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8a81ceb43bd64be5",
+  "active": "5de46fdc288eb3b2",
   "lastOpenFiles": [
+    "Research/Written Notes/Fiber Bundles 4-22-18.md",
+    "Research/Written Notes/Representing K(G,n) geometrically.md",
+    "zettelkasten/25e7121f.md",
+    "zettelkasten/d6e0e10c.md",
     "Research/Notes/Homotopy/PostnikovTowers.md",
     "Research/Notes/Homotopy/ReadingGeneral.md",
     "Research/Notes/AG/2020-12-27.md",
     "Research/Notes/Introduction to Infty Categories.md",
     "Research/Notes/Homotopy_Groups_of_Spheres_Course_Outline.md",
-    "Research/Notes/Meetings/04-18-18 Meeting Notes.md",
-    "Research/Notes/GimbalLock.md",
-    "Research/Notes/ReadingGeneral/2019-04-11 Eilenberg MacLane Spaces.md",
-    "Research/Notes/ReadingGeneral/2019-04-12 Homotopy Groups of Spheres.md",
-    "Research/Notes/ReadingGeneral/2019-04-14 Gimbal Lock.md"
+    "Research/Notes/Meetings/04-18-18 Meeting Notes.md"
   ]
 }
