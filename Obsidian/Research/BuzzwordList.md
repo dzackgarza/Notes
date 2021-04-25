@@ -8,6 +8,7 @@
 - Trivial, canonical, universal bundles
 - Resolutions
 - Profinite groups
+- Profinite completion
 - Pushouts, pullbacks
 - Normal bundle
 - Limits, colimits
@@ -17,6 +18,8 @@
 - Uniformization
 - Classification of surfaces
 - Branched surfaces
+  - Simply branched (double ramification points)
+  - Branched covers
 - Archimedean fields
 - Algebraic and Projective Varieties
 - Smooth varieties
@@ -79,6 +82,7 @@
 - Classifying orbifolds
 - Closed points of a scheme
 - Descent
+  - Etale descent: see Neron models, Bosch et al
 - Elliptic cohomology
 - Equivalence of categories
 - Equivariant Homology
@@ -243,3 +247,16 @@
 - $H\dash$spaces
 - Artin reciprocity.
 - Hecke character
+
+
+- Galois group of $\FF_{q^n}/ \FF_q$
+- Completion away from $p$
+- Proper submersions of manifolds, fibers are diffeomorphic Urysohn's Theorem
+- Etale cohomology
+- Zariski cohomology
+- Reference: SGA1
+- Steenbrink spectral sequence (Peters-Steenbrink for exposition)
+- Rapoport-Zink spectral sequence
+- Bounding ranks of curves over function field, see elliptic fibrations
+- Burnside ring in AG: free abelian group on finitely generated field extensions over a base field
+
