@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Research/NotesOnJournals.md",
+            "file": "Research/ProblemList.md",
             "mode": "source"
           }
         }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/NotesOnJournals.md"
+                "file": "Research/ProblemList.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Research/NotesOnJournals.md",
+                "file": "Research/ProblemList.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Research/NotesOnJournals.md",
+                "file": "Research/ProblemList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/NotesOnJournals.md"
+                "file": "Research/ProblemList.md"
               }
             }
           },
@@ -177,6 +177,8 @@
   },
   "active": "5de46fdc288eb3b2",
   "lastOpenFiles": [
+    "Research/ProblemList.md",
+    "Research/ReadingRecommendations.md",
     "Research/NotesOnJournals.md",
     "Research/Written Notes/Fiber Bundles 4-22-18.md",
     "Research/Written Notes/Representing K(G,n) geometrically.md",
@@ -184,8 +186,6 @@
     "zettelkasten/d6e0e10c.md",
     "Research/Notes/Homotopy/PostnikovTowers.md",
     "Research/Notes/Homotopy/ReadingGeneral.md",
-    "Research/Notes/AG/2020-12-27.md",
-    "Research/Notes/Introduction to Infty Categories.md",
-    "Research/Notes/Homotopy_Groups_of_Spheres_Course_Outline.md"
+    "Research/Notes/AG/2020-12-27.md"
   ]
 }
