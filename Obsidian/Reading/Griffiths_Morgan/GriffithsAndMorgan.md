@@ -1,3 +1,7 @@
+---
+date: Unknown
+---
+
 # Griffiths and Morgan
 
 Overall purpose: want to relate $C^\infty$ forms on a manifold to AT invariants. One significant result: given a manifold $M$, the singular cohomology $H^*(M, \RR)$ is isomorphic to the cohomology of the differential graded algebra of $C^\infty$ forms, $H^*_{DR}(M)$.

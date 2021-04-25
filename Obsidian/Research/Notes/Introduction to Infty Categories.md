@@ -1,3 +1,7 @@
+---
+date: 2020-11-28
+---
+
 # Introduction to $\infty\dash$Categories
 
 > These are notes roughly transcribed from [this video](https://www.youtube.com/watch?v=3IjAy0gHRyY)

@@ -1,3 +1,7 @@
+---
+date: 02-01-2018
+---
+
 # Bott / Tu: Applications of Spectral Sequences
 
 ## Notation and Remarks

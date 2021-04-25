@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Research/Notes/2020-09-09.md",
+            "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
             "mode": "source"
           }
         }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Notes/2020-09-09.md"
+                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Research/Notes/2020-09-09.md",
+                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Research/Notes/2020-09-09.md",
+                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Notes/2020-09-09.md"
+                "file": "Reading/Bott_Tu/02-01-18 Bott and Tu Applications of Spectral Sequences.md"
               }
             }
           },
@@ -177,15 +177,15 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
+    "Research/Notes/ReadingTextbook/02-01-18 Bott and Tu Applications of Spectral Sequences.md",
+    "Research/Notes/GimbalLock.md",
+    "Research/Notes/ReadingTextbook/02-10-19 Griffiths and Morgan, Rational Homotopy.md",
+    "Research/Notes/ProjectOutline.md",
+    "Research/Notes/Combined Meetings Notes.md",
+    "Research/Notes/GriffithsAndMorgan.md",
+    "Research/Notes/2020-11-28.md",
     "Research/Notes/2020-09-09.md",
     "Research/Notes/2020-03-13.md",
-    "Research/Notes/2020-01-12.md",
-    "Research/Notes/ProjectOutline.md",
-    "Research/ReadingJournal/Friday March 27th.md",
-    "zettelkasten/d6e0e10c.md",
-    "zettelkasten/7d78b43d.md",
-    "zettelkasten/index.md",
-    "Research/Written Notes/Representing K(G,n) geometrically.md",
-    "Quick_Notes/2021-04-25.md"
+    "Research/Notes/2020-01-12.md"
   ]
 }
