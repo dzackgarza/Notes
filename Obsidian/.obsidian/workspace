@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Research/Notes/Homotopy/ReadingGeneral.md",
+            "file": "Research/Notes/Homotopy/PostnikovTowers.md",
             "mode": "source"
           }
         }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Notes/Homotopy/ReadingGeneral.md"
+                "file": "Research/Notes/Homotopy/PostnikovTowers.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Research/Notes/Homotopy/ReadingGeneral.md",
+                "file": "Research/Notes/Homotopy/PostnikovTowers.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Research/Notes/Homotopy/ReadingGeneral.md",
+                "file": "Research/Notes/Homotopy/PostnikovTowers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/Notes/Homotopy/ReadingGeneral.md"
+                "file": "Research/Notes/Homotopy/PostnikovTowers.md"
               }
             }
           },
@@ -177,8 +177,8 @@
   },
   "active": "8a81ceb43bd64be5",
   "lastOpenFiles": [
-    "Research/Notes/Homotopy/ReadingGeneral.md",
     "Research/Notes/Homotopy/PostnikovTowers.md",
+    "Research/Notes/Homotopy/ReadingGeneral.md",
     "Research/Notes/AG/2020-12-27.md",
     "Research/Notes/Introduction to Infty Categories.md",
     "Research/Notes/Homotopy_Groups_of_Spheres_Course_Outline.md",
