@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Research/ProblemList.md",
+            "file": "zettelkasten/0c58b567.md",
             "mode": "source"
           }
         }
@@ -24,7 +24,7 @@
       {
         "id": "1d4b3f5d279d9110",
         "type": "tabs",
-        "dimension": 59.30824008138352,
+        "dimension": 59.308240081383516,
         "children": [
           {
             "id": "9abb984b6bba57b7",
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/ProblemList.md"
+                "file": "zettelkasten/0c58b567.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Research/ProblemList.md",
+                "file": "zettelkasten/0c58b567.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Research/ProblemList.md",
+                "file": "zettelkasten/0c58b567.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research/ProblemList.md"
+                "file": "zettelkasten/0c58b567.md"
               }
             }
           },
@@ -177,6 +177,7 @@
   },
   "active": "5de46fdc288eb3b2",
   "lastOpenFiles": [
+    "zettelkasten/0c58b567.md",
     "Research/ProblemList.md",
     "Research/ReadingRecommendations.md",
     "Research/NotesOnJournals.md",
@@ -185,7 +186,6 @@
     "zettelkasten/25e7121f.md",
     "zettelkasten/d6e0e10c.md",
     "Research/Notes/Homotopy/PostnikovTowers.md",
-    "Research/Notes/Homotopy/ReadingGeneral.md",
-    "Research/Notes/AG/2020-12-27.md"
+    "Research/Notes/Homotopy/ReadingGeneral.md"
   ]
 }
