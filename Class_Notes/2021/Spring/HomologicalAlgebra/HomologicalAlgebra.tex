@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-22 }
+{\tiny \textit{Last updated:} 2021-04-25 }
 \end{flushleft}
 
 
@@ -12098,6 +12098,304 @@ But we've already shown that \(E_{0, 0}^1 = k\), so all of the other
 See section 4.5 on Koszul complex. We'll do 7.8 next time.
 
 \end{remark}
+
+\hypertarget{friday-april-23}{%
+\section{Friday, April 23}\label{friday-april-23}}
+
+\hypertarget{applications-chevalley-eilenberg-complex}{%
+\subsection{Applications Chevalley-Eilenberg
+Complex}\label{applications-chevalley-eilenberg-complex}}
+
+\begin{remark}
+
+Last time:
+\(V_n({\mathfrak{g}}) \coloneqq{\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^n {\mathfrak{g}}  \xrightarrow[]{\varepsilon} { \mathrel{\mkern-16mu}\rightarrow }\,  k\)
+is a projective resolution in \({\mathfrak{g}{\hbox{-}}\mathsf{Mod}}\).
+Note that we can introduce negative signs to easily interchange
+\(\mathsf{{\mathfrak{g}}}{\hbox{-}}\mathsf{Mod}\) and
+\(\mathsf{Mod}{\hbox{-}}\mathsf{{\mathfrak{g}}}\).
+
+\end{remark}
+
+\begin{corollary}[Chevalley-Eilenberg]
+
+Let \(M\in \mathsf{Mod}{\hbox{-}}\mathsf{{\mathfrak{g}}}\), then
+\begin{align*}
+H_*({\mathfrak{g}}; M) \cong \operatorname{Tor}_*^{{\mathcal{U}(\mathfrak{g}) }}(M, k)
+\end{align*}
+is the homology of the following complex:
+\begin{align*}
+M\otimes_{\mathcal{U}(\mathfrak{g}) }V_*({\mathfrak{g}}) 
+\coloneqq M \otimes_{\mathcal{U}(\mathfrak{g}) }{\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^* {\mathfrak{g}}
+\cong M\otimes_k \bigwedge^* {\mathfrak{g}}
+,\end{align*}
+where we have a concrete differential \(d\) on
+\(\bigwedge^* {\mathfrak{g}}\) and we can define
+\(\partial \coloneqq\one \otimes d\). If
+\(M\in \mathsf{{\mathfrak{g}}}{\hbox{-}}\mathsf{Mod})\) (which is more
+convenient for cohomology), then
+\begin{align*}
+H^*({\mathfrak{g}}; M) \cong \operatorname{Ext}_{\mathcal{U}(\mathfrak{g}) }(k, M)
+\end{align*}
+is the cohomology of the cochain complex
+\begin{align*}
+\mathop{\mathrm{Hom}}_{\mathcal{U}(\mathfrak{g}) }(V_*({\mathfrak{g}}), M) 
+\coloneqq\mathop{\mathrm{Hom}}_{{\mathcal{U}(\mathfrak{g}) }}({\mathcal{U}(\mathfrak{g}) }\otimes_k \bigwedge^* {\mathfrak{g}}, M)
+\cong \mathop{\mathrm{Hom}}_k(\bigwedge^*{\mathfrak{g}}, M)
+.\end{align*}
+
+\end{corollary}
+
+\begin{remark}
+
+This is very concrete! Standard trick for exterior algebras: any
+\(n{\hbox{-}}\)cochain
+\(f\in \mathop{\mathrm{Hom}}_k(\bigwedge^n {\mathfrak{g}}, M)\) can be
+viewed as an alternating \(k{\hbox{-}}\)multilinear function
+\(f(x_1, \cdots, x_n): {\mathfrak{g}}\to M\). The cochain differential
+should increase degree, so we define
+\begin{align*}
+\Theta_1 f({ {x}_1, {x}_2, \cdots, {x}_{n}}) = \sum_{i=1}^{n+1} (-1)^{i+1} x_i \cdot f(x_1, \cdots, \widehat{x_i}, \cdots, x_n)
++ \sum_{i < j} (-1)^{i+1} f( [x_i x_j], x_1, \cdots, \widehat{x_i}, \cdots, \widehat{x_j}, \cdots, x_n)
+.\end{align*}
+Note that the tor definition has the arguments switched compared to the
+original definition. This is to set up the tensor cancellation of
+\(\cdots \otimes_{\mathcal{U}(\mathfrak{g}) }{\mathcal{U}(\mathfrak{g}) }\cdots\).
+Swapping factors and introducing signs makes this work for left
+\({\mathfrak{g}}{\hbox{-}}\)modules.
+
+\end{remark}
+
+\begin{corollary}[?]
+
+If \(k\) is a field and \(\dim_k {\mathfrak{g}}= n\), then for any
+\(M \in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}}\),
+\begin{align*}
+H^i({\mathfrak{g}}; M) = 0 = H_i({\mathfrak{g}}; M) && \forall i\geq n+1
+.\end{align*}
+
+\end{corollary}
+
+\begin{proof}[?]
+
+This follows from the fact that
+\(\bigwedge^{\geq n+1} {\mathfrak{g}}=0\).
+
+\end{proof}
+
+\begin{example}[?]
+
+Take \({\mathfrak{g}}= {\mathfrak{sl}}_2({\mathbb{C}})\), then
+\(\dim_{\mathbb{C}}{\mathfrak{g}}= 3\) (4 dimensions and one linear
+condition). Then \(H^i({\mathfrak{g}}; m) = 0\) for all \(i > 3\).
+
+\end{example}
+
+\hypertarget{brief-intro-to-semisimple-lie-algebras-weibel-7.8}{%
+\subsection{Brief Intro to Semisimple Lie Algebras (Weibel
+7.8)}\label{brief-intro-to-semisimple-lie-algebras-weibel-7.8}}
+
+\begin{remark}
+
+Public service section since we won't have a Lie algebras course next
+Fall. Semisimples: the most important and interesting classes of Lie
+algebras! These occur frequently and we can prove a lot about them.
+We'll assume \({\mathfrak{g}}\) is a finite dimensional Lie algebra over
+a field \(k\), where we'll soon assume \(\operatorname{ch}(k) = 0\).
+
+\end{remark}
+
+\begin{definition}[Simple Lie Algebras]
+
+A Lie algebra \({\mathfrak{g}}\) is \textbf{simple} if it has no ideals
+other than \(0\) and \({\mathfrak{g}}\) and
+\([{\mathfrak{g}}{\mathfrak{g}}] \neq 0\) (i.e.~\({\mathfrak{g}}\) is
+not abelian).
+
+\end{definition}
+
+\begin{remark}
+
+Recall that
+\({\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}^{\mathsf{Ab}}\approx {\mathsf{k}{\hbox{-}}\mathsf{Mod}}\)
+are vector spaces, and so if \({\mathfrak{g}}\) is abelian it
+automatically has a chain of ideals by just taking vector subspaces.
+These are closed under brackets since bracketing is zero. So if
+\(\dim_k {\mathfrak{g}}\geq 2\), there are nontrivial ideals, so the
+abelian condition rules out all 1-dimensional Lie algebras -- they're
+all abelian by taking a generator, bracketing it with itself, and noting
+you get zero. So there's only one 1-dimensional Lie algebra over any
+field \(k\): the abelian one.
+
+\end{remark}
+
+\begin{remark}
+
+The derived algebra
+\([{\mathfrak{g}}{\mathfrak{g}}] {~\trianglelefteq~}{\mathfrak{g}}\) is
+a subalgebra and always an ideal, so if \({\mathfrak{g}}\) is simple
+then \([{\mathfrak{g}}{\mathfrak{g}}] = {\mathfrak{g}}\). So
+\({\mathfrak{gl}}_n({\mathbb{C}})\) is not simple, since
+\([{\mathfrak{gl}}_n {\mathfrak{gl}}_n] = {\mathfrak{sl}}_n\) by taking
+traces.
+
+\end{remark}
+
+\begin{remark}
+
+The vector space sum of any two solvable ideals is again a solvable
+ideal. Note that this works for products of solvable subgroups
+\(N, H\leq G\) with \(N\) normal. Use 2-out-of-3 property for solvable
+groups and quotient by \(N\). By finite-dimensionality, we can find a
+maximal solvable ideal:
+
+\end{remark}
+
+\begin{definition}[?]
+
+For \(\dim_k {\mathfrak{g}}< \infty\), define the \textbf{radical} to be
+\({\operatorname{rad}}{\mathfrak{g}}\coloneqq\sum I_j\) be the sum of
+all solvable ideals \(I_j{~\trianglelefteq~}{\mathfrak{g}}\). We say
+\({\mathfrak{g}}\) is \textbf{semisimple} if
+\({\operatorname{rad}}{\mathfrak{g}}= 0\).
+
+\end{definition}
+
+\begin{lemma}[?]
+
+Simple implies semisimple.
+
+\end{lemma}
+
+\begin{lemma}[?]
+
+\({\mathfrak{g}}/ {\operatorname{rad}}{\mathfrak{g}}\) is always
+semisimple.
+
+\end{lemma}
+
+\begin{remark}
+
+There shouldn't be any solvable ideals in this quotient, otherwise you
+could lift. Next up, our most powerful tool for semisimple Lie algebras:
+
+\end{remark}
+
+\begin{definition}[?]
+
+Recall that for \(x\in{\mathfrak{g}}\) we can define
+\(\operatorname{ad}_x \in \endo_k({\mathfrak{g}})\) where
+\(\operatorname{ad}_x(y) \coloneqq[x, y]\). It has a well-defined (and
+basis-independent) trace, so define the \textbf{Killing
+form}\footnote{Named for a mathematician \emph{named} Killing.}:
+
+\begin{align*}
+\kappa(x, y) \coloneqq\operatorname{Tr}(\operatorname{ad}_x \circ \operatorname{ad}_y) \in k && x,y\in{\mathfrak{g}}
+.\end{align*}
+
+\end{definition}
+
+\begin{remark}
+
+This is a symmetric bilinear form since traces don't depend on the order
+of products. It has another nice property,
+\({\mathfrak{g}}{\hbox{-}}\)invariance:
+\begin{align*}
+\kappa([xy], z] = \kappa(x, [yz])
+.\end{align*}
+
+\end{remark}
+
+\begin{proposition}[Cartan's Criterion]
+
+Let \(\operatorname{ch}(k) = 0\) and \(\dim_k {\mathfrak{g}}< \infty\).
+Then \({\mathfrak{g}}\) is semisimple \(\iff \kappa\) is nondegenerate.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Omitted, see Humphreys.
+
+\end{proof}
+
+\begin{theorem}[?]
+
+Let \(\operatorname{ch}(k) = 0\), then \({\mathfrak{g}}\) is semisimple
+\(\iff {\mathfrak{g}}\cong \bigoplus_{i=1}^r {\mathfrak{g}}_i\) as a
+direct sum/product of simple ideals, so
+\([{\mathfrak{g}}_i {\mathfrak{g}}_j] = 0\) for \(i\neq j\) and
+\([{\mathfrak{g}}_i {\mathfrak{g}}_i ] = {\mathfrak{g}}_i\). In
+particular, every ideal of \({\mathfrak{g}}\) is a sum of sum of certain
+\({\mathfrak{g}}_i\)'s, and
+\({\mathfrak{g}}= [{\mathfrak{g}}{\mathfrak{g}}]\).
+
+\end{theorem}
+
+\begin{remark}
+
+These are like ``orthogonal'' ideals. So we can study semisimple Lie
+algebras by just studying simple Lie algebras.
+
+\end{remark}
+
+\begin{observation}
+
+Reminder: if
+\(M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}}({ \operatorname{Triv}})\),
+then any derivation \(D \in \mathop{\mathrm{Der}}({\mathfrak{g}}, M)\)
+satisfies \(D([xy]) = 0\) for all \(x,y\in {\mathfrak{g}}\). This
+follows from expanding the Leibniz rule and using trivial modules act by
+zero. There is an isomorphism
+\begin{align*}
+\mathop{\mathrm{Der}}({\mathfrak{g}}, M) \cong \mathop{\mathrm{Hom}}_{\mathsf{k}{\hbox{-}}\mathsf{Mod}}({\mathfrak{g}}^{\operatorname{ab}}, M) && {\mathfrak{g}}^{\operatorname{ab}}\coloneqq{\mathfrak{g}}/ [{\mathfrak{g}}{\mathfrak{g}}]
+.\end{align*}
+Recall that \(H^1\) is related to derivations.
+
+\end{observation}
+
+\begin{corollary}[?]
+
+Let \({\mathfrak{g}}\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}}(\ss)\) with
+\(\dim_k {\mathfrak{g}}< \infty\), then
+\begin{align*}
+H^1({\mathfrak{g}};k ) = 0 = H_1({\mathfrak{g}}; k) 
+.\end{align*}
+
+\end{corollary}
+
+\begin{proof}[?]
+
+Since \([{\mathfrak{g}}{\mathfrak{g}}] = {\mathfrak{g}}\), we have
+\({\mathfrak{g}}^{\operatorname{ab}}= 0\). By Weibel theorem 7.4.1, one
+can check that
+\(H_1({\mathfrak{g}}; k) \cong {\mathfrak{g}}^{\operatorname{ab}}= 0\).
+We also had
+\(\mathop{\mathrm{Der}}({\mathfrak{g}}, k) \twoheadrightarrow H^1({\mathfrak{g}}; k)\)
+(it was outer derivations), the left-hand side is isomorphic to
+\(\mathop{\mathrm{Hom}}_k({\mathfrak{g}}^{\operatorname{ab}}; k)\).
+
+\end{proof}
+
+\begin{theorem}[?]
+
+Let \({\mathfrak{g}}\in \liegalg(\ss)\) with
+\(\dim_k {\mathfrak{g}}< \infty\) and \(\operatorname{ch}(k) = 0\). Then
+if \(k\neq M\) is a simple \({\mathfrak{g}}{\hbox{-}}\)module (where
+simple means no proper nontrivial \({\mathfrak{g}}{\hbox{-}}\)invariant
+submodules), then
+\begin{align*}
+H^i({\mathfrak{g}}; M) = 0 = H_i({\mathfrak{g}}; M)
+.\end{align*}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Omitted. This uses the Casimir operator for \(M\), which is in the
+center \(Z({\mathcal{U}(\mathfrak{g}) })\).
+
+\end{proof}
 
 \hypertarget{appendix-extra-definitions}{%
 \section{Appendix: Extra Definitions}\label{appendix-extra-definitions}}

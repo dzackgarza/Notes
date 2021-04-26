@@ -9,6 +9,7 @@
 \newcommand{\du}{\,du}
 \newcommand{\dw}{\,dw}
 \newcommand{\dV}{\,dV}
+\newcommand{\dmu}{\,d\mu}
 \newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
@@ -59,8 +60,8 @@
 \newcommand{\chp}[0]{\operatorname{ch. p}}
 \newcommand{\fp}[0]{\operatorname{fp}}
 \newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
-\newcommand{\HT}[0]{\operatorname{HT}}
-\newcommand{\qc}[0]{\operatorname{qc}}
+\newcommand{\HT}[0]{{\operatorname{HT}}}
+\newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
@@ -115,6 +116,8 @@
 \newcommand{\HH}[0]{{\mathbb{H}}}
 \newcommand{\HoH}[0]{{\operatorname{HH}}}
 \newcommand{\THoH}[0]{{\operatorname{THH}}}
+\newcommand{\THC}[0]{{\operatorname{THC}}}
+\newcommand{\TC}[0]{{\operatorname{TC}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
@@ -146,6 +149,7 @@
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
+\newcommand{\CH}[0]{{\operatorname{CH}}}
 \newcommand{\Cat}[0]{\mathsf{Cat}}
 \newcommand{\Fun}[0]{{\mathsf{Fun}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
@@ -159,6 +163,8 @@
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
 \newcommand{\sets}[0]{{\mathsf{Set}}}
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
+\newcommand{\Grpd}[0]{{\mathsf{Grpd}}}
+\newcommand{\inftyGrpd}[0]{{\infty\dash\mathsf{Grpd}}}
 \newcommand{\Groups}[0]{{\mathsf{Groups}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
@@ -179,6 +185,7 @@
 \newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
 \newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
 \newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
+\newcommand{\cdga}[0]{{\mathsf{cdga} }}
 \newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
 \newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
 \newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
@@ -201,9 +208,8 @@
 \newcommand{\Schf}[0]{{\mathsf{Schf}}}
 \newcommand{\Rep}[0]{{\mathsf{Rep}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
-\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
 \newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\DCoh}[0]{{\mathsf{DCoh}}}
 \newcommand{\Perv}[0]{\mathsf{Perv}}
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
@@ -233,7 +239,8 @@
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
-\newcommand{\pt}[0]{{\{\operatorname{pt}\}}}
+\newcommand{\pt}[0]{{\operatorname{pt}}}
+\newcommand{\tspt}[0]{{\{\operatorname{pt}\}}}
 \newcommand{\sep}[0]{^\operatorname{sep}}
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
@@ -255,6 +262,7 @@
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
 \newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
+\newcommand{\slope}[0]{{\mathrm{slope}}}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
@@ -309,6 +317,7 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
 \newcommand{\lied}[0]{{\mathfrak{d}}}
@@ -341,7 +350,6 @@
 \newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
-\newcommand{\prism}[0]{\Delta}
 \newcommand{\Prism}[0]{\mathsf{Prism}}
 \newcommand{\Spf}[0]{\mathsf{Spf}}
 \newcommand{\WCart}[0]{\mathsf{WCart}}
@@ -377,9 +385,10 @@
 \newcommand{\mcx}[0]{{\mathcal{X}}}
 \newcommand{\mcz}[0]{{\mathcal{Z}}}
 \newcommand{\kfq}[0]{K_{/\mathbb{F}_q}}
-\newcommand{\cl}[0]{\operatorname{cl}}
-\newcommand{\Cl}[0]{\operatorname{Cl}}
-\newcommand{\St}[0]{\operatorname{St}}
+\newcommand{\cl}[0]{{ \operatorname{cl}} }
+\newcommand{\Cl}[0]{{ \operatorname{Cl}} }
+\newcommand{\St}[0]{{ \operatorname{St} }}
+\newcommand{\DSt}[0]{{ \operatorname{DSt}}}
 \newcommand{\trdeg}[0]{\operatorname{trdeg}}
 \newcommand{\dist}[0]{\operatorname{dist}}
 \newcommand{\Dist}[0]{\operatorname{Dist}}
@@ -614,6 +623,10 @@
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
+\newcommand\B{{ \mathsf{B}}}
+\newcommand\D{{ \mathsf{D}}}
+\newcommand\Rd{{ \mathsf{R}}}
+\newcommand\Ld{{ \mathsf{R}}}
 
 # Wednesday, January 13
 
@@ -9231,6 +9244,219 @@ See exercise 7.3.6.
 See section 4.5 on Koszul complex.
 We'll do 7.8 next time.
 :::
+
+
+
+# Friday, April 23
+
+## Applications Chevalley-Eilenberg Complex
+
+:::{.remark}
+Last time: $V_n(\lieg) \da \Ug\tensor_k \Extalg^n \lieg \surjectsvia{\eps} k$ is a projective resolution in $\liegmod$.
+Note that we can introduce negative signs to easily interchange $\modsleft{\lieg}$ and $\modsright{\lieg}$.
+:::
+
+:::{.corollary title="Chevalley-Eilenberg"}
+Let $M\in \modsright{\lieg}$, then 
+\[
+H_*(\lieg; M) \cong \Tor_*^{\Ug}(M, k)
+\]
+is the homology of the following complex:
+\[
+M\tensor_\Ug V_*(\lieg) 
+\da M \tensor_\Ug \Ug \tensor_k \Extalg^* \lieg 
+\cong M\tensor_k \Extalg^* \lieg
+,\]
+where we have a concrete differential $d$ on $\Extalg^* \lieg$ and we can define $\partial \da \one \tensor d$.
+If $M\in \modsleft{\lieg})$ (which is more convenient for cohomology), then
+\[
+H^*(\lieg; M) \cong \Ext_\Ug(k, M)
+\]
+is the cohomology of the cochain complex
+\[
+\Hom_\Ug(V_*(\lieg), M) 
+\da \Hom_{\Ug}(\Ug \tensor_k \Extalg^* \lieg, M)
+\cong \Hom_k(\Extalg^*\lieg, M)
+.\]
+:::
+
+:::{.remark}
+This is very concrete!
+Standard trick for exterior algebras: any $n\dash$cochain $f\in \Hom_k(\Extalg^n \lieg, M)$ can be viewed as an alternating $k\dash$multilinear function $f(x_1, \cdots, x_n): \lieg\to M$.
+The cochain differential should increase degree, so we define
+\[
+\Theta_1 f(\elts{x}{n}) = \sum_{i=1}^{n+1} (-1)^{i+1} x_i \cdot f(x_1, \cdots, \hat{x_i}, \cdots, x_n)
++ \sum_{i < j} (-1)^{i+1} f( [x_i x_j], x_1, \cdots, \hat{x_i}, \cdots, \hat{x_j}, \cdots, x_n)
+.\]
+Note that the tor definition has the arguments switched compared to the original definition.
+This is to set up the tensor cancellation of $\cdots \tensor_\Ug \Ug \cdots$.
+Swapping factors and introducing signs makes this work for left $\lieg\dash$modules.
+:::
+
+:::{.corollary title="?"}
+If $k$ is a field and $\dim_k \lieg = n$, then for any $M \in \liegmod$, 
+\[
+H^i(\lieg; M) = 0 = H_i(\lieg; M) && \forall i\geq n+1
+.\]
+:::
+
+:::{.proof title="?"}
+This follows from the fact that \( \Extalg^{\geq n+1} \lieg =0 \).
+:::
+
+:::{.example title="?"}
+Take $\lieg = \liesl_2(\CC)$, then $\dim_\CC \lieg = 3$ (4 dimensions and one linear condition).
+Then $H^i(\lieg; m) = 0$ for all $i > 3$.
+:::
+
+## Brief Intro to Semisimple Lie Algebras (Weibel 7.8)
+
+:::{.remark}
+Public service section since we won't have a Lie algebras course next Fall.
+Semisimples: the most important and interesting classes of Lie algebras!
+These occur frequently and we can prove a lot about them.
+We'll assume $\lieg$ is a finite dimensional Lie algebra over a field $k$, where we'll soon assume $\ch(k) = 0$.
+:::
+
+:::{.definition title="Simple Lie Algebras"}
+A Lie algebra $\lieg$ is **simple** if it has no ideals other than $0$ and $\lieg$ and $[\lieg\lieg] \neq 0$ (i.e. $\lieg$ is not abelian).
+:::
+
+:::{.remark}
+Recall that $\liealg^\Ab \approx \kmod$ are vector spaces, and so if $\lieg$ is abelian it automatically has a chain of ideals by just taking vector subspaces.
+These are closed under brackets since bracketing is zero.
+So if $\dim_k \lieg \geq 2$, there are nontrivial ideals, so the abelian condition rules out all 1-dimensional Lie algebras -- they're all abelian by taking a generator, bracketing it with itself, and noting you get zero.
+So there's only one 1-dimensional Lie algebra over any field $k$: the abelian one.
+:::
+
+:::{.remark}
+The derived algebra $[\lieg\lieg] \normal \lieg$ is a subalgebra and always an ideal, so if $\lieg$ is simple then $[\lieg \lieg] = \lieg$.
+So $\liegl_n(\CC)$ is not simple, since $[\liegl_n \liegl_n] = \liesl_n$ by taking traces.
+:::
+
+:::{.remark}
+The vector space sum of any two solvable ideals is again a solvable ideal.
+Note that this works for products of solvable subgroups $N, H\leq G$ with $N$ normal. 
+Use 2-out-of-3 property for solvable groups and quotient by $N$.
+By finite-dimensionality, we can find a maximal solvable ideal:
+:::
+
+:::{.definition title="?"}
+For $\dim_k \lieg < \infty$, define the **radical** to be $\rad \lieg \da \sum I_j$ be the sum of all solvable ideals $I_j\normal \lieg$.
+We say $\lieg$ is **semisimple** if $\rad \lieg = 0$.
+:::
+
+:::{.lemma title="?"}
+Simple implies semisimple.
+:::
+
+:::{.lemma title="?"}
+$\lieg / \rad\lieg$ is always semisimple.
+:::
+
+:::{.remark}
+There shouldn't be any solvable ideals in this quotient, otherwise you could lift.
+Next up, our most powerful tool for semisimple Lie algebras:
+:::
+
+:::{.definition title="?"}
+Recall that for $x\in\lieg$ we can define $\ad_x \in \endo_k(\lieg)$ where $\ad_x(y) \da [x, y]$.
+It has a well-defined (and basis-independent) trace, so define the **Killing form**[^killing_form_name]:
+
+\[
+\kappa(x, y) \da \tr(\ad_x \circ \ad_y) \in k && x,y\in\lieg
+.\]
+
+[^killing_form_name]: 
+Named for a mathematician *named* Killing.
+
+:::
+
+:::{.remark}
+This is a symmetric bilinear form since traces don't depend on the order of products.
+It has another nice property, $\lieg\dash$invariance: 
+\[
+\kappa([xy], z] = \kappa(x, [yz])
+.\]
+:::
+
+:::{.proposition title="Cartan's Criterion"}
+Let $\ch(k) = 0$ and $\dim_k \lieg < \infty$.
+Then $\lieg$ is semisimple $\iff \kappa$ is nondegenerate.
+:::
+
+:::{.proof title="?"}
+Omitted, see Humphreys.
+:::
+
+:::{.theorem title="?"}
+Let $\ch(k) = 0$, then $\lieg$ is semisimple $\iff \lieg \cong \bigoplus_{i=1}^r \lieg_i$ as a direct sum/product of simple ideals, so $[\lieg_i \lieg_j] = 0$ for $i\neq j$ and $[\lieg_i \lieg_i ] = \lieg_i$.
+In particular, every ideal of $\lieg$ is a sum of sum of certain $\lieg_i$'s, and $\lieg = [\lieg \lieg]$.
+:::
+
+:::{.remark}
+These are like "orthogonal" ideals.
+So we can study semisimple Lie algebras by just studying simple Lie algebras.
+:::
+
+:::{.observation}
+Reminder: if $M\in \liegmod(\Triv)$, then any derivation $D \in \Der(\lieg, M)$ satisfies $D([xy]) = 0$ for all $x,y\in \lieg$.
+This follows from expanding the Leibniz rule and using trivial modules act by zero.
+There is an isomorphism
+\[
+\Der(\lieg, M) \cong \Hom_\kmod(\lieg^\ab, M) && \lieg^\ab \da \lieg / [\lieg \lieg]
+.\]
+Recall that $H^1$ is related to derivations.
+:::
+
+:::{.corollary title="?"}
+Let $\lieg \in \liegmod(\ss)$ with $\dim_k \lieg < \infty$, then
+\[
+H^1(\lieg;k ) = 0 = H_1(\lieg; k) 
+.\]
+:::
+
+:::{.proof title="?"}
+Since $[\lieg \lieg] = \lieg$, we have $\lieg^\ab = 0$.
+By Weibel theorem 7.4.1, one can check that $H_1(\lieg; k) \cong \lieg^\ab = 0$.
+We also had $\Der(\lieg, k) \surjects H^1(\lieg; k)$ (it was outer derivations), the left-hand side is isomorphic to $\Hom_k(\lieg^\ab; k)$.
+:::
+
+:::{.theorem title="?"}
+Let $\lieg \in \liegalg(\ss)$ with $\dim_k \lieg < \infty$ and $\ch(k) = 0$.
+Then if $k\neq M$ is a simple $\lieg\dash$module (where simple means no proper nontrivial $\lieg\dash$invariant submodules), then
+\[
+H^i(\lieg; M) = 0 = H_i(\lieg; M)
+.\]
+:::
+
+:::{.proof title="?"}
+Omitted.
+This uses the Casimir operator for $M$, which is in the center $Z(\Ug)$.
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
