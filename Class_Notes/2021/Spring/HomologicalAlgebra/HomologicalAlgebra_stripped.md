@@ -7789,7 +7789,7 @@ There shouldn't be any solvable ideals in this quotient, otherwise you could lif
 :::
 
 ::: {.definition title="?"}
-Recall that for \( x\in{\mathfrak{g}} \) we can define \( \operatorname{ad}_x \in \endo_k({\mathfrak{g}}) \) where \( \operatorname{ad}_x(y) \coloneqq[x, y] \). It has a well-defined (and basis-independent) trace, so define the **Killing form**[^14]:
+Recall that for \( x\in{\mathfrak{g}} \) we can define \( \operatorname{ad}_x \in \mathop{\mathrm{End}}_k({\mathfrak{g}}) \) where \( \operatorname{ad}_x(y) \coloneqq[x, y] \). It has a well-defined (and basis-independent) trace, so define the **Killing form**[^14]:
 
 \[
 \kappa(x, y) \coloneqq\operatorname{Tr}(\operatorname{ad}_x \circ \operatorname{ad}_y) \in k && x,y\in{\mathfrak{g}}
@@ -7839,7 +7839,7 @@ Since \( [{\mathfrak{g}}{\mathfrak{g}}] = {\mathfrak{g}} \), we have \( {\mathfr
 :::
 
 ::: {.theorem title="?"}
-Let \( {\mathfrak{g}}\in \liegalg(\ss) \) with \( \dim_k {\mathfrak{g}}< \infty \) and \( \operatorname{ch}(k) = 0 \). Then if \( k\neq M \) is a simple \( {\mathfrak{g}}{\hbox{-}} \)module (where simple means no proper nontrivial \( {\mathfrak{g}}{\hbox{-}} \)invariant submodules), then
+Let \( {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}(\ss) \) with \( \dim_k {\mathfrak{g}}< \infty \) and \( \operatorname{ch}(k) = 0 \). Then if \( k\neq M \) is a simple \( {\mathfrak{g}}{\hbox{-}} \)module (where simple means no proper nontrivial \( {\mathfrak{g}}{\hbox{-}} \)invariant submodules), then
 \[
 H^i({\mathfrak{g}}; M) = 0 = H_i({\mathfrak{g}}; M)
 .\]
