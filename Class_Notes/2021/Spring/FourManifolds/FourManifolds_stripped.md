@@ -4985,7 +4985,7 @@ Let \( S \in {\mathsf{Mfd}}_{\mathbb{C}}^2 \) be a complex surface and \( p\in S
 \phi: U^* &\to U \times{\mathbb{CP}}^2 \\
 (x, y) & \mapsto ( (x, y), [x: y] )
 .\]
-We'll define the **blowup at \( p \)** to be \( \operatorname{Bl}_p(U) \operatorname{cl}(\phi(U^*)) \) to be the closure of the image of \( U^* \).
+We'll define the **blowup at \( p \)** to be \( \operatorname{Bl}_p(U) { \operatorname{cl}} (\phi(U^*)) \) to be the closure of the image of \( U^* \).
 :::
 
 ::: {.observation}
@@ -5005,7 +5005,7 @@ Here \( q \) maps to the pair \( (q, s) \) where \( s \) is the slope of a line 
 We claim that \( \pi_U^{-1}(0, 0) \subset \operatorname{Bl}_p(U) = \left\{{ p }\right\} \times{\mathbb{CP}}^1 \), and for a fixed \( 9x_0, y_0) \in U^* \), considering \( \phi(x_0 t, y_0 t) \) as \( t\to 0 \), we can write
 \[
 ( (x_0 t, y_0 t), [x_0: y_0] ) \in U \times{\mathbb{CP}}^1 \\
-\overset{t\to 0} ( (0, 0) [x_0: y_0] ) \subset \operatorname{cl}(\phi(U^*))
+\overset{t\to 0} ( (0, 0) [x_0: y_0] ) \subset { \operatorname{cl}} (\phi(U^*))
 .\]
 So approaching \( (0, 0) \) along any slope \( s \) just yields the point \( (0, s) \) in the blowup.
 :::
@@ -5049,7 +5049,7 @@ Here we'll consider \( \operatorname{Bl}_{(0, 0)} {\mathbb{C}}^2 \).
 ::: {.definition title="Strict Transform"}
 Letting \( C \subset S \) be a curve, define the **strict transform**
 \[
-\widehat{C} \coloneqq\operatorname{cl}( \pi^{-1}(C \setminus\left\{{p}\right\} ) )
+\widehat{C} \coloneqq{ \operatorname{cl}} ( \pi^{-1}(C \setminus\left\{{p}\right\} ) )
 .\]
 :::
 
@@ -5131,7 +5131,7 @@ See the Tate curve!
 ::: {.remark}
 Last time: we defined the blowup \( \operatorname{Bl}_0{\mathbb{C}}^2 \) as the closure of
 \[ 
-\operatorname{Bl}_0 {\mathbb{C}}^2 \coloneqq\operatorname{cl}
+\operatorname{Bl}_0 {\mathbb{C}}^2 \coloneqq{ \operatorname{cl}} 
 \left\{{ (x, y), [x:y] {~\mathrel{\Big|}~}(x, y) \neq 0 }\right\} \subseteq {\mathbb{C}}^2 \times{\mathbb{CP}}^2 
 .\]
 This had the effect of adding in all limits of slopes as points approach \( (0, 0) \in {\mathbb{C}}^2 \). We defined this using local holomorphic coordinate charts to \( {\mathbb{C}}^2 \). Why is this a complex manifold? We can cover it with charts: given a point \( (x, \mu) \) where \( \mu = {y \over x}\in {\mathbb{P}}^1 \) is a slope, we can form a first chart by sending
@@ -5146,7 +5146,7 @@ Note that restricting to \( (x, y) = (0, 0) \), these give the standard \( {\mat
 :::
 
 ::: {.remark}
-Recall that for a complex curve \( C \in {\mathsf{Mfd}}_{\mathbb{C}}^2 \), we have the blowup morphism \( \pi: \operatorname{Bl}_pS\to S \) and we defined the **strict transform** \( \widehat{C} \coloneqq\operatorname{cl}\pi^{-1}(C\setminus\left\{{{\operatorname{pt}}}\right\}) \).
+Recall that for a complex curve \( C \in {\mathsf{Mfd}}_{\mathbb{C}}^2 \), we have the blowup morphism \( \pi: \operatorname{Bl}_pS\to S \) and we defined the **strict transform** \( \widehat{C} \coloneqq{ \operatorname{cl}} \pi^{-1}(C\setminus\left\{{{\operatorname{pt}}}\right\}) \).
 
 ```{=tex}
 \begin{tikzpicture}
@@ -5166,7 +5166,7 @@ The **pullback** of \( C \), denoted \( \pi^* C \), is constructed by writing \(
 ::: {.example title="?"}
 Take \( C \coloneqq\left\{{ y=x }\right\} \subset {\mathbb{C}}^2 \) and consider \( \operatorname{Bl}_0 {\mathbb{C}}^2 \). Then
 \[
-\widehat{C}  \coloneqq\operatorname{cl}\left\{{ \qty{ (x, x), [x:x]} {~\mathrel{\Big|}~}x\neq 0  }\right\} = \operatorname{cl}\left\{{ \qty{ (x, x), [1:1] } {~\mathrel{\Big|}~}x\neq 0 }\right\} \subset \operatorname{Bl}_0 {\mathbb{C}}^2
+\widehat{C}  \coloneqq{ \operatorname{cl}} \left\{{ \qty{ (x, x), [x:x]} {~\mathrel{\Big|}~}x\neq 0  }\right\} = { \operatorname{cl}} \left\{{ \qty{ (x, x), [1:1] } {~\mathrel{\Big|}~}x\neq 0 }\right\} \subset \operatorname{Bl}_0 {\mathbb{C}}^2
 .\]
 By projecting onto the first component, \( \pi:\widehat{C} \xrightarrow{\sim} C \) is an isomorphism. We can compute the pullback: we first have \( \pi^* C = \pi^* V(y-x) = V( \pi^*(y-x)) \), so consider \( \pi^*(y-x) \) in the coordinate chart \( (x, \mu) \). In this chart, \( y=x\mu \), and so \( \pi^*(y-x) = x\mu - x = x(\mu - 1) \), and so
 \[
@@ -5536,14 +5536,14 @@ Goal: show that \( 3[\ell] \) can't be realized by a sphere, we'll need Rohklin'
 ::: {.definition title="Clifford Algebra"}
 Define the **Clifford Algebra** of \( V \) as
 \[
-\operatorname{Cl}(V) \coloneqq T(V) / \left\langle{ v\otimes v + {\left\lVert {v} \right\rVert}^2 1 }\right\rangle 
+{ \operatorname{Cl}} (V) \coloneqq T(V) / \left\langle{ v\otimes v + {\left\lVert {v} \right\rVert}^2 1 }\right\rangle 
 .\]
 :::
 
 ::: {.example title="The reals"}
 Take \( {\mathbb{R}} \) with the standard inner product, so \( {\left\langle {x},~{y} \right\rangle} \coloneqq xy \). Then \( T({\mathbb{R}}) = \bigoplus _{n\geq 0} {\mathbb{R}} \). Letting \( \left\{{ e }\right\} \) be a basis of \( {\mathbb{R}} \), we have \( T({\mathbb{R}}) = {\mathbb{R}}\oplus {\mathbb{R}}e \oplus {\mathbb{R}}(e^2) \oplus \cdots \cong {\mathbb{R}}[x] \) by sending \( e^n\mapsto x^n \). Since \( {\left\lVert {e} \right\rVert} = 1 \), and we mod out by \( e^2 + {\left\lVert {e} \right\rVert}^2 1 \) where \( e^2 = -1 \) and thus
 \[
-\operatorname{Cl}({\mathbb{R}}, {\left\langle {{-}},~{{-}} \right\rangle}_\text{std}) \cong {\mathbb{R}}[x] / \left\langle{ x^2 = -1 }\right\rangle\cong {\mathbb{C}}
+{ \operatorname{Cl}} ({\mathbb{R}}, {\left\langle {{-}},~{{-}} \right\rangle}_\text{std}) \cong {\mathbb{R}}[x] / \left\langle{ x^2 = -1 }\right\rangle\cong {\mathbb{C}}
 .\]
 The denominator is referred to as the **Clifford relation**.
 :::
@@ -5568,7 +5568,7 @@ For \( {\mathbb{R}}^2 \), we can explicitly check
 
 Here (1), (2), and (4) generate all of the relations, so
 \[
-\operatorname{Cl}({\mathbb{R}}^2) - {\mathbb{R}}\left\langle{ e_1, e_2 }\right\rangle / \left\langle{ e_1^2 = -1, e_2^2 =-1, e_1e_2 = -e_2 e_1 }\right\rangle \cong HH
+{ \operatorname{Cl}} ({\mathbb{R}}^2) - {\mathbb{R}}\left\langle{ e_1, e_2 }\right\rangle / \left\langle{ e_1^2 = -1, e_2^2 =-1, e_1e_2 = -e_2 e_1 }\right\rangle \cong HH
 .\]
 We can form this map by
 \[
@@ -5584,7 +5584,7 @@ e_2(e_1e_2) = -e_2 (e_2 e_1) = -e_2^2 e_1 = -(-1)e_1 = e_1
 :::
 
 ::: {.exercise title="?"}
-Check that \( \dim_{\mathbb{R}}\operatorname{Cl}(V) = 2^{\dim V} < \infty \).
+Check that \( \dim_{\mathbb{R}}{ \operatorname{Cl}} (V) = 2^{\dim V} < \infty \).
 :::
 
 # Friday, April 23
@@ -5592,32 +5592,32 @@ Check that \( \dim_{\mathbb{R}}\operatorname{Cl}(V) = 2^{\dim V} < \infty \).
 ::: {.definition title="?"}
 Given \( (V, \cdot) \) an inner product space, we defined
 \[
-\operatorname{Cl}(V) \coloneqq{ \bigoplus _{n\geq 0} V^{\otimes n} \over \left\langle{ v\otimes w + w\otimes v = 2v\cdot w }\right\rangle }
+{ \operatorname{Cl}} (V) \coloneqq{ \bigoplus _{n\geq 0} V^{\otimes n} \over \left\langle{ v\otimes w + w\otimes v = 2v\cdot w }\right\rangle }
 .\]
 :::
 
 ::: {.example title="?"}
 We saw that\
 \[
-\operatorname{Cl}({\mathbb{R}}, \cdot) 
+{ \operatorname{Cl}} ({\mathbb{R}}, \cdot) 
 &\cong {\mathbb{R}}[e] / e^2 
 =-1 \cong {\mathbb{C}}\\
-\operatorname{Cl}({\mathbb{R}}^2, \cdot) 
+{ \operatorname{Cl}} ({\mathbb{R}}^2, \cdot) 
 &= {\mathbb{R}}\left\langle{ e_1, e_2 }\right\rangle / \left\langle{ e_1^2 = e_2^2 = -1, e_1e_2 = -e_2 e_1 -}\right\rangle \cong {\mathbb{H}}
 \]
-where \( e_1\mapsto i, e_2\mapsto j, e_3 = e_1 e_2 \mapsto k \). Can we describe \( \operatorname{Cl}({\mathbb{R}}^n, \cdot) \) in general? Choose an orthonormal basis \( \left\{{ e_i }\right\} \), then
+where \( e_1\mapsto i, e_2\mapsto j, e_3 = e_1 e_2 \mapsto k \). Can we describe \( { \operatorname{Cl}} ({\mathbb{R}}^n, \cdot) \) in general? Choose an orthonormal basis \( \left\{{ e_i }\right\} \), then
 \[
-\operatorname{Cl}({\mathbb{R}}^n, \cdot) = { {\mathbb{R}}\left\langle{ e_1, \cdots, e_n }\right\rangle \over \left\langle{ e_i^2 = -1, e_i e_j = -e_j e_i {~\mathrel{\Big|}~}i\neq j }\right\rangle }
+{ \operatorname{Cl}} ({\mathbb{R}}^n, \cdot) = { {\mathbb{R}}\left\langle{ e_1, \cdots, e_n }\right\rangle \over \left\langle{ e_i^2 = -1, e_i e_j = -e_j e_i {~\mathrel{\Big|}~}i\neq j }\right\rangle }
 .\]
 We saw that replacing \( 2 \) with \( \epsilon \) in the defining relation recovers \( \bigwedge \).
 :::
 
 ::: {.definition title="Degree Filtration"}
-Define the **degree filtration** on \( \operatorname{Cl}(V, \cdot) \) as the filtration induced by the degree filtration on \( T(V) \coloneqq\bigoplus _{n\geq 0} V^{\otimes n} \).
+Define the **degree filtration** on \( { \operatorname{Cl}} (V, \cdot) \) as the filtration induced by the degree filtration on \( T(V) \coloneqq\bigoplus _{n\geq 0} V^{\otimes n} \).
 :::
 
 ::: {.example title="?"}
-Consider \( \operatorname{Cl}({\mathbb{R}}^2, \cdot) \). Then
+Consider \( { \operatorname{Cl}} ({\mathbb{R}}^2, \cdot) \). Then
 
 -   Degree 0: \( {\mathbb{R}} \).
 -   Degree 1: \( {\mathbb{R}}\oplus {\mathbb{R}}e_1 \oplus {\mathbb{R}}e_2 \)
@@ -5637,13 +5637,13 @@ An algebra equipped with a grading is a **graded algebra**, and similarly an alg
 
 -   \( k[x_1, \cdots, x_n] \) is graded (by monomials of uniform degree) and filtered (by polynomials of a bounded degree)
 -   \( T(V) \) is graded and filtered, since multiplying a pure \( p \) tensor with a pure \( q \) tensor yields a pure \( p+q \) tensor
--   \( \operatorname{Cl}(V) \) is a quotient of \( T(V) \), but one can't simply define \( \operatorname{Cl}(V, \cdot)^i = \operatorname{im}T(V)^i \) since the relations have mixed degree: for example \( e_1^2 = -1 \) So \( \operatorname{Cl}(V) \) isn't graded, but is still filtered: take the filtration \( F \) on \( T(V) \) defined by \( F^i \coloneqq\bigoplus _{j\leq i} V^{\otimes j} \) and descend it through the quotient map. The relations can only decrease degree, so this is well defined.
+-   \( { \operatorname{Cl}} (V) \) is a quotient of \( T(V) \), but one can't simply define \( { \operatorname{Cl}} (V, \cdot)^i = \operatorname{im}T(V)^i \) since the relations have mixed degree: for example \( e_1^2 = -1 \) So \( { \operatorname{Cl}} (V) \) isn't graded, but is still filtered: take the filtration \( F \) on \( T(V) \) defined by \( F^i \coloneqq\bigoplus _{j\leq i} V^{\otimes j} \) and descend it through the quotient map. The relations can only decrease degree, so this is well defined.
 :::
 
 ::: {.definition title="Filtration on the Clifford Algebra"}
-Define a filtration \( F^{-} \) on \( \operatorname{Cl}(V) \) by the following:
+Define a filtration \( F^{-} \) on \( { \operatorname{Cl}} (V) \) by the following:
 \[
-F^i \operatorname{Cl}(V) \coloneqq{\operatorname{span}}\left\{{ { {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} }\right\} 
+F^i { \operatorname{Cl}} (V) \coloneqq{\operatorname{span}}\left\{{ { {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} }\right\} 
 .\]
 :::
 
@@ -5673,21 +5673,21 @@ If one has relations of mixed degree, the associated graded also has the top deg
 ::: {.remark}
 In our case, the Clifford relation relates degree \( k \) pieces to degree \( k-2 \) pieces, so we obtain
 \[
-{\mathsf{gr}\,}_{F^{-}} \operatorname{Cl}(V) \cong T(V) / \left\langle{ v\otimes w + w\otimes v = 0 }\right\rangle \coloneqq\bigwedge^* V
+{\mathsf{gr}\,}_{F^{-}} { \operatorname{Cl}} (V) \cong T(V) / \left\langle{ v\otimes w + w\otimes v = 0 }\right\rangle \coloneqq\bigwedge^* V
 .\]
 There is an isomorphism of \( k{\hbox{-}} \)vector spaces
 \[
-\operatorname{Cl}(V) & \xrightarrow{\sim} {\mathsf{gr}\,}\operatorname{Cl}(V) \\
+{ \operatorname{Cl}} (V) & \xrightarrow{\sim} {\mathsf{gr}\,}{ \operatorname{Cl}} (V) \\
 x\in F^i &\mapsto \mkern 1.5mu\overline{\mkern-1.5mux\mkern-1.5mu}\mkern 1.5mu \in F^i / F^{i-1}
 .\]
-This is because \( F^0 \subseteq \cdots \subseteq \cdots \) with \( \cup_i F^i = \operatorname{Cl}(V) \). We can conclude \( \dim_{\mathbb{R}}\operatorname{Cl}(V) = \dim_{\mathbb{R}}\bigwedge^* V = 2^{\dim_k V} \) and use this to construct a basis for \( \operatorname{Cl}(V) \). The relevant map is
+This is because \( F^0 \subseteq \cdots \subseteq \cdots \) with \( \cup_i F^i = { \operatorname{Cl}} (V) \). We can conclude \( \dim_{\mathbb{R}}{ \operatorname{Cl}} (V) = \dim_{\mathbb{R}}\bigwedge^* V = 2^{\dim_k V} \) and use this to construct a basis for \( { \operatorname{Cl}} (V) \). The relevant map is
 \[
 { {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} &\mapsto e_{j_1} \wedge \cdots \wedge e_{j_i}
 .\]
 :::
 
 ::: {.corollary title="of the fact"}
-The following set forms an \( {\mathbb{R}}{\hbox{-}} \)basis for \( \operatorname{Cl}({\mathbb{R}}^n, \cdot) \):
+The following set forms an \( {\mathbb{R}}{\hbox{-}} \)basis for \( { \operatorname{Cl}} ({\mathbb{R}}^n, \cdot) \):
 \[
 \left\{{ { {e_j}_1, {e_j}_2, \cdots, {e_j}_{i}} {~\mathrel{\Big|}~}j_1 < j_2 < \cdots < j_i,\, i\leq n }\right\} 
 .\]
@@ -5696,7 +5696,7 @@ The following set forms an \( {\mathbb{R}}{\hbox{-}} \)basis for \( \operatornam
 ::: {.example title="?"}
 Consider
 \[
-\operatorname{Cl}({\mathbb{R}}^3, \cdot) \cong {\operatorname{span}}_{\mathbb{R}}\left\{{ 1, e_1, e_2, e_3, e_1e_2, e_1 e_3, e_1 e_2 e_3 }\right\} 
+{ \operatorname{Cl}} ({\mathbb{R}}^3, \cdot) \cong {\operatorname{span}}_{\mathbb{R}}\left\{{ 1, e_1, e_2, e_3, e_1e_2, e_1 e_3, e_1 e_2 e_3 }\right\} 
 .\]
 Then
 \[
@@ -5709,49 +5709,49 @@ e_1 e_2 \cdot e_1 e_3
 :::
 
 ::: {.exercise title="?"}
-Show that \( \operatorname{Cl}({\mathbb{R}}^3) \cong {\mathbb{H}}\oplus {\mathbb{H}} \).
+Show that \( { \operatorname{Cl}} ({\mathbb{R}}^3) \cong {\mathbb{H}}\oplus {\mathbb{H}} \).
 :::
 
 ::: {.definition title="?"}
-\( \operatorname{Cl}(V) \) has a \( {\mathbb{Z}}/2 \) ("super") grading, so
+\( { \operatorname{Cl}} (V) \) has a \( {\mathbb{Z}}/2 \) ("super") grading, so
 \[
-\operatorname{Cl}(V) \circ \operatorname{Cl}_0(V) \oplus \operatorname{Cl}_1(V) && \operatorname{Cl}_i(V) \cdot \operatorname{Cl}_j(V) \subset \operatorname{Cl}_{i+j\pmod 2}(V)
+{ \operatorname{Cl}} (V) \circ { \operatorname{Cl}} _0(V) \oplus { \operatorname{Cl}} _1(V) && { \operatorname{Cl}} _i(V) \cdot { \operatorname{Cl}} _j(V) \subset { \operatorname{Cl}} _{i+j\pmod 2}(V)
 .\]
 The **even** subalgebra is given by
 \[
-\operatorname{Cl}_0(V) = {\operatorname{span}}_k \left\{{ { {e_i}_1, {e_i}_2, \cdots, {e_i}_{2k}} {~\mathrel{\Big|}~}2k\leq n }\right\} 
+{ \operatorname{Cl}} _0(V) = {\operatorname{span}}_k \left\{{ { {e_i}_1, {e_i}_2, \cdots, {e_i}_{2k}} {~\mathrel{\Big|}~}2k\leq n }\right\} 
 ,\]
 where we take an even number of basis elements, which makes sense because the Clifford relation \( vw + 2v = -2v\cdot w \) preserves degree mod 2. This is still an algebra. The **odd** sub-vector space (not an algebra) is given by
 \[
-\operatorname{Cl}_1(V) = {\operatorname{span}}_k \left\{{ { {e_i}_1, {e_i}_2, \cdots, {e_i}_{2k+1}} {~\mathrel{\Big|}~}2k+1\leq n }\right\} 
+{ \operatorname{Cl}} _1(V) = {\operatorname{span}}_k \left\{{ { {e_i}_1, {e_i}_2, \cdots, {e_i}_{2k+1}} {~\mathrel{\Big|}~}2k+1\leq n }\right\} 
 .\]
 :::
 
 ::: {.example title="?"}
 \[
-\operatorname{Cl}({\mathbb{R}}^3) = {\operatorname{span}}_{\mathbb{R}}\left\{{ 1, e_1 e_2, e_1 e_3, e_2 e_3 }\right\} 
+{ \operatorname{Cl}} ({\mathbb{R}}^3) = {\operatorname{span}}_{\mathbb{R}}\left\{{ 1, e_1 e_2, e_1 e_3, e_2 e_3 }\right\} 
 ,\]
-and we saw \( e_1 e_2 = e_1 e_3 = e_2 e_3 \). This product has degree 4, and when we applied the relation \( e_1^2=1 \) we dropped the degree by 2. For the odd part, \( e_3 \in Cl_1({\mathbb{R}}^3) \) and \( e_1 e_2 \in \operatorname{Cl}_0({\mathbb{R}}^3) \), and we have
+and we saw \( e_1 e_2 = e_1 e_3 = e_2 e_3 \). This product has degree 4, and when we applied the relation \( e_1^2=1 \) we dropped the degree by 2. For the odd part, \( e_3 \in Cl_1({\mathbb{R}}^3) \) and \( e_1 e_2 \in { \operatorname{Cl}} _0({\mathbb{R}}^3) \), and we have
 \[
-e_3 \cdot (e_1 e_2) = -e_1 e_3 e_2 = e_1 e_2 e_3 \in \operatorname{Cl}_1({\mathbb{R}}^3)
+e_3 \cdot (e_1 e_2) = -e_1 e_3 e_2 = e_1 e_2 e_3 \in { \operatorname{Cl}} _1({\mathbb{R}}^3)
 .\]
 :::
 
 ::: {.proposition title="?"}
 \[
-\operatorname{Cl}(V) \cong \operatorname{Cl}_0(V \oplus {\mathbb{R}})
+{ \operatorname{Cl}} (V) \cong { \operatorname{Cl}} _0(V \oplus {\mathbb{R}})
 .\]
 :::
 
 ::: {.proof title="?"}
-Let \( e\in {\mathbb{R}} \) be a unit vector. Given \( x\in \operatorname{Cl}(V) \), decompose \( x = x_0 + x_1 \in \operatorname{Cl}_0(V) \oplus \operatorname{Cl}_1(V) \). Define an isomorphism
+Let \( e\in {\mathbb{R}} \) be a unit vector. Given \( x\in { \operatorname{Cl}} (V) \), decompose \( x = x_0 + x_1 \in { \operatorname{Cl}} _0(V) \oplus { \operatorname{Cl}} _1(V) \). Define an isomorphism
 \[
-\phi: \operatorname{Cl}(V) &\to \operatorname{Cl}_0(V \oplus {\mathbb{R}}) \\
+\phi: { \operatorname{Cl}} (V) &\to { \operatorname{Cl}} _0(V \oplus {\mathbb{R}}) \\
 x &\mapsto x_0 + x_1 e
 ,\]
 which is well-defined since \( x_0 \) was odd degree, and both \( x_1, e \) were odd degree and thus \( x_1 e \) is even. One checks that this preserves multiplication:
 \[
-x\cdot y = (x_0 + x_1) \cdot (y_0 + y_1) = (x_0 y_0 + x_1 y_1) + (x_0 y_1 + x_1 y_0) \in \operatorname{Cl}_0(V) \oplus \operatorname{Cl}_1(V)
+x\cdot y = (x_0 + x_1) \cdot (y_0 + y_1) = (x_0 y_0 + x_1 y_1) + (x_0 y_1 + x_1 y_0) \in { \operatorname{Cl}} _0(V) \oplus { \operatorname{Cl}} _1(V)
 ,\]
 and so
 \[

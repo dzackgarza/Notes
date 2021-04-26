@@ -69,7 +69,9 @@
 ```
 ## Intro and Motivation
 
+::: {.remark}
 We'll assume everything is smooth and oriented.
+:::
 
 ::: {.proposition title="Osvath-Szabo (2000)"}
 To closed 3-manifolds \( M \) we can assign a graded abelian group \( \widehat{HF}(M) \), which can be computed combinatorially [^1] . There are several variants:
@@ -87,9 +89,11 @@ To closed 3-manifolds \( M \) we can assign a graded abelian group \( \widehat{H
 Note that \( {\mathbb{Z}}_2 \) can be replaced with \( {\mathbb{Z}} \), but it's technical and we won't discuss it here. For the first half of the course, we'll just discuss \( \widehat{HF} \), and we'll discuss the latter 3 in the second half.
 :::
 
-### Geometric Information
+## Geometric Information
 
+::: {.remark}
 These invariants can be used to compute the **Thurston seminorm** of a 3-manifold:
+:::
 
 ::: {.definition title="Thurston Seminorm"}
 A homology class \( \alpha\in H_2(M) \) can be represented as \( \alpha\in [S] \) for \( S \) a closed surface whose fundamental class represents \( \alpha \) where \( S = \bigcup_{i=1}^n S_i \) can be a union of closed embedded surfaces \( S_i \). Then we first compute
@@ -196,7 +200,9 @@ This gives obstructions for two of the following important properties of contact
 -   If \( \xi \) is Stein fillable, then \( c(\xi) \neq 0 \).
 :::
 
+::: {.remark}
 We'll also discuss similar invariants for knots that were created after these invariants for manifolds.
+:::
 
 ::: {.definition title="Knots"}
 Recall that a **knot** is an embedding \( S^1 \hookrightarrow M \).
@@ -213,7 +219,7 @@ Given a knot \( K \subseteq M \) a 3-manifold (e.g. \( M = S^3 \)), there is ex
 This similarly works for other variants: there is a filtration on \( CF^-(M) \) which yields \( HFK^-(M, K) \), a bigraded \( {\mathbb{Z}}_2[u]{\hbox{-}} \)module.
 :::
 
-Some properties of Knot Floer Homology:
+### Some properties of Knot Floer Homology
 
 ::: {.fact}
 \( \widehat{HFK}(K) \) categorifies the Alexander polynomial \( \Delta_K(t) \) of \( K \), i.e. taking the graded Euler characteristic yields
@@ -395,9 +401,10 @@ This smoothly embedded surface in the middle can be used to study other smoothly
 ```{=tex}
 \todo[inline]{Copy in references recommended by Akram!}
 ```
+## Constructing Heegard Floer
+
 ::: {.remark}
-For Morse Theory, there are some good exercises in Audin's book -- essentially anything other than the existence questions. The first 8 look good on p. 18.
-:::
+For Morse Theory, there are some good exercises in Audin's book -- essentially anything other than the existence questions. The first 8 look good on p. 18.\
 
 Today:
 
@@ -405,9 +412,8 @@ Today:
 
 2.  A discussion of Morse Theory.
 
-## Constructing Heegard Floer
-
 First goal: discuss how the name "Heegard" fits in.
+:::
 
 ::: {.definition title="Genus $g$ handlebody"}
 A **genus \( g \) handlebody** \( H_g \) is a compact oriented 3-manifold with boundary obtained from \( B^3 \) by attaching \( g \) solid handles (a neighborhood of an arc).
@@ -437,7 +443,9 @@ A **Heegard diagram** is the data \( (\Sigma_g, \alpha = \left\{{ \alpha_1, \cdo
 
 ## Lagrangian Floer Homology
 
+::: {.remark}
 This is essentially an infinite-dimensional version of Morse homology.
+:::
 
 ::: {.definition title="Symplectic Manifold"}
 A **symplectic manifold** is a pair \( (M^{2n}, \omega) \) such that
@@ -450,6 +458,7 @@ A **symplectic manifold** is a pair \( (M^{2n}, \omega) \) such that
 A **Lagrangian submanifold** is an \( L^n \subseteq M \) such that \( { \left.{{\omega}} \right|_{{L}} } = 0 \).
 :::
 
+::: {.remark}
 If \( L_1 \cap L_2 \) is finitely many points, case we can define a chain complex
 \[
 CF(M^{2n}, L_1, L_2) \coloneqq{\mathbb{Z}}_2[L_1 \cap L_2]
@@ -469,12 +478,15 @@ So we can the number of *holomorphic* discs from \( x \) to \( y \). We'll get \
 where \( \widehat{\mathcal{M}} \) will (in good cases) be a 1-dimensional manifold with finitely many points. Note that it's not necessarily true that \( CF \) has a grading!
 
 Given a 3-manifold \( M^3 \), we'll associate a Heegard diagram \( \Sigma, \alpha, \beta \). Note the \( g{\hbox{-}} \)element symmetric group acts on \( \prod_{i=1}^g \Sigma \) by permuting the \( g \) coordinates, so we can define \( \operatorname{Sym}^g(\Sigma) \coloneqq\prod_{i=1}^g \Sigma / S_g \).
+:::
 
 ::: {.theorem title="?"}
 The space \( \operatorname{Sym}^g(\Sigma) \) is a smooth complex manifold of \( {\mathbb{R}}{\hbox{-}} \)dimension \( 2g \).
 :::
 
+::: {.remark}
 Write \( {\mathbb{T}}_{\alpha} \coloneqq\prod_{i=1}^g \alpha_i \subseteq \prod_{i=1}^g \Sigma \) for a \( g{\hbox{-}} \)dimensional torus; this admits a quotient map to \( \operatorname{Sym}^g(\Sigma) \). We can repeat this to obtain \( {\mathbb{T}}_{\beta} \). Then \( HF^{-}(M) \) will be a variation of Lagrangian Floer Homology for \( (\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{\alpha}, {\mathbb{T}}_{\beta} ) \).
+:::
 
 ::: {.example title="?"}
 Consider constructing a genus \( g=1 \) Heegard diagram. Recall that \( S^3 \) can be constructed by gluing two solid torii.
@@ -502,28 +514,22 @@ Taking a new solid torus \( S \coloneqq{\mathbb{D}}^2 \times S^1 \) and a diffeo
 
 ::: {.remark}
 Note that the diffeomorphism is entirely determined by the image of the curve \( \alpha \) . The Knot Floer chain complex of \( K \) will allow us to compute any flavor \( HF^{-}M _{\varphi} (K) \) of Floer homology. Why is this important: any closed 3-manifold is surgery on a link in \( S^3 \). However there are many more computational tools available here and not in the other theories: combinatorial approaches to compute, exact sequences, bordered Floer homology.
-:::
+
+\
 
 Next time: we'll talk about "integer surgeries".
+:::
 
 # Lecture 3: Morse Theory (Thursday, January 19)
 
 ## Intro to Morse Theory
 
+::: {.remark}
 Let \( M^n \) be a smooth closed manifold, then the goal is to study the topology of \( M \) by studying smooth functions \( f \in C^ \infty (M, {\mathbb{R}}) \). We'll need \( f \) to be *generic* in a sense we'll discuss later.
 
-```{=html}
-<!--:::{.definition title="$p/q$ Surgery"}-->
-```
-```{=html}
-<!--?-->
-```
-```{=html}
-<!--:::-->
-```
-```{=html}
-<!--![image_2021-01-19-00-41-55](figures/image_2021-01-19-00-41-55.png)-->
-```
+![image_2021-01-19-00-41-55](figures/image_2021-01-19-00-41-55.png)
+:::
+
 ::: {.definition title="Critical Point"}
 A point \( p\in M \) is called a **critical point** if and only if \( (df)_p = 0 \).
 :::
@@ -790,11 +796,13 @@ The set of Morse functions on \( M \) is open and dense in \( C^ \infty (M; {\ma
 
 ## Attaching Handles
 
+::: {.remark}
 Goal: we want to use Morse functions (smooth, nondegenerate critical points) to study the topology of \( M \). Recall that the torus had 4 critical points,
 
 ![image_2021-01-26-11-14-32](figures/image_2021-01-26-11-14-32.png)
 
 We defined the index as the number of negative eigenvalues of the Hessian matrix. Here the highest index will be the dimension of the manifold, and by the Morse lemma the two intermediate critical points will be index 1.
+:::
 
 ::: {.remark}
 We want to use the Morse function to decompose the manifold, so we consider \( M_a \coloneqq f ^{-1} ((- \infty , a ]) \). If \( f ^{-1} [a, b] \) does not contain a critical point, then \( M_a \cong M_b \) and \( f ^{-1} (a) \cong f ^{-1} (b) \). So taking \( M_{1/2} \) and \( M_{3/4} \) here both yield discs:
@@ -990,13 +998,17 @@ where we take the count mod 2.
 \( {{\partial}}^2 = 0 \), and thus \( ( C(f, g), {{\partial}}) \) is a chain complex.
 :::
 
+::: {.remark}
 Next time we will work on proving this.
+:::
 
 # Morse Homology and Lagrangian Floer Homology (Thursday, January 28)
 
 ## Morse Homology
 
+::: {.remark}
 Last time: defined the Morse complex. Assumed \( (f, g) \) was a Morse-Smale pair, where \( f \) is a Morse function and \( g \) is a Riemannian metric, and this guarantees that if \( p, q\in \operatorname{crit}(f) \) with \( \operatorname{ind}(p) - \operatorname{ind}(q) = 1 \), then (among other things) there are finitely many gradient trajectories \( p\leadsto q \). We denoted this \( \mathcal{M}(p, q) \). The chain complex was defined by \( C_i(f, g) \coloneqq\bigoplus_{\operatorname{ind}(p) = i} {\mathbb{Z}}_2 \left\langle{ p }\right\rangle \) with differential \( {{\partial}}_i: C_i \to C_{i-1} \) was defined by sending an index \( i \) critical point \( p \) to \( \sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) q \pmod 2 \).
+:::
 
 ::: {.theorem title="The Morse Complex is a Chain Complex"}
 \( {{\partial}}_{i} \circ {{\partial}}_{i+1} = 0 \).
@@ -1090,6 +1102,7 @@ By definition, \( \# \operatorname{crit}_i(f) = \operatorname{rank}C_i(f, g) = \
 
 ## Lagrangian Floer Homology
 
+::: {.remark}
 Suppose \( L_0^n, L_1^n \subset M^{2n} \) are compact with \( L_0 \pitchfork L_1 \), so the intersection is finitely many points.
 
 ![image_2021-01-28-12-16-27](figures/image_2021-01-28-12-16-27.png)
@@ -1100,6 +1113,7 @@ We can do Morse theory on the space of paths between them:
 .\]
 
 We'll find analogs of Morse functions on \( P(L_0, L_1) \) such that the critical points are constant paths, i.e. \( L_0 \cap L_1 \). The Morse inequalities then gives bounds on the number of intersection points between \( L_0 \) and \( L_1 \).
+:::
 
 ::: {.definition title="Symplectic Manifolds"}
 A **symplectic manifold** is a pair \( (M^{2n}, \omega) \) with \( \omega \) a 2-form which is
@@ -1124,9 +1138,9 @@ The pair \( ({\mathbb{R}}^{2n}, \sum_{i=1}^n dx_i \wedge dy_i \) is a symplectic
 .\]
 
 This has a Lagrangian submanifold \( {\mathbb{R}}^n \coloneqq\left\{{y_1 = \cdots = y_n = 0}\right\} \).
-:::
 
 > Note: See Darboux theorem.
+:::
 
 ::: {.remark}
 The general setup for next time: we'll have \( (M^{2n}, \omega) \) a symplectic manifold, a pair \( L_0, L_1 \subset M \) such that \( L_0 \pitchfork L_1 \), and we want to do Morse Homology on \( \mathcal{P}(L_0, L_1) \).
@@ -1419,6 +1433,8 @@ Goal: use this as an invariant of closed 3-manifolds in the form of **Lagrangian
 
 # Lecture 8 (Thursday, February 04)
 
+## Heegard Splittings
+
 ::: {.remark}
 Goal: we want to use **Lagrangian Floer homology** to defined invariants of *closed* 3-manifolds, where here closed means that \( {{\partial}}M^3 = \emptyset \). One example of Lagrangian Floer homology is **Heegard Floer homology**. We'll want some symplectic manifold with two Lagrangian submanifolds. Oszvath-Szabo used a 2-dimensional description of closed 3-manifolds called **Heegard diagrams**. We'll need Heegard splittings to define these, and handlebodies to define the splittings.
 :::
@@ -1611,6 +1627,8 @@ Show that for any \( g \) we get a 3-manifold with boundary \( \Sigma \times\lef
 :::
 
 # Lecture 9 (Thursday, February 11)
+
+## Heegard Diagrams
 
 ::: {.remark}
 Last time we saw that \( M_3 = H_1 {\coprod}_{\varphi} H_2 \) as two handlebodies glued along their boundary by a diffeomorphism \( \varphi: {{\partial}}H_1 \to {{\partial}}H_2 \). This is referred to as a **Heegard splitting** for \( M \). We can specify a genus \( g \) handlebody as \( ( \Sigma, \left\{{ \gamma_1, \cdots \gamma_g }\right\} \) where \( \Sigma\setminus\left\{{ \gamma_1, \cdots, \gamma_g }\right\} \) is connected and each \( \gamma_i \) bounds a disc in \( H \).
@@ -1831,8 +1849,6 @@ CF( \Sigma, \alpha, \beta) \coloneqq\bigoplus_{x\in {\mathbb{T}}_{\alpha} \cap{\
 
 We'll first figure out how to count continuous discs up to homotopy classes, since holomorphic discs are much more restrictive. We'll see that \( \pi_2 \) plays a role, and define the topology of \( \operatorname{Sym}^g \).
 :::
-
-# Tuesday, February 16
 
 # Thursday, February 18
 
@@ -2163,11 +2179,13 @@ This will characterize the coefficients \( a_i \) for which discs exist. Next ti
 
 ## Whitney Discs
 
+::: {.remark}
 Recall that we discussed the domains of discs: for \( \varphi\in \varphi_2(x, y) \) we defined the 2-chain \( D( \varphi) = \sum_{i=1}^n a_i D_i \) where we've written
 \[ 
 \Phi \setminus\alpha\cup\beta = {\coprod}_{i=1}^m \overset{\circ}{D_i} 
 \]
 and \( a_i \) is the number of points in \( \operatorname{im}( \varphi) \cap L_{z_i} \) for \( z_i \in D_i \).
+:::
 
 ::: {.exercise title="?"}
 For \( \varphi\in \pi_2(x, y) \), \( {{\partial}}D( \varphi) \) is a 1-chain in \( \alpha \cup\beta \). Then
@@ -2247,6 +2265,7 @@ Find the 3-manifold that these two diagrams represent.
 
 ## Holomorphic Discs
 
+::: {.remark}
 Ultimately these are what we want to define the differential in the chain complex.
 
 ![image_2021-02-25-12-08-55](figures/image_2021-02-25-12-08-55.png)
@@ -2304,6 +2323,7 @@ We'll need
 -   Check that \( {{\partial}} \) is well-defined and \( {{\partial}}^2=0 \),
 
 -   Check independence of choices, e.g. the Heegard the diagram, the complex structure, the perturbations of \( \operatorname{Sym}^g(j) \), etc.
+:::
 
 ::: {.question}
 This takes a lot of work! Is the homology of this complex interesting? Is this stronger than singular homology?
@@ -2476,6 +2496,9 @@ Take a look at *Gromov compactness* again!
 
 # Maslov Index Formula (Thursday, March 04)
 
+## Review
+
+::: {.remark}
 Recall that for \( x,y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta \), there is a map
 \[
 \mu: \pi_2(x, y) &\to {\mathbb{Z}}\\
@@ -2483,6 +2506,7 @@ Recall that for \( x,y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta \), ther
 .\]
 
 This index is the expected dimension of \( M(\varphi) \). The following theorem can be found in the paper "A cylindrical reformulation of Heegard Floer homology":
+:::
 
 ::: {.theorem title="Lipschitz"}
 Let \( x = \left\{{ x_1, \cdots, x_g }\right\} \) and \( y = \left\{{ y_1, \cdots, y_g }\right\} \) and \( \varphi\in \pi_2(x, y) \). Then

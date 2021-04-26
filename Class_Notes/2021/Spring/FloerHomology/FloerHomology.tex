@@ -303,7 +303,11 @@ Presentations}\label{suggested-topics-for-presentations}}
 \hypertarget{intro-and-motivation}{%
 \subsection{Intro and Motivation}\label{intro-and-motivation}}
 
+\begin{remark}
+
 We'll assume everything is smooth and oriented.
+
+\end{remark}
 
 \begin{proposition}[Osvath-Szabo (2000)]
 
@@ -337,10 +341,14 @@ latter 3 in the second half.
 \end{remark}
 
 \hypertarget{geometric-information}{%
-\subsubsection{Geometric Information}\label{geometric-information}}
+\subsection{Geometric Information}\label{geometric-information}}
+
+\begin{remark}
 
 These invariants can be used to compute the \textbf{Thurston seminorm}
 of a 3-manifold:
+
+\end{remark}
 
 \begin{definition}[Thurston Seminorm]
 
@@ -514,8 +522,12 @@ contact structures:
 
 \end{theorem}
 
+\begin{remark}
+
 We'll also discuss similar invariants for knots that were created after
 these invariants for manifolds.
+
+\end{remark}
 
 \begin{definition}[Knots]
 
@@ -546,7 +558,9 @@ This similarly works for other variants: there is a filtration on
 
 \end{proposition}
 
-Some properties of Knot Floer Homology:
+\hypertarget{some-properties-of-knot-floer-homology}{%
+\subsubsection{Some properties of Knot Floer
+Homology}\label{some-properties-of-knot-floer-homology}}
 
 \begin{fact}
 
@@ -864,13 +878,15 @@ smoothly embedded surfaces in 4-manifolds, which has been done recently.
 
 \todo[inline]{Copy in references recommended by Akram!}
 
+\hypertarget{constructing-heegard-floer}{%
+\subsection{Constructing Heegard
+Floer}\label{constructing-heegard-floer}}
+
 \begin{remark}
 
 For Morse Theory, there are some good exercises in Audin's book --
 essentially anything other than the existence questions. The first 8
-look good on p.~18.
-
-\end{remark}
+look good on p.~18.\\
 
 Today:
 
@@ -882,11 +898,9 @@ Today:
   A discussion of Morse Theory.
 \end{enumerate}
 
-\hypertarget{constructing-heegard-floer}{%
-\subsection{Constructing Heegard
-Floer}\label{constructing-heegard-floer}}
-
 First goal: discuss how the name ``Heegard'' fits in.
+
+\end{remark}
 
 \begin{definition}[Genus $g$ handlebody]
 
@@ -947,7 +961,11 @@ where the \(\alpha\) correspond to \(H_1\) and \(\beta\) to \(H_2\) and
 \hypertarget{lagrangian-floer-homology}{%
 \subsection{Lagrangian Floer Homology}\label{lagrangian-floer-homology}}
 
+\begin{remark}
+
 This is essentially an infinite-dimensional version of Morse homology.
+
+\end{remark}
 
 \begin{definition}[Symplectic Manifold]
 
@@ -969,6 +987,8 @@ A \textbf{Lagrangian submanifold} is an \(L^n \subseteq M\) such that
 \({ \left.{{\omega}} \right|_{{L}} } = 0\).
 
 \end{definition}
+
+\begin{remark}
 
 If \(L_1 \cap L_2\) is finitely many points, case we can define a chain
 complex
@@ -1012,12 +1032,16 @@ group acts on \(\prod_{i=1}^g \Sigma\) by permuting the \(g\)
 coordinates, so we can define
 \(\operatorname{Sym}^g(\Sigma) \coloneqq\prod_{i=1}^g \Sigma / S_g\).
 
+\end{remark}
+
 \begin{theorem}[?]
 
 The space \(\operatorname{Sym}^g(\Sigma)\) is a smooth complex manifold
 of \({\mathbb{R}}{\hbox{-}}\)dimension \(2g\).
 
 \end{theorem}
+
+\begin{remark}
 
 Write
 \({\mathbb{T}}_{\alpha} \coloneqq\prod_{i=1}^g \alpha_i \subseteq \prod_{i=1}^g \Sigma\)
@@ -1026,6 +1050,8 @@ for a \(g{\hbox{-}}\)dimensional torus; this admits a quotient map to
 \({\mathbb{T}}_{\beta}\). Then \(HF^{-}(M)\) will be a variation of
 Lagrangian Floer Homology for
 \((\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{\alpha}, {\mathbb{T}}_{\beta} )\).
+
+\end{remark}
 
 \begin{example}[?]
 
@@ -1090,9 +1116,11 @@ is this important: any closed 3-manifold is surgery on a link in
 and not in the other theories: combinatorial approaches to compute,
 exact sequences, bordered Floer homology.
 
-\end{remark}
+\hfill\break
 
 Next time: we'll talk about ``integer surgeries''.
+
+\end{remark}
 
 \hypertarget{lecture-3-morse-theory-thursday-january-19}{%
 \section{Lecture 3: Morse Theory (Thursday, January
@@ -1101,10 +1129,20 @@ Next time: we'll talk about ``integer surgeries''.
 \hypertarget{intro-to-morse-theory}{%
 \subsection{Intro to Morse Theory}\label{intro-to-morse-theory}}
 
+\begin{remark}
+
 Let \(M^n\) be a smooth closed manifold, then the goal is to study the
 topology of \(M\) by studying smooth functions
 \(f \in C^ \infty (M, {\mathbb{R}})\). We'll need \(f\) to be
 \emph{generic} in a sense we'll discuss later.
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-01-19-00-41-55.png}
+\caption{image\_2021-01-19-00-41-55}
+\end{figure}
+
+\end{remark}
 
 \begin{definition}[Critical Point]
 
@@ -1557,6 +1595,8 @@ The set of Morse functions on \(M\) is open and dense in
 \hypertarget{attaching-handles}{%
 \subsection{Attaching Handles}\label{attaching-handles}}
 
+\begin{remark}
+
 Goal: we want to use Morse functions (smooth, nondegenerate critical
 points) to study the topology of \(M\). Recall that the torus had 4
 critical points,
@@ -1571,6 +1611,8 @@ We defined the index as the number of negative eigenvalues of the
 Hessian matrix. Here the highest index will be the dimension of the
 manifold, and by the Morse lemma the two intermediate critical points
 will be index 1.
+
+\end{remark}
 
 \begin{remark}
 
@@ -1923,7 +1965,11 @@ complex.
 
 \end{theorem}
 
+\begin{remark}
+
 Next time we will work on proving this.
+
+\end{remark}
 
 \hypertarget{morse-homology-and-lagrangian-floer-homology-thursday-january-28}{%
 \section{Morse Homology and Lagrangian Floer Homology (Thursday, January
@@ -1931,6 +1977,8 @@ Next time we will work on proving this.
 
 \hypertarget{morse-homology}{%
 \subsection{Morse Homology}\label{morse-homology}}
+
+\begin{remark}
 
 Last time: defined the Morse complex. Assumed \((f, g)\) was a
 Morse-Smale pair, where \(f\) is a Morse function and \(g\) is a
@@ -1943,6 +1991,8 @@ We denoted this \(\mathcal{M}(p, q)\). The chain complex was defined by
 with differential \({{\partial}}_i: C_i \to C_{i-1}\) was defined by
 sending an index \(i\) critical point \(p\) to
 \(\sum_{\operatorname{ind}(q) = i-1} \# \mathcal{M}(p, q) q \pmod 2\).
+
+\end{remark}
 
 \begin{theorem}[The Morse Complex is a Chain Complex]
 
@@ -2122,6 +2172,8 @@ least the rank of the homology.
 \subsection{Lagrangian Floer
 Homology}\label{lagrangian-floer-homology-1}}
 
+\begin{remark}
+
 Suppose \(L_0^n, L_1^n \subset M^{2n}\) are compact with
 \(L_0 \pitchfork L_1\), so the intersection is finitely many points.
 
@@ -2140,6 +2192,8 @@ We'll find analogs of Morse functions on \(P(L_0, L_1)\) such that the
 critical points are constant paths, i.e.~\(L_0 \cap L_1\). The Morse
 inequalities then gives bounds on the number of intersection points
 between \(L_0\) and \(L_1\).
+
+\end{remark}
 
 \begin{definition}[Symplectic Manifolds]
 
@@ -2180,11 +2234,11 @@ symplectic manifold (and also a symplectic vector space). Note that this
 This has a Lagrangian submanifold
 \({\mathbb{R}}^n \coloneqq\left\{{y_1 = \cdots = y_n = 0}\right\}\).
 
-\end{example}
-
 \begin{quote}
 Note: See Darboux theorem.
 \end{quote}
+
+\end{example}
 
 \begin{remark}
 
@@ -2714,6 +2768,9 @@ particular, the assumptions on \(\pi_2\) won't hold.
 \section{Lecture 8 (Thursday, February
 04)}\label{lecture-8-thursday-february-04}}
 
+\hypertarget{heegard-splittings}{%
+\subsection{Heegard Splittings}\label{heegard-splittings}}
+
 \begin{remark}
 
 Goal: we want to use \textbf{Lagrangian Floer homology} to defined
@@ -3147,6 +3204,9 @@ Show that for any \(g\) we get a 3-manifold with boundary
 \hypertarget{lecture-9-thursday-february-11}{%
 \section{Lecture 9 (Thursday, February
 11)}\label{lecture-9-thursday-february-11}}
+
+\hypertarget{heegard-diagrams-1}{%
+\subsection{Heegard Diagrams}\label{heegard-diagrams-1}}
 
 \begin{remark}
 
@@ -3629,9 +3689,6 @@ that \(\pi_2\) plays a role, and define the topology of
 \(\operatorname{Sym}^g\).
 
 \end{remark}
-
-\hypertarget{tuesday-february-16-1}{%
-\section{Tuesday, February 16}\label{tuesday-february-16-1}}
 
 \hypertarget{thursday-february-18}{%
 \section{Thursday, February 18}\label{thursday-february-18}}
@@ -4200,6 +4257,8 @@ Next time we'll talk about holomorphic discs.
 \hypertarget{whitney-discs-1}{%
 \subsection{Whitney Discs}\label{whitney-discs-1}}
 
+\begin{remark}
+
 Recall that we discussed the domains of discs: for
 \(\varphi\in \varphi_2(x, y)\) we defined the 2-chain
 \(D( \varphi) = \sum_{i=1}^n a_i D_i\) where we've written
@@ -4208,6 +4267,8 @@ Recall that we discussed the domains of discs: for
 \end{align*}
 and \(a_i\) is the number of points in
 \(\operatorname{im}( \varphi) \cap L_{z_i}\) for \(z_i \in D_i\).
+
+\end{remark}
 
 \begin{exercise}[?]
 
@@ -4349,6 +4410,8 @@ Find the 3-manifold that these two diagrams represent.
 \hypertarget{holomorphic-discs}{%
 \subsection{Holomorphic Discs}\label{holomorphic-discs}}
 
+\begin{remark}
+
 Ultimately these are what we want to define the differential in the
 chain complex.
 
@@ -4440,6 +4503,8 @@ We'll need
   complex structure, the perturbations of \(\operatorname{Sym}^g(j)\),
   etc.
 \end{itemize}
+
+\end{remark}
 
 \begin{question}
 
@@ -4754,6 +4819,11 @@ Take a look at \emph{Gromov compactness} again!
 \section{Maslov Index Formula (Thursday, March
 04)}\label{maslov-index-formula-thursday-march-04}}
 
+\hypertarget{review}{%
+\subsection{Review}\label{review}}
+
+\begin{remark}
+
 Recall that for
 \(x,y \in {\mathbb{T}}_ \alpha \cap{\mathbb{T}}_ \beta\), there is a map
 \begin{align*}
@@ -4764,6 +4834,8 @@ Recall that for
 This index is the expected dimension of \(M(\varphi)\). The following
 theorem can be found in the paper ``A cylindrical reformulation of
 Heegard Floer homology'':
+
+\end{remark}
 
 \begin{theorem}[Lipschitz]
 

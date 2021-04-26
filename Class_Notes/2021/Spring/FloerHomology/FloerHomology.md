@@ -698,7 +698,9 @@
 
 ## Intro and Motivation
 
+:::{.remark}
 We'll assume everything is smooth and oriented.
+:::
 
 :::{.proposition title="Osvath-Szabo (2000)"}
 To closed 3-manifolds $M$ we can assign a graded abelian group $\hat{HF}(M)$, which can be computed combinatorially
@@ -729,11 +731,11 @@ Note that $\ZZ_2$ can be replaced with $\ZZ$, but it's technical and we won't di
 For the first half of the course, we'll just discuss $\hat{HF}$, and we'll discuss the latter 3 in the second half.
 :::
 
+## Geometric Information
 
-### Geometric Information
-
+:::{.remark}
 These invariants can be used to compute the **Thurston seminorm** of a 3-manifold: 
-
+:::
 
 :::{.definition title="Thurston Seminorm"}
 A homology class \( \alpha\in H_2(M)\) can be represented as \( \alpha\in [S] \) for $S$ a closed surface whose fundamental class represents \( \alpha \) where $S = \Union_{i=1}^n S_i$ can be a union of closed embedded surfaces $S_i$.
@@ -761,7 +763,6 @@ where we sum over the embedded subsurfaces and check which overall surface gives
 Note that this can't be a norm, since if $\SS^2, \TT^2 \in [S] \implies \norm \alpha = 0$.
 :::
 
-
 :::{.theorem title="Osvath-Szabo"}
 $HF$ detects
 [^detects_means]
@@ -777,7 +778,6 @@ What does "detect" mean? This is slightly technical.
 
 :::
 
-
 :::{.remark}
 
 The Thurston norm $\norm{a}$ can be computed from this data by considering a perturbed version of $\hat{HF}$, denoted $\underline{\hat{HF}}$, in the following way: taking the first Chern class $c_1(\mathfrak{s}) \in H^2(M)$ (which can be associated to every 2-dimensional vector bundle), we have 
@@ -790,7 +790,6 @@ The Thurston norm $\norm{a}$ can be computed from this data by considering a per
 :::{.slogan}
 Floer homology groups split over these spin$^c$ structures and can be used to compute Thurston norms.
 :::
-
 
 :::{.theorem title="Ni"}
 Given $F \subseteq M$ with genus $g\geq 2$, $HF$ detects if $M$ *fibers* over $S^1$ with $F$ as a fiber, i.e. there exists a fiber bundle
@@ -812,7 +811,6 @@ This uses the existence of the splitting over spin$^c$ structures and uses $HF^+
 .\]
 :::
 
-
 :::{.definition title="Contact Structure"}
 Equivalently,
 
@@ -825,7 +823,6 @@ Equivalently,
 Note that wedging to a nontrivial top form is equivalent to being nowhere integrable here.
  
 :::
-
 
 :::{.example title="?"}
 The standard contact structure on $\RR^3$ is given by 
@@ -843,11 +840,9 @@ You can see that $z=0 \implies y=0$, so the $xy\dash$plane is in the kernel, yie
 
 :::
 
-
 :::{.proposition title="Contact Class (Osvath-Szabo-Honda-Kazez-Matic)"}
 To each such \( \xi \) one can associate a **contact class** \( c(\xi) \in \hat{HF}(-M) \), where $-M$ is $M$ with the reversed orientation.
 :::
-
 
 :::{.remark}
 This gives obstructions for two of the following important properties of contact structures:
@@ -864,16 +859,15 @@ This gives obstructions for two of the following important properties of contact
 - If $\xi$ is Stein fillable, then $c(\xi) \neq 0$.
 :::
 
+:::{.remark}
 We'll also discuss similar invariants for knots that were created after these invariants for manifolds.
-
-
+:::
 
 :::{.definition title="Knots"}
 Recall that a **knot** is an embedding $S^1 \injects M$.
 
 ![Example: the trefoil knot](figures/image_2021-01-18-23-13-07.png){width=150px}
 :::
-
 
 :::{.proposition title="Knot Floer Homology (Ozsváth-Szabó)"}
 Given a knot $K \subseteq M$ a 3-manifold (e.g. $M = S^3$), there is extra algebraic structure on $\hat{CF}(M)$: a filtration.
@@ -886,7 +880,7 @@ This yields a decomposition
 This similarly works for other variants: there is a filtration on $CF^-(M)$ which yields $HFK^-(M, K)$, a bigraded $\ZZ_2[u]\dash$module.
 :::
 
-Some properties of Knot Floer Homology:
+### Some properties of Knot Floer Homology
 
 :::{.fact}
 
@@ -929,8 +923,6 @@ These are referred to as **Seifert surfaces**.
 
 :::
 
-
-
 :::{.fact}
 $\hat{HFK}$ detects whether or not a knot is **fibered**, where $K$ is fibered if and only if it admits an $S^1$ family $F_t$ of Seifert surfaces such that $t\neq s\in S^1 \implies F_t \intersect F_s = K$.
 I.e., there is a fibration on the knot complement where each fiber is a Seifert surface:
@@ -961,7 +953,6 @@ This is "detected" in the following sense: $K$ is fibered if and only if
 
 :::
 
-
 :::{.definition title="Slice Genus"}
 Let $K \subseteq S^3$.
 We know $S^3 = \bd B^4$, so we consider all of the smoothly properly embedded surfaces $F$ in $B^4$ such that $\bd F = K$ and take the smallest genus:
@@ -977,17 +968,13 @@ g(F) \st F\injects B^4 \text{ smootherly, properly with } \bd F = K
 .\]
 :::
 
-
 :::{.exercise title="?"}
 Show that $g_4(K) \leq g(K)$.
 :::
 
-
-
 :::{.definition title="Unknotting number"}
 Define $u(K)$ the **unknotting number** of $K$ as the minimum number of times that $K$ must cross itself to become unknotted.
 :::
-
 
 :::{.example title="The Trefoil"}
 Consider changing the bottom crossing of a trefoil:
@@ -1001,7 +988,6 @@ This in fact produces the unknot:
 Thus $u(K) = 1$, assuming that we know $K \neq 0$ is not the unknot.
 :::
 
-
 :::{.exercise title="?"}
 Show that $g_f(K) \leq u(K)$.
 
@@ -1011,17 +997,14 @@ Show that $g_f(K) \leq u(K)$.
 
 :::
 
-
 :::{.theorem title="Ozsváth-Szabó"}
 Define an invariant $\tau(K) \in \ZZ$ from $\hat{HFK}$ such that \( \abs{\tau(K)} \leq g_4(K) \leq u(K)\).
 :::
-
 
 :::{.definition title="Torus Knots $T_{p, q}$ "}
 Recall that we can view $\TT^2 \da \RR^2/\ZZ^2$ where the action is $(x, y) \mapsvia{(m, n)} (x+m, y+m)$, i.e. we module out by integer translations.
 Then for $p, q > 0 $ coprime, $T_{p, q}$ is the image of the line $y = mx$ in $\TT^2$ where $m=p/q$.
 :::
-
 
 :::{.example title="$T_{2, 3}$ "}
 The torus knot $T_{2, 3}$ wraps 3 times around the torus in one direction and twice in the other:
@@ -1029,8 +1012,6 @@ The torus knot $T_{2, 3}$ wraps 3 times around the torus in one direction and tw
 ![The torus knot $T_{2, 3}$](figures/image_2021-01-19-00-09-51.png)
 
 :::
-
-
 
 :::{.theorem title="Milnor"}
 \[
@@ -1042,11 +1023,9 @@ g_4(T_{p, q}) = u(T_{p, q}) = { (p-1)(1-q) \over 2}
 - Another proof by Osvath-Szabó using Heegard Floer homology.
 :::
 
-
 :::{.exercise title="?"}
 Show that $u(T_{p. q}) \leq {(p-1)(q-1) \over 2}$, i.e. torus knots can be unknotted with this many crossing changes.
 :::
-
 
 :::{.theorem title="Osvath-Szabó"}
 \[
@@ -1064,7 +1043,6 @@ which implies
 making all of these equal.
 :::
 
-
 :::{.remark}
 There are better lower bounds for $u(K)$ defined using $\hat{HFK}$ which are *not* lower bounds for the slice genus.
 There are also other lower bounds for the slice genus with different names (see Jen Hom's survey), some of which are stronger than \( \tau \).
@@ -1073,7 +1051,6 @@ There are also other lower bounds for the slice genus with different names (see 
 :::{.remark}
 Another application of having these lower bounds is that we can construct exotic (or *fake*) $\RR^4$s, i.e. 4-manifolds $X$ homeomorphic to $\RR^4$ but not diffeomorphic to $\RR^4$.
 :::
-
 
 :::{.remark}
 All of these invariants work nicely in a $(3+1)\dash$TQFT: we have invariants of 3-manifolds $M_i$ and knots in them, so we can talk about **cobordisms** between them: $W^4$ a compact oriented 4-manifold with $\bd W^4 = -M_1 \disjoint M_2$.
@@ -1097,21 +1074,20 @@ F_{W, F t}^\wait: HF^\wait(M_1, K_1, \ro{t}{M_1} ) \to HF^\wait(M_2, K_2, \ro{t}
 \]
 :::
 
-
 :::{.remark}
 This smoothly embedded surface in the middle can be used to study other smoothly embedded surfaces in 4-manifolds, which has been done recently.
 :::
-
 
 # Lecture 2 (Tuesday, January 19)
 
 \todo[inline]{Copy in references recommended by Akram!}
 
+## Constructing Heegard Floer
 
 :::{.remark}
 For Morse Theory, there are some good exercises in Audin's book -- essentially anything other than the existence questions.
 The first 8 look good on p. 18.
-:::
+\
 
 Today: 
 
@@ -1119,16 +1095,13 @@ Today:
 
 2. A discussion of Morse Theory.
 
-## Constructing Heegard Floer
-
 First goal: discuss how the name "Heegard" fits in.
-
+:::
 
 :::{.definition title="Genus $g$ handlebody"}
 A **genus $g$ handlebody** $H_g$ is a compact oriented 3-manifold with boundary obtained from $B^3$ by attaching $g$ solid handles (a neighborhood of an arc).
 
 :::
-
 
 :::{.example title="Attaching $g=2$ handles to a sphere"}
 For $g=2$ attached to a sphere, we glue $D^2 \cross I$ by its boundary to $S^2$.
@@ -1156,7 +1129,9 @@ A **Heegard diagram** is the data $(\Sigma_g, \alpha = \ts{ \alpha_1, \cdots, \a
 
 ## Lagrangian Floer Homology
 
+:::{.remark}
 This is essentially an infinite-dimensional version of Morse homology.
+:::
 
 :::{.definition title="Symplectic Manifold"}
 A **symplectic manifold** is a pair $(M^{2n}, \omega)$ such that
@@ -1169,6 +1144,7 @@ A **symplectic manifold** is a pair $(M^{2n}, \omega)$ such that
 A **Lagrangian submanifold** is an $L^n \subseteq M$ such that \( \ro{\omega}{L} = 0 \).
 :::
 
+:::{.remark}
 If $L_1 \intersect L_2$ is finitely many points, case we can define a chain complex 
 \[
 CF(M^{2n}, L_1, L_2) \da \ZZ_2[L_1 \intersect L_2]
@@ -1196,14 +1172,18 @@ Note that it's not necessarily true that $CF$ has a grading!
 Given a 3-manifold $M^3$, we'll associate a Heegard diagram \( \Sigma, \alpha, \beta \).
 Note the $g\dash$element symmetric group acts on \( \prod_{i=1}^g \Sigma \) by permuting the $g$ coordinates, so we can define \( \Sym^g(\Sigma) \da \prod_{i=1}^g \Sigma / S_g\).
 
+:::
+
 :::{.theorem title="?"}
 The space \( \Sym^g(\Sigma) \) is a smooth complex manifold of $\RR\dash$dimension $2g$.
 :::
 
+:::{.remark}
 Write $\TT _{\alpha} \da \prod_{i=1}^g \alpha_i \subseteq \prod_{i=1}^g \Sigma$ for a $g\dash$dimensional torus; this admits a quotient map to $\Sym^g(\Sigma)$.
 We can repeat this to obtain $\TT _{\beta}$.
 Then $HF^\wait(M)$ will be a variation of Lagrangian Floer Homology for \( (\Sym^g(\Sigma), \TT _{\alpha}, \TT _{\beta} ) \).
 
+:::
 
 :::{.example title="?"}
 Consider constructing a genus $g=1$ Heegard diagram.
@@ -1214,16 +1194,12 @@ Recall that $S^3$ can be constructed by gluing two solid torii.
 Here $(T, \alpha, \beta)$ will be a Heegard diagram for $S^3$.
 :::
 
-
 :::{.exercise title="?"}
 Show that the following diagram with \( \beta \) defined as some perturbation of \( \alpha \) is a Heegard diagram for \( S^1 \cross S^2 \).
 
 ![image_2021-01-19-12-21-56](figures/image_2021-01-19-12-21-56.png)
 
 :::
-
-
-
 
 :::{.definition title="Dehn Surgery"}
 Consider $M$ a 3-manifold containing a knot $K$, we can construct a new 3-manifold by first removing a neighborhood of $K$ to yield $M\sm N(K)$:
@@ -1241,9 +1217,12 @@ Note that the diffeomorphism is entirely determined by the image of the curve \(
 The Knot Floer chain complex of $K$ will allow us to compute any flavor $HF^\wait M _{\varphi} (K)$ of Floer homology.
 Why is this important: any closed 3-manifold is surgery on a link in $S^3$.
 However there are many more computational tools available here and not in the other theories: combinatorial approaches to compute, exact sequences, bordered Floer homology.
-:::
+
+\
 
 Next time: we'll talk about "integer surgeries".
+:::
+
 
 
 
@@ -1251,14 +1230,13 @@ Next time: we'll talk about "integer surgeries".
 
 ## Intro to Morse Theory
 
+:::{.remark}
 Let $M^n$ be a smooth closed manifold, then the goal is to study the topology of $M$ by studying smooth functions $f \in C^ \infty (M, \RR)$.
 We'll need $f$ to be *generic* in a sense we'll discuss later.
 
-<!--:::{.definition title="$p/q$ Surgery"}-->
-<!--?-->
-<!--:::-->
+![image_2021-01-19-00-41-55](figures/image_2021-01-19-00-41-55.png)
 
-<!--![image_2021-01-19-00-41-55](figures/image_2021-01-19-00-41-55.png)-->
+:::
 
 :::{.definition title="Critical Point"}
 A point $p\in M$ is called a **critical point** if and only if $(df)_p = 0$.
@@ -1343,8 +1321,6 @@ A function $f\in C^ \infty (M, \RR)$ is called a **Morse function** if and only 
 We'll see that almost every smooth function is Morse, and these are preferable since they have a simple and predictable structure near critical points and don't do anything interesting elsewhere.
 :::
 
-
-
 :::{.theorem title="Morse Lemma"}
 Let $p\in M$ be a nondegenerate critical point of $f$ with $\ind(p) = \lambda$.
 Then there exists charts \( \varphi:(U, p) \to (\RR^n, 0) \) such that writing $f$ in local coordinates yields 
@@ -1352,7 +1328,6 @@ Then there exists charts \( \varphi:(U, p) \to (\RR^n, 0) \) such that writing $
 (f \circ \varphi ^{-1} )(x) = f(p) - \sum_{i=1}^{\lambda} x_i^2 + \sum_{j= \lambda + 1}^n x_j^2
 .\]
 :::
-
 
 :::{.remark title="Observation 1"}
 We have
@@ -1371,11 +1346,9 @@ H_p =
 .\]
 :::
 
-
 :::{.remark title="Observation 2"}
 If \( \lambda=n \)??
 :::
-
 
 :::{.remark title="Observation 3"}
 ??
@@ -1418,7 +1391,6 @@ M_a &\cong M_b
 .\]
 :::
 
-
 :::{.definition title="Gradients"}
 Choose a metric $g$ on $M$, then the **gradient vector** of $f$ is given by 
 \[
@@ -1427,7 +1399,6 @@ g(\nabla f, v) = df(v)
 
 :::
 
-
 :::{.remark}
 We have
 \[
@@ -1435,7 +1406,6 @@ df( \nabla f) = g(\nabla f, \nabla f) = \norm{\nabla f}^2
 .\]
 
 :::
-
 
 :::{.proof title="?"}
 We have the following situation:
@@ -1478,7 +1448,6 @@ M_b = M_a \union_{\bd} \qty{ D^ \lambda \cross D^{n - \lambda} }
 where $n \da \dim M$.
 :::
 
-
 :::{.example title="?"}
 For \( \lambda= 1, n - \lambda= 2 \):
 
@@ -1490,7 +1459,6 @@ For \( \lambda= 1, n - \lambda= 2 \):
 ![image_2021-01-19-00-53-07](figures/image_2021-01-19-00-53-07.png)
 :::
 
-
 :::{.definition title="Unstable Submanifold"}
 \[
 W_f^u(p) \da \ts{p} \union \ts{
@@ -1499,21 +1467,17 @@ W_f^u(p) \da \ts{p} \union \ts{
 .\]
 :::
 
-
 :::{.lemma title="?"}
 If $\ind(p) = \lambda$ then $W_f^u(p) \cong \RR^ \lambda$.
 :::
-
 
 :::{.example title="?"}
 ![image_2021-01-19-00-55-24](figures/image_2021-01-19-00-55-24.png)
 :::
 
-
 :::{.example title="?"}
 ![image_2021-01-19-00-55-41](figures/image_2021-01-19-00-55-41.png)
 :::
-
 
 :::{.definition title="Stable Manifold"}
 \[
@@ -1523,11 +1487,9 @@ W_f^s(p) \da \ts{p} \union \ts{
 .\]
 :::
 
-
 :::{.lemma title="?"}
 If $\ind(p) = \lambda$ then $W_f^s(p) \cong \RR^{n- \lambda}$.
 :::
-
 
 :::{.definition title="$C^\infty$ "}
 $C^ \infty (M; \RR)$ is defined as smooth function $M\to |RR$, topologized as:
@@ -1563,6 +1525,7 @@ The set of Morse functions on $M$ is open and dense in $C^ \infty (M; \RR)$.
 
 ## Attaching Handles
 
+:::{.remark}
 Goal: we want to use Morse functions (smooth, nondegenerate critical points) to study the topology of $M$.
 Recall that the torus had 4 critical points, 
 
@@ -1571,6 +1534,8 @@ Recall that the torus had 4 critical points,
 We defined the index as the number of negative eigenvalues of the Hessian matrix. 
 Here the highest index will be the dimension of the manifold, and by the Morse lemma the two intermediate critical points will be index 1.
 
+
+:::
 
 :::{.remark}
 We want to use the Morse function to decompose the manifold, so we consider \( M_a \da f ^{-1} ((- \infty , a ]) \).
@@ -1795,7 +1760,10 @@ where we take the count mod 2.
 $\bd^2 = 0$, and thus $( C(f, g), \bd)$ is a chain complex.
 :::
 
+:::{.remark}
 Next time we will work on proving this.
+:::
+
 
 
 
@@ -1814,10 +1782,14 @@ Next time we will work on proving this.
 
 ## Morse Homology
 
+:::{.remark}
 Last time: defined the Morse complex.
 Assumed $(f, g)$ was a Morse-Smale pair, where $f$ is a Morse function and $g$ is a Riemannian metric, and this guarantees that if $p, q\in \crit(f)$ with $\ind(p) - \ind(q) = 1$, then (among other things) there are finitely many gradient trajectories $p\leadsto q$.
 We denoted this \( \mathcal{M}(p, q)  \).
 The chain complex was defined by $C_i(f, g) \da \bigoplus_{\ind(p) = i} \ZZ_2 \gens{ p }$ with differential $\bd_i: C_i \to C_{i-1}$ was defined by sending an index $i$ critical point $p$ to $\sum_{\ind(q) = i-1} \# \mathcal{M}(p, q) q \mod 2$. 
+
+
+:::
 
 :::{.theorem title="The Morse Complex is a Chain Complex"}
 $\bd_{i} \circ \bd_{i+1} = 0$.
@@ -1919,13 +1891,13 @@ In particular, it doesn't depend on the choice of Morse-Smale pair $(f, g)$.
 See proof in references, e.g. Audin.
 :::
 
-
 :::{.proof title="?"}
 By definition, $\# \crit_i(f) = \rank C_i(f, g) = \rank HM_i(f, g)$, and in any chain complex the rank of the chain groups are always at least the rank of the homology.
 :::
 
 ## Lagrangian Floer Homology
 
+:::{.remark}
 Suppose $L_0^n, L_1^n \subset M^{2n}$ are compact with $L_0 \transverse L_1$, so the intersection is finitely many points.
 
 ![image_2021-01-28-12-16-27](figures/image_2021-01-28-12-16-27.png)
@@ -1937,6 +1909,9 @@ We can do Morse theory on the space of paths between them:
 
 We'll find analogs of Morse functions on $P(L_0, L_1)$ such that the critical points are constant paths, i.e. $L_0 \intersect L_1$.
 The Morse inequalities then gives bounds on the number of intersection points between $L_0$ and $L_1$.
+
+
+:::
 
 :::{.definition title="Symplectic Manifolds"}
 A **symplectic manifold** is a pair $(M^{2n}, \omega)$ with \( \omega \) a 2-form which is
@@ -1962,9 +1937,10 @@ Note that this 2-form is also a bilinear form of the following shape:
 .\]
 
 This has a Lagrangian submanifold $\RR^n \da \ts{y_1 = \cdots = y_n = 0}$.
-:::
 
 > Note: See Darboux theorem.
+
+:::
 
 :::{.remark}
 The general setup for next time: we'll have $(M^{2n}, \omega)$ a symplectic manifold, a pair $L_0, L_1 \subset M$ such that $L_0 \transverse L_1$, and we want to do Morse Homology on \( \mathcal{P}(L_0, L_1) \).
@@ -2323,6 +2299,8 @@ In particular, the assumptions on $\pi_2$ won't hold.
 
 # Lecture 8 (Thursday, February 04)
 
+## Heegard Splittings
+
 :::{.remark}
 Goal: we want to use **Lagrangian Floer homology** to defined invariants of *closed* 3-manifolds, where here closed means that \( \bd M^3 = \emptyset \).
 One example of Lagrangian Floer homology is **Heegard Floer homology**.
@@ -2419,7 +2397,6 @@ Even without this, we still have our two handlebodies: $H_1 \da f ^{-1} [0, 3/2]
 
 :::
 
-
 :::{.definition title="Equivalence of Heegard Splittings"}
 We'll say that two Heegard splittings \( M = H_1 \disjoint_{\varphi} H_2 \) and \( M = H_1' \disjoint_{\varphi} H_2 ' \) are **isotopic** if and only if there exists an ambient isotopy \( \psi: M \cross [0, 1] \to M \) such that \( \ro{\psi}{M \cross \ts{ 1} }(H_i) = H_i ' \) for each $i$.
 Recall that *ambient isotopy* means
@@ -2429,7 +2406,6 @@ Recall that *ambient isotopy* means
 - \( \ro{ \psi } {M \cross \ts{ t } } \) is a homeomorphism.
 
 :::
-
 
 :::{.question}
 Are *any* two Heegard splittings isotopic?
@@ -2443,7 +2419,6 @@ We can distinguish them by the genus of the splitting surface \( \Sigma \), and 
 :::{.remark}
 There are some moves to relate different Heegard splittings.
 :::
-
 
 :::{.definition title="Stabilization"}
 Given a genus $g$ Heegard splitting $M = H_1 \disjoint_{ \varphi} H_2$, we can produce a genus $g+1$ splitting $M = H_1' \union_{ \varphi} H_2'$ where
@@ -2585,6 +2560,8 @@ Show that for any $g$ we get a 3-manifold with boundary \( \Sigma \cross \ts{ 1 
 
 # Lecture 9 (Thursday, February 11)
 
+## Heegard Diagrams
+
 :::{.remark}
 Last time we saw that $M_3 = H_1 \disjoint_{\varphi} H_2$ as two handlebodies glued along their boundary by a diffeomorphism \( \varphi: \bd H_1 \to \bd H_2 \).
 This is referred to as a **Heegard splitting** for $M$.
@@ -2707,7 +2684,6 @@ Show that stabilization yields a Heegard diagram for the same manifold.
 Any two Heegard diagrams for $M$ can be connected by a finite sequence of the above moves.
 :::
 
-
 # Tuesday, February 16
 
 :::{.remark}
@@ -2802,7 +2778,6 @@ Here $g=1$ and so $\Sym^1(T^2) = T^2$.
 We also have \( \TT_{ \alpha} = \alpha, \TT_{ \beta} = \beta \), and their intersection is \( \TT_{ \alpha} \intersect \TT_{ \beta} = \alpha \intersect \beta = \ts{A, B} \) 
 :::
 
-
 :::{.example title="Heegard diagram for the Poincaré homology sphere"}
 Here we have a Poincaré homology sphere $P^3$, i.e. a 3-manifold with the same homology as $S^3$, i.e. $H_*(P^3) = [\ZZ, 0, 0, \ZZ]$ (??)
 
@@ -2844,7 +2819,6 @@ We're really working in $\Sym^g(\Sigma)$, but for computations, we'll work direc
 
 :::
 
-
 :::{.remark}
 For Lagrangian Floer homology, we'll have a triple \( (\Sym^g(\Sigma), \TT_{ \alpha}, \TT_{\beta} ) \).
 We'll define
@@ -2857,12 +2831,6 @@ We'll first figure out how to count continuous discs up to homotopy classes, sin
 We'll see that $\pi_2$ plays a role, and define the topology of $\Sym^g$.
 :::
 
-
-
-
-
-
-# Tuesday, February 16
 
 # Thursday, February 18
 
@@ -2882,14 +2850,12 @@ where \( \mu \) is the *Maslov index* and we want to count holomorphic discs.
 We'll first talk about continuous (topological) discs.
 :::
 
-
 :::{.lemma title="?"}
 \[
 \pi_1( \Sym^g( \Sigma ) ) \cong H_1 ( \Sym^g( \Sigma ) ) \cong H_1 (\Sigma)
 ,\]
 so the fundamental group is abelian.
 :::
-
 
 :::{.remark}
 For a proof of the first isomorphism, see Lemma 2.6 in [@OSZ04a].
@@ -3025,11 +2991,9 @@ Note that this is precisely concatenation of paths in the path space $\Path$.
 
 :::
 
-
 :::{.exercise title="?"}
 If $x=y=z$, then this yields an operation on $(\pi_2(x, x), \ast)$ which defines a group.
 :::
-
 
 :::{.remark}
 We can find obstructions to holomorphic discs by just looking at the topology.
@@ -3138,7 +3102,6 @@ If $x\sim y$ and $y\sim z$, so $\eps(x, y) = \eps(y, z) = 0$, we have $\eps(x, z
 Find the equivalence classes under $\sim$ for the Poincaré homology sphere using the genus 2 Heegard diagram.
 :::
 
-
 :::{.remark}
 For \( \varphi\in \pi_2(x, y) \), the **shadow** is the 2-chain \( D( \varphi ) \) on \( \Sigma \) defined in the following way: remove the \( \alpha, \beta \) arcs to obtain
 \[
@@ -3148,7 +3111,6 @@ For \( \varphi\in \pi_2(x, y) \), the **shadow** is the 2-chain \( D( \varphi ) 
 where ${}^{o}$ denotes that the set is open.
 Then \( D( \varphi) = \sum_{i=1}^m a_i D_i \).
 :::
-
 
 :::{.definition title="?"}
 Given $z\in \Sigma\sm (\alpha\union \beta)$, define a hyperplane 
@@ -3168,11 +3130,9 @@ D( \varphi) = \sum_{i=1}^m a_i D_i, && z_i \in {}^{o} D_i
 
 :::
 
-
 :::{.remark}
 The following comes from "Introduction to Heegard Floer Homology" (Osvath-Szabo), which we've been following relatively closely so far.
 :::
-
 
 :::{.exercise title="?"}
 Let $D$ be a domain of a disc connecting \( \ts{ x_1, x_2 } \)  to \( \ts{ y_1, y_2 } \) in the following way:
@@ -3210,7 +3170,6 @@ We know \( \varphi(-i) = \ts{ x_1, x_2 } \)  and \( \varphi(+i) = \ts{ y_1, y_2 
 
 :::
 
-
 :::{.example title="?"}
 Show that $D'$ is the domain of a disc from \( \ts{ x_1, x_2 } \to \ts{ y_1, y_2 } \):
 
@@ -3228,7 +3187,6 @@ As a result, we again get \( \varphi(-i) = \ts{ x_1, x_2 } \)  and \( \varphi(+i
 
 :::
 
-
 :::{.exercise title="?"}
 . Suppose \( x = \ts{ x_1, \cdots, x_g } \)  and \( y = \ts{ y_1, \cdots, y_g } \) such that \( x_i \in \alpha_i \intersect \beta_i \) and \( y_i \in \alpha_i \intersect \beta_{ \sigma\inv(i)} \) for some permutation \( \sigma\in S_g \).
   Then for any \( \varphi\in \pi_2(x, y) \),  show that
@@ -3241,7 +3199,6 @@ As a result, we again get \( \varphi(-i) = \ts{ x_1, x_2 } \)  and \( \varphi(+i
   .\]
 
 :::
-
 
 :::{.remark}
 This will characterize the coefficients $a_i$ for which discs exist.
@@ -3264,15 +3221,16 @@ Next time we'll talk about holomorphic discs.
 
 # Thursday, February 25
 
-
 ## Whitney Discs
 
+:::{.remark}
 Recall that we discussed the domains of discs: for \( \varphi\in \varphi_2(x, y) \) we defined the 2-chain \( D( \varphi) = \sum_{i=1}^n a_i D_i \) where we've written 
 \[ 
 \Phi \sm \alpha\union \beta = \disjoint_{i=1}^m \open{D_i} 
 \] 
 and $a_i$ is the number of points in $\im( \varphi) \intersect L_{z_i}$ for $z_i \in D_i$.
 
+:::
 
 :::{.exercise title="?"}
 For \( \varphi\in \pi_2(x, y) \), \( \bd D( \varphi) \) is a 1-chain in \( \alpha \union \beta \).
@@ -3364,6 +3322,7 @@ Find the 3-manifold that these two diagrams represent.
 
 ## Holomorphic Discs
 
+:::{.remark}
 Ultimately these are what we want to define the differential in the chain complex.
 
 ![image_2021-02-25-12-08-55](figures/image_2021-02-25-12-08-55.png)
@@ -3428,6 +3387,8 @@ We'll need
 - Check that $\bd$ is well-defined and $\bd^2=0$,
 
 - Check independence of choices, e.g. the Heegard the diagram, the complex structure, the perturbations of $\Sym^g(j)$, etc.
+
+:::
 
 :::{.question}
 This takes a lot of work!
@@ -3643,6 +3604,9 @@ Take a look at *Gromov compactness* again!
 
 # Maslov Index Formula (Thursday, March 04)
 
+## Review
+
+:::{.remark}
 Recall that for $x,y \in \TT_ \alpha \intersect \TT_ \beta$, there is a map
 \[
 \mu: \pi_2(x, y) &\to \ZZ \\
@@ -3653,6 +3617,8 @@ This index is the expected dimension of $M(\varphi)$.
 The following theorem can be found in the paper "A cylindrical reformulation of Heegard Floer homology":
 
 
+:::
+
 :::{.theorem title="Lipschitz"}
 Let \( x = \ts{ x_1, \cdots, x_g } \)  and \( y = \ts{ y_1, \cdots, y_g } \)  and \( \varphi\in \pi_2(x, y) \).
 Then 
@@ -3662,7 +3628,6 @@ Then
 where $e(\wait)$ is the **Euler measure** and $n_x(\cdots), n_y(\cdots)$ is referred to as the **point measure**.
 Note that these only depend on the domain of \( \varphi \).
 :::
-
 
 :::{.definition title="Euler Measure"}
 Let $D( \varphi) = \sum_{i=1}^m n_{z_i} ( \varphi) D_i$, then
@@ -3684,7 +3649,6 @@ where the $n_i$ are the surrounding regions' coefficients:
 ![image_2021-03-04-11-24-27](figures/image_2021-03-04-11-24-27.png)
 
 :::
-
 
 :::{.example title="?"}
 Let $x = \ts{ x_1, x_2 }, y = \ts{ y_1, y_2 }$ and compute \( \mu( \varphi) \) where \( D( \varphi) \) is one of the following domains:
@@ -3736,18 +3700,15 @@ Does this domain have a holomorphic representative?
 
 ## Positivity Principle
 
-
 :::{.proposition title="Positivity Principle"}
 For \( \varphi\in \pi_2(x, y) \), if \( \mathcal{M}( \varphi) \neq \emptyset  \) then \( D( \varphi) \geq 0 \), i.e. $D( \varphi ) = \sum n_i D_i$ where $n_i \geq 0$.
 This happens if and only if $n_w( \varphi) \geq 0$ for all \( w \in \Sigma \sm \alpha\union \beta \).
 :::
 
-
 :::{.proof title="Idea"}
 If \( u \in M( \varphi) \) then \( u:D \to \Sym^g( \Sigma ) \) is holomorphic and \( \im(u) \) is a complex submanifold.
 If \( w \in \Sigma \sm \alpha\union \beta \) then \( \mathcal{L}_w  \) is holomorphic.
 :::
-
 
 :::{.example title="?"}
 Show that transverse complex submanifolds intersect non-negatively, i.e. 
@@ -3755,7 +3716,6 @@ Show that transverse complex submanifolds intersect non-negatively, i.e.
 n_w( \varphi) \da \# \qty{ \im (u) \intersect \mathcal{L}_w } \geq 0 
 .\]
 :::
-
 
 :::{.example title="?"}
 Consider $S^1 \cross S^2$ with the following Heegard diagram:
@@ -3801,7 +3761,6 @@ Show that there is no non-negative disc in $\pi_2(x, x)$ and $\pi_2(y, y)$ by lo
 So $\bd =0$ which implies that \( \hat{\HF}( \Sigma, \alpha, \beta, z) = (\ZZ/2)^{\oplus 2} \).
 :::
 
-
 :::{.question}
 What if we used an isotopic diagram?
 
@@ -3816,20 +3775,7 @@ Do another isotopy to create 4 intersection points and show that the ranks of ho
 :::
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Tuesday, March 09
-
 
 :::{.remark}
 Recall that we were working with a diagram for $S^1 \cross S^2$:
@@ -3975,7 +3921,6 @@ For any \( x, y\in \alpha \intersect \beta \), the 0-dimensional moduli space of
 Prove this lemma using the Riemann mapping theorem.
 :::
 
-
 :::{.example title="?"}
 Consider the following example:
 
@@ -3984,9 +3929,6 @@ Consider the following example:
 
 List all of the bigons in this picture that will contribute to the differential.
 :::
-
-
-
 
 
 # Thursday, March 11
@@ -4099,7 +4041,6 @@ So these correspond got biholomorphic involutions of $\DD$ using complex analysi
 Next week: more about the Maslov index and $\Spinc$ structures, then invariance under diagram moves.
 :::
 
-
 # Maslov Grading and $\Spinc$ Structures (Tuesday, March 16)
 
 :::{.remark}
@@ -4161,7 +4102,6 @@ It turns out that the right thing to replace the "?" with will be \( \Spinc \) s
 :::
 
 ## $\Spinc$ Structures
-
 
 :::{.remark}
 We'll discuss Turaev's (?) reformulation of $\Spinc$ structure for $\Mfd^3$.
@@ -4282,7 +4222,6 @@ Thus we also have a relative map
 s_1, s_2 \da [v_1] - [v_2] &\mapsto s_1 -s_2 \da \delta(v_1, v_2)
 .\]
 :::
-
 
 # Thursday, March 18
 
@@ -4610,7 +4549,6 @@ d: \Theta_\QQ^3 \to \QQ
 .\]
 :::
 
-
 # Tuesday, March 30
 
 ## $L\dash$spaces
@@ -4729,8 +4667,6 @@ So $\phi$ is determined by $\phi( \gamma)$, and in fact only depends on its clas
 If $\phi ( \gamma) = \lambda$, we denote the resulting manifold as $M_{\lambda}(K)$, the **Dehn surgery on $K$**.
 :::
 
-
-
 :::{.definition title="Meridian and Longitude"}
 A **meridian** $\mu$ of $K$ will be a simple closed curve on $\bd X$ that bounds a disk in the tubular neighborhood $\nu(K)$:
 
@@ -4743,7 +4679,6 @@ For example:
 
 ![image_2021-03-30-12-07-30](figures/image_2021-03-30-12-07-30.png)?
 :::
-
 
 :::{.observation}
 \envlist
@@ -4764,12 +4699,10 @@ A knot $K$ along with a choice of longitude $\lambda$ is called a **framed knot*
 This allows us to specify Dehn surgeries by a rational number.
 :::
 
-
 :::{.definition title="?"}
 Let $K$ be a framed knot, then $M_{p\over q}(K) = M_{\gamma}(K)$ where \( [\gamma] = p [\mu] + q[ \lambda] \).
 We'll use the notation \( \gamma = p\mu + q\lambda \).
 :::
-
 
 :::{.definition title="?"}
 If $K$ is nullhomologous, for example when $M = S^3$ since $H^1S^3 = 0$, there is a canonical choice for \( \lambda \) by assuming that
@@ -4780,12 +4713,10 @@ If $K$ is nullhomologous, for example when $M = S^3$ since $H^1S^3 = 0$, there i
 This longitude is called the **Seifert framing**.
 :::
 
-
 :::{.exercise title="?"}
 Show this equivalence,
 and find the Seifert framing for the trefoil in $S^3$.
 :::
-
 
 :::{.example title="?"}
 
@@ -4796,17 +4727,14 @@ and find the Seifert framing for the trefoil in $S^3$.
 
 :::
 
-
 :::{.theorem title="Gordan-Leuke, '80s"}
 IF $K\neq U$ and ${p\over q} \neq \infty$, then $S_{p\over q}^3(K) \neq S^3$.
 :::
-
 
 :::{.remark}
 Can we get everything 3-manifold this way, as surgery on a knot?
 The answer is no, but yes if you allow *links*!
 :::
-
 
 :::{.theorem title="Lickorish-Wallace"}
 There is a bijection
@@ -4821,24 +4749,6 @@ M\in \Mfd^3 \st \text{closed, oriented, connected}
 \]
 
 :::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Tuesday, April 06
@@ -5112,7 +5022,6 @@ Thus $S_n^3(T_{p, q})$ is an $L\dash$space for all $n\geq pq-1$.
 
 # Surgery Exact Triangle and Knot Diagrams (Thursday, April 15)
 
-
 :::{.remark}
 Recall: let $(M, M_0, M_1)$ be a triple of 3-manifolds corresponding to a knot $K \subseteq M$, where $M_0$ is 0-surgery, $M_1$ is 1-surgery, and $M_{\infty}$ is $\infty\dash$surgery.
 Here $M$ can be chosen such that
@@ -5139,7 +5048,6 @@ Then there exists an exact triangle:
 
 Our goal is to define $f: \hat{\HF}(M) \to \hat{\HF}(M_0)$.
 :::
-
 
 :::{.remark}
 Note that $M$ admits a Heegard diagram
@@ -5174,7 +5082,6 @@ In this case, \( (\Sigma, \vec \alpha, \ts{ \beta_1, \cdots, \beta_{g-1} } \) wi
 
 ![The cobordism from \( \Sigma \) to the compressionbody](figures/image_2021-04-15-11-35-35.png)
 :::
-
 
 :::{.example title="?"}
 Consider $S^3 \sm\nd(T)$ for $T$ the trefoil.
@@ -5219,11 +5126,8 @@ Here $\lambda$ has been wrapped twice, and to do $n\dash$surgery, we wrap $n$ ti
 
 :::
 
-
 :::{.exercise title="?"}
 Draw a diagram for $S_n^3$ (the figure eight).
 :::
-
-
 
 
