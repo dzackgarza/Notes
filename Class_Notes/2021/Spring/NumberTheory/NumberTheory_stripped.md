@@ -45,7 +45,7 @@ Consider \( y^2 = x^3 + x \).
 \( (x, y) = (0, 0) \) is the only solution.
 :::
 
-To see this, write \( y^2 = x(x^2+1) \), which are relatively prime, i.e. no \( D\in {\mathbb{Z}} \) divides both of them. Why? If \( d \mathrel{\Big|}x \) and \( d \mathrel{\Big|}x+1 \), then \( d\mathrel{\Big|}(x^2+1) + (-x) = 1 \). It's also the case that both \( x^2+1 \) and \( x^2 \) are squares (up to a unit), so \( x^2, x^2 + 1 \) are consecutive squares in \( {\mathbb{Z}} \). But the gaps between squares are increasing: \( 1, 2, 4, 9, \cdots \). The only possibilities would be \( x=0, y=1 \), but in this case you can conclude \( y=0 \).
+To see this, write \( y^2 = x(x^2+1) \), which are relatively prime, i.e. no \( D\in {\mathbb{Z}} \) divides both of them. Why? If \( d \bigm|x \) and \( d \bigm|x+1 \), then \( d\bigm|(x^2+1) + (-x) = 1 \). It's also the case that both \( x^2+1 \) and \( x^2 \) are squares (up to a unit), so \( x^2, x^2 + 1 \) are consecutive squares in \( {\mathbb{Z}} \). But the gaps between squares are increasing: \( 1, 2, 4, 9, \cdots \). The only possibilities would be \( x=0, y=1 \), but in this case you can conclude \( y=0 \).
 :::
 
 ::: {.example title="Fermat"}
@@ -96,12 +96,12 @@ The two factors \( y \pm \sqrt 2 \) are *coprime* in \( {\mathbb{Z}}[\sqrt{-2}] 
 :::
 
 ::: {.proof title="?"}
-Suppose \( \delta\mathrel{\Big|}y\pm \sqrt{-2} \), then \( y + \sqrt{-2} = \delta \beta \) for some \( \beta\in {\mathbb{Z}}[\sqrt{-2}] \). Take norms to obtain \( y^2 + 2 = N \delta N \beta \), and in particular
+Suppose \( \delta\bigm|y\pm \sqrt{-2} \), then \( y + \sqrt{-2} = \delta \beta \) for some \( \beta\in {\mathbb{Z}}[\sqrt{-2}] \). Take norms to obtain \( y^2 + 2 = N \delta N \beta \), and in particular
 
 -   \( N \delta y^2 +2 \)
--   \( \delta \mathrel{\Big|}(y+ \sqrt{-2} ) - (y - \sqrt{-2} ) = 2 \sqrt{-2} \) and thus \( N \delta \mathrel{\Big|}N(2 \sqrt{-2} ) = 8 \).
+-   \( \delta \bigm|(y+ \sqrt{-2} ) - (y - \sqrt{-2} ) = 2 \sqrt{-2} \) and thus \( N \delta \bigm|N(2 \sqrt{-2} ) = 8 \).
 
-In the original equation \( y^2 = x^3-2 \), if \( y \) is even then \( x \) is even, and \( x^3 - 2 \equiv 0-2 \pmod 4 \equiv 2 \), and so \( y^2 \equiv 2 \pmod 4 \). But this can't happen, so \( y \) is odd, and we're done: we have \( N \delta\mathrel{\Big|}8 \) which is even or 1, but \( N \delta\mathrel{\Big|}y^2 +2 \) which is odd, so \( N \delta = 1 \).
+In the original equation \( y^2 = x^3-2 \), if \( y \) is even then \( x \) is even, and \( x^3 - 2 \equiv 0-2 \pmod 4 \equiv 2 \), and so \( y^2 \equiv 2 \pmod 4 \). But this can't happen, so \( y \) is odd, and we're done: we have \( N \delta\bigm|8 \) which is even or 1, but \( N \delta\bigm|y^2 +2 \) which is odd, so \( N \delta = 1 \).
 :::
 
 We can identify the units in this ring:
@@ -113,7 +113,7 @@ which forces \( a^2 \leq 1, b^2 \leq 1 \) and thus this set is \( \left\{{\pm 1}
 y + \sqrt{-2} = (a + b \sqrt{-2} )^3 = (a^3-6ab^2) + (3a^2b -2b^3) \sqrt{-2}
 .\]
 Comparing coefficients of \( \sqrt{-2} \) yields
-\[ 1 = b(3a^2b - 2b^2) \in {\mathbb{Z}}\implies b \mathrel{\Big|}1
+\[ 1 = b(3a^2b - 2b^2) \in {\mathbb{Z}}\implies b \bigm|1
 ,\]
 and thus \( b\in {\mathbb{Z}}^{\times} \), i.e. \( b\in \left\{{\pm 1}\right\} \). By cases:
 
@@ -373,7 +373,7 @@ Why not just work in \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5
 
 \
 
-\( \supseteq \) : Let \( \alpha\in {\mathbb{Z}}_{\mathbb{Q}}= {\mathbb{Q}}\cap\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu \) , so \( \alpha \) is a root of \( x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in {\mathbb{Z}}[x] \). We know \( \alpha= a/b \) with \( a,b \in {\mathbb{Z}} \), and we can use the rational root test which tells us that \( a\mathrel{\Big|}a_0 \) and \( b\mathrel{\Big|}1 \), so \( b = \pm 1 \) and \( \alpha = a/\pm 1 = \pm a \in {\mathbb{Z}} \) and thus \( \alpha \in {\mathbb{Z}} \).
+\( \supseteq \) : Let \( \alpha\in {\mathbb{Z}}_{\mathbb{Q}}= {\mathbb{Q}}\cap\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu \) , so \( \alpha \) is a root of \( x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in {\mathbb{Z}}[x] \). We know \( \alpha= a/b \) with \( a,b \in {\mathbb{Z}} \), and we can use the rational root test which tells us that \( a\bigm|a_0 \) and \( b\bigm|1 \), so \( b = \pm 1 \) and \( \alpha = a/\pm 1 = \pm a \in {\mathbb{Z}} \) and thus \( \alpha \in {\mathbb{Z}} \).
 :::
 
 ::: {.remark}
@@ -464,7 +464,7 @@ where \( A\neq 0 \), since this would imply that \( \alpha\in{\mathbb{Q}} \). Wr
 
 \
 
-Now let \( f\in {\mathbb{Z}}^{\geq 0} \) be chosen such that \( f^2 \mathrel{\Big|}\Delta \) and \( f \) is as large as possible, i.e. the largest square factor of \( \Delta \). Writing \( \Delta = f^2 - d \) where \( d \) is whatever remains. Then \( d \) must be squarefree, otherwise if \( d \) had a square factor bigger than 1, say \( d = r^2 d' \), in which case \( f^2 r^2 > f^2 \) would be a larger factor of \( \Delta \). So \( d \) is squarefree, and \( \Delta = f \sqrt d \) and thus \( {\mathbb{Q}}(\Delta) = {\mathbb{Q}}(\sqrt{d}) \).
+Now let \( f\in {\mathbb{Z}}^{\geq 0} \) be chosen such that \( f^2 \bigm|\Delta \) and \( f \) is as large as possible, i.e. the largest square factor of \( \Delta \). Writing \( \Delta = f^2 - d \) where \( d \) is whatever remains. Then \( d \) must be squarefree, otherwise if \( d \) had a square factor bigger than 1, say \( d = r^2 d' \), in which case \( f^2 r^2 > f^2 \) would be a larger factor of \( \Delta \). So \( d \) is squarefree, and \( \Delta = f \sqrt d \) and thus \( {\mathbb{Q}}(\Delta) = {\mathbb{Q}}(\sqrt{d}) \).
 
 **Uniqueness**: Well use some extra machinery.
 :::
@@ -496,7 +496,7 @@ Returning to the proof, suppose otherwise that \( K = {\mathbb{Q}}(\sqrt{d_1} ) 
 
 \
 
-Taking the trace of both sides, the LHS is zero and the RHS is \( 2a \) and we get \( a=0 \) and \( \sqrt{d_1} = b \sqrt{d_2} \). Write \( b = u/v \) with \( u,v\in {\mathbb{Q}} \). Squaring both sides yields \( v^2 d_1 = u^2 d_2 \). Let \( p \) be a prime dividing \( d_1 \); then since \( d_1 \) is squarefree there is only one copy of \( p \) occurring in its factorization. Moreover there are an even number of copies of \( p \) coming from \( v^2 \), thus forcing \( d_2 \) to have an odd power of \( p \). This forces \( p\mathrel{\Big|}d_2 \), and since this holds for every prime factor \( p \) of \( d_1 \), we get \( d_1 \mathrel{\Big|}d_2 \) since \( d_1 \) is squarefree. The same argument shows that \( d_2 \mathrel{\Big|}d_1 \), so they're the same up to sign: but the signs must match and we get \( d_1 = d_2 \).
+Taking the trace of both sides, the LHS is zero and the RHS is \( 2a \) and we get \( a=0 \) and \( \sqrt{d_1} = b \sqrt{d_2} \). Write \( b = u/v \) with \( u,v\in {\mathbb{Q}} \). Squaring both sides yields \( v^2 d_1 = u^2 d_2 \). Let \( p \) be a prime dividing \( d_1 \); then since \( d_1 \) is squarefree there is only one copy of \( p \) occurring in its factorization. Moreover there are an even number of copies of \( p \) coming from \( v^2 \), thus forcing \( d_2 \) to have an odd power of \( p \). This forces \( p\bigm|d_2 \), and since this holds for every prime factor \( p \) of \( d_1 \), we get \( d_1 \bigm|d_2 \) since \( d_1 \) is squarefree. The same argument shows that \( d_2 \bigm|d_1 \), so they're the same up to sign: but the signs must match and we get \( d_1 = d_2 \).
 :::
 
 ::: {.remark}
@@ -650,15 +650,15 @@ A **monoid** is a nonempty set with a commutative associative binary operation \
 ::: {.definition title="Terminology for Cancellative Monoids"}
 Let \( M \) be a cancellative monoid. Then
 
--   \( \alpha\mathrel{\Big|}\beta \) if and only if \( \beta= \alpha \gamma \) for some \( \gamma \).
+-   \( \alpha\bigm|\beta \) if and only if \( \beta= \alpha \gamma \) for some \( \gamma \).
 
--   \( \epsilon \) is a **unit** if \( \epsilon\mathrel{\Big|}1 \).
+-   \( \epsilon \) is a **unit** if \( \epsilon\bigm|1 \).
 
 -   \( \alpha , \beta \) are **associates** if \( \alpha = \epsilon \beta \) for some unit \( \epsilon \)
 
 -   \( \pi\in M \) is **irreducible** if and only if \( \pi \) is a unit and whenever \( \pi= \alpha \beta \) then either \( \alpha \) or \( \beta \) is a unit.
 
--   \( \pi \in M \) is **prime** whenever \( \pi\mathrel{\Big|}\alpha \beta \) then \( \pi\mathrel{\Big|}\alpha \) or \( \pi\mathrel{\Big|}\beta \).
+-   \( \pi \in M \) is **prime** whenever \( \pi\bigm|\alpha \beta \) then \( \pi\bigm|\alpha \) or \( \pi\bigm|\beta \).
 
 -   \( \delta \in M \) is a greatest common divisor of \( \alpha, \beta \) if and only if \( \delta \) is a common divisor that is divisible by every other common divisor.
 
@@ -834,8 +834,8 @@ A domain \( R \) is **Euclidean** if and only if there is a function \( \varphi 
 ```{=tex}
 \envlist
 ```
--   For \( R={\mathbb{Z}} \), one can take \( \varphi({\,\cdot\,}) \coloneqq{\left\lvert {{\,\cdot\,}} \right\rvert} \).
--   \( R = {\mathbb{F}}[t] \) for \( {\mathbb{F}} \) a field with \( \varphi({\,\cdot\,}) = \deg({\,\cdot\,}) \).
+-   For \( R={\mathbb{Z}} \), one can take \( \varphi({-}) \coloneqq{\left\lvert {{-}} \right\rvert} \).
+-   \( R = {\mathbb{F}}[t] \) for \( {\mathbb{F}} \) a field with \( \varphi({-}) = \deg({-}) \).
 :::
 
 ::: {.remark}
@@ -851,7 +851,7 @@ If \( K \) is a quadratic field, then
 
 -   \( K \) is **Euclidean** if and only if \( {\mathbb{Z}}_K \) is a Euclidean domain,
 
--   \( K \) is **norm-Euclidean** if and only if \( {\mathbb{Z}}_K \) is Euclidean with respect to \( \varphi({\,\cdot\,}) \coloneqq{\left\lvert {N({\,\cdot\,})} \right\rvert} \).
+-   \( K \) is **norm-Euclidean** if and only if \( {\mathbb{Z}}_K \) is Euclidean with respect to \( \varphi({-}) \coloneqq{\left\lvert {N({-})} \right\rvert} \).
 :::
 
 ::: {.proposition title="Characterization of norm-Euclidean quadratic fields"}
@@ -859,7 +859,7 @@ Let \( K \) be a quadratic field. Then \( K \) is norm-Euclidean if and only if 
 :::
 
 ::: {.proof title="of proposition"}
-\( \impliedby \): Let \( a,b \in {\mathbb{Z}}_k \) with \( b\neq 0 \). Define \( \beta\coloneqq a/b \in K \), then by assumption choose \( \gamma \) such that \( {\left\lvert {N \qty{ {a\over b} - \gamma} } \right\rvert}< 1 \). Multiplying both sides by \( N(b) \) and using the fact that \( N({\,\cdot\,}), {\left\lvert {{\,\cdot\,}} \right\rvert} \) are multiplicative, we have
+\( \impliedby \): Let \( a,b \in {\mathbb{Z}}_k \) with \( b\neq 0 \). Define \( \beta\coloneqq a/b \in K \), then by assumption choose \( \gamma \) such that \( {\left\lvert {N \qty{ {a\over b} - \gamma} } \right\rvert}< 1 \). Multiplying both sides by \( N(b) \) and using the fact that \( N({-}), {\left\lvert {{-}} \right\rvert} \) are multiplicative, we have
 \[
 {\left\lvert {N(a - b \gamma)} \right\rvert} < {\left\lvert {N(b)} \right\rvert} 
 .\]
@@ -1014,7 +1014,7 @@ For these \( d \), \( {\mathbb{Z}}_K \) is a PID and thus a UFD.
 :::
 
 ::: {.remark}
-So we've classified all norm-Euclidean imaginary quadratic fields. What about removing the word "norm"? We restricted to \( {\left\lvert {N({\,\cdot\,})} \right\rvert} \) because there was a particularly nice geometric interpretation, whereas being Euclidean involves a mysterious \( \varphi \). Remarkably, it can be done, and it's the same list!
+So we've classified all norm-Euclidean imaginary quadratic fields. What about removing the word "norm"? We restricted to \( {\left\lvert {N({-})} \right\rvert} \) because there was a particularly nice geometric interpretation, whereas being Euclidean involves a mysterious \( \varphi \). Remarkably, it can be done, and it's the same list!
 :::
 
 ::: {.theorem title="Motzkin"}
@@ -1164,7 +1164,7 @@ Note that this is only determined up to \( A \pmod n \).
 :::
 
 ::: {.proof title="of proposition"}
-Take any element in \( I \), which can be represented as \( a + b \tau \), we want to show that this can be expressed in terms of the proposed basis. Note that \( B\mathrel{\Big|}b \) by its definition, since \( B \) generated the ideal of \( \tau \) coefficients. So write \( b = Bs \), then
+Take any element in \( I \), which can be represented as \( a + b \tau \), we want to show that this can be expressed in terms of the proposed basis. Note that \( B\bigm|b \) by its definition, since \( B \) generated the ideal of \( \tau \) coefficients. So write \( b = Bs \), then
 \[
 ( a + b \tau) - (A + b \tau)s \in {\mathbb{Z}}\cap I = \left\langle{ n }\right\rangle 
 .\]
@@ -1206,7 +1206,7 @@ Let \( I {~\trianglelefteq~}{\mathbb{Z}}_K \) be nonzero and define \( \mkern 1.
 :::
 
 ::: {.lemma title="The $\\tau$ coefficient divides the remaining coefficient"}
-Let \( n \) be as above and let \( A + B \tau \) be a standard basis for \( I \). Then \( B\mathrel{\Big|}n \) and \( B\mathrel{\Big|}A \).
+Let \( n \) be as above and let \( A + B \tau \) be a standard basis for \( I \). Then \( B\bigm|n \) and \( B\bigm|A \).
 :::
 
 ::: {.proof title="of lemma"}
@@ -1225,7 +1225,7 @@ Substituting yields
 &= A \tau + B ( \operatorname{Tr}( \tau) \tau - N( \tau) ) \\
 &= - B N( \tau) + (A + B \operatorname{Tr}( \tau ) ) \tau
 .\]
-The coefficient of \( \tau \) must be a multiple of \( B \), which forces \( B\mathrel{\Big|}A \).
+The coefficient of \( \tau \) must be a multiple of \( B \), which forces \( B\bigm|A \).
 :::
 
 ::: {.proof title="of theorem"}
@@ -1245,7 +1245,7 @@ Now multiplying the two yields
 \[
 I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu = \left\langle{ B^2 }\right\rangle \left\langle{ (n')^2, n'(A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu ), n'(A' + \tau), N(A' + \tau) }\right\rangle  
 .\]
-It's tempting to factor out \( n' \), but it isn't obviously in the last factor. But it is! Note that \( N(A' + \tau) \in \left\langle{ A' + \tau, n' }\right\rangle \) and thus \( B N(A' + gt) \in \left\langle{ B }\right\rangle \left\langle{ A' + \tau, n' }\right\rangle = I \). But the first expression is an ordinary integer, i.e. in \( I \cap{\mathbb{Z}}= \left\langle{ n }\right\rangle \) and thus a multiple of \( n \). So \( Bn' = n \mathrel{\Big|}BN(A' + \tau) \), and thus \( n' \mathrel{\Big|}N(A' + \tau) \). So we can rewrite
+It's tempting to factor out \( n' \), but it isn't obviously in the last factor. But it is! Note that \( N(A' + \tau) \in \left\langle{ A' + \tau, n' }\right\rangle \) and thus \( B N(A' + gt) \in \left\langle{ B }\right\rangle \left\langle{ A' + \tau, n' }\right\rangle = I \). But the first expression is an ordinary integer, i.e. in \( I \cap{\mathbb{Z}}= \left\langle{ n }\right\rangle \) and thus a multiple of \( n \). So \( Bn' = n \bigm|BN(A' + \tau) \), and thus \( n' \bigm|N(A' + \tau) \). So we can rewrite
 \[
 I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu 
 &= \left\langle{ B^2 }\right\rangle \left\langle{ n' }\right\rangle \left\langle{ n', A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu , A' + \tau, { N(A' + \tau) \over n'} }\right\rangle   \\
@@ -1271,7 +1271,7 @@ Consider \( \alpha \coloneqq(A' + \tau) / d \in K \). Taking the trace is \( {\m
 
 \
 
-The claim is that \( N \alpha \) is also an integer: since \( N(A' + \tau)/n', \operatorname{Tr}(A' + \tau) \) are in \( J \), \( d \) divides both. So we know that \( d^2 \mathrel{\Big|}(n') (N(A' + \tau) / n') = N(A' + \tau) \), which forces \( N \alpha\in {\mathbb{Z}} \). So we know \( N \alpha, \operatorname{Tr}\alpha \in {\mathbb{Z}} \), which forces \( \alpha\in {\mathbb{Z}}_K \) since \( \alpha \) is a root of \( x^2 - \operatorname{Tr}(\alpha) + N \alpha \). But \( \alpha \) can't be in \( {\mathbb{Z}}_K \), since these consist only of \( {\mathbb{Z}}{\hbox{-}} \)linear combinations of \( 1, \tau \) -- however here the coefficient of \( \tau \) is \( 1/d \not \in {\mathbb{Z}} \), and thus \( \alpha = A'/d + (1/d) \tau \not\in {\mathbb{Z}}_K \).
+The claim is that \( N \alpha \) is also an integer: since \( N(A' + \tau)/n', \operatorname{Tr}(A' + \tau) \) are in \( J \), \( d \) divides both. So we know that \( d^2 \bigm|(n') (N(A' + \tau) / n') = N(A' + \tau) \), which forces \( N \alpha\in {\mathbb{Z}} \). So we know \( N \alpha, \operatorname{Tr}\alpha \in {\mathbb{Z}} \), which forces \( \alpha\in {\mathbb{Z}}_K \) since \( \alpha \) is a root of \( x^2 - \operatorname{Tr}(\alpha) + N \alpha \). But \( \alpha \) can't be in \( {\mathbb{Z}}_K \), since these consist only of \( {\mathbb{Z}}{\hbox{-}} \)linear combinations of \( 1, \tau \) -- however here the coefficient of \( \tau \) is \( 1/d \not \in {\mathbb{Z}} \), and thus \( \alpha = A'/d + (1/d) \tau \not\in {\mathbb{Z}}_K \).
 :::
 
 ::: {.remark}
@@ -1391,12 +1391,12 @@ Then since \( I\tilde I \) is principal, it can be cancelled using the previous 
 ::: {.theorem title="To divide is to contain"}
 Let \( I, J \) be nonzero ideals of \( {\mathbb{Z}}_K \), then
 \[
-I \mathrel{\Big|}J \iff I \supseteq J
+I \bigm|J \iff I \supseteq J
 .\]
 :::
 
 ::: {.proof title="of theorem"}
-\( \implies \): This is true in any ring! If \( I\mathrel{\Big|}J \), then \( J = IM \) where \( M {~\trianglelefteq~}{\mathbb{Z}}_K \), and by definition \( IM \subseteq I \) and so \( J \subseteq I \).
+\( \implies \): This is true in any ring! If \( I\bigm|J \), then \( J = IM \) where \( M {~\trianglelefteq~}{\mathbb{Z}}_K \), and by definition \( IM \subseteq I \) and so \( J \subseteq I \).
 
 \
 
@@ -1452,14 +1452,19 @@ We'd like the norms of \( A, B \) to be smaller, since then we could apply the i
 :::
 
 ::: {.proof title="of 2: Euclid's Lemma"}
-Suppose \( P \) is irreducible in \( \operatorname{Id}({\mathbb{Z}}_K) \) and suppose \( P \mathrel{\Big|}IJ \), we want to show \( P \) divides one of these two. Suppose \( P\nmid I \), then \( P \) does not contain \( I \) and \( P+I \supsetneq P \). This means that \( P+I \) is a *proper divisor* of \( P \), i.e. it divides \( P \) but is not equal to \( P \). But \( P \) was irreducible, so \( P+I \) is a unit, which forces \( P + I = \left\langle{ 1 }\right\rangle \). Multiplying by \( J \) yields \( PJ + IJ = J \). We said that \( P \mathrel{\Big|}IJ \) by assumption, so \( IJ = PA \) for some nonzero ideal \( A \). So
+Suppose \( P \) is irreducible in \( \operatorname{Id}({\mathbb{Z}}_K) \) and suppose \( P \bigm|IJ \), we want to show \( P \) divides one of these two. Suppose \( P%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+I \), then \( P \) does not contain \( I \) and \( P+I \supsetneq P \). This means that \( P+I \) is a *proper divisor* of \( P \), i.e. it divides \( P \) but is not equal to \( P \). But \( P \) was irreducible, so \( P+I \) is a unit, which forces \( P + I = \left\langle{ 1 }\right\rangle \). Multiplying by \( J \) yields \( PJ + IJ = J \). We said that \( P \bigm|IJ \) by assumption, so \( IJ = PA \) for some nonzero ideal \( A \). So
 \[
 J 
 &= PJ + IJ \\
 &= PJ + PA \\ 
 &= P(J + A)
 ,\]
-which shows that \( P\mathrel{\Big|}J \).
+which shows that \( P\bigm|J \).
 :::
 
 ::: {.remark}
@@ -1479,7 +1484,7 @@ This chapter is about understanding prime ideals in quadratic number rings, i.e.
 :::
 
 ::: {.definition title="Prime ideal above a prime number"}
-Let \( P \) be a nonzero prime ideal, then \( P \) **lies above** the rational prime \( p \) if and only if \( P \supseteq \left\langle{ p }\right\rangle \). Equivalently, \( p\in P \), or \( P\mathrel{\Big|}\left\langle{ p }\right\rangle \).
+Let \( P \) be a nonzero prime ideal, then \( P \) **lies above** the rational prime \( p \) if and only if \( P \supseteq \left\langle{ p }\right\rangle \). Equivalently, \( p\in P \), or \( P\bigm|\left\langle{ p }\right\rangle \).
 :::
 
 ::: {.theorem title="Lying above unique primes"}
@@ -1487,7 +1492,7 @@ Every nonzero prime ideal of \( {\mathbb{Z}}_K \) lies above a unique rational p
 :::
 
 ::: {.proof title="of theorem"}
-Consider \( P \cap{\mathbb{Z}}{~\trianglelefteq~}{\mathbb{Z}} \). Tracing through the definitions, if \( P \) is a prime ideal in \( {\mathbb{Z}}_K \), then this intersection is also prime in \( {\mathbb{Z}} \). Moreover \( P \cap Z \neq \left\{{ 0 }\right\} \), since we can take any nonzero element \( \alpha \in P \), then \( 0\neq \alpha\mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu\in {\mathbb{Z}} \) and since \( P \) absorbs multiplication, this is still in \( P \). The nonzero prime ideals of \( {\mathbb{Z}} \) are of the form \( n{\mathbb{Z}} \) with \( n \) prime, so \( P \cap{\mathbb{Z}}= p{\mathbb{Z}} \) for some prime \( p \). But then \( p\in P \) and \( P \) lies above \( p \). Why is this unique? If \( P \) lies above \( q \), we would have \( q\in P \cap{\mathbb{Z}}= p {\mathbb{Z}} \) and thus \( p\mathrel{\Big|}q \). But since these are both primes, \( p=q \).
+Consider \( P \cap{\mathbb{Z}}{~\trianglelefteq~}{\mathbb{Z}} \). Tracing through the definitions, if \( P \) is a prime ideal in \( {\mathbb{Z}}_K \), then this intersection is also prime in \( {\mathbb{Z}} \). Moreover \( P \cap Z \neq \left\{{ 0 }\right\} \), since we can take any nonzero element \( \alpha \in P \), then \( 0\neq \alpha\mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu\in {\mathbb{Z}} \) and since \( P \) absorbs multiplication, this is still in \( P \). The nonzero prime ideals of \( {\mathbb{Z}} \) are of the form \( n{\mathbb{Z}} \) with \( n \) prime, so \( P \cap{\mathbb{Z}}= p{\mathbb{Z}} \) for some prime \( p \). But then \( p\in P \) and \( P \) lies above \( p \). Why is this unique? If \( P \) lies above \( q \), we would have \( q\in P \cap{\mathbb{Z}}= p {\mathbb{Z}} \) and thus \( p\bigm|q \). But since these are both primes, \( p=q \).
 :::
 
 ::: {.remark}
@@ -1502,7 +1507,7 @@ If we want to figure out all of the prime ideals \( P \) of \( {\mathbb{Z}}_K \)
 Today: chapter 7. Let \( K \) be a quadratic number field. Recall that if \( P {~\trianglelefteq~}{\mathbb{Z}}_K \) is a prime then \( P \) **lies above** \( p\in {\mathbb{Z}} \) if \( P \supseteq \left\langle{ p }\right\rangle \). Equivalently,
 
 -   \( P \) contains \( p \), or
--   \( P \mathrel{\Big|}\left\langle{ p }\right\rangle \)
+-   \( P \bigm|\left\langle{ p }\right\rangle \)
 
 Last time we saw that every \( P \) lies above a unique \( p \). The following diagram illustrates the situation:
 
@@ -1616,7 +1621,7 @@ Define \( P_1, P_2 \) as in the theorem. Why are these of norm \( p \)? Consider
 &\cong { {\mathbb{Z}}[x] / \left\langle{ \min_\tau(x) }\right\rangle \over \left\langle{ p, x-a }\right\rangle } \\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
-&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle && \text{since } x-a \mathrel{\Big|}\min_\tau(x)\\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle && \text{since } x-a \bigm|\min_\tau(x)\\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}
 .\]
 So \( P_1 \) is maximal and thus prime, and moreover \( N(P_1) = p \) since there are \( p \) elements in \( {\mathbb{Z}}/p{\mathbb{Z}} \). The same argument works for \( P_2 \). Now multiplying them yields
@@ -1630,7 +1635,7 @@ Note that
 \implies
 \min_\tau(x) &= (x-a)(x-b) + pG(x)
 \]
-for some \( G\in {\mathbb{Z}}[x] \). Plugging in \( \tau \), the LHS is zero, while on the RHS yields \( \cdots + pG(\tau) \). This last term is \( pr \) for some \( r\in R \), which is zero mod \( p \in {\mathbb{Z}}[\tau] = {\mathbb{Z}}_K \) So \( p \) now divides every term in the generating set above, and since to contain is to divide, we have \( P_1 P_2 \subseteq \left\langle{ p }\right\rangle \) and \( \left\langle{ p }\right\rangle \mathrel{\Big|}P_1 P_2 \). Write \( P_1 P_2 = \left\langle{ p }\right\rangle I \) for some ideal \( I \), taking norms yields
+for some \( G\in {\mathbb{Z}}[x] \). Plugging in \( \tau \), the LHS is zero, while on the RHS yields \( \cdots + pG(\tau) \). This last term is \( pr \) for some \( r\in R \), which is zero mod \( p \in {\mathbb{Z}}[\tau] = {\mathbb{Z}}_K \) So \( p \) now divides every term in the generating set above, and since to contain is to divide, we have \( P_1 P_2 \subseteq \left\langle{ p }\right\rangle \) and \( \left\langle{ p }\right\rangle \bigm|P_1 P_2 \). Write \( P_1 P_2 = \left\langle{ p }\right\rangle I \) for some ideal \( I \), taking norms yields
 \[
 N(P_1) N(P_2) = N( \left\langle{ p }\right\rangle) N(I) 
 .\]
@@ -1806,7 +1811,7 @@ There is a \( q \leq Q \in {\mathbb{Z}}^+ \) with
 \[ 
 {\left\lVert {q \alpha } \right\rVert} \leq {1 \over Q+1} 
 ,\]
-where \( {\left\lVert {{\,\cdot\,}} \right\rVert} \) denotes the distance to the nearest integer.
+where \( {\left\lVert {{-}} \right\rVert} \) denotes the distance to the nearest integer.
 :::
 
 ::: {.remark}
@@ -1877,7 +1882,7 @@ For all real \( x> 0 \) there are finitely many nonzero ideals \( I{~\trianglele
 :::
 
 ::: {.proof title="of lemma"}
-Suppose \( N(I) \coloneqq m \leq x \) with \( m \in {\mathbb{Z}}^+ \); it's enough to show that for each \( m \) there are at most finitely many \( I \), since there are only finitely many values of \( m \leq x \). View \( {\mathbb{Z}}_K / I \) as a group under addition, so by Lagrange every element has order dividing \( m \). We can check \( m = 1 + 1 + \cdots + 1 \), which must be the identity in \( {\mathbb{Z}}_K/I \). So \( m\in I \), and since to contain is to divide, \( I \mathrel{\Big|}\left\langle{ m }\right\rangle \). But \( \left\langle{ m }\right\rangle \) has only finitely many ideal divisors. Why? This is because there is unique prime factorization, and just like \( n = \prod p_i^{n_i} \) in the integers, \( n \) has \( \sum n_i < \infty \) possible divisors.
+Suppose \( N(I) \coloneqq m \leq x \) with \( m \in {\mathbb{Z}}^+ \); it's enough to show that for each \( m \) there are at most finitely many \( I \), since there are only finitely many values of \( m \leq x \). View \( {\mathbb{Z}}_K / I \) as a group under addition, so by Lagrange every element has order dividing \( m \). We can check \( m = 1 + 1 + \cdots + 1 \), which must be the identity in \( {\mathbb{Z}}_K/I \). So \( m\in I \), and since to contain is to divide, \( I \bigm|\left\langle{ m }\right\rangle \). But \( \left\langle{ m }\right\rangle \) has only finitely many ideal divisors. Why? This is because there is unique prime factorization, and just like \( n = \prod p_i^{n_i} \) in the integers, \( n \) has \( \sum n_i < \infty \) possible divisors.
 :::
 
 ::: {.proof title="There exists a nontrivial unit"}
@@ -1917,7 +1922,7 @@ It's easy to check that this is an equivalence relation, so we'll use \( I \appr
 ::: {.definition title="Class Group"}
 The **class group** of \( {\mathbb{Z}}_K \) is defined as
 \[
-\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/\approx
+{ \operatorname{Cl}} ({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/\approx
 .\]
 :::
 
@@ -1926,13 +1931,13 @@ A priori this is just a set, but we can descent the monoid structure to define a
 :::
 
 ::: {.remark}
-This is an abelian group, wouldn't it be nice if it were finite? This is one of the big theorems of number theory: \( \operatorname{Cl}({\mathbb{Z}}_K) \) is finite. We can thus define the following:
+This is an abelian group, wouldn't it be nice if it were finite? This is one of the big theorems of number theory: \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is finite. We can thus define the following:
 :::
 
 ::: {.definition title="Class Number"}
 The **class number** of \( K \) is defined as:
 \[
-h_k \coloneqq{\left\lvert { \operatorname{Cl}({\mathbb{Z}}_K) } \right\rvert}
+h_k \coloneqq{\left\lvert { { \operatorname{Cl}} ({\mathbb{Z}}_K) } \right\rvert}
 .\]
 :::
 
@@ -1948,7 +1953,7 @@ C \coloneqq 1 + \operatorname{Tr}(\tau) + {\left\lvert {N(\tau)} \right\rvert}
 :::
 
 ::: {.remark}
-The norm of \( I \) is a natural thing to compare \( N \alpha \) to, since \( I \mathrel{\Big|}\left\langle{ \alpha }\right\rangle \) and thus \( N(I) \mathrel{\Big|}N(\left\langle{ \alpha }\right\rangle) \), so there's no hope of the LHS being smaller than \( N(I) \).
+The norm of \( I \) is a natural thing to compare \( N \alpha \) to, since \( I \bigm|\left\langle{ \alpha }\right\rangle \) and thus \( N(I) \bigm|N(\left\langle{ \alpha }\right\rangle) \), so there's no hope of the LHS being smaller than \( N(I) \).
 :::
 
 ::: {.proof title="?"}
@@ -1987,7 +1992,7 @@ Why is this true? There are only finitely many ideals with this norm bound, and 
 :::
 
 ::: {.proof title="of proposition"}
-Since we're working with a group, it suffices to work with inverses, since these still run over all elements. It's enough to show that for every \( I \in \operatorname{Id}({\mathbb{Z}}_K) \), we can write \( [I]^{-1}= [J] \) for some \( J \) satisfying \( N(J) \leq C \). Choose a nonzero \( \alpha\in I \) with \( {\left\lvert {N( \alpha )} \right\rvert}\leq C N(I) \). Since \( \alpha\in I \) we know that \( I \mathrel{\Big|}\left\langle{ \alpha }\right\rangle \), so we can write \( \left\langle{ \alpha }\right\rangle = IJ \) for some ideal \( J \). We have \( [I] [J] = [IJ] = [ \left\langle{ \alpha }\right\rangle ] = [ \left\langle{ 1 }\right\rangle ] \), since all principal ideals are dilation-equivalent to \( \left\langle{ 1 }\right\rangle \). This means that \( [J] = [I] ^{-1} \), and our hope is that it has small norm. Taking norms in \( \left\langle{ \alpha }\right\rangle = IJ \) yields
+Since we're working with a group, it suffices to work with inverses, since these still run over all elements. It's enough to show that for every \( I \in \operatorname{Id}({\mathbb{Z}}_K) \), we can write \( [I]^{-1}= [J] \) for some \( J \) satisfying \( N(J) \leq C \). Choose a nonzero \( \alpha\in I \) with \( {\left\lvert {N( \alpha )} \right\rvert}\leq C N(I) \). Since \( \alpha\in I \) we know that \( I \bigm|\left\langle{ \alpha }\right\rangle \), so we can write \( \left\langle{ \alpha }\right\rangle = IJ \) for some ideal \( J \). We have \( [I] [J] = [IJ] = [ \left\langle{ \alpha }\right\rangle ] = [ \left\langle{ 1 }\right\rangle ] \), since all principal ideals are dilation-equivalent to \( \left\langle{ 1 }\right\rangle \). This means that \( [J] = [I] ^{-1} \), and our hope is that it has small norm. Taking norms in \( \left\langle{ \alpha }\right\rangle = IJ \) yields
 \[
 {\left\lvert {N \alpha} \right\rvert} 
 &= N(I) N(J) \\
@@ -1999,7 +2004,7 @@ Since we're working with a group, it suffices to work with inverses, since these
 :::
 
 ::: {.example title="?"}
-What we'll look at next: \( \operatorname{Cl}( {\mathbb{Z}}[ \sqrt{-5} ]) \). We know this does not have unique factorization, and the claim is that the class group is nontrivial. If it were, every ideal would be dilation-equivalent to \( \left\langle{ 1 }\right\rangle \), making every ideal principal, and every PID is a UFD. Here we'll have \( C=6 \).
+What we'll look at next: \( { \operatorname{Cl}} ( {\mathbb{Z}}[ \sqrt{-5} ]) \). We know this does not have unique factorization, and the claim is that the class group is nontrivial. If it were, every ideal would be dilation-equivalent to \( \left\langle{ 1 }\right\rangle \), making every ideal principal, and every PID is a UFD. Here we'll have \( C=6 \).
 
 \
 
@@ -2011,7 +2016,7 @@ One could try to write down all ideals of norm bounded by 6, but instead lets co
 
 This allows us to conclude that
 \[
-\operatorname{Cl}({\mathbb{Z}}[ \sqrt{-5} ]) = \left\langle{ [P_1], [P_2], [P_3], [P_4] }\right\rangle
+{ \operatorname{Cl}} ({\mathbb{Z}}[ \sqrt{-5} ]) = \left\langle{ [P_1], [P_2], [P_3], [P_4] }\right\rangle
 .\]
 In fact, since \( P_4 \) is principal we can leave it out.
 :::
@@ -2023,7 +2028,7 @@ In fact, since \( P_4 \) is principal we can leave it out.
 ::: {.remark}
 Last time: we defined an equivalence relation on nonzero ideals of \( {\mathbb{Z}}_K \), namely \( I \approx J \iff I = \alpha J \) for some \( \alpha \in K^{\times} \). We then defined the **class group**
 \[
-\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K) / \approx
+{ \operatorname{Cl}} ({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K) / \approx
 .\]
 We saw that ideal multiplication descends to a well-defined group structure on ideal classes. Since ideal multiplication is commutative, this is an abelian group, and moreover it is finite.
 :::
@@ -2035,7 +2040,7 @@ Let \( K = {\mathbb{Q}}(d) \) where \( d \coloneqq\sqrt{ -5 } \). We saw that ev
 \left\langle{ 3 }\right\rangle = P_2 P_3 && P_2 \coloneqq\left\langle{ 3, 1 + \sqrt{-5} }\right\rangle,\, P_3 \coloneqq\left\langle{ 3, 1 - \sqrt{-5} }\right\rangle    \\
 \left\langle{ 5 }\right\rangle = P_4^2 && P_4 \coloneqq\left\langle{ \sqrt{-5} }\right\rangle.  
 .\]
-We conclude that \( \operatorname{Cl}({\mathbb{Z}}_K) = \left\langle{ P_1, \cdots, P_4 }\right\rangle \). What are the relations? Consider \( P_4 \), and note that \( \left\langle{ \sqrt{-5} }\right\rangle \approx \left\langle{ 1 }\right\rangle \) since \( P_4 = \sqrt{-5} \left\langle{ 1 }\right\rangle \). A similar argument works for any principal ideal, and we can throw out \( P_4 \). Consider \( P_2 \) and \( P_3 \). Since \( \left\langle{ 3 }\right\rangle \approx \left\langle{ 1 }\right\rangle \), we have \( P_2 = P_3 ^{-1} \), so we can also throw out \( P_2 \), since we don't need to include the inverse of a generator. Recall that there is a factorization
+We conclude that \( { \operatorname{Cl}} ({\mathbb{Z}}_K) = \left\langle{ P_1, \cdots, P_4 }\right\rangle \). What are the relations? Consider \( P_4 \), and note that \( \left\langle{ \sqrt{-5} }\right\rangle \approx \left\langle{ 1 }\right\rangle \) since \( P_4 = \sqrt{-5} \left\langle{ 1 }\right\rangle \). A similar argument works for any principal ideal, and we can throw out \( P_4 \). Consider \( P_2 \) and \( P_3 \). Since \( \left\langle{ 3 }\right\rangle \approx \left\langle{ 1 }\right\rangle \), we have \( P_2 = P_3 ^{-1} \), so we can also throw out \( P_2 \), since we don't need to include the inverse of a generator. Recall that there is a factorization
 \[
 \left\langle{ 1 - \sqrt{-5} }\right\rangle 
 =
@@ -2043,7 +2048,7 @@ We conclude that \( \operatorname{Cl}({\mathbb{Z}}_K) = \left\langle{ P_1, \cdot
 \left\langle{ 3, 1 - \sqrt{-5} }\right\rangle  
 = P_1 P_3
 \]
-and so these are inverses and we can get rid of \( P_3 \). So \( \operatorname{Cl}({\mathbb{Z}}_K) = \left\langle{ [P_1] }\right\rangle \), which is a cyclic group. The generator has to have order 1 or 2, since \( P_1^2 = \left\langle{ 1 }\right\rangle \). The claim is that the order is 2: otherwise, it would be trivial, making the class group trivial, which would imply that \( {\mathbb{Z}}_K \) is a PID. Why? This implies that every \( I \in \operatorname{Id}({\mathbb{Z}}_K) \) is dilation equivalent to the unit ideal, so \( I = \alpha \left\langle{ 1 }\right\rangle \) for some \( \alpha\in K^{\times} \). But since \( I \) is an ideal in \( {\mathbb{Z}}_K \), this forces \( \alpha\in {\mathbb{Z}}_K \) and \( I = \left\langle{ \alpha }\right\rangle \). This is a contradiction, since every PID is a UFD, and \( {\mathbb{Q}}( \sqrt{-5} ) \) has non-unique factorization. So we can write \( \operatorname{Cl}({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}}) \).
+and so these are inverses and we can get rid of \( P_3 \). So \( { \operatorname{Cl}} ({\mathbb{Z}}_K) = \left\langle{ [P_1] }\right\rangle \), which is a cyclic group. The generator has to have order 1 or 2, since \( P_1^2 = \left\langle{ 1 }\right\rangle \). The claim is that the order is 2: otherwise, it would be trivial, making the class group trivial, which would imply that \( {\mathbb{Z}}_K \) is a PID. Why? This implies that every \( I \in \operatorname{Id}({\mathbb{Z}}_K) \) is dilation equivalent to the unit ideal, so \( I = \alpha \left\langle{ 1 }\right\rangle \) for some \( \alpha\in K^{\times} \). But since \( I \) is an ideal in \( {\mathbb{Z}}_K \), this forces \( \alpha\in {\mathbb{Z}}_K \) and \( I = \left\langle{ \alpha }\right\rangle \). This is a contradiction, since every PID is a UFD, and \( {\mathbb{Q}}( \sqrt{-5} ) \) has non-unique factorization. So we can write \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}}) \).
 :::
 
 ::: {.remark}
@@ -2069,13 +2074,13 @@ There is no common prime ideal that divides both factors, using unique factoriza
 :::
 
 ::: {.proof title="?"}
-Suppose toward a contradiction that \( P \) is prime and divides both. Using that ideal norms are multiplicative, \( N(P) \mathrel{\Big|}N( \left\langle{ y + \sqrt{-5} }\right\rangle) = y^2 + 5 \). We also know \( P \) contains both factors, so it contains \( (y + \sqrt{-5} ) - (y - \sqrt{-5} ) = 2 \sqrt{-5} \), so \( N(P) \mathrel{\Big|}N( \left\langle{ 2 \sqrt{-5} }\right\rangle ) = 20 \). Thus \( N(P) \mathrel{\Big|}\gcd(y^2 + 5, 20) \) in \( {\mathbb{Z}} \). This is impossible!
+Suppose toward a contradiction that \( P \) is prime and divides both. Using that ideal norms are multiplicative, \( N(P) \bigm|N( \left\langle{ y + \sqrt{-5} }\right\rangle) = y^2 + 5 \). We also know \( P \) contains both factors, so it contains \( (y + \sqrt{-5} ) - (y - \sqrt{-5} ) = 2 \sqrt{-5} \), so \( N(P) \bigm|N( \left\langle{ 2 \sqrt{-5} }\right\rangle ) = 20 \). Thus \( N(P) \bigm|\gcd(y^2 + 5, 20) \) in \( {\mathbb{Z}} \). This is impossible!
 
 -   \( y \) is necessarily even for the original equation to be true. If \( y \) is odd, take the equation \( \pmod 8 \): an odd squared is \( 1\pmod 8 \), so \( y^2 +5 \equiv 6 \pmod 8 \), which is not a cube in \( {\mathbb{Z}}/8 \) since any cube is \( 0\pmod 8 \).
 
--   \( 5 \) can not divide \( y \). If so, \( 5 \) would divide the left-hand side and thus the right-hand side, which forces \( 5\mathrel{\Big|}x \) since \( 5 \) is prime. Then \( 5^3 \mathrel{\Big|}x^3 \), meaning \( 5^3 \mathrel{\Big|}y^2 + 5 \). In this case, \( 5^2 \mathrel{\Big|}y^2 + 5 \), and if \( 5\mathrel{\Big|}y \) then \( 5^2 \mathrel{\Big|}y^2 \), so we'd need \( 5^2 \mathrel{\Big|}5 \).
+-   \( 5 \) can not divide \( y \). If so, \( 5 \) would divide the left-hand side and thus the right-hand side, which forces \( 5\bigm|x \) since \( 5 \) is prime. Then \( 5^3 \bigm|x^3 \), meaning \( 5^3 \bigm|y^2 + 5 \). In this case, \( 5^2 \bigm|y^2 + 5 \), and if \( 5\bigm|y \) then \( 5^2 \bigm|y^2 \), so we'd need \( 5^2 \bigm|5 \).
 
-These together imply that \( \gcd(y^2 + 5, 25) = 1 \). This \( N(P) \mathrel{\Big|}1 \), forcing \( P = \left\langle{ 1 }\right\rangle \), a contradiction.
+These together imply that \( \gcd(y^2 + 5, 25) = 1 \). This \( N(P) \bigm|1 \), forcing \( P = \left\langle{ 1 }\right\rangle \), a contradiction.
 :::
 
 Thus we can write
@@ -2084,7 +2089,7 @@ Thus we can write
 \left\langle{ y - \sqrt{-5} }\right\rangle  &= J^3
 .\]
 
-In the previous argument, we wrote out \( (a + b \sqrt{-5} )^3 \), expanded, and compared coefficients. Here we have an equation in ideals, and we can't do something similar unless \( I, J \) are principal. This is in fact the case: we'll restrict our attention to the class group. The left-hand side is the unit ideal, since it is principal. So we can write \( [I]^3 = [J]^3 = e \), but we also know \( \operatorname{Cl}({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}}) \), so this can only happen if \( [I] = [J] = e \) and \( I, J \) must be principal. So we can write \( I = \left\langle{ a + b \sqrt{-5}}\right\rangle \) for some \( a, b \in {\mathbb{Z}} \). Thus
+In the previous argument, we wrote out \( (a + b \sqrt{-5} )^3 \), expanded, and compared coefficients. Here we have an equation in ideals, and we can't do something similar unless \( I, J \) are principal. This is in fact the case: we'll restrict our attention to the class group. The left-hand side is the unit ideal, since it is principal. So we can write \( [I]^3 = [J]^3 = e \), but we also know \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}}) \), so this can only happen if \( [I] = [J] = e \) and \( I, J \) must be principal. So we can write \( I = \left\langle{ a + b \sqrt{-5}}\right\rangle \) for some \( a, b \in {\mathbb{Z}} \). Thus
 \[
 \left\langle{ y + \sqrt{-5} }\right\rangle = \left\langle{ (a + b \sqrt{-5} )^2 }\right\rangle \implies y + \sqrt{-5} = \pm 1 \qty { a + b \sqrt{-5} }^3  
 ,\]
@@ -2102,7 +2107,7 @@ This is chapter 10. This statement shows up in talks: it's more of a vague senti
 :::
 
 ::: {.theorem title="Class number 1 iff UFD"}
-Recall that the class number is defined as \( h_K \coloneqq\# \operatorname{Cl}({\mathbb{Z}}_K) \). Then
+Recall that the class number is defined as \( h_K \coloneqq\# { \operatorname{Cl}} ({\mathbb{Z}}_K) \). Then
 \[
 h_K = 1 \iff {\mathbb{Z}}_K \text{ is a UFD}
 .\]
@@ -2113,7 +2118,7 @@ h_K = 1 \iff {\mathbb{Z}}_K \text{ is a UFD}
 
 \
 
-\( \impliedby \): Note that this is subtle: this is the claim that \( {\mathbb{Z}}_K \) is a UFD \( \implies {\mathbb{Z}}_K \) is a PID, which isn't true for general rings (e.g. \( {\mathbb{Z}}[x] \)). Suppose \( {\mathbb{Z}}_K \) is a UFD, then it's enough to show that every prime ideal is principal. Let \( P \) be prime, then \( P \) lies above some ordinary prime \( p \), so \( P \mathrel{\Big|}\left\langle{ p }\right\rangle \). We can factor \( \left\langle{ p }\right\rangle= \left\langle{ \prod_{i=1}^k \pi_i }\right\rangle = \prod_{i=1}^k \left\langle{ \pi_i }\right\rangle \) for some \( \pi_i \) irreducible. A prime ideal dividing a product, by unique factorization, must divide a factor, so \( P \mathrel{\Big|}\left\langle{ \pi_i }\right\rangle \) for some \( i \). In a UFD, irreducibles are prime, so \( \left\langle{ \pi_i }\right\rangle \) is a prime ideal, so we have a prime ideal dividing a prime ideal. By unique factorization, this forces \( P = \left\langle{ \pi_i }\right\rangle \), make \( P \) principal.
+\( \impliedby \): Note that this is subtle: this is the claim that \( {\mathbb{Z}}_K \) is a UFD \( \implies {\mathbb{Z}}_K \) is a PID, which isn't true for general rings (e.g. \( {\mathbb{Z}}[x] \)). Suppose \( {\mathbb{Z}}_K \) is a UFD, then it's enough to show that every prime ideal is principal. Let \( P \) be prime, then \( P \) lies above some ordinary prime \( p \), so \( P \bigm|\left\langle{ p }\right\rangle \). We can factor \( \left\langle{ p }\right\rangle= \left\langle{ \prod_{i=1}^k \pi_i }\right\rangle = \prod_{i=1}^k \left\langle{ \pi_i }\right\rangle \) for some \( \pi_i \) irreducible. A prime ideal dividing a product, by unique factorization, must divide a factor, so \( P \bigm|\left\langle{ \pi_i }\right\rangle \) for some \( i \). In a UFD, irreducibles are prime, so \( \left\langle{ \pi_i }\right\rangle \) is a prime ideal, so we have a prime ideal dividing a prime ideal. By unique factorization, this forces \( P = \left\langle{ \pi_i }\right\rangle \), make \( P \) principal.
 :::
 
 ::: {.question}
@@ -2133,9 +2138,9 @@ Suppose \( h_K = 2 \), and suppose \( \pi \in {\mathbb{Z}}_K \) is an irreducibl
 :::
 
 ::: {.proof title="of lemma"}
-Write \( \left\langle{ \pi }\right\rangle= \prod_{i=1}^g P_i \), we then want to show \( g=2 \). We have \( g\geq 2 \), since otherwise this would be a prime ideal, which would make \( \pi \) a prime element. The claim is that none of the \( P_i \) can be principal. Suppose toward a contradiction \( P_1 = \left\langle{ \rho }\right\rangle \). Note that multiplying ideals yields smaller sets, so the right-hand side is a subset of \( \left\langle{ \rho }\right\rangle \), as is the left-hand side, and so \( \rho \mathrel{\Big|}\pi \). Since the \( P_i \) were principal prime ideals, \( \rho \) is prime and thus irreducible (since prime \( \implies \) irreducible for any domain), so \( \rho = u \pi \) for some unit. Thus they generate the same ideal, and \( P_1 = \left\langle{ \rho }\right\rangle = \left\langle{ \pi }\right\rangle \). But then \( \pi \) generates a prime ideal, make \( \pi \) prime, a contradiction.
+Write \( \left\langle{ \pi }\right\rangle= \prod_{i=1}^g P_i \), we then want to show \( g=2 \). We have \( g\geq 2 \), since otherwise this would be a prime ideal, which would make \( \pi \) a prime element. The claim is that none of the \( P_i \) can be principal. Suppose toward a contradiction \( P_1 = \left\langle{ \rho }\right\rangle \). Note that multiplying ideals yields smaller sets, so the right-hand side is a subset of \( \left\langle{ \rho }\right\rangle \), as is the left-hand side, and so \( \rho \bigm|\pi \). Since the \( P_i \) were principal prime ideals, \( \rho \) is prime and thus irreducible (since prime \( \implies \) irreducible for any domain), so \( \rho = u \pi \) for some unit. Thus they generate the same ideal, and \( P_1 = \left\langle{ \rho }\right\rangle = \left\langle{ \pi }\right\rangle \). But then \( \pi \) generates a prime ideal, make \( \pi \) prime, a contradiction.
 
-So none of the \( P_i \) are principal. Look at this equation in the class group. The left-hand side is the identity, and the right-hand side are all non-identity elements a group of order 2. So \( [P_1][P_2] = e \), making \( P_1 P_2 = \left\langle{ \omega }\right\rangle \) principal. Then \( \left\langle{ \pi }\right\rangle\subseteq \left\langle{ \omega }\right\rangle \) and so \( \omega \mathrel{\Big|}\pi \). Moreover, \( \omega \) is not a unit since the product of two prime ideals is not the unit ideal. Since \( \pi \) is irreducible, this makes \( \omega= u \pi \) and thus \( \left\langle{ \omega }\right\rangle = \left\langle{ \pi }\right\rangle \). If this were the case, we could cancel in the original equation:
+So none of the \( P_i \) are principal. Look at this equation in the class group. The left-hand side is the identity, and the right-hand side are all non-identity elements a group of order 2. So \( [P_1][P_2] = e \), making \( P_1 P_2 = \left\langle{ \omega }\right\rangle \) principal. Then \( \left\langle{ \pi }\right\rangle\subseteq \left\langle{ \omega }\right\rangle \) and so \( \omega \bigm|\pi \). Moreover, \( \omega \) is not a unit since the product of two prime ideals is not the unit ideal. Since \( \pi \) is irreducible, this makes \( \omega= u \pi \) and thus \( \left\langle{ \omega }\right\rangle = \left\langle{ \pi }\right\rangle \). If this were the case, we could cancel in the original equation:
 \[
 \left\langle{ \pi }\right\rangle &= (P_1 P_2)P_3 \cdots P_g = \left\langle{ \pi }\right\rangle P_3 \cdots P_g   \\
 \implies \left\langle{ 1 }\right\rangle = P_3 \cdots P_g 
@@ -2165,7 +2170,7 @@ P =
 we'd then like to show that \( k=\ell \).
 
 ::: {.observation}
-If \( \pi_1 \) is prime, we can use that \( \left\langle{ \pi_1 }\right\rangle\mathrel{\Big|}\prod \left\langle{ \rho_j }\right\rangle \), and would thus have to divide (say) \( \left\langle{ \rho_1 }\right\rangle \) up to relabeling. Since everything is irreducible, if \( \pi_1 \mathrel{\Big|}\rho_1 \) then \( \left\langle{ \pi_1 }\right\rangle= \left\langle{ \rho_1 }\right\rangle \), meaning we can cancel.
+If \( \pi_1 \) is prime, we can use that \( \left\langle{ \pi_1 }\right\rangle\bigm|\prod \left\langle{ \rho_j }\right\rangle \), and would thus have to divide (say) \( \left\langle{ \rho_1 }\right\rangle \) up to relabeling. Since everything is irreducible, if \( \pi_1 \bigm|\rho_1 \) then \( \left\langle{ \pi_1 }\right\rangle= \left\langle{ \rho_1 }\right\rangle \), meaning we can cancel.
 :::
 
 So after cancellation, we can suppose that all the \( \pi_i, \rho_j \) and none are prime. Consider the number of prime ideals that show up after factoring all of the principal ideals on either side. By the lemma, any irreducible that's not prime factors into two primes, so we get \( 2k \) primes on the left-hand side (not necessarily distinct) and \( 2\ell \) on the right-hand side. But the factorization into primes *is* unique, so \( 2k=2\ell \) and \( k=\ell \).
@@ -2207,7 +2212,7 @@ Note that \( h_K = 1, 2\iff \rho(K) = 1 \), and \( h_K > 2 \implies \rho(K) > 1 
 ::: {.theorem title="Elasticity in terms of the Davenport constant"}
 For \( h_K \geq 2 \),
 \[
-\rho(K) = {1\over 2} D( \operatorname{Cl}( {\mathbb{Z}}_K))
+\rho(K) = {1\over 2} D( { \operatorname{Cl}} ( {\mathbb{Z}}_K))
 ,\]
 where \( D(G) \) is the **Davenport constant** of the finite abelian group \( G \): the smallest number \( D \) such that every sequence of \( D \) elements of \( G \) contains a nonempty subsequence whose product is the identity. This is a function from combinatorial group theory.
 :::
@@ -2225,7 +2230,7 @@ If \( h_K \to \infty \) for a sequence of number fields, then \( \rho(K) \to \in
 :::
 
 ::: {.remark}
-This just follows from the above facts, since \( h_K \to \infty \) means the size of the group \( G \coloneqq\operatorname{Cl}( {\mathbb{Z}}_K) \) goes to infinity, which is a constant times \( \rho(K) \). So as the class group gets larger, factorization gets worse.
+This just follows from the above facts, since \( h_K \to \infty \) means the size of the group \( G \coloneqq{ \operatorname{Cl}} ( {\mathbb{Z}}_K) \) goes to infinity, which is a constant times \( \rho(K) \). So as the class group gets larger, factorization gets worse.
 :::
 
 # Prime Producing Polynomials and Unique Factorization (Lec. 11, Tuesday, February 23)
@@ -2263,7 +2268,7 @@ Assume \( \mathbb{Z}\left[ { \tau } \right] \) is a UFD, where \( \tau\coloneqq{
 \[
 f_q(x) = x^2 - x + q = (x - \tau)( x - {\overline{{ \tau}}} ) = \min_{ \tau}(x)_{/{\mathbb{Q}}}
 .\]
-By considering how this function increases, we can conclude \( 1<q<f_q(x) < f_q(q) = q^2 \). Let \( p \) be the least prime factor of \( f_q(x) \), which is necessarily bounded by \( \sqrt{ f_q(x) } \), so \( p<q \). Since \( p\mathrel{\Big|}f_q(x) \), we have \( x\in {\mathbb{Z}} \) as a root of \( f\pmod p \). So \( \min_\tau \) has a root modulo \( p \). Recall that studying how \( \left\langle{ p }\right\rangle \) factors into ideals of \( {\mathbb{Z}}_K \) involved studying how \( \min_\tau \) factors mod \( p \). Since we've shown it has a root mod \( p \), it breaks into two linear factors. So \( \left\langle{ p }\right\rangle = P_1 P_2 \) as prime ideals of norm \( p \). By assumption, \( \mathbb{Z}\left[ {[} \right]\tau] \) is a UFD and the ring of integers of a number field, and by an earlier theorem, is thus also a PID (noting that this is not generally the case). So \( P_1, P_2 \) are principal, and we can write
+By considering how this function increases, we can conclude \( 1<q<f_q(x) < f_q(q) = q^2 \). Let \( p \) be the least prime factor of \( f_q(x) \), which is necessarily bounded by \( \sqrt{ f_q(x) } \), so \( p<q \). Since \( p\bigm|f_q(x) \), we have \( x\in {\mathbb{Z}} \) as a root of \( f\pmod p \). So \( \min_\tau \) has a root modulo \( p \). Recall that studying how \( \left\langle{ p }\right\rangle \) factors into ideals of \( {\mathbb{Z}}_K \) involved studying how \( \min_\tau \) factors mod \( p \). Since we've shown it has a root mod \( p \), it breaks into two linear factors. So \( \left\langle{ p }\right\rangle = P_1 P_2 \) as prime ideals of norm \( p \). By assumption, \( \mathbb{Z}\left[ {[} \right]\tau] \) is a UFD and the ring of integers of a number field, and by an earlier theorem, is thus also a PID (noting that this is not generally the case). So \( P_1, P_2 \) are principal, and we can write
 \[
 P_1 = \left\langle{ a + b \tau }\right\rangle\implies p = N(p_1) = N( a + b \tau) = a^2 + ab + qb^2
 .\]
@@ -2294,7 +2299,7 @@ If not, \( \min_\tau \) has a root \( \pmod p \). Recalling that \( \min_\tau(x)
 \[
 1 \leq x \leq {1\over 2} \sqrt{ {\left\lvert {d} \right\rvert} \over 3 } + {1\over 2}
 .\]
-Why? If the other root \( x = r \) with \( 1<r<p \) doesn't satisfy this, then the first root is \( p+1-r \) and will satisfy this. Then \( p\mathrel{\Big|}f_q(x) \), but this is a problem! This forces
+Why? If the other root \( x = r \) with \( 1<r<p \) doesn't satisfy this, then the first root is \( p+1-r \) and will satisfy this. Then \( p\bigm|f_q(x) \), but this is a problem! This forces
 \[
 p = f_q(x) = x^2 - x + q \geq q > \sqrt{{\left\lvert {d} \right\rvert} \over 3 } \geq p
 .\]
@@ -2304,10 +2309,10 @@ This contradicts \( f_q(x) \) being prime. \( \contradiction \)
 So assuming \( f_q(x) \) is prime for \( 1 \leq x \leq {1 \over 2 } \sqrt{{\left\lvert {d} \right\rvert}\over 3 } + {1 \over 2} \), we showed that every "small" prime up to \( \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \) is inert. Suppose \( P \) is a prime ideal above \( p \), then since \( p \) is inert, \( P = \left\langle{ p }\right\rangle \) is generated by a prime. But we'll just use a slightly weaker conclusion: \( P \) is principal.
 
 ::: {.theorem title="When the class group is generated by small primes"}
-Let \( d \) be a negative squarefree integer with \( d \equiv 1 \pmod 4 \) (such as the \( d \) we are looking at). Then \( \operatorname{Cl}({\mathbb{Z}}_K) \) is generated as a group by \( [P] \) where \( P \) runs over all prime ideals above primes \( p \leq \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \).
+Let \( d \) be a negative squarefree integer with \( d \equiv 1 \pmod 4 \) (such as the \( d \) we are looking at). Then \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is generated as a group by \( [P] \) where \( P \) runs over all prime ideals above primes \( p \leq \sqrt{{\left\lvert {d} \right\rvert}\over 3 } \).
 :::
 
-Given this theorem, we are done: in our situation, all such \( [P] \) are trivial in the class group since they are principal, which makes \( \operatorname{Cl}({\mathbb{Z}}_K) = 1 \) and every ideal is principal.
+Given this theorem, we are done: in our situation, all such \( [P] \) are trivial in the class group since they are principal, which makes \( { \operatorname{Cl}} ({\mathbb{Z}}_K) = 1 \) and every ideal is principal.
 :::
 
 ## Proof of Rabinowitz's Theorem
@@ -2368,7 +2373,7 @@ Now let \( T \coloneqq{\left\lfloor D \right\rfloor} ! \), where we take the fac
 \[
 TI \subseteq \beta{\mathbb{Z}}_K \overset{\cdot \beta^{-1}}{\implies } \beta^{-1}T I \subseteq \beta^{-1}\beta {\mathbb{Z}}_K = {\mathbb{Z}}_K
 .\]
-Moreover, \( J {~\trianglelefteq~}{\mathbb{Z}}_K \) is an ideal, since it's a dilation of an ideal, \( [J] = [I] \) since they're related by dilation, and \( J \) contains \( \qty{T / \beta } \beta = T \). Since to contain is to divide, we have \( J \mathrel{\Big|}\left\langle{ T }\right\rangle \). Recall that \( T \) was a product of integers, so however \( \left\langle{ T }\right\rangle \) factors into prime ideals, every such prime ideal will lie above an actual prime no bigger than \( D \). You can factor \( \left\langle{ T }\right\rangle \) by first factoring \( T \) into prime integers, then break them up into prime ideals, all of which would have norm bounded by \( D \).
+Moreover, \( J {~\trianglelefteq~}{\mathbb{Z}}_K \) is an ideal, since it's a dilation of an ideal, \( [J] = [I] \) since they're related by dilation, and \( J \) contains \( \qty{T / \beta } \beta = T \). Since to contain is to divide, we have \( J \bigm|\left\langle{ T }\right\rangle \). Recall that \( T \) was a product of integers, so however \( \left\langle{ T }\right\rangle \) factors into prime ideals, every such prime ideal will lie above an actual prime no bigger than \( D \). You can factor \( \left\langle{ T }\right\rangle \) by first factoring \( T \) into prime integers, then break them up into prime ideals, all of which would have norm bounded by \( D \).
 :::
 
 ::: {.remark}
@@ -2385,7 +2390,7 @@ This says that being an optimal prime is entirely equivalent to a certain ring b
 :::
 
 ::: {.remark}
-So remarkably, there are *not* infinitely many examples for which the ring of integers is a UFD. Thus the class number only takes on the value 1 for finitely many fields. What about for 2? This also only happens finitely often. In fact, for *any* fixed \( h \), there are only finitely many imaginary quadratic fields with class number \( h \). This follows from the fact that \( \operatorname{Cl}({\mathbb{Q}}( \sqrt{d} )) \approx d^{1/2} \), which increases as \( d \) does. It's still hard to determine for a given \( h \) which values of \( d \) appear, partially because the last statement is *ineffective*[^9] in the sense that there aren't constants to put into the asymptotic statement.
+So remarkably, there are *not* infinitely many examples for which the ring of integers is a UFD. Thus the class number only takes on the value 1 for finitely many fields. What about for 2? This also only happens finitely often. In fact, for *any* fixed \( h \), there are only finitely many imaginary quadratic fields with class number \( h \). This follows from the fact that \( { \operatorname{Cl}} ({\mathbb{Q}}( \sqrt{d} )) \approx d^{1/2} \), which increases as \( d \) does. It's still hard to determine for a given \( h \) which values of \( d \) appear, partially because the last statement is *ineffective*[^9] in the sense that there aren't constants to put into the asymptotic statement.
 :::
 
 ::: {.remark}
@@ -2742,7 +2747,7 @@ and so we have \( N( \alpha) + N( \beta) \equiv 0 \pmod m \). But these are Gaus
 \[
 a^2 + b^2 + c^2 + d^2 = \equiv 0 \pmod m
 .\]
-Being congruent to \( 0\pmod m \) in \( {\mathbb{Z}}[i] \) means that both the real and imaginary parts are divisible by \( m \), but since the left-hand side above is an ordinary integer, it has no imaginary part. So \( m \mathrel{\Big|}a^2 + b^2 + c^2 + d^2 \) for every element of \( \Lambda \). Noting that \( \Lambda \subseteq {\mathbb{Z}}[i] \) we can identify \( \Lambda \subseteq {\mathbb{Z}}^4 \subseteq {\mathbb{R}}^4 \) by pairing \( ( \alpha, \beta) \rightleftharpoons(a,b,c,d) \).
+Being congruent to \( 0\pmod m \) in \( {\mathbb{Z}}[i] \) means that both the real and imaginary parts are divisible by \( m \), but since the left-hand side above is an ordinary integer, it has no imaginary part. So \( m \bigm|a^2 + b^2 + c^2 + d^2 \) for every element of \( \Lambda \). Noting that \( \Lambda \subseteq {\mathbb{Z}}[i] \) we can identify \( \Lambda \subseteq {\mathbb{Z}}^4 \subseteq {\mathbb{R}}^4 \) by pairing \( ( \alpha, \beta) \rightleftharpoons(a,b,c,d) \).
 
 ::: {.claim}
 \( \Lambda\subseteq {\mathbb{R}}^4 \) is a full lattice, and after writing a set of generators and computing the determinant, one finds that \( \operatorname{covol}( \Lambda) = m^2 \).
@@ -2795,7 +2800,7 @@ Note that the first claim follows from the second since \( \min_{ \alpha}(x) \in
 :::
 
 ::: {.lemma title="Number of embeddings of subfields"}
-Let \( K \) be a number field with \( [K: {\mathbb{Q}}] = n \) and \( F\leq K \) a subfield with \( [F: {\mathbb{Q}}] = r \). Note that \( r\mathrel{\Big|}n \). Then every embedding \( \tau: F\hookrightarrow{\mathbb{C}} \) extends in \( n/r \) ways to an embedding \( \sigma: K \hookrightarrow{\mathbb{C}} \).
+Let \( K \) be a number field with \( [K: {\mathbb{Q}}] = n \) and \( F\leq K \) a subfield with \( [F: {\mathbb{Q}}] = r \). Note that \( r\bigm|n \). Then every embedding \( \tau: F\hookrightarrow{\mathbb{C}} \) extends in \( n/r \) ways to an embedding \( \sigma: K \hookrightarrow{\mathbb{C}} \).
 :::
 
 ::: {.proof title="of lemma, sketch"}
@@ -2855,7 +2860,7 @@ Note that \( -(1)^n a_0 = \prod r_i \) is the product of the roots of \( \varphi
 N( \alpha ) &= \prod_{ \sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) \\
 \operatorname{Tr}( \alpha ) &= \sum_{\sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) 
 .\]
-It's also the case that \( N({\,\cdot\,}) \) is multiplicative and \( \operatorname{Tr}({\,\cdot\,}) \) is \( {\mathbb{Q}}{\hbox{-}} \)linear.
+It's also the case that \( N({-}) \) is multiplicative and \( \operatorname{Tr}({-}) \) is \( {\mathbb{Q}}{\hbox{-}} \)linear.
 :::
 
 ## Discriminants
@@ -2956,7 +2961,7 @@ How could this fail? No elements could have multiple representations as a \( {\m
 \[
 \beta \coloneqq\alpha - \left[ {c_1}\right]  w_1 \in {\mathbb{Z}}_K
 ,\]
-where \( \left[ {{\,\cdot\,}}\right]  \) denotes taking the integer part. We can write \( \beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n \). Observe that the tuple
+where \( \left[ {{-}}\right]  \) denotes taking the integer part. We can write \( \beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n \). Observe that the tuple
 \[
 {\left[ { \beta, w_2, \cdots, w_n} \right]} 
 = {\left[ { w_1 , w_2, \cdots, w_n} \right]} 
@@ -3027,9 +3032,9 @@ Interesting question: how many are there as a function of \( X \)? This is studi
 ::: {.theorem title="Dedekind"}
 Taking a prime \( p\in {\mathbb{Z}} \), we have
 \[
-p \text{ ramifies in } {\mathbb{Z}}_K \iff p \mathrel{\Big|}{\Delta}_K
+p \text{ ramifies in } {\mathbb{Z}}_K \iff p \bigm|{\Delta}_K
 ,\]
-where **ramification** occurs if when \( \left\langle{ p }\right\rangle{~\trianglelefteq~}{\mathbb{Z}}_K \) factors into prime ideals with a repeated prime factor. In particular, \( {\Delta}({\,\cdot\,}) < \infty \), and so only finitely many such primes can occur.
+where **ramification** occurs if when \( \left\langle{ p }\right\rangle{~\trianglelefteq~}{\mathbb{Z}}_K \) factors into prime ideals with a repeated prime factor. In particular, \( {\Delta}({-}) < \infty \), and so only finitely many such primes can occur.
 :::
 :::
 
@@ -3089,7 +3094,7 @@ Note that this was finite in the quadratic field case since nonzero ideals had a
 :::
 
 ::: {.lemma title="Elements divide their norms"}
-Let \( \alpha\in {\mathbb{Z}}_K \), then \( \alpha\mathrel{\Big|}N( \alpha) \) in \( {\mathbb{Z}}_K \).
+Let \( \alpha\in {\mathbb{Z}}_K \), then \( \alpha\bigm|N( \alpha) \) in \( {\mathbb{Z}}_K \).
 :::
 
 ::: {.proof title="of lemma"}
@@ -3113,7 +3118,7 @@ N(I) < \infty
 ::: {.proof title="of proposition"}
 We start with principal ideals. Let \( m\in {\mathbb{Z}}^+ \), then \( {\mathbb{Z}}_K \left\langle{ m }\right\rangle \coloneqq{\mathbb{Z}}_K /m {\mathbb{Z}}_K \cong_{{\mathbb{Z}{\hbox{-}}\mathsf{Mod}}} {\mathbb{Z}}^n / m{\mathbb{Z}}^n \cong ({\mathbb{Z}}/m{\mathbb{Z}})^n \) where we've forgotten the ring structure and are just considering it as a \( {\mathbb{Z}}{\hbox{-}} \)module . But this has size \( m^n < \infty \).
 
-Now let \( \alpha\in I \) be nonzero and let \( m \coloneqq\pm N \alpha \), choosing whichever sign makes \( m>0 \). Since \( \alpha\mathrel{\Big|}N \alpha \), so \( N \alpha = \ell \alpha \) is a multiple of \( \alpha \). But \( \alpha\in I \) and \( I \) is an ideal, so \( N \alpha\in I \implies m \in I \). Then (check!) the following map is surjective:
+Now let \( \alpha\in I \) be nonzero and let \( m \coloneqq\pm N \alpha \), choosing whichever sign makes \( m>0 \). Since \( \alpha\bigm|N \alpha \), so \( N \alpha = \ell \alpha \) is a multiple of \( \alpha \). But \( \alpha\in I \) and \( I \) is an ideal, so \( N \alpha\in I \implies m \in I \). Then (check!) the following map is surjective:
 \[
 {\mathbb{Z}}_K/ \left\langle{ m }\right\rangle &\twoheadrightarrow{\mathbb{Z}}_K/I \\
 [ \alpha]_m &\mapsto [ \alpha]_I
@@ -3274,7 +3279,7 @@ We can try \( 1, \alpha, \alpha^2 \), and check
 \[
 {\Delta}(1, \alpha, \alpha^2) = {\Delta}(f) = (-4)(503)
 ,\]
-so we can't conclude this is a \( {\mathbb{Z}}{\hbox{-}} \)basis. Going back to the proof, we *can* conclude that \( [{\mathbb{Z}}_K: H] ^2 \mathrel{\Big|}{\Delta}(1, \alpha, \alpha^2) \) where \( H \coloneqq{\mathbb{Z}}+ {\mathbb{Z}}\alpha + {\mathbb{Z}}\alpha^2 = {\mathbb{Z}}[ \alpha ] \). This allows us to conclude that \( [{\mathbb{Z}}_K: H] = 1, 2 \), so this could still be an index 2 subgroup. If this happens, \( \# {\mathbb{Z}}_K/H = 2 \) and every element is annihilated by 2, so \( 2{\mathbb{Z}}_K \subseteq H = {\mathbb{Z}}[ \alpha ] \). This would mean
+so we can't conclude this is a \( {\mathbb{Z}}{\hbox{-}} \)basis. Going back to the proof, we *can* conclude that \( [{\mathbb{Z}}_K: H] ^2 \bigm|{\Delta}(1, \alpha, \alpha^2) \) where \( H \coloneqq{\mathbb{Z}}+ {\mathbb{Z}}\alpha + {\mathbb{Z}}\alpha^2 = {\mathbb{Z}}[ \alpha ] \). This allows us to conclude that \( [{\mathbb{Z}}_K: H] = 1, 2 \), so this could still be an index 2 subgroup. If this happens, \( \# {\mathbb{Z}}_K/H = 2 \) and every element is annihilated by 2, so \( 2{\mathbb{Z}}_K \subseteq H = {\mathbb{Z}}[ \alpha ] \). This would mean
 \[
 {\mathbb{Z}}_K \subseteq {1\over 2} {\mathbb{Z}}[ \alpha ] 
 = 
@@ -3313,7 +3318,12 @@ For \( K = {\mathbb{Q}}( \zeta_m) \),
 :::
 
 ::: {.remark}
-The degree of any such \( K/{\mathbb{Q}} \) is \( \phi(m) \), and here \( \phi(p) = p-1 \). Also recall Eisenstein's criterion: if \( p \) divides all of the coefficients of a polynomial \( f(x) \coloneqq\sum a_i x^i \) but \( p^2\nmid a_0 \), then \( f \) is irreducible over \( {\mathbb{Q}} \).
+The degree of any such \( K/{\mathbb{Q}} \) is \( \phi(m) \), and here \( \phi(p) = p-1 \). Also recall Eisenstein's criterion: if \( p \) divides all of the coefficients of a polynomial \( f(x) \coloneqq\sum a_i x^i \) but \( p^2%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+a_0 \), then \( f \) is irreducible over \( {\mathbb{Q}} \).
 :::
 
 ::: {.lemma title="The minimal polynomials of roots of unity"}
@@ -3339,7 +3349,12 @@ Let \( \alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mke
 \]
 is Eisenstein at the prime \( p \). Let \( K \coloneqq{\mathbb{Q}}( \alpha) \), a number field of degree \( n \). Then
 \[
-p\nmid[{\mathbb{Z}}_K : {\mathbb{Z}}[ \alpha] ]
+p%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+[{\mathbb{Z}}_K : {\mathbb{Z}}[ \alpha] ]
 .\]
 :::
 
@@ -3365,7 +3380,12 @@ N \qty{ b_i \over p} N( \alpha^{n-1} ) \\
 &= \qty{b_i \over p}^{n} \pm a_0 \\
 &= \pm {b_i^n a_0^{n-1} \over p^n } \not\in {\mathbb{Z}}
 .\]
-where we've used that all embeddings fix rational numbers. But this is not an integer, since by Eisenstein \( p^2 \) does not divide \( a_0 \). So \( a_0^{n-1} \) contributes exactly \( n-1 \) copies of \( p \), leaving a \( p \) in the denominator, and \( p\nmid b_i \) since we choose \( i \) precisely to arrange for this. \( \contradiction \)
+where we've used that all embeddings fix rational numbers. But this is not an integer, since by Eisenstein \( p^2 \) does not divide \( a_0 \). So \( a_0^{n-1} \) contributes exactly \( n-1 \) copies of \( p \), leaving a \( p \) in the denominator, and \( p%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+b_i \) since we choose \( i \) precisely to arrange for this. \( \contradiction \)
 :::
 
 ::: {.remark}
@@ -3402,7 +3422,7 @@ To save space, we'll write \( \zeta \coloneqq\zeta_p \). We want to show \( 1, \
 [{\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta ] ]^2 
 \implies
 [{\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta ] ]^2 
-\mathrel{\Big|}
+\bigm|
 {\Delta}( 1, \zeta, \cdots, \zeta^{p-2}) 
 .\]
 
@@ -3410,11 +3430,16 @@ To save space, we'll write \( \zeta \coloneqq\zeta_p \). We want to show \( 1, \
 The right-hand side is a power of \( p \) (up to a sign), and hence so is the left-hand side.
 :::
 
-We'll proceed by showing that the only prime that could divide the right-hand side is \( p \). Suppose \( q \) divides the right-hand side, i.e. \( q \mathrel{\Big|}{\Delta}(x^{p-1} + \cdots + x + 1) \). So this is zero mod \( q \), and thus \( {\Delta}( x^{p-1} + \cdots + x + 1 \pmod q) \equiv 0 \). The discriminant was a product of roots, so it can only be zero if two roots coincide, so there is a multiple root of \( x^{p-1} + \cdots + x + 1 \pmod q \) and thus also of \( x^p - 1 \). So \( x^p-1 \) and its derivative \( px^{p-1} \) have a root in common, and (check!) this can only happen if \( q=p \).
+We'll proceed by showing that the only prime that could divide the right-hand side is \( p \). Suppose \( q \) divides the right-hand side, i.e. \( q \bigm|{\Delta}(x^{p-1} + \cdots + x + 1) \). So this is zero mod \( q \), and thus \( {\Delta}( x^{p-1} + \cdots + x + 1 \pmod q) \equiv 0 \). The discriminant was a product of roots, so it can only be zero if two roots coincide, so there is a multiple root of \( x^{p-1} + \cdots + x + 1 \pmod q \) and thus also of \( x^p - 1 \). So \( x^p-1 \) and its derivative \( px^{p-1} \) have a root in common, and (check!) this can only happen if \( q=p \).
 
 \
 
-So \( [{\mathbb{Z}}_K : {\mathbb{Z}}[\zeta] ] = p^\ell \) for some \( \ell \). Using that fact that \( {\mathbb{Z}}[ \zeta] \cong {\mathbb{Z}}[ \zeta - 1] \), we have \( [ {\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta] ] = [ {\mathbb{Z}}_K: {\mathbb{Z}}[\zeta - 1] ] \). But by the previous lemma, we know that the minimal polynomial of \( \zeta_p - 1 \) is \( \Phi(x+1) \), which is \( p{\hbox{-}} \)Eisenstein. So by that lemma, \( p\nmid[{\mathbb{Z}}_K: {\mathbb{Z}}[ \zeta - 1]] \), which forces \( \ell = 0 \) and \( {\mathbb{Z}}_K = {\mathbb{Z}}[ \zeta_p ] \).
+So \( [{\mathbb{Z}}_K : {\mathbb{Z}}[\zeta] ] = p^\ell \) for some \( \ell \). Using that fact that \( {\mathbb{Z}}[ \zeta] \cong {\mathbb{Z}}[ \zeta - 1] \), we have \( [ {\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta] ] = [ {\mathbb{Z}}_K: {\mathbb{Z}}[\zeta - 1] ] \). But by the previous lemma, we know that the minimal polynomial of \( \zeta_p - 1 \) is \( \Phi(x+1) \), which is \( p{\hbox{-}} \)Eisenstein. So by that lemma, \( p%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+[{\mathbb{Z}}_K: {\mathbb{Z}}[ \zeta - 1]] \), which forces \( \ell = 0 \) and \( {\mathbb{Z}}_K = {\mathbb{Z}}[ \zeta_p ] \).
 :::
 
 ::: {.proof title="Sketch of the same proof for $K = \\QQ(\\zeta_m)$"}
@@ -3425,7 +3450,7 @@ So \( [{\mathbb{Z}}_K : {\mathbb{Z}}[\zeta] ] = p^\ell \) for some \( \ell \). U
 
 2.  Show that if \( a, b\in {\mathbb{Z}}^{\geq 0} \) are coprime then \( {\Delta}_a \coloneqq{\Delta}_{{\mathbb{Q}}( \zeta_a)}, {\Delta}_b \coloneqq{\Delta}_{{\mathbb{Q}}(\zeta_b)} \) are coprime.
 
-These are defined in terms of integral bases, and we're trying to prove that something *is* an integral basis, so how do you show this if you don't know your basis is integral to begin with? Without knowing the exact values of the discriminants, you can show \( {\Delta}_a \mathrel{\Big|}a^? \) divides some power of \( a \), and the same for \( b \), and so \( a, b \) coprime will make \( a^?, b^? \) coprime as well. This can be shown by computing the discriminant of a *candidate* integral bases rather than an actual one.
+These are defined in terms of integral bases, and we're trying to prove that something *is* an integral basis, so how do you show this if you don't know your basis is integral to begin with? Without knowing the exact values of the discriminants, you can show \( {\Delta}_a \bigm|a^? \) divides some power of \( a \), and the same for \( b \), and so \( a, b \) coprime will make \( a^?, b^? \) coprime as well. This can be shown by computing the discriminant of a *candidate* integral bases rather than an actual one.
 
 3.  Use a key lemma: if \( K_1, K_2 \) are number fields with coprime discriminants, then considering the composite field, we have \( {\mathbb{Z}}_{K_1 K_2} = {\mathbb{Z}}_{K_1} {\mathbb{Z}}_{K_2} \), a composite ring.
 
@@ -3444,14 +3469,14 @@ The hard part is the lemma in (3). Also, questions about discriminants tend to c
 Here "number rings" means \( {\mathbb{Z}}_K \) for \( K \) a general number field. Let \( K \) be a number field with \( [K: {\mathbb{Q}}] = n \). We'd want
 
 1.  \( \operatorname{Id}({\mathbb{Z}}_K) \) to be a UFM as a monoid,
-2.  \( \operatorname{Cl}({\mathbb{Z}}_K) \) is a finite group,
+2.  \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is a finite group,
 
 Recall that we proved (1) and used it to deduce (2) for quadratic fields, whereas for the general case we'll prove (2) and deduce (1). The approach we'll take here is somewhat idiosyncratic -- the standard treatment involves the theory of Dedekind domains, which uses a lot of commutative algebra. This approach is more classic (circa 19th century, very concrete), and we'll skip over less important details (e.g. those that are unlikely to show up on oral exams).
 :::
 
 ::: {.definition title="Class Group of a Number Ring"}
 \[
-\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/ \sim
+{ \operatorname{Cl}} ({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/ \sim
 ,\]
 where \( \sim \) denotes dilation equivalence.
 :::
@@ -3459,8 +3484,8 @@ where \( \sim \) denotes dilation equivalence.
 ::: {.remark}
 Our strategy:
 
--   Prove \( \operatorname{Cl}({\mathbb{Z}}_K) \) is finite.
--   Prove \( \operatorname{Cl}({\mathbb{Z}}_K) \) is actually a group, i.e. there are inverses, so that for every ideal there is another ideal such that their product is principal (the "Principal Multiple Lemma").
+-   Prove \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is finite.
+-   Prove \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is actually a group, i.e. there are inverses, so that for every ideal there is another ideal such that their product is principal (the "Principal Multiple Lemma").
 -   The remaining proofs from the quadratic field case go through almost word-for-word.
 :::
 
@@ -3481,7 +3506,7 @@ Omitted! See book, this proof wouldn't show up on an oral exam. This uses Dirich
 
 ::: {.theorem title="The class group is finite"}
 \[
-\# \operatorname{Cl}({\mathbb{Z}}_K) < \infty 
+\# { \operatorname{Cl}} ({\mathbb{Z}}_K) < \infty 
 .\]
 :::
 
@@ -3498,7 +3523,7 @@ This follows from exactly the same argument as before.
 
 \
 
-Now define \( J \coloneqq{T! \over \beta} I \subseteq {\mathbb{Z}}_K \), which is a dilation of \( I \) and thus \( J {~\trianglelefteq~}{\mathbb{Z}}_K \) as well. By definition, \( I\sim J \), i.e. \( [I] = [J] \in \operatorname{Id}({\mathbb{Z}}_K) \), and it's now enough to show that there are only finitely many possibilities for \( J \), since then every class is equal to the class of one of finitely many such \( J \). Since \( \beta\in I \), we can deduce that \( T! \in J \) and thus \( \left\langle{ T! }\right\rangle \subseteq J \). We'd like to say "to contain is to divide" (as in the case of unique factorization) and conclude \( J\mathrel{\Big|}T! \), which only has finitely many divisors. However, we haven't proved this yet! We can use an algebra fact instead:
+Now define \( J \coloneqq{T! \over \beta} I \subseteq {\mathbb{Z}}_K \), which is a dilation of \( I \) and thus \( J {~\trianglelefteq~}{\mathbb{Z}}_K \) as well. By definition, \( I\sim J \), i.e. \( [I] = [J] \in \operatorname{Id}({\mathbb{Z}}_K) \), and it's now enough to show that there are only finitely many possibilities for \( J \), since then every class is equal to the class of one of finitely many such \( J \). Since \( \beta\in I \), we can deduce that \( T! \in J \) and thus \( \left\langle{ T! }\right\rangle \subseteq J \). We'd like to say "to contain is to divide" (as in the case of unique factorization) and conclude \( J\bigm|T! \), which only has finitely many divisors. However, we haven't proved this yet! We can use an algebra fact instead:
 \[
 \left\{{\substack{
   \text{Ideals of ${\mathbb{Z}}_K$ }
@@ -3524,8 +3549,8 @@ We now want to establish the cancellation law in \( \operatorname{Id}({\mathbb{Z
 ::: {.remark}
 We want to develop theorems of ideal theory for \( {\mathbb{Z}}_K \) for \( K \) a general number field, i.e. factorization into prime ideals and the finiteness of the class group. The strategy:
 
--   Prove \( \operatorname{Cl}({\mathbb{Z}}_K) \) is a finite monoid,
--   Prove \( \operatorname{Cl}({\mathbb{Z}}_K) \) has inverses and is thus a group, i.e. every nonzero ideal can be multiplied by another ideal to become principal (principal multiple lemma),
+-   Prove \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is a finite monoid,
+-   Prove \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) has inverses and is thus a group, i.e. every nonzero ideal can be multiplied by another ideal to become principal (principal multiple lemma),
 -   Run proofs/corollaries as before.
 
 Last time, we proved the first one.
@@ -3566,7 +3591,7 @@ For all \( I\in \operatorname{Id}({\mathbb{Z}}_K) \) there is a \( J \in \operat
 :::
 
 ::: {.proof title="of principal multiple lemma"}
-Consider \( [I], [I]^2, \cdots \in \operatorname{Cl}({\mathbb{Z}}_K) \). By the pigeonhole principal, there is some \( k, \ell \) such that \( [I^k] = [I]^\ell \), so \( I^k = \lambda I^\ell \) for some \( \lambda \in K^{\times} \). Note that any nonzero element of \( K \) can be written as \( k/n \) for \( k\in K \) and \( n\in {\mathbb{Z}}_K \). So we can scale \( \lambda \) to put it in \( {\mathbb{Z}}_K \), yielding \( \lambda = \alpha/m \) where \( \alpha\in {\mathbb{Z}}_K \) and \( m\in {\mathbb{Z}}^{\times} \). We then have
+Consider \( [I], [I]^2, \cdots \in { \operatorname{Cl}} ({\mathbb{Z}}_K) \). By the pigeonhole principal, there is some \( k, \ell \) such that \( [I^k] = [I]^\ell \), so \( I^k = \lambda I^\ell \) for some \( \lambda \in K^{\times} \). Note that any nonzero element of \( K \) can be written as \( k/n \) for \( k\in K \) and \( n\in {\mathbb{Z}}_K \). So we can scale \( \lambda \) to put it in \( {\mathbb{Z}}_K \), yielding \( \lambda = \alpha/m \) where \( \alpha\in {\mathbb{Z}}_K \) and \( m\in {\mathbb{Z}}^{\times} \). We then have
 \[
 mI^k = \alpha I^\ell = (\alpha I^{\ell-k})I^k
 .\]
@@ -3581,7 +3606,7 @@ Note that the logical order in which these theorems are proved is slightly rever
 ```{=tex}
 \envlist
 ```
-a.  \( \operatorname{Cl}({\mathbb{Z}}_K) \) is a group, and thus a finite abelian group.
+a.  \( { \operatorname{Cl}} ({\mathbb{Z}}_K) \) is a group, and thus a finite abelian group.
 
 b.  \( \operatorname{Id}({\mathbb{Z}}_K) \) is cancellative. Just show one can cancel principal ideals (by dilation), and then in general you cancel by multiplying both sides principal and cancelling that principal ideal.
 
@@ -3593,7 +3618,7 @@ To show unique factorization, we before showed factorization into irreducibles f
 :::
 
 ::: {.proof title="of lemma"}
-We'll proceed by induction on \( N(I) \), using that \( N(AB) \leq N(A) \) for any \( A \) and so \( I\mathrel{\Big|}J \implies N(I) < N(J) \). Before we used that \( N(AB) = N(A) N(B) \), but we haven't proved that here yet. We also don't know that "to divide is to contain" here, but since \( I\mathrel{\Big|}J \) and \( I\neq J \), we do obtain \( J \subsetneq I \). Hence there is a surjection
+We'll proceed by induction on \( N(I) \), using that \( N(AB) \leq N(A) \) for any \( A \) and so \( I\bigm|J \implies N(I) < N(J) \). Before we used that \( N(AB) = N(A) N(B) \), but we haven't proved that here yet. We also don't know that "to divide is to contain" here, but since \( I\bigm|J \) and \( I\neq J \), we do obtain \( J \subsetneq I \). Hence there is a surjection
 \[
 {\mathbb{Z}}_K/J \to {\mathbb{Z}}_K/I
 .\]
@@ -3672,7 +3697,7 @@ N(IJ) = N(I) N(J) && \forall I, J \in \operatorname{Id}({\mathbb{Z}}_K)
 :::
 
 ::: {.remark}
-If \( I, J\in \operatorname{Id}({\mathbb{Z}}_K) \), we have \( \gcd(I, J) = I+J \), since this is the smallest ideal such that any \( P\mathrel{\Big|}I, P\mathrel{\Big|}J \) must satisfy \( P\mathrel{\Big|}\gcd(I, J) \).
+If \( I, J\in \operatorname{Id}({\mathbb{Z}}_K) \), we have \( \gcd(I, J) = I+J \), since this is the smallest ideal such that any \( P\bigm|I, P\bigm|J \) must satisfy \( P\bigm|\gcd(I, J) \).
 :::
 
 ::: {.proof title="that the norm is multiplicative"}
@@ -3702,7 +3727,7 @@ Check that this is a well-defined group morphism.
 
 \
 
-**Injectivity**: Suppose that \( \alpha\pmod P \in \ker \psi \), so \( \alpha \beta\in IP \) and \( IP \mathrel{\Big|}\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle \). Note that without the \( \alpha \) this would be false, so we're critically using that \( \beta \) is in \( I \) but not \( IP \): \( IP\not\mathrel{\Big|}\left\langle{ \beta }\right\rangle \) since \( \beta \not\in IP \). So \( IP \) divides this product but not \( \beta \) while \( I \) *does* divide \( \beta \), this forces \( P\mathrel{\Big|}m \left\langle{ \alpha }\right\rangle \). Then \( \alpha\in P \) and \( \alpha\pmod P = 0 \), so \( \ker \psi = 0 \).
+**Injectivity**: Suppose that \( \alpha\pmod P \in \ker \psi \), so \( \alpha \beta\in IP \) and \( IP \bigm|\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle \). Note that without the \( \alpha \) this would be false, so we're critically using that \( \beta \) is in \( I \) but not \( IP \): \( IP\not\bigm|\left\langle{ \beta }\right\rangle \) since \( \beta \not\in IP \). So \( IP \) divides this product but not \( \beta \) while \( I \) *does* divide \( \beta \), this forces \( P\bigm|m \left\langle{ \alpha }\right\rangle \). Then \( \alpha\in P \) and \( \alpha\pmod P = 0 \), so \( \ker \psi = 0 \).
 
 \
 
@@ -3764,7 +3789,7 @@ Let \( K \) be a number field and \( I\in \operatorname{Id}({\mathbb{Z}}_K) \). 
 :::
 
 ::: {.proof title="of lemma"}
-Let \( m \coloneqq\# \operatorname{Cl}({\mathbb{Z}}_K) \). Then \( I^m = \alpha{\mathbb{Z}}_K \) is principal since \( m \) is the order of this group. Let \( \beta\coloneqq\sqrt[m]{\alpha} \in {\mathbb{C}} \) and let \( L \coloneqq K( \beta) \). Here \( \beta \) is an algebraic integer since it's an \( m \)th root of an algebraic integer. The claim is that \( I{\mathbb{Z}}_L \) is principal. We have
+Let \( m \coloneqq\# { \operatorname{Cl}} ({\mathbb{Z}}_K) \). Then \( I^m = \alpha{\mathbb{Z}}_K \) is principal since \( m \) is the order of this group. Let \( \beta\coloneqq\sqrt[m]{\alpha} \in {\mathbb{C}} \) and let \( L \coloneqq K( \beta) \). Here \( \beta \) is an algebraic integer since it's an \( m \)th root of an algebraic integer. The claim is that \( I{\mathbb{Z}}_L \) is principal. We have
 \[
 (I {\mathbb{Z}}_L)^m
 &= I^m {\mathbb{Z}}_L \\

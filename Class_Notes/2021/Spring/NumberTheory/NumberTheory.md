@@ -9,6 +9,7 @@
 \newcommand{\du}{\,du}
 \newcommand{\dw}{\,dw}
 \newcommand{\dV}{\,dV}
+\newcommand{\dmu}{\,d\mu}
 \newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
@@ -55,6 +56,12 @@
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
+\newcommand{\FFp}[0]{\mathbb{F}_p}
+\newcommand{\chp}[0]{\operatorname{ch. p}}
+\newcommand{\fp}[0]{\operatorname{fp}}
+\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
+\newcommand{\HT}[0]{{\operatorname{HT}}}
+\newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
 \newcommand{\covol}[0]{\operatorname{covol}}
@@ -72,7 +79,6 @@
 \newcommand{\PGL}[0]{\operatorname{PGL}}
 \newcommand{\GL}[0]{\operatorname{GL}}
 \newcommand{\Gl}[0]{\operatorname{GL}}
-\newcommand{\gl}[0]{\operatorname{GL}}
 \newcommand{\mat}[0]{\operatorname{Mat}}
 \newcommand{\Mat}[0]{\operatorname{Mat}}
 \newcommand{\Rat}[0]{\operatorname{Rat}}
@@ -91,6 +97,9 @@
 \newcommand{\ann}[0]{\operatorname{Ann}}
 \newcommand{\Ann}[0]{\operatorname{Ann}}
 \newcommand{\arcsec}[0]{\operatorname{arcsec}}
+\newcommand{\arccsc}[0]{\operatorname{arccsc}}
+\newcommand{\arccot}[0]{\operatorname{arccot}}
+\newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
 \newcommand{\Sp}[0]{{\operatorname{Sp}}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
@@ -107,10 +116,14 @@
 \newcommand{\HH}[0]{{\mathbb{H}}}
 \newcommand{\HoH}[0]{{\operatorname{HH}}}
 \newcommand{\THoH}[0]{{\operatorname{THH}}}
+\newcommand{\THC}[0]{{\operatorname{THC}}}
+\newcommand{\TC}[0]{{\operatorname{TC}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
+\newcommand{\reldim}[0]{\operatorname{reldim}}
+\newcommand{\cohdim}[0]{\operatorname{cohdim}}
 \newcommand{\coim}[0]{\operatorname{coim}}
 \newcommand{\dom}[0]{\operatorname{dom}}
 \newcommand{\dR}[0]{\mathrm{dR}}
@@ -136,50 +149,73 @@
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
+\newcommand{\CH}[0]{{\operatorname{CH}}}
 \newcommand{\Cat}[0]{\mathsf{Cat}}
 \newcommand{\Fun}[0]{{\mathsf{Fun}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
-\newcommand{\alg}[0]{\mathsf{Alg}}
-\newcommand{\scalg}[0]{\mathsf{sCAlg}}
-\newcommand{\calg}[0]{\mathsf{CAlg}}
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
+\newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
-\newcommand{\Perv}[0]{\mathsf{Perv}}
-\newcommand{\presh}[0]{{\mathsf{Presh}}}
-\newcommand{\Presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
 \newcommand{\sets}[0]{{\mathsf{Set}}}
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
+\newcommand{\Grpd}[0]{{\mathsf{Grpd}}}
+\newcommand{\inftyGrpd}[0]{{\infty\dash\mathsf{Grpd}}}
 \newcommand{\Groups}[0]{{\mathsf{Groups}}}
-\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
-\newcommand{\qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\Qcoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
-\newcommand{\ssets}[0]{\mathsf{sSets}}
-\newcommand{\Ring}[0]{\mathsf{Ring}}
-\newcommand{\grMod}[0]{{\mathsf{grMod}}}
-\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
-\newcommand{\Top}[0]{{\mathsf{Top}}}
-\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
-\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
-\newcommand{\Sch}[0]{{\mathsf{Sch}}}
-\newcommand{\sch}[0]{{\mathsf{Sch}}}
-\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\Ring}[0]{\mathsf{Ring}}
+\newcommand{\CRing}[0]{\mathsf{CRing}}
+\newcommand{\Field}[0]{\mathsf{Field}}
+\newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
-\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
-\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
 \newcommand{\modsleft}[1]{\mathsf{#1}\dash\mathsf{Mod}}
-\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
-\newcommand{\Mod}[0]{{\mathsf{Mod}}}
 \newcommand{\Gr}[0]{{\operatorname{Gr}}}
+\newcommand{\gr}[0]{{\mathsf{gr}\,}}
+\newcommand{\grMod}[0]{{\mathsf{grMod}}}
+\newcommand{\Mod}[0]{{\mathsf{Mod}}}
+\newcommand{\bimod}[2]{(\mathsf{#1}, \mathsf{#2})\dash\mathsf{biMod}}
+\newcommand{\modr}[0]{{\mathsf{Mod}\dash\mathsf{R}}}
+\newcommand{\mmod}[0]{{\dash\mathsf{Mod}}}
+\newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
+\newcommand{\cdga}[0]{{\mathsf{cdga} }}
+\newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
+\newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
+\newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
+\newcommand{\liealgk}[0]{{ \liealg_{/k} }}
+\newcommand{\alg}[0]{\mathsf{Alg}}
+\newcommand{\scalg}[0]{\mathsf{sCAlg}}
+\newcommand{\calg}[0]{\mathsf{CAlg}}
+\newcommand{\CCalg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
+\newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
+\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\Assoc}[0]{\mathsf{Assoc}}
+\newcommand{\Free}[0]{\mathsf{Free}}
+\newcommand{\Unital}[0]{\mathsf{Unital}}
+\newcommand{\Riem}[0]{\mathsf{Riem}}
+\newcommand{\Comm}[0]{\mathsf{Comm}}
+\newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\Schf}[0]{{\mathsf{Schf}}}
+\newcommand{\Rep}[0]{{\mathsf{Rep}}}
+\newcommand{\sch}[0]{{\mathsf{Sch}}}
+\newcommand{\QCoh}[0]{{\mathsf{QCoh}}}
+\newcommand{\DCoh}[0]{{\mathsf{DCoh}}}
+\newcommand{\Perv}[0]{\mathsf{Perv}}
+\newcommand{\presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Presh}[0]{{\mathsf{Presh}}}
+
+\newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
-\newcommand{\gr}[0]{{\operatorname{gr}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
@@ -203,7 +239,8 @@
 \newcommand{\id}[0]{\operatorname{id}}
 \newcommand{\Id}[0]{\operatorname{Id}}
 \newcommand{\im}[0]{\operatorname{im}}
-\newcommand{\pt}[0]{{\{\operatorname{pt}\}}}
+\newcommand{\pt}[0]{{\operatorname{pt}}}
+\newcommand{\tspt}[0]{{\{\operatorname{pt}\}}}
 \newcommand{\sep}[0]{^\operatorname{sep}}
 \newcommand{\tors}[0]{{\operatorname{tors}}}
 \newcommand{\tor}[0]{\operatorname{Tor}}
@@ -225,6 +262,7 @@
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
 \newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
+\newcommand{\slope}[0]{{\mathrm{slope}}}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
 \newcommand{\cone}[0]{\operatorname{cone}}
@@ -240,6 +278,7 @@
 \newcommand{\by}[0]{\times}
 \newcommand{\dash}[0]{{\hbox{-}}}
 \newcommand{\dd}[2]{{\frac{\partial #1}{\partial #2}\,}}
+\newcommand{\ddd}[2]{{\frac{d #1}{d #2}\,}}
 \newcommand{\definedas}[0]{\coloneqq}
 \newcommand{\da}[0]{\coloneqq}
 \newcommand{\del}[0]{{\partial}}
@@ -277,12 +316,19 @@
 \newcommand{\mfq}[0]{{\mathfrak{q}}}
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
-\newcommand{\lieb}[0]{{\mathfrak{b}}}
-\newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
-\newcommand{\lieh}[0]{{\mathfrak{h}}}
-\newcommand{\lien}[0]{{\mathfrak{n}}}
+\newcommand{\lief}[0]{{\mathfrak{f}}}
+\newcommand{\liet}[0]{{\mathfrak{t}}}
+\newcommand{\lieo}[0]{{\mathfrak{o}}}
+\newcommand{\lied}[0]{{\mathfrak{d}}}
+\newcommand{\liegl}[0]{{\mathfrak{gl}}}
+\newcommand{\gl}[0]{{\mathfrak{gl}}}
 \newcommand{\liesl}[0]{{\mathfrak{sl}}}
+\newcommand{\Ug}[0]{{\mathcal{U}(\mathfrak{g}) }}
+\newcommand{\Uh}[0]{{\mathcal{U}(\mathfrak{h}) }}
+\newcommand{\lieb}[0]{{\mathfrak{b}}}
+\newcommand{\lien}[0]{{\mathfrak{n}}}
+\newcommand{\lieh}[0]{{\mathfrak{h}}}
 \newcommand{\lieso}[0]{{\mathfrak{so}}}
 \newcommand{\liesp}[0]{{\mathfrak{sp}}}
 \newcommand{\lieu}[0]{{\mathfrak{u}}}
@@ -304,8 +350,12 @@
 \newcommand{\embedsvia}[1]{\xhookrightarrow{#1}}
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
+\newcommand{\Prism}[0]{\mathsf{Prism}}
+\newcommand{\Spf}[0]{\mathsf{Spf}}
+\newcommand{\WCart}[0]{\mathsf{WCart}}
+\newcommand{\padic}[0]{p\dash\text{adic}}
 \newcommand{\surjectsvia}[2][]{
-  \xrightarrow[#1]{#2}\mathrel{\mkern-14mu}\rightarrow
+  \xrightarrow[#1]{#2} { \mathrel{\mkern-16mu}\rightarrow }\,
 }
 \newcommand{\adjoint}[0]{\leftrightarrows}
 \newcommand{\kx}[1]{k[x_1, \cdots, x_{#1}]}
@@ -335,9 +385,10 @@
 \newcommand{\mcx}[0]{{\mathcal{X}}}
 \newcommand{\mcz}[0]{{\mathcal{Z}}}
 \newcommand{\kfq}[0]{K_{/\mathbb{F}_q}}
-\newcommand{\cl}[0]{\operatorname{cl}}
-\newcommand{\Cl}[0]{\operatorname{Cl}}
-\newcommand{\St}[0]{\operatorname{St}}
+\newcommand{\cl}[0]{{ \operatorname{cl}} }
+\newcommand{\Cl}[0]{{ \operatorname{Cl}} }
+\newcommand{\St}[0]{{ \operatorname{St} }}
+\newcommand{\DSt}[0]{{ \operatorname{DSt}}}
 \newcommand{\trdeg}[0]{\operatorname{trdeg}}
 \newcommand{\dist}[0]{\operatorname{dist}}
 \newcommand{\Dist}[0]{\operatorname{Dist}}
@@ -359,7 +410,6 @@
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
-\newcommand{\Hom}[0]{{\operatorname{Hom}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -375,11 +425,10 @@
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
+\newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
 \newcommand{\rad}[0]{{\operatorname{rad}}}
-\newcommand{\ralg}[0]{\operatorname{R-alg}}
-\newcommand{\kalg}[0]{k\dash\operatorname{alg}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -407,6 +456,7 @@
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
 \newcommand{\Wedge}[0]{\bigwedge}
+\newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
 \newcommand{\Wedgeprod}[0]{\bigvee}
 \newcommand{\Vee}[0]{\bigvee}
@@ -428,7 +478,7 @@
 \newcommand{\covers}[0]{\rightrightarrows}
 \newcommand{\units}[0]{^{\times}}
 \newcommand{\nonzero}[0]{^{\bullet}}
-\newcommand{\wait}[0]{{\,\cdot\,}}
+\newcommand{\wait}[0]{{-}}
 \newcommand{\wt}[0]{{\operatorname{wt}}}
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \renewcommand{\div}[0]{\operatorname{Div}}
@@ -436,6 +486,7 @@
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
 \renewcommand{\hat}[1]{\widehat{#1}}
+\newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
 \renewcommand{\mid}[0]{\mathrel{\Big|}}
 \renewcommand{\qed}[0]{\hfill\blacksquare}
@@ -464,6 +515,7 @@
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
+\DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\proj}{Proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
@@ -502,7 +554,6 @@
 \newcommand\colim{\mathop{\mathrm{colim}}\nolimits}
 
 
-\newcommand\fp[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand\ul[1]{\underline{#1}}
 \newcommand\constantsheaf[1]{\underline{#1}}
 \newcommand\holomorphic[0]{\text{holo}}
@@ -531,8 +582,13 @@
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
-\newcommand{\divides}{\mid}
-\newcommand{\notdivides}{\nmid}
+\newcommand{\divides}{\bigm|}
+\newcommand{\notdivides}{%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+}
 \newcommand{\fractional}[1]{\theset{#1}}
 \newcommand{\fractionalpart}[1]{\theset{#1}}
 \newcommand{\integerpart}[1]{\left[ {#1}\right] }
@@ -551,6 +607,7 @@
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\forget}[0]{\mathrm{Forget}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
+\newcommand{\xpn}[0]{ { x^{p^n} } }
 
 
 \newcommand{\cores}[0]{\operatorname{cores}}
@@ -566,6 +623,10 @@
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
+\newcommand\B{{ \mathsf{B}}}
+\newcommand\D{{ \mathsf{D}}}
+\newcommand\Rd{{ \mathsf{R}}}
+\newcommand\Ld{{ \mathsf{R}}}
 
 # Notation
 

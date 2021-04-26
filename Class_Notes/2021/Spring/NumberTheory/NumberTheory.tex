@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-11 }
+{\tiny \textit{Last updated:} 2021-04-25 }
 \end{flushleft}
 
 
@@ -168,12 +168,12 @@ Consider \(y^2 = x^3 + x\).
 
 To see this, write \(y^2 = x(x^2+1)\), which are relatively prime,
 i.e.~no \(D\in {\mathbb{Z}}\) divides both of them. Why? If
-\(d \mathrel{\Big|}x\) and \(d \mathrel{\Big|}x+1\), then
-\(d\mathrel{\Big|}(x^2+1) + (-x) = 1\). It's also the case that both
-\(x^2+1\) and \(x^2\) are squares (up to a unit), so \(x^2, x^2 + 1\)
-are consecutive squares in \({\mathbb{Z}}\). But the gaps between
-squares are increasing: \(1, 2, 4, 9, \cdots\). The only possibilities
-would be \(x=0, y=1\), but in this case you can conclude \(y=0\).
+\(d \bigm|x\) and \(d \bigm|x+1\), then \(d\bigm|(x^2+1) + (-x) = 1\).
+It's also the case that both \(x^2+1\) and \(x^2\) are squares (up to a
+unit), so \(x^2, x^2 + 1\) are consecutive squares in \({\mathbb{Z}}\).
+But the gaps between squares are increasing: \(1, 2, 4, 9, \cdots\). The
+only possibilities would be \(x=0, y=1\), but in this case you can
+conclude \(y=0\).
 
 \end{example}
 
@@ -253,7 +253,7 @@ The two factors \(y \pm \sqrt 2\) are \emph{coprime} in
 
 \begin{proof}[?]
 
-Suppose \(\delta\mathrel{\Big|}y\pm \sqrt{-2}\), then
+Suppose \(\delta\bigm|y\pm \sqrt{-2}\), then
 \(y + \sqrt{-2} = \delta \beta\) for some
 \(\beta\in {\mathbb{Z}}[\sqrt{-2}]\). Take norms to obtain
 \(y^2 + 2 = N \delta N \beta\), and in particular
@@ -263,15 +263,15 @@ Suppose \(\delta\mathrel{\Big|}y\pm \sqrt{-2}\), then
 \item
   \(N \delta y^2 +2\)
 \item
-  \(\delta \mathrel{\Big|}(y+ \sqrt{-2} ) - (y - \sqrt{-2} ) = 2 \sqrt{-2}\)
-  and thus \(N \delta \mathrel{\Big|}N(2 \sqrt{-2} ) = 8\).
+  \(\delta \bigm|(y+ \sqrt{-2} ) - (y - \sqrt{-2} ) = 2 \sqrt{-2}\) and
+  thus \(N \delta \bigm|N(2 \sqrt{-2} ) = 8\).
 \end{itemize}
 
 In the original equation \(y^2 = x^3-2\), if \(y\) is even then \(x\) is
 even, and \(x^3 - 2 \equiv 0-2 \pmod 4 \equiv 2\), and so
 \(y^2 \equiv 2 \pmod 4\). But this can't happen, so \(y\) is odd, and
-we're done: we have \(N \delta\mathrel{\Big|}8\) which is even or 1, but
-\(N \delta\mathrel{\Big|}y^2 +2\) which is odd, so \(N \delta = 1\).
+we're done: we have \(N \delta\bigm|8\) which is even or 1, but
+\(N \delta\bigm|y^2 +2\) which is odd, so \(N \delta = 1\).
 
 \end{proof}
 
@@ -287,7 +287,7 @@ units here, since \(\pm 1\) are both cubes. So e.g.~we can write
 y + \sqrt{-2} = (a + b \sqrt{-2} )^3 = (a^3-6ab^2) + (3a^2b -2b^3) \sqrt{-2}
 .\end{align*}
 Comparing coefficients of \(\sqrt{-2}\) yields
-\begin{align*} 1 = b(3a^2b - 2b^2) \in {\mathbb{Z}}\implies b \mathrel{\Big|}1
+\begin{align*} 1 = b(3a^2b - 2b^2) \in {\mathbb{Z}}\implies b \bigm|1
 ,\end{align*}
 and thus \(b\in {\mathbb{Z}}^{\times}\),
 i.e.~\(b\in \left\{{\pm 1}\right\}\). By cases:
@@ -770,10 +770,9 @@ intersection \({\mathbb{Z}}_{\mathbb{Q}}\) .
 , so \(\alpha\) is a root of
 \(x^n - a_{n-1}x^{n-1} + \cdots + a_1x + a_0 \in {\mathbb{Z}}[x]\). We
 know \(\alpha= a/b\) with \(a,b \in {\mathbb{Z}}\), and we can use the
-rational root test which tells us that \(a\mathrel{\Big|}a_0\) and
-\(b\mathrel{\Big|}1\), so \(b = \pm 1\) and
-\(\alpha = a/\pm 1 = \pm a \in {\mathbb{Z}}\) and thus
-\(\alpha \in {\mathbb{Z}}\).
+rational root test which tells us that \(a\bigm|a_0\) and \(b\bigm|1\),
+so \(b = \pm 1\) and \(\alpha = a/\pm 1 = \pm a \in {\mathbb{Z}}\) and
+thus \(\alpha \in {\mathbb{Z}}\).
 
 \end{proof}
 
@@ -986,13 +985,13 @@ but we'd like that integer to be squarefree.
 \hfill\break
 
 Now let \(f\in {\mathbb{Z}}^{\geq 0}\) be chosen such that
-\(f^2 \mathrel{\Big|}\Delta\) and \(f\) is as large as possible,
-i.e.~the largest square factor of \(\Delta\). Writing
-\(\Delta = f^2 - d\) where \(d\) is whatever remains. Then \(d\) must be
-squarefree, otherwise if \(d\) had a square factor bigger than 1, say
-\(d = r^2 d'\), in which case \(f^2 r^2 > f^2\) would be a larger factor
-of \(\Delta\). So \(d\) is squarefree, and \(\Delta = f \sqrt d\) and
-thus \({\mathbb{Q}}(\Delta) = {\mathbb{Q}}(\sqrt{d})\).
+\(f^2 \bigm|\Delta\) and \(f\) is as large as possible, i.e.~the largest
+square factor of \(\Delta\). Writing \(\Delta = f^2 - d\) where \(d\) is
+whatever remains. Then \(d\) must be squarefree, otherwise if \(d\) had
+a square factor bigger than 1, say \(d = r^2 d'\), in which case
+\(f^2 r^2 > f^2\) would be a larger factor of \(\Delta\). So \(d\) is
+squarefree, and \(\Delta = f \sqrt d\) and thus
+\({\mathbb{Q}}(\Delta) = {\mathbb{Q}}(\sqrt{d})\).
 
 \textbf{Uniqueness}: Well use some extra machinery.
 
@@ -1059,11 +1058,10 @@ with \(u,v\in {\mathbb{Q}}\). Squaring both sides yields
 \(d_1\) is squarefree there is only one copy of \(p\) occurring in its
 factorization. Moreover there are an even number of copies of \(p\)
 coming from \(v^2\), thus forcing \(d_2\) to have an odd power of \(p\).
-This forces \(p\mathrel{\Big|}d_2\), and since this holds for every
-prime factor \(p\) of \(d_1\), we get \(d_1 \mathrel{\Big|}d_2\) since
-\(d_1\) is squarefree. The same argument shows that
-\(d_2 \mathrel{\Big|}d_1\), so they're the same up to sign: but the
-signs must match and we get \(d_1 = d_2\).
+This forces \(p\bigm|d_2\), and since this holds for every prime factor
+\(p\) of \(d_1\), we get \(d_1 \bigm|d_2\) since \(d_1\) is squarefree.
+The same argument shows that \(d_2 \bigm|d_1\), so they're the same up
+to sign: but the signs must match and we get \(d_1 = d_2\).
 
 \end{proof}
 
@@ -1374,10 +1372,10 @@ Let \(M\) be a cancellative monoid. Then
 
 \begin{itemize}
 \item
-  \(\alpha\mathrel{\Big|}\beta\) if and only if \(\beta= \alpha \gamma\)
-  for some \(\gamma\).
+  \(\alpha\bigm|\beta\) if and only if \(\beta= \alpha \gamma\) for some
+  \(\gamma\).
 \item
-  \(\epsilon\) is a \textbf{unit} if \(\epsilon\mathrel{\Big|}1\).
+  \(\epsilon\) is a \textbf{unit} if \(\epsilon\bigm|1\).
 \item
   \(\alpha , \beta\) are \textbf{associates} if
   \(\alpha = \epsilon \beta\) for some unit \(\epsilon\)
@@ -1386,9 +1384,8 @@ Let \(M\) be a cancellative monoid. Then
   and whenever \(\pi= \alpha \beta\) then either \(\alpha\) or \(\beta\)
   is a unit.
 \item
-  \(\pi \in M\) is \textbf{prime} whenever
-  \(\pi\mathrel{\Big|}\alpha \beta\) then \(\pi\mathrel{\Big|}\alpha\)
-  or \(\pi\mathrel{\Big|}\beta\).
+  \(\pi \in M\) is \textbf{prime} whenever \(\pi\bigm|\alpha \beta\)
+  then \(\pi\bigm|\alpha\) or \(\pi\bigm|\beta\).
 \item
   \(\delta \in M\) is a greatest common divisor of \(\alpha, \beta\) if
   and only if \(\delta\) is a common divisor that is divisible by every
@@ -1733,10 +1730,10 @@ is referred to as a \textbf{Euclidean function}.
 \tightlist
 \item
   For \(R={\mathbb{Z}}\), one can take
-  \(\varphi({\,\cdot\,}) \coloneqq{\left\lvert {{\,\cdot\,}} \right\rvert}\).
+  \(\varphi({-}) \coloneqq{\left\lvert {{-}} \right\rvert}\).
 \item
   \(R = {\mathbb{F}}[t]\) for \({\mathbb{F}}\) a field with
-  \(\varphi({\,\cdot\,}) = \deg({\,\cdot\,})\).
+  \(\varphi({-}) = \deg({-})\).
 \end{itemize}
 
 \end{example}
@@ -1767,7 +1764,7 @@ If \(K\) is a quadratic field, then
 \item
   \(K\) is \textbf{norm-Euclidean} if and only if \({\mathbb{Z}}_K\) is
   Euclidean with respect to
-  \(\varphi({\,\cdot\,}) \coloneqq{\left\lvert {N({\,\cdot\,})} \right\rvert}\).
+  \(\varphi({-}) \coloneqq{\left\lvert {N({-})} \right\rvert}\).
 \end{itemize}
 
 \end{definition}
@@ -1788,8 +1785,7 @@ approximated by an element in \({\mathbb{Z}}_K\).
 \(\beta\coloneqq a/b \in K\), then by assumption choose \(\gamma\) such
 that \({\left\lvert {N \qty{ {a\over b} - \gamma} } \right\rvert}< 1\).
 Multiplying both sides by \(N(b)\) and using the fact that
-\(N({\,\cdot\,}), {\left\lvert {{\,\cdot\,}} \right\rvert}\) are
-multiplicative, we have
+\(N({-}), {\left\lvert {{-}} \right\rvert}\) are multiplicative, we have
 \begin{align*}
 {\left\lvert {N(a - b \gamma)} \right\rvert} < {\left\lvert {N(b)} \right\rvert} 
 .\end{align*}
@@ -1998,10 +1994,10 @@ For these \(d\), \({\mathbb{Z}}_K\) is a PID and thus a UFD.
 
 So we've classified all norm-Euclidean imaginary quadratic fields. What
 about removing the word ``norm''? We restricted to
-\({\left\lvert {N({\,\cdot\,})} \right\rvert}\) because there was a
-particularly nice geometric interpretation, whereas being Euclidean
-involves a mysterious \(\varphi\). Remarkably, it can be done, and it's
-the same list!
+\({\left\lvert {N({-})} \right\rvert}\) because there was a particularly
+nice geometric interpretation, whereas being Euclidean involves a
+mysterious \(\varphi\). Remarkably, it can be done, and it's the same
+list!
 
 \end{remark}
 
@@ -2334,8 +2330,8 @@ Note that this is only determined up to \(A \pmod n\).
 
 Take any element in \(I\), which can be represented as \(a + b \tau\),
 we want to show that this can be expressed in terms of the proposed
-basis. Note that \(B\mathrel{\Big|}b\) by its definition, since \(B\)
-generated the ideal of \(\tau\) coefficients. So write \(b = Bs\), then
+basis. Note that \(B\bigm|b\) by its definition, since \(B\) generated
+the ideal of \(\tau\) coefficients. So write \(b = Bs\), then
 \begin{align*}
 ( a + b \tau) - (A + b \tau)s \in {\mathbb{Z}}\cap I = \left\langle{ n }\right\rangle 
 .\end{align*}
@@ -2419,7 +2415,7 @@ Then
 \begin{lemma}[The $\tau$ coefficient divides the remaining coefficient]
 
 Let \(n\) be as above and let \(A + B \tau\) be a standard basis for
-\(I\). Then \(B\mathrel{\Big|}n\) and \(B\mathrel{\Big|}A\).
+\(I\). Then \(B\bigm|n\) and \(B\bigm|A\).
 
 \end{lemma}
 
@@ -2450,7 +2446,7 @@ Substituting yields
 &= - B N( \tau) + (A + B \operatorname{Tr}( \tau ) ) \tau
 .\end{align*}
 The coefficient of \(\tau\) must be a multiple of \(B\), which forces
-\(B\mathrel{\Big|}A\).
+\(B\bigm|A\).
 
 \end{proof}
 
@@ -2485,8 +2481,8 @@ factor. But it is! Note that
 \(B N(A' + gt) \in \left\langle{ B }\right\rangle \left\langle{ A' + \tau, n' }\right\rangle = I\).
 But the first expression is an ordinary integer, i.e.~in
 \(I \cap{\mathbb{Z}}= \left\langle{ n }\right\rangle\) and thus a
-multiple of \(n\). So \(Bn' = n \mathrel{\Big|}BN(A' + \tau)\), and thus
-\(n' \mathrel{\Big|}N(A' + \tau)\). So we can rewrite
+multiple of \(n\). So \(Bn' = n \bigm|BN(A' + \tau)\), and thus
+\(n' \bigm|N(A' + \tau)\). So we can rewrite
 \begin{align*}
 I \mkern 1.5mu\overline{\mkern-1.5muI\mkern-1.5mu}\mkern 1.5mu 
 &= \left\langle{ B^2 }\right\rangle \left\langle{ n' }\right\rangle \left\langle{ n', A' + \mkern 1.5mu\overline{\mkern-1.5mu \tau\mkern-1.5mu}\mkern 1.5mu , A' + \tau, { N(A' + \tau) \over n'} }\right\rangle   \\
@@ -2536,8 +2532,8 @@ since \(d\) is rational.
 The claim is that \(N \alpha\) is also an integer: since
 \(N(A' + \tau)/n', \operatorname{Tr}(A' + \tau)\) are in \(J\), \(d\)
 divides both. So we know that
-\(d^2 \mathrel{\Big|}(n') (N(A' + \tau) / n') = N(A' + \tau)\), which
-forces \(N \alpha\in {\mathbb{Z}}\). So we know
+\(d^2 \bigm|(n') (N(A' + \tau) / n') = N(A' + \tau)\), which forces
+\(N \alpha\in {\mathbb{Z}}\). So we know
 \(N \alpha, \operatorname{Tr}\alpha \in {\mathbb{Z}}\), which forces
 \(\alpha\in {\mathbb{Z}}_K\) since \(\alpha\) is a root of
 \(x^2 - \operatorname{Tr}(\alpha) + N \alpha\). But \(\alpha\) can't be
@@ -2763,16 +2759,16 @@ Factorization}\label{proving-unique-factorization}}
 
 Let \(I, J\) be nonzero ideals of \({\mathbb{Z}}_K\), then
 \begin{align*}
-I \mathrel{\Big|}J \iff I \supseteq J
+I \bigm|J \iff I \supseteq J
 .\end{align*}
 
 \end{theorem}
 
 \begin{proof}[of theorem]
 
-\(\implies\): This is true in any ring! If \(I\mathrel{\Big|}J\), then
-\(J = IM\) where \(M {~\trianglelefteq~}{\mathbb{Z}}_K\), and by
-definition \(IM \subseteq I\) and so \(J \subseteq I\).
+\(\implies\): This is true in any ring! If \(I\bigm|J\), then \(J = IM\)
+where \(M {~\trianglelefteq~}{\mathbb{Z}}_K\), and by definition
+\(IM \subseteq I\) and so \(J \subseteq I\).
 
 \hfill\break
 
@@ -2888,21 +2884,22 @@ concatenating the two factorizations yields a factorization for \(AB\).
 \begin{proof}[of 2: Euclid's Lemma]
 
 Suppose \(P\) is irreducible in \(\operatorname{Id}({\mathbb{Z}}_K)\)
-and suppose \(P \mathrel{\Big|}IJ\), we want to show \(P\) divides one
-of these two. Suppose \(P\nmid I\), then \(P\) does not contain \(I\)
-and \(P+I \supsetneq P\). This means that \(P+I\) is a \emph{proper
-divisor} of \(P\), i.e.~it divides \(P\) but is not equal to \(P\). But
-\(P\) was irreducible, so \(P+I\) is a unit, which forces
-\(P + I = \left\langle{ 1 }\right\rangle\). Multiplying by \(J\) yields
-\(PJ + IJ = J\). We said that \(P \mathrel{\Big|}IJ\) by assumption, so
-\(IJ = PA\) for some nonzero ideal \(A\). So
+and suppose \(P \bigm|IJ\), we want to show \(P\) divides one of these
+two. Suppose
+\(P%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% I
+\), then \(P\) does not contain \(I\) and \(P+I \supsetneq P\). This
+means that \(P+I\) is a \emph{proper divisor} of \(P\), i.e.~it divides
+\(P\) but is not equal to \(P\). But \(P\) was irreducible, so \(P+I\)
+is a unit, which forces \(P + I = \left\langle{ 1 }\right\rangle\).
+Multiplying by \(J\) yields \(PJ + IJ = J\). We said that \(P \bigm|IJ\)
+by assumption, so \(IJ = PA\) for some nonzero ideal \(A\). So
 \begin{align*}
 J 
 &= PJ + IJ \\
 &= PJ + PA \\ 
 &= P(J + A)
 ,\end{align*}
-which shows that \(P\mathrel{\Big|}J\).
+which shows that \(P\bigm|J\).
 
 \end{proof}
 
@@ -2941,7 +2938,7 @@ building blocks of the nonzero prime ideals?
 Let \(P\) be a nonzero prime ideal, then \(P\) \textbf{lies above} the
 rational prime \(p\) if and only if
 \(P \supseteq \left\langle{ p }\right\rangle\). Equivalently,
-\(p\in P\), or \(P\mathrel{\Big|}\left\langle{ p }\right\rangle\).
+\(p\in P\), or \(P\bigm|\left\langle{ p }\right\rangle\).
 
 \end{definition}
 
@@ -2966,8 +2963,7 @@ nonzero prime ideals of \({\mathbb{Z}}\) are of the form
 \(P \cap{\mathbb{Z}}= p{\mathbb{Z}}\) for some prime \(p\). But then
 \(p\in P\) and \(P\) lies above \(p\). Why is this unique? If \(P\) lies
 above \(q\), we would have \(q\in P \cap{\mathbb{Z}}= p {\mathbb{Z}}\)
-and thus \(p\mathrel{\Big|}q\). But since these are both primes,
-\(p=q\).
+and thus \(p\bigm|q\). But since these are both primes, \(p=q\).
 
 \end{proof}
 
@@ -3002,7 +2998,7 @@ Today: chapter 7. Let \(K\) be a quadratic number field. Recall that if
 \item
   \(P\) contains \(p\), or
 \item
-  \(P \mathrel{\Big|}\left\langle{ p }\right\rangle\)
+  \(P \bigm|\left\langle{ p }\right\rangle\)
 \end{itemize}
 
 Last time we saw that every \(P\) lies above a unique \(p\). The
@@ -3174,7 +3170,7 @@ Consider
 &\cong { {\mathbb{Z}}[x] / \left\langle{ \min_\tau(x) }\right\rangle \over \left\langle{ p, x-a }\right\rangle } \\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ \min_\tau(x), x-a}\right\rangle \\
-&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle && \text{since } x-a \mathrel{\Big|}\min_\tau(x)\\
+&\cong {\mathbb{Z}}/p{\mathbb{Z}}[x] / \left\langle{ x-a}\right\rangle && \text{since } x-a \bigm|\min_\tau(x)\\
 &\cong {\mathbb{Z}}/p{\mathbb{Z}}
 .\end{align*}
 So \(P_1\) is maximal and thus prime, and moreover \(N(P_1) = p\) since
@@ -3196,7 +3192,7 @@ zero, while on the RHS yields \(\cdots + pG(\tau)\). This last term is
 \(p \in {\mathbb{Z}}[\tau] = {\mathbb{Z}}_K\) So \(p\) now divides every
 term in the generating set above, and since to contain is to divide, we
 have \(P_1 P_2 \subseteq \left\langle{ p }\right\rangle\) and
-\(\left\langle{ p }\right\rangle \mathrel{\Big|}P_1 P_2\). Write
+\(\left\langle{ p }\right\rangle \bigm|P_1 P_2\). Write
 \(P_1 P_2 = \left\langle{ p }\right\rangle I\) for some ideal \(I\),
 taking norms yields
 \begin{align*}
@@ -3543,8 +3539,8 @@ There is a \(q \leq Q \in {\mathbb{Z}}^+\) with
 \begin{align*} 
 {\left\lVert {q \alpha } \right\rVert} \leq {1 \over Q+1} 
 ,\end{align*}
-where \({\left\lVert {{\,\cdot\,}} \right\rVert}\) denotes the distance
-to the nearest integer.
+where \({\left\lVert {{-}} \right\rVert}\) denotes the distance to the
+nearest integer.
 
 \end{theorem}
 
@@ -3672,7 +3668,7 @@ enough to show that for each \(m\) there are at most finitely many
 element has order dividing \(m\). We can check
 \(m = 1 + 1 + \cdots + 1\), which must be the identity in
 \({\mathbb{Z}}_K/I\). So \(m\in I\), and since to contain is to divide,
-\(I \mathrel{\Big|}\left\langle{ m }\right\rangle\). But
+\(I \bigm|\left\langle{ m }\right\rangle\). But
 \(\left\langle{ m }\right\rangle\) has only finitely many ideal
 divisors. Why? This is because there is unique prime factorization, and
 just like \(n = \prod p_i^{n_i}\) in the integers, \(n\) has
@@ -3760,7 +3756,7 @@ It's easy to check that this is an equivalence relation, so we'll use
 
 The \textbf{class group} of \({\mathbb{Z}}_K\) is defined as
 \begin{align*}
-\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/\approx
+{ \operatorname{Cl}} ({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/\approx
 .\end{align*}
 
 \end{definition}
@@ -3783,8 +3779,8 @@ Lemma}, and a similar story will go through for general number fields.
 
 This is an abelian group, wouldn't it be nice if it were finite? This is
 one of the big theorems of number theory:
-\(\operatorname{Cl}({\mathbb{Z}}_K)\) is finite. We can thus define the
-following:
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is finite. We can thus define
+the following:
 
 \end{remark}
 
@@ -3792,7 +3788,7 @@ following:
 
 The \textbf{class number} of \(K\) is defined as:
 \begin{align*}
-h_k \coloneqq{\left\lvert { \operatorname{Cl}({\mathbb{Z}}_K) } \right\rvert}
+h_k \coloneqq{\left\lvert { { \operatorname{Cl}} ({\mathbb{Z}}_K) } \right\rvert}
 .\end{align*}
 
 \end{definition}
@@ -3815,9 +3811,9 @@ C \coloneqq 1 + \operatorname{Tr}(\tau) + {\left\lvert {N(\tau)} \right\rvert}
 \begin{remark}
 
 The norm of \(I\) is a natural thing to compare \(N \alpha\) to, since
-\(I \mathrel{\Big|}\left\langle{ \alpha }\right\rangle\) and thus
-\(N(I) \mathrel{\Big|}N(\left\langle{ \alpha }\right\rangle)\), so
-there's no hope of the LHS being smaller than \(N(I)\).
+\(I \bigm|\left\langle{ \alpha }\right\rangle\) and thus
+\(N(I) \bigm|N(\left\langle{ \alpha }\right\rangle)\), so there's no
+hope of the LHS being smaller than \(N(I)\).
 
 \end{remark}
 
@@ -3884,9 +3880,9 @@ every \(I \in \operatorname{Id}({\mathbb{Z}}_K)\), we can write
 nonzero \(\alpha\in I\) with
 \({\left\lvert {N( \alpha )} \right\rvert}\leq C N(I)\). Since
 \(\alpha\in I\) we know that
-\(I \mathrel{\Big|}\left\langle{ \alpha }\right\rangle\), so we can
-write \(\left\langle{ \alpha }\right\rangle = IJ\) for some ideal \(J\).
-We have
+\(I \bigm|\left\langle{ \alpha }\right\rangle\), so we can write
+\(\left\langle{ \alpha }\right\rangle = IJ\) for some ideal \(J\). We
+have
 \([I] [J] = [IJ] = [ \left\langle{ \alpha }\right\rangle ] = [ \left\langle{ 1 }\right\rangle ]\),
 since all principal ideals are dilation-equivalent to
 \(\left\langle{ 1 }\right\rangle\). This means that \([J] = [I] ^{-1}\),
@@ -3906,8 +3902,8 @@ and our hope is that it has small norm. Taking norms in
 \begin{example}[?]
 
 What we'll look at next:
-\(\operatorname{Cl}( {\mathbb{Z}}[ \sqrt{-5} ])\). We know this does not
-have unique factorization, and the claim is that the class group is
+\({ \operatorname{Cl}} ( {\mathbb{Z}}[ \sqrt{-5} ])\). We know this does
+not have unique factorization, and the claim is that the class group is
 nontrivial. If it were, every ideal would be dilation-equivalent to
 \(\left\langle{ 1 }\right\rangle\), making every ideal principal, and
 every PID is a UFD. Here we'll have \(C=6\).
@@ -3934,7 +3930,7 @@ from the \emph{prime factor mirroring theorem}:
 
 This allows us to conclude that
 \begin{align*}
-\operatorname{Cl}({\mathbb{Z}}[ \sqrt{-5} ]) = \left\langle{ [P_1], [P_2], [P_3], [P_4] }\right\rangle
+{ \operatorname{Cl}} ({\mathbb{Z}}[ \sqrt{-5} ]) = \left\langle{ [P_1], [P_2], [P_3], [P_4] }\right\rangle
 .\end{align*}
 In fact, since \(P_4\) is principal we can leave it out.
 
@@ -3953,7 +3949,7 @@ Last time: we defined an equivalence relation on nonzero ideals of
 \({\mathbb{Z}}_K\), namely \(I \approx J \iff I = \alpha J\) for some
 \(\alpha \in K^{\times}\). We then defined the \textbf{class group}
 \begin{align*}
-\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K) / \approx
+{ \operatorname{Cl}} ({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K) / \approx
 .\end{align*}
 We saw that ideal multiplication descends to a well-defined group
 structure on ideal classes. Since ideal multiplication is commutative,
@@ -3977,7 +3973,7 @@ norm at most 6. Any such ideal will lie above a prime \(p \leq 6\), so
 \left\langle{ 5 }\right\rangle = P_4^2 && P_4 \coloneqq\left\langle{ \sqrt{-5} }\right\rangle.  
 .\end{align*}
 We conclude that
-\(\operatorname{Cl}({\mathbb{Z}}_K) = \left\langle{ P_1, \cdots, P_4 }\right\rangle\).
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K) = \left\langle{ P_1, \cdots, P_4 }\right\rangle\).
 What are the relations? Consider \(P_4\), and note that
 \(\left\langle{ \sqrt{-5} }\right\rangle \approx \left\langle{ 1 }\right\rangle\)
 since \(P_4 = \sqrt{-5} \left\langle{ 1 }\right\rangle\). A similar
@@ -3995,7 +3991,7 @@ factorization
 = P_1 P_3
 \end{align*}
 and so these are inverses and we can get rid of \(P_3\). So
-\(\operatorname{Cl}({\mathbb{Z}}_K) = \left\langle{ [P_1] }\right\rangle\),
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K) = \left\langle{ [P_1] }\right\rangle\),
 which is a cyclic group. The generator has to have order 1 or 2, since
 \(P_1^2 = \left\langle{ 1 }\right\rangle\). The claim is that the order
 is 2: otherwise, it would be trivial, making the class group trivial,
@@ -4008,7 +4004,7 @@ equivalent to the unit ideal, so
 \(I = \left\langle{ \alpha }\right\rangle\). This is a contradiction,
 since every PID is a UFD, and \({\mathbb{Q}}( \sqrt{-5} )\) has
 non-unique factorization. So we can write
-\(\operatorname{Cl}({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}})\).
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}})\).
 
 \end{example}
 
@@ -4058,12 +4054,12 @@ factorization.
 
 Suppose toward a contradiction that \(P\) is prime and divides both.
 Using that ideal norms are multiplicative,
-\(N(P) \mathrel{\Big|}N( \left\langle{ y + \sqrt{-5} }\right\rangle) = y^2 + 5\).
+\(N(P) \bigm|N( \left\langle{ y + \sqrt{-5} }\right\rangle) = y^2 + 5\).
 We also know \(P\) contains both factors, so it contains
 \((y + \sqrt{-5} ) - (y - \sqrt{-5} ) = 2 \sqrt{-5}\), so
-\(N(P) \mathrel{\Big|}N( \left\langle{ 2 \sqrt{-5} }\right\rangle ) = 20\).
-Thus \(N(P) \mathrel{\Big|}\gcd(y^2 + 5, 20)\) in \({\mathbb{Z}}\). This
-is impossible!
+\(N(P) \bigm|N( \left\langle{ 2 \sqrt{-5} }\right\rangle ) = 20\). Thus
+\(N(P) \bigm|\gcd(y^2 + 5, 20)\) in \({\mathbb{Z}}\). This is
+impossible!
 
 \begin{itemize}
 \item
@@ -4073,16 +4069,15 @@ is impossible!
   \({\mathbb{Z}}/8\) since any cube is \(0\pmod 8\).
 \item
   \(5\) can not divide \(y\). If so, \(5\) would divide the left-hand
-  side and thus the right-hand side, which forces \(5\mathrel{\Big|}x\)
-  since \(5\) is prime. Then \(5^3 \mathrel{\Big|}x^3\), meaning
-  \(5^3 \mathrel{\Big|}y^2 + 5\). In this case,
-  \(5^2 \mathrel{\Big|}y^2 + 5\), and if \(5\mathrel{\Big|}y\) then
-  \(5^2 \mathrel{\Big|}y^2\), so we'd need \(5^2 \mathrel{\Big|}5\).
+  side and thus the right-hand side, which forces \(5\bigm|x\) since
+  \(5\) is prime. Then \(5^3 \bigm|x^3\), meaning \(5^3 \bigm|y^2 + 5\).
+  In this case, \(5^2 \bigm|y^2 + 5\), and if \(5\bigm|y\) then
+  \(5^2 \bigm|y^2\), so we'd need \(5^2 \bigm|5\).
 \end{itemize}
 
 These together imply that \(\gcd(y^2 + 5, 25) = 1\). This
-\(N(P) \mathrel{\Big|}1\), forcing
-\(P = \left\langle{ 1 }\right\rangle\), a contradiction.
+\(N(P) \bigm|1\), forcing \(P = \left\langle{ 1 }\right\rangle\), a
+contradiction.
 
 \end{proof}
 
@@ -4098,7 +4093,7 @@ and we can't do something similar unless \(I, J\) are principal. This is
 in fact the case: we'll restrict our attention to the class group. The
 left-hand side is the unit ideal, since it is principal. So we can write
 \([I]^3 = [J]^3 = e\), but we also know
-\(\operatorname{Cl}({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}})\),
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K) \cong {\mathbb{G}}_a({\mathbb{Z}}/2{\mathbb{Z}})\),
 so this can only happen if \([I] = [J] = e\) and \(I, J\) must be
 principal. So we can write
 \(I = \left\langle{ a + b \sqrt{-5}}\right\rangle\) for some
@@ -4139,7 +4134,7 @@ it precise.
 \begin{theorem}[Class number 1 iff UFD]
 
 Recall that the class number is defined as
-\(h_K \coloneqq\# \operatorname{Cl}({\mathbb{Z}}_K)\). Then
+\(h_K \coloneqq\# { \operatorname{Cl}} ({\mathbb{Z}}_K)\). Then
 \begin{align*}
 h_K = 1 \iff {\mathbb{Z}}_K \text{ is a UFD}
 .\end{align*}
@@ -4158,16 +4153,16 @@ ideal is principal and PID implies UFD.
 isn't true for general rings (e.g.~\({\mathbb{Z}}[x]\)). Suppose
 \({\mathbb{Z}}_K\) is a UFD, then it's enough to show that every prime
 ideal is principal. Let \(P\) be prime, then \(P\) lies above some
-ordinary prime \(p\), so
-\(P \mathrel{\Big|}\left\langle{ p }\right\rangle\). We can factor
+ordinary prime \(p\), so \(P \bigm|\left\langle{ p }\right\rangle\). We
+can factor
 \(\left\langle{ p }\right\rangle= \left\langle{ \prod_{i=1}^k \pi_i }\right\rangle = \prod_{i=1}^k \left\langle{ \pi_i }\right\rangle\)
 for some \(\pi_i\) irreducible. A prime ideal dividing a product, by
 unique factorization, must divide a factor, so
-\(P \mathrel{\Big|}\left\langle{ \pi_i }\right\rangle\) for some \(i\).
-In a UFD, irreducibles are prime, so
-\(\left\langle{ \pi_i }\right\rangle\) is a prime ideal, so we have a
-prime ideal dividing a prime ideal. By unique factorization, this forces
-\(P = \left\langle{ \pi_i }\right\rangle\), make \(P\) principal.
+\(P \bigm|\left\langle{ \pi_i }\right\rangle\) for some \(i\). In a UFD,
+irreducibles are prime, so \(\left\langle{ \pi_i }\right\rangle\) is a
+prime ideal, so we have a prime ideal dividing a prime ideal. By unique
+factorization, this forces \(P = \left\langle{ \pi_i }\right\rangle\),
+make \(P\) principal.
 
 \end{proof}
 
@@ -4212,10 +4207,10 @@ that none of the \(P_i\) can be principal. Suppose toward a
 contradiction \(P_1 = \left\langle{ \rho }\right\rangle\). Note that
 multiplying ideals yields smaller sets, so the right-hand side is a
 subset of \(\left\langle{ \rho }\right\rangle\), as is the left-hand
-side, and so \(\rho \mathrel{\Big|}\pi\). Since the \(P_i\) were
-principal prime ideals, \(\rho\) is prime and thus irreducible (since
-prime \(\implies\) irreducible for any domain), so \(\rho = u \pi\) for
-some unit. Thus they generate the same ideal, and
+side, and so \(\rho \bigm|\pi\). Since the \(P_i\) were principal prime
+ideals, \(\rho\) is prime and thus irreducible (since prime \(\implies\)
+irreducible for any domain), so \(\rho = u \pi\) for some unit. Thus
+they generate the same ideal, and
 \(P_1 = \left\langle{ \rho }\right\rangle = \left\langle{ \pi }\right\rangle\).
 But then \(\pi\) generates a prime ideal, make \(\pi\) prime, a
 contradiction.
@@ -4225,9 +4220,9 @@ group. The left-hand side is the identity, and the right-hand side are
 all non-identity elements a group of order 2. So \([P_1][P_2] = e\),
 making \(P_1 P_2 = \left\langle{ \omega }\right\rangle\) principal. Then
 \(\left\langle{ \pi }\right\rangle\subseteq \left\langle{ \omega }\right\rangle\)
-and so \(\omega \mathrel{\Big|}\pi\). Moreover, \(\omega\) is not a unit
-since the product of two prime ideals is not the unit ideal. Since
-\(\pi\) is irreducible, this makes \(\omega= u \pi\) and thus
+and so \(\omega \bigm|\pi\). Moreover, \(\omega\) is not a unit since
+the product of two prime ideals is not the unit ideal. Since \(\pi\) is
+irreducible, this makes \(\omega= u \pi\) and thus
 \(\left\langle{ \omega }\right\rangle = \left\langle{ \pi }\right\rangle\).
 If this were the case, we could cancel in the original equation:
 \begin{align*}
@@ -4275,10 +4270,10 @@ we'd then like to show that \(k=\ell\).
 \begin{observation}
 
 If \(\pi_1\) is prime, we can use that
-\(\left\langle{ \pi_1 }\right\rangle\mathrel{\Big|}\prod \left\langle{ \rho_j }\right\rangle\),
+\(\left\langle{ \pi_1 }\right\rangle\bigm|\prod \left\langle{ \rho_j }\right\rangle\),
 and would thus have to divide (say)
 \(\left\langle{ \rho_1 }\right\rangle\) up to relabeling. Since
-everything is irreducible, if \(\pi_1 \mathrel{\Big|}\rho_1\) then
+everything is irreducible, if \(\pi_1 \bigm|\rho_1\) then
 \(\left\langle{ \pi_1 }\right\rangle= \left\langle{ \rho_1 }\right\rangle\),
 meaning we can cancel.
 
@@ -4355,7 +4350,7 @@ Note that \(h_K = 1, 2\iff \rho(K) = 1\), and
 
 For \(h_K \geq 2\),
 \begin{align*}
-\rho(K) = {1\over 2} D( \operatorname{Cl}( {\mathbb{Z}}_K))
+\rho(K) = {1\over 2} D( { \operatorname{Cl}} ( {\mathbb{Z}}_K))
 ,\end{align*}
 where \(D(G)\) is the \textbf{Davenport constant} of the finite abelian
 group \(G\): the smallest number \(D\) such that every sequence of \(D\)
@@ -4386,9 +4381,10 @@ If \(h_K \to \infty\) for a sequence of number fields, then
 \begin{remark}
 
 This just follows from the above facts, since \(h_K \to \infty\) means
-the size of the group \(G \coloneqq\operatorname{Cl}( {\mathbb{Z}}_K)\)
-goes to infinity, which is a constant times \(\rho(K)\). So as the class
-group gets larger, factorization gets worse.
+the size of the group
+\(G \coloneqq{ \operatorname{Cl}} ( {\mathbb{Z}}_K)\) goes to infinity,
+which is a constant times \(\rho(K)\). So as the class group gets
+larger, factorization gets worse.
 
 \end{remark}
 
@@ -4462,11 +4458,11 @@ f_q(x) = x^2 - x + q = (x - \tau)( x - {\overline{{ \tau}}} ) = \min_{ \tau}(x)_
 By considering how this function increases, we can conclude
 \(1<q<f_q(x) < f_q(q) = q^2\). Let \(p\) be the least prime factor of
 \(f_q(x)\), which is necessarily bounded by \(\sqrt{ f_q(x) }\), so
-\(p<q\). Since \(p\mathrel{\Big|}f_q(x)\), we have \(x\in {\mathbb{Z}}\)
-as a root of \(f\pmod p\). So \(\min_\tau\) has a root modulo \(p\).
-Recall that studying how \(\left\langle{ p }\right\rangle\) factors into
-ideals of \({\mathbb{Z}}_K\) involved studying how \(\min_\tau\) factors
-mod \(p\). Since we've shown it has a root mod \(p\), it breaks into two
+\(p<q\). Since \(p\bigm|f_q(x)\), we have \(x\in {\mathbb{Z}}\) as a
+root of \(f\pmod p\). So \(\min_\tau\) has a root modulo \(p\). Recall
+that studying how \(\left\langle{ p }\right\rangle\) factors into ideals
+of \({\mathbb{Z}}_K\) involved studying how \(\min_\tau\) factors mod
+\(p\). Since we've shown it has a root mod \(p\), it breaks into two
 linear factors. So \(\left\langle{ p }\right\rangle = P_1 P_2\) as prime
 ideals of norm \(p\). By assumption,
 \(\mathbb{Z}\left[ {[} \right]\tau]\) is a UFD and the ring of integers
@@ -4523,7 +4519,7 @@ has two which sum to \(-b = -(-1) = 1\), where one of them satisfies
 .\end{align*}
 Why? If the other root \(x = r\) with \(1<r<p\) doesn't satisfy this,
 then the first root is \(p+1-r\) and will satisfy this. Then
-\(p\mathrel{\Big|}f_q(x)\), but this is a problem! This forces
+\(p\bigm|f_q(x)\), but this is a problem! This forces
 \begin{align*}
 p = f_q(x) = x^2 - x + q \geq q > \sqrt{{\left\lvert {d} \right\rvert} \over 3 } \geq p
 .\end{align*}
@@ -4543,15 +4539,16 @@ we'll just use a slightly weaker conclusion: \(P\) is principal.
 
 Let \(d\) be a negative squarefree integer with \(d \equiv 1 \pmod 4\)
 (such as the \(d\) we are looking at). Then
-\(\operatorname{Cl}({\mathbb{Z}}_K)\) is generated as a group by \([P]\)
-where \(P\) runs over all prime ideals above primes
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is generated as a group by
+\([P]\) where \(P\) runs over all prime ideals above primes
 \(p \leq \sqrt{{\left\lvert {d} \right\rvert}\over 3 }\).
 
 \end{theorem}
 
 Given this theorem, we are done: in our situation, all such \([P]\) are
 trivial in the class group since they are principal, which makes
-\(\operatorname{Cl}({\mathbb{Z}}_K) = 1\) and every ideal is principal.
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K) = 1\) and every ideal is
+principal.
 
 \end{proof}
 
@@ -4691,8 +4688,8 @@ Moreover, \(J {~\trianglelefteq~}{\mathbb{Z}}_K\) is an ideal, since
 it's a dilation of an ideal, \([J] = [I]\) since they're related by
 dilation, and \(J\) contains \(\qty{T / \beta } \beta = T\). Since to
 contain is to divide, we have
-\(J \mathrel{\Big|}\left\langle{ T }\right\rangle\). Recall that \(T\)
-was a product of integers, so however \(\left\langle{ T }\right\rangle\)
+\(J \bigm|\left\langle{ T }\right\rangle\). Recall that \(T\) was a
+product of integers, so however \(\left\langle{ T }\right\rangle\)
 factors into prime ideals, every such prime ideal will lie above an
 actual prime no bigger than \(D\). You can factor
 \(\left\langle{ T }\right\rangle\) by first factoring \(T\) into prime
@@ -4733,13 +4730,13 @@ value 1 for finitely many fields. What about for 2? This also only
 happens finitely often. In fact, for \emph{any} fixed \(h\), there are
 only finitely many imaginary quadratic fields with class number \(h\).
 This follows from the fact that
-\(\operatorname{Cl}({\mathbb{Q}}( \sqrt{d} )) \approx d^{1/2}\), which
-increases as \(d\) does. It's still hard to determine for a given \(h\)
-which values of \(d\) appear, partially because the last statement is
-\emph{ineffective}\footnote{Note that this may not be true as of 2020!
-  See Griffin, M., \& Ono, K. (2020). Elliptic curves and lower bounds
-  for class numbers. Journal of Number Theory, 214, 1-12.} in the sense
-that there aren't constants to put into the asymptotic statement.
+\({ \operatorname{Cl}} ({\mathbb{Q}}( \sqrt{d} )) \approx d^{1/2}\),
+which increases as \(d\) does. It's still hard to determine for a given
+\(h\) which values of \(d\) appear, partially because the last statement
+is \emph{ineffective}\footnote{Note that this may not be true as of
+  2020! See Griffin, M., \& Ono, K. (2020). Elliptic curves and lower
+  bounds for class numbers. Journal of Number Theory, 214, 1-12.} in the
+sense that there aren't constants to put into the asymptotic statement.
 
 \end{remark}
 
@@ -5318,10 +5315,10 @@ a^2 + b^2 + c^2 + d^2 = \equiv 0 \pmod m
 Being congruent to \(0\pmod m\) in \({\mathbb{Z}}[i]\) means that both
 the real and imaginary parts are divisible by \(m\), but since the
 left-hand side above is an ordinary integer, it has no imaginary part.
-So \(m \mathrel{\Big|}a^2 + b^2 + c^2 + d^2\) for every element of
-\(\Lambda\). Noting that \(\Lambda \subseteq {\mathbb{Z}}[i]\) we can
-identify \(\Lambda \subseteq {\mathbb{Z}}^4 \subseteq {\mathbb{R}}^4\)
-by pairing \(( \alpha, \beta) \rightleftharpoons(a,b,c,d)\).
+So \(m \bigm|a^2 + b^2 + c^2 + d^2\) for every element of \(\Lambda\).
+Noting that \(\Lambda \subseteq {\mathbb{Z}}[i]\) we can identify
+\(\Lambda \subseteq {\mathbb{Z}}^4 \subseteq {\mathbb{R}}^4\) by pairing
+\(( \alpha, \beta) \rightleftharpoons(a,b,c,d)\).
 
 \begin{claim}
 
@@ -5421,7 +5418,7 @@ Note that the first claim follows from the second since
 
 Let \(K\) be a number field with \([K: {\mathbb{Q}}] = n\) and
 \(F\leq K\) a subfield with \([F: {\mathbb{Q}}] = r\). Note that
-\(r\mathrel{\Big|}n\). Then every embedding
+\(r\bigm|n\). Then every embedding
 \(\tau: F\hookrightarrow{\mathbb{C}}\) extends in \(n/r\) ways to an
 embedding \(\sigma: K \hookrightarrow{\mathbb{C}}\).
 
@@ -5533,8 +5530,8 @@ we can think of these as
 N( \alpha ) &= \prod_{ \sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) \\
 \operatorname{Tr}( \alpha ) &= \sum_{\sigma: K \hookrightarrow{\mathbb{C}}} \sigma( \alpha) 
 .\end{align*}
-It's also the case that \(N({\,\cdot\,})\) is multiplicative and
-\(\operatorname{Tr}({\,\cdot\,})\) is \({\mathbb{Q}}{\hbox{-}}\)linear.
+It's also the case that \(N({-})\) is multiplicative and
+\(\operatorname{Tr}({-})\) is \({\mathbb{Q}}{\hbox{-}}\)linear.
 
 \end{remark}
 
@@ -5725,9 +5722,8 @@ where the \(c_i\in {\mathbb{Q}}\). We can assume that
 \begin{align*}
 \beta \coloneqq\alpha - \left[ {c_1}\right]  w_1 \in {\mathbb{Z}}_K
 ,\end{align*}
-where \(\left[ {{\,\cdot\,}}\right]\) denotes taking the integer part.
-We can write
-\(\beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n\).
+where \(\left[ {{-}}\right]\) denotes taking the integer part. We can
+write \(\beta = \left\{{c_1}\right\}w_1 + c_2 w_2 + \cdots + c_n w_n\).
 Observe that the tuple
 \begin{align*}
 {\left[ { \beta, w_2, \cdots, w_n} \right]} 
@@ -5831,13 +5827,13 @@ kinds of questions!
 
 Taking a prime \(p\in {\mathbb{Z}}\), we have
 \begin{align*}
-p \text{ ramifies in } {\mathbb{Z}}_K \iff p \mathrel{\Big|}{\Delta}_K
+p \text{ ramifies in } {\mathbb{Z}}_K \iff p \bigm|{\Delta}_K
 ,\end{align*}
 where \textbf{ramification} occurs if when
 \(\left\langle{ p }\right\rangle{~\trianglelefteq~}{\mathbb{Z}}_K\)
 factors into prime ideals with a repeated prime factor. In particular,
-\({\Delta}({\,\cdot\,}) < \infty\), and so only finitely many such
-primes can occur.
+\({\Delta}({-}) < \infty\), and so only finitely many such primes can
+occur.
 
 \end{theorem}
 
@@ -5921,8 +5917,8 @@ can be more complicated, so we'll need another way to show finiteness.
 
 \begin{lemma}[Elements divide their norms]
 
-Let \(\alpha\in {\mathbb{Z}}_K\), then
-\(\alpha\mathrel{\Big|}N( \alpha)\) in \({\mathbb{Z}}_K\).
+Let \(\alpha\in {\mathbb{Z}}_K\), then \(\alpha\bigm|N( \alpha)\) in
+\({\mathbb{Z}}_K\).
 
 \end{lemma}
 
@@ -5968,9 +5964,9 @@ where we've forgotten the ring structure and are just considering it as
 a \({\mathbb{Z}}{\hbox{-}}\)module . But this has size \(m^n < \infty\).
 
 Now let \(\alpha\in I\) be nonzero and let \(m \coloneqq\pm N \alpha\),
-choosing whichever sign makes \(m>0\). Since
-\(\alpha\mathrel{\Big|}N \alpha\), so \(N \alpha = \ell \alpha\) is a
-multiple of \(\alpha\). But \(\alpha\in I\) and \(I\) is an ideal, so
+choosing whichever sign makes \(m>0\). Since \(\alpha\bigm|N \alpha\),
+so \(N \alpha = \ell \alpha\) is a multiple of \(\alpha\). But
+\(\alpha\in I\) and \(I\) is an ideal, so
 \(N \alpha\in I \implies m \in I\). Then (check!) the following map is
 surjective:
 \begin{align*}
@@ -6236,8 +6232,7 @@ We can try \(1, \alpha, \alpha^2\), and check
 ,\end{align*}
 so we can't conclude this is a \({\mathbb{Z}}{\hbox{-}}\)basis. Going
 back to the proof, we \emph{can} conclude that
-\([{\mathbb{Z}}_K: H] ^2 \mathrel{\Big|}{\Delta}(1, \alpha, \alpha^2)\)
-where
+\([{\mathbb{Z}}_K: H] ^2 \bigm|{\Delta}(1, \alpha, \alpha^2)\) where
 \(H \coloneqq{\mathbb{Z}}+ {\mathbb{Z}}\alpha + {\mathbb{Z}}\alpha^2 = {\mathbb{Z}}[ \alpha ]\).
 This allows us to conclude that \([{\mathbb{Z}}_K: H] = 1, 2\), so this
 could still be an index 2 subgroup. If this happens,
@@ -6325,7 +6320,9 @@ For \(K = {\mathbb{Q}}( \zeta_m)\),
 The degree of any such \(K/{\mathbb{Q}}\) is \(\phi(m)\), and here
 \(\phi(p) = p-1\). Also recall Eisenstein's criterion: if \(p\) divides
 all of the coefficients of a polynomial \(f(x) \coloneqq\sum a_i x^i\)
-but \(p^2\nmid a_0\), then \(f\) is irreducible over \({\mathbb{Q}}\).
+but
+\(p^2%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% a_0
+\), then \(f\) is irreducible over \({\mathbb{Q}}\).
 
 \end{remark}
 
@@ -6363,7 +6360,12 @@ is Eisenstein at the prime \(p\). Let
 \(K \coloneqq{\mathbb{Q}}( \alpha)\), a number field of degree \(n\).
 Then
 \begin{align*}
-p\nmid[{\mathbb{Z}}_K : {\mathbb{Z}}[ \alpha] ]
+p%
+  \mathrel{\mkern.5mu % small adjustment
+    % superimpose \nmid to \big|
+    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
+  }%
+[{\mathbb{Z}}_K : {\mathbb{Z}}[ \alpha] ]
 .\end{align*}
 
 \end{proposition}
@@ -6416,8 +6418,10 @@ N \qty{ b_i \over p} N( \alpha^{n-1} ) \\
 where we've used that all embeddings fix rational numbers. But this is
 not an integer, since by Eisenstein \(p^2\) does not divide \(a_0\). So
 \(a_0^{n-1}\) contributes exactly \(n-1\) copies of \(p\), leaving a
-\(p\) in the denominator, and \(p\nmid b_i\) since we choose \(i\)
-precisely to arrange for this. \(\contradiction\)
+\(p\) in the denominator, and
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% b_i
+\) since we choose \(i\) precisely to arrange for this.
+\(\contradiction\)
 
 \end{proof}
 
@@ -6484,7 +6488,7 @@ time we have
 [{\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta ] ]^2 
 \implies
 [{\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta ] ]^2 
-\mathrel{\Big|}
+\bigm|
 {\Delta}( 1, \zeta, \cdots, \zeta^{p-2}) 
 .\end{align*}
 
@@ -6497,8 +6501,8 @@ the left-hand side.
 
 We'll proceed by showing that the only prime that could divide the
 right-hand side is \(p\). Suppose \(q\) divides the right-hand side,
-i.e.~\(q \mathrel{\Big|}{\Delta}(x^{p-1} + \cdots + x + 1)\). So this is
-zero mod \(q\), and thus
+i.e.~\(q \bigm|{\Delta}(x^{p-1} + \cdots + x + 1)\). So this is zero mod
+\(q\), and thus
 \({\Delta}( x^{p-1} + \cdots + x + 1 \pmod q) \equiv 0\). The
 discriminant was a product of roots, so it can only be zero if two roots
 coincide, so there is a multiple root of
@@ -6514,8 +6518,9 @@ So \([{\mathbb{Z}}_K : {\mathbb{Z}}[\zeta] ] = p^\ell\) for some
 \([ {\mathbb{Z}}_K : {\mathbb{Z}}[ \zeta] ] = [ {\mathbb{Z}}_K: {\mathbb{Z}}[\zeta - 1] ]\).
 But by the previous lemma, we know that the minimal polynomial of
 \(\zeta_p - 1\) is \(\Phi(x+1)\), which is \(p{\hbox{-}}\)Eisenstein. So
-by that lemma, \(p\nmid[{\mathbb{Z}}_K: {\mathbb{Z}}[ \zeta - 1]]\),
-which forces \(\ell = 0\) and
+by that lemma,
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [{\mathbb{Z}}_K: {\mathbb{Z}}[ \zeta - 1]]
+\), which forces \(\ell = 0\) and
 \({\mathbb{Z}}_K = {\mathbb{Z}}[ \zeta_p ]\).
 
 \end{proof}
@@ -6537,11 +6542,11 @@ which forces \(\ell = 0\) and
 These are defined in terms of integral bases, and we're trying to prove
 that something \emph{is} an integral basis, so how do you show this if
 you don't know your basis is integral to begin with? Without knowing the
-exact values of the discriminants, you can show
-\({\Delta}_a \mathrel{\Big|}a^?\) divides some power of \(a\), and the
-same for \(b\), and so \(a, b\) coprime will make \(a^?, b^?\) coprime
-as well. This can be shown by computing the discriminant of a
-\emph{candidate} integral bases rather than an actual one.
+exact values of the discriminants, you can show \({\Delta}_a \bigm|a^?\)
+divides some power of \(a\), and the same for \(b\), and so \(a, b\)
+coprime will make \(a^?, b^?\) coprime as well. This can be shown by
+computing the discriminant of a \emph{candidate} integral bases rather
+than an actual one.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6586,7 +6591,7 @@ number field. Let \(K\) be a number field with
 \item
   \(\operatorname{Id}({\mathbb{Z}}_K)\) to be a UFM as a monoid,
 \item
-  \(\operatorname{Cl}({\mathbb{Z}}_K)\) is a finite group,
+  \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is a finite group,
 \end{enumerate}
 
 Recall that we proved (1) and used it to deduce (2) for quadratic
@@ -6602,7 +6607,7 @@ that are unlikely to show up on oral exams).
 \begin{definition}[Class Group of a Number Ring]
 
 \begin{align*}
-\operatorname{Cl}({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/ \sim
+{ \operatorname{Cl}} ({\mathbb{Z}}_K) \coloneqq\operatorname{Id}({\mathbb{Z}}_K)/ \sim
 ,\end{align*}
 where \(\sim\) denotes dilation equivalence.
 
@@ -6615,9 +6620,9 @@ Our strategy:
 \begin{itemize}
 \tightlist
 \item
-  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) is finite.
+  Prove \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is finite.
 \item
-  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) is actually a group,
+  Prove \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is actually a group,
   i.e.~there are inverses, so that for every ideal there is another
   ideal such that their product is principal (the ``Principal Multiple
   Lemma'').
@@ -6660,7 +6665,7 @@ way.
 \begin{theorem}[The class group is finite]
 
 \begin{align*}
-\# \operatorname{Cl}({\mathbb{Z}}_K) < \infty 
+\# { \operatorname{Cl}} ({\mathbb{Z}}_K) < \infty 
 .\end{align*}
 
 \end{theorem}
@@ -6695,8 +6700,8 @@ one of finitely many such \(J\). Since \(\beta\in I\), we can deduce
 that \(T! \in J\) and thus
 \(\left\langle{ T! }\right\rangle \subseteq J\). We'd like to say ``to
 contain is to divide'' (as in the case of unique factorization) and
-conclude \(J\mathrel{\Big|}T!\), which only has finitely many divisors.
-However, we haven't proved this yet! We can use an algebra fact instead:
+conclude \(J\bigm|T!\), which only has finitely many divisors. However,
+we haven't proved this yet! We can use an algebra fact instead:
 \begin{align*}
 \left\{{\substack{
   \text{Ideals of ${\mathbb{Z}}_K$ }
@@ -6746,11 +6751,11 @@ the finiteness of the class group. The strategy:
 \begin{itemize}
 \tightlist
 \item
-  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) is a finite monoid,
+  Prove \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is a finite monoid,
 \item
-  Prove \(\operatorname{Cl}({\mathbb{Z}}_K)\) has inverses and is thus a
-  group, i.e.~every nonzero ideal can be multiplied by another ideal to
-  become principal (principal multiple lemma),
+  Prove \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) has inverses and is
+  thus a group, i.e.~every nonzero ideal can be multiplied by another
+  ideal to become principal (principal multiple lemma),
 \item
   Run proofs/corollaries as before.
 \end{itemize}
@@ -6828,8 +6833,9 @@ principal.
 
 \begin{proof}[of principal multiple lemma]
 
-Consider \([I], [I]^2, \cdots \in \operatorname{Cl}({\mathbb{Z}}_K)\).
-By the pigeonhole principal, there is some \(k, \ell\) such that
+Consider
+\([I], [I]^2, \cdots \in { \operatorname{Cl}} ({\mathbb{Z}}_K)\). By the
+pigeonhole principal, there is some \(k, \ell\) such that
 \([I^k] = [I]^\ell\), so \(I^k = \lambda I^\ell\) for some
 \(\lambda \in K^{\times}\). Note that any nonzero element of \(K\) can
 be written as \(k/n\) for \(k\in K\) and \(n\in {\mathbb{Z}}_K\). So we
@@ -6862,8 +6868,8 @@ slightly reversed.
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \item
-  \(\operatorname{Cl}({\mathbb{Z}}_K)\) is a group, and thus a finite
-  abelian group.
+  \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is a group, and thus a
+  finite abelian group.
 \item
   \(\operatorname{Id}({\mathbb{Z}}_K)\) is cancellative. Just show one
   can cancel principal ideals (by dilation), and then in general you
@@ -6886,11 +6892,11 @@ factors into irreducibles.
 \begin{proof}[of lemma]
 
 We'll proceed by induction on \(N(I)\), using that \(N(AB) \leq N(A)\)
-for any \(A\) and so \(I\mathrel{\Big|}J \implies N(I) < N(J)\). Before
-we used that \(N(AB) = N(A) N(B)\), but we haven't proved that here yet.
-We also don't know that ``to divide is to contain'' here, but since
-\(I\mathrel{\Big|}J\) and \(I\neq J\), we do obtain \(J \subsetneq I\).
-Hence there is a surjection
+for any \(A\) and so \(I\bigm|J \implies N(I) < N(J)\). Before we used
+that \(N(AB) = N(A) N(B)\), but we haven't proved that here yet. We also
+don't know that ``to divide is to contain'' here, but since \(I\bigm|J\)
+and \(I\neq J\), we do obtain \(J \subsetneq I\). Hence there is a
+surjection
 \begin{align*}
 {\mathbb{Z}}_K/J \to {\mathbb{Z}}_K/I
 .\end{align*}
@@ -7041,8 +7047,7 @@ N(IJ) = N(I) N(J) && \forall I, J \in \operatorname{Id}({\mathbb{Z}}_K)
 
 If \(I, J\in \operatorname{Id}({\mathbb{Z}}_K)\), we have
 \(\gcd(I, J) = I+J\), since this is the smallest ideal such that any
-\(P\mathrel{\Big|}I, P\mathrel{\Big|}J\) must satisfy
-\(P\mathrel{\Big|}\gcd(I, J)\).
+\(P\bigm|I, P\bigm|J\) must satisfy \(P\bigm|\gcd(I, J)\).
 
 \end{remark}
 
@@ -7084,14 +7089,14 @@ Check that this is a well-defined group morphism.
 
 \textbf{Injectivity}: Suppose that \(\alpha\pmod P \in \ker \psi\), so
 \(\alpha \beta\in IP\) and
-\(IP \mathrel{\Big|}\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle\).
+\(IP \bigm|\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle\).
 Note that without the \(\alpha\) this would be false, so we're
 critically using that \(\beta\) is in \(I\) but not \(IP\):
-\(IP\not\mathrel{\Big|}\left\langle{ \beta }\right\rangle\) since
+\(IP\not\bigm|\left\langle{ \beta }\right\rangle\) since
 \(\beta \not\in IP\). So \(IP\) divides this product but not \(\beta\)
 while \(I\) \emph{does} divide \(\beta\), this forces
-\(P\mathrel{\Big|}m \left\langle{ \alpha }\right\rangle\). Then
-\(\alpha\in P\) and \(\alpha\pmod P = 0\), so \(\ker \psi = 0\).
+\(P\bigm|m \left\langle{ \alpha }\right\rangle\). Then \(\alpha\in P\)
+and \(\alpha\pmod P = 0\), so \(\ker \psi = 0\).
 
 \hfill\break
 
@@ -7229,7 +7234,7 @@ ideal can be made principal after passing to some finite extension.
 
 \begin{proof}[of lemma]
 
-Let \(m \coloneqq\# \operatorname{Cl}({\mathbb{Z}}_K)\). Then
+Let \(m \coloneqq\# { \operatorname{Cl}} ({\mathbb{Z}}_K)\). Then
 \(I^m = \alpha{\mathbb{Z}}_K\) is principal since \(m\) is the order of
 this group. Let \(\beta\coloneqq\sqrt[m]{\alpha} \in {\mathbb{C}}\) and
 let \(L \coloneqq K( \beta)\). Here \(\beta\) is an algebraic integer
