@@ -80,7 +80,7 @@ To closed 3-manifolds \( M \) we can assign a graded abelian group \( \widehat{H
 
 -   \( HF^\infty \in {\mathsf{grMod}}({\mathbb{Z}}_2[u, u ^{-1} ]) \),
 
-\( HF^+ \) and \( HF^\infty \) can be computed using \( HF^- \). In general, we'll write \( HF^{\,\cdot\,} \) to denote constructions that work with any of the above variants.
+\( HF^+ \) and \( HF^\infty \) can be computed using \( HF^- \). In general, we'll write \( HF^{-} \) to denote constructions that work with any of the above variants.
 :::
 
 ::: {.remark}
@@ -117,7 +117,7 @@ Note that this can't be a norm, since if \( {\mathbb{S}}^2, {\mathbb{T}}^2 \in [
 ::: {.theorem title="Osvath-Szabo"}
 \( HF \) detects [^3] the Thurston seminorm, and there is a splitting as groups/modules
 \[
-HF^{\,\cdot\,}(M) = \bigoplus _{\mathfrak{s} \in {\operatorname{Spin}}^c(M)} HF^{\,\cdot\,}(M, S) 
+HF^{-}(M) = \bigoplus _{\mathfrak{s} \in {\operatorname{Spin}}^c(M)} HF^{-}(M, S) 
 \]
 where \( S \in {\operatorname{Spin}}^c(M) \) is a **spin\( ^c \) structure**: an oriented 2-dimensional vector bundle on \( M \) (up to some equivalence).
 :::
@@ -371,7 +371,7 @@ All of these invariants work nicely in a \( (3+1){\hbox{-}} \)TQFT: we have inva
 
 Osvath-Szabó define a map
 \[
-F_{W, t}^{\,\cdot\,}: HF^{\,\cdot\,}(M_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{\,\cdot\,}(M_2, { \left.{{t}} \right|_{{M_2}} })
+F_{W, t}^{-}: HF^{-}(M_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{-}(M_2, { \left.{{t}} \right|_{{M_2}} })
 \]
 using \( t \) coming from the splitting of spin\( ^c \) structure which yields an invariant of closed 4-manifolds referred to as **mixed invariants**.
 
@@ -382,7 +382,7 @@ Similarly, if we have knots in 3-manifolds we can define a cobordism \( (M_1, K_
 This similarly yields a map
 
 \[
-F_{W, F t}^{\,\cdot\,}: HF^{\,\cdot\,}(M_1, K_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{\,\cdot\,}(M_2, K_2, { \left.{{t}} \right|_{{M_2}} })
+F_{W, F t}^{-}: HF^{-}(M_1, K_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{-}(M_2, K_2, { \left.{{t}} \right|_{{M_2}} })
 \]
 :::
 
@@ -474,7 +474,7 @@ Given a 3-manifold \( M^3 \), we'll associate a Heegard diagram \( \Sigma, \alph
 The space \( \operatorname{Sym}^g(\Sigma) \) is a smooth complex manifold of \( {\mathbb{R}}{\hbox{-}} \)dimension \( 2g \).
 :::
 
-Write \( {\mathbb{T}}_{\alpha} \coloneqq\prod_{i=1}^g \alpha_i \subseteq \prod_{i=1}^g \Sigma \) for a \( g{\hbox{-}} \)dimensional torus; this admits a quotient map to \( \operatorname{Sym}^g(\Sigma) \). We can repeat this to obtain \( {\mathbb{T}}_{\beta} \). Then \( HF^{\,\cdot\,}(M) \) will be a variation of Lagrangian Floer Homology for \( (\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{\alpha}, {\mathbb{T}}_{\beta} ) \).
+Write \( {\mathbb{T}}_{\alpha} \coloneqq\prod_{i=1}^g \alpha_i \subseteq \prod_{i=1}^g \Sigma \) for a \( g{\hbox{-}} \)dimensional torus; this admits a quotient map to \( \operatorname{Sym}^g(\Sigma) \). We can repeat this to obtain \( {\mathbb{T}}_{\beta} \). Then \( HF^{-}(M) \) will be a variation of Lagrangian Floer Homology for \( (\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{\alpha}, {\mathbb{T}}_{\beta} ) \).
 
 ::: {.example title="?"}
 Consider constructing a genus \( g=1 \) Heegard diagram. Recall that \( S^3 \) can be constructed by gluing two solid torii.
@@ -501,7 +501,7 @@ Taking a new solid torus \( S \coloneqq{\mathbb{D}}^2 \times S^1 \) and a diffeo
 :::
 
 ::: {.remark}
-Note that the diffeomorphism is entirely determined by the image of the curve \( \alpha \) . The Knot Floer chain complex of \( K \) will allow us to compute any flavor \( HF^{\,\cdot\,}M _{\varphi} (K) \) of Floer homology. Why is this important: any closed 3-manifold is surgery on a link in \( S^3 \). However there are many more computational tools available here and not in the other theories: combinatorial approaches to compute, exact sequences, bordered Floer homology.
+Note that the diffeomorphism is entirely determined by the image of the curve \( \alpha \) . The Knot Floer chain complex of \( K \) will allow us to compute any flavor \( HF^{-}M _{\varphi} (K) \) of Floer homology. Why is this important: any closed 3-manifold is surgery on a link in \( S^3 \). However there are many more computational tools available here and not in the other theories: combinatorial approaches to compute, exact sequences, bordered Floer homology.
 :::
 
 Next time: we'll talk about "integer surgeries".
@@ -1219,7 +1219,7 @@ Check that \( g^\mathcal{P} \) is a metric on \( \mathcal{P}(L_0, L_1) \).
 
 We'll now define a **gradient vector field**:
 \[
-g_{\gamma}^\mathcal{P}( -\nabla, {\,\cdot\,}) = \alpha({\,\cdot\,})
+g_{\gamma}^\mathcal{P}( -\nabla, {-}) = \alpha({-})
 .\]
 So here \( \alpha \) will play the role of \( -df \). We can write
 \[
@@ -1396,7 +1396,7 @@ A **symplectomorphism** is a diffeomorphism \( \psi: M_1 \to M_2 \) such \( \psi
 ::: {.definition title="Hamiltonian Vector Fields"}
 A **Hamiltonian vector field** is a vector field \( V \) such that
 \[
-\iota_V \omega\coloneqq\omega(V, {\,\cdot\,}) \in \Omega^1
+\iota_V \omega\coloneqq\omega(V, {-}) \in \Omega^1
 \]
 is exact, and thus equal to \( df \) for some functional \( f\in C^{\infty }(M, {\mathbb{R}}) \). Note that if one has a functional \( f \), one can find a symplectic form \( \omega \) such that this holds, so \( V \) is sometimes denoted \( V_f \) to show this dependence.
 :::
@@ -2489,7 +2489,7 @@ Let \( x = \left\{{ x_1, \cdots, x_g }\right\} \) and \( y = \left\{{ y_1, \cdot
 \[
 \mu( \varphi) = e( D( \varphi) ) + n_x( D( \varphi ) ) + n_y( D( \varphi ) )
 .\]
-where \( e({\,\cdot\,}) \) is the **Euler measure** and \( n_x(\cdots), n_y(\cdots) \) is referred to as the **point measure**. Note that these only depend on the domain of \( \varphi \).
+where \( e({-}) \) is the **Euler measure** and \( n_x(\cdots), n_y(\cdots) \) is referred to as the **point measure**. Note that these only depend on the domain of \( \varphi \).
 :::
 
 ::: {.definition title="Euler Measure"}
@@ -2864,10 +2864,10 @@ Next week: more about the Maslov index and \( \mathrm{Spin}^{\mathbb{C} } \) str
 ::: {.remark}
 Let \( M\in {\mathsf{Mfd}}^3({\mathbb{R}}) \) be a closed oriented 3-manifold and \( \mathcal{H} = (\Sigma, \alpha, \beta, z) \) a Heegaard diagram for \( M \). Letting \( b_i \) be the Betti numbers, note that \( b_1 = 0 \iff M \in \operatorname{QHS}^3 \) is a rational homology 3-sphere, i.e. \( H_i(M; {\mathbb{Q}}) \cong H_i(S^3; {\mathbb{Q}}) \) for all \( i \). This also implies that \( H_2(M; {\mathbb{Z}}) = 0 \). Under this condition, we can define a **relative \( {\mathbb{Z}}{\hbox{-}} \)grading** (i.e. we have a difference of grading between any two elements) on \( \widehat{CF} \) in the following way: for \( x, y \) two generators, we set
 \[
-{\operatorname{gr}}(x) - {\operatorname{gr}}(y) \coloneqq\mu( \varphi) -2n_z( \varphi) && \text{for some } \varphi\in \pi_2(x,y)
+{\mathsf{gr}\,}(x) - {\mathsf{gr}\,}(y) \coloneqq\mu( \varphi) -2n_z( \varphi) && \text{for some } \varphi\in \pi_2(x,y)
 .\]
 
-Recall that \( \mu({\,\cdot\,}) \) denotes the Maslov index, \( n_z( {\,\cdot\,}) \) is the local multiplicity of a Whitney disc at \( z \), and \( x, y \) denote tuples of points.
+Recall that \( \mu({-}) \) denotes the Maslov index, \( n_z( {-}) \) is the local multiplicity of a Whitney disc at \( z \), and \( x, y \) denote tuples of points.
 :::
 
 ::: {.remark}
@@ -3298,7 +3298,7 @@ Supposing that \( M \in \operatorname{QHS}^3 \), then by Osvath-Szabo, for any \
 ::: {.definition title="$d\\dash$invariant"}
 The Maslov grading of the free summand \( d = d(M, s) \) is referred to as the **\( d{\hbox{-}} \)invariant** or correction term, and
 \[
-d(M, s) = \max \left\{{ {\operatorname{gr}}( \alpha) {~\mathrel{\Big|}~}\alpha\in \operatorname{HF}^-(M, s),\, u^n \alpha \neq 0 \forall n  }\right\}
+d(M, s) = \max \left\{{ {\mathsf{gr}\,}( \alpha) {~\mathrel{\Big|}~}\alpha\in \operatorname{HF}^-(M, s),\, u^n \alpha \neq 0 \forall n  }\right\}
 .\]
 :::
 
@@ -3391,7 +3391,7 @@ Sketch of the proof (\( \impliedby \)): A computation will show that \( \chi \wi
 :::
 
 ::: {.remark}
-Here note that \( C_* \) is \( {\mathbb{Z}}/2{\hbox{-}} \)graded, as is \( (\widehat{\operatorname{HF}}(M), {{\partial}}) \), so we define \( \chi(C_*) = {\operatorname{rank}}C_0 - {\operatorname{rank}}C_1 \). Since we have a relative \( {\mathbb{Z}}{\hbox{-}} \)grading given by \( \mu \), we get a relative \( {\mathbb{Z}}/2{\hbox{-}} \)grading given by \( {\operatorname{gr}}_{{\mathbb{Z}}/2}(x, y) = {\operatorname{gr}}_{\mathbb{Z}}(x, y) \), which gives us \( \chi \widehat{\operatorname{HF}}(M) \) up to sign.
+Here note that \( C_* \) is \( {\mathbb{Z}}/2{\hbox{-}} \)graded, as is \( (\widehat{\operatorname{HF}}(M), {{\partial}}) \), so we define \( \chi(C_*) = {\operatorname{rank}}C_0 - {\operatorname{rank}}C_1 \). Since we have a relative \( {\mathbb{Z}}{\hbox{-}} \)grading given by \( \mu \), we get a relative \( {\mathbb{Z}}/2{\hbox{-}} \)grading given by \( {\mathsf{gr}\,}_{{\mathbb{Z}}/2}(x, y) = {\mathsf{gr}\,}_{\mathbb{Z}}(x, y) \), which gives us \( \chi \widehat{\operatorname{HF}}(M) \) up to sign.
 :::
 
 ::: {.example title="?"}
@@ -3426,7 +3426,7 @@ Let \( K \subseteq M \in {\mathsf{Mfd}}^3 \) be a knot, i.e. the image of an em
 \phi: {{\partial}}(S^1 \times{\mathbb{D}}^2) \xrightarrow{\text{diffeo}} {{\partial}}X
 .\]
 
-Any surgery will be determined by the image of the red circle \( \gamma \coloneqq{\{\operatorname{pt}\}}\times{{\partial}}{\mathbb{D}}^2 \) in the following:
+Any surgery will be determined by the image of the red circle \( \gamma \coloneqq{\operatorname{pt}}\times{{\partial}}{\mathbb{D}}^2 \) in the following:
 
 ![image_2021-03-30-12-01-24](figures/image_2021-03-30-12-01-24.png)
 
@@ -3763,6 +3763,106 @@ Let \( K \subseteq S^3 \) be a knot, and take the triad \( (S^3, S_p^3(K), S_{p+
 
 ::: {.example title="?"}
 For \( K = T_{p, q} \), the surgery \( S^3_{pq-1}(T_{p, q}) \) is a lens space. Thus \( S_n^3(T_{p, q}) \) is an \( L{\hbox{-}} \)space for all \( n\geq pq-1 \).
+:::
+
+# Surgery Exact Triangle and Knot Diagrams (Thursday, April 15)
+
+::: {.remark}
+Recall: let \( (M, M_0, M_1) \) be a triple of 3-manifolds corresponding to a knot \( K \subseteq M \), where \( M_0 \) is 0-surgery, \( M_1 \) is 1-surgery, and \( M_{\infty} \) is \( \infty{\hbox{-}} \)surgery. Here \( M \) can be chosen such that M
+
+-   \( \gamma_{\infty } \) is a meridian of \( K \),
+-   \( \gamma_0 \) is a longitude of \( K \),
+-   \( \gamma_1 = -\gamma_{\infty } -\gamma_0 \)
+
+Then there exists an exact triangle:
+
+```{=tex}
+\begin{tikzcd}
+    {\widehat{\operatorname{HF}}(M_0)} &&&& {\widehat{\operatorname{HF}}(M_1)} \\
+    \\
+    \\
+    && {\widehat{\operatorname{HF}}(M)}
+    \arrow["{f_0}", from=1-1, to=1-5]
+    \arrow["{f_1}", from=1-5, to=4-3]
+    \arrow["{f = f_{\infty}}", from=4-3, to=1-1]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGhhdHtcXEhGfShNXzApIl0sWzQsMCwiXFxoYXR7XFxIRn0oTV8xKSJdLFsyLDMsIlxcaGF0e1xcSEZ9KE0pIl0sWzAsMSwiZl8wIl0sWzEsMiwiZl8xIl0sWzIsMCwiZiA9IGZfe1xcaW5mdHl9Il1d)
+
+Our goal is to define \( f: \widehat{\operatorname{HF}}(M) \to \widehat{\operatorname{HF}}(M_0) \).
+:::
+
+::: {.remark}
+Note that \( M \) admits a Heegard diagram
+\[
+( \Sigma_g, \vec{ \alpha} = [\alpha_1, \cdots, \alpha_g], \vec{ \beta} = [\alpha_1, \cdots, \alpha_g] )
+\]
+such that \( (\Sigma_g, \vec \alpha, [\beta_1, \cdots, \beta_{g-1}] \) is a "diagram" for \( M - \operatorname{nd}(K) \). Recall the notion of handlebodies, where each handle bounds a disc:
+
+![image_2021-04-15-11-20-29](figures/image_2021-04-15-11-20-29.png)
+
+We can generalize this to a **compression body**:
+
+![image_2021-04-15-11-22-13](figures/image_2021-04-15-11-22-13.png)
+
+-   Start with \( \Sigma'_{g'} \times[0, 1] \).
+-   Attach a solid handle \( K \) to \( \Sigma' \times\left\{{ 1 }\right\} \)
+
+This yields a cobordism from \( \Sigma'_{g'} \times\left\{{ 0 }\right\} \) to \( \Sigma_{g' + k} \). So we can write \( {{\partial}}C = \Sigma' \times\left\{{ 0 }\right\} {\coprod}\Sigma \). Label the curves bounding the embedded discs as \( \gamma_i \):
+
+![image_2021-04-15-11-24-22](figures/image_2021-04-15-11-24-22.png)
+
+Then we can form a diagram \( (\Sigma_g, \left\{{ \gamma_1, \cdots, \gamma_k }\right\} \) where \( k\leq g \) will specify the compression body. If these are pairwise disjoint simple closed curves that are linearly independent in \( H_1( \Sigma ) \), this will be a compression body from a surface with genus \( g-k \) to \( \Sigma_g \).
+
+![image_2021-04-15-11-31-50](figures/image_2021-04-15-11-31-50.png)
+
+In this case, \( (\Sigma, \vec \alpha, \left\{{ \beta_1, \cdots, \beta_{g-1} }\right\} \) will be a diagram for \( M\setminus\operatorname{nd}(K) \).
+
+![The cobordism from \( \Sigma \) to the compressionbody](figures/image_2021-04-15-11-35-35.png)
+:::
+
+::: {.example title="?"}
+Consider \( S^3 \setminus\operatorname{nd}(T) \) for \( T \) the trefoil. Behold the beautiful trefoil:
+
+![image_2021-04-15-11-37-56](figures/image_2021-04-15-11-37-56.png)
+
+After thickening, we obtain the following:
+
+![image_2021-04-15-11-39-41](figures/image_2021-04-15-11-39-41.png)
+
+We can push the top down:
+
+![image_2021-04-15-11-40-24](figures/image_2021-04-15-11-40-24.png)
+
+And wrap part of it around:
+
+![image_2021-04-15-11-43-42](figures/image_2021-04-15-11-43-42.png)
+
+We can keep moving this to undo the crossing:
+
+![image_2021-04-15-11-45-58](figures/image_2021-04-15-11-45-58.png)
+
+![image_2021-04-15-11-47-36](figures/image_2021-04-15-11-47-36.png)
+
+So the blue curve gets complicated, but the neighborhood of \( T \) is a genus 2 surface, since the outer two circles bound discs. So in summary, we have the following process:
+
+![image_2021-04-15-11-50-12](figures/image_2021-04-15-11-50-12.png)
+
+We can represent this with a planar picture:
+
+![image_2021-04-15-11-56-01](figures/image_2021-04-15-11-56-01.png)
+
+Following the longitude, we obtain:
+
+![image_2021-04-15-12-15-41](figures/image_2021-04-15-12-15-41.png)
+
+Here \( \lambda \) has been wrapped twice, and to do \( n{\hbox{-}} \)surgery, we wrap \( n \) times.
+
+![image_2021-04-15-12-16-46](figures/image_2021-04-15-12-16-46.png)
+:::
+
+::: {.exercise title="?"}
+Draw a diagram for \( S_n^3 \) (the figure eight).
 :::
 
 [^1]: See Sarkour-Wang

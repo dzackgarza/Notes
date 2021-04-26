@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-06 }
+{\tiny \textit{Last updated:} 2021-04-25 }
 \end{flushleft}
 
 
@@ -322,8 +322,8 @@ To closed 3-manifolds \(M\) we can assign a graded abelian group
 \end{itemize}
 
 \(HF^+\) and \(HF^\infty\) can be computed using \(HF^-\). In general,
-we'll write \(HF^{\,\cdot\,}\) to denote constructions that work with
-any of the above variants.
+we'll write \(HF^{-}\) to denote constructions that work with any of the
+above variants.
 
 \end{proposition}
 
@@ -380,7 +380,7 @@ Note that this can't be a norm, since if
   technical.} the Thurston seminorm, and there is a splitting as
 groups/modules
 \begin{align*}
-HF^{\,\cdot\,}(M) = \bigoplus _{\mathfrak{s} \in {\operatorname{Spin}}^c(M)} HF^{\,\cdot\,}(M, S) 
+HF^{-}(M) = \bigoplus _{\mathfrak{s} \in {\operatorname{Spin}}^c(M)} HF^{-}(M, S) 
 \end{align*}
 where \(S \in {\operatorname{Spin}}^c(M)\) is a \textbf{spin\(^c\)
 structure}: an oriented 2-dimensional vector bundle on \(M\) (up to some
@@ -825,7 +825,7 @@ about \textbf{cobordisms} between them: \(W^4\) a compact oriented
 
 Osvath-Szabó define a map
 \begin{align*}
-F_{W, t}^{\,\cdot\,}: HF^{\,\cdot\,}(M_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{\,\cdot\,}(M_2, { \left.{{t}} \right|_{{M_2}} })
+F_{W, t}^{-}: HF^{-}(M_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{-}(M_2, { \left.{{t}} \right|_{{M_2}} })
 \end{align*}
 using \(t\) coming from the splitting of spin\(^c\) structure which
 yields an invariant of closed 4-manifolds referred to as \textbf{mixed
@@ -846,7 +846,7 @@ embedded surface that is a cobordism from \(K_1\to K_2\) with
 This similarly yields a map
 
 \begin{align*}
-F_{W, F t}^{\,\cdot\,}: HF^{\,\cdot\,}(M_1, K_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{\,\cdot\,}(M_2, K_2, { \left.{{t}} \right|_{{M_2}} })
+F_{W, F t}^{-}: HF^{-}(M_1, K_1, { \left.{{t}} \right|_{{M_1}} } ) \to HF^{-}(M_2, K_2, { \left.{{t}} \right|_{{M_2}} })
 \end{align*}
 
 \end{remark}
@@ -1023,8 +1023,8 @@ Write
 \({\mathbb{T}}_{\alpha} \coloneqq\prod_{i=1}^g \alpha_i \subseteq \prod_{i=1}^g \Sigma\)
 for a \(g{\hbox{-}}\)dimensional torus; this admits a quotient map to
 \(\operatorname{Sym}^g(\Sigma)\). We can repeat this to obtain
-\({\mathbb{T}}_{\beta}\). Then \(HF^{\,\cdot\,}(M)\) will be a variation
-of Lagrangian Floer Homology for
+\({\mathbb{T}}_{\beta}\). Then \(HF^{-}(M)\) will be a variation of
+Lagrangian Floer Homology for
 \((\operatorname{Sym}^g(\Sigma), {\mathbb{T}}_{\alpha}, {\mathbb{T}}_{\beta} )\).
 
 \begin{example}[?]
@@ -1084,11 +1084,11 @@ along \(K\).
 
 Note that the diffeomorphism is entirely determined by the image of the
 curve \(\alpha\) . The Knot Floer chain complex of \(K\) will allow us
-to compute any flavor \(HF^{\,\cdot\,}M _{\varphi} (K)\) of Floer
-homology. Why is this important: any closed 3-manifold is surgery on a
-link in \(S^3\). However there are many more computational tools
-available here and not in the other theories: combinatorial approaches
-to compute, exact sequences, bordered Floer homology.
+to compute any flavor \(HF^{-}M _{\varphi} (K)\) of Floer homology. Why
+is this important: any closed 3-manifold is surgery on a link in
+\(S^3\). However there are many more computational tools available here
+and not in the other theories: combinatorial approaches to compute,
+exact sequences, bordered Floer homology.
 
 \end{remark}
 
@@ -2361,7 +2361,7 @@ Check that \(g^\mathcal{P}\) is a metric on \(\mathcal{P}(L_0, L_1)\).
 
 We'll now define a \textbf{gradient vector field}:
 \begin{align*}
-g_{\gamma}^\mathcal{P}( -\nabla, {\,\cdot\,}) = \alpha({\,\cdot\,})
+g_{\gamma}^\mathcal{P}( -\nabla, {-}) = \alpha({-})
 .\end{align*}
 So here \(\alpha\) will play the role of \(-df\). We can write
 \begin{align*}
@@ -2665,7 +2665,7 @@ such \(\psi^* \omega_1 = \omega_2\).
 
 A \textbf{Hamiltonian vector field} is a vector field \(V\) such that
 \begin{align*}
-\iota_V \omega\coloneqq\omega(V, {\,\cdot\,}) \in \Omega^1
+\iota_V \omega\coloneqq\omega(V, {-}) \in \Omega^1
 \end{align*}
 is exact, and thus equal to \(df\) for some functional
 \(f\in C^{\infty }(M, {\mathbb{R}})\). Note that if one has a functional
@@ -4773,7 +4773,7 @@ Let \(x = \left\{{ x_1, \cdots, x_g }\right\}\) and
 \begin{align*}
 \mu( \varphi) = e( D( \varphi) ) + n_x( D( \varphi ) ) + n_y( D( \varphi ) )
 .\end{align*}
-where \(e({\,\cdot\,})\) is the \textbf{Euler measure} and
+where \(e({-})\) is the \textbf{Euler measure} and
 \(n_x(\cdots), n_y(\cdots)\) is referred to as the \textbf{point
 measure}. Note that these only depend on the domain of \(\varphi\).
 
@@ -5537,12 +5537,12 @@ this condition, we can define a \textbf{relative
 between any two elements) on \(\widehat{CF}\) in the following way: for
 \(x, y\) two generators, we set
 \begin{align*}
-{\operatorname{gr}}(x) - {\operatorname{gr}}(y) \coloneqq\mu( \varphi) -2n_z( \varphi) && \text{for some } \varphi\in \pi_2(x,y)
+{\mathsf{gr}\,}(x) - {\mathsf{gr}\,}(y) \coloneqq\mu( \varphi) -2n_z( \varphi) && \text{for some } \varphi\in \pi_2(x,y)
 .\end{align*}
 
-Recall that \(\mu({\,\cdot\,})\) denotes the Maslov index,
-\(n_z( {\,\cdot\,})\) is the local multiplicity of a Whitney disc at
-\(z\), and \(x, y\) denote tuples of points.
+Recall that \(\mu({-})\) denotes the Maslov index, \(n_z( {-})\) is the
+local multiplicity of a Whitney disc at \(z\), and \(x, y\) denote
+tuples of points.
 
 \end{remark}
 
@@ -6235,7 +6235,7 @@ summand. Let \(d\) be the Maslov grading of the free generator, and
 The Maslov grading of the free summand \(d = d(M, s)\) is referred to as
 the \textbf{\(d{\hbox{-}}\)invariant} or correction term, and
 \begin{align*}
-d(M, s) = \max \left\{{ {\operatorname{gr}}( \alpha) {~\mathrel{\Big|}~}\alpha\in \operatorname{HF}^-(M, s),\, u^n \alpha \neq 0 \forall n  }\right\}
+d(M, s) = \max \left\{{ {\mathsf{gr}\,}( \alpha) {~\mathrel{\Big|}~}\alpha\in \operatorname{HF}^-(M, s),\, u^n \alpha \neq 0 \forall n  }\right\}
 .\end{align*}
 
 \end{definition}
@@ -6409,7 +6409,7 @@ Here note that \(C_*\) is \({\mathbb{Z}}/2{\hbox{-}}\)graded, as is
 \(\chi(C_*) = {\operatorname{rank}}C_0 - {\operatorname{rank}}C_1\).
 Since we have a relative \({\mathbb{Z}}{\hbox{-}}\)grading given by
 \(\mu\), we get a relative \({\mathbb{Z}}/2{\hbox{-}}\)grading given by
-\({\operatorname{gr}}_{{\mathbb{Z}}/2}(x, y) = {\operatorname{gr}}_{\mathbb{Z}}(x, y)\),
+\({\mathsf{gr}\,}_{{\mathbb{Z}}/2}(x, y) = {\mathsf{gr}\,}_{\mathbb{Z}}(x, y)\),
 which gives us \(\chi \widehat{\operatorname{HF}}(M)\) up to sign.
 
 \end{remark}
@@ -6474,7 +6474,7 @@ a solid torus \(S^1 \times{\mathbb{D}}^2\) using a diffeomorphism
 .\end{align*}
 
 Any surgery will be determined by the image of the red circle
-\(\gamma \coloneqq{\{\operatorname{pt}\}}\times{{\partial}}{\mathbb{D}}^2\)
+\(\gamma \coloneqq{\operatorname{pt}}\times{{\partial}}{\mathbb{D}}^2\)
 in the following:
 
 \begin{figure}
@@ -7020,6 +7020,211 @@ space. Thus \(S_n^3(T_{p, q})\) is an \(L{\hbox{-}}\)space for all
 \(n\geq pq-1\).
 
 \end{example}
+
+\hypertarget{surgery-exact-triangle-and-knot-diagrams-thursday-april-15}{%
+\section{Surgery Exact Triangle and Knot Diagrams (Thursday, April
+15)}\label{surgery-exact-triangle-and-knot-diagrams-thursday-april-15}}
+
+\begin{remark}
+
+Recall: let \((M, M_0, M_1)\) be a triple of 3-manifolds corresponding
+to a knot \(K \subseteq M\), where \(M_0\) is 0-surgery, \(M_1\) is
+1-surgery, and \(M_{\infty}\) is \(\infty{\hbox{-}}\)surgery. Here \(M\)
+can be chosen such that M
+
+\begin{itemize}
+\tightlist
+\item
+  \(\gamma_{\infty }\) is a meridian of \(K\),
+\item
+  \(\gamma_0\) is a longitude of \(K\),
+\item
+  \(\gamma_1 = -\gamma_{\infty } -\gamma_0\)
+\end{itemize}
+
+Then there exists an exact triangle:
+
+\begin{center}
+\begin{tikzcd}
+    {\widehat{\operatorname{HF}}(M_0)} &&&& {\widehat{\operatorname{HF}}(M_1)} \\
+    \\
+    \\
+    && {\widehat{\operatorname{HF}}(M)}
+    \arrow["{f_0}", from=1-1, to=1-5]
+    \arrow["{f_1}", from=1-5, to=4-3]
+    \arrow["{f = f_{\infty}}", from=4-3, to=1-1]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGhhdHtcXEhGfShNXzApIl0sWzQsMCwiXFxoYXR7XFxIRn0oTV8xKSJdLFsyLDMsIlxcaGF0e1xcSEZ9KE0pIl0sWzAsMSwiZl8wIl0sWzEsMiwiZl8xIl0sWzIsMCwiZiA9IGZfe1xcaW5mdHl9Il1d}{Link
+to Diagram}
+\end{quote}
+
+Our goal is to define
+\(f: \widehat{\operatorname{HF}}(M) \to \widehat{\operatorname{HF}}(M_0)\).
+
+\end{remark}
+
+\begin{remark}
+
+Note that \(M\) admits a Heegard diagram
+\begin{align*}
+( \Sigma_g, \vec{ \alpha} = [\alpha_1, \cdots, \alpha_g], \vec{ \beta} = [\alpha_1, \cdots, \alpha_g] )
+\end{align*}
+such that \((\Sigma_g, \vec \alpha, [\beta_1, \cdots, \beta_{g-1}]\) is
+a ``diagram'' for \(M - \operatorname{nd}(K)\). Recall the notion of
+handlebodies, where each handle bounds a disc:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-20-29.png}
+\caption{image\_2021-04-15-11-20-29}
+\end{figure}
+
+We can generalize this to a \textbf{compression body}:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-22-13.png}
+\caption{image\_2021-04-15-11-22-13}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  Start with \(\Sigma'_{g'} \times[0, 1]\).
+\item
+  Attach a solid handle \(K\) to \(\Sigma' \times\left\{{ 1 }\right\}\)
+\end{itemize}
+
+This yields a cobordism from \(\Sigma'_{g'} \times\left\{{ 0 }\right\}\)
+to \(\Sigma_{g' + k}\). So we can write
+\({{\partial}}C = \Sigma' \times\left\{{ 0 }\right\} {\coprod}\Sigma\).
+Label the curves bounding the embedded discs as \(\gamma_i\):
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-24-22.png}
+\caption{image\_2021-04-15-11-24-22}
+\end{figure}
+
+Then we can form a diagram
+\((\Sigma_g, \left\{{ \gamma_1, \cdots, \gamma_k }\right\}\) where
+\(k\leq g\) will specify the compression body. If these are pairwise
+disjoint simple closed curves that are linearly independent in
+\(H_1( \Sigma )\), this will be a compression body from a surface with
+genus \(g-k\) to \(\Sigma_g\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-31-50.png}
+\caption{image\_2021-04-15-11-31-50}
+\end{figure}
+
+In this case,
+\((\Sigma, \vec \alpha, \left\{{ \beta_1, \cdots, \beta_{g-1} }\right\}\)
+will be a diagram for \(M\setminus\operatorname{nd}(K)\).
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-35-35.png}
+\caption{The cobordism from \(\Sigma\) to the compressionbody}
+\end{figure}
+
+\end{remark}
+
+\begin{example}[?]
+
+Consider \(S^3 \setminus\operatorname{nd}(T)\) for \(T\) the trefoil.
+Behold the beautiful trefoil:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-37-56.png}
+\caption{image\_2021-04-15-11-37-56}
+\end{figure}
+
+After thickening, we obtain the following:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-39-41.png}
+\caption{image\_2021-04-15-11-39-41}
+\end{figure}
+
+We can push the top down:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-40-24.png}
+\caption{image\_2021-04-15-11-40-24}
+\end{figure}
+
+And wrap part of it around:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-43-42.png}
+\caption{image\_2021-04-15-11-43-42}
+\end{figure}
+
+We can keep moving this to undo the crossing:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-45-58.png}
+\caption{image\_2021-04-15-11-45-58}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-47-36.png}
+\caption{image\_2021-04-15-11-47-36}
+\end{figure}
+
+So the blue curve gets complicated, but the neighborhood of \(T\) is a
+genus 2 surface, since the outer two circles bound discs. So in summary,
+we have the following process:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-50-12.png}
+\caption{image\_2021-04-15-11-50-12}
+\end{figure}
+
+We can represent this with a planar picture:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-11-56-01.png}
+\caption{image\_2021-04-15-11-56-01}
+\end{figure}
+
+Following the longitude, we obtain:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-12-15-41.png}
+\caption{image\_2021-04-15-12-15-41}
+\end{figure}
+
+Here \(\lambda\) has been wrapped twice, and to do
+\(n{\hbox{-}}\)surgery, we wrap \(n\) times.
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-04-15-12-16-46.png}
+\caption{image\_2021-04-15-12-16-46}
+\end{figure}
+
+\end{example}
+
+\begin{exercise}[?]
+
+Draw a diagram for \(S_n^3\) (the figure eight).
+
+\end{exercise}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
