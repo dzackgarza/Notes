@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Arizona Winter School 2019.md",
-            "mode": "preview"
+            "file": "Integration Workshop.md",
+            "mode": "source"
           }
         }
       }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arizona Winter School 2019.md"
+                "file": "Integration Workshop.md"
               }
             }
           },
@@ -80,7 +80,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Arizona Winter School 2019.md",
+                "file": "Integration Workshop.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -122,7 +122,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Arizona Winter School 2019.md",
+                "file": "Integration Workshop.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arizona Winter School 2019.md",
+                "file": "Integration Workshop.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arizona Winter School 2019.md"
+                "file": "Integration Workshop.md"
               }
             }
           },
@@ -212,6 +212,7 @@
   },
   "active": "52074aa2d70a4ebb",
   "lastOpenFiles": [
+    "Integration Workshop.md",
     "Arizona Winter School 2019.md",
     "home/zack/SparkleShare/github.com/Notes/Conferences/AWS2019/Typeset.md",
     "Untitled 1.md",
@@ -220,7 +221,6 @@
     "zettelkasten/zets/2021-04-26_Category_Theory_Reference.md",
     "Untitled.md",
     "Generalized Poincare Conjectures.md",
-    "Main Index.md",
-    "Undergraduate Research Index.md"
+    "Main Index.md"
   ]
 }
