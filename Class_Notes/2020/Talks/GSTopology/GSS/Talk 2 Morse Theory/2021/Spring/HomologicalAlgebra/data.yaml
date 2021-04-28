@@ -1,0 +1,13 @@
+---
+title: "Homological Algebra"
+subtitle: "Lectures by Brian Boe. University of Georgia, Spring 2021"
+author:
+- name: D. Zack Garza
+  affiliation: University of Georgia 
+  email: dzackgarza@gmail.com 
+date: Spring 2021
+cover-image: "figures/cover.png" 
+author-note: "These are notes live-tex'd from a graduate course in Homological Algebra taught by Brian Boe at the University of Georgia in Spring 2021. As such, any errors or inaccuracies are almost certainly my own."
+todos: true
+book: true
+---

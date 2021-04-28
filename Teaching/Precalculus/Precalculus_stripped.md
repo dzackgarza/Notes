@@ -537,7 +537,7 @@ Now embed this in a triangle. We can't solve for \( \theta \), but we can solve 
 ::: {.exercise title="Using functional inverse property"}
 \[
 \cos\qty{ \arccos\qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5} \\
-\arccos\qty{ \cos \qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5} \\
+\arccos\qty{ \cos \qty{ \sqrt 5 \over 5 } } &= {\sqrt 5 \over 5}
 .\]
 :::
 
@@ -633,21 +633,21 @@ Restrict domains in the following ways:
 -   \( \cos: [0, \pi] \)
 -   \( \tan: [-\pi/2, \pi/2] \)
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Function                      Domain                                                                                     Range
-  ----------------------------- ------------------------------------------------------------------------------------------ ------------------------
+  ----------------------------- ------------------------------------------------------------------------------------------ --------------------------------------------------
   \( \arcsin \)                 \( [-1, 1] \)                                                                              \( [-\pi/2, \pi /2] \)
 
   \( \arccos \)                 \( [-1, 1] \)                                                                              \( [0, \pi] \)
 
   \( \arctan \)                 \( {\mathbb{R}} \)                                                                         \( (-\pi/2, \pi/2) \)
 
-  \( \operatorname{arccsc} \)   \( {\mathbb{R}}\setminus\left\{{0, \pm {\pi}, \pm{2\pi}, \cdots}\right\} \)                ?
+  \( \operatorname{arccsc} \)   \( {\mathbb{R}}\setminus\left\{{0, \pm {\pi}, \pm{2\pi}, \cdots}\right\} \)                \( [-\pi/2, \pi/2]\setminus\left\{{0}\right\} \)
 
-  \( \operatorname{arcsec} \)   \( {\mathbb{R}}\setminus\left\{{\pm {\pi \over 2}, \pm{3\pi \over 2}, \cdots}\right\} \)   ?
+  \( \operatorname{arcsec} \)   \( {\mathbb{R}}\setminus\left\{{\pm {\pi \over 2}, \pm{3\pi \over 2}, \cdots}\right\} \)   \( [0, \pi]\setminus\left\{{\pi/2}\right\} \)
 
-  \( \operatorname{arccot} \)   \( {\mathbb{R}}\setminus\left\{{0, \pm {\pi}, \pm{2\pi}, \cdots}\right\} \)                ?
-  -------------------------------------------------------------------------------------------------------------------------------------------------
+  \( \operatorname{arccot} \)   \( {\mathbb{R}} \)                                                                         \( (0, \pi) \)
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 :::
 
 ::: {.slogan}
@@ -702,10 +702,14 @@ However, we have to be careful with domains for trigonometric functions:
 ## Double/Half-Angle Identities
 
 ::: {.remark}
-Sometimes we are interested in **superposition** of waves. Mathematically this is modeled by multiplying two wave functions together. We can sometimes rewrite these as a *single* wave with a phase shift.
+Sometimes we are interested in **superposition** of waves, see [Desmos](https://www.desmos.com/calculator/rhliflgwmv) for an example. Mathematically this is modeled by adding wave functions together. Similarly, we are sometimes interested in **modulating** or **enveloping** waves, which is modeled by multiplying a wave with another function: see [Desmos](https://www.desmos.com/calculator/wjgcl2xfbb).
+
+![image_2021-04-18-22-06-08](figures/image_2021-04-18-22-06-08.png)
+
+We can sometimes rewrite these as a *single* wave with a phase shift.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Angle Sum Identities"}
 Identities:
 \[
 \sin(\theta + \psi) &= \sin(\theta) \cos(\psi) + \cos(\theta) \sin(\psi) \\
@@ -720,12 +724,6 @@ and replace \( \psi \) with \( -\psi \) and use even/odd properties to get formu
 
 ::: {.slogan}
 Sines are friendly and cosines are clique-y!
-:::
-
-::: {.remark}
-The most interesting modifications of waves: superpositions and damped waves.
-
-![image_2021-04-18-22-06-08](figures/image_2021-04-18-22-06-08.png)
 :::
 
 ::: {.corollary title="Double angle identities"}
@@ -780,14 +778,69 @@ solving yields
 .\]
 :::
 
+::: {.remark}
+These are very important in Calculus! This gives us a way to reduce the exponents on expressions like \( \sin^n(\theta) \).
+:::
+
 ## Bonus: Complex Exponentials
 
-::: {.remark}
-Components of vectors: every \( \mathbf{v}\in {\mathbb{R}}^2 \) breaks up as the sum of two vectors, i.e. \( \mathbf{v} = \mathbf{v}_x + \mathbf{v}_y \).
+::: {.question}
+We spent one entire unit studying the function \( f(x) = e^x \), and another studying the functions \( g(x) = \cos(x), h(x) = \sin(x) \). They seem completely unrelated, but miraculously they are both just shadows of of unifying concept.
 :::
 
 ::: {.remark}
-We've worked with the *Cartesian plane* all semester. One powerful tool is replacing this with the *complex* plane. We formally define a new symbol \( i \) such that \( i^2 = -1 \), and replace the \( \widehat{ \mathbf{y} } \) direction with the \( i \) direction -- this amounts to replacing ordered pairs \( (a, b) \coloneqq a \widehat{ \mathbf{x} } + b\widehat{ \mathbf{y} } \) by a single number \( x + iy \).
+Components of vectors: every \( \mathbf{v}\in {\mathbb{R}}^2 \) breaks up as the sum of two vectors, i.e. \( \mathbf{v} = \mathbf{v}_x + \mathbf{v}_y \). In coordinates, if \( \mathbf{v} = (a, b) \), we have \( \mathbf{v}_x = (a, 0) \) and \( \mathbf{v}_y = (0, b) \). Alternatively, we can drop the ordered pair notation and write \( \mathbf{v} = a \widehat{\mathbf{x}} + b \widehat{\mathbf{y}} \).
+:::
+
+::: {.remark}
+We've worked with the *Cartesian plane* all semester. One powerful tool is replacing this with the *complex* plane. We formally define a new symbol \( i \) and replace the \( \widehat{ \mathbf{y} } \) direction with the \( i \) direction -- this amounts to replacing ordered pairs \( (a, b) \coloneqq a \widehat{ \mathbf{x} } + b\widehat{ \mathbf{y} } \) by a single number \( a + ib \).
+:::
+
+::: {.example title="How to work with complex numbers"}
+Complex numbers can be added:
+\[
+(a + bi) + (c + di) = (a + c) + (b + d)i
+.\]
+This is perhaps easier to understand in the ordered pair notation: you just add the components in each component:
+\[
+[a, b] + [c, d] = [a + c, b + d]
+.\]
+
+Complex numbers can be multiplied:
+\[
+(a +bi)(c+di) 
+&= a(c+di) + bi(c+di) \\
+&= ac + adi + bci + bdi^2 \\
+&= (ac - bd) + (ad + bc)i
+.\]
+This is harder to see in the ordered pair notation.
+
+We can compare complex numbers: they are equal iff their components are equal:
+\[
+a + bi = c+di \iff a=c \text{ and } b = d
+,\]
+or in ordered pair notation,
+\[
+[a, b] = [c, d] \iff a = c \text{ and } b = d
+.\]
+:::
+
+::: {.remark}
+The symbol \( i \) happens to have another algebraic property. Consider the family of equations \( f(x, t) = x^2 + t \), and think about finding the roots. Finding a root is solving \( f(x, t) = 0 \), which is the exact same thing as finding the intersection points with the graph of \( g(x) = 0 \). Taking \( t=0 \) yields \( f(x) = x^2 \), which has a root at zero. Taking \( t<0 \) yields two roots. However, taking \( t>0 \) yields no roots -- at least not in \( {\mathbb{R}} \). As it turns out, the function \( f_1(x) = x^2 + 1 \) and \( g(x) = 0 \) *do* intersect in some other, bigger space, and we're only seeing a shadow of this! In other words, \( x^2+1=0 \) didn't have solutions in \( {\mathbb{R}} \), but *will* have a solution in \( {\mathbb{C}} \).
+:::
+
+::: {.remark}
+The following is the main link between exponentials and waves:
+:::
+
+::: {.proposition title="Euler's Formula"}
+\[
+e^{i\theta} = \cos(\theta) + i\sin(\theta)
+.\]
+:::
+
+::: {.remark}
+Really, this is just polar coordinates on the unit circle: if we go back to ordered pair notation, this is just giving a point \( (\cos(\theta), \sin(\theta)) \in S^1 \). So the *complex number* \( e^{i\theta} \) is also a *vector* pointing at an angle \( \theta \) from the origin and landing on the unit circle.
 :::
 
 ::: {.proposition title="Euler's Identity"}
@@ -797,5 +850,70 @@ e^{i\pi} = -1
 :::
 
 ::: {.remark}
-The way you read this: \( e^{i\theta} \in S^1 \) is a complex number (identified with a vector!), and the \( \theta \) tells you what direction it points in radians. \( \pi \) radians is directly to the left!
+This is remarkable! It relates some of the most fundamental constant numbers in mathematics:
+
+-   \( e = 2.718\ldots \)
+-   \( \pi = 3.14159\ldots \)
+-   \( -1 \)
+
+Proof: just plug \( \pi \) into Euler's equation. Geometric interpretation: \( \pi \) radians is directly to the left.
+:::
+
+::: {.example title="?"}
+An application: proving the angle sum formulas algebraically. We start by considering the angle \( \alpha + \beta \). On one hand, Euler's formula says
+\[
+e^{i( \alpha + \beta) } = \cos(\alpha + \beta) + i\sin(\alpha + \beta) 
+= [\cos(\alpha + \beta), \sin(\alpha + \beta)]
+.\]
+
+On the other hand, we can use properties of exponentials first and expand:
+\[
+e^{i(\alpha + \beta)} 
+&= e^{i\alpha} e^{i\beta} \\
+&= \qty{ \cos(\alpha) + i\sin(\alpha)} \cdot \qty{ \cos(\beta) + i\sin(\beta) } \\
+&= 
+\cos(\alpha) 
+\qty{ \cos(\beta) + i\sin(\beta) } 
++
+i\sin(\alpha) 
+\qty{ \cos(\beta) + i\sin(\beta) } 
+\\
+&=
+\cos(\alpha)\cos(\beta) + i \cos(\alpha)\sin(\beta)
++
+i\sin(\alpha)\cos(\beta) + i^2 \sin(\alpha)\sin(\beta)
+\\
+&= \qty{ \cos(\alpha)\cos( \beta) - \sin(\alpha)\sin(\beta) }
++
+i
+\qty{\cos(\alpha) \sin(\beta) + \sin(\alpha)\cos(\beta) } \\
+&=
+\left[ \cos(\alpha)\cos( \beta) - \sin(\alpha)\sin(\beta),\quad 
+\cos(\alpha) \sin(\beta) + \sin(\alpha)\cos(\beta)
+\right]
+.\]
+
+Now we just equate components:
+
+\[
+[\cos(\alpha + \beta), \sin(\alpha + \beta)]
+&= \left[ \cos(\alpha)\cos( \beta) - \sin(\alpha)\sin(\beta),\quad 
+\cos(\alpha) \sin(\beta) + \sin(\alpha)\cos(\beta)
+\right] \\ \\
+\implies \cos(\alpha + \beta) &= \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta) \\
+\implies \sin(\alpha + \beta) &= \cos(\alpha)\sin(\beta) + \sin(\alpha)\cos(\beta) 
+.\]
+:::
+
+::: {.remark}
+The analogy goes farther: polar coordinates are essentially just a shadow of complex numbers. Since \( e^{i\theta} \in S^1 \), we can scale by a radius \( r \) to write \( z = re^{i\theta} \) and get any point in the plane. If we just draw a vector \( \mathbf{v}[r\cos(\theta), r\sin(\theta)] \), note that Euler's formula gives us a way to get a complex number \( z \) that corresponds to it:
+\[
+z \coloneqq re^{i\theta} = r(\cos(\theta) + i\sin(\theta)) = r\cos(\theta) + i\cdot r\sin(\theta) = [r\cos(\theta), r\sin(\theta)] = \mathbf{v}
+.\]
+:::
+
+::: {.remark}
+Results like these are at the heart of mathematics: having a bunch of equations, seeing patterns, and trying to find some common, unifying, and hopefully simpler structure that underlies all of it. An example you'll see in Calculus: all of the graphs we've been looking at in this class are "shadows" of intersecting shapes in some higher dimensional space!
+
+![Conic Sections](figures/ConicSections.png)
 :::

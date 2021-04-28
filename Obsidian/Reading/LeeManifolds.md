@@ -1,0 +1,1 @@
+![](../zettelkasten/attachments/Pasted%20image%2020210428000928.png)
