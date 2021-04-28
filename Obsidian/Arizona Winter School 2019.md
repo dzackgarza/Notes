@@ -1,3 +1,3 @@
 # Background
 
-[[./Definitions.md]]
+[[.]]
