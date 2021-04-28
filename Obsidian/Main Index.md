@@ -1,5 +1,5 @@
 # Reference Lists
-- [Big list of stuff I don't know](zets/2021-04-26_Buzzword_List.md)
+- [Big list of stuff I don't know](zettelkasten/zets/Buzzword_List.md)
 - [Big list of questions I want answers to](zets/2021-04-26_Unanswered_Questions.md)
 - [Big list of important journals](attachments/Journals.pdf)
 - [Big list of open problems](zets/2021-04-26_Problem_List.md)
@@ -20,6 +20,7 @@
 - [Schoenflies](zets/2021-04-26_Schoenflies.md)
 - [zets/2021-04-26_Uniformization](zets/2021-04-26_Uniformization.md)
 - [zets/2021-04-26_Whitney_Embedding](zets/2021-04-26_Whitney_Embedding.md)
+- [[Generalized Poincare Conjectures]]
 
 ## Algebraic Geometry
 

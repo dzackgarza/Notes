@@ -1,4 +1,4 @@
-g# Math Reading Projects
+# Math Reading Projects
 
 ## Active
 - [Barnes and Roitzheim](Reading/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md)
@@ -11,7 +11,7 @@ g# Math Reading Projects
 - [Lee's Smooth Manifolds](Reading/LeeManifolds.md)
 
 ## Not Started
-- [[Audin-Damian Morse Theory and Floer Homology]]
+- [Audin-Damian Morse Theory and Floer Homology](zettelkasten/Reading/Audin-Damian%20Morse%20Theory%20and%20Floer%20Homology/Audin-Damian%20Morse%20Theory%20and%20Floer%20Homology.md)
 - [Folland](zettelkasten/Reading/Folland.md)
-- [[Vakil's Rising Sea]]
-- [[Lurie's proof of the Cobordism Hypothesis (Juvitop Fall 2020)]]
+- [Vakil's Rising Sea](Vakil's%20Rising%20Sea)
+- [Lurie's proof of the Cobordism Hypothesis (Juvitop Fall 2020)](Lurie's%20proof%20of%20the%20Cobordism%20Hypothesis%20(Juvitop%20Fall%202020))

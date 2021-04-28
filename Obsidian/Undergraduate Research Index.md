@@ -9,8 +9,8 @@ tags:
 - [Homotopy groups of spheres: "Gotta catch 'em all" outline'](zets/2021-04-26_Homotopy_Outline_Project_UG.md)
 
 ## Meetings
-- [zets/2021-04-26_Undergrad_Research_01-10-18](zets/2021-04-26_Undergrad_Research_01-10-18.md)
-- [zets/2021-04-26_Undergrad_Research_01-17-18](zets/2021-04-26_Undergrad_Research_01-17-18.md)
+- [Meeting Thoughts 01-10-18](zets/2021-04-26_Undergrad_Research_01-10-18.md)
+- [Meeting Thoughts 01-17-18](zets/2021-04-26_Undergrad_Research_01-17-18.md)
 
 ## Spectral Sequences
 - [Initial research notes](zets/2021-04-26_Research_Notes_1-21-2018.md)
