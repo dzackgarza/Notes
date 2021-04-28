@@ -1,3 +1,9 @@
+---
+date: 2021-04-28 17:03:34
+tags: 
+  - Unfiled
+---
+
 A *formal group law* is an intermediate notion between a Lie group and a Lie algebra, being slightly more general than a Lie algebra, which has a product operation that can be represented entirely in terms of formal power series.
 
 To flesh this out, note that a common fact from Lie theory is that there is an equivalence of categories
@@ -34,4 +40,3 @@ $$
 $$
 
 In general, the deformation theory of an object provides a way of studying the smoothness of the moduli space of such objects.
-
