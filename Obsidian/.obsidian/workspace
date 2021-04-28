@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Stephen Hawking.md",
-            "mode": "preview"
+            "file": "Arizona Winter School 2019.md",
+            "mode": "source"
           }
         }
       }
@@ -70,7 +70,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stephen Hawking.md"
+                "file": "Arizona Winter School 2019.md"
               }
             }
           },
@@ -80,7 +80,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Stephen Hawking.md",
+                "file": "Arizona Winter School 2019.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -122,7 +122,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Stephen Hawking.md",
+                "file": "Arizona Winter School 2019.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stephen Hawking.md",
+                "file": "Arizona Winter School 2019.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stephen Hawking.md"
+                "file": "Arizona Winter School 2019.md"
               }
             }
           },
@@ -212,8 +212,8 @@
   },
   "active": "7d366c0043a857ad",
   "lastOpenFiles": [
-    "Stephen Hawking.md",
     "Untitled 1.md",
+    "Stephen Hawking.md",
     "Homological Algebra.md",
     "zettelkasten/zets/2021-04-26_Category_Theory_Reference.md",
     "Untitled.md",
