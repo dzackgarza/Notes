@@ -7,3 +7,6 @@
 [2021-04-28_AWS_BG_Spectra](zettelkasten/2021-04-28_AWS_BG_Spectra.md)
 
 [2021-04-28_AWS_Witt_Vectors_BG](zettelkasten/2021-04-28_AWS_Witt_Vectors_BG.md)
+
+# Typesetting Progress
+[Link to Folder](file::/home/zack/SparkleShare/github.com/Notes/Conferences/AWS2019/Typeset)
