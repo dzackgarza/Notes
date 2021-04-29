@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "52074aa2d70a4ebb",
+        "id": "4b9282f2fae8b782",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Integration Workshop.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -40,7 +37,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#todo",
+                "query": "cosmetic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +54,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "cfc78aa342d78dbe",
@@ -69,9 +67,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Integration Workshop.md"
-              }
+              "state": {}
             }
           },
           {
@@ -80,7 +76,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Integration Workshop.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -122,7 +117,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Integration Workshop.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -155,7 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 445.01219177246094
+    "width": 470
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -171,7 +165,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Integration Workshop.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,9 +180,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Integration Workshop.md"
-              }
+              "state": {}
             }
           },
           {
@@ -210,17 +201,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "52074aa2d70a4ebb",
+  "active": "4b9282f2fae8b782",
   "lastOpenFiles": [
+    "zettelkasten/2021-04-28_GT_2020_Conference_Talks.md",
+    "Untitled 1.md",
     "Integration Workshop.md",
     "Arizona Winter School 2019.md",
     "home/zack/SparkleShare/github.com/Notes/Conferences/AWS2019/Typeset.md",
-    "Untitled 1.md",
     "Stephen Hawking.md",
     "Homological Algebra.md",
     "zettelkasten/zets/2021-04-26_Category_Theory_Reference.md",
     "Untitled.md",
-    "Generalized Poincare Conjectures.md",
-    "Main Index.md"
+    "Generalized Poincare Conjectures.md"
   ]
 }
