@@ -160,7 +160,7 @@ The local triviality condition is a requirement that the projection $\pi$ locall
 
 Fiber bundles may admit right-inverses to the projection map $s: B\to E$ satisfying $\pi \circ s = \id_B$, denoted *sections*. Equivalently, for each $b\in B$, a section is a choice of an element $e$ in the preimage $\pi^{-1}(b) \homotopic F$ (i.e. the fiber over $b$). Sections are sometimes referred to as _cross-sections_ in older literature, due to the fact that a choice of section yields might be schematically represented as such:
 
-![foliation diagram](/home/zack/notes/images/2018/05/foliation-diagram.png)
+![foliation diagram](figures/foliation-diagram.png)
 
 Here, we imagine each fiber as a cross-section or "level set" of the total space, giving rise to a "foliation" of $E$ by the fibers.^[When $E$ is in fact a product $F\cross B$, this actually is a foliation in the technical sense.]
 
@@ -177,11 +177,9 @@ $$ \RR^1 \to E \to S^1$$
 
 That is, the total spaces that occur when a one-dimensional real vector space (i.e. a real line) is chosen at each point of $S^1$. One possibility is the trivial bundle $E \cong S^1 \cross \RR \cong S^1 \cross I^\circ \in \text{DiffTop}$, which is an "open cylinder":
 
-![cylinder](/home/zack/notes/images/2018/05/cylinder.png)
-
 But another possibility is $E \cong M^\circ \in\text{DiffTop}$, an open Möbius band:
 
-![Möbius band](/home/zack/notes/images/2018/05/mobius-band.png)
+![Möbius band](figures/mobius-band.png)
 
 Here we can take the base space $B$ to be the circle through the center of the band; then every open neighborhood $U$ of a point $b\in B$ contains an arc of the center circle crossed with a vertical line segment that misses $\del M$. Thus the local picture looks like $S^1 \cross I^\circ$, while globally $M\not\cong S^1 \cross I^\circ \in \text{Top}$.^[Due to the fact that, for example, $M$ is nonorientable and orientability distinguishes topological spaces up to homeomorphism.]
 

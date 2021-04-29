@@ -4,6 +4,8 @@ tags:
   - Unfiled
 ---
 
+[Algebraic_Geometry](../Projects/Book%20Notes/RisingSea/Rising%20Sea%20Reading%20Notes.md)
+
 # Paper on Chow Rings
 
 - Reference: a recent result, [Chow Rings computed in 2005 for $BGL_n, BSL_n, BSp_n, BO_n, BSO_n$](https://arxiv.org/pdf/math/0505560.pdf)

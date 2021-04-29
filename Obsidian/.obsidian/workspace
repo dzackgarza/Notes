@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "4b9282f2fae8b782",
+        "id": "289cb7c9471186b2",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Buzzword_List.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -21,7 +24,7 @@
       {
         "id": "1d4b3f5d279d9110",
         "type": "tabs",
-        "dimension": 48.32146490335706,
+        "dimension": 65.78947368421053,
         "children": [
           {
             "id": "9abb984b6bba57b7",
@@ -38,7 +41,7 @@
               "type": "search",
               "state": {
                 "query": "cosmetic",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": true,
@@ -54,20 +57,56 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "cfc78aa342d78dbe",
+        "id": "3ce32054145f32a1",
         "type": "tabs",
-        "dimension": 26.551373346897257,
+        "dimension": 34.21052631578947,
         "children": [
+          {
+            "id": "f02f888b50db72fe",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "zettelkasten/Buzzword_List.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.543197998211774,
+                  "close": false
+                }
+              }
+            }
+          },
           {
             "id": "d1933ba615cdd62b",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/Buzzword_List.md"
+              }
             }
           },
           {
@@ -76,6 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/Buzzword_List.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -104,52 +144,12 @@
               }
             }
           }
-        ]
-      },
-      {
-        "id": "3ce32054145f32a1",
-        "type": "tabs",
-        "dimension": 25.127161749745675,
-        "children": [
-          {
-            "id": "f02f888b50db72fe",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.543197998211774,
-                  "close": false
-                }
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 470
+    "width": 393
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -165,6 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/Buzzword_List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +181,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/Buzzword_List.md"
+              }
             }
           },
           {
@@ -201,17 +204,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4b9282f2fae8b782",
+  "active": "289cb7c9471186b2",
   "lastOpenFiles": [
-    "zettelkasten/2021-04-28_GT_2020_Conference_Talks.md",
-    "Untitled 1.md",
-    "Integration Workshop.md",
-    "Arizona Winter School 2019.md",
-    "home/zack/SparkleShare/github.com/Notes/Conferences/AWS2019/Typeset.md",
-    "Stephen Hawking.md",
-    "Homological Algebra.md",
-    "zettelkasten/zets/2021-04-26_Category_Theory_Reference.md",
-    "Untitled.md",
-    "Generalized Poincare Conjectures.md"
+    "zettelkasten/zets/Buzzword_List.md",
+    "zettelkasten/zets/2021-04-26_Topics_Todo.md",
+    "Main Index.md",
+    "zettelkasten/zets/2021-04-26_Langlands.md",
+    "zettelkasten/zets/Generalized Poincare Conjectures.md",
+    "Reading Projects Index.md",
+    "zettelkasten/Projects/Cobordism Hypothesis.md",
+    "zettelkasten/Projects/LeeManifolds.md",
+    "zettelkasten/Reading/Cobordism Hypothesis.md",
+    "zettelkasten/Projects/Algebraic Topology/sections/2018-08-01.md"
   ]
 }

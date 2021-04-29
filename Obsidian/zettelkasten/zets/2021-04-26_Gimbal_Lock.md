@@ -4,7 +4,9 @@ tags:
   - Expository
 ---
 
-#representation_theory #manifolds
+[Expository](Expository)
+
+Tags: #representation_theory #manifolds
 
 What we want to represent is $SO(3, \RR)$, where a real representation of a group $G$ is a map $G \to \GL(n, \RR)$ for some $n$.
 More generally, we can define a $V\dash$representation as a map $G \to \Aut(V)$, where since $V$ lives in the category of

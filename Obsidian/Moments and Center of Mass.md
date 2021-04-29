@@ -1,2 +1,0 @@
-![](Moments.html)
-![](Moments.xoj)

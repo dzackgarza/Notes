@@ -1,14 +1,16 @@
 # Reference Lists
-- [Big list of stuff I don't know](zettelkasten/zets/Buzzword_List.md)
+- [Big list of stuff I don't know](zettelkasten/Buzzword_List.md)
 - [Big list of questions I want answers to](zets/2021-04-26_Unanswered_Questions.md)
 - [Big list of important journals](attachments/Journals.pdf)
 - [Big list of open problems](zets/2021-04-26_Problem_List.md)
 - [Big list of papers to read](zets/2021-04-26_Papers.md)
 - [Big list of reading recommendations](zets/2021-04-26_Reading_Recommendations.md)
 
+Other stuff:
+
 - [Topic page todos](zets/2021-04-26_Topics_Todo.md)
-[[Reading Projects Index]]
-[Undergraduate Research](2021-04-27_Undergraduate_Research.md)
+- [Reading Projects Index](Reading%20Projects%20Index.md)
+- [Undergraduate Research](2021-04-27_Undergraduate_Research.md)
 
 # By Subject
 ## Topology
@@ -18,9 +20,9 @@
 - [Floer Theory](zets/2021-04-26_Floer_Theory.md)
 - [Fukaya Categories](zets/2021-04-26_Fukaya_Categories.md)
 - [Schoenflies](zets/2021-04-26_Schoenflies.md)
-- [zets/2021-04-26_Uniformization](zets/2021-04-26_Uniformization.md)
-- [zets/2021-04-26_Whitney_Embedding](zets/2021-04-26_Whitney_Embedding.md)
-- [[Generalized Poincare Conjectures]]
+- [Uniformization](zets/2021-04-26_Uniformization.md)
+- [Whitney Embedding](zets/2021-04-26_Whitney_Embedding.md)
+- [Generalized Poincare Conjectures](zettelkasten/zets/Generalized%20Poincare%20Conjectures.md)
 
 ## Algebraic Geometry
 
@@ -32,7 +34,7 @@
 - [Tate Modules](zets/2021-04-26_Tate_Modules.md)
 
 ## Representation Theory
-- [zets/2021-04-26_Lie_Groups_Erlangen_and_Physics](zets/2021-04-26_Lie_Groups_Erlangen_and_Physics.md)
+- [Lie Groups, the Erlangen Program, and Physics](zets/2021-04-26_Lie_Groups_Erlangen_and_Physics.md)
 
 ## Derived AG
 - [Schemes](zets/2021-04-26_Schemes.md)
