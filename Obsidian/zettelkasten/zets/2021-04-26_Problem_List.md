@@ -57,5 +57,8 @@ tags:
 - The chromatic splitting conjecture
   - Is this similar to fracture theorems in stable homotopy..?
 - The chromatic redshift conjecture
+- Faltings theorem
+- Mumford-Tate conjecture
+- Sato-Tate
 
 Reading: [Mark Hovey's List of Open Problems in Algebraic Topology](http://mhovey.web.wesleyan.edu/problems/big.html)

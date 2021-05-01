@@ -1,0 +1,4 @@
+- [Bundle](Bundle.md): locally free sheaf?
+- [[Canonical sheaf]]
+- [[Structure sheaf]]
+- Reflexive sheaf

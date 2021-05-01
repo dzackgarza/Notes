@@ -1,0 +1,2 @@
+- Good reduction: ?
+- Supersingular reduction: ?

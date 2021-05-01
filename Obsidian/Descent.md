@@ -1,0 +1,3 @@
+- [[Etale descent]]: ?
+- [[Galois descent]]: ?
+- Some connection to Neron models, see Bosch et al

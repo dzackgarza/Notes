@@ -4,12 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "289cb7c9471186b2",
+        "id": "2bb78a1a25dcb2c5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Buzzword_List.md",
+            "file": "Class field theory.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "8c4971f7425a0e34",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Artin Map.md",
             "mode": "source"
           }
         }
@@ -24,7 +35,7 @@
       {
         "id": "1d4b3f5d279d9110",
         "type": "tabs",
-        "dimension": 65.78947368421053,
+        "dimension": 70.01934235976789,
         "children": [
           {
             "id": "9abb984b6bba57b7",
@@ -40,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cosmetic",
+                "query": "2019-11-06-11:51.png",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +73,7 @@
       {
         "id": "3ce32054145f32a1",
         "type": "tabs",
-        "dimension": 34.21052631578947,
+        "dimension": 29.980657640232106,
         "children": [
           {
             "id": "f02f888b50db72fe",
@@ -70,12 +81,12 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Buzzword_List.md",
+                "file": "Artin Map.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
+                  "localJumps": 5,
+                  "localBacklinks": false,
                   "localForelinks": true,
                   "localInterlinks": false,
                   "showTags": false,
@@ -85,16 +96,16 @@
                   "colorGroups": [],
                   "collapse-display": true,
                   "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.543197998211774,
-                  "close": false
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 0.7125,
+                  "lineSizeMultiplier": 1.24333333333333,
+                  "collapse-forces": false,
+                  "centerStrength": 0,
+                  "repelStrength": 18.2905982905983,
+                  "linkStrength": 0.854700854700855,
+                  "linkDistance": 367,
+                  "scale": 0.21957349035445242,
+                  "close": true
                 }
               }
             }
@@ -105,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Buzzword_List.md"
+                "file": "Artin Map.md"
               }
             }
           },
@@ -115,7 +126,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Buzzword_List.md",
+                "file": "Artin Map.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -138,10 +149,18 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.285485808333782,
+                  "scale": 0.40844332494219937,
                   "close": false
                 }
               }
+            }
+          },
+          {
+            "id": "2b65c64537f7629f",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
             }
           }
         ],
@@ -149,7 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393
+    "width": 666
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -165,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Buzzword_List.md",
+                "file": "Artin Map.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Buzzword_List.md"
+                "file": "Artin Map.md"
               }
             }
           },
@@ -201,20 +220,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "289cb7c9471186b2",
+  "active": "8c4971f7425a0e34",
   "lastOpenFiles": [
-    "zettelkasten/zets/Buzzword_List.md",
-    "zettelkasten/zets/2021-04-26_Topics_Todo.md",
-    "Main Index.md",
-    "zettelkasten/zets/2021-04-26_Langlands.md",
+    "Artin Map.md",
+    "Class field theory.md",
     "zettelkasten/zets/Generalized Poincare Conjectures.md",
-    "Reading Projects Index.md",
-    "zettelkasten/Projects/Cobordism Hypothesis.md",
-    "zettelkasten/Projects/LeeManifolds.md",
-    "zettelkasten/Reading/Cobordism Hypothesis.md",
-    "zettelkasten/Projects/Algebraic Topology/sections/2018-08-01.md"
+    "zettelkasten/figures/2019-11-06-11:51.png",
+    "zettelkasten/Giant Word List.md",
+    "Stable homotopy.md",
+    "Formal group law.md",
+    "Formal Groups.md",
+    "Category theory.md",
+    "K3 Surfaces.md"
   ]
 }

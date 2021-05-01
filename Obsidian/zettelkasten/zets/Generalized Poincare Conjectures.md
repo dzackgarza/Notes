@@ -1,39 +1,43 @@
+Links: [[Topology]] | [[Algebraic Topology]] | [[Homotopy]] | [[Reference]]
+Tags: #talks
 
-Tags: #topology 
-
-![](zettelkasten/figures/HomotopyTalk%20-%20GSTS.pdf)
+<!--![](zettelkasten/figures/HomotopyTalk%20-%20GSTS.pdf)-->
 
 # History
 
-Poincare, *Analysis Situs* papers in 1895. Coined "homeomorphism", defined homology, gave rigorous definition of homotopy, established "method of invariants" and essentially kicked off algebraic topology.
+Poincaré, *Analysis Situs* papers in 1895. 
+Coined "homeomorphism", defined homology, gave rigorous definition of homotopy, established "method of invariants" and essentially kicked off algebraic topology.
 
 # Motivation
 
-Generalized Topological Poincare Conjecture: When is a homotopy sphere also a topological sphere? i.e. when does $\pi_* X \cong_{Grp} \pi_* S^n \implies X \cong_{Top} S^n$?
+Generalized Topological Poincaré Conjecture: 
+When is a homotopy sphere also a topological sphere? i.e. when does $\pi_* X \cong_{Grp} \pi_* S^n \implies X \cong_{Top} S^n$?
 
 - $n=1$: True. Trivial
-- $n=2$: True. Proved by Poincare, classical
+- $n=2$: True. Proved by Poincaré, classical
 - $n=3$: True. Perelman (2006) using Ricci flow + surgery
 - $n=4$: True. Freedman (1982), Fields medal!
 - $n=5$: True. Zeeman (1961)
 - $n=6$: True. Stalling (1962)
 - $n\geq 7$: True. Smale (1961) using h-cobordism theorem, uses handle decomposition + Morse functions
 
-Smooth Poincare Conjecture: When is a homotopy sphere a *smooth* sphere?
+Smooth Poincaré Conjecture: When is a homotopy sphere a *smooth* sphere?
 
 
 - $n=1$: True. Trivial
-- $n=2$: True. Proved by Poincare, classical
+- $n=2$: True. Proved by Poincaré, classical
 - $n=3$: True.  (Top = PL = Smooth)
 - $n=4$: **Open**
 - $n=5$: Zeeman (1961)
 - $n=6$: Stalling (1962)
 - $n\geq 7$: False in general (Milnor and Kervaire, 1963), Exotic $S^n$, 28 smooth structures on $S^7$
   
+Remarks:
 
-> It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth $ 4 $-dimensional Poincare conjecture would have an affirmative answer. 
+- It is unknown whether or not $ B^4 $ admits an exotic smooth structure. If not, the smooth 4-dimensional Poincaré conjecture would have an affirmative answer. 
 
-> Current line of attack: Gluck twists on on $S^4$. Yield homeomorphic spheres, *suspected* not to be diffeomorphic, but no known invariants can distinguish smooth structures on $S^4$.
+- Current line of attack: [[Gluck twists]] on on $S^4$. 
+  Yield homeomorphic spheres, *suspected* not to be diffeomorphic, but no known invariants can distinguish smooth structures on $S^4$.
 
 Relation to homotopy: Define a monoid $G_n$ with 
 
@@ -56,11 +60,13 @@ Recently (almost) resolved question: what is $\Theta_n$ for all $n$?
 > Parallelizable/framed: Trivial tangent bundle, i.e. the principal frame bundle has a smooth global section. Parallelizable spheres $S^0, S^1, S^3, S^7$ corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
 
 - Framed Bordism Classes of manifolds -- $\Omega^{fr}_n \cong \pi_n^S$
+
 > Note: bordism is one of the coarsest equivalence relations we can put on manifolds. Hope to understand completely!
 
 # Background
 
-**Definition (Homotopy)**
+
+:::{.definition title="Homotopy"}
 Given two paths $P_1, P_2: I \to X$ (where we identify the paths with their images under these maps), then a *homotopy* from $P_1$ to $P_2$ is a function
 $$
 H: I \to (I \to X) \\
@@ -72,7 +78,9 @@ $$
 
 such that the associated "partially applied" function $H_t: I \to X$ is continuous.
 
-**Definition (Homotopic Maps)**
+:::
+
+:::{.definition title="Homotopic maps"}
 Given two maps $f, g: X \to Y$, we say $f$ is *homotopic* to $g$ and write $f \sim g$ if there is a homotopy
 $$
 H: I \to (X \to Y) \\
@@ -81,51 +89,65 @@ H(1, \wait) = g(\wait)\\
 $$
 
 such that $H_t: X \to Y$ is continuous.
+:::
 
-> Can think of this as a map from the cylinder on $X$ into $Y$, or deformations through continuous functions.
+:::{.remark}
+Can think of this as a map from the cylinder on $X$ into $Y$, or deformations through continuous functions.
+This is an equivalence relation. If $f: X \to Y$ is a map, we write $[X, Y]$ to denote the homotopy classes of maps $X$ to $Y$. 
+:::
 
-> Note: This is an equivalence relation. If $f: X \to Y$ is a map, we write $[X, Y]$ to denote the homotopy classes of maps $X$ to $Y$. 
-
-**Definition (Fundamental Group)**
-$$
+:::{.definition title="Fundamental group"}
+\[
 \pi_1(X) \definedas [S^1, X].
-$$
-
-> Note that this actually measures homotopy classes of *loops* in $X$.
+,\]
+which measures homotopy classes of *loops* in $X$.
+:::
 
 Example: $\pi_1 T^2 = \ZZ^{\ast 2}$, a *free* abelian group of rank 2.
 
-**Definition (Higher Homotopy Groups)**
-$$
+
+:::{.definition title="Higher homotopy groups"}
+\[
 \pi_n(X) \definedas [S^n, X].
-$$
+\]
+:::
 
-Introduced by Cech in 1932, Alexandrov reportedly told him to withdraw because it couldn't possibly be the right generalization due to the following theorem:
+:::{.remark}
+Introduced by Čech in 1932, Alexandrov reportedly told him to withdraw because it couldn't possibly be the right generalization due to the following theorem:
+:::
 
-**Theorem**:
-$$
-n\geq 2 \implies [S^n, X] \in \mathrm{Ab}.
-$$
-In words, higher homotopy groups are abelian. We have a complete classification of abelian groups, so we know $\pi_n(X) = F \oplus T$ for some free and torsion parts.
+:::{.theorem title="Higher homotopy groups are abelian"}
+\[
+n\geq 2 \implies [S^n, X] \in \Ab
+\]
+:::
 
-**Theorem (Hopf, 1931):**
-$$[S^3, S^2] = \ZZ \neq 0$$
+:::{.remark}
+We have a complete classification of (finitely generated) abelian groups, so we know $\pi_n(X) = F \oplus T$ for some free and torsion parts.
+:::
 
-> Recall that homology vanishes above the dimension of a given manifold!
+:::{.theorem title="Hopf, 1931"}
+\[
+[S^3, S^2] = \ZZ \neq 0
+\]
+:::
 
-This group is generated by the *Hopf fibration*, and provides infinitely many ways of "wrapping" a 3-sphere around a 2-sphere nontrivially! This was surprising and unexpected
+:::{.remark}
+Recall that *homology* vanishes above the dimension of a given manifold.
+This group is generated by the *Hopf fibration*, and provides infinitely many ways of "wrapping" a 3-sphere around a 2-sphere nontrivially! This was surprising and unexpected.
+:::
 
-
-**Definition (CW Complex)**
+:::{.definition title="CW Complex"}
 A CW complex is any space built from the following inductive process:
-
-> Denote $X_n$ the $n\dash$skeleton.
+Write $X_n$ for the $n\dash$skeleton.
+\
 
 - Let $X_0$ by a discrete set of points. 
 - Let $X_{n+1}$ be obtained from $X_n$ by taking a collection of $n\dash$ balls and glue them to $X_n$ by maps $$\phi: \del B^n \to X_n$$.
-- If infinitely many stages, let $X = \union X_n$ with the weak topology 
-  
-  (i.e. a set $A \subset X$ is open iff $A \intersect X_n$ is open for all $n$)
+- If infinitely many stages, let $X = \union X_n$ with the **weak topology** $A \subset X$ is open iff $A \intersect X_n$ is open for all $n$.
+
+
+:::
 
 Example: Every graph is a 1-dimensional CW complex
 
@@ -137,22 +159,30 @@ Example: $S_n = e_0 + e_n$ by gluing $B^{n+1}$ to a point by a map $\phi: \del B
 
 > Note: Replacing $\phi$ with a homotopic map yields an equivalent CW complex. So understanding CW complexes boils down to understanding $[S^n, S^m]$ for $m < n$, i.e. higher homotopy groups of spheres.
 
-**Definition (Cellular Map)**
+
+
+:::{.definition title="Cellular Map"}
 A map between $f:X \to Y$ between CW complex is *cellular* if $f(X_{(k)}) \subseteq Y_{(k)}$ for every $k$.
+:::
 
-**Theorem (Cellular Approximation):**
+:::{.theorem title="Cellular approximation"}
 Any map $f: X \to Y$ is homotopic to a cellular map.
+:::
 
-> Application: $\pi_k S^n = 0$ if $k < n$. Use $f\in \pi_kS^n \iff f\in [S_k, S_n]$, deform $f$ to be cellular, then $f(S^k_{(k)}) \injects S^n_{(k)} = \pt$, so $f \homotopic c_0$, a constant map.
+:::{.example title="Application: low degree homotopy groups of spheres"}
+$\pi_k S^n = 0$ if $k < n$. Use $f\in \pi_kS^n \iff f\in [S_k, S_n]$, deform $f$ to be cellular, then $f(S^k_{(k)}) \injects S^n_{(k)} = \pt$, so $f \homotopic c_0$, a constant map.
+:::
 
-**Definition (Homotopy Equivalence)**
+:::{.definition title="Homotopy equivalence"}
 Two spaces $X, Y$ are said to be *homotopy equivalent* if there exists a maps $f: X \to Y$ and $f\inv: Y \to X$ such that
 $$
 f\circ f\inv \homotopic \id_Y \\
 f\inv \circ f \homotopic \id_X
 $$
 
-**Definition (Weak Equivalence)**
+:::
+
+:::{.definition title="Weak Equivalence"}
 A continuous map
 $$
 f: X \to Y 
@@ -162,29 +192,39 @@ $$
 f_*: \pi_*(X) \to \pi_*(Y)
 $$
 is a graded isomorphism.
+:::
 
-> Note that this is a strictly weaker notion than homotopy equivalence -- we don't require an explicit inverse.
+:::{.remark}
+This is a strictly weaker notion than homotopy equivalence -- we don't require an explicit inverse.
+A weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
+:::
 
-> Note that a weak homotopy equivalence also induces isomorphisms on all homology and cohomology.
-
-**Theorem (Whitehead):**
+:::{.theorem title="Whitehead"}
 If $f: X\to Y$ is a weak equivalence between CW complexes, then it is a homotopy equivalence.
+:::
 
-> Corollary (Relative Whitehead): If $f:X\to Y$ between CW complexes induces an isomorphism $H_* X \cong H_* Y$, then $f$ is a weak equivalence.
+:::{.corollary title="Relative Whitehead"}
+If $f:X\to Y$ between CW complexes induces an isomorphism $H_* X \cong H_* Y$, then $f$ is a weak equivalence.
+:::
 
-**Theorem (CW Approximation)**:
+:::{.theorem title="CW Approximation"}
 For every topological space $X$, there exists a CW complex $\tilde X$ and a weak homotopy equivalence $f: X \to \tilde X$.
+:::
 
-> Note: Weak equivalences = equivalences for CW complexes, which means we can essentially throw out the distinction!
+:::{.remark}
+\envlist
 
-> Note: This says that if we understand CW complexes, we essentially understand the category hoTop completely. Moreover, we only have to understand spaces up to *weak* equivalence, i.e. we just need to check induced maps on $\pi_*$ instead of checking for inverse maps.
+- Weak equivalences = equivalences for CW complexes, which means we can essentially throw out the distinction!
 
-**Definition (Connectedness):**
+- This says that if we understand CW complexes, we essentially understand the category $\ho\Top$ completely. Moreover, we only have to understand spaces up to *weak* equivalence, i.e. we just need to check induced maps on $\pi_*$ instead of checking for inverse maps.
+:::
+
+:::{.definition title="Connectedness"}
 A space is said to be $n\dash$connected if $\pi_{\leq n} X = 0$.
+Recall that a space is *simply connected* iff $\pi_1 X = 0$.
+:::
 
-> Recall that a space is *simply connected* iff $\pi_1 X = 0$.
-
-**Theorem (Hurewicz):**
+:::{.theorem title="Hurewicz"}
 Given a fixed space $X$, any map $f \in \pi_kX = [S^k, X]$ has the type $f: S^k \to X$. This induces a map $f_*: H_* S^k \to H_* X$. Since $H_k S^k \cong \ZZ \cong \generators{\mu}$, define a family of maps
 $$
 h_k: \pi_k X \to H_k X \\
@@ -193,7 +233,13 @@ $$
 
 If $n\geq 2$ and $X$ is $n-1$ connected, then $h_k$ is an isomorphism for all $k\leq n$.
 
-> Note: If $k=1$, then $h_1$ is the abelianization of $\pi_1$.
+:::
+
+:::{.remark}
+If $k=1$, then $h_1$ is the abelianization of $\pi_1$.
+:::
+
+
 
 
 ## Application
@@ -202,7 +248,7 @@ If $X$ a simply connected, closed 3-manifold is a homology sphere, then it is a 
 - $H_0 X = \ZZ$ since $X$ is path-connected
 - $H_1 X = 0$ since $X$ is simply-connected
 - $H_3 X = \ZZ$ since $X$ is orientable
-- $H_2 X = H^1 X$ by **Poincare duality**. What group is this?
+- $H_2 X = H^1 X$ by **Poincaré duality**. What group is this?
   - $0 \rightarrow \operatorname{Ext}_{\ZZ}^{1}\left(H_{0}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(H_{1}(X ; \mathbb{Z}), \mathbb{Z}\right) \rightarrow 0$ yields
   - $0 \rightarrow \operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) \rightarrow H^{1}(X ; \mathbb{Z}) \rightarrow \operatorname{Hom}_{\mathbb{Z}}\left(0, \mathbb{Z}\right) \rightarrow 0$
   - Then $\operatorname{Ext}_{\ZZ}^{1}\left(\ZZ, \mathbb{Z}\right) = 0$ because $\ZZ$ is a projective $\ZZ\dash$module, so $H^1 X = 0$.
@@ -250,6 +296,7 @@ then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ fr
 A modern direction is cooking up spectra that represent *extraordinary* cohomology theories. There are Eilenberg–Steenrod axioms that uniquely characterize homology on spaces; if we drop $H^* \pt = 0$, we get generalized alternatives.
 
 # Other Topics
+
 - The homotopy hypothesis
 - Generalized Cohomology theories
 - Stable Homotopy Theory
@@ -257,7 +304,7 @@ A modern direction is cooking up spectra that represent *extraordinary* cohomolo
 - Higher Homotopy Groups of Spheres
 - Eilenberg Mclane and Moore Spaces
 
-![Image](figures/2019-11-06-11:51.png)
+![](../figures/2019-11-06-11:51.png)
 
 - Below jagged line: Zero by cellular approximation, or stable by Freudenthal suspension.
 - Above line: Unstable range. Need to throw everything in the book at these guys to compute!

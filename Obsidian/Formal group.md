@@ -1,0 +1,7 @@
+- Def: ?
+- Unanswered questions
+	  - Where they come up?
+	  - What they're used for?
+	  - Why are they important?
+- For $(R, \mfm)$ is a complete local ring, can plug $\mfm$ into a formal group law to construct a group whose underlying set is $\mfm$
+	- Makes the power series converge.

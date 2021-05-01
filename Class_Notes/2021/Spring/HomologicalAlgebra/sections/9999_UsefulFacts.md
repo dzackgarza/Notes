@@ -1,5 +1,9 @@
 # Useful Facts
 
+:::{.definition title="Acyclic"}
+A chain complex $C$ is **acyclic** if and only if $H_*(C) = 0$.
+:::
+
 
 :::{.proposition title="Algebra Facts"}
 \envlist

@@ -1,17 +1,3 @@
-# Reference Lists
-- [Big list of stuff I don't know](zettelkasten/Buzzword_List.md)
-- [Big list of questions I want answers to](zets/2021-04-26_Unanswered_Questions.md)
-- [Big list of important journals](attachments/Journals.pdf)
-- [Big list of open problems](zets/2021-04-26_Problem_List.md)
-- [Big list of papers to read](zets/2021-04-26_Papers.md)
-- [Big list of reading recommendations](zets/2021-04-26_Reading_Recommendations.md)
-
-Other stuff:
-
-- [Topic page todos](zets/2021-04-26_Topics_Todo.md)
-- [Reading Projects Index](Reading%20Projects%20Index.md)
-- [Undergraduate Research](2021-04-27_Undergraduate_Research.md)
-
 # By Subject
 ## Topology
 - [What is the difference between low and high dimensional topology?](zets/2021-04-26_Low_vs_High_Dimensional_Topology.md)
@@ -41,5 +27,3 @@ Other stuff:
 - [Stacks](zets/2021-04-26_Stacks.md)
 - [Stacks and Orbifolds](zets/2021-04-26_Stacks_and_Orbifolds.md)
 - [The Cotangent Complex and Derived de Rham Cohomology](zets/2021-04-26_The_Cotangent_Complex_and_Derived_de_Rham_Cohomology.md)
-
-

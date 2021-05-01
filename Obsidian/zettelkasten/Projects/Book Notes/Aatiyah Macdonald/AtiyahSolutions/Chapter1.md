@@ -1,6 +1,10 @@
+*Related*: 
+- [Commutative Algebra](../../../../../Commutative%20Algebra.md)
+- [Algebraic Geometry Basics](../../../../Subjects/Algebraic%20Geometry%20Basics.md)
+*Tags* #reading_notes #projects #algebra #commutative_algebra
+
 [Aatiyah Macdonald](../../../Reading/Aatiyah%20Macdonald/Aatiyah%20Macdonald.md)
 
-Tags #reading_notes #projects #algebra #commutative_algebra
 
 # Chapter 1
 

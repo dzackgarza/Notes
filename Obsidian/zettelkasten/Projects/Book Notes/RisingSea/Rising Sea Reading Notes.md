@@ -1,7 +1,7 @@
 ---
 title: "Algebraic Geometry: Rising Sea Notes"
 ---
-[Algebraic Geometry](../../../Subjects/Algebraic%20Geometry.md)
+[Algebraic Geometry](../../../Subjects/Algebraic%20Geometry%20Basics.md)
 Tags: #algebraic_geometry 
 
 ![](../zettelkasten/attachments/Pasted%20image%2020210428000859.png)

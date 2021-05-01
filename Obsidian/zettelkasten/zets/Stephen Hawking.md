@@ -1,5 +1,6 @@
 [Expository](Expository)
 [Physics](Physics)
+[Riemannian geometry](../../Riemannian%20geometry.md)
 
 # Stephen Hawking: Some of the Mathematics of His Work
 
