@@ -1,0 +1,1 @@
+The Kervaire invariant is an invariant of a certain [[quadratic form]] defined on the middle homology of a [framed](framed.md) manifold.
