@@ -1,0 +1,3 @@
+---
+aliases: ["modular forms", "modularity"]
+----

@@ -1,2 +1,0 @@
-- [[Classifying Space]] 
-- [[Classifying Stack]]

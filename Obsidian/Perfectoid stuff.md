@@ -1,5 +1,0 @@
-- Perfectoid field
-- [[Smooth algebra]]
-- [[Formal spectrum]]
-- [[Crystalline cohomology]]
-- [[Prismatic cohomology]]

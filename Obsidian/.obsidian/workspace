@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Class field theory.md",
+            "file": "zettelkasten/Class field theory.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Artin Map.md",
+            "file": "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md",
             "mode": "source"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Artin Map.md",
+                "file": "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artin Map.md"
+                "file": "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md"
               }
             }
           },
@@ -126,7 +126,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Artin Map.md",
+                "file": "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -184,14 +184,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artin Map.md",
+                "file": "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artin Map.md"
+                "file": "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md"
               }
             }
           },
@@ -224,15 +224,15 @@
   },
   "active": "8c4971f7425a0e34",
   "lastOpenFiles": [
-    "Artin Map.md",
-    "Class field theory.md",
-    "zettelkasten/zets/Generalized Poincare Conjectures.md",
-    "zettelkasten/figures/2019-11-06-11:51.png",
-    "zettelkasten/Giant Word List.md",
-    "Stable homotopy.md",
-    "Formal group law.md",
-    "Formal Groups.md",
-    "Category theory.md",
-    "K3 Surfaces.md"
+    "zettelkasten/zets/2021-04-28_AWS_BG_Spectra.md",
+    "stable framing.md",
+    "Spanier-Whitehead Duality.md",
+    "Blakers-Massey theorem.md",
+    "cofiber sequence.md",
+    "Cohomology operations.md",
+    "Quick_Notes/2021-04-15.md",
+    "H-space.md",
+    "Topological modular forms.md",
+    "zettelkasten/Number theory.md"
   ]
 }

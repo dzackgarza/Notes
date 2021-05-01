@@ -9,23 +9,23 @@ aliases: ["Big list of words I don't know"]
 # Indices
 
 - [[Representation theory]]
-- [Number theory](../Number%20theory.md)
+- [Number theory](Number%20theory.md)
 	- [[Zeta function]]
 	- [[Langlands]] 
 	- [[Class field theory]]
 - [Algebraic Geometry](Subjects/Algebraic%20Geometry%20Basics.md)
-- [Bundle](../Bundle.md)
-- [[../Étale Homotopy]]
+- [Bundle](Bundle.md)
+- [[Étale Homotopy]]
 	- [[Brauer group]]
 	- [[Descent]]
 - [[Commutative Algebra]]
 - [[K theory]]
-	- [[../Algebraic k theory]]
+	- [[Algebraic k theory]]
 	- [[Topological K theory]]
 - [[Mirror Symmetry]]
 - [[adic stuff]]
 	- [[l-adic cohomology]]
-- [infty categories](../infty%20categories.md)
+- [infty categories](infty%20categories.md)
 - [[Differential topology]]
 - [[Classical category theory]]
 - [[Classics]]
@@ -34,9 +34,9 @@ aliases: ["Big list of words I don't know"]
 	- [de Rham-Witt complex](de%20Rham-Witt%20complex)
 	- [[Topological Hochschild Homology]] and [[THH]]
 - [[Geometric topology]]
-- [Stable homotopy](../Stable%20homotopy.md)
+- [Stable homotopy](Stable%20homotopy.md)
 	- [[Chromatic homotopy theory]]	
-- [[../Classical homological algebra]]
+- [[Classical homological algebra]]
 - [[Categorical constructions in homotopy theory]]
 
 ---
@@ -142,6 +142,7 @@ aliases: ["Big list of words I don't know"]
 
 
 - The action of $\pi_1 \actson \pi_n$
+
 # Quals
 - Dirichlet test
 - Summation by parts

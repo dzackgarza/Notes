@@ -1,0 +1,6 @@
+- Moduli stack
+- [[Quotient stack]]
+- [[Gerbe]]
+- [[Algebraic space]]
+- [[Deligne-Mumford stack]]
+- Proper: ?

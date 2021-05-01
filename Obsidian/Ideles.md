@@ -1,3 +1,0 @@
-- [[Idele class group]]
-- [[Hecke character]]
-	- Generalizes a [[Dirichlet character]]

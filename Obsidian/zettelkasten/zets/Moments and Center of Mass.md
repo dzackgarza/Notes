@@ -1,4 +1,4 @@
 [Expository](Expository)
 
-![](Moments.html)
-![](Moments.xoj)
+![](../Moments.html)
+![](../Moments.xoj)

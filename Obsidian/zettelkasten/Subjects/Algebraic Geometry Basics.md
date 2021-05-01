@@ -1,4 +1,4 @@
-- [[Variety]]
+- [[../Variety]]
 	- [[Proper variety]]
 	- [[Algebraic variety]]
 	- [[Projective variety]]
@@ -15,27 +15,27 @@
 - [[Hard Lefschetz]]
 - [[Weak Lefschetz]]
 
-- [[Sheaf]]
-- [[Scheme]]
-	- [[Quasicoherent sheaf]] over a [[scheme]]	
-- [[Stack]]
+- [[../Sheaf]]
+- [[../scheme]]
+	- [[Quasicoherent sheaf]] over a [[../scheme]]	
+- [[../Stack]]
 - [[Orbifold]]
 	- Classifying orbifolds
 
-- [[Elliptic curve]]
-- [Abelian variety](Abelian%20variety)
-- [[Moduli space]]
+- [[../Elliptic curve]]
+- [../abelian variety](../abelian%20variety.md)
+- [[../Moduli space]]
 - [[Deformation-obstruction theory]]
 - [[M_g]]
 	- [[Teichmüller space]]
-- [[A_g]]
+- [[../A_g]]
 
-- [[Blowup]]
+- [[../Blowup]]
 	- [[Exceptional divisor]]
 - [[Chow ring]]
 - [[Serre duality]]
 - [[Local system]]
-- [O(D) for D a divisor](O(D)%20for%20D%20a%20divisor)
+- [../O(D) for D a divisor](../O(D)%20for%20D%20a%20divisor.md)
 - [[Noether normalization]]
 
 

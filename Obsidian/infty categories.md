@@ -1,5 +1,0 @@
-- [[Kan complex]]
-- [[Kan extension]]
-- [Simplicial set](Simplicial%20set)
-- [[(n, m) category]]
-- [[BG]]

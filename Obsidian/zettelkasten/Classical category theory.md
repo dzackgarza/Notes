@@ -1,0 +1,15 @@
+- [[Natural transformation]]
+- [[Yoneda embedding]]
+- [[Yoneda lemma]]
+- [[zettelkasten/adjunction]]
+- [[Monad]]
+- [[Limit and Colimit]]
+- [[Cartesian closed category]]
+- [[Monoidal category]]
+- [[Symmetric monoidal category]]
+- [[Pushout]]
+	- Limit definition
+- [[Pullback]]
+	- Limit definition
+- [[Equivalence of categories]]
+	- Need to state this precisely!

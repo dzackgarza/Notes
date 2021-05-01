@@ -1,4 +1,0 @@
-- [[Hasse-Weil zeta function]]
-- [[Arithmetic zeta function]]
-- [[Dedekind zeta function]]
-- [[L function]]

@@ -1,0 +1,1 @@
+- [See beginning of Hopkins talk](https://www.youtube.com/watch?v=Ix4pg87LKVk)

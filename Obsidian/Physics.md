@@ -1,2 +1,0 @@
-- Some [[differential geometry]] in the work of [Stephen Hawking](zettelkasten/zets/Stephen%20Hawking.md)
-- [[String theory]]

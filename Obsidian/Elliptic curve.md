@@ -1,2 +1,0 @@
-- Supersingular elliptic curves: ?
-- [[Complex Multiplication]] (CM)

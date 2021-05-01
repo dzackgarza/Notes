@@ -1,0 +1,1 @@
+[Krantz](zettelkasten/Projects/Book%20Notes/Krantz1/2021-04-22_Krantz.md)

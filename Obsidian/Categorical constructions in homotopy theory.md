@@ -1,4 +1,0 @@
-- [[Homotopy limit]]
-- [[Homotopy colimit]]
-- [[Homotopy quotient]]
-- [[Homotopy fixed points]]

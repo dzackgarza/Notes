@@ -1,0 +1,1 @@
+- [zettelkasten/A_g](zettelkasten/A_g.md)
