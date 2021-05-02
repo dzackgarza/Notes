@@ -1,3 +1,9 @@
+---
+aliases: ["Algebraic Geometry"]
+---
+
+- [Wikipedia Glossary of Algebraic Geometry](https://en.wikipedia.org/wiki/Glossary_of_algebraic_geometry)
+
 - [[../Variety]]
 	- [[Proper variety]]
 	- [[Algebraic variety]]
@@ -32,7 +38,7 @@
 
 - [[../Blowup]]
 	- [[Exceptional divisor]]
-- [[Chow ring]]
+- [[../Chow Ring]]
 - [[Serre duality]]
 - [[Local system]]
 - [../O(D) for D a divisor](../O(D)%20for%20D%20a%20divisor.md)

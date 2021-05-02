@@ -1,0 +1,1 @@
+Formed by by collapsing the complement of the normal bundle?

@@ -2,7 +2,7 @@
 title: Floer Talk
 ---
 
-[[../../../../zets/Floer Reading Group Fall 2020]]
+[[../../../../Floer Reading Group Fall 2020]]
 
 # Background and Notation
 

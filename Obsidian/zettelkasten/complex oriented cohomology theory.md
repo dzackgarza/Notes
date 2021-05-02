@@ -1,0 +1,1 @@
+- A type of [zettelkasten/cohomolology theory](zettelkasten/cohomolology%20theory.md)

@@ -1,2 +1,0 @@
-- [Adams Spectral Sequence](Adams%20Spectral%20Sequence)
-- [[Atiyah Hirzebruch spectral sequence]]

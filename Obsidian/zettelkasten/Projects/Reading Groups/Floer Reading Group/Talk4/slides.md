@@ -7,7 +7,7 @@ eader-includes: |
   \usepackage{beamerthemesplit}
 ---
 
-[Floer Reading Group Fall 2020](../../../../zets/Floer%20Reading%20Group%20Fall%202020.md)
+[Floer Reading Group Fall 2020](../../../../Floer%20Reading%20Group%20Fall%202020.md)
 
 # Summary/Outline 
 

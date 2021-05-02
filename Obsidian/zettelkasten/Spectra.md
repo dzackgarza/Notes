@@ -1,0 +1,25 @@
+
+- [[How to extract homology using spectra]]
+- [Homotopy groups of spectra](Homotopy%20groups%20of%20spectra)
+
+We have another aim in constructing the category of spectra. In homology theory the suspension homomorphism $\Sigma_*: h_n(X)\to h_{n+1}(\Sigma X)$ is always an isomorphism
+
+There are some things that spaces hide to cohomology theories, and we would like to mod out by this "extra information" that we don't really need when we study spaces by means of cohomology theories. 
+
+The information that spaces hide is the unstable phenomenon, in the following sense : if $X$ and $Y$ are stably equivalent, for example $\Sigma X \homotopic \Sigma Y$, then 
+$$
+E_*(X)\cong E_{*+1}(\Sigma X) \cong E_{*+1}(\Sigma Y)\cong E_*(Y)
+$$ 
+for any [generalized cohomology theory](cohomolology%20theory.md) $E_*$. This says that there is no cohomology theory that is going to see a difference between $X$ and $Y$, so we might as well says that they are "the same"
+
+> Cohomology theories do not distinguish stably equivalent spaces.
+
+Another good consequence of spectra is the [Brown Representability](Brown%20Representability) theorem. It says that any [[generalized cohomology theory]] on spaces is representable by a spectra. 
+
+As an aside, a great reason to care about cohomology theories comes from Adams' two solutions to the [[zettelkasten/Hopf invariant one]] problem. His first solution uses ordinary cohomology to do the work, but it is very long and makes extensive use of higher [[zettelkasten/Cohomology operations]]. His second proof (with Atiyah) is beautiful and short, but only because he uses an extraordinary cohomology theory, [[complex K-theory]], to do the job. [More on Hopf invariant](http://people.virginia.edu/~mah7cd/Foundations/Adams,%20Atiyah%20-%20K-theory%20and%20the%20Hopf%20Invariant.pdf)
+
+You may be familiar with a similar problem at the space level. One can construct the [[homotopy category]] of spaces by taking the objects to be CW complexes and the morphisms to be homotopy classes of continuous maps. This is a category, all right, but **it does not contain [pushouts](Pushout) or [sequential colimits](sequential%20colimits)**. 
+
+So you can work with spaces and maps-up-to-homotopy if you like, but you won't be able to do much. It's much better to work with spaces and maps on-the-nose, and to make constructions like the [[double mapping cylinder]] and the [[mapping telescope]] when you want to form [pushouts](Pushout) or [[sequential colimits]]. 
+
+> Slogan: Pass to homotopy as late as possible.

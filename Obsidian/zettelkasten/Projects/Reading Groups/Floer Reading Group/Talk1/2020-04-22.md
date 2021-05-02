@@ -12,7 +12,7 @@ header-includes:
 fontsize: 10pt
 ---
 
-[Floer Reading Group Fall 2020](../../../../zets/Floer%20Reading%20Group%20Fall%202020.md)
+[Floer Reading Group Fall 2020](../../../../Floer%20Reading%20Group%20Fall%202020.md)
 
 # Review
 

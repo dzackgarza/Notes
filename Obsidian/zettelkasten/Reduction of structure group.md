@@ -1,0 +1,3 @@
+---
+aliases: ["structure group"]
+---

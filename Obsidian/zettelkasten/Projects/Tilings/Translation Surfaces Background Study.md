@@ -10,7 +10,7 @@ Tags: #riemann_surfaces #algebraic_geometry #bundles #sheaves
 - [Branched covers](Branched%20covers)
 - [Riemann-Roch](Riemann-Roch)
 - Homology of a bundle
-- [../../zets/Divisor](../../zets/Divisor.md) 
+- [../../Divisor](../../Divisor.md) 
 - [Line bundles](Line%20bundles)
 - For $V \to L \to X$ a line bundle, $\OO(L)$ is the sheaf of holomorphic - sections of $L$.
  -Structure Sheaf

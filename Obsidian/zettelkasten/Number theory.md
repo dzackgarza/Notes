@@ -2,9 +2,9 @@
 -  Archimedean field
 - [[Ramification]]
 - [[Reduction]]
-- [Divisor](zettelkasten/zets/Divisor.md)
+- [Divisor](Divisor.md)
 - [[Function field]]
--[Places](../place.md)
+-[Places](place.md)
 	- [[Archimedean place]]
 - [Elliptic curve](Elliptic%20curve.md)
 - [[Riemann-Roch]]
@@ -14,10 +14,11 @@
 	- (e.g. of $L_{K(n)}S^O$)
 - [[Adeles]]
 - [Ideles](Ideles.md)
-- [Modular form](Modular%20form)
+- [modular form](modular%20form.md)
 - [[Lubin-Tate space]]
 - [[Lubin-Tate theory]]
-
+- [uniformizer](uniformizer)
+- [[Faltings theorem]]
 
 # Class Field Theory
 

@@ -1,0 +1,3 @@
+---
+aliases: ["global Langlands"]
+---

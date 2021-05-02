@@ -117,7 +117,7 @@ aliases: ["Big list of words I don't know"]
 - [[Elliptic cohomology]]
 - [[Topological modular forms]]
 - [[Automorphic form]]
-- [[Modular form]]
+- [[modular form]]
   - Hopkins' viewpoint on [[elliptic spectra]]
 - [[Bousfield localization]]
 
