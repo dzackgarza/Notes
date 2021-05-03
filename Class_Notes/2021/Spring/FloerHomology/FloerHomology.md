@@ -27,6 +27,7 @@
 \newcommand{\BB}[0]{{\mathbb{B}}}
 \newcommand{\CP}[0]{{\mathbb{CP}}}
 \newcommand{\DD}[0]{{\mathbb{D}}}
+\newcommand{\EE}[0]{{\mathbb{E}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
 \newcommand{\fq}[0]{{\mathbb{F}_{q}}}
 \newcommand{\fqr}[0]{{\mathbb{F}_{q^r}}}
@@ -88,8 +89,11 @@
 \newcommand{\Art}[0]{\operatorname{Art}}
 \newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
+\newcommand{\NS}[0]{{\operatorname{NS}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
+\newcommand{\spec}[0]{\operatorname{Spec}}
+\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\maxspec}[0]{{\operatorname{maxSpec}}}
 \newcommand{\Tr}[0]{\operatorname{Tr}}
 \newcommand{\adj}[0]{\operatorname{adj}}
@@ -105,6 +109,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\fpqc}[0]{\mathrm{\operatorname{fpqc}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -142,11 +147,13 @@
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
+\newcommand{\MO}[0]{{\operatorname{MO}}}
 \newcommand{\SU}[0]{{\operatorname{SU}}}
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
+\newcommand{\Pin}[0]{{\operatorname{Pin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\CH}[0]{{\operatorname{CH}}}
@@ -157,6 +164,7 @@
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
 \newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Vark}[0]{{\mathsf{Var}_{/k} }}
 \newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
@@ -213,6 +221,7 @@
 \newcommand{\Perv}[0]{\mathsf{Perv}}
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Fieldsover}[1]{{ \mathsf{Fields}_{#1} }}
 
 \newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
@@ -317,6 +326,7 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\liel}[0]{{\mathfrak{l}}}
 \newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
@@ -428,7 +438,6 @@
 \newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
-\newcommand{\rad}[0]{{\operatorname{rad}}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -444,8 +453,6 @@
 \newcommand{\sgn}[0]{\operatorname{sgn}}
 \newcommand{\sign}[0]{\operatorname{sign}}
 \newcommand{\spanof}[0]{{\operatorname{span}}}
-\newcommand{\spec}[0]{\operatorname{Spec}}
-\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\Jac}[0]{\operatorname{Jac}}
 \newcommand{\stab}[0]{{\operatorname{Stab}}}
 \newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
@@ -485,6 +492,7 @@
 \newcommand{\Div}[0]{\operatorname{Div}}
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
+\newcommand{\Sq}[0]{\operatorname{Sq}}
 \renewcommand{\hat}[1]{\widehat{#1}}
 \newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
@@ -507,6 +515,8 @@
 \newcommand{\increasesto}[0]{\nearrow}
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
+\DeclareMathOperator{\crys}{crys}
+\DeclareMathOperator{\rad}{rad}
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
@@ -516,7 +526,7 @@
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
 \DeclareMathOperator{\Hom}{Hom}
-\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\proj}{proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
 \DeclareMathOperator{\Bun}{Bun}
@@ -618,15 +628,28 @@
 \newcommand{\ind}[0]{\operatorname{ind}}
 \newcommand{\Ind}[0]{\operatorname{Ind}}
 \newcommand{\Coind}[0]{\operatorname{coInd}}
+\newcommand{\Frob}[0]{\operatorname{Frob}}
 
 \newcommand{\submfds}{\operatorname{SubMfds}}
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
-\newcommand\B{{ \mathsf{B}}}
-\newcommand\D{{ \mathsf{D}}}
-\newcommand\Rd{{ \mathsf{R}}}
-\newcommand\Ld{{ \mathsf{R}}}
+\newcommand{\B}[0]{{ \mathsf{B}}}
+\newcommand{\D}[0]{{ \mathsf{D}}}
+\newcommand{\Rd}[0]{{ \mathsf{R}}}
+\newcommand{\Ld}[0]{{ \mathsf{R}}}
+\newcommand{\Qbar}[0]{{ \bar{ \mathbb{Q} } }}
+\newcommand{\invert}[1]{{ \left[ { \scriptstyle \frac{1}{#1} } \right] }}
+\newcommand{\Ag}[0]{{\mathcal{A}_g}}
+\newcommand{\pcomplete}[0]{{ {}^{ \wedge }_{p} }}
+
+\newcommand{\matt}[4]{{
+\begin{bmatrix}
+#1 & #2 
+\\
+#3 & #4
+\end{bmatrix}
+}}
 
 # Lecture 1: Overview (Wednesday, January 13)
 

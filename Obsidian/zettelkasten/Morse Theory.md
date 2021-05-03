@@ -51,12 +51,11 @@ Tags: #topology #morse_theory
 
   - Say something about gradient flow in the case of a Riemannian metric?
 
-![asdsadasdsadas](figures/2020-03-30-22:49.png)
 
-![asdqweqwe](figures/2020-03-30-22:50.png)
+[Cool video](https://youtu.be/mIUi1zIUQJw?t=42)
 
-<iframe src="https://youtu.be/mIUi1zIUQJw?t=42" width=900 height=600></iframe>
-
+![](attachments/Pasted%20image%2020210501235429.png)
+![](attachments/Pasted%20image%2020210501235456.png)
 
 [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
 
@@ -65,11 +64,14 @@ Tags: #topology #morse_theory
 
 - Diffeomorphism type depends on isotopy classes of attaching maps.
 
-![Descriptions of 2d Handles](figures/2020-03-31-14:17.png)
+Descriptions of 2d Handles
+![](attachments/Pasted%20image%2020210501235853.png)
 
-![Descriptions of 3d Handles](figures/2020-03-31-14:24.png)
+Descriptions of 3d Handles
+![](attachments/Pasted%20image%2020210501235919.png)
 
-![Handle Decomposition of Torus](figures/2020-03-31-14:19.png)
+Handle Decomposition of Torus
+![](attachments/Pasted%20image%2020210501235942.png)
 
 # Intro Video
 [Link](https://www.youtube.com/watch?v=78OMJ8JKDqI)
@@ -80,7 +82,7 @@ Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ 
 
 Index: number of linearly independent direction you can move for which the function *decreases*.
 
-![Image](figures/2020-03-30-23:47.png)\
+![](attachments/Pasted%20image%2020210501235532.png)
 
 Importance of CW complexes: triangulations of surfaces.
 
@@ -89,23 +91,21 @@ Morse Lemma: nondegenerate critical points have standard forms $\sum \pm x_i^2$,
 Morse Theorem 1:
 If there are no critical points, $M_A \homotopic M_B$.
 
-![Image](figures/2020-03-30-23:59.png)\
+![](attachments/Pasted%20image%2020210501235559.png)
 
 Stable vs unstable:
 
-![Image](figures/2020-03-31-00:05.png)\
+![](attachments/Pasted%20image%2020210501235734.png)
 
 Consider height function on torus.
 Circles are index 0 critical points, triangle is index 1.
 
-![Image](figures/2020-03-31-00:04.png)\
+![](attachments/Pasted%20image%2020210501235700.png)
 
-![Image](figures/2020-03-31-00:04.png)\
 
 Cancellation:
 
-![Image](figures/2020-03-31-00:10.png)\
-
-![Image](figures/2020-03-31-00:11.png)\
+![](attachments/Pasted%20image%2020210501235757.png)
+![](attachments/Pasted%20image%2020210501235820.png)
 
 Can use persistent homology to measure "importance" of critical points.

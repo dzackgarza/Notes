@@ -1,0 +1,1 @@
+- And how [[Topological cyclic homology]] is related and more computable

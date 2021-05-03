@@ -861,7 +861,7 @@ Here \( {{\partial}}:H_*(C) \to H_*(A)[1] \) shifts degrees. Note that this moti
 ::: {.remark}
 Assume for now that we're in the situation of \( R{\hbox{-}} \)modules where \( R \) is a field, i.e. vector spaces. The main fact/advantage here that is not generally true for \( R{\hbox{-}} \)modules: every subspace has a complement. Since \( B_n \subseteq Z_n \subseteq C_n \), we can write \( C_n = Z_n \oplus B_n' \) for every \( n \), and \( Z_n = B_n \oplus H_n \). This notation is suggestive, since \( H_n \cong Z_n/B_n \) as a quotient of vector spaces. Substituting, we get \( C_n = B_n \oplus H_n \oplus B_n' \). Consider the projection \( C_n \to B_n \) by projecting onto the first factor. Identifying \( B_n \coloneqq\operatorname{im}(C_{n+1} \to C_n) \cong C_{n+1}/Z_{n+1} \) by the 1st isomorphism theorem in the reverse direction. But this image is equal to \( B_{n+1}' \), and we can embed this in \( C_{n+1} \), so define \( s_n: C_n \to C_{n+1} \) as the composition
 \[
-s_n \coloneqq( C_n \xrightarrow{\mathop{\mathrm{Proj}}} B_n = \operatorname{im}(C_{n+1} \to C_n) \xrightarrow{d_{n+1}^{-1}} C_{n+1}/Z_{n+1} \xrightarrow{\cong} B_{n+1}' \hookrightarrow C_{n+1}
+s_n \coloneqq( C_n \xrightarrow{\mathop{\mathrm{proj}}} B_n = \operatorname{im}(C_{n+1} \to C_n) \xrightarrow{d_{n+1}^{-1}} C_{n+1}/Z_{n+1} \xrightarrow{\cong} B_{n+1}' \hookrightarrow C_{n+1}
 .\]
 :::
 
@@ -7773,7 +7773,7 @@ The vector space sum of any two solvable ideals is again a solvable ideal. Note 
 :::
 
 ::: {.definition title="?"}
-For \( \dim_k {\mathfrak{g}}< \infty \), define the **radical** to be \( {\operatorname{rad}}{\mathfrak{g}}\coloneqq\sum I_j \) be the sum of all solvable ideals \( I_j{~\trianglelefteq~}{\mathfrak{g}} \). We say \( {\mathfrak{g}} \) is **semisimple** if \( {\operatorname{rad}}{\mathfrak{g}}= 0 \).
+For \( \dim_k {\mathfrak{g}}< \infty \), define the **radical** to be \( \mathop{\mathrm{rad}}{\mathfrak{g}}\coloneqq\sum I_j \) be the sum of all solvable ideals \( I_j{~\trianglelefteq~}{\mathfrak{g}} \). We say \( {\mathfrak{g}} \) is **semisimple** if \( \mathop{\mathrm{rad}}{\mathfrak{g}}= 0 \).
 :::
 
 ::: {.lemma title="?"}
@@ -7781,7 +7781,7 @@ Simple implies semisimple.
 :::
 
 ::: {.lemma title="?"}
-\( {\mathfrak{g}}/ {\operatorname{rad}}{\mathfrak{g}} \) is always semisimple.
+\( {\mathfrak{g}}/ \mathop{\mathrm{rad}}{\mathfrak{g}} \) is always semisimple.
 :::
 
 ::: {.remark}
@@ -7828,7 +7828,7 @@ Recall that \( H^1 \) is related to derivations.
 :::
 
 ::: {.corollary title="?"}
-Let \( {\mathfrak{g}}\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}}(\ss) \) with \( \dim_k {\mathfrak{g}}< \infty \), then
+Let \( {\mathfrak{g}}\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}}({\operatorname{ss}}) \) with \( \dim_k {\mathfrak{g}}< \infty \), then
 \[
 H^1({\mathfrak{g}};k ) = 0 = H_1({\mathfrak{g}}; k) 
 .\]
@@ -7839,7 +7839,7 @@ Since \( [{\mathfrak{g}}{\mathfrak{g}}] = {\mathfrak{g}} \), we have \( {\mathfr
 :::
 
 ::: {.theorem title="?"}
-Let \( {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}(\ss) \) with \( \dim_k {\mathfrak{g}}< \infty \) and \( \operatorname{ch}(k) = 0 \). Then if \( k\neq M \) is a simple \( {\mathfrak{g}}{\hbox{-}} \)module (where simple means no proper nontrivial \( {\mathfrak{g}}{\hbox{-}} \)invariant submodules), then
+Let \( {\mathfrak{g}}\in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}({\operatorname{ss}}) \) with \( \dim_k {\mathfrak{g}}< \infty \) and \( \operatorname{ch}(k) = 0 \). Then if \( k\neq M \) is a simple \( {\mathfrak{g}}{\hbox{-}} \)module (where simple means no proper nontrivial \( {\mathfrak{g}}{\hbox{-}} \)invariant submodules), then
 \[
 H^i({\mathfrak{g}}; M) = 0 = H_i({\mathfrak{g}}; M)
 .\]
@@ -7849,17 +7849,257 @@ H^i({\mathfrak{g}}; M) = 0 = H_i({\mathfrak{g}}; M)
 Omitted. This uses the Casimir operator for \( M \), which is in the center \( Z({\mathcal{U}(\mathfrak{g}) }) \).
 :::
 
-# Appendix: Extra Definitions
+# Section 7.6 (Wednesday, April 28)
 
-::: {.definition title="Acyclic"}
-A chain complex \( C \) is **acyclic** if and only if \( H_*(C) = 0 \).
+::: {.remark}
+Today: filling in some previous things, including proofs for Whitehead's second lemma and Levi's theorem.
 :::
+
+::: {.definition title="?"}
+Let \( {\mathfrak{g}}\in{\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}_{/k} \) for \( k\in \mathsf{CRing} \) and let \( M\in {\mathsf{k}{\hbox{-}}\mathsf{Mod}} \) viewed as a trivial \( {\mathfrak{g}}{\hbox{-}} \) module. An **extension of \( {\mathfrak{g}} \) by \( M \)** is a SES in \( {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \) of the following form:
+\[
+0 \to M \xrightarrow{\iota} E \xrightarrow{\pi} {\mathfrak{g}}\to 0
+.\]
+:::
+
+::: {.remark}
+Given such an extension, thinking of \( M \subset E \), \( M \) becomes a \( {\mathfrak{g}}{\hbox{-}} \)module in a natural way: given \( m\in M \) and \( x\in{\mathfrak{g}} \), choose \( \tilde x\in E \) such that \( \pi(\tilde x) = x \) and set
+\[
+x\cdot m \coloneqq[\tilde x, m]_E \in M {~\trianglelefteq~}E
+,\]
+noting that \( M \) is the kernel of a morphism and thus an ideal. Is this well-defined? If \( \tilde x'\in \pi^{-1}(E) \), we have \( \pi(\tilde x' - \tilde x) = 0 \) which implies \( \tilde x' -\tilde x\in \ker \pi = M \) by exactness. So we can write \( \tilde x' = m' + \tilde x \) for some \( m'\in M \), and since \( M \) is abelian and its elements bracket to zero, we have
+\[
+[\tilde x ', m] = [m' + \tilde x, m] = [\tilde x, m]
+.\]
+:::
+
+::: {.remark}
+The extension problem: given a \( {\mathfrak{g}}{\hbox{-}} \)module \( M \) viewed as an abelian Lie algebra, how many (equivalence classes of) extensions of \( {\mathfrak{g}} \) by \( M \) are there for which the induced action above agrees with the given action? Here we view equivalence as existence of an isomorphism making the following diagram commute:
+
+```{=tex}
+\begin{tikzcd}
+    0 && M && E && {\mathfrak{g}}&& 0 \\
+    \\
+    &&&& {E'}
+    \arrow["\sim", dashed, from=1-5, to=3-5]
+    \arrow["{\iota'}"', from=1-3, to=3-5]
+    \arrow[from=1-1, to=1-3]
+    \arrow["\iota", from=1-3, to=1-5]
+    \arrow["\pi", from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow["{\pi'}"', from=3-5, to=1-7]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCIwIl0sWzIsMCwiTSJdLFs0LDAsIkUiXSxbNiwwLCJcXGxpZWciXSxbOCwwLCIwIl0sWzQsMiwiRSciXSxbMiw1LCJcXHNpbSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxLDUsIlxcaW90YSciLDJdLFswLDFdLFsxLDIsIlxcaW90YSJdLFsyLDMsIlxccGkiXSxbMyw0XSxbNSwzLCJcXHBpJyIsMl1d)
+
+Write \( \operatorname{Ext}_{{\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}}({\mathfrak{g}}, M) \) for the set of equivalence classes of such extensions.
+:::
+
+::: {.remark}
+We can form semidirect products \( M\rtimes{\mathfrak{g}} \) of Lie algebras in the following way: start with the \( k{\hbox{-}} \)module \( M \times{\mathfrak{g}} \) with bracket
+\[
+[(m, x), (n, y)] \coloneqq(x\cdot n - y\cdot m, [xy]) && m,n\in M,\,\, x,y\in{\mathfrak{g}}
+.\]
+One checks that this is anticommutative and satisfies the Jacobi identity. This is a Lie algebra containing \( M \times 0 \) as an abelian ideal and \( 0 \times{\mathfrak{g}} \) as a subalgebra, which fits into a SES
+\[
+0 \to M \xrightarrow{\iota}  M\rtimes{\mathfrak{g}}\xrightarrow{\pi}  {\mathfrak{g}}\to 0
+.\]
+Moreover, the naturally induced action described previously agrees with this semidirect action. Identifying elements with their inclusions, we have
+\[
+[(0, x), (m, 0)] = (x\cdot m - 0, [0, 0] ) = (x\cdot m, 0)
+.\]
+Thus there is always at least one extension, called the **split extension**. There is a classification:
+:::
+
+::: {.theorem title="Classification of Extensions"}
+Let \( M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \), then there is a bijection of sets
+\[
+\operatorname{Ext}({\mathfrak{g}}, M)
+&\rightleftharpoons
+H^2({\mathfrak{g}}; M)
+\]
+:::
+
+::: {.remark}
+Note that the map \( \pi \) makes \( M \) into an \( E{\hbox{-}} \)module and makes \( M \) into a trivial \( M{\hbox{-}} \)module. See Weibel for a functorial proof, using the same correspondence between \( \operatorname{Ext}_R^1(A, B) \) and extensions of \( A \) by \( B \). Note that we have an algebra, an ideal, and its quotient, which is precisely the setup for the LHS spectral sequence for cohomology with coefficients in \( M \). There was an associated 5-term exact sequence, which contains a **classifying map**
+\[
+\mathop{\mathrm{Hom}}_{\mathfrak{g}{\hbox{-}}\mathsf{Mod}}(M, M) &\xrightarrow{d^2} \mathop{\mathrm{Hom}}_{{\mathfrak{g}{\hbox{-}}\mathsf{Mod}}}({\mathfrak{g}}, M) \\
+\one_M &\mapsto d^2(\one_M)
+.\]
+One checks that this only depends on the equivalence class of extensions, and turns out to be a bijection. Weibel's proof uses some facts about free Lie algebras that we haven't discussed yet, so we'll instead do a slightly more down-to-earth proof from Knapp's book using the Koszul complex.
+:::
+
+::: {.proof title="of classification theorem"}
+We'll need to assume \( k\in \mathsf{Field} \). Choose a splitting of the following SES as a \( k{\hbox{-}} \)vector space:
+```{=tex}
+\begin{tikzcd}
+    0 && M && E && {\mathfrak{g}}&& 0
+    \arrow[from=1-1, to=1-3]
+    \arrow["\iota", from=1-3, to=1-5]
+    \arrow["\pi", shift left=2, from=1-5, to=1-7]
+    \arrow[from=1-7, to=1-9]
+    \arrow["j", shift left=3, dotted, from=1-7, to=1-5]
+\end{tikzcd}
+```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIwIl0sWzIsMCwiTSJdLFs0LDAsIkUiXSxbNiwwLCJcXGxpZWciXSxbOCwwLCIwIl0sWzAsMV0sWzEsMiwiXFxpb3RhIl0sWzIsMywiXFxwaSIsMCx7Im9mZnNldCI6LTJ9XSxbMyw0XSxbMywyLCJqIiwwLHsib2Zmc2V0IjotMywic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV1d)
+
+So here \( \pi \circ j = \one_{\mathfrak{g}} \). Note that we can use \( j(x) \) for our \( \tilde x \). From section 7.7, we can characterize \( H^2({\mathfrak{g}}; M) \) is a subquotient of \( \mathop{\mathrm{Hom}}_k\qty{ \bigwedge^2 {\mathfrak{g}}, M} \), recalling that we canceled a \( {\mathcal{U}(\mathfrak{g}) } \) when taking the resolution
+\[
+{\mathcal{U}(\mathfrak{g}) }\otimes\bigwedge^* {\mathfrak{g}}
+  \xrightarrow[]{\varepsilon} { \mathrel{\mkern-16mu}\rightarrow }\,
+ k
+\]
+and applying \( \mathop{\mathrm{Hom}}_k({-}, M) \). Specifically, it is \( \ker \delta / \operatorname{im}\delta \) for the coboundary \( \delta \) from corollary 7.7.3. Recall that we define a hom from an \( n \)th piece of an exterior algebra is equivalence to an alternating \( n{\hbox{-}} \)argument function, and define \( w\in \mathop{\mathrm{Hom}}_k\qty{ \bigwedge^2 {\mathfrak{g}}, M } \) by
+\[
+w(x, y) = [jx, hy]_E - j\qty{ [xy]_M } \in E
+,\]
+where we'll omit parentheses and bracket subscripts immediately. We want to detect if this is in \( M \), so use that \( M = \ker \pi \) and check
+\[
+\pi ([jx, jy] - j[xy]) 
+&= [\pi j x, \pi j y] - \pi j[xy] \\ 
+&= [xy] - [xy] \\
+&= 0
+,\]
+and so \( w(x, y) \in M \) as needed. We now want to compute \( \delta w \) to compute the action \( x\cdot m \coloneqq[\tilde x, m]_M \), so take \( \tilde x \coloneqq j(x) \). Use that \( \delta \) has graded degree \( +1 \), so
+\[
+\delta w(x,y,z) 
+&= x\cdot w(y,z) - y\cdot w(x, z) + z\cdot w(x, y) 
+\\
+&\quad -w([xy], z) + w([xz], y) - w([yz], x) 
+\\ \\
+&= 
+[jx, [jy, jz]] - [jz, j[yz]]
+\\
+&\quad - [jy, [jz, jz]] + [jy, j[xz]] \\
+&\quad + [jz, [jx, jy]] - [jz, j[xy]] \\
+&\quad - [j[xy], jz] + j [[xy], z] \\
+&\quad + [j[xz], jy] - j [[xz], y] \\
+&\quad - [j[yz], jx] + j [[yz], x]
+.\]
+
+There is a lot of cancellation here! Use the Jacobi identity for terms in red, and sign rules to cancel the rest:
+
+![image_2021-04-28-10-01-22](figures/image_2021-04-28-10-01-22.png)
+
+So \( w\in \ker \delta \).
+
+> To be continued.
+:::
+
+::: {.remark}
+One should check that choices differ by coboundaries, along with a few other things that we're eliding.
+:::
+
+# Friday, April 30
+
+## Proof Continued
+
+::: {.remark}
+Last time: we were proving the bijection between \( H^2({\mathfrak{g}}; M) \) and extensions of \( {\mathfrak{g}} \) by \( M \) up to equivalence.
+:::
+
+::: {.proof title="of the classification theorem, continued"}
+We chose a vector space splitting \( {\mathfrak{g}}\xrightarrow{j} E \) and used the Cartan-Eilenberg resolution to construct a 2-cocycle \( w\in \mathop{\mathrm{Hom}}_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}}(\bigwedge^2 {\mathfrak{g}}, M) \) given by
+\[
+w(x, y) \coloneqq[jx, jy] - j[x, y] && x,y{\mathfrak{g}}
+,\]
+and we saw that \( d(w) = 0 \). Say we change \( j \) to \( j': {\mathfrak{g}}\to E \) to \( j': {\mathfrak{g}}\to E \) with \( \pi j' = \one_{{\mathfrak{g}}} \), and let \( w' \) be the corresponding 2-cocycle. Letting \( \alpha \coloneqq j-j' \), then \( \pi \circ \alpha = 0 \) by linearity and so \( \alpha : {\mathfrak{g}}\to \ker \pi = M \) and thus \( \alpha\in\mathop{\mathrm{Hom}}_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}}(\bigwedge^1 {\mathfrak{g}}, M) \). We then have
+\[
+\delta \alpha (x, y)
+&= x \alpha(y) - y \alpha(x) - \alpha([xy]) \\
+&= [j'x, j'y - jy] - [jy, j'x - jx]-j'[xy] + j[xy] \\ 
+&= \qty{ [j'x, j'y] - j'[xy] } - [j'x, jy] + [j'x, jy] - \qty{[jx, jy] - j[xy] } \\
+&= \qty{ [j'x, j'y] - j'[xy] } - \qty{[jx, jy] - j[xy] } \\
+&= w'(x, y) - w(x, y)
+,\]
+so \( \delta\alpha = w' -w \). So their difference is a coboundary, yielding \( w = w' \in H^2({\mathfrak{g}}, M) \), making this construction independent of the choice of \( j \).
+
+::: {.exercise title="?"}
+Show that equivalent extensions also lead to the same element in \( H^2 \).
+:::
+
+This yields a well-defined map
+\[
+\left\{{ \text{Extensions of ${\mathfrak{g}}$ by $M$ } }\right\} &\to H^2({\mathfrak{g}}; M) \\
+(0\to M\to E\to {\mathfrak{g}}\to 0) &\mapsto w
+.\]
+Conversely, given a 2-cocycle \( \tilde w\in\mathop{\mathrm{Hom}}_{{\mathsf{k}{\hbox{-}}\mathsf{Mod}}}(\bigwedge^2 {\mathfrak{g}}, M) \) with \( M \) abelian, define
+
+-   \( E \coloneqq M \oplus {\mathfrak{g}}\in {\mathsf{Vect}}_k \)
+-   A bracket using the following rules (identifying \( M, {\mathfrak{g}} \) with their images in \( E \)):
+    -   \( [m, n]_E \coloneqq 0 \)
+    -   \( [x, m]_E \coloneqq x\cdot m = -[m, x]_E \)
+        -   Note that this guarantees that the actions agree.
+    -   \( [x, y]_E \coloneqq\tilde w(x, y) + [x, y]_{\mathfrak{g}} \)
+
+One can check that the last definition is anticommutative since \( w \) was alternating, and further that this makes \( E \) into a Lie algebra that fits into a SES of the desired form with canonical maps \( i, \pi, j \). The cocycle \( w \) coming from this extension is given by
+\[ 
+w(x, y) 
+&= [x, y]_E - [x, y]_{\mathfrak{g}}\\
+&= \tilde w(x, y) + [x, y]_{\mathfrak{g}}- [x, y]_{{\mathfrak{g}}} \\
+&= \tilde w(x, y)
+\]
+where here \( j \) is a direct sum inclusions that we'll suppress. So \( H^2 \to \operatorname{Ext}/\sim \to H^2 \) is the identity. One can similarly check that \( \operatorname{Ext}/\sim \to H^2 \to \operatorname{Ext}/\sim \) is also the identity, since it produces an equivalent extension. So this defines a bijection of sets.
+:::
+
+::: {.remark}
+This was known much earlier for group cohomology: if \( G \in {\mathsf{Grp}}, A\in {\mathsf{G}{\hbox{-}}\mathsf{Mod}} \), there is a bijection
+\[
+\left\{{ 0\to A\to E \xrightarrow{\pi} G \to 1 }\right\} 
+\coloneqq
+\left\{{ \text{Equivalence classes of extensions of $G$ by $A$ } }\right\}
+&\to 
+H^2(G; A) 
+,\]
+where \( G \) may not be abelian, and one acts by conjugation instead. Analogy: bracketing is like the differential of conjugation.
+:::
+
+## Proof Backlog from Monday
+
+::: {.remark}
+Recall Whitehead's Lemma 2[^15] for \( {\mathfrak{g}} \) finite-dimensional and semisimple over \( \operatorname{ch}(k) = 0 \) and \( M\in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}}^{\operatorname{fd}} \), then \( H^2({\mathfrak{g}}; M) = 0 \).
+:::
+
+::: {.proof title="?"}
+By Weyl's theorem, \( M \) is a direct sum of simple \( {\mathfrak{g}}{\hbox{-}} \)modules and \( H^* \) commutes with direct sums, so it suffices to show this when \( M \) is simple. By Weibel theorem 7.8.9 (structure of semisimple Lie algebras using the Casimir operator) we have \( H^n({\mathfrak{g}}; M) = 0 \) for \( M\neq k \) and for all \( n \), so we reduce to showing this for \( M=k \). By the classification theorem, we need to show that every extension of the following form splits:
+\[
+0\to k\to E \xrightarrow{\pi} {\mathfrak{g}}\to 0
+,\]
+where we view \( k \in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}^{\operatorname{ab}} \). We proceed in an unanticipated way by reducing Lie algebra maps to \( {\mathfrak{g}}{\hbox{-}} \)module maps.\
+
+First note that \( k \subset Z{\mathfrak{g}} \), since \( E \cong k \oplus {\mathfrak{g}}\in {\mathsf{Vect}}_k \), so there is an embedding \( {\mathfrak{g}}\hookrightarrow E \) where say \( x\mapsto \tilde x \). For \( c\in k \) and \( x\in {\mathfrak{g}} \), we have \( [\tilde x, c] \coloneqq x\cdot c = 0 \) since \( k \in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}^{\operatorname{ab}} \), and by linearity this will show that \( k \) commutes with everything. We now make \( E \) into a \( {\mathfrak{g}}{\hbox{-}} \)module by defining \( x\cdot e \coloneqq[\tilde x, e] \) for \( x\in {\mathfrak{g}}, e\in E \). If \( \tilde x' \) is another other representative in \( E \) of \( x \), then noting that \( k \in \ker \pi \) we can write \( \tilde x' = [\tilde x + c, e] = [\tilde x, e] \) using that \( c\in Z(E) \). This action makes \( \pi \) into a \( {\mathfrak{g}}{\hbox{-}} \)module map, and we have
+\[
+\pi(x\cdot e) 
+&\coloneqq\pi( [\tilde x, e] ) \\
+&= [\pi(\tilde x), \pi(e) ] && \pi \in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}({\mathfrak{g}}, E) \\
+&\coloneqq[x, \pi(e)] \\
+&\coloneqq x\cdot \pi(e) \in {\mathfrak{g}}
+,\]
+since this is acting via the adjoint action. By Weyl's theorem, both \( E \) and \( {\mathfrak{g}} \) decompose into direct sums of simple \( {\mathfrak{g}}{\hbox{-}} \)modules. Using that \( j \) is injective and a \( {\mathfrak{g}}{\hbox{-}} \)module map, it must send simple submodules of \( {\mathfrak{g}} \) to simple submodules of \( E \), using that maps to (from?) simple modules are either zero or isomorphisms and a dimension count. One can check (easily!) that there is a \( {\mathfrak{g}}{\hbox{-}} \)module map \( \sigma: {\mathfrak{g}}\hookrightarrow E \) such that \( E \cong K \oplus \sigma({\mathfrak{g}}) \in {\mathfrak{g}{\hbox{-}}\mathsf{Mod}} \). So choose \( \tilde x \coloneqq\sigma(x) \), then \( \sigma \in {\mathsf{Lie}{\hbox{-}}\mathsf{Alg}}({\mathfrak{g}}, E) \), and so
+\[
+\sigma( [x, y] )
+&\coloneqq x \cdot \sigma(y) \\
+&= [\tilde x, \sigma(y) ] \\
+&= [\sigma(x), \sigma(y)]
+,\]
+making \( \sigma({\mathfrak{g}}) \leq E \) a Lie-subalgebra. Since \( \sigma({\mathfrak{g}}) \cong {\mathfrak{g}} \), this is precisely a semidirect product and we obtain \( E \cong k \rtimes{\mathfrak{g}} \), and the sequence splits as desired.
+:::
+
+::: {.remark}
+Next time: Levi's theorem.
+:::
+
+# Appendix: Extra Definitions
 
 # Extra References
 
 -   <https://www.math.wisc.edu/~csimpson6/notes/2020_spring_homological_algebra/notes.pdf>
 
 # Useful Facts
+
+::: {.definition title="Acyclic"}
+A chain complex \( C \) is **acyclic** if and only if \( H_*(C) = 0 \).
+:::
 
 ::: {.proposition title="Algebra Facts"}
 ```{=tex}
@@ -8148,3 +8388,5 @@ Let \( F: {\mathsf{R}{\hbox{-}}\mathsf{Mod}} \to {\mathsf{{\mathbb{Z}}}{\hbox{-}
 [^13]: See exercise 7.3.6.
 
 [^14]: Named for a mathematician *named* Killing.
+
+[^15]: Weibel corollary 7.8.12

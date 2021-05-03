@@ -1,6 +1,6 @@
 # Big Lists
 - [Words I don't know](zettelkasten/Giant%20Word%20List.md)- [Questions I want answers to](zettelkasten/2021-04-26_Unanswered_Questions.md)
-- [Open problems](zettelkasten/2021-04-26_Problem_List.md)
+- [Open problems](zettelkasten/Problem%20List.md)
 - [Papers to read](zettelkasten/Papers%20to%20Read.md)
 - [Reading recommendations](zettelkasten/2021-04-26_Reading_Recommendations.md)
 - [Important journals](attachments/Journals.pdf)

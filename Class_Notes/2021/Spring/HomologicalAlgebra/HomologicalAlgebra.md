@@ -27,6 +27,7 @@
 \newcommand{\BB}[0]{{\mathbb{B}}}
 \newcommand{\CP}[0]{{\mathbb{CP}}}
 \newcommand{\DD}[0]{{\mathbb{D}}}
+\newcommand{\EE}[0]{{\mathbb{E}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
 \newcommand{\fq}[0]{{\mathbb{F}_{q}}}
 \newcommand{\fqr}[0]{{\mathbb{F}_{q^r}}}
@@ -88,8 +89,11 @@
 \newcommand{\Art}[0]{\operatorname{Art}}
 \newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
+\newcommand{\NS}[0]{{\operatorname{NS}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
+\newcommand{\spec}[0]{\operatorname{Spec}}
+\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\maxspec}[0]{{\operatorname{maxSpec}}}
 \newcommand{\Tr}[0]{\operatorname{Tr}}
 \newcommand{\adj}[0]{\operatorname{adj}}
@@ -105,6 +109,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\fpqc}[0]{\mathrm{\operatorname{fpqc}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -142,11 +147,13 @@
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
+\newcommand{\MO}[0]{{\operatorname{MO}}}
 \newcommand{\SU}[0]{{\operatorname{SU}}}
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
+\newcommand{\Pin}[0]{{\operatorname{Pin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\CH}[0]{{\operatorname{CH}}}
@@ -157,6 +164,7 @@
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
 \newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Vark}[0]{{\mathsf{Var}_{/k} }}
 \newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
@@ -173,6 +181,7 @@
 \newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\gmod}[0]{{\mathsf{G}\dash\mathsf{Mod}}}
 \newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
@@ -213,6 +222,7 @@
 \newcommand{\Perv}[0]{\mathsf{Perv}}
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Fieldsover}[1]{{ \mathsf{Fields}_{#1} }}
 
 \newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
@@ -317,6 +327,7 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\liel}[0]{{\mathfrak{l}}}
 \newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
@@ -410,6 +421,8 @@
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
+\newcommand{\fd}[0]{{\operatorname{fd}}}
+\newcommand{\semisimple}[0]{{\operatorname{ss}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -428,7 +441,6 @@
 \newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
-\newcommand{\rad}[0]{{\operatorname{rad}}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -444,8 +456,6 @@
 \newcommand{\sgn}[0]{\operatorname{sgn}}
 \newcommand{\sign}[0]{\operatorname{sign}}
 \newcommand{\spanof}[0]{{\operatorname{span}}}
-\newcommand{\spec}[0]{\operatorname{Spec}}
-\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\Jac}[0]{\operatorname{Jac}}
 \newcommand{\stab}[0]{{\operatorname{Stab}}}
 \newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
@@ -485,6 +495,7 @@
 \newcommand{\Div}[0]{\operatorname{Div}}
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
+\newcommand{\Sq}[0]{\operatorname{Sq}}
 \renewcommand{\hat}[1]{\widehat{#1}}
 \newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
@@ -507,6 +518,8 @@
 \newcommand{\increasesto}[0]{\nearrow}
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
+\DeclareMathOperator{\crys}{crys}
+\DeclareMathOperator{\rad}{rad}
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
@@ -516,7 +529,7 @@
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
 \DeclareMathOperator{\Hom}{Hom}
-\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\proj}{proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
 \DeclareMathOperator{\Bun}{Bun}
@@ -618,15 +631,28 @@
 \newcommand{\ind}[0]{\operatorname{ind}}
 \newcommand{\Ind}[0]{\operatorname{Ind}}
 \newcommand{\Coind}[0]{\operatorname{coInd}}
+\newcommand{\Frob}[0]{\operatorname{Frob}}
 
 \newcommand{\submfds}{\operatorname{SubMfds}}
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
-\newcommand\B{{ \mathsf{B}}}
-\newcommand\D{{ \mathsf{D}}}
-\newcommand\Rd{{ \mathsf{R}}}
-\newcommand\Ld{{ \mathsf{R}}}
+\newcommand{\B}[0]{{ \mathsf{B}}}
+\newcommand{\D}[0]{{ \mathsf{D}}}
+\newcommand{\Rd}[0]{{ \mathsf{R}}}
+\newcommand{\Ld}[0]{{ \mathsf{R}}}
+\newcommand{\Qbar}[0]{{ \bar{ \mathbb{Q} } }}
+\newcommand{\invert}[1]{{ \left[ { \scriptstyle \frac{1}{#1} } \right] }}
+\newcommand{\Ag}[0]{{\mathcal{A}_g}}
+\newcommand{\pcomplete}[0]{{ {}^{ \wedge }_{p} }}
+
+\newcommand{\matt}[4]{{
+\begin{bmatrix}
+#1 & #2 
+\\
+#3 & #4
+\end{bmatrix}
+}}
 
 # Wednesday, January 13
 
@@ -9246,7 +9272,6 @@ We'll do 7.8 next time.
 :::
 
 
-
 # Friday, April 23
 
 ## Applications Chevalley-Eilenberg Complex
@@ -9410,7 +9435,7 @@ Recall that $H^1$ is related to derivations.
 :::
 
 :::{.corollary title="?"}
-Let $\lieg \in \liegmod(\ss)$ with $\dim_k \lieg < \infty$, then
+Let $\lieg \in \liegmod(\semisimple)$ with $\dim_k \lieg < \infty$, then
 \[
 H^1(\lieg;k ) = 0 = H_1(\lieg; k) 
 .\]
@@ -9423,7 +9448,7 @@ We also had $\Der(\lieg, k) \surjects H^1(\lieg; k)$ (it was outer derivations),
 :::
 
 :::{.theorem title="?"}
-Let $\lieg \in \liealg(\ss)$ with $\dim_k \lieg < \infty$ and $\ch(k) = 0$.
+Let $\lieg \in \liealg(\semisimple)$ with $\dim_k \lieg < \infty$ and $\ch(k) = 0$.
 Then if $k\neq M$ is a simple $\lieg\dash$module (where simple means no proper nontrivial $\lieg\dash$invariant submodules), then
 \[
 H^i(\lieg; M) = 0 = H_i(\lieg; M)
@@ -9436,35 +9461,297 @@ This uses the Casimir operator for $M$, which is in the center $Z(\Ug)$.
 :::
 
 
+# Section 7.6 (Wednesday, April 28)
+
+:::{.remark}
+Today: filling in some previous things, including proofs for Whitehead's second lemma and Levi's theorem.
+:::
+
+:::{.definition title="?"}
+Let $\lieg\in\liealg_{/k}$ for $k\in \CRing$ and let $M\in \kmod$ viewed as a trivial $\lieg\dash$ module.
+An **extension of $\lieg$ by $M$** is a SES in $\liegmod$ of the following form:
+\[
+0 \to M \mapsvia{\iota} E \mapsvia{\pi} \lieg \to 0
+.\]
+:::
+
+:::{.remark}
+Given such an extension, thinking of $M \subset E$, $M$ becomes a $\lieg\dash$module in a natural way: given $m\in M$ and $x\in\lieg$, choose $\tilde x\in E$ such that $\pi(\tilde x) = x$ and set
+\[
+x\cdot m \da [\tilde x, m]_E \in M \normal E
+,\]
+noting that $M$ is the kernel of a morphism and thus an ideal.
+Is this well-defined?
+If $\tilde x'\in \pi\inv(E)$, we have \( \pi(\tilde x' - \tilde x) = 0 \) which implies $\tilde x' -\tilde x\in \ker \pi = M$ by exactness.
+So we can write $\tilde x' = m' + \tilde x$ for some $m'\in M$, and since $M$ is abelian and its elements bracket to zero, we have
+\[
+[\tilde x ', m] = [m' + \tilde x, m] = [\tilde x, m]
+.\]
+:::
+
+:::{.remark}
+The extension problem: given a $\lieg\dash$module $M$ viewed as an abelian Lie algebra, how many (equivalence classes of) extensions of $\lieg$ by $M$ are there for which the induced action above agrees with the given action?
+Here we view equivalence as existence of an isomorphism making the following diagram commute:
+
+\begin{tikzcd}
+	0 && M && E && \lieg && 0 \\
+	\\
+	&&&& {E'}
+	\arrow["\sim", dashed, from=1-5, to=3-5]
+	\arrow["{\iota'}"', from=1-3, to=3-5]
+	\arrow[from=1-1, to=1-3]
+	\arrow["\iota", from=1-3, to=1-5]
+	\arrow["\pi", from=1-5, to=1-7]
+	\arrow[from=1-7, to=1-9]
+	\arrow["{\pi'}"', from=3-5, to=1-7]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCIwIl0sWzIsMCwiTSJdLFs0LDAsIkUiXSxbNiwwLCJcXGxpZWciXSxbOCwwLCIwIl0sWzQsMiwiRSciXSxbMiw1LCJcXHNpbSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFsxLDUsIlxcaW90YSciLDJdLFswLDFdLFsxLDIsIlxcaW90YSJdLFsyLDMsIlxccGkiXSxbMyw0XSxbNSwzLCJcXHBpJyIsMl1d)
+
+Write $\Ext_{\liealg}(\lieg, M)$ for the set of equivalence classes of such extensions.
+:::
+
+:::{.remark}
+We can form semidirect products $M\semidirect \lieg$ of Lie algebras in the following way: 
+start with the \(k\dash\)module $M \cross \lieg$ with bracket
+\[
+[(m, x), (n, y)] \da (x\cdot n - y\cdot m, [xy]) && m,n\in M,\,\, x,y\in\lieg
+.\]
+One checks that this is anticommutative and satisfies the Jacobi identity.
+This is a Lie algebra containing $M \cross 0$ as an abelian ideal and $0 \cross \lieg$ as a subalgebra, which fits into a SES
+\[
+0 \to M \mapsvia{\iota}  M\semidirect \lieg \mapsvia{\pi}  \lieg \to 0
+.\]
+Moreover, the naturally induced action described previously agrees with this semidirect action.
+Identifying elements with their inclusions, we have
+\[
+[(0, x), (m, 0)] = (x\cdot m - 0, [0, 0] ) = (x\cdot m, 0)
+.\]
+Thus there is always at least one extension, called the **split extension**.
+There is a classification:
+:::
+
+:::{.theorem title="Classification of Extensions"}
+Let $M\in \liegmod$, then there is a bijection of sets
+\[
+\Ext(\lieg, M)
+&\mapstofrom
+H^2(\lieg; M)
+\]
+:::
+
+:::{.remark}
+Note that the map $\pi$ makes $M$ into an $E\dash$module and makes $M$ into a trivial $M\dash$module.
+See Weibel for a functorial proof, using the same correspondence between $\Ext_R^1(A, B)$ and extensions of $A$ by $B$.
+Note that we have an algebra, an ideal, and its quotient, which is precisely the setup for the LHS spectral sequence for cohomology with coefficients in $M$.
+There was an associated 5-term exact sequence, which contains a **classifying map**
+\[
+\Hom_\liegmod(M, M) &\mapsvia{d^2} \Hom_{\liegmod}(\lieg, M) \\
+\one_M &\mapsto d^2(\one_M)
+.\]
+One checks that this only depends on the equivalence class of extensions, and turns out to be a bijection.
+Weibel's proof uses some facts about free Lie algebras that we haven't discussed yet, so we'll instead do a slightly more down-to-earth proof from Knapp's book using the Koszul complex.
+:::
+
+:::{.proof title="of classification theorem"}
+We'll need to assume $k\in \Field$.
+Choose a splitting of the following SES as a $k\dash$vector space:
+\begin{tikzcd}
+	0 && M && E && \lieg && 0
+	\arrow[from=1-1, to=1-3]
+	\arrow["\iota", from=1-3, to=1-5]
+	\arrow["\pi", shift left=2, from=1-5, to=1-7]
+	\arrow[from=1-7, to=1-9]
+	\arrow["j", shift left=3, dotted, from=1-7, to=1-5]
+\end{tikzcd}
 
 
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCIwIl0sWzIsMCwiTSJdLFs0LDAsIkUiXSxbNiwwLCJcXGxpZWciXSxbOCwwLCIwIl0sWzAsMV0sWzEsMiwiXFxpb3RhIl0sWzIsMywiXFxwaSIsMCx7Im9mZnNldCI6LTJ9XSxbMyw0XSxbMywyLCJqIiwwLHsib2Zmc2V0IjotMywic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZG90dGVkIn19fV1d)
+
+So here $\pi \circ j = \one_\lieg$.
+Note that we can use $j(x)$ for our $\tilde x$.
+From section 7.7, we can characterize $H^2(\lieg; M)$ is a subquotient of $\Hom_k\qty{ \Extalg^2 \lieg, M}$, recalling that we canceled a $\Ug$ when taking the resolution 
+\[
+\Ug \tensor \Extalg^* \lieg \surjectsvia{\eps} k
+\]
+and applying $\Hom_k(\wait, M)$.
+Specifically, it is $\ker \delta / \im \delta$ for the coboundary $\delta$ from corollary 7.7.3.
+Recall that we define a hom from an $n$th piece of an exterior algebra is equivalence to an alternating $n\dash$argument function, and define $w\in \Hom_k\qty{ \Extalg^2 \lieg, M }$ by 
+\[
+w(x, y) = [jx, hy]_E - j\qty{ [xy]_M } \in E
+,\]
+where we'll omit parentheses and bracket subscripts immediately.
+We want to detect if this is in $M$, so use that $M = \ker \pi$ and check
+\[
+\pi ([jx, jy] - j[xy]) 
+&= [\pi j x, \pi j y] - \pi j[xy] \\ 
+&= [xy] - [xy] \\
+&= 0
+,\]
+and so $w(x, y) \in M$ as needed.
+We now want to compute $\delta w$ to compute the action $x\cdot m \da [\tilde x, m]_M$, so take $\tilde x \da j(x)$.
+Use that $\delta$ has graded degree $+1$, so
+\[
+\delta w(x,y,z) 
+&= x\cdot w(y,z) - y\cdot w(x, z) + z\cdot w(x, y) 
+\\
+&\quad -w([xy], z) + w([xz], y) - w([yz], x) 
+\\ \\
+&= 
+[jx, [jy, jz]] - [jz, j[yz]]
+\\
+&\quad - [jy, [jz, jz]] + [jy, j[xz]] \\
+&\quad + [jz, [jx, jy]] - [jz, j[xy]] \\
+&\quad - [j[xy], jz] + j [[xy], z] \\
+&\quad + [j[xz], jy] - j [[xz], y] \\
+&\quad - [j[yz], jx] + j [[yz], x]
+.\]
+
+There is a lot of cancellation here!
+Use the Jacobi identity for terms in red, and sign rules to cancel the rest:
+
+![image_2021-04-28-10-01-22](figures/image_2021-04-28-10-01-22.png)
+
+So $w\in \ker \delta$.
+
+> To be continued.
+
+:::
+
+:::{.remark}
+One should check that choices differ by coboundaries, along with a few other things that we're eliding.
+:::
 
 
+# Friday, April 30
+
+## Proof Continued
+
+:::{.remark}
+Last time: we were proving the bijection between $H^2(\lieg; M)$ and extensions of $\lieg$ by $M$ up to equivalence.
+:::
+
+:::{.proof title="of the classification theorem, continued"}
+We chose a vector space splitting \( \lieg \mapsvia{j} E \) and used the Cartan-Eilenberg resolution to construct a 2-cocycle $w\in \Hom_{\kmod}(\Extalg^2 \lieg, M)$ given by 
+\[
+w(x, y) \da [jx, jy] - j[x, y] && x,y\lieg
+,\]
+and we saw that $d(w) = 0$.
+Say we change $j$ to $j': \lieg \to E$ to $j': \lieg \to E$ with $\pi j' = \one_{\lieg}$, and let $w'$ be the corresponding 2-cocycle.
+Letting \( \alpha \da j-j' \), then \( \pi \circ \alpha = 0 \) by linearity and so \( \alpha : \lieg\to \ker \pi = M \) and thus \( \alpha\in\Hom_{\kmod}(\Extalg^1 \lieg, M) \).
+We then have 
+\[
+\delta \alpha (x, y)
+&= x \alpha(y) - y \alpha(x) - \alpha([xy]) \\
+&= [j'x, j'y - jy] - [jy, j'x - jx]-j'[xy] + j[xy] \\ 
+&= \qty{ [j'x, j'y] - j'[xy] } - [j'x, jy] + [j'x, jy] - \qty{[jx, jy] - j[xy] } \\
+&= \qty{ [j'x, j'y] - j'[xy] } - \qty{[jx, jy] - j[xy] } \\
+&= w'(x, y) - w(x, y)
+,\]
+so \( \delta\alpha = w' -w\).
+So their difference is a coboundary, yielding $w = w' \in H^2(\lieg, M)$, making this construction independent of the choice of $j$.
 
 
+:::{.exercise title="?"}
+Show that equivalent extensions also lead to the same element in $H^2$.
+:::
 
+This yields a well-defined map 
+\[
+\ts{ \text{Extensions of $\lieg$ by $M$ } } &\to H^2(\lieg; M) \\
+(0\to M\to E\to \lieg\to 0) &\mapsto w
+.\]
+Conversely, given a 2-cocycle $\tilde w\in\Hom_{\kmod}(\Extalg^2 \lieg, M)$ with $M$ abelian, define
 
+- $E \da M \oplus \lieg \in \Vect_k$
+- A bracket using the following rules (identifying $M, \lieg$ with their images in $E$):
+  - $[m, n]_E \da 0$
+  - $[x, m]_E \da x\cdot m = -[m, x]_E$
+    - Note that this guarantees that the actions agree.
+  - $[x, y]_E \da \tilde w(x, y) + [x, y]_\lieg$
 
+One can check that the last definition is anticommutative since $w$ was alternating, and further that this makes $E$ into a Lie algebra that fits into a SES of the desired form with canonical maps $i, \pi, j$.
+The cocycle $w$ coming from this extension is given by 
+\[ 
+w(x, y) 
+&= [x, y]_E - [x, y]_\lieg \\
+&= \tilde w(x, y) + [x, y]_\lieg - [x, y]_{\lieg} \\
+&= \tilde w(x, y)
+\]
+where here $j$ is a direct sum inclusions that we'll suppress.
+So $H^2 \to \Ext/\sim \to H^2$ is the identity.
+One can similarly check that $\Ext/\sim \to H^2 \to \Ext/\sim$ is also the identity, since it produces an equivalent extension.
+So this defines a bijection of sets.
+:::
 
+:::{.remark}
+This was known much earlier for group cohomology: if $G \in \Grp, A\in \gmod$, there is a bijection
+\[
+\ts{ 0\to A\to E \mapsvia{\pi} G \to 1 } 
+\da 
+\ts{ \text{Equivalence classes of extensions of $G$ by $A$ } }
+&\to 
+H^2(G; A) 
+,\]
+where $G$ may not be abelian, and one acts by conjugation instead.
+Analogy: bracketing is like the differential of conjugation.
+:::
 
+## Proof Backlog from Monday
 
+:::{.remark}
+Recall Whitehead's Lemma 2[^weibel_whitehead_cor]
+for $\lieg$ finite-dimensional and semisimple over $\ch(k) = 0$ and $M\in \liegmod^\fd$, then $H^2(\lieg; M) = 0$.
 
+[^weibel_whitehead_cor]: 
+Weibel corollary 7.8.12
 
+:::
 
+:::{.proof title="?"}
+By Weyl's theorem, $M$ is a direct sum of simple $\lieg\dash$modules and $H^*$ commutes with direct sums, so it suffices to show this when $M$ is simple.
+By Weibel theorem 7.8.9 (structure of semisimple Lie algebras using the Casimir operator) we have $H^n(\lieg; M) = 0$ for $M\neq k$ and for all $n$, so we reduce to showing this for $M=k$.
+By the classification theorem, we need to show that every extension of the following form splits:
+\[
+0\to k\to E \mapsvia{\pi} \lieg \to 0
+,\]
+where we view $k \in \liealg^\ab$.
+We proceed in an unanticipated way by reducing Lie algebra maps to $\lieg\dash$module maps.
+\
 
+First note that $k \subset Z\lieg$, since \( E \cong k \oplus \lieg \in \Vect_k \), so there is an embedding \( \lieg \injects E \) where say $x\mapsto \tilde x$.
+For $c\in k$ and $x\in \lieg$, we have $[\tilde x, c] \da x\cdot c = 0$ since $k \in \liealg^\ab$, and by linearity this will show that $k$ commutes with everything.
+We now make $E$ into a $\lieg\dash$module by defining $x\cdot e \da [\tilde x, e]$ for $x\in \lieg, e\in E$.
+If $\tilde x'$ is another other representative in $E$ of $x$, then noting that $k \in \ker \pi$ we can write $\tilde x' = [\tilde x + c, e] = [\tilde x, e]$ using that $c\in Z(E)$.
+This action makes $\pi$ into a $\lieg\dash$module map, and we have
+\[
+\pi(x\cdot e) 
+&\da \pi( [\tilde x, e] ) \\
+&= [\pi(\tilde x), \pi(e) ] && \pi \in \liealg(\lieg, E) \\
+&\da [x, \pi(e)] \\
+&\da x\cdot \pi(e) \in \lieg
+,\]
+since this is acting via the adjoint action.
+By Weyl's theorem, both $E$ and $\lieg$ decompose into direct sums of simple $\lieg\dash$modules.
+Using that $j$ is injective and a $\lieg\dash$module map, it must send simple submodules of $\lieg$ to simple submodules of $E$, using that maps to (from?) simple modules are either zero or isomorphisms and a dimension count.
+One can check (easily!) that there is a $\lieg\dash$module map \( \sigma: \lieg \injects E \) such that $E \cong K \oplus \sigma(\lieg) \in \liegmod$.
+So choose $\tilde x \da \sigma(x)$, then $\sigma \in \liealg(\lieg, E)$, and so
+\[
+\sigma( [x, y] )
+&\da x \cdot \sigma(y) \\
+&= [\tilde x, \sigma(y) ] \\
+&= [\sigma(x), \sigma(y)]
+,\]
+making $\sigma(\lieg) \leq E$ a Lie-subalgebra.
+Since $\sigma(\lieg) \cong \lieg$, this is precisely a semidirect product and we obtain $E \cong k \semidirect \lieg$, and the sequence splits as desired.
+:::
 
-
-
-
-
-
-
+:::{.remark}
+Next time: Levi's theorem.
+:::
 
 # Appendix: Extra Definitions
 
-:::{.definition title="Acyclic"}
-A chain complex $C$ is **acyclic** if and only if $H_*(C) = 0$.
-:::
 
 
 # Extra References
@@ -9472,6 +9759,10 @@ A chain complex $C$ is **acyclic** if and only if $H_*(C) = 0$.
 - <https://www.math.wisc.edu/~csimpson6/notes/2020_spring_homological_algebra/notes.pdf>
 
 # Useful Facts
+
+:::{.definition title="Acyclic"}
+A chain complex $C$ is **acyclic** if and only if $H_*(C) = 0$.
+:::
 
 
 :::{.proposition title="Algebra Facts"}

@@ -36,7 +36,7 @@
 	- [[Bousfield-Kan spectral sequence]]
 	- [[Adams spectral sequence]]
 - [K theory](K%20theory)
-	- [Algebraic k theory](zettelkasten/Algebraic%20k%20theory.md)
+	- [Algebraic k theory](Algebraic%20K%20theory.md)
 	- [Topological K theory](Topological%20K%20theory)
 	- [[Bott periodicity]]
 

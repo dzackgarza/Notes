@@ -27,6 +27,7 @@
 \newcommand{\BB}[0]{{\mathbb{B}}}
 \newcommand{\CP}[0]{{\mathbb{CP}}}
 \newcommand{\DD}[0]{{\mathbb{D}}}
+\newcommand{\EE}[0]{{\mathbb{E}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
 \newcommand{\fq}[0]{{\mathbb{F}_{q}}}
 \newcommand{\fqr}[0]{{\mathbb{F}_{q^r}}}
@@ -88,8 +89,11 @@
 \newcommand{\Art}[0]{\operatorname{Art}}
 \newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
+\newcommand{\NS}[0]{{\operatorname{NS}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
+\newcommand{\spec}[0]{\operatorname{Spec}}
+\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\maxspec}[0]{{\operatorname{maxSpec}}}
 \newcommand{\Tr}[0]{\operatorname{Tr}}
 \newcommand{\adj}[0]{\operatorname{adj}}
@@ -105,6 +109,7 @@
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\fpqc}[0]{\mathrm{\operatorname{fpqc}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
@@ -142,11 +147,13 @@
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
+\newcommand{\MO}[0]{{\operatorname{MO}}}
 \newcommand{\SU}[0]{{\operatorname{SU}}}
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
+\newcommand{\Pin}[0]{{\operatorname{Pin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\CH}[0]{{\operatorname{CH}}}
@@ -157,6 +164,7 @@
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
 \newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Vark}[0]{{\mathsf{Var}_{/k} }}
 \newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
@@ -173,6 +181,7 @@
 \newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\gmod}[0]{{\mathsf{G}\dash\mathsf{Mod}}}
 \newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
@@ -213,6 +222,7 @@
 \newcommand{\Perv}[0]{\mathsf{Perv}}
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Fieldsover}[1]{{ \mathsf{Fields}_{#1} }}
 
 \newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
@@ -317,6 +327,7 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\liel}[0]{{\mathfrak{l}}}
 \newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
@@ -410,6 +421,8 @@
 \newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
 \newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
+\newcommand{\fd}[0]{{\operatorname{fd}}}
+\newcommand{\semisimple}[0]{{\operatorname{ss}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -428,7 +441,6 @@
 \newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
-\newcommand{\rad}[0]{{\operatorname{rad}}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -444,8 +456,6 @@
 \newcommand{\sgn}[0]{\operatorname{sgn}}
 \newcommand{\sign}[0]{\operatorname{sign}}
 \newcommand{\spanof}[0]{{\operatorname{span}}}
-\newcommand{\spec}[0]{\operatorname{Spec}}
-\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\Jac}[0]{\operatorname{Jac}}
 \newcommand{\stab}[0]{{\operatorname{Stab}}}
 \newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
@@ -485,6 +495,7 @@
 \newcommand{\Div}[0]{\operatorname{Div}}
 \newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
+\newcommand{\Sq}[0]{\operatorname{Sq}}
 \renewcommand{\hat}[1]{\widehat{#1}}
 \newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
@@ -507,6 +518,8 @@
 \newcommand{\increasesto}[0]{\nearrow}
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
+\DeclareMathOperator{\crys}{crys}
+\DeclareMathOperator{\rad}{rad}
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
@@ -516,7 +529,7 @@
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
 \DeclareMathOperator{\Hom}{Hom}
-\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\proj}{proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
 \DeclareMathOperator{\Bun}{Bun}
@@ -618,15 +631,28 @@
 \newcommand{\ind}[0]{\operatorname{ind}}
 \newcommand{\Ind}[0]{\operatorname{Ind}}
 \newcommand{\Coind}[0]{\operatorname{coInd}}
+\newcommand{\Frob}[0]{\operatorname{Frob}}
 
 \newcommand{\submfds}{\operatorname{SubMfds}}
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
-\newcommand\B{{ \mathsf{B}}}
-\newcommand\D{{ \mathsf{D}}}
-\newcommand\Rd{{ \mathsf{R}}}
-\newcommand\Ld{{ \mathsf{R}}}
+\newcommand{\B}[0]{{ \mathsf{B}}}
+\newcommand{\D}[0]{{ \mathsf{D}}}
+\newcommand{\Rd}[0]{{ \mathsf{R}}}
+\newcommand{\Ld}[0]{{ \mathsf{R}}}
+\newcommand{\Qbar}[0]{{ \bar{ \mathbb{Q} } }}
+\newcommand{\invert}[1]{{ \left[ { \scriptstyle \frac{1}{#1} } \right] }}
+\newcommand{\Ag}[0]{{\mathcal{A}_g}}
+\newcommand{\pcomplete}[0]{{ {}^{ \wedge }_{p} }}
+
+\newcommand{\matt}[4]{{
+\begin{bmatrix}
+#1 & #2 
+\\
+#3 & #4
+\end{bmatrix}
+}}
 
 # Tuesday, January 12
 
@@ -7661,5 +7687,326 @@ The question is if this equals
 .\]
 But for example, $x_1 e y_0 = (-1)^{|y_0|} x_1 y_0 e$, and $y_0$ is even.
 Similarly, $x_1 e y_1 e = -x_1 y_1 e^2 = x_1 y_1$.
+:::
+
+
+# Wednesday, April 28
+
+:::{.remark}
+Last time: we defined $\Pin(n) \subseteq \Cl(\RR^n)$ which was generated by $S^1(\RR^n)$.
+These were units because $v^2 = -\norm{v}^2 = -1$, so $v\inv = -v$, and formed a group contained in $\Cl(\RR^n)\units$.
+There is a decomposition $\Cl(V) = \Cl_0(V) \oplus \Cl_1(V)$ with a $\ZZ/2\dash$grading, and we defined 
+\[
+\Spin(V) \da \Pin(V) \intersect \Cl_0(V) = \gens{ vw \st v,w\in S^1(\RR^n) } 
+.\]
+There is a map
+\[
+\Pin(n) &\surjects O(n) \\
+v & \mapsto (u\mapsto vuv\inv) = -R_{v^\perp}
+,\]
+which preserves $V^{\tensor 1} \subset \Cl(V)$, and was reflection about the hyperplane $v^\perp$.
+There is also a SES
+\[
+0 \to \ZZ/2 \to \Spin(n) \mapsvia{\pi}  \SO(n) \to 0
+,\]
+where we used the fact that $\ker \pi \subset Z\Cl(\RR^n)$.
+It turns out that $\Spin(n) = \univcover{ \SO(n) }$, using that $\pi_1( \SO(n), \pt) = \ZZ/2$ and checking that $\pm 1\in \Spin(n)$, yielding a nontrivial kernel.
+:::
+
+:::{.remark}
+This is local, at a single vector space, so we'll now try to globalise this to the tangent space of a manifold.
+:::
+
+:::{.definition title="Clifford Bundle"}
+Let $(V, g)$ be an oriented smooth Riemannian manifold where $g$ is a metric on $TX$.
+Define the **Clifford bundle** of $X$ by 
+\[
+\Cl(X) \da \Cl(T\dual X, g\dual)
+,\]
+where we've used the dual metric $g\dual$ on the cotangent bundle.
+:::
+
+:::{.remark}
+We showed that $\gr \Cl(\RR^n) = \Extalg \RR^n$, and so there is a bundle isomorphism 
+\[
+\Cl(X) \mapsvia{\sim} \Extalg^* T\dual X
+,\]
+but the ring structure is different.
+On the right, we have a way of multiplying sections, namely \( \omega_1 \wedge \omega_2 \), but on the left we have the Clifford multiplication \( \alpha_1 \cdot \alpha_2 \).
+Note that \( \omega^{\wedge 2} = 0 \), but \( \alpha^{\cdot 2} \in \RR \) is some scalar.
+We define \( \omega\cdot \omega= g^*( \omega, \omega) \), so we use the metric fiberwise to define a Clifford multiplication.
+:::
+
+:::{.definition title="The principal oriented frame bundle"}
+Given an oriented bundle with a metric, there is a principal $\SO(n)$ bundle $P \da \OFrame$, the space of orthogonal oriented frames.
+:::
+
+:::{.remark}
+This is principal since any two elements are related by a unique element of $\SO(n)$.
+Recall that we had an *associated bundle* construction, so taking the standard representation $\rho: \SO(n) \to (\RR^n, g)$ where elements act by their transformations (?), there is an oriented bundle $P \fiberprod{\rho} \RR^n$.
+If the bundle is $TX$ with a metric $g$, this yields a distinguished $\SO(n)$ bundle $P\to X$.
+:::
+
+:::{.definition title="Spin Structures"}
+A **spin structure** is a lift $\tilde P$ of $P$ to a principal $\Spin(n)$ bundle.
+:::
+
+:::{.proposition title="Spin iff nontrivial $w_2$"}
+$X$ admits a spin structure iff the second Stiefel--Whitney class $w_2(X) = 0$ in $H^2(X; \ZZ/2)$.
+If $w_2(X) = 0$, then the spin structures are torsors over $H^1(X; \ZZ/2)$.
+:::
+
+:::{.remark}
+Recall that a $G\dash$torsor is a set with a free transitive of $G$.
+For example, the fibers of a principal bundle are torsors.
+Given any two torsors, we can compare them using elements of $G$, but there is no distinguished element.
+For example, $\AA_n$ is a torsor over the vector space $k^n$.
+:::
+
+:::{.proof title="?"}
+Consider transitions for $P\to X$:
+\[
+t_{ij}: U_i \intersect U_j \to \SO(n) \\
+,\]
+where $t_{ij} = t\inv_{ji}$ and the cocycle condition $t_{ij} t_{jk} t_{ki} = 1$ is satisfied.
+We want a lift:
+
+\begin{tikzcd}
+	&& {\ZZ/2 \in Z\Spin(n)} \\
+	\\
+	{U_i \intersect U_j} && {\Spin(n)} \\
+	\\
+	{U_i \intersect U_j} && {\SO(n)}
+	\arrow["\one", from=3-1, to=5-1]
+	\arrow["{t_{ij}}", from=5-1, to=5-3]
+	\arrow["{\tilde t_{ij}}", from=3-1, to=3-3]
+	\arrow["{2:1}", from=3-3, to=5-3]
+	\arrow[hook, from=1-3, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwyLCJVX2kgXFxpbnRlcnNlY3QgVV9qIl0sWzIsMiwiXFxTcGluKG4pIl0sWzIsNCwiXFxTTyhuKSJdLFsyLDAsIlxcWlovMiBcXGluIFpcXFNwaW4obikiXSxbMCw0LCJVX2kgXFxpbnRlcnNlY3QgVV9qIl0sWzAsNCwiXFxvbmUiXSxbNCwyLCJ0X3tpan0iXSxbMCwxLCJcXHRpbGRlIHRfe2lqfSJdLFsxLDIsIjI6MSJdLFszLDEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d)
+
+We can always lift to *some* $\tilde t_{ij}$ using the path-lifting property of covers if $U_i \intersect U_j$ is contractible, using that $\ZZ/2$ is discrete.
+We can arrange $\tilde t_{ij} = \tilde t_{ji}\inv$ since $U_i \intersect U_j = U_j \intersect U_i$, but we may not have the cocycle condition on the lift.
+We have $t_{ij} t_{jk} t_{ki} = 1$, so $\tilde t_{ij} \tilde t_{jk} \tilde t_{ki} \in \ker (\Spin(n) \to \SO(n)) = \ts{ \pm 1 }$ using that everything in sight needs to be a group morphism.
+So define
+\[
+\tilde t_{ijk} \da ( \tilde t_{ij} \tilde t_{jk} \tilde t_{ki} )_{i,j,k} \in \Cc^2_{\mathcal{U}}(X, \constantsheaf{\ZZ/2})
+.\]
+The claim is that $\bd^2( \tilde t_{ijk}) = 0$, but it turns out that regardless of choice of lift we obtain
+\[
+\bd^2(\tilde t_{ijk}) = \tilde t_{ijk} \tilde t_{ikl}\inv \tilde t_{ijl} \tilde t_{ijk}\inv = 0 \implies [ \tilde t_{ijk} ] \in \Hc^2(X, \constantsheaf{\ZZ/2})
+.\]
+
+Is this class well-defined?
+Consider replacing $\tilde t_{ij}$ with $-\tilde t_{ij}$.
+In general, we have
+\[
+i, j\in \ts{ a,b,c } \implies \tilde t_{abc} \mapsto -\tilde t_{abc}
+,\]
+and so this is a Čech coboundary in $\bd^1(1, \cdots, 1, -1, 1, \cdots, 1)$ where the $-1$ occurs in the $t_{ij}$ coordinate.
+Thus $\tilde t_{ijk}$ is well-defined moduli $\bd^1 C_{\mathcal{U}}^1(X, \constantsheaf{\ZZ/2})$.
+\
+
+Note that $w_2(X)$ was produced from the pair $(X, g)$, but the space of metrics is connected and thus $w_2(X)$ depends only on $X$.
+Suppose $w_2(X) = 0$, then $[ \tilde t_{ijk} ] = 0$ which implies that there is some $(s_{ij})$ with $\bd^1 (s_{ij}) = (\tilde t_{ijk})$.
+So replace each $\tilde t_{ij}$ with $\tilde{ \tilde t}_{ij} \da s_{ij} \tilde t_{ij}$ is a new lift which satisfies the cocycle condition.
+Thus they define the transition functions of a principal $\Spin(n)$ bundle lifting $P \to X$.
+
+\
+To see the claim about torsors, given any $\ell_{ij} \in \ker \bd^1$, note that any $\tilde{ \tilde t}_{ij} \ell_{ij}$ also satisfies the cocycle condition.
+There is a map
+\[
+\ts{ \text{Spin structures} } &\from \ker \bd^1 \\
+\tilde{\tilde t}_{ij} \ell_{ij} &\mapsfrom \ell_{ij}
+,\]
+which is a torsor because we needed to start with a given lift $\tilde{\tilde t}_{ij}$.
+Then $\tilde P_1 \cong \tilde P_2$ iff there exists an $(m_i) \in \Cc^0_{\mathcal{U}}(X, \constantsheaf{\ZZ/2})$ such that $(\ell_{ij})_1 = (\ell_{ij})_2 + \bd^0 (m_i)$, which are different trivializations of the same bundle. 
+:::
+
+:::{.remark}
+This is a nice example to get a hang of the use and importance of Čech cohomology.
+We then use the isomorphism $\Hc \to H_{\sing}$.
+:::
+
+:::{.theorem title="?"}
+Assume $n \da \dim V$ is even, then $\Cl(V)$ has a unique nontrivial irreducible finite dimensional complex representation $S$ of dimension $\dim S = 2^{n/2}$, the **spin representation**.
+:::
+
+:::{.remark}
+It turns out that $\Cl(V) \tensor_\RR \CC \cong \Endo(S)$.
+The left-hand side contains $\Spin(n)$, so given $\rho: \Cl(V) \to \Endo(S)$ a representation (i.e. a ring homomorphism) in matrices, we can restrict $\rho$ to $\Spin(n)$ to get \( \rho \ro{}{\Spin(n)}: \Spin(n) \to \GL(S) \).
+Next time: spin representations.
+Spinor bundle will be sections of associated bundle of the Clifford bundle.
+:::
+
+
+# Friday, April 30
+
+:::{.remark}
+Last time: we defined $\Cl(V, \cdot) \da \bigoplus_n V^{\tensor n} / \gens{ v\tensor v = -\norm{v}^2 1 }$ and $\Pin(V) \da \gens{ v \st \norm{v} = 1 } \subseteq \Cl(V)$.
+There is a $\ZZ/2$ grading $\Cl(V) = \Cl_0(V) \oplus \Cl_1(V)$ where $\Cl_0(V)$ is the image of even tensors and $\Cl_1(V)$ is the image of odd tensors.
+We also had 
+\[
+\Spin(V) \da \Pin(V) \intersect \Cl_0(V) = \gens{ v\cdot w \st v,w \in V, \, \norm{v} = \norm{w} = 1 }
+.\]
+There was a map
+\[
+\Pin(V) &\to O(V) \\
+v &\mapsto -R_v
+,\]
+where $R_v$ was reflection about $v^\perp$, where we identified this as an action on $V^{\tensor 1} \subset \Cl(V)$ where $u\to vuv\inv$.
+For any Riemannian manifold $(X, g)$, we could define the Clifford bundle $\Cl(X) = \Cl(T\dual X, g\dual)$ to globalise this from vector spaces to bundles with metrics.
+We defined a spin structure on $X$ as any lift of the principal $\SO(n)$ bundle over $(T\dual X, g)$ (namely $\Frame(X)$) to a $\Spin(n)$ bundle.
+:::
+
+:::{.warnings}
+Each fiber is a metric space, so what happens if you just try to define \
+\[
+Y \da \Disjoint_{x\in X} \gens{ v \st \norm{v}^2 = 1,\, v\in T_x\dual X }
+.\]
+This seems to be isomorphic to a spin structure, but we do not have a distinguished action of any *fixed* group $\Spin(n)$.
+We would have to choose isomorphisms to the standard spin group at each fiber, but the isomorphisms are not unique -- there is ambiguity up to the entire spin group.
+So this does not define a spin structure.
+:::
+
+:::{.remark}
+We showed that there exists a spin structure iff some cohomology class $w_2(K) \in H^2(X; \ZZ/2)$ vanishes.
+:::
+
+:::{.theorem title="?"}
+If $\dim_k V$ is even, there is a unique finite-dimensional complex irreducible $\Cl(V)$ representation of dimension $2^{n/2}$.
+If $\dim_k V$ is odd, there are two complex conjugate representations of dimension $2^{\floor{n/2}}$.
+:::
+
+:::{.example title="?"}
+Consider $\Cl(\RR^2) \cong \HH$.
+There is an irreducible complex representation of dimension 2:
+\[
+1 &\mapsto \matt 1 0 0 1 \\
+i &\mapsto \sigma_1 \da \matt 0 i i 0 \\
+j &\mapsto \sigma_2 \da \matt i 0 0 {-i} \\
+k &\mapsto \sigma_3 \da \matt 0 1 {-1} 0
+.\]
+The \( \sigma_i \) are sometimes referred to as **Pauli matrices**.
+:::
+
+:::{.example title="?"}
+Consider $\Cl(\RR^4)$.
+By the theorem, there is a unique complex representation of $2^{4/2} = 2^2 = 4$, although the 4 here matching the dimension of $\RR^4$ is coincidental.
+We'd like to find an isomorphism 
+\[
+\Cl(\RR^4) \mapsvia{ \sim} \Endo( (\CC^2)^{\tensor 2} ) \cong \Endo(\CC^4) = \Mat(4\times 4; \CC)
+.\]
+Note that $\Cl(\RR^4) \mapsvia{\sim} \Endo( (\CC^2)^{\tensor 3})$, which is why the dimensions multiply.
+We can write 
+\[
+\Cl(\RR^4) = { \RR \gens{ e_1, e_2, e_3 ,e_4 } \over e_i e_j + e_j e_i = 2\delta_{ij} }
+.\]
+So define a map
+\[
+e_1 &\mapsto \gamma_1 \da 1\tensor \sigma_1 \\
+e_2 &\mapsto \gamma_2 \da 1\tensor \sigma_2 \\
+e_3 &\mapsto \gamma_3 \da \sigma_1 \tensor i \sigma_3 \\
+e_4 &\mapsto \gamma_4 \da \sigma_2 \tensor i \sigma_3 
+.\]
+The matrices appearing here are called the **Dirac matrices**.
+
+
+:::{.exercise title="?"}
+Determine a similar map for $\Cl(\RR^6)$ continuing this pattern.
+:::
+
+We can check that this is a representation.
+Note that we can tensor matrices in a simple way:
+
+\begin{tikzcd}
+	& {e_1} & {e_2} && {} & {f_1} & {f_2} \\
+	{e_1} & a & b && {f_1} & e & f \\
+	{e_2} & c & d && {f_2} & g & h
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMTcsWzAsMSwiZV8xIl0sWzAsMiwiZV8yIl0sWzEsMCwiZV8xIl0sWzIsMCwiZV8yIl0sWzEsMSwiYSJdLFsyLDEsImIiXSxbMSwyLCJjIl0sWzIsMiwiZCJdLFs0LDBdLFs1LDAsImZfMSJdLFs2LDAsImZfMiJdLFs0LDEsImZfMSJdLFs0LDIsImZfMiJdLFs1LDEsImUiXSxbNiwxLCJmIl0sWzUsMiwiZyJdLFs2LDIsImgiXV0=)
+
+Checking $e_2 \cdot e_2 = -1$, we have 
+
+\[
+(1 \tensor \sigma_2) \cdot (1 \tensor \sigma_2) &= ? \\
+1_2 \tensor \sigma_2^2 &= -I_2 \oplus I_2 \\
+\gamma_2 \gamma_3 &= - \gamma_3 \gamma_2
+.\]
+
+> Todo: messed up!
+
+One can similarly check
+\[
+(1 \tensor \sigma_2 ) \cdot (\sigma_1 \tensor i \sigma_3) = - ( \sigma_1 \tensor i \sigma_2) (1\tensor \sigma_2)
+.\]
+:::
+
+:::{.remark}
+We thus have $\Cl(\RR^4) \actson \CC^4$ by sending $e_i \mapsto \delta_i$, the Dirac matrices. Using that $\Pin(4) \intersect \Cl(\RR^4) = \Spin(4) \subseteq \Cl(\RR^4)$, we can a spin representation, but this may no longer be irreducible.
+In fact, as a $\Spin(4)$ representation this splits into two irreducible representations.
+We know that $\Spin(4) \subseteq \Cl_0(\RR^4) = \Cl(\RR^3)$ which has two complex conjugate irreducible representations.
+The key is to define an element $\omega_\CC \in \Cl(V) \tensor_\RR \CC$ with $\omega_\CC^2 = 1$, which yields a decomposition of $\SS = \SS^+ \oplus \SS^-$ as the $\pm 1$ eigenspaces of the action.
+Here \( \omega_C \da -e_1 e_2 e_3 e_4 \mapsto \gamma_5 \).
+One can define $\gamma_5 \da \im(\omega_\CC) = - \gamma_1 \gamma_2 \gamma_3 \gamma_4 = - \sigma_3 \tensor \sigma_3$ and one obtains the matrix
+\[
+-\sigma_3 \tensor \sigma_3 = 
+\begin{bmatrix}
+0 & 0 & 0 & -1 
+\\
+0 &  0& 1 & 0
+\\
+0 &  1& 0 & 0 
+\\
+-1 & 0 & 0 & 0
+\end{bmatrix}
+.\]
+One can check that \( \gamma_5 \) anticommutes with the \(\delta_i \) for $1\leq i \leq 4$, and thus commutes with $\Cl_0(\RR^4)$.
+We can write $\SS^+$, the positive 1 eigenspace of \( \gamma_5 \), as \( \CC(s_1 - s_4 ) \oplus \CC(s_1 + s_2) \).
+So we have $\Spin(4) = \Cl(\RR^4) \actson \CC^2 \oplus \CC^2 = \SS$, which splits into $\gamma_5\dash$eigenspaces $\SS^+ \oplus \SS^-$, the **positive and negative spinors**.
+This means that \( \gamma_5 \) commutes with the image of $\Spin(4) \injects \GL( \CC^2 \oplus \CC^2)$.
+:::
+
+:::{.fact}
+If the action commutes with everything in the representation, the representation splits. (??? missed)
+:::
+
+:::{.remark}
+Let $g\in \Spin(4)$, and $v^+ \in \SS^+ \subseteq \SS$.
+Question: is it true that $g\cdot v^+ \in \SS^+$?
+If so, this yields a subrepresentation.
+If so, \( \gamma_5 v^+ = v^+ \) since we're in the $+1$ eigenspace, and on the other hand, $g\cdot v^+ = g \cdot \gamma_5 v^+ = g \omega_\CC \cdot v^+$ where the last identification comes from the map \( \gamma_5 \mapsto \omega_\CC \), and this is equal to \( \omega_\CC g \cdot v^+ \) using commutativity.
+So $g\cdot v^+$ is in the $+1$ eigenspace of \( \gamma_5 \).
+:::
+
+:::{.remark}
+Now take \( \gamma_i \).
+This actually switches spinors: by anticommutativity of the \( \gamma_i \) with \( \gamma_5 \), we have
+\[
+\gamma_i \cdot v^+ = \gamma_i \gamma_5 v^+ = - \gamma_5 \gamma_i v^+
+,\]
+which means \( \gamma_i v^+ \) is in the $-1$ eigenspace for \( \gamma_5 \), i.e. \( \gamma_i v^+ \in \SS^- \).
+:::
+
+:::{.remark}
+Suppose one has a spin structure and $\tilde P \to X$ is a principal $\Spin(n)$ bundle.
+There are bundles over this of the form $\rho: \Spin(n) \to \GL(\SS^\pm)$, yielding the **spinor bundle** 
+\[
+\tilde P \fiberprod{\Spin(n)} \SS = \SS_x^+ \oplus \SS_x^-
+.\]
+:::
+
+:::{.remark}
+Let $G \mapsvia{\rho} \GL(V)$ be any representation.
+If $\phi \in \Endo(V)$ commutes with $\rho(G)$, then the eigenspaces of $\phi$ are subrepresentations.
+In other words, $G\actson V = \bigoplus _{i=1}^n V_{\lambda_i}$, then $G\actson V_{\lambda_i}$ is a subrepresentation, using that
+\[
+\phi(v) = \lambda v \implies gv = g\phi(\lambda \inv v) = \phi \rho(g) \lambda\inv v 
+,\]
+which says $\phi( \rho(g) \cdot v) = \lambda (\rho(g) \cdot v) \implies \rho(g) \cdot v \in V_{\lambda}$.
+We used it here by
+This rephrases Schur's lemma!
 :::
 
