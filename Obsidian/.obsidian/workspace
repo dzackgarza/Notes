@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Floer homology project Heegard diagrams.md",
+            "file": "Quick_Notes/2021-05-01.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
+                "file": "Quick_Notes/2021-05-01.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
+                "file": "Quick_Notes/2021-05-01.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
+                "file": "Quick_Notes/2021-05-01.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
+                "file": "Quick_Notes/2021-05-01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
+                "file": "Quick_Notes/2021-05-01.md"
               }
             }
           },
@@ -237,6 +237,8 @@
   },
   "active": "38707cbec72b27ab",
   "lastOpenFiles": [
+    "Quick_Notes/2021-05-01.md",
+    "Quick_Notes/2021-05-02.md",
     "00_Floer homology project Heegard diagrams.md",
     "00_Floer homology project - Heegard diagrams.md",
     "00_Projects Index.md",
@@ -244,8 +246,6 @@
     "zettelkasten/Neron Severi.md",
     "zettelkasten/Class field theory.md",
     "zettelkasten/Local class field theory.md",
-    "zettelkasten/Untitled.md",
-    "zettelkasten/Milnor Conjecture.md",
-    "zettelkasten/Algebraic k theory.md"
+    "zettelkasten/Untitled.md"
   ]
 }
