@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "38707cbec72b27ab",
+        "id": "c90cf3b979f05297",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Quick_Notes/2021-05-01.md",
+            "file": "Quick_Notes/2021-04-25.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-01.md",
+                "file": "Quick_Notes/2021-04-25.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-01.md"
+                "file": "Quick_Notes/2021-04-25.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-01.md",
+                "file": "Quick_Notes/2021-04-25.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick_Notes/2021-05-01.md",
+                "file": "Quick_Notes/2021-04-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-01.md"
+                "file": "Quick_Notes/2021-04-25.md"
               }
             }
           },
@@ -235,17 +235,17 @@
     "direction": "horizontal",
     "width": 117
   },
-  "active": "38707cbec72b27ab",
+  "active": "c90cf3b979f05297",
   "lastOpenFiles": [
+    "Quick_Notes/2021-04-25.md",
+    "Quick_Notes/2021-04-26.md",
+    "Quick_Notes/2021-04-29.md",
+    "Quick_Notes/2021-04-30.md",
     "Quick_Notes/2021-05-01.md",
     "Quick_Notes/2021-05-02.md",
     "00_Floer homology project Heegard diagrams.md",
     "00_Floer homology project - Heegard diagrams.md",
     "00_Projects Index.md",
-    "zettelkasten/Picard group.md",
-    "zettelkasten/Neron Severi.md",
-    "zettelkasten/Class field theory.md",
-    "zettelkasten/Local class field theory.md",
-    "zettelkasten/Untitled.md"
+    "zettelkasten/Picard group.md"
   ]
 }
