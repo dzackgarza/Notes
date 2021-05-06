@@ -1,2 +1,1 @@
-- Can define metrics and curvature forms on line bundles p-adic analytically.
-- 
+- Can define metrics and curvature forms on line bundles p-adic analytically: see [Padma's talk](../Quick_Notes/2021-05-05.md#^22ba3a)
