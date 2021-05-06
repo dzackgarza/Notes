@@ -7,6 +7,12 @@
 
 [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
+[Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
+
+## Lie Groups and Algebras
+
+[Problem sets](http://www.math.stonybrook.edu/~jstarr/M552s19/ps.html)
+
 # Arithmetic Geometry
 
 [https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
@@ -92,6 +98,8 @@ Some stuff from Morgan:
 
 - [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
 
+[Equivariant stable homotopy and p-adic Hodge theory](http://www.birs.ca/events/2020/5-day-workshops/20w5217/videos)
+
 ## K Theory
 
 [Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
@@ -102,10 +110,20 @@ Some stuff from Morgan:
 
 # Algebraic Geometry
 
+[](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)[https://dongryul-kim.github.io/harvard\_notes/Math281x/Notes\_Math281x.pdf](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
+
+through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
+
+[Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
+
 ## Schemes
 
 - [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
 
+[https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
+
+# Motivic Stuff
+![Roadmap to learning motivic homotopy theory](attachments/roadmap.pdf)
 
 ## Homotopy of Schemes
 
@@ -114,6 +132,10 @@ Some stuff from Morgan:
 - Twitter rec: [https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
 
 # Unsorted
+
+## Field Theories
+
+[Lecture series (34 videos) on Topology and Field Theories](https://www.youtube.com/playlist?list=PL80A29806A2EA6B1A)
 
 ## Full Courses
 
@@ -147,10 +169,7 @@ Some stuff from Morgan:
 
 [Representation Theory](https://www.notion.so/Representation-Theory-4fc0e7a366484c6aaa91aea45cea7544)
 
-[Algebraic Geometry](https://www.notion.so/Algebraic-Geometry-cc1389d582f4463b92619eea59ccb393)
 
-[Schemes (Fall 2021)](https://www.notion.so/Schemes-Fall-2021-629f2c0e22af4eef86b622905a4556f1)
+[Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
 
-[Motives](https://www.notion.so/Motives-e2a12d3ce0d041d89cccb82778dc933c)
-
-[Abelian Varieties](https://www.notion.so/Abelian-Varieties-7e94ae23117947d4965b2a7f419c77a1)
+# End
