@@ -151,9 +151,13 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 # Derived Geometry
 
+[CMSA series on derived algebraic and differential geometry](https://www.youtube.com/watch?v=qgxq7xnJJvI&list=PL0NRmB0fnLJRk75jsBXXt7J8TCWY9EpI4)
+
 ## Higher Algebra and Infinity Categories
 
 [Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
+
+- [MSRI workshop on higher categories and categorification](https://www.msri.org/workshops/907)
 
 ## Topological Cyclic Homology
 
@@ -170,6 +174,8 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 ## Mirror Symmetry
 
 [Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
+
+[CMSA 2020 Workshop]()
 
 ## Langlands
 
