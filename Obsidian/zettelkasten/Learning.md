@@ -7,24 +7,19 @@
 
 ## Class Field Theory
 
-> Advice:
-
+Advice:
 - Look at global CFT first, see book of Janusz
 - Washington's Cyclotomic Fields.
 - Harari's book (?)
 - Artin and Tate's notes
 
-Brief summary of statements of CFT:
+[Brief summary of statements of CFT](https://math.mit.edu/~poonen/papers/cft.pdf)
 
-[](https://math.mit.edu/~poonen/papers/cft.pdf)
 
-Blogpost introducing CFT
+[Blogpost introducing CFT "Local class field theory: a discussion"](https://ayoucis.wordpress.com/2015/09/01/local-class-field-theory-a-discussion/)
 
-[Local class field theory: a discussion](https://ayoucis.wordpress.com/2015/09/01/local-class-field-theory-a-discussion/)
 
-Milne's Notes
-
-[](https://www.jmilne.org/math/CourseNotes/CFT.pdf)
+[Milne's Notes](https://www.jmilne.org/math/CourseNotes/CFT.pdf)
 
 Cassels-Frohlich
 
