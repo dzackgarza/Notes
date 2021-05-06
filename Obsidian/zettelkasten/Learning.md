@@ -76,6 +76,8 @@ See the Handbook of Homotopy Theory
 
 [Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
 
+[Notes on Goodwill]()
+
 ## Spectral Sequences
 
 Some stuff from Morgan: 
@@ -170,7 +172,7 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 - [MSRI workshop on higher categories and categorification](https://www.msri.org/workshops/907)
 
-[]()
+[Higher categories student seminar: notes](https://etale.site/livetex/highercats.pdf)
 
 ## Topological Cyclic Homology
 
