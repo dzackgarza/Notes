@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Learning.md",
+            "file": "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,6 +238,8 @@
   },
   "active": "3bd2f2d74a72c634",
   "lastOpenFiles": [
+    "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
+    "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a/EllipticCurve_notes1.pdf",
     "zettelkasten/Untitled.md",
     "zettelkasten/Dold-Kan correspondence.md",
     "00_Floer homology project Heegard diagrams.md",
@@ -245,8 +247,6 @@
     "Quick_Notes/2021-03-25.md",
     "zettelkasten/homotopy category.md",
     "zettelkasten/Model category.md",
-    "zettelkasten/Kan extension.md",
-    "zettelkasten/Kan complex.md",
-    "zettelkasten/fibrant replacement.md"
+    "zettelkasten/Kan extension.md"
   ]
 }

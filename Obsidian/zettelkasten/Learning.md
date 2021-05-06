@@ -11,6 +11,10 @@
 
 [https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
 
+## Abelian Varieties
+
+[http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
+
 # Number Theory
 
 ## Class Field Theory
