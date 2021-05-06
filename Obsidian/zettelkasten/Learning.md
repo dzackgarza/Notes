@@ -5,6 +5,7 @@
 - [Qual Review](Qual%20Review)
 
 # Algebraic Geometry
+See [Algebraic Geometry Basics](Subjects/Algebraic%20Geometry%20Basics.md)
 
 > Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly
 
@@ -19,25 +20,25 @@
 - [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
 ## Schemes
+See [schemes](scheme.md)
 
 - [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
 
 - [https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
 
 ## Stacks
+See [stacks](Stacks.md)
 
 - [Seminar notes on stacks](https://etale.site/livetex/stax.pdf)
 
 # Geometric Topology
 
 ## Kirby Calculus
-
 - [Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
 	- Take notes on videos #todo #lecture_typesetting
 
 ## Floer and Symplectic
-
-See [[Fl]]
+See [Floer homology](Floer%20homology) and [Symplectic geometry](Symplectic%20geometry.md)
 
 [Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
 
