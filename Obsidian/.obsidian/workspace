@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Learning.md",
+            "file": "Quick_Notes/2021-05-06.md",
             "mode": "preview"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "Quick_Notes/2021-05-06.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "Quick_Notes/2021-05-06.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "Quick_Notes/2021-05-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "Quick_Notes/2021-05-06.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "Quick_Notes/2021-05-06.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,9 +238,9 @@
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
+    "Quick_Notes/2021-05-06.md",
     "zettelkasten/Learning.md",
     "zettelkasten/framed.md",
-    "Quick_Notes/2021-05-06.md",
     "zettelkasten/figures/problem3.png",
     "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf",
     "Quick_Notes/2021-05-05.md",
