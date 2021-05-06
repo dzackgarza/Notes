@@ -40,42 +40,17 @@ Recommendations from Akram
 - p.148 12-b
 - Section 12
 
+## Floer and Symplectic
+
+[](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
+
+[Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
+
+[Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
+
 # Algebraic Topology
 
 [Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
-
-## Stable Homotopy Theory
-
-- [Homotopy Theory](http://jardine.math.uwo.ca/HomTh/)
-
-- [MA 751: Topics in Topology](http://www.ms.uky.edu/~kate/teaching/f19_751.html)
-
-- [Something?](http://math.colorado.edu/topology/plan-spring2017.pdf)
-
-- [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
-
-### K Theory
-
-[Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
-
-
-# Homotopy of Schemes
-
-[](http://people.math.harvard.edu/~gaitsgde/GL/)
-
-[https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
-
-# Catch Up
-
-[](https://etale.site/qual-syllabus.pdf)
-
-[](https://etale.site/livetex/)
-
-[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
-
-# Schemes
-
-- [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
 
 # Spectral Sequences
 
@@ -93,10 +68,40 @@ So, to be honest I'm not completely sure about the degree of generality of the B
 
 ****[3:09 AM] m.p.opie:** I think the actual Binfinity construction though is maybe a bit technical and/or disastisfying. Like, you need some formalism to get a spectrum out of a "almost symmetric monoidal space", and this one works, but it's a bit mysterious to me....
 
-# Floer and Symplectic
 
-[](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
+## Stable Homotopy Theory
 
-[Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
+- [Homotopy Theory](http://jardine.math.uwo.ca/HomTh/)
 
-[Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
+- [MA 751: Topics in Topology](http://www.ms.uky.edu/~kate/teaching/f19_751.html)
+
+- [Something?](http://math.colorado.edu/topology/plan-spring2017.pdf)
+
+- [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
+
+### K Theory
+
+[Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
+
+## Homotopy of Schemes
+
+- [Something?](http://people.math.harvard.edu/~gaitsgde/GL/)
+
+- Twitter rec: [https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
+
+
+
+# Schemes
+
+- [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
+
+
+
+
+# Catch Up
+
+[](https://etale.site/qual-syllabus.pdf)
+
+[](https://etale.site/livetex/)
+
+[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
