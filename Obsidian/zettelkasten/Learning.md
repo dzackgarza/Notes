@@ -199,7 +199,7 @@ Some stuff from Morgan:
 
 [Higher categories student seminar: notes](https://etale.site/livetex/highercats.pdf)
 
-## Ho
+## 
 
 ## Topological Cyclic Homology
 
