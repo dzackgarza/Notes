@@ -1,16 +1,17 @@
 
 # Review
 
-[Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo Find more!
+[Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo 
 
+[Qual Review](Qual%20Review)
 
 # Algebraic Geometry
 
-[](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)[https://dongryul-kim.github.io/harvard\_notes/Math281x/Notes\_Math281x.pdf](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
+> Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly
 
-Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
+- [Harvard Math 281 Lecture Notes](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
 
-[Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
+- [Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
 
 [MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
 
