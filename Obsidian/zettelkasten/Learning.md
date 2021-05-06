@@ -124,6 +124,14 @@ Some stuff from Morgan:
 
 [Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
 
+# Mirror Symmetry
+
+[Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
+
+[CMSA 2020 Workshop on mirror symmetry (12 videos)](https://www.youtube.com/watch?v=rZhCfvjhwDI&list=PL0NRmB0fnLJSmnJqrOqgiivJQ_BWnlfXm)
+
+[Conference on homological mirror symmetry](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQRXH3HKos6e4bu8IyfmZCY)
+
 # Algebraic Geometry
 
 [](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)[https://dongryul-kim.github.io/harvard\_notes/Math281x/Notes\_Math281x.pdf](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
@@ -198,13 +206,7 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [Fields Summer School](https://video-archive.fields.utoronto.ca/list/event/1538)
 
-## Mirror Symmetry
 
-[Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
-
-[CMSA 2020 Workshop on mirror symmetry (12 videos)](https://www.youtube.com/watch?v=rZhCfvjhwDI&list=PL0NRmB0fnLJSmnJqrOqgiivJQ_BWnlfXm)
-
-[Conference on homological mirror symmetry](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQRXH3HKos6e4bu8IyfmZCY)
 
 ## Langlands
 
