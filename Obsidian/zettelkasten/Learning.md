@@ -1,4 +1,12 @@
 
+# Catch Up
+
+[](https://etale.site/qual-syllabus.pdf)
+
+[](https://etale.site/livetex/)
+
+[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
+
 # Arithmetic Geometry
 
 [https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
@@ -52,7 +60,7 @@ Recommendations from Akram
 
 [Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
 
-# Spectral Sequences
+## Spectral Sequences
 
 Some stuff from Morgan: 
 
@@ -80,9 +88,20 @@ Some stuff from Morgan:
 
 - [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
 
-### K Theory
+## K Theory
 
 [Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
+
+
+
+
+
+# Algebraic Geometry
+
+## Schemes
+
+- [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
+
 
 ## Homotopy of Schemes
 
@@ -90,19 +109,44 @@ Some stuff from Morgan:
 
 - Twitter rec: [https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
 
+# Unsorted
 
+## Full Courses
 
-# Schemes
+[Topological Cyclic Homology](https://www.notion.so/Topological-Cyclic-Homology-0db929d8a26943879bb36c916a3877ff)
 
-- [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
+[Higher Algebra](https://www.notion.so/Higher-Algebra-bfa1645467b2479a979065ab9f48f168)
 
+[Derived Algebraic Geometry](https://www.notion.so/Derived-Algebraic-Geometry-3ee38d9dcb0147c59d5b151669216941)
 
+[Langlands](https://www.notion.so/Langlands-090049f105464607af4db93d3234ad94)
 
+[Mirror Symmetry](https://www.notion.so/Mirror-Symmetry-0a85580775aa44a6a6dcb28125bc78c6)
 
-# Catch Up
+[K-Theory](https://www.notion.so/K-Theory-07ac10e4019c43f7a81215234c17d360)
 
-[](https://etale.site/qual-syllabus.pdf)
+[Toric Varieties](https://www.notion.so/Toric-Varieties-c043df6fb10c4bc0b40e88e13eccb1a7)
 
-[](https://etale.site/livetex/)
+[Soergel Bimodules](https://www.notion.so/Soergel-Bimodules-cbc714141700478984538f9b7c2fe813)
 
-[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
+[Derived Categories in AG](https://www.notion.so/Derived-Categories-in-AG-cd0d9a8130cb4472bcc2424fb0d35645)
+
+[Representation Stability](https://www.notion.so/Representation-Stability-da1e045e109e43b2b14c6bc5821bee9d)
+
+[Stable Homotopy Theory](https://www.notion.so/Stable-Homotopy-Theory-48a486b7923445ac800620f3978185fe)
+
+[Field Theories](https://www.notion.so/Field-Theories-a0c28421ae664070a32932cd98cc59e2)
+
+[Infty Categories](https://www.notion.so/Infty-Categories-8f7f062f95284b25bce450633c749318)
+
+[p-adic Hodge Theory](https://www.notion.so/p-adic-Hodge-Theory-9423d37c92104ab6a1f0d64c53bc38db)
+
+[Representation Theory](https://www.notion.so/Representation-Theory-4fc0e7a366484c6aaa91aea45cea7544)
+
+[Algebraic Geometry](https://www.notion.so/Algebraic-Geometry-cc1389d582f4463b92619eea59ccb393)
+
+[Schemes (Fall 2021)](https://www.notion.so/Schemes-Fall-2021-629f2c0e22af4eef86b622905a4556f1)
+
+[Motives](https://www.notion.so/Motives-e2a12d3ce0d041d89cccb82778dc933c)
+
+[Abelian Varieties](https://www.notion.so/Abelian-Varieties-7e94ae23117947d4965b2a7f419c77a1)
