@@ -1,16 +1,17 @@
 ---
-aliases: ["motivic homotopy theory", "motives", "pure motives", "mixed motives"]
+aliases: ["motivic homotopy theory", "motivic homotopy", "motives", "pure motives", "mixed motives"]
 ---
 
 # References
 
 - [A primer for unstable motivic homotopy theory](https://arxiv.org/pdf/1605.00929.pdf)
 - <https://ams.org/journals/notices/202001/rnoti-p9.pdf>
+- [Introduction to mixed motives](https://etale.site/livetex/cisinski-at-motives-and-DAG.pdf)
 
-$\Vect_r(X)$: iso classes of rank $r$ vector bundles over $X$.
 
 # Motivation
 
+- Notation: $\Vect_r(X)$: iso classes of rank $r$ vector bundles over $X$.
 - Goal: classify vector bundles on smooth affine schemes.
 - Serre's conjecture: for $k\in \Fields$, is every \( M\in \modsleft{\kxn}^\fg \) actually free?
 	- True by Quillen-Suslin 76
@@ -21,9 +22,9 @@ $\Vect_r(X)$: iso classes of rank $r$ vector bundles over $X$.
 ![image_2021-05-05-01-35-59](figures/image_2021-05-05-01-35-59.png)
 ![image_2021-05-05-01-36-28](figures/image_2021-05-05-01-36-28.png)
 
-- Nisnevich topology: coarsest where [[purity theorem]] holds, finest where [[K theory]] is representable.
+- [Nisnevich topology](Nisnevich%20topology): coarsest where [[purity theorem]] holds, finest where [[K theory]] is representable.
 
-> The fundamental difference between pure motives (roughly speaking coming from cohomology of smooth projective varieties) and mixed motives (coming from cohomology of arbitrary varieties) is existence of nontrivial extensions in the latter setting
+> The fundamental difference between **pure motives** (coming from cohomology of smooth projective varieties) and **mixed motives** (coming from cohomology of arbitrary varieties) is existence of nontrivial extensions in the mixed motive setting.
 
 
 
