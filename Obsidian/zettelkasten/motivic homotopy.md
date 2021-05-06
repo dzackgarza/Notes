@@ -23,4 +23,7 @@ $\Vect_r(X)$: iso classes of rank $r$ vector bundles over $X$.
 
 - Nisnevich topology: coarsest where [[purity theorem]] holds, finest where [[K theory]] is representable.
 
+> The fundamental difference between pure motives (roughly speaking coming from cohomology of smooth projective varieties) and mixed motives (coming from cohomology of arbitrary varieties) is existence of nontrivial extensions in the latter setting
+
+
 
