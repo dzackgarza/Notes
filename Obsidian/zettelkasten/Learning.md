@@ -142,6 +142,10 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
 
+## Stacks
+
+- [Seminar notes on stacks](https://etale.site/livetex/stax.pdf)
+
 # Motivic Stuff
 ![Roadmap to learning motivic homotopy theory](attachments/roadmap.pdf)
 
