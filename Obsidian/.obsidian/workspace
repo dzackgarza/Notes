@@ -7,8 +7,11 @@
         "id": "3bd2f2d74a72c634",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Learning.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -62,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -76,6 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -109,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/Learning.md"
+              }
             }
           },
           {
@@ -141,6 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +162,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/Learning.md"
+              }
             }
           },
           {
@@ -192,6 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -220,7 +229,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -228,6 +238,7 @@
   },
   "active": "3bd2f2d74a72c634",
   "lastOpenFiles": [
+    "zettelkasten/Untitled.md",
     "zettelkasten/Dold-Kan correspondence.md",
     "00_Floer homology project Heegard diagrams.md",
     "zettelkasten/Floer Reading Group Fall 2020.md",
@@ -236,7 +247,6 @@
     "zettelkasten/Model category.md",
     "zettelkasten/Kan extension.md",
     "zettelkasten/Kan complex.md",
-    "zettelkasten/fibrant replacement.md",
-    "zettelkasten/Untitled.md"
+    "zettelkasten/fibrant replacement.md"
   ]
 }
