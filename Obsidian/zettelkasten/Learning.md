@@ -22,37 +22,42 @@ Resources
 - [Cox: Primes of the form...](http://www.math.toronto.edu/~ila/Cox-Primes_of_the_form_x2+ny2.pdf)
 - [OCW Lecture Notes](https://ocw.mit.edu/courses/mathematics/18-786-number-theory-ii-class-field-theory-spring-2016/lecture-notes/)
 
-## Alge
+## Algebraic Number Theory
 - [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
 
-# Kirby Calculus
+# Geometric Topology
+
+## Kirby Calculus
 
 [](https://uga.view.usg.edu/d2l/home/2063522)
 
 - Take notes on videos
 
-# Derived Geometry
-
-# Parallelizability
+## Parallelizability
 
 Recommendations from Akram
 
 - p.148 12-b
 - Section 12
 
-# Stable Homotopy Theory
+# Algebraic Topology
 
-[Homotopy Theory](http://jardine.math.uwo.ca/HomTh/)
+[Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
 
-[MA 751: Topics in Topology](http://www.ms.uky.edu/~kate/teaching/f19_751.html)
+## Stable Homotopy Theory
 
-[](http://math.colorado.edu/topology/plan-spring2017.pdf)
+- [Homotopy Theory](http://jardine.math.uwo.ca/HomTh/)
 
-[](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
+- [MA 751: Topics in Topology](http://www.ms.uky.edu/~kate/teaching/f19_751.html)
+
+- [Something?](http://math.colorado.edu/topology/plan-spring2017.pdf)
+
+- [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
+
+### K Theory
 
 [Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
 
-[Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
 
 # Homotopy of Schemes
 
