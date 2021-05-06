@@ -151,7 +151,11 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 # Derived Geometry
 
-## TCH
+## Higher Algebra and Infinity Categories
+
+[Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
+
+## Topological Cyclic Homology
 
 - [21 Video Course](https://www.youtube.com/playlist?list=PLsmqTkj4MGTB8pNGvW0iuKUFmBlOSke-C)
 
