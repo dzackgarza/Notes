@@ -5,11 +5,8 @@
 
 [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
-[Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
 
-## Lie Groups and Algebras
 
-[Problem sets](http://www.math.stonybrook.edu/~jstarr/M552s19/ps.html)
 
 # Algebraic Geometry
 
@@ -84,6 +81,9 @@ Resources
 # Representation Theory
 
 ## Lie Theory
+
+[Problem sets](http://www.math.stonybrook.edu/~jstarr/M552s19/ps.html)
+
 
 ## Categorical Rep Theory
 
@@ -192,6 +192,8 @@ Some stuff from Morgan:
 ## Higher Algebra and Infinity Categories
 
 [Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
+
+[Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
 
 - [MSRI workshop on higher categories and categorification](https://www.msri.org/workshops/907)
 
