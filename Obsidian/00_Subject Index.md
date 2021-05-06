@@ -25,5 +25,5 @@
 ## Derived AG
 - [Schemes](zettelkasten/2021-04-26_Schemes.md)
 - [Stacks](zettelkasten/Stacks.md)
-- [Stacks and Orbifolds](zettelkasten/2021-04-26_Stacks_and_Orbifolds.md)
+- [Stacks and Orbifolds](zettelkasten/Orbifold.md)
 - [The Cotangent Complex and Derived de Rham Cohomology](zettelkasten/2021-04-26_The_Cotangent_Complex_and_Derived_de_Rham_Cohomology.md)

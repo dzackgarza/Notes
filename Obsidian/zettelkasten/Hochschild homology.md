@@ -5,12 +5,10 @@ aliases: ["HH"]
 
 References: [topological Hochschild homology](topological%20Hochschild%20homology.md) | [cyclic homology](cyclic%20homology)
 
-When proving stuff about algebras -- try with polynomial algebras first, essentially the simplest case.
-Simplest coalgebra case: divided power algebras (also a Hopf algebra)
 
 # Hochschild Homology
 
-Reference: <a href="file:///home/zack/Dropbox/Library/Charles A. Weibel/An Introduction to Homological Algebra (489)/An Introduction to Homological Algebra - Charles A. Weibel.pdf#page=312">Chapter 9 of Weibel</a>
+> Reference: [Chapter 9 of Weibel](file:///home/zack/Dropbox/Library/Charles A. Weibel/An Introduction to Homological Algebra (489)/An Introduction to Homological Algebra - Charles A. Weibel.pdf#page=312)
 
 The Hochschild homology of an $R\dash R\dash$bimodule reflects some ring-theoretic stuff. For instance, $H_1(R,R)$ of a $k\dash$algebra $R$ is the module of differentials $\Omega_R/k$. If $Q\subseteq R$ then there is an algebraic decomposition of this homology that is analogous to the [Hodge decomposition](Hodge%20decomposition) in complex manifold theory.
 
@@ -38,3 +36,6 @@ This offers two different perspectives on associative algebras: homological inva
 
 
 - See the [HKR](HKR.md) theorem
+
+- When proving stuff about algebras -- try with polynomial algebras first, essentially the simplest case.
+- Simplest [coalgebra](coalgebra) case: divided power algebras (also a [Hopf Algebra](Hopf%20Algebra))

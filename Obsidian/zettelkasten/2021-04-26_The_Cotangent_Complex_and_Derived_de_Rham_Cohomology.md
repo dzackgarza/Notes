@@ -116,7 +116,7 @@ So we can consider replacing the structure sheaf $\OO_X$, which is itself a shea
 ## Derived Schemes
 
 Consider $\spec k\tensor_{k[x]}^L k$, a derived tensor product.
-This is a [simplicial commutative ring](simplicial%20commutative%20ring), and the basic version of an affine [derived scheme](derived%20scheme).
+This is a [simplicial ring](simplicial%20ring.md), and the basic version of an affine [derived scheme](derived%20scheme).
 This is a complex $C^\wait$ with homology in degree 0 and 1, where 
 \[
 H_1 = \Tor^1(k\tensor_{k[x]} k)

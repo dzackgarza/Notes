@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Hochschild homology.md",
+            "file": "zettelkasten/Orbifold.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Hochschild homology.md",
+                "file": "zettelkasten/Orbifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Hochschild homology.md"
+                "file": "zettelkasten/Orbifold.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Hochschild homology.md",
+                "file": "zettelkasten/Orbifold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Hochschild homology.md"
+                "file": "zettelkasten/Orbifold.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Hochschild homology.md",
+                "file": "zettelkasten/Orbifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
+    "zettelkasten/2021-04-26_Stacks_and_Orbifolds.md",
+    "Quick_Notes/2021-05-06.md",
+    "zettelkasten/simplicial  ring.md",
+    "zettelkasten/simplicial commutative ring.md",
+    "zettelkasten/simplicial algebra.md",
     "zettelkasten/Hochschild homology.md",
     "zettelkasten/HKR.md",
     "zettelkasten/Classifying Space.md",
     "zettelkasten/2021-04-26_Vector_Bundles.md",
-    "zettelkasten/K Theory.md",
-    "zettelkasten/Morava K-theory.md",
-    "zettelkasten/2021-04-26_Simplicial_Sets.md",
-    "zettelkasten/topological Hochschild homology.md",
-    "zettelkasten/hochschild homology.md",
-    "zettelkasten/THH.md"
+    "zettelkasten/K Theory.md"
   ]
 }
