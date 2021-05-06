@@ -76,7 +76,7 @@ See the Handbook of Homotopy Theory
 
 [Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
 
-[Notes on Goodwill]()
+[Notes on Goodwillie Calculus](https://etale.site/livetex/goodwillie.pdf)
 
 ## Spectral Sequences
 
