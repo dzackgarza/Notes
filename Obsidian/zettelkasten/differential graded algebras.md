@@ -1,3 +1,3 @@
 ---
-aliases: ["DGAs", "DGA", "differential graded algebra"]
+aliases: ["DGAs", "DGA", "differential graded algebra", "CDGA", "CDGAs"]
 ---

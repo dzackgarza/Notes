@@ -4,7 +4,7 @@
 - [3-Manifolds](zettelkasten/2021-04-26_3-Manifolds.md)
 - [Contact geometry](zettelkasten/2021-04-26_Contact_Geometry.md)
 - [Floer Theory](zettelkasten/2021-04-26_Floer_Theory.md)
-- [Fukaya Categories](zettelkasten/2021-04-26_Fukaya_Categories.md)
+- [Fukaya Categories](zettelkasten/Fukaya%20category.md)
 - [Schoenflies](zettelkasten/2021-04-26_Schoenflies.md)
 - [Uniformization](zettelkasten/2021-04-26_Uniformization.md)
 - [Whitney Embedding](zettelkasten/2021-04-26_Whitney_Embedding.md)
