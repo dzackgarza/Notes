@@ -199,13 +199,16 @@ Some stuff from Morgan:
 
 [Higher categories student seminar: notes](https://etale.site/livetex/highercats.pdf)
 
-## 
+## Hochschild homology
+See [Hochschild homology](Hochschild%20homology.md)
 
 ## Topological Cyclic Homology
+See [topological Hochschild homology](topological%20Hochschild%20homology.md)
 
 - [21 Video Course](https://www.youtube.com/playlist?list=PLsmqTkj4MGTB8pNGvW0iuKUFmBlOSke-C)
 
 ## Langlands
+See [Langlands](Langlands.md)
 
 ![Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve](attachments/Geometric%20Langlands,%20Perfectoid%20Spaces,%20Fargues-Fontaine%20Overview.pdf)
 
@@ -216,13 +219,15 @@ Some stuff from Morgan:
 
 # Unsorted
 
-[Seminar on p-adic Hodge theory](https://math.mit.edu/nt/old/stage_f18.html)
 
-## Crystal-y Stuff?
+## Prism-y p-adic-y Hodge-The
 
 [Seminar on crystalline and prismatic cohomology](https://math.mit.edu/nt/index_stage)
 
 [Seminar on p-adic modular forms](https://math.mit.edu/nt/old/stage_s20.html)
+
+[Seminar on p-adic Hodge theory](https://math.mit.edu/nt/old/stage_f18.html)
+
 
 ## Field Theories
 
