@@ -1,11 +1,7 @@
 
-# Catch Up
+# Review
 
-[Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf)
-
-[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
-
-
+[Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo Find more!
 
 
 # Algebraic Geometry
@@ -19,6 +15,8 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 [MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
 
 [MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
+
+[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
 ## Schemes
 
@@ -238,7 +236,6 @@ See [Langlands](Langlands.md)
 [Fields Summer School](https://video-archive.fields.utoronto.ca/list/event/1538)
 
 
-
 ## Full Courses
 
 [Topological Cyclic Homology](https://www.notion.so/Topological-Cyclic-Homology-0db929d8a26943879bb36c916a3877ff)
@@ -250,4 +247,4 @@ See [Langlands](Langlands.md)
 
 
 
-# End
+# End of Doc
