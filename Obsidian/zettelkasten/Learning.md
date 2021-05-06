@@ -17,6 +17,8 @@
 
 [https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
 
+[Seminar talks on the Weil conjectures](https://math.mit.edu/nt/old/stage_f20.html)
+
 ## Abelian Varieties
 
 [http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
@@ -149,9 +151,14 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
 
+[CMSA conference on relations to algebraic geometry and mathematical physics](https://www.youtube.com/watch?v=kgu8L6paKNs&list=PL0NRmB0fnLJQiZyGUJyd35rj80k_EgUyt)
+
 # Derived Geometry
 
 [CMSA series on derived algebraic and differential geometry](https://www.youtube.com/watch?v=qgxq7xnJJvI&list=PL0NRmB0fnLJRk75jsBXXt7J8TCWY9EpI4)
+
+![Workshop on derived moduli spaces](attachments/essen.pdf)
+![Something? Revisit](attachments/moduli.pdf)
 
 ## Higher Algebra and Infinity Categories
 
@@ -165,6 +172,10 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 # Unsorted
 
+## Crystal-y Stuff?
+
+[Seminar on crystalline and prismatic c]()
+
 ## Field Theories
 
 [Lecture series (34 videos) on Topology and Field Theories](https://www.youtube.com/playlist?list=PL80A29806A2EA6B1A)
@@ -175,7 +186,9 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
 
-[CMSA 2020 Workshop]()
+[CMSA 2020 Workshop on mirror symmetry (12 videos)](https://www.youtube.com/watch?v=rZhCfvjhwDI&list=PL0NRmB0fnLJSmnJqrOqgiivJQ_BWnlfXm)
+
+[Conference on homological mirror symmetry](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQRXH3HKos6e4bu8IyfmZCY)
 
 ## Langlands
 
