@@ -68,6 +68,8 @@ Recommendations from Akram
 
 # Algebraic Topology
 
+See the Handbook of Homotopy Theory
+
 [Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
 
 ## Spectral Sequences
@@ -90,6 +92,8 @@ Some stuff from Morgan:
 
 ## Stable Homotopy Theory
 
+[Summer School on Modern Algebraic Topology](https://www.msri.org/workshops/695)
+
 - [Homotopy Theory](http://jardine.math.uwo.ca/HomTh/)
 
 - [MA 751: Topics in Topology](http://www.ms.uky.edu/~kate/teaching/f19_751.html)
@@ -102,19 +106,25 @@ Some stuff from Morgan:
 
 ## K Theory
 
+[Survey article from Inna](https://people.math.rochester.edu/faculty/doug/otherpapers/zakharevich.pdf)
+
 [Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
 
+![Recommended reading from Atiyah and Park](attachments/Pasted%20image%2020210506154540.png)
 
-
-
+[Dugger's geometric introduction to K theory](https://pages.uoregon.edu/ddugger/kgeom.pdf)
 
 # Algebraic Geometry
 
 [](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)[https://dongryul-kim.github.io/harvard\_notes/Math281x/Notes\_Math281x.pdf](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
 
-through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
+Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
+
+[MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
+
+[MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
 
 ## Schemes
 
@@ -131,11 +141,19 @@ through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 - Twitter rec: [https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
 
+# Representation Theory
+
+[MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
+
+[MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
+
 # Unsorted
 
 ## Field Theories
 
 [Lecture series (34 videos) on Topology and Field Theories](https://www.youtube.com/playlist?list=PL80A29806A2EA6B1A)
+
+
 
 ## Full Courses
 
