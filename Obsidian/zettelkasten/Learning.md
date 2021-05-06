@@ -158,6 +158,8 @@ Some stuff from Morgan:
 
 [Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
 
+[U Chicago Algtop Workshop (including Cobordism)](http://math.uchicago.edu/~chicagotopology2/)
+
 # Mirror Symmetry
 
 [Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
