@@ -1,4 +1,3 @@
-
 # Review
 
 - [Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo 
