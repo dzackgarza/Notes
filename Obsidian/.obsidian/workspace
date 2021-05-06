@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/motivic homotopy.md",
+            "file": "zettelkasten/Learning.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md"
+                "file": "zettelkasten/Learning.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md"
+                "file": "zettelkasten/Learning.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "8dd2c50ede19dbe7",
   "lastOpenFiles": [
+    "zettelkasten/Learning.md",
+    "zettelkasten/Homological Stability.md",
     "zettelkasten/motivic homotopy.md",
     "zettelkasten/Untitled 1.md",
-    "zettelkasten/Learning.md",
     "zettelkasten/Untitled.md",
     "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
     "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a/EllipticCurve_notes1.pdf",
     "zettelkasten/Dold-Kan correspondence.md",
     "00_Floer homology project Heegard diagrams.md",
-    "zettelkasten/Floer Reading Group Fall 2020.md",
-    "Quick_Notes/2021-03-25.md"
+    "zettelkasten/Floer Reading Group Fall 2020.md"
   ]
 }

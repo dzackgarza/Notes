@@ -1,7 +1,7 @@
 
 # Catch Up
 
-[](https://etale.site/qual-syllabus.pdf)
+[Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf)
 
 [](https://etale.site/livetex/)
 
@@ -53,9 +53,9 @@ Resources
 
 ## Kirby Calculus
 
-[](https://uga.view.usg.edu/d2l/home/2063522)
+[Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
 
-- Take notes on videos
+- Take notes on videos #todo
 
 ## Parallelizability
 
@@ -66,7 +66,7 @@ Recommendations from Akram
 
 ## Floer and Symplectic
 
-[](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
+[Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
 
 [Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
 
