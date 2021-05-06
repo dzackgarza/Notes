@@ -193,15 +193,26 @@ Some stuff from Morgan:
 
 [Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
 
-[Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
+[MSRI workshops on Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
 
 - [MSRI workshop on higher categories and categorification](https://www.msri.org/workshops/907)
 
 [Higher categories student seminar: notes](https://etale.site/livetex/highercats.pdf)
 
+## Ho
+
 ## Topological Cyclic Homology
 
 - [21 Video Course](https://www.youtube.com/playlist?list=PLsmqTkj4MGTB8pNGvW0iuKUFmBlOSke-C)
+
+## Langlands
+
+![Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve](attachments/Geometric%20Langlands,%20Perfectoid%20Spaces,%20Fargues-Fontaine%20Overview.pdf)
+
+![What is the Langlands program?](attachments/Friedberg%20-%202018%20-%20WHAT%20IS%20...the%20Langlands%20Program.pdf)
+
+- [MSRI Summer School on automorphic forms and the Langlands program](https://www.msri.org/summer_schools/792)
+	- [Kevin' Buzzard's lectures on Youtube](https://www.youtube.com/playlist?list=PLhsb6tmzSpiysoRR0bZozub-MM0k3mdFR)
 
 # Unsorted
 
@@ -221,14 +232,7 @@ Some stuff from Morgan:
 
 
 
-## Langlands
 
-![Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve](attachments/Geometric%20Langlands,%20Perfectoid%20Spaces,%20Fargues-Fontaine%20Overview.pdf)
-
-![What is the Langlands program?](attachments/Friedberg%20-%202018%20-%20WHAT%20IS%20...the%20Langlands%20Program.pdf)
-
-- [MSRI Summer School on automorphic forms and the Langlands program](https://www.msri.org/summer_schools/792)
-	- [Kevin' Buzzard's lectures on Youtube](https://www.youtube.com/playlist?list=PLhsb6tmzSpiysoRR0bZozub-MM0k3mdFR)
 
 ## Full Courses
 
