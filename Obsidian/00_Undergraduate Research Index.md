@@ -30,7 +30,7 @@ tags:
 - [Initial research notes](zettelkasten/2021-04-26_Research_Notes_4-18-2018.md)
 - [Fiber bundles](zettelkasten/2021-04-25_fiber_bundles_ug.md)
 - [Vector bundles](zettelkasten/2021-04-25_vector_bundles_ug.md)
-- [More vector bundles](zettelkasten/2021-04-26_Vector_Bundles.md)
+- [More vector bundles](zettelkasten/vector%20bundles.md)
 - [Classifying Spaces](zettelkasten/2021-04-25_classifying_spaces_ug.md)
 - [Representing Eilenberg-Maclane spaces geometrically](zettelkasten/2021-04-25_representing_KGn_geometrically.md)
 - [Principal Bundles](zettelkasten/2021-04-26_Principal_Bundles.md)
