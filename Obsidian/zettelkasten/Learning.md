@@ -83,12 +83,17 @@ Resources
 
 # Representation Theory
 
-[MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
+## Lie Theory
 
+## Categorical Rep Theory
+
+[MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
 
 [CMSA conference on relations to algebraic geometry and mathematical physics](https://www.youtube.com/watch?v=kgu8L6paKNs&list=PL0NRmB0fnLJQiZyGUJyd35rj80k_EgUyt)
 
+## Representation Stability
 
+[MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
 
 
 # Arithmetic Geometry
