@@ -149,6 +149,12 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
 
+# Derived Geometry
+
+## TCH
+
+- [21 Video Course](https://www.youtube.com/playlist?list=PLsmqTkj4MGTB8pNGvW0iuKUFmBlOSke-C)
+
 # Unsorted
 
 ## Field Theories
