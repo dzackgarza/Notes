@@ -11,6 +11,52 @@
 
 [Problem sets](http://www.math.stonybrook.edu/~jstarr/M552s19/ps.html)
 
+# Algebraic Geometry
+
+[](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)[https://dongryul-kim.github.io/harvard\_notes/Math281x/Notes\_Math281x.pdf](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
+
+Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
+
+[Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
+
+[MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
+
+[MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
+
+## Schemes
+
+- [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
+
+[https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
+
+## Stacks
+
+- [Seminar notes on stacks](https://etale.site/livetex/stax.pdf)
+
+# Geometric Topology
+
+## Kirby Calculus
+
+[Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
+
+- Take notes on videos #todo
+
+## Parallelizability
+
+Recommendations from Akram
+
+- p.148 12-b
+- Section 12
+
+## Floer and Symplectic
+
+[Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
+
+[Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
+
+[Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
+
+
 # Arithmetic Geometry
 
 [https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
@@ -47,28 +93,6 @@ Resources
 ## Algebraic Number Theory
 - [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
 
-# Geometric Topology
-
-## Kirby Calculus
-
-[Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
-
-- Take notes on videos #todo
-
-## Parallelizability
-
-Recommendations from Akram
-
-- p.148 12-b
-- Section 12
-
-## Floer and Symplectic
-
-[Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
-
-[Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
-
-[Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
 
 # Algebraic Topology
 
@@ -132,27 +156,6 @@ Some stuff from Morgan:
 
 [Conference on homological mirror symmetry](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQRXH3HKos6e4bu8IyfmZCY)
 
-# Algebraic Geometry
-
-[](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)[https://dongryul-kim.github.io/harvard\_notes/Math281x/Notes\_Math281x.pdf](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
-
-Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
-
-[Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
-
-[MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
-
-[MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
-
-## Schemes
-
-- [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
-
-[https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
-
-## Stacks
-
-- [Seminar notes on stacks](https://etale.site/livetex/stax.pdf)
 
 # Motivic Stuff
 ![Roadmap to learning motivic homotopy theory](attachments/roadmap.pdf)
