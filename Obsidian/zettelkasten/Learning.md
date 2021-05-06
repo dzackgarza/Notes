@@ -102,11 +102,13 @@ Resources
 
 [Seminar talks on the Weil conjectures](https://math.mit.edu/nt/old/stage_f20.html)
 
+[Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
+
 ## Abelian Varieties
 
 [http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
 
-[Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
+[Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
 
 
 # Algebraic Topology
@@ -220,7 +222,7 @@ See [Langlands](Langlands.md)
 # Unsorted
 
 
-## Prism-y p-adic-y Hodge-The
+## Prism-y p-adic-y Hodge-Theory-y Stuff
 
 [Seminar on crystalline and prismatic cohomology](https://math.mit.edu/nt/index_stage)
 
@@ -237,8 +239,6 @@ See [Langlands](Langlands.md)
 
 
 
-
-
 ## Full Courses
 
 [Topological Cyclic Homology](https://www.notion.so/Topological-Cyclic-Homology-0db929d8a26943879bb36c916a3877ff)
@@ -248,6 +248,6 @@ See [Langlands](Langlands.md)
 [Derived Algebraic Geometry](https://www.notion.so/Derived-Algebraic-Geometry-3ee38d9dcb0147c59d5b151669216941)
 
 
-[Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
+
 
 # End
