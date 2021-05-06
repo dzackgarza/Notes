@@ -1,0 +1,2 @@
+- Can define metrics and curvature forms on line bundles p-adic analytically.
+- 

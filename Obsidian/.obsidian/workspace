@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "c054a9211b312516",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/line bundle.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -78,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md",
+                "file": "zettelkasten/line bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md"
+                "file": "zettelkasten/line bundle.md"
               }
             }
           },
@@ -146,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md",
+                "file": "zettelkasten/line bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md"
+                "file": "zettelkasten/line bundle.md"
               }
             }
           },
@@ -200,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md",
+                "file": "zettelkasten/line bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,8 +248,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e9efadc5f1b2457f",
+  "active": "c054a9211b312516",
   "lastOpenFiles": [
+    "zettelkasten/line bundle.md",
     "Quick_Notes/2021-05-05.md",
     "zettelkasten/Poincare bundle.md",
     "Quick_Notes/2021-05-06.md",
@@ -247,7 +259,6 @@
     "zettelkasten/Untitled 1.md",
     "zettelkasten/2021-04-26_Fukaya_Categories.md",
     "zettelkasten/ambidexterity.md",
-    "zettelkasten/differential graded algebras.md",
-    "zettelkasten/2021-04-26_Stacks_and_Orbifolds.md"
+    "zettelkasten/differential graded algebras.md"
   ]
 }
