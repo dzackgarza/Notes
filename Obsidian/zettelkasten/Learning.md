@@ -56,19 +56,6 @@ Recommendations from Akram
 
 [Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
 
-
-# Arithmetic Geometry
-
-[https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
-
-[Seminar talks on the Weil conjectures](https://math.mit.edu/nt/old/stage_f20.html)
-
-## Abelian Varieties
-
-[http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
-
-[Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
-
 # Number Theory
 
 ## Class Field Theory
@@ -92,6 +79,29 @@ Resources
 
 ## Algebraic Number Theory
 - [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
+
+
+# Representation Theory
+
+[MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
+
+
+[CMSA conference on relations to algebraic geometry and mathematical physics](https://www.youtube.com/watch?v=kgu8L6paKNs&list=PL0NRmB0fnLJQiZyGUJyd35rj80k_EgUyt)
+
+
+
+
+# Arithmetic Geometry
+
+[https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
+
+[Seminar talks on the Weil conjectures](https://math.mit.edu/nt/old/stage_f20.html)
+
+## Abelian Varieties
+
+[http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
+
+[Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
 
 
 # Algebraic Topology
@@ -166,13 +176,6 @@ Some stuff from Morgan:
 
 - Twitter rec: [https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
 
-# Representation Theory
-
-[MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
-
-[MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
-
-[CMSA conference on relations to algebraic geometry and mathematical physics](https://www.youtube.com/watch?v=kgu8L6paKNs&list=PL0NRmB0fnLJQiZyGUJyd35rj80k_EgUyt)
 
 # Derived Geometry
 
