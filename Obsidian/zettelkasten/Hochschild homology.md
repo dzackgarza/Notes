@@ -1,8 +1,9 @@
 ---
 date: 2021-04-26
-tags: 
-  - Unfiled
+aliases: ["HH"]
 ---
+
+References: [topological Hochschild homology](topological%20Hochschild%20homology.md) | [[cycli]]
 
 When proving stuff about algebras -- try with polynomial algebras first, essentially the simplest case.
 Simplest coalgebra case: divided power algebras (also a Hopf algebra)
@@ -11,9 +12,9 @@ Simplest coalgebra case: divided power algebras (also a Hopf algebra)
 
 Reference: <a href="file:///home/zack/Dropbox/Library/Charles A. Weibel/An Introduction to Homological Algebra (489)/An Introduction to Homological Algebra - Charles A. Weibel.pdf#page=312">Chapter 9 of Weibel</a>
 
-The Hochschild homology of an $R\dash R\dash$bimodule reflects some ring-theoretic stuff. For instance, $H_1(R,R)$ of a $k\dash$algebra $R$ is the module of differentials $\Omega_R/k$. If $Q\subseteq R$ then there is an algebraic decomposition of this homology that is analogous to the Hodge decomposition in complex manifold theory.
+The Hochschild homology of an $R\dash R\dash$bimodule reflects some ring-theoretic stuff. For instance, $H_1(R,R)$ of a $k\dash$algebra $R$ is the module of differentials $\Omega_R/k$. If $Q\subseteq R$ then there is an algebraic decomposition of this homology that is analogous to the [Hodge decomposition](Hodge%20decomposition) in complex manifold theory.
 
-Taking the above example further if $k$ is a ring and $X$ a simplicial set, the cyclic homology (Hochschild homology taking into account a cyclic action on the corresponding simplicial set) of the simplicial module $k[X]$ is the same as the $S_1\dash$equivariant homology of the geometric realization of $X$ with coefficients in $k$.
+Taking the above example further if $k$ is a ring and $X$ a [simplicial set](simplicial%20set.md), the [cyclic homology](cyclic%20homology) (Hochschild homology taking into account a cyclic action on the corresponding simplicial set) of the simplicial module $k[X]$ is the same as the $S_1\dash$equivariant homology of the geometric realization of $X$ with coefficients in $k$.
 
 K-theory is like homology on rings. Moreover, algebraic topology is clearly interested in vector bundles; on a nice space $X$ the category of rank $n$ $\RR\dash$vector bundles on $X$ is equivalent to the category of rank $n$ finitely generated projective modules over the continuous functions $C(X,\RR)$. The group $K_0(C(X))$ is the Grothendieck group of the isomorphism classes of finitely generated projectives.
 

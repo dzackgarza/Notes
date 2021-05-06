@@ -54,13 +54,13 @@ tags:
 ## Infinity Categories
 - [Standard category theory reference](zettelkasten/2021-04-26_Category_Theory_Reference.md)
 - [Quasicategories](zettelkasten/2021-04-26_Quasicategories.md)
-- [Simplicial Sets](zettelkasten/2021-04-26_Simplicial_Sets.md)
+- [Simplicial Sets](zettelkasten/simplicial%20set.md)
 - [Basics of $\infty\dash$category theory](zettelkasten/2021-04-26_Introduction_to_Infty_Categories.md)
 
 ## Algebraic K-Theory and THH
 - [Why study K-theory?](zettelkasten/2021-04-26_Why_study_K_theory.md)
 - [K-theory for schemes](zettelkasten/2021-04-26_Algebraic_K_theory_for_schemes.md)
-- [Why study Hochschild Homology?](zettelkasten/2021-04-26_hochschild_homology.md)
+- [Why study Hochschild Homology?](zettelkasten/Hochschild%20homology.md)
 
 ## Stable Homotopy
 - [Why study stable homotopy?](zets/2021-04-26_Stable_Homotopy.md)

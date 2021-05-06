@@ -31,7 +31,7 @@ admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex mis
 
 :::{.remark}
 This is a specialized notion of a [Kan complex](Kan%20complex), and in particular all [infty categories](infty%20categories.md) are Kan complexes.
-All inner horns are fillable, i.e. [2021-04-26_Simplicial_Sets](2021-04-26_Simplicial_Sets.md) are *inner* Kan complexes.
+All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
 Different to Kan complexes, which include all $i$.
 :::
 

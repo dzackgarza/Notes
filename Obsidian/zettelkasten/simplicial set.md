@@ -1,7 +1,6 @@
 ---
 date: 2021-04-26
-tags: 
-  - Unfiled
+aliases: ["simplicial sets", "sSets"]
 ---
 
 The "dual" of geometric realization is totalization.

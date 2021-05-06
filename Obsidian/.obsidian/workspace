@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/motivic homotopy.md",
+            "file": "zettelkasten/Hochschild homology.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Hochschild homology.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md"
+                "file": "zettelkasten/Hochschild homology.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Hochschild homology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md"
+                "file": "zettelkasten/Hochschild homology.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Hochschild homology.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
-    "zettelkasten/motivic homotopy.md",
-    "zettelkasten/derived algebraic geometry.md",
-    "zettelkasten/Untitled 1.md",
-    "zettelkasten/Learning.md",
-    "zettelkasten/Homological Stability.md",
-    "zettelkasten/Untitled.md",
-    "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a.md",
-    "zettelkasten/Learning/Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a/EllipticCurve_notes1.pdf",
-    "zettelkasten/Dold-Kan correspondence.md",
-    "00_Floer homology project Heegard diagrams.md"
+    "zettelkasten/Hochschild homology.md",
+    "zettelkasten/2021-04-26_Simplicial_Sets.md",
+    "zettelkasten/topological Hochschild homology.md",
+    "zettelkasten/hochschild homology.md",
+    "zettelkasten/THH.md",
+    "zettelkasten/2021-04-26_hochschild_homology.md",
+    "Quick_Notes/2021-05-06.md",
+    "zettelkasten/differential graded algebras.md",
+    "zettelkasten/Cotangent Complex.md",
+    "zettelkasten/Kan extension.md"
   ]
 }

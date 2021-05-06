@@ -32,7 +32,7 @@ aliases: ["Big list of words I don't know"]
 - [[Perfectoid stuff]]
 - [[Derived algebraic geometry]]
 	- [de Rham-Witt complex](de%20Rham-Witt%20complex)
-	- [[Topological Hochschild Homology]] and [[THH]]
+	- [[Topological Hochschild Homology]] and [[topological Hochschild homology]]
 - [[Geometric topology]]
 - [Stable homotopy](Stable%20homotopy.md)
 	- [[Chromatic homotopy theory]]	
