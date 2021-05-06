@@ -4,13 +4,13 @@ tags:
   - Unfiled
 ---
 
-# Introduction to $\infty\dash$Categories
+# Introduction to [infty Categories](infty%20categories.md)
 
 > These are notes roughly transcribed from [this video](https://www.youtube.com/watch?v=3IjAy0gHRyY)
 
 ## Preliminary Definitions
 
-Dealing with size issues: take a Grothendieck Universe $\mathcal{U}$, which are the sets whose subsets are closed under all of the usual set operations (small).
+Dealing with size issues: take a [Grothendieck Universe](Grothendieck%20Universe) $\mathcal{U}$, which are the sets whose subsets are closed under all of the usual set operations (small).
 
 
 :::{.definition title="$\infty\dash$Category"}
@@ -30,8 +30,8 @@ admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex mis
 
 
 :::{.remark}
-This is a specialized notion of a Kan complex, and in particular all $\infty\dash$categories are Kan complexes.
-All inner horns are fillable, i.e. simplicial sets are *inner* Kan complexes.
+This is a specialized notion of a [Kan complex](Kan%20complex), and in particular all [infty categories](infty%20categories.md) are Kan complexes.
+All inner horns are fillable, i.e. [2021-04-26_Simplicial_Sets](2021-04-26_Simplicial_Sets.md) are *inner* Kan complexes.
 Different to Kan complexes, which include all $i$.
 :::
 
@@ -44,15 +44,17 @@ Given an ordinary category $\mathcal{C}$, define the **nerve** of $\mathcal{C}$ 
 \[  
 N(\mathcal{C})_n \da \ts{\text{Functors } F: [n] \to \mathcal{C}}
 \]
+
 where $[n]$ is the poset category on $\ts{1, 2, \cdots, n}$.
 So an $n\dash$simplex is a diagram of objects $X_0, \cdots, X_n \in \Ob(\mathcal{C})$ and a sequence of maps.
+
 This defines an $\infty\dash$category, and there is a correspondence
 \[  
 \correspond{\text{ Functors } F: \mathcal{C} \to \mathcal{D}}
 &\iff
 \correspond{\infty\dash\text{Functors } \hat F: N(\mathcal{C}) \to N(\mathcal{D})}
 .\]
-Note that taking the nerve of a category preserves the usual categorical structure, since the objects are the 0-simplices and the morphisms are the 1-simplices.
+Note that taking the [nerve](nerve) of a category preserves the usual categorical structure, since the objects are the 0-simplices and the morphisms are the 1-simplices.
 :::
 
 
@@ -271,7 +273,8 @@ Note that the pullback construction from before seems to generalize:
 	\arrow[from=1-1, to=1-3, dashed]
 	\arrow["\lrcorner"{very near start, rotate=0}, from=1-1, to=2-2, phantom]
 \end{tikzcd}
-[Link to diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJNYXAoYSwgYikiXSxbMiwwLCJcXEZ1bihcXERlbHRhXm4sIFxcbWF0aGNhbHtDfSkiXSxbMCwyLCJcXERlbHRhXjAiXSxbMiwyLCJcXG1hdGhjYWx7Q30gXFxjcm9zcyBcXG1hdGhjYWx7Q30iXSxbMSwxXSxbMSwzXSxbMiwzLCIoYSwgYikiLDJdLFswLDIsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDEsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDQsIiIsMCx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dXQ==)
+
+> [Link to diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJNYXAoYSwgYikiXSxbMiwwLCJcXEZ1bihcXERlbHRhXm4sIFxcbWF0aGNhbHtDfSkiXSxbMCwyLCJcXERlbHRhXjAiXSxbMiwyLCJcXG1hdGhjYWx7Q30gXFxjcm9zcyBcXG1hdGhjYWx7Q30iXSxbMSwxXSxbMSwzXSxbMiwzLCIoYSwgYikiLDJdLFswLDIsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDEsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDQsIiIsMCx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dXQ==)
 
 This can be thought of as the space of $n\dash$simplices whose vertices are at the $n+1$ given objects.
 We can define compositions of morphisms by taking $n=3$, and applying boundary operators yields maps
@@ -285,7 +288,8 @@ We can define compositions of morphisms by taking $n=3$, and applying boundary o
 	\arrow["{f = (\bd_0, \bd_2)}"', from=1-3, to=3-1]
 	\arrow["{\exists h}"', from=3-1, to=3-5, dashed]
 \end{tikzcd}
-[Link to diagram](https://q.uiver.app/?q=WzAsMyxbMiwwLCJcXE1hcF97XFxtYXRoY2FsIEN9KGEsYixjKSJdLFs0LDIsIlxcTWFwX3tcXG1hdGhjYWwgQ30oYSwgYykiXSxbMCwyLCJcXE1hcF97XFxtYXRoY2FsIEN9KGIsYykgXFxjcm9zcyBcXE1hcF97XFxtYXRoY2FsIEN9KGEsIGIpIl0sWzAsMSwiXFxiZF8xIl0sWzAsMiwiZiA9IChcXGJkXzAsIFxcYmRfMikiLDJdLFsyLDEsIlxcZXhpc3RzIGgiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+> [Link to diagram](https://q.uiver.app/?q=WzAsMyxbMiwwLCJcXE1hcF97XFxtYXRoY2FsIEN9KGEsYixjKSJdLFs0LDIsIlxcTWFwX3tcXG1hdGhjYWwgQ30oYSwgYykiXSxbMCwyLCJcXE1hcF97XFxtYXRoY2FsIEN9KGIsYykgXFxjcm9zcyBcXE1hcF97XFxtYXRoY2FsIEN9KGEsIGIpIl0sWzAsMSwiXFxiZF8xIl0sWzAsMiwiZiA9IChcXGJkXzAsIFxcYmRfMikiLDJdLFsyLDEsIlxcZXhpc3RzIGgiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
 
 where the existence of $h$ follows from the fact that $f$ is an equivalence and can thus be inverted.
 This is induced by maps on Kan complexes
@@ -305,24 +309,24 @@ This can be thought of as horn-filling in families.
 :::
 
 :::{.remark}
-Why is this important?
+**Why is this important?**
 Given two morphisms, we can pick a composition, and there are multiple ways to do so.
 We can then look at the middle face to define the actual composition, up to equivalence of morphisms.
 This relies on a choice of homotopy inverse $s$, allowing us to define a map $\circ_s$.
 But given an equivalence, there is a unique homotopy inverse up to homotopy, so any two choices of $s$, say $s$ and $s'$ give homotopic maps $\circ_s$ and $\circ_{s'}$.
-In good situations, we have even more: the space of such choices will be contractible, which is stronger than there just being a homotopy between any two choices.
+In good situations, we have even more: the space of such choices will be [contractible](contractible%20choice), which is stronger than there just being a homotopy between any two choices.
 So composition is "unique", it's just that there's not one preferred choice.
 :::
 
 :::{.remark}
 Associativity follows from a similar line of reasoning applied to $\Map_{\mathcal{C}}(a,b,c,d)$ on four objects.
-Compare this to Segal categories, where such spaces are part of the data: categories weakly enriched in spaces, and $\infty\dash$categories recover this for free.
+Compare this to [Segal categories](Segal%20categories), where such spaces are part of the data: categories weakly enriched in spaces, and $\infty\dash$categories recover this for free.
 There is a way to think of $\infty\dash$categories as "categories enriched in Kan complexes" with a more strict condition of associativity.
 :::
 
 :::{.remark}
 We recover all of ordinary category theory when the mapping spaces are discrete.
-Looking at Kan complexes also yields $\infty\dash$categories where all of the morphisms are invertible, so these are in fact $\infty\dash$groupoids.
+Looking at Kan complexes also yields $\infty\dash$categories where all of the morphisms are invertible, so these are in fact [infinity groupoids](infinity%20groupoids).
 For us, "spaces" and Kan complexes are synonymous, and the $\infty\dash$category of spaces will be the fundamental example we run with.
 :::
 

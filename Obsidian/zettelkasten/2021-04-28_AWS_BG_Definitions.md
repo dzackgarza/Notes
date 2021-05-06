@@ -21,7 +21,7 @@ Terms to lookup and define. For each term, provide
 - [Quasicoherent sheaf](Quasicoherent%20sheaf)
 - Representation of a group
 - Nilpotent
-- [Ramified](../Ramification.md)
+- [Ramified](ramified%20primes.md)
 - [../Thom spectrum](../Thom%20spectrum.md)
 - [[Deformation space]]
 - [Local class field theory](Local%20class%20field%20theory)

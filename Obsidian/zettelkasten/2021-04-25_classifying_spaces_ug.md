@@ -12,7 +12,7 @@ date: 2021-04-26T10:40
 
 _Remark_: A consequence of this is that each $F_b \cong G \in \text{TopGrp}$ (which may also be taken as the definition). Furthermore, each $F_b$ is then a _homogeneous space_, i.e. a space with a transitive group action $G\actson F_b$ making $F_b \cong G/G_x$.
 
-_Remark_: Although each fiber $F_b$ is isomorphic to $G$, there is no preferred identity element in $F_b$. Locally, one can form a local section by choosing some $e\in F_b$ to serve as the identity, but the fibers can only be given a global group structure iff the bundle is trivial. This property is expressed by saying $F_b$ is a _$G\dash$ torsor_.
+_Remark_: Although each fiber $F_b$ is isomorphic to $G$, there is no preferred identity element in $F_b$. Locally, one can form a local section by choosing some $e\in F_b$ to serve as the identity, but the fibers can only be given a global group structure iff the bundle is trivial. This property is expressed by saying $F_b$ is a $G\dash$ [torsor](torsor).
 
 _Remark_: Every fiber bundle $F\to E\to B$ is a principal $\Aut(F)\dash$ fiber bundle. Also, in local trivializations, the transition functions are elements of $G$.
 

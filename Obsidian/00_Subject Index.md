@@ -19,11 +19,11 @@
 - [Langlands](zets/2021-04-26_Langlands.md)
 - [Tate Modules](zettelkasten/2021-04-26_Tate_Modules.md)
 
-## Representation Theory
+## [[zettelkasten/Representation theory]]
 - [Lie Groups, the Erlangen Program, and Physics](zettelkasten/2021-04-26_Lie_Groups_Erlangen_and_Physics.md)
 
 ## Derived AG
 - [Schemes](zettelkasten/2021-04-26_Schemes.md)
-- [Stacks](zettelkasten/2021-04-26_Stacks.md)
+- [Stacks](zettelkasten/Stacks.md)
 - [Stacks and Orbifolds](zettelkasten/2021-04-26_Stacks_and_Orbifolds.md)
 - [The Cotangent Complex and Derived de Rham Cohomology](zettelkasten/2021-04-26_The_Cotangent_Complex_and_Derived_de_Rham_Cohomology.md)

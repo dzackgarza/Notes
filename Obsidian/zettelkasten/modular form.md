@@ -1,3 +1,3 @@
 ---
-aliases: ["modular forms", "modularity"]
+aliases: ["modular forms", "modularity", "modular"]
 ----

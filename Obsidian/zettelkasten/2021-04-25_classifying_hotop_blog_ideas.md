@@ -139,7 +139,7 @@ which is a bit far afield for us now but leads to the rich and fruitful theory c
 The moral of the story here is that we can generalize a product of spaces $A \times B \times C \times \cdots$
 as a "twisted product" $A \semidirect_{\varphi_1} B  \semidirect_{\varphi_1} C  \semidirect_{\varphi_1} \cdots$
 by constructing an interlocking series of fibrations. Luckily for us, our next step towards
-solving our original problem will involve the construction of Postnikov towers, which explicitly
+solving our original problem will involve the construction of [Postnikov towers](Postnikov%20tower), which explicitly
 encode how this interlocking works.
 
 ## Postnikov Towers

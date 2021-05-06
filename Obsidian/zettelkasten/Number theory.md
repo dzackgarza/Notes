@@ -1,6 +1,6 @@
 - [[Ring of integers]]
 -  Archimedean field
-- [[Ramification]]
+- [[ramified primes]]
 - [[Reduction]]
 - [Divisor](Divisor.md)
 - [[Function field]]
@@ -9,7 +9,7 @@
 - [Elliptic curve](Elliptic%20curve.md)
 - [[Riemann-Roch]]
 - [[Base change]]
-- [[Jacobians]]
+- [[Jacobian]]
 - [[Picard group]] 
 	- (e.g. of $L_{K(n)}S^O$)
 - [[Adeles]]

@@ -9,7 +9,7 @@ tags:
 - [Weil Conjectures](../Subjects/Weil%20Conjectures.md)
 - [[Tate conjecture]]
 - [[Homotopy groups of spheres]]
-- [[Beilinson-Bloch]]
+- [[Beilinson-Bloch conjecture]]
 - [[Birch and Swinnerton-Dyer conjecture]]
 
 ---

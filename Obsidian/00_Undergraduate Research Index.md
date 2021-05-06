@@ -35,7 +35,7 @@ tags:
 - [Representing Eilenberg-Maclane spaces geometrically](zettelkasten/2021-04-25_representing_KGn_geometrically.md)
 - [Principal Bundles](zettelkasten/2021-04-26_Principal_Bundles.md)
 - [Using the Path-Loop fibration](zettelkasten/2021-04-26_Path_Loop_Fibration.md)
-- [Moduli Spaces](zettelkasten/2021-04-26_Moduli_Spaces.md)
+- [Moduli Spaces](zettelkasten/moduli%20spaces.md)
 
 
 ## Classifying Spaces, Postnikov Towers, Obstruction Theory
@@ -44,7 +44,7 @@ tags:
 - [Classifying spaces](zettelkasten/2021-04-25_classifying_spaces_ug.md)
 - [Eilenberg-Maclane Spaces](zettelkasten/Eilenberg-MacLane%20Spaces.md)
 - [Classifying hoTop: twisted products of EM spaces](zettelkasten/2021-04-25_classifying_hotop_blog_ideas.md)
-- [Obstruction Theory](zettelkasten/2021-04-26_Obstruction_Theory.md)
+- [Obstruction Theory](zettelkasten/Obstruction%20Theory.md)
 
 ## Homotopy Groups of Spheres
 - [What do we know about them?](zettelkasten/2021-04-26_Unstable_Homotopy_Groups_of_Spheres.md)

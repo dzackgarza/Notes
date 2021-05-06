@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "2df0249b61cf6ebb",
+        "id": "ce1d1a531a54451c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "00_Floer homology project Heegard diagrams.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -37,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "03-30-22:49.png",
+                "query": "\"homotopy category\"",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -75,6 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -108,40 +113,8 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "ddedd1d5d99275ee",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
               "state": {
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.40844332494219937,
-                  "close": false
-                }
+                "file": "00_Floer homology project Heegard diagrams.md"
               }
             }
           },
@@ -154,7 +127,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00_Floer homology project Heegard diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +163,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "00_Floer homology project Heegard diagrams.md"
+              }
             }
           },
           {
@@ -218,24 +194,59 @@
               "type": "juggl_style",
               "state": {}
             }
+          },
+          {
+            "id": "ddedd1d5d99275ee",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "00_Floer homology project Heegard diagrams.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.40844332494219937,
+                  "close": false
+                }
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 480
+    "width": 200
   },
-  "active": "2df0249b61cf6ebb",
+  "active": "ce1d1a531a54451c",
   "lastOpenFiles": [
-    "Quick_Notes/2021-05-02.md",
     "00_Floer homology project Heegard diagrams.md",
-    "00_Projects Index.md",
-    "Quick_Notes/2021-04-25.md",
-    "Quick_Notes/2021-04-26.md",
-    "Quick_Notes/2021-04-29.md",
-    "Quick_Notes/2021-04-30.md",
-    "Quick_Notes/2021-05-01.md",
-    "00_Floer homology project - Heegard diagrams.md",
-    "zettelkasten/Picard group.md"
+    "zettelkasten/Floer Reading Group Fall 2020.md",
+    "Quick_Notes/2021-03-25.md",
+    "zettelkasten/homotopy category.md",
+    "zettelkasten/Model category.md",
+    "zettelkasten/Kan extension.md",
+    "zettelkasten/Kan complex.md",
+    "zettelkasten/fibrant replacement.md",
+    "zettelkasten/Untitled.md",
+    "zettelkasten/BG.md"
   ]
 }

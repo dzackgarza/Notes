@@ -1,0 +1,1 @@
+![G-torsors and principal bundles](attachments/Pasted%20image%2020210505014936.png)

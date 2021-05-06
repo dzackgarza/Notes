@@ -1,0 +1,3 @@
+---
+aliases: ["resolution of singularities"]
+---

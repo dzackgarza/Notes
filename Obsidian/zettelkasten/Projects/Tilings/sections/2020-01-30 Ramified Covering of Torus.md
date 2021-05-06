@@ -29,7 +29,7 @@ We define
 \mathrm{Cov}_d (C_1, \cdots, C_s) = \sum_{\sigma \in H_d(C_i) / S(d)} \frac{1}{\abs{\Aut(\sigma)}} = \frac{\abs{H^d(C_1, \cdots, C_2)}}{d!}
 .\end{align*}
 
-This just yields a number, so we can define a generating function:
+This just yields a number, so we can define a [generating function](generating%20function):
 
 \begin{align*}
 \mathrm{Cov}(C_1, \cdots, C_s) = \sum_{d=0}^\infty q^d \mathrm{Cov}_d(C_1, \cdots, C_s)
@@ -41,7 +41,7 @@ To make sense of $C_i$ in all $S^d$, write $C_i = (m_{i1}, \cdots , m_{ik})$ and
 *Remark:*
 The generating function counts all (possibly) disconnected covers.
 Example: $\mathrm{Cov}(\wait)$ counts all unramified covers, and $\phi(C_1, \cdots C_s)$ counts connected covers.
-These generating functions will end up being quasimodular.
+These generating functions will end up being [quasimodular](quasimodular).
 
 **Definition**:
 Set $H_d^1(C_1, \cdots, C_S) \subset H_d(C_1, \cdots, C_S)$ be the degree $d$ coverings *without* unramified components.
@@ -74,7 +74,7 @@ Conjugacy classes corresponds to partitions of $d$.
 
 **Definition:**
 For $C$ a conjugacy class correspond to a partition $\lambda'$ in $S_d$. 
-For any partition $\lambda$, let $f_C(\lambda) = \# C \chi^\lambda(C) / \dim \lambda$, where $\chi^\lambda$ is the irreducible representation associated to $\lambda$ (note that this is a rescaling of a row of the character table, since irreducible reps happen to correspond to conjugacy classes for $S_d$).
+For any partition $\lambda$, let $f_C(\lambda) = \# C \chi^\lambda(C) / \dim \lambda$, where $\chi^\lambda$ is the irreducible [representation](../../../representation%20theory.md) associated to $\lambda$ (note that this is a rescaling of a row of the character table, since irreducible reps happen to correspond to conjugacy classes for $S_d$).
 This is a class function, so $\chi^\lambda(C)$ is its value on any $c\in C$, and $\dim \lambda \definedas \chi^\lambda(1)$.
 
 **Proposition:**
@@ -88,11 +88,11 @@ We also have $\sum_{g, h} [g, h] \prod C_i \in Z(\CC([S_d]))$, since $[g ,h]^k =
 
 We'll pull out a factor of $\frac 1 {d!} [\id]$, and consider what the coefficient of $[\id]$ is in the group algebra.
 
-Thus $\frac{1}{d!} [\id] = \frac{1}{(d!)^2} \tr_{\text{reg}}\qty{ \sum [g, h] \prod C_i  }$, where we consider the regular representation: multiplying by elements of $g$ is a fixed-point free action, so these are traceless (no terms on the diagonal) whereas the trace of the identity is exactly the dimension of the regular representation, which is $d!$ (?).
+Thus $\frac{1}{d!} [\id] = \frac{1}{(d!)^2} \tr_{\text{reg}}\qty{ \sum [g, h] \prod C_i  }$, where we consider the [regular representation](regular%20representation): multiplying by elements of $g$ is a fixed-point free action, so these are traceless (no terms on the diagonal) whereas the trace of the identity is exactly the dimension of the regular representation, which is $d!$ (?).
 
 Thus we define $\tr_{\text{reg}}(\wait) = \sum_{\lambda} (\dim \lambda) \tr_\lambda(\wait)$.
 
-Note that $\rho: S_d \to \GL(V)$ extends to $\rho: \CC[S_d] \to \endo(V)$, and thus by Schur's Lemma, the image of the center will commute with every endomorphism.
+Note that $\rho: S_d \to \GL(V)$ extends to $\rho: \CC[S_d] \to \endo(V)$, and thus by [Schur's Lemma](Schur's%20Lemma), the image of the center will commute with every endomorphism.
 
 We get a formula:
 
@@ -137,7 +137,7 @@ From the paper,
 \mathrm{Cov}() &= \sum a^{\abs \lambda} = \qty{ \prod_{n\geq 1} 1-q^n }\inv = (q)_\infty\inv
 .\end{align*}
 
-> Note: the partition functions appears!
+> Note: the partition function appears!
 
 For any $F\in \Lambda^*$, we set $\generators{F}_q = (q)_\infty \sum_\lambda q^{\abs \lambda} F(\lambda)$ and 
 $$

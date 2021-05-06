@@ -1,6 +1,8 @@
-# Problems
+References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory](cohomolology%20theory.md)
 
 # Basic Tools
+- [[Mapping cylinder]]
+- [[Mapping cone]]
 - [[Double mapping cylinder]] 
 - [[Mapping telescope]] 
 - [[Suspension]]
@@ -16,7 +18,6 @@
 	- [[Symmetric Spectra]]
 	- [Bordism spectra](zettelkasten/Bordism%20spectra.md)
 	- [[Thom spectrum]]
-- Mapping cylinder/cone
 - [[Model category]]
 	- [Quillen equivalence](Quillen%20equivalence)
 	- Cofibrant generation
@@ -41,7 +42,7 @@
 	- [[Bott periodicity]]
 
 
-# [Chromatic homotopy theory](Chromatic%20homotopy%20theory)
+# [Chromatic homotopy](Chromatic%20homotopy%20theory)
 
 - [Fracture theorem](Fracture%20theorem)
 - The chromatic spectral sequence
@@ -56,13 +57,12 @@
 	- [[Lubin-Tate theory]]
 - [[Kervaire invariant 1]]
 
-# For Schemes
+# [[motivic homotopy]]
 - $E_n$ rings
 - [[Ring Spectra]]
 - [[E_infty Ring Spectra]]
 
-# Current?
+# Current Problems/Research
 - [[Redshift]]
 - [[The generating hypothesis]]
 - [[The telescope conjecture]]
-

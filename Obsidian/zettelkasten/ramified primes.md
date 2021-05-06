@@ -1,0 +1,3 @@
+---
+aliases: ["ramified", "ramifying", "ramification"]
+---

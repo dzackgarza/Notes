@@ -1,0 +1,3 @@
+---
+aliases: ["monoidal", "monoidal category"]
+---

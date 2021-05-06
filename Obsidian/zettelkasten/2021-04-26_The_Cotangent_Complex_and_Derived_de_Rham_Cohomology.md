@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-# The Cotangent Complex and Derived de Rham Cohomology
+# The [Cotangent Complex](Cotangent%20Complex.md) and Derived [de Rham Cohomology](de%20Rham%20Cohomology)
 
 - Reference: [MSRI Workshop on Derived AG, Birational Geometry, Moduli Spaces](https://www.msri.org/workshops/862/schedules/25958).
 
@@ -12,50 +12,56 @@ tags:
 
 ## Motivation
 
-Basic affine objects in AG: commutative rings, replace with simplicial commutative rings which we'll use as a base diagram.
-Later: derived stacks and geometric derived stacks.
+Basic affine objects in AG: commutative rings, replace with [simplicial commutative rings](simplicial%20commutative%20rings) which we'll use as a base diagram.
+Later: [derived stacks](derived%20stacks) and [geometric derived stacks](geometric%20derived%20stacks).
 Here is an evolution of objects. and how we can think about them:
 
 :::{.example title="Algebraic Spaces"}
-Algebraic schemes/spaces, e.g. $\PP^n$.
-Think of these as étale sheaves of sets (think functor of points), identified as discrete spaces:
+[Algebraic schemes](Algebraic%20schemes) or [Algebraic spaces](Algebraic%20spaces), e.g. $\PP^n$.
+Think of these as [étale sheaves](étale%20sheaves) of sets (think functor of points), identified as discrete spaces:
 \[  
 \mathcal{S}_{\leq 0} \da \ts{\text{Discrete spaces}}
 .\]
+
 Every component is contractible, so there are no higher homotopy groups and we think of these as 0-truncated spaces.
 :::
 
 :::{.example title="Stacks"}
-For $X$ a smooth and proper $k\dash$scheme, the Picard stack 
+For $X$ a smooth and proper $k\dash$scheme, the [Picard stack](Picard%20stack) 
 \[
 \underline{\Pic}_{X/k}
 \]
-is an Artin stack, which is a subclass Deligne-Mumford stacks.
+
+is an [Artin stack](Artin%20stack), which is a subclass [Deligne-Mumford stacks](Deligne-Mumford%20stacks).
 Note that this still has automorphisms given by global units on $X$.
 Think of these as 
 \[  
 \mathcal{S}_{\leq 1} \da \ts{\text{Étale sheaves of groupoids}}
 ,\]
-where the notation now suggests 1-truncated spaces, and we can take fundamental groupoids $\Pi_0$ since there is now 1-homotopy.
+
+where the notation now suggests 1-truncated spaces, and we can take [fundamental groupoids](fundamental%20groupoids) $\Pi_0$ since there is now 1-homotopy.
 :::
 
+> Related links: [étale sheaves](étale%20sheaves) of [groupoids](groupoid).
+
 :::{.remark}
-Note that the Picard stack can be identified as a mapping stack,
+Note that the [Picard stack](Picard%20stack) can be identified as a [mapping stack](mapping%20stack),
 \[  
 \underline{\Map}(X, K(\GG_m, 1))
 .\]
 :::
 
 :::{.example title="Higher Stacks"}
-$K(\GG_m, n)$ is a "higher stack", thought of as a sheaf taking values in $n\dash$truncated spaces $\mathcal{S}_{\leq n}$, i.e. a space where when basing at any point, there are no homotopy groups above degree $n$:
+$K(\GG_m, n)$ is a [higher stack](higher%20stack), thought of as a sheaf taking values in $n\dash$truncated spaces $\mathcal{S}_{\leq n}$, i.e. a space where when basing at any point, there are no homotopy groups above degree $n$:
 \[  
 \mathcal{S}_{\leq n} \da \ts{\text{Étale sheaves of $n\dash$truncated spaces}}
 .\]
-This is a stack with a single point, where the isotopy is $K(\GG_m, n-1)$.
+
+This is a stack with a single point, where the isotropy is $K(\GG_m, n-1)$.
 :::
 
 :::{.remark}
-Note that these are all built from affine schemes with a few acceptable moves.
+Note that these are all built from [affine schemes](affine%20schemes) with a few acceptable moves.
 :::
 
 :::{.remark}
@@ -70,8 +76,8 @@ B\GG_m &= K(\GG_m, 1) \cong [\pt/\GG_m] \\
 K(\GG_m, 2) &= [\pt / B\GG_m]
 ,\]
 where the latter is a smooth Artin stack.
-Mapping into this gives the Picard groupoid of a scheme.
-These are higher geometric stacks that still have some "smoothness" properties.
+Mapping into this gives the [Picard groupoid](Picard%20groupoid) of a scheme.
+These are higher [geometric stacks](geometric%20stacks) that still have some "smoothness" properties.
 :::
 
 :::{.question}
@@ -79,7 +85,7 @@ What does it mean to give a map from a scheme $X$ into a higher stack?
 :::
 
 :::{.remark title="The fundamental process for building stacks"}
-Note that the category of étale schemes taking values in $\mathcal{S}_{\leq n}$ is enriched in topological spaces.
+Note that the category of [étale schemes](étale%20schemes) taking values in $\mathcal{S}_{\leq n}$ is [enriched](Enriched%20category.md) in topological spaces.
 There is a topological space 
 \[
 M\da \Map(X, K(\GG_m, n))
@@ -92,24 +98,25 @@ H^{n-i}_{\et}(X, \GG_m) & 0\leq i \leq n \\
 0 & \text{else}
 \end{cases}
 .\]
+
 So this higher geometric stack that says something about higher étale cohomology groups.
 We thus have étale sheaves taking values in higher topological spaces, and has some geometric meaning.
 They're also built from geometric objects: namely, iterating taking quotients by smooth actions.
-$K(\GG_m, 1)$ is a quotient by a smooth algebraic group, $K(\GG_m, 2)$ is now a smooth *Artin stack*, and we can keep going.
+$K(\GG_m, 1)$ is a quotient by a smooth algebraic group, $K(\GG_m, 2)$ is now a smooth Artin stack, and we can keep going.
 This is the fundamental process for building geometric higher stacks.
 :::
 
 
 :::{.remark}
-Why derive things?
+Why [derive](Derived%20algebraic%20geometry) things?
 Schemes are equipped with sheaves of commutative rings, so the basic idea is let the sheaves take values in groupoids, stacks, etc.
-So we can consider replacing the structure sheaf $\OO_X$ is itself a sheaf of spaces, and this is the fundamental idea of derived algebraic geometry.
+So we can consider replacing the structure sheaf $\OO_X$, which is itself a sheaf of spaces, and this is the fundamental idea of derived algebraic geometry.
 :::
 
 ## Derived Schemes
 
 Consider $\spec k\tensor_{k[x]}^L k$, a derived tensor product.
-This is a *simplicial commutative ring*, and the basic version of an *affine derived scheme*.
+This is a [simplicial commutative ring](simplicial%20commutative%20ring), and the basic version of an affine [derived scheme](derived%20scheme).
 This is a complex $C^\wait$ with homology in degree 0 and 1, where 
 \[
 H_1 = \Tor^1(k\tensor_{k[x]} k)
@@ -118,18 +125,18 @@ So analogously, we'll start with derived schemes and take quotients by smooth gr
 In the end, we get derived stacks.
 
 :::{.example title="Fundamental"}
-An example is $\mathcal{M}_\phi$, the moduli of objects in some DG category $\mathcal{C}$.
+An example is $\mathcal{M}_\phi$, the moduli of objects in some [differential graded category](differential%20graded%20category) $\mathcal{C}$.
 :::
 
 ## Simplicial Rings
 
 We need to agree on what the local affine modules will look like. 
-For our purposes, they'll be simplicial commutative rings.
-Consider the **derived category** $\mathcal{C} \da D(\ZZ)_{\geq 0}$ and its connective[^def_connective]
+For our purposes, they'll be [simplicial commutative rings](simplicial%20commutative%20rings).
+Consider the [Derived category](Derived%20category) $\mathcal{C} \da D(\ZZ)_{\geq 0}$ and its connective[^def_connective]
 objects, which are chain complexes $C_\wait$ where $H_{< 0}(C_\wait) = 0$.
-There is a **derived tensor product** 
+There is a [derived tensor product](derived%20tensor%20product) 
 $\tensor^L$
-which makes $\mathcal{C}$ into a symmetric monoidal category.
+which makes $\mathcal{C}$ into a [symmetric monoidal category](symmetric%20monoidal%20category).
 
 Basic idea: we want to look at commutative algebra objects in this symmetric monoidal category $({D}(\ZZ), \tensor^L)$.[^familiar_move]
 Note that of working in a symmetric monoidal abelian category, we will be looking at connective chain complexes, and simplicial rings are one way of studying commutative algebra objects here.
@@ -147,7 +154,7 @@ We have some choices for making sense of DAG:
 
 - Simplicial commutative rings.
 
-- Over $\QQ$, $\QQ\dash$commutative DGAs.
+- Over $\QQ$, $\QQ\dash$commutative [DGAs](differential%20graded%20algebras.md).
 
 Our choice here will be the following: 
 
@@ -182,11 +189,11 @@ An analogy: simplicial commutative $k\dash$algebras enrich usual $k\dash$algebra
 :::
 
 
-## Examples of Simplicial Categories
+## Examples of [Simplicial Categories](Simplicial%20Categories)
 
 ### a: Simplicial Sets and Topological Spaces
 
-$\ssets \homotopic \Top$: this is not an equivalence of categories, but rather they have *equivalent homotopy theories*[^equiv_homotopy_theories], where we have notions of *weak equivalence*[^def_weak_equivalence] on each side.
+$\ssets \homotopic \Top$: this is not an equivalence of categories, but rather they have *equivalent homotopy theories*[^equiv_homotopy_theories], where we have notions of [weak equivalence](Weak%20equivalence) [^def_weak_equivalence] on each side.
 Here there is an $n\dash$simplex on the LHS ($\ssets$), 
 \[
 \Delta^n = \hom_{\Delta}(\wait, [n])
@@ -196,11 +203,11 @@ and on the RHS we have
 \Delta^n_{\text{Top}}\da\ts{\tv{x_0, \cdots, x_n} \in \RR^n \st x_i\geq0,\, \sum x_i = 1}
 \]
 
-If you make a functor $\Delta^n \mapstofrom \Delta^n_{\text{Top}}$, then by Yoneda the presheaf category $\Presh(\Delta) \da \Fun(\Delta\op, \set)$ is generated by representable objects.
-Everything on in $\ssets$ is generated by taking colimits of the $\Delta^n$, so we can make some assignment and extend by colimits to get a functor $\ssets \to \Top$.
+If you make a functor $\Delta^n \mapstofrom \Delta^n_{\text{Top}}$, then by [Yoneda](Yoneda%20lemma) the presheaf category $\Presh(\Delta) \da \Fun(\Delta\op, \set)$ is generated by [representable](representable) objects.
+Everything on in $\ssets$ is generated by taking [colimits](colimits) of the $\Delta^n$, so we can make some assignment and extend by colimits to get a functor $\ssets \to \Top$.
 We have a notion of weak equivalence for $\Top$, and so the notion of weak equivalence on $\ssets$ is just given by pullback along the functor $\ssets\to \Top$, and this induces an equivalence of homotopy theories.
 The inverse functor $\Top \to \ssets$ is the **singular complex construction**.
-Considering $\Delta^\wait_{\Top}$, this is a cosimplicial object in $\Top$.
+Considering $\Delta^\wait_{\Top}$, this is a [cosimplicial object](cosimplicial%20object) in $\Top$.
 
 :::{.remark}
 $\Top$ will denote that 1-category, while $\mcTop$ will be its full $\infty\dash$category.
@@ -212,7 +219,7 @@ so
 \text{Sing}(X) \da \Hom_{\Top}(\Delta_{\Top}^\wait, X)
 \]
 is a simplicial object in $\ssets$.
-As in singular homology, we can get a simplicial abelian group by taking the free abelian group $\ZZ[\Sing(X)]$.
+As in singular homology, we can get a [simplicial abelian group](simplicial%20abelian%20group) by taking the free abelian group $\ZZ[\Sing(X)]$.
 Note that this is just composing functors $\Delta\op \to\Sets$ and $\Sets\to \mods{\ZZ}$.
 We can use this to create a chain complex $C_\wait(\ZZ[\text{Sing}(X)])$, and as expected, we get the singular homology:
 \[
@@ -230,8 +237,8 @@ Theory up to weak equivalence.
 ### b: Simplicial Abelian Groups
 
 We can take simplicial abelian groups $s\Ab$ and the connective objects $D(\ZZ)_{\geq 0}$; these have equivalent homotopy theories.
-There is a notion of weak equivalence on the RHS, quasi-isomorphism, and asking if the literal underlying spaces on the LHS are weakly equivalence as spaces.
-A specific way of doing this is the **Dold-Kan** correspondence:
+There is a notion of weak equivalence on the RHS, [quasiisomorphism](Quasiisomorphism), and asking if the literal underlying spaces on the LHS are weakly equivalent as spaces.
+A specific way of doing this is the [Dold-Kan correspondence](Dold-Kan%20correspondence):
 
 :::{.proposition title="Dold-Kan Correspondence"}
 Suppose we have a simplicial abelian group $M_\wait$, then we have face maps going to the left:
@@ -271,9 +278,10 @@ Defined as
 \[
 s\mathrm{CAlg}_k \da \Fun(\Delta\op,\mathrm{CAlg}_k)
 ,\]
+
 where $k$ is some commutative ring.
-This was studied by Quillen, and an impetus for model categories.
-Models give a notion of weak equivalence and a "right way" of computing: for the usual derived category of a ring, this is taking free/projective/injective resolutions.
+This was studied by Quillen, and an impetus for [model categories](model%20categories).
+Models give a notion of weak equivalence and a "right way" of computing: for the usual [derived category](derived%20category) of a ring, this is taking free/projective/injective resolutions.
 So the LHS is sometimes called a **non-abelian derived category**.
 
 :::{.fact}
@@ -287,19 +295,20 @@ This also yields an equivalence of homotopy theories.
 :::
 
 A different perspective on simplicial commutative rings: 
-there is an adjunction from sets to commutative $k\dash$algebras
+there is an [adjunction](adjunction.md) from sets to commutative $k\dash$algebras
 
 \[  
 \Set &\mapstofrom{}{} \mathrm{CAlg}_k \\
 S &\mapsto K[S]
 .\]
+
 i.e. we send a set to the polynomial ring generated by $S$.
-Any time such an adjunction exists, given an $R\in \mathrm{CAlg}_k$ we can construct a **simplicial resolution** $S^\wait$ and a map $S^\wait \to R$.
+Any time such an adjunction exists, given an $R\in \mathrm{CAlg}_k$ we can construct a [simplicial resolution](simplicial%20resolution) $S^\wait$ and a map $S^\wait \to R$.
 This resolution has the following structure:
 \[  
 S^0 = k[R], \,\, \text{the free commutative algebra on }R
 .\]
-Using the unit and counit maps of the adjunction, one obtains a canonical simplicial object,
+Using the unit and counit maps of the adjunction, one obtains a canonical [simplicial object](simplicial%20object),
 \begin{tikzcd}
   k[R]
     \ar[r, shift right=2.0ex] 
@@ -314,8 +323,8 @@ Using the unit and counit maps of the adjunction, one obtains a canonical simpli
     \ar[l, shift left=1.00ex]
 \end{tikzcd}
 Moreover, $S^\wait \mapsvia{\sim} R$ is a homotopy equivalence.
-So we've taken an arbitrary $k\dash$algebra and replaced it with a *simplicial* $k\dash$algebra which is given by polynomial rings in each degree, typically in infinitely many variables, which has the same homology.
-This is the analog of a projective resolution.
+So we've taken an arbitrary $k\dash$algebra and replaced it with a [simplicial k-algebra](simplicial%20k-algebra) which is given by polynomial rings in each degree, typically in infinitely many variables, which has the same homology.
+This is the analog of a [projective resolution](projective%20resolution).
 
 Now define $\mathrm{CAlg}_k^{\text{poly}}$ as the category of finitely generated polynomial rings, and suppose you have a functor
 \[  
@@ -323,11 +332,13 @@ Now define $\mathrm{CAlg}_k^{\text{poly}}$ as the category of finitely generated
 \mapsvia{F} 
 \mathcal{C}
 \]
+
 where $\mathcal{C}$ is a "reasonable" category or possible in $\infty\dash$category.
 We can consider the category 
 $\Ind(\mathrm{CAlg}_k^{\text{poly}})$ 
-given by formally adjoining filtered colimits.
+given by formally adjoining [filtered colimits](filtered%20colimits).
 We have the following diagram,
+
 \begin{tikzcd}
   \mathrm{CAlg}_k^{\text{poly}} 
     \ar[d, hook]
@@ -343,23 +354,24 @@ We have the following diagram,
   \ar[uur, bend right, "\exists LF"']
 &
 \end{tikzcd}
+
 where the bottom inclusion is given by viewing a commutative ring as the constant simplicial commutative ring, and
 the extension $\tilde F$ exists by applying $F$ to any colimit diagram.
 The functor $LF$ is a derived functor that exists if $\mathcal{C}$ has certain colimits.
 
-So starting with a functor defined on finitely generated polynomial rings, i.e. affine spaces, we get a simplicial derived functor.
-For $R\in \mathrm{CAlg}_k$, using $S^\wait \mapsvia{\sim} R$, we can apply $F$ level-wise to get a new simplicial object $F(S^\wait) \in \mathcal{C}$.
-Then $LF(R)$ is defined by taking the colimit over $\Delta$ yields the geometric realization, i.e. 
+So starting with a functor defined on finitely generated polynomial rings, i.e. affine spaces, we get a simplicial [derived functor](derived%20functors).
+For $R\in \mathrm{CAlg}_k$, using $S^\wait \mapsvia{\sim} R$, we can apply $F$ level-wise to get a new [simplicial object](simplicial%20object) $F(S^\wait) \in \mathcal{C}$.
+Then $LF(R)$ is defined by taking the colimit over $\Delta$ yields the [geometric realization](geometric%20realization), i.e. 
 \[
 LF(R) \da \hocolim_{\Delta} F(S^\wait) = \abs{F(S^\wait)}
 \]
 So we can promote functors on polynomial rings to functors on simplicial commutative rings.
-This ends up being a Kan extension.
+This ends up being a [Kan extension](Kan%20extension.md).
 There is a nice universal property here, namely that functors out of $\mathrm{sAlg}_k$ are equivalent to functors out of $\mathrm{CAlg}_k^{\text{poly}}$ that satisfy some additional properties.
 
 The last example will be the cotangent complex.
 
-## The Cotangent Complex
+## The [Cotangent Complex](Cotangent%20Complex)
 
 There are 3 equivalent ways to view the cotangent complex.
 
@@ -367,6 +379,7 @@ There are 3 equivalent ways to view the cotangent complex.
 
 Use this derived functor approach: it will essentially be the derived functor of taking $\Omega^1$.
 Suppose $k \to R$ in commutative rings, denote by $S^\wait$ again the canonical resolution of $R$, yielding a diagram
+
 \begin{tikzcd}
 k 
   \ar[rd, ""]
@@ -378,14 +391,15 @@ k
   \ar[ru, "\sim"] 
 & 
 \end{tikzcd}
-Take Kahler differentials degree-wise to get 
-$\Omega^1_{S^\wait/k}$
-.
+Take [Kahler differentials](Kahler%20differentials) degree-wise to get 
+$\Omega^1_{S^\wait/k}$.
+
 Now base-change along this map to get a simplicial $R\dash$module,
 \[  
 \Omega^1_{S^\wait/k} \tensor_{S^\wait} R \,\, \in \mathrm{sMod}\dash R
 .\]
-We can now use Dold-Kan to view this as a connective object in $D(R)_{\geq 0}$, the derived category of $R$, yielding $\mathrm{sMod}\dash R \homotopic D(R)_{\geq 0}$, so we define the **cotangent complex of $R/k$** as
+
+We can now use [Dold-Kan](Dold-Kan%20correspondence) to view this as a connective object in $D(R)_{\geq 0}$, the derived category of $R$, yielding $\mathrm{sMod}\dash R \homotopic D(R)_{\geq 0}$, so we define the [cotangent complex](Cotangent%20Complex) of $R/k$** as
 \[  
 L_{R/k} \da \Omega^1_{S^\wait/k} \tensor_{S^\wait} R \,\, \in D(R)_{\geq 0}
 .\]
@@ -400,6 +414,7 @@ We can define them by taking a map
 \[  
 \mathrm{CAlg}_k^{\text{poly}} \mapsvia{\Omega^1_{\wait/k}} D(k)_{\geq 0}
 \]
+
 to the connective objects in the derived category of $k$.
 We can extend to get a diagram
 \begin{tikzcd}
@@ -422,7 +437,7 @@ Here it's not quite clear why this lands in $\mods{k}$ instead of $\mods{R}$, or
 
 Let $k\to R\to S$ where $k$ is a commutative ring and $R, S$ are ordinary (or simplicial) commutative rings.
 Let $M\in \mods{S}$ in $D(S)_{\geq 0}$. 
-There is a natural enrichment in topological spaces, so we'll write $\Map$ for homs with their topological structure.
+There is a natural [enrichment](Enriched%20category.md) in topological spaces, so we'll write $\Map$ for homs with their topological structure.
 In particular, these have homotopy groups.
 The universal property that the cotangent complex has comes from an equivalence
 \[  
@@ -430,13 +445,14 @@ The universal property that the cotangent complex has comes from an equivalence
 \homotopic
 \Map_{\mathrm{sCAlg}_{k//S}}(R, S\oplus M)
 .\]
-where the latter is in the category of simplicial commutative $k\dash$algebras with a *fixed* map to $S$, a bit like a comma category.
+
+where the latter is in the category of simplicial commutative $k\dash$algebras with a *fixed* map to $S$, a bit like a [comma category](comma%20category).
 This makes sense because $R\to S$ is a fixed map, and $S\oplus M$ has a projection to $S$, i.e. this is a square zero extension.
 
 :::{.remark}
-The point of simplicial commutative rings is that this extension still makes sense, even when $M$ is a chain complex.
+The point of [simplicial commutative rings](simplicial%20commutative%20rings) is that this extension still makes sense, even when $M$ is a chain complex.
 It's still possible to make this into a simplicial commutative ring.
-This may look familiar from the exercises in Hartshorne, since it resembles the definition of Kahler differentials.
+This may look familiar from the exercises in Hartshorne, since it resembles the definition of [Kahler differentials](Kahler%20differentials).
 :::
 
 
@@ -459,12 +475,13 @@ This is similar to having a lift
 & S
 \end{tikzcd}
 where giving $\tilde f$ is like giving a derivation $R\to M$.
-So the RHS comma category mapping space in the previous equivalence is denoted the "space of derivations of $R$ and $M$" (whatever that means)
+So the RHS [comma category](comma%20category) mapping space in the previous equivalence is denoted the "space of derivations of $R$ and $M$" (whatever that means)
 :::
 
 
 :::{.exercise title="?"}
-You can base-change the cotangent complex of $R/K$ to $S$ and obtain an exact triangle/cofiber sequence
+You can base-change the [cotangent complex](Cotangent%20Complex.md) of $R/K$ to $S$ and obtain an [exact triangle](exact%20triangle) or [cofiber sequence](cofiber%20sequence.md)
+
 \begin{tikzcd}
   S \tensor_R^L L_{R/k}
     \ar[r]
@@ -472,11 +489,13 @@ You can base-change the cotangent complex of $R/K$ to $S$ and obtain an exact tr
     \ar[r]
 &   L_{S/R}
 \end{tikzcd}
+
 This follows from the universal property above, and is a form of "transitivity".
 :::
 
 :::{.exercise title="?"}
 Given a diagram
+
 \begin{tikzcd}
   K 
     \ar[r]
@@ -488,6 +507,7 @@ Given a diagram
     \ar[r]
 & R\tensor_k^L T 
 \end{tikzcd}
+
 show that 
 \[  
 T\tensor_k^L L_{R/k} \cong L_{R\tensor_k^L T / T}
@@ -498,7 +518,7 @@ All of these follow from just the mapping space property, but require thinking a
 
 
 :::{.exercise title="?"}
-Let $R$ be a perfect $\FF_p\dash$algebra, so the Frobenius is an isomorphism:
+Let $R$ be a perfect $\FF_p\dash$algebra, so the [Frobenius](Frobenius) is an isomorphism:
 \[  
 F: R &\mapsvia{\sim} R\\
 x &\mapsto x^p
@@ -515,7 +535,7 @@ We can make a specific functor:
 D(k)\\
 R &\mapsto \dR_{R/k} \da \qty{R\to \Omega^1_{R/k} \to \Omega^2_{R/k} \to \cdots}
 ,\]
-which takes a polynomial ring $R$ to its algebraic de Rham complex.
+which takes a polynomial ring $R$ to its algebraic [de Rham complex](de%20Rham%20complex).
 If $R$ is finitely generated, then the complex is bounded.
 One can formally extend by deriving this functor to obtain
 \begin{tikzcd}
@@ -535,38 +555,38 @@ The point is that we know de Rham cohomology behaves well for smooth things, and
 
 :::{.warnings}
 Suppose $k \in \alg_\QQ$, noting that we're in characteristic zero, and let $R \in \calg_k^\poly$ be a polynomial ring.
-Then $\dR_{R/k} \cong k$ by the Poincaré lemma, just the cohomology of affine space.
+Then $\dR_{R/k} \cong k$ by the [Poincaré lemma](Poincaré%20lemma), just the cohomology of affine space.
 Then $L\dR_{S/k} \cong k$, which is disappointing.
 :::
 
 ### The Hodge Filtration
 
-How to fix this: we have the Hodge filtration $F_H^\wait \dR_{R/k}$, and the graded pieces are given by 
+How to fix this: we have the [Hodge filtration](Hodge%20filtration) $F_H^\wait \dR_{R/k}$, and the graded pieces are given by 
 \[
 \gr^i_H \dR_{R/k} \cong \Omega^i_{R/k}[-i] \cong \Lambda^i \Omega^1_{R/k}
 ,\]
 a shifted version of the $i$th exterior power 1-forms.
-Taking these gradings is compatible with colimits, so we can remember the filtration in the Kan extension, yielding a canonical Hodge filtration on $L\dR$, $F^*_H L \dR_{\wait/k}$.
+Taking these gradings is compatible with colimits, so we can remember the filtration in the [kan extension](Kan%20extension.md), yielding a canonical Hodge filtration on $L\dR$, $F^*_H L \dR_{\wait/k}$.
 The graded pieces are given by
 \[  
 \gr^i_H L\dR_{\wait /k} \cong L \Lambda^i L_{R/k}[-i]
 ,\]
 i.e. you take derived exterior powers of the cotangent complex, shifted by some degrees.
-This follows because doing the Kan extension on the graded pieces is deriving the functor $\gr^i_H \dR_{\wait/k}$.
+This follows because doing the [kan extension](Kan%20extension.md) on the graded pieces is deriving the functor $\gr^i_H \dR_{\wait/k}$.
 We can complete with respect to this filtration, which we'll write has 
 
 \[
 \hat{L\dR_{\wait/k}} \da \inverselim L\dR_{\wait/k} / F_H^i
 ,\]
 where you quotient out by the $i$th piece of the filtration.
-Note that this definition is a general way of taking completions.[^what_its_like]
+Note that this definition is a general way of taking [completion](completion).[^what_its_like]
 
 [^what_its_like]: 
-This is like defining the $p\dash$adics as the limit of $\ZZ/p^n\ZZ$.
+This is like defining the [$p\dash$adics](p-adic%20integers) as the limit of $\ZZ/p^n\ZZ$.
 
 
 :::{.theorem title="Bhatt, Grothendieck, Hartshorne"}
-Suppose $X/\CC$ is finite type, then
+Suppose $X/\CC$ is [finite type](finite%20type), then
 \[
 R \Gamma(X,  \hat{ L\dR_{\OO_X/ k} } ) 
 \cong
@@ -574,7 +594,7 @@ R \Gamma_{\Sing}(X(\CC), \CC)
 ,\]
 where the RHS is the singular cohomology of the $\CC\dash$points.
 This is a generalization of Grothendieck's theorem in the smooth case.
-A positive feature is that this doesn't depend on a choice of putting $X$ in an ambient smooth scheme.
+A positive feature is that this doesn't depend on a choice of putting $X$ in an ambient smooth [scheme](scheme.md).
 :::
 
 

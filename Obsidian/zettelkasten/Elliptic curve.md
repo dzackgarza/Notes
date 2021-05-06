@@ -3,5 +3,5 @@ aliases: ["Elliptic curves"]
 ---
 
 - Supersingular elliptic curves: ?
-- [[Complex Multiplication]] (CM)
+- [[complex multiplication]] (CM)
 - [[Hasse bounds]]

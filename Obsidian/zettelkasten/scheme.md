@@ -1,3 +1,7 @@
+---
+aliases: ["schemes"]
+---
+
 - Definition: ?
 - Closed points: ?
 - Geometric points: ?

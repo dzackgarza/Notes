@@ -4,6 +4,8 @@ tags:
   - Unfiled
 ---
 
+Tags: #papers #reading
+
 > And overall, read classical papers by Adams, Pontryagin, Quillen, Serre, Sullivan, Thom...John Francis has a list of classical papers for the Kan seminar on his homepage.
 
 - Algebraic Topology, The Kan Seminar
