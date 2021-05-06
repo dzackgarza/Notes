@@ -54,13 +54,12 @@ Recommendations from Akram
 
 # Spectral Sequences
 
-****If you haven't already done it or seen it, I'd really suggest using the Serre spectral sequence to compute the mod 2 cohomology of mod 2 Eilenberg Mac Lane spaces from the path--loop fibration! it's not too tricky once you get the hang of it but i feel like doing these sort of exercises got me to understand things a lot better.Mar 16, 2021 3:15 AM
+> ...suggest using the Serre spectral sequence to compute the mod 2 cohomology of mod 2 Eilenberg Mac Lane spaces from the path--loop fibration! 
 
-****[3:14 AM] m.p.opie:** if you compute the cohomology up to say degree 15 or something for K(Z/2,i) and i up to like maybe 9 or so, ( a bit tedious -- I forget what is actually reasonable lol) you start seeing "stability" set in, that is, you start to see the stable cohomology operations mod 2 appearing in the stable range. It's cool to like be able to check your answer against the formulas for the Steenrod algebra!
+> if you compute the cohomology up to say degree 15 or something for $K(\ZZ/2,i)$ and $i$ up to like maybe 9 or so, ( a bit tedious -- I forget what is actually reasonable lol) you start seeing "stability" set in, that is, you start to see the stable cohomology operations mod 2 appearing in the stable range. It's cool to like be able to check your answer against the formulas for the Steenrod algebra!
+> you can also do this for mod 3 cohomology and $K(\ZZ/3,i)$ or like try it for integral cohomology but the integral one is HARD
 
-****[3:15 AM] m.p.opie:** you can also do this for mod 3 cohomology and K(Z/3,i) or like try it for integral cohomology but the integral one is HARD
-
-So, to be honest I'm not completely sure about the degree of generality of the B_infinity construction. The version they use in a paper takes as input a "Gamma space" (which I think you can think about as a sort of rigid model for groupoids --i.e. spaces-- equipped with an E\infinity monoidal structure, i.e. a monoidal structure which is commutative up to really nicely structured homotopies), and outputs a connective spectrum.Mar 16, 2021 3:07 AM
+> ...the $B_\infty$ construction. The version they use in a paper takes as input a [[Gamma space]] (which I think you can think about as a sort of rigid model for groupoids --i.e. spaces-- equipped with an $E^\infinity monoidal structure, i.e. a monoidal structure which is commutative up to really nicely structured homotopies), and outputs a connective spectrum.Mar 16, 2021 3:07 AM
 
 ****[3:06 AM] m.p.opie:** The point is that there's a way to view a discrete (or Top-enriched) groupoid with a monoidal structure (probably under some hypotheses on the monoidal structure -- i.e. it should be symmetric monoidal in the discrete case), and then you can plug into the general B_infinity machinery to get out a connective spectrum
 
