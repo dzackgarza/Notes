@@ -3,8 +3,6 @@
 
 [Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf)
 
-[](https://etale.site/livetex/)
-
 [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
 [Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
@@ -171,6 +169,8 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 [Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
 
 - [MSRI workshop on higher categories and categorification](https://www.msri.org/workshops/907)
+
+[]()
 
 ## Topological Cyclic Homology
 
