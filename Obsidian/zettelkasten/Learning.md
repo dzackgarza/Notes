@@ -35,10 +35,9 @@
 - [Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
 	- Take notes on videos #todo #lecture_typesetting
 
-## Parallelizability
-
-
 ## Floer and Symplectic
+
+See [[Fl]]
 
 [Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
 
