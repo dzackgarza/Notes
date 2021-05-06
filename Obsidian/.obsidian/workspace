@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/line bundle.md",
+            "file": "zettelkasten/Learning.md",
             "mode": "preview"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/line bundle.md",
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/line bundle.md"
+                "file": "zettelkasten/Learning.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/line bundle.md",
+                "file": "zettelkasten/Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/line bundle.md"
+                "file": "zettelkasten/Learning.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/line bundle.md",
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,20 +234,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 305
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
+    "zettelkasten/Learning.md",
+    "Quick_Notes/2021-05-06.md",
+    "Quick_Notes/2021-05-05.md",
     "zettelkasten/line bundle.md",
     "zettelkasten/2021-04-26_Vector_Bundles.md",
-    "Quick_Notes/2021-05-05.md",
-    "Quick_Notes/2021-05-06.md",
     "zettelkasten/Kan extension.md",
     "zettelkasten/Cotangent Complex.md",
     "zettelkasten/simplicial resolution.md",
     "Quick_Notes/2021-05-02.md",
-    "Quick_Notes/2021-05-03.md",
-    "Quick_Notes/2021-05-04.md"
+    "Quick_Notes/2021-05-03.md"
   ]
 }
