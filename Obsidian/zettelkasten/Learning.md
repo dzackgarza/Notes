@@ -13,25 +13,17 @@ Advice:
 - Harari's book (?)
 - Artin and Tate's notes
 
-[Brief summary of statements of CFT](https://math.mit.edu/~poonen/papers/cft.pdf)
+Resources
 
+- [Brief summary of statements of CFT](https://math.mit.edu/~poonen/papers/cft.pdf)
+- [Blogpost introducing CFT "Local class field theory: a discussion"](https://ayoucis.wordpress.com/2015/09/01/local-class-field-theory-a-discussion/)
+- [Milne's Notes](https://www.jmilne.org/math/CourseNotes/CFT.pdf)
+- [Cassels-Frohlich](https://www.math.arizona.edu/~cais/scans/Cassels-Frohlich-Algebraic_Number_Theory.pdf)
+- [Cox: Primes of the form...](http://www.math.toronto.edu/~ila/Cox-Primes_of_the_form_x2+ny2.pdf)
+- [OCW Lecture Notes](https://ocw.mit.edu/courses/mathematics/18-786-number-theory-ii-class-field-theory-spring-2016/lecture-notes/)
 
-[Blogpost introducing CFT "Local class field theory: a discussion"](https://ayoucis.wordpress.com/2015/09/01/local-class-field-theory-a-discussion/)
-
-
-[Milne's Notes](https://www.jmilne.org/math/CourseNotes/CFT.pdf)
-
-Cassels-Frohlich
-
-[](https://www.math.arizona.edu/~cais/scans/Cassels-Frohlich-Algebraic_Number_Theory.pdf)
-
-Misc
-
-[](http://www.math.toronto.edu/~ila/Cox-Primes_of_the_form_x2+ny2.pdf)
-
-[Lecture Notes](https://ocw.mit.edu/courses/mathematics/18-786-number-theory-ii-class-field-theory-spring-2016/lecture-notes/)
-
-[](https://www.math.ucla.edu/~sharifi/algnum.pdf)
+## Alge
+- [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
 
 # Kirby Calculus
 
