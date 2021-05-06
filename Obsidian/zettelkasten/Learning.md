@@ -1,9 +1,9 @@
 
 # Review
 
-[Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo 
+- [Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo 
 
-[Qual Review](Qual%20Review)
+- [Qual Review](Qual%20Review)
 
 # Algebraic Geometry
 
@@ -13,17 +13,17 @@
 
 - [Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
 
-[MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
+- [MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
 
-[MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
+- [MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
 
-[Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
+- [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
 ## Schemes
 
 - [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
 
-[https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
+- [https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
 
 ## Stacks
 
@@ -33,16 +33,11 @@
 
 ## Kirby Calculus
 
-[Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
-
-- Take notes on videos #todo
+- [Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
+	- Take notes on videos #todo #lecture_typesetting
 
 ## Parallelizability
 
-Recommendations from Akram
-
-- p.148 12-b
-- Section 12
 
 ## Floer and Symplectic
 

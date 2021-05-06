@@ -7,10 +7,9 @@
         "id": "e9efadc5f1b2457f",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "zettelkasten/Learning.md",
-            "mode": "source"
+            "file": "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf"
           }
         }
       }
@@ -78,7 +77,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf"
               }
             }
           },
@@ -146,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf"
               }
             }
           },
@@ -200,7 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,6 +237,7 @@
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
+    "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf",
     "zettelkasten/Learning.md",
     "Quick_Notes/2021-05-06.md",
     "Quick_Notes/2021-05-05.md",
@@ -246,7 +246,6 @@
     "zettelkasten/Kan extension.md",
     "zettelkasten/Cotangent Complex.md",
     "zettelkasten/simplicial resolution.md",
-    "Quick_Notes/2021-05-02.md",
-    "Quick_Notes/2021-05-03.md"
+    "Quick_Notes/2021-05-02.md"
   ]
 }
