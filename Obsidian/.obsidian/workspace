@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ce1d1a531a54451c",
+        "id": "3bd2f2d74a72c634",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "00_Floer homology project Heegard diagrams.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -79,7 +76,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,9 +109,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,9 +156,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
-              }
+              "state": {}
             }
           },
           {
@@ -201,7 +192,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,8 +226,9 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "ce1d1a531a54451c",
+  "active": "3bd2f2d74a72c634",
   "lastOpenFiles": [
+    "zettelkasten/Dold-Kan correspondence.md",
     "00_Floer homology project Heegard diagrams.md",
     "zettelkasten/Floer Reading Group Fall 2020.md",
     "Quick_Notes/2021-03-25.md",
@@ -246,7 +237,6 @@
     "zettelkasten/Kan extension.md",
     "zettelkasten/Kan complex.md",
     "zettelkasten/fibrant replacement.md",
-    "zettelkasten/Untitled.md",
-    "zettelkasten/BG.md"
+    "zettelkasten/Untitled.md"
   ]
 }
