@@ -7,7 +7,7 @@
 
 ## Class Field Theory
 
-Advice:
+> Advice:
 
 - Look at global CFT first, see book of Janusz
 - Washington's Cyclotomic Fields.
