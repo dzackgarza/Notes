@@ -161,6 +161,15 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
 
+## Langlands
+
+![Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve](attachments/Geometric%20Langlands,%20Perfectoid%20Spaces,%20Fargues-Fontaine%20Overview.pdf)
+
+![What is the Langlands program?](attachments/Friedberg%20-%202018%20-%20WHAT%20IS%20...the%20Langlands%20Program.pdf)
+
+- [MSRI Summer School on automorphic forms and the Langlands program](https://www.msri.org/summer_schools/792)
+	- [Kevin' Buzzard's lectures on Youtube](https://www.youtube.com/playlist?list=PLhsb6tmzSpiysoRR0bZozub-MM0k3mdFR)
+
 ## Full Courses
 
 [Topological Cyclic Homology](https://www.notion.so/Topological-Cyclic-Homology-0db929d8a26943879bb36c916a3877ff)
@@ -168,30 +177,6 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 [Higher Algebra](https://www.notion.so/Higher-Algebra-bfa1645467b2479a979065ab9f48f168)
 
 [Derived Algebraic Geometry](https://www.notion.so/Derived-Algebraic-Geometry-3ee38d9dcb0147c59d5b151669216941)
-
-[Langlands](https://www.notion.so/Langlands-090049f105464607af4db93d3234ad94)
-
-[Mirror Symmetry](https://www.notion.so/Mirror-Symmetry-0a85580775aa44a6a6dcb28125bc78c6)
-
-[K-Theory](https://www.notion.so/K-Theory-07ac10e4019c43f7a81215234c17d360)
-
-[Toric Varieties](https://www.notion.so/Toric-Varieties-c043df6fb10c4bc0b40e88e13eccb1a7)
-
-[Soergel Bimodules](https://www.notion.so/Soergel-Bimodules-cbc714141700478984538f9b7c2fe813)
-
-[Derived Categories in AG](https://www.notion.so/Derived-Categories-in-AG-cd0d9a8130cb4472bcc2424fb0d35645)
-
-[Representation Stability](https://www.notion.so/Representation-Stability-da1e045e109e43b2b14c6bc5821bee9d)
-
-[Stable Homotopy Theory](https://www.notion.so/Stable-Homotopy-Theory-48a486b7923445ac800620f3978185fe)
-
-[Field Theories](https://www.notion.so/Field-Theories-a0c28421ae664070a32932cd98cc59e2)
-
-[Infty Categories](https://www.notion.so/Infty-Categories-8f7f062f95284b25bce450633c749318)
-
-[p-adic Hodge Theory](https://www.notion.so/p-adic-Hodge-Theory-9423d37c92104ab6a1f0d64c53bc38db)
-
-[Representation Theory](https://www.notion.so/Representation-Theory-4fc0e7a366484c6aaa91aea45cea7544)
 
 
 [Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
