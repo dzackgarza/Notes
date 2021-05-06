@@ -54,18 +54,20 @@ Recommendations from Akram
 
 # Spectral Sequences
 
+Some stuff from Morgan: 
+
 > ...suggest using the Serre spectral sequence to compute the mod 2 cohomology of mod 2 Eilenberg Mac Lane spaces from the path--loop fibration! 
 
 > if you compute the cohomology up to say degree 15 or something for $K(\ZZ/2,i)$ and $i$ up to like maybe 9 or so, ( a bit tedious -- I forget what is actually reasonable lol) you start seeing "stability" set in, that is, you start to see the stable cohomology operations mod 2 appearing in the stable range. It's cool to like be able to check your answer against the formulas for the Steenrod algebra!
 > you can also do this for mod 3 cohomology and $K(\ZZ/3,i)$ or like try it for integral cohomology but the integral one is HARD
 
-> ...the $B_\infty$ construction. The version they use in a paper takes as input a [[Gamma space]] (which I think you can think about as a sort of rigid model for groupoids --i.e. spaces-- equipped with an $E^\infinity monoidal structure, i.e. a monoidal structure which is commutative up to really nicely structured homotopies), and outputs a connective spectrum.Mar 16, 2021 3:07 AM
+> ...the $B_\infty$ construction. The version they use in a paper takes as input a [[Gamma space]] (which I think you can think about as a sort of rigid model for groupoids --i.e. spaces-- equipped with an $E^\infty$ monoidal structure, i.e. a monoidal structure which is commutative up to really nicely structured homotopies), and outputs a connective spectrum
 
-****[3:06 AM] m.p.opie:** The point is that there's a way to view a discrete (or Top-enriched) groupoid with a monoidal structure (probably under some hypotheses on the monoidal structure -- i.e. it should be symmetric monoidal in the discrete case), and then you can plug into the general B_infinity machinery to get out a connective spectrum
+> The point is that there's a way to view a discrete (or Top-enriched) groupoid with a monoidal structure (probably under some hypotheses on the monoidal structure -- i.e. it should be symmetric monoidal in the discrete case), and then you can plug into the general $B_\infty$ machinery to get out a connective spectrum
 
-****[3:07 AM] m.p.opie:** I think it'd be too much to ask this to work for a general symmetric monoidal category, but you could probably do it after taking the maximal subgroupoid and idk if that would be something interesting? (Also not sure if the maximal subgroupoid inherits a symm monoidal structure? actual yes I guess it does)
+> I think it'd be too much to ask this to work for a general symmetric monoidal category, but you could probably do it after taking the maximal subgroupoid and idk if that would be something interesting? (Also not sure if the maximal subgroupoid inherits a symm monoidal structure? actual yes I guess it does)
 
-****[3:09 AM] m.p.opie:** I think the actual Binfinity construction though is maybe a bit technical and/or disastisfying. Like, you need some formalism to get a spectrum out of a "almost symmetric monoidal space", and this one works, but it's a bit mysterious to me....
+> I think the actual $B_\infty$ construction though is maybe a bit technical and/or disastisfying. Like, you need some formalism to get a spectrum out of a "almost symmetric monoidal space", and this one works, but it's a bit mysterious to me....
 
 
 ## Stable Homotopy Theory
