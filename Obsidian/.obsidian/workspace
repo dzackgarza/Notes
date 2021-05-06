@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Quick_Notes/2021-05-06.md",
+            "file": "Quick_Notes/2021-05-05.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-06.md",
+                "file": "Quick_Notes/2021-05-05.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-06.md"
+                "file": "Quick_Notes/2021-05-05.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick_Notes/2021-05-06.md",
+                "file": "Quick_Notes/2021-05-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-06.md"
+                "file": "Quick_Notes/2021-05-05.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-06.md",
+                "file": "Quick_Notes/2021-05-05.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
+    "Quick_Notes/2021-05-05.md",
+    "zettelkasten/Poincare bundle.md",
     "Quick_Notes/2021-05-06.md",
+    "zettelkasten/cuspidal representation.md",
+    "zettelkasten/Symplectic geometry.md",
     "zettelkasten/Untitled 1.md",
     "zettelkasten/2021-04-26_Fukaya_Categories.md",
     "zettelkasten/ambidexterity.md",
     "zettelkasten/differential graded algebras.md",
-    "zettelkasten/2021-04-26_Stacks_and_Orbifolds.md",
-    "zettelkasten/simplicial  ring.md",
-    "zettelkasten/simplicial commutative ring.md",
-    "zettelkasten/simplicial algebra.md",
-    "zettelkasten/Hochschild homology.md"
+    "zettelkasten/2021-04-26_Stacks_and_Orbifolds.md"
   ]
 }
