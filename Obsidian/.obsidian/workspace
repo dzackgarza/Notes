@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Competition math.md",
+            "file": "zettelkasten/2021-04-26_Reading_Recommendations.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Competition math.md",
+                "file": "zettelkasten/2021-04-26_Reading_Recommendations.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Competition math.md"
+                "file": "zettelkasten/2021-04-26_Reading_Recommendations.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Competition math.md",
+                "file": "zettelkasten/2021-04-26_Reading_Recommendations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Competition math.md"
+                "file": "zettelkasten/2021-04-26_Reading_Recommendations.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Competition math.md",
+                "file": "zettelkasten/2021-04-26_Reading_Recommendations.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,6 +238,7 @@
   },
   "active": "e9efadc5f1b2457f",
   "lastOpenFiles": [
+    "zettelkasten/2021-04-26_Reading_Recommendations.md",
     "zettelkasten/Untitled 1.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/Learning.md",
@@ -246,7 +247,6 @@
     "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf",
     "Quick_Notes/2021-05-05.md",
     "zettelkasten/line bundle.md",
-    "zettelkasten/2021-04-26_Vector_Bundles.md",
-    "zettelkasten/Kan extension.md"
+    "zettelkasten/2021-04-26_Vector_Bundles.md"
   ]
 }

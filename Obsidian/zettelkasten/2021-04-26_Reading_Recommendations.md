@@ -61,3 +61,6 @@ Tags: #recommendations #reading
 - Voison, [Hodge theory](Hodge%20theory.md) and [Complex Algebraic Geometry](Complex%20Algebraic%20Geometry) I
 
 - Carlson, [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
+
+- Littlewood's Miscellany
+	- Contains Cambridge gossip! 
