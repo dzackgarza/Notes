@@ -104,7 +104,7 @@ Some stuff from Morgan:
 
 [Equivariant stable homotopy and p-adic Hodge theory](http://www.birs.ca/events/2020/5-day-workshops/20w5217/videos)
 
-## K Theory
+# K Theory
 
 [Survey article from Inna](https://people.math.rochester.edu/faculty/doug/otherpapers/zakharevich.pdf)
 
@@ -113,6 +113,8 @@ Some stuff from Morgan:
 ![Recommended reading from Atiyah and Park](attachments/Pasted%20image%2020210506154540.png)
 
 [Dugger's geometric introduction to K theory](https://pages.uoregon.edu/ddugger/kgeom.pdf)
+
+[Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
 
 # Algebraic Geometry
 
@@ -153,7 +155,11 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 [Lecture series (34 videos) on Topology and Field Theories](https://www.youtube.com/playlist?list=PL80A29806A2EA6B1A)
 
+[Fields Summer School](https://video-archive.fields.utoronto.ca/list/event/1538)
 
+## Mirror Symmetry
+
+[Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
 
 ## Full Courses
 
