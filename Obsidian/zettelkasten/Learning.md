@@ -23,6 +23,8 @@
 
 [http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
 
+[Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
+
 # Number Theory
 
 ## Class Field Theory
@@ -41,6 +43,8 @@ Resources
 - [Cassels-Frohlich](https://www.math.arizona.edu/~cais/scans/Cassels-Frohlich-Algebraic_Number_Theory.pdf)
 - [Cox: Primes of the form...](http://www.math.toronto.edu/~ila/Cox-Primes_of_the_form_x2+ny2.pdf)
 - [OCW Lecture Notes](https://ocw.mit.edu/courses/mathematics/18-786-number-theory-ii-class-field-theory-spring-2016/lecture-notes/)
+
+[Seminar on Iwasawa theory](https://math.mit.edu/nt/old/stage_f17.html)
 
 ## Algebraic Number Theory
 - [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
@@ -105,6 +109,8 @@ Some stuff from Morgan:
 - [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
 
 [Equivariant stable homotopy and p-adic Hodge theory](http://www.birs.ca/events/2020/5-day-workshops/20w5217/videos)
+
+[Seminar on formal groups and p-divisible groups](https://math.mit.edu/nt/old/stage_f19.html)
 
 # K Theory
 
@@ -172,9 +178,13 @@ Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly,
 
 # Unsorted
 
+[Seminar on p-adic Hodge theory](https://math.mit.edu/nt/old/stage_f18.html)
+
 ## Crystal-y Stuff?
 
-[Seminar on crystalline and prismatic c]()
+[Seminar on crystalline and prismatic cohomology](https://math.mit.edu/nt/index_stage)
+
+[Seminar on p-adic modular forms](https://math.mit.edu/nt/old/stage_s20.html)
 
 ## Field Theories
 

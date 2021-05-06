@@ -1,5 +1,5 @@
 ---
-aliases: ["motivic homotopy theory"]
+aliases: ["motivic homotopy theory", "motives", "pure motives", "mixed motives"]
 ---
 
 # References
