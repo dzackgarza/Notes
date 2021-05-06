@@ -1,0 +1,3 @@
+---
+aliases: ["classifying spaces", "BG"]
+---

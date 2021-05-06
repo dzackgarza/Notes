@@ -22,7 +22,7 @@ aliases: ["motivic homotopy theory", "motivic homotopy", "motives", "pure motive
 ![image_2021-05-05-01-35-59](figures/image_2021-05-05-01-35-59.png)
 ![image_2021-05-05-01-36-28](figures/image_2021-05-05-01-36-28.png)
 
-- [Nisnevich topology](Nisnevich%20topology): coarsest where [[purity theorem]] holds, finest where [[K theory]] is representable.
+- [Nisnevich topology](Nisnevich%20topology): coarsest where [[purity theorem]] holds, finest where [[K-Theory]] is representable.
 
 > The fundamental difference between **pure motives** (coming from cohomology of smooth projective varieties) and **mixed motives** (coming from cohomology of arbitrary varieties) is existence of nontrivial extensions in the mixed motive setting.
 
