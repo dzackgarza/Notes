@@ -2,14 +2,14 @@ Tags: #todo #floer
 
 # Reference Material
 
-[Paper: Sarkar-Wang, An algorithm for computing some Heegard-Floer homologies](https://arxiv.org/pdf/math/0607777.pdf)
+[Paper: Sarkar-Wang, An algorithm for computing some Heegaard-Floer homologies](https://arxiv.org/pdf/math/0607777.pdf)
 
 [Annals version of the paper](https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n2-p11-s.pdf)
 
 # Intro/Overview
 
 - Goals: 
-  - Given $Y$ a closed oriented smooth 3-manifold, compute the Heegard-Floer homology $\hat{\HF}(Y; \FF_2) \in \gr\Ab$.
+  - Given $Y$ a closed oriented smooth 3-manifold, compute the Heegaard-Floer homology $\hat{\HF}(Y; \FF_2) \in \gr\Ab$.
   - Given $K \embeds Y$ a knot, compute the knot Floer homology $\hat{\HFK}(Y, K; \FF_2)$
 - Strategy: turn **admissible diagrams** into **nice diagrams** using isotopies and handleslides
   - Note: stabilization not used in this paper.
@@ -20,17 +20,18 @@ Tags: #todo #floer
 # Definitions
 
 
+:::{.definition title="Admissible diagram"}
+A Heegaard diagram \( \mathcal{H}  \) is **admissible** if for every generator \( \vector{x} \in \CF \), every positive domain \( \varphi\in \pi_2(\vector x, \vector x) \) is trivial. 
+:::
+
+
 :::{.definition title="Good and bad regions"}
 A region is **good** if it is an $n\gon$ with $n\leq 4$, and **bad** if $n\geq 5$
 :::
 
 ## Algorithm Overview
 
-- Start from an admissible pointed Heegard diagram, end up with an admissible *nice* pointed Heegard diagram using isotopies and handleslides on the $\beta$ curves.
-
-- Definition: good and bad regions
-  - Good: Bigons and squares
-  - Bad: Anything else
+- Start from an admissible pointed Heegaard diagram, end up with an admissible *nice* pointed Heegaard diagram using isotopies and handleslides on the $\beta$ curves.
 
 - Overview of strategy:
 
