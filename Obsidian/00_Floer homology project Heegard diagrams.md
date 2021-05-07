@@ -74,3 +74,4 @@ b_d( \mathcal{H} ) &\da \sum_i b_d (D_i) \\
 c_d( \mathcal{H} ) &\da \tv{ b_d(\mathcal{H}), -b(D_1), \cdots } && b(D_1) \geq b(D_2) \geq \cdots \\
 .\]
 
+
