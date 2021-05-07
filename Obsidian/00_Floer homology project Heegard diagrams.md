@@ -163,10 +163,14 @@ Problem: poly-annuli regions
 How to fix:
 ![image_2021-05-07-15-47-29](figures/image_2021-05-07-15-47-29.png)
 
+- Creates no new non-disks
+- Decreases number of boundary components by 1.
+- Repeat until equal to 1.
 :::
 
 
 ## Step 2: Converting Regions to Bigons or Squares
 
+Now all regions are discs.
 
 
