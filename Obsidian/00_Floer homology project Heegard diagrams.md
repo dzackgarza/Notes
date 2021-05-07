@@ -40,6 +40,9 @@ A formal sum of regions is a **2-chain**.
 
 :::{.definition title="Positive regions"}
 Given 2 generators \( \vector x, \vector y \) define \( \pi_2(\vector x, \vector y) \) to be the set of all 2-chains $\phi$ satisfying $\bd^2 \phi = \vector y - \vector x$.
+Call such 2-chains **domains**.
+
+Define $n_p(\phi)$ to be the coefficient of the region $R_i \ni p$, then $\phi$ is a **positive domain** if $n_p(\geq 0)$ for all $p \in \Sigma\sm \ts{ \vec \alpha, \vec \beta }$.
 
 :::
 
@@ -47,7 +50,8 @@ Given 2 generators \( \vector x, \vector y \) define \( \pi_2(\vector x, \vector
 
 
 :::{.definition title="Admissible diagram"}
-A Heegaard diagram \( \mathcal{H}  \) is **admissible** if for every generator \( \vector{x} \in \CF \), every positive domain \( \varphi\in \pi_2(\vector x, \vector x) \) is trivial. 
+Define $\pi_2^0(\vector, \vector y)$ to be all domains $\phi$ such that $n_{\vec w} = 0$.
+A Heegaard diagram \( \mathcal{H}  \) is **admissible** if for every generator \( \vector{x} \in \CF \), every positive domain \( \varphi\in \pi_2^0(\vector x, \vector x) \) is trivial. 
 :::
 
 
