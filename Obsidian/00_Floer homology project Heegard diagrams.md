@@ -220,15 +220,20 @@ Look at what happens locally: we introduce some new regions, usually less bad:
 
 
 :::{.proposition title="?"}
-We can push through square regions:
+We can push through $4\gon$ regions:
 
 ![image_2021-05-07-15-54-57](figures/image_2021-05-07-15-54-57.png)
 
 So continue, then do some casework:
 
 ![image_2021-05-07-15-55-19](figures/image_2021-05-07-15-55-19.png)
-![image_2021-05-07-15-55-51](figures/image_2021-05-07-15-55-51.png)
+
 :::
 
 
 
+## Case 1: Reach a Bigon
+
+![image_2021-05-07-15-57-00](figures/image_2021-05-07-15-57-00.png)
+
+![image_2021-05-07-15-57-19](figures/image_2021-05-07-15-57-19.png)
