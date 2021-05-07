@@ -237,3 +237,14 @@ So continue, then do some casework:
 ![image_2021-05-07-15-57-00](figures/image_2021-05-07-15-57-00.png)
 
 ![image_2021-05-07-15-57-19](figures/image_2021-05-07-15-57-19.png)
+
+![image_2021-05-07-15-57-30](figures/image_2021-05-07-15-57-30.png)
+
+## Case 2: Smaller Distance
+
+![image_2021-05-07-15-57-53](figures/image_2021-05-07-15-57-53.png)
+
+
+![image_2021-05-07-15-58-10](figures/image_2021-05-07-15-58-10.png)
+
+![image_2021-05-07-15-58-22](figures/image_2021-05-07-15-58-22.png)
