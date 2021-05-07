@@ -202,6 +202,13 @@ Main theorem
 
 :::{.proposition title="?"}
 Setup: fix $D_0$ to be the region containing the basepoint, $D_m$ to be the least bad region.
+Find an adjacent region $D_*$ with 1 smaller distance:
+
+![image_2021-05-07-15-53-06](figures/image_2021-05-07-15-53-06.png)
+
+Idea: we will finger move through $b_*$:
+
+![asdas](figures/image_2021-05-07-15-53-42.png)
 :::
 
 
