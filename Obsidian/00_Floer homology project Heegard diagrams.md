@@ -167,18 +167,5 @@ Problem: multi-annuli regions
 
 ## Step 2: Converting Regions to Bigons or Squares
 
-# Todos
-
-![](zettelkasten/attachments/Apr%2028%2000h23.pdf)
-
-- Define bigon
-- Define finger moves
-
-
-\[
-b(D) &\da \max \ts{ n-2, 0 } = n-2 \text{ when } D\in 2n\dash\text{gon}, n\geq 3 \\
-b_d( \mathcal{H} ) &\da \sum_i b_d (D_i) \\
-c_d( \mathcal{H} ) &\da \tv{ b_d(\mathcal{H}), -b(D_1), \cdots } && b(D_1) \geq b(D_2) \geq \cdots \\
-.\]
 
 
