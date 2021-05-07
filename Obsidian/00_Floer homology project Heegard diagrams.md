@@ -149,6 +149,10 @@ How to fix:
 
 Now all regions are discs.
 
+:::{.warnings}
+$\alpha$ curves should be red, $\beta$ should be blue!
+:::
+
 :::{.definition title="Total Distance"}
 For a Heegaard diagram \( \mathcal{H}  \) define the **distance** of $D$ as 
 \[
@@ -166,13 +170,15 @@ d( \mathcal{H}  ) \da \max\ts{ d(D)} \in \ZZ_{\geq 0}
 :::{.example title="?"}
 Computing the distance via a path.
 
-
 ![image_2021-05-07-15-49-13](figures/image_2021-05-07-15-49-13.png)
 :::
 
 
 
 :::{.definition title="Distance $d$ complexity"}
+
+
+
 For a fixed distance $d$ define the **distance $d$ complexity** as 
 \[
 c_d \da \tv{ \sum b(D_i), -b(D_1), -b(D_2), \cdots}
