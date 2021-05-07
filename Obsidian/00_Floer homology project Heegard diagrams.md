@@ -171,12 +171,13 @@ d( \mathcal{H}  ) \da \max\ts{ d(D)} \in \ZZ_{\geq 0}
 Computing the distance via a path.
 
 ![image_2021-05-07-15-49-13](figures/image_2021-05-07-15-49-13.png)
+
+Can only cross $\beta$ curves, need to stay in $\vec \alpha^c$.
 :::
 
 
 
 :::{.definition title="Distance $d$ complexity"}
-
 
 
 For a fixed distance $d$ define the **distance $d$ complexity** as 
