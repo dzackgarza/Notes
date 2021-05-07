@@ -159,6 +159,8 @@ All non-disk regions have $\geq 2$ boundary components, so we'll try to reduce t
 Problem: multi-annuli regions
 
 ![image_2021-05-07-15-45-13](figures/image_2021-05-07-15-45-13.png)
+
+![How to fix](figures/image_2021-05-07-15-45-59.png)
 :::
 
 - Now reduce the number of boundary components on non-disk regions $D$.:
