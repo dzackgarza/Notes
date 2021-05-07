@@ -150,7 +150,15 @@ Short procedure: ensure every \( \alpha \) curve intersects some \( \beta \) cur
 - Case 2: $\alpha, \beta, \beta$.
   - Finger move on $\beta$ curve, pulling all other $\beta$ curves with it.
   ![image_2021-05-07-15-41-23](figures/image_2021-05-07-15-41-23.png)
+:::
 
+
+:::{.remark}
+Now every $\alpha_j$ intersects some $\beta_k$
+All non-disk regions have $\geq 2$ boundary components, so we'll try to reduce the number of boundary components to one.
+Problem: multi-annuli regions
+
+![image_2021-05-07-15-45-13](figures/image_2021-05-07-15-45-13.png)
 :::
 
 - Now reduce the number of boundary components on non-disk regions $D$.:
