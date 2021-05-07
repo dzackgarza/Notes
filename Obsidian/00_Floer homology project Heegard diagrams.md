@@ -158,9 +158,12 @@ Now every $\alpha_j$ intersects some $\beta_k$
 All non-disk regions have $\geq 2$ boundary components, so we'll try to reduce the number of boundary components to one.
 Problem: multi-annuli regions
 
-![image_2021-05-07-15-45-13](figures/image_2021-05-07-15-45-13.png)
+![image_2021-05-07-15-47-09](figures/image_2021-05-07-15-47-09.png)
 
-![How to fix](figures/image_2021-05-07-15-45-59.png)
+
+How to fix:
+
+![image_2021-05-07-15-47-29](figures/image_2021-05-07-15-47-29.png)
 :::
 
 
