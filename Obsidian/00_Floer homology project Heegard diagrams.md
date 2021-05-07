@@ -24,7 +24,6 @@ Tags: #todo #floer
 A region is **good** if it is an $n\gon$ with $n\leq 4$, and **bad** if $n\geq 5$
 :::
 
-
 ## Algorithm Overview
 
 - Start from an admissible pointed Heegard diagram, end up with an admissible *nice* pointed Heegard diagram using isotopies and handleslides on the $\beta$ curves.
