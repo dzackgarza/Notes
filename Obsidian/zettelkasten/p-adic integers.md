@@ -1,0 +1,1 @@
+- ![Big list of useful p-adic formulas](attachments/p_adic_formulas.pdf)

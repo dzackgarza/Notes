@@ -1,9 +1,14 @@
 ---
-aliases: ["Algebraic Geometry"]
+aliases: ["Algebraic geometry basics", "algebraic geometry"]
 ---
 
-- [Wikipedia Glossary of Algebraic Geometry](https://en.wikipedia.org/wiki/Glossary_of_algebraic_geometry)
+# References
 
+- [Wikipedia Glossary of Algebraic Geometry](https://en.wikipedia.org/wiki/Glossary_of_algebraic_geometry)
+- ![Introduction to AG lecture notes](../attachments/iag.pdf)
+- ![Short overview of lectures](../attachments/2013SP_algebra.pdf)
+
+# Topics
 - [[../Variety]]
 	- [[Proper variety]]
 	- [[Algebraic variety]]
@@ -21,10 +26,10 @@ aliases: ["Algebraic Geometry"]
 - [[Hard Lefschetz]]
 - [[Weak Lefschetz]]
 
-- [[../Sheaf]]
+- [[../sheaf]]
 - [[../scheme]]
 	- [[Quasicoherent sheaf]] over a [[../scheme]]	
-- [[../Stack]]
+- [[../stack]]
 - [[Orbifold]]
 	- Classifying orbifolds
 

@@ -13,7 +13,7 @@ aliases: ["Big list of words I don't know"]
 	- [[Zeta function]]
 	- [[Langlands]] 
 	- [[Class field theory]]
-- [Algebraic Geometry](Subjects/Algebraic%20Geometry%20Basics.md)
+- [Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 - [Bundle](Bundle.md)
 - [[Étale Homotopy]]
 	- [[Brauer group]]

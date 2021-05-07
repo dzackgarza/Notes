@@ -42,7 +42,8 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 	- [[Bott periodicity]]
 
 
-# [Chromatic homotopy](Chromatic%20homotopy%20theory)
+# Chromatic Homotopy
+Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
 
 - [Fracture theorem](Fracture%20theorem)
 - The chromatic spectral sequence
@@ -57,7 +58,13 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 	- [[Lubin-Tate theory]]
 - [[Kervaire invariant 1]]
 
-# [[motivic homotopy]]
+# Equivariant Homotopy
+
+Reference: [equivariant stable homotopy](equivariant%20stable%20homotopy%20theory)
+
+# Motivic Homotopy
+Reference: [motivic homotopy](motivic%20homotopy.md)
+
 - $E_n$ rings
 - [[Ring Spectra]]
 - [[E_infty Ring Spectra]]

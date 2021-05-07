@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-[Algebraic Geometry Basics](../Subjects/Algebraic%20Geometry%20Basics.md)
+[Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 [[Classification results]]
 
 

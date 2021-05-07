@@ -7,7 +7,7 @@ author: D. Zack Garza
 date: 2017
 ---
 
-[../Subjects/Algebraic Geometry Basics](../Subjects/Algebraic%20Geometry%20Basics.md)
+[Subjects/Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 [Undergraduate](Undergraduate)
 
 Tags: #algebraic_geometry 

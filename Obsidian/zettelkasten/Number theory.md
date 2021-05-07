@@ -1,27 +1,47 @@
-- [[Ring of integers]]
--  Archimedean field
-- [[ramified primes]]
+
+# Topics
+
 - [[Reduction]]
-- [Divisor](Divisor.md)
-- [[Function field]]
+
 -[Places](place.md)
 	- [[Archimedean place]]
-- [Elliptic curve](Elliptic%20curve.md)
-- [[Riemann-Roch]]
 - [[Base change]]
 - [[Jacobian]]
 - [[Picard group]] 
 	- (e.g. of $L_{K(n)}S^O$)
 - [[Adeles]]
 - [Ideles](Ideles.md)
-- [modular form](modular%20form.md)
 - [[Lubin-Tate space]]
 - [[Lubin-Tate theory]]
 - [uniformizer](uniformizer)
 - [[Faltings theorem]]
+- [p-adic integers](p-adic%20integers)
+
+# Algebraic Number Theory
+
+See [algebraic number theory](algebraic%20number%20theory)
+
+- [[Ring of integers]]
+-  Archimedean field
+- [[ramified primes]]
 
 # Class Field Theory
 
 - [Inertia](Inertia.md)
 - [[Local field]]
 - [Global field](Global%20field)
+
+# Modular Forms
+
+- [modular curve](modular%20curve)
+- [modular forms](modular%20form.md)
+
+# Algebraic Curves
+
+- [function fields](function%20fields)
+- [Divisor](Divisor.md)
+
+# Geometric
+
+- [Elliptic curve](Elliptic%20curve.md)
+- [[Riemann-Roch]]

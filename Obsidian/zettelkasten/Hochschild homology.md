@@ -5,6 +5,7 @@ aliases: ["HH"]
 
 References: [topological Hochschild homology](topological%20Hochschild%20homology.md) | [cyclic homology](cyclic%20homology)
 
+![Algebraic deformation theory paper](attachments/1214427886.pdf)
 
 # Hochschild Homology
 
