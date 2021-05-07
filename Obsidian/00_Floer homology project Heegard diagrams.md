@@ -61,8 +61,25 @@ A Heegaard diagram \( \mathcal{H}  \) is **admissible** if for every generator \
 
 
 :::{.definition title="Good and bad regions"}
-A region is **good** if it is an $n\gon$ with $n\leq 4$, and **bad** if $n\geq 5$
+A region is **good** if it is an $n\gon$ with $n\leq 4$, and **bad** if $n\geq 5$.
 :::
+
+
+:::{.definition title="Badness"}
+For a disc region $D$, define the **badness**
+\[
+b(D) \da \max\ts{n-2, 0}
+.\]
+
+Note 
+
+- $D\in 2\gon \implies b(D) = 0$
+- $D\in 4\gon \implies b(D) = 0$
+- $D\in 6\gon \implies b(D) = 1$
+- $D\in 8\gon \implies b(D) = 2$
+
+:::
+
 
 ## Algorithm Overview
 
