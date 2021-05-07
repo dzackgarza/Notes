@@ -102,8 +102,17 @@ c_d \da \tv{ \sum b(D_i), -b(D_1), -b(D_2), \cdots}
 &&
 b(D_1) \geq b(D_2) \geq \cdots
 \]
-
+For a fixed $d$, order various $c_d( \mathcal{H}' )$ lexicographically.
 :::
+
+
+:::{.remark}
+Goal: do moves where
+
+- $d(\mathcal{H}' ) \leq d( \mathcal{H}  )$, so total distance doesn't increase.
+- $b( \mathcal{H}' ) \leq b( \mathcal{H} ) -1$, so badness decreases.
+:::
+
 
 
 
