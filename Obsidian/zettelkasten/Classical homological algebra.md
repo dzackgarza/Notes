@@ -1,3 +1,8 @@
+---
+aliases: ["homological algebra"]
+---
+
+# Index
 - [[Derived category]]
   - [[Weak equivalence]]
   - [[Chain homotopy equivalence]]
@@ -6,4 +11,10 @@
 - [[Triangulated category]]
 - [[Phantom map]]
 
-What is the difference between the homotopy and derived category?
+# References
+
+![Some notes](../attachments/Lecture01.pdf)
+
+# Unsorted
+
+- What is the difference between the [homotopy category](homotopy%20category.md) and [derived category](derived%20category)? #unanswered_questions 
