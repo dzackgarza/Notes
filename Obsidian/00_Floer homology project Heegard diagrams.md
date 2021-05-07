@@ -151,6 +151,7 @@ Goal: do moves where
 - Now reduce the number of boundary components on non-disk regions $D$.:
 
   - Every region is now a planer surface, since \( \Sigma\sm \vec{ \alpha} \) is a punctured sphere.
+
 ## Step 2: Converting Regions to Bigons or Squares
 
 # Todos
