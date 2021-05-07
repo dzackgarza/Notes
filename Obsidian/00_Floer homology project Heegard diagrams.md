@@ -6,9 +6,7 @@ Tags: #todo #floer
 
 [Annals version of the paper](https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n2-p11-s.pdf)
 
-# Notes
-
-## Intro/Overview
+# Intro/Overview
 
 - Goals: 
   - Given $Y$ a closed oriented smooth 3-manifold, compute the Heegard-Floer homology $\hat{\HF}(Y; \FF_2) \in \gr\Ab$.
@@ -18,6 +16,13 @@ Tags: #todo #floer
 - Main theorem:
 
 ![image_2021-05-05-12-26-55](figures/image_2021-05-05-12-26-55.png)
+
+# Definitions
+
+
+:::{.definition title="Good and bad regions"}
+A region is **good** if it is an $n\gon$ with $n\leq 4$, and **bad** if $n\geq 5$
+:::
 
 
 ## Algorithm Overview
