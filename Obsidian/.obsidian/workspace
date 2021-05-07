@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e9efadc5f1b2457f",
+        "id": "30d6a64e6df401f6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Floer homology project Heegard diagrams.md",
+            "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,17 +236,17 @@
     "direction": "horizontal",
     "width": 305
   },
-  "active": "e9efadc5f1b2457f",
+  "active": "30d6a64e6df401f6",
   "lastOpenFiles": [
+    "zettelkasten/Subjects/Homological Algebra.md",
+    "zettelkasten/Untitled 1.md",
     "00_Floer homology project Heegard diagrams.md",
     "Quick_Notes/2021-04-29.md",
     "zettelkasten/Qual Review.md",
     "zettelkasten/Learning.md",
     "zettelkasten/2021-04-26_Reading_Recommendations.md",
-    "zettelkasten/Untitled 1.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/framed.md",
-    "zettelkasten/figures/problem3.png",
-    "zettelkasten/Projects/Reading Groups/Floer Reading Group/Talk7/Slides.pdf"
+    "zettelkasten/figures/problem3.png"
   ]
 }
