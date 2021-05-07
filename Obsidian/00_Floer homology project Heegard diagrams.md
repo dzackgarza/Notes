@@ -84,10 +84,27 @@ Note
 :::{.definition title="Total Distance"}
 For a Heegaard diagram \( \mathcal{H}  \) define the **distance** of $D$ as 
 \[
-d(D) \da \min \ts{ \# (\gamma\intersect \vec\beta) \st w'\in D, w \mapsvia{\gamma} w', \gamma\in \vec\alpha^c }
+d(D) \da \min \ts{ \# (\gamma\intersect \vec\beta) \st w'\in D, w \mapsvia{\gamma} w', \gamma\in \vec\alpha^c } \in \ZZ_{\geq 0}
 .\]
 
+This is the smallest number of intersection points on any arc connecting the basepoint $w$ to $w'\in D$.
+Define the **total distance** 
+\[
+d( \mathcal{H}  ) \da \max\ts{ d(D)} \in \ZZ_{\geq 0}
+.\]
 :::
+
+
+:::{.definition title="Distance $d$ complexity"}
+For a fixed distance $d$ define the **distance $d$ complexity** as 
+\[
+c_d \da \tv{ \sum b(D_i), -b(D_1), -b(D_2), \cdots}
+&&
+b(D_1) \geq b(D_2) \geq \cdots
+\]
+
+:::
+
 
 
 
