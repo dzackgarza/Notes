@@ -135,8 +135,7 @@ Goal: do moves where
 
 ## Step 1: Killing Non-disk Regions
 
-- Short procedure
-- Ensure every \( \alpha \) curve intersects some \( \beta \) curve and vice-versa
+- Short procedure: ensure every \( \alpha \) curve intersects some \( \beta \) curve and vice-versa
   - Fix $j$. 
   If \( \alpha_j \) does not intersect any \( \beta_k \), 
   choose a $p\in \alpha_j, q\in \beta_k$ and use path-connectedness to find a curve $c_{pq}$ connecting them.
