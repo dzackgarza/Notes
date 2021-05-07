@@ -20,6 +20,31 @@ Tags: #todo #floer
 # Definitions
 
 
+:::{.definition title="Floer chain complex"}
+Given a pointed Heegaard diagram 
+\[
+( \Sigma, \vec \alpha, \vec \beta, w)
+,\]
+the generators of $\CF$ are formal sums of points $\vector x = \sum_{i=1}^{g-k-1} x_i$ where each \( \alpha \) curve contains some $x_i$ and each \( \beta \) curve contains some $x_j$.
+:::
+
+
+:::{.definition title="Region"}
+A **region** is a connected component of the complement of the curves, so
+\[
+R_i \in \pi_0 \Sigma \sm \ts{\vec \alpha, \vec \beta}
+.\]
+A formal sum of regions is a **2-chain**.
+:::
+
+
+:::{.definition title="Positive regions"}
+Given 2 generators \( \vector x, \vector y \) define \( \pi_2(\vector x, \vector y) \) to be the set of all regions $R_i$ satisfying $\bd^2 R_i = \vector y - \vector x$.
+:::
+
+
+
+
 :::{.definition title="Admissible diagram"}
 A Heegaard diagram \( \mathcal{H}  \) is **admissible** if for every generator \( \vector{x} \in \CF \), every positive domain \( \varphi\in \pi_2(\vector x, \vector x) \) is trivial. 
 :::
