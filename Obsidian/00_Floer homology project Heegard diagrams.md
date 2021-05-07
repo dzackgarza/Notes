@@ -135,17 +135,23 @@ Goal: do moves where
 
 ## Step 1: Killing Non-disk Regions
 
-- Short procedure: ensure every \( \alpha \) curve intersects some \( \beta \) curve and vice-versa
-  - Fix $j$. 
-  If \( \alpha_j \) does not intersect any \( \beta_k \), 
-  choose a $p\in \alpha_j, q\in \beta_k$ and use path-connectedness to find a curve $c_{pq}$ connecting them.
-  - Do this for every 
-  - Perturb if necessary to avoid the finitely many intersection points of the form \( \alpha_i \intersect \beta_{i'} \).
-  - Do a finger move: contract $c$ keeping $p$ fixed.
-  - See pictures/diagrams!
 
-  ![image_2021-05-05-13-40-43](figures/image_2021-05-05-13-40-43.png)
-  ![image_2021-05-05-13-40-54](figures/image_2021-05-05-13-40-54.png)
+:::{.proposition title="?"}
+Short procedure: ensure every \( \alpha \) curve intersects some \( \beta \) curve and vice-versa
+
+- Fix $j$, what is in between $\alpha_j$ and the nearest $\beta$ curve?
+  ![image_2021-05-07-15-39-22](figures/image_2021-05-07-15-39-22.png)
+- Case 1: $\alpha, \alpha, \beta$.
+  - Connect $p$ to $q$, do a finger move of $\beta$ curve to introduce 2 intersections with chosen $\alpha$
+  ![image_2021-05-07-15-40-21](figures/image_2021-05-07-15-40-21.png) 
+
+  - Yields 4 new intersections.
+
+- Case 2: $\alpha, \beta, \beta$.
+  - Finger move on $\beta$ curve, pulling all other $\beta$ curves with it.
+  ![image_2021-05-07-15-41-23](figures/image_2021-05-07-15-41-23.png)
+
+:::
 
 - Now reduce the number of boundary components on non-disk regions $D$.:
 
