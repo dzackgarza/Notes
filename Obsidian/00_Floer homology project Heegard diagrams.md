@@ -206,7 +206,7 @@ Find an adjacent region $D_*$ with 1 smaller distance:
 
 ![image_2021-05-07-15-53-06](figures/image_2021-05-07-15-53-06.png)
 
-Idea: we will finger move through $b_*$:
+Idea: we will finger move $b_*$ through $D_m$ to reduce the badness of $D_m$:
 
 ![asdas](figures/image_2021-05-07-15-53-42.png)
 :::
