@@ -214,12 +214,20 @@ Look at what happens locally: we introduce some new regions, usually less bad:
 
 ![image_2021-05-07-15-54-37](figures/image_2021-05-07-15-54-37.png)
 
-We can push through square regions:
-
-![image_2021-05-07-15-54-57](figures/image_2021-05-07-15-54-57.png)
 :::
 
 
+
+
+:::{.proposition title="?"}
+We can push through square regions:
+
+![image_2021-05-07-15-54-57](figures/image_2021-05-07-15-54-57.png)
+
+So continue, then do some casework:
+
+![image_2021-05-07-15-55-19](figures/image_2021-05-07-15-55-19.png)
+:::
 
 
 
