@@ -39,7 +39,8 @@ A formal sum of regions is a **2-chain**.
 
 
 :::{.definition title="Positive regions"}
-Given 2 generators \( \vector x, \vector y \) define \( \pi_2(\vector x, \vector y) \) to be the set of all regions $R_i$ satisfying $\bd^2 R_i = \vector y - \vector x$.
+Given 2 generators \( \vector x, \vector y \) define \( \pi_2(\vector x, \vector y) \) to be the set of all 2-chains $\phi$ satisfying $\bd^2 \phi = \vector y - \vector x$.
+
 :::
 
 
