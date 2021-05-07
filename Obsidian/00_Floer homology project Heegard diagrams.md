@@ -191,4 +191,20 @@ For a fixed $d$, order various $c_d( \mathcal{H}' )$ lexicographically.
 
 
 
+:::{.theorem title="?"}
+Main theorem
+
+
+![image_2021-05-07-15-51-57](figures/image_2021-05-07-15-51-57.png)
+:::
+
+
+
+:::{.proposition title="?"}
+Setup: fix $D_0$ to be the region containing the basepoint, $D_m$ to be the least bad region.
+:::
+
+
+
+
 
