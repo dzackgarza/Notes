@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Classical homological algebra.md",
+            "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Classical homological algebra.md",
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Classical homological algebra.md"
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Classical homological algebra.md",
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Classical homological algebra.md"
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Classical homological algebra.md",
+                "file": "zettelkasten/Subjects/Homological Algebra Talk.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,8 +238,8 @@
   },
   "active": "30d6a64e6df401f6",
   "lastOpenFiles": [
-    "zettelkasten/Classical homological algebra.md",
     "zettelkasten/Subjects/Homological Algebra Talk.md",
+    "zettelkasten/Classical homological algebra.md",
     "zettelkasten/Subjects/Homological Algebra.md",
     "zettelkasten/Untitled 1.md",
     "00_Floer homology project Heegard diagrams.md",
