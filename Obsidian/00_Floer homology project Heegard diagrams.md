@@ -227,6 +227,7 @@ We can push through square regions:
 So continue, then do some casework:
 
 ![image_2021-05-07-15-55-19](figures/image_2021-05-07-15-55-19.png)
+![image_2021-05-07-15-55-51](figures/image_2021-05-07-15-55-51.png)
 :::
 
 
