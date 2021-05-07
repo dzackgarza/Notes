@@ -66,3 +66,10 @@ Tags: #todo #floer
 
 - Define bigon
 - Define finger moves
+
+
+\[
+b(D) \da \max \ts{ n-2, 0 } = n-2 \text{ when } D\in 2n\dash\text{gon}, n\geq 3
+
+.\]
+
