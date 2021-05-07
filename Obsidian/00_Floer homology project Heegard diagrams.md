@@ -209,6 +209,14 @@ Find an adjacent region $D_*$ with 1 smaller distance:
 Idea: we will finger move $b_*$ through $D_m$ to reduce the badness of $D_m$:
 
 ![asdas](figures/image_2021-05-07-15-53-42.png)
+
+Look at what happens locally: we introduce some new regions, usually less bad:
+
+![image_2021-05-07-15-54-37](figures/image_2021-05-07-15-54-37.png)
+
+We can push through square regions:
+
+![image_2021-05-07-15-54-57](figures/image_2021-05-07-15-54-57.png)
 :::
 
 
