@@ -81,6 +81,16 @@ Note
 :::
 
 
+:::{.definition title="Total Distance"}
+For a Heegaard diagram \( \mathcal{H}  \) define the **distance** of $D$ as 
+\[
+d(D) \da \min \ts{ \# (\gamma\intersect \vec\beta) \st w'\in D, w \mapsvia{\gamma} w', \gamma\in \vec\alpha^c }
+.\]
+
+:::
+
+
+
 ## Algorithm Overview
 
 - Start from an admissible pointed Heegaard diagram, end up with an admissible *nice* pointed Heegaard diagram using isotopies and handleslides on the $\beta$ curves.
