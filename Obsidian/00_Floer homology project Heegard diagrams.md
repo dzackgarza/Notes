@@ -20,12 +20,17 @@ Tags: #todo #floer
 # Definitions
 
 
+:::{.remark}
+Use a cylindrical reformulation of $\hat{\HF}$ due to Lipshitz.
+:::
+
+
 :::{.definition title="Floer chain complex"}
 Given a pointed Heegaard diagram 
 \[
 ( \Sigma, \vec \alpha, \vec \beta, w)
 ,\]
-the generators of $\CF$ are formal sums of points $\vector x = \sum_{i=1}^{g-k-1} x_i$ where each \( \alpha \) curve contains some $x_i$ and each \( \beta \) curve contains some $x_j$.
+the generators of $\CF$ are formal sums of points $\vector x = \sum_{i=1}^{g-k-1} x_i$ where each \( \alpha \) curve contains some $x_i$ and each \( \beta \) curve contains some $x_j$, and $k$ is the number of basepoints in $\vec w$.
 :::
 
 
@@ -50,7 +55,7 @@ Define $n_p(\phi)$ to be the coefficient of the region $R_i \ni p$, then $\phi$ 
 
 
 :::{.definition title="Admissible diagram"}
-Define $\pi_2^0(\vector, \vector y)$ to be all domains $\phi$ such that $n_{\vec w} = 0$.
+Define $\pi_2^0(\vector x, \vector y)$ to be all domains $\phi$ such that $n_{\vec w} = 0$.
 A Heegaard diagram \( \mathcal{H}  \) is **admissible** if for every generator \( \vector{x} \in \CF \), every positive domain \( \varphi\in \pi_2^0(\vector x, \vector x) \) is trivial. 
 :::
 
