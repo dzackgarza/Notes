@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Quick_Notes/2021-04-17.md",
+            "file": "Quick_Notes/2021-04-25.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-04-17.md",
+                "file": "Quick_Notes/2021-04-25.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-04-17.md"
+                "file": "Quick_Notes/2021-04-25.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick_Notes/2021-04-17.md",
+                "file": "Quick_Notes/2021-04-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-04-17.md"
+                "file": "Quick_Notes/2021-04-25.md"
               }
             }
           },
@@ -185,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-04-17.md",
+                "file": "Quick_Notes/2021-04-25.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,6 +238,7 @@
   },
   "active": "cad39689cbe4ee76",
   "lastOpenFiles": [
+    "Quick_Notes/2021-04-25.md",
     "Quick_Notes/2021-04-17.md",
     "zettelkasten/Advice.md",
     "00_Undergraduate Research Index.md",
@@ -246,7 +247,6 @@
     "00_Subject Index.md",
     "zets/2021-04-26_Langlands.md",
     "zettelkasten/Langlands.md",
-    "00_Reading Projects Index.md",
-    "00_Home.md"
+    "00_Reading Projects Index.md"
   ]
 }
