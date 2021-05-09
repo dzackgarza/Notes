@@ -9,3 +9,7 @@ Topics:
 - [Scalar curvature](Scalar%20curvature)
 - [Sectional curvature](Sectional%20curvature)
 - [Curvature of a connection](curvature%20of%20a%20connection.md)
+
+How these are related:
+
+> You get Ricci curvature by taking the trace of Riemann curvature, and you get scalar curvature by taking the trace of Ricci curvature.
