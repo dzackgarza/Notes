@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "ff50bd6b645807b5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Principal bundle.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/cohomolology theory.md",
+                "file": "zettelkasten/Principal bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/cohomolology theory.md"
+                "file": "zettelkasten/Principal bundle.md"
               }
             }
           },
@@ -148,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/cohomolology theory.md",
+                "file": "zettelkasten/Principal bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/cohomolology theory.md"
+                "file": "zettelkasten/Principal bundle.md"
               }
             }
           },
@@ -186,7 +197,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/cohomolology theory.md",
+                "file": "zettelkasten/Principal bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,17 +248,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "13ed4da511e2dcf7",
+  "active": "ff50bd6b645807b5",
   "lastOpenFiles": [
+    "zettelkasten/Principal bundle.md",
+    "zettelkasten/classifying space.md",
+    "zettelkasten/section of a bundle.md",
+    "zettelkasten/homogeneous space.md",
+    "zettelkasten/section.md",
+    "zettelkasten/2021-04-25_classifying_spaces_ug.md",
     "zettelkasten/cohomolology theory.md",
     "zettelkasten/Chow Ring.md",
     "zettelkasten/BG.md",
-    "zettelkasten/classifying space.md",
-    "zettelkasten/Classifying Stack.md",
-    "zettelkasten/aspherical space.md",
-    "zettelkasten/2021-04-28_Mock_AMS_2020_Talk_V2.md",
-    "zettelkasten/Subjects/Homotopy Theory.md",
-    "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
-    "zettelkasten/Elliptic curve.md"
+    "zettelkasten/Classifying Stack.md"
   ]
 }
