@@ -5,3 +5,4 @@ S = \tr_g \Ric
 $$
 - Can be expressed in terms of [Christoffel symbols](Christoffel%20symbols).
 - Requires a [Riemannian metric](Riemannian%20metric) $g$.
+- Gromov and Lawson: every simply connected manifold of dimension at least 5 which is not [[spin]] has a metric with positive scalar curvature
