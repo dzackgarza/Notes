@@ -33,9 +33,8 @@ Tools Needed:
 	- [Riemann curvature tensor](Riemann%20curvature)
 - [covariant derivative](covariant%20derivative)
 - [metric tensor](metric%20tensor)
-- The Field Equations [Einstein equations](Einstein%20equations.md)
-- The Geodesic Equations
-	- $n$ ODE IVPs for $M^n$, luckily has existence/uniquness
+- [Einstein equations](Einstein%20equations.md)
+- The [geodesic equations](geodesics)
 
 # General vs Special Relativity
 Special: light travels at a constant speed for all observers, plus the laws of motion are the same in all inertial (non-accelerating) frames. Makes all physical laws "covariant" (really invariant) under a certain group of coordinate transformations. Encodes quantities like energy and momentum with scalars and 4-vectors. Models spacetime as a manifold that is locally $\RR^3 \cross \RR$ with metric signature $(+,-,-,-)$. Works for reformulating classical laws, but doesn't incorporate gravity.
