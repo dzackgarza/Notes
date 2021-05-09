@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/curvature of a connection.md",
+            "file": "zettelkasten/curvature.md",
             "mode": "source"
           }
         }
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/curvature of a connection.md",
+                "file": "zettelkasten/curvature.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/curvature of a connection.md"
+                "file": "zettelkasten/curvature.md"
               }
             }
           },
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/curvature of a connection.md",
+                "file": "zettelkasten/curvature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/curvature of a connection.md"
+                "file": "zettelkasten/curvature.md"
               }
             }
           },
@@ -211,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/curvature of a connection.md",
+                "file": "zettelkasten/curvature.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,15 +250,15 @@
   },
   "active": "66386af02d2fbe5b",
   "lastOpenFiles": [
-    "zettelkasten/curvature of a connection.md",
+    "zettelkasten/curvature.md",
     "zettelkasten/connection.md",
+    "zettelkasten/curvature of a connection.md",
     "zettelkasten/torsion of a connection.md",
     "zettelkasten/torsion.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/Levi-Cevita connection.md",
     "zettelkasten/alpha invariant.md",
     "zettelkasten/Scalar curvature.md",
-    "zettelkasten/curvature.md",
     "zettelkasten/Kähler.md"
   ]
 }
