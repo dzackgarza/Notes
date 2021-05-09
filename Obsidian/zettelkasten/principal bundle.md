@@ -2,9 +2,11 @@
 aliases: ["principal"]
 ---
 
-**Definition:** A _principal $G\dash$ bundle_ is a [[fiber bundle]] $F \to E \to B$ in which for each fiber $\pi^{-1}(b)\definedas F_b$, satisfying the condition that $G$ acts freely and transitively on $F_b$. In other words, there is a continuous group action $\actson: E\cross G \to E$ such that for every $f \in F_b$ and $g\in G$, we have $g\actson f \in F_b$ and $g\actson f \neq f$.
+**Definition:** A _principal $G\dash$ bundle_ is a [fiber bundle](fiber%20bundle.md) $F \to E \to B$ in which for each fiber $\pi^{-1}(b)\definedas F_b$, satisfying the condition that $G$ acts freely and transitively on $F_b$. 
 
-**Example:** A covering space $\hat X \mapsvia{p} X$ yields a principal $\pi_1(X)\dash$ bundle.
+In other words, there is a continuous group action $\actson: E\cross G \to E$ such that for every $f \in F_b$ and $g\in G$, we have $g\actson f \in F_b$ and $g\actson f \neq f$.
+
+**Example:** A [covering space](covering%20space) $\hat X \mapsvia{p} X$ yields a principal $\pi_1(X)\dash$ bundle.
 
 _Remark_: A consequence of this is that each $F_b \cong G \in \text{TopGrp}$ (which may also be taken as the definition). Furthermore, each $F_b$ is then a [homogeneous space](homogeneous%20space)
 

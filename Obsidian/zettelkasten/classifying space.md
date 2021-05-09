@@ -16,10 +16,10 @@ date: 2021-04-26T10:40
 
 # Classifying Spaces
 
-- [Principal bundle](Principal%20bundle)
+- [principal bundle](principal%20bundle.md)
 
 
-**Definition:** Given a topological group $G$, a **classifying space**, denoted $BG$, is the base space of a universal [principal](Principal%20bundle.md) $G\dash$ bundle
+**Definition:** Given a topological group $G$, a **classifying space**, denoted $BG$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
 $$
 G \to EG \mapsvia{\pi} BG
 $$

@@ -13,17 +13,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "ff50bd6b645807b5",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/Principal bundle.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -90,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Principal bundle.md",
+                "file": "zettelkasten/cohomolology theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Principal bundle.md"
+                "file": "zettelkasten/cohomolology theory.md"
               }
             }
           },
@@ -159,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Principal bundle.md",
+                "file": "zettelkasten/cohomolology theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Principal bundle.md"
+                "file": "zettelkasten/cohomolology theory.md"
               }
             }
           },
@@ -197,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Principal bundle.md",
+                "file": "zettelkasten/cohomolology theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -248,17 +237,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "ff50bd6b645807b5",
+  "active": "13ed4da511e2dcf7",
   "lastOpenFiles": [
+    "zettelkasten/cohomolology theory.md",
+    "zettelkasten/Natural transformation.md",
+    "zettelkasten/Characteristic class.md",
     "zettelkasten/Principal bundle.md",
+    "zettelkasten/fiber bundles.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/section of a bundle.md",
     "zettelkasten/homogeneous space.md",
     "zettelkasten/section.md",
-    "zettelkasten/2021-04-25_classifying_spaces_ug.md",
-    "zettelkasten/cohomolology theory.md",
-    "zettelkasten/Chow Ring.md",
-    "zettelkasten/BG.md",
-    "zettelkasten/Classifying Stack.md"
+    "zettelkasten/2021-04-25_classifying_spaces_ug.md"
   ]
 }

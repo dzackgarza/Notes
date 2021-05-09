@@ -1,4 +1,4 @@
-- [[Natural transformation]]
+- [[natural transformation]]
 - [[Yoneda embedding]]
 - [[Yoneda lemma]]
 - [[zettelkasten/adjunction]]
