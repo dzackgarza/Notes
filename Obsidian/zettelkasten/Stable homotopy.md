@@ -42,17 +42,9 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 	- [Topological K theory](Topological%20K%20theory)
 	- [[Bott periodicity]]
 
-- Colimits
-- Smash product
-- Homotopy limit/colimit
-- Model categories
 - $\infty\dash$categories
 - Topological modular forms
 - Steenrod Algebra
-- Formal groups
-- Nishida's Theorem:
-  - The $S^1$ spectrum is some kind of "thickening" of $\ZZ$?
-  - Morava E-Theory
 
 
 # Chromatic Homotopy
@@ -65,6 +57,7 @@ Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
 - [Bousfield localization](Bousfield%20localization)
 - [[Morava stabilizer group]]
 	- Particularly Mike Hopkins' contributions
+	- [Morava E theory](Morava%20E%20theory.md)
 - [Formal group](zettelkasten/Formal%20group.md)
 	- [[Formal group]]
 	- [[Lubin-Tate space]]
