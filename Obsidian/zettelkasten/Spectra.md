@@ -2,6 +2,8 @@
 alaises: ["spectrum"]
 ---
 
+References: [Stable homotopy](Stable%20homotopy.md)
+
 > Opinion from MO: modern Topology starts with spectra.
 
 - [[How to extract homology using spectra]]
