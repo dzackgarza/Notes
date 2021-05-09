@@ -62,5 +62,18 @@ Tags: #recommendations #reading
 
 - Carlson, [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
 
+# Light / Expository
+
 - Littlewood's Miscellany
 	- Contains Cambridge gossip! 
+
+# Physics
+
+https://twitter.com/dzackgarza/status/1390862843130548224
+
+[Lectures on Supersymmetry](http://alpha.sinp.msu.ru/~panov/LibBooks/SUSY/(Courant_Lecture_Notes_11)V._S._Varadarajan-Supersymmetry_for_Mathematicians__An_Introduction_(Courant_Lecture_Notes)-American_Mathematical_Society(2004).pdf)
+
+- [Atiyah on the geometry of Yang-Mills](https://zulfahmed.files.wordpress.com/2014/05/atiyahgeometryyangmillsfields.pdf)
+	- Nat rec!
+- [Barton Zwiebach's "A First Course in String Theory"](https://ocw.mit.edu/courses/physics/8-251-string-theory-for-undergraduates-spring-2007/lecture-notes/)
+	- Leo rec!
