@@ -1,0 +1,1 @@
+A homology sphere $X$ is any manifold $X\in \ZHS^n$, and the Poincare homology sphere

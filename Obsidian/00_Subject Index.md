@@ -1,7 +1,7 @@
 # By Subject
 ## Topology
 - [What is the difference between low and high dimensional topology?](zettelkasten/2021-04-26_Low_vs_High_Dimensional_Topology.md)
-- [3-Manifolds](zettelkasten/2021-04-26_3-Manifolds.md)
+- [3-Manifolds](zettelkasten/3-manifold.md)
 - [Contact geometry](zettelkasten/2021-04-26_Contact_Geometry.md)
 - [Floer Theory](zettelkasten/2021-04-26_Floer_Theory.md)
 - [Fukaya Categories](zettelkasten/Fukaya%20category.md)

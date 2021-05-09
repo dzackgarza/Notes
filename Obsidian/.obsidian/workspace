@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/spherical manifold.md",
+            "file": "zettelkasten/Poincare homology sphere.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/spherical manifold.md",
+                "file": "zettelkasten/Poincare homology sphere.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/spherical manifold.md"
+                "file": "zettelkasten/Poincare homology sphere.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/spherical manifold.md",
+                "file": "zettelkasten/Poincare homology sphere.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/spherical manifold.md"
+                "file": "zettelkasten/Poincare homology sphere.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/spherical manifold.md",
+                "file": "zettelkasten/Poincare homology sphere.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -253,13 +253,13 @@
   "lastOpenFiles": [
     "zettelkasten/Untitled 4.md",
     "zettelkasten/spherical manifold.md",
+    "zettelkasten/2021-04-26_3-Manifolds.md",
     "zettelkasten/Eilenberg-MacLane space.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/curvature.md",
     "zettelkasten/curvature of a connection.md",
     "zettelkasten/Postnikov tower.md",
     "zettelkasten/Eilenberg-MacLane Spaces.md",
-    "zettelkasten/Stable homotopy.md",
-    "zettelkasten/unstable homotopy groups of spheres.md"
+    "zettelkasten/Stable homotopy.md"
   ]
 }
