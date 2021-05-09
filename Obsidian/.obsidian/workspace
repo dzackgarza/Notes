@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/torsion of a connection.md",
+            "file": "zettelkasten/connection.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/torsion of a connection.md",
+                "file": "zettelkasten/connection.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/torsion of a connection.md"
+                "file": "zettelkasten/connection.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/torsion of a connection.md",
+                "file": "zettelkasten/connection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/torsion of a connection.md"
+                "file": "zettelkasten/connection.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/torsion of a connection.md",
+                "file": "zettelkasten/connection.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,8 +239,8 @@
   },
   "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
-    "zettelkasten/torsion of a connection.md",
     "zettelkasten/connection.md",
+    "zettelkasten/torsion of a connection.md",
     "zettelkasten/torsion.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/Levi-Cevita connection.md",
