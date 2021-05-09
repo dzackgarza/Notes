@@ -9,7 +9,7 @@ aliases: ["image of J"]
 
 # What is the $J$ homomorphism? 
 
-The $J$ homomorphism seems to link the [framed bordism](framed%20bordism) classes of manifolds to homotopy groups of spheres - for example $J$ takes $\pi_k(SL^n(R))$ to $\pi_{n}^k S^n$.
+The $J$ homomorphism seems to link the [framed bordism](framed%20bordism) classes of manifolds to [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres.md) - for example $J$ takes $\pi_k(SL^n(R))$ to $\pi_{n}^k S^n$.
 
 Look at the map
 \[
