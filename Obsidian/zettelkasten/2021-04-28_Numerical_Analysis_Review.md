@@ -4,8 +4,6 @@ tags:
   - Unfiled
 ---
 
-[Undergraduate](Undergraduate)
-
 Tags: #review #numerical_analysis #undergraduate
 
 # Numerical Analysis Review

@@ -29,7 +29,7 @@ Yes for acute triangles, there is at least one periodic orbit:
 
 For arbitrary triangles: unknown!
 
-Historically, the study of periodic orbits motivated the definition of [Contact Structure](Contact%20Structure).
+Historically, the study of periodic orbits motivated the definition of [contact structure](Subjects/Contact.md).
 
 **Definition (Hyperplane Field):**
 A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
@@ -140,10 +140,8 @@ Every compact 3-manifold arises as surgery on a link.
 **Theorem:** 
 Weinstein surgery on a *loose Legendrian* knot yields an overtwisted contact structure.
 
-> Compare: 
 
 
-> However, not every compact 3-manifold $M$ admits a *fillable* contact structure $(M, \xi)$ (roughly: admits a symplectic manifold $(X, \omega)$ with $\bd X = M$ and some compatibility between $\xi, \omega$) -- need framing to be realizable as a *Legendrian* framing.
 
 **Theorem:** 
 Weinstein surgery along a loose Legendrian sphere yields an overtwisted contact manifold.
