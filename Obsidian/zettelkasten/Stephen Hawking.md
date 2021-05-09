@@ -42,8 +42,8 @@ Special: light travels at a constant speed for all observers, plus the laws of m
 General: Want a theory that works for accelerating frames and incorporates gravity. Requires bringing together energy, momentum, stress, and pressure, and moving to $4\times4$ tensors instead of 4-vectors. Recover SR by defining inertial frames to travel along geodesics with constant velocity (setting acceleration equal to zero).
 
 # Definition of Spacetime
-Spacetime is 4-dimensional topological manifold with a smooth atlas carrying a torsion-free section compatible with a Lorentizan metric and a time orientation satisfying the Einstein equations.
 
+[spacetime](spacetime)
 
 Story:
 Hawking did his thesis in the 60s - by then, GR was firmly established based on the results of the "3 big tests":
@@ -53,15 +53,15 @@ Hawking did his thesis in the 60s - by then, GR was firmly established based on 
 
 However, the same equation that yields these productions also admits singularities. Are these artifacts of the model, or of coordinate choices? Hawking set off to investigate these singularities.
 
-What is the math of GR? We take spacetime to be a 4 dimensional Riemannian manifold. Then equation the pivotal equation is the Einstein field equations
+What is the math of GR? We take spacetime to be a 4 dimensional Riemannian manifold. Then equation the pivotal equation is the [[Einstein field equations
 $$R_{ij} + \frac{1}{2}R g_{ij} + \Lambda g_{ij} = T_{ij}$$
 
 where
-- $R_{ij}$ is the Ricci curvature
-- $R$ is the scalar curvature
-- $g_{ij}$ is the metric tensor
+- $R_{ij}$ is the [Ricci curvature](Ricci%20curvature.md)
+- $R$ is the [Scalar curvature](Scalar%20curvature.md)
+- $g_{ij}$ is the [metric tensor](metric%20tensor.md)
 - $\Lambda$ is the "cosmological constant"
-- $T_{ij}$ is the stress-energy tensor
+- $T_{ij}$ is the [stress-energy tensor](stress-energy%20tensor)
 
 The left hand side represents properties of the geometry of space time, while the right hand side indicated properties of matter in a given region.
 
