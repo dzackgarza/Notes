@@ -1,0 +1,2 @@
+- Refined version of the [A hat genus](A%20hat%20genus)
+- Vanishes for spin manifolds ()

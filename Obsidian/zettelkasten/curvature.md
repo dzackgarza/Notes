@@ -1,5 +1,3 @@
-
-
 Topics: [Riemannian geometry](Riemannian%20geometry.md) | [Physics](Physics.md)
 
 - [Riemann curvature](Riemann%20curvature)

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Scalar curvature.md",
+            "file": "zettelkasten/alpha invariant.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md",
+                "file": "zettelkasten/alpha invariant.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md"
+                "file": "zettelkasten/alpha invariant.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md",
+                "file": "zettelkasten/alpha invariant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md"
+                "file": "zettelkasten/alpha invariant.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md",
+                "file": "zettelkasten/alpha invariant.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
+    "zettelkasten/alpha invariant.md",
     "zettelkasten/Scalar curvature.md",
+    "zettelkasten/curvature.md",
     "zettelkasten/Kähler.md",
     "zettelkasten/Seiberg–Witten invariants.md",
     "zettelkasten/spherical.md",
     "zettelkasten/manifold.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/spin.md",
-    "zettelkasten/curvature.md",
-    "zettelkasten/Levi-Cevita connection.md",
-    "zettelkasten/Untitled 4.md"
+    "zettelkasten/Levi-Cevita connection.md"
   ]
 }
