@@ -23,7 +23,9 @@ for any [generalized cohomology theory](cohomolology%20theory.md) $E_*$. This sa
 Another good consequence of spectra is the [Brown Representability](Brown%20Representability) theorem. It says that any [[generalized cohomology theory]] on spaces is representable by a spectra. 
 
 ## Hopf Invariant 1
-As an aside, a great reason to care about cohomology theories comes from Adams' two solutions to the [[zettelkasten/Hopf invariant one]] problem. His first solution uses ordinary cohomology to do the work, but it is very long and makes extensive use of higher [[zettelkasten/Cohomology operations]]. His second proof (with Atiyah) is beautiful and short, but only because he uses an extraordinary cohomology theory, [[complex K-theory]], to do the job. [More on Hopf invariant](http://people.virginia.edu/~mah7cd/Foundations/Adams,%20Atiyah%20-%20K-theory%20and%20the%20Hopf%20Invariant.pdf)
+A reason to care about cohomology theories: Adams' two solutions to the [[zettelkasten/Hopf invariant one]] problem. First solution uses ordinary cohomology to do the work, but it is very long and makes extensive use of higher [[zettelkasten/Cohomology operations]]. His second proof (with Atiyah) is beautiful and short, but only because he uses an extraordinary cohomology theory, [[complex K-theory]], to do the job. 
+
+- [More on Hopf invariant](http://people.virginia.edu/~mah7cd/Foundations/Adams,%20Atiyah%20-%20K-theory%20and%20the%20Hopf%20Invariant.pdf)
 
 ## Categorical Properties
 You may be familiar with a similar problem at the space level. One can construct the [[homotopy category]] of spaces by taking the objects to be CW complexes and the morphisms to be homotopy classes of continuous maps. This is a category, all right, but **it does not contain [pushouts](Pushout) or [sequential colimits](sequential%20colimits)**. 
