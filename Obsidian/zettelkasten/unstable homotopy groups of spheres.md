@@ -12,8 +12,6 @@ tags:
 # Survey articles on homotopy groups of spheres
 From Hatcher:
 
-While my Algebraic Topology book and my unfinished book on [[spectral sequences]] contain some information about homotopy groups of spheres, they don't really qualify as a . This introductory chapter starts at a reasonably accessible level, with increasing prerequisites in the later sections of the chapter. More recent surveys ought to exist, although at the moment I can't recall any. With the recent solution of the Kervaire invariant problem by Hill-Hopkins-Ravenel, this would be a good time for an updated survey.
-
 Connections between homotopy groups of spheres and low-dimensional geometry and topology have traditionally been somewhat limited, with the Hopf bundle being the thing that comes most immediately to mind. A fairly recent connection is Soren Galatius' theorem that the homology groups of $Aut(F_n)$, the automorphism group of a free group, are isomorphic in a stable range of dimensions to the homology groups of "loop-infinity S-infinity", the space whose homotopy groups are the stable homotopy groups of spheres.
 
 Other posters have alluded to the Kervaire-Milnor theory (from "Groups of homotopy spheres. I") which shows how, via Pontryagin-Thom, our knowledge and ignorance about the stable homotopy groups of spheres is reflected in knowledge and ignorance about classification of manifolds. Maybe it's worth telling this (really beautiful!) story.
