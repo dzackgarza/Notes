@@ -8,5 +8,15 @@ aliases: ["Levi-Cevita connection"]
 
 Defined as
 $$
-\Gamma(\mathrm{T} M)^{\tensor 2} & \rightarrow \Gamma(\mathrm{T} M) \\(X, Y) & \mapsto \nabla_{X} Y 
+\nabla: \Gamma(\mathrm{T} M)^{\tensor 2} & \to \Gamma(\mathrm{T} M) \\(X, Y) & \mapsto \nabla_{X} Y 
+,$$
+where $\Gamma$ denotes taking smooth global sections, such that for all $f\in C^\infty(M; \RR)$
+
+- $C^\infty(M; \RR)$ linear in the first variable: 
 $$
+\nabla_{f \mathrm{X}} \mathrm{Y}=f \nabla_{\mathrm{X}} \mathrm{Y}
+$$
+-  Leibniz rule in the second variable:
+$$
+\nabla_{\mathrm{X}}(f \mathrm{Y})=\partial_{X} f \mathrm{Y}+f \nabla_{\mathrm{X}} \mathrm{Y}$ where $\partial_X$ is the directional derivative.
+	So $\nabla$ satisfies the
