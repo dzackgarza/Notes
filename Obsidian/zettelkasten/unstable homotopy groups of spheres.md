@@ -16,7 +16,7 @@ Connections between homotopy groups of spheres and low-dimensional geometry and 
 
 Other posters have alluded to the Kervaire-Milnor theory (from "Groups of homotopy spheres. I") which shows how, 
 
-> Kervaire-Milnor theory ("Groups of Homotopy Spheres") and Pontryagin-Thom show that our knowledge and ignorance about the stable homotopy groups of spheres is reflected in knowledge and ignorance about classification of manifolds. 
+> Kervaire-Milnor theory ("Groups of Homotopy Spheres") and Pontryagin-Thom show that our knowledge/ignorance about the stable homotopy groups of spheres is reflected in knowledge/ignorance about classification of manifolds. 
 
 ## Relation to Classification of Manifolds
 
