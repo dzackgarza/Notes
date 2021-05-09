@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "765626a443ed1091",
+        "id": "13ed4da511e2dcf7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
+            "file": "zettelkasten/Chow Ring.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
+                "file": "zettelkasten/Chow Ring.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md"
+                "file": "zettelkasten/Chow Ring.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
+                "file": "zettelkasten/Chow Ring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md"
+                "file": "zettelkasten/Chow Ring.md"
               }
             }
           },
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
+                "file": "zettelkasten/Chow Ring.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,17 +237,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "765626a443ed1091",
+  "active": "13ed4da511e2dcf7",
   "lastOpenFiles": [
+    "zettelkasten/Chow Ring.md",
+    "zettelkasten/BG.md",
+    "zettelkasten/classifying space.md",
+    "zettelkasten/Classifying Stack.md",
+    "zettelkasten/aspherical space.md",
+    "zettelkasten/2021-04-28_Mock_AMS_2020_Talk_V2.md",
+    "zettelkasten/Subjects/Homotopy Theory.md",
     "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
     "zettelkasten/Elliptic curve.md",
-    "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md",
-    "zettelkasten/symplectic.md",
-    "zettelkasten/periodic orbit.md",
-    "zettelkasten/Subjects/Contact.md",
-    "zettelkasten/Surgery Theory.md",
-    "zettelkasten/Weinstein.md",
-    "zettelkasten/overtwisted contact structure.md",
-    "zettelkasten/Untitled 4.md"
+    "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md"
   ]
 }

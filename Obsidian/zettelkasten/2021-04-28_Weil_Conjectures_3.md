@@ -6,6 +6,8 @@ tags:
 ---
 
 [Zeta function](Zeta%20function.md)
+[Number theory](Number%20theory.md)
+[Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 
 About [algebraic variety](algebraic%20variety): defined by polynomial equations,
 Hypersurfaces are defined by one equation
@@ -64,7 +66,7 @@ In general, for $X$ a curve, we obtain
 Z(X, t) = {(1 - \alpha_1 t) \cdots(1 - \alpha_j t \over (1-t) (1-pt) )} 
 .\]
 
-Weil conjectures for $X$ smooth and connected of dimension $n$: 
+[Weil Conjectures](Subjects/Weil%20Conjectures.md) for $X$ smooth and connected of dimension $n$: 
 
 - $Z(X, t) \in \QQ(t)$
 - (RH) Explicitly, $Z(X, t) = {P_1(t) \cdots P_{2n-1}(t) \over P_0(t) \cdots P_{2n}(t)}$
@@ -73,10 +75,10 @@ Weil conjectures for $X$ smooth and connected of dimension $n$:
 - (Functional equation) $Z(X, 1/p^nt) = \pm t^\chi p^{c/2} Z(X, t)$ where $c = \sum_{i=0}^{2n} (-1)^\chi \deg P_i$. Note that $\chi$ will be the Euler-Poincare characteristic.
 - If $X$ comes by reduction mod $p$ from some $X'/\QQ$, then $\deg P_i = \beta_i = \dim_\QQ H^i(X(\CC); \QQ)$.
 
-Note that the genus is half of the first betti number.
+Note that the genus is half of the first Betti number.
 
 Why are they called the RH for varieties over finite fields?
 Identify $\ZZ$ as the ring of functions over a curve $\spec \ZZ$.
 We think of $x\in \spec \ZZ$ as a map $\ev_x: \ZZ \to \FF_p$ of rings, so points correspond to evaluating at the point.
 
-Recall that we can write the Riemann zeta function as the Dirichlet series $\zeta(s) = \sum_n {1 \over n^s}$ and expand as an euler product $\prod_{p\text{ prime}} {1 \over 1 - p^{-s}$.
+Recall that we can write the [Riemann zeta function](Riemann%20zeta%20function) as the [Dirichlet series](Dirichlet%20series) $\zeta(s) = \sum_n {1 \over n^s}$ and expand as an [Euler product](Euler%20product) $\prod_{p\text{ prime}} {1 \over 1 - p^{-s}$.

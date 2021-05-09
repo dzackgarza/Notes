@@ -12,7 +12,7 @@ header-includes:
 fontsize: 10pt
 ---
 
-[../Subjects/Homotopy Theory](../Subjects/Homotopy%20Theory.md)
+[Subjects/homotopy theory](Subjects/homotopy%20theory.md)
 [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres)
 [../Subjects/Algebraic Topology](../Subjects/Algebraic%20Topology.md)
 
