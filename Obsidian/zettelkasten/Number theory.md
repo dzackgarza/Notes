@@ -43,5 +43,5 @@ See [algebraic number theory](algebraic%20number%20theory)
 
 # Geometric
 
-- [Elliptic curve](Elliptic%20curve.md)
+- [elliptic curve](elliptic%20curve.md)
 - [[Riemann-Roch]]

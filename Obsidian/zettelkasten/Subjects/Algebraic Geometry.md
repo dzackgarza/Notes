@@ -33,7 +33,7 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 - [[Orbifold]]
 	- Classifying orbifolds
 
-- [[../Elliptic curve]]
+- [[../elliptic curve]]
 - [../abelian variety](../abelian%20variety.md)
 - [[../Moduli space]]
 - [[Deformation-obstruction theory]]
