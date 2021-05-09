@@ -1,7 +1,5 @@
 ---
 date: 2021-04-27
-tags: 
-  - Unfiled
 ---
 
 # Undergraduate Research

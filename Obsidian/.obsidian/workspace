@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "7c4e29fcb67b292e",
+        "id": "7c8707a61177dfae",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zets/2021-04-26_Langlands.md",
+            "file": "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zets/2021-04-26_Langlands.md",
+                "file": "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zets/2021-04-26_Langlands.md"
+                "file": "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zets/2021-04-26_Langlands.md",
+                "file": "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zets/2021-04-26_Langlands.md"
+                "file": "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md"
               }
             }
           },
@@ -184,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zets/2021-04-26_Langlands.md",
+                "file": "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,17 +234,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "7c4e29fcb67b292e",
+  "active": "7c8707a61177dfae",
   "lastOpenFiles": [
-    "zets/2021-04-26_Langlands.md",
+    "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md",
+    "00_Undergraduate Research Index.md",
     "00_Subject Index.md",
+    "zets/2021-04-26_Langlands.md",
     "zettelkasten/Langlands.md",
     "00_Reading Projects Index.md",
     "00_Home.md",
     "zettelkasten/2021-04-27_Undergraduate_Research.md",
     "zettelkasten/unstable homotopy groups of spheres.md",
-    "zettelkasten/3-manifold.md",
-    "zettelkasten/Untitled 4.md",
-    "zettelkasten/spherical manifold.md"
+    "zettelkasten/3-manifold.md"
   ]
 }

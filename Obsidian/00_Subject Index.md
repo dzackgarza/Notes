@@ -16,7 +16,7 @@
 - [The section conjecture](zettelkasten/2021-04-26_Section_Conjecture.md)
 
 ## Number Theory
-- [Langlands](zets/2021-04-26_Langlands.md)
+
 - [Langlands](zettelkasten/Langlands.md)
 - [Tate Modules](zettelkasten/2021-04-26_Tate_Modules.md)
 
