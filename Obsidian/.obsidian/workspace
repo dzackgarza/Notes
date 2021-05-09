@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Reading Projects Index.md",
+            "file": "zets/2021-04-26_Langlands.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Reading Projects Index.md",
+                "file": "zets/2021-04-26_Langlands.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Reading Projects Index.md"
+                "file": "zets/2021-04-26_Langlands.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Reading Projects Index.md",
+                "file": "zets/2021-04-26_Langlands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Reading Projects Index.md"
+                "file": "zets/2021-04-26_Langlands.md"
               }
             }
           },
@@ -184,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Reading Projects Index.md",
+                "file": "zets/2021-04-26_Langlands.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,15 +236,15 @@
   },
   "active": "7c4e29fcb67b292e",
   "lastOpenFiles": [
+    "zets/2021-04-26_Langlands.md",
+    "00_Subject Index.md",
+    "zettelkasten/Langlands.md",
     "00_Reading Projects Index.md",
     "00_Home.md",
     "zettelkasten/2021-04-27_Undergraduate_Research.md",
     "zettelkasten/unstable homotopy groups of spheres.md",
     "zettelkasten/3-manifold.md",
     "zettelkasten/Untitled 4.md",
-    "zettelkasten/spherical manifold.md",
-    "zettelkasten/2021-04-26_3-Manifolds.md",
-    "zettelkasten/Eilenberg-MacLane space.md",
-    "zettelkasten/classifying space.md"
+    "zettelkasten/spherical manifold.md"
   ]
 }
