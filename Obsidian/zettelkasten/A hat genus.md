@@ -1,0 +1,3 @@
+-  Notation: $\Ahat(M)$.
+-  In $\ZZ$ for [spin](spin.md) manifolds, and is *even* if additionally $\dim_\RR M = 4 \mod 8$
+-  The [Aatiyah-Singer Index Theorem](Aatiyah-Singer%20Index%20Theorem) implies that $\Ahat(M) = \Ind(\dirac)$ for spin manifolds

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/connection.md",
+            "file": "zettelkasten/A hat genus.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"homotopy category\"",
+                "query": "A \"hat genus",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/A hat genus.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/connection.md"
+                "file": "zettelkasten/A hat genus.md"
               }
             }
           },
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/A hat genus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/connection.md"
+                "file": "zettelkasten/A hat genus.md"
               }
             }
           },
@@ -200,7 +201,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/A hat genus.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +240,15 @@
   },
   "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
+    "zettelkasten/A hat genus.md",
+    "zettelkasten/Untitled 4.md",
+    "zettelkasten/alpha invariant.md",
     "zettelkasten/connection.md",
     "zettelkasten/curvature.md",
     "zettelkasten/curvature of a connection.md",
     "zettelkasten/torsion of a connection.md",
     "zettelkasten/torsion.md",
-    "zettelkasten/Untitled 4.md",
     "zettelkasten/Levi-Cevita connection.md",
-    "zettelkasten/alpha invariant.md",
-    "zettelkasten/Scalar curvature.md",
-    "zettelkasten/Kähler.md"
+    "zettelkasten/Scalar curvature.md"
   ]
 }
