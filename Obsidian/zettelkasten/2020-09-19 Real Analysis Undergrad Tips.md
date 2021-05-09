@@ -1,6 +1,4 @@
-[Advice](Advice)
-[Undergraduate](Undergraduate)
-[Real Analysis](../Subjects/Real%20Analysis.md)
+Tags: #advice #undergraduate 
 
 # Homework 3 
 

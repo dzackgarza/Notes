@@ -38,7 +38,7 @@ See [algebraic number theory](algebraic%20number%20theory)
 
 # Algebraic Curves
 
-- [function fields](function%20fields)
+- [function field](function%20field.md)
 - [Divisor](Divisor.md)
 
 # Geometric

@@ -28,7 +28,7 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 
 - [[../sheaf]]
 - [[../scheme]]
-	- [[Quasicoherent sheaf]] over a [[../scheme]]	
+	- [[../quasicoherent sheaf]] over a [[../scheme]]	
 - [[../stack]]
 - [[Orbifold]]
 	- Classifying orbifolds

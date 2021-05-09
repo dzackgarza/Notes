@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Quick_Notes/2021-05-04.md",
+            "file": "zettelkasten/2021-04-28_AWS_BG_Definitions.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-04.md",
+                "file": "zettelkasten/2021-04-28_AWS_BG_Definitions.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-04.md"
+                "file": "zettelkasten/2021-04-28_AWS_BG_Definitions.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick_Notes/2021-05-04.md",
+                "file": "zettelkasten/2021-04-28_AWS_BG_Definitions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-04.md"
+                "file": "zettelkasten/2021-04-28_AWS_BG_Definitions.md"
               }
             }
           },
@@ -185,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-04.md",
+                "file": "zettelkasten/2021-04-28_AWS_BG_Definitions.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,15 +238,15 @@
   },
   "active": "cad39689cbe4ee76",
   "lastOpenFiles": [
-    "Quick_Notes/2021-05-04.md",
-    "Quick_Notes/2021-05-03.md",
-    "Quick_Notes/2021-04-25.md",
-    "zettelkasten/Burnside ring.md",
-    "Quick_Notes/2021-04-17.md",
-    "zettelkasten/Advice.md",
-    "00_Undergraduate Research Index.md",
-    "zettelkasten/Stable homotopy.md",
-    "zettelkasten/zets/Algebraic Topology Definitions and Theorems.md",
-    "00_Subject Index.md"
+    "zettelkasten/2021-04-28_AWS_BG_Definitions.md",
+    "zettelkasten/Quasicoherent sheaf.md",
+    "zettelkasten/Manifolds Definitions.md",
+    "zettelkasten/Reference Material.md",
+    "zettelkasten/2021-04-28_Manifolds_Background.md",
+    "zettelkasten/2021-04-26_The_Cotangent_Complex_and_Derived_de_Rham_Cohomology.md",
+    "zettelkasten/Quasiisomorphism.md",
+    "zettelkasten/affine schemes.md",
+    "zettelkasten/2020-09-19 Real Analysis Undergrad Tips.md",
+    "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md"
   ]
 }

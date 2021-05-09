@@ -18,7 +18,7 @@ Terms to lookup and define. For each term, provide
 - [../Lazard ring](../Lazard%20ring.md)
 - [[Adams-Novikov spectral sequence]]
 - [Stack](stack.md)
-- [Quasicoherent sheaf](Quasicoherent%20sheaf)
+- [quasicoherent sheaf](quasicoherent%20sheaf.md)
 - Representation of a group
 - Nilpotent
 - [Ramified](ramified%20primes.md)

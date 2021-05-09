@@ -1,10 +1,11 @@
 ---
 date: 2021-04-26
-tags: 
-  - Unfiled
+aliases: ["cotangent complex", "derived de Rham cohomology"]
 ---
 
-# The [Cotangent Complex](Cotangent%20Complex.md) and Derived [de Rham Cohomology](de%20Rham%20Cohomology)
+# The Cotangent Complex and Derived de Rham Cohomology
+
+See [Cotangent Complex](Cotangent%20Complex.md) and [de Rham Cohomology](de%20Rham%20Cohomology)
 
 - Reference: [MSRI Workshop on Derived AG, Birational Geometry, Moduli Spaces](https://www.msri.org/workshops/862/schedules/25958).
 
@@ -61,7 +62,7 @@ This is a stack with a single point, where the isotropy is $K(\GG_m, n-1)$.
 :::
 
 :::{.remark}
-Note that these are all built from [affine schemes](affine%20schemes) with a few acceptable moves.
+Note that these are all built from [affine schemes](affine%20scheme.md) with a few acceptable moves.
 :::
 
 :::{.remark}
@@ -237,7 +238,7 @@ Theory up to weak equivalence.
 ### b: Simplicial Abelian Groups
 
 We can take simplicial abelian groups $s\Ab$ and the connective objects $D(\ZZ)_{\geq 0}$; these have equivalent homotopy theories.
-There is a notion of weak equivalence on the RHS, [quasiisomorphism](Quasiisomorphism), and asking if the literal underlying spaces on the LHS are weakly equivalent as spaces.
+There is a notion of weak equivalence on the RHS, [quasiisomorphism](quasiisomorphism.md), and asking if the literal underlying spaces on the LHS are weakly equivalent as spaces.
 A specific way of doing this is the [Dold-Kan correspondence](Dold-Kan%20correspondence):
 
 :::{.proposition title="Dold-Kan Correspondence"}

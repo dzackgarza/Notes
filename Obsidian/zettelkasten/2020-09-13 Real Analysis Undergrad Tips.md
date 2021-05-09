@@ -1,9 +1,6 @@
 # Sunday, September 13
 
-[Advice](Advice)
-[Real Analysis](../Subjects/Real%20Analysis.md)
-[Undergraduate](Undergraduate)
-[Expository](Expository)
+Tags: #advice #undergraduate
 
 ## General Notes
 

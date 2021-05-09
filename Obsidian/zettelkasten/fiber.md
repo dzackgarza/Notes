@@ -1,3 +1,3 @@
-- [[Central fiber]] 
+- [[central fiber]] 
 - [[Generic fiber]]
-- [[Special fiber]]
+- [[special fiber]]
