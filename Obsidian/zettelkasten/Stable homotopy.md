@@ -41,11 +41,7 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 	- [Algebraic k theory](Algebraic%20K%20theory.md)
 	- [Topological K theory](Topological%20K%20theory)
 	- [[Bott periodicity]]
-
-- $\infty\dash$categories
-- Topological modular forms
-- Steenrod Algebra
-
+- [infty categories](infty%20categories.md)
 
 # Chromatic Homotopy
 Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
@@ -63,6 +59,7 @@ Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
 	- [[Lubin-Tate space]]
 	- [[Lubin-Tate theory]]
 - [[Kervaire invariant 1]]
+- [TMF](Topological%20modular%20forms.md)
 
 # Equivariant Homotopy
 

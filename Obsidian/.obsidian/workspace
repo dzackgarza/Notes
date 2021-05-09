@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "zettelkasten/unstable homotopy groups of spheres.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       },
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Stable homotopy.md",
+            "file": "zettelkasten/spherical manifold.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable homotopy.md",
+                "file": "zettelkasten/spherical manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stable homotopy.md"
+                "file": "zettelkasten/spherical manifold.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Stable homotopy.md",
+                "file": "zettelkasten/spherical manifold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stable homotopy.md"
+                "file": "zettelkasten/spherical manifold.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable homotopy.md",
+                "file": "zettelkasten/spherical manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,15 +251,15 @@
   },
   "active": "3a89dff435f97c1f",
   "lastOpenFiles": [
+    "zettelkasten/spherical manifold.md",
     "zettelkasten/Stable homotopy.md",
+    "zettelkasten/unstable homotopy groups of spheres.md",
     "zettelkasten/Nishida's Theorem.md",
     "zettelkasten/stable homotopy groups of spheres.md",
-    "zettelkasten/unstable homotopy groups of spheres.md",
     "zettelkasten/Bernoulli numbers.md",
     "zettelkasten/Surgery Theory.md",
     "zettelkasten/h-cobordism theorem.md",
     "zettelkasten/Stable homotopy groups of spheres.md",
-    "zettelkasten/J-homomorphism.md",
-    "zettelkasten/Spectra.md"
+    "zettelkasten/J-homomorphism.md"
   ]
 }

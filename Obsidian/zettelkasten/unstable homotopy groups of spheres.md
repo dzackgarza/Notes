@@ -17,7 +17,6 @@ tags:
 
 > Hatcher: Kervaire-Milnor theory ("Groups of Homotopy Spheres") and Pontryagin-Thom show that our knowledge/ignorance about the stable homotopy groups of spheres is reflected in knowledge/ignorance about classification of manifolds. 
 
-
 In each dimension $n$, one has a group $\theta_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to [h-cobordism](h-cobordism), under connected sum. This has a subgroup $\bP_{n+1}$ of boundaries of [parallelizable](framed.md) $n+1$-manifolds. Assume $n>4$, so h-cobordism classes are diffeomorphism classes.
 
 Every homotopy $n$-sphere $S$ can be shown to have a [stable framing](stable%20framing.md). Hence (by Pontrayagin-Thom) $S$ is a regular fiber of a map $S_{n+k}\to S_k$ for $k\gg 0$ whose class in $\pi_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary.
@@ -36,5 +35,3 @@ Finally, $\bP_{4p+2}$ is at most $Z_2$. Here $S$ bounds a [parallelizable](frame
 Browder showed that the Kervaire invariant can be one only when $4p+2=2l−2$ for some $l$, and [Hill-Hopkins-Ravenel](Hill-Hopkins-Ravenel.md) have shown that $l\leq 7$. 
 
 **Conclusion**: $\bP_{4p+2}$ is $Z_2$ except in dimensions $6, 14, 30, 62,$ and possibly $126$, where it's zero.
-
-
