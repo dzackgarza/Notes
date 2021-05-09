@@ -3,4 +3,5 @@
 $$
 S = \tr_g \Ric
 $$
-- Can be expressed in terms of [Christoffel symbols](Christoffel%20symbols)
+- Can be expressed in terms of [Christoffel symbols](Christoffel%20symbols).
+- Requires 
