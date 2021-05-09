@@ -1,4 +1,4 @@
-Topics: [Homotopy](Homotopy) | [classifying space](classifying%20space.md) | [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md)
-
 Definition:
-An aspherical space $X$ is anything of the homotopy type $K(\pi_1 X, 1) \homotopic \B \pi_1(X)$, i.e. $\pi_k(X) = 0$ for $k\geq 2$.
+A 3-manifold of the form $M \cong S^3/\Gamma$ where $\pi_1(M) \cong \Gamma \leq \SO_4(\RR)$.
+
+- If $\Gamma$ is finite cyclic, $M$ is a 3-dimensional [lens space](lens%20space)
