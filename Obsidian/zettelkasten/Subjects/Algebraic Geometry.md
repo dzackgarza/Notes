@@ -43,7 +43,7 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 
 - [[../Blowup]]
 	- [[Exceptional divisor]]
-- [[../Chow Ring]]
+- [[../Chow ring]]
 - [[Serre duality]]
 - [[Local system]]
 - [../O(D) for D a divisor](../O(D)%20for%20D%20a%20divisor.md)

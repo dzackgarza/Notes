@@ -20,7 +20,7 @@ You can take the homotopy groups of a cohomology theory.
 
 # Unsorted
 
-Flipping roles, generalized cohomology theories can be studied in their own right. They come from a category called the stable homotopy category (which is much like a [[derived category]] of chain complexes), and each of them can be determined by a certain amount of data involving cohomology operations. Much of this data can be recovered by looking at how the generalized cohomology theory behaves on certain spaces (projective spaces and [[classifying spaces]] being the canonical examples).
+Flipping roles, generalized cohomology theories can be studied in their own right. They come from a category called the stable homotopy category (which is much like a [[derived category]] of chain complexes), and each of them can be determined by a certain amount of data involving cohomology operations. Much of this data can be recovered by looking at how the generalized cohomology theory behaves on certain spaces (projective spaces and [classifying space](classifying%20space.md) being the canonical examples).
 
 After a lot of hard work (with some of the bigger names including Adams, Milnor, and Quillen, though I am leaving a lot of important names out) it is discovered, starting from almost pure calculation, that the stable homotopy category has a connection to the category of 1-dimensional [Formal group](../Formal%20group.md), via the study of [Characteristic classes](../Characteristic%20class.md). Each generalized cohomology theory determines some amount of formal group data.
 
