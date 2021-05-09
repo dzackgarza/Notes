@@ -251,6 +251,8 @@
   },
   "active": "3a89dff435f97c1f",
   "lastOpenFiles": [
+    "zettelkasten/Eilenberg-MacLane space.md",
+    "zettelkasten/Postnikov tower.md",
     "zettelkasten/Eilenberg-MacLane Spaces.md",
     "zettelkasten/spherical manifold.md",
     "zettelkasten/Stable homotopy.md",
@@ -258,8 +260,6 @@
     "zettelkasten/Nishida's Theorem.md",
     "zettelkasten/stable homotopy groups of spheres.md",
     "zettelkasten/Bernoulli numbers.md",
-    "zettelkasten/Surgery Theory.md",
-    "zettelkasten/h-cobordism theorem.md",
-    "zettelkasten/Stable homotopy groups of spheres.md"
+    "zettelkasten/Surgery Theory.md"
   ]
 }
