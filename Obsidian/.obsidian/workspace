@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Scalar curvature.md",
+            "file": "zettelkasten/manifold.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md",
+                "file": "zettelkasten/manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md"
+                "file": "zettelkasten/manifold.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md",
+                "file": "zettelkasten/manifold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md"
+                "file": "zettelkasten/manifold.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Scalar curvature.md",
+                "file": "zettelkasten/manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,6 +239,7 @@
   },
   "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
+    "zettelkasten/manifold.md",
     "zettelkasten/Scalar curvature.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/spin.md",
@@ -247,7 +248,6 @@
     "zettelkasten/Untitled 4.md",
     "zettelkasten/Ricci curvature.md",
     "zettelkasten/Untitled 3.md",
-    "zettelkasten/Untitled 2.md",
-    "zettelkasten/Recommendations.md"
+    "zettelkasten/Untitled 2.md"
   ]
 }

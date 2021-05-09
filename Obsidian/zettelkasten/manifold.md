@@ -1,0 +1,2 @@
+---
+aliases: ["smooth man"]
