@@ -5,7 +5,7 @@ tags:
 ---
 
 - [Spectra](../Spectra.md)
-- [../Cobordism](../Cobordism.md)
+- [cobordism](cobordism.md)
 - [../Hopf invariant one](../Hopf%20invariant%20one.md)
 - [Kervaire invariant 1](../Kervaire%20invariant%201.md)
 - [Cohomolology theories](../cohomolology%20theory.md)

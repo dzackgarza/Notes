@@ -4,12 +4,13 @@ tags:
   - Unfiled
 ---
 
-#homotopy #stable_homotopy #homotopy_groups_of_spheres #kervaire_invariant #cobordism #j_homomorphism
+References: [Homotopy](Homotopy) | [Stable homotopy](Stable%20homotopy.md) | [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres.md) | [Kervaire invariant 1](Kervaire%20invariant%201.md) | [cobordism](cobordism.md) | [J-homomorphism](J-homomorphism.md)
+
 
 # The Big Motivating Problems
 
 - The Kervaire Invariant 1 problem
-- Classifying manifolds up to framed cobordism
+- Classifying manifolds up to [framed cobordism](framed%20cobordism)
 - Distinct smooth structures on spheres
 
 # Motivation: Stable Homotopy Groups of Spheres
