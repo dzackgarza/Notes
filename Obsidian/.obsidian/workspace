@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Surgery Theory.md",
+            "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Surgery Theory.md",
+                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Surgery Theory.md"
+                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Surgery Theory.md",
+                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Surgery Theory.md"
+                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md"
               }
             }
           },
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Surgery Theory.md",
+                "file": "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "765626a443ed1091",
   "lastOpenFiles": [
-    "zettelkasten/Surgery Theory.md",
+    "zettelkasten/2021-04-28_Weil_Conjectures_3.md",
     "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md",
+    "zettelkasten/symplectic.md",
+    "zettelkasten/periodic orbit.md",
+    "zettelkasten/Subjects/Contact.md",
+    "zettelkasten/Surgery Theory.md",
     "zettelkasten/Weinstein.md",
     "zettelkasten/overtwisted contact structure.md",
     "zettelkasten/Untitled 4.md",
-    "zettelkasten/Subjects/Contact.md",
-    "zettelkasten/2021-04-28_Numerical_Analysis_Review.md",
-    "zettelkasten/contact structure.md",
-    "zettelkasten/symplectic.md",
-    "zettelkasten/Liouville.md"
+    "zettelkasten/2021-04-28_Numerical_Analysis_Review.md"
   ]
 }

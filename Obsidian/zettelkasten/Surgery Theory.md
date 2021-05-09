@@ -15,6 +15,9 @@ Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong D^n$
 Problem:
 This doesn't "see" the smooth structure, and CW complexes can have singular points (e.g. $S^2 = e^0 \disjoint e^2$.
 
+Solution:
+Use [tubular neighborhood](tubular%20neighborhood)
+
 # Definitions
 
 **Definition (Surgery):**
@@ -59,6 +62,8 @@ H_p(M)^\circ    &= M \\
 
 Remark: we need conditions on the embedding of the [normal bundle](normal%20bundle) for this to work.
 
+# Examples
+
 **Examples of Handles :**
 $S^1 \cross D^2 \cong \bar T$, a solid torus.
 
@@ -69,10 +74,10 @@ A useful table:
 > See examples of surgery
 
 
-
 ![](2020-02-05-12-25-15.png)
 
-Solution:
-Use [tubular neighborhood](tubular%20neighborhood)
+
+
+# Results
 
 - Every compact manifold is surgery on a [link](link) and admits a [contact structure](contact%20structure).

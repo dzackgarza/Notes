@@ -2,6 +2,11 @@
 aliases: ["symplectic manifold", "symplectic geometry", "symplectic topology"]
 ---
 
+References:
+
+- [Mike Usher's Notes](https://usherugamath.files.wordpress.com/2019/05/8230-s19.pdf)
+
+
 **Definition (Symplectic Manifold):**
 Recall that $M^{2n}$ is a **symplectic manifold** iff $W$ is smooth of even dimension and admits a  ^395eb1
 

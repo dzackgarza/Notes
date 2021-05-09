@@ -1,5 +1,5 @@
 ---
-aliases: ["contact", "contact topology", "contact geometry", "contact structure"]
+aliases: ["contact", "contact topology", "contact geometry", "contact structure", "contact 3-manifold", "contact manifold"]
 ---
 
 [2021-04-28_Contact_Topology_Notes](../2021-04-28_Contact_Topology_Notes.md)
