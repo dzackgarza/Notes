@@ -3,5 +3,5 @@
 - [[Universal bundle]]
 - [[Tautological bundle]]
 - [[Normal bundle]]
-- [[Levi-Cevita connection]]
+- [[connection]]
 - [[Surface bundle]]

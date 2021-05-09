@@ -8,4 +8,4 @@ Topics: [Riemannian geometry](Riemannian%20geometry.md) | [Physics](Physics.md)
 
 Related Topics
 
-- [Connections](Levi-Cevita%20connection.md)
+- [Connections](connection.md)
