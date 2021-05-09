@@ -50,6 +50,7 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 # Chromatic Homotopy
 Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
 
+- [chromatic homotopy theory](chromatic%20homotopy%20theory.md)
 - [Fracture theorem](Fracture%20theorem)
 - The chromatic spectral sequence
 	- Is this similar to fracture theorems in stable homotopy..?

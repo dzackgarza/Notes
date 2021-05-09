@@ -7,10 +7,7 @@ author: D. Zack Garza
 date: 2017
 ---
 
-[Subjects/Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
-[Undergraduate](Undergraduate)
-
-Tags: #algebraic_geometry 
+Tags: #algebraic_geometry #undergraduate 
 
 Abstract
 =============

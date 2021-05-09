@@ -4,15 +4,12 @@ tags:
   - Unfiled
 ---
 
-Useful references: 
+# References 
 
 - [Wikipedia Glossary of Algebraic Geometry](https://en.wikipedia.org/wiki/Glossary_of_algebraic_geometry)
 - [Wikipedia Glossary of Commutative Algebra](https://en.wikipedia.org/wiki/Glossary_of_commutative_algebra)
 
-Terms to lookup and define. For each term, provide
-1) A precise definition,
-2) A reason it is important enough to care about, and
-3) An example (if applicable)
+# Topics
 
 - [Spectra](../Spectra.md)
 - [../Lazard ring](../Lazard%20ring.md)
@@ -36,12 +33,5 @@ Terms to lookup and define. For each term, provide
 - [Chromatic homotopy theory](Chromatic%20homotopy%20theory)
 - [Coherent stack cohomology](Coherent%20stack%20cohomology)
 - [Formal group](Formal%20group.md)
-
-Prerequisite Knowledge
-- Commutative Group Laws and Lazard's Theorems
-  - See *Stable homotopy and generalised homology* and *A. Fr¨ohlich, Formal groups*
-- Lubin-Tate Formal Groups
-  - See *J. Lubin and J. Tate, Formal complex multiplication in local fields,*
-  - For their deformation spaces, see *Formal moduli for one parameter formal Lie groups,*
-- the classification of central simple division algebras over the p-adic rationals
-  - See *J.-P. Serre, Applications algébriques de la cohomologie des groupes*
+- [Lubin-Tate](Lubin-Tate%20theory.md)
+- [central simple division algebra](central%20simple%20algebra.md)

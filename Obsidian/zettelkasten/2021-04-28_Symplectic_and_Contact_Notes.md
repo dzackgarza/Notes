@@ -8,6 +8,8 @@ tags:
 [Symplectic](Symplectic)
 [../2021-04-28_More_Weinstein_Notes](../2021-04-28_More_Weinstein_Notes.md)
 
+Tags: #symplectic #topology 
+
 Topic: Weinstein Surgery and More
 
 References:

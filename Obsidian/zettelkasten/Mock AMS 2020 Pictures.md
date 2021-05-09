@@ -4,9 +4,9 @@ tags:
   - Unfiled
 ---
 
-[Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
-[[Classification results]]
+Tags: #classification 
 
+[Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 
 ![](figures/image_2020-07-29-01-32-40.png)
 

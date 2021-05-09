@@ -4,10 +4,7 @@ tags:
   - Unfiled
 ---
 
-[Morse Theory](Morse%20Theory.md)
-[Topology](Topology)
-
-Tags: #morse_theory #topology
+Tags: #morse_theory #topology #talks
 
 # BG Info
 
