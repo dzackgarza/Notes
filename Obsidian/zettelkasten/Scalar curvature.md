@@ -4,4 +4,4 @@ $$
 S = \tr_g \Ric
 $$
 - Can be expressed in terms of [Christoffel symbols](Christoffel%20symbols).
-- Requires a metric $g$.
+- Requires a [Riemannian metric](Riemannian%20metric) $g$.
