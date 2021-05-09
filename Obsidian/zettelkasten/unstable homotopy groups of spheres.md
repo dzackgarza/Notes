@@ -19,7 +19,7 @@ tags:
 
 In each dimension $n$, one has a group $\theta_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to [h-cobordism](h-cobordism), under connected sum. This has a subgroup $\bP_{n+1}$ of boundaries of [parallelizable](framed.md) $n+1$-manifolds. Assume $n>4$, so h-cobordism classes are diffeomorphism classes.
 
-Every homotopy $n$-sphere $S$ can be shown to have a [stable framing](stable%20framing.md). Hence (by Pontrayagin-Thom) $S$ is a regular fiber of a map $S_{n+k}\to S_k$ for $k\gg 0$ whose class in $\pi_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary.
+Every [homotopy $n$-sphere](homotopy%20sphere) $S$ can be shown to have a [stable framing](stable%20framing.md). Hence (by [[Pontrayagin-Thom]]) $S$ is a regular fiber of a map $S_{n+k}\to S_k$ for $k\gg 0$ whose class in $\pi_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary.
 
 Changing the stable framing amounts to adding something in the [image of J](J-homomorphism.md) $J: \pi_n(SO(k)) \to \pi_{n+k}(S_k)$. So we get an injective homomorphism $\theta_n/ \bP_{n+1}\to \coker J$ which is onto e.g. for $n$ odd.
 
