@@ -8,4 +8,6 @@ aliases: ["Eilenberg-MacLane spaces"]
 
 - What is a Postnikov tower? Why is it useful?
 
-- $\B G \homotopic 
+- $\B G \homotopic K(G, 1)$ and $\B^n G \homotopic K(G, n)$ for $G$ an abelian discrete group.
+	- What is $\B^n$?
+	- 
