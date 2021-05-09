@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Spectra.md",
+                "file": "zettelkasten/unstable homotopy groups of spheres.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Spectra.md"
+                "file": "zettelkasten/unstable homotopy groups of spheres.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Spectra.md",
+                "file": "zettelkasten/unstable homotopy groups of spheres.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Spectra.md"
+                "file": "zettelkasten/unstable homotopy groups of spheres.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Spectra.md",
+                "file": "zettelkasten/unstable homotopy groups of spheres.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,8 +249,9 @@
     "width": 305,
     "collapsed": true
   },
-  "active": "3a89dff435f97c1f",
+  "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
+    "zettelkasten/unstable homotopy groups of spheres.md",
     "zettelkasten/Spectra.md",
     "zettelkasten/2021-04-26_Unstable_Homotopy_Groups_of_Spheres.md",
     "zettelkasten/J-homomorphism.md",
@@ -259,7 +260,6 @@
     "zettelkasten/2021-04-26_Why_care_about_stable_homotopy_groups_of_spheres.md",
     "zettelkasten/Cobordism.md",
     "zettelkasten/A hat genus.md",
-    "zettelkasten/Untitled 4.md",
-    "zettelkasten/alpha invariant.md"
+    "zettelkasten/Untitled 4.md"
   ]
 }
