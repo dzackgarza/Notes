@@ -11,14 +11,14 @@ tags:
 
 # Survey articles on homotopy groups of spheres
 
-Connections between homotopy groups of spheres and low-dimensional geometry and topology have traditionally been somewhat limited, with the [[Hopf bundle]] being the thing that comes most immediately to mind. A fairly recent connection is Soren Galatius' theorem that the homology groups of $Aut(F_n)$ (the automorphism group of a free group) are isomorphic in a stable range of dimensions to $H_* \Loop^\infty \Sigma^\infty S^0$, the space whose homotopy groups are the stable homotopy groups of spheres.
+> Hatcher: Connections between homotopy groups of spheres and low-dimensional geometry and topology have traditionally been somewhat limited, with the [[Hopf bundle]] being the thing that comes most immediately to mind. A fairly recent connection is Soren Galatius' theorem that the homology groups of $Aut(F_n)$ (the automorphism group of a free group) are isomorphic in a stable range of dimensions to $H_* \Loop^\infty \Sigma^\infty S^0$, the space whose homotopy groups are the stable homotopy groups of spheres.
 
 ## Relation to Classification of Manifolds
 
-> Kervaire-Milnor theory ("Groups of Homotopy Spheres") and Pontryagin-Thom show that our knowledge/ignorance about the stable homotopy groups of spheres is reflected in knowledge/ignorance about classification of manifolds. 
+> Hatcher: Kervaire-Milnor theory ("Groups of Homotopy Spheres") and Pontryagin-Thom show that our knowledge/ignorance about the stable homotopy groups of spheres is reflected in knowledge/ignorance about classification of manifolds. 
 
 
-In each dimension $n$, one has a group $Θ_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to h-cobordism, under connected sum. This has a subgroup $bP_{n+1}$ of boundaries of parallelizable $n+1$-manifolds. Assume n>4, so h-cobordism classes are diffeomorphism classes.
+In each dimension $n$, one has a group $Θ_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to [h-cobordism](h-cobordism), under connected sum. This has a subgroup $bP_{n+1}$ of boundaries of parallelizable $n+1$-manifolds. Assume n>4, so h-cobordism classes are diffeomorphism classes.
 
 Every homotopy $n$-sphere $S$ can be shown to have a stable framing. Hence (by P-T) $S$ is a regular fibre of a map $S_{n+k}\to S_k$ for $k≫0$ whose class in $π_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary. Changing the stable framing amounts to adding something in the image of the $J$-homomorphism $J: π_n(SO(k)) \to π_{n+k}(S_k)$. So we get an injective homomorphism $Θ_n/bP_{n+1}→\coker(J)$ (which is onto e.g. for $n$ odd).
 
