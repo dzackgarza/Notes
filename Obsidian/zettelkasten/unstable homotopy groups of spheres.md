@@ -16,6 +16,8 @@ Connections between homotopy groups of spheres and low-dimensional geometry and 
 
 Other posters have alluded to the Kervaire-Milnor theory (from "Groups of homotopy spheres. I") which shows how, via Pontryagin-Thom, our knowledge and ignorance about the stable homotopy groups of spheres is reflected in knowledge and ignorance about classification of manifolds. Maybe it's worth telling this (really beautiful!) story.
 
+## Relation to Classification of Manifolds
+
 In each dimension $n$, one has a group $Θ_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to h-cobordism, under connected sum. This has a subgroup $bP_{n+1}$ of boundaries of parallelizable $n+1$-manifolds. Assume n>4, so h-cobordism classes are diffeomorphism classes.
 
 Every homotopy $n$-sphere $S$ can be shown to have a stable framing. Hence (by P-T) $S$ is a regular fibre of a map $S_{n+k}\to S_k$ for $k≫0$ whose class in $π_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary. Changing the stable framing amounts to adding something in the image of the $J$-homomorphism $J: π_n(SO(k)) \to π_{n+k}(S_k)$. So we get an injective homomorphism $Θ_n/bP_{n+1}→\coker(J)$ (which is onto e.g. for $n$ odd).
