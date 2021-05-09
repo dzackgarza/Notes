@@ -7,7 +7,7 @@ tags:
 References: [Homotopy](Homotopy) | [Stable homotopy](Stable%20homotopy.md) | [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres.md) | [Kervaire invariant 1](Kervaire%20invariant%201.md) | [cobordism](cobordism.md) | [J-homomorphism](J-homomorphism.md)
 
 
-# The Big Motivating Problems
+# Motivating Problems
 
 - The Kervaire Invariant 1 problem
 - Classifying manifolds up to [framed cobordism](framed%20cobordism)
@@ -17,7 +17,7 @@ References: [Homotopy](Homotopy) | [Stable homotopy](Stable%20homotopy.md) | [Ho
 
 If one understood even the stable homotopy groups of spheres very well, one would therefore have a near complete understanding of the group of smooth structures on the $n\dash$-sphere for $n\neq 4$.
 
-The homotopy group $π_{n+k}(S^k)$ is a finite group except
+The homotopy group $\pi_{n+k}(S^k)$ is a finite group except
 
 1. for $n=0$ in which case $π_k(S^k)=\ZZ$;
 
