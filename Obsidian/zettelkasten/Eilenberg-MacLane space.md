@@ -10,4 +10,4 @@ aliases: ["Eilenberg-MacLane spaces"]
 
 - $\B G \homotopic K(G, 1)$ and $\B^n G \homotopic K(G, n)$ for $G$ an abelian discrete group.
 	- What is $\B^n$?
-	- 
+	- What is $\pi_* \B G$ for $G$ nonabelian and nondiscrete?
