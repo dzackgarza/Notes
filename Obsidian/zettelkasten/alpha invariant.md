@@ -1,2 +1,2 @@
 - Refined version of the [A hat genus](A%20hat%20genus)
-- Vanishes for spin manifolds ()
+- Vanishes for [spin manifolds](spin.md) with positive [Scalar curvature](Scalar%20curvature.md) (Hitchin)
