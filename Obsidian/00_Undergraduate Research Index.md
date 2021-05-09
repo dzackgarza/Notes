@@ -3,7 +3,6 @@ date: 2021-04-27
 ---
 
 # Undergraduate Research
-- [Major definitions and theorems from algebraic topology](zettelkasten/zets/Algebraic%20Topology%20Definitions%20and%20Theorems.md)
 - [Homotopy groups of spheres: "Gotta catch 'em all" outline'](zettelkasten/2021-04-26_Homotopy_Outline_Project_UG.md)
 
 ## Meetings
