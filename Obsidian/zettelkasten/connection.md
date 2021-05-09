@@ -5,7 +5,7 @@ aliases: ["Levi-Cevita connection", "affine connection"]
 - Connects nearby tangent spaces, so it permits tangent vector fields to be differentiated as if they were functions on the manifold with values in a fixed vector space $V$
 - The main invariants of an affine connection are its [torsion of a connection](torsion%20of%20a%20connection.md) and its curvature
 	- Why care?
-	
+	If both vanish, $\Gamma(TM)$ is almost a [Lie algebra](Lie%20algebra).
 - Can define a [covariant derivative](covariant%20derivative)
 
 # Definition
