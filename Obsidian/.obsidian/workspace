@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "66386af02d2fbe5b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/curvature of a connection.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -78,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/curvature of a connection.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/connection.md"
+                "file": "zettelkasten/curvature of a connection.md"
               }
             }
           },
@@ -146,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/curvature of a connection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/connection.md"
+                "file": "zettelkasten/curvature of a connection.md"
               }
             }
           },
@@ -200,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/curvature of a connection.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,8 +248,9 @@
     "width": 305,
     "collapsed": true
   },
-  "active": "e72e6e55d0b3ea4a",
+  "active": "66386af02d2fbe5b",
   "lastOpenFiles": [
+    "zettelkasten/curvature of a connection.md",
     "zettelkasten/connection.md",
     "zettelkasten/torsion of a connection.md",
     "zettelkasten/torsion.md",
@@ -247,7 +259,6 @@
     "zettelkasten/alpha invariant.md",
     "zettelkasten/Scalar curvature.md",
     "zettelkasten/curvature.md",
-    "zettelkasten/Kähler.md",
-    "zettelkasten/Seiberg–Witten invariants.md"
+    "zettelkasten/Kähler.md"
   ]
 }

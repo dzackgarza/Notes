@@ -4,11 +4,8 @@ aliases: ["Levi-Cevita connection", "affine connection"]
 
 - Connects nearby tangent spaces, so it permits tangent vector fields to be differentiated as if they were functions on the manifold with values in a fixed vector space $V$
 - Provides lifts of curves in $M$ to curves in $\Frame(M)$.
-- Can define parallel vector fields as $\nabla X = 0$, a PDE.
-	- Don't generally exist, this is an overdetermined equation.
-	The integrability condition for this equation is equivalent to $\Curv(\nabla) = 0$.
-	- If curvature vanishes, parallel transport along every curve can be used to define parallel vector fields on $M$.
-- The main invariants of an affine connection are its [torsion of a connection](torsion%20of%20a%20connection.md) and its curvature
+
+- The main invariants of an affine connection are its [torsion of a connection](torsion%20of%20a%20connection.md) and its [curvature of a connection](curvature%20of%20a%20connection)
 	- Why care?
 	If both vanish, $\Gamma(TM)$ is almost a [Lie algebra](Lie%20algebra).
 - Can define a [covariant derivative](covariant%20derivative)
