@@ -48,7 +48,7 @@ tags:
 
 ## Homotopy Groups of Spheres
 - [What do we know about them?](zettelkasten/unstable%20homotopy%20groups%20of%20spheres.md)
-- [Motivation: the J-homomorphism and smooth structures](zettelkasten/Stable%20homotopy%20groups%20of%20spheres.md)
+- [Motivation: the J-homomorphism and smooth structures](zettelkasten/stable%20homotopy%20groups%20of%20spheres.md)
 - [Higher homotopy of other related spaces](zettelkasten/2021-04-26_Homotopy_Groups_of_Other_Spaces.md)
 
 ## Infinity Categories

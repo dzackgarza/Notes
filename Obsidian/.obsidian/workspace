@@ -20,8 +20,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Spectra.md",
-            "mode": "preview"
+            "file": "zettelkasten/Stable homotopy.md",
+            "mode": "source"
           }
         }
       }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/unstable homotopy groups of spheres.md",
+                "file": "zettelkasten/Stable homotopy.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/unstable homotopy groups of spheres.md"
+                "file": "zettelkasten/Stable homotopy.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/unstable homotopy groups of spheres.md",
+                "file": "zettelkasten/Stable homotopy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/unstable homotopy groups of spheres.md"
+                "file": "zettelkasten/Stable homotopy.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/unstable homotopy groups of spheres.md",
+                "file": "zettelkasten/Stable homotopy.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,17 +249,17 @@
     "width": 305,
     "collapsed": true
   },
-  "active": "e72e6e55d0b3ea4a",
+  "active": "3a89dff435f97c1f",
   "lastOpenFiles": [
+    "zettelkasten/Stable homotopy.md",
+    "zettelkasten/stable homotopy groups of spheres.md",
     "zettelkasten/unstable homotopy groups of spheres.md",
-    "zettelkasten/Spectra.md",
-    "zettelkasten/2021-04-26_Unstable_Homotopy_Groups_of_Spheres.md",
+    "zettelkasten/Bernoulli numbers.md",
+    "zettelkasten/Surgery Theory.md",
+    "zettelkasten/h-cobordism theorem.md",
+    "zettelkasten/Stable homotopy groups of spheres.md",
     "zettelkasten/J-homomorphism.md",
-    "zettelkasten/Homotopy Groups of Spheres.md",
-    "zettelkasten/framed bordism.md",
-    "zettelkasten/2021-04-26_Why_care_about_stable_homotopy_groups_of_spheres.md",
-    "zettelkasten/Cobordism.md",
-    "zettelkasten/A hat genus.md",
-    "zettelkasten/Untitled 4.md"
+    "zettelkasten/Spectra.md",
+    "zettelkasten/2021-04-26_Unstable_Homotopy_Groups_of_Spheres.md"
   ]
 }

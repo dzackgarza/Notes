@@ -26,7 +26,8 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 	- [[Enriched category]]
 	- [[Tensored Category]]
 	- [[Day convolution]]
-	
+- [Homotopy colimit](Homotopy%20colimit)
+	- [colimits](colimits)
 - [[Obstruction theory (homotopy)]]
 - [[Cohomology operations]]
 	- [[Massey product]]
@@ -40,6 +41,18 @@ References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory]
 	- [Algebraic k theory](Algebraic%20K%20theory.md)
 	- [Topological K theory](Topological%20K%20theory)
 	- [[Bott periodicity]]
+
+- Colimits
+- Smash product
+- Homotopy limit/colimit
+- Model categories
+- $\infty\dash$categories
+- Topological modular forms
+- Steenrod Algebra
+- Formal groups
+- Nishida's Theorem:
+  - The $S^1$ spectrum is some kind of "thickening" of $\ZZ$?
+  - Morava E-Theory
 
 
 # Chromatic Homotopy

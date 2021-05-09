@@ -1,5 +1,5 @@
 
-References: [Stable homotopy groups of spheres](Stable%20homotopy%20groups%20of%20spheres.md) | [Stable homotopy](Stable%20homotopy.md)
+References: [stable homotopy groups of spheres](stable%20homotopy%20groups%20of%20spheres.md) | [Stable homotopy](Stable%20homotopy.md)
 
 
 

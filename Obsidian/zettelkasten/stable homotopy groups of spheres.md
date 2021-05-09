@@ -6,6 +6,7 @@ tags:
 
 References: [Homotopy](Homotopy) | [Stable homotopy](Stable%20homotopy.md) | [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres.md) | [Kervaire invariant 1](Kervaire%20invariant%201.md) | [cobordism](cobordism.md) | [J-homomorphism](J-homomorphism.md)
 
+-  [[Serre's finiteness theorem]] for the stable stems tells us that $\theta_n/bP_{n+1}$ is finite, see [J-homomorphism](J-homomorphism.md)
 
 # Motivating Problems
 
