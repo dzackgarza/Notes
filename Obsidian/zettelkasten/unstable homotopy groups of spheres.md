@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-
+General survey/introduction: Chapter 1 of Ravenel's "green book" Complex Cobordism and Stable Homotopy Groups of Spheres, from 1986
 
 
 # Unstable homotopy groups of spheres
