@@ -9,4 +9,4 @@ $$
 	- A lot is known!
 	- Gromov and Lawson: every simply connected [manifold](manifold) of dimension at least 5 which is not [spin](spin) has a [metric](Riemannian%20metric) with positive scalar curvature.
 		- Uses an $\alpha$ invariant taking values in $\K O_n$ (See [K-Theory](K-Theory.md))
-	- 
+	- Dimensions 3 and 4: A closed orientable 3-manifold has a metric with positive scalar curvature if and only if it is a connected sum of [spherical manifold](spherical%20manifold.md) 3-manifolds and copies of S2 × S1
