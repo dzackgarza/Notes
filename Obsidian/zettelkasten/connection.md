@@ -27,3 +27,5 @@ where $\partial_X$ is the directional derivative.
 
 
 Alternatively, a principal $\GL_n(\RR)$ connection on the frame bundle $\Frame(M)$
+
+The **Levi-Cevita connection**: the unique affine torsion-free connection for which [parallel transport](parallel%20transport) is an isometry.
