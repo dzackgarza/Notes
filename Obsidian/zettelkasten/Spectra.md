@@ -1,6 +1,9 @@
+> Opinion from MO: modern Topology starts with spectra.
 
 - [[How to extract homology using spectra]]
 - [Homotopy groups of spectra](Homotopy%20groups%20of%20spectra)
+
+# Motivation
 
 We have another aim in constructing the category of spectra. In homology theory the suspension homomorphism $\Sigma_*: h_n(X)\to h_{n+1}(\Sigma X)$ is always an isomorphism
 
