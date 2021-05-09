@@ -47,7 +47,7 @@ tags:
 - [Obstruction Theory](zettelkasten/Obstruction%20Theory.md)
 
 ## Homotopy Groups of Spheres
-- [What do we know about them?](zettelkasten/2021-04-26_Unstable_Homotopy_Groups_of_Spheres.md)
+- [What do we know about them?](zettelkasten/unstable%20homotopy%20groups%20of%20spheres.md)
 - [Motivation: the J-homomorphism and smooth structures](zettelkasten/Stable%20homotopy%20groups%20of%20spheres.md)
 - [Higher homotopy of other related spaces](zettelkasten/2021-04-26_Homotopy_Groups_of_Other_Spaces.md)
 

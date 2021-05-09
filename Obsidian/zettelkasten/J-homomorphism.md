@@ -20,7 +20,7 @@ A: (\RR^n \to \RR^n) &\mapsto A^+
 .\end{align*}
 \]
 
-Where we view a matrix as a linear function on $\RR^n$, and take it to its compactification which is a map $S^n\to S^n$. Taking the limit yields a map from $\SO^\infty \to QS^0 = \Omega^\infty \Sigma^\infty S^0$, and taking $\pi_0$ of both sides induces the $J$ homomorphism. The RHS is equal to $\pi_*^s$, the stable homotopy groups of spheres.
+Where we view a matrix as a linear function on $\RR^n$, and take it to its compactification which is a map $S^n\to S^n$. Taking the limit yields a map from $\SO^\infty \to QS^0 = \Omega^\infty \Sigma^\infty S^0$, and taking $\pi_0$ of both sides induces the $J$ homomorphism. The RHS is equal to $\pi_*^s$, the [Stable homotopy groups of spheres](Stable%20homotopy%20groups%20of%20spheres.md).
 But the homotopy groups of $SO$ were computed by Bott, and have some 8-fold periodicity.
 
 The image of $J$ was found by Adams in '66 or so, it is a finite group with order the denominator of some function involving Bernoulli numbers. However, the pattern is more apparent by looking at the $p$-stems, then the number of connected dots really just depends on the $p$-adic divisibilty of the horizontal number plus 1. The image of $J$ is just the bottom row in these stem diagrams.
