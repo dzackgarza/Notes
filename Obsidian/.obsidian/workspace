@@ -9,6 +9,17 @@
         "state": {
           "type": "markdown",
           "state": {
+            "file": "Quick_Notes/2021-04-17.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "b55bb89a8531e139",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
             "file": "zettelkasten/Advice.md",
             "mode": "source"
           }
@@ -236,7 +247,7 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "cad39689cbe4ee76",
+  "active": "b55bb89a8531e139",
   "lastOpenFiles": [
     "zettelkasten/Advice.md",
     "Quick_Notes/2021-04-17.md",
