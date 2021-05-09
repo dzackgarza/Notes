@@ -12,7 +12,7 @@
 
 # Algebraic Groups
 
-[Hopf Algebra](Hopf%20Algebra)
+[Hopf algebra](Hopf%20algebra.md)
 
 # [[Algebra]]
 

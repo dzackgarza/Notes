@@ -48,10 +48,11 @@ aliases: ["Big list of words I don't know"]
 - [[Hodge theory]]
 	- [[p-adic Hodge theory]]
 - [[Gromov-Witten invariants]]
-	- [[Seiberg-Witten invariants]]
-	- [[Seiberg-Witten theory]]
-	- [[Donaldson-Thomas invariants]]
+- [Seiberg-Witten invariants](Seiberg-Witten%20theory.md)
+- [[Donaldson-Thomas invariants]]
 - [Topological cyclic homology](Topological%20cyclic%20homology)
+	- [topological Hochschild homology](topological%20Hochschild%20homology.md)
+	- [topological periodic cyclic homology](topological%20periodic%20cyclic%20homology.md)
 - [[Formal group laws]]
 - [[Tate cohomology]]
 - [[Morava K theory]]
@@ -85,7 +86,7 @@ aliases: ["Big list of words I don't know"]
 - [[Monodromy representation]]
 - [[Brill-Noether theory]]
 - [[Hodge bundle]]
-- [[Hopf Algebra]]
+- [[Hopf algebra]]
 - [[J-homomorphism]]
 - [[The cobordism hypothesis]]
 - [[Artin-Schreier theory]]

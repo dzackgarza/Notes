@@ -9,7 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
+            "file": "zettelkasten/Giant Word List.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "d4254430d8686289",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Seiberg-Witten theory.md",
             "mode": "source"
           }
         }
@@ -79,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
+                "file": "zettelkasten/Giant Word List.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md"
+                "file": "zettelkasten/Giant Word List.md"
               }
             }
           },
@@ -148,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
+                "file": "zettelkasten/Giant Word List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md"
+                "file": "zettelkasten/Giant Word List.md"
               }
             }
           },
@@ -186,7 +197,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
+                "file": "zettelkasten/Giant Word List.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +250,15 @@
   },
   "active": "1429fcee82e669cb",
   "lastOpenFiles": [
+    "zettelkasten/Giant Word List.md",
+    "zettelkasten/topological Hochschild homology.md",
+    "zettelkasten/TP.md",
+    "zettelkasten/Seiberg-Witten theory.md",
+    "Quick_Notes/2021-05-03.md",
+    "zettelkasten/Hopf algebra.md",
+    "zettelkasten/Hopf Algebra.md",
     "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
     "zettelkasten/Étale homotopy.md",
-    "zettelkasten/Étale cohomology.md",
-    "zettelkasten/Étale Homotopy.md",
-    "zettelkasten/Stephen Hawking.md",
-    "zettelkasten/Einstein equations.md",
-    "zettelkasten/General relativity.md",
-    "zettelkasten/spacetime.md",
-    "zettelkasten/geodesics.md",
-    "zettelkasten/metric tensor.md"
+    "zettelkasten/Étale cohomology.md"
   ]
 }

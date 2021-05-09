@@ -39,4 +39,4 @@ This offers two different perspectives on associative algebras: homological inva
 - See the [HKR](HKR.md) theorem
 
 - When proving stuff about algebras -- try with polynomial algebras first, essentially the simplest case.
-- Simplest [coalgebra](coalgebra) case: divided power algebras (also a [Hopf Algebra](Hopf%20Algebra))
+- Simplest [coalgebra](coalgebra) case: divided power algebras (also a [Hopf algebra](Hopf%20algebra.md))
