@@ -1,2 +1,3 @@
 ---
-aliases: ["smooth man"]
+aliases: ["smooth manifold"]
+---
