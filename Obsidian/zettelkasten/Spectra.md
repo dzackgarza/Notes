@@ -43,3 +43,22 @@ You may be familiar with a similar problem at the space level. One can construct
 So you can work with spaces and maps-up-to-homotopy if you like, but you won't be able to do much. It's much better to work with spaces and maps on-the-nose, and to make constructions like the [[double mapping cylinder]] and the [[mapping telescope]] when you want to form [pushouts](Pushout) or [[sequential colimits]]. 
 
 > Slogan: Pass to homotopy as late as possible.
+
+
+Noting that $\Sigma S^n = S^{n+1}$, we could alternatively define $\mathbb{S} \definedas \lim_k \Sigma^k S^0$, then it turns out that $\pi_n \mathbb{S} = \pi_n^S$. 
+
+This object is a *spectrum*, which vaguely resembles a chain complex with a differential:
+$$
+X_0 \mapsvia{\Sigma} X_2 \mapsvia{\Sigma} X_3 \mapsvia{\Sigma} \cdots
+$$
+
+Spectra *represent* invariant theories (like cohomology) in a precise way. For example, 
+$$
+HG \definedas \left(K(G, 1) \mapsvia{\Sigma} K(G, 2) \mapsvia{\Sigma} \cdots \right)
+$$
+
+then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ from (roughly) $\pi_* HG \definedas [\mathbb{S}, HG \bigwedge X]$.
+
+> Note: this glosses over some important details! Also, smash product basically just looks like the tensor product in the category of spectra.
+
+A modern direction is cooking up spectra that represent *extraordinary* cohomology theories. There are [[Eilenberg–Steenrod axioms]] that uniquely characterize homology on spaces.
