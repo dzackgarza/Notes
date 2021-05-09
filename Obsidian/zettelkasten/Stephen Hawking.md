@@ -37,9 +37,8 @@ Tools Needed:
 - The [geodesic equations](geodesics)
 
 # General vs Special Relativity
-Special: light travels at a constant speed for all observers, plus the laws of motion are the same in all inertial (non-accelerating) frames. Makes all physical laws "covariant" (really invariant) under a certain group of coordinate transformations. Encodes quantities like energy and momentum with scalars and 4-vectors. Models spacetime as a manifold that is locally $\RR^3 \cross \RR$ with metric signature $(+,-,-,-)$. Works for reformulating classical laws, but doesn't incorporate gravity.
 
-General: Want a theory that works for accelerating frames and incorporates gravity. Requires bringing together energy, momentum, stress, and pressure, and moving to $4\times4$ tensors instead of 4-vectors. Recover SR by defining inertial frames to travel along geodesics with constant velocity (setting acceleration equal to zero).
+[General relativity](General%20relativity)
 
 # Definition of Spacetime
 
@@ -53,27 +52,12 @@ Hawking did his thesis in the 60s - by then, GR was firmly established based on 
 
 However, the same equation that yields these productions also admits singularities. Are these artifacts of the model, or of coordinate choices? Hawking set off to investigate these singularities.
 
-What is the math of GR? We take spacetime to be a 4 dimensional Riemannian manifold. Then equation the pivotal equation is the [[Einstein field equations
-$$R_{ij} + \frac{1}{2}R g_{ij} + \Lambda g_{ij} = T_{ij}$$
+What is the math of GR? We take spacetime to be a 4 dimensional Riemannian manifold. Then equation the pivotal equation is the Einstein [field equations](Einstein%20equations.md)
 
-where
-- $R_{ij}$ is the [Ricci curvature](Ricci%20curvature.md)
-- $R$ is the [Scalar curvature](Scalar%20curvature.md)
-- $g_{ij}$ is the [metric tensor](metric%20tensor.md)
-- $\Lambda$ is the "cosmological constant"
-- $T_{ij}$ is the [stress-energy tensor](stress-energy%20tensor)
-
-The left hand side represents properties of the geometry of space time, while the right hand side indicated properties of matter in a given region.
 
 A priori, this gives 16 tensor equations, each of which is a nonlinear PDE. Using some symmetry, it can be reduced to around 10 equations, but Einstein believed these would be impossible to analytically solve when he published them (< 1915).
 
-Note that solutions to this equation are _metrics_ on spacetime, which in turn can be fed into geodesic equations which give the lengths _worldlines_. Most importantly, gravity acts by moving other bodies along these geodesic paths.
-
-An exact solution that was found almost immediately  (1916) is the Schwarzschild metric, which assumes that the RHS involves a spherical mass with "nice" stress-energy properties and $\Lambda = 0$. The solution metric can be expressed in polar coordinates as
-$$ ds^2 = (1-\frac{r_s}{r}) dt^2 - \left( \frac{1}{1-\frac{r_2}{r}} \right)dr^2 - r^2d\theta^2  -r^2\sin^2\theta d\phi^2)
-$$
-
-taking $c^2 = 1$, where $r$ is a parameter indicating your distance from the spherical mass and $r_2$ is the "Schwarzschild radius" that is proportional to the mass of the sphere - this is commonly known as the "event horizon".
+![](Einstein%20equations.md#^1adff7)
 
 From this, it is clear that there are two potential singularities - areas where the metric seems to diverge.
 
