@@ -13,17 +13,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "3254c55aa9716a44",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/General relativity.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -90,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/General relativity.md",
+                "file": "zettelkasten/Stephen Hawking.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/General relativity.md"
+                "file": "zettelkasten/Stephen Hawking.md"
               }
             }
           },
@@ -159,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/General relativity.md",
+                "file": "zettelkasten/Stephen Hawking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/General relativity.md"
+                "file": "zettelkasten/Stephen Hawking.md"
               }
             }
           },
@@ -197,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/General relativity.md",
+                "file": "zettelkasten/Stephen Hawking.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -248,11 +237,11 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "3254c55aa9716a44",
+  "active": "1429fcee82e669cb",
   "lastOpenFiles": [
-    "zettelkasten/General relativity.md",
     "zettelkasten/Stephen Hawking.md",
     "zettelkasten/Einstein equations.md",
+    "zettelkasten/General relativity.md",
     "zettelkasten/spacetime.md",
     "zettelkasten/geodesics.md",
     "zettelkasten/metric tensor.md",

@@ -19,10 +19,6 @@ History
 - All 3 major contributiosn from above by the mid 70s
 
 
-Definitions
-- "No Hair" conjecture: all singularities in the field equations are completely distinguished by only a few invariants/parameters (mass/charge/angular momentum)
-	- Example: can't distinguish a hole made of antimatter from one made of matter
-
 Tools Needed:
 - Vectors
 - Tensors

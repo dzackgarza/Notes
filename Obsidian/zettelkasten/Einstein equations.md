@@ -40,3 +40,6 @@ $$ ds^2 = (1-\frac{r_s}{r}) dt^2 - \left( \frac{1}{1-\frac{r_2}{r}} \right)dr^2 
 $$
 
 taking $c^2 = 1$, where $r$ is a parameter indicating your distance from the spherical mass and $r_2$ is the "Schwarzschild radius" that is proportional to the mass of the sphere - this is commonly known as the "event horizon".
+
+- "No Hair" conjecture: all singularities in the field equations are completely distinguished by only a few invariants/parameters (mass/charge/angular momentum)
+	- Example: can't distinguish a hole made of antimatter from one made of matter
