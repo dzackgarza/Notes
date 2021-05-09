@@ -1,5 +1,9 @@
 References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory](cohomolology%20theory.md)
 
+# Motivations
+
+- ?
+
 # Basic Tools
 - [[Mapping cylinder]]
 - [[Mapping cone]]
