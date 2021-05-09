@@ -15,7 +15,7 @@ aliases: ["Big list of words I don't know"]
 	- [[Class field theory]]
 - [Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 - [Bundle](Bundle.md)
-- [[Étale Homotopy]]
+- [[Étale homotopy]]
 	- [[Brauer group]]
 	- [[Descent]]
 - [[Commutative Algebra]]

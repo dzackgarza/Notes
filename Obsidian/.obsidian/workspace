@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Stephen Hawking.md",
+            "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stephen Hawking.md",
+                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stephen Hawking.md"
+                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Stephen Hawking.md",
+                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stephen Hawking.md"
+                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md"
               }
             }
           },
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stephen Hawking.md",
+                "file": "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,15 +239,15 @@
   },
   "active": "1429fcee82e669cb",
   "lastOpenFiles": [
+    "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
+    "zettelkasten/Étale homotopy.md",
+    "zettelkasten/Étale cohomology.md",
+    "zettelkasten/Étale Homotopy.md",
     "zettelkasten/Stephen Hawking.md",
     "zettelkasten/Einstein equations.md",
     "zettelkasten/General relativity.md",
     "zettelkasten/spacetime.md",
     "zettelkasten/geodesics.md",
-    "zettelkasten/metric tensor.md",
-    "zettelkasten/Untitled 4.md",
-    "zettelkasten/Subjects/Algebraic Geometry.md",
-    "Reading/RisingSea.md",
-    "zettelkasten/Subjects/Real Analysis.md"
+    "zettelkasten/metric tensor.md"
   ]
 }
