@@ -20,7 +20,9 @@ tags:
 
 In each dimension $n$, one has a group $\theta_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to [h-cobordism](h-cobordism), under connected sum. This has a subgroup $\bP_{n+1}$ of boundaries of [parallelizable](framed.md) $n+1$-manifolds. Assume $n>4$, so h-cobordism classes are diffeomorphism classes.
 
-Every homotopy $n$-sphere $S$ can be shown to have a stable framing. Hence (by P-T) $S$ is a regular fibre of a map $S_{n+k}\to S_k$ for $k≫0$ whose class in $π_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary. Changing the stable framing amounts to adding something in the image of the $J$-homomorphism $J: π_n(SO(k)) \to π_{n+k}(S_k)$. So we get an injective homomorphism $Θ_n/bP_{n+1}→\coker(J)$ (which is onto e.g. for $n$ odd).
+Every homotopy $n$-sphere $S$ can be shown to have a [stable framing](stable%20framing.md). Hence (by Pontrayagin-Thom) $S$ is a regular fiber of a map $S_{n+k}\to S_k$ for $k\gg 0$ whose class in $\pi_{n+k}(S_k)$ is the obstruction to $S$ (with chosen stable framing) being a framed boundary.
+
+Changing the stable framing amounts to adding something in the [image of J](J-homomorphism.md) $J: \pi_n(SO(k)) \to \pi_{n+k}(S_k)$. So we get an injective homomorphism $Θ_n/bP_{n+1}→\coker(J)$ (which is onto e.g. for $n$ odd).
 
 We don't know $\coker(J)$ in high dimensions, so we don't know the order of $Θ_n/bP_{n+1}$. But Serre's finiteness theorem for the stable stems tells us that $Θ_n/bP_{n+1}$ is finite!
 
@@ -28,7 +30,7 @@ The subgroup $bP_{n+1}$ is analyzed via surgery theory and the h-cobordism theor
 
 We have $bP_{odd}=0$. There's a formula for $bP_{4p}$ involving Bernoulli numerators; this comes from a known (thanks to Adams) part of the stable stems, namely, $\im(J)$.
 
-Finally, $bP_{4p+2}$ is at most $Z_2$. Here $S$ bounds a parallelizable manifold $P$. We'd like to make this contractible. By framed surgery, we can kill the homotopy groups of $P$ below the middle dimension but the Arf invariant of the pairing on middle-dimensional homology obstructs the final step, that of killing $π_{p+1}$. Say this is non-zero. Can we do better by starting with a different $P$? Yes, if and only if there's a closed, framed $2_{p+2}$-manifold of Kervaire invariant one.
+Finally, $bP_{4p+2}$ is at most $Z_2$. Here $S$ bounds a parallelizable manifold $P$. We'd like to make this contractible. By framed surgery, we can kill the homotopy groups of $P$ below the middle dimension but the Arf invariant of the pairing on middle-dimensional homology obstructs the final step, that of killing $\pi_{p+1}$. Say this is non-zero. Can we do better by starting with a different $P$? Yes, if and only if there's a closed, framed $2_{p+2}$-manifold of Kervaire invariant one.
 
 Browder showed that the Kervaire invariant can be one only when $4p+2=2l−2$ for some $l$, and Hill-Hopkins-Ravenel have shown that $l≤7$. Conclusion: $bP_{4p+2}$ is $Z_2$ except in dimensions 6, 14, 30, 62, and possibly 126, where it's zero.
 
