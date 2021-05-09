@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/spherical manifold.md",
+            "file": "zettelkasten/Eilenberg-MacLane space.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/spherical manifold.md",
+                "file": "zettelkasten/Eilenberg-MacLane space.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/spherical manifold.md"
+                "file": "zettelkasten/Eilenberg-MacLane space.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/spherical manifold.md",
+                "file": "zettelkasten/Eilenberg-MacLane space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/spherical manifold.md"
+                "file": "zettelkasten/Eilenberg-MacLane space.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/spherical manifold.md",
+                "file": "zettelkasten/Eilenberg-MacLane space.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,6 +251,7 @@
   },
   "active": "3a89dff435f97c1f",
   "lastOpenFiles": [
+    "zettelkasten/Eilenberg-MacLane Spaces.md",
     "zettelkasten/spherical manifold.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/unstable homotopy groups of spheres.md",
@@ -259,7 +260,6 @@
     "zettelkasten/Bernoulli numbers.md",
     "zettelkasten/Surgery Theory.md",
     "zettelkasten/h-cobordism theorem.md",
-    "zettelkasten/Stable homotopy groups of spheres.md",
-    "zettelkasten/J-homomorphism.md"
+    "zettelkasten/Stable homotopy groups of spheres.md"
   ]
 }

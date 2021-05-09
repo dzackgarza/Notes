@@ -54,5 +54,5 @@ A modern direction is cooking up spectra that represent *extraordinary* cohomolo
 - [generalized cohomology theory](../cohomolology%20theory.md)
 - [Stable homotopy](../Stable%20homotopy.md)
 - [infty categories](../infty%20categories.md)
-- [../Eilenberg-MacLane Spaces](../Eilenberg-MacLane%20Spaces.md) and [Moore spaces](Moore%20spaces)
+- [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) and [Moore spaces](Moore%20spaces)
 - [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres)

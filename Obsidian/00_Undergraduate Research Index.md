@@ -42,7 +42,7 @@ tags:
 - [Why study characteristic classes?](zettelkasten/2021-04-26_Why_study_characteristic_classes.md)
 - [Basics of characteristic classes](zettelkasten/2021-04-26_Characteristic_Classes.md)
 - [Classifying spaces](zettelkasten/2021-04-25_classifying_spaces_ug.md)
-- [Eilenberg-Maclane Spaces](zettelkasten/Eilenberg-MacLane%20Spaces.md)
+- [Eilenberg-Maclane Spaces](zettelkasten/Eilenberg-MacLane%20space.md)
 - [Classifying hoTop: twisted products of EM spaces](zettelkasten/2021-04-25_classifying_hotop_blog_ideas.md)
 - [Obstruction Theory](zettelkasten/Obstruction%20Theory.md)
 
