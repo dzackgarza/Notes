@@ -10,7 +10,7 @@ aliases: ["extraordinary cohomology theory", "generalized cohomology theory"]
 
 The basic result is [Brown Representability](Brown%20Representability). If I have some graded homotopy invariant of spaces that takes [cofiber sequences](zettelkasten/cofiber%20sequence.md) to long exact sequences and has a suspension isomorphism and takes wedges to products, then this is represented by a sequence of spaces $\ts{E_n}$ with weak equivalences $E_n \cong \Omega E_{n+1}$ coming from the existence of the suspension isomorphism and the Yoneda lemma. 
 
-Conversely, given a sequence of spaces $\ts{E_n}$ with maps $\Sigma E_n\to E_{n+1}$, you can cook up a [cohomolology theory](cohomolology%20theory.md). This means that one can do some pretty formal manipulations inside the category of [[Spectra]] and produce lots of different cohomology theories, even ones that have no geometric interpretation a priori.
+Conversely, given a sequence of spaces $\ts{E_n}$ with maps $\Sigma E_n\to E_{n+1}$, you can cook up a [cohomolology theory](cohomolology%20theory.md). This means that one can do some pretty formal manipulations inside the category of [[spectra]] and produce lots of different cohomology theories, even ones that have no geometric interpretation a priori.
 
 For example, there is a cohomology theory called [tmf](Topological%20modular%20forms.md) which has (as of now) no geometric interpretation, but can detect many nontrivial maps between spheres, and can even be used to prove results in [[number theory]].
 
