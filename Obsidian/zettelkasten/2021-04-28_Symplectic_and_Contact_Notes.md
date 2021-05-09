@@ -123,13 +123,7 @@ Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong D^n$
 
 ![](2020-02-05-00-22-18.png)
 
-Problem:
-This doesn't "see" the smooth structure, and CW complexes can have singular points (e.g. $S^2 = e^0 \disjoint e^2$.
 
-![](2020-02-05-12-25-15.png)
-
-Solution:
-Use *tubular neighborhoods*.
 
 
 **Definition (Weinstein Surgery):**
@@ -147,7 +141,7 @@ Every compact 3-manifold arises as surgery on a link.
 Weinstein surgery on a *loose Legendrian* knot yields an overtwisted contact structure.
 
 > Compare: 
-Every compact manifold is surgery on a link and admits a contact structure.
+
 
 > However, not every compact 3-manifold $M$ admits a *fillable* contact structure $(M, \xi)$ (roughly: admits a symplectic manifold $(X, \omega)$ with $\bd X = M$ and some compatibility between $\xi, \omega$) -- need framing to be realizable as a *Legendrian* framing.
 
