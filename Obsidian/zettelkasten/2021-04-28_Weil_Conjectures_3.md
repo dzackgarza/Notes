@@ -9,7 +9,7 @@ tags:
 [Number theory](Number%20theory.md)
 [Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 
-About [algebraic variety](algebraic%20variety): defined by polynomial equations,
+About [algebraic variety](algebraic%20variety.md): defined by polynomial equations,
 Hypersurfaces are defined by one equation
 Let $X/K: f(x_0, \cdots, x_{n+1}) = 0, \vector x \in \PP_k^{n+2}$, so the variety will have dimension.
 

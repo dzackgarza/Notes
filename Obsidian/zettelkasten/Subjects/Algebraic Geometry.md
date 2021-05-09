@@ -11,7 +11,7 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 # Topics
 - [[../Variety]]
 	- [[Proper variety]]
-	- [[Algebraic variety]]
+	- [[../algebraic variety]]
 	- [[Projective variety]]
 	- [[Toric variety]]
 
@@ -48,10 +48,3 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 - [[Local system]]
 - [../O(D) for D a divisor](../O(D)%20for%20D%20a%20divisor.md)
 - [[Noether normalization]]
-
-
-
-# Reading / Learning
-[Rising Sea Reading Notes](../Projects/Book%20Notes/RisingSea/Rising%20Sea%20Reading%20Notes.md)
-
-[RisingSea](Reading/RisingSea.md)

@@ -28,7 +28,7 @@ date: 2021-04-27
 - [Fiber bundles](zettelkasten/2021-04-25_fiber_bundles_ug.md)
 - [Vector bundles](zettelkasten/2021-04-25_vector_bundles_ug.md)
 - [More vector bundles](zettelkasten/vector%20bundles.md)
-- [Classifying Spaces](zettelkasten/2021-04-25_classifying_spaces_ug.md)
+- [classifying space](zettelkasten/classifying%20space.md)
 - [Representing Eilenberg-Maclane spaces geometrically](zettelkasten/2021-04-25_representing_KGn_geometrically.md)
 - [Principal Bundles](zettelkasten/2021-04-26_Principal_Bundles.md)
 - [Using the Path-Loop fibration](zettelkasten/2021-04-26_Path_Loop_Fibration.md)
@@ -38,7 +38,7 @@ date: 2021-04-27
 ## Classifying Spaces, Postnikov Towers, Obstruction Theory
 - [Why study characteristic classes?](zettelkasten/2021-04-26_Why_study_characteristic_classes.md)
 - [Basics of characteristic classes](zettelkasten/2021-04-26_Characteristic_Classes.md)
-- [Classifying spaces](zettelkasten/2021-04-25_classifying_spaces_ug.md)
+- [classifying space](zettelkasten/classifying%20space.md)
 - [Eilenberg-Maclane Spaces](zettelkasten/Eilenberg-MacLane%20space.md)
 - [Classifying hoTop: twisted products of EM spaces](zettelkasten/2021-04-25_classifying_hotop_blog_ideas.md)
 - [Obstruction Theory](zettelkasten/Obstruction%20Theory.md)

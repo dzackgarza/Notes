@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "13ed4da511e2dcf7",
+        "id": "1429fcee82e669cb",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Generalized Poincare Conjectures.md",
+            "file": "zettelkasten/Stephen Hawking.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Generalized Poincare Conjectures.md",
+                "file": "zettelkasten/Stephen Hawking.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Generalized Poincare Conjectures.md"
+                "file": "zettelkasten/Stephen Hawking.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Generalized Poincare Conjectures.md",
+                "file": "zettelkasten/Stephen Hawking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Generalized Poincare Conjectures.md"
+                "file": "zettelkasten/Stephen Hawking.md"
               }
             }
           },
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Generalized Poincare Conjectures.md",
+                "file": "zettelkasten/Stephen Hawking.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,17 +237,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "13ed4da511e2dcf7",
+  "active": "1429fcee82e669cb",
   "lastOpenFiles": [
+    "zettelkasten/Stephen Hawking.md",
+    "zettelkasten/Subjects/Algebraic Geometry.md",
+    "Reading/RisingSea.md",
+    "zettelkasten/Subjects/Real Analysis.md",
+    "zettelkasten/Algebraic Variety.md",
+    "zettelkasten/Variety.md",
+    "00_Undergraduate Research Index.md",
+    "zettelkasten/Integration Workshop.md",
     "zettelkasten/Generalized Poincare Conjectures.md",
-    "zettelkasten/Spectra.md",
-    "zettelkasten/homology sphere.md",
-    "zettelkasten/Poincare homology sphere.md",
-    "zettelkasten/cohomolology theory.md",
-    "zettelkasten/principal bundle.md",
-    "zettelkasten/Natural transformation.md",
-    "zettelkasten/Characteristic class.md",
-    "zettelkasten/Principal bundle.md",
-    "zettelkasten/fiber bundles.md"
+    "zettelkasten/Spectra.md"
   ]
 }

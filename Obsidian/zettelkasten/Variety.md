@@ -1,4 +1,4 @@
-- [Algebraic Variety](Algebraic%20Variety)
+- [algebraic variety](algebraic%20variety.md)
 - [Projective Variety](Projective%20Variety)
 - Smooth: ?
 - Proper: ?

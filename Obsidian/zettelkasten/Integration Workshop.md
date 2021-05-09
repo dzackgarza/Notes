@@ -1,6 +1,6 @@
-[Undergraduate](Undergraduate)
-[Calculus](Calculus)
-[../../00_Talks Index](../../00_Talks%20Index.md)
+Tags: #undergraduate #calculus #talks
+
+See [complex analysis](complex%20analysis), [contour integral](contour%20integral)
 
 # Integration Workshop Notes
 
