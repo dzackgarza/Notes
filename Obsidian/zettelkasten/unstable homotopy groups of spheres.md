@@ -12,7 +12,7 @@ tags:
 # Survey articles on homotopy groups of spheres
 From Hatcher:
 
-Connections between homotopy groups of spheres and low-dimensional geometry and topology have traditionally been somewhat limited, with the Hopf bundle being the thing that comes most immediately to mind. A fairly recent connection is Soren Galatius' theorem that the homology groups of $Aut(F_n)$, the automorphism group of a free group, are isomorphic in a stable range of dimensions to the homology groups of $\Loops^\ "loop-infinity S-infinity", the space whose homotopy groups are the stable homotopy groups of spheres.
+Connections between homotopy groups of spheres and low-dimensional geometry and topology have traditionally been somewhat limited, with the Hopf bundle being the thing that comes most immediately to mind. A fairly recent connection is Soren Galatius' theorem that the homology groups of $Aut(F_n)$, the automorphism group of a free group, are isomorphic in a stable range of dimensions to the homology groups of $\Loop^\infty "loop-infinity S-infinity", the space whose homotopy groups are the stable homotopy groups of spheres.
 
 Other posters have alluded to the Kervaire-Milnor theory (from "Groups of homotopy spheres. I") which shows how, via Pontryagin-Thom, our knowledge and ignorance about the stable homotopy groups of spheres is reflected in knowledge and ignorance about classification of manifolds. Maybe it's worth telling this (really beautiful!) story.
 
