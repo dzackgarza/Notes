@@ -7,13 +7,13 @@
 # Stephen Hawking: Some of the Mathematics of His Work
 
 Main Contributions
-- Singularties: incomplete timelike geodesics imply "The Big Bang" and time ending in black holes.
+- Singularties: incomplete timelike [geodesics](geodesics) imply "The Big Bang" and time ending in [black holes](black%20hole).
 - Second law of black holes: area never decreases (even in black hole mergers)
 - Hawking radiation
 - "Information paradox": all information is stored on the boundary event horizon, things escape but into different universes (2015)
 
 History
-- 1915 General relativity established by Einstein
+- 1915 [General relativity](General%20relativity) established by Einstein
 - 60s: collaborated with Penrose on singularity theory, he was in his mid-20s
 - Began developing amyotrophic lateral sclerosis (ALS)
 - All 3 major contributiosn from above by the mid 70s
@@ -28,33 +28,12 @@ Tools Needed:
 - Tensors
 - Manifolds
 - Tangent Spaces
-- Curvature
-	- Parallel transport
-	- Riemann Curvature Tensor
-- Covariant Derivative
-- Metric tensor
-	- Gives a notion of distance along paths in a manifold, generalizing the Pythagorean theorem in Euclidean space.
-	- Can be written as a symmetric matrix $$\begin{pmatrix} g_{xx}&g_{xy}\\ g_{yx}&g_{yy}\end{pmatrix}$$
-	where we then define the squared distance between two points as
-	$$
-	\mathrm{d}s^2= g_{xx}\mathrm{d}x^2+g_{yy} \mathrm{d}y^2 + 2 g_{xy}\mathrm{d}x \mathrm{d}y= \sum_{\mu,\nu\in\{x,y\}}g_{\mu\nu}\mathrm{d}l^\mu \mathrm{d}l^\nu
-	$$
-	Can recover usual metric: by Pythagorean theorem, we have
-	$$\mathrm{d}s^2=\mathrm{d}x^2+\mathrm{d}y^2= \sum_{\mu,\nu\in\{x,y\}}g_{\mu\nu}\mathrm{d}l^\mu \mathrm{d}l^\nu$$
-	and so we recover a "flat" metric
-	$$
-	g_{\mu\nu}=\begin{pmatrix} g_{xx}&g_{xy}\\ g_{xy}&g_{yy}\end{pmatrix}= \begin{pmatrix} 1&0\\0&1\end{pmatrix}
-	$$
-
-	This allows us to measure lengths of paths $\gamma$ by computing $$L = \int_\gamma \mathrm{d}s$$
-- The Field Equations
-	- $R_{ij} - \frac{1}{2}R g_{ij} + \Lambda g_{ij} = T_{ij}$
-	- Postulated by Einstein, fixed by Hilbert
-	- $\Lambda < 0$ the cosomological constant introduced by Einstein in order to obtain non-expanding universe - but by evidence from Hubble, it is expanding (and accelerating)
-		- Nonzero implies that there is some nonzero energy everywhere, in every metric - used to account for "dark energy".
-	- The stress-energy tensor:
-		- Can be written as a $4\times 4$ matrix, where the $i,j$ component denotes a "flow of $i$ momentum in the $j$ direction". Flow of $t$ along $t$ is energy, while the others are pressure (think of an ideal gas).
-		- English interpretation: drop a sphere full of particles; the rate of shrinkage of the sphere is proportional to its volume, energy density, and pressure in 3 spatial coordinates (so dense objects in small volumes generate gravity!).
+- [curvature](curvature.md)
+	- [parallel transport](parallel%20transport)
+	- [Riemann curvature tensor](Riemann%20curvature)
+- [covariant derivative](covariant%20derivative)
+- [metric tensor](metric%20tensor)
+- The Field Equations [Einstein equations](Einstein%20equations.md)
 - The Geodesic Equations
 	- $n$ ODE IVPs for $M^n$, luckily has existence/uniquness
 
