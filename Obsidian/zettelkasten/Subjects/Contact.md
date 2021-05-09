@@ -4,6 +4,26 @@ aliases: ["contact", "contact topology", "contact geometry", "contact structure"
 
 [2021-04-28_Contact_Topology_Notes](../2021-04-28_Contact_Topology_Notes.md)
 
+Historically, the study of periodic orbits motivated the definition of [contact structure](Subjects/Contact.md).
+
+**Definition (Hyperplane Field):**
+A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
+
+> See examples.
+
+**Definition (Contact Manifold)**
+A smooth manifold with a hyperplane field $(M^{2n+1}, \xi)$ is *contact* iff $\xi = \ker \alpha$ for some $\alpha \in \Omega^1(M)$ where $\alpha \wedge (d\alpha)^n$ is a top/volume form in $\Omega^{2n+1}(M)$
+
+> Note that $\lambda \wedge (d\lambda)^n = 0$ defines a foliation?
+
+**Definition (Reeb Vector Field):**
+There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$.
+
+> *Remark:*
+> [Contact manifolds](Contact%20manifold) are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then we can pick any $C^1$ increasing function $f: \RR \to \RR^+$  (e.g. $f(t) = e^t$) and obtain an exact symplectic form $\omega = d(f\lambda)$ on $M_C \definedas M \cross \RR$.
+
+> Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
+
 Definition (Contact Form):
 ?
 

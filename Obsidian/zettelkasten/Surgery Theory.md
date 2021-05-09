@@ -1,5 +1,21 @@
+---
+aliases: ["surgery"]
+---
+
 Reference: Lück's Basic introduction to surgery theory
 
+# Motivation: CW Cell Attachment
+
+Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong D^n$ is an $n\dash$cell and $\phi: S^{n-1} \to X$ is the characteristic/attaching map.
+
+> Remark: Why $S^{n-1}$? Really it's $\bd e^n = \bd D^n = S^{n-1}$.
+
+![](2020-02-05-00-22-18.png)
+
+Problem:
+This doesn't "see" the smooth structure, and CW complexes can have singular points (e.g. $S^2 = e^0 \disjoint e^2$.
+
+# Definitions
 
 **Definition (Surgery):**
 Given a manifold $M^n$ where $n=p+q$, then $p\dash$surgery on $M$, denoted $\mathcal{S}(M)$, result of cutting out $S^p \cross D^q$ and gluing back in $D^{p+1} \cross S^{q-1}$.
@@ -53,8 +69,6 @@ A useful table:
 > See examples of surgery
 
 
-Problem:
-This doesn't "see" the smooth structure, and CW complexes can have singular points (e.g. $S^2 = e^0 \disjoint e^2$.
 
 ![](2020-02-05-12-25-15.png)
 

@@ -29,26 +29,6 @@ Yes for acute triangles, there is at least one periodic orbit:
 
 For arbitrary triangles: unknown!
 
-Historically, the study of periodic orbits motivated the definition of [contact structure](Subjects/Contact.md).
-
-**Definition (Hyperplane Field):**
-A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
-
-> See examples.
-
-**Definition (Contact Manifold)**
-A smooth manifold with a hyperplane field $(M^{2n+1}, \xi)$ is *contact* iff $\xi = \ker \alpha$ for some $\alpha \in \Omega^1(M)$ where $\alpha \wedge (d\alpha)^n$ is a top/volume form in $\Omega^{2n+1}(M)$
-
-> Note that $\lambda \wedge (d\lambda)^n = 0$ defines a foliation?
-
-**Definition (Reeb Vector Field):**
-There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$.
-
-> *Remark:*
-> [Contact manifolds](Contact%20manifold) are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then we can pick any $C^1$ increasing function $f: \RR \to \RR^+$  (e.g. $f(t) = e^t$) and obtain an exact symplectic form $\omega = d(f\lambda)$ on $M_C \definedas M \cross \RR$.
-
-> Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
-
 
 # Why Care About Contact Structures 
 
@@ -95,53 +75,7 @@ Then the **Reeb vector field** $X$ admits a periodic orbit.
 
 
 
-
-
-
-**Definition (Weinstein Surgery):**
-Let $(W, \lambda)$ be a Liouville domain (although we won't need compactness).
-
-> Recall: $(W, \lambda)$ is a $2n\dash$dimensional exact symplectic manifold with contact-type boundary $\bd W$ such that the Liouville vector field $X$ points outwards along $\bd W$.
-
-Weinstein surgery takes 
-
-- $(W, \lambda)$ a $2n\dash$dimensional manifold
-- That is exact and symplectic
-- With contact-type boundary $\bd W$
-- Where the Liouville vector field points outward along $\bd W$
-
-and produces a distinct manifold $(W(\Lambda), \lambda')$ with the above properties which is obtained by surgery along $\Lambda$ an isotropic embedded sphere.
-Thus $W(\Lambda)$ is obtained from attaching a $k\dash$handle to $W$ along $\Lambda$. 
-
 ## Aside on Surgery
 
-### Analogy: CW Cell Attachment
-
-Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong D^n$ is an $n\dash$cell and $\phi: S^{n-1} \to X$ is the characteristic/attaching map.
-
-> Remark: Why $S^{n-1}$? Really it's $\bd e^n = \bd D^n = S^{n-1}$.
-
-![](2020-02-05-00-22-18.png)
 
 
-
-
-**Definition (Weinstein Surgery):**
-We now add a $k\dash$handle along $\Lambda \subset \bd W$ to yield some $W'$, where $\bd W'$ is obtained by surgery in $\bd W$ along $\Lambda$.  
-
-# Why Care About Weinstein Surgery
-
-**Theorem:** 
-Every compact contact 3-manifold arises as a combination of (2 different variants of) Weinstein surgeries on $S^3$.
-
-> Compare to theorem: 
-Every compact 3-manifold arises as surgery on a link.
-
-**Theorem:** 
-Weinstein surgery on a *loose Legendrian* knot yields an overtwisted contact structure.
-
-
-
-
-**Theorem:** 
-Weinstein surgery along a loose Legendrian sphere yields an overtwisted contact manifold.
