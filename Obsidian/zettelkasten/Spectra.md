@@ -23,7 +23,9 @@ for any [generalized cohomology theory](cohomolology%20theory.md) $E_*$. This sa
 Another good consequence of spectra is the [Brown Representability](Brown%20Representability) theorem. It says that any [[generalized cohomology theory]] on spaces is representable by a spectra. 
 
 ## Hopf Invariant 1
-A reason to care about cohomology theories: Adams' two solutions to the [[zettelkasten/Hopf invariant one]] problem. First solution uses ordinary cohomology to do the work, but it is very long and makes extensive use of higher [[zettelkasten/Cohomology operations]]. His second proof (with Atiyah) is beautiful and short, but only because he uses an extraordinary cohomology theory, [[complex K-theory]], to do the job. 
+A reason to care about cohomology theories: Adams' two solutions to the [[zettelkasten/Hopf invariant one]] problem. First solution uses ordinary cohomology to do the work, but long and uses higher [Cohomology operations](Cohomology%20operations.md). 
+
+His second proof (with Atiyah) is beautiful and short, but only because he uses an extraordinary cohomology theory, [[complex K-theory]]. 
 
 - [More on Hopf invariant](http://people.virginia.edu/~mah7cd/Foundations/Adams,%20Atiyah%20-%20K-theory%20and%20the%20Hopf%20Invariant.pdf)
 
