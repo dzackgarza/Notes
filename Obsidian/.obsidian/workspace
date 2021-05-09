@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Homotopy Groups of Spheres.md",
+            "file": "zettelkasten/J-homomorphism.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Homotopy Groups of Spheres.md",
+                "file": "zettelkasten/J-homomorphism.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Homotopy Groups of Spheres.md"
+                "file": "zettelkasten/J-homomorphism.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Homotopy Groups of Spheres.md",
+                "file": "zettelkasten/J-homomorphism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Homotopy Groups of Spheres.md"
+                "file": "zettelkasten/J-homomorphism.md"
               }
             }
           },
@@ -201,7 +201,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Homotopy Groups of Spheres.md",
+                "file": "zettelkasten/J-homomorphism.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,8 +240,8 @@
   },
   "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
-    "zettelkasten/Homotopy Groups of Spheres.md",
     "zettelkasten/J-homomorphism.md",
+    "zettelkasten/Homotopy Groups of Spheres.md",
     "zettelkasten/framed bordism.md",
     "zettelkasten/2021-04-26_Why_care_about_stable_homotopy_groups_of_spheres.md",
     "zettelkasten/Cobordism.md",
