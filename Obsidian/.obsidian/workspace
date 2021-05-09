@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/curvature.md",
+            "file": "zettelkasten/spherical manifold.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/curvature.md",
+                "file": "zettelkasten/spherical manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/curvature.md"
+                "file": "zettelkasten/spherical manifold.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/curvature.md",
+                "file": "zettelkasten/spherical manifold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/curvature.md"
+                "file": "zettelkasten/spherical manifold.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/curvature.md",
+                "file": "zettelkasten/spherical manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,15 +251,15 @@
   },
   "active": "3a89dff435f97c1f",
   "lastOpenFiles": [
+    "zettelkasten/spherical manifold.md",
+    "zettelkasten/Eilenberg-MacLane space.md",
+    "zettelkasten/classifying space.md",
     "zettelkasten/curvature.md",
     "zettelkasten/curvature of a connection.md",
-    "zettelkasten/Eilenberg-MacLane space.md",
     "zettelkasten/Postnikov tower.md",
     "zettelkasten/Eilenberg-MacLane Spaces.md",
-    "zettelkasten/spherical manifold.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/unstable homotopy groups of spheres.md",
-    "zettelkasten/Nishida's Theorem.md",
-    "zettelkasten/stable homotopy groups of spheres.md"
+    "zettelkasten/Nishida's Theorem.md"
   ]
 }
