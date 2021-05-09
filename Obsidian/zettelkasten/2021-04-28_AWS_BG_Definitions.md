@@ -19,24 +19,23 @@ Terms to lookup and define. For each term, provide
 - [[Adams-Novikov spectral sequence]]
 - [Stack](stack.md)
 - [quasicoherent sheaf](quasicoherent%20sheaf.md)
-- Representation of a group
-- Nilpotent
+- [representation theory](representation%20theory.md) for groups
+- [Nilpotent](Nilpotent)
 - [Ramified](ramified%20primes.md)
 - [../Thom spectrum](../Thom%20spectrum.md)
 - [[Deformation space]]
 - [Local class field theory](Local%20class%20field%20theory)
-- 
-- Local Langland's correspondence
-- Orbifold
-- Lubin-Tate Space
-- Uniformization
-- Picard group
-- Adams-Novikov spectral sequence
-- Complex cobordism groups
-- Stable homotopy
-- Chromatic homotopy
-- Coherent stack cohomology
-- Formal group law
+- [local Langlands](Local%20Langlands%20correspondence.md)
+- [Orbifold](Orbifold.md)
+- [Lubin-Tate space](Lubin-Tate%20space)
+- [uniformization](uniformization.md)
+- [Picard group](Picard%20group.md)
+- [Adams-Novikov spectral sequence](Adams-Novikov%20spectral%20sequence)
+- [complex cobordism](complex%20cobordism)
+- [Stable homotopy](Stable%20homotopy.md)
+- [Chromatic homotopy theory](Chromatic%20homotopy%20theory)
+- [Coherent stack cohomology](Coherent%20stack%20cohomology)
+- [Formal group](Formal%20group.md)
 
 Prerequisite Knowledge
 - Commutative Group Laws and Lazard's Theorems

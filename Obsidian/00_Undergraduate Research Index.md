@@ -63,5 +63,5 @@ date: 2021-04-27
 - [Stable homotopy](zettelkasten/Stable%20homotopy.md)
 - [Why study cobordism?](zettelkasten/2021-04-26_Why_study_cobordism.md)
 - [A guide to computing stable homotopy groups](zettelkasten/2021-04-26_A_guide_for_computing_stable_homotopy_groups.md)
-- [Why study chromatic homotopy theory?](zettelkasten/2021-04-26_Chromatic_Homotopy_Theory.md)
+- [Why study chromatic homotopy theory?](zettelkasten/chromatic%20homotopy%20theory.md)
 - [Formal_Groups](zettelkasten/Projects/Independent%20Study/Formal_Groups_and_Spectra/Formal_Groups.md)
