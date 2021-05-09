@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Poincare homology sphere.md",
+            "file": "zettelkasten/3-manifold.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Poincare homology sphere.md",
+                "file": "zettelkasten/3-manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Poincare homology sphere.md"
+                "file": "zettelkasten/3-manifold.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Poincare homology sphere.md",
+                "file": "zettelkasten/3-manifold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Poincare homology sphere.md"
+                "file": "zettelkasten/3-manifold.md"
               }
             }
           },
@@ -212,7 +212,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Poincare homology sphere.md",
+                "file": "zettelkasten/3-manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,6 +251,7 @@
   },
   "active": "3a89dff435f97c1f",
   "lastOpenFiles": [
+    "zettelkasten/3-manifold.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/spherical manifold.md",
     "zettelkasten/2021-04-26_3-Manifolds.md",
@@ -259,7 +260,6 @@
     "zettelkasten/curvature.md",
     "zettelkasten/curvature of a connection.md",
     "zettelkasten/Postnikov tower.md",
-    "zettelkasten/Eilenberg-MacLane Spaces.md",
-    "zettelkasten/Stable homotopy.md"
+    "zettelkasten/Eilenberg-MacLane Spaces.md"
   ]
 }

@@ -3,4 +3,7 @@
 - Its fundamental group is order 120
 - Proves that there exist $X\ni \ZHS^n$ where $X\not\cong_\Top S^n$.
 
-- Cons
+- Constructions:
+	- Glue faces of a dodecahedron
+	- $\SO_3(\RR)/I$, for $I\cong A_5$ the symmetries of an isocashedron
+	- $+1$ [Dehn Surgery](Dehn%20Surgery) on the right-handed [trefoil](trefoil) 

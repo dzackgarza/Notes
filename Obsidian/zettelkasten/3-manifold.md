@@ -7,3 +7,6 @@ tags:
 >Take a look at Machlachlan and Reid's book "The Arithmetic of Hyperbolic 3-Manifolds".
 
 > Since finite volume hyperbolic structures are unique whenever an n-manifold (n≥3) has them, any invariants of the hyperbolic structure are invariants of the manifold. Hyperbolic manifolds are K(π,1)-spaces, so they're not just diffeo/homeomorphism invariants, but invariants of the homotopy-type.
+
+- Rohklin invariant: a $\ZZ/2$ invariant $r$ for $\ZHS^3$
+- Casson invariant: a $\ZZ$ invariant $c$ for $\ZHS^3$ where $c\mod 2 = r$. 
