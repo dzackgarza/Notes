@@ -10,15 +10,13 @@ tags:
 ![Unstable Homotopy Groups of Spheres](figures/2-22ReadingNotes-52d83%201.png)
 
 # Survey articles on homotopy groups of spheres
-From Hatcher:
 
 Connections between homotopy groups of spheres and low-dimensional geometry and topology have traditionally been somewhat limited, with the [[Hopf bundle]] being the thing that comes most immediately to mind. A fairly recent connection is Soren Galatius' theorem that the homology groups of $Aut(F_n)$ (the automorphism group of a free group) are isomorphic in a stable range of dimensions to $H_* \Loop^\infty \Sigma^\infty S^0$, the space whose homotopy groups are the stable homotopy groups of spheres.
 
-Other posters have alluded to the Kervaire-Milnor theory (from "Groups of homotopy spheres. I") which shows how, 
+## Relation to Classification of Manifolds
 
 > Kervaire-Milnor theory ("Groups of Homotopy Spheres") and Pontryagin-Thom show that our knowledge/ignorance about the stable homotopy groups of spheres is reflected in knowledge/ignorance about classification of manifolds. 
 
-## Relation to Classification of Manifolds
 
 In each dimension $n$, one has a group $Θ_n$ of smooth $n$-manifolds that are homotopy $n$-spheres, up to h-cobordism, under connected sum. This has a subgroup $bP_{n+1}$ of boundaries of parallelizable $n+1$-manifolds. Assume n>4, so h-cobordism classes are diffeomorphism classes.
 
