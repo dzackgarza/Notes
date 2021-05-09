@@ -13,17 +13,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "8c41812aca18ab15",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/2021-04-28_More_Weinstein_Notes.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -90,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/2021-04-28_More_Weinstein_Notes.md",
+                "file": "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/2021-04-28_More_Weinstein_Notes.md"
+                "file": "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md"
               }
             }
           },
@@ -159,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/2021-04-28_More_Weinstein_Notes.md",
+                "file": "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/2021-04-28_More_Weinstein_Notes.md"
+                "file": "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md"
               }
             }
           },
@@ -197,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/2021-04-28_More_Weinstein_Notes.md",
+                "file": "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -248,17 +237,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "8c41812aca18ab15",
+  "active": "cad39689cbe4ee76",
   "lastOpenFiles": [
-    "zettelkasten/2021-04-28_More_Weinstein_Notes.md",
     "zettelkasten/2021-04-28_Symplectic_and_Contact_Notes.md",
+    "zettelkasten/Symplectic.md",
+    "zettelkasten/2021-04-28_More_Weinstein_Notes.md",
+    "zettelkasten/flow.md",
     "zettelkasten/2021-04-28_Undergrad_Geometry_Term_Paper.md",
     "zettelkasten/2021-04-28_Morse_Theory_GSTS_2020.md",
     "zettelkasten/Geometric topology.md",
     "zettelkasten/2021-04-28_Mock_AMS_2020_Talk_V1.md",
     "zettelkasten/2021-04-28_Mock_AMS_2020_Pictures.md",
-    "zettelkasten/2021-04-28_AWS_BG_Definitions.md",
-    "zettelkasten/central simple algebra.md",
-    "Quick_Notes/2021-03-17.md"
+    "zettelkasten/2021-04-28_AWS_BG_Definitions.md"
   ]
 }

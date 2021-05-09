@@ -19,19 +19,18 @@ The level sets of a Hamiltonian on $\RR^{2n} = \spanof_\RR\theset{\vector p, \ve
 
 Basic Questions: 
 
-- Basic question: when does the flow of a vector field admit a *periodic orbit*?
+- Basic question: when does the  [flow of a vector field](flow.md) admit a [periodic orbit](periodic%20orbit)?
 - Does every/any vector field on a smooth manifold $M$ admit a closed orbit?
   - Corollary: does every/any vector field on $M$ admit a fixed point?
-  - Note that if $\chi(M) \neq 0$, the Poincare-Hopf index theorem forces every vector field to have a fixed point.
+  - Note that if $\chi(M) \neq 0$, the [Poincare-Hopf index theorem](Poincare-Hopf%20index%20theorem) forces every vector field to have a fixed point.
 - Does every vector field on $S^3$ admit a closed orbit?
   - Answer: no, very difficult to show, but turns out to hold for all 3-manifolds.
 
 > *Remark*:
-> The orbit of a Hamiltonian flow is contained in a single level set.
+> The orbit of a [Hamiltonian flow](Hamiltonian%20flow) is contained in a single level set.
 
 
-
-Example: Simple Harmonic Oscillator.
+Example: Simple [Harmonic Oscillator](Harmonic%20Oscillator).
 
 ![](2020-02-03-21-23-02.png)
 

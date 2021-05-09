@@ -5,7 +5,7 @@ tags:
 ---
 
 [../Subjects/Contact](../Subjects/Contact.md)
-[Symplectic](Symplectic)
+[symplectic](symplectic.md)
 [../2021-04-28_More_Weinstein_Notes](../2021-04-28_More_Weinstein_Notes.md)
 
 Tags: #symplectic #topology 
@@ -20,7 +20,7 @@ References:
 # Why Care About Contact/Symplectic Geometry
 
 *Open Problem:**
-Does every triangular billiards admit a periodic orbit?
+Does every triangular billiards admit a [periodic orbit](periodic%20orbit)?
 
 *Answer (1775):* 
 Yes for acute triangles, there is at least one periodic orbit:
@@ -29,7 +29,7 @@ Yes for acute triangles, there is at least one periodic orbit:
 
 For arbitrary triangles: unknown!
 
-Historically, the study of periodic orbits motivated the definition of *contact structures*.
+Historically, the study of periodic orbits motivated the definition of [Contact Structure](Contact%20Structure).
 
 **Definition (Hyperplane Field):**
 A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
@@ -52,9 +52,9 @@ There is a canonical vector field on every contact manifold: the Reeb vector fie
 
 # Why Care About Contact Structures 
 
-Let $M$ be a symplectic manifold and $H: M \to \RR$ a Hamiltonian.
+Let $M$ be a [symplectic manifold](symplectic.md) and $H: M \to \RR$ a [Hamiltonian](Hamiltonian).
 
-For regular values $r\in \RR$ of the  Hamiltonian, $H\inv(r) \subset M$ is a submanifold $Y\subset M$ with a smooth vector field $X_H$ called a *regular level set*.
+For [regular values](regular%20value) $r\in \RR$ of the  Hamiltonian, $H\inv(r) \subset M$ is a submanifold $Y\subset M$ with a smooth vector field $X_H$ called a *regular level set*.
 
 **Question:**
 Does $X_H$ have a closed orbit on every regular level set?
