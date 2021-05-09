@@ -86,106 +86,17 @@ Then the **Reeb vector field** $X$ admits a periodic orbit.
 
 ![](Hamiltonian.md#^1c3cf2)
 
+![](symplectic.md#^395eb1)
 
-[symplectic](symplectic.md)
+![](Hamiltonian.md#^e4422f)
 
-**Definition (Hamiltonian vector field):**
-Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
+![](symplectic.md#^9a87d0)
 
-> Remark: Conservation of energy
-> Since $\omega$ is alternating,
-\begin{align*}
-X_H(H) = dH(X_H) = \omega(X_H, X_H) = 0
-.\end{align*}
 
-**Proposition:**
-$(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere (c.f. Mike Hutchings).
 
-**Corollary:**
-Every symplectic manifold is orientable (since it has a nonvanishing volume form).
 
-> **Important Remark:**
-Symplectic structures on smooth manifolds give us a way to generate *flows* on a manifold (by defining a Hamiltonian or a symplectic vector field).
 
-**Definition (Exact Symplectic Manifold):**
-$W$ is an *exact* symplectic manifold iff there exists a 1-form $\lambda \in \Omega^1(W)$ such that $d\lambda \in \Omega^2(W)$ is non-degenerate.
 
-> **Remark**:
-> If $(W, \lambda)$ is exact symplectic then $(W, d\lambda)$ is symplectic.
-> $\lambda$ is sometimes referred to as a *Liouville form*.
-
-> **Important Remark:**
-> If $(W, \lambda)$ is exact and $H: \RR \cross M \to \RR$ is smooth, then the *Hamiltonian flow* $\phi_H^t: M \to M$ is defined for all time and is an *exact symplectomorphism*.
-
-**Theorem:**
-There are no closed (compact and boundaryless) exact symplectic manifolds.
-
-*Proof:*
-\begin{align*}
-\int_{\bd M} \lambda \wedge \omega^{n-1} 
-&= \int_M d(\lambda \wedge \omega^{n-1}) \\ 
-&= \int_M d\lambda \wedge \omega^{n-1} + (-1)^{\abs \lambda}\lambda\wedge d\omega^{n-1} \\
-&= \int_M \omega \wedge \omega^{n-1} + (-1)^{\abs\lambda} \lambda \wedge 0 \\
-&= \int_M \omega^n \\
-&= \mathrm{Vol}_{\text{Sp}}(M) \\
-&> 0
-,\end{align*}
-
-so $\bd M \neq 0$, and thus $M$ can not be closed.
-
-$\qed$
-
-**Definition (Liouville Vector Field):**
-Let $(W, \lambda)$ be exact symplectic.
-The Liouville vector field on $(W, \omega = d\lambda)$ is the (unique) vector field $X$ such that $\iota_x \omega = \lambda$.
-
-> Remark:
-> $X$ induces a flow $\psi^{X, t}$, and for any compact embedded surface $\Sigma_g \injects W$ we have
-\begin{align*}
-\psi^{X, t *} d \lambda&= e^{t} d \lambda \implies \\
-\operatorname{Area}_{d \lambda}\left(\psi^{X, t}(S)\right)
-&:=\int_{\psi^{X, t}(S)} d \lambda\\
-&=\int_{S} (\psi^{X, t})^* d \lambda\\
-&=e^{t} \operatorname{Area}_{d \lambda}(S)
-\end{align*}
->
-> This says that the flow lines of $X$ "dilate" the areas of surfaces at an exponential rate, or that $X$ is an "infinitesimal generator" of a canonical dilation..
-
-> Remark:
-> This is useful because even if $W$ isn't compact, we can obtain $W$ as the "limit" of compact submanifolds where we inflate along this flow.
-
-**Theorem:**
-A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
-
-*Proof:*
-\begin{align*}
-\mathcal{L}_X \omega = [d, \iota_X] \omega = \iota_X(d\omega) + d(\iota_x \omega) = \iota_x(d\omega) + d\lambda = \iota_X(0) + d\lambda = d\lambda = \omega
-.\end{align*}
-
-> Use the fact that $\omega$ is closed, so $d\omega = 0$.
-
-$\qed$
-
-**Definition (Contact Type):**
-For $(W, \lambda)$ an exact symplectic manifold, a codimension 1 submanifold $Y \subset W$ is of *restricted contact-type* iff $X$ is transverse to $Y$, i.e. for every $p\in Y$, we have $X(p) \not\in T_p(Y)$.
-
-We say $Y$ is of *contact type* iff there is a neighborhood $U \supset Y$ and a one-form $\lambda$ with $d\lambda = \restrictionof{\omega}{U}$ making $(U, \lambda)$ of restricted contact type.
-
-> Remark:
->$(U, \lambda)$ is of restricted contact type iff $\restrictionof{\lambda}{U}$ is a contact form.
-
-**Definition (Hypersurface of contact type):**
-For $(X, \omega)$ a symplectic manifold, a hypersurface $\Sigma \injects X$ is of *contact-type* iff there is a contact form $\lambda$ such that $d\lambda = \restrictionof{\omega}{Y}$.
-
-**Definition (Liouville Domain):**
-$(W, \lambda)$ is a Liouville domain iff $W$ is a *compact* exact symplectic manifold with boundary such that the Liouville vector field $X$ points outwards on $\bd W$ transversally.
-
-> Remark:
-> This condition implies that $\bd W$ is a contact manifold with contact form $\alpha = \restrictionof{\lambda}{\bd W}$.
-
-**Definition (Isotropic):**
-Let $\Lambda$ be the image of an embedded sphere $S^k \to W$.
-Then $\Lambda$ is *isotropic* iff $\restrictionof{\lambda}{\Lambda} = 0$.
 
 **Definition (Weinstein Surgery):**
 Let $(W, \lambda)$ be a Liouville domain (although we won't need compactness).
@@ -220,57 +131,6 @@ This doesn't "see" the smooth structure, and CW complexes can have singular poin
 Solution:
 Use *tubular neighborhoods*.
 
-
-**Definition (Surgery):**
-Given a manifold $M^n$ where $n=p+q$, then $p\dash$surgery on $M$, denoted $\mathcal{S}(M)$, result of cutting out $S^p \cross D^q$ and gluing back in $D^{p+1} \cross S^{q-1}$.
-
-Let $\Gamma_{p, q} = S^p \cross D^q$, call this our "surgery cell".
-As in the CW case, we want to attach this cell via an embedding of its boundary into $M$.
-
-We can compute
-$$
-\bd(S^p\cross D^q) = S^p \cross S^{q-1} = \bd(\mathbf{D^{p+1} \cross S^{q-1}})
-$$ 
-
-then the above says
-$$
-\bd \Gamma_{p, q} = S^p \cross S^q = \bd \Gamma_{p+1, q-1}
-$$
-
-So fix any embedding 
-$$\phi: \Gamma_{p, q} \to M$$
-
-Note that this restricts to some map (abusing notation) 
-$$\phi: \bd \Gamma_{p, q} \to M$$
-
-So by the above observation, we can trade this in for a map
-\begin{align*}
-\phi: \bd\Gamma_{p+1, q-1} \to M
-.\end{align*}
-
-And so we can use this as an attaching map:
-\begin{align*}
-\mathcal{S}_p(M) \definedas M\setminus \phi(\Gamma_{p, q})^\circ \disjoint_\phi \Gamma_{p+1, q-1} 
-.\end{align*}
-
-
-**Definition (Handle Attachment)**
-Given a manifold $(M^n, \bd M^n)$ with boundary, attaching a $p\dash$handle to $M$, denoted $H_p(M)$, is given by $p\dash$surgery on $\bd M$, i.e. 
-\begin{align*}
-H_p(M)^\circ    &= M \\
-\bd H_p(M)      &= \mathcal{S}_k(\bd M)
-.\end{align*}
-
-> Remark: we need conditions on the embedding of the normal bundle for this to work.
-
-**Examples of Handles :**
-$S^1 \cross D^2 \cong \bar T$, a solid torus.
-
-A useful table:
-
-![](2020-02-05-00-59-19.png)
-
-> See examples of surgery
 
 **Definition (Weinstein Surgery):**
 We now add a $k\dash$handle along $\Lambda \subset \bd W$ to yield some $W'$, where $\bd W'$ is obtained by surgery in $\bd W$ along $\Lambda$.  

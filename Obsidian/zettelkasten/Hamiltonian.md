@@ -4,3 +4,16 @@ If we have $H: M\cross I \to \RR$, we'll refer to this as a *time-dependent Hami
 
 > *Remark:*
 > If $(M, \omega)$ is a [symplectic manifold](symplectic.md), each $H_t: M \to I$ induces a unique vector field $X_{H_t}$ characterized by the property $\iota_{X_{H_t}}\omega = -dH_t$ where $\iota$ is the [interior product](interior%20product).
+
+# Hamiltonian Vector Field
+
+^e4422f
+
+**Definition (Hamiltonian vector field):**
+Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
+
+Remark: Conservation of energy
+Since $\omega$ is alternating,
+\[
+X_H(H) = dH(X_H) = \omega(X_H, X_H) = 0
+.\]
