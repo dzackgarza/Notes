@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/connection.md",
+            "file": "zettelkasten/torsion of a connection.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/torsion of a connection.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/connection.md"
+                "file": "zettelkasten/torsion of a connection.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/torsion of a connection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/connection.md"
+                "file": "zettelkasten/torsion of a connection.md"
               }
             }
           },
@@ -200,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/connection.md",
+                "file": "zettelkasten/torsion of a connection.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,6 +239,7 @@
   },
   "active": "e72e6e55d0b3ea4a",
   "lastOpenFiles": [
+    "zettelkasten/torsion.md",
     "zettelkasten/connection.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/Levi-Cevita connection.md",
@@ -247,7 +248,6 @@
     "zettelkasten/curvature.md",
     "zettelkasten/Kähler.md",
     "zettelkasten/Seiberg–Witten invariants.md",
-    "zettelkasten/spherical.md",
-    "zettelkasten/manifold.md"
+    "zettelkasten/spherical.md"
   ]
 }
