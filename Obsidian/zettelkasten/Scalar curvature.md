@@ -8,5 +8,5 @@ $$
 - Big question: which smooth closed manifolds have metrics with positive scalar curvature?
 	- A lot is known!
 	- Gromov and Lawson: every simply connected [manifold](manifold) of dimension at least 5 which is not [spin](spin) has a [metric](Riemannian%20metric) with positive scalar curvature.
-		- Uses an $\alpha$ invariant 
+		- Uses an $\alpha$ invariant taking values in $\K O_n$ (See [K-Theory](K-Theory.md))
 	- 
