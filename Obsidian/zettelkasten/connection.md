@@ -2,12 +2,12 @@
 aliases: ["Levi-Cevita connection", "affine connection"]
 ---
 
-- Connects nearby tangent spaces, tangent vector fields can be differentiated as if they were functions $f \in C^\infty(M; V)$ for a fixed vector space $V$,
-- Provides lifts of curves in $M$ to curves in $\Frame(M)$.
+# Motivations
 
+- Provides lifts of curves in $M$ to curves in $\Frame(M)$.
+- Connects nearby tangent spaces, tangent vector fields can be differentiated as if they were functions $f \in C^\infty(M; V)$ for a fixed vector space $V$,
 - The main invariants of an affine connection are its [torsion](torsion%20of%20a%20connection.md) and its [curvature](curvature%20of%20a%20connection)
-	- Why care?
-	If both vanish, $\Gamma(TM)$ is almost a [Lie algebra](Lie%20algebra).
+	- If both vanish, $\Gamma(TM)$ is almost a [Lie algebra](Lie%20algebra).
 - Can define a [covariant derivative](covariant%20derivative)
 
 # Definition

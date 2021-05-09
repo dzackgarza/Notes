@@ -9,6 +9,3 @@ Topics:
 - [Scalar curvature](Scalar%20curvature)
 - [Sectional curvature](Sectional%20curvature)
 - [Curvature of a connection](curvature%20of%20a%20connection.md)
-
-Related Topics
-
