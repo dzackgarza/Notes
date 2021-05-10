@@ -67,11 +67,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
 /* div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag{ display: none; } */
 
 :root {
-  --dark0: #2e3440;
-  --dark1: #3b4252;
-  --dark2: #434c5e;
-  --dark3: #4c566a;
-
   --light0: #d8dee9;
   --light1: #e5e9f0;
   --light2: #eceff4;
@@ -88,7 +83,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
   --purple: #b48ead;
 }
 
-.theme-dark,
 .theme-light {
   --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
   --text-normal: var(--light2);
@@ -110,7 +104,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
   --inline-code: var(--frost1);
   --code-block: var(--frost1);
   --vim-cursor: var(--orange);
-  --text-selection: rgba(0, 0, 255, 0.0);
+  --text-selection: rgba(0, 247, 255, 0.2); 
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: transparent;
 }
