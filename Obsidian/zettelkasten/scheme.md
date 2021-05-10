@@ -7,4 +7,7 @@ aliases: ["schemes"]
 - Closed points: ?
 - Geometric points: ?
 - Reduced scheme: ?
-- Smooth scheme: ?
+- Smooth scheme: If $X\in \Sch(\ft)$ then there is a closed immersion $X\injects \AA^N_{/k}$ and $X = V(f_1, \cdots, f_m)$ for some $f_i\in \kx{N}$ . Then $X$ is **smooth of dimension $n$** iff 
+	- There exist neighborhoods of each point $U_x\ni x$ with $\dim U_x \geq n$, and
+	- $\rank Df \geq N-m$ everywhere
+- Finite type: ?
