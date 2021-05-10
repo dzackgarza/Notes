@@ -5,7 +5,7 @@ aliases: ["bundles"]
 - Linearly independent sections: ?
 - [[Canonical bundle]] 
 - [[Universal bundle]]
-- [[Tautological bundle]]
+- [[tautological bundle]]
 - [[Normal bundle]]
 - [[connection]]
 - [[Surface bundle]]

@@ -1,1 +1,0 @@
-[Exceptional divisor](Exceptional%20divisor)

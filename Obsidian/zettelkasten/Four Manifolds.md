@@ -1,4 +1,5 @@
--   What is [Serre duality](Serre%20duality)?
+-  What is the [tautological bundle](tautological%20bundle.md)?
+-     What is [Serre duality](Serre%20duality)?
 -   What is [Hirzebruch-Riemann-Roch](Hirzebruch-Riemann-Roch)?
 -   How is $\\mathcal{O}(n)$ defined?
 -   What is a Kahler manifold?
@@ -17,3 +18,6 @@
 -   What is a [Hermitian metric](Hermitian%20metric)?
 -   What is the [Hodge star](Hodge%20star)?
 -   What is the [genus formula](genus%20formula)?
+-   What is the [blowup](blowup.md)?
+-   What is the [exceptional divisor](exceptional%20divisor.md)?
+-   What is the [strict transform](strict%20transform)?
