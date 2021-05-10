@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Quick_Notes/2021-05-05.md",
+            "file": "zettelkasten/Hodge-Tate theory.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "simple",
+                "query": "Hodge-Tate",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md",
+                "file": "zettelkasten/Hodge-Tate theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md"
+                "file": "zettelkasten/Hodge-Tate theory.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md",
+                "file": "zettelkasten/Hodge-Tate theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md",
+                "file": "zettelkasten/Hodge-Tate theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quick_Notes/2021-05-05.md"
+                "file": "zettelkasten/Hodge-Tate theory.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "4aa57d8844d0bb0b",
   "lastOpenFiles": [
+    "zettelkasten/Hodge-Tate theory.md",
+    "zettelkasten/Hodge-Tate cohomology.md",
+    "Quick_Notes/2021-04-21.md",
     "Quick_Notes/2021-05-05.md",
     "zettelkasten/Mordell-Weil rank.md",
     "Quick_Notes/2021-05-08.md",
     "Quick_Notes/2021-05-09.md",
     "zettelkasten/Four Manifolds.md",
     "zettelkasten/blowup.md",
-    "zettelkasten/characteristic class.md",
-    "zettelkasten/principal bundle.md",
-    "zettelkasten/local system.md",
-    "zettelkasten/Picard group.md"
+    "zettelkasten/characteristic class.md"
   ]
 }
