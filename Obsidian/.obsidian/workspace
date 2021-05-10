@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "dc9b887dae2f74c8",
+        "id": "2ca6eed6d06c0a73",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Home.md",
-            "mode": "preview"
+            "file": "zettelkasten/scheme.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           }
@@ -238,8 +238,10 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "dc9b887dae2f74c8",
+  "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
+    "zettelkasten/scheme.md",
+    "zettelkasten/Algebra over a ring.md",
     "00_Home.md",
     "zettelkasten/Learning.md",
     "zettelkasten/l-adic representations.md",
@@ -247,8 +249,6 @@
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/equivariant stable homotopy theory.md",
     "zettelkasten/Untitled 4.md",
-    "Quick_Notes/2021-05-06.md",
-    "zettelkasten/Hodge-Tate theory.md",
-    "zettelkasten/Hodge-Tate cohomology.md"
+    "Quick_Notes/2021-05-06.md"
   ]
 }

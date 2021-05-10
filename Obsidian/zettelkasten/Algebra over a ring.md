@@ -11,3 +11,6 @@ aliases: [algebra]
 - [[Lie algebra]]
 - [[Clifford algebras]]
 - [[Hopf algebra]]
+
+
+An  algebra $A\in \kalg^\fg$ is **smooth** if $\spec A$ is a smooth [scheme](scheme.md).
