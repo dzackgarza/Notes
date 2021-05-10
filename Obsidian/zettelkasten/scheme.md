@@ -14,4 +14,5 @@ aliases: ["schemes"]
 	- At singular points, the dimension of the tangent space *increases*.
 - [finite type](finite%20type)
 - Regular: 
-- Separated
+- Separated:
+- [sheaf](sheaf.md)

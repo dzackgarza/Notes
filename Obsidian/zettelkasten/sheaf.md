@@ -2,3 +2,5 @@
 - [[Canonical sheaf]]
 - [[Structure sheaf]]
 - Reflexive sheaf
+- [stalk](stalk)
+- [[section]]
