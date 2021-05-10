@@ -42,5 +42,5 @@ background-color: var(--text-accent-hover);
 
 /*if you want the highlight to present in both normal and insert mode of vim*/
 .CodeMirror-activeline .CodeMirror-linebackground{
-  background-color: rgba(89, 75, 95, 0.99) !important;
+  background-color: rgba(99, 75, 95, 0.99) !important;
 }
