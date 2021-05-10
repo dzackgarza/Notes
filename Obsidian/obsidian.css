@@ -144,8 +144,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
 .cm-header-1,
 .markdown-preview-section h1 {
   font-size: 34px;
-  font-weight:bold;
-  color: rgab(0,0,0,1);
+  color: rgba(100,0,0,1);
 }
 
 .cm-header-2,
