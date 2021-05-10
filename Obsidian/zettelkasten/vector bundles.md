@@ -50,7 +50,7 @@ There is a trivial bundle, when $E = S^1 \cross S^1 = T^2$, the torus:
 There is also a nontrivial bundle, $E = K$, the Klein bottle:
 ![Klein bottle](figures/klein-bottle.png)
 
-As in the earlier example involving the [[Möbius strip]], since $K$ is nonorientable, $T^2 \not\cong K$ and there are thus at least two distinct bundles of this type.
+As in the earlier example involving the [Möbius strip](Möbius%20strip), since $K$ is [nonorientable](orientable), $T^2 \not\cong K$ and there are thus at least two distinct bundles of this type.
 :::
 
 

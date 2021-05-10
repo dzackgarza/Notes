@@ -24,6 +24,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "d145f795361267c9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/orientable.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -90,7 +101,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/vector bundles.md",
+                "file": "zettelkasten/orientable.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/vector bundles.md"
+                "file": "zettelkasten/orientable.md"
               }
             }
           },
@@ -159,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/vector bundles.md",
+                "file": "zettelkasten/orientable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/vector bundles.md",
+                "file": "zettelkasten/orientable.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +249,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/vector bundles.md"
+                "file": "zettelkasten/orientable.md"
               }
             }
           }
@@ -249,8 +260,9 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "6151de6d45a3e0c4",
+  "active": "d145f795361267c9",
   "lastOpenFiles": [
+    "zettelkasten/orientable.md",
     "zettelkasten/vector bundles.md",
     "zettelkasten/Bundle.md",
     "zettelkasten/tangent bundle.md",
@@ -259,7 +271,6 @@
     "zettelkasten/Four Manifolds.md",
     "zettelkasten/Serre duality.md",
     "zettelkasten/Hirzebruch-Riemann-Roch.md",
-    "zettelkasten/Untitled 4.md",
-    "zettelkasten/Recommendations.md"
+    "zettelkasten/Untitled 4.md"
   ]
 }
