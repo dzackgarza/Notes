@@ -27,3 +27,20 @@ background-color: var(--text-accent-hover);
 .tag[href^="#inprogress"] {
   background-color: orange;
 }
+
+/* Cursor color in normal vim mode and opacity */
+.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor {
+  width: 0.5em;
+  background: #d65d0e;
+  opacity: 60% !important;
+}
+
+/*an active line highlight in vim normal mode */
+.cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
+  background-color: rgba(89, 75, 95, 0.99) !important;
+}
+
+/*if you want the highlight to present in both normal and insert mode of vim*/
+.CodeMirror-activeline .CodeMirror-linebackground{
+  background-color: rgba(89, 75, 95, 0.99) !important;
+}
