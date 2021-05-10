@@ -1,0 +1,1 @@
+The morphism $f : Y \to  X$ is **locally of finite type** if $X$ may be covered by affine opens $\spec B_i$ such that each $f\inv \spec B_i$ is covered by affine opens $\spec A_i$ where $A_i \in \Alg_{/B}^\fg$.

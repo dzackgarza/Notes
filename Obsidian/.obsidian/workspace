@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/scheme.md",
+            "file": "zettelkasten/finite type.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/finite type.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/scheme.md"
+                "file": "zettelkasten/finite type.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/finite type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/finite type.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/scheme.md"
+                "file": "zettelkasten/finite type.md"
               }
             }
           }
@@ -251,6 +251,7 @@
   },
   "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
+    "zettelkasten/finite type.md",
     "zettelkasten/scheme.md",
     "zettelkasten/Zariski tangent space.md",
     "zettelkasten/Algebra over a ring.md",
@@ -259,7 +260,6 @@
     "zettelkasten/l-adic representations.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/Stable homotopy.md",
-    "zettelkasten/equivariant stable homotopy theory.md",
-    "zettelkasten/Untitled 4.md"
+    "zettelkasten/equivariant stable homotopy theory.md"
   ]
 }

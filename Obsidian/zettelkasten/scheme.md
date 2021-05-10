@@ -12,4 +12,6 @@ aliases: ["schemes"]
 	- $\rank Df \geq N-n$ everywhere, where $Df = \tv{ \dd{f_i}{x_j}}$ is the matrix of partial derivatives.
 	- Equivalently, the dimension of the [Zariski tangent space](Zariski%20tangent%20space) at every point is *equal* to $n$.
 	- At singular points, the dimension of the tangent space *increases*.
-- Finite type: ?
+- [finite type](finite%20type)
+- Regular: 
+- Separated
