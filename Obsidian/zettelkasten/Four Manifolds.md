@@ -21,3 +21,4 @@
 -   What is the [blowup](blowup.md)?
 -   What is the [exceptional divisor](exceptional%20divisor.md)?
 -   What is the [strict transform](strict%20transform)?
+-   What is a [unimodular lattice](unimodular%20lattice)?

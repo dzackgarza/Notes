@@ -9,18 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Picard group.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "69bd510fdcb2d3ba",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/local system.md",
+            "file": "zettelkasten/Four Manifolds.md",
             "mode": "source"
           }
         }
@@ -90,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/local system.md",
+                "file": "zettelkasten/Four Manifolds.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/local system.md"
+                "file": "zettelkasten/Four Manifolds.md"
               }
             }
           },
@@ -159,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/local system.md",
+                "file": "zettelkasten/Four Manifolds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/local system.md",
+                "file": "zettelkasten/Four Manifolds.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/local system.md"
+                "file": "zettelkasten/Four Manifolds.md"
               }
             }
           }
@@ -249,17 +238,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "69bd510fdcb2d3ba",
+  "active": "dc3bbb41035be018",
   "lastOpenFiles": [
-    "zettelkasten/Untitled 4.md",
-    "zettelkasten/principal bundle.md",
     "zettelkasten/Four Manifolds.md",
+    "zettelkasten/principal bundle.md",
+    "zettelkasten/local system.md",
+    "zettelkasten/Picard group.md",
+    "zettelkasten/Untitled 4.md",
     "zettelkasten/Hermitian metric.md",
     "zettelkasten/Exceptional divisor.md",
     "zettelkasten/Blowup.md",
     "zettelkasten/Tautological bundle.md",
-    "zettelkasten/Hodge star.md",
-    "zettelkasten/Aatiyah-Singer Index Theorem.md",
-    "zettelkasten/Picard group.md"
+    "zettelkasten/Hodge star.md"
   ]
 }
