@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Learning.md",
-            "mode": "source"
+            "file": "00_Home.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "00_Home.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "00_Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "00_Home.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "dc9b887dae2f74c8",
   "lastOpenFiles": [
+    "00_Home.md",
     "zettelkasten/Learning.md",
     "zettelkasten/l-adic representations.md",
     "zettelkasten/Stable Homotopy Seminar.md",
@@ -248,7 +249,6 @@
     "zettelkasten/Untitled 4.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/Hodge-Tate theory.md",
-    "zettelkasten/Hodge-Tate cohomology.md",
-    "Quick_Notes/2021-04-21.md"
+    "zettelkasten/Hodge-Tate cohomology.md"
   ]
 }
