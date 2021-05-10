@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Papers to Read.md",
-            "mode": "source"
+            "file": "00_Home.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Papers to Read.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Papers to Read.md"
+                "file": "00_Home.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Papers to Read.md",
+                "file": "00_Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Papers to Read.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Papers to Read.md"
+                "file": "00_Home.md"
               }
             }
           }
@@ -240,9 +240,9 @@
   },
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
+    "00_Home.md",
     "zettelkasten/Papers to Read.md",
     "zettelkasten/Subjects/Algebraic Topology.md",
-    "00_Home.md",
     "zettelkasten/Learning.md",
     "zettelkasten/Topological cyclic homology.md",
     "zettelkasten/topological Hochschild homology.md",
