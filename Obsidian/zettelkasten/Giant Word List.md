@@ -14,7 +14,7 @@ aliases: ["Big list of words I don't know"]
 	- [[Langlands]] 
 	- [[Class field theory]]
 - [Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
-- [Bundle](Bundle.md)
+- [bundle](bundle.md)
 - [[Étale homotopy]]
 	- [[Brauer group]]
 	- [[Descent]]

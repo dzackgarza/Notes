@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md",
+            "file": "zettelkasten/Tautological bundle.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md",
+                "file": "zettelkasten/Tautological bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md"
+                "file": "zettelkasten/Tautological bundle.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md",
+                "file": "zettelkasten/Tautological bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md",
+                "file": "zettelkasten/Tautological bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md"
+                "file": "zettelkasten/Tautological bundle.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "dc3bbb41035be018",
   "lastOpenFiles": [
+    "zettelkasten/Tautological bundle.md",
+    "zettelkasten/Bundle.md",
     "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md",
     "zettelkasten/Orbifold.md",
     "zettelkasten/Subjects/Mapping Class Groups.md",
     "zettelkasten/surface bundles.md",
     "zettelkasten/Foliation.md",
     "zettelkasten/connection.md",
-    "zettelkasten/Bundle.md",
     "zettelkasten/Riemann-Roch.md",
-    "zettelkasten/Hirzebruch-Riemann-Roch.md",
-    "zettelkasten/metric.md"
+    "zettelkasten/Hirzebruch-Riemann-Roch.md"
   ]
 }

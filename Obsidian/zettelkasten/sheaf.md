@@ -1,4 +1,4 @@
-- [zettelkasten/Bundle](zettelkasten/Bundle.md): locally free sheaf?
+- [bundle](bundle.md): locally free sheaf?
 - [[Canonical sheaf]]
 - [[Structure sheaf]]
 - Reflexive sheaf

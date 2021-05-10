@@ -1,3 +1,7 @@
+---
+aliases: ["bundles"]
+---
+
 - Linearly independent sections: ?
 - [[Canonical bundle]] 
 - [[Universal bundle]]

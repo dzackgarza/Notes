@@ -1,6 +1,6 @@
 [../zettelkasten/Subjects/mapping class group](../zettelkasten/Subjects/mapping%20class%20group.md)
 
-Tags: #reading_notes 
+Tags: #notes
 
 # Part 2: Surface bundles, mapping class groups, moduli spaces, and cohomology
 
@@ -119,10 +119,10 @@ Some serious math, theorem of Eels-Earle 1969:
 
 - For surfaces $g\geq 2$, $\operatorname{Diff}_0(\Sigma_g)$ (the diffeos isotopic to the identity) is homotopy-equivalent to a point!
     - Note: can write mapping class group as Diff mod the path-component of the identity (i.e. it's the group of path components)
-    - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
-    - $\operatorname{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmuller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
+    - Uses [Beltrami equatiobn](Beltrami%20equatiobn), measurable [Riemann mapping theorem](Riemann%20mapping%20theorem), solving PDEs, some serious Math!
+    - $\operatorname{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is [Teichmüller space](Teichmüller%20space), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
-**Corollary**: we care about $\operatorname{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
+**Corollary**: we care about $\operatorname{Bdiff}$, [classifying space](../zettelkasten/classifying%20space.md) theory doesn't really see contractible stuff. So:
 $$
 \operatorname{Bdiff}^+ \Sigma_g \simeq \operatorname{BMod}\Sigma_g = K(\operatorname{Mod}\Sigma_g, 1)
 $$
@@ -138,7 +138,7 @@ $$
 
 Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of $[\pi_1 \wait, \pi_1 X]$(?)
 
-Somehow, this all comes down to uniformization.
+Somehow, this all comes down to [uniformization](../zettelkasten/uniformization.md).
 
 > Note: Reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately.
 
@@ -156,8 +156,9 @@ Are they conjugate in the mapping class group?
 If so, then the manifolds are the same. 
 If not, the bundles are not isomorphic, *but* they could be homeomorphic in some accidental different way.
 
-How to solve: the Thurston norm is computable. Need to enumerate all the ways of fibering, and find the minimal genus fibering. 
+How to solve: the [Thurston norm](Thurston%20norm) is computable. Need to enumerate all the ways of [fibering](fibering), and find the minimal genus fibering. 
 (Should be the same!) 
+
 Check how many ways there are of fibering. 
 Then check, for each fibering, are the monodromies the same? 
 At least one needs to be the same to be homeomorphic.
@@ -182,7 +183,7 @@ $$
 \tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B)).
 $$
 
-Any [[characteristic class]] is just an element of $H^*(\operatorname{BDiff}^+ \Sigma_g) = H^*(\operatorname{Mod} \Sigma_g)$, since every bundle will be a pullback of the universal bundle.
+Any [characteristic class](../zettelkasten/characteristic%20class.md) is just an element of $H^*(\operatorname{BDiff}^+ \Sigma_g) = H^*(\operatorname{Mod} \Sigma_g)$, since every bundle will be a pullback of the [universal bundle](universal%20bundle).
 
 Lots of papers about the [stable cohomology](stable%20cohomology) of the mapping class group, given by taking $g$ big enough. We know $\chi$ of the mapping class group, it grows superexponentially and we know polynomially-many. No known unstable classes in genus 5 or higher!!
 

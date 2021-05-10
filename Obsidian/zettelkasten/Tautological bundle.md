@@ -1,0 +1,1 @@
+Definition: over $\CP^n$, given by $\OO(-1)$ sending each point $x\in \CP^n$ to the line it spans in $\CC^{n+1}$.
