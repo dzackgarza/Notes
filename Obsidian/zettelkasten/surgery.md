@@ -7,8 +7,10 @@ aliases: ["surgery theory"]
 - Lück's Basic introduction to surgery theory
 
 - Recommended by Akram
-	- Using surgery theory to study [homotopy spheres](homotopy%20sphere): [Paper from Kervaire and Milnor](attachments/1970128.pdf) #papers #recommendations
-	- [Killing homotopy smoothly: paper from Milnor](https://www.maths.ed.ac.uk/~v1ranick/papers/milnorsurg.pdf) #papers #recommendations 
+	- Using surgery theory to study [homotopy spheres](homotopy%20sphere): [paper from Kervaire and Milnor](attachments/1970128.pdf) 
+	#papers #recommendations
+	- Killing homotopy smoothly: [paper from Milnor](https://www.maths.ed.ac.uk/~v1ranick/papers/milnorsurg.pdf) 
+	#papers #recommendations 
 
 # Motivation: CW Cell Attachment
 
@@ -22,7 +24,7 @@ Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong \DD^
 This doesn't "see" the smooth structure, and CW complexes can have singular points, e.g. $S^2 = e^0 \disjoint e^2$.
 
 **Solution**:
-Use [tubular neighborhood](tubular%20neighborhood)
+Use [tubular neighborhoods](tubular%20neighborhood), for each sphere, thicken with a disc of its codimension.
 
 # Definitions
 

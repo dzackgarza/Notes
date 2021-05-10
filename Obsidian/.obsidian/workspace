@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "zettelkasten/surgery.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -131,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274
+    "width": 1090.0074996948242
   },
   "right": {
     "id": "a1502ca3cb933e96",
