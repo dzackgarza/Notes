@@ -13,28 +13,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "6151de6d45a3e0c4",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/vector bundles.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "d145f795361267c9",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/orientable.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -101,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/orientable.md",
+                "file": "zettelkasten/framed.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -136,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/orientable.md"
+                "file": "zettelkasten/framed.md"
               }
             }
           },
@@ -170,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/orientable.md",
+                "file": "zettelkasten/framed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/orientable.md",
+                "file": "zettelkasten/framed.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/orientable.md"
+                "file": "zettelkasten/framed.md"
               }
             }
           }
@@ -260,13 +238,13 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "d145f795361267c9",
+  "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
+    "zettelkasten/framed.md",
+    "zettelkasten/Bundle.md",
     "zettelkasten/orientable.md",
     "zettelkasten/vector bundles.md",
-    "zettelkasten/Bundle.md",
     "zettelkasten/tangent bundle.md",
-    "zettelkasten/framed.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/Four Manifolds.md",
     "zettelkasten/Serre duality.md",

@@ -4,8 +4,7 @@ aliases: ["framing", "parallelizable"]
 
 # References
 
-- Recommendations from Akram: 
-	- Milnor-Stasheff p.148 12-b and Section 12
+> Milnor-Stasheff p.148 12-b and Section 12
 
 # Definitions
 
@@ -15,8 +14,6 @@ If the tangent bundle of a manifold is trivial, the manifold is said to be **par
 
 - Parallelizable/framed: a trivialization of the tangent bundle.
 	- Equivalently, the [principal](principal%20bundle.md) [frame bundle](frame%20bundle) has a smooth [global section](section%20of%20a%20bundle.md).
-
-
 
 
 ## Results
