@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Bundle.md",
+            "file": "zettelkasten/vector bundles.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Bundle.md",
+                "file": "zettelkasten/vector bundles.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Bundle.md"
+                "file": "zettelkasten/vector bundles.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Bundle.md",
+                "file": "zettelkasten/vector bundles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Bundle.md",
+                "file": "zettelkasten/vector bundles.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Bundle.md"
+                "file": "zettelkasten/vector bundles.md"
               }
             }
           }
@@ -251,15 +251,15 @@
   },
   "active": "6151de6d45a3e0c4",
   "lastOpenFiles": [
-    "zettelkasten/Bundle.md",
     "zettelkasten/vector bundles.md",
+    "zettelkasten/Bundle.md",
+    "zettelkasten/tangent bundle.md",
     "zettelkasten/framed.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/Four Manifolds.md",
     "zettelkasten/Serre duality.md",
     "zettelkasten/Hirzebruch-Riemann-Roch.md",
     "zettelkasten/Untitled 4.md",
-    "zettelkasten/Recommendations.md",
-    "zettelkasten/Classical homological algebra.md"
+    "zettelkasten/Recommendations.md"
   ]
 }
