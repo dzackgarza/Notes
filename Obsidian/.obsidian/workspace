@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/principal bundle.md",
+            "file": "zettelkasten/local system.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/principal bundle.md",
+                "file": "zettelkasten/local system.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/principal bundle.md"
+                "file": "zettelkasten/local system.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/principal bundle.md",
+                "file": "zettelkasten/local system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/principal bundle.md",
+                "file": "zettelkasten/local system.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/principal bundle.md"
+                "file": "zettelkasten/local system.md"
               }
             }
           }
@@ -251,6 +251,7 @@
   },
   "active": "69bd510fdcb2d3ba",
   "lastOpenFiles": [
+    "zettelkasten/Untitled 4.md",
     "zettelkasten/principal bundle.md",
     "zettelkasten/Four Manifolds.md",
     "zettelkasten/Hermitian metric.md",
@@ -259,7 +260,6 @@
     "zettelkasten/Tautological bundle.md",
     "zettelkasten/Hodge star.md",
     "zettelkasten/Aatiyah-Singer Index Theorem.md",
-    "zettelkasten/Picard group.md",
-    "zettelkasten/Divisor.md"
+    "zettelkasten/Picard group.md"
   ]
 }
