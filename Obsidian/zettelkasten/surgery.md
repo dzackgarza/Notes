@@ -1,5 +1,5 @@
 ---
-aliases: ["surgery theory", "surger"]
+aliases: ["surgery theory"]
 ---
 
 # References
@@ -7,8 +7,8 @@ aliases: ["surgery theory", "surger"]
 - Lück's Basic introduction to surgery theory
 
 - Recommended by Akram
-	- Using surgery theory to study [homotopy spheres](homotopy%20sphere): [Paper Kervaire and Milnor](attachments/1970128.pdf) #papers #recommendations
-	- [Killing homotopy smoothly](https://www.maths.ed.ac.uk/~v1ranick/papers/milnorsurg.pdf) #papers #recommendations 
+	- Using surgery theory to study [homotopy spheres](homotopy%20sphere): [Paper from Kervaire and Milnor](attachments/1970128.pdf) #papers #recommendations
+	- [Killing homotopy smoothly: paper from Milnor](https://www.maths.ed.ac.uk/~v1ranick/papers/milnorsurg.pdf) #papers #recommendations 
 
 # Motivation: CW Cell Attachment
 
