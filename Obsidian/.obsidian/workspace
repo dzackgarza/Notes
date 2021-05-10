@@ -13,6 +13,17 @@
             "mode": "preview"
           }
         }
+      },
+      {
+        "id": "b08321803f846f1e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Learning.md",
+            "mode": "preview"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/Learning.md"
               }
             }
           },
@@ -148,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Learning.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/Learning.md"
               }
             }
           }
@@ -238,10 +249,10 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "320d4aa5e59f2a2d",
+  "active": "b08321803f846f1e",
   "lastOpenFiles": [
-    "00_Home.md",
     "zettelkasten/Learning.md",
+    "00_Home.md",
     "zettelkasten/Topological cyclic homology.md",
     "zettelkasten/topological Hochschild homology.md",
     "Quick_Notes/2021-04-26.md",

@@ -1,7 +1,6 @@
 # Review
 
 - [Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo 
-
 - [Qual Review](Qual%20Review)
 
 # Algebraic Geometry
@@ -10,20 +9,15 @@ See [Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 > Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly
 
 - [Harvard Math 281 Lecture Notes](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
-
 - [Hartshorne on Deformation Theory](https://math.berkeley.edu/~robin/math274root.pdf)
-
 - [MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
-
 - [MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
-
 - [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
 ## Schemes
 See [schemes](scheme.md)
 
 - [https://etale.site/livetex/256a.pdf](https://etale.site/livetex/256a.pdf)
-
 - [https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
 
 ## Stacks
@@ -40,11 +34,9 @@ See [stacks](Stacks.md)
 ## Floer and Symplectic
 See [Floer homology](Floer%20homology) and [Symplectic geometry](Symplectic%20geometry.md)
 
-[Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
-
-[Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
-
-[Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
+- [Something?](https://math.berkeley.edu/~auroux/papers/lec-nantes.pdf)
+- [Full Courses](https://www.notion.so/Full-Courses-5c930f2023a3448aa43b6396e192c4b5)
+- [Just Resources](https://www.notion.so/Just-Resources-8d73c2c7b6374931a1e2fa27665e071f)
 
 # Number Theory
 
@@ -75,42 +67,34 @@ Resources
 
 ## Lie Theory
 
-[Problem sets](http://www.math.stonybrook.edu/~jstarr/M552s19/ps.html)
-
+- [Problem sets](http://www.math.stonybrook.edu/~jstarr/M552s19/ps.html)
 
 ## Categorical Rep Theory
 
-[MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
-
-[CMSA conference on relations to algebraic geometry and mathematical physics](https://www.youtube.com/watch?v=kgu8L6paKNs&list=PL0NRmB0fnLJQiZyGUJyd35rj80k_EgUyt)
+- [MSRI Summer school on Soergel Bimodules](https://www.msri.org/summer_schools/790)
+- [CMSA conference on relations to algebraic geometry and mathematical physics](https://www.youtube.com/watch?v=kgu8L6paKNs&list=PL0NRmB0fnLJQiZyGUJyd35rj80k_EgUyt)
 
 ## Representation Stability
 
-[MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
-
+- [MSRI Summer School on Representation Stability](https://www.msri.org/summer_schools/850)
 
 # Arithmetic Geometry
 
-[https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
-
-[Seminar talks on the Weil conjectures](https://math.mit.edu/nt/old/stage_f20.html)
-
-[Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
+- [https://math.mit.edu/nt/index_stage](https://math.mit.edu/nt/index_stage)
+- [Seminar talks on the Weil conjectures](https://math.mit.edu/nt/old/stage_f20.html)
+- [Seminar on unlikely intersections and o-minimality](https://math.mit.edu/nt/old/stage_s19.html)
 
 ## Abelian Varieties
 
-[http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
-
-[Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
-
+- [http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
+- [Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
 
 # Algebraic Topology
 
 See the Handbook of Homotopy Theory
 
-[Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
-
-[Notes on Goodwillie Calculus](https://etale.site/livetex/goodwillie.pdf)
+- [Lectures on Homological Algebra](https://www.uwo.ca/math/faculty/jardine/courses/homalg/lectures_on_homological_algebra.html)
+- [Notes on Goodwillie Calculus](https://etale.site/livetex/goodwillie.pdf)
 
 ## Spectral Sequences
 
@@ -132,84 +116,64 @@ Some stuff from Morgan:
 
 ## Stable Homotopy Theory
 
-[Summer School on Modern Algebraic Topology](https://www.msri.org/workshops/695)
-
+- [Summer School on Modern Algebraic Topology](https://www.msri.org/workshops/695)
 - [Homotopy Theory](http://jardine.math.uwo.ca/HomTh/)
-
 - [MA 751: Topics in Topology](http://www.ms.uky.edu/~kate/teaching/f19_751.html)
-
 - [Something?](http://math.colorado.edu/topology/plan-spring2017.pdf)
-
 - [Something else?](https://cpb-us-e1.wpmucdn.com/s.wayne.edu/dist/0/60/files/2019/11/Beaudry-PartI-annotated.pdf)
-
-[Equivariant stable homotopy and p-adic Hodge theory](http://www.birs.ca/events/2020/5-day-workshops/20w5217/videos)
-
-[Seminar on formal groups and p-divisible groups](https://math.mit.edu/nt/old/stage_f19.html)
+- [Equivariant stable homotopy and p-adic Hodge theory](http://www.birs.ca/events/2020/5-day-workshops/20w5217/videos)
+- [Seminar on formal groups and p-divisible groups](https://math.mit.edu/nt/old/stage_f19.html)
+- [Localization of categories](https://www.youtube.com/watch?v=jCSEA1nfffY&list=PLYShsxzWr0U3EZobFoA7sJcpjip8zXzui)
 
 # K Theory
 
-[Survey article from Inna](https://people.math.rochester.edu/faculty/doug/otherpapers/zakharevich.pdf)
-
-[Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
-
-![Recommended reading from Atiyah and Park](attachments/Pasted%20image%2020210506154540.png)
-
-[Dugger's geometric introduction to K theory](https://pages.uoregon.edu/ddugger/kgeom.pdf)
-
-[Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
-
-[U Chicago Algtop Workshop (including Cobordism)](http://math.uchicago.edu/~chicagotopology2/)
+- [Survey article from Inna](https://people.math.rochester.edu/faculty/doug/otherpapers/zakharevich.pdf)
+- [Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
+- ![Recommended reading from Atiyah and Park](attachments/Pasted%20image%2020210506154540.png)
+- [Dugger's geometric introduction to K theory](https://pages.uoregon.edu/ddugger/kgeom.pdf)
+- [Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
+- [U Chicago Algtop Workshop (including Cobordism)](http://math.uchicago.edu/~chicagotopology2/)
 
 # Mirror Symmetry
 
-[Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
-
-[CMSA 2020 Workshop on mirror symmetry (12 videos)](https://www.youtube.com/watch?v=rZhCfvjhwDI&list=PL0NRmB0fnLJSmnJqrOqgiivJQ_BWnlfXm)
-
-[Conference on homological mirror symmetry](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQRXH3HKos6e4bu8IyfmZCY)
-
+- [Auroux's introduction](https://arxiv.org/pdf/1301.7056.pdf)
+- [CMSA 2020 Workshop on mirror symmetry (12 videos)](https://www.youtube.com/watch?v=rZhCfvjhwDI&list=PL0NRmB0fnLJSmnJqrOqgiivJQ_BWnlfXm)
+- [Conference on homological mirror symmetry](https://www.youtube.com/playlist?list=PL0NRmB0fnLJQRXH3HKos6e4bu8IyfmZCY)
 
 # Motivic Stuff
-![Roadmap to learning motivic homotopy theory](attachments/roadmap.pdf)
+- [Roadmap to learning motivic homotopy theory](attachments/roadmap.pdf)
 
 ## Homotopy of Schemes
 
 - [Something?](http://people.math.harvard.edu/~gaitsgde/GL/)
-
 - Twitter rec: [https://twitter.com/jacobhegna/status/1373792370135867392?s=20](https://twitter.com/jacobhegna/status/1373792370135867392?s=20)
 
 
 # Derived Geometry
 
-[CMSA series on derived algebraic and differential geometry](https://www.youtube.com/watch?v=qgxq7xnJJvI&list=PL0NRmB0fnLJRk75jsBXXt7J8TCWY9EpI4)
+- [CMSA series on derived algebraic and differential geometry](https://www.youtube.com/watch?v=qgxq7xnJJvI&list=PL0NRmB0fnLJRk75jsBXXt7J8TCWY9EpI4)
 
-![Workshop on derived moduli spaces](attachments/essen.pdf)
-![Something? Revisit](attachments/moduli.pdf)
+- ![Workshop on derived moduli spaces](attachments/essen.pdf)
+- ![Something? Revisit](attachments/moduli.pdf)
 
 ## Higher Algebra and Infinity Categories
 
-[Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
-
-[MSRI workshops on Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
-
+- [Higher Algebra courses](https://www.youtube.com/watch?v=3IjAy0gHRyY)
+- [MSRI workshops on Infinity Categories](https://www.msri.org/workshops/862/schedules/25956)
 - [MSRI workshop on higher categories and categorification](https://www.msri.org/workshops/907)
-
-[Higher categories student seminar: notes](https://etale.site/livetex/highercats.pdf)
+- [Higher categories student seminar: notes](https://etale.site/livetex/highercats.pdf)
 
 ## Hochschild homology
-See [Hochschild homology](Hochschild%20homology.md)
+- See [Hochschild homology](Hochschild%20homology.md)
 
 ## Topological Cyclic Homology
-See [topological Hochschild homology](topological%20Hochschild%20homology.md) and ![21 Video course](Topological%20cyclic%20homology.md#^d71609)
-
+- See [topological Hochschild homology](topological%20Hochschild%20homology.md) 
+- ![21 Video course](Topological%20cyclic%20homology.md#^d71609)
 
 ## Langlands
-See [Langlands](Langlands.md)
-
-![Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve](attachments/Geometric%20Langlands,%20Perfectoid%20Spaces,%20Fargues-Fontaine%20Overview.pdf)
-
-![What is the Langlands program?](attachments/Friedberg%20-%202018%20-%20WHAT%20IS%20...the%20Langlands%20Program.pdf)
-
+- See [Langlands](Langlands.md)
+- [Geometric Langlands, Perfectoid Spaces, and the Fargues-Fontaine Curve](attachments/Geometric%20Langlands,%20Perfectoid%20Spaces,%20Fargues-Fontaine%20Overview.pdf)
+- [What is the Langlands program?](attachments/Friedberg%20-%202018%20-%20WHAT%20IS%20...the%20Langlands%20Program.pdf)
 - [MSRI Summer School on automorphic forms and the Langlands program](https://www.msri.org/summer_schools/792)
 	- [Kevin' Buzzard's lectures on Youtube](https://www.youtube.com/playlist?list=PLhsb6tmzSpiysoRR0bZozub-MM0k3mdFR)
 
@@ -218,29 +182,19 @@ See [Langlands](Langlands.md)
 
 ## Prism-y p-adic-y Hodge-Theory-y Stuff
 
-[Seminar on crystalline and prismatic cohomology](https://math.mit.edu/nt/index_stage)
-
-[Seminar on p-adic modular forms](https://math.mit.edu/nt/old/stage_s20.html)
-
-[Seminar on p-adic Hodge theory](https://math.mit.edu/nt/old/stage_f18.html)
-
+- [Seminar on crystalline and prismatic cohomology](https://math.mit.edu/nt/index_stage)
+- [Seminar on p-adic modular forms](https://math.mit.edu/nt/old/stage_s20.html)
+- [Seminar on p-adic Hodge theory](https://math.mit.edu/nt/old/stage_f18.html)
 
 ## Field Theories
 
-[Lecture series (34 videos) on Topology and Field Theories](https://www.youtube.com/playlist?list=PL80A29806A2EA6B1A)
-
-[Fields Summer School](https://video-archive.fields.utoronto.ca/list/event/1538)
-
+- [Lecture series (34 videos) on Topology and Field Theories](https://ww-w.youtube.com/playlist?list=PL80A29806A2EA6B1A)
+- [Fields Summer School](https://video-archive.fields.utoronto.ca/list/event/1538)
 
 ## Full Courses
 
-[Topological Cyclic Homology](https://www.notion.so/Topological-Cyclic-Homology-0db929d8a26943879bb36c916a3877ff)
-
-[Higher Algebra](https://www.notion.so/Higher-Algebra-bfa1645467b2479a979065ab9f48f168)
-
-[Derived Algebraic Geometry](https://www.notion.so/Derived-Algebraic-Geometry-3ee38d9dcb0147c59d5b151669216941)
-
-
-
+- [Topological Cyclic Homology](https://www.notion.so/Topological-Cyclic-Homology-0db929d8a26943879bb36c916a3877ff)
+- [Higher Algebra](https://www.notion.so/Higher-Algebra-bfa1645467b2479a979065ab9f48f168)
+- [Derived Algebraic Geometry](https://www.notion.so/Derived-Algebraic-Geometry-3ee38d9dcb0147c59d5b151669216941)
 
 # End of Doc
