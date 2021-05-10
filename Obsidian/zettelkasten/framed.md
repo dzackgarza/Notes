@@ -34,7 +34,13 @@ Let $M = S^1$, then the tangent bundle yields a rank 1 vector bundle
 $$
 \RR \to TM \to M
 $$
-We can find a nonzero global section: the vector field $s = -y\dx + x\dy$ on $
+We can find a nonzero global section: the vector field 
+$$
+s(x, y) := -y\dx + x\dy \quad\in \Gamma( T\RR^2 )
+$$ 
+restricted to $S^1$:
+
+![](attachments/Pasted%20image%2020210510004301.png)
 
 :::
 
