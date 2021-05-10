@@ -127,7 +127,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
   --text-a-hover: var(--frost2);
   --text-mark: var(--yellow);
   --pre-code: var(--dark1);
-  --text-highlight-bg: var(--dark3);
+  --text-highlight-bg: var(--light0);
   --interactive-accent: var(--frost0);
   --interactive-before: var(--dark3);
   --background-modifier-border: var(--dark2);
@@ -149,19 +149,19 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
 
 .cm-header-2,
 .markdown-preview-section h2 {
-  font-size: 12px;
+  font-size: 22px;
   color: rgba(0,80,150,1);
 }
 
 .cm-header-3,
 .markdown-preview-section h3 {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--text-title-h3);
 }
 
 .cm-header-4,
 .markdown-preview-section h4 {
-  font-size: 20px;
+  font-size: 12px;
   color: var(--text-title-h4);
 }
 
@@ -169,6 +169,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
 .cm-header-6,
 .markdown-preview-section h5,
 .markdown-preview-section h6 {
-  font-size: 18px;
+  font-size: 8px;
   color: var(--text-title-h5);
 }
