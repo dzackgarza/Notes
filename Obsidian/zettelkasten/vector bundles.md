@@ -51,10 +51,7 @@ There is also a nontrivial bundle, $E = K$, the Klein bottle:
 ![Klein bottle](figures/klein-bottle.png)
 
 As in the earlier example involving the Möbius strip, since $K$ is nonorientable, $T^2 \not\cong K$ and there are thus at least two distinct bundles of this type.
-
 :::
 
-:::{.remark}
-A section of the tangent bundle $TM$ is equivalent to a _vector field_ on $M$.
-:::
+
 

@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/vector bundles.md",
+            "file": "zettelkasten/Bundle.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/vector bundles.md",
+                "file": "zettelkasten/Bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/vector bundles.md"
+                "file": "zettelkasten/Bundle.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/vector bundles.md",
+                "file": "zettelkasten/Bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/vector bundles.md",
+                "file": "zettelkasten/Bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/vector bundles.md"
+                "file": "zettelkasten/Bundle.md"
               }
             }
           }
@@ -251,8 +251,8 @@
   },
   "active": "6151de6d45a3e0c4",
   "lastOpenFiles": [
-    "zettelkasten/vector bundles.md",
     "zettelkasten/Bundle.md",
+    "zettelkasten/vector bundles.md",
     "zettelkasten/framed.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/Four Manifolds.md",
