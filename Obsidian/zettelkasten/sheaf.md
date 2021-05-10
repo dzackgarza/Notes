@@ -3,4 +3,4 @@
 - [[Structure sheaf]]
 - Reflexive sheaf
 - [stalk](stalk)
-- [[section]]
+- [[section of a sheaf]]

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/section.md",
+            "file": "zettelkasten/scheme.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/section.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/section.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/section.md",
+                "file": "zettelkasten/scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/section.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/section.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           }
@@ -240,9 +240,9 @@
   },
   "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
+    "zettelkasten/scheme.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/sheaf.md",
-    "zettelkasten/scheme.md",
     "zettelkasten/finite type.md",
     "zettelkasten/Zariski tangent space.md",
     "zettelkasten/Algebra over a ring.md",

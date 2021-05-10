@@ -16,3 +16,4 @@ aliases: ["schemes"]
 - Regular: 
 - Separated:
 - [sheaf](sheaf.md)
+- [section](section%20of%20a%20sheaf.md)
