@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Zariski tangent space.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Zariski tangent space.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Zariski tangent space.md",
+                "file": "zettelkasten/scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Zariski tangent space.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Zariski tangent space.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           }
@@ -249,10 +249,10 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "e2719e01b4b7d296",
+  "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
-    "zettelkasten/Zariski tangent space.md",
     "zettelkasten/scheme.md",
+    "zettelkasten/Zariski tangent space.md",
     "zettelkasten/Algebra over a ring.md",
     "00_Home.md",
     "zettelkasten/Learning.md",
