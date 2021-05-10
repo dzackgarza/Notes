@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "c08f6ccf28f55368",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/blowup.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md",
+                "file": "zettelkasten/blowup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md"
+                "file": "zettelkasten/blowup.md"
               }
             }
           },
@@ -148,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md",
+                "file": "zettelkasten/blowup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md",
+                "file": "zettelkasten/blowup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md"
+                "file": "zettelkasten/blowup.md"
               }
             }
           }
@@ -238,8 +249,9 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "397910584b027d11",
+  "active": "c08f6ccf28f55368",
   "lastOpenFiles": [
+    "zettelkasten/blowup.md",
     "zettelkasten/Four Manifolds.md",
     "zettelkasten/characteristic class.md",
     "zettelkasten/principal bundle.md",
@@ -248,7 +260,6 @@
     "zettelkasten/Untitled 4.md",
     "zettelkasten/Hermitian metric.md",
     "zettelkasten/Exceptional divisor.md",
-    "zettelkasten/Blowup.md",
-    "zettelkasten/Tautological bundle.md"
+    "zettelkasten/Blowup.md"
   ]
 }
