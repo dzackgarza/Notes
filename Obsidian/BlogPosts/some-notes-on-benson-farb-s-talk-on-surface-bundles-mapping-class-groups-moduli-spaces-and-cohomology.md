@@ -6,9 +6,7 @@ Tags: #reading_notes
 
 > Reference: 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
 
-See [Surface bundle](Surface%20bundle).
-
-- Talk about the theory surface bundles.
+- Talk about the theory [surface bundles](surface%20bundles).
   - This talk: not so much related to his personal work!
   - Will revisit
 
@@ -28,14 +26,14 @@ Every 3-manifold that fibers over the circle is of this form! Why? Can remove a 
 
 Another way to build bundles: take a representation $\rho: \pi_1 B \to \operatorname{Diff}(\Sigma_g)$, let $$E = \tilde B \cross \Sigma_g / (x,y) \sim (g.x, \rho(g)(y))$$ (standard construction) where $\tilde B$ is the universal cover of $B$.
 
-Generalizes previous example: take real line cross surface and mod out by deck transformations.
+Generalizes previous example: take real line cross surface and mod out by [deck transformations](deck%20transformations).
 
-Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat connections.
+Such bundles are called [[flat]] $\Sigma_g$ bundles, exactly those which admit a [flat connection](flat%20connection).
 
 > Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. 
 > Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. 
-> Flat means curvature vanishes is equivalent to Frobenius integrability theorem -- the 2-plane is integrable. 
-> So curvature measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a foliation".
+> Flat means curvature vanishes is equivalent to [Frobenius integrability theorem](Frobenius%20integrability%20theorem) -- the 2-plane is integrable. 
+> So [curvature](../zettelkasten/curvature.md) measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a [../zettelkasten/foliate](../zettelkasten/foliate.md)".
 
 One organizing problem: classify surface bundles over a fixed closed base manifold up to
 
@@ -53,7 +51,9 @@ One organizing problem: classify surface bundles over a fixed closed base manifo
 
 B.F. proved algorithmic computability for bundle isomorphisms, but homeomorphisms and even fiberwise homeomorphisms are generally unsolvable.
 
-Why study $\Sigma_g$ bundles?
+## Why study $\Sigma_g$ bundles?
+
+^1f6c50
 
 1. The simplest nonlinear bundle theory (i.e. structure group is not just $\GL(n)$, it is $S^1$)
 

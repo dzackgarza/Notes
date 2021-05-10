@@ -2,6 +2,8 @@
 aliases: ["Levi-Cevita connection", "affine connection"]
 ---
 
+See also [flat connection](flat%20connection)
+
 # Motivations
 
 - Provides lifts of curves in $M$ to curves in $\Frame(M)$.

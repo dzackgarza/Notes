@@ -3,7 +3,7 @@
 - [[Configuration space]]
 - [[Train track]]
 - [[Sutured manifold]]
-- [[Foliation]]
+- [[foliate]]
 - [[Dehn twist]]
 - [Contact](zettelkasten/Subjects/Contact.md) and [[Contact Structure]]
 - [[Symplectic structure]]
