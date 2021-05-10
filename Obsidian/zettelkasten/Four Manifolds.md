@@ -2,3 +2,5 @@
 -   What is [Hirzebruch-Riemann-Roch](Hirzebruch-Riemann-Roch)?
 -   How is $\\mathcal{O}(n)$ defined?
 -   What is a Kahler manifold?
+-   What is $A^{p, q}$?
+-   How is Dolbeaut cohomology defined?
