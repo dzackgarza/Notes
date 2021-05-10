@@ -1,11 +1,12 @@
 [../zettelkasten/Subjects/Mapping Class Groups](../zettelkasten/Subjects/Mapping%20Class%20Groups.md)
 
-Tags: #topology #mapping_class_groups
+Tags: #reading_notes 
 
 # Part 2: Surface bundles, mapping class groups, moduli spaces, and cohomology
 
-> 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
+> Reference: 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
 
+See [Surface bundle](Surface%20bundle).
 
 - Talk about the theory surface bundles.
   - This talk: not so much related to his personal work!
