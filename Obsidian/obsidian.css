@@ -89,3 +89,87 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
 /* hide all html tags -- IT IS COMMENTED OUT BY DEFAULT */
 /* div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag{ display: none; } */
 
+:root {
+  --dark0: #2e3440;
+  --dark1: #3b4252;
+  --dark2: #434c5e;
+  --dark3: #4c566a;
+
+  --light0: #d8dee9;
+  --light1: #e5e9f0;
+  --light2: #eceff4;
+
+  --frost0: #8fbcbb;
+  --frost1: #88c0d0;
+  --frost2: #81a1c1;
+  --frost3: #5e81ac;
+
+  --red: #bf616a;
+  --orange: #d08770;
+  --yellow: #ebcb8b;
+  --green: #a3be8c;
+  --purple: #b48ead;
+}
+
+.theme-dark,
+.theme-light {
+  --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
+  --text-normal: var(--light2);
+  --text-faint: rgba(255, 255, 255, 0.2);
+  --text-muted: var(--light0);
+  --text-title-h1: var(--purple);
+  --text-title-h2: var(--orange);
+  --text-title-h3: var(--yellow);
+  --text-title-h4: var(--green);
+  --text-title-h5: var(--red);
+  --text-link: var(--frost0);
+  --text-a: var(--frost3);
+  --text-a-hover: var(--frost2);
+  --text-mark: var(--yellow);
+  --pre-code: var(--dark1);
+  --text-highlight-bg: var(--dark3);
+  --interactive-accent: var(--frost0);
+  --interactive-before: var(--dark3);
+  --background-modifier-border: var(--dark2);
+  --text-accent: var(--orange);
+  --interactive-accent-rgb: var(--orange);
+  --inline-code: var(--frost1);
+  --code-block: var(--frost1);
+  --vim-cursor: var(--orange);
+  --text-selection: rgba(30, 150, 220, 0.2);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: transparent;
+}
+
+.cm-header-1,
+.markdown-preview-section h1 {
+  font-size: 34px;
+  font-weight:bold;
+  color: rgab(0,0,0,1);
+}
+
+.cm-header-2,
+.markdown-preview-section h2 {
+  font-size: 26px;
+  color: var(--text-title-h2);
+}
+
+.cm-header-3,
+.markdown-preview-section h3 {
+  font-size: 22px;
+  color: var(--text-title-h3);
+}
+
+.cm-header-4,
+.markdown-preview-section h4 {
+  font-size: 20px;
+  color: var(--text-title-h4);
+}
+
+.cm-header-5,
+.cm-header-6,
+.markdown-preview-section h5,
+.markdown-preview-section h6 {
+  font-size: 18px;
+  color: var(--text-title-h5);
+}
