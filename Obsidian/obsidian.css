@@ -14,6 +14,7 @@
 .tag:hover {
 color: white;
 background-color: var(--text-accent-hover);
+
 }
 .tag[href^="#obsidian"] {
   background-color: #4d3ca6;
@@ -21,10 +22,10 @@ background-color: var(--text-accent-hover);
 .tag[href^="#todo"] {
   background-color: red;
 }
-.tag[href^="#complete"] {
-  background-color: green;
+.tag[href^="#papers"] {
+  background-color: rgba(0, 100, 100, 0.2) !important;
 }
-.tag[href^="#inprogress"] {
+.tag[href^="#recommendations"] {
   background-color: orange;
 }
 
@@ -143,7 +144,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
 
 .cm-header-1,
 .markdown-preview-section h1 {
-  font-size: 74px;
+  font-size: 44px;
   color: rgba(100,0,0,1);
 }
 

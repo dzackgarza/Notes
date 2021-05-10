@@ -1,21 +1,27 @@
 ---
-aliases: ["surgery"]
+aliases: ["surgery theory", "surger"]
 ---
 
-Reference: Lück's Basic introduction to surgery theory
+# References
+
+- Lück's Basic introduction to surgery theory
+
+- Recommended by Akram
+	- Using surgery theory to study [homotopy spheres](homotopy%20sphere): [Paper Kervaire and Milnor](attachments/1970128.pdf) #papers #recommendations
+	- [Killing homotopy smoothly](https://www.maths.ed.ac.uk/~v1ranick/papers/milnorsurg.pdf) #papers #recommendations 
 
 # Motivation: CW Cell Attachment
 
-Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong D^n$ is an $n\dash$cell and $\phi: S^{n-1} \to X$ is the characteristic/attaching map.
+Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong \DD^n$ is an $n\dash$cell and $\phi: S^{n-1} \to X$ is the characteristic/attaching map.
 
-> Remark: Why $S^{n-1}$? Really it's $\bd e^n = \bd D^n = S^{n-1}$.
+> Remark: Why $S^{n-1}$? This just comes from the fact that $\bd e^n = \bd \DD^n = S^{n-1}$.
 
 ![](2020-02-05-00-22-18.png)
 
-Problem:
-This doesn't "see" the smooth structure, and CW complexes can have singular points (e.g. $S^2 = e^0 \disjoint e^2$.
+**Problem**:
+This doesn't "see" the smooth structure, and CW complexes can have singular points, e.g. $S^2 = e^0 \disjoint e^2$.
 
-Solution:
+**Solution**:
 Use [tubular neighborhood](tubular%20neighborhood)
 
 # Definitions

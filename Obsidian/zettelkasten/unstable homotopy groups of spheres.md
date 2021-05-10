@@ -25,7 +25,7 @@ Changing the stable framing amounts to adding something in the [image of J](J-ho
 
 We don't know $\coker(J)$ in high dimensions, so we don't know the order of $\theta_n/ \bP_{n+1}$. But [[Serre's finiteness theorem]] for the stable stems tells us that $Θ_n/bP_{n+1}$ is finite!
 
-The subgroup $\bP_{n+1}$ is analyzed via [Surgery Theory](Surgery%20Theory)
+The subgroup $\bP_{n+1}$ is analyzed via [surgery](surgery.md)
 and the [h-cobordism theorem](h-cobordism%20theorem.md). There's a nice summary in Lück's Basic introduction to surgery theory.
 
 We have $\bP_{odd} = 0$. There's a formula for $\bP_{4p}$ involving [Bernoulli](Bernoulli%20numbers) numerators; this comes from a known (thanks to Adams) part of the stable stems, namely, $\im(J)$.
