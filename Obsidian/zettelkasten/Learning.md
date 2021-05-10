@@ -27,6 +27,8 @@ See [stacks](Stacks.md)
 
 # Geometric Topology
 
+[MSRI workshop on low-dimensional topology](https://www.msri.org/workshops/375)
+
 ## Kirby Calculus
 - [Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
 	- Take notes on videos #todo #typesetting
