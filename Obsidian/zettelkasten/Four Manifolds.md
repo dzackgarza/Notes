@@ -8,3 +8,12 @@
 -   What is the [[symboll]] of an operator?
 -   What is an [[elliptic complex]]?
 -   What is the [Aatiyah-Singer Index Theorem](Aatiyah-Singer%20Index%20Theorem)?
+-   What is the [Chern class](Chern%20class)?
+-   What is the [Chern character](Chern%20character)?
+-   What are [Chern roots](Chern%20roots)?
+-   What is the [Todd class](Todd%20class)?
+-   What is the [Euler class](Euler%20class.md)?
+-   What is the [Laplacian](Laplacian)?
+-   What is a [Hermitian metric](Hermitian%20metric)?
+-   What is the [Hodge star](Hodge%20star)?
+-   What is the [genus formula](genus%20formula)?
