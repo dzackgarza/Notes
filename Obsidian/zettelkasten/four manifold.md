@@ -1,7 +1,12 @@
--  What is the [tautological bundle](tautological%20bundle.md)?
--     What is [Serre duality](Serre%20duality)?
+---
+aliases: ["four manifolds", "4-manifold", "4-manifolds"]
+---
+
+# Review Terms
+-   What is the [tautological bundle](tautological%20bundle.md)?
+-  What is [Serre duality](Serre%20duality)?
 -   What is [Hirzebruch-Riemann-Roch](Hirzebruch-Riemann-Roch)?
--   How is $\\mathcal{O}(n)$ defined?
+-   How is $\mathcal{O}(n)$ defined?
 -   What is a Kahler manifold?
 -   What is $A^{p, q}$?
 -   How is Dolbeaut cohomology defined?

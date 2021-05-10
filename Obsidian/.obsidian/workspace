@@ -7,8 +7,11 @@
         "id": "24ac0cdaa37f9c98",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/four manifold.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -76,6 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/four manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -109,7 +113,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/four manifold.md"
+              }
             }
           },
           {
@@ -142,6 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/four manifold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,6 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/four manifold.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -218,7 +226,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/four manifold.md"
+              }
             }
           }
         ],
