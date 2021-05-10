@@ -9,10 +9,16 @@ aliases: ["vector bundle"]
 A **rank $n$ vector bundle** is a [fiber bundle](fiber%20bundle.md) in which the fibers $F$ have the structure of a vector space $k^n$ for some field $k$; the [structure group](Reduction%20of%20structure%20group.md) of such a bundle is a subset of $\GL(n, k)$.
 :::
 
+:::{.remark}
 Note that a vector bundle always has one [global section](section%20of%20a%20bundle.md): namely, since every fiber is a vector space, you can canonically choose the 0 element in every fiber.
 This yields [[global section]], the [[zero section]].
+:::
 
+:::{.definition title="Trivial bundle"}
+A vector bundle $F\to E\to B$ is **trivial** if $E \cong F \cross B$.
+:::
 
+See also [parallelizable](framed.md) manifolds.
 
 :::{.proposition title="Trivial iff linearly independent sections"}
 A rank $n$ vector bundle is trivial iff it admits $k$ linearly independent global sections.
@@ -52,5 +58,3 @@ As in the earlier example involving the Möbius strip, since $K$ is nonorientabl
 A section of the tangent bundle $TM$ is equivalent to a _vector field_ on $M$.
 :::
 
-
-See also [parallelizable](framed.md) manifolds.
