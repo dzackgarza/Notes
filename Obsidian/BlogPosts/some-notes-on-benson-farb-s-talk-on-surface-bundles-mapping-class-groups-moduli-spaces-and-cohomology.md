@@ -59,13 +59,13 @@ B.F. proved algorithmic computability for bundle isomorphisms, but homeomorphism
 
 2. For 3-manifolds: almost all (e.g. all hyperbolic) closed 3-manifolds are finitely covered by some $M_f^3$ surface bundle
   1. Famous conjecture of Thurston! Very recent.
-    His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
+    His fields medal was finding a single [[hyperbolic structure]] on a closed 3-manifold [fibering](fibering) over the circle.
 
 3. For 4-manifolds: huge class of [symplectic manifolds](symplectic%20manifolds).
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups.
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 
-4. AG: $\mathcal M$ moduli spaces of Riemann surfaces (See [M_g](M_g)), decompose problems about [varieties](varieties) to problems about families of [algebraic curves](algebraic%20curves)  (i.e. what we call surface bundles)
+4. AG: $\mathcal M$ moduli spaces of Riemann surfaces (see [M_g](M_g)), decompose problems about [varieties](varieties) to problems about families of [algebraic curves](algebraic%20curves)  (i.e. what we call surface bundles)
 
 The main invariant for these bundles: **The Monodromy Representation**
 
@@ -91,7 +91,7 @@ For any SES of groups, you can get a representation $\pi_1 B \to \operatorname{O
 
 Can produce a map $\operatorname{Mod} \Sigma_g \to \operatorname{Out}\pi_1 \Sigma_g$ by applying a homeomorphism to $\pi_1$, might move the basepoint, but these are isomorphic groups (classical theorem).
 
-Question: when does the representation lift?
+**Question**: when does the representation lift?
 
 \begin{tikzcd}
  &  & \operatorname{Diff}^+ \Sigma_g \arrow[dd] \\
@@ -99,7 +99,7 @@ Question: when does the representation lift?
 \pi_1 B \arrow[rr] \arrow[rruu, "?" description, dotted] &  & \operatorname{Mod} \Sigma_g
 \end{tikzcd}
 
-Equivalently, is every bundle flat? 
+Equivalently,** is every bundle flat? **
 No, but this is an open question when the base is a surface (i.e. for all we know, every representation could lift). 
 Conjectured that for the [Kodaira manifold](Kodaira%20manifold), it is not flat. 
 Big problem, because this is perhaps the simplest nonlinear connection.
@@ -182,9 +182,9 @@ $$
 \tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B)).
 $$
 
-Any characteristic class is just an element of $H^*(\operatorname{BDiff}^+ \Sigma_g) = H^*(\operatorname{Mod} \Sigma_g)$, since every bundle will be a pullback of the universal bundle.
+Any [[characteristic class]] is just an element of $H^*(\operatorname{BDiff}^+ \Sigma_g) = H^*(\operatorname{Mod} \Sigma_g)$, since every bundle will be a pullback of the universal bundle.
 
-Lots of papers about the "stable cohomology" of the mapping class group, given by taking $g$ big enough. We know $\chi$ of the mapping class group, it grows superexponentially and we know polynomially-many. No known unstable classes in genus 5 or higher!!
+Lots of papers about the [stable cohomology](stable%20cohomology) of the mapping class group, given by taking $g$ big enough. We know $\chi$ of the mapping class group, it grows superexponentially and we know polynomially-many. No known unstable classes in genus 5 or higher!!
 
 What do we know?
 
@@ -203,7 +203,7 @@ Any 2-cycle (for any space) will be homologous to the image of a map $f$ of a su
  &  & \Sigma_h \arrow[rruu, "f" description] &  &
 \end{tikzcd}
 
-Take the signature of $M_4$ (where you use the intersection pairing on $H_2$, take the signature of that form). Using Novikov additivity for signature, this satisfies the cocycle condition and finally yields a number!
+Take the signature of $M_4$ (where you use the [intersection pairing](intersection%20pairing) on $H_2$, take the [signature](../zettelkasten/signature.md) of that [quadratic form](../zettelkasten/quadratic%20form.md)). Using Novikov additivity for signature, this satisfies the cocycle condition and finally yields a number!
 
 ## Another Cocycle
 
@@ -211,12 +211,12 @@ Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
 
 > Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.
 
-So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so
+So look at the [Euler class](../zettelkasten/Euler%20class.md) $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so
 $$
 e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\operatorname{Mod} \Sigma_g; \QQ).
 $$
 
-> Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
+> Note: the [moduli space](../zettelkasten/moduli%20spaces.md) is a [Kähler Manifold](Kähler%20Manifold), so you get the Weil-Peterson 2-form which is the [Kähler class](Kähler%20class) in $H^2$.
 
 **Theorem (Harrer, 1980s):**
 $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! 
