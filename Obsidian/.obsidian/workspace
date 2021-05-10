@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/surgery.md",
-            "mode": "preview"
+            "file": "zettelkasten/Lie algebra.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/surgery.md",
+                "file": "zettelkasten/Lie algebra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/surgery.md"
+                "file": "zettelkasten/Lie algebra.md"
               }
             }
           },
@@ -131,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1090.0074996948242
+    "width": 511.5121879577637
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/surgery.md",
+                "file": "zettelkasten/Lie algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/surgery.md",
+                "file": "zettelkasten/Lie algebra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/surgery.md"
+                "file": "zettelkasten/Lie algebra.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
-    "zettelkasten/Surgery Theory.md",
+    "zettelkasten/Lie algebra.md",
+    "zettelkasten/representation theory.md",
+    "zettelkasten/Lie group.md",
     "00_Home.md",
+    "zettelkasten/Surgery Theory.md",
     "zettelkasten/Papers to Read.md",
     "zettelkasten/Subjects/Algebraic Topology.md",
     "zettelkasten/Learning.md",
     "zettelkasten/Topological cyclic homology.md",
-    "zettelkasten/topological Hochschild homology.md",
-    "Quick_Notes/2021-04-26.md",
-    "zettelkasten/Giant Word List.md",
-    "zettelkasten/Seiberg-Witten theory.md"
+    "zettelkasten/topological Hochschild homology.md"
   ]
 }
