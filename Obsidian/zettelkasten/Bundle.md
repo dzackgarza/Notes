@@ -5,5 +5,6 @@
 - [[Normal bundle]]
 - [[connection]]
 - [[Surface bundle]]
+- [fiber bundle](fiber%20bundle.md)
+- [vector bundle](vector%20bundles.md)
 
-A bundle $F\to E \to B$ is **trivial** if 
