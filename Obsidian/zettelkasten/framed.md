@@ -13,8 +13,8 @@ Milnor-Stasheff p.148 12-b and Section 12
 If the tangent bundle of a manifold is trivial, the manifold is said to be **parallelizable**.
 :::
 
-- Parallelizable/framed: a trivialization of the tangent bundle.
-	- Equivalently, the [principal](principal%20bundle.md) [frame bundle](frame%20bundle) has a smooth [global section](section%20of%20a%20bundle.md).
+- Parallelizable/framed: a trivialization of the [tangent bundle](tangent%20bundle.md).
+- Equivalently, the [principal](principal%20bundle.md) [frame bundle](frame%20bundle) has a smooth [global section](section%20of%20a%20bundle.md).
 
 
 ## Results

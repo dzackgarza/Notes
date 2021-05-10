@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "zettelkasten/framed.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -241,9 +241,9 @@
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
     "zettelkasten/framed.md",
+    "zettelkasten/vector bundles.md",
     "zettelkasten/Bundle.md",
     "zettelkasten/orientable.md",
-    "zettelkasten/vector bundles.md",
     "zettelkasten/tangent bundle.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/Four Manifolds.md",
