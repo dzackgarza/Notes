@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Home.md",
-            "mode": "preview"
+            "file": "zettelkasten/Papers to Read.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Papers to Read.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/Papers to Read.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Papers to Read.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Papers to Read.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/Papers to Read.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
+    "zettelkasten/Papers to Read.md",
     "00_Home.md",
     "zettelkasten/Learning.md",
     "zettelkasten/Topological cyclic homology.md",
@@ -248,7 +249,6 @@
     "zettelkasten/Giant Word List.md",
     "zettelkasten/Seiberg-Witten theory.md",
     "zettelkasten/TP.md",
-    "Quick_Notes/2021-05-03.md",
-    "zettelkasten/Hopf algebra.md"
+    "Quick_Notes/2021-05-03.md"
   ]
 }
