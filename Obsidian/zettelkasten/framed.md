@@ -2,30 +2,47 @@
 aliases: ["framing", "parallelizable"]
 ---
 
-> Recommendations from Akram: Milnor-Stasheff p.148 12-b and Section 12
+# References
 
-- Parallelizable/framed: a trivialization of the tangent bundle.
-	- Alternatively, the [[principal]] [[frame bundle]] has a smooth [[global section]].
+- Recommendations from Akram: 
+	- Milnor-Stasheff p.148 12-b and Section 12
 
-- Parallelizable spheres $S^0, S^1, S^3, S^7$ corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
-
+# Definitions
 
 :::{.definition title="?"}
-If the tangent bundle of a manifold is trivial, the manifold is said to be *parallelizable*.
+If the tangent bundle of a manifold is trivial, the manifold is said to be **parallelizable**.
 :::
 
+- Parallelizable/framed: a trivialization of the tangent bundle.
+	- Equivalently, the [principal](principal%20bundle.md) [frame bundle](frame%20bundle) has a smooth [global section](section%20of%20a%20bundle.md).
+
+
+
+
+## Results
+
+- The only parallelizable spheres are 
+$$
+S^0, S^1, S^3, S^7
+$$ 
+corresponding to $\RR, \CC, \mathbb{H}, \mathbb{O}$.
+
 :::{.proposition title="?"}
-The one-sphere $S^1$ is parallelizable.
+$S^1$ is parallelizable.
 :::
 
 :::{.proof title="?"}
 Let $M = S^1$, then there is a rank 1 vector bundle
-$$\RR \to TM \to M$$
-and since $TM = S^1 \cross \RR$ (why?), we find that $S^1$ is parallelizable.
+$$
+\RR \to TM \to M
+$$
+and since $TM = S^1 \cross \RR$ , we find that $S^1$ is parallelizable.
 :::
 
+> Todo: 
+
 :::{.proposition title="?"}
-The sphere $S^2$ is not parallelizable.
+$S^2$ is not parallelizable.
 :::
 
 :::{.proof title="?"}
@@ -36,8 +53,10 @@ Then $TM$ is trivial iff there are 2 independent global sections. Since there is
 :::
 
 :::{.proof title="Alternative"}
-Any such a vector field would allow a homotopy between the identity and the [antipodal map](antipodal%20map) on $S^2$, contradiction by basic homotopy theory.
+Any such a vector field would allow a homotopy between the identity and the [antipodal map](antipodal%20map) on $S^2$, a contradiction.
 :::
+
+> Why is there no such map? #unanswered_questions 
 
 
 
