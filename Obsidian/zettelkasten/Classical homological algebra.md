@@ -14,7 +14,7 @@ aliases: ["homological algebra"]
 # References
 
 ![Some notes](../attachments/Lecture01.pdf)
-
+![Modules and Categories: Notes on Homological Algebra](attachments/Modules%20and%20Categories.pdf)
 # Unsorted
 
 - What is the difference between the [homotopy category](homotopy%20category.md) and [derived category](derived%20category)? #unanswered_questions 
