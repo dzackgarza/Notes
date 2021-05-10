@@ -4,11 +4,12 @@ aliases: ["framing", "parallelizable"]
 
 # References
 
-> Milnor-Stasheff p.148 12-b and Section 12
+> Recommendations from Akram:
+Milnor-Stasheff p.148 12-b and Section 12
 
 # Definitions
 
-:::{.definition title="?"}
+:::{.definition title="parallelizable"}
 If the tangent bundle of a manifold is trivial, the manifold is said to be **parallelizable**.
 :::
 
@@ -18,7 +19,7 @@ If the tangent bundle of a manifold is trivial, the manifold is said to be **par
 
 ## Results
 
-- The only parallelizable spheres are 
+- Fact: the only parallelizable spheres are 
 $$
 S^0, S^1, S^3, S^7
 $$ 
