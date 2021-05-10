@@ -28,18 +28,6 @@ background-color: var(--text-accent-hover);
   background-color: orange;
 }
 
-/* Cursor color in normal vim mode and opacity */
-.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor {
-  width: 0.5em;
-  background: #d65d0e;
-  opacity: 60% !important;
-}
-
-/*an active line highlight in vim normal mode */
-.cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
-  background-color: rgba(89, 75, 95, 0.99) !important;
-}
-
 /*if you want the highlight to present in both normal and insert mode of vim*/
 .CodeMirror-activeline .CodeMirror-linebackground{
   background-color: rgba(200, 200, 100, 0.99) !important;
@@ -51,24 +39,13 @@ background-color: var(--text-accent-hover);
  border-left: 1px solid rgba(0, 122, 255, 0.25);
  position: absolute;
 }
-.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; 
+.cm-hmd-list-indent .cm-tab::before { 
+  left: 0; top: -5px; bottom: -4px; 
 }
-ul ul::before { left: -11px; top: 0; bottom: 0; 
+ul ul::before { 
+  left: -11px; top: 0; bottom: 0; 
 } 
 
-.tag, div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end {
-  background-color: var(--text-accent);
-  border: none;
-  color: white !important;
-  font-size: 11px;
-  padding: 1px 8px;
-  text-align: center;
-  text-decoration: none !important;
-  display: inline-block;
-  margin: 0px 0px;
-  cursor: pointer;
-  border-radius: 14px;
-}
 
 /*============bigger link popup preview  ================*/
 .popover.hover-popover {
