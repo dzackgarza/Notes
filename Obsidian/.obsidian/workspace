@@ -7,8 +7,11 @@
         "id": "320d4aa5e59f2a2d",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "00_Home.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -76,6 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -109,7 +113,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "00_Home.md"
+              }
             }
           },
           {
@@ -142,6 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00_Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,14 +157,6 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
-            }
-          },
-          {
-            "id": "cddc9e8fb5f63099",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
             }
           },
           {
@@ -177,6 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -206,7 +206,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "e0f41909d73b2a44",
@@ -220,8 +220,19 @@
               "type": "dangling-links",
               "state": {}
             }
+          },
+          {
+            "id": "cddc9e8fb5f63099",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00_Home.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -229,15 +240,15 @@
   },
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
+    "00_Home.md",
+    "zettelkasten/Learning.md",
+    "zettelkasten/Topological cyclic homology.md",
+    "zettelkasten/topological Hochschild homology.md",
     "Quick_Notes/2021-04-26.md",
     "zettelkasten/Giant Word List.md",
     "zettelkasten/Seiberg-Witten theory.md",
-    "zettelkasten/topological Hochschild homology.md",
     "zettelkasten/TP.md",
     "Quick_Notes/2021-05-03.md",
-    "zettelkasten/Hopf algebra.md",
-    "zettelkasten/Hopf Algebra.md",
-    "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
-    "zettelkasten/Étale homotopy.md"
+    "zettelkasten/Hopf algebra.md"
   ]
 }

@@ -200,9 +200,8 @@ Some stuff from Morgan:
 See [Hochschild homology](Hochschild%20homology.md)
 
 ## Topological Cyclic Homology
-See [topological Hochschild homology](topological%20Hochschild%20homology.md)
+See [topological Hochschild homology](topological%20Hochschild%20homology.md) and ![21 Video course](Topological%20cyclic%20homology.md#^d71609)
 
-- [21 Video Course](https://www.youtube.com/playlist?list=PLsmqTkj4MGTB8pNGvW0iuKUFmBlOSke-C)
 
 ## Langlands
 See [Langlands](Langlands.md)
