@@ -7,8 +7,11 @@
         "id": "dc9b887dae2f74c8",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/l-adic representations.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -76,6 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/l-adic representations.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -109,7 +113,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/l-adic representations.md"
+              }
             }
           },
           {
@@ -142,6 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/l-adic representations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,6 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/l-adic representations.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -218,7 +226,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/l-adic representations.md"
+              }
             }
           }
         ],
@@ -230,11 +240,11 @@
   },
   "active": "dc9b887dae2f74c8",
   "lastOpenFiles": [
+    "zettelkasten/l-adic representations.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/equivariant stable homotopy theory.md",
     "zettelkasten/Untitled 4.md",
-    "zettelkasten/l-adic representations.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/Hodge-Tate theory.md",
     "zettelkasten/Hodge-Tate cohomology.md",
