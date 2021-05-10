@@ -79,13 +79,6 @@ ul ul::before { left: -11px; top: 0; bottom: 0;
     width: 500px;     /* was 400 */
 }
 
-/* inline formatting, link targets and [[ ]] disappears if not active line*/
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-barelink,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
-{ display: none; }
 
 /* hide all html tags -- IT IS COMMENTED OUT BY DEFAULT */
 /* div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag{ display: none; } */

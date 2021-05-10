@@ -1,0 +1,4 @@
+-   What is [Serre duality](Serre%20duality)?
+-   What is [Hirzebruch-Riemann-Roch](Hirzebruch-Riemann-Roch)?
+-   How is $\\mathcal{O}(n)$ defined?
+-   What is a Kahler manifold?

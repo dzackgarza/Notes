@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Recommendations.md",
+            "file": "zettelkasten/Four Manifolds.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Recommendations.md",
+                "file": "zettelkasten/Four Manifolds.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Recommendations.md"
+                "file": "zettelkasten/Four Manifolds.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Recommendations.md",
+                "file": "zettelkasten/Four Manifolds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Recommendations.md",
+                "file": "zettelkasten/Four Manifolds.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Recommendations.md"
+                "file": "zettelkasten/Four Manifolds.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
+    "zettelkasten/Four Manifolds.md",
+    "zettelkasten/Serre duality.md",
+    "zettelkasten/Hirzebruch-Riemann-Roch.md",
+    "zettelkasten/Untitled 4.md",
     "zettelkasten/Recommendations.md",
     "zettelkasten/Classical homological algebra.md",
     "zettelkasten/Lie algebra.md",
     "zettelkasten/representation theory.md",
     "zettelkasten/Lie group.md",
-    "00_Home.md",
-    "zettelkasten/Surgery Theory.md",
-    "zettelkasten/Papers to Read.md",
-    "zettelkasten/Subjects/Algebraic Topology.md",
-    "zettelkasten/Learning.md"
+    "00_Home.md"
   ]
 }
