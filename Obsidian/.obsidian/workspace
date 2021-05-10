@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/metric.md",
-            "mode": "source"
+            "file": "zettelkasten/Riemann-Roch.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/metric.md",
+                "file": "zettelkasten/Riemann-Roch.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/metric.md"
+                "file": "zettelkasten/Riemann-Roch.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/metric.md",
+                "file": "zettelkasten/Riemann-Roch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/metric.md",
+                "file": "zettelkasten/Riemann-Roch.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/metric.md"
+                "file": "zettelkasten/Riemann-Roch.md"
               }
             }
           }
@@ -240,6 +240,8 @@
   },
   "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
+    "zettelkasten/Riemann-Roch.md",
+    "zettelkasten/Hirzebruch-Riemann-Roch.md",
     "zettelkasten/metric.md",
     "zettelkasten/vector bundles.md",
     "zettelkasten/framed.md",
@@ -247,8 +249,6 @@
     "zettelkasten/representation theory.md",
     "zettelkasten/orientable.md",
     "zettelkasten/tangent bundle.md",
-    "zettelkasten/Riemannian metric.md",
-    "zettelkasten/Four Manifolds.md",
-    "zettelkasten/Serre duality.md"
+    "zettelkasten/Riemannian metric.md"
   ]
 }
