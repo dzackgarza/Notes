@@ -31,7 +31,7 @@ where
 
 The left hand side represents properties of the geometry of space time, while the right hand side indicated properties of matter in a given region.
 
-Note that solutions to this equation are [metric](Riemannian%20metric.md) on [spacetime](spacetime.md), which in turn can be fed into [geodesic equation](geodesic%20equation) which give the lengths _worldlines_. Most importantly, gravity acts by moving other bodies along these geodesic paths.
+Note that solutions to this equation are [metric](metric.md) on [spacetime](spacetime.md), which in turn can be fed into [geodesic equation](geodesic%20equation) which give the lengths _worldlines_. Most importantly, gravity acts by moving other bodies along these geodesic paths.
 
 An exact solution that was found almost immediately  (1916) is the Schwarzschild metric, which assumes that the RHS involves a spherical mass with "nice" stress-energy properties and $\Lambda = 0$. 
 

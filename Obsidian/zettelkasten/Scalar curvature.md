@@ -4,10 +4,10 @@ $$
 S = \tr_g \Ric
 $$
 - Can be expressed in terms of [Christoffel symbols](Christoffel%20symbols).
-- Requires a [Riemannian metric](Riemannian%20metric) $g$.
+- Requires a [metric](metric.md) $g$.
 - Big question: which smooth closed manifolds have metrics with positive scalar curvature?
 	- A lot is known!
-	- Gromov and Lawson: every simply connected [manifold](manifold) of dimension at least 5 which is not [spin](spin) has a [metric](Riemannian%20metric) with positive scalar curvature.
+	- Gromov and Lawson: every simply connected [manifold](manifold) of dimension at least 5 which is not [spin](spin) has a [metric](metric.md) with positive scalar curvature.
 		- Uses an $\alpha$ invariant taking values in $\K O_n$ 
 			- See [K-Theory](K-Theory.md), [alpha invariant](alpha%20invariant).
 	- Dimensions 3 and 4: as a cconsequence of [Geometrization](Geometrization.md), a closed orientable 3-manifold has a metric with positive scalar curvature if and only if it is a connected sum of [spherical](aspherical%20space.md) 3-manifolds and copies of $S^2 \cross S^1$.
