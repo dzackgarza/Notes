@@ -6,10 +6,10 @@ aliases: ["vector bundle"]
 # Vector Bundles
 
 :::{.definition title="Rank of a vector bundle"}
-A **rank $n$ vector bundle** is a [fiber bundle](fiber%20bundle.md) in which the fibers $F$ have the structure of a vector space $k^n$ for some field $k$; the structure group of such a bundle is a subset of $\GL(n, k)$.
-
+A **rank $n$ vector bundle** is a [fiber bundle](fiber%20bundle.md) in which the fibers $F$ have the structure of a vector space $k^n$ for some field $k$; the [structure group](Reduction%20of%20structure%20group.md) of such a bundle is a subset of $\GL(n, k)$.
 :::
-Note that a vector bundle always has one global section: namely, since every fiber is a vector space, you can canonically choose the 0 element in every fiber.
+
+Note that a vector bundle always has one [[global section]]: namely, since every fiber is a vector space, you can canonically choose the 0 element in every fiber.
 This yields [[global section]], the [[zero section]].
 
 
