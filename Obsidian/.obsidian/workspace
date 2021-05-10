@@ -9,18 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/framed.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "011d1760d83a4331",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/representation theory.md",
+            "file": "zettelkasten/metric.md",
             "mode": "source"
           }
         }
@@ -90,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/representation theory.md",
+                "file": "zettelkasten/metric.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/representation theory.md"
+                "file": "zettelkasten/metric.md"
               }
             }
           },
@@ -159,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/representation theory.md",
+                "file": "zettelkasten/metric.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/representation theory.md",
+                "file": "zettelkasten/metric.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/representation theory.md"
+                "file": "zettelkasten/metric.md"
               }
             }
           }
@@ -249,17 +238,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "011d1760d83a4331",
+  "active": "320d4aa5e59f2a2d",
   "lastOpenFiles": [
-    "zettelkasten/representation theory.md",
-    "zettelkasten/framed.md",
+    "zettelkasten/metric.md",
     "zettelkasten/vector bundles.md",
+    "zettelkasten/framed.md",
     "zettelkasten/Bundle.md",
+    "zettelkasten/representation theory.md",
     "zettelkasten/orientable.md",
     "zettelkasten/tangent bundle.md",
     "zettelkasten/Riemannian metric.md",
     "zettelkasten/Four Manifolds.md",
-    "zettelkasten/Serre duality.md",
-    "zettelkasten/Hirzebruch-Riemann-Roch.md"
+    "zettelkasten/Serre duality.md"
   ]
 }

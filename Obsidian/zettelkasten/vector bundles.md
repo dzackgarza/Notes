@@ -27,7 +27,7 @@ A rank $n$ vector bundle is trivial iff it admits $k$ linearly independent globa
 :::
 
 :::{.example title="?"}
-The tangent bundle of a manifold is an $\RR$-vector bundle. Let $M^n$ be an $n\dash$dimensional manifold. For any point $x\in M$, the tangent space $T_xM$ exists, and so we can define
+The tangent bundle of a manifold is a vector bundle. Let $M^n$ be an $n\dash$dimensional manifold. For any point $x\in M$, the [tangent space](tangent%20bundle.md) $T_xM$ exists, and so we can define
 $$
 TM = \coprod_{x\in M} T_xM = \theset{(x, t) \mid x\in M, t \in T_xM}
 $$
@@ -41,7 +41,7 @@ given by a natural projection $\pi:(x, t) \mapsto x$
 :::
 
 :::{.example title="?"}
-A circle bundle is a fiber bundle in which the fiber is isomorphic to $S^1$ as a topological group. Consider circle bundles over a circle, which are of the form
+A circle bundle is a [fiber bundle](fiber%20bundle.md) in which the fiber is isomorphic to $S^1$ as a topological group. Consider circle bundles over a circle, which are of the form
 $$
 S^1 \to E \mapsvia{\pi} S^1
 $$

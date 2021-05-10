@@ -9,3 +9,5 @@ Important concepts
 - [irreducibles](irreducibles)
 - [simple](simple)
 - [indecomposable](indecomposable)
+- [semisimple](semisimple)
+- [classification of representations of compact Lie groups](classification%20of%20representations%20of%20compact%20Lie%20groups)
