@@ -30,11 +30,12 @@ $S^1$ is parallelizable.
 :::
 
 :::{.proof title="?"}
-Let $M = S^1$, then there is a rank 1 vector bundle
+Let $M = S^1$, then the tangent bundle yields a rank 1 vector bundle
 $$
 \RR \to TM \to M
 $$
-and since $TM = S^1 \cross \RR$ , we find that $S^1$ is parallelizable.
+We can find a nonzero global section
+
 :::
 
 > Todo: 
