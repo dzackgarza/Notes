@@ -23,7 +23,7 @@ tags:
 - [[Deformation space]]
 - [Local class field theory](Local%20class%20field%20theory)
 - [local Langlands](Local%20Langlands%20correspondence.md)
-- [Orbifold](Orbifold.md)
+- [orbifold](orbifold.md)
 - [Lubin-Tate space](Lubin-Tate%20space)
 - [uniformization](uniformization.md)
 - [Picard group](Picard%20group.md)

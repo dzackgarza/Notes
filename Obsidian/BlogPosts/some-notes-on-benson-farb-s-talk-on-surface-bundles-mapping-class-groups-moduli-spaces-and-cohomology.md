@@ -1,4 +1,4 @@
-[../zettelkasten/Subjects/Mapping Class Groups](../zettelkasten/Subjects/Mapping%20Class%20Groups.md)
+[../zettelkasten/Subjects/mapping class group](../zettelkasten/Subjects/mapping%20class%20group.md)
 
 Tags: #reading_notes 
 
@@ -61,11 +61,11 @@ B.F. proved algorithmic computability for bundle isomorphisms, but homeomorphism
   1. Famous conjecture of Thurston! Very recent.
     His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
 
-3. For 4-manifolds: huge class of symplectic manifolds.
+3. For 4-manifolds: huge class of [symplectic manifolds](symplectic%20manifolds).
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups.
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 
-4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
+4. AG: $\mathcal M$ moduli spaces of Riemann surfaces (See [M_g](M_g)), decompose problems about [varieties](varieties) to problems about families of [algebraic curves](algebraic%20curves)  (i.e. what we call surface bundles)
 
 The main invariant for these bundles: **The Monodromy Representation**
 
@@ -78,9 +78,9 @@ $$
 
 Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
-> In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
+> In AG, the [mapping class group](../zettelkasten/Subjects/mapping%20class%20group.md) is the [orbifold](../zettelkasten/orbifold.md) [fundamental group](fundamental%20group)] of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
-So any bundle $\Sigma_g \to E \to B$ yields a corresponding monodromy representation
+So any bundle $\Sigma_g \to E \to B$ yields a corresponding [monodromy representation](monodromy%20representation)
 $$
 \rho: \pi_1 B \to \operatorname{Mod} \Sigma_g
 $$
@@ -101,12 +101,12 @@ Question: when does the representation lift?
 
 Equivalently, is every bundle flat? 
 No, but this is an open question when the base is a surface (i.e. for all we know, every representation could lift). 
-Conjectured that for the Kodaira manifold, it is not flat. 
+Conjectured that for the [Kodaira manifold](Kodaira%20manifold), it is not flat. 
 Big problem, because this is perhaps the simplest nonlinear connection.
 
 ## Monodromy as a Complete Invariant
 
-Classifying space theory: there exists a (crazy) space $\operatorname{BDiff}^+\Sigma_g$ such that
+[classifying space](../zettelkasten/classifying%20space.md) theory: there exists a (crazy) space $\operatorname{BDiff}^+\Sigma_g$ such that
 $$
 \theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \operatorname{BDiff}^+ \Sigma_g]
 $$

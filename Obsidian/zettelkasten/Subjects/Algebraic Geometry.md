@@ -30,7 +30,7 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 - [[../scheme]]
 	- [[../quasicoherent sheaf]] over a [[../scheme]]	
 - [[../stack]]
-- [[Orbifold]]
+- [[../orbifold]]
 	- Classifying orbifolds
 
 - [[../elliptic curve]]
