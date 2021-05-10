@@ -10,6 +10,8 @@ Tags: #papers #reading
 
 - Algebraic Topology, The Kan Seminar
   <https://ocw.mit.edu/courses/mathematics/18-915-graduate-topology-seminar-kan-seminar-fall-2014/reading-list/list-of-possible-papers/>
+  
+  [More papers](https://math.vanderbilt.edu/bohmanar/literature.pdf)
 
 Serre, J. -P. "[Cohomologie modulo 2 des complexes d'Eilenberg-Maclane](http://dx.doi.org/10.1007/BF02564562)." _Commentarii Mathematici Helvetici_ 27, no. 1 (1953): 198–232.
 
@@ -72,3 +74,26 @@ Griffiths, P. A., and J. W. Morgan. _Rational Homotopy Theory and Differential F
 Adams, J. F. "Prerequisites (on equivariant stable homotopy theory) for Carlsson's lecture." In _Algebraic Topology_ _(Lecture Notes in Mathematics)_. Vol. 1051. Springer-Verlag, 1984, pp. 483–532. ISBN: 9780387129020.
 
 Waldhausen, F. "Algebraic K-theory of Spaces." In _Algebraic and Geometric Topology_ _(Lecture Notes in Mathematics)_. Vol. 1126. Springer, 1985, pp. 318–419. ISBN: 9783540152354.
+
+-   Atiyah, M. F. Thom complexes. Proc. London Math. Soc. (3) 11 1961 291--310.
+-   Adams, J. F. Vector fields on spheres. Ann. of Math. (2) 75 1962 603--632.
+-   Atiyah, M. F.; Segal, G. B. Equivariant $K$-theory and completion. J. Differential Geometry 3 1969 1--18.
+-   Atiyah, M. F.; Singer, I. M. Index theory for skew-adjoint Fredholm operators. Inst. Hautes Études Sci. Publ. Math. No. 37 1969 5--26.
+-   Quillen, Daniel Elementary proofs of some results of cobordism theory using Steenrod operations. Advances in Math. 7 1971 29--56 (1971).
+-   Segal, Graeme Categories and cohomology theories. Topology 13 (1974), 293--312.
+-   Snaith, V. P. A stable decomposition of $\\Omega \\sp{n}S\\sp{n}X$. J. London Math. Soc. (2) 7 (1974), 577--583.
+-   Sullivan, Dennis Genetics of homotopy theory and the Adams conjecture. Ann. of Math. (2) 100 (1974), 1--79.
+-   Bousfield, A. K. The localization of spaces with respect to homology. Topology 14 (1975), 133--150.
+-   McDuff, D.; Segal, G. Homology fibrations and the \`\`group-completion'' theorem. Invent. Math. 31 (1975/76), no. 3, 279--284.
+-   Mahowald, Mark A new infinite family in ${}\\sb{2}\\pi\\sb {\*}{}\\sp s$. Topology 16 (1977), no. 3, 249--256.
+-   Miller, Haynes R.; Ravenel, Douglas C.; Wilson, W. Stephen Periodic phenomena in the Adams-Novikov spectral sequence. Ann. Math. (2) 106 (1977), no. 3, 469--516.
+-   Kahn, Daniel S.; Priddy, Stewart B. The transfer and stable homotopy theory. Math. Proc. Cambridge Philos. Soc. 83 (1978), no. 1, 103--111.
+-   Bousfield, A. K. The localization of spectra with respect to homology. Topology 18 (1979), no. 4, 257--281.
+-   Dwyer, W. G.; Kan, D. M. Simplicial localizations of categories. J. Pure Appl. Algebra 17 (1980), no. 3, 267--284.
+-   Miller, Haynes R. On relations between Adams spectral sequences, with an application to the stable homotopy of a Moore space. J. Pure Appl. Algebra 20 (1981), no. 3, 287--312.
+-   Cohen, F. R.; May, J. P.; Taylor, L. R. $K(Z,\\,0)$ and $K(Z\\sb{2},\\,0)$ as Thom spectra. Illinois J. Math. 25 (1981), no. 1, 99--106.
+-   Adams, J. F. Prerequisites (on equivariant stable homotopy) for Carlsson's lecture. Algebraic topology, Aarhus 1982 (Aarhus, 1982), 483--532, Lecture Notes in Math., 1051, Springer, Berlin, 1984.
+-   Jardine, J. F. Simplicial presheaves. J. Pure Appl. Algebra 47 (1987), no. 1, 35--87.
+-   Morava, Jack Forms of $K$-theory. Math. Z. 201 (1989), no. 3, 401--428.
+-   Martino, John; Priddy, Stewart The complete stable splitting for the classifying space of a finite group. Topology 31 (1992), no. 1, 143--156.
+-   Aguilar, M. A.; Prieto, Carlos Quasifibrations and Bott periodicity. II Iberoamerican Conference on Topology and its Applications (Morelia, 1997). Topology Appl. 98 (1999), no. 1-3, 3--17.

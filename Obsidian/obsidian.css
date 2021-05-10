@@ -126,17 +126,14 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment
   --text-a: var(--frost3);
   --text-a-hover: var(--frost2);
   --text-mark: var(--yellow);
-  --pre-code: var(--dark1);
   --text-highlight-bg: var(--light0);
   --interactive-accent: var(--frost0);
-  --interactive-before: var(--dark3);
-  --background-modifier-border: var(--dark2);
   --text-accent: var(--orange);
   --interactive-accent-rgb: var(--orange);
   --inline-code: var(--frost1);
   --code-block: var(--frost1);
   --vim-cursor: var(--orange);
-  --text-selection: rgba(30, 150, 220, 0.2);
+  --text-selection: rgba(0, 0, 255, 0.0);
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: transparent;
 }
