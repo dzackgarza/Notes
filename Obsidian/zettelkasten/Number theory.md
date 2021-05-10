@@ -39,7 +39,7 @@ See [algebraic number theory](algebraic%20number%20theory)
 # Algebraic Curves
 
 - [function field](function%20field.md)
-- [Divisor](Divisor.md)
+- [divisor](divisor.md)
 
 # Geometric
 

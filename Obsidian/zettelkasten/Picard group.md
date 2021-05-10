@@ -8,3 +8,5 @@
 \]
 where $\NS$ is the [[Neron Severi]] group.
 - When $V$ is a curve, $\Pic^0 V = \Jac V$ is the [[Jacobian]]
+
+![](attachments/Pasted%20image%2020210510011342.png)

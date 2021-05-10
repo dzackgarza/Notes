@@ -1,3 +1,0 @@
-- Definition: zormal $\ZZ\dash$combinations of codimension 1 subvarieties
-- [[Cartier divisor]]
-- [[Ample divisor]]
