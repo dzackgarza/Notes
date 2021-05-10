@@ -17,3 +17,5 @@ _Remark_: Every [Fiber bundle](Fiber%20bundle) $F\to E\to B$ is a principal $\Au
 **Proposition**: A principal bundle is trivial iff it admits a global section. Thus all principal [vector bundles](vector%20bundles.md) are trivial, since the zero [section of a bundle](section%20of%20a%20bundle.md) always exists.
 
 **Definition:** A principal bundle $F \to E \mapsvia{\pi} B$ is _universal_ iff $E$ is weakly contractible, i.e. if $E$ has the homotopy type of a point.
+
+![](attachments/Pasted%20image%2020210510012449.png)

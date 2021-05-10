@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Four Manifolds.md",
+            "file": "zettelkasten/principal bundle.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md",
+                "file": "zettelkasten/principal bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md"
+                "file": "zettelkasten/principal bundle.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md",
+                "file": "zettelkasten/principal bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md",
+                "file": "zettelkasten/principal bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Four Manifolds.md"
+                "file": "zettelkasten/principal bundle.md"
               }
             }
           }
@@ -251,15 +251,15 @@
   },
   "active": "69bd510fdcb2d3ba",
   "lastOpenFiles": [
+    "zettelkasten/principal bundle.md",
     "zettelkasten/Four Manifolds.md",
+    "zettelkasten/Hermitian metric.md",
     "zettelkasten/Exceptional divisor.md",
     "zettelkasten/Blowup.md",
     "zettelkasten/Tautological bundle.md",
     "zettelkasten/Hodge star.md",
     "zettelkasten/Aatiyah-Singer Index Theorem.md",
     "zettelkasten/Picard group.md",
-    "zettelkasten/Divisor.md",
-    "zettelkasten/Bundle.md",
-    "BlogPosts/some-notes-on-benson-farb-s-talk-on-surface-bundles-mapping-class-groups-moduli-spaces-and-cohomology.md"
+    "zettelkasten/Divisor.md"
   ]
 }
