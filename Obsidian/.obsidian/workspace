@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "397910584b027d11",
+        "id": "24ac0cdaa37f9c98",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/Four Manifolds.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "c08f6ccf28f55368",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/blowup.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -90,7 +76,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/blowup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,9 +109,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "zettelkasten/blowup.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,7 +142,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/blowup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +169,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/blowup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,9 +218,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "zettelkasten/blowup.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -249,10 +228,10 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "c08f6ccf28f55368",
+  "active": "24ac0cdaa37f9c98",
   "lastOpenFiles": [
-    "zettelkasten/blowup.md",
     "zettelkasten/Four Manifolds.md",
+    "zettelkasten/blowup.md",
     "zettelkasten/characteristic class.md",
     "zettelkasten/principal bundle.md",
     "zettelkasten/local system.md",

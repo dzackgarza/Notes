@@ -25,3 +25,5 @@
 -   What is the [Steifel-Whitney class](Steifel-Whitney%20class)?
 -   What is the [Pontrayagin class](Pontrayagin%20class)?
 -   What is a [Kähler form](Kähler%20form)?
+-   What is a [spin structure](spin.md)?
+-   What is the [Clifford algebra](Clifford%20algebra)?
