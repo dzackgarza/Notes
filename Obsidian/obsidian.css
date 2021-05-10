@@ -55,3 +55,17 @@ background-color: var(--text-accent-hover);
 }
 ul ul::before { left: -11px; top: 0; bottom: 0; 
 } 
+
+.tag, div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end {
+  background-color: var(--text-accent);
+  border: none;
+  color: white !important;
+  font-size: 11px;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}

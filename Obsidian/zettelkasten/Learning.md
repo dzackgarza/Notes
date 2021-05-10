@@ -29,7 +29,7 @@ See [stacks](Stacks.md)
 
 ## Kirby Calculus
 - [Kyle's lecture videos](https://uga.view.usg.edu/d2l/home/2063522)
-	- Take notes on videos #todo #lecture_typesetting
+	- Take notes on videos #todo #typesetting
 
 ## Floer and Symplectic
 See [Floer homology](Floer%20homology) and [Symplectic geometry](Symplectic%20geometry.md)
