@@ -9,7 +9,29 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Hodge-Tate theory.md",
+            "file": "zettelkasten/Stable Homotopy Seminar.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "f3f160192e075705",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Stable homotopy.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "670e20c631c81779",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/equivariant stable homotopy theory.md",
             "mode": "source"
           }
         }
@@ -79,7 +101,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Hodge-Tate theory.md",
+                "file": "zettelkasten/equivariant stable homotopy theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Hodge-Tate theory.md"
+                "file": "zettelkasten/equivariant stable homotopy theory.md"
               }
             }
           },
@@ -148,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Hodge-Tate theory.md",
+                "file": "zettelkasten/equivariant stable homotopy theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Hodge-Tate theory.md",
+                "file": "zettelkasten/equivariant stable homotopy theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +249,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Hodge-Tate theory.md"
+                "file": "zettelkasten/equivariant stable homotopy theory.md"
               }
             }
           }
@@ -238,17 +260,17 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "4aa57d8844d0bb0b",
+  "active": "670e20c631c81779",
   "lastOpenFiles": [
+    "zettelkasten/equivariant stable homotopy theory.md",
+    "zettelkasten/Stable homotopy.md",
+    "zettelkasten/Untitled 4.md",
+    "zettelkasten/l-adic representations.md",
+    "Quick_Notes/2021-05-06.md",
     "zettelkasten/Hodge-Tate theory.md",
     "zettelkasten/Hodge-Tate cohomology.md",
     "Quick_Notes/2021-04-21.md",
     "Quick_Notes/2021-05-05.md",
-    "zettelkasten/Mordell-Weil rank.md",
-    "Quick_Notes/2021-05-08.md",
-    "Quick_Notes/2021-05-09.md",
-    "zettelkasten/Four Manifolds.md",
-    "zettelkasten/blowup.md",
-    "zettelkasten/characteristic class.md"
+    "zettelkasten/Mordell-Weil rank.md"
   ]
 }

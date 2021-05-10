@@ -68,7 +68,7 @@ Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
 
 # Equivariant Homotopy
 
-Reference: [equivariant stable homotopy](equivariant%20stable%20homotopy%20theory)
+See [equivariant stable homotopy](equivariant%20stable%20homotopy%20theory)
 
 # Motivic Homotopy
 Reference: [motivic homotopy](motivic%20homotopy.md)
