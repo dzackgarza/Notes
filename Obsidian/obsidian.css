@@ -15,10 +15,10 @@
 color: white;
 background-color: var(--text-accent-hover);
 }
-.tag[href^="#todo"] {
+.tag[href^="#obsidian"] {
   background-color: #4d3ca6;
 }
-.tag[href^="#important"] {
+.tag[href^="#todo"] {
   background-color: red;
 }
 .tag[href^="#complete"] {
