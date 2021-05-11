@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/characters.md",
+            "file": "zettelkasten/representation theory.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/characters.md",
+                "file": "zettelkasten/representation theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/characters.md"
+                "file": "zettelkasten/representation theory.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/characters.md",
+                "file": "zettelkasten/representation theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/characters.md",
+                "file": "zettelkasten/representation theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/characters.md"
+                "file": "zettelkasten/representation theory.md"
               }
             }
           }
@@ -240,8 +240,8 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
-    "zettelkasten/characters.md",
     "zettelkasten/representation theory.md",
+    "zettelkasten/characters.md",
     "zettelkasten/Maschke's theorem.md",
     "zettelkasten/K-Theory.md",
     "zettelkasten/Spectra.md",

@@ -6,10 +6,10 @@ See also: [Lie group](Lie%20group) | [Lie algebra](Lie%20algebra) | [algebraic g
 
 # Topics
 
-- [irreducibles](irreducibles)
 - [simple](simple)
+	- [semisimple](semisimple)
+- [irreducibles](irreducibles)
 - [indecomposable](indecomposable)
-- [semisimple](semisimple)
 - [classification of representations of compact Lie groups](classification%20of%20representations%20of%20compact%20Lie%20groups)
 - [characters](characters)
 - [Maschke's theorem](Maschke's%20theorem)
