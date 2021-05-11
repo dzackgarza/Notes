@@ -67,8 +67,7 @@ The stack $M_{ell}$ admits a compactification $\overline{M}_{ell}$ whose $R$ poi
 $$
 H ^ { 0 } \left( \overline { \mathcal { M } } _ { e l l } , \omega ^ { \otimes k } \right)
 $$
-Motivated by the definition of integral modular forms and this [[descent spectral sequence]] in the case of $U = M_\ell$ , the spectrum $\Tmf$ is defined to be the global
-sections
+Motivated by the definition of integral modular forms and this [[descent spectral sequence]] in the case of $U = M_\ell$ , the spectrum $\Tmf$ is defined to be the [[global sections]]
 $$
 \mathrm { Tmf } : = \mathcal { O } ^ { t o p } \left( \overline { \mathcal { M } } _ { e l l } \right)
 $$
