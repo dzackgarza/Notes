@@ -6,6 +6,10 @@ tags:
 
 Tags: #topology #morse_theory 
 
+# Motivations
+
+- Can be used to prove the high dimensional case of the generalized [Generalized Poincaré conjecture](Generalized%20Poincaré%20conjecture)
+- 
 # Dave's Videos
 
 - Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.

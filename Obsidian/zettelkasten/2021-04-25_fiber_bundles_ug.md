@@ -35,7 +35,7 @@ Fiber bundles may admit right-inverses to the projection map $s: B\to E$ satisfy
 
 ![foliation diagram](figures/foliation-diagram.png)
 
-Here, we imagine each fiber as a cross-section or "level set" of the total space, giving rise to a "foliation" of $E$ by the fibers.^[When $E$ is in fact a product $F\cross B$, this actually is a foliation in the technical sense.]
+Here, we imagine each fiber as a cross-section or "level set" of the total space, giving rise to a "foliation of $E$ by the fibers.^[When $E$ is in fact a product $F\cross B$, this actually is a foliation in the technical sense.]
 
 For a given bundle, it is generally possible to choose sections locally, but there may or may not exist globally defined sections. Thus one key question is **when does a fiber bunde admit a global section?**
 
