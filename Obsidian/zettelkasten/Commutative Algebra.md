@@ -9,3 +9,5 @@
 - Cohen-Macauly
 - [[Noether normalization]]
 
+[Nakayama](Nakayama)
+

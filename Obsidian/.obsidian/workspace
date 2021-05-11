@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/moduli stack of Higgs bundles.md",
+            "file": "zettelkasten/Commutative Algebra.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/moduli stack of Higgs bundles.md",
+                "file": "zettelkasten/Commutative Algebra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/moduli stack of Higgs bundles.md"
+                "file": "zettelkasten/Commutative Algebra.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/moduli stack of Higgs bundles.md",
+                "file": "zettelkasten/Commutative Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/moduli stack of Higgs bundles.md",
+                "file": "zettelkasten/Commutative Algebra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/moduli stack of Higgs bundles.md"
+                "file": "zettelkasten/Commutative Algebra.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "34dec5e47889cb3f",
   "lastOpenFiles": [
+    "zettelkasten/Commutative Algebra.md",
     "zettelkasten/moduli stack of Higgs bundles.md",
     "zettelkasten/stack.md",
     "zettelkasten/moduli stack of Higgs bundle.md",
@@ -248,7 +249,6 @@
     "zettelkasten/Spectral Sequences.md",
     "zettelkasten/smooth structure.md",
     "zettelkasten/Smooth structures.md",
-    "zettelkasten/Untitled 5.md",
-    "zettelkasten/Stable homotopy.md"
+    "zettelkasten/Untitled 5.md"
   ]
 }
