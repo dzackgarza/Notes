@@ -20,15 +20,14 @@ aliases: ["chromatic homotopy", "chromatic"]
 	- [[Lubin-Tate theory]]
 - [[Kervaire invariant 1]]
 - [TMF](Topological%20modular%20forms.md)
+- [Dieudonne module](Dieudonne%20module)
 
 # Notes
 
-- The chromatic view-point, which studies stable homotopy theory via its relationships to the moduli of formal groups, and related topics such as topological modular forms, use a sizable amount of (fairly abstract) algebraic geometry. And Lurie's work on derived algebraic geometry was motivated in part by establishing foundations adequate to the task of defining equivariant forms of TMF.
+- The chromatic view-point, which studies stable homotopy theory via its relationships to the moduli of [formal groups](Formal%20group.md), and related topics such as topological modular forms, use a sizable amount of (fairly abstract) algebraic geometry. And Lurie's work on [derived algebraic geometry](derived%20algebraic%20geometry.md) was motivated in part by establishing foundations adequate to the task of defining equivariant forms of [TMF](Topological%20modular%20forms.md).
 
 [Behrens Hopkins Hill](https://www3.nd.edu/~mbehren1/papers/exotic2.pdf)
-A homotopy n-sphere is a smooth n-manifold which is homotopy equivalent to
-$S^n$. Kervaire and Milnor defined Θn to be the group of homotopy spheres up
-to h-cobordism (where the group operation is given by connect sum). By the
+Kervaire and Milnor defined Θn to be the group of [homotopy spheres](homotopy%20spheres) up to [[h-cobordism]] (where the group operation is given by connect sum). By the
 h-cobordism theorem [Sma62] (n > 4) and Perelman’s proof of the Poincare conjecture [Per02], [Per03a], [Per03b] (n = 3), for n 6= 4, Θn = 0 if and only if $S^n$ has
 a unique differentiable structure (i.e. there are no exotic spheres of dimension n).
 
