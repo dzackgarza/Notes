@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/geometric realization.md",
+            "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/geometric realization.md",
+                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/geometric realization.md"
+                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/geometric realization.md",
+                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/geometric realization.md",
+                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/geometric realization.md"
+                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
     "zettelkasten/geometric realization.md",
     "Quick_Notes/2021-04-25.md",
     "zettelkasten/coend.md",
@@ -248,7 +249,6 @@
     "zettelkasten/solid mathematics.md",
     "zettelkasten/generates.md",
     "zettelkasten/projective object.md",
-    "zettelkasten/compact object.md",
-    "zettelkasten/Untitled 4.md"
+    "zettelkasten/compact object.md"
   ]
 }

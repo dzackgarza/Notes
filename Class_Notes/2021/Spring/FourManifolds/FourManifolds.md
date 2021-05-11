@@ -10,7 +10,6 @@
 \newcommand{\dw}{\,dw}
 \newcommand{\dV}{\,dV}
 \newcommand{\dmu}{\,d\mu}
-\newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
@@ -29,6 +28,10 @@
 \newcommand{\DD}[0]{{\mathbb{D}}}
 \newcommand{\EE}[0]{{\mathbb{E}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
+\newcommand{\Fp}[0]{{\mathbb{F}_p}}
+\newcommand{\Fpbar}[0]{\bar{\mathbb{F}_p}}
+\newcommand{\Fpn}[0]{{\mathbb{F}_{p^n} }}
+\newcommand{\FFbar}[0]{{ \bar{ \mathbb{F}} }}
 \newcommand{\fq}[0]{{\mathbb{F}_{q}}}
 \newcommand{\fqr}[0]{{\mathbb{F}_{q^r}}}
 \newcommand{\GF}[0]{{\mathbb{GF}}}
@@ -55,21 +58,26 @@
 \newcommand{\zlz}[0]{\mathbb{Z}/\ell\mathbb{Z}}
 \newcommand{\zlnz}[0]{\mathbb{Z}/\ell^n\mathbb{Z}}
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
+\newcommand{\QQp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
+\newcommand{\ZZp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
-\newcommand{\FFp}[0]{\mathbb{F}_p}
 \newcommand{\chp}[0]{\operatorname{ch. p}}
 \newcommand{\fp}[0]{\operatorname{fp}}
-\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand{\HT}[0]{{\operatorname{HT}}}
+\newcommand{\LC}[0]{{\mathrm{LC}}}
 \newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
+\newcommand{\Ric}[0]{\operatorname{Ric}}
+\newcommand{\Ahat}[0]{\hat{ \operatorname{A}}_g }
 \newcommand{\covol}[0]{\operatorname{covol}}
+\newcommand{\bP}[0]{\operatorname{bP}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
 \newcommand{\HF}[0]{\operatorname{HF}}
-\newcommand{\CF}[0]{\operatorname{HF}}
-\newcommand{\ZHS}[0]{\operatorname{ZHS}}
+\newcommand{\CF}[0]{\operatorname{CF}}
+\newcommand{\HFK}[0]{\operatorname{HFK}}
+\newcommand{\ZHS}[0]{\mathbb{Z}\operatorname{HS}}
 \newcommand{\QHS}[0]{\operatorname{QHS}}
 \newcommand{\ZHB}[0]{\operatorname{ZHB}}
 \newcommand{\QHB}[0]{\operatorname{QHB}}
@@ -105,7 +113,6 @@
 \newcommand{\arccot}[0]{\operatorname{arccot}}
 \newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
-\newcommand{\Sp}[0]{{\operatorname{Sp}}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
@@ -114,7 +121,6 @@
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
 \newcommand{\afp}[0]{A_{/\FF_p}}
-\newcommand{\Fp}[0]{{\FF_p}}
 \newcommand{\HP}[0]{{\operatorname{HP}}}
 \newcommand{\TP}[0]{{\operatorname{TP}}}
 \newcommand{\HC}[0]{{\operatorname{HC}}}
@@ -124,6 +130,7 @@
 \newcommand{\THC}[0]{{\operatorname{THC}}}
 \newcommand{\TC}[0]{{\operatorname{TC}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
+\newcommand{\SH}[0]{{\operatorname{SH}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
@@ -168,7 +175,12 @@
 \newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
+\newcommand{\FI}[0]{{\mathsf{FI}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
+\newcommand{\Finset}[0]{{\mathsf{FinSet}}}
+\newcommand{\sSet}[0]{{\mathsf{sSet}}}
+\newcommand{\Spaces}[0]{{\mathsf{Spaces}}}
+\newcommand{\Sp}[0]{{\mathsf{Sp}}}
 \newcommand{\sets}[0]{{\mathsf{Set}}}
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
 \newcommand{\Grpd}[0]{{\mathsf{Grpd}}}
@@ -177,6 +189,7 @@
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\CRing}[0]{\mathsf{CRing}}
+\newcommand{\Ringedspace}[0]{\mathsf{RingSp}}
 \newcommand{\Field}[0]{\mathsf{Field}}
 \newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
@@ -212,8 +225,10 @@
 \newcommand{\Comm}[0]{\mathsf{Comm}}
 \newcommand{\Top}[0]{{\mathsf{Top}}}
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\ho}[0]{{\mathsf{ho}}}
 \newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\Aff}[0]{{\mathsf{Aff}}}
 \newcommand{\Schf}[0]{{\mathsf{Schf}}}
 \newcommand{\Rep}[0]{{\mathsf{Rep}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
@@ -223,26 +238,22 @@
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Fieldsover}[1]{{ \mathsf{Fields}_{#1} }}
+\newcommand{\bung}{{\mathsf{Bun}_G}}
+\newcommand{\set}{{\mathsf{Set} }}
 
-\newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
-\newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
-\newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
-\newcommand{\set}[0]{{\operatorname{Set}}}
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
-\newcommand{\Ext}{\operatorname{Ext}}
+\DeclareMathOperator{\Ext}{Ext}
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
-\newcommand{\fin}[0]{{\operatorname{fin}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
 \newcommand{\annd}[0]{{\operatorname{ and }}}
-\newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
 \newcommand{\discriminant}[0]{{\Delta}}
@@ -271,7 +282,7 @@
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
-\newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
+\newcommand{\Spinc}[0]{\mathrm{Spin}^{{c} }}
 \newcommand{\slope}[0]{{\mathrm{slope}}}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
@@ -332,6 +343,7 @@
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
 \newcommand{\lied}[0]{{\mathfrak{d}}}
+\newcommand{\lier}[0]{{\mathfrak{r}}}
 \newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\gl}[0]{{\mathfrak{gl}}}
 \newcommand{\liesl}[0]{{\mathfrak{sl}}}
@@ -343,11 +355,9 @@
 \newcommand{\lieso}[0]{{\mathfrak{so}}}
 \newcommand{\liesp}[0]{{\mathfrak{sp}}}
 \newcommand{\lieu}[0]{{\mathfrak{u}}}
-\newcommand{\Lie}[0]{\operatorname{Lie}}
 \newcommand{\nilrad}[0]{{\mathfrak{N}}}
 \newcommand{\jacobsonrad}[0]{{\mathfrak{J}}}
 \newcommand{\mm}[0]{{\mathfrak{m}}}
-\newcommand{\pr}[0]{{\operatorname{pr}}}
 \newcommand{\mapsvia}[1]{\xrightarrow{#1}}
 \newcommand{\fromvia}[1]{\xleftarrow{#1}}
 \newcommand{\mapstovia}[1]{\xmapsto{#1}}
@@ -362,6 +372,7 @@
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\Prism}[0]{\mathsf{Prism}}
+\newcommand{\Solid}[0]{\mathsf{Solid}}
 \newcommand{\Spf}[0]{\mathsf{Spf}}
 \newcommand{\WCart}[0]{\mathsf{WCart}}
 \newcommand{\padic}[0]{p\dash\text{adic}}
@@ -396,33 +407,6 @@
 \newcommand{\mcx}[0]{{\mathcal{X}}}
 \newcommand{\mcz}[0]{{\mathcal{Z}}}
 \newcommand{\kfq}[0]{K_{/\mathbb{F}_q}}
-\newcommand{\cl}[0]{{ \operatorname{cl}} }
-\newcommand{\Cl}[0]{{ \operatorname{Cl}} }
-\newcommand{\St}[0]{{ \operatorname{St} }}
-\newcommand{\DSt}[0]{{ \operatorname{DSt}}}
-\newcommand{\trdeg}[0]{\operatorname{trdeg}}
-\newcommand{\dist}[0]{\operatorname{dist}}
-\newcommand{\Dist}[0]{\operatorname{Dist}}
-\newcommand{\crit}[0]{\operatorname{crit}}
-\newcommand{\Crit}[0]{\operatorname{Crit}}
-\newcommand{\diam}[0]{{\operatorname{diam}}}
-\newcommand{\gal}[0]{\operatorname{Gal}}
-\newcommand{\diff}[0]{\operatorname{Diff}}
-\newcommand{\diag}[0]{\operatorname{diag}}
-\newcommand{\soc}[0]{\operatorname{Soc}}
-\newcommand{\hd}[0]{\operatorname{Head}}
-\newcommand{\grad}[0]{\operatorname{grad}}
-\newcommand{\hilb}[0]{\operatorname{Hilb}}
-\newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
-\newcommand{\Frame}[0]{{\operatorname{Frame}}}
-\newcommand{\Fr}[0]{{\operatorname{Fr}}}
-\newcommand{\prin}[0]{{\operatorname{Prin}}}
-\newcommand{\Taut}[0]{{\operatorname{Taut}}}
-\newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
-\newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
-\newcommand{\smooth}[0]{{\operatorname{sm}}}
-\newcommand{\fd}[0]{{\operatorname{fd}}}
-\newcommand{\semisimple}[0]{{\operatorname{ss}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -438,6 +422,7 @@
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
+\newcommand{\Stab}[0]{{\operatorname{Stab}}}
 \newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
@@ -462,9 +447,11 @@
 \newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
 \newcommand{\strike}[1]{{\enclose{horizontalstrike}{#1}}}
 \newcommand{\st}[0]{{~\mathrel{\Big|}~}}
+\newcommand{\St}[0]{{\mathsf{St}}}
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
+\newcommand{\smash}[0]{\wedge}
 \newcommand{\Wedge}[0]{\bigwedge}
 \newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
@@ -493,7 +480,6 @@
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \renewcommand{\div}[0]{\operatorname{Div}}
 \newcommand{\Div}[0]{\operatorname{Div}}
-\newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
 \newcommand{\Sq}[0]{\operatorname{Sq}}
 \renewcommand{\hat}[1]{\widehat{#1}}
@@ -518,14 +504,16 @@
 \newcommand{\increasesto}[0]{\nearrow}
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
+
+\DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
+\DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
+\DeclareMathOperator{\submfds}{SubMfds}
 \DeclareMathOperator{\crys}{crys}
 \DeclareMathOperator{\rad}{rad}
-\DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \DeclareMathOperator*{\hocolim}{hocolim}
-\DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
 \DeclareMathOperator{\Hom}{Hom}
@@ -545,9 +533,72 @@
 \DeclareMathOperator{\projection}{Proj}
 \DeclareMathOperator{\Der}{Der}
 \DeclareMathOperator{\len}{len}
+\DeclareMathOperator{\Loop}{{\Omega}}
+\DeclareMathOperator{\Suspend}{{\Sigma}}
+\DeclareMathOperator{\B}{{\mathsf{B} }}
+\DeclareMathOperator{\D}{{\mathsf{D} }}
+\DeclareMathOperator{\K}{{\mathsf{K} }}
+\DeclareMathOperator{\H}{{\mathsf{H}\mkern-3mu }}
+\DeclareMathOperator{\T}{{T}}
+\DeclareMathOperator{\Rd}{{\mathbb{R} }}
+\DeclareMathOperator{\Ld}{{\mathbb{L} }}
+\DeclareMathOperator{\Bl}{Bl}
+\DeclareMathOperator{\Triv}{Triv}
+\DeclareMathOperator{\Tot}{Tot}
+\DeclareMathOperator{\Forget}{Forget}
+\DeclareMathOperator{\Griff}{Griff}
+
+\newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
+\newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
+
+
+\newcommand{\DSt}[0]{{ \operatorname{DSt}}}
+
+\newcommand{\Lie}[0]{\operatorname{Lie}}
+\newcommand{\pr}[0]{{\operatorname{pr}}}
+\newcommand{\cl}[0]{{ \operatorname{cl}} }
+\newcommand{\Cl}[0]{{ \operatorname{Cl}} }
+\newcommand{\trdeg}[0]{\operatorname{trdeg}}
+\newcommand{\dist}[0]{\operatorname{dist}}
+\newcommand{\Dist}[0]{\operatorname{Dist}}
+\newcommand{\crit}[0]{\operatorname{crit}}
+\newcommand{\Crit}[0]{\operatorname{Crit}}
+\newcommand{\diam}[0]{{\operatorname{diam}}}
+\newcommand{\gal}[0]{\operatorname{Gal}}
+\newcommand{\diff}[0]{\operatorname{Diff}}
+\newcommand{\diag}[0]{\operatorname{diag}}
+\newcommand{\grad}[0]{\operatorname{grad}}
+\newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
+\newcommand{\Places}[0]{{\operatorname{Places}}}
+
+\DeclareMathOperator{\hilb}{Hilb}
+\DeclareMathOperator{\Curv}{Curv}
+
+\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\Frame}{Frame}
+\DeclareMathOperator{\OFrame}{OFrame}
+\DeclareMathOperator{\UFrame}{UFrame}
+\DeclareMathOperator{\prin}{prin}
+\DeclareMathOperator{\Prin}{Prin}
+\DeclareMathOperator{\Taut}{Taut}
+
+\DeclareMathOperator{\Frob}{Frob}
+
+\DeclareMathOperator{\hd}{Head}
+\DeclareMathOperator{\soc}{Soc}
+\DeclareMathOperator{\ind}{ind}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\coInd}{coInd}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\cores}{cores}
+\DeclareMathOperator{\infl}{inf}
+\DeclareMathOperator{\coinfl}{coinf}
+
 \newcommand{\Suchthat}[0]{\middle\vert}
-\newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
+\newcommand{\suchthat}[0]{{~\mathrel{KBig|}~}}
 \newcommand{\delbar}[0]{\bar{\del}}
+
 
 
 \newcommand{\contains}[0]{\supseteq}
@@ -575,11 +626,14 @@
 \newcommand\even[0]{\text{even}}
 \newcommand\odd[0]{\text{odd}}
 \newcommand\hodgestar[0]{\star}
+\newcommand\dirac[0]{\strike{ \partial} }
+\newcommand\laplacian[0]{\Delta}
 \newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
 \newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
+\newcommand\fps[1]{{\left[\left[ #1 \right]\right]  }}
 \newcommand\capprod{\frown}
 \newcommand\cupprod{\smile}
 \newcommand\Path{\mathcal{P}}
@@ -607,40 +661,24 @@
 \newcommand{\integerpart}[1]{\left[ {#1}\right] }
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
-\newcommand{\Bl}[0]{\operatorname{Bl}}
-\newcommand{\Triv}[0]{{ \operatorname{Triv}}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
+\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 
-\newcommand{\Tot}[0]{\operatorname{Tot}}
+
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
 \newcommand{\equalsbecause}[1]{\overset{#1}{=}}
 \newcommand{\congbecause}[1]{\overset{#1}{\cong}}
+\newcommand{\congas}[1]{\underset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
-\newcommand{\forget}[0]{\mathrm{Forget}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
 \newcommand{\xpn}[0]{ { x^{p^n} } }
 
 
-\newcommand{\cores}[0]{\operatorname{cores}}
-\newcommand{\res}[0]{\operatorname{res}}
-\newcommand{\Res}[0]{\operatorname{Res}}
-\newcommand{\infl}[0]{\operatorname{inf}}
-\newcommand{\coinfl}[0]{\operatorname{coinf}}
-\newcommand{\ind}[0]{\operatorname{ind}}
-\newcommand{\Ind}[0]{\operatorname{Ind}}
-\newcommand{\Coind}[0]{\operatorname{coInd}}
-\newcommand{\Frob}[0]{\operatorname{Frob}}
-
-\newcommand{\submfds}{\operatorname{SubMfds}}
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
-\newcommand{\B}[0]{{ \mathsf{B}}}
-\newcommand{\D}[0]{{ \mathsf{D}}}
-\newcommand{\Rd}[0]{{ \mathsf{R}}}
-\newcommand{\Ld}[0]{{ \mathsf{R}}}
 \newcommand{\Qbar}[0]{{ \bar{ \mathbb{Q} } }}
 \newcommand{\invert}[1]{{ \left[ { \scriptstyle \frac{1}{#1} } \right] }}
 \newcommand{\Ag}[0]{{\mathcal{A}_g}}
@@ -653,6 +691,21 @@
 #3 & #4
 \end{bmatrix}
 }}
+
+
+\newcommand{\ptd}{{\scriptstyle { * } }}
+\newcommand{\fin}[0]{{\mathrm{fin}}}
+\newcommand{\fd}[0]{{\mathrm{fd}}}
+\newcommand{\fg}[0]{{\mathrm{fg}}}
+\newcommand{\ft}[0]{{\mathrm{ft}}}
+\newcommand{\smooth}[0]{{\operatorname{sm}}}
+\newcommand{\semisimple}[0]{{\operatorname{ss}}}
+\newcommand{\gon}[0]{{\dash\mathrm{gon}}}
+\newcommand{\semi}[0]{{\operatorname{semi}}}
+\newcommand{\inc}[0]{{\operatorname{inc}}}
+\newcommand{\Ball}[0]{{B}}
+\newcommand{\hq}[0]{{/}}
+\newcommand{\normcomplex}[1]{{\norm{\complex{#1}}}}
 
 # Tuesday, January 12
 
@@ -1463,12 +1516,12 @@ a symmetric bilinear form with $g_p(u, v) \geq 0$ with equality if and only if $
 :::
 
 :::{.definition title="The Frame Bundle"}
-Define $\Frame_p(X) \da \ts{\text{bases of } T_p X}$, and $\Frame X \da \Union_{p\in X} \Frame_p X$.
+Define $\Frame_p(X) \da \ts{\text{bases of } T_p X}$, and $\Frame(X) \da \Union_{p\in X} \Frame_p(X)$.
 :::
 
 :::{.remark}
-More generally, $\Frame \mathcal{E}$ can be defined for any vector bundle \( \mathcal{E} \), so $\Frame X \da \Frame TX$.
-Note that $\Frame X$ is a principal $\GL_n(\RR)\dash$bundle where $n\da \rank(\mathcal{E})$.
+More generally, $\Frame (\bundle{E})$ can be defined for any vector bundle \( \mathcal{E} \), so $\Frame(X) \da \Frame(TX)$.
+Note that $\Frame(X)$ is a principal $\GL_n(\RR)\dash$bundle where $n\da \rank(\mathcal{E})$.
 This follows from the fact that the transition functions are fiberwise in $\GL_n(\RR)$, so the transition functions are given by left-multiplication by matrices.
 :::
 
@@ -1483,16 +1536,16 @@ This is necessary for compatibility on overlaps.
 :::
 
 :::{.definition title="Orthogonal Frame Bundle"}
-The **orthogonal frame bundle** of a vector bundle \( \mathcal{E}  \) equipped with a metric $g$ is defined as $\OFrame_p \mathcal{E}\da \ts{\text{orthonormal bases of } \mathcal{E}_p}$, also written $O_r(\RR)$ where $r \da \rank( \mathcal{E})$. 
+The **orthogonal frame bundle** of a vector bundle \( \mathcal{E}  \) equipped with a metric $g$ is defined as $\OFrame_p(\bundle{E}) \da \ts{\text{orthonormal bases of } \mathcal{E}_p}$, also written $O_r(\RR)$ where $r \da \rank( \mathcal{E})$. 
 :::
 
 :::{.remark}
 The fibers $P_x \to \ts {x}$ of a principal $G\dash$bundle are naturally **torsors** over $G$, i.e. a set with a free transitive $G\dash$action.
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Hermitian metric"}
 Let \( \mathcal{E}\to X  \) be a complex vector bundle.
-Then a **hermitian metric** is a hermitian form on every fiber, i.e. 
+Then a **Hermitian metric** is a hermitian form on every fiber, i.e. 
 \[
 h_p: \mathcal{E}_p \cross \overline{\mathcal{E}_p } \to \CC
 .\]
@@ -1511,7 +1564,7 @@ There is a *conjugate-linear* map given by conjugation, i.e. $L(cv) = \bar{c} L(
 :::
 
 :::{.definition title="Unitary Frame Bundle"}
-We define the **unitary frame bundle** $\UFrame(\mathcal{E}) \da \Union_p \UFrame(\mathcal{E})_p$, where at each point this is given by the set of orthogonal frames of \( \mathcal{E}_p  \) given by $(e_1, \cdots, e_n)$ where $h(e_i , \bar {e_j} ) = \delta_{ij}$.
+We define the **unitary frame bundle** $\UFrame(\bundle{E}) \da \Union_p \UFrame(\bundle{E})_p$, where at each point this is given by the set of orthogonal frames of \( \mathcal{E}_p  \) given by $(e_1, \cdots, e_n)$ where $h(e_i , \bar {e_j} ) = \delta_{ij}$.
 :::
 
 :::{.remark}
@@ -1534,7 +1587,7 @@ For $G=\ZZ/2\ZZ$, for any (possibly non-oriented) manifold $X$ there is an **ori
 P\da \ts{(x, O) \st x\in X,\, O \text{ is an orientation of }T_p X}
 .\]
 Note that $P$ is an oriented manifold, $P\to X$ is a local isomorphism, and has a canonical orientation. (?)
-This can also be written as $P = \Frame X / \GL_n^+(\RR)$, since an orientation can be specified by a choice of $n$ linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
+This can also be written as $P = \Frame(X) / \GL_n^+(\RR)$, since an orientation can be specified by a choice of $n$ linearly independent vectors where we identify any two sets that differ by a matrix of positive determinant.
 :::
 
 :::{.definition title="Associated Bundles"}
@@ -1547,13 +1600,13 @@ which is well-defined since there is a right action on the first component and a
 :::
 
 :::{.example title="?"}
-Note that $\Frame(\mathcal{E})$ is a $\GL_r(\RR)\dash$bundle and the map $\GL_r(\RR) \mapsvia{\id} \GL(\RR^r)$ is a representation.
+Note that $\Frame(\bundle{E})$ is a $\GL_r(\RR)\dash$bundle and the map $\GL_r(\RR) \mapsvia{\id} \GL(\RR^r)$ is a representation.
 At every fiber, we have $G \cross_G V = (p, v)/\sim$ where there is a unique representative of this equivalence class given by $(e, pv)$.
 So $P\cross_G V_p \to \ts{p} \cong V_x$.
 
 
 :::{.exercise title="?"}
-Show that $\Frame( \mathcal{E}) \cross_{\GL_r(\RR)} \RR^r \cong \mathcal{E}$.
+Show that $\Frame(\bundle{E}) \cross_{\GL_r(\RR)} \RR^r \cong \mathcal{E}$.
 This follows from the fact that the transition functions of $P \cross_G V$ are given by left multiplication of $t_{UV}: U \intersect V \to G$, and so by the equivalence relation, $\im t_{UV} \in \GL(V)$.
 
 :::
@@ -1673,7 +1726,7 @@ Equivalently, we can take $L\tensor_\RR \OO$, and $L\tensor 1$ form flat section
 
 ## Sheaf Cohomology
 
-:::{.definition title="?"}
+:::{.definition title="Čech complex"}
 Let \( \mathcal{F}  \) be a sheaf of abelian groups on a topological space $X$, and let \( \mathfrak{U} \da \ts{U_i} \covers X  \) be an open cover of $X$.
 Let $U_{i_1, \cdots, i_p} \da U_{i_1} \intersect U_{i_2} \intersect\cdots \intersect U_{i_p}$.
 Then the **Čech Complex** is defined as 
@@ -1917,7 +1970,6 @@ Any vector bundle on a smooth manifold is acyclic.
 Using the fact that \( \Omega^k \) is acyclic and the above resolution of $\ul{\RR}$, we can write $H^k(X; \RR) = \ker(d_k) / \im d_{k-1} \da H^k_{dR}(X; \RR)$.
 :::
 
-
 :::{.remark}
 Now letting $X \in \Mfd_\CC$, recalling that \( \Omega^p \) was the sheaf of holomorphic \( p \dash \)forms.
 Locally these are of the form $\sum_{\abs{I} = p} f_I(\vector{z}) dz^I$ where $f_I(\vector{z})$ is holomorphic.
@@ -1931,8 +1983,6 @@ The first allows only holomorphic sections, whereas the latter allows smooth sec
 What can you apply to a smooth $(p, 0)$ form to check if it's holomorphic?
 :::
 
-
-
 :::{.example title="?"}
 For $p=0$, we have
 \[
@@ -1942,8 +1992,7 @@ where we have the sheaf of holomorphic functions mapping to the sheaf of smooth 
 We essentially want a version of checking the Cauchy-Riemann equations.
 :::
 
-
-:::{.definition title="?"}
+:::{.definition title="$\del$ and $\delbar$ operators"}
 Let \( \omega\in A^{p, q}(X) \) where 
 \[
 d \omega = \sum \dd{f_I}{z_j} dz^j \wedge dz^I \wedge d\bar{z}^J + \sum_j \dd{f_I}{\bar{z}_j} d\bar{z}^j \wedge dz^I d\bar{z}^J\da \del + \bar{\del} 
@@ -1951,13 +2000,11 @@ d \omega = \sum \dd{f_I}{z_j} dz^j \wedge dz^I \wedge d\bar{z}^J + \sum_j \dd{f_
 with $\abs I = p, \abs J = q$.
 :::
 
-
 :::{.example title="?"}
 The function $f(z) = z\bar{z} \in A^{0, 0}(\CC)$ is smooth, and $df = \bar{z} dz + z d\bar{z}$.
 This can be checked by writing $z^j = x^j + iy^j$ and $\bar z^j = x^j - iy_j$, and $\dd{}{\bar z} g = 0$ if and only if $g$ is holomorphic.
 Here we get $\del \omega \in A^{p+1, q}(X)$ and $\bar{\del} \in A^{p, q+1}(X)$, and we can write $d(z \bar z) = \del(z\bar z) + \delbar(z\bar z)$.
 :::
-
 
 :::{.definition title="Cauchy-Riemann Equations"}
 Recall the Cauchy-Riemann equations: \( \omega \) is a holomorphic $(p, 0) \dash$form on $\CC^n$ if and only if $\delbar \omega = 0$.
@@ -2187,7 +2234,7 @@ In this case, the rows of \( M ^{-1} \)  will form a basis of the dual basis.
 :::
 
 
-:::{.definition title="?"}
+:::{.definition title="Index of a lattice"}
 The **index** of a lattice is $\abs{ \det M}$.
 :::
 
@@ -2219,12 +2266,12 @@ For the torus, since the dimension is $2 \mod 4$, you get the skew-symmetric mat
 :::
 
 
-:::{.definition title="?"}
+:::{.definition title="Nondegenerate lattices"}
 A lattice is **nondegenerate** if $\det M \neq 0$.
 :::
 
 
-:::{.definition title="?"}
+:::{.definition title="Base change of lattices"}
 The tensor product $L \tensor_\ZZ \RR$ is a vector space with an $\RR\dash$valued symmetric bilinear form.
 This allows extending the lattice from $\ZZ^n$ to $\RR^n$.
 :::
@@ -2350,7 +2397,7 @@ Note that any simply-laced Dynkin diagram yields some lattice.
 For example, $E_{10}$ is unimodular of signature $(1, 9)$, and it turns out that $E_{10} \cong E_8 \oplus H$.
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Unimodular lattice II"}
 Take 
 \[ 
 \mathbf{II}_{a, a+8b} \da \bigoplus_{i=1}^a H \oplus \bigoplus_{j=1}^b E_8 
@@ -2410,7 +2457,7 @@ E.g. this prohibits $\beta_2 =7$, since then the signature couldn't possibly be 
 
 ## Characteristic Classes
 
-:::{.definition title="?"}
+:::{.definition title="Classifying space"}
 Let $G$ be a topological group, then a **classifying space** $EG$ is a contractible topological space admitting a free continuous \(G\dash\)action with a "nice" quotient.
 :::
 
@@ -2622,7 +2669,7 @@ H^*(BO_n, \ZZ/2\ZZ) = \ZZ/2\ZZ[w_1, w_2, \cdots]
 .\]
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Stiefel-Whitney class"}
 Given any principal $O_n\dash$bundle $P\to X$, there is an induced map $X \mapsvia{f} BO_n$, so we can pull back the above generators to define the **Stiefel-Whitney classes** $f^* w_i$.
 :::
 
@@ -2888,7 +2935,7 @@ The **Chern character** is defined as
 .\]
 :::
 
-:::{.definition title="Todd Class"}
+:::{.definition title="Total Todd class"}
 The **total Todd class** 
 \[
 \td(\bundle{E})
@@ -3044,7 +3091,7 @@ This only applies to holomorphic vector bundles or $\OO\dash$modules!
 Let $C$ be a compact connected Riemann surface, i.e. $X\in \Mfd_\CC$ with $\dim_\CC(X) = 1$, and let $\bundle{L}\to C$ be a holomorphic line bundle.
 Then
 \[
-\chi(C, \bundle{L}) = \deg(L) + (1-g) && \text{where } \int_C c_1(\bundle{L})
+\chi(C, \bundle{L}) = \deg(L) + (1-g) && \text{where } \deg(L) \da \int_C c_1(\bundle{L})
 \]
 and $g$ is the genus of $C$.
 :::
@@ -3679,8 +3726,8 @@ Note that the total space is $\Bl_0(\CC^{n+1})$ is the **blowup** at zero, which
 
 :::{.remark}
 Let $X$ be an algebraic variety, i.e. spaces cut out by polynomial equations, for example \( \ts{ xy = 0 } \subseteq \CC^2 \) which has a singularity at the origin.
-A **divisor** is a $\ZZ\dash$linear subvariety of codimension 1.
-Note that for a curve $X$, this gives back the definition in terms of points.
+A **divisor** is a $\ZZ\dash$linear combination of subvarieties of codimension 1.
+Note that for a curve $X$, this recovers the definition involving points.
 For $D$ a divisor on $X$, we associated a bundle $\OO_X(D)$ which had a meromorphic section with a zero/pole locus whose divisor was precisely $D$.
 
 Recall the construction: we chose a point, then a trivializing neighborhood where the transition functions where $V$.
@@ -4130,7 +4177,7 @@ If \( ( \complex{\bundle{E}}, d) \) is an elliptic complex of smooth vector bund
 
 
 :::{.remark}
-Here we define \( \ch( \complex{\bundle{E}} \da \sum_i (-1)^i \ch( \bundle{E}^i ) \).
+Here we define \( \ch( \complex{\bundle{E}} ) \da \sum_i (-1)^i \ch( \bundle{E}^i ) \).
 What does it mean to divide by the Euler class?
 Let \( \ts{ x_i, -x_i } \)  be the Chern roots of the complexified tangent bundle \( TX\tensor \CC \), then \( \eul(X) \da \prod x_i \) is the product where we pick one of each of the Chern roots from each of the pairs.
 The preferred sign to choose is the one for which \( \int_X \prod x_i = \chi_\Top(X) \).
@@ -4198,7 +4245,7 @@ Letting $d=\dim X = 2n$, we have
 :::
 
 :::{.example title="?"}
-We have prove HRR using this theorem: we have
+We can prove HRR using this theorem: we have
 \[
 \chi(X, \bundle{E} ) = \chi( \bundle{E} \tensor A^{0, \wait}, \delbar ) \equalsbecause{\text{ASIT}} \int_X { \ch(\bundle{E} \tensor A^{0, \wait} ) \over \eul(X) } \td(TX \tensor_R \CC)
 .\]
@@ -4767,6 +4814,9 @@ A **metric** on \( \bundle{E} \) is a smoothly varying positive definite inner p
 \node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-03-17_13-55.pdf_tex} };
 \end{tikzpicture}
 
+\todo[inline]{Fix this diagram! Need to remember what it was demonstrating.}
+
+
 For $v, w\in \bundle{E}_p$, we want a pairing \( g_p(v, w): \bundle{E}_p^{\tensor 2} \to \RR \).
 To think about this globally, this should be a map
 \[
@@ -4775,8 +4825,8 @@ g: \bundle{E}^{\tensor 2} \to \OO
 where \( g_p: \bundle{E}_p^{\tensor 2} \to \RR \).
 Note that this map is \( \OO\dash \)linear, which follows from the fact that it's $\RR\dash$linear on each fiber, or equivalently it is a map of vector bundles.
 We should also have that $g(s\tensor s) \in \OO(X)$ is a smooth function, and we require $g(s\tensor s) \geq 0$.
-We also require $g(s\tensor s)(p) = 0 \iff s_o = 0$ and $g(s\tensor t) = g(t\tensor s)$.
-This makes $g\in (\bundle{E}^{\tensor 2})\dual \tensor \OO = (\bundle{E}\dual)^{\tensor 2}(X)$.
+We also require $g(s\tensor s)(p) = 0 \iff s_0 = 0$ and $g(s\tensor t) = g(t\tensor s)$.
+This implies that $g\in (\bundle{E}^{\tensor 2})\dual \tensor \OO = (\bundle{E}\dual)^{\tensor 2}(X)$.
 The symmetric condition means that $g\in \Sym^2 \bundle{E}\dual(X)$.
 :::
 
@@ -4873,7 +4923,7 @@ So we could define
 \[
 \delbar^\dagger \alpha = \conj{- {\delbar(\conj{\alpha} h )} \over dV }
 .\]
-Note that \( \alpha\mapsto \conj{ \alpha} h \), so \( \alpha\in \ker \delbar^\dagger \iff \conj{ \alpha}h\in \ker \delbar\) 
+Note that \( \alpha\mapsto \conj{ \alpha} h \), so \( \alpha\in \ker \delbar^\dagger \iff \conj{ \alpha}h\in \ker \delbar\).
 Then $\ker (\delbar^\dagger) = H^0(L\dual \tensor K)$.
 :::
 
@@ -4881,7 +4931,7 @@ Then $\ker (\delbar^\dagger) = H^0(L\dual \tensor K)$.
 # Friday, March 19
 
 :::{.remark}
-Recall Serre duality: let $C\in \Mfd_\CC^{\cpt,\oriented}$ and $L\to C \in \Bun(\Hol)$.
+Recall Serre duality: let $C\in \Mfd_\CC(\cpt,\oriented)$ and $L\to C \in \Bun(\Hol)$.
 Then
 \[
 h^1(L) = h^0(L\dual \tensor K_C)
@@ -5151,7 +5201,7 @@ Conversely, we can always define \( g(v, w) \da - \omega(v, Jw) \), but a priori
 This will be symmetric, but potentially not positive-definite.
 :::
 
-:::{.definition title="?"}
+:::{.definition title="$\omega\dash$tame almost complex structures"}
 An almost complex structure $J$ is **\( \omega\dash \)tame** if $g(v, w) = - \omega(v, Jw)$ is positive definite.
 :::
 
@@ -5439,7 +5489,7 @@ A^{p, q} &\da \ts{
 }
 .\]
 
-For $M$ a Kahler manifold, we have
+For $M$ a Kähler manifold, we have
 \[
 \mathcal{H}^k(M) = \bigoplus _{p+q = k} \mathcal{H}^{p, q}(M) 
 \\  \\
@@ -5553,7 +5603,7 @@ Moreover, since $\Delta_d$ is a real operator, we obtain
 :::{.remark}
 Some consequences:
 
-For $M$ a Kahler manifold, the odd Betti numbers $\beta_{2i+1}(M) \da \dim H_{\dR}^{2i+1}(M; \CC)$ are even.
+For $M$ a Kähler manifold, the odd Betti numbers $\beta_{2i+1}(M) \da \dim H_{\dR}^{2i+1}(M; \CC)$ are even.
 This is because
 \[
 \bigoplus _{p+q=k} \mathcal{H}^{p, q} \cong \mathcal{H}^{2i+1}(M) \cong H_{\dR}^{2i+1}(M) 
@@ -6763,7 +6813,7 @@ Check out complete intersections.
 # Blowups and Blowdowns (Wednesday, April 14)
 
 
-:::{.definition title="?"}
+:::{.definition title="Blowup"}
 Let $S \in \Mfd_\CC^2$ be a complex surface and $p\in S$ a point, and let $(x, y)$ be local holomorphic coordinates on a neighborhood of $U$ containing $p$.
 Without loss of generality, $p = (0, 0)$ in these coordinates.
 Set $U^* \da U \smts{p}$, and consider the holomorphic map 
@@ -7492,7 +7542,7 @@ Check that $\dim_\RR \Cl(V) = 2^{\dim V} < \infty$.
 
 # Friday, April 23
 
-:::{.definition title="?"}
+:::{.definition title="Clifford algebra"}
 Given $(V, \cdot)$ an inner product space, we defined
 \[
 \Cl(V) \da { \bigoplus _{n\geq 0} V^{\tensor n} \over \gens{ v\tensor w + w\tensor v = 2v\cdot w } }
@@ -7626,7 +7676,7 @@ e_1 e_2 \cdot e_1 e_3
 Show that $\Cl(\RR^3) \cong \HH \oplus \HH$.
 :::
 
-:::{.definition title="?"}
+:::{.definition title="Even and odd parts of the Clifford algebra"}
 $\Cl(V)$ has a $\ZZ/2$ ("super") grading, so
 \[
 \Cl(V) \circ \Cl_0(V) \oplus \Cl_1(V) && \Cl_i(V) \cdot \Cl_j(V) \subset \Cl_{i+j\mod 2}(V)
@@ -7757,7 +7807,7 @@ If $w_2(X) = 0$, then the spin structures are torsors over $H^1(X; \ZZ/2)$.
 :::
 
 :::{.remark}
-Recall that a $G\dash$torsor is a set with a free transitive of $G$.
+Recall that a $G\dash$torsor is a set with a free transitive $G\dash$action.
 For example, the fibers of a principal bundle are torsors.
 Given any two torsors, we can compare them using elements of $G$, but there is no distinguished element.
 For example, $\AA_n$ is a torsor over the vector space $k^n$.
@@ -8009,4 +8059,380 @@ which says $\phi( \rho(g) \cdot v) = \lambda (\rho(g) \cdot v) \implies \rho(g) 
 We used it here by
 This rephrases Schur's lemma!
 :::
+
+
+# Spin Bundles and Dirac Operators (Monday, May 03)
+
+
+:::{.remark}
+Last time: we defined a Spin structure on an oriented manifold $M$ as a lift of the principal $\SO(n)$ bundle $P\to M$ (*unassociated* to $TM$) to a $\Spin(n)$ bundle $\tilde P$.
+There was a **spin representation** $\Spin(n) \actson \SS$, which is irreducible for $\Cl(\RR^n)$ and splits as $\SS = \SS^+ \oplus \SS^-$, which are $\Spin(n)$ subrepresentations.
+We defined **spinor bundles** 
+\[
+\tilde P \fiberprod{\Spin(n)} \SS = \SS_M = \SS_M^+ \oplus \SS_M^-
+.\]
+:::
+
+
+:::{.example title="Dimension 4"}
+If $\dim_\RR M = 4$, then $\SS_M^\pm \in \Vect_\CC^{\rk = 2}$, i.e. they are complex vector bundles of rank 2.
+Consider the eigenspaces $-e_1e_2 e_3 e_4 \actson \SS$, then $e_i\cdot(\wait): \SS^{\pm} \to \SS^{\mp}$.
+:::
+
+
+:::{.remark}
+Principal bundle: fibers are left $G\dash$torsors.
+In the fiber product, the group sits in the middle and acts on each factor. 
+So $\tilde P$ eats the right $G\dash$action, and $\SS$ eats the left action.
+Remarkably, for Spin bundles, there is an action leftover.
+:::
+
+
+:::{.proposition title="?"}
+The spin bundle $\SS_M$ naturally has the structure of a $\Cl(M)\dash$module.
+:::
+
+
+:::{.proof title="?"}
+We have a Clifford action
+\[
+\Cl(\RR^n) \tensor \SS &\to \SS \\
+x\tensor s &\mapsto x\cdot s
+.\]
+
+Recall that we have a natural conjugation action $\Spin(n) \actson \Cl(\RR^n)$ where $g \mapsto g(\wait)g\inv$, and similarly $\Spin(n) \actson \SS$ by $g\mapsto g\cdot(\wait)$.
+Given any $V\to W$ of $G\dash$modules, any $P\in \Bun_G^{\Prin}$ yields an induced module 
+\[
+P \fiberprod{G} V \to P \fiberprod{G} W
+,\]
+and moreover $\tilde P \fiberprod{\Spin(n)} \Cl(\RR^n) = \Cl(M)$.
+We then conclude that there is an action $\Cl(M) \tensor \SS_M \to \SS_M$, the **Clifford multiplication**.
+:::
+
+
+:::{.remark}
+We have an isomorphism of bundles (not of algebras) $\Cl(M) \cong \Extalg T\dual M$, and any one form $\omega$ is an analogue of an element of $V^{\tensor 1}$, and $\omega \cdot (\SS^+, \SS^-) \in \SS_M^- \oplus \SS_M^+$.
+:::
+
+
+:::{.definition title="Clifford connection"}
+A connection $\nabla$ on $\SS$ is a **Clifford connection** if 
+\[
+\nabla(x\cdot s) = x \cdot \nabla (s) + d(x) \cdot s 
+&& x\in H^0 \Cl(M) = H^0\qty{ \Extalg^* T\dual M} ,\,\, s\in H^0 (\SS_M)
+,\]
+where $d$ is the de Rham differential.
+:::
+
+
+:::{.remark}
+It is not obvious that a Clifford connection exists!
+We have $\SS_M = \tilde P \fiberprod{\Spin(n)} \SS$, so it suffices to give a connection on $\tilde P$ which is $\Spin(n)$ invariant, since any associated bundle will inherit the connection.
+Idea: we need a notion of parallel transport.
+This is a principal $\Spin(n)$ bundle, so the fibers look like $\Spin(n)$, and we want to lift paths in $M$ to paths in $\tilde P$:
+
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-05-03_14-16.pdf_tex} };
+\end{tikzpicture}
+
+It suffices to give a connection on $P$, and using that $\tilde P\to P$ is a 2 to 1 covering map, we can take a connecting on $P$ coming from $\OFrame(T\dual M, g\dual)$.
+So it further suffices to produce a connection on $T\dual M$ preserving orthogonality of frames under parallel transport, which is essentially the definition of the Levi-Cevita connection $\nabla^\LC$.
+Then the $\nabla$ associated to $\nabla^\LC$ on $P$ is a Clifford connection, yielding existence.
+:::
+
+
+:::{.remark}
+The set of Clifford connections is a torsor over $\Omega^1(M)$.
+The association is $\nabla \mapsto \nabla - \nabla^\LC$, and one can compute
+\[
+(\nabla - \nabla^\LC )(x\cdot s) = x \cdot( \nabla - \nabla^\LC )(s)
+,\]
+which exactly says that this is a $\Cl(M)\dash$linear map $\SS_M \to \SS_M \tensor \Omega^1$.
+We can write $\Cl(M) \cong \Endo(\SS_M)$, and one can check that \( [\Endo \SS_M, \Endo \SS_M] \) consists only of scalars.
+:::
+
+
+:::{.definition title="?"}
+Let \( \nabla \) be a Clifford connection on $\SS_M$ and $s\in H^0(\SS_M)$, so \( \nabla(s) \in \SS_M \tensor \Omega^1(M) \).
+Then the **Dirac operator** is defined as 
+\[
+\dirac: H^0(\SS) &\to H^0(\SS) \\
+s &\mapsto \sum _{e_i \in \Fr(T\dual M) } e_i \cdot \nabla_{e_i\dual}(s)
+\]
+where
+
+- \( \nabla(s) = H^0(\SS_M \tensor \Omega^1) \)
+- \( \nabla_{e_i\dual}(s) = \nabla(s)(e_i\dual) \in H^0(\SS_M) \) 
+
+:::
+
+
+:::{.remark}
+This makes sense locally, and is well-defined independent of choice of frame.
+Henceforth, we'll take $\nabla = \nabla^\LC$ -- in this case, if $s^+ \in H^0(\SS^\pm)$ then \( \nabla_v^{\LC}(s^\pm) \in H^0(\SS^\pm) \).
+This is an order 1 differential operator:
+\[
+\dirac_{ \nabla^\LC} = \dirac: H^0(\SS^\pm) \to H^p(\SS^{\mp})
+.\]
+
+:::
+
+
+
+:::{.proposition title="?"}
+\[
+\dirac^2 = - \laplacian
+.\]
+:::
+
+
+:::{.proof title="?"}
+Given \( \psi \in H^0(\SS) \), write $\psi = \sum_{i=1}^4 \psi_i s_i$ with the $s_i$ forming a local frame of $\SS = \SS^+ \oplus \SS^-$.
+We can write
+\[
+\dirac \psi = \sum e_i \partial_{x_i} \psi = \sum_{i=1}^4 \gamma_i \psi_{x_i}
+.\]
+where $\psi_{x_i} = \tv{ (\psi_1)_{x_i}, (\psi_2)_{x_i}, \cdots }$.
+We then have
+\[
+\dirac^2 \psi
+&= \sum_{i, j} \gamma_i \gamma_j \psi_{x_i x_j} \\
+&= -\sum_{ij} 2 (e_i \cdot_g e_j) \psi_{x_i x_j} \\
+&= -2 \sum_{ij} \delta_{ij} \psi_{x_i x_j} \\
+&= -2 \sum_i \psi_{x_i x_i} \\
+&= -2 \qty{ \sum_{i=1}^4 \partial^2_{x_i} }\psi \\
+&= -2 \laplacian
+.\]
+where we sum over *all* $i, j$ and can pair terms,
+and we use that \( \gamma_i \gamma_j + \gamma_j \gamma_i = -2 e_1 \cdot e_j \) 
+\
+
+Upshot: $\dirac \in \sqrt{ \laplacian}$, which is why the Dirac is an invariant in quantum mechanics.
+This reduces the 2nd order Schrödinger operator a 1st order operator.
+Note that $\dirac \psi = 0$ is the equation for a massless particle.
+:::
+
+> See maybe Lawson's spin geometry?
+  Or Salamon.
+
+
+
+
+
+# Wednesday, May 05
+
+## Fun Physics Aside
+
+:::{.remark}
+Last time: we showed $\Cl(X) \da \Cl(T\dual X, g\dual)$ acts on the spinor bundle $\SS_X \da \tilde P \fiberprod{\Spin(n)} \SS$ by Clifford multiplication.
+For $\dim_\RR X = 4$, we have a spliutting $\SS^+ \oplus \SS^-$ as complex rank 2 vector bundles.
+If \( \omega\in H^0 \CL(X) \)  is a one form, then \( \omega\SS_X^\pm \subset \SS^{\mp}\) .
+:::
+
+
+:::{.definition title="Clifford Connection"}
+A **Clifford connection** is a map
+\[
+\nabla: \SS_X \to \SS_X \tensor \Omega^1 \\
+.\]
+where \( \alpha \cdot s \mapsto \alpha\cdot \nabla s + dx \cdot s \).
+:::
+
+
+:::{.remark}
+There is a distinguished Clifford connection associated to \( \nabla^\LC \).
+Also recall that we defined a Dirac operator $\dirac$ and showed $\dirac^2 = -2 \laplacian$.
+:::
+
+
+:::{.definition title="The Dirac Equation"}
+The **Diract equation** is define on \( \psi\in H^0(X, \SS) \)  as
+\[
+(i \diract + m \omega)\psi = 0
+.\]
+
+Here $m$ denotes a mass, \( \omega = \omega_\CC = \prod_{i=1}^4 \gamma_i \).
+:::
+
+
+:::{.remark}
+This describes fermions in a vacuum, e.g. an electron where \( \psi \) is its wave function.
+Applying this to $\RR^4$ with $g = (dt)^2 - (dx)^2 - (dy)^2 - (dz)^2$, then this equation in $\psi$ is invariant under the Lorentz group $O(\RR^4, g)$.
+:::
+
+
+
+## Rohklin's Theorem
+
+
+:::{.theorem title="Rohklin's Theorem"}
+Let $X$ be a smooth closed oriented spin 4-manifold.
+Then the signature $\sigma(X) \da b_2^+(X) - b_2^-(X)$ (the dimensions of positive/negative definite subspaces of $H^2(X; \RR)) is divisble by 16.
+:::
+
+
+
+:::{.remark}
+This restricts what topological manifolds can admit smooth structures.
+Freedman constructed a topological manifold of dimension 4 with signature 8, which thus can not admit a smooth structure.
+Recall that having a spin structure was having a lift
+
+\begin{tikzcd}
+P
+  \ar[r] 
+& 
+X
+  \ar[d] 
+\\
+\tilde P
+\ar[i, "\exists]"
+& 
+\end{tikzcd}
+:::
+
+### Proof
+
+
+Consider $\SS_X \da \tilde P \fiberprod_{\Spin(n)} \SS$, then define
+\[
+\dirac^\pm: H^o(\SS_X^\pm) \to H^0(\SS^{\mp})
+.\]
+Note that we can write $\dirac = \dirac^+ + \diract^-$; 
+
+- Step 1: Show $\ind\dirac^+ = -\sigma(X) / 8$,
+- Step 2: Show $\ind \diract^+$ is even.
+
+### Step 1
+
+What is the symbol $\Symb(\dirac)$?
+By definition
+\[
+\Symb \dirac: \pi^* \SS \to \pi^* \SS
+.\]
+where $\pi:T\dual X\to X$, and the symbol was defined by replacing $\dd{}{x_i}$ with a function$y_i: T\dual X\to \RR$.
+We can write
+\[
+\diract \phi = \sum_{e_i \in \Fr} e_i \cdot \nabla_{e_i\dual} \psi
+,\]
+and so 
+\[
+\Symb \diract(\psi) = \sum_i y_i e_i = \psi
+.\]
+
+We have a tautological form \( \alpha\in H^0(T\dual X, \pi^* \Omega^1) \) where $(p, \alpha) \mapsto \alpha$, and 
+so \( \Symmb(\dirac)(\wait) = \alpha\cdot(\wait) \).
+
+
+:::{.claim}
+\[
+\dirac: H^0(\SS) \selfmap && \text{is an elliptic operator}
+.\]
+:::
+
+We need to check that the map \( \alpha\cdot(\wait) \) is exact if \( \alpha\neq 0 \).
+
+We have \( \alpha\cdot(\wait): \SS\to \SS \)  and
+\[
+  (- \alpha)(\wait) \, \alpha(\wait) = (- \alpha \cdot \alpha) = \norm{ \alpha}^2 \neq 0
+,\]
+which makes the operator invertible away from zero.
+Thus we can apply Atiyah-Singer.
+
+
+:::{.lemma title="?"}
+There is a nice formula for Chern characters:
+\[
+\ch \SS^+ - \ch \SS^- = \prod_{i=1}^n( e ^{x_i/2} - e^{-x_i/2})
+.\]
+where \( \ts{ \pm x_i } \) are the Chern roots of $T\dual X$.
+:::
+
+
+:::{.proof title="?"}
+Use the splitting principle to write $T\dual X \tensor_\RR \CC = \bigoplus _{i=1}^n L_i \tensor L_i\inv$
+Then $\SS^+$  is a sum of all tensor products of $L_i \tensor L_i\inv$ where the number of $-1$s appearing is even.
+:::
+
+
+:::{.remark}
+Note there is ambiguity up to 2-torsion in the formula, but this gets moved into the choice of spin structure, which amounts to choice of a square root of each of these line bundles.
+:::
+
+
+Setting $2n\da \dim X$, we have
+\[
+\ind\diract^+ 
+&= (-1)^n \int_X { \ch\SS^+ - \ch \SS^- \over \eul X} \td(TX\tensor \CC) \\
+&= \int_X { \prod e^{x_i/2} - e^{-x_i /2} \over (-1)^n \prod x_i} \prod {x_i \over 1 - e^{x_i} } \prod {x_i \over 1 - e^{-x_i}} \\
+&= \int_X \prod { (e^{x_i/2} - e^{-x_i / 2 )} x_i \over (1-e^{x_i} ) (1 - e^{-x_i}) } \\
+&= (-1)^n \int_X \prod_I {x_i \over e^{x_i/2} - e^{-x_i/2}} \\
+&= \int_X \qty{ 1 - {x_1^2 \over 24} } \qty{ 1 - {x_2^2 \over 24}} \\
+&= {-1\over 24} \int_X x_1^2 + x_2^2 + (x_1 + x_2)^2 - 2x_1 x_2 \\
+&= {-1\over 24} \qty{c_1^2 - 2c_2}
+.\]
+
+
+:::{.remark}
+See Ahat genus.
+:::
+
+
+:::{.claim}
+\[
+c_1^2 - 2c^2 = 3\cdot \sigma(X)
+.\]
+:::
+This is another application of Atiyah-Singer, applied to a slightly different operator.
+Recall the Hodge star operator,
+\[
+\hodgestar: \Omega^k(X) \to \Omega^{4-k}(X)
+.\]
+
+Defining $\tau \da i^{k(k-1) + 4 \over 2}$, we get $\tau^2 = 1$, so define an operator $\tau \hodgestar$.
+This yields a splitting into $\pm 1$ eigenspaces:
+\[
+\Omega(X) = \Omega^+(X) \oplus \Omega^-(X)
+.\]
+Recalling that $d^\dagger$ was the adjoint of $d$, one can check that $d+d^\dagger: \Omega^{\pm}(X) \to \Omega^{\mp}(X)$ interchanges these.
+It turns out that $\ind(d + d^\dagger) = \sigma(X)$, which by Atiyah-Singer and Hermite forms will equal $c_1^2 -2 c_2 \over 3$.
+This yields the desired formula for step 1.
+
+
+## Step 2
+
+We now want to show $\ind \dirac^+$ is divisible by 2.
+The key point is that $\ker \dirac^+$ and $\coker \dirac^+ = \ker \dirac^-$ admit a quaternionic vector space structure.
+This comes from the fact that $\Spin(4) \cong \SU(2) \cross \SU(2) \cong S^1(\HH) \oplus S^1(\HH) \da \SS^+ \oplus \SS^-$, so have a splitting into subspaces of unit quaternions.
+It turns out that $\dirac$ is $\HH\dash$linear.
+So we get an equality
+\[
+-\sigma(X) / 8 = \ind \dirac^+ = 2\lambda
+\]
+for some $\lambda$, yielding $8\divides \sigma(X)$.
+
+## Remarks
+
+:::{.remark}
+If $H_1(X; \ZZ)$ has no 2-torsion, e.g. if $\pi_1X = 0$, then $w_2(X) = 0$ iff the intersection form on $H^2$ is even, where $w_2$ is the obstruction to existence of spin structures.
+Note that this makes sense for topological manifolds and not just smooth manifolds, and in this case $\sigma(X)$ is divisible by 8.
+This restriction comes from number theory: since we have a unimodular lattice,it breaks into sums of $E_8, -E_8$, and $H$ if indefinite, and any even unimodular lattice has signature divisble by 8.
+So this can work as an obstruction to the existence of smooth structures.
+:::
+
+
+:::{.remark}
+Note that $\CP^2$ has no spin structure, and $\sigma(\CP^2) = 1$.
+There's a way to modify the invariant to set $\sigma(X)/8 = ? \mod 2$.
+:::
+
+
+
+
+
+
+
+
+
+
 

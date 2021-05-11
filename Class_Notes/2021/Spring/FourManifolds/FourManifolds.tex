@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-05-02 }
+{\tiny \textit{Last updated:} 2021-05-11 }
 \end{flushleft}
 
 
@@ -1318,18 +1318,18 @@ only if \(v=0\).
 \begin{definition}[The Frame Bundle]
 
 Define
-\({\operatorname{Frame}}_p(X) \coloneqq\left\{{\text{bases of } T_p X}\right\}\),
+\(\mathop{\mathrm{Frame}}_p(X) \coloneqq\left\{{\text{bases of } T_p X}\right\}\),
 and
-\({\operatorname{Frame}}X \coloneqq\bigcup_{p\in X} {\operatorname{Frame}}_p X\).
+\(\mathop{\mathrm{Frame}}(X) \coloneqq\bigcup_{p\in X} \mathop{\mathrm{Frame}}_p(X)\).
 
 \end{definition}
 
 \begin{remark}
 
-More generally, \({\operatorname{Frame}}\mathcal{E}\) can be defined for
-any vector bundle \(\mathcal{E}\), so
-\({\operatorname{Frame}}X \coloneqq{\operatorname{Frame}}TX\). Note that
-\({\operatorname{Frame}}X\) is a principal
+More generally, \(\mathop{\mathrm{Frame}}(\mathcal{E})\) can be defined
+for any vector bundle \(\mathcal{E}\), so
+\(\mathop{\mathrm{Frame}}(X) \coloneqq\mathop{\mathrm{Frame}}(TX)\).
+Note that \(\mathop{\mathrm{Frame}}(X)\) is a principal
 \(\operatorname{GL}_n({\mathbb{R}}){\hbox{-}}\)bundle where
 \(n\coloneqq\operatorname{rank}(\mathcal{E})\). This follows from the
 fact that the transition functions are fiberwise in
@@ -1355,7 +1355,7 @@ actions of left and right multiplication commute.
 
 The \textbf{orthogonal frame bundle} of a vector bundle \(\mathcal{E}\)
 equipped with a metric \(g\) is defined as
-\({\operatorname{OFrame}}_p \mathcal{E}\coloneqq\left\{{\text{orthonormal bases of } \mathcal{E}_p}\right\}\),
+\(\mathop{\mathrm{OFrame}}_p(\mathcal{E}) \coloneqq\left\{{\text{orthonormal bases of } \mathcal{E}_p}\right\}\),
 also written \(O_r({\mathbb{R}})\) where
 \(r \coloneqq\operatorname{rank}( \mathcal{E})\).
 
@@ -1369,10 +1369,10 @@ set with a free transitive \(G{\hbox{-}}\)action.
 
 \end{remark}
 
-\begin{definition}[?]
+\begin{definition}[Hermitian metric]
 
 Let \(\mathcal{E}\to X\) be a complex vector bundle. Then a
-\textbf{hermitian metric} is a hermitian form on every fiber, i.e.~
+\textbf{Hermitian metric} is a hermitian form on every fiber, i.e.~
 \begin{align*}
 h_p: \mathcal{E}_p \times\overline{\mathcal{E}_p } \to {\mathbb{C}}
 .\end{align*}
@@ -1402,7 +1402,7 @@ where the canonical example is
 \begin{definition}[Unitary Frame Bundle]
 
 We define the \textbf{unitary frame bundle}
-\({\operatorname{UFrame}}(\mathcal{E}) \coloneqq\bigcup_p {\operatorname{UFrame}}(\mathcal{E})_p\),
+\(\mathop{\mathrm{UFrame}}(\mathcal{E}) \coloneqq\bigcup_p \mathop{\mathrm{UFrame}}(\mathcal{E})_p\),
 where at each point this is given by the set of orthogonal frames of
 \(\mathcal{E}_p\) given by \((e_1, \cdots, e_n)\) where
 \(h(e_i , \mkern 1.5mu\overline{\mkern-1.5mue_j\mkern-1.5mu}\mkern 1.5mu ) = \delta_{ij}\).
@@ -1445,7 +1445,7 @@ P\coloneqq\left\{{(x, O) {~\mathrel{\Big|}~}x\in X,\, O \text{ is an orientation
 Note that \(P\) is an oriented manifold, \(P\to X\) is a local
 isomorphism, and has a canonical orientation. (?) This can also be
 written as
-\(P = {\operatorname{Frame}}X / \operatorname{GL}_n^+({\mathbb{R}})\),
+\(P = \mathop{\mathrm{Frame}}(X) / \operatorname{GL}_n^+({\mathbb{R}})\),
 since an orientation can be specified by a choice of \(n\) linearly
 independent vectors where we identify any two sets that differ by a
 matrix of positive determinant.
@@ -1467,7 +1467,7 @@ component and a left action on the second.
 
 \begin{example}[?]
 
-Note that \({\operatorname{Frame}}(\mathcal{E})\) is a
+Note that \(\mathop{\mathrm{Frame}}(\mathcal{E})\) is a
 \(\operatorname{GL}_r({\mathbb{R}}){\hbox{-}}\)bundle and the map
 \(\operatorname{GL}_r({\mathbb{R}}) \xrightarrow{\operatorname{id}} \operatorname{GL}({\mathbb{R}}^r)\)
 is a representation. At every fiber, we have
@@ -1478,7 +1478,7 @@ this equivalence class given by \((e, pv)\). So
 \begin{exercise}[?]
 
 Show that
-\({\operatorname{Frame}}( \mathcal{E}) \times_{\operatorname{GL}_r({\mathbb{R}})} {\mathbb{R}}^r \cong \mathcal{E}\).
+\(\mathop{\mathrm{Frame}}(\mathcal{E}) \times_{\operatorname{GL}_r({\mathbb{R}})} {\mathbb{R}}^r \cong \mathcal{E}\).
 This follows from the fact that the transition functions of
 \(P \times_G V\) are given by left multiplication of
 \(t_{UV}: U \cap V \to G\), and so by the equivalence relation,
@@ -1491,7 +1491,7 @@ This follows from the fact that the transition functions of
 \begin{remark}
 
 Suppose that \(M^3\) is an oriented Riemannian 3-manifold. Them
-\(TM\to {\operatorname{Frame}}(M)\) which is a principal
+\(TM\to \mathop{\mathrm{Frame}}(M)\) which is a principal
 \({\operatorname{SO}}(3){\hbox{-}}\)bundle. The universal cover is the
 double cover \({\operatorname{SU}}(2) \to {\operatorname{SO}}(3)\), so
 can the transition functions be lifted? This shows up for spin
@@ -1645,7 +1645,7 @@ sections of a connection.
 \hypertarget{sheaf-cohomology}{%
 \subsection{Sheaf Cohomology}\label{sheaf-cohomology}}
 
-\begin{definition}[?]
+\begin{definition}[Čech complex]
 
 Let \(\mathcal{F}\) be a sheaf of abelian groups on a topological space
 \(X\), and let
@@ -2023,7 +2023,7 @@ Cauchy-Riemann equations.
 
 \end{example}
 
-\begin{definition}[?]
+\begin{definition}[$\del$ and $\delbar$ operators]
 
 Let \(\omega\in A^{p, q}(X)\) where
 \begin{align*}
@@ -2353,7 +2353,7 @@ and only if \(M ^{-1}\) is integral. In this case, the rows of
 
 \end{remark}
 
-\begin{definition}[?]
+\begin{definition}[Index of a lattice]
 
 The \textbf{index} of a lattice is
 \({\left\lvert { \det M} \right\rvert}\).
@@ -2392,13 +2392,13 @@ skew-symmetric matrix
 
 \end{example}
 
-\begin{definition}[?]
+\begin{definition}[Nondegenerate lattices]
 
 A lattice is \textbf{nondegenerate} if \(\det M \neq 0\).
 
 \end{definition}
 
-\begin{definition}[?]
+\begin{definition}[Base change of lattices]
 
 The tensor product \(L \otimes_{\mathbb{Z}}{\mathbb{R}}\) is a vector
 space with an \({\mathbb{R}}{\hbox{-}}\)valued symmetric bilinear form.
@@ -2548,7 +2548,7 @@ is unimodular of signature \((1, 9)\), and it turns out that
 
 \end{example}
 
-\begin{definition}[?]
+\begin{definition}[Unimodular lattice II]
 
 Take
 \begin{align*} 
@@ -2649,7 +2649,7 @@ even.
 \hypertarget{characteristic-classes}{%
 \subsection{Characteristic Classes}\label{characteristic-classes}}
 
-\begin{definition}[?]
+\begin{definition}[Classifying space]
 
 Let \(G\) be a topological group, then a \textbf{classifying space}
 \(EG\) is a contractible topological space admitting a free continuous
@@ -2788,8 +2788,8 @@ BGL_d
 So \(\mathcal{E} \subseteq BGL_d \times{\mathbb{R}}^{\infty }\), where
 we can define
 \(\mathcal{E} \coloneqq\left\{{(L, p) {~\mathrel{\Big|}~}p\in L}\right\}\).
-In this case, \(EG = {\operatorname{Frame}}( \mathcal{E})\) is the frame
-bundle of this universal bundle. The same setup applies for
+In this case, \(EG = \mathop{\mathrm{Frame}}( \mathcal{E})\) is the
+frame bundle of this universal bundle. The same setup applies for
 \(G \coloneqq\operatorname{GL}_d({\mathbb{C}})\), except we take
 \({\operatorname{Gr}}_d({\mathbb{C}}^{\infty })\).
 
@@ -2928,7 +2928,7 @@ H^*(BO_n, {\mathbb{Z}}/2{\mathbb{Z}}) = {\mathbb{Z}}/2{\mathbb{Z}}[w_1, w_2, \cd
 
 \end{theorem}
 
-\begin{definition}[?]
+\begin{definition}[Stiefel-Whitney class]
 
 Given any principal \(O_n{\hbox{-}}\)bundle \(P\to X\), there is an
 induced map \(X \xrightarrow{f} BO_n\), so we can pull back the above
@@ -2938,10 +2938,10 @@ generators to define the \textbf{Stiefel-Whitney classes} \(f^* w_i\).
 
 \begin{remark}
 
-If \(P \coloneqq{\operatorname{OFrame}}TX\), then \(f^* w_1\) measures
+If \(P \coloneqq\mathop{\mathrm{OFrame}}TX\), then \(f^* w_1\) measures
 whether \(X\) has an orientation, i.e.~\(f^* w_1 = 0 \iff X\) can be
 oriented. We also have \(f^* w_i(P) = w_i( \mathcal{E} )\) where
-\(P = {\operatorname{OFrame}}( \mathcal{E} )\). In general, we'll just
+\(P = \mathop{\mathrm{OFrame}}( \mathcal{E} )\). In general, we'll just
 write \(w_i\) for Stiefel-Whitney classes and \(c_i\) for Chern classes.
 
 \end{remark}
@@ -3254,7 +3254,7 @@ The \textbf{Chern character} is defined as
 
 \end{definition}
 
-\begin{definition}[Todd Class]
+\begin{definition}[Total Todd class]
 
 The \textbf{total Todd class}
 \begin{align*}
@@ -3484,7 +3484,7 @@ i.e.~\(X\in {\mathsf{Mfd}}_{\mathbb{C}}\) with
 \(\dim_{\mathbb{C}}(X) = 1\), and let \(\mathcal{L}\to C\) be a
 holomorphic line bundle. Then
 \begin{align*}
-\chi(C, \mathcal{L}) = \deg(L) + (1-g) && \text{where } \int_C c_1(\mathcal{L})
+\chi(C, \mathcal{L}) = \deg(L) + (1-g) && \text{where } \deg(L) \coloneqq\int_C c_1(\mathcal{L})
 \end{align*}
 and \(g\) is the genus of \(C\).
 
@@ -4326,8 +4326,9 @@ given by
 \begin{align*}
 \lambda (x_0, \cdots, x_n) \mapsto [x_0: \cdots: x_n]
 .\end{align*}
-Note that the total space is \(\operatorname{Bl}_0({\mathbb{C}}^{n+1})\)
-is the \textbf{blowup} at zero, which separates the tangents at 0.
+Note that the total space is
+\(\mathop{\mathrm{Bl}}_0({\mathbb{C}}^{n+1})\) is the \textbf{blowup} at
+zero, which separates the tangents at 0.
 
 \end{example}
 
@@ -4337,9 +4338,9 @@ Let \(X\) be an algebraic variety, i.e.~spaces cut out by polynomial
 equations, for example
 \(\left\{{ xy = 0 }\right\} \subseteq {\mathbb{C}}^2\) which has a
 singularity at the origin. A \textbf{divisor} is a
-\({\mathbb{Z}}{\hbox{-}}\)linear subvariety of codimension 1. Note that
-for a curve \(X\), this gives back the definition in terms of points.
-For \(D\) a divisor on \(X\), we associated a bundle
+\({\mathbb{Z}}{\hbox{-}}\)linear combination of subvarieties of
+codimension 1. Note that for a curve \(X\), this recovers the definition
+involving points. For \(D\) a divisor on \(X\), we associated a bundle
 \({\mathcal{O}}_X(D)\) which had a meromorphic section with a zero/pole
 locus whose divisor was precisely \(D\).
 
@@ -4489,10 +4490,10 @@ sense that
 .\end{align*}
 Note that there is a natural map
 \begin{align*}
-{\operatorname{Taut}}\otimes{\mathcal{O}}(H) \xrightarrow{} {\mathcal{O}}
+\mathop{\mathrm{Taut}}\otimes{\mathcal{O}}(H) \xrightarrow{} {\mathcal{O}}
 ,\end{align*}
 given by taking the line over a point and evaluating the homogeneous
-function on that line. Thus \({\operatorname{Taut}}\) is the inverse of
+function on that line. Thus \(\mathop{\mathrm{Taut}}\) is the inverse of
 \({\mathcal{O}}(H)\).
 
 \end{remark}
@@ -4958,7 +4959,7 @@ then
 \begin{remark}
 
 Here we define
-\(\operatorname{ch}( {\mathcal{E}}_{*} \coloneqq\sum_i (-1)^i \operatorname{ch}( \mathcal{E}^i )\).
+\(\operatorname{ch}( {\mathcal{E}}_{*} ) \coloneqq\sum_i (-1)^i \operatorname{ch}( \mathcal{E}^i )\).
 What does it mean to divide by the Euler class? Let
 \(\left\{{ x_i, -x_i }\right\}\) be the Chern roots of the complexified
 tangent bundle \(TX\otimes{\mathbb{C}}\), then
@@ -5038,7 +5039,7 @@ Letting \(d=\dim X = 2n\), we have
 
 \begin{example}[?]
 
-We have prove HRR using this theorem: we have
+We can prove HRR using this theorem: we have
 \begin{align*}
 \chi(X, \mathcal{E} ) = \chi( \mathcal{E} \otimes A^{0, {-}}, \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \overset{\text{ASIT}}{=} \int_X { \operatorname{ch}(\mathcal{E} \otimes A^{0, {-}} ) \over {\operatorname{eul}}(X) } \mathrm{td}(TX \otimes_R {\mathbb{C}})
 .\end{align*}
@@ -5767,6 +5768,8 @@ definite inner product on the fibers.
 }
 \end{figure}
 
+\todo[inline]{Fix this diagram! Need to remember what it was demonstrating.}
+
 For \(v, w\in \mathcal{E}_p\), we want a pairing
 \(g_p(v, w): \mathcal{E}_p^{\otimes 2} \to {\mathbb{R}}\). To think
 about this globally, this should be a map
@@ -5779,8 +5782,8 @@ fact that it's \({\mathbb{R}}{\hbox{-}}\)linear on each fiber, or
 equivalently it is a map of vector bundles. We should also have that
 \(g(s\otimes s) \in {\mathcal{O}}(X)\) is a smooth function, and we
 require \(g(s\otimes s) \geq 0\). We also require
-\(g(s\otimes s)(p) = 0 \iff s_o = 0\) and
-\(g(s\otimes t) = g(t\otimes s)\). This makes
+\(g(s\otimes s)(p) = 0 \iff s_0 = 0\) and
+\(g(s\otimes t) = g(t\otimes s)\). This implies that
 \(g\in (\mathcal{E}^{\otimes 2})^\vee\otimes{\mathcal{O}}= (\mathcal{E}^\vee)^{\otimes 2}(X)\).
 The symmetric condition means that
 \(g\in \operatorname{Sym}^2 \mathcal{E}^\vee(X)\).
@@ -5921,7 +5924,7 @@ So we could define
 \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger \alpha = {\overline{{- {\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu({\overline{{\alpha}}} h )} \over dV }}}
 .\end{align*}
 Note that \(\alpha\mapsto {\overline{{ \alpha}}} h\), so
-\(\alpha\in \ker \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger \iff {\overline{{ \alpha}}}h\in \ker \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\)
+\(\alpha\in \ker \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger \iff {\overline{{ \alpha}}}h\in \ker \mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu\).
 Then
 \(\ker (\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu^\dagger) = H^0(L^\vee\otimes K)\).
 
@@ -5933,7 +5936,7 @@ Then
 \begin{remark}
 
 Recall Serre duality: let
-\(C\in {\mathsf{Mfd}}_{\mathbb{C}}^{{ \text{compact} } ,{ \text{oriented} } }\)
+\(C\in {\mathsf{Mfd}}_{\mathbb{C}}({ \text{compact} } ,{ \text{oriented} } )\)
 and \(L\to C \in \mathop{\mathrm{Bun}}(\mathop{\mathrm{Hol}})\). Then
 \begin{align*}
 h^1(L) = h^0(L^\vee\otimes K_C)
@@ -5974,9 +5977,9 @@ splitting principle. How was it defined? There are several definitions:
     .\end{align*}
 \item
   \(L\) defines an element
-  \({\operatorname{Fr}}L \in \mathop{\mathrm{Bun}}^{\operatorname{Prin}}({\mathbb{C}}^{\times})\)
+  \(\mathop{\mathrm{Fr}}L \in \mathop{\mathrm{Bun}}^\mathop{\mathrm{prin}}({\mathbb{C}}^{\times})\)
   (which only works for line bundles), which is defined by
-  \({\operatorname{Fr}}L = L \setminus s_0\) where \(s_0\) is the zero
+  \(\mathop{\mathrm{Fr}}L = L \setminus s_0\) where \(s_0\) is the zero
   section of \(L\). By topology, we get a classifying map
   \begin{align*}
   C \xrightarrow{\phi_L}  B{\mathbb{C}}^{\times}= {\mathbb{CP}}^\infty = ({\mathbb{C}}^{\infty} \setminus\left\{{0}\right\}) / {\mathbb{C}}^{\times}
@@ -6310,7 +6313,7 @@ potentially not positive-definite.
 
 \end{remark}
 
-\begin{definition}[?]
+\begin{definition}[$\omega\dash$tame almost complex structures]
 
 An almost complex structure \(J\) is \textbf{\(\omega{\hbox{-}}\)tame}
 if \(g(v, w) = - \omega(v, Jw)\) is positive definite.
@@ -6400,7 +6403,7 @@ metric space \(({\mathbb{C}}, dx^2 + dy^2)\). Let \(z=x+iy\) be a
 complex coordinate on \({\mathbb{C}}\) so \(dz = dx + idy\) and
 \(d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu = dx - idy\),
 then
-\(dx^2 + dy^2 = dz d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \in \operatorname{Sym}^2(\mathrm{T}{\mathbb{C}})\).
+\(dx^2 + dy^2 = dz d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \in \operatorname{Sym}^2(\mathop{\mathrm{{T}}}{\mathbb{C}})\).
 The symplectic form is given by
 \begin{align*} 
 \omega(v, w) = \pm g(v, Jw) = i \,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu (v, w) 
@@ -6701,7 +6704,7 @@ A^{p, q} &\coloneqq\left\{{
 }\right\}
 .\end{align*}
 
-For \(M\) a Kahler manifold, we have
+For \(M\) a Kähler manifold, we have
 \begin{align*}
 \mathcal{H}^k(M) = \bigoplus _{p+q = k} \mathcal{H}^{p, q}(M) 
 \\  \\
@@ -6836,7 +6839,7 @@ structure. Moreover, since \(\Delta_d\) is a real operator, we obtain
 
 Some consequences:
 
-For \(M\) a Kahler manifold, the odd Betti numbers
+For \(M\) a Kähler manifold, the odd Betti numbers
 \(\beta_{2i+1}(M) \coloneqq\dim H_{\mathrm{dR}}^{2i+1}(M; {\mathbb{C}})\)
 are even. This is because
 \begin{align*}
@@ -7430,7 +7433,7 @@ Let \(X\) be a smooth projective \footnote{So \(X\) admits an embedding
   into some \({\mathbb{CP}}^N\).} complex manifold. Then every line
 bundle over \(X\) is of the form \(L = {\mathcal{O}}_X(D)\) for some
 divisor
-\(D = \sum n_i D_i \in {\mathbb{Z}}[\operatorname{SubMfds}(\operatorname{codim}_1)]\).
+\(D = \sum n_i D_i \in {\mathbb{Z}}[\mathop{\mathrm{SubMfds}}(\operatorname{codim}_1)]\).
 
 \end{proposition}
 
@@ -7837,7 +7840,7 @@ an oriented loop in \(S\setminus C\) around \(p\in C\) of radius \(r\)
 
 We can assemble a 1-form from the following contour integral:
 \begin{align*}
-\operatorname{Res}_C {s\over s_C} \coloneqq\lim_{r\to 0} {1\over 2\pi i} \oint_{\gamma_p(r)} {s\over s_C} \in \Omega^1(U \cap C)
+\mathop{\mathrm{Res}}_C {s\over s_C} \coloneqq\lim_{r\to 0} {1\over 2\pi i} \oint_{\gamma_p(r)} {s\over s_C} \in \Omega^1(U \cap C)
 .\end{align*}
 
 Locally \(C = V(x)\) in a coordinate chart of \({\mathbb{C}}^2\) where
@@ -7848,17 +7851,17 @@ analytic, writing
 \(f = a_{0,0} + a_{0, 1} y + a_{0, 2} y^2 + \cdots + a_{1, 0}x + \cdots\),
 we would have
 \begin{align*}
-\operatorname{Res}_C {s\over s_C} = (a_{0, 0} + a_{0, 1}y + a_{0, 2}y^2 + \cdots)\,dy= f(0, y)\,dy\text{locally}
+\mathop{\mathrm{Res}}_C {s\over s_C} = (a_{0, 0} + a_{0, 1}y + a_{0, 2}y^2 + \cdots)\,dy= f(0, y)\,dy\text{locally}
 ,\end{align*}
 which picks out all components not involving \(x\). This defines an
 \({\mathcal{O}}{\hbox{-}}\)linear map
 \begin{align*}
 \Omega^2_S \otimes{\mathcal{O}}_C &\to \Omega^1_C \\
-s & \mapsto \operatorname{Res}_C {s\over s_C}
+s & \mapsto \mathop{\mathrm{Res}}_C {s\over s_C}
 ,\end{align*}
 since it doesn't involve any derivatives of \(f\). Note that this only
 depends on the restriction of \(s\) to \(C\). What is the kernel of
-\(\operatorname{Res}_C\)? We claim it is \(\Omega2_S\), which follows
+\(\mathop{\mathrm{Res}}_C\)? We claim it is \(\Omega2_S\), which follows
 from the fact that the contour integral of any holomorphic form
 \(\omega\) will integrate to zero. We thus get a SES of sheaves
 \begin{align*}
@@ -7868,7 +7871,7 @@ where we send holomorphic forms to meromorphic forms with at most order
 1 poles along \(C\) to holomorphic 1-forms on \(C\). The residue map is
 surjective since we can take
 \begin{align*}
-\operatorname{Res}_{x=0} {g(y) \over x} \,dx\wedge \,dy= g(y) \,dy
+\mathop{\mathrm{Res}}_{x=0} {g(y) \over x} \,dx\wedge \,dy= g(y) \,dy
 ,\end{align*}
 so locally an arbitrary 1-form is a residue of some 2-form with simple
 poles along \(C\). We have a SES
@@ -8388,7 +8391,7 @@ and there are nontrivial sections so
 because there is a map given by restriction which turns out to be an
 isomorphism
 \begin{align*}
-0 \to H^0({\mathbb{P}}^3; {\mathcal{O}}(1)) & \xrightarrow{\operatorname{res}_S} H^0(S; {\mathcal{O}}(1)) \to 0 \\
+0 \to H^0({\mathbb{P}}^3; {\mathcal{O}}(1)) & \xrightarrow{\mathop{\mathrm{res}}_S} H^0(S; {\mathcal{O}}(1)) \to 0 \\
 f &\mapsto { \left.{{f}} \right|_{{S}} }
 .\end{align*}
 
@@ -8511,7 +8514,7 @@ Check out complete intersections.
 \section{Blowups and Blowdowns (Wednesday, April
 14)}\label{blowups-and-blowdowns-wednesday-april-14}}
 
-\begin{definition}[?]
+\begin{definition}[Blowup]
 
 Let \(S \in {\mathsf{Mfd}}_{\mathbb{C}}^2\) be a complex surface and
 \(p\in S\) a point, and let \((x, y)\) be local holomorphic coordinates
@@ -8524,15 +8527,15 @@ holomorphic map
 (x, y) & \mapsto ( (x, y), [x: y] )
 .\end{align*}
 We'll define the \textbf{blowup at \(p\)} to be
-\(\operatorname{Bl}_p(U) { \operatorname{cl}} (\phi(U^*))\) to be the
+\(\mathop{\mathrm{Bl}}_p(U) { \operatorname{cl}} (\phi(U^*))\) to be the
 closure of the image of \(U^*\).
 
 \end{definition}
 
 \begin{observation}
 
-There is a map \(\operatorname{Bl}_p(U) \to U\) given by projection onto
-the first coordinate which is the identity on \(U^*\).
+There is a map \(\mathop{\mathrm{Bl}}_p(U) \to U\) given by projection
+onto the first coordinate which is the identity on \(U^*\).
 
 \begin{figure}
 \centering
@@ -8550,7 +8553,7 @@ line through \(q\), and this will be continuous.
 \todo[inline]{? Missed part}
 
 We claim that
-\(\pi_U^{-1}(0, 0) \subset \operatorname{Bl}_p(U) = \left\{{ p }\right\} \times{\mathbb{CP}}^1\),
+\(\pi_U^{-1}(0, 0) \subset \mathop{\mathrm{Bl}}_p(U) = \left\{{ p }\right\} \times{\mathbb{CP}}^1\),
 and for a fixed \(9x_0, y_0) \in U^*\), considering
 \(\phi(x_0 t, y_0 t)\) as \(t\to 0\), we can write
 \begin{align*}
@@ -8566,13 +8569,13 @@ So approaching \((0, 0)\) along any slope \(s\) just yields the point
 
 We can thus write
 \begin{align*}
-\operatorname{Bl}_pS S \setminus\left\{{p}\right\} {\coprod}_{U^*} \operatorname{Bl}_p U
+\mathop{\mathrm{Bl}}_pS S \setminus\left\{{p}\right\} {\coprod}_{U^*} \mathop{\mathrm{Bl}}_p U
 .\end{align*}
 
-Writing \(\pi: \operatorname{Bl}_pS\to S\), we have
+Writing \(\pi: \mathop{\mathrm{Bl}}_pS\to S\), we have
 \(\pi^{-1}(p) \cong {\mathbb{CP}}^1\) and \(\pi^{-1}(q)\) is a point for
 all \(q\neq p\). Then all limits approaching \(p\) in \(S\) turn into
-distinct limit points in \(\operatorname{Bl}_p(S)\)
+distinct limit points in \(\mathop{\mathrm{Bl}}_p(S)\)
 
 \begin{figure}
 \centering
@@ -8611,7 +8614,7 @@ This yields a nodal curve with a double-point:
 }
 \end{figure}
 
-Here we'll consider \(\operatorname{Bl}_{(0, 0)} {\mathbb{C}}^2\).
+Here we'll consider \(\mathop{\mathrm{Bl}}_{(0, 0)} {\mathbb{C}}^2\).
 
 \begin{definition}[Strict Transform]
 
@@ -8653,10 +8656,10 @@ can model in the following way:
 These are in bijection with \({\mathbb{CP}}^1\) since there is always a
 unique line through \([0:0:1]\) and \([s:t:0]\), where the latter is a
 copy of \({\mathbb{CP}}^1\) as \(s,t\) are allowed to vary. So consider
-\(\operatorname{Bl}_{p}{\mathbb{CP}}^2\) for \(p=[0:0:1]\), and consider
-the strict transforms of the lines \(L\) to obtain
-\(\widehat{L} \subset \operatorname{Bl}_p {\mathbb{CP}}^2\). Any two are
-disjoint since they pass through different slopes of the exceptional
+\(\mathop{\mathrm{Bl}}_{p}{\mathbb{CP}}^2\) for \(p=[0:0:1]\), and
+consider the strict transforms of the lines \(L\) to obtain
+\(\widehat{L} \subset \mathop{\mathrm{Bl}}_p {\mathbb{CP}}^2\). Any two
+are disjoint since they pass through different slopes of the exceptional
 divisor. Thus the red lines in the blowup go through distinct slopes,
 yielding a fibration of \({\mathbb{CP}}^1\)s:
 
@@ -8668,7 +8671,7 @@ yielding a fibration of \({\mathbb{CP}}^1\)s:
 
 So consider the map
 \begin{align*}
-\sigma: \operatorname{Bl}_p {\mathbb{CP}}^2 &\to {\mathbb{CP}}^2 \\
+\sigma: \mathop{\mathrm{Bl}}_p {\mathbb{CP}}^2 &\to {\mathbb{CP}}^2 \\
 p \in \widehat{L} &\mapsto [0:s:t]
 .\end{align*}
 
@@ -8680,7 +8683,7 @@ We can't necessarily project from the blue point itself, but if we add
 in the data of a tangent vector at that point, the map becomes
 well-defined. Thus the blowup makes projecting from a point in
 \({\mathbb{CP}}^2\) to a line in \({\mathbb{CP}}^2\) a well-defined map
-on \(\operatorname{Bl}{\mathbb{CP}}^2\).
+on \(\mathop{\mathrm{Bl}}{\mathbb{CP}}^2\).
 
 \end{example}
 
@@ -8696,7 +8699,7 @@ surface}.
 For \(S\in {\mathsf{Mfd}}_{\mathbb{R}}(C^\infty)\) a smooth manifold, we
 can identify
 \begin{align*}
-\operatorname{Bl}_p S = S \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu
+\mathop{\mathrm{Bl}}_p S = S \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu
 .\end{align*}
 
 \end{proposition}
@@ -8708,7 +8711,7 @@ It suffices to work in coordinate charts and prove this for \(p=0\).
 \begin{claim}
 
 \begin{align*}
-\operatorname{Bl}_0 {\mathbb{C}}^2 = \operatorname{Tot}( {\mathcal{O}}_{{\mathbb{CP}}^1}(-1) )
+\mathop{\mathrm{Bl}}_0 {\mathbb{C}}^2 = \mathop{\mathrm{Tot}}( {\mathcal{O}}_{{\mathbb{CP}}^1}(-1) )
 .\end{align*}
 
 \end{claim}
@@ -8731,10 +8734,10 @@ Hermitian metric. However we can identify \({\mathcal{O}}(1)\) with the
 set of lines in \({\mathbb{CP}}^2\) through \([0:0:1]\), leaving out the
 point \([0:0:1]\) itself. This follows by checking that there exists a
 section that vanishes at only one point. In fact
-\(\operatorname{Tot}{\mathcal{O}}(1)\) is diffeomorphic to the
+\(\mathop{\mathrm{Tot}}{\mathcal{O}}(1)\) is diffeomorphic to the
 complement of a ball in \({\mathbb{CP}}^2\), which ends up precisely
 being taking a connect-sum. So we obtain
-\(\operatorname{Bl}_{0} {\mathbb{C}}^2 \cong {\mathbb{C}}^2 \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\).
+\(\mathop{\mathrm{Bl}}_{0} {\mathbb{C}}^2 \cong {\mathbb{C}}^2 \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\).
 
 \end{proof}
 
@@ -8742,8 +8745,8 @@ being taking a connect-sum. So we obtain
 
 Cut out a ball \(B^4 \subseteq {\mathbb{C}}^2\), so
 \({{\partial}}B^4 = S^3 = \left\{{ {\left\lvert {x} \right\rvert}^2 + {\left\lvert {y} \right\rvert}^2 = \varepsilon}\right\}\).
-Then \(\operatorname{Bl}_0 {\mathbb{C}}^2\) is the result of collapsing
-\(S^3\) along an \(S^1{\hbox{-}}\)foliation
+Then \(\mathop{\mathrm{Bl}}_0 {\mathbb{C}}^2\) is the result of
+collapsing \(S^3\) along an \(S^1{\hbox{-}}\)foliation
 \((e^{i\theta} x, e^{i\theta}y)\). This has an \(S^2\) quotient,
 yielding the Hopf fibration
 \begin{align*}
@@ -8765,10 +8768,10 @@ See the Tate curve!
 
 \begin{remark}
 
-Last time: we defined the blowup \(\operatorname{Bl}_0{\mathbb{C}}^2\)
-as the closure of
+Last time: we defined the blowup
+\(\mathop{\mathrm{Bl}}_0{\mathbb{C}}^2\) as the closure of
 \begin{align*} 
-\operatorname{Bl}_0 {\mathbb{C}}^2 \coloneqq{ \operatorname{cl}} 
+\mathop{\mathrm{Bl}}_0 {\mathbb{C}}^2 \coloneqq{ \operatorname{cl}} 
 \left\{{ (x, y), [x:y] {~\mathrel{\Big|}~}(x, y) \neq 0 }\right\} \subseteq {\mathbb{C}}^2 \times{\mathbb{CP}}^2 
 .\end{align*}
 This had the effect of adding in all limits of slopes as points approach
@@ -8796,7 +8799,7 @@ transition functions \(\mu = \nu ^{-1}\) and \(x=y\nu\).
 \begin{remark}
 
 Recall that for a complex curve \(C \in {\mathsf{Mfd}}_{\mathbb{C}}^2\),
-we have the blowup morphism \(\pi: \operatorname{Bl}_pS\to S\) and we
+we have the blowup morphism \(\pi: \mathop{\mathrm{Bl}}_pS\to S\) and we
 defined the \textbf{strict transform}
 \(\widehat{C} \coloneqq{ \operatorname{cl}} \pi^{-1}(C\setminus\left\{{{\operatorname{pt}}}\right\})\).
 
@@ -8832,9 +8835,9 @@ writing \(C = V(f)\) locally. We then set
 \begin{example}[?]
 
 Take \(C \coloneqq\left\{{ y=x }\right\} \subset {\mathbb{C}}^2\) and
-consider \(\operatorname{Bl}_0 {\mathbb{C}}^2\). Then
+consider \(\mathop{\mathrm{Bl}}_0 {\mathbb{C}}^2\). Then
 \begin{align*}
-\widehat{C}  \coloneqq{ \operatorname{cl}} \left\{{ \qty{ (x, x), [x:x]} {~\mathrel{\Big|}~}x\neq 0  }\right\} = { \operatorname{cl}} \left\{{ \qty{ (x, x), [1:1] } {~\mathrel{\Big|}~}x\neq 0 }\right\} \subset \operatorname{Bl}_0 {\mathbb{C}}^2
+\widehat{C}  \coloneqq{ \operatorname{cl}} \left\{{ \qty{ (x, x), [x:x]} {~\mathrel{\Big|}~}x\neq 0  }\right\} = { \operatorname{cl}} \left\{{ \qty{ (x, x), [1:1] } {~\mathrel{\Big|}~}x\neq 0 }\right\} \subset \mathop{\mathrm{Bl}}_0 {\mathbb{C}}^2
 .\end{align*}
 By projecting onto the first component,
 \(\pi:\widehat{C} \xrightarrow{\sim} C\) is an isomorphism. We can
@@ -8932,21 +8935,21 @@ Formula}\label{change-in-canonical-bundle-formula}}
 \begin{question}
 
 Given \(\Omega^2_S = K_S \to S\) the canonical line bundle, can we
-relate \(K_{\operatorname{Bl}_p S}\) to \(K_S\)?
+relate \(K_{\mathop{\mathrm{Bl}}_p S}\) to \(K_S\)?
 
 \end{question}
 
 \begin{proposition}[?]
 
 \begin{align*}
-K_{\operatorname{Bl}_p S} = \pi^* K_S \otimes{\mathcal{O}}_S(E)
+K_{\mathop{\mathrm{Bl}}_p S} = \pi^* K_S \otimes{\mathcal{O}}_S(E)
 .\end{align*}
 
 \end{proposition}
 
 \begin{proof}[?]
 
-We'll abbreviate \(\widehat{S} \coloneqq\operatorname{Bl}_p(S)\). Let
+We'll abbreviate \(\widehat{S} \coloneqq\mathop{\mathrm{Bl}}_p(S)\). Let
 \(\omega\) be a local section of \(K_S\) near \(p\), and in coordinate
 charts \((x, y)\), write \(\omega = dx \wedge dy\). In the first
 coordinate chart on the blowup, we can write
@@ -9179,7 +9182,7 @@ Take
 \begin{align*}
 C = \left\{{ y^2 = x^3-x^2 }\right\} \subseteq {\mathbb{C}}^2
 ,\end{align*}
-where \(\operatorname{Bl}_0 {\mathbb{C}}^2 \to C\). Then
+where \(\mathop{\mathrm{Bl}}_0 {\mathbb{C}}^2 \to C\). Then
 \(\pi^* C = \widehat{C} + 2E\), so
 \begin{align*}
 C = V(x^2 + y^2 + O(\deg(3))
@@ -9218,8 +9221,9 @@ then \(C^2 = (3\ell)^2 = 9\). The multiplicity of \(C\) at the point
 \([0:0:1]\) is 2. Taking the coordinate chart
 \(\left\{{ z=1 }\right\} \cong {\mathbb{C}}^2\), we recover the curve
 \(y^2 = x^3 - x^2\) which has multiplicity 2 at \((0, 0)\). We can
-conclude \(\widehat{C} = \operatorname{Bl}_{[0:0:1]} {\mathbb{CP}}^2\)
-has self-intersection number \(\widehat{C}^2 = 9-2^2 = 5\).
+conclude
+\(\widehat{C} = \mathop{\mathrm{Bl}}_{[0:0:1]} {\mathbb{CP}}^2\) has
+self-intersection number \(\widehat{C}^2 = 9-2^2 = 5\).
 
 \end{example}
 
@@ -9231,7 +9235,7 @@ there exists a smooth surface
 \(\mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu\) and
 \(p\in \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu\)
 such that
-\(S = \operatorname{Bl}_p \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu\)
+\(S = \mathop{\mathrm{Bl}}_p \mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu\)
 with \(E\) as the exceptional curve.
 
 \end{theorem}
@@ -9278,7 +9282,7 @@ just reverse orientations.
 A complex surface with a holomorphically embedded \({\mathbb{CP}}^1\) of
 self intersection \(-1\). Let \(p, q\in {\mathbb{CP}}^2\) be distinct
 points, and let
-\(\operatorname{Bl}_{p, q} {\mathbb{CP}}^2 \coloneqq\operatorname{Bl}_p \operatorname{Bl}_q {\mathbb{CP}}^2\).
+\(\mathop{\mathrm{Bl}}_{p, q} {\mathbb{CP}}^2 \coloneqq\mathop{\mathrm{Bl}}_p \mathop{\mathrm{Bl}}_q {\mathbb{CP}}^2\).
 Note that these two operations commute since these are distinct points
 and blowing up is a purely local operation. Let
 \(\ell \subset {\mathbb{CP}}^2\) be the unique line through \(p\) and
@@ -9295,7 +9299,7 @@ hve
 \widehat{\ell}^2 = \ell^2 - 1^2 - 1^2 = 1-1-1 = - 1
 .\end{align*}
 Under
-\(\pi: \operatorname{Bl}_{p, q} {\mathbb{CP}}^2 \to {\mathbb{CP}}^2\),
+\(\pi: \mathop{\mathrm{Bl}}_{p, q} {\mathbb{CP}}^2 \to {\mathbb{CP}}^2\),
 we have \(\widehat{\ell} \xrightarrow{\sim} \ell\).
 
 \begin{figure}
@@ -9315,7 +9319,7 @@ blowdown of \(\widehat{\ell}\), we have
 
 \begin{center}
 \begin{tikzcd}
-    & {\operatorname{Bl}_{p, q}{\mathbb{CP}}^2} \\
+    & {\mathop{\mathrm{Bl}}_{p, q}{\mathbb{CP}}^2} \\
     \\
     {{\mathbb{CP}}^1 \times{\mathbb{CP}}^2} && {{\mathbb{CP}}^2}
     \arrow["\sigma"', from=1-2, to=3-1]
@@ -9354,9 +9358,9 @@ But
 since \(S^4 \# {\mathbb{CP}}^2 \cong {\mathbb{CP}}^2\), and this would
 yield a complex structure on \(S^4\) -- a contradiction. This also
 follows because
-\(\mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \in \operatorname{ZHS}^4\),
-and Noether's formula implies that every \(\operatorname{ZHS}^4\) has no
-complex structure.
+\(\mkern 1.5mu\overline{\mkern-1.5muS\mkern-1.5mu}\mkern 1.5mu \in \mathbb{Z}\operatorname{HS}^4\),
+and Noether's formula implies that every
+\(\mathbb{Z}\operatorname{HS}^4\) has no complex structure.
 
 \end{remark}
 
@@ -9366,7 +9370,7 @@ Recall that we were considering the following:
 
 \begin{center}
 \begin{tikzcd}
-    & {\operatorname{Bl}_{p, q}{\mathbb{CP}}^2} \\
+    & {\mathop{\mathrm{Bl}}_{p, q}{\mathbb{CP}}^2} \\
     \\
     {{\mathbb{CP}}^1 \times{\mathbb{CP}}^2} && {{\mathbb{CP}}^2}
     \arrow["\sigma"', from=1-2, to=3-1]
@@ -9380,12 +9384,12 @@ to Diagram}
 \end{quote}
 
 Let
-\(\mkern 1.5mu\overline{\mkern-1.5mu\ell\mkern-1.5mu}\mkern 1.5mu \subset \operatorname{Bl}_{p, q}({\mathbb{CP}}^2)\)
+\(\mkern 1.5mu\overline{\mkern-1.5mu\ell\mkern-1.5mu}\mkern 1.5mu \subset \mathop{\mathrm{Bl}}_{p, q}({\mathbb{CP}}^2)\)
 the strict transform of a line through \(p, q\) with
 \(\widehat{\ell}^2 = -1\). Goal: we want to construct the map \(\sigma\)
 sending \(\widehat{\ell}\) to a single point. Let
-\(r\in \operatorname{Bl}_{p, q}{\mathbb{CP}}^2\), then there are three
-possibilities:
+\(r\in \mathop{\mathrm{Bl}}_{p, q}{\mathbb{CP}}^2\), then there are
+three possibilities:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -9540,7 +9544,7 @@ Check that
 \hypertarget{friday-april-23}{%
 \section{Friday, April 23}\label{friday-april-23}}
 
-\begin{definition}[?]
+\begin{definition}[Clifford algebra]
 
 Given \((V, \cdot)\) an inner product space, we defined
 \begin{align*}
@@ -9740,7 +9744,7 @@ Show that
 
 \end{exercise}
 
-\begin{definition}[?]
+\begin{definition}[Even and odd parts of the Clifford algebra]
 
 \({ \operatorname{Cl}} (V)\) has a \({\mathbb{Z}}/2\) (``super'')
 grading, so
@@ -9893,8 +9897,8 @@ fiberwise to define a Clifford multiplication.
 
 Given an oriented bundle with a metric, there is a principal
 \({\operatorname{SO}}(n)\) bundle
-\(P \coloneqq{\operatorname{OFrame}}\), the space of orthogonal oriented
-frames.
+\(P \coloneqq\mathop{\mathrm{OFrame}}\), the space of orthogonal
+oriented frames.
 
 \end{definition}
 
@@ -9928,11 +9932,11 @@ the spin structures are torsors over \(H^1(X; {\mathbb{Z}}/2)\).
 
 \begin{remark}
 
-Recall that a \(G{\hbox{-}}\)torsor is a set with a free transitive of
-\(G\). For example, the fibers of a principal bundle are torsors. Given
-any two torsors, we can compare them using elements of \(G\), but there
-is no distinguished element. For example, \({\mathbb{A}}_n\) is a torsor
-over the vector space \(k^n\).
+Recall that a \(G{\hbox{-}}\)torsor is a set with a free transitive
+\(G{\hbox{-}}\)action. For example, the fibers of a principal bundle are
+torsors. Given any two torsors, we can compare them using elements of
+\(G\), but there is no distinguished element. For example,
+\({\mathbb{A}}_n\) is a torsor over the vector space \(k^n\).
 
 \end{remark}
 
@@ -10082,7 +10086,8 @@ define the Clifford bundle
 to globalise this from vector spaces to bundles with metrics. We defined
 a spin structure on \(X\) as any lift of the principal
 \({\operatorname{SO}}(n)\) bundle over \((T^\vee X, g)\) (namely
-\({\operatorname{Frame}}(X)\)) to a \({\operatorname{Spin}}(n)\) bundle.
+\(\mathop{\mathrm{Frame}}(X)\)) to a \({\operatorname{Spin}}(n)\)
+bundle.
 
 \end{remark}
 
@@ -10327,6 +10332,505 @@ the eigenspaces of \(\phi\) are subrepresentations. In other words,
 which says
 \(\phi( \rho(g) \cdot v) = \lambda (\rho(g) \cdot v) \implies \rho(g) \cdot v \in V_{\lambda}\).
 We used it here by This rephrases Schur's lemma!
+
+\end{remark}
+
+\hypertarget{spin-bundles-and-dirac-operators-monday-may-03}{%
+\section{Spin Bundles and Dirac Operators (Monday, May
+03)}\label{spin-bundles-and-dirac-operators-monday-may-03}}
+
+\begin{remark}
+
+Last time: we defined a Spin structure on an oriented manifold \(M\) as
+a lift of the principal \({\operatorname{SO}}(n)\) bundle \(P\to M\)
+(\emph{unassociated} to \(TM\)) to a \({\operatorname{Spin}}(n)\) bundle
+\(\tilde P\). There was a \textbf{spin representation}
+\({\operatorname{Spin}}(n) \curvearrowright{\mathbb{S}}\), which is
+irreducible for \({ \operatorname{Cl}} ({\mathbb{R}}^n)\) and splits as
+\({\mathbb{S}}= {\mathbb{S}}^+ \oplus {\mathbb{S}}^-\), which are
+\({\operatorname{Spin}}(n)\) subrepresentations. We defined
+\textbf{spinor bundles}
+\begin{align*}
+\tilde P \underset{\scriptscriptstyle {{\operatorname{Spin}}(n)} }{\times} {\mathbb{S}}= {\mathbb{S}}_M = {\mathbb{S}}_M^+ \oplus {\mathbb{S}}_M^-
+.\end{align*}
+
+\end{remark}
+
+\begin{example}[Dimension 4]
+
+If \(\dim_{\mathbb{R}}M = 4\), then
+\({\mathbb{S}}_M^\pm \in {\mathsf{Vect}}_{\mathbb{C}}^{{\operatorname{rank}}= 2}\),
+i.e.~they are complex vector bundles of rank 2. Consider the eigenspaces
+\(-e_1e_2 e_3 e_4 \curvearrowright{\mathbb{S}}\), then
+\(e_i\cdot({-}): {\mathbb{S}}^{\pm} \to {\mathbb{S}}^{\mp}\).
+
+\end{example}
+
+\begin{remark}
+
+Principal bundle: fibers are left \(G{\hbox{-}}\)torsors. In the fiber
+product, the group sits in the middle and acts on each factor. So
+\(\tilde P\) eats the right \(G{\hbox{-}}\)action, and \({\mathbb{S}}\)
+eats the left action. Remarkably, for Spin bundles, there is an action
+leftover.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+The spin bundle \({\mathbb{S}}_M\) naturally has the structure of a
+\({ \operatorname{Cl}} (M){\hbox{-}}\)module.
+
+\end{proposition}
+
+\begin{proof}[?]
+
+We have a Clifford action
+\begin{align*}
+{ \operatorname{Cl}} ({\mathbb{R}}^n) \otimes{\mathbb{S}}&\to {\mathbb{S}}\\
+x\otimes s &\mapsto x\cdot s
+.\end{align*}
+
+Recall that we have a natural conjugation action
+\({\operatorname{Spin}}(n) \curvearrowright{ \operatorname{Cl}} ({\mathbb{R}}^n)\)
+where \(g \mapsto g({-})g^{-1}\), and similarly
+\({\operatorname{Spin}}(n) \curvearrowright{\mathbb{S}}\) by
+\(g\mapsto g\cdot({-})\). Given any \(V\to W\) of
+\(G{\hbox{-}}\)modules, any
+\(P\in \mathop{\mathrm{Bun}}_G^{\mathop{\mathrm{Prin}}}\) yields an
+induced module
+\begin{align*}
+P \underset{\scriptscriptstyle {G} }{\times} V \to P \underset{\scriptscriptstyle {G} }{\times} W
+,\end{align*}
+and moreover
+\(\tilde P \underset{\scriptscriptstyle {{\operatorname{Spin}}(n)} }{\times} { \operatorname{Cl}} ({\mathbb{R}}^n) = { \operatorname{Cl}} (M)\).
+We then conclude that there is an action
+\({ \operatorname{Cl}} (M) \otimes{\mathbb{S}}_M \to {\mathbb{S}}_M\),
+the \textbf{Clifford multiplication}.
+
+\end{proof}
+
+\begin{remark}
+
+We have an isomorphism of bundles (not of algebras)
+\({ \operatorname{Cl}} (M) \cong \bigwedge T^\vee M\), and any one form
+\(\omega\) is an analogue of an element of \(V^{\otimes 1}\), and
+\(\omega \cdot ({\mathbb{S}}^+, {\mathbb{S}}^-) \in {\mathbb{S}}_M^- \oplus {\mathbb{S}}_M^+\).
+
+\end{remark}
+
+\begin{definition}[Clifford connection]
+
+A connection \(\nabla\) on \({\mathbb{S}}\) is a \textbf{Clifford
+connection} if
+\begin{align*}
+\nabla(x\cdot s) = x \cdot \nabla (s) + d(x) \cdot s 
+&& x\in H^0 { \operatorname{Cl}} (M) = H^0\qty{ \bigwedge^* T^\vee M} ,\,\, s\in H^0 ({\mathbb{S}}_M)
+,\end{align*}
+where \(d\) is the de Rham differential.
+
+\end{definition}
+
+\begin{remark}
+
+It is not obvious that a Clifford connection exists! We have
+\({\mathbb{S}}_M = \tilde P \underset{\scriptscriptstyle {{\operatorname{Spin}}(n)} }{\times} {\mathbb{S}}\),
+so it suffices to give a connection on \(\tilde P\) which is
+\({\operatorname{Spin}}(n)\) invariant, since any associated bundle will
+inherit the connection. Idea: we need a notion of parallel transport.
+This is a principal \({\operatorname{Spin}}(n)\) bundle, so the fibers
+look like \({\operatorname{Spin}}(n)\), and we want to lift paths in
+\(M\) to paths in \(\tilde P\):
+
+\begin{figure}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\fontsize{45pt}{1em} 
+\node (node_one) at (0,0) { \import{/home/zack/SparkleShare/github.com/Notes/Class_Notes/2021/Spring/FourManifolds/sections/figures}{2021-05-03_14-16.pdf_tex} };
+\end{tikzpicture}
+}
+\end{figure}
+
+It suffices to give a connection on \(P\), and using that
+\(\tilde P\to P\) is a 2 to 1 covering map, we can take a connecting on
+\(P\) coming from \(\mathop{\mathrm{OFrame}}(T^\vee M, g^\vee)\). So it
+further suffices to produce a connection on \(T^\vee M\) preserving
+orthogonality of frames under parallel transport, which is essentially
+the definition of the Levi-Cevita connection \(\nabla^{\mathrm{LC}}\).
+Then the \(\nabla\) associated to \(\nabla^{\mathrm{LC}}\) on \(P\) is a
+Clifford connection, yielding existence.
+
+\end{remark}
+
+\begin{remark}
+
+The set of Clifford connections is a torsor over \(\Omega^1(M)\). The
+association is \(\nabla \mapsto \nabla - \nabla^{\mathrm{LC}}\), and one
+can compute
+\begin{align*}
+(\nabla - \nabla^{\mathrm{LC}})(x\cdot s) = x \cdot( \nabla - \nabla^{\mathrm{LC}})(s)
+,\end{align*}
+which exactly says that this is a
+\({ \operatorname{Cl}} (M){\hbox{-}}\)linear map
+\({\mathbb{S}}_M \to {\mathbb{S}}_M \otimes\Omega^1\). We can write
+\({ \operatorname{Cl}} (M) \cong \mathop{\mathrm{End}}({\mathbb{S}}_M)\),
+and one can check that
+\([\mathop{\mathrm{End}}{\mathbb{S}}_M, \mathop{\mathrm{End}}{\mathbb{S}}_M]\)
+consists only of scalars.
+
+\end{remark}
+
+\begin{definition}[?]
+
+Let \(\nabla\) be a Clifford connection on \({\mathbb{S}}_M\) and
+\(s\in H^0({\mathbb{S}}_M)\), so
+\(\nabla(s) \in {\mathbb{S}}_M \otimes\Omega^1(M)\). Then the
+\textbf{Dirac operator} is defined as
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} : H^0({\mathbb{S}}) &\to H^0({\mathbb{S}}) \\
+s &\mapsto \sum _{e_i \in \mathop{\mathrm{Fr}}(T^\vee M) } e_i \cdot \nabla_{e_i^\vee}(s)
+\end{align*}
+where
+
+\begin{itemize}
+\tightlist
+\item
+  \(\nabla(s) = H^0({\mathbb{S}}_M \otimes\Omega^1)\)
+\item
+  \(\nabla_{e_i^\vee}(s) = \nabla(s)(e_i^\vee) \in H^0({\mathbb{S}}_M)\)
+\end{itemize}
+
+\end{definition}
+
+\begin{remark}
+
+This makes sense locally, and is well-defined independent of choice of
+frame. Henceforth, we'll take \(\nabla = \nabla^{\mathrm{LC}}\) -- in
+this case, if \(s^+ \in H^0({\mathbb{S}}^\pm)\) then
+\(\nabla_v^{{\mathrm{LC}}}(s^\pm) \in H^0({\mathbb{S}}^\pm)\). This is
+an order 1 differential operator:
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} _{ \nabla^{\mathrm{LC}}} = {\enclose{horizontalstrike}{ \partial}} : H^0({\mathbb{S}}^\pm) \to H^p({\mathbb{S}}^{\mp})
+.\end{align*}
+
+\end{remark}
+
+\begin{proposition}[?]
+
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} ^2 = - \Delta
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Given \(\psi \in H^0({\mathbb{S}})\), write
+\(\psi = \sum_{i=1}^4 \psi_i s_i\) with the \(s_i\) forming a local
+frame of \({\mathbb{S}}= {\mathbb{S}}^+ \oplus {\mathbb{S}}^-\). We can
+write
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} \psi = \sum e_i \partial_{x_i} \psi = \sum_{i=1}^4 \gamma_i \psi_{x_i}
+.\end{align*}
+where
+\(\psi_{x_i} = {\left[ { (\psi_1)_{x_i}, (\psi_2)_{x_i}, \cdots } \right]}\).
+We then have
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} ^2 \psi
+&= \sum_{i, j} \gamma_i \gamma_j \psi_{x_i x_j} \\
+&= -\sum_{ij} 2 (e_i \cdot_g e_j) \psi_{x_i x_j} \\
+&= -2 \sum_{ij} \delta_{ij} \psi_{x_i x_j} \\
+&= -2 \sum_i \psi_{x_i x_i} \\
+&= -2 \qty{ \sum_{i=1}^4 \partial^2_{x_i} }\psi \\
+&= -2 \Delta
+.\end{align*}
+where we sum over \emph{all} \(i, j\) and can pair terms, and we use
+that \(\gamma_i \gamma_j + \gamma_j \gamma_i = -2 e_1 \cdot e_j\)\\
+
+Upshot: \({\enclose{horizontalstrike}{ \partial}} \in \sqrt{ \Delta}\),
+which is why the Dirac is an invariant in quantum mechanics. This
+reduces the 2nd order Schrödinger operator a 1st order operator. Note
+that \({\enclose{horizontalstrike}{ \partial}} \psi = 0\) is the
+equation for a massless particle.
+
+\end{proof}
+
+\begin{quote}
+See maybe Lawson's spin geometry? Or Salamon.
+\end{quote}
+
+\hypertarget{wednesday-may-05}{%
+\section{Wednesday, May 05}\label{wednesday-may-05}}
+
+\hypertarget{fun-physics-aside}{%
+\subsection{Fun Physics Aside}\label{fun-physics-aside}}
+
+\begin{remark}
+
+Last time: we showed
+\({ \operatorname{Cl}} (X) \coloneqq{ \operatorname{Cl}} (T^\vee X, g^\vee)\)
+acts on the spinor bundle
+\({\mathbb{S}}_X \coloneqq\tilde P \underset{\scriptscriptstyle {{\operatorname{Spin}}(n)} }{\times} {\mathbb{S}}\)
+by Clifford multiplication. For \(\dim_{\mathbb{R}}X = 4\), we have a
+spliutting \({\mathbb{S}}^+ \oplus {\mathbb{S}}^-\) as complex rank 2
+vector bundles. If \(\omega\in H^0 \CL(X)\) is a one form, then
+\(\omega{\mathbb{S}}_X^\pm \subset {\mathbb{S}}^{\mp}\) .
+
+\end{remark}
+
+\begin{definition}[Clifford Connection]
+
+A \textbf{Clifford connection} is a map
+\begin{align*}
+\nabla: {\mathbb{S}}_X \to {\mathbb{S}}_X \otimes\Omega^1 \\
+.\end{align*}
+where \(\alpha \cdot s \mapsto \alpha\cdot \nabla s + dx \cdot s\).
+
+\end{definition}
+
+\begin{remark}
+
+There is a distinguished Clifford connection associated to
+\(\nabla^{\mathrm{LC}}\). Also recall that we defined a Dirac operator
+\({\enclose{horizontalstrike}{ \partial}}\) and showed
+\({\enclose{horizontalstrike}{ \partial}} ^2 = -2 \Delta\).
+
+\end{remark}
+
+\begin{definition}[The Dirac Equation]
+
+The \textbf{Diract equation} is define on
+\(\psi\in H^0(X, {\mathbb{S}})\) as
+\begin{align*}
+(i \diract + m \omega)\psi = 0
+.\end{align*}
+
+Here \(m\) denotes a mass,
+\(\omega = \omega_{\mathbb{C}}= \prod_{i=1}^4 \gamma_i\).
+
+\end{definition}
+
+\begin{remark}
+
+This describes fermions in a vacuum, e.g.~an electron where \(\psi\) is
+its wave function. Applying this to \({\mathbb{R}}^4\) with
+\(g = (dt)^2 - (dx)^2 - (dy)^2 - (dz)^2\), then this equation in
+\(\psi\) is invariant under the Lorentz group \(O({\mathbb{R}}^4, g)\).
+
+\end{remark}
+
+\hypertarget{rohklins-theorem}{%
+\subsection{Rohklin's Theorem}\label{rohklins-theorem}}
+
+\begin{theorem}[Rohklin's Theorem]
+
+Let \(X\) be a smooth closed oriented spin 4-manifold. Then the
+signature \(\sigma(X) \coloneqq b_2^+(X) - b_2^-(X)\) (the dimensions of
+positive/negative definite subspaces of \$H\^{}2(X; {\mathbb{R}})) is
+divisble by 16.
+
+\end{theorem}
+
+\begin{remark}
+
+This restricts what topological manifolds can admit smooth structures.
+Freedman constructed a topological manifold of dimension 4 with
+signature 8, which thus can not admit a smooth structure. Recall that
+having a spin structure was having a lift
+
+\begin{center}
+\begin{tikzcd}
+P
+  \ar[r] 
+& 
+X
+  \ar[d] 
+\\
+\tilde P
+\ar[i, "\exists]"
+& 
+\end{tikzcd}
+\end{center}
+
+\end{remark}
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+Consider
+\({\mathbb{S}}_X \coloneqq\tilde P \fiberprod_{{\operatorname{Spin}}(n)} {\mathbb{S}}\),
+then define
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} ^\pm: H^o({\mathbb{S}}_X^\pm) \to H^0({\mathbb{S}}^{\mp})
+.\end{align*}
+Note that we can write
+\({\enclose{horizontalstrike}{ \partial}} = {\enclose{horizontalstrike}{ \partial}} ^+ + \diract^-\);
+
+\begin{itemize}
+\tightlist
+\item
+  Step 1: Show
+  \(\mathop{\mathrm{ind}}{\enclose{horizontalstrike}{ \partial}} ^+ = -\sigma(X) / 8\),
+\item
+  Step 2: Show \(\mathop{\mathrm{ind}}\diract^+\) is even.
+\end{itemize}
+
+\hypertarget{step-1-1}{%
+\subsubsection{Step 1}\label{step-1-1}}
+
+What is the symbol \(\Symb({\enclose{horizontalstrike}{ \partial}} )\)?
+By definition
+\begin{align*}
+\Symb {\enclose{horizontalstrike}{ \partial}} : \pi^* {\mathbb{S}}\to \pi^* {\mathbb{S}}
+.\end{align*}
+where \(\pi:T^\vee X\to X\), and the symbol was defined by replacing
+\({\frac{\partial }{\partial x_i}\,}\) with a
+function\(y_i: T^\vee X\to {\mathbb{R}}\). We can write
+\begin{align*}
+\diract \phi = \sum_{e_i \in \mathop{\mathrm{Fr}}} e_i \cdot \nabla_{e_i^\vee} \psi
+,\end{align*}
+and so
+\begin{align*}
+\Symb \diract(\psi) = \sum_i y_i e_i = \psi
+.\end{align*}
+
+We have a tautological form \(\alpha\in H^0(T^\vee X, \pi^* \Omega^1)\)
+where \((p, \alpha) \mapsto \alpha\), and so
+\(\Symmb({\enclose{horizontalstrike}{ \partial}} )({-}) = \alpha\cdot({-})\).
+
+\begin{claim}
+
+\begin{align*}
+{\enclose{horizontalstrike}{ \partial}} : H^0({\mathbb{S}}) {\circlearrowleft}&& \text{is an elliptic operator}
+.\end{align*}
+
+\end{claim}
+
+We need to check that the map \(\alpha\cdot({-})\) is exact if
+\(\alpha\neq 0\).
+
+We have \(\alpha\cdot({-}): {\mathbb{S}}\to {\mathbb{S}}\) and
+\begin{align*}
+  (- \alpha)({-}) \, \alpha({-}) = (- \alpha \cdot \alpha) = {\left\lVert { \alpha} \right\rVert}^2 \neq 0
+,\end{align*}
+which makes the operator invertible away from zero. Thus we can apply
+Atiyah-Singer.
+
+\begin{lemma}[?]
+
+There is a nice formula for Chern characters:
+\begin{align*}
+\operatorname{ch}{\mathbb{S}}^+ - \operatorname{ch}{\mathbb{S}}^- = \prod_{i=1}^n( e ^{x_i/2} - e^{-x_i/2})
+.\end{align*}
+where \(\left\{{ \pm x_i }\right\}\) are the Chern roots of
+\(T^\vee X\).
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Use the splitting principle to write
+\(T^\vee X \otimes_{\mathbb{R}}{\mathbb{C}}= \bigoplus _{i=1}^n L_i \otimes L_i^{-1}\)
+Then \({\mathbb{S}}^+\) is a sum of all tensor products of
+\(L_i \otimes L_i^{-1}\) where the number of \(-1\)s appearing is even.
+
+\end{proof}
+
+\begin{remark}
+
+Note there is ambiguity up to 2-torsion in the formula, but this gets
+moved into the choice of spin structure, which amounts to choice of a
+square root of each of these line bundles.
+
+\end{remark}
+
+Setting \(2n\coloneqq\dim X\), we have
+\begin{align*}
+\mathop{\mathrm{ind}}\diract^+ 
+&= (-1)^n \int_X { \operatorname{ch}{\mathbb{S}}^+ - \operatorname{ch}{\mathbb{S}}^- \over {\operatorname{eul}}X} \mathrm{td}(TX\otimes{\mathbb{C}}) \\
+&= \int_X { \prod e^{x_i/2} - e^{-x_i /2} \over (-1)^n \prod x_i} \prod {x_i \over 1 - e^{x_i} } \prod {x_i \over 1 - e^{-x_i}} \\
+&= \int_X \prod { (e^{x_i/2} - e^{-x_i / 2 )} x_i \over (1-e^{x_i} ) (1 - e^{-x_i}) } \\
+&= (-1)^n \int_X \prod_I {x_i \over e^{x_i/2} - e^{-x_i/2}} \\
+&= \int_X \qty{ 1 - {x_1^2 \over 24} } \qty{ 1 - {x_2^2 \over 24}} \\
+&= {-1\over 24} \int_X x_1^2 + x_2^2 + (x_1 + x_2)^2 - 2x_1 x_2 \\
+&= {-1\over 24} \qty{c_1^2 - 2c_2}
+.\end{align*}
+
+\begin{remark}
+
+See Ahat genus.
+
+\end{remark}
+
+\begin{claim}
+
+\begin{align*}
+c_1^2 - 2c^2 = 3\cdot \sigma(X)
+.\end{align*}
+
+\end{claim}
+
+This is another application of Atiyah-Singer, applied to a slightly
+different operator. Recall the Hodge star operator,
+\begin{align*}
+\star: \Omega^k(X) \to \Omega^{4-k}(X)
+.\end{align*}
+
+Defining \(\tau \coloneqq i^{k(k-1) + 4 \over 2}\), we get
+\(\tau^2 = 1\), so define an operator \(\tau \star\). This yields a
+splitting into \(\pm 1\) eigenspaces:
+\begin{align*}
+\Omega(X) = \Omega^+(X) \oplus \Omega^-(X)
+.\end{align*}
+Recalling that \(d^\dagger\) was the adjoint of \(d\), one can check
+that \(d+d^\dagger: \Omega^{\pm}(X) \to \Omega^{\mp}(X)\) interchanges
+these. It turns out that
+\(\mathop{\mathrm{ind}}(d + d^\dagger) = \sigma(X)\), which by
+Atiyah-Singer and Hermite forms will equal \(c_1^2 -2 c_2 \over 3\).
+This yields the desired formula for step 1.
+
+\hypertarget{step-2-1}{%
+\subsection{Step 2}\label{step-2-1}}
+
+We now want to show
+\(\mathop{\mathrm{ind}}{\enclose{horizontalstrike}{ \partial}} ^+\) is
+divisible by 2. The key point is that
+\(\ker {\enclose{horizontalstrike}{ \partial}} ^+\) and
+\(\operatorname{coker}{\enclose{horizontalstrike}{ \partial}} ^+ = \ker {\enclose{horizontalstrike}{ \partial}} ^-\)
+admit a quaternionic vector space structure. This comes from the fact
+that
+\({\operatorname{Spin}}(4) \cong {\operatorname{SU}}(2) \times{\operatorname{SU}}(2) \cong S^1({\mathbb{H}}) \oplus S^1({\mathbb{H}}) \coloneqq{\mathbb{S}}^+ \oplus {\mathbb{S}}^-\),
+so have a splitting into subspaces of unit quaternions. It turns out
+that \({\enclose{horizontalstrike}{ \partial}}\) is
+\({\mathbb{H}}{\hbox{-}}\)linear. So we get an equality
+\begin{align*}
+-\sigma(X) / 8 = \mathop{\mathrm{ind}}{\enclose{horizontalstrike}{ \partial}} ^+ = 2\lambda
+\end{align*}
+for some \(\lambda\), yielding \(8\bigm|\sigma(X)\).
+
+\hypertarget{remarks}{%
+\subsection{Remarks}\label{remarks}}
+
+\begin{remark}
+
+If \(H_1(X; {\mathbb{Z}})\) has no 2-torsion, e.g.~if \(\pi_1X = 0\),
+then \(w_2(X) = 0\) iff the intersection form on \(H^2\) is even, where
+\(w_2\) is the obstruction to existence of spin structures. Note that
+this makes sense for topological manifolds and not just smooth
+manifolds, and in this case \(\sigma(X)\) is divisible by 8. This
+restriction comes from number theory: since we have a unimodular
+lattice,it breaks into sums of \(E_8, -E_8\), and \(H\) if indefinite,
+and any even unimodular lattice has signature divisble by 8. So this can
+work as an obstruction to the existence of smooth structures.
+
+\end{remark}
+
+\begin{remark}
+
+Note that \({\mathbb{CP}}^2\) has no spin structure, and
+\(\sigma({\mathbb{CP}}^2) = 1\). There's a way to modify the invariant
+to set \(\sigma(X)/8 = ? \pmod 2\).
 
 \end{remark}
 
