@@ -19,3 +19,5 @@ aliases: ["equivariant stable homotopy"]
 - [Burnside ring](Burnside%20ring%20(homotopy%20theory).md)
 - [Box product](Box%20product)
 - [representation ring](representation%20ring)
+- [coend](coend)
+- [Factorization homology](Factorization%20homology)
