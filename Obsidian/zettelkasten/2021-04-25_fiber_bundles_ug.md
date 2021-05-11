@@ -12,7 +12,7 @@ What is a fiber bundle? Generally speaking, it is similar to a fibration - we re
 
 However, it also satisfies more conditions - in particular, the condition of _local triviality_. This requires that the total space looks like a product locally, although there may some type of global monodromy. Thus with some mild conditions^[A fiber bundle $E \to B$ is a fibration when $B$ is paracompact.], fiber bundles will be instances of fibrations (or alternatively, fibrations are a generalization of fiber bundles, whichever you prefer!)
 
-As with fibrations, we can interpret a fiber bundle as "a family of $B$s indexed/parameterized by $F$s", and the general shape data of a fiber bundle is similarly given by
+As with fibrations, we can interpret a fiber bundle as "a family of $F$s indexed/parameterized by $B$s", and the general shape data of a fiber bundle is similarly given by
 
 \begin{tikzcd}
 F \arrow[rr, hook] &  & E \arrow[dd, "\pi", two heads] \\
