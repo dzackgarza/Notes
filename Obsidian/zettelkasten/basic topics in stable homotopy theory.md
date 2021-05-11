@@ -33,7 +33,7 @@
 	- [[Steenrod algebra]]
 	- [[Steenrod operations]]
 	- [[Massey product]]
-- [[Spectral Sequences]]
+- [[spectral sequence]]
 	- [[Bousfield-Kan spectral sequence]]
 	- [[Adams spectral sequence]]
 - [K-Theory](K-Theory.md)

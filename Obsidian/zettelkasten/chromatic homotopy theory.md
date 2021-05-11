@@ -37,12 +37,12 @@ We wish to consider the following question: For which $n$ is $\Theta_n = 0$? The
 
 ## The chromatic tower
 
-Fix a prime $p$. The **chromatic tower** of a spectrum X is
-the tower of Bousfield localizations
+Fix a prime $p$. The **chromatic tower** of a [Thom spectrum](Thom%20spectrum.md) $X$ is the tower of [Bousfield localizations](Bousfield%20localization)
 $$
 X \rightarrow \cdots \rightarrow X _ { E ( n ) } \rightarrow X _ { E ( n - 1 ) } \rightarrow \cdots \rightarrow X _ { E ( 0 ) }
 $$
-where E(n) is the nth Johnson-Wilson spectrum (E(0) = HQ, by convention) with
+where $E(n)$ is the $n$th [[Johnson-Wilson spectrum]] $(E
+(0) = \mH \QQ$, by convention) with
 $$
 E ( n ) _ { * } = \mathbb { Z } _ { ( p ) } \left[ v _ { 1 } , \dots , v _ { n - 1 } , v _ { n } ^ { \pm } \right]
 $$
@@ -50,12 +50,14 @@ The fibers of the chromatic tower
 $$
 M _ { n } X \rightarrow X _ { E ( n ) } \rightarrow X _ { E ( n - 1 ) }
 $$
-are called the monochromatic layers. The spectral sequence associated to the chromatic tower is the chromatic spectral sequence
+are called the monochromatic layers. 
+
+The [spectral sequence](spectral%20sequence.md) associated to the chromatic tower is the **chromatic spectral sequence**
 $$
 E _ { 1 } ^ { n , * } = \pi _ { * } M _ { n } X \Rightarrow \pi _ { * } X _ { ( p ) }
 $$
 
-Let Mell denote the Deligne-Mumford stack of elliptic curves (over Spec(Z)). For
+Let $M_\\ell$ denote the [[Deligne-Mumford stack]] of [[elliptic curves]] over $\spec(\ZZ)$. For
 a commutative ring R, the groupoid of R-points of Mell is the groupoid of elliptic
 curves over R. This stack carries a line bundle ω where for an elliptic curve C, the
 fiber of ω over C is given by

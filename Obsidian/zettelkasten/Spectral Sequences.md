@@ -1,3 +1,0 @@
-- [Adams Spectral Sequence](Adams%20Spectral%20Sequence)
-- [zettelkasten/Atiyah Hirzebruch spectral sequence](zettelkasten/Atiyah%20Hirzebruch%20spectral%20sequence.md)
-- [Adams-Novikov spectral sequence](Adams-Novikov%20spectral%20sequence)
