@@ -1,5 +1,5 @@
 ---
-aliases: ["motivic homotopy theory", "motivic homotopy", "motives", "pure motives", "mixed motives"]
+aliases: ["motivic homotopy theory", "motivic homotopy", "motives", "pure motives", "mixed motives", "motive"]
 ---
 
 # References
@@ -10,7 +10,8 @@ aliases: ["motivic homotopy theory", "motivic homotopy", "motives", "pure motive
 
 
 # Motivation
-
+- Motives: fundamental building blocks of algebraic varieties
+	- See [reciprocity conjecture](reciprocity%20conjecture) and a special case, [Shimura-Taniyama-Weil](Shimura-Taniyama-Weil)
 - Notation: $\Vect_r(X)$: iso classes of rank $r$ vector bundles over $X$.
 - Goal: classify vector bundles on smooth affine schemes.
 - Serre's conjecture: for $k\in \Fields$, is every \( M\in \modsleft{\kxn}^\fg \) actually free?
