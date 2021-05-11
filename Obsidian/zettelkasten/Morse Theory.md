@@ -11,14 +11,25 @@ Tags: #topology #morse_theory
 - Can be used to prove the high dimensional case of the generalized [Generalized Poincaré conjecture](Generalized%20Poincaré%20conjecture)
 
 # Results
-- **Theorem**: Every compact manifold has a Morse function.
+**Theorem**: Every compact smooth manifold admits a Morse function.
 
-- **Theorem**: [Morse functions](Morse%20function) are generic (given any smooth function $f: X\to Y$, there's an arbitrarily small perturbation of $f$ that is Morse).
+**Theorem**: [Morse functions](Morse%20function) are **generic**: given any smooth function $f: X\to Y$, there is an arbitrarily small perturbation of $f$ that is Morse.
 
 See [Morse lemma](Morse%20lemma)
 
-- **Theorem 3**:
+**Theorem 3**:
  If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
+
+
+**Theorem**: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
+
+Possibly used in Milnor's [exotic](exotic%20sphere) 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
+
+**Theorem**:
+$M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of [index](index%20of%20a%20Morse%20function.md) $k$.
+
+![](attachments/Pasted%20image%2020210501235532.png)
+
 
 # Dave's Videos
 
@@ -49,8 +60,8 @@ See [Morse lemma](Morse%20lemma)
 
 - Consequence of theorem 3: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
 	- Recall that this is proved by constructing a [vector field](vector%20field) $V$ on $W$, then using a diffeomorphism $\phi:I \cross M_0 \to W$ by flowing along $V$.
-	- Can we do gradient flow in the case of a Riemannian metric? 
-	
+	- Can we do gradient flow in the presence of a [Riemannian metric](metric.md)? 
+	#unanswered_questions 
 
 ## Unsorted
 
@@ -60,9 +71,6 @@ See [Morse lemma](Morse%20lemma)
 ![](attachments/Pasted%20image%2020210501235456.png)
 
 [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
-
-- **Theorem**: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
-  - Possibly used in Milnor's [exotic](exotic%20sphere) 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
 
 - Diffeomorphism type depends on [isotopy](isotopy) classes of attaching maps.
 
@@ -74,9 +82,7 @@ See [handle decomposition](handle%20decomposition)
 
 Morse theory: handles nice singularities. Can have worse ones, covered by [catastrophe theory](catastrophe%20theory)  (dynamical systems).
 
-Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of [index](index%20of%20a%20Morse%20function.md) $k$.
 
-![](attachments/Pasted%20image%2020210501235532.png)
 
 Importance of CW complexes: triangulations of surfaces.
 
