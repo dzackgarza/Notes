@@ -1,0 +1,1 @@
+A morphism of schemes is **proper** if it is [separated](separated), [universally closed](universally%20closed), and of [finite type](finite%20type.md).

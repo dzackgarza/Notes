@@ -241,14 +241,14 @@
   "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
     "zettelkasten/scheme.md",
-    "zettelkasten/Untitled 4.md",
+    "zettelkasten/quasicoherent sheaf.md",
     "zettelkasten/sheaf.md",
-    "zettelkasten/finite type.md",
-    "zettelkasten/Zariski tangent space.md",
-    "zettelkasten/Algebra over a ring.md",
-    "00_Home.md",
-    "zettelkasten/Learning.md",
-    "zettelkasten/l-adic representations.md",
-    "zettelkasten/Stable Homotopy Seminar.md"
+    "zettelkasten/stalk.md",
+    "zettelkasten/Structure sheaf.md",
+    "zettelkasten/section of a sheaf.md",
+    "zettelkasten/affine scheme.md",
+    "zettelkasten/smooth scheme.md",
+    "zettelkasten/proper morphism.md",
+    "zettelkasten/universally closed.md"
   ]
 }

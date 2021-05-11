@@ -1,6 +1,6 @@
-- [bundle](bundle.md): locally free sheaf?
-- [[Canonical sheaf]]
-- [[Structure sheaf]]
-- Reflexive sheaf
+- Every [bundle](bundle.md) is a [locally free](locally%20free) sheaf?
+- [canonical sheaf](canonical%20sheaf)
+- [structure sheaf](structure%20sheaf.md)
 - [stalk](stalk)
-- [[section of a sheaf]]
+- [section of a sheaf](section%20of%20a%20sheaf.md)
+- Reflexive sheaf
