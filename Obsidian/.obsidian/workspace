@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/motivic homotopy.md",
-            "mode": "source"
+            "file": "zettelkasten/Spectra.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Spectra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md"
+                "file": "zettelkasten/Spectra.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Spectra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md",
+                "file": "zettelkasten/Spectra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/motivic homotopy.md"
+                "file": "zettelkasten/Spectra.md"
               }
             }
           }
@@ -240,6 +240,8 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/Spectra.md",
+    "zettelkasten/2021-04-26_Spectral_Sequence_of_a_Serre_Fibration.md",
     "zettelkasten/motivic homotopy.md",
     "zettelkasten/Shimura-Taniyama-Weil.md",
     "zettelkasten/reciprocity conjecture.md",
@@ -247,8 +249,6 @@
     "zettelkasten/attachments/liegroups.pdf",
     "zettelkasten/Langlands.md",
     "zettelkasten/modular form.md",
-    "zettelkasten/algebraic group.md",
-    "zettelkasten/How to extract homology using spectra.md",
-    "zettelkasten/scheme.md"
+    "zettelkasten/algebraic group.md"
   ]
 }

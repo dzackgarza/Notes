@@ -54,10 +54,10 @@ $$
 
 Spectra *represent* invariant theories (like cohomology) in a precise way. For example, 
 $$
-HG \definedas \left(K(G, 1) \mapsvia{\Sigma} K(G, 2) \mapsvia{\Sigma} \cdots \right)
+HG := \tv{ K(G, 1), K(G, 2),  \cdots }
 $$
 
-then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ from (roughly) $\pi_* HG \definedas [\mathbb{S}, HG \bigwedge X]$.
+then $H^n(X; G) \cong [X, K(G, 1)]$, and we can similarly extract $H^*(X; G)$ from (roughly) $\pi_* HG := [\mathbb{S}, HG \smash X]$.
 
 > Note: this glosses over some important details! Also, smash product basically just looks like the tensor product in the category of spectra.
 
