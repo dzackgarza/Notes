@@ -1,1 +1,2 @@
 - ![Lecture Notes](attachments/alggroups.pdf)
+- [reductive](reductive)

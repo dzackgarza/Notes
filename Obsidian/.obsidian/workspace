@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/How to extract homology using spectra.md",
+            "file": "zettelkasten/Langlands.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/How to extract homology using spectra.md",
+                "file": "zettelkasten/Langlands.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/How to extract homology using spectra.md"
+                "file": "zettelkasten/Langlands.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/How to extract homology using spectra.md",
+                "file": "zettelkasten/Langlands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/How to extract homology using spectra.md",
+                "file": "zettelkasten/Langlands.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/How to extract homology using spectra.md"
+                "file": "zettelkasten/Langlands.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/Langlands.md",
+    "zettelkasten/modular form.md",
+    "zettelkasten/algebraic group.md",
     "zettelkasten/How to extract homology using spectra.md",
     "zettelkasten/scheme.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/basic topics in stable homotopy theory.md",
     "zettelkasten/chromatic homotopy theory.md",
     "zettelkasten/equivariant stable homotopy theory.md",
-    "zettelkasten/separated.md",
-    "zettelkasten/closed immersion.md",
-    "zettelkasten/diagonal morphism.md",
-    "zettelkasten/locally ringed space.md"
+    "zettelkasten/separated.md"
   ]
 }
