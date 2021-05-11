@@ -11,3 +11,6 @@ aliases: ["equivariant stable homotopy"]
 # Topics
 
 - [Mackey functor](Mackey%20functor)
+- [Tambara functors](Tambara%20functors)
+- [norm map](norm%20map)
+- [transfer map](transfer%20map)
