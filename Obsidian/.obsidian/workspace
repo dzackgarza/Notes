@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Spectra.md",
-            "mode": "preview"
+            "file": "zettelkasten/Maschke's theorem.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Spectra.md",
+                "file": "zettelkasten/Maschke's theorem.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Spectra.md"
+                "file": "zettelkasten/Maschke's theorem.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Spectra.md",
+                "file": "zettelkasten/Maschke's theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Spectra.md",
+                "file": "zettelkasten/Maschke's theorem.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Spectra.md"
+                "file": "zettelkasten/Maschke's theorem.md"
               }
             }
           }
@@ -240,6 +240,8 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/Maschke's theorem.md",
+    "zettelkasten/representation theory.md",
     "zettelkasten/Spectra.md",
     "zettelkasten/2021-04-26_Spectral_Sequence_of_a_Serre_Fibration.md",
     "zettelkasten/motivic homotopy.md",
@@ -247,8 +249,6 @@
     "zettelkasten/reciprocity conjecture.md",
     "zettelkasten/Lie group.md",
     "zettelkasten/attachments/liegroups.pdf",
-    "zettelkasten/Langlands.md",
-    "zettelkasten/modular form.md",
-    "zettelkasten/algebraic group.md"
+    "zettelkasten/Langlands.md"
   ]
 }
