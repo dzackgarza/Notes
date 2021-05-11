@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2ca6eed6d06c0a73",
+        "id": "c3e8d64763040a96",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -238,7 +238,7 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "2ca6eed6d06c0a73",
+  "active": "c3e8d64763040a96",
   "lastOpenFiles": [
     "zettelkasten/separated.md",
     "zettelkasten/scheme.md",
