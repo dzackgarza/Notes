@@ -241,14 +241,14 @@
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
     "zettelkasten/scheme.md",
+    "zettelkasten/Stable homotopy.md",
+    "zettelkasten/basic topics in stable homotopy theory.md",
+    "zettelkasten/chromatic homotopy theory.md",
+    "zettelkasten/equivariant stable homotopy theory.md",
     "zettelkasten/separated.md",
     "zettelkasten/closed immersion.md",
     "zettelkasten/diagonal morphism.md",
     "zettelkasten/locally ringed space.md",
-    "zettelkasten/quasicoherent sheaf.md",
-    "zettelkasten/sheaf.md",
-    "zettelkasten/stalk.md",
-    "zettelkasten/Structure sheaf.md",
-    "zettelkasten/section of a sheaf.md"
+    "zettelkasten/quasicoherent sheaf.md"
   ]
 }

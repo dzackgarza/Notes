@@ -3,6 +3,25 @@ date: 2021-04-26
 aliases: ["chromatic homotopy", "chromatic"]
 ---
 
+# Topics
+
+- [chromatic homotopy theory](chromatic%20homotopy%20theory.md)
+- [Fracture theorem](Fracture%20theorem)
+- The chromatic spectral sequence
+	- Is this similar to fracture theorems in stable homotopy..?
+- [Nishida's Theorem](zettelkasten/Nishida's%20Theorem.md)
+- [Bousfield localization](Bousfield%20localization)
+- [[Morava stabilizer group]]
+	- Particularly Mike Hopkins' contributions
+	- [Morava E theory](Morava%20E%20theory.md)
+- [Formal group](zettelkasten/Formal%20group.md)
+	- [[Formal group]]
+	- [[Lubin-Tate space]]
+	- [[Lubin-Tate theory]]
+- [[Kervaire invariant 1]]
+- [TMF](Topological%20modular%20forms.md)
+
+# Notes
 
 - The chromatic view-point, which studies stable homotopy theory via its relationships to the moduli of formal groups, and related topics such as topological modular forms, use a sizable amount of (fairly abstract) algebraic geometry. And Lurie's work on derived algebraic geometry was motivated in part by establishing foundations adequate to the task of defining equivariant forms of TMF.
 

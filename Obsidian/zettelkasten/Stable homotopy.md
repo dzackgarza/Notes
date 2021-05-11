@@ -1,70 +1,13 @@
 References: [Topology](Topology) | [Spectra](Spectra.md) | [cohomolology theory](cohomolology%20theory.md)
 
 # Motivations
-
-- ?
+See [motivations for stable homotopy theory](motivations%20for%20stable%20homotopy%20theory).
 
 # Basic Tools
-- [[Mapping cylinder]]
-- [[Mapping cone]]
-- [[Double mapping cylinder]] 
-- [[Mapping telescope]] 
-- [[Suspension]]
-	- [[Freudenthal Suspension Theorem]]
-- [[Loop space]] 
-	- [[Infinite loop space]]
-	- [[H-space]]
-- [[Path space]]
-- [[Smash product]]
-- [[Spectra]]
-	- [[Brown Representability]]
-	- [[Orthogonal Spectra]]
-	- [[Symmetric Spectra]]
-	- [Bordism spectra](zettelkasten/Bordism%20spectra.md)
-	- [[Thom spectrum]]
-- [[Model category]]
-	- [Quillen equivalence](Quillen%20equivalence)
-	- Cofibrant generation
-	- [[Cofibrant generation]]
-	- [[Weak equivalence]]
-	- [[Enriched category]]
-	- [[Tensored Category]]
-	- [[Day convolution]]
-- [Homotopy colimit](Homotopy%20colimit)
-	- [colimits](colimits)
-- [[Obstruction theory (homotopy)]]
-- [[Cohomology operations]]
-	- [[Massey product]]
-	- [[Steenrod algebra]]
-	- [[Steenrod operations]]
-	- [[Massey product]]
-- [[Spectral Sequences]]
-	- [[Bousfield-Kan spectral sequence]]
-	- [[Adams spectral sequence]]
-- [K-Theory](K-Theory.md)
-	- [Algebraic k theory](Algebraic%20K%20theory.md)
-	- [Topological K theory](Topological%20K%20theory)
-	- [[Bott periodicity]]
-- [infty categories](infty%20categories.md)
+See [basic topics in stable homotopy theory](basic%20topics%20in%20stable%20homotopy%20theory).
 
 # Chromatic Homotopy
-Reference: [Chromatic homotopy](Chromatic%20homotopy%20theory)
-
-- [chromatic homotopy theory](chromatic%20homotopy%20theory.md)
-- [Fracture theorem](Fracture%20theorem)
-- The chromatic spectral sequence
-	- Is this similar to fracture theorems in stable homotopy..?
-- [Nishida's Theorem](zettelkasten/Nishida's%20Theorem.md)
-- [Bousfield localization](Bousfield%20localization)
-- [[Morava stabilizer group]]
-	- Particularly Mike Hopkins' contributions
-	- [Morava E theory](Morava%20E%20theory.md)
-- [Formal group](zettelkasten/Formal%20group.md)
-	- [[Formal group]]
-	- [[Lubin-Tate space]]
-	- [[Lubin-Tate theory]]
-- [[Kervaire invariant 1]]
-- [TMF](Topological%20modular%20forms.md)
+See [Chromatic homotopy](Chromatic%20homotopy%20theory).
 
 # Equivariant Homotopy
 
