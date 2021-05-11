@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/separated.md",
-            "mode": "preview"
+            "file": "zettelkasten/scheme.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/separated.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/separated.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/separated.md",
+                "file": "zettelkasten/scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/separated.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/separated.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           }
@@ -240,8 +240,8 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
-    "zettelkasten/separated.md",
     "zettelkasten/scheme.md",
+    "zettelkasten/separated.md",
     "zettelkasten/locally ringed space.md",
     "zettelkasten/quasicoherent sheaf.md",
     "zettelkasten/sheaf.md",
