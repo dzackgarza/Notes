@@ -21,4 +21,4 @@ Counterexample to this: take the family
 $$
 y^{2}=x^{3}+t, t \neq 0
 $$
-All fibers
+All fibers are abstractly isomorphic by computing the [j invariant](j%20invariant), as zero, but this is not a trivial family e.g. because the [[monodromy]
