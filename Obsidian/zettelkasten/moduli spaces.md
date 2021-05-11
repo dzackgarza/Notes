@@ -14,4 +14,6 @@ Apparently a [fundamental class](fundamental%20class) exists for closed subvarie
 
 > Reference: https://arxiv.org/pdf/1708.08124.pdf
 
-In fact, it is possible to say a great deal about the moduli space purely in terms of the moduli functor, without even knowing the moduli space exists! For example, the tangent space can be computed by evaluating the moduli functor on the spectrum of the ring of dual numbers (
+In fact, it is possible to say a great deal about the moduli space purely in terms of the moduli functor, without even knowing the moduli space exists! For example, the tangent space can be computed by evaluating the moduli functor on the spectrum of the ring of dual numbers.
+
+$\Mg$ is not representable: if it were , then every isotrivial family of curves would be equivalent to a trivial family, which we have just seen is not the case

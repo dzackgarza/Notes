@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/elliptic curve.md",
+            "file": "zettelkasten/moduli spaces.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/elliptic curve.md",
+                "file": "zettelkasten/moduli spaces.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/elliptic curve.md"
+                "file": "zettelkasten/moduli spaces.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/elliptic curve.md",
+                "file": "zettelkasten/moduli spaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/elliptic curve.md",
+                "file": "zettelkasten/moduli spaces.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/elliptic curve.md"
+                "file": "zettelkasten/moduli spaces.md"
               }
             }
           }
@@ -240,12 +240,12 @@
   },
   "active": "34dec5e47889cb3f",
   "lastOpenFiles": [
+    "zettelkasten/moduli spaces.md",
     "zettelkasten/elliptic curve.md",
     "zettelkasten/smooth scheme.md",
     "zettelkasten/smooth structure.md",
     "zettelkasten/scheme.md",
     "zettelkasten/algebraic curve.md",
-    "zettelkasten/moduli spaces.md",
     "zettelkasten/Grassmannian.md",
     "zettelkasten/affine Grassmannian.md",
     "zettelkasten/Equivalence of categories.md",

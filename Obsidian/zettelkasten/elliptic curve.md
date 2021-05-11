@@ -14,4 +14,5 @@ aliases: ["Elliptic curves"]
 - [p-adic uniformization](p-adic%20uniformization)
 - [moduli stack of elliptic curves](moduli%20stack%20of%20elliptic%20curves)
 - [j invariant](j%20invariant)
-- [[condu]]
+- [conductor](conductor)
+- [hyperellptic involution](hyperellptic%20involution)
