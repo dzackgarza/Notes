@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/derived category.md",
+            "file": "zettelkasten/solid mathematics.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/derived category.md",
+                "file": "zettelkasten/solid mathematics.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/derived category.md"
+                "file": "zettelkasten/solid mathematics.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/derived category.md",
+                "file": "zettelkasten/solid mathematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/derived category.md",
+                "file": "zettelkasten/solid mathematics.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/derived category.md"
+                "file": "zettelkasten/solid mathematics.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/solid mathematics.md",
+    "zettelkasten/generates.md",
+    "zettelkasten/projective object.md",
+    "zettelkasten/compact object.md",
+    "zettelkasten/Untitled 4.md",
     "zettelkasten/derived category.md",
     "zettelkasten/equivariant stable homotopy theory.md",
     "zettelkasten/Burnside ring (algebraic geometry).md",
-    "zettelkasten/Untitled 4.md",
     "zettelkasten/Burnside ring.md",
-    "zettelkasten/Stable homotopy.md",
-    "zettelkasten/p-adic integers.md",
-    "zettelkasten/algebraic curve.md",
-    "zettelkasten/completion.md",
-    "zettelkasten/torsor.md"
+    "zettelkasten/Stable homotopy.md"
   ]
 }
