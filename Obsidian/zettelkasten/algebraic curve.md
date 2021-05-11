@@ -12,4 +12,5 @@
 	- Unbounded: points "at infinity", like puncture points on a Riemann surface
 - Compactifications are not unique. Example:
 	- $\AA^2 \subseteq \PP^2$
-	- $\A
+	- $\AA^2 \subseteq \(\PP^1)^{\times 2}$
+	- But $\PP^2 \neq (\PP^1)^
