@@ -5,7 +5,7 @@
 - [Contact geometry](zettelkasten/2021-04-26_Contact_Geometry.md)
 - [Floer Theory](zettelkasten/2021-04-26_Floer_Theory.md)
 - [Fukaya Categories](zettelkasten/Fukaya%20category.md)
-- [Schoenflies](zettelkasten/2021-04-26_Schoenflies.md)
+- [Schoenflies](zettelkasten/Schoenflies.md)
 - [Uniformization](zettelkasten/uniformization.md)
 - [Whitney Embedding](zettelkasten/2021-04-26_Whitney_Embedding.md)
 - [Generalized Poincare Conjectures](zettelkasten/Generalized%20Poincare%20Conjectures.md)

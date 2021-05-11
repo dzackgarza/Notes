@@ -1,4 +1,5 @@
 # Reading Notes
+## Ch 2
 
 ![](attachments/Pasted%20image%2020210402221513.png)
 ![](attachments/Pasted%20image%2020210402221534.png)
@@ -10,8 +11,10 @@
 ![](attachments/Pasted%20image%2020210402221653.png)
 ![](attachments/Pasted%20image%2020210402221704.png)
 ![](attachments/Pasted%20image%2020210402221719.png)
+
+## Ch 3
+
 ![](attachments/Pasted%20image%2020210402221736.png)
-![](attachments/Pasted%20image%2020210402221805.png)
 ![](attachments/Pasted%20image%2020210402221815.png)
 ![](attachments/Pasted%20image%2020210402221826.png)
 ![](attachments/Pasted%20image%2020210402221844.png)
@@ -37,6 +40,9 @@
 ![](attachments/Pasted%20image%2020210402230302.png)
 ![](attachments/Pasted%20image%2020210402230342.png)
 ![](attachments/Pasted%20image%2020210402230355.png)
+
+## Ch 4
+
 ![](attachments/Pasted%20image%2020210402230406.png)
 ![](attachments/Pasted%20image%2020210402230416.png)
 ![](attachments/Pasted%20image%2020210402230430.png)

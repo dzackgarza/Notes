@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
-            "mode": "source"
+            "file": "zettelkasten/2021-04-25_fiber_bundles_ug.md",
+            "mode": "preview"
           }
         }
       }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
+                "file": "zettelkasten/2021-04-25_fiber_bundles_ug.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
+                "file": "zettelkasten/2021-04-25_fiber_bundles_ug.md"
               }
             }
           },
@@ -148,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
+                "file": "zettelkasten/2021-04-25_fiber_bundles_ug.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
+                "file": "zettelkasten/2021-04-25_fiber_bundles_ug.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
+                "file": "zettelkasten/2021-04-25_fiber_bundles_ug.md"
               }
             }
           }
@@ -240,15 +239,15 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/2021-04-25_fiber_bundles_ug.md",
+    "zettelkasten/2021-04-26_Topics_Todo.md",
+    "zettelkasten/2021-04-26_Schoenflies.md",
     "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
-    "zettelkasten/geometric realization.md",
-    "Quick_Notes/2021-04-25.md",
-    "zettelkasten/coend.md",
-    "zettelkasten/equivariant stable homotopy theory.md",
-    "Quick_Notes/2021-05-10.md",
-    "zettelkasten/solid mathematics.md",
-    "zettelkasten/generates.md",
-    "zettelkasten/projective object.md",
-    "zettelkasten/compact object.md"
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230355.png",
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230406.png",
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230416.png",
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230443.png",
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402232721.png",
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402232731.png"
   ]
 }

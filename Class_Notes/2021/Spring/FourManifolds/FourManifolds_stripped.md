@@ -6123,7 +6123,7 @@ which exactly says that this is a \( { \operatorname{Cl}} (M){\hbox{-}} \)linear
 ::: {.definition title="?"}
 Let \( \nabla \) be a Clifford connection on \( {\mathbb{S}}_M \) and \( s\in H^0({\mathbb{S}}_M) \), so \( \nabla(s) \in {\mathbb{S}}_M \otimes\Omega^1(M) \). Then the **Dirac operator** is defined as
 \[
-{\enclose{horizontalstrike}{ \partial}} : H^0({\mathbb{S}}) &\to H^0({\mathbb{S}}) \\
+{\enclose{\horizontalstrike}{ \partial}} : H^0({\mathbb{S}}) &\to H^0({\mathbb{S}}) \\
 s &\mapsto \sum _{e_i \in \mathop{\mathrm{Fr}}(T^\vee M) } e_i \cdot \nabla_{e_i^\vee}(s)
 \]
 where
@@ -6135,24 +6135,24 @@ where
 ::: {.remark}
 This makes sense locally, and is well-defined independent of choice of frame. Henceforth, we'll take \( \nabla = \nabla^{\mathrm{LC}} \) -- in this case, if \( s^+ \in H^0({\mathbb{S}}^\pm) \) then \( \nabla_v^{{\mathrm{LC}}}(s^\pm) \in H^0({\mathbb{S}}^\pm) \). This is an order 1 differential operator:
 \[
-{\enclose{horizontalstrike}{ \partial}} _{ \nabla^{\mathrm{LC}}} = {\enclose{horizontalstrike}{ \partial}} : H^0({\mathbb{S}}^\pm) \to H^p({\mathbb{S}}^{\mp})
+{\enclose{\horizontalstrike}{ \partial}} _{ \nabla^{\mathrm{LC}}} = {\enclose{\horizontalstrike}{ \partial}} : H^0({\mathbb{S}}^\pm) \to H^p({\mathbb{S}}^{\mp})
 .\]
 :::
 
 ::: {.proposition title="?"}
 \[
-{\enclose{horizontalstrike}{ \partial}} ^2 = - \Delta
+{\enclose{\horizontalstrike}{ \partial}} ^2 = - \Delta
 .\]
 :::
 
 ::: {.proof title="?"}
 Given \( \psi \in H^0({\mathbb{S}}) \), write \( \psi = \sum_{i=1}^4 \psi_i s_i \) with the \( s_i \) forming a local frame of \( {\mathbb{S}}= {\mathbb{S}}^+ \oplus {\mathbb{S}}^- \). We can write
 \[
-{\enclose{horizontalstrike}{ \partial}} \psi = \sum e_i \partial_{x_i} \psi = \sum_{i=1}^4 \gamma_i \psi_{x_i}
+{\enclose{\horizontalstrike}{ \partial}} \psi = \sum e_i \partial_{x_i} \psi = \sum_{i=1}^4 \gamma_i \psi_{x_i}
 .\]
 where \( \psi_{x_i} = {\left[ { (\psi_1)_{x_i}, (\psi_2)_{x_i}, \cdots } \right]} \). We then have
 \[
-{\enclose{horizontalstrike}{ \partial}} ^2 \psi
+{\enclose{\horizontalstrike}{ \partial}} ^2 \psi
 &= \sum_{i, j} \gamma_i \gamma_j \psi_{x_i x_j} \\
 &= -\sum_{ij} 2 (e_i \cdot_g e_j) \psi_{x_i x_j} \\
 &= -2 \sum_{ij} \delta_{ij} \psi_{x_i x_j} \\
@@ -6162,7 +6162,7 @@ where \( \psi_{x_i} = {\left[ { (\psi_1)_{x_i}, (\psi_2)_{x_i}, \cdots } \right]
 .\]
 where we sum over *all* \( i, j \) and can pair terms, and we use that \( \gamma_i \gamma_j + \gamma_j \gamma_i = -2 e_1 \cdot e_j \)\
 
-Upshot: \( {\enclose{horizontalstrike}{ \partial}} \in \sqrt{ \Delta} \), which is why the Dirac is an invariant in quantum mechanics. This reduces the 2nd order Schrödinger operator a 1st order operator. Note that \( {\enclose{horizontalstrike}{ \partial}} \psi = 0 \) is the equation for a massless particle.
+Upshot: \( {\enclose{\horizontalstrike}{ \partial}} \in \sqrt{ \Delta} \), which is why the Dirac is an invariant in quantum mechanics. This reduces the 2nd order Schrödinger operator a 1st order operator. Note that \( {\enclose{\horizontalstrike}{ \partial}} \psi = 0 \) is the equation for a massless particle.
 :::
 
 > See maybe Lawson's spin geometry? Or Salamon.
@@ -6184,7 +6184,7 @@ where \( \alpha \cdot s \mapsto \alpha\cdot \nabla s + dx \cdot s \).
 :::
 
 ::: {.remark}
-There is a distinguished Clifford connection associated to \( \nabla^{\mathrm{LC}} \). Also recall that we defined a Dirac operator \( {\enclose{horizontalstrike}{ \partial}}  \) and showed \( {\enclose{horizontalstrike}{ \partial}} ^2 = -2 \Delta \).
+There is a distinguished Clifford connection associated to \( \nabla^{\mathrm{LC}} \). Also recall that we defined a Dirac operator \( {\enclose{\horizontalstrike}{ \partial}}  \) and showed \( {\enclose{\horizontalstrike}{ \partial}} ^2 = -2 \Delta \).
 :::
 
 ::: {.definition title="The Dirac Equation"}
@@ -6228,18 +6228,18 @@ X
 
 Consider \( {\mathbb{S}}_X \coloneqq\tilde P \fiberprod_{{\operatorname{Spin}}(n)} {\mathbb{S}} \), then define
 \[
-{\enclose{horizontalstrike}{ \partial}} ^\pm: H^o({\mathbb{S}}_X^\pm) \to H^0({\mathbb{S}}^{\mp})
+{\enclose{\horizontalstrike}{ \partial}} ^\pm: H^o({\mathbb{S}}_X^\pm) \to H^0({\mathbb{S}}^{\mp})
 .\]
-Note that we can write \( {\enclose{horizontalstrike}{ \partial}} = {\enclose{horizontalstrike}{ \partial}} ^+ + \diract^- \);
+Note that we can write \( {\enclose{\horizontalstrike}{ \partial}} = {\enclose{\horizontalstrike}{ \partial}} ^+ + \diract^- \);
 
--   Step 1: Show \( \mathop{\mathrm{ind}}{\enclose{horizontalstrike}{ \partial}} ^+ = -\sigma(X) / 8 \),
+-   Step 1: Show \( \mathop{\mathrm{ind}}{\enclose{\horizontalstrike}{ \partial}} ^+ = -\sigma(X) / 8 \),
 -   Step 2: Show \( \mathop{\mathrm{ind}}\diract^+ \) is even.
 
 ### Step 1
 
-What is the symbol \( \Symb({\enclose{horizontalstrike}{ \partial}} ) \)? By definition
+What is the symbol \( \Symb({\enclose{\horizontalstrike}{ \partial}} ) \)? By definition
 \[
-\Symb {\enclose{horizontalstrike}{ \partial}} : \pi^* {\mathbb{S}}\to \pi^* {\mathbb{S}}
+\Symb {\enclose{\horizontalstrike}{ \partial}} : \pi^* {\mathbb{S}}\to \pi^* {\mathbb{S}}
 .\]
 where \( \pi:T^\vee X\to X \), and the symbol was defined by replacing \( {\frac{\partial }{\partial x_i}\,} \) with a function\( y_i: T^\vee X\to {\mathbb{R}} \). We can write
 \[
@@ -6250,11 +6250,11 @@ and so
 \Symb \diract(\psi) = \sum_i y_i e_i = \psi
 .\]
 
-We have a tautological form \( \alpha\in H^0(T^\vee X, \pi^* \Omega^1) \) where \( (p, \alpha) \mapsto \alpha \), and so \( \Symmb({\enclose{horizontalstrike}{ \partial}} )({-}) = \alpha\cdot({-}) \).
+We have a tautological form \( \alpha\in H^0(T^\vee X, \pi^* \Omega^1) \) where \( (p, \alpha) \mapsto \alpha \), and so \( \Symmb({\enclose{\horizontalstrike}{ \partial}} )({-}) = \alpha\cdot({-}) \).
 
 ::: {.claim}
 \[
-{\enclose{horizontalstrike}{ \partial}} : H^0({\mathbb{S}}) {\circlearrowleft}&& \text{is an elliptic operator}
+{\enclose{\horizontalstrike}{ \partial}} : H^0({\mathbb{S}}) {\circlearrowleft}&& \text{is an elliptic operator}
 .\]
 :::
 
@@ -6317,9 +6317,9 @@ Recalling that \( d^\dagger \) was the adjoint of \( d \), one can check that \(
 
 ## Step 2
 
-We now want to show \( \mathop{\mathrm{ind}}{\enclose{horizontalstrike}{ \partial}} ^+ \) is divisible by 2. The key point is that \( \ker {\enclose{horizontalstrike}{ \partial}} ^+ \) and \( \operatorname{coker}{\enclose{horizontalstrike}{ \partial}} ^+ = \ker {\enclose{horizontalstrike}{ \partial}} ^- \) admit a quaternionic vector space structure. This comes from the fact that \( {\operatorname{Spin}}(4) \cong {\operatorname{SU}}(2) \times{\operatorname{SU}}(2) \cong S^1({\mathbb{H}}) \oplus S^1({\mathbb{H}}) \coloneqq{\mathbb{S}}^+ \oplus {\mathbb{S}}^- \), so have a splitting into subspaces of unit quaternions. It turns out that \( {\enclose{horizontalstrike}{ \partial}}  \) is \( {\mathbb{H}}{\hbox{-}} \)linear. So we get an equality
+We now want to show \( \mathop{\mathrm{ind}}{\enclose{\horizontalstrike}{ \partial}} ^+ \) is divisible by 2. The key point is that \( \ker {\enclose{\horizontalstrike}{ \partial}} ^+ \) and \( \operatorname{coker}{\enclose{\horizontalstrike}{ \partial}} ^+ = \ker {\enclose{\horizontalstrike}{ \partial}} ^- \) admit a quaternionic vector space structure. This comes from the fact that \( {\operatorname{Spin}}(4) \cong {\operatorname{SU}}(2) \times{\operatorname{SU}}(2) \cong S^1({\mathbb{H}}) \oplus S^1({\mathbb{H}}) \coloneqq{\mathbb{S}}^+ \oplus {\mathbb{S}}^- \), so have a splitting into subspaces of unit quaternions. It turns out that \( {\enclose{\horizontalstrike}{ \partial}}  \) is \( {\mathbb{H}}{\hbox{-}} \)linear. So we get an equality
 \[
--\sigma(X) / 8 = \mathop{\mathrm{ind}}{\enclose{horizontalstrike}{ \partial}} ^+ = 2\lambda
+-\sigma(X) / 8 = \mathop{\mathrm{ind}}{\enclose{\horizontalstrike}{ \partial}} ^+ = 2\lambda
 \]
 for some \( \lambda \), yielding \( 8\bigm|\sigma(X) \).
 
