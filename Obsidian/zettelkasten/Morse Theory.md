@@ -9,7 +9,7 @@ Tags: #topology #morse_theory
 # Motivations
 
 - Can be used to prove the high dimensional case of the generalized [Generalized Poincaré conjecture](Generalized%20Poincaré%20conjecture)
-- 
+
 # Dave's Videos
 
 - Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.
@@ -43,18 +43,20 @@ Tags: #topology #morse_theory
 
 - Theorem: [Morse functions](Morse%20function) are generic (given any smooth function $f: X\to Y$, there's an arbitrarily small perturbation of $f$ that is Morse).
 
-- Theorem (Morse Lemma): If $p\in \RR^n$ is a critical point of $f: \RR^n \to \RR$ such that the Hessian $H_f(p)$ is a non-degenerate bilinear form, then $f$ is locally Morse (standard form).
+See [Morse lemma](Morse%20lemma)
 
-  - Moreover, after diagonalizing $H_f$, the index is given by the difference in the numbers of positive/negatives on the diagonal.
 
-- Theorem: If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
+
+- **Theorem**:
+ If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
 
   - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
 
-  - Recall that this is proved by constructing a vector field $V$ on $W$, then using a diffeo $\phi:I \cross M_0 \to W$ by flowing along $V$.
+  - Recall that this is proved by constructing a [vector field](vector%20field) $V$ on $W$, then using a diffeomorphism $\phi:I \cross M_0 \to W$ by flowing along $V$.
 
   - Say something about gradient flow in the case of a Riemannian metric?
 
+## Unsorted
 
 [Cool video](https://youtu.be/mIUi1zIUQJw?t=42)
 
@@ -64,23 +66,17 @@ Tags: #topology #morse_theory
 [Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
 
 - **Theorem**: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
-  - Possibly used in Milnor's exotic 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
+  - Possibly used in Milnor's [exotic](exotic%20sphere) 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
 
-- Diffeomorphism type depends on isotopy classes of attaching maps.
+- Diffeomorphism type depends on [isotopy](isotopy) classes of attaching maps.
 
-Descriptions of 2d Handles
-![](attachments/Pasted%20image%2020210501235853.png)
-
-Descriptions of 3d Handles
-![](attachments/Pasted%20image%2020210501235919.png)
-
-Handle Decomposition of Torus
-![](attachments/Pasted%20image%2020210501235942.png)
+See [handle decomposition](handle%20decomposition)
 
 # Intro Video
+
 [Link](https://www.youtube.com/watch?v=78OMJ8JKDqI)
 
-Morse theory: handles nice singularities. Can have worse ones, covered by *catastrophe theory* (dynamical systems).
+Morse theory: handles nice singularities. Can have worse ones, covered by [catastrophe theory](catastrophe%20theory)  (dynamical systems).
 
 Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of index $k$.
 
@@ -90,14 +86,15 @@ Index: number of linearly independent direction you can move for which the funct
 
 Importance of CW complexes: triangulations of surfaces.
 
-Morse Lemma: nondegenerate critical points have standard forms $\sum \pm x_i^2$, so the index is well-defined.
+**Morse Lemma:** 
+Nondegenerate critical points have standard forms $\sum \pm x_i^2$, so the index is well-defined.
 
-Morse Theorem 1:
+**Morse Theorem 1:**
 If there are no critical points, $M_A \homotopic M_B$.
 
 ![](attachments/Pasted%20image%2020210501235559.png)
 
-Stable vs unstable:
+Stable vs unstable manifolds:
 
 ![](attachments/Pasted%20image%2020210501235734.png)
 
@@ -105,7 +102,6 @@ Consider height function on torus.
 Circles are index 0 critical points, triangle is index 1.
 
 ![](attachments/Pasted%20image%2020210501235700.png)
-
 
 Cancellation:
 

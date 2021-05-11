@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Generalized Poincaré conjecture.md",
+            "file": "zettelkasten/Morse Theory.md",
             "mode": "source"
           }
         }
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Generalized Poincaré conjecture.md",
+                "file": "zettelkasten/Morse Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Generalized Poincaré conjecture.md"
+                "file": "zettelkasten/Morse Theory.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Generalized Poincaré conjecture.md",
+                "file": "zettelkasten/Morse Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Generalized Poincaré conjecture.md",
+                "file": "zettelkasten/Morse Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,7 +237,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Generalized Poincaré conjecture.md"
+                "file": "zettelkasten/Morse Theory.md"
               }
             }
           }
@@ -250,15 +250,15 @@
   },
   "active": "f90fadc63ccd21e7",
   "lastOpenFiles": [
-    "zettelkasten/Generalized Poincaré conjecture.md",
     "zettelkasten/Morse Theory.md",
+    "zettelkasten/Morse lemma.md",
+    "zettelkasten/handle decomposition.md",
+    "zettelkasten/exotic sphere.md",
+    "zettelkasten/Generalized Poincaré conjecture.md",
     "zettelkasten/foliate.md",
     "zettelkasten/2021-04-25_fiber_bundles_ug.md",
     "zettelkasten/2021-04-26_Topics_Todo.md",
     "zettelkasten/2021-04-26_Schoenflies.md",
-    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md",
-    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230355.png",
-    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230406.png",
-    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/attachments/Pasted image 20210402230416.png"
+    "zettelkasten/Projects/Book Notes/Barnes_and_Roitzheim/Barnes_and_Roitzheim.md"
   ]
 }
