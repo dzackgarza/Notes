@@ -9,7 +9,7 @@ aliases: ["schemes"]
 - [finite type](finite%20type)
 - [sheaf](sheaf.md)
 - [proper morphism](proper%20morphism)
-- Separated:
+- [separated](separated)
 - Geometric points: ?
 - Reduced scheme: ?
 - Closed points: ?
