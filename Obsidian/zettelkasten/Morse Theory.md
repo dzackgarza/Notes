@@ -69,9 +69,7 @@ $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for ea
 
 Morse theory: handles nice singularities. Can have worse ones, covered by [catastrophe theory](catastrophe%20theory)  (dynamical systems).
 
-
-
-Importance of CW complexes: triangulations of surfaces.
+Importance of CW complexes: [triangulation](triangulation) of surfaces.
 
 See [Morse lemma](Morse%20lemma.md)
 

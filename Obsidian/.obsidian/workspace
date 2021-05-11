@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Morse Theory.md",
+            "file": "zettelkasten/Monoidal category.md",
             "mode": "source"
           }
         }
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Morse Theory.md",
+                "file": "zettelkasten/Monoidal category.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Morse Theory.md"
+                "file": "zettelkasten/Monoidal category.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Morse Theory.md",
+                "file": "zettelkasten/Monoidal category.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Morse Theory.md",
+                "file": "zettelkasten/Monoidal category.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,7 +237,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Morse Theory.md"
+                "file": "zettelkasten/Monoidal category.md"
               }
             }
           }
@@ -250,15 +250,15 @@
   },
   "active": "f90fadc63ccd21e7",
   "lastOpenFiles": [
+    "zettelkasten/Monoidal category.md",
+    "zettelkasten/Generators of a category.md",
+    "zettelkasten/quadratic form.md",
     "zettelkasten/Morse Theory.md",
     "zettelkasten/2021-04-25_fiber_bundles_ug.md",
     "zettelkasten/index of a Morse function.md",
     "zettelkasten/foliate.md",
     "zettelkasten/Morse lemma.md",
     "zettelkasten/handle decomposition.md",
-    "zettelkasten/exotic sphere.md",
-    "zettelkasten/Generalized Poincaré conjecture.md",
-    "zettelkasten/2021-04-26_Topics_Todo.md",
-    "zettelkasten/2021-04-26_Schoenflies.md"
+    "zettelkasten/exotic sphere.md"
   ]
 }
