@@ -1,1 +1,1 @@
-A separated morphism is a morphism $f$ such that the [[fiber product]] of f with itself along f has its diagonal as a closed subscheme — in other words, the diagonal morphism is a closed immersion.
+A separated morphism is a morphism $f$ such that the [fiber product](fiber%20product) of $f$ with itself along $f has its diagonal as a closed subscheme — in other words, the diagonal morphism is a closed immersion.
