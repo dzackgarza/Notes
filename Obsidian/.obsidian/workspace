@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/absolute value.md",
+            "file": "zettelkasten/valuation.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/absolute value.md",
+                "file": "zettelkasten/valuation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/absolute value.md"
+                "file": "zettelkasten/valuation.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/absolute value.md",
+                "file": "zettelkasten/valuation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/absolute value.md",
+                "file": "zettelkasten/valuation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/absolute value.md"
+                "file": "zettelkasten/valuation.md"
               }
             }
           }
@@ -239,6 +239,7 @@
   },
   "active": "0fe4f66d0a605cd1",
   "lastOpenFiles": [
+    "zettelkasten/valuation.md",
     "zettelkasten/absolute value.md",
     "zettelkasten/Number theory.md",
     "zettelkasten/Ring of integers.md",
@@ -247,7 +248,6 @@
     "zettelkasten/elliptic curve.md",
     "zettelkasten/Dirichlet's theorem.md",
     "zettelkasten/modular form.md",
-    "zettelkasten/Weierstrass p function.md",
-    "zettelkasten/$/theta$ function 2.md"
+    "zettelkasten/Weierstrass p function.md"
   ]
 }
