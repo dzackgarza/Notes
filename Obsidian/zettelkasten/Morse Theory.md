@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-Tags: #topology #morse_theory 
+Tags: #topology #morse
 
 # Motivations
 
@@ -20,7 +20,6 @@ See [Morse lemma](Morse%20lemma)
 **Theorem 3**:
  If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
 
-
 **Theorem**: If $X$ is closed and admits a Morse function with exactly 2 critical points, $X$ is homeomorphic to $S^n$.
 
 Possibly used in Milnor's [exotic](exotic%20sphere) 7-sphere (show a diffeomorphism invariant differs but admits such a Morse function)
@@ -31,7 +30,8 @@ $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for ea
 ![](attachments/Pasted%20image%2020210501235532.png)
 
 
-# Dave's Videos
+# Notes
+## Dave's Videos
 
 - Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.
 
@@ -63,20 +63,7 @@ $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for ea
 	- Can we do gradient flow in the presence of a [Riemannian metric](metric.md)? 
 	#unanswered_questions 
 
-## Unsorted
-
-[Cool video](https://youtu.be/mIUi1zIUQJw?t=42)
-
-![](attachments/Pasted%20image%2020210501235429.png)
-![](attachments/Pasted%20image%2020210501235456.png)
-
-[Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
-
-- Diffeomorphism type depends on [isotopy](isotopy) classes of attaching maps.
-
-See [handle decomposition](handle%20decomposition)
-
-# Intro Video
+## Intro Video
 
 [Link](https://www.youtube.com/watch?v=78OMJ8JKDqI)
 
@@ -108,3 +95,18 @@ Cancellation:
 ![](attachments/Pasted%20image%2020210501235820.png)
 
 Can use persistent homology to measure "importance" of critical points.
+
+
+## Unsorted
+
+[Cool video](https://youtu.be/mIUi1zIUQJw?t=42)
+
+![](attachments/Pasted%20image%2020210501235429.png)
+![](attachments/Pasted%20image%2020210501235456.png)
+
+[Gradient Descent](https://youtu.be/vWFjqgb-ylQ?t=5)
+
+- Diffeomorphism type depends on [isotopy](isotopy) classes of attaching maps.
+
+See [handle decomposition](handle%20decomposition)
+

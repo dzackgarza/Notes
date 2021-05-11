@@ -1,3 +1,4 @@
+
 # Tuesday, January 12
 
 ## Background

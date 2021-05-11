@@ -445,7 +445,7 @@
 \newcommand{\stab}[0]{{\operatorname{Stab}}}
 \newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
 \newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
-\newcommand{\strike}[1]{{\enclose{\horizontalstrike}{#1}}}
+%\newcommand{\strike}[1]{{\enclose{\horizontalstrike}{#1}}}
 \newcommand{\st}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\St}[0]{{\mathsf{St}}}
 \newcommand{\supp}[0]{{\operatorname{supp}}}
