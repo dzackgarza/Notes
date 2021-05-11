@@ -127,6 +127,7 @@
 \newcommand{\HH}[0]{{\mathbb{H}}}
 \newcommand{\HoH}[0]{{\operatorname{HH}}}
 \newcommand{\THoH}[0]{{\operatorname{THH}}}
+\newcommand{\mTHH}[0]{{\operatorname{THH}}}
 \newcommand{\THC}[0]{{\operatorname{THC}}}
 \newcommand{\TC}[0]{{\operatorname{TC}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
@@ -307,7 +308,7 @@
 \newcommand{\inverselim}[0]{\varprojlim}
 \newcommand{\disjoint}[0]{{\coprod}}
 \newcommand{\Disjoint}[0]{\displaystyle\coprod}
-\newcommand{\dual}[0]{^\vee}
+\newcommand{\dual}[0]{ {}^{ \check{} }}
 \newcommand{\sm}[0]{\setminus}
 \newcommand{\smz}[0]{\setminus\theset{0}}
 \newcommand{\smts}[1]{\setminus\theset{#1}}
@@ -451,7 +452,7 @@
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
-\newcommand{\smash}[0]{\wedge}
+\newcommand{\smashprod}[0]{\wedge}
 \newcommand{\Wedge}[0]{\bigwedge}
 \newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
@@ -504,6 +505,7 @@
 \newcommand{\increasesto}[0]{\nearrow}
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
+\newcommand\Prinbun{\mathrm{Bun}^{\mathrm{prin}}}
 
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
@@ -538,7 +540,7 @@
 \DeclareMathOperator{\B}{{\mathsf{B} }}
 \DeclareMathOperator{\D}{{\mathsf{D} }}
 \DeclareMathOperator{\K}{{\mathsf{K} }}
-\DeclareMathOperator{\H}{{\mathsf{H}\mkern-3mu }}
+\DeclareMathOperator{\mH}{{\mathsf{H}\mkern-3mu }}
 \DeclareMathOperator{\T}{{T}}
 \DeclareMathOperator{\Rd}{{\mathbb{R} }}
 \DeclareMathOperator{\Ld}{{\mathbb{L} }}
@@ -547,6 +549,7 @@
 \DeclareMathOperator{\Tot}{Tot}
 \DeclareMathOperator{\Forget}{Forget}
 \DeclareMathOperator{\Griff}{Griff}
+\DeclareMathOperator{\Symb}{Symb}
 
 \newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
 \newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
@@ -626,7 +629,7 @@
 \newcommand\even[0]{\text{even}}
 \newcommand\odd[0]{\text{odd}}
 \newcommand\hodgestar[0]{\star}
-\newcommand\dirac[0]{\strike{ \partial} }
+\newcommand\dirac[0]{\mkern-3mu \not{ \partial} }
 \newcommand\laplacian[0]{\Delta}
 \newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
 \newcommand\covariant[0]{\nabla}
@@ -713,7 +716,6 @@
 
 From Phil's email:
 
-There are very few references in the notes, and I'll try to update them to include more as we go. 
 Personally, I found the following online references particularly useful: 
 
 - Dietmar Salamon: Spin Geometry and Seiberg-Witten Invariants [@Dietmar99]
@@ -840,12 +842,11 @@ t &\mapsto \varphi(t)
 such that \( \varphi'(t) = V(\varphi(t)) \).
 Then \( \varphi \) is a smooth map that defines a diffeomorphism.
 This follows from the fact that the vector field is everywhere positive.
-
-:::{.slogan}
-To understand smooth structures on $X$, we should try to solve differential equations on $X$.
 :::
 
 
+:::{.slogan}
+To understand smooth structures on $X$, we should try to solve differential equations on $X$.
 :::
 
 
@@ -2631,7 +2632,7 @@ Show that $H^*(BU_d; \ZZ)$ stabilizes as $d\to \infty$ to an infinitely generate
 :::
 
 
-:::{.definition title="?"}
+:::{.definition title="Chern class"}
 There is a map $BU_{d-1} \to BU_d$, which we can identify as 
 \[
 \Gr_{d-1}(C^{\infty }) &\to \Gr_d(\CC^{\infty }) \\
@@ -4967,7 +4968,7 @@ in Čech cohomology.
   L &\mapsto c_1(L)
   .\]
 
-2. $L$ defines an element $\Fr L \in \Bun^\prin(\CC\units)$ (which only works for line bundles), which is defined by \( \Fr L = L \sm s_0 \)  where $s_0$ is the zero section of $L$.
+2. $L$ defines an element $\Fr L \in \Prinbun(\CC\units)$ (which only works for line bundles), which is defined by \( \Fr L = L \sm s_0 \)  where $s_0$ is the zero section of $L$.
   By topology, we get a classifying map 
   \[
 C \mapsvia{\phi_L}  B\CC\units = \CP^\infty = (\CC^{\infty} \smz) / \CC\units
@@ -5063,8 +5064,6 @@ These are the only points of $\PP^1$ with just one square root, all other points
 \end{tikzpicture}
 
 :::
-
-
 
 
 # Monday, March 22
@@ -7542,7 +7541,8 @@ Check that $\dim_\RR \Cl(V) = 2^{\dim V} < \infty$.
 
 # Friday, April 23
 
-:::{.definition title="Clifford algebra"}
+
+:::{.remark}
 Given $(V, \cdot)$ an inner product space, we defined
 \[
 \Cl(V) \da { \bigoplus _{n\geq 0} V^{\tensor n} \over \gens{ v\tensor w + w\tensor v = 2v\cdot w } }
@@ -7564,7 +7564,7 @@ Choose an orthonormal basis \( \ts{ e_i } \), then
 \[
 \Cl(\RR^n, \cdot) = { \RR \gens{ e_1, \cdots, e_n } \over \gens{ e_i^2 = -1, e_i e_j = -e_j e_i \st i\neq j } }
 .\]
-We saw that replacing $2$ with $\epsilon$ in the defining relation recovers $\Extalg$.
+We saw that replacing $2$ with $\epsilon$ in the defining relation recovers $\Extalg^* V$.
 
 :::
 
@@ -7590,7 +7590,7 @@ Recall that there's a distinction between gradings and filtration:
 An algebra equipped with a grading is a **graded algebra**, and similarly an algebra equipped with a filtration is a **filtered algebra**.
 :::
 
-:::{.remark}&
+:::{.remark}
 Note that 
 
 - $k[x_1, \cdots, x_n]$ is graded (by monomials of uniform degree) and filtered (by polynomials of a bounded degree)
@@ -7838,7 +7838,11 @@ We want a lift:
 
 We can always lift to *some* $\tilde t_{ij}$ using the path-lifting property of covers if $U_i \intersect U_j$ is contractible, using that $\ZZ/2$ is discrete.
 We can arrange $\tilde t_{ij} = \tilde t_{ji}\inv$ since $U_i \intersect U_j = U_j \intersect U_i$, but we may not have the cocycle condition on the lift.
-We have $t_{ij} t_{jk} t_{ki} = 1$, so $\tilde t_{ij} \tilde t_{jk} \tilde t_{ki} \in \ker (\Spin(n) \to \SO(n)) = \ts{ \pm 1 }$ using that everything in sight needs to be a group morphism.
+We have $t_{ij} t_{jk} t_{ki} = 1$, so 
+\[
+\tilde t_{ij} \tilde t_{jk} \tilde t_{ki} \in \ker (\Spin(n) \to \SO(n)) = \ts{ \pm 1 }
+,\]
+using that everything in sight needs to be a group morphism.
 So define
 \[
 \tilde t_{ijk} \da ( \tilde t_{ij} \tilde t_{jk} \tilde t_{ki} )_{i,j,k} \in \Cc^2_{\mathcal{U}}(X, \constantsheaf{\ZZ/2})
@@ -7894,7 +7898,11 @@ Spinor bundle will be sections of associated bundle of the Clifford bundle.
 # Friday, April 30
 
 :::{.remark}
-Last time: we defined $\Cl(V, \cdot) \da \bigoplus_n V^{\tensor n} / \gens{ v\tensor v = -\norm{v}^2 1 }$ and $\Pin(V) \da \gens{ v \st \norm{v} = 1 } \subseteq \Cl(V)$.
+Last time: we defined 
+\[
+\Cl(V, \cdot) &\da \bigoplus_n V^{\tensor n} / \gens{ v\tensor v = -\norm{v}^2 1 } \\
+\Pin(V) &\da \gens{ v \st \norm{v} = 1 } \subseteq \Cl(V)
+.\]
 There is a $\ZZ/2$ grading $\Cl(V) = \Cl_0(V) \oplus \Cl_1(V)$ where $\Cl_0(V)$ is the image of even tensors and $\Cl_1(V)$ is the image of odd tensors.
 We also had 
 \[
@@ -7914,7 +7922,7 @@ We defined a spin structure on $X$ as any lift of the principal $\SO(n)$ bundle 
 Each fiber is a metric space, so what happens if you just try to define \
 \[
 Y \da \Disjoint_{x\in X} \gens{ v \st \norm{v}^2 = 1,\, v\in T_x\dual X }
-.\]
+\,\,?\]
 This seems to be isomorphic to a spin structure, but we do not have a distinguished action of any *fixed* group $\Spin(n)$.
 We would have to choose isomorphisms to the standard spin group at each fiber, but the isomorphisms are not unique -- there is ambiguity up to the entire spin group.
 So this does not define a spin structure.
@@ -7938,8 +7946,13 @@ i &\mapsto \sigma_1 \da \matt 0 i i 0 \\
 j &\mapsto \sigma_2 \da \matt i 0 0 {-i} \\
 k &\mapsto \sigma_3 \da \matt 0 1 {-1} 0
 .\]
-The \( \sigma_i \) are sometimes referred to as **Pauli matrices**.
 :::
+
+
+:::{.definition title="Pauli matrices"}
+The \( \sigma_i \) defined above are referred to as the **Pauli matrices**.
+:::
+
 
 :::{.example title="?"}
 Consider $\Cl(\RR^4)$.
@@ -7960,7 +7973,11 @@ e_2 &\mapsto \gamma_2 \da 1\tensor \sigma_2 \\
 e_3 &\mapsto \gamma_3 \da \sigma_1 \tensor i \sigma_3 \\
 e_4 &\mapsto \gamma_4 \da \sigma_2 \tensor i \sigma_3 
 .\]
-The matrices appearing here are called the **Dirac matrices**.
+
+
+:::{.definition title="Dirac matrices"}
+The matrices appearing above are called the **Dirac matrices**.
+:::
 
 
 :::{.exercise title="?"}
@@ -8000,7 +8017,11 @@ In fact, as a $\Spin(4)$ representation this splits into two irreducible represe
 We know that $\Spin(4) \subseteq \Cl_0(\RR^4) = \Cl(\RR^3)$ which has two complex conjugate irreducible representations.
 The key is to define an element $\omega_\CC \in \Cl(V) \tensor_\RR \CC$ with $\omega_\CC^2 = 1$, which yields a decomposition of $\SS = \SS^+ \oplus \SS^-$ as the $\pm 1$ eigenspaces of the action.
 Here \( \omega_C \da -e_1 e_2 e_3 e_4 \mapsto \gamma_5 \).
-One can define $\gamma_5 \da \im(\omega_\CC) = - \gamma_1 \gamma_2 \gamma_3 \gamma_4 = - \sigma_3 \tensor \sigma_3$ and one obtains the matrix
+One can define 
+\[
+\gamma_5 \da \im(\omega_\CC) = - \gamma_1 \gamma_2 \gamma_3 \gamma_4 = - \sigma_3 \tensor \sigma_3
+\]
+and one obtains the matrix
 \[
 -\sigma_3 \tensor \sigma_3 = 
 \begin{bmatrix}
@@ -8101,7 +8122,7 @@ x\tensor s &\mapsto x\cdot s
 .\]
 
 Recall that we have a natural conjugation action $\Spin(n) \actson \Cl(\RR^n)$ where $g \mapsto g(\wait)g\inv$, and similarly $\Spin(n) \actson \SS$ by $g\mapsto g\cdot(\wait)$.
-Given any $V\to W$ of $G\dash$modules, any $P\in \Bun_G^{\Prin}$ yields an induced module 
+Given any $V\to W$ of $G\dash$modules, any $P\in \Prinbun(G)$ yields an induced module 
 \[
 P \fiberprod{G} V \to P \fiberprod{G} W
 ,\]
@@ -8225,11 +8246,10 @@ Note that $\dirac \psi = 0$ is the equation for a massless particle.
 ## Fun Physics Aside
 
 :::{.remark}
-Last time: we showed $\Cl(X) \da \Cl(T\dual X, g\dual)$ acts on the spinor bundle $\SS_X \da \tilde P \fiberprod{\Spin(n)} \SS$ by Clifford multiplication.
-For $\dim_\RR X = 4$, we have a spliutting $\SS^+ \oplus \SS^-$ as complex rank 2 vector bundles.
-If \( \omega\in H^0 \CL(X) \)  is a one form, then \( \omega\SS_X^\pm \subset \SS^{\mp}\) .
+Last time: we showed $\Cl(X) \da \Cl(\dualof{T} X, \dualof{g})$ acts on the spinor bundle $\SS_X \da \tilde P \fiberprod{\Spin(n)} \SS$ by Clifford multiplication.
+For $\dim_\RR X = 4$, we have a splitting $\SS^+ \oplus \SS^-$ as complex rank 2 vector bundles.
+If \( \omega\in H^0 \Cl(X) \)  is a one form, then \( \omega\SS_X^\pm \subset \SS^{\mp}\) .
 :::
-
 
 :::{.definition title="Clifford Connection"}
 A **Clifford connection** is a map
@@ -8247,9 +8267,9 @@ Also recall that we defined a Dirac operator $\dirac$ and showed $\dirac^2 = -2 
 
 
 :::{.definition title="The Dirac Equation"}
-The **Diract equation** is define on \( \psi\in H^0(X, \SS) \)  as
+The **Dirac equation** is defined on \( \psi\in H^0(X, \SS) \) as
 \[
-(i \diract + m \omega)\psi = 0
+(i \dirac + m \omega)\psi = 0
 .\]
 
 Here $m$ denotes a mass, \( \omega = \omega_\CC = \prod_{i=1}^4 \gamma_i \).
@@ -8268,40 +8288,42 @@ Applying this to $\RR^4$ with $g = (dt)^2 - (dx)^2 - (dy)^2 - (dz)^2$, then this
 
 :::{.theorem title="Rohklin's Theorem"}
 Let $X$ be a smooth closed oriented spin 4-manifold.
-Then the signature $\sigma(X) \da b_2^+(X) - b_2^-(X)$ (the dimensions of positive/negative definite subspaces of $H^2(X; \RR)) is divisble by 16.
+Then the signature $\sigma(X) \da b_2^+(X) - b_2^-(X)$ (the dimensions of positive/negative definite subspaces of $H^2(X; \RR)$ is divisible by 16.
 :::
-
 
 
 :::{.remark}
 This restricts what topological manifolds can admit smooth structures.
 Freedman constructed a topological manifold of dimension 4 with signature 8, which thus can not admit a smooth structure.
 Recall that having a spin structure was having a lift
+of a principal $\SO(n)$ bundle over $(\dualof{T} X, g)$ (namely $\Frame(X)$) to a $\Spin(n)$ bundle.
 
 \begin{tikzcd}
-P
-  \ar[r] 
-& 
-X
-  \ar[d] 
-\\
-\tilde P
-\ar[i, "\exists]"
-& 
+	{\tilde P_{\SO(V)} \da P_{\Spin(V)}} \\
+	\\
+	{P_{\SO(V)}} & {} \\
+	\\
+	& X
+	\arrow["\pi"', from=3-1, to=5-2]
+	\arrow["{\tilde p}"', from=1-1, to=3-1]
+	\arrow["\exists", dashed, from=1-1, to=5-2]
 \end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMSw0LCJYIl0sWzEsMl0sWzAsMiwiUF97XFxTTyhWKX0iXSxbMCwwLCJcXHRpbGRlIFBfe1xcU08oVil9IFxcZGEgUF97XFxTcGluKFYpfSJdLFsyLDAsIlxccGkiLDJdLFszLDIsIlxcdGlsZGUgcCIsMl0sWzMsMCwiXFxleGlzdHMiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+
+\todo[inline]{Diagram doesn't match definition, check Phil's notes!}
+
 :::
 
 ### Proof
-
-
-Consider $\SS_X \da \tilde P \fiberprod_{\Spin(n)} \SS$, then define
+Consider $\SS_X \da \tilde P \fiberprod{\Spin(n)} \SS$, then define
 \[
-\dirac^\pm: H^o(\SS_X^\pm) \to H^0(\SS^{\mp})
+\dirac^\pm: H^0(\SS_X^\pm) \to H^0(\SS^{\mp})
 .\]
-Note that we can write $\dirac = \dirac^+ + \diract^-$; 
+Note that we can write $\dirac = \dirac^+ + \dirac^-$; 
 
 - Step 1: Show $\ind\dirac^+ = -\sigma(X) / 8$,
-- Step 2: Show $\ind \diract^+$ is even.
+- Step 2: Show $\ind \dirac^+$ is even.
 
 ### Step 1
 
@@ -8310,18 +8332,18 @@ By definition
 \[
 \Symb \dirac: \pi^* \SS \to \pi^* \SS
 .\]
-where $\pi:T\dual X\to X$, and the symbol was defined by replacing $\dd{}{x_i}$ with a function$y_i: T\dual X\to \RR$.
+where $\pi:\dualof{T} X\to X$, and the symbol was defined by replacing $\dd{}{x_i}$ with a function $y_i: \dualof{T} X\to \RR$.
 We can write
 \[
-\diract \phi = \sum_{e_i \in \Fr} e_i \cdot \nabla_{e_i\dual} \psi
+\dirac \phi = \sum_{e_i \in \Fr} e_i \cdot \nabla_{e_i\dual} \psi
 ,\]
 and so 
 \[
-\Symb \diract(\psi) = \sum_i y_i e_i = \psi
+\Symb \dirac(\psi) = \sum_i y_i e_i = \psi
 .\]
 
-We have a tautological form \( \alpha\in H^0(T\dual X, \pi^* \Omega^1) \) where $(p, \alpha) \mapsto \alpha$, and 
-so \( \Symmb(\dirac)(\wait) = \alpha\cdot(\wait) \).
+We have a tautological form \( \alpha\in H^0(\dualof{T} X, \pi^* \Omega^1) \) where $(p, \alpha) \mapsto \alpha$, and 
+so \( \Symb(\dirac)(\wait) = \alpha\cdot(\wait) \).
 
 
 :::{.claim}
@@ -8345,12 +8367,15 @@ There is a nice formula for Chern characters:
 \[
 \ch \SS^+ - \ch \SS^- = \prod_{i=1}^n( e ^{x_i/2} - e^{-x_i/2})
 .\]
-where \( \ts{ \pm x_i } \) are the Chern roots of $T\dual X$.
+where \( \ts{ \pm x_i } \) are the Chern roots of $\dualof{T} X$.
 :::
 
 
 :::{.proof title="?"}
-Use the splitting principle to write $T\dual X \tensor_\RR \CC = \bigoplus _{i=1}^n L_i \tensor L_i\inv$
+Use the splitting principle to write
+\[
+\dualof{T} X \tensor_\RR \CC = \bigoplus _{i=1}^n L_i \tensor L_i\inv
+.\]
 Then $\SS^+$  is a sum of all tensor products of $L_i \tensor L_i\inv$ where the number of $-1$s appearing is even.
 :::
 
@@ -8362,19 +8387,19 @@ Note there is ambiguity up to 2-torsion in the formula, but this gets moved into
 
 Setting $2n\da \dim X$, we have
 \[
-\ind\diract^+ 
-&= (-1)^n \int_X { \ch\SS^+ - \ch \SS^- \over \eul X} \td(TX\tensor \CC) \\
-&= \int_X { \prod e^{x_i/2} - e^{-x_i /2} \over (-1)^n \prod x_i} \prod {x_i \over 1 - e^{x_i} } \prod {x_i \over 1 - e^{-x_i}} \\
-&= \int_X \prod { (e^{x_i/2} - e^{-x_i / 2 )} x_i \over (1-e^{x_i} ) (1 - e^{-x_i}) } \\
-&= (-1)^n \int_X \prod_I {x_i \over e^{x_i/2} - e^{-x_i/2}} \\
-&= \int_X \qty{ 1 - {x_1^2 \over 24} } \qty{ 1 - {x_2^2 \over 24}} \\
-&= {-1\over 24} \int_X x_1^2 + x_2^2 + (x_1 + x_2)^2 - 2x_1 x_2 \\
-&= {-1\over 24} \qty{c_1^2 - 2c_2}
+\ind\dirac^+ 
+&= (-1)^n \int_X { \ch\SS^+ - \ch \SS^- \over \eul X} \td(TX\tensor \CC) \\ \\
+&= \int_X { \prod e^{x_i/2} - e^{-x_i /2} \over (-1)^n \prod x_i} \prod {x_i \over 1 - e^{x_i} } \prod {x_i \over 1 - e^{-x_i}} \\ \\
+&= \int_X \prod { (e^{x_i/2} - e^{-x_i / 2 )} x_i \over (1-e^{x_i} ) (1 - e^{-x_i}) } \\ \\
+&= (-1)^n \int_X \prod_I {x_i \over e^{x_i/2} - e^{-x_i/2}} \\ \\
+&= \int_X \qty{ 1 - {x_1^2 \over 24} } \qty{ 1 - {x_2^2 \over 24}} \\ \\
+&= -{1\over 24} \int_X x_1^2 + x_2^2 + (x_1 + x_2)^2 - 2x_1 x_2 \\ \\
+&= -{1\over 24} \qty{c_1^2 - 2c_2}
 .\]
 
 
 :::{.remark}
-See Ahat genus.
+See the $\hat{A}$ genus.
 :::
 
 
@@ -8403,7 +8428,11 @@ This yields the desired formula for step 1.
 
 We now want to show $\ind \dirac^+$ is divisible by 2.
 The key point is that $\ker \dirac^+$ and $\coker \dirac^+ = \ker \dirac^-$ admit a quaternionic vector space structure.
-This comes from the fact that $\Spin(4) \cong \SU(2) \cross \SU(2) \cong S^1(\HH) \oplus S^1(\HH) \da \SS^+ \oplus \SS^-$, so have a splitting into subspaces of unit quaternions.
+This comes from the fact that 
+\[
+\Spin(4) \cong \SU(2) \cross \SU(2) \cong S^1(\HH) \oplus S^1(\HH) \da \SS^+ \oplus \SS^-
+,\] 
+so we have a splitting into subspaces of unit quaternions.
 It turns out that $\dirac$ is $\HH\dash$linear.
 So we get an equality
 \[
@@ -8416,7 +8445,7 @@ for some $\lambda$, yielding $8\divides \sigma(X)$.
 :::{.remark}
 If $H_1(X; \ZZ)$ has no 2-torsion, e.g. if $\pi_1X = 0$, then $w_2(X) = 0$ iff the intersection form on $H^2$ is even, where $w_2$ is the obstruction to existence of spin structures.
 Note that this makes sense for topological manifolds and not just smooth manifolds, and in this case $\sigma(X)$ is divisible by 8.
-This restriction comes from number theory: since we have a unimodular lattice,it breaks into sums of $E_8, -E_8$, and $H$ if indefinite, and any even unimodular lattice has signature divisble by 8.
+This restriction comes from number theory: since we have a unimodular lattice, it breaks into sums of $E_8, -E_8$, and $H$ if indefinite, and any even unimodular lattice has signature divisible by 8.
 So this can work as an obstruction to the existence of smooth structures.
 :::
 
@@ -8425,14 +8454,6 @@ So this can work as an obstruction to the existence of smooth structures.
 Note that $\CP^2$ has no spin structure, and $\sigma(\CP^2) = 1$.
 There's a way to modify the invariant to set $\sigma(X)/8 = ? \mod 2$.
 :::
-
-
-
-
-
-
-
-
 
 
 
