@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/locally ringed space.md",
+            "file": "zettelkasten/scheme.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/locally ringed space.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/locally ringed space.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/locally ringed space.md",
+                "file": "zettelkasten/scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/locally ringed space.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/locally ringed space.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           }
@@ -240,8 +240,8 @@
   },
   "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
-    "zettelkasten/locally ringed space.md",
     "zettelkasten/scheme.md",
+    "zettelkasten/locally ringed space.md",
     "zettelkasten/quasicoherent sheaf.md",
     "zettelkasten/sheaf.md",
     "zettelkasten/stalk.md",

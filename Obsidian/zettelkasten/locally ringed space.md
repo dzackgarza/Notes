@@ -1,1 +1,1 @@
-See [[ringed space]]
+See [ringed space](ringed%20space).
