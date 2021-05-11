@@ -27,16 +27,17 @@ aliases: ["chromatic homotopy", "chromatic"]
 - The chromatic view-point, which studies stable homotopy theory via its relationships to the moduli of [formal groups](Formal%20group.md), and related topics such as topological modular forms, use a sizable amount of (fairly abstract) algebraic geometry. And Lurie's work on [derived algebraic geometry](derived%20algebraic%20geometry.md) was motivated in part by establishing foundations adequate to the task of defining equivariant forms of [TMF](Topological%20modular%20forms.md).
 
 [Behrens Hopkins Hill](https://www3.nd.edu/~mbehren1/papers/exotic2.pdf)
-Kervaire and Milnor defined Θn to be the group of [homotopy spheres](homotopy%20spheres) up to [[h-cobordism]] (where the group operation is given by connect sum). By the
-h-cobordism theorem [Sma62] (n > 4) and Perelman’s proof of the Poincare conjecture [Per02], [Per03a], [Per03b] (n = 3), for n 6= 4, Θn = 0 if and only if $S^n$ has
-a unique differentiable structure (i.e. there are no exotic spheres of dimension n).
+Kervaire and Milnor defined $\Theta_n$ to be the group of [homotopy spheres](homotopy%20spheres) up to [h-cobordism](h-cobordism) (where the group operation is given by connect sum). 
 
-We wish to consider the following question: For which n is Θn = 0?
+By the [h-cobordism theorem](h-cobordism%20theorem.md) ($n > 4$) and Perelman’s proof of the [Poincare Conjecture](Poincare%20Conjecture.md)] ($n = 3$).
 
-The general belief is that there should be finitely many such n, and these n should
-be concentrated in relatively low dimensions.
+For $n \neq 4$, $\Theta_n = 0$ if and only if $S^n$ has a unique [smooth structure](smooth%20structure) (i.e. there are no exotic spheres of dimension $n$).
 
-The chromatic tower. Fix a prime p. The chromatic tower of a spectrum X is
+We wish to consider the following question: For which $n$ is $\Theta_n = 0$? The general belief is that there should be finitely many such $n$, and these n should be concentrated in relatively low dimensions.
+
+## The chromatic tower
+
+Fix a prime $p$. The **chromatic tower** of a spectrum X is
 the tower of Bousfield localizations
 $$
 X \rightarrow \cdots \rightarrow X _ { E ( n ) } \rightarrow X _ { E ( n - 1 ) } \rightarrow \cdots \rightarrow X _ { E ( 0 ) }
