@@ -45,8 +45,6 @@ Tags: #topology #morse_theory
 
 See [Morse lemma](Morse%20lemma)
 
-
-
 - **Theorem**:
  If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
 
@@ -78,16 +76,13 @@ See [handle decomposition](handle%20decomposition)
 
 Morse theory: handles nice singularities. Can have worse ones, covered by [catastrophe theory](catastrophe%20theory)  (dynamical systems).
 
-Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of index $k$.
-
-Index: number of linearly independent direction you can move for which the function *decreases*.
+Fact: $M$ is homotopy equivalent to a CW complex with one cell of dimension $k$ for each critical point of $f$ of [index](index%20of%20a%20Morse%20function.md) $k$.
 
 ![](attachments/Pasted%20image%2020210501235532.png)
 
 Importance of CW complexes: triangulations of surfaces.
 
-**Morse Lemma:** 
-Nondegenerate critical points have standard forms $\sum \pm x_i^2$, so the index is well-defined.
+See [Morse lemma](Morse%20lemma.md)
 
 **Morse Theorem 1:**
 If there are no critical points, $M_A \homotopic M_B$.
