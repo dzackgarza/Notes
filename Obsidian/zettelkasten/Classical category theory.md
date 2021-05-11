@@ -11,5 +11,5 @@
 	- Limit definition
 - [[Pullback]]
 	- Limit definition
-- [[Equivalence of categories]]
+- [[equivalence of categories]]
 	- Need to state this precisely!

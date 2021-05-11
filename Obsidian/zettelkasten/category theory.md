@@ -26,8 +26,7 @@ $$
 - Universal Properties
   - Build new objects out of old ones, or "factor" objects into smaller ones
   - Define things "up to a unique isomorphism"
-- Limits / Colimits
-  - [limit](limit)
+- [limit](limit)
   - [colimit](colimit.md): 
   - Examples:
     - Products
@@ -36,11 +35,10 @@ $$
     - Completions
     - Free products
 - [adjunction](adjunction.md)
-  - Duality between functors
-  - "Partial equivalence" of categories
 - [Kan extension](Kan%20extension.md)
 - [Yoneda lemma](Yoneda%20lemma)
 - [isomorphism of functors](isomorphism%20of%20functors)
+- [equivalence of categories](equivalence%20of%20categories.md)
 
 
 ## Duality
