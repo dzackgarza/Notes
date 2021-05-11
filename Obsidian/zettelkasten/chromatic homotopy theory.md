@@ -61,15 +61,13 @@ Let $M_\\ell$ denote the [[Deligne-Mumford stack]] of [[elliptic curves]] over $
 
 For a commutative ring $R$, the [groupoid](groupoid) of $R$-points of $M_\ell$ is the groupoid of elliptic curves over $R$. This [[stack]] carries a [[line bundle]] $\omega$ where for an elliptic curve $C$, the fiber over $C$ is given by
 $$ωC = T^∗_e C,$$
-the tangent space of C at its basepoint e.
-The stack $M_{ell}$ admits a compactification $\overline{M}_{ell}$ whose R points are generalized
-elliptic curves. The space of integral modular
-forms of weight k is defined to be the sections
+the tangent space of $C$ at its basepoint $e$.
+
+The stack $M_{ell}$ admits a compactification $\overline{M}_{ell}$ whose $R$ points are generalized elliptic curves. The space of integral [[modular forms]] of [[weight]] $k is defined to be the sections
 $$
 H ^ { 0 } \left( \overline { \mathcal { M } } _ { e l l } , \omega ^ { \otimes k } \right)
 $$
-Motivated by the definition of integral modular forms and this descent spectral
-sequence in the case of U = Mell , the spectrum Tmf is defined to be the global
+Motivated by the definition of integral modular forms and this [[descent spectral sequence]] in the case of $U = M_\ell$ , the spectrum $\Tmf$ is defined to be the global
 sections
 $$
 \mathrm { Tmf } : = \mathcal { O } ^ { t o p } \left( \overline { \mathcal { M } } _ { e l l } \right)
