@@ -2,7 +2,12 @@
 aliases: ["moduli space", "moduli", "moduli problem"]
 ---
 
-Prototypical example of a moduli space: $\Gr_\CC(n, k)$. Apparently fundamental classes exist for closed subvarieties? Maybe just closed subvarieties of a moduli space.
+Prototypical example of a moduli space: $\Gr_\CC(n, k)$.
+
+Apparently fundamental classes exist for closed subvarieties? Maybe just closed subvarieties of a moduli space.
+
+- [fine moduli space](fine%20moduli%20space)
+- [coarse moduli space](coarse%20moduli%20space)
 
 # Notes
 

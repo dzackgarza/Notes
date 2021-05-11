@@ -22,27 +22,25 @@ A\star B \cong A \oplus B \oplus (A \otimes B) \oplus (B \otimes A) \oplus (A \o
 $$
 
 # Big Ideas
-- Duality
-- Isomorphisms
+
 - Universal Properties
   - Build new objects out of old ones, or "factor" objects into smaller ones
   - Define things "up to a unique isomorphism"
-  - Yoneda's Lemma: To study an object, just look at the maps into and/or out of it!
-- Functors
 - Limits / Colimits
-  - Limits: Build new objects by "imposing equations" on existing ones.
-    - Ex: Construction of the p-adic integers as the limit of the sequence of quotient homomorphisms: $\cdots \rightarrow \mathbb{Z}/p^n \rightarrow \cdots \rightarrow \mathbb{Z}/p^2 \rightarrow \mathbb{Z}/p$
-  - Colimits: Build new objects by "gluing together" existing ones:
+  - [limit](limit)
+  - [colimit](colimit.md): 
   - Examples:
     - Products
     - Quotients
     - Kernels
     - Completions
     - Free products
-- Adjunction
+- [adjunction](adjunction.md)
   - Duality between functors
   - "Partial equivalence" of categories
-- Kan Extensions
+- [Kan extension](Kan%20extension.md)
+- [Yoneda lemma](Yoneda%20lemma)
+- [isomorphism of functors](isomorphism%20of%20functors)
 
 
 ## Duality
@@ -61,6 +59,3 @@ $$
 - A very powerful example: Poincare Duality
   - The $k$th homology group of an $n$-dimensional manifold  is isomorphic $(n-k)$th cohomology group
   - $H^k(M) \cong H_{n-k}(M)$.
-
-## Universal Properties
-For another time!

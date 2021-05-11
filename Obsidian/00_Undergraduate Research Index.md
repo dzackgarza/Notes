@@ -49,7 +49,7 @@ date: 2021-04-27
 - [Higher homotopy of other related spaces](zettelkasten/2021-04-26_Homotopy_Groups_of_Other_Spaces.md)
 
 ## Infinity Categories
-- [Standard category theory reference](zettelkasten/2021-04-26_Category_Theory_Reference.md)
+- [Standard category theory reference](zettelkasten/category%20theory.md)
 - [Quasicategories](zettelkasten/2021-04-26_Quasicategories.md)
 - [Simplicial Sets](zettelkasten/simplicial%20set.md)
 - [Basics of $\infty\dash$category theory](zettelkasten/2021-04-26_Introduction_to_Infty_Categories.md)
