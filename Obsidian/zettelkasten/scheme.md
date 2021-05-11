@@ -14,6 +14,7 @@ aliases: ["schemes"]
 - Reduced scheme: ?
 - Closed points: ?
 - Regular: 
+- [geometric fiber](geometric%20fiber)
 
 # Results
 

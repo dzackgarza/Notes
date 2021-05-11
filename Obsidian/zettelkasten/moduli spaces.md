@@ -8,6 +8,7 @@ Apparently a [fundamental class](fundamental%20class) exists for closed subvarie
 
 - [fine moduli space](fine%20moduli%20space)
 - [coarse moduli space](coarse%20moduli%20space)
+- [Quot schemes](Quot%20schemes)
 
 # Notes
 

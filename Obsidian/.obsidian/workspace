@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Grassmannian.md",
+            "file": "zettelkasten/scheme.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Grassmannian.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Grassmannian.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Grassmannian.md",
+                "file": "zettelkasten/scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Grassmannian.md",
+                "file": "zettelkasten/scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Grassmannian.md"
+                "file": "zettelkasten/scheme.md"
               }
             }
           }
@@ -240,15 +240,15 @@
   },
   "active": "34dec5e47889cb3f",
   "lastOpenFiles": [
+    "zettelkasten/scheme.md",
+    "zettelkasten/algebraic curve.md",
+    "zettelkasten/moduli spaces.md",
     "zettelkasten/Grassmannian.md",
     "zettelkasten/affine Grassmannian.md",
-    "zettelkasten/moduli spaces.md",
     "zettelkasten/Equivalence of categories.md",
     "zettelkasten/category theory.md",
     "zettelkasten/limit.md",
     "zettelkasten/Colimit.md",
-    "zettelkasten/Yoneda lemma.md",
-    "zettelkasten/2021-04-26_Category_Theory_Reference.md",
-    "zettelkasten/Commutative Algebra.md"
+    "zettelkasten/Yoneda lemma.md"
   ]
 }
