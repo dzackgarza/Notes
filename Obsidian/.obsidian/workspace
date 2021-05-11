@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/scheme.md",
+            "file": "zettelkasten/How to extract homology using spectra.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/How to extract homology using spectra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/scheme.md"
+                "file": "zettelkasten/How to extract homology using spectra.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/How to extract homology using spectra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/How to extract homology using spectra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/scheme.md"
+                "file": "zettelkasten/How to extract homology using spectra.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "c3e8d64763040a96",
   "lastOpenFiles": [
+    "zettelkasten/How to extract homology using spectra.md",
     "zettelkasten/scheme.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/basic topics in stable homotopy theory.md",
@@ -248,7 +249,6 @@
     "zettelkasten/separated.md",
     "zettelkasten/closed immersion.md",
     "zettelkasten/diagonal morphism.md",
-    "zettelkasten/locally ringed space.md",
-    "zettelkasten/quasicoherent sheaf.md"
+    "zettelkasten/locally ringed space.md"
   ]
 }
