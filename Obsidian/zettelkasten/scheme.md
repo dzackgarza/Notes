@@ -4,7 +4,7 @@ aliases: ["schemes"]
 
 # Definitions
 
-- A **scheme** $X\in \Sch$ is a [[ ringed space]] $X \in \Ringedspace$ with an open cover $\mathcal{U} \covers X$ with each $U_i \in \Sch(\Aff)$ an [affine scheme](affine%20scheme.md).
+- A **scheme** $X\in \Sch$ is a [locally ringed space](locally%20ringed%20space) $X \in \Ringedspace$ with an open cover $\mathcal{U} \covers X$ with each $U_i \in \Sch(\Aff)$ an [affine scheme](affine%20scheme.md).
 - [smooth scheme](smooth%20scheme)
 - [finite type](finite%20type)
 - [sheaf](sheaf.md)

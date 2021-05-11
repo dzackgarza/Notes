@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/scheme.md",
+            "file": "zettelkasten/locally ringed space.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/locally ringed space.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/scheme.md"
+                "file": "zettelkasten/locally ringed space.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/locally ringed space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/scheme.md",
+                "file": "zettelkasten/locally ringed space.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/scheme.md"
+                "file": "zettelkasten/locally ringed space.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "2ca6eed6d06c0a73",
   "lastOpenFiles": [
+    "zettelkasten/locally ringed space.md",
     "zettelkasten/scheme.md",
     "zettelkasten/quasicoherent sheaf.md",
     "zettelkasten/sheaf.md",
@@ -248,7 +249,6 @@
     "zettelkasten/section of a sheaf.md",
     "zettelkasten/affine scheme.md",
     "zettelkasten/smooth scheme.md",
-    "zettelkasten/proper morphism.md",
-    "zettelkasten/universally closed.md"
+    "zettelkasten/proper morphism.md"
   ]
 }
