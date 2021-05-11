@@ -7,8 +7,11 @@
         "id": "0fe4f66d0a605cd1",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/modular form.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -75,6 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/modular form.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -108,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/modular form.md"
+              }
             }
           },
           {
@@ -141,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/modular form.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,6 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/modular form.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,7 +225,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/modular form.md"
+              }
             }
           }
         ],
@@ -229,15 +239,15 @@
   },
   "active": "0fe4f66d0a605cd1",
   "lastOpenFiles": [
+    "zettelkasten/modular form.md",
+    "zettelkasten/Weierstrass p function.md",
+    "zettelkasten/elliptic curve.md",
+    "zettelkasten/$/theta$ function 2.md",
+    "zettelkasten/$/theta$ function 1.md",
+    "zettelkasten/$/theta$ function.md",
     "zettelkasten/2021-04-25_fiber_bundles_ug.md",
     "zettelkasten/Clifford algebra.md",
     "zettelkasten/four manifold.md",
-    "zettelkasten/Monoidal category.md",
-    "zettelkasten/Generators of a category.md",
-    "zettelkasten/quadratic form.md",
-    "zettelkasten/Morse Theory.md",
-    "zettelkasten/index of a Morse function.md",
-    "zettelkasten/foliate.md",
-    "zettelkasten/Morse lemma.md"
+    "zettelkasten/Monoidal category.md"
   ]
 }
