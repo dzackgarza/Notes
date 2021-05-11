@@ -10,24 +10,32 @@ Tags: #topology #morse_theory
 
 - Can be used to prove the high dimensional case of the generalized [Generalized Poincaré conjecture](Generalized%20Poincaré%20conjecture)
 
+# Results
+- **Theorem**: Every compact manifold has a Morse function.
+
+- **Theorem**: [Morse functions](Morse%20function) are generic (given any smooth function $f: X\to Y$, there's an arbitrarily small perturbation of $f$ that is Morse).
+
+See [Morse lemma](Morse%20lemma)
+
+- **Theorem 3**:
+ If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
+
 # Dave's Videos
 
 - Historic note: Morse wanted to know not the diffeomorphism type of $M$, but rather the homotopy type.
 
 - Definition: critical values and critical points
 
-- Definition: indices of critical points
+- Definition: [index](index%20of%20a%20Morse%20function.md) of a [critical point](critical%20point)
 
-- Definition:
-
-- Theorem (Smale, [[h-cobordism]])
-  - If $X^n$ is a smooth [[cobordism]], $n\geq 6$, $\pi_1(X) = 0$, and $X$ "looks like" a product in algebraic topology, then $X$ is a product cobordism.
+- Theorem (Smale, [h-cobordism theorem](h-cobordism%20theorem.md))
+  - If $X^n$ is a smooth [[cobordism]], $n\geq 6$, $\pi_1(X) = 0$, and $X$ "looks like" a product in algebraic topology, then $X$ is a product [cobordism](cobordism.md).
 
 - Corollary (High-Dimensional [Poincare Conjecture](../Poincare%20Conjecture.md))
-  - If $X_1^n, X_2^n \cong_{\diff} S^n$, then there exists an $h\dash$cobordism between them.
+  - If $X_1^n, X_2^n \cong_{\diff} S^n$, then there exists an [h-cobordism](h-cobordism) between them.
   - Proof: use algebraic topology to eliminate (cancel) critical points.
 
-- Definition: Morse function and index
+- Definition: [Morse function](Morse%20function) and [index](index%20of%20a%20Morse%20function.md)
   - Look at coordinate-free def?
   - Standard form at critical points
   - Alternatively: Hessian is non-singular at every critical point.
@@ -35,24 +43,14 @@ Tags: #topology #morse_theory
 
 - Definition: Stable and generic
 
-- Definition: cobordism
+- Definition: [cobordism](cobordism.md)
   - Example: (pair of pants)
   - Category: Objects are manifolds, morphisms are cobordisms between them
 
-- Theorem: Every compact manifold has a Morse function.
-
-- Theorem: [Morse functions](Morse%20function) are generic (given any smooth function $f: X\to Y$, there's an arbitrarily small perturbation of $f$ that is Morse).
-
-See [Morse lemma](Morse%20lemma)
-
-- **Theorem**:
- If $(W; M_0, M_1) \to I$ is Morse with no critical points then $W \cong_{\Diff} I \cross M_0$
-
-  - Consequence: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
-
-  - Recall that this is proved by constructing a [vector field](vector%20field) $V$ on $W$, then using a diffeomorphism $\phi:I \cross M_0 \to W$ by flowing along $V$.
-
-  - Say something about gradient flow in the case of a Riemannian metric?
+- Consequence of theorem 3: $M_0 \cong_{\text{Diff}} M_1$ is a diffeomorphism, useful to show two things are diffeomorphic, used in higher-dimensional Poincare.
+	- Recall that this is proved by constructing a [vector field](vector%20field) $V$ on $W$, then using a diffeomorphism $\phi:I \cross M_0 \to W$ by flowing along $V$.
+	- Can we do gradient flow in the case of a Riemannian metric? 
+	
 
 ## Unsorted
 
