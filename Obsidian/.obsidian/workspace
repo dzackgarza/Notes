@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Commutative Algebra.md",
+            "file": "zettelkasten/moduli spaces.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Commutative Algebra.md",
+                "file": "zettelkasten/moduli spaces.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Commutative Algebra.md"
+                "file": "zettelkasten/moduli spaces.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Commutative Algebra.md",
+                "file": "zettelkasten/moduli spaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Commutative Algebra.md",
+                "file": "zettelkasten/moduli spaces.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Commutative Algebra.md"
+                "file": "zettelkasten/moduli spaces.md"
               }
             }
           }
@@ -240,6 +240,7 @@
   },
   "active": "34dec5e47889cb3f",
   "lastOpenFiles": [
+    "zettelkasten/moduli spaces.md",
     "zettelkasten/Commutative Algebra.md",
     "zettelkasten/moduli stack of Higgs bundles.md",
     "zettelkasten/stack.md",
@@ -248,7 +249,6 @@
     "zettelkasten/Number theory.md",
     "zettelkasten/Spectral Sequences.md",
     "zettelkasten/smooth structure.md",
-    "zettelkasten/Smooth structures.md",
-    "zettelkasten/Untitled 5.md"
+    "zettelkasten/Smooth structures.md"
   ]
 }
