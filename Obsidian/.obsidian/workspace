@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "a091cb4d391b4800",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/K-Theory.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Maschke's theorem.md",
+                "file": "zettelkasten/K-Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Maschke's theorem.md"
+                "file": "zettelkasten/K-Theory.md"
               }
             }
           },
@@ -148,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Maschke's theorem.md",
+                "file": "zettelkasten/K-Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Maschke's theorem.md",
+                "file": "zettelkasten/K-Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Maschke's theorem.md"
+                "file": "zettelkasten/K-Theory.md"
               }
             }
           }
@@ -238,8 +249,9 @@
     "direction": "horizontal",
     "width": 414
   },
-  "active": "c3e8d64763040a96",
+  "active": "a091cb4d391b4800",
   "lastOpenFiles": [
+    "zettelkasten/K-Theory.md",
     "zettelkasten/Maschke's theorem.md",
     "zettelkasten/representation theory.md",
     "zettelkasten/Spectra.md",
@@ -248,7 +260,6 @@
     "zettelkasten/Shimura-Taniyama-Weil.md",
     "zettelkasten/reciprocity conjecture.md",
     "zettelkasten/Lie group.md",
-    "zettelkasten/attachments/liegroups.pdf",
-    "zettelkasten/Langlands.md"
+    "zettelkasten/attachments/liegroups.pdf"
   ]
 }
