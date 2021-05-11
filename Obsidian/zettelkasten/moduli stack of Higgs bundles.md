@@ -1,0 +1,1 @@
+An [algebraic stack](algebraic%20stack)
