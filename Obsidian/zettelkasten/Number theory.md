@@ -45,3 +45,4 @@ See [algebraic number theory](algebraic%20number%20theory)
 
 - [elliptic curve](elliptic%20curve.md)
 - [[Riemann-Roch]]
+- [algebraic curve](algebraic%20curve)

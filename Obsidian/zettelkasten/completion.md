@@ -1,3 +1,3 @@
 ---
-aliases: ["completions"]
+aliases: ["completions", "completion of a ring"]
 ---
