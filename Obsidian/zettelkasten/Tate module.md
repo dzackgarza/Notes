@@ -1,7 +1,6 @@
 ---
 date: 2021-04-26
-tags: 
-  - Number Theory
+aliases: ["l-adic Tate module, adelic Tate module", "Tate"]
 ---
 
 References: [Number theory](../Number%20theory.md)
@@ -15,3 +14,12 @@ References: [Number theory](../Number%20theory.md)
 - Fails spectacularly when $E/\FF_{p^s}$ is a [[supersingular]] elliptic curve, in which case taking $\ell = p$ yields $T_p E = 0$.
 - Leads to considering the [group schemes](../group%20scheme.md) $E[\ell^n]$, which is [[étale]] when $\ell \neq p$, but $E[p^n]$ is never étale.
 - Leads to replacing $T_p E$ with the directed system $\theset{E[p^n]}_n$.
+
+Define the l-adic Tate module:
+$$
+T_\ell E := \inverselim_{n} E[\ell^n]
+$$
+and the adelic Tate module
+$$
+T_\infty E ;= \inverselim_{n} E[n]
+$$
