@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Tate module.md",
-            "mode": "preview"
+            "file": "zettelkasten/Mazur's Program B.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Tate module.md",
+                "file": "zettelkasten/Mazur's Program B.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Tate module.md"
+                "file": "zettelkasten/Mazur's Program B.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Tate module.md",
+                "file": "zettelkasten/Mazur's Program B.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Tate module.md",
+                "file": "zettelkasten/Mazur's Program B.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,7 +227,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Tate module.md"
+                "file": "zettelkasten/Mazur's Program B.md"
               }
             }
           }
@@ -240,6 +240,8 @@
   },
   "active": "34dec5e47889cb3f",
   "lastOpenFiles": [
+    "zettelkasten/Mazur's Program B.md",
+    "Quick_Notes/2021-05-11.md",
     "zettelkasten/Tate module.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/2021-04-26_Tate_Modules.md",
@@ -247,8 +249,6 @@
     "Quick_Notes/2021-04-25.md",
     "zettelkasten/valuation.md",
     "zettelkasten/absolute value.md",
-    "zettelkasten/Number theory.md",
-    "zettelkasten/Ring of integers.md",
-    "zettelkasten/Local field.md"
+    "zettelkasten/Number theory.md"
   ]
 }
