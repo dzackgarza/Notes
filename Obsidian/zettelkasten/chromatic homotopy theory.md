@@ -59,7 +59,7 @@ $$
 
 Let $M_\\ell$ denote the [[Deligne-Mumford stack]] of [[elliptic curves]] over $\spec(\ZZ)$. See also [[moduli stack of elliptic curves]].
 
-For a commutative ring $R$, the [groupoid](groupoid) of $R$-points of $M_\ell$ is the groupoid of elliptic curves over $R$. This [[stack]] carries a [[line bundle]] $\omega$ where for an elliptic curve $C$, the fiber  over C is given by
+For a commutative ring $R$, the [groupoid](groupoid) of $R$-points of $M_\ell$ is the groupoid of elliptic curves over $R$. This [[stack]] carries a [[line bundle]] $\omega$ where for an elliptic curve $C$, the fiber over $C$ is given by
 $$ωC = T^∗_e C,$$
 the tangent space of C at its basepoint e.
 The stack $M_{ell}$ admits a compactification $\overline{M}_{ell}$ whose R points are generalized
