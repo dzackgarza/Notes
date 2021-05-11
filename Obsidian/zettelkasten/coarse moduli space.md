@@ -1,0 +1,1 @@
+There is a quasi-projective variety $\Mg$ and a morphism
