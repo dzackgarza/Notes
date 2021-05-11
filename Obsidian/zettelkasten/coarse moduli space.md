@@ -1,1 +1,1 @@
-There is a quasi-projective variety $Mg$ and a morphism $\mathcal{M}__
+There is a quasi-projective variety $M_g$ and a morphism $\mathcal{M}_g \to M_g$
