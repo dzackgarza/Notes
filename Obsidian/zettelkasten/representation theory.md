@@ -4,7 +4,7 @@ aliases: ["representation theory", "Representation Theory", "representations", "
 
 See also: [Lie group](Lie%20group) | [Lie algebra](Lie%20algebra) | [algebraic group](algebraic%20group)
 
-Important concepts
+# Topics
 
 - [irreducibles](irreducibles)
 - [simple](simple)
@@ -16,4 +16,8 @@ Important concepts
 	- [completely reducible](completely%20reducible)
 - [sign representation](sign%20representation)
 - [permutation representation](permutation%20representation)
-- 
+
+
+# Results
+
+An irreducible representation of _G_ is completely determined by its character.
