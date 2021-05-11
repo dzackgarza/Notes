@@ -1,6 +1,6 @@
 
 # Topics
-
+- [absolute value](absolute%20value)
 - [[Reduction]]
 
 -[Places](place.md)

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Ring of integers.md",
+            "file": "zettelkasten/absolute value.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Ring of integers.md",
+                "file": "zettelkasten/absolute value.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Ring of integers.md"
+                "file": "zettelkasten/absolute value.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Ring of integers.md",
+                "file": "zettelkasten/absolute value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Ring of integers.md",
+                "file": "zettelkasten/absolute value.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Ring of integers.md"
+                "file": "zettelkasten/absolute value.md"
               }
             }
           }
@@ -239,15 +239,15 @@
   },
   "active": "0fe4f66d0a605cd1",
   "lastOpenFiles": [
+    "zettelkasten/absolute value.md",
+    "zettelkasten/Number theory.md",
     "zettelkasten/Ring of integers.md",
     "zettelkasten/Local field.md",
-    "zettelkasten/Number theory.md",
     "zettelkasten/Global field.md",
     "zettelkasten/elliptic curve.md",
     "zettelkasten/Dirichlet's theorem.md",
     "zettelkasten/modular form.md",
     "zettelkasten/Weierstrass p function.md",
-    "zettelkasten/$/theta$ function 2.md",
-    "zettelkasten/$/theta$ function 1.md"
+    "zettelkasten/$/theta$ function 2.md"
   ]
 }
