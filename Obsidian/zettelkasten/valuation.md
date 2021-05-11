@@ -11,4 +11,6 @@
 Definition of a valuation: a group morphism $\FF\units\to \RR$ such that 
 $$v(x+y) \geq \min (v(x), v(y))$$
 
-Defining $\abs{x}_v := e^{v(x)}$
+Defining $\abs{x}_v := e^{v(x)}$ yields an nonarchimedean [absolute value](absolute%20value.md)
+- The **value group** is $v(\FF)$, and $v$ is a **discrete valuation** if $v(\FF) \cong \ZZ \leq \RR$.
+- The **valuation ring** is $\ts{x\in \FF \st v(x) \geq 0}$, and its  
