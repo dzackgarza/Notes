@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/modular form.md",
+            "file": "zettelkasten/Ring of integers.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/modular form.md",
+                "file": "zettelkasten/Ring of integers.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/modular form.md"
+                "file": "zettelkasten/Ring of integers.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/modular form.md",
+                "file": "zettelkasten/Ring of integers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/modular form.md",
+                "file": "zettelkasten/Ring of integers.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/modular form.md"
+                "file": "zettelkasten/Ring of integers.md"
               }
             }
           }
@@ -239,15 +239,15 @@
   },
   "active": "0fe4f66d0a605cd1",
   "lastOpenFiles": [
+    "zettelkasten/Ring of integers.md",
+    "zettelkasten/Local field.md",
+    "zettelkasten/Number theory.md",
+    "zettelkasten/Global field.md",
+    "zettelkasten/elliptic curve.md",
+    "zettelkasten/Dirichlet's theorem.md",
     "zettelkasten/modular form.md",
     "zettelkasten/Weierstrass p function.md",
-    "zettelkasten/elliptic curve.md",
     "zettelkasten/$/theta$ function 2.md",
-    "zettelkasten/$/theta$ function 1.md",
-    "zettelkasten/$/theta$ function.md",
-    "zettelkasten/2021-04-25_fiber_bundles_ug.md",
-    "zettelkasten/Clifford algebra.md",
-    "zettelkasten/four manifold.md",
-    "zettelkasten/Monoidal category.md"
+    "zettelkasten/$/theta$ function 1.md"
   ]
 }

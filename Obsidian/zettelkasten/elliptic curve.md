@@ -11,3 +11,4 @@ aliases: ["Elliptic curves"]
 - [sigma function](sigma%20function)
 - [Jacobian](Jacobian.md)
 - [p-adic height](p-adic%20height)
+- [p-adic uniformization](p-adic%20uniformization)

@@ -16,6 +16,7 @@
 - [uniformizer](uniformizer)
 - [[Faltings theorem]]
 - [p-adic integers](p-adic%20integers)
+- [Dirichlet's theorem](Dirichlet's%20theorem)
 
 # Algebraic Number Theory
 
@@ -28,7 +29,7 @@ See [algebraic number theory](algebraic%20number%20theory)
 # Class Field Theory
 
 - [Inertia](Inertia.md)
-- [[Local field]]
+- [local field](local%20field.md)
 - [Global field](Global%20field)
 
 # Modular Forms

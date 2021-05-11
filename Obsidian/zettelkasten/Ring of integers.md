@@ -6,3 +6,5 @@ This is a local ring with maximal ideal
 $$
 \mfm \da \ts{x\in K \st \abs{x} < 1 }= \DD(K)^\circ
 $$
+
+[integral closure](integral%20closure) of $R$ in $\ff(R)$
