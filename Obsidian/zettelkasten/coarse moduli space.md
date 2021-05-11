@@ -1,1 +1,1 @@
-There is a quasi-projective variety $Mg$ and a morphism $\mathca
+There is a quasi-projective variety $Mg$ and a morphism $\mathcal{M}__
