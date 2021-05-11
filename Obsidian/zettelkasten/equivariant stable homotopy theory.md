@@ -12,9 +12,10 @@ aliases: ["equivariant stable homotopy"]
 
 - [Mackey functor](Mackey%20functor)
 - [Tambara functors](Tambara%20functors)
+- [Green functor](Green%20functor)
 - [transfer map](transfer%20map)
 	- [norm map](norm%20map) (multiplicative transfer)
-	- [trace map](trace%20map) (additive transf)
+	- [trace map](trace%20map) (additive transfer)
 - [Burnside ring](Burnside%20ring%20(homotopy%20theory).md)
 - [Box product](Box%20product)
 - [representation ring](representation%20ring)
