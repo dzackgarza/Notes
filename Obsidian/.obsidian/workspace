@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/fiber bundle.md",
+            "file": "zettelkasten/homotopy type.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/classifying space.md",
+                "file": "zettelkasten/homotopy type.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/classifying space.md"
+                "file": "zettelkasten/homotopy type.md"
               }
             }
           },
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/classifying space.md",
+                "file": "zettelkasten/homotopy type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/classifying space.md",
+                "file": "zettelkasten/homotopy type.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -253,17 +253,17 @@
     "width": 318,
     "collapsed": true
   },
-  "active": "5575e604432a539a",
+  "active": "49079d6435c409df",
   "lastOpenFiles": [
-    "zettelkasten/classifying space.md",
+    "zettelkasten/homotopy type.md",
     "zettelkasten/fiber bundle.md",
     "zettelkasten/Untitled 4.md",
+    "zettelkasten/classifying space.md",
     "zettelkasten/characteristic class.md",
     "zettelkasten/presentable stack.md",
     "zettelkasten/principal bundle.md",
     "zettelkasten/weakly contractible.md",
     "zettelkasten/freely.md",
-    "zettelkasten/Stiefel manifold.md",
-    "zettelkasten/bundle.md"
+    "zettelkasten/Stiefel manifold.md"
   ]
 }

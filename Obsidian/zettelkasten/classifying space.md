@@ -57,16 +57,19 @@ $$
 
 ## Constructions
 
-- Standard procedure for constructing a classifying space for any group. Constructing a 2-complex with the given fundamental group, and then one inductively attaches higher dimensional cells to kill all higher homotopy groups. Each element $c\in \pi_n(X_{n−1})$ is represented by some continuous map $\gamma_c:S^n\to X_{n−1}$ with image in the $n\dash$-skeleton. Let $X_n$ be obtained from $X_{n−1}$ by attaching an $(n+1)\dash$cell along $\gamma_c$, for each $c\in π_n(X_{n−1})$.
+- Standard procedure for constructing a classifying space for any group:
+	- Construct a 2-complex with the given fundamental group, and then one inductively attaches higher dimensional cells to kill all higher homotopy groups. 
+	- Each element $c\in \pi_n(X_{n−1})$ is represented by some continuous map $\gamma_c:S^n\to X_{n−1}$ with image in the $n\dash$-skeleton. 
+	- Let $X_n$ be obtained from $X_{n−1}$ by attaching an $(n+1)\dash$cell along $\gamma_c$, for each $c\in π_n(X_{n−1})$.
 
 
-- Any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) can be realized as a [classifying space](classifying%20space.md).
 
 
 # Further Reading
 
 Connected covers can kill higher homotopy?
 
+- Any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) can be realized as a [classifying space](classifying%20space.md).
 
 - $\pi_{i+k}\B^k G = \pi_i G$.
 	- Proof: If $G$ is a topological group, there is a universal principal $G\dash$bundle $EG \to BG$ which induces a LES in homotopy. 
