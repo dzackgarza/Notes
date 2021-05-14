@@ -22,4 +22,11 @@ F(x) &= {1 \over 1-x-x^2}
 
 - Now apply partial fractions.
 	- First factor the denominator:
-	$$1-x-x^2 + (1-r_+x)(1-r_- x) \quad r_{\pm} = {1\over 2} $$
+	$$1-x-x^2 + (1-r_+x)(1-r_- x) \quad r_{\pm} = {1\over 2} (1 \pm \sqrt 5)$$
+- Then write
+$$\begin{aligned} 
+F(x) = \frac{1}{1-x-x^{2}} &=\frac{1}{\left(1-x r_{+}\right)\left(1-x r_{-}\right)} \\ 
+&= \frac{1}{\left(r_{+}-r_{-}\right)}\left(\frac{r_{+}}{1-x r_{+}}-\frac{r_{-}}{1-x r_{-}}\right) \\ 
+&= \frac{1}{\sqrt{5}}\left\{\sum_{n \geq 0} r_{+}^{n+1} x^{n}-\sum_{n \geq 0} r_{-}^{n+1} x^{n}\right\} \\
+&= \sum_{n\geq 0} \left( {r_+^{n+1} - r_{i}^{n+1} \over \sqrt 5 } \right)x^n
+\end{aligned}$$
