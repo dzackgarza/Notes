@@ -1,0 +1,1 @@
+- The recurrence: $F(n) = 

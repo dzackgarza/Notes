@@ -8,11 +8,15 @@ Tags: #algebraicgeometry
 
 - Geometry of Schemes, Eisenbud and Harris
 - Galois groups and Fundamental Groups, by Szamuely.
+- Contemplating spec: <http://www.neverendingbooks.org/mumfords-treasure-map>
 
 # Definitions
 See [variety](variety.md)
 
 - A **scheme** $X\in \Sch$ is a [locally ringed space](locally%20ringed%20space) $X \in \Ringedspace$ with an open cover $\mathcal{U} \covers X$ with each $U_i \in \Sch(\Aff)$ an [affine scheme](affine%20scheme.md).
+
+# Topics
+
 - [smooth scheme](smooth%20scheme)
 - [finite type](finite%20type)
 - [sheaf](sheaf.md)
