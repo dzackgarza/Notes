@@ -4,19 +4,22 @@ aliases: ["principal"]
 
 # Definitions
 
-**Definition:** A **principal $G\dash$ bundle** is a [fiber bundle](fiber%20bundle.md) $F \to E \to B$ for which $G$ acts freely and transitively on each fiber $F_b:= \pi^{-1}(b)$. 
+**Definition:** 
+A **principal $G\dash$ bundle** is a [fiber bundle](fiber%20bundle.md) $F \to E \to B$ for which $G$ acts [[freely]] and [[transitively]] on each fiber $F_b:= \pi^{-1}(b)$. 
 
-In other words, there is a continuous group action 
-$$\cdot: E\cross G \to E$$ 
-such that for every $f \in F_b$ and $g\in G$, we have 
+I.e. there is a continuous group action
+$$\cdot \in \Top\Grp(E\cross G, E)$$ 
+such that for every $f \in F_b$ and $g\in G$,
+ 
 - $g\cdot f \in F_b$ 
 - $g\cdot f \neq f$.
 
-|A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. 
+A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. 
 
 **Example:** A [covering space](covering%20space) $\hat X \mapsvia{p} X$ yields a principal $\pi_1(X)\dash$ bundle.
 
-_Remark_: A consequence of this is that each $F_b \cong G \in \text{TopGrp}$ (which may also be taken as the definition). Furthermore, each $F_b$ is then a [homogeneous space](homogeneous%20space)
+- A consequence of this is that each $F_b \cong G \in \text{TopGrp}$, which may also be taken as the definition.
+- Each $F_b$ is then a [homogeneous space](homogeneous%20space)
 
 _Remark_: Although each fiber $F_b$ is isomorphic to $G$, there is no preferred identity element in $F_b$. Locally, one can form a [local section](section%20of%20a%20bundle.md) by choosing some $e\in F_b$ to serve as the identity, but the fibers can only be given a global group structure iff the bundle is trivial. This property is expressed by saying $F_b$ is a $G\dash$ [torsor](torsor).
 
