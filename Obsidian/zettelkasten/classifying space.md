@@ -81,9 +81,8 @@ Proof: If $G$ is a topological group, there is a universal principal $G\dash$bun
 Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
 Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
 
-It's possible to take classifying spaces of stacks. E.g. there is a stack that classifies principal bundles *with connections*, but it has issues: it is not a presentable stack, i.e. not covered by a manifold, so an associated sheaf is not representable.
-
-Stable homotopy of $BG$: same sort of techniques as in $S^n$, break into components.
+It's possible to take classifying spaces of [stacks](stack.md). E.g. there is a stack that classifies [principal bundles](principal%20bundles) *with [connections](connection.md)*, but it has issues: 
+	- It is not a [[presentable stack]], i.e. , so an associated sheaf is not representable.
 
 $EG$ can be constructed as 
 $$
@@ -96,7 +95,8 @@ EG \cong \bigcup_n \ZZ_2 \ast \cdots = \bigcup_n S^{n-1} = S^\infty
 
 # Unknown?
 
-- What is $\pi_* 
+- What is $\pi_* \B G$?
+	- What is the stable homotopy $\pi_* \Suspend^\infty \B G$?
 
 - Conjecture: $\B (G \oplus H) = \B G \cross \B H$
 	- Proof outline: $EG \cross EH$ is contractible, and $G \cross H$ acts freely on it with quotient equal to the RHS?
