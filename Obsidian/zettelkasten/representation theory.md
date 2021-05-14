@@ -6,6 +6,7 @@ See also: [Lie group](Lie%20group) | [Lie algebra](Lie%20algebra) | [algebraic g
 
 # Topics
 
+## Basics
 - [simple](simple)
 	- [semisimple](semisimple)
 - [irreducibles](irreducibles)
@@ -17,13 +18,16 @@ See also: [Lie group](Lie%20group) | [Lie algebra](Lie%20algebra) | [algebraic g
 - [Schur's Lemma](Schur's%20Lemma)
 - [sign representation](sign%20representation)
 - [permutation representation](permutation%20representation)
-- [Hecke algebra](Hecke%20algebra)
 - [Frobenius reciprocity](Frobenius%20reciprocity)
 - [weight of a representation](weight%20of%20a%20representation)
+
+## Advanced
+
 - [Verma module](Verma%20module)
 - [Category O](Category%20O)
-
-
+- [Hecke algebra](Hecke%20algebra)
+	- [categorification](categorification)
+	- 
 # Results
 
 An irreducible representation of _G_ is completely determined by its character.

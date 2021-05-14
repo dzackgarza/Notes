@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b99d26eedc7b9c7e",
+        "id": "7ecfdc613784af75",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/topos.md",
+            "file": "zettelkasten/recurrence relation.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/topos.md",
+                "file": "zettelkasten/recurrence relation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/topos.md"
+                "file": "zettelkasten/recurrence relation.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/topos.md",
+                "file": "zettelkasten/recurrence relation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/topos.md",
+                "file": "zettelkasten/recurrence relation.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,17 +240,17 @@
     "direction": "horizontal",
     "width": 318
   },
-  "active": "b99d26eedc7b9c7e",
+  "active": "7ecfdc613784af75",
   "lastOpenFiles": [
     "zettelkasten/Untitled 4.md",
-    "zettelkasten/unstable homotopy groups of spheres.md",
-    "zettelkasten/stable homotopy groups of spheres.md",
-    "zettelkasten/Equivariant cohomology.md",
-    "zettelkasten/K-Theory.md",
-    "zettelkasten/2021-04-26_Why_study_K_theory.md",
-    "zettelkasten/Quillen K theory.md",
-    "zettelkasten/category theory.md",
-    "zettelkasten/simplicial set.md",
-    "zettelkasten/basic topics in stable homotopy theory.md"
+    "zettelkasten/gauge theory.md",
+    "zettelkasten/Knots.md",
+    "zettelkasten/knot floer homology.md",
+    "zettelkasten/representation theory.md",
+    "zettelkasten/moduli space.md",
+    "zettelkasten/coarse moduli space.md",
+    "zettelkasten/moduli stack of Higgs bundles.md",
+    "zettelkasten/scheme.md",
+    "zettelkasten/algebraic number theory.md"
   ]
 }

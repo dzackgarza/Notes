@@ -4,6 +4,10 @@ aliases: ["schemes"]
 
 Tags: #algebraicgeometry 
 
+# References
+
+- Geometry of Schemes, Eisenbud and Harris
+- Galois groups and Fundamental Groups, by Szamuely.
 
 # Definitions
 See [variety](variety.md)
