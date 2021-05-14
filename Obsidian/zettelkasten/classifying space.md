@@ -21,11 +21,11 @@ Tags: #homotopy
 
 
 **Definition:** 
-Given a topological group $G$, a **classifying space**, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
+Given $G\in \Top\Grp$, a **classifying space** for $G$, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
 $$
 G \to EG \mapsvia{\pi} \B G
 $$
-making $\B G$ a quotient of the contractible space $EG$ by a free $G\dash$ action. We shall refer to this as **the classifying bundle**.
+making $\B G$ a quotient of the contractible space $EG$ by a free $G\dash$ action, so $\B G \cong EG/G$. Call this the **the classifying bundle**.
 
 Any other [principal](principal%20bundle.md) $G\dash$ bundle over a space $X$ is isomorphic to a [pullback](pullback.md) of the classifying bundle along a map $X \to \B G$.
 
@@ -45,15 +45,13 @@ $$
 \GL(n, \RR) \to V_n(\RR^\infty) \to \Gr(n, \RR)
 $$
 
-# More Reading
+# Notes
 
-- Let $G\in\Top\Grp$, and denote $\B G$ the classifying space of $G$. It is the quotient of some contractible space $EG$ by a free action of $G$, so we have something that looks like $G \to EG \to \B G$ and $\B G = EG/G$.
+- It is useful to think of $\B G$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a copy of $G$.
 - For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
 	- Follows from contractibility of $EG$ ?
 - $\Loop \B X \homotopic X$?
 
-
-- It is useful to think of $BG$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a copy of $G$.
 
 ## Constructions
 
@@ -66,8 +64,6 @@ $$
 
 
 # Further Reading
-
-Connected covers can kill higher homotopy?
 
 - Any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) can be realized as a [classifying space](classifying%20space.md).
 

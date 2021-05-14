@@ -1,1 +1,1 @@
-[sheaves](sheaf.md) of sets on the [site](site) of [profinite sets](profinite%20set.md) sets, with finite families of jointly surjective maps as covers.
+- [Sheaves](sheaf.md) of sets on the [site](site) of [profinite sets](profinite%20set.md) sets, with finite families of jointly surjective maps as covers.

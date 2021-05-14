@@ -1,1 +1,2 @@
- Equivalently: spaces, [infinity groupoids](infinity%20groupoids), or [anima](anima).
+ 
+ - Equivalently: spaces, [infinity groupoids](infinity%20groupoids), or [anima](anima).

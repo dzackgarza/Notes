@@ -2,12 +2,13 @@
 aliases: ["moduli space", "moduli", "moduli problem", "moduli functor", "moduli stack"]
 ---
 
+# References
+
 Tags: #algebraicgeometry 
 
-Prototypical example of a moduli space: the [Grassmannian](Grassmannian.md)  $\Gr_\CC(n, k)$.
+> Reference: https://arxiv.org/pdf/1708.08124.pdf
 
-Apparently a [fundamental class](fundamental%20class) exists for closed subvarieties? Maybe just closed subvarieties of a moduli space.
-
+# Topics
 - [fine moduli space](fine%20moduli%20space)
 - [coarse moduli space](coarse%20moduli%20space)
 - [Quot schemes](Quot%20schemes)
@@ -16,14 +17,6 @@ Apparently a [fundamental class](fundamental%20class) exists for closed subvarie
 	- [moduli stack of Higgs bundles](moduli%20stack%20of%20Higgs%20bundles.md)
 	- [Teichmüller space](../moduli%20stack%20of%20elliptic%20curves.md)
 	- [A_g](../moduli%20stack%20of%20abelian%20varieties.md)
-
-# Notes
-
-> Reference: https://arxiv.org/pdf/1708.08124.pdf
-
-One can say a great deal about the moduli space purely in terms of the moduli functor without even knowing the moduli space exists 
-	- For example, the [[tangent space]] can be computed by evaluating the moduli functor on the spectrum of the ring of [dual numbers](dual%20numbers). $\spec k\dualnumbers$
-
 - Projective moduli space
 - [coarse moduli space](coarse%20moduli%20space.md)
 - [fine moduli space](fine%20moduli%20space): ?
@@ -34,3 +27,12 @@ One can say a great deal about the moduli space purely in terms of the moduli fu
 - Tangent space to a functor
 - Cotangent complex
 - [[Algebraic spaces]]
+
+# Notes
+- One can say a great deal about the moduli space purely in terms of the moduli functor without even knowing the moduli space exists 
+	- For example, the [[tangent space]] can be computed by evaluating the moduli functor on the spectrum of the ring of [dual numbers](dual%20numbers). $\spec k\dualnumbers$
+
+- Prototypical example of a moduli space: the [Grassmannian](Grassmannian.md)  $\Gr_\CC(n, k)$.
+- Common example: the [Hilbert scheme](Hilbert%20scheme).
+- Apparently a [fundamental class](fundamental%20class) exists for closed subvarieties? 
+Maybe just closed subvarieties of a moduli space?
