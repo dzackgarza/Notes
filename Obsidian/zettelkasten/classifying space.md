@@ -64,15 +64,13 @@ It is useful to think of $BG$ as a space whose points are copies of $G$, so the 
 There is a standard procedure in homotopy theory for constructing a classifying space for every group. One starts by constructing a 2-complex with the given fundamental group, and then one inductively attaches higher dimensional cells to kill all higher homotopy groups. Each element $c\in \pi_n(X_{n−1})$ is represented by some continuous map $\gamma_c:S^n\to X_{n−1}$ with image in the $n\dash$-skeleton. Let $X_n$ be obtained from $X_{n−1}$ by attaching an $(n+1)\dash$cell along $\gamma_c$, for each $c\in π_n(X_{n−1})$.
 
 
+- You can realize any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) as a [classifying space](classifying%20space.md).
 
 
 # Further Reading
 
-Characteristic classes are elements of $H^*(BG)$, can be used to define characteristic classes for bundles.
-
 Connected covers can kill higher homotopy?
 
-You can realize any Eilenberg-MacLane space as a classifying space.
 
 Claim: $\pi_{i+k}B^kG = \pi_i G$.
 
@@ -81,10 +79,11 @@ Proof: If $G$ is a topological group, there is a universal principal $G\dash$bun
 Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
 Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
 
-It's possible to take classifying spaces of [stacks](stack.md). E.g. there is a stack that classifies [principal bundles](principal%20bundles) *with [connections](connection.md)*, but it has issues: 
-	- It is not a [[presentable stack]], i.e. , so an associated sheaf is not representable.
+- One can take classifying spaces of [stacks](stack.md). 
+	- There is a stack that classifies [principal bundles](principal%20bundles) *with [connections](connection.md)*, but it has issues: 
+	- It is not a [[presentable stack]], i.e. , so an associated [sheaf](sheaf.md) is not [representable](representable).
 
-$EG$ can be constructed as 
+- $EG$ can be constructed as 
 $$
 EG \cong \bigcup_n G \ast G \ast \cdots \ast G
 ,$$ 
