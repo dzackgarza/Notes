@@ -1,1 +1,2 @@
-- The recurrence: $F(n+1) = F(n) + F(n-1)$.
+- The recurrence: $F(n+1) = F(n) + F(n-1)$ where $F(0) = F(1) = 1$.
+- Generating function: $1 \over 1-x-x^2$.
