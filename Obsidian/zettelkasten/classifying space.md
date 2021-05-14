@@ -64,7 +64,7 @@ It is useful to think of $BG$ as a space whose points are copies of $G$, so the 
 There is a standard procedure in homotopy theory for constructing a classifying space for every group. One starts by constructing a 2-complex with the given fundamental group, and then one inductively attaches higher dimensional cells to kill all higher homotopy groups. Each element $c\in \pi_n(X_{n−1})$ is represented by some continuous map $\gamma_c:S^n\to X_{n−1}$ with image in the $n\dash$-skeleton. Let $X_n$ be obtained from $X_{n−1}$ by attaching an $(n+1)\dash$cell along $\gamma_c$, for each $c\in π_n(X_{n−1})$.
 
 
-- You can realize any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) as a [classifying space](classifying%20space.md).
+- Any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) can be realized as a [classifying space](classifying%20space.md).
 
 
 # Further Reading
@@ -72,9 +72,10 @@ There is a standard procedure in homotopy theory for constructing a classifying 
 Connected covers can kill higher homotopy?
 
 
-Claim: $\pi_{i+k}B^kG = \pi_i G$.
-
-Proof: If $G$ is a topological group, there is a universal principal $G\dash$bundle $EG \to BG$ which induces a LES in homotopy. Since $EG$ is contractible, $\pi_i EG = \pi_{i+1}EG = 0$, so $\pi_{i+1}BG \cong \pi_i G$. When $G$ is an $E_2$ space, $BG$ is a topological group, and so $\pi_{i+2}(B^2G) = \pi_{i+2}(B(BG)) = \pi_{i+1}(BG) = \pi_i(G)$ and we conclude the result.
+- $\pi_{i+k}\B^k G = \pi_i G$.
+	- Proof: If $G$ is a topological group, there is a universal principal $G\dash$bundle $EG \to BG$ which induces a LES in homotopy. 
+	- Since $EG$ is contractible, $\pi_i EG = \pi_{i+1}EG = 0$, so $\pi_{i+1}BG \cong \pi_i G$. 
+	- When $G$ is an $E_2$ space, $BG$ is a topological group, and so $$\pi_{i+2}(B^2G) = \pi_{i+2}(B(BG)) = \pi_{i+1}(BG) = \pi_i(G)$$.
 
 Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
 Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
