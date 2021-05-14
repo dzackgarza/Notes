@@ -1,3 +1,9 @@
+---
+aliases: ["CY"]
+---
+
+Topics: [Algebraic Geometry](Subjects/Algebraic%20Geometry.md) | [Physics](Physics.md) | [Complex Algebraic Geometry](Complex%20Algebraic%20Geometry)
+
 - Definition: ?
 
 - Another from [Berger's classification](Holonomy%20Classification.md), special case of [Kähler Manifolds](Kähler%20Manifold)
@@ -15,7 +21,7 @@
 
   - Yau, Fields Medal 1982: There are [Ricci flat](Ricci%20curvature.md) but non-flat (nontrivial holonomy) projective complex manifolds of dimensions $\geq 2$.
 
-- As varieties: the [Canonical bundle](Canonical%20bundle) $\Lambda^n T\dual V$ is trivial
+- As varieties: the [canonical bundle](canonical%20bundle.md) $\Lambda^n T\dual V$ is trivial
 
 - Compact classification for $\CC\dash$dimension:
   - Dimension 1: 1 type, all elliptic curves (up to homeomorphism)

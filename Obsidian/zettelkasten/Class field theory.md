@@ -2,6 +2,8 @@
 aliases: ["CFT"]
 ---
 
+Tags: #numbertheory 
+
 # Todos
 
 Brief summary of main statements:

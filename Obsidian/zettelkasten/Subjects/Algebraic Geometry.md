@@ -1,6 +1,9 @@
 ---
-aliases: ["Algebraic geometry basics", "algebraic geometry"]
+aliases: ["Algebraic geometry basics", "algebraic geometry", "AG"]
 ---
+
+Tags: #algebraicgeometry
+
 
 # References
 
@@ -9,42 +12,32 @@ aliases: ["Algebraic geometry basics", "algebraic geometry"]
 - ![Short overview of lectures](../attachments/2013SP_algebra.pdf)
 
 # Topics
-- [[../Variety]]
-	- [[Proper variety]]
-	- [[../algebraic variety]]
-	- [[Projective variety]]
-	- [[Toric variety]]
+- [variety](../variety.md)
 
-- Segre embedding
+- [Segre embedding](Segre%20embedding)
 - Twisted cubic
-- Albanese Embedding
-- Closed embedding
-- Nodal singularity
-- Hirzebruch surface
+- [Albanese embedding](Albanese%20embedding)
+- [../closed embedding](../closed%20embedding.md)
+- Nodal [singularity](singularity)
+- [Hirzebruch surface](Hirzebruch%20surface)
+- [Hard Lefschetz](Hard%20Lefschetz)
+- [Weak Lefschetz](Weak%20Lefschetz)
 
-
-- [[Hard Lefschetz]]
-- [[Weak Lefschetz]]
-
-- [[../sheaf]]
-- [[../scheme]]
-	- [[../quasicoherent sheaf]] over a [[../scheme]]	
-- [[../stack]]
-- [[../orbifold]]
+- [sheaf](../sheaf.md)
+- [scheme](../scheme.md)
+- [stack](../stack.md)
+- [orbifold](../orbifold.md)
 	- Classifying orbifolds
+- [blowup](../blowup.md)
+- [blowdown](blowdown)
 
-- [[../elliptic curve]]
-- [../abelian variety](../abelian%20variety.md)
-- [[../Moduli space]]
-- [[Deformation-obstruction theory]]
-- [[M_g]]
-	- [[Teichmüller space]]
-- [[../A_g]]
+- [elliptic curve](../elliptic%20curve.md)
 
-- [[../blowup]]
-	- [[../exceptional divisor]]
-- [[../Chow ring]]
-- [[Serre duality]]
-- [[Local system]]
-- [../O(D) for D a divisor](../O(D)%20for%20D%20a%20divisor.md)
-- [[Noether normalization]]
+- [blowup](../blowup.md)
+	- [exceptional divisor](../exceptional%20divisor.md)
+- [Chow ring](../Chow%20ring.md)
+- [Serre duality](../Serre%20duality.md)
+- [local system](../local%20system.md)
+- [divisor](../divisor.md)
+- [Noether normalization](Noether%20normalization)
+- [Resolution of singularities](../Resolution%20of%20singularities.md)

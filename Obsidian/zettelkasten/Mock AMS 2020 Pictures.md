@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-Tags: #classification 
+Tags: #nograph
 
 [Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 

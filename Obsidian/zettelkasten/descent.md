@@ -1,0 +1,6 @@
+- [[Etale descent]]: ?
+- [[Galois descent]]: ?
+- Some connection to Neron models, see Bosch et al
+- [[descent data]]
+- [etale cohomology](etale%20cohomology)
+- [effective descent](effective%20descent)

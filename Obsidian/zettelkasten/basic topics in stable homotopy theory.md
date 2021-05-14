@@ -1,4 +1,5 @@
 # Topics
+Tags: #homotopy 
 
 - [[Mapping cylinder]]
 - [[Mapping cone]]
@@ -11,7 +12,7 @@
 	- [[H-space]]
 - [[Path space]]
 - [[Smash product]]
-- [[Spectra]]
+- [[spectra]]
 	- [[Brown Representability]]
 	- [[Orthogonal Spectra]]
 	- [[Symmetric Spectra]]
@@ -19,14 +20,10 @@
 	- [[Thom spectrum]]
 - [[Model category]]
 	- [Quillen equivalence](Quillen%20equivalence)
-	- Cofibrant generation
+	- [Cofibrant object](Cofibrant%20object)
 	- [[Cofibrant generation]]
 	- [[Weak equivalence]]
-	- [[Enriched category]]
-	- [[Tensored Category]]
-	- [[Day convolution]]
-- [Homotopy colimit](Homotopy%20colimit)
-	- [colimits](colimits)
+	- [Categorical constructions in homotopy theory](Categorical%20constructions%20in%20homotopy%20theory.md)
 - [[Obstruction theory (homotopy)]]
 - [[Cohomology operations]]
 	- [[Massey product]]

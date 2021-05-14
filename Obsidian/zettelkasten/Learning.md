@@ -1,3 +1,6 @@
+
+Tags: #nograph 
+
 # Review
 
 - [Qual syllabus: algebraic topology, Riemannian geometry, complex analysis](https://etale.site/qual-syllabus.pdf) #todo 
@@ -21,7 +24,7 @@ See [schemes](scheme.md)
 - [https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
 
 ## Stacks
-See [stacks](Stacks.md)
+See [stacks](stack.md)
 
 - [Seminar notes on stacks](https://etale.site/livetex/stax.pdf)
 
@@ -89,7 +92,7 @@ Resources
 ## Abelian Varieties
 
 - [http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
-- [Abelian Varieties ac30f83986fe4dbc9a2c2f14b036550a](Learning/Abelian%20Varieties%20ac30f83986fe4dbc9a2c2f14b036550a.md)
+- [Notes from Haiyang](moduli%20stack%20of%20abelian%20varieties.md#^7cc3c7)
 
 # Algebraic Topology
 

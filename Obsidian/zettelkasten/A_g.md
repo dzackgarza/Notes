@@ -1,1 +1,1 @@
-- Polarization of an [[abelian variety]]
+

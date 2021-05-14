@@ -1,0 +1,21 @@
+---
+aliases: ["deformation theory"]
+---
+
+- [../moduli stack of abelian varieties](../moduli%20stack%20of%20abelian%20varieties.md)
+	- [category fibered in groupoids](category%20fibered%20in%20groupoids.md)
+- [moduli space](moduli%20space.md)
+- [moduli functor](moduli%20space.md)
+- [scheme](scheme.md)
+- [Schlessinger's criterion](Schlessinger's%20criterion)
+- [deformation-obstruction theory](deformation-obstruction%20theory)
+- [moduli](moduli%20space.md)
+- [Universal family](Universal%20family)
+- [pro-representability](pro-representability)
+- [local to global spectral sequence](local%20to%20global%20spectral%20sequence)
+- [flat](flat)
+- [Kähler differentials](Kähler%20differentials)
+- [cotangent complex](cotangent%20complex.md)
+- [complete intersection](complete%20intersection)
+- [nilpotent thickening](nilpotent%20thickening)
+- [formal smoothness](formal%20smoothness)

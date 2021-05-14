@@ -11,18 +11,21 @@ References: [topological Hochschild homology](topological%20Hochschild%20homolog
 
 > Reference: [Chapter 9 of Weibel](file:///home/zack/Dropbox/Library/Charles A. Weibel/An Introduction to Homological Algebra (489)/An Introduction to Homological Algebra - Charles A. Weibel.pdf#page=312)
 
-The Hochschild homology of an $R\dash R\dash$bimodule reflects some ring-theoretic stuff. For instance, $H_1(R,R)$ of a $k\dash$algebra $R$ is the module of differentials $\Omega_R/k$. If $Q\subseteq R$ then there is an algebraic decomposition of this homology that is analogous to the [Hodge decomposition](Hodge%20decomposition) in complex manifold theory.
+Let $A \in \Alg_{/R}$ such that $A$ is projective as an $R\dash$module and $M\in \bimod{A}{A}$. Then define the **Hochschild complex** as
+$$
+C_n(A, M) := M \tensor A^{\tensor n}
+$$
 
-Taking the above example further if $k$ is a ring and $X$ a [simplicial set](simplicial%20set.md), the [cyclic homology](cyclic%20homology) (Hochschild homology taking into account a cyclic action on the corresponding simplicial set) of the simplicial module $k[X]$ is the same as the $S_1\dash$equivariant homology of the geometric realization of $X$ with coefficients in $k$.
+The Hochschild homology of an $R\dash R\dash$bimodule reflects some ring-theoretic stuff. 
 
-[K-Theory](K-Theory.md) is like homology on rings. Moreover, algebraic topology is clearly interested in [vector bundles](vector%20bundles); on a nice space $X$ the category of rank $n$ $\RR\dash$vector bundles on $X$ is equivalent to the category of rank $n$ finitely generated projective modules over the continuous functions $C(X,\RR)$. The group $K_0(C(X))$ is the Grothendieck group of the isomorphism classes of finitely generated projectives.
+- For $R\in\Alg_{/k}$, $H_1(R,R) = \Omega_R/k$, the module of differentials . If $Q\subseteq R$ then there is an algebraic decomposition of this homology analogous to the [Hodge decomposition](Hodge%20decomposition) of complex manifolds.
 
-We look first at vector bundles over a space $X$. A vector bundle assigns a vector space to every point of $X$. This is done in a continuous fashion. The $k\dash$dimensional vector bundles over $X$ are equivalent to the homotopy classes of maps from $X$ to a fixed space $\B \O_k, [X, \B O_k]$, [Ste51]. So, as is the case with many geometric problems, the classification of isomorphism classes of $k\dash$dimensional vector bundles is reduced to the computation of homotopy classes of maps. Furthermore, it is clear that studying $\B \O_k$ is very useful for this problem. It comes about by a standard construction which builds a [classifying space](classifying%20space.md), $\B G$, for any group $G$.
+- If $k\in \Ring$ and $X\in \sSet$ a [simplicial set](simplicial%20set.md), the [cyclic homology](cyclic%20homology), which is Hochschild homology taking into account a cyclic action on $X$) of the simplicial $k\dash$module $k[X]\in\mods{k}^{\sSet}$ is the same as the $S_1\dash$[equivariant homology](equivariant%20homology) of the [geometric realization](geometric%20realization.md)  $\abs{X}$ with coefficients in $k$.
 
 # Defining THH
 
 - Take $A \in \cat{C}$, where $\mathcal C$ is a "nice" [monoidal category](Monoidal%20category.md), and $A$ is an algebra object in it. We'll call the monoidal operation $\tensor$.
-- We'll make a simplicial object $THH_\wait(A)$:
+- We'll make a simplicial object $\complex{THH}(A)$:
   - $THH_n(A) = A^{\tensor n+1}$. If it's to be simplicial, need to specify the face/degeneracy maps:
   - Face maps: collapse by cyclic multiplication
   - Degeneracy maps: use the unit of $A$, can replace any tensor symbol with it. Have a unit map that goes from the unit to $A$, so somehow this gets you "up" one level (?)

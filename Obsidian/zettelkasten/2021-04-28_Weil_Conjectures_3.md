@@ -8,8 +8,10 @@ tags:
 [Zeta function](Zeta%20function.md)
 [Number theory](Number%20theory.md)
 [Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
+[Weil Conjectures](Subjects/Weil%20Conjectures.md)
+[GRH](GRH)
 
-About [algebraic variety](algebraic%20variety.md): defined by polynomial equations,
+About [variety](variety.md): defined by polynomial equations,
 Hypersurfaces are defined by one equation
 Let $X/K: f(x_0, \cdots, x_{n+1}) = 0, \vector x \in \PP_k^{n+2}$, so the variety will have dimension.
 
@@ -34,7 +36,7 @@ We now obtain a sequence of numbers:
 Can we determine them completely (without a brute-force count)?
 Can we say anything about the asymptotics?
 
-The simplest case: $X = \AA^n$, we have $\AA^n(\FF_{p^r}) = p^{rn}$, so in generael $X(\FF_{p^r}) = p^{rn} - \text{ error terms }$.
+The simplest case: $X = \AA^n$, we have $\AA^n(\FF_{p^r}) = p^{rn}$, so in general $X(\FF_{p^r}) = p^{rn} - \text{ error terms }$.
 
 Theorem (Weil)
 : If $n=1$, so there is 1 defining equation, with $X$ smooth and connected, then $\# X(\FF_{p^r}) = p^r + O(p^{r/2})$.
@@ -75,9 +77,10 @@ Z(X, t) = {(1 - \alpha_1 t) \cdots(1 - \alpha_j t \over (1-t) (1-pt) )}
 - (Functional equation) $Z(X, 1/p^nt) = \pm t^\chi p^{c/2} Z(X, t)$ where $c = \sum_{i=0}^{2n} (-1)^\chi \deg P_i$. Note that $\chi$ will be the Euler-Poincare characteristic.
 - If $X$ comes by reduction mod $p$ from some $X'/\QQ$, then $\deg P_i = \beta_i = \dim_\QQ H^i(X(\CC); \QQ)$.
 
-Note that the genus is half of the first Betti number.
+Note that the genus is half of the first [Betti number](Betti%20number).
+See also [Poincaré polynomial](Poincaré%20polynomial)
 
-Why are they called the RH for varieties over finite fields?
+Why are they called the RH for varieties over [finite fields](finite%20fields)?
 Identify $\ZZ$ as the ring of functions over a curve $\spec \ZZ$.
 We think of $x\in \spec \ZZ$ as a map $\ev_x: \ZZ \to \FF_p$ of rings, so points correspond to evaluating at the point.
 

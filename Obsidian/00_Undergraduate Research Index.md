@@ -3,7 +3,7 @@ date: 2021-04-27
 ---
 
 # Undergraduate Research
-- [Homotopy groups of spheres: "Gotta catch 'em all" outline'](zettelkasten/2021-04-26_Homotopy_Outline_Project_UG.md)
+- [Homotopy groups of spheres: "Gotta catch 'em all" outline'](zettelkasten/basic%20tools%20in%20homotopy%20of%20spaces.md)
 
 ## Meetings
 - [Meeting Thoughts 01-10-18](zettelkasten/2021-04-26_Undergrad_Research_01-10-18.md)
@@ -32,7 +32,7 @@ date: 2021-04-27
 - [Representing Eilenberg-Maclane spaces geometrically](zettelkasten/2021-04-25_representing_KGn_geometrically.md)
 - [Principal Bundles](zettelkasten/2021-04-26_Principal_Bundles.md)
 - [Using the Path-Loop fibration](zettelkasten/2021-04-26_Path_Loop_Fibration.md)
-- [Moduli Spaces](zettelkasten/moduli%20spaces.md)
+- [Moduli Spaces](zettelkasten/moduli%20space.md)
 
 
 ## Classifying Spaces, Postnikov Towers, Obstruction Theory
@@ -55,7 +55,7 @@ date: 2021-04-27
 - [Basics of $\infty\dash$category theory](zettelkasten/2021-04-26_Introduction_to_Infty_Categories.md)
 
 ## Algebraic K-Theory and THH
-- [Why study K-theory?](zettelkasten/2021-04-26_Why_study_K_theory.md)
+- [Why study K-theory?](zettelkasten/Why%20study%20K%20theory.md)
 - [K-theory for schemes](zettelkasten/2021-04-26_Algebraic_K_theory_for_schemes.md)
 - [Why study Hochschild Homology?](zettelkasten/Hochschild%20homology.md)
 

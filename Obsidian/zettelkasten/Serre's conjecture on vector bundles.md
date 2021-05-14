@@ -1,0 +1,1 @@
+ Statement: every finitely generated [projective module](projective%20module) over a [polynomial ring](polynomial%20ring) is [free](free);

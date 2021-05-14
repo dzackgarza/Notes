@@ -21,3 +21,4 @@ aliases: ["equivariant stable homotopy"]
 - [representation ring](representation%20ring)
 - [coend](coend)
 - [Factorization homology](Factorization%20homology)
+- [lax functor](lax%20functor)

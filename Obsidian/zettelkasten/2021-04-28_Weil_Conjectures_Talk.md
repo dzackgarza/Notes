@@ -15,6 +15,7 @@ fontsize: 9pt
 
 [../Subjects/Weil Conjectures](../Subjects/Weil%20Conjectures.md)
 
+Tags: #talk #numbertheory #algebraic_topology 
 
 ## A Quick Note
 
@@ -69,7 +70,7 @@ Definition (Projective Algebraic Varieties)
 
 ## Why Generating Functions?
 
-For *ordinary* generating functions, the coefficients are related to the real-analytic properties of $F$:
+For an *ordinary* [generating function](generating%20function), the coefficients are related to the real-analytic properties of $F$:
 \begin{align*}
 [z^n] \cdot F(z) = [z^n]\cdot T_{F, z=0}(z) = \frac{1}{n!} \qty{\dd{}{z}}^{n} F(z) \Bigg\rvert_{z = 0} = N_n
 \end{align*}
@@ -393,7 +394,7 @@ Roughly speaking, we can apply $\Log$ (a conformal map) to send the $\alpha_{j, 
 \includegraphics[width = 1.0\textwidth]{figures/image_2020-04-23-02-26-27.png} 
 \end{figure}
 
-In particular, the zeros of $L_1$ have real part $\frac 1 2$ (analogy: classical Riemann hypothesis).
+In particular, the zeros of $L_1$ have real part $\frac 1 2$ (analogy: classical [RH](RH)).
 
 ## Precise Relation
 

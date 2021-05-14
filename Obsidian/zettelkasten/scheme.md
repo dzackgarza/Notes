@@ -2,7 +2,11 @@
 aliases: ["schemes"]
 ---
 
+Tags: #algebraicgeometry 
+
+
 # Definitions
+See [variety](variety.md)
 
 - A **scheme** $X\in \Sch$ is a [locally ringed space](locally%20ringed%20space) $X \in \Ringedspace$ with an open cover $\mathcal{U} \covers X$ with each $U_i \in \Sch(\Aff)$ an [affine scheme](affine%20scheme.md).
 - [smooth scheme](smooth%20scheme)
@@ -15,6 +19,10 @@ aliases: ["schemes"]
 - Closed points: ?
 - Regular: 
 - [geometric fiber](geometric%20fiber)
+- [group scheme](group%20scheme.md)
+- [geometrically connected scheme](geometrically%20connected%20scheme)
+- [quasi-affine](quasi-affine)
+- [locally quasi-finite](locally%20quasi-finite)
 
 # Results
 

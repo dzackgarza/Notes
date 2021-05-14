@@ -2,7 +2,7 @@
 date: 2019-07-01
 ---
 
-Tags: #recommendations #reading
+Tags: #recommendations #reading #nograph 
 
 - Lee, Smooth Manifolds
 
@@ -20,10 +20,13 @@ Tags: #recommendations #reading
 - Milnor, Morse Theory
 
 - Silverman, The Arithmetic of Elliptic Curves
+	[elliptic curve](elliptic%20curve.md)
 
 - Hartshorne, Algebraic Geometry
+	[Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 
 - Weil, Basic Number Theory
+	[Number theory](Number%20theory.md)
 
 - Arnold, Methods in Classical Mechanics
 
@@ -36,11 +39,13 @@ Tags: #recommendations #reading
 - Peter J. Hilton Urs Stammbach, A Course in Homological Algebra (via Dan Nakano)
 
 - Pramod Achar, Unreleased [Geometric Representation Theory](geometric%20representation%20theory) Text
+	[geometric representation theory](geometric%20representation%20theory)
 
 - Eisenbud and Harris, [The Geometry of Schemes](https://www.maths.ed.ac.uk/~v1ranick/papers/eisenbudharris.pdf)
 	[schemes](scheme.md)
 
 - Mumford, The Red Book of Varieties and Schemes
+	[variety](variety.md) [scheme](scheme.md)
 
 - Osvath and Szabo, [Grid Homology for Knots and Links](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf)
 
@@ -61,6 +66,18 @@ Tags: #recommendations #reading
 - Voison, [Hodge theory](Hodge%20theory.md) and [Complex Algebraic Geometry](Complex%20Algebraic%20Geometry) I
 
 - Carlson, [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
+
+
+- [Seiberg-Witten invariants](Seiberg-Witten%20theory.md): 
+	- *The Seiberg-Witten Equations and Applications to the Topology of Smooth Four-Manifolds* by Morgan. 
+	- Some lecture notes: <http://wwwf.imperial.ac.uk/~ssivek/papers/regensburg-notes.pdf>
+- [Instanton Floer homology](Instanton%20Floer%20homology):
+	- There are many references here: <http://people.brandeis.edu/~ruberman/math221bs16/math121a06.html> 
+	- Example: <http://people.brandeis.edu/~ruberman/math221bs16/mrowka_ClassNotes.pdf>
+- [Lagrangian Floer homology](Lagrangian%20Floer%20homology) and [Fukaya categories](Fukaya%20category.md):  
+	- Start from here: <https://arxiv.org/pdf/1301.7056.pdf>
+-  [Casson invariants](Casson%20invariants):
+	Saveliev’s book: <https://www.degruyter.com/view/title/121170/>
 
 # Light / Expository
 

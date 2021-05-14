@@ -3,6 +3,8 @@ date: 2021-04-26
 aliases: ["Chow group", "Chow groups", "Chow ring", "Chow rings"]
 ---
 
+Tags: #algebraicgeometry 
+
 Topics: [Chow ring](Chow%20ring.md) | [Chow group](Chow%20group)
 
 # Paper on Chow Rings
@@ -17,4 +19,4 @@ Chow rings have not been computed for $\PGL_n$. Need to know about [Chern class]
 
 $A_*$ known for all $O_n$ and $SO_n$ for $n$ odd in 80s, general result for $SO_n$ 2004. $PGL_n$ case is much harder. Understood for $n=2$, since $\PGL_2 \cong SO_3$. Other bits that have been computed: $H^*(\B\PGL_3, \ZZ/3), H^*(\B\PGL_n, \ZZ_2)$ for $n = 2 \mod 4$ in 70s/80s, incomplete results for $H^*(\B\PGL_p, \ZZ_p)$ in 2003.
 
-Term [equivariant](equivariant) pops up a lot, [symplectic form](symplectic%20form), [schemes](scheme.md), [stack](Stacks.md)
+Term [equivariant](equivariant) pops up a lot, [symplectic form](symplectic%20form), [schemes](scheme.md), [stack](stack.md)

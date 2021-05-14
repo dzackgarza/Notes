@@ -1,4 +1,4 @@
-[Translation Surfaces Background Study](zettelkasten/Projects/Tilings/Translation%20Surfaces%20Background%20Study.md)
+[Translation Surfaces Background Study](../Projects/Tilings/translation%20surface.md)
 
 [2020-01-16 Translation Surfaces](zettelkasten/Projects/Tilings/sections/2020-01-16%20Translation%20Surfaces.md)
 

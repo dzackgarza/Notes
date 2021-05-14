@@ -1,10 +1,13 @@
 Tags: #todo #floer 
 
-# Reference Material
+# References
 
 [Paper: Sarkar-Wang, An algorithm for computing some Heegaard-Floer homologies](https://arxiv.org/pdf/math/0607777.pdf)
 
 [Annals version of the paper](https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n2-p11-s.pdf)
+
+Links:
+[Floer homology](Floer%20homology)
 
 # Intro/Overview
 

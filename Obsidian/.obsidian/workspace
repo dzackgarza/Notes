@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "34dec5e47889cb3f",
+        "id": "b99d26eedc7b9c7e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/coarse moduli space.md",
+            "file": "zettelkasten/topos.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "localization",
+                "query": "equivariant",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/coarse moduli space.md",
+                "file": "zettelkasten/topos.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/coarse moduli space.md"
+                "file": "zettelkasten/topos.md"
               }
             }
           },
@@ -140,7 +140,6 @@
       {
         "id": "1c0cc6ad106c7480",
         "type": "tabs",
-        "dimension": 20.345879959308242,
         "children": [
           {
             "id": "72872f9be5fb7f95",
@@ -148,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/coarse moduli space.md",
+                "file": "zettelkasten/topos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,79 +175,82 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/coarse moduli space.md",
+                "file": "zettelkasten/topos.md",
                 "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
+                  "collapse-filter": false,
+                  "search": "-file:subject -file:2021 -file:index -tag:#nograph",
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
                   "showTags": false,
                   "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
+                  "hideUnresolved": true,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#algebraicgeometry",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4366079
+                      }
+                    },
+                    {
+                      "query": "tag:#numbertheory",
+                      "color": {
+                        "a": 1,
+                        "rgb": 65310
+                      }
+                    },
+                    {
+                      "query": "tag:talk",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16711680
+                      }
+                    },
+                    {
+                      "query": "tag:#homotopy",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14078556
+                      }
+                    }
+                  ],
+                  "collapse-display": false,
                   "showArrow": false,
-                  "textFadeMultiplier": 0,
+                  "textFadeMultiplier": -3,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.40844332494219937,
-                  "close": false
+                  "collapse-forces": false,
+                  "centerStrength": 0.482352941176471,
+                  "repelStrength": 20,
+                  "linkStrength": 0.852941176470588,
+                  "linkDistance": 500,
+                  "scale": 0.2854858083337544,
+                  "close": true
                 }
               }
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "e0f41909d73b2a44",
-        "type": "tabs",
-        "dimension": 79.65412004069175,
-        "children": [
-          {
-            "id": "6dbf9bbe5827b75c",
-            "type": "leaf",
-            "state": {
-              "type": "dangling-links",
-              "state": {}
-            }
-          },
-          {
-            "id": "cddc9e8fb5f63099",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "zettelkasten/coarse moduli space.md"
-              }
-            }
-          }
-        ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 414
+    "width": 318
   },
-  "active": "34dec5e47889cb3f",
+  "active": "b99d26eedc7b9c7e",
   "lastOpenFiles": [
-    "zettelkasten/coarse moduli space.md",
-    "zettelkasten/moduli stack of elliptic curves.md",
-    "zettelkasten/elliptic curve.md",
-    "zettelkasten/moduli spaces.md",
-    "zettelkasten/smooth scheme.md",
-    "zettelkasten/smooth structure.md",
-    "zettelkasten/scheme.md",
-    "zettelkasten/algebraic curve.md",
-    "zettelkasten/Grassmannian.md",
-    "zettelkasten/affine Grassmannian.md"
+    "zettelkasten/Untitled 4.md",
+    "zettelkasten/unstable homotopy groups of spheres.md",
+    "zettelkasten/stable homotopy groups of spheres.md",
+    "zettelkasten/Equivariant cohomology.md",
+    "zettelkasten/K-Theory.md",
+    "zettelkasten/2021-04-26_Why_study_K_theory.md",
+    "zettelkasten/Quillen K theory.md",
+    "zettelkasten/category theory.md",
+    "zettelkasten/simplicial set.md",
+    "zettelkasten/basic topics in stable homotopy theory.md"
   ]
 }

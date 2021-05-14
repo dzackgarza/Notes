@@ -1,0 +1,3 @@
+---
+aliases: ["Riemann hypothesis"]
+---

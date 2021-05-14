@@ -2,7 +2,9 @@
 aliases: ["Elliptic curves"]
 ---
 
-- [supersingular](supersingular) elliptic curves: ?
+Tags: #algebraicgeometry #numbertheory
+
+
 - [complex multiplication](complex%20multiplication.md) (CM)
 - [Hasse bounds](Hasse%20bounds.md)
 - [Weierstrass equation](Weierstrass%20equation)
@@ -16,3 +18,14 @@ aliases: ["Elliptic curves"]
 - [j invariant](j%20invariant)
 - [conductor](conductor)
 - [hyperellptic involution](hyperellptic%20involution)
+- [rational points](rational%20points)
+
+- [supersingular](supersingular) elliptic curves: ?
+
+# Notes
+
+![](attachments/EllipticCurve%20notes1.pdf)
+
+![](attachments/EllipticCurve%20notes2.pdf)
+
+![](attachments/EllipticCurve%20notes3.pdf)

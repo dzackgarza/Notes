@@ -1,5 +1,5 @@
 ---
-aliases: ["symplectic manifold", "symplectic geometry", "symplectic topology"]
+aliases: ["symplectic manifold", "symplectic geometry", "symplectic topology", "symplectic form", "symplectic"]
 ---
 
 References:
@@ -85,3 +85,5 @@ so $\bd M \neq 0$, and thus $M$ can not be closed.
 **Definition (Isotropic):**
 Let $\Lambda$ be the image of an embedded sphere $S^k \to W$.
 Then $\Lambda$ is *isotropic* iff $\restrictionof{\lambda}{\Lambda} = 0$.
+
+Given a [metric](metric.md) $g$ and  symplectic form $\omega$ there is a canonical [almost complex structure](almost%20complex%20structure). Reference: p 68-70 of Cannas da Silva *Lectures on Symplectic Geometry*

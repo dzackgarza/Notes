@@ -3,6 +3,8 @@ date: 2021-04-26
 aliases: ["chromatic homotopy", "chromatic"]
 ---
 
+Tags: #homotopy #numbertheory 
+
 # Topics
 
 - [chromatic homotopy theory](chromatic%20homotopy%20theory.md)
@@ -21,7 +23,9 @@ aliases: ["chromatic homotopy", "chromatic"]
 - [[Kervaire invariant 1]]
 - [TMF](Topological%20modular%20forms.md)
 - [Dieudonne module](Dieudonne%20module)
-
+-[Redshift](Redshift)
+- [K-Theory](K-Theory.md)
+- 
 # Notes
 
 - The chromatic view-point, which studies stable homotopy theory via its relationships to the moduli of [formal groups](Formal%20group.md), and related topics such as topological modular forms, use a sizable amount of (fairly abstract) algebraic geometry. And Lurie's work on [derived algebraic geometry](derived%20algebraic%20geometry.md) was motivated in part by establishing foundations adequate to the task of defining equivariant forms of [TMF](Topological%20modular%20forms.md).

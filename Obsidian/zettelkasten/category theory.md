@@ -4,6 +4,10 @@ tags:
   - Unfiled
 ---
 
+# References
+- Chapter 1 https://mandal.ku.edu/M996QuillenKTheory/0TheKBooK.pdf[]()
+
+Tags:
 #category_theory
 
 
@@ -57,3 +61,11 @@ $$
 - A very powerful example: Poincare Duality
   - The $k$th homology group of an $n$-dimensional manifold  is isomorphic $(n-k)$th cohomology group
   - $H^k(M) \cong H_{n-k}(M)$.
+
+## Objects
+
+- [monoid object](monoid%20object)
+- [group object](group%20object)
+- [vector space object](vector%20space%20object)
+- [ring object](ring%20object)
+- [simplicial object](simplicial%20object)

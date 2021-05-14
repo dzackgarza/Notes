@@ -10,4 +10,4 @@ aliases: ["foliated", "foliation"]
 
 # Results
 
-Leaf spaces of a foliations are examples of [stacks](Stacks.md)
+Leaf spaces of a foliations are examples of [stacks](stack.md)

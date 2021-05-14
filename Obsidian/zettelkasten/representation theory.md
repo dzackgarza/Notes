@@ -14,8 +14,14 @@ See also: [Lie group](Lie%20group) | [Lie algebra](Lie%20algebra) | [algebraic g
 - [characters](characters)
 - [Maschke's theorem](Maschke's%20theorem)
 	- [completely reducible](completely%20reducible)
+- [Schur's Lemma](Schur's%20Lemma)
 - [sign representation](sign%20representation)
 - [permutation representation](permutation%20representation)
+- [Hecke algebra](Hecke%20algebra)
+- [Frobenius reciprocity](Frobenius%20reciprocity)
+- [weight of a representation](weight%20of%20a%20representation)
+- [Verma module](Verma%20module)
+- [Category O](Category%20O)
 
 
 # Results

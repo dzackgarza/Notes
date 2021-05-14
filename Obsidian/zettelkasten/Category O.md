@@ -1,0 +1,1 @@
+Big goal: determine the [characters](characters.md) of all [simple](simple) modules.

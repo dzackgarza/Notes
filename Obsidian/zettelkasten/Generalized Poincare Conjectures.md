@@ -1,5 +1,5 @@
-Links: [[Algebraic Topology]] | [[Homotopy]] | [[Reference]]
-Tags: #talks
+Links: [[Algebraic Topology]] |  [[Reference]]
+Tags: #talks #topology 
 
 <!--![](zettelkasten/figures/HomotopyTalk%20-%20GSTS.pdf)-->
 
@@ -22,8 +22,7 @@ See Algtop homotopy notes.
 # Other Topics
 
 - [[The homotopy hypothesis]]
-- [generalized cohomology theory](../cohomolology%20theory.md)
-- [Stable homotopy](../Stable%20homotopy.md)
+- [generalized cohomology theory](cohomolology%20theories.md)
 - [infty categories](../infty%20categories.md)
 - [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) and [Moore spaces](Moore%20spaces)
 - [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres)

@@ -1,22 +1,23 @@
 ---
+date: 2021-04-26T10:40
 aliases: ["classifying spaces", "BG"]
 ---
 
-- $\B G = K(G, 1)$ when $G$ is discrete.
+Tags: #homotopy 
+
+# Topics
+
 - [classifying stack](classifying%20stack.md)
+- [principal bundle](principal%20bundle.md)
+
+# Notes
+
+- $\B G = K(G, 1)$ when $G$ is discrete.
 
 ![](attachments/Pasted%20image%2020210505015056.png)
 ![](attachments/Pasted%20image%2020210505015233.png)
 
----
-date: 2021-04-26T10:40
----
-
-#classifying_spaces #algebraic_topology
-
-# Classifying Spaces
-
-- [principal bundle](principal%20bundle.md)
+# Definitions
 
 
 **Definition:** Given a topological group $G$, a **classifying space**, denoted $BG$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle

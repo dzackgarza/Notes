@@ -924,10 +924,10 @@ Look at coefficients in the expansion
 .\end{align*}
 
 Recall that $\mathrm{Cov}_d(C_1, \cdots C_S)$ correspond to $S_d$ representations of $\pi_1(T\setminus Z)$, and we can get a presentation 
-$$\pi_1(T\setminus Z) = \generators{\sigma, \gamma, g_i \suchthat [\omega,\gamma] \prod g_i = e}
+$$\pi_1(T\setminus Z) = \gens{\sigma, \gamma, g_i \suchthat [\omega,\gamma] \prod g_i = e}
 .$$
 
-![Image](figures/2020-01-30-14:33.png)\
+![Image](figures/2020-01-30-14:33.png)
 
 > This just comes from doing one full loop around the outside square, which should be equivalent (up to orientation) to going around all 3 punctures.
 
@@ -1001,15 +1001,15 @@ From the paper,
 
 > Note: the partition functions appears!
 
-For any $F\in \Lambda^*$, we set $\generators{F}_q = (q)_\infty \sum_\lambda q^{\abs \lambda} F(\lambda)$ and 
+For any $F\in \Lambda^*$, we set $\gens{F}_q = (q)_\infty \sum_\lambda q^{\abs \lambda} F(\lambda)$ and 
 $$
-\generators{F_1 \mid F_2 \mid \cdots \mid F_S}_q = \sum_{\alpha\in \pi_S} (-1)^{\phi(\alpha) - 1} (\phi(\alpha) - 1)! \prod_{k=1}^{\phi(\alpha)} \generators{\prod_{i\in\alpha_j} F_i}_q
+\gens{F_1 \mid F_2 \mid \cdots \mid F_S}_q = \sum_{\alpha\in \pi_S} (-1)^{\phi(\alpha) - 1} (\phi(\alpha) - 1)! \prod_{k=1}^{\phi(\alpha)} \gens{\prod_{i\in\alpha_j} F_i}_q
 .$$
 
 > This comes from Möbius inversion, and is a form of inclusion-exclusion.
 
 **Proposition:**
-$\mathrm{Cov}'(C_1, \cdots, C_S) = \generators{f_{C_1} \cdots f_{C_S}}_q$ and $\phi(C_1, \cdots, C_S) = \generators{f_{C_1} \mid \cdots \mid f_{C_S}}_q$.
+$\mathrm{Cov}'(C_1, \cdots, C_S) = \gens{f_{C_1} \cdots f_{C_S}}_q$ and $\phi(C_1, \cdots, C_S) = \gens{f_{C_1} \mid \cdots \mid f_{C_S}}_q$.
 
 **Theorem:**
-For all $F\in \Lambda^*$, $\generators{F}_q$ is a quasimodular form, i.e in $\CC[E_2, E_4, E_6]$ where $E_i(q) = \const + \sum \sigma+{i-1} (n) q^n$.
+For all $F\in \Lambda^*$, $\gens{F}_q$ is a quasimodular form, i.e in $\CC[E_2, E_4, E_6]$ where $E_i(q) = \const + \sum \sigma+{i-1} (n) q^n$.

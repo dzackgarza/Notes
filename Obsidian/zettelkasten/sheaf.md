@@ -4,3 +4,4 @@
 - [stalk](stalk)
 - [section of a sheaf](section%20of%20a%20sheaf.md)
 - Reflexive sheaf
+- [quasicoherent sheaf](../quasicoherent%20sheaf.md) over a [scheme](../scheme.md)	

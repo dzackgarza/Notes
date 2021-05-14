@@ -3,7 +3,21 @@ date: 2021-04-26
 aliases: ["vector bundle"]
 ---
 
-# Vector Bundles
+Tags: #homotopy #topology
+
+Topics:
+
+- [bundle](bundle.md)
+- [Chern class](Chern%20class)
+- [Chern character](Chern%20character)
+- [Thom class](Thom%20class)
+- [Thom space](Thom%20space.md)
+- [Thom isomorphism](Thom%20isomorphism)
+- [Thom-Pontryagin construction](Thom-Pontryagin%20construction)
+- [stable framing](stable%20framing.md)
+
+
+# Definitions 
 
 :::{.definition title="Rank of a vector bundle"}
 A **rank $n$ vector bundle** is a [fiber bundle](fiber%20bundle.md) in which the fibers $F$ have the structure of a vector space $k^n$ for some field $k$; the [structure group](Reduction%20of%20structure%20group.md) of such a bundle is a subset of $\GL(n, k)$.
@@ -57,3 +71,26 @@ As in the earlier example involving the [Möbius strip](Möbius%20strip), since 
 
 
 
+
+
+# Classification
+
+-  There is an equivalence of categories between [2021-04-25_vector_bundles_ug](2021-04-25_vector_bundles_ug.md) and modules over continuous functionals:
+$$
+\Bun(\RR, X)_{\rk = n} \mapsvia{\sim} \modsleft{\Top(X, \RR)}^{\fg, \proj}_{\rk = n}
+.$$ 
+See [Swan's theorem](Swan's%20theorem), [projective modules](projective%20modules)
+- A vector bundle continuously assigns a vector space to every point of $X$.  
+- The $k\dash$dimensional vector bundles over $X$ are equivalent to the homotopy classes of maps from $X$ to a fixed space $[X, \B O_k]$. 
+	- Dimension or rank???
+- As with many geometric problems, classification of isomorphism classes of $k\dash$dimensional vector bundles is reduced to the computation of homotopy classes of maps. 
+- Studying $\B\O_k$ is very useful for this probkem, it comes about by a standard construction which builds a [classifying space](classifying%20space.md), $\B G$, for any group $G$.
+
+- Complex rank 1 bundles are classified by $\CP^\infty \homotopic \B \U_1(\CC)  \homotopic K(\ZZ, 2)$.
+- Universal complex vector bundle:
+$\xi_{n}: E_n \rightarrow \B \U_n(\CC)$
+	where $\B \U_n \cong \Gr_n(\CC^\infty)$ is a [Grassmannian](Grassmannian.md).
+	
+	
+Todo: clean up and make precise! #todo 
+Maybe add from [2021-04-25_vector_bundles_ug](2021-04-25_vector_bundles_ug.md)

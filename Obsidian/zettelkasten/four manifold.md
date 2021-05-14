@@ -23,12 +23,14 @@ aliases: ["four manifolds", "4-manifold", "4-manifolds"]
 -   What is a [Hermitian metric](Hermitian%20metric)?
 -   What is the [Hodge star](Hodge%20star)?
 -   What is the [genus formula](genus%20formula)?
--   What is the [blowup](blowup.md)?
--   What is the [exceptional divisor](exceptional%20divisor.md)?
--   What is the [strict transform](strict%20transform)?
+-   What is the [blowup](blowup.md)
+	-   What is the [exceptional divisor](exceptional%20divisor.md)?
+	-   What is the [strict transform](strict%20transform)?
+	-   What is the [blowdown](blowdown.md)
 -   What is a [unimodular lattice](unimodular%20lattice)?
 -   What is the [Steifel-Whitney class](Steifel-Whitney%20class)?
 -   What is the [Pontrayagin class](Pontrayagin%20class)?
 -   What is a [Kähler form](Kähler%20form)?
 -   What is a [spin structure](spin.md)?
 -   What is the [Clifford algebra](Clifford%20algebra)?
+-   What is the [Dirac equation](Dirac%20equation.md)

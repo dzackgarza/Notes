@@ -1,2 +1,2 @@
-Rank of rational points in the Jacobian?
+Rank of [rational points](rational%20point) in the [Jacobian](Jacobian.md)?
 
