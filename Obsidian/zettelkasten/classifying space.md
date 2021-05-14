@@ -63,14 +63,7 @@ It is useful to think of $BG$ as a space whose points are copies of $G$, so the 
 
 There is a standard procedure in homotopy theory for constructing a classifying space for every group. One starts by constructing a 2-complex with the given fundamental group, and then one inductively attaches higher dimensional cells to kill all higher homotopy groups. Each element $c\in \pi_n(X_{n−1})$ is represented by some continuous map $\gamma_c:S^n\to X_{n−1}$ with image in the $n\dash$-skeleton. Let $X_n$ be obtained from $X_{n−1}$ by attaching an $(n+1)\dash$cell along $\gamma_c$, for each $c\in π_n(X_{n−1})$.
 
-Conjecture: $B(G \cross H) = BG \cross BH$
-Proof outline: $EG \cross EH$ is contractible, and $G \cross H$ acts freely on it with quotient equal to the RHS.
 
-Conjecture: $B(G \ast H) = BG \vee BH$
-
-Unknown: $B(G \tensor H) = BG \tensor BH$
-
-Unknown: $B(G \semidirect_\phi H) = ?$
 
 
 # Further Reading
@@ -93,3 +86,11 @@ It's possible to take classifying spaces of stacks. E.g. there is a stack that c
 Stable homotopy of $BG$: same sort of techniques as in $S^n$, break into components.
 
 $EG$ can be constructed as $\bigcup_n G \ast G \ast \cdots \ast G$, where $\ast$ is join of two spaces: the suspension of the smash product. For example, $G = \ZZ_2$ implies $EG = \bigcup_n \ZZ_2 \ast \cdots = \bigcup_n S^{n-1} = S^\infty$.
+
+# Unknown?
+
+- Conjecture: $B(G \cross H) = BG \cross BH$
+	- Proof outline: $EG \cross EH$ is contractible, and $G \cross H$ acts freely on it with quotient equal to the RHS?
+- Conjecture: $B(G \ast H) = BG \vee BH$
+- Conjecture: $B(G \tensor H) = ?$
+- Conjecture: $B(G \semidirect_\phi H) = ?$
