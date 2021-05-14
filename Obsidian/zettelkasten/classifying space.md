@@ -52,10 +52,7 @@ $$
 	- Follows from contractibility of $EG$ ?
 - $\Loop \B X \homotopic X$?
 
-
-
-
-Also, $\pi_1(\Sigma_g) = <\theset{a_i, b_i}_i^n> \mid \prod_i^g [a_i, b_i]>$
+- $\pi_1(\Sigma_g) = \gens{\theset{a_i, b_i}_i^n \st \prod_i^g [a_i, b_i]}$
 
 
 
@@ -74,11 +71,10 @@ Connected covers can kill higher homotopy?
 
 - $\pi_{i+k}\B^k G = \pi_i G$.
 	- Proof: If $G$ is a topological group, there is a universal principal $G\dash$bundle $EG \to BG$ which induces a LES in homotopy. 
-	- Since $EG$ is contractible, $\pi_i EG = \pi_{i+1}EG = 0$, so $\pi_{i+1}BG \cong \pi_i G$. 
-	- When $G$ is an $E_2$ space, $BG$ is a topological group, and so $$\pi_{i+2}(B^2G) = \pi_{i+2}(B(BG)) = \pi_{i+1}(BG) = \pi_i(G)$$.
-
-Corollary: If $G$ is a discrete group, $B^kG = K(G, n)$.
-Proof: Then $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k B^k G = G$.
+	- Since $EG$ is contractible, $$\pi_i EG = \pi_{i+1}EG = 0\implies \pi_{i+1}BG \cong \pi_i G.$$ 
+	- When $G$ is an $E_2$ space, $BG$ is a topological group, and so $$\pi_{i+2}(B^2G) = \pi_{i+2}(B(BG)) = \pi_{i+1}(BG) = \pi_i(G).$$
+- Corollary: If $G$ is a discrete group, $\B^k G \homotopic K(G, n)$.
+	- Proof: $\pi_0 G = G$ and $\pi_i G = 0$ for $i > 0$, so $\pi_k \B^k G = G$.
 
 - One can take classifying spaces of [stacks](stack.md). 
 	- There is a stack that classifies [principal bundles](principal%20bundles) *with [connections](connection.md)*, but it has issues: 
