@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Abelian category.md",
+            "file": "Quick_Notes/2021-05-12.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Abelian category.md",
+                "file": "Quick_Notes/2021-05-12.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Abelian category.md"
+                "file": "Quick_Notes/2021-05-12.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Abelian category.md",
+                "file": "Quick_Notes/2021-05-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Abelian category.md",
+                "file": "Quick_Notes/2021-05-12.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,15 +254,15 @@
   },
   "active": "49079d6435c409df",
   "lastOpenFiles": [
-    "zettelkasten/Abelian category.md",
     "Quick_Notes/2021-05-12.md",
+    "zettelkasten/Symmetric monoidal category.md",
+    "zettelkasten/irreducible.md",
+    "zettelkasten/Abelian category.md",
     "zettelkasten/Artinian category.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/fiber functor.md",
     "zettelkasten/category fibered in groupoids.md",
     "zettelkasten/moduli space.md",
-    "zettelkasten/condensed set.md",
-    "zettelkasten/sheaf.md",
-    "zettelkasten/homotopy type.md"
+    "zettelkasten/condensed set.md"
   ]
 }
