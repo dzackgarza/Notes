@@ -1,0 +1,1 @@
+$V_n(X)$ is the **Stiefel manifold** of dimension $n$ orthonormal frames in $X$.

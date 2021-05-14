@@ -21,3 +21,6 @@ _Remark_: Every [Fiber bundle](Fiber%20bundle) $F\to E\to B$ is a principal $\Au
 ![](attachments/Pasted%20image%2020210510012449.png)
 
 *Question: what is a principal bundle? According to Wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
+
+A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. 
+If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a [[regular]] [[covering]] map with $\Aut(\tilde X) = G$. Under some hypothesis, there exists a [classifying space](classifying%20space.md) $\B G$ such that $\theset{ \text{isomorphism classes of G-bundles over X}} \cong \hoTop(X, BG)$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $$\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$$

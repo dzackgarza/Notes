@@ -50,39 +50,14 @@ $$
 - Let $G\in\Top\Grp$, and denote $\B G$ the classifying space of $G$. It is the quotient of some contractible space $EG$ by a free action of $G$, so we have something that looks like $G \to EG \to \B G$ and $\B G = EG/G$.
 - For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
 	- Follows from contractibility of $EG$ ?
-
-We also have $\Loop \B X \homotopic X$?
-
-
-## Examples
+- $\Loop \B X \homotopic X$?
 
 
 
-
-- $G \to EG \to BG = EG/G$
-- $\ZZ \to \RR \to S^1$
-- $\ZZ^n \to \RR^n \to T^n$
-- $\ZZ^{\ast n} \to ??? \to \bigvee_n S^1$
-- $\ZZ_2 \to S^\infty \to \RP^\infty$
-- $\ZZ_n \to S^\infty \to L_n^\infty$
-- $S^0 \to S^\infty \to \RP^\infty$
-- $S^1 \to S^\infty \to \CP^\infty$
-- $S^3 \to S^\infty \to \HP^\infty$
-- NOT TRUE: $S^7 \to S^\infty \to \OP^\infty$
-- $T^n \to ? \to (\CP^\infty)^n$
-- $O_n \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
-- $GL_n(\RR) \to V_n(\RR^\infty) \to Gr_n(\RR^\infty)$
-- $SO_n \to ? \to ?$
-- $Gr_n(\RR^\infty) \to ? \to Gr_n(\RR^\infty)$
-- $\pi_1(\Sigma_g) \to ? \to \Sigma_g$
-- $S_n \to ??? \to \theset{U \subset \RR^\infty,~ |U| = n}$
-
-
-Note that $V_n(X)$ is the Stiefel manifold of dimension $n$ orthonormal frames in $X$.
 
 Also, $\pi_1(\Sigma_g) = <\theset{a_i, b_i}_i^n> \mid \prod_i^g [a_i, b_i]>$
 
-A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a regular covering map with $Aut(\tilde X) = G$. Under some hypothesis, there exists a classifying space $BG$ such that $\theset{ \text{isomorphism classes of G-bundles over X}} \cong [X, BG]$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $$\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$$
+
 
 It is useful to think of $BG$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a $G$.
 
