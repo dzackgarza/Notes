@@ -13,5 +13,13 @@ x\inv \sum_{\ell \geq 2} a_\ell x^\ell &=
 x\inv ( F(x) - a_0 - a_1x) &= (F(x) - a_0) + xF(x)\\
 F(x) - a_0 - a_1 x &= xF(x) - a_0 x + x^2F(x) \\
 -a_0 -a_1 x +a_0 x &= -F(x) +xF(x) + x^2 F(x) \\
+-1 -1 x +1x &= F(x)(-1 +x + x^2) \\
+-{1 \over -1 +x +x^2} &= F(x) \\ \\
+\implies
+F(x) &= {1 \over 1-x-x^2}
 \end{align*}$$
 - Need to apply $\sum_{n\geq ?}$ where $?$ is the smallest number that makes all sums *not* reference negative indices.
+
+- Now apply partial fractions.
+	- First factor the denominator:
+	$$1-x-x^2 + (1-r_+x)(1-r_- x) \quad r_{\pm} = {1\over 2} $$
