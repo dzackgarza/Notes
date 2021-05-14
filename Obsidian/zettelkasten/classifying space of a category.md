@@ -1,1 +1,1 @@
-- Constructed by taking the [[nerve]] and then the [geometric realization](geometric%20realization.md), so $\B \cat{C} = \abs{\Nerve(\cat C)}$
+- Constructed by taking the [nerve](nerve) and then the [geometric realization](geometric%20realization.md), so $\B \cat{C} = \realize{\nerve{\cat{C}}}$

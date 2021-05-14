@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/classifying space of a category.md",
+            "file": "zettelkasten/nerve.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/classifying space of a category.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/classifying space of a category.md"
+                "file": "zettelkasten/nerve.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/classifying space of a category.md",
+                "file": "zettelkasten/nerve.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/classifying space of a category.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,7 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
+    "zettelkasten/nerve.md",
     "zettelkasten/classifying space of a category.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/fiber bundle.md",
@@ -251,7 +252,6 @@
     "zettelkasten/sheaf.md",
     "zettelkasten/moduli space.md",
     "zettelkasten/category fibered in groupoids.md",
-    "Quick_Notes/2021-05-12.md",
-    "zettelkasten/Untitled 4.md"
+    "Quick_Notes/2021-05-12.md"
   ]
 }
