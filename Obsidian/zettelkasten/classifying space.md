@@ -9,6 +9,7 @@ Tags: #homotopy
 
 - [classifying stack](classifying%20stack.md)
 - [principal bundle](principal%20bundle.md)
+- [classifying space of a category](classifying%20space%20of%20a%20category)
 
 # Notes
 
@@ -18,7 +19,6 @@ Tags: #homotopy
 ![](attachments/Pasted%20image%2020210505015233.png)
 
 # Definitions
-
 
 **Definition:** 
 Given $G\in \Top\Grp$, a **classifying space** for $G$, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
@@ -47,7 +47,7 @@ $$
 
 # Notes
 
-- It is useful to think of $\B G$ as a space whose points are copies of $G$, so the classifying map $X \mapsvia{f} BG$ assigns each $x \in X$ to the fiber above $x$, which is a copy of $G$.
+- It is useful to think of $\B G$ as a space whose points are copies of $G$, so the classifying map $f\in \hoTop(X,\B G)$ assigns each $x \in X$ to the fiber above $x$, which is a copy of $G$.
 - For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
 	- Follows from contractibility of $EG$ ?
 - $\Loop \B X \homotopic X$?
