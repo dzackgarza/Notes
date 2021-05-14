@@ -31,12 +31,11 @@ F(x) = \frac{1}{1-x-x^{2}} &=\frac{1}{\left(1-x r_{+}\right)\left(1-x r_{-}\righ
 &= \sum_{n\geq 0} \left( {r_+^{n+1} - r_{i}^{n+1} \over \sqrt 5 } \right)x^n \\
 &= \sum_{n\geq 0} a_n x^n \\ \\
 \implies a_n &= {r_+^{n+1} - r_{i}^{n+1} \over \sqrt 5 } \\
-&= { {1\over 2} (1 + \sqrt 5)^{n+1} - {1\over 2} (1 - \sqrt 5)^{n+1} \over  \sqrt 5} \\
-&= { (1 + \sqrt 5)^{n+1} -  (1 - \sqrt 5)^{n+1} \over  2 \sqrt 5}
+&= {  ({1 + \sqrt 5 \over 2})^{n+1} - ({1 - \sqrt 5 \over 2})^{n+1} \over  \sqrt 5} \\
 \end{aligned}$$
 
 - Note that $\abs{r_+} > 1$ and $\abs{r_-} < 1$, so 
 $$
 a_n \approx 
-{ (1 + \sqrt 5)^{n+1} \over  2 \sqrt 5}
+{1 \over  \sqrt 5} \left( {1 + \sqrt 5 \over 2}  \right)^{n+1} \\
 $$
