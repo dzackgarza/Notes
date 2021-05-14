@@ -14,9 +14,8 @@ A [simplicial set](simplicial%20set.md) whose skeleton is
 $$
 \mathcal{P}: \Poset \to \Cat^{\smol}
 $$
-which takes a poset to its poset category, where there is a unique morphism $p\to q \iff p\leq q$.
-	- Realize a simplicial set as a functor $\Delta\op \to \Set$
-	- Define
+which takes a [poset](poset) to its poset category, where there is a unique morphism $p\to q \iff p\leq q$.
+	- Using the definition of a [simplicial set](simplicial%20set.md) as a functor $\Delta\op \to \Set$, define
 $$
 \nerve{\cat C}(\wait) := \Fun(\wait, \cat{C}) \circ \mathcal{P}(\wait) = \Fun( \mathcal{P}(\wait), \cat{C})
 $$
