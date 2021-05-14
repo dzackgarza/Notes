@@ -1,1 +1,1 @@
-- The recurrence: $F(n) = 
+- The recurrence: $F(n+1) = F(n) + F(n-1)$.
