@@ -20,11 +20,12 @@ Tags: #homotopy
 # Definitions
 
 
-**Definition:** Given a topological group $G$, a **classifying space**, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
+**Definition:** 
+Given a topological group $G$, a **classifying space**, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
 $$
 G \to EG \mapsvia{\pi} \B G
 $$
-making $\B G$ a quotient of the contractible space $EG$ by a $G\dash$ action. We shall refer to this as **the classifying bundle**.
+making $\B G$ a quotient of the contractible space $EG$ by a free $G\dash$ action. We shall refer to this as **the classifying bundle**.
 
 Any other [principal](principal%20bundle.md) $G\dash$ bundle over a space $X$ is isomorphic to a [pullback](pullback.md) of the classifying bundle along a map $X \to \B G$.
 
@@ -34,30 +35,29 @@ I(G, X) \cong \hoTop(X, \B G)
 $$
 So in other words, isomorphism classes of principal $G\dash$ bundles over a base $X$ are equivalent to homotopy classes of maps from $X$ into the classifying space of $G$.
 
-
-**Proposition**: [Grassmannians](Grassmannian.md) are classifying spaces for [vector bundles](vector%20bundles.md). That is, there is a bijective correspondence:
+**Proposition**: 
+[Grassmannians](Grassmannian.md) are classifying spaces for [vector bundles](vector%20bundles.md). That is, there is a bijection:
 $$
 \hoTop(X, \Gr_n(\RR)) \cong \theset{\text{rank $n$ $\RR\dash$vector bundles over $X$}} / \sim
 $$
-It is also the case that every such vector bundle is a pullback of the principal bundle
+- Every such vector bundle is a pullback of the principal bundle
 $$
 \GL(n, \RR) \to V_n(\RR^\infty) \to \Gr(n, \RR)
 $$
 
 # More Reading
 
-Usually look at this in the context of a topological group $G$, and denote $\B G$ the classifying space of $G$. It is the quotient of some contractible space $EG$ by a free action of $G$, so we have something that looks like $G \to EG \to \B G$ and $\B G = EG/G$.
+- Let $G\in\Top\Grp$, and denote $\B G$ the classifying space of $G$. It is the quotient of some contractible space $EG$ by a free action of $G$, so we have something that looks like $G \to EG \to \B G$ and $\B G = EG/G$.
+- For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
+	- Follows from contractibility of $EG$ ?
 
-For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
+We also have $\Loop \B X \homotopic X$?
 
-
-Note that contractibility of $EG$ shows that $BG$ is $K(G, 1)$.
 
 ## Examples
 
-Note that $EG$ is always a contractible space upon which $G$ acts freely.
 
-We also have $BX \homotopic \Omega X$
+
 
 - $G \to EG \to BG = EG/G$
 - $\ZZ \to \RR \to S^1$
