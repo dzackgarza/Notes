@@ -25,13 +25,14 @@ F(x) &= {1 \over 1-x-x^2}
 	$$1-x-x^2 + (1-r_+x)(1-r_- x) \quad r_{\pm} = {1\over 2} (1 \pm \sqrt 5)$$
 - Then write
 $$\begin{aligned} 
-F(x) = \frac{1}{1-x-x^{2}} &=\frac{1}{\left(1-x r_{+}\right)\left(1-x r_{-}\right)} \\ 
-&= \frac{1}{\left(r_{+}-r_{-}\right)}\left(\frac{r_{+}}{1-x r_{+}}-\frac{r_{-}}{1-x r_{-}}\right) \\ 
-&= \frac{1}{\sqrt{5}}\left\{\sum_{n \geq 0} r_{+}^{n+1} x^{n}-\sum_{n \geq 0} r_{-}^{n+1} x^{n}\right\} \\
-&= \sum_{n\geq 0} \left( {r_+^{n+1} - r_{i}^{n+1} \over \sqrt 5 } \right)x^n \\
+F(x) = \frac{1}{1-x-x^{2}} 
+&= \frac{1}{\left(1-x r_{+}\right)\left(1-x r_{-}\right)} \\  \\
+&= \frac{1}{\left(r_{+}-r_{-}\right)} \left(\frac{r_{+}}{1-x r_{+}}-\frac{r_{-}}{1-x r_{-}}\right) \\ \\
+&= \frac{1}{\sqrt{5}}\left(\sum_{n \geq 0} r_{+}^{n+1} x^{n}-\sum_{n \geq 0} r_{-}^{n+1} x^{n}\right) \\ \\
+&= \sum_{n\geq 0} \left( {r_+^{n+1} - r_{i}^{n+1} \over \sqrt 5 } \right)x^n \\ \\
 &= \sum_{n\geq 0} a_n x^n \\ \\
 \implies a_n &= {r_+^{n+1} - r_{i}^{n+1} \over \sqrt 5 } \\
-&= {  ({1 + \sqrt 5 \over 2})^{n+1} - ({1 - \sqrt 5 \over 2})^{n+1} \over  \sqrt 5} \\
+&= {1 \over  \sqrt 5 } {\left(  \left({1 + \sqrt 5 \over 2}\right)^{n+1} - \left({1 - \sqrt 5 \over 2}\right)^{n+1}  \right)} \\
 \end{aligned}$$
 
 - Note that $\abs{r_+} > 1$ and $\abs{r_-} < 1$, so 
@@ -39,7 +40,8 @@ $$
 a_n \approx 
 {1 \over  \sqrt 5} \left( {1 + \sqrt 5 \over 2}  \right)^{n+1} \\
 $$
-- In fact $ < {1\over 2}$, and since $a_n \in \ZZ$, so this formula is exact
+- In fact 
 $$
-\abs{r_-}^{n+1} = \abs{{1 - \sqrt 5 \over 2} }^{n+1} < {1\over 2}
-$$
+\abs{r_-}^{n+1} = \abs{{1 - \sqrt 5 \over 2} }^{n+1} < {1\over 2} \quad \forall n
+,$$
+and since $a_n \in \ZZ$, this formula is exact
