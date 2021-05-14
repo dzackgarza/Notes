@@ -11,10 +11,6 @@ aliases: ["simplicial sets", "sSets"]
 # Notes
 
 - Functors $\Delta\op\to\Set$ where $\Delta \leq \Finset$ are totally ordered finite sets with order-preserving set-maps
-- Alternative functor definition:
-	- Define a functor
-$$
-\ma
-$$
+
 
 The "dual" of geometric realization is totalization? #unanswered_questions 
