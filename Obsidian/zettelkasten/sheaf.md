@@ -1,3 +1,7 @@
+---
+aliases: ["sheaves"]
+---
+
 - Every [bundle](bundle.md) is a [locally free](locally%20free) sheaf?
 - [canonical sheaf](canonical%20sheaf)
 - [structure sheaf](structure%20sheaf.md)
