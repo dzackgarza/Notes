@@ -1,0 +1,1 @@
+A functor satisfying various conditions implying that it is [pro-representable](https://ncatlab.org/nlab/show/pro-representable+functor)
