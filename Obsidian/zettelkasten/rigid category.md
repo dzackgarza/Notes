@@ -1,0 +1,3 @@
+---
+aliases: ["rigid"]
+---
