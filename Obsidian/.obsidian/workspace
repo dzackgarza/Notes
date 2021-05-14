@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "zettelkasten/classifying space.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -245,14 +245,14 @@
   "active": "5575e604432a539a",
   "lastOpenFiles": [
     "zettelkasten/classifying space.md",
+    "zettelkasten/Pullback.md",
+    "zettelkasten/principal bundle.md",
     "zettelkasten/Fibonacci recurrence derivation.md",
     "zettelkasten/recurrence relation.md",
     "zettelkasten/scheme.md",
     "zettelkasten/Untitled 4.md",
     "zettelkasten/gauge theory.md",
     "zettelkasten/Knots.md",
-    "zettelkasten/knot floer homology.md",
-    "zettelkasten/representation theory.md",
-    "zettelkasten/moduli space.md"
+    "zettelkasten/knot floer homology.md"
   ]
 }

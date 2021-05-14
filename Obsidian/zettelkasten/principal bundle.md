@@ -19,3 +19,5 @@ _Remark_: Every [Fiber bundle](Fiber%20bundle) $F\to E\to B$ is a principal $\Au
 **Definition:** A principal bundle $F \to E \mapsvia{\pi} B$ is _universal_ iff $E$ is weakly contractible, i.e. if $E$ has the homotopy type of a point.
 
 ![](attachments/Pasted%20image%2020210510012449.png)
+
+*Question: what is a principal bundle? According to Wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*

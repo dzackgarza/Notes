@@ -20,25 +20,24 @@ Tags: #homotopy
 # Definitions
 
 
-**Definition:** Given a topological group $G$, a **classifying space**, denoted $BG$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
+**Definition:** Given a topological group $G$, a **classifying space**, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
 $$
-G \to EG \mapsvia{\pi} BG
+G \to EG \mapsvia{\pi} \B G
 $$
-making $BG$ a quotient of the contractible space $EG$ by a $G\dash$ action. We shall refer to this as _the classifying bundle_.
+making $\B G$ a quotient of the contractible space $EG$ by a $G\dash$ action. We shall refer to this as **the classifying bundle**.
 
-Classifying spaces satisfy the property that any other principal $G\dash$ bundle over a space $X$ is isomorphic to a pullback of the classifying bundle along a map $X \to BG$.
-
+Any other [principal](principal%20bundle.md) $G\dash$ bundle over a space $X$ is isomorphic to a [pullback](pullback.md) of the classifying bundle along a map $X \to \B G$.
 
 Let $I(G, X)$ denote the set of isomorphism classes of principal $G\dash$ bundles over a base space $X$, then
 $$
-I(G, X) \cong [X, BG]_{\text{hoTop}}
+I(G, X) \cong \hoTop(X, \B G)
 $$
 So in other words, isomorphism classes of principal $G\dash$ bundles over a base $X$ are equivalent to homotopy classes of maps from $X$ into the classifying space of $G$.
 
 
-**Proposition**: Grassmanians are classifying spaces for vector bundles. That is, there is a bijective correspondence:
+**Proposition**: [Grassmannians](Grassmannian.md) are classifying spaces for [vector bundles](vector%20bundles.md). That is, there is a bijective correspondence:
 $$
-[X, \Gr(n, \RR)] \cong \theset{\text{isomorphism classes of rank $n$ $\RR\dash$vector bundles over $X$}}
+\hoTop(X, \Gr_n(\RR)) \cong \theset{\text{rank $n$ $\RR\dash$vector bundles over $X$}} / \sim
 $$
 It is also the case that every such vector bundle is a pullback of the principal bundle
 $$
@@ -47,11 +46,10 @@ $$
 
 # More Reading
 
-Usually look at this in the context of a topological group $G$, and denote $BG$ the classifying space of $G$. It is the quotient of some contractible space $EG$ by a free action of $G$, so we have something that looks like $G \to EG \to BG$ and $BG = EG/G$.
+Usually look at this in the context of a topological group $G$, and denote $\B G$ the classifying space of $G$. It is the quotient of some contractible space $EG$ by a free action of $G$, so we have something that looks like $G \to EG \to \B G$ and $\B G = EG/G$.
 
-For a discrete group $G$, we have $BG = K(G,1)$, so that $\pi_1(BG) = G$ and $\pi_k(BG) = 0$ for $k \neq 1$.
+For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
 
-*Question: what is a principal bundle? According to Wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
 
 Note that contractibility of $EG$ shows that $BG$ is $K(G, 1)$.
 

@@ -9,7 +9,7 @@
 - [[Symmetric monoidal category]]
 - [[Pushout]]
 	- Limit definition
-- [[Pullback]]
+- [[pullback]]
 	- Limit definition
 - [[equivalence of categories]]
 	- Need to state this precisely!
