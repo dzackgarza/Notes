@@ -7,5 +7,7 @@ $$
 a_{n+1} &= a_n + a_{n-1} \\
 a_{n+1}x^n &= a_nx^n + a_{n-1}x^n \\
 \sum_{n\geq 1} a_{n+1}x^n &= \sum_{n\geq 1} (a_nx^n + a_{n-1}x^n) \\
+x\inv\sum_{n\geq 1} a_{n+1}x^{n+1} &= \sum_{n\geq 1} a_nx^n + x\sum_{n\geq 1} a_{n-1}x^{n-1} \\
+x\inv \sum_{\ell \geq 2} a_\ell x^\ell
 \end{align*}$$
 - Need to apply $\sum_{n\geq ?}$ where $?$ is the smallest number that makes all sums *not* reference negative indices.
