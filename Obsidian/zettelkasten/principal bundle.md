@@ -2,9 +2,17 @@
 aliases: ["principal"]
 ---
 
-**Definition:** A _principal $G\dash$ bundle_ is a [fiber bundle](fiber%20bundle.md) $F \to E \to B$ in which for each fiber $\pi^{-1}(b)\definedas F_b$, satisfying the condition that $G$ acts freely and transitively on $F_b$. 
+# Definitions
 
-In other words, there is a continuous group action $\actson: E\cross G \to E$ such that for every $f \in F_b$ and $g\in G$, we have $g\actson f \in F_b$ and $g\actson f \neq f$.
+**Definition:** A **principal $G\dash$ bundle** is a [fiber bundle](fiber%20bundle.md) $F \to E \to B$ for which $G$ acts freely and transitively on each fiber $F_b:= \pi^{-1}(b)$. 
+
+In other words, there is a continuous group action 
+$$\cdot: E\cross G \to E$$ 
+such that for every $f \in F_b$ and $g\in G$, we have 
+- $g\cdot f \in F_b$ 
+- $g\cdot f \neq f$.
+
+|A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. 
 
 **Example:** A [covering space](covering%20space) $\hat X \mapsvia{p} X$ yields a principal $\pi_1(X)\dash$ bundle.
 
@@ -22,5 +30,7 @@ _Remark_: Every [Fiber bundle](Fiber%20bundle) $F\to E\to B$ is a principal $\Au
 
 *Question: what is a principal bundle? According to Wikipedia, any G-principal bundle is a pullback of $EG \to BG$.*
 
-A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$. 
-If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a [[regular]] [[covering]] map with $\Aut(\tilde X) = G$. Under some hypothesis, there exists a [classifying space](classifying%20space.md) $\B G$ such that $\theset{ \text{isomorphism classes of G-bundles over X}} \cong \hoTop(X, BG)$, i.e. bundles of $G$'s over $X$ are equivalent to maps from $X$ into the classifying space, i.e. $$\hom(X, BG) \cong \theset{G\dash\text{bundles over } X}$$
+
+If $G$ is discrete, then a principal $G$-bundle over $X$ with total space $\tilde X$ is equivalent to a [[regular]] [[covering]] map with $\Aut(\tilde X) = G$. 
+
+Under some hypothesis, there exists a [classifying space](classifying%20space.md) $\B G$.
