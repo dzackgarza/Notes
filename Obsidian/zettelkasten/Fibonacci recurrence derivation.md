@@ -39,3 +39,7 @@ $$
 a_n \approx 
 {1 \over  \sqrt 5} \left( {1 + \sqrt 5 \over 2}  \right)^{n+1} \\
 $$
+- In fact $ < {1\over 2}$, and since $a_n \in \ZZ$, so this formula is exact
+$$
+\abs{r_-}^{n+1} = \abs{{1 - \sqrt 5 \over 2} }^{n+1} < {1\over 2}
+$$
