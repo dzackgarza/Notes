@@ -15,3 +15,8 @@ aliases: ["infinity categories", "infinity category"]
 - [stable infinity category](stable%20infinity%20category)
 - [Waldhausen S construction](Waldhausen%20S%20construction)
 - [Segal spaces](Segal%20spaces)
+- [infinity groupoids](infinity%20groupoids)
+
+# Notes
+
+The Segal condition, essentially characterises ∞-categories among simplicial ∞-groupoids
