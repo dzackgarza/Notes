@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Witt Vectors.md",
-            "mode": "preview"
+            "file": "zettelkasten/Commutative Algebra index.md",
+            "mode": "source"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md",
+                "file": "zettelkasten/Commutative Algebra index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md"
+                "file": "zettelkasten/Commutative Algebra index.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md",
+                "file": "zettelkasten/Commutative Algebra index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md",
+                "file": "zettelkasten/Commutative Algebra index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,8 @@
   },
   "active": "84d0d5642b39432f",
   "lastOpenFiles": [
+    "zettelkasten/Commutative Algebra index.md",
+    "zettelkasten/Hensel's Lemma.md",
     "zettelkasten/Witt Vectors.md",
     "zettelkasten/homotopy type.md",
     "zettelkasten/The homotopy hypothesis.md",
@@ -250,8 +252,6 @@
     "zettelkasten/infinity groupoids.md",
     "zettelkasten/groupoid.md",
     "zettelkasten/Untitled 8.md",
-    "zettelkasten/Notes - Introduction to infinity categories.md",
-    "zettelkasten/nerve.md",
-    "zettelkasten/Untitled 7.md"
+    "zettelkasten/Notes - Introduction to infinity categories.md"
   ]
 }
