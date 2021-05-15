@@ -21,7 +21,7 @@ Reference: [motivic homotopy](motivic%20homotopy.md)
 # Misc
 - [operad](operad.md)
 - [Goodwillie calculus](Goodwillie%20calculus)
-- [infty categories](infty%20categories.md)
+- [infinity categories](infinity%20categories.md)
 
 
 # Current Problems/Research

@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-# Introduction to [infty Categories](infty%20categories.md)
+# Introduction to [infty Categories](infinity%20categories.md)
 
 > These are notes roughly transcribed from [this video](https://www.youtube.com/watch?v=3IjAy0gHRyY)
 
@@ -30,7 +30,7 @@ admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex mis
 
 
 :::{.remark}
-This is a specialized notion of a [Kan complex](Kan%20complex), and in particular all [infty categories](infty%20categories.md) are Kan complexes.
+This is a specialized notion of a [Kan complex](Kan%20complex), and in particular all [infinity categories](infinity%20categories.md) are Kan complexes.
 All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
 Different to Kan complexes, which include all $i$.
 :::

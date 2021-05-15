@@ -1,0 +1,1 @@
+ A 1-groupoid is the same as an ordinary groupoid, and a 0-groupoid is the same as a set

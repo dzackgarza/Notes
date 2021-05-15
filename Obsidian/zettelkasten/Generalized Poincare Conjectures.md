@@ -23,6 +23,6 @@ See Algtop homotopy notes.
 
 - [[The homotopy hypothesis]]
 - [generalized cohomology theory](cohomolology%20theories.md)
-- [infty categories](../infty%20categories.md)
+- [infty categories](infinity%20categories.md)
 - [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) and [Moore spaces](Moore%20spaces)
 - [Homotopy Groups of Spheres](Homotopy%20Groups%20of%20Spheres)

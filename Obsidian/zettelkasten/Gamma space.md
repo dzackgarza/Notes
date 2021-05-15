@@ -1,3 +1,3 @@
 Tags: #homotopy 
 
-[infty categories](infty%20categories.md)
+[infinity categories](infinity%20categories.md)

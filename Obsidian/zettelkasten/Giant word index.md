@@ -25,7 +25,7 @@ aliases: ["Big list of words I don't know"]
 - [[Mirror Symmetry]]
 - [[adic stuff]]
 	- [[l-adic cohomology]]
-- [infty categories](infty%20categories.md)
+- [infinity categories](infinity%20categories.md)
 - [[Differential topology]]
 - [[Classical category theory]]
 - [[Classics]]

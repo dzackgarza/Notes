@@ -37,4 +37,4 @@ Tags: #homotopy
 	- [Algebraic k theory](Algebraic%20K%20theory.md)
 	- [Topological K theory](Topological%20K%20theory)
 	- [[Bott periodicity]]
-- [infty categories](infty%20categories.md)
+- [infinity categories](infinity%20categories.md)

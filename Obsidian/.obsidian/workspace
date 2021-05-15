@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/infty categories.md",
+            "file": "zettelkasten/infinity categories.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/category theory.md",
+            "file": "zettelkasten/infinity groupoids.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/category theory.md",
+                "file": "zettelkasten/infinity groupoids.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/category theory.md"
+                "file": "zettelkasten/infinity groupoids.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/category theory.md",
+                "file": "zettelkasten/infinity groupoids.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/category theory.md",
+                "file": "zettelkasten/infinity groupoids.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,15 +254,15 @@
   },
   "active": "44751feff7279052",
   "lastOpenFiles": [
+    "zettelkasten/infinity groupoids.md",
+    "zettelkasten/infty categories.md",
     "zettelkasten/category theory.md",
     "zettelkasten/Segal spaces.md",
-    "zettelkasten/infty categories.md",
     "zettelkasten/nerve.md",
     "zettelkasten/uniformizer.md",
     "zettelkasten/Hensel's Lemma.md",
     "zettelkasten/Ring of integers.md",
     "zettelkasten/Complete ring.md",
-    "zettelkasten/Witt Vectors.md",
-    "zettelkasten/p-adic integers.md"
+    "zettelkasten/Witt Vectors.md"
   ]
 }

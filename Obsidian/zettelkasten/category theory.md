@@ -51,7 +51,11 @@ $$
 - [Day convolution](Day%20convolution)
 - [coend](coend.md)
 - [continuous functor](continuous%20functor)
-- [infty categories](infty%20categories.md)
+- [infinity categories](infinity%20categories.md)
 - [slice category](slice%20category)
 - [comma category](comma%20category)
 - [span](span)
+
+# Notes
+
+- One regards a category $C$ as an ∞-category via its [nerve](nerve.md).
