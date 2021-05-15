@@ -10,6 +10,9 @@
 - [local ring](local%20ring)
 - Cohen-Macauly
 - [Noether normalization](Noether%20normalization)
+- [Noetherian ring](Noetherian%20ring), 
+- [reduced ring](reduced%20ring), 
+- [[normal]], regular, or excellent 
 
 [Nakayama](Nakayama)
 
