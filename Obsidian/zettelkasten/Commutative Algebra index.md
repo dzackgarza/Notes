@@ -12,7 +12,9 @@
 - [Noether normalization](Noether%20normalization)
 - [Noetherian ring](Noetherian%20ring), 
 - [reduced ring](reduced%20ring), 
-- [[normal]], regular, or excellent 
+- [normal ring](normal%20ring), 
+- [regular ring](regular%20ring.md), 
+- [[excellent rin 
 
 [Nakayama](Nakayama)
 
