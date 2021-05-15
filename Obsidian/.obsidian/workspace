@@ -9,17 +9,6 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/infinity categories.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "44751feff7279052",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
             "file": "zettelkasten/infinity groupoids.md",
             "mode": "source"
           }
@@ -252,17 +241,17 @@
     "width": 318,
     "collapsed": true
   },
-  "active": "44751feff7279052",
+  "active": "5575e604432a539a",
   "lastOpenFiles": [
     "zettelkasten/infinity groupoids.md",
+    "zettelkasten/infinity categories.md",
+    "zettelkasten/quasicategories.md",
     "zettelkasten/infty categories.md",
     "zettelkasten/category theory.md",
     "zettelkasten/Segal spaces.md",
     "zettelkasten/nerve.md",
     "zettelkasten/uniformizer.md",
     "zettelkasten/Hensel's Lemma.md",
-    "zettelkasten/Ring of integers.md",
-    "zettelkasten/Complete ring.md",
-    "zettelkasten/Witt Vectors.md"
+    "zettelkasten/Ring of integers.md"
   ]
 }

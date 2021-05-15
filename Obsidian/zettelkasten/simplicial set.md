@@ -13,7 +13,7 @@ aliases: ["simplicial sets", "sSets"]
 - Functors $\Delta\op\to\Set$ where $\Delta \leq \Finset$ are totally ordered finite sets $[n] = \ts{0, 1, 2, \cdots, n}$ for all $n\geq 0$, with order-preserving set-maps.
 	- I.e. presheaves on $\Delta$.
 	- Morphisms are natural transformations.
-- Used to define [quasicategories](quasicategories)
+- Used to define [quasicategory](quasicategory.md)
 
 
 The "dual" of geometric realization is totalization? #unanswered_questions 

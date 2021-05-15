@@ -14,8 +14,12 @@ aliases: ["infinity categories", "infinity category"]
 - [[zettelkasten/BG]]
 - [stable infinity category](stable%20infinity%20category)
 - [Waldhausen S construction](Waldhausen%20S%20construction)
-- [Segal spaces](Segal%20spaces)
 - [infinity groupoids](infinity%20groupoids)
+
+Models:
+- [quasicategory](quasicategory.md)
+- Complete [Segal spaces](Segal%20spaces)
+
 
 # Notes
 

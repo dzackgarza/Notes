@@ -1,1 +1,2 @@
  A 1-groupoid is the same as an ordinary groupoid, and a 0-groupoid is the same as a set
+ An ∞-groupoid is an [infinity category](infinity%20categories.md) in which all morphisms are invertible. Equivalently a space up to homotopy. 
