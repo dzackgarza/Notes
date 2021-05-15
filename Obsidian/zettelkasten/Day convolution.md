@@ -30,6 +30,12 @@ Here the diagram is not required to commute, but rather satisfy some universal p
 \cat{C}\cat{D}(F\hat\tensor G, ?) \cong \cat{C}^2\cat{D}(\tensor_D \circ (F, G), \,\, ? \circ \tensor_C)
 .\]
 
+Equivalently, take the 2-category of cocomplete tensor categories $\Cat_{c\tensor}$, 
+\[
+\Cat_{c\tensor}( \Fun(\cat C\op, \cat D), ?) \cong \Cat_{c\tensor}(\cat C, ?) \times \Cat_{c\tensor}(\cat D, ?)
+.\]
+
+
 
 Equivalently, define by the following [[coend]]:
 \[
