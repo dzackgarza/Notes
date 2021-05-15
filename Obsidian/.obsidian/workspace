@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00 subject index.md",
+            "file": "zettelkasten/quasicoherent sheaf.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tannaka",
+                "query": "reconstruction",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00 subject index.md",
+                "file": "zettelkasten/quasicoherent sheaf.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 subject index.md"
+                "file": "zettelkasten/quasicoherent sheaf.md"
               }
             }
           },
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 subject index.md",
+                "file": "zettelkasten/quasicoherent sheaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00 subject index.md",
+                "file": "zettelkasten/quasicoherent sheaf.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +243,8 @@
   },
   "active": "d13a62d5c9c798a1",
   "lastOpenFiles": [
+    "zettelkasten/quasicoherent sheaf.md",
+    "zettelkasten/scheme.md",
     "00 subject index.md",
     "zettelkasten/2021-04-26_Etale_group_schemes_and_p-divisible_groups.md",
     "zettelkasten/Giant word index.md",
@@ -249,8 +252,6 @@
     "00_Home.md",
     "00_Floer homology project Heegard diagrams.md",
     "zettelkasten/$/theta$ function.md",
-    "zettelkasten/$/theta$ function 2.md",
-    "zettelkasten/$/theta$ function 1.md",
-    "zettelkasten/Floer homology.md"
+    "zettelkasten/$/theta$ function 2.md"
   ]
 }
