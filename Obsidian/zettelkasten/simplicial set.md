@@ -8,6 +8,7 @@ aliases: ["simplicial sets", "sSets"]
 - [Simplicial homotopy theory lecture notes](attachments/SimplicialHomotopyTheory_LectureNotes%20(1).pdf)
 - Chapter 3 https://mandal.ku.edu/M996QuillenKTheory/0TheKBooK.pdf
 
+
 # Notes
 
 - $\sSet = \Fun(\Delta\op, \Set) = \Presh_\Set(\Delta)$
@@ -16,5 +17,4 @@ aliases: ["simplicial sets", "sSets"]
 	- Morphisms are natural transformations.
 - Used to define [quasicategory](quasicategory.md)
 
-
-The "dual" of geometric realization is totalization? #unanswered_questions 
+- The "dual" of geometric realization is totalization? #unanswered_questions 
