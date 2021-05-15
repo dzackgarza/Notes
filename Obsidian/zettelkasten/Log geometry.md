@@ -11,5 +11,5 @@
 	- Trivial part of a log scheme pair $(X, D)$ is the complement of the divisor.
 	- Rank of the free monoid records number of branches passing through singular points:
 	![](attachments/Pasted%20image%2020210515182026.png)
-- Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
+- Logarithmic geometry generalizes [toroidal](toroidal) geometry to non-smooth settings.
 - See [semistable degeneration](semistable%20degeneration)
