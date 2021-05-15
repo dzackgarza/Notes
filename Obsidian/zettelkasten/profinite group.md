@@ -1,0 +1,1 @@
+A profinite group is a topological group that is isomorphic to the inverse limit of an inverse system of discrete finite groups.[

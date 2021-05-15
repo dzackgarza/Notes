@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Commutative Algebra index.md",
+            "file": "zettelkasten/profinite group.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md",
+                "file": "zettelkasten/profinite group.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md"
+                "file": "zettelkasten/profinite group.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md",
+                "file": "zettelkasten/profinite group.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md",
+                "file": "zettelkasten/profinite group.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,8 @@
   },
   "active": "84d0d5642b39432f",
   "lastOpenFiles": [
+    "zettelkasten/Untitled 9.md",
+    "zettelkasten/profinite set.md",
     "zettelkasten/Commutative Algebra index.md",
     "zettelkasten/completion.md",
     "zettelkasten/Hensel's Lemma.md",
@@ -250,8 +252,6 @@
     "zettelkasten/homotopy type.md",
     "zettelkasten/The homotopy hypothesis.md",
     "zettelkasten/infinity categories.md",
-    "zettelkasten/infinity groupoids.md",
-    "zettelkasten/groupoid.md",
-    "zettelkasten/Untitled 8.md"
+    "zettelkasten/infinity groupoids.md"
   ]
 }
