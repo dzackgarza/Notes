@@ -33,7 +33,7 @@ Unsorted:
 What is an infinity category?
 
 :::{.definition title="$\infty\dash$Category"}
-An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$ such that any diagram of the form
+An $\infty\dash$category $\mathcal{C}$ is a (large) [simplicial sets](simplicial%20set.md)] $\mathcal{C}$ such that any diagram of the form
 
 \begin{tikzcd}
 	{\Lambda_i^n} && {\mathcal{C}} \\
@@ -49,11 +49,10 @@ An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$
 admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex missing the $i$th face) for $0 < i < n$.
 :::
 
-- All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
+- All inner horns are fillable, i.e. [simplicial sets](simplicial%20set.md) are *inner* Kan complexes.
 - Different to Kan complexes, which include all $i$.
 
 # Notes
-
 
 - ∞-categories form a (large) ∞-category. 
 - The [Segal condition](Segal%20condition), essentially characterises ∞-categories among simplicial [infinity groupoids](infinity%20groupoids.md)
