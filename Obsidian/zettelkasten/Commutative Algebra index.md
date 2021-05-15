@@ -2,7 +2,6 @@
   - See some actual computations of computing "at a prime" or "away from a prime" 
   - [fraction field](fraction%20field)
 - [completion](completion.md) 
-- [profinite completion](profinite%20completion)
 - [algebra over a ring](algebra%20over%20a%20ring.md)
 - [Complete ring](Complete%20ring)
 - [local ring](local%20ring)
