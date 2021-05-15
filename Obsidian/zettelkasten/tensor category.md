@@ -1,1 +1,1 @@
-- Many local notions and constructions for $\rmod$ over some $R\in\CRing$ can be carried out in an arbitrary (linear) cocomplete tensor category
+- Many local notions and constructions for $\rmod$ over some $R\in\CRing$ can be carried out in an arbitrary (linear) cocomplete tensor category.
