@@ -14,7 +14,6 @@ Tags: #homotopy #numbertheory
 - [Nishida's Theorem](zettelkasten/Nishida's%20Theorem.md)
 - [Bousfield localization](Bousfield%20localization)
 - [[Morava stabilizer group]]
-	- Particularly Mike Hopkins' contributions
 	- [Morava E theory](Morava%20E%20theory.md)
 - [Formal group](zettelkasten/Formal%20group.md)
 	- [[Formal group]]
@@ -25,7 +24,8 @@ Tags: #homotopy #numbertheory
 - [Dieudonne module](Dieudonne%20module)
 -[Redshift](Redshift)
 - [K-Theory](K-Theory.md)
-- 
+- [p-divisible group](p-divisible%20group)
+
 # Notes
 
 - The chromatic view-point, which studies stable homotopy theory via its relationships to the moduli of [formal groups](Formal%20group.md), and related topics such as topological modular forms, use a sizable amount of (fairly abstract) algebraic geometry. And Lurie's work on [derived algebraic geometry](derived%20algebraic%20geometry.md) was motivated in part by establishing foundations adequate to the task of defining equivariant forms of [TMF](Topological%20modular%20forms.md).
