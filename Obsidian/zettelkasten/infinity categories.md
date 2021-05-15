@@ -2,7 +2,13 @@
 aliases: ["infinity categories", "infinity category"]
 ---
 
+# References 
+
 Tags: #homotopy 
+
+- [Notes - Introduction to infinity categories](Notes%20-%20Introduction%20to%20infinity%20categories.md)
+
+[[Notes - Introduction to infinity categories.md]]
 
 # Topics
 
