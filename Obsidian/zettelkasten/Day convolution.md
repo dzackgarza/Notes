@@ -2,7 +2,9 @@
 aliases: ["convolution product"]
 ---
 
-See [end](coend.md) and [coend](coend.md).
+- See [end](coend.md) and [coend](coend.md).
+
+- Turns the functor category $\Fun(\cat C\op, \cat D)$ into a monoidal category $\Fun_{\hat \tensor}(\cat C\op, \cat D)$.
 
 For $\cat{C}$ be a [symmetric monoidal](Symmetric%20monoidal%20category.md) category over another monoidal category $(\cat{D}, \tensor_D)$, and define a convolution product
 $$
@@ -32,7 +34,7 @@ Here the diagram is not required to commute, but rather satisfy some universal p
 
 Equivalently, take the 2-category of cocomplete tensor categories $\Cat_{c\tensor}$, 
 \[
-\Cat_{c\tensor}( \Fun(\cat C\op, \cat D), ?) \cong \Cat_{c\tensor}(\cat C, ?) \times \Cat_{c\tensor}(\cat D, ?)
+\Cat_{c\tensor}( \Fun_{\hat\tensor}(\cat C\op, \cat D), ?) \cong \Cat_{c\tensor}(\cat C, ?) \times \Cat_{\tensor}(\cat D, ?)
 .\]
 
 
@@ -43,6 +45,5 @@ F\hat\tensor G(\wait) \da \int^{x, y\in \cat{C}}
 \cat{C}(x\tensor_C y, \wait) \tensor_D F(x) \tensor_D G(y)
 .\]
 
-- This is a monoidal product on the functor category $\Fun(\cat C\op, \cat D)$.
 
 
