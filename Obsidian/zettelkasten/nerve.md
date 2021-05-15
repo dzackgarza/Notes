@@ -36,3 +36,11 @@ Thus $\nerve{\cat{C}}([n]) = \Fun([n], \cat{C})$ where $[n]$ is the poset catego
 	- What does this mean? Define homotopy direct on $\sSet$, or take geometric realization to $\Top$..?
 - $\im \nerve{\wait} \injects \sSet$ are precisely [simplicial sets](simplicial%20set.md) satisfying the [Segal condition](Segal%20spaces.md)
 	- I.e. $\nerve{\cat{C}}$ is a Segal space, regarding $\Set \injects \inftyGrpd$ as the discrete objects.
+- Is a right adjoint to [geometric realization](geometric%20realization.md)
+$$
+\realize{\wait}: \sSet \to \Cat
+$$
+So we get an adjoint pair
+$$
+\adjunction{\nerve{}}{B}{C}{D}
+$$
