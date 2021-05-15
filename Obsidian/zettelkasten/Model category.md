@@ -22,3 +22,7 @@ aliases: ["model structure", "model category"]
 
 - Localizing at morphisms:
 ![](attachments/Pasted%20image%2020210505015835.png)
+
+- [Weak equivalence](Weak%20equivalence.md)
+- [Cofibrant object](Cofibrant%20object)
+- [Cofibrant generation](Cofibrant%20generation)

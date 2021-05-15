@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
+            "file": "zettelkasten/Model category.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
+                "file": "zettelkasten/Model category.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/The cotangent complex and derived de Rham cohomology.md"
+                "file": "zettelkasten/Model category.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
+                "file": "zettelkasten/Model category.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
+                "file": "zettelkasten/Model category.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +241,15 @@
   },
   "active": "d8f032b607ae2277",
   "lastOpenFiles": [
-    "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
-    "zettelkasten/Kan extension.md",
+    "zettelkasten/Model category.md",
     "zettelkasten/infinity categories.md",
+    "zettelkasten/category theory.md",
+    "zettelkasten/Categorical constructions in homotopy theory.md",
+    "zettelkasten/Kan extension.md",
+    "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
     "zettelkasten/Generalized Poincare Conjectures.md",
     "zettelkasten/inert primes.md",
     "zettelkasten/Untitled 4.md",
-    "zettelkasten/ramified primes.md",
-    "zettelkasten/split primes.md",
-    "zettelkasten/monomorphism.md",
-    "zettelkasten/category theory.md"
+    "zettelkasten/ramified primes.md"
   ]
 }

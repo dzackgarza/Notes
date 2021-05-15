@@ -52,10 +52,24 @@ $$
 - [Day convolution](Day%20convolution)
 - [coend](coend.md)
 - [continuous functor](continuous%20functor)
-- [infinity categories](infinity%20categories.md)
 - [slice category](slice%20category)
 - [comma category](comma%20category)
 - [span](span)
+- [Day convolution](Day%20convolution.md)
+- [Tensored Category](Tensored%20Category)
+- [Enriched category](Enriched%20category.md)
+
+
+# Homotopy 
+
+- [homotopy colimit](homotopy%20colimit)
+- [homotopy quotient](homotopy%20quotient)
+- [homotopy fixed points](homotopy%20fixed%20points)
+
+# Higher Cats
+- [higher category](higher%20category)
+- [infinity categories](infinity%20categories.md)
+
 
 # Notes
 
