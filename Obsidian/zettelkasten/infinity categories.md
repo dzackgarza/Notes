@@ -49,8 +49,8 @@ An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$
 admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex missing the $i$th face) for $0 < i < n$.
 :::
 
-All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
-Different to Kan complexes, which include all $i$.
+- All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
+- Different to Kan complexes, which include all $i$.
 
 # Notes
 

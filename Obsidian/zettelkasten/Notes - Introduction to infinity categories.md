@@ -22,23 +22,7 @@ This is a specialized notion of a [Kan complex](Kan%20complex), and in particula
 A **functor** between two $\infty\dash$categories is a map between [simplicial sets](simplicial%20set.md).
 :::
 
-:::{.definition title="Nerve of a category"}
-Given an ordinary category $\mathcal{C}$, define the [nerve](nerve.md) of $\mathcal{C}$ to be the simplicial set given by
-\[  
-N(\mathcal{C})_n \da \ts{\text{Functors } F: [n] \to \mathcal{C}}
-\]
 
-where $[n]$ is the poset category on $\ts{1, 2, \cdots, n}$.
-So an $n\dash$simplex is a diagram of objects $X_0, \cdots, X_n \in \Ob(\mathcal{C})$ and a sequence of maps.
-
-This defines an $\infty\dash$category, and there is a correspondence
-\[  
-\correspond{\text{ Functors } F: \mathcal{C} \to \mathcal{D}}
-&\iff
-\correspond{\infty\dash\text{Functors } \hat F: N(\mathcal{C}) \to N(\mathcal{D})}
-.\]
-Note that taking the [nerve](nerve) of a category preserves the usual categorical structure, since the objects are the 0-simplices and the morphisms are the 1-simplices.
-:::
 
 
 

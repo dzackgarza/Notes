@@ -51,6 +51,26 @@ $$
 \nerve{\cat C}(\wait) := \Fun(\wait, \cat{C}) \circ \mathcal{P}(\wait) = \Fun( \mathcal{P}(\wait), \cat{C})
 $$
 Thus $\nerve{\cat{C}}([n]) = \Fun([n], \cat{C})$ where $[n]$ is the poset category on $(\ts{0, 1, \cdots, n}, \leq)$. 
+
+## Actual Definition
+
+:::{.definition title="Nerve of a category"}
+Given an ordinary category $\mathcal{C}$, define the [nerve](nerve.md) of $\mathcal{C}$ to be the simplicial set given by
+\[  
+N(\mathcal{C})_n \da \ts{\text{Functors } F: [n] \to \mathcal{C}}
+\]
+
+where $[n]$ is the poset category on $\ts{1, 2, \cdots, n}$.
+So an $n\dash$simplex is a diagram of objects $X_0, \cdots, X_n \in \Ob(\mathcal{C})$ and a sequence of maps.
+
+This defines an $\infty\dash$category, and there is a correspondence
+\[  
+\correspond{\text{ Functors } F: \mathcal{C} \to \mathcal{D}}
+&\iff
+\correspond{\infty\dash\text{Functors } \hat F: N(\mathcal{C}) \to N(\mathcal{D})}
+.\]
+Note that taking the [nerve](nerve) of a category preserves the usual categorical structure, since the objects are the 0-simplices and the morphisms are the 1-simplices.
+:::
 # Notes
 
 - If $\cat{C}$ has any initial or terminal objects, $\nerve{\cat C}$ is contractible..?
