@@ -54,3 +54,4 @@ $$
 - [infty categories](infty%20categories.md)
 - [slice category](slice%20category)
 - [comma category](comma%20category)
+- [span](span)
