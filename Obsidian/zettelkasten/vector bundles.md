@@ -19,6 +19,9 @@ Topics:
 
 # Definitions 
 
+- Notation: $\Vect_r(X)$: isomorphism classes of rank $r$ vector bundles over $X$.
+
+
 :::{.definition title="Rank of a vector bundle"}
 A **rank $n$ vector bundle** is a [fiber bundle](fiber%20bundle.md) in which the fibers $F$ have the structure of a vector space $k^n$ for some field $k$; the [structure group](Reduction%20of%20structure%20group.md) of such a bundle is a subset of $\GL(n, k)$.
 :::

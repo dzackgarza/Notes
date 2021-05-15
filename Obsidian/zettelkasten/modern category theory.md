@@ -35,3 +35,8 @@ aliases: ["category theory"]
 ## Higher Cats
 - [higher category](higher%20category)
 - [infinity categories](infinity%20categories.md)
+
+## Representation Theory
+
+- [blocks of a category](blocks%20of%20a%20category)
+- [semiorthogonal decomposition](semiorthogonal%20decomposition)
