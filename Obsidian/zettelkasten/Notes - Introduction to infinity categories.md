@@ -15,8 +15,7 @@ Dealing with size issues: take a [Grothendieck Universe](Grothendieck%20Universe
 
 :::{.remark}
 This is a specialized notion of a [Kan complex](Kan%20complex), and in particular all [infinity categories](infinity%20categories.md) are Kan complexes.
-All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
-Different to Kan complexes, which include all $i$.
+
 :::
 
 :::{.definition title="Functors between $\infty\dash$categories"}

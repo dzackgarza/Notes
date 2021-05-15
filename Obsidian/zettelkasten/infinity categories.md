@@ -44,8 +44,13 @@ An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$
 	\arrow["{\exists}"', from=3-1, to=1-3, dashed]
 \end{tikzcd}
 
+![](attachments/Pasted%20image%2020210515015420.png)
+
 admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex missing the $i$th face) for $0 < i < n$.
 :::
+
+All inner horns are fillable, i.e. [simplicial set](simplicial%20set.md) are *inner* Kan complexes.
+Different to Kan complexes, which include all $i$.
 
 # Notes
 
@@ -60,4 +65,4 @@ admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex mis
 - Can take a [homotopy category](homotopy%20category.md)
 - For each $n \geq 0$ there is a cat $\Delta[n] = \nerve{\ts{0 \leq  1 \leq \cdots \leq n}}$.
 - Commutative triangles in $\cat C$: objects in the functor category $\Fun(\Delta[2], \cat C)$
-- $\inftycat \injects \Kan$
+- $\inftycat \leq \Kan$: infinity categories are a subcategory of Kan complexes.
