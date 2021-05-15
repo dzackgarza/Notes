@@ -1,1 +1,3 @@
-![](attachments/Pasted%20image%2020210505015917.png)
+
+
+![Homotopy category](figures/image_2021-03-25-00-45-13.png)

@@ -242,14 +242,14 @@
   "active": "6d46595e173d52b0",
   "lastOpenFiles": [
     "zettelkasten/Model category.md",
+    "zettelkasten/homotopy category.md",
+    "zettelkasten/Serre fibration.md",
     "zettelkasten/Quillen adjunction.md",
     "zettelkasten/derived functor.md",
     "zettelkasten/Quillen equivalence.md",
     "zettelkasten/Categorical constructions in homotopy theory.md",
     "zettelkasten/basic topics in stable homotopy theory.md",
     "zettelkasten/infinity categories.md",
-    "zettelkasten/category theory.md",
-    "zettelkasten/Kan extension.md",
-    "zettelkasten/The cotangent complex and derived de Rham cohomology.md"
+    "zettelkasten/category theory.md"
   ]
 }
