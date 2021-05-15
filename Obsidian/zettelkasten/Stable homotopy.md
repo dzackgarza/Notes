@@ -6,7 +6,7 @@ See [motivations for stable homotopy theory](motivations%20for%20stable%20homoto
 
 # Basic Tools
 - [basic tools in homotopy of spaces](basic%20tools%20in%20homotopy%20of%20spaces)
-- [basic topics in stable homotopy theory](basic%20topics%20in%20stable%20homotopy%20theory).
+- [basic topics in stable homotopy theory](basic%20topics%20in%20stable%20homotopy%20theory.md).
 
 # Chromatic Homotopy
 See [Chromatic homotopy](Chromatic%20homotopy%20theory).

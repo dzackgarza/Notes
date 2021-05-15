@@ -18,7 +18,7 @@ Tags: #homotopy
 	- [[Symmetric Spectra]]
 	- [Bordism spectra](zettelkasten/Bordism%20spectra.md)
 	- [[Thom spectrum]]
-- [[Model category]]
+- [[Model category theory]]
 - [[Obstruction theory (homotopy)]]
 - [[Cohomology operations]]
 	- [[Massey product]]

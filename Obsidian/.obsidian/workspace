@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Model category.md",
+            "file": "zettelkasten/modern category theory.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Model category.md",
+                "file": "zettelkasten/modern category theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Model category.md"
+                "file": "zettelkasten/modern category theory.md"
               }
             }
           },
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5121879577637
+    "width": 511.5121879577637,
+    "collapsed": true
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Model category.md",
+                "file": "zettelkasten/modern category theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Model category.md",
+                "file": "zettelkasten/modern category theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +242,15 @@
   },
   "active": "6d46595e173d52b0",
   "lastOpenFiles": [
+    "zettelkasten/Untitled 6.md",
+    "zettelkasten/category theory.md",
+    "zettelkasten/Model category theory.md",
+    "zettelkasten/basic topics in stable homotopy theory.md",
     "zettelkasten/Model category.md",
+    "zettelkasten/localization (category theory).md",
     "zettelkasten/homotopy category.md",
     "zettelkasten/Serre fibration.md",
     "zettelkasten/Quillen adjunction.md",
-    "zettelkasten/derived functor.md",
-    "zettelkasten/Quillen equivalence.md",
-    "zettelkasten/Categorical constructions in homotopy theory.md",
-    "zettelkasten/basic topics in stable homotopy theory.md",
-    "zettelkasten/infinity categories.md",
-    "zettelkasten/category theory.md"
+    "zettelkasten/derived functor.md"
   ]
 }
