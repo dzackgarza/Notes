@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/infinity categories.md",
+            "file": "zettelkasten/Yoneda lemma.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/Yoneda lemma.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/infinity categories.md"
+                "file": "zettelkasten/Yoneda lemma.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/Yoneda lemma.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/Yoneda lemma.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "6d46595e173d52b0",
   "lastOpenFiles": [
+    "zettelkasten/Yoneda lemma.md",
     "zettelkasten/infinity categories.md",
     "zettelkasten/Notes - Introduction to infinity categories.md",
     "zettelkasten/homotopy category.md",
@@ -250,7 +251,6 @@
     "zettelkasten/homotopy sum.md",
     "zettelkasten/coproduct.md",
     "zettelkasten/higher category.md",
-    "zettelkasten/nerve.md",
-    "zettelkasten/BG.md"
+    "zettelkasten/nerve.md"
   ]
 }
