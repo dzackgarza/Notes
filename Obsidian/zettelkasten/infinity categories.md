@@ -2,33 +2,35 @@
 aliases: ["infinity categories", "infinity category"]
 ---
 
-#homotopy 
+Tags: #homotopy 
 
-[higher category](higher%20category)
-![Infty n category](figures/image_2021-03-25-00-42-39.png)
+# Topics
 
-- [[Kan complex]]
-- [[Kan extension]]
+- [higher category](higher%20category)
+- [Kan complex](Kan%20complex.md)
+- [Kan extension](Kan%20extension.md)
 - [Simplicial set](Simplicial%20set)
-- [[(n, m) category]]
-- [[zettelkasten/BG]]
 - [stable infinity category](stable%20infinity%20category)
-- [Waldhausen S construction](Waldhausen%20S%20construction)
 - [infinity groupoids](infinity%20groupoids)
+- [BG](classifying%20space.md)
 
 Models:
 - [quasicategory](quasicategory.md)
 - Complete [Segal spaces](Segal%20spaces)
+- [Gamma space](Gamma%20space.md)?
+
+Unsorted:
+- [Waldhausen S construction](Waldhausen%20S%20construction) for infinity categories
 
 
 # Notes
 
-The Segal condition, essentially characterises ∞-categories among simplicial ∞-groupoids
-
-- ∞-categories form a (large) ∞-category denoted Cat∞. 
-- ∞-groupoids form a (large) ∞-category denoted $\inftyGrpd$; it can be described explicitly as the [coherent nerve](coherent%20nerve) of the (simplicially enriched) category of [Kan complex](Kan%20complex.md). 
-- Given two ∞-categories $\cat D, \cat C$, there is a functor ∞-category $\Fun(\cat D, \cat C)$. 
-	- In terms of quasi-categories, the functor ∞-category is just the internal hom of [simplicial sets](simplicial%20set.md). 
+- The [Segal condition](Segal%20condition), essentially characterises ∞-categories among simplicial ∞-groupoids
+- ∞-categories form a (large) ∞-category. 
+- ∞-groupoids form a (large) ∞-category denoted $\inftyGrpd$
+	- It can be described explicitly as the [coherent nerve](coherent%20nerve) of the simplicially enriched category of [Kan complex](Kan%20complex.md). 
+- Given two ∞-categories $\cat D, \cat C$, there is a **functor ∞-category** $\Fun(\cat D, \cat C)$. 
+	- In terms of [quasicategories](quasicategory.md), the functor ∞-category is internal hom in [simplicial sets](simplicial%20set.md). 
 - Example of a functor ∞-category, for a given ∞-category $\cat I$ we have the ∞-category of presheaves $\Fun(\cat I\op , \inftyGrpd)$
 
 -In practice, ∞-categories are constructed from existing ones by general constructions that automatically guarantee that the result

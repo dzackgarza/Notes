@@ -368,7 +368,7 @@ Then $LF(R)$ is defined by taking the colimit over $\Delta$ yields the [geometri
 \[
 LF(R) \da \hocolim_{\Delta} F(S^\wait) = \abs{F(S^\wait)}
 \]
-So we can promote functors on polynomial rings to functors on simplicial commutative rings.
+So we can promote functors on polynomial rings to functors on [simplicial commutative rings](simplicial%20commutative%20rings).
 This ends up being a [Kan extension](Kan%20extension.md).
 There is a nice universal property here, namely that functors out of $\mathrm{sAlg}_k$ are equivalent to functors out of $\mathrm{CAlg}_k^{\text{poly}}$ that satisfy some additional properties.
 

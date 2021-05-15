@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Notes - Introduction to infinity categories.md",
+            "file": "zettelkasten/infinity categories.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Notes - Introduction to infinity categories.md",
+                "file": "zettelkasten/infinity categories.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Notes - Introduction to infinity categories.md"
+                "file": "zettelkasten/infinity categories.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Notes - Introduction to infinity categories.md",
+                "file": "zettelkasten/infinity categories.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Notes - Introduction to infinity categories.md",
+                "file": "zettelkasten/infinity categories.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -238,19 +238,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 798
+    "width": 1083
   },
   "active": "6d46595e173d52b0",
   "lastOpenFiles": [
-    "zettelkasten/2021-04-26_Introduction_to_Infty_Categories.md",
     "zettelkasten/infinity categories.md",
+    "zettelkasten/higher category.md",
+    "zettelkasten/BG.md",
+    "zettelkasten/Gamma space.md",
+    "zettelkasten/Notes - The cotangent complex and derived de Rham cohomology.md",
+    "zettelkasten/Notes - Introduction to infinity categories.md",
+    "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
+    "zettelkasten/2021-04-26_Introduction_to_Infty_Categories.md",
     "zettelkasten/Kan extension.md",
-    "zettelkasten/Untitled 6.md",
-    "zettelkasten/category theory.md",
-    "zettelkasten/Model category theory.md",
-    "zettelkasten/basic topics in stable homotopy theory.md",
-    "zettelkasten/Model category.md",
-    "zettelkasten/localization (category theory).md",
-    "zettelkasten/homotopy category.md"
+    "zettelkasten/Untitled 6.md"
   ]
 }
