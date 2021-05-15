@@ -27,39 +27,16 @@ $$
 
 # Topics
 
-- Universal Properties
-- [limit](limit) and [colimits](colimit.md): 
-	- Examples:
-		- Products
-		- Quotients
-		- Kernels
-		- Completions
-		- Free products
 - [adjunction](adjunction.md)
 - [Yoneda lemma](Yoneda%20lemma)
 - [isomorphism of functors](isomorphism%20of%20functors)
 - [equivalence of categories](equivalence%20of%20categories.md)
-- [Day convolution](Day%20convolution)
-- [coend](coend.md)
+- [[continuous functor]]
 
-- [Kan extension](Kan%20extension.md)
-
-## Duality
-
-- Reverse arrows and redefine composition in $C$ to obtain $C^{op}$
-- Then every "thing" in $C$ has a corresponding "thing" in $C^{op}$, which we call a co-"thing".
-  - Products and Coproducts
-  - Kernels and Cokernels
-  - Limits and Colimits
-- Can often obtain two conclusions for the price of one!
-- Duality is an involution
-  - i.e., a co-co-$X$ is just an $X$
-- Canonical Example: Vector spaces $V$ and their duals $V^*$ over a field $k$
-  - $V^* = \{\phi: V \rightarrow k\}$ where $\phi$ is linear
-  - $V \not\cong V*$, but $V \cong V^{**}$
-- A very powerful example: Poincare Duality
-  - The $k$th homology group of an $n$-dimensional manifold  is isomorphic $(n-k)$th cohomology group
-  - $H^k(M) \cong H_{n-k}(M)$.
+- Limits ad universal properties
+	- [coproduct](coproduct)
+	- [cokernel](cokernel)
+	- [colimit](colimit.md)
 
 ## Objects
 
@@ -68,3 +45,9 @@ $$
 - [vector space object](vector%20space%20object)
 - [ring object](ring%20object)
 - [simplicial object](simplicial%20object)
+
+## Higher Category Theory?
+
+- [Kan extension](Kan%20extension.md)
+- [Day convolution](Day%20convolution)
+- [coend](coend.md)
