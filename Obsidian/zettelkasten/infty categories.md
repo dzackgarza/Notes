@@ -13,4 +13,4 @@ aliases: ["infinity categories", "infinity category"]
 - [[(n, m) category]]
 - [[zettelkasten/BG]]
 - [stable infinity category](stable%20infinity%20category)
-- [[Waldhausen S cons]]
+- [Waldhausen S construction](Waldhausen%20S%20construction)
