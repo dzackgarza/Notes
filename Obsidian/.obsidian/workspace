@@ -244,14 +244,14 @@
   "active": "5575e604432a539a",
   "lastOpenFiles": [
     "zettelkasten/Hensel's Lemma.md",
+    "zettelkasten/Ring of integers.md",
+    "zettelkasten/Complete ring.md",
     "zettelkasten/Witt Vectors.md",
     "zettelkasten/p-adic integers.md",
     "zettelkasten/Morava E theory.md",
     "zettelkasten/scheme.md",
     "zettelkasten/regular ring.md",
     "zettelkasten/category theory.md",
-    "Quick_Notes/2021-05-06.md",
-    "zettelkasten/lax functor.md",
-    "zettelkasten/monoid object.md"
+    "Quick_Notes/2021-05-06.md"
   ]
 }

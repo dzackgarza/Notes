@@ -31,7 +31,7 @@ Tags: #numbertheory
 
 See [algebraic number theory](algebraic%20number%20theory)
 
-- [[Ring of integers]]
+- [[ring of integers]]
 -  Archimedean field
 - [[ramified primes]]
 
