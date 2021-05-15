@@ -37,6 +37,7 @@ is again an ∞-category,
 - Taking the homotopy category: same objects, take homs as $\pi_0 \cat{C}(x, y)$
 - For each $n \geq 0$ there is an ∞-category $\Delta[n]$ which is the nerve of the linearly ordered set $\ts{0 \leq  1 \leq \cdots \leq n}$.
 - Commutative triangle in an ∞-category $\cat C$ means instead ‘object in the functor ∞-category $\Fun(\Delta[2], \cat C)$
+- Pullbacks: limits over $A_1 \to B \from A_2$
 - Fibers: for an object $b\in B \in \inftyGrpd$, fibers are pullbacks over the morphism $s_b: \one \to B$ that selects the object $b\in B$
 
 \begin{tikzcd}
