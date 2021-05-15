@@ -1,0 +1,2 @@
+- Slogan: If a polynomial $p(x)$ has a root  $r$ modulo a prime $p$, then $r$ corresponds to a unique root of $p(x)$ modulo any $p^n$ gotten by iteratively "lifting" solutions.
+- Let $K\in \Field$ b 

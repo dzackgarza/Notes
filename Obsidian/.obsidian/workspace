@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Witt Vectors.md",
+            "file": "zettelkasten/Hensel's Lemma.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md",
+                "file": "zettelkasten/Hensel's Lemma.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md"
+                "file": "zettelkasten/Hensel's Lemma.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md",
+                "file": "zettelkasten/Hensel's Lemma.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Witt Vectors.md",
+                "file": "zettelkasten/Hensel's Lemma.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,15 +243,15 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
+    "zettelkasten/Hensel's Lemma.md",
     "zettelkasten/Witt Vectors.md",
+    "zettelkasten/p-adic integers.md",
     "zettelkasten/Morava E theory.md",
     "zettelkasten/scheme.md",
     "zettelkasten/regular ring.md",
     "zettelkasten/category theory.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/lax functor.md",
-    "zettelkasten/monoid object.md",
-    "zettelkasten/quasicoherent sheaf.md",
-    "zettelkasten/tannaka duality.md"
+    "zettelkasten/monoid object.md"
   ]
 }
