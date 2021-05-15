@@ -28,3 +28,4 @@
 - A morphism of ∞-groupoids $X \to B$ can be interpreted as a [family](family) of ∞-groupoids parametrised by $B$, namely the fibres $X_b$.
 	- Equivalently, a presheaf $B\to \inftyGrpd$
 - Symmetric monoidal $\infty\dash$categories: subsumed by the theory of $\infty\dash$operads.
+- $\s\inftyGrpd = \Fun(\Delta\op, \inftyGrpd)$
