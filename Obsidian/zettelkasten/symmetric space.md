@@ -1,1 +1,2 @@
-A **symmetric space** $F$ is a $\Top_*$ [enriched functor](enriched%20functor) $F: \Sigma \to \Top_*$
+A **symmetric space** $F$ is a $\Top_*$ [enriched functor](enriched%20functor) $F: \Sigma \to \Top_*$,  where $\Sigma$ is the category whose objects are $\NN$ and 
+$$\Sigma(a, b)=\left\{\begin{array}{ll}\left(\Sigma_{a}\right)_{+} & \text {if } a=b \\ * & \text { if } a \neq b .\end{array}\right.$$
