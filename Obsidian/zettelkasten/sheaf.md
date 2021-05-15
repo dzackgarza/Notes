@@ -10,3 +10,6 @@ aliases: ["sheaves"]
 - Reflexive sheaf
 - [quasicoherent sheaf](../quasicoherent%20sheaf.md) over a [scheme](../scheme.md)	
 - [constructible sheaf](constructible%20sheaf)
+- [dualizing sheaf](dualizing%20sheaf)
+- [shriek](shriek)
+- [Verdier duality](Verdier%20duality)
