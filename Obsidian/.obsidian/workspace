@@ -20,8 +20,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/nerve.md",
-            "mode": "preview"
+            "file": "zettelkasten/simplicial set.md",
+            "mode": "source"
           }
         }
       }
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/simplicial set.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/nerve.md"
+                "file": "zettelkasten/simplicial set.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/simplicial set.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/simplicial set.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -253,6 +253,7 @@
   },
   "active": "e5176e450d83529e",
   "lastOpenFiles": [
+    "zettelkasten/simplicial set.md",
     "zettelkasten/nerve.md",
     "zettelkasten/Yoneda lemma.md",
     "zettelkasten/Untitled 6.md",
@@ -261,7 +262,6 @@
     "zettelkasten/homotopy category.md",
     "Quick_Notes/figures/image_2021-03-25-00-45-13.png",
     "zettelkasten/infinity groupoids.md",
-    "zettelkasten/homotopy sum.md",
-    "zettelkasten/coproduct.md"
+    "zettelkasten/homotopy sum.md"
   ]
 }
