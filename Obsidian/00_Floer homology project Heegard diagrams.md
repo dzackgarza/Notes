@@ -1,6 +1,6 @@
-Tags: #todo #floer 
-
 # References
+
+Tags: #topology 
 
 [Paper: Sarkar-Wang, An algorithm for computing some Heegaard-Floer homologies](https://arxiv.org/pdf/math/0607777.pdf)
 

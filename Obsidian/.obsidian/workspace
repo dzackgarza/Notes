@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/E_n ring spectrum.md",
+            "file": "00_Floer homology project Heegard diagrams.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/E_n ring spectrum.md",
+                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/E_n ring spectrum.md"
+                "file": "00_Floer homology project Heegard diagrams.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/E_n ring spectrum.md",
+                "file": "00_Floer homology project Heegard diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/E_n ring spectrum.md",
+                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,8 @@
   },
   "active": "84d0d5642b39432f",
   "lastOpenFiles": [
+    "00_Floer homology project Heegard diagrams.md",
+    "zettelkasten/Floer homology.md",
     "zettelkasten/E_n ring spectrum.md",
     "zettelkasten/Dirichlet's theorem.md",
     "zettelkasten/structure sheaf.md",
@@ -250,8 +252,6 @@
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/profinite group.md",
     "zettelkasten/profinite integers.md",
-    "zettelkasten/p-adic integers.md",
-    "zettelkasten/Untitled 9.md",
-    "zettelkasten/profinite set.md"
+    "zettelkasten/p-adic integers.md"
   ]
 }
