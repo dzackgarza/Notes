@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/monoid object.md",
+            "file": "zettelkasten/Lurie.md",
             "mode": "source"
           }
         }
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lax",
+                "query": "tannaka",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/monoid object.md",
+                "file": "zettelkasten/Lurie.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/monoid object.md"
+                "file": "zettelkasten/Lurie.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/monoid object.md",
+                "file": "zettelkasten/Lurie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/monoid object.md",
+                "file": "zettelkasten/Lurie.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,15 +254,15 @@
   },
   "active": "aa6bcae0855c5d26",
   "lastOpenFiles": [
+    "zettelkasten/Lurie.md",
+    "zettelkasten/Untitled 4.md",
+    "zettelkasten/quasicoherent sheaf.md",
+    "zettelkasten/ample bundle.md",
+    "zettelkasten/Abelian category.md",
     "zettelkasten/monoid object.md",
     "zettelkasten/lax functor.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/Enriched category.md",
-    "zettelkasten/Day convolution.md",
-    "zettelkasten/coend.md",
-    "zettelkasten/symmetric space.md",
-    "zettelkasten/category theory.md",
-    "zettelkasten/Stable homotopy.md",
-    "zettelkasten/nerve.md"
+    "zettelkasten/Day convolution.md"
   ]
 }
