@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/infinity groupoids.md",
-            "mode": "preview"
+            "file": "zettelkasten/nerve.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity groupoids.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/infinity groupoids.md"
+                "file": "zettelkasten/nerve.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/infinity groupoids.md",
+                "file": "zettelkasten/nerve.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity groupoids.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,8 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
+    "zettelkasten/nerve.md",
+    "zettelkasten/Segal spaces.md",
     "zettelkasten/infinity groupoids.md",
     "zettelkasten/quasicategory.md",
     "zettelkasten/category theory.md",
@@ -250,8 +252,6 @@
     "zettelkasten/infinity categories.md",
     "zettelkasten/Kan complex.md",
     "zettelkasten/quasicategories.md",
-    "zettelkasten/infty categories.md",
-    "zettelkasten/Segal spaces.md",
-    "zettelkasten/nerve.md"
+    "zettelkasten/infty categories.md"
   ]
 }

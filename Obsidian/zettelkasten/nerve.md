@@ -2,11 +2,15 @@
 $$
 \nerve{\wait}: \Cat \to \sSet
 $$
-A [simplicial set](simplicial%20set.md) whose skeleton is
-
-- $\nerve{\cat{C}}_0$: The objects of $x,y,z,\cdots \in \cat{C}$
-- $\nerve{\cat{C}}_1$: Morphisms $\cat{C}(x, y), \cat{C}(y, z), \cdots$
-- $\nerve{\cat{C}}_2$: Composable morphisms:
+- After application:
+$$
+\nerve{\cat C}: \Delta\op \to \Set \\ \quad
+[n] \mapsto \Fun([n], \cat C)
+$$
+- A [simplicial set](simplicial%20set.md) whose skeleton is
+	- $\nerve{\cat{C}}_0$: The objects of $x,y,z,\cdots \in \cat{C}$
+	- $\nerve{\cat{C}}_1$: Morphisms $\cat{C}(x, y), \cat{C}(y, z), \cdots$
+	- $\nerve{\cat{C}}_2$: Composable morphisms:
 
 % https://q.uiver.app/?q=WzAsMyxbMCwyLCJ4Il0sWzIsMiwieSJdLFsyLDAsInoiXSxbMCwxLCJmIiwyXSxbMSwyLCJnIiwyXSxbMCwyLCJnZiJdXQ== \\begin{tikzcd} && z \\\\ \\\\ x && y \\arrow\["f"', from=3-1, to=3-3\] \\arrow\["g"', from=3-3, to=1-3\] \\arrow\["gf", from=3-1, to=1-3\] \\end{tikzcd}
 - $\nerve{\cat{C}}_n$: tuples $f_0, f_1, \cdots, f_{n-1}$ of composable morphisms 
