@@ -7,4 +7,7 @@ Examples:
 
 Profinite completions
 
-Given $G\in \Grp$ a related profinite group $\hat{G} \in \Grp$, the profinite completion of G.[3] It is defined as the inverse limit of the groups G/N, where N runs through the normal subgroups in G of finite index
+Given $G\in \Grp$ a related profinite group $\hat{G} \in \Grp$, the profinite completion of G. It is defined as the 
+$$
+\inverselim_{N\normal G} G/N
+,$$ where N runs through the normal subgroups in G of finite index
