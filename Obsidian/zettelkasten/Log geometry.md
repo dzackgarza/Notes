@@ -1,1 +1,2 @@
-Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
+- Origins: Fontaine-Illusie-Kato (Deligne, Faltings) in the late 80s, schemes/stacks/derived schemes plus additional derived ("log") structure.
+- Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
