@@ -1,2 +1,2 @@
-A semistable degeneration $X\to \AA^1$: a [flat](flat%20morphism.md) [proper](proper) morphism where the fibers away from zero are smooth and the fiber over zero is an SNC divisor in the total space:
+A semistable degeneration $X\to \AA^1$: a [flat](flat%20morphism.md) [proper morphism](proper%20morphism.md) where the fibers away from zero are smooth and the fiber over zero is an SNC divisor in the total space:
 ![](attachments/Pasted%20image%2020210515182208.png)

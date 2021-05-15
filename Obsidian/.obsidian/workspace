@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/semistable degeneration.md",
+            "file": "zettelkasten/universally closed.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/semistable degeneration.md",
+                "file": "zettelkasten/universally closed.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/semistable degeneration.md"
+                "file": "zettelkasten/universally closed.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/semistable degeneration.md",
+                "file": "zettelkasten/universally closed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/semistable degeneration.md",
+                "file": "zettelkasten/universally closed.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -244,15 +244,15 @@
   },
   "active": "d13a62d5c9c798a1",
   "lastOpenFiles": [
+    "zettelkasten/universally closed.md",
+    "zettelkasten/proper morphism.md",
     "zettelkasten/semistable degeneration.md",
+    "zettelkasten/proper.md",
     "zettelkasten/flat.md",
     "zettelkasten/Log geometry.md",
     "zettelkasten/Untitled 9.md",
     "zettelkasten/Grothendieck-Witt.md",
     "zettelkasten/sheaf.md",
-    "zettelkasten/simplicial set.md",
-    "zettelkasten/modern category theory.md",
-    "zettelkasten/simplicial object.md",
-    "zettelkasten/scheme.md"
+    "zettelkasten/simplicial set.md"
   ]
 }
