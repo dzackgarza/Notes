@@ -42,6 +42,9 @@ See [variety](variety.md)
 - [geometrically connected scheme](geometrically%20connected%20scheme)
 - [quasi-affine](quasi-affine)
 - [locally quasi-finite](locally%20quasi-finite)
+- [singular support](singular%20support)
+- [constructible sheaf](constructible%20sheaf)
+- [[characteristic cycl]]
 
 # Results
 
