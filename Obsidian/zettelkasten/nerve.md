@@ -1,6 +1,7 @@
 - Provides a functor to [simplicial sets](simplicial%20set.md)
 $$
-\nerve{\wait}: \Cat \to \sSet = \Fun(\Delta\op, \Set) = \Presh(\Delta)
+\nerve{\wait}: \Cat \to \sSet \quad
+\cat{C} \mapsto \nerve{\cat C}
 $$
 - After application:
 $$
