@@ -31,7 +31,6 @@ $$
 - [Yoneda lemma](Yoneda%20lemma)
 - [isomorphism of functors](isomorphism%20of%20functors)
 - [equivalence of categories](equivalence%20of%20categories.md)
-- [[continuous functor]]
 
 - Limits ad universal properties
 	- [coproduct](coproduct)
@@ -51,3 +50,4 @@ $$
 - [Kan extension](Kan%20extension.md)
 - [Day convolution](Day%20convolution)
 - [coend](coend.md)
+- [continuous functor](continuous%20functor)

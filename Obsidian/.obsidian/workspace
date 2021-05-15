@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/category theory.md",
+            "file": "zettelkasten/regular ring.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/category theory.md",
+                "file": "zettelkasten/regular ring.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/category theory.md"
+                "file": "zettelkasten/regular ring.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/category theory.md",
+                "file": "zettelkasten/regular ring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/category theory.md",
+                "file": "zettelkasten/regular ring.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,8 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
+    "zettelkasten/regular ring.md",
+    "zettelkasten/scheme.md",
     "zettelkasten/category theory.md",
     "Quick_Notes/2021-05-06.md",
     "zettelkasten/lax functor.md",
@@ -250,8 +252,6 @@
     "zettelkasten/quasicoherent sheaf.md",
     "zettelkasten/tannaka duality.md",
     "zettelkasten/Lurie.md",
-    "zettelkasten/tensor category.md",
-    "zettelkasten/Day convolution.md",
-    "zettelkasten/Untitled 4.md"
+    "zettelkasten/tensor category.md"
   ]
 }
