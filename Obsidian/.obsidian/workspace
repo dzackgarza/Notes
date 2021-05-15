@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Kan complex.md",
+            "file": "zettelkasten/infinity groupoids.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Kan complex.md",
+                "file": "zettelkasten/infinity groupoids.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Kan complex.md"
+                "file": "zettelkasten/infinity groupoids.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Kan complex.md",
+                "file": "zettelkasten/infinity groupoids.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Kan complex.md",
+                "file": "zettelkasten/infinity groupoids.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,8 +243,8 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
-    "zettelkasten/Kan complex.md",
     "zettelkasten/infinity groupoids.md",
+    "zettelkasten/Kan complex.md",
     "zettelkasten/infinity categories.md",
     "zettelkasten/quasicategories.md",
     "zettelkasten/infty categories.md",
