@@ -10,6 +10,9 @@
 - [Whitney Embedding](zettelkasten/Whiteney%20embedding%20theorem.md)
 - [Generalized Poincare Conjectures](zettelkasten/Generalized%20Poincare%20Conjectures.md)
 
+[[[z:zettels?tag=homotopy]]
+
+
 ## Algebraic Geometry
 
 
