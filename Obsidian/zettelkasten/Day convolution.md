@@ -24,6 +24,11 @@ where $F\hat\tensor G$ is the following left [Kan extension](Kan%20extension.md)
 
 Here the diagram is not required to commute, but rather satisfy some universal property. #todo
 
+\[
+\cat{C}\cat{D}(F\hat\tensor G, ?) \cong \cat{C}^2\cat{D}(\tensor_D \circ (F, G), \,\, ? \circ \tensor_C)
+.\]
+
+
 Equivalently, define by the following [[coend]]:
 \[
 F\hat\tensor G(\wait) \da \int^{x, y\in \cat{C}^{\times 2}} 
