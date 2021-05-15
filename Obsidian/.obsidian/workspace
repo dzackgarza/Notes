@@ -245,6 +245,7 @@
   "active": "d13a62d5c9c798a1",
   "lastOpenFiles": [
     "zettelkasten/Log geometry.md",
+    "zettelkasten/stalk.md",
     "zettelkasten/semistable degeneration.md",
     "zettelkasten/proper morphism.md",
     "zettelkasten/universally closed.md",
@@ -252,7 +253,6 @@
     "zettelkasten/flat.md",
     "zettelkasten/Untitled 9.md",
     "zettelkasten/Grothendieck-Witt.md",
-    "zettelkasten/sheaf.md",
-    "zettelkasten/simplicial set.md"
+    "zettelkasten/sheaf.md"
   ]
 }
