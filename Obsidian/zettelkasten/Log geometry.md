@@ -2,5 +2,6 @@
 	- Examples:
 		- A pair $(X, D)$ of a smooth scheme/stack and $D$ a smooth divisor
 		- Or $D$ a toroidal embedding, remembers the boundary $D$
+			- [Etale locally](Etale%20locally) isomorphic to the embedding of a toric boundary
 		- Think about this like ""$X$ with a marked point on the boundary"
 - Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
