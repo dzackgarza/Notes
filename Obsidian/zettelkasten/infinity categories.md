@@ -24,3 +24,5 @@ Models:
 # Notes
 
 The Segal condition, essentially characterises ∞-categories among simplicial ∞-groupoids
+
+- ∞-categories form a (large) ∞-category denoted Cat∞. ∞-groupoids form a (large) ∞-category denoted S; it can be described explicitly as the coherent nerve of the (simplicially enriched) category of Kan complexes. Given two ∞-categories D, C, there is a functor ∞-category Fun(D, C). In terms of quasi-categories, the functor ∞-category is just the internal hom of simplicial sets. As an important example of a functor ∞-category, for a given ∞-category I we have the ∞-category of presheaves Fun(I op , S),
