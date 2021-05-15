@@ -2,7 +2,7 @@
 
 ? #todo
 
-See [[Serre's criterion]]
+See [Serre's criterion](Serre's%20criterion)
 
 # Results
 

@@ -1,5 +1,6 @@
 ---
 date: 2021-04-28 17:04:58
+aliases: ["Witt", "Witt vector"]
 ---
 
 > Reference: AWS 2019 Background Notes

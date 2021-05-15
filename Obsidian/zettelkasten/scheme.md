@@ -23,6 +23,8 @@ See [variety](variety.md)
 - [completion](completion.md)
 - [localization](localization.md)
 - [integral closure](integral%20closure)
+- [reduced ring](reduced%20ring)
+- [Dedekind domain](Dedekind%20domain)
 
 # Topics
 
