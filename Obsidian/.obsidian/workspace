@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/symmetric space.md",
+            "file": "zettelkasten/Day convolution.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/symmetric space.md",
+                "file": "zettelkasten/Day convolution.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/symmetric space.md"
+                "file": "zettelkasten/Day convolution.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/symmetric space.md",
+                "file": "zettelkasten/Day convolution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/symmetric space.md",
+                "file": "zettelkasten/Day convolution.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,8 +254,8 @@
   },
   "active": "aa6bcae0855c5d26",
   "lastOpenFiles": [
-    "zettelkasten/symmetric space.md",
     "zettelkasten/Day convolution.md",
+    "zettelkasten/symmetric space.md",
     "zettelkasten/coend.md",
     "zettelkasten/category theory.md",
     "zettelkasten/Stable homotopy.md",
