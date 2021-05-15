@@ -12,7 +12,8 @@
 
 ## Algebraic Geometry
 
-- [Etale group schemes and p-divisible groups](zettelkasten/2021-04-26_Etale_group_schemes_and_p-divisible_groups.md)
+
+- [2021-04-26_Etale_group_schemes_and_p-divisible_groups](zettelkasten/2021-04-26_Etale_group_schemes_and_p-divisible_groups.md)
 - [The section conjecture](zettelkasten/section%20conjecture.md)
 
 ## Number Theory
