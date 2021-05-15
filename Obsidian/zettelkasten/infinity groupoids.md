@@ -1,8 +1,6 @@
+- An ∞-groupoid is an [infinity category](infinity%20categories.md) in which all morphisms are invertible. 
  - 0-groupoid: A set
  -1-groupoid: An ordinary [groupoid](groupoid.md), 
-- An ∞-groupoid is an [infinity category](infinity%20categories.md) in which all morphisms are invertible. 
-	- Equivalently a space up to homotopy.
-	- Equivalently a [Kan complex](Kan%20complex.md)
 -Play the role analogous to sets in classical category theory
 	- Have homs that are again infinity groupoids.
 - Pullbacks in $\inftyGrpd$: limits over morphisms in $\inftyGrpd$ of $A_1 \to B \from A_2$

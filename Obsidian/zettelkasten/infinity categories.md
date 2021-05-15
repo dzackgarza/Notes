@@ -19,6 +19,7 @@ Tags: #homotopy
 - [stable infinity category](stable%20infinity%20category)
 - [infinity groupoids](infinity%20groupoids)
 - [BG](classifying%20space.md)
+- [homotopy type](homotopy%20type.md)
 
 Models:
 - [quasicategory](quasicategory.md)
