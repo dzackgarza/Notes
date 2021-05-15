@@ -11,6 +11,7 @@ Tags: #algebraicgeometry
 - [Quotient stack](Quotient%20stack)
 - [Gerbe](Gerbe)
 - [Algebraic space](Algebraic%20space)
+- [Artin stack](Artin%20stack)
 - [Deligne-Mumford stack](Deligne-Mumford%20stack)
 - [category fibered in groupoids](category%20fibered%20in%20groupoids)
 - Proper: ?
