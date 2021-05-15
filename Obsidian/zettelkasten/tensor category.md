@@ -1,0 +1,1 @@
+- Many local notions and constructions for $\rmod$ over some $R, or more generally quasi-coherent modules over some scheme, can actually be carried out in an arbitrary (linear) cocomplete tensor category
