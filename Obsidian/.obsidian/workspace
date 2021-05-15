@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "a4ef9af90d5921c0",
+        "id": "d13a62d5c9c798a1",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Reading/00_Floer homology project Heegard diagrams.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -75,6 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Reading/00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -108,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Reading/00_Floer homology project Heegard diagrams.md"
+              }
             }
           },
           {
@@ -140,6 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Reading/00_Floer homology project Heegard diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,6 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Reading/00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -232,17 +240,17 @@
     "width": 621,
     "collapsed": true
   },
-  "active": "a4ef9af90d5921c0",
+  "active": "d13a62d5c9c798a1",
   "lastOpenFiles": [
-    "zettelkasten/Floer homology.md",
     "00_Floer homology project Heegard diagrams.md",
+    "zettelkasten/$/theta$ function.md",
+    "zettelkasten/$/theta$ function 2.md",
+    "zettelkasten/$/theta$ function 1.md",
+    "zettelkasten/Floer homology.md",
     "zettelkasten/E_n ring spectrum.md",
     "zettelkasten/Dirichlet's theorem.md",
     "zettelkasten/structure sheaf.md",
     "zettelkasten/chromatic homotopy theory.md",
-    "zettelkasten/Stable homotopy.md",
-    "zettelkasten/profinite group.md",
-    "zettelkasten/profinite integers.md",
-    "zettelkasten/p-adic integers.md"
+    "zettelkasten/Stable homotopy.md"
   ]
 }
