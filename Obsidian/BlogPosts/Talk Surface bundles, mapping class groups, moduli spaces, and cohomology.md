@@ -28,7 +28,7 @@ Another way to build bundles: take a representation $\rho: \pi_1 B \to \operator
 
 Generalizes previous example: take real line cross surface and mod out by [deck transformations](deck%20transformations).
 
-Such bundles are called [[flat]] $\Sigma_g$ bundles, exactly those which admit a [flat connection](flat%20connection).
+Such bundles are called [[../zettelkasten/flat morphism]] $\Sigma_g$ bundles, exactly those which admit a [flat connection](flat%20connection).
 
 > Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. 
 > Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. 

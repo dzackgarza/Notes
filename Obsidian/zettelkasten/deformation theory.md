@@ -13,7 +13,7 @@ aliases: ["deformation theory"]
 - [Universal family](Universal%20family)
 - [pro-representability](pro-representability)
 - [local to global spectral sequence](local%20to%20global%20spectral%20sequence)
-- [flat](flat)
+- [flat morphism](flat%20morphism.md)
 - [Kähler differentials](Kähler%20differentials)
 - [cotangent complex](cotangent%20complex.md)
 - [complete intersection](complete%20intersection)
