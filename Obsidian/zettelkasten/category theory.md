@@ -32,10 +32,11 @@ $$
 - [isomorphism of functors](isomorphism%20of%20functors)
 - [equivalence of categories](equivalence%20of%20categories.md)
 
-- Limits ad universal properties
+- Limits and universal properties
 	- [coproduct](coproduct)
 	- [cokernel](cokernel)
 	- [colimit](colimit.md)
+	- [monomorphism](monomorphism)
 
 ## Objects
 

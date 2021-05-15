@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/nerve.md",
+            "file": "zettelkasten/split primes.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/split primes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/nerve.md"
+                "file": "zettelkasten/split primes.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/split primes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/split primes.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,15 +243,15 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
+    "zettelkasten/split primes.md",
+    "zettelkasten/monomorphism.md",
+    "zettelkasten/category theory.md",
     "zettelkasten/nerve.md",
     "zettelkasten/Segal spaces.md",
     "zettelkasten/infinity groupoids.md",
     "zettelkasten/quasicategory.md",
-    "zettelkasten/category theory.md",
     "zettelkasten/coproduct.md",
     "zettelkasten/infinity categories.md",
-    "zettelkasten/Kan complex.md",
-    "zettelkasten/quasicategories.md",
-    "zettelkasten/infty categories.md"
+    "zettelkasten/Kan complex.md"
   ]
 }
