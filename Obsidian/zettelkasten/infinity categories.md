@@ -32,6 +32,21 @@ Unsorted:
 
 What is an infinity category?
 
+:::{.definition title="$\infty\dash$Category"}
+An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$ such that any diagram of the form
+
+\begin{tikzcd}
+	{\Lambda_i^n} && {\mathcal{C}} \\
+	\\
+	{\Delta_n}
+	\arrow[from=1-1, to=3-1]
+	\arrow[from=1-1, to=1-3]
+	\arrow["{\exists}"', from=3-1, to=1-3, dashed]
+\end{tikzcd}
+
+admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex missing the $i$th face) for $0 < i < n$.
+:::
+
 # Notes
 
 
@@ -45,3 +60,4 @@ What is an infinity category?
 - Can take a [homotopy category](homotopy%20category.md)
 - For each $n \geq 0$ there is a cat $\Delta[n] = \nerve{\ts{0 \leq  1 \leq \cdots \leq n}}$.
 - Commutative triangles in $\cat C$: objects in the functor category $\Fun(\Delta[2], \cat C)$
+- $\inftycat \injects \Kan$

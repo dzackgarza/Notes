@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Yoneda lemma.md",
-            "mode": "preview"
+            "file": "zettelkasten/Notes - Introduction to infinity categories.md",
+            "mode": "source"
           }
         }
       },
       {
-        "id": "e5176e450d83529e",
+        "id": "33afc11724403c3e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/nerve.md",
+            "file": "zettelkasten/infinity categories.md",
             "mode": "source"
           }
         }
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/infinity categories.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/nerve.md"
+                "file": "zettelkasten/infinity categories.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/infinity categories.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/nerve.md",
+                "file": "zettelkasten/infinity categories.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -251,17 +251,17 @@
     "direction": "horizontal",
     "width": 621
   },
-  "active": "e5176e450d83529e",
+  "active": "33afc11724403c3e",
   "lastOpenFiles": [
-    "zettelkasten/nerve.md",
-    "zettelkasten/modern category theory.md",
-    "zettelkasten/simplicial set.md",
-    "zettelkasten/Yoneda lemma.md",
-    "zettelkasten/Untitled 6.md",
     "zettelkasten/infinity categories.md",
     "zettelkasten/Notes - Introduction to infinity categories.md",
+    "zettelkasten/Untitled 7.md",
+    "zettelkasten/nerve.md",
+    "zettelkasten/Yoneda lemma.md",
+    "zettelkasten/modern category theory.md",
+    "zettelkasten/simplicial set.md",
+    "zettelkasten/Untitled 6.md",
     "zettelkasten/homotopy category.md",
-    "Quick_Notes/figures/image_2021-03-25-00-45-13.png",
-    "zettelkasten/infinity groupoids.md"
+    "Quick_Notes/figures/image_2021-03-25-00-45-13.png"
   ]
 }
