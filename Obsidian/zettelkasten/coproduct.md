@@ -1,0 +1,1 @@
+A [colimit](colimit.md) indexed by a discrete category (that is, a set) is the same thing as a sum (coproduct).

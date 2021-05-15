@@ -244,6 +244,7 @@
   "active": "5575e604432a539a",
   "lastOpenFiles": [
     "zettelkasten/infinity groupoids.md",
+    "zettelkasten/quasicategory.md",
     "zettelkasten/category theory.md",
     "zettelkasten/coproduct.md",
     "zettelkasten/infinity categories.md",
@@ -251,7 +252,6 @@
     "zettelkasten/quasicategories.md",
     "zettelkasten/infty categories.md",
     "zettelkasten/Segal spaces.md",
-    "zettelkasten/nerve.md",
-    "zettelkasten/uniformizer.md"
+    "zettelkasten/nerve.md"
   ]
 }
