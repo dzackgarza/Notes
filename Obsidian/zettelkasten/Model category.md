@@ -26,3 +26,10 @@ aliases: ["model structure", "model category"]
 - [Weak equivalence](Weak%20equivalence.md)
 - [Cofibrant object](Cofibrant%20object)
 - [Cofibrant generation](Cofibrant%20generation)
+
+- [Quillen equivalence](Quillen%20equivalence)
+- [Cofibrant object](Cofibrant%20object)
+- [[Cofibrant generation]]
+- [[Weak equivalence]]
+
+[](category%20theory.md#^72ca2f)

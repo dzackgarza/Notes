@@ -62,6 +62,8 @@ $$
 
 # Homotopy 
 
+^72ca2f
+
 - [homotopy colimit](homotopy%20colimit)
 - [homotopy quotient](homotopy%20quotient)
 - [homotopy fixed points](homotopy%20fixed%20points)

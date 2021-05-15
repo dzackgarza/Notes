@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d8f032b607ae2277",
+        "id": "6d46595e173d52b0",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -239,17 +239,17 @@
     "direction": "horizontal",
     "width": 798
   },
-  "active": "d8f032b607ae2277",
+  "active": "6d46595e173d52b0",
   "lastOpenFiles": [
     "zettelkasten/Model category.md",
+    "zettelkasten/Categorical constructions in homotopy theory.md",
+    "zettelkasten/basic topics in stable homotopy theory.md",
     "zettelkasten/infinity categories.md",
     "zettelkasten/category theory.md",
-    "zettelkasten/Categorical constructions in homotopy theory.md",
     "zettelkasten/Kan extension.md",
     "zettelkasten/The cotangent complex and derived de Rham cohomology.md",
     "zettelkasten/Generalized Poincare Conjectures.md",
     "zettelkasten/inert primes.md",
-    "zettelkasten/Untitled 4.md",
-    "zettelkasten/ramified primes.md"
+    "zettelkasten/Untitled 4.md"
   ]
 }
