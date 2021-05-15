@@ -30,3 +30,8 @@ The Segal condition, essentially characterises ∞-categories among simplicial �
 - Given two ∞-categories $\cat D, \cat C$, there is a functor ∞-category $\Fun(\cat D, \cat C)$. 
 	- In terms of quasi-categories, the functor ∞-category is just the internal hom of [simplicial sets](simplicial%20set.md). 
 - Example of a functor ∞-category, for a given ∞-category $\cat I$ we have the ∞-category of presheaves $\Fun(\cat I\op , \inftyGrpd)$
+
+-In practice, ∞-categories are constructed from existing ones by general constructions that automatically guarantee that the result
+is again an ∞-category, 
+	- The construction typically uses universal properties in such a way that the resulting ∞-category is only defined up to equivalence
+- Taking the homotopy category: take $\pi_0 \cat{C}(x, y)$
