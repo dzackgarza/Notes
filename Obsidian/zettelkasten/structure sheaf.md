@@ -1,0 +1,1 @@
+Pick $R\in \CRing$. Put a sheaf of rings on $\spec R$ by localisation. You’ll get your ring back taking global sections.

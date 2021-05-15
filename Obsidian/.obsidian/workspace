@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/chromatic homotopy theory.md",
+            "file": "zettelkasten/structure sheaf.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/chromatic homotopy theory.md",
+                "file": "zettelkasten/structure sheaf.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/chromatic homotopy theory.md"
+                "file": "zettelkasten/structure sheaf.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/chromatic homotopy theory.md",
+                "file": "zettelkasten/structure sheaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/chromatic homotopy theory.md",
+                "file": "zettelkasten/structure sheaf.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,6 +243,7 @@
   },
   "active": "84d0d5642b39432f",
   "lastOpenFiles": [
+    "zettelkasten/structure sheaf.md",
     "zettelkasten/chromatic homotopy theory.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/profinite group.md",
@@ -251,7 +252,6 @@
     "zettelkasten/Untitled 9.md",
     "zettelkasten/profinite set.md",
     "zettelkasten/Commutative Algebra index.md",
-    "zettelkasten/completion.md",
-    "zettelkasten/Hensel's Lemma.md"
+    "zettelkasten/completion.md"
   ]
 }
