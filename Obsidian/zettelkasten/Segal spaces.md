@@ -1,0 +1,1 @@
+The appropriate notion of weak category in ∞-groupoids is that of Rezk complete Segal space
