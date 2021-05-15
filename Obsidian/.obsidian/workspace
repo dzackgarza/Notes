@@ -243,6 +243,8 @@
   },
   "active": "84d0d5642b39432f",
   "lastOpenFiles": [
+    "zettelkasten/profinite group.md",
+    "zettelkasten/p-adic integers.md",
     "zettelkasten/Untitled 9.md",
     "zettelkasten/profinite set.md",
     "zettelkasten/Commutative Algebra index.md",
@@ -250,8 +252,6 @@
     "zettelkasten/Hensel's Lemma.md",
     "zettelkasten/Witt Vectors.md",
     "zettelkasten/homotopy type.md",
-    "zettelkasten/The homotopy hypothesis.md",
-    "zettelkasten/infinity categories.md",
-    "zettelkasten/infinity groupoids.md"
+    "zettelkasten/The homotopy hypothesis.md"
   ]
 }

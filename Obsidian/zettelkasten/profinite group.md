@@ -2,4 +2,5 @@ A profinite group is a topological group that is isomorphic to the inverse limit
 
 Examples:
 
-- $\ZZ_p = \inverselim_n \ZZ/p^n$
+- The [p-adic integers](p-adic%20integers.md) 
+- The
