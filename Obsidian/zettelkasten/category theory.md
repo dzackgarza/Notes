@@ -25,25 +25,24 @@ $$
 A\star B \cong A \oplus B \oplus (A \otimes B) \oplus (B \otimes A) \oplus (A \otimes A \otimes B) \oplus (A \oplus B \oplus A) \oplus (B \oplus A \oplus A) \oplus ...
 $$
 
-# Big Ideas
+# Topics
 
 - Universal Properties
-  - Build new objects out of old ones, or "factor" objects into smaller ones
-  - Define things "up to a unique isomorphism"
-- [limit](limit)
-  - [colimit](colimit.md): 
-  - Examples:
-    - Products
-    - Quotients
-    - Kernels
-    - Completions
-    - Free products
+- [limit](limit) and [colimits](colimit.md): 
+	- Examples:
+		- Products
+		- Quotients
+		- Kernels
+		- Completions
+		- Free products
 - [adjunction](adjunction.md)
-- [Kan extension](Kan%20extension.md)
 - [Yoneda lemma](Yoneda%20lemma)
 - [isomorphism of functors](isomorphism%20of%20functors)
 - [equivalence of categories](equivalence%20of%20categories.md)
+- [Day convolution](Day%20convolution)
+- [coend](coend.md)
 
+- [Kan extension](Kan%20extension.md)
 
 ## Duality
 

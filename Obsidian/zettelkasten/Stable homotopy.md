@@ -23,6 +23,7 @@ Reference: [motivic homotopy](motivic%20homotopy.md)
 - [Goodwillie calculus](Goodwillie%20calculus)
 - [infty categories](infty%20categories.md)
 
+
 # Current Problems/Research
 - [[Redshift]]
 - [[The generating hypothesis]]
