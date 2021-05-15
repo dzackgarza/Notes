@@ -34,4 +34,4 @@ The Segal condition, essentially characterises ∞-categories among simplicial �
 -In practice, ∞-categories are constructed from existing ones by general constructions that automatically guarantee that the result
 is again an ∞-category, 
 	- The construction typically uses universal properties in such a way that the resulting ∞-category is only defined up to equivalence
-- Taking the homotopy category: take $\pi_0 \cat{C}(x, y)$
+- Taking the homotopy category: same objects, take homs as $\pi_0 \cat{C}(x, y)$
