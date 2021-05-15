@@ -35,3 +35,5 @@ The Segal condition, essentially characterises ∞-categories among simplicial �
 is again an ∞-category, 
 	- The construction typically uses universal properties in such a way that the resulting ∞-category is only defined up to equivalence
 - Taking the homotopy category: same objects, take homs as $\pi_0 \cat{C}(x, y)$
+- For each $n \geq 0$ there is an ∞-category $\Delta[n]$ which is the nerve of the linearly ordered set $\ts{0 \leq  1 \leq \cdots \leq n}$.
+- Commutative triangle in an ∞-category $\cat C$ means instead ‘object in the functor ∞-category $\Fun(\Delta[2], \cat C)$
