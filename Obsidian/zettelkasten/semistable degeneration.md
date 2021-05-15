@@ -1,1 +1,1 @@
-A semistable degeneration $X\to \AA^1$: a flat proper morphism where the fibers away from zero are smooth and 
+A semistable degeneration $X\to \AA^1$: a flat proper morphism where the fibers away from zero are smooth and the fiber over zero is an SNC divisor in the total space
