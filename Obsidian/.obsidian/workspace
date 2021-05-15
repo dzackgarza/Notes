@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "84d0d5642b39432f",
+        "id": "a4ef9af90d5921c0",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "00_Floer homology project Heegard diagrams.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -78,7 +75,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -112,9 +108,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "00_Floer homology project Heegard diagrams.md"
-              }
+              "state": {}
             }
           },
           {
@@ -130,8 +124,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5121879577637,
-    "collapsed": true
+    "width": 511.5121879577637
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +140,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +167,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Floer homology project Heegard diagrams.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,10 +232,10 @@
     "width": 621,
     "collapsed": true
   },
-  "active": "84d0d5642b39432f",
+  "active": "a4ef9af90d5921c0",
   "lastOpenFiles": [
-    "00_Floer homology project Heegard diagrams.md",
     "zettelkasten/Floer homology.md",
+    "00_Floer homology project Heegard diagrams.md",
     "zettelkasten/E_n ring spectrum.md",
     "zettelkasten/Dirichlet's theorem.md",
     "zettelkasten/structure sheaf.md",
