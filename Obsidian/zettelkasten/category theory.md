@@ -45,9 +45,12 @@ $$
 - [ring object](ring%20object)
 - [simplicial object](simplicial%20object)
 
-## Higher Category Theory?
+## Advanced Topics
 
 - [Kan extension](Kan%20extension.md)
 - [Day convolution](Day%20convolution)
 - [coend](coend.md)
 - [continuous functor](continuous%20functor)
+- [infty categories](infty%20categories.md)
+- [slice category](slice%20category)
+- [comma category](comma%20category)

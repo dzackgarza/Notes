@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "44751feff7279052",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/nerve.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infty categories.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/infty categories.md"
+                "file": "zettelkasten/nerve.md"
               }
             }
           },
@@ -147,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/infty categories.md",
+                "file": "zettelkasten/nerve.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infty categories.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,8 +252,10 @@
     "width": 318,
     "collapsed": true
   },
-  "active": "5575e604432a539a",
+  "active": "44751feff7279052",
   "lastOpenFiles": [
+    "zettelkasten/nerve.md",
+    "zettelkasten/category theory.md",
     "zettelkasten/infty categories.md",
     "zettelkasten/uniformizer.md",
     "zettelkasten/Hensel's Lemma.md",
@@ -250,8 +263,6 @@
     "zettelkasten/Complete ring.md",
     "zettelkasten/Witt Vectors.md",
     "zettelkasten/p-adic integers.md",
-    "zettelkasten/Morava E theory.md",
-    "zettelkasten/scheme.md",
-    "zettelkasten/regular ring.md"
+    "zettelkasten/Morava E theory.md"
   ]
 }

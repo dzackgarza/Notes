@@ -1,3 +1,7 @@
+- Provides a functor
+$$
+\nerve{\wait}: \Cat \to \sSet
+$$
 A [simplicial set](simplicial%20set.md) whose skeleton is
 
 - $\nerve{\cat{C}}_0$: The objects of $x,y,z,\cdots \in \cat{C}$
