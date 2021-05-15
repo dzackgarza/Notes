@@ -1,0 +1,1 @@
+A **symmetric space** $F$ is a $\Top_*$ [enriched functor](enriched%20functor) $F: \Sigma \to \Top_*$

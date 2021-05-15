@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Day convolution.md",
+            "file": "zettelkasten/symmetric space.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/symmetric space.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Day convolution.md"
+                "file": "zettelkasten/symmetric space.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/symmetric space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/symmetric space.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,6 +254,7 @@
   },
   "active": "aa6bcae0855c5d26",
   "lastOpenFiles": [
+    "zettelkasten/symmetric space.md",
     "zettelkasten/Day convolution.md",
     "zettelkasten/coend.md",
     "zettelkasten/category theory.md",
@@ -262,7 +263,6 @@
     "zettelkasten/simplicial set.md",
     "zettelkasten/2021-04-26_Quasicategories.md",
     "zettelkasten/classifying space of a category.md",
-    "zettelkasten/classifying space.md",
-    "zettelkasten/fiber bundle.md"
+    "zettelkasten/classifying space.md"
   ]
 }
