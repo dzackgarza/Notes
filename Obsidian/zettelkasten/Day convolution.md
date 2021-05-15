@@ -9,7 +9,7 @@ $$
 \hat\tensor: \Fun(\cat C, \cat D)^{\times 2} &\to \Fun(\cat C, \cat D) \\
 (F, G) &\mapsto F\hat\tensor G
 $$
-as the following left [Kan extension](Kan%20extension.md):
+where $F\hat\tensor G$ is the following left [Kan extension](Kan%20extension.md):
 
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXGNhdHtDfV57XFx0aW1lcyAyfSJdLFsyLDAsIlxcY2F0e0R9XntcXHRpbWVzIDJ9Il0sWzIsMiwiXFxjYXR7RH0iXSxbMCwyLCJcXGNhdHtDfSJdLFswLDEsIihGLCBHKSJdLFsxLDIsIlxcd2FpdFxcdGVuc29yX0RcXHdhaXQiXSxbMCwzLCJcXHRlbnNvcl9DIiwyXSxbMywyLCJGXFxoYXRcXHRlbnNvciBHIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d
 \begin{tikzcd}
@@ -22,5 +22,13 @@ as the following left [Kan extension](Kan%20extension.md):
 	\arrow["{F\hat\tensor G}"', dashed, from=3-1, to=3-3]
 \end{tikzcd}
 
-Here $+$ denotes the symmetric monoidal product on $\cat{C}$?
+Here the diagram is not required to commute, but rather satisfy some universal property.
+
+Equivalently, define by the following [[coend]]:
+\[
+F\hat\tensor G(\wait) \da \int^{x, y\in \cat{C}^{\times 2}} 
+\cat{C}(x\tensor_C y, \wait) \tensor_D F(x) \tensor_D G(y)
+.\]
+
+
 
