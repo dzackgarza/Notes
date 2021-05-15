@@ -1,5 +1,5 @@
  - 0-groupoid: A set
- -1-groupoid: An ordinary groupoid, 
+ -1-groupoid: An ordinary [groupoid](groupoid.md), 
 - An ∞-groupoid is an [infinity category](infinity%20categories.md) in which all morphisms are invertible. 
 	- Equivalently a space up to homotopy.
 	- Equivalently a [Kan complex](Kan%20complex.md)
@@ -25,5 +25,7 @@
 - Maps of ∞-groupoids with codomain $\cat B$ form the objects of a [slice $\infty\dash$category](slice%20category) $\inftyGrpd_{/B}$
 - A morphism of ∞-groupoids $X \to B$ can be interpreted as a [family](family) of ∞-groupoids parametrised by $B$, namely the fibres $X_b$.
 	- Equivalently, a presheaf $B\to \inftyGrpd$
-- Symmetric monoidal $\infty\dash$categories: subsumed by the theory of $\infty\dash$operads.
+- [symmetric monoidal](Symmetric%20monoidal%20category.md) $\infty\dash$categories: subsumed by the theory of $\infty\dash$[operads](operads).
 - Simplicial $\inftyGrpd = \Fun(\Delta\op, \inftyGrpd)$
+- ∞-groupoids form a (large) ∞-category denoted $\inftyGrpd$
+	- It can be described explicitly as the [coherent nerve](coherent%20nerve) of the simplicially enriched category of [Kan complex](Kan%20complex.md). 

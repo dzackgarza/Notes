@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "zettelkasten/infinity categories.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -238,7 +238,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1083
+    "width": 621
   },
   "active": "6d46595e173d52b0",
   "lastOpenFiles": [
