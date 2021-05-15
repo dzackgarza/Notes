@@ -2,15 +2,9 @@
 aliases: ["category theory"]
 ---
 
-# Objects
 
-- [monoid object](monoid%20object)
-- [group object](group%20object)
-- [vector space object](vector%20space%20object)
-- [ring object](ring%20object)
-- [simplicial object](simplicial%20object)
 
-# Advanced Topics
+# Topics
 
 - [Kan extension](Kan%20extension.md)
 - [Day convolution](Day%20convolution)
@@ -23,15 +17,21 @@ aliases: ["category theory"]
 - [Tensored Category](Tensored%20Category)
 - [Enriched category](Enriched%20category.md)
 
+## Internal Objects
 
-# Homotopy 
+- [monoid object](monoid%20object)
+- [group object](group%20object)
+- [vector space object](vector%20space%20object)
+- [ring object](ring%20object)
+- [simplicial object](simplicial%20object)
+
+## Homotopy 
 
 ^72ca2f
-
 - [homotopy colimit](homotopy%20colimit)
 - [homotopy quotient](homotopy%20quotient)
 - [homotopy fixed points](homotopy%20fixed%20points)
 
-# Higher Cats
+## Higher Cats
 - [higher category](higher%20category)
 - [infinity categories](infinity%20categories.md)

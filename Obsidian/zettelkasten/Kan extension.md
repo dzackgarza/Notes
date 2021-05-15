@@ -4,7 +4,7 @@ aliases: ["kan extension"]
 
 Tags: #todo
 
-References: [infinity categories](infinity%20categories.md) | [Simplicial set](Simplicial%20set) | [2021-04-26_Introduction_to_Infty_Categories](2021-04-26_Introduction_to_Infty_Categories.md) 
+References: [infinity categories](infinity%20categories.md) | [Simplicial set](Simplicial%20set) | [Notes - Introduction to infinity categories](Notes%20-%20Introduction%20to%20infinity%20categories.md) 
 | [Kan complex](Kan%20complex)
 
 # Definition

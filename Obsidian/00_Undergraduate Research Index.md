@@ -52,7 +52,7 @@ date: 2021-04-27
 - [Standard category theory reference](zettelkasten/classical%20category%20theory.md)
 - [Quasicategories](zettelkasten/2021-04-26_Quasicategories.md)
 - [Simplicial Sets](zettelkasten/simplicial%20set.md)
-- [Basics of $\infty\dash$category theory](zettelkasten/2021-04-26_Introduction_to_Infty_Categories.md)
+- [Basics of $\infty\dash$category theory](zettelkasten/Notes%20-%20Introduction%20to%20infinity%20categories.md)
 
 ## Algebraic K-Theory and THH
 - [Why study K-theory?](zettelkasten/Why%20study%20K%20theory.md)
