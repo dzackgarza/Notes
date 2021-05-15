@@ -1,13 +1,14 @@
 - Provides a functor to [simplicial sets](simplicial%20set.md)
 $$
 \nerve{\wait}: \Cat \to \sSet \quad
-\cat{C} \mapsto \nerve{\cat C}
+\cat{C} \mapsto \nerve{\cat C}\in \Fun(\Delta\op, \Set)
 $$
 - After application:
 $$
 \nerve{\cat C}: \Delta\op \to \Set \\ \quad
 [n] \mapsto \Fun([n], \cat C)
 $$
+- So $\nerve{\cat C}(\wait) = \Fun(\wait, \cat C)$
 - A [simplicial set](simplicial%20set.md) whose skeleton is
 	- $\nerve{\cat{C}}_0$: The objects of $x,y,z,\cdots \in \cat{C}$
 	- $\nerve{\cat{C}}_1$: Morphisms $\cat{C}(x, y), \cat{C}(y, z), \cdots$
