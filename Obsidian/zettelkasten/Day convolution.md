@@ -4,7 +4,7 @@ aliases: ["convolution product"]
 
 See [end](coend.md) and [coend](coend.md).
 
-For $\cat{C}$ be [enriched](Enriched%20category.md) [symmetric monoidal](Symmetric%20monoidal%20category.md) category over $(\cat{D}, \tensor_D)$, and define a convolution product
+For $\cat{C}$ be a [symmetric monoidal](Symmetric%20monoidal%20category.md) category over another monoidal category $(\cat{D}, \tensor_D)$, and define a convolution product
 $$
 \hat\tensor: \Fun(\cat C, \cat D)^{\times 2} &\to \Fun(\cat C, \cat D) \\
 (F, G) &\mapsto F\hat\tensor G
@@ -22,7 +22,7 @@ where $F\hat\tensor G$ is the following left [Kan extension](Kan%20extension.md)
 	\arrow["{F\hat\tensor G}"', dashed, from=3-1, to=3-3]
 \end{tikzcd}
 
-Here the diagram is not required to commute, but rather satisfy some universal property.
+Here the diagram is not required to commute, but rather satisfy some universal property. #todo
 
 Equivalently, define by the following [[coend]]:
 \[
