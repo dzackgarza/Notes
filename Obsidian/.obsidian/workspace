@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/infinity categories.md",
+            "file": "zettelkasten/Notes - Introduction to infinity categories.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/Notes - Introduction to infinity categories.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/infinity categories.md"
+                "file": "zettelkasten/Notes - Introduction to infinity categories.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/Notes - Introduction to infinity categories.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/Notes - Introduction to infinity categories.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "6d46595e173d52b0",
   "lastOpenFiles": [
+    "zettelkasten/Notes - Introduction to infinity categories.md",
     "zettelkasten/infinity categories.md",
+    "zettelkasten/homotopy category.md",
+    "Quick_Notes/figures/image_2021-03-25-00-45-13.png",
     "zettelkasten/infinity groupoids.md",
     "zettelkasten/homotopy sum.md",
     "zettelkasten/coproduct.md",
     "zettelkasten/higher category.md",
     "zettelkasten/nerve.md",
-    "zettelkasten/BG.md",
-    "zettelkasten/Gamma space.md",
-    "zettelkasten/Notes - The cotangent complex and derived de Rham cohomology.md",
-    "zettelkasten/Notes - Introduction to infinity categories.md"
+    "zettelkasten/BG.md"
   ]
 }

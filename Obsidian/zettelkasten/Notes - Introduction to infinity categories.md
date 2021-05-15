@@ -12,7 +12,7 @@ tags:
 
 Dealing with size issues: take a [Grothendieck Universe](Grothendieck%20Universe) $\mathcal{U}$, which are the sets whose subsets are closed under all of the usual set operations (small).
 
-[infinity category](infinity%20categories.md)
+
 :::{.definition title="$\infty\dash$Category"}
 An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$ such that any diagram of the form
 
@@ -27,7 +27,6 @@ An $\infty\dash$category $\mathcal{C}$ is a (large) simplicial set $\mathcal{C}$
 
 admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex missing the $i$th face) for $0 < i < n$.
 :::
-
 
 :::{.remark}
 This is a specialized notion of a [Kan complex](Kan%20complex), and in particular all [infinity categories](infinity%20categories.md) are Kan complexes.

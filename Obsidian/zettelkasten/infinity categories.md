@@ -22,8 +22,12 @@ Models:
 Unsorted:
 - [Waldhausen S construction](Waldhausen%20S%20construction) for infinity categories
 
+# Blurbs
+
+What is an infinity category?
 
 # Notes
+
 
 - ∞-categories form a (large) ∞-category. 
 - The [Segal condition](Segal%20condition), essentially characterises ∞-categories among simplicial [infinity groupoids](infinity%20groupoids.md)
@@ -32,6 +36,6 @@ Unsorted:
 	- Example: for a given ∞-category $\cat I$ we have the ∞-category of [presheaves](presheaves) $\Fun(\cat I\op , \inftyGrpd)$
 -In practice, ∞-categories are constructed from existing ones by constructions that automatically guarantee that the result is again an ∞-category, 
 	- The construction typically uses universal properties in such a way that the resulting ∞-category is only defined up to equivalence
-- Can take 
+- Can take a [homotopy category](homotopy%20category.md)
 - For each $n \geq 0$ there is a cat $\Delta[n] = \nerve{\ts{0 \leq  1 \leq \cdots \leq n}}$.
-- Commutative triangle in $\cat C$: object in $\Fun(\Delta[2], \cat C)$
+- Commutative triangles in $\cat C$: objects in the functor category $\Fun(\Delta[2], \cat C)$
