@@ -2,4 +2,5 @@
 	- Examples:
 		- A pair $(X, D)$ of a smooth scheme/stack and $D$ a smooth divisor
 		- Or $D$ a toroidal embedding, remembers the boundary $D$
+		- Think about this like ""$X$ with a marked point on the boundary"
 - Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
