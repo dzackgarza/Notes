@@ -19,7 +19,7 @@ which takes a [poset](poset) to its poset category, where there is a unique morp
 $$
 \nerve{\cat C}(\wait) := \Fun(\wait, \cat{C}) \circ \mathcal{P}(\wait) = \Fun( \mathcal{P}(\wait), \cat{C})
 $$
-
+Thus $\nerve{\cat{C}}([n]) = \Fun([n], \cat{C})$ where $[n]$ is the poset category on $(\ts{0, 1, \cdots, n}, \leq)$. 
 # Notes
 
 - If $\cat{C}$ has any initial or terminal objects

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/simplicial set.md",
+            "file": "zettelkasten/nerve.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/simplicial set.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/simplicial set.md"
+                "file": "zettelkasten/nerve.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/simplicial set.md",
+                "file": "zettelkasten/nerve.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/simplicial set.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,8 +243,8 @@
   },
   "active": "5575e604432a539a",
   "lastOpenFiles": [
-    "zettelkasten/simplicial set.md",
     "zettelkasten/nerve.md",
+    "zettelkasten/simplicial set.md",
     "zettelkasten/2021-04-26_Quasicategories.md",
     "zettelkasten/classifying space of a category.md",
     "zettelkasten/classifying space.md",
