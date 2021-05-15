@@ -1,7 +1,5 @@
 ---
 date: 2020-11-28
-tags: 
-  - Unfiled
 ---
 
 # Introduction to [infty Categories](infinity%20categories.md)
