@@ -1,0 +1,1 @@
+Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
