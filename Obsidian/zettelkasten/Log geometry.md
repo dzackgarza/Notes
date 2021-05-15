@@ -1,2 +1,5 @@
 - Origins: Fontaine-Illusie-Kato (Deligne, Faltings) in the late 80s, schemes/stacks/derived schemes plus additional derived ("log") structure.
+	- Examples:
+		- A pair $(X, D)$ of a smooth scheme/stack and $D$ a smooth divisor
+		- Or $D$ a toroidal embedding, remembers the boundary $D$
 - Logarithmic geometry generalizes [[toroidal]] geometry to non-smooth settings.
