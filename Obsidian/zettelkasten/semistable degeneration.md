@@ -1,0 +1,1 @@
+A semistable degeneration $X\to \AA^1$: 
