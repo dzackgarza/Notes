@@ -30,12 +30,11 @@ Unsorted:
 - ∞-groupoids form a (large) ∞-category denoted $\inftyGrpd$
 	- It can be described explicitly as the [coherent nerve](coherent%20nerve) of the simplicially enriched category of [Kan complex](Kan%20complex.md). 
 - Given two ∞-categories $\cat D, \cat C$, there is a **functor ∞-category** $\Fun(\cat D, \cat C)$. 
-	- In terms of [quasicategories](quasicategory.md), the functor ∞-category is internal hom in [simplicial sets](simplicial%20set.md). 
-- Example of a functor ∞-category, for a given ∞-category $\cat I$ we have the ∞-category of presheaves $\Fun(\cat I\op , \inftyGrpd)$
-
+	- In terms of [quasicategories](quasicategory.md), the hom here is internal hom in [simplicial sets](simplicial%20set.md). 
+	- Example: for a given ∞-category $\cat I$ we have the ∞-category of [presheaves](presheaves) $\Fun(\cat I\op , \inftyGrpd)$
 -In practice, ∞-categories are constructed from existing ones by general constructions that automatically guarantee that the result
 is again an ∞-category, 
 	- The construction typically uses universal properties in such a way that the resulting ∞-category is only defined up to equivalence
-- Taking the homotopy category: same objects, take homs as $\pi_0 \cat{C}(x, y)$
-- For each $n \geq 0$ there is an ∞-category $\Delta[n]$ which is the nerve of the linearly ordered set $\ts{0 \leq  1 \leq \cdots \leq n}$.
-- Commutative triangle in an ∞-category $\cat C$ means instead ‘object in the functor ∞-category $\Fun(\Delta[2], \cat C)$
+- The [homotopy category](homotopy%20category.md): same objects, $\ho\cat{C}(x, y) := \pi_0 \cat{C}(x, y)$
+- For each $n \geq 0$ there is a cat $\Delta[n] = \nerve{\ts{0 \leq  1 \leq \cdots \leq n}}$.
+- Commutative triangle in $\cat C$: object in $\Fun(\Delta[2], \cat C)$
