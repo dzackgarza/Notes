@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Day convolution.md",
+            "file": "zettelkasten/lax functor.md",
             "mode": "source"
           }
         }
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"fiber functor",
+                "query": "lax",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/lax functor.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Day convolution.md"
+                "file": "zettelkasten/lax functor.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/lax functor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/lax functor.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,15 +254,15 @@
   },
   "active": "aa6bcae0855c5d26",
   "lastOpenFiles": [
+    "zettelkasten/lax functor.md",
+    "Quick_Notes/2021-05-06.md",
+    "zettelkasten/Enriched category.md",
     "zettelkasten/Day convolution.md",
     "zettelkasten/coend.md",
     "zettelkasten/symmetric space.md",
     "zettelkasten/category theory.md",
     "zettelkasten/Stable homotopy.md",
     "zettelkasten/nerve.md",
-    "zettelkasten/simplicial set.md",
-    "zettelkasten/2021-04-26_Quasicategories.md",
-    "zettelkasten/classifying space of a category.md",
-    "zettelkasten/classifying space.md"
+    "zettelkasten/simplicial set.md"
   ]
 }

@@ -1,0 +1,2 @@
+---
+aliases: ["lax", "la"]
