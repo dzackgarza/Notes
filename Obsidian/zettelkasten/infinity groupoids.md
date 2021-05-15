@@ -24,7 +24,7 @@
 - A colimit indexed by an ∞-groupoid is called a homotopy sum
 	- Similar to [coproduct](coproduct.md) in $\Cat$.
 	- Given a morphism of ∞-groupoids $\cat X \to \cat B$, $\cat X$ is the homotopy sum of its fibres.
-- Maps of ∞-groupoids with codomain $\cat B$ form the objects of a [slice category](slice%20category) $\inftyGrpd_{/B}$
+- Maps of ∞-groupoids with codomain $\cat B$ form the objects of a [slice $\infty\dash$category](slice%20category) $\inftyGrpd_{/B}$
 - A morphism of ∞-groupoids $X \to B$ can be interpreted as a [family](family) of ∞-groupoids parametrised by $B$, namely the fibres $X_b$.
 	- Equivalently, a presheaf $B\to \inftyGrpd$
-	- 
+- Symmetric monoidal $\infty\dash$categories: subsumed by the theory of $\infty\dash$operads.
