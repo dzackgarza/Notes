@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Day convolution.md",
+            "file": "zettelkasten/quasicoherent sheaf.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/quasicoherent sheaf.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Day convolution.md"
+                "file": "zettelkasten/quasicoherent sheaf.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/quasicoherent sheaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Day convolution.md",
+                "file": "zettelkasten/quasicoherent sheaf.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -254,15 +254,15 @@
   },
   "active": "aa6bcae0855c5d26",
   "lastOpenFiles": [
-    "zettelkasten/Day convolution.md",
-    "zettelkasten/tensor category.md",
-    "zettelkasten/Lurie.md",
-    "zettelkasten/Untitled 4.md",
     "zettelkasten/quasicoherent sheaf.md",
+    "zettelkasten/tannaka duality.md",
+    "zettelkasten/Lurie.md",
+    "zettelkasten/tensor category.md",
+    "zettelkasten/Day convolution.md",
+    "zettelkasten/Untitled 4.md",
     "zettelkasten/ample bundle.md",
     "zettelkasten/Abelian category.md",
     "zettelkasten/monoid object.md",
-    "zettelkasten/lax functor.md",
-    "Quick_Notes/2021-05-06.md"
+    "zettelkasten/lax functor.md"
   ]
 }

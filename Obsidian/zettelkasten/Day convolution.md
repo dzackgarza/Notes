@@ -26,7 +26,7 @@ where $F\hat\tensor G$ is the following left [Kan extension](Kan%20extension.md)
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXGNhdHtDfV57XFx0aW1lcyAyfSJdLFsyLDAsIlxcY2F0e0R9XntcXHRpbWVzIDJ9Il0sWzIsMiwiXFxjYXR7RH0iXSxbMCwyLCJcXGNhdHtDfSJdLFswLDEsIihGLCBHKSJdLFsxLDIsIlxcd2FpdFxcdGVuc29yX0RcXHdhaXQiXSxbMCwzLCJcXHRlbnNvcl9DIiwyXSxbMywyLCJGXFxoYXRcXHRlbnNvciBHIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d)
 
 
-Here the diagram is not required to commute, but rather satisfy some universal property. #todo
+Here the diagram is not required to commute, but rather satisfy some universal property: there is an equivalence of categories? #todo
 
 \[
 \cat{C}\cat{D}(F\hat\tensor G, ?) \cong \cat{C}^2\cat{D}(\tensor_D \circ (F, G), \,\, ? \circ \tensor_C)
