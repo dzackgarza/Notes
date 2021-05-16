@@ -245,6 +245,7 @@
   "active": "d13a62d5c9c798a1",
   "lastOpenFiles": [
     "zettelkasten/classical category theory.md",
+    "zettelkasten/abelian category.md",
     "zettelkasten/Abelian category.md",
     "zettelkasten/modern category theory.md",
     "zettelkasten/compact object.md",
@@ -252,7 +253,6 @@
     "zettelkasten/motivic homotopy.md",
     "zettelkasten/pure motive.md",
     "zettelkasten/mixed motive.md",
-    "zettelkasten/reciprocity conjecture.md",
-    "zettelkasten/smooth scheme.md"
+    "zettelkasten/reciprocity conjecture.md"
   ]
 }

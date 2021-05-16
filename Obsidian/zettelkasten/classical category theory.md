@@ -29,17 +29,19 @@ $$
 	- [full functor](full%20functor)
 	- [faithful functor](faithful%20functor)
 	- [adjunction](adjunction.md)
-- [Yoneda lemma](Yoneda%20lemma)
 - Limits and universal properties
 	- [coproduct](coproduct)
 	- [cokernel](cokernel)
 	- [colimit](colimit.md)
 	- [monomorphism](monomorphism)
+- Homological algebra
+	- [additive functor](additive%20functor)
+	- [abelian category](abelian%20category.md)
+	- [additive category](additive%20category)
+	- [monomorphism](monomorphism.md)
+- [Yoneda lemma](Yoneda%20lemma)
 - [isomorphism of functors](isomorphism%20of%20functors)
-- [additive functor](additive%20functor)
-- [abelian category](abelian%20category.md)
-- [additive category](additive%20category)
-
+- [subfunctor](subfunctor)
 
 # Notes
 
