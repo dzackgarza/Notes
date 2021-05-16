@@ -3,7 +3,6 @@ aliases: ["category theory"]
 ---
 
 
-
 # Topics
 
 - [Kan extension](Kan%20extension.md)
@@ -16,14 +15,20 @@ aliases: ["category theory"]
 - [Day convolution](Day%20convolution.md)
 - [Tensored Category](Tensored%20Category)
 - [Enriched category](Enriched%20category.md)
+- [linear category](linear%20category)
+- [continuous functor](continuous%20functor)
+- [quivers](quivers)
 
 ## Internal Objects
 
 - [monoid object](monoid%20object)
 - [group object](group%20object)
+- [module object](module%20object)
 - [vector space object](vector%20space%20object)
 - [ring object](ring%20object)
 - [simplicial object](simplicial%20object)
+- [compact object of a category](compact%20object%20of%20a%20category.md)
+- [Generators of a category](Generators%20of%20a%20category.md)
 
 ## Homotopy 
 
