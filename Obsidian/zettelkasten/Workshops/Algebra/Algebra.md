@@ -88,6 +88,7 @@ $$
 
 - Let $\FF_p$ be the finite field with $p$ elements, where $p$ is a prime.
   Show that the centers of $\GL_n(\FF_p)$ and $\SL_n(\FF_p)$ consist only of scalar matrices.
+  - Show that the scalars $\zeta$ that appear in scalar matrices $Z(\SL_n(\FF_p))$ are roots of unity in $\FF_p$, i.e. $\zeta^p = 1$.
 
 ## Warmup Problems
 
@@ -95,11 +96,12 @@ $$
 
 - Classify all groups of order $p^2$.
 
-- Prove that if $H\leq G$ is a proper subgrup, then $G$ is not a union of conjugates of $H$.
+- Prove that if $H\leq G$ is a proper subgroup, then $G$ can not be written as a union of conjugates of $H$.
 
   - Use this to prove that if $G = \Sym(X)$ is the group of permutations on a finite set $X$ with $\# X = n$, then there exists a $g\in G$ with no fixed points in $X$.
 
 - Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
+
   Prove that $G= H$ by induction on $\# H$ in the following way:
 
   - Letting $N\normal H$ be any nontrivial normal subgroup of $H$, use the inductive hypothesis to show that $H = GN$.
@@ -107,10 +109,8 @@ $$
   Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
   Set $N \da G \intersect Z$ and apply (1) to conclude.
 
+- Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%209.png](attachments/Untitled%209.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2010.png](attachments/Untitled%2010.png)
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2011.png](attachments/Untitled%2011.png)
 
