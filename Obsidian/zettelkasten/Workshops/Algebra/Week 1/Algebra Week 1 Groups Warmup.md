@@ -61,7 +61,8 @@ For everything that follows, assume $G$ is a finite group.
 
 ### Orders
 
-- Prove Lagrange's theorem
+- Prove Lagrange's theorem.
+- Prove Cauchy's theorem.
 - Prove that if $\# G$ is prime, then $G$ is cyclic
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
 - Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$

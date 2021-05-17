@@ -27,7 +27,7 @@ See also: [Lie group](Lie%20group) | [Lie algebra](Lie%20algebra) | [algebraic g
 - [Category O](Category%20O)
 - [Hecke algebra](Hecke%20algebra)
 	- [categorification](categorification)
-	- 
+- [Engel's theorem](Engel's%20theorem)
 # Results
 
 An irreducible representation of _G_ is completely determined by its character.
