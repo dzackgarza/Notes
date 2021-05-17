@@ -6,8 +6,12 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 
 ## Topics
 
--   Uniform convergence, M-Test
--   F\_\\sigma and G\_\\delta sets, pathological functions and continuity
+- Convergence
+	- The Cauchy criterion
+	-   Uniform convergence, 
+		-   $M$-Test
+-   $F\_\sigma$ and $G\_\delta$ sets, 
+-   Pathological functions and continuity
 -   Nowhere density, Baire category, Heine Borel
 -   Normed spaces
 -   Series and sequences, convergence, small tails, limsup and liminf, Cauchy criteria for sums and integrals
@@ -22,12 +26,13 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Discuss the $\limsup$ and $\liminf$ of a sequence of real numbers.
 - Give two different definitions for compactness in a metric space.
 - Find an example of a metric space with a closed and bounded subspace that is not compact.
-- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $a_n \ctz{n}$ and the tail $$\sum_{n > N} a_n \ctz{N}$$
+- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$ and the the tail is small in the following sense: $$\sum_{n > N} a_n \ctz{N}$$
+- Is it possible for a function $f:\RR
 
 
 ## Exercises
 
-- Show that a uniform limit of continuous function is continuous.
+- Prove the uniform limit theorem: a uniform limit of continuous function is continuous.
 - ![](../../attachments/Pasted%20image%2020210517004900.png)
 - ![](../../attachments/Pasted%20image%2020210517004915.png)
 - ![](../../attachments/Pasted%20image%2020210517004809.png)
