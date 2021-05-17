@@ -22,7 +22,7 @@
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 - Finite groups of order $\# G \leq 20$
 
-## Warmup Exercises
+## Review Exercises 
 
 For everything that follows, assume $G$ is a finite group.
 
@@ -84,11 +84,15 @@ $$
   - Prove that in fact *every* $\sigma \in S_n$ satisfies $\sigma \in \ker \phi$, so $\phi$ is the trivial morphism.
   - Does this hold if $n$ is odd?
 
+## Warmup Problems
+
+- Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
+
+- Classify all groups of order $p^2$.
+
+
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%207.png](attachments/Untitled%207.png)
 
-Prove that if G/Z(G) then G is abelian
-
-Classify all groups of order p^2
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%208.png](attachments/Untitled%208.png)
 
