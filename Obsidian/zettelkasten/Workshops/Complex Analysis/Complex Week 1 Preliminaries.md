@@ -44,6 +44,8 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 - ![](../../attachments/Pasted%20image%2020210517030008.png)
 - ![](../../attachments/Pasted%20image%2020210517030118.png)
 - ![](../../attachments/Pasted%20image%2020210517030226.png)
+- ![](../../attachments/Pasted%20image%2020210517030343.png)
+- ![](../../attachments/Pasted%20image%2020210517030440.png)
 
 ## Qual Problems
 
