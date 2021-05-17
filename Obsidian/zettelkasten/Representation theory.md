@@ -14,7 +14,7 @@
 
 [Hopf algebra](Hopf%20algebra.md)
 
-# [[Workshops/Algebra/Week 1/Algebra Week 1]]
+# [[Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup]]
 
 - [Lie algebra](Lie%20algebra)
 - [[Verma module]]

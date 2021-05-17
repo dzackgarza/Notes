@@ -1,3 +1,7 @@
+---
+title: Algebra Qual Prep Week 2
+---
+
 # Week 2
 
 [See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
@@ -5,11 +9,16 @@
 
 ## Topics
 
-- Special types of groups, the symmetric group, p-groups
-- Series of groups, solvable, simple, nilpotent; Jordan-Holder theorem
-- Group actions, orbit-stabilizer, class equation,
-- Cayley representation, permutation representation
-- 
+- Series of groups
+	- Solvable, 
+	- Simple, 
+	- Nilpotent; 
+- The Jordan-Holder theorem
+- Group actions, 
+	- Orbit-stabilizer
+	- The class equation,
+- The Cayley representation, 
+- The permutation representation
 
 
 ## Review Exercises 
@@ -52,6 +61,9 @@ Prove that there is an isomorphism of sets
 
 - Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.
 
+## Sylow Theory
+
+
 
 
 # Qual Problems
@@ -61,33 +73,6 @@ Prove that there is an isomorphism of sets
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](attachments/Untitled%2014.png)
 
 
-
-# Week 4
-
-- Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
-- Irreducible and prime elements, nilpotent, units
-- Radical, nilradical, spec and maxspec
-- Special types: domains, integral domains, Euclidean ⇒ PID ⇒ UFD ⇒?, Dedekind domains, Noetherian, Artinian
-- Zorn's lemma arguments
-- Bonus optional stuff: localization
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2015.png](attachments/Untitled%2015.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2016.png](attachments/Untitled%2016.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2017.png](attachments/Untitled%2017.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2018.png](attachments/Untitled%2018.png)
-
-Prove that a commutive ring with unit is a field if and only if its only ideals are {0} and the whole ring
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2019.png](attachments/Untitled%2019.png)
-
-Show the irreducibility criterion for polynomials f ∈ k[x] of degree 2 or 3: such a polynomial is irreducible iff it has no roots in the field k
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2020.png](attachments/Untitled%2020.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2021.png](attachments/Untitled%2021.png)
 
 
 

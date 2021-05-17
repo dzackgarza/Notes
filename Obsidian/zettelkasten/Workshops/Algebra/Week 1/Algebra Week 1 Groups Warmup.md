@@ -1,4 +1,8 @@
-# Week 1
+---
+title: Algebra Qual Prep Week 1
+---
+
+# Week 1: Finite Groups
 
 
 [See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
