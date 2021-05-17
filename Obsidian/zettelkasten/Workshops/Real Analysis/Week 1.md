@@ -39,7 +39,8 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Construct sequences of functions $\ts{f_n}_{n\in \NN}$ and $\ts{g_n}_{n\in \NN}$ which converge uniformly on some set $E$, and yet their product sequence $\ts{h_n}_{n\in \NN}$ with $h_n \da f_n g_n$ does *not* converge uniformly.
 	- Show that if $f_n, g_n$ are additionally bounded, then $h_n$ does converge uniformly.
 - Show that if $f_n: [a, b]\to \RR$ are continuously differentiable with derivatives $f_n'$, the sequence of derivatives $f_n'$ converges uniformly to some function $g$, and there exists *at least one* point $x_0$ such that $\lim_n f_n(x_0)$ exists, then $f_n \to f$ uniformly to some differentiable $f$, and $f' = g$.
-	- Find a sequence of 
+	- Find a sequence of functions such that 
+	
 	- Find a uniform limit of differentiable functions that is not differentiable.
 
 - ![](../../attachments/Pasted%20image%2020210517004900.png)
