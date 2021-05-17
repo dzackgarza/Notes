@@ -1,5 +1,5 @@
 ---
-title: Algebra Qual Prep Week 1: Groups Warmup
+title: "Algebra Qual Prep Week 1: Groups Warmup"
 ---
 
 # Week 1: Finite Groups
@@ -24,6 +24,7 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- Symmetric groups $S_n$
 	- Alternating groups $A_n$
 	- Dihedral groups $D_{n}$
+	- The quaternion group $Q_8$
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 	- $p\dash$groups
 	- Free groups $F_n$ (and presentations/relations)

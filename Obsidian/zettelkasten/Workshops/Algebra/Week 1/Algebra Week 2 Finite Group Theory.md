@@ -27,7 +27,7 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 	- The class equation,
 	- Burnside's formula
 	- Important actions
-		- Self-action by left translation
+		- Self-action by left translation (regular representation)
 		- Self-action by conjugation
 		- Coset action by left-translation
 		- Coset action by conjugation?
@@ -95,6 +95,8 @@ Prove that there is an isomorphism of sets
 \[
 \phi_x: G/\Stab_G(x) \mapsvia{\sim} X
 .\]
+
+- Show that $p$ groups have nontrivial center.
 
 
 ## Series of Groups

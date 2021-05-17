@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "7cc37618869bb461",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -78,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md"
+                "file": "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md"
               }
             }
           },
@@ -146,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,17 +251,17 @@
     "width": 621,
     "collapsed": true
   },
-  "active": "fe27f6df490343db",
+  "active": "7cc37618869bb461",
   "lastOpenFiles": [
+    "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
-    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
+    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 4.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Finite Groups.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1.md",
-    "zettelkasten/Workshops/Algebra/Week 1/Untitled.md",
-    "zettelkasten/Workshops/Algebra/Algebra.md"
+    "zettelkasten/Workshops/Algebra/Week 1/Untitled.md"
   ]
 }
