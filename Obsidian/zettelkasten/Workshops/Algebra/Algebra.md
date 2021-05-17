@@ -24,9 +24,11 @@
 
 ## Exercises
 
+For everything that follows, assume $
+
 - Prove Lagrange's theorem
 - Prove that if $\# G$ is prime, then $G$ is cyclic
-- Prove that for every $g\in G$
+- Prove that for every $g\in G$ with 
 
 Prove the following:
 
