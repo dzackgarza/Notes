@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
             "mode": "source"
           }
         }
@@ -24,7 +24,7 @@
       {
         "id": "1d4b3f5d279d9110",
         "type": "tabs",
-        "dimension": 55.73366214549939,
+        "dimension": 55.85696670776819,
         "children": [
           {
             "id": "9abb984b6bba57b7",
@@ -70,7 +70,7 @@
       {
         "id": "3ce32054145f32a1",
         "type": "tabs",
-        "dimension": 44.26633785450061,
+        "dimension": 44.14303329223181,
         "children": [
           {
             "id": "f02f888b50db72fe",
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md"
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "1a8046c8eb3daeb9",
   "lastOpenFiles": [
-    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
+    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 4.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Finite Groups.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1.md",
     "zettelkasten/Workshops/Algebra/Week 1/Untitled.md",
-    "zettelkasten/Workshops/Algebra/Algebra.md",
-    "zettelkasten/Workshops/Workshop Index.md"
+    "zettelkasten/Workshops/Algebra/Algebra.md"
   ]
 }

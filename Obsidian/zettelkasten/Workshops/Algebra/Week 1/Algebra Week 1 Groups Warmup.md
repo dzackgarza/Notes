@@ -106,14 +106,23 @@ $$
 
 ## Warmup Problems
 
-- Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
+- (**Important**)
+	Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
 
-- Classify all groups of order $p^2$.
+- (**Important**)
+	Classify all groups of order $p^2$.
+
+
+
+- (**Important**)
+	Show that if $H\leq G$ and $[G: H] = 2$ then $H$ is normal.
+	
+	- Suppose that the same result holds with 2 replaced by $p$ defined as the smallest prime factor of $\# G$
 
 - Prove that if $H\leq G$ is a proper subgroup, then $G$ can not be written as a union of conjugates of $H$.
 
   - Use this to prove that if $G = \Sym(X)$ is the group of permutations on a finite set $X$ with $\# X = n$, then there exists a $g\in G$ with no fixed points in $X$.
-
+ 
 - Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
 
   Prove that $G= H$ by induction on $\# H$ in the following way:
