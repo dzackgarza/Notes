@@ -94,8 +94,11 @@ $$
 
   - Use this to prove that if $G = \Sym(X)$ is the group of permutations on a finite set $X$ with $\# X = n$, then there exists a $g\in G$ with no fixed points in $X$.
 
+- Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
+  Prove that $G= H$ by induction on $\# H$ in the following way:
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%208.png](attachments/Untitled%208.png)
+  - Letting $N\normal H$ be any nontrivial normal subgroup of $H$, use the inductive hypothesis to show that $H = GN$.
+
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%209.png](attachments/Untitled%209.png)
 
