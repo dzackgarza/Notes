@@ -32,7 +32,7 @@ For everything that follows, assume $G$ is a finite group.
 - Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$
 - Prove the *fundamental theorem of cosets*:
 $$
-xH = yH \iff 
+xH = yH \iff x\inv y\in H \iff y\inv x \in H
 $$
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%201.png](attachments/Untitled%201.png)
