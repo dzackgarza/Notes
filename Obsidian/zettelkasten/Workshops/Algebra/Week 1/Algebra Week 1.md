@@ -1,4 +1,4 @@
-# Weeks 1 and 2
+# Week 1
 
 
 [See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)

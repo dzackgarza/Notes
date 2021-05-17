@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Algebra/Algebra.md",
-            "mode": "preview"
+            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
+            "mode": "source"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra.md"
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "1a8046c8eb3daeb9",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Algebra/Week 1/Untitled.md",
+    "zettelkasten/Workshops/Algebra/Algebra.md",
+    "zettelkasten/Workshops/Workshop Index.md",
     "zettelkasten/Workshops/Algebra/Workshop Materials 22af9a14367c44e585cb4aefe9e11862.md",
     "zettelkasten/Untitled 10.md",
     "zettelkasten/Commutative Algebra index.md",
     "zettelkasten/characteristic class.md",
     "zettelkasten/vector bundles.md",
     "zettelkasten/h-principle.md",
-    "zettelkasten/Untitled 9.md",
-    "zettelkasten/infinity categories.md",
-    "zettelkasten/Model category theory.md",
-    "zettelkasten/simplicial category.md"
+    "zettelkasten/Untitled 9.md"
   ]
 }
