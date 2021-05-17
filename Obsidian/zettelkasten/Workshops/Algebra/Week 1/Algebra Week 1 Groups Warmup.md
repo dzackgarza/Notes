@@ -158,16 +158,16 @@ $$
 
 ## Qual Problems
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](figures/Untitled%2013.png)
+![](figures/Untitled%2013.png)
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](figures/Untitled%2014.png)
+![](figures/Untitled%2014.png)
 
-![image_2021-05-17-00-02-59](figures/image_2021-05-17-00-02-59.png)
+![](figures/image_2021-05-17-00-02-59.png)
 
-![image_2021-05-17-00-03-23](figures/image_2021-05-17-00-03-23.png)
+![](figures/image_2021-05-17-00-03-23.png)
 
-![image_2021-05-17-00-03-35](figures/image_2021-05-17-00-03-35.png)
+![](figures/image_2021-05-17-00-03-35.png)
 
-![image_2021-05-17-00-04-08](figures/image_2021-05-17-00-04-08.png)
+![](figures/image_2021-05-17-00-04-08.png)
 
-![image_2021-05-17-00-04-23](figures/image_2021-05-17-00-04-23.png)
+![](figures/image_2021-05-17-00-04-23.png)
