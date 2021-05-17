@@ -29,6 +29,7 @@ For everything that follows, assume $G$ is a finite group.
 - Prove Lagrange's theorem
 - Prove that if $\# G$ is prime, then $G$ is cyclic
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
+- Prove that if $\# G = n$, th
 
 Prove the following:
 
