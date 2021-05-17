@@ -28,6 +28,8 @@ For everything that follows, assume $G$ is a finite group.
 
 - $H\leq G$ denotes that $H$ is a subgroup of $G$.
 - $\# G$ denotes the *order* of $G$.
+- $e$ or $e_G$ denotes the identity element of $G$.
+- Multiplicative notation is generally used everywhere to denote the (possibly noncommutative) binary operation
 
 ### Orders
 
