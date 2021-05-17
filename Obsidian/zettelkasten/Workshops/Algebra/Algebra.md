@@ -22,7 +22,7 @@
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 - Finite groups of order $\# G \leq 20$
 
-## Exercises
+## Warmup Exercises
 
 For everything that follows, assume $G$ is a finite group.
 
@@ -60,16 +60,16 @@ $$
   xH_1 = yH_1 \iff \phi(x)H_2 = \phi(y)H_2
   .\]
 
+- Suppose $\phi: G_1 \to G_2$ is a group morphism.
+
+  - Show that the image $\phi(G_1) \leq G_2$ is a subgroup.
+  - Show that $\ker \phi \normal G_1$ is a normal subgroup.
+  - Show that $\phi$ is injective $\iff \ker \phi = \ts{ e_{G_1} }$.
+
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%204.png](attachments/Untitled%204.png)
 
-Prove that a group homomorphism $\phi: G\to H$ is trivial iff $\ker \phi = e_G$
 
-Show that the image $\phi(G) \leq H$ is a subgroup and $\ker \phi \normal G$ is a normal subgroup
-
-Prove the 1st isomorphism theorem
-
-Show that every element of $S_n$ can be written as a product of transpositions.
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%205.png](attachments/Untitled%205.png)
 
