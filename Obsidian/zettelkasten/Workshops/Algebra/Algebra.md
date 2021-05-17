@@ -24,10 +24,9 @@
 
 ## Exercises
 
-
-
-
-Prove Lagrange's theorem
+- Prove Lagrange's theorem
+- Prove that if $\# G$ is prime, then $G$ is cyclic
+- Prove that for e
 
 Prove the following:
 
