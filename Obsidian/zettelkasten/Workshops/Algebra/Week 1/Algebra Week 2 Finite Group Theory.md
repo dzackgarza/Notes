@@ -11,6 +11,9 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 
 - Recognition of direct products and semidirect products
 - Series of groups
+	- Derived series
+	- Lower central series
+	- Upper central series
 	- Solvable, 
 	- Simple, 
 	- Nilpotent; 
@@ -31,6 +34,14 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 ## Review Exercises 
 
 ## Misc
+
+- State the definitions of the following:
+	- Centralizer
+	- Normalizer
+	- Conjugacy class
+	- Center
+	- Inner automorphism
+	- Commutator
 
 - Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
 

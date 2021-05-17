@@ -25,7 +25,7 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- Dihedral groups $D_{n}$
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 	- $p\dash$groups
-	- Free groups $F_n$
+	- Free groups $F_n$ (and presentations/relations)
 - Finite groups of order $\# G \leq 20$
 
 
