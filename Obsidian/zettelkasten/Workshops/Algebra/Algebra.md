@@ -98,6 +98,9 @@ $$
   Prove that $G= H$ by induction on $\# H$ in the following way:
 
   - Letting $N\normal H$ be any nontrivial normal subgroup of $H$, use the inductive hypothesis to show that $H = GN$.
+  - Let $Z = Z(H)$ be the center of $H$.
+  Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
+  Set $N \da G \intersect Z$ and apply (1) to conclude.
 
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%209.png](attachments/Untitled%209.png)
