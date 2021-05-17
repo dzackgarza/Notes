@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+            "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md"
+                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md"
               }
             }
           },
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5121879577637
+    "width": 511.5121879577637,
+    "collapsed": true
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,10 +243,10 @@
   },
   "active": "c271c257b36d369d",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 2.md",
     "zettelkasten/Workshops/Complex Analysis/Untitled.md",
-    "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Topology/Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Topology/Week 1 Point Set.md",
     "zettelkasten/Workshops/Topology/Untitled.md",

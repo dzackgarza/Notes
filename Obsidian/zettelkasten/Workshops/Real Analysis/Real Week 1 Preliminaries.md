@@ -8,14 +8,20 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 
 - Convergence
 	- The Cauchy criterion
-	-   Uniform convergence, 
+	-   Uniform convergence
 		-   $M$-Test
--   $F\_\sigma$ and $G\_\delta$ sets, 
+-   $F_\sigma$ and $G_\delta$ sets, 
 -   Pathological functions and continuity
--   Nowhere density, Baire category, Heine Borel
+-   Nowhere density, 
+-   Baire category theorem, 
+-   Heine-Borel
 -   Normed spaces
--   Series and sequences, convergence, small tails, limsup and liminf, Cauchy criteria for sums and integrals
--   Basic inequalites (triangle, Cauchy-Schwarz)
+-   Series and sequences,
+	- Convergence
+	- Small tails, 
+	- limsup and liminf, 
+	- Cauchy criteria for sums and integrals
+-   Basic inequalities (triangle, Cauchy-Schwarz)
 -   Tools from Calculus: MVT, Taylor's theorem & remainder
 -   Weierstrass approximation
 
@@ -26,7 +32,7 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Give two different definitions for compactness in a metric space.
 - Find an example of a metric space with a closed and bounded subspace that is not compact.
 	- How can this be modified to obtain a necessary and sufficient condition?
-- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$ and the the tail is small in the following sense: $$\sum_{n > N} a_n \ctz{N}$$
+- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$ and the tail is small in the following sense: $$\sum_{n > N} a_n \ctz{N}$$
 - Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$? If so, produce such a function, if not, why?
 	- Can the set of discontinuities be precisely the irrationals $\RR\sm\QQ$?
 - Find a sequence of continuous functions that does *not* converge uniformly, but still has a pointwise limit that is continuous.
