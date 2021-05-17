@@ -15,13 +15,13 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 - Series of groups
 	- Normal series
 	- Central series
-	- Derived series
-		- Solvable, 
-	- Lower central series
-	- Upper central series
-		- Nilpotent; 
-	- Composition series
-		- The Jordan-Holder theorem
+	- Solvable groups
+		- Derived series
+	- Nilpotent groups
+		- Lower central series
+		- Upper central series
+	- The Jordan-Holder theorem
+		- Composition series
 - Group actions
 	- Orbit-stabilizer
 	- The class equation,
@@ -82,6 +82,20 @@ Prove that there is an isomorphism of sets
   - Let $Z = Z(H)$ be the center of $H$.
   	Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
   	Set $N \da G \intersect Z$ and apply (1) to conclude.
+	
+	- Suppose $X$ is a $G\dash$set, so there is a permutation action of $G$ on $X$.
+  Let $x_1, x_2\in X$, and show that the stabilizer subgroups $\Stab_G(x_1), \Stab_G(x_2)\leq G$ are conjugate in $G$.
+
+- Let $G\actson X$ be a *transitive* action of a group $G$ on a set $X$, and for $x\in X$ let 
+\[
+\Stab_G(x) \da \ts{ g\in G \st g.x = x }
+\]
+be the **stabilizer** in $G$ of $x$.
+Prove that there is an isomorphism of sets
+\[
+\phi_x: G/\Stab_G(x) \mapsvia{\sim} X
+.\]
+
 
 ## Series of Groups
 
