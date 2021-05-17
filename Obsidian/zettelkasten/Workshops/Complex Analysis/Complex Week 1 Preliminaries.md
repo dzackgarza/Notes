@@ -20,6 +20,7 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 	- Analytic
 	- Harmonic
 	- Uniformly continuous
+	- Entire
 - State the Laplace equation
 
 ![](../../attachments/Pasted%20image%2020210517025125.png)
@@ -39,4 +40,11 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 
 ## Qual Problems
 
-![](../../attachments/Pasted%20image%2020210517025303.png)
+- ![](../../attachments/Pasted%20image%2020210517025502.png)
+- ![](../../attachments/Pasted%20image%2020210517025442.png)
+- ![](../../attachments/Pasted%20image%2020210517025425.png)
+- ![](../../attachments/Pasted%20image%2020210517025358.png)
+- ![](../../attachments/Pasted%20image%2020210517025303.png)
+- ![](../../attachments/Pasted%20image%2020210517025326.png)
+- ![](../../attachments/Pasted%20image%2020210517025347.png)
+- ![](../../attachments/Pasted%20image%2020210517025558.png)
