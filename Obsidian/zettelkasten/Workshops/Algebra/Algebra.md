@@ -30,15 +30,13 @@ For everything that follows, assume $G$ is a finite group.
 - Prove that if $\# G$ is prime, then $G$ is cyclic
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
 - Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$
-- Prove the *fundamental theorem of cosets*:
+- Prove the *fundamental theorem of cosets*: for $xH, yH\in G/H$ (the set of left cosets of $G$ by $H$),
 $$
 xH = yH \iff x\inv y\in H \iff y\inv x \in H
 $$
-- Prove that any two (left) cosets $xH, yH\in G/H$ have the same cardainlit
+- Prove that any two (left) cosets $xH, yH\in G/H$ have the same cardinality.
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%201.png](attachments/Untitled%201.png)
-
-Prove that all cosets have the same cardinality.
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%202.png](attachments/Untitled%202.png)
 
