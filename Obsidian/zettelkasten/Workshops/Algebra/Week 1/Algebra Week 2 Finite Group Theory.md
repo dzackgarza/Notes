@@ -11,15 +11,15 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 ## Topics
 
 - Recognition of direct products and semidirect products
+- Simple groups
 - Series of groups
 	- Normal series
 	- Central series
 	- Derived series
+		- Solvable, 
 	- Lower central series
+		- Nilpotent; 
 	- Upper central series
-	- Solvable, 
-	- Simple, 
-	- Nilpotent; 
 	- Composition series
 		- The Jordan-Holder theorem
 - Group actions

@@ -15,6 +15,7 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- Normal subgroups
 	- Quotients
 	- The normalizer of a subgroup
+	- Maximal and proper subgroups
 - Cauchy's theorem
 - Lagrange's theorem
 - Definitions and properties of common special families of groups:
