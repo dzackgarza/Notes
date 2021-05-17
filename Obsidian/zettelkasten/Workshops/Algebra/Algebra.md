@@ -19,7 +19,7 @@
 	- Symmetric groups $S_n$
 	- Alternating groups $A_n$
 	- Dihedral groups $D_{n}$
-	- Matrix groups $\GL_n(k), \O_n(k), \SL_n(k), \SO_n(k)$ 
+	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 
 - Subgroups, quotients, isomorphism theorems, cosets, index of a subgroup
 - Cauchy, Lagrange
