@@ -18,8 +18,8 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 	- Derived series
 		- Solvable, 
 	- Lower central series
-		- Nilpotent; 
 	- Upper central series
+		- Nilpotent; 
 	- Composition series
 		- The Jordan-Holder theorem
 - Group actions
