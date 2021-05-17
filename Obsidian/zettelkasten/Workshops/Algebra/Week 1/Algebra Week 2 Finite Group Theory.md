@@ -12,13 +12,16 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 
 - Recognition of direct products and semidirect products
 - Series of groups
+	- Normal series
+	- Central series
 	- Derived series
 	- Lower central series
 	- Upper central series
 	- Solvable, 
 	- Simple, 
 	- Nilpotent; 
-- The Jordan-Holder theorem
+	- Composition series
+		- The Jordan-Holder theorem
 - Group actions
 	- Orbit-stabilizer
 	- The class equation,
