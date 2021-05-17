@@ -90,8 +90,9 @@ $$
 
 - Classify all groups of order $p^2$.
 
+- Prove that if $H\leq G$ is a proper subgrup, then $G$ is not a union of conjugates of $H$.
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%207.png](attachments/Untitled%207.png)
+  - Use this to prove that if $G = \Sym(X)$ is the group of permutations on a finite set $X$ with $\# X = n$, then there exists a $g\in G$ with no fixed points in $X$.
 
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%208.png](attachments/Untitled%208.png)
