@@ -19,9 +19,9 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 	- Orbit-stabilizer
 	- The class equation,
 	- Important actions
-- Cayley's theorem
+- Permutation representations
+	- The [Strong Cayley Theorem](https://math.la.asu.edu/~kawski/classes/mat444/handouts/strongCayley.pdf)
 	- The Cayley representation, 
-	- The permutation representation
 - FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
 	- Invariant factors
 	- Elementary divisors

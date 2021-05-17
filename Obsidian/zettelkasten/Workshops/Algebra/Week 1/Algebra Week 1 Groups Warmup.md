@@ -112,8 +112,6 @@ $$
 - (**Important**)
 	Classify all groups of order $p^2$.
 
-
-
 - (**Important**)
 	Show that if $H\leq G$ and $[G: H] = 2$ then $H$ is normal.
 	
