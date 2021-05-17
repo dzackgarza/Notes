@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+            "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md"
+                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "a0a23cf6344e228e",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Real Analysis/Untitled.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
     "zettelkasten/Workshops/Algebra/Week 1/attachments/Untitled.png",
     "zettelkasten/attachments/1509.00797.pdf",
@@ -250,7 +251,6 @@
     "zettelkasten/representation theory.md",
     "zettelkasten/modern category theory.md",
     "zettelkasten/triangulated categories.md",
-    "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md",
-    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md"
+    "zettelkasten/Projects/Reading Groups/Juvitop Fall 2020 - Cobordism Hypothesis/Cobordism Hypothesis.md"
   ]
 }
