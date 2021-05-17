@@ -14,14 +14,7 @@
 
 ## Review Exercises 
 
-For everything that follows, assume $G$ is a finite group.
-
-- $H\leq G$ denotes that $H$ is a subgroup of $G$.
-- $\# G$ denotes the *order* of $G$.
-- $e$ or $e_G$ denotes the identity element of $G$.
-- Multiplicative notation is generally used everywhere to denote the (possibly noncommutative) binary operation
-
-## Warmup Problems
+## Misc
 
 - Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
 
@@ -31,17 +24,7 @@ For everything that follows, assume $G$ is a finite group.
 
   - Use this to prove that if $G = \Sym(X)$ is the group of permutations on a finite set $X$ with $\# X = n$, then there exists a $g\in G$ with no fixed points in $X$.
 
-- Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
-
-  Prove that $G= H$ by induction on $\# H$ in the following way:
-
-  - Letting $N\normal H$ be any nontrivial normal subgroup of $H$, use the inductive hypothesis to show that $H = GN$.
-  - Let $Z = Z(H)$ be the center of $H$.
-  Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
-  Set $N \da G \intersect Z$ and apply (1) to conclude.
-
-- Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.
-
+## Group Actions
 - Suppose $X$ is a $G\dash$set, so there is a permutation action of $G$ on $X$.
   Let $x_1, x_2\in X$, and show that the stabilizer subgroups $\Stab_G(x_1), \Stab_G(x_2)\leq G$ are conjugate in $G$.
 
@@ -54,6 +37,21 @@ Prove that there is an isomorphism of sets
 \[
 \phi_x: G/\Stab_G(x) \mapsvia{\sim} X
 .\]
+
+
+- Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
+
+  Prove that $G= H$ by induction on $\# H$ in the following way:
+
+  - Letting $N\normal H$ be any nontrivial normal subgroup of $H$, use the inductive hypothesis to show that $H = GN$.
+  - Let $Z = Z(H)$ be the center of $H$.
+  	Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
+  	Set $N \da G \intersect Z$ and apply (1) to conclude.
+
+## Series of Groups
+
+- Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.
+
 
 
 # Qual Problems
