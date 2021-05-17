@@ -47,6 +47,8 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - ![](../../attachments/Pasted%20image%2020210517004915.png)
 - ![](../../attachments/Pasted%20image%2020210517004809.png)
 
+![](../../attachments/Pasted%20image%2020210517014643.png)
+
 ## Qual Questions
 
 ![](../../attachments/Pasted%20image%2020210517005021.png)
