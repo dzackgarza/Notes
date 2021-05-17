@@ -36,6 +36,9 @@ xH = yH \iff x\inv y\in H \iff y\inv x \in H
 $$
 - Prove that any two (left) cosets $xH, yH\in G/H$ have the same cardinality.
 
+- Suppose $\# G = pq$ with $p, q\geq 2$ prime, and let $H\leq G$ be a proper subgroup.
+  Prove that $H$ must be cyclic.
+
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%201.png](attachments/Untitled%201.png)
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%202.png](attachments/Untitled%202.png)
