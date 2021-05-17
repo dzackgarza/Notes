@@ -18,6 +18,7 @@ aliases: ["category theory"]
 - [linear category](linear%20category)
 - [continuous functor](continuous%20functor)
 - [quivers](quivers)
+- [triangulated categories](triangulated%20categories)
 
 ## Internal Objects
 
