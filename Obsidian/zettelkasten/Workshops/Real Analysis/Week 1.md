@@ -23,9 +23,9 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 
 - Define what it means for a function to be **uniformly continuous**.
 - Define what it means for a sequence of functions to converge **pointwise** and to converge **uniformly**.
-- Discuss the $\limsup$ and $\liminf$ of a sequence of real numbers.
 - Give two different definitions for compactness in a metric space.
 - Find an example of a metric space with a closed and bounded subspace that is not compact.
+	- What is a necessary and 
 - Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$ and the the tail is small in the following sense: $$\sum_{n > N} a_n \ctz{N}$$
 - Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$? If so, produce such a function, if not, why?
 	- Can the set of discontinuities be precisely the irrationals $\RR\sm\QQ$?
