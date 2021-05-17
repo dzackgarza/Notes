@@ -20,10 +20,12 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 	- Harmonic
 	- Uniformly continuous
 	- Entire
+- What does it mean for a sequence or series to uniformly converge?
 - State the Laplace equation.
 - What is the Dirichlet problem?
 - Discuss how to carry out partial fraction decomposition
 - Determine the radius of convergence of the power series for $\sqrt z$ expanded at $z_0= 4 + 3i$.
+- What is the logarithmic derivative?
 
 ![](../../attachments/Pasted%20image%2020210517025125.png)
 - ![](../../attachments/Pasted%20image%2020210517022935.png)
@@ -40,6 +42,7 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 - ![](../../attachments/Pasted%20image%2020210517024431.png)
 - ![](../../attachments/Pasted%20image%2020210517024807.png)
 - ![](../../attachments/Pasted%20image%2020210517030008.png)
+- ![](../../attachments/Pasted%20image%2020210517030118.png)
 
 ## Qual Problems
 
