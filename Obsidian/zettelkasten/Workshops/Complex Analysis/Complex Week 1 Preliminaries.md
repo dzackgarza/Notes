@@ -2,6 +2,8 @@
 title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 ---
 
+# Week 1: Preliminaries
+
 ## Topics
 
 -   Complex arithmetic and geometry, conic section equations
@@ -27,7 +29,7 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 - Discuss how to carry out partial fraction decomposition
 - Determine the radius of convergence of the power series for $\sqrt z$ expanded at $z_0= 4 + 3i$.
 - What is the logarithmic derivative?
-- Find a  function $f$ such that $f^2$ is analytic on the open unit disc but $f$ is not
+- Find a  function $f$ such that $f^2$ is analytic on the open unit disc but $f$ is not.
 
 ![](../../attachments/Pasted%20image%2020210517025125.png)
 - ![](../../attachments/Pasted%20image%2020210517022935.png)
