@@ -63,19 +63,22 @@ $$
   - Show that the image $\phi(G_1) \leq G_2$ is a subgroup of $G_2$
   - Show that the preimage $\phi\inv(H_2) \leq G_1$ is a subgroup of $G_1$, 
   - Show that the kernel $\ker \phi \normal G_1$ is a normal subgroup of $G_1$.
-  - Prove that group morphisms preserves coset structure in the following sense:
+  - Prove that group morphisms *preserve coset structure* in the following sense:
   \[
   xH_1 = yH_1 \iff \phi(x)H_2 = \phi(y)H_2
   .\]
-  - Prove the first isomorphism theorem: 
+  - Prove the **first isomorphism theorem**: 
   $\phi$ is injective $\iff \ker \phi = \ts{ e_{G_1} }$.
 
+### Symmetric Groups
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%204.png](attachments/Untitled%204.png)
+- Let $\sigma = (4\, 2\, 1)(6\, 1\, 3\, 2) \in S_6$ in cycle notation.
+  - Write $\sigma$ as a product of disjoint cycles.
+  - Compute the order of $\sigma$.
+    What is the general theorem about the order of cycles?
+  - Determine if $\sigma$ is even or odd.
+    What is the general theorem?
 
-
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%205.png](attachments/Untitled%205.png)
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%206.png](attachments/Untitled%206.png)
 
