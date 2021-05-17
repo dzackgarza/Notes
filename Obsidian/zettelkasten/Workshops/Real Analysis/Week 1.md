@@ -38,7 +38,7 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Show that the uniform limit of bounded functions is uniformly bounded.
 - Construct sequences of functions $\ts{f_n}_{n\in \NN}$ and $\ts{g_n}_{n\in \NN}$ which converge uniformly on some set $E$, and yet their product sequence $\ts{h_n}_{n\in \NN}$ with $h_n \da f_n g_n$ does *not* converge uniformly.
 	- Show that if $f_n, g_n$ are additionally bounded, then $h_n$ does converge uniformly.
-- Show that if $f_n \to f$ pointwise and $f_n'\to g$ uniformly for some $g$, then $f$ is differentiable and $g = f'$.
+- Show that if $f_n \to f$ pointwise with each $f_n$ differentiable, and $f_n'\to g$ uniformly for some $g$, then $f$ is differentiable and $g = f'$.
 - 
 - ![](../../attachments/Pasted%20image%2020210517004900.png)
 - ![](../../attachments/Pasted%20image%2020210517004915.png)
