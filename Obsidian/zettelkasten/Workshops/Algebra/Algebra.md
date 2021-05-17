@@ -3,7 +3,8 @@
 
 [See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
 
-## Topics:
+## Week 1 Topics
+
 - Subgroups
 - Quotients
 - The fundamental isomorphism theorems
@@ -17,11 +18,16 @@
 	- Alternating groups $A_n$
 	- Dihedral groups $D_{n}$
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
+  - $p\dash$groups
 - Finite groups of order $\# G \leq 20$
+
 
 ## Review Exercises 
 
 For everything that follows, assume $G$ is a finite group.
+
+- $H\leq G$ denotes that $H$ is a subgroup of $G$.
+- $\# G$ denotes the *order* of $G$.
 
 ### Orders
 
