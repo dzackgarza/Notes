@@ -36,6 +36,7 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 
 - Prove the uniform limit theorem: a uniform limit of continuous function is continuous.
 - Show that the uniform limit of bounded functions is uniformly bounded.
+- Construct sequences of functions $\ts{f_n}_{n\in \NN}
 - ![](../../attachments/Pasted%20image%2020210517004900.png)
 - ![](../../attachments/Pasted%20image%2020210517004915.png)
 - ![](../../attachments/Pasted%20image%2020210517004809.png)
