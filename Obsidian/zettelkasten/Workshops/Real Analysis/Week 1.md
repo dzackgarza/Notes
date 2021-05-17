@@ -14,3 +14,13 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 -   Basic inequalites (triangle, Cauchy-Schwarz)
 -   Tools from Calculus: MVT, Taylor's theorem & remainder
 -   Weierstrass approximation
+
+## Warmup Questions
+
+- Show that a uniform limit of continuous function is continuous.
+- ![](../../attachments/Pasted%20image%2020210517004900.png)
+- ![](../../attachments/Pasted%20image%2020210517004915.png)
+- ![](../../attachments/Pasted%20image%2020210517004809.png)
+
+## Qual Questions
+
