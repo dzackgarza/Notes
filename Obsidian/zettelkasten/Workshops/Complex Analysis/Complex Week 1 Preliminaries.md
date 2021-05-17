@@ -22,14 +22,21 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 	- Uniformly continuous
 - State the Laplace equation
 
+![](../../attachments/Pasted%20image%2020210517025125.png)
 - ![](../../attachments/Pasted%20image%2020210517022935.png)
 - ![](../../attachments/Pasted%20image%2020210517022946.png)
 - ![](../../attachments/Pasted%20image%2020210517023232.png)
 - ![](../../attachments/Pasted%20image%2020210517023424.png)
 
 ## Exercises
+![](../../attachments/Pasted%20image%2020210517025227.png)
+![](../../attachments/Pasted%20image%2020210517025152.png)
 - ![](../../attachments/Pasted%20image%2020210517024749.png)
 - ![](../../attachments/Pasted%20image%2020210517024557.png)
 - ![](../../attachments/Pasted%20image%2020210517023333.png)
 - ![](../../attachments/Pasted%20image%2020210517024431.png)
 - ![](../../attachments/Pasted%20image%2020210517024807.png)
+
+## Qual Problems
+
+![](../../attachments/Pasted%20image%2020210517025303.png)
