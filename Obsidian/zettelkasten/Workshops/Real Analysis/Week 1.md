@@ -17,7 +17,13 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 
 ## Warmup
 
-## Warmup Questions
+- Define what it means for a function to be **uniformly continuous**.
+- Define what it means for a sequence of functions to converge **pointwise** and to converge **uniformly**.
+- Discuss the $\limsup$ and $\liminf$ of a sequence of real numbers.
+- 
+
+
+## Exercises
 
 - Show that a uniform limit of continuous function is continuous.
 - ![](../../attachments/Pasted%20image%2020210517004900.png)
