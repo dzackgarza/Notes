@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Commutative Algebra index.md",
+            "file": "zettelkasten/Workshops/Workshop Index.md",
             "mode": "source"
           }
         }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md",
+                "file": "zettelkasten/Workshops/Workshop Index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md"
+                "file": "zettelkasten/Workshops/Workshop Index.md"
               }
             }
           },
@@ -131,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5121879577637,
-    "collapsed": true
+    "width": 511.5121879577637
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -148,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md",
+                "file": "zettelkasten/Workshops/Workshop Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Commutative Algebra index.md",
+                "file": "zettelkasten/Workshops/Workshop Index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -244,6 +242,7 @@
   },
   "active": "1a8046c8eb3daeb9",
   "lastOpenFiles": [
+    "zettelkasten/Untitled 10.md",
     "zettelkasten/Commutative Algebra index.md",
     "zettelkasten/characteristic class.md",
     "zettelkasten/vector bundles.md",
@@ -252,7 +251,6 @@
     "zettelkasten/infinity categories.md",
     "zettelkasten/Model category theory.md",
     "zettelkasten/simplicial category.md",
-    "zettelkasten/The model structure on simplicial sets.md",
-    "zettelkasten/DG category.md"
+    "zettelkasten/The model structure on simplicial sets.md"
   ]
 }
