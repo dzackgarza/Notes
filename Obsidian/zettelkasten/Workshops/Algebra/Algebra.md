@@ -34,7 +34,7 @@ For everything that follows, assume $G$ is a finite group.
 $$
 xH = yH \iff x\inv y\in H \iff y\inv x \in H
 $$
-- Prove that any two cosets $xH$ and $yH$ of 
+- Prove that any two cosets $xH, yH\
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%201.png](attachments/Untitled%201.png)
 
