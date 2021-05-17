@@ -1,10 +1,7 @@
-# Workshop Materials
+# Weeks 1 and 2
 
-**Contents**
 
-[Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
-
-# Week 1
+[See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
 
 ## Topics:
 - Subgroups
@@ -116,10 +113,18 @@ $$
 - Suppose $X$ is a $G\dash$set, so there is a permutation action of $G$ on $X$.
   Let $x_1, x_2\in X$, and show that the stabilizer subgroups $\Stab_G(x_1), \Stab_G(x_2)\leq G$ are conjugate in $G$.
 
+- Let $G\actson X$ be a *transitive* action of a group $G$ on a set $X$, and for $x\in X$ let 
+\[
+\Stab_G(x) \da \ts{ g\in G \st g.x = x }
+\]
+be the **stabilizer** in $G$ of $x$.
+Prove that there is an isomorphism of sets
+\[
+\phi_x: G/\Stab_G(x) \mapsvia{\sim} X
+.\]
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2011.png](attachments/Untitled%2011.png)
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2012.png](attachments/Untitled%2012.png)
+# Qual Problems
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](attachments/Untitled%2013.png)
 
