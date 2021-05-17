@@ -29,7 +29,7 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$ and the the tail is small in the following sense: $$\sum_{n > N} a_n \ctz{N}$$
 - Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$? If so, produce such a function, if not, why?
 	- Can the set of discontinuities be precisely the irrationals $\RR\sm\QQ$?
-- 
+- Find a sequence of continuous functions that does *not* converge uniformly, but still has a pointwise limit that is continuous.
 
 
 ## Exercises
