@@ -30,7 +30,7 @@ For everything that follows, assume $G$ is a finite group.
 - Prove that if $\# G$ is prime, then $G$ is cyclic
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
 - Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$
-- Prove the *fu*
+- Prove the *fundamental theorem of cosets*
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%201.png](attachments/Untitled%201.png)
 
