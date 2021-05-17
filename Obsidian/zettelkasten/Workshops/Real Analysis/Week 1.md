@@ -20,7 +20,9 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Define what it means for a function to be **uniformly continuous**.
 - Define what it means for a sequence of functions to converge **pointwise** and to converge **uniformly**.
 - Discuss the $\limsup$ and $\liminf$ of a sequence of real numbers.
-- 
+- Give two different definitions for compactness in a metric space.
+- Find an example of a metric space with a closed and bounded subspace that is not compact.
+- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $a_n \ctz$.
 
 
 ## Exercises
