@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
-            "mode": "source"
+            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md"
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,8 +242,8 @@
   },
   "active": "a0a23cf6344e228e",
   "lastOpenFiles": [
-    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
     "zettelkasten/groupoid.md",
     "zettelkasten/representation theory.md",
     "zettelkasten/modern category theory.md",

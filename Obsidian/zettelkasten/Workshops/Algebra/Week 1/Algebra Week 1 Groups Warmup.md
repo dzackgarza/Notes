@@ -156,7 +156,7 @@ $$
 
 
 
-# Qual Problems
+## Qual Problems
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](attachments/Untitled%2013.png)
 
