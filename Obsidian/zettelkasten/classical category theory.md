@@ -39,10 +39,15 @@ $$
 	- [abelian category](abelian%20category.md)
 	- [additive category](additive%20category)
 	- [monomorphism](monomorphism.md)
+	- [mapping cone](mapping%20cone)
 - [Yoneda lemma](Yoneda%20lemma)
 - [isomorphism of functors](isomorphism%20of%20functors)
 - [subfunctor](subfunctor)
+- [exponential object](exponential%20object)
+- [monads](monads)
 
 # Notes
 
-- One regards a category $C$ as an ∞-category via its [nerve](nerve.md).
+- One regards a category $\cat C$ as an ∞-category via its [nerve](nerve.md).
+	- The nerve lands in simplicial sets, but everything in its image satisfies the Kan extension condition.
+- Categories are special cases of [simplicial sets](simplicial%20set.md)

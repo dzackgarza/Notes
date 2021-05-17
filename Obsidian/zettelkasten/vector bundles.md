@@ -15,6 +15,7 @@ Topics:
 - [Thom isomorphism](Thom%20isomorphism)
 - [Thom-Pontryagin construction](Thom-Pontryagin%20construction)
 - [stable framing](stable%20framing.md)
+- [clutching function](clutching%20function)
 
 
 # Definitions 

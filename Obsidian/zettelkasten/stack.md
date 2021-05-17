@@ -26,3 +26,7 @@ $$
 H^\wait(\mathcal M; \QQ) \cong \left( H^\wait(X; \QQ)\right)^G
 $$
 where the RHS denotes the taking the $G\dash$ invariant part. Seems to only work over $\QQ$. The quotient is scheme-theoretic. The actual definition involves [Equivariant cohomology](Equivariant%20cohomology.md).
+
+- A prestack is a functor $\Aff\Sch_{/k}\op \to \hoType$
+	- Source: the infinity category of derived rings over $k$...?
+	- Target: the infinity category of spaces.
