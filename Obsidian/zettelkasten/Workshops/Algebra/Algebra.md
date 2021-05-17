@@ -15,10 +15,11 @@
 - Cauchy's theorem
 - Lagrange's theorem
 - Definitions and properties of common special families of groups:
-	- Cyclic groups
-	- Symmetric groups
-	- Alternating groups
-	- Dihedral groups
+	- Cyclic groups $C_n$
+	- Symmetric groups $S_n$
+	- Alternating groups $A_n$
+	- Dihedral groups $D_{n}$
+	- Matrix groups $\GL_n(k), \SL_n(k), \SO_n(k)$ 
 
 - Subgroups, quotients, isomorphism theorems, cosets, index of a subgroup
 - Cauchy, Lagrange
