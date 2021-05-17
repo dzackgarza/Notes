@@ -90,6 +90,8 @@ $$
   Show that the centers of $\GL_n(\FF_p)$ and $\SL_n(\FF_p)$ consist only of scalar matrices.
   - Show that the scalars $\zeta$ that appear in scalar matrices $Z(\SL_n(\FF_p))$ are roots of unity in $\FF_p$, i.e. $\zeta^p = 1$.
 
+- Determine the orders $\# \GL_n(\FF_p)$ and $\# \SL_n(\FF_p)$.
+
 ## Warmup Problems
 
 - Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
@@ -110,6 +112,9 @@ $$
   Set $N \da G \intersect Z$ and apply (1) to conclude.
 
 - Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.
+
+- Suppose $X$ is a $G\dash$set, so there is a permutation action of $G$ on $X$.
+  Let $x_1, x_2\in X$, and show that the stabilizer subgroups $\Stab_G(x_1), \Stab_G(x_2)\leq G$ are conjugate in $G$.
 
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2011.png](attachments/Untitled%2011.png)
