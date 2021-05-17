@@ -2,7 +2,8 @@
 title: Algebra Qual Prep Week 2: Finite Group Theory
 ---
 
-# Week 2
+# Week 2: Finite Groups
+
 
 [See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
 
@@ -33,15 +34,12 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 
 ## Review Exercises 
 
-## Misc
+- State definitions of the following:
+	- Orbit
+	- Stabilizer
+	- Group action
 
-- State the definitions of the following:
-	- Centralizer
-	- Normalizer
-	- Conjugacy class
-	- Center
-	- Inner automorphism
-	- Commutator
+## Misc
 
 - Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
 

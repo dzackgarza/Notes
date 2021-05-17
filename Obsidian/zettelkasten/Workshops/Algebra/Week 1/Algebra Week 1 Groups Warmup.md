@@ -9,8 +9,7 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 ## Week 1 Topics
 
 - Subgroups
-- The fundamental isomorphism theorems
-- Subgroups
+	- The one-step subgroup test
 	- Cosets
 	- The index of a subgroup
 	- Normal subgroups
@@ -26,10 +25,26 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 	- $p\dash$groups
 	- Free groups $F_n$ (and presentations/relations)
+- The fundamental isomorphism theorems
 - Finite groups of order $\# G \leq 20$
 
 
 ## Review Exercises 
+
+- State the definitions of the following:
+	- Group morphism (aka *group homomorphism*)
+	- Centralizer
+	- Normalizer
+	- Conjugacy class
+	- Center
+	- Inner automorphism
+	- Commutator
+	- $p\dash$group
+- Write definitions or presentations for all of the special families of groups appearing above.
+- State what it means for a cycle to be even or odd.
+- Fi
+
+## Unsorted Questions
 
 For everything that follows, assume $G$ is a finite group.
 
