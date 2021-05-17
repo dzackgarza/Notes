@@ -79,8 +79,10 @@ $$
   - Determine if $\sigma$ is even or odd.
     What is the general theorem?
 
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%206.png](attachments/Untitled%206.png)
+- Suppose $\phi: S_n \to G$ with $n$ even and $\# G = m$ odd.
+  - Prove that if $\tau \in S_n$ is a transposition, then $\tau \in \ker \phi$.
+  - Prove that in fact *every* $\sigma \in S_n$ satisfies $\sigma \in \ker \phi$, so $\phi$ is the trivial morphism.
+  - Does this hold if $n$ is odd?
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%207.png](attachments/Untitled%207.png)
 
