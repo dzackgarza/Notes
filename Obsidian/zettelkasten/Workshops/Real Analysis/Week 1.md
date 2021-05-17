@@ -15,6 +15,8 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 -   Tools from Calculus: MVT, Taylor's theorem & remainder
 -   Weierstrass approximation
 
+## Warmup
+
 ## Warmup Questions
 
 - Show that a uniform limit of continuous function is continuous.
@@ -23,4 +25,11 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - ![](../../attachments/Pasted%20image%2020210517004809.png)
 
 ## Qual Questions
+
+![](../../attachments/Pasted%20image%2020210517005021.png)
+
+![](../../attachments/Pasted%20image%2020210517005042.png)
+![](../../attachments/Pasted%20image%2020210517005050.png)
+
+![](../../attachments/Pasted%20image%2020210517005131.png)
 
