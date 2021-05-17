@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
+            "file": "zettelkasten/Workshops/Topology/Untitled.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
+                "file": "zettelkasten/Workshops/Topology/Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md"
+                "file": "zettelkasten/Workshops/Topology/Untitled.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
+                "file": "zettelkasten/Workshops/Topology/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Week 1.md",
+                "file": "zettelkasten/Workshops/Topology/Untitled.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,8 @@
   },
   "active": "c271c257b36d369d",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Topology/Untitled.md",
+    "zettelkasten/Workshops/Complex Analysis/Untitled.md",
     "zettelkasten/Workshops/Real Analysis/Week 1.md",
     "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
     "zettelkasten/Workshops/Real Analysis/Untitled.md",
@@ -249,8 +251,6 @@
     "zettelkasten/Workshops/Algebra/Week 1/attachments/Untitled.png",
     "zettelkasten/attachments/1509.00797.pdf",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
-    "zettelkasten/groupoid.md",
-    "zettelkasten/representation theory.md",
-    "zettelkasten/modern category theory.md"
+    "zettelkasten/groupoid.md"
   ]
 }
