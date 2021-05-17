@@ -20,7 +20,7 @@
 	- Alternating groups $A_n$
 	- Dihedral groups $D_{n}$
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
-- Finite groups of order $\
+- Finite groups of order $\# G \leq 20$
 
 Prove Lagrange's theorem
 
