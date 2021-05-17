@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Workshop Index.md",
+            "file": "zettelkasten/Workshops/Algebra/Algebra.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Workshop Index.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Workshop Index.md"
+                "file": "zettelkasten/Workshops/Algebra/Algebra.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Workshop Index.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Workshop Index.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "1a8046c8eb3daeb9",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Algebra/Workshop Materials 22af9a14367c44e585cb4aefe9e11862.md",
     "zettelkasten/Untitled 10.md",
     "zettelkasten/Commutative Algebra index.md",
     "zettelkasten/characteristic class.md",
@@ -250,7 +251,6 @@
     "zettelkasten/Untitled 9.md",
     "zettelkasten/infinity categories.md",
     "zettelkasten/Model category theory.md",
-    "zettelkasten/simplicial category.md",
-    "zettelkasten/The model structure on simplicial sets.md"
+    "zettelkasten/simplicial category.md"
   ]
 }
