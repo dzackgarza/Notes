@@ -26,7 +26,7 @@
 
 - Prove Lagrange's theorem
 - Prove that if $\# G$ is prime, then $G$ is cyclic
-- Prove that for e
+- Prove that for every $g\in G$
 
 Prove the following:
 
