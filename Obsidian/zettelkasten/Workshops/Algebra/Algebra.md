@@ -22,7 +22,10 @@
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 - Finite groups of order $\# G \leq 20$
 
-## Exerc
+## Exercises
+
+
+
 
 Prove Lagrange's theorem
 
