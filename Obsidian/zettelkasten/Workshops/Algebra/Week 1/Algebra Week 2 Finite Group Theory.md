@@ -9,20 +9,24 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 
 ## Topics
 
+- Recognition of direct products and semidirect products
 - Series of groups
 	- Solvable, 
 	- Simple, 
 	- Nilpotent; 
 - The Jordan-Holder theorem
-- Group actions, 
+- Group actions
 	- Orbit-stabilizer
 	- The class equation,
-- The Cayley representation, 
-- The permutation representation
+	- Important actions
+- Cayley's theorem
+	- The Cayley representation, 
+	- The permutation representation
 - FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
 	- Invariant factors
 	- Elementary divisors
-
+- Automorphisms
+	- Inner automorphisms
 
 ## Review Exercises 
 

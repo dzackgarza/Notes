@@ -9,10 +9,13 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 ## Week 1 Topics
 
 - Subgroups
-- Quotients
 - The fundamental isomorphism theorems
-- Cosets
-- The index of a subgroup
+- Subgroups
+	- Cosets
+	- The index of a subgroup
+	- Normal subgroups
+	- Quotients
+	- The normalizer of a subgroup
 - Cauchy's theorem
 - Lagrange's theorem
 - Definitions and properties of common special families of groups:
@@ -21,7 +24,8 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- Alternating groups $A_n$
 	- Dihedral groups $D_{n}$
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
-  - $p\dash$groups
+	- $p\dash$groups
+	- Free groups $F_n$
 - Finite groups of order $\# G \leq 20$
 
 
@@ -140,40 +144,3 @@ Prove that there is an isomorphism of sets
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](attachments/Untitled%2013.png)
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](attachments/Untitled%2014.png)
-
-# Week 2
-
-- Special types of groups, the symmetric group, p-groups
-- Series of groups, solvable, simple, nilpotent; Jordan-Holder theorem
-- Group actions, orbit-stabilizer, class equation,
-- Cayley representation, permutation representation
-
-# Week 4
-
-- Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
-- Irreducible and prime elements, nilpotent, units
-- Radical, nilradical, spec and maxspec
-- Special types: domains, integral domains, Euclidean ⇒ PID ⇒ UFD ⇒?, Dedekind domains, Noetherian, Artinian
-- Zorn's lemma arguments
-- Bonus optional stuff: localization
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2015.png](attachments/Untitled%2015.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2016.png](attachments/Untitled%2016.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2017.png](attachments/Untitled%2017.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2018.png](attachments/Untitled%2018.png)
-
-Prove that a commutive ring with unit is a field if and only if its only ideals are {0} and the whole ring
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2019.png](attachments/Untitled%2019.png)
-
-Show the irreducibility criterion for polynomials f ∈ k[x] of degree 2 or 3: such a polynomial is irreducible iff it has no roots in the field k
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2020.png](attachments/Untitled%2020.png)
-
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2021.png](attachments/Untitled%2021.png)
-
-
-
