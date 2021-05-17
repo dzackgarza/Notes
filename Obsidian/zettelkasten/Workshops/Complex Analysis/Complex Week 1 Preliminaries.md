@@ -14,7 +14,13 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 ## Warmup
 
 - State the Cauchy-Riemann equations.
-- 
+- Define what it means for a function to be 
+	- Holomorphic
+	- Meromorphic
+	- Analytic
+	- Harmonic
+	- Uniformly continuous
+- State the Laplace equation
 
 - ![](../../attachments/Pasted%20image%2020210517022935.png)
 - ![](../../attachments/Pasted%20image%2020210517022946.png)
@@ -26,3 +32,4 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 - ![](../../attachments/Pasted%20image%2020210517024557.png)
 - ![](../../attachments/Pasted%20image%2020210517023333.png)
 - ![](../../attachments/Pasted%20image%2020210517024431.png)
+- ![](../../attachments/Pasted%20image%2020210517024807.png)
