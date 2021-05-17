@@ -84,6 +84,11 @@ $$
   - Prove that in fact *every* $\sigma \in S_n$ satisfies $\sigma \in \ker \phi$, so $\phi$ is the trivial morphism.
   - Does this hold if $n$ is odd?
 
+### Matrix Groups
+
+- Let $\FF_p$ be the finite field with $p$ elements, where $p$ is a prime.
+  Show that the centers of $\GL_n(\FF_p)$ and $\SL_n(\FF_p)$ consist only of scalar matrices.
+
 ## Warmup Problems
 
 - Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
