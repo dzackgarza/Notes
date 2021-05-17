@@ -53,8 +53,13 @@ $$
 - Let $H\leq G$ be a subgroup and $N\normal G$ be a normal subgroup.
   Show that $NH \leq G$ is a subgroup.
 
+- Let $G_1, G_2$ be groups and $H_2 \leq G_2$ a subgroup.
+  Suppose $\phi: G_1\to G_2$ is a group morphism.
+  Show that $\phi\inv(H_2) \leq G_1$ is a subgroup of $G_1$, and prove that
+  \[
+  xH_1 = yH_1 \iff \phi(x)H_2 = \phi(y)H_2
+  .\]
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%203.png](attachments/Untitled%203.png)
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%204.png](attachments/Untitled%204.png)
 
