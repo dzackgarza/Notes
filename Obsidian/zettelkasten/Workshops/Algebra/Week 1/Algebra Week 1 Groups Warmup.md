@@ -25,7 +25,7 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- Matrix groups $\GL_n(k), \Orth_n(k), \SL_n(k), \SO_n(k)$ 
 	- $p\dash$groups
 	- Free groups $F_n$ (and presentations/relations)
-- The fundamental isomorphism theorems
+- The 4 fundamental isomorphism theorems
 - Finite groups of order $\# G \leq 20$
 
 
@@ -42,7 +42,8 @@ title: Algebra Qual Prep Week 1: Groups Warmup
 	- $p\dash$group
 - Write definitions or presentations for all of the special families of groups appearing above.
 - State what it means for a cycle to be even or odd.
-- Fi
+- Find a counterexample for the converse of Lagrange's theorem.
+- State the 4 fundamental isomorphism theorems
 
 ## Unsorted Questions
 

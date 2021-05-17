@@ -22,7 +22,12 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 - Group actions
 	- Orbit-stabilizer
 	- The class equation,
+	- Burnside's formula
 	- Important actions
+		- Self-action by left translation
+		- Self-action by conjugation
+		- Coset action by left-translation
+		- Coset action by conjugation?
 - Permutation representations
 	- The [Strong Cayley Theorem](https://math.la.asu.edu/~kawski/classes/mat444/handouts/strongCayley.pdf)
 	- The Cayley representation, 
@@ -35,9 +40,11 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 ## Review Exercises 
 
 - State definitions of the following:
+	- Group action
 	- Orbit
 	- Stabilizer
-	- Group action
+	- Fixed points
+- State the orbit-stabilizer theorem
 
 ## Misc
 

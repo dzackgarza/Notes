@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+            "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md"
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,9 +242,9 @@
   },
   "active": "fe27f6df490343db",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 1 Groups Warmup.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2 Finite Group Theory.md",
-    "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3 Sylow Theory.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 4.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 3.md",
     "zettelkasten/Workshops/Algebra/Week 1/Algebra Week 2.md",
