@@ -1,16 +1,21 @@
-- [localization](localization.md)
-  - See some actual computations of computing "at a prime" or "away from a prime" 
-  - [fraction field](fraction%20field)
-- [completion](completion.md) 
+- Operations
+	- [localization](localization.md)
+  		- See some actual computations of computing "at a prime" or "away from a prime" 
+  		- [fraction field](fraction%20field)
+	- [completion](completion.md) 
+- Types of rings
+	- [Complete ring](Complete%20ring)
+	- [Noetherian ring](Noetherian%20ring), 	
+	- [local ring](local%20ring)
+	- [reduced ring](reduced%20ring), 
+	- [normal ring](normal%20ring), 
+	- [regular ring](regular%20ring.md), 
+	- [excellent ring](excellent%20ring) 
+	- Cohen-Macauly
+- Big Theorems / Results
+	- [Noether normalization](Noether%20normalization)
+	- [Nakayama](Nakayama)
 - [algebra over a ring](algebra%20over%20a%20ring.md)
-- [Complete ring](Complete%20ring)
-- [local ring](local%20ring)
-- Cohen-Macauly
-- [Noether normalization](Noether%20normalization)
-- [Noetherian ring](Noetherian%20ring), 
-- [reduced ring](reduced%20ring), 
-- [normal ring](normal%20ring), 
-- [regular ring](regular%20ring.md), 
-- [excellent ring](excellent%20ring) 
-- [Nakayama](Nakayama)
+- [regular sequence](regular%20sequence)
+- [nilradical](nilradical)
 

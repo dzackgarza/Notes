@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/characteristic class.md",
+            "file": "zettelkasten/Commutative Algebra index.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/characteristic class.md",
+                "file": "zettelkasten/Commutative Algebra index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/characteristic class.md"
+                "file": "zettelkasten/Commutative Algebra index.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/characteristic class.md",
+                "file": "zettelkasten/Commutative Algebra index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/characteristic class.md",
+                "file": "zettelkasten/Commutative Algebra index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -244,6 +244,7 @@
   },
   "active": "1a8046c8eb3daeb9",
   "lastOpenFiles": [
+    "zettelkasten/Commutative Algebra index.md",
     "zettelkasten/characteristic class.md",
     "zettelkasten/vector bundles.md",
     "zettelkasten/h-principle.md",
@@ -252,7 +253,6 @@
     "zettelkasten/Model category theory.md",
     "zettelkasten/simplicial category.md",
     "zettelkasten/The model structure on simplicial sets.md",
-    "zettelkasten/DG category.md",
-    "zettelkasten/quasicategory.md"
+    "zettelkasten/DG category.md"
   ]
 }
