@@ -34,10 +34,9 @@ For everything that follows, assume $G$ is a finite group.
 $$
 xH = yH \iff x\inv y\in H \iff y\inv x \in H
 $$
+- Prove that 
 
 ![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%201.png](attachments/Untitled%201.png)
-
-Prove the fundamental theorem of cosets
 
 Prove that all cosets have the same cardinality.
 
