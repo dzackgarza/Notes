@@ -22,6 +22,7 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 - ![](../../attachments/Pasted%20image%2020210517023424.png)
 
 ## Exercises
-
+- ![](../../attachments/Pasted%20image%2020210517024749.png)
+- ![](../../attachments/Pasted%20image%2020210517024557.png)
 - ![](../../attachments/Pasted%20image%2020210517023333.png)
 - ![](../../attachments/Pasted%20image%2020210517024431.png)
