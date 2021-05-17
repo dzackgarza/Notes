@@ -13,6 +13,8 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 
 ## Warmup
 
+- State the Cauchy-Riemann equations.
+
 - ![](../../attachments/Pasted%20image%2020210517022935.png)
 - ![](../../attachments/Pasted%20image%2020210517022946.png)
 - ![](../../attachments/Pasted%20image%2020210517023232.png)
