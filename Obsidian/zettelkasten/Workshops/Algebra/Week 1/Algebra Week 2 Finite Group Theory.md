@@ -110,9 +110,9 @@ Prove that there is an isomorphism of sets
 
 # Qual Problems
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](attachments/Untitled%2013.png)
+![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](figures/Untitled%2013.png)
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](attachments/Untitled%2014.png)
+![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](figures/Untitled%2014.png)
 
 
 

@@ -158,9 +158,9 @@ $$
 
 ## Qual Problems
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](attachments/Untitled%2013.png)
+![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2013.png](figures/Untitled%2013.png)
 
-![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](attachments/Untitled%2014.png)
+![Workshop%20Materials%2022af9a14367c44e585cb4aefe9e11862/Untitled%2014.png](figures/Untitled%2014.png)
 
 ![image_2021-05-17-00-02-59](figures/image_2021-05-17-00-02-59.png)
 
