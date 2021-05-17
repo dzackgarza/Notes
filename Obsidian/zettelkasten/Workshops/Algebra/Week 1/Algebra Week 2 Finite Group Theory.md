@@ -1,5 +1,5 @@
 ---
-title: Algebra Qual Prep Week 2
+title: Algebra Qual Prep Week 2: Finite Group Theory
 ---
 
 # Week 2
@@ -19,6 +19,9 @@ title: Algebra Qual Prep Week 2
 	- The class equation,
 - The Cayley representation, 
 - The permutation representation
+- FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
+	- Invariant factors
+	- Elementary divisors
 
 
 ## Review Exercises 
