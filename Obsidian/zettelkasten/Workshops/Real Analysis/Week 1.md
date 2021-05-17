@@ -22,7 +22,7 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 - Discuss the $\limsup$ and $\liminf$ of a sequence of real numbers.
 - Give two different definitions for compactness in a metric space.
 - Find an example of a metric space with a closed and bounded subspace that is not compact.
-- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $a_n \ctz$.
+- Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $a_n \ctz{n}$ and the tail $$\sum_{n > N} a_n \ctz{N}$$
 
 
 ## Exercises
