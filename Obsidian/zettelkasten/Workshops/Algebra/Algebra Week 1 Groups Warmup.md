@@ -10,7 +10,9 @@ title: "Algebra Qual Prep Week 1: Groups Warmup"
 
 - Subgroups
 	- The one-step subgroup test
+		- $(x,y\in H\implies xy\inv \in H) \implies H\leq G$
 	- Cosets
+		> $xH := \ts{xh\st h\in H}, G/H := \disjoint_{x} xH$
 	- The index of a subgroup
 	- Normal subgroups
 	- Quotients
@@ -58,26 +60,39 @@ For everything that follows, assume $G$ is a finite group.
 - $\# G$ denotes the *order* of $G$.
 - $e$ or $e_G$ denotes the identity element of $G$.
 - Multiplicative notation is generally used everywhere to denote the (possibly noncommutative) binary operation
+- $G/H$ is the set of left cosets of $G$ by $H$.
 
-### Orders
-
-- Prove Lagrange's theorem.
-- Prove Cauchy's theorem.
-- Prove that if $\# G$ is prime, then $G$ is cyclic
-- Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
-- Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$
 
 ### Cosets
 
-- Let $H\leq G$ be a subgroup (not necessarily normal), and let $G/H$ denote the set of left cosets of $G$ by $H$.
+- Let $H\leq G$ be a subgroup (not necessarily normal).
   Prove that any two cosets $xH, yH\in G/H$ have the same cardinality.
-
+	
+	> Define a map $m_g: G\to G$ where $x\mapsto gx$, restrict to $m_h:H\surjects gH$, inverse $(m_g)\inv = m_{g\inv}$
 - Prove the *fundamental theorem of cosets*: for $xH, yH\in G/H$,
 $$
 xH = yH \iff x\inv y\in H \iff y\inv x \in H
 $$
+
+> Use that $xH = yH\iff x\sim y$ is an equivalence relation (reflexive/symmetric/transitive)
 - Suppose $\# G = pq$ with $p, q\geq 2$ prime, and let $H\leq G$ be a proper subgroup.
   Prove that $H$ must be cyclic.
+  
+  ### Orders
+
+- Prove Lagrange's theorem.
+
+> Use $G = \disjoint_{i=1}^n g_i H$, that cosets all have cardinality $\# H$, and $\# \disjoint X_i = \sum \# X_i$
+- Prove Cauchy's theorem.
+
+> Induce on $\# G$. Assume $\# G > p$ and pick $g\neq 1$.
+> If $p\divides \# g$, use cyclic group theory, so assume otherwise.
+> Use that $\#G = \#G/N \#N$ so $p$ divides $\# G/N$, apply IH to get an element of order $p$ in the quotient.
+> Then $y\not\in N$ but $y^p\in N$, so $\gens{y}\neq \gens{y^p}$ since $y^p\in N \implies \gens{y^p} \subseteq N$.
+> Get $p\divides \# \gens{y}$, apply IH.
+- Prove that if $\# G$ is prime, then $G$ is cyclic
+- Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
+- Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$
 
 ### Normal Subgroups
 
@@ -91,9 +106,6 @@ $$
 
 - Let $G_1, G_2$ be groups and $H_2 \leq G_2$ a subgroup.
   Suppose $\phi: G_1\to G_2$ is a group morphism.
-
-- Suppose $\phi: G_1 \to G_2$ is a group morphism.
-
   - Show that the image $\phi(G_1) \leq G_2$ is a subgroup of $G_2$
   - Show that the preimage $\phi\inv(H_2) \leq G_1$ is a subgroup of $G_1$, 
   - Show that the kernel $\ker \phi \normal G_1$ is a normal subgroup of $G_1$.
@@ -130,12 +142,29 @@ $$
 
 - (**Important**)
 	Prove that if $G/Z(G)$ is cyclic then $G$ is abelian.
+	
+	> Write $Z = Z(G)$, fix $x,y\in G$. Since $G/Z = \gens{gZ}$, 
+	> $xZ = (gZ)^m = g^mZ$ and $yz = (gZ)^n = g^nz$
+	> $g^{-m}x, g^{-n}y \in Z \implies x = g^m z_1, y = g^n z_2$
+	> $xy = g^m z_1 g^n z_2$, everything commutes.
 
 - (**Important**)
 	Classify all groups of order $p^2$.
+	
+	> Must be abelian since quotient is cyclic.
+	> If there's an element of order $p^2$, cyclic, done.
+	> Else every element $a\neq 1$ must have order $p$.
+	> Then $\gens{a}\neq G$, so pick $b$ in its complement, it has order $p$. Call these two subgroups $H, K$
+	> Recognize direct products: abelian implies both are normal, $H \intersect K = \ts{1}$. and $\#HK = \# H \# K / \#(H \intersect K) = p\cdot p/1 = p^2$
 
 - (**Important**)
 	Show that if $H\leq G$ and $[G: H] = 2$ then $H$ is normal.
+	
+	> Index 2 implies partition into 2 left cosets: $H, gH$, or two right cosets $H, Hg'$
+	> Note that $gH = G\sm H = Hg'$
+	> Pick $x$, want to show that $xHx\inv = H$, so $xH = Hx$.
+	> Case 1: $x\in H\implies xH = H = Hx$
+	> Case 2: $xH\neq H \implies xH = gH$. Similarly $Hx \neq H \implies Hx = Hg'$, so $$xH = gH = G\sm H = Hg' = Hx$$
 	
 	- Suppose that the same result holds with 2 replaced by $p$ defined as the smallest prime factor of $\# G$
 

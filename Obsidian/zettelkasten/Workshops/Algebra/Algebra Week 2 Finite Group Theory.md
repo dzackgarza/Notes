@@ -11,17 +11,7 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 ## Topics
 
 - Recognition of direct products and semidirect products
-- Simple groups
-- Series of groups
-	- Normal series
-	- Central series
-	- Solvable groups
-		- Derived series
-	- Nilpotent groups
-		- Lower central series
-		- Upper central series
-	- The Jordan-Holder theorem
-		- Composition series
+- Amalgam size lemma: $\#HK = \# H \# K / \#(H\intersect K)$
 - Group actions
 	- Orbit-stabilizer
 	- The class equation,
@@ -39,6 +29,17 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 	- Elementary divisors
 - Automorphisms
 	- Inner automorphisms
+- Simple groups
+- Series of groups
+	- Normal series
+	- Central series
+	- Solvable groups
+		- Derived series
+	- Nilpotent groups
+		- Lower central series
+		- Upper central series
+	- The Jordan-Holder theorem
+		- Composition series
 
 ## Review Exercises 
 
@@ -48,6 +49,7 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 	- Stabilizer
 	- Fixed points
 - State the orbit-stabilizer theorem
+- Show that the center of a $p\dash$group is nontrivial
 
 ## Misc
 

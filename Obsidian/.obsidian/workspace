@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
-            "mode": "source"
+            "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md"
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md"
               }
             }
           },
@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5121879577637,
-    "collapsed": true
+    "width": 511.5121879577637
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,15 +242,15 @@
   },
   "active": "c271c257b36d369d",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
+    "zettelkasten/Workshops/Algebra/Algebra Week 2 Finite Group Theory.md",
+    "zettelkasten/Algebra Basic Topics.md",
+    "zettelkasten/Untitled 10.md",
+    "zettelkasten/Ridiculous Theorems.md",
     "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 2.md",
     "zettelkasten/Workshops/Complex Analysis/Untitled.md",
-    "zettelkasten/Workshops/Topology/Week 1 Preliminaries.md",
-    "zettelkasten/Workshops/Topology/Week 1 Point Set.md",
-    "zettelkasten/Workshops/Topology/Untitled.md",
-    "zettelkasten/Workshops/Real Analysis/Week 1.md",
-    "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
-    "zettelkasten/Workshops/Real Analysis/Untitled.md"
+    "zettelkasten/Workshops/Topology/Week 1 Preliminaries.md"
   ]
 }
