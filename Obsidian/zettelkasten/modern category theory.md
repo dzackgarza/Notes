@@ -15,10 +15,12 @@ aliases: ["category theory"]
 - [Day convolution](Day%20convolution.md)
 - [Tensored Category](Tensored%20Category)
 - [Enriched category](Enriched%20category.md)
-- [linear category](linear%20category)
 - [continuous functor](continuous%20functor)
 - [quivers](quivers)
 - [triangulated categories](triangulated%20categories)
+- [linear category](linear%20category)
+	- [DG category](DG%20category.md)
+- [pointed category](pointed%20category)
 
 ## Internal Objects
 

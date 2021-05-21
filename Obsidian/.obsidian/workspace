@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
-            "mode": "preview"
+            "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reconstruction",
+                "query": "\"linear category\"",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md"
+                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
+                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "c271c257b36d369d",
   "lastOpenFiles": [
-    "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
-    "zettelkasten/Workshops/Algebra/Algebra Week 2 Finite Group Theory.md",
-    "zettelkasten/Algebra Basic Topics.md",
-    "zettelkasten/Untitled 10.md",
-    "zettelkasten/Ridiculous Theorems.md",
+    "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
+    "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md",
+    "zettelkasten/Workshops/Real Analysis/Untitled.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
-    "zettelkasten/Workshops/Complex Analysis/Complex Week 2.md",
-    "zettelkasten/Workshops/Complex Analysis/Untitled.md",
-    "zettelkasten/Workshops/Topology/Week 1 Preliminaries.md"
+    "zettelkasten/Workshops/Workshop Index.md",
+    "zettelkasten/DG category.md",
+    "zettelkasten/modern category theory.md",
+    "zettelkasten/linear category.md",
+    "zettelkasten/Riemann zeta function.md"
   ]
 }

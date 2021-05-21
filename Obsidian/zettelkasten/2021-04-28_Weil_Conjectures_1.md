@@ -42,7 +42,7 @@ Compare 2b above: Riemann says roots are along critical strip $\Re(z) = \frac 1 
 (Note: there is a (conformal?) map that takes the circle to the line, so we can send the roots of $P_i$ to the line $\Re(z) = \frac 1 2$....but not for all $i$ at once.)
 
 Consequences:
-Riemann-Zeta: error estimates in the prime number theorem agree with probabilistic models
+[Riemann zeta function](Riemann%20zeta%20function): error estimates in the prime number theorem agree with probabilistic models
 Weil: error estimates in Ramanujan's $\tau$ is as small as hoped.
 
 Proofs:

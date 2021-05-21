@@ -31,10 +31,15 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 - What is the logarithmic derivative?
 - Find a  function $f$ such that $f^2$ is analytic on the open unit disc but $f$ is not.
 
-![](../../attachments/Pasted%20image%2020210517025125.png)
+- ![](../../attachments/Pasted%20image%2020210517025125.png)
+	- Use that Lipschitz implies uniformly continuous.
 - ![](../../attachments/Pasted%20image%2020210517022935.png)
+	- Derivation of CR equations: approach along totally real and totally imaginary paths for $h$.
 - ![](../../attachments/Pasted%20image%2020210517022946.png)
+	- Polar coordinates, chain rule, Cauchy-Riemann equations.
 - ![](../../attachments/Pasted%20image%2020210517023232.png)
+	- Converges everywhere on $S^1$: take $\sum z^k/k^2$.
+	- Part 2: ???? Todo get help
 - ![](../../attachments/Pasted%20image%2020210517023424.png)
 
 ## Exercises
