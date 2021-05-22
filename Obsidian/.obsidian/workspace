@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
+            "file": "zettelkasten/Untitled 10.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
+                "file": "zettelkasten/Untitled 10.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md"
+                "file": "zettelkasten/Untitled 10.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
+                "file": "zettelkasten/Untitled 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
+                "file": "zettelkasten/Untitled 10.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "c271c257b36d369d",
   "lastOpenFiles": [
+    "zettelkasten/Untitled 10.md",
     "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md",
@@ -250,7 +251,6 @@
     "zettelkasten/Workshops/Workshop Index.md",
     "zettelkasten/DG category.md",
     "zettelkasten/modern category theory.md",
-    "zettelkasten/linear category.md",
-    "zettelkasten/Riemann zeta function.md"
+    "zettelkasten/linear category.md"
   ]
 }

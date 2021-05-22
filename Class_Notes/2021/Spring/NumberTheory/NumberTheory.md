@@ -3,6 +3,10 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\dr}{\,dr}
+\newcommand{\dxi}{\,d\xi}
+\newcommand{\dzeta}{\,d\zeta}
+\newcommand{\dtheta}{\,d\theta}
 \newcommand{\barz}{\bar{z} }
 \newcommand{\dzbar}{\,d\bar{z} }
 \newcommand{\zbar}{\bar{z} }
@@ -10,7 +14,6 @@
 \newcommand{\dw}{\,dw}
 \newcommand{\dV}{\,dV}
 \newcommand{\dmu}{\,d\mu}
-\newcommand{\T}{\mathrm{T}}
 \newcommand{\open}[1]{\overset{\circ}{#1}}
 \newcommand{\textoperatorname}[1]{
   \operatorname{\textnormal{#1}}
@@ -27,7 +30,12 @@
 \newcommand{\BB}[0]{{\mathbb{B}}}
 \newcommand{\CP}[0]{{\mathbb{CP}}}
 \newcommand{\DD}[0]{{\mathbb{D}}}
+\newcommand{\EE}[0]{{\mathbb{E}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
+\newcommand{\Fp}[0]{{\mathbb{F}_p}}
+\newcommand{\Fpbar}[0]{\bar{\mathbb{F}_p}}
+\newcommand{\Fpn}[0]{{\mathbb{F}_{p^n} }}
+\newcommand{\FFbar}[0]{{ \bar{ \mathbb{F}} }}
 \newcommand{\fq}[0]{{\mathbb{F}_{q}}}
 \newcommand{\fqr}[0]{{\mathbb{F}_{q^r}}}
 \newcommand{\GF}[0]{{\mathbb{GF}}}
@@ -54,21 +62,26 @@
 \newcommand{\zlz}[0]{\mathbb{Z}/\ell\mathbb{Z}}
 \newcommand{\zlnz}[0]{\mathbb{Z}/\ell^n\mathbb{Z}}
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
+\newcommand{\QQp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
+\newcommand{\ZZp}[0]{\mathbb{Z}_{(p)}}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
-\newcommand{\FFp}[0]{\mathbb{F}_p}
 \newcommand{\chp}[0]{\operatorname{ch. p}}
 \newcommand{\fp}[0]{\operatorname{fp}}
-\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 \newcommand{\HT}[0]{{\operatorname{HT}}}
+\newcommand{\LC}[0]{{\mathrm{LC}}}
 \newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
+\newcommand{\Ric}[0]{\operatorname{Ric}}
+\newcommand{\Ahat}[0]{\hat{ \operatorname{A}}_g }
 \newcommand{\covol}[0]{\operatorname{covol}}
+\newcommand{\bP}[0]{\operatorname{bP}}
 \newcommand{\Cx}[0]{\operatorname{Cx}}
 \newcommand{\HF}[0]{\operatorname{HF}}
-\newcommand{\CF}[0]{\operatorname{HF}}
-\newcommand{\ZHS}[0]{\operatorname{ZHS}}
+\newcommand{\CF}[0]{\operatorname{CF}}
+\newcommand{\HFK}[0]{\operatorname{HFK}}
+\newcommand{\ZHS}[0]{\mathbb{Z}\operatorname{HS}}
 \newcommand{\QHS}[0]{\operatorname{QHS}}
 \newcommand{\ZHB}[0]{\operatorname{ZHB}}
 \newcommand{\QHB}[0]{\operatorname{QHB}}
@@ -88,8 +101,11 @@
 \newcommand{\Art}[0]{\operatorname{Art}}
 \newcommand{\red}[0]{{ \text{red} }}
 \newcommand{\Pic}[0]{{\operatorname{Pic}}}
+\newcommand{\NS}[0]{{\operatorname{NS}}}
 \newcommand{\lcm}[0]{\operatorname{lcm}}
 \newcommand{\maps}[0]{\operatorname{Maps}}
+\newcommand{\spec}[0]{\operatorname{Spec}}
+\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\maxspec}[0]{{\operatorname{maxSpec}}}
 \newcommand{\Tr}[0]{\operatorname{Tr}}
 \newcommand{\adj}[0]{\operatorname{adj}}
@@ -101,24 +117,25 @@
 \newcommand{\arccot}[0]{\operatorname{arccot}}
 \newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
-\newcommand{\Sp}[0]{{\operatorname{Sp}}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
+\newcommand{\fpqc}[0]{\mathrm{\operatorname{fpqc}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
 \newcommand{\afp}[0]{A_{/\FF_p}}
-\newcommand{\Fp}[0]{{\FF_p}}
 \newcommand{\HP}[0]{{\operatorname{HP}}}
 \newcommand{\TP}[0]{{\operatorname{TP}}}
 \newcommand{\HC}[0]{{\operatorname{HC}}}
 \newcommand{\HH}[0]{{\mathbb{H}}}
 \newcommand{\HoH}[0]{{\operatorname{HH}}}
 \newcommand{\THoH}[0]{{\operatorname{THH}}}
+\newcommand{\mTHH}[0]{{\operatorname{THH}}}
 \newcommand{\THC}[0]{{\operatorname{THC}}}
 \newcommand{\TC}[0]{{\operatorname{TC}}}
 \newcommand{\GW}[0]{{\operatorname{GW}}}
+\newcommand{\SH}[0]{{\operatorname{SH}}}
 \newcommand{\TCH}[0]{{\operatorname{TCH}}}
 \newcommand{\Zar}[0]{{\mathrm{Zar}}}
 \newcommand{\codim}[0]{\operatorname{codim}}
@@ -142,37 +159,51 @@
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
+\newcommand{\Orth}[0]{{\operatorname{O}}}
+\newcommand{\MO}[0]{{\operatorname{MO}}}
 \newcommand{\SU}[0]{{\operatorname{SU}}}
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
+\newcommand{\Pin}[0]{{\operatorname{Pin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\CH}[0]{{\operatorname{CH}}}
 \newcommand{\Cat}[0]{\mathsf{Cat}}
+\newcommand{\Poset}[0]{\mathsf{Poset}}
 \newcommand{\Fun}[0]{{\mathsf{Fun}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
 \newcommand{\poly}[0]{\mathsf{poly}}
 \newcommand{\Vect}[0]{{\mathsf{Vect}}}
 \newcommand{\Sh}[0]{{\mathsf{Sh}}}
 \newcommand{\Var}[0]{{\mathsf{Var}}}
+\newcommand{\Vark}[0]{{\mathsf{Var}_{/k} }}
 \newcommand{\Alg}[0]{{\mathsf{Alg}}}
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
+\newcommand{\FI}[0]{{\mathsf{FI}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
+\newcommand{\Finset}[0]{{\mathsf{FinSet}}}
+\newcommand{\sSet}[0]{{\mathsf{sSet}}}
+\newcommand{\Spaces}[0]{{\mathsf{Spaces}}}
+\newcommand{\Sp}[0]{{\mathsf{Sp}}}
 \newcommand{\sets}[0]{{\mathsf{Set}}}
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
 \newcommand{\Grpd}[0]{{\mathsf{Grpd}}}
 \newcommand{\inftyGrpd}[0]{{\infty\dash\mathsf{Grpd}}}
-\newcommand{\Groups}[0]{{\mathsf{Groups}}}
+\newcommand{\inftycat}[0]{{ \underset{\infty}{ \Cat}  }}
+\newcommand{\Kan}[0]{{\mathsf{Kan}}}
+\newcommand{\Groups}[0]{{\mathsf{Group}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\CRing}[0]{\mathsf{CRing}}
+\newcommand{\Ringedspace}[0]{\mathsf{RingSp}}
 \newcommand{\Field}[0]{\mathsf{Field}}
 \newcommand{\Perf}[0]{\mathsf{Perf}}
 \newcommand{\zmod}[0]{{\mathbb{Z}\dash\mathsf{Mod}}}
 \newcommand{\rmod}[0]{{\mathsf{R}\dash\mathsf{Mod}}}
+\newcommand{\gmod}[0]{{\mathsf{G}\dash\mathsf{Mod}}}
 \newcommand{\liegmod}[0]{{\mathfrak{g}\dash\mathsf{Mod}}}
 \newcommand{\mods}[1]{{\mathsf{#1}\dash\mathsf{Mod}}}
 \newcommand{\modsright}[1]{\mathsf{Mod}\dash\mathsf{#1}}
@@ -195,16 +226,20 @@
 \newcommand{\calg}[0]{\mathsf{CAlg}}
 \newcommand{\CCalg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
-\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\ssets}[0]{\mathsf{sSet}}
 \newcommand{\Assoc}[0]{\mathsf{Assoc}}
 \newcommand{\Free}[0]{\mathsf{Free}}
 \newcommand{\Unital}[0]{\mathsf{Unital}}
 \newcommand{\Riem}[0]{\mathsf{Riem}}
 \newcommand{\Comm}[0]{\mathsf{Comm}}
 \newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\CW}[0]{{\mathsf{CW}}}
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
+\newcommand{\ho}[0]{{\mathsf{ho}}}
 \newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\hoType}[0]{{\mathsf{hoType}}}
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\Aff}[0]{{\mathsf{Aff}}}
 \newcommand{\Schf}[0]{{\mathsf{Schf}}}
 \newcommand{\Rep}[0]{{\mathsf{Rep}}}
 \newcommand{\sch}[0]{{\mathsf{Sch}}}
@@ -213,26 +248,25 @@
 \newcommand{\Perv}[0]{\mathsf{Perv}}
 \newcommand{\presh}[0]{{\mathsf{Presh}}}
 \newcommand{\Presh}[0]{{\mathsf{Presh}}}
+\newcommand{\Fieldsover}[1]{{ \mathsf{Fields}_{#1} }}
+\newcommand{\bung}{{\mathsf{Bun}_G}}
+\newcommand{\set}{{\mathsf{Set} }}
 
-\newcommand{\Forget}[0]{{\operatorname{Forget}}}
 \newcommand{\eul}[0]{{\operatorname{eul}}}
 \newcommand{\ab}[0]{{\operatorname{ab}}}
 \newcommand{\op}[0]{^{\operatorname{op}}}
 \newcommand{\Op}[0]{{\operatorname{Op}}}
 \newcommand{\Ob}[0]{{\operatorname{Ob}}}
 \newcommand{\prim}[0]{{\operatorname{prim}}}
-\newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
-\newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
-\newcommand{\set}[0]{{\operatorname{Set}}}
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
-\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\Ext}{\operatorname{Ext} }
+\newcommand{\Def}{\operatorname{Def} }
+\newcommand{\Obs}{\operatorname{Obs} }
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
-\newcommand{\fin}[0]{{\operatorname{fin}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
 \newcommand{\annd}[0]{{\operatorname{ and }}}
-\newcommand{\bung}[0]{\operatorname{Bun}_G}
 \newcommand{\const}[0]{{\operatorname{const.}}}
 \newcommand{\disc}[0]{{\operatorname{disc}}}
 \newcommand{\discriminant}[0]{{\Delta}}
@@ -261,7 +295,7 @@
 \newcommand{\bigast}[0]{{\mathop{\text{\Large $\ast$}}}}
 \newcommand{\convolve}[0]{\ast}
 \newcommand{\freeprod}[0]{\ast}
-\newcommand{\Spinc}[0]{\mathrm{Spin}^{\mathbb{C} }}
+\newcommand{\Spinc}[0]{\mathrm{Spin}^{{c} }}
 \newcommand{\slope}[0]{{\mathrm{slope}}}
 \newcommand{\coker}[0]{\operatorname{coker}}
 \newcommand{\Mor}[0]{\operatorname{Mor}}
@@ -271,6 +305,7 @@
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
+\newcommand{\ctz}[1]{\, {\converges{{#1} \to\infty}\longrightarrow 0} \, }
 \newcommand{\bundle}[1]{\mathcal{#1}}
 \newcommand{\td}[0]{\mathrm{td}}
 \newcommand{\correspond}[1]{\theset{\substack{#1}}}
@@ -286,7 +321,7 @@
 \newcommand{\inverselim}[0]{\varprojlim}
 \newcommand{\disjoint}[0]{{\coprod}}
 \newcommand{\Disjoint}[0]{\displaystyle\coprod}
-\newcommand{\dual}[0]{^\vee}
+\newcommand{\dual}[0]{ {}^{ \check{} }}
 \newcommand{\sm}[0]{\setminus}
 \newcommand{\smz}[0]{\setminus\theset{0}}
 \newcommand{\smts}[1]{\setminus\theset{#1}}
@@ -300,9 +335,9 @@
 \newcommand{\inner}[2]{{\left\langle {#1},~{#2} \right\rangle}}
 \newcommand{\ip}[2]{{\left\langle {#1},~{#2} \right\rangle}}
 \newcommand{\union}[0]{\cup}
-\newcommand{\Union}[0]{\bigcup}
+\newcommand{\Union}[0]{\displaystyle\bigcup}
 \newcommand{\intersect}[0]{\cap}
-\newcommand{\Intersect}[0]{\bigcap}
+\newcommand{\Intersect}[0]{\displaystyle\bigcap}
 \newcommand{\into}[0]{\to}
 \newcommand{\inv}[0]{^{-1}}
 \newcommand{\mfa}[0]{{\mathfrak{a}}}
@@ -317,10 +352,12 @@
 \newcommand{\mfr}[0]{{\mathfrak{r}}}
 \newcommand{\mfs}[0]{{\mathfrak{s}}}
 \newcommand{\lieg}[0]{{\mathfrak{g}}}
+\newcommand{\liel}[0]{{\mathfrak{l}}}
 \newcommand{\lief}[0]{{\mathfrak{f}}}
 \newcommand{\liet}[0]{{\mathfrak{t}}}
 \newcommand{\lieo}[0]{{\mathfrak{o}}}
 \newcommand{\lied}[0]{{\mathfrak{d}}}
+\newcommand{\lier}[0]{{\mathfrak{r}}}
 \newcommand{\liegl}[0]{{\mathfrak{gl}}}
 \newcommand{\gl}[0]{{\mathfrak{gl}}}
 \newcommand{\liesl}[0]{{\mathfrak{sl}}}
@@ -332,11 +369,9 @@
 \newcommand{\lieso}[0]{{\mathfrak{so}}}
 \newcommand{\liesp}[0]{{\mathfrak{sp}}}
 \newcommand{\lieu}[0]{{\mathfrak{u}}}
-\newcommand{\Lie}[0]{\operatorname{Lie}}
 \newcommand{\nilrad}[0]{{\mathfrak{N}}}
 \newcommand{\jacobsonrad}[0]{{\mathfrak{J}}}
 \newcommand{\mm}[0]{{\mathfrak{m}}}
-\newcommand{\pr}[0]{{\operatorname{pr}}}
 \newcommand{\mapsvia}[1]{\xrightarrow{#1}}
 \newcommand{\fromvia}[1]{\xleftarrow{#1}}
 \newcommand{\mapstovia}[1]{\xmapsto{#1}}
@@ -351,6 +386,7 @@
 \newcommand{\injectsvia}[1]{\overset{#1}\injects}
 \newcommand{\surjects}[0]{\twoheadrightarrow}
 \newcommand{\Prism}[0]{\mathsf{Prism}}
+\newcommand{\Solid}[0]{\mathsf{Solid}}
 \newcommand{\Spf}[0]{\mathsf{Spf}}
 \newcommand{\WCart}[0]{\mathsf{WCart}}
 \newcommand{\padic}[0]{p\dash\text{adic}}
@@ -385,31 +421,6 @@
 \newcommand{\mcx}[0]{{\mathcal{X}}}
 \newcommand{\mcz}[0]{{\mathcal{Z}}}
 \newcommand{\kfq}[0]{K_{/\mathbb{F}_q}}
-\newcommand{\cl}[0]{{ \operatorname{cl}} }
-\newcommand{\Cl}[0]{{ \operatorname{Cl}} }
-\newcommand{\St}[0]{{ \operatorname{St} }}
-\newcommand{\DSt}[0]{{ \operatorname{DSt}}}
-\newcommand{\trdeg}[0]{\operatorname{trdeg}}
-\newcommand{\dist}[0]{\operatorname{dist}}
-\newcommand{\Dist}[0]{\operatorname{Dist}}
-\newcommand{\crit}[0]{\operatorname{crit}}
-\newcommand{\Crit}[0]{\operatorname{Crit}}
-\newcommand{\diam}[0]{{\operatorname{diam}}}
-\newcommand{\gal}[0]{\operatorname{Gal}}
-\newcommand{\diff}[0]{\operatorname{Diff}}
-\newcommand{\diag}[0]{\operatorname{diag}}
-\newcommand{\soc}[0]{\operatorname{Soc}}
-\newcommand{\hd}[0]{\operatorname{Head}}
-\newcommand{\grad}[0]{\operatorname{grad}}
-\newcommand{\hilb}[0]{\operatorname{Hilb}}
-\newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
-\newcommand{\Frame}[0]{{\operatorname{Frame}}}
-\newcommand{\Fr}[0]{{\operatorname{Fr}}}
-\newcommand{\prin}[0]{{\operatorname{Prin}}}
-\newcommand{\Taut}[0]{{\operatorname{Taut}}}
-\newcommand{\OFrame}[0]{{\operatorname{OFrame}}}
-\newcommand{\UFrame}[0]{{\operatorname{UFrame}}}
-\newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\shom}{ {\mathcal{H}}\kern-0.5pt{\operatorname{om}}}
 \newcommand{\Hsh}{{ \mathcal{H} }}
 \newcommand{\CY}{{ \text{CY} }}
@@ -425,10 +436,10 @@
 \newcommand{\notimplies}[0]{\centernot\implies}
 \newcommand{\onto}[0]{\twoheadhthtarrow}
 \newcommand{\ord}[0]{{\operatorname{Ord}}}
+\newcommand{\Stab}[0]{{\operatorname{Stab}}}
 \newcommand{\mult}[0]{{\operatorname{mult}}}
 \newcommand{\pic}[0]{{\operatorname{Pic}}}
 \newcommand{\projectivelim}[0]{\varprojlim}
-\newcommand{\rad}[0]{{\operatorname{rad}}}
 \newcommand{\rank}[0]{\operatorname{rank}}
 \newcommand{\realpart}[1]{{\mathcal{Re}({#1})}}
 \newcommand{\Log}[0]{\operatorname{Log}}
@@ -444,17 +455,17 @@
 \newcommand{\sgn}[0]{\operatorname{sgn}}
 \newcommand{\sign}[0]{\operatorname{sign}}
 \newcommand{\spanof}[0]{{\operatorname{span}}}
-\newcommand{\spec}[0]{\operatorname{Spec}}
-\newcommand{\mspec}[0]{\operatorname{mSpec}}
 \newcommand{\Jac}[0]{\operatorname{Jac}}
 \newcommand{\stab}[0]{{\operatorname{Stab}}}
 \newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
 \newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
-\newcommand{\strike}[1]{{\enclose{horizontalstrike}{#1}}}
+%\newcommand{\strike}[1]{{\enclose{\horizontalstrike}{#1}}}
 \newcommand{\st}[0]{{~\mathrel{\Big|}~}}
+\newcommand{\St}[0]{{\mathsf{St}}}
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
+\newcommand{\smashprod}[0]{\wedge}
 \newcommand{\Wedge}[0]{\bigwedge}
 \newcommand{\Extalg}[0]{\bigwedge}
 \newcommand{\wedgeprod}[0]{\vee}
@@ -483,8 +494,8 @@
 \renewcommand{\bar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
 \renewcommand{\div}[0]{\operatorname{Div}}
 \newcommand{\Div}[0]{\operatorname{Div}}
-\newcommand{\Prin}[0]{\operatorname{Prin}}
 \newcommand{\Frac}[0]{\operatorname{Frac}}
+\newcommand{\Sq}[0]{\operatorname{Sq}}
 \renewcommand{\hat}[1]{\widehat{#1}}
 \newcommand{\vhat}[1]{\widehat{ \vector{#1} }}
 \newcommand{\fourier}[1]{\widehat{#1}}
@@ -507,16 +518,24 @@
 \newcommand{\increasesto}[0]{\nearrow}
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
+\newcommand\Prinbun{\mathrm{Bun}^{\mathrm{prin}}}
+\newcommand\TMF{ \mathrm{TMF} }
+\newcommand\tmf{ \mathrm{tmf} }
+
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
+\DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
+\DeclareMathOperator{\submfds}{SubMfds}
+\DeclareMathOperator{\crys}{crys}
+\DeclareMathOperator{\rad}{rad}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \DeclareMathOperator*{\hocolim}{hocolim}
-\DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
 \DeclareMathOperator{\Hom}{Hom}
-\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\RHom}{\mathbb{R}Hom}
+\DeclareMathOperator{\proj}{proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
 \DeclareMathOperator{\Bun}{Bun}
@@ -532,15 +551,82 @@
 \DeclareMathOperator{\projection}{Proj}
 \DeclareMathOperator{\Der}{Der}
 \DeclareMathOperator{\len}{len}
+\DeclareMathOperator{\Loop}{{\Omega}}
+\DeclareMathOperator{\Suspend}{{\Sigma}}
+\DeclareMathOperator{\B}{{\mathsf{B} }}
+\DeclareMathOperator{\D}{{\mathsf{D} }}
+\DeclareMathOperator{\K}{{\mathsf{K} }}
+\DeclareMathOperator{\mH}{{\mathsf{H}\mkern-3mu }}
+\DeclareMathOperator{\T}{{T}}
+\DeclareMathOperator{\Rd}{{\mathbb{R} }}
+\DeclareMathOperator{\Ld}{{\mathbb{L} }}
+\DeclareMathOperator{\Bl}{Bl}
+\DeclareMathOperator{\Triv}{Triv}
+\DeclareMathOperator{\Tot}{Tot}
+\DeclareMathOperator{\Forget}{Forget}
+\DeclareMathOperator{\Griff}{Griff}
+\DeclareMathOperator{\Symb}{Symb}
+\DeclareMathOperator{\Th}{Th}
+\DeclareMathOperator{\U}{U}
+
+\newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
+\newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
+
+
+\newcommand{\DSt}[0]{{ \operatorname{DSt}}}
+
+\newcommand{\Lie}[0]{\operatorname{Lie}}
+\newcommand{\pr}[0]{{\operatorname{pr}}}
+\newcommand{\cl}[0]{{ \operatorname{cl}} }
+\newcommand{\Cl}[0]{{ \operatorname{Cl}} }
+\newcommand{\trdeg}[0]{\operatorname{trdeg}}
+\newcommand{\dist}[0]{\operatorname{dist}}
+\newcommand{\Dist}[0]{\operatorname{Dist}}
+\newcommand{\crit}[0]{\operatorname{crit}}
+\newcommand{\Crit}[0]{\operatorname{Crit}}
+\newcommand{\diam}[0]{{\operatorname{diam}}}
+\newcommand{\gal}[0]{\operatorname{Gal}}
+\newcommand{\diff}[0]{\operatorname{Diff}}
+\newcommand{\diag}[0]{\operatorname{diag}}
+\newcommand{\grad}[0]{\operatorname{grad}}
+\newcommand{\minpoly}[0]{{\operatorname{minpoly}}}
+\newcommand{\Places}[0]{{\operatorname{Places}}}
+
+\DeclareMathOperator{\hilb}{Hilb}
+\DeclareMathOperator{\Curv}{Curv}
+
+\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\Frame}{Frame}
+\DeclareMathOperator{\OFrame}{OFrame}
+\DeclareMathOperator{\UFrame}{UFrame}
+\DeclareMathOperator{\prin}{prin}
+\DeclareMathOperator{\Prin}{Prin}
+\DeclareMathOperator{\Taut}{Taut}
+
+\DeclareMathOperator{\Frob}{Frob}
+
+\DeclareMathOperator{\hd}{Head}
+\DeclareMathOperator{\soc}{Soc}
+\DeclareMathOperator{\ind}{ind}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\coInd}{coInd}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\cores}{cores}
+\DeclareMathOperator{\infl}{inf}
+\DeclareMathOperator{\coinfl}{coinf}
+
 \newcommand{\Suchthat}[0]{\middle\vert}
 \newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\delbar}[0]{\bar{\del}}
 
 
+
 \newcommand{\contains}[0]{\supseteq}
 \newcommand{\containing}[0]{\supseteq}
+\newcommand{\iscontainedin}[0]{\supseteq}
 
-\newcommand{\cat}[1]{\mathcal{#1}}
+\newcommand{\cat}[1]{\mathsf{#1}}
 \newcommand{\thecat}[1]{\mathbf{#1}}
 \newcommand{\sheaf}[1]{\operatorname{\mathcal{#1}}}
 
@@ -562,11 +648,14 @@
 \newcommand\even[0]{\text{even}}
 \newcommand\odd[0]{\text{odd}}
 \newcommand\hodgestar[0]{\star}
+\newcommand\dirac[0]{\mkern-3mu \not{ \partial} }
+\newcommand\laplacian[0]{\Delta}
 \newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
 \newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
 \newcommand\univcover[1]{\overline{#1}}
 \newcommand\closure[1]{\overline{#1}}
+\newcommand\fps[1]{{\left[\left[ #1 \right]\right]  }}
 \newcommand\capprod{\frown}
 \newcommand\cupprod{\smile}
 \newcommand\Path{\mathcal{P}}
@@ -578,6 +667,7 @@
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
 \newcommand\ev[0]{\operatorname{ev}}
+\newcommand\coev[0]{\operatorname{coev}}
 
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
@@ -594,39 +684,58 @@
 \newcommand{\integerpart}[1]{\left[ {#1}\right] }
 \newcommand{\zadjoin}[1]{\mathbb{Z}\left[ {#1} \right]}
 \newcommand{\Wedgepower}[0]{\bigwedge\nolimits}
-\newcommand{\Bl}[0]{\operatorname{Bl}}
-\newcommand{\Triv}[0]{{ \operatorname{Triv}}}
 \def\multichoose#1#2{{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}}
 \newcommand\elts[2]{{ {#1}_1, {#1}_2, \cdots, {#1}_{#2}}}
+\newcommand\fiberprod[1]{\underset{\scriptscriptstyle {#1} }{\times}}
 
-\newcommand{\Tot}[0]{\operatorname{Tot}}
+
 \newcommand{\Totsum}[0]{\Tot^{\oplus}}
 \newcommand{\Totprod}[0]{\Tot^{\Pi}}
 \newcommand{\equalsbecause}[1]{\overset{#1}{=}}
 \newcommand{\congbecause}[1]{\overset{#1}{\cong}}
+\newcommand{\congas}[1]{\underset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
-\newcommand{\forget}[0]{\mathrm{Forget}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
 \newcommand{\xpn}[0]{ { x^{p^n} } }
 
 
-\newcommand{\cores}[0]{\operatorname{cores}}
-\newcommand{\res}[0]{\operatorname{res}}
-\newcommand{\Res}[0]{\operatorname{Res}}
-\newcommand{\infl}[0]{\operatorname{inf}}
-\newcommand{\coinfl}[0]{\operatorname{coinf}}
-\newcommand{\ind}[0]{\operatorname{ind}}
-\newcommand{\Ind}[0]{\operatorname{Ind}}
-\newcommand{\Coind}[0]{\operatorname{coInd}}
-
-\newcommand{\submfds}{\operatorname{SubMfds}}
 
 \newcommand{\quotright}[2]{ {}^{#1}\mkern-2mu/\mkern-2mu_{#2} }
 \newcommand{\quotleft}[2]{ {}_{#2}\mkern-.5mu\backslash\mkern-2mu^{#1} }
-\newcommand\B{{ \mathsf{B}}}
-\newcommand\D{{ \mathsf{D}}}
-\newcommand\Rd{{ \mathsf{R}}}
-\newcommand\Ld{{ \mathsf{R}}}
+\newcommand{\Qbar}[0]{{ \bar{ \mathbb{Q} } }}
+\newcommand{\invert}[1]{{ \left[ { \scriptstyle \frac{1}{#1} } \right] }}
+\newcommand{\Ag}[0]{{\mathcal{A}_g}}
+\newcommand{\pcomplete}[0]{{ {}^{ \wedge }_{p} }}
+
+\newcommand{\matt}[4]{{
+\begin{bmatrix}
+#1 & #2 
+\\
+#3 & #4
+\end{bmatrix}
+}}
+
+
+\newcommand{\ptd}{{\scriptstyle { * } }}
+\newcommand{\fin}[0]{{\mathrm{fin}}}
+\newcommand{\ess}[0]{{\mathrm{ess}}}
+\newcommand{\fd}[0]{{\mathrm{fd}}}
+\newcommand{\fg}[0]{{\mathrm{fg}}}
+\newcommand{\ft}[0]{{\mathrm{ft}}}
+\newcommand{\smol}[0]{{\mathrm{small}}}
+\newcommand{\alev}[0]{{\,\mathrm{a.e.}}}
+\newcommand{\smooth}[0]{{\operatorname{sm}}}
+\newcommand{\semisimple}[0]{{\operatorname{ss}}}
+\newcommand{\gon}[0]{{\dash\mathrm{gon}}}
+\newcommand{\semi}[0]{{\operatorname{semi}}}
+\newcommand{\inc}[0]{{\operatorname{inc}}}
+\newcommand{\Ball}[0]{{B}}
+\newcommand{\hq}[0]{{/}}
+\newcommand{\normcomplex}[1]{{\norm{\complex{#1}}}}
+\newcommand{\unioninfty}[0]{{\union\ts{\infty}}}
+\newcommand{\dualnumbers}[0]{{ [\eps] / \eps^2 }}
+\newcommand{\nerve}[1]{{ \mathcal{N}({#1}) }}
+\newcommand{\realize}[1]{{ \abs{#1} }}
 
 # Notation
 
@@ -5595,4 +5704,1070 @@ By unique factorization, they must be the same, so $I\ZZ_L = \beta \ZZ_L$.
 
 :::
 
+
+
+# Lecture 17: Ch. 16, continued (Thursday, May 13)
+
+## Actuality of Ideals
+
+:::{.theorem title="Dedekind, Actuality of ideals"}
+If $I$ is a nonzero ideal of $\ZZ_K$ for $K$ a number field, then there is an $\alpha\in \bar{\ZZ}$ such that 
+\[
+I = (\alpha \bar\ZZ) \intersect \ZZ_K
+.\]
+
+:::
+
+:::{.lemma title="?"}
+Let $I$ be a nonzero ideal of $\ZZ_K$, then there is an extension of number fields $L/K$ such that $I \ZZ_L$ is principal ,say $I \ZZ_L = \alpha\ZZ_L$.
+:::
+
+:::{.proof title="Idea"}
+We've already proved this, but the idea was that we can take $m$ to be the order of the class group to obtain $I^m = \beta \ZZ_K$.
+Then if $L = K( \beta^{1/m} )$ we will have $I\ZZ_L = \beta^{1/m} \ZZ_L$.
+:::
+
+:::{.remark}
+How we'll use this to prove the theorem: the lemma shows that after passing to a suitable extension we can find $\alpha$, and the claim is that this $\alpha$ works.
+We'll need one more result:
+:::
+
+:::{.lemma title="Paul's up-down lemma"}
+Let $K$ be a number field and $I \normal \ZZ_K$ be a nonzero ideal.
+Let $R \leq \bar\ZZ$ be a subring containing $\ZZ_K$, then 
+\[
+IR \intersect \ZZ_K = I \normal \ZZ_K
+.\]
+
+The picture: we can lift ideals from $\ZZ_K$ to $R$ and intersect them with $\ZZ_K$ to come back down, and the claim is that this lands where you started:
+
+\begin{tikzcd}
+	{\bar{\ZZ}} \\
+	\\
+	R && IR \\
+	\\
+	{\ZZ_K} && I && {IR \intersect \ZZ_K}
+	\arrow[hook, from=5-1, to=3-1]
+	\arrow[hook, from=3-1, to=1-1]
+	\arrow["{(\wait) \cdot R}", from=5-3, to=3-3]
+	\arrow["{\wait \intersect \ZZ_K}", from=3-3, to=5-5]
+	\arrow[color={rgb,255:red,92;green,214;blue,214}, Rightarrow, no head, from=5-3, to=5-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCw0LCJcXFpaX0siXSxbMCwyLCJSIl0sWzAsMCwiXFxiYXJ7XFxaWn0iXSxbMiw0LCJJIl0sWzIsMiwiSVIiXSxbNCw0LCJJUiBcXGludGVyc2VjdCBcXFpaX0siXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsNCwiKFxcd2FpdCkgXFxjZG90IFIiXSxbNCw1LCJcXHdhaXQgXFxpbnRlcnNlY3QgXFxaWl9LIl0sWzMsNSwiIiwyLHsibGV2ZWwiOjIsImNvbG91ciI6WzE4MCw2MCw2MF0sInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+:::
+
+:::{.proof title="?"}
+Follow your nose!
+The containment $I \subseteq IR \intersect \ZZ_K$ is clear, since $I$ is contained in both terms.
+For the reverse containment, we'll first do it for $I$ principal, and then reduce to that case.
+So suppose $I = \alpha \ZZ_K$, then $IR = \alpha R$.
+Take $\beta \in IR \intersect \ZZ_K$, then \( \beta\over \alpha \in R \intersect K \subseteq \bar\ZZ \intersect K = \ZZ_K \).
+Then $\beta \in \alpha \ZZ_K$, which is what we wanted to show.
+\
+
+We'll reduce to the principal case by using a familiar trick.
+Pick $m\in \ZZ^{\geq 0}$ so that $I^m$ is principal, then $I^m R \intersect \ZZ_K = I^m$ by the previous case.
+Taking \( \gamma\in IR \intersect \ZZ_K \), we'll show it must be in $I$.
+We know \( \gamma^m \in (IR)^m = I^m R \), and thus we have \( \gamma^m \in I^m R \intersect \ZZ_K = I^m \).
+Now using unique factorization and to contain is to divide, this implies that $I^m \divides \gens{ \gamma ^m }= \gens{ \gamma }^m$.
+So $I \divides \gens{ \gammma }$ and thus \( \gamma \in I \). 
+:::
+
+:::{.proof title="of theorem"}
+Choose an extension $L/K$ with $I\ZZ_L = \alpha\ZZ_M$ principal.
+consider $I\bar{\ZZ}$.
+We have $I\bar\ZZ = (I\ZZ_L)\bar\ZZ$ -- this just says that extending $I$ to $\bar{\ZZ}$ can be done in two steps, first extending to $\ZZ_L$.
+Concretely, these extensions are linear combinations of elements in $I$ with coefficients in $\ZZ_L$, so extending in stages yields the same thing.
+We have
+\[
+I\bar\ZZ
+&= (I\ZZ_L) \bar\ZZ \\
+&= ( \alpha \ZZ_L) \bar\ZZ \\
+&= \alpha\bar\ZZ
+.\]
+Now apply the up-down lemma to $R = \bar\ZZ$ to obtain
+\[
+I = I\bar\ZZ \intersect \ZZ_K
+,\]
+which is equal to \( \alpha\bar\ZZ \intersect \ZZ_K \).
+:::
+
+:::{.remark}
+Is is true that in $\bar\ZZ$ that every ideal is principal?
+The answer is no, since this would force it to be a UFD, but $\bar\ZZ$ has irreducibles at all since there are no irreducibles.
+One *can* prove that every finitely generated ideal of $\bar\ZZ$ is principal.
+One can also prove a variant of Gauss' lemma for $\bar\ZZ$: one can take the greatest common divisor to be the generator of a principal ideal.
+:::
+
+
+## Chapter 17: Prime Decomposition and General Number Rings
+
+:::{.definition title="lies above"}
+If $P\normal \ZZ_K$ is nonzero, then $P$ **lies above** a rational prime $p\in \ZZ$ if $p\in P$.
+We also say $p$ **lies below** $P$.
+
+The picture:
+
+\begin{tikzcd}
+	K && {\ZZ_K} && P \\
+	\\
+	\QQ && \ZZ && p
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-3]
+	\arrow[no head, from=1-5, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJLIl0sWzAsMiwiXFxRUSJdLFsyLDAsIlxcWlpfSyJdLFsyLDIsIlxcWloiXSxbNCwwLCJQIl0sWzQsMiwicCJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzQsNSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+:::
+
+:::{.remark}
+As in the quadratic field setting, every $P$ lies above some uniquely determined $p$ in the sense that $P \intersect \ZZ = p\ZZ$.
+The proof here goes through in the same way.
+Note that since $p\in P \implies \gens{ p } \in P$, we have \( \gens{ p }\divides P  \).
+How do rational primes decomposes in $\ZZ_K$?
+I.e., how does \( \gens{ p }  \) factor into prime ideals?
+:::
+
+:::{.remark}
+There are two main theorems: one describes how these prime ideals factor, and the second (Dedekind-Kummer) will produce the factorization.
+:::
+
+:::{.theorem title="efg theorem"}
+Let $K$ be a number field of degree $[K: \QQ] = n$ and let $p$ be a rational prime.
+Factor 
+\[
+\gens{ p } \prod_{i=1}^g P_ji{e_i}
+,\]
+where the $P_i$ are distinct primes ideals and $e_i > 0$.
+Then for each $i$ we have $N(P_i) = p^{f_i}$ for some $f_i > 0$, and 
+\[
+\sum_{i=1}^g e_i f_i = n
+.\]
+
+Before the proof, it's helpful to introduce some notation.
+:::
+
+:::{.definition title="Residual degree and ramification index"}
+In the setup above, call $f_i = f(P_i / p)$ the **residual degree** of $P_i/p$ and $e_i = e(P_i/p)$ the **ramification index**.
+:::
+
+:::{.proof title="of theorem"}
+Consider the homomorphisms 
+\[
+\phi: \ZZ &\to \ZZ_K/P_i \\
+a &\mapsto a \mod{P_i}
+.\]
+We have $\ker \varphi = P_i \intersect \ZZ$, and since $P$ lies over $p$, this equals $p\ZZ$.
+So there is an induced injection $\FF_p \da \ZZ/p\ZZ \injects \ZZ_K/ P_i$, where $a\mod p \mapsto a \mod P_i$.
+Thus $\ZZ_K/P_i \in \Vect_{\FF_p}$ is an $\FF_p\dash$vector space.
+We want to show the size of the right-hand side, which is the size of $P_i$, is a power of $p$.
+But any finite-dimensional vector space over $\FF_p$ has dimension $p^\ell$ for some $\ell$.
+Let $f_i \da \fim_{\FF_p} (\ZZ_K/P_i)$, then $N(P_i) = \# \ZZ_K/P_i = p^{f_i}$.
+\
+
+Now proving that $\sum e_i f_i = n$ is an easy corollary: go back to the factorization and take norms of both sides.
+Noting $N( \gens{ p } ) = p^n$ since $\ZZ_K \in \Ab_n^{\Free}$, we have
+\[
+p^n 
+&= N( \gens{ p }  ) \\
+&= \prod_{i=1}^g  N(P_i)^{\ell_i} \\
+&= \prod_{i=1}^g p^{e_i f_i} \\
+&= p^{\sum_i e_i f_i}
+,\]
+and the result follows by comparing exponents.
+:::
+
+:::{.observation}
+Each $\ZZ_K/P_i$ is a field.
+Since $P_i \in \spec \ZZ_K$, so $\ZZ_K/P_i$ is an integral domain.
+It's finite by the above argument, using that norms are finite, so it's in fact a field.
+It contains $\ZZ/p\ZZ$, and is thus an extension over it, and the extension degree $[\ZZ_K/P_i: \ZZ/p\ZZ] = f_i$.
+So $f_i$ are called the residual degrees since they're the degrees of extensions of residue fields.
+:::
+
+:::{.definition title="Inert, split, ramified"}
+More terminology: 
+
+- If \( \gens{ p }  \) is prime, the $p$ is **inert**.
+- If $g=n$, which forces $e_i = f_i = 1$ for all $i$, then $p$ **splits completely**.
+- If $e_i > 1$ for any $i$, then $p$ **ramifies**.
+:::
+
+:::{.remark}
+How do we actually determine the prime factors?
+:::
+
+:::{.theorem title="Dedekind-Kummer"}
+Let $K$ be a number field of degree $n$ and suppose $K = \QQ(\alpha)$ where \( \alpha\in \bar\ZZ \).
+This can be done by using the primitive element and scaling by an integer.
+Let $p$ be a rational prime, and suppose $p\notdivides [ \ZZ_K: \ZZ[\alpha] ]$.
+Then the prime ideal factorization of \( \gens{ p }  \) mirrors the factorization of $\min_{\alpha}(x) \mod p$.
+\
+
+More precisely, supposing 
+\[
+\min_{ \alpha}(x) = \prod_{i=1}^g p_i(x)^{e_i} \mod p && p_i \in \ZZ[x]
+,\]
+where the $p_i$ are the irreducible factors of $\min_{ \alpha}(x)$ in $\FF_p[x]$.
+Then 
+\[
+\gens{ p } = \prod_{i=1}^g P_i ^{e_i} && P_i \da \gens{ p, p_i( \alpha) } 
+.\]
+These $P_i \in \spec \ZZ_K$ are distinct, and the residual degrees are given by $f_i = \deg(p_i)$.
+:::
+
+:::{.remark}
+So as long as this condition holds, we factor $P$ by factoring a minimal polynomial mod $p$.
+Note that if one can find an \( \alpha\in \ZZ_K \), the condition holds vacuously since the index is 1.
+This always holds for quadratic fields, since $\ZZ_K = \ZZ[\tau]$, so this recovers the factorization statement in that setting.
+In an annoying twist of fate, not every number field can be written as $\ZZ[ \alpha]$ for some single \( \alpha \), and so this theorem necessarily excludes some primes.
+Is there some easy way to check the divisibility condition?
+The answer is yes, coming from the discriminant.
+:::
+
+:::{.proposition title="?"}
+Suppose $K = \QQ( \alpha)$ where \( \alpha\in \bar\ZZ \).
+If $p^2 \notdivides \Disc(\min_{\alpha} (x) )$, then $p\notdivides [\ZZ_K: \ZZ[\alpha]]$.
+:::
+
+:::{.remark}
+A while ago we showed that 
+\[
+\Disc( \min_{ \alpha}(x)) = \Disc(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = \Disc_K \cdot [\ZZ_K: \ZZ[ \alpha] ]^2
+.\]
+Note that we're done if this is true: if $p$ divides the index, $p^2$ divides the last term, meaning $p^2$ divides the first.
+:::
+
+:::{.example title="?"}
+Let $K = \QQ( \alpha)$ where \( \alpha \) is a root of the irreducible polynomial $f(x) = x^3 - x^2 - 2x + 8$.
+Recall that we used this example when looking at integral bases.
+By a computation, $\Disc(f(x)) = -4 \cdot 503$, and the only squared prime dividing this is $p=2$.
+We can thus apply Dedekind-Kummer for all $p\neq 2$.
+
+- Mod 3, $f$ is irreducible.
+  So \( \gens{ 3 }  \) is prime and $3$ is inert.
+
+- Mod 5, $f(x) \equiv (x+1)(x^2 - 2)$.
+  So \( \gens{ 5 }= P_1 P_2  \) where \( P_1 = \gens{ 5, \alpha+ 1 }  \) and \( P_2 = \gens{ 5, \alpha^2 - 2 }  \).
+  Thus $f_1 = \deg(x+1) = 1, f_2 = \deg(x^2 - 2) = 2$.
+
+- Mod 59, $f(x) \equiv (x+11)(x+20)(x+25)$.
+  So \( \gens{ 59 } = P_1 P_2 P_3  \) where e.g. $P_1 = \gens{ 5, \alpha+ 11 }$ and so on.
+  Note that $g=3=n$, so $59$ splits completely.
+
+- Mod 503, $f(x) \equiv (x+259)(x+354)^2$.
+  So \( \gens{ 503 }= P_1 P_2^2  \), and thus $503$ ramifies since an exponent is larger than 1.
+
+Note that $\Disc(f(x)) = 0 \mod 503$, so $f\in \FF_{503}[x]$ has a repeated root in an extension.
+We can run this backward to show that $503$ is the only odd prime that ramifies: Dedekind-Kummer says this can only happen if $f$ has a repeated root mod $p$.
+In this case, $\Disc(f) \mod p = 0$, so $p\divides 4\cdot 503$.
+Note that if you try to apply this theorem mod 2, this results in the wrong answer!
+:::
+
+:::{.lemma title="?"}
+Let $K = \QQ( \alpha)$ be a number field where \( \alpha \in \bar\ZZ \).
+Suppose $p\notdivides [\ZZ_K: \ZZ[ \alpha] ]$.
+Then the inclusion $\iota: \ZZ[\alpha] \injects \ZZ_K$ induces an isomorphism
+\[
+\bar\iota: {\ZZ[\alpha] \over p \ZZ[ \alpha] } \mapsvia{\sim} \ZZ_K/p\ZZ_K
+.\]
+:::
+
+:::{.proof title="?"}
+Start by showing $p \ZZ_K \intersect \ZZ[ \alpha] = p \ZZ[ \alpha ]$.
+The reverse containment is clear, so let \( \beta\in \p \ZZ_K \intersect \ZZ[ \alpha ] \).
+Then \( \beta/p \in \ZZ_K \), so look at its image in $\ZZ_K/ \ZZ[ \alpha]$.
+The order of the image divides $p$, , since $p (\beta/p) = \beta \in \ZZ[ \alpha]$.
+But we assumed that $p$ doesn't divide the size of this quotient, forcing the order to be 1 and thus $\beta/p\in \ZZ[ \alpha] \implies \beta \in p\ZZ[ \alpha]$.
+:::
+
+:::{.remark}
+The map $\bar\iota$ is well-defined because $\iota( p \ZZ[ \alpha]) \subseteq p\ZZ_K$, and is obviously a homomorphism.
+We want it to be an isomorphism, so what's the kernel?
+We've just shown that $\ker \bar\iota = 0$, and comparing cardinality makes it a surjection.
+Both have cardinality $p^n$, since both are free abelian groups of rank $n$.
+:::
+
+:::{.remark}
+This is useful because the Dedekind-Kummer theorem describes the left-hand side, but we want to study the right-hand side instead.
+The theorem says they're isomorphic!
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ch. 17 (Thursday, May 13)
+
+:::{.remark}
+Big theorem, Dedekind-Kummer: we have a factorization of $p$ for all but finitely many primes $p$.
+e supposed that $p \notdivides [\ZZ_K: \ZZ[ \alpha] ]$, and there are only finitely many $p$ that violate this condition.
+The claim was that if $\min_\alpha(x)$ factors into distinct irreducibles $p_i(x)$ in $\FF_p[x]$, then setting $P_i \da \gens{ p, p_i( \alpha) }$.
+Then there is a factorization of ideals \( \gens{ p } = \prod P_i^{e_i}  \) mirroring the factorization of the minimal polynomial.
+
+We had a lemma that under these hypotheses, the inclusion $\iota: \ZZ[ \alpha] \injects \ZZ_K$ induces an isomorphism on quotients
+\[
+\ZZ[ \alpha] / p \ZZ[ \alpha] \mapsvia{\sim} \ZZ_K / p\ZZ_K
+.\]
+So mod $p$, these two are the same.
+:::
+
+:::{.proof title="of Dedekind-Kummer"}
+For notation, set $m(x) \da \min_ \alpha(x)$.
+By assumption, we have a factorization $m(x) = \prod_{i=1}^g p_i(x)^{e_i} \mod p$, and we set $P_i \gens{ p, p_i( g a) }$. 
+We'll first show that the $P_i$ are prime ideals by modding to get a domain, and we'll compute residue degrees.
+Considering 
+\[
+\ZZ_K/ P_i 
+&= \ZZ_K / \gens{ p, p_i( \alpha) } \\
+&\cong (\ZZ_k / \gens{ p } )/ \gens{ p_i( \alpha) \mod p }\\
+&\cong (\ZZ[ \alpha] / \gens{ p } )/ \gens{ p_i( \alpha) \mod p }\\
+&\cong \ZZ[ \alpha] / \gens{ p, p_i( \alpha) } \\
+&\cong ( \ZZ[x] / \gens{ m(x) } ) / \gens{ p \mod m(x), p_i(x) \mod m(x) } \\
+&\cong ( \ZZ[ \alpha] / \gens{ p } ) / \gens{ m(x) \mod p, p_i(x) \mod p } 
+&\cong \FF_p[x] / \gens{ p_i(x) \mod p } 
+.\] 
+where we've used that $p_i(x) \divides m(x)$ mod $p$ by assumption.
+This is a field of size $p^{\deg p_i(x)}$, which proves that $P_i$ is prime of degree is $f(P_i / p) = \deg p_i(x)$.
+
+We'll now show the $P_i$ are distinct, and in fact comaximal in the sense that $P_i + P_j = \gens{ 1 }$ for $i\neq j$.
+We've assumed that $p_i(x) \mdo p, p_j(x) \mod p \in \FF_p[x]$ are distinct monic irreducibles in the PID $\FF_p[x]$, so we can find a linear combination equal to $1$.
+So write $p_i(x) X(x) + p_j(x) Y(x) = 1 + pQ(x)$ for some polynomials $X,Y\in \FF_p[x]$ and $Q\in \ZZ[ x]$.
+Plug in \( \alpha \) and mod out by \( I \da \gens{ p, p_i( \alpha), p_j( \alpha) }  \) to get $o \equiv 1 \mod I$.
+But then $1\in I$ forces $I = \gens{ 1 }$ 
+Thus
+\[
+\gens{ 1 } 
+&= \gens{ p, p_i( \alpha), p_j( \alpha) } \\
+&= \gens{ p, p_i ( \alpha) }+ \gens{ p, p_j( \alpha) } \\
+&= P_i + P_j
+.\]
+
+It remains to show that \( \gens{ p }= \prod P_i^{e_i}  \).
+Consider taking powers of $P_i$:
+\[
+P_i^2 = \gens{ p^2, p p_i( \alpha), p_i(\alpha)^2 } 
+\subseteq \gens{ p, p_i( \alpha) ^2 }  \\
+P_i^3 \subseteq P_i \gens{ p_i, p_i (\alpha)^2} \subseteq \gens{ p_i, p_I( \alpha)^3 }  
+.\]
+Repeating this will show that \( P_i^{e_i} \subseteq \gens{ p, p_i( \alpha)^{e_i} }  \).
+A similar argument will show
+\[
+\prod P_i^{e_i}
+\subseteq 
+\prod \gens{ p, p_i( \alpha)^{e_i}  } \\\
+\subseteq \gens{ p, \prod p_i (\alpha) ^{e_i} } 
+.\]
+Recall that we can write $m(x) = \prod p_i(x)^{e_i} + pR(x)$ where $R \in \ZZ[x]$.
+Plugging in $\alpha$ yields $0 \equiv \prod p_i( \alpha)^{e_i} \mod p$, so the right-hand side is a multiple of $p$, making the ideal above redundant.
+Thus \( \prod P_i^{e_i} \subseteq \gens{ p }  \), and since to contain is to divide, we can write
+\[
+\prod P_i^{e_i} = \gens{ p }J
+,\]
+and we want to show $J = \gens{ 1 }$. 
+
+Strategy: take norms.
+We know $N(p_i)^{e_i} = p^{e_i \deg p_i}$, and so 
+\[
+N\qty{ \prod P_i^{e_i} }
+&= \prod N(P_i) ^{e_i} \\
+&= p^{\sum e_i \deg p_i} \\
+&= p^{\deg m(x)} \\
+&= p^{[K: \QQ] }
+.\]
+
+We also have $N( \gens{ p } ) = \# \ZZ_k / \gens{ p }= p^{[K: \QQ]}$, which forces $N(J) = 1$
+:::
+
+:::{.remark}
+An recurring example in this class, due to Dedeking: let $K = \QQ( \alpha)$ where \( \alpha \) is a root of the irreducible polynomial $x^3 +x^2 -2x + 8 \in \QQ[x]$.
+We saw that $\ZZ_K \neq \ZZ[ \alpha]$ but their index divides 2, forcing it to be exactly 2.
+So the hypothesis of the Dedkind-Kummer theorem are not satisfied, but is the conclusion still true?
+It turns out that the answer is no, and 2 splits completely as \( \gens{ 2 } = P_1 P_2 P_3  \).
+The proof can be done bare-hands, we won't do it here.
+This is incompatible with the conclusion of the theorem: we would need the polynomial to factor into three monic linear polynomials mod 2.
+But there are only 2 different linear polynomials mod 2!
+:::
+
+:::{.remark}
+Every ideal in $\ZZ_K$ can be generated by at most 2 elements.
+Or really, "$3/2$" elements -- look it up!
+:::
+
+# Ch. 18: Units of $\ZZ_K$
+
+
+:::{.remark}
+Setting up some notation: let $K$ be a number field of degree $n$, and let
+
+- $r_1$ be the number of real embeddings, i.e. their images are contained in $\RR$,
+- $r_2$ be *half* the number of non-real embeddings, since they come in pairs by composing with complex conjugation.
+
+Note that $n = r_1 + 2r_2$.
+Label the real embeddings $\sigma_1, \cdots, \sigma_{r_1}$, and $\sigma_{r_1+1}, \cdots, \sigma_{r_1 + r_2}$ a set of non-real embeddings, where we take one such nonreal embedding from each pair.
+:::
+
+
+:::{.question}
+What is the structure of $\ZZ_K\units$?
+:::
+
+
+:::{.remark}
+For imaginary quadratic fields, the units were norm 1 in the ring of integers.
+Usually there were just 2, $\pm 1$, and in $\ZZ[i]$ there were 4, and $\QQ( \sqrt{-3} )$ there were 6.
+All of these formed cyclic groups.
+
+For real quadratic fields, there was a fundamental unit $u$ of infinite order, and all units were $\pm u$, so the group is abstractly $\ZZ \cross \ZZ/2$.
+So everything was a root of unity times a power of the fundamental unit.
+
+Define
+\[
+\mu_K = \ts{ \zeta\in K \st \zeta^n = 1 \text{ for some } n\in \ZZ^{> 0} } 
+.\]
+Clearly $\mu_K \subseteq K\units$, and in fact $\mu_k \subseteq  \bar{\ZZ}$.
+In fact, it forms a subgroup $\mu_K \leq \ZZ_k\units$.
+The big theorem on the structure of units is the following, which says the same thing as the real quadratic field case happens in general, just with more fundamental units.
+:::
+
+
+:::{.theorem title="Dirichlet's Units Theorem"}
+There are elements $\eps_1, \cdots, \eps_{r_1 + r_2 - 1} \in \ZZ_K\units$ of infinite order such that $\ZZ_K\units = \mu_K \prod_{i=1}^{r_1 + r_2 - 1} \gens{ \eps_i }$ as an internal direct product.
+So every unit has a unique decomposition of this form.
+
+Moreover, $\# \mu_K < \infty$.
+:::
+
+
+:::{.example title="?"}
+When is $\ZZ_K\units$ finite?
+This happens iff $r_1 + r_2 = 1$, and there are a few cases:
+
+- $r_1=1, r_2=0$, and since $n=r_1 + 2r_2 = 1$, this forces $K = \QQ$.
+- $r_1 = 0, r_2 = 1 \iff n=2$, so this is a quadratic field with no real embeddings, so $K$ is an imaginary quadratic field.
+:::
+
+
+:::{.remark}
+Our goal will be to prove the units theorem with *some* number $g$, and we'll show in the next chapter that $g = r_1 + r_2 - 1$ is the right $g$ to choose.
+
+An outline of the proof:
+
+- Define a homomorphism 
+\[
+\Log: K\units &\to \RR^{r_1 + r_2} \\
+\alpha &\mapsto \tv{ 
+\log\abs{\sigma_1( \alpha) }, 
+\cdots,
+\log\abs{\sigma_{r_1}( \alpha) }, 
+2\log\abs{\sigma_{r_1+1}( \alpha) }, 
+\cdots
+2\log\abs{\sigma_{r_1+r_2}( \alpha) }, 
+}
+.\]
+  We'll mostly consider its restriction to $\ZZ_K\units$.
+
+- Prove $\ker \ro{\Log}{\ZZ_K\units} = \mu_K$ and is finite.
+
+- Prove $\Log(\ZZ_K)$ is a discrete subgroup of $\RR^{r_1 + r_2}$.
+
+- Use the fact that such discrete subgroups are lattices.
+
+- Prove the units theorem with $g$ defined as the rank of this lattice.
+
+- Finally prove the rank $g$ is equal to $r_1 + r_2 - 1$.
+:::
+
+
+:::{.lemma title="?"}
+Let $M\in \RR^{>0}$ and let $\alpha \in \ZZ_K$.
+If for all embeddings $\sigma: K\embeds \CC$ we have bounds $\abs{\sigma( \alpha)} \leq M$, then $\alpha$ is a root of a polynomial in 
+\[
+P_{n,m}
+\da
+\ts{ x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \in \ZZ[x] \st \abs{a_i} \leq {n\choose i} M^{n-i} } 
+.\]
+Note that this is a finite set.
+:::
+
+
+
+:::{.proof title="?"}
+Note that $\alpha$ is a root of its **field polynomial**
+\[
+f(x) \da \prod_{\sigma: K \embeds \CC} (x - \sigma( \alpha))
+.\]
+Since \( \alpha \in \ZZ_K\), this polynomial $f \in \ZZ[x]$.
+So it suffices to show that $f\in P_{n, m}$.
+It's degree $n$, the coefficients are integers, but why do they satisfying the bound?
+Expanding the multiplication, there are ${n\choose i}$ prducts each of which involves $n-i$ of the $\sigma_i( \alpha)$, which is bounded.
+
+
+
+:::
+
+:::{.remark}
+We'll first show the kernel of $\Log$ is finite, then it'll be easy to see it's $\mu_K$.
+:::
+
+
+:::{.proposition title="?"}
+\[
+\# \ker \ro{ \Log}{\ZZ_K\units} < \infty 
+.\]
+:::
+
+
+:::{.proof title="?"}
+Suppose \( \alpha\in \ZZ_K\units \) and $\Log(\alpha) = \vector 0$.
+This says that \( \abs{ \sigma_i( \alpha)} = 1\) for all embeddings $\sigma_i: K\embeds \CC$.
+Applying the lemma above with $M=1$, $\alpha$ is a root of a polynomials in $P_{n, 1}$, each of which has at most $n$ roots.
+So there are only finitely many possibilities for $\alpha$.
+:::
+
+
+:::{.proposition title="?"}
+\[
+\ker \ro{ \Log}{\ZZ_K\units} = \mu_K
+.\]
+:::
+
+
+:::{.proof title="?"}
+Start with $\zeta\in \mu_K$, then under any $\sigma$, $\sigma(\zeta)$ is a complex root of unity.
+So $\abs{\sigma(\zeta)} = 1$, and by the previous result, $\Log(\zeta) = \vector 0$.
+So $\mu_K \subseteq \ker \Log$.
+
+Conversely suppose $\zeta\in \ker \Log$, which in particular is a group.
+Suppose $\# \ker \Log = n$, since we know it's finite.
+Then $\xi^n = e = 1$ in this group, making it an $n$th root of unity.
+:::
+
+
+:::{.remark}
+Note that $\mu_K$ is always cyclic
+This follows because for $K$ a field, it's an exercise that any finite subgroup $H\leq \GG_m(K)$, it is always cyclic.
+So we've written $\ZZ_K = C_q \times \ZZ^{r_1 + r_2 - 1}$ as an abstract group.
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ch. 18: Dirichlet's Units Theorem Part I (Friday, May 21)
+
+:::{.remark}
+Some notation introduced last time: for $K$ a number field, $[K: \QQ] = n$ the degree, set $\sigma_{1}, \cdots, \sigma_{r_1}$ to be the real embeddings, and $\sigma_{r_1 + 1}, \cdots, \sigma_{r_1 + r_2}$ (along with their complex conjugates) to be the nonreal embeddings into $\CC$.
+Let $\mu_K \da \ts{ z\in K \st z^n = 1, n\in \NN }$ be the $n$th roots of unity
+Recall Dirichlet's unit theorem: there are $\elts{\eps}{r_1+r_2-1} \in \ZZ_K\units$ of infinite order such that
+\[
+\ZZ_K\units = \mu_K \times \prod_{i\leq r_1 + r_2 -1} \gens{ \mu_i } 
+.\]
+Moreover, $\# \mu_K < \infty$.
+:::
+
+:::{.remark title="An outline of the proof"}
+Set $d = r_1 + r_2$.
+We define a homomorphism
+\[
+\Log: K\units &\to \RR^{d} \\
+\alpha &\mapsto \tv{ 
+\log\abs{\sigma_i(\alpha)}, 
+\cdots,
+\log\abs{\sigma_{r_1}(\alpha)}, 
+2 \log\abs{\sigma_{r_1+1}(\alpha)}, 
+\cdots,
+2 \log\abs{\sigma_{r_1+r_2}(\alpha)}, 
+}
+.\]
+Note that we only used half of the non-real embeddings, but made up for it by including a 2!
+We'll mostly be concerned with its restriction to $\ZZ_K\units$.
+
+
+1. Show that the restriction has finite kernel $\mu_k$ -- we've completed this.
+
+2. Show $\Log(\ZZ_K\units)$ is discrete as a subgroup of $\RR^{d}$
+
+3. Use the fact that every discrete subgroup of $\RR^d$ is a lattice, the $\ZZ\dash$span of linearly independent vectors.
+
+
+4. Prove the units theorem with $d-1$ replaced by $g = \rank \Log(\ZZ_K\units)$.
+
+5. Deferred to next chapter: show $g = r_1 + r_2 - 1$.
+
+:::
+
+## Step 2: Discreteness
+
+:::{.definition title="Discrete lattices"}
+Let $d\in \ZZ^{\geq 0}$ and let $\Lambda \leq \RR^d$ be a subgroup.
+Then $\Lambda$ is **discrete** iff for every $R>0$, $\Lambda \intersect B_R(0)$ is a finite set, where $B_R(0)$ is a ball of radius $R$ about 0.
+:::
+
+:::{.proposition title="?"}
+$\Log(\ZZ_K\units)$ is discrete in $\RR^d$ for $d=r_1 + r_2$.
+:::
+
+:::{.proof title="?"}
+Let $R>0$, we'll show that there are only finitely many $\alpha \in \ZZ_K\units$ for which $\Log(\alpha) \in B_R(0)$.
+This forces $\log\abs{\sigma(\alpha)} \leq R$ for all $\sigma: K\embeds \CC$.
+Thus $\abs{\sigma(\alpha)} \leq e^R$ for all such embeddings.
+By a previous lemma, this makes $\alpha$ a root of a polynomial in some finite set $P_{n,e^R}$ -- what this set is isn't important, just recall that once you have a bound on the embeddings, this gives a bound on the coefficients of the field polynomial.
+:::
+
+## Step 3
+
+:::{.theorem title="?"}
+Every discrete subgroup of $\RR^d$ is a lattice.
+:::
+
+:::{.proof title="?"}
+See the book!
+:::
+
+## Step 3
+
+:::{.theorem title="Weak units theorem"}
+Let $g$ be the rank of $\Log\ZZ_K\units \subseteq \RR^{r_1 + r_2}$.
+Then there are fundamental units \( \elts{\eps}{g} \in \ZZ_K\units \) of infinite order such that
+\[
+\ZZ_K\units = \mu_K \times \prod_{i\leq g} \gens{ \eps_i } 
+.\]
+Note that this is the same theorem from before, just with $d$ replaced by $g$.
+
+:::
+
+:::{.proof title="?"}
+Using that $g$ is by definition the rank of the lattice $\Log\ZZ$, choose $\elts{\eps}{g}\in \ZZ_K\units$ such that the $\Log(\eps_i)$ are $\RR\dash$linearly independent and their $\ZZ\dash$span is the lattice.
+Let $\eps\in \ZZ_K\units$ be any unit, then $\Log(\eps) \in \Log\ZZ_K\units$, so there are integers $\elts{n}{g}\in \ZZ$ such that 
+\[
+
+\Log(\eps) = \sum n_i \Log(\eps_i)
+.\]
+Hence
+\[
+\Log\qty{ \eps / \prod_{i\leq g} \eps_i^{n_i} } = \vector 0
+.\]
+So it's in the kernel and equal to some $\zeta\in \mu_K$, so we can write $\eps = \zeta \prod_{i\leq g} \eps_i^{n_i}$.
+This representation of $\eps$ is unique, in the sense that $\zeta$ and the $n_i$ are uniquely determined.
+Why?
+For any other representation, applying $\Log$ would kill the $\zeta$ part and write $\Log(\eps) = \sum n_{j} \eps_j$ in the basis $\eps_j$.
+So the $n_i$ are unique, and $\zeta$ is just obtained by dividing, so it can be recovered uniquely as well.
+:::
+
+:::{.remark}
+Our goal is to now show $g=r_1 + r_2-1$, which is hard.
+It's easier to obtain a bound instead.
+:::
+
+:::{.proposition title="Lattice rank bound"}
+Let $g = \rank \Log(\ZZ_K\units)$, then
+\[
+g\leq r_1 + r_2 - 1
+.\]
+:::
+
+:::{.lemma title="?"}
+Let $\Lambda \subseteq \RR^d$ be a lattice, then $\rank \Lambda = \dim_\RR V$ where $V$ is the smallest subspace of $\RR^d$ containing $\Lambda$.
+:::
+
+:::{.proof title="?"}
+Let $g\da \rank \Lambda$, and write \( \Lambda= \sum_{i\leq g} \ZZ \vector v_i \) where the $\vector v_i$ are $\RR\dash$linearly independent. 
+Then $V = \sum_{i\leq g} \RR \vector v_i$, and $\dim_\RR V = g = \rank \Lambda$.
+:::
+
+:::{.proof title="of proposition, lattice rank bound"}
+Let $\vector w = \tv{1, 1, \cdots, 1}\in \RR^{r_1 + r_2}$.
+If \( \alpha\in \ZZ_K\units \), then dotting sums the components, so
+\[
+\vector w \cdot \Log \alpha = \sum_{i\leq r_1} \log \abs{\sigma_i( \alpha)}
++ 2\sum_{r_1 + 1 \leq i \leq r_1 + r_2} \log \abs{\sigma_i( \alpha) }
+.\]
+Note that $\abs{\sigma_i(\alpha)} = \abs{\bar{\sigma( \alpha)}}$, so because we have a 2 here, we could have written this as
+\[
+\vector w \cdot \Log \alpha 
+&= \sum_{\sigma:K\injects \CC} \log \abs{\sigma(\alpha)}\\
+&= \log\prod_{\sigma: K\embeds \CC} \abs{\sigma( \alpha)} \\
+&= \log \abs{ N ( \alpha)} \\
+&= 0
+,\]
+since \( \alpha\in \ZZ_K\units \implies N( \alpha) = \pm 1 \).
+This says that $\Log(\ZZ_K\units) \subseteq \vector w^\perp$, which has codimension $1$ and thus dimension $r_1 + r_2 - 1$.
+Now $V \subseteq \vector w ^\perp$. so its rank is bounded by this dimension.
+So $g\leq r_1 + r_2 - 1$.
+:::
+
+# Ch. 20: Unit Theorem, Part II
+
+:::{.remark}
+We still need to prove that this is an equality.
+We'll start with some geometric preliminaries.
+:::
+
+:::{.definition title="The Minkowski Embedding"}
+The **Minkowski embedding** of $K$ is the map
+\[
+\iota: K &\to \RR^{r_1} \times \CC^{r_2} \\
+\alpha &\mapsto \tv{ 
+\sigma_1(\alpha), \cdots, \sigma_{r_1}( \alpha),
+\sigma_{r_1 + 1}( \alpha), \cdots, \sigma_{r_1 + r_2}( \alpha)
+}
+.\]
+Identify $\CC \cong \RR^2$ using $a+bi \mapsto \tv{a, b}$, which identifies the codomain above with $\RR^{r_1} \times \RR^{2r_2} = \RR^n$.
+So we view $\iota:K\to \RR^n$.
+:::
+
+:::{.remark}
+Note $\iota$ is injective and $\QQ\dash$linear.
+:::
+
+:::{.proposition title="Extremely important"}
+$\iota(\ZZ_K)$ is a lattice of full rank in $\RR^n$.
+:::
+
+:::{.proof title="?"}
+Why is this a lattice?
+We'll show it's a discrete subgroup.
+
+Let $R>0$, then if \( \alpha\in \ZZ_K \) and $\iota(\alpha) \in B_R(0)$, then $\abs{\sigma( \alpha)} \leq R$ for all \( \sigma: K\embeds \CC \).
+This forces \( \alpha \) to be a root of one of finitely many polynomials in $P_{n, R}$.
+
+Now let $g\da \rank \iota(\ZZ_K)$ as a lattice.
+This is a free abelian group of rank $g$, so isomorphic to $\ZZ^g$ since it's the $\ZZ\dash$span of $g$ linearly independent elements.
+On the other hand, by the integral basis theorem, $\ZZ_K$ is a free abelian group of rank $n$.
+Since $\iota$ is injective, $\iota(\ZZ_K)$ is free of rank $n$, and a fact from algebra implies $n=g$.
+:::
+
+:::{.remark}
+Since $\iota(\ZZ_K$ is a full rank lattice, $\covol \iota(\ZZ_K)$ is well-defined, where the covolume is the volume of the fundamental parallelepiped spanned by any generating set, and is measured by the absolute value of the determinant of the matrix of basis elements.
+It turns out that the covolume is the discriminant from before, but we don't need the exact value at the moment.
+:::
+
+:::{.remark}
+We'll now make some further reductions.
+Recall that $g\da \rank \Log(\ZZ_K\units) = \dim_\RR V$, where $V$ is the smallest subspace of $\RR^{r_1 + r_2}$ containing $\Log(\ZZ_K\units)$.
+Recall the rank-nullity theorem:
+\[
+\dim_\RR V + \dim_\RR V^\perp = r_1 + r_2
+\implies g = \dim_\RR V = r_1 + r_2 - \dim_\RR V^\perp
+.\]
+the goal is to show $\dim_\RR V^\perp = 1$.
+We know $\vector w \da \tv{1, 1, \cdots, 1} \in V^\perp$, so it suffices to show every element of $V^\perp$ is a multiple of $\vector w$.
+Suppose not, then there's an element of $V^\perp$ of the form \( \tv{c_1, c_2 \cdots, c_j, 0} \) by subtracting a suitable multiple of $\vector w$.
+Not all of the $c_i$ are zero, since this would mean the original was a multiple of $\vector w$.
+Define a map
+\[
+F: K\units&\to \RR \\
+\alpha&\mapsto \tv{c_1, c_2, \cdots c_{r_1 + r_2 - 1}, 0 } \cdot \Log( \alpha)
+.\]
+Now note that \( F(\ZZ_K\units) = 0 \), since $V \supseteq \Log(\ZZ_K)$.
+
+:::
+
+:::{.proposition title="?"}
+Let $c_1, c_2, \cdots, c_{r_1 + r_2 - 1} \in \RR$ not all 0.
+Then if $F$ is defined as above, 
+\( F(\ZZ_K\units) \neq 0 \).
+:::
+
+:::{.remark}
+This requires some delicate inequalities, and an application of Minkowski's convex body theorem.
+:::
+
+:::{.lemma title="Key lemma"}
+There is a sequence of nonzero $\alpha\in K$ such that 
+
+- $\abs{F(\alpha)} \to \infty$, but
+- $\abs{N( \alpha)} < C_1 = C_1(K, c_1, \cdots, c_{r_1 + r_2 - 1} )$ not depending on $\alpha$.
+:::
+
+:::{.proof title="of proposition, assuming the key lemma"}
+Note that there are only finitely many ideals of $\ZZ_K$ of norm bounded by any constant $C_1$.
+We saw this for quadratic fields: if $N(J) = m$, which by Lagrange's theorem yields $1+1+\cdots 1 = m \equiv 0 \mod J$.
+So $m\in J$ and thus $J\divides m$.
+But by unique factorization, any ideal only has finitely many divisors, so there are only finitely many possible values of $m$.
+
+Note also that $\abs{N( \alpha )} = N(\gens{ \alpha } ) < C_1$, so there are only finitely many such ideals.
+So given an infinite sequence of $\alpha$s, there are only finitely many different principal ideals they generate.
+So by the pigeonhole principle, we can pass to a subsequence such that \( \gens{ a }  \) is constant.
+Note that $F$ can't be constant on this sequence, since $F(\alpha) \to \infty$, so we can choose
+\( \alpha_1, \alpha_2 \) such that 
+\[
+\gens{ \alpha_1 }= \gens{ \alpha_2 } \quad\text{but}\quad F(\alpha_1) \neq F(\alpha_2)  
+.\]
+If this happens, then \( \alpha_1/ \alpha_2 \in \ZZ_K\units \), and 
+\[
+F(\alpha_1/ \alpha_2) = F( \alpha_1)- F(\alpha_2) \neq 0
+.\]
+So we have $F(\ZZ_K\units)\neq 0$, since we've found a unit that maps to a nonzero element.
+:::
+
+
+
+
+
+# Ch. 20 Continued (Friday, May 21)
+
+
+:::{.remark}
+Goal of Ch.18: prove that units theorem where the rank is left unspecified, and we proved it for $g$ the rank of a certain lattice.
+For Ch.20, we want to show $g$ is the right number!
+Recall the  log function:
+\[
+\Log: K\units\to \RR^{r_1 + r_2}
+\]
+where we take the $\log\abs{\wait}$ of the real embeddings and $2\log\abs{\wait}$ of one of each pair of complex embeddings.
+We know $\Log\ZZ_K\units \subseteq \RR^{r_1 + r_2}$ is a lattice of rank $g \leq r_1 + r_2 - 1$, and we want to show equality.
+We showed that everything follows if we establish the key lemma: if $c_1, \cdots, c_{r_1 + r_2 - 1} \in \RR$ are not all zero, defin
+\[
+F(\alpha) \da \tv{c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \cdot \Log(\alpha)
+.\]
+We want to show there is a sequence of $\alpha\in \ZZ_K$ such that $\abs{F(\alpha)} \to \infty$ with $\abs{N( \alpha)} \leq C_1$ bounded, where $C_1$ doesn't depend on $\alpha$.
+We want to make the dot product above large while keeping the norms small while making linear combinations of $\log\abs{\sigma_i( \alpha)}$ large.
+The only embeddings that show up are the ones labeled up to $r_1 + r_2 - 1$, since the last component is zero, and we'll show that we can essentially control the image of $\alpha$ under these embeddings while keeping its norm bounded.
+
+Recall the Minkowski embedding realizes $K$ as a subspace of Euclidean space: 
+\[
+\iota: K\to \RR^{r_1} \oplus \CC^{r_2}
+,\]
+where the first components are the first $r_1$ real embeddings and the latter are the complex embeddings.
+Identifying the target with $\RR^n$, we said last time that $\iota(\ZZ_K) \subseteq \RR^n$ is a full rank lattice, so of rank $n$, which thus has a finite nonzero covolume.
+
+We'll use this with Minkowski's convex body theorem: suppose $R$ is a region in $\RR^d$ which is centrally symmetric and convex, and $\Lambda$ is a full rank lattice in $\RR^d$.
+Then if $\vol(R)> w^d \covol(\Lambda)$, $R$ contains a nonzero point $x\in \Lambda$.
+How we'll use these: apply s the convex body theorem on $\Lambda = \iota(\ZZ_K)$, and use this to locate the types of $\alpha$ we want.
+:::
+
+:::{.remark}
+Given \( \lambda_1, \cdots, \lambda_{r_1 + r_2} \in \RR^{\geq 0} \), denote this by the vector $\vector \lambda$.
+Define
+\[
+R_{\vector \lambda}\da \ts{ \tv{x_1, \cdots, x_{r_1 + r_2}} \in \RR^{r_1} \oplus \CC^{r_2} \st \abs{x_i} \leq \lambda_i\,\,\forall i  } \subseteq \RR^{r_1} \oplus \CC^{r_2} \cong \RR^{n}
+.\]
+This is clearly centrally symmetric: negating anything lands in the region since we're taking absolute values.
+It's less clearly convex, but this follows from the triangle inequality.
+More intuitively, it's a product of discs and boxes, each of which are convex.
+One can compute its volume as 
+\[
+\vol R_{\vector \lambda} = \prod_{i\leq r_1} 2\lambda_i \prod_{j\leq r_2} \pi \lambda_{r_1 + j}^2
+= 2^{r_1} \pi^{r_2} \prod_{i\leq r_1} \lambda_i \prod_{j\leq r_2} \lambda_{r_1 + j}^2
+,\]
+since the first $r_1$ components form boxes and the last form discs.
+
+As a convention, we'll fill out $r_1+r_2$ tuples to $r_1 + 2r_2$ tuples in the following way: for $1 \leq i\leq r_2$,  set 
+
+- $\sigma_{r_1 + r_2 + i} = \bar{\sigma_{r_1 + i}}$, and
+- $\lambda_{r_1 + r_2 + i} = \lambda_{r_1 + i}$.
+
+This introduces the remaining embeddings from each conjugate pair and assigns it the same $\lambda_i$.
+We can now write
+\[
+\vol R_{\vector \lambda} = 2^{r_1}\pi^{r_2} \prod_{i\leq n} \lambda_i
+,\]
+since each $\lambda$ now appears twice in the product.
+
+:::
+
+:::{.proof title="of key lemma"}
+Rather than working with arbitrary tuples, we'll only consider $\elts{\lambda}{r_1 + r_2} \in \RR^{\geq 0}$ contained such that
+\[
+\vol R_{\vector \lambda} = 2 \qty{ 2^n \covol \iota(\ZZ_K) }
+,\]
+noting that the parenthesized quantity is exactly twice what's needed in Minkowski's theorem.
+This allows one to choose the first $r_1 + r_2-1$ freely, and the last will be determined uniquely.
+By Minkowski's theorem, there is an $\alpha\in \ZZ_K$ nonzero with $\iota( \alpha)\in R_{\vector \alpha}$.
+Hence
+\[
+\abs{ \sigma_i( \alpha)} \leq \lambda_i && \forall i=1,2,\cdots, n
+.\]
+Consequently,
+\[
+\abs{N \alpha} 
+&= \prod_{i} \abs{\sigma_i( \alpha)}\leq \prod \lambda_i \\
+&= \frac{ \vol R_{\vector \lambda}} {2^{r_1} \pi^{r_2} } \\
+&= C_1
+.\]
+Notice that
+\[
+1 \leq \abs{N \alpha} 
+&= \prod_i \abs{ \sigma_i( \alpha)} \\
+&= \abs{ \sigma_j( \alpha)} \prod_{i\neq j} \abs{ \sigma_i( \alpha)} \\
+&\leq \abs{ \sigma_j ( \alpha)} \prod_{i\neq g} \lambda_i \\
+&\leq { \abs{ \sigma_j } \over \lambda_j } \prod_i \lambda_i \\
+&\leq { \abs{ \sigma_j } \over \lambda_j } C_1 
+.\]
+
+Rearranging yields
+\[
+\abs{ \sigma_j ( \alpha)} \geq C_1\inv \lambda_j
+.\]
+Thus for every $1\leq j \leq n$, we have an inequality
+\[
+C_1\int \lambda_j \leq \abs{ \sigma_j( \alpha)} \leq \lambda_j
+.\]
+Taking logarithms yields
+\[
+\log C_1\inv \leq \log \abs{ \sigma_j( \alpha)} - \log \lambda_j \leq 0
+.\]
+
+Recalling the definition of $\Log( \alpha)$, and the above inequality says we know $\log\abs{ \sigma_j( \alpha)}$ up to a constant -- it's about $\log \lambda_j$.
+So setting
+\[
+\vector L \da
+\tv{ 
+\log \lambda_1, \cdots, \lambda_{r_1}, 2\log \lambda_{r_1 + 1}, 2\log \lambda_{r_1 + r_2}
+}
+,\]
+we have $\vector L \approx \Log \alpha$, where $\approx$ means each component is off by at most a constant.
+So $\abs{ \Log \alpha - \vector L} \leq C_2$, some other constant.
+We want to understand 
+\[ 
+F(\alpha) \da \tv{c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \cdot \vector \Log(\alpha)
+\approx  
+F(\alpha) \da \tv{c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \cdot \vector L
+.\] 
+How can we estimate the error?
+By Cauchy-Schwarz, the difference is bounded by
+\[
+\norm{
+\tv{c_1, \cdots, c_{r_1 + r_2 - 1}, 0} 
+}
+\cdot 
+\norm{
+\Log \alpha - \vector L
+}
+\leq 
+\norm{
+\tv{c_1, \cdots, c_{r_1 + r_2 - 1}, 0} 
+}
+C_2
+\da 
+C_3
+.\]
+
+We've show that for any choice of $\lambda_1, \cdots, \lambda_{r_1 + r_2}$ satisfying the volume condition, one can find $\alpha$ where $\abs{N \alpha}$ is bounded and all of the above inequalities hold.
+In particular, $F( \alpha) \approx \vector c \cdot \vector L$.
+We claim we can now choose $\alpha$s to make $\abs{F( \alpha)} \to \infty$.
+Every choice of $\lambda_i$s yield an $\alpha$, and the $c_i$ in $\vector c$ are fixed, so $\vector c \cdot \vector L$ is just a function of the $\lambda_i$.
+So to finish the prove, we need to show we can pick $\lambda_i$ satisfying the volume condition but making $\vector c \cdot \vector L$ as large as we want.
+This correspondingly makes $F(\alpha)$ large, since they differ by at most a constant.
+
+Here's why we can do this:
+we assumed not all $c_i$ were zero, so fix an $i$ where $c_i\neq 0$.
+Choose $\lambda_j$ with $\lambda_i$ very large, and $\lambda_{j'} =1$ for $j=1, \cdots, r_1 + r_2 - 1$ not including $i$.
+Then choose $\lambda_{r_1 + r_2}$ as determined by the volume condition.
+The claim is that we're done.
+The dot product has a zeroth $r_1 + r_2$ component, so the dot product doesn't see $\sigma_{r_1 + r_2}$.
+Recall $\vector L$ is a function of the $\lambda_i$, since the whole point was that we removed the dependence on $\alpha$, and is given by 
+\[
+\vector L = \tv{
+\log \lambda_1, \cdots, \lambda_{r_1}, 2\log \lambda_{r_1 + 1}, \cdots, 2\log \lambda_{r_1 + r_2}
+}
+.\]
+What survives the dot product?
+We're taking $\log(1) = 0$ in the $j\neq i$ components, and in the $i$th component we have at most $2\log \lambda_i \cdot c_i$, where the \( \lambda_i \) is a large number.
+So we can make $\vector c \cdot \vector L$ as large as we want.
+:::
+
+# Ch. 21: Applications of Minkowski's Theorem
+
+:::{.proposition title="?"}
+Recall the Minkowski embedding, $\iota: K\to \RR^{r_1} \oplus \CC^{r_2}$, where we concatenate all of the real embeddings followed by the complex embeddings.
+View the target as $\RR^n$, then there is a formula:
+\[
+\covol \iota(\ZZ_K) = 2^{-r_2} \sqrt{ \abs{ \discriminant_K }}
+.\]
+
+:::
+
+:::{.proof title="?"}
+Pick an integral basis \( \elts{\omega}{n} \) for $K$, then $\iota(\omega_1), \cdots, \iota(\omega_n)$ span $\iota(\ZZ_K)$ over $\ZZ$.
+It suffices to show that if $A$ is the $n\times n$ matrix with $i$th column $\iota(\omega_i)$, then $\abs{\det A}$ is the right-hand side in the formula.
+If this is true, the $\iota(w_i)$ are linearly independent over $\RR$, otherwise the determinant would be $\RR$, so they're a basis for the lattice $\iota(\ZZ_K)$, and this determinant is precisely the formula for the covolume of a lattice.
+We claim the matrix looks like the following.
+
+\[
+\begin{bmatrix}
+\sigma_1(\omega_1) & \cdots & \sigma_1(\omega_1) \\
+\vdots & \cdots & \vdots \\
+\sigma_{r_1}(\omega_1) & \cdots & \sigma_{r_1}(\omega_1) \\
+\Re \sigma_{r_1+1}(\omega_1) & \cdots & \Re \sigma_{r_1+1}(\omega_1) \\
+\Im \sigma_{r_1+1}(\omega_1) & \cdots & \Im \sigma_{r_1+1}(\omega_1) \\
+\vdots & \cdots & \vdots \\
+\Re \sigma_{r_1+r_2}(\omega_1) & \cdots & \Re \sigma_{r_1+r_2}(\omega_1) \\
+\Im \sigma_{r_1+r_2}(\omega_1) & \cdots & \Im \sigma_{r_1+r_2}(\omega_1) 
+\end{bmatrix}
+.\]
+
+Let $D_{ij} \da \tv{ \sigma_i(\omega_j) }$, then by tracking row operations that transform $D$ to $A$, $\det(A) = (-i/2)^{r_2} \det(D)$.
+So
+\[
+\abs{\det A} = 2^{-r_2} \abs{\det D}
+.\]
+Since $\det(D)^2 = \discriminant_K$, then taking square roots yields $\abs{\det D} = \sqrt{ \abs{ \discriminant_K} }$.
+:::
+
+:::{.remark}
+We now now the covolume of this lattice, we'd like to do this not just for $\ZZ_K$ but also its ideals.
+:::
+
+:::{.lemma title="?"}
+If $I\normal \ZZ_K$, then $I$ is a free abelian group of rank $n$.
+:::
+
+:::{.proof title="?"}
+Take any nonzero $\alpha\in I$, then $\alpha \ZZ_K \subseteq I \subseteq \ZZ_K$.
+The outer terms are free abelian of rank $n$, so $I$ must be as well.
+:::
+
+:::{.proposition title="?"}
+If $I\normal \ZZ_K$ is nonzero, then $\iota(I)$ is a full rank lattice in $\RR^n$ and 
+\[
+\covol \iota(I) = 2^{r_2} \sqrt{\abs {\discriminant_K}} N(I)
+.\]
+:::
+
+
+
+
+
+
+
+
+
+# Ch. 21: Applications of Minkowski's Theorem (Friday, May 21)
+
+
+:::{.remark}
+Recall that we're considering the Minkowski embedding $\iota: K\to\RR^n$.
+We saw that $\iota(\ZZ_K)\subseteq \RR^n$ is a full rank lattice whose covolume is $?$?
+:::
 

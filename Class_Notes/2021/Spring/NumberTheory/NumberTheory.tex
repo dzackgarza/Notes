@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-04-25 }
+{\tiny \textit{Last updated:} 2021-05-22 }
 \end{flushleft}
 
 
@@ -1570,8 +1570,8 @@ Recall that for integral domains (as rings), two elements differ by a
 unit precisely when they generate the same ideal. So we can think of
 elements of \(M_{{ \text{red} }}\) as nonzero principal ideals of \(M\),
 which we'll write as
-\(\operatorname{Prin}( {\mathbb{Z}}[ \sqrt{-5} ])\). To make this set of
-ideals into a monoid, one define
+\(\mathop{\mathrm{Prin}}( {\mathbb{Z}}[ \sqrt{-5} ])\). To make this set
+of ideals into a monoid, one define
 \(\left\langle{ \alpha }\right\rangle \left\langle{ \beta }\right\rangle= \left\langle{ \alpha \beta }\right\rangle\),
 where it's easy to check that this is well-defined. So the failure of
 unique factorization is a failure of factorization in this set of
@@ -1637,7 +1637,7 @@ domain.
 \begin{remark}
 
 So instead of working in
-\(\operatorname{Prin}( {\mathbb{Z}}[\sqrt{-5} ])\), we'll work in
+\(\mathop{\mathrm{Prin}}( {\mathbb{Z}}[\sqrt{-5} ])\), we'll work in
 \(\operatorname{Id}({\mathbb{Z}}[\sqrt{-5} ])\). The claim is that we
 can refine our bad factorizations. Define
 
@@ -7257,6 +7257,1519 @@ To be continued.
 \end{quote}
 
 \end{proof}
+
+\hypertarget{lecture-17-ch.-16-continued-thursday-may-13}{%
+\section{Lecture 17: Ch. 16, continued (Thursday, May
+13)}\label{lecture-17-ch.-16-continued-thursday-may-13}}
+
+\hypertarget{actuality-of-ideals}{%
+\subsection{Actuality of Ideals}\label{actuality-of-ideals}}
+
+\begin{theorem}[Dedekind, Actuality of ideals]
+
+If \(I\) is a nonzero ideal of \({\mathbb{Z}}_K\) for \(K\) a number
+field, then there is an
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+such that
+\begin{align*}
+I = (\alpha \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu) \cap{\mathbb{Z}}_K
+.\end{align*}
+
+\end{theorem}
+
+\begin{lemma}[?]
+
+Let \(I\) be a nonzero ideal of \({\mathbb{Z}}_K\), then there is an
+extension of number fields \(L/K\) such that \(I {\mathbb{Z}}_L\) is
+principal ,say \(I {\mathbb{Z}}_L = \alpha{\mathbb{Z}}_L\).
+
+\end{lemma}
+
+\begin{proof}[Idea]
+
+We've already proved this, but the idea was that we can take \(m\) to be
+the order of the class group to obtain \(I^m = \beta {\mathbb{Z}}_K\).
+Then if \(L = K( \beta^{1/m} )\) we will have
+\(I{\mathbb{Z}}_L = \beta^{1/m} {\mathbb{Z}}_L\).
+
+\end{proof}
+
+\begin{remark}
+
+How we'll use this to prove the theorem: the lemma shows that after
+passing to a suitable extension we can find \(\alpha\), and the claim is
+that this \(\alpha\) works. We'll need one more result:
+
+\end{remark}
+
+\begin{lemma}[Paul's up-down lemma]
+
+Let \(K\) be a number field and \(I {~\trianglelefteq~}{\mathbb{Z}}_K\)
+be a nonzero ideal. Let
+\(R \leq \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+be a subring containing \({\mathbb{Z}}_K\), then
+\begin{align*}
+IR \cap{\mathbb{Z}}_K = I {~\trianglelefteq~}{\mathbb{Z}}_K
+.\end{align*}
+
+The picture: we can lift ideals from \({\mathbb{Z}}_K\) to \(R\) and
+intersect them with \({\mathbb{Z}}_K\) to come back down, and the claim
+is that this lands where you started:
+
+\begin{center}
+\begin{tikzcd}
+    {\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu} \\
+    \\
+    R && IR \\
+    \\
+    {{\mathbb{Z}}_K} && I && {IR \cap{\mathbb{Z}}_K}
+    \arrow[hook, from=5-1, to=3-1]
+    \arrow[hook, from=3-1, to=1-1]
+    \arrow["{({-}) \cdot R}", from=5-3, to=3-3]
+    \arrow["{{-}\cap{\mathbb{Z}}_K}", from=3-3, to=5-5]
+    \arrow[color={rgb,255:red,92;green,214;blue,214}, Rightarrow, no head, from=5-3, to=5-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCw0LCJcXFpaX0siXSxbMCwyLCJSIl0sWzAsMCwiXFxiYXJ7XFxaWn0iXSxbMiw0LCJJIl0sWzIsMiwiSVIiXSxbNCw0LCJJUiBcXGludGVyc2VjdCBcXFpaX0siXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsNCwiKFxcd2FpdCkgXFxjZG90IFIiXSxbNCw1LCJcXHdhaXQgXFxpbnRlcnNlY3QgXFxaWl9LIl0sWzMsNSwiIiwyLHsibGV2ZWwiOjIsImNvbG91ciI6WzE4MCw2MCw2MF0sInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Follow your nose! The containment \(I \subseteq IR \cap{\mathbb{Z}}_K\)
+is clear, since \(I\) is contained in both terms. For the reverse
+containment, we'll first do it for \(I\) principal, and then reduce to
+that case. So suppose \(I = \alpha {\mathbb{Z}}_K\), then
+\(IR = \alpha R\). Take \(\beta \in IR \cap{\mathbb{Z}}_K\), then
+\(\beta\over \alpha \in R \cap K \subseteq \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap K = {\mathbb{Z}}_K\).
+Then \(\beta \in \alpha {\mathbb{Z}}_K\), which is what we wanted to
+show.\\
+
+We'll reduce to the principal case by using a familiar trick. Pick
+\(m\in {\mathbb{Z}}^{\geq 0}\) so that \(I^m\) is principal, then
+\(I^m R \cap{\mathbb{Z}}_K = I^m\) by the previous case. Taking
+\(\gamma\in IR \cap{\mathbb{Z}}_K\), we'll show it must be in \(I\). We
+know \(\gamma^m \in (IR)^m = I^m R\), and thus we have
+\(\gamma^m \in I^m R \cap{\mathbb{Z}}_K = I^m\). Now using unique
+factorization and to contain is to divide, this implies that
+\(I^m \bigm|\left\langle{ \gamma ^m }\right\rangle= \left\langle{ \gamma }\right\rangle^m\).
+So \(I \bigm|\left\langle{ \gammma }\right\rangle\) and thus
+\(\gamma \in I\).
+
+\end{proof}
+
+\begin{proof}[of theorem]
+
+Choose an extension \(L/K\) with
+\(I{\mathbb{Z}}_L = \alpha{\mathbb{Z}}_M\) principal. consider
+\(I\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+We have
+\(I\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu= (I{\mathbb{Z}}_L)\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+-- this just says that extending \(I\) to
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+can be done in two steps, first extending to \({\mathbb{Z}}_L\).
+Concretely, these extensions are linear combinations of elements in
+\(I\) with coefficients in \({\mathbb{Z}}_L\), so extending in stages
+yields the same thing. We have
+\begin{align*}
+I\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu
+&= (I{\mathbb{Z}}_L) \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\\
+&= ( \alpha {\mathbb{Z}}_L) \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\\
+&= \alpha\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu
+.\end{align*}
+Now apply the up-down lemma to
+\(R = \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+to obtain
+\begin{align*}
+I = I\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap{\mathbb{Z}}_K
+,\end{align*}
+which is equal to
+\(\alpha\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap{\mathbb{Z}}_K\).
+
+\end{proof}
+
+\begin{remark}
+
+Is is true that in
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+that every ideal is principal? The answer is no, since this would force
+it to be a UFD, but
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+has irreducibles at all since there are no irreducibles. One \emph{can}
+prove that every finitely generated ideal of
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+is principal. One can also prove a variant of Gauss' lemma for
+\(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\):
+one can take the greatest common divisor to be the generator of a
+principal ideal.
+
+\end{remark}
+
+\hypertarget{chapter-17-prime-decomposition-and-general-number-rings}{%
+\subsection{Chapter 17: Prime Decomposition and General Number
+Rings}\label{chapter-17-prime-decomposition-and-general-number-rings}}
+
+\begin{definition}[lies above]
+
+If \(P{~\trianglelefteq~}{\mathbb{Z}}_K\) is nonzero, then \(P\)
+\textbf{lies above} a rational prime \(p\in {\mathbb{Z}}\) if
+\(p\in P\). We also say \(p\) \textbf{lies below} \(P\).
+
+The picture:
+
+\begin{center}
+\begin{tikzcd}
+    K && {{\mathbb{Z}}_K} && P \\
+    \\
+    {\mathbb{Q}}&& {\mathbb{Z}}&& p
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-3]
+    \arrow[no head, from=1-5, to=3-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJLIl0sWzAsMiwiXFxRUSJdLFsyLDAsIlxcWlpfSyJdLFsyLDIsIlxcWloiXSxbNCwwLCJQIl0sWzQsMiwicCJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzQsNSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==}{Link
+to Diagram}
+\end{quote}
+
+\end{definition}
+
+\begin{remark}
+
+As in the quadratic field setting, every \(P\) lies above some uniquely
+determined \(p\) in the sense that
+\(P \cap{\mathbb{Z}}= p{\mathbb{Z}}\). The proof here goes through in
+the same way. Note that since
+\(p\in P \implies \left\langle{ p }\right\rangle \in P\), we have
+\(\left\langle{ p }\right\rangle\bigm|P\). How do rational primes
+decomposes in \({\mathbb{Z}}_K\)? I.e., how does
+\(\left\langle{ p }\right\rangle\) factor into prime ideals?
+
+\end{remark}
+
+\begin{remark}
+
+There are two main theorems: one describes how these prime ideals
+factor, and the second (Dedekind-Kummer) will produce the factorization.
+
+\end{remark}
+
+\begin{theorem}[efg theorem]
+
+Let \(K\) be a number field of degree \([K: {\mathbb{Q}}] = n\) and let
+\(p\) be a rational prime. Factor
+\begin{align*}
+\left\langle{ p }\right\rangle \prod_{i=1}^g P_ji{e_i}
+,\end{align*}
+where the \(P_i\) are distinct primes ideals and \(e_i > 0\). Then for
+each \(i\) we have \(N(P_i) = p^{f_i}\) for some \(f_i > 0\), and
+\begin{align*}
+\sum_{i=1}^g e_i f_i = n
+.\end{align*}
+
+Before the proof, it's helpful to introduce some notation.
+
+\end{theorem}
+
+\begin{definition}[Residual degree and ramification index]
+
+In the setup above, call \(f_i = f(P_i / p)\) the \textbf{residual
+degree} of \(P_i/p\) and \(e_i = e(P_i/p)\) the \textbf{ramification
+index}.
+
+\end{definition}
+
+\begin{proof}[of theorem]
+
+Consider the homomorphisms
+\begin{align*}
+\phi: {\mathbb{Z}}&\to {\mathbb{Z}}_K/P_i \\
+a &\mapsto a \pmod{P_i}
+.\end{align*}
+We have \(\ker \varphi = P_i \cap{\mathbb{Z}}\), and since \(P\) lies
+over \(p\), this equals \(p{\mathbb{Z}}\). So there is an induced
+injection
+\({\mathbb{F}}_p \coloneqq{\mathbb{Z}}/p{\mathbb{Z}}\hookrightarrow{\mathbb{Z}}_K/ P_i\),
+where \(a\pmod p \mapsto a \pmod P_i\). Thus
+\({\mathbb{Z}}_K/P_i \in {\mathsf{Vect}}_{{\mathbb{F}}_p}\) is an
+\({\mathbb{F}}_p{\hbox{-}}\)vector space. We want to show the size of
+the right-hand side, which is the size of \(P_i\), is a power of \(p\).
+But any finite-dimensional vector space over \({\mathbb{F}}_p\) has
+dimension \(p^\ell\) for some \(\ell\). Let
+\(f_i \coloneqq\fim_{{\mathbb{F}}_p} ({\mathbb{Z}}_K/P_i)\), then
+\(N(P_i) = \# {\mathbb{Z}}_K/P_i = p^{f_i}\).\\
+
+Now proving that \(\sum e_i f_i = n\) is an easy corollary: go back to
+the factorization and take norms of both sides. Noting
+\(N( \left\langle{ p }\right\rangle ) = p^n\) since
+\({\mathbb{Z}}_K \in {\mathsf{Ab}}_n^{\mathsf{Free}}\), we have
+\begin{align*}
+p^n 
+&= N( \left\langle{ p }\right\rangle  ) \\
+&= \prod_{i=1}^g  N(P_i)^{\ell_i} \\
+&= \prod_{i=1}^g p^{e_i f_i} \\
+&= p^{\sum_i e_i f_i}
+,\end{align*}
+and the result follows by comparing exponents.
+
+\end{proof}
+
+\begin{observation}
+
+Each \({\mathbb{Z}}_K/P_i\) is a field. Since
+\(P_i \in \operatorname{Spec}{\mathbb{Z}}_K\), so \({\mathbb{Z}}_K/P_i\)
+is an integral domain. It's finite by the above argument, using that
+norms are finite, so it's in fact a field. It contains
+\({\mathbb{Z}}/p{\mathbb{Z}}\), and is thus an extension over it, and
+the extension degree
+\([{\mathbb{Z}}_K/P_i: {\mathbb{Z}}/p{\mathbb{Z}}] = f_i\). So \(f_i\)
+are called the residual degrees since they're the degrees of extensions
+of residue fields.
+
+\end{observation}
+
+\begin{definition}[Inert, split, ramified]
+
+More terminology:
+
+\begin{itemize}
+\tightlist
+\item
+  If \(\left\langle{ p }\right\rangle\) is prime, the \(p\) is
+  \textbf{inert}.
+\item
+  If \(g=n\), which forces \(e_i = f_i = 1\) for all \(i\), then \(p\)
+  \textbf{splits completely}.
+\item
+  If \(e_i > 1\) for any \(i\), then \(p\) \textbf{ramifies}.
+\end{itemize}
+
+\end{definition}
+
+\begin{remark}
+
+How do we actually determine the prime factors?
+
+\end{remark}
+
+\begin{theorem}[Dedekind-Kummer]
+
+Let \(K\) be a number field of degree \(n\) and suppose
+\(K = {\mathbb{Q}}(\alpha)\) where
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+This can be done by using the primitive element and scaling by an
+integer. Let \(p\) be a rational prime, and suppose
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [ {\mathbb{Z}}_K: {\mathbb{Z}}[\alpha] ]
+\). Then the prime ideal factorization of
+\(\left\langle{ p }\right\rangle\) mirrors the factorization of
+\(\min_{\alpha}(x) \pmod p\).\\
+
+More precisely, supposing
+\begin{align*}
+\min_{ \alpha}(x) = \prod_{i=1}^g p_i(x)^{e_i} \pmod p && p_i \in {\mathbb{Z}}[x]
+,\end{align*}
+where the \(p_i\) are the irreducible factors of \(\min_{ \alpha}(x)\)
+in \({\mathbb{F}}_p[x]\). Then
+\begin{align*}
+\left\langle{ p }\right\rangle = \prod_{i=1}^g P_i ^{e_i} && P_i \coloneqq\left\langle{ p, p_i( \alpha) }\right\rangle 
+.\end{align*}
+These \(P_i \in \operatorname{Spec}{\mathbb{Z}}_K\) are distinct, and
+the residual degrees are given by \(f_i = \deg(p_i)\).
+
+\end{theorem}
+
+\begin{remark}
+
+So as long as this condition holds, we factor \(P\) by factoring a
+minimal polynomial mod \(p\). Note that if one can find an
+\(\alpha\in {\mathbb{Z}}_K\), the condition holds vacuously since the
+index is 1. This always holds for quadratic fields, since
+\({\mathbb{Z}}_K = {\mathbb{Z}}[\tau]\), so this recovers the
+factorization statement in that setting. In an annoying twist of fate,
+not every number field can be written as \({\mathbb{Z}}[ \alpha]\) for
+some single \(\alpha\), and so this theorem necessarily excludes some
+primes. Is there some easy way to check the divisibility condition? The
+answer is yes, coming from the discriminant.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Suppose \(K = {\mathbb{Q}}( \alpha)\) where
+\(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+If
+\(p^2 %  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% \Disc(\min_{\alpha} (x) )
+\), then
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [{\mathbb{Z}}_K: {\mathbb{Z}}[\alpha]]
+\).
+
+\end{proposition}
+
+\begin{remark}
+
+A while ago we showed that
+\begin{align*}
+\Disc( \min_{ \alpha}(x)) = \Disc(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = \Disc_K \cdot [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]^2
+.\end{align*}
+Note that we're done if this is true: if \(p\) divides the index,
+\(p^2\) divides the last term, meaning \(p^2\) divides the first.
+
+\end{remark}
+
+\begin{example}[?]
+
+Let \(K = {\mathbb{Q}}( \alpha)\) where \(\alpha\) is a root of the
+irreducible polynomial \(f(x) = x^3 - x^2 - 2x + 8\). Recall that we
+used this example when looking at integral bases. By a computation,
+\(\Disc(f(x)) = -4 \cdot 503\), and the only squared prime dividing this
+is \(p=2\). We can thus apply Dedekind-Kummer for all \(p\neq 2\).
+
+\begin{itemize}
+\item
+  Mod 3, \(f\) is irreducible. So \(\left\langle{ 3 }\right\rangle\) is
+  prime and \(3\) is inert.
+\item
+  Mod 5, \(f(x) \equiv (x+1)(x^2 - 2)\). So
+  \(\left\langle{ 5 }\right\rangle= P_1 P_2\) where
+  \(P_1 = \left\langle{ 5, \alpha+ 1 }\right\rangle\) and
+  \(P_2 = \left\langle{ 5, \alpha^2 - 2 }\right\rangle\). Thus
+  \(f_1 = \deg(x+1) = 1, f_2 = \deg(x^2 - 2) = 2\).
+\item
+  Mod 59, \(f(x) \equiv (x+11)(x+20)(x+25)\). So
+  \(\left\langle{ 59 }\right\rangle = P_1 P_2 P_3\) where
+  e.g.~\(P_1 = \left\langle{ 5, \alpha+ 11 }\right\rangle\) and so on.
+  Note that \(g=3=n\), so \(59\) splits completely.
+\item
+  Mod 503, \(f(x) \equiv (x+259)(x+354)^2\). So
+  \(\left\langle{ 503 }\right\rangle= P_1 P_2^2\), and thus \(503\)
+  ramifies since an exponent is larger than 1.
+\end{itemize}
+
+Note that \(\Disc(f(x)) = 0 \pmod 503\), so
+\(f\in {\mathbb{F}}_{503}[x]\) has a repeated root in an extension. We
+can run this backward to show that \(503\) is the only odd prime that
+ramifies: Dedekind-Kummer says this can only happen if \(f\) has a
+repeated root mod \(p\). In this case, \(\Disc(f) \pmod p = 0\), so
+\(p\bigm|4\cdot 503\). Note that if you try to apply this theorem mod 2,
+this results in the wrong answer!
+
+\end{example}
+
+\begin{lemma}[?]
+
+Let \(K = {\mathbb{Q}}( \alpha)\) be a number field where
+\(\alpha \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+Suppose
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]
+\). Then the inclusion
+\(\iota: {\mathbb{Z}}[\alpha] \hookrightarrow{\mathbb{Z}}_K\) induces an
+isomorphism
+\begin{align*}
+\mkern 1.5mu\overline{\mkern-1.5mu\iota\mkern-1.5mu}\mkern 1.5mu: {{\mathbb{Z}}[\alpha] \over p {\mathbb{Z}}[ \alpha] } \xrightarrow{\sim} {\mathbb{Z}}_K/p{\mathbb{Z}}_K
+.\end{align*}
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Start by showing
+\(p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha] = p {\mathbb{Z}}[ \alpha ]\).
+The reverse containment is clear, so let
+\(\beta\in \p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha ]\). Then
+\(\beta/p \in {\mathbb{Z}}_K\), so look at its image in
+\({\mathbb{Z}}_K/ {\mathbb{Z}}[ \alpha]\). The order of the image
+divides \(p\), , since
+\(p (\beta/p) = \beta \in {\mathbb{Z}}[ \alpha]\). But we assumed that
+\(p\) doesn't divide the size of this quotient, forcing the order to be
+1 and thus
+\(\beta/p\in {\mathbb{Z}}[ \alpha] \implies \beta \in p{\mathbb{Z}}[ \alpha]\).
+
+\end{proof}
+
+\begin{remark}
+
+The map
+\(\mkern 1.5mu\overline{\mkern-1.5mu\iota\mkern-1.5mu}\mkern 1.5mu\) is
+well-defined because
+\(\iota( p {\mathbb{Z}}[ \alpha]) \subseteq p{\mathbb{Z}}_K\), and is
+obviously a homomorphism. We want it to be an isomorphism, so what's the
+kernel? We've just shown that
+\(\ker \mkern 1.5mu\overline{\mkern-1.5mu\iota \mkern-1.5mu}\mkern 1.5mu= 0\),
+and comparing cardinality makes it a surjection. Both have cardinality
+\(p^n\), since both are free abelian groups of rank \(n\).
+
+\end{remark}
+
+\begin{remark}
+
+This is useful because the Dedekind-Kummer theorem describes the
+left-hand side, but we want to study the right-hand side instead. The
+theorem says they're isomorphic!
+
+\end{remark}
+
+\hypertarget{ch.-17-thursday-may-13}{%
+\section{Ch. 17 (Thursday, May 13)}\label{ch.-17-thursday-may-13}}
+
+\begin{remark}
+
+Big theorem, Dedekind-Kummer: we have a factorization of \(p\) for all
+but finitely many primes \(p\). e supposed that
+\(p %  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]
+\), and there are only finitely many \(p\) that violate this condition.
+The claim was that if \(\min_\alpha(x)\) factors into distinct
+irreducibles \(p_i(x)\) in \({\mathbb{F}}_p[x]\), then setting
+\(P_i \coloneqq\left\langle{ p, p_i( \alpha) }\right\rangle\). Then
+there is a factorization of ideals
+\(\left\langle{ p }\right\rangle = \prod P_i^{e_i}\) mirroring the
+factorization of the minimal polynomial.
+
+We had a lemma that under these hypotheses, the inclusion
+\(\iota: {\mathbb{Z}}[ \alpha] \hookrightarrow{\mathbb{Z}}_K\) induces
+an isomorphism on quotients
+\begin{align*}
+{\mathbb{Z}}[ \alpha] / p {\mathbb{Z}}[ \alpha] \xrightarrow{\sim} {\mathbb{Z}}_K / p{\mathbb{Z}}_K
+.\end{align*}
+So mod \(p\), these two are the same.
+
+\end{remark}
+
+\begin{proof}[of Dedekind-Kummer]
+
+For notation, set \(m(x) \coloneqq\min_ \alpha(x)\). By assumption, we
+have a factorization \(m(x) = \prod_{i=1}^g p_i(x)^{e_i} \pmod p\), and
+we set \(P_i \left\langle{ p, p_i( g a) }\right\rangle\). We'll first
+show that the \(P_i\) are prime ideals by modding to get a domain, and
+we'll compute residue degrees. Considering
+\begin{align*}
+{\mathbb{Z}}_K/ P_i 
+&= {\mathbb{Z}}_K / \left\langle{ p, p_i( \alpha) }\right\rangle \\
+&\cong ({\mathbb{Z}}_k / \left\langle{ p }\right\rangle )/ \left\langle{ p_i( \alpha) \pmod p }\right\rangle\\
+&\cong ({\mathbb{Z}}[ \alpha] / \left\langle{ p }\right\rangle )/ \left\langle{ p_i( \alpha) \pmod p }\right\rangle\\
+&\cong {\mathbb{Z}}[ \alpha] / \left\langle{ p, p_i( \alpha) }\right\rangle \\
+&\cong ( {\mathbb{Z}}[x] / \left\langle{ m(x) }\right\rangle ) / \left\langle{ p \pmod m(x), p_i(x) \pmod m(x) }\right\rangle \\
+&\cong ( {\mathbb{Z}}[ \alpha] / \left\langle{ p }\right\rangle ) / \left\langle{ m(x) \pmod p, p_i(x) \pmod p }\right\rangle 
+&\cong {\mathbb{F}}_p[x] / \left\langle{ p_i(x) \pmod p }\right\rangle 
+.\end{align*}
+where we've used that \(p_i(x) \bigm|m(x)\) mod \(p\) by assumption.
+This is a field of size \(p^{\deg p_i(x)}\), which proves that \(P_i\)
+is prime of degree is \(f(P_i / p) = \deg p_i(x)\).
+
+We'll now show the \(P_i\) are distinct, and in fact comaximal in the
+sense that \(P_i + P_j = \left\langle{ 1 }\right\rangle\) for
+\(i\neq j\). We've assumed that
+\(p_i(x) \mdo p, p_j(x) \pmod p \in {\mathbb{F}}_p[x]\) are distinct
+monic irreducibles in the PID \({\mathbb{F}}_p[x]\), so we can find a
+linear combination equal to \(1\). So write
+\(p_i(x) X(x) + p_j(x) Y(x) = 1 + pQ(x)\) for some polynomials
+\(X,Y\in {\mathbb{F}}_p[x]\) and \(Q\in {\mathbb{Z}}[ x]\). Plug in
+\(\alpha\) and mod out by
+\(I \coloneqq\left\langle{ p, p_i( \alpha), p_j( \alpha) }\right\rangle\)
+to get \(o \equiv 1 \pmod I\). But then \(1\in I\) forces
+\(I = \left\langle{ 1 }\right\rangle\) Thus
+\begin{align*}
+\left\langle{ 1 }\right\rangle 
+&= \left\langle{ p, p_i( \alpha), p_j( \alpha) }\right\rangle \\
+&= \left\langle{ p, p_i ( \alpha) }\right\rangle+ \left\langle{ p, p_j( \alpha) }\right\rangle \\
+&= P_i + P_j
+.\end{align*}
+
+It remains to show that
+\(\left\langle{ p }\right\rangle= \prod P_i^{e_i}\). Consider taking
+powers of \(P_i\):
+\begin{align*}
+P_i^2 = \left\langle{ p^2, p p_i( \alpha), p_i(\alpha)^2 }\right\rangle 
+\subseteq \left\langle{ p, p_i( \alpha) ^2 }\right\rangle  \\
+P_i^3 \subseteq P_i \left\langle{ p_i, p_i (\alpha)^2}\right\rangle \subseteq \left\langle{ p_i, p_I( \alpha)^3 }\right\rangle  
+.\end{align*}
+Repeating this will show that
+\(P_i^{e_i} \subseteq \left\langle{ p, p_i( \alpha)^{e_i} }\right\rangle\).
+A similar argument will show
+\begin{align*}
+\prod P_i^{e_i}
+\subseteq 
+\prod \left\langle{ p, p_i( \alpha)^{e_i}  }\right\rangle \\\
+\subseteq \left\langle{ p, \prod p_i (\alpha) ^{e_i} }\right\rangle 
+.\end{align*}
+Recall that we can write \(m(x) = \prod p_i(x)^{e_i} + pR(x)\) where
+\(R \in {\mathbb{Z}}[x]\). Plugging in \(\alpha\) yields
+\(0 \equiv \prod p_i( \alpha)^{e_i} \pmod p\), so the right-hand side is
+a multiple of \(p\), making the ideal above redundant. Thus
+\(\prod P_i^{e_i} \subseteq \left\langle{ p }\right\rangle\), and since
+to contain is to divide, we can write
+\begin{align*}
+\prod P_i^{e_i} = \left\langle{ p }\right\rangle J
+,\end{align*}
+and we want to show \(J = \left\langle{ 1 }\right\rangle\).
+
+Strategy: take norms. We know \(N(p_i)^{e_i} = p^{e_i \deg p_i}\), and
+so
+\begin{align*}
+N\qty{ \prod P_i^{e_i} }
+&= \prod N(P_i) ^{e_i} \\
+&= p^{\sum e_i \deg p_i} \\
+&= p^{\deg m(x)} \\
+&= p^{[K: {\mathbb{Q}}] }
+.\end{align*}
+
+We also have
+\(N( \left\langle{ p }\right\rangle ) = \# {\mathbb{Z}}_k / \left\langle{ p }\right\rangle= p^{[K: {\mathbb{Q}}]}\),
+which forces \(N(J) = 1\)
+
+\end{proof}
+
+\begin{remark}
+
+An recurring example in this class, due to Dedeking: let
+\(K = {\mathbb{Q}}( \alpha)\) where \(\alpha\) is a root of the
+irreducible polynomial \(x^3 +x^2 -2x + 8 \in {\mathbb{Q}}[x]\). We saw
+that \({\mathbb{Z}}_K \neq {\mathbb{Z}}[ \alpha]\) but their index
+divides 2, forcing it to be exactly 2. So the hypothesis of the
+Dedkind-Kummer theorem are not satisfied, but is the conclusion still
+true? It turns out that the answer is no, and 2 splits completely as
+\(\left\langle{ 2 }\right\rangle = P_1 P_2 P_3\). The proof can be done
+bare-hands, we won't do it here. This is incompatible with the
+conclusion of the theorem: we would need the polynomial to factor into
+three monic linear polynomials mod 2. But there are only 2 different
+linear polynomials mod 2!
+
+\end{remark}
+
+\begin{remark}
+
+Every ideal in \({\mathbb{Z}}_K\) can be generated by at most 2
+elements. Or really, ``\(3/2\)'' elements -- look it up!
+
+\end{remark}
+
+\hypertarget{ch.-18-units-of-mathbbz_k}{%
+\section{\texorpdfstring{Ch. 18: Units of
+\({\mathbb{Z}}_K\)}{Ch. 18: Units of \{\textbackslash mathbb\{Z\}\}\_K}}\label{ch.-18-units-of-mathbbz_k}}
+
+\begin{remark}
+
+Setting up some notation: let \(K\) be a number field of degree \(n\),
+and let
+
+\begin{itemize}
+\tightlist
+\item
+  \(r_1\) be the number of real embeddings, i.e.~their images are
+  contained in \({\mathbb{R}}\),
+\item
+  \(r_2\) be \emph{half} the number of non-real embeddings, since they
+  come in pairs by composing with complex conjugation.
+\end{itemize}
+
+Note that \(n = r_1 + 2r_2\). Label the real embeddings
+\(\sigma_1, \cdots, \sigma_{r_1}\), and
+\(\sigma_{r_1+1}, \cdots, \sigma_{r_1 + r_2}\) a set of non-real
+embeddings, where we take one such nonreal embedding from each pair.
+
+\end{remark}
+
+\begin{question}
+
+What is the structure of \({\mathbb{Z}}_K^{\times}\)?
+
+\end{question}
+
+\begin{remark}
+
+For imaginary quadratic fields, the units were norm 1 in the ring of
+integers. Usually there were just 2, \(\pm 1\), and in
+\({\mathbb{Z}}[i]\) there were 4, and \({\mathbb{Q}}( \sqrt{-3} )\)
+there were 6. All of these formed cyclic groups.
+
+For real quadratic fields, there was a fundamental unit \(u\) of
+infinite order, and all units were \(\pm u\), so the group is abstractly
+\({\mathbb{Z}}\times{\mathbb{Z}}/2\). So everything was a root of unity
+times a power of the fundamental unit.
+
+Define
+\begin{align*}
+\mu_K = \left\{{ \zeta\in K {~\mathrel{\Big|}~}\zeta^n = 1 \text{ for some } n\in {\mathbb{Z}}^{> 0} }\right\} 
+.\end{align*}
+Clearly \(\mu_K \subseteq K^{\times}\), and in fact
+\(\mu_k \subseteq \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
+In fact, it forms a subgroup \(\mu_K \leq {\mathbb{Z}}_k^{\times}\). The
+big theorem on the structure of units is the following, which says the
+same thing as the real quadratic field case happens in general, just
+with more fundamental units.
+
+\end{remark}
+
+\begin{theorem}[Dirichlet's Units Theorem]
+
+There are elements
+\(\varepsilon_1, \cdots, \varepsilon_{r_1 + r_2 - 1} \in {\mathbb{Z}}_K^{\times}\)
+of infinite order such that
+\({\mathbb{Z}}_K^{\times}= \mu_K \prod_{i=1}^{r_1 + r_2 - 1} \left\langle{ \varepsilon_i }\right\rangle\)
+as an internal direct product. So every unit has a unique decomposition
+of this form.
+
+Moreover, \(\# \mu_K < \infty\).
+
+\end{theorem}
+
+\begin{example}[?]
+
+When is \({\mathbb{Z}}_K^{\times}\) finite? This happens iff
+\(r_1 + r_2 = 1\), and there are a few cases:
+
+\begin{itemize}
+\tightlist
+\item
+  \(r_1=1, r_2=0\), and since \(n=r_1 + 2r_2 = 1\), this forces
+  \(K = {\mathbb{Q}}\).
+\item
+  \(r_1 = 0, r_2 = 1 \iff n=2\), so this is a quadratic field with no
+  real embeddings, so \(K\) is an imaginary quadratic field.
+\end{itemize}
+
+\end{example}
+
+\begin{remark}
+
+Our goal will be to prove the units theorem with \emph{some} number
+\(g\), and we'll show in the next chapter that \(g = r_1 + r_2 - 1\) is
+the right \(g\) to choose.
+
+An outline of the proof:
+
+\begin{itemize}
+\item
+  Define a homomorphism
+  \begin{align*}
+  \operatorname{Log}: K^{\times}&\to {\mathbb{R}}^{r_1 + r_2} \\
+  \alpha &\mapsto {\left[ { 
+  \log{\left\lvert {\sigma_1( \alpha) } \right\rvert}, 
+  \cdots,
+  \log{\left\lvert {\sigma_{r_1}( \alpha) } \right\rvert}, 
+  2\log{\left\lvert {\sigma_{r_1+1}( \alpha) } \right\rvert}, 
+  \cdots
+  2\log{\left\lvert {\sigma_{r_1+r_2}( \alpha) } \right\rvert}, 
+  } \right]}
+  .\end{align*}
+  We'll mostly consider its restriction to \({\mathbb{Z}}_K^{\times}\).
+\item
+  Prove
+  \(\ker { \left.{{\operatorname{Log}}} \right|_{{{\mathbb{Z}}_K^{\times}}} } = \mu_K\)
+  and is finite.
+\item
+  Prove \(\operatorname{Log}({\mathbb{Z}}_K)\) is a discrete subgroup of
+  \({\mathbb{R}}^{r_1 + r_2}\).
+\item
+  Use the fact that such discrete subgroups are lattices.
+\item
+  Prove the units theorem with \(g\) defined as the rank of this
+  lattice.
+\item
+  Finally prove the rank \(g\) is equal to \(r_1 + r_2 - 1\).
+\end{itemize}
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Let \(M\in {\mathbb{R}}^{>0}\) and let \(\alpha \in {\mathbb{Z}}_K\). If
+for all embeddings \(\sigma: K\hookrightarrow{\mathbb{C}}\) we have
+bounds \({\left\lvert {\sigma( \alpha)} \right\rvert} \leq M\), then
+\(\alpha\) is a root of a polynomial in
+\begin{align*}
+P_{n,m}
+\coloneqq
+\left\{{ x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \in {\mathbb{Z}}[x] {~\mathrel{\Big|}~}{\left\lvert {a_i} \right\rvert} \leq {n\choose i} M^{n-i} }\right\} 
+.\end{align*}
+Note that this is a finite set.
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Note that \(\alpha\) is a root of its \textbf{field polynomial}
+\begin{align*}
+f(x) \coloneqq\prod_{\sigma: K \hookrightarrow{\mathbb{C}}} (x - \sigma( \alpha))
+.\end{align*}
+Since \(\alpha \in {\mathbb{Z}}_K\), this polynomial
+\(f \in {\mathbb{Z}}[x]\). So it suffices to show that
+\(f\in P_{n, m}\). It's degree \(n\), the coefficients are integers, but
+why do they satisfying the bound? Expanding the multiplication, there
+are \({n\choose i}\) prducts each of which involves \(n-i\) of the
+\(\sigma_i( \alpha)\), which is bounded.
+
+\end{proof}
+
+\begin{remark}
+
+We'll first show the kernel of \(\operatorname{Log}\) is finite, then
+it'll be easy to see it's \(\mu_K\).
+
+\end{remark}
+
+\begin{proposition}[?]
+
+\begin{align*}
+\# \ker { \left.{{ \operatorname{Log}}} \right|_{{{\mathbb{Z}}_K^{\times}}} } < \infty 
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Suppose \(\alpha\in {\mathbb{Z}}_K^{\times}\) and
+\(\operatorname{Log}(\alpha) = \mathbf{0}\). This says that
+\({\left\lvert { \sigma_i( \alpha)} \right\rvert} = 1\) for all
+embeddings \(\sigma_i: K\hookrightarrow{\mathbb{C}}\). Applying the
+lemma above with \(M=1\), \(\alpha\) is a root of a polynomials in
+\(P_{n, 1}\), each of which has at most \(n\) roots. So there are only
+finitely many possibilities for \(\alpha\).
+
+\end{proof}
+
+\begin{proposition}[?]
+
+\begin{align*}
+\ker { \left.{{ \operatorname{Log}}} \right|_{{{\mathbb{Z}}_K^{\times}}} } = \mu_K
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Start with \(\zeta\in \mu_K\), then under any \(\sigma\),
+\(\sigma(\zeta)\) is a complex root of unity. So
+\({\left\lvert {\sigma(\zeta)} \right\rvert} = 1\), and by the previous
+result, \(\operatorname{Log}(\zeta) = \mathbf{0}\). So
+\(\mu_K \subseteq \ker \operatorname{Log}\).
+
+Conversely suppose \(\zeta\in \ker \operatorname{Log}\), which in
+particular is a group. Suppose \(\# \ker \operatorname{Log}= n\), since
+we know it's finite. Then \(\xi^n = e = 1\) in this group, making it an
+\(n\)th root of unity.
+
+\end{proof}
+
+\begin{remark}
+
+Note that \(\mu_K\) is always cyclic This follows because for \(K\) a
+field, it's an exercise that any finite subgroup
+\(H\leq {\mathbb{G}}_m(K)\), it is always cyclic. So we've written
+\({\mathbb{Z}}_K = C_q \times {\mathbb{Z}}^{r_1 + r_2 - 1}\) as an
+abstract group.
+
+\end{remark}
+
+\hypertarget{ch.-18-dirichlets-units-theorem-part-i-friday-may-21}{%
+\section{Ch. 18: Dirichlet's Units Theorem Part I (Friday, May
+21)}\label{ch.-18-dirichlets-units-theorem-part-i-friday-may-21}}
+
+\begin{remark}
+
+Some notation introduced last time: for \(K\) a number field,
+\([K: {\mathbb{Q}}] = n\) the degree, set
+\(\sigma_{1}, \cdots, \sigma_{r_1}\) to be the real embeddings, and
+\(\sigma_{r_1 + 1}, \cdots, \sigma_{r_1 + r_2}\) (along with their
+complex conjugates) to be the nonreal embeddings into \({\mathbb{C}}\).
+Let
+\(\mu_K \coloneqq\left\{{ z\in K {~\mathrel{\Big|}~}z^n = 1, n\in {\mathbb{N}}}\right\}\)
+be the \(n\)th roots of unity Recall Dirichlet's unit theorem: there are
+\({ {\varepsilon}_1, {\varepsilon}_2, \cdots, {\varepsilon}_{r_1+r_2-1}} \in {\mathbb{Z}}_K^{\times}\)
+of infinite order such that
+\begin{align*}
+{\mathbb{Z}}_K^{\times}= \mu_K \times \prod_{i\leq r_1 + r_2 -1} \left\langle{ \mu_i }\right\rangle 
+.\end{align*}
+Moreover, \(\# \mu_K < \infty\).
+
+\end{remark}
+
+\begin{remark}[An outline of the proof]
+
+Set \(d = r_1 + r_2\). We define a homomorphism
+\begin{align*}
+\operatorname{Log}: K^{\times}&\to {\mathbb{R}}^{d} \\
+\alpha &\mapsto {\left[ { 
+\log{\left\lvert {\sigma_i(\alpha)} \right\rvert}, 
+\cdots,
+\log{\left\lvert {\sigma_{r_1}(\alpha)} \right\rvert}, 
+2 \log{\left\lvert {\sigma_{r_1+1}(\alpha)} \right\rvert}, 
+\cdots,
+2 \log{\left\lvert {\sigma_{r_1+r_2}(\alpha)} \right\rvert}, 
+} \right]}
+.\end{align*}
+Note that we only used half of the non-real embeddings, but made up for
+it by including a 2! We'll mostly be concerned with its restriction to
+\({\mathbb{Z}}_K^{\times}\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Show that the restriction has finite kernel \(\mu_k\) -- we've
+  completed this.
+\item
+  Show \(\operatorname{Log}({\mathbb{Z}}_K^{\times})\) is discrete as a
+  subgroup of \({\mathbb{R}}^{d}\)
+\item
+  Use the fact that every discrete subgroup of \({\mathbb{R}}^d\) is a
+  lattice, the \({\mathbb{Z}}{\hbox{-}}\)span of linearly independent
+  vectors.
+\item
+  Prove the units theorem with \(d-1\) replaced by
+  \(g = \operatorname{rank}\operatorname{Log}({\mathbb{Z}}_K^{\times})\).
+\item
+  Deferred to next chapter: show \(g = r_1 + r_2 - 1\).
+\end{enumerate}
+
+\end{remark}
+
+\hypertarget{step-2-discreteness}{%
+\subsection{Step 2: Discreteness}\label{step-2-discreteness}}
+
+\begin{definition}[Discrete lattices]
+
+Let \(d\in {\mathbb{Z}}^{\geq 0}\) and let
+\(\Lambda \leq {\mathbb{R}}^d\) be a subgroup. Then \(\Lambda\) is
+\textbf{discrete} iff for every \(R>0\), \(\Lambda \cap B_R(0)\) is a
+finite set, where \(B_R(0)\) is a ball of radius \(R\) about 0.
+
+\end{definition}
+
+\begin{proposition}[?]
+
+\(\operatorname{Log}({\mathbb{Z}}_K^{\times})\) is discrete in
+\({\mathbb{R}}^d\) for \(d=r_1 + r_2\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Let \(R>0\), we'll show that there are only finitely many
+\(\alpha \in {\mathbb{Z}}_K^{\times}\) for which
+\(\operatorname{Log}(\alpha) \in B_R(0)\). This forces
+\(\log{\left\lvert {\sigma(\alpha)} \right\rvert} \leq R\) for all
+\(\sigma: K\hookrightarrow{\mathbb{C}}\). Thus
+\({\left\lvert {\sigma(\alpha)} \right\rvert} \leq e^R\) for all such
+embeddings. By a previous lemma, this makes \(\alpha\) a root of a
+polynomial in some finite set \(P_{n,e^R}\) -- what this set is isn't
+important, just recall that once you have a bound on the embeddings,
+this gives a bound on the coefficients of the field polynomial.
+
+\end{proof}
+
+\hypertarget{step-3}{%
+\subsection{Step 3}\label{step-3}}
+
+\begin{theorem}[?]
+
+Every discrete subgroup of \({\mathbb{R}}^d\) is a lattice.
+
+\end{theorem}
+
+\begin{proof}[?]
+
+See the book!
+
+\end{proof}
+
+\hypertarget{step-3-1}{%
+\subsection{Step 3}\label{step-3-1}}
+
+\begin{theorem}[Weak units theorem]
+
+Let \(g\) be the rank of
+\(\operatorname{Log}{\mathbb{Z}}_K^{\times}\subseteq {\mathbb{R}}^{r_1 + r_2}\).
+Then there are fundamental units
+\({ {\varepsilon}_1, {\varepsilon}_2, \cdots, {\varepsilon}_{g}} \in {\mathbb{Z}}_K^{\times}\)
+of infinite order such that
+\begin{align*}
+{\mathbb{Z}}_K^{\times}= \mu_K \times \prod_{i\leq g} \left\langle{ \varepsilon_i }\right\rangle 
+.\end{align*}
+Note that this is the same theorem from before, just with \(d\) replaced
+by \(g\).
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Using that \(g\) is by definition the rank of the lattice
+\(\operatorname{Log}{\mathbb{Z}}\), choose
+\({ {\varepsilon}_1, {\varepsilon}_2, \cdots, {\varepsilon}_{g}}\in {\mathbb{Z}}_K^{\times}\)
+such that the \(\operatorname{Log}(\varepsilon_i)\) are
+\({\mathbb{R}}{\hbox{-}}\)linearly independent and their
+\({\mathbb{Z}}{\hbox{-}}\)span is the lattice. Let
+\(\varepsilon\in {\mathbb{Z}}_K^{\times}\) be any unit, then
+\(\operatorname{Log}(\varepsilon) \in \operatorname{Log}{\mathbb{Z}}_K^{\times}\),
+so there are integers
+\({ {n}_1, {n}_2, \cdots, {n}_{g}}\in {\mathbb{Z}}\) such that {[}
+
+\operatorname{Log}(\varepsilon) = \sumn\_i
+\operatorname{Log}(\varepsilon\_i) .{]} Hence
+\begin{align*}
+\operatorname{Log}\qty{ \varepsilon/ \prod_{i\leq g} \varepsilon_i^{n_i} } = \mathbf{0}
+.\end{align*}
+So it's in the kernel and equal to some \(\zeta\in \mu_K\), so we can
+write \(\varepsilon= \zeta \prod_{i\leq g} \varepsilon_i^{n_i}\). This
+representation of \(\varepsilon\) is unique, in the sense that \(\zeta\)
+and the \(n_i\) are uniquely determined. Why? For any other
+representation, applying \(\operatorname{Log}\) would kill the \(\zeta\)
+part and write
+\(\operatorname{Log}(\varepsilon) = \sum n_{j} \varepsilon_j\) in the
+basis \(\varepsilon_j\). So the \(n_i\) are unique, and \(\zeta\) is
+just obtained by dividing, so it can be recovered uniquely as well.
+
+\end{proof}
+
+\begin{remark}
+
+Our goal is to now show \(g=r_1 + r_2-1\), which is hard. It's easier to
+obtain a bound instead.
+
+\end{remark}
+
+\begin{proposition}[Lattice rank bound]
+
+Let
+\(g = \operatorname{rank}\operatorname{Log}({\mathbb{Z}}_K^{\times})\),
+then
+\begin{align*}
+g\leq r_1 + r_2 - 1
+.\end{align*}
+
+\end{proposition}
+
+\begin{lemma}[?]
+
+Let \(\Lambda \subseteq {\mathbb{R}}^d\) be a lattice, then
+\(\operatorname{rank}\Lambda = \dim_{\mathbb{R}}V\) where \(V\) is the
+smallest subspace of \({\mathbb{R}}^d\) containing \(\Lambda\).
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Let \(g\coloneqq\operatorname{rank}\Lambda\), and write
+\(\Lambda= \sum_{i\leq g} {\mathbb{Z}}\mathbf{v}_i\) where the
+\(\mathbf{v}_i\) are \({\mathbb{R}}{\hbox{-}}\)linearly independent.
+Then \(V = \sum_{i\leq g} {\mathbb{R}}\mathbf{v}_i\), and
+\(\dim_{\mathbb{R}}V = g = \operatorname{rank}\Lambda\).
+
+\end{proof}
+
+\begin{proof}[of proposition, lattice rank bound]
+
+Let
+\(\mathbf{w} = {\left[ {1, 1, \cdots, 1} \right]}\in {\mathbb{R}}^{r_1 + r_2}\).
+If \(\alpha\in {\mathbb{Z}}_K^{\times}\), then dotting sums the
+components, so
+\begin{align*}
+\mathbf{w} \cdot \operatorname{Log}\alpha = \sum_{i\leq r_1} \log {\left\lvert {\sigma_i( \alpha)} \right\rvert}
++ 2\sum_{r_1 + 1 \leq i \leq r_1 + r_2} \log {\left\lvert {\sigma_i( \alpha) } \right\rvert}
+.\end{align*}
+Note that
+\({\left\lvert {\sigma_i(\alpha)} \right\rvert} = {\left\lvert {\mkern 1.5mu\overline{\mkern-1.5mu\sigma( \alpha)\mkern-1.5mu}\mkern 1.5mu} \right\rvert}\),
+so because we have a 2 here, we could have written this as
+\begin{align*}
+\mathbf{w} \cdot \operatorname{Log}\alpha 
+&= \sum_{\sigma:K\hookrightarrow{\mathbb{C}}} \log {\left\lvert {\sigma(\alpha)} \right\rvert}\\
+&= \log\prod_{\sigma: K\hookrightarrow{\mathbb{C}}} {\left\lvert {\sigma( \alpha)} \right\rvert} \\
+&= \log {\left\lvert { N ( \alpha)} \right\rvert} \\
+&= 0
+,\end{align*}
+since \(\alpha\in {\mathbb{Z}}_K^{\times}\implies N( \alpha) = \pm 1\).
+This says that
+\(\operatorname{Log}({\mathbb{Z}}_K^{\times}) \subseteq \mathbf{w}^\perp\),
+which has codimension \(1\) and thus dimension \(r_1 + r_2 - 1\). Now
+\(V \subseteq \mathbf{w} ^\perp\). so its rank is bounded by this
+dimension. So \(g\leq r_1 + r_2 - 1\).
+
+\end{proof}
+
+\hypertarget{ch.-20-unit-theorem-part-ii}{%
+\section{Ch. 20: Unit Theorem, Part
+II}\label{ch.-20-unit-theorem-part-ii}}
+
+\begin{remark}
+
+We still need to prove that this is an equality. We'll start with some
+geometric preliminaries.
+
+\end{remark}
+
+\begin{definition}[The Minkowski Embedding]
+
+The \textbf{Minkowski embedding} of \(K\) is the map
+\begin{align*}
+\iota: K &\to {\mathbb{R}}^{r_1} \times {\mathbb{C}}^{r_2} \\
+\alpha &\mapsto {\left[ { 
+\sigma_1(\alpha), \cdots, \sigma_{r_1}( \alpha),
+\sigma_{r_1 + 1}( \alpha), \cdots, \sigma_{r_1 + r_2}( \alpha)
+} \right]}
+.\end{align*}
+Identify \({\mathbb{C}}\cong {\mathbb{R}}^2\) using
+\(a+bi \mapsto {\left[ {a, b} \right]}\), which identifies the codomain
+above with
+\({\mathbb{R}}^{r_1} \times {\mathbb{R}}^{2r_2} = {\mathbb{R}}^n\). So
+we view \(\iota:K\to {\mathbb{R}}^n\).
+
+\end{definition}
+
+\begin{remark}
+
+Note \(\iota\) is injective and \({\mathbb{Q}}{\hbox{-}}\)linear.
+
+\end{remark}
+
+\begin{proposition}[Extremely important]
+
+\(\iota({\mathbb{Z}}_K)\) is a lattice of full rank in
+\({\mathbb{R}}^n\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Why is this a lattice? We'll show it's a discrete subgroup.
+
+Let \(R>0\), then if \(\alpha\in {\mathbb{Z}}_K\) and
+\(\iota(\alpha) \in B_R(0)\), then
+\({\left\lvert {\sigma( \alpha)} \right\rvert} \leq R\) for all
+\(\sigma: K\hookrightarrow{\mathbb{C}}\). This forces \(\alpha\) to be a
+root of one of finitely many polynomials in \(P_{n, R}\).
+
+Now let \(g\coloneqq\operatorname{rank}\iota({\mathbb{Z}}_K)\) as a
+lattice. This is a free abelian group of rank \(g\), so isomorphic to
+\({\mathbb{Z}}^g\) since it's the \({\mathbb{Z}}{\hbox{-}}\)span of
+\(g\) linearly independent elements. On the other hand, by the integral
+basis theorem, \({\mathbb{Z}}_K\) is a free abelian group of rank \(n\).
+Since \(\iota\) is injective, \(\iota({\mathbb{Z}}_K)\) is free of rank
+\(n\), and a fact from algebra implies \(n=g\).
+
+\end{proof}
+
+\begin{remark}
+
+Since \(\iota({\mathbb{Z}}_K\) is a full rank lattice,
+\(\operatorname{covol}\iota({\mathbb{Z}}_K)\) is well-defined, where the
+covolume is the volume of the fundamental parallelepiped spanned by any
+generating set, and is measured by the absolute value of the determinant
+of the matrix of basis elements. It turns out that the covolume is the
+discriminant from before, but we don't need the exact value at the
+moment.
+
+\end{remark}
+
+\begin{remark}
+
+We'll now make some further reductions. Recall that
+\(g\coloneqq\operatorname{rank}\operatorname{Log}({\mathbb{Z}}_K^{\times}) = \dim_{\mathbb{R}}V\),
+where \(V\) is the smallest subspace of \({\mathbb{R}}^{r_1 + r_2}\)
+containing \(\operatorname{Log}({\mathbb{Z}}_K^{\times})\). Recall the
+rank-nullity theorem:
+\begin{align*}
+\dim_{\mathbb{R}}V + \dim_{\mathbb{R}}V^\perp = r_1 + r_2
+\implies g = \dim_{\mathbb{R}}V = r_1 + r_2 - \dim_{\mathbb{R}}V^\perp
+.\end{align*}
+the goal is to show \(\dim_{\mathbb{R}}V^\perp = 1\). We know
+\(\mathbf{w} \coloneqq{\left[ {1, 1, \cdots, 1} \right]} \in V^\perp\),
+so it suffices to show every element of \(V^\perp\) is a multiple of
+\(\mathbf{w}\). Suppose not, then there's an element of \(V^\perp\) of
+the form \({\left[ {c_1, c_2 \cdots, c_j, 0} \right]}\) by subtracting a
+suitable multiple of \(\mathbf{w}\). Not all of the \(c_i\) are zero,
+since this would mean the original was a multiple of \(\mathbf{w}\).
+Define a map
+\begin{align*}
+F: K^{\times}&\to {\mathbb{R}}\\
+\alpha&\mapsto {\left[ {c_1, c_2, \cdots c_{r_1 + r_2 - 1}, 0 } \right]} \cdot \operatorname{Log}( \alpha)
+.\end{align*}
+Now note that \(F({\mathbb{Z}}_K^{\times}) = 0\), since
+\(V \supseteq \operatorname{Log}({\mathbb{Z}}_K)\).
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Let \(c_1, c_2, \cdots, c_{r_1 + r_2 - 1} \in {\mathbb{R}}\) not all 0.
+Then if \(F\) is defined as above,
+\(F({\mathbb{Z}}_K^{\times}) \neq 0\).
+
+\end{proposition}
+
+\begin{remark}
+
+This requires some delicate inequalities, and an application of
+Minkowski's convex body theorem.
+
+\end{remark}
+
+\begin{lemma}[Key lemma]
+
+There is a sequence of nonzero \(\alpha\in K\) such that
+
+\begin{itemize}
+\tightlist
+\item
+  \({\left\lvert {F(\alpha)} \right\rvert} \to \infty\), but
+\item
+  \({\left\lvert {N( \alpha)} \right\rvert} < C_1 = C_1(K, c_1, \cdots, c_{r_1 + r_2 - 1} )\)
+  not depending on \(\alpha\).
+\end{itemize}
+
+\end{lemma}
+
+\begin{proof}[of proposition, assuming the key lemma]
+
+Note that there are only finitely many ideals of \({\mathbb{Z}}_K\) of
+norm bounded by any constant \(C_1\). We saw this for quadratic fields:
+if \(N(J) = m\), which by Lagrange's theorem yields
+\(1+1+\cdots 1 = m \equiv 0 \pmod J\). So \(m\in J\) and thus
+\(J\bigm|m\). But by unique factorization, any ideal only has finitely
+many divisors, so there are only finitely many possible values of \(m\).
+
+Note also that
+\({\left\lvert {N( \alpha )} \right\rvert} = N(\left\langle{ \alpha }\right\rangle ) < C_1\),
+so there are only finitely many such ideals. So given an infinite
+sequence of \(\alpha\)s, there are only finitely many different
+principal ideals they generate. So by the pigeonhole principle, we can
+pass to a subsequence such that \(\left\langle{ a }\right\rangle\) is
+constant. Note that \(F\) can't be constant on this sequence, since
+\(F(\alpha) \to \infty\), so we can choose \(\alpha_1, \alpha_2\) such
+that
+\begin{align*}
+\left\langle{ \alpha_1 }\right\rangle= \left\langle{ \alpha_2 }\right\rangle \quad\text{but}\quad F(\alpha_1) \neq F(\alpha_2)  
+.\end{align*}
+If this happens, then
+\(\alpha_1/ \alpha_2 \in {\mathbb{Z}}_K^{\times}\), and
+\begin{align*}
+F(\alpha_1/ \alpha_2) = F( \alpha_1)- F(\alpha_2) \neq 0
+.\end{align*}
+So we have \(F({\mathbb{Z}}_K^{\times})\neq 0\), since we've found a
+unit that maps to a nonzero element.
+
+\end{proof}
+
+\hypertarget{ch.-20-continued-friday-may-21}{%
+\section{Ch. 20 Continued (Friday, May
+21)}\label{ch.-20-continued-friday-may-21}}
+
+\begin{remark}
+
+Goal of Ch.18: prove that units theorem where the rank is left
+unspecified, and we proved it for \(g\) the rank of a certain lattice.
+For Ch.20, we want to show \(g\) is the right number! Recall the log
+function:
+\begin{align*}
+\operatorname{Log}: K^{\times}\to {\mathbb{R}}^{r_1 + r_2}
+\end{align*}
+where we take the \(\log{\left\lvert {{-}} \right\rvert}\) of the real
+embeddings and \(2\log{\left\lvert {{-}} \right\rvert}\) of one of each
+pair of complex embeddings. We know
+\(\operatorname{Log}{\mathbb{Z}}_K^{\times}\subseteq {\mathbb{R}}^{r_1 + r_2}\)
+is a lattice of rank \(g \leq r_1 + r_2 - 1\), and we want to show
+equality. We showed that everything follows if we establish the key
+lemma: if \(c_1, \cdots, c_{r_1 + r_2 - 1} \in {\mathbb{R}}\) are not
+all zero, defin
+\begin{align*}
+F(\alpha) \coloneqq{\left[ {c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \right]} \cdot \operatorname{Log}(\alpha)
+.\end{align*}
+We want to show there is a sequence of \(\alpha\in {\mathbb{Z}}_K\) such
+that \({\left\lvert {F(\alpha)} \right\rvert} \to \infty\) with
+\({\left\lvert {N( \alpha)} \right\rvert} \leq C_1\) bounded, where
+\(C_1\) doesn't depend on \(\alpha\). We want to make the dot product
+above large while keeping the norms small while making linear
+combinations of \(\log{\left\lvert {\sigma_i( \alpha)} \right\rvert}\)
+large. The only embeddings that show up are the ones labeled up to
+\(r_1 + r_2 - 1\), since the last component is zero, and we'll show that
+we can essentially control the image of \(\alpha\) under these
+embeddings while keeping its norm bounded.
+
+Recall the Minkowski embedding realizes \(K\) as a subspace of Euclidean
+space:
+\begin{align*}
+\iota: K\to {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2}
+,\end{align*}
+where the first components are the first \(r_1\) real embeddings and the
+latter are the complex embeddings. Identifying the target with
+\({\mathbb{R}}^n\), we said last time that
+\(\iota({\mathbb{Z}}_K) \subseteq {\mathbb{R}}^n\) is a full rank
+lattice, so of rank \(n\), which thus has a finite nonzero covolume.
+
+We'll use this with Minkowski's convex body theorem: suppose \(R\) is a
+region in \({\mathbb{R}}^d\) which is centrally symmetric and convex,
+and \(\Lambda\) is a full rank lattice in \({\mathbb{R}}^d\). Then if
+\(\operatorname{vol}(R)> w^d \operatorname{covol}(\Lambda)\), \(R\)
+contains a nonzero point \(x\in \Lambda\). How we'll use these: apply s
+the convex body theorem on \(\Lambda = \iota({\mathbb{Z}}_K)\), and use
+this to locate the types of \(\alpha\) we want.
+
+\end{remark}
+
+\begin{remark}
+
+Given
+\(\lambda_1, \cdots, \lambda_{r_1 + r_2} \in {\mathbb{R}}^{\geq 0}\),
+denote this by the vector \(\mathbf{\lambda}\). Define
+\begin{align*}
+R_{\mathbf{\lambda}}\coloneqq\left\{{ {\left[ {x_1, \cdots, x_{r_1 + r_2}} \right]} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}{\left\lvert {x_i} \right\rvert} \leq \lambda_i\,\,\forall i  }\right\} \subseteq {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} \cong {\mathbb{R}}^{n}
+.\end{align*}
+This is clearly centrally symmetric: negating anything lands in the
+region since we're taking absolute values. It's less clearly convex, but
+this follows from the triangle inequality. More intuitively, it's a
+product of discs and boxes, each of which are convex. One can compute
+its volume as
+\begin{align*}
+\operatorname{vol}R_{\mathbf{\lambda}} = \prod_{i\leq r_1} 2\lambda_i \prod_{j\leq r_2} \pi \lambda_{r_1 + j}^2
+= 2^{r_1} \pi^{r_2} \prod_{i\leq r_1} \lambda_i \prod_{j\leq r_2} \lambda_{r_1 + j}^2
+,\end{align*}
+since the first \(r_1\) components form boxes and the last form discs.
+
+As a convention, we'll fill out \(r_1+r_2\) tuples to \(r_1 + 2r_2\)
+tuples in the following way: for \(1 \leq i\leq r_2\), set
+
+\begin{itemize}
+\tightlist
+\item
+  \(\sigma_{r_1 + r_2 + i} = \mkern 1.5mu\overline{\mkern-1.5mu\sigma_{r_1 + i}\mkern-1.5mu}\mkern 1.5mu\),
+  and
+\item
+  \(\lambda_{r_1 + r_2 + i} = \lambda_{r_1 + i}\).
+\end{itemize}
+
+This introduces the remaining embeddings from each conjugate pair and
+assigns it the same \(\lambda_i\). We can now write
+\begin{align*}
+\operatorname{vol}R_{\mathbf{\lambda}} = 2^{r_1}\pi^{r_2} \prod_{i\leq n} \lambda_i
+,\end{align*}
+since each \(\lambda\) now appears twice in the product.
+
+\end{remark}
+
+\begin{proof}[of key lemma]
+
+Rather than working with arbitrary tuples, we'll only consider
+\({ {\lambda}_1, {\lambda}_2, \cdots, {\lambda}_{r_1 + r_2}} \in {\mathbb{R}}^{\geq 0}\)
+contained such that
+\begin{align*}
+\operatorname{vol}R_{\mathbf{\lambda}} = 2 \qty{ 2^n \operatorname{covol}\iota({\mathbb{Z}}_K) }
+,\end{align*}
+noting that the parenthesized quantity is exactly twice what's needed in
+Minkowski's theorem. This allows one to choose the first \(r_1 + r_2-1\)
+freely, and the last will be determined uniquely. By Minkowski's
+theorem, there is an \(\alpha\in {\mathbb{Z}}_K\) nonzero with
+\(\iota( \alpha)\in R_{\mathbf{\alpha}}\). Hence
+\begin{align*}
+{\left\lvert { \sigma_i( \alpha)} \right\rvert} \leq \lambda_i && \forall i=1,2,\cdots, n
+.\end{align*}
+Consequently,
+\begin{align*}
+{\left\lvert {N \alpha} \right\rvert} 
+&= \prod_{i} {\left\lvert {\sigma_i( \alpha)} \right\rvert}\leq \prod \lambda_i \\
+&= \frac{ \operatorname{vol}R_{\mathbf{\lambda}}} {2^{r_1} \pi^{r_2} } \\
+&= C_1
+.\end{align*}
+Notice that
+\begin{align*}
+1 \leq {\left\lvert {N \alpha} \right\rvert} 
+&= \prod_i {\left\lvert { \sigma_i( \alpha)} \right\rvert} \\
+&= {\left\lvert { \sigma_j( \alpha)} \right\rvert} \prod_{i\neq j} {\left\lvert { \sigma_i( \alpha)} \right\rvert} \\
+&\leq {\left\lvert { \sigma_j ( \alpha)} \right\rvert} \prod_{i\neq g} \lambda_i \\
+&\leq { {\left\lvert { \sigma_j } \right\rvert} \over \lambda_j } \prod_i \lambda_i \\
+&\leq { {\left\lvert { \sigma_j } \right\rvert} \over \lambda_j } C_1 
+.\end{align*}
+
+Rearranging yields
+\begin{align*}
+{\left\lvert { \sigma_j ( \alpha)} \right\rvert} \geq C_1^{-1}\lambda_j
+.\end{align*}
+Thus for every \(1\leq j \leq n\), we have an inequality
+\begin{align*}
+C_1\int \lambda_j \leq {\left\lvert { \sigma_j( \alpha)} \right\rvert} \leq \lambda_j
+.\end{align*}
+Taking logarithms yields
+\begin{align*}
+\log C_1^{-1}\leq \log {\left\lvert { \sigma_j( \alpha)} \right\rvert} - \log \lambda_j \leq 0
+.\end{align*}
+
+Recalling the definition of \(\operatorname{Log}( \alpha)\), and the
+above inequality says we know
+\(\log{\left\lvert { \sigma_j( \alpha)} \right\rvert}\) up to a constant
+-- it's about \(\log \lambda_j\). So setting
+\begin{align*}
+\mathbf{L} \coloneqq
+{\left[ { 
+\log \lambda_1, \cdots, \lambda_{r_1}, 2\log \lambda_{r_1 + 1}, 2\log \lambda_{r_1 + r_2}
+} \right]}
+,\end{align*}
+we have \(\mathbf{L} \approx \operatorname{Log}\alpha\), where
+\(\approx\) means each component is off by at most a constant. So
+\({\left\lvert { \operatorname{Log}\alpha - \mathbf{L}} \right\rvert} \leq C_2\),
+some other constant. We want to understand
+\begin{align*} 
+F(\alpha) \coloneqq{\left[ {c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \right]} \cdot \mathbf{\operatorname{Log}}(\alpha)
+\approx  
+F(\alpha) \coloneqq{\left[ {c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \right]} \cdot \mathbf{L}
+.\end{align*}
+How can we estimate the error? By Cauchy-Schwarz, the difference is
+bounded by
+\begin{align*}
+{\left\lVert {
+{\left[ {c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \right]} 
+} \right\rVert}
+\cdot 
+{\left\lVert {
+\operatorname{Log}\alpha - \mathbf{L}
+} \right\rVert}
+\leq 
+{\left\lVert {
+{\left[ {c_1, \cdots, c_{r_1 + r_2 - 1}, 0} \right]} 
+} \right\rVert}
+C_2
+\coloneqq
+C_3
+.\end{align*}
+
+We've show that for any choice of
+\(\lambda_1, \cdots, \lambda_{r_1 + r_2}\) satisfying the volume
+condition, one can find \(\alpha\) where
+\({\left\lvert {N \alpha} \right\rvert}\) is bounded and all of the
+above inequalities hold. In particular,
+\(F( \alpha) \approx \mathbf{c} \cdot \mathbf{L}\). We claim we can now
+choose \(\alpha\)s to make
+\({\left\lvert {F( \alpha)} \right\rvert} \to \infty\). Every choice of
+\(\lambda_i\)s yield an \(\alpha\), and the \(c_i\) in \(\mathbf{c}\)
+are fixed, so \(\mathbf{c} \cdot \mathbf{L}\) is just a function of the
+\(\lambda_i\). So to finish the prove, we need to show we can pick
+\(\lambda_i\) satisfying the volume condition but making
+\(\mathbf{c} \cdot \mathbf{L}\) as large as we want. This
+correspondingly makes \(F(\alpha)\) large, since they differ by at most
+a constant.
+
+Here's why we can do this: we assumed not all \(c_i\) were zero, so fix
+an \(i\) where \(c_i\neq 0\). Choose \(\lambda_j\) with \(\lambda_i\)
+very large, and \(\lambda_{j'} =1\) for \(j=1, \cdots, r_1 + r_2 - 1\)
+not including \(i\). Then choose \(\lambda_{r_1 + r_2}\) as determined
+by the volume condition. The claim is that we're done. The dot product
+has a zeroth \(r_1 + r_2\) component, so the dot product doesn't see
+\(\sigma_{r_1 + r_2}\). Recall \(\mathbf{L}\) is a function of the
+\(\lambda_i\), since the whole point was that we removed the dependence
+on \(\alpha\), and is given by
+\begin{align*}
+\mathbf{L} = {\left[ {
+\log \lambda_1, \cdots, \lambda_{r_1}, 2\log \lambda_{r_1 + 1}, \cdots, 2\log \lambda_{r_1 + r_2}
+} \right]}
+.\end{align*}
+What survives the dot product? We're taking \(\log(1) = 0\) in the
+\(j\neq i\) components, and in the \(i\)th component we have at most
+\(2\log \lambda_i \cdot c_i\), where the \(\lambda_i\) is a large
+number. So we can make \(\mathbf{c} \cdot \mathbf{L}\) as large as we
+want.
+
+\end{proof}
+
+\hypertarget{ch.-21-applications-of-minkowskis-theorem}{%
+\section{Ch. 21: Applications of Minkowski's
+Theorem}\label{ch.-21-applications-of-minkowskis-theorem}}
+
+\begin{proposition}[?]
+
+Recall the Minkowski embedding,
+\(\iota: K\to {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2}\), where we
+concatenate all of the real embeddings followed by the complex
+embeddings. View the target as \({\mathbb{R}}^n\), then there is a
+formula:
+\begin{align*}
+\operatorname{covol}\iota({\mathbb{Z}}_K) = 2^{-r_2} \sqrt{ {\left\lvert { {\Delta}_K } \right\rvert}}
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Pick an integral basis
+\({ {\omega}_1, {\omega}_2, \cdots, {\omega}_{n}}\) for \(K\), then
+\(\iota(\omega_1), \cdots, \iota(\omega_n)\) span
+\(\iota({\mathbb{Z}}_K)\) over \({\mathbb{Z}}\). It suffices to show
+that if \(A\) is the \(n\times n\) matrix with \(i\)th column
+\(\iota(\omega_i)\), then \({\left\lvert {\det A} \right\rvert}\) is the
+right-hand side in the formula. If this is true, the \(\iota(w_i)\) are
+linearly independent over \({\mathbb{R}}\), otherwise the determinant
+would be \({\mathbb{R}}\), so they're a basis for the lattice
+\(\iota({\mathbb{Z}}_K)\), and this determinant is precisely the formula
+for the covolume of a lattice. We claim the matrix looks like the
+following.
+
+\begin{align*}
+\begin{bmatrix}
+\sigma_1(\omega_1) & \cdots & \sigma_1(\omega_1) \\
+\vdots & \cdots & \vdots \\
+\sigma_{r_1}(\omega_1) & \cdots & \sigma_{r_1}(\omega_1) \\
+\Re \sigma_{r_1+1}(\omega_1) & \cdots & \Re \sigma_{r_1+1}(\omega_1) \\
+\Im \sigma_{r_1+1}(\omega_1) & \cdots & \Im \sigma_{r_1+1}(\omega_1) \\
+\vdots & \cdots & \vdots \\
+\Re \sigma_{r_1+r_2}(\omega_1) & \cdots & \Re \sigma_{r_1+r_2}(\omega_1) \\
+\Im \sigma_{r_1+r_2}(\omega_1) & \cdots & \Im \sigma_{r_1+r_2}(\omega_1) 
+\end{bmatrix}
+.\end{align*}
+
+Let \(D_{ij} \coloneqq{\left[ { \sigma_i(\omega_j) } \right]}\), then by
+tracking row operations that transform \(D\) to \(A\),
+\(\det(A) = (-i/2)^{r_2} \det(D)\). So
+\begin{align*}
+{\left\lvert {\det A} \right\rvert} = 2^{-r_2} {\left\lvert {\det D} \right\rvert}
+.\end{align*}
+Since \(\det(D)^2 = {\Delta}_K\), then taking square roots yields
+\({\left\lvert {\det D} \right\rvert} = \sqrt{ {\left\lvert { {\Delta}_K} \right\rvert} }\).
+
+\end{proof}
+
+\begin{remark}
+
+We now now the covolume of this lattice, we'd like to do this not just
+for \({\mathbb{Z}}_K\) but also its ideals.
+
+\end{remark}
+
+\begin{lemma}[?]
+
+If \(I{~\trianglelefteq~}{\mathbb{Z}}_K\), then \(I\) is a free abelian
+group of rank \(n\).
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Take any nonzero \(\alpha\in I\), then
+\(\alpha {\mathbb{Z}}_K \subseteq I \subseteq {\mathbb{Z}}_K\). The
+outer terms are free abelian of rank \(n\), so \(I\) must be as well.
+
+\end{proof}
+
+\begin{proposition}[?]
+
+If \(I{~\trianglelefteq~}{\mathbb{Z}}_K\) is nonzero, then \(\iota(I)\)
+is a full rank lattice in \({\mathbb{R}}^n\) and
+\begin{align*}
+\operatorname{covol}\iota(I) = 2^{r_2} \sqrt{{\left\lvert {{\Delta}_K} \right\rvert}} N(I)
+.\end{align*}
+
+\end{proposition}
+
+\hypertarget{ch.-21-applications-of-minkowskis-theorem-friday-may-21}{%
+\section{Ch. 21: Applications of Minkowski's Theorem (Friday, May
+21)}\label{ch.-21-applications-of-minkowskis-theorem-friday-may-21}}
+
+\begin{remark}
+
+Recall that we're considering the Minkowski embedding
+\(\iota: K\to{\mathbb{R}}^n\). We saw that
+\(\iota({\mathbb{Z}}_K)\subseteq {\mathbb{R}}^n\) is a full rank lattice
+whose covolume is \(?\)?
+
+\end{remark}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
