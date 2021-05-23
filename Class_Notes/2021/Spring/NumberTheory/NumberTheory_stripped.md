@@ -3855,7 +3855,7 @@ The picture: we can lift ideals from \( {\mathbb{Z}}_K \) to \( R \) and interse
 ::: {.proof title="?"}
 Follow your nose! The containment \( I \subseteq IR \cap{\mathbb{Z}}_K \) is clear, since \( I \) is contained in both terms. For the reverse containment, we'll first do it for \( I \) principal, and then reduce to that case. So suppose \( I = \alpha {\mathbb{Z}}_K \), then \( IR = \alpha R \). Take \( \beta \in IR \cap{\mathbb{Z}}_K \), then \( \beta\over \alpha \in R \cap K \subseteq \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\cap K = {\mathbb{Z}}_K \). Then \( \beta \in \alpha {\mathbb{Z}}_K \), which is what we wanted to show.\
 
-We'll reduce to the principal case by using a familiar trick. Pick \( m\in {\mathbb{Z}}^{\geq 0} \) so that \( I^m \) is principal, then \( I^m R \cap{\mathbb{Z}}_K = I^m \) by the previous case. Taking \( \gamma\in IR \cap{\mathbb{Z}}_K \), we'll show it must be in \( I \). We know \( \gamma^m \in (IR)^m = I^m R \), and thus we have \( \gamma^m \in I^m R \cap{\mathbb{Z}}_K = I^m \). Now using unique factorization and to contain is to divide, this implies that \( I^m \bigm|\left\langle{ \gamma ^m }\right\rangle= \left\langle{ \gamma }\right\rangle^m \). So \( I \bigm|\left\langle{ \gammma }\right\rangle \) and thus \( \gamma \in I \).
+We'll reduce to the principal case by using a familiar trick. Pick \( m\in {\mathbb{Z}}^{\geq 0} \) so that \( I^m \) is principal, then \( I^m R \cap{\mathbb{Z}}_K = I^m \) by the previous case. Taking \( \gamma\in IR \cap{\mathbb{Z}}_K \), we'll show it must be in \( I \). We know \( \gamma^m \in (IR)^m = I^m R \), and thus we have \( \gamma^m \in I^m R \cap{\mathbb{Z}}_K = I^m \). Now using unique factorization and to contain is to divide, this implies that \( I^m \bigm|\left\langle{ \gamma ^m }\right\rangle= \left\langle{ \gamma }\right\rangle^m \). So \( I \bigm|\left\langle{ \gamma }\right\rangle \) and thus \( \gamma \in I \).
 :::
 
 ::: {.proof title="of theorem"}
@@ -3908,7 +3908,7 @@ There are two main theorems: one describes how these prime ideals factor, and th
 ::: {.theorem title="efg theorem"}
 Let \( K \) be a number field of degree \( [K: {\mathbb{Q}}] = n \) and let \( p \) be a rational prime. Factor
 \[
-\left\langle{ p }\right\rangle \prod_{i=1}^g P_ji{e_i}
+\left\langle{ p }\right\rangle = \prod_{i=1}^g P_ji{e_i}
 ,\]
 where the \( P_i \) are distinct primes ideals and \( e_i > 0 \). Then for each \( i \) we have \( N(P_i) = p^{f_i} \) for some \( f_i > 0 \), and
 \[
@@ -3928,7 +3928,7 @@ Consider the homomorphisms
 \phi: {\mathbb{Z}}&\to {\mathbb{Z}}_K/P_i \\
 a &\mapsto a \pmod{P_i}
 .\]
-We have \( \ker \varphi = P_i \cap{\mathbb{Z}} \), and since \( P \) lies over \( p \), this equals \( p{\mathbb{Z}} \). So there is an induced injection \( {\mathbb{F}}_p \coloneqq{\mathbb{Z}}/p{\mathbb{Z}}\hookrightarrow{\mathbb{Z}}_K/ P_i \), where \( a\pmod p \mapsto a \pmod P_i \). Thus \( {\mathbb{Z}}_K/P_i \in {\mathsf{Vect}}_{{\mathbb{F}}_p} \) is an \( {\mathbb{F}}_p{\hbox{-}} \)vector space. We want to show the size of the right-hand side, which is the size of \( P_i \), is a power of \( p \). But any finite-dimensional vector space over \( {\mathbb{F}}_p \) has dimension \( p^\ell \) for some \( \ell \). Let \( f_i \coloneqq\fim_{{\mathbb{F}}_p} ({\mathbb{Z}}_K/P_i) \), then \( N(P_i) = \# {\mathbb{Z}}_K/P_i = p^{f_i} \).\
+We have \( \ker \varphi = P_i \cap{\mathbb{Z}} \), and since \( P \) lies over \( p \), this equals \( p{\mathbb{Z}} \). So there is an induced injection \( {\mathbb{F}}_p \coloneqq{\mathbb{Z}}/p{\mathbb{Z}}\hookrightarrow{\mathbb{Z}}_K/ P_i \), where \( a\pmod p \mapsto a \pmod P_i \). Thus \( {\mathbb{Z}}_K/P_i \in {\mathsf{Vect}}_{{\mathbb{F}}_p} \) is an \( {\mathbb{F}}_p{\hbox{-}} \)vector space. We want to show the size of the right-hand side, which is the size of \( P_i \), is a power of \( p \). But any finite-dimensional vector space over \( {\mathbb{F}}_p \) has dimension \( p^\ell \) for some \( \ell \). Let \( f_i \coloneqq\dim_{{\mathbb{F}}_p} ({\mathbb{Z}}_K/P_i) \), then \( N(P_i) = \# {\mathbb{Z}}_K/P_i = p^{f_i} \).\
 
 Now proving that \( \sum e_i f_i = n \) is an easy corollary: go back to the factorization and take norms of both sides. Noting \( N( \left\langle{ p }\right\rangle ) = p^n \) since \( {\mathbb{Z}}_K \in {\mathsf{Ab}}_n^{\mathsf{Free}} \), we have
 \[
@@ -3986,7 +3986,7 @@ Suppose \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha\in \mkern 1.5mu\overline
     % superimpose \nmid to \big|
     \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
   }%
-\Disc(\min_{\alpha} (x) ) \), then \( p%
+{\Delta}(\min_{\alpha} (x) ) \), then \( p%
   \mathrel{\mkern.5mu % small adjustment
     % superimpose \nmid to \big|
     \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
@@ -3997,13 +3997,13 @@ Suppose \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha\in \mkern 1.5mu\overline
 ::: {.remark}
 A while ago we showed that
 \[
-\Disc( \min_{ \alpha}(x)) = \Disc(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = \Disc_K \cdot [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]^2
+{\Delta}( \min_{ \alpha}(x)) = {\Delta}(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = {\Delta}_K \cdot [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]^2
 .\]
 Note that we're done if this is true: if \( p \) divides the index, \( p^2 \) divides the last term, meaning \( p^2 \) divides the first.
 :::
 
 ::: {.example title="?"}
-Let \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha \) is a root of the irreducible polynomial \( f(x) = x^3 - x^2 - 2x + 8 \). Recall that we used this example when looking at integral bases. By a computation, \( \Disc(f(x)) = -4 \cdot 503 \), and the only squared prime dividing this is \( p=2 \). We can thus apply Dedekind-Kummer for all \( p\neq 2 \).
+Let \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha \) is a root of the irreducible polynomial \( f(x) = x^3 - x^2 - 2x + 8 \). Recall that we used this example when looking at integral bases. By a computation, \( {\Delta}(f(x)) = -4 \cdot 503 \), and the only squared prime dividing this is \( p=2 \). We can thus apply Dedekind-Kummer for all \( p\neq 2 \).
 
 -   Mod 3, \( f \) is irreducible. So \( \left\langle{ 3 }\right\rangle \) is prime and \( 3 \) is inert.
 
@@ -4013,7 +4013,7 @@ Let \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha \) is a root of the irreduci
 
 -   Mod 503, \( f(x) \equiv (x+259)(x+354)^2 \). So \( \left\langle{ 503 }\right\rangle= P_1 P_2^2 \), and thus \( 503 \) ramifies since an exponent is larger than 1.
 
-Note that \( \Disc(f(x)) = 0 \pmod 503 \), so \( f\in {\mathbb{F}}_{503}[x] \) has a repeated root in an extension. We can run this backward to show that \( 503 \) is the only odd prime that ramifies: Dedekind-Kummer says this can only happen if \( f \) has a repeated root mod \( p \). In this case, \( \Disc(f) \pmod p = 0 \), so \( p\bigm|4\cdot 503 \). Note that if you try to apply this theorem mod 2, this results in the wrong answer!
+Note that \( {\Delta}(f(x)) = 0 \pmod 503 \), so \( f\in {\mathbb{F}}_{503}[x] \) has a repeated root in an extension. We can run this backward to show that \( 503 \) is the only odd prime that ramifies: Dedekind-Kummer says this can only happen if \( f \) has a repeated root mod \( p \). In this case, \( {\Delta}(f) \pmod p = 0 \), so \( p\bigm|4\cdot 503 \). Note that if you try to apply this theorem mod 2, this results in the wrong answer!
 :::
 
 ::: {.lemma title="?"}
@@ -4029,7 +4029,7 @@ Let \( K = {\mathbb{Q}}( \alpha) \) be a number field where \( \alpha \in \mkern
 :::
 
 ::: {.proof title="?"}
-Start by showing \( p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha] = p {\mathbb{Z}}[ \alpha ] \). The reverse containment is clear, so let \( \beta\in \p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha ] \). Then \( \beta/p \in {\mathbb{Z}}_K \), so look at its image in \( {\mathbb{Z}}_K/ {\mathbb{Z}}[ \alpha] \). The order of the image divides \( p \), , since \( p (\beta/p) = \beta \in {\mathbb{Z}}[ \alpha] \). But we assumed that \( p \) doesn't divide the size of this quotient, forcing the order to be 1 and thus \( \beta/p\in {\mathbb{Z}}[ \alpha] \implies \beta \in p{\mathbb{Z}}[ \alpha] \).
+Start by showing \( p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha] = p {\mathbb{Z}}[ \alpha ] \). The reverse containment is clear, so let \( \beta\in p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha ] \). Then \( \beta/p \in {\mathbb{Z}}_K \), so look at its image in \( {\mathbb{Z}}_K/ {\mathbb{Z}}[ \alpha] \). The order of the image divides \( p \), , since \( p (\beta/p) = \beta \in {\mathbb{Z}}[ \alpha] \). But we assumed that \( p \) doesn't divide the size of this quotient, forcing the order to be 1 and thus \( \beta/p\in {\mathbb{Z}}[ \alpha] \implies \beta \in p{\mathbb{Z}}[ \alpha] \).
 :::
 
 ::: {.remark}
@@ -4071,7 +4071,7 @@ For notation, set \( m(x) \coloneqq\min_ \alpha(x) \). By assumption, we have a 
 .\]
 where we've used that \( p_i(x) \bigm|m(x) \) mod \( p \) by assumption. This is a field of size \( p^{\deg p_i(x)} \), which proves that \( P_i \) is prime of degree is \( f(P_i / p) = \deg p_i(x) \).
 
-We'll now show the \( P_i \) are distinct, and in fact comaximal in the sense that \( P_i + P_j = \left\langle{ 1 }\right\rangle \) for \( i\neq j \). We've assumed that \( p_i(x) \mdo p, p_j(x) \pmod p \in {\mathbb{F}}_p[x] \) are distinct monic irreducibles in the PID \( {\mathbb{F}}_p[x] \), so we can find a linear combination equal to \( 1 \). So write \( p_i(x) X(x) + p_j(x) Y(x) = 1 + pQ(x) \) for some polynomials \( X,Y\in {\mathbb{F}}_p[x] \) and \( Q\in {\mathbb{Z}}[ x] \). Plug in \( \alpha \) and mod out by \( I \coloneqq\left\langle{ p, p_i( \alpha), p_j( \alpha) }\right\rangle \) to get \( o \equiv 1 \pmod I \). But then \( 1\in I \) forces \( I = \left\langle{ 1 }\right\rangle \) Thus
+We'll now show the \( P_i \) are distinct, and in fact comaximal in the sense that \( P_i + P_j = \left\langle{ 1 }\right\rangle \) for \( i\neq j \). We've assumed that \( p_i(x) \pmod p, p_j(x) \pmod p \in {\mathbb{F}}_p[x] \) are distinct monic irreducibles in the PID \( {\mathbb{F}}_p[x] \), so we can find a linear combination equal to \( 1 \). So write \( p_i(x) X(x) + p_j(x) Y(x) = 1 + pQ(x) \) for some polynomials \( X,Y\in {\mathbb{F}}_p[x] \) and \( Q\in {\mathbb{Z}}[ x] \). Plug in \( \alpha \) and mod out by \( I \coloneqq\left\langle{ p, p_i( \alpha), p_j( \alpha) }\right\rangle \) to get \( o \equiv 1 \pmod I \). But then \( 1\in I \) forces \( I = \left\langle{ 1 }\right\rangle \) Thus
 \[
 \left\langle{ 1 }\right\rangle 
 &= \left\langle{ p, p_i( \alpha), p_j( \alpha) }\right\rangle \\
@@ -4081,7 +4081,7 @@ We'll now show the \( P_i \) are distinct, and in fact comaximal in the sense th
 
 It remains to show that \( \left\langle{ p }\right\rangle= \prod P_i^{e_i} \). Consider taking powers of \( P_i \):
 \[
-P_i^2 = \left\langle{ p^2, p p_i( \alpha), p_i(\alpha)^2 }\right\rangle 
+P_i^2 = \left\langle{ p^2,  p_i( \alpha), p_i(\alpha)^2 }\right\rangle 
 \subseteq \left\langle{ p, p_i( \alpha) ^2 }\right\rangle  \\
 P_i^3 \subseteq P_i \left\langle{ p_i, p_i (\alpha)^2}\right\rangle \subseteq \left\langle{ p_i, p_I( \alpha)^3 }\right\rangle  
 .\]
@@ -4111,7 +4111,7 @@ We also have \( N( \left\langle{ p }\right\rangle ) = \# {\mathbb{Z}}_k / \left\
 :::
 
 ::: {.remark}
-An recurring example in this class, due to Dedeking: let \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha \) is a root of the irreducible polynomial \( x^3 +x^2 -2x + 8 \in {\mathbb{Q}}[x] \). We saw that \( {\mathbb{Z}}_K \neq {\mathbb{Z}}[ \alpha] \) but their index divides 2, forcing it to be exactly 2. So the hypothesis of the Dedkind-Kummer theorem are not satisfied, but is the conclusion still true? It turns out that the answer is no, and 2 splits completely as \( \left\langle{ 2 }\right\rangle = P_1 P_2 P_3 \). The proof can be done bare-hands, we won't do it here. This is incompatible with the conclusion of the theorem: we would need the polynomial to factor into three monic linear polynomials mod 2. But there are only 2 different linear polynomials mod 2!
+An recurring example in this class, due to Dedekind: let \( K = {\mathbb{Q}}( \alpha) \) where \( \alpha \) is a root of the irreducible polynomial \( x^3 +x^2 -2x + 8 \in {\mathbb{Q}}[x] \). We saw that \( {\mathbb{Z}}_K \neq {\mathbb{Z}}[ \alpha] \) but their index divides 2, forcing it to be exactly 2. So the hypothesis of the Dedkind-Kummer theorem are not satisfied, but is the conclusion still true? It turns out that the answer is no, and 2 splits completely as \( \left\langle{ 2 }\right\rangle = P_1 P_2 P_3 \). The proof can be done bare-hands, we won't do it here. This is incompatible with the conclusion of the theorem: we would need the polynomial to factor into three monic linear polynomials mod 2. But there are only 2 different linear polynomials mod 2!
 :::
 
 ::: {.remark}
@@ -4307,9 +4307,11 @@ Note that this is the same theorem from before, just with \( d \) replaced by \(
 :::
 
 ::: {.proof title="?"}
-Using that \( g \) is by definition the rank of the lattice \( \operatorname{Log}{\mathbb{Z}} \), choose \( { {\varepsilon}_1, {\varepsilon}_2, \cdots, {\varepsilon}_{g}}\in {\mathbb{Z}}_K^{\times} \) such that the \( \operatorname{Log}(\varepsilon_i) \) are \( {\mathbb{R}}{\hbox{-}} \)linearly independent and their \( {\mathbb{Z}}{\hbox{-}} \)span is the lattice. Let \( \varepsilon\in {\mathbb{Z}}_K^{\times} \) be any unit, then \( \operatorname{Log}(\varepsilon) \in \operatorname{Log}{\mathbb{Z}}_K^{\times} \), so there are integers \( { {n}_1, {n}_2, \cdots, {n}_{g}}\in {\mathbb{Z}} \) such that \[
-
-`\operatorname{Log}`{=tex}(`\varepsilon`{=tex}) = `\sum `{=tex}n_i `\operatorname{Log}`{=tex}(`\varepsilon`{=tex}\_i) .\] Hence
+Using that \( g \) is by definition the rank of the lattice \( \operatorname{Log}{\mathbb{Z}} \), choose \( { {\varepsilon}_1, {\varepsilon}_2, \cdots, {\varepsilon}_{g}}\in {\mathbb{Z}}_K^{\times} \) such that the \( \operatorname{Log}(\varepsilon_i) \) are \( {\mathbb{R}}{\hbox{-}} \)linearly independent and their \( {\mathbb{Z}}{\hbox{-}} \)span is the lattice. Let \( \varepsilon\in {\mathbb{Z}}_K^{\times} \) be any unit, then \( \operatorname{Log}(\varepsilon) \in \operatorname{Log}{\mathbb{Z}}_K^{\times} \), so there are integers \( { {n}_1, {n}_2, \cdots, {n}_{g}}\in {\mathbb{Z}} \) such that
+\[
+\operatorname{Log}(\varepsilon) = \sum n_i \operatorname{Log}(\varepsilon_i)
+.\]
+Hence
 \[
 \operatorname{Log}\qty{ \varepsilon/ \prod_{i\leq g} \varepsilon_i^{n_i} } = \mathbf{0}
 .\]
@@ -4629,11 +4631,13 @@ We know \( I \) is free abelian of rank \( n \), so choose a \( {\mathbb{Z}}{\hb
 \[
 {\left[ {{ {\theta}_1, {\theta}_2, \cdots, {\theta}_{n}}} \right]} = {\left[ {{ {\omega}_1, {\omega}_2, \cdots, {\omega}_{n}}} \right]}A
 .\]
-The index-determinant theorem tells us that \( \# {\mathbb{Z}}_K/I = {\left\lvert {\det A} \right\rvert} \), and this is equal to \( N(I) \). Now apply \( \iota \) to both sides above to obtain \( n\times n \) matrix with the \( \iota(\theta_i) \) and \( \iota(\omega_i) \) as column vectors: \[
-
-# `{\left[ {{ { \iota \theta^t }_1, { \iota \theta^t }_2, \cdots, { \iota \theta^t }_{n}} } \right]}`{=tex}
-
-`{\left[ {{ {\iota \omega^r}_1, {\iota \omega^r}_2, \cdots, {\iota \omega^r}_{n}}} \right]}`{=tex}A .\] Taking \( {\left\lvert {\det{{-}}} \right\rvert} \) on both sides, we get
+The index-determinant theorem tells us that \( \# {\mathbb{Z}}_K/I = {\left\lvert {\det A} \right\rvert} \), and this is equal to \( N(I) \). Now apply \( \iota \) to both sides above to obtain \( n\times n \) matrix with the \( \iota(\theta_i) \) and \( \iota(\omega_i) \) as column vectors:
+\[
+{\left[ {{ { \iota \theta^t }_1, { \iota \theta^t }_2, \cdots, { \iota \theta^t }_{n}} } \right]} 
+= 
+{\left[ {{ {\iota \omega^r}_1, {\iota \omega^r}_2, \cdots, {\iota \omega^r}_{n}}} \right]}A
+.\]
+Taking \( {\left\lvert {\det{{-}}} \right\rvert} \) on both sides, we get
 \[
 \operatorname{covol}\iota(I) 
 = \operatorname{covol}\iota({\mathbb{Z}}_K) {\left\lvert {\det A} \right\rvert} 
@@ -4694,7 +4698,7 @@ What kinds of regions \( R \) correspond to \( {\left\lvert {N( \alpha)} \right\
 ::: {.answer}
 It's precisely the following region:
 \[
-\ts{ {\left[ {x} \right]}{r_1 + r_2} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}\prod_{i\leq r_1} {\left\lvert {x_i} \right\rvert} \prod_{j\leq r_2} {\left\lvert {x_{r_1 + j}} \right\rvert}^2 \leq X \} 
+\left\{{ {\left[ {x} \right]}{r_1 + r_2} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}\prod_{i\leq r_1} {\left\lvert {x_i} \right\rvert} \prod_{j\leq r_2} {\left\lvert {x_{r_1 + j}} \right\rvert}^2 \leq X }\right\} 
 .\]
 Note that this is centrally symmetric, but the convexity may be a problem.
 :::

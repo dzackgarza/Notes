@@ -7357,7 +7357,7 @@ know \(\gamma^m \in (IR)^m = I^m R\), and thus we have
 \(\gamma^m \in I^m R \cap{\mathbb{Z}}_K = I^m\). Now using unique
 factorization and to contain is to divide, this implies that
 \(I^m \bigm|\left\langle{ \gamma ^m }\right\rangle= \left\langle{ \gamma }\right\rangle^m\).
-So \(I \bigm|\left\langle{ \gammma }\right\rangle\) and thus
+So \(I \bigm|\left\langle{ \gamma }\right\rangle\) and thus
 \(\gamma \in I\).
 
 \end{proof}
@@ -7464,7 +7464,7 @@ factor, and the second (Dedekind-Kummer) will produce the factorization.
 Let \(K\) be a number field of degree \([K: {\mathbb{Q}}] = n\) and let
 \(p\) be a rational prime. Factor
 \begin{align*}
-\left\langle{ p }\right\rangle \prod_{i=1}^g P_ji{e_i}
+\left\langle{ p }\right\rangle = \prod_{i=1}^g P_ji{e_i}
 ,\end{align*}
 where the \(P_i\) are distinct primes ideals and \(e_i > 0\). Then for
 each \(i\) we have \(N(P_i) = p^{f_i}\) for some \(f_i > 0\), and
@@ -7501,7 +7501,7 @@ where \(a\pmod p \mapsto a \pmod P_i\). Thus
 the right-hand side, which is the size of \(P_i\), is a power of \(p\).
 But any finite-dimensional vector space over \({\mathbb{F}}_p\) has
 dimension \(p^\ell\) for some \(\ell\). Let
-\(f_i \coloneqq\fim_{{\mathbb{F}}_p} ({\mathbb{Z}}_K/P_i)\), then
+\(f_i \coloneqq\dim_{{\mathbb{F}}_p} ({\mathbb{Z}}_K/P_i)\), then
 \(N(P_i) = \# {\mathbb{Z}}_K/P_i = p^{f_i}\).\\
 
 Now proving that \(\sum e_i f_i = n\) is an easy corollary: go back to
@@ -7603,7 +7603,7 @@ answer is yes, coming from the discriminant.
 Suppose \(K = {\mathbb{Q}}( \alpha)\) where
 \(\alpha\in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\).
 If
-\(p^2 %  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% \Disc(\min_{\alpha} (x) )
+\(p^2 %  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% {\Delta}(\min_{\alpha} (x) )
 \), then
 \(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [{\mathbb{Z}}_K: {\mathbb{Z}}[\alpha]]
 \).
@@ -7614,7 +7614,7 @@ If
 
 A while ago we showed that
 \begin{align*}
-\Disc( \min_{ \alpha}(x)) = \Disc(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = \Disc_K \cdot [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]^2
+{\Delta}( \min_{ \alpha}(x)) = {\Delta}(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = {\Delta}_K \cdot [{\mathbb{Z}}_K: {\mathbb{Z}}[ \alpha] ]^2
 .\end{align*}
 Note that we're done if this is true: if \(p\) divides the index,
 \(p^2\) divides the last term, meaning \(p^2\) divides the first.
@@ -7626,8 +7626,8 @@ Note that we're done if this is true: if \(p\) divides the index,
 Let \(K = {\mathbb{Q}}( \alpha)\) where \(\alpha\) is a root of the
 irreducible polynomial \(f(x) = x^3 - x^2 - 2x + 8\). Recall that we
 used this example when looking at integral bases. By a computation,
-\(\Disc(f(x)) = -4 \cdot 503\), and the only squared prime dividing this
-is \(p=2\). We can thus apply Dedekind-Kummer for all \(p\neq 2\).
+\({\Delta}(f(x)) = -4 \cdot 503\), and the only squared prime dividing
+this is \(p=2\). We can thus apply Dedekind-Kummer for all \(p\neq 2\).
 
 \begin{itemize}
 \item
@@ -7650,11 +7650,11 @@ is \(p=2\). We can thus apply Dedekind-Kummer for all \(p\neq 2\).
   ramifies since an exponent is larger than 1.
 \end{itemize}
 
-Note that \(\Disc(f(x)) = 0 \pmod 503\), so
+Note that \({\Delta}(f(x)) = 0 \pmod 503\), so
 \(f\in {\mathbb{F}}_{503}[x]\) has a repeated root in an extension. We
 can run this backward to show that \(503\) is the only odd prime that
 ramifies: Dedekind-Kummer says this can only happen if \(f\) has a
-repeated root mod \(p\). In this case, \(\Disc(f) \pmod p = 0\), so
+repeated root mod \(p\). In this case, \({\Delta}(f) \pmod p = 0\), so
 \(p\bigm|4\cdot 503\). Note that if you try to apply this theorem mod 2,
 this results in the wrong answer!
 
@@ -7680,7 +7680,7 @@ isomorphism
 Start by showing
 \(p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha] = p {\mathbb{Z}}[ \alpha ]\).
 The reverse containment is clear, so let
-\(\beta\in \p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha ]\). Then
+\(\beta\in p {\mathbb{Z}}_K \cap{\mathbb{Z}}[ \alpha ]\). Then
 \(\beta/p \in {\mathbb{Z}}_K\), so look at its image in
 \({\mathbb{Z}}_K/ {\mathbb{Z}}[ \alpha]\). The order of the image
 divides \(p\), , since
@@ -7763,7 +7763,7 @@ is prime of degree is \(f(P_i / p) = \deg p_i(x)\).
 We'll now show the \(P_i\) are distinct, and in fact comaximal in the
 sense that \(P_i + P_j = \left\langle{ 1 }\right\rangle\) for
 \(i\neq j\). We've assumed that
-\(p_i(x) \mdo p, p_j(x) \pmod p \in {\mathbb{F}}_p[x]\) are distinct
+\(p_i(x) \pmod p, p_j(x) \pmod p \in {\mathbb{F}}_p[x]\) are distinct
 monic irreducibles in the PID \({\mathbb{F}}_p[x]\), so we can find a
 linear combination equal to \(1\). So write
 \(p_i(x) X(x) + p_j(x) Y(x) = 1 + pQ(x)\) for some polynomials
@@ -7783,7 +7783,7 @@ It remains to show that
 \(\left\langle{ p }\right\rangle= \prod P_i^{e_i}\). Consider taking
 powers of \(P_i\):
 \begin{align*}
-P_i^2 = \left\langle{ p^2, p p_i( \alpha), p_i(\alpha)^2 }\right\rangle 
+P_i^2 = \left\langle{ p^2,  p_i( \alpha), p_i(\alpha)^2 }\right\rangle 
 \subseteq \left\langle{ p, p_i( \alpha) ^2 }\right\rangle  \\
 P_i^3 \subseteq P_i \left\langle{ p_i, p_i (\alpha)^2}\right\rangle \subseteq \left\langle{ p_i, p_I( \alpha)^3 }\right\rangle  
 .\end{align*}
@@ -7825,7 +7825,7 @@ which forces \(N(J) = 1\)
 
 \begin{remark}
 
-An recurring example in this class, due to Dedeking: let
+An recurring example in this class, due to Dedekind: let
 \(K = {\mathbb{Q}}( \alpha)\) where \(\alpha\) is a root of the
 irreducible polynomial \(x^3 +x^2 -2x + 8 \in {\mathbb{Q}}[x]\). We saw
 that \({\mathbb{Z}}_K \neq {\mathbb{Z}}[ \alpha]\) but their index
@@ -8205,10 +8205,11 @@ such that the \(\operatorname{Log}(\varepsilon_i)\) are
 \(\varepsilon\in {\mathbb{Z}}_K^{\times}\) be any unit, then
 \(\operatorname{Log}(\varepsilon) \in \operatorname{Log}{\mathbb{Z}}_K^{\times}\),
 so there are integers
-\({ {n}_1, {n}_2, \cdots, {n}_{g}}\in {\mathbb{Z}}\) such that {[}
-
-\operatorname{Log}(\varepsilon) = \sumn\_i
-\operatorname{Log}(\varepsilon\_i) .{]} Hence
+\({ {n}_1, {n}_2, \cdots, {n}_{g}}\in {\mathbb{Z}}\) such that
+\begin{align*}
+\operatorname{Log}(\varepsilon) = \sum n_i \operatorname{Log}(\varepsilon_i)
+.\end{align*}
+Hence
 \begin{align*}
 \operatorname{Log}\qty{ \varepsilon/ \prod_{i\leq g} \varepsilon_i^{n_i} } = \mathbf{0}
 .\end{align*}
@@ -8794,14 +8795,13 @@ The index-determinant theorem tells us that
 \(\# {\mathbb{Z}}_K/I = {\left\lvert {\det A} \right\rvert}\), and this
 is equal to \(N(I)\). Now apply \(\iota\) to both sides above to obtain
 \(n\times n\) matrix with the \(\iota(\theta_i)\) and
-\(\iota(\omega_i)\) as column vectors: {[}
-
-\hypertarget{section}{%
-\section{\texorpdfstring{{\left[ {{ { \iota \theta^t }_1, { \iota \theta^t }_2, \cdots, { \iota \theta^t }_{n}} } \right]}}{}}\label{section}}
-
+\(\iota(\omega_i)\) as column vectors:
+\begin{align*}
+{\left[ {{ { \iota \theta^t }_1, { \iota \theta^t }_2, \cdots, { \iota \theta^t }_{n}} } \right]} 
+= 
 {\left[ {{ {\iota \omega^r}_1, {\iota \omega^r}_2, \cdots, {\iota \omega^r}_{n}}} \right]}A
-.{]} Taking \({\left\lvert {\det{{-}}} \right\rvert}\) on both sides, we
-get
+.\end{align*}
+Taking \({\left\lvert {\det{{-}}} \right\rvert}\) on both sides, we get
 \begin{align*}
 \operatorname{covol}\iota(I) 
 = \operatorname{covol}\iota({\mathbb{Z}}_K) {\left\lvert {\det A} \right\rvert} 
@@ -8912,7 +8912,7 @@ What kinds of regions \(R\) correspond to
 
 It's precisely the following region:
 \begin{align*}
-\ts{ {\left[ {x} \right]}{r_1 + r_2} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}\prod_{i\leq r_1} {\left\lvert {x_i} \right\rvert} \prod_{j\leq r_2} {\left\lvert {x_{r_1 + j}} \right\rvert}^2 \leq X \} 
+\left\{{ {\left[ {x} \right]}{r_1 + r_2} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}\prod_{i\leq r_1} {\left\lvert {x_i} \right\rvert} \prod_{j\leq r_2} {\left\lvert {x_{r_1 + j}} \right\rvert}^2 \leq X }\right\} 
 .\end{align*}
 Note that this is centrally symmetric, but the convexity may be a
 problem.

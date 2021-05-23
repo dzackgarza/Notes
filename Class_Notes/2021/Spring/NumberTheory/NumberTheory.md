@@ -5749,7 +5749,7 @@ Pick $m\in \ZZ^{\geq 0}$ so that $I^m$ is principal, then $I^m R \intersect \ZZ_
 Taking \( \gamma\in IR \intersect \ZZ_K \), we'll show it must be in $I$.
 We know \( \gamma^m \in (IR)^m = I^m R \), and thus we have \( \gamma^m \in I^m R \intersect \ZZ_K = I^m \).
 Now using unique factorization and to contain is to divide, this implies that $I^m \divides \gens{ \gamma ^m }= \gens{ \gamma }^m$.
-So $I \divides \gens{ \gammma }$ and thus \( \gamma \in I \). 
+So $I \divides \gens{ \gamma }$ and thus \( \gamma \in I \). 
 :::
 
 :::{.proof title="of theorem"}
@@ -5815,7 +5815,7 @@ There are two main theorems: one describes how these prime ideals factor, and th
 Let $K$ be a number field of degree $[K: \QQ] = n$ and let $p$ be a rational prime.
 Factor 
 \[
-\gens{ p } \prod_{i=1}^g P_ji{e_i}
+\gens{ p } = \prod_{i=1}^g P_ji{e_i}
 ,\]
 where the $P_i$ are distinct primes ideals and $e_i > 0$.
 Then for each $i$ we have $N(P_i) = p^{f_i}$ for some $f_i > 0$, and 
@@ -5841,7 +5841,7 @@ So there is an induced injection $\FF_p \da \ZZ/p\ZZ \injects \ZZ_K/ P_i$, where
 Thus $\ZZ_K/P_i \in \Vect_{\FF_p}$ is an $\FF_p\dash$vector space.
 We want to show the size of the right-hand side, which is the size of $P_i$, is a power of $p$.
 But any finite-dimensional vector space over $\FF_p$ has dimension $p^\ell$ for some $\ell$.
-Let $f_i \da \fim_{\FF_p} (\ZZ_K/P_i)$, then $N(P_i) = \# \ZZ_K/P_i = p^{f_i}$.
+Let $f_i \da \dim_{\FF_p} (\ZZ_K/P_i)$, then $N(P_i) = \# \ZZ_K/P_i = p^{f_i}$.
 \
 
 Now proving that $\sum e_i f_i = n$ is an easy corollary: go back to the factorization and take norms of both sides.
@@ -5906,13 +5906,13 @@ The answer is yes, coming from the discriminant.
 
 :::{.proposition title="?"}
 Suppose $K = \QQ( \alpha)$ where \( \alpha\in \bar\ZZ \).
-If $p^2 \notdivides \Disc(\min_{\alpha} (x) )$, then $p\notdivides [\ZZ_K: \ZZ[\alpha]]$.
+If $p^2 \notdivides \discriminant(\min_{\alpha} (x) )$, then $p\notdivides [\ZZ_K: \ZZ[\alpha]]$.
 :::
 
 :::{.remark}
 A while ago we showed that 
 \[
-\Disc( \min_{ \alpha}(x)) = \Disc(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = \Disc_K \cdot [\ZZ_K: \ZZ[ \alpha] ]^2
+\discriminant( \min_{ \alpha}(x)) = \discriminant(1, \alpha, \alpha^2, \cdots , \alpha^{n-1}) = \discriminant_K \cdot [\ZZ_K: \ZZ[ \alpha] ]^2
 .\]
 Note that we're done if this is true: if $p$ divides the index, $p^2$ divides the last term, meaning $p^2$ divides the first.
 :::
@@ -5920,7 +5920,7 @@ Note that we're done if this is true: if $p$ divides the index, $p^2$ divides th
 :::{.example title="?"}
 Let $K = \QQ( \alpha)$ where \( \alpha \) is a root of the irreducible polynomial $f(x) = x^3 - x^2 - 2x + 8$.
 Recall that we used this example when looking at integral bases.
-By a computation, $\Disc(f(x)) = -4 \cdot 503$, and the only squared prime dividing this is $p=2$.
+By a computation, $\discriminant(f(x)) = -4 \cdot 503$, and the only squared prime dividing this is $p=2$.
 We can thus apply Dedekind-Kummer for all $p\neq 2$.
 
 - Mod 3, $f$ is irreducible.
@@ -5937,9 +5937,9 @@ We can thus apply Dedekind-Kummer for all $p\neq 2$.
 - Mod 503, $f(x) \equiv (x+259)(x+354)^2$.
   So \( \gens{ 503 }= P_1 P_2^2  \), and thus $503$ ramifies since an exponent is larger than 1.
 
-Note that $\Disc(f(x)) = 0 \mod 503$, so $f\in \FF_{503}[x]$ has a repeated root in an extension.
+Note that $\discriminant(f(x)) = 0 \mod 503$, so $f\in \FF_{503}[x]$ has a repeated root in an extension.
 We can run this backward to show that $503$ is the only odd prime that ramifies: Dedekind-Kummer says this can only happen if $f$ has a repeated root mod $p$.
-In this case, $\Disc(f) \mod p = 0$, so $p\divides 4\cdot 503$.
+In this case, $\discriminant(f) \mod p = 0$, so $p\divides 4\cdot 503$.
 Note that if you try to apply this theorem mod 2, this results in the wrong answer!
 :::
 
@@ -5954,7 +5954,7 @@ Then the inclusion $\iota: \ZZ[\alpha] \injects \ZZ_K$ induces an isomorphism
 
 :::{.proof title="?"}
 Start by showing $p \ZZ_K \intersect \ZZ[ \alpha] = p \ZZ[ \alpha ]$.
-The reverse containment is clear, so let \( \beta\in \p \ZZ_K \intersect \ZZ[ \alpha ] \).
+The reverse containment is clear, so let \( \beta\in p \ZZ_K \intersect \ZZ[ \alpha ] \).
 Then \( \beta/p \in \ZZ_K \), so look at its image in $\ZZ_K/ \ZZ[ \alpha]$.
 The order of the image divides $p$, , since $p (\beta/p) = \beta \in \ZZ[ \alpha]$.
 But we assumed that $p$ doesn't divide the size of this quotient, forcing the order to be 1 and thus $\beta/p\in \ZZ[ \alpha] \implies \beta \in p\ZZ[ \alpha]$.
@@ -6007,7 +6007,7 @@ where we've used that $p_i(x) \divides m(x)$ mod $p$ by assumption.
 This is a field of size $p^{\deg p_i(x)}$, which proves that $P_i$ is prime of degree is $f(P_i / p) = \deg p_i(x)$.
 
 We'll now show the $P_i$ are distinct, and in fact comaximal in the sense that $P_i + P_j = \gens{ 1 }$ for $i\neq j$.
-We've assumed that $p_i(x) \mdo p, p_j(x) \mod p \in \FF_p[x]$ are distinct monic irreducibles in the PID $\FF_p[x]$, so we can find a linear combination equal to $1$.
+We've assumed that $p_i(x) \mod p, p_j(x) \mod p \in \FF_p[x]$ are distinct monic irreducibles in the PID $\FF_p[x]$, so we can find a linear combination equal to $1$.
 So write $p_i(x) X(x) + p_j(x) Y(x) = 1 + pQ(x)$ for some polynomials $X,Y\in \FF_p[x]$ and $Q\in \ZZ[ x]$.
 Plug in \( \alpha \) and mod out by \( I \da \gens{ p, p_i( \alpha), p_j( \alpha) }  \) to get $o \equiv 1 \mod I$.
 But then $1\in I$ forces $I = \gens{ 1 }$ 
@@ -6022,7 +6022,7 @@ Thus
 It remains to show that \( \gens{ p }= \prod P_i^{e_i}  \).
 Consider taking powers of $P_i$:
 \[
-P_i^2 = \gens{ p^2, p p_i( \alpha), p_i(\alpha)^2 } 
+P_i^2 = \gens{ p^2,  p_i( \alpha), p_i(\alpha)^2 } 
 \subseteq \gens{ p, p_i( \alpha) ^2 }  \\
 P_i^3 \subseteq P_i \gens{ p_i, p_i (\alpha)^2} \subseteq \gens{ p_i, p_I( \alpha)^3 }  
 .\]
@@ -6056,7 +6056,7 @@ We also have $N( \gens{ p } ) = \# \ZZ_k / \gens{ p }= p^{[K: \QQ]}$, which forc
 :::
 
 :::{.remark}
-An recurring example in this class, due to Dedeking: let $K = \QQ( \alpha)$ where \( \alpha \) is a root of the irreducible polynomial $x^3 +x^2 -2x + 8 \in \QQ[x]$.
+An recurring example in this class, due to Dedekind: let $K = \QQ( \alpha)$ where \( \alpha \) is a root of the irreducible polynomial $x^3 +x^2 -2x + 8 \in \QQ[x]$.
 We saw that $\ZZ_K \neq \ZZ[ \alpha]$ but their index divides 2, forcing it to be exactly 2.
 So the hypothesis of the Dedkind-Kummer theorem are not satisfied, but is the conclusion still true?
 It turns out that the answer is no, and 2 splits completely as \( \gens{ 2 } = P_1 P_2 P_3  \).
@@ -6313,14 +6313,14 @@ Note that this is the same theorem from before, just with $d$ replaced by $g$.
 Using that $g$ is by definition the rank of the lattice $\Log\ZZ$, choose $\elts{\eps}{g}\in \ZZ_K\units$ such that the $\Log(\eps_i)$ are $\RR\dash$linearly independent and their $\ZZ\dash$span is the lattice.
 Let $\eps\in \ZZ_K\units$ be any unit, then $\Log(\eps) \in \Log\ZZ_K\units$, so there are integers $\elts{n}{g}\in \ZZ$ such that 
 \[
-
 \Log(\eps) = \sum n_i \Log(\eps_i)
 .\]
 Hence
 \[
 \Log\qty{ \eps / \prod_{i\leq g} \eps_i^{n_i} } = \vector 0
 .\]
-So it's in the kernel and equal to some $\zeta\in \mu_K$, so we can write $\eps = \zeta \prod_{i\leq g} \eps_i^{n_i}$.
+So it's in the kernel and equal to some $\zeta\in \mu_K$, so we can write 
+$\eps = \zeta \prod_{i\leq g} \eps_i^{n_i}$.
 This representation of $\eps$ is unique, in the sense that $\zeta$ and the $n_i$ are uniquely determined.
 Why?
 For any other representation, applying $\Log$ would kill the $\zeta$ part and write $\Log(\eps) = \sum n_{j} \eps_j$ in the basis $\eps_j$.
@@ -6719,7 +6719,6 @@ There is some $A\in \Mat(n\times n; \ZZ)$ such that
 The index-determinant theorem tells us that $\# \ZZ_K/I = \abs{\det A}$, and this is equal to $N(I)$.
 Now apply $\iota$ to both sides above to obtain $n\times n$ matrix with the $\iota(\theta_i)$ and $\iota(\omega_i)$ as column vectors:
 \[
-
 \tv{\elts{ \iota \theta^t }{n} } 
 = 
 \tv{\elts{\iota \omega^r}{n}}A
@@ -6801,7 +6800,7 @@ What kinds of regions $R$ correspond to $\abs{N( \alpha)} \leq X$ for an arbitra
 :::{.answer}
 It's precisely the following region:
 \[
-\ts{ \tv{x}{r_1 + r_2} \in \RR^{r_1} \oplus \CC^{r_2} \st \prod_{i\leq r_1} \abs{x_i} \prod_{j\leq r_2} \abs{x_{r_1 + j}}^2 \leq X \} 
+\ts{ \tv{x}{r_1 + r_2} \in \RR^{r_1} \oplus \CC^{r_2} \st \prod_{i\leq r_1} \abs{x_i} \prod_{j\leq r_2} \abs{x_{r_1 + j}}^2 \leq X } 
 .\]
 Note that this is centrally symmetric, but the convexity may be a problem.
 :::

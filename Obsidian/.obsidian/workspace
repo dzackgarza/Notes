@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0bbedd8fb964b761",
+        "id": "a7eecb88c72e4c10",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/homotopy type.md",
-            "mode": "source"
+            "file": "zettelkasten/Hensel's Lemma.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/homotopy type.md",
+                "file": "zettelkasten/Hensel's Lemma.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/homotopy type.md"
+                "file": "zettelkasten/Hensel's Lemma.md"
               }
             }
           },
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5121879577637
+    "width": 263,
+    "collapsed": true
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/homotopy type.md",
+                "file": "zettelkasten/Hensel's Lemma.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/homotopy type.md",
+                "file": "zettelkasten/Hensel's Lemma.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -232,24 +233,24 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 621
+    "width": 270,
+    "collapsed": true
   },
-  "active": "0bbedd8fb964b761",
+  "active": "a7eecb88c72e4c10",
   "lastOpenFiles": [
-    "zettelkasten/homotopy type.md",
-    "zettelkasten/Kan complex.md",
-    "zettelkasten/infinity categories.md",
-    "zettelkasten/Stable Homotopy Seminar.md",
+    "zettelkasten/Hensel's Lemma.md",
+    "zettelkasten/Fibonacci recurrence derivation.md",
+    "zettelkasten/figures/Hopf Fibration 1.png",
+    "zettelkasten/Learning.md",
+    "00_Projects Index.md",
+    "zettelkasten/Paul Pollack Videos.md",
+    "zettelkasten/Stories.md",
+    "zettelkasten/representation theory.md",
     "zettelkasten/Untitled 10.md",
-    "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
-    "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
-    "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md",
-    "zettelkasten/Workshops/Real Analysis/Untitled.md",
-    "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md"
+    "zettelkasten/homotopy type.md"
   ]
 }

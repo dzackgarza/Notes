@@ -67,6 +67,10 @@ Resources
 ## Algebraic Number Theory
 - [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
 
+## Modular Forms
+
+- [AWS 2021](https://www.math.arizona.edu/~swc/)
+
 
 # Representation Theory
 
