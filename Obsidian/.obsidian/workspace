@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "c271c257b36d369d",
+        "id": "0bbedd8fb964b761",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Untitled 10.md",
+            "file": "zettelkasten/homotopy type.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Untitled 10.md",
+                "file": "zettelkasten/homotopy type.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Untitled 10.md"
+                "file": "zettelkasten/homotopy type.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Untitled 10.md",
+                "file": "zettelkasten/homotopy type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Untitled 10.md",
+                "file": "zettelkasten/homotopy type.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -233,24 +233,23 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 621,
-    "collapsed": true
+    "width": 621
   },
-  "active": "c271c257b36d369d",
+  "active": "0bbedd8fb964b761",
   "lastOpenFiles": [
+    "zettelkasten/homotopy type.md",
+    "zettelkasten/Kan complex.md",
+    "zettelkasten/infinity categories.md",
+    "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/Untitled 10.md",
     "zettelkasten/Workshops/Topology/Topology Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md",
     "zettelkasten/Workshops/Real Analysis/Untitled.md",
-    "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
-    "zettelkasten/Workshops/Workshop Index.md",
-    "zettelkasten/DG category.md",
-    "zettelkasten/modern category theory.md",
-    "zettelkasten/linear category.md"
+    "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md"
   ]
 }

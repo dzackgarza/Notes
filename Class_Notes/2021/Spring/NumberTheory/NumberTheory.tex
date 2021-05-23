@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-05-22 }
+{\tiny \textit{Last updated:} 2021-05-23 }
 \end{flushleft}
 
 
@@ -8767,9 +8767,780 @@ is a full rank lattice in \({\mathbb{R}}^n\) and
 Recall that we're considering the Minkowski embedding
 \(\iota: K\to{\mathbb{R}}^n\). We saw that
 \(\iota({\mathbb{Z}}_K)\subseteq {\mathbb{R}}^n\) is a full rank lattice
-whose covolume is \(?\)?
+whose covolume is the following:
+\begin{align*}
+\operatorname{covol}\iota {\mathbb{Z}}_K = 2^{r_2} \sqrt{ {\left\lvert { {\Delta}_K} \right\rvert}}
+.\end{align*}
+We wanted to make this work for arbitrary ideals
+\(I{~\trianglelefteq~}{\mathbb{Z}}_K\), and the proposition was that
+\begin{align*}
+\operatorname{covol}\iota I = 2^{r_2} \sqrt{ {\left\lvert { {\Delta}_K} \right\rvert}} N(I)
+.\end{align*}
 
 \end{remark}
+
+\begin{proof}[?]
+
+We know \(I\) is free abelian of rank \(n\), so choose a
+\({\mathbb{Z}}{\hbox{-}}\)basis
+\({ {\omega}_1, {\omega}_2, \cdots, {\omega}_{n}}\) for
+\({\mathbb{Z}}_K\) and
+\({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{n}}\) for \(I\). There is
+some \(A\in \operatorname{Mat}(n\times n; {\mathbb{Z}})\) such that
+\begin{align*}
+{\left[ {{ {\theta}_1, {\theta}_2, \cdots, {\theta}_{n}}} \right]} = {\left[ {{ {\omega}_1, {\omega}_2, \cdots, {\omega}_{n}}} \right]}A
+.\end{align*}
+The index-determinant theorem tells us that
+\(\# {\mathbb{Z}}_K/I = {\left\lvert {\det A} \right\rvert}\), and this
+is equal to \(N(I)\). Now apply \(\iota\) to both sides above to obtain
+\(n\times n\) matrix with the \(\iota(\theta_i)\) and
+\(\iota(\omega_i)\) as column vectors: {[}
+
+\hypertarget{section}{%
+\section{\texorpdfstring{{\left[ {{ { \iota \theta^t }_1, { \iota \theta^t }_2, \cdots, { \iota \theta^t }_{n}} } \right]}}{}}\label{section}}
+
+{\left[ {{ {\iota \omega^r}_1, {\iota \omega^r}_2, \cdots, {\iota \omega^r}_{n}}} \right]}A
+.{]} Taking \({\left\lvert {\det{{-}}} \right\rvert}\) on both sides, we
+get
+\begin{align*}
+\operatorname{covol}\iota(I) 
+= \operatorname{covol}\iota({\mathbb{Z}}_K) {\left\lvert {\det A} \right\rvert} 
+= \operatorname{covol}\iota({\mathbb{Z}}_K) N(I)
+.\end{align*}
+
+\end{proof}
+
+\hypertarget{minkowskis-class-group-bound}{%
+\subsection{Minkowski's Class Group
+Bound}\label{minkowskis-class-group-bound}}
+
+\begin{remark}
+
+We've proved that \(\# { \operatorname{Cl}} ({\mathbb{Z}}_K) < \infty\)
+for a general number field, which is in the book and uses Dirichlet's
+approximation theorem and goes similarly to how it did for quadratic
+fields. That proof isn't so good if you want to concretely compute the
+class group: what you'd like would be an upper bound on the smallest
+ideal in any ideal class. This would allow computing all ideals up to
+that bound and discerning the structure based on these finitely many
+ideals.
+
+\end{remark}
+
+\begin{proposition}[Minkowski's Bound]
+
+Every ideal class contains a representative \(I\) with
+\(N(I) \leq M_K\), where
+\begin{align*}
+M_K \coloneqq\qty{4\over \pi}^{r_2} {n! \over n^n} \sqrt{{\left\lvert {{\Delta}_K} \right\rvert}}
+.\end{align*}
+
+\end{proposition}
+
+\begin{remark}
+
+The precise form of this bound isn't important yet. We can prove using
+this bound that some specific number fields have class number 1. How do
+we prove this?
+
+\end{remark}
+
+\begin{lemma}[?]
+
+Let \(B>0\), then the following are equivalent:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Every ideal class contains a representative of norm at most \(B\),
+\item
+  Every nonzero ideal \(I{~\trianglelefteq~}{\mathbb{Z}}_K\) contains a
+  nonzero \(\alpha\) with
+  \({\left\lvert {N \alpha} \right\rvert} \leq N N(I)\).
+\end{enumerate}
+
+\end{lemma}
+
+\begin{proof}[?]
+
+\(2\implies 1\): done for quadratic fields.
+
+\(1\implies 2\): Start with \(I{~\trianglelefteq~}{\mathbb{Z}}_K\)
+nonzero. Pick \(J \in [I]^{-1}\) with \(N(J) \leq B\) using (1). Then
+\(IJ\) is principal, so write
+\(IJ = \left\langle{ \alpha }\right\rangle\). This shows that
+\(I \bigm|\left\langle{ \alpha }\right\rangle\), so \(\alpha\in I\)
+since to divide is to contain. Moreover
+\begin{align*}
+{\left\lvert {N ( \alpha)} \right\rvert} 
+&= N( \left\langle{ \alpha }\right\rangle ) \\
+&= N(I) N(J) \\
+&\leq B N(I)
+.\end{align*}
+
+\end{proof}
+
+\begin{remark}
+
+So we've reduced the problem, and it suffices to prove (2) in the above
+lemma taking \(B = M_K\) from above. Idea: we'll introduce a region
+\(R \subseteq {\mathbb{R}}^n\) which is centrally symmetric, convex, and
+\(\operatorname{vol}(R) > 2^n \operatorname{covol}\iota(I)\) big enough.
+Then we'll be guaranteed an \(\alpha \in I\) nonzero with
+\(\iota( \alpha)\in R\), coming from Minkowski's theorem.
+
+What does this tell us? The components of \(\iota( \alpha)\) are the
+images of \(\alpha\) under embeddings \(\sigma_i\). If we know these
+images, we can recover the norm as the product, so one ought to be to
+rig the region \(R\) in order to control the size of \(\alpha\). So
+we'll choose \(R\) such that
+\begin{align*}
+{\left\lvert { N( \alpha)} \right\rvert} \leq M_K N(I)
+.\end{align*}
+
+\end{remark}
+
+\begin{question}
+
+What kinds of regions \(R\) correspond to
+\({\left\lvert {N( \alpha)} \right\rvert} \leq X\) for an arbitrary
+\(X\)?
+
+\end{question}
+
+\begin{answer}
+
+It's precisely the following region:
+\begin{align*}
+\ts{ {\left[ {x} \right]}{r_1 + r_2} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}\prod_{i\leq r_1} {\left\lvert {x_i} \right\rvert} \prod_{j\leq r_2} {\left\lvert {x_{r_1 + j}} \right\rvert}^2 \leq X \} 
+.\end{align*}
+Note that this is centrally symmetric, but the convexity may be a
+problem.
+
+\end{answer}
+
+\begin{example}[?]
+
+Let \(K\) be a real quadratic field, so \(r_1 = 2, r_2 = 0\). Then the
+region above is
+\(R_0 = \left\{{ (x_1, x_2) {~\mathrel{\Big|}~}{\left\lvert {x_1 x_2} \right\rvert} \leq X }\right\}\),
+which looks like the following:
+
+\begin{figure}
+\centering
+\includegraphics{figures/image_2021-05-22-17-53-50.png}
+\caption{image\_2021-05-22-17-53-50}
+\end{figure}
+
+The solution: choose a convex region inside \(R_0\) and apply
+Minkowski's theorem, noting that this maintains the bound. For example,
+one can take
+\begin{align*}
+R = \left\{{ (x_1, x_2) {~\mathrel{\Big|}~}{\left\lvert {x} \right\rvert}_1 + {\left\lvert {x} \right\rvert}_2 \leq 2x^{1/2} }\right\} 
+,\end{align*}
+which is a diamond lying inside \(R_0\) due to the AM-GM inequality.
+
+\end{example}
+
+\begin{proposition}[AM-GM Inequality]
+
+Let \({ {t}_1, {t}_2, \cdots, {t}_{m}} \geq 0\), then
+\begin{align*}
+{1\over m} \sum_{i\leq m} t_i \geq \qty{ \prod_{i\leq m} t_i }^{1/m}
+.\end{align*}
+
+\end{proposition}
+
+\begin{remark}
+
+So we'll take the region
+\begin{align*}
+R \coloneqq\left\{{ {\left[ {{ {x}_1, {x}_2, \cdots, {x}_{r_1 + r_2}}} \right]} \in {\mathbb{R}}^{r_1} \oplus {\mathbb{C}}^{r_2} {~\mathrel{\Big|}~}
+{1\over n} \qty{ \sum_{i\leq r} {\left\lvert {x_i} \right\rvert} + 2\sum_{r_1 + 1 \leq j \leq r_1 + r_2 } {\left\lvert {x_j} \right\rvert} } \leq X^{1/n}
+}\right\} 
+.\end{align*}
+Then by AM-GM, \(R \subseteq R_0\) and \(n= r_1 + r_2\). This is still
+centrally symmetric, and now convex using the triangle inequality. When
+is \(\operatorname{vol}R > 2^n \operatorname{covol}\iota(I)\)? We'll
+need to compute the volume of \(R\), which is an involved exercises in
+multivariable calculus. This is done in the book, and it turns out that
+\begin{align*}
+\operatorname{vol}(R) = 2^{r_1} \qty{\pi \over 2}^{r_2} {n^n \over n!} X
+.\end{align*}
+Recall that
+\begin{align*}
+2^n \operatorname{covol}\iota(I) = 2^n 2^{-r_2} \sqrt{{\left\lvert {{\Delta}_K} \right\rvert}}
+,\end{align*}
+and solving this linear equality for \(X\) yields \(X > M_K N(I)\) as
+defined before.
+
+Now apply Minkowski's theorem: for any \(X > M_K N(I)\) there is a
+nonzero \(\alpha\in I\), there is a nonzero \(\alpha\in I\) with
+\(\iota( \alpha)\in R\), and hence
+\({\left\lvert {N( \alpha)} \right\rvert} \leq X\). Note that the
+inequalities don't quite match up as-is, since we can't take
+\(X = M_K N(I)\). Does this imply that we can find an \(\alpha\) with
+\({\left\lvert {N( \alpha)} \right\rvert} \leq X\)? The answer is yes,
+because we can choose \(X\) with
+\({\left\lfloor X \right\rfloor} = {\left\lfloor M_K M(I) \right\rfloor}\).
+Then
+\({\left\lvert {N( \alpha)} \right\rvert} \leq X \implies {\left\lvert {N( \alpha)} \right\rvert} \leq {\left\lfloor X \right\rfloor} = {\left\lfloor M_K N(I) \right\rfloor}\),
+since the left-hand side is an integer.
+
+\end{remark}
+
+\hypertarget{example-showing-number-fields-are-pids-using-dedekind-kummer-and-the-minkowski-bound}{%
+\subsection{Example: Showing Number Fields are PIDs using
+Dedekind-Kummer and the Minkowski
+Bound}\label{example-showing-number-fields-are-pids-using-dedekind-kummer-and-the-minkowski-bound}}
+
+\begin{example}[?]
+
+Let \(K = {\mathbb{Q}}( \sqrt[3]{3})\). Then \(n=3\), and
+\(r_1 = 1, r_2 = 1\) since embeddings permute the roots of \(x^3-3\),
+which has exactly one real root. We need the discriminant, so we need an
+integral basis, in which case it helps to know \({\mathbb{Z}}_K\). By a
+homework problem, if \(K = {\mathbb{Q}}(\sqrt[3]{d})\) with \(d\)
+squarefree and \(d\not\equiv \pm 1\pmod 9\), then \({\mathbb{Z}}_K\) is
+what you guess it'd be! So here
+\({\mathbb{Z}}_K = {\mathbb{Z}}[\sqrt[3]{3}]\), and thus
+\begin{align*}
+{\Delta}_K = \Delta(1, 3^{1/3}, 3^{2/3})
+= {\Delta}(x^2 - 3) = -3^5
+.\end{align*}
+
+Thus
+\begin{align*}
+M_K = \qty{4\over \pi} {3! \over 3^3} \sqrt{3^5} \approx 4.42
+,\end{align*}
+and thus we know every ideal class contains a representative of norm at
+most 4, using that \(N(I)\) is an integer. Any such \(I\) is a product
+of ideals of norms \(2,3,4\). Prime ideals of norm 2 or 4 lie above the
+prime 2, and of norm 3 lie above 3. If we can show that every prime
+ideal with \(N(I) = 2,3,4\) is principal, then \(I\) will be a product
+of principal ideals and thus principal. Then since every class contains
+such an \(I\), \({ \operatorname{Cl}} ({\mathbb{Z}}_K)\) is trivial. We
+look at all of the primes above 2 and 3 using Dedekind-Kummer, which
+says the factorization of \(\left\langle{ p }\right\rangle\) mirrors the
+factorization of \(x^2 - 3 \pmod p\).
+
+Note that if \({\mathbb{Z}}(\sqrt[3]{3}) \neq {\mathbb{Z}}_K\), there'd
+be some exceptional primes \(p\) to worry about, but since these are
+equal here this is literally true for all \(p\).
+
+So we factor polynomials. First mod 2:
+\begin{align*}
+x^2 - 3 = x^3 - 1 = (x-1) (x^2 + x + 1)
+,\end{align*}
+
+where the second term is an irreducible quadratic with no roots in
+\({\mathbb{F}}_2\). This yields
+\begin{align*}
+\left\langle{ 2 }\right\rangle= \left\langle{ 2, \sqrt[3]{3} - 1 }\right\rangle \left\langle{ 2, \qty{\sqrt[3]{3} }^2 + \sqrt[3]{3} + 1 }\right\rangle   
+.\end{align*}
+Next mod 2:
+\begin{align*}
+x^3 -3 = x^3
+,\end{align*}
+which yields
+\begin{align*}
+\left\langle{ 3 }\right\rangle= \left\langle{ 3, \sqrt[3]{3} }\right\rangle^3  
+.\end{align*}
+
+Although we have explicit factorizations, but it may not obvious whether
+or not they're principal. It's easy to see that
+\(\left\langle{ 3, 3^{1/3} }\right\rangle\) is principal since
+\(3^{1/3} \bigm|3\) and the first generator is redundant For
+\(\left\langle{2}\right\rangle\), it's less clear, but
+\begin{align*}
+(3^{1/3} - 1) (3^{2/3} + 3^{1/3} + 1) = 2
+,\end{align*}
+and so the 2s are redundant generators in both terms. So every ideal
+above 2 and 3 is principal, so \(I\) is principal. Every ideal class
+contains such an \(I\), so \({ \operatorname{Cl}} ({\mathbb{Z}}_K) = 0\)
+and \({\mathbb{Z}}_K\) is a PID.
+
+\end{example}
+
+\begin{remark}
+
+Asking whether or not this ring is a PID is an undergraduate-level
+question, but it's not clear how one would determine this without the
+theory developed in this class.
+
+\end{remark}
+
+\begin{example}[?]
+
+Let \(K = {\mathbb{Q}}(\theta)\) where \(\theta\) is a root of
+\(f(x) = x^5-x^3 + 1\). This is irreducible over \({\mathbb{Q}}\) and
+has one real root. Then \(n=5, r_1 = 1, r_2 = 2\), but we need the
+discriminant to apply the Minkowski bound. If we could prove
+\({\mathbb{Z}}_K = {\mathbb{Z}}(\theta)\), \({\Delta}_K = {\Delta}(f)\).
+If it were squarefree, it'd correspond to an integral basis, so we
+compute
+\begin{align*}
+{\Delta}(f) = {\Delta}(1, \theta, \theta^2, \theta^3, \theta^4) =3017
+,\end{align*}
+using determinant formulas in the book. This is squarefree, so the power
+basis is an integral basis, so \({\mathbb{Z}}_K = {\mathbb{Z}}[\theta]\)
+and \({\Delta}_K = 3017\). Then
+\begin{align*}
+M_k = \qty{4\over \pi}^2 {5! \over 5^5} \sqrt{3017} \approx 3.41
+.\end{align*}
+So every ideal class is represented by an ideal of norm at most \(3\).
+
+\begin{itemize}
+\tightlist
+\item
+  Norm 1: Unit ideal and thus principal,
+\item
+  Norm 2: Primes above 2
+\item
+  Norm 3: Primes above 3
+\end{itemize}
+
+We'll apply Dedekind-Kummer. First mod 2: \(f(x)\) is irreducible mod 2,
+so \(\left\langle{2}\right\rangle\) is inert and prime. So there are no
+ideals of norm 2, since it would have to factor as a product of primes
+above 2, but the only possible factor is 2 which has norm \(2^5 =32\).
+
+Mod 3: \(f\) is no longer irreducible, but factors as \(f=pq\) with
+\(\deg p = 2,\deg q = 3\). So there are no ideals of norm 3, since all
+prime ideals above 3 would have to have norms of \(3^2\) corresponding
+to \(p\) or \(3^3\) corresponding to \(q\). Thus
+\({ \operatorname{Cl}} ({\mathbb{Z}}_K) = 0\), since every \(I\) is
+represented by an ideal of norm 1 and hence is principal.
+
+\end{example}
+
+\begin{remark}
+
+Next up we'll talk about a lower bound for
+\({\left\lvert {{\Delta}_K} \right\rvert}\) Obviously \(M_K \geq 1\),
+since the theorem states that every ideal class has a representative of
+norm at most \(M_K\), and \(M_K< 1\) wouldn't make sense. Using the
+formula, rearranging yields a bound
+\begin{align*}
+{\left\lvert {{\Delta}_K} \right\rvert} \geq \qty{n^n \over n!}^2 \qty{\pi \over 4}^{2r_2}
+.\end{align*}
+
+\end{remark}
+
+\hypertarget{saturday-may-22}{%
+\section{Saturday, May 22}\label{saturday-may-22}}
+
+\hypertarget{ch.-21-consequences-of-minkowskis-bound-saturday-may-22}{%
+\section{Ch. 21: Consequences of Minkowski's Bound (Saturday, May
+22)}\label{ch.-21-consequences-of-minkowskis-bound-saturday-may-22}}
+
+\begin{remark}
+
+We were discussing a lower bound on
+\({\left\lvert {{\Delta}_K} \right\rvert}\). We have Minkowski's class
+number bound: every ideal class has a representative of norm at most
+\(M_K\), where
+\begin{align*}
+M_K \coloneqq\qty{4\over \pi}^{r_2} \qty{n! \over n^n}\sqrt{{\left\lvert {{\Delta}_K} \right\rvert}}
+.\end{align*}
+A consequence of the theorem is \(M_K \geq 1\), and rearranging yields a
+bound
+\begin{align*}
+{\left\lvert {{\Delta}_K} \right\rvert} \geq \qty{n^n \over n!}^2 \qty{\pi/4}^{2r)2}
+.\end{align*}
+What is this bound really telling us? Let's bound the right-hand side
+from below. Note that \(\pi/4<1\), and since this is raised to a power,
+this might make things smaller. The worst case, i.e.~the smallest it
+could be, is when \(2r_2\) is as large as possible, so using that
+\(r_1 + r_2 = n\) we have
+\begin{align*}
+{\left\lvert {{\Delta}_K} \right\rvert} \geq \qty{n^n\over n!}^2 \qty{\pi/4}^n \coloneqq B_n
+.\end{align*}
+How does \(B_n\) grow? We could use Stirling's formula, but we'll take a
+crude bound by looking at rations:
+\begin{align*}
+{B_{n+1} \over B_n} 
+&= (1 + {1\over n})^{2n} (\pi/4)\\
+&= \qty{ 1 + {2n \choose 1} {1\over n} + \cdots }(\pi/4) \\
+&\geq 3\pi/4
+.\end{align*}
+Noting that \(B_2 = \pi^2/4\), so by induction
+\begin{align*}
+B_n \geq (3\pi/4)^{n-2} (\pi^2/4)
+.\end{align*}
+
+\end{remark}
+
+\begin{remark}
+
+Some consequences:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \({\left\lvert {{\Delta}_K} \right\rvert} > 1\) for all number fields
+  \(K\neq {\mathbb{Q}}\).
+\item
+  \({\left\lvert {{\Delta}_K} \right\rvert}\to\infty\) as
+  \([K:{\mathbb{Q}}]\to\infty\).
+\end{enumerate}
+
+The following says why (a) is important:
+
+\end{remark}
+
+\begin{theorem}[Dedekind]
+
+\(p\) ramifies in \({\mathbb{Z}}_K \iff p \bigm|{\Delta}_K\).
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Omitted, see book.
+
+\end{proof}
+
+\begin{remark}
+
+So by (a), every number field \(K\geq {\mathbb{Q}}\) there is at least
+one ramified prime \(p\).
+
+\end{remark}
+
+\begin{remark}
+
+Note that if \({\left\lvert {{\Delta}_K} \right\rvert} = 1\), then
+\(K={\mathbb{Q}}\), i.e.~there is only one such number field. What about
+for any fixed number \(n\)? The next theorem says that there are only
+finitely many number fields occuring below a prescribed bound:
+
+\end{remark}
+
+\begin{theorem}[Hermite's theorem]
+
+For every \(X>0\), there are finitely many number fields \(K\) with
+\({\left\lvert {{\Delta}_K} \right\rvert} \leq X\).
+
+\end{theorem}
+
+\begin{remark}
+
+Since \({\left\lvert {{\Delta}_K} \right\rvert}\to\infty\) as
+\([K:{\mathbb{Q}}]\to\infty\), it suffices to prove this theorem with a
+fixed \(n\coloneqq[K: {\mathbb{Q}}]\). We'll make a simplifying
+assumption that \(r_1 = n\) -- this doesn't simplify the proof so much,
+but rather simplifies the notation. The full proof in the book is not so
+different.
+
+\end{remark}
+
+\begin{remark}
+
+Define a region
+\begin{align*}
+R \coloneqq\left\{{{\left[ {{ {x}_1, {x}_2, \cdots, {x}_{n}}} \right]} \in {\mathbb{R}}^n {~\mathrel{\Big|}~}{\left\lvert {x_{i\leq n-1}} \right\rvert} \leq {1 \over 2},\,\, {\left\lvert {x_n} \right\rvert} \leq T }\right\} \subseteq {\mathbb{R}}^n
+,\end{align*}
+where we'll specify \(T\) in a moment.
+
+Note that
+
+\begin{itemize}
+\tightlist
+\item
+  \(R\) is centrally symmetric
+\item
+  \(R\) is convex, by the triangle inequality,
+\item
+  The volume is easily computable:
+  \(\operatorname{vol}R = 1\cdot 1\cdot \ldots \cdot 1 \cdot 2T = 2T\).
+\end{itemize}
+
+Choose \(T = 2^n \sqrt{X}\). Suppose \(K\) is totally real with
+\({\left\lvert { {\Delta}_K } \right\rvert} \leq X\). Recall that
+\begin{align*}
+\operatorname{covol}\iota {\mathbb{Z}}_K = 2^{r_2} \sqrt{{\left\lvert {{\Delta}_K} \right\rvert}} 
+\leq \sqrt{X}
+.\end{align*}
+
+Then
+\begin{align*}
+\operatorname{vol}R = 2^{n+1 } \sqrt{X} > 2^n \operatorname{covol}\iota {\mathbb{Z}}_K
+,\end{align*}
+so Minkowski's theorem can be applied: there is a nonzero
+\(\alpha\in {\mathbb{Z}}_K\) with \(\iota( \alpha) \in R\). Then
+\({\left\lvert {\sigma_i( \alpha)} \right\rvert} \leq 1/2\) for
+\(i\leq n-1\) and
+\({\left\lvert { \sigma_n ( \alpha)} \right\rvert} \leq T\). The claim
+is that there are only finitely many such \(\alpha\), since it was a
+root of a polynomial in a finite set \(P_{n, T}\). The claim is now that
+\(K = {\mathbb{Q}}( \alpha)\), so this \(\alpha\) uniquely determines
+\(K\). Since there were finitely many \(\alpha\), there can only be
+finitely many such \(K\).
+
+The claim is that the size of \(\sigma_n( \alpha)\) has to be big, say
+at least 1. We have control over the product, since
+\begin{align*}
+1\leq {\left\lvert {N \alpha} \right\rvert} 
+= \prod {\left\lvert { \sigma_i( \alpha)} \right\rvert} 
+\leq {1\over 2^{n-1}} {\left\lvert { \sigma_n( \alpha)} \right\rvert}
+,\end{align*}
+since the first \(n-1\) terms contribute at most \(1/2\) each. So
+\({\left\lvert {\sigma_n( \alpha)} \right\rvert} \geq 2^{n-1} \geq 1\).
+Suppose now that \({\mathbb{Q}}(\alpha) < K\) is a proper subfield, so
+\([K : {\mathbb{Q}}( \alpha)] = d > 1\). Then every embedding
+\({\mathbb{Q}}(\alpha) \hookrightarrow{\mathbb{C}}\) extends to \(d\)
+embeddings \(K\hookrightarrow{\mathbb{C}}\), but this means that for any
+element \(x \in {\mathbb{Q}}(\alpha)\), the images
+\(\sigma_1(x),\cdots, \sigma_n(x)\) would have the same element repeated
+\(d\) times. But we know that \(\sigma_n( \alpha)\) is different from
+all of the other \(\sigma_i( \alpha)\), so this is a contradiction.
+
+\end{remark}
+
+\begin{remark}
+
+Idea of proof: making sure some image of \(\alpha\) under one embedding
+is different than all of the other images.
+
+\end{remark}
+
+\begin{remark}
+
+Some remarks on modern research! Let \(N_n(X)\) be the set of number
+fields of degree \(n\) where
+\({\left\lvert {{\Delta}_K} \right\rvert} \leq X\).
+
+\end{remark}
+
+\begin{conjecture}
+
+For each fixed \(n\),
+\begin{align*}
+\lim_{X\to \infty} {N_n(X) \over X} = \delta_n > 0
+,\end{align*}
+where \(\delta_n\) is some particular constant.
+
+Some known results:
+
+\begin{itemize}
+\tightlist
+\item
+  \(n=2\): known to Gauss, since this is more or less equivalent to
+  counting squarefree numbers.
+\item
+  \(n=3\): much harder, Davenport-Heilbronn.
+\item
+  \(n=4, 5\): Bhargava, part of what resulted in his 2014 Fields medal.
+\end{itemize}
+
+\end{conjecture}
+
+\begin{remark}
+
+One could restrict this problem, e.g.~by prescribing a particular Galois
+group. See Mahler's conjecture.
+
+\end{remark}
+
+\hypertarget{chapter-xyz-relative-extensions-galois-theory-prime-splitting}{%
+\section{Chapter XYZ: Relative Extensions, Galois Theory, Prime
+Splitting}\label{chapter-xyz-relative-extensions-galois-theory-prime-splitting}}
+
+\begin{remark}
+
+Up until now: we've compared extensions over \({\mathbb{Q}}\):
+
+\begin{center}
+\begin{tikzcd}
+    K && {{\mathbb{Z}}_K} \\
+    \\
+    {\mathbb{Q}}&& {\mathbb{Z}}
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNCxbMCwwLCJLIl0sWzAsMiwiXFxRUSJdLFsyLDAsIlxcWlpfSyJdLFsyLDIsIlxcWloiXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==}{Link
+to Diagram}
+\end{quote}
+
+We'll next talk about extensions between number fields:
+
+\begin{center}
+\begin{tikzcd}
+    L && {{\mathbb{Z}}_L} \\
+    \\
+    K && {{\mathbb{Z}}_K}
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNCxbMCwwLCJMIl0sWzAsMiwiSyJdLFsyLDAsIlxcWlpfTCJdLFsyLDIsIlxcWlpfSyJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+We can ask the same sorts of questions about prime ideals factoring.
+Note that if \(I = \prod P_i^{e_i}\) with each
+\(P_i \in \operatorname{Spec}{\mathbb{Z}}_K\) , then extending to
+\({\mathbb{Z}}_L\) yields
+\begin{align*}
+I{\mathbb{Z}}_L = \prod (P_i {\mathbb{Z}}_L)^{e_i}
+.\end{align*}
+So we want to understand the following: given a prime ideal \(P\) of
+\({\mathbb{Z}}_K\), how does \(P{\mathbb{Z}}_L\) factor?
+
+\end{remark}
+
+\begin{definition}[lies above]
+
+Let \(K\leq L\) be number fields, and suppose
+\(Q\in \operatorname{Spec}{\mathbb{Z}}_L, P\in \operatorname{Spec}{\mathbb{Z}}_K\).
+Then we say \(Q\) \textbf{lies above} \(P\) if \(Q \supseteq P\), or
+equivalently \(Q \bigm|P{\mathbb{Z}}_L\).
+
+\end{definition}
+
+\begin{proposition}[?]
+
+Every nonzero \(Q\in \operatorname{Spec}{\mathbb{Z}}_L\) lies above a
+unique nonzero \(P \in \operatorname{Spec}{\mathbb{Z}}_K\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Consider
+\(P \coloneqq Q \cap{\mathbb{Z}}_K \in \operatorname{Spec}{\mathbb{Z}}_K\).
+This is nonzero because taking the norm of any element of \(Q\) yields a
+nonzero integer still in the ideal. Then \(Q\) lies above \(P\) by
+definition. Why is this unique? Suppose \(Q\) lies about \(P'\), we'll
+show \(P = P'\). Since \(Q\) lies above \(P'\), \(Q\supseteq P'\). But
+\(P'{~\trianglelefteq~}{\mathbb{Z}}_K\), so
+\(Q\cap{\mathbb{Z}}_K \supseteq P'\), so \(P \supseteq P'\). We know
+\(P'\) is maximal, since \({\mathbb{Z}}_K/P'\) is a finite domain and
+thus a field, so \(P = P'\).
+
+\end{proof}
+
+\begin{definition}[Ramification and residue degrees]
+
+Let \(P\in \operatorname{Spec}{\mathbb{Z}}_K\), then write
+\begin{align*}
+P{\mathbb{Z}}_L = \prod Q_i^{e_i}
+\end{align*}
+with \(Q_i \in \operatorname{Spec}{\mathbb{Z}}_L\). Then the \(Q_i\) are
+the prime ideals of \({\mathbb{Z}}_L\) above \(P\). The exponent \(e_i\)
+is called the \textbf{ramification degree}, usually denoted
+\(e(Q_i/P)\). We have the following picture:
+
+\begin{center}
+\begin{tikzcd}
+    L && {{\mathbb{Z}}_L} && Q \\
+    \\
+    K && {{\mathbb{Z}}_K} && P
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-3]
+    \arrow[no head, from=1-5, to=3-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiSyJdLFsyLDAsIlxcWlpfTCJdLFsyLDIsIlxcWlpfSyJdLFs0LDIsIlAiXSxbNCwwLCJRIl0sWzAsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDMsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw0LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+The inclusion \({\mathbb{Z}}_K \hookrightarrow{\mathbb{Z}}_L\) induces a
+ring morphism \({\mathbb{Z}}_K \to {\mathbb{Z}}_L/Q\), where the kernel
+is \({\mathbb{Z}}_K \cap Q = P\). Thus there is an injection
+\({\mathbb{Z}}_K/P \hookrightarrow{\mathbb{Z}}_L/Q\), which is an
+inclusion of finite fields. So we'll define
+\begin{align*}
+f(Q/P) \coloneqq[{\mathbb{Z}}_L/Q : {\mathbb{Z}}_K/P]
+\end{align*}
+to be the \textbf{residue degree} of \(Q/P\). Note that
+\begin{align*}
+\# {\mathbb{Z}}_L/{\mathbb{Q}}= \qty{\# {\mathbb{Z}}_K/P}^{f(Q/P)}
+\quad\text{i.e.}\quad 
+N_L(Q) = N_K(P)^{f(Q/P)}
+.\end{align*}
+
+\end{definition}
+
+\begin{theorem}[efg theorem]
+
+If \(P \in \operatorname{Spec}{\mathbb{Z}}_K\) is nonzero with
+\(P{\mathbb{Z}}_L = \prod Q_i^{e_i}\), then
+\begin{align*}
+\sum_i e(Q_i/P) f(Q_i/P) = [L: K]
+.\end{align*}
+
+\end{theorem}
+
+\begin{lemma}[?]
+
+If \(I\in \operatorname{Spec}{\mathbb{Z}}_K\) is nonzero, then extend to
+\(L\) to get \(I{\mathbb{Z}}_L\). Then
+\begin{align*}
+N_L (I{\mathbb{Z}}_L) = \qty{ N_K(I)}^{[L : K]}
+.\end{align*}
+
+\end{lemma}
+
+\begin{proof}[?]
+
+Omitted. Idea of why it's true: the norm of an ideal is supposed to be a
+``product of conjugates'', although naive conjugates of an ideal might
+not remain an ideal in the field one starts with. So interpret norms as
+products of images under all embeddings into \({\mathbb{C}}\). But then
+just interpret \([L: K]\) is the number of lifts of embeddings
+\(K\hookrightarrow{\mathbb{C}}\) to \(L\hookrightarrow{\mathbb{C}}\).
+
+\end{proof}
+
+\begin{proof}[of efg theorem]
+
+Take norms in \(L\), then
+\begin{align*}
+N( P{\mathbb{Z}}_L) 
+= \prod N(Q_i)^{e_i} \\
+= N_K(P)^{e_1 \sum f(Q_i/P)}
+.\end{align*}
+On the other hand, the left-hand side is \(N_K(P)^{[L: K]}\), so the
+exponents must be equal.
+
+\end{proof}
+
+\begin{remark}
+
+What are the specific prime ideals involved in the factorization,
+i.e.~is there a generalization of Dedekind-Kummer here?
+
+\end{remark}
+
+\begin{proposition}[Generalized Dedekind-Kummer theorem]
+
+Write \(L = K(\theta)\) for some
+\(\theta \in L \cap\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu= {\mathbb{Z}}_L\).
+Let \(m(x)\) be the minimal polynomial of \(\theta\) over \(K\), so
+\(m\in {\mathbb{Z}}_K[x]\). Let
+\(P\in \operatorname{Spec}{\mathbb{Z}}_K\) lying above
+\(p\in \operatorname{Spec}{\mathbb{Z}}\). Then as long as
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% [{\mathbb{Z}}_L: {\mathbb{Z}}_K[\theta]]
+\), then the factorization of \(P{\mathbb{Z}}_L\) mirrors the
+factorization of \(m\) over the residue field \({\mathbb{Z}}_K/P\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Omitted, see ``Number Rings'' by Marcus. Paul strongly recommends!
+
+\end{proof}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]

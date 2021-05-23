@@ -5366,28 +5366,6 @@ We now want to establish the cancellation law in $\Id(\ZZ_K)$, then the principa
 :::
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Ideal Theory in Number Fields Continued (Lec. 16, Tuesday, March 30)
 
 ## Setting up the Theory
@@ -5705,7 +5683,6 @@ By unique factorization, they must be the same, so $I\ZZ_L = \beta \ZZ_L$.
 :::
 
 
-
 # Lecture 17: Ch. 16, continued (Thursday, May 13)
 
 ## Actuality of Ideals
@@ -5800,7 +5777,6 @@ The answer is no, since this would force it to be a UFD, but $\bar\ZZ$ has irred
 One *can* prove that every finitely generated ideal of $\bar\ZZ$ is principal.
 One can also prove a variant of Gauss' lemma for $\bar\ZZ$: one can take the greatest common divisor to be the generator of a principal ideal.
 :::
-
 
 ## Chapter 17: Prime Decomposition and General Number Rings
 
@@ -5997,24 +5973,6 @@ The theorem says they're isomorphic!
 :::
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Ch. 17 (Thursday, May 13)
 
 :::{.remark}
@@ -6114,7 +6072,6 @@ Or really, "$3/2$" elements -- look it up!
 
 # Ch. 18: Units of $\ZZ_K$
 
-
 :::{.remark}
 Setting up some notation: let $K$ be a number field of degree $n$, and let
 
@@ -6125,11 +6082,9 @@ Note that $n = r_1 + 2r_2$.
 Label the real embeddings $\sigma_1, \cdots, \sigma_{r_1}$, and $\sigma_{r_1+1}, \cdots, \sigma_{r_1 + r_2}$ a set of non-real embeddings, where we take one such nonreal embedding from each pair.
 :::
 
-
 :::{.question}
 What is the structure of $\ZZ_K\units$?
 :::
-
 
 :::{.remark}
 For imaginary quadratic fields, the units were norm 1 in the ring of integers.
@@ -6148,14 +6103,12 @@ In fact, it forms a subgroup $\mu_K \leq \ZZ_k\units$.
 The big theorem on the structure of units is the following, which says the same thing as the real quadratic field case happens in general, just with more fundamental units.
 :::
 
-
 :::{.theorem title="Dirichlet's Units Theorem"}
 There are elements $\eps_1, \cdots, \eps_{r_1 + r_2 - 1} \in \ZZ_K\units$ of infinite order such that $\ZZ_K\units = \mu_K \prod_{i=1}^{r_1 + r_2 - 1} \gens{ \eps_i }$ as an internal direct product.
 So every unit has a unique decomposition of this form.
 
 Moreover, $\# \mu_K < \infty$.
 :::
-
 
 :::{.example title="?"}
 When is $\ZZ_K\units$ finite?
@@ -6164,7 +6117,6 @@ This happens iff $r_1 + r_2 = 1$, and there are a few cases:
 - $r_1=1, r_2=0$, and since $n=r_1 + 2r_2 = 1$, this forces $K = \QQ$.
 - $r_1 = 0, r_2 = 1 \iff n=2$, so this is a quadratic field with no real embeddings, so $K$ is an imaginary quadratic field.
 :::
-
 
 :::{.remark}
 Our goal will be to prove the units theorem with *some* number $g$, and we'll show in the next chapter that $g = r_1 + r_2 - 1$ is the right $g$ to choose.
@@ -6196,7 +6148,6 @@ An outline of the proof:
 - Finally prove the rank $g$ is equal to $r_1 + r_2 - 1$.
 :::
 
-
 :::{.lemma title="?"}
 Let $M\in \RR^{>0}$ and let $\alpha \in \ZZ_K$.
 If for all embeddings $\sigma: K\embeds \CC$ we have bounds $\abs{\sigma( \alpha)} \leq M$, then $\alpha$ is a root of a polynomial in 
@@ -6207,8 +6158,6 @@ P_{n,m}
 .\]
 Note that this is a finite set.
 :::
-
-
 
 :::{.proof title="?"}
 Note that $\alpha$ is a root of its **field polynomial**
@@ -6228,13 +6177,11 @@ Expanding the multiplication, there are ${n\choose i}$ prducts each of which inv
 We'll first show the kernel of $\Log$ is finite, then it'll be easy to see it's $\mu_K$.
 :::
 
-
 :::{.proposition title="?"}
 \[
 \# \ker \ro{ \Log}{\ZZ_K\units} < \infty 
 .\]
 :::
-
 
 :::{.proof title="?"}
 Suppose \( \alpha\in \ZZ_K\units \) and $\Log(\alpha) = \vector 0$.
@@ -6243,13 +6190,11 @@ Applying the lemma above with $M=1$, $\alpha$ is a root of a polynomials in $P_{
 So there are only finitely many possibilities for $\alpha$.
 :::
 
-
 :::{.proposition title="?"}
 \[
 \ker \ro{ \Log}{\ZZ_K\units} = \mu_K
 .\]
 :::
-
 
 :::{.proof title="?"}
 Start with $\zeta\in \mu_K$, then under any $\sigma$, $\sigma(\zeta)$ is a complex root of unity.
@@ -6260,7 +6205,6 @@ Conversely suppose $\zeta\in \ker \Log$, which in particular is a group.
 Suppose $\# \ker \Log = n$, since we know it's finite.
 Then $\xi^n = e = 1$ in this group, making it an $n$th root of unity.
 :::
-
 
 :::{.remark}
 Note that $\mu_K$ is always cyclic
@@ -6531,11 +6475,7 @@ So we have $F(\ZZ_K\units)\neq 0$, since we've found a unit that maps to a nonze
 :::
 
 
-
-
-
 # Ch. 20 Continued (Friday, May 21)
-
 
 :::{.remark}
 Goal of Ch.18: prove that units theorem where the rank is left unspecified, and we proved it for $g$ the rank of a certain lattice.
@@ -6756,18 +6696,571 @@ If $I\normal \ZZ_K$ is nonzero, then $\iota(I)$ is a full rank lattice in $\RR^n
 :::
 
 
-
-
-
-
-
-
-
 # Ch. 21: Applications of Minkowski's Theorem (Friday, May 21)
-
 
 :::{.remark}
 Recall that we're considering the Minkowski embedding $\iota: K\to\RR^n$.
-We saw that $\iota(\ZZ_K)\subseteq \RR^n$ is a full rank lattice whose covolume is $?$?
+We saw that $\iota(\ZZ_K)\subseteq \RR^n$ is a full rank lattice whose covolume is the following:
+\[
+\covol \iota \ZZ_K = 2^{r_2} \sqrt{ \abs{ \discriminant_K}}
+.\]
+We wanted to make this work for arbitrary ideals $I\normal \ZZ_K$, and the proposition was that
+\[
+\covol \iota I = 2^{r_2} \sqrt{ \abs{ \discriminant_K}} N(I)
+.\]
 :::
+
+:::{.proof title="?"}
+We know $I$ is free abelian of rank $n$, so choose a $\ZZ\dash$basis $\elts{\omega}{n}$ for $\ZZ_K$ and $\elts{\theta}{n}$ for $I$.
+There is some $A\in \Mat(n\times n; \ZZ)$ such that
+\[
+\tv{\elts{\theta}{n}} = \tv{\elts{\omega}{n}}A
+.\]
+The index-determinant theorem tells us that $\# \ZZ_K/I = \abs{\det A}$, and this is equal to $N(I)$.
+Now apply $\iota$ to both sides above to obtain $n\times n$ matrix with the $\iota(\theta_i)$ and $\iota(\omega_i)$ as column vectors:
+\[
+
+\tv{\elts{ \iota \theta^t }{n} } 
+= 
+\tv{\elts{\iota \omega^r}{n}}A
+.\]
+Taking $\abs{\det{\wait}}$ on both sides, we get
+\[
+\covol \iota(I) 
+= \covol \iota(\ZZ_K) \abs{\det A} 
+= \covol \iota(\ZZ_K) N(I)
+.\]
+:::
+
+## Minkowski's Class Group Bound
+
+:::{.remark}
+We've proved that $\# \Cl(\ZZ_K) < \infty$ for a general number field, which is in the book and uses Dirichlet's approximation theorem and goes similarly to how it did for quadratic fields.
+That proof isn't so good if you want to concretely compute the class group: what you'd like would be an upper bound on the smallest ideal in any ideal class.
+This would allow computing all ideals up to that bound and discerning the structure based on these finitely many ideals.
+:::
+
+:::{.proposition title="Minkowski's Bound"}
+Every ideal class contains a representative $I$ with $N(I) \leq M_K$, where 
+\[
+M_K \da \qty{4\over \pi}^{r_2} {n! \over n^n} \sqrt{\abs{\discriminant_K}}
+.\]
+:::
+
+:::{.remark}
+The precise form of this bound isn't important yet.
+We can prove using this bound that some specific number fields have class number 1.
+How do we prove this?
+:::
+
+:::{.lemma title="?"}
+Let $B>0$, then the following are equivalent: 
+
+1. Every ideal class contains a representative of norm at most $B$,
+
+2. Every nonzero ideal $I\normal \ZZ_K$ contains a nonzero \( \alpha \) with $\abs{N \alpha} \leq N N(I)$.
+
+:::
+
+:::{.proof title="?"}
+$2\implies 1$: 
+done for quadratic fields.
+
+$1\implies 2$:
+Start with $I\normal \ZZ_K$ nonzero.
+Pick $J \in [I]\inv$ with $N(J) \leq B$ using (1).
+Then $IJ$ is principal, so write $IJ = \gens{ \alpha }$. 
+This shows that $I \divides \gens{ \alpha }$, so $\alpha\in I$ since to divide is to contain. 
+Moreover
+\[
+\abs{N ( \alpha)} 
+&= N( \gens{ \alpha } ) \\
+&= N(I) N(J) \\
+&\leq B N(I)
+.\]
+:::
+
+:::{.remark}
+So we've reduced the problem, and it suffices to prove (2) in the above lemma taking $B = M_K$ from above.
+Idea: we'll introduce a region $R \subseteq \RR^n$ which is centrally symmetric, convex, and $\vol(R) > 2^n \covol \iota(I)$ big enough.
+Then we'll be guaranteed an $\alpha \in I$ nonzero with $\iota( \alpha)\in R$, coming from Minkowski's theorem.
+
+What does this tell us?
+The components of $\iota( \alpha)$ are the images of $\alpha$ under embeddings $\sigma_i$.
+If we know these images, we can recover the norm as the product, so one ought to be to rig the region $R$ in order to control the size of $\alpha$.
+So we'll choose $R$ such that 
+\[
+\abs{ N( \alpha)} \leq M_K N(I)
+.\]
+:::
+
+:::{.question}
+What kinds of regions $R$ correspond to $\abs{N( \alpha)} \leq X$ for an arbitrary $X$?
+:::
+
+:::{.answer}
+It's precisely the following region:
+\[
+\ts{ \tv{x}{r_1 + r_2} \in \RR^{r_1} \oplus \CC^{r_2} \st \prod_{i\leq r_1} \abs{x_i} \prod_{j\leq r_2} \abs{x_{r_1 + j}}^2 \leq X \} 
+.\]
+Note that this is centrally symmetric, but the convexity may be a problem.
+:::
+
+:::{.example title="?"}
+Let $K$ be a real quadratic field, so $r_1 = 2, r_2 = 0$.
+Then the region above is $R_0 = \ts{ (x_1, x_2) \st \abs{x_1 x_2} \leq X }$, which looks like the following:
+
+![image_2021-05-22-17-53-50](figures/image_2021-05-22-17-53-50.png)
+
+The solution: choose a convex region inside $R_0$ and apply Minkowski's theorem, noting that this maintains the bound.
+For example, one can take
+\[
+R = \ts{ (x_1, x_2) \st \abs x_1 + \abs x_2 \leq 2x^{1/2} } 
+,\]
+which is a diamond lying inside $R_0$ due to the AM-GM inequality.
+:::
+
+:::{.proposition title="AM-GM Inequality"}
+Let $\elts{t}{m} \geq 0$, then 
+\[
+{1\over m} \sum_{i\leq m} t_i \geq \qty{ \prod_{i\leq m} t_i }^{1/m}
+.\]
+:::
+
+:::{.remark}
+So we'll take the region
+\[
+R \da \ts{ \tv{\elts{x}{r_1 + r_2}} \in \RR^{r_1} \oplus \CC^{r_2} \st 
+{1\over n} \qty{ \sum_{i\leq r} \abs{x_i} + 2\sum_{r_1 + 1 \leq j \leq r_1 + r_2 } \abs{x_j} } \leq X^{1/n}
+} 
+.\]
+Then by AM-GM, $R \subseteq R_0$ and $n= r_1 + r_2$.
+This is still centrally symmetric, and now convex using the triangle inequality.
+When is $\vol R > 2^n \covol \iota(I)$?
+We'll need to compute the volume of $R$, which is an involved exercises in multivariable calculus.
+This is done in the book, and it turns out that
+\[
+\vol(R) = 2^{r_1} \qty{\pi \over 2}^{r_2} {n^n \over n!} X
+.\]
+Recall that
+\[
+2^n \covol \iota(I) = 2^n 2^{-r_2} \sqrt{\abs{\discriminant_K}}
+,\]
+and solving this linear equality for $X$ yields $X > M_K N(I)$ as defined before.
+
+Now apply Minkowski's theorem: for any $X > M_K N(I)$ there is a nonzero \( \alpha\in I \), there is a nonzero \( \alpha\in I\) with $\iota( \alpha)\in R$, and hence $\abs{N( \alpha)} \leq X$.
+Note that the inequalities don't quite match up as-is, since we can't take $X = M_K N(I)$.
+Does this imply that we can find an $\alpha$ with $\abs{N( \alpha)} \leq X$?
+The answer is yes, because we can choose $X$ with $\floor{X} = \floor{M_K M(I)}$.
+Then $\abs{N( \alpha)} \leq X \implies \abs{N( \alpha)} \leq \floor{X} = \floor{M_K N(I)}$, since the left-hand side is an integer.
+:::
+
+## Example: Showing Number Fields are PIDs using Dedekind-Kummer and the Minkowski Bound
+
+:::{.example title="?"}
+Let $K = \QQ( \sqrt[3]{3})$.
+Then $n=3$, and $r_1 = 1, r_2 = 1$ since embeddings permute the roots of $x^3-3$, which has exactly one real root.
+We need the discriminant, so we need an integral basis, in which case it helps to know $\ZZ_K$.
+By a homework problem, if $K = \QQ(\sqrt[3]{d})$ with $d$ squarefree and $d\not\equiv \pm 1\mod 9$, then $\ZZ_K$ is what you guess it'd be!
+So here $\ZZ_K = \ZZ[\sqrt[3]{3}]$, and thus
+\[
+\discriminant_K = \Delta(1, 3^{1/3}, 3^{2/3})
+= \discriminant (x^2 - 3) = -3^5
+.\]
+
+Thus
+\[
+M_K = \qty{4\over \pi} {3! \over 3^3} \sqrt{3^5} \approx 4.42
+,\]
+and thus we know every ideal class contains a representative of norm at most 4, using that $N(I)$ is an integer.
+Any such $I$ is a product of ideals of norms $2,3,4$.
+Prime ideals of norm 2 or 4 lie above the prime 2, and of norm 3 lie above 3.
+If we can show that every prime ideal with $N(I) = 2,3,4$ is principal, then $I$ will be a product of principal ideals and thus principal.
+Then since every class contains such an $I$, $\Cl(\ZZ_K)$ is trivial.
+We look at all of the primes above 2 and 3 using Dedekind-Kummer, which says the factorization of \( \gens{ p }  \) mirrors the factorization of $x^2 - 3 \mod p$.
+
+Note that if $\ZZ(\sqrt[3]{3}) \neq \ZZ_K$, there'd be some exceptional primes $p$ to worry about, but since these are equal here this is literally true for all $p$.
+
+So we factor polynomials.
+First mod 2:
+\[
+x^2 - 3 = x^3 - 1 = (x-1) (x^2 + x + 1)
+,\]
+
+where the second term is an irreducible quadratic with no roots in $\FF_2$.
+This yields
+\[
+\gens{ 2 }= \gens{ 2, \sqrt[3]{3} - 1 } \gens{ 2, \qty{\sqrt[3]{3} }^2 + \sqrt[3]{3} + 1 }   
+.\]
+Next mod 2:
+\[
+x^3 -3 = x^3
+,\]
+which yields
+\[
+\gens{ 3 }= \gens{ 3, \sqrt[3]{3} }^3  
+.\]
+
+Although we have explicit factorizations, but it may not obvious whether or not they're principal.
+It's easy to see that \( \gens{ 3, 3^{1/3} }  \) is principal since $3^{1/3} \divides 3$ and the first generator is redundant
+For $\gens{2}$, it's less clear, but
+\[
+(3^{1/3} - 1) (3^{2/3} + 3^{1/3} + 1) = 2
+,\]
+and so the 2s are redundant generators in both terms. 
+So every ideal above 2 and 3 is principal, so $I$ is principal.
+Every ideal class contains such an $I$, so $\Cl(\ZZ_K) = 0$ and $\ZZ_K$ is a PID.
+:::
+
+:::{.remark}
+Asking whether or not this ring is a PID is an undergraduate-level question, but it's not clear how one would determine this without the theory developed in this class.
+:::
+
+:::{.example title="?"}
+Let $K = \QQ(\theta)$ where $\theta$ is a root of $f(x) = x^5-x^3 + 1$.
+This is irreducible over $\QQ$ and has one real root.
+Then $n=5, r_1 = 1, r_2 = 2$, but we need the discriminant to apply the Minkowski bound.
+If we could prove $\ZZ_K = \ZZ(\theta)$, $\discriminant_K = \discriminant(f)$.
+If it were squarefree, it'd correspond to an integral basis, so we compute
+\[
+\discriminant(f) = \discriminant(1, \theta, \theta^2, \theta^3, \theta^4) =3017
+,\]
+using determinant formulas in the book.
+This is squarefree, so the power basis is an integral basis, so $\ZZ_K = \ZZ[\theta]$ and $\discriminant_K = 3017$.
+Then
+\[
+M_k = \qty{4\over \pi}^2 {5! \over 5^5} \sqrt{3017} \approx 3.41
+.\]
+So every ideal class is represented by an ideal of norm at most $3$.
+
+- Norm 1: Unit ideal and thus principal,
+- Norm 2: Primes above 2
+- Norm 3: Primes above 3
+
+We'll apply Dedekind-Kummer.
+First mod 2: $f(x)$ is irreducible mod 2, so $\gens{2}$ is inert and prime.
+So there are no ideals of norm 2, since it would have to factor as a product of primes above 2, but the only possible factor is 2 which has norm $2^5 =32$.
+
+Mod 3:
+$f$ is no longer irreducible, but factors as $f=pq$ with $\deg p = 2,\deg q = 3$.
+So there are no ideals of norm 3, since all prime ideals above 3 would have to have norms of $3^2$ corresponding to $p$ or $3^3$ corresponding to $q$.
+Thus $\Cl(\ZZ_K) = 0$, since every $I$ is represented by an ideal of norm 1 and hence is principal.
+:::
+
+:::{.remark}
+Next up we'll talk about a lower bound for $\abs{\discriminant_K}$
+Obviously $M_K \geq 1$, since the theorem states that every ideal class has a representative of norm at most $M_K$, and $M_K< 1$ wouldn't make sense.
+Using the formula, rearranging yields a bound
+\[
+\abs{\discriminant_K} \geq \qty{n^n \over n!}^2 \qty{\pi \over 4}^{2r_2}
+.\]
+
+:::
+
+
+# Saturday, May 22
+
+# Ch. 21: Consequences of Minkowski's Bound (Saturday, May 22)
+
+:::{.remark}
+We were discussing a lower bound on $\abs{\discriminant_K}$.
+We have Minkowski's class number bound: every ideal class has a representative of norm at most $M_K$, where
+\[
+M_K \da \qty{4\over \pi}^{r_2} \qty{n! \over n^n}\sqrt{\abs{\discriminant_K}}
+.\]
+A consequence of the theorem is $M_K \geq 1$, and rearranging yields a bound
+\[
+\abs{\discriminant_K} \geq \qty{n^n \over n!}^2 \qty{\pi/4}^{2r)2}
+.\]
+What is this bound really telling us?
+Let's bound the right-hand side from below.
+Note that $\pi/4<1$, and since this is raised to a power, this might make things smaller.
+The worst case, i.e. the smallest it could be, is when $2r_2$ is as large as possible, so using that $r_1 + r_2 = n$ we have
+\[
+\abs{\discriminant_K} \geq \qty{n^n\over n!}^2 \qty{\pi/4}^n \da B_n
+.\]
+How does $B_n$ grow?
+We could use Stirling's formula, but we'll take a crude bound by looking at rations:
+\[
+{B_{n+1} \over B_n} 
+&= (1 + {1\over n})^{2n} (\pi/4)\\
+&= \qty{ 1 + {2n \choose 1} {1\over n} + \cdots }(\pi/4) \\
+&\geq 3\pi/4
+.\]
+Noting that $B_2 = \pi^2/4$, so by induction
+\[
+B_n \geq (3\pi/4)^{n-2} (\pi^2/4)
+.\]
+:::
+
+:::{.remark}
+Some consequences:
+
+a. $\abs{\discriminant_K} > 1$ for all number fields $K\neq \QQ$.
+b. $\abs{\discriminant_K}\to\infty$ as $[K:\QQ]\to\infty$.
+
+The following says why (a) is important:
+:::
+
+:::{.theorem title="Dedekind"}
+$p$ ramifies in $\ZZ_K \iff p \divides \discriminant_K$.
+:::
+
+:::{.proof title="?"}
+Omitted, see book.
+:::
+
+:::{.remark}
+So by (a), every number field $K\geq \QQ$ there is at least one ramified prime $p$.
+:::
+
+:::{.remark}
+Note that if $\abs{\discriminant_K} = 1$, then $K=\QQ$, i.e. there is only one such number field.
+What about for any fixed number $n$?
+The next theorem says that there are only finitely many number fields occuring below a prescribed bound:
+:::
+
+:::{.theorem title="Hermite's theorem"}
+For every $X>0$, there are finitely many number fields $K$ with $\abs{\discriminant_K} \leq X$.
+:::
+
+:::{.remark}
+Since $\abs{\discriminant_K}\to\infty$ as $[K:\QQ]\to\infty$, it suffices to prove this theorem with a fixed $n\da [K: \QQ]$.
+We'll make a simplifying assumption that $r_1 = n$ -- this doesn't simplify the proof so much, but rather simplifies the notation.
+The full proof in the book is not so different.
+:::
+
+:::{.remark}
+Define a region
+\[
+R \da \ts{\tv{\elts{x}{n}} \in \RR^n \st \abs{x_{i\leq n-1}} \leq {1 \over 2},\,\, \abs{x_n} \leq T } \subseteq \RR^n
+,\]
+where we'll specify $T$ in a moment.
+
+Note that
+
+- $R$ is centrally symmetric
+- $R$ is convex, by the triangle inequality,
+- The volume is easily computable: $\vol R = 1\cdot 1\cdot \ldots \cdot 1 \cdot 2T = 2T$.
+
+Choose $T = 2^n \sqrt{X}$.
+Suppose $K$ is totally real with \( \abs{ \discriminant_K } \leq X \).
+Recall that 
+\[
+\covol \iota \ZZ_K = 2^{r_2} \sqrt{\abs{\discriminant_K}} 
+\leq \sqrt{X}
+.\]
+
+Then 
+\[
+\vol R = 2^{n+1 } \sqrt{X} > 2^n \covol \iota \ZZ_K
+,\]
+so Minkowski's theorem can be applied: there is a nonzero $\alpha\in \ZZ_K$ with $\iota( \alpha) \in R$.
+Then $\abs{\sigma_i( \alpha)} \leq 1/2$ for $i\leq n-1$ and $\abs{ \sigma_n ( \alpha)} \leq T$.
+The claim is that there are only finitely many such \( \alpha \), since it was a root of a polynomial in a finite set $P_{n, T}$.
+The claim is now that $K = \QQ( \alpha)$, so this $\alpha$ uniquely determines $K$.
+Since there were finitely many \( \alpha \), there can only be finitely many such $K$.
+
+The claim is that the size of $\sigma_n( \alpha)$ has to be big, say at least 1.
+We have control over the product, since
+\[
+1\leq \abs{N \alpha} 
+= \prod \abs{ \sigma_i( \alpha)} 
+\leq {1\over 2^{n-1}} \abs{ \sigma_n( \alpha)}
+,\]
+since the first $n-1$ terms contribute at most $1/2$ each.
+So $\abs{\sigma_n( \alpha)} \geq 2^{n-1} \geq 1$.
+Suppose now that $\QQ(\alpha) < K$ is a proper subfield, so $[K : \QQ( \alpha)] = d > 1$.
+Then every embedding $\QQ(\alpha) \embeds \CC$ extends to $d$ embeddings $K\embeds \CC$, but this means that for any element $x \in \QQ(\alpha)$, the images $\sigma_1(x),\cdots, \sigma_n(x)$ would have the same element repeated $d$ times.
+But we know that $\sigma_n( \alpha)$ is different from all of the other $\sigma_i( \alpha)$, so this is a contradiction.
+:::
+
+:::{.remark}
+Idea of proof: making sure some image of $\alpha$ under one embedding is different than all of the other images.
+:::
+
+:::{.remark}
+Some remarks on modern research!
+Let $N_n(X)$ be the set of number fields of degree $n$ where $\abs{\discriminant_K} \leq X$.
+:::
+
+:::{.conjecture}
+For each fixed $n$,
+\[
+\lim_{X\to \infty} {N_n(X) \over X} = \delta_n > 0
+,\]
+where $\delta_n$ is some particular constant.
+
+Some known results: 
+
+- $n=2$: known to Gauss, since this is more or less equivalent to counting squarefree numbers.
+- $n=3$: much harder, Davenport-Heilbronn.
+- $n=4, 5$: Bhargava, part of what resulted in his 2014 Fields medal.
+
+:::
+
+:::{.remark}
+One could restrict this problem, e.g. by prescribing a particular Galois group.
+See Mahler's conjecture.
+:::
+
+# Chapter XYZ: Relative Extensions, Galois Theory, Prime Splitting
+
+:::{.remark}
+Up until now: we've compared extensions over $\QQ$:
+
+\begin{tikzcd}
+	K && {\ZZ_K} \\
+	\\
+	\QQ && \ZZ
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJLIl0sWzAsMiwiXFxRUSJdLFsyLDAsIlxcWlpfSyJdLFsyLDIsIlxcWloiXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+We'll next talk about extensions between number fields:
+
+\begin{tikzcd}
+	L && {\ZZ_L} \\
+	\\
+	K && {\ZZ_K}
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJMIl0sWzAsMiwiSyJdLFsyLDAsIlxcWlpfTCJdLFsyLDIsIlxcWlpfSyJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+We can ask the same sorts of questions about prime ideals factoring.
+Note that if $I = \prod P_i^{e_i}$ with each $P_i \in \spec \ZZ_K$ , then extending to $\ZZ_L$ yields 
+\[
+I\ZZ_L = \prod (P_i \ZZ_L)^{e_i}
+.\]
+So we want to understand the following: given a prime ideal $P$ of $\ZZ_K$, how does $P\ZZ_L$ factor?
+:::
+
+:::{.definition title="lies above"}
+Let $K\leq L$ be number fields, and suppose $Q\in \spec \ZZ_L, P\in \spec \ZZ_K$.
+Then we say $Q$ **lies above** $P$ if $Q \supseteq P$, or equivalently $Q \divides P\ZZ_L$.
+:::
+
+:::{.proposition title="?"}
+Every nonzero $Q\in \spec \ZZ_L$ lies above a unique nonzero $P \in \spec \ZZ_K$.
+:::
+
+:::{.proof title="?"}
+Consider $P \da Q \intersect \ZZ_K \in \spec \ZZ_K$.
+This is nonzero because taking the norm of any element of $Q$ yields a nonzero integer still in the ideal.
+Then $Q$ lies above $P$ by definition.
+Why is this unique?
+Suppose $Q$ lies about $P'$, we'll show $P = P'$.
+Since $Q$ lies above $P'$, $Q\supseteq P'$.
+But $P'\normal \ZZ_K$, so $Q\intersect \ZZ_K \supseteq P'$, so $P \contains P'$.
+We know $P'$ is maximal, since $\ZZ_K/P'$ is a finite domain and thus a field, so $P = P'$.
+:::
+
+:::{.definition title="Ramification and residue degrees"}
+Let $P\in \spec \ZZ_K$, then write 
+\[
+P\ZZ_L = \prod Q_i^{e_i}
+\]
+with $Q_i \in \spec \ZZ_L$.
+Then the $Q_i$ are the prime ideals of $\ZZ_L$ above $P$.
+The exponent $e_i$ is called the **ramification degree**, usually denoted $e(Q_i/P)$.
+We have the following picture:
+
+\begin{tikzcd}
+	L && {\ZZ_L} && Q \\
+	\\
+	K && {\ZZ_K} && P
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-3]
+	\arrow[no head, from=1-5, to=3-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiSyJdLFsyLDAsIlxcWlpfTCJdLFsyLDIsIlxcWlpfSyJdLFs0LDIsIlAiXSxbNCwwLCJRIl0sWzAsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDMsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw0LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+
+The inclusion $\ZZ_K \injects \ZZ_L$ induces a ring morphism $\ZZ_K \to \ZZ_L/Q$, where the kernel is $\ZZ_K \intersect Q = P$.
+Thus there is an injection $\ZZ_K/P \injects \ZZ_L/Q$, which is an inclusion of finite fields.
+So we'll define 
+\[
+f(Q/P) \da [\ZZ_L/Q : \ZZ_K/P]
+\]
+to be the **residue degree** of $Q/P$.
+Note that 
+\[
+\# \ZZ_L/\QQ = \qty{\# \ZZ_K/P}^{f(Q/P)}
+\quad\text{i.e.}\quad 
+N_L(Q) = N_K(P)^{f(Q/P)}
+.\]
+
+:::
+
+:::{.theorem title="efg theorem"}
+If $P \in \spec \ZZ_K$ is nonzero with $P\ZZ_L = \prod Q_i^{e_i}$, then 
+\[
+\sum_i e(Q_i/P) f(Q_i/P) = [L: K]
+.\]
+:::
+
+:::{.lemma title="?"}
+If $I\in \spec \ZZ_K$ is nonzero, then extend to $L$ to get $I\ZZ_L$.
+Then
+\[
+N_L (I\ZZ_L) = \qty{ N_K(I)}^{[L : K]}
+.\]
+:::
+
+:::{.proof title="?"}
+Omitted.
+Idea of why it's true: the norm of an ideal is supposed to be a "product of conjugates", although naive conjugates of an ideal might not remain an ideal in the field one starts with.
+So interpret norms as products of images under all embeddings into $\CC$.
+But then just interpret $[L: K]$ is the number of lifts of embeddings $K\embeds \CC$ to $L\embeds \CC$.
+:::
+
+:::{.proof title="of efg theorem"}
+Take norms in $L$, then 
+\[
+N( P\ZZ_L) 
+= \prod N(Q_i)^{e_i} \\
+= N_K(P)^{e_1 \sum f(Q_i/P)}
+.\]
+On the other hand, the left-hand side is $N_K(P)^{[L: K]}$, so the exponents must be equal.
+:::
+
+:::{.remark}
+What are the specific prime ideals involved in the factorization, i.e. is there a generalization of Dedekind-Kummer here?
+:::
+
+:::{.proposition title="Generalized Dedekind-Kummer theorem"}
+Write $L = K(\theta)$ for some $\theta \in L \intersect \bar\ZZ = \ZZ_L$.
+Let $m(x)$ be the minimal polynomial of $\theta$ over $K$, so $m\in \ZZ_K[x]$.
+Let $P\in \spec \ZZ_K$ lying above $p\in \spec \ZZ$.
+Then as long as $p\notdivides [\ZZ_L: \ZZ_K[\theta]]$, then the factorization of $P\ZZ_L$ mirrors the factorization of $m$ over the residue field $\ZZ_K/P$.
+:::
+
+:::{.proof title="?"}
+Omitted, see "Number Rings" by Marcus.
+Paul strongly recommends!
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
