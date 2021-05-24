@@ -4,9 +4,7 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
 
 # Week 2: Finite Groups
 
-
 [See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
-
 
 ## Topics
 
@@ -62,6 +60,11 @@ title: Algebra Qual Prep Week 2: Finite Group Theory
   - Use this to prove that if $G = \Sym(X)$ is the group of permutations on a finite set $X$ with $\# X = n$, then there exists a $g\in G$ with no fixed points in $X$.
 
 ## Group Actions
+- For each of the following group actions, identify what the orbits, stabilizers, and fixed points are:
+	- $G$ acting on $X=G$ by left-translation: $$g\cdot x := gx$$.
+	- $G$ acting on $X=G$ by conjugation: $$g\cdot x := gxg\inv$$
+	- $G$ acting on its set of subgroups $X:=\ts{H\st H\leq G}$ by conjugation: $$g\cdot H := gHg\inv$$
+	- For a fixed subgroup $H\leq G$, $G$ acting on the set of cosets $X := G/H$ by left-translation: $$g\cdot xH := (gx)H$$
 - Suppose $X$ is a $G\dash$set, so there is a permutation action of $G$ on $X$.
   Let $x_1, x_2\in X$, and show that the stabilizer subgroups $\Stab_G(x_1), \Stab_G(x_2)\leq G$ are conjugate in $G$.
 
