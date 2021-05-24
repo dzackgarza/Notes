@@ -10,3 +10,4 @@ aliases: ["Henselian"]
 - A field with [valuation](valuation.md) is said to be **Henselian** if its [valuation ring](valuation%20ring) is Henselian.
 - A Henselian local ring is called **strictly Henselian** if its residue field is [separably closed](separably%20closed).
 - The Henselization of A is an algebraic substitute for the completion of A
+- See slogan: Henselian implies large. Can product points.
