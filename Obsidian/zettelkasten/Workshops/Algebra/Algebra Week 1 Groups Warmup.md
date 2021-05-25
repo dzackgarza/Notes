@@ -77,6 +77,8 @@ $$
 > Use that $xH = yH\iff x\sim y$ is an equivalence relation (reflexive/symmetric/transitive)
 - Suppose $\# G = pq$ with $p, q\geq 2$ prime, and let $H\leq G$ be a proper subgroup.
   Prove that $H$ must be cyclic.
+
+> Use (and prove) the classification of groups of order $p$.
   
   ### Orders
 
