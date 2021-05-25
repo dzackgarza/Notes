@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"linear category\"",
+                "query": "operator spectrum",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -130,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263
+    "width": 683.9999980926514
   },
   "right": {
     "id": "a1502ca3cb933e96",
