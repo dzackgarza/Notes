@@ -91,6 +91,7 @@ $$
 > Then $y\not\in N$ but $y^p\in N$, so $\gens{y}\neq \gens{y^p}$ since $y^p\in N \implies \gens{y^p} \subseteq N$.
 > Get $p\divides \# \gens{y}$, apply IH.
 - Prove that if $\# G$ is prime, then $G$ is cyclic
+	> Assume there are two distinct generators and reach a contradiction.
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
 - Prove that if $\# G = n$, then $g^n = e$ for every $g\in G$
 
