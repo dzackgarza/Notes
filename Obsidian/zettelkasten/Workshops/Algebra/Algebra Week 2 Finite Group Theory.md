@@ -1,5 +1,5 @@
 ---
-title: Algebra Qual Prep Week 2: Finite Group Theory
+title: "Algebra Qual Prep Week 2: Finite Group Theory"
 ---
 
 # Week 2: Finite Groups
