@@ -36,6 +36,8 @@ Prove that $f$ is a polynomial.
 
 # Qual Problems
 
-![Spring 202](../../attachments/Pasted%20image%2020210527173157.png)
+![Fall 2020 #2](../../attachments/Pasted%20image%2020210527173251.png)
+
+![Spring 2021 #1](../../attachments/Pasted%20image%2020210527173157.png)
 
 ![Spring 2021 #2](../../attachments/Pasted%20image%2020210527173111.png)
