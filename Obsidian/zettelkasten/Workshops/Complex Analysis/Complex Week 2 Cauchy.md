@@ -18,6 +18,17 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ![](../../attachments/Pasted%20image%2020210527180305.png)
 
+### Blaschke Factors
+
+![](../../attachments/Pasted%20image%2020210527181155.png)
+
+![](../../attachments/Pasted%20image%2020210527181214.png)
+
+![](../../attachments/Pasted%20image%2020210527181024.png)
+
+
+
+
 ![](../../attachments/Pasted%20image%2020210527173814.png)
 ![](../../attachments/Pasted%20image%2020210527175202.png)
 ![](../../attachments/Pasted%20image%2020210527175221.png)
@@ -42,6 +53,9 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 - Anything from the [homeworks](https://www.notion.so/Complex-Analysis-3ca8032a73fc4366836a9f5085f5e601)
 
+- Show that $f'=0 \implies f$ is constant using integrals and *primitives* (i.e. antiderivatives). 
+
+> See S&S Corollary 3.4.
 
 
 ![](../../attachments/Pasted%20image%2020210527175840.png)
