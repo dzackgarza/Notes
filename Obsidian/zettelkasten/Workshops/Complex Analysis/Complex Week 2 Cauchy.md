@@ -5,6 +5,7 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 # Topics
 
 - Blaschke factors
+- Toy contours
 -   Cauchy's integral formula
 ![](../../attachments/Pasted%20image%2020210527173814.png)
 - Cauchy inequalities
@@ -14,6 +15,11 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ![](../../attachments/Pasted%20image%2020210527175202.png)
 ![](../../attachments/Pasted%20image%2020210527175221.png)
+![](../../attachments/Pasted%20image%2020210527175306.png)
+![](../../attachments/Pasted%20image%2020210527175341.png)
+![](../../attachments/Pasted%20image%2020210527175355.png)
+![](../../attachments/Pasted%20image%2020210527175413.png)
+![](../../attachments/Pasted%20image%2020210527175424.png)
 
 # Warmups
 
