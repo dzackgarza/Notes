@@ -85,6 +85,7 @@ $$
 - Prove Lagrange's theorem.
 
 > Use $G = \disjoint_{i=1}^n g_i H$, that cosets all have cardinality $\# H$, and $\# \disjoint X_i = \sum \# X_i$
+
 - Prove Cauchy's theorem.
 
 > Induce on $\# G$. Assume $\# G > p$ and pick $g\neq 1$.
