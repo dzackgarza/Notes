@@ -16,18 +16,17 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ## Review
 
-### Integrals and Residues
-
 ![Complex log](../../attachments/Pasted%20image%2020210527180305.png)
+
+### Integrals and Residues
 
 ![Integrating 1/z manually](../../attachments/Pasted%20image%2020210527181024.png)
 
-![Toy Contours](../../attachments/Pasted%20image%2020210527175306.png)
-
 ![Goursat](../../attachments/Pasted%20image%2020210527175221.png)
 
+### Residues
 
-**Residues**
+![Toy Contours](../../attachments/Pasted%20image%2020210527175306.png)
 
 ![](../../attachments/Pasted%20image%2020210527175947.png)
 
@@ -40,6 +39,8 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 ![](../../attachments/Pasted%20image%2020210527182208.png)
 
 ![](../../attachments/Pasted%20image%2020210527182226.png)
+
+![](../../attachments/Pasted%20image%2020210527182259.png)
 
 **Bounds**
 
