@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+            "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 2 Cauchy.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 2 Cauchy.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md"
+                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 2 Cauchy.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 2 Cauchy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
+                "file": "zettelkasten/Workshops/Complex Analysis/Complex Week 2 Cauchy.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "a7eecb88c72e4c10",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Complex Analysis/Complex Week 2 Cauchy.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 1 Preliminaries.md",
     "zettelkasten/Workshops/Complex Analysis/Complex Week 2.md",
     "zettelkasten/Workshops/Complex Analysis/Untitled.md",
@@ -249,7 +250,6 @@
     "zettelkasten/Workshops/Algebra/Algebra Week 2 Finite Group Theory.md",
     "zettelkasten/Workshops/Algebra/Algebra Week 1 Groups Warmup.md",
     "zettelkasten/Workshops/Algebra/Untitled.md",
-    "zettelkasten/Untitled 10.md",
-    "Quick_Notes/2021-05-24.md"
+    "zettelkasten/Untitled 10.md"
   ]
 }
