@@ -30,9 +30,12 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ![](../../attachments/Pasted%20image%2020210527181758.png)
 
+![](../../attachments/Pasted%20image%2020210527181839.png)
+
 ![](../../attachments/Pasted%20image%2020210527181812.png)
 
-![](../../attachments/Pasted%20image%2020210527181839.png)
+Jordan's Lemma:
+![](../../attachments/Pasted%20image%2020210527182026.png)
 
 
 ### Blaschke Factors
