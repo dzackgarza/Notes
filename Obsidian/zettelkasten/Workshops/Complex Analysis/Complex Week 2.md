@@ -13,6 +13,10 @@
 Conformal mappings
 ![](../../attachments/Pasted%20image%2020210517030822.png)
 
+# Warmups
+
+- Do any example from [here](http://home.iitk.ac.in/~psraj/mth102/lecture_notes/comp8.pdf)
+
 # Questions
 
 - Can every continuous function on $\bar \DD$ be uniformly approximated by polynomials in the variable $z$?
