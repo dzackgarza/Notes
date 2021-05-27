@@ -6,13 +6,19 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 - Blaschke factors
 - Toy contours
--   Cauchy's integral formula
-![](../../attachments/Pasted%20image%2020210527173814.png)
+- Cauchy's integral formula
 - Cauchy inequalities
--   Jordan's lemma
+-   Computing integrals
+	-   Residue formulas
+	-   ML Inequality
+	-  Jordan's lemma
+-   Liouville's theorem
+-   The identity principle
+-   Morera's
 
 ## Review
 
+![](../../attachments/Pasted%20image%2020210527173814.png)
 ![](../../attachments/Pasted%20image%2020210527175202.png)
 ![](../../attachments/Pasted%20image%2020210527175221.png)
 ![](../../attachments/Pasted%20image%2020210527175306.png)
@@ -20,6 +26,13 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 ![](../../attachments/Pasted%20image%2020210527175355.png)
 ![](../../attachments/Pasted%20image%2020210527175413.png)
 ![](../../attachments/Pasted%20image%2020210527175424.png)
+![](../../attachments/Pasted%20image%2020210527175435.png)
+
+### Analytic Continuation
+
+![Identity principle](../../attachments/Pasted%20image%2020210527175624.png)
+![](../../attachments/Pasted%20image%2020210527175651.png)
+![](../../attachments/Pasted%20image%2020210527175701.png)
 
 # Warmups
 
@@ -28,6 +41,8 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 ![](../../attachments/Pasted%20image%2020210527174041.png)
 
 - Anything from the [homeworks](https://www.notion.so/Complex-Analysis-3ca8032a73fc4366836a9f5085f5e601)
+
+- Prove the fundamental theorem of algebra using Liouville's theorem.
 
 # Questions
 
