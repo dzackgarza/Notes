@@ -12,9 +12,7 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 	-   Residue formulas
 	-   ML Inequality
 	-  Jordan's lemma
--   Liouville's theorem
--   The identity principle
--   Morera's
+
 
 ## Review
 
@@ -28,11 +26,11 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 ![](../../attachments/Pasted%20image%2020210527175424.png)
 ![](../../attachments/Pasted%20image%2020210527175435.png)
 
-### Analytic Continuation
+### Integrals
 
-![Identity principle](../../attachments/Pasted%20image%2020210527175624.png)
-![](../../attachments/Pasted%20image%2020210527175651.png)
-![](../../attachments/Pasted%20image%2020210527175701.png)
+![](../../attachments/Pasted%20image%2020210527175947.png)
+
+
 
 # Warmups
 
@@ -42,7 +40,11 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 - Anything from the [homeworks](https://www.notion.so/Complex-Analysis-3ca8032a73fc4366836a9f5085f5e601)
 
-- Prove the fundamental theorem of algebra using Liouville's theorem.
+
+
+![](../../attachments/Pasted%20image%2020210527175840.png)
+
+![](../../attachments/Pasted%20image%2020210527180104.png)
 
 # Questions
 
