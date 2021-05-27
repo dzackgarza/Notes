@@ -38,6 +38,10 @@ Prove that $f$ is a polynomial.
 
 ![Fall 2020 #2](../../attachments/Pasted%20image%2020210527173251.png)
 
+![Fall 2020 #3](../../attachments/Pasted%20image%2020210527173330.png)
+
 ![Spring 2021 #1](../../attachments/Pasted%20image%2020210527173157.png)
 
 ![Spring 2021 #2](../../attachments/Pasted%20image%2020210527173111.png)
+
+![Fall 2019 #3](../../attachments/Pasted%20image%2020210527173427.png)
