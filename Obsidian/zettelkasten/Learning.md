@@ -194,6 +194,7 @@ Some stuff from Morgan:
 - [Seminar on crystalline and prismatic cohomology](https://math.mit.edu/nt/index_stage)
 - [Seminar on p-adic modular forms](https://math.mit.edu/nt/old/stage_s20.html)
 - [Seminar on p-adic Hodge theory](https://math.mit.edu/nt/old/stage_f18.html)
+- [Noncommutative Hodge-to-de Rham degeneration](https://warwick.ac.uk/fac/sci/maths/research/events/2020-2021/noncommutativehodge-to-derhamdegeneration/)
 
 ## Field Theories
 
