@@ -26,6 +26,9 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ![Goursat](../../attachments/Pasted%20image%2020210527175221.png)
 
+
+**Residues**
+
 ![](../../attachments/Pasted%20image%2020210527175947.png)
 
 ![](../../attachments/Pasted%20image%2020210527181758.png)
@@ -34,8 +37,16 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ![](../../attachments/Pasted%20image%2020210527181812.png)
 
+![](../../attachments/Pasted%20image%2020210527182208.png)
+
+![](../../attachments/Pasted%20image%2020210527182226.png)
+
+**Bounds**
+
 Jordan's Lemma:
 ![](../../attachments/Pasted%20image%2020210527182026.png)
+
+![](../../attachments/Pasted%20image%2020210527182117.png)
 
 
 ### Blaschke Factors
