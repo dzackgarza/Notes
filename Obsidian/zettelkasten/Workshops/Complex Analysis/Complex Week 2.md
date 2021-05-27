@@ -7,7 +7,8 @@
 -   Implicit function theorem
 -   Cauchy-Riemann, the Laplace equation, Harmonic functions, holomorphicity
 -   Cauchy's integral formula
-Cauchy inequalities
+![](../../attachments/Pasted%20image%2020210527173814.png)
+- Cauchy inequalities
 -   Jordan's lemma
 
 
