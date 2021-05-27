@@ -6,12 +6,11 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ## Topics
 
+- Blaschke factors
 -   Cauchy's integral formula
 ![](../../attachments/Pasted%20image%2020210527173814.png)
 - Cauchy inequalities
 -   Jordan's lemma
-
-
 
 # Warmups
 
