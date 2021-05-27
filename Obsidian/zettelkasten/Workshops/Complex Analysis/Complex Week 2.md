@@ -7,6 +7,7 @@
 -   Implicit function theorem
 -   Cauchy-Riemann, the Laplace equation, Harmonic functions, holomorphicity
 -   Cauchy's integral formula, Cauchy inequalities
+-   Jordan's lemma
 
 
 Conformal mappings
