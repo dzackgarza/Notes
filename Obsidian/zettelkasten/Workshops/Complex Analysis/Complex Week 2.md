@@ -28,3 +28,12 @@ Prove that $f$ is a polynomial.
 
 > Hint: use the fact that $c_n n! = f^{(n)}(z_0)$ and use a countability argument.
 
+![](../../attachments/Pasted%20image%2020210527172954.png)
+
+![](../../attachments/Pasted%20image%2020210527173005.png)
+
+![](../../attachments/Pasted%20image%2020210527173030.png)
+
+# Qual Problems
+
+![Spring 2021 #2](../../attachments/Pasted%20image%2020210527173111.png)
