@@ -16,7 +16,12 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ## Review
 
-![](../../attachments/Pasted%20image%2020210527180305.png)
+![Complex log](../../attachments/Pasted%20image%2020210527180305.png)
+
+![Integrating 1/z manually](../../attachments/Pasted%20image%2020210527181024.png)
+
+![Toy Contours](../../attachments/Pasted%20image%2020210527175306.png)
+
 
 ### Blaschke Factors
 
@@ -24,22 +29,23 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ![](../../attachments/Pasted%20image%2020210527181214.png)
 
-![](../../attachments/Pasted%20image%2020210527181024.png)
-
-
-
-
-![](../../attachments/Pasted%20image%2020210527173814.png)
+### Cauchy's Integral Formula
 ![](../../attachments/Pasted%20image%2020210527175202.png)
-![](../../attachments/Pasted%20image%2020210527175221.png)
-![](../../attachments/Pasted%20image%2020210527175306.png)
 ![](../../attachments/Pasted%20image%2020210527175341.png)
 ![](../../attachments/Pasted%20image%2020210527175355.png)
+
+
+### Goursat
+
+
+
 ![](../../attachments/Pasted%20image%2020210527175413.png)
 ![](../../attachments/Pasted%20image%2020210527175424.png)
 ![](../../attachments/Pasted%20image%2020210527175435.png)
 
 ### Integrals
+
+![Goursat](../../attachments/Pasted%20image%2020210527175221.png)
 
 ![](../../attachments/Pasted%20image%2020210527175947.png)
 
