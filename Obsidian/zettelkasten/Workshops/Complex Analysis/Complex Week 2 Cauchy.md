@@ -16,6 +16,8 @@ title: "Complex Analysis Qual Prep Week 1: Things Named After Cauchy"
 
 ## Review
 
+![](../../attachments/Pasted%20image%2020210527180305.png)
+
 ![](../../attachments/Pasted%20image%2020210527173814.png)
 ![](../../attachments/Pasted%20image%2020210527175202.png)
 ![](../../attachments/Pasted%20image%2020210527175221.png)
