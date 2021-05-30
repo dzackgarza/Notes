@@ -11,11 +11,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 
 ## Todos
 
-- [ ] Form for Talbot notes
-- [ ] Finish [Representation Stability](https://s.wayne.edu/echt/echt-minicourses/) notes
-- [ ] Finish ANT notes
-	- [ ] April 15
-	- [ ] 
+- [ ] Send form about notes for Talbot
 - Qual Sessions Week 3:
 	- [ ] Write up Algebra material
 	- [ ] Write up Complex material
@@ -25,6 +21,14 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Send out Complex study guide
 	- [ ] Send out Real study guide
 	- [ ] Send out Topology study guide
+- [ ] Finish ANT notes
+	- [ ] April 13
+	- [ ] April 15
+	- [ ] April 20
+	- [ ] April 26
+	- [ ] April 29
+- [ ] Finish [Representation Stability](https://s.wayne.edu/echt/echt-minicourses/) notes
+- [ ] Finish Stacks notes
 
 ## Links
 
