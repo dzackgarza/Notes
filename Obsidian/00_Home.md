@@ -31,6 +31,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Missing talk #1
 	- [ ] Missting talk #2
 - [ ] Finish Stacks notes
+- [ ] Find GOSS speaker for open slot
 
 ## Links
 
