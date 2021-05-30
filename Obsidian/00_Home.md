@@ -21,13 +21,14 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [Topology Resources Page](https://www.notion.so/Topology-956635f7ae6a4a7bbccbfb44609340fc)
 
 
-| Week           | Material Prepared | Assigned to   | Current Status | Finished | 
-|----------------|---------------|---------------|----------------|-----------|
-| Week 1 | []  |  | in progress | - [x] ok?
-| Week 2   | []  |  | in progress | [x] item1<br/>[ ] item2
-| Week 3   | []  |  | in progress | <ul><li>- [x] item1</li><li>- [ ] item2</li></ul>
-| Week 4   | []  |  | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+## Todos
 
+- Week 3:
+	- [ ] Prepare Algebra material
+	- [ ] Prepare Complex material
+	- [ ] Write up Real problems
+	- [ ] Prepare Topology material
+	- [ ] Send out Algebra study guide
 
 
 
