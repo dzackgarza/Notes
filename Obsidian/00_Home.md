@@ -7,9 +7,23 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 <iframe src="https://indify.co/widgets/live/countdown/2laxmHoH1erwI6jfHCEj"></iframe>
 
 
-
-
 # Current Stuff
+
+## Todos
+
+- [ ] Form for Talbot notes
+- [ ] Finish Representation Stability notes
+- Qual Sessions Week 3:
+	- [ ] Write up Algebra material
+	- [ ] Write up Complex material
+	- [ ] Write up Real problems
+	- [ ] Write up Topology material
+	- [ ] Send out Algebra study guide
+	- [ ] Send out Complex study guide
+	- [ ] Send out Real study guide
+	- [ ] Send out Topology study guide
+
+## Links
 
 - [Mock AMS Organization](https://www.notion.so/Mock-AMS-b9f2d582410c41eb9abf41f17c0b31c1)
 - [Website for Symplectic Reading Seminar](https://www.notion.so/Symplectic-Reading-Seminar-UGA-Summer-2021-1a2410e895014c82ae5b26c3550ad09f)
@@ -19,19 +33,6 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [Complex Resources Page](https://www.notion.so/Complex-Analysis-3ca8032a73fc4366836a9f5085f5e601)
 	- [Real Analysis Resources Page](https://www.notion.so/Real-Analysis-dd4bea135ffe40d68087500c77c1cb10)
 	- [Topology Resources Page](https://www.notion.so/Topology-956635f7ae6a4a7bbccbfb44609340fc)
-
-
-## Todos
-
-- Week 3:
-	- [ ] Prepare Algebra material
-	- [ ] Prepare Complex material
-	- [ ] Write up Real problems
-	- [ ] Prepare Topology material
-	- [ ] Send out Algebra study guide
-	- [ ] Send out Complex study guide
-	- [ ] Send out Real study guide
-	- [ ] Send out Topology study guide
 
 
 
