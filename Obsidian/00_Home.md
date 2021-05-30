@@ -29,6 +29,9 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Write up Real problems
 	- [ ] Prepare Topology material
 	- [ ] Send out Algebra study guide
+	- [ ] Send out Complex study guide
+	- [ ] Send out Real study guide
+	- [ ] Send out Topology study guide
 
 
 
