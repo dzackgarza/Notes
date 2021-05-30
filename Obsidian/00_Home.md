@@ -6,6 +6,7 @@
 
 # Current Stuff
 
+- [Mock AMS Organization](https://www.notion.so/Mock-AMS-b9f2d582410c41eb9abf41f17c0b31c1)
 - [Website for Symplectic Reading Seminar](https://www.notion.so/Symplectic-Reading-Seminar-UGA-Summer-2021-1a2410e895014c82ae5b26c3550ad09f)
 - Qual Sessions
 	- [Mailing Lists](https://groups.google.com/my-groups)
