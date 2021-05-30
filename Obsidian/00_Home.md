@@ -12,7 +12,10 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 ## Todos
 
 - [ ] Form for Talbot notes
-- [ ] Finish Representation Stability notes
+- [ ] Finish [Representation Stability](https://s.wayne.edu/echt/echt-minicourses/) notes
+- [ ] Finish ANT notes
+	- [ ] April 15
+	- [ ] 
 - Qual Sessions Week 3:
 	- [ ] Write up Algebra material
 	- [ ] Write up Complex material
