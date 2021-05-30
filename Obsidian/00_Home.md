@@ -12,7 +12,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 ## Todos
 
 - [ ] Send form about notes for Talbot
-- Qual Sessions Week 3:
+- Qual Sessions Week 3 prep:
 	- [ ] Write up Algebra material
 	- [ ] Write up Complex material
 	- [ ] Write up Real problems
@@ -28,6 +28,8 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] April 26
 	- [ ] April 29
 - [ ] Finish [Representation Stability](https://s.wayne.edu/echt/echt-minicourses/) notes
+	- [ ] Missing talk #1
+	- [ ] Missting talk #2
 - [ ] Finish Stacks notes
 
 ## Links

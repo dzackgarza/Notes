@@ -66,6 +66,7 @@ Resources
 
 ## Algebraic Number Theory
 - [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
+- [Computational ANT](https://wstein.org/books/ant/ant.pdf)
 
 ## Modular Forms
 
