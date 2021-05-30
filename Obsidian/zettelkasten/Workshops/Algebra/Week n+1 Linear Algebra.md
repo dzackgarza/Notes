@@ -6,3 +6,8 @@
 ![](../../attachments/Pasted%20image%2020210530003556.png)
 ![](../../attachments/Pasted%20image%2020210530003633.png)
 ![](../../attachments/Pasted%20image%2020210530003837.png)
+
+## Practice
+
+![](../../attachments/Pasted%20image%2020210530003954.png)
+![](../../attachments/Pasted%20image%2020210530004046.png)
