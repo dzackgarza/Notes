@@ -5272,7 +5272,7 @@ Pick \( \sigma \in G(L/K) \) with \( \sigma(Q) = Q' \). Factor \( P{\mathbb{Z}}_
 
 For the \( f \)s, note that \( \sigma \) induces a ring morphism between the residue fields:
 \[
-\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_K\Q &\to {\mathbb{Z}}_L/Q' \\
+\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_K/Q &\to {\mathbb{Z}}_L/Q' \\
 \alpha \pmod Q &\mapsto \sigma(\alpha) \pmod Q'
 .\]
 This is well-defined since \( \sigma(Q) = Q' \), and is an isomorphism since the inverse comes from \( \sigma ^{-1} \). This will imply that the \( f \)s are the same: we're looking at the degree of these extensions over \( {\mathbb{Z}}_K/P \). An element of \( {\mathbb{Z}}_L/Q \) also belonging to \( {\mathbb{Z}}_K/P \) (as a subfield) has the form \( \alpha \pmod Q \) where \( \alpha\in {\mathbb{Z}}_K \), and under \( \sigma \) this is sent to \( \sigma(\alpha)\pmod Q' = \alpha \pmod Q' \), which is an element of the copy of \( {\mathbb{Z}}_K/P\hookrightarrow{\mathbb{Z}}_L/Q' \). So \( \sigma \) identifies the copies of \( {\mathbb{Z}}_K/P \) in either side, and
@@ -5818,7 +5818,7 @@ Note that \( \deg \Phi_m(x) = \phi(m) \), since this is precisely how many terms
 -   Combining these, the coefficients are in \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu[x] \cap{\mathbb{Q}}[x] = {\mathbb{Z}}[x] \).
 :::
 
-::: {.proposition title=""}
+::: {.proposition title="?"}
 \( \Phi_m(x) = m(x) \coloneqq\min_{\zeta_m}(x) \) is the minimal polynomial of \( \zeta_m \) over \( {\mathbb{Q}} \).
 :::
 

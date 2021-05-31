@@ -7477,7 +7477,7 @@ This factors $P\ZZ_L$ into primes, and by uniqueness of prime factorization this
 
 For the $f$s, note that $\sigma$ induces a ring morphism between the residue fields:
 \[
-\bar\sigma: \ZZ_K\Q &\to \ZZ_L/Q' \\
+\bar\sigma: \ZZ_K/Q &\to \ZZ_L/Q' \\
 \alpha \mod Q &\mapsto \sigma(\alpha) \mod Q'
 .\]
 This is well-defined since $\sigma(Q) = Q'$, and is an isomorphism since the inverse comes from \( \sigma
@@ -8162,7 +8162,7 @@ We'll show that this is the minimal polynomial of $\zeta_m$
 - Combining these, the coefficients are in $\bar\ZZ[x] \intersect \QQ[x] = \ZZ[x]$.
 :::
 
-:::{.proposition title=""}
+:::{.proposition title="?"}
 $\Phi_m(x) = m(x) \da \min_{\zeta_m}(x)$ is the minimal polynomial of $\zeta_m$ over $\QQ$.
 :::
 
