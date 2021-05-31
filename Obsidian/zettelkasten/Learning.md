@@ -65,8 +65,8 @@ Resources
 [Seminar on Iwasawa theory](https://math.mit.edu/nt/old/stage_f17.html)
 
 ## Algebraic Number Theory
-- [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
-- [Computational ANT](https://wstein.org/books/ant/ant.pdf)
+See [Learning Algebraic Number Theory](Learning%20Algebraic%20Number%20Theory)
+
 
 ## Modular Forms
 

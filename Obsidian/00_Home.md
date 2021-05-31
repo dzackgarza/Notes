@@ -22,14 +22,14 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Send out Real study guide
 	- [ ] Send out Topology study guide
 - [ ] Finish ANT notes
-	- [ ] April 13
-	- [ ] April 15
-	- [ ] April 20
+	- [x] April 13
+	- [x] April 15
+	- [x] April 20
 	- [ ] April 26
 	- [ ] April 29
 - [ ] Finish [Representation Stability](https://s.wayne.edu/echt/echt-minicourses/) notes
-	- [ ] Missing talk #1
-	- [ ] Missting talk #2
+	- [ ] Missing talk [#1](https://www.youtube.com/watch?v=DYPEioTjiQQ)
+	- [ ] Missing talk [#2](https://www.youtube.com/watch?v=e9Q56IC-a48)
 - [ ] Finish Stacks notes
 - [ ] Find GOSS speaker for open slot
 

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Home.md",
-            "mode": "preview"
+            "file": "zettelkasten/Learning Algebraic Number Theory.md",
+            "mode": "source"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Learning Algebraic Number Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "zettelkasten/Learning Algebraic Number Theory.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Learning Algebraic Number Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "zettelkasten/Learning Algebraic Number Theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +241,15 @@
   },
   "active": "a7eecb88c72e4c10",
   "lastOpenFiles": [
-    "00_Home.md",
+    "zettelkasten/Learning Algebraic Number Theory.md",
     "zettelkasten/Learning.md",
+    "00_Home.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/Workshops/Algebra/Week n+1 Linear Algebra.md",
     "zettelkasten/Workshops/Algebra/Untitled.md",
     "zettelkasten/DVR.md",
     "zettelkasten/2021-04-28_Mock_AMS_2020_Ideas.md",
     "zettelkasten/special fiber.md",
-    "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md",
-    "zettelkasten/Workshops/Real Analysis/Real Week 1 Preliminaries.md"
+    "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md"
   ]
 }
