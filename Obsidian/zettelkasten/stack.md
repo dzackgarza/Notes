@@ -4,6 +4,10 @@ aliases: ["stack", "stacks"]
 
 Tags: #algebraicgeometry 
 
+# References
+
+- [AMS What is... a stack](http://www.ams.org/notices/200304/what-is.pdf)
+
 # Topics
 - Moduli stack
 	- [moduli stack of elliptic curves](moduli%20stack%20of%20elliptic%20curves)
