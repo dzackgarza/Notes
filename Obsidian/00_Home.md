@@ -11,7 +11,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 
 ## Todos
 
-- [ ] Send form about notes for Talbot
+- [x] Send form about notes for Talbot
 - [ ] Qual Sessions Week 3 prep:
 	- [ ] Write up Algebra material
 	- [ ] Write up Complex material
