@@ -8,6 +8,8 @@ Tags: #papers #reading
 
 > And overall, read classical papers by Adams, Pontryagin, Quillen, Serre, Sullivan, Thom...John Francis has a list of classical papers for the Kan seminar on his homepage.
 
+# Algebraic Topology
+
 - Algebraic Topology, The Kan Seminar
   <https://ocw.mit.edu/courses/mathematics/18-915-graduate-topology-seminar-kan-seminar-fall-2014/reading-list/list-of-possible-papers/>
   
@@ -97,3 +99,26 @@ Waldhausen, F. "Algebraic K-theory of Spaces." In _Algebraic and Geometric Topol
 -   Morava, Jack Forms of $K$-theory. Math. Z. 201 (1989), no. 3, 401--428.
 -   Martino, John; Priddy, Stewart The complete stable splitting for the classifying space of a finite group. Topology 31 (1992), no. 1, 143--156.
 -   Aguilar, M. A.; Prieto, Carlos Quasifibrations and Bott periodicity. II Iberoamerican Conference on Topology and its Applications (Morelia, 1997). Topology Appl. 98 (1999), no. 1-3, 3--17.
+
+# Algebraic Geometry
+-   Abramovich, Temkin, and Włodarczyk: Functorial embedded resolution via weighted blowings up
+-   Araujo, Druel, Kovács: Cohomological characterizations of projective spaces and hyperquadrics.
+-   Bayer, Lahoz, Macrì, Nuer, Perry, and Stellari: Stability conditions in families
+-   Bhatt: On the direct summand conjecture and its derived variant
+-   Birkar, Cascini, Hacon, McKernan: Existence of minimal models for varieties of log general type
+-   Blanc and Cantat: Dynamical degrees of birational transformations of projective surfaces.
+-   Blekherman, Smith, Velasco: Sums of squares and varieties of minimal degree.
+-   Bondal and Orlov, Reconstruction of a variety from the derived category and groups of autoequivalences
+-   Bridgeland: Stability conditions on triangulated categories
+-   Cesnavicius and Scholze: Purity for flat cohomology
+-   Eisenbud and Schreyer: Betti numbers of graded modules and cohomology of vector bundles.
+-   Esnault and Mehta: Simply connected projective manifolds in characteristic p>0 have no nontrivial stratified bundles
+-   Hassett, Pirutka, and Tschinkel: Stable rationality of quadric surface bundles over surfaces
+-   Huh: Milnor numbers of projective hypersurfaces and the chromatic polynomial of graphs.
+-   Kuznetsov, Homological projective duality
+-   Laza, Saccà, Voisin: A hyper-Kähler compactification of the intermediate Jacobian fibration associated with a cubic 4-fold.
+-   Maulik, Nekrasov, Okounkov, and Pandharipande: Gromov-Witten theory and Donaldson-Thomas theory. I & II
+-   Nicaise and Shinder: The motivic nearby fiber and degeneration of stable rationality
+-   Popa and Schnell: Kodaira dimension and zeros of holomorphic one-forms
+-   Totaro: Hodge theory of classifying stacks.
+-   Voisin: Unirational threefolds with no universal codimension 2 cycle

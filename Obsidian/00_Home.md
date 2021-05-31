@@ -11,7 +11,6 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 
 ## Todos
 
-- [x] Send form about notes for Talbot
 - [ ] Qual Sessions Week 3 prep:
 	- [ ] Write up Algebra material
 	- [ ] Write up Complex material
@@ -22,15 +21,21 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Send out Real study guide
 	- [ ] Send out Topology study guide
 - [ ] Finish ANT notes
-	- [x] April 13
-	- [x] April 15
-	- [x] April 20
 	- [ ] April 26
 	- [ ] April 29
 - [ ] Finish [Representation Stability](https://s.wayne.edu/echt/echt-minicourses/) notes
 	- [ ] Missing talk [#1](https://www.youtube.com/watch?v=DYPEioTjiQQ)
 	- [ ] Missing talk [#2](https://www.youtube.com/watch?v=e9Q56IC-a48)
 - [ ] Finish Stacks notes
+	- [Notion tracking](https://www.notion.so/Stacks-and-Moduli-Spaces-4a8d1db0396149a7a1b637a931774333)
+	- [Youtube Playlist](https://www.youtube.com/channel/UCVelX9CBOQmyWr56jDECJpA)
+	- [ ] Check lecture 13
+	- [ ] Lecture 14
+	- [ ] Lecture 15
+	- [ ] Lecture 16
+	- [ ] Lecture 17
+	- [ ] Lecture 18
+	- [ ] Collect notes into PDF and scaffold
 - [ ] Find GOSS speaker for open slot
 
 ## Links

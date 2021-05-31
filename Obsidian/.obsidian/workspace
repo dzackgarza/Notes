@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Learning Algebraic Number Theory.md",
+            "file": "zettelkasten/Papers to Read.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning Algebraic Number Theory.md",
+                "file": "zettelkasten/Papers to Read.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning Algebraic Number Theory.md"
+                "file": "zettelkasten/Papers to Read.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning Algebraic Number Theory.md",
+                "file": "zettelkasten/Papers to Read.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning Algebraic Number Theory.md",
+                "file": "zettelkasten/Papers to Read.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +241,15 @@
   },
   "active": "a7eecb88c72e4c10",
   "lastOpenFiles": [
-    "zettelkasten/Learning Algebraic Number Theory.md",
-    "zettelkasten/Learning.md",
+    "zettelkasten/Papers to Read.md",
     "00_Home.md",
+    "zettelkasten/Learning.md",
+    "zettelkasten/Learning Algebraic Number Theory.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/Workshops/Algebra/Week n+1 Linear Algebra.md",
     "zettelkasten/Workshops/Algebra/Untitled.md",
     "zettelkasten/DVR.md",
     "zettelkasten/2021-04-28_Mock_AMS_2020_Ideas.md",
-    "zettelkasten/special fiber.md",
-    "zettelkasten/Workshops/Real Analysis/Real Week 2 Measure Theory.md"
+    "zettelkasten/special fiber.md"
   ]
 }
