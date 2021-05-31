@@ -9825,8 +9825,8 @@ The action of \(G(L/K)\) on primes above \(P\) is transitive.
 \begin{proof}[?]
 
 Let \(Q_1, Q_2\) be primes above \(P\) and suppose toward a
-contradiction that \(\Orb(Q_1)\) does not contain \(Q_2\). We may choose
-\(\alpha\in {\mathbb{Z}}_L\) such that
+contradiction that \({\mathrm{Orb}}(Q_1)\) does not contain \(Q_2\). We
+may choose \(\alpha\in {\mathbb{Z}}_L\) such that
 
 \begin{itemize}
 \tightlist
@@ -9841,7 +9841,7 @@ This system can be solved by the CRT, since the \(Q_i\) are pairwise
 comaximal, since nonzero primes of a number ring are maximal. These
 congruences say \(\alpha\in Q_2\) but not any other \(Q\), since
 \(0\equiv 1\) only in the unit ideal. Define
-\(\beta = \prod_{\sigmma \in G(L/K)} \sigma( \alpha) \in {\mathbb{Z}}_K\),
+\(\beta = \prod_{\sigma \in G(L/K)} \sigma( \alpha) \in {\mathbb{Z}}_K\),
 and observe that \(\beta\not\in Q_1\). If it were in \(Q_1\), one
 \(\sigma(\alpha) \in Q_1\) for some \(\sigma \in G(L/K)\) which would
 force \(\alpha = \sigma \sigma^{-1}( \alpha) \in \sigma^{-1}(Q_1)\),
@@ -9894,7 +9894,7 @@ by definition.
 For the \(f\)s, note that \(\sigma\) induces a ring morphism between the
 residue fields:
 \begin{align*}
-\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_?\Q &\to {\mathbb{Z}}_L/Q' \\
+\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_K\Q &\to {\mathbb{Z}}_L/Q' \\
 \alpha \pmod Q &\mapsto \sigma(\alpha) \pmod Q'
 .\end{align*}
 This is well-defined since \(\sigma(Q) = Q'\), and is an isomorphism
@@ -9927,7 +9927,7 @@ efg = n \coloneqq[L:K]
 
 \begin{proof}[?]
 
-Using the previous efg theorem, \(\sum_{i=1}^g e_ f_i = n\), but by the
+Using the previous efg theorem, \(\sum_{i=1}^g e_i f_i = n\), but by the
 previous proposition, all of the \(e_i\) are the same and all of the
 \(f_i\) are the same.
 
@@ -10256,7 +10256,7 @@ In summary,
 \item
   \(\# D(Q/P) = f\),
 \item
-  \(\E I(Q/P) = e\),
+  \(\# I(Q/P) = e\),
 \item
   If \(P\) is unramified, \(e=1\) and \(I(Q/P)\) is trivial and
   \({ \text{red} }_{Q/P}\) is an isomorphism.
@@ -10829,6 +10829,11 @@ Let \(L/K\) be Galois and let \(Q,Q'\) be two primes lying above \(P\):
     \arrow[no head, from=1-5, to=3-4]
 \end{tikzcd}
 \end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNSxbMCwwLCJMIl0sWzAsMiwiSyJdLFszLDIsIlAiXSxbMiwwLCJRIl0sWzQsMCwiUSciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDIsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
 
 Since Galois acts transitively, we can write \(Q' = \sigma(Q)\) for some
 \(\sigma \in G(L/K)\). Then

@@ -70,6 +70,7 @@
 \newcommand{\fp}[0]{\operatorname{fp}}
 \newcommand{\HT}[0]{{\operatorname{HT}}}
 \newcommand{\LC}[0]{{\mathrm{LC}}}
+\newcommand{\Orb}[0]{{\mathrm{Orb}}}
 \newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
@@ -7445,7 +7446,7 @@ We may choose $\alpha\in \ZZ_L$ such that
 
 This system can be solved by the CRT, since the $Q_i$ are pairwise comaximal, since nonzero primes of a number ring are maximal.
 These congruences say $\alpha\in Q_2$ but not any other $Q$, since $0\equiv 1$ only in the unit ideal.
-Define $\beta = \prod_{\sigmma \in G(L/K)} \sigma( \alpha) \in \ZZ_K$, and observe that $\beta\not\in Q_1$.
+Define $\beta = \prod_{\sigma \in G(L/K)} \sigma( \alpha) \in \ZZ_K$, and observe that $\beta\not\in Q_1$.
 If it were in $Q_1$, one $\sigma(\alpha) \in Q_1$ for some $\sigma \in G(L/K)$ which would force $\alpha = \sigma \sigma\inv ( \alpha) \in \sigma\inv (Q_1)$, which contradicts the choice of $\alpha$ since \( \sigma\inv(Q_1) \) is one of the $Q$s appearing in the second congruence.
 On the other hand we have $\beta\in Q_2$ since the identity is an element of $G(L/K)$ and $\alpha\in Q_2$ and $\beta$ is a multiple of $\alpha$.
 We know $\beta\in \ZZ_K$, so $\beta \in Q_2 \intersect \ZZ_K = P$.
@@ -7476,7 +7477,7 @@ This factors $P\ZZ_L$ into primes, and by uniqueness of prime factorization this
 
 For the $f$s, note that $\sigma$ induces a ring morphism between the residue fields:
 \[
-\bar\sigma: \ZZ_?\Q &\to \ZZ_L/Q' \\
+\bar\sigma: \ZZ_K\Q &\to \ZZ_L/Q' \\
 \alpha \mod Q &\mapsto \sigma(\alpha) \mod Q'
 .\]
 This is well-defined since $\sigma(Q) = Q'$, and is an isomorphism since the inverse comes from \( \sigma
@@ -7499,7 +7500,7 @@ efg = n \da [L:K]
 :::
 
 :::{.proof title="?"}
-Using the previous efg theorem, $\sum_{i=1}^g e_ f_i = n$, but by the previous proposition, all of the $e_i$ are the same and all of the $f_i$ are the same.
+Using the previous efg theorem, $\sum_{i=1}^g e_i f_i = n$, but by the previous proposition, all of the $e_i$ are the same and all of the $f_i$ are the same.
 :::
 
 :::{.example title="?"}
@@ -7676,7 +7677,7 @@ We also have
 In summary, 
 
 - $\# D(Q/P) = f$,
-- $\E I(Q/P) = e$,
+- $\# I(Q/P) = e$,
 - If $P$ is unramified, $e=1$ and $I(Q/P)$ is trivial and $\red_{Q/P}$ is an isomorphism.
 
 This map is usually an isomorphism, since there are only finitely many $P$ ion $\ZZ_K$ that ramify in $\ZZ_L$.
@@ -8068,7 +8069,6 @@ Setup and reminders:
 :::{.proposition title="?"}
 Let $L/K$ be Galois and let $Q,Q'$ be two primes lying above $P$:
 
-% https://q.uiver.app/?q=WzAsNSxbMCwwLCJMIl0sWzAsMiwiSyJdLFszLDIsIlAiXSxbMiwwLCJRIl0sWzQsMCwiUSciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDIsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=
 \begin{tikzcd}
 	L && Q && {Q'} \\
 	\\
@@ -8077,6 +8077,9 @@ Let $L/K$ be Galois and let $Q,Q'$ be two primes lying above $P$:
 	\arrow[no head, from=1-3, to=3-4]
 	\arrow[no head, from=1-5, to=3-4]
 \end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJMIl0sWzAsMiwiSyJdLFszLDIsIlAiXSxbMiwwLCJRIl0sWzQsMCwiUSciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDIsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
 
 Since Galois acts transitively, we can write $Q' = \sigma(Q)$ for some $\sigma \in G(L/K)$.
 Then

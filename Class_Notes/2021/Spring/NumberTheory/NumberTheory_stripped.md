@@ -5242,12 +5242,12 @@ The action of \( G(L/K) \) on primes above \( P \) is transitive.
 :::
 
 ::: {.proof title="?"}
-Let \( Q_1, Q_2 \) be primes above \( P \) and suppose toward a contradiction that \( \Orb(Q_1) \) does not contain \( Q_2 \). We may choose \( \alpha\in {\mathbb{Z}}_L \) such that
+Let \( Q_1, Q_2 \) be primes above \( P \) and suppose toward a contradiction that \( {\mathrm{Orb}}(Q_1) \) does not contain \( Q_2 \). We may choose \( \alpha\in {\mathbb{Z}}_L \) such that
 
 -   \( \alpha \equiv 0 \pmod Q_2 \)
 -   \( \alpha \equiv 1 \pmod Q \) for all \( Q \) of the form \( Q = \sigma(Q_1) \), noting that none are \( Q_2 \)
 
-This system can be solved by the CRT, since the \( Q_i \) are pairwise comaximal, since nonzero primes of a number ring are maximal. These congruences say \( \alpha\in Q_2 \) but not any other \( Q \), since \( 0\equiv 1 \) only in the unit ideal. Define \( \beta = \prod_{\sigmma \in G(L/K)} \sigma( \alpha) \in {\mathbb{Z}}_K \), and observe that \( \beta\not\in Q_1 \). If it were in \( Q_1 \), one \( \sigma(\alpha) \in Q_1 \) for some \( \sigma \in G(L/K) \) which would force \( \alpha = \sigma \sigma^{-1}( \alpha) \in \sigma^{-1}(Q_1) \), which contradicts the choice of \( \alpha \) since \( \sigma^{-1}(Q_1) \) is one of the \( Q \)s appearing in the second congruence. On the other hand we have \( \beta\in Q_2 \) since the identity is an element of \( G(L/K) \) and \( \alpha\in Q_2 \) and \( \beta \) is a multiple of \( \alpha \). We know \( \beta\in {\mathbb{Z}}_K \), so \( \beta \in Q_2 \cap{\mathbb{Z}}_K = P \). But this is fishy because \( Q_1, Q_2 \) both lie above \( P \) and both must contain \( P \):
+This system can be solved by the CRT, since the \( Q_i \) are pairwise comaximal, since nonzero primes of a number ring are maximal. These congruences say \( \alpha\in Q_2 \) but not any other \( Q \), since \( 0\equiv 1 \) only in the unit ideal. Define \( \beta = \prod_{\sigma \in G(L/K)} \sigma( \alpha) \in {\mathbb{Z}}_K \), and observe that \( \beta\not\in Q_1 \). If it were in \( Q_1 \), one \( \sigma(\alpha) \in Q_1 \) for some \( \sigma \in G(L/K) \) which would force \( \alpha = \sigma \sigma^{-1}( \alpha) \in \sigma^{-1}(Q_1) \), which contradicts the choice of \( \alpha \) since \( \sigma^{-1}(Q_1) \) is one of the \( Q \)s appearing in the second congruence. On the other hand we have \( \beta\in Q_2 \) since the identity is an element of \( G(L/K) \) and \( \alpha\in Q_2 \) and \( \beta \) is a multiple of \( \alpha \). We know \( \beta\in {\mathbb{Z}}_K \), so \( \beta \in Q_2 \cap{\mathbb{Z}}_K = P \). But this is fishy because \( Q_1, Q_2 \) both lie above \( P \) and both must contain \( P \):
 
 ```{=tex}
 \begin{tikzcd}
@@ -5272,7 +5272,7 @@ Pick \( \sigma \in G(L/K) \) with \( \sigma(Q) = Q' \). Factor \( P{\mathbb{Z}}_
 
 For the \( f \)s, note that \( \sigma \) induces a ring morphism between the residue fields:
 \[
-\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_?\Q &\to {\mathbb{Z}}_L/Q' \\
+\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_K\Q &\to {\mathbb{Z}}_L/Q' \\
 \alpha \pmod Q &\mapsto \sigma(\alpha) \pmod Q'
 .\]
 This is well-defined since \( \sigma(Q) = Q' \), and is an isomorphism since the inverse comes from \( \sigma ^{-1} \). This will imply that the \( f \)s are the same: we're looking at the degree of these extensions over \( {\mathbb{Z}}_K/P \). An element of \( {\mathbb{Z}}_L/Q \) also belonging to \( {\mathbb{Z}}_K/P \) (as a subfield) has the form \( \alpha \pmod Q \) where \( \alpha\in {\mathbb{Z}}_K \), and under \( \sigma \) this is sent to \( \sigma(\alpha)\pmod Q' = \alpha \pmod Q' \), which is an element of the copy of \( {\mathbb{Z}}_K/P\hookrightarrow{\mathbb{Z}}_L/Q' \). So \( \sigma \) identifies the copies of \( {\mathbb{Z}}_K/P \) in either side, and
@@ -5289,7 +5289,7 @@ efg = n \coloneqq[L:K]
 :::
 
 ::: {.proof title="?"}
-Using the previous efg theorem, \( \sum_{i=1}^g e_ f_i = n \), but by the previous proposition, all of the \( e_i \) are the same and all of the \( f_i \) are the same.
+Using the previous efg theorem, \( \sum_{i=1}^g e_i f_i = n \), but by the previous proposition, all of the \( e_i \) are the same and all of the \( f_i \) are the same.
 :::
 
 ::: {.example title="?"}
@@ -5424,7 +5424,7 @@ We also have
 In summary,
 
 -   \( \# D(Q/P) = f \),
--   \( \E I(Q/P) = e \),
+-   \( \# I(Q/P) = e \),
 -   If \( P \) is unramified, \( e=1 \) and \( I(Q/P) \) is trivial and \( { \text{red} }_{Q/P} \) is an isomorphism.
 
 This map is usually an isomorphism, since there are only finitely many \( P \) ion \( {\mathbb{Z}}_K \) that ramify in \( {\mathbb{Z}}_L \).
@@ -5745,6 +5745,8 @@ Let \( L/K \) be Galois and let \( Q,Q' \) be two primes lying above \( P \):
     \arrow[no head, from=1-5, to=3-4]
 \end{tikzcd}
 ```
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCwwLCJMIl0sWzAsMiwiSyJdLFszLDIsIlAiXSxbMiwwLCJRIl0sWzQsMCwiUSciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDIsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
 Since Galois acts transitively, we can write \( Q' = \sigma(Q) \) for some \( \sigma \in G(L/K) \). Then
 \[
 \mathop{\mathrm{Frob}}_{Q'/P} = \sigma \circ \mathop{\mathrm{Frob}}_{Q/P} \circ \sigma^{-1}
