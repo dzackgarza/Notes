@@ -25,6 +25,8 @@ Reference: \[BR, 2.2\].
 
 > 6/21 The Adams spectral sequence
 
+<http://www.rrb.wayne.edu/papers/adams.pdf>
+
 # Talk 3: E-infinity ring spectra (7/26)
 
 > 7/26 E-infinity ring spectra
