@@ -7,6 +7,7 @@ aliases: ["simplicial sets", "sSets"]
 
 - [Simplicial homotopy theory lecture notes](attachments/SimplicialHomotopyTheory_LectureNotes%20(1).pdf)
 - Chapter 3 https://mandal.ku.edu/M996QuillenKTheory/0TheKBooK.pdf
+- <http://pi.math.cornell.edu/~web7400/7400-notes_05_10_15.pdf>
 
 # Notes
 
