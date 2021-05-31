@@ -118,6 +118,7 @@
 \newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
+\newcommand{\Syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
 \newcommand{\fpqc}[0]{\mathrm{\operatorname{fpqc}}}
@@ -183,6 +184,7 @@
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\FI}[0]{{\mathsf{FI}}}
+\newcommand{\GSets}[0]{{G\dash\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
 \newcommand{\Finset}[0]{{\mathsf{FinSet}}}
 \newcommand{\sSet}[0]{{\mathsf{sSet}}}
@@ -319,8 +321,9 @@
 \newcommand{\del}[0]{{\partial}}
 \newcommand{\directlim}[0]{\varinjlim}
 \newcommand{\inverselim}[0]{\varprojlim}
-\newcommand{\disjoint}[0]{{\coprod}}
+\newcommand{\disjoint}[0]{{\textstyle\coprod}}
 \newcommand{\Disjoint}[0]{\displaystyle\coprod}
+\newcommand{\Sum}[0]{ \displaystyle\sum }
 \newcommand{\dual}[0]{ {}^{ \check{} }}
 \newcommand{\sm}[0]{\setminus}
 \newcommand{\smz}[0]{\setminus\theset{0}}
@@ -461,7 +464,7 @@
 \newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
 %\newcommand{\strike}[1]{{\enclose{\horizontalstrike}{#1}}}
 \newcommand{\st}[0]{{~\mathrel{\Big|}~}}
-\newcommand{\St}[0]{{\mathsf{St}}}
+\newcommand{\St}[0]{{\mathsf{Stk}}}
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
@@ -521,6 +524,7 @@
 \newcommand\Prinbun{\mathrm{Bun}^{\mathrm{prin}}}
 \newcommand\TMF{ \mathrm{TMF} }
 \newcommand\tmf{ \mathrm{tmf} }
+\newcommand\Fix{ \mathrm{Fix} }
 
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
@@ -650,6 +654,7 @@
 \newcommand\hodgestar[0]{\star}
 \newcommand\dirac[0]{\mkern-3mu \not{ \partial} }
 \newcommand\laplacian[0]{\Delta}
+\newcommand\Laplacian[0]{\Delta}
 \newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
 \newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
@@ -721,6 +726,7 @@
 \newcommand{\ess}[0]{{\mathrm{ess}}}
 \newcommand{\fd}[0]{{\mathrm{fd}}}
 \newcommand{\fg}[0]{{\mathrm{fg}}}
+\newcommand{\irr}[0]{{\mathrm{irr}}}
 \newcommand{\ft}[0]{{\mathrm{ft}}}
 \newcommand{\smol}[0]{{\mathrm{small}}}
 \newcommand{\alev}[0]{{\,\mathrm{a.e.}}}
@@ -736,6 +742,12 @@
 \newcommand{\dualnumbers}[0]{{ [\eps] / \eps^2 }}
 \newcommand{\nerve}[1]{{ \mathcal{N}({#1}) }}
 \newcommand{\realize}[1]{{ \abs{#1} }}
+
+# Preface
+
+See [Youtube Video Playlist](https://www.youtube.com/watch?v=JGLuFkqXIpI&list=PLA0xtXqOUji8fjQysx4k8a6h-hOZ7x5ue).
+
+
 
 # Notation
 
@@ -6957,8 +6969,6 @@ Using the formula, rearranging yields a bound
 :::
 
 
-# Saturday, May 22
-
 # Ch. 21: Consequences of Minkowski's Bound (Saturday, May 22)
 
 :::{.remark}
@@ -6979,7 +6989,7 @@ The worst case, i.e. the smallest it could be, is when $2r_2$ is as large as pos
 \abs{\discriminant_K} \geq \qty{n^n\over n!}^2 \qty{\pi/4}^n \da B_n
 .\]
 How does $B_n$ grow?
-We could use Stirling's formula, but we'll take a crude bound by looking at rations:
+We could use Stirling's formula, but we'll take a crude bound by looking at ratios:
 \[
 {B_{n+1} \over B_n} 
 &= (1 + {1\over n})^{2n} (\pi/4)\\
@@ -7263,3 +7273,1046 @@ Paul strongly recommends!
 
 
 
+
+# Ch. XYZ: April 6 
+
+## Multiplicativity in Towers
+
+:::{.remark}
+An important topic not in the book: relative extensions of number fields, vs absolute extensions over $\QQ$.
+
+\begin{tikzcd}
+	L && {\ZZ_?} && Q \\
+	\\
+	K && {\ZZ_K} && {P = Q \intersect \ZZ_K}
+	\arrow[no head, from=1-5, to=3-5]
+	\arrow[no head, from=1-3, to=3-3]
+	\arrow[no head, from=1-1, to=3-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiSyJdLFsyLDAsIlxcWlpfPyJdLFsyLDIsIlxcWlpfSyJdLFs0LDAsIlEiXSxbNCwyLCJQID0gUSBcXGludGVyc2VjdCBcXFpaX0siXSxbNCw1LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+Note that if $Q\contains P$, then $Q$ will divide the extension of $P$ to $\ZZ_L$, if $Q$ will show up in the prime factorization of $P\ZZ_L$.
+We defined $e(Q/P)$ to be the exponent of $Q$ in the factorization of $P\ZZ_L$, and $f(Q/P)$ to be the degree of the field extension $\ZZ_L/Q$ over $\ZZ_K/P$.
+:::
+
+:::{.remark}
+Note that "lying above" is transitive, and the following situation makes sense:
+
+\begin{tikzcd}
+	M && {P''} \\
+	\\
+	L && {P'} \\
+	\\
+	K && P
+	\arrow[no head, from=3-1, to=5-1]
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-3]
+	\arrow[no head, from=3-3, to=5-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwyLCJMIl0sWzAsNCwiSyJdLFswLDAsIk0iXSxbMiw0LCJQIl0sWzIsMiwiUCciXSxbMiwwLCJQJyciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+How are the various $e$ and $f$ related?
+It turns out they work similarly to degrees of field extensions:
+:::
+
+:::{.theorem title="Multiplicativity in towers"}
+\[
+e(P''/P) &= e(P''/P') \cdot e(P'/P) \\
+f(P''/P) &= f(P''/P') \cdot f(P'/P) 
+.\]
+:::
+
+:::{.proof title="?"}
+Note that $f$ is the degree of a field extension where we take $\ZZ_K/P \embeds \ZZ_L$ and consider the induced quotient map to $\ZZ_L/Q$.
+By composing inclusions we have a commutative diagram:
+
+\begin{tikzcd}
+	{\ZZ_K/P} && {\ZZ_L/P'} && {\ZZ_M/P''}
+	\arrow[hook, from=1-1, to=1-3]
+	\arrow[hook, from=1-3, to=1-5]
+	\arrow[curve={height=30pt}, hook, from=1-1, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXFpaX0svUCJdLFsyLDAsIlxcWlpfTC9QJyJdLFs0LDAsIlxcWlpfTS9QJyciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMiwiIiwyLHsiY3VydmUiOjUsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d)
+
+So for $f$, this reduces to the multiplicativity of degrees in towers of field extensions.
+
+
+For $e$, write $P\ZZ_L = P'^{e(P'/P)} I$ where $I\in \Id(\ZZ_L)$ is nonzero and $P'\notdivides I$.
+Similarly we can write $P' \ZZ_< = P''^{e(P'/P')} J$ where $J\in \Id(\ZZ_L)$ and $P''\notdivides J$.
+Using general facts about ideal extensions and substituting yields
+\[
+P\ZZ_M 
+&= (P\ZZ_L)\ZZ_M \\
+&= (P'\ZZ_M)^{e(P'/P)} I\ZZ_M \\
+&= P''^{e(P'/P) e(P'/P')} J^{e(P'/P)} (I\ZZ_M) \\
+.\]
+
+We know that $P''\notdivides J$, so it doesn't divide any power of $J$ either.
+We can check that $P''\notdivides I\ZZ_M$: otherwise, if it did then $P''\supseteq I\ZZ_M$ and 
+\[
+P'' \intersect \ZZ_L \supseteq (I\ZZ_M) \intersect \ZZ_L \supset I
+\]
+by intersecting both sides with $\ZZ_L$.
+But we know $P'' \intersect \ZZ_L = P'$ since $P''$ was above $P'$, and $P'\notdivides I$ and thus $P'\not\contains I$.
+:::
+
+:::{.definition title="Splitting completely"}
+Suppose $L/K$ is an extension of number fields and say $P\supseteq \ZZ_K$ is a nonzero prime ideal.
+Then $P$ **splits completely** in $L$ (or $\ZZ_L$) if $e(G/P) = f(G/P) = 1$ for all $G$ above $P$ in $\ZZ_L$.
+Equivalently, there is a factorization $P\ZZ_L = \prod_{i\leq n} Q_i$ with the $Q_i$ distinct and $n \da [L: K]$.
+:::
+
+:::{.proposition title="?"}
+Let $M/L/K$ be a tower of number fields and $P\in \spec \ZZ_K$.
+Then if $P$ splits completely in $M$, it splits completely in $L$.
+:::
+
+:::{.slogan}
+Splitting completely in an extension implies splitting completely in every intermediate extension.
+:::
+
+:::{.proof title="?"}
+Suppose $P$ splits completely in $M$, we then want to show that for any $P'$ in $\ZZ_L$ above $P$, then $e=f=1$.
+We know $P'$ has some prime factor, so choose any $P''$ in $\ZZ_M$ above $P'$:
+
+\begin{tikzcd}
+	M && {\exists P''} \\
+	\\
+	L && {P'} \\
+	\\
+	K && P
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=3-1, to=5-1]
+	\arrow[no head, from=5-3, to=3-3]
+	\arrow[no head, from=1-3, to=3-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCw0LCJLIl0sWzAsMiwiTCJdLFswLDAsIk0iXSxbMiw0LCJQIl0sWzIsMiwiUCciXSxbMiwwLCJcXGV4aXN0cyBQJyciXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw0LCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+Since $P''$ is above $P$ and $e(P''/P) = f(P''/P) =1$, we can use multiplicativity in towers:
+\[
+e(P'/P) \divides e(P''/P) = 1 &\implies e(P'/P) = 1 \\
+f(P'/P) \divides f(P''/P) = 1 &\implies f(P'/P) = 1 \\
+.\]
+:::
+
+:::{.definition title="?"}
+If $L/K$ is an extension of number fields and $P\in \spec \ZZ_K$ is nonzero, then $P$ **ramifies** in $L$ (or $\ZZ_L$) if $e(Q/P)>1$ for some $Q\in \spec \ZZ_L$ above $P$.
+:::
+
+:::{.proposition title="?"}
+For $M/L/K$ a tower of number fields and $P\in \spec \ZZ_K$ is nonzero and unramified in $M$, then $P$ is unramified in $L$.
+:::
+
+:::{.proof title="?"}
+Same as the last proof.
+:::
+
+## Galois Theory and Prime Decomposition
+
+:::{.remark}
+This will lead into defining the Frobenius element and the fundamental theorem of algebraic number theory: Chebotarev Density.
+Some setup/notation:
+
+- $L/K$ will be a Galois extension of number of fields
+- $P \in \spec \ZZ_K, Q\in \spec \ZZ_L$ will be nonzero prime ideals.
+  We may or may not require $Q$ to lie above $P$.
+:::
+
+:::{.remark}
+\envlist
+
+- Any $\sigma \in G(L/K)$ is an automorphism of $L$ fixing $K$, which restricts to an automorphism of $\ZZ_L$ since it preserves algebraic integers.
+  - It also preserves prime ideals.
+- Suppose $Q$ lies above $P$, then $P\ZZ_L = Q^{e(Q/p)} \cdots$.
+  $\sigma$ fixes $K$ pointwise, so applying it to both sides yields $P\ZZ_L = \sigma(Q)^{e(Q/P)}\cdots$ where $\sigma(Q)$ shows up with the exact same power since it preserves distinctness of ideals.
+  - In particular, $\sigma(G)$ lies above $P$, so $G(L/K)$ acts on the set of primes above $P$, and it turns out (very importantly) to be transitive.
+:::
+
+:::{.theorem title="?"}
+The action of $G(L/K)$ on primes above $P$ is transitive.
+:::
+
+:::{.proof title="?"}
+Let $Q_1, Q_2$ be primes above $P$ and suppose toward a contradiction that $\Orb(Q_1)$ does not contain $Q_2$.
+We may choose $\alpha\in \ZZ_L$ such that 
+
+- $\alpha \equiv 0 \mod Q_2$
+- $\alpha \equiv 1 \mod Q$ for all $Q$ of the form $Q = \sigma(Q_1)$, noting that none are $Q_2$
+
+This system can be solved by the CRT, since the $Q_i$ are pairwise comaximal, since nonzero primes of a number ring are maximal.
+These congruences say $\alpha\in Q_2$ but not any other $Q$, since $0\equiv 1$ only in the unit ideal.
+Define $\beta = \prod_{\sigmma \in G(L/K)} \sigma( \alpha) \in \ZZ_K$, and observe that $\beta\not\in Q_1$.
+If it were in $Q_1$, one $\sigma(\alpha) \in Q_1$ for some $\sigma \in G(L/K)$ which would force $\alpha = \sigma \sigma\inv ( \alpha) \in \sigma\inv (Q_1)$, which contradicts the choice of $\alpha$ since \( \sigma\inv(Q_1) \) is one of the $Q$s appearing in the second congruence.
+On the other hand we have $\beta\in Q_2$ since the identity is an element of $G(L/K)$ and $\alpha\in Q_2$ and $\beta$ is a multiple of $\alpha$.
+We know $\beta\in \ZZ_K$, so $\beta \in Q_2 \intersect \ZZ_K = P$.
+But this is fishy because $Q_1, Q_2$ both lie above $P$ and both must contain $P$:
+
+\begin{tikzcd}
+	{Q_1} && {Q_2} \\
+	\\
+	& P
+	\arrow[no head, from=1-1, to=3-2]
+	\arrow[no head, from=1-3, to=3-2]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMSwyLCJQIl0sWzAsMCwiUV8xIl0sWzIsMCwiUV8yIl0sWzEsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDAsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+Since $\beta$ is in every ideal above $P$, in particular $\beta \in Q_1$ since $Q_1 \contains P$, and this is a contradiction.
+:::
+
+:::{.proposition title="?"}
+If $Q, Q'$ both lie above $P$, then $e(Q/P) = e(Q'/P)$ and $f(Q/P) = f(Q'/P)$.
+:::
+
+:::{.proof title="?"}
+Pick $\sigma \in G(L/K)$ with $\sigma(Q) = Q'$.
+Factor $P\ZZ_L = Q^{e(Q/P)} J$ where $J$ is a product of primes not equal to $Q$.
+Applying $\sigma$ yields $P\ZZ_L = Q'^{e(Q/P)} J'$ where $J'$ is a product of primes not equal to $Q'$.
+This factors $P\ZZ_L$ into primes, and by uniqueness of prime factorization this exponent has to be $e(Q'/P)$ by definition. 
+
+For the $f$s, note that $\sigma$ induces a ring morphism between the residue fields:
+\[
+\bar\sigma: \ZZ_?\Q &\to \ZZ_L/Q' \\
+\alpha \mod Q &\mapsto \sigma(\alpha) \mod Q'
+.\]
+This is well-defined since $\sigma(Q) = Q'$, and is an isomorphism since the inverse comes from \( \sigma
+^{-1}\).
+This will imply that the $f$s are the same: we're looking at the degree of these extensions over $\ZZ_K/P$.
+An element of $\ZZ_L/Q$ also belonging to $\ZZ_K/P$ (as a subfield) has the form $\alpha \mod Q$ where $\alpha\in \ZZ_K$, and under $\sigma$ this is sent to $\sigma(\alpha)\mod Q' = \alpha \mod Q'$, which is an element of the copy of $\ZZ_K/P\injects \ZZ_L/Q'$.
+So $\sigma$ identifies the copies of $\ZZ_K/P$ in either side, and
+\[
+[\ZZ_L/Q : \ZZ_K/P] = [\ZZ_L/Q: \ZZ_K/P]
+.\]
+:::
+
+:::{.theorem title="efg theorem for Galois extensions"}
+Let $L/K$ be a Galois extension of number fields and $P\in \spec \ZZ_K$ be nonzero.
+Let $e,f$ be the common $e, f$ for all $Q$ above $P$, and let $g$ be the number of distinct $Q$ above $P$.
+Then
+\[
+efg = n \da [L:K]
+.\]
+:::
+
+:::{.proof title="?"}
+Using the previous efg theorem, $\sum_{i=1}^g e_ f_i = n$, but by the previous proposition, all of the $e_i$ are the same and all of the $f_i$ are the same.
+:::
+
+:::{.example title="?"}
+Let $L = \QQ(\zeta_5)$ over $K= \QQ$, which is Galois with $G(L/K) \cong (\ZZ/5)\units \cong \ZZ_4$.
+We know $\ZZ_L = \ZZ[\zeta_5]$, which actually happens for any $n$, and $\min_{\zeta_5}(x) = x^4 + x^3 + x^2 + x + 1$.
+Since $\ZZ_L$ is a monogenic, we can apply Dedekind-Kummer.
+
+- Factoring $2\ZZ_L = P$ yields a single factor, so $g=1$.
+  Since $e$ is the common exponent, $e=1$, so $f=4$.
+  If you factor $\min_{\zeta_5}$ mod 2, in order to get a single prime D-K says this must be irreducible and $f_i$ are the degrees of the irreducible factors.
+
+- $19\ZZ_L = P_1 P_2$, so $g=2, e=1$, and so $f=2$.
+
+- $11\ZZ_L = P_1 P_2 P_3 P_4$ yields $g=4, e=1, f=1$.
+
+- $5\ZZ_L = P_1^4$ so $g=1,e=4,f=1$.
+
+Can the combination $(e,f,g) = (2,2,1)$ occur?
+This would require a prime factoring as $P^2$, but the answer is know.
+In fact $e>1$ only happens for $5$ since this corresponds (for all applicable primes $p$, which is all primes since $\ZZ_L$ is monogenic here) to the polynomial having a repeated factor mod $p$.
+This would require $\discriminant(\min_{\zeta_5}(x)) \equiv 0 \mod p$, but you can show that $5$ is the only prime that divides this discriminant.
+So $5$ is the only prime that could ramify, so $e=2$ never happens.
+
+In general, for cyclotomic extensions, $p$ is always totally ramified and $e=p-1$.
+:::
+
+## Decomposition, Inertia, Frobenius
+
+:::{.definition title="Decomposition"}
+Let $L/K$ be a Galois extension of number fields and let $Q \in \spec \ZZ_L$ be nonzero.
+Then $Q$ lies above a unique prime $P \in \spec \ZZ_K$, where $P = Q \intersect \ZZ_K$.
+Define the **decomposition group of $Q$** is defined as 
+\[
+D(Q) = D(Q/P) = \ts{ \sigma \in G(L/K) \st \sigma(Q) = Q} 
+.\]
+:::
+
+:::{.definition title="?"}
+Better notation: define $\FF_Q \da \ZZ_L/Q$ and $\FF_P = \ZZ_K/P$, so $\FF_P \subseteq \FF_Q$.
+:::
+
+:::{.remark}
+We know that the Galois group will take $Q$ to some prime above $P$, these are the ones that take $Q$ to itself.
+These are the automorphisms that make sense "modulo $Q$": there is a group morphism
+\[
+\red_{Q/P}: D(G/P) &\to G(\FF_Q/\FF_P) \\
+\sigma &\mapsto \bar\sigma 
+.\]
+where we reduce $\sigma$ mod $Q$, so $\bar\sigma(\alpha \mod Q) \da \sigma(\alpha) \mod Q$.
+One can check
+
+- For $\sigma \in D(Q/P)$, $\bar\sigma$ is a well-defined automorphism of $\FF_Q$ fixing $\FF_P$, since the elements in $\FF_P$ are of the form $\alpha \mod Q$ where $\alpha\in \ZZ_K$ and $\sigma$ fixes $K$.
+  This crucially uses that $\sigma$ fixes $Q$, otherwise it won't be well-defined.
+
+- $\red_{Q/P}$ defines a group morphism.
+
+We'll see later that this is in fact a surjective morphism.
+So all automorphisms in the Galois group $G(\FF_Q/\FF_P)$ are reductions mod $Q$ of automorphisms in the decomposition group, which are the only ones that make sense to reduce mod $Q$ anyway!
+:::
+
+
+
+# Ch. XYZ: Galois Theory and Prime Decomposition (April 13)
+
+:::{.remark}
+Two recommended resources:
+
+- Samuel, Algebraic Theory of Numbers (Dover)
+- Matt Baker's [online notes on Algebraic number theory](https://people.math.gatech.edu/~mbaker/pdf/ANTBook.pdf).
+
+:::
+
+:::{.remark}
+Setup:
+
+- $L/K$ a Galois extension of number fields.
+- $P \in \mspec K$
+- $Q\in \mspec L$
+
+We saw that $G(L/K)$ acts on the prime ideals above $P$, making all of the $e,f$ values the same, and thus the decomposition into prime ideals in this type of extension is simpler than in a general extension.
+We'll look at decomposition and inertia groups today.
+
+Recall that if $Q$ lies above $P$, then the **decomposition group** $D(Q/P)$ is the set of $\sigma\in G(L/K)$ such that $\sigma(Q) = Q$.
+Note that $P$ is redundant in this notation, since $Q \intersect \ZZ_K = P$.
+Also recall that $\FF_Q \da \ZZ_L/Q$ is the residue field associated to $Q$ and $\ZZ_P \da \ZZ_L/P$ and we view $\FF_P \subseteq \FF_Q$.
+Such an extension of finite fields is always Galois, and the Galois groups turn out to be related to the decomposition groups.
+For $\sigma \in D(Q/P)$ we defined $\bar\sigma: \FF_Q \to \FF_Q$ where $\alpha \mod Q \mapsto \sigma(\alpha) \mod Q$.
+It's easy to check this is 
+
+- Well-defined, precisely by the definition of $D(Q/P)$, 
+
+- An automorphism of $\FF_Q$: it must be surjective since everything in $\ZZ_L$ is in the image of $\sigma$ since $\sigma$ was an automorphism of $\ZZ_L$ to begin with.
+  But then it's a surjective morphism from a finite field to itself, hence an automorphism.
+- $\sigma$ fixed $\FF_P$ pointwise
+  Now consider applying $\sigma$ to an element of $\FF_P$, which are of the form $\alpha \mod Q$ where $\alpha$ comes from $\ZZ_K$.
+  But $\sigma$ fixed $\ZZ_K$ pointwise, so $\sigma$ fixed $\FF_P$ pointwise.
+
+So each $\sigma\in D(Q/P)$ yields a $\bar\sigma \in G(\FF_Q/\FF_P)$ and we get a group morphism
+\[
+\red_{Q/P}: D(Q/P) &&\to G(\FF_Q/\FF_P) \\
+\sigma &\mapsto \bar\sigma
+.\]
+The following is the deeper and more important fact about this morphism, which requires a technical proof:
+:::
+
+:::{.theorem title="?"}
+$\red_{Q/P}$ is surjective.
+:::
+
+:::{.proof title="?"}
+We can assume $\FF_P$ is a proper subfield of $\FF_Q$, since the result follows immediately otherwise.
+By the primitive element theorem, since $|FF_Q/\FF_P$ is separable we can write $\FF_Q = \FF_P(\bar\alpha)$ where $\alpha\in \ZZ_L$ and $\bar{\wait}$ denotes reducing mod $Q$.
+Note $\alpha\not\in Q$, since this would mean $\bar\alpha = 0$ and thus $\FF_Q = \FF_P$.
+On the other hand, we can assume $\alpha\in Q'$ for all other $Q'\neq Q$ above $P$.
+Why?
+Sketch: the equation $\FF_Q = \FF_P(\bar\alpha)$ only depends on $\alpha\mod Q$, so if $\alpha$ is not in some $Q'$, just adjust $\alpha$ modulo $Q'$ without affecting its class mod $Q$ to get a new $\alpha$ in $Q'$.
+So if not, replace $\alpha$ with $\alpha'$ satisfying
+\[
+\alpha' \cong \alpha \mod Q \\
+\alpha'\cong 0 \mod Q' && \forall Q'\neq Q \text{ above }P
+.\]
+
+Look at the minimal polynomial $\bar m(x)$ of $\bar\alpha$ over $\FF_P$, some monic polynomial in $\FF_P[x]$, where $\FF_P$ is the reduction mod $P$ of elements in $\ZZ_K$.
+So we can think of $\bar m(x)$ as some $m(x) \in \ZZ_K[x]$ whose coefficients have been reduced mod $Q$.
+We'll show that for each root $r$ of $\bar m(x)$ in $\FF_Q$, there is some $\sigma\in D(Q/P)$ such that $\bar\sigma(\bar\alpha) = r$
+This is enough, since any automorphism of $\FF_Q$ fixing $\FF_P$ is determined by the image of $\bar\alpha$, which has to go to some other root of $\bar m (x)$.
+If we can show this statement, this means that $\bar\sigma$ has to hit every automorphism in $G(\FF_Q/\FF_P)$.
+
+Define $g(x) = \prod_{\sigma\in G(L/K)} (x- \sigma( \alpha))$.
+Where does $g$ live?
+$\alpha$ came from $L$, so $\sigma( \alpha) \in L$, and multiplying over all $\sigma$ puts the coefficients in $K$.
+Even better, since $\alpha\in \ZZ_L$ is algebraic, this will have $\ZZ_K$ coefficients, so $g\in \ZZ_K[x]$.
+Now reduce mod $Q$ to get $\bar g(x) \in \FF_P[X]$, and moreover $\bar g(\bar \alpha) = \bar{g(\alpha)} = 0$ in $\FF_Q$, since $g(\alpha) = 0$ by definition since one $\sigma$ in the product is the identity.
+Thus we know $\bar m(x) \divides \bar g(x)$ in $\FF_P[x]$.
+Notice that in $\FF_Q[x]$, if we take $g$ and reduce mod $Q$ we get
+\[
+\bar g(x) = \prod_{\sigma \in G(L/K)} (x - \bar{\sigma(\alpha)} )
+.\]
+Since $\bar m(x)$ divides $\bar g(x)$, every root of $\bar m$ has the form $\bar{\sigma( \alpha)}$ for some $\sigma\in G(L/K)$.
+We want this to be $\bar\sigma(\bar \alpha)$ instead to conclude the proof, so take a root of $\bar m$ in $\FF_Q$ and write it as $\bar{\sigma(\alpha)}$ with $\sigma\in G(L/K)$
+
+:::{.claim}
+$\sigma \in D(G/P)$ has to be in the decomposition group.
+:::
+If this is true, we're done since $\bar{\sigma( \alpha)} = \bar \sigma (\bar \alpha)$.
+
+Suppose toward a contradiction that $\sigma\not\in D(G/P)$, so neither $\sigma$ nor $\sigma\inv$ fixes $Q$, so $\sigma\inv(Q) \neq Q$.
+By choice of $\alpha$, we have $\alpha \in Q' \da \sigma\inv(Q)$, so $\sigma(\alpha)\in Q$.
+Then $\bar{\sigma(\alpha)} = 0$, but $0$ is not a root of $\bar m(x)$ since it is irreducible where $\bar m(x) \neq x$ since $[\FF_Q: \FF_P] \geq 2$ and thus $\deg \bar m(x) \geq 2$.
+:::
+
+:::{.remark}
+By the first isomorphism theorem, we have 
+\[
+G(\FF_Q/\FF_P) \cong D(Q/P) / \ker \red_{Q/P}
+.\], where we call the kernel the **inertia group**:
+\[
+\ker \red_{Q/P} = I(Q/P) \da \ts{ \sigma \in D(Q/P) \st \bar \sigma = \id_{\FF_Q} }
+.\]
+These are the elements $\sigma$ in the decomposition group such that $\sigma(\alpha) \equiv \alpha \mod Q$ for every $\alpha$.
+
+Since we have a group action of the Galois group on primes above $P$, we can apply Orbit-Stabilizer: we have $\Stab(Q) = D(Q/P)$ and the orbit is all primes above $P$, so
+\[
+G(L/K) / D(Q/P) \cong \ts{\text{Primes above } P}
+.\]
+Taking cardinalities, 
+\[
+[L:K] / \# D(Q/P) = g \implies \# D(Q/P) = {[L:K] \over g} = {efg \over g} = ef
+.\]
+We also have
+\[
+{ef \over \# I(Q/P)} = \#G(\FF_Q/\FF_P) = [\FF_Q: \FF_P] = f
+.\]
+In summary, 
+
+- $\# D(Q/P) = f$,
+- $\E I(Q/P) = e$,
+- If $P$ is unramified, $e=1$ and $I(Q/P)$ is trivial and $\red_{Q/P}$ is an isomorphism.
+
+This map is usually an isomorphism, since there are only finitely many $P$ ion $\ZZ_K$ that ramify in $\ZZ_L$.
+:::
+
+## Inertia and Decomposition Fields
+
+:::{.remark}
+It will turn out that the fixed fields appearing here have number-theoretic interpretations.
+:::
+
+:::{.definition title="?"}
+If $Q$ lies above $P$, then define the **inertia field** corresponding to $Q/P$, written $L^{I(Q/P)}$, and the **decomposition field** $L^{D(Q/P)}$.
+
+:::
+
+:::{.remark}
+Suppose $L/K$ is Galois, and consider an intermediate field $L/M/K$.
+We can find intermediate primes:
+
+\begin{tikzcd}
+	L && Q \\
+	\\
+	M && {R = Q \intersect \ZZ_M} \\
+	\\
+	K && P
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=3-1, to=5-1]
+	\arrow[no head, from=5-3, to=3-3]
+	\arrow[no head, from=3-3, to=1-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiTSJdLFswLDQsIksiXSxbMiw0LCJQIl0sWzIsMiwiUiA9IFEgXFxpbnRlcnNlY3QgXFxaWl9NIl0sWzIsMCwiUSJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsNCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDUsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+We can consider $e, f$ of $R/P$ in this picture. 
+Going to bigger extensions then $M$ makes $R$ bigger, so $e$ increases as $M$ gets bigger.
+:::
+
+:::{.theorem title="?"}
+The inertia field $L^{I(Q/P)}$ is the largest field extension $M$ for which $e(R/P) = 1$.
+More precisely, 
+\[
+e(R/P) = 1 \iff M \subseteq L^{I(Q/P)}
+.\]
+:::
+
+:::{.remark}
+From Galois theory, $L/M$ is also Galois, so the key to proving this theorem involves understanding $D, I$ of $Q/R$.
+Noting that $G(L/M) \subseteq G(L/K)$, 
+We have
+\[
+D(Q/R) 
+&\da \ts{\sigma\in G(L/M) \st \sigma(Q) = Q} \\
+&= \ts{\sigma\in G(L/K) \st \sigma(Q) = Q} \intersect G(L/M) \\
+&= D(Q/P) \intersect G(L/M)
+,\]
+so the decomposition groups are related by restriction.
+Suppose $\sigma \in D(Q/R)$, then $\red_{Q/R}(\alpha)$ is an automorphism of $\FF_Q$.
+We can also get an automorphism of $\FF_Q$ by taking $\red_{Q/P}(\sigma)$ -- it turns out these are the same automorphism.
+Why?
+Both map $\alpha \mod Q$ to $\sigma(\alpha) \mod Q$, which doesn't involve $R$ or $P$.
+We can thus write
+\[
+I(Q/R) 
+&= \ts{ \sigma \in D(Q/R) \st \bar{\sigma} = \id_{\FF_Q} } \\
+&= \ts{ \sigma \in D(Q/P) \intersect G(L/M) \st \bar{\sigma} = \id_{\FF_Q} } \\
+&= \ts{ \sigma \in D(Q/P) \st \bar{\sigma} = \id_{\FF_Q} }\intersect G(L/M) \\
+&= I(G/P) \intersect G(L/M)
+.\]
+:::
+
+:::{.remark title="Upshot"}
+\[
+D(Q/R) &= D)Q/P) \intersect G(L/M) \\
+I(Q/R) &= I)Q/P) \intersect G(L/M) \\
+.\]
+:::
+
+:::{.proof title="of theorem"}
+Let $L/M/K$ with $Q/R/P$, we want to show $e(R/P) = 1 \iff M \subset L^{I(Q/P)}$:
+
+\begin{tikzcd}
+	L && Q \\
+	\\
+	M && R \\
+	\\
+	K && P
+	\arrow[no head, from=5-1, to=3-1]
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=5-3, to=3-3]
+	\arrow[no head, from=3-3, to=1-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiTSJdLFswLDQsIksiXSxbMiwwLCJRIl0sWzIsMiwiUiJdLFsyLDQsIlAiXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMSwiIiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDQsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCwzLCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+We'll use multiplicativity of $e$ in towers.
+Recall that $e(R/P) = e(Q/R) e(R/P)$, so $e(R/P) = 1$ iff $e(Q/P) = e(Q/R)$.
+Interpreting this as the size of inertia, this happens iff $\# I(Q/P) = \# I(Q/R)$, iff $\#I(Q/P) = \#( I(Q/P) \intersect G(L/M) )$.
+This happens iff $I(Q/P) \subseteq G(L/M)$, iff $M \subseteq L^{I(Q/P)}$.
+:::
+
+:::{.theorem title="?"}
+The decomposition field $L^{D(Q/P)}$ is the largest $M$ for which *both* $e(R/P) = f(R/P) =1$.
+:::
+
+:::{.proof title="?"}
+Replace $e$ in the previous proof with the product $ef$ and $I$ replaced by $D$, using $\#D =ef$.
+:::
+
+:::{.remark}
+Next time: why these theorems are interesting!
+How ramification and splitting completely behaves in fields vs their Galois closures.
+
+:::
+
+
+
+
+
+
+
+
+
+# Decomposition and Inertia Fields (April 15)
+
+## Ramification in Composite Fields
+
+:::{.remark}
+Recall the setup: 
+
+- $L/K$ is a Galois extension of number fields.
+- $P\in \spec K$ nonzero, and in fact we'll usually mean $P \in \mspec \ZZ_K$.
+- $Q\in \spec L$.
+- $\FF_Q \da \ZZ_L/Q, \FF_P \da \ZZ_K/P$
+
+When $Q$ lies above $P$, we defined $D(Q/P)$ as all $\sigma\in G(L/K)$ preserving $Q$.
+We have a reduction map
+\[
+\red_{Q/P}: D(Q/P) &\to G(\FF_Q / \FF_P) \\
+\sigma &\mapsto \bar\sigma
+,\]
+which we saw was a surjective group morphism with kernel $I(Q/P) \da \ker (\red_{Q/P})$.
+Since $D, I$ are subgroups of $G(\FF_Q/\FF_P)$, we can consider the corresponding intermediate fixed fields, the *inertia field* and *decomposition field*.
+Using that the Galois correspondence is inclusion-reversing, we get the following:
+
+\begin{tikzcd}
+	L \\
+	\\
+	{L^{I(Q/P)}} \\
+	\\
+	{L^{D(Q/P)}} \\
+	\\
+	K
+	\arrow[no head, from=7-1, to=5-1]
+	\arrow[no head, from=5-1, to=3-1]
+	\arrow[no head, from=3-1, to=1-1]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJMIl0sWzAsNiwiSyJdLFswLDIsIkxee0koUS9QKX0iXSxbMCw0LCJMXntEKFEvUCl9Il0sWzEsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d)
+
+:::
+
+:::{.remark}
+Suppose we have a tower $L/M/K$ with prime ideals $Q/R/P$ with $R\da Q \intersect \ZZ_M$.
+We showed that with respect to containment,
+
+a. $L^{I(Q/P)}$ is the largest intermediate field in which $e(R/P) = 1$.
+b. $L^{D(Q/P)}$ is the largest intermediate field in which $e(R/P) = f(R/P) = 1$.
+
+Note that (b) is a stronger condition, so this matches the containment in the previous diagram.
+:::
+
+:::{.theorem title="?"}
+Let $M/K$ be an extension of number fields, not necessarily Galois.
+Let $L$ be the **Galois closure** of $M/K$, the smallest field extension containing $M$ which is Galois over $K$.
+Then
+
+a. $P\in \spec K$ is unramified in $M$ $\iff$ $P$ is unramified in $L$.
+
+b. $P\in \spec K$ splits completely in $M$ $\iff$ $P$ splits completely in $L$.
+
+:::
+
+:::{.proof title="?"}
+We'll just prove (a), and a very similar argument will yield (b).
+
+$\impliedby$:
+This is clear: if $L/M/K$ is a tower and $P$ is unramified in $L$, why is it unramified in $M$?
+This is multiplicativity of $e$ in towers. 
+If we have $R$ in $M$ with $R/P$, we can choose $Q$ in $L$ with $Q/R/P$.
+If $e(R/P) > 1$, we have $e(Q/P) = e(Q/R) e(R/P) > 1$, forcing $P$ to ramify in $L$.
+Note that we haven't used that $L$ is the Galois closure.
+
+$\implies$:
+By the primitive element theorem, write $M = K(\theta)$, how can we describe the Galois closure $L$?
+Listing $\elts{\theta}{r}$ the roots of $\min_{\theta}(x)$ over $K$, then $L = K(\elts{\theta}{r})$:
+
+\begin{tikzcd}
+	&&&& L = K(\elts{\theta}{r}) \\
+	\\
+	{K(\theta_1)} && {K(\theta_2)} && \cdots && {K(\theta_{r-1})} && {K(\theta_{r})} \\
+	\\
+	&&&& K
+	\arrow[no head, from=3-1, to=1-5]
+	\arrow[no head, from=3-3, to=1-5]
+	\arrow[dashed, no head, from=3-5, to=1-5]
+	\arrow[no head, from=3-7, to=1-5]
+	\arrow[no head, from=5-5, to=3-1]
+	\arrow[no head, from=3-3, to=5-5]
+	\arrow[dashed, no head, from=3-5, to=5-5]
+	\arrow[no head, from=3-7, to=5-5]
+	\arrow[no head, from=3-9, to=5-5]
+	\arrow[no head, from=3-9, to=1-5]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbNCw0LCJLIl0sWzQsMCwiTCJdLFswLDIsIksoXFx0aGV0YV8xKSJdLFsyLDIsIksoXFx0aGV0YV8xKSJdLFs0LDIsIlxcY2RvdHMiXSxbNiwyLCJLKFxcdGhldGFfMSkiXSxbOCwyLCJLKFxcdGhldGFfMSkiXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMSwiIiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDEsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzUsMSwiIiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMywwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzQsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs2LDEsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+By assumption, $P$ is unramified in $M$, which is one $K(\theta_i)$.
+There is always an isomorphism between any of the two $K(\theta_i)$ which preserves $K$, so abstractly they're all equivalent.
+So $P$ is unramified in $K(\theta_i)$ for all $i$.
+Take any $Q \in \spec L$ over $P$.
+We can consider the tower involving $K(\theta_i)$ for any $i$ and produce a corresponding prime $R_i$:
+
+\begin{tikzcd}
+	L && Q \\
+	\\
+	{K(\theta_i)} && {R_i} \\
+	\\
+	K && P
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=3-1, to=5-1]
+	\arrow[no head, from=1-3, to=3-3]
+	\arrow[no head, from=3-3, to=5-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiSyhcXHRoZXRhX2kpIl0sWzAsNCwiSyJdLFsyLDQsIlAiXSxbMiwwLCJRIl0sWzIsMiwiUl9pIl0sWzAsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCw1LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzUsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==)
+
+Since $P$ is unramified in all $K(\theta_i)$, we have $e(R_i/P) = 1$.
+Now use the characterization of the inertia field: $K(\theta_i) \subset L^{I(Q/P)}$, which is true for every $i$.
+So their composite is also contained in the inertia field, so we have
+\[
+L = K(\elts{\theta}{r}) \subseteq L^{I(Q/P)} \subseteq L
+,\]
+yielding equality.
+Now note that the inertia field was the largest intermediate field for which $e=1$, and we've just conclude $L = L^{I(Q/P)}$, so $e(Q/P) = 1$.
+Since $Q/P$ was arbitrary, $P$ is unramified.
+:::
+
+:::{.theorem title="?"}
+Let $M_1/K, M_2/K$ be any two extensions of $K$. 
+Then
+
+a. $P$ is unramified in $M_1$ and $M_2$ $\iff$ $P$ is unramified in the composite field $M_1 M_2$.
+
+b. $P$ splits completely in $M_1$ and $M_2$ $\iff$ $P$ splits completely in the composite field $M_1 M_2$.
+
+:::
+
+:::{.proof title="?"}
+As before, we'll only prove (a).
+
+$\impliedby$:
+Again clear by multiplicativity in towers.
+
+$\implies$:
+Note that everything involving inertia only makes sense for Galois extensions, and we haven't assumed that here.
+So let $L$ be the Galois closure of $M_1M_2/K$, and let $L_1, L_2$ be the Galois closures of $M_1/K, M_2/K$ respectively.
+By the previous theorem, $P$ is unramified in $L_1, L_2$.
+How is $L$ related to $L_1$ and $L_2$?
+You can convince yourself that $L = L_1 L_2$, since the right-hand side is a Galois extension of $K$, and it contains $M_1 M_2$.
+We'll forget the $M_i$ and work with the following diagram:
+
+
+\begin{tikzcd}
+	& {} \\
+	& L \\
+	{L_1} && {L_2} & {} \\
+	& K
+	\arrow[no head, from=2-2, to=3-1]
+	\arrow[no head, from=2-2, to=3-3]
+	\arrow[no head, from=3-1, to=4-2]
+	\arrow[no head, from=3-3, to=4-2]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMSwwXSxbMCwyLCJMXzEiXSxbMiwyLCJMXzIiXSxbMywyXSxbMSwxLCJMIl0sWzEsMywiSyJdLFs0LDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCwyLCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDUsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+
+We have a prime in $K$ which is unramified in the $L_i$, and we want to show it's also unramified in $L$, which is equivalent to being unramified in $M_1 M_2$ (which was our goal).
+Strat: let $Q \in \spec L$ with $Q/P$ and let $R_1, R_2$ be the corresponding primes in $\spec L_1, \spec L_2$ between $Q$ and $P$.
+Since $P$ is unramified in the $L_i$, we have $e(R_1/P) = e(R_2/P) = 1$.
+Thus $L_i \subseteq L^{I(Q/P)}$, and so is their composite $L_1 L_2 \subseteq L^{I(Q/P)}$.
+But $L = L_1 L_2$, and so $e(Q/P) = 1$.
+:::
+
+## Frobenius
+
+:::{.remark}
+Let $E/F$ be an extension of *finite* fields, so $E/F$ is automatically Galois.
+Taking $F \da \FF_q$, then $E$ is of the form $E = \FF_{q^m}$ for some $m$.
+Then $G(E/F)$ is cyclic of order $m$, and is generated by $x\mapsto x^q$, the **Frobenius map** on the finite field $E/F$.
+For number fields, we'll want a slightly different notion of Frobenius.
+:::
+
+:::{.remark}
+Let $L/K$ be a Galois extension of number fields, $P$ a prime of $K$ unramified in $L$, and $Q$ a prime of $L$ above $P$.
+Then $\FF_Q/\FF_P$ is an extension of finite fields, so we know $\red_{Q/P}$ is a surjective group morphism, and the inertia group has size $e(Q/P)$, which is 1 in this situation.
+So this is an isomorphism between the "global" object $D(Q/P)$ and the "local" object $G(\FF_Q/\FF_P)$ on residue fields.
+We can pull back the generator on the right-hand side to define the **Frobenius element**
+\[
+\Frob_{Q/P} \da \red_{Q/P}\inv(x\mapsto x^q)\in D(Q/P) && q\da \# \ZZ_K/P \da  N(P)
+.\]
+
+:::
+
+:::{.observation}
+Note that $\Frob_{Q/P}$ is an element of $G(L/K)$ where for every \( \alpha\in \ZZ_L, \Frob_{Q/P}( \alpha) \equiv \alpha^q \mod Q \) where $q\da N(P)$.
+So $\Frob_{Q/P}$ acts by the $q$th power map in $\ZZ_L/Q$, and in fact this is a characterization of the Frobenius element.
+:::
+
+:::{.lemma title="?"}
+Suppose \( \sigma\in \Gal(L/K) \) satisfies \( \sigma( \alpha) \equiv \alpha^q \mod Q \) for all \( \alpha\in \ZZ_L \) where \( q \da N(P) \).
+Then \( \sigma = \Frob_{Q/P} \).
+:::
+
+:::{.remark}
+Why this is useful: you can check if something is the Frobenius element by just checking this congruence.
+:::
+
+:::{.proof title="?"}
+Take any \( \alpha\in Q \), then \( \sigma(\alpha) \equiv \alpha^q\mod Q \equiv 0^q \mod Q \) and so \( \sigma( \alpha) \in Q \).
+So \( \sigma(Q) \subseteq Q \), but these are maximal ideals, forcing equality.
+Then $\sigma(Q) = Q$ implies $\sigma \in D(Q/P)$ by definition, and now applying $\red_{Q/P}( \sigma) = (x\mapsto x^q)$ is the $q$th power map and $\sigma = \red_{Q/P}\inv(x\mapsto x^q) \da \Frob_{Q/P}$.
+:::
+
+:::{.proposition title="?"}
+Suppose $L/K$ is a Galois extension of number fields with $L/M/K$ where we additionally assume that $M/K$ is Galois.
+For the tower $L/M/K$, take primes $Q/R/P$ where $P$ is unramified in $L$.
+Then 
+\[
+\Frob_{R/P} = \ro{\Frob_{Q/P}}{M}
+.\]
+:::
+
+:::{.remark}
+Note that the right-hand side is an automorphism of $L$ restricted to $M$, which is only an automorphism of $M$ when $M/K$ is Galois.
+:::
+
+:::{.proof title="?"}
+Definition chasing and using characterization of Frobenius.
+It's enough to show that for all \( \alpha\in \ZZ_M \), we have
+\[
+\ro{\Frob_{Q/P}}{M}( \alpha) \equiv \alpha^q \mod R && q = N(P)
+.\]
+  
+Since \( \alpha\in \ZZ_M \) and $M \subseteq L$ so we can think of \( \alpha\in L \) and it makes sense to compute $\Frob_{Q/P}( \alpha) \equiv \alpha^q \mod Q$ since this is how Frobenius acts upstairs.
+So we just need to show that this congruence that holds for $Q$ also holds for $R$.
+Consider the difference: it's in $Q$ by the modular condition, and using that $M/K$ is Galois, the Frobenius restricts to an automorphism of $M$ and thus $\Frob_{Q/P}( \alpha) \in M$ (and is in fact still in $\ZZ_M$).
+Thus we have a difference of two things in $\ZZ_M$ and in $Q$, so
+\[
+\Frob_{Q/P}( \alpha) - \alpha^q \in Q \intersect \ZZ_M = R
+.\]
+
+:::
+
+:::{.remark}
+We'll see a nice example later of how to get the law of quadratic reciprocity from this!
+:::
+
+
+
+
+
+
+
+
+
+# Frobenius (April 20)
+
+:::{.remark}
+Setup and reminders:
+
+- $L/K$ a Galois extension of number fields,
+- $P \in \spec K$ unramified in $L$
+- $Q\in \spec L$ above $P$, so $e(Q/P) = 1$.
+- The Frobenius was defined as $\red_{Q/P}\inv(x\mapsto x^q)$ for $q \da N(P)$.
+- The characterization theorem for Frobenius: $\sigma = \Frob_{Q/P}$ iff $\sigma( \alpha) \equiv \alpha^q \mod Q$, so Frobenius acts like that $q$th power map mod $Q$.
+- When $L/M/K$ with $M/K$ Galois with $Q/R/P$, $\Frob_{R/P} = \ro{\Frob_{Q/P}}{M}$
+:::
+
+:::{.proposition title="?"}
+Let $L/K$ be Galois and let $Q,Q'$ be two primes lying above $P$:
+
+% https://q.uiver.app/?q=WzAsNSxbMCwwLCJMIl0sWzAsMiwiSyJdLFszLDIsIlAiXSxbMiwwLCJRIl0sWzQsMCwiUSciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMiwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDIsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=
+\begin{tikzcd}
+	L && Q && {Q'} \\
+	\\
+	K &&& P
+	\arrow[no head, from=1-1, to=3-1]
+	\arrow[no head, from=1-3, to=3-4]
+	\arrow[no head, from=1-5, to=3-4]
+\end{tikzcd}
+
+Since Galois acts transitively, we can write $Q' = \sigma(Q)$ for some $\sigma \in G(L/K)$.
+Then
+\[
+\Frob_{Q'/P} = \sigma \circ \Frob_{Q/P} \circ \sigma\inv
+.\]
+:::
+
+:::{.proof title="Sketch"}
+An exercise, use the characterization theorem.
+Set $\tau$ to be the right-hand side,  and check that $\tau(\alpha) \equiv \alpha^p \mod Q'$ for all $\alpha \in \ZZ_L$ and $q\da N(P)$.
+:::
+
+:::{.remark}
+What can we do when we are given a $P$ but not a $Q$?
+There are many choices of $Q$, all related by conjugation.
+:::
+
+:::{.definition title="Frobenius Conjugacy Class"}
+Define the **Frobenius conjugacy class** as
+\[
+\qty{L/K \over P} = \ts{ \Frob_{Q/P} \st Q \text{ lies above } P } \subseteq G(L/K)
+.\]
+This is a conjugacy class of $G(L/K)$.
+:::
+
+:::{.remark}
+Note that this collapses to a single element when $G(L/K)\in \Ab$!
+By abuse of notation, we'll identify $\qty{L/K \over P}$ with that common element (despite it being a singleton set).
+:::
+
+:::{.proposition title="Order of Frobenius"}
+Every element of $\qty{L/K \over P}$ has order $f$, where $f = f(Q/P)$ for any $Q/P$.
+:::
+
+:::{.proof title="?"}
+Let $Q/P$ be a prime over $P$, then $\Frob_{Q/P} \da \red_{Q/P}\inv(x\mapsto x^q)$, where the $q$th power map is the generator of $G(\FF_Q/\FF_P)$, which has size $[\FF_Q : \FF_P] = f$.
+Since $\red$ was an isomorphism, we're done.
+:::
+
+## Cyclotomic Fields
+
+:::{.remark}
+Fix $m$.
+Recall that the $m$th cyclotomic field $K$ is defined by
+\[
+K \da \QQ(\zeta_m) && \zeta_m = e^{2\pi i / m}
+.\]
+This is the splitting field of $x^m-1$, and in characteristic zero this implies $K/\QQ$ is Galois.
+:::
+
+:::{.proposition title="?"}
+\[
+[K : \QQ] = \phi(m)
+.\]
+:::
+
+:::{.definition title="Cyclotomic Polynomials"}
+Define the **$m$th cyclotomic polynomial** as
+\[
+\Phi_m(x) \da \prod_{\substack{a\mod m \\ (a, m) = 1}} (x - \zeta_m^a)
+.\]
+:::
+
+:::{.remark}
+Note that $\deg \Phi_m(x) = \phi(m)$, since this is precisely how many terms show up in the indexing set.
+We'll show that this is the minimal polynomial of $\zeta_m$
+
+- The coefficients are algebraic integers, since the roots are all roots of $x^m-1$, which is monic in $\ZZ[x]$.
+  Since $\bar\ZZ$ is a ring, we have $\Phi_m(x) \in \bar\ZZ[x]$.
+
+- If $\sigma \in G(K/\QQ)$, then $\sigma(\zeta_m) = \zeta_m^b$ for some $b$ coprime to $m$.
+  Then
+  \[
+\sigma(\Phi_m(x)) = \prod_{\substack{a\mod m \\ (a, m) = 1}} (x - \zeta_m^{ab}) = \Phi_m(x)
+  ,\]
+  since as $a$ runs through the number coprime to $m$, so does $ab$.
+  Thus $\Phi_m(x) \in \QQ[x]$, since its coefficients are fixed by every element of the Galois group.
+
+- Combining these, the coefficients are in $\bar\ZZ[x] \intersect \QQ[x] = \ZZ[x]$.
+:::
+
+:::{.proposition title=""}
+$\Phi_m(x) = m(x) \da \min_{\zeta_m}(x)$ is the minimal polynomial of $\zeta_m$ over $\QQ$.
+:::
+
+:::{.proof title="?"}
+Clearly $m(x) \divides \Phi_m(x)$ in $\QQ[x]$ since $\Phi_m(x)$ vanishes at $\zeta_m$.
+So every root of $m(x)$ is a primitive $m$th root of unity, so we just need to show that every primitive $m$th root of unity is a root of $m$, i.e. we get all of them.
+Observe that if $\zeta$ is *any* $m$th root of unity, then $\zeta \in \ZZ_K$: $\zeta$ is an algebraic integer, as a root of $x^m-1$, and is in $K$ since it's a power of $\zeta_m$.
+Also note that $m(x) \in \ZZ[x]$ since the minimal polynomial of *any* algebraic integer has rational integer coefficients.
+So $m(\zeta)\in \ZZ_K$ since $\ZZ_K$ is a ring and $\zeta\in \ZZ_K$, and $N(m(\zeta)) \in \ZZ$.
+
+
+:::{.claim}
+There is an $M\in \ZZ^{\geq 0}$ such that if $q$ is any prime with $q> M$ and $\zeta$ is any root of $m(x)$, then $\zeta^q$ is still a root of $m(x)$.
+
+I.e. the roots of $m(x)$ are closed under taking $q$th powers for large enough $q$.
+Moreover, it's enough to pick any $M> \max_{\zeta} \abs{N(m(\zeta))}$, taking $\zeta$ over all $m$th roots of 1.
+:::
+
+:::{.proof title="of claim"}
+Let $q>M$ be chosen as above and let $\zeta$ be a root of $m(x)$.
+We know $\zeta$ is a primitive $m$th root of unity and in $\ZZ_K$.
+Work modulo $Q$: since $0 = m(\zeta)$ we have 
+\[
+0 
+\equiv m(\zeta)^q \equiv m(\zeta^q)
+.\]
+Hence 
+\[
+q \divides N(q) \divides N(m(\zeta^q))
+,\]
+using that $N(q) = q^d$ since it's a rational integer where $d$ is the degree of the number field.
+But we have $q > \abs{ N(m(\zeta^q))}$, which can only happen if the right-hand side is zero.
+The only element of norm zero in a number field is zero, so $m(\zeta^q) = 0$.
+
+:::
+
+So if $q>M$ and $\zeta$ is a root of $m(x)$, so is $\zeta^q$.
+$\zeta_m$ is a root of $m(x)$, thus so us $\zeta_m^{q_1}, \zeta_m^{q_1 q_2}, \cdots, \zeta_m^{A}$ for any $A \in \ZZ^{\geq 0}$ which can be written as a product of primes bigger than $M$.
+
+
+:::{.exercise title="?"}
+Show that we can choose any $a\in \ZZ$ with $\gcd(a, m) = 1$, and choose $A$ as above with $A \cong a \mod m$.
+:::
+
+With this, $\zeta_m^a = \zeta_m^A$ will be a root of $m(x)$ and we're done.
+:::
+
+:::{.remark}
+Note that the exercise does follow from Dirichlet's theorem for arithmetic progressions, but there are easier proofs.
+:::
+
+## Galois Theory of $\QQ(\zeta_m) / \QQ$
+
+:::{.remark}
+Let $\sigma \in G(K/\QQ)$, then we saw that $\sigma(\zeta_m) = \zeta_m^a$ for some $a$ coprime to $m$.
+So we know $\# G(K/\QQ) < \phi(m)$, since there are only that many possibilities for the right-hand side.
+Since $[K:\QQ] = \phi(m)$, for each $a$ coprime to $m$ there is a $\sigma_a$ with $\sigma_a(\zeta_m) = \zeta_m^a$, so we can write
+\[
+G(K/\QQ) = \ts{ \sigma_a \st a\in (\ZZ/m)\units } 
+.\]
+Noting that $\sigma_a \sigma_b (\zeta_m) = \zeta_m^{ab} = \sigma_{ab}$, so we get an isomorphism
+\[
+G(K/\QQ) &\mapsvia{\sim} (\ZZ/m) \units \\
+\sigma_a &\mapstofrom a\mod m
+,\]
+so $K/\QQ$ is an abelian extension.
+:::
+
+### The Frobenius
+
+:::{.remark}
+Consider $K \da \QQ(\zeta_m)$, then for every rational prime $P$ unramified in $K$, there is a well-defined element in $\qty{K/\QQ \over P} \in G(K/\QQ) = (\ZZ/m)\units$.
+For a given $P$, which element in $(\ZZ/m)\units$ do you get?
+:::
+
+:::{.proposition title="?"}
+If $p\notdivides m$, then $p$ is unramified in $\QQ(\zeta_m)$.
+:::
+
+:::{.remark}
+The converse is more or less true: $\QQ(\zeta_2) = \QQ$ since $\zeta_2 = -1$, but 2 is not ramified in $\QQ$ since nothing is ramified in itself.
+So if you avoid $m\equiv 2 \mod 4$, the converse becomes true.
+We'll just prove the mentioned direction.
+:::
+
+:::{.lemma title="?"}
+\[
+\ZZ_K = \ZZ[\zeta_m]
+.\]
+:::
+
+:::{.exercise title="?"}
+Show that $p$ ramifies in $K$ iff $\ZZ_K/p\ZZ_K$ has a nonzero nilpotent element.
+:::
+
+:::{.proof title="of proposition, cute!"}
+Suppose $p\notdivides m$, then it suffices to show that $\ZZ[\zeta_m] / p\ZZ[\zeta_m]$ has no nonzero nilpotents.
+Let \( \alpha\in \ZZ[\zeta_m] \) with \( \alpha \mod p \) nilpotent in the quotient, we'll show it must be zero in the quotient.
+By the lemma, we can write \( \alpha = \sum_{i=0}^{d-1} a_i \zeta^i \), using that $\ZZ_K = \ZZ[\zeta]$ where all of the $a_i$ are in $\ZZ$, we've set $\zeta\da \zeta_m$ and $d = \phi(m) = [K : \QQ]$.
+
+Look mod $p$, then
+\[
+\alpha^p &\equiv \sum_{i=0}^{d-1} a_i \zeta^{ip} \mod p
+\implies \alpha^{p^f} &\equiv \sum_{i=0}^{d-1} a_i \zeta^{ip^f} \mod p && \forall f
+.\]
+If $f$ is large enough, $\alpha^{p^f} \equiv 0 \mod p$, since some power of $\alpha$ is zero.
+On the other hand, $p\notdivides m$, so there are powers of $p$ that are $1\mod m$ that show up regularly, and we can choose $f$ so that $p^f \cong 1 \mod m$, e.g. by choosing $f$ to be any multiple of the order of $p$ mod $m$.
+But then the second line above reduces to $\sum a_i\zeta^{ip^f} \equiv \sum a_i \zeta^{i} = \alpha$ since $p^f \equiv 1 \mod m$, so $\alpha^{p^f} \equiv \alpha$, but we know $\alpha^{p^f} \equiv 0$.
+:::
+
+:::{.theorem title="?"}
+Suppose $p\notdivides m$, which guarantees $p$ does not ramify in $K$.
+Then
+\[
+\qty{K/\QQ \over P} = \sigma_p && \sigma_p(\zeta_m) \da \zeta_m^p
+.\]
+:::
+
+:::{.proof title="?"}
+Choose any $Q$ lying above $p$.
+We'll show that for all $\alpha\in \ZZ_K$, $\sigma_p( \alpha) = \alpha^p \mod Q$, which by the characterization theorem will show $\sigma_p = \Frob_{Q/P}$, and in the abelian case $\qty{K/\QQ \over p}$ reduces to this single element.
+We know that $Q\contains p\ZZ_K$ since $Q$ is above $p$, so it's enough to show $\sigma_p( \alpha) \equiv \alpha^p \mod p$ for all $\alpha\in \ZZ_K$ -- this is because the difference is a multiple of $p$ in $\ZZ_K$, which is a subset of $Q$.
+Using $\ZZ_K = \ZZ[\zeta_m]$ to write $\alpha = \sum_{i=0}^{d-1} a_i \zeta_m^{i}$ where $d$ is the degree of the extension. 
+Now reducing $\mod p$ and applying the Freshman's dream yields
+\[
+\sigma_p( \alpha) 
+&= \sum_{i=0}^{d-1} a_i \zeta_m^{ip} \\
+&\equiv \qty{ \sum_{i=0}^{d-1} a_i \zeta_m^{i}}^p \mod p \\
+&\equiv \alpha^p
+.\]
+:::
+
+:::{.remark}
+This can be used to determine how all of the primes $p\notdivides m$ factor in $\QQ(\zeta_m)$, i.e. easily determining the relevant values of $f$ and $g$.
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# April 26
+ 
+Pick up here: <youtube.com/watch?v=SwashKudOwg&list=PLA0xtXqOUji8fjQysx4k8a6h-hOZ7x5ue&index=27>
+
+# April 29

@@ -67,7 +67,7 @@ inaccuracies are almost certainly my own. } } \\
 \textit{D. Zack Garza} \\
 \textit{University of Georgia} \\
   \textit{\href{mailto: dzackgarza@gmail.com}{dzackgarza@gmail.com}} \\
-{\tiny \textit{Last updated:} 2021-05-23 }
+{\tiny \textit{Last updated:} 2021-05-30 }
 \end{flushleft}
 
 
@@ -77,6 +77,13 @@ inaccuracies are almost certainly my own. } } \\
 \addsec{Table of Contents}
 \tableofcontents
 \newpage
+
+\hypertarget{preface}{%
+\section{Preface}\label{preface}}
+
+See
+\href{https://www.youtube.com/watch?v=JGLuFkqXIpI\&list=PLA0xtXqOUji8fjQysx4k8a6h-hOZ7x5ue}{Youtube
+Video Playlist}.
 
 \hypertarget{notation}{%
 \section{Notation}\label{notation}}
@@ -9127,9 +9134,6 @@ formula, rearranging yields a bound
 
 \end{remark}
 
-\hypertarget{saturday-may-22}{%
-\section{Saturday, May 22}\label{saturday-may-22}}
-
 \hypertarget{ch.-21-consequences-of-minkowskis-bound-saturday-may-22}{%
 \section{Ch. 21: Consequences of Minkowski's Bound (Saturday, May
 22)}\label{ch.-21-consequences-of-minkowskis-bound-saturday-may-22}}
@@ -9157,7 +9161,7 @@ could be, is when \(2r_2\) is as large as possible, so using that
 {\left\lvert {{\Delta}_K} \right\rvert} \geq \qty{n^n\over n!}^2 \qty{\pi/4}^n \coloneqq B_n
 .\end{align*}
 How does \(B_n\) grow? We could use Stirling's formula, but we'll take a
-crude bound by looking at rations:
+crude bound by looking at ratios:
 \begin{align*}
 {B_{n+1} \over B_n} 
 &= (1 + {1\over n})^{2n} (\pi/4)\\
@@ -9541,6 +9545,1646 @@ factorization of \(m\) over the residue field \({\mathbb{Z}}_K/P\).
 Omitted, see ``Number Rings'' by Marcus. Paul strongly recommends!
 
 \end{proof}
+
+\hypertarget{ch.-xyz-april-6}{%
+\section{Ch. XYZ: April 6}\label{ch.-xyz-april-6}}
+
+\hypertarget{multiplicativity-in-towers}{%
+\subsection{Multiplicativity in
+Towers}\label{multiplicativity-in-towers}}
+
+\begin{remark}
+
+An important topic not in the book: relative extensions of number
+fields, vs absolute extensions over \({\mathbb{Q}}\).
+
+\begin{center}
+\begin{tikzcd}
+    L && {{\mathbb{Z}}_?} && Q \\
+    \\
+    K && {{\mathbb{Z}}_K} && {P = Q \cap{\mathbb{Z}}_K}
+    \arrow[no head, from=1-5, to=3-5]
+    \arrow[no head, from=1-3, to=3-3]
+    \arrow[no head, from=1-1, to=3-1]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiSyJdLFsyLDAsIlxcWlpfPyJdLFsyLDIsIlxcWlpfSyJdLFs0LDAsIlEiXSxbNCwyLCJQID0gUSBcXGludGVyc2VjdCBcXFpaX0siXSxbNCw1LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+Note that if \(Q\supseteq P\), then \(Q\) will divide the extension of
+\(P\) to \({\mathbb{Z}}_L\), if \(Q\) will show up in the prime
+factorization of \(P{\mathbb{Z}}_L\). We defined \(e(Q/P)\) to be the
+exponent of \(Q\) in the factorization of \(P{\mathbb{Z}}_L\), and
+\(f(Q/P)\) to be the degree of the field extension \({\mathbb{Z}}_L/Q\)
+over \({\mathbb{Z}}_K/P\).
+
+\end{remark}
+
+\begin{remark}
+
+Note that ``lying above'' is transitive, and the following situation
+makes sense:
+
+\begin{center}
+\begin{tikzcd}
+    M && {P''} \\
+    \\
+    L && {P'} \\
+    \\
+    K && P
+    \arrow[no head, from=3-1, to=5-1]
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-3]
+    \arrow[no head, from=3-3, to=5-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwyLCJMIl0sWzAsNCwiSyJdLFswLDAsIk0iXSxbMiw0LCJQIl0sWzIsMiwiUCciXSxbMiwwLCJQJyciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCwzLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+How are the various \(e\) and \(f\) related? It turns out they work
+similarly to degrees of field extensions:
+
+\end{remark}
+
+\begin{theorem}[Multiplicativity in towers]
+
+\begin{align*}
+e(P''/P) &= e(P''/P') \cdot e(P'/P) \\
+f(P''/P) &= f(P''/P') \cdot f(P'/P) 
+.\end{align*}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Note that \(f\) is the degree of a field extension where we take
+\({\mathbb{Z}}_K/P \hookrightarrow{\mathbb{Z}}_L\) and consider the
+induced quotient map to \({\mathbb{Z}}_L/Q\). By composing inclusions we
+have a commutative diagram:
+
+\begin{center}
+\begin{tikzcd}
+    {{\mathbb{Z}}_K/P} && {{\mathbb{Z}}_L/P'} && {{\mathbb{Z}}_M/P''}
+    \arrow[hook, from=1-1, to=1-3]
+    \arrow[hook, from=1-3, to=1-5]
+    \arrow[curve={height=30pt}, hook, from=1-1, to=1-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXFpaX0svUCJdLFsyLDAsIlxcWlpfTC9QJyJdLFs0LDAsIlxcWlpfTS9QJyciXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMiwiIiwyLHsiY3VydmUiOjUsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+So for \(f\), this reduces to the multiplicativity of degrees in towers
+of field extensions.
+
+For \(e\), write \(P{\mathbb{Z}}_L = P'^{e(P'/P)} I\) where
+\(I\in \operatorname{Id}({\mathbb{Z}}_L)\) is nonzero and
+\(P'%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% I
+\). Similarly we can write \(P' {\mathbb{Z}}_< = P''^{e(P'/P')} J\)
+where \(J\in \operatorname{Id}({\mathbb{Z}}_L)\) and
+\(P''%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% J
+\). Using general facts about ideal extensions and substituting yields
+\begin{align*}
+P{\mathbb{Z}}_M 
+&= (P{\mathbb{Z}}_L){\mathbb{Z}}_M \\
+&= (P'{\mathbb{Z}}_M)^{e(P'/P)} I{\mathbb{Z}}_M \\
+&= P''^{e(P'/P) e(P'/P')} J^{e(P'/P)} (I{\mathbb{Z}}_M) \\
+.\end{align*}
+
+We know that
+\(P''%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% J
+\), so it doesn't divide any power of \(J\) either. We can check that
+\(P''%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% I{\mathbb{Z}}_M
+\): otherwise, if it did then \(P''\supseteq I{\mathbb{Z}}_M\) and
+\begin{align*}
+P'' \cap{\mathbb{Z}}_L \supseteq (I{\mathbb{Z}}_M) \cap{\mathbb{Z}}_L \supset I
+\end{align*}
+by intersecting both sides with \({\mathbb{Z}}_L\). But we know
+\(P'' \cap{\mathbb{Z}}_L = P'\) since \(P''\) was above \(P'\), and
+\(P'%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% I
+\) and thus \(P'\not\supseteq I\).
+
+\end{proof}
+
+\begin{definition}[Splitting completely]
+
+Suppose \(L/K\) is an extension of number fields and say
+\(P\supseteq {\mathbb{Z}}_K\) is a nonzero prime ideal. Then \(P\)
+\textbf{splits completely} in \(L\) (or \({\mathbb{Z}}_L\)) if
+\(e(G/P) = f(G/P) = 1\) for all \(G\) above \(P\) in \({\mathbb{Z}}_L\).
+Equivalently, there is a factorization
+\(P{\mathbb{Z}}_L = \prod_{i\leq n} Q_i\) with the \(Q_i\) distinct and
+\(n \coloneqq[L: K]\).
+
+\end{definition}
+
+\begin{proposition}[?]
+
+Let \(M/L/K\) be a tower of number fields and
+\(P\in \operatorname{Spec}{\mathbb{Z}}_K\). Then if \(P\) splits
+completely in \(M\), it splits completely in \(L\).
+
+\end{proposition}
+
+\begin{slogan}
+
+Splitting completely in an extension implies splitting completely in
+every intermediate extension.
+
+\end{slogan}
+
+\begin{proof}[?]
+
+Suppose \(P\) splits completely in \(M\), we then want to show that for
+any \(P'\) in \({\mathbb{Z}}_L\) above \(P\), then \(e=f=1\). We know
+\(P'\) has some prime factor, so choose any \(P''\) in
+\({\mathbb{Z}}_M\) above \(P'\):
+
+\begin{center}
+\begin{tikzcd}
+    M && {\exists P''} \\
+    \\
+    L && {P'} \\
+    \\
+    K && P
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=3-1, to=5-1]
+    \arrow[no head, from=5-3, to=3-3]
+    \arrow[no head, from=1-3, to=3-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCw0LCJLIl0sWzAsMiwiTCJdLFswLDAsIk0iXSxbMiw0LCJQIl0sWzIsMiwiUCciXSxbMiwwLCJcXGV4aXN0cyBQJyciXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw0LCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+Since \(P''\) is above \(P\) and \(e(P''/P) = f(P''/P) =1\), we can use
+multiplicativity in towers:
+\begin{align*}
+e(P'/P) \bigm|e(P''/P) = 1 &\implies e(P'/P) = 1 \\
+f(P'/P) \bigm|f(P''/P) = 1 &\implies f(P'/P) = 1 \\
+.\end{align*}
+
+\end{proof}
+
+\begin{definition}[?]
+
+If \(L/K\) is an extension of number fields and
+\(P\in \operatorname{Spec}{\mathbb{Z}}_K\) is nonzero, then \(P\)
+\textbf{ramifies} in \(L\) (or \({\mathbb{Z}}_L\)) if \(e(Q/P)>1\) for
+some \(Q\in \operatorname{Spec}{\mathbb{Z}}_L\) above \(P\).
+
+\end{definition}
+
+\begin{proposition}[?]
+
+For \(M/L/K\) a tower of number fields and
+\(P\in \operatorname{Spec}{\mathbb{Z}}_K\) is nonzero and unramified in
+\(M\), then \(P\) is unramified in \(L\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Same as the last proof.
+
+\end{proof}
+
+\hypertarget{galois-theory-and-prime-decomposition}{%
+\subsection{Galois Theory and Prime
+Decomposition}\label{galois-theory-and-prime-decomposition}}
+
+\begin{remark}
+
+This will lead into defining the Frobenius element and the fundamental
+theorem of algebraic number theory: Chebotarev Density. Some
+setup/notation:
+
+\begin{itemize}
+\tightlist
+\item
+  \(L/K\) will be a Galois extension of number of fields
+\item
+  \(P \in \operatorname{Spec}{\mathbb{Z}}_K, Q\in \operatorname{Spec}{\mathbb{Z}}_L\)
+  will be nonzero prime ideals. We may or may not require \(Q\) to lie
+  above \(P\).
+\end{itemize}
+
+\end{remark}
+
+\begin{remark}
+
+\envlist
+
+\begin{itemize}
+\tightlist
+\item
+  Any \(\sigma \in G(L/K)\) is an automorphism of \(L\) fixing \(K\),
+  which restricts to an automorphism of \({\mathbb{Z}}_L\) since it
+  preserves algebraic integers.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    It also preserves prime ideals.
+  \end{itemize}
+\item
+  Suppose \(Q\) lies above \(P\), then
+  \(P{\mathbb{Z}}_L = Q^{e(Q/p)} \cdots\). \(\sigma\) fixes \(K\)
+  pointwise, so applying it to both sides yields
+  \(P{\mathbb{Z}}_L = \sigma(Q)^{e(Q/P)}\cdots\) where \(\sigma(Q)\)
+  shows up with the exact same power since it preserves distinctness of
+  ideals.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In particular, \(\sigma(G)\) lies above \(P\), so \(G(L/K)\) acts on
+    the set of primes above \(P\), and it turns out (very importantly)
+    to be transitive.
+  \end{itemize}
+\end{itemize}
+
+\end{remark}
+
+\begin{theorem}[?]
+
+The action of \(G(L/K)\) on primes above \(P\) is transitive.
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Let \(Q_1, Q_2\) be primes above \(P\) and suppose toward a
+contradiction that \(\Orb(Q_1)\) does not contain \(Q_2\). We may choose
+\(\alpha\in {\mathbb{Z}}_L\) such that
+
+\begin{itemize}
+\tightlist
+\item
+  \(\alpha \equiv 0 \pmod Q_2\)
+\item
+  \(\alpha \equiv 1 \pmod Q\) for all \(Q\) of the form
+  \(Q = \sigma(Q_1)\), noting that none are \(Q_2\)
+\end{itemize}
+
+This system can be solved by the CRT, since the \(Q_i\) are pairwise
+comaximal, since nonzero primes of a number ring are maximal. These
+congruences say \(\alpha\in Q_2\) but not any other \(Q\), since
+\(0\equiv 1\) only in the unit ideal. Define
+\(\beta = \prod_{\sigmma \in G(L/K)} \sigma( \alpha) \in {\mathbb{Z}}_K\),
+and observe that \(\beta\not\in Q_1\). If it were in \(Q_1\), one
+\(\sigma(\alpha) \in Q_1\) for some \(\sigma \in G(L/K)\) which would
+force \(\alpha = \sigma \sigma^{-1}( \alpha) \in \sigma^{-1}(Q_1)\),
+which contradicts the choice of \(\alpha\) since \(\sigma^{-1}(Q_1)\) is
+one of the \(Q\)s appearing in the second congruence. On the other hand
+we have \(\beta\in Q_2\) since the identity is an element of \(G(L/K)\)
+and \(\alpha\in Q_2\) and \(\beta\) is a multiple of \(\alpha\). We know
+\(\beta\in {\mathbb{Z}}_K\), so
+\(\beta \in Q_2 \cap{\mathbb{Z}}_K = P\). But this is fishy because
+\(Q_1, Q_2\) both lie above \(P\) and both must contain \(P\):
+
+\begin{center}
+\begin{tikzcd}
+    {Q_1} && {Q_2} \\
+    \\
+    & P
+    \arrow[no head, from=1-1, to=3-2]
+    \arrow[no head, from=1-3, to=3-2]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMyxbMSwyLCJQIl0sWzAsMCwiUV8xIl0sWzIsMCwiUV8yIl0sWzEsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDAsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+Since \(\beta\) is in every ideal above \(P\), in particular
+\(\beta \in Q_1\) since \(Q_1 \supseteq P\), and this is a
+contradiction.
+
+\end{proof}
+
+\begin{proposition}[?]
+
+If \(Q, Q'\) both lie above \(P\), then \(e(Q/P) = e(Q'/P)\) and
+\(f(Q/P) = f(Q'/P)\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Pick \(\sigma \in G(L/K)\) with \(\sigma(Q) = Q'\). Factor
+\(P{\mathbb{Z}}_L = Q^{e(Q/P)} J\) where \(J\) is a product of primes
+not equal to \(Q\). Applying \(\sigma\) yields
+\(P{\mathbb{Z}}_L = Q'^{e(Q/P)} J'\) where \(J'\) is a product of primes
+not equal to \(Q'\). This factors \(P{\mathbb{Z}}_L\) into primes, and
+by uniqueness of prime factorization this exponent has to be \(e(Q'/P)\)
+by definition.
+
+For the \(f\)s, note that \(\sigma\) induces a ring morphism between the
+residue fields:
+\begin{align*}
+\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{Z}}_?\Q &\to {\mathbb{Z}}_L/Q' \\
+\alpha \pmod Q &\mapsto \sigma(\alpha) \pmod Q'
+.\end{align*}
+This is well-defined since \(\sigma(Q) = Q'\), and is an isomorphism
+since the inverse comes from \(\sigma ^{-1}\). This will imply that the
+\(f\)s are the same: we're looking at the degree of these extensions
+over \({\mathbb{Z}}_K/P\). An element of \({\mathbb{Z}}_L/Q\) also
+belonging to \({\mathbb{Z}}_K/P\) (as a subfield) has the form
+\(\alpha \pmod Q\) where \(\alpha\in {\mathbb{Z}}_K\), and under
+\(\sigma\) this is sent to \(\sigma(\alpha)\pmod Q' = \alpha \pmod Q'\),
+which is an element of the copy of
+\({\mathbb{Z}}_K/P\hookrightarrow{\mathbb{Z}}_L/Q'\). So \(\sigma\)
+identifies the copies of \({\mathbb{Z}}_K/P\) in either side, and
+\begin{align*}
+[{\mathbb{Z}}_L/Q : {\mathbb{Z}}_K/P] = [{\mathbb{Z}}_L/Q: {\mathbb{Z}}_K/P]
+.\end{align*}
+
+\end{proof}
+
+\begin{theorem}[efg theorem for Galois extensions]
+
+Let \(L/K\) be a Galois extension of number fields and
+\(P\in \operatorname{Spec}{\mathbb{Z}}_K\) be nonzero. Let \(e,f\) be
+the common \(e, f\) for all \(Q\) above \(P\), and let \(g\) be the
+number of distinct \(Q\) above \(P\). Then
+\begin{align*}
+efg = n \coloneqq[L:K]
+.\end{align*}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Using the previous efg theorem, \(\sum_{i=1}^g e_ f_i = n\), but by the
+previous proposition, all of the \(e_i\) are the same and all of the
+\(f_i\) are the same.
+
+\end{proof}
+
+\begin{example}[?]
+
+Let \(L = {\mathbb{Q}}(\zeta_5)\) over \(K= {\mathbb{Q}}\), which is
+Galois with
+\(G(L/K) \cong ({\mathbb{Z}}/5)^{\times}\cong {\mathbb{Z}}_4\). We know
+\({\mathbb{Z}}_L = {\mathbb{Z}}[\zeta_5]\), which actually happens for
+any \(n\), and \(\min_{\zeta_5}(x) = x^4 + x^3 + x^2 + x + 1\). Since
+\({\mathbb{Z}}_L\) is a monogenic, we can apply Dedekind-Kummer.
+
+\begin{itemize}
+\item
+  Factoring \(2{\mathbb{Z}}_L = P\) yields a single factor, so \(g=1\).
+  Since \(e\) is the common exponent, \(e=1\), so \(f=4\). If you factor
+  \(\min_{\zeta_5}\) mod 2, in order to get a single prime D-K says this
+  must be irreducible and \(f_i\) are the degrees of the irreducible
+  factors.
+\item
+  \(19{\mathbb{Z}}_L = P_1 P_2\), so \(g=2, e=1\), and so \(f=2\).
+\item
+  \(11{\mathbb{Z}}_L = P_1 P_2 P_3 P_4\) yields \(g=4, e=1, f=1\).
+\item
+  \(5{\mathbb{Z}}_L = P_1^4\) so \(g=1,e=4,f=1\).
+\end{itemize}
+
+Can the combination \((e,f,g) = (2,2,1)\) occur? This would require a
+prime factoring as \(P^2\), but the answer is know. In fact \(e>1\) only
+happens for \(5\) since this corresponds (for all applicable primes
+\(p\), which is all primes since \({\mathbb{Z}}_L\) is monogenic here)
+to the polynomial having a repeated factor mod \(p\). This would require
+\({\Delta}(\min_{\zeta_5}(x)) \equiv 0 \pmod p\), but you can show that
+\(5\) is the only prime that divides this discriminant. So \(5\) is the
+only prime that could ramify, so \(e=2\) never happens.
+
+In general, for cyclotomic extensions, \(p\) is always totally ramified
+and \(e=p-1\).
+
+\end{example}
+
+\hypertarget{decomposition-inertia-frobenius}{%
+\subsection{Decomposition, Inertia,
+Frobenius}\label{decomposition-inertia-frobenius}}
+
+\begin{definition}[Decomposition]
+
+Let \(L/K\) be a Galois extension of number fields and let
+\(Q \in \operatorname{Spec}{\mathbb{Z}}_L\) be nonzero. Then \(Q\) lies
+above a unique prime \(P \in \operatorname{Spec}{\mathbb{Z}}_K\), where
+\(P = Q \cap{\mathbb{Z}}_K\). Define the \textbf{decomposition group of
+\(Q\)} is defined as
+\begin{align*}
+D(Q) = D(Q/P) = \left\{{ \sigma \in G(L/K) {~\mathrel{\Big|}~}\sigma(Q) = Q}\right\} 
+.\end{align*}
+
+\end{definition}
+
+\begin{definition}[?]
+
+Better notation: define \({\mathbb{F}}_Q \coloneqq{\mathbb{Z}}_L/Q\) and
+\({\mathbb{F}}_P = {\mathbb{Z}}_K/P\), so
+\({\mathbb{F}}_P \subseteq {\mathbb{F}}_Q\).
+
+\end{definition}
+
+\begin{remark}
+
+We know that the Galois group will take \(Q\) to some prime above \(P\),
+these are the ones that take \(Q\) to itself. These are the
+automorphisms that make sense ``modulo \(Q\)'': there is a group
+morphism
+\begin{align*}
+{ \text{red} }_{Q/P}: D(G/P) &\to G({\mathbb{F}}_Q/{\mathbb{F}}_P) \\
+\sigma &\mapsto \mkern 1.5mu\overline{\mkern-1.5mu\sigma \mkern-1.5mu}\mkern 1.5mu
+.\end{align*}
+where we reduce \(\sigma\) mod \(Q\), so
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu(\alpha \pmod Q) \coloneqq\sigma(\alpha) \pmod Q\).
+One can check
+
+\begin{itemize}
+\item
+  For \(\sigma \in D(Q/P)\),
+  \(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu\)
+  is a well-defined automorphism of \({\mathbb{F}}_Q\) fixing
+  \({\mathbb{F}}_P\), since the elements in \({\mathbb{F}}_P\) are of
+  the form \(\alpha \pmod Q\) where \(\alpha\in {\mathbb{Z}}_K\) and
+  \(\sigma\) fixes \(K\). This crucially uses that \(\sigma\) fixes
+  \(Q\), otherwise it won't be well-defined.
+\item
+  \({ \text{red} }_{Q/P}\) defines a group morphism.
+\end{itemize}
+
+We'll see later that this is in fact a surjective morphism. So all
+automorphisms in the Galois group \(G({\mathbb{F}}_Q/{\mathbb{F}}_P)\)
+are reductions mod \(Q\) of automorphisms in the decomposition group,
+which are the only ones that make sense to reduce mod \(Q\) anyway!
+
+\end{remark}
+
+\hypertarget{ch.-xyz-galois-theory-and-prime-decomposition-april-13}{%
+\section{Ch. XYZ: Galois Theory and Prime Decomposition (April
+13)}\label{ch.-xyz-galois-theory-and-prime-decomposition-april-13}}
+
+\begin{remark}
+
+Two recommended resources:
+
+\begin{itemize}
+\tightlist
+\item
+  Samuel, Algebraic Theory of Numbers (Dover)
+\item
+  Matt Baker's
+  \href{https://people.math.gatech.edu/~mbaker/pdf/ANTBook.pdf}{online
+  notes on Algebraic number theory}.
+\end{itemize}
+
+\end{remark}
+
+\begin{remark}
+
+Setup:
+
+\begin{itemize}
+\tightlist
+\item
+  \(L/K\) a Galois extension of number fields.
+\item
+  \(P \in \operatorname{mSpec}K\)
+\item
+  \(Q\in \operatorname{mSpec}L\)
+\end{itemize}
+
+We saw that \(G(L/K)\) acts on the prime ideals above \(P\), making all
+of the \(e,f\) values the same, and thus the decomposition into prime
+ideals in this type of extension is simpler than in a general extension.
+We'll look at decomposition and inertia groups today.
+
+Recall that if \(Q\) lies above \(P\), then the \textbf{decomposition
+group} \(D(Q/P)\) is the set of \(\sigma\in G(L/K)\) such that
+\(\sigma(Q) = Q\). Note that \(P\) is redundant in this notation, since
+\(Q \cap{\mathbb{Z}}_K = P\). Also recall that
+\({\mathbb{F}}_Q \coloneqq{\mathbb{Z}}_L/Q\) is the residue field
+associated to \(Q\) and \({\mathbb{Z}}_P \coloneqq{\mathbb{Z}}_L/P\) and
+we view \({\mathbb{F}}_P \subseteq {\mathbb{F}}_Q\). Such an extension
+of finite fields is always Galois, and the Galois groups turn out to be
+related to the decomposition groups. For \(\sigma \in D(Q/P)\) we
+defined
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu: {\mathbb{F}}_Q \to {\mathbb{F}}_Q\)
+where \(\alpha \pmod Q \mapsto \sigma(\alpha) \pmod Q\). It's easy to
+check this is
+
+\begin{itemize}
+\item
+  Well-defined, precisely by the definition of \(D(Q/P)\),
+\item
+  An automorphism of \({\mathbb{F}}_Q\): it must be surjective since
+  everything in \({\mathbb{Z}}_L\) is in the image of \(\sigma\) since
+  \(\sigma\) was an automorphism of \({\mathbb{Z}}_L\) to begin with.
+  But then it's a surjective morphism from a finite field to itself,
+  hence an automorphism.
+\item
+  \(\sigma\) fixed \({\mathbb{F}}_P\) pointwise Now consider applying
+  \(\sigma\) to an element of \({\mathbb{F}}_P\), which are of the form
+  \(\alpha \pmod Q\) where \(\alpha\) comes from \({\mathbb{Z}}_K\). But
+  \(\sigma\) fixed \({\mathbb{Z}}_K\) pointwise, so \(\sigma\) fixed
+  \({\mathbb{F}}_P\) pointwise.
+\end{itemize}
+
+So each \(\sigma\in D(Q/P)\) yields a
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma \mkern-1.5mu}\mkern 1.5mu\in G({\mathbb{F}}_Q/{\mathbb{F}}_P)\)
+and we get a group morphism
+\begin{align*}
+{ \text{red} }_{Q/P}: D(Q/P) &&\to G({\mathbb{F}}_Q/{\mathbb{F}}_P) \\
+\sigma &\mapsto \mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu
+.\end{align*}
+The following is the deeper and more important fact about this morphism,
+which requires a technical proof:
+
+\end{remark}
+
+\begin{theorem}[?]
+
+\({ \text{red} }_{Q/P}\) is surjective.
+
+\end{theorem}
+
+\begin{proof}[?]
+
+We can assume \({\mathbb{F}}_P\) is a proper subfield of
+\({\mathbb{F}}_Q\), since the result follows immediately otherwise. By
+the primitive element theorem, since \(|FF_Q/{\mathbb{F}}_P\) is
+separable we can write
+\({\mathbb{F}}_Q = {\mathbb{F}}_P(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu)\)
+where \(\alpha\in {\mathbb{Z}}_L\) and
+\(\mkern 1.5mu\overline{\mkern-1.5mu{-}\mkern-1.5mu}\mkern 1.5mu\)
+denotes reducing mod \(Q\). Note \(\alpha\not\in Q\), since this would
+mean
+\(\mkern 1.5mu\overline{\mkern-1.5mu\alpha \mkern-1.5mu}\mkern 1.5mu= 0\)
+and thus \({\mathbb{F}}_Q = {\mathbb{F}}_P\). On the other hand, we can
+assume \(\alpha\in Q'\) for all other \(Q'\neq Q\) above \(P\). Why?
+Sketch: the equation
+\({\mathbb{F}}_Q = {\mathbb{F}}_P(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu)\)
+only depends on \(\alpha\pmod Q\), so if \(\alpha\) is not in some
+\(Q'\), just adjust \(\alpha\) modulo \(Q'\) without affecting its class
+mod \(Q\) to get a new \(\alpha\) in \(Q'\). So if not, replace
+\(\alpha\) with \(\alpha'\) satisfying
+\begin{align*}
+\alpha' \cong \alpha \pmod Q \\
+\alpha'\cong 0 \pmod Q' && \forall Q'\neq Q \text{ above }P
+.\end{align*}
+
+Look at the minimal polynomial
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x)\) of
+\(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu\)
+over \({\mathbb{F}}_P\), some monic polynomial in \({\mathbb{F}}_P[x]\),
+where \({\mathbb{F}}_P\) is the reduction mod \(P\) of elements in
+\({\mathbb{Z}}_K\). So we can think of
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x)\) as
+some \(m(x) \in {\mathbb{Z}}_K[x]\) whose coefficients have been reduced
+mod \(Q\). We'll show that for each root \(r\) of
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x)\) in
+\({\mathbb{F}}_Q\), there is some \(\sigma\in D(Q/P)\) such that
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu) = r\)
+This is enough, since any automorphism of \({\mathbb{F}}_Q\) fixing
+\({\mathbb{F}}_P\) is determined by the image of
+\(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu\),
+which has to go to some other root of
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu (x)\). If
+we can show this statement, this means that
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu\)
+has to hit every automorphism in \(G({\mathbb{F}}_Q/{\mathbb{F}}_P)\).
+
+Define \(g(x) = \prod_{\sigma\in G(L/K)} (x- \sigma( \alpha))\). Where
+does \(g\) live? \(\alpha\) came from \(L\), so
+\(\sigma( \alpha) \in L\), and multiplying over all \(\sigma\) puts the
+coefficients in \(K\). Even better, since \(\alpha\in {\mathbb{Z}}_L\)
+is algebraic, this will have \({\mathbb{Z}}_K\) coefficients, so
+\(g\in {\mathbb{Z}}_K[x]\). Now reduce mod \(Q\) to get
+\(\mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu(x) \in {\mathbb{F}}_P[X]\),
+and moreover
+\(\mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu) = \mkern 1.5mu\overline{\mkern-1.5mug(\alpha)\mkern-1.5mu}\mkern 1.5mu = 0\)
+in \({\mathbb{F}}_Q\), since \(g(\alpha) = 0\) by definition since one
+\(\sigma\) in the product is the identity. Thus we know
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x) \bigm|\mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu(x)\)
+in \({\mathbb{F}}_P[x]\). Notice that in \({\mathbb{F}}_Q[x]\), if we
+take \(g\) and reduce mod \(Q\) we get
+\begin{align*}
+\mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu(x) = \prod_{\sigma \in G(L/K)} (x - \mkern 1.5mu\overline{\mkern-1.5mu\sigma(\alpha)\mkern-1.5mu}\mkern 1.5mu )
+.\end{align*}
+Since
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x)\)
+divides
+\(\mkern 1.5mu\overline{\mkern-1.5mug\mkern-1.5mu}\mkern 1.5mu(x)\),
+every root of
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu\) has the
+form
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma( \alpha)\mkern-1.5mu}\mkern 1.5mu\)
+for some \(\sigma\in G(L/K)\). We want this to be
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu)\)
+instead to conclude the proof, so take a root of
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu\) in
+\({\mathbb{F}}_Q\) and write it as
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma(\alpha)\mkern-1.5mu}\mkern 1.5mu\)
+with \(\sigma\in G(L/K)\)
+
+\begin{claim}
+
+\(\sigma \in D(G/P)\) has to be in the decomposition group.
+
+\end{claim}
+
+If this is true, we're done since
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma( \alpha)\mkern-1.5mu}\mkern 1.5mu = \mkern 1.5mu\overline{\mkern-1.5mu\sigma \mkern-1.5mu}\mkern 1.5mu(\mkern 1.5mu\overline{\mkern-1.5mu\alpha\mkern-1.5mu}\mkern 1.5mu)\).
+
+Suppose toward a contradiction that \(\sigma\not\in D(G/P)\), so neither
+\(\sigma\) nor \(\sigma^{-1}\) fixes \(Q\), so
+\(\sigma^{-1}(Q) \neq Q\). By choice of \(\alpha\), we have
+\(\alpha \in Q' \coloneqq\sigma^{-1}(Q)\), so \(\sigma(\alpha)\in Q\).
+Then
+\(\mkern 1.5mu\overline{\mkern-1.5mu\sigma(\alpha)\mkern-1.5mu}\mkern 1.5mu = 0\),
+but \(0\) is not a root of
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x)\)
+since it is irreducible where
+\(\mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x) \neq x\)
+since \([{\mathbb{F}}_Q: {\mathbb{F}}_P] \geq 2\) and thus
+\(\deg \mkern 1.5mu\overline{\mkern-1.5mum\mkern-1.5mu}\mkern 1.5mu(x) \geq 2\).
+
+\end{proof}
+
+\begin{remark}
+
+By the first isomorphism theorem, we have
+\begin{align*}
+G({\mathbb{F}}_Q/{\mathbb{F}}_P) \cong D(Q/P) / \ker { \text{red} }_{Q/P}
+.\end{align*}
+, where we call the kernel the \textbf{inertia group}:
+\begin{align*}
+\ker { \text{red} }_{Q/P} = I(Q/P) \coloneqq\left\{{ \sigma \in D(Q/P) {~\mathrel{\Big|}~}\mkern 1.5mu\overline{\mkern-1.5mu\sigma \mkern-1.5mu}\mkern 1.5mu= \operatorname{id}_{{\mathbb{F}}_Q} }\right\}
+.\end{align*}
+These are the elements \(\sigma\) in the decomposition group such that
+\(\sigma(\alpha) \equiv \alpha \pmod Q\) for every \(\alpha\).
+
+Since we have a group action of the Galois group on primes above \(P\),
+we can apply Orbit-Stabilizer: we have
+\({\operatorname{Stab}}(Q) = D(Q/P)\) and the orbit is all primes above
+\(P\), so
+\begin{align*}
+G(L/K) / D(Q/P) \cong \left\{{\text{Primes above } P}\right\}
+.\end{align*}
+Taking cardinalities,
+\begin{align*}
+[L:K] / \# D(Q/P) = g \implies \# D(Q/P) = {[L:K] \over g} = {efg \over g} = ef
+.\end{align*}
+We also have
+\begin{align*}
+{ef \over \# I(Q/P)} = \#G({\mathbb{F}}_Q/{\mathbb{F}}_P) = [{\mathbb{F}}_Q: {\mathbb{F}}_P] = f
+.\end{align*}
+In summary,
+
+\begin{itemize}
+\tightlist
+\item
+  \(\# D(Q/P) = f\),
+\item
+  \(\E I(Q/P) = e\),
+\item
+  If \(P\) is unramified, \(e=1\) and \(I(Q/P)\) is trivial and
+  \({ \text{red} }_{Q/P}\) is an isomorphism.
+\end{itemize}
+
+This map is usually an isomorphism, since there are only finitely many
+\(P\) ion \({\mathbb{Z}}_K\) that ramify in \({\mathbb{Z}}_L\).
+
+\end{remark}
+
+\hypertarget{inertia-and-decomposition-fields}{%
+\subsection{Inertia and Decomposition
+Fields}\label{inertia-and-decomposition-fields}}
+
+\begin{remark}
+
+It will turn out that the fixed fields appearing here have
+number-theoretic interpretations.
+
+\end{remark}
+
+\begin{definition}[?]
+
+If \(Q\) lies above \(P\), then define the \textbf{inertia field}
+corresponding to \(Q/P\), written \(L^{I(Q/P)}\), and the
+\textbf{decomposition field} \(L^{D(Q/P)}\).
+
+\end{definition}
+
+\begin{remark}
+
+Suppose \(L/K\) is Galois, and consider an intermediate field \(L/M/K\).
+We can find intermediate primes:
+
+\begin{center}
+\begin{tikzcd}
+    L && Q \\
+    \\
+    M && {R = Q \cap{\mathbb{Z}}_M} \\
+    \\
+    K && P
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=3-1, to=5-1]
+    \arrow[no head, from=5-3, to=3-3]
+    \arrow[no head, from=3-3, to=1-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiTSJdLFswLDQsIksiXSxbMiw0LCJQIl0sWzIsMiwiUiA9IFEgXFxpbnRlcnNlY3QgXFxaWl9NIl0sWzIsMCwiUSJdLFswLDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwyLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsNCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDUsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+We can consider \(e, f\) of \(R/P\) in this picture. Going to bigger
+extensions then \(M\) makes \(R\) bigger, so \(e\) increases as \(M\)
+gets bigger.
+
+\end{remark}
+
+\begin{theorem}[?]
+
+The inertia field \(L^{I(Q/P)}\) is the largest field extension \(M\)
+for which \(e(R/P) = 1\). More precisely,
+\begin{align*}
+e(R/P) = 1 \iff M \subseteq L^{I(Q/P)}
+.\end{align*}
+
+\end{theorem}
+
+\begin{remark}
+
+From Galois theory, \(L/M\) is also Galois, so the key to proving this
+theorem involves understanding \(D, I\) of \(Q/R\). Noting that
+\(G(L/M) \subseteq G(L/K)\), We have
+\begin{align*}
+D(Q/R) 
+&\coloneqq\left\{{\sigma\in G(L/M) {~\mathrel{\Big|}~}\sigma(Q) = Q}\right\} \\
+&= \left\{{\sigma\in G(L/K) {~\mathrel{\Big|}~}\sigma(Q) = Q}\right\} \cap G(L/M) \\
+&= D(Q/P) \cap G(L/M)
+,\end{align*}
+so the decomposition groups are related by restriction. Suppose
+\(\sigma \in D(Q/R)\), then \({ \text{red} }_{Q/R}(\alpha)\) is an
+automorphism of \({\mathbb{F}}_Q\). We can also get an automorphism of
+\({\mathbb{F}}_Q\) by taking \({ \text{red} }_{Q/P}(\sigma)\) -- it
+turns out these are the same automorphism. Why? Both map
+\(\alpha \pmod Q\) to \(\sigma(\alpha) \pmod Q\), which doesn't involve
+\(R\) or \(P\). We can thus write
+\begin{align*}
+I(Q/R) 
+&= \left\{{ \sigma \in D(Q/R) {~\mathrel{\Big|}~}\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu = \operatorname{id}_{{\mathbb{F}}_Q} }\right\} \\
+&= \left\{{ \sigma \in D(Q/P) \cap G(L/M) {~\mathrel{\Big|}~}\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu = \operatorname{id}_{{\mathbb{F}}_Q} }\right\} \\
+&= \left\{{ \sigma \in D(Q/P) {~\mathrel{\Big|}~}\mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu = \operatorname{id}_{{\mathbb{F}}_Q} }\right\}\cap G(L/M) \\
+&= I(G/P) \cap G(L/M)
+.\end{align*}
+
+\end{remark}
+
+\begin{remark}[Upshot]
+
+\begin{align*}
+D(Q/R) &= D)Q/P) \cap G(L/M) \\
+I(Q/R) &= I)Q/P) \cap G(L/M) \\
+.\end{align*}
+
+\end{remark}
+
+\begin{proof}[of theorem]
+
+Let \(L/M/K\) with \(Q/R/P\), we want to show
+\(e(R/P) = 1 \iff M \subset L^{I(Q/P)}\):
+
+\begin{center}
+\begin{tikzcd}
+    L && Q \\
+    \\
+    M && R \\
+    \\
+    K && P
+    \arrow[no head, from=5-1, to=3-1]
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=5-3, to=3-3]
+    \arrow[no head, from=3-3, to=1-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiTSJdLFswLDQsIksiXSxbMiwwLCJRIl0sWzIsMiwiUiJdLFsyLDQsIlAiXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMSwiIiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs1LDQsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCwzLCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+We'll use multiplicativity of \(e\) in towers. Recall that
+\(e(R/P) = e(Q/R) e(R/P)\), so \(e(R/P) = 1\) iff \(e(Q/P) = e(Q/R)\).
+Interpreting this as the size of inertia, this happens iff
+\(\# I(Q/P) = \# I(Q/R)\), iff \(\#I(Q/P) = \#( I(Q/P) \cap G(L/M) )\).
+This happens iff \(I(Q/P) \subseteq G(L/M)\), iff
+\(M \subseteq L^{I(Q/P)}\).
+
+\end{proof}
+
+\begin{theorem}[?]
+
+The decomposition field \(L^{D(Q/P)}\) is the largest \(M\) for which
+\emph{both} \(e(R/P) = f(R/P) =1\).
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Replace \(e\) in the previous proof with the product \(ef\) and \(I\)
+replaced by \(D\), using \(\#D =ef\).
+
+\end{proof}
+
+\begin{remark}
+
+Next time: why these theorems are interesting! How ramification and
+splitting completely behaves in fields vs their Galois closures.
+
+\end{remark}
+
+\hypertarget{decomposition-and-inertia-fields-april-15}{%
+\section{Decomposition and Inertia Fields (April
+15)}\label{decomposition-and-inertia-fields-april-15}}
+
+\hypertarget{ramification-in-composite-fields}{%
+\subsection{Ramification in Composite
+Fields}\label{ramification-in-composite-fields}}
+
+\begin{remark}
+
+Recall the setup:
+
+\begin{itemize}
+\tightlist
+\item
+  \(L/K\) is a Galois extension of number fields.
+\item
+  \(P\in \operatorname{Spec}K\) nonzero, and in fact we'll usually mean
+  \(P \in \operatorname{mSpec}{\mathbb{Z}}_K\).
+\item
+  \(Q\in \operatorname{Spec}L\).
+\item
+  \({\mathbb{F}}_Q \coloneqq{\mathbb{Z}}_L/Q, {\mathbb{F}}_P \coloneqq{\mathbb{Z}}_K/P\)
+\end{itemize}
+
+When \(Q\) lies above \(P\), we defined \(D(Q/P)\) as all
+\(\sigma\in G(L/K)\) preserving \(Q\). We have a reduction map
+\begin{align*}
+{ \text{red} }_{Q/P}: D(Q/P) &\to G({\mathbb{F}}_Q / {\mathbb{F}}_P) \\
+\sigma &\mapsto \mkern 1.5mu\overline{\mkern-1.5mu\sigma\mkern-1.5mu}\mkern 1.5mu
+,\end{align*}
+which we saw was a surjective group morphism with kernel
+\(I(Q/P) \coloneqq\ker ({ \text{red} }_{Q/P})\). Since \(D, I\) are
+subgroups of \(G({\mathbb{F}}_Q/{\mathbb{F}}_P)\), we can consider the
+corresponding intermediate fixed fields, the \emph{inertia field} and
+\emph{decomposition field}. Using that the Galois correspondence is
+inclusion-reversing, we get the following:
+
+\begin{center}
+\begin{tikzcd}
+    L \\
+    \\
+    {L^{I(Q/P)}} \\
+    \\
+    {L^{D(Q/P)}} \\
+    \\
+    K
+    \arrow[no head, from=7-1, to=5-1]
+    \arrow[no head, from=5-1, to=3-1]
+    \arrow[no head, from=3-1, to=1-1]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNCxbMCwwLCJMIl0sWzAsNiwiSyJdLFswLDIsIkxee0koUS9QKX0iXSxbMCw0LCJMXntEKFEvUCl9Il0sWzEsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFszLDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMiwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d}{Link
+to Diagram}
+\end{quote}
+
+\end{remark}
+
+\begin{remark}
+
+Suppose we have a tower \(L/M/K\) with prime ideals \(Q/R/P\) with
+\(R\coloneqq Q \cap{\mathbb{Z}}_M\). We showed that with respect to
+containment,
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(L^{I(Q/P)}\) is the largest intermediate field in which
+  \(e(R/P) = 1\).
+\item
+  \(L^{D(Q/P)}\) is the largest intermediate field in which
+  \(e(R/P) = f(R/P) = 1\).
+\end{enumerate}
+
+Note that (b) is a stronger condition, so this matches the containment
+in the previous diagram.
+
+\end{remark}
+
+\begin{theorem}[?]
+
+Let \(M/K\) be an extension of number fields, not necessarily Galois.
+Let \(L\) be the \textbf{Galois closure} of \(M/K\), the smallest field
+extension containing \(M\) which is Galois over \(K\). Then
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(P\in \operatorname{Spec}K\) is unramified in \(M\) \(\iff\) \(P\) is
+  unramified in \(L\).
+\item
+  \(P\in \operatorname{Spec}K\) splits completely in \(M\) \(\iff\)
+  \(P\) splits completely in \(L\).
+\end{enumerate}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+We'll just prove (a), and a very similar argument will yield (b).
+
+\(\impliedby\): This is clear: if \(L/M/K\) is a tower and \(P\) is
+unramified in \(L\), why is it unramified in \(M\)? This is
+multiplicativity of \(e\) in towers. If we have \(R\) in \(M\) with
+\(R/P\), we can choose \(Q\) in \(L\) with \(Q/R/P\). If \(e(R/P) > 1\),
+we have \(e(Q/P) = e(Q/R) e(R/P) > 1\), forcing \(P\) to ramify in
+\(L\). Note that we haven't used that \(L\) is the Galois closure.
+
+\(\implies\): By the primitive element theorem, write \(M = K(\theta)\),
+how can we describe the Galois closure \(L\)? Listing
+\({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{r}}\) the roots of
+\(\min_{\theta}(x)\) over \(K\), then
+\(L = K({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{r}})\):
+
+\begin{center}
+\begin{tikzcd}
+    &&&& L = K({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{r}}) \\
+    \\
+    {K(\theta_1)} && {K(\theta_2)} && \cdots && {K(\theta_{r-1})} && {K(\theta_{r})} \\
+    \\
+    &&&& K
+    \arrow[no head, from=3-1, to=1-5]
+    \arrow[no head, from=3-3, to=1-5]
+    \arrow[dashed, no head, from=3-5, to=1-5]
+    \arrow[no head, from=3-7, to=1-5]
+    \arrow[no head, from=5-5, to=3-1]
+    \arrow[no head, from=3-3, to=5-5]
+    \arrow[dashed, no head, from=3-5, to=5-5]
+    \arrow[no head, from=3-7, to=5-5]
+    \arrow[no head, from=3-9, to=5-5]
+    \arrow[no head, from=3-9, to=1-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNyxbNCw0LCJLIl0sWzQsMCwiTCJdLFswLDIsIksoXFx0aGV0YV8xKSJdLFsyLDIsIksoXFx0aGV0YV8xKSJdLFs0LDIsIlxcY2RvdHMiXSxbNiwyLCJLKFxcdGhldGFfMSkiXSxbOCwyLCJLKFxcdGhldGFfMSkiXSxbMiwxLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzMsMSwiIiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs0LDEsIiIsMix7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzUsMSwiIiwyLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFswLDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMywwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzQsMCwiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSwwLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzYsMCwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFs2LDEsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+By assumption, \(P\) is unramified in \(M\), which is one
+\(K(\theta_i)\). There is always an isomorphism between any of the two
+\(K(\theta_i)\) which preserves \(K\), so abstractly they're all
+equivalent. So \(P\) is unramified in \(K(\theta_i)\) for all \(i\).
+Take any \(Q \in \operatorname{Spec}L\) over \(P\). We can consider the
+tower involving \(K(\theta_i)\) for any \(i\) and produce a
+corresponding prime \(R_i\):
+
+\begin{center}
+\begin{tikzcd}
+    L && Q \\
+    \\
+    {K(\theta_i)} && {R_i} \\
+    \\
+    K && P
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=3-1, to=5-1]
+    \arrow[no head, from=1-3, to=3-3]
+    \arrow[no head, from=3-3, to=5-3]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJMIl0sWzAsMiwiSyhcXHRoZXRhX2kpIl0sWzAsNCwiSyJdLFsyLDQsIlAiXSxbMiwwLCJRIl0sWzIsMiwiUl9pIl0sWzAsMSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDIsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCw1LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzUsMywiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==}{Link
+to Diagram}
+\end{quote}
+
+Since \(P\) is unramified in all \(K(\theta_i)\), we have
+\(e(R_i/P) = 1\). Now use the characterization of the inertia field:
+\(K(\theta_i) \subset L^{I(Q/P)}\), which is true for every \(i\). So
+their composite is also contained in the inertia field, so we have
+\begin{align*}
+L = K({ {\theta}_1, {\theta}_2, \cdots, {\theta}_{r}}) \subseteq L^{I(Q/P)} \subseteq L
+,\end{align*}
+yielding equality. Now note that the inertia field was the largest
+intermediate field for which \(e=1\), and we've just conclude
+\(L = L^{I(Q/P)}\), so \(e(Q/P) = 1\). Since \(Q/P\) was arbitrary,
+\(P\) is unramified.
+
+\end{proof}
+
+\begin{theorem}[?]
+
+Let \(M_1/K, M_2/K\) be any two extensions of \(K\). Then
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(P\) is unramified in \(M_1\) and \(M_2\) \(\iff\) \(P\) is
+  unramified in the composite field \(M_1 M_2\).
+\item
+  \(P\) splits completely in \(M_1\) and \(M_2\) \(\iff\) \(P\) splits
+  completely in the composite field \(M_1 M_2\).
+\end{enumerate}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+As before, we'll only prove (a).
+
+\(\impliedby\): Again clear by multiplicativity in towers.
+
+\(\implies\): Note that everything involving inertia only makes sense
+for Galois extensions, and we haven't assumed that here. So let \(L\) be
+the Galois closure of \(M_1M_2/K\), and let \(L_1, L_2\) be the Galois
+closures of \(M_1/K, M_2/K\) respectively. By the previous theorem,
+\(P\) is unramified in \(L_1, L_2\). How is \(L\) related to \(L_1\) and
+\(L_2\)? You can convince yourself that \(L = L_1 L_2\), since the
+right-hand side is a Galois extension of \(K\), and it contains
+\(M_1 M_2\). We'll forget the \(M_i\) and work with the following
+diagram:
+
+\begin{center}
+\begin{tikzcd}
+    & {} \\
+    & L \\
+    {L_1} && {L_2} & {} \\
+    & K
+    \arrow[no head, from=2-2, to=3-1]
+    \arrow[no head, from=2-2, to=3-3]
+    \arrow[no head, from=3-1, to=4-2]
+    \arrow[no head, from=3-3, to=4-2]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMSwwXSxbMCwyLCJMXzEiXSxbMiwyLCJMXzIiXSxbMywyXSxbMSwxLCJMIl0sWzEsMywiSyJdLFs0LDEsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNCwyLCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzEsNSwiIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDUsIiIsMix7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+We have a prime in \(K\) which is unramified in the \(L_i\), and we want
+to show it's also unramified in \(L\), which is equivalent to being
+unramified in \(M_1 M_2\) (which was our goal). Strat: let
+\(Q \in \operatorname{Spec}L\) with \(Q/P\) and let \(R_1, R_2\) be the
+corresponding primes in
+\(\operatorname{Spec}L_1, \operatorname{Spec}L_2\) between \(Q\) and
+\(P\). Since \(P\) is unramified in the \(L_i\), we have
+\(e(R_1/P) = e(R_2/P) = 1\). Thus \(L_i \subseteq L^{I(Q/P)}\), and so
+is their composite \(L_1 L_2 \subseteq L^{I(Q/P)}\). But
+\(L = L_1 L_2\), and so \(e(Q/P) = 1\).
+
+\end{proof}
+
+\hypertarget{frobenius}{%
+\subsection{Frobenius}\label{frobenius}}
+
+\begin{remark}
+
+Let \(E/F\) be an extension of \emph{finite} fields, so \(E/F\) is
+automatically Galois. Taking \(F \coloneqq{\mathbb{F}}_q\), then \(E\)
+is of the form \(E = {\mathbb{F}}_{q^m}\) for some \(m\). Then
+\(G(E/F)\) is cyclic of order \(m\), and is generated by
+\(x\mapsto x^q\), the \textbf{Frobenius map} on the finite field
+\(E/F\). For number fields, we'll want a slightly different notion of
+Frobenius.
+
+\end{remark}
+
+\begin{remark}
+
+Let \(L/K\) be a Galois extension of number fields, \(P\) a prime of
+\(K\) unramified in \(L\), and \(Q\) a prime of \(L\) above \(P\). Then
+\({\mathbb{F}}_Q/{\mathbb{F}}_P\) is an extension of finite fields, so
+we know \({ \text{red} }_{Q/P}\) is a surjective group morphism, and the
+inertia group has size \(e(Q/P)\), which is 1 in this situation. So this
+is an isomorphism between the ``global'' object \(D(Q/P)\) and the
+``local'' object \(G({\mathbb{F}}_Q/{\mathbb{F}}_P)\) on residue fields.
+We can pull back the generator on the right-hand side to define the
+\textbf{Frobenius element}
+\begin{align*}
+\mathop{\mathrm{Frob}}_{Q/P} \coloneqq{ \text{red} }_{Q/P}^{-1}(x\mapsto x^q)\in D(Q/P) && q\coloneqq\# {\mathbb{Z}}_K/P \coloneqq N(P)
+.\end{align*}
+
+\end{remark}
+
+\begin{observation}
+
+Note that \(\mathop{\mathrm{Frob}}_{Q/P}\) is an element of \(G(L/K)\)
+where for every
+\(\alpha\in {\mathbb{Z}}_L, \mathop{\mathrm{Frob}}_{Q/P}( \alpha) \equiv \alpha^q \pmod Q\)
+where \(q\coloneqq N(P)\). So \(\mathop{\mathrm{Frob}}_{Q/P}\) acts by
+the \(q\)th power map in \({\mathbb{Z}}_L/Q\), and in fact this is a
+characterization of the Frobenius element.
+
+\end{observation}
+
+\begin{lemma}[?]
+
+Suppose \(\sigma\in \operatorname{Gal}(L/K)\) satisfies
+\(\sigma( \alpha) \equiv \alpha^q \pmod Q\) for all
+\(\alpha\in {\mathbb{Z}}_L\) where \(q \coloneqq N(P)\). Then
+\(\sigma = \mathop{\mathrm{Frob}}_{Q/P}\).
+
+\end{lemma}
+
+\begin{remark}
+
+Why this is useful: you can check if something is the Frobenius element
+by just checking this congruence.
+
+\end{remark}
+
+\begin{proof}[?]
+
+Take any \(\alpha\in Q\), then
+\(\sigma(\alpha) \equiv \alpha^q\pmod Q \equiv 0^q \pmod Q\) and so
+\(\sigma( \alpha) \in Q\). So \(\sigma(Q) \subseteq Q\), but these are
+maximal ideals, forcing equality. Then \(\sigma(Q) = Q\) implies
+\(\sigma \in D(Q/P)\) by definition, and now applying
+\({ \text{red} }_{Q/P}( \sigma) = (x\mapsto x^q)\) is the \(q\)th power
+map and
+\(\sigma = { \text{red} }_{Q/P}^{-1}(x\mapsto x^q) \coloneqq\mathop{\mathrm{Frob}}_{Q/P}\).
+
+\end{proof}
+
+\begin{proposition}[?]
+
+Suppose \(L/K\) is a Galois extension of number fields with \(L/M/K\)
+where we additionally assume that \(M/K\) is Galois. For the tower
+\(L/M/K\), take primes \(Q/R/P\) where \(P\) is unramified in \(L\).
+Then
+\begin{align*}
+\mathop{\mathrm{Frob}}_{R/P} = { \left.{{\mathop{\mathrm{Frob}}_{Q/P}}} \right|_{{M}} }
+.\end{align*}
+
+\end{proposition}
+
+\begin{remark}
+
+Note that the right-hand side is an automorphism of \(L\) restricted to
+\(M\), which is only an automorphism of \(M\) when \(M/K\) is Galois.
+
+\end{remark}
+
+\begin{proof}[?]
+
+Definition chasing and using characterization of Frobenius. It's enough
+to show that for all \(\alpha\in {\mathbb{Z}}_M\), we have
+\begin{align*}
+{ \left.{{\mathop{\mathrm{Frob}}_{Q/P}}} \right|_{{M}} }( \alpha) \equiv \alpha^q \pmod R && q = N(P)
+.\end{align*}
+
+Since \(\alpha\in {\mathbb{Z}}_M\) and \(M \subseteq L\) so we can think
+of \(\alpha\in L\) and it makes sense to compute
+\(\mathop{\mathrm{Frob}}_{Q/P}( \alpha) \equiv \alpha^q \pmod Q\) since
+this is how Frobenius acts upstairs. So we just need to show that this
+congruence that holds for \(Q\) also holds for \(R\). Consider the
+difference: it's in \(Q\) by the modular condition, and using that
+\(M/K\) is Galois, the Frobenius restricts to an automorphism of \(M\)
+and thus \(\mathop{\mathrm{Frob}}_{Q/P}( \alpha) \in M\) (and is in fact
+still in \({\mathbb{Z}}_M\)). Thus we have a difference of two things in
+\({\mathbb{Z}}_M\) and in \(Q\), so
+\begin{align*}
+\mathop{\mathrm{Frob}}_{Q/P}( \alpha) - \alpha^q \in Q \cap{\mathbb{Z}}_M = R
+.\end{align*}
+
+\end{proof}
+
+\begin{remark}
+
+We'll see a nice example later of how to get the law of quadratic
+reciprocity from this!
+
+\end{remark}
+
+\hypertarget{frobenius-april-20}{%
+\section{Frobenius (April 20)}\label{frobenius-april-20}}
+
+\begin{remark}
+
+Setup and reminders:
+
+\begin{itemize}
+\tightlist
+\item
+  \(L/K\) a Galois extension of number fields,
+\item
+  \(P \in \operatorname{Spec}K\) unramified in \(L\)
+\item
+  \(Q\in \operatorname{Spec}L\) above \(P\), so \(e(Q/P) = 1\).
+\item
+  The Frobenius was defined as
+  \({ \text{red} }_{Q/P}^{-1}(x\mapsto x^q)\) for \(q \coloneqq N(P)\).
+\item
+  The characterization theorem for Frobenius:
+  \(\sigma = \mathop{\mathrm{Frob}}_{Q/P}\) iff
+  \(\sigma( \alpha) \equiv \alpha^q \pmod Q\), so Frobenius acts like
+  that \(q\)th power map mod \(Q\).
+\item
+  When \(L/M/K\) with \(M/K\) Galois with \(Q/R/P\),
+  \(\mathop{\mathrm{Frob}}_{R/P} = { \left.{{\mathop{\mathrm{Frob}}_{Q/P}}} \right|_{{M}} }\)
+\end{itemize}
+
+\end{remark}
+
+\begin{proposition}[?]
+
+Let \(L/K\) be Galois and let \(Q,Q'\) be two primes lying above \(P\):
+
+\begin{center}
+\begin{tikzcd}
+    L && Q && {Q'} \\
+    \\
+    K &&& P
+    \arrow[no head, from=1-1, to=3-1]
+    \arrow[no head, from=1-3, to=3-4]
+    \arrow[no head, from=1-5, to=3-4]
+\end{tikzcd}
+\end{center}
+
+Since Galois acts transitively, we can write \(Q' = \sigma(Q)\) for some
+\(\sigma \in G(L/K)\). Then
+\begin{align*}
+\mathop{\mathrm{Frob}}_{Q'/P} = \sigma \circ \mathop{\mathrm{Frob}}_{Q/P} \circ \sigma^{-1}
+.\end{align*}
+
+\end{proposition}
+
+\begin{proof}[Sketch]
+
+An exercise, use the characterization theorem. Set \(\tau\) to be the
+right-hand side, and check that
+\(\tau(\alpha) \equiv \alpha^p \pmod Q'\) for all
+\(\alpha \in {\mathbb{Z}}_L\) and \(q\coloneqq N(P)\).
+
+\end{proof}
+
+\begin{remark}
+
+What can we do when we are given a \(P\) but not a \(Q\)? There are many
+choices of \(Q\), all related by conjugation.
+
+\end{remark}
+
+\begin{definition}[Frobenius Conjugacy Class]
+
+Define the \textbf{Frobenius conjugacy class} as
+\begin{align*}
+\qty{L/K \over P} = \left\{{ \mathop{\mathrm{Frob}}_{Q/P} {~\mathrel{\Big|}~}Q \text{ lies above } P }\right\} \subseteq G(L/K)
+.\end{align*}
+This is a conjugacy class of \(G(L/K)\).
+
+\end{definition}
+
+\begin{remark}
+
+Note that this collapses to a single element when
+\(G(L/K)\in {\mathsf{Ab}}\)! By abuse of notation, we'll identify
+\(\qty{L/K \over P}\) with that common element (despite it being a
+singleton set).
+
+\end{remark}
+
+\begin{proposition}[Order of Frobenius]
+
+Every element of \(\qty{L/K \over P}\) has order \(f\), where
+\(f = f(Q/P)\) for any \(Q/P\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Let \(Q/P\) be a prime over \(P\), then
+\(\mathop{\mathrm{Frob}}_{Q/P} \coloneqq{ \text{red} }_{Q/P}^{-1}(x\mapsto x^q)\),
+where the \(q\)th power map is the generator of
+\(G({\mathbb{F}}_Q/{\mathbb{F}}_P)\), which has size
+\([{\mathbb{F}}_Q : {\mathbb{F}}_P] = f\). Since \({ \text{red} }\) was
+an isomorphism, we're done.
+
+\end{proof}
+
+\hypertarget{cyclotomic-fields}{%
+\subsection{Cyclotomic Fields}\label{cyclotomic-fields}}
+
+\begin{remark}
+
+Fix \(m\). Recall that the \(m\)th cyclotomic field \(K\) is defined by
+\begin{align*}
+K \coloneqq{\mathbb{Q}}(\zeta_m) && \zeta_m = e^{2\pi i / m}
+.\end{align*}
+This is the splitting field of \(x^m-1\), and in characteristic zero
+this implies \(K/{\mathbb{Q}}\) is Galois.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+\begin{align*}
+[K : {\mathbb{Q}}] = \phi(m)
+.\end{align*}
+
+\end{proposition}
+
+\begin{definition}[Cyclotomic Polynomials]
+
+Define the \textbf{\(m\)th cyclotomic polynomial} as
+\begin{align*}
+\Phi_m(x) \coloneqq\prod_{\substack{a\pmod m \\ (a, m) = 1}} (x - \zeta_m^a)
+.\end{align*}
+
+\end{definition}
+
+\begin{remark}
+
+Note that \(\deg \Phi_m(x) = \phi(m)\), since this is precisely how many
+terms show up in the indexing set. We'll show that this is the minimal
+polynomial of \(\zeta_m\)
+
+\begin{itemize}
+\item
+  The coefficients are algebraic integers, since the roots are all roots
+  of \(x^m-1\), which is monic in \({\mathbb{Z}}[x]\). Since
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu\)
+  is a ring, we have
+  \(\Phi_m(x) \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu[x]\).
+\item
+  If \(\sigma \in G(K/{\mathbb{Q}})\), then
+  \(\sigma(\zeta_m) = \zeta_m^b\) for some \(b\) coprime to \(m\). Then
+  \begin{align*}
+  \sigma(\Phi_m(x)) = \prod_{\substack{a\pmod m \\ (a, m) = 1}} (x - \zeta_m^{ab}) = \Phi_m(x)
+  ,\end{align*}
+  since as \(a\) runs through the number coprime to \(m\), so does
+  \(ab\). Thus \(\Phi_m(x) \in {\mathbb{Q}}[x]\), since its coefficients
+  are fixed by every element of the Galois group.
+\item
+  Combining these, the coefficients are in
+  \(\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{Z}}\mkern-1.5mu}\mkern 1.5mu[x] \cap{\mathbb{Q}}[x] = {\mathbb{Z}}[x]\).
+\end{itemize}
+
+\end{remark}
+
+\begin{proposition}[]
+
+\(\Phi_m(x) = m(x) \coloneqq\min_{\zeta_m}(x)\) is the minimal
+polynomial of \(\zeta_m\) over \({\mathbb{Q}}\).
+
+\end{proposition}
+
+\begin{proof}[?]
+
+Clearly \(m(x) \bigm|\Phi_m(x)\) in \({\mathbb{Q}}[x]\) since
+\(\Phi_m(x)\) vanishes at \(\zeta_m\). So every root of \(m(x)\) is a
+primitive \(m\)th root of unity, so we just need to show that every
+primitive \(m\)th root of unity is a root of \(m\), i.e.~we get all of
+them. Observe that if \(\zeta\) is \emph{any} \(m\)th root of unity,
+then \(\zeta \in {\mathbb{Z}}_K\): \(\zeta\) is an algebraic integer, as
+a root of \(x^m-1\), and is in \(K\) since it's a power of \(\zeta_m\).
+Also note that \(m(x) \in {\mathbb{Z}}[x]\) since the minimal polynomial
+of \emph{any} algebraic integer has rational integer coefficients. So
+\(m(\zeta)\in {\mathbb{Z}}_K\) since \({\mathbb{Z}}_K\) is a ring and
+\(\zeta\in {\mathbb{Z}}_K\), and \(N(m(\zeta)) \in {\mathbb{Z}}\).
+
+\begin{claim}
+
+There is an \(M\in {\mathbb{Z}}^{\geq 0}\) such that if \(q\) is any
+prime with \(q> M\) and \(\zeta\) is any root of \(m(x)\), then
+\(\zeta^q\) is still a root of \(m(x)\).
+
+I.e. the roots of \(m(x)\) are closed under taking \(q\)th powers for
+large enough \(q\). Moreover, it's enough to pick any
+\(M> \max_{\zeta} {\left\lvert {N(m(\zeta))} \right\rvert}\), taking
+\(\zeta\) over all \(m\)th roots of 1.
+
+\end{claim}
+
+\begin{proof}[of claim]
+
+Let \(q>M\) be chosen as above and let \(\zeta\) be a root of \(m(x)\).
+We know \(\zeta\) is a primitive \(m\)th root of unity and in
+\({\mathbb{Z}}_K\). Work modulo \(Q\): since \(0 = m(\zeta)\) we have
+\begin{align*}
+0 
+\equiv m(\zeta)^q \equiv m(\zeta^q)
+.\end{align*}
+Hence
+\begin{align*}
+q \bigm|N(q) \bigm|N(m(\zeta^q))
+,\end{align*}
+using that \(N(q) = q^d\) since it's a rational integer where \(d\) is
+the degree of the number field. But we have
+\(q > {\left\lvert { N(m(\zeta^q))} \right\rvert}\), which can only
+happen if the right-hand side is zero. The only element of norm zero in
+a number field is zero, so \(m(\zeta^q) = 0\).
+
+\end{proof}
+
+So if \(q>M\) and \(\zeta\) is a root of \(m(x)\), so is \(\zeta^q\).
+\(\zeta_m\) is a root of \(m(x)\), thus so us
+\(\zeta_m^{q_1}, \zeta_m^{q_1 q_2}, \cdots, \zeta_m^{A}\) for any
+\(A \in {\mathbb{Z}}^{\geq 0}\) which can be written as a product of
+primes bigger than \(M\).
+
+\begin{exercise}[?]
+
+Show that we can choose any \(a\in {\mathbb{Z}}\) with
+\(\gcd(a, m) = 1\), and choose \(A\) as above with
+\(A \cong a \pmod m\).
+
+\end{exercise}
+
+With this, \(\zeta_m^a = \zeta_m^A\) will be a root of \(m(x)\) and
+we're done.
+
+\end{proof}
+
+\begin{remark}
+
+Note that the exercise does follow from Dirichlet's theorem for
+arithmetic progressions, but there are easier proofs.
+
+\end{remark}
+
+\hypertarget{galois-theory-of-mathbbqzeta_m-mathbbq}{%
+\subsection{\texorpdfstring{Galois Theory of
+\({\mathbb{Q}}(\zeta_m) / {\mathbb{Q}}\)}{Galois Theory of \{\textbackslash mathbb\{Q\}\}(\textbackslash zeta\_m) / \{\textbackslash mathbb\{Q\}\}}}\label{galois-theory-of-mathbbqzeta_m-mathbbq}}
+
+\begin{remark}
+
+Let \(\sigma \in G(K/{\mathbb{Q}})\), then we saw that
+\(\sigma(\zeta_m) = \zeta_m^a\) for some \(a\) coprime to \(m\). So we
+know \(\# G(K/{\mathbb{Q}}) < \phi(m)\), since there are only that many
+possibilities for the right-hand side. Since
+\([K:{\mathbb{Q}}] = \phi(m)\), for each \(a\) coprime to \(m\) there is
+a \(\sigma_a\) with \(\sigma_a(\zeta_m) = \zeta_m^a\), so we can write
+\begin{align*}
+G(K/{\mathbb{Q}}) = \left\{{ \sigma_a {~\mathrel{\Big|}~}a\in ({\mathbb{Z}}/m)^{\times}}\right\} 
+.\end{align*}
+Noting that
+\(\sigma_a \sigma_b (\zeta_m) = \zeta_m^{ab} = \sigma_{ab}\), so we get
+an isomorphism
+\begin{align*}
+G(K/{\mathbb{Q}}) &\xrightarrow{\sim} ({\mathbb{Z}}/m) ^{\times}\\
+\sigma_a &\rightleftharpoons a\pmod m
+,\end{align*}
+so \(K/{\mathbb{Q}}\) is an abelian extension.
+
+\end{remark}
+
+\hypertarget{the-frobenius}{%
+\subsubsection{The Frobenius}\label{the-frobenius}}
+
+\begin{remark}
+
+Consider \(K \coloneqq{\mathbb{Q}}(\zeta_m)\), then for every rational
+prime \(P\) unramified in \(K\), there is a well-defined element in
+\(\qty{K/{\mathbb{Q}}\over P} \in G(K/{\mathbb{Q}}) = ({\mathbb{Z}}/m)^{\times}\).
+For a given \(P\), which element in \(({\mathbb{Z}}/m)^{\times}\) do you
+get?
+
+\end{remark}
+
+\begin{proposition}[?]
+
+If
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% m
+\), then \(p\) is unramified in \({\mathbb{Q}}(\zeta_m)\).
+
+\end{proposition}
+
+\begin{remark}
+
+The converse is more or less true:
+\({\mathbb{Q}}(\zeta_2) = {\mathbb{Q}}\) since \(\zeta_2 = -1\), but 2
+is not ramified in \({\mathbb{Q}}\) since nothing is ramified in itself.
+So if you avoid \(m\equiv 2 \pmod 4\), the converse becomes true. We'll
+just prove the mentioned direction.
+
+\end{remark}
+
+\begin{lemma}[?]
+
+\begin{align*}
+{\mathbb{Z}}_K = {\mathbb{Z}}[\zeta_m]
+.\end{align*}
+
+\end{lemma}
+
+\begin{exercise}[?]
+
+Show that \(p\) ramifies in \(K\) iff \({\mathbb{Z}}_K/p{\mathbb{Z}}_K\)
+has a nonzero nilpotent element.
+
+\end{exercise}
+
+\begin{proof}[of proposition, cute!]
+
+Suppose
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% m
+\), then it suffices to show that
+\({\mathbb{Z}}[\zeta_m] / p{\mathbb{Z}}[\zeta_m]\) has no nonzero
+nilpotents. Let \(\alpha\in {\mathbb{Z}}[\zeta_m]\) with
+\(\alpha \pmod p\) nilpotent in the quotient, we'll show it must be zero
+in the quotient. By the lemma, we can write
+\(\alpha = \sum_{i=0}^{d-1} a_i \zeta^i\), using that
+\({\mathbb{Z}}_K = {\mathbb{Z}}[\zeta]\) where all of the \(a_i\) are in
+\({\mathbb{Z}}\), we've set \(\zeta\coloneqq\zeta_m\) and
+\(d = \phi(m) = [K : {\mathbb{Q}}]\).
+
+Look mod \(p\), then
+\begin{align*}
+\alpha^p &\equiv \sum_{i=0}^{d-1} a_i \zeta^{ip} \pmod p
+\implies \alpha^{p^f} &\equiv \sum_{i=0}^{d-1} a_i \zeta^{ip^f} \pmod p && \forall f
+.\end{align*}
+If \(f\) is large enough, \(\alpha^{p^f} \equiv 0 \pmod p\), since some
+power of \(\alpha\) is zero. On the other hand,
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% m
+\), so there are powers of \(p\) that are \(1\pmod m\) that show up
+regularly, and we can choose \(f\) so that \(p^f \cong 1 \pmod m\),
+e.g.~by choosing \(f\) to be any multiple of the order of \(p\) mod
+\(m\). But then the second line above reduces to
+\(\sum a_i\zeta^{ip^f} \equiv \sum a_i \zeta^{i} = \alpha\) since
+\(p^f \equiv 1 \pmod m\), so \(\alpha^{p^f} \equiv \alpha\), but we know
+\(\alpha^{p^f} \equiv 0\).
+
+\end{proof}
+
+\begin{theorem}[?]
+
+Suppose
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% m
+\), which guarantees \(p\) does not ramify in \(K\). Then
+\begin{align*}
+\qty{K/{\mathbb{Q}}\over P} = \sigma_p && \sigma_p(\zeta_m) \coloneqq\zeta_m^p
+.\end{align*}
+
+\end{theorem}
+
+\begin{proof}[?]
+
+Choose any \(Q\) lying above \(p\). We'll show that for all
+\(\alpha\in {\mathbb{Z}}_K\), \(\sigma_p( \alpha) = \alpha^p \pmod Q\),
+which by the characterization theorem will show
+\(\sigma_p = \mathop{\mathrm{Frob}}_{Q/P}\), and in the abelian case
+\(\qty{K/{\mathbb{Q}}\over p}\) reduces to this single element. We know
+that \(Q\supseteq p{\mathbb{Z}}_K\) since \(Q\) is above \(p\), so it's
+enough to show \(\sigma_p( \alpha) \equiv \alpha^p \pmod p\) for all
+\(\alpha\in {\mathbb{Z}}_K\) -- this is because the difference is a
+multiple of \(p\) in \({\mathbb{Z}}_K\), which is a subset of \(Q\).
+Using \({\mathbb{Z}}_K = {\mathbb{Z}}[\zeta_m]\) to write
+\(\alpha = \sum_{i=0}^{d-1} a_i \zeta_m^{i}\) where \(d\) is the degree
+of the extension. Now reducing \(\pmod p\) and applying the Freshman's
+dream yields
+\begin{align*}
+\sigma_p( \alpha) 
+&= \sum_{i=0}^{d-1} a_i \zeta_m^{ip} \\
+&\equiv \qty{ \sum_{i=0}^{d-1} a_i \zeta_m^{i}}^p \pmod p \\
+&\equiv \alpha^p
+.\end{align*}
+
+\end{proof}
+
+\begin{remark}
+
+This can be used to determine how all of the primes
+\(p%  \mathrel{\mkern.5mu % small adjustment  % superimpose \nmid to \big|  \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%  }% m
+\) factor in \({\mathbb{Q}}(\zeta_m)\), i.e.~easily determining the
+relevant values of \(f\) and \(g\).
+
+\end{remark}
+
+\hypertarget{april-26}{%
+\section{April 26}\label{april-26}}
+
+Pick up here:
+\textless youtube.com/watch?v=SwashKudOwg\&list=PLA0xtXqOUji8fjQysx4k8a6h-hOZ7x5ue\&index=27\textgreater{}
 
 \addsec{ToDos}
 \listoftodos[List of Todos]
