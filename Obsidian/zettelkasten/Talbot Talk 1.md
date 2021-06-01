@@ -32,4 +32,4 @@ Computing things
 - $\pi_0 \Br(R)$
 - $\pi_1 \Br(R) = \pi_0 \Pic(R)$
 - $\pi_2 \Br(R) = \pi_1 \Pic(R) = \pi_0 \GL_1(R) = (\pi_0 R)\units$
-- $\pi_{>2} \Br(R) = 
+- $\pi_{>2} \Br(R) = \pi_{>1} \Pic(R) = \pi_{>0} \GL_1(R) = \pi_{>0} R$.
