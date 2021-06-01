@@ -63,3 +63,17 @@
 - In the category of Weinstein manifolds, a morphism is a codimension 0 embedding $j: M\emebds (N, X_N)$ where we convert $X_N$ to a one-form $\theta_N$ using $\omega$, such that $j^* \Theta_N = \Theta_M + df$ for $f$ some compactly supported function.
 
 - Theorem: the wrapped Fukaya category defines a functor from the category of Weinstein manifolds to $A_\infty\dast\Cat_\ZZ$ which factors through taking $M\cross T\dual \cross \RR^N$.
+  - The target has an infinity category structure.
+- Ways to improve this to an $\SS\dash$linear category:
+  - Reformulate $\Fuk(M)$ as the solution to a deformation problem. 
+  Very difficult!!
+  - From $M$ construct a stable $\infty\dash$category of Lagrangian cobordisms $\Lag(M)$ (already enriched in spectra).
+  Conjecturally: $\Lag(M) \tensor_\SS \HZ = \Fuk(M)$
+  - Microlocal special sheaves.
+
+- All three are conjecturally thought to work.
+
+- Question: can one symplectically construct certain $E_\infty$ maps, e.g. $\SS, \SS\invert{p}$.
+  - Yes, if we localize $\Wein$ in a certain way
+
+- 
