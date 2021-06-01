@@ -33,3 +33,10 @@ Computing things
 - $\pi_1 \Br(R) = \pi_0 \Pic(R)$
 - $\pi_2 \Br(R) = \pi_1 \Pic(R) = \pi_0 \GL_1(R) = (\pi_0 R)\units$
 - $\pi_{>2} \Br(R) = \pi_{>1} \Pic(R) = \pi_{>0} \GL_1(R) = \pi_{>0} R$.
+
+- Can compute low degree $k$ invariants for $\Pic(R)$, comes from looking at Steenrod operations
+- How to compute more:
+	- Comparison with algebra (relatively easy, could reduce to open problems)
+	- Descent
+	- Obstruction theory
+
