@@ -14,7 +14,6 @@
 	- Can get stable infty categories out of very geometric things: symplectic manifolds
 	- Hope to get an equivalence of categories between some infty  category of symplectic manifolds and the infty category of stable infty categories
 
-## Morse Theory
-
-- Index: write $f$ locally as $\sum x_i^2 - \sum y_i^2$ and the number of negative components is the index of the critical point
-- Weinstein manifold
+- Morse theory recap
+	- Index: write $f$ locally as $\sum x_i^2 - \sum y_i^2$ and the number of negative components is the index of the critical point
+- Weinstein manifolds and sectors: special types of symplectic manifolds obtained from handle attachment
