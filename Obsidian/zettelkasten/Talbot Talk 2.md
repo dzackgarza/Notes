@@ -51,4 +51,7 @@
 - Informal definition of $\Fuk(M)$: it's like a DG category
 
   - Objects are Lagrangians
-  - $\Hom(L_0, L_1)$ is like a chain complex: a graded abelian group $\Oplus_{z\in L_2 \transverse L_1} \ZZ/2[?]$ for some shift with differential $\del$ whose coefficients are given by counting holomorphic discs from $x$ to $y$.
+  - $\Hom(L_0, L_1)$ is like a chain complex: a graded abelian group $\Oplus_{z\in L_2 \transverse L_1} \ZZ/2[d]$ for some shift $d$ with differential $\del$ whose coefficients are given by counting holomorphic discs from $x$ to $y$.
+  - Composition is given by $y\tensor x\mapsto \sum ? z$ where the count is given by counting holomorphic discs mapping to the triangle $x,y,z$.
+  Note: non-associative
+  - Can recover presentation of Stasheff associahedra.
