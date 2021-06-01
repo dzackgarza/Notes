@@ -76,4 +76,13 @@
 - Question: can one symplectically construct certain $E_\infty$ maps, e.g. $\SS, \SS\invert{p}$.
   - Yes, if we localize $\Wein$ in a certain way
 
-- 
+- There is a known class of maps $W$ where $M\to N$ induces $\Fuk(M) \mapsvia{\sim} \Fuk(N)$.
+
+- Theorem: $\Wein\invert{W}$ is symmetric monoidal
+  - Can construct a symplectic manifold $D_p$ which is an $E_\infty$ algebra in $\Wein\invert{W}$ where $\Fuk(D_p)^\tensor \mapsvia{\sim} \modsleft{\ZZ\invert{p}}^\tensor$.
+
+- First case of a purely symplectic construction of an $E_\infty\dash$algebra!
+  - Which ones can we construct?
+
+- Conjecture: $\Hom_{\Wein\invert{W}}(\pt, \pt) \homotopic$ to the groupoid of finite spectra, or equivalently the space of functors from finite spectra to itself (since all are given by smash against a specific spectrum)
+  - Here $\pt \cong T\dual \RR^{\infty}$.
