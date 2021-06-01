@@ -46,7 +46,9 @@
   - $Q \injects T\dual Q$
   - Any cotangent fiber $T_q\dual Q$
 
+- Almost complex structure used to define a differential equation
+
 - Informal definition of $\Fuk(M)$: it's like a DG category
 
   - Objects are Lagrangians
-  - $\Hom(L_0, L_1)$ is like a chain complex:
+  - $\Hom(L_0, L_1)$ is like a chain complex: a graded abelian group $\Oplus_{z\in L_2 \transverse L_1} \ZZ/2[?]$ for some shift with differential $\del$ whose coefficients are given by counting holomorphic discs from $x$ to $y$.
