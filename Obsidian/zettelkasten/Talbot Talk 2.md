@@ -20,16 +20,18 @@
   - Allows some mild but controlled singularities making them non-manifolds
   - Can construct interesting cosheaves of categories
 - Defining a symplectic manifold:
-	- $\omega^{\vee 2}$ defines a volume form, or use $v\mapsto \omega(v, \wait)$ is a non-degenerate 1-form, thinking of $\omega: TM \mapsvia{\sim} T\dual M$.
+	- $\omega^{\wedge 2}$ defines a volume form, or use $v\mapsto \omega(v, \wait)$ is a non-degenerate 1-form, thinking of $\omega: TM \mapsvia{\sim} T\dual M$.
     - The latter definition is useful in derived geometry.
   - $d\omega = 0$, a flatness condition.
-- The most important example: for $Q$ any smooth manifold, the total cotangent space $T\dual Q, dp \vee dq)$ is symplectic.
-  - Locally write coordinates $\elts{q}{n}$, get $\elts{dq}{n}$, then $\sum p_i dq_i\in T|dual \RR^n$.
-    Take de Rham derivative to get $\sum dp_i \vee dq_i \in \Omega^2(\RR^n)$.
+- The most important example: for $Q$ any smooth manifold, the total cotangent space $T\dual Q, dp \wedge dq)$ is symplectic.
+  - Locally write coordinates $\elts{q}{n}$, get $\elts{dq}{n}$, then $\sum p_i dq_i\in T\dual \RR^n$.
+    Take de Rham derivative to get $\sum dp_i \wedge dq_i \in \Omega^2(\RR^n)$.
 
 - Can make some symplectic manifolds out of Weinstein cells.
 
 - Taking a one form $\alpha = \omega(\wait, X)$, it turns out $d\alpha = \omega$ so $\alpha$ is an antiderivative.
 
 - Fact: if $M$ is compact of dimension $d\geq 2$ then $M$ can not be Weinstein.
+
+
 
