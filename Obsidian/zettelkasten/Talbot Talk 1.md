@@ -40,3 +40,4 @@ Computing things
 	- Descent
 	- Obstruction theory
 
+Use that there is an injection $0\to \Pic(\pi_* R) \to \pi_0 \pic(R)$ when $R$ is conn
