@@ -86,3 +86,5 @@
 
 - Conjecture: $\Hom_{\Wein\invert{W}}(\pt, \pt) \homotopic$ to the groupoid of finite spectra, or equivalently the space of functors from finite spectra to itself (since all are given by smash against a specific spectrum)
   - Here $\pt \cong T\dual \RR^{\infty}$.
+
+- A way to make "functors are bimodules" concrete in this category.
