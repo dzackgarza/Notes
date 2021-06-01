@@ -16,6 +16,6 @@
   \xi/X &\mapsto \Th(\xi)
   .\]
   Yields an $\infty\dash$loop map Z\cross \B \Orth\to \Pic(S^0)$ and $\ko \to \pic(S^0)$.
-  Yields Adams' $J\dash$homomorphism
+  Yields Adams' $J\dash$homomorphis.
 
 
