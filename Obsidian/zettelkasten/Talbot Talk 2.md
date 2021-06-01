@@ -1,6 +1,6 @@
 # Talbot Talk 2: Hiro
 
-## Intro
+## Part 1
 
 - Assign to a symplectic manifold a Fukaya category
 	- An $A_\infty$ category, slightly different than homotopy-theoretic notion
@@ -33,5 +33,11 @@
 
 - Fact: if $M$ is compact of dimension $d\geq 2$ then $M$ can not be Weinstein.
 
-- Some kind of "symplectic Pontryagin-Thom"
+- Some kind of "symplectic Pontryagin-Thom" theorem
 
+- Note: need to distinguish between actual boundaries and "boundaries at infinity"
+
+## Part 2
+
+- Constructing the (wrapped) Fukaya category
+- A half-dimensional submanifold $L$ of a symplectic manifold is **Lagrangian** iff $\omega\ro{}{L} = 0$.
