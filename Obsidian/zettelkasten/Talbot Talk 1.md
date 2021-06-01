@@ -47,4 +47,8 @@ Use that there is an injection $0\to \Pic(\pi_* R) \to \pi_0 \pic(R)$ when $R$ i
 	-  $R\to S$ a map of ring spectra if $\pi_0 R\to \pi_0 S$ is etale as a map of rings (smooth of dimension zero, or flat + unramified) and there is an equivalence $\pi_k R \tensor_{\pi_0 R} \pi_0 S \mapsvia{\sim} \pi_k S$.
 	-  $\KO$ has no interesting etale extension
 - $R\to S^{?}$ is $G\dash$Galois if 
-	- $R \mapsvia{\sim}S^{kG}$, mapping to homotopy fixed points is an equivalence
+	- $R \mapsvia{\sim}S^{hG}$, mapping to homotopy fixed points is an equivalence
+	- $S\tensor_R S \mapsvia{\sim} \prod_G S$
+- $\pi_* \ku = \ZZ[\bottclass ^{\pm 1}]$ and $\Pic(\pi_* \ku) = \ZZ/2$.
+	In fact $\Pic(\KU) = \ZZ/2$, and descent yields $\Pic(\KO) = \Pic(\KU)^{hC_2}$
+- See descent spectral sequence?
