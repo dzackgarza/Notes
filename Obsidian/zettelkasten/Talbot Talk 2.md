@@ -33,5 +33,5 @@
 
 - Fact: if $M$ is compact of dimension $d\geq 2$ then $M$ can not be Weinstein.
 
-
+- Some kind of "symplectic Pontryagin-Thom"
 
