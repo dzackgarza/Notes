@@ -8,8 +8,8 @@
 	- A $\ZZ\dash$linear stable infty category
 - Replace with a functor $\Fuk$ that takes a category of symplectic manifolds to a stable infty-category over $\ZZ$
 - Analogies:
-	- The "take modules" functor $(\Rings)^\op$ to stable infty cats over $\ZZ$, $R\mapsto \rmod$
-	- $\Sch^\op$ to stable infty cats over $\ZZ$, $X\mapsto \D^b\Coh(X)$.
+	- The "take modules" functor $(\Ring)\op$ to stable infty cats over $\ZZ$, $R\mapsto \rmod$
+	- $\Sch\op$ to stable infty cats over $\ZZ$, $X\mapsto \D^b\Coh(X)$.
 - Recent conjecture: for certain $M$, make an$\SS\dash$linear functor $\Fuk(\wait, \SS)$ where $\Fuk(M, \SS)$ is a stable infty category
 	- Can get stable infty categories out of very geometric things: symplectic manifolds
 	- Hope to get an equivalence of categories between some infty  category of symplectic manifolds and the infty category of stable infty categories
@@ -24,3 +24,7 @@
 - The most important example: for $Q$ any smooth manifold, the total cotangent space $T\dual Q, dp \vee dq)$ is symplectic.
   - Locally write coordinates $\elts{q}{n}$, get $\elts{dq}{n}$, then $\sum p_i dq_i\in T|dual \RR^n$.
     Take de Rham derivative to get $\sum dp_i \vee dq_i \in \Omega^2(\RR^n)$.
+
+- Can make some symplectic manifolds out of Weinstein cells.
+
+
