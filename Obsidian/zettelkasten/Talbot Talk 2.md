@@ -53,5 +53,9 @@
   - Objects are Lagrangians
   - $\Hom(L_0, L_1)$ is like a chain complex: a graded abelian group $\Oplus_{z\in L_2 \transverse L_1} \ZZ/2[d]$ for some shift $d$ with differential $\del$ whose coefficients are given by counting holomorphic discs from $x$ to $y$.
   - Composition is given by $y\tensor x\mapsto \sum ? z$ where the count is given by counting holomorphic discs mapping to the triangle $x,y,z$.
-  Note: non-associative
+  Note: non-associative, need to consider discs filling in punctured $n\dash$gons for all $n$
   - Can recover presentation of Stasheff associahedra.
+
+- There is an equivalence $\Fuk(M) \mapsvia{\sim} \Fuk(M \cross T\dual \RR^N)$ where $L\mapsto L \times T_0\dual \RR^N$, take colim to replace $N$ with $\infty$.
+
+- Need to do **wrapping**, but we won't get into it.
