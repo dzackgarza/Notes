@@ -16,9 +16,11 @@
 
 - Morse theory recap
 	- Index: write $f$ locally as $\sum x_i^2 - \sum y_i^2$ and the number of negative components is the index of the critical point
-- Weinstein manifolds and sectors: special types of symplectic manifolds obtained from handle attachment
+- Weinstein manifolds and sectors: special types of symplectic manifolds obtained from handle attachment (sectors: allowing boundaries)
 - Defining a symplectic manifold:
 	- $\omega^{\vee 2}$ defines a volume form, or use $v\mapsto \omega(v, \wait)$ is a non-degenerate 1-form, thinking of $\omega: TM \mapsvia{\sim} T\dual M$.
     - The latter definition is useful in derived geometry.
   - $d\omega = 0$, a flatness condition.
-- The most important example: for $Q$ any smooth manifolf, $T\dual Q, dp \vee dq)$ is symplectic.
+- The most important example: for $Q$ any smooth manifold, the total cotangent space $T\dual Q, dp \vee dq)$ is symplectic.
+  - Locally write coordinates $\elts{q}{n}$, get $\elts{dq}{n}$, then $\sum p_i dq_i\in T|dual \RR^n$.
+    Take de Rham derivative to get $\sum dp_i \vee dq_i \in \Omega^2(\RR^n)$.
