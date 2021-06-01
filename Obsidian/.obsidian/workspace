@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Stable Homotopy Seminar.md",
+            "file": "zettelkasten/Talbot Talk 1.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md",
+                "file": "zettelkasten/Talbot Talk 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md"
+                "file": "zettelkasten/Talbot Talk 1.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md",
+                "file": "zettelkasten/Talbot Talk 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md",
+                "file": "zettelkasten/Talbot Talk 1.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "a7eecb88c72e4c10",
   "lastOpenFiles": [
+    "zettelkasten/Untitled 11.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/stack.md",
     "zettelkasten/simplicial set.md",
@@ -249,7 +250,6 @@
     "zettelkasten/Learning.md",
     "zettelkasten/Learning Algebraic Number Theory.md",
     "zettelkasten/Workshops/Algebra/Week n+1 Linear Algebra.md",
-    "zettelkasten/Workshops/Algebra/Untitled.md",
-    "zettelkasten/DVR.md"
+    "zettelkasten/Workshops/Algebra/Untitled.md"
   ]
 }
