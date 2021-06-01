@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Talbot Talk 1.md",
+            "file": "Quick_Notes/2021-05-10.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DVR",
+                "query": "dualizable",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Talbot Talk 1.md",
+                "file": "Quick_Notes/2021-05-10.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Talbot Talk 1.md"
+                "file": "Quick_Notes/2021-05-10.md"
               }
             }
           },
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Talbot Talk 1.md",
+                "file": "Quick_Notes/2021-05-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Talbot Talk 1.md",
+                "file": "Quick_Notes/2021-05-10.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +242,15 @@
   },
   "active": "a7eecb88c72e4c10",
   "lastOpenFiles": [
+    "Quick_Notes/2021-05-10.md",
+    "Quick_Notes/2021-05-24.md",
+    "Quick_Notes/2021-05-25.md",
     "zettelkasten/Untitled 11.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/stack.md",
     "zettelkasten/simplicial set.md",
     "zettelkasten/Papers to Read.md",
     "00_Home.md",
-    "zettelkasten/Learning.md",
-    "zettelkasten/Learning Algebraic Number Theory.md",
-    "zettelkasten/Workshops/Algebra/Week n+1 Linear Algebra.md",
-    "zettelkasten/Workshops/Algebra/Untitled.md"
+    "zettelkasten/Learning.md"
   ]
 }
