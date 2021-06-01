@@ -17,6 +17,13 @@
   .\]
   Yields an $\infty\dash$loop map Z\cross \B \Orth\to \Pic(S^0)$ and $\ko \to \pic(S^0)$.
   Yields Adams' $J\dash$homomorphis.
-  - Story that develops here: can develop a theory of orientatations.
+  - Story that develops here: can develop a theory of $R\dash$oriented bundles, twisted $R\dash$cohomology, twists by ordinary cohomology class, or twist by the space of maps $\PPic = \map(\HZ, \pic)$.
 
+- There is also a Brauer space $\Br(R)$.
+
+
+Questions:
+
+- What are $\pi_* \GL_1(R)$?
+- For a space $X$, show that $[X, \GL(R)] = R^0(X)^X$
 
