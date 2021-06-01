@@ -6,7 +6,6 @@
 - Taking the connected component of $R$ yields $(\Pic(R))_R = \B \GL_1(R)$
 - $[X, \Pic(R)]$ equals bundles of invertible \(R\dash\)modules in $X$.
   - Classical example: $[X, \Pic(S^0)]$, stable spherical fibrations on $X$, motivates most of the development of this theory.
-- Exercise: what are the invertible $S^0$ modules?
   Equivalently, what is $\Pic(S^0)$?
 - $\ko$: connective real $K$ theory
   - The 0th space: $\Omega^ \infty \cong \ZZ \cross \B \Orth$, classifies stable real vector bundles.
@@ -26,4 +25,5 @@ Questions:
 
 - What are $\pi_* \GL_1(R)$?
 - For a space $X$, show that $[X, \GL(R)] = R^0(X)^X$
+- What are the invertible $S^0$ modules?
 
