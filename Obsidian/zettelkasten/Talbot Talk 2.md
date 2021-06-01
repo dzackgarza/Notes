@@ -17,6 +17,8 @@
 - Morse theory recap
 	- Index: write $f$ locally as $\sum x_i^2 - \sum y_i^2$ and the number of negative components is the index of the critical point
 - Weinstein manifolds and sectors: special types of symplectic manifolds obtained from handle attachment (sectors: allowing boundaries)
+  - Allows some mild but controlled singularities making them non-manifolds
+  - Can construct interesting cosheaves of categories
 - Defining a symplectic manifold:
 	- $\omega^{\vee 2}$ defines a volume form, or use $v\mapsto \omega(v, \wait)$ is a non-degenerate 1-form, thinking of $\omega: TM \mapsvia{\sim} T\dual M$.
     - The latter definition is useful in derived geometry.
@@ -27,4 +29,7 @@
 
 - Can make some symplectic manifolds out of Weinstein cells.
 
+- Taking a one form $\alpha = \omega(\wait, X)$, it turns out $d\alpha = \omega$ so $\alpha$ is an antiderivative.
+
+- Fact: if $M$ is compact of dimension $d\geq 2$ then $M$ can not be Weinstein.
 
