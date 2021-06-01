@@ -52,3 +52,4 @@ Use that there is an injection $0\to \Pic(\pi_* R) \to \pi_0 \pic(R)$ when $R$ i
 - $\pi_* \ku = \ZZ[\bottclass ^{\pm 1}]$ and $\Pic(\pi_* \ku) = \ZZ/2$.
 	In fact $\Pic(\KU) = \ZZ/2$, and descent yields $\Pic(\KO) = \Pic(\KU)^{hC_2}$
 - See descent spectral sequence?
+	- Descent is like a local to global principle.
