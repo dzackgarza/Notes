@@ -41,3 +41,12 @@
 
 - Constructing the (wrapped) Fukaya category
 - A half-dimensional submanifold $L$ of a symplectic manifold is **Lagrangian** iff $\omega\ro{}{L} = 0$.
+
+  - Ex: Any curve in $M$, since a two-form restricted to a one-manifold is trivial
+  - $Q \injects T\dual Q$
+  - Any cotangent fiber $T_q\dual Q$
+
+- Informal definition of $\Fuk(M)$: it's like a DG category
+
+  - Objects are Lagrangians
+  - $\Hom(L_0, L_1)$ is like a chain complex:
