@@ -44,4 +44,7 @@ Use that there is an injection $0\to \Pic(\pi_* R) \to \pi_0 \pic(R)$ when $R$ i
 	- This is $\Pic$ over graded rings
 	- But it's much more complicated to have anything like this for the Brauer group.
 - Theorem: the functors $\Pic$ and $\Br$, $\Calg(\Sp) \to \infloopspace$ satisfy etale and Galois descent (respectively)
-	-  $R\to S$ a map of ring spectra if $\pi_0 R\to \pi_0 S$ is etale as a map of rings (smooth of dimension zero, or flat + unramified)
+	-  $R\to S$ a map of ring spectra if $\pi_0 R\to \pi_0 S$ is etale as a map of rings (smooth of dimension zero, or flat + unramified) and there is an equivalence $\pi_k R \tensor_{\pi_0 R} \pi_0 S \mapsvia{\sim} \pi_k S$.
+	-  $\KO$ has no interesting etale extension
+- $R\to S^{?}$ is $G\dash$Galois if 
+	- $R \mapsvia{\sim}S^{kG}$, mapping to homotopy fixed points is an equivalence
