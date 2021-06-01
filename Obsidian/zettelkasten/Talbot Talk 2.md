@@ -88,3 +88,5 @@
   - Here $\pt \cong T\dual \RR^{\infty}$.
 
 - A way to make "functors are bimodules" concrete in this category.
+
+
