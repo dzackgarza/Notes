@@ -60,9 +60,9 @@
 
 - Need to do **wrapping**, but we won't get into it.
 
-- In the category of Weinstein manifolds, a morphism is a codimension 0 embedding $j: M\emebds (N, X_N)$ where we convert $X_N$ to a one-form $\theta_N$ using $\omega$, such that $j^* \Theta_N = \Theta_M + df$ for $f$ some compactly supported function.
+- In the category of Weinstein manifolds, a morphism is a codimension 0 embedding $j: M\embeds(N, X_N)$ where we convert $X_N$ to a one-form $\theta_N$ using $\omega$, such that $j^* \Theta_N = \Theta_M + df$ for $f$ some compactly supported function.
 
-- Theorem: the wrapped Fukaya category defines a functor from the category of Weinstein manifolds to $A_\infty\dast\Cat_\ZZ$ which factors through taking $M\cross T\dual \cross \RR^N$.
+- Theorem: the wrapped Fukaya category defines a functor from the category of Weinstein manifolds to $A_\infty\dash\Cat_\ZZ$ which factors through taking $M\cross T\dual \cross \RR^N$.
   - The target has an infinity category structure.
 - Ways to improve this to an $\SS\dash$linear category:
   - Reformulate $\Fuk(M)$ as the solution to a deformation problem. 
