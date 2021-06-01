@@ -19,3 +19,6 @@
 - Weinstein manifolds and sectors: special types of symplectic manifolds obtained from handle attachment
 - Defining a symplectic manifold:
 	- $\omega^{\vee 2}$ defines a volume form, or use $v\mapsto \omega(v, \wait)$ is a non-degenerate 1-form, thinking of $\omega: TM \mapsvia{\sim} T\dual M$.
+    - The latter definition is useful in derived geometry.
+  - $d\omega = 0$, a flatness condition.
+- The most important example: for $Q$ any smooth manifolf, $T\dual Q, dp \vee dq)$ is symplectic.
