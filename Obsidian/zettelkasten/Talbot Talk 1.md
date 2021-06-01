@@ -17,5 +17,6 @@
   .\]
   Yields an $\infty\dash$loop map Z\cross \B \Orth\to \Pic(S^0)$ and $\ko \to \pic(S^0)$.
   Yields Adams' $J\dash$homomorphis.
+  - Story that develops here: can develop a theory of orientatations.
 
 
