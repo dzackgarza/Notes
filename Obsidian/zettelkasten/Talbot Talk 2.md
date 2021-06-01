@@ -59,3 +59,7 @@
 - There is an equivalence $\Fuk(M) \mapsvia{\sim} \Fuk(M \cross T\dual \RR^N)$ where $L\mapsto L \times T_0\dual \RR^N$, take colim to replace $N$ with $\infty$.
 
 - Need to do **wrapping**, but we won't get into it.
+
+- In the category of Weinstein manifolds, a morphism is a codimension 0 embedding $j: M\emebds (N, X_N)$ where we convert $X_N$ to a one-form $\theta_N$ using $\omega$, such that $j^* \Theta_N = \Theta_M + df$ for $f$ some compactly supported function.
+
+- Theorem: the wrapped Fukaya category defines a functor from the category of Weinstein manifolds to $A_\infty\dast\Cat_\ZZ$ which factors through taking $M\cross T\dual \cross \RR^N$.
