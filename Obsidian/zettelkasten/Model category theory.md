@@ -36,3 +36,9 @@ aliases: ["model structure", "model category"]
 Let $\nerve{\wait}_\DG$ be the DG nerve functor, then
 
 ![](attachments/Pasted%20image%2020210516135955.png)
+
+Being local:
+![](attachments/Pasted%20image%2020210603191103.png)
+![](attachments/Pasted%20image%2020210603191120.png)
+
+- Important: the [[small object argument]]

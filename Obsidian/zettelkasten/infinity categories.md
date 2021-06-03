@@ -67,3 +67,7 @@ admits the indicated lift, where $\Lambda_i^n$ is an $i\dash$horn (a simplex mis
 - For each $n \geq 0$ there is a cat $\Delta[n] = \nerve{\ts{0 \leq  1 \leq \cdots \leq n}}$.
 - Commutative triangles in $\cat C$: objects in the functor category $\Fun(\Delta[2], \cat C)$
 - $\inftycat \leq \Kan$: infinity categories are a subcategory of Kan complexes.
+
+Adjunctions:
+![](attachments/Pasted%20image%2020210603191341.png)
+![](attachments/Pasted%20image%2020210603191352.png)
