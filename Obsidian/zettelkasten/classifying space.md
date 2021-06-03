@@ -20,12 +20,34 @@ Tags: #homotopy
 
 # Definitions
 
-**Definition:** 
+
+:::{.definition title="?"}
+The **classifying space** of a category is given by
+\[
+\B \cat{C} \da \realize{\nerve{\cat{C}}}
+.\]
+
+
+:::
+
+
+:::{.definition title="?"}
 Given $G\in \Top\Grp$, a **classifying space** for $G$, denoted $\B G$, is the base space of a universal [principal](principal%20bundle.md) $G\dash$ bundle
-$$
-G \to EG \mapsvia{\pi} \B G
-$$
-making $\B G$ a quotient of the contractible space $EG$ by a free $G\dash$ action, so $\B G \cong EG/G$. Call this the **the classifying bundle**.
+making $\B G$ a quotient of the contractible space $EG$ by a free $G\dash$ action, so $\B G \cong EG/G$. Call this the **the classifying bundle**:
+
+\begin{tikzcd}
+	G && EG \\
+	\\
+	&& BG
+	\arrow["\pi", from=1-3, to=3-3]
+	\arrow[from=1-1, to=1-3]
+\end{tikzcd}
+
+> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJHIl0sWzIsMCwiRUciXSxbMiwyLCJCRyJdLFsxLDIsIlxccGkiXSxbMCwxXV0=)
+
+:::
+
+
 
 Any other [principal](principal%20bundle.md) $G\dash$ bundle over a space $X$ is isomorphic to a [pullback](pullback.md) of the classifying bundle along a map $X \to \B G$.
 
