@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/infinity categories.md",
-            "mode": "source"
+            "file": "zettelkasten/nerve.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/infinity categories.md"
+                "file": "zettelkasten/nerve.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/nerve.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/infinity categories.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "zettelkasten/nerve.md",
     "zettelkasten/infinity categories.md",
+    "zettelkasten/groupoid.md",
     "zettelkasten/Model category theory.md",
     "zettelkasten/localization (category theory).md",
     "zettelkasten/localization.md",
     "zettelkasten/homotopy type.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/Stable Homotopy Seminar.md",
-    "zettelkasten/Talbot Talk 2.md",
-    "zettelkasten/Untitled 11.md",
-    "zettelkasten/Talbot Talk 1.md"
+    "zettelkasten/Talbot Talk 2.md"
   ]
 }
