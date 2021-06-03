@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Talbot Talk 2.md",
+            "file": "zettelkasten/Stable Homotopy Seminar.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Talbot Talk 2.md",
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Talbot Talk 2.md"
+                "file": "zettelkasten/Stable Homotopy Seminar.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Talbot Talk 2.md",
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Talbot Talk 2.md",
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,13 +242,13 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/Talbot Talk 2.md",
     "zettelkasten/Untitled 11.md",
     "zettelkasten/Talbot Talk 1.md",
     "Quick_Notes/2021-05-10.md",
     "Quick_Notes/2021-05-25.md",
     "Quick_Notes/2021-05-24.md",
-    "zettelkasten/Stable Homotopy Seminar.md",
     "zettelkasten/stack.md",
     "zettelkasten/simplicial set.md",
     "zettelkasten/Papers to Read.md"
