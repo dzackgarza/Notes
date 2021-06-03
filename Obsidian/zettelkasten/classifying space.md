@@ -25,10 +25,11 @@ Tags: #homotopy
 The **classifying space** of a category is given by
 \[
 \B \cat{C} \da \realize{\nerve{\cat{C}}}
-.\]
-
-
+,\]
+the [[geometric realization]] of the [[nerve]] of $\cat{C}$.
 :::
+
+- If $M$ is a monoid, then $\pi_1 \B M \cong M\complete{\gp}$ is the group completion of $M$.
 
 
 :::{.definition title="?"}
