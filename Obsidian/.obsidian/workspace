@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/homotopy type.md",
+            "file": "zettelkasten/localization (category theory).md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/homotopy type.md",
+                "file": "zettelkasten/localization (category theory).md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/homotopy type.md"
+                "file": "zettelkasten/localization (category theory).md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/homotopy type.md",
+                "file": "zettelkasten/localization (category theory).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/homotopy type.md",
+                "file": "zettelkasten/localization (category theory).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,8 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "zettelkasten/localization (category theory).md",
+    "zettelkasten/localization.md",
     "zettelkasten/homotopy type.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/Stable Homotopy Seminar.md",
@@ -249,8 +251,6 @@
     "zettelkasten/Untitled 11.md",
     "zettelkasten/Talbot Talk 1.md",
     "Quick_Notes/2021-05-10.md",
-    "Quick_Notes/2021-05-25.md",
-    "Quick_Notes/2021-05-24.md",
-    "zettelkasten/stack.md"
+    "Quick_Notes/2021-05-25.md"
   ]
 }
