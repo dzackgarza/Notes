@@ -38,7 +38,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Collect notes into PDF and scaffold
 - [ ] Find GOSS speaker for open slot
 
-- [ ] CRAG Talk: July 9th <http://www.numdam.org/article/PMIHES_1966__29__95_0.pdf>
+- [ ] [CRAG Talk July 9th 2021](CRAG%20Talk%20July%209th%202021)
 
 ## Links
 
