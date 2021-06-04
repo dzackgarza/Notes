@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Kan complex.md",
+            "file": "00_Home.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Kan complex.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Kan complex.md"
+                "file": "00_Home.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Kan complex.md",
+                "file": "00_Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Kan complex.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "00_Home.md",
     "zettelkasten/Kan complex.md",
     "zettelkasten/nerve.md",
     "zettelkasten/Postnikov tower.md",
@@ -250,7 +251,6 @@
     "zettelkasten/Picard group.md",
     "zettelkasten/K-Theory.md",
     "zettelkasten/Untitled 11.md",
-    "zettelkasten/infinity categories.md",
-    "zettelkasten/groupoid.md"
+    "zettelkasten/infinity categories.md"
   ]
 }

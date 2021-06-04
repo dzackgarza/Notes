@@ -38,6 +38,8 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Collect notes into PDF and scaffold
 - [ ] Find GOSS speaker for open slot
 
+- [ ] CRAG Talk: July 9th <http://www.numdam.org/article/PMIHES_1966__29__95_0.pdf>
+
 ## Links
 
 - [Mock AMS Organization](https://www.notion.so/Mock-AMS-b9f2d582410c41eb9abf41f17c0b31c1)
