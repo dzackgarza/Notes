@@ -1,3 +1,8 @@
+---
+aliases: ["Picard groupoid", "Picard stack"]
+---
+
+# Notes
 - For a [ringed space](ringed%20space) $X \in \Ringedspace$, denoted by $\Pic(X)$, is the group of isomorphism classes of [invertible sheaves](invertible%20sheaves)  (or [line bundles](line%20bundle.md)) on $X$ with the tensor product.
 - $\Pic \spec R = \Cl(R)$ is the [ideal class group](ideal%20class%20group) (???) for $R$ a [Dedekind domain](Dedekind%20domain)
 - Globalizes the [ideal class group](ideal%20class%20group) of a [number field](number%20field).
@@ -12,3 +17,6 @@ where $\NS$ is the [Neron Severi](Neron%20Severi.md) group.
 
 - Picard group of a manifold:
 ![](attachments/Pasted%20image%2020210510011342.png)
+
+![](attachments/Pasted%20image%2020210603195814.png)
+![](attachments/Pasted%20image%2020210603195858.png)
