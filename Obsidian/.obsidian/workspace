@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Picard group.md",
+            "file": "zettelkasten/homotopy type.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Picard group.md",
+                "file": "zettelkasten/homotopy type.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Picard group.md"
+                "file": "zettelkasten/homotopy type.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Picard group.md",
+                "file": "zettelkasten/homotopy type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Picard group.md",
+                "file": "zettelkasten/homotopy type.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "zettelkasten/homotopy type.md",
     "zettelkasten/Picard group.md",
     "zettelkasten/K-Theory.md",
     "zettelkasten/Untitled 11.md",
@@ -250,7 +251,6 @@
     "zettelkasten/groupoid.md",
     "zettelkasten/Model category theory.md",
     "zettelkasten/localization (category theory).md",
-    "zettelkasten/localization.md",
-    "zettelkasten/homotopy type.md"
+    "zettelkasten/localization.md"
   ]
 }

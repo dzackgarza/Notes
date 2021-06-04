@@ -1,5 +1,5 @@
 ---
-aliases: ["homotopy hypothesis", "spaces", "anima"]
+aliases: ["homotopy hypothesis", "spaces", "anima", "infty groupoids"]
 ---
 
 If the the homotopy hypothesis holds, TFAE:
