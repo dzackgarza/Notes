@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Postnikov tower.md",
-            "mode": "source"
+            "file": "zettelkasten/nerve.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Postnikov tower.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Postnikov tower.md"
+                "file": "zettelkasten/nerve.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Postnikov tower.md",
+                "file": "zettelkasten/nerve.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Postnikov tower.md",
+                "file": "zettelkasten/nerve.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,9 +242,9 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "zettelkasten/nerve.md",
     "zettelkasten/Postnikov tower.md",
     "zettelkasten/Learning.md",
-    "zettelkasten/nerve.md",
     "zettelkasten/homotopy type.md",
     "zettelkasten/Picard group.md",
     "zettelkasten/K-Theory.md",
