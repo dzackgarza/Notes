@@ -15,7 +15,8 @@ $$
 	- $\nerve{\cat{C}}_2$: Composable morphisms:
 
 - The nerve has sufficient data to reconstruct $\cat{C}$ up to isomorphism of categories.
-- $\nerve: \Cat \to \sSet$ is fully faithful.
+- $\nerve(\wait): \Cat \to \sSet$ is fully faithful.
+- The restriction $\nerve(\wait): \Grpd \to $
 
 \begin{tikzcd}
 	&& z \\
