@@ -17,7 +17,7 @@ $$
 - The nerve has sufficient data to reconstruct $\cat{C}$ up to isomorphism of categories.
 - $\nerve{\wait}: \Cat \to \sSet$ is fully faithful.
 - The restriction $\nerve{\wait}: \Grpd \to \sSet(\Kan)$ is also?
-	- Actual statement: $\nerve{\cat{C}}$ is a Kan complex iff $\cat{C}$ is a groupoid.
+	- Actual statement: $\nerve{\cat{C}}$ is a Kan complex (with a unique filler for every horn) iff $\cat{C}$ is a groupoid.
 
 \begin{tikzcd}
 	&& z \\
