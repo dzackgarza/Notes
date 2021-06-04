@@ -14,6 +14,8 @@ $$
 	- $\nerve{\cat{C}}_1$: Morphisms $\cat{C}(x, y), \cat{C}(y, z), \cdots$
 	- $\nerve{\cat{C}}_2$: Composable morphisms:
 
+- The nerve has sufficient data to reconstruct $\cat{C}$ up to isomorphism of categories.
+- $\nerve: \Cat \to \sSet$ is fully faithful.
 
 \begin{tikzcd}
 	&& z \\
