@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Learning.md",
+            "file": "zettelkasten/Postnikov tower.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Postnikov tower.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "zettelkasten/Postnikov tower.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Postnikov tower.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Postnikov tower.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "60a219ff79ed831f",
   "lastOpenFiles": [
+    "zettelkasten/Postnikov tower.md",
     "zettelkasten/Learning.md",
     "zettelkasten/nerve.md",
     "zettelkasten/homotopy type.md",
@@ -250,7 +251,6 @@
     "zettelkasten/Untitled 11.md",
     "zettelkasten/infinity categories.md",
     "zettelkasten/groupoid.md",
-    "zettelkasten/Model category theory.md",
-    "zettelkasten/localization (category theory).md"
+    "zettelkasten/Model category theory.md"
   ]
 }
