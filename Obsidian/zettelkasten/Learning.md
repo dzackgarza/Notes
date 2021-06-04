@@ -135,7 +135,7 @@ Some stuff from Morgan:
 - [Seminar on formal groups and p-divisible groups](https://math.mit.edu/nt/old/stage_f19.html)
 - [Localization of categories](https://www.youtube.com/watch?v=jCSEA1nfffY&list=PLYShsxzWr0U3EZobFoA7sJcpjip8zXzui)
 
-# K Theory
+## K Theory
 
 - [Survey article from Inna](https://people.math.rochester.edu/faculty/doug/otherpapers/zakharevich.pdf)
 - [Lectures on Algebraic K-theory](https://www.uwo.ca/math/faculty/jardine/courses/ktheory/ktheory.html)
@@ -143,6 +143,10 @@ Some stuff from Morgan:
 - [Dugger's geometric introduction to K theory](https://pages.uoregon.edu/ddugger/kgeom.pdf)
 - [Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
 - [U Chicago Algtop Workshop (including Cobordism)](http://math.uchicago.edu/~chicagotopology2/)
+
+## Bordism and TQFTs
+
+- [Lectures](https://web.ma.utexas.edu/users/dafr/M392C-2012/)
 
 # Mirror Symmetry
 
