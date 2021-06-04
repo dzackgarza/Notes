@@ -15,9 +15,9 @@ $$
 	- $\nerve{\cat{C}}_2$: Composable morphisms:
 
 - The nerve has sufficient data to reconstruct $\cat{C}$ up to isomorphism of categories.
-- $\nerve(\wait): \Cat \to \sSet$ is fully faithful.
-- The restriction $\nerve(\wait): \Grpd \to \sSet(\Kan)$ is also?
-	- Actual statement: $\nerve(\cat{C}$ is a Kan complex iff $\cat{C}$ is a groupoid.
+- $\nerve{\wait}: \Cat \to \sSet$ is fully faithful.
+- The restriction $\nerve{\wait}: \Grpd \to \sSet(\Kan)$ is also?
+	- Actual statement: $\nerve{\cat{C}}$ is a Kan complex iff $\cat{C}$ is a groupoid.
 
 \begin{tikzcd}
 	&& z \\
