@@ -17,7 +17,7 @@ $$
 - The nerve has sufficient data to reconstruct $\cat{C}$ up to isomorphism of categories.
 - $\nerve(\wait): \Cat \to \sSet$ is fully faithful.
 - The restriction $\nerve(\wait): \Grpd \to \sSet(\Kan)$ is also?
-- 
+	- Actual statem
 
 \begin{tikzcd}
 	&& z \\
