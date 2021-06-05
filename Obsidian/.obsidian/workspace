@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "60a219ff79ed831f",
+        "id": "9a2c3ebcef2b5cb6",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/CRAG Talk July 9th 2021.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -79,7 +76,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/CRAG Talk July 9th 2021.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,9 +109,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "zettelkasten/CRAG Talk July 9th 2021.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/CRAG Talk July 9th 2021.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +168,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/CRAG Talk July 9th 2021.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,7 +232,7 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "60a219ff79ed831f",
+  "active": "9a2c3ebcef2b5cb6",
   "lastOpenFiles": [
     "zettelkasten/CRAG Talk July 9th 2021.md",
     "00_Home.md",
