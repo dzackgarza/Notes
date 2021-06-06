@@ -143,6 +143,7 @@ Some stuff from Morgan:
 - [Dugger's geometric introduction to K theory](https://pages.uoregon.edu/ddugger/kgeom.pdf)
 - [Youtube lectures: Intro to K Theory](https://www.youtube.com/watch?v=Kagy_cX4hDs)
 - [U Chicago Algtop Workshop (including Cobordism)](http://math.uchicago.edu/~chicagotopology2/)
+- [Quillen K Theory Lecture Notes](https://mandal.ku.edu/M996QuillenKTheory/0TheKBooK.pdf)
 
 ## Bordism and TQFTs
 
