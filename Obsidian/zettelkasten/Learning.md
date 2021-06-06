@@ -99,6 +99,10 @@ See [Learning Algebraic Number Theory](Learning%20Algebraic%20Number%20Theory)
 - [http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html](http://www.math.columbia.edu/~chaoli/docs/AbelianVarieties.html)
 - [Notes from Haiyang](moduli%20stack%20of%20abelian%20varieties.md#^7cc3c7)
 
+## Rational Points
+
+- <https://web.math.princeton.edu/~shouwu/publications/iccm98.pdf>
+
 # Algebraic Topology
 
 See the Handbook of Homotopy Theory
