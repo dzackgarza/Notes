@@ -7,8 +7,11 @@
         "id": "9a2c3ebcef2b5cb6",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/K-Theory.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -37,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dualizable",
+                "query": "nerve",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,6 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/K-Theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -109,7 +113,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/K-Theory.md"
+              }
             }
           },
           {
@@ -141,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/K-Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,6 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/K-Theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -234,15 +242,15 @@
   },
   "active": "9a2c3ebcef2b5cb6",
   "lastOpenFiles": [
+    "zettelkasten/K-Theory.md",
+    "zettelkasten/classifying space.md",
+    "zettelkasten/class.md",
     "zettelkasten/CRAG Talk July 9th 2021.md",
     "00_Home.md",
     "zettelkasten/Kan complex.md",
     "zettelkasten/nerve.md",
     "zettelkasten/Postnikov tower.md",
     "zettelkasten/Learning.md",
-    "zettelkasten/homotopy type.md",
-    "zettelkasten/Picard group.md",
-    "zettelkasten/K-Theory.md",
-    "zettelkasten/Untitled 11.md"
+    "zettelkasten/homotopy type.md"
   ]
 }
