@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Learning.md",
+            "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nerve",
+                "query": "Brauer",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Learning.md"
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md"
               }
             }
           },
@@ -131,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.0121879577637
+    "width": 266.0121879577637,
+    "collapsed": true
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Learning.md",
+                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "9a2c3ebcef2b5cb6",
   "lastOpenFiles": [
+    "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
+    "zettelkasten/tensor category.md",
+    "zettelkasten/Brauer group.md",
+    "Quick_Notes/2021-03-17.md",
+    "zettelkasten/Untitled 11.md",
     "zettelkasten/Learning.md",
     "zettelkasten/K-Theory.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/class.md",
-    "zettelkasten/CRAG Talk July 9th 2021.md",
-    "00_Home.md",
-    "zettelkasten/Kan complex.md",
-    "zettelkasten/nerve.md",
-    "zettelkasten/Postnikov tower.md",
-    "zettelkasten/homotopy type.md"
+    "zettelkasten/CRAG Talk July 9th 2021.md"
   ]
 }
