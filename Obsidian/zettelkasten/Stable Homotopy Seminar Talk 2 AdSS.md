@@ -7,6 +7,7 @@
 <http://www.rrb.wayne.edu/papers/adams.pdf>
 ![](attachments/Pasted%20image%2020210603165727.png)
 
+- Basic motivation: buff up the Serre spectral sequence, but only work stably.
 - Big question: what is $[X, Y]\in \Ab$?
 	Start by understanding its $p\dash$torsion.
 - Apply the functor $H^*(\wait) := H^*(\wait; \FF_p)$ to get $\Hom_{\Vect_{/\FF_p}}(H^* X, H^* Y)$.
