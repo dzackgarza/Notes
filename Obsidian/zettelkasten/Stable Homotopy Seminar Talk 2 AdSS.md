@@ -13,5 +13,6 @@
 - Find extra module structure on this Hom: module over $\mca$ the Steenrod algebra
 - Take derived functors to get $\Ext_{\mca}^*( H^*X, H^* Y)$.
 - Applications
+	- Compute $\pi_* \SS \tensor \ZZpadic$
 	- Original use by Adams: Hopf Invariant One. Which $\RR^n$ are division algebras?
-	- Compute $\pi_* \SS \tensor \ZZ
+	- Thom isomorphism theorem
