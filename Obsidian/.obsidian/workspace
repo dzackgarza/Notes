@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Stable Homotopy Seminar.md",
+            "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md",
+                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md"
+                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md",
+                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar.md",
+                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "9c96e9e33bc26fdb",
   "lastOpenFiles": [
+    "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "00_Home.md",
     "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
@@ -250,7 +251,6 @@
     "Quick_Notes/2021-03-17.md",
     "zettelkasten/Untitled 11.md",
     "zettelkasten/Learning.md",
-    "zettelkasten/K-Theory.md",
-    "zettelkasten/classifying space.md"
+    "zettelkasten/K-Theory.md"
   ]
 }
