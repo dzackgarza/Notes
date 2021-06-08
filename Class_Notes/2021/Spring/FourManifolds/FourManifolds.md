@@ -3,6 +3,10 @@
 \newcommand{\dy}{\,dy}
 \newcommand{\ds}{\,ds}
 \newcommand{\dz}{\,dz}
+\newcommand{\dr}{\,dr}
+\newcommand{\dxi}{\,d\xi}
+\newcommand{\dzeta}{\,d\zeta}
+\newcommand{\dtheta}{\,d\theta}
 \newcommand{\barz}{\bar{z} }
 \newcommand{\dzbar}{\,d\bar{z} }
 \newcommand{\zbar}{\bar{z} }
@@ -28,6 +32,8 @@
 \newcommand{\DD}[0]{{\mathbb{D}}}
 \newcommand{\EE}[0]{{\mathbb{E}}}
 \newcommand{\FF}[0]{{\mathbb{F}}}
+\newcommand{\FFp}[0]{{\mathbb{F}_p}}
+\newcommand{\FFpn}[0]{{\mathbb{F}_{p^n}}}
 \newcommand{\Fp}[0]{{\mathbb{F}_p}}
 \newcommand{\Fpbar}[0]{\bar{\mathbb{F}_p}}
 \newcommand{\Fpn}[0]{{\mathbb{F}_{p^n} }}
@@ -48,7 +54,10 @@
 \newcommand{\RR}[0]{{\mathbb{R}}}
 \newcommand{\SpSp}[0]{{\mathbb{S}}}
 \renewcommand{\SS}[0]{{\mathbb{S}}}
+\newcommand{\WW}[0]{{\mathbb{W}}}
+\newcommand{\Wittvectors}[0]{{\mathbb{W}}}
 \newcommand{\TT}[0]{{\mathbb{T}}}
+\newcommand{\HZ}[0]{{H\mathbb{Z}}}
 \newcommand{\ZZ}[0]{{\mathbb{Z}}}
 \newcommand{\ZZG}[0]{{\mathbb{Z}G}}
 \newcommand{\ZZH}[0]{{\mathbb{Z}H}}
@@ -60,12 +69,15 @@
 \newcommand{\Qp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\QQp}[0]{\mathbb{Q}_{(p)}}
 \newcommand{\Zp}[0]{\mathbb{Z}_{(p)}}
-\newcommand{\ZZp}[0]{\mathbb{Z}_{(p)}}
+\newcommand{\ZZp}[0]{{ \mathbb{Z}_{(p)} }}
+\newcommand{\ZZpadic}[0]{{ \ZZ_p }}
 \newcommand{\ZpZ}[0]{\mathbb{Z}/p}
 \newcommand{\chp}[0]{\operatorname{ch. p}}
 \newcommand{\fp}[0]{\operatorname{fp}}
+\newcommand{\gp}[0]{ {\operatorname{gp} } }
 \newcommand{\HT}[0]{{\operatorname{HT}}}
 \newcommand{\LC}[0]{{\mathrm{LC}}}
+\newcommand{\Orb}[0]{{\mathrm{Orb}}}
 \newcommand{\qc}[0]{{\operatorname{qc}}}
 \newcommand{\SF}[0]{\operatorname{SF}}
 \newcommand{\vol}[0]{\operatorname{vol}}
@@ -114,11 +126,13 @@
 \newcommand{\thetaref}[0]{{ \theta_{\mathrm{Ref} } }}
 \newcommand{\ch}[0]{\operatorname{ch}}
 \newcommand{\syl}[0]{{\operatorname{Syl}}}
+\newcommand{\Syl}[0]{{\operatorname{Syl}}}
 \newcommand{\ff}[0]{\operatorname{ff}}
 \newcommand{\txand}[0]{{\operatorname{ and }}}
 \newcommand{\fpqc}[0]{\mathrm{\operatorname{fpqc}}}
 \newcommand{\fppf}[0]{\mathrm{\operatorname{fppf}}}
 \newcommand{\Fppf}[0]{\mathrm{\operatorname{Fppf}}}
+\newcommand{\Honda}[0]{\mathrm{\operatorname{Honda}}}
 \newcommand{\zar}[0]{{\mathrm{zar}}}
 \newcommand{\afp}[0]{A_{/\FF_p}}
 \newcommand{\HP}[0]{{\operatorname{HP}}}
@@ -155,17 +169,39 @@
 \newcommand{\SL}[0]{{\operatorname{SL}}}
 \newcommand{\PSL}[0]{{\operatorname{PSL}}}
 \newcommand{\SO}[0]{{\operatorname{SO}}}
+\newcommand{\Orth}[0]{{\operatorname{O}}}
 \newcommand{\MO}[0]{{\operatorname{MO}}}
+\newcommand{\KO}[0]{{\operatorname{KO}}}
+\newcommand{\ko}[0]{{\operatorname{ko}}}
+\newcommand{\EO}[0]{{\operatorname{EO}}}
+\newcommand{\eo}[0]{{\operatorname{eo}}}
+\newcommand{\ku}[0]{{\operatorname{ku}}}
+\newcommand{\MU}[0]{{\operatorname{MU}}}
+\newcommand{\BU}[0]{{\operatorname{BU}}}
+\newcommand{\BO}[0]{{\operatorname{BO}}}
+\newcommand{\Betti}[0]{{\operatorname{Betti}}}
+\newcommand{\Emb}[0]{{\operatorname{Emb}}}
+\newcommand{\Rees}[0]{{\operatorname{Rees}}}
+\newcommand{\KU}[0]{{\operatorname{KU}}}
+\newcommand{\BP}[0]{{\operatorname{BP}}}
+\newcommand{\MSO}[0]{{\operatorname{MSO}}}
+\newcommand{\MSp}[0]{{\operatorname{MSpin}}}
+\newcommand{\MSpin}[0]{{\operatorname{MSpin}}}
+\newcommand{\MStr}[0]{{\operatorname{MString}}}
+\newcommand{\MString}[0]{{\operatorname{MString}}}
 \newcommand{\SU}[0]{{\operatorname{SU}}}
 \newcommand{\SP}[0]{{\operatorname{SP}}}
 \newcommand{\per}[0]{{\operatorname{Per}}}
 \newcommand{\loc}[0]{{\operatorname{loc}}}
 \newcommand{\Spin}[0]{{\operatorname{Spin}}}
+\newcommand{\Disk}[0]{{\operatorname{Disk}}}
 \newcommand{\Pin}[0]{{\operatorname{Pin}}}
 \newcommand{\Sing}[0]{{\operatorname{Sing}}}
 \newcommand{\sing}[0]{{\operatorname{Sing}}}
 \newcommand{\CH}[0]{{\operatorname{CH}}}
 \newcommand{\Cat}[0]{\mathsf{Cat}}
+\newcommand{\Monoid}[0]{\mathsf{Mon}}
+\newcommand{\Poset}[0]{\mathsf{Poset}}
 \newcommand{\Fun}[0]{{\mathsf{Fun}}}
 \newcommand{\mcTop}[0]{\mathcal{T}\mathsf{op}}
 \newcommand{\poly}[0]{\mathsf{poly}}
@@ -177,6 +213,8 @@
 \newcommand{\Ch}[0]{\mathsf{Ch}}
 \newcommand{\Set}[0]{{\mathsf{Set}}}
 \newcommand{\FI}[0]{{\mathsf{FI}}}
+\newcommand{\FGL}[0]{\mathsf{FGL}}
+\newcommand{\GSets}[0]{{G\dash\mathsf{Set}}}
 \newcommand{\Sets}[0]{{\mathsf{Set}}}
 \newcommand{\Finset}[0]{{\mathsf{FinSet}}}
 \newcommand{\sSet}[0]{{\mathsf{sSet}}}
@@ -186,7 +224,9 @@
 \newcommand{\Grp}[0]{{\mathsf{Grp}}}
 \newcommand{\Grpd}[0]{{\mathsf{Grpd}}}
 \newcommand{\inftyGrpd}[0]{{\infty\dash\mathsf{Grpd}}}
-\newcommand{\Groups}[0]{{\mathsf{Groups}}}
+\newcommand{\inftycat}[0]{{ \underset{\infty}{ \Cat}  }}
+\newcommand{\Kan}[0]{{\mathsf{Kan}}}
+\newcommand{\Groups}[0]{{\mathsf{Group}}}
 \newcommand{\Ab}[0]{{\mathsf{Ab}}}
 \newcommand{\Ring}[0]{\mathsf{Ring}}
 \newcommand{\CRing}[0]{\mathsf{CRing}}
@@ -210,7 +250,9 @@
 \newcommand{\kmod}[0]{{\mathsf{k}\dash\mathsf{Mod}}}
 \newcommand{\cdga}[0]{{\mathsf{cdga} }}
 \newcommand{\kalg}[0]{{\mathsf{Alg}_{/k} }}
+\newcommand{\kAlg}[0]{{\mathsf{Alg}_{/k} }}
 \newcommand{\ralg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
+\newcommand{\rAlg}[0]{{\mathsf{R}\dash\mathsf{Alg}}}
 \newcommand{\liealg}[0]{{\mathsf{Lie}\dash\mathsf{Alg}}}
 \newcommand{\liealgk}[0]{{ \liealg_{/k} }}
 \newcommand{\alg}[0]{\mathsf{Alg}}
@@ -218,17 +260,24 @@
 \newcommand{\calg}[0]{\mathsf{CAlg}}
 \newcommand{\CCalg}[0]{{\mathsf{Alg}_{\mathbb{C}} }}
 \newcommand{\VectBundle}[0]{{\mathsf{VectBundle}}}
-\newcommand{\ssets}[0]{\mathsf{sSets}}
+\newcommand{\ssets}[0]{\mathsf{sSet}}
 \newcommand{\Assoc}[0]{\mathsf{Assoc}}
 \newcommand{\Free}[0]{\mathsf{Free}}
 \newcommand{\Unital}[0]{\mathsf{Unital}}
 \newcommand{\Riem}[0]{\mathsf{Riem}}
 \newcommand{\Comm}[0]{\mathsf{Comm}}
 \newcommand{\Top}[0]{{\mathsf{Top}}}
+\newcommand{\CW}[0]{{\mathsf{CW}}}
 \newcommand{\Mfd}[0]{{\mathsf{Mfd}}}
 \newcommand{\ho}[0]{{\mathsf{ho}}}
 \newcommand{\hoTop}[0]{{\mathsf{hoTop}}}
+\newcommand{\hoType}[0]{{\mathsf{hoType}}}
 \newcommand{\Sch}[0]{{\mathsf{Sch}}}
+\newcommand{\FFlat}[0]{{\mathsf{FFlat}}}
+\newcommand{\kSch}[0]{{\mathsf{Sch}_{/k}}}
+\newcommand{\Lag}[0]{{\mathsf{Lag}}}
+\newcommand{\Fuk}[0]{{\mathsf{Fuk}}}
+\newcommand{\Wein}[0]{{\mathsf{Wein}}}
 \newcommand{\Aff}[0]{{\mathsf{Aff}}}
 \newcommand{\Schf}[0]{{\mathsf{Schf}}}
 \newcommand{\Rep}[0]{{\mathsf{Rep}}}
@@ -251,7 +300,9 @@
 \newcommand{\MCG}[0]{{\operatorname{MCG}}}
 \newcommand{\Tor}[0]{\operatorname{Tor}}
 \newcommand{\ext}{\operatorname{Ext} }
-\DeclareMathOperator{\Ext}{Ext}
+\newcommand{\Ext}{\operatorname{Ext} }
+\newcommand{\Def}{\operatorname{Def} }
+\newcommand{\Obs}{\operatorname{Obs} }
 \newcommand{\Sm}[0]{{\operatorname{Sm}}}
 \newcommand{\orr}[0]{{\operatorname{ or }}}
 \newcommand{\annd}[0]{{\operatorname{ and }}}
@@ -293,6 +344,7 @@
 \newcommand{\conjugate}[1]{{\overline{{#1}}}}
 \newcommand{\conj}[1]{{\overline{{#1}}}}
 \newcommand{\converges}[1]{\overset{#1}}
+\newcommand{\ctz}[1]{\, {\converges{{#1} \to\infty}\longrightarrow 0} \, }
 \newcommand{\bundle}[1]{\mathcal{#1}}
 \newcommand{\td}[0]{\mathrm{td}}
 \newcommand{\correspond}[1]{\theset{\substack{#1}}}
@@ -306,8 +358,9 @@
 \newcommand{\del}[0]{{\partial}}
 \newcommand{\directlim}[0]{\varinjlim}
 \newcommand{\inverselim}[0]{\varprojlim}
-\newcommand{\disjoint}[0]{{\coprod}}
+\newcommand{\disjoint}[0]{{\textstyle\coprod}}
 \newcommand{\Disjoint}[0]{\displaystyle\coprod}
+\newcommand{\Sum}[0]{ \displaystyle\sum }
 \newcommand{\dual}[0]{ {}^{ \check{} }}
 \newcommand{\sm}[0]{\setminus}
 \newcommand{\smz}[0]{\setminus\theset{0}}
@@ -322,9 +375,9 @@
 \newcommand{\inner}[2]{{\left\langle {#1},~{#2} \right\rangle}}
 \newcommand{\ip}[2]{{\left\langle {#1},~{#2} \right\rangle}}
 \newcommand{\union}[0]{\cup}
-\newcommand{\Union}[0]{\bigcup}
+\newcommand{\Union}[0]{\displaystyle\bigcup}
 \newcommand{\intersect}[0]{\cap}
-\newcommand{\Intersect}[0]{\bigcap}
+\newcommand{\Intersect}[0]{\displaystyle\bigcap}
 \newcommand{\into}[0]{\to}
 \newcommand{\inv}[0]{^{-1}}
 \newcommand{\mfa}[0]{{\mathfrak{a}}}
@@ -356,8 +409,9 @@
 \newcommand{\lieso}[0]{{\mathfrak{so}}}
 \newcommand{\liesp}[0]{{\mathfrak{sp}}}
 \newcommand{\lieu}[0]{{\mathfrak{u}}}
-\newcommand{\nilrad}[0]{{\mathfrak{N}}}
-\newcommand{\jacobsonrad}[0]{{\mathfrak{J}}}
+\newcommand{\nilrad}[1]{{\sqrt{0_{#1}} }}
+\newcommand{\jacobsonrad}[1]{{{J}\qty{#1} }}
+\newcommand{\jacrad}[1]{{{J}\qty{#1} }}
 \newcommand{\mm}[0]{{\mathfrak{m}}}
 \newcommand{\mapsvia}[1]{\xrightarrow{#1}}
 \newcommand{\fromvia}[1]{\xleftarrow{#1}}
@@ -413,7 +467,8 @@
 \newcommand{\CY}{{ \text{CY} }}
 \newcommand{\FS}{{ \text{FS} }}
 \newcommand{\HHom}{\mathscr{H}\kern-2pt\operatorname{om}}
-\newcommand{\Map}[0]{{\operatorname{Map}}}
+\newcommand{\Map}[0]{{\operatorname{Maps}}}
+\newcommand{\Maps}[0]{{\operatorname{Map}}}
 \newcommand{\multinomial}[1]{\left(\!\!{#1}\!\!\right)}
 \newcommand{\nil}[0]{{\operatorname{nil}}}
 \newcommand{\normalneq}{\mathrel{\reflectbox{$\trianglerightneq$}}}
@@ -448,7 +503,7 @@
 \newcommand{\stirling}[2]{\genfrac\{\}{0pt}{}{#1}{#2}}
 %\newcommand{\strike}[1]{{\enclose{\horizontalstrike}{#1}}}
 \newcommand{\st}[0]{{~\mathrel{\Big|}~}}
-\newcommand{\St}[0]{{\mathsf{St}}}
+\newcommand{\St}[0]{{\mathsf{Stk}}}
 \newcommand{\supp}[0]{{\operatorname{supp}}}
 \newcommand{\sym}[0]{\operatorname{Sym}}
 \newcommand{\Sym}[0]{\operatorname{Sym}}
@@ -506,12 +561,16 @@
 \newcommand{\decreasesto}[0]{\searrow}
 \newcommand\jan{\operatorname{Jan}}
 \newcommand\Prinbun{\mathrm{Bun}^{\mathrm{prin}}}
+\newcommand\TMF{ \mathrm{TMF} }
+\newcommand\TAF{ \mathrm{TAF} }
+\newcommand\tmf{ \mathrm{tmf} }
+\newcommand\taf{ \mathrm{taf} }
+\newcommand\Fix{ \mathrm{Fix} }
 
 \DeclareMathOperator{\righttriplearrows} {{\; \tikz{ \foreach \y in {0, 0.1, 0.2} { \draw [-stealth] (0, \y) -- +(0.5, 0);}} \; }}
 \DeclareMathOperator*{\mapbackforth}{\rightleftharpoons}
 \DeclareMathOperator{\submfds}{SubMfds}
 \DeclareMathOperator{\crys}{crys}
-\DeclareMathOperator{\rad}{rad}
 \DeclareMathOperator{\Exists}{\exists}
 \DeclareMathOperator{\Forall}{\forall}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
@@ -519,6 +578,7 @@
 \DeclareMathOperator*{\eq}{=}
 \DeclareMathOperator{\Endo}{End}
 \DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\RHom}{\mathbb{R}Hom}
 \DeclareMathOperator{\proj}{proj}
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Hol}{Hol}
@@ -535,9 +595,7 @@
 \DeclareMathOperator{\projection}{Proj}
 \DeclareMathOperator{\Der}{Der}
 \DeclareMathOperator{\len}{len}
-\DeclareMathOperator{\Loop}{{\Omega}}
-\DeclareMathOperator{\Suspend}{{\Sigma}}
-\DeclareMathOperator{\B}{{\mathsf{B} }}
+\DeclareMathOperator{\Suspendpinf}{{\Sigma_+^\infty}}
 \DeclareMathOperator{\D}{{\mathsf{D} }}
 \DeclareMathOperator{\K}{{\mathsf{K} }}
 \DeclareMathOperator{\mH}{{\mathsf{H}\mkern-3mu }}
@@ -550,10 +608,12 @@
 \DeclareMathOperator{\Forget}{Forget}
 \DeclareMathOperator{\Griff}{Griff}
 \DeclareMathOperator{\Symb}{Symb}
+\DeclareMathOperator{\Th}{Th}
+\DeclareMathOperator{\U}{U}
 
 \newcommand{\Homeo}[0]{{\operatorname{Homeo}}}
 \newcommand{\Diffeo}[0]{{\operatorname{Diffeo}}}
-
+\newcommand{\B}[0]{{\mathsf{B}}}
 
 \newcommand{\DSt}[0]{{ \operatorname{DSt}}}
 
@@ -599,15 +659,17 @@
 \DeclareMathOperator{\coinfl}{coinf}
 
 \newcommand{\Suchthat}[0]{\middle\vert}
-\newcommand{\suchthat}[0]{{~\mathrel{KBig|}~}}
+\newcommand{\suchthat}[0]{{~\mathrel{\Big|}~}}
 \newcommand{\delbar}[0]{\bar{\del}}
 
 
 
 \newcommand{\contains}[0]{\supseteq}
 \newcommand{\containing}[0]{\supseteq}
+\newcommand{\iscontainedin}[0]{\supseteq}
 
-\newcommand{\cat}[1]{\mathcal{#1}}
+\newcommand{\cat}[1]{\mathsf{#1}}
+\newcommand{\rad}[1]{\sqrt{#1}}
 \newcommand{\thecat}[1]{\mathbf{#1}}
 \newcommand{\sheaf}[1]{\operatorname{\mathcal{#1}}}
 
@@ -631,6 +693,7 @@
 \newcommand\hodgestar[0]{\star}
 \newcommand\dirac[0]{\mkern-3mu \not{ \partial} }
 \newcommand\laplacian[0]{\Delta}
+\newcommand\Laplacian[0]{\Delta}
 \newcommand\stardstar[0]{\hodgestar {d} \mkern-5mu \hodgestar}
 \newcommand\covariant[0]{\nabla}
 \newcommand\ol[1]{\overline{#1}}
@@ -648,17 +711,12 @@
 \newcommand\capp[0]{\frown}
 \newcommand\sig[0]{\operatorname{sig}}
 \newcommand\ev[0]{\operatorname{ev}}
+\newcommand\coev[0]{\operatorname{coev}}
 
 \newcommand{\RM}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
-\newcommand{\divides}{\bigm|}
-\newcommand{\notdivides}{%
-  \mathrel{\mkern.5mu % small adjustment
-    % superimpose \nmid to \big|
-    \ooalign{\hidewidth$\big|$\hidewidth\cr$\nmid$\cr}%
-  }%
-}
+
 \newcommand{\fractional}[1]{\theset{#1}}
 \newcommand{\fractionalpart}[1]{\theset{#1}}
 \newcommand{\integerpart}[1]{\left[ {#1}\right] }
@@ -676,6 +734,8 @@
 \newcommand{\congas}[1]{\underset{#1}{\cong}}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 \newcommand{\adjoin}[1]{ { \left[ {#1} \right] } }
+\newcommand{\powerseries}[1]{ { \left[ {#1} \right] } }
+\newcommand{\formalpowerseries}[1]{ { \left[\left[ {#1} \right] \right] } }
 \newcommand{\xpn}[0]{ { x^{p^n} } }
 
 
@@ -696,11 +756,18 @@
 }}
 
 
+\newcommand{\Loop}[0]{{\Omega}}
+\newcommand{\Loopinf}[0]{{\Omega}^\infty}
+\newcommand{\Suspend}[0]{{\Sigma}}
 \newcommand{\ptd}{{\scriptstyle { * } }}
 \newcommand{\fin}[0]{{\mathrm{fin}}}
+\newcommand{\ess}[0]{{\mathrm{ess}}}
 \newcommand{\fd}[0]{{\mathrm{fd}}}
 \newcommand{\fg}[0]{{\mathrm{fg}}}
+\newcommand{\irr}[0]{{\mathrm{irr}}}
 \newcommand{\ft}[0]{{\mathrm{ft}}}
+\newcommand{\smol}[0]{{\mathrm{small}}}
+\newcommand{\alev}[0]{{\,\mathrm{a.e.}}}
 \newcommand{\smooth}[0]{{\operatorname{sm}}}
 \newcommand{\semisimple}[0]{{\operatorname{ss}}}
 \newcommand{\gon}[0]{{\dash\mathrm{gon}}}
@@ -709,6 +776,14 @@
 \newcommand{\Ball}[0]{{B}}
 \newcommand{\hq}[0]{{/}}
 \newcommand{\normcomplex}[1]{{\norm{\complex{#1}}}}
+\newcommand{\unioninfty}[0]{{\union\ts{\infty}}}
+\newcommand{\dualnumbers}[0]{{ [\eps] / \eps^2 }}
+\newcommand{\nerve}[1]{{ \mathcal{N}({#1}) }}
+\newcommand{\realize}[1]{{ \abs{#1} }}
+
+
+\newcommand{\localize}[1]{ \left[ {#1}\inv \right]}
+\newcommand{\complete}[1]{{}^{\hat{}}_{#1}}
 
 # Tuesday, January 12
 
@@ -1134,7 +1209,7 @@ This is because after choosing $e$, there are two orthogonal vectors, but only o
 
 We then apply a theorem:
 
-:::{.theorem title="?"}
+:::{.theorem title="Almost-complex structures on surfaces come from complex structures"}
 Any almost complex structure on a surface comes from a complex structure, in the sense that there exist charts \( \varphi_i: U_i \to \CC \) such that $J$ is multiplication by $i$.
 :::
 
@@ -1330,7 +1405,7 @@ s & \mapsto x\cdot s
 for any $x\in \OO(U)$, noting that $x\cdot s\in \OO(U)$ again.
 
 
-:::{.exercise title="?"}
+:::{.exercise title="The kernel of a sheaf morphism is a sheaf"}
 Check that $\ker \varphi$ is naturally a sheaf and $\ker(\varphi)(U) = \ker (\varphi(U)): \mathcal{F}(U) \to \mathcal{G}(U)$
 :::
 
@@ -1387,7 +1462,7 @@ Thus on any sufficiently small open set, $\cok(\exp) = 1$.
 This is only a presheaf: there exists an open cover of the annulus for which $\ro{z}{U_i}$, and so the naive cokernel doesn't define a sheaf.
 This is because we have a locally trivial section which glues to $z$, which is nontrivial.
 
-:::{.exercise title="?"}
+:::{.exercise title="Fixing the sheaf cokernel"}
 Redefine the cokernel so that it is a sheaf.
 Hint: look at sheafification, which has the defining property $\Hom_{\presh}(\mathcal{G}, \mathcal{F}^\presh ) =\Hom_{\Sh}( \mathcal{G}, \mathcal{F}^{\Sh})$ for any sheaf \( \mathcal{G}  \).
 :::
@@ -1792,7 +1867,7 @@ If \( \mathfrak{U}  \) is a sufficiently fine cover then $H^p_{\mathfrak{U}}(X, 
 Recall that we computed \( H^p(S^1, \ul{\ZZ} = [\ZZ, \ZZ, 0, \cdots] \).
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="When sheaf cohomology is isomorphic to singular cohomology"}
 Let $X$ be a paracompact and locally contractible topological space.
 Then $H^p(X, \ul{\ZZ}) \cong H^p_{\sing}(X, \ul{\ZZ})$.
 This will also hold more generally with $\ul{\ZZ}$ replaced by $\ul{A}$ for any $A\in \Ab$.
@@ -2662,8 +2737,7 @@ The **Chern class** of a vector bundle \( \mathcal{E}  \) , denoted \( c_k( \mat
 
 # Wednesday, February 10
 
-
-:::{.theorem title="?"}
+:::{.theorem title="Stable cohomology of BOn"}
 As $n\to \infty$, we have \[
 H^*(BO_n, \ZZ/2\ZZ) = \ZZ/2\ZZ[w_1, w_2, \cdots]
 && w_i \in H^i
@@ -2722,7 +2796,7 @@ H^n(X; \pi) \cong [X, K( \pi, n) ]
 :::
 
 
-:::{.proposition title="?"}
+:::{.proposition title="Classification of complex line bundles"}
 There is a correspondence
 \[
 \correspond{
@@ -2737,7 +2811,7 @@ Importantly, note that for $X \in \Mfd_\CC$, $H^2(X; \ZZ)$ measures *smooth* com
 :::
 
 
-:::{.proof title="?"}
+:::{.proof title="of proposition"}
 We'll take an alternate direct proof.
 Consider the exponential exact sequence on $X$:
 \[
@@ -3029,7 +3103,7 @@ Last time: we saw that \( \chi(\PP^1, \OO) = 1 \), and we'd like to generalize t
 This will be the main ingredient for Riemann-Roch.
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Euler characteristic and homological vanishing for holomorphic vector bundles"}
 Let $X \in \Mfd_\CC$ be compact and let \( \bundle{F} \) be a holomorphic vector bundle on \( X \) 
 [^coh_sheaf_general]
 Then $\chi$ is well-defined and \[ h^{> \dim_\CC X}(X; \bundle{F} ) = 0.\]
@@ -3044,7 +3118,7 @@ The locally constant sheaf \( \constantsheaf{\CC} \) is not an \( \OO\dash \)mod
 In fact, $h^{2i}(X, \constantsheaf{\CC}) = \CC$ for all $i$.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of theorem"}
 We'll can resolve $\bundle{F}$ as a sheaf by first mapping to its smooth sections and continuing in the following way:
 \[
 0 \to \bundle{F} \to C^{\infty } \bundle{F} \mapsvia{\delbar} F \tensor A^{0, 1} \to \cdots
@@ -3097,7 +3171,7 @@ Then
 and $g$ is the genus of $C$.
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of Riemann-Roch"}
 We'll introduce the notion of a "point bundle", which are particularly nice line bundles, denoted $\OO(p)$ for $p\in \CC$.
 
 \begin{tikzpicture}
@@ -3152,10 +3226,9 @@ There is an exact sequence
 s\in \OO(D_0)(U) &\mapsto s \cdot s_p \in \OO( D_0 + [p] ) (U)
 ,\]
 where the last term is the skyscraper sheaf at $p$.
-
 :::
 
-:::{.proof title="?"}
+:::{.proof title="of claim"}
 The given map is $\OO\dash$linear and injective, since $s_p\neq 0$ and $s s_p=0$ forces $s=0$.
 Recall that we looked at \( \OO \mapsvia{\cdot z} \OO \) on $\CC$, and this section only vanishes at $p$ (and to first order).
 The same situation is happening here.
@@ -3244,6 +3317,7 @@ On the other hand, $h^0$ is easy to understand, since $h^0( \Omega^1_C)$ is the 
 A key tool here is the following: 
 :::
 
+### Serre Duality
 
 :::{.proposition title="Serre Duality"}
 \[
@@ -3253,7 +3327,7 @@ noting that these are both global sections of a line bundle.
 :::
 
 
-:::{.proof title="?"}
+:::{.proof title="of Serre Duality"}
 Recall that we had a resolution of the sheaf $L$ given by by smooth vector bundles:
 \[
 0 \to L \injects L\tensor A^{0, 0} \mapsvia{\delbar} L \tensor A^{0, 1} \mapsvia{\delbar} 0
@@ -3358,7 +3432,7 @@ For 4-manifolds, we'll have an $H^2$ as well.
 
 ## Applications of Riemann-Roch
 
-:::{.proposition title="?"}
+:::{.proposition title="The 2-sphere has a unique complex structure"}
 There is a unique complex $X\in \Mfd_\CC$ diffeomorphic to $S^2$.
 :::
 
@@ -3411,12 +3485,12 @@ $\deg K_X = 2g-2$.
 Use the existence of a smooth vector field on $X$.
 :::
 
-:::{.lemma title="?"}
-If $\deg L < 0$ on $C$< the $h^0(C, L) = 0$.
+:::{.lemma title="When h0 of a line bundle on a curve vanishes"}
+If $\deg L < 0$ on $C$, thne $h^0(C, L) = 0$.
 :::
 
 
-:::{.proof title="?"}
+:::{.proof title="of lemma"}
 If $s\in H^0(C, L)$ is nonzero, then since $s$ is a holomorphic section,
 \[
 0 \leq \sum_{p\in C} \ord_P (s) = \deg L
@@ -3598,7 +3672,7 @@ Here we can define it as $g \da h^1/2$.
 Try to state and prove a Riemann-Roch formula for vector bundles on curves.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Formula for Euler characteristic of a line bundle on a complex surface"}
 Let $S$ be a compact complex surface, i.e. $S\in \Mfd_\CC^2$.
 An example might be $C\cross D$ for $C,D$ two complex curves, or $\CP^2$.
 Let $L\to S$ be a holomorphic vector bundle.
@@ -3660,6 +3734,9 @@ Note that $S \in \Mfd_\RR^4$ is oriented, so $\int_S c_2(T)$ is the signed numbe
 <!--\end{tikzpicture}-->
 
 ![image_2021-02-25-20-42-49](figures/image_2021-02-25-20-42-49.png)
+
+\todo[inline]{Check.}
+
 
 Looking at the tangent bundle of the surface, the local sign of an intersection will be the number of incoming directions $\mod 2$, i.e. the index of the critical point.
 Then the signed number of zeros here yields $1-6+1 = -4 = \chi_{\Top}(C)$.
@@ -3892,7 +3969,7 @@ The right-hand side can be written as
 .\]
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="The 4-sphere has no complex structure"}
 $S^4$ has no complex structure.
 :::
 
@@ -3915,7 +3992,7 @@ What is the intersection form?
 Taking $H\cdot H = -1$ since the orientations aren't compatible, and more generally the Gram matrix is negated when the orientation is reversed.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Barred projective 2-space is not orientably diffeomorphic to a complex surface"}
 $\bar{\CP}^2$ is not diffeomorphic to a complex surface by an orientation-preserving diffeomorphism (or any homeomorphism).
 :::
 
@@ -4543,7 +4620,7 @@ This operator is $\RR\dash$linear, so \( \mathcal{H}^p(X) \in \Vect_\RR  \).
 Note that this whole construction can be made to work over $\CC$ by adding conjugates in appropriate places.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Characterization of when a smooth p-form is harmonic"}
 A smooth $p\dash$form \( \omega \) is harmonic if and only if \( d \omega = d^\dagger \omega = 0 \).
 :::
 
@@ -4577,7 +4654,7 @@ Note that we've used that the inner product is symmetric over $\RR$.
 Over $\CC$, there are bars introduced from conjugation when swapping the variables.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Orthogonal decomposition of p-forms"}
 The following three subspaces of \( \Omega^p(X) \) are mutually orthogonal:
 \[
 d \Omega^{p-1}(X), \mathcal{H}^p(X), d^\dagger \Omega^{p+1}(X) 
@@ -4637,7 +4714,7 @@ For smooth $p\dash$forms, this decomposition **does** hold despite the false ass
 
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="p-forms have harmonic representatives"}
 Thus \( \mathcal{H}^p(X)  \) represents $H^p(X; \RR)$.
 :::
 
@@ -5239,7 +5316,7 @@ Note that this is a small finite dimensional space in an infinite dimensional sp
 The following miracle occurs:
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Kahler manifolds admit a Hodge decomposition?"}
 If $X \in \Mfd(\Kahler)$,
 \[
 \mch^k_\CC = \bigoplus_{p+q = k} \mch^{p, q}(X)
@@ -5320,7 +5397,7 @@ Then the universal cover admits a biholomorphism
 This essentially follows from the Riemann mapping principle.
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="Every curve of genus g>1 is the plane mod a subgroup of biholomorphisms"}
 Any curve $C$ of genus $g\geq 2$ is of the form $C = \HH/ \Gamma$ where \( \Gamma \leq \BiHol(\HH) \) is a subgroup that acts freely.
 By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \BiHol(\HH) \cong \PSL_2(\RR) \) by the map
 \[
@@ -5335,7 +5412,7 @@ z
 .\]
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="The upper half-plane admits a PSL-invariant hyperbolic metric"}
 The upper half plane $\HH$ admits a **hyperbolic metric** which is invariant under \( \PSL_2(\RR) \) given by 
 \[
 g_{\hyp} = {dx^2 + dy^2 \over y^2 } = {\dz \dzbar \over \Im(z)^2 }
@@ -5675,7 +5752,7 @@ Thus we can identify \( \ker(\delbar)/\im(\delbar) \cong \Hsh( X; \Omega^p) \) a
 We defined \( h^{p, q}(X) \da \dim_\CC H^{p, q}(X) \).
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="Homology is independent of the choice of Kähler form"}
 $h^{p,q }(X)$ is independent of the Kähler form, noting that the isomorphism to sheaf cohomology doesn't involve taking adjoints, 
 and $\dim_\CC \Hsh^q(X; \Omega^p)$ doesn't depend on the complex structure.
 :::
@@ -5750,7 +5827,7 @@ The **Hodge Diamond** of $X \in \Mfd(\Kah)$ (which won't depend on the choice of
 Note that there are symmetries, e.g. $\hodgestar$ takes $h^{1, 0} = h^{n-1, n}$ and $\bar{h^{p, q}} = h^{q, p}$.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="CYs have extra Hodge diamond symmetry"}
 If $X$ is **Calabi-Yau**, so $K_X = \OO_X$ (i.e the canonical bundle is trivial), then the Hodge diamond has an orientation preserving $(\ZZ/2)^2$ symmetry, i.e. there is a rotation by $\pi/2$.
 
 > Note: this isn't extra symmetry! Just a proof of the symmetry in this case.
@@ -5876,7 +5953,7 @@ What makes having a projective embedding special?
 If $S \embeds \CP^N$, it admits a line bundle: $\OO_S(1) \da \ro{ \OO_{\CP^N}(1) }{S}$.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Existence of the Fubini-Study form/metric"}
 $\CP^N$ is a Kähler manifold, and admits a distinguished 2-form $\omega \da \omega_{\text{FS}}$ the **Fubini-Study form** which induces the Fubini-Study metric $g_{\text{FS}}$.
 :::
 
@@ -6007,7 +6084,7 @@ Now letting $\bundle{E} \in\Vect(\Hol)$, we can tensor this exact sequence to ge
 which is also exact since locally we have the splitting principle.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Every line bundle over a smooth projective complex manifold is O of a divisor"}
 Let $X$ be a smooth projective
 [^projective_Def-Reminder]
 complex manifold.
@@ -6112,7 +6189,7 @@ We now want to discuss an alternative characterization of the intersection form 
 The next result comes from Beauville's "Complex Algebraic Surfaces":
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Formula for computing intersection numbers between complex curves"}
 Let $S \in \Mfd^2(\CC)^\cpt$, then the intersection number between complex curves $C, D$ can be computed in the following ways:
 \[
 C\cdot D = \deg \OO_S(C) \ro{}{D} = \sum_{p\in C \intersect D } \len_p(C \intersect D )
@@ -6375,7 +6452,7 @@ So for example $K_{\PP^2} = \OO(-3) = -3 L$ where $L \in H^2(\PP^2, \ZZ)$ is a h
 :::
 
 
-:::{.corollary title="?"}
+:::{.corollary title="Formula for genus of a curve in terms of degree"}
 Let $f$ be a degree $d$ homogeneous polynomial in $x,y,z$, then $V(f) \subseteq \PP^2 = \ts{ [x:y:z] }$. 
 If $C\da V(f)$ is a smooth complex curve, then applying the genus formula yields
 \[
@@ -6598,7 +6675,7 @@ We can write $\PP^3 = \CC \union \CC^2 \union \CC^4$, which is a cell decomposit
 :::
 
 
-:::{.corollary title="?"}
+:::{.corollary title="h1 of K3 surfaces"}
 K3 surfaces are simply connected, and $h^1(S; \CC) = 0$.
 :::
 
@@ -6633,17 +6710,14 @@ What is the Hodge diamond for a cubic surface $S \subseteq \PP^3$, such as $\sum
 We first need to compute the canonical bundle $K$, for which we have a useful tool: the adjunction formula.
 This say \( K_S = \qty{K_{\PP^3} \tensor \PP_{\PP^3}(S) } \ro{}{S} = \qty{ \OO(-4) \tensor \OO(3) }\ro{}{S} = \ro{ \OO(-1)}{S} \).
 
-
-:::{.proposition title="?"}
+:::{.proposition title="If a holomorphic line bundle has a section, its inverse doesn't"}
 Let \( \bundle{L} \to X \) be a holomorphic line bundle.
 If $h^0( \bundle{L} \inv ) > 0$, then either $\bundle{L} = \OO$ or $h^0(\bundle{L}) = 0$.
 :::
 
-
 :::{.slogan}
 If a line bundle has a section, its inverse does not.
 :::
-
 
 :::{.proof title="?"}
 Suppose that both $\bundle{L}, \bundle{L}\inv$ have a section, so $h^0(\bundle{L}), h^0( \bundle{L} ) > 0$.
@@ -6653,11 +6727,9 @@ Writing these as $\div(s) \da \sum n_D D, \div(t) \da \sum n_C C$, we have $n_D,
 So $s, t$ are nowhere vanishing, making \( \OO \mapsvia{\cdot s} \bundle{L} \) is an isomorphism.
 :::
 
-
-:::{.corollary title="?"}
+:::{.corollary title="H0 of cubic surfaces"}
 For $S$ a cubic surface, $H^0(S; K_S) = 0$.
 :::
-
 
 :::{.proof title="?"}
 This follows because $K_S = \OO_S(-1)$, so $K_S\inv = \OO_S(1)$ which has a nontrivial section: namely $\OO_{\CP^1}(1)$ which has sections vanishing along hyperplanes.
@@ -6931,7 +7003,7 @@ This is referred to as $\FF_1$, the **first Hirzebruch surface**.
 :::
 
 
-:::{.proposition title="?"}
+:::{.proposition title="Blowup for smooth manifolds is connect-sum with CP2"}
 For $S\in \Mfd_\RR(C^\infty)$ a smooth manifold, we can identify
 \[
 \Bl_p S = S \connectsum \bar{\CP^2}
@@ -7109,7 +7181,7 @@ Given \( \Omega^2_S = K_S \to S \) the canonical line bundle, can we relate $K_{
 :::
 
 
-:::{.proposition title="?"}
+:::{.proposition title="Canonical of a blowup"}
 \[
 K_{\Bl_p S} = \pi^* K_S \tensor \OO_S(E)
 .\]
@@ -7173,7 +7245,7 @@ So this adds one to the rank.
 Recall that we have the following:
 \[
 H^2(\hat{S}; \ZZ) = \pi^* H^2(S; \ZZ) \oplus \ZZ[E]
-,\]
+\]
 where $E$ is the exceptional curve, which follows from Mayer-Vietoris.
 We can write $\hat{S} = S \# \bar{\CP^2}$, and by excision $H^2(S\sm \BB^4) = H^2(S)$.
 So we get a LES
@@ -7258,7 +7330,7 @@ So $\pi^*[\Sigma] \cdot E = 0$.
 Since $[E] \sim [\text{line}] \in \bar{\CP^2}\sm \BB^4$, and $E^2 = [E] \cdot [E] = -1$ since the orientations disagree in $\bar{\CP^2}$.
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Computing the pullback of a curve"}
 Let $C \subset S$ be a curve on a surface and suppose $C$ is locally cut out by\[
 f(x, y) = a_{m, 0} x^m + a_{n-1, 1} x^{m-1} y + \cdots + a_{0, m} y^m + O(x^{m+1}, y^{m+1})
 ,\]
@@ -7290,7 +7362,7 @@ C = V(x^2 + y^2 + O(\deg(3))
 .\].
 :::
 
-:::{.corollary title="?"}
+:::{.corollary title="Computing the square of the strict transform"}
 $\hat{C}^2 = C^2 - m^2$.
 :::
 
@@ -7706,7 +7778,7 @@ e_3 \cdot (e_1 e_2) = -e_1 e_3 e_2 = e_1 e_2 e_3 \in \Cl_1(\RR^3)
 .\]
 :::
 
-:::{.proposition title="?"}
+:::{.proposition title="Decomposing the Clifford algebra of V"}
 \[
 \Cl(V) \cong \Cl_0(V \oplus \RR)
 .\]
@@ -7883,7 +7955,7 @@ This is a nice example to get a hang of the use and importance of Čech cohomolo
 We then use the isomorphism $\Hc \to H_{\sing}$.
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Existence of spin representation of Clifford algebras in even dimension"}
 Assume $n \da \dim V$ is even, then $\Cl(V)$ has a unique nontrivial irreducible finite dimensional complex representation $S$ of dimension $\dim S = 2^{n/2}$, the **spin representation**.
 :::
 
@@ -7932,7 +8004,7 @@ So this does not define a spin structure.
 We showed that there exists a spin structure iff some cohomology class $w_2(K) \in H^2(X; \ZZ/2)$ vanishes.
 :::
 
-:::{.theorem title="?"}
+:::{.theorem title="Classification of complex representations of Clifford algebras"}
 If $\dim_k V$ is even, there is a unique finite-dimensional complex irreducible $\Cl(V)$ representation of dimension $2^{n/2}$.
 If $\dim_k V$ is odd, there are two complex conjugate representations of dimension $2^{\floor{n/2}}$.
 :::
@@ -8109,7 +8181,7 @@ Remarkably, for Spin bundles, there is an action leftover.
 :::
 
 
-:::{.proposition title="?"}
+:::{.proposition title="The spin bundle is a Clifford module"}
 The spin bundle $\SS_M$ naturally has the structure of a $\Cl(M)\dash$module.
 :::
 
@@ -8174,7 +8246,7 @@ We can write $\Cl(M) \cong \Endo(\SS_M)$, and one can check that \( [\Endo \SS_M
 :::
 
 
-:::{.definition title="?"}
+:::{.definition title="Dirac Operator"}
 Let \( \nabla \) be a Clifford connection on $\SS_M$ and $s\in H^0(\SS_M)$, so \( \nabla(s) \in \SS_M \tensor \Omega^1(M) \).
 Then the **Dirac operator** is defined as 
 \[
@@ -8201,7 +8273,7 @@ This is an order 1 differential operator:
 
 
 
-:::{.proposition title="?"}
+:::{.proposition title="Relation between Dirac operator and Laplacian"}
 \[
 \dirac^2 = - \laplacian
 .\]
@@ -8362,7 +8434,7 @@ which makes the operator invertible away from zero.
 Thus we can apply Atiyah-Singer.
 
 
-:::{.lemma title="?"}
+:::{.lemma title="Formula for Chern characters"}
 There is a nice formula for Chern characters:
 \[
 \ch \SS^+ - \ch \SS^- = \prod_{i=1}^n( e ^{x_i/2} - e^{-x_i/2})

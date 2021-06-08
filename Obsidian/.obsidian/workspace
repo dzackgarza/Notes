@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9a2c3ebcef2b5cb6",
+        "id": "9c96e9e33bc26fdb",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -78,7 +75,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -112,9 +108,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +168,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,7 +232,7 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "9a2c3ebcef2b5cb6",
+  "active": "9c96e9e33bc26fdb",
   "lastOpenFiles": [
     "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
     "zettelkasten/tensor category.md",

@@ -357,7 +357,7 @@ This is because after choosing \( e \), there are two orthogonal vectors, but on
 
 We then apply a theorem:
 
-::: {.theorem title="?"}
+::: {.theorem title="Almost-complex structures on surfaces come from complex structures"}
 Any almost complex structure on a surface comes from a complex structure, in the sense that there exist charts \( \varphi_i: U_i \to {\mathbb{C}} \) such that \( J \) is multiplication by \( i \).
 :::
 
@@ -382,7 +382,7 @@ c.  Compatibility if restriction is taken in steps: \( U \subseteq V \subseteq W
 
 We say \( \mathcal{F} \) is a **sheaf** if additionally:
 
-d.  Given \( s_i \in \mathcal{F}(U_i) \) such that \( \rho_{U_i \cap U_j} (s_i) = \rho_{U_i \cap U_j} (s_j) \) implies that there exists a unique \( s\in \mathcal{F}(\bigcup_i U_i) \) such that \( \rho_{U_i}(s) = s_i \).
+d.  Given \( s_i \in \mathcal{F}(U_i) \) such that \( \rho_{U_i \cap U_j} (s_i) = \rho_{U_i \cap U_j} (s_j) \) implies that there exists a unique \( s\in \mathcal{F}(\displaystyle\bigcup_i U_i) \) such that \( \rho_{U_i}(s) = s_i \).
 
 ```{=tex}
 \begin{tikzpicture}
@@ -409,7 +409,7 @@ Let \( X \) be a topological manifold, then \( \mathcal{F}\coloneqq C^0({-}, {\m
 ```
 > [Link to diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJVIl0sWzAsMiwiViJdLFsyLDAsIkNeMChVOyBcXFJSKSJdLFsyLDIsIkNeMChWOyBcXFJSKSJdLFsxLDAsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMywiXFx0ZXh0e3Jlc3RyaWN0IGN0cy4gZnVuY3Rpb25zfSIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn0sImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDIsIlxcbWF0aGNhbHtGfSJdLFsxLDMsIlxcbWF0aGNhbHtGfSIsMl1d)
 
-Property (d) holds because given sections \( s_i \in C^0(U_i; {\mathbb{R}}) \) agreeing on overlaps, so \( { \left.{{s_i}} \right|_{{U_i \cap U_j}} } = { \left.{{s_j}} \right|_{{U_i \cap U_j}} } \), there exists a unique \( s\in C^0(\bigcup_i U_i; {\mathbb{R}}) \) such that \( { \left.{{s}} \right|_{{U_i}} } = s_i \) for all \( i \) -- continuous functions glue.
+Property (d) holds because given sections \( s_i \in C^0(U_i; {\mathbb{R}}) \) agreeing on overlaps, so \( { \left.{{s_i}} \right|_{{U_i \cap U_j}} } = { \left.{{s_j}} \right|_{{U_i \cap U_j}} } \), there exists a unique \( s\in C^0(\displaystyle\bigcup_i U_i; {\mathbb{R}}) \) such that \( { \left.{{s}} \right|_{{U_i}} } = s_i \) for all \( i \) -- continuous functions glue.
 :::
 
 ::: {.remark}
@@ -533,7 +533,7 @@ s & \mapsto x\cdot s
 \]
 for any \( x\in {\mathcal{O}}(U) \), noting that \( x\cdot s\in {\mathcal{O}}(U) \) again.
 
-::: {.exercise title="?"}
+::: {.exercise title="The kernel of a sheaf morphism is a sheaf"}
 Check that \( \ker \varphi \) is naturally a sheaf and \( \ker(\varphi)(U) = \ker (\varphi(U)): \mathcal{F}(U) \to \mathcal{G}(U) \)
 :::
 
@@ -580,7 +580,7 @@ Any \( f\in {\mathcal{O}}^{\times}(U) \) has a logarithm, say by taking a branch
 ```
 Thus on any sufficiently small open set, \( \operatorname{coker}(\exp) = 1 \). This is only a presheaf: there exists an open cover of the annulus for which \( { \left.{{z}} \right|_{{U_i}} } \), and so the naive cokernel doesn't define a sheaf. This is because we have a locally trivial section which glues to \( z \), which is nontrivial.
 
-::: {.exercise title="?"}
+::: {.exercise title="Fixing the sheaf cokernel"}
 Redefine the cokernel so that it is a sheaf. Hint: look at sheafification, which has the defining property \( \mathop{\mathrm{Hom}}_{{\mathsf{Presh}}}(\mathcal{G}, \mathcal{F}^{\mathsf{Presh}}) =\mathop{\mathrm{Hom}}_{{\mathsf{Sh}}}( \mathcal{G}, \mathcal{F}^{{\mathsf{Sh}}}) \) for any sheaf \( \mathcal{G} \).
 :::
 
@@ -682,7 +682,7 @@ a symmetric bilinear form with \( g_p(u, v) \geq 0 \) with equality if and only 
 :::
 
 ::: {.definition title="The Frame Bundle"}
-Define \( \mathop{\mathrm{Frame}}_p(X) \coloneqq\left\{{\text{bases of } T_p X}\right\} \), and \( \mathop{\mathrm{Frame}}(X) \coloneqq\bigcup_{p\in X} \mathop{\mathrm{Frame}}_p(X) \).
+Define \( \mathop{\mathrm{Frame}}_p(X) \coloneqq\left\{{\text{bases of } T_p X}\right\} \), and \( \mathop{\mathrm{Frame}}(X) \coloneqq\displaystyle\bigcup_{p\in X} \mathop{\mathrm{Frame}}_p(X) \).
 :::
 
 ::: {.remark}
@@ -723,7 +723,7 @@ Note that \( \mathcal{E}, \overline{\mathcal{E}} \) are genuinely different as c
 :::
 
 ::: {.definition title="Unitary Frame Bundle"}
-We define the **unitary frame bundle** \( \mathop{\mathrm{UFrame}}(\mathcal{E}) \coloneqq\bigcup_p \mathop{\mathrm{UFrame}}(\mathcal{E})_p \), where at each point this is given by the set of orthogonal frames of \( \mathcal{E}_p \) given by \( (e_1, \cdots, e_n) \) where \( h(e_i , \mkern 1.5mu\overline{\mkern-1.5mue_j\mkern-1.5mu}\mkern 1.5mu ) = \delta_{ij} \).
+We define the **unitary frame bundle** \( \mathop{\mathrm{UFrame}}(\mathcal{E}) \coloneqq\displaystyle\bigcup_p \mathop{\mathrm{UFrame}}(\mathcal{E})_p \), where at each point this is given by the set of orthogonal frames of \( \mathcal{E}_p \) given by \( (e_1, \cdots, e_n) \) where \( h(e_i , \mkern 1.5mu\overline{\mkern-1.5mue_j\mkern-1.5mu}\mkern 1.5mu ) = \delta_{ij} \).
 :::
 
 ::: {.remark}
@@ -912,7 +912,7 @@ If \( \mathfrak{U} \) is a sufficiently fine cover then \( H^p_{\mathfrak{U}}(X,
 Recall that we computed \( H^p(S^1, \underline{{\mathbb{Z}}} = [{\mathbb{Z}}, {\mathbb{Z}}, 0, \cdots] \).
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="When sheaf cohomology is isomorphic to singular cohomology"}
 Let \( X \) be a paracompact and locally contractible topological space. Then \( H^p(X, \underline{{\mathbb{Z}}}) \cong H^p_{{\operatorname{Sing}}}(X, \underline{{\mathbb{Z}}}) \). This will also hold more generally with \( \underline{{\mathbb{Z}}} \) replaced by \( \underline{A} \) for any \( A\in {\mathsf{Ab}} \).
 :::
 
@@ -1418,7 +1418,7 @@ Thus
 :::
 
 ::: {.theorem title="Serre"}
-Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\bigm|p-q \).
+Every unimodular lattice which is not positive or negative definite is isomorphic to either \( \mathbf{I}_{p, q} \) or \( \mathbf{II}_{p, q} \) with \( 8\divides p-q \).
 :::
 
 ::: {.remark}
@@ -1444,7 +1444,7 @@ If \( M^4 \) is a compact oriented 4-manifold and if the intersection form on \(
 -   Whether it's even or odd, and
 -   Its signature
 
-If the lattice is even, then the signature satisfies \( 8\bigm|p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
+If the lattice is even, then the signature satisfies \( 8\divides p-q \). So Poincaré duality forces unimodularity, and then there are further number-theoretic restrictions. E.g. this prohibits \( \beta_2 =7 \), since then the signature couldn't possibly be 8 if the intersection form is even.
 :::
 
 ## Characteristic Classes
@@ -1622,7 +1622,7 @@ The **Chern class** of a vector bundle \( \mathcal{E} \) , denoted \( c_k( \math
 
 # Wednesday, February 10
 
-::: {.theorem title="?"}
+::: {.theorem title="Stable cohomology of BOn"}
 As \( n\to \infty \), we have
 \[
 H^*(BO_n, {\mathbb{Z}}/2{\mathbb{Z}}) = {\mathbb{Z}}/2{\mathbb{Z}}[w_1, w_2, \cdots]
@@ -1671,7 +1671,7 @@ H^n(X; \pi) \cong [X, K( \pi, n) ]
 .\]
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Classification of complex line bundles"}
 There is a correspondence
 \[
 \left\{{\substack{
@@ -1685,7 +1685,7 @@ H^2(X; {\mathbb{Z}})
 Importantly, note that for \( X \in {\mathsf{Mfd}}_{\mathbb{C}} \), \( H^2(X; {\mathbb{Z}}) \) measures *smooth* complex line bundles and not holomorphic bundles.
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of proposition"}
 We'll take an alternate direct proof. Consider the exponential exact sequence on \( X \):
 \[
 0 \to \underline{Z} \to {\mathcal{O}}\xrightarrow{\exp} {\mathcal{O}}^{\times}
@@ -1919,7 +1919,7 @@ Is every holomorphic function on \( {\mathbb{C}}^{\times} \) of the form \( g(1/
 Last time: we saw that \( \chi({\mathbb{P}}^1, {\mathcal{O}}) = 1 \), and we'd like to generalize to holomorphic line bundles on a Riemann surface. This will be the main ingredient for Riemann-Roch.
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Euler characteristic and homological vanishing for holomorphic vector bundles"}
 Let \( X \in {\mathsf{Mfd}}_{\mathbb{C}} \) be compact and let \( \mathcal{F} \) be a holomorphic vector bundle on \( X \) [^3] Then \( \chi \) is well-defined and
 \[ h^{> \dim_{\mathbb{C}}X}(X; \mathcal{F} ) = 0.\]
 :::
@@ -1928,7 +1928,7 @@ Let \( X \in {\mathsf{Mfd}}_{\mathbb{C}} \) be compact and let \( \mathcal{F} \)
 The locally constant sheaf \( \underline{{\mathbb{C}}} \) is not an \( {\mathcal{O}}{\hbox{-}} \)module, i.e. \( \underline{{\mathbb{C}}}(U) \not\in {\mathsf{{\mathcal{O}}(U)}{\hbox{-}}\mathsf{Mod}} \). In fact, \( h^{2i}(X, \underline{{\mathbb{C}}}) = {\mathbb{C}} \) for all \( i \).
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of theorem"}
 We'll can resolve \( \mathcal{F} \) as a sheaf by first mapping to its smooth sections and continuing in the following way:
 \[
 0 \to \mathcal{F} \to C^{\infty } \mathcal{F} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} F \otimes A^{0, 1} \to \cdots
@@ -1975,7 +1975,7 @@ Let \( C \) be a compact connected Riemann surface, i.e. \( X\in {\mathsf{Mfd}}
 and \( g \) is the genus of \( C \).
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of Riemann-Roch"}
 We'll introduce the notion of a "point bundle", which are particularly nice line bundles, denoted \( {\mathcal{O}}(p) \) for \( p\in {\mathbb{C}} \).
 
 ```{=tex}
@@ -2022,7 +2022,7 @@ s\in {\mathcal{O}}(D_0)(U) &\mapsto s \cdot s_p \in {\mathcal{O}}( D_0 + [p] ) (
 where the last term is the skyscraper sheaf at \( p \).
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of claim"}
 The given map is \( {\mathcal{O}}{\hbox{-}} \)linear and injective, since \( s_p\neq 0 \) and \( s s_p=0 \) forces \( s=0 \). Recall that we looked at \( {\mathcal{O}}\xrightarrow{\cdot z} {\mathcal{O}} \) on \( {\mathbb{C}} \), and this section only vanishes at \( p \) (and to first order). The same situation is happening here.
 :::
 
@@ -2098,6 +2098,8 @@ Let \( C \) be a curve, then \( \Omega_C^1 \) is the sheaf of holomorphic 1-form
 In general it can be hard to compute \( h^1(L) \), since this is sheaf cohomology (sections over double overlaps, cocycle conditions, etc). On the other hand, \( h^0 \) is easy to understand, since \( h^0( \Omega^1_C) \) is the dimension of the global holomorphic sections \( H^0(C, L) = L(C) \). A key tool here is the following:
 :::
 
+### Serre Duality
+
 ::: {.proposition title="Serre Duality"}
 \[
 H^1(C, L) \cong H^0(C, L ^{-1} \otimes\Omega_C^1) {}^{ \check{} }
@@ -2105,7 +2107,7 @@ H^1(C, L) \cong H^0(C, L ^{-1} \otimes\Omega_C^1) {}^{ \check{} }
 noting that these are both global sections of a line bundle.
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of Serre Duality"}
 Recall that we had a resolution of the sheaf \( L \) given by by smooth vector bundles:
 \[
 0 \to L \hookrightarrow L\otimes A^{0, 0} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} L \otimes A^{0, 1} \xrightarrow{\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu} 0
@@ -2183,7 +2185,7 @@ Serre duality said that the space of sections \( H^1(C; L) \) is naturally isomo
 
 ## Applications of Riemann-Roch
 
-::: {.proposition title="?"}
+::: {.proposition title="The 2-sphere has a unique complex structure"}
 There is a unique complex \( X\in {\mathsf{Mfd}}_{\mathbb{C}} \) diffeomorphic to \( S^2 \).
 :::
 
@@ -2227,11 +2229,11 @@ In coordinates on \( {\mathbb{CP}}^1 \), the coordinate is given by \( z \) and 
 \( \deg K_X = 2g-2 \). Use the existence of a smooth vector field on \( X \).
 :::
 
-::: {.lemma title="?"}
-If \( \deg L < 0 \) on \( C \)\< the \( h^0(C, L) = 0 \).
+::: {.lemma title="When h0 of a line bundle on a curve vanishes"}
+If \( \deg L < 0 \) on \( C \), thne \( h^0(C, L) = 0 \).
 :::
 
-::: {.proof title="?"}
+::: {.proof title="of lemma"}
 If \( s\in H^0(C, L) \) is nonzero, then since \( s \) is a holomorphic section,
 \[
 0 \leq \sum_{p\in C} {\operatorname{Ord}}_P (s) = \deg L
@@ -2385,7 +2387,7 @@ Note that this is a better definition of genus than the previous one, which was 
 Try to state and prove a Riemann-Roch formula for vector bundles on curves.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Formula for Euler characteristic of a line bundle on a complex surface"}
 Let \( S \) be a compact complex surface, i.e. \( S\in {\mathsf{Mfd}}_{\mathbb{C}}^2 \). An example might be \( C\times D \) for \( C,D \) two complex curves, or \( {\mathbb{CP}}^2 \). Let \( L\to S \) be a holomorphic vector bundle. Then
 \[
 \chi(L) = \chi({\mathcal{O}}_S) + {1\over 2} \qty{ L^2 - L \cdot K}
@@ -2441,6 +2443,9 @@ so we just need to understand \( \int_S c_2(T) \). But for \( n=\operatorname{ra
 ```
 ![image_2021-02-25-20-42-49](figures/image_2021-02-25-20-42-49.png)
 
+```{=tex}
+\todo[inline]{Check.}
+```
 Looking at the tangent bundle of the surface, the local sign of an intersection will be the number of incoming directions \( \pmod 2 \), i.e. the index of the critical point. Then the signed number of zeros here yields \( 1-6+1 = -4 = \chi_{{\mathsf{Top}}}(C) \). More generally, we have
 \[
 \chi_{{\mathsf{Top}}}(M^n) = \int_C c_{n}(TM)
@@ -2622,7 +2627,7 @@ The right-hand side can be written as
 .\]
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="The 4-sphere has no complex structure"}
 \( S^4 \) has no complex structure.
 :::
 
@@ -2639,7 +2644,7 @@ which is a contradiction. \( \contradiction \)
 Consider \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}\mkern-1.5mu}\mkern 1.5mu^2 \), a 4-manifold diffeomorphic to \( {\mathbb{CP}}^2 \) with the opposite orientation. What is the intersection form? Taking \( H\cdot H = -1 \) since the orientations aren't compatible, and more generally the Gram matrix is negated when the orientation is reversed.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Barred projective 2-space is not orientably diffeomorphic to a complex surface"}
 \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}\mkern-1.5mu}\mkern 1.5mu^2 \) is not diffeomorphic to a complex surface by an orientation-preserving diffeomorphism (or any homeomorphism).
 :::
 
@@ -3135,7 +3140,7 @@ A \( p{\hbox{-}} \)form \( \omega \) is **harmonic** if and only if \( \Delta \o
 This operator is \( {\mathbb{R}}{\hbox{-}} \)linear, so \( \mathcal{H}^p(X) \in {\mathsf{Vect}}_{\mathbb{R}} \). Note that this whole construction can be made to work over \( {\mathbb{C}} \) by adding conjugates in appropriate places.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Characterization of when a smooth p-form is harmonic"}
 A smooth \( p{\hbox{-}} \)form \( \omega \) is harmonic if and only if \( d \omega = d^\dagger \omega = 0 \).
 :::
 
@@ -3164,7 +3169,7 @@ So we can conclude that \( d^\dagger \omega = d \omega = 0 \).
 Note that we've used that the inner product is symmetric over \( {\mathbb{R}} \). Over \( {\mathbb{C}} \), there are bars introduced from conjugation when swapping the variables.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Orthogonal decomposition of p-forms"}
 The following three subspaces of \( \Omega^p(X) \) are mutually orthogonal:
 \[
 d \Omega^{p-1}(X), \mathcal{H}^p(X), d^\dagger \Omega^{p+1}(X) 
@@ -3218,7 +3223,7 @@ For smooth \( p{\hbox{-}} \)forms, this decomposition **does** hold despite the 
 .\]
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="p-forms have harmonic representatives"}
 Thus \( \mathcal{H}^p(X) \) represents \( H^p(X; {\mathbb{R}}) \).
 :::
 
@@ -3692,7 +3697,7 @@ How does this interact with the decomposition of the smooth \( k{\hbox{-}} \)for
 where \( {\mathcal{H}}^k_{\mathbb{C}}(X) \) is contained in this. Note that this is a small finite dimensional space in an infinite dimensional space! The following miracle occurs:
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Kahler manifolds admit a Hodge decomposition?"}
 If \( X \in {\mathsf{Mfd}}(\text{Kähler}) \),
 \[
 {\mathcal{H}}^k_{\mathbb{C}}= \bigoplus_{p+q = k} {\mathcal{H}}^{p, q}(X)
@@ -3757,7 +3762,7 @@ Let \( C \in {\mathsf{Mfd}}^1({\mathbb{C}})_{ \text{compact} }  \) of genus \( g
 This essentially follows from the Riemann mapping principle.
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="Every curve of genus g>1 is the plane mod a subgroup of biholomorphisms"}
 Any curve \( C \) of genus \( g\geq 2 \) is of the form \( C = {\mathbb{H}}/ \Gamma \) where \( \Gamma \leq \mathop{\mathrm{BiHol}}({\mathbb{H}}) \) is a subgroup that acts freely. By covering space theory, \( \Gamma = \pi_1(C) \), and it's known that \( \mathop{\mathrm{BiHol}}({\mathbb{H}}) \cong {\operatorname{PSL}}_2({\mathbb{R}}) \) by the map
 \[
 \begin{bmatrix}
@@ -3771,7 +3776,7 @@ z
 .\]
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="The upper half-plane admits a PSL-invariant hyperbolic metric"}
 The upper half plane \( {\mathbb{H}} \) admits a **hyperbolic metric** which is invariant under \( {\operatorname{PSL}}_2({\mathbb{R}}) \) given by
 \[
 g_{\text{hyp}} = {dx^2 + dy^2 \over y^2 } = {\,dz\,d\mkern 1.5mu\overline{\mkern-1.5muz\mkern-1.5mu}\mkern 1.5mu \over \Im(z)^2 }
@@ -4057,7 +4062,7 @@ There was a proposition that \( \ker(\Delta_d) = \ker(d) \cap\ker(d^\dagger) \),
 Thus we can identify \( \ker(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu)/\operatorname{im}(\mkern 1.5mu\overline{\mkern-1.5mu{\partial}\mkern-1.5mu}\mkern 1.5mu) \cong { \mathcal{H} }( X; \Omega^p) \) as sheaf cohomology. We defined \( h^{p, q}(X) \coloneqq\dim_{\mathbb{C}}H^{p, q}(X) \).
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="Homology is independent of the choice of Kähler form"}
 \( h^{p,q }(X) \) is independent of the Kähler form, noting that the isomorphism to sheaf cohomology doesn't involve taking adjoints, and \( \dim_{\mathbb{C}}{ \mathcal{H} }^q(X; \Omega^p) \) doesn't depend on the complex structure.
 :::
 
@@ -4121,7 +4126,7 @@ The **Hodge Diamond** of \( X \in {\mathsf{Mfd}}({ \text{Kähler} } ) \) (which 
 Note that there are symmetries, e.g. \( \star \) takes \( h^{1, 0} = h^{n-1, n} \) and \( \mkern 1.5mu\overline{\mkern-1.5muh^{p, q}\mkern-1.5mu}\mkern 1.5mu = h^{q, p} \).
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="CYs have extra Hodge diamond symmetry"}
 If \( X \) is **Calabi-Yau**, so \( K_X = {\mathcal{O}}_X \) (i.e the canonical bundle is trivial), then the Hodge diamond has an orientation preserving \( ({\mathbb{Z}}/2)^2 \) symmetry, i.e. there is a rotation by \( \pi/2 \).
 
 > Note: this isn't extra symmetry! Just a proof of the symmetry in this case.
@@ -4230,7 +4235,7 @@ Another non-example is \( {\mathbb{C}}^2 \setminus\left\{{0}\right\}/ (x, y) \si
 What makes having a projective embedding special? If \( S \hookrightarrow{\mathbb{CP}}^N \), it admits a line bundle: \( {\mathcal{O}}_S(1) \coloneqq{ \left.{{ {\mathcal{O}}_{{\mathbb{CP}}^N}(1) }} \right|_{{S}} } \).
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Existence of the Fubini-Study form/metric"}
 \( {\mathbb{CP}}^N \) is a Kähler manifold, and admits a distinguished 2-form \( \omega \coloneqq\omega_{\text{FS}} \) the **Fubini-Study form** which induces the Fubini-Study metric \( g_{\text{FS}} \).
 :::
 
@@ -4344,7 +4349,7 @@ Now letting \( \mathcal{E} \in{\mathsf{Vect}}(\mathop{\mathrm{Hol}}) \), we can 
 which is also exact since locally we have the splitting principle.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Every line bundle over a smooth projective complex manifold is O of a divisor"}
 Let \( X \) be a smooth projective [^4] complex manifold. Then every line bundle over \( X \) is of the form \( L = {\mathcal{O}}_X(D) \) for some divisor \( D = \sum n_i D_i \in {\mathbb{Z}}[\mathop{\mathrm{SubMfds}}(\operatorname{codim}_1)] \).
 :::
 
@@ -4428,7 +4433,7 @@ Last time: line bundles are of the form \( {\mathcal{O}}(D) \) for \( D \) a div
 We now want to discuss an alternative characterization of the intersection form on an algebraic surface. The next result comes from Beauville's "Complex Algebraic Surfaces":
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Formula for computing intersection numbers between complex curves"}
 Let \( S \in {\mathsf{Mfd}}^2({\mathbb{C}})^{ \text{compact} }  \), then the intersection number between complex curves \( C, D \) can be computed in the following ways:
 \[
 C\cdot D = \deg {\mathcal{O}}_S(C) { \left.{{}} \right|_{{D}} } = \sum_{p\in C \cap D } \mathop{\mathrm{len}}_p(C \cap D )
@@ -4500,7 +4505,7 @@ Why is this exact? Considering the composition, we have
 
 So we get \( \operatorname{im}p_1 \subseteq \ker p_2 \). Why do we have the reverse containment for exactness? Looking locally, given a pair \( \phi_1, \phi_2 \in \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \) such that \( \phi_1 \varphi- \phi_2 g = 0 \) and locally \( (\phi_1, \phi_2) \in \ker p_2 \), we want to show that \( \phi_1 = g \phi, \phi_2 = f\phi \) for some \( f,g \in \mathop{\mathrm{Hol}}(U; {\mathbb{C}}) \). Equivalently, we want to show that
 \[
-\phi_1 f = \phi_2 g \implies g\bigm|\phi_1
+\phi_1 f = \phi_2 g \implies g\divides \phi_1
 .\]
 If this is true, then we can set \( \phi \coloneqq{\phi_1 \over g} \), since this would yield \( g\phi = \phi_1 \) and \( f\phi = {f\phi_1 \over g} = \phi_2 \). Note that we can divide here because the ring \( \mathop{\mathrm{Hol}}(U;{\mathbb{C}}) \) is a domain (i.e. it has no zero divisors) on small sets.
 
@@ -4636,7 +4641,7 @@ where \( g = g(C) \) is the genus of \( C \). On the other hand, the left-hand s
 We showed \( K_{{\mathbb{P}}^n} = {\mathcal{O}}(-n-1) \) where \( {\mathcal{O}}(-1) \) was the tautological line bundle over \( {\mathbb{P}}^n \). So for example \( K_{{\mathbb{P}}^2} = {\mathcal{O}}(-3) = -3 L \) where \( L \in H^2({\mathbb{P}}^2, {\mathbb{Z}}) \) is a hyperplane (here a line) in \( {\mathbb{P}}^2 \).
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="Formula for genus of a curve in terms of degree"}
 Let \( f \) be a degree \( d \) homogeneous polynomial in \( x,y,z \), then \( V(f) \subseteq {\mathbb{P}}^2 = \left\{{ [x:y:z] }\right\} \). If \( C\coloneqq V(f) \) is a smooth complex curve, then applying the genus formula yields
 \[
 2g(C) - 2 = (-3L + dL) \cdot dL
@@ -4806,7 +4811,7 @@ Let \( X \subset {\mathbb{P}}^n \) with \( \dim X > 3 \). Then \( \pi_1(X) \cong
 Applying this to \( X = {\mathbb{P}}^3 \), we have \( V(x_0^4 + \cdots + x_3^4) = S \), we have \( \pi_1({\mathbb{P}}^3) = \pi_1(S) \). We can write \( {\mathbb{P}}^3 = {\mathbb{C}}\cup{\mathbb{C}}^2 \cup{\mathbb{C}}^4 \), which is a cell decomposition with cells only in degrees 0,2,4, and so in fact \( \pi_1({\mathbb{P}}^n) = 0 \).
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="h1 of K3 surfaces"}
 K3 surfaces are simply connected, and \( h^1(S; {\mathbb{C}}) = 0 \).
 :::
 
@@ -4835,7 +4840,7 @@ Last time: the Lefschetz hyperplane theorem. Intersecting a projective variety o
 ::: {.example title="?"}
 What is the Hodge diamond for a cubic surface \( S \subseteq {\mathbb{P}}^3 \), such as \( \sum x_i^3 = 0 \)? We first need to compute the canonical bundle \( K \), for which we have a useful tool: the adjunction formula. This say \( K_S = \qty{K_{{\mathbb{P}}^3} \otimes{\mathbb{P}}_{{\mathbb{P}}^3}(S) } { \left.{{}} \right|_{{S}} } = \qty{ {\mathcal{O}}(-4) \otimes{\mathcal{O}}(3) }{ \left.{{}} \right|_{{S}} } = { \left.{{ {\mathcal{O}}(-1)}} \right|_{{S}} } \).
 
-::: {.proposition title="?"}
+::: {.proposition title="If a holomorphic line bundle has a section, its inverse doesn't"}
 Let \( \mathcal{L} \to X \) be a holomorphic line bundle. If \( h^0( \mathcal{L} ^{-1}) > 0 \), then either \( \mathcal{L} = {\mathcal{O}} \) or \( h^0(\mathcal{L}) = 0 \).
 :::
 
@@ -4847,7 +4852,7 @@ If a line bundle has a section, its inverse does not.
 Suppose that both \( \mathcal{L}, \mathcal{L}^{-1} \) have a section, so \( h^0(\mathcal{L}), h^0( \mathcal{L} ) > 0 \). Let \( s, t \) be sections of each, then \( st\in H^0( \mathcal{L} \otimes\mathcal{L}^{-1}) = H^0({\mathcal{O}}) = {\mathbb{C}} \). So taking zero loci yields \( \operatorname{Div}(s) + \operatorname{Div}(t) = 0 \) Writing these as \( \operatorname{Div}(s) \coloneqq\sum n_D D, \operatorname{Div}(t) \coloneqq\sum n_C C \), we have \( n_D, n_C \geq 0 \), which implies that \( \operatorname{Div}(s) = \operatorname{Div}(t) = 0 \). So \( s, t \) are nowhere vanishing, making \( {\mathcal{O}}\xrightarrow{\cdot s} \mathcal{L} \) is an isomorphism.
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="H0 of cubic surfaces"}
 For \( S \) a cubic surface, \( H^0(S; K_S) = 0 \).
 :::
 
@@ -5016,7 +5021,7 @@ So approaching \( (0, 0) \) along any slope \( s \) just yields the point \( (0,
 ::: {.remark}
 We can thus write
 \[
-\mathop{\mathrm{Bl}}_pS S \setminus\left\{{p}\right\} {\coprod}_{U^*} \mathop{\mathrm{Bl}}_p U
+\mathop{\mathrm{Bl}}_pS S \setminus\left\{{p}\right\} {\textstyle\coprod}_{U^*} \mathop{\mathrm{Bl}}_p U
 .\]
 
 Writing \( \pi: \mathop{\mathrm{Bl}}_pS\to S \), we have \( \pi^{-1}(p) \cong {\mathbb{CP}}^1 \) and \( \pi^{-1}(q) \) is a point for all \( q\neq p \). Then all limits approaching \( p \) in \( S \) turn into distinct limit points in \( \mathop{\mathrm{Bl}}_p(S) \)
@@ -5093,7 +5098,7 @@ We can't necessarily project from the blue point itself, but if we add in the da
 This is referred to as \( {\mathbb{F}}_1 \), the **first Hirzebruch surface**.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Blowup for smooth manifolds is connect-sum with CP2"}
 For \( S\in {\mathsf{Mfd}}_{\mathbb{R}}(C^\infty) \) a smooth manifold, we can identify
 \[
 \mathop{\mathrm{Bl}}_p S = S \mathop{ \Large\scalebox{0.8}{\raisebox{0.4ex}{\#}}}\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu
@@ -5236,7 +5241,7 @@ Writing \( C = \left\{{ x=0 }\right\} \), note that \( \widehat{C} \) doesn't in
 Given \( \Omega^2_S = K_S \to S \) the canonical line bundle, can we relate \( K_{\mathop{\mathrm{Bl}}_p S} \) to \( K_S \)?
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Canonical of a blowup"}
 \[
 K_{\mathop{\mathrm{Bl}}_p S} = \pi^* K_S \otimes{\mathcal{O}}_S(E)
 .\]
@@ -5281,7 +5286,7 @@ H^2(\widehat{S}; {\mathbb{Z}}) \cong \pi^* H^2(S, {\mathbb{Z}}) \oplus {\mathbb{
 Recall that we have the following:
 \[
 H^2(\widehat{S}; {\mathbb{Z}}) = \pi^* H^2(S; {\mathbb{Z}}) \oplus {\mathbb{Z}}[E]
-,\]
+\]
 where \( E \) is the exceptional curve, which follows from Mayer-Vietoris. We can write \( \widehat{S} = S \# \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu \), and by excision \( H^2(S\setminus{\mathbb{B}}^4) = H^2(S) \). So we get a LES
 
 ```{=tex}
@@ -5300,7 +5305,7 @@ where \( E \) is the exceptional curve, which follows from Mayer-Vietoris. We ca
 ```
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMiw0LCJIXjEoUykiXSxbNCw0LCJIXjEoUywgU1xcc20gQik9MCIsWzAsNjAsNjAsMV1dLFswLDIsIkheMihTXFxzbSBcXEJCXjQpIl0sWzIsMiwiSF4yKFMpIl0sWzQsMiwiSF4yKFMsIFNcXHNtIEIpPTAiLFswLDYwLDYwLDFdXSxbMCwwLCJIXjMoUywgU1xcc20gQikiXSxbMCwxXSxbMSwyXSxbMiwzLCJcXHNpbSJdLFszLDRdLFs0LDVdXQ==)
 
-We have \( H^i(S, S\setminus{\mathbb{B}}^4) = H^i(T, T\setminus{\mathbb{B}}^4) = H^i( {\mathbb{B}}^4, {{\partial}}) \), and by Poincaré-Lefschetz duality, this is isomorphic to \( H_{4-i}({\mathbb{B}}^4) \). This is equal to 0 if \( i\neq 0 \) or \( 4 \). Writing \( \widehat{S} = (S\setminus{\mathbb{B}}^4) {\coprod}_{S^3} (\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\setminus{\mathbb{B}}^4) \) and applying Mayer-Vietoris yields
+We have \( H^i(S, S\setminus{\mathbb{B}}^4) = H^i(T, T\setminus{\mathbb{B}}^4) = H^i( {\mathbb{B}}^4, {{\partial}}) \), and by Poincaré-Lefschetz duality, this is isomorphic to \( H_{4-i}({\mathbb{B}}^4) \). This is equal to 0 if \( i\neq 0 \) or \( 4 \). Writing \( \widehat{S} = (S\setminus{\mathbb{B}}^4) {\textstyle\coprod}_{S^3} (\mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\setminus{\mathbb{B}}^4) \) and applying Mayer-Vietoris yields
 
 ```{=tex}
 \begin{tikzcd}
@@ -5362,7 +5367,7 @@ It also follows that if \( p\not\in \Sigma \), \( \pi^*[\Sigma] = [\pi^{-1}\Sigm
 Since \( [E] \sim [\text{line}] \in \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu\setminus{\mathbb{B}}^4 \), and \( E^2 = [E] \cdot [E] = -1 \) since the orientations disagree in \( \mkern 1.5mu\overline{\mkern-1.5mu{\mathbb{CP}}^2\mkern-1.5mu}\mkern 1.5mu \).
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Computing the pullback of a curve"}
 Let \( C \subset S \) be a curve on a surface and suppose \( C \) is locally cut out by
 \[
 f(x, y) = a_{m, 0} x^m + a_{n-1, 1} x^{m-1} y + \cdots + a_{0, m} y^m + O(x^{m+1}, y^{m+1})
@@ -5395,7 +5400,7 @@ C = V(x^2 + y^2 + O(\deg(3))
 .
 :::
 
-::: {.corollary title="?"}
+::: {.corollary title="Computing the square of the strict transform"}
 \( \widehat{C}^2 = C^2 - m^2 \).
 :::
 
@@ -5741,7 +5746,7 @@ e_3 \cdot (e_1 e_2) = -e_1 e_3 e_2 = e_1 e_2 e_3 \in { \operatorname{Cl}} _1({\m
 .\]
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Decomposing the Clifford algebra of V"}
 \[
 { \operatorname{Cl}} (V) \cong { \operatorname{Cl}} _0(V \oplus {\mathbb{R}})
 .\]
@@ -5886,7 +5891,7 @@ which is a torsor because we needed to start with a given lift \( \tilde{\tilde 
 This is a nice example to get a hang of the use and importance of Čech cohomology. We then use the isomorphism \( {\check{H}}\to H_{{\operatorname{Sing}}} \).
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Existence of spin representation of Clifford algebras in even dimension"}
 Assume \( n \coloneqq\dim V \) is even, then \( { \operatorname{Cl}} (V) \) has a unique nontrivial irreducible finite dimensional complex representation \( S \) of dimension \( \dim S = 2^{n/2} \), the **spin representation**.
 :::
 
@@ -5926,7 +5931,7 @@ This seems to be isomorphic to a spin structure, but we do not have a distinguis
 We showed that there exists a spin structure iff some cohomology class \( w_2(K) \in H^2(X; {\mathbb{Z}}/2) \) vanishes.
 :::
 
-::: {.theorem title="?"}
+::: {.theorem title="Classification of complex representations of Clifford algebras"}
 If \( \dim_k V \) is even, there is a unique finite-dimensional complex irreducible \( { \operatorname{Cl}} (V) \) representation of dimension \( 2^{n/2} \). If \( \dim_k V \) is odd, there are two complex conjugate representations of dimension \( 2^{{\left\lfloor n/2 \right\rfloor}} \).
 :::
 
@@ -6089,7 +6094,7 @@ If \( \dim_{\mathbb{R}}M = 4 \), then \( {\mathbb{S}}_M^\pm \in {\mathsf{Vect}}_
 Principal bundle: fibers are left \( G{\hbox{-}} \)torsors. In the fiber product, the group sits in the middle and acts on each factor. So \( \tilde P \) eats the right \( G{\hbox{-}} \)action, and \( {\mathbb{S}} \) eats the left action. Remarkably, for Spin bundles, there is an action leftover.
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="The spin bundle is a Clifford module"}
 The spin bundle \( {\mathbb{S}}_M \) naturally has the structure of a \( { \operatorname{Cl}} (M){\hbox{-}} \)module.
 :::
 
@@ -6140,7 +6145,7 @@ The set of Clifford connections is a torsor over \( \Omega^1(M) \). The associat
 which exactly says that this is a \( { \operatorname{Cl}} (M){\hbox{-}} \)linear map \( {\mathbb{S}}_M \to {\mathbb{S}}_M \otimes\Omega^1 \). We can write \( { \operatorname{Cl}} (M) \cong \mathop{\mathrm{End}}({\mathbb{S}}_M) \), and one can check that \( [\mathop{\mathrm{End}}{\mathbb{S}}_M, \mathop{\mathrm{End}}{\mathbb{S}}_M] \) consists only of scalars.
 :::
 
-::: {.definition title="?"}
+::: {.definition title="Dirac Operator"}
 Let \( \nabla \) be a Clifford connection on \( {\mathbb{S}}_M \) and \( s\in H^0({\mathbb{S}}_M) \), so \( \nabla(s) \in {\mathbb{S}}_M \otimes\Omega^1(M) \). Then the **Dirac operator** is defined as
 \[
 \mkern-3mu \not{ \partial} : H^0({\mathbb{S}}) &\to H^0({\mathbb{S}}) \\
@@ -6159,7 +6164,7 @@ This makes sense locally, and is well-defined independent of choice of frame. He
 .\]
 :::
 
-::: {.proposition title="?"}
+::: {.proposition title="Relation between Dirac operator and Laplacian"}
 \[
 \mkern-3mu \not{ \partial} ^2 = - \Delta
 .\]
@@ -6290,7 +6295,7 @@ We have \( \alpha\cdot({-}): {\mathbb{S}}\to {\mathbb{S}} \) and
 ,\]
 which makes the operator invertible away from zero. Thus we can apply Atiyah-Singer.
 
-::: {.lemma title="?"}
+::: {.lemma title="Formula for Chern characters"}
 There is a nice formula for Chern characters:
 \[
 \operatorname{ch}{\mathbb{S}}^+ - \operatorname{ch}{\mathbb{S}}^- = \prod_{i=1}^n( e ^{x_i/2} - e^{-x_i/2})
@@ -6353,7 +6358,7 @@ so we have a splitting into subspaces of unit quaternions. It turns out that \( 
 \[
 -\sigma(X) / 8 = \mathop{\mathrm{ind}}\mkern-3mu \not{ \partial} ^+ = 2\lambda
 \]
-for some \( \lambda \), yielding \( 8\bigm|\sigma(X) \).
+for some \( \lambda \), yielding \( 8\divides \sigma(X) \).
 
 ## Remarks
 
