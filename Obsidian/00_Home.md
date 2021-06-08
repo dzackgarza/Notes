@@ -38,6 +38,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Collect notes into PDF and scaffold
 - [ ] Find GOSS speaker for open slot
 
+- [ ] [Stable Homotopy Seminar](zettelkasten/Stable%20Homotopy%20Seminar.md) Talk: AdSS
 - [ ] [CRAG Talk July 9th 2021](CRAG%20Talk%20July%209th%202021)
 
 ## Links

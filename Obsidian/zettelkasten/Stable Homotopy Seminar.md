@@ -23,10 +23,8 @@ Reference: \[BR, 2.2\].
 
 # Talk 2: The Adams Spectral Sequence (6/21)
 
-> 6/21 The Adams spectral sequence
+[Stable Homotopy Seminar Talk 2 AdSS](Stable%20Homotopy%20Seminar%20Talk%202%20AdSS)
 
-<http://www.rrb.wayne.edu/papers/adams.pdf>
-![](attachments/Pasted%20image%2020210603165727.png)
 
 # Talk 3: E-infinity ring spectra (7/26)
 

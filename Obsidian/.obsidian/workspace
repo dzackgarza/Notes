@@ -7,8 +7,11 @@
         "id": "9c96e9e33bc26fdb",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten/Stable Homotopy Seminar.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -75,6 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -108,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "zettelkasten/Stable Homotopy Seminar.md"
+              }
             }
           },
           {
@@ -141,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,6 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -234,6 +242,8 @@
   },
   "active": "9c96e9e33bc26fdb",
   "lastOpenFiles": [
+    "zettelkasten/Stable Homotopy Seminar.md",
+    "00_Home.md",
     "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
     "zettelkasten/tensor category.md",
     "zettelkasten/Brauer group.md",
@@ -241,8 +251,6 @@
     "zettelkasten/Untitled 11.md",
     "zettelkasten/Learning.md",
     "zettelkasten/K-Theory.md",
-    "zettelkasten/classifying space.md",
-    "zettelkasten/class.md",
-    "zettelkasten/CRAG Talk July 9th 2021.md"
+    "zettelkasten/classifying space.md"
   ]
 }
