@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "9c96e9e33bc26fdb",
+        "id": "5026ace1bcc6684a",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -240,7 +240,7 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "9c96e9e33bc26fdb",
+  "active": "5026ace1bcc6684a",
   "lastOpenFiles": [
     "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
     "zettelkasten/Stable Homotopy Seminar.md",
