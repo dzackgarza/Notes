@@ -1,6 +1,8 @@
 
 # The Adams Spectral Sequence
 
+- <https://static1.squarespace.com/static/5aff705c5ffd207cc87a512d/t/5b0377abf950b75de22932e7/1526953900694/Homotopy+Theory.pdf>
+
 
 > 6/21 The Adams spectral sequence
 
