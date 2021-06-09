@@ -9,7 +9,12 @@
 - <https://ncatlab.org/nlab/show/Adams+spectral+sequence>
 - <http://www.rrb.wayne.edu/papers/adams.pdf>
 - ![](attachments/Pasted%20image%2020210603165727.png)
+
+
 ## Notes
+
+> Note from Paul:
+  People describe it as Ext in $\comod{\steenrod\dual}$ rather than $\mod{\steenrod}$
 
 
 - Basic motivation: buff up the Serre spectral sequence, but only work stably.
