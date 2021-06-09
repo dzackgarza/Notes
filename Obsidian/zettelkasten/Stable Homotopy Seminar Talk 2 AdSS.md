@@ -14,7 +14,9 @@
 ## Notes
 
 > Note from Paul:
-  People describe it as Ext in $\comod{\steenrod\dual}$ rather than $\mod{\steenrod}$
+  People describe it as Ext in $\comod{\steenrod\dual}$ rather than (equivalently) in $\mod{\steenrod}$.
+  The difference: $\steenrod$ is a free graded commutative algebra, which is easier to use than graded cocommutativity of $\steenrod\dual$
+
 
 
 - Basic motivation: buff up the Serre spectral sequence, but only work stably.
