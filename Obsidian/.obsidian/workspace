@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
-            "mode": "source"
+            "file": "00_Home.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md"
+                "file": "00_Home.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
+                "file": "00_Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
+                "file": "00_Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,9 +242,9 @@
   },
   "active": "5026ace1bcc6684a",
   "lastOpenFiles": [
+    "00_Home.md",
     "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
     "zettelkasten/Stable Homotopy Seminar.md",
-    "00_Home.md",
     "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
     "zettelkasten/tensor category.md",
     "zettelkasten/Brauer group.md",
