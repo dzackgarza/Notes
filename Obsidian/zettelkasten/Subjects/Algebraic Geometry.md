@@ -41,3 +41,4 @@ Tags: #algebraicgeometry
 - [divisor](../divisor.md)
 - [Noether normalization](Noether%20normalization)
 - [Resolution of singularities](../Resolution%20of%20singularities.md)
+- [nef](nef)
