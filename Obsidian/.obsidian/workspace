@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "00_Home.md",
-            "mode": "preview"
+            "file": "Quick_Notes/2021-05-12.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Brauer",
+                "query": "kian",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "Quick_Notes/2021-05-12.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home.md"
+                "file": "Quick_Notes/2021-05-12.md"
               }
             }
           },
@@ -147,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Home.md",
+                "file": "Quick_Notes/2021-05-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +176,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_Home.md",
+                "file": "Quick_Notes/2021-05-12.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +243,8 @@
   },
   "active": "5026ace1bcc6684a",
   "lastOpenFiles": [
+    "Quick_Notes/2021-05-12.md",
+    "zettelkasten/tannaka duality.md",
     "00_Home.md",
     "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
     "zettelkasten/Stable Homotopy Seminar.md",
@@ -249,8 +252,6 @@
     "zettelkasten/tensor category.md",
     "zettelkasten/Brauer group.md",
     "Quick_Notes/2021-03-17.md",
-    "zettelkasten/Untitled 11.md",
-    "zettelkasten/Learning.md",
-    "zettelkasten/K-Theory.md"
+    "zettelkasten/Untitled 11.md"
   ]
 }
