@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Subjects/Algebraic Geometry.md",
+            "file": "DRP/Initial Notes.md",
             "mode": "source"
           }
         }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Subjects/Algebraic Geometry.md",
+                "file": "DRP/Initial Notes.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Subjects/Algebraic Geometry.md"
+                "file": "DRP/Initial Notes.md"
               }
             }
           },
@@ -131,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.0121879577637,
-    "collapsed": true
+    "width": 339
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -148,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Subjects/Algebraic Geometry.md",
+                "file": "DRP/Initial Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Subjects/Algebraic Geometry.md",
+                "file": "DRP/Initial Notes.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -243,15 +241,15 @@
   },
   "active": "5026ace1bcc6684a",
   "lastOpenFiles": [
-    "zettelkasten/Subjects/Algebraic Geometry.md",
+    "DRP/Untitled.md",
+    "000_Home.md",
+    "00_Projects Index.md",
+    "00 subject index.md",
     "00_Home.md",
-    "Quick_Notes/2021-05-12.md",
-    "zettelkasten/tannaka duality.md",
-    "zettelkasten/Stable Homotopy Seminar Talk 2 AdSS.md",
-    "zettelkasten/Stable Homotopy Seminar.md",
-    "zettelkasten/Workshops/Algebra/Algebra Week 4 Rings.md",
-    "zettelkasten/tensor category.md",
-    "zettelkasten/Brauer group.md",
-    "Quick_Notes/2021-03-17.md"
+    "00_Graduate Research Index.md",
+    "00_Game Theory Projects Notes.md",
+    "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
+    "zettelkasten/A hat genus.md",
+    "zettelkasten/24.md"
   ]
 }

@@ -18,7 +18,7 @@ Thus $W(\Lambda)$ is obtained from attaching a $k\dash$handle to $W$ along $\Lam
 # Why Care About Weinstein Surgery
 
 **Theorem:** 
-Every compact [contact](Subjects/Contact.md) [3-manifold](3-manifold.md) arises as a combination of (2 different variants of) Weinstein surgeries on $S^3$.
+Every compact [contact](Subjects/Contact.md) [zets/3-manifold](zets/3-manifold.md) arises as a combination of (2 different variants of) Weinstein surgeries on $S^3$.
 
 Compare to theorem: 
 Every compact 3-manifold arises as [surgery](surgery.md) on a [link](link).

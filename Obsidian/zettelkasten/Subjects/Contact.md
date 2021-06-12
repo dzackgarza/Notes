@@ -2,7 +2,7 @@
 aliases: ["contact", "contact topology", "contact geometry", "contact structure", "contact 3-manifold", "contact manifold"]
 ---
 
-[2021-04-28_Contact_Topology_Notes](../2021-04-28_Contact_Topology_Notes.md)
+[2021-04-28_Contact_Topology_Notes](../To%20Review/2021-04-28_Contact_Topology_Notes.md)
 
 Historically, the study of periodic orbits motivated the definition of [contact structure](Subjects/Contact.md).
 

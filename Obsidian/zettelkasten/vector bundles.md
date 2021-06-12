@@ -79,7 +79,7 @@ As in the earlier example involving the [Möbius strip](Möbius%20strip), since 
 
 # Classification
 
--  There is an equivalence of categories between [2021-04-25_vector_bundles_ug](2021-04-25_vector_bundles_ug.md) and modules over continuous functionals:
+-  There is an equivalence of categories between [To Review/2021-04-25_vector_bundles_ug](To%20Review/2021-04-25_vector_bundles_ug.md) and modules over continuous functionals:
 $$
 \Bun(\RR, X)_{\rk = n} \mapsvia{\sim} \modsleft{\Top(X, \RR)}^{\fg, \proj}_{\rk = n}
 .$$ 
@@ -97,4 +97,4 @@ $\xi_{n}: E_n \rightarrow \B \U_n(\CC)$
 	
 	
 Todo: clean up and make precise! #todo 
-Maybe add from [2021-04-25_vector_bundles_ug](2021-04-25_vector_bundles_ug.md)
+Maybe add from [To Review/2021-04-25_vector_bundles_ug](To%20Review/2021-04-25_vector_bundles_ug.md)

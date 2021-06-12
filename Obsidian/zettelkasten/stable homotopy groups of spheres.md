@@ -55,7 +55,7 @@ For which $n$ does there exist a unique smooth structure on $S^n$?
 
 **Answer**:
 
--  For $n= 3$, yes, by Moise  every closed [3-manifold](3-manifold.md) has a unique [smooth structure](smooth%20structure.md).  In particular, the 3-sphere has a unique smooth structure.  
+-  For $n= 3$, yes, by Moise  every closed [zets/3-manifold](zets/3-manifold.md) has a unique [smooth structure](smooth%20structure.md).  In particular, the 3-sphere has a unique smooth structure.  
 
 - **For n= 4, this question is wildly open.** 
 
@@ -78,12 +78,12 @@ The homotopy group $\pi_{n+k}(S^k)$ is a finite group except
 # Results
 
 - The [K3 Surface](K3%20Surfaces.md) plays an important role in the third stable homotopy group of spheres. 
-	- It can be viewed as the source of the [24](24) in the group $\pi_3 \SS = \ZZ/{24}$. 
+	- It can be viewed as the source of the [zets/24](zets/24.md) in the group $\pi_3 \SS = \ZZ/{24}$. 
 
 ## Computations
 
 - Table of $\pi_{n+k}S^n$: [here](http://www.math.nus.edu.sg/~matwujie/homotopy_groups_sphere.html)
-- It is #well-known that the third stable homotopy group of spheres is cyclic of order [24](24). 
+- It is #well-known that the third stable homotopy group of spheres is cyclic of order [zets/24](zets/24.md). 
 - It is also #well-known that the quaternionic [Hopf map](Hopf%20map) $\nu: S^7→S^4$, an $S^3\dash$[bundle](bundle.md), suspends to a generator of $\pi_8(S^5)=\pi^{st}_3$. 
 - It is #well-known that the complex [Hopf map](Hopf%20map) $\eta: S^3 \to S^2$ suspends to a generator of $\pi_4(S^3) = \pi_1 \SS = \ZZ_2$. 
 	- For this, there is a reasonably elementary argument, see e.g. 

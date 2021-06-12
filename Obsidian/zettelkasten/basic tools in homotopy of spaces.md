@@ -76,7 +76,7 @@ Links:
   - Show $\pi_k S^2 = \pi_k S^3$
   - Show $\pi_3 S^2 = Z$
   - [Killing homotopy groups](Killing%20homotopy%20groups)
-  - [2021-04-26_Spectral_sequence_of_a_filtration](2021-04-26_Spectral_sequence_of_a_filtration.md)
+  - [To Review/2021-04-26_Spectral_sequence_of_a_filtration](To%20Review/2021-04-26_Spectral_sequence_of_a_filtration.md)
 - [Serre spectral sequence](Serre%20spectral%20sequence)
   - Compute algebra structure of $CP^\infty$
 - Compute $\pi_4 S^2$
