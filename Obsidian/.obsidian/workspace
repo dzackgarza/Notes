@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "000_Home.md",
+            "file": "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "000_Home.md",
+                "file": "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000_Home.md"
+                "file": "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000_Home.md",
+                "file": "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "000_Home.md",
+                "file": "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "5026ace1bcc6684a",
   "lastOpenFiles": [
+    "Talks/Summer 2021 Symplectic Reading Seminar/Untitled.md",
     "000_Home.md",
     "DRP/Untitled.md",
     "00_Projects Index.md",
@@ -249,7 +250,6 @@
     "00_Graduate Research Index.md",
     "00_Game Theory Projects Notes.md",
     "zettelkasten/2020-09-13 Real Analysis Undergrad Tips.md",
-    "zettelkasten/A hat genus.md",
-    "zettelkasten/24.md"
+    "zettelkasten/A hat genus.md"
   ]
 }
