@@ -31,7 +31,7 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 
 - [ ] [Stable Homotopy Seminar](zettelkasten/Stable%20Homotopy%20Seminar.md) Talk: AdSS
 - [ ] [CRAG Talk July 9th 2021](CRAG%20Talk%20July%209th%202021)
-- [ ] Symplectic Seminar Talk
+- [ ] Symplectic Seminar Talk [Notes 1](Talks/Summer%202021%20Symplectic%20Reading%20Seminar/Notes%201.md)
 	- 
 - [ ] Direct Reading Program
 	- [Initial Notes](DRP/Initial%20Notes.md)
