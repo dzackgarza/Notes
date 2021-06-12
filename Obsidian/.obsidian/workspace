@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DRP/Initial Notes.md",
+            "file": "000_Home.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DRP/Initial Notes.md",
+                "file": "000_Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DRP/Initial Notes.md"
+                "file": "000_Home.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DRP/Initial Notes.md",
+                "file": "000_Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DRP/Initial Notes.md",
+                "file": "000_Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,8 +241,8 @@
   },
   "active": "5026ace1bcc6684a",
   "lastOpenFiles": [
-    "DRP/Untitled.md",
     "000_Home.md",
+    "DRP/Untitled.md",
     "00_Projects Index.md",
     "00 subject index.md",
     "00_Home.md",
