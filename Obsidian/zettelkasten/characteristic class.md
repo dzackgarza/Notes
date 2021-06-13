@@ -16,3 +16,4 @@ See Milnor-Stasheff.
 
 Characteristic classes are elements of $H^*(\B G)$, the cohomology of [classifying spaces](classifying%20space.md) .
 This can be used to define characteristic classes for [bundles](bundle.md).
+![](attachments/Pasted%20image%2020210613124812.png)

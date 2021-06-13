@@ -78,6 +78,7 @@ $$
 - For $X\in \Top\Grp$, there is a weak equivalence $\Loop \B X \weakeq X$
 	- How to prove: show they both represent the functor $\Prin_G(S^1 \smashprod (\wait)\addbase)$
 
+![](attachments/Pasted%20image%2020210613124743.png)
 
 ## Constructions
 
