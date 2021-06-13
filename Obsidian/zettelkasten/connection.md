@@ -43,3 +43,6 @@ The **Levi-Cevita connection**: the unique affine torsion-free connection for wh
 
 - Covariant derivatives with respect to two variables do not need to commute.
 	The failure of the commutativity of partial covariant derivatives is closely related to the notion of curvat
+	
+![](attachments/Pasted%20image%2020210613124535.png)
+![](attachments/Pasted%20image%2020210613124542.png)
