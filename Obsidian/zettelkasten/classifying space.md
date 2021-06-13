@@ -73,7 +73,8 @@ $$
 - It is useful to think of $\B G$ as a space whose points are copies of $G$, so the classifying map $f\in \hoTop(X,\B G)$ assigns each $x \in X$ to the fiber above $x$, which is a copy of $G$.
 - For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
 	- Follows from contractibility of $EG$ ?
-- $\Loop \B X \homotopic X$?
+- For $X\in \Top\Grp$, there is a weak equivalence $\Loop \B X \weakeq X$
+	- How to prove: show they both represent the functor $\Prin_G(S^1 \smashprod (\wait)\addbase)$
 
 
 ## Constructions

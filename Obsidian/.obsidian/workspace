@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "9bac6ae974b2150d",
+        "id": "feb8998356d5e685",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/spin.md",
+            "file": "zettelkasten/Reduction of structure group.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/spin.md",
+                "file": "zettelkasten/Reduction of structure group.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/spin.md"
+                "file": "zettelkasten/Reduction of structure group.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/spin.md",
+                "file": "zettelkasten/Reduction of structure group.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/spin.md",
+                "file": "zettelkasten/Reduction of structure group.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,8 +240,10 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "9bac6ae974b2150d",
+  "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "zettelkasten/Reduction of structure group.md",
+    "zettelkasten/classifying space.md",
     "zettelkasten/spin.md",
     "Current Projects/Phil Stuff/Untitled.md",
     "Current Projects/DRP/Initial Notes.md",
@@ -249,8 +251,6 @@
     "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
     "Talks/Summer 2021 Symplectic Reading Seminar/Untitled.md",
     "DRP/Untitled.md",
-    "00_Projects Index.md",
-    "00 subject index.md",
-    "00_Home.md"
+    "00_Projects Index.md"
   ]
 }
