@@ -33,3 +33,7 @@ Simple branching: $\mult_x(f) \leq 2$ for all $x$.
 	What are their preimages in $\CC$?
 	
 - For $E = \CC / \Lambda$, show that for any $x\in E$ there is an $f\in \Aut_{\Hol}(E)$ with $f(x) = y$, so $\Aut_{\Hol}(E)$ is infinite.
+- Cases of automorphisms of a lattice:
+	- If $\Lambda \cong \ZZ + i\ZZ$ then $\Aut(\Lambda) = \ZZ/4 = \gens{z\mapsto iz}$.
+	- If $\Lambda \cong \ZZ + \zeta_3 \ZZ$ then $\Aut(\Lambda) = \ZZ/6  = \gens{z\mapsto -\zeta_3 z}$
+	- Otherwise $\Aut(\Lambda) = \ZZ/2 = \gens{z\mapsto -z}$. In this case $\Lambda \cong \ZZ + \zeta_m \ZZ$ for $\zeta_m$ some $m$th root of unity.
