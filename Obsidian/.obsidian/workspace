@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/principal bundle.md",
+            "file": "Current Projects/Phil Stuff/Untitled.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/principal bundle.md",
+                "file": "Current Projects/Phil Stuff/Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/principal bundle.md"
+                "file": "Current Projects/Phil Stuff/Untitled.md"
               }
             }
           },
@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 339,
-    "collapsed": true
+    "width": 627
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/principal bundle.md",
+                "file": "Current Projects/Phil Stuff/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/principal bundle.md",
+                "file": "Current Projects/Phil Stuff/Untitled.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +241,15 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
-    "zettelkasten/principal bundle.md",
+    "Current Projects/Phil Stuff/Untitled.md",
+    "zettelkasten/connection.md",
     "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
+    "zettelkasten/principal bundle.md",
+    "zettelkasten/order.md",
     "zettelkasten/spin.md",
     "zettelkasten/elliptic operator.md",
     "zettelkasten/elliptic complex.md",
     "zettelkasten/Sard-Smale.md",
-    "zettelkasten/Fredholm operator.md",
-    "zettelkasten/symbol.md",
-    "zettelkasten/Laplace-Beltrami operator.md",
-    "zettelkasten/symboll.md"
+    "zettelkasten/Fredholm operator.md"
   ]
 }
