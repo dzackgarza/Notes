@@ -11,14 +11,7 @@ Tags: #homotopy
 - [principal bundle](principal%20bundle.md)
 - [classifying space of a category](classifying%20space%20of%20a%20category)
 
-# Notes
 
-- $\B G = K(G, 1)$ when $G$ is discrete.
-
-![](attachments/Pasted%20image%2020210505015056.png)
-![](attachments/Pasted%20image%2020210505015233.png)
-
-- $X/G$ may fail to be a nice space if points have nontrivial stabilizers.
 
 # Definitions
 
@@ -72,6 +65,13 @@ $$
 
 # Notes
 
+- $\B G = K(G, 1)$ when $G$ is discrete.
+- $\pi_1(\B G) = G$ and $\pi_n(\B G) = \pi_n EG = 1$.
+![](attachments/Pasted%20image%2020210505015056.png)
+![](attachments/Pasted%20image%2020210505015233.png)
+
+- $X/G$ may fail to be a nice space if points have nontrivial stabilizers.
+
 - It is useful to think of $\B G$ as a space whose points are copies of $G$, so the classifying map $f\in \hoTop(X,\B G)$ assigns each $x \in X$ to the fiber above $x$, which is a copy of $G$.
 - For a discrete group $G$, we have $\B G = K(G,1)$, so that $\pi_1(\B G) = G$ and $\pi_k(\B G) = 0$ for $k \neq 1$.
 	- Follows from contractibility of $EG$ ?
@@ -123,3 +123,9 @@ EG \cong \bigcup_n \ZZ_2 \ast \cdots = \bigcup_n S^{n-1} = S^\infty
 - Conjecture: $\B(G \ast H) = BG \vee BH$
 - Conjecture: $\B(G \tensor_\ZZ H) = ?$ for $G, H\in \Ab$?
 - Conjecture: $\B(G \semidirect_\phi H) = ?$
+
+# Examples
+
+- $\B \GL_n(\RR)$ classifies $k\dash$dimensional vector bundles.
+- $\B \Aut_\Top(M)$ classifies fiber bundles with fiber $M$
+- $\B S_n$ classifies $n\dash$sheeted covering spaces
