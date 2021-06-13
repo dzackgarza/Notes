@@ -89,7 +89,6 @@ $$
 
 
 
-
 # Further Reading
 
 - Any [Eilenberg-MacLane space](Eilenberg-MacLane%20space.md) can be realized as a [classifying space](classifying%20space.md).
