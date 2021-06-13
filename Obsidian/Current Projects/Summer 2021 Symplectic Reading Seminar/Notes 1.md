@@ -57,6 +57,7 @@ Goal: define Gromov-Witten invariants for genus 0 curves and some restricted cla
 ![](../../zettelkasten/attachments/Pasted%20image%2020210613123207.png)
 ![Definition of curvature forms](../../zettelkasten/attachments/Pasted%20image%2020210613123239.png)
 ![](../../zettelkasten/attachments/Pasted%20image%2020210613123343.png)
+![](../../zettelkasten/attachments/Pasted%20image%2020210613123746.png)
 
 ## Applications
 Of SW:
