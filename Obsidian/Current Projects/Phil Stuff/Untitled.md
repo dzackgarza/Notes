@@ -17,3 +17,11 @@ Locally looks like $z\mapsto z^n$, where $n$ is the branching index.
 ![](../../zettelkasten/attachments/Pasted%20image%2020210612221730.png)
 
 Away from the branch locus, a map of Riemann surfaces is a covering map.
+
+![](../../zettelkasten/attachments/Pasted%20image%2020210612222033.png)
+
+![](../../zettelkasten/attachments/Pasted%20image%2020210612222046.png)
+
+Simple branching: $\mult_x(f) \leq 2$ for all $x$.
+
+- Exercise: show that $f: \PP^1(\CC)\to \PP^1(\CC)$ of
