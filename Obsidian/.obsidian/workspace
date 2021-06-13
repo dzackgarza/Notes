@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/Phil Stuff/Untitled.md",
+            "file": "zettelkasten/spin.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Untitled.md",
+                "file": "zettelkasten/spin.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/Phil Stuff/Untitled.md"
+                "file": "zettelkasten/spin.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/Phil Stuff/Untitled.md",
+                "file": "zettelkasten/spin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Untitled.md",
+                "file": "zettelkasten/spin.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "9bac6ae974b2150d",
   "lastOpenFiles": [
+    "zettelkasten/spin.md",
     "Current Projects/Phil Stuff/Untitled.md",
     "Current Projects/DRP/Initial Notes.md",
     "000_Home.md",
@@ -250,7 +251,6 @@
     "DRP/Untitled.md",
     "00_Projects Index.md",
     "00 subject index.md",
-    "00_Home.md",
-    "00_Graduate Research Index.md"
+    "00_Home.md"
   ]
 }
