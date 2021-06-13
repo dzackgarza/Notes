@@ -4,6 +4,8 @@ aliases: ["principal"]
 
 # Definitions
 
+![](attachments/Pasted%20image%2020210613123515.png)
+
 **Definition:** 
 A **principal $G\dash$ bundle** is a [fiber bundle](fiber%20bundle.md) $F \to E \to B$ for which $G$ acts [[freely]] and [[transitively]] on each fiber $F_b:= \pi^{-1}(b)$. 
 
