@@ -41,6 +41,8 @@ Recommended approach: 3,4,9,10,11.
 
 # Overview
 
+- Idea: count solutions to a non-linear elliptic PDE
+
 Goal: define Gromov-Witten invariants for genus 0 curves and some restricted classes of symplectic manifolds, particularly 4-manifolds
 - Bubbling
 	- See Ch.4, Ch.5

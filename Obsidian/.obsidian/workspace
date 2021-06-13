@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Reduction of structure group.md",
+            "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Reduction of structure group.md",
+                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Reduction of structure group.md"
+                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Reduction of structure group.md",
+                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Reduction of structure group.md",
+                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,8 +242,8 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
-    "zettelkasten/Reduction of structure group.md",
     "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
+    "zettelkasten/Reduction of structure group.md",
     "zettelkasten/classifying space.md",
     "zettelkasten/Euler class.md",
     "zettelkasten/clutching function.md",
