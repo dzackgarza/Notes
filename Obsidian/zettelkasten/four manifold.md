@@ -11,7 +11,7 @@ aliases: ["four manifolds", "4-manifold", "4-manifolds"]
 -   What is $A^{p, q}$?
 -   How is Dolbeaut cohomology defined?
 -   What is [Noether's formula](Noether's%20formula)?
--   What is the [[symboll]] of an operator?
+-   What is the [[symbol]] of an operator?
 -   What is an [[elliptic complex]]?
 -   What is the [Aatiyah-Singer Index Theorem](Aatiyah-Singer%20Index%20Theorem)?
 -   What is the [Chern class](Chern%20class)?
