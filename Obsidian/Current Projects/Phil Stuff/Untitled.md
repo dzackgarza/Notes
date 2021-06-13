@@ -31,3 +31,5 @@ Simple branching: $\mult_x(f) \leq 2$ for all $x$.
 	- Two ramification points of multiplicity 4
 	- Two ramification points of multiplicity 2
 	What are their preimages in $\CC$?
+	
+- For $E = \CC / \Lambda$, show that for any $x\in E$ there is an $f\in \Aut_{\Hol}(E)$ with $f(x) = y$, so $\Aut_{\Hol}(E)$ is infinite.
