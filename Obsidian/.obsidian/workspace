@@ -7,10 +7,9 @@
         "id": "feb8998356d5e685",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "Current Projects/Phil Stuff/Week of June 9th.md",
-            "mode": "source"
+            "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf"
           }
         }
       }
@@ -78,7 +77,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Week of June 9th.md",
+                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/Phil Stuff/Week of June 9th.md"
+                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf"
               }
             }
           },
@@ -130,7 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 190
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -146,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/Phil Stuff/Week of June 9th.md",
+                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Week of June 9th.md",
+                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +240,7 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
     "Current Projects/Phil Stuff/Untitled.md",
     "zettelkasten/connection.md",
     "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
@@ -249,7 +249,6 @@
     "zettelkasten/spin.md",
     "zettelkasten/elliptic operator.md",
     "zettelkasten/elliptic complex.md",
-    "zettelkasten/Sard-Smale.md",
-    "zettelkasten/Fredholm operator.md"
+    "zettelkasten/Sard-Smale.md"
   ]
 }
