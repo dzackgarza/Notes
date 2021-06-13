@@ -41,13 +41,16 @@ Recommended approach: 3,4,9,10,11.
 
 # Overview
 
-Goal: define Gromov-Witten invariants for genus 0 curves and some restricted classes of symplectic manifolds
+Goal: define Gromov-Witten invariants for genus 0 curves and some restricted classes of symplectic manifolds, particularly 4-manifolds
 - Bubbling
 	- See Ch.4, Ch.5
 	- How is energy measured, and how do we deal with bubbling
 - Needs a $\spinc$ structure?
-- 
+- Donaldson invariant: difficult to work with due to compactness issues.
+	Easier in SW since the moduli space (up to gauge transformation) is compact
+	
 
 ## Applications
 Of SW:
 
+- Kronheimer/Mrowka: proved the Thom conjecture:the minimal genus 
