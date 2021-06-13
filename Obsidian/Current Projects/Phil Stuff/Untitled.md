@@ -24,4 +24,4 @@ Away from the branch locus, a map of Riemann surfaces is a covering map.
 
 Simple branching: $\mult_x(f) \leq 2$ for all $x$.
 
-- Exercise: show that $f: \PP^1(\CC)\to \PP^1(\CC)$ of
+- Exercise: show that if $f: \PP^1(\CC)\to \PP^1(\CC)$ of degree $d$ has simple branching, then $f$ has $2d-2$ ramification points. Hint: apply Riemann-Hurwitz
