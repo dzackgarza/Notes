@@ -53,4 +53,6 @@ Goal: define Gromov-Witten invariants for genus 0 curves and some restricted cla
 ## Applications
 Of SW:
 
-- Kronheimer/Mrowka: proved the Thom conjecture:the minimal genus 
+- Kronheimer/Mrowka: proved the Thom conjecture:for $\CP^2$, a holomorphic curve is genus-minimizing among curves that represent homology classes
+- - Morgan, Szabo, and Taubes to prove that a smooth symplectic curve of nonnegative self-intersection in a symplectic four-manifold is genus minimizing
+- Computable for Kalher manifolds, allowing enumeration of algebraic curves.
