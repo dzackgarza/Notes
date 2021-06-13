@@ -15,3 +15,5 @@ Locally looks like $z\mapsto z^n$, where $n$ is the branching index.
 ![](../../zettelkasten/attachments/Pasted%20image%2020210612221715.png)
 
 ![](../../zettelkasten/attachments/Pasted%20image%2020210612221730.png)
+
+Away from the branch locus, a map of Riemann surfaces is a covering map.
