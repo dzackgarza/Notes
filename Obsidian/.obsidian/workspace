@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
+            "file": "zettelkasten/principal bundle.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
+                "file": "zettelkasten/principal bundle.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md"
+                "file": "zettelkasten/principal bundle.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
+                "file": "zettelkasten/principal bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
+                "file": "zettelkasten/principal bundle.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "zettelkasten/principal bundle.md",
     "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
     "zettelkasten/spin.md",
     "zettelkasten/elliptic operator.md",
@@ -250,7 +251,6 @@
     "zettelkasten/Fredholm operator.md",
     "zettelkasten/symbol.md",
     "zettelkasten/Laplace-Beltrami operator.md",
-    "zettelkasten/symboll.md",
-    "zettelkasten/monodromy representation.md"
+    "zettelkasten/symboll.md"
   ]
 }

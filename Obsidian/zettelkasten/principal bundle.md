@@ -2,6 +2,10 @@
 aliases: ["principal"]
 ---
 
+# References
+
+- <http://math.mit.edu/~mbehrens/18.906spring10/prin.pdf>
+
 # Definitions
 
 ![](attachments/Pasted%20image%2020210613123515.png)

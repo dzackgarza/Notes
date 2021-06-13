@@ -1,4 +1,10 @@
+# Refs
+
+- <http://haydys.net/misc/IntroGaugeTheory_LectNotes.pdf>
+
 # Background
+
+
 
 **Terms to look up**
 
