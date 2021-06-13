@@ -45,6 +45,9 @@ Goal: define Gromov-Witten invariants for genus 0 curves and some restricted cla
 - Bubbling
 	- See Ch.4, Ch.5
 	- How is energy measured, and how do we deal with bubbling
+- Needs a $\spinc$ structure?
+- 
 
 ## Applications
-???
+Of SW:
+
