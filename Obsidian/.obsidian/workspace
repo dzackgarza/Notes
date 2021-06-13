@@ -9,7 +9,7 @@
         "state": {
           "type": "pdf",
           "state": {
-            "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf"
+            "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf"
           }
         }
       }
@@ -77,7 +77,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf"
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf"
               }
             }
           },
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,6 +240,8 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
+    "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
     "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
     "Current Projects/Phil Stuff/Untitled.md",
     "zettelkasten/connection.md",
@@ -247,8 +249,6 @@
     "zettelkasten/principal bundle.md",
     "zettelkasten/order.md",
     "zettelkasten/spin.md",
-    "zettelkasten/elliptic operator.md",
-    "zettelkasten/elliptic complex.md",
-    "zettelkasten/Sard-Smale.md"
+    "zettelkasten/elliptic operator.md"
   ]
 }
