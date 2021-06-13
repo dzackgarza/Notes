@@ -25,3 +25,9 @@ Away from the branch locus, a map of Riemann surfaces is a covering map.
 Simple branching: $\mult_x(f) \leq 2$ for all $x$.
 
 - Exercise: show that if $f: \PP^1(\CC)\to \PP^1(\CC)$ of degree $d$ has simple branching, then $f$ has $2d-2$ ramification points. Hint: apply Riemann-Hurwitz
+-  Exercise: show that if $f:X\to Y$ is degree 2 where $g(X) = 1, g(Y) = 0$ then there are 4 branch points.
+-  Exercise: consider $E:= \CC/\Lambda$ for $\Lambda = \ZZ + i\ZZ$.
+	Quotient by $x\sim ix$ to get a map $f:E\to E/\sim$, and show $f$ has 
+	- Two ramification points of multiplicity 4
+	- Two ramification points of multiplicity 2
+	What are their preimages in $\CC$?
