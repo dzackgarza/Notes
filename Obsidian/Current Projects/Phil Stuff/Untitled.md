@@ -7,3 +7,4 @@ Locally looks like $z\mapsto z^n$, where $n$ is the branching index.
 ![Fermat curve is a surface](../../zettelkasten/attachments/Pasted%20image%2020210612202005.png)
 
 ![Monodromy representation](../../zettelkasten/attachments/Pasted%20image%2020210612202053.png)
+
