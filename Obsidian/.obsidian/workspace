@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/elliptic operator.md",
+            "file": "zettelkasten/elliptic complex.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/elliptic operator.md",
+                "file": "zettelkasten/elliptic complex.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/elliptic operator.md"
+                "file": "zettelkasten/elliptic complex.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/elliptic operator.md",
+                "file": "zettelkasten/elliptic complex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/elliptic operator.md",
+                "file": "zettelkasten/elliptic complex.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,8 +242,8 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
-    "zettelkasten/elliptic operator.md",
     "zettelkasten/elliptic complex.md",
+    "zettelkasten/elliptic operator.md",
     "zettelkasten/Fredholm operator.md",
     "zettelkasten/spin.md",
     "zettelkasten/symbol.md",

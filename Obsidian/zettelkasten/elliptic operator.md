@@ -16,3 +16,5 @@ Require $r=s$ to be elliptic.
 ![](attachments/Pasted%20image%2020210613131447.png)
 
 ![](attachments/Pasted%20image%2020210613131618.png)
+
+![Why elliptic operators are of interest in gauge theory](attachments/Pasted%20image%2020210613131808.png)
