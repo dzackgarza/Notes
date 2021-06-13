@@ -7,4 +7,10 @@ From [here](http://math.mit.edu/~mbehrens/18.906spring10/prin.pdf):
 
 ![](attachments/Pasted%20image%2020210613130400.png)
 
-The questions on existence and classification of spin structures may be completely answered in terms of the Stiefel–Whitney classes
+- The questions on existence and classification of spin structures may be completely answered in terms of the Stiefel–Whitney classes. 
+- Every closed oriented 4-manifold admits a $\Spinc$ structure
+	- There are closed non-oriented manifolds that are not spinnable
+
+![](attachments/Pasted%20image%2020210613130528.png)
+![](attachments/Pasted%20image%2020210613130534.png)
+![](attachments/Pasted%20image%2020210613130544.png)
