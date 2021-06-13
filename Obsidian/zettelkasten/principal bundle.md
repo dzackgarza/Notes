@@ -22,6 +22,7 @@ A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$.
 
 ![](attachments/Pasted%20image%2020210510012449.png)
 ![](attachments/Pasted%20image%2020210613123624.png)
+![](attachments/Pasted%20image%2020210613123710.png)
 
 # Examples
 - Every [Fiber bundle](Fiber%20bundle) $F\to E\to B$ is a principal $\Aut(F)\dash$ fiber bundle. 
