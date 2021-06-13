@@ -98,3 +98,13 @@ $\xi_{n}: E_n \rightarrow \B \U_n(\CC)$
 	
 Todo: clean up and make precise! #todo 
 Maybe add from [To Review/2021-04-25_vector_bundles_ug](To%20Review/2021-04-25_vector_bundles_ug.md)
+
+
+# Unsorted
+
+![](attachments/Pasted%20image%2020210613122600.png)
+![](attachments/Pasted%20image%2020210613122620.png)
+![](attachments/Pasted%20image%2020210613122630.png)
+
+- $E\dual \tensor F \cong \Hom(E, F)$.
+- ![](attachments/Pasted%20image%2020210613122725.png)

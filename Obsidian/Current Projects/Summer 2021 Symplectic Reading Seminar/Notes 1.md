@@ -2,7 +2,10 @@
 
 **Terms to look up**
 
-- $n\dash$forms valued in $M$
+- $n\dash$forms valued in $M$:
+$$
+\Omega^p(E) := \globalsec{\Extalg^p T\dual M \tensor E}
+$$
 - Curvature tensor: $R\in \Omega^2(M; \Endo(TM))$?
 - Riemann-Roch
 - Darboux charts
@@ -47,10 +50,13 @@ Goal: define Gromov-Witten invariants for genus 0 curves and some restricted cla
 - Bubbling
 	- See Ch.4, Ch.5
 	- How is energy measured, and how do we deal with bubbling
-- Needs a $\spinc$ structure?
+- Needs a $\Spinc$ structure?
 - Donaldson invariant: difficult to work with due to compactness issues.
 	Easier in SW since the moduli space (up to gauge transformation) is compact
 	
+![](../../zettelkasten/attachments/Pasted%20image%2020210613123207.png)
+![Definition of curvature forms](../../zettelkasten/attachments/Pasted%20image%2020210613123239.png)
+![](../../zettelkasten/attachments/Pasted%20image%2020210613123343.png)
 
 ## Applications
 Of SW:

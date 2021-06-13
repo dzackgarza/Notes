@@ -34,3 +34,12 @@ where $\partial_X$ is the [directional derivative](directional%20derivative).
 Alternatively, a principal $\GL_n(\RR)$ connection on the frame bundle $\Frame(M)$
 
 The **Levi-Cevita connection**: the unique affine torsion-free connection for which [parallel transport](parallel%20transport) is an isometry.
+
+
+# Unsorted
+
+![](attachments/Pasted%20image%2020210613122858.png)
+![](attachments/Pasted%20image%2020210613122923.png)
+
+- Covariant derivatives with respect to two variables do not need to commute.
+	The failure of the commutativity of partial covariant derivatives is closely related to the notion of curvat
