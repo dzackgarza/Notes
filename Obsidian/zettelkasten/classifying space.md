@@ -18,6 +18,8 @@ Tags: #homotopy
 ![](attachments/Pasted%20image%2020210505015056.png)
 ![](attachments/Pasted%20image%2020210505015233.png)
 
+- $X/G$ may fail to be a nice space if points have nontrivial stabilizers.
+
 # Definitions
 
 

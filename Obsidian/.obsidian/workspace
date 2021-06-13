@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/Euler class.md",
+            "file": "zettelkasten/Reduction of structure group.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Euler class.md",
+                "file": "zettelkasten/Reduction of structure group.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/Euler class.md"
+                "file": "zettelkasten/Reduction of structure group.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/Euler class.md",
+                "file": "zettelkasten/Reduction of structure group.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/Euler class.md",
+                "file": "zettelkasten/Reduction of structure group.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
-    "zettelkasten/Euler class.md",
     "zettelkasten/Reduction of structure group.md",
     "zettelkasten/classifying space.md",
+    "zettelkasten/Euler class.md",
+    "zettelkasten/clutching function.md",
     "zettelkasten/spin.md",
     "Current Projects/Phil Stuff/Untitled.md",
     "Current Projects/DRP/Initial Notes.md",
     "000_Home.md",
     "Talks/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
-    "Talks/Summer 2021 Symplectic Reading Seminar/Untitled.md",
-    "DRP/Untitled.md"
+    "Talks/Summer 2021 Symplectic Reading Seminar/Untitled.md"
   ]
 }
