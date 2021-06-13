@@ -12,3 +12,7 @@ aliases: ["Sobolev space"]
 ![](attachments/Pasted%20image%2020210613131242.png)
 
 Require $r=s$ to be elliptic.
+
+![](attachments/Pasted%20image%2020210613131447.png)
+
+![](attachments/Pasted%20image%2020210613131618.png)

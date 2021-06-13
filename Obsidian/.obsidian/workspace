@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zettelkasten/symbol.md",
+            "file": "zettelkasten/elliptic operator.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/symbol.md",
+                "file": "zettelkasten/elliptic operator.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten/symbol.md"
+                "file": "zettelkasten/elliptic operator.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten/symbol.md",
+                "file": "zettelkasten/elliptic operator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "zettelkasten/symbol.md",
+                "file": "zettelkasten/elliptic operator.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
-    "zettelkasten/symboll.md",
     "zettelkasten/elliptic operator.md",
+    "zettelkasten/Fredholm operator.md",
     "zettelkasten/spin.md",
+    "zettelkasten/symbol.md",
+    "zettelkasten/Laplace-Beltrami operator.md",
+    "zettelkasten/symboll.md",
     "Current Projects/Summer 2021 Symplectic Reading Seminar/Notes 1.md",
     "zettelkasten/monodromy representation.md",
     "zettelkasten/connection.md",
-    "zettelkasten/Chern class.md",
-    "zettelkasten/Untitled 11.md",
-    "zettelkasten/classifying stack.md",
-    "zettelkasten/classifying space.md"
+    "zettelkasten/Chern class.md"
   ]
 }
