@@ -21,6 +21,7 @@ A principal $G$ bundle is a locally trivial free $G$-space with orbit space $B$.
 **Definition:** A principal bundle $F \to E \mapsvia{\pi} B$ is **universal** iff $E$ is [weakly contractible](weakly%20contractible).
 
 ![](attachments/Pasted%20image%2020210510012449.png)
+![](attachments/Pasted%20image%2020210613123624.png)
 
 # Examples
 - Every [Fiber bundle](Fiber%20bundle) $F\to E\to B$ is a principal $\Aut(F)\dash$ fiber bundle. 
