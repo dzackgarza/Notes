@@ -46,3 +46,4 @@ The **Levi-Cevita connection**: the unique affine torsion-free connection for wh
 	
 ![](attachments/Pasted%20image%2020210613124535.png)
 ![](attachments/Pasted%20image%2020210613124542.png)
+![Ricci curvature](attachments/Pasted%20image%2020210613124635.png)
