@@ -47,7 +47,7 @@ If $Y\mapsvia{f} X$ is an unramified covering map of degree $d$, then
 :::
 
 :::{.theorem title="Riemann-Hurwitz"}
-If $Y\mapsvia{f}X$ is a ramified covering map of degree $d$, set
+If $Y\mapsvia{f}X$ is a ramified covering map of degree $d$, define the correction term
 \[
 \delta_f \da \sum_{p\in R_f} \qty{e_p - 1}
 .\]
@@ -55,9 +55,13 @@ Then
 \[
 \chi(Y) = d\cdot  \chi(X) - \delta_f
 .\]
-There are several other useful forms
+There are several other useful forms:
 \[
-2g(Y) - 2 =  d\cdot (2g(X) - 2)  + \delta_f
+2g(Y) - 2 =  d\cdot (2g(X) - 2)  - \delta_f
+.\]
+
+\[
+2g(X) - 2 =  d\cdot (2g(Y) - 2)  + \delta_f
 .\]
 
 
