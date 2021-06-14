@@ -5,7 +5,8 @@
 - To define:
   - $[X, Y]_*$ 
   - $X\complete{p}$
-  - $\ZZ_{(p)}$: p-adics?
+    - $\ZZ_{(p)}$: $p\dash$local integers, $\ts{ {a\over b}, p\notdivides b} \subseteq \QQ$.
+    - $\ZZ\complete{p}$: the $p\dash$adic integers, $\lim_{n\geq 0}\ZZ/p^n$
   - $E^* E$
   - $L_E X$
   - $H^* X$ for $X\in \Spectra$
