@@ -87,7 +87,7 @@ for some holomorphic functions $f_I: \CC^n \to \CC$.
 :::
 
 :::{.definition title="Canonical Bundle"}
-Note that taking the top exterior power yields a line bundle:
+It is a theorem that taking the top exterior power yields a line bundle:
 
 
 \begin{tikzcd}
@@ -106,24 +106,38 @@ Letting $n\da \dim_\CC X$,
 \[
 K_X = \omega = \Omega^{n}_X &&\in \Sh_{/X}
 .\]
+:::
+
+:::{.remark}
+For vector bundles, the top exterior power is referred to as the **determinant bundle**.
+:::
+
+:::{.remark}
+A holomorphic $n\dash$form is precisely a section of the canonical bundle.
+:::
+
+:::{.fact}
+If $M$ is a smooth manifold, then $\omega$ has a global section.
+:::
 
 
+:::{.theorem title="Riemann-Roch"}
+![](figures/2021-06-14_01-49-30.png)
+:::
+
+:::{.exercise title="?"}
+For $\Sigma_g$ a compact Riemann surface of genus $g$, the dimension of the space of holomorphic sections of the canonical bundle, i.e. the space of holomorphic differentials on $\Sigma_G$, is given by $\dim H^0(X; \Omega) = g$ (the genus of the surface).
+
+> Hint: use Riemann-Roch.
 
 :::
 
-It is a theorem that the fibers are in fact complex lines $\CC^1$.
-For vector bundles, this is referred to as the *determinant bundle*.
-If $M$ is a smooth manifold, then $\omega$ has a global section.
+# Elliptic Orbifolds
 
-> Note: a holomorphic $n\dash$form is exactly the same as a section of the canonical bundle.
 
-Interesting aside: a Calabi-Yau is a manifold with a nowhere vanishing holomorphic $n\dash$form, which implies that the canonical bundle admits a map to a trivial line bundle that is an isomorphism, i.e. the canonical bundle is trivial.
-
-*Exercise:*
-For $\Sigma_g$ a compact Riemann surface of genus $g$, the dimension of the space of holomorphic sections of the canonical bundle, i.e. the space of holomorphic differentials on $\Sigma_G$, is given by $\dim H^0(X; \Omega) = g$ (the genus of the surface).
-Proof: use Riemann-Roch.
-
+:::{.remark}
 Classification of elliptic orbifolds of dimension 2:
+
 Define $(n_1, \cdots; m_1, \cdots)$ as the *profile*, where $n_i$ are *elliptic* points (locally look like quotient by $\ZZ/n\ZZ$), and $m_i$ are *corner reflectors* (locally look like quotient by a dihedral group):
 
 ![Image](figures/2020-01-29-20:44.png)\
@@ -134,6 +148,9 @@ Conformal (or equivalently complex) structures on a genus $g$ surface form a mod
 Let $\alpha$ be any partition of $2g-2$, and $\mch(\alpha)$ the moduli space of pairs $(\Sigma_g, \omega)$ where $\Sigma_g$ is a Riemann surface of genus $g$ and $\omega$ is a holomorphic 1-form (Abelian differential) on $M$ with the orders of its zeros given by $\alpha$.
 Letting $\mch$ be the moduli space of all abelian differentials on Riemann surfaces of genus $g$ is stratified by $\mch(\alpha)$ as $\alpha$ ranges over all partitions.
 For flat tori, $\mch = \GL_+(2, \RR)/\SL(2, \ZZ)$.
+
+:::
+
 
 For $\Sigma_g$ a Riemann surface, there is a formula (Gauss-Bonnet in the flat metric) relating the degrees of the zeros of a holomorphic 1-form to the genus:
 
