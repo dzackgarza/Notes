@@ -7,6 +7,8 @@
   - $E^* E$
   - $L_E X$
 
+- ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
+
 - General AdSS for usual homology:
   ![SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg)
 
@@ -33,6 +35,5 @@
 - ![SmartSelect_20210606-234502_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234502_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-234603_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234603_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-234652_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234652_Moon+_Reader_Pro.jpg)
-- ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
 
 
