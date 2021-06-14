@@ -71,8 +71,16 @@ There are several other useful forms:
 :::{.definition title="Holomorphic forms"}
 A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$:
 \[
-\Omega_{\Hol}^p(X) \da \globsec{\Extalg^p T\dual_{\Hol} X}
+\Omega^p(X) \da \Omega_{\Hol}^p(X) \da \globsec{\Extalg^p T\dual_{\Hol} X}
 .\]
+
+For $p=0$, these are global holomorphic functions on $X$.
+In coordinates, we have
+\[
+\omega \in \Omega^p(X) \implies \omega = 
+\sum f_I(\vector{z}) \Wedge dz_I
+.\]
+
 
 :::
 
