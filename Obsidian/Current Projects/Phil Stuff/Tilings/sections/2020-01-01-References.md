@@ -29,6 +29,16 @@ The set of points where $f$ is ramified, sometimes denoted $R_f \subseteq Y$, is
 Its image $B_f \da f(R_f) \subseteq X$ is referred to as the **branch locus**.
 :::
 
+:::{.theorem title="Well-definedness of degree"}
+If $Y \mapsvia{f} X$ is a (possibly ramified) covering, then
+\[
+x_1, x_2, \in B_f^c \implies
+\# f\inv(x_1) = \# f\inv(x_2)
+.\]
+This common number $d$ is referred to as the **degree** of $f$.
+
+:::
+
 :::{.proposition title="Euler characteristic is multiplicative in unramified covers"}
 If $Y\mapsvia{f} X$ is an unramified covering map of degree $d$, then 
 \[
@@ -47,7 +57,7 @@ Then
 .\]
 There are several other useful forms
 \[
-g(Y) - 2 =  d\cdot (2g(X) - 2)  + \delta_f
+2g(Y) - 2 =  d\cdot (2g(X) - 2)  + \delta_f
 .\]
 
 
