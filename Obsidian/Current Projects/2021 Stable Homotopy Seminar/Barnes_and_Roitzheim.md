@@ -5,8 +5,12 @@
   - $X\complete{p}$
   - $\ZZ_{(p)}$
 
-- ![SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg)
-- ![SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg)
+- General AdSS for usual homology:
+  ![SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg)
+
+- Product structure on pages:
+  ![SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg)
+
 - Definition of Adams tower: 
   ![SmartSelect_20210606-233542_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233542_Moon+_Reader_Pro.jpg)
   - Dual is simpler
