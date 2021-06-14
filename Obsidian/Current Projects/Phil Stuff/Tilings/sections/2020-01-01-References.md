@@ -64,18 +64,24 @@ There are several other useful forms:
 2- 2g(Y) &=  d\cdot (2-2g(X))  + \delta_f \\
 \chi(Y) - \# R_f &= d \cdot (\chi(X) - \# B_f)
 .\]
-
 :::
 
 
+:::{.remark}
+In everything that follows, we take $TX, T\dual X$ to be *holomorphic* tangent/cotangent bundles.
+:::
+
+
+
 :::{.definition title="Holomorphic forms"}
-A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$:
+A holomorphic $p\dash$form on $X$ is a section of the sheaf $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$:
 \[
-\Omega^p_X \da \Omega_{\Hol}^p(X) \da \globsec{\Extalg^p T\dual_{\Hol} X}
+\Omega^p_X \da \Omega_{\Hol}^p(X) &\da \Extalg^p T\dual X \in\Sh_{/X}\\
+\Omega^p_X(X) &\da \globsec{\Extalg^p T\dual X}
 .\]
 
-For $p=0$, these are global holomorphic functions on $X$.
-In coordinates, we have
+$0\dash$forms are global holomorphic functions on $X$.
+For general $p$, in coordinates we have
 \[
 \omega \in \Omega^p_X \implies \omega = 
 \sum f_I(\vector{z}) \Wedge dz_I
@@ -88,7 +94,7 @@ for some holomorphic functions $f_I: \CC^n \to \CC$.
 The **canonical bundle** is defined by taking the top exterior power of the cotangent bundle.
 Letting $n\da \dim_\CC X$,
 \[
-K_X = \omega = \Omega^{n}_X = 
+K_X = \omega = \Omega^{n}_X
 .\]
 
 Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
