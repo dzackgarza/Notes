@@ -10,6 +10,12 @@
 - Engel, [Hurwitz Theory of Elliptic Orbifolds, I](https://arxiv.org/abs/1706.06738)
 - Engel, [Hurwitz Theory of Elliptic Orbifolds, II](https://arxiv.org/abs/1809.07434)
 
+- A. Eskin 
+- G. Forni
+- P. Hubert and T. Schmidt 
+- H. Masur 
+- H. Masur and S. Tabachnikov
+- J. Smillie
 
 # Basics
 
@@ -120,7 +126,6 @@ A holomorphic $n\dash$form is precisely a section of the canonical bundle.
 If $M$ is a smooth manifold, then $\omega$ has a global section.
 :::
 
-
 :::{.theorem title="Riemann-Roch"}
 ![](figures/2021-06-14_01-49-30.png)
 :::
@@ -131,6 +136,23 @@ For $\Sigma_g$ a compact Riemann surface of genus $g$, the dimension of the spac
 > Hint: use Riemann-Roch.
 
 :::
+
+
+:::{.definition title="Hurwitz Space"}
+?
+:::
+
+
+:::{.definition title="Hurwitz Number"}
+?
+
+:::
+
+
+:::{.definition title="Abelian differential"}
+
+:::
+
 
 # Elliptic Orbifolds
 
@@ -152,11 +174,13 @@ For flat tori, $\mch = \GL_+(2, \RR)/\SL(2, \ZZ)$.
 :::
 
 
+:::{.fact}
 For $\Sigma_g$ a Riemann surface, there is a formula (Gauss-Bonnet in the flat metric) relating the degrees of the zeros of a holomorphic 1-form to the genus:
-
 \[
 \sum d_j = 2g-2
 .\]
+:::
+
 
 
 
@@ -170,15 +194,6 @@ Flat surfaces are characterized as surfaces with a flat metric and (finitely man
 These surfaces appear to be isomorphic to moduli spaces of holomorphic 1-forms.
 It is profitable to study the orbit of the surface under the Teichmüller geodesic flow, as well as a $\GL_n$ action.
 
-Some introductory surveys:
-
-- A. Eskin [E], 
-- G. Forni [For2], 
-- P. Hubert and T. Schmidt [HuSdt5] 
-- H. Masur [Ma7],
-- H. Masur and S. Tabachnikov [MaT] 
-- J. Smillie [S].
-
 
 We usually associate
 
@@ -191,7 +206,8 @@ Any surface can be given a flat metric, possibly introducing singular points.
 
 > Idea: Push all of the curvature into a cone point.
 
-*Example:*
+
+:::{.example title="?"}
 The standard cube embedded in $\RR^3$.
 
 This is a flat surface with 8 cone points located at the vertices.
@@ -206,19 +222,30 @@ The cone angle can be measured by cutting a cone from the base to the vertex, yi
 
 This shows that the cone angle of the cube is $3\pi/2$, which coincides with the fact that there are 3 square (and thus 3 right angles) adjacent to any cone point.
 
-**Definition:**
-Geodesic (todo)
+:::
 
-**Definition:**
-Ergodic (todo)
+
+:::{.definition title="Geodesic"}
+?
+:::
+
+
+
+:::{.definition title="Ergodic"}
+
+:::
 
 > Here this means that a typical geodesic will visit any region in phase space and time spent in a region is proportional to volume.
 
 
-**Definition:**
-Holonomy and Holonomy group (todo)
 
-General (wildly open) problem:
+:::{.definition title="Holonomy"}
+Holonomy and Holonomy group (todo)
+:::
+
+
+:::{.problem title="?"}
+General (wildly open) problems:
 
 - Describe the behavior of a generic geodesic on a surface
 - Prove that the geodesic flow is ergodic on a typical flat surface
@@ -228,6 +255,11 @@ General (wildly open) problem:
 
 This remains unsolved for $S^2$ with 3 singularities (equivalent to a certain billiards problem). 
 It is not even known if any flat sphere admits a single closed geodesic.
+
+:::
+
+
+
 
 Flat surfaces have nontrivial holonomy, which makes them resemble Riemannian manifolds more than flat tori.
 
