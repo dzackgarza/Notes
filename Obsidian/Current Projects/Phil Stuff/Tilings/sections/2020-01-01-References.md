@@ -66,17 +66,14 @@ There are several other useful forms:
 .\]
 :::
 
-
 :::{.remark}
 In everything that follows, we take $TX, T\dual X$ to be *holomorphic* tangent/cotangent bundles.
 :::
 
-
-
 :::{.definition title="Holomorphic forms"}
 A holomorphic $p\dash$form on $X$ is a section of the sheaf $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$:
 \[
-\Omega^p_X \da \Omega_{\Hol}^p(X) &\da \Extalg^p T\dual X \in\Sh_{/X}\\
+\Omega^p_X \da \Omega_{\Hol}^p(X) &\da \Extalg^p T\dual X && \in\Sh_{/X}\\
 \Omega^p_X(X) &\da \globsec{\Extalg^p T\dual X}
 .\]
 
@@ -89,15 +86,27 @@ For general $p$, in coordinates we have
 for some holomorphic functions $f_I: \CC^n \to \CC$.
 :::
 
-
 :::{.definition title="Canonical Bundle"}
-The **canonical bundle** is defined by taking the top exterior power of the cotangent bundle.
+Note that taking the top exterior power yields a line bundle:
+
+
+\begin{tikzcd}
+\CC 
+  \ar[r] 
+& 
+\Extalg^p T\dual X
+  \ar[d] 
+\\
+& 
+X 
+\end{tikzcd}
+
+The **canonical bundle** is defined by as this top exterior power.
 Letting $n\da \dim_\CC X$,
 \[
-K_X = \omega = \Omega^{n}_X
+K_X = \omega = \Omega^{n}_X &&\in \Sh_{/X}
 .\]
 
-Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
 
 
 :::
