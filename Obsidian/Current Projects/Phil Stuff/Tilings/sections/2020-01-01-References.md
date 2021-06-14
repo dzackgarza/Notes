@@ -68,19 +68,17 @@ There are several other useful forms:
 :::
 
 
-:::{.corollary title="Covers of $\PP^1$"}
-If $Y \mapsvia{f} \PP^1(\CC)$, noting that $g(\PP^1(\CC)) = 0$ one can solve for
+:::{.definition title="Holomorphic forms"}
+A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$:
 \[
-g(Y) = 1 + {1\over 2}\delta_f
+\Omega_{\Hol}^p(X) \da \globsec{\Extalg^p T\dual_{\Hol} X}
 .\]
 
 :::
 
 
 
-
 **Holomorphic Forms:**
-A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$.
 
 For $n = \dim_\CC X$, the $n\dash$forms are an important special case.
 Any such form $w$ is given in local coordinates $(z_1, \cdots, z_n)$ by 
