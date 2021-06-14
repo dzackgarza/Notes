@@ -59,8 +59,17 @@ Then
 \chi(\Sigma') = N(\chi(\Sigma) - b) + r
 .\]
 
+:::
+
+
+:::{.corollary title="Covers of $\PP^1$"}
+If $Y \mapsvia{f} \PP^1(\CC)$, noting that $g(\PP^1(\CC)) = 0$ one can solve for
+\[
+g(Y) = 1 + {1\over 2}\delta_f
+.\]
 
 :::
+
 
 
 
