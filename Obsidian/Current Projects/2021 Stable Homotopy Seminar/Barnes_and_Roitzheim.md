@@ -4,6 +4,8 @@
   - $[X, Y]_*$ 
   - $X\complete{p}$
   - $\ZZ_{(p)}$
+  - $E^* E$
+  - $L_E X$
 
 - General AdSS for usual homology:
   ![SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg)
