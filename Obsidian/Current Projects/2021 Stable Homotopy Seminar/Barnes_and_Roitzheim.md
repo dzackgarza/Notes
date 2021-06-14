@@ -8,10 +8,10 @@
   - $\ZZ_{(p)}$: p-adics?
   - $E^* E$
   - $L_E X$
-  - $H^* X$ for $X\in \Spectra$.
+  - $H^* X$ for $X\in \Spectra$
     - $H^* \SS = \FF_2$?
-  - $\pi_n X = [\SS^{\smashprod n}\smashprod \SS, X]$
-  - Generalized homology: $E_nX = \pi_n \qty{E \smashprod X} = [\SS^{\smashprod n}\smashprod \SS, E\smashprod X]$
+  - $\pi_n X = [\Suspend^n \SS, X] = [\SS^{\smashprod n}\smashprod \SS, X]$
+  - Generalized homology: $E_nX = \pi_n \qty{E \smashprod X} = [\Suspend^n \SS, E\smashprod X] = [\SS^{\smashprod n}\smashprod \SS, E\smashprod X]$
   - Generalized cohomology: $E^n X = [\SS^{\smashprod -n}\smashprod X, E]$.
 
 - Strategy:
