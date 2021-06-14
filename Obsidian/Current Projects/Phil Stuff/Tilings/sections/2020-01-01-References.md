@@ -182,6 +182,23 @@ For $\Sigma_g$ a Riemann surface, there is a formula (Gauss-Bonnet in the flat m
 :::
 
 
+:::{.definition title="Moduli spaces of complex structures on a genus $g$ surface"}
+
+:::
+
+
+:::{.definition title="Moduli space of abelian differentials"}
+
+:::
+
+
+:::{.definition title="Moduli space of quartic differentials"}
+
+:::
+
+
+
+
 
 
 # Notes on Paper
@@ -269,29 +286,35 @@ It is not even known if any flat sphere admits a single closed geodesic.
 :::
 
 
-
-
+:::{.remark}
 Flat surfaces have nontrivial holonomy, which makes them resemble Riemannian manifolds more than flat tori.
 
 If we take the surface and puncture the conical points, it is locally isometric to the punctured Euclidean plane.
 This allows a notion of parallel transport of tangent vectors.
 
-Parallel transports along homotopically trivial loops are always the identity; otherwise, for homotopically nontrivial loops this rotates the vector by some angle.
-Parallel transport around a cone point rotates by exactly the cone angle.
-Nontrivial holonomy forces geodesics to self-intersect many times.
+- Parallel transports along homotopically trivial loops are always the identity; otherwise, for homotopically nontrivial loops this rotates the vector by some angle.
+- Parallel transport around a cone point rotates by exactly the cone angle.
+- Nontrivial holonomy forces geodesics to self-intersect many times.
 
 > Exercise: parallel transport a vector around the cone point of a cube.
 
 The flat torus has trivial linear holonomy -- all geodesics either close up, or never self-intersect and produce a dense winding path.
 
+:::
 
-
+:::{.remark}
 Note that trivial linear holonomy implies that cone angles are all integer multiples of $2\pi$.
 
-> Convention: we assume all flat surfaces come with a distinguished direction.
+Convention: we assume all flat surfaces come with a distinguished direction.
+:::
 
-Remark:
+
+
+:::{.remark}
 Billiards gives rise to a flat surface with nontrivial linear holonomy. 
+
+:::
+
 
 
 
@@ -303,11 +326,17 @@ These will correspond to strata of moduli spaces of one-forms.
 
 It will often be useful to let $\SL(2, \RR)$ act on these families, consider the orbits, and take its closure.
 
-Central problem / conjecture:
-Taking the closure of an orbit under the action of $\GL^+(2, \RR)$ is a complex subvariety, so both the moduli space of holomorphic one-forms and the moduli space of quadratic differentials resemble homogeneous spaces under the action of a unipotent group.
 
+:::{.conjecture}
+Central problem / conjecture:
+
+Taking the closure of an orbit under the action of $\GL^+(2, \RR)$ is a complex subvariety, so both the moduli space of holomorphic one-forms and the moduli space of quadratic differentials resemble homogeneous spaces under the action of a unipotent group.
+:::
+
+:::{.remark}
 The there is a projection from these orbits (Teichmüller discs)  to the moduli space of complex structures (?), which will be denoted $\MM_g$.
 It is well-known that moduli spaces are not homogeneous spaces, but the conjecture here is that they behave as if they were.
+:::
 
 ## Section 2: Motivations
 
