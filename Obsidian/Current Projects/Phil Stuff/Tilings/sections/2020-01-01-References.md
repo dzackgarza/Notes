@@ -61,7 +61,7 @@ There are several other useful forms:
 .\]
 
 \[
-2g(X) - 2 =  d\cdot (2g(Y) - 2)  + \delta_f
+2- 2g(Y) =  d\cdot (2-2g(X))  + \delta_f
 .\]
 
 
