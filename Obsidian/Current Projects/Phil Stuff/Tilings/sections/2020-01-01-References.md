@@ -186,7 +186,29 @@ For $\Sigma_g$ a Riemann surface, there is a formula (Gauss-Bonnet in the flat m
 
 # Notes on Paper
 
-> Reference: [https://arxiv.org/abs/math/0609392](https://arxiv.org/abs/math/0609392)
+## Background, Definitions, References
+
+Reference: <https://arxiv.org/abs/math/0609392](https://arxiv.org/abs/math/0609392>
+
+:::{.definition title="Geodesic"}
+?
+:::
+
+:::{.definition title="Ergodic"}
+
+:::
+
+:::{.definition title="Holonomy"}
+Holonomy and Holonomy group (todo)
+:::
+
+:::{.definition title="Translation Surface"}
+A translation surface is closed orientable surface with a flat metric, a finite number of conical singularities, and trivial linear holonomy.
+:::
+
+:::{.definition title="Half-translation surface"}
+A half-translation surface is a surface with a flat metric and holonomy group $\ZZ/(2)$.
+:::
 
 ## Section  1
 
@@ -225,23 +247,11 @@ This shows that the cone angle of the cube is $3\pi/2$, which coincides with the
 :::
 
 
-:::{.definition title="Geodesic"}
-?
-:::
-
-
-
-:::{.definition title="Ergodic"}
-
-:::
 
 > Here this means that a typical geodesic will visit any region in phase space and time spent in a region is proportional to volume.
 
 
 
-:::{.definition title="Holonomy"}
-Holonomy and Holonomy group (todo)
-:::
 
 
 :::{.problem title="?"}
@@ -274,8 +284,7 @@ Nontrivial holonomy forces geodesics to self-intersect many times.
 
 The flat torus has trivial linear holonomy -- all geodesics either close up, or never self-intersect and produce a dense winding path.
 
-**Definition:**
-A translation surface is closed orientable surface with a flat metric, a finite number of conical singularities, and trivial linear holonomy.
+
 
 Note that trivial linear holonomy implies that cone angles are all integer multiples of $2\pi$.
 
@@ -284,8 +293,8 @@ Note that trivial linear holonomy implies that cone angles are all integer multi
 Remark:
 Billiards gives rise to a flat surface with nontrivial linear holonomy. 
 
-**Definition:**
-A half-translation surface is a surface with a flat metric and holonomy group $\ZZ/(2)$.
+
+
 
 > In this case, a vector $\vector v$ may come back as $-\vector v$ after parallel transport.
 
