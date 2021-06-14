@@ -311,6 +311,7 @@ It is well-known that moduli spaces are not homogeneous spaces, but the conjectu
 
 ## Section 2: Motivations
 
+:::{.problem title="?"}
 Open problems in rectangular billiards:
 
 1. Describe the behavior of a billiard trajectory in a generic triangle, and prove that the billiard flow is ergodic.
@@ -318,11 +319,18 @@ Open problems in rectangular billiards:
 3. Asymptotically in length, how many periodic trajectories are there? 
 4. Does any obtuse triangle have a single periodic trajectory?
 
-*Known example:* 
-Acute triangles have at least 1, see Fagnano trajectory 
+:::
 
-*Fox-Kershner construction:*
-Yields a way to go from billiard trajectories to geodesics on a flat surface.
-General idea: glue two copies of the billiard table along the edge to get a flat sphere; then paths lift to geodesics.
-Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
+
+:::{.example title="?"}
+Known example:
+acute triangles have at least 1, see Fagnano trajectory 
+:::
+
+
+
+- Fox-Kershner construction
+  - Yields a way to go from billiard trajectories to geodesics on a flat surface.
+    General idea: glue two copies of the billiard table along the edge to get a flat sphere; then paths lift to geodesics.
+    Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
 
