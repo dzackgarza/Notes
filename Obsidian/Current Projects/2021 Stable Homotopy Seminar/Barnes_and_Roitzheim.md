@@ -1,6 +1,7 @@
 # Barnes and Roitzheim
 
 - ![SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg)
+  - Define $[X, Y]_*$ and $X\complete{p}$.
 - ![SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg)
 - Definition of Adams tower: 
   ![SmartSelect_20210606-233542_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233542_Moon+_Reader_Pro.jpg)
