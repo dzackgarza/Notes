@@ -13,20 +13,15 @@
 
 # Basics
 
-:::{.definition title="Ramified maps"}
+:::{.definition title="Ramified, branch points, ramification index"}
 A map $Y \mapsvia{f} X$ of Riemann surfaces is said to be **ramified** at a point $p\in Y$ iff in local charts $f$ has the form $z\mapsto z^n$ for some $n\geq 2$.
+Note that in this case, in charts $q\da f(p)$ has exactly one preimage and $\# f\inv(q') = n$ for all $q'$ in a punctured neighborhood of $q$.
+The number $e_p \da n$ referred to as the **ramification index** of $f$ at $p$.
+
 The set of points where $f$ is ramified, sometimes denoted $R_f \subseteq Y$, is referred to as the **ramification locus**.
 Its image $B_f \da f(R_f) \subseteq X$ is referred to as the **branch locus**.
 :::
 
-:::{.slogan}
-All points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
-:::
-
-:::{.definition title="Branch points and ramification index"}
-If $Y\mapsvia{f} X$ is ramified at $p\in X$, the number of preimages $e_p \da \# f\inv(p)$ is referred to as the **ramification index** of $p$.
-
-:::
 
 :::{.fact}
 For $\Sigma_g$ a genus $g$ surface, the Poincaré polynomial and the Euler characteristic are given by 
