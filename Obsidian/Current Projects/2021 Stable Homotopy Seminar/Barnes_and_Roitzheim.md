@@ -10,8 +10,9 @@
   - $L_E X$
   - $H^* X$ for $X\in \Spectra$.
     - $H^* \SS = \FF_2$?
-  - $\pi_n X = [\SS^{\smashprod n}, X]$
-  - $E_nX = \pi_n \qty{E \smashprod X} = [\SS^{\smashprod n}, E\smashprod X]$
+  - $\pi_n X = [\SS^{\smashprod n}\smashprod \SS, X]$
+  - Generalized homology: $E_nX = \pi_n \qty{E \smashprod X} = [\SS^{\smashprod n}\smashprod \SS, E\smashprod X]$
+  - Generalized cohomology: $E^n X = [\SS^{\smashprod -n}\smashprod X, E]$.
 
 - Strategy:
   ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
