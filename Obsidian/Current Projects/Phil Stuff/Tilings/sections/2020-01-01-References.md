@@ -71,13 +71,13 @@ There are several other useful forms:
 :::{.definition title="Holomorphic forms"}
 A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$th exterior power of the holomorphic cotangent bundle of $X$:
 \[
-\Omega^p(X) \da \Omega_{\Hol}^p(X) \da \globsec{\Extalg^p T\dual_{\Hol} X}
+\Omega^p_X \da \Omega_{\Hol}^p(X) \da \globsec{\Extalg^p T\dual_{\Hol} X}
 .\]
 
 For $p=0$, these are global holomorphic functions on $X$.
 In coordinates, we have
 \[
-\omega \in \Omega^p(X) \implies \omega = 
+\omega \in \Omega^p_X \implies \omega = 
 \sum f_I(\vector{z}) \Wedge dz_I
 \]
 for some holomorphic functions $f_I: \CC^n \to \CC$.
@@ -85,7 +85,12 @@ for some holomorphic functions $f_I: \CC^n \to \CC$.
 
 
 :::{.definition title="Canonical Bundle"}
-Given a complex manifold $M$, we can define the tangent bundle $\CC^n \to TM \to M$ and the cotangent bundle $\CC^n \to T\dual M \to M$, which we'll just denote $T\dual M$.
+The **canonical bundle** is defined by taking the top exterior power of the cotangent bundle.
+Letting $n\da \dim_\CC X$,
+\[
+K_X = \omega = \Omega^{n}_X = 
+.\]
+
 Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
 
 
