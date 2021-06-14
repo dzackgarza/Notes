@@ -331,6 +331,6 @@ acute triangles have at least 1, see Fagnano trajectory
 
 - Fox-Kershner construction
   - Yields a way to go from billiard trajectories to geodesics on a flat surface.
-    General idea: glue two copies of the billiard table along the edge to get a flat sphere; then paths lift to geodesics.
-    Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
+  - General idea: glue two copies of the billiard table along the edge to get a flat sphere; then paths lift to geodesics.
+  - Such surfaces are not "very flat", i.e. they have nontrivial linear holonomy.
 
