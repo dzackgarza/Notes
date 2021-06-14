@@ -37,10 +37,17 @@ If $Y\mapsvia{f} X$ is an unramified covering map of degree $d$, then
 :::
 
 :::{.theorem title="Riemann-Hurwitz"}
-If $Y\mapsvia{f}X$ is a ramified covering map of degree $d$, then
-
+If $Y\mapsvia{f}X$ is a ramified covering map of degree $d$, set
 \[
-\chi(Y) = d\cdot  \chi(X) - \sum_{p} (e_p - 1) \quad\implies \quad 2 g(Y) - 2 =  d\cdot (2g(X) - 2)  + \sum (e_p - 1)
+\delta_f \da \sum_{p\in R_f} \qty{e_p - 1}
+.\]
+Then
+\[
+\chi(Y) = d\cdot  \chi(X) - \delta_f
+.\]
+There are several other useful forms
+\[
+g(Y) - 2 =  d\cdot (2g(X) - 2)  + \delta_f
 .\]
 
 
