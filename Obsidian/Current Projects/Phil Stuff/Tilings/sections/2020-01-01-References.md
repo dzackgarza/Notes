@@ -55,22 +55,14 @@ Then
 \[
 \chi(Y) = d\cdot  \chi(X) - \delta_f
 .\]
+:::
+
+:::{.remark title="Other useful forms"}
 There are several other useful forms:
 \[
-2g(Y) - 2 =  d\cdot (2g(X) - 2)  - \delta_f
-.\]
-
-\[
-2- 2g(Y) =  d\cdot (2-2g(X))  + \delta_f
-.\]
-
-
-*Another useful form:*
-Let $r \in \Sigma'$ be the number of ramification points, and $b$ the number of branch points, i.e. their images in $\Sigma$.
-Then
-
-\[
-\chi(\Sigma') = N(\chi(\Sigma) - b) + r
+2g(Y) - 2 &=  d\cdot (2g(X) - 2)  - \delta_f\\
+2- 2g(Y) &=  d\cdot (2-2g(X))  + \delta_f \\
+\chi(Y) - \# R_f &= d \cdot (\chi(X) - \# B_f)
 .\]
 
 :::
