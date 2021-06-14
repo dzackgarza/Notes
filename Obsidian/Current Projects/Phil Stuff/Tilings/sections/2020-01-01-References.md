@@ -12,34 +12,48 @@
 - Engel, [Hurwitz Theory of Elliptic Orbifolds, I](https://arxiv.org/abs/1706.06738)
 - Engel, [Hurwitz Theory of Elliptic Orbifolds, II](https://arxiv.org/abs/1809.07434)
 
-**Definition:**
+
+:::{.definition title="Ramified maps"}
 A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at a point $p\in \Sigma'$ iff in local charts $\pi$ has the form $z\mapsto z^n$ for some $n>1$.
+:::
 
-> I.e. all points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
+:::{.slogan}
+All points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
+:::
 
-**Definition:**
+:::{.definition title="Ramification index"}
 If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$, the *ramification index of $p$*.
 
-*Fact:*
+:::
+
+:::{.fact}
 $\vector{\beta}(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
+:::
 
-**Theorem:**
+
+:::{.proposition title="Euler characteristic is multiplicative in unramified covers"}
 If $\pi$ is an unramified covering map of degree $n$, then $\chi(\Sigma') = n\chi(\Sigma)$.
+:::
 
-**Theorem (Riemann-Hurwitz):**
+
+:::{.theorem title="Riemann-Hurwitz"}
 If $\pi: \Sigma \to \Sigma'$ is a ramified covering map of degree $N$, then
 
-\begin{align*}
+\[
 \chi(\Sigma') = N \chi(\Sigma) - \sum (e_p - 1) \quad\text{ i.e. } 2 g(\Sigma') - 2=  N(2g(\Sigma) - 2)  + \sum (e_p - 1)
-.\end{align*}
+.\]
 
 *Another useful form:*
 Let $r \in \Sigma'$ be the number of ramification points, and $b$ the number of branch points, i.e. their images in $\Sigma$.
 Then
 
-\begin{align*}
+\[
 \chi(\Sigma') = N(\chi(\Sigma) - b) + r
-.\end{align*}
+.\]
+
+
+:::
+
 
 
 **Holomorphic Forms:**
@@ -48,9 +62,9 @@ A holomorphic $p\dash$form on $X$ is a section of $\Lambda^p T\dual X$, the $p$t
 For $n = \dim_\CC X$, the $n\dash$forms are an important special case.
 Any such form $w$ is given in local coordinates $(z_1, \cdots, z_n)$ by 
 
-\begin{align*}
+\[
 w = w(z_1, \cdots, z_n) dz_1 \wedge \cdots \wedge dz_n
-\end{align*}
+\]
 
 for some holomorphic function $w: \CC^n \to ?$.
 
@@ -84,9 +98,9 @@ For flat tori, $\mch = \GL_+(2, \RR)/\SL(2, \ZZ)$.
 
 For $\Sigma_g$ a Riemann surface, there is a formula (Gauss-Bonnet in the flat metric) relating the degrees of the zeros of a holomorphic 1-form to the genus:
 
-\begin{align*}
+\[
 \sum d_j = 2g-2
-.\end{align*}
+.\]
 
 
 

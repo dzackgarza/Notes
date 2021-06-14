@@ -7,9 +7,10 @@
         "id": "feb8998356d5e685",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf"
+            "file": "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
+            "mode": "source"
           }
         }
       }
@@ -77,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -112,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf"
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings VRG.md"
               }
             }
           },
@@ -145,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
+                "file": "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,10 +241,10 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
     "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
     "zettelkasten/Mazur's Program B.md",
     "zettelkasten/Serre spectral sequence.md",
-    "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
     "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
     "Current Projects/Phil Stuff/Untitled.md",
     "zettelkasten/connection.md",
