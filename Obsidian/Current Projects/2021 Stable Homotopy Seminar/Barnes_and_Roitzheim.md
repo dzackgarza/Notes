@@ -5,10 +5,11 @@
 - To define:
   - $[X, Y]_*$ 
   - $X\complete{p}$
-  - $\ZZ_{(p)}$
+  - $\ZZ_{(p)}$: p-adics?
   - $E^* E$
   - $L_E X$
   - $H^* X$ for $X\in \Spectra$.
+    - $H^* \SS = \FF_2$?
 
 - Strategy:
   ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
@@ -21,6 +22,7 @@
 
 - Special case for spheres:
   ![SmartSelect_20210606-233944_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233944_Moon+_Reader_Pro.jpg)
+  - Special case for $FF_2$
 
 - Product structure on pages:
   ![SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg)
