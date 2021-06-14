@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
-            "mode": "source"
+            "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
+                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md"
+                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
+                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
+                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
     "Current Projects/2021 Stable Homotopy Seminar/Exact_Couples.md",
     "Current Projects/2021 Stable Homotopy Seminar/BR_AdSS/Barnes_and_Roitzheim.md",
@@ -249,7 +250,6 @@
     "zettelkasten/Mazur's Program B.md",
     "zettelkasten/Serre spectral sequence.md",
     "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
-    "Current Projects/Phil Stuff/Untitled.md",
-    "zettelkasten/connection.md"
+    "Current Projects/Phil Stuff/Untitled.md"
   ]
 }
