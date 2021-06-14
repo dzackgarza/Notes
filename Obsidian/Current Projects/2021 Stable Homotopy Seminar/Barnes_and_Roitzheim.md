@@ -12,7 +12,7 @@
     - $H^* \SS = \FF_2$?
   - $\pi_n X = [\Suspend^n \SS, X] = [\SS^{\smashprod n}\smashprod \SS, X]$
   - Generalized homology: $E_nX = \pi_n \qty{E \smashprod X} = [\Suspend^n \SS, E\smashprod X] = [\SS^{\smashprod n}\smashprod \SS, E\smashprod X]$
-  - Generalized cohomology: $E^n X = [\SS^{\smashprod -n}\smashprod X, E]$.
+  - Generalized cohomology: $E^n X = [\Suspend^{-n}X, E] = [\SS^{\smashprod -n}\smashprod X, E]$.
 
 - Strategy:
   ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
