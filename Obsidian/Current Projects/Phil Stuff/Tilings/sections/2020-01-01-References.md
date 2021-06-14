@@ -263,13 +263,7 @@ This shows that the cone angle of the cube is $3\pi/2$, which coincides with the
 
 :::
 
-
-
 > Here this means that a typical geodesic will visit any region in phase space and time spent in a region is proportional to volume.
-
-
-
-
 
 :::{.problem title="?"}
 General (wildly open) problems:
@@ -284,7 +278,6 @@ This remains unsolved for $S^2$ with 3 singularities (equivalent to a certain bi
 It is not even known if any flat sphere admits a single closed geodesic.
 
 :::
-
 
 :::{.remark}
 Flat surfaces have nontrivial holonomy, which makes them resemble Riemannian manifolds more than flat tori.
@@ -308,24 +301,18 @@ Note that trivial linear holonomy implies that cone angles are all integer multi
 Convention: we assume all flat surfaces come with a distinguished direction.
 :::
 
-
-
 :::{.remark}
 Billiards gives rise to a flat surface with nontrivial linear holonomy. 
-
+In this case, a vector $\vector v$ may come back as $-\vector v$ after parallel transport.
 :::
 
-
-
-
-
-> In this case, a vector $\vector v$ may come back as $-\vector v$ after parallel transport.
-
+:::{.remark}
 We'll often consider families of flat surface sharing the same genus and number/type of conical singularities.
 These will correspond to strata of moduli spaces of one-forms.
 
 It will often be useful to let $\SL(2, \RR)$ act on these families, consider the orbits, and take its closure.
 
+:::
 
 :::{.conjecture}
 Central problem / conjecture:
