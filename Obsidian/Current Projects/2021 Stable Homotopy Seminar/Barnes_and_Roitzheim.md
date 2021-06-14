@@ -10,9 +10,10 @@
   - $L_E X$
   - $H^* X$ for $X\in \Spectra$
     - $H^* \SS = \FF_2$?
-  - $\pi_n X = [\Suspend^n \SS, X] = [\SS^{\smashprod n}\smashprod \SS, X]$
-  - Generalized homology: $E_nX = \pi_n \qty{E \smashprod X} = [\Suspend^n \SS, E\smashprod X]$
-  - Generalized cohomology: $E^n X = = [\Suspend^{-n}X, E]$.
+  - $\mca$ the mod $p$ Steenrod algebra, usually $p=2$.
+  - $\pi_n X \da \colim_k \pi_{n+k} X_k =_? [\Suspend^n \SS, X] =_? [\SS, X]_{n}$
+  - Generalized homology: $E_nX = \pi_n \qty{E \smashprod X} = [\Suspend^n \SS, E\smashprod X] =_? [\SS, E\smashprod X]_{n}$
+  - Generalized cohomology: $E^n X \da [X, E]_{-n} =_? [\Suspend^{-n}X, E]$.
 
 - Strategy:
   ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
