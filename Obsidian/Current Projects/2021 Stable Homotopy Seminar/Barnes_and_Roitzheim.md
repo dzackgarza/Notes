@@ -5,12 +5,20 @@
   - $X\complete{p}$
   - $\ZZ_{(p)}$
   - $E^* E$
-  - $L_E X$
+  - $L_E X$
+  - $H^* X$ for $X\in \Spectra$.
 
-- ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
+- Strategy:
+  ![SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234714_Moon+_Reader_Pro.jpg)
 
 - General AdSS for usual homology:
   ![SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233221_Moon+_Reader_Pro.jpg)
+
+- Homological version: 
+  ![SmartSelect_20210606-233459_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233459_Moon+_Reader_Pro.jpg)
+
+- Special case for spheres:
+  ![SmartSelect_20210606-233944_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233944_Moon+_Reader_Pro.jpg)
 
 - Product structure on pages:
   ![SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg)
@@ -25,11 +33,9 @@
     This constructs the "standard Adams tower".
 
 - ![SmartSelect_20210606-233708_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233708_Moon+_Reader_Pro.jpg)
-- ![SmartSelect_20210606-233459_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233459_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-233811_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233811_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-233854_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233854_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-233916_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233916_Moon+_Reader_Pro.jpg)
-- ![SmartSelect_20210606-233944_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233944_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-234219_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234219_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-234312_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234312_Moon+_Reader_Pro.jpg)
 - ![SmartSelect_20210606-234502_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-234502_Moon+_Reader_Pro.jpg)
