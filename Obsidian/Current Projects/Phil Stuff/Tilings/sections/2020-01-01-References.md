@@ -27,12 +27,19 @@ If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$
 :::
 
 :::{.fact}
-For $\Sigma_g$ a genus $g$ surface, the Poincaré polynomial is given by $p(z) = 1 + 2gz + z^2$ and the Euler characteristic by $\chi(\Sigma_g) = 2-2g$.
+For $\Sigma_g$ a genus $g$ surface, the Poincaré polynomial and the Euler characteristic are given by 
+\[
+p(z) = 1 + (2g)z + z^2 && \chi(\Sigma_g) = 2-2g
+.\]
+
 :::
 
 
 :::{.proposition title="Euler characteristic is multiplicative in unramified covers"}
-If $\pi$ is an unramified covering map of degree $n$, then $\chi(\Sigma') = n\chi(\Sigma)$.
+If $Y\mapsvia{p} X$ is an unramified covering map of degree $d$, then 
+\[
+\chi(Y) = d\cdot \chi(X)
+.\]
 :::
 
 
