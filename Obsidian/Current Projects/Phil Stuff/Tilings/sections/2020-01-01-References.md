@@ -79,27 +79,17 @@ In coordinates, we have
 \[
 \omega \in \Omega^p(X) \implies \omega = 
 \sum f_I(\vector{z}) \Wedge dz_I
-.\]
-
-
+\]
+for some holomorphic functions $f_I: \CC^n \to \CC$.
 :::
 
 
-
-**Holomorphic Forms:**
-
-For $n = \dim_\CC X$, the $n\dash$forms are an important special case.
-Any such form $w$ is given in local coordinates $(z_1, \cdots, z_n)$ by 
-
-\[
-w = w(z_1, \cdots, z_n) dz_1 \wedge \cdots \wedge dz_n
-\]
-
-for some holomorphic function $w: \CC^n \to ?$.
-
-**Canonical Bundle:**
+:::{.definition title="Canonical Bundle"}
 Given a complex manifold $M$, we can define the tangent bundle $\CC^n \to TM \to M$ and the cotangent bundle $\CC^n \to T\dual M \to M$, which we'll just denote $T\dual M$.
 Then the canonical bundle is the bundle $\CC\to \Lambda^n T\dual M \to M?$, denoted by $\omega$, obtained by taking the $n$th exterior power.
+
+
+:::
 
 It is a theorem that the fibers are in fact complex lines $\CC^1$.
 For vector bundles, this is referred to as the *determinant bundle*.
