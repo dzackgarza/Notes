@@ -1,6 +1,4 @@
-# References and Basics
-
-**References:**
+# References
 
 - Survey Paper: Anton Zorich, [Flat Surfaces](https://arxiv.org/abs/math/0609392)
 - Alex Eskin, Andrei Okounkov, [Asymptotics of numbers of branched coverings of a torus and volumes of moduli spaces of holomorphic differentials](https://arxiv.org/abs/math/0006171)
@@ -12,6 +10,8 @@
 - Engel, [Hurwitz Theory of Elliptic Orbifolds, I](https://arxiv.org/abs/1706.06738)
 - Engel, [Hurwitz Theory of Elliptic Orbifolds, II](https://arxiv.org/abs/1809.07434)
 
+
+# Basics
 
 :::{.definition title="Ramified maps"}
 A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at a point $p\in \Sigma'$ iff in local charts $\pi$ has the form $z\mapsto z^n$ for some $n>1$.
@@ -27,7 +27,7 @@ If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$
 :::
 
 :::{.fact}
-$\vector{\beta}(\Sigma_g) = [1, 2g, 1, 0, \cdots]$ and $\chi(\Sigma) = 2-2g$.
+For $\Sigma_g$ a genus $g$ surface, the Poincaré polynomial is given by $p(z) = 1 + 2gz + z^2$ and the Euler characteristic by $\chi(\Sigma_g) = 2-2g$.
 :::
 
 
