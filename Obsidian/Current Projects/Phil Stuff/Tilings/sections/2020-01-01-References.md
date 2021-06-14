@@ -14,15 +14,17 @@
 # Basics
 
 :::{.definition title="Ramified maps"}
-A map $\pi: \Sigma \to \Sigma'$ of Riemann surfaces is said to be *ramified* at a point $p\in \Sigma'$ iff in local charts $\pi$ has the form $z\mapsto z^n$ for some $n>1$.
+A map $Y \mapsvia{f} X$ of Riemann surfaces is said to be **ramified** at a point $p\in Y$ iff in local charts $f$ has the form $z\mapsto z^n$ for some $n\geq 2$.
+The set of points where $f$ is ramified, sometimes denoted $R_f \subseteq Y$, is referred to as the **ramification locus**.
+Its image $B_f \da f(R_f) \subseteq X$ is referred to as the **branch locus**.
 :::
 
 :::{.slogan}
 All points in a punctured neighborhood of $\pi(p)$ have $n$ preimages.
 :::
 
-:::{.definition title="Ramification index"}
-If $\pi$ is ramified at $p$, the number of preimages $n$ is referred to as $e_p$, the *ramification index of $p$*.
+:::{.definition title="Branch points and ramification index"}
+If $Y\mapsvia{f} X$ is ramified at $p\in X$, the number of preimages $e_p \da \# f\inv(p)$ is referred to as the **ramification index** of $p$.
 
 :::
 
@@ -36,7 +38,7 @@ p(z) = 1 + (2g)z + z^2 && \chi(\Sigma_g) = 2-2g
 
 
 :::{.proposition title="Euler characteristic is multiplicative in unramified covers"}
-If $Y\mapsvia{p} X$ is an unramified covering map of degree $d$, then 
+If $Y\mapsvia{f} X$ is an unramified covering map of degree $d$, then 
 \[
 \chi(Y) = d\cdot \chi(X)
 .\]
@@ -44,11 +46,12 @@ If $Y\mapsvia{p} X$ is an unramified covering map of degree $d$, then
 
 
 :::{.theorem title="Riemann-Hurwitz"}
-If $\pi: \Sigma \to \Sigma'$ is a ramified covering map of degree $N$, then
+If $Y\mapsvia{f}X$ is a ramified covering map of degree $d$, then
 
 \[
-\chi(\Sigma') = N \chi(\Sigma) - \sum (e_p - 1) \quad\text{ i.e. } 2 g(\Sigma') - 2=  N(2g(\Sigma) - 2)  + \sum (e_p - 1)
+\chi(Y) = d\cdot  \chi(X) - \sum_{p} (e_p - 1) \quad\implies \quad 2 g(Y) - 2 =  d\cdot (2g(X) - 2)  + \sum (e_p - 1)
 .\]
+
 
 *Another useful form:*
 Let $r \in \Sigma'$ be the number of ramification points, and $b$ the number of branch points, i.e. their images in $\Sigma$.
