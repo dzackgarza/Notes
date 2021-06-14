@@ -1,5 +1,7 @@
 # Barnes and Roitzheim
 
+## Setup and Motivation
+
 - To define:
   - $[X, Y]_*$ 
   - $X\complete{p}$
@@ -22,6 +24,8 @@
 
 - Product structure on pages:
   ![SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233413_Moon+_Reader_Pro.jpg)
+
+## Construction
 
 - Definition of Adams tower: 
   ![SmartSelect_20210606-233542_Moon+_Reader_Pro.jpg](figures/SmartSelect_20210606-233542_Moon+_Reader_Pro.jpg)
