@@ -30,4 +30,5 @@ $$
 E_2^{p, q} = H^p(\mathcal{V}^\an, F) \abuts H^*(X^\an)
 $$
 	- Reductions: $H^*(X) \to H^*(X^\an)$ is associated to a morphism of spectral sequences?
+	So it suffices to show the $E_2$ pages are isomorphic.
 	- 
