@@ -29,5 +29,5 @@ where $F\in \Presh(X)$ is $H^q(\wait)$.
 $$
 E_2^{p, q} = H^p(\mathcal{V}^\an, F) \abuts H^*(X^\an)
 $$
-	- Reductions: $H^*(X) \to H^*(X^\an)$ induces a morphism of spectral sequences?
+	- Reductions: $H^*(X) \to H^*(X^\an)$ is associated to a morphism of spectral sequences?
 	- 
