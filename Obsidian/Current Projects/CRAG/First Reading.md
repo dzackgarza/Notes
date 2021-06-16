@@ -39,6 +39,13 @@ Daniel's description:
 - Period of a differential form
 - Schneider's theorem
 - Lefschetz principle
+- Natural isomorphism de Rham to Hodge coming from splitting in a filtration?
+- Tangent space of an abelian variety
+- Radical groups of height one
+- Restricted $p\dash$Lie algebras
+- Carier duals
+- Abelian schemes
+- Modular schemes
 
 # Notes
 
