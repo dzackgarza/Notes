@@ -35,4 +35,4 @@ where $F\in \Presh(X)$ is $H^q(\wait)$.
 	- Reduces to the case when $X$ is contained in an affine scheme, and is thus separated
 	- In this case the open sets $U_{i_k}$ are affine, so this is the situation in theorem 1.
 
-- If $X$ is complete, theorem 1' follo
+- If $X$ is complete, theorem 1' follows directly using the spectral sequences and Serre's GAGA
