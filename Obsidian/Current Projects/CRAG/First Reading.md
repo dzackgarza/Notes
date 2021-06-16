@@ -4,7 +4,7 @@ Daniel's description:
 > compares algebraic de Rham cohomology to the usual notion for manifolds, using resolution of singularities.
 
 # To Look Up
-
+- Hodge cohomology
 - Algebraic de Rham complex
 - Smooth scheme
 - Regular differentials
@@ -30,7 +30,15 @@ Daniel's description:
 - Birational morphism
 - Normal crossings divisor
 - Flasque sheaf
-- 
+- Grauert-Remmert comparison theorem on projective morphisms of analytic spaces
+- $\OO_{X, x}$
+- Algebraic sheaf
+- Leray spectral sequence for a morphisms of regular schemes
+- Extension of scalars
+- Complete nonsingular curve
+- Period of a differential form
+- Schneider's theorem
+- Lefschetz principle
 
 # Notes
 
