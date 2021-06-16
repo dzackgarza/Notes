@@ -41,12 +41,12 @@ $$
 - **Theorem 1'**: this is an isomorphism.
 	- This reduces to theorem 1: take a cover $\mathcal{U}\covers X$ by affine opens to get a convergent spectral sequence
 $$
-E_2^{p, q} = H^p(\mathcal{U}, F) \abuts H^*(X)
+E_2^{p, q} = H^p(\mathcal{U}, F^q) \abuts H^*(X)
 $$
-where $F\in \Presh(X)$ is $H^q(\wait)$.
+where $F^q\in \Presh(X)$ is $H^q(\wait)$.
 	- Take a similar open cover $\mathcal{V}^\an \covers X^\an$ to get
 		$$
-	E_2^{p, q} = H^p(\mathcal{V}^\an, F) \abuts H^*(X^\an)
+	E_2^{p, q} = H^p(\mathcal{V}^\an, F^q) \abuts H^*(X^\an)
 	$$
 	- Reductions: $H^*(X) \to H^*(X^\an)$ is associated to a morphism of spectral sequences?
 	So it suffices to show the $E_2$ pages are isomorphic.
@@ -60,4 +60,6 @@ where $F\in \Presh(X)$ is $H^q(\wait)$.
 
 - Can deduce theorem 1 from a stronger purely local theorem, using that resolution of singularities is valid on complex analytic spaces
 - **Theorem 2**: If $X$ is a reduced analytic space over $\CC$, $Y\subseteq X$ closed, $U := X\sm Y$ nonsingular and dense in $X$, then $Y$ can be locally defined by one equation.
-	- Let $\Omega_X^*(\ast Y)$
+	- Let $\Omega_X^*(\ast Y)$ be the complex of modules on $X$ of differential forms with polar singularities on $Y$
+		- On $U$ this reduces to the complex of holomorphic differential forms on $U$
+		- There is a canonical morphism $F^q( \Omega_X^* (\ast Y)) \to R^q f_* (\CC_U)$ where $
