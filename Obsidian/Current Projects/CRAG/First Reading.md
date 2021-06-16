@@ -46,6 +46,11 @@ Daniel's description:
 - Carier duals
 - Abelian schemes
 - Modular schemes
+- Differential of second kind
+- Complex multiplication
+- Proper map
+- Specialization
+- l-adic cohomology
 
 # Notes
 
