@@ -15,8 +15,14 @@ Daniel's description:
 - Prescheme
 - Complete variety
 - GAGA
+- Regular scheme
+- Associated analytic space
+- Hironaka's resolution of singularities
 
 # Notes
+
+## Part 1
+
 - **Theorem 1**: If $X\in \Aff\Alg\Sch_{/\CC}$ is regular (non-singular), then $H^*_\sing(X; \CC)$ is isomorphic to the cohomology of the algebraic de Rham complex: differential forms on $X$ which are rational and everywhere defined.
 
 - For $X \in \Pre\Sch_{/k}^{\ft}$ smooth, consider the complex of sheaves of regular differentials $\Omega_{X/k}^* \in \Ch(\Sheaves)$ with the exterior differential
@@ -49,3 +55,9 @@ where $F\in \Presh(X)$ is $H^q(\wait)$.
 	- In this case the open sets $U_{i_k}$ are affine, so this is the situation in theorem 1.
 
 - If $X$ is complete, theorem 1' follows directly using the spectral sequences and GAGA
+
+## Part 2
+
+- Can deduce theorem 1 from a stronger purely local theorem, using that resolution of singularities is valid on complex analytic spaces
+- **Theorem 2**: If $X$ is a reduced analytic space over $\CC$, $Y\subseteq X$ closed, $U := X\sm Y$ nonsingular and dense in $X$, then $Y$ can be locally defined by one equation.
+	- Let $\Omega_X^*(\ast Y)$
