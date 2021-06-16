@@ -33,3 +33,4 @@ where $F\in \Presh(X)$ is $H^q(\wait)$.
 	So it suffices to show the $E_2$ pages are isomorphic.
 	- It suffices to show this in the case where $X$ is a prescheme that is a finite intersection of opens: $X = \Intersect_{k=1}^n U_{i_k}$.
 	- Reduces to the case when $X$ is contained in an affine scheme, and is thus separated
+	- In this case the open sets $U_{i_k}$ are affine
