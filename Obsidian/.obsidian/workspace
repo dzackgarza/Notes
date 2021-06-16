@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/CRAG/First Reading.md",
-            "mode": "source"
+            "file": "zettelkasten/Stable Homotopy Seminar.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md"
+                "file": "zettelkasten/Stable Homotopy Seminar.md"
               }
             }
           },
@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 190,
-    "collapsed": true
+    "width": 247.5
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "zettelkasten/Stable Homotopy Seminar.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +241,8 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "zettelkasten/Stable Homotopy Seminar.md",
+    "Current Projects/CRAG/First Reading.md",
     "Current Projects/CRAG/Untitled.md",
     "Current Projects/Phil Stuff/Untitled.md",
     "Current Projects/Phil Stuff/Week of June 9th.md",
@@ -249,8 +250,6 @@
     "Current Projects/Phil Stuff/Tilings/sections/2020-01-16 Translation Surfaces.md",
     "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
-    "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
-    "Current Projects/2021 Stable Homotopy Seminar/Exact_Couples.md",
-    "Current Projects/2021 Stable Homotopy Seminar/BR_AdSS/Barnes_and_Roitzheim.md"
+    "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md"
   ]
 }
