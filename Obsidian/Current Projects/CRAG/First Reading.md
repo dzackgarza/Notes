@@ -19,6 +19,18 @@ Daniel's description:
 - Associated analytic space
 - Hironaka's resolution of singularities
 - Kahler forms
+- Ample divisor
+- Stein space
+- Coherent sheaves
+- $\OO_X\dash$modules
+- Holomorphically convex subsets
+- Projective closure of a subset
+- Serre's vanishing theorem
+- Projective morphism
+- Birational morphism
+- Normal crossings divisor
+- Flasque sheaf
+- 
 
 # Notes
 
@@ -73,3 +85,6 @@ where $F^q\in \Presh(X)$ is $H^q(\wait)$.
 $$
 H^q \Gamma (X, \Omega_X^*(\ast Y)) \mviso H^q_{\sing}(U; \CC)
 $$
+- In particular this holds in specific cases:
+	- $X$ projective with $Y$ the support of an ample positive divisor on $X$
+	- $X$ Stein
