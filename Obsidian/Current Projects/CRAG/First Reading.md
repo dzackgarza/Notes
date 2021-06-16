@@ -69,3 +69,7 @@ where $F^q\in \Presh(X)$ is $H^q(\wait)$.
 	$$
 
 - Defining this sheaf of modules with polar singularities: take $f_*(\Omega_U^*)$, take the subsheaf whose sections on $V$ are holomorphic differential forms on $V\intersect U$ that are restrictions of Kahler forms on $V$.
+- Corollary: if $H^{>0}(X, \Omega_X^q(\ast Y)) =0$ then there is an isomorphism
+$$
+H^q \Gamma (X, \Omega_X^*(\ast Y)) \mviso H^q_{\sing}(U; \CC)
+$$
