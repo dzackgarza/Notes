@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
-            "mode": "preview"
+            "file": "Current Projects/CRAG/First Reading.md",
+            "mode": "source"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md"
+                "file": "Current Projects/CRAG/First Reading.md"
               }
             }
           },
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 190
+    "width": 190,
+    "collapsed": true
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +242,15 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "Current Projects/CRAG/Untitled.md",
+    "Current Projects/Phil Stuff/Untitled.md",
+    "Current Projects/Phil Stuff/Week of June 9th.md",
+    "Current Projects/Phil Stuff/Tilings/sections/001_Basics.md",
+    "Current Projects/Phil Stuff/Tilings/sections/2020-01-16 Translation Surfaces.md",
+    "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
     "Current Projects/2021 Stable Homotopy Seminar/Exact_Couples.md",
-    "Current Projects/2021 Stable Homotopy Seminar/BR_AdSS/Barnes_and_Roitzheim.md",
-    "Current Projects/Phil Stuff/Tilings/Tilings VRG.md",
-    "Current Projects/Phil Stuff/Tilings/Tilings.pdf",
-    "zettelkasten/Mazur's Program B.md",
-    "zettelkasten/Serre spectral sequence.md",
-    "Current Projects/Phil Stuff/Tilings/FullNotes.pdf",
-    "Current Projects/Phil Stuff/Untitled.md"
+    "Current Projects/2021 Stable Homotopy Seminar/BR_AdSS/Barnes_and_Roitzheim.md"
   ]
 }

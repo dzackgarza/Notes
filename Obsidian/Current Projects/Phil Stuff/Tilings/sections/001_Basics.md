@@ -191,6 +191,8 @@ For flat tori, $\mch = \GL_+(2, \RR)/\SL(2, \ZZ)$.
 
 :::
 
+Fact:
+- $K_{\PP^n} = \OO(-n-1)$
 
 # Elliptic Orbifolds
 
