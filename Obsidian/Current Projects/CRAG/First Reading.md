@@ -31,4 +31,4 @@ E_2^{p, q} = H^p(\mathcal{V}^\an, F) \abuts H^*(X^\an)
 $$
 	- Reductions: $H^*(X) \to H^*(X^\an)$ is associated to a morphism of spectral sequences?
 	So it suffices to show the $E_2$ pages are isomorphic.
-	- It suffices to show this in the case where $X$ is a prescheme that is a finite inter
+	- It suffices to show this in the case where $X$ is a prescheme that is a finite intersection of opens: $X = \Intersect_{i=1}^n U_{i_k}
