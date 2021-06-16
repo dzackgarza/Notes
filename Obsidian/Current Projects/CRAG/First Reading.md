@@ -7,7 +7,14 @@ Daniel's description:
 
 - Algebraic de Rham complex
 - Smooth scheme
-- Reg
+- Regular differentials
+- Hypercohomology
+- Hodge cohomology
+- Poincare Lemma
+- Scheme
+- Prescheme
+- Complete variety
+- GAGA
 
 # Notes
 - **Theorem 1**: If $X\in \Aff\Alg\Sch_{/\CC}$ is regular (non-singular), then $H^*_\sing(X; \CC)$ is isomorphic to the cohomology of the algebraic de Rham complex: differential forms on $X$ which are rational and everywhere defined.
