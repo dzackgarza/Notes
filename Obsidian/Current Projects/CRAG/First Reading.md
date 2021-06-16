@@ -18,6 +18,7 @@ Daniel's description:
 - Regular scheme
 - Associated analytic space
 - Hironaka's resolution of singularities
+- Kahler forms
 
 # Notes
 
@@ -62,4 +63,9 @@ where $F^q\in \Presh(X)$ is $H^q(\wait)$.
 - **Theorem 2**: If $X$ is a reduced analytic space over $\CC$, $Y\subseteq X$ closed, $U := X\sm Y$ nonsingular and dense in $X$, then $Y$ can be locally defined by one equation.
 	- Let $\Omega_X^*(\ast Y)$ be the complex of modules on $X$ of differential forms with polar singularities on $Y$
 		- On $U$ this reduces to the complex of holomorphic differential forms on $U$
-		- There is a canonical morphism $F^q( \Omega_X^* (\ast Y)) \to R^q f_* (\CC_U)$ where $
+		- There is a canonical morphism, which is in fact an isomorphism: letting $f: U\injects X$,
+		$$
+	F^q( \Omega_X^* (\ast Y)) \to R^q f_* (\constantsheaf{\ro{\CC}{U} })
+	$$
+
+- Defining this sheaf of modules with polar singularities: take $f_*(\Omega_U^*)$, take the subsheaf whose sections on $V$ are holomorphic differential forms on $V\intersect U$ that are restrictions of Kahler forms on $V$.
