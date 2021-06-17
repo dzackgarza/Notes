@@ -9,6 +9,8 @@ Tags:
 - Lecture Notes: <https://webspace.science.uu.nl/~caval101/homepage/Geometry_and_Topology_2015_files/Groth%20-%20lecture%20notes%20on%20homotopy%20theory.pdf>
 	- Includes Postnikov and Whitehead towers
 
+<https://www.math.purdue.edu/~zhang24/towers.pdf>
+
 # Notes
 
 
