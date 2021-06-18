@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/Phil Stuff/Tilings Review.md",
-            "mode": "source"
+            "file": "Current Projects/Phil Stuff/Week of June 9th.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings Review.md",
+                "file": "Current Projects/Phil Stuff/Week of June 9th.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings Review.md"
+                "file": "Current Projects/Phil Stuff/Week of June 9th.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings Review.md",
+                "file": "Current Projects/Phil Stuff/Week of June 9th.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/Phil Stuff/Tilings Review.md",
+                "file": "Current Projects/Phil Stuff/Week of June 9th.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,9 +241,9 @@
   },
   "active": "feb8998356d5e685",
   "lastOpenFiles": [
+    "Current Projects/Phil Stuff/Week of June 9th.md",
     "Current Projects/Phil Stuff/Tilings Review.md",
     "zettelkasten/Postnikov tower.md",
-    "Current Projects/Phil Stuff/Week of June 9th.md",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
     "zettelkasten/Stable Homotopy Seminar.md",
     "Current Projects/CRAG/First Reading.md",
