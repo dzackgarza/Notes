@@ -32,7 +32,7 @@ Basic Questions:
 
 Example: Simple [Harmonic Oscillator](Harmonic%20Oscillator).
 
-![](../../figures%201/2020-02-03-21-23-02.png)
+![](../figures/figures%201/2020-02-03-21-23-02.png)
 
 
 - $K = \frac 1 2 mv^2 = \frac{p^2}{2m}$ where $p=mv$ is the momentum, given by $F = ma$
@@ -42,7 +42,7 @@ Example: Simple [Harmonic Oscillator](Harmonic%20Oscillator).
 - Conservation of energy shows that the time evolution of the system is governed by $\dd{x}{t} = -\dd{H}{p}$ and $\dd{p}{t} = \dd{H}{x}$
   - Corresponds to a path $\gamma: \RR \to \Phi$ along which $H$ is constant, i.e. a constant energy hypersurface corresponding (roughly) to $p^2 + q^2 = \mathrm{const}$
 
-	![](../../figures%201/2020-02-03-21-26-35.png)
+	![](../figures/figures%201/2020-02-03-21-26-35.png)
 
 	- If the Hamiltonian evolved over time, this region would travel around phases space, with the *volume* of this region invariant.
 

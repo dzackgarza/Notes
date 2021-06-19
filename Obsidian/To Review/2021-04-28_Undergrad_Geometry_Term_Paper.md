@@ -77,7 +77,7 @@ convenient symbolic shorthand used in modern mathematics, the very
 problems they studied were inextricably tied to the geometric situations
 from which they were born.
 
-![An Algebraic Identity Expressed Geometrically](../../figures%201/identity.png){#fig:my_label2 width="\\linewidth"}
+![An Algebraic Identity Expressed Geometrically](../figures/figures%201/identity.png){#fig:my_label2 width="\\linewidth"}
 
 Because the Greeks worked not primarily with individual number, but
 instead *magnitudes*: lengths, areas, volumes, and ratios thereof.
@@ -100,17 +100,17 @@ modern analytic and algebraic tools, the Greeks were able to
 characterize all such sections, yielding circles, ellipses, hyperbolas,
 parabolas, straight lines, and the degenerate case of a single point.
 
-![A Circle](../../figures%201/Selection_050.png){#fig:gull width="\\textwidth"}
+![A Circle](../figures/figures%201/Selection_050.png){#fig:gull width="\\textwidth"}
 
-![A Parabola](../../figures%201/Selection_051.png){#fig:tiger width="\\textwidth"}
+![A Parabola](../figures/figures%201/Selection_051.png){#fig:tiger width="\\textwidth"}
 
-![An Ellipse](../../figures%201/Selection_052.png){#fig:mouse width="\\textwidth"}
+![An Ellipse](../figures/figures%201/Selection_052.png){#fig:mouse width="\\textwidth"}
 
-![A Hyperbola](../../figures%201/Selection_053.png){#fig:gull2 width="\\textwidth"}
+![A Hyperbola](../figures/figures%201/Selection_053.png){#fig:gull2 width="\\textwidth"}
 
-![Two Lines](../../figures%201/Selection_055.png){#fig:tiger2 width="\\textwidth"}
+![Two Lines](../figures/figures%201/Selection_055.png){#fig:tiger2 width="\\textwidth"}
 
-![A Single Point](../../figures%201/Selection_054.png){#fig:mouse2 width="\\textwidth"}
+![A Single Point](../figures/figures%201/Selection_054.png){#fig:mouse2 width="\\textwidth"}
 
 Accordingly, the Greeks were aware of methods (for example) to solve
 problems such as "squaring the rectangle", to which one might associate
@@ -360,7 +360,7 @@ a 2-dimensional medium. This required the introduction of a point at
 which all parallel lines in the image would meet, which is now referred
 to as a *vanishing point* or a *point at infinity*.
 
-![](../../figures%201/vanishing.png){#fig:my_label width="0.8\\linewidth"}
+![](../figures/figures%201/vanishing.png){#fig:my_label width="0.8\\linewidth"}
 
 To see why Klein considered Projective geometry to be the most general
 and universal among the geometries known at his time, it suffices to

@@ -1,0 +1,1 @@
+Pick $R\in \CRing$. Put a sheaf of rings on $\spec R$ by [localization](localization.md). You’ll get your ring back taking [global sections](global%20sections).

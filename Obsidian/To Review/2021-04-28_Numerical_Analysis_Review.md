@@ -63,7 +63,7 @@ Tags: #review #numerical_analysis #undergraduate
 
 - Divided differences:
 
-  ![1513038075145](../../figures%201/1513038075145.png)
+  ![1513038075145](../figures/figures%201/1513038075145.png)
 
   - Can use this to make an interpolating polynomial: use the top diagonal as coefficients
     Then $$P_n(x) = f[x_0] + \sum_{i=1}^n f[x_0 \cdots x_n]\prod_{k=0}^i (x-x_i)$$

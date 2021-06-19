@@ -1,0 +1,4 @@
+- [UCLA Shariff course notes on Algebraic Number Theory](https://www.math.ucla.edu/~sharifi/algnum.pdf)
+- [Computational ANT](https://wstein.org/books/ant/ant.pdf)
+- [Berkeley Course Notes](https://math.berkeley.edu/~apaulin/NumberTheory.pdf)
+- [Milne's Book/Notes](jmilne.org/math/CourseNotes/ANTc.pdf)

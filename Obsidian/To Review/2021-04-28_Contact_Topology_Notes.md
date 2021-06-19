@@ -21,13 +21,13 @@ These are important because of their ties to *foliations*.
 Take $M=S^2$, so we have $\RR^2 \to TS^2 \to S^2$.
 The tangent spaces are planes, and codimension 1 spaces are lines:
 
-![](../../figures%201/2020-02-01-23-22-51.png)
+![](../figures/figures%201/2020-02-01-23-22-51.png)
 
 *Example 2 of a Hyperplane Fields:*
 Let $M = \RR^3$ so $TM \cong \RR^3$. 
 Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and $T_p\dual M = \spanof_\RR\theset{dx_1, dx_2, dx_3}$ locally and define $\xi$ by the condition $$dx_3 = 0$$
 
-![](../../figures%201/2020-02-01-22-28-35.png)
+![](../figures/figures%201/2020-02-01-22-28-35.png)
 
 > Idea: no movement in the $x_3$ direction, constrained to move only in $x_1, x_2$ directions. Assigns a "horizontal" hyperplane to each point in $\RR^3$.
 
@@ -38,7 +38,7 @@ Write $T_pM = \spanof_\RR\theset{\partial x_1, \partial x_2, \partial x_3}$ and 
 For $M=\RR^3$, write $T\dual \RR^3 = \spanof_\RR\theset{dx, dy, dz}$, and take $$\omega = dz + xdy \in \Omega^1(\RR^3)$$
 This is the "standard contact structure" on $\RR^3$, and assigns hyperplanes that look like this:
 
-![](../../figures%201/2020-02-01-22-34-56.png)
+![](../figures/figures%201/2020-02-01-22-34-56.png)
 
 > Remark:
 > Note that this has a more twisted structure, which is what geometrically makes it contact -- no embedded (hyper) surface in $\RR^3$ can have an open subset $U$ such that $\xi$ is tangent to $p$ for every $p\in U$.

@@ -1,0 +1,2 @@
+- Idea: the universe is a a bundle over spacetime with fibers equal to Calabi-Yaus. 
+	- The genus of fibers will correspond to families of observed particles.

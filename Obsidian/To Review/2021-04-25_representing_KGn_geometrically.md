@@ -50,6 +50,6 @@ There are two immediate generalizations:
 - First, replace $S^2$ with $S^n$ to obtain a corresponding picture for $K(\ZZ, n)$
 - Then, replace $\ZZ$ with an arbitrary abelian group. We then require that the aggregate word formed by all of the points multiples to the identity, and that coaslescing corresponds to multiplication of elements.
 
-![group swarm](../../figures%201/group-swarm.png)
+![group swarm](../figures/figures%201/group-swarm.png)
 
 This yields a geometric picture for $K(G, n)$ for any abelian group $G$.

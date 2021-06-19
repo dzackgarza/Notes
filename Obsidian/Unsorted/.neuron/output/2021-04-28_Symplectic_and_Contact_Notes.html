@@ -1,0 +1,392 @@
+<!DOCTYPE html></!DOCTYPE html><html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><title>Unknown - My Zettelkasten</title><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><style type="text/css">body{background-color:#eeeeee !important;font-family:"Ubuntu", serif !important}body .ui.container{font-family:"Ubuntu", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Kanit", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body div#neuron-theme-default-teal .zettel-content h1{background-color:rgba(0,181,173,0.1)}body div#neuron-theme-default-teal span.zettel-link-container span.zettel-link a{color:#00b5ad}body div#neuron-theme-default-teal span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#00b5ad}body div#neuron-theme-default-teal .deemphasized:hover div.item a:hover{color:#00b5ad !important}body div#neuron-theme-default-teal div#footnotes{border-top-color:#00b5ad}body div#neuron-theme-default-brown .zettel-content h1{background-color:rgba(165,103,63,0.1)}body div#neuron-theme-default-brown span.zettel-link-container span.zettel-link a{color:#a5673f}body div#neuron-theme-default-brown span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#a5673f}body div#neuron-theme-default-brown .deemphasized:hover div.item a:hover{color:#a5673f !important}body div#neuron-theme-default-brown div#footnotes{border-top-color:#a5673f}body div#neuron-theme-default-red .zettel-content h1{background-color:rgba(219,40,40,0.1)}body div#neuron-theme-default-red span.zettel-link-container span.zettel-link a{color:#db2828}body div#neuron-theme-default-red span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#db2828}body div#neuron-theme-default-red .deemphasized:hover div.item a:hover{color:#db2828 !important}body div#neuron-theme-default-red div#footnotes{border-top-color:#db2828}body div#neuron-theme-default-orange .zettel-content h1{background-color:rgba(242,113,28,0.1)}body div#neuron-theme-default-orange span.zettel-link-container span.zettel-link a{color:#f2711c}body div#neuron-theme-default-orange span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#f2711c}body div#neuron-theme-default-orange .deemphasized:hover div.item a:hover{color:#f2711c !important}body div#neuron-theme-default-orange div#footnotes{border-top-color:#f2711c}body div#neuron-theme-default-yellow .zettel-content h1{background-color:rgba(251,189,8,0.1)}body div#neuron-theme-default-yellow span.zettel-link-container span.zettel-link a{color:#fbbd08}body div#neuron-theme-default-yellow span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#fbbd08}body div#neuron-theme-default-yellow .deemphasized:hover div.item a:hover{color:#fbbd08 !important}body div#neuron-theme-default-yellow div#footnotes{border-top-color:#fbbd08}body div#neuron-theme-default-olive .zettel-content h1{background-color:rgba(181,204,24,0.1)}body div#neuron-theme-default-olive span.zettel-link-container span.zettel-link a{color:#b5cc18}body div#neuron-theme-default-olive span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#b5cc18}body div#neuron-theme-default-olive .deemphasized:hover div.item a:hover{color:#b5cc18 !important}body div#neuron-theme-default-olive div#footnotes{border-top-color:#b5cc18}body div#neuron-theme-default-green .zettel-content h1{background-color:rgba(33,186,69,0.1)}body div#neuron-theme-default-green span.zettel-link-container span.zettel-link a{color:#21ba45}body div#neuron-theme-default-green span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#21ba45}body div#neuron-theme-default-green .deemphasized:hover div.item a:hover{color:#21ba45 !important}body div#neuron-theme-default-green div#footnotes{border-top-color:#21ba45}body div#neuron-theme-default-blue .zettel-content h1{background-color:rgba(33,133,208,0.1)}body div#neuron-theme-default-blue span.zettel-link-container span.zettel-link a{color:#2185d0}body div#neuron-theme-default-blue span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#2185d0}body div#neuron-theme-default-blue .deemphasized:hover div.item a:hover{color:#2185d0 !important}body div#neuron-theme-default-blue div#footnotes{border-top-color:#2185d0}body div#neuron-theme-default-violet .zettel-content h1{background-color:rgba(100,53,201,0.1)}body div#neuron-theme-default-violet span.zettel-link-container span.zettel-link a{color:#6435c9}body div#neuron-theme-default-violet span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#6435c9}body div#neuron-theme-default-violet .deemphasized:hover div.item a:hover{color:#6435c9 !important}body div#neuron-theme-default-violet div#footnotes{border-top-color:#6435c9}body div#neuron-theme-default-purple .zettel-content h1{background-color:rgba(163,51,200,0.1)}body div#neuron-theme-default-purple span.zettel-link-container span.zettel-link a{color:#a333c8}body div#neuron-theme-default-purple span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#a333c8}body div#neuron-theme-default-purple .deemphasized:hover div.item a:hover{color:#a333c8 !important}body div#neuron-theme-default-purple div#footnotes{border-top-color:#a333c8}body div#neuron-theme-default-pink .zettel-content h1{background-color:rgba(224,57,151,0.1)}body div#neuron-theme-default-pink span.zettel-link-container span.zettel-link a{color:#e03997}body div#neuron-theme-default-pink span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#e03997}body div#neuron-theme-default-pink .deemphasized:hover div.item a:hover{color:#e03997 !important}body div#neuron-theme-default-pink div#footnotes{border-top-color:#e03997}body div#neuron-theme-default-grey .zettel-content h1{background-color:rgba(118,118,118,0.1)}body div#neuron-theme-default-grey span.zettel-link-container span.zettel-link a{color:#767676}body div#neuron-theme-default-grey span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#767676}body div#neuron-theme-default-grey .deemphasized:hover div.item a:hover{color:#767676 !important}body div#neuron-theme-default-grey div#footnotes{border-top-color:#767676}body div#neuron-theme-default-black .zettel-content h1{background-color:rgba(27,28,29,0.1)}body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color:#1b1c1d}body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color:#ffffff;background-color:#1b1c1d}body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:#1b1c1d !important}body div#neuron-theme-default-black div#footnotes{border-top-color:#1b1c1d}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.84999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) span.zettel-link a, div.item a{color:#808080 !important}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f8f8f8}body div.zettel-view .zettel-content pre{padding:0.5em 0.5em 0.5em 0.5em;overflow:auto;max-width:100%}body div.zettel-view .zettel-content div.pandoc-code{margin-left:auto;margin-right:auto}body div.zettel-view .zettel-content div.pandoc-code pre{background-color:#f8f8f8}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .ui.label.zettel-tag a.tag-inner{color:#000000}body .ui.label.zettel-tag a.tag-inner a{color:#000000}body span.zettel-link-container span.zettel-link a{font-weight:bold;text-decoration:none}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.raw{border:solid 1px #ff0000}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}body nav.top-menu{padding-top:1em;padding-bottom:1em;justify-content:center;text-align:center}body nav.top-menu > *{padding-left:0px;padding-right:0px}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}</style><link href="https://fonts.googleapis.com/css?family=Kanit|Ubuntu|Roboto+Mono&amp;display=swap" rel="stylesheet" /><script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><meta content="Unknown" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><script type="application/ld+json">[]</script><style type="text/css">pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style></head><body><div class="ui fluid container" id="neuron-theme-default-blue"><nav class="top-menu"><div class="ui inverted compact neuron icon menu blue"><a class="left item" href="search.html" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index.html" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container" id="zettel-container" style="position: relative"><div id="zettel-container-anchor" style="position: absolute; top: -24px; left: 0"></div><div class="zettel-view"><div class="ui error message"><h2 class="header">Zettel failed to parse</h2><p><pre>Tagged &quot;2021-04-28_Symplectic_and_Contact_Notes.md:1:0: error\n   | \n 1 | date: 2021-04-28 18:08:16\n   | ^\nparseTimeM: no parse of \&quot;2021-04-28 18:08:16\&quot;&quot;</pre></p></div><article class="ui raised attached segment zettel-content raw"><pre>---
+date: 2021-04-28 18:08:16
+tags: 
+  - Unfiled
+---
+
+[../Subjects/Contact](../Subjects/Contact.md)
+[Symplectic](Symplectic)
+[../2021-04-28_More_Weinstein_Notes](../2021-04-28_More_Weinstein_Notes.md)
+
+Topic: Weinstein Surgery and More
+
+References:
+
+- [Mike Usher&#39;s Notes](https://usherugamath.files.wordpress.com/2019/05/8230-s19.pdf)
+- From Stein to Weinstein and Back (Cieliebak and Eliashberg)
+
+# Why Care About Contact/Symplectic Geometry
+
+*Open Problem:**
+Does every triangular billiards admit a periodic orbit?
+
+*Answer (1775):* 
+Yes for acute triangles, there is at least one periodic orbit:
+
+![](2020-02-01-23-59-05.png)
+
+For arbitrary triangles: unknown!
+
+Historically, the study of periodic orbits motivated the definition of *contact structures*.
+
+**Definition (Hyperplane Field):**
+A *hyperplane* field $\xi$ is a codimension 1 sub-bundle $\RR^{n-1} \to \xi \to M$ of the tangent bundle $\RR^n \to TM \to M$.
+
+&gt; See examples.
+
+**Definition (Contact Manifold)**
+A smooth manifold with a hyperplane field $(M^{2n+1}, \xi)$ is *contact* iff $\xi = \ker \alpha$ for some $\alpha \in \Omega^1(M)$ where $\alpha \wedge (d\alpha)^n$ is a top/volume form in $\Omega^{2n+1}(M)$
+
+&gt; Note that $\lambda \wedge (d\lambda)^n = 0$ defines a foliation?
+
+**Definition (Reeb Vector Field):**
+There is a canonical vector field on every contact manifold: the Reeb vector field $X$. This satisfies $\lambda(X) = 1$ and $\iota_x d\lambda = 0$.
+
+&gt; *Remark:*
+&gt; Contact manifolds are cylinder-like boundaries of symplectic manifolds; namely if $M$ is contact then we can pick any $C^1$ increasing function $f: \RR \to \RR^+$  (e.g. $f(t) = e^t$) and obtain an exact symplectic form $\omega = d(f\lambda)$ on $M_C \definedas M \cross \RR$.
+
+&gt; Any such $f$ induces a Hamiltonian vector field on $M_C$, and the Reeb vector field is the restriction to $M \cross \theset{0}$.
+
+
+# Why Care About Contact Structures 
+
+Let $M$ be a symplectic manifold and $H: M \to \RR$ a Hamiltonian.
+
+For regular values $r\in \RR$ of the  Hamiltonian, $H\inv(r) \subset M$ is a submanifold $Y\subset M$ with a smooth vector field $X_H$ called a *regular level set*.
+
+**Question:**
+Does $X_H$ have a closed orbit on every regular level set?
+What conditions do you need to guarantee the existence of a closed orbit?
+
+Turns out not to depend on $H$, and only on the hypersurface $Y$.
+The existence of a closed orbit is equivalent to the existence of a closed embedded curve $\gamma$ that is everywhere tangent to $\ker(\restrictionof{\omega}{Y})$.
+
+**Question:**
+When is such a curve guaranteed to exist?
+
+**Theorem (Weinstein, 1972):** 
+If $Y$ is convex.
+
+**Theorem (Rabinowitz)**: 
+If $Y$ is &quot;star-shaped&quot; (exists a point $p$ that can &quot;see&quot; all points via straight lines).
+
+**Theorem (1987):**
+Every contact-type hypersurface in the symplectic manifold $(\RR^{2n}, \omega)$ contains a periodic orbit.
+
+**Conjecture (Weinstein, 1978):**
+Let $(M, \xi)$ be a closed (compact) contact manifold with a Reeb vector field $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a periodic orbit.
+
+**Theorem (Weinstein, Dimension 3, Overtwisted. 1993):**
+Let $(M, \lambda, \xi)$ be a closed contact 3-manifold where $\lambda$ is overtwisted. 
+Then the **Reeb vector field** $X$ admits a periodic orbit.
+
+# Definitions
+
+**Definition (Hamiltonian)**:
+A smooth function $H: M \to \RR$ will be referred to as an energy functional or a *Hamiltonian*.
+If we have $H: M\cross I \to \RR$, we&#39;ll refer to this as a *time-dependent Hamiltonian*, i.e. the time slices $H_t: M \to \RR$ given by $H_t(p) = H(p, t)$ are Hamiltonians.
+
+&gt; *Remark:*
+&gt; If $(M, \omega)$ is a symplectic manifold, each $H_t: M \to I$ induces a unique vector field $X_{H_t}$ characterized by the property $\iota_{X_{H_t}}\omega = -dH_t$ where $\iota$ is the interior product.
+
+**Definition (Symplectic Manifold):**
+Recall that $M^{2n}$ is a **symplectic manifold** iff $W$ is smooth of even dimension and admits a 
+
+- closed: $d\omega = 0$
+- nondegenerate $\omega_p: T_p M \cross T_p M \to \RR$; $\omega_p(\vector v,\vector w) = 0~~\forall \vector w \implies \vector v= 0$.
+- skew-symmetric: $\omega_p(\vector v, \vector w) = \omega_p(\vector w, \vector v)$. 
+- bilinear: Lifts to a map $T_pM\tensor T_P M \to \RR$
+- 2-form 
+$$
+\omega \in \Omega^2(M) = \Gamma^{\infty}(\bigwedge^2 T\dual M)
+.$$ 
+
+&gt; *Motivation*: 
+&gt; There is Hamiltonian $H$ in the background, we want this to induce a vector field $V_H$ and thus a flow.
+
+&gt; Motivation for definitions: we want an &quot;antisymmetric inner product&quot;.
+&gt;
+&gt; - *Closed:* 
+  The lie derivative of $\omega$ along $V_H$ is 0, i.e. $\mathcal{L}_{V_H}(\omega) = 0$.
+&gt;
+&gt;  - *Nondegenerate:* 
+    Implies that for every $dH$ there exists a vector field $V_H$ such that $dH = \omega(V_H, \wait)$.
+&gt;
+&gt; - *Skew-symmetry:*
+    $H$ should be constant along flow lines, i.e. $dH(V_H) = \omega(V_H, V_H) = 0$
+&gt;
+&gt; - *Bilinear:*
+    Send any form $\inner{\wait}{\wait}: V\times V \to k$ to the linear map $f: V \to V\dual$ where $f(v) = \inner{v}{\wait}$. If the pairing is nondegenerate, $\ker f = 0$, and we get an identification $V\cong V\dual$.
+
+&gt; **Important Remark**
+&gt; $\omega$ being nondegenerate yields $TM \cong T\dual M$, which can be combined with $\iota$ to obtain an isomorphism $\mathfrak{X}(M) \cong \Omega^1(M)$.
+So we can freely trade 1-forms for vector fields. Very useful!
+&gt;
+&gt; MOST IMPORTANTLY: for any smooth functional $f: M \to \RR$, we can associate to it a vector field $X_f$.
+
+**Definition (Hamiltonian vector field):**
+Given a smooth functional $H: (M, \omega) \to \RR$, the associated *Hamiltonian vector field* is the unique field $X_H$ satisfying $\omega(X_H, \wait) = dH$.
+
+&gt; Remark: Conservation of energy
+&gt; Since $\omega$ is alternating,
+\begin{align*}
+X_H(H) = dH(X_H) = \omega(X_H, X_H) = 0
+.\end{align*}
+
+**Proposition:**
+$(M, \omega \in \Omega^2(M))$ is symplectic iff $\omega^n \neq 0$ everywhere (c.f. Mike Hutchings).
+
+**Corollary:**
+Every symplectic manifold is orientable (since it has a nonvanishing volume form).
+
+&gt; **Important Remark:**
+Symplectic structures on smooth manifolds give us a way to generate *flows* on a manifold (by defining a Hamiltonian or a symplectic vector field).
+
+**Definition (Exact Symplectic Manifold):**
+$W$ is an *exact* symplectic manifold iff there exists a 1-form $\lambda \in \Omega^1(W)$ such that $d\lambda \in \Omega^2(W)$ is non-degenerate.
+
+&gt; **Remark**:
+&gt; If $(W, \lambda)$ is exact symplectic then $(W, d\lambda)$ is symplectic.
+&gt; $\lambda$ is sometimes referred to as a *Liouville form*.
+
+&gt; **Important Remark:**
+&gt; If $(W, \lambda)$ is exact and $H: \RR \cross M \to \RR$ is smooth, then the *Hamiltonian flow* $\phi_H^t: M \to M$ is defined for all time and is an *exact symplectomorphism*.
+
+**Theorem:**
+There are no closed (compact and boundaryless) exact symplectic manifolds.
+
+*Proof:*
+\begin{align*}
+\int_{\bd M} \lambda \wedge \omega^{n-1} 
+&amp;= \int_M d(\lambda \wedge \omega^{n-1}) \\ 
+&amp;= \int_M d\lambda \wedge \omega^{n-1} + (-1)^{\abs \lambda}\lambda\wedge d\omega^{n-1} \\
+&amp;= \int_M \omega \wedge \omega^{n-1} + (-1)^{\abs\lambda} \lambda \wedge 0 \\
+&amp;= \int_M \omega^n \\
+&amp;= \mathrm{Vol}_{\text{Sp}}(M) \\
+&amp;&gt; 0
+,\end{align*}
+
+so $\bd M \neq 0$, and thus $M$ can not be closed.
+
+$\qed$
+
+**Definition (Liouville Vector Field):**
+Let $(W, \lambda)$ be exact symplectic.
+The Liouville vector field on $(W, \omega = d\lambda)$ is the (unique) vector field $X$ such that $\iota_x \omega = \lambda$.
+
+&gt; Remark:
+&gt; $X$ induces a flow $\psi^{X, t}$, and for any compact embedded surface $\Sigma_g \injects W$ we have
+\begin{align*}
+\psi^{X, t *} d \lambda&amp;= e^{t} d \lambda \implies \\
+\operatorname{Area}_{d \lambda}\left(\psi^{X, t}(S)\right)
+&amp;:=\int_{\psi^{X, t}(S)} d \lambda\\
+&amp;=\int_{S} (\psi^{X, t})^* d \lambda\\
+&amp;=e^{t} \operatorname{Area}_{d \lambda}(S)
+\end{align*}
+&gt;
+&gt; This says that the flow lines of $X$ &quot;dilate&quot; the areas of surfaces at an exponential rate, or that $X$ is an &quot;infinitesimal generator&quot; of a canonical dilation..
+
+&gt; Remark:
+&gt; This is useful because even if $W$ isn&#39;t compact, we can obtain $W$ as the &quot;limit&quot; of compact submanifolds where we inflate along this flow.
+
+**Theorem:**
+A Liouville vector field $X$ satisfies $\mathcal{L}_X \omega = \omega$, where $\mathcal{L}_X$ is the Lie Derivative.
+
+*Proof:*
+\begin{align*}
+\mathcal{L}_X \omega = [d, \iota_X] \omega = \iota_X(d\omega) + d(\iota_x \omega) = \iota_x(d\omega) + d\lambda = \iota_X(0) + d\lambda = d\lambda = \omega
+.\end{align*}
+
+&gt; Use the fact that $\omega$ is closed, so $d\omega = 0$.
+
+$\qed$
+
+**Definition (Contact Type):**
+For $(W, \lambda)$ an exact symplectic manifold, a codimension 1 submanifold $Y \subset W$ is of *restricted contact-type* iff $X$ is transverse to $Y$, i.e. for every $p\in Y$, we have $X(p) \not\in T_p(Y)$.
+
+We say $Y$ is of *contact type* iff there is a neighborhood $U \supset Y$ and a one-form $\lambda$ with $d\lambda = \restrictionof{\omega}{U}$ making $(U, \lambda)$ of restricted contact type.
+
+&gt; Remark:
+&gt;$(U, \lambda)$ is of restricted contact type iff $\restrictionof{\lambda}{U}$ is a contact form.
+
+**Definition (Hypersurface of contact type):**
+For $(X, \omega)$ a symplectic manifold, a hypersurface $\Sigma \injects X$ is of *contact-type* iff there is a contact form $\lambda$ such that $d\lambda = \restrictionof{\omega}{Y}$.
+
+**Definition (Liouville Domain):**
+$(W, \lambda)$ is a Liouville domain iff $W$ is a *compact* exact symplectic manifold with boundary such that the Liouville vector field $X$ points outwards on $\bd W$ transversally.
+
+&gt; Remark:
+&gt; This condition implies that $\bd W$ is a contact manifold with contact form $\alpha = \restrictionof{\lambda}{\bd W}$.
+
+**Definition (Isotropic):**
+Let $\Lambda$ be the image of an embedded sphere $S^k \to W$.
+Then $\Lambda$ is *isotropic* iff $\restrictionof{\lambda}{\Lambda} = 0$.
+
+**Definition (Weinstein Surgery):**
+Let $(W, \lambda)$ be a Liouville domain (although we won&#39;t need compactness).
+
+&gt; Recall: $(W, \lambda)$ is a $2n\dash$dimensional exact symplectic manifold with contact-type boundary $\bd W$ such that the Liouville vector field $X$ points outwards along $\bd W$.
+
+Weinstein surgery takes 
+
+- $(W, \lambda)$ a $2n\dash$dimensional manifold
+- That is exact and symplectic
+- With contact-type boundary $\bd W$
+- Where the Liouville vector field points outward along $\bd W$
+
+and produces a distinct manifold $(W(\Lambda), \lambda&#39;)$ with the above properties which is obtained by surgery along $\Lambda$ an isotropic embedded sphere.
+Thus $W(\Lambda)$ is obtained from attaching a $k\dash$handle to $W$ along $\Lambda$. 
+
+## Aside on Surgery
+
+### Analogy: CW Cell Attachment
+
+Given $X$, we can form $\tilde X = X^n \disjoint_\phi e^n$ where $e^n \cong D^n$ is an $n\dash$cell and $\phi: S^{n-1} \to X$ is the characteristic/attaching map.
+
+&gt; Remark: Why $S^{n-1}$? Really it&#39;s $\bd e^n = \bd D^n = S^{n-1}$.
+
+![](2020-02-05-00-22-18.png)
+
+Problem:
+This doesn&#39;t &quot;see&quot; the smooth structure, and CW complexes can have singular points (e.g. $S^2 = e^0 \disjoint e^2$.
+
+![](2020-02-05-12-25-15.png)
+
+Solution:
+Use *tubular neighborhoods*.
+
+
+**Definition (Surgery):**
+Given a manifold $M^n$ where $n=p+q$, then $p\dash$surgery on $M$, denoted $\mathcal{S}(M)$, result of cutting out $S^p \cross D^q$ and gluing back in $D^{p+1} \cross S^{q-1}$.
+
+Let $\Gamma_{p, q} = S^p \cross D^q$, call this our &quot;surgery cell&quot;.
+As in the CW case, we want to attach this cell via an embedding of its boundary into $M$.
+
+We can compute
+$$
+\bd(S^p\cross D^q) = S^p \cross S^{q-1} = \bd(\mathbf{D^{p+1} \cross S^{q-1}})
+$$ 
+
+then the above says
+$$
+\bd \Gamma_{p, q} = S^p \cross S^q = \bd \Gamma_{p+1, q-1}
+$$
+
+So fix any embedding 
+$$\phi: \Gamma_{p, q} \to M$$
+
+Note that this restricts to some map (abusing notation) 
+$$\phi: \bd \Gamma_{p, q} \to M$$
+
+So by the above observation, we can trade this in for a map
+\begin{align*}
+\phi: \bd\Gamma_{p+1, q-1} \to M
+.\end{align*}
+
+And so we can use this as an attaching map:
+\begin{align*}
+\mathcal{S}_p(M) \definedas M\setminus \phi(\Gamma_{p, q})^\circ \disjoint_\phi \Gamma_{p+1, q-1} 
+.\end{align*}
+
+
+**Definition (Handle Attachment)**
+Given a manifold $(M^n, \bd M^n)$ with boundary, attaching a $p\dash$handle to $M$, denoted $H_p(M)$, is given by $p\dash$surgery on $\bd M$, i.e. 
+\begin{align*}
+H_p(M)^\circ    &amp;= M \\
+\bd H_p(M)      &amp;= \mathcal{S}_k(\bd M)
+.\end{align*}
+
+&gt; Remark: we need conditions on the embedding of the normal bundle for this to work.
+
+**Examples of Handles :**
+$S^1 \cross D^2 \cong \bar T$, a solid torus.
+
+A useful table:
+
+![](2020-02-05-00-59-19.png)
+
+&gt; See examples of surgery
+
+**Definition (Weinstein Surgery):**
+We now add a $k\dash$handle along $\Lambda \subset \bd W$ to yield some $W&#39;$, where $\bd W&#39;$ is obtained by surgery in $\bd W$ along $\Lambda$.  
+
+# Why Care About Weinstein Surgery
+
+**Theorem:** 
+Every compact contact 3-manifold arises as a combination of (2 different variants of) Weinstein surgeries on $S^3$.
+
+&gt; Compare to theorem: 
+Every compact 3-manifold arises as surgery on a link.
+
+**Theorem:** 
+Weinstein surgery on a *loose Legendrian* knot yields an overtwisted contact structure.
+
+&gt; Compare: 
+Every compact manifold is surgery on a link and admits a contact structure.
+
+&gt; However, not every compact 3-manifold $M$ admits a *fillable* contact structure $(M, \xi)$ (roughly: admits a symplectic manifold $(X, \omega)$ with $\bd X = M$ and some compatibility between $\xi, \omega$) -- need framing to be realizable as a *Legendrian* framing.
+
+**Theorem:** 
+Weinstein surgery along a loose Legendrian sphere yields an overtwisted contact manifold.
+</pre></article></div></div><div class="ui one column grid footer-version"><div class="center aligned column"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron" /></a></div></div></div></div></body></html>

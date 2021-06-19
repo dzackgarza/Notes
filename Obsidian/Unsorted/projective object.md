@@ -1,0 +1,1 @@
+$\Hom_{\cat C}(\one, \wait)$ is an exact functor, or one can lift along surjections.

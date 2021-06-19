@@ -69,15 +69,15 @@ fontsize: 10pt
 ## Images
 
 
-![Simplicial Complexes vs CW Complexes](../../figures%201/image_2020-04-27-19-59-02.png)
+![Simplicial Complexes vs CW Complexes](../figures/figures%201/image_2020-04-27-19-59-02.png)
 
-![Stereographic Projection](../../figures%201/image_2020-04-27-20-43-11.png)
+![Stereographic Projection](../figures/figures%201/image_2020-04-27-20-43-11.png)
 
 [Hopf Fibration Visualizer](http://philogb.github.io/page/hopf/#)
 
-![Simply Connected 1](../../figures%201/image_2020-04-27-21-32-02.png)
+![Simply Connected 1](../figures/figures%201/image_2020-04-27-21-32-02.png)
 
-![Simply Connected 2](../../figures%201/image_2020-04-27-21-32-31.png)
+![Simply Connected 2](../figures/figures%201/image_2020-04-27-21-32-31.png)
 
 A bundle
 

@@ -71,7 +71,7 @@ $$d^0_{i,j}: E^0_{i,j} \to E^0_{i-1, j}$$
 
 and arranging these in columns, yielding the following situation
 
-![Page 0 with differentials](../../figures%201/SSFiltrationStack.png)
+![Page 0 with differentials](../figures/figures%201/SSFiltrationStack.png)
 
 Now, since each $G^i C^\wait$ is a chain complex, we can take the homology with respect to these differentials, so we define
 
@@ -83,11 +83,11 @@ $$
 
 Which yields the following $E^1$ page:
 
-![Page 0 with differentials](../../figures%201/SSFiltrationStackP1.png)
+![Page 0 with differentials](../figures/figures%201/SSFiltrationStackP1.png)
 
 Which by definition is
 
-![Page 0 with differentials](../../figures%201/SSFiltrationStackP1Homology.png)
+![Page 0 with differentials](../figures/figures%201/SSFiltrationStackP1Homology.png)
 
 We now claim that there is a differential
 

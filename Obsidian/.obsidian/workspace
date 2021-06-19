@@ -4,13 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "feb8998356d5e685",
+        "id": "4d71c8b31c92d00e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
-            "mode": "preview"
+            "file": "figures/figures 1/2019-11-06-11:48.png"
           }
         }
       }
@@ -78,7 +77,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+                "file": "figures/figures 1/2019-11-06-11:48.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md"
+                "file": "figures/figures 1/2019-11-06-11:48.png"
               }
             }
           },
@@ -146,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+                "file": "figures/figures 1/2019-11-06-11:48.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
+                "file": "figures/figures 1/2019-11-06-11:48.png",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -239,17 +238,17 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "feb8998356d5e685",
+  "active": "4d71c8b31c92d00e",
   "lastOpenFiles": [
+    "figures 1/2019-11-06-11:48.png",
+    "figures/2-21-18-ee15e.png",
+    "figures/2-21-18-e8619.png",
+    "BlogPosts/Talk Surface bundles, mapping class groups, moduli spaces, and cohomology.md",
+    "figures 1/2-21-18-e8619.png",
+    "99_subject index.md",
+    "wordcloud.png",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
     "Current Projects/2021 Stable Homotopy Seminar/Barnes_Roitzheim_General_Reading.md",
-    "Current Projects/2021 Stable Homotopy Seminar/Exact_Couples.md",
-    "Current Projects/Phil Stuff/Week of June 9th.md",
-    "Current Projects/Phil Stuff/Tilings Review.md",
-    "zettelkasten/Postnikov tower.md",
-    "zettelkasten/Stable Homotopy Seminar.md",
-    "Current Projects/CRAG/First Reading.md",
-    "Current Projects/CRAG/Untitled.md",
-    "Current Projects/Phil Stuff/Untitled.md"
+    "Current Projects/2021 Stable Homotopy Seminar/Exact_Couples.md"
   ]
 }

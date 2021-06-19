@@ -1,0 +1,5 @@
+![](../attachments/Pasted%20image%2020210613150000.png)
+![For $E$ an elliptic curve](../attachments/Pasted%20image%2020210613150012.png)
+![](../attachments/Pasted%20image%2020210613150035.png)
+![](../attachments/Pasted%20image%2020210613150055.png)
+![](../attachments/Pasted%20image%2020210613150103.png)

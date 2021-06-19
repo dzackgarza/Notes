@@ -1,0 +1,8 @@
+- [[First fundamental form]]
+- [[Second fundamental form]]
+- [[Laplace-Beltrami operator]]
+- Types of curvature:
+	- [Gaussian curvature](Gaussian%20curvature)
+	- [[Ricci curvature]]
+	- [[Sectional curvature]]
+- [Holonomy Classification](Holonomy%20Classification.md)

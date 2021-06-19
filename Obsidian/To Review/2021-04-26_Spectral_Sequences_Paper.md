@@ -42,7 +42,7 @@ Unless otherwise specified, one often implicitly takes $S=\NN$ or $\ZZ$ and simp
 Because the most common situation is $S=\ZZ$, elements $i\in S$ are referred to as **degrees** or indices. Each module $A^i$ is thus referred to as the "$i$th graded piece" of the complex $A^\wait$, and elements in $A^i$ are denoted "homogeneous elements of degree $i$".
 
 It is also common to take $S = \ZZ^2$, and the resulting $\ZZ^2\dash$graded complex $A^{\wait, \wait}$ is denoted a **bigraded complex** or a **double complex**. Such complexes can equivalently be thought of as a family of modules $A^{i, j}$, each characterized by a pair of indices $(i, j)$ denoted its **bidegree**, which are often depicted as elements on an integer lattice:
-![Double Complex](../../figures%201/ddnoarows.png)
+![Double Complex](../figures/figures%201/ddnoarows.png)
 
 Given a graded complex $A^\wait$, one may also consider maps between the graded pieces. which take the form $d^s: A^s \to A^t$. Without loss of generality, one can assume $s \leq t$ and setting $i = t-s$, this may be rewritten as $d^s: A^s \to A^{s+i}$.We thus define the **degree** of $d$ to be the quantity $i$, or occasionally it is said that $d$ "moves along the grading by $i$". Such complexes are often depicted on a 2 dimensional integer lattice, as in the following image:
 
@@ -119,25 +119,25 @@ Spectral sequences are perhaps best understood through example, and so it is wor
 
 In general, elements on the zeroth page of a spectral sequence, corresponding to $r=0$ will have differentials of bidegree $(0, 1)$ and will thus move the grading up along the vertical direction, and thus $E_0^{\wait, \wait}$ will have the following form:
 
-![Page 0 with differentials](../../figures%201/SS%20Page%200%20with%20Differential.png)
+![Page 0 with differentials](../figures/figures%201/SS%20Page%200%20with%20Differential.png)
 
 Similarly, taking $r=1$ to obtain to first page will yield differentials of bidegree $(1, 0)$ which will move the grading forward horizontally, giving $E_1^{\wait, \wait}$ the following form:
 
-![Page 1 with differentials](../../figures%201/SSPage1WithDifferential.png)
+![Page 1 with differentials](../figures/figures%201/SSPage1WithDifferential.png)
 
 And taking $r=2$ to obtain the second page yields differentials of bidegree $(2, -1)$, giving $E_2^{\wait, \wait}$ the following form:
 
-![Page 2 with differentials](../../figures%201/SSPage2WithDifferential.png)
+![Page 2 with differentials](../figures/figures%201/SSPage2WithDifferential.png)
 
 When working with spectral sequences, it is often the case that one is interested in what happens to a single entry as one steps along pages, and so it is also worth observing the pattern of differentials emanating from a single point:
 
-![Differentials from a given entry](../../figures%201/SSDoubleComplexDifferentialPattern.png)
+![Differentials from a given entry](../figures/figures%201/SSDoubleComplexDifferentialPattern.png)
 
 And so we see that differentials whose source is at coordinate $(p, q)$ tend to have targets having total degree $(p+q)+1$, forming a diagonal line _above_ the element in question. In this image, we have $(p,q) = (0,1)$, and so we expect differentials to hit elements of total degree $(0+1)+1 = 2$ as we move through the pages. This is indeed the case, as the targets of the corresponding differentials are $E_0^{0,2}, E_1^{1,1}, E_2^{2,0}$ respectively on each page.
 
 In a dual fashion, given a single entry, one is often interested in which differentials target that entry:
 
-![Differentials that target a given entry](../../figures%201/SSDoubleComplexDifferentialPatternOutOfNode.png)
+![Differentials that target a given entry](../figures/figures%201/SSDoubleComplexDifferentialPatternOutOfNode.png)
 
 And so we see that given an entry at coordinate $(p, q)$, the differentials that target it tend to come from elements of total degree $(p+q)-1$, lying on a diagonal line _below_ the element we are interested in. In this image, we are looking at the coordinate $(p, q) = (2, 0)$, and so we expect differentials to come from elements of total degree $(2+0)-1 = 1$. This is indeed the case, as we find that the sources of the corresponding differentials come from $E_0^{2,-1}, E_1^{1,0}, E_0^{0,1}$ and so on.
 

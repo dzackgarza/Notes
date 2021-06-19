@@ -16,12 +16,12 @@
 
 ![](../../attachments/Gauss%20Jacobi%20Sums.pdf)
 
-![](../../figures%201/weil.pdf)
+![](../figures/figures%201/weil.pdf)
 
-![](../../figures%201/weil%20(1).pdf)
+![](../figures/figures%201/weil%20(1).pdf)
 
-![](../../figures%201/Weil%201.pdf)
+![](../figures/figures%201/Weil%201.pdf)
 
-![](../../figures%201/weil-preprint1.pdf)
+![](../figures/figures%201/weil-preprint1.pdf)
 
-![](../../figures%201/zeta_book.pdf)
+![](../figures/figures%201/zeta_book.pdf)

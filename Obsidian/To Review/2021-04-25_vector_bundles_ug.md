@@ -27,10 +27,10 @@ $$
 S^1 \to E \mapsvia{\pi} S^1
 $$
 There is a trivial bundle, when $E = S^1 \cross S^1 = T^2$, the torus:
-![torus bundle](../../figures%201/torus-bundle.png)
+![torus bundle](../figures/figures%201/torus-bundle.png)
 
 There is also a nontrivial bundle, $E = K$, the Klein bottle:
-![Klein bottle](../../figures%201/klein-bottle.png)
+![Klein bottle](../figures/figures%201/klein-bottle.png)
 
 As in the earlier example involving the Mobius strip, since $K$ is nonorientable, $T^2 \not\cong K$ and there are thus at least two distinct bundles of this type.
 

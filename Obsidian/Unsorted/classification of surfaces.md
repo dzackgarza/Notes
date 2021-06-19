@@ -1,0 +1,1 @@
+- $\pi_1(\Sigma_g) = \gens{\theset{a_i, b_i}_i^n \st \prod_i^g [a_i, b_i]}$

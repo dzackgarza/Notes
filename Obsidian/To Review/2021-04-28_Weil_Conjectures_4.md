@@ -159,7 +159,7 @@ L_j(s_0) &= 0 \\
 
 Roughly speaking, realizing that we would need to apply a logarithm (a conformal map) to send the $\alpha_{j, k}$ to zeros of the $L_j$, this says that the zeros all must lie on the "critical lines" $\frac{j}{2}$.
 
-![](../../figures%201/image_2020-04-21-17-55-47.png)\
+![](../figures/figures%201/image_2020-04-21-17-55-47.png)\
 
 In particular, the zeros of $L_1$ have real part $\frac 1 2$, analogous to the classical Riemann hypothesis.
 
@@ -294,7 +294,7 @@ Thus
 Take $X = \PP^n_{\FF}$, 
 
 Example image of $\PP^2_{\GF(3)}$:
-![](../../figures%201/image_2020-04-19-22-32-07.png)\
+![](../figures/figures%201/image_2020-04-19-22-32-07.png)\
 
 Note that we can identify $X = \Gr_{\FF}(1, n)$ as the space of lines in $\AA^n_\FF$.
 
@@ -379,7 +379,7 @@ Let $X/\FF$ be a smooth projective curve of genus $g$, then
 
 Take $X = E/\FF$. 
 
-![](../../figures%201/image_2020-04-20-23-28-45.png)\
+![](../figures/figures%201/image_2020-04-20-23-28-45.png)\
 
 Then
 \begin{align*}

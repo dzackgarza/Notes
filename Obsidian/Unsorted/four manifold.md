@@ -1,0 +1,36 @@
+---
+aliases: ["four manifolds", "4-manifold", "4-manifolds"]
+---
+
+# Review Terms
+-   What is the [tautological bundle](tautological%20bundle.md)?
+-  What is [Serre duality](Serre%20duality.md)?
+-   What is [Hirzebruch-Riemann-Roch](Hirzebruch-Riemann-Roch.md)?
+-   How is $\mathcal{O}(n)$ defined?
+-   What is a Kahler manifold?
+-   What is $A^{p, q}$?
+-   How is Dolbeaut cohomology defined?
+-   What is [Noether's formula](Noether's%20formula)?
+-   What is the [[symbol]] of an operator?
+-   What is an [[elliptic complex]]?
+-   What is the [Aatiyah-Singer Index Theorem](Aatiyah-Singer%20Index%20Theorem.md)?
+-   What is the [Chern class](Chern%20class.md)?
+-   What is the [Chern character](Chern%20character)?
+-   What are [Chern roots](Chern%20roots)?
+-   What is the [Todd class](Todd%20class)?
+-   What is the [Euler class](Euler%20class.md)?
+-   What is the [Laplacian](Laplacian)?
+-   What is a [Hermitian metric](Hermitian%20metric.md)?
+-   What is the [Hodge star](Hodge%20star.md)?
+-   What is the [genus formula](genus%20formula)?
+-   What is the [blowup](blowup.md)
+	-   What is the [exceptional divisor](exceptional%20divisor.md)?
+	-   What is the [strict transform](strict%20transform)?
+	-   What is the [blowdown](blowdown.md)
+-   What is a [unimodular lattice](unimodular%20lattice)?
+-   What is the [Steifel-Whitney class](Steifel-Whitney%20class)?
+-   What is the [Pontrayagin class](Pontrayagin%20class)?
+-   What is a [Kähler form](Kähler%20form)?
+-   What is a [spin structure](spin.md)?
+-   What is the [Clifford algebra](Clifford%20algebra.md)?
+-   What is the [Dirac equation](Dirac%20equation.md)

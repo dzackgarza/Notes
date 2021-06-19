@@ -6,7 +6,7 @@ tags:
 
 ## Example: Proving the Snake Lemma without chasing elements
 
-Given the following diagram, with exact rows and commuting squares:![Capture](../../figures%201/Capture%201.png)
+Given the following diagram, with exact rows and commuting squares:![Capture](../figures/figures%201/Capture%201.png)
 
 We want to show that this sequence is exact:
 

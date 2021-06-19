@@ -1,0 +1,2 @@
+- Coarsest where a [purity theorem](purity%20theorem.md) holds
+- Finest where [K-theory](K-Theory.md) is representable.
