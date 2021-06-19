@@ -1,1 +1,0 @@
-Covering space: fibration with discrete fibers.

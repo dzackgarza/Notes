@@ -1,4 +1,4 @@
-[../zettelkasten/Subjects/mapping class group](../zettelkasten/Subjects/mapping%20class%20group.md)
+[../Subjects/mapping class group](../Subjects/mapping%20class%20group.md)
 
 Tags: #notes #nograph  #topology 
 
@@ -6,7 +6,7 @@ Tags: #notes #nograph  #topology
 
 > Reference: 29th Workshop in Geometric Topology, Oregon State University, June 29, 2012
 
-- Talk about the theory [../zettelkasten/surface bundle](../zettelkasten/surface%20bundle.md).
+- Talk about the theory [../Unsorted/surface bundle](../Unsorted/surface%20bundle.md).
   - This talk: not so much related to his personal work!
   - Will revisit
 
@@ -28,12 +28,12 @@ Another way to build bundles: take a representation $\rho: \pi_1 B \to \operator
 
 Generalizes previous example: take real line cross surface and mod out by [deck transformations](deck%20transformations).
 
-Such bundles are called [[../zettelkasten/flat morphism]] $\Sigma_g$ bundles, exactly those which admit a [flat connection](flat%20connection).
+Such bundles are called [[../Unsorted/flat morphism]] $\Sigma_g$ bundles, exactly those which admit a [flat connection](flat%20connection).
 
 > Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. 
 > Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. 
 > Flat means curvature vanishes is equivalent to [Frobenius integrability theorem](Frobenius%20integrability%20theorem) -- the 2-plane is integrable. 
-> So [curvature](../zettelkasten/curvature.md) measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a [../zettelkasten/foliate](../zettelkasten/foliate.md)".
+> So [curvature](../Unsorted/curvature.md) measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a [../Unsorted/foliate](../Unsorted/foliate.md)".
 
 One organizing problem: classify surface bundles over a fixed closed base manifold up to
 
@@ -65,7 +65,7 @@ B.F. proved algorithmic computability for bundle isomorphisms, but homeomorphism
    1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups.
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 
-4. AG: $\mathcal M$ moduli spaces of Riemann surfaces (see [moduli stack of elliptic curves](../zettelkasten/moduli%20stack%20of%20elliptic%20curves.md) ), decompose problems about [varieties](varieties) to problems about families of [algebraic curves](algebraic%20curves)  (i.e. what we call surface bundles)
+4. AG: $\mathcal M$ moduli spaces of Riemann surfaces (see [moduli stack of elliptic curves](../Unsorted/moduli%20stack%20of%20elliptic%20curves.md) ), decompose problems about [varieties](varieties) to problems about families of [algebraic curves](algebraic%20curves)  (i.e. what we call surface bundles)
 
 The main invariant for these bundles: **The Monodromy Representation**
 
@@ -78,9 +78,9 @@ $$
 
 Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
-> In AG, the [mapping class group](../zettelkasten/Subjects/mapping%20class%20group.md) is the [orbifold](../zettelkasten/orbifold.md) [fundamental group](fundamental%20group)] of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
+> In AG, the [mapping class group](../Subjects/mapping%20class%20group.md) is the [orbifold](../Unsorted/orbifold.md) [fundamental group](fundamental%20group)] of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
-So any bundle $\Sigma_g \to E \to B$ yields a corresponding [monodromy representation](monodromy%20representation)
+So any bundle $\Sigma_g \to E \to B$ yields a corresponding [../Unsorted/monodromy representation](../Unsorted/monodromy%20representation.md)
 $$
 \rho: \pi_1 B \to \operatorname{Mod} \Sigma_g
 $$
@@ -106,7 +106,7 @@ Big problem, because this is perhaps the simplest nonlinear connection.
 
 ## Monodromy as a Complete Invariant
 
-[classifying space](../zettelkasten/classifying%20space.md) theory: there exists a (crazy) space $\operatorname{BDiff}^+\Sigma_g$ such that
+[classifying space](../Unsorted/classifying%20space.md) theory: there exists a (crazy) space $\operatorname{BDiff}^+\Sigma_g$ such that
 $$
 \theset{\text{iso classes } \Sigma_g \to E \to B} \iff [B, \operatorname{BDiff}^+ \Sigma_g]
 $$
@@ -122,7 +122,7 @@ Some serious math, theorem of Eels-Earle 1969:
     - Uses [Beltrami equatiobn](Beltrami%20equatiobn), measurable [Riemann mapping theorem](Riemann%20mapping%20theorem), solving PDEs, some serious Math!
     - $\operatorname{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is [Teichmüller space](Teichmüller%20space), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
-**Corollary**: we care about $\operatorname{Bdiff}$, [classifying space](../zettelkasten/classifying%20space.md) theory doesn't really see contractible stuff. So:
+**Corollary**: we care about $\operatorname{Bdiff}$, [classifying space](../Unsorted/classifying%20space.md) theory doesn't really see contractible stuff. So:
 $$
 \operatorname{Bdiff}^+ \Sigma_g \simeq \operatorname{BMod}\Sigma_g = K(\operatorname{Mod}\Sigma_g, 1)
 $$
@@ -138,7 +138,7 @@ $$
 
 Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of $[\pi_1 \wait, \pi_1 X]$(?)
 
-Somehow, this all comes down to [uniformization](../zettelkasten/uniformization.md).
+Somehow, this all comes down to [uniformization](../Unsorted/uniformization.md).
 
 > Note: Reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately.
 
@@ -183,7 +183,7 @@ $$
 \tilde {f^*}(c(E \mapsvia{\pi} B) = c(\tilde {f^*}(E \mapsvia{\pi} B)).
 $$
 
-Any [characteristic class](../zettelkasten/characteristic%20class.md) is just an element of $H^*(\operatorname{BDiff}^+ \Sigma_g) = H^*(\operatorname{Mod} \Sigma_g)$, since every bundle will be a pullback of the [universal bundle](universal%20bundle).
+Any [characteristic class](../Unsorted/characteristic%20class.md) is just an element of $H^*(\operatorname{BDiff}^+ \Sigma_g) = H^*(\operatorname{Mod} \Sigma_g)$, since every bundle will be a pullback of the [universal bundle](universal%20bundle).
 
 Lots of papers about the [stable cohomology](stable%20cohomology) of the mapping class group, given by taking $g$ big enough. We know $\chi$ of the mapping class group, it grows superexponentially and we know polynomially-many. No known unstable classes in genus 5 or higher!!
 
@@ -204,7 +204,7 @@ Any 2-cycle (for any space) will be homologous to the image of a map $f$ of a su
  &  & \Sigma_h \arrow[rruu, "f" description] &  &
 \end{tikzcd}
 
-Take the signature of $M_4$ (where you use the [intersection pairing](intersection%20pairing) on $H_2$, take the [signature](../zettelkasten/signature.md) of that [quadratic form](../zettelkasten/quadratic%20form.md)). Using Novikov additivity for signature, this satisfies the cocycle condition and finally yields a number!
+Take the signature of $M_4$ (where you use the [intersection pairing](intersection%20pairing) on $H_2$, take the [signature](../Unsorted/signature.md) of that [quadratic form](../Unsorted/quadratic%20form.md)). Using Novikov additivity for signature, this satisfies the cocycle condition and finally yields a number!
 
 ## Another Cocycle
 
@@ -212,12 +212,12 @@ Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
 
 > Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.
 
-So look at the [Euler class](../zettelkasten/Euler%20class.md) $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so
+So look at the [Euler class](../Unsorted/Euler%20class.md) $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so
 $$
 e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\operatorname{Mod} \Sigma_g; \QQ).
 $$
 
-> Note: the [moduli space](../zettelkasten/moduli%20space.md) is a [Kähler Manifold](Kähler%20Manifold), so you get the Weil-Peterson 2-form which is the [Kähler class](Kähler%20class) in $H^2$.
+> Note: the [moduli space](../Unsorted/moduli%20space.md) is a [Kähler Manifold](Kähler%20Manifold), so you get the Weil-Peterson 2-form which is the [Kähler class](Kähler%20class) in $H^2$.
 
 **Theorem (Harrer, 1980s):**
 $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! 

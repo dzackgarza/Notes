@@ -1,6 +1,6 @@
 # Review 
 
-[Qual Review](Qual%20Review)
+[../../Unsorted/Qual Review](../../Unsorted/Qual%20Review.md)
 
 Tags: #algebra #field_theory #galois_theory #quals
 

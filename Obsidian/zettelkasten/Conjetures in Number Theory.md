@@ -1,1 +1,0 @@
-[Bloch-Kato conjecture](Bloch-Kato%20conjecture.md)

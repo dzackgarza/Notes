@@ -1,1 +1,0 @@
-- [Manifolds Definitions](Manifolds%20Definitions.md)

@@ -1,1 +1,0 @@
-Reduce a geometric problem to a homotopy-theoretic problem?

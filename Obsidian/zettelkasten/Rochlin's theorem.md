@@ -1,2 +1,0 @@
-- Statement: the signature of a 4-dimensional spin manifold is divisible by 16.
-- Implied by the [Aatiyah-Singer Index Theorem](Aatiyah-Singer%20Index%20Theorem) in dimension 4

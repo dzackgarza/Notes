@@ -1,3 +1,0 @@
----
-aliases: ["Bloch-Kato Conjecture"]
----

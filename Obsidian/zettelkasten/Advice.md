@@ -1,5 +1,0 @@
----
-aliases: ["advice", "Advice"]
----
-
-- [Ravi's "Three Things" exercise for talks](../Quick_Notes/2021-04-17.md#^ef2271)

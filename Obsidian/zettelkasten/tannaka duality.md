@@ -1,1 +1,0 @@
-Tannaka duality for classifying [stacks](stack.md) reconstructs an affine [group scheme](group%20scheme.md) from its [tensor category](tensor%20category) of [representations](representation%20theory.md)

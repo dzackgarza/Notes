@@ -1,1 +1,0 @@
-See [geometric representation theory](geometric%20representation%20theory)

@@ -1,1 +1,0 @@
-If a map $X \mapsvia{f} Y$ satisfies $f(X^{(n)}) \subseteq Y^{(n)}$, then $f$ is said to be a *cellular map*.

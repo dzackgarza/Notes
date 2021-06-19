@@ -1,1 +1,0 @@
-- Somehow get this from [[Yang-Mills]] with $G = \U(1)$

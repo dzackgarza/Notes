@@ -1,1 +1,0 @@
-See <https://faculty.math.illinois.edu/~berndt/articles/q.pdf>

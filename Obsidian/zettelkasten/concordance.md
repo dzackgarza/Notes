@@ -1,1 +1,0 @@
-Smoothly embedded cylinder in $S^3 \cross S^1$?

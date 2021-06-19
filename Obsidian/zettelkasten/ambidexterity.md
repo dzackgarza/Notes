@@ -1,1 +1,0 @@
-Maybe [Chromatic homotopy theory](Chromatic%20homotopy%20theory)?

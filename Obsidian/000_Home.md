@@ -29,8 +29,8 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 	- [ ] Collect notes into PDF and scaffold
 - [ ] Find GOSS speaker for open slot
 
-- [ ] [Stable Homotopy Seminar](zettelkasten/Stable%20Homotopy%20Seminar.md) Talk: AdSS
-- [ ] [CRAG Talk July 9th 2021](CRAG%20Talk%20July%209th%202021)
+- [ ] [Stable Homotopy Seminar](Unsorted/Stable%20Homotopy%20Seminar.md) Talk: AdSS
+- [ ] [Unsorted/CRAG Talk July 9th 2021](Unsorted/CRAG%20Talk%20July%209th%202021.md)
 - [ ] Symplectic Seminar Talk [Notes 1](Current%20Projects/Summer%202021%20Symplectic%20Reading%20Seminar/Notes%201.md)
 	- 
 - [ ] Direct Reading Program
@@ -51,16 +51,16 @@ https://indify.co/widgets/live/countdown/LaagAnItmSGmJnvtsZfZ"></iframe>
 
 
 # Big Lists
-- [Words I don't know](zettelkasten/Giant%20word%20index.md)
-- [Questions I want answers to](zettelkasten/To%20Review/2021-04-26_Unanswered_Questions.md)
-- [Open problems](zettelkasten/Problem%20List.md)
-- [Papers to read](zettelkasten/Papers%20to%20Read.md)
-- [Reading recommendations](zettelkasten/Recommendations.md)
+- [Words I don't know](Unsorted/Giant%20word%20index.md)
+- [Questions I want answers to](To%20Review/2021-04-26_Unanswered_Questions.md)
+- [Open problems](Unsorted/Problem%20List.md)
+- [Papers to read](Unsorted/Papers%20to%20Read.md)
+- [Reading recommendations](Unsorted/Recommendations.md)
 - [Important journals](attachments/Journals.pdf)
 
 # Indices
 
-- [Topic page todos](zettelkasten/Todo.md)
+- [Topic page todos](Unsorted/Todo.md)
 - [Reading Projects Index](00_Reading%20Projects%20Index.md)
 - [Undergraduate Research Index](00_Undergraduate%20Research%20Index.md)
 - [Graduate Research Index](001_Graduate%20Research%20Index.md)

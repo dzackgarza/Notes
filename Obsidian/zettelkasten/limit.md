@@ -1,2 +1,0 @@
- Build new objects by "imposing equations" on existing ones.
-    - Ex: Construction of the [p-adic integers](p-adic%20integers.md) as the limit of the sequence of quotient homomorphisms: $\cdots \rightarrow \mathbb{Z}/p^n \rightarrow \cdots \rightarrow \mathbb{Z}/p^2 \rightarrow \mathbb{Z}/p$

@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -130,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 517
   },
   "right": {
     "id": "a1502ca3cb933e96",

@@ -1,3 +1,0 @@
----
-aliases: ["L spaces"]
----

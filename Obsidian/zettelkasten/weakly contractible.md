@@ -1,1 +1,0 @@
-Having the homotopy type of a point.

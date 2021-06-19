@@ -1,3 +1,0 @@
----
-aliases: ["Poincaré", "Poincaré conjecture"]
----

@@ -1,3 +1,0 @@
----
-aliases: ["simplicial commutative ring"]
----

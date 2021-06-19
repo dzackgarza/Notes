@@ -1,1 +1,0 @@
-[Six functor formalism](Six%20functor%20formalism)

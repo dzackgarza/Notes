@@ -1,1 +1,0 @@
-See [Hodge-Tate theory](Hodge-Tate%20theory)

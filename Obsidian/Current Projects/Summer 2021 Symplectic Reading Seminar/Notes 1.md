@@ -60,17 +60,17 @@ Goal: define Gromov-Witten invariants for genus 0 curves and some restricted cla
 - Donaldson invariant: difficult to work with due to compactness issues.
 	Easier in SW since the moduli space (up to gauge transformation) is compact
 	
-![](../../zettelkasten/attachments/Pasted%20image%2020210613123207.png)
-![Definition of curvature forms](../../zettelkasten/attachments/Pasted%20image%2020210613123239.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613123343.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613123746.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613123931.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613125636.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613125901.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613132212.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613140925.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613141140.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613141226.png)
+![](../../attachments/Pasted%20image%2020210613123207.png)
+![Definition of curvature forms](../../attachments/Pasted%20image%2020210613123239.png)
+![](../../attachments/Pasted%20image%2020210613123343.png)
+![](../../attachments/Pasted%20image%2020210613123746.png)
+![](../../attachments/Pasted%20image%2020210613123931.png)
+![](../../attachments/Pasted%20image%2020210613125636.png)
+![](../../attachments/Pasted%20image%2020210613125901.png)
+![](../../attachments/Pasted%20image%2020210613132212.png)
+![](../../attachments/Pasted%20image%2020210613140925.png)
+![](../../attachments/Pasted%20image%2020210613141140.png)
+![](../../attachments/Pasted%20image%2020210613141226.png)
 
 
 ## Applications
@@ -80,5 +80,5 @@ Of SW:
 - - Morgan, Szabo, and Taubes to prove that a smooth symplectic curve of nonnegative self-intersection in a symplectic four-manifold is genus minimizing
 - Computable for Kalher manifolds, allowing enumeration of algebraic curves.
 
-![](../../zettelkasten/attachments/Pasted%20image%2020210613141249.png)
-![](../../zettelkasten/attachments/Pasted%20image%2020210613141308.png)
+![](../../attachments/Pasted%20image%2020210613141249.png)
+![](../../attachments/Pasted%20image%2020210613141308.png)

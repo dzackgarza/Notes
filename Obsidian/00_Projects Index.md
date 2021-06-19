@@ -4,7 +4,7 @@ aliases: ["Active Projects"]
 
 # Projects
 
-See also [Learning](zettelkasten/Learning.md).
+See also [Learning](Unsorted/Learning.md).
 
 ## Active Projects
 
@@ -17,7 +17,7 @@ See also [Learning](zettelkasten/Learning.md).
 
 ## Talks/Seminars
 [UGA Summer 2021 Symplectic Reading Seminar](UGA%20Summer%202021%20Symplectic%20Reading%20Seminar)
-[Stable Homotopy Seminar](zettelkasten/Stable%20Homotopy%20Seminar.md)
+[Stable Homotopy Seminar](Unsorted/Stable%20Homotopy%20Seminar.md)
 
 ## Inactive/Complete
 [Reading/00_Floer homology project Heegard diagrams](Reading/00_Floer%20homology%20project%20Heegard%20diagrams.md)

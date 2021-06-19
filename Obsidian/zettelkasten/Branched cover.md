@@ -1,3 +1,0 @@
----
-aliases: ["branched", "branch point"]
----

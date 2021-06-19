@@ -1,1 +1,0 @@
-- Slogan: a group up to homotopy

@@ -1,3 +1,0 @@
----
-aliases: ["symmetric", "symmetric monoidal"]
----

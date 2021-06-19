@@ -1,3 +1,0 @@
----
-aliases: ["Hopf algebras"]
----

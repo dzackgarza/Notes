@@ -1,3 +1,0 @@
----
-aliases: ["Burnside ring"]
----

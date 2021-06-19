@@ -1,1 +1,0 @@
-Covered by a manifold?

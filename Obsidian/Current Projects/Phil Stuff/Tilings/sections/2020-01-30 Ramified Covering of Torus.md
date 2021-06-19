@@ -74,7 +74,7 @@ Conjugacy classes corresponds to partitions of $d$.
 
 **Definition:**
 For $C$ a conjugacy class correspond to a partition $\lambda'$ in $S_d$. 
-For any partition $\lambda$, let $f_C(\lambda) = \# C \chi^\lambda(C) / \dim \lambda$, where $\chi^\lambda$ is the irreducible [representation](../../../../zettelkasten/Representation%20theory.md) associated to $\lambda$ (note that this is a rescaling of a row of the character table, since irreducible reps happen to correspond to conjugacy classes for $S_d$).
+For any partition $\lambda$, let $f_C(\lambda) = \# C \chi^\lambda(C) / \dim \lambda$, where $\chi^\lambda$ is the irreducible [representation](../../../../Unsorted/Representation%20theory.md) associated to $\lambda$ (note that this is a rescaling of a row of the character table, since irreducible reps happen to correspond to conjugacy classes for $S_d$).
 This is a class function, so $\chi^\lambda(C)$ is its value on any $c\in C$, and $\dim \lambda \definedas \chi^\lambda(1)$.
 
 **Proposition:**

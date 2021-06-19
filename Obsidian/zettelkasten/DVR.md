@@ -1,1 +1,0 @@
-- $\spec R = \ts{ (0), \mfm}$, the generic point and the special point.

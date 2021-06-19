@@ -1,1 +1,0 @@
-- Inna recommends "The Art and Craft of Problem Solving"
