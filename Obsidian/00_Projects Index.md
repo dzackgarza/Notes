@@ -20,4 +20,4 @@ See also [Learning](Unsorted/Learning.md).
 [Stable Homotopy Seminar](Unsorted/Stable%20Homotopy%20Seminar.md)
 
 ## Inactive/Complete
-[Reading/00_Floer homology project Heegard diagrams](Reading/00_Floer%20homology%20project%20Heegard%20diagrams.md)
+[Learning/Reading/00_Floer homology project Heegard diagrams](Learning/Reading/00_Floer%20homology%20project%20Heegard%20diagrams.md)
