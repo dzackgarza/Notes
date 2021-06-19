@@ -1,1 +1,1 @@
-![Quillen Equivalence](figures/image_2021-03-25-00-14-31.png)
+![Quillen Equivalence](Quick_Notes/figures/image_2021-03-25-00-14-31.png)

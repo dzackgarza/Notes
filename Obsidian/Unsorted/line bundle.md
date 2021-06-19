@@ -8,4 +8,4 @@ References: [canonical bundle](canonical%20bundle.md) | [tautological bundle](ta
 
 - An [invertible sheaf](invertible%20sheaf) (i.e. a locally free [sheaf](sheaf.md)) of [rank](rank%20of%20a%20bundle) 1
 
-- Can define **metrics** and **curvature** forms on line bundles [p-adic analytically](p-adic%20analytic): see [Padma's talk](../Quick_Notes/2021-05-05.md#^22ba3a)
+- Can define **metrics** and **curvature** forms on line bundles [p-adic analytically](p-adic%20analytic): see [Padma's talk](Quick_Notes/2021-05-05.md#^22ba3a)

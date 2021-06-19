@@ -1,1 +1,1 @@
-![Quillen adjunctions](figures/image_2021-03-25-00-09-48.png)
+![Quillen adjunctions](Quick_Notes/figures/image_2021-03-25-00-09-48.png)
