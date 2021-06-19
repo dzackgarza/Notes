@@ -1,5 +1,7 @@
 # Barnes and Roitzheim
 
+Useful extr reference: <http://user.math.uzh.ch/mantovani/research/papers/locandcomp_paperversion.pdf>
+
 ## Setup and Motivation
 
 - To define:
