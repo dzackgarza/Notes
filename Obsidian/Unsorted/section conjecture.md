@@ -5,7 +5,7 @@ tags:
 ---
 
 
- I think the whole field of [anabelian geometry](anabelian%20geometry) fits the bill, even if it's perhaps more focused on going the other way around (i.e. applying homotopy theory to number theory). Anabelian geometry is a 'program' launched by Grothendieck in his famous Esquisse d'un Programme, and is all about translating arithmetic geometric problems to problems in [homotopy](../Subjects/homotopy%20theory.md) theory.
+ I think the whole field of [anabelian geometry](anabelian%20geometry) fits the bill, even if it's perhaps more focused on going the other way around (i.e. applying homotopy theory to number theory). Anabelian geometry is a 'program' launched by Grothendieck in his famous Esquisse d'un Programme, and is all about translating arithmetic geometric problems to problems in [homotopy](Subjects/homotopy%20theory.md) theory.
 
  As an example of a specific instance of the anabelian philosophy, we have Grothendieck's celebrated **section conjecture**, which states (in one form) that for a 'nice' curve X over a [number field](number%20field) F, the [rational points](rational%20points) are in bijection with the sections of the exact sequence
 $$

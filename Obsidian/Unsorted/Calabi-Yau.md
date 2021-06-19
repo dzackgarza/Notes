@@ -2,7 +2,7 @@
 aliases: ["CY"]
 ---
 
-Topics: [Algebraic Geometry](../Subjects/Algebraic%20Geometry.md) | [Physics](Physics.md) | [Complex Algebraic Geometry](Complex%20Algebraic%20Geometry)
+Topics: [Algebraic Geometry](Subjects/Algebraic%20Geometry.md) | [Physics](Physics.md) | [Complex Algebraic Geometry](Complex%20Algebraic%20Geometry)
 
 - Definition: ?
 

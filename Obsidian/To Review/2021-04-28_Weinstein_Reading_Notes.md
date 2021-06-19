@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-[Stein Manifolds](../../Subjects/Stein%20Manifolds.md)
+[Stein Manifolds](../Unsorted/Subjects/Stein%20Manifolds.md)
 
 Goal: set up Stein and Weinstein cobordisms, get a Weinstein analog of the h-cobordism theorem.
 

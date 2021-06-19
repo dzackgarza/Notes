@@ -1,4 +1,4 @@
-[../Subjects/mapping class group](../Subjects/mapping%20class%20group.md)
+[../Unsorted/Subjects/mapping class group](../Unsorted/Subjects/mapping%20class%20group.md)
 
 Tags: #notes #nograph  #topology 
 
@@ -78,7 +78,7 @@ $$
 
 Take a homeomorphism to its homotopy class, Mod is finitely generated.
 
-> In AG, the [mapping class group](../Subjects/mapping%20class%20group.md) is the [orbifold](../Unsorted/orbifold.md) [fundamental group](fundamental%20group)] of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
+> In AG, the [mapping class group](../Unsorted/Subjects/mapping%20class%20group.md) is the [orbifold](../Unsorted/orbifold.md) [fundamental group](fundamental%20group)] of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
 
 So any bundle $\Sigma_g \to E \to B$ yields a corresponding [../Unsorted/monodromy representation](../Unsorted/monodromy%20representation.md)
 $$

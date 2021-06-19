@@ -13,7 +13,7 @@ aliases: ["Big list of words I don't know"]
 	- [[Zeta function]]
 	- [[Langlands]] 
 	- [[Class field theory]]
-- [Algebraic Geometry](../Subjects/Algebraic%20Geometry.md)
+- [Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 - [bundle](bundle.md)
 - [[Étale homotopy]]
 	- [[Brauer group]]
@@ -65,7 +65,7 @@ aliases: ["Big list of words I don't know"]
 - [[Hyperbolic 3-manifold]]
 - [[Kähler Manifold]]
 - [[characteristic class]] 
-- [[../Subjects/mapping class group]]
+- [[Subjects/mapping class group]]
 - [[TQFT]]
 - [[Spin structure]]
 - [[Clifford algebra]]

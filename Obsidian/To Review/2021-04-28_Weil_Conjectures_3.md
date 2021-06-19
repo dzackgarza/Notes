@@ -7,8 +7,8 @@ tags:
 
 [../Unsorted/Zeta function](../Unsorted/Zeta%20function.md)
 [../Unsorted/Number theory](../Unsorted/Number%20theory.md)
-[Algebraic Geometry](../../Subjects/Algebraic%20Geometry.md)
-[Weil Conjectures](../../Subjects/Weil%20Conjectures.md)
+[Algebraic Geometry](../Unsorted/Subjects/Algebraic%20Geometry.md)
+[Weil Conjectures](../Unsorted/Subjects/Weil%20Conjectures.md)
 [GRH](GRH)
 
 About [../Unsorted/variety](../Unsorted/variety.md): defined by polynomial equations,
@@ -68,7 +68,7 @@ In general, for $X$ a curve, we obtain
 Z(X, t) = {(1 - \alpha_1 t) \cdots(1 - \alpha_j t \over (1-t) (1-pt) )} 
 .\]
 
-[Weil Conjectures](../../Subjects/Weil%20Conjectures.md) for $X$ smooth and connected of dimension $n$: 
+[Weil Conjectures](../Unsorted/Subjects/Weil%20Conjectures.md) for $X$ smooth and connected of dimension $n$: 
 
 - $Z(X, t) \in \QQ(t)$
 - (RH) Explicitly, $Z(X, t) = {P_1(t) \cdots P_{2n-1}(t) \over P_0(t) \cdots P_{2n}(t)}$

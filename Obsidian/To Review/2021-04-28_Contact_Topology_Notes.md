@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-[../../Subjects/Contact](../../Subjects/Contact.md)
+[../Unsorted/Subjects/Contact](../Unsorted/Subjects/Contact.md)
 
 Tags: #topology #contact_topology
 

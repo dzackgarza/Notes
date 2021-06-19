@@ -6,7 +6,7 @@ tags:
 
 - [[Hodge conjecture]]
 - [[Milnor Conjecture]]
-- [Weil Conjectures](../Subjects/Weil%20Conjectures.md)
+- [Weil Conjectures](Subjects/Weil%20Conjectures.md)
 - [[Tate conjecture]]
 - [[Homotopy Groups of Spheres]]
 - [[Beilinson-Bloch conjecture]]

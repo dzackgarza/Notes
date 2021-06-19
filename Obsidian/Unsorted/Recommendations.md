@@ -23,7 +23,7 @@ Tags: #recommendations #reading #nograph
 	[elliptic curve](elliptic%20curve.md)
 
 - Hartshorne, Algebraic Geometry
-	[Algebraic Geometry](../Subjects/Algebraic%20Geometry.md)
+	[Algebraic Geometry](Subjects/Algebraic%20Geometry.md)
 
 - Weil, Basic Number Theory
 	[Number theory](Number%20theory.md)

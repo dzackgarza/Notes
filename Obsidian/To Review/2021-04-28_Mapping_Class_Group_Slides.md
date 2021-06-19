@@ -11,7 +11,7 @@ tags:
   - Unfiled
 ---
 
-[../../Subjects/mapping class group](../../Subjects/mapping%20class%20group.md)
+[../Unsorted/Subjects/mapping class group](../Unsorted/Subjects/mapping%20class%20group.md)
 
 Tags: #topology
 

@@ -6,7 +6,7 @@ tags:
 
 Tags: #nograph
 
-[Algebraic Geometry Basics](../Subjects/Algebraic%20Geometry.md)
+[Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 
 ![](../figures/figures%201/image_2020-07-29-01-32-40.png)
 

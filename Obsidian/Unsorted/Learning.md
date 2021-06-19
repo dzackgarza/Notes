@@ -7,7 +7,7 @@ Tags: #nograph
 - [Qual Review](Qual%20Review.md)
 
 # Algebraic Geometry
-See [Algebraic Geometry Basics](../Subjects/Algebraic%20Geometry.md)
+See [Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 
 > Go through Chapters II and III of Hartshorne’s Algebraic Geometry thoroughly
 

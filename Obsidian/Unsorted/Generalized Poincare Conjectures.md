@@ -1,4 +1,4 @@
-Links: [[../Subjects/Algebraic Topology]] |  [[Reference]]
+Links: [[Subjects/Algebraic Topology]] |  [[Reference]]
 Tags: #talks #topology 
 
 <!--![](zettelkasten/figures/HomotopyTalk%20-%20GSTS.pdf)-->

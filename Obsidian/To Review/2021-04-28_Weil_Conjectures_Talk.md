@@ -13,7 +13,7 @@ header-includes:
 fontsize: 9pt
 ---
 
-[../../Subjects/Weil Conjectures](../../Subjects/Weil%20Conjectures.md)
+[../Unsorted/Subjects/Weil Conjectures](../Unsorted/Subjects/Weil%20Conjectures.md)
 
 Tags: #talk #numbertheory #algebraic_topology 
 

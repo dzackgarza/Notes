@@ -1,4 +1,4 @@
-[../Subjects/Algebraic Topology](../Subjects/Algebraic%20Topology.md)
+[Subjects/Algebraic Topology](Subjects/Algebraic%20Topology.md)
 [../../00_Talks Index](../../00_Talks%20Index.md)
 
 # Homotopy Theory and the Hopf Fibration

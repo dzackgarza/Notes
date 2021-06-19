@@ -1,5 +1,5 @@
-[../../Subjects/Algebraic Topology](../../Subjects/Algebraic%20Topology.md)
-[../../Subjects/homotopy theory](../../Subjects/homotopy%20theory.md)
+[../../Unsorted/Subjects/Algebraic Topology](../../Unsorted/Subjects/Algebraic%20Topology.md)
+[../../Unsorted/Subjects/homotopy theory](../../Unsorted/Subjects/homotopy%20theory.md)
 [../../Unsorted/Homotopy Groups of Spheres](../../Unsorted/Homotopy%20Groups%20of%20Spheres.md)
 
 # Table

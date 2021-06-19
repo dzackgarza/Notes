@@ -5,7 +5,7 @@
 - [[Sutured manifold]]
 - [[foliate]]
 - [[Dehn twist]]
-- [Contact](../Subjects/Contact.md) and [[Contact Structure]]
+- [Contact](Subjects/Contact.md) and [[Contact Structure]]
 - [[Symplectic structure]]
 - [Morse Theory](Morse%20Theory.md)
 - [Floer homology](Floer%20homology.md)

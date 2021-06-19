@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-[../../Subjects/Stein Manifolds](../../Subjects/Stein%20Manifolds.md)
+[../Unsorted/Subjects/Stein Manifolds](../Unsorted/Subjects/Stein%20Manifolds.md)
 
 Tags: #symplectic #contact_topology 
 

@@ -4,7 +4,7 @@ tags:
   - Unfiled
 ---
 
-[../../Subjects/Algebraic Topology](../../Subjects/Algebraic%20Topology.md)
+[../Unsorted/Subjects/Algebraic Topology](../Unsorted/Subjects/Algebraic%20Topology.md)
 
 # Big Theorems
 

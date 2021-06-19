@@ -38,8 +38,8 @@ If $Y$ is "star-shaped" (exists a point $p$ that can "see" all points via straig
 Every contact-type hypersurface in the [symplectic manifold](symplectic.md) $(\RR^{2n}, \omega)$ contains a [periodic orbit](periodic%20orbit.md).
 
 **Conjecture (Weinstein, 1978):**
-Let $(M, \xi)$ be a closed (compact) [contact manifold](../Subjects/Contact.md) with a [Reeb vector field](Reeb%20vector%20field) $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a [periodic orbit](periodic%20orbit.md).
+Let $(M, \xi)$ be a closed (compact) [contact manifold](Subjects/Contact.md) with a [Reeb vector field](Reeb%20vector%20field) $X$ and $H^1(M; \RR) = 0$. Then $X$ admits a [periodic orbit](periodic%20orbit.md).
 
 **Theorem (Weinstein, Dimension 3, Overtwisted. 1993):**
-Let $(M, \lambda, \xi)$ be a closed [contact 3-manifold](../Subjects/Contact.md) where $\lambda$ is [overtwisted](overtwisted%20contact%20structure.md). 
+Let $(M, \lambda, \xi)$ be a closed [contact 3-manifold](Subjects/Contact.md) where $\lambda$ is [overtwisted](overtwisted%20contact%20structure.md). 
 Then the [Reeb vector field](Reeb%20vector%20field) $X$ admits a [periodic orbit](periodic%20orbit.md).
