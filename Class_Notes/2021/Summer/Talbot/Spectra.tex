@@ -1,0 +1,666 @@
+\input{"preamble.tex"}
+
+
+\let\Begin\begin
+\let\End\end
+\newcommand\wrapenv[1]{#1}
+
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\title{
+\textbf{
+    Title
+  }
+  }
+
+
+
+
+
+
+
+\begin{document}
+
+\date{}
+\author{D. Zack Garza}
+\maketitle
+
+
+\newpage
+
+% Note: addsec only in KomaScript
+\addsec{Table of Contents}
+\tableofcontents
+\newpage
+
+\hypertarget{thursday-june-03}{%
+\section{Thursday, June 03}\label{thursday-june-03}}
+
+\hypertarget{part-1}{%
+\subsection{Part 1}\label{part-1}}
+
+\begin{quote}
+Jeremey Hanh, MIT: something abelian about commutative ring spectra See
+Tablbot 2017 notes and Richter's survey article ``Commutative Ring
+Spectra''.
+\end{quote}
+
+\begin{remark}
+
+The 2017 Talbot was on structured ring spectra, i.e.~``brave new
+algebra'', where we study \(E_n\dash\)ring spectra. Getting the subject
+off the ground requires many definitions, care of May, EKMM, Lurie, and
+more.
+
+\end{remark}
+
+\begin{remark}
+
+The key objects we'll be considering:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\SS\), the initial \(E_\infty\) ring spectrum
+\item
+  Thom \(E_\infty\)ring spectra: \(\MO, \MSO, \MSp, \MStr, \MU\), and
+  the sphere fits into this pattern as framed bordism
+\end{itemize}
+
+We construct \emph{other} \(E_\infty\) rings primarily to study these
+motivating examples.
+
+\end{remark}
+
+\begin{example}[?]
+
+A ring spectrum that shows up naturally when ?: \(\MU\), for which
+\begin{align*}
+\pi_* \MU \cong \ZZ[x_1, x_2, \cdots]
+&& \text{where } \abs{x_i} = 2i
+\end{align*}
+Localing at a prime \(p\) splits \(\MU_{(p)}\) into sum of suspensions
+\(\BP\) where
+\begin{align*}
+\pi_* \BP = \ZZ_{(p)}[x_1, x_2, \cdots]
+&&
+\text{where } \abs{x_i} = 2p^i - 2
+.\end{align*}
+We can write
+\begin{align*}
+\BP = \MU / \gens{x_j \st j\neq p^i - 1}
+,\end{align*}
+so \(\BP\) has simpler homotopy, and \(\MU\) splits into a sum of copies
+of \(\BP\), which are easier to work with because the homotopy is more
+sparsely distributed. \(\BP\) is a bit of a ``designer'' spectrum, and
+\(\MU\) is more geometric.
+
+\end{example}
+
+\begin{question}
+
+Does this splitting preserve the face that \(\MU\) is an \(E_\infty\)
+ring spectrum? I.e. is \(\BP\) an \(E_\infty\) ring spectrum?
+
+\end{question}
+
+\begin{answer}
+
+No! See Lawson and Senger, who prove that \(\BP\) not an
+\(E_{2p^2 + q}\dash\)ring spectrum. It turns out that understanding the
+\(E_4\) structure is sufficient for many applications.
+
+\end{answer}
+
+\begin{theorem}[Basterra, Mandell]
+
+\(\BP\) is an \(E_4\dash\)algebra retract of \(\MU\).
+
+\end{theorem}
+
+\begin{remark}
+
+Some open questions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Is \(\BP\) an \(E_5\dash\MU\dash\)algebra?
+\item
+  The \(E_n\) operad acts on \(\BP\), so is \(\BP\) a
+  \(\Disk_2\dash\)algebra? In particular, can one take factorization
+  homology against unframed surfaces? This would correspond to a trivial
+  \(S^1\dash\)action.
+\end{enumerate}
+
+\end{remark}
+
+\begin{remark}
+
+Studying other \(E_\infty\) rings naturally leads to problems in
+obstruction theory. We study \(\SS\) via chromatic homotopy theory. The
+basic strategy:
+
+\begin{itemize}
+\item
+  Resolve \(\SS\) by other \(E_\infty\) rings, namely the
+  \(K(n)\dash\)local sphere \(L_{K(n)} \SS\). Note that this is a
+  Bousfield localization. This is useful precisely because of the
+  chromatic convergence theorem, and one can build a tower whose
+  associated graded are these local spheres.
+\item
+  Resolve \(L_{K(n)} \SS\) for a fixed \(n\) by the Hopkins-Miller
+  \(\EO\dash\)theories, which are \(E_\infty\) rings of the form
+  \(E_n^{hG}\) for \(G\) a finite group acting on the height \(n\)
+  Morava \(E\dash\)theory \(E_n\). These \(\EO\) theories are supposed
+  to be the basic building blocks of the \(K(n)\dash\)local spheres.
+  (Check)
+\end{itemize}
+
+\end{remark}
+
+\begin{question}[A big one]
+
+Can one generally construct the \(\EO\) localizations above?
+
+\end{question}
+
+\begin{remark}
+
+Proved for a fixed degree/height? Check. A recent triumph of obstruction
+theory is that the building block \(\EO\) theories have been built. This
+was a prominent topic in 2017 Talbot.
+
+\end{remark}
+
+\begin{remark}
+
+How one builds \(\EO\) theories:
+
+\begin{itemize}
+\tightlist
+\item
+  Build \(E_n\) as a homotopy commutative ring using the Landweber exact
+  functor theorem, which is not too difficult.
+\item
+  Promote the \(E_n\) to \(E_\infty\) rings using obstruction theory.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    See Robinson, Goerss-Hopkins, Lurie, Pstragowki and VanKoughnett.
+    These allow one to make \(G\dash\)actions by \(E_\infty\) ring maps.
+  \item
+    Rough sketch: build an \(E_\infty\) ring in \(\ho\Sp\) (the homotopy
+    category of spectra), which is already a homotopy commutative ring.
+    Then do this in the homotopy 2-category of \(\Sp\), then the
+    homotopy 3-category of \(\Sp\), and so on. This uses that an
+    \(\infty\dash\)category is a sequence of \(n\dash\)categories.
+  \end{itemize}
+\end{itemize}
+
+\end{remark}
+
+\begin{question}
+
+Can one compute \(\pi_* \EO\) for \(\EO \da E_n^{hG}\) for various \(n\)
+and \(G\)?
+
+\end{question}
+
+\begin{example}[?]
+
+The key to the Kervaire invariant one question is computing
+\(\pi_* E_4 ^{hC_8}\), and captures information about diffeomorphism
+classes of exotic spheres.
+
+\end{example}
+
+\begin{observation}
+
+In practice, these \(\EO\) theories (which are all \(K(n)\dash\)local)
+seem to be \(K(n)\dash\)localizations of nice connective ring spectra.
+
+\end{observation}
+
+\begin{example}[?]
+
+At the prime \(p=2\), \(E_1^{hC_2} = \KO\localize{2}\) is the
+localization of \(\KO\) at 2, and turns out to be equal to
+\(L_{K(1)}(k_0)\): It turns out that
+\(E_2^{hC_{24}} = L_{K(2)} (\tmf)\), and so \(\ko\) and \(\tmf\) are
+``connective \(E_\infty\) lifts'' of \(E_1^{hC_2}\) and
+\(E_2^{hC_{24}}\).
+
+\begin{align*}
+E_1^{hC_2} = \KO\localize{2} &= L_{K(1)}(\ko) \\
+E_2^{hC_{24}} &= L_{K(2)}(\tmf)
+.\end{align*}
+
+\end{example}
+
+\begin{remark}
+
+These lifts are closer to geometry than \(\EO\) theories, e.g.~there is
+an \(E_\infty\) ring map due to Ando-Hopkins-Rezk
+\begin{align*}
+\MString \to \tmf
+.\end{align*}
+
+\begin{quote}
+Find comments
+\end{quote}
+
+See how \(\MSpin\) splits as \todo[inline]{Missed}
+
+so one might expect that \(\MString\) is
+
+\todo[inline]{??? Missed}
+
+\end{remark}
+
+\begin{remark}
+
+An observation due to Hi-Kriz and Hill-Hopkins-Ravenel: using sparsity,
+the easiest way to compute \(\pi_* \EO\) is to compute \(\pi_* \eo\)
+where \(\eo\) is a good connective lift of \(\EO\). Note that
+\(\pi_* \tmf\) is finitely-generated in each degree, and it's useful to
+work with something ``small'' in computations, for example if you're
+trying to rule out differentials in spectral sequences. A nice way to
+organize the computations of \(\pi_* \EO\) is to understand them via
+lifts with better finiteness properties.
+
+\end{remark}
+
+\begin{question}
+
+Can we make connective \(\eo\) theories highly structured with
+\(L_{K(n)} \eo = \EO = E_n^{hG}\) for various and \(n\) and \(G\)?
+
+\end{question}
+
+\begin{quote}
+See example in comment
+\end{quote}
+
+\begin{remark}
+
+\(\tmf\) is a connective \(\EO\) theory, so how is \(\tmf\localize{2}\)
+built? For full details, see the tmf book or Lurie's ``Elliptic
+Cohomology''. A sketch:
+\(\tmf\localize{2} = \tau_{\geq 0} L_2 \tmf\localize{2}\) where the
+latter is built out of a finite resolution involving the following three
+terms:
+
+\begin{itemize}
+\tightlist
+\item
+  \(L_{K(2)} \tmf\)
+\item
+  \(L_{K(1)} \tmf\)
+\item
+  \(L_{\QQ} \tmf\)
+\end{itemize}
+
+Note that \(L_2\) is the second stage of the chromatic tower. The basic
+strategy: take the monochromatic pieces above, which are relatively easy
+to make and work with, and find a way to glue them together.
+
+\end{remark}
+
+\begin{remark}
+
+An idea: one can try to make \(\eo\) as a connective cover of some
+\(L_n\dash\)local object. See Lawson, Berhrens-Lawson and \(\TAF\)
+(topological automorphic forms). This worked very well for \(\tmf\), and
+there is currently partial progress at height 3. We're not yet able to
+construct a connective version of \(E_4^{hC_8}\), which was needed in
+Kervaire Invariant One.
+
+Note that all techniques used here seem to work equally well for
+building \(E_\infty\) as \(E_n\) rings for finite \(n\).
+
+\begin{quote}
+See comments
+\end{quote}
+
+\end{remark}
+
+\begin{remark}
+
+An alternate idea that let Hill-Hopkins-Ravenel solve Kervaire Invariant
+One, and recently developed by Beaudry-Hill-Shi-Zeng, constructs a
+connective version of \(E_4^{hC_8}\). However, with this construction,
+it's less clear how much structure there is on the object. They use the
+following procedure:
+
+\begin{itemize}
+\item
+  Put a \(C_8\) action on \(\MU^{\tensor 4}\) by viewing this as a norm
+  \(\NN_{C_2}^{C_8} \MU_\RR\)
+
+  \todo[inline]{Check $\RR$ notation..}
+
+  The norm here gives a way of boosting a \(C_2\) action on one tensor
+  factor to a \(C_8\) action on 4 tensor factors.
+\item
+  Quotient by some elements, possibly losing structure, to obtain a
+  quotient \(Q\). The connective version of \(E_4^{hC_8}\) is
+  \(Q^{C_8}\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    It'd be interesting to know how much structure is lost here!
+  \end{itemize}
+\end{itemize}
+
+\end{remark}
+
+\begin{question}
+
+Some natural questions that arise here:
+
+\begin{itemize}
+\tightlist
+\item
+  What group actions (with various amounts of structure,
+  e.g.~\(E_\infty\)) act on tensor powers \(\MU^{\tensor m}\)?
+\item
+  What structure exists on quotients of such tensor powers?
+\end{itemize}
+
+\end{question}
+
+\begin{remark}
+
+Note that these quotients can be destructive when it comes to
+maintaining \(E_n\) ring structures. Answering these amounts to building
+structured models for these connective spectra. Understanding these two
+questions would allow computing fixed points of certain Morava
+\(E\dash\)theories? Big question: do these tensor products admit
+\(G\dash\)actions beyond those which come from norms?
+
+\end{remark}
+
+\begin{remark}
+
+Getting at these \(\EO\) would be huge! The HHR construction is
+spectacular but somehow only works at the prime \(2\) and for cyclic
+groups??
+
+\end{remark}
+
+\hypertarget{part-2}{%
+\subsection{Part 2}\label{part-2}}
+
+\begin{remark}
+
+Recall that \(\BP\) is an \(E_4\) ring spectrum with
+\(\pi* \BP \cong \ZZ_{(p)}[x_1, x_2, \cdots]\). What structure exists on
+quotients of \(\BP\)? Any progress here would lead to many natural next
+questions, e.g.~adding in group actions. There has been recent progress,
+some of which is ripe for generalization -- e.g.~how much can be made
+equivariant?
+
+\end{remark}
+
+\begin{example}[?]
+
+Take
+\begin{align*}
+\BP \gens{ n }\da \BP / \gens{ v_n , v_{n+1}, \cdots }
+\implies 
+\pi_*\BP \gens{ n } \cong \ZZ_{(p)}[x_1, x_2, \cdots, x_n]
+.\end{align*}
+
+\end{example}
+
+\begin{theorem}[Baker-Jeanneret]
+
+For any choice of indecomposable generators
+\(v_{n+1}, v_{n+2}, \cdots\), \(\BP\gens{ n }\) is an \(E_1\dash \BP\)
+algebra.
+
+\end{theorem}
+
+\begin{theorem}[H-Wilson]
+
+There exists a specific choice of generators \(v_{n+1}, v_{n+2}\) is an
+\(E_3\dash\BP\) algebra.
+
+\end{theorem}
+
+\begin{remark}
+
+It'd be exciting to try to take this result and use it in the
+equivariant setting. We'll try to discuss a bit how this theorem is
+proved.
+
+\end{remark}
+
+\begin{proposition}[?]
+
+If \(x\in \pi_{2\ell} \BP\) is any class in \(\pi_* \BP\), then
+\(\BP / \gens{ x }\) is an \(E_1\dash\BP\) algebra.
+
+\end{proposition}
+
+\begin{remark}
+
+This says you can freely mod out by any generator and still obtain an
+\(E_1\) structure.
+
+\end{remark}
+
+\begin{proof}[?]
+
+Let
+\(S^0[a_{2\ell}] = S^0 \oplus S^{2\ell} \oplus S^{4\ell} \oplus \cdots\)
+denote the free \(E_1\) ring on \(S^{2\ell}\). There is an \(E_1\) ring
+map
+\begin{align*}
+\psi: S^0[a_{2\ell}] \to \BP
+,\end{align*}
+which hits \(x\), and
+\begin{align*}
+\BP / \gens{ x } = \BP \tensor_{S^0[a_{2\ell}] } S^0 
+\end{align*}
+where we use \(\eps: S^0[a_{2\ell}] \to S^0\). It suffices to prove the
+following lemma:
+
+\begin{lemma}[?]
+
+\(S^0[a_{2\ell}]\) and \(\psi\) can be made \(E_2\).
+
+\end{lemma}
+
+\begin{proof}[of lemma, in the case $\ell=1$]
+
+Consider
+\begin{align*}
+S^0[a_2] = S^0 \oplus S^2 \oplus S^4 \oplus \cdots = \Free_{E_1}(S^4)
+.\end{align*}
+This turns out to be equal to \(\Sigma_+^\infty \Loop S^3\) using ???
+(see comment). Now use \(S^4 = \Loop\HP^\infty\), so this is
+\(\Sigma_+^\infty \Omega^2 \HP^\infty\), which has an \(E_2\) ring
+structure.
+
+There is a filtration
+\begin{align*}
+S^2 \to S^4\cong \HP^1 \to \HP^2 \to \HP^3 \to \cdot \to \HP^\infty
+,\end{align*}
+which yields a filtration
+\begin{align*}
+\Suspendpinf \Loop^2 S^4 = \Suspendpinf \Loop^2 \HP^1 \to \Suspendpinf \Loop^2 \HP^2 \to \cdots
+.\end{align*}
+
+One can try to produce maps out of each filtered pieced:
+
+\begin{center}
+\begin{tikzcd}
+    {\Sigma_+^\infty \Omega^2 S^4} &&&& \BP \\
+    \\
+    {\Sigma_+^\infty \Omega^2 \HP^2} \\
+    \\
+    {\Sigma_+^\infty \Omega^2 \HP^3} \\
+    \vdots \\
+    {\Sigma_+^\infty \Omega^2 S^3}
+    \arrow[from=5-1, to=6-1]
+    \arrow[from=6-1, to=7-1]
+    \arrow[from=1-1, to=1-5]
+    \arrow[from=1-1, to=3-1]
+    \arrow[from=3-1, to=5-1]
+    \arrow[curve={height=30pt}, dashed, from=3-1, to=1-5]
+    \arrow[curve={height=24pt}, dashed, from=5-1, to=1-5]
+    \arrow[curve={height=30pt}, dashed, from=7-1, to=1-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsNixbMCwwLCJcXFNpZ21hXyteXFxpbmZ0eSBcXE9tZWdhXjIgU140Il0sWzAsMiwiXFxTaWdtYV8rXlxcaW5mdHkgXFxPbWVnYV4yIFxcSFBeMiJdLFswLDQsIlxcU2lnbWFfK15cXGluZnR5IFxcT21lZ2FeMiBcXEhQXjMiXSxbMCw2LCJcXFNpZ21hXyteXFxpbmZ0eSBcXE9tZWdhXjIgU14zIl0sWzAsNSwiXFx2ZG90cyJdLFs0LDAsIlxcQlAiXSxbMiw0XSxbNCwzXSxbMCw1XSxbMCwxXSxbMSwyXSxbMSw1LCIiLDIseyJjdXJ2ZSI6NSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzIsNSwiIiwyLHsiY3VydmUiOjQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDUsIiIsMix7ImN1cnZlIjo1LCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=}{Link
+to Diagram}
+\end{quote}
+
+At each stage, the obstruction to lifting is a map out of a free \(E_2\)
+algebra on an odd degree class in \(\pi_* \BP\), which is concentrated
+in even degrees.
+
+\begin{quote}
+Find comment.
+\end{quote}
+
+\end{proof}
+
+\end{proof}
+
+\begin{remark}
+
+So these are free as \(E_1\) rings, and are secretly \(E_2\) rings
+(although not free \(E_2\) rings) which have a simple presentation that
+makes them easy to map into objects with even-degree homotopy.
+
+\begin{quote}
+Find comment on first obstruction.
+\end{quote}
+
+\end{remark}
+
+\begin{remark}
+
+Proving a relativey easy proof that introduces a new technique used to
+show that \(\BP \gens{ n }\) can be made \(E_3\).
+
+\end{remark}
+
+\begin{theorem}[?]
+
+Connective \(K(n)\) exists as an \(E_1\dash\SS\) algebra.
+
+\end{theorem}
+
+\begin{remark}
+
+We hve \(\pi_* K(n) = \FF_p[v_n]\) where \(\abs{v_n} = 2p^n - 2\) and
+\(K(n) = \BP / \gens{ ? }\). There is a Postnikov tower:
+
+\begin{center}
+\begin{tikzcd}
+    &&&& {k(n)} \\
+    &&&& \vdots \\
+    \\
+    {v_n^2} & {\Sigma^{4p^n-4} \FF_p} &&& {\tau_{\leq 4p^n-4} k(n)} \\
+    \\
+    {v_n} & {\Sigma^{2p^n-2} \FF_p} &&& {\tau_{\leq 2p^n-2} k(n)} \\
+    \\
+    &&&& {\FF_p} && {\Sigma^{2p^n-2}\FF_p} && {\Sigma^{4p^n}}
+    \arrow[from=1-5, to=2-5]
+    \arrow[from=2-5, to=4-5]
+    \arrow["{Q_n}", from=8-7, to=8-9]
+    \arrow["{Q_n}", from=8-5, to=8-7]
+    \arrow[from=6-5, to=8-5]
+    \arrow[from=4-5, to=6-5]
+    \arrow[from=4-2, to=4-5]
+    \arrow[from=6-2, to=6-5]
+\end{tikzcd}
+\end{center}
+
+\begin{quote}
+\href{https://q.uiver.app/?q=WzAsMTEsWzEsMywiXFxTaWdtYV57NHBebi00fSBcXEZGX3AiXSxbMSw1LCJcXFNpZ21hXnsycF5uLTJ9IFxcRkZfcCJdLFs0LDUsIlxcdGF1X3tcXGxlcSAycF5uLTJ9IGsobikiXSxbNCwzLCJcXHRhdV97XFxsZXEgNHBebi00fSBrKG4pIl0sWzQsMCwiayhuKSJdLFs0LDEsIlxcdmRvdHMiXSxbNCw3LCJcXEZGX3AiXSxbNiw3LCJcXFNpZ21hXnsycF5uLTJ9XFxGRl9wIl0sWzgsNywiXFxTaWdtYV57NHBebn0iXSxbMCwzLCJ2X25eMiJdLFswLDUsInZfbiJdLFs0LDVdLFs1LDNdLFs3LDgsIlFfbiJdLFs2LDcsIlFfbiJdLFsyLDZdLFszLDJdLFswLDNdLFsxLDJdXQ==}{Link
+to Diagram}
+\end{quote}
+
+\begin{itemize}
+\item
+  To build \(\tau_{2p^n-2} k(n)\), one just needs to identify
+  \(Q_n \in \pi_0 \Hom(\FF_p, \Sigma^{2p^n - 1} \FF_p)\). So one needs
+  to identify \(Q_n \in \pi_* \Hom(\FF_p, \FF_p)\), the
+  \(\mathrm{mod} p\) Steenrod algebra.
+\item
+  To build \(\tau_{\leq 4p^n - 4}k(n)\), one needs to check that
+  \(Q_n^2 = 0\) in the \(\mod p\) Steenrod algebra, which is an Adem
+  relation.
+\end{itemize}
+
+Note that understanding \(\pi_* \Hom(\FF_p, \FF_p)\) as a group lets on
+build \(\tau_{\leq 2p^n - 2}k(n)\)., but the next stage requires knowing
+this is a \emph{ring} along with the Adem relation. Since
+\(\Hom(\FF_p, \FF_p)\) is an \(E_1\) ring, and understanding this ring
+structure would allow building \(k(n)\) completely as a spectrum. Here
+\(\Hom(\FF_p, \FF_p)\) parameterizes all 2-stage Postnikov towers in the
+sense that its homotopy groups record this data.
+
+\end{remark}
+
+\begin{remark}
+
+How to build \(k(n)\) as an \(E_1\) ring instead of a spectrum:
+
+\begin{itemize}
+\tightlist
+\item
+  Write down the object parameterizing two-stage Postnikov towers in the
+  category of \(E_1\) rings. This is well-known to be the
+  \textbf{\(E_1\dash\) center} \(\mathcal{Z}_{E_1}(\FF_p)\), also known
+  as \(\THC(\FF_p)\), the topological Hochschild cohomology of
+  \(\FF_p\). This is known to be an \(E_2\) ring and if one understands
+  its \(E_2\) structure well, one learns that \(E_2\) rings are more
+  complicated than 2-stage Postnikov towers.
+\end{itemize}
+
+\end{remark}
+
+\begin{remark}
+
+Bokstedt proved that \(\pi_* \THC(\FF_p)\) is concentrated in even
+degrees. Thus given any class \(x_{2\ell}\in \pi_{2\ell} \THC(\FF_p)\)
+parameterizing some 2-stage \(E_1\) ring, by the previous theorem there
+is an \(E_2\) ring map
+\begin{align*}
+S^0[a_{2\ell}] \to \THC(\FF_p)
+.\end{align*}
+
+\end{remark}
+
+
+
+
+\end{document}

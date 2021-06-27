@@ -9,7 +9,11 @@ aliases: ["formal group laws", "formal group", "formal groups"]
 - Commutative Group Laws, [Lazard's Theorem](Lazard's%20Theorem). See:
   - *Stable homotopy and generalised homology* 
   - *A. Fr¨ohlich, Formal groups*
+- <https://etale.site/xkcd/dieudonne-modules.pdf>
 
+Topics:
+
+- [Dieudonne modules](Dieudonne%20modules)
 # Questions
 
   - Where do they come up?

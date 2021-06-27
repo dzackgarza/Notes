@@ -20,3 +20,5 @@ where $\NS$ is the [Neron Severi](Neron%20Severi.md) group.
 
 ![](../attachments/Pasted%20image%2020210603195814.png)
 ![](../attachments/Pasted%20image%2020210603195858.png)
+
+![](../attachments/Pasted%20image%2020210626203400.png)

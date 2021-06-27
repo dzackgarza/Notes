@@ -1,0 +1,4 @@
+- [Riemann-Roch](Riemann-Roch.md)
+- [Serre duality](Serre%20duality.md)
+- [Kodaira vanishing](Kodaira%20vanishing)
+- [Birkhoff–Grothendieck](Birkhoff–Grothendieck)

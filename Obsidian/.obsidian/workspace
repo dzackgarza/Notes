@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "d09c255614db3c3e",
+        "id": "6186c680645c7e97",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Quick_Notes/2021-06-06.md",
-            "mode": "preview"
+            "file": "Unsorted/slope.md",
+            "mode": "source"
           }
         }
       }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-06.md",
+                "file": "Unsorted/slope.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-06.md"
+                "file": "Unsorted/slope.md"
               }
             }
           },
@@ -131,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 517
+    "width": 324
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-06.md",
+                "file": "Unsorted/slope.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-06.md",
+                "file": "Unsorted/slope.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,17 +239,17 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "d09c255614db3c3e",
+  "active": "6186c680645c7e97",
   "lastOpenFiles": [
-    "Unsorted/Quick_Notes/2021-06-06.md",
-    "Current Projects/2021 Stable Homotopy Seminar/Barnes_and_Roitzheim.md",
-    "Unsorted/Quick_Notes/2021-06-05.md",
-    "Unsorted/Quick_Notes/2021-06-12.md",
-    "Unsorted/Quick_Notes/2021-06-20.md",
-    "Current Projects/2021 Stable Homotopy Seminar/Adams Sseq.md",
-    "Current Projects/2021 Stable Homotopy Seminar/Untitled.md",
-    "figures 1/2019-11-06-11:48.png",
-    "figures/2-21-18-ee15e.png",
-    "figures/2-21-18-e8619.png"
+    "Unsorted/slope.md",
+    "Unsorted/vector bundles.md",
+    "Current Projects/CRAG/Concepts.md",
+    "Unsorted/Untitled 11.md",
+    "Unsorted/Birkhoff–Grothendieck.md",
+    "Unsorted/canonical bundle.md",
+    "Unsorted/Theorems in complex algebraic geometry.md",
+    "Unsorted/Serre duality.md",
+    "Unsorted/Riemann-Roch.md",
+    "Unsorted/invertible sheaves.md"
   ]
 }

@@ -16,6 +16,7 @@ Topics:
 - [Thom-Pontryagin construction](Thom-Pontryagin%20construction)
 - [stable framing](stable%20framing.md)
 - [clutching function](clutching%20function.md)
+- [slope](slope.md)
 
 
 # Definitions 
