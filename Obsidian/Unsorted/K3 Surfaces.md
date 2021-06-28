@@ -8,3 +8,7 @@ aliases: ["K3", "K3s"]
 
 - Defining condition: trivial [canonical bundle](canonical%20bundle.md)
 - Special case ($\dim_\CC = 2$) of [Calabi-Yau](Calabi-Yau.md) manifolds
+
+![](../attachments/Pasted%20image%2020210627224900.png)
+
+![](../attachments/Pasted%20image%2020210627224917.png)
