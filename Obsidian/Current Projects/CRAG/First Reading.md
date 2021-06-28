@@ -1,4 +1,5 @@
 Paper link: <http://www.numdam.org/article/PMIHES_1966__29__95_0.pdf>
+Resolution of singularities notes: <https://arxiv.org/pdf/math/0508332.pdf>
 
 Daniel's description: 
 > compares algebraic de Rham cohomology to the usual notion for manifolds, using resolution of singularities.

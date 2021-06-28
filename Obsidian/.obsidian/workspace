@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/slope.md",
+            "file": "Current Projects/CRAG/First Reading.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/slope.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/slope.md"
+                "file": "Current Projects/CRAG/First Reading.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/slope.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/slope.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +241,15 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Current Projects/CRAG/First Reading.md",
+    "Current Projects/CRAG/Concepts.md",
     "Unsorted/slope.md",
     "Unsorted/vector bundles.md",
-    "Current Projects/CRAG/Concepts.md",
     "Unsorted/Untitled 11.md",
     "Unsorted/Birkhoff–Grothendieck.md",
     "Unsorted/canonical bundle.md",
     "Unsorted/Theorems in complex algebraic geometry.md",
     "Unsorted/Serre duality.md",
-    "Unsorted/Riemann-Roch.md",
-    "Unsorted/invertible sheaves.md"
+    "Unsorted/Riemann-Roch.md"
   ]
 }
