@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/K3 Surfaces.md",
+            "file": "Unsorted/ergodic.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/K3 Surfaces.md",
+                "file": "Unsorted/ergodic.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/K3 Surfaces.md"
+                "file": "Unsorted/ergodic.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/K3 Surfaces.md",
+                "file": "Unsorted/ergodic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/K3 Surfaces.md",
+                "file": "Unsorted/ergodic.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Unsorted/Untitled 11.md",
     "Unsorted/K3 Surfaces.md",
     "Unsorted/hyperkahler.md",
     "Unsorted/fine moduli space.md",
@@ -249,7 +250,6 @@
     "Current Projects/CRAG/First Reading.md",
     "Unsorted/canonical bundle.md",
     "Unsorted/nef.md",
-    "Current Projects/CRAG/Concepts.md",
-    "Unsorted/slope.md"
+    "Current Projects/CRAG/Concepts.md"
   ]
 }
