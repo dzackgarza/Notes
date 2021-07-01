@@ -24,16 +24,17 @@ aliases: ["category theory"]
 
 - [monoid object](monoid%20object.md)
 - [group object](group%20object)
+- [ring object](ring%20object)
 - [module object](module%20object)
 - [vector space object](vector%20space%20object)
-- [ring object](ring%20object)
+- [algebra object](algebra%20object)
 - [simplicial object](simplicial%20object.md)
 
 
 ## Monoidal
 - [dualizable object of a category](dualizable%20object%20of%20a%20category)
 - [invertible object of a category](invertible%20object%20of%20a%20category)
-- [trace](trace%20(monoidal%20categories).md)
+- [trace](trace%20(monoidal%20categories).md) and [center in a category](center%20in%20a%20category)
 - [compact object of a category](compact%20object%20of%20a%20category.md)
 	- [rigid](rigid%20category.md)
 - [Generators of a category](Generators%20of%20a%20category.md)
@@ -42,6 +43,7 @@ aliases: ["category theory"]
 - [tannakian](tannakian)
 - [filtered objects of a category](filtered%20objects%20of%20a%20category)
 - [graded objects of a category](graded%20objects%20of%20a%20category)
+- [Calabi-Yau object of a category](Calabi-Yau%20object%20of%20a%20category)
 
 ## Homotopy 
 
