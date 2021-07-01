@@ -16,9 +16,7 @@ aliases: ["category theory"]
 - [Tensored Category](Tensored%20Category)
 - [Enriched category](Enriched%20category.md)
 - [continuous functor](continuous%20functor)
-- [quivers](quivers)
 - [triangulated categories](triangulated%20categories.md)
-- [linear category](linear%20category.md)
 	- [DG category](DG%20category.md)
 - [pointed category](pointed%20category)
 
@@ -30,8 +28,12 @@ aliases: ["category theory"]
 - [vector space object](vector%20space%20object)
 - [ring object](ring%20object)
 - [simplicial object](simplicial%20object.md)
+
+
+## Monoidal
 - [compact object of a category](compact%20object%20of%20a%20category.md)
 - [Generators of a category](Generators%20of%20a%20category.md)
+- [linear category](linear%20category.md)
 
 ## Homotopy 
 
@@ -48,3 +50,4 @@ aliases: ["category theory"]
 
 - [blocks of a category](blocks%20of%20a%20category)
 - [semiorthogonal decomposition](semiorthogonal%20decomposition)
+- [quivers](quivers)

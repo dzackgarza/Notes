@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Rees construction.md",
+            "file": "Unsorted/modern category theory.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\MU",
+                "query": "invertible",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Rees construction.md",
+                "file": "Unsorted/modern category theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Rees construction.md"
+                "file": "Unsorted/modern category theory.md"
               }
             }
           },
@@ -130,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324
+    "width": 546.5036334991455
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Rees construction.md",
+                "file": "Unsorted/modern category theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Rees construction.md",
+                "file": "Unsorted/modern category theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +242,7 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Unsorted/modern category theory.md",
     "Unsorted/Untitled 11.md",
     "Unsorted/cyclic bar construction.md",
     "Unsorted/Elliptic cohomology.md",
@@ -249,7 +251,6 @@
     "Unsorted/K3 Surfaces.md",
     "Unsorted/hyperkahler.md",
     "Unsorted/fine moduli space.md",
-    "Unsorted/holonomy group.md",
-    "Unsorted/Kodaira vanishing.md"
+    "Unsorted/holonomy group.md"
   ]
 }
