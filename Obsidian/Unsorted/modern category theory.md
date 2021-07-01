@@ -51,6 +51,7 @@ aliases: ["category theory"]
 ## Higher Cats
 - [higher category](higher%20category.md)
 - [infinity categories](infinity%20categories.md)
+- [[stable ]]
 
 ## Representation Theory
 
