@@ -40,6 +40,8 @@ aliases: ["category theory"]
 - [linear category](linear%20category.md)
 - [fiber functor](fiber%20functor.md)
 - [tannakian](tannakian)
+- [filtered objects of a category](filtered%20objects%20of%20a%20category)
+- [graded objects of a category](graded%20objects%20of%20a%20category)
 
 ## Homotopy 
 
@@ -51,7 +53,9 @@ aliases: ["category theory"]
 ## Higher Cats
 - [higher category](higher%20category.md)
 - [infinity categories](infinity%20categories.md)
-- [[stable ]]
+- [stable infinity category](stable%20infinity%20category)
+- [presentable category](presentable%20category)
+- [DG category](DG%20category.md)
 
 ## Representation Theory
 

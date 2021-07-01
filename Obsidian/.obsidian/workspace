@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/modern category theory.md",
+            "file": "Unsorted/quasicoherent sheaf.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/modern category theory.md",
+                "file": "Unsorted/quasicoherent sheaf.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/modern category theory.md"
+                "file": "Unsorted/quasicoherent sheaf.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/modern category theory.md",
+                "file": "Unsorted/quasicoherent sheaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/modern category theory.md",
+                "file": "Unsorted/quasicoherent sheaf.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Unsorted/quasicoherent sheaf.md",
     "Unsorted/modern category theory.md",
     "Unsorted/trace (monoidal categories).md",
     "Unsorted/The cobordism hypothesis.md",
@@ -250,7 +251,6 @@
     "Unsorted/dualizable.md",
     "Unsorted/rigid category.md",
     "Unsorted/Untitled 11.md",
-    "Unsorted/cyclic bar construction.md",
-    "Unsorted/Elliptic cohomology.md"
+    "Unsorted/cyclic bar construction.md"
   ]
 }
