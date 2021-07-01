@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/modern category theory.md",
+            "file": "Unsorted/inf-scheme.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/modern category theory.md",
+                "file": "Unsorted/inf-scheme.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/modern category theory.md"
+                "file": "Unsorted/inf-scheme.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/modern category theory.md",
+                "file": "Unsorted/inf-scheme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/modern category theory.md",
+                "file": "Unsorted/inf-scheme.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Unsorted/Untitled 11.md",
     "Unsorted/modern category theory.md",
     "Unsorted/Calabi-Yau object of a category.md",
     "Unsorted/quasicoherent sheaf.md",
@@ -250,7 +251,6 @@
     "Unsorted/group algebra.md",
     "Unsorted/dualizable object of a category.md",
     "Unsorted/dualizable.md",
-    "Unsorted/rigid category.md",
-    "Unsorted/Untitled 11.md"
+    "Unsorted/rigid category.md"
   ]
 }
