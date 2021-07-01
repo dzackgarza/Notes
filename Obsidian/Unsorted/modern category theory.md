@@ -31,16 +31,15 @@ aliases: ["category theory"]
 
 
 ## Monoidal
+- [dualizable object of a category](dualizable%20object%20of%20a%20category)
+- [invertible object of a category](invertible%20object%20of%20a%20category)
+- [trace](trace%20(monoidal%20categories).md)
 - [compact object of a category](compact%20object%20of%20a%20category.md)
 	- [rigid](rigid%20category.md)
 - [Generators of a category](Generators%20of%20a%20category.md)
 - [linear category](linear%20category.md)
-- [invertible object of a category](invertible%20object%20of%20a%20category)
-- [dualizable object of a category](dualizable%20object%20of%20a%20category)
 - [fiber functor](fiber%20functor.md)
 - [tannakian](tannakian)
-- [trace](trace%20(monoidal%20categories).md)
-- 
 
 ## Homotopy 
 
