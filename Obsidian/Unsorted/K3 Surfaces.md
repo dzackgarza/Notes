@@ -12,3 +12,5 @@ aliases: ["K3", "K3s"]
 ![](../attachments/Pasted%20image%2020210627224900.png)
 
 ![](../attachments/Pasted%20image%2020210627224917.png)
+
+![](../attachments/Pasted%20image%2020210630223310.png)
