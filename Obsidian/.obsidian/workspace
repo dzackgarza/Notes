@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/hypercohomology.md",
+            "file": "Unsorted/Hodge theory.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/hypercohomology.md",
+                "file": "Unsorted/Hodge theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/hypercohomology.md"
+                "file": "Unsorted/Hodge theory.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/hypercohomology.md",
+                "file": "Unsorted/Hodge theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/hypercohomology.md",
+                "file": "Unsorted/Hodge theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,6 +242,7 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Unsorted/Hodge theory.md",
     "Unsorted/Untitled 11.md",
     "Unsorted/Hard Lefschetz.md",
     "Unsorted/K3 Surfaces.md",
@@ -250,7 +251,6 @@
     "Unsorted/Calabi-Yau object of a category.md",
     "Unsorted/quasicoherent sheaf.md",
     "Unsorted/trace (monoidal categories).md",
-    "Unsorted/The cobordism hypothesis.md",
-    "Unsorted/group algebra.md"
+    "Unsorted/The cobordism hypothesis.md"
   ]
 }
