@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Hard Lefschetz.md",
+            "file": "Unsorted/hypercohomology.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Hard Lefschetz.md",
+                "file": "Unsorted/hypercohomology.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Hard Lefschetz.md"
+                "file": "Unsorted/hypercohomology.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Hard Lefschetz.md",
+                "file": "Unsorted/hypercohomology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Hard Lefschetz.md",
+                "file": "Unsorted/hypercohomology.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,10 +242,10 @@
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
+    "Unsorted/Untitled 11.md",
     "Unsorted/Hard Lefschetz.md",
     "Unsorted/K3 Surfaces.md",
     "Unsorted/Calabi-Yau manifold.md",
-    "Unsorted/Untitled 11.md",
     "Unsorted/modern category theory.md",
     "Unsorted/Calabi-Yau object of a category.md",
     "Unsorted/quasicoherent sheaf.md",
