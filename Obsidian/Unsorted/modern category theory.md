@@ -58,6 +58,7 @@ aliases: ["category theory"]
 - [stable infinity category](stable%20infinity%20category)
 - [presentable category](presentable%20category)
 - [DG category](DG%20category.md)
+- [graded category](graded%20category)
 
 ## Representation Theory
 
