@@ -58,6 +58,7 @@ Daniel's description:
 ## Part 1
 
 - **Theorem 1**: If $X\in \Aff\Alg\Sch_{/\CC}$ is regular (non-singular), then $H^*_\sing(X; \CC)$ is isomorphic to the cohomology of the algebraic de Rham complex: differential forms on $X$ which are rational and everywhere defined.
+interesting values at integers related to quantities from algebraic K-theory.
 
 - For $X \in \Pre\Sch_{/k}^{\ft}$ smooth, consider the complex of sheaves of regular differentials $\Omega_{X/k}^* \in \Ch(\Sheaves)$ with the exterior differential
 
