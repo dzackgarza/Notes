@@ -15,7 +15,6 @@
 
 
 - [2021-04-26_Etale_group_schemes_and_p-divisible_groups](To%20Review/2021-04-26_Etale_group_schemes_and_p-divisible_groups.md)
-- [The section conjecture](Unsorted/section%20conjecture.md)
 
 ## Number Theory
 

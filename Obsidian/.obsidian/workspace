@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6186c680645c7e97",
+        "id": "29138dd6889a1915",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/section conjecture.md",
+            "file": "Unsorted/Quick_Notes/2021-04-12.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/section conjecture.md",
+                "file": "Unsorted/Quick_Notes/2021-04-12.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/section conjecture.md"
+                "file": "Unsorted/Quick_Notes/2021-04-12.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/section conjecture.md",
+                "file": "Unsorted/Quick_Notes/2021-04-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/section conjecture.md",
+                "file": "Unsorted/Quick_Notes/2021-04-12.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -239,17 +239,17 @@
     "direction": "horizontal",
     "width": 270
   },
-  "active": "6186c680645c7e97",
+  "active": "29138dd6889a1915",
   "lastOpenFiles": [
-    "Unsorted/section conjecture.md",
-    "Unsorted/open problem.md",
+    "Unsorted/Quick_Notes/2021-04-12.md",
+    "Unsorted/L Space conjecture.md",
+    "Unsorted/Quick_Notes/2021-01-03.md",
+    "Unsorted/Vojta's conjecture.md",
+    "Unsorted/Quick_Notes/2021-04-02.md",
+    "Unsorted/weight monodromy conjecture.md",
+    "Unsorted/Ash Conjecture.md",
     "99_subject index.md",
-    "Unsorted/Generalized Poincare Conjectures.md",
-    "Current Projects/Phil Stuff/Tilings/sections/002_Paper1.md",
-    "Unsorted/Big Conjectures.md",
-    "Unsorted/Kazhdan–Lusztig conjectures.md",
-    "Unsorted/Birch and Swinnerton-Dyer conjecture.md",
-    "Unsorted/Hodge conjecture.md",
-    "Unsorted/Subjects/Weil Conjectures.md"
+    "Unsorted/section conjecture.md",
+    "Unsorted/open problem.md"
   ]
 }
