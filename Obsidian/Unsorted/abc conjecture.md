@@ -1,5 +1,5 @@
 ---
-aliases: ["BSD"]
+aliases: ["abc"]
 ---
 
 Tags: #conjectures 

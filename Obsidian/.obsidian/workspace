@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/CRAG/First Reading.md",
+            "file": "Unsorted/section conjecture.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "invertible",
+                "query": "conjecture",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Unsorted/section conjecture.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md"
+                "file": "Unsorted/section conjecture.md"
               }
             }
           },
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Unsorted/section conjecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Unsorted/section conjecture.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -236,20 +237,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270,
-    "collapsed": true
+    "width": 270
   },
   "active": "6186c680645c7e97",
   "lastOpenFiles": [
-    "Current Projects/CRAG/First Reading.md",
-    "Current Projects/CRAG/Concepts.md",
-    "Unsorted/derived algebraic geometry.md",
-    "Unsorted/Elliptic cohomology.md",
-    "Unsorted/Hodge theory.md",
-    "Unsorted/Untitled 11.md",
-    "Unsorted/Hard Lefschetz.md",
-    "Unsorted/K3 Surfaces.md",
-    "Unsorted/Calabi-Yau manifold.md",
-    "Unsorted/modern category theory.md"
+    "Unsorted/section conjecture.md",
+    "99_subject index.md",
+    "Unsorted/Generalized Poincare Conjectures.md",
+    "Current Projects/Phil Stuff/Tilings/sections/002_Paper1.md",
+    "Unsorted/Big Conjectures.md",
+    "Unsorted/Kazhdan–Lusztig conjectures.md",
+    "Unsorted/Birch and Swinnerton-Dyer conjecture.md",
+    "Unsorted/Hodge conjecture.md",
+    "Unsorted/Subjects/Weil Conjectures.md",
+    "Unsorted/Tate conjecture.md"
   ]
 }

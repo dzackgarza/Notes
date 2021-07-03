@@ -27,6 +27,8 @@ Tags: #numbertheory
 - [valuation ring](valuation%20ring)
 - [base change](base%20change)
 
+See also [Big Conjectures](Big%20Conjectures.md).
+
 # Algebraic Number Theory
 
 See [algebraic number theory](algebraic%20number%20theory.md)
@@ -56,7 +58,3 @@ See [algebraic number theory](algebraic%20number%20theory.md)
 - [elliptic curve](elliptic%20curve.md)
 - [[Riemann-Roch]]
 - [algebraic curve](algebraic%20curve.md)
-
-# Conjectures
-
-See [Conjetures in Number Theory](Conjetures%20in%20Number%20Theory.md)

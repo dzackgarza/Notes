@@ -1,5 +1,5 @@
 Links: [[Subjects/Algebraic Topology]] |  [[Reference]]
-Tags: #talks #topology 
+Tags: #talks #topology #conjectures 
 
 <!--![](zettelkasten/figures/HomotopyTalk%20-%20GSTS.pdf)-->
 

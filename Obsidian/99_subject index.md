@@ -1,4 +1,5 @@
 # By Subject
+
 ## Topology
 - [What is the difference between low and high dimensional topology?](To%20Review/2021-04-26_Low_vs_High_Dimensional_Topology.md)
 - [3-Manifolds](Unsorted/3-manifold.md)
@@ -8,7 +9,6 @@
 - [Schoenflies](Unsorted/Schoenflies.md)
 - [Uniformization](Unsorted/uniformization.md)
 - [Whitney Embedding](Unsorted/Whiteney%20embedding%20theorem.md)
-- [Generalized Poincare Conjectures](Unsorted/Generalized%20Poincare%20Conjectures.md)
 
 
 ## Algebraic Geometry

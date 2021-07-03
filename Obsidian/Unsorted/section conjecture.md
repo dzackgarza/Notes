@@ -4,6 +4,8 @@ tags:
   - Unfiled
 ---
 
+Tags: #conjectures 
+
 
  I think the whole field of [anabelian geometry](anabelian%20geometry) fits the bill, even if it's perhaps more focused on going the other way around (i.e. applying homotopy theory to number theory). Anabelian geometry is a 'program' launched by Grothendieck in his famous Esquisse d'un Programme, and is all about translating arithmetic geometric problems to problems in [homotopy](Subjects/homotopy%20theory.md) theory.
 
