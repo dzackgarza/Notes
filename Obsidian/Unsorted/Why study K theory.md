@@ -8,7 +8,7 @@ tags:
 Examples of results gleaned from the [K-Theory](K-Theory.md) approach include the [Grothendieck–Riemann–Roch](Grothendieck–Riemann–Roch) theorem, [Bott Periodicity](Bott%20Periodicity.md), the [Aatiyah-Singer Index Theorem](Aatiyah-Singer%20Index%20Theorem.md), and the [Adams operations](Adams%20operations).
 
 It played a major role in the second proof of the Index Theorem (circa 1962).
-Kalher
+KalherKalher
 Already in 1955, Jean-Pierre Serre had used the analogy of vector bundles with projective modules to formulate [Serre's conjecture on vector bundles](Serre's%20conjecture%20on%20vector%20bundles.md),
 
 Geometrically
