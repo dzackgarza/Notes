@@ -17,7 +17,7 @@ Function field: the local ring $K(X) \da \OO_{X, \tilde x}$ for $\tilde x$ the g
 - Degree: for $f:X\to Y$, the degree of the field extension $[K(X) : f^* K(Y)]$.
 - Ramification index: $e_f(x)$ defined as the largest $n$ such that $f^* \mfm_{f(x)} \subseteq \mfm_x^n$.
 - Ramified: $e_f(x) > 1$.
-	- Alternatively: at a closed point $x$, $f^* \mfm_{f(x)} = \mfm_x$ and the extension $\OO
+	- Alternatively: at a closed point $x$, $f^* \mfm_{f(x)} = \mfm_x$ and the extension $\OO_x/\mfm_x$ is a finite separable extension of $\OO_{f(x)} / \mfm_{f(x)}$.
 - Structure map: for a scheme $X$ over $k$, the map $S: X\to \spec k$
 - Geometric point: a section to the structure map, $s: \spec k \to X$ so that $\spec k \mapsvia{s} X \mapsvia{S} \spec k$ is the identity on $\spec k$
 - Elliptic: genus 1. Coincides with $y^2 = x^3 + Ax  + B$. Exists as a pointed scheme $(E, O)$
