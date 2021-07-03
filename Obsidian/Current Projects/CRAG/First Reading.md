@@ -110,3 +110,11 @@ $$
 - In particular this holds in specific cases:
 	- $X$ projective with $Y$ the support of an ample positive divisor on $X$
 	- $X$ Stein
+
+
+To be continued
+
+
+![](../../attachments/Pasted%20image%2020210702230003.png)
+
+http://people.math.harvard.edu/~lurie/ffcurve/Lecture1-Overview.pdf
