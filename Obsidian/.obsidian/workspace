@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/curves.md",
+            "file": "Unsorted/Galois representations.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/curves.md",
+                "file": "Unsorted/Galois representations.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/curves.md"
+                "file": "Unsorted/Galois representations.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/curves.md",
+                "file": "Unsorted/Galois representations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/curves.md",
+                "file": "Unsorted/Galois representations.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,6 +240,7 @@
   },
   "active": "5a1d52d2000f753b",
   "lastOpenFiles": [
+    "Unsorted/Galois representations.md",
     "Unsorted/curves.md",
     "Unsorted/uniformization.md",
     "Unsorted/Why study K theory.md",
@@ -248,7 +249,6 @@
     "Unsorted/vector bundles.md",
     "Unsorted/geometrization conjecture.md",
     "Learning/Talk Surface bundles, mapping class groups, moduli spaces, and cohomology.md",
-    "Unsorted/spherical manifold.md",
-    "Unsorted/Elliptization conjecture.md"
+    "Unsorted/spherical manifold.md"
   ]
 }
