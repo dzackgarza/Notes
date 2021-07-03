@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "29138dd6889a1915",
+        "id": "5a1d52d2000f753b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/projective modules.md",
+            "file": "Unsorted/uniformization.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/projective modules.md",
+                "file": "Unsorted/uniformization.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/projective modules.md"
+                "file": "Unsorted/uniformization.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/projective modules.md",
+                "file": "Unsorted/uniformization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/projective modules.md",
+                "file": "Unsorted/uniformization.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -238,17 +238,17 @@
     "direction": "horizontal",
     "width": 270
   },
-  "active": "29138dd6889a1915",
+  "active": "5a1d52d2000f753b",
   "lastOpenFiles": [
-    "Unsorted/projective modules.md",
-    "Unsorted/Why study K theory.md",
-    "Unsorted/vector bundles.md",
     "Unsorted/uniformization.md",
+    "Unsorted/Why study K theory.md",
+    "Unsorted/projective modules.md",
+    "Unsorted/projective module.md",
+    "Unsorted/vector bundles.md",
     "Unsorted/geometrization conjecture.md",
     "Learning/Talk Surface bundles, mapping class groups, moduli spaces, and cohomology.md",
     "Unsorted/spherical manifold.md",
     "Unsorted/Elliptization conjecture.md",
-    "Unsorted/Shimura-Taniyama-Weil.md",
-    "Unsorted/reciprocity conjecture.md"
+    "Unsorted/Shimura-Taniyama-Weil.md"
   ]
 }
