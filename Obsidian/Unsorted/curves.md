@@ -19,5 +19,5 @@ Function field: the local ring $K(X) \da \OO_{X, \tilde x}$ for $\tilde x$ the g
 - Ramified: $e_f(x) > 1$.
 - Structure map: for a scheme $X$ over $k$, the map $S: X\to \spec k$
 - Geometric point: a section to the structure map, $s: \spec k \to X$ so that $\spec k \mapsvia{s} X \mapsvia{S} \spec k$ is the identity on $\spec k$
-- Elliptic: genus 1.
+- Elliptic: genus 1. Coincides with $y^2 = x^3 + Ax  + B$.
 - 
