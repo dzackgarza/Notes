@@ -18,7 +18,7 @@ Every Riemann surface is the quotient of a free, proper and holomorphic action o
 2. the complex plane
 3. the unit disk in the complex plane.
 
-In 3 dimensions, there are 8 geometries, called the eight Thurston geometries. Not every 3-manifold admits a geometry, but Thurston's geometrization conjecture proved by Grigori Perelman states that every 3-manifold can be cut into pieces that are geometrizable.
+In 3 dimensions, there are 8 geometries, called the eight Thurston geometries. Not every 3-manifold admits a geometry, but Thurston's [geometrization conjecture](geometrization%20conjecture) proved by Grigori Perelman states that every 3-manifold can be cut into pieces that are geometrizable.
 
 ## Smooth Category: Uniformization
 

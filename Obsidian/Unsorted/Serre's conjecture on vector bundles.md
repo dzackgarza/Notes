@@ -1,4 +1,6 @@
- Statement: every finitely generated [projective module](projective%20module) over a [polynomial ring](polynomial%20ring) is [free](free.md);
+Tags: #conjectures 
+
+Statement: every finitely generated [projective module](projective%20module) over a [polynomial ring](polynomial%20ring) is [free](free.md);
  
 For $k\in \Fields$, is every \( M\in \modsleft{\kxn}^\fg \) actually free?
 	- True by Quillen-Suslin 76

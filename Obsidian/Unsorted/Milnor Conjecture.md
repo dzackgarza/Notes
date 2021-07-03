@@ -2,6 +2,8 @@
 aliases: ["Norm residue isomorphism"]
 ---
 
+Tags: #conjectures
+
 References: [quadratic form](quadratic%20form.md) | [Algebraic K theory](Algebraic%20K%20theory.md) | [[Motives]]
 
 Statement: there is an isomorphism
