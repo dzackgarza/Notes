@@ -22,4 +22,4 @@ Function field: the local ring $K(X) \da \OO_{X, \tilde x}$ for $\tilde x$ the g
 - Elliptic: genus 1. Coincides with $y^2 = x^3 + Ax  + B$. Exists as a pointed scheme $(E, O)$
 - Isogeny: a pointed map $(E_1, O_1) \mapsvia{f} (E_2, O_2)$, so $f(O_1) = O_2$. 
 - Supersingular: $\ker\qty{E \mapsvia{\cdot p} E } = 0$ where $\ch k = p > 0$.
-- Ordinary: $\ker\qty{E\mapsvia{\cdot p} }
+- Ordinary: $\ker\qty{E\mapsvia{\cdot p} E } = \ZZ/p$
