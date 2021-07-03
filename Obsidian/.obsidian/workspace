@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md",
+            "file": "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md",
+                "file": "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md"
+                "file": "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md",
+                "file": "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md",
+                "file": "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +241,15 @@
   },
   "active": "29138dd6889a1915",
   "lastOpenFiles": [
+    "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
+    "To Review/2021-04-26_Contact_Geometry.md",
+    "Unsorted/property P conjecture.md",
     "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md",
     "Unsorted/Vandiver's conjecture.md",
     "Unsorted/Milnor's conjecture.md",
     "Unsorted/The cobordism hypothesis.md",
     "Unsorted/Quick_Notes/2021-04-25.md",
     "Unsorted/Quick_Notes/2021-04-22.md",
-    "Unsorted/Hodge conjecture.md",
-    "Unsorted/Tate conjecture.md",
-    "Unsorted/Quick_Notes/2021-04-21.md",
-    "Unsorted/Bondal-Orlov conjecture.md"
+    "Unsorted/Hodge conjecture.md"
   ]
 }
