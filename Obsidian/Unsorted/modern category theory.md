@@ -65,3 +65,4 @@ aliases: ["category theory"]
 - [blocks of a category](blocks%20of%20a%20category)
 - [semiorthogonal decomposition](semiorthogonal%20decomposition)
 - [quivers](quivers)
+- [semisimple](semisimple%20category.md)
