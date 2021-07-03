@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/uniformization.md",
+            "file": "Unsorted/Why study K theory.md",
             "mode": "source"
           }
         }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/uniformization.md",
+                "file": "Unsorted/Why study K theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/uniformization.md"
+                "file": "Unsorted/Why study K theory.md"
               }
             }
           },
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/uniformization.md",
+                "file": "Unsorted/Why study K theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/uniformization.md",
+                "file": "Unsorted/Why study K theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +240,7 @@
   },
   "active": "29138dd6889a1915",
   "lastOpenFiles": [
+    "Unsorted/Why study K theory.md",
     "Unsorted/uniformization.md",
     "Unsorted/geometrization conjecture.md",
     "Learning/Talk Surface bundles, mapping class groups, moduli spaces, and cohomology.md",
@@ -249,7 +249,6 @@
     "Unsorted/Shimura-Taniyama-Weil.md",
     "Unsorted/reciprocity conjecture.md",
     "Unsorted/motivic homotopy.md",
-    "Unsorted/Serre's conjecture on vector bundles.md",
-    "Unsorted/mixed motives.md"
+    "Unsorted/Serre's conjecture on vector bundles.md"
   ]
 }
