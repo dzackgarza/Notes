@@ -13,6 +13,6 @@ Tags: #conjectures
 $$
 1 \rightarrow \pi_1(X_{\bar{F}}) \rightarrow \pi_1(X) \rightarrow G_F \rightarrow 1
 $$
-where $GF$ is the [absolute Galois group](absolute%20Galois%20group) of F and π1 is the algebraic (etale) fundamental group. In case the curve is over the complex numbers, the [etale fundamental group](etale%20fundamental%20group) is the [profinite completion](profinite%20completion) of the regular fundamental group, so there is a very close connection to the classical stuff of Hatcher. 
+where $G_F$ is the [absolute Galois group](absolute%20Galois%20group) of $F$ and $\pi_1$ is the algebraic (etale) fundamental group. In case the curve is over $\CC$, the [etale fundamental group](etale%20fundamental%20group) is the [profinite completion](profinite%20completion) of the regular fundamental group.
 
-The conjecture is still a wide [open problem](open%20problem), but any proof would mean you could check something of number theoretic interest (existence of [rational points](rational%20points) on [curves](curves.md)) by studying maps between certain generalized homotopy groups!
+The conjecture is still a wide open problem, but any proof would mean you could check something of number theoretic interest (existence of [rational points](rational%20points) on [curves](curves.md)) by studying maps between certain generalized homotopy groups!
