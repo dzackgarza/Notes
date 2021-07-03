@@ -17,11 +17,7 @@ If you now take a discrete subgroup $\Gamma$ of $G$, you can form the double quo
 
 P.S. I should also note that the study of spaces $\dcoset{\Gamma}{G}{K}$ for certain $\Gamma$ (so-called [congruence subgroups](congruence%20subgroups)) is one of the basic topics of the [Langlands program](Langlands%20program), and the function theory and cohomology of these spaces (especially their representation-theoretic structure) is conjectured to govern a vast amount of number theory. Trying to understand and work on these conjectures was my own motivation for learning Lie theory.
 
-[Cartan's Generalization of Klein's Erlangen Program](https://books.google.com/books?id=Ytqs4xU5QKAC&lpg=PA178&dq=cartan%2520geometry%2520sharpe&pg=PP1#v=onepage&q=cartan%2520geometry%2520sharpe&f=false)
 
-[More info](https://en.wikipedia.org/wiki/Cartan_connection)
-
-A **Klein geometry** consists of a Lie group $G$ together with a Lie subgroup $H$ of $G$. Together $G$ and $H$ determine a homogeneous space $G/H$, on which the group $G$ acts by left-translation. Klein's aim was then to study objects living on the homogeneous space which were congruent by the action of $G$. A **Cartan geometry** extends the notion of a Klein geometry by attaching to each point of a manifold a copy of a Klein geometry, and to regard this copy as tangent to the manifold. Thus the geometry of the manifold is infinitesimally identical to that of the Klein geometry, but globally can be quite different. In particular, Cartan geometries no longer have a well-defined action of $G$ on them. However, a Cartan connection supplies a way of connecting the infinitesimal model spaces within the manifold by means of parallel transport.
 
 - Irreducible reps of $\SO_3$ describe the periodic table
 - Irreducible reps of $\SU_2$ lead to Dirac equations of the electron

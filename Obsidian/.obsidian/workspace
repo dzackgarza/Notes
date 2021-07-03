@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -242,6 +242,7 @@
   "active": "29138dd6889a1915",
   "lastOpenFiles": [
     "To Review/2021-04-26_Lie_Groups_Erlangen_and_Physics.md",
+    "Unsorted/Cartan geometry.md",
     "To Review/2021-04-26_Contact_Geometry.md",
     "Unsorted/property P conjecture.md",
     "To Review/2021-04-26_Big_Theorems_in_Algebraic_Topology.md",
@@ -249,7 +250,6 @@
     "Unsorted/Milnor's conjecture.md",
     "Unsorted/The cobordism hypothesis.md",
     "Unsorted/Quick_Notes/2021-04-25.md",
-    "Unsorted/Quick_Notes/2021-04-22.md",
-    "Unsorted/Hodge conjecture.md"
+    "Unsorted/Quick_Notes/2021-04-22.md"
   ]
 }
