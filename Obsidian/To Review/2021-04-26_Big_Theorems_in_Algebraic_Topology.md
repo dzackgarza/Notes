@@ -17,8 +17,8 @@ tags:
 - Brown Representability Spectrum
 
 - Kervaire Invariant 1 Problem
-- The cobordism hypothesis
-- Milnor's conjecture
-- Vandiver's conjecture
+- [The cobordism hypothesis](../Unsorted/The%20cobordism%20hypothesis.md)
+- [Milnor's conjecture](Milnor's%20conjecture)
+- [Vandiver's conjecture](../Unsorted/Vandiver's%20conjecture.md)
 - Hodge Conjecture
 
