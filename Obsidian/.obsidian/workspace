@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Quick_Notes/2021-04-12.md",
+            "file": "Unsorted/Standard conjectures.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-04-12.md",
+                "file": "Unsorted/Standard conjectures.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-04-12.md"
+                "file": "Unsorted/Standard conjectures.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-04-12.md",
+                "file": "Unsorted/Standard conjectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-04-12.md",
+                "file": "Unsorted/Standard conjectures.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,15 +241,15 @@
   },
   "active": "29138dd6889a1915",
   "lastOpenFiles": [
+    "Unsorted/Standard conjectures.md",
+    "Unsorted/Quick_Notes/2021-04-15.md",
+    "Unsorted/Kudla-Rapoport conjecture.md",
+    "Unsorted/Beilinson-Bloch conjecture.md",
+    "Unsorted/Quick_Notes/2021-04-14.md",
+    "Unsorted/Bloch-Kato conjecture.md",
     "Unsorted/Quick_Notes/2021-04-12.md",
     "Unsorted/L Space conjecture.md",
     "Unsorted/Quick_Notes/2021-01-03.md",
-    "Unsorted/Vojta's conjecture.md",
-    "Unsorted/Quick_Notes/2021-04-02.md",
-    "Unsorted/weight monodromy conjecture.md",
-    "Unsorted/Ash Conjecture.md",
-    "99_subject index.md",
-    "Unsorted/section conjecture.md",
-    "Unsorted/open problem.md"
+    "Unsorted/Vojta's conjecture.md"
   ]
 }
