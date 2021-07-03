@@ -9,7 +9,7 @@ Examples of results gleaned from the [K-Theory](K-Theory.md) approach include th
 
 It played a major role in the second proof of the Index Theorem (circa 1962).
 KalherKaKalherlher
-Already in 1955, Jean-Pierre Serre had used the analogy of vector bundles with projective modules to formulate [Serre's conjecture on vector bundles](Serre's%20conjecture%20on%20vector%20bundles.md),
+AlKalherready in 1955, Jean-Pierre Serre had used the analogy of vector bundles with projective modules to formulate [Serre's conjecture on vector bundles](Serre's%20conjecture%20on%20vector%20bundles.md),
 
 Geometrically
 - Finitely generated projective modules $\mapstofrom$ vector bundles over $\AA^N$, 
