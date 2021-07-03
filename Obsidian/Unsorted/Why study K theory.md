@@ -9,10 +9,10 @@ Examples of results gleaned from the [K-Theory](K-Theory.md) approach include th
 
 It played a major role in the second proof of the Index Theorem (circa 1962).
 KalherKaKalherlher
-AlKalherready in 1955, Jean-Pierre Serre had used the analogy of vector bundles with projective modules to formulate [Serre's conjecture on vector bundles](Serre's%20conjecture%20on%20vector%20bundles.md),
+AlKalherKalherready in 1955, Jean-Pierre Serre had used the analogy of vector bundles with [projective modules](projective%20modules) to formulate [Serre's conjecture on vector bundles](Serre's%20conjecture%20on%20vector%20bundles.md),
 
 Geometrically
-- Finitely generated projective modules $\mapstofrom$ vector bundles over $\AA^N$, 
+- Finitely generated projective modules $\mapstofrom$ [vector bundles](vector%20bundles.md) over $\AA^N$, 
 - free modules $\mapstofrom$ trivial vector bundles. 
  
 Affine space is topologically contractible, so It admits no non-trivial topological vector bundles. It also admits no non-trivial holomorphic vector bundles. Jean-Pierre Serre remarked that the corresponding question was not known for [algebraic vector bundles](algebraic%20vector%20bundles): 
