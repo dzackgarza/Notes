@@ -11,7 +11,7 @@ The uniformization theorem says that every simply connected Riemann surface is c
 For compact [Riemann surfaces](Riemann%20surface.md), 
 
 - Those with universal cover the unit disk are precisely the hyperbolic surfaces of genus greater than 1, all with non-abelian fundamental group; 
-- Those with universal cover the complex plane are the Riemann surfaces of genus 1, namely the complex tori or elliptic curves with fundamental group $\ZZ/2$; 
+- Those with universal cover the complex plane are the Riemann surfaces of genus 1, namely the complex tori or elliptic curves with fundamental group $\ZZ^{\ast 2}$; 
 - Those with universal cover the Riemann sphere are those of genus 0, namely the Riemann sphere itself, with trivial fundamental group.
 
 The [uniformization](uniformization.md) theorem is a generalization of the Riemann mapping theorem from proper simply connected open subsets of the plane to arbitrary simply connected Riemann surfaces.
