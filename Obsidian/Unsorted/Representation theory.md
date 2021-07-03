@@ -1,6 +1,6 @@
 # Groups
 
-- [[Cartain]]
+- [[Cartan]]
 - [[Levi]]
 - [[Borel]]
 - [[Maximal torus]]
