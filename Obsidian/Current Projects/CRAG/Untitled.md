@@ -7,6 +7,8 @@ https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
 
 http://www-personal.umich.edu/~stevmatt/algebraic_de_rham.pdf
 
+https://www.math.u-bordeaux.fr/~ybilu/algant/documents/theses/Toledo.pdf
+
 # Notes
 
 Weil cohomology theory:
@@ -105,3 +107,11 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704020328.png)
 ![](../../attachments/Pasted%20image%2020210704020357.png)
 ![](../../attachments/Pasted%20image%2020210704020501.png)
+![](../../attachments/Pasted%20image%2020210704020550.png)
+![](../../attachments/Pasted%20image%2020210704020621.png)
+
+![](../../attachments/Pasted%20image%2020210704020821.png)
+![](../../attachments/Pasted%20image%2020210704020849.png)
+![](../../attachments/Pasted%20image%2020210704020904.png)
+![](../../attachments/Pasted%20image%2020210704020916.png)
+![](../../attachments/Pasted%20image%2020210704020928.png)
