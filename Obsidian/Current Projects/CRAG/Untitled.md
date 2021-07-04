@@ -22,3 +22,7 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704010047.png)
 
 ![](../../attachments/Pasted%20image%2020210704010223.png)
+
+![](../../attachments/Pasted%20image%2020210704010638.png)
+
+![](../../attachments/Pasted%20image%2020210704010745.png)
