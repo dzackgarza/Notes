@@ -7,7 +7,7 @@ Note de Rham theorem
 H^k(\dR)(M) &\to H^k_\sing(M; \RR) \cong \Hom_\RR(H_k(M; \RR), \RR) \\
 \omega \mapsto \qty{S\mapsto \int_S \omega}
 \]
-Also note $H_{\dR}^k(M) \to H
+Also note $H_{\dR}^k(M) \to H_{\Sh}^k(M; \constantsheaf{\RR})$
 
 Examples:
 
