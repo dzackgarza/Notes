@@ -3,5 +3,5 @@ Weil cohomology theory:
 
 Examples:
 
-- Singular/Betti cohomology of $X(\CC)$ with the analytic topology, using GAGA
-- 
+- Singular/Betti cohomology of $H_\sing^*(X(\CC); \ZZ)$ with the analytic topology, using GAGA
+- $H_{\dR}
