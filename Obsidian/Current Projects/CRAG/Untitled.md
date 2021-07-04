@@ -100,5 +100,8 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704015449.png)
 ![](../../attachments/Pasted%20image%2020210704020100.png)
 ![](../../attachments/Pasted%20image%2020210704020143.png)
-
 ![](../../attachments/Pasted%20image%2020210704020228.png)
+
+![](../../attachments/Pasted%20image%2020210704020328.png)
+![](../../attachments/Pasted%20image%2020210704020357.png)
+![](../../attachments/Pasted%20image%2020210704020501.png)
