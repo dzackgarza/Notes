@@ -38,3 +38,7 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704011005.png)
 
 ![](../../attachments/Pasted%20image%2020210704011026.png)
+
+![](../../attachments/Pasted%20image%2020210704011331.png)
+
+![](../../attachments/Pasted%20image%2020210704011340.png)
