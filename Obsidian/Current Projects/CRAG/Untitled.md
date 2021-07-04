@@ -12,4 +12,5 @@ Also note $H_{\dR}^k(M) \to H_{\Sh}^k(M; \constantsheaf{\RR})$
 Examples:
 
 - Singular/Betti cohomology of $H_\sing^*(X(\CC); \ZZ)$ with the analytic topology, using GAGA
-- $H_{\dR}
+- $H_{\Alg\dR}(X)$
+- $H_{\ell}(M) \da 
