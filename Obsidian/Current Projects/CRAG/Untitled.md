@@ -64,3 +64,10 @@ Now take hypercohomology?
 https://mathoverflow.net/questions/72609/on-the-finitess-of-algebraic-de-rham-cohomology-of-smooth-quasi-projective-varie
 
 ![](../../attachments/Pasted%20image%2020210704012307.png)
+
+https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
+
+![](../../attachments/Pasted%20image%2020210704012640.png)
+
+![](../../attachments/Pasted%20image%2020210704012717.png)
+![](../../attachments/Pasted%20image%2020210704012728.png)
