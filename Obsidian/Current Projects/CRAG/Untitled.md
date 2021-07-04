@@ -4,6 +4,8 @@ Weil cohomology theory:
 Review de Rham cohomology.
 Note de Rham theorem
 \[
+H^k(\dR)(M) &\to H^k_\sing(M; \RR) \\
+
 \]
 
 Examples:
