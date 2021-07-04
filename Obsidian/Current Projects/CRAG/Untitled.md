@@ -42,3 +42,13 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704011331.png)
 
 ![](../../attachments/Pasted%20image%2020210704011340.png)
+
+![](../../attachments/Pasted%20image%2020210704011439.png)
+
+![](../../attachments/Pasted%20image%2020210704011604.png)
+
+![](../../attachments/Pasted%20image%2020210704011632.png)
+
+![](../../attachments/Pasted%20image%2020210704011614.png)
+
+![](../../attachments/Pasted%20image%2020210704011655.png)
