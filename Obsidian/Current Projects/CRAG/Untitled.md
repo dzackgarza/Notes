@@ -18,3 +18,7 @@ Examples:
 
 ![](../../attachments/Pasted%20image%2020210704002649.png)
 Now take hypercohomology?
+
+![](../../attachments/Pasted%20image%2020210704010047.png)
+
+![](../../attachments/Pasted%20image%2020210704010223.png)
