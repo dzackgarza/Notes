@@ -58,3 +58,9 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704011918.png)
 
 ![](../../attachments/Pasted%20image%2020210704012012.png)
+
+![](../../attachments/Pasted%20image%2020210704012044.png)
+
+https://mathoverflow.net/questions/72609/on-the-finitess-of-algebraic-de-rham-cohomology-of-smooth-quasi-projective-varie
+
+![](../../attachments/Pasted%20image%2020210704012307.png)
