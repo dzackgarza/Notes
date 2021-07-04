@@ -71,3 +71,6 @@ https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
 
 ![](../../attachments/Pasted%20image%2020210704012717.png)
 ![](../../attachments/Pasted%20image%2020210704012728.png)
+
+![](../../attachments/Pasted%20image%2020210704012925.png)
+![](../../attachments/Pasted%20image%2020210704012933.png)
