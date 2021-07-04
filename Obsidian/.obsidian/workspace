@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5a1d52d2000f753b",
+        "id": "d02cca7d9a82b7de",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/CRAG/First Reading.md",
+            "file": "Current Projects/CRAG/Untitled.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Current Projects/CRAG/Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md"
+                "file": "Current Projects/CRAG/Untitled.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Current Projects/CRAG/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Current Projects/CRAG/Untitled.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -240,8 +240,9 @@
     "width": 270,
     "collapsed": true
   },
-  "active": "5a1d52d2000f753b",
+  "active": "d02cca7d9a82b7de",
   "lastOpenFiles": [
+    "Current Projects/CRAG/Untitled.md",
     "Current Projects/CRAG/First Reading.md",
     "Unsorted/Galois representations.md",
     "Unsorted/curves.md",
@@ -250,7 +251,6 @@
     "Unsorted/projective modules.md",
     "Unsorted/projective module.md",
     "Unsorted/vector bundles.md",
-    "Unsorted/geometrization conjecture.md",
-    "Learning/Talk Surface bundles, mapping class groups, moduli spaces, and cohomology.md"
+    "Unsorted/geometrization conjecture.md"
   ]
 }
