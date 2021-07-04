@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/CRAG/Untitled.md",
-            "mode": "source"
+            "file": "Current Projects/CRAG/First Reading.md",
+            "mode": "preview"
           }
         }
       }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/Untitled.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/CRAG/Untitled.md"
+                "file": "Current Projects/CRAG/First Reading.md"
               }
             }
           },
@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 546.5036334991455,
-    "collapsed": true
+    "width": 546.5036334991455
   },
   "right": {
     "id": "a1502ca3cb933e96",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/CRAG/Untitled.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/Untitled.md",
+                "file": "Current Projects/CRAG/First Reading.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +241,15 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
-    "Current Projects/CRAG/Untitled.md",
     "Current Projects/CRAG/First Reading.md",
+    "Current Projects/CRAG/Examples.md",
+    "Current Projects/CRAG/Untitled.md",
     "Unsorted/Galois representations.md",
     "Unsorted/curves.md",
     "Unsorted/uniformization.md",
     "Unsorted/Why study K theory.md",
     "Unsorted/projective modules.md",
     "Unsorted/projective module.md",
-    "Unsorted/vector bundles.md",
-    "Unsorted/geometrization conjecture.md"
+    "Unsorted/vector bundles.md"
   ]
 }
