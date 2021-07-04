@@ -1,7 +1,7 @@
 Weil cohomology theory:
 ![](../../attachments/Pasted%20image%2020210704000947.png)
 
-Review de Rham cohomolohu
+Review de Rham cohomology
 
 Examples:
 
