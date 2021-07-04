@@ -82,3 +82,6 @@ https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
 ![](../../attachments/Pasted%20image%2020210704013735.png)
 ![](../../attachments/Pasted%20image%2020210704013829.png)
 ![](../../attachments/Pasted%20image%2020210704013920.png)
+![](../../attachments/Pasted%20image%2020210704014006.png)
+![](../../attachments/Pasted%20image%2020210704014250.png)
+![](../../attachments/Pasted%20image%2020210704014334.png)
