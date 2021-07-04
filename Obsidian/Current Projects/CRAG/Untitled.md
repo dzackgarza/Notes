@@ -115,3 +115,7 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704020904.png)
 ![](../../attachments/Pasted%20image%2020210704020916.png)
 ![](../../attachments/Pasted%20image%2020210704020928.png)
+![](../../attachments/Pasted%20image%2020210704021112.png)
+![](../../attachments/Pasted%20image%2020210704021120.png)
+![](../../attachments/Pasted%20image%2020210704021132.png)
+![](../../attachments/Pasted%20image%2020210704021139.png)
