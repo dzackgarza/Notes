@@ -26,3 +26,15 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704010638.png)
 
 ![](../../attachments/Pasted%20image%2020210704010745.png)
+
+![](../../attachments/Pasted%20image%2020210704010815.png)
+
+![](../../attachments/Pasted%20image%2020210704010825.png)
+
+![](../../attachments/Pasted%20image%2020210704010850.png)
+
+![](../../attachments/Pasted%20image%2020210704010901.png)
+
+![](../../attachments/Pasted%20image%2020210704011005.png)
+
+![](../../attachments/Pasted%20image%2020210704011026.png)
