@@ -9,6 +9,8 @@ http://www-personal.umich.edu/~stevmatt/algebraic_de_rham.pdf
 
 https://www.math.u-bordeaux.fr/~ybilu/algant/documents/theses/Toledo.pdf
 
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.1905&rep=rep1&type=pdf
+
 # Notes
 
 Weil cohomology theory:
@@ -124,3 +126,12 @@ Now take hypercohomology?
 ![](../../attachments/Pasted%20image%2020210704022106.png)
 ![](../../attachments/Pasted%20image%2020210704022157.png)
 ![](../../attachments/Pasted%20image%2020210704022206.png)
+
+![](../../attachments/Pasted%20image%2020210704022544.png)
+![](../../attachments/Pasted%20image%2020210704022606.png)
+
+![](../../attachments/Pasted%20image%2020210704022807.png)
+![](../../attachments/Pasted%20image%2020210704022850.png)
+![](../../attachments/Pasted%20image%2020210704022930.png)
+![](../../attachments/Pasted%20image%2020210704023122.png)
+![](../../attachments/Pasted%20image%2020210704023235.png)
