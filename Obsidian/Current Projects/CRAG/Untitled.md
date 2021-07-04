@@ -1,3 +1,14 @@
+
+https://mathoverflow.net/questions/72609/on-the-finitess-of-algebraic-de-rham-cohomology-of-smooth-quasi-projective-varie
+
+![](../../attachments/Pasted%20image%2020210704012307.png)
+
+https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
+
+http://www-personal.umich.edu/~stevmatt/algebraic_de_rham.pdf
+
+# Notes
+
 Weil cohomology theory:
 ![](../../attachments/Pasted%20image%2020210704000947.png)
 
@@ -61,11 +72,6 @@ Now take hypercohomology?
 
 ![](../../attachments/Pasted%20image%2020210704012044.png)
 
-https://mathoverflow.net/questions/72609/on-the-finitess-of-algebraic-de-rham-cohomology-of-smooth-quasi-projective-varie
-
-![](../../attachments/Pasted%20image%2020210704012307.png)
-
-https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
 
 ![](../../attachments/Pasted%20image%2020210704012640.png)
 
@@ -87,3 +93,8 @@ https://www.math.arizona.edu/~swc/aws/2007/KedlayaNotes11Mar.pdf
 ![](../../attachments/Pasted%20image%2020210704014334.png)
 ![](../../attachments/Pasted%20image%2020210704014704.png)
 ![](../../attachments/Pasted%20image%2020210704015029.png)
+![](../../attachments/Pasted%20image%2020210704015103.png)
+![](../../attachments/Pasted%20image%2020210704015244.png)
+
+![](../../attachments/Pasted%20image%2020210704015420.png)
+![](../../attachments/Pasted%20image%2020210704015449.png)
