@@ -98,3 +98,7 @@ Now take hypercohomology?
 
 ![](../../attachments/Pasted%20image%2020210704015420.png)
 ![](../../attachments/Pasted%20image%2020210704015449.png)
+![](../../attachments/Pasted%20image%2020210704020100.png)
+![](../../attachments/Pasted%20image%2020210704020143.png)
+
+![](../../attachments/Pasted%20image%2020210704020228.png)
