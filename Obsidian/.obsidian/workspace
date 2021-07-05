@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/CRAG/Examples.md",
+            "file": "Current Projects/Phil Stuff/2021-07-02.md",
             "mode": "preview"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/Examples.md",
+                "file": "Current Projects/Phil Stuff/2021-07-02.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/CRAG/Examples.md"
+                "file": "Current Projects/Phil Stuff/2021-07-02.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/CRAG/Examples.md",
+                "file": "Current Projects/Phil Stuff/2021-07-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/Examples.md",
+                "file": "Current Projects/Phil Stuff/2021-07-02.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
+    "Current Projects/Phil Stuff/2021-07-02.md",
     "Current Projects/CRAG/Examples.md",
     "Current Projects/CRAG/First Reading.md",
     "Current Projects/CRAG/Untitled.md",
@@ -249,7 +250,6 @@
     "Unsorted/uniformization.md",
     "Unsorted/Why study K theory.md",
     "Unsorted/projective modules.md",
-    "Unsorted/projective module.md",
-    "Unsorted/vector bundles.md"
+    "Unsorted/projective module.md"
   ]
 }
