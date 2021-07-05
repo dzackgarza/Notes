@@ -28,7 +28,7 @@ Examples:
 
 - Singular/Betti cohomology of $H_\sing^*(X(\CC); \ZZ)$ with the analytic topology, using GAGA
 - $H_{\Alg\dR}(X)$
-- $H_{\ell}(M) $ the $\ell\dash$adic cohomology.
+- $H_{\ell}(M)$ the $\ell\dash$adic cohomology.
 - $H_\crys(M)$.
 
 ![](../../attachments/Pasted%20image%2020210704002649.png)
