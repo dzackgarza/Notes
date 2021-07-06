@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Learning.md",
+            "file": "Current Projects/Phil Stuff/2021-07-02.md",
             "mode": "source"
           }
         }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3ce32054145f32a1",
@@ -79,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Learning.md",
+                "file": "Current Projects/Phil Stuff/2021-07-02.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Learning.md"
+                "file": "Current Projects/Phil Stuff/2021-07-02.md"
               }
             }
           },
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Learning.md",
+                "file": "Current Projects/Phil Stuff/2021-07-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Learning.md",
+                "file": "Current Projects/Phil Stuff/2021-07-02.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +241,15 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
-    "Unsorted/Learning.md",
     "Current Projects/Phil Stuff/2021-07-02.md",
+    "Current Projects/Phil Stuff/Lattice Counts.md",
+    "Current Projects/Phil Stuff/Week of June 9th.md",
+    "Current Projects/Phil Stuff/Week of June 21.md",
+    "Unsorted/Learning.md",
     "Current Projects/CRAG/Examples.md",
     "Current Projects/CRAG/First Reading.md",
     "Current Projects/CRAG/Untitled.md",
     "Unsorted/Galois representations.md",
-    "Unsorted/curves.md",
-    "Unsorted/uniformization.md",
-    "Unsorted/Why study K theory.md",
-    "Unsorted/projective modules.md"
+    "Unsorted/curves.md"
   ]
 }
