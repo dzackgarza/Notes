@@ -40,3 +40,7 @@ Conjectures proved by Faltings.
 ![](../../attachments/Pasted%20image%2020210626210744.png)
 
 ![](../../attachments/Pasted%20image%2020210626210845.png)
+
+![](../../attachments/Pasted%20image%2020210707024831.png)
+
+![](../../attachments/Pasted%20image%2020210707024842.png)
