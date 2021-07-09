@@ -16,6 +16,7 @@ See [Algebraic Geometry Basics](Subjects/Algebraic%20Geometry.md)
 - [MSRI Summer School on derived categories of coherent sheaves on algebraic varietes](https://www.msri.org/summer_schools/821)
 - [MSRI Summer School on toric varieties](https://www.msri.org/summer_schools/455)
 - [Seminar: ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
+- [Quick Review](http://www.mat.uniroma2.it/~ricerca/geomet/workshops/Zaidenbergnotes.pdf)
 
 ## Schemes
 See [schemes](scheme.md)
