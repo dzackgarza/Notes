@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/sheaf cohomology.md",
+            "file": "Unsorted/etale cohomology.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/sheaf cohomology.md",
+                "file": "Unsorted/etale cohomology.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/sheaf cohomology.md"
+                "file": "Unsorted/etale cohomology.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/sheaf cohomology.md",
+                "file": "Unsorted/etale cohomology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/sheaf cohomology.md",
+                "file": "Unsorted/etale cohomology.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
+    "Unsorted/etale cohomology.md",
     "Unsorted/sheaf cohomology.md",
     "Unsorted/dualizing sheaf.md",
     "Current Projects/CRAG/Examples.md",
@@ -249,7 +250,6 @@
     "Unsorted/cryst.md",
     "Current Projects/CRAG/Concepts.md",
     "Unsorted/A1 Homotopy.md",
-    "Unsorted/Prismatic cohomology.md",
-    "Current Projects/Phil Stuff/2021-07-02.md"
+    "Unsorted/Prismatic cohomology.md"
   ]
 }
