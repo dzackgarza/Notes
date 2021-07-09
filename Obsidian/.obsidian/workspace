@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Learning.md",
+            "file": "Unsorted/modern category theory.md",
             "mode": "source"
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Learning.md",
+                "file": "Unsorted/modern category theory.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Learning.md"
+                "file": "Unsorted/modern category theory.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Learning.md",
+                "file": "Unsorted/modern category theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Learning.md",
+                "file": "Unsorted/modern category theory.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +241,7 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
+    "Unsorted/modern category theory.md",
     "Unsorted/Learning.md",
     "Unsorted/etale cohomology.md",
     "Unsorted/sheaf cohomology.md",
@@ -249,7 +250,6 @@
     "Current Projects/CRAG/First Reading.md",
     "Unsorted/Algebraic de Rham complex.md",
     "Unsorted/cryst.md",
-    "Current Projects/CRAG/Concepts.md",
-    "Unsorted/A1 Homotopy.md"
+    "Current Projects/CRAG/Concepts.md"
   ]
 }

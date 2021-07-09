@@ -2,6 +2,7 @@
 aliases: ["category theory"]
 ---
 
+https://arxiv.org/pdf/1912.10642.pdf
 
 # Topics
 
@@ -66,3 +67,4 @@ aliases: ["category theory"]
 - [semiorthogonal decomposition](semiorthogonal%20decomposition)
 - [quivers](quivers)
 - [semisimple](semisimple%20category.md)
+
