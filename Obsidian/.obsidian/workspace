@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Current Projects/CRAG/First Reading.md",
-            "mode": "preview"
+            "file": "Unsorted/Quick_Notes/2021-06-22.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Morgan",
+                "query": "Poisson",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3ce32054145f32a1",
@@ -78,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Unsorted/Quick_Notes/2021-06-22.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md"
+                "file": "Unsorted/Quick_Notes/2021-06-22.md"
               }
             }
           },
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Unsorted/Quick_Notes/2021-06-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Current Projects/CRAG/First Reading.md",
+                "file": "Unsorted/Quick_Notes/2021-06-22.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -241,6 +242,7 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
+    "Unsorted/Quick_Notes/2021-06-22.md",
     "Current Projects/CRAG/First Reading.md",
     "Current Projects/CRAG/Concepts.md",
     "Current Projects/CRAG/Examples.md",
@@ -249,7 +251,6 @@
     "Unsorted/Learning.md",
     "Unsorted/etale cohomology.md",
     "Unsorted/sheaf cohomology.md",
-    "Unsorted/dualizing sheaf.md",
-    "Unsorted/Algebraic de Rham complex.md"
+    "Unsorted/dualizing sheaf.md"
   ]
 }
