@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Unsorted/Quick_Notes/2021-06-22.md",
-            "mode": "source"
+            "file": "To Review/2021-04-28_Morse_Theory_GSTS_2020.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Poisson",
+                "query": "principle",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-22.md",
+                "file": "To Review/2021-04-28_Morse_Theory_GSTS_2020.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-22.md"
+                "file": "To Review/2021-04-28_Morse_Theory_GSTS_2020.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-22.md",
+                "file": "To Review/2021-04-28_Morse_Theory_GSTS_2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Unsorted/Quick_Notes/2021-06-22.md",
+                "file": "To Review/2021-04-28_Morse_Theory_GSTS_2020.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "-file:subject -file:2021 -file:index -tag:#nograph",
@@ -242,15 +242,15 @@
   },
   "active": "7bdb1dc3e06ea302",
   "lastOpenFiles": [
+    "To Review/2021-04-28_Morse_Theory_GSTS_2020.md",
+    "Unsorted/Stable Homotopy Seminar.md",
+    "Unsorted/Stable homotopy.md",
     "Unsorted/Quick_Notes/2021-06-22.md",
     "Current Projects/CRAG/First Reading.md",
     "Current Projects/CRAG/Concepts.md",
     "Current Projects/CRAG/Examples.md",
     "Unsorted/spectral sequence.md",
     "Unsorted/modern category theory.md",
-    "Unsorted/Learning.md",
-    "Unsorted/etale cohomology.md",
-    "Unsorted/sheaf cohomology.md",
-    "Unsorted/dualizing sheaf.md"
+    "Unsorted/Learning.md"
   ]
 }
